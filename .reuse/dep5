@@ -1,8 +1,8 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: YOUR-REPOSITORY
-Upstream-Contact: NAME SURNAME (EMAIL)
-Source: https://github.com/sap-docs/YOUR-REPOSITORY
+Upstream-Name: sap-datasphere
+Upstream-Contact: Venet Cindy (cindy.venet@sap.com)
+Source: https://github.com/sap-docs/sap-datasphere
 
 Files: *
-Copyright:  2023 SAP SE or an SAP affiliate company and YOUR-REPOSITORY contributors
+Copyright:  2023 SAP SE or an SAP affiliate company and sap-datasphere contributors
 License: CC-BY-4.0

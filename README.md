@@ -1,8 +1,13 @@
 [![REUSE status]()]()
 
-# Contributions to YOUR-DOCUMENTATION
+# Contributions to the SAP Datasphere Documentation
 
-Found a mistake in our documentation? Always wanted to add a step in one of our procedures that could save many others much time? Then you're at the right place! All contributions made to the Markdown files in the [docs](docs) directory are reviewed, and if deemed valuable be added to our [official documentation on SAP Help Portal](YOUR-LINK). The easiest way is to start there, and choose _Edit_ to find the right Markdown file to contribute to.
+Found a mistake in our documentation? Always wanted to add a step in one of our procedures that could save many others much time? Then you're at the right place! All contributions made to the Markdown files in the [docs](docs) directory are reviewed, and if deemed valuable be added to our official documentation on SAP Help Portal. The easiest way is to start there, and choose _Edit_ to find the right Markdown file to contribute to.
+
+You can currently make contributions to the following guides in this repository:
+- [Integrating Data and Managing Spaces](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0?locale=en-US&state=PRODUCTION&version=cloud)
+- [Acquiring, Preparing, and Modeling Data](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d?locale=en-US&state=PRODUCTION&version=cloud)
+- [Administering SAP Data Warehouse Cloud](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862?locale=en-US&state=PRODUCTION&version=cloud)
 
 ## Requirements
 
@@ -11,10 +16,13 @@ For contributions, it's required that you have a GitHub account. For more inform
 
 ## Contributing
 
-We recommend using the YOUR-DOCUMENTATION documentation on SAP Help Portal as a starting point for contributions:
+We recommend using the SAP Datasphere documentation on SAP Help Portal as a starting point for contributions:
 
-1. Open the [YOUR-DOCUMENTATION Documentation](YOUR-LINK).
-1. You can either:
+1. Open the SAP Datasphere Documentation:
+   - [Integrating Data and Managing Spaces](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0?locale=en-US&state=PRODUCTION&version=cloud)
+   - [Acquiring, Preparing, and Modeling Data](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d?locale=en-US&state=PRODUCTION&version=cloud)
+   - [Administering SAP Data Warehouse Cloud](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862?locale=en-US&state=PRODUCTION&version=cloud)
+3. You can either:
     * Choose *Edit* to suggest a change for the current page you see in the Help Portal viewer, or
     * Choose *Feedback* to open a GitHub issue in this repository.
 
