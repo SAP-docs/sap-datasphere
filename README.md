@@ -1,4 +1,4 @@
-[![REUSE status]()]()
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-docs/sap-datasphere)](https://api.reuse.software/info/github.com/SAP-docs/sap-datasphere)
 
 # Contributions to the SAP Datasphere Documentation
 
