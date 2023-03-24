@@ -32,7 +32,7 @@ More information: [Contribution Guidelines](https://help.sap.com/products/open-d
 
 ## Code of Conduct
 
-Adhere to the [SAP Open Source Code of Conduct](https://github.com/SAP-docs/.github/blob/main/CODE_OF_CONDUCT.md) to ensure a welcoming and open culture for everyone involved in contributions to SAP documentation.
+Adhere to the [SAP Open Source Code of Conduct](https://github.com/SAP-docs/.github/blob/main/CODE_OF_CONDUCT.md) to ensure a welcoming and open culture for everyone involved in contributions to SAP documentation. 
 
 ## Licensing
 
