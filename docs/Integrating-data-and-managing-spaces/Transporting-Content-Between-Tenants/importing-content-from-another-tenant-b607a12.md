@@ -19,11 +19,13 @@ Users with the Administrator or Space Administrator role can import content that
     > ### Note:  
     > The <span class="FPA-icons"></span> \(*Transport*\) app cannot create spaces or connections and cannot import content into a space with a different technical name to the space from which the content was exported. Only an administrator can create spaces \(see [Create a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.") :arrow_upper_right:\), while an administrator, space administrator, or integrator can create connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
 
-2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
+2. Check the settings to ensure 'Show content from all shared systems' is set or individually 'Add systems to allow content sharing'. If these setting are not maintained no content will be displayed.
 
-3.  Click a package to open it and see an overview of its content.
+3.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
 
-4.  Review the *Import Overview* section. For more details, and to modify any of the options, click the *Import Options* tab:
+4.  Click a package to open it and see an overview of its content.
+
+5.  Review the *Import Overview* section. For more details, and to modify any of the options, click the *Import Options* tab:
 
 
     <table>
@@ -128,7 +130,7 @@ Users with the Administrator or Space Administrator role can import content that
     </tr>
     </table>
     
-5.  Click *Import* to begin importing the content. 
+6.  Click *Import* to begin importing the content. 
 
     You will receive a notification when the process is complete, or if an error occurs.
 
