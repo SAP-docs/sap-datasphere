@@ -17,15 +17,15 @@ To enable SAP SQL Data Warehousing on your SAP Datasphere tenant, an S-user must
 
 This integrated SAP SQL data warehousing approach allows you to add HDI containers to your space and exchange data between them:
 
--   Use calculation views and other SAP Business Application Studio objects as sources for your SAP Datasphere views and data flows \(see [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:\).
+-   Use calculation views and other SAP Business Application Studio objects as sources for your SAP Datasphere views and data flows \(see [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:\).
 
     ![HDI Container Objects are Sources for Space](images/HDI_as_Source_201d2a8.png)
 
--   Use SAP Datasphere views that are exposed for consumption as sources for your SAP Business Application Studio calculation views and flowgraphs \(see [Access Space Objects in Your HDI Container](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/656eebc2ced14ec09afa455224fa9a98.html "To access SAP Datasphere views that are exposed for consumption as sources for your calculation views and flowgraphs, you must create a database user with appropriate privileges, create a user-provided service in SAP BTP Cockpit, and configure your HDI project.") :arrow_upper_right:\).
+-   Use SAP Datasphere views that are exposed for consumption as sources for your SAP Business Application Studio calculation views and flowgraphs \(see [Access Space Objects in Your HDI Container](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/656eebc2ced14ec09afa455224fa9a98.html "To access SAP Datasphere views that are exposed for consumption as sources for your calculation views and flowgraphs, you must create a database user with appropriate privileges, create a user-provided service in SAP BTP Cockpit, and configure your HDI project.") :arrow_upper_right:\).
 
     ![HDI Container Reads View Exposed for Consumption](images/HDI_Read_Exposed_View_f8edd97.png)
 
--   Use SAP Business Application Studio tables as targets for your SAP Datasphere data flows \(see [Allow Your Space to Write to Your HDI Container](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/aa3627f987d04b5f95fec1c45083dde9.html "To allow data flows in your SAP Datasphere space to use tables in your HDI container as targets, you must set the appropriate roles and add the container to your space.") :arrow_upper_right:\).
+-   Use SAP Business Application Studio tables as targets for your SAP Datasphere data flows \(see [Allow Your Space to Write to Your HDI Container](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aa3627f987d04b5f95fec1c45083dde9.html "To allow data flows in your SAP Datasphere space to use tables in your HDI container as targets, you must set the appropriate roles and add the container to your space.") :arrow_upper_right:\).
 
     ![Space Data Flow Writes to HDI Container Table](images/HDI_Write_from_Space_ccf514b.png)
 
@@ -128,6 +128,6 @@ This integrated SAP SQL data warehousing approach allows you to add HDI containe
 
     For information about setting up your build, see [Set Up an HDI Container](https://help.sap.com/docs/HANA_SERVICE_CF/cc53ad464a57404b8d453bbadbc81ceb/93cdbb1bd50d49fe872e7b648a4d9677.html?locale=en-US&version=Cloud).
 
-5.  When one or more containers are available in the run-time database, the *Enable Access* button is replaced by the *\+* button in the *HDI Containers* section for all your SAP Datasphere spaces \(see [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:\).
+5.  When one or more containers are available in the run-time database, the *Enable Access* button is replaced by the *\+* button in the *HDI Containers* section for all your SAP Datasphere spaces \(see [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:\).
 
 

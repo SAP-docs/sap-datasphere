@@ -58,7 +58,7 @@ Allows modelers to import tables from a source when creating graphical and SQL v
 
 For more information, see:
 
--   [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
+-   [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
 -   [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md)
 
 
@@ -77,7 +77,7 @@ For more information, see:
 
 Allows modelers to use objects from a connected source when creating data flows to extract, transform and load data.
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:.
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:.
 
 
 
@@ -95,7 +95,7 @@ For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f
 
 Allows modelers to import objects from any supporting SAP system with rich metadata and, if supported, with their dependencies. This way, you can leverage your existing investment in your customer system landscape without having to rebuild the objects manually.
 
-For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
+For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
 
 
 
@@ -115,7 +115,7 @@ Allows modelers to replicate data from multiple source objects from a connected 
 
 You can enable a single initial load or request initial and delta loads to load changes at regular intervals. It depends on the connection type if you can use the connection as source or target connection.
 
-For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy data from a source to a target in a fast and easy way and do not require complex projections.") :arrow_upper_right:.
+For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:.
 
 
 
@@ -200,7 +200,7 @@ Sources
 <tr>
 <td valign="top">
 
-[Adverity](adverity-63e9ff5.md)
+[Adverity Connections](adverity-connections-63e9ff5.md)
 
 
 
@@ -251,7 +251,7 @@ Partner Tools
 <tr>
 <td valign="top">
 
-[Amazon Athena](amazon-athena-1b21cd0.md)
+[Amazon Athena Connections](amazon-athena-connections-1b21cd0.md)
 
 
 
@@ -302,7 +302,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Amazon Redshift](amazon-redshift-8b13206.md)
+[Amazon Redshift Connections](amazon-redshift-connections-8b13206.md)
 
 
 
@@ -353,7 +353,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Amazon Simple Storage Service](amazon-simple-storage-service-a7b660a.md)
+[Amazon Simple Storage Service Connections](amazon-simple-storage-service-connections-a7b660a.md)
 
 
 
@@ -404,7 +404,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Cloud Data Integration](cloud-data-integration-cd33107.md)
+[Cloud Data Integration Connections](cloud-data-integration-connections-cd33107.md)
 
 
 
@@ -455,7 +455,7 @@ SAP
 <tr>
 <td valign="top">
 
-[Generic JDBC](generic-jdbc-eeae3ac.md)
+[Generic JDBC Connections](generic-jdbc-connections-eeae3ac.md)
 
 
 
@@ -506,7 +506,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Generic OData](generic-odata-5d36f1a.md)
+[Generic OData Connections](generic-odata-connections-5d36f1a.md)
 
 
 
@@ -557,7 +557,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Generic SFTP](generic-sftp-b645de7.md)
+[Generic SFTP Connections](generic-sftp-connections-b645de7.md)
 
 
 
@@ -608,7 +608,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Google BigQuery](google-bigquery-30ed77d.md)
+[Google BigQuery Connections](google-bigquery-connections-30ed77d.md)
 
 
 
@@ -659,7 +659,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Google Cloud Storage](google-cloud-storage-aec242c.md)
+[Google Cloud Storage Connections](google-cloud-storage-connections-aec242c.md)
 
 
 
@@ -710,7 +710,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Hadoop Distributed File System](hadoop-distributed-file-system-f9c3356.md)
+[Hadoop Distributed File System Connections](hadoop-distributed-file-system-connections-f9c3356.md)
 
 
 
@@ -761,7 +761,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Microsoft Azure Blob Storage](microsoft-azure-blob-storage-df5a7c5.md)
+[Microsoft Azure Blob Storage Connections](microsoft-azure-blob-storage-connections-df5a7c5.md)
 
 
 
@@ -812,7 +812,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen1](microsoft-azure-data-lake-store-gen1-aa04f9a.md)
+[Microsoft Azure Data Lake Store Gen1 Connections](microsoft-azure-data-lake-store-gen1-connections-aa04f9a.md)
 
 
 
@@ -863,7 +863,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen2](microsoft-azure-data-lake-store-gen2-cd06b3c.md)
+[Microsoft Azure Data Lake Store Gen2 Connections](microsoft-azure-data-lake-store-gen2-connections-cd06b3c.md)
 
 
 
@@ -914,7 +914,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Microsoft Azure SQL Database](microsoft-azure-sql-database-46343fc.md)
+[Microsoft Azure SQL Database Connections](microsoft-azure-sql-database-connections-46343fc.md)
 
 
 
@@ -965,7 +965,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Microsoft SQL Server](microsoft-sql-server-a13c8ab.md)
+[Microsoft SQL Server Connections](microsoft-sql-server-connections-a13c8ab.md)
 
 
 
@@ -1016,7 +1016,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Open Connectors](open-connectors-9bfe7db.md)
+[Open Connectors Connections](open-connectors-connections-9bfe7db.md)
 
 
 
@@ -1067,7 +1067,7 @@ SAP
 <tr>
 <td valign="top">
 
-[Oracle](oracle-c73ae06.md)
+[Oracle Connections](oracle-connections-c73ae06.md)
 
 
 
@@ -1118,7 +1118,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Precog](precog-6e5f225.md)
+[Precog Connections](precog-connections-6e5f225.md)
 
 
 
@@ -1169,7 +1169,7 @@ Partner Tools
 <tr>
 <td valign="top">
 
-[SAP ABAP](sap-abap-a75c1aa.md)
+[SAP ABAP Connections](sap-abap-connections-a75c1aa.md)
 
 
 
@@ -1220,7 +1220,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP BW](sap-bw-e589041.md)
+[SAP BW Connections](sap-bw-connections-e589041.md)
 
 
 
@@ -1234,7 +1234,7 @@ yes \(including real-time replication\*\*\)
 </td>
 <td valign="top">
 
-via connection type [SAP ABAP](sap-abap-a75c1aa.md) \(source\)
+via connection type [SAP ABAP Connections](sap-abap-connections-a75c1aa.md) \(source\)
 
 
 
@@ -1271,7 +1271,7 @@ SAP
 <tr>
 <td valign="top">
 
-\[generated and only available within a SAP BW bridge space if SAP BW bridge has been provisioned\] [SAP Datasphere SAP BW bridge](https://help.sap.com/viewer/1714feae4425415f8e6fd6ab8578e1e6/internal/en-US/03cc8f27d3a44aabad3debaa79be0216.html "") :arrow_upper_right:
+\[generated and only available within a SAP BW bridge space if SAP BW bridge has been provisioned\] [SAP Datasphere SAP BW bridge](https://help.sap.com/viewer/07fda46007d24ff7b8af36b26f9b9634/cloud/en-US/03cc8f27d3a44aabad3debaa79be0216.html "") :arrow_upper_right:
 
 
 
@@ -1322,7 +1322,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP BW∕4HANA Model Transfer](sap-bw-4hana-model-transfer-1caba95.md)
+[SAP BW∕4HANA Model Transfer Connections](sap-bw-4hana-model-transfer-connections-1caba95.md)
 
 
 
@@ -1373,7 +1373,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP ECC](sap-ecc-e546ccd.md)
+[SAP ECC Connections](sap-ecc-connections-e546ccd.md)
 
 
 
@@ -1387,7 +1387,7 @@ yes \(including real-time replication\*\*\)
 </td>
 <td valign="top">
 
-via connection type [SAP ABAP](sap-abap-a75c1aa.md) \(source\)
+via connection type [SAP ABAP Connections](sap-abap-connections-a75c1aa.md) \(source\)
 
 
 
@@ -1424,7 +1424,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP Fieldglass](sap-fieldglass-bda94ee.md)
+[SAP Fieldglass Connections](sap-fieldglass-connections-bda94ee.md)
 
 
 
@@ -1475,7 +1475,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP HANA](sap-hana-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9)
+[SAP HANA Connections](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9)
 
 
 
@@ -1496,7 +1496,7 @@ yes \(source and target\)
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
 
 
 
@@ -1526,7 +1526,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP HANA Cloud, Data Lake Files](sap-hana-cloud-data-lake-files-356e41e.md)
+[SAP HANA Cloud, Data Lake Files Connections](sap-hana-cloud-data-lake-files-connections-356e41e.md)
 
 
 
@@ -1577,7 +1577,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP HANA Cloud, Data Lake Relational Engine](sap-hana-cloud-data-lake-relational-engine-40763e2.md)
+[SAP HANA Cloud, Data Lake Relational Engine Connections](sap-hana-cloud-data-lake-relational-engine-connections-40763e2.md)
 
 
 
@@ -1628,7 +1628,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP Marketing Cloud](sap-marketing-cloud-4de4959.md)
+[SAP Marketing Cloud Connections](sap-marketing-cloud-connections-4de4959.md)
 
 
 
@@ -1679,7 +1679,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP SuccessFactors](sap-successfactors-39df020.md)
+[SAP SuccessFactors Connections](sap-successfactors-connections-39df020.md)
 
 
 
@@ -1730,7 +1730,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP S/4HANA Cloud](sap-s-4hana-cloud-a98e5ff.md)
+[SAP S/4HANA Cloud Connections](sap-s-4hana-cloud-connections-a98e5ff.md)
 
 
 
@@ -1781,7 +1781,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP S/4HANA On-Premise](sap-s-4hana-on-premise-a49a1e3.md)
+[SAP S/4HANA On-Premise Connections](sap-s-4hana-on-premise-connections-a49a1e3.md)
 
 
 

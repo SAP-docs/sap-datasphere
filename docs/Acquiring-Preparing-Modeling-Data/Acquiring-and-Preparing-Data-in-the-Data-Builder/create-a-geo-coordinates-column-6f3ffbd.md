@@ -135,22 +135,6 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-
-    Set Invalid Geo-Coordinate Values to "NULL"
-
-
-    
-    </td>
-    <td valign="top">
-
-    Latitude coordinates nearing 90 are considered invalid by analytic clients. Prevent preview failure by setting these values to "NULL".
-
-
-    
-    </td>
-    </tr>
     </table>
     
 5.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:

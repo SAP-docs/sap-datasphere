@@ -509,7 +509,7 @@ This third file will update the *Space Priority*, and will leave the other param
 
 ## Members
 
-Users with the *DW Administrator* or *DW Space Administrator* role can add members to a space \(see [Assign Members to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator* or *DW Space Administrator* role can add members to a space \(see [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\) using the following syntax:
 
 ```
 {
@@ -663,7 +663,7 @@ When updating space members via `dwc`, you must always list all members that you
 
 ## Database Users
 
-Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can add database users to a space \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can add database users to a space \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\) using the following syntax:
 
 ```
 {
@@ -971,7 +971,7 @@ For example, the following file will add a database user to `NEWSPACE`:
 
 ## HDI Containers
 
-Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can associate HDI containers to a space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/1aec7ca95af24208a61c1a444b249d95.html "You can enable SAP SQL Data Warehousing on your SAP Datasphere tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can associate HDI containers to a space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1aec7ca95af24208a61c1a444b249d95.html "You can enable SAP SQL Data Warehousing on your SAP Datasphere tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement.") :arrow_upper_right:\) using the following syntax:
 
 ```
 {

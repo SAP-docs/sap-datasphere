@@ -72,7 +72,7 @@ Allows access to all objects inside a space e.g. views and tables. The permissio
 
 Users with the *Manage* permission can also see objects in other spaces and are not limited to the spaces they have been assigned to.
 
-[Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+[Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
 
 
 
@@ -97,7 +97,7 @@ Users with the *Manage* permission can also see objects in other spaces and are 
 
 Allows access to the *Space Management* app. For more details about seeing and editing various properties of a space, see [Example: Space Management App Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__space_management_app_permissions).
 
-[Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+[Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
 
 
 
@@ -126,7 +126,7 @@ Also allows access to the *Data Sharing Cockpit* app with the *Create*, *Read* a
 
 Users with the *Share* permission can share objects to other spaces.
 
-[Acquiring and Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources or use data flows to extract, transform and load data. They can then use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
+[Acquiring and Preparing Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources or use data flows to extract, transform and load data. They can then use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
 
 
 
@@ -156,9 +156,9 @@ Allows access to remote and run-time objects:
 -   To create, update, or delete a connection in the *Connections* app, the user needs *Create*, *Read*, *Update* and *Delete* and they have to be a member of the space with the corresponding *Space Files* permission.
 
 
-[Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:
+[Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:
 
-[Acquiring and Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources or use data flows to extract, transform and load data. They can then use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
+[Acquiring and Preparing Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources or use data flows to extract, transform and load data. They can then use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
 
 
 
@@ -196,7 +196,7 @@ Allows access to the *Data Integration Monitor* app:
 > -   To add a new view in the *View Persistency Monitor*.
 > -   To set up or change partitioned data loading in the *Remote Table Monitor*.
 > 
-> [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor data flow and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+> [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor data flow and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
 
 
@@ -221,7 +221,7 @@ Allows access to the *Data Integration Monitor* app:
 
 Allows access to the *Repository Explorer* app. To see the contents the user also needs to be a member of the space and, therefore, requires *Read* on *Space Files*.
 
-[Repository Explorer](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
+[Repository Explorer](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
 
 
 
@@ -246,7 +246,7 @@ Allows access to the *Repository Explorer* app. To see the contents the user als
 
 Allows access to the *Data Access Control* app and objects. To see the *Data Access Control* app the user needs the *Update* permission. To use a *Data Access Control* object to protect a view the user needs *Read*. They need *Update* in addition to change a view.
 
-[Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
+[Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
 
 
 
@@ -271,7 +271,7 @@ Allows access to the *Data Access Control* app and objects. To see the *Data Acc
 
 Allows access to the *Business Builder* app.
 
-[Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/3829d46c48a44f1e94915054bd76b7b9.html "The business layer is the area where business users can define objects with a business approach.") :arrow_upper_right:
+[Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "The business layer is the area where business users can define objects with a business approach.") :arrow_upper_right:
 
 
 
@@ -296,7 +296,7 @@ Allows access to the *Business Builder* app.
 
 Allows access to business objects \(dimensions and analytical datasets defined in the *Business Builder*.
 
-[Creating a Business Entity](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/c912cdc1537d4efbb24b08327ea68918.html "You use business entities to build your consumption model for analysis and reporting.") :arrow_upper_right:
+[Creating a Business Entity](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/c912cdc1537d4efbb24b08327ea68918.html "You use business entities to build your consumption model for analysis and reporting.") :arrow_upper_right:
 
 
 
@@ -321,7 +321,7 @@ Allows access to business objects \(dimensions and analytical datasets defined i
 
 Allows access to authorization scenarios defined in the *Business Builder*. Authorization scenarios are modeling abstractions for *Data Access Controls*.
 
-[Authorization Scenario](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user&apos;s context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:
+[Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user&apos;s context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:
 
 
 
@@ -346,7 +346,7 @@ Allows access to authorization scenarios defined in the *Business Builder*. Auth
 
 Allows access to fact models defined in the *Business Builder*. Fact models are shaped like consumption models but offer re-useability in other consumption models.
 
-[Creating a Fact Model](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/5bbd14a328b549b2b53fce830ea25c15.html "Fact models are reusable models you can use to streamline the creation of other models within the same business context.") :arrow_upper_right:
+[Creating a Fact Model](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5bbd14a328b549b2b53fce830ea25c15.html "Fact models are reusable models you can use to streamline the creation of other models within the same business context.") :arrow_upper_right:
 
 
 
@@ -371,7 +371,7 @@ Allows access to fact models defined in the *Business Builder*. Fact models are 
 
 Allows access to consumption models inside the *Business Builder*. Consumption models comprise perspectives which are presented as `DWC_CUBE` objects in the file repository.
 
-[Creating a Consumption Model](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/337fa99de4a44700ba49e2214a1f3349.html "Consumption models are the basis to consume your data.") :arrow_upper_right:
+[Creating a Consumption Model](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/337fa99de4a44700ba49e2214a1f3349.html "Consumption models are the basis to consume your data.") :arrow_upper_right:
 
 
 
@@ -396,7 +396,7 @@ Allows access to consumption models inside the *Business Builder*. Consumption m
 
 Allows access to folders defined in the *Business Builder*. Folders are used to organize objects inside the *Business Builder*.
 
-[Business Builder Start Page](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/90e63fd4857543469648dae5a71457f1.html "The Business Builder start page gives you access to the different editors.") :arrow_upper_right:
+[Business Builder Start Page](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/90e63fd4857543469648dae5a71457f1.html "The Business Builder start page gives you access to the different editors.") :arrow_upper_right:
 
 
 
@@ -530,7 +530,7 @@ Set the *Manage* permission to permit assigning users to roles, and approving ro
 
 Allows to manage \(assign and remove\) space members.
 
-[Assign Members to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:
+[Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:
 
 
 
@@ -652,14 +652,14 @@ General Settings
 </td>
 <td valign="top">
 
-Space.Read
+*Space*.*Read*
 
 
 
 </td>
 <td valign="top">
 
-Space.Update
+*Space*.*Update*
 
 
 
@@ -675,14 +675,14 @@ Specific General Settings; Storage, Priority, Data Lake
 </td>
 <td valign="top">
 
-Space.Read
+*Space*.*Read*
 
 
 
 </td>
 <td valign="top">
 
-Space.Manage
+*Space*.*Manage*
 
 
 
@@ -698,14 +698,14 @@ Members
 </td>
 <td valign="top">
 
-User.Read and Team.Read
+*User*.*Read* and *Team*.*Read*
 
 
 
 </td>
 <td valign="top">
 
-Team.Update
+*Team*.*Update*
 
 
 
@@ -721,14 +721,14 @@ Database Access
 </td>
 <td valign="top">
 
-RemoteConnection.Read
+*Remote Connection*.*Read*
 
 
 
 </td>
 <td valign="top">
 
-RemoteConnection.Update
+*Remote Connection*.*Update*
 
 
 
@@ -744,14 +744,14 @@ Time Data
 </td>
 <td valign="top">
 
-DataBuilder.Read
+*Data Builder*.*Read*
 
 
 
 </td>
 <td valign="top">
 
-DataBuilder.Update
+*Data Builder*.*Update*
 
 
 
@@ -767,14 +767,14 @@ Auditing
 </td>
 <td valign="top">
 
-Space.Update
+*Space*.*Update*
 
 
 
 </td>
 <td valign="top">
 
-Space.Update
+*Space*.*Update*
 
 
 
@@ -788,11 +788,11 @@ Users with different roles have different levels of access:
 
 -   A *DW Viewer* can log into SAP Datasphere, but has no *Space* permissions. They cannot see the *Space Management* app.
 
--   A *DW Modeler* has *Space.Read* permission. They have read-only access to the page for their space \(though they cannot see all its properties\).
+-   A *DW Modeler* has *Space*.*Read* permission. They have read-only access to the page for their space \(though they cannot see all its properties\).
 
--   A *DW Space Administrator* has *Space.Update* and additional permissions. They can see all the space properties, and edit those outside the *General Settings* section.
+-   A *DW Space Administrator* has *Space*.*Update* and additional permissions. They can see all the space properties, and edit those outside the *General Settings* section.
 
--   A *DW Administrator* has *Space.Manage*. They can create spaces and edit all properties, including modifying the storage allocated and the space priority.
+-   A *DW Administrator* has *Space*.*Manage*. They can create spaces and edit all properties, including modifying the storage allocated and the space priority.
 
 
 
@@ -863,7 +863,7 @@ Update
 </td>
 <td valign="top">
 
-Permits editing and updating existing items. Compare this permission with the Maintain permission, which doesn't allow changes to the data structure. Note: some object types need the Maintain permission to update data. See the Maintain entry.
+Permits editing and updating existing items. Compare this permission with the *Maintain* permission, which doesn't allow changes to the data structure. Note: some object types need the *Maintain* permission to update data. See the Maintain entry.
 
 
 

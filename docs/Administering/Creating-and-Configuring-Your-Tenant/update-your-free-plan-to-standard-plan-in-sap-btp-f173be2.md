@@ -4,7 +4,7 @@
 
 Update your service instance from free plan to standard plan.
 
-In SAP BTP, if you have an SAP Datasphere service instance with a free plan, which you can use for 90 days, you can update it to a standard plan \(no time limitation\) for productive purposes. The number of days before the expiration is displayed in the top panel of SAP Datasphere.
+In SAP Business Technology Platform \(SAP BTP\), if you have an SAP Datasphere service instance with a free plan, which you can use for 90 days, you can update it to a standard plan \(no time limitation\) for productive purposes. The number of days before the expiration is displayed in the top panel of SAP Datasphere.
 
 To do so, you must have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
 

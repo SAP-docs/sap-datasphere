@@ -4,7 +4,7 @@
 
 # Schedule a Data Integration Task
 
-You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution.
+You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.
 
 
 
@@ -330,6 +330,8 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule/Schedule Replication* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
 The schedule can be removed at any time via the menu *Schedule/Schedule Replication* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
+
+You may also pause and then later resume execution of scheduled tasks via the menu *Schedule/Schedule Replication* \> *Edit Schedule* option. See [Suspend or Pause a Scheduled Task](suspend-or-pause-a-scheduled-task-5eb55cb.md) for more information.
 
 **Related Information**  
 

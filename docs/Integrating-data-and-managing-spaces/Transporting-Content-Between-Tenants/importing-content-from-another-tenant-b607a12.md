@@ -17,15 +17,9 @@ Users with the Administrator or Space Administrator role can import content that
     Be aware that if your content contains objects that are shared from one space to another, then both spaces must exist.
 
     > ### Note:  
-    > The <span class="FPA-icons"></span> \(*Transport*\) app cannot create spaces or connections and cannot import content into a space with a different technical name to the space from which the content was exported. Only an administrator can create spaces \(see [Create a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.") :arrow_upper_right:\), while an administrator, space administrator, or integrator can create connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
-
+    > The <span class="FPA-icons"></span> \(*Transport*\) app cannot create spaces or connections and cannot import content into a space with a different technical name to the space from which the content was exported. Only an administrator can create spaces \(see [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.") :arrow_upper_right:\), while an administrator, space administrator, or integrator can create connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
 
 2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
-If you don’t see expected packages to import, click the Settings button and review the import settings. You can :
--	Enable the “Show content shared by all systems” option and optionally exclude content from specific tenants by adding them to the “Add systems to block content sharing” list.
--	Disable the “Show content shared by all systems” option and choose specific tenants to import from by adding them to the “Add systems to allow content sharing” list. 
-If, after checking these settings, an expected package is still not listed, contact an administrator for help.
-
 
 3.  Click a package to open it and see an overview of its content.
 
@@ -134,7 +128,7 @@ If, after checking these settings, an expected package is still not listed, cont
     </tr>
     </table>
     
-6.  Click *Import* to begin importing the content. 
+5.  Click *Import* to begin importing the content. 
 
     You will receive a notification when the process is complete, or if an error occurs.
 

@@ -2,10 +2,10 @@
 
 # Create Your SAP Datasphere Service Instance in SAP BTP
 
-Create your SAP Datasphere service instance in SAP BTP.
+Create your SAP Datasphere service instance in SAP Business Technology Platform.
 
 > ### Note:  
-> Creating an SAP Datasphere service instance in SAP BTP results in provisioning an SAP Datasphere tenant.
+> Creating an SAP Datasphere service instance in SAP Business Technology Platform \(SAP BTP\) results in provisioning an SAP Datasphere tenant.
 
 If you've signed the Cloud Platform Enterprise Agreement \(CPEA\), you can access the SAP BTP cockpit and view all currently available services in a global account. You need to structure this global account into subaccounts and other related artefacts, such as directories and/or spaces.
 
@@ -92,14 +92,14 @@ The free plan provides an SAP Datasphere tenant for a limited time for trial use
 
 ## Create a Tenant
 
-The following procedure uses the SAP Cloud Platform cockpit to create the service instance.
+The following procedure uses the SAP BTP cockpit to create the service instance.
 
 In the *SAP Datasphere Administration Guide*, we provide high-level steps to create an SAP Datasphere tenant on SAP BTP. For more detailed information, or for instructions that use the Cloud Foundry Command-Line Interface, see the [SAP Business Technology \(SAP BTP\) documentation](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/73beb06e127f4e47b849aa95344aabe1.html).
 
 > ### Note:  
 > You can create only one free tenant under the global account.
 
-1.  In SAP BTP cockpit, navigate to the space in which you want to create the service instance, and click *Services* \> *Service Marketplace* in the left navigation area.
+1.  In the SAP BTP cockpit, navigate to the space in which you want to create the service instance, and click *Services* \> *Service Marketplace* in the left navigation area.
 
     For more information, see [Navigate to Orgs and Spaces](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5bf87353bf994819b8803e5910d8450f.html?q=Navigate%20to%20orgs%20and%20spaces).
 

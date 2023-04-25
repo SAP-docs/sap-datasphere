@@ -2,7 +2,7 @@
 
 # Creating and Configuring Your SAP Datasphere Tenant
 
-You can request SAP to provision a subscription-based tenant or create your own consumption-based tenant. In both cases, you then proceed to configure your tenant.
+You can request SAP to provision a subscription-based tenant or create your own consumption-based tenant. In both cases, you then proceed to configure your tenant.SAP BTP
 
 
 <table>

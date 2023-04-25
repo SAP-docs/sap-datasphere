@@ -250,7 +250,7 @@ Provide business-friendly names for your table and its columns, identify its sem
 
     -   *Disconnected*: SAP HANA smart data integration Data Provisioning Agent got disconnected
 
-        For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
+        For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
 
 
     > ### Note:  
@@ -277,7 +277,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     -   *SIMPLE*: Creates a data statistics object that helps the query optimizer calculate basic statistics, such as min, max, null count, count, and distinct count.
 
     > ### Note:  
-    > Statistics can be created after you have deployed your remote table, for more information, see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:
+    > Statistics can be created after you have deployed your remote table, for more information, see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:
 
 
     
@@ -301,7 +301,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     </table>
     
-    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
+    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
 
     > ### Note:  
     > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.

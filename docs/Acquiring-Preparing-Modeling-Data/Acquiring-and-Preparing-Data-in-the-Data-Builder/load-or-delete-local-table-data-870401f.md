@@ -7,7 +7,7 @@
 You can upload data from a CSV file to a local table. You can also delete all data from the table.
 
 > ### Note:  
-> Users with the standard *DW Modeler* role can use these tools. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
+> Users with the standard *DW Modeler* role can use these tools. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
 
 Use these tools in the toolbar *Edit* section:
 

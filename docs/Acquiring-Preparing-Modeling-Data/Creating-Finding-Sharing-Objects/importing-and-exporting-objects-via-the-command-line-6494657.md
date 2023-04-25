@@ -21,7 +21,7 @@ The following sections are available in this topic:
 
 ## Prerequisites
 
-To use `dwc` to export and import objects you must install it \(see [Install or Update the dwc Command Line Interface](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (dwc) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Modeler* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
+To use `dwc` to export and import objects you must install it \(see [Install or Update the dwc Command Line Interface](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (dwc) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Modeler* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
 
 
 
@@ -29,7 +29,7 @@ To use `dwc` to export and import objects you must install it \(see [Install or 
 
 ## Log Into an SAP Datasphere OAuth Client
 
-We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Add a New OAuth Client](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/ffb0b24bea57480a95145eb094f5bb0f.html "You can add a new OAuth client.") :arrow_upper_right:\).
+We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Add a New OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ffb0b24bea57480a95145eb094f5bb0f.html "You can add a new OAuth client.") :arrow_upper_right:\).
 
 > ### Note:  
 > If an OAuth client is not available, users must provide a passcode for each command that they issue.
@@ -125,7 +125,7 @@ To log in, enter one of the following commands and press [Return\]:
     > Secrets files use versions of the options with underscores instead of hyphens.
 
 
-For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for loggin into it.") :arrow_upper_right:.
+For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for loggin into it.") :arrow_upper_right:.
 
 
 
@@ -435,7 +435,7 @@ Object definitions are read using the standard CSN syntax \(see [Core Data Servi
 > ### Note:  
 > You can also export content from and import content to your space via:
 > 
-> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
 Alternative: <code>--definitions [<i class="varname">&lt;obj1&gt;</i>,<i class="varname">&lt;obj2&gt;</i>]]</code>
@@ -603,7 +603,7 @@ The space definition is written to the console or to the specified file.
 
 ## Import Objects from a .json File
 
-To import tables, views, and data access controls into a space, you must first prepare a space definition file containing valid CSN object definitions \(see [The Space Definition File Format](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\).
+To import tables, views, and data access controls into a space, you must first prepare a space definition file containing valid CSN object definitions \(see [The Space Definition File Format](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\).
 
 When your file is ready, enter the following command and press [Return\]:
 

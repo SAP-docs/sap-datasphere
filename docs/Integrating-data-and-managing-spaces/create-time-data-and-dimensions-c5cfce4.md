@@ -2,28 +2,47 @@
 
 # Create Time Data and Dimensions
 
-As a Space Administrator, you can enrich your models and stories even further by creating a time-related table for your space.
+Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period \(by default from 1900 to 2050\), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.
 
 
 
-Information such as years, quarters, months and days enrich your models even further by providing additional time-related information. By creating hierarchies based on a specific granularity, time dimensions also allow you to drill down on stories. You can create a time dimension table within a space, which then allows you to add the time dimensions to your objects in the modeling tools. A time table is created only once per space.
+## Procedure
 
+1.  In the side navigation area, click ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
 
+2.  In the *Time Data* section, click *Create Time Tables and Dimensions* to open the dialog.
 
-1.  Go to *Space Management* → select the space where you want to add a time data table.
+    The dialog lists all the objects that will be created:
 
-2.  Go to *Time Data* and click *Create Time Tables and Dimensions*.
+    -   *Time Table* - A table containing one record for each day from, by default, the year 1900 to the year 2050.
+    -   Four views with a semantic usage of *Dimension*:
+        -   *Time Dimension - Day* - Suitable for an association from a column containing dates in the form `Dec 31, 2020`, and providing hierarchies with levels:
+            -   Year, Quarter, Month, Day
+            -   Year, Month, Day
+            -   Year, Week, Day
 
-3.  Use the default name or give your time data table an individual name. A technical name is automatically assigned.
+        -   *Time Dimension - Month* - Suitable for an association from a column containing months in the form `202012` \(for December 2020\), and providing hierarchies with levels:
+            -   Year, Quarter, Month
+            -   Year, Month
 
-4.  Select a time range \(years\) for your time table. The default value is 1900 - 2050.
+        -   *Time Dimension - Quarter* - Suitable for an association from a column containing quarters in the form `20204` \(for the fourth quarter of 2020\), and providing one hierarchy with levels:
+            -   Year, Quarter
 
-5.  Four time dimensions are created with default names; Year, Quarter, Month, and Day. You can change the business name if necessary, but the technical names are predefined and cannot be edited.
+        -   *Time Dimension - Year* - Suitable for an association from a column containing years in the form `2020`.
 
-6.  Translation tables are created for the different languages that are needed for the dimension names \(for example, "Day" or "Year"\). You can also change the business names, but not the technical names.
+    -   Three translation tables - which contain the names of quarters, months, and days in English, French, German, and Spanish.
 
-7.  Select *Save* and if necessary refresh to see a new or an updated time dimension table.
+3.  \[optional\] Modify the values in any of the following fields:
 
+    -   Enter different years in the *From Year* and *To Year* fields to expand or reduce the scope of the time table data.
+    -   Edit any of the proposed business names for the tables and views to be created. The technical names cannot be modified.
 
-Your newly created models are now available and you can create views on top of your time data table and dimensions.
+4.  Click *Create*.
+
+    When creation is complete, the content of the section changes to show that the objects are now present in the space. You can use the tools to edit the*Time Table* values, refresh the view data, and delete these entities.
+
+    The tables and views are listed with your other space objects and can be opened \(in read-only form\) from the *Data Builder* and *Repository Explorer*.
+
+    Members of your space can now use the views as dimensions by creating associations to them from their entities containing time data.
+
 

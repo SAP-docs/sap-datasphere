@@ -42,9 +42,9 @@ You can monitor memory consumption in the task logs if you switch on the option 
 
 You can also use SAP HANA Views:
 
--    [M\_EXPENSIVE\_STATEMENT](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/20af736e751910148162e2ab1982f035.html): This view provides all statements, for which memory consumption, CPU time or duration exceed the corresponding specified thresholds. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:
+-    [M\_EXPENSIVE\_STATEMENT](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/20af736e751910148162e2ab1982f035.html): This view provides all statements, for which memory consumption, CPU time or duration exceed the corresponding specified thresholds. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:
 
 -   Memory consumed during insert statements can be tracked using the view: [M\_ACTIVE\_PROCEDURES](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/f3d23305d0dd495590e0061c3546de9a.html).
 
-For more information on how to use system view, see [Monitoring Tasks, Logs and Schedules With Dedicated Monitoring Views](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "Monitor tasks and schedules execution across spaces using monitoring views.") :arrow_upper_right:.
+For more information on how to use system view, see [Monitoring Tasks, Logs and Schedules With Dedicated Monitoring Views](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "Monitor tasks and schedules execution across spaces using monitoring views.") :arrow_upper_right:.
 

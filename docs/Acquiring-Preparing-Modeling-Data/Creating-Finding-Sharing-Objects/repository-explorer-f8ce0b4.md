@@ -64,7 +64,7 @@ Choose one collection or one space:
 
 ## Filter by Criteria
 
-Filter by any of the criteria listed in the *Filter By* area of the left panel.
+Filter by any of the categories listed in the *Filter By* area of the left panel.
 
 You can select one or more values in each filter category in the *Filter By* section:
 
@@ -278,7 +278,7 @@ You can act on objects in the list in the following ways:
     -   SQL View \(see [Creating an SQL View](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-an-sql-view-81920e4.md)\)
     -   Entity-Relationship Model \(see [Creating an Entity-Relationship Model](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-an-entity-relationship-model-a91c042.md)\)
     -   Data Flow \(see [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
     -   Currency Conversion Views \(see [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\)
 
 
@@ -318,11 +318,11 @@ You can act on objects in the list in the following ways:
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
-    -   Analytic Model
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 
-    Other types of objects can only be deployed from their editors
+    Other types of objects can only be deployed from their editors If one or more objects that you have selected cannot be deployed, the Deploy dialog opens, allowing you to review your selection. Click Deploy to deploy those objects listed on the Deployable tab, or Cancel to go back and alter your selection.
 
 
     

@@ -87,7 +87,7 @@ Technical title of the asset, which is used as asset ID.
 </tr>
 </table>
 
-**Request Query Parameters:**The query parameters $select, $filter and $orderby, $count, $top, $skip are supported, see [Parameters](odata-api-reference-b9098c3.md#loiob9098c3a706640189bc1d4eb7d5d5c52__section_request_parameters).
+**Request Query Parameters:**The query parameters $select, $filter and $orderby, $count, $top, $skip are supported, see [Parameters](consume-data-via-an-odata-service-7a45360.md#loio7a453609c8694b029493e7d87e0de60a__section_request_parameters).
 
 **Sample Request:**GET https://....cloud.sap/api/v1/dwc/catalog/assets\(space\_name='SPACE\_A', name='CollegeEnrollment'\)
 

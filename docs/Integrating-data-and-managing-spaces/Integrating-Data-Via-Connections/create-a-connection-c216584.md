@@ -12,7 +12,7 @@ Create a connection to allow the members of the space to use the connected sourc
 
 ## Prerequisites
 
-See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/bffbd58c15784a62af0520f171018ded.html "You need to perform some preparatory steps to be able to create and use connections in SAP Datasphere. The steps depend on the source you want to connect to and on the features you want to use with the connection.") :arrow_upper_right:.
+See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bffbd58c15784a62af0520f171018ded.html "You need to perform some preparatory steps to be able to create and use connections in SAP Datasphere. The steps depend on the source you want to connect to and on the features you want to use with the connection.") :arrow_upper_right:.
 
 
 
@@ -280,7 +280,7 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
     
 7.  If you connect to a partner tool such as Precog, in the *Additional Configuration* section of this wizard step, you'll find information about IP addresses that you can copy in order to add them to the IP allowlist in SAP Datasphere.
 
-    For more information, see [Add IP address to IP Allowlist](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication from on-premise systems.") :arrow_upper_right:.
+    For more information, see [Add IP address to IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication from on-premise systems.") :arrow_upper_right:.
 
 8.  Click *Create Connection* to create the connection and add it to the overview of available connections.
 
@@ -305,9 +305,9 @@ Depending on the connection type and the features that you have enabled for your
 
     For more information, see:
 
-    -   [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
-    -   [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:
-    -   [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy data from a source to a target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
+    -   [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
+    -   [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:
+    -   [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
 
     > ### Note:  
     > Generally, when importing a table, it is created as remote table. However, tables imported from partner tool connections are created as local tables \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
@@ -320,7 +320,7 @@ Depending on the connection type and the features that you have enabled for your
 
     For more information, see:
 
-    -   [SAP BW∕4HANA Model Transfer](sap-bw-4hana-model-transfer-1caba95.md)
-    -   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
+    -   [SAP BW∕4HANA Model Transfer Connections](sap-bw-4hana-model-transfer-connections-1caba95.md)
+    -   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
 
 

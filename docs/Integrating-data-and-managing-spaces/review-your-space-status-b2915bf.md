@@ -122,6 +122,7 @@ Restrictions include:
 
 -   adding members and creating open SQL schemas in Space Management is blocked
 
+-   all direct execution or scheduling of tasks in the *Data Integration Monitor* or in the *Data Builder* that allow to add data to the space.
 
 
 

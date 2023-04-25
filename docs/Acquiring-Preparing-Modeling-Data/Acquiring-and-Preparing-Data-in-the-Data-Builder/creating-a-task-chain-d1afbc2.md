@@ -4,7 +4,7 @@
 
 # Creating a Task Chain
 
-Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. When creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.
+Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.
 
 
 
@@ -12,7 +12,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Prerequisites
 
--   You have DW Integrator and DW Modeler role privileges. See [Standard Application Roles](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles.") :arrow_upper_right: for more information.
+-   You have DW Integrator and DW Modeler role privileges. See [Standard Application Roles](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles.") :arrow_upper_right: for more information.
 
 -   Objects must have been already deployed, so that they can be added to the task chain. Task chains must also be deployed to allow selection of tenant users or specify email addresses for notification of task chain completion.
 
@@ -25,7 +25,9 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Context
 
-Task Chains allow you to define a group or series of tasks and execute those tasks in a serial process, one after another. A succeeding task is only executed once the previous task in the series has finished successfully with a *completed* status. The execution of tasks in the series will not resume if the previous task has a *failed* status.
+Linear task chains allow you to define a group or series of tasks and execute those tasks in a serial process, one after another. A succeeding task is only executed once the previous task in the series has finished successfully with a *completed* status. The execution of tasks in the series will not resume if the previous task has a *failed* status.
+
+Parallel task chain branches allow you to specify that some individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
 Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, and Data Flow runs.
 
@@ -34,23 +36,44 @@ Tasks chain scheduling may include execution of Remote Table Replication, View P
 
 After deploying a task chain, you can add tenant users or email addresses to notify individuals when task chain runs are completed.
 
-You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 > ### Note:  
 > Exporting and importing task chains via the <span class="FPA-icons"></span> \(*Transport*\) app is not supported for SAP Datasphere tenants provisioned prior to version 2021.03.
+
+This topic contains information on performing the following tasks:
+
+-   Basic linear task chain creation
+
+-   Creation of parallel task branches in chains
+
+-   Task chain email notification
+
 
 
 
 ## Procedure
 
-1.  From the *Data Builder*, click *New Task Chain*.
+1.  **Basic Creation of a Linear Task Chain**
 
-2.  From the left-side panel, drag and drop objects available in the repository on to the task chain canvas. In addition, you can drag objects already on the task chain canvas, to change the order in which some tasks are executed. The properties panel for the task chain is updated with the added objects.
+    A basic or linear task chain allows you to define a group or series of tasks and execute those tasks in a serial process, one after another. A succeeding task is only executed once the previous task in the series has finished successfully with a completed status. The execution of tasks in the series will not resume if the previous task has a failed status.
+
+2.  From the *Data Builder*, click *New Task Chain*.
+
+3.  From the left-side panel, drag and drop a first object on to the task chain canvas from those available in the repository.
 
     > ### Note:  
     > In the repository, you can see the remote tables, views, and data flow objects that meet prerequisites and are available to be added to the task chain.
 
-3.  In the properties panel, specify a name for the task chain.
+4.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* \(described in the next section\) to place the new object.
+
+    Choosing the *Add as New Task* option automatically connects the new object task to the previous object task. The properties panel for the task chain is also updated with the added objects.
+
+5.  Continue adding remaining object tasks you want to include in the task chain.
+
+    In addition to adding or replacing object tasks in a task chain, you can drag objects already on the task chain canvas to change the order in which tasks are executed.
+
+6.  In the properties panel, specify a name for the task chain.
 
      ![](images/Task_chain_properties_55f7187.png) 
 
@@ -288,23 +311,85 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     </table>
     
     > ### Note:  
-    > When you select an object, you can delete it from the task chain or navigate to the corresponding editor.
+    > When you select an object, you can delete it from the task chain or navigate to the corresponding editor for that object.
 
-4.  Save and deploy your task chain.
+7.  Save and deploy your task chain.
 
-    The properties of your task chain is updated.
+    The properties of your task chain are updated.
 
      ![](images/Properties_Update_with_Deploy_3674719.png) 
 
-    Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the Task Chain Monitor to monitor your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the Task Chain Monitor to monitor your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
-5.  **Configuring Email Notifications**
+8.  **Executing Parallel Tasks in a Task Chain**
+
+    In addition to linear task chains in which one task is executed after another, you can also create task chains in which individual tasks are run in parallel and continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
+
+9.  After adding an object to the task chain canvas, there are a few different ways in which you can specify that the object or task you added is part of a parallel branch in the task chain:
+
+    -   Select the task object you added to the canvas and then click the *Add as Parallel Branch* option from the list of context menu options available.
+
+         ![](images/context_menu_create_branch_301a9fc.png) 
+
+    -   Alternatively, you can select the task object, click <span class="FPA-icons"></span> Add from the shell bar above the canvas, and select the *Add Parallel Branch to Selected Task* menu option.
+
+         ![](images/add_parallel_branch_menu_option_88dd6d8.png) 
+
+        If you choose either of these options, a new task placeholder is added to the canvas, next to the currently selected task object.
+
+         ![](images/placeholder_2b7f857.png) 
+
+        You can then drag another task object on to the canvas to take the place of the new task placeholder.
+
+        > ### Note:  
+        > The task chain editor displays indications of warnings and errors with the bubble icon appearing next to specific task objects. You can click on an individual bubble to view the specific warning or error that was detected; for example, if a specific task was already included in another task chain, or if you need to make additional changes or updates to the task chain for it to be deployed and run.
+
+    -   Another way to create a parallel branch in a task chain is simply to drag a new object to the canvas on top of the currently selected task object and then choose the *Add as Parallel* context menu option.
+
+         ![](images/add_as_parallel_ca15c48.png) 
+
+        Following this selection, the new task object will be placed next to the currently selected object. For example:
+
+         ![](images/new_parallel_task_d721fd4.png) 
+
+        You may continue to add additional parallel task objects in the same way. There is no predefined limit on the number of tasks you can include in a parallel task chain branch, however you cannot nest another task chain within an existing one.
+
+
+10. When you have finished adding task objects to the parallel task chain branch, select the ANY or ALL operator to apply to the execution of the parallel task objects in the chain.
+
+    To do that, select one of the parallel branch task objects and select either the *ANY* or *ALL* operator from the task object’s context menu. Or, you can click and drag the ANY or ALL operator from the shell bar on to the task chain canvas below the parallel task chain branch you’ve created.
+
+    > ### Note:  
+    > To switch the ANY or ALL operator, after adding it to the task chain canvas, simply select the current operator and then toggle the ANY/ALL option in the task chain's Properties panel.
+
+11. Next, connect each of the parallel branch task objects to the ANY or ALL operator you placed on the canvas. To do that, select a task object in the branch, then click and drag the :arrow_right: arrow to the ANY or ALL operator to connect the selected task object.
+
+     ![](images/connect_to_operator_1_258e262.png) 
+
+     ![](images/connect_to_operator_2_6be4c2b.png) 
+
+12. Connect the remaining task objects in the branch to the ANY or ALL operator, in the same way, to complete creation of the parallel task chain branch.
+
+    Following the completion of the task chain branch, you can then continue to add additional linear tasks, or create additional task object branches in the task chain.
+
+13. When you’ve finished adding tasks objects to the task chain, save and deploy your new task chain.
+
+    > ### Note:  
+    > SAP Datasphere allows you to save task chains that may have unconnected task objects on the canvas. However, you will not be able to deploy and run them until all task objects are connected to define their order of execution when the task chain is run.
+
+    When a task chain is run that includes a parallel task chain branch, execution of all the branch tasks are triggered to be run in parallel. The ANY or ALL condition applied to the branch specifies whether ANY or ALL branch tasks must be completed successfully to continue with execution of remaining tasks in the chain.
+
+    A task chain will continue running as long as possible. Until all tasks in the chain have been executed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain is "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
+
+    After finishing a task chain run that includes one or more parallel task branches, it may be possible that one or more tasks may be reported in an error state \(in each branch\). For example, in branches where completion of tasks is evaluated with the ANY operator. In that case, if you restart or retry the task chain, SAP Datasphere will then restart previously-failed tasks and run all subsequent tasks that had not yet run. In particular, this means that if a failed task is in a parallel branch which was evaluated with the ANY operator, those tasks in the same branch which had run successfully will not be run again. Only those tasks that have failed will be retried or run again.
+
+14. **Configuring Email Notifications**
 
     After creating and deploying a task chain, you can set up email notification for completion of task chain runs.
 
     To set up email notification:
 
-6.  In the *Email Notifications* section of the *Properties* panel, select when you want notifications to be sent for the current task chain. You can choose from the following options:
+15. In the *Email Notifications* section of the *Properties* panel, select when you want notifications to be sent for the current task chain. You can choose from the following options:
 
     -   Send email notification only when the run has completed with an error.
 
@@ -322,13 +407,13 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     > ### Note:  
     > Task chains must also first be deployed before you can select or specify users to receive notifications.
 
-7.  Click the <span class="SAP-icons"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
+16. Click the <span class="SAP-icons"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
 
      ![](images/Recipients_List_527a05c.png) 
 
     From this dialog, you can select member users of the same tenant or click the *Others* tab to specify email addresses of other users you want to receive notifications \(up to 20 total recipients\). Email addresses must match the domain of the tenant owner, for example, jdoe@sap.com. After saving your selections, the display returns to the *Properties* panel, showing the selected users in the *Recipient Email Address* field.
 
-8.  Review the default email subject and message body text and make any updates to either the text or placeholder variables used in the notification email message sent for the current task chain.
+17. Review the default email subject and message body text and make any updates to either the text or placeholder variables used in the notification email message sent for the current task chain.
 
     Placeholder variables within the subject and message fields are enclosed by $$ characters, for example, $$status$$. You can click the <span class="SAP-icons"></span> icon to display a list of available placeholder variable names you may include in either the email subject or message body text fields.
 

@@ -60,7 +60,7 @@ SHA256 Fingerprint
 <tr>
 <td valign="top">
 
-[Amazon Redshift](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use the connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
+[Amazon Redshift Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
 
 
 
@@ -90,7 +90,7 @@ AmazonRedshiftODBC-64-bit-1.4.11.1000-1.x86\_64.rpm
 <tr>
 <td valign="top">
 
-[Oracle](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 
 

@@ -109,4 +109,5 @@
     -   [Create a Database Analysis User to Investigate Database Issues](Monitoring-SAP-Datasphere/create-a-database-analysis-user-to-investigate-database-issues-c28145b.md)
         -   [Delete a Database Analysis User](Monitoring-SAP-Datasphere/delete-a-database-analysis-user-b73e544.md)
     -   [Configure Notifications](Monitoring-SAP-Datasphere/configure-notifications-4388411.md)
+-   [REFCONT: DWC variables](refcont-dwc-variables-355f359.md)
 

@@ -19,12 +19,12 @@ After the connection has been created in the SAP Datasphere space, you can use i
 > 
 >     Once the partner tool fetches data from a source, in the *Data Builder* you can find the corresponding table in *Source Browser* \> *Sources* \> *Connections* \> *<partner connection name\>*. When importing the table into the *Data Builder*, a local table is created and deployed. You can use it the same way as any other table originating from an Open SQL schema.
 
-You can access the Open SQL Schema that has been generated for the partner connection from a third-party BI client via ODBC. For more information, see [Connecting BI Clients and Tools via ODBC on Microsoft Windows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/4db6f5a329af44509ae422ad707877b2.html "You can expose your space data via ODBC to use it in third-party BI clients.") :arrow_upper_right:.
+You can access the Open SQL Schema that has been generated for the partner connection from a third-party BI client via ODBC. For more information, see [Consume Data in Power BI and Other Clients, Tools, and Apps via ODBC](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4db6f5a329af44509ae422ad707877b2.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via an Open SQL schema and ODBC.") :arrow_upper_right:.
 
 **Related Information**  
 
 
-[Adverity](adverity-63e9ff5.md "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.")
+[Adverity Connections](adverity-connections-63e9ff5.md "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.")
 
-[Precog](precog-6e5f225.md "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.")
+[Precog Connections](precog-connections-6e5f225.md "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.")
 

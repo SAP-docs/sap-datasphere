@@ -9,7 +9,7 @@ You can enable SAP SQL Data Warehousing on your SAP Datasphere tenant to exchang
 ## Context
 
 > ### Note:  
-> To enable SAP SQL Data Warehousing on your SAP Datasphere tenant, an S-user must create an SAP ticket to connect your SAP BTP account \(see [Enable SAP SQL Data Warehousing on Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/e9a287849ccf41bb8a132d12dd3fdc8f.html "You can enable SAP SQL Data Warehousing on your SAP Datasphere tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement.") :arrow_upper_right:\).
+> To enable SAP SQL Data Warehousing on your SAP Datasphere tenant, an S-user must create an SAP ticket to connect your SAP BTP account \(see [Enable SAP SQL Data Warehousing on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/e9a287849ccf41bb8a132d12dd3fdc8f.html "You can enable SAP SQL Data Warehousing on your SAP Datasphere tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement.") :arrow_upper_right:\).
 
 This integrated SAP SQL data warehousing approach allows you to add HDI containers to your space and exchange data between them:
 

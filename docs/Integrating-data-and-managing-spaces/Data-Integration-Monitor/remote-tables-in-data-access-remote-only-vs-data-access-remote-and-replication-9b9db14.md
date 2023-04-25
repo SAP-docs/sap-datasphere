@@ -13,7 +13,7 @@ However, remote table replication offers limited support for use cases that requ
 
 There are also cases where you don't want the data to be persisted on the Cloud, for example for data protection or security concerns.
 
-To support use cases where data does not need to be replicated using remote tables, the option data access: *Remote Only* can be set to a connection when supported \(currently, for SAP HANA Cloud and SAP HANA on-premise\). For more information, see [SAP HANA](../Integrating-Data-Via-Connections/sap-hana-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9). You can use the data access: *Remote Only* for connections that both support remote tables and replication flows. This way, you will replicate data only via replication flows \(SAP recommendation\) and not via remote tables, and thus avoid replicating the same data twice.
+To support use cases where data does not need to be replicated using remote tables, the option data access: *Remote Only* can be set to a connection when supported \(currently, for SAP HANA Cloud and SAP HANA on-premise\). For more information, see [SAP HANA Connections](../Integrating-Data-Via-Connections/sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9). You can use the data access: *Remote Only* for connections that both support remote tables and replication flows. This way, you will replicate data only via replication flows \(SAP recommendation\) and not via remote tables, and thus avoid replicating the same data twice.
 
 The table below compares the actions you can do when your remote table is in data access *Remote Only* compared to a remote table in data access *Remote and Replication* or with no particular option selected:
 
@@ -54,7 +54,7 @@ Replication of Data
 
 Not possible directly. However, selected data can be replicated via *Replication flow Monitor* 
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy data from a source to a target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
 
 .
 
@@ -127,14 +127,14 @@ Import/Edit/Delete/Refresh/Display
 </td>
 <td valign="top">
 
-Possible. For more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
+Possible. For more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
 
 
 
 </td>
 <td valign="top">
 
-Possible. or more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
+Possible. or more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
 
 
 

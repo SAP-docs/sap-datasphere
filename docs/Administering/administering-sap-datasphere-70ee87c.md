@@ -1,5 +1,7 @@
 <!-- loio70ee87c19d3b47459ac7f2c8d4fea48a -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Administering SAP Datasphere
 
 Users with the *DW Administrator* role can configure, manage, and monitor the SAP Datasphere tenant to support the work of acquiring, preparing, and modeling data for analytics. They manage users, create spaces, and allocate storage to them. They prepare and monitor connectivity for data integration and perform ongoing monitoring and maintainance of the tenant.
@@ -11,6 +13,24 @@ This topic contains the following sections:
 -   [Create Spaces and Assign Users to Them](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces)
 -   [Prepare Connectivity](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_connectivity)
 -   [Monitor and Maintain SAP Datasphere](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_monitoring)
+
+> ### Tip:  
+> The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
+> 
+> -   :pencil2:: Contribute to a documentation page. This option opens a pull request on GitHub.
+> 
+> -   <span class="SAP-icons"></span> Feedback: Provide feedback about a documentation page. This option opens an issue on GitHub.
+> 
+> 
+> You need a GitHub account to use these options.
+> 
+> More information:
+> 
+> -   [Contribution Guidelines](https://help.sap.com/docs/open-documentation-initiative/contribution-guidelines/readme.html)
+> 
+> -   [Introduction Video: Open Documentation Initiative](https://www.youtube.com/watch?v=WJ0oarMlVW4)
+> 
+> -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
 
 
 

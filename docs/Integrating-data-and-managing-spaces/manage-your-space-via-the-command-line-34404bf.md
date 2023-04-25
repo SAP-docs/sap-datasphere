@@ -26,7 +26,7 @@ The following sections are available in this topic:
 
 ## Prerequisites
 
-To use `dwc` to manage your space you must install it \(see [Install or Update the dwc Command Line Interface](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (dwc) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Space Administrator* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
+To use `dwc` to manage your space you must install it \(see [Install or Update the dwc Command Line Interface](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (dwc) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Space Administrator* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
 
 
 
@@ -34,7 +34,7 @@ To use `dwc` to manage your space you must install it \(see [Install or Update t
 
 ## Log Into an SAP Datasphere OAuth Client
 
-We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Add a New OAuth Client](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/ffb0b24bea57480a95145eb094f5bb0f.html "You can add a new OAuth client.") :arrow_upper_right:\).
+We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Add a New OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ffb0b24bea57480a95145eb094f5bb0f.html "You can add a new OAuth client.") :arrow_upper_right:\).
 
 > ### Note:  
 > If an OAuth client is not available, users must provide a passcode for each command that they issue.
@@ -130,7 +130,7 @@ To log in, enter one of the following commands and press [Return\]:
     > Secrets files use versions of the options with underscores instead of hyphens.
 
 
-For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for loggin into it.") :arrow_upper_right:.
+For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for loggin into it.") :arrow_upper_right:.
 
 
 
@@ -441,7 +441,7 @@ Object definitions are read using the standard CSN syntax \(see [Core Data Servi
 > You can also export content from and import content to your space via:
 > 
 > -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\).
-> -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
+> -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
 
 Alternative: <code>--definitions [<i class="varname">&lt;obj1&gt;</i>,<i class="varname">&lt;obj2&gt;</i>]]</code>
 
@@ -608,7 +608,7 @@ The space definition is written to the console or to the specified file.
 
 ## Update a Space
 
-To update a space, you must first prepare a space definition file \(see [The Space Definition File Format](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\). We recommend that you create your file by reading your space into it and then modifying it as necessary.
+To update a space, you must first prepare a space definition file \(see [The Space Definition File Format](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\). We recommend that you create your file by reading your space into it and then modifying it as necessary.
 
 > ### Note:  
 > You need only complete the parameters that you want to set. All other space properties are either set to default values or keep their current values. If your file contains valid CSN object definitions, then these entities will be created or updated in the space.
@@ -685,7 +685,7 @@ Alternative: <code>--file-path <i class="varname">&lt;space-def-file&gt;</i>.jso
 </td>
 <td valign="top">
 
-\[optional\] Deploy changes to objects even if they will generate validation messages warning of impacts to objects that depend on them. Using this option is equivalent to clicking the *Deploy Anyway* button in the *Validation Messages* dialog \(see [Modifying Objects That Have Dependent Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/f315863264db489593c7f54f1f7fd83e.html "Once a table or view is created, it can be used as a source, or pointed to via an association by other objects. When a data access control is created it can be attached to one or more views to provide row level security. When you modify objects that have dependent objects, you may receive validation messages to warn you that your changes can impact these dependent objects.") :arrow_upper_right:\).
+\[optional\] Deploy changes to objects even if they will generate validation messages warning of impacts to objects that depend on them. Using this option is equivalent to clicking the *Deploy Anyway* button in the *Validation Messages* dialog \(see [Modifying Objects That Have Dependent Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f315863264db489593c7f54f1f7fd83e.html "Once a table or view is created, it can be used as a source, or pointed to via an association by other objects. When a data access control is created it can be attached to one or more views to provide row level security. When you modify objects that have dependent objects, you may receive validation messages to warn you that your changes can impact these dependent objects.") :arrow_upper_right:\).
 
 Alternative: `--force-definition-deployment`
 
@@ -1075,7 +1075,7 @@ Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 </table>
 
 > ### Note:  
-> You can create database users with a space definition file \(see [The Space Definition File Format](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/internal/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\).
+> You can create database users with a space definition file \(see [The Space Definition File Format](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\).
 
 
 

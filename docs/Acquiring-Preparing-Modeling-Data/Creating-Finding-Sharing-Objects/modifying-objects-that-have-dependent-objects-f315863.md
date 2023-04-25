@@ -67,7 +67,7 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     Warning listing all dependent objects that use the column.
 
     > ### Note:  
-    > You cannot change the data type of any columns that are used by a data access control \(see [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:\).
+    > You cannot change the data type of any columns that are used by a data access control \(see [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:\).
 
     In the case of tables:
 
@@ -155,7 +155,7 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     -   [Process Source Changes in the Graphical View Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-graphical-view-editor-702350c.md)
     -   [Process Source Changes in the SQL View Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-sql-view-editor-f7e43ce.md)
     -   [Process Source/Target Changes in the Data Flow Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-target-changes-in-the-data-flow-editor-0af80aa.md)
-    -   [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:
+    -   [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:
 
 5.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy your object.
 

@@ -67,7 +67,7 @@ All roles except *DW Consumer*
 
 <span class="SAP-icons"></span> \(*Repository Explorer*\)
 
-See [Repository Explorer](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
+See [Repository Explorer](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
 
 
 
@@ -126,7 +126,7 @@ In addition, the following sub-tools require the *Catalog Administrator* role:
 
 :convenience_store: \(*Data Marketplace*\)
 
-See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/4096fb8c97dd4d84a7200941c1721368.html "Enrich your own data with third-party data products.") :arrow_upper_right:
+See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4096fb8c97dd4d84a7200941c1721368.html "Enrich your own data with third-party data products.") :arrow_upper_right:
 
 
 
@@ -170,7 +170,7 @@ Consumption model editor
 
 Authorization scenario editor
 
-See [Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/3829d46c48a44f1e94915054bd76b7b9.html "The business layer is the area where business users can define objects with a business approach.") :arrow_upper_right:
+See [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "The business layer is the area where business users can define objects with a business approach.") :arrow_upper_right:
 
 
 
@@ -228,7 +228,7 @@ Intelligent lookup editor
 
 Task chain editor
 
-See [Acquiring and Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources or use data flows to extract, transform and load data. They can then use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud and other BI clients.") :arrow_upper_right:
+See [Acquiring and Preparing Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources or use data flows to extract, transform and load data. They can then use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud and other BI clients.") :arrow_upper_right:
 
 
 
@@ -273,7 +273,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="SAP-icons"></span> \(*Data Access Controls*\)
 
-See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
+See [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
 
 
 
@@ -301,7 +301,7 @@ See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca
 
 <span class="FPA-icons"></span> \(*Data Integration Monitor*\)
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor data flow and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor data flow and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
 
 
@@ -331,7 +331,7 @@ See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36c
 
 <span class="FPA-icons"></span> \(*Connections*\)
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:
+See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:
 
 
 
@@ -356,7 +356,7 @@ See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc614
 </table>
 
 > ### Note:  
-> -   In addition to the roles and privileges listed, users who have roles other than *DW Administrator* must also be members of one or more spaces in order to use these apps \(see [Assign Members to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\).
+> -   In addition to the roles and privileges listed, users who have roles other than *DW Administrator* must also be members of one or more spaces in order to use these apps \(see [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\).
 > -   Users with the role *DW Administrator* or *DW Space Administrator* have full access \(with full CRUD permissions\) to all the apps listed in this table.
 > -   Users with the *DW Viewer* role have read-only access to all the apps \(except for *Data Access Control*\) listed in this table.
 > -   For complete lists of roles, privileges, and permissions, see:
@@ -458,7 +458,7 @@ See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-data
 
 <span class="FPA-icons"></span> \(*Content Network*\)
 
-See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:
+See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:
 
 
 
@@ -518,7 +518,7 @@ Each sub-tool requires a separate permission:
 
 <span class="FPA-icons"></span> \(*Transport*\)
 
-See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
+See [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
 
 
 
@@ -545,7 +545,7 @@ See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35b
 
 <span class="SAP-icons"></span> \(*Data Sharing Cockpit*\)
 
-See [Data Marketplace - Data Provider&apos;s Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/internal/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Start with Data Marketplace as a data provider.") :arrow_upper_right:
+See [Data Marketplace - Data Provider&apos;s Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Start with Data Marketplace as a data provider.") :arrow_upper_right:
 
 
 
@@ -644,7 +644,7 @@ Contained in Standard Role...
 
 Consume data in SAP Analytics Cloud, Microsoft Excel, and other clients, tools, and apps
 
-See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/internal/en-US/d7d56284bb5148c887ac4054689bfbca.html "Users with the DW Consumer role do not connect to SAP Datasphere, but consume the data exposed from it in SAP Analytics Cloud, Microsoft Excel, and other clients, tools, and apps.") :arrow_upper_right:
+See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:
 
 
 

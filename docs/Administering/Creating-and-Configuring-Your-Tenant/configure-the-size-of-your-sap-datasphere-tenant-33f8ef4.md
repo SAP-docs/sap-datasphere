@@ -203,22 +203,6 @@ Included by default. The number of node hours available for Data Integration app
 <tr>
 <td valign="top">
 
-*Execution Hours*
-
-
-
-</td>
-<td valign="top">
-
-The number of hours consumed every month by Data Integration applications.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Maximum Parallel Jobs*
 
 

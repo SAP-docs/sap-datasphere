@@ -16,10 +16,6 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
  ![The graphic has an explanatory text.](images/DWC_-_analytic_model_5e78571.png) 
 
-**Restrictions**
-
--   Associations to dimensions with compounded keys are not supported.
-
 
 
 ## Procedure
@@ -29,6 +25,9 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 2.  Add a source. For more information, see [Add a Source](add-a-source-27075ee.md).
 
 3.  Click on your fact source on the canvas to select or deselect any measures, associated dimensions, or attributes in the properties panel on the right. For more information, see [Add a Dimension](add-a-dimension-4caf098.md).
+
+    > ### Note:  
+    > Attributes of type ***LargeString*** are not consumable in SAP Analytics Cloud.
 
 4.  To edit the properties of the analytic model: Click on the background of the canvas to show the analytic model's properties in the side panel. You can make the following changes here:
 
@@ -62,6 +61,4 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
 8.  You can choose *Preview* to check if the data looks like expected. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
 
-9.  Save and deploy your analytic model. It is then automatically exposed for consumption.
-
-
+9.  

@@ -12,13 +12,14 @@ Perspectives are reusable configurations that contain a subset of a consumption 
 
 You can create multiple perspectives for your consumption model which allows for different variants to enable quick validation while modeling. Perspectives can be used to create stories in SAP Analytics Cloud.
 
-You can create a perspective by going to the *Perspectives* tab or by choosing *Data Preview* and save it as a perspective.
+You can create a perspective in the *Perspectives* tab of your consumption model or by choosing *Data Preview* and saving your preview as a perspective.
 
-
-
-## Procedure
-
-You have created a consumption model.
+> ### Note:  
+> Older perspectives use internal naming conventions for dimensions that are not stable when transporting between tenants. If your perspective has this issue, the *Update Perspective for Transport* option is available at the bottom of its property sheet.
+> 
+> To make your perspective safe for transport, click this option and then click *Yes* to update its internal dimension names.
+> 
+> Updating the perspective will break any existing SAP Analytics Cloud stories that consume it, and you will need to reselect the dimension manually in each story.
 
  <a name="task_w4m_nfy_qpb"/>
 
@@ -32,7 +33,7 @@ You have created a consumption model.
 
 ## Procedure
 
-1.  Choose *Data Preview*.
+1.  In your consumption model, choose *Data Preview*.
 
 2.  The context menu <span class="FPA-icons"></span> on a field has various options:
 

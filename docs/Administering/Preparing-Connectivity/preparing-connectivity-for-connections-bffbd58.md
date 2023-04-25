@@ -80,7 +80,7 @@ Additional Information and Prerequisites
 <tr>
 <td valign="top">
 
-[Adverity](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/63e9ff5825384a03979666dbc3e715f2.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.") :arrow_upper_right:
+[Adverity Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/63e9ff5825384a03979666dbc3e715f2.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.") :arrow_upper_right:
 
 
 
@@ -145,7 +145,7 @@ yes
 <tr>
 <td valign="top">
 
-[Amazon Athena](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/1b21cd00fa9842f5ba747047b80fe3ab.html "Use the connection to access data from Amazon Athena, an interactive query service which can be used to analyze data in Amazon S3 using standard SQL.") :arrow_upper_right:
+[Amazon Athena Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1b21cd00fa9842f5ba747047b80fe3ab.html "Use an Amazon Athena connection to access data from Amazon Athena, an interactive query service which can be used to analyze data in Amazon S3 using standard SQL.") :arrow_upper_right:
 
 
 
@@ -210,7 +210,7 @@ no
 <tr>
 <td valign="top">
 
-[Amazon Redshift](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use the connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
+[Amazon Redshift Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
 
 
 
@@ -275,7 +275,7 @@ no
 <tr>
 <td valign="top">
 
-[Amazon Simple Storage Service](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use the connection to access data from objects in Amazon S3.") :arrow_upper_right:
+[Amazon Simple Storage Service Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to access data from objects in Amazon S3.") :arrow_upper_right:
 
 
 
@@ -340,7 +340,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Cloud Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/cd33107246f446628f9baff56faf5a1b.html "Use the connection to access data from SAP cloud applications which provide OData-based APIs for data integration and have a Cloud Data Integration (CDI) provider service implemented.") :arrow_upper_right:
+[Cloud Data Integration Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cd33107246f446628f9baff56faf5a1b.html "Use a Cloud Data Integration connection to access data from SAP cloud applications which provide OData-based APIs for data integration and have a Cloud Data Integration (CDI) provider service implemented.") :arrow_upper_right:
 
 
 
@@ -405,7 +405,7 @@ no
 <tr>
 <td valign="top">
 
-[Generic JDBC](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use the connection to access data from tables and views in any supported data source for which a JDBC driver is available.") :arrow_upper_right:
+[Generic JDBC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use a Generic JDBC connection to access data from tables and views in any supported data source for which a JDBC driver is available.") :arrow_upper_right:
 
 
 
@@ -470,7 +470,7 @@ no
 <tr>
 <td valign="top">
 
-[Generic OData](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/5d36f1aae68a4e59989c424a66d948c9.html "Use the connection to access data from an OData service.") :arrow_upper_right:
+[Generic OData Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d36f1aae68a4e59989c424a66d948c9.html "Use a Generic OData connection to access data from an OData service.") :arrow_upper_right:
 
 
 
@@ -535,7 +535,7 @@ no
 <tr>
 <td valign="top">
 
-[Generic SFTP](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/b645de78a8374c24871ab6169be40d35.html "Use the connection to access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
+[Generic SFTP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
 
 
 
@@ -600,7 +600,7 @@ no
 <tr>
 <td valign="top">
 
-[Google BigQuery](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
+[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
 
 
 
@@ -665,7 +665,7 @@ no
 <tr>
 <td valign="top">
 
-[Google Cloud Storage](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to access objects from Google Cloud Storage.") :arrow_upper_right:
+[Google Cloud Storage Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to access objects from Google Cloud Storage.") :arrow_upper_right:
 
 
 
@@ -730,7 +730,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Hadoop Distributed File System](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/f9c33566c4eb412d9d36a2f044bb5126.html "Use the connection to access objects from an Hadoop Distributed File System (HDFS) server.") :arrow_upper_right:
+[Hadoop Distributed File System Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/f9c33566c4eb412d9d36a2f044bb5126.html "Use the connection to access objects from an Hadoop Distributed File System (HDFS) server.") :arrow_upper_right:
 
 
 
@@ -795,7 +795,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure Blob Storage](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/df5a7c56ac21472c973f6fab341f3991.html "Use the connection to access objects in Microsoft Azure Blob Storage.") :arrow_upper_right:
+[Microsoft Azure Blob Storage Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df5a7c56ac21472c973f6fab341f3991.html "Use the connection to access objects in Microsoft Azure Blob Storage.") :arrow_upper_right:
 
 
 
@@ -860,7 +860,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen1](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/aa04f9a3dd454b1b8761a963079887a3.html "Use the connection to access objects in Microsoft Azure Data Lake Gen1 (ADL Gen1).") :arrow_upper_right:
+[Microsoft Azure Data Lake Store Gen1 Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aa04f9a3dd454b1b8761a963079887a3.html "Use the connection to access objects in Microsoft Azure Data Lake Gen1 (ADL Gen1).") :arrow_upper_right:
 
 
 
@@ -925,7 +925,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen2](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
+[Microsoft Azure Data Lake Store Gen2 Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
 
 
 
@@ -990,7 +990,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure SQL Database](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/46343fc1c4544fa9a075d97f84d39826.html "Use the connection to access table data from a Microsoft Azure SQL database.") :arrow_upper_right:
+[Microsoft Azure SQL Database Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/46343fc1c4544fa9a075d97f84d39826.html "Use a Microsoft Azure SQL Database connection to access table data from a Microsoft Azure SQL database.") :arrow_upper_right:
 
 
 
@@ -1055,7 +1055,7 @@ no
 <tr>
 <td valign="top">
 
-[Microsoft SQL Server](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use the connection to access data from a Microsoft SQL Server (on-premise).") :arrow_upper_right:
+[Microsoft SQL Server Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use a Microsoft SQL Server connection to access data from a Microsoft SQL Server (on-premise).") :arrow_upper_right:
 
 
 
@@ -1120,7 +1120,7 @@ no
 <tr>
 <td valign="top">
 
-[Open Connectors](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/9bfe7db51216449d985a0b59f5e181c4.html "Use the connection to access data from sources that are connected to the SAP Open Connectors account that is integrated with your space.") :arrow_upper_right:
+[Open Connectors Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9bfe7db51216449d985a0b59f5e181c4.html "Use an Open Connectors connection to access data from sources that are connected to the SAP Open Connectors account that is integrated with your space.") :arrow_upper_right:
 
 
 
@@ -1185,7 +1185,7 @@ no
 <tr>
 <td valign="top">
 
-[Oracle](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 
 
@@ -1250,7 +1250,7 @@ no
 <tr>
 <td valign="top">
 
-[Precog](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/6e5f2255ae8540d5895dcbef4157b82d.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.") :arrow_upper_right:
+[Precog Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6e5f2255ae8540d5895dcbef4157b82d.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.") :arrow_upper_right:
 
 
 
@@ -1315,7 +1315,7 @@ yes
 <tr>
 <td valign="top">
 
-[SAP ABAP](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use the connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right:
+[SAP ABAP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right:
 
 
 
@@ -1380,7 +1380,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP BW](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/e589041e80264f43b6c209c407336376.html "Use the connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP Business Warehouse (SAP BW) or SAP BW∕4HANA systems. For SAP BW systems that don&apos;t have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
+[SAP BW Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e589041e80264f43b6c209c407336376.html "Use an SAP BW connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP Business Warehouse (SAP BW) or SAP BW∕4HANA systems. For SAP BW systems that don&apos;t have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
 
 
 
@@ -1445,7 +1445,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP BW∕4HANA Model Transfer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/1caba954bc604e00bf8e82e383a46368.html "Use the connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:
+[SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:
 
 
 
@@ -1510,7 +1510,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP ECC](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use the connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP ECC systems (on-premise). For source systems that don&apos;t have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
+[SAP ECC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP ECC systems (on-premise). For source systems that don&apos;t have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
 
 
 
@@ -1575,7 +1575,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP Fieldglass](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/bda94ee6c9d5403f8556af174399d221.html "Retrieves data from SAP Fieldglass. The connection type supports view building and remote tables as well as data flows.") :arrow_upper_right:
+[SAP Fieldglass Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/bda94ee6c9d5403f8556af174399d221.html "Use an SAP Fieldglass connection to retrieve data from SAP Fieldglass.") :arrow_upper_right:
 
 
 
@@ -1640,7 +1640,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP HANA](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e6b63f176d3640609adcf06297fb37e9.html#loioe6b63f176d3640609adcf06297fb37e9 "Use the connection to access data from a remote SAP HANA database (on-premise or cloud).") :arrow_upper_right:
+[SAP HANA Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e6b63f176d3640609adcf06297fb37e9.html#loioe6b63f176d3640609adcf06297fb37e9 "Use an SAP HANA connection to access data from a remote SAP HANA database (on-premise or cloud).") :arrow_upper_right:
 
 
 
@@ -1705,7 +1705,7 @@ Cloud Connector IP \(for on-premise when using Cloud Connector for remote tables
 <tr>
 <td valign="top">
 
-[SAP HANA Cloud, Data Lake Files](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/356e41e880e54255891b702d2afefeb3.html "Use the connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
+[SAP HANA Cloud, Data Lake Files Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
 
 
 
@@ -1770,7 +1770,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP HANA Cloud, Data Lake Relational Engine](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/40763e2e3e33440db0c37f6bcbe650f0.html "Use the connection to access table data from the Relational Engine component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
+[SAP HANA Cloud, Data Lake Relational Engine Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/40763e2e3e33440db0c37f6bcbe650f0.html "Use an SAP HANA Cloud, Data Lake Relational Engine connection to access table data from the Relational Engine component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
 
 
 
@@ -1835,7 +1835,7 @@ n/a
 <tr>
 <td valign="top">
 
-[SAP Marketing Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/4de4959620c24d12a53a3cc357d3e003.html "Use the connection to access data from SAP Marketing Cloud via its OData-based APIs for data integration and SAP HANA Smart Data Integration.") :arrow_upper_right:
+[SAP Marketing Cloud Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4de4959620c24d12a53a3cc357d3e003.html "Use an SAP Marketing Cloud connection to access data from SAP Marketing Cloud via its OData-based APIs for data integration and SAP HANA Smart Data Integration.") :arrow_upper_right:
 
 
 
@@ -1900,7 +1900,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP SuccessFactors](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/39df02030d4b411487bacecf9afea4e8.html "Use the connection to access employee-related data in SAP SuccessFactors.") :arrow_upper_right:
+[SAP SuccessFactors Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/39df02030d4b411487bacecf9afea4e8.html "Use an SAP SuccessFactors connection to access employee-related data in SAP SuccessFactors.") :arrow_upper_right:
 
 
 
@@ -1965,7 +1965,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP S/4HANA Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use the connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:
+[SAP S/4HANA Cloud Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use an SAP S/4HANA Cloud connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:
 
 
 
@@ -2030,7 +2030,7 @@ no
 <tr>
 <td valign="top">
 
-[SAP S/4HANA On-Premise](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/internal/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use the connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
+[SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
 
 
 
