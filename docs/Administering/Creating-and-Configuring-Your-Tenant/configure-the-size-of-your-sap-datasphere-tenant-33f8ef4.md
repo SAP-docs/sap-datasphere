@@ -39,7 +39,7 @@ Also, once you click *Save*:
 > 
 > -   If you need further resources, please reach out to SAP.
 > 
-> -   See the blog [SAP Data Warehouse Cloud: Configure the Size of Your SAP Data Warehouse Cloud Tenant](https://blogs.sap.com/2022/02/18/configure-the-size-of-your-sap-data-warehouse-cloud-tenant/) \(published in February 2022\).
+> -   See the blog [SAP Datasphere: Configure the Size of YourSAP Datasphere Tenant](https://blogs.sap.com/2022/02/18/configure-the-size-of-your-sap-data-warehouse-cloud-tenant/) \(published in February 2022\).
 
 
 

@@ -12,7 +12,9 @@ Receive SAP Datasphere subaccount information required for Cloud Connector confi
 
 ## Context
 
-The Cloud Connector allows you to connect to on-premise data sources and use them for data flows, replication flows, model import from SAP BW∕4HANA, and remote table access from SAP HANA on-premise \(via SAP HANA Smart Data Access\).
+The Cloud Connector allows you to connect to on-premise data sources and use them in various use cases depending on the connection type.
+
+For more information, see [Preparing Cloud Connector Connectivity](preparing-cloud-connector-connectivity-35141e7.md).
 
 
 
@@ -45,7 +47,7 @@ The Cloud Connector allows you to connect to on-premise data sources and use the
         > ### Note:  
         > If you don't have an SAP Business Technology Platform \(SAP BTP\) user account yet, create an account in the [SAP BTP cockpit](https://account.hana.ondemand.com/) by clicking *Register* in the cockpit.
 
-    -   To be able to use the Cloud Connector for model import from SAP BW/4HANA Model Transfer connections, in the *Live Data Sources* section, switch on *Allow live data to securely leave my network*.
+    -   To be able to use the Cloud Connector for SAP BW/4HANA Model Transfer connections to import analytic queries with the *Model Transfer Wizard* and for SAP S/4HANA On-Premise connections to import ABAP CDS Views with the *Import Entities* wizard, switch on *Allow live data to securely leave my network* in the *Live Data Sources* section.
 
         > ### Note:  
         > The *Allow live data to securely leave my network* switch is audited, so that administrators can see who switched this feature on and off. To see the changes in the switch state, go to <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="SAP-icons"></span> \(*Activities*\), and search for ***ALLOW\_LIVE\_DATA\_MOVEMENT***.

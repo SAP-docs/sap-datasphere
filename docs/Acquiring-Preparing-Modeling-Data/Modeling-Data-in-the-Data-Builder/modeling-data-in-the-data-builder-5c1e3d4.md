@@ -24,7 +24,7 @@ Analytical datasets are entities that contain numerical measures that can be ana
 
 -   To get started: Select a *Semantic Usage* of *Analytical Dataset* to indicate that your entity contains numerical measures that can be analyzed.
 -   You must identify at least one measure \(see [Specify Measures](specify-measures-33f7f29.md)\).
--   You can create associations to dimensions and text entities \(see [Create an Association](../Acquiring-and-Preparing-Data-in-the-Data-Builder/create-an-association-66c6998.md)\).
+-   You can create associations to dimensions and text entities \(see [Create an Association](../create-an-association-66c6998.md)\).
 -   You can expose your analytical dataset for consumption directly, or consume it in an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 
@@ -38,7 +38,7 @@ Dimensions are entities that contain master data that categorize and group the n
 -   To get started: Select a *Semantic Usage* of *Dimension* to indicate that your entity contains attributes that can be used to analyze and categorize measures defined in other entities.
 
 -   You must set at least one key column \(see [Set Key Columns to Uniquely Identify Records](set-key-columns-to-uniquely-identify-records-d9ef2c9.md)\).
--   You can create associations to other dimensions, text entities, and hierarchies \(see [Create an Association](../Acquiring-and-Preparing-Data-in-the-Data-Builder/create-an-association-66c6998.md)\).
+-   You can create associations to other dimensions, text entities, and hierarchies \(see [Create an Association](../create-an-association-66c6998.md)\).
 -   You can add parent-child or level-based hierarchies to support drill-down \(see [Add a Hierarchy to a Dimension](add-a-hierarchy-to-a-dimension-218b7e6.md)\).
 -   You can make your dimension time-dependent, so that its members can change over time \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\).
 
@@ -199,8 +199,8 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     Choose from the following entity types:
 
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
-    -   Graphical View \(see [Creating a Graphical View](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-graphical-view-27efb47.md)\)
-    -   SQL View \(see [Creating an SQL View](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-an-sql-view-81920e4.md)\)
+    -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
+    -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
     -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)

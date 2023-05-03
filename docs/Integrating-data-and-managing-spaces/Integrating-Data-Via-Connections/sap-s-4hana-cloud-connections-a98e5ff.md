@@ -67,7 +67,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import entities from SAP S/4HANA Cloud with rich metadata and all their sources and dependencies. For more information, see [Import Semantically-Rich Entities from SAP BW Bridge and SAP S/4HANA Cloud](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to import semantically-rich objects from SAP BW Bridge and SAP S/4HANA Cloud connections. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
+You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see . 
 
 
 
@@ -120,7 +120,7 @@ For more information about extracting ABAP CDS Views from SAP S/4HANA Cloud, see
 > ### Note:  
 > The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows.
 > 
-> Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated table in the source we strongly recommend to only use remote tables or replication flows and not both.
+> Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object in the source we strongly recommend to only use remote tables or replication flows and not both.
 
 
 

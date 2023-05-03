@@ -15,7 +15,7 @@ Views can be accessed outside SAP Datasphere only if they have the *Expose for C
 > ### Note:  
 > You can also expose data as an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\) or as a perspective \(see [Define Perspectives](../Buisiness-Builder/define-perspectives-ce26fd3.md)\).
 
-For information about consuming data, see [Consuming Data Exposed by SAP Datasphere](../Consuming-Data-Exposed/consuming-data-exposed-by-sap-datasphere-d7d5628.md).
+For information about consuming data, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
 
 
 

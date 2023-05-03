@@ -31,7 +31,7 @@ You can create a copy of most objects by:
 
 ## Preview Data
 
-Design-time objects do not contain any data, but you can preview the data they will contain when they are deployed to the run-time environment \(see [Viewing or Previewing Data in Data Builder Objects](../Acquiring-and-Preparing-Data-in-the-Data-Builder/viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\). You can save an object even if it contains validation errors.
+Design-time objects do not contain any data, but you can preview the data they will contain when they are deployed to the run-time environment \(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\). You can save an object even if it contains validation errors.
 
 
 

@@ -31,7 +31,7 @@ In this example, the *IT* space has imported the *Sales* and *Products* tables f
 
 ![](images/Sharing_Example_-_Before_e588dcd.png)
 
-In order to protect that data and ensure that users can view only data for which they have permission, an *IT* space user consumes the *Sales* table in the *Sales* view and applies a data access control to the view \(see [Apply a Data Access Control](../Acquiring-and-Preparing-Data-in-the-Data-Builder/apply-a-data-access-control-8f79fc8.md)\):
+In order to protect that data and ensure that users can view only data for which they have permission, an *IT* space user consumes the *Sales* table in the *Sales* view and applies a data access control to the view \(see [Apply a Data Access Control](../apply-a-data-access-control-8f79fc8.md)\):
 
 ![](images/Sharing_Example_-_Before_2_6b60b6c.png)
 
@@ -98,7 +98,7 @@ In this example, the *Sales View* entity has a semantic usage of *Analytical Dat
 You can see the entities shared with your space:
 
 -   In the *Repository Explorer* \(see [Repository Explorer](repository-explorer-f8ce0b4.md)\).
--   In the *Shared Objects* folder on the *Repository* tab of the *Source Browser* in any *Data Builder* editor \(see [Using the Source Browser](../Acquiring-and-Preparing-Data-in-the-Data-Builder/using-the-source-browser-7d2b21d.md)\).
+-   In the *Shared Objects* folder on the *Repository* tab of the *Source Browser* in any *Data Builder* editor \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
 
 > ### Note:  
 > Entities shared to your space are not listed in the *Data Builder* start page.

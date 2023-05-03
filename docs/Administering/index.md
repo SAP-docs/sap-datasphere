@@ -87,6 +87,7 @@
     -   [Prepare Connectivity to SAP SuccessFactors](Preparing-Connectivity/prepare-connectivity-to-sap-successfactors-c9b1915.md)
     -   [Prepare Connectivity to SAP S/4HANA Cloud](Preparing-Connectivity/prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md)
     -   [Prepare Connectivity to SAP S/4HANA On-Premise](Preparing-Connectivity/prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md)
+        -   [Create SAP S/4HANA Live Data Connection of Type Tunnel](Preparing-Connectivity/create-sap-s-4hana-live-data-connection-of-type-tunnel-095dbdf.md)
 -   [Managing and Monitoring Connectivity for Data Integration](managing-and-monitoring-connectivity-for-data-integration-c5b167b.md)
     -   [Monitoring Data Provisioning Agent in SAP Datasphere](monitoring-data-provisioning-agent-in-sap-datasphere-c33c937.md)
         -   [Monitoring Data Provisioning Agent Logs](monitoring-data-provisioning-agent-logs-e49785b.md)
@@ -109,5 +110,4 @@
     -   [Create a Database Analysis User to Investigate Database Issues](Monitoring-SAP-Datasphere/create-a-database-analysis-user-to-investigate-database-issues-c28145b.md)
         -   [Delete a Database Analysis User](Monitoring-SAP-Datasphere/delete-a-database-analysis-user-b73e544.md)
     -   [Configure Notifications](Monitoring-SAP-Datasphere/configure-notifications-4388411.md)
--   [REFCONT: DWC variables](refcont-dwc-variables-355f359.md)
 

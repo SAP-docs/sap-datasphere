@@ -1452,7 +1452,7 @@ no
 </td>
 <td valign="top">
 
-yes \(to connect to the SAP HANA database of SAP BW/4HANA\)
+yes \(for model import - to connect to the SAP HANA database of SAP BW/4HANA\)
 
 
 
@@ -1466,7 +1466,7 @@ no
 </td>
 <td valign="top">
 
-yes \(to make http requests to SAP BW/4HANA\)
+yes \(for model import - to make http requests to SAP BW/4HANA\)
 
 
 
@@ -2037,7 +2037,7 @@ no
 </td>
 <td valign="top">
 
-yes
+yes \(for model import\)
 
 
 
@@ -2051,7 +2051,7 @@ no
 </td>
 <td valign="top">
 
-yes \(for data flows and replication flows\)
+yes \(for data flows, replication flows, and model import\)
 
 
 

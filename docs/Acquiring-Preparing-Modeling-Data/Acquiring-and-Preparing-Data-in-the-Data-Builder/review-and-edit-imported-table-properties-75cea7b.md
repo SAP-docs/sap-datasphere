@@ -312,7 +312,7 @@ Provide business-friendly names for your table and its columns, identify its sem
 
 5.  Complete or consult other sections as appropriate:
 
-    -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
+    -   *Associations* - Create associations to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Table Services* - Enable the *In-Memory Storage* option to store the table data directly in memory \(see [Accelerate Table Data Access with In-Memory Storage](accelerate-table-data-access-with-in-memory-storage-407d1df.md)\).
 

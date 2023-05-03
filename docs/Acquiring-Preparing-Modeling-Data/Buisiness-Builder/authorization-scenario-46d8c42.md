@@ -19,5 +19,5 @@ In the Business Builder, modelers can create, assign, and consume authorization 
 
 [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:
 
-[Apply a Data Access Control](../Acquiring-and-Preparing-Data-in-the-Data-Builder/apply-a-data-access-control-8f79fc8.md "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.")
+[Apply a Data Access Control](../apply-a-data-access-control-8f79fc8.md "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.")
 

@@ -4,7 +4,7 @@
 
 # Preparing Cloud Connector Connectivity
 
-Connections to on-premise sources used for data flows and other connection features require Cloud Connector to act as link between SAP Datasphere and the source. Before creating the connection, the Cloud Connector requires an appropriate setup.
+Connections to on-premise sources used for data flows, replication flows, and other use cases require Cloud Connector to act as link between SAP Datasphere and the source. Before creating the connection, the Cloud Connector requires an appropriate setup.
 
 
 
@@ -18,7 +18,12 @@ Cloud Connector serves as a link between SAP Datasphere and your on-premise sour
 
 -   Replication flows
 
--   Model import from SAP BW/4HANA Model Transfer connections \(Cloud Connector is required for the live data connection of type tunnel that you need to create the model import connection\)
+-   Model import from:
+
+    -   SAP BW/4HANA Model Transfer connections \(Cloud Connector is required for the live data connection of type tunnel that you need to create the model import connection\)
+
+    -   SAP S/4HANA On-Premise connections \(Cloud Connector is required for the live data connection of type tunnel that you need to search for the entities in the SAP S/4HANA system\)
+
 
 -   Remote tables \(only for SAP HANA on-premise via SAP HANA Smart Data Access\)
 
@@ -45,11 +50,11 @@ To prepare connectivity via Cloud Connector, perform the following steps:
 
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
 
-4.  If you have connected multiple Cloud Connector instances to your subaccount via loction IDs and you want to use them for your connections, add the location IDs in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
+4.  If you have connected multiple Cloud Connector instances to your subaccount and you want to use these locations for your connections, add the location IDs in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
-5.  If you you want to create SAP BW/4HANA Model Transfer connections, make sure you have switched on *Allow live data to securely leave my network* in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
+5.  If you you want to create SAP BW/4HANA Model Transfer connections or SAP S/4HANA On-Premise connections for model import, make sure you have switched on *Allow live data to securely leave my network* in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
@@ -60,7 +65,7 @@ To prepare connectivity via Cloud Connector, perform the following steps:
 
 ## Result
 
-The Cloud Connector respectively Cloud Connector instances are available for creating connections and enabling these for any of the supported features.
+The Cloud Connector respectively Cloud Connector instances are available for creating connections and enabling these for the supported features.
 
 
 

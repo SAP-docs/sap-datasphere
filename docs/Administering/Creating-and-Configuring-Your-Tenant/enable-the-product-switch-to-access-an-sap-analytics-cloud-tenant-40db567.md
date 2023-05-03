@@ -19,6 +19,6 @@ You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant and enab
     > 
     > Multiple SAP Analytics Cloud tenants can create live connections to your SAP Datasphere tenant, but only one SAP Analytics Cloud tenant can be accessed via the product switch.
     > 
-    > For more information about consuming data in this way, see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models, perspectives, and views to create stories and analytic applications.") :arrow_upper_right:.
+    > For more information about consuming data in this way, see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models, perspectives, and views to create stories and analytic applications.") :arrow_upper_right:.
 
 

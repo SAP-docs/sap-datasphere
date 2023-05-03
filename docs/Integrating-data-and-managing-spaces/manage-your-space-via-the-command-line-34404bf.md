@@ -18,7 +18,7 @@ The following sections are available in this topic:
 -   [Log Out of an SAP Datasphere OAuth Client](manage-your-space-via-the-command-line-34404bf.md#loio34404bf73b2949be8dce0b772fa5d443__section_oauth_logout)
 
 > ### Note:  
-> See the blog [@sap/dwc-cli: Command-Line Interface for SAP Data Warehouse Cloud: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.
+> See the blog [@sap/dwc-cli: Command-Line Interface for SAP Datasphere: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.
 
 
 

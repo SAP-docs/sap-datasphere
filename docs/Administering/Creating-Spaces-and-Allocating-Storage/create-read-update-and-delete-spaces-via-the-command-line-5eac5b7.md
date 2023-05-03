@@ -18,7 +18,7 @@ The following sections are available in this topic:
 -   [Log Out of an SAP Datasphere OAuth Client](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_oauth_logout)
 
 > ### Note:  
-> See the blog [@sap/dwc-cli: Command-Line Interface for SAP Data Warehouse Cloud: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.
+> See the blog [@sap/dwc-cli: Command-Line Interface for SAP Datasphere: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.
 
 
 

@@ -17,7 +17,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
 -   Create a table by importing a CSV file \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md)\).
 -   Create a table as the output of a data flow \(see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md)\).
 -   Import a table from:
-    -   A connection via the *Sources* tab of the *Source Browser* in any of the data builder editors \(see [Import an Object from a Connection or Other Source](import-an-object-from-a-connection-or-other-source-3e6f8f2.md)\).
+    -   A connection via the *Sources* tab of the *Source Browser* in any of the data builder editors \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md)\).
     -   A CSN file via the *Import* menu in the data builder start page or an ER model \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
 
 
@@ -154,7 +154,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
 
 4.  Complete or consult other sections as appropriate:
 
-    -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
+    -   *Associations* - Create associations to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Table Services* - Enable the *In-Memory Storage* option to store the table data directly in memory \(see [Accelerate Table Data Access with In-Memory Storage](accelerate-table-data-access-with-in-memory-storage-407d1df.md)\).
 
@@ -163,7 +163,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
 
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](../Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
-5.  \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md) 
+5.  \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md) 
 
 6.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:
 

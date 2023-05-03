@@ -31,9 +31,9 @@ This integrated SAP SQL data warehousing approach allows you to add HDI containe
 
 
 > ### Note:  
-> See the blog [SAP BTP Showcase – Access the SAP HANA Cloud Database Underneath SAP Data Warehouse Cloud](https://blogs.sap.com/2021/01/31/sap-btp-showcase-access-the-sap-hana-cloud-database-underneath-sap-data-warehouse-cloud/) \(published in January 2021\) for an overview of the Integrated SAP SQL Warehousing approach.
+> See the blog [SAP BTP Showcase – Access the SAP HANA Cloud Database Underneath SAP Datasphere](https://blogs.sap.com/2021/01/31/sap-btp-showcase-access-the-sap-hana-cloud-database-underneath-sap-data-warehouse-cloud/) \(published in January 2021\) for an overview of the Integrated SAP SQL Warehousing approach.
 > 
-> See the blog [SAP Data Warehouse Cloud – Hybrid Access to SAP HANA for SQL Data Warehousing](https://blogs.sap.com/2020/06/19/sap-data-warehouse-cloud-hybrid-access-to-sap-hana-for-sql-data-warehousing/) \(published in June 2021\) for information about accessing your HDI objects on another server through a standard SAP HANA connection.
+> See the blog [SAP Datasphere – Hybrid Access to SAP HANA for SQL Data Warehousing](https://blogs.sap.com/2020/06/19/sap-data-warehouse-cloud-hybrid-access-to-sap-hana-for-sql-data-warehousing/) \(published in June 2021\) for information about accessing your HDI objects on another server through a standard SAP HANA connection.
 
 
 

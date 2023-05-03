@@ -20,6 +20,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 -   Views must not have parameters or data access controls assigned to them.
 
+-   If a data flow that has input parameters is included in a task chain, task chain runs will use default parameter values defined for the data flow.
 
 
 

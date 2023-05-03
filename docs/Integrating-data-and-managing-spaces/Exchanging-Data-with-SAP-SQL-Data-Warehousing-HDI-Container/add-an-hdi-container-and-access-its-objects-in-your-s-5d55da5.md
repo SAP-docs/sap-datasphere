@@ -13,7 +13,7 @@ To access calculation views and other HDI objects as sources for your views and 
 You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(with grant option\) in the container to allow you to add it to your space and allow you to exchange data between them \(see [Prepare Your Project for Exchanging Data with Your Space](prepare-your-project-for-exchanging-data-with-your-sp-a94e163.md)\).
 
 > ### Note:  
-> See the blog [SAP Data Warehouse Cloud Integrated with SAP SQL Data Warehousing Sharing a Single DB Tenant](https://blogs.sap.com/2020/07/01/sap-data-warehouse-cloud-integrated-with-sap-sql-data-warehousing-sharing-a-single-db-tenant/) \(published in July 2021\) for a walkthrough of this process.
+> See the blog [SAP Datasphere Integrated with SAP SQL Data Warehousing Sharing a Single DB Tenant](https://blogs.sap.com/2020/07/01/sap-data-warehouse-cloud-integrated-with-sap-sql-data-warehousing-sharing-a-single-db-tenant/) \(published in July 2021\) for a walkthrough of this process.
 
 
 

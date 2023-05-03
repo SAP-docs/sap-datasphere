@@ -24,7 +24,7 @@ Depending on the privileges they are granted, a database user can use their Open
 
 A database user is required in order to:
 
--   Connect an analytics client or other tool to SAP Datasphere \(see [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API.") :arrow_upper_right:\).
+-   Connect an analytics client or other tool to SAP Datasphere \(see [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API.") :arrow_upper_right:\).
 -   Consume space data in an SAP SQL Data Warehousing HDI container \(see [Access Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/access-space-objects-in-your-hdi-container-656eebc.md)\).
 -   Work with SAP HANA Cloud, data lake \(see [Integrating Data to and From SAP HANA Cloud Data Lake](../../Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md)\).
 

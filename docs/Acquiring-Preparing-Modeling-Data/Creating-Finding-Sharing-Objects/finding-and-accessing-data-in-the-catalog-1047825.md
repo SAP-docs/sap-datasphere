@@ -12,11 +12,15 @@ Use the catalog to find the single-source of truth for your data domain to build
 
 You can search for assets by clicking <span class="SAP-icons"></span>\(*Catalog*\) in the side navigation menu.
 
-You can find assets globally by using the search bar and entering all or part of the characters in a term or asset. Click :mag:
 
-You can see the published terms, assets, and KPIs that are in a current state.
 
-Then use the filter options to narrow the results by assets, terms, or KPIs and the different criteria in each of those categories. Access the filter options by clicking <span class="SAP-icons"></span> \(Show filters\).
+<a name="loio10478251045b43e782fa15e0f3e113b0__section_akz_tj2_bxb"/>
+
+## Search by Entering a String
+
+Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+
+From the third character, the field will begin proposing objects and search strings. Click on an object to open it directly. Click on a string to trigger a search on it.
 
 Filter the search results based on selected criteria to limit the number of results. There are five tabs next to the *Filter* icon that you can use to narrow your results:
 
@@ -138,15 +142,88 @@ Shows the assets, terms, and KPIs that have been recently added to the catalog.
 
 You can also open a side panel when you click <span class="SAP-icons"></span> \(Show filters\) to filter by these categories and more. Click *Show More* to open a dialog with additional filter options.
 
-Under the *All* collection type, click either *Terms*, *Assets*, or *KPIs* to view additional criteria.
+
+
+<a name="loio10478251045b43e782fa15e0f3e113b0__section_pgp_5l2_bxb"/>
+
+## Filter by Criteria
+
+Filter by any of the categories listed in the *Filter By* area of the left panel.
+
+You can select one or more values in each filter category in the *Filter By* section:
+
+-   Each value selected in a category acts as an ***OR*** condition.
+-   Each value selected in separate categories acts together as ***AND*** conditions.
+
+
+<table>
+<tr>
+<th valign="top">
+
+To Display
 
 
 
-<a name="loio10478251045b43e782fa15e0f3e113b0__section_jr4_jqx_kwb"/>
+</th>
+<th valign="top">
 
-## Filter Options
+Select Filter Criteria
 
-Select one of the checkboxes and the results are automatically narrowed. Some categories have more options than are shown on the side panel. Click *Show More* to open the *Filter Settings* dialog to view all the options in each category. After making your selections, click *OK* to close the dialog and view your results.
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Assets that are a *Local Table*
+
+
+
+</td>
+<td valign="top">
+
+*Type:**Local Table*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets that are a *Local Table* or *View*
+
+
+
+</td>
+<td valign="top">
+
+*Type:**Local Table*, *View*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets that are a *Local Table* or *View* and on the system *SAP Datasphere*
+
+
+
+</td>
+<td valign="top">
+
+*Type:**Story*, *View*
+
+*System Type:* *SAP Datasphere*
+
+
+
+</td>
+</tr>
+</table>
 
 **Filter Options**
 
@@ -958,8 +1035,21 @@ Choose one of the tabs and specify the options:
 </tr>
 </table>
 
-> ### Note:  
-> For those categories with a *Define Conditions* tab, click <span class="FPA-icons"></span>\(Add\). Each condition acts as an AND operator, so that all the define conditions must be true for the object to be returned in the search results.
+
+
+<a name="loio10478251045b43e782fa15e0f3e113b0__section_fkl_st5_cxb"/>
+
+## Define Advanced Filter Conditions
+
+For those filter options that are not related to date or time, you can create a custom filter with specific conditions.
+
+1.  Click *Show More* at the bottom of a filter category to open the Filter Settings dialog. Some filters have a *Select Items* and a *Define Conditions* tab.
+2.  On the *Define Conditions* tab, choose an operator and enter a value in the *Filter Condition* box.
+3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an ***OR*** operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an ***AND*** operator, so that both conditions must be true for the object to be returned in the search results.
+
+You can create advanced filter conditions for multiple filter categories. An object must meet one of the conditions in each of the categories to be included in the search results.
+
+For example, if you are viewing terms and want to create a condition to filter on the keywords “investment” and “stock”, you would click :heavy_plus_sign:. Then choose *Contains all of these words*. In the Filter Condition box, enter ***investment***. Click :heavy_plus_sign: again. Choose *Contains all of these words*. In the Filter Condition box, enter ***stock***, and then click *OK*. The new condition is listed in the Keyword group in the filter panel, and the filter results are automatically shown.
 
 
 

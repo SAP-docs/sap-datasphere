@@ -150,6 +150,8 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 9.  To run the data flow, click *Run*.
 
+    If the data flow contains input parameters, a dialog box appears prompting the user to enter a value for each input parameter. You can either keep the default value or override it \(see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)\).
+
 10. To view the *Run Status* section in the data flow properties panel, click the diagram background.
 
 11. To see more details about the run, open the *Data Flow Monitor* by clicking <span class="FPA-icons"></span> \(Open in Data Integration Monitor\).

@@ -50,7 +50,7 @@ To import changes from the underlying sources,
 3.  Click <span class="FPA-icons"></span> \(Preview Data\) to preview the data contained in your remote table.
 
     > ### Note:  
-    > Previewing data on a remote system is similar to previewing data of a local table. However, it might take longer, it can impact the remote system’s performance, and some preview controls aren't available. You can replicate the table locally to address performance issues and have a richer preview experience. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md). Moreover, the remote table data preview is limited for the following connection types:
+    > Previewing data on a remote system is similar to previewing data of a local table. However, it might take longer, it can impact the remote system’s performance, and some preview controls aren't available. You can replicate the table locally to address performance issues and have a richer preview experience. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md). Moreover, the remote table data preview is limited for the following connection types:
     > 
     > -   *ABAP* connection: the filters `=` and `IN` only are available.
     > -   *Cloud Data Integration \(CDI\)*connection: rows won't be counted in headers.

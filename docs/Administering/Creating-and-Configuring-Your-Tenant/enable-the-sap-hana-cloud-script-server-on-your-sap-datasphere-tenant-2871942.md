@@ -7,7 +7,7 @@ You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to
 To enable the SAP HANA Cloud script server, an S-user must request this service with an SAP ticket. For a step-by-step guide to creating the ticket, see [2994416 - Enablement of APL and PAL in DWC](https://launchpad.support.sap.com/#/notes/2994416).
 
 > ### Note:  
-> The script server cannot be enabled in a SAP Datasphere trial version.
+> The script server cannot be enabled in a SAP Datasphere consumption-based tenant with free plan.
 
 Once the script server is enabled, the *Enable Automated Predictive Library and Predictive Analysis Library* option can be selected when creating a database user \(see [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator or DW Integrator role (space administrators and integrators) can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:\).
 

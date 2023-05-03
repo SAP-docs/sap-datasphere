@@ -18,7 +18,7 @@ Before you can use the connection, the following is required:
 
     For more information, see:
 
-    -   [IP Restrictions](https://help.sap.com/viewer/DRAFT/bf014ed11dae45ecae6f8c6e42fa68bb/latest/en-US/a356e2c66c7443ceb15f8592318b5dcf.html) in the *SAP SuccessFactors platform* documentation
+    -   [IP Restrictions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/bf014ed11dae45ecae6f8c6e42fa68bb/a356e2c66c7443ceb15f8592318b5dcf.html) in the *SAP SuccessFactors platform* documentation
 
     -   [Finding SAP Datasphere IP addresses](finding-sap-datasphere-ip-addresses-0934f7e.md)
 

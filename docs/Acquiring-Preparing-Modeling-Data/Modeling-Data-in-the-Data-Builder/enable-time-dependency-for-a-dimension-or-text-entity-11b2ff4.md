@@ -40,7 +40,7 @@ To enable time-dependency in a dimension or text entity, you must identify one c
     > For information about setting keys and mapping them in associations, see [Set Key Columns to Uniquely Identify Records](set-key-columns-to-uniquely-identify-records-d9ef2c9.md).
 
 5.  \[optional\] By default, the *Business Date - From* and *Business Date - To* are treated inclusively. If you want to exclude one or both, you must edit the CSN code for your entity:
-    1.  Click *Edit Custom CSN Annotations* \(see [Edit a Custom CSN Annotation](../Acquiring-and-Preparing-Data-in-the-Data-Builder/edit-a-custom-csn-annotation-820d013.md)\).
+    1.  Click *Edit Custom CSN Annotations* \(see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md)\).
     2.  Directly after the opening brace following the entity name, add the following code:
 
         ```
@@ -77,7 +77,7 @@ You can, optionally, add an input parameter to allow SAP Analytics Cloud users t
 > ### Note:  
 > Only analytical datasets that are directly consumed by SAP Analytics Cloud support this feature. Analytic models \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\) that consume analytical datasets with time-dependent parameters and are, in turn, consumed by SAP Analytics Cloud, can only display dimension members based on the current date.
 
-1.  Create an input parameter \(see [Create an Input Parameter](../Acquiring-and-Preparing-Data-in-the-Data-Builder/create-an-input-parameter-53fa99a.md)\) with data type *Date*.
+1.  Create an input parameter \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\) with data type *Date*.
 2.  Edit the CSN code to add a semantic type to the input parameter:
     1.  Click *Edit Custom CSN Annotations*
     2.  In the `params` section, find your parameter and add the following line after its `type`:

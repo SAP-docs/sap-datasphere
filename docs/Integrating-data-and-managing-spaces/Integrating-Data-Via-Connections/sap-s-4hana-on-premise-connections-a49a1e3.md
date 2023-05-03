@@ -92,6 +92,22 @@ Real-time replication is supported for ODP sources. For information about any co
 <tr>
 <td valign="top">
 
+Model Import
+
+
+
+</td>
+<td valign="top">
+
+You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see . 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Data Flows
 
 
@@ -128,7 +144,7 @@ You can access the following data:
 
 -   Tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server.
 
--   Data from ODP sources
+-   Data from ODP sources \(extraction contexts *SAPI* and *BW*\)
 
 
 
@@ -139,7 +155,7 @@ You can access the following data:
 > ### Note:  
 > The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows.
 > 
-> Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated table in the source we strongly recommend to only use remote tables or replication flows and not both.
+> Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object in the source we strongly recommend to only use remote tables or replication flows and not both.
 
 
 
@@ -355,7 +371,7 @@ Description
 </td>
 <td valign="top">
 
- Set to *true* if your source is an on-premise source and you want to use the connection for data flows or replication flows. The default is *false*. 
+ Set to *true* if you want to use the connection for data flows, replication flows, or model import. The default is *false*. 
 
 
 
@@ -653,6 +669,22 @@ Description
 <td valign="top">
 
  *Replication Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Model Import*
+
+
+
+</td>
+<td valign="top">
+
+To enable *Model Import*, select the live data connection that connects to your SAP S/4HANA system and select a Data Provisioning Agent.
 
 
 

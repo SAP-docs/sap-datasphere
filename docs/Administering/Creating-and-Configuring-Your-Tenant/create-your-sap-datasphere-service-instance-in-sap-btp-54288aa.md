@@ -75,7 +75,7 @@ Free
 </td>
 <td valign="top">
 
-The free plan provides an SAP Datasphere tenant for a limited time for trial use, which is reprensented by a service instance.
+The free plan provides an SAP Datasphere tenant for a limited time for trial use, which is represented by a service instance.
 
 
 

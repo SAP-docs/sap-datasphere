@@ -40,8 +40,6 @@ Before you can use the connection for data flows, the following is required:
 
 
 
-<a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__section_stp_5kk_qwb"/>
-
 ## Replication Flows
 
 Before you can use the connection for replication flows, the following is required:
@@ -64,4 +62,52 @@ Before you can use the connection for replication flows, the following is requir
 
 
 For more information about integrating ABAP-based SAP systems, see [2890171](https://launchpad.support.sap.com/#/notes/2890171).
+
+
+
+<a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__section_pgc_xyl_2xb"/>
+
+## Model Import
+
+Before you can use the connection to import entities, the following is required:
+
+-   In SAP S/4HANA, an administrator has followed the instructions from SAP Note [3081998](https://launchpad.support.sap.com/#/notes/3081998) to properly set up the SAP S/4HANA system, which includes:
+
+    1.  SAP Note [3283282](https://launchpad.support.sap.com/#/notes/3283282) has been implemented to provide the required infrastructure in the SAP S/4HANA system.
+
+    2.  The required corrections have been implemented and checks have been performed to make sure that SAP Note [3283282](https://launchpad.support.sap.com/#/notes/3283282) and subsequent corrections have been applied properly and all required objects to provide the infrastructure are available and activated.
+
+    3.  Report `ESH_CSN_CDS_TO_CSN` has been run to prepare the CDS Views for the import.
+
+
+-   In SAP S/4HANA, an administrator has created a technical user with the following authorizations:
+
+    -   Authorization object S\_SERVICE - service authorizations for the Enterprise Search search service
+
+    -   Authorization object SDDLVIEW - Search access authorization for the search view CSN\_EXPOSURE\_CDS
+
+    -   Authorizations for remote table access via ODP
+
+
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
+
+-   For the remote tables that will be created during the import, the respective prerequisites have to be met including a Data Provisioning Agent with the ABAPAdapter registered in SAP Datasphere.
+
+    For more information, see [Remote Tables](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_rt_S4_OP).
+
+-   In SAP Datasphere, an administrator has performed the following steps:
+
+    -   In *System* \> *Administration* \> *Data Source Configuration* \> *Live Data Sources*, you have switched on *Allow live data to securely leave my network*.
+
+        For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
+
+    -   In *System* \> *Configuration* \> *Data Integration* \> *Live Data Connections \(Tunnel\)*, you have created a live data connection of type tunnel to SAP S/4HANA.
+
+        For more information, see [Create SAP S/4HANA Live Data Connection of Type Tunnel](create-sap-s-4hana-live-data-connection-of-type-tunnel-095dbdf.md).
+
+
+-   Supported source versions: SAP S/4HANA 1809 or higher
+
 

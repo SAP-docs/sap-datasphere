@@ -4,7 +4,7 @@
 
 # Configure Cloud Connector
 
-Set up and configure Cloud Connector before connecting to on-premise sources for data flows, replication flows, model import from SAP BW∕4HANA, and remote table access from SAP HANA on-premise \(via SAP HANA smart data access\). In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system. 
+Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system. 
 
 
 
@@ -31,6 +31,14 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
+
+
+
+<a name="loiof289920243a34127b0c8b13012a1a4b5__context_gvs_rkm_2xb"/>
+
+## Context
+
+For more information about the supported use cases depending on the connection type, see [Preparing Cloud Connector Connectivity](preparing-cloud-connector-connectivity-35141e7.md).
 
 
 
@@ -209,7 +217,7 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <th valign="top">
 
-        Connection Type
+        Connection Type \(Feature used with the Connection\)
 
 
         
@@ -225,7 +233,13 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *SAP ABAP*, *SAP BW*, *SAP ECC*, or *SAP S/4HANA On-Premise* 
+        *SAP ABAP* \(data flows, replication flows\)
+
+        *SAP BW* \(data flows\)
+
+        *SAP ECC* \(data flows\)
+
+        *SAP S/4HANA On-Premise* \(data flows, replication flows\)
 
 
         
@@ -243,7 +257,9 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *SAP BW/4HANA Model Transfer* \(for a SAP BW∕4HANA system that you want to use to import models\)
+        *SAP BW/4HANA Model Transfer* \(model import\)
+
+        *SAP S/4HANA On-Premise* \(model import\)
 
 
         
@@ -261,7 +277,7 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *SAP HANA* \(on-premise only; for data flow feature or when using Cloud Connector for remote tables feature\)
+        *SAP HANA* on-premise only \(data flows, remote tables via Cloud Connector\)
 
 
         
@@ -281,7 +297,7 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *Generic OData*
+        *Generic OData* \(data flows\)
 
 
         
@@ -299,7 +315,7 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *Microsoft SQL Server*
+        *Microsoft SQL Server* \(data flows\)
 
 
         
@@ -385,7 +401,9 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *SAP ABAP* and *SAP S/4HANA On-Premise*
+        *SAP ABAP*
+
+        *SAP S/4HANA On-Premise* 
 
 
         
@@ -424,7 +442,9 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
         <tr>
         <td valign="top">
 
-        *SAP BW* and *SAP ECC* 
+        *SAP BW*
+
+        *SAP ECC*
 
 
         
@@ -473,7 +493,7 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
-2.  If you want to create SAP BW/4HANA Model Transfer connections, you need to switch on *Allow live data to securely leave my network* in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*
+2.  If you want to create SAP BW/4HANA Model Transfer connections or SAP S/4HANA On-Premise connections for model import, you need to switch on *Allow live data to securely leave my network* in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 

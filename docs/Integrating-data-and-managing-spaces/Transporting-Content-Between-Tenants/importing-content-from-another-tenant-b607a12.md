@@ -21,6 +21,13 @@ Users with the Administrator or Space Administrator role can import content that
 
 2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
 
+    If you don’t see expected packages to import, click the *Settings* button and review the import settings. You can:
+
+    -   Enable the *Show content shared by all systems* option and optionally exclude content from specific tenants by adding them to the *Add systems to block content sharing* list.
+    -   Disable the *Show content shared by all systems* option and choose specific tenants to import from by adding them to the *Add systems to allow content sharing* list.
+
+    If, after checking these settings, an expected package is still not listed, contact an administrator for help.
+
 3.  Click a package to open it and see an overview of its content.
 
 4.  Review the *Import Overview* section. For more details, and to modify any of the options, click the *Import Options* tab:

@@ -180,7 +180,7 @@ Properties common among SAP Datasphere assets include:
 
 -   *Exposed for Consumption*: An indicator that shows whether the asset is made available for consumption in SAP Analytics Cloud and other BI clients.
 
-    For more information on these properties, see [Creating a Graphical View](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-graphical-view-27efb47.md).
+    For more information on these properties, see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md).
 
 
 The container information shows information about the source system:
@@ -470,7 +470,7 @@ If you edited a file, the catalog automatically detects the change. The metadata
 
 After you evaluate and determine that the asset is the right one for your needs, you can use it as part of a data project to build something new. For example:
 
--   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring and Preparing Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-and-preparing-data-in-the-data-builder-1f15a29.md) or [Objects in the Business Builder](../Buisiness-Builder/objects-in-the-business-builder-5f0ea0d.md).
+-   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md) or [Objects in the Business Builder](../Buisiness-Builder/objects-in-the-business-builder-5f0ea0d.md).
 
 -   As a content creator in SAP Analytics Cloud, you can use the asset in data object \(for example, a story or digital boardroom\). For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 

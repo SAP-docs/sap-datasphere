@@ -9,10 +9,10 @@ SAP Datasphere provides various methods for importing tables into your space:
 -   Data Builder start page - Use the import wizards to:
     -   Import remote tables from any connection \(see [Import Remote Tables](import-remote-tables-fd04efb.md)\).
     -   Import objects from SAP Datasphere, SAP BW Bridge \(see [Using SAP Datasphere, SAP BW Bridge in SAP Datasphere](https://help.sap.com/viewer/07fda46007d24ff7b8af36b26f9b9634/cloud/en-US/b2a2df3c588849a494295aff0aa698a0.html "SAP Datasphere, SAP BW bridge enables you to use SAP BW functionality in the public cloud, to convert SAP BW∕4HANA and SAP BW models into SAP BW bridge models, and to import SAP BW bridge models into SAP Datasphere.") :arrow_upper_right:\).
-    -   Import a table, view, or other object \(including, potentially, *Business Builder* objects\), along with all the objects it depends on from an SAP S/4HANA connection \(see [Import Semantically-Rich Entities from SAP BW Bridge and SAP S/4HANA Cloud](import-semantically-rich-entities-from-sap-bw-bridge-and-sap-s-4-845fedb.md)\).
+    -   Import a table, view, or other object \(including, potentially, *Business Builder* objects\), along with all the objects it depends on from an SAP S/4HANA connection \(see [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)\).
 
--   E/R Model - Import tables into the space and add them to the E/R model diagram \(see [Import an Object from a Connection or Other Source](import-an-object-from-a-connection-or-other-source-3e6f8f2.md) or [Import Multiple Objects from a Connection](import-multiple-objects-from-a-connection-e720b13.md)\).
--   Graphical or SQL view - Import tables into the space and use them directly as sources in the view \(see [Add a Source](add-a-source-1eee180.md)\).
+-   E/R Model - Import tables into the space and add them to the E/R model diagram \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md) or [Import Multiple Objects from a Connection](../import-multiple-objects-from-a-connection-e720b13.md)\).
+-   Graphical or SQL view - Import tables into the space and use them directly as sources in the view \(see [Add a Source](../add-a-source-1eee180.md)\).
 
 Imported tables are created as remote tables or local tables depending on the type of source:
 
@@ -79,5 +79,5 @@ As these sources are already integrated into SAP Datasphere in staging tables ne
 When you import an object through any of these methods, it is added to the repository and is available for use by any space member in:
 
 -   The *Data Builder* start page.
--   The *Repository* tab of the *Source Browser* from which it can be added as a source for views and other objects \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
+-   The *Repository* tab of the *Source Browser* from which it can be added as a source for views and other objects \(see [Add Objects from the Repository](../add-objects-from-the-repository-13fcecd.md)\).
 

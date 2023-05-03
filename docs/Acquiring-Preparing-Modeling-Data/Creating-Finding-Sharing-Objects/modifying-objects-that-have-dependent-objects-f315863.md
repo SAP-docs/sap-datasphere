@@ -152,8 +152,8 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     Notifications are sent to the last user who edited each of the dependent objects that now has a status of *Design-Time Error*, inviting them to review the changes. For more information, see:
 
     -   [Process Source Changes in the Table Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-table-editor-622328b.md)
-    -   [Process Source Changes in the Graphical View Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-graphical-view-editor-702350c.md)
-    -   [Process Source Changes in the SQL View Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-sql-view-editor-f7e43ce.md)
+    -   [Process Source Changes in the Graphical View Editor](../process-source-changes-in-the-graphical-view-editor-702350c.md)
+    -   [Process Source Changes in the SQL View Editor](../process-source-changes-in-the-sql-view-editor-f7e43ce.md)
     -   [Process Source/Target Changes in the Data Flow Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-target-changes-in-the-data-flow-editor-0af80aa.md)
     -   [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:
 
@@ -162,6 +162,6 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     If any warnings have been generated, the *Validation Messages* dialog opens to allow you to review them. Click *Deploy Anyway* to deploy your changes and dismiss the warning messages.
 
     > ### Note:  
-    > You should consider the impact of your object on its dependent objects before deploying it. If many objects or particularly important objects will be impacted, you should coordinate with the appropriate other users to deploy the source and its dependent objects together. You could create an ER model \(see [Creating an Entity-Relationship Model](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-an-entity-relationship-model-a91c042.md)\) to contain the source and its dependent objects and use the ER model *Deploy* button to deploy them simultaneously once all the changes are processed.
+    > You should consider the impact of your object on its dependent objects before deploying it. If many objects or particularly important objects will be impacted, you should coordinate with the appropriate other users to deploy the source and its dependent objects together. You could create an ER model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\) to contain the source and its dependent objects and use the ER model *Deploy* button to deploy them simultaneously once all the changes are processed.
 
 
