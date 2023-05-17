@@ -4,7 +4,7 @@
 
 # Standard Application Roles
 
-SAP Datasphere is delivered with several standard roles.
+SAP Datasphere is delivered with several standard roles, which you can use as templates to create new roles.
 
 
 

@@ -83,7 +83,7 @@ The Identity Provider Administration tool allows system owners to manage the cus
 
     3.  Click “Step 3” to proceed to the validation step.
 
-    4.  Click “Log into SAP Data Warehoouse Cloud” to open a new tab and navigate to your system. Log in with your default identity provider credentials. If you get an error saying “Your profile is not configured”, please create a support ticket under the component LOD-ANA-BI.
+    4.  Click “Log into SAP Datasphere” to open a new tab and navigate to your system. Log in with your default identity provider credentials. If you get an error saying “Your profile is not configured”, please create a support ticket under the component LOD-ANA-BI.
 
 
 6.  \(Optional\) Upload new metadata for the current custom identity provider.
@@ -96,7 +96,7 @@ The Identity Provider Administration tool allows system owners to manage the cus
 
     3.  Click “Step 3” to proceed to the validation step.
 
-    4.  Click “Log into SAP Data Warehouse Cloud” to open a new tab and navigate to your system. If you have any login problems related to the identity provider configuration, as opposed to a user-specific problem, you can return to the Identity Provider Administration tool and either re-upload the metadata file or revert to the default identity provider.
+    4.  Click “Log into SAP Datasphere” to open a new tab and navigate to your system. If you have any login problems related to the identity provider configuration, as opposed to a user-specific problem, you can return to the Identity Provider Administration tool and either re-upload the metadata file or revert to the default identity provider.
 
 
 

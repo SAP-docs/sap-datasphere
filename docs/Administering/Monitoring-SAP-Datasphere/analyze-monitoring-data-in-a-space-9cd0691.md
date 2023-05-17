@@ -61,20 +61,21 @@ In the area *Expensive Statement Tracing*, you can enable expensive statement tr
 1.  Go to <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
 2.  Select a space from the drop-down list and click *Confirm Selected Space*.
 3.  If you've created the *<SAP\_ADMIN\>* space and you want to enable it, click *Enable access to SAP Monitoring Content Space*. If there isn't any space named *<SAP\_ADMIN\>* in your tenant, this is not available for selection.
-4.  To trace expensive statements, select *Enable Expensive Statement Tracing* and specify the following parameters to configure and filter the trace details.
+4.  To trace expensive statements, select *Enable Expensive Statement Tracing*, specify the following parameters to configure and filter the trace details, then save your changes.
 
--   *In-Memory Tracing Records*: Change, if needed, the maximum number of records that are stored in the monitoring tables.
+    -   *In-Memory Tracing Records*: Change, if needed, the maximum number of records that are stored in the monitoring tables.
 
--   *Threshold CPU Time*: Specifies the threshold CPU time of statement execution. When set to 0, all SQL statements are traced.
+    -   *Threshold CPU Time*: Specifies the threshold CPU time of statement execution. When set to 0, all SQL statements are traced.
 
--   *Threshold Memory*: Specifies the threshold memory usage of statement execution. When set to 0, all SQL statements are traced.
+    -   *Threshold Memory*: Specifies the threshold memory usage of statement execution. When set to 0, all SQL statements are traced.
 
--   *Threshold Duration*: Specifies the threshold execution time. When set to 0, all SQL statements are traced.
+    -   *Threshold Duration*: Specifies the threshold execution time. When set to 0, all SQL statements are traced.
 
--   *Trace Parameter Values*: In SQL statements, field values may be specified as parameters \(using a "?" in the syntax\). If these parameter values are not required, then do not select the option to reduce the amount of data traced.
+    -   *Trace Parameter Values*: In SQL statements, field values may be specified as parameters \(using a "?" in the syntax\). If these parameter values are not required, then do not select the option to reduce the amount of data traced.
 
 
-For more information about these parameters, see [Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/5faf04f17830464eacdb7938b383d2ab.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
+    For more information about these parameters, see [Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/5faf04f17830464eacdb7938b383d2ab.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
+
 
 
 
@@ -86,9 +87,9 @@ The monitoring views are available in the *Data Builder* editors:
 
 -   **SAP HANA SYS Schema Monitoring Views**
 
-    All SAP HANA monitoring views start with M\_. For more information about all the monitoring views available, see [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/d3c10d23e8334a35afa8d9bdbc102366.html) in the *SAP HANA Cloud SQL Reference Guide*.
+    All SAP HANA monitoring views start with M\_. For more information about all the monitoring views available, see [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/d3c10d23e8334a35afa8d9bdbc102366.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
-    The views for expensive statement are M\_EXPENSIVE\_STATEMENTS and M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS. For more information, see [M\_EXPENSIVE\_STATEMENTS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20af736e751910148162e2ab1982f035.html) and [M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/80c32e9dc5b742efa254adfe164102dc.html) in the *SAP HANA Cloud SQL Reference Guide*.
+    The views for expensive statement are M\_EXPENSIVE\_STATEMENTS and M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS. For more information, see [M\_EXPENSIVE\_STATEMENTS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20af736e751910148162e2ab1982f035.html) and [M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/80c32e9dc5b742efa254adfe164102dc.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
 -   **SAP HANA \_SYS\_STATISTICS Schema Statistics Service Views**
 

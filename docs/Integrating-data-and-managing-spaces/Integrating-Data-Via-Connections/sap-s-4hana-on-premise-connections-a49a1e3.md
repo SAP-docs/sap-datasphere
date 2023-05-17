@@ -99,7 +99,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see . 
+You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load data from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
 
 
 

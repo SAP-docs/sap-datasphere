@@ -236,9 +236,7 @@ You can select:
 
 -   *No Authentication*
 -   *User Name And Password* for basic authentication
--   *OAuth 2.0* 
-
-The default is *OAuth 2.0*.
+-   *OAuth 2.0* \(default value\)
 
 
 
@@ -313,6 +311,33 @@ Enter the API endpoint to use to request an access token.
 <td valign="top">
 
 \[optional\] Enter the OAuth scope, if applicable.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Token Request Content Type*
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the content type of the OAuth2 token request. 
+
+You can select:
+
+-   *URL Encoded* \(default value\)
+
+    OAuth2 token request parameters will be url-encoded and included in the HTTP request body.
+
+-   *JSON*
+
+    OAuth2 token request parameters will be in JSON format and included in the HTTP request body.
+
 
 
 
@@ -443,4 +468,15 @@ Description
 *Remote Tables* are enabled without the need to set any additional connection properties.
 
 *Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+
+
+## Enter Custom HTTP Headers
+
+Different OData services support different sets of custom headers to pass parameters to the service when using the connection. You can specify one or more custom HTTP headers to add them to the OData request.
+
+Click *Add* to add name and value for a custom HTTP header field.
+
+> ### Note:  
+> -   Security-relevant headers such as "authorization" are not allowed.
 

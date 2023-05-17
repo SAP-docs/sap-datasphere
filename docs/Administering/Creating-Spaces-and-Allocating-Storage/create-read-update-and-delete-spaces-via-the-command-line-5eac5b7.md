@@ -151,7 +151,7 @@ Update Space \(entity definitions only\)
 
 ## Log Into an SAP Datasphere OAuth Client
 
-We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Add a New OAuth Client](../Creating-and-Configuring-Your-Tenant/add-a-new-oauth-client-ffb0b24.md)\).
+We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)\).
 
 > ### Note:  
 > If an OAuth client is not available, users must provide a passcode for each command that they issue.
@@ -956,7 +956,7 @@ The space is created or updated as you have specified.
 To reset a database user password, enter the following command and press [Return\]:
 
 ```
-dwc dbusers password reset -S "<space-id>" -j "<dbuser-name>" -H "<server-url>" [-P] [-o <output-file>.json] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc dbusers password reset -S "<space-id>" -j "<dbuser-name>" -H "<server-url>" [-P] [-o <output-file>.json] [-V] [-O <options-file>.json] [-s ] [-O <secrets-file>.json] [-p <passcode>]
 ```
 
 > ### Note:  
@@ -1203,7 +1203,7 @@ Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 To delete a space, enter the following command and press [Return\]:
 
 ```
-dwc spaces delete -S <space-id> -H "<server-url>" [-F] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc spaces delete -S <space-id> -H "<server-url>" [-F] [-V] [-O <options-file>.json] [-s <secrets-file>.json [-V.json] [-p <passcode>]
 ```
 
 Complete the parameters as follows:

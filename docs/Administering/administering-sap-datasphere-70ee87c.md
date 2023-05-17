@@ -10,7 +10,7 @@ This topic contains the following sections:
 
 -   [Configure Your SAP Datasphere Tenant](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_configure)
 -   [Create Users and Assign Roles](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_users_roles)
--   [Create Spaces and Assign Users to Them](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces)
+-   [Create Spaces and Allocate Storage to Them](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces)
 -   [Prepare Connectivity](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_connectivity)
 -   [Monitor and Maintain SAP Datasphere](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_monitoring)
 
@@ -76,7 +76,7 @@ You must assign one or more roles to each of your users \(see [Managing Roles an
 
 <a name="loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces"/>
 
-## Create Spaces and Assign Users to Them
+## Create Spaces and Allocate Storage to Them
 
 All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
 

@@ -10,7 +10,7 @@ If you use the OAuth 2.0 SAML Bearer Assertion workflow, you must add a trusted 
 
 ## Prerequisites
 
-The corresponding OAuth Client must be added to SAP Datasphere. For more information, see [Manage OAuth Clients](manage-oauth-clients-3f92b46.md).
+The corresponding OAuth Client must be added to SAP Datasphere. For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md).
 
 
 

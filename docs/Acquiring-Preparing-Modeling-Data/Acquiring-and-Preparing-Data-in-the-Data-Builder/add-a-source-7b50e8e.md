@@ -186,6 +186,9 @@ Add a source to read data from. You can add multiple sources and combine them to
     > ### Note:  
     > You can reset all your changes in the section by clicking *Modify* \> *Reset*.
 
+    > ### Restriction:  
+    > For `.xls` and `.xlsx` files that use Generic SFTP connections, there is a limit of 50 MB.
+
 10. \[optional\] In the *Advanced* section, configure the following properties:
 
 

@@ -29,6 +29,8 @@ Also, once you click *Save*:
 
 -   You can change and save the size of the tenant once every 6 hours.
 
+-   If you try to change your SAP HANA configuration, SAP HANA Cloud functionalities \(Spaces, DPServer, Serving of Queries\) will not be available for around 10 minutes. If you run into issues after the configuration, use the *Retry* button.
+
 
 > ### Note:  
 > **Only for Subscription-Based Tenants:** 
@@ -125,6 +127,11 @@ The number for memory is calculated based on the compute blocks and you cannot d
 
 Displays the size of memory calculated based on the selected number of compute blocks.
 
+> ### Note:  
+> If you’re using a tenant in regions EU10 or US10 with the hyperscaler Amazon Web Services \(AWS\), you can choose among the maximum available memory sizes in the *Predefined* area. This area is visible only if you’re using a tenant in these regions.
+> 
+> For more information on the SAP HANA database sizes supported by regions, see [Memory and Storage Sizes Supported by SAP HANA Database](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/798c2c6ba7ae41e898f423aa34491ac3.html) in the *SAP HANA Cloud Administration Guide*.
+
 
 
 </td>
@@ -167,7 +174,7 @@ Data lake storage includes data lake compute.
 SAP BW Bridge includes SAP BTP, ABAP environment, runtime and compute.
 
 > ### Caution:  
-> You can enter a size for SAP BW Bridge only once. Once you’ve entered a size for and click *Save* in the *Tenant Configuration* page, you will not be able to modify it.
+> You can only change the size of your SAP BW Bridge storage later if you don’t have any SAP BW Bridge instances.
 
 The process for allocating capacity units to SAP BW Bridge is not part of the configuration process and runs in parallel.
 

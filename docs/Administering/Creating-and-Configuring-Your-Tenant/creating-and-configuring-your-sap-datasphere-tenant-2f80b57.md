@@ -81,6 +81,9 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 
 -   Once logged to your tenant, you must finalize the size configuration of the tenant \(except if provisioned with the minimum number of capacity units: 4300\). See [Configure the Size of Your SAP Datasphere Tenant](configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md).
 
+    > ### Note:  
+    > After finalizing the configuration, you can only change the size of your SAP BW Bridge storage later if you don’t have any SAP BW Bridge instances.
+
 -   At any time, you can increase the sizes of the resources until all the capacity units are allocated. See [Configure the Size of Your SAP Datasphere Tenant](configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md).
 
     To view all supported size combinations, go to the [SAP Datasphere Capacity Unit Estimator](https://datasphere-estimator-sac-saceu10.cfapps.eu10.hana.ondemand.com/).

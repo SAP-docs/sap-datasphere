@@ -34,7 +34,7 @@ To use `dwc` to manage your space you must install it \(see [Install or Update t
 
 ## Log Into an SAP Datasphere OAuth Client
 
-We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Add a New OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ffb0b24bea57480a95145eb094f5bb0f.html "You can add a new OAuth client.") :arrow_upper_right:\).
+We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
 
 > ### Note:  
 > If an OAuth client is not available, users must provide a passcode for each command that they issue.
@@ -130,7 +130,7 @@ To log in, enter one of the following commands and press [Return\]:
     > Secrets files use versions of the options with underscores instead of hyphens.
 
 
-For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for loggin into it.") :arrow_upper_right:.
+For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:.
 
 
 
@@ -839,7 +839,7 @@ The space is updated as you have specified.
 To reset a database user password, enter the following command and press [Return\]:
 
 ```
-dwc dbusers password reset -S "<space-id>" -j "<dbuser-name>" -H "<server-url>" [-P] [-o <output-file>.json] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc dbusers password reset -S "<space-id>" -j "<dbuser-name>" -H "<server-url>" [-P] [-o <output-file>.json] [-V] [-O <options-file>.json] [-s ] [-O <secrets-file>.json] [-p <passcode>]
 ```
 
 > ### Note:  
@@ -1086,7 +1086,7 @@ Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 To delete a space, enter the following command and press [Return\]:
 
 ```
-dwc spaces delete -S <space-id> -H "<server-url>" [-F] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc spaces delete -S <space-id> -H "<server-url>" [-F] [-V] [-O <options-file>.json] [-s <secrets-file>.json [-V.json] [-p <passcode>]
 ```
 
 Complete the parameters as follows:

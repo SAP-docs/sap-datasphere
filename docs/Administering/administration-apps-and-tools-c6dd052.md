@@ -443,7 +443,7 @@ More Information
 </th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="2">
 
 *System Configuration*
 
@@ -460,6 +460,22 @@ More Information
 <td valign="top">
 
 By default the session timeout is set to 3600 seconds \(1 hour\). The minimum value is 300 seconds, and the maximum value is 43200 seconds.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Allow SAP support user creation*: Let SAP create support users with a limited validity based on incidents.
+
+
+
+</td>
+<td valign="top">
+
+[Request Help from SAP Support](request-help-from-sap-support-831a977.md)
 
 
 
@@ -555,7 +571,7 @@ By default the session timeout is set to 3600 seconds \(1 hour\). The minimum va
 </td>
 <td valign="top" rowspan="3">
 
-[Manage OAuth Clients](Creating-and-Configuring-Your-Tenant/manage-oauth-clients-3f92b46.md)
+[Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)
 
 
 

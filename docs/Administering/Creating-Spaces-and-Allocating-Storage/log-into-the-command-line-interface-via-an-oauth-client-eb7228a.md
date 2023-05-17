@@ -2,9 +2,9 @@
 
 # Log into the Command Line Interface via an OAuth Client
 
-If an administrator has created an OAuth client for `dwc` command line interface users to log into, there are several methods for loggin into it.
+If an administrator has created an OAuth client for `dwc` command line interface users to log into, there are several methods for accessing it.
 
-For information about creating an OAuth client, see [Add a New OAuth Client](../Creating-and-Configuring-Your-Tenant/add-a-new-oauth-client-ffb0b24.md).
+For information about creating an OAuth client, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md).
 
 This topic contains the following sections:
 

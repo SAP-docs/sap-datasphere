@@ -74,7 +74,7 @@ Certain connections support loading data from multiple source objects to SAP Dat
 
 ## Import Entities from SAP S/4HANA
 
-The *Import Entities* wizard allows you to import entities from SAP S/4HANA Cloud and SAP S/4HANA on-premise systems with rich metadata \(see \).
+The *Import Entities* wizard allows you to import entities from SAP S/4HANA Cloud and SAP S/4HANA on-premise systems with rich metadata \(see [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)\).
 
 
 

@@ -25,7 +25,13 @@ Create mappings to specify how the source data is to be changed on its way into 
     -   Edit the target content: Mark *Edit* for the relevant row and enter the content you want to see. All fields of the target column are then automatically filled with the content you enter here.
 
         > ### Note:  
-        > The *Primary Key* column is for information purposes. You cannot change whether a column is part of the primary key or not.
+        > -   The *Primary Key* column is for information purposes. You cannot change whether a column is part of the primary key or not.
+        > -   For datetime columns, selecting *Edit Content* will auto-fill the fields with the following function:
+        > 
+        >     -   Date - CURRENT\_UTCDATE
+        > 
+        >     -   Time - CURRENT\_UTCTIME
+        >     -   Timestamp - CURRENT\_UTCTIMESTAMP
 
     -   Add a new column: Choose *Add* and enter the necessary values for the new column.
 
