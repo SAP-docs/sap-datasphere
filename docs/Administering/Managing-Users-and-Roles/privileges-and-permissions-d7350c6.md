@@ -271,7 +271,7 @@ Allows access to the *Data Access Control* app and objects. To see the *Data Acc
 
 Allows access to the *Business Builder* app.
 
-[Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "The business layer is the area where business users can define objects with a business approach.") :arrow_upper_right:
+[Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with the DW Modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and other BI clients.") :arrow_upper_right:
 
 
 

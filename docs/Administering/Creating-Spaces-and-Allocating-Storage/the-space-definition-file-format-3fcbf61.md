@@ -963,7 +963,7 @@ For example, the following file will add a database user to `NEWSPACE`:
 ```
 
 > ### Note:  
-> You can use the `dwc dbusers password reset` command to obtain a new password for a database user \(see[Create, Read, Update, and Delete Spaces via the Command Line](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md)\).
+> You can use the `dwc dbusers password reset` command to obtain a new password for a database user \(see[Manage Spaces via the Command Line](manage-spaces-via-the-command-line-5eac5b7.md)\).
 
 
 
@@ -1087,5 +1087,5 @@ For example, the following file will create a table with two columns in `NEWSPAC
 ```
 
 > ### Note:  
-> To obtain more complex examples, read existing objects from a space into a file using the `-D` option \(see [Read a Space](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_read_a_space)\).
+> To obtain more complex examples, read existing objects from a space into a file using the `-D` option \(see [Read a Space](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_read_a_space)\).
 

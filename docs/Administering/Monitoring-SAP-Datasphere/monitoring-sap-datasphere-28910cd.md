@@ -339,7 +339,7 @@ Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for exam
 </td>
 <td valign="top">
 
-Not supported
+Shows the number of statements that have been rejected in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less rejected statements than the day before.
 
 
 
@@ -375,7 +375,7 @@ Shows the number of statements that have been queued in the last 24 hours becaus
 </td>
 <td valign="top">
 
-Not supported
+Shows the number of statements that have been rejected in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
 
 
 
@@ -411,7 +411,10 @@ Shows the number of statements that have been queued in the last 7 days because 
 </td>
 <td valign="top">
 
-Not supported
+Shows the 5 spaces with the highest number of rejected statements in the last 24 hours.
+
+> ### Note:  
+> A space that has been deleted is prefixed with an asterisk character.
 
 
 
@@ -441,7 +444,7 @@ Shows the 5 spaces with the highest number of queued statements in the last 24 h
 </table>
 
 > ### Note:  
-> -   To investigate why statements are being queued, you can click *Open SAP HANA Cockpit* in the widgets dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Investigate Database Issues](create-a-database-analysis-user-to-investigate-database-issues-c28145b.md).
+> -   To investigate why statements are being queued or rejected, you can click *Open SAP HANA Cockpit* in the widgets dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Investigate Database Issues](create-a-database-analysis-user-to-investigate-database-issues-c28145b.md).
 > 
 > -   For more information about admission control thresholds, see [Set a Priority and Statement Limits for a Space](../Creating-Spaces-and-Allocating-Storage/set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
 
@@ -584,7 +587,10 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 > 
 > -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
 > 
-> -   If the task is run for these objects: data flows using SAP HANA database artifacts, views to persist, remote tables and intelligent lookup.
+> -   And if the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
+> 
+> 
+> Otherwise, no number is displayed.
 
 
 
@@ -600,14 +606,17 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 </td>
 <td valign="top">
 
-Shows the maximum amount of CPU \(in ms\) the task has used in SAP HANA.
+Shows the maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 
 > ### Note:  
 > You can see this information:
 > 
 > -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
 > 
-> -   If the task is run for these objects: data flows using SAP HANA database artifacts, views to persist, remote tables and intelligent lookup.
+> -   And if the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
+> 
+> 
+> Otherwise, no number is displayed.
 
 > ### Note:  
 > The CPU time indicates how much time is used for all threads. It means that if the CPU time is significantly higher than the duration of the statement, then many threads are used. If many threads are used for a long time, no other tasks should be scheduled at that point in time, or resource bottlenecks may occur and tasks may even be canceled.
@@ -627,6 +636,9 @@ Shows the maximum amount of CPU \(in ms\) the task has used in SAP HANA.
 <td valign="top">
 
 Shows the number of records of the target table after the task has finished running.
+
+> ### Note:  
+> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\). Otherwise, no number is displayed.
 
 
 
@@ -951,6 +963,8 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 
 > ### Note:  
 > You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> 
+> Otherwise, no number is displayed.
 
 
 
@@ -966,10 +980,12 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 </td>
 <td valign="top">
 
-Shows the maximum amount of CPU \(in ms\) the statement has used in SAP HANA.
+Shows the maximum amount of CPU time \(in ms\) the statement has used in SAP HANA.
 
 > ### Note:  
 > You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> 
+> Otherwise, no number is displayed.
 
 
 

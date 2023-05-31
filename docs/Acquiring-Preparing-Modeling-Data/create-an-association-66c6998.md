@@ -18,7 +18,7 @@ You can create associations in the:
 
 In this example:
 
--   The ***Sales Order*** table is an *Analytical Dataset* and has an association from its ***Product ID*** column to the ***Product ID*** key of the ***Products*** table, which is a *Dimension*.
+-   The ***Sales Order*** table has a semantic usage of *Analytical Dataset* and has an association from its ***Product ID*** column to the ***Product ID*** key of the ***Products*** table, which is a *Dimension*.
 -   The ***Products*** *Dimension* has an association from its ***PRODCATEGORYID*** column to the ***PRODCATEGORYID*** key of the ***Product Categories*** table, which is also a *Dimension*.
 
 ![](images/Associations_Example_7966865.png)

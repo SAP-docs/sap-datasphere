@@ -15,7 +15,7 @@ Story filters that you add to your view will trigger the display of the *Set Var
 > ### Note:  
 > In order to add story filters, you must:
 > 
-> -   Set the *Semantic Usage* to *Dimension* or *Analytical Dataset*.
+> -   Set the *Semantic Usage* to *Analytical Dataset*.
 > -   Enable the *Expose for Consumption* switch.
 
 

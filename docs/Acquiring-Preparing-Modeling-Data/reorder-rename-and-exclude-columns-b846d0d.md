@@ -24,7 +24,7 @@ Add a *Projection* node to rename, reorder, or exclude columns.
     -   Rename a column by clicking <span class="FPA-icons"></span> \(Menu\), and selecting *Change Name* to open the *Change Name* dialog. Edit the business and/or technical names as appropriate and click *Save*.
 
         > ### Note:  
-        > Every artifact in SAP DatasphereSAP Datasphere shows you the business names of your artifacts. To show technical names instead, click *User Initials* \> *Settings*, select the *UI Settings* tab, and then select *Show Technical Name*.
+        > By default, SAP Datasphere displays the business names of your objects. To show technical names instead, click *Profile* \> *Settings*, select the *UI Settings* tab, and then select *Show Technical Name*.
 
     -   Exclude a column by clicking its <span class="FPA-icons"></span> \(Menu\) button, and selecting *Exclude Column*.
 

@@ -31,7 +31,10 @@ In this example, *Regional Sales* is an *Analytical Dataset* with:
 
 1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Analytical Dataset*.
 
-2.  \[views\] To make your view accessible to SAP Analytics Cloud and other BI clients, enable the *Expose for Consumption* property.
+2.  \[views\] To make your view available for consumption outside SAP Datasphere enable the *Expose for Consumption* property \(see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:\).
+
+    > ### Note:  
+    > To consume your fact data in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 3.  Specify one or more measures \(see [Specify Measures](specify-measures-33f7f29.md)\).
 

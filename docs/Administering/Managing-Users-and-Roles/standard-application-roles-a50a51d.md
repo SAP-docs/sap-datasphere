@@ -31,6 +31,9 @@ In the side navigation area, click <span class="FPA-icons"></span> \(*Securit
 
 
 > ### Note:  
+> Depending on their roles, users can do different actions in the spaces, provided that they are assigned as members of these spaces. See [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right: .
+
+> ### Note:  
 > Please note for SAP Datasphere tenants that were initially provisioned prior to version 2021.03, you need the following additional roles to work with stories:
 > 
 > -   BI Content Creator - Creates and changes stories.

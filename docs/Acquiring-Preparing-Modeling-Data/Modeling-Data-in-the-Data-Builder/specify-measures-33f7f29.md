@@ -4,7 +4,7 @@
 
 # Specify Measures
 
-Measures appear in analytical datasets and are columns containing numerical values that you want to analyze. Each analytical dataset must contain at least one measure.
+Measures appear in tables and views with a *Semantic Usage* of *Analytical Dataset* and are columns containing numerical values that you want to analyze. Each *Analytical Dataset* must contain at least one measure.
 
 Typical measures include:
 

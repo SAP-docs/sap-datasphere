@@ -78,7 +78,7 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
 
 Entities with a semantic usage of *Analytical Dataset* or *Dimension* commonly have associations to other entities and when sharing them, you will often want to share the associated entities too.
 
-In this example, the *Cities* entity has a semantic usage of *Dimension* and has associations to the *Cities Texts* text entity and to the *Countries* dimension \(which, itself, has an association to the *Countries Texts* text entity\). When sharing *Cities* , you would generally share the other three entities as well:
+In this example, the *Cities* entity has a semantic usage of *Dimension* and has associations to the *Cities Texts* text entity and to the *Countries* dimension \(which, itself, has an association to the *Countries Texts* text entity\). When sharing *Cities*, you would generally share the other three entities as well:
 
 ![](images/Share_Semantic_Entities_-_Dimension_Example_3944abb.png)
 

@@ -41,14 +41,14 @@ Sub-model
 </th>
 <th valign="top">
 
-Data layer
+Data Builder
 
 
 
 </th>
 <th valign="top">
 
-Business layer
+Business Builder
 
 
 
@@ -185,7 +185,7 @@ InfoProvider
 </td>
 <td valign="top">
 
-View with prefix DL \(with associations to dimension views\) \(Analytical dataset\)
+View with prefix DL \(with associations to dimension views\) \(analytical dataset\)
 
 
 

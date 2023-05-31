@@ -2,34 +2,53 @@
 
 # Modeling Data in the Business Builder
 
-The business layer is the area where business users can define objects with a business approach.
+Users with the *DW Modeler* role can use the *Business Builder* editors to combine, refine, and enrich *Data Builder* objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and other BI clients.
 
-SAP Datasphere has two modeling layers tailored for different user groups: the data layer is the area where data engineers create their models with a technical approach, whereas the business layer is the area for business users who create their models using a more semantic approach. This allows business users to work independently from data engineers, while still being able to collaborate and share data with them. The collaboration between business users and data engineers changes fundamentally: data engineers can focus on the data consolidation and provisioning, while the business users can optimize the business models.
+This topic contains the following sections:
 
-The IT infrastructure on the data layer is usually more volatile than the needs of the business user. The reasons for changes are multifold: system updates, software changes, acquisitions, etc. All this leads to the fact that the data layer changes permanently and needs adjustments. Business definitions on the other hand stay relatively stable. They do not change frequently, e.g. the calculation of the KPI margin.
-
-To keep the business layer more robust, while continuously modifying the data layer, the business layer is loosely coupled to the data layer. The layers can be mapped and remapped at any point of time. Without the need of modifying the business models themselves, the data models can be upgraded and remapped to the business models.
-
-The Business Builder is the designated tool for modeling the objects of the business layer. Business users can define business models in the Business Builder, which are separate from the physical data layer. They create their models top down, and map them to the data layer.
-
-The business layer can be used to expose business users to the data fields they need while hiding any data fields that might not be relevant.
-
-Business users can create different business entities like dimensions and analytical datasets on top of the data layer. On top of these models, you can create fact models and consumption models as a basis to consume your data. On top of the consumption model, you can create perspectives, which can be used to analyze your data in stories within SAP Analytics Cloud.
-
-Authorization scenarios give the users access to the relevant data according to their role.
+-   [Consume Data From the Data Builder in Business Entities](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_business_entities)
+-   [Combine Business Entities in Fact Models and Consumption Models](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_consumption_models)
+-   [Expose Data in Perspectives](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_perspectives)
+-   [Import SAP BW∕4HANA Queries](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_bw4hana_import)
 
 
 
-![](images/Image_Map_DWC_-_business_builder_new_1e54135.png)
+<a name="loio3829d46c48a44f1e94915054bd76b7b9__section_business_entities"/>
+
+## Consume Data From the Data Builder in Business Entities
+
+Each business entity created in the *Business Builder* consumes data from a *Data Builder* entity. As you can, at any time, switch the data source of a business entity to a different *Data Builder* entity, this loose coupling allows you to maintain stable business entities for reporting, even as your physical data sources change.
+
+-   You can create a business entity by selecting a *Data Builder* entity as its source \(see [Creating a Business Entity](creating-a-business-entity-c912cdc.md)\).
+-   You can remove unneeded measures and attributes to simplify your business entity for a particular reporting need.
+-   You can enrich your business entity with new measures \(including derived and calculated measures\), attributes, and other properties.
+-   You can change the data source of your business entity to a new *Data Builder* entity if necessary.
 
 
 
-To create your models in the Business Builder, you proceed as follows:
+<a name="loio3829d46c48a44f1e94915054bd76b7b9__section_consumption_models"/>
 
-1.  Create your business entities \(dimensions and analytical datasets\).
-2.  Optional: Create an authorization scenario, if you want to restrict access to your business entities. Assign your authorization scenario to the business entities.
-3.  Optional: Create a fact model if you want to have a reusable part for a consumption model.
-4.  Create a consumption model.
+## Combine Business Entities in Fact Models and Consumption Models
 
-When you have a SAP BW/4HANA system, you can import analytical queries. These queries need to have been exposed in the SAP BW/4HANA system for consumption in SAP Datasphere. The corresponding objects in the Data Builder \(remote tables\) and in the Business Builder \(dimensions, analytical datasets, consumption models\) are then generated. The generated perspective has the same visual representation of the data as the SAP BW/4HANA query.
+Combine your business entities into star-schemas to prepare them for consumption \(see [Creating a Consumption Model](creating-a-consumption-model-337fa99.md)\).
+
+You can use a single business entity in multiple consumption models and modify it by adding and removing measures and attributes as appropriate for a particular reporting context.
+
+You can, optionally, combine your business entities into an intermediate fact model and then use this as a source for multiple consumption models \(see [Creating a Fact Model](creating-a-fact-model-5bbd14a.md)\).
+
+
+
+<a name="loio3829d46c48a44f1e94915054bd76b7b9__section_perspectives"/>
+
+## Expose Data in Perspectives
+
+Create perspectives from a consumption model for exposure to SAP Analytics Cloud and other BI clients, MS Excel, and other apps and tools \(see [Define Perspectives](define-perspectives-ce26fd3.md)\).
+
+
+
+<a name="loio3829d46c48a44f1e94915054bd76b7b9__section_bw4hana_import"/>
+
+## Import SAP BW∕4HANA Queries
+
+Import an SAP BW4/HANA query, along with its supporting InfoObjects and CompositeProviders to SAP Datasphere \(see [Importing SAP BW∕4HANA Models](importing-sap-bw-4hana-models-a3d4a2f.md)\).
 

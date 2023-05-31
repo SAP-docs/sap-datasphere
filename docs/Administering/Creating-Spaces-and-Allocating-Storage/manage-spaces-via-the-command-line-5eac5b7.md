@@ -2,20 +2,20 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create, Read, Update, and Delete Spaces via the Command Line
+# Manage Spaces via the Command Line
 
 You can use the SAP Datasphere command line interface, `dwc`, to create, read, update, and delete spaces. You can set space properties, assign \(or remove\) members, create database users, create or update objects \(tables, views, and data access controls\), and associate HDI containers to a space.
 
 The following sections are available in this topic:
 
--   [Prerequisites](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_prerequisites)
--   [Log Into an SAP Datasphere OAuth Client](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_oauth_login)
--   [List Spaces](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_list_spaces)
--   [Read a Space](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_read_a_space)
--   [Create or Update a Space](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_create_update_a_space)
--   [Reset a Database User Password](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_reset_dbuser_password)
--   [Delete a Space](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_delete_a_space)
--   [Log Out of an SAP Datasphere OAuth Client](create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_oauth_logout)
+-   [Prerequisites](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_prerequisites)
+-   [Log Into an SAP Datasphere OAuth Client](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_oauth_login)
+-   [List Spaces](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_list_spaces)
+-   [Read a Space](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_read_a_space)
+-   [Create or Update a Space](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_create_update_a_space)
+-   [Reset a Database User Password](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_reset_dbuser_password)
+-   [Delete a Space](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_delete_a_space)
+-   [Log Out of an SAP Datasphere OAuth Client](manage-spaces-via-the-command-line-5eac5b7.md#loio5eac5b71e2d34c32b63f3d8d47a0b1d0__section_oauth_logout)
 
 > ### Note:  
 > See the blog [@sap/dwc-cli: Command-Line Interface for SAP Datasphere: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.

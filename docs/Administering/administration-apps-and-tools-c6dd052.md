@@ -443,7 +443,7 @@ More Information
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="2">
+<td valign="top">
 
 *System Configuration*
 
@@ -460,22 +460,6 @@ More Information
 <td valign="top">
 
 By default the session timeout is set to 3600 seconds \(1 hour\). The minimum value is 300 seconds, and the maximum value is 43200 seconds.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Allow SAP support user creation*: Let SAP create support users with a limited validity based on incidents.
-
-
-
-</td>
-<td valign="top">
-
-[Request Help from SAP Support](request-help-from-sap-support-831a977.md)
 
 
 

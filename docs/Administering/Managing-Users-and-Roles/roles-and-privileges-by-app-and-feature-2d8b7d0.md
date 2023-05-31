@@ -170,7 +170,7 @@ Consumption model editor
 
 Authorization scenario editor
 
-See [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "The business layer is the area where business users can define objects with a business approach.") :arrow_upper_right:
+See [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with the DW Modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and other BI clients.") :arrow_upper_right:
 
 
 
@@ -675,7 +675,7 @@ All roles
 
 ## The Command Line Interface
 
-To use the command line interface \(see [Create, Read, Update, and Delete Spaces via the Command Line](../Creating-Spaces-and-Allocating-Storage/create-read-update-and-delete-spaces-via-the-command-line-5eac5b7.md)\), a user must have the following standard application role or a custom role containing the listed privileges:
+To use the command line interface \(see [Manage Spaces via the Command Line](../Creating-Spaces-and-Allocating-Storage/manage-spaces-via-the-command-line-5eac5b7.md)\), a user must have the following standard application role or a custom role containing the listed privileges:
 
 
 <table>

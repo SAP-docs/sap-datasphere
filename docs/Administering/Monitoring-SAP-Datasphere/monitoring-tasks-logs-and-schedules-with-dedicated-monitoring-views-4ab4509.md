@@ -15,8 +15,62 @@ As an administrator, you need to keep an eye on how tasks and schedules are runn
 
 ## Using SAP HANA Monitoring Views From the DWC\_GLOBAL Schema
 
-Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recognized as they have a naming convention Suffix\_V\_EXT:
+Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recognized as they have a naming convention Suffix\_V\_EXT:
 
+-   SPACE\_SCHEMAS\_V\_EXT:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Column
+
+
+    
+    </th>
+    <th valign="top">
+
+    Function
+
+
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    SPACE\_ID
+
+
+    
+    </td>
+    <td valign="top">
+
+    Identifier of the SAP Datasphere space. Note that one space can contain several schemas.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    SCHEMA\_NAME
+
+
+    
+    </td>
+    <td valign="top">
+
+    Name of the schema used to run the task.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
 -   TASK\_SCHEDULES\_V\_EXT:
 
 
@@ -135,7 +189,7 @@ Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
 
-    VIEWS, REMOTE\_TABLES, DATA\_FLOWS
+    For example: VIEWS, REMOTE\_TABLES, DATA\_FLOWS, TASK\_CHAINS
 
 
     
@@ -168,7 +222,7 @@ Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
 
-    PERSIST \(View\), EXECUTE \(Dataflow\), REPLICATE \(Remote Tables\)
+    For example: PERSIST \(View\), EXECUTE \(Dataflow\), REPLICATE \(Remote Tables\), RUN\_CHAIN \(Task Chain\)
 
 
     
@@ -221,14 +275,44 @@ Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
 
-    Defines the recurrence of a schedule
+    Defines the recurrence of a schedule in CRON format
 
 
     
     </td>
     <td valign="top">
 
-    For example: "0 \*/1 \* \* \*" for hourly
+    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly. For more information on CRON schedule, see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.") :arrow_upper_right:
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    FREQUENCY
+
+
+    
+    </td>
+    <td valign="top">
+
+     
+
+
+    
+    </td>
+    <td valign="top">
+
+    Defines the recurrence of a schedule in json format \(simple format\)
+
+
+    
+    </td>
+    <td valign="top">
+
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right: 
 
 
     
@@ -414,7 +498,7 @@ Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
 
-    VIEWS, REMOTE\_TABLES, DATA\_FLOWS
+    For example: VIEWS, REMOTE\_TABLES, DATA\_FLOWS, TASK\_CHAINS
 
 
     
@@ -474,7 +558,97 @@ Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
 
-    PERSIST \(View\), EXECUTE \(Dataflow\), REPLICATE \(Remote Tables\)
+    For example: PERSIST \(View\), EXECUTE \(Dataflow\), REPLICATE \(Remote Tables\), RUN\_CHAIN \(Task Chain\)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    PEAK\_MEMORY
+
+
+    
+    </td>
+    <td valign="top">
+
+     
+
+
+    
+    </td>
+    <td valign="top">
+
+    Captures the highest peak memory consumption. Note: this value is not available for all apps. To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitorig*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+
+
+    
+    </td>
+    <td valign="top">
+
+    Null \(not available for the application, or not measured because the *Enable Expensive Statement Tracing* is not set, or the threshold defined is not reached\), 0 or value of the memory consumption.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    PEAK\_CPU
+
+
+    
+    </td>
+    <td valign="top">
+
+     
+
+
+    
+    </td>
+    <td valign="top">
+
+    Total CPU time consumed by the task. Note: This value is not available for all apps.To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitorig*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+
+
+    
+    </td>
+    <td valign="top">
+
+    Null \(not available for the application, or not measured because the *Enable Expensive Statement Tracing* is not set, or the threshold defined is not reached\), 0 or value of the CPU time consumption.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    RECORDS
+
+
+    
+    </td>
+    <td valign="top">
+
+     
+
+
+    
+    </td>
+    <td valign="top">
+
+    Shows the number of records of the target table after the task has finished running.
+
+
+    
+    </td>
+    <td valign="top">
+
+    Null \(not applicable or not measured\), 0 or number of records.
 
 
     
@@ -880,7 +1054,7 @@ Four monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
 
-    Identifier, flexible field as part of the lock identifier, usually set to WRITE.
+    Identifier, flexible field as part of the lock identifier, usually set to WRITE or EXECUTE.
 
 
     

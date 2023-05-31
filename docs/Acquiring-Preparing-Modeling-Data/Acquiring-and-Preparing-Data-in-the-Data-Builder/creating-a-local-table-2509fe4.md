@@ -98,7 +98,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
 
     Choose from the following:
 
-    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of artifact used by BI clients \(see [Creating an Analytical Dataset](../Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating an Analytical Dataset](../Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
     -   *Dimension* - Contains attributes containing master data like a product list or store directory, and supporting hierarchies \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).

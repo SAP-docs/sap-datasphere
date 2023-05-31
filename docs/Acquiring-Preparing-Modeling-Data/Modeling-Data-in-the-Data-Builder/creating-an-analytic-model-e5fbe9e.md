@@ -12,6 +12,12 @@ Analytic models are the analytical foundation for making data ready for consumpt
 
 The sources for analytic models are analytical datasets, which can contain dimensions, texts, and hierarchies.
 
+> ### Note:  
+> Some terms and concepts are used differently in analytic models to align more closely with the terminology in SAP Analytics Cloud stories:
+> 
+> -   "Input parameters” in analytical datasets are called “variables” in analytic models.
+> -   "Attributes” in analytical datasets are called “dimensions” in analytic models.
+
 This graphic shows the role of the analytic model within SAP Datasphere:
 
  ![The graphic has an explanatory text.](images/DWC_-_analytic_model_5e78571.png) 

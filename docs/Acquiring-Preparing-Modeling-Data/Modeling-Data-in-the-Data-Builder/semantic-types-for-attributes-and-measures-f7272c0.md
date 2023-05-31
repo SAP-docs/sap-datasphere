@@ -4,7 +4,7 @@
 
 # Semantic Types for Attributes and Measures
 
-Specify semantic types to identify the type of data in your columns \(attributes and measures\) in analytical datasets, dimensions, and text entities. Semantic types include values, quantities, dates, and geo and textual information.
+Specify semantic types to identify the type of data in your columns \(attributes and measures\). Semantic types include values, quantities, dates, and geo and textual information.
 
 Semantic types are only available for measures and attributes in entities with a *Semantic Usage* of *Analytical Dataset*, *Dimension* or *Text*.
 
@@ -377,6 +377,8 @@ Geolocation - Cartoid
 </td>
 <td valign="top">
 
+A geographical point.
+
 > ### Note:  
 > Not supported in SAP Analytics Cloud.
 
@@ -445,7 +447,7 @@ Image URL
 </td>
 <td valign="top">
 
-A URL pointing to an image file. The image will be displayed when you show the attribute in a table in an SAP Analytics Cloud story.
+A URL pointing to an image file. The image will be displayed when the attribute is shown in an SAP Analytics Cloud table.
 
 
 

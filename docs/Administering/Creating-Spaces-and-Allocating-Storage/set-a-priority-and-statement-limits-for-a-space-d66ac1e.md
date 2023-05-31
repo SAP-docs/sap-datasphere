@@ -46,7 +46,7 @@ Use the properties in the *Workload Management* section to prioritize between sp
         </th>
         </tr>
         <tr>
-        <td valign="top">
+        <td valign="top" rowspan="2">
 
         Admission Control
 
@@ -63,6 +63,22 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top">
 
         80%
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+
+        ADMISSION CONTROL REJECT CPU THRESHOLD
+
+
+        
+        </td>
+        <td valign="top">
+
+        99%
 
 
         
@@ -124,7 +140,7 @@ Use the properties in the *Workload Management* section to prioritize between sp
         </th>
         </tr>
         <tr>
-        <td valign="top">
+        <td valign="top" rowspan="2">
 
         Admission Control
 
@@ -141,6 +157,22 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top">
 
         80%
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+
+        ADMISSION CONTROL REJECT CPU THRESHOLD
+
+
+        
+        </td>
+        <td valign="top">
+
+        99%
 
 
         
@@ -207,14 +239,38 @@ Use the properties in the *Workload Management* section to prioritize between sp
         > ### Note:  
         > Admission control is designed to avoid overloading the system under peak load by denying any further SQL requests when the load on the system is equal to or exceeds a given threshold.
         > 
-        > You can investigate why statements are being queued.
+        > You can investigate why statements are being queued or rejected.
         > 
         > -   Events related to requests which have been queued for longer than 5 seconds are logged and can be reviewed in the M\_ADMISSION\_CONTROL\_EVENTS view. For more information, see [Managing Peak Load \(Admission Control\)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/8569dd96c6ab4849a21f4a97d1ffe832.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
         > 
-        > -   You can monitor the statements that are queued by viewing the cards dedicated to admission control in the *Dashboard* tab of the *System Monitor*. For more information, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
+        > -   You can monitor the statements that are queued or rejected by viewing the cards dedicated to admission control in the *Dashboard* tab of the *System Monitor*. For more information, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
         > 
         > 
-        > A statement which exceeds a threshold is rejected with the SQL error 616: "rejected by workload class configuration, Code: 616, SQL State: HY000". A statement which exceeds a queue threshold is queued for up to 10 minutes, after this time the statement is rejected. For more information, see [Properties for Workload Classes and Mappings](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/3ae17c3b1d6c4adea6f0ddfec3041dd4.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
+        > A statement which exceeds a reject threshold is rejected with the SQL error 616: 'rejected by workload class configuration'. A statement which exceeds a queue threshold is queued for up to 10 minutes, after this time the statement is rejected with the SQL error 616: 'queue wait timeout exceeded'. For more information, see [Properties for Workload Classes and Mappings](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/3ae17c3b1d6c4adea6f0ddfec3041dd4.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
+
+        > ### Note:  
+        > If too many statements are rejected, we recommend you to do these two actions:
+        > 
+        > -   **Decrease the total statement thread limit for the spaces which consume a large amount of CPU time**.
+        > 
+        >     First, identify the spaces which consume a large amount of CPU time: As a database analysis user, analyze the M\_WORKLOAD\_CLASS\_STATISTICS view in the Database Explorer, like in this example:
+        > 
+        >     ```
+        >     SELECT "MD"."SPACE_ID", "WCS"."TOTAL_STATEMENT_CPU_TIME", "WCS"."TOTAL_STATEMENT_REJECT_COUNT"
+        >     FROM "SYS"."M_WORKLOAD_CLASS_STATISTICS" AS "WCS"
+        >     LEFT JOIN "DWC_TENANT_OWNER"."SPACE_METADATA" AS "MD" ON "WCS"."WORKLOAD_CLASS_NAME" = "MD"."VALUE"
+        >     AND "MD"."SECTION" = '_workloadManagement' AND "MD"."KEY" = 'workloadClassName' 
+        >     WHERE "MD"."SPACE_ID" IS NOT NULL AND "MD"."SPACE_ID" != '$$global$$' ORDER BY "WCS"."TOTAL_STATEMENT_CPU_TIME" DESC
+        >     
+        >     ```
+        > 
+        >     Using this sample code, all the spaces can be listed by the TOTAL\_STATEMENT\_CPU\_TIME descending order, which enables you to identify the spaces that consumed the most CPU time.
+        > 
+        >     As a second step, go to the *Workload Configuration* area of each identified space, select the configuration *Custom* and decrease the total statement thread limit. Some statements will take longer to run but will not be rejected.
+        > 
+        > -   **Avoid that tasks which consume a high load of CPU run at the same time**.
+        > 
+        >     You can adjust the task schedules in the *Data Integration Monitor*. See [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 
 
 4.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to space members.

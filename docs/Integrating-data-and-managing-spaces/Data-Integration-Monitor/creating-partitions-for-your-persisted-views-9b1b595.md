@@ -103,7 +103,7 @@ When I load a new snapshot, only partitions 1, 4 and OTHERS are refreshed:
 
 ## Refreshing Single or Multiple Partitions
 
-In some cases, you might want to refresh data for a single or for multiple partitions only, independently if they are locked or not. To do so, select the desired partitions and click *Load Data*.
+In some cases, you might want to refresh data for a single or for multiple partitions only, independently if they are locked or not. To do so, select the desired partitions and click *Load Selected Partitions*.
 
 > ### Example:  
 > In the example below, I have selected 2 partitions. Partition 1 is not locked and partition 2 is locked:
@@ -115,5 +115,5 @@ In some cases, you might want to refresh data for a single or for multiple parti
 >  ![](images/Selected_Partitions_Updated_3c25ff1.png)
 
 > ### Note:  
-> If you change the partition definition, then the next load will be a full load. No manual load will be possible, and the *Load Data* button will be disabled.
+> If you change the partition definition, then the next load will be a full load. No manual load will be possible, and the *Load Selected Partitions* button will be disabled.
 

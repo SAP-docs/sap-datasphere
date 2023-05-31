@@ -15,7 +15,7 @@ Depending on the privileges they are granted, a database user can use their Open
     ![Open SQL Schema Reads View Exposed for Consumption](images/Open_SQL_Read_Exposed_View_a9a83fe.png)
 
     > ### Note:  
-    > Database users can only read data from views that are created in the space with which they are associated if the view has the *Expose for Consumption* property enabled \(see [Exposing a View For Consumption](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/40ec77ec24f244279a81448969a7e769.html "To make a view available for consumption in SAP Analytics Cloud and other clients, tools, and apps (including via the public ODATA API), enable the Expose for Consumption switch.") :arrow_upper_right:\).
+    > Database users can only read data from views that are created in the space with which they are associated if the view has the *Expose for Consumption* property enabled \(see [Exposing a View For Consumption](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/40ec77ec24f244279a81448969a7e769.html "When your view is ready, you can make its data available for consumption in SAP Analytics Cloud and other clients, tools, and apps.") :arrow_upper_right:\).
 
 -   Create a table to act as a target to receive data written from a data flow \(see [Allow the Space to Write to the Open SQL Schema](allow-the-space-to-write-to-the-open-sql-schema-7eaa370.md)\).
 

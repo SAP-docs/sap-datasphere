@@ -188,6 +188,80 @@ The definition of a task chain contains the definition of all the objects that i
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Business Entities / Business Entity Versions
+
+See [Creating a Business Entity](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/c912cdc1537d4efbb24b08327ea68918.html "You use business entities to build your consumption model for analysis and reporting.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+The definition of a business entity contains all its versions \(which are also listed separately\), along with the definition of its source data entity and any authorization scenarios. When you export a business entity \(or one of its versions\), these objects are exported too.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fact Models
+
+See [Creating a Fact Model](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5bbd14a328b549b2b53fce830ea25c15.html "Fact models are reusable models you can use to streamline the creation of other models within the same business context.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+The definition of a fact model contains all its versions \(which are also listed separately\), along with the definition of all its source fact models and business entities. When you export a fact model \(or one of its versions\), these objects are exported too.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Consumption Models
+
+See [Creating a Consumption Model](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/337fa99de4a44700ba49e2214a1f3349.html "Consumption models are the basis to consume your data.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+The definition of a consumption model contains all its perspectives \(which are also listed separately\), along with the definition of all its source fact models and business entities. When you export a consumption model \(or one of its perspectives\), these objects are exported too.
+
+You can deselect individual perspectives to exclude them from export. When overwriting a consumption model during an import, any perspectives excluded from the package will be deleted.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authorization Scenarios
+
+See [Creating an Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/167c05c673dc4715baba8d5d305abb1e.html "Authorization scenarios help you control data access for business entities leveraging data access controls.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+The definition of an authorization scenario contains the definition of its data access control. When you export a task chain, the data access control is exported too.
+
+
+
+</td>
+</tr>
 </table>
 
 > ### Note:  

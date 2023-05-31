@@ -13,7 +13,12 @@ Create a view to query sources in an intuitive graphical interface. You can drag
 If you are comfortable writing SQL code or want to use SQL Script to create your view, you can use the SQL View editor \(see [Creating an SQL View](creating-an-sql-view-81920e4.md)\).
 
 > ### Note:  
-> To make your view consumable by SAP Analytics Cloud, you must set its *Semantic Type* to *Analytical Dataset* and enable the *Expose for Consumption* switch. SAP Analytics Cloud can access dimensions, hierarchies and other entities to which your analytical dataset points via associations, even if they have not themselves been exposed. Other BI clients, tools, and apps can consume views of any type that have the *Expose for Consumption* switch enabled.
+> There are two methods for exposing view data for consumption outside SAP Datasphere:
+> 
+> -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) prefer to consume view data via an analytic model \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). Set the *Semantic Usage* of your view to *Analytical Dataset* and then add it to an analytic model to expose it. There is no need to enable the *Expose for Consumption* switch. Alternatively, you can consume data from a view with a *Semantic Usage* of *Analytical Dataset* directly if the *Expose for Consumption* switch is enabled.
+> -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
+> 
+> For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
 
 
 
@@ -262,7 +267,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 
     Choose from the following:
 
-    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of artifact used by BI clients \(see [Creating an Analytical Dataset](Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating an Analytical Dataset](Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
     -   *Dimension* - Contains attributes containing master data like a product list or store directory, and supporting hierarchies \(see [Creating a Dimension](Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
@@ -282,10 +287,15 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     </td>
     <td valign="top">
 
-     Makes the view available for consumption in SAP Analytics Cloud and other BI clients. 
+     Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC. 
 
     > ### Note:  
-    > To make your view consumable by SAP Analytics Cloud, you must set its *Semantic Type* to *Analytical Dataset* and enable the *Expose for Consumption* switch. SAP Analytics Cloud can access dimensions, hierarchies and other entities to which your analytical dataset points via associations, even if they have not themselves been exposed. Other BI clients, tools, and apps can consume views of any type that have the *Expose for Consumption* switch enabled.
+    > There are two methods for exposing view data for consumption outside SAP Datasphere:
+    > 
+    > -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) prefer to consume view data via an analytic model \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). Set the *Semantic Usage* of your view to *Analytical Dataset* and then add it to an analytic model to expose it. There is no need to enable the *Expose for Consumption* switch. Alternatively, you can consume data from a view with a *Semantic Usage* of *Analytical Dataset* directly if the *Expose for Consumption* switch is enabled.
+    > -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
+    > 
+    > For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
 
 
     

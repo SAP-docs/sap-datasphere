@@ -4,7 +4,7 @@
 
 # Specify Attributes
 
-Attributes are all columns that are not identified as measures, and can contain identifiers, master data, and other data that is used in support of analytics. Attributes appear in analytical datasets, dimensions, text entities, and hierarchies.
+Attributes are all columns that are not identified as measures, and can contain identifiers, master data, and other data that is used in support of analytics. Attributes appear in tables and views with any *Semantic Usage* except *Relational Dataset*.
 
 Attributes are used in:
 

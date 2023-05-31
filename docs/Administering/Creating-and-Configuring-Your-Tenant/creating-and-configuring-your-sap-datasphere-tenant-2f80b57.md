@@ -134,7 +134,7 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 
 **Standard plan**:
 
--   The number of consumed capacity units are reported on a monthly basis to your SAP BTP account.
+-   The number of consumed capacity units are reported on a hourly basis to your SAP BTP account.
 
 
 **Free plan**:

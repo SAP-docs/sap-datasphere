@@ -74,6 +74,9 @@ You can access the following data:
         > ### Note:  
         > For accessing CompositeProviders and Queries in SAP BW∕4HANA we strongly recommended to use the model import with the specific connection type*SAP BW/4HANA Model Transfer*. For more information, see [SAP BW∕4HANA Model Transfer Connections](sap-bw-4hana-model-transfer-connections-1caba95.md).
 
+        > ### Note:  
+        > To import BW Hierarchies and deploy them as remote tables in SAP Datasphere, use the /BI\*/H*<InfoObject name\>* tables with data access via SAP ABAP Dictionary tables instead of using ODP extraction context *BW*. In the Data Builder, you can find the tables in the *ABAPTABLES* folder of the connection.
+
     -   Extraction context *SAPI* provides access to Service API \(SAPI\) DataSources
 
         > ### Note:  

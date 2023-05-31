@@ -27,7 +27,7 @@ This topic contains the following sections:
 
 ## Array Functions
 
-SAP Datasphere supports the following array functions:
+SAP Datasphere supports the following array functions, which take arrays as input:
 
 -   `SUBARRAY`
 -   `TRIM_ARRAY`
@@ -40,7 +40,7 @@ For detailed documentation of these functions, see [Array Functions](https://hel
 
 ## Data Type Conversion Functions
 
-SAP Datasphere supports the following data type conversion functions:
+SAP Datasphere supports the following data type conversion functions, which convert data from one data type to another:
 
 -   `CAST`
 -   `TO_BIGINT`
@@ -75,7 +75,7 @@ For detailed documentation of these functions, see [Data Type Conversion Functio
 
 ## Datetime Functions
 
-SAP Datasphere supports the following datetime functions:
+SAP Datasphere supports the following datetime functions, which perform operations on date and time data types or return date or time information:
 
 -   `ADD_DAYS`
 -   `ADD_MONTHS`
@@ -122,7 +122,7 @@ For detailed documentation of these functions, see [Datetime Functions](https://
 
 ## Fulltext Functions
 
-SAP Datasphere supports the following fulltext function:
+SAP Datasphere supports the following fulltext functions, which perform operations on data that has a fulltext index:
 
 -   `SCORE`
 
@@ -134,7 +134,7 @@ For detailed documentation of this function, see [SCORE Function](https://help.s
 
 ## Miscellaneous Functions
 
-SAP Datasphere supports the following miscellaneous functions:
+SAP Datasphere supports the following miscellaneous functions, which return system values and perform various operations on values, expressions, and return values of other functions:
 
 -   `COALESCE`
 -   `CONVERT_CURRENCY` - See [Example: Converting Currency Values with CONVERT\_CURRENCY](sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_example_currency)
@@ -158,7 +158,7 @@ For detailed documentation of these functions, see [Miscellaneous Functions](htt
 
 ## Numeric Functions
 
-SAP Datasphere supports the following numeric functions:
+SAP Datasphere supports the following numeric functions, which perform mathematical operations on numerical data types or return numeric information:
 
 -   `ABS`
 -   `ACOS`
@@ -199,7 +199,7 @@ For detailed documentation of these functions, see [Numeric Functions](https://h
 
 ## Security Functions
 
-SAP Datasphere supports the following security functions:
+SAP Datasphere supports the following security functions, which provide special functionality for security purposes:
 
 -   `ESCAPE_DOUBLE_QUOTES`
 -   `ESCAPE_SINGLE_QUOTES`
@@ -213,7 +213,7 @@ For detailed documentation of these functions, see [Security Functions](https://
 
 ## String Functions
 
-SAP Datasphere supports the following string functions:
+SAP Datasphere supports the following string functions, which perform extraction and manipulation on strings, or return information about strings:
 
 -   `ABAP_ALPHANUM`
 -   `ABAP_LOWER`

@@ -224,6 +224,6 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
 7.  When the service instance is created, the SAP Datasphere system owner receives an email confirming its availability, and providing a link to navigate to the SAP Datasphere tenant, which the service instance represents.
 
     > ### Note:  
-    > If the creation of the service instance fails \(the "failed" status is displayed\), you must first delete the failed instance and then create a new SAP Datasphere service instance.
+    > If the creation of the service instance fails \(the "failed" status is displayed\), you must first delete the failed instance and then create a new SAP Datasphere service instance. If you need support, you can open an incident via ServiceNow with the component DS-PROV.
 
 

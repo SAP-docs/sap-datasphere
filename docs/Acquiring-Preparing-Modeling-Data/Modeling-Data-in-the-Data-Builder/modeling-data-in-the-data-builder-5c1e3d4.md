@@ -10,7 +10,7 @@ This topic contains the following sections:
 -   [Prepare Master Data for Grouping in a Dimension](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_dimensions)
 -   [Support Translations of Attributes with a Text Entity](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_texts)
 -   [Enable Drill-Down with a Hierarchy](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchies)
--   [Expose Views for Consumption Outside SAP Datasphere](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose)
+-   [Expose View Data for Consumption Outside SAP Datasphere](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose)
 -   [Combine Entities for Consumption in an Analytic Model](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_analytic_model)
 -   [Create Objects and Act On Existing Objects](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_tools)
 
@@ -20,12 +20,12 @@ This topic contains the following sections:
 
 ## Identify Measures to Analyze in an Analytical Dataset
 
-Analytical datasets are entities that contain numerical measures that can be analyzed and are the principal type of entity that is consumed by BI clients \(see [Creating an Analytical Dataset](creating-an-analytical-dataset-30089bd.md)\).
+Analytical datasets are entities that contain numerical measures that can be analyzed and are the principal type of object that is consumed by BI clients \(see [Creating an Analytical Dataset](creating-an-analytical-dataset-30089bd.md)\).
 
 -   To get started: Select a *Semantic Usage* of *Analytical Dataset* to indicate that your entity contains numerical measures that can be analyzed.
 -   You must identify at least one measure \(see [Specify Measures](specify-measures-33f7f29.md)\).
 -   You can create associations to dimensions and text entities \(see [Create an Association](../create-an-association-66c6998.md)\).
--   You can expose your analytical dataset for consumption directly, or consume it in an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
+-   To expose your data for consumption in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 
 
@@ -73,18 +73,14 @@ External hierarchies are entities that contain data to define parent-child relat
 
 <a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose"/>
 
-## Expose Views for Consumption Outside SAP Datasphere
+## Expose View Data for Consumption Outside SAP Datasphere
 
-Views cannot be seen outside SAP Datasphere unless they are exposed for consumption:
+There are two methods for exposing view data for consumption outside SAP Datasphere:
 
--   To allow your view to be consumed by BI clients, including via the public ODATA API, enable the *Expose for Consumption* switch \(see [Exposing a View For Consumption](exposing-a-view-for-consumption-40ec77e.md)\).
+-   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) prefer to consume view data via an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). Set the *Semantic Usage* of your view to *Analytical Dataset* and then add it to an analytic model to expose it. There is no need to enable the *Expose for Consumption* switch. Alternatively, you can consume data from a view with a *Semantic Usage* of *Analytical Dataset* directly if the *Expose for Consumption* switch is enabled.
+-   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
 
--   To be consumable as a model in SAP Analytics Cloud, your entity must be a view with:
-
-    -   *Semantic Usage* set to *Analytical Dataset* \(see [Creating an Analytical Dataset](creating-an-analytical-dataset-30089bd.md)\).
-    -   *Expose for Consumption* enabled.
-    -   At least one measure identified \(see [Specify Measures](specify-measures-33f7f29.md)\).
-
+For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
 
 
 
@@ -92,13 +88,13 @@ Views cannot be seen outside SAP Datasphere unless they are exposed for consumpt
 
 ## Combine Entities for Consumption in an Analytic Model
 
-Rather than expose an analytical dataset for consumption directly, you can select a subset of its measures and combine them with appropriate dimension attributes for grouping and drill-down in an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
+Once your analytical dataset is ready for use, create an analytic model from it to consume its data in SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 -   To get started: In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Analytic Model* to open the editor.
 -   You must add an analytical dataset as a source and can choose to copy all its measures, attributes and associated dimensions to the analytic model \(see [Add a Source](add-a-source-27075ee.md)\).
 -   You can deselect measures and attributes to leave only those that are relevant to answer your particular analytic question.
 -   You can create additional calculated and restricted measures \(see [Add Measures](add-measures-e4cc3e8.md)\).
--   You can create multiple tightly-focused analytic models from a single analytical dataset, each providing only the data needed for a particular BI artifact, and enriched with appropriate variables, filters, and additional measures as necessary.
+-   You can create multiple tightly-focused analytic models from a single analytical dataset, each providing only the data needed for a particular BI context, and enriched with appropriate variables, filters, and additional measures as necessary.
 
 
 
