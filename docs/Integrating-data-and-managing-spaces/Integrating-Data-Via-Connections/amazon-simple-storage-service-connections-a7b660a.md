@@ -82,7 +82,7 @@ Description
 </td>
 <td valign="top">
 
- Enter the optional root path name for browsing objects. The value starts with the character slash. For example,`/My Folder/MySubfolder`. 
+ \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example,`/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
 

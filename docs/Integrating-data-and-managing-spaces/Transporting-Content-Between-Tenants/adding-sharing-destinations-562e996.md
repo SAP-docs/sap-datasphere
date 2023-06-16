@@ -34,15 +34,15 @@ You can add sharing destinations to your export and specify their level of permi
     </tr>
     <tr>
     <td valign="top">
-
-    Destination Type
+    
+        Destination Type
 
 
     
     </td>
     <td valign="top">
-
-    Select the category of the destination that you want to add:
+    
+        Select the category of the destination that you want to add:
 
     -   *System*: Add an individual tenant by URL. Select a *Landscape*, and copy the URLs to the *Systems* list.
 
@@ -58,15 +58,15 @@ You can add sharing destinations to your export and specify their level of permi
     </tr>
     <tr>
     <td valign="top">
-
-    Access
+    
+        Access
 
 
     
     </td>
     <td valign="top">
-
-    Select one or more permissions that you want to grant to the sharing destination:
+    
+        Select one or more permissions that you want to grant to the sharing destination:
 
     -   *View*: Your package will appear in the *My Content* page for the destination tenants, and their users will be able to view the name and summary.
     -   *Import*: The tenants' users can import the package from the *My Content* list.

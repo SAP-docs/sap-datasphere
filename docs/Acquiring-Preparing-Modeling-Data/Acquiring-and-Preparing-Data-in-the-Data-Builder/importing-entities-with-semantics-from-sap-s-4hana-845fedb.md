@@ -91,16 +91,16 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     <tr>
     <td valign="top">
-
-    `ANALYTICAL_FACT` \(SAP S/4HANA on-premise only\)
+    
+        `ANALYTICAL_FACT` \(SAP S/4HANA on-premise only\)
 
 
     
     </td>
     <td valign="top">
-
-    -   Selected entity:
-        -   One business entity \(*Analytical Dataset*\)
+    
+        -   Selected entity:
+        -   One business entity \(*Fact*\)
 
     -   Supporting entities:
         -   One entity \(*Dimension*\) for each associated dimension.
@@ -110,8 +110,8 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     
     </td>
     <td valign="top">
-
-    -   Selected entity:
+    
+        -   Selected entity:
         -   One remote table \(*Relational Dataset*\)
 
     -   Supporting entities:
@@ -124,15 +124,15 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     <tr>
     <td valign="top">
-
-    `ANALYTICAL_DIMENSION`
+    
+        `ANALYTICAL_DIMENSION`
 
 
     
     </td>
     <td valign="top">
-
-    -   Selected entity:
+    
+        -   Selected entity:
         -   One business entity \(*Dimension*\)
 
     -   Supporting entities:
@@ -143,8 +143,8 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     
     </td>
     <td valign="top">
-
-    -   Selected entity:
+    
+        -   Selected entity:
         -   One view \(*Dimension*\)
         -   One remote table \(*Relational Dataset*\)
 
@@ -158,22 +158,22 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     <tr>
     <td valign="top">
-
-    `LANGUAGE_DEPENDENT_TEXT`
+    
+        `LANGUAGE_DEPENDENT_TEXT`
 
 
     
     </td>
     <td valign="top">
-
-    \(none\)
+    
+        \(none\)
 
 
     
     </td>
     <td valign="top">
-
-    -   Selected entity:
+    
+        -   Selected entity:
         -   One remote table \(*Text*\)
 
 
@@ -183,22 +183,22 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     <tr>
     <td valign="top">
-
-    `ANALYTICAL_PARENT_CHILD_HIERARCHY_NODE`
+    
+        `ANALYTICAL_PARENT_CHILD_HIERARCHY_NODE`
 
 
     
     </td>
     <td valign="top">
-
-    \(none\)
+    
+        \(none\)
 
 
     
     </td>
     <td valign="top">
-
-    -   Selected entity:
+    
+        -   Selected entity:
         -   One remote table \(*Hierarchy*\)
 
 
@@ -233,31 +233,15 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Generated from the *Label* value.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-
-    Generated from the *ID* value as: <code>remote.<i class="varname">&lt;connection_name&gt;</i>.<i class="varname">&lt;ID&gt;</i></code>.
+        Generated from the *Label* value.
 
 
     
@@ -265,15 +249,31 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     <tr>
     <td valign="top">
-
-    Import Status
+    
+        Technical Name
 
 
     
     </td>
     <td valign="top">
+    
+        Generated from the *ID* value as: <code>remote.<i class="varname">&lt;connection_name&gt;</i>.<i class="varname">&lt;ID&gt;</i></code>.
 
-    Specifies whether the object needs to be created in SAP Datasphere during the import:
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Import Status
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Specifies whether the object needs to be created in SAP Datasphere during the import:
 
     -   *Ready for Import* - The object will be created.
     -   *Already Imported* - The object has already been created during a previous import. If the structure or semantics of the object have subsequently changed in the source system, the object will be automatically updated and redeployed.

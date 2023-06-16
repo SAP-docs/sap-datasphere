@@ -104,7 +104,8 @@
     -   [Monitor Database Operations with Audit Logs](Monitoring-SAP-Datasphere/monitor-database-operations-with-audit-logs-110404a.md)
         -   [Delete Audit Logs](Monitoring-SAP-Datasphere/delete-audit-logs-589fa42.md)
     -   [Monitor Object Changes with Activities](Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)
-    -   [Create a Database Analysis User to Investigate Database Issues](Monitoring-SAP-Datasphere/create-a-database-analysis-user-to-investigate-database-issues-c28145b.md)
+    -   [Create a Database Analysis User to Debug Database Issues](Monitoring-SAP-Datasphere/create-a-database-analysis-user-to-debug-database-issues-c28145b.md)
+        -   [Stop a Running Statement](Monitoring-SAP-Datasphere/stop-a-running-statement-0cf11ed.md)
         -   [Delete a Database Analysis User](Monitoring-SAP-Datasphere/delete-a-database-analysis-user-b73e544.md)
     -   [Configure Notifications](Monitoring-SAP-Datasphere/configure-notifications-4388411.md)
 

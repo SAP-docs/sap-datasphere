@@ -55,15 +55,15 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     </tr>
     <tr>
     <td valign="top">
-
-    Label
+    
+        Label
 
 
     
     </td>
     <td valign="top">
-
-    Provide a suitable name for the operator.
+    
+        Provide a suitable name for the operator.
 
 
     
@@ -71,15 +71,15 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     </tr>
     <tr>
     <td valign="top">
-
-    Code Language
+    
+        Code Language
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] The supported language is Python.
+    
+        \[read-only\] The supported language is Python.
 
 
     

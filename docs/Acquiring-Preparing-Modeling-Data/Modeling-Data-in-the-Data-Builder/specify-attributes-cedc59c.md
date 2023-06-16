@@ -204,7 +204,9 @@ Show
 </td>
 <td valign="top">
 
- Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
+ \[deprecated\] Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
+
+You can now control the visibility of columns in SAP Analytics Cloud by choosing to include or exclude them in your analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 > ### Note:  
 > To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.
@@ -218,5 +220,5 @@ Show
 In certain contexts, further actions are available in the *Attributes* list:
 
 -   \[dimensions\] Create hierarchies as appropriate \(see [Add a Hierarchy to a Dimension](add-a-hierarchy-to-a-dimension-218b7e6.md)\).
--   \[graphical or SQL views\] Set any filters that you want to prompt users in SAP Analytics Cloud to specify a value for the attribute \(see [Create a Story Filter](create-a-story-filter-8dfc684.md)\).
+-   \[graphical or SQL views\] Set any filters that you want to prompt users in SAP Analytics Cloud to specify a value for the attribute \(see [Create a Story Filter \(Deprecated\)](create-a-story-filter-deprecated-8dfc684.md)\).
 

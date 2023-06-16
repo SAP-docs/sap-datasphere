@@ -18,6 +18,9 @@ You can use input parameters when creating graphical and SQL views:
 Views that contain input parameters require special treatment in the following situations:
 
 -   Previewing data - You must enter a value for each input parameter \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+
+    Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+
 -   Adding a view as a source in the graphical view editor - You must map each input parameter in the source view to a value or an input parameter in the new view \(see [Add a Source](add-a-source-1eee180.md)\).
 -   Adding a view as a source in the SQL view editor - You must complete the syntax to map each input parameter parameter in the source view to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\).
 -   Using a view as a data source in an SAP Analytics Cloud story - Enter a value for each input parameter in the *Set Variables* dialog \(see [Setting Story Variables](https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/305dcf7053634875a408a9d9832c8b8f.html) in the *SAP Analytics Cloud Help Library*\).
@@ -52,15 +55,15 @@ Views that contain input parameters require special treatment in the following s
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    
+         Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -68,15 +71,15 @@ Views that contain input parameters require special treatment in the following s
     </tr>
     <tr>
     <td valign="top">
-
-    Technical Name
+    
+        Technical Name
 
 
     
     </td>
     <td valign="top">
-
-    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -89,15 +92,15 @@ Views that contain input parameters require special treatment in the following s
     </tr>
     <tr>
     <td valign="top">
-
-    Data Type
+    
+        Data Type
 
 
     
     </td>
     <td valign="top">
-
-    Specify the type of data that the input parameter will contain \(see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md)\), and which should be appropriate for the contexts in which it will be used. Some data types require you to specific a length and or precision.
+    
+        Specify the type of data that the input parameter will contain \(see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md)\), and which should be appropriate for the contexts in which it will be used. Some data types require you to specific a length and or precision.
 
 
     
@@ -105,15 +108,15 @@ Views that contain input parameters require special treatment in the following s
     </tr>
     <tr>
     <td valign="top">
-
-    Default Value
+    
+        Default Value
 
 
     
     </td>
     <td valign="top">
-
-    \[optional\] Enter a default value for the input parameter. Each time that a user is required to enter a value for the parameter, they can accept the default value or override it with their own chosen value.
+    
+        \[optional\] Enter a default value for the input parameter. Each time that a user is required to enter a value for the parameter, they can accept the default value or override it with their own chosen value.
 
 
     
@@ -151,15 +154,15 @@ Views that contain input parameters require special treatment in the following s
         </tr>
         <tr>
         <td valign="top">
-
-        `Country = :IP_Country`
+        
+                `Country = :IP_Country`
 
 
         
         </td>
         <td valign="top">
-
-        Filter node \(see [Filter Data](filter-data-6f6fa18.md)\)
+        
+                Filter node \(see [Filter Data](filter-data-6f6fa18.md)\)
 
         This filter expression takes the value entered by the user for `IP_Country` and uses it to restrict the data returned by the view to only those rows where the `Country` column contains this value.
 
@@ -169,15 +172,15 @@ Views that contain input parameters require special treatment in the following s
         </tr>
         <tr>
         <td valign="top">
-
-        `Total*((100-IP_Discount)/100)`
+        
+                `Total*((100-IP_Discount)/100)`
 
 
         
         </td>
         <td valign="top">
-
-        Calculated Columns node \(see [Create a Column](create-a-column-3897f48.md)\)
+        
+                Calculated Columns node \(see [Create a Column](create-a-column-3897f48.md)\)
 
         This expression will fill the column with a value calculated by taking the value in the `Total` column and deducting the percentage value entered by the user.
 
@@ -187,15 +190,15 @@ Views that contain input parameters require special treatment in the following s
         </tr>
         <tr>
         <td valign="top">
-
-        `SUM(Revenue) >IP_Min_Rev`
+        
+                `SUM(Revenue) >IP_Min_Rev`
 
 
         
         </td>
         <td valign="top">
-
-        Aggregation node \(see [Aggregate Data](aggregate-data-7733250.md)\)
+        
+                Aggregation node \(see [Aggregate Data](aggregate-data-7733250.md)\)
 
         This `HAVING` expression will limit the values aggregated to only those with a total `Revenue` over the value entered by the user.
 

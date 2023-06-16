@@ -22,13 +22,13 @@ Business entities can define measures or attributes. Measures are quantifiable v
 
 In order to model a meaningful consumption model, business entities define associations between each other. All potential association targets can be pre-defined on the data layer in order to provide business users a variety of modeling options to choose from when preparing their use case-specific consumption model.
 
-Business entities can be modeled as a dimension or as an analytical dataset. The definition doesn't really differ but rather the intended usage within the consumption model. Dimensions are generally used to contain master data and must have a key defined. Analytical datasets are generally used to contain transactional data and must have at least one measure defined.
+Business entities can be modeled as a dimension or as a fact. The definition doesn't really differ but rather the intended usage within the consumption model. Dimensions are generally used to contain master data and must have a key defined. Facts are generally used to contain transactional data and must have at least one measure defined.
 
 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Business Builder*\), select a space if necessary, and click *New Dimension* or *New Analytical Dataset* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Business Builder*\), select a space if necessary, and click *New Dimension* or *New Fact* to open the editor.
 
 2.  Select a source. You can use views or tables which have been created in the Data Builder as a source.
 
@@ -52,7 +52,7 @@ Business entities can be modeled as a dimension or as an analytical dataset. The
 
 7.  Define the version of your business entity. More information: [Create Versions of an Object](create-versions-of-an-object-e13efeb.md)
 
-8.  If you feel that you have chosen the wrong type for your purpose, you can still convert your dimension into an analytical dataset, or vice versa.
+8.  If you feel that you have chosen the wrong type for your purpose, you can still convert your dimension into a fact, or vice versa.
 
 9.  Save your entries.
 

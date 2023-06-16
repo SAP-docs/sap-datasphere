@@ -54,6 +54,16 @@ In the area *Expensive Statement Tracing*, you can enable expensive statement tr
 
 
 
+<a name="loio9cd0691c44a74f2aa47b52f615f74433__section_adv_gcj_gxb"/>
+
+## MDS Information Tracing
+
+To analyze individual SAP HANA multi-dimensional services \(MDS\) query, you can enable the tracing of MDS information in the area *MDS Information Tracing*.
+
+If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statements* tab in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
+
+
+
 <a name="loio9cd0691c44a74f2aa47b52f615f74433__section_jt3_hfb_xpb"/>
 
 ## Procedure
@@ -76,6 +86,7 @@ In the area *Expensive Statement Tracing*, you can enable expensive statement tr
 
     For more information about these parameters, see [Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/5faf04f17830464eacdb7938b383d2ab.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
 
+5.  To trace MDS information, select *Enable MDS Information Tracing* and save.
 
 
 
@@ -90,6 +101,8 @@ The monitoring views are available in the *Data Builder* editors:
     All SAP HANA monitoring views start with M\_. For more information about all the monitoring views available, see [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/d3c10d23e8334a35afa8d9bdbc102366.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
     The views for expensive statement are M\_EXPENSIVE\_STATEMENTS and M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS. For more information, see [M\_EXPENSIVE\_STATEMENTS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20af736e751910148162e2ab1982f035.html) and [M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/80c32e9dc5b742efa254adfe164102dc.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
+
+    The view M\_MULTIDIMENSIONAL\_STATEMENT\_STATISTICS provides extensive information about MDS queries. For more information, see[M\_MULTIDIMENSIONAL\_STATEMENT\_STATISTICS System View](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/5b04f05f501f4f91aea202f1394cfddc.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
 -   **SAP HANA \_SYS\_STATISTICS Schema Statistics Service Views**
 

@@ -53,15 +53,15 @@ Your object's status may be updated when changes to one or more of its sources a
     </tr>
     <tr>
     <td valign="top">
-
-    Add Column
+    
+        Add Column
 
 
     
     </td>
     <td valign="top">
-
-    Columns added to source tables or views are excluded by default from the output of dependent views:
+    
+        Columns added to source tables or views are excluded by default from the output of dependent views:
 
     -   An information message listing all new columns is displayed on the source.
     -   The new columns are excluded in a projection node directly after the source. If no projection node was previously present, then one is added.
@@ -72,15 +72,15 @@ Your object's status may be updated when changes to one or more of its sources a
     </tr>
     <tr>
     <td valign="top">
-
-    Change Business Name
+    
+        Change Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Changes to the business name and other business properties of a source table or view or its columns are automatically propagated to dependent objects:
+    
+        Changes to the business name and other business properties of a source table or view or its columns are automatically propagated to dependent objects:
 
     -   An information message specifying the source object changes or listing all changed columns is displayed on the source.
 
@@ -90,15 +90,15 @@ Your object's status may be updated when changes to one or more of its sources a
     </tr>
     <tr>
     <td valign="top">
-
-    Change Column Data Type
+    
+        Change Column Data Type
 
 
     
     </td>
     <td valign="top">
-
-    Changes column data types in source tables or views generate warnings in dependent views:
+    
+        Changes column data types in source tables or views generate warnings in dependent views:
 
     -   An information message listing all columns with changed data types is displayed on the source.
     -   An information message listing all columns with changed data types present in the output node *Columns* list is displayed on the output node.
@@ -110,15 +110,15 @@ Your object's status may be updated when changes to one or more of its sources a
     </tr>
     <tr>
     <td valign="top">
-
-    Delete Column
+    
+        Delete Column
 
 
     
     </td>
     <td valign="top">
-
-    Deletions of columns in source tables or views generate errors in dependent views if the columns are used in these views:
+    
+        Deletions of columns in source tables or views generate errors in dependent views if the columns are used in these views:
 
     -   An information message listing all deleted columns is displayed on the source.
     -   An error message is displayed on any intermediate node \(join, union, filter, calculated columns, aggregation\) in which a deleted column was used.
@@ -131,15 +131,15 @@ Your object's status may be updated when changes to one or more of its sources a
     </tr>
     <tr>
     <td valign="top">
-
-    Change to Input Parameter
+    
+        Change to Input Parameter
 
 
     
     </td>
     <td valign="top">
-
-    Changes to input parameters in source views generate messages in dependent views:
+    
+        Changes to input parameters in source views generate messages in dependent views:
 
     -   An information message listing all input parameter changes is displayed on the source.
     -   An error or warning is displayed on the source for each input parameter that is added, deleted, or changed.
@@ -154,15 +154,15 @@ Your object's status may be updated when changes to one or more of its sources a
     </tr>
     <tr>
     <td valign="top">
-
-    Change to Data Access Control
+    
+        Change to Data Access Control
 
 
     
     </td>
     <td valign="top">
-
-    Changes to a data access control generate warnings in views to which they are attached:
+    
+        Changes to a data access control generate warnings in views to which they are attached:
 
     -   A warning message is displayed on the output node to encourage you to review the changes before redeploying the view.
 

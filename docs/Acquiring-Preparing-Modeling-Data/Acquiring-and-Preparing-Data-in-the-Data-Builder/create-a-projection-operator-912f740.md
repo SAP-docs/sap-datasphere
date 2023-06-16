@@ -40,15 +40,15 @@ Insert a projection operator to add, remove, reorder, or rename columns.
     </tr>
     <tr>
     <td valign="top">
-
-    *Label*
+    
+        *Label*
 
 
     
     </td>
     <td valign="top">
-
-    Provide a suitable name for your projection as per your requirement.
+    
+        Provide a suitable name for your projection as per your requirement.
 
 
     

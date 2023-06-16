@@ -69,15 +69,15 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         </tr>
         <tr>
         <td valign="top">
-
-        Column
+        
+                Column
 
 
         
         </td>
         <td valign="top">
-
-        Select the column that will be used to filter your data. 
+        
+                Select the column that will be used to filter your data. 
 
         > ### Note:  
         > Filtering on columns with the following data types is not supported:
@@ -110,15 +110,15 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         </tr>
         <tr>
         <td valign="top">
-
-        Operator
+        
+                Operator
 
 
         
         </td>
         <td valign="top">
-
-        The filter only supports including conditions. You can choose between *Equal to* and *Between*.
+        
+                The filter only supports including conditions. You can choose between *Equal to* and *Between*.
 
         > ### Note:  
         > Filter conditions on one column will be defined as OR condition, while filters on distinct columns are applied as AND condition
@@ -129,15 +129,15 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         </tr>
         <tr>
         <td valign="top">
-
-        Values
+        
+                Values
 
 
         
         </td>
         <td valign="top">
-
-        You must select existing values only.
+        
+                You must select existing values only.
 
         > ### Note:  
         > -   No dynamic filtering such as "last 3 years" is supported.

@@ -38,6 +38,8 @@ To open the *Data Viewer* panel, click <span class="SAP-icons"></span> \(Show
 > ### Note:  
 > -   In a view editor, if the *Input Parameters* dialog appears, the view contains one or more input parameters and you must enter a value to apply for each of them \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). You can edit values at any moment by clicking the input parameter strip.
 > 
+>     Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+> 
 > -   If a column has *Binary*, *Large Binary*, *ST\_Point*, and *ST\_Geometry* set as data type, the data viewer is unavailable and records are shown as *Cannot be shown*. If no data can be found, the data viewer shows it as *NULL*.
 
 The viewer headers indicate the total number of rows that can be displayed by scrolling down.

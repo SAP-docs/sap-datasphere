@@ -29,7 +29,11 @@ You can log in by passing the OAuth client information as options on the command
 To log in, enter the following command and press [Return\]:
 
 ```
-dwc login -c "<client-id>" -C "<client-secret>" -A "<authorization-url>" -t "<token-url>"
+dwc login 
+    --client-id "<id>" 
+    --client-secret "<secret>" 
+    --authorization-url "<url>" 
+    --token-url "<url>"
 ```
 
 > ### Note:  
@@ -58,7 +62,7 @@ Description
 <tr>
 <td valign="top">
 
-<code>-c "<i class="varname">&lt;client-id&gt;</i>"</code>
+<code>--client-id "<i class="varname">&lt;id&gt;</i>"</code>
 
 
 
@@ -70,8 +74,6 @@ Enter the *OAuth Client ID* provided by your administrator.
 > ### Note:  
 > The client ID must be [encoded as a URI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) when passed as a parameter.
 
-Alternative: <code>--client-id "<i class="varname">&lt;id&gt;</i>"</code>
-
 
 
 </td>
@@ -79,7 +81,7 @@ Alternative: <code>--client-id "<i class="varname">&lt;id&gt;</i>"</code>
 <tr>
 <td valign="top">
 
-<code>-C "<i class="varname">&lt;client-secret&gt;</i>"</code>
+<code>--client-secret "<i class="varname">&lt;secret&gt;</i>"</code>
 
 
 
@@ -91,8 +93,6 @@ Enter the *Secret* provided by your administrator.
 > ### Note:  
 > The secret must be [encoded as a URI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) when passed as a parameter.
 
-Alternative: <code>--client-secret "<i class="varname">&lt;secret&gt;</i>"</code>
-
 
 
 </td>
@@ -100,7 +100,7 @@ Alternative: <code>--client-secret "<i class="varname">&lt;secret&gt;</i>"</code
 <tr>
 <td valign="top">
 
-<code>-A "<i class="varname">&lt;authorization-url&gt;</i>"</code>
+<code>--authorization-url "<i class="varname">&lt;url&gt;</i>"</code>
 
 
 
@@ -109,8 +109,6 @@ Alternative: <code>--client-secret "<i class="varname">&lt;secret&gt;</i>"</code
 
 Enter the *Authorization URL* provided by your administrator.
 
-Alternative: <code>--authorization-url "<i class="varname">&lt;authorization-url&gt;</i>"</code>
-
 
 
 </td>
@@ -118,7 +116,7 @@ Alternative: <code>--authorization-url "<i class="varname">&lt;authorization-url
 <tr>
 <td valign="top">
 
-<code>-t "<i class="varname">&lt;token-url&gt;</i>"</code>
+<code>--token-url "<i class="varname">&lt;url&gt;</i>"</code>
 
 
 
@@ -126,8 +124,6 @@ Alternative: <code>--authorization-url "<i class="varname">&lt;authorization-url
 <td valign="top">
 
 Enter the *Token URL* provided by your administrator.
-
-Alternative: <code>--token-url "<i class="varname">&lt;token-url&gt;</i>"</code>
 
 
 
@@ -149,7 +145,8 @@ You can log in more securely by passing the OAuth client information in a secret
 To log in, enter the following command and press [Return\]:
 
 ```
-dwc login -s <secrets-file>.json
+dwc login 
+    --secrets-file <file>.json
 ```
 
 > ### Note:  
@@ -178,7 +175,7 @@ Description
 <tr>
 <td valign="top">
 
-<code>-s<i class="varname">&lt;secrets-file&gt;</i>.json</code>
+<code>--secrets-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -198,8 +195,6 @@ Prepare a .json file with the following syntax:
 
 > ### Note:  
 > Secrets files use versions of the options with underscores instead of hyphens.
-
-Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.json</code>
 
 
 
@@ -231,7 +226,7 @@ Having extracted your tokens, you no longer need to log in at the beginning of y
 For example, the following command, to read a space, can be run without having logged in beforehand:
 
 ```
-dwc spaces read -S My_SPACE -O <options-file>.json -s <secrets-file>.json
+dwc spaces read --space My_SPACE --options-file <options-file>.json --secrets-file <secrets-file>.json
 ```
 
 Where the <code><i class="varname">&lt;options-file&gt;</i>.json</code> contains appropriate options and the <code><i class="varname">&lt;secrets-file&gt;</i>.json</code> contains the following options:

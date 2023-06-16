@@ -32,31 +32,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-     Business Name 
+    
+         Business Name 
 
 
     
     </td>
     <td valign="top">
-
-     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     Technical Name 
-
-
-    
-    </td>
-    <td valign="top">
-
-     \[read-only\] The technical names of remote tables cannot be modified. 
+         Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -64,23 +48,40 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Semantic Usage
+    
+         Technical Name 
 
 
     
     </td>
     <td valign="top">
+    
+         \[read-only\] The technical names of remote tables cannot be modified. 
 
-     Select the way your entity should be used. 
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Semantic Usage
+
+
+    
+    </td>
+    <td valign="top">
+    
+         Select the way your entity should be used. 
 
     Choose from the following:
 
-    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating an Analytical Dataset](../Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Fact* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating a Fact](../Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Contains attributes containing master data like a product list or store directory, and supporting hierarchies \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - \[default\] Contains columns with no specific analytical purpose.
+    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 
     
@@ -115,15 +116,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-     *Connection* 
+    
+         *Connection* 
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\]
+    
+        \[read-only\]
 
     Displays the name of the connection the remote table belongs to.
 
@@ -135,15 +136,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Remote Table
+    
+        Remote Table
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the full path to the remote table in the source system.
+    
+        \[read-only\] Displays the full path to the remote table in the source system.
 
 
     
@@ -151,15 +152,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Data Access
+    
+        Data Access
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays how the remote table data is stored:
+    
+        \[read-only\] Displays how the remote table data is stored:
 
     -   *Remote*: Data is accessed directly from the source \(federation\) and read from the virtual table.
     -   *Replicated*: Data is copied in SAP Datasphere and is read from the replica table.
@@ -175,15 +176,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Last Updated
+    
+        Last Updated
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\]
+    
+        \[read-only\]
 
     Displays when the data was last successfully updated in SAP Datasphere.
 
@@ -196,15 +197,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Refresh Frequency
+    
+        Refresh Frequency
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\]
+    
+        \[read-only\]
 
     Displays how often data is replicated. The value here shows the intended frequency that might have not been reached yet depending on the status of the remote table.
 
@@ -222,15 +223,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\]
+    
+        \[read-only\]
 
     Displays the current status of the remote table:
 
@@ -262,15 +263,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Statistics Type
+    
+        Statistics Type
 
 
     
     </td>
     <td valign="top">
-
-    Displays the statistics type that has been created for the remote table :
+    
+        Displays the statistics type that has been created for the remote table :
 
     -   *HISTOGRAM*: Creates a data statistics object that helps the query optimizer estimate the data distribution.
     -   *RECORD COUNT*: Creates a data statistics object that helps the query optimizer calculate the number of records \(rows\) in a table data source. The*RECORD COUNT* type is a table-wide statistic.
@@ -285,15 +286,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     <tr>
     <td valign="top">
-
-    Statistics Last Updated
+    
+        Statistics Last Updated
 
 
     
     </td>
     <td valign="top">
-
-    Displays the date when the last statistics update has been refreshed for the remote table.
+    
+        Displays the date when the last statistics update has been refreshed for the remote table.
 
 
     

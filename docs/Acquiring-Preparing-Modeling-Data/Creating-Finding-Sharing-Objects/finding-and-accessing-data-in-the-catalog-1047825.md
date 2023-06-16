@@ -551,7 +551,7 @@ Semantic Usage
 
 Choose one of the tabs and specify the options:
 
-*Select Items*: Choose how the asset is used, for example, a relational dataset, analytical dataset, dimension, and so on.
+*Select Items*: Choose how the asset is used, for example, a relational dataset, fact, dimension, and so on.
 
 *Define Conditions*: Create conditions and enter a value.
 

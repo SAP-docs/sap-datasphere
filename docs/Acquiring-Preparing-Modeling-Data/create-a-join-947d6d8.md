@@ -53,15 +53,15 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     </tr>
     <tr>
     <td valign="top">
-
-    Join Type
+    
+        Join Type
 
 
     
     </td>
     <td valign="top">
-
-    Specifies the type of SQL join to create. You can choose from:
+    
+        Specifies the type of SQL join to create. You can choose from:
 
     -   Cross - Return all of the rows from the left table joined to all of the rows from the right table.
     -   Full - Return all of the rows from both tables, joining records from the left table where possible.
@@ -75,15 +75,15 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     </tr>
     <tr>
     <td valign="top">
-
-    Distinct Values
+    
+        Distinct Values
 
 
     
     </td>
     <td valign="top">
-
-    Return only unique values.
+    
+        Return only unique values.
 
 
     
@@ -91,15 +91,15 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     </tr>
     <tr>
     <td valign="top">
-
-    Cardinality
+    
+        Cardinality
 
 
     
     </td>
     <td valign="top">
-
-    Specifies the number of rows matching another table in a join and may improve the view's performance. You can choose from:
+    
+        Specifies the number of rows matching another table in a join and may improve the view's performance. You can choose from:
 
     -   `MANY TO ONE`
     -   `MANY TO EXACT ONE`

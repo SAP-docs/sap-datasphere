@@ -83,31 +83,15 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    email
+    
+        email
 
 
     
     </td>
     <td valign="top">
-
-    Required if your `NameID` is "email".
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Groups
-
-
-    
-    </td>
-    <td valign="top">
-
-    Required. The value must be set to "sac", even in case of SAP Datasphere. The Groups attribute is a custom attribute and must be added if it does not exist yet. You need to contact your administrator to get the path where the mapping needs to be changed.
+        Required if your `NameID` is "email".
 
 
     
@@ -115,31 +99,15 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    familyName
+    
+        Groups
 
 
     
     </td>
     <td valign="top">
-
-    Optional. `familyName` is the user's last name \(surname\).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    displayName
-
-
-    
-    </td>
-    <td valign="top">
-
-    Optional.
+        Required. The value must be set to "sac", even in case of SAP Datasphere. The Groups attribute is a custom attribute and must be added if it does not exist yet. You need to contact your administrator to get the path where the mapping needs to be changed.
 
 
     
@@ -147,31 +115,15 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    functionalArea
+    
+        familyName
 
 
     
     </td>
     <td valign="top">
-
-    Optional.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    givenName
-
-
-    
-    </td>
-    <td valign="top">
-
-    Optional. `givenName` is the user's first name.
+        Optional. `familyName` is the user's last name \(surname\).
 
 
     
@@ -179,31 +131,15 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    preferredLanguage
+    
+        displayName
 
 
     
     </td>
     <td valign="top">
-
-    Optional.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    custom1
-
-
-    
-    </td>
-    <td valign="top">
-
-    Optional. For SAML role assignment.
+        Optional.
 
 
     
@@ -211,31 +147,15 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    custom2
+    
+        functionalArea
 
 
     
     </td>
     <td valign="top">
-
-    Optional. For SAML role assignment.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    custom3
-
-
-    
-    </td>
-    <td valign="top">
-
-    Optional. For SAML role assignment.
+        Optional.
 
 
     
@@ -243,15 +163,15 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    custom4
+    
+        givenName
 
 
     
     </td>
     <td valign="top">
-
-    Optional. For SAML role assignment.
+    
+        Optional. `givenName` is the user's first name.
 
 
     
@@ -259,15 +179,95 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     </tr>
     <tr>
     <td valign="top">
-
-    custom5
+    
+        preferredLanguage
 
 
     
     </td>
     <td valign="top">
+    
+        Optional.
 
-    Optional. For SAML role assignment.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        custom1
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Optional. For SAML role assignment.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        custom2
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Optional. For SAML role assignment.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        custom3
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Optional. For SAML role assignment.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        custom4
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Optional. For SAML role assignment.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        custom5
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Optional. For SAML role assignment.
 
 
     

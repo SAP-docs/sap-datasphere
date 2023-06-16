@@ -6,7 +6,7 @@
 
 Specify semantic types to identify the type of data in your columns \(attributes and measures\). Semantic types include values, quantities, dates, and geo and textual information.
 
-Semantic types are only available for measures and attributes in entities with a *Semantic Usage* of *Analytical Dataset*, *Dimension* or *Text*.
+Semantic types are only available for measures and attributes in entities with a *Semantic Usage* of *Fact*, *Dimension* or *Text*.
 
 To specify a semantic type, hover over the attribute or measure, and click <span class="FPA-icons"></span> \(Menu\)** \> *Semantic Type* \> **<Type\>**.
 

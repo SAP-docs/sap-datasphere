@@ -77,31 +77,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Region*
+        
+                *Region*
 
 
         
         </td>
         <td valign="top">
-
-        Select your region host from the list.
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        *Subaccount*
-
-
-        
-        </td>
-        <td valign="top">
-
-        Add your SAP Datasphere subaccount name.
+                Select your region host from the list.
 
 
         
@@ -109,31 +93,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Display Name*
+        
+                *Subaccount*
 
 
         
         </td>
         <td valign="top">
-
-        \[optional\] Add a name for the account.
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        *Subaccount User*
-
-
-        
-        </td>
-        <td valign="top">
-
-        Add your subaccount \(S-User\) username.
+                Add your SAP Datasphere subaccount name.
 
 
         
@@ -141,15 +109,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Password*
+        
+                *Display Name*
 
 
         
         </td>
         <td valign="top">
-
-        Add your S-User password for the SAP Business Technology Platform.
+        
+                \[optional\] Add a name for the account.
 
 
         
@@ -157,15 +125,47 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Location ID*
+        
+                *Subaccount User*
 
 
         
         </td>
         <td valign="top">
+        
+                Add your subaccount \(S-User\) username.
 
-        \[optional\] Define a location ID that identifies the location of this Cloud Connector for the subaccount.
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Password*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Add your S-User password for the SAP Business Technology Platform.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Location ID*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                \[optional\] Define a location ID that identifies the location of this Cloud Connector for the subaccount.
 
         > ### Note:  
         > -   Using location IDs you can connect multiple Cloud Connector instances to your subaccount. If you don't specify any value, the default is used. For more information, see [Managing Subaccounts](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/f16df12fab9f4fe1b8a4122f0fd54b6e.html) in the *SAP BTP Connectivity* documentation.
@@ -180,15 +180,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Description*
+        
+                *Description*
 
 
         
         </td>
         <td valign="top">
-
-        \(Optional\) Add a description for the Cloud Connector.
+        
+                \(Optional\) Add a description for the Cloud Connector.
 
 
         
@@ -232,8 +232,8 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *SAP ABAP* \(data flows, replication flows\)
+        
+                *SAP ABAP* \(data flows, replication flows\)
 
         *SAP BW* \(data flows\)
 
@@ -245,8 +245,8 @@ For more information about the supported use cases depending on the connection t
         
         </td>
         <td valign="top">
-
-        RFC
+        
+                RFC
 
         See [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
 
@@ -256,8 +256,8 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *SAP BW/4HANA Model Transfer* \(model import\)
+        
+                *SAP BW/4HANA Model Transfer* \(model import\)
 
         *SAP S/4HANA On-Premise* \(model import\)
 
@@ -265,8 +265,8 @@ For more information about the supported use cases depending on the connection t
         
         </td>
         <td valign="top">
-
-        HTTPS
+        
+                HTTPS
 
         See [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) in the *SAP BTP Connectivity* documentation.
 
@@ -276,15 +276,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *SAP HANA* on-premise only \(data flows, remote tables via Cloud Connector\)
+        
+                *SAP HANA* on-premise only \(data flows, remote tables via Cloud Connector\)
 
 
         
         </td>
         <td valign="top">
-
-        TCP
+        
+                TCP
 
         See [Configure Access Control \(TCP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/befd4374d33a4833be117d7149b6a103.html) in the *SAP BTP Connectivity* documentation.
 
@@ -296,15 +296,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Generic OData* \(data flows\)
+        
+                *Generic OData* \(data flows\)
 
 
         
         </td>
         <td valign="top">
-
-        HTTPS
+        
+                HTTPS
 
         See [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) in the *SAP BTP Connectivity* documentation.
 
@@ -314,15 +314,15 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *Microsoft SQL Server* \(data flows\)
+        
+                *Microsoft SQL Server* \(data flows\)
 
 
         
         </td>
         <td valign="top">
-
-        TCP
+        
+                TCP
 
         See [Configure Access Control \(TCP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/befd4374d33a4833be117d7149b6a103.html) in the *SAP BTP Connectivity* documentation.
 
@@ -368,22 +368,22 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *SAP BW/4HANA Model Import*
+        
+                *SAP BW/4HANA Model Import*
 
 
         
         </td>
         <td valign="top">
-
-        *URL Path* \(for HTTPS\)
+        
+                *URL Path* \(for HTTPS\)
 
 
         
         </td>
         <td valign="top">
-
-        -   `/sap/opu/odata/sap/ESH_SEARCH_SRV/SearchQueries`
+        
+                -   `/sap/opu/odata/sap/ESH_SEARCH_SRV/SearchQueries`
 
         -   `/sap/bw4/v1/dwc/dbinfo`
 
@@ -400,8 +400,8 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *SAP ABAP*
+        
+                *SAP ABAP*
 
         *SAP S/4HANA On-Premise* 
 
@@ -409,15 +409,15 @@ For more information about the supported use cases depending on the connection t
         
         </td>
         <td valign="top">
-
-        *Function Name* \(name of the function module for RFC\)
+        
+                *Function Name* \(name of the function module for RFC\)
 
 
         
         </td>
         <td valign="top">
-
-        For accessing data using CDS view extraction:
+        
+                For accessing data using CDS view extraction:
 
         -   DHAMB\_ – *Prefix*
 
@@ -441,8 +441,8 @@ For more information about the supported use cases depending on the connection t
         </tr>
         <tr>
         <td valign="top">
-
-        *SAP BW*
+        
+                *SAP BW*
 
         *SAP ECC*
 
@@ -450,15 +450,15 @@ For more information about the supported use cases depending on the connection t
         
         </td>
         <td valign="top">
-
-        *Function Name* \(name of the function module for RFC\)
+        
+                *Function Name* \(name of the function module for RFC\)
 
 
         
         </td>
         <td valign="top">
-
-        For accessing data using ODP connectivity \(for legacy systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed\):
+        
+                For accessing data using ODP connectivity \(for legacy systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed\):
 
         -   /SAPDS/ – *Prefix*
 

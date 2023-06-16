@@ -39,15 +39,15 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     </tr>
     <tr>
     <td valign="top">
-
-    New Column
+    
+        New Column
 
 
     
     </td>
     <td valign="top">
-
-    New source or target columns are left unmapped by default in the target table node of dependent data flows:
+    
+        New source or target columns are left unmapped by default in the target table node of dependent data flows:
 
     -   An information message listing all new columns is displayed on the source and/or target.
 
@@ -57,15 +57,15 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     </tr>
     <tr>
     <td valign="top">
-
-    Change Column Data Type
+    
+        Change Column Data Type
 
 
     
     </td>
     <td valign="top">
-
-    Source or target column data type changes may generate information or error messages in dependent data flows:
+    
+        Source or target column data type changes may generate information or error messages in dependent data flows:
 
     -   An information message listing all columns with changed data types is displayed on the source and/or target.
     -   An error message is displayed on any node where an incompatible data type change is present.
@@ -76,15 +76,15 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     </tr>
     <tr>
     <td valign="top">
-
-    Delete Column
+    
+        Delete Column
 
 
     
     </td>
     <td valign="top">
-
-    Deleted source columns generate errors in dependent data flows if the columns are used in these data flows:
+    
+        Deleted source columns generate errors in dependent data flows if the columns are used in these data flows:
 
     -   An information message listing all deleted columns is displayed on the source and/or target.
     -   An error message is displayed on any intermediate node \(join, union, projection, aggregation, script\) in which a deleted column was used.

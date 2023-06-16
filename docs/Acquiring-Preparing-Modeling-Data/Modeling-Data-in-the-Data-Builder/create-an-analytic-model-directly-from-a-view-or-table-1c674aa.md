@@ -2,7 +2,7 @@
 
 # Create an Analytic Model Directly From a View or Table
 
-You can create one or more analytic models directly from views or tables with a *Semantic Usage* of *Analytical Dataset*.
+You can create one or more analytic models directly from views or tables with a *Semantic Usage* of *Fact* \(or *Analytical Dataset*\).
 
 
 
@@ -10,9 +10,9 @@ You can create one or more analytic models directly from views or tables with a 
 
 ## Procedure
 
-1.  Open the appropriate editor and ensure that your table or view has a *Semantic Usage* of *Analytical Dataset*.
+1.  Open the appropriate editor and ensure that your table or view has a *Semantic Usage* of *Fact* \(or *Analytical Dataset*\).
 
-    Analytic models cannot be created from entities with other semantic usages.
+    Analytic models cannot be created from entities with other semantic usage.
 
 2.  Click *Create Analytic Model* under the *Semantic Usage* property.
 

@@ -2,7 +2,7 @@
 
 # Configure the Size of Your SAP Datasphere Tenant
 
-Allocate capacity units to the various resources according to your business needs.
+Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units \(CU\) are allocated to obtain storage and compute resources for your tenant.
 
 You can configure the size of a subscription-based tenant and a consumption-based tenant with a standard plan.
 

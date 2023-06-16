@@ -264,7 +264,7 @@ See [Creating an Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e
 </td>
 <td valign="top">
 
-The definition of an authorization scenario contains the definition of its data access control. When you export a task chain, the data access control is exported too.
+The definition of an authorization scenario contains the definition of its data access control. When you export an authorization scenario, the data access control is exported too.
 
 
 
@@ -318,31 +318,15 @@ The definition of an authorization scenario contains the definition of its data 
     </tr>
     <tr>
     <td valign="top">
-
-    Name/ Description
+    
+        Name/ Description
 
 
     
     </td>
     <td valign="top">
-
-    Enter a clear name to identify the package.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Details
-
-
-    
-    </td>
-    <td valign="top">
-
-    Enter more detailed information about the contents of the package, including terms and conditions, if appropriate.
+        Enter a clear name to identify the package.
 
 
     
@@ -350,31 +334,15 @@ The definition of an authorization scenario contains the definition of its data 
     </tr>
     <tr>
     <td valign="top">
-
-    Category
+    
+        Details
 
 
     
     </td>
     <td valign="top">
-
-    Select *My Content*.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Location
-
-
-    
-    </td>
-    <td valign="top">
-
-    By default, the package is exported to the *My Content* folder. To export to a subfolder, click *Browse* and select or create a new folder.
+        Enter more detailed information about the contents of the package, including terms and conditions, if appropriate.
 
 
     
@@ -382,15 +350,15 @@ The definition of an authorization scenario contains the definition of its data 
     </tr>
     <tr>
     <td valign="top">
-
-    Sharing
+    
+        Category
 
 
     
     </td>
     <td valign="top">
-
-    Select the sharing destinations for the export and their permissions on the content \(see [Adding Sharing Destinations](adding-sharing-destinations-562e996.md)\)
+    
+        Select *My Content*.
 
 
     
@@ -398,15 +366,47 @@ The definition of an authorization scenario contains the definition of its data 
     </tr>
     <tr>
     <td valign="top">
-
-    Terms and Conditions
+    
+        Location
 
 
     
     </td>
     <td valign="top">
+    
+        By default, the package is exported to the *My Content* folder. To export to a subfolder, click *Browse* and select or create a new folder.
 
-    Enable this switch to require users to accept terms and conditions before importing the content.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Sharing
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Select the sharing destinations for the export and their permissions on the content \(see [Adding Sharing Destinations](adding-sharing-destinations-562e996.md)\)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Terms and Conditions
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Enable this switch to require users to accept terms and conditions before importing the content.
 
 
     

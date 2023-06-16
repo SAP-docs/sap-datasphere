@@ -34,7 +34,7 @@ Model
 </th>
 <th valign="top">
 
-Sub-model
+Sub-Model
 
 
 
@@ -185,14 +185,14 @@ InfoProvider
 </td>
 <td valign="top">
 
-View with prefix DL \(with associations to dimension views\) \(analytical dataset\)
+View with prefix DL \(with associations to dimension views\) \(fact\)
 
 
 
 </td>
 <td valign="top">
 
-Analytical dataset \(with associations to dimensions\)
+Fact \(with associations to dimensions\)
 
 
 
@@ -214,6 +214,8 @@ Query \(Restricted Key Figure, Calculated Key Figure, Filter\)
 
 </td>
 <td valign="top">
+
+Analyic Model
 
 
 

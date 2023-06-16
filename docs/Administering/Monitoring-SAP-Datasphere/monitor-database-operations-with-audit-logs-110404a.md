@@ -18,6 +18,6 @@ If Space Administrators have enabled audit logs to be created for their space \(
 2.  Open the *Data Builder*, create a view, and add one or more of the following views from the DWC\_AUDIT\_READER schema as sources:
     -   `DPP_AUDIT_LOG` - Contains audit log entries.
     -   `AUDIT_LOG_OVERVIEW` - Contains audit policies \(read or change operations\) and the number of audit log entries.
-    -   `ANALYSIS_AUDIT_LOG` - Contains audit log entries for database analysis users. For more information, see [Create a Database Analysis User to Investigate Database Issues](create-a-database-analysis-user-to-investigate-database-issues-c28145b.md).
+    -   `ANALYSIS_AUDIT_LOG` - Contains audit log entries for database analysis users. For more information, see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
 
 

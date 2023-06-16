@@ -7,7 +7,8 @@ Enable time-dependency in your dimension or text entity to define periods of val
 This topic contains the following sections:
 
 -   [Specify Time-Dependent Semantic Types in your Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md#loio11b2ff4179a14c379bfdf7b7b85b09a1__section_dimension)
--   [Provide a Time-Dependent Parameter in your Analytical Dataset](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md#loio11b2ff4179a14c379bfdf7b7b85b09a1__section_analytic)
+-   [Create a Reference Date Variable in Your Analytic Model](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md#loio11b2ff4179a14c379bfdf7b7b85b09a1__section_analytic_model)
+-   [Create a Time-Dependent Parameter in Your Analytical Dataset \(Deprecated\)](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md#loio11b2ff4179a14c379bfdf7b7b85b09a1__section_ads)
 
 
 
@@ -62,20 +63,30 @@ To enable time-dependency in a dimension or text entity, you must identify one c
 
 6.  Click *Deploy* to save and deploy your changes.
 
-When any analytical dataset that has an association pointing to the dimension is consumed in SAP Analytics Cloud, the names of dimension members are determined displayed based on the current date.
+When an analytic model containing a fact that has an association pointing to the dimension is consumed in SAP Analytics Cloud, the names of dimension members are determined displayed based on the current date.
 
 
 
-<a name="loio11b2ff4179a14c379bfdf7b7b85b09a1__section_analytic"/>
+<a name="loio11b2ff4179a14c379bfdf7b7b85b09a1__section_analytic_model"/>
 
-## Provide a Time-Dependent Parameter in your Analytical Dataset
+## Create a Reference Date Variable in Your Analytic Model
 
-Any analytical dataset pointing to your dimension via an association can, by default, benefit from its time-dependent data so that the dimension members and their names are displayed based on the current date.
+Any analytic model containing a fact pointing to your dimension via an association will, by default, benefit from its time-dependent data so that the dimension members and their names are displayed based on the current date.
 
-You can, optionally, add an input parameter to allow SAP Analytics Cloud users to enter a date of their choice and show dimension members based on that date.
+You can, optionally, create a reference date variable in your analytic model to allow SAP Analytics Cloud users to enter a date of their choice and show dimension members based on that date \(see [Add a Variable](add-a-variable-cdd8fa0.md)\).
+
+
+
+<a name="loio11b2ff4179a14c379bfdf7b7b85b09a1__section_ads"/>
+
+## Create a Time-Dependent Parameter in Your Analytical Dataset \(Deprecated\)
 
 > ### Note:  
-> Only analytical datasets that are directly consumed by SAP Analytics Cloud support this feature. Analytic models \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\) that consume analytical datasets with time-dependent parameters and are, in turn, consumed by SAP Analytics Cloud, can only display dimension members based on the current date.
+> The preferred way to expose data to SAP Analytics Cloud is now to identify your measures in a table or view with a semantic usage of *Fact* and then to use this fact in one or more analytic models, each of which can be consumed by one or more stories \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
+
+Any analytical dataset pointing to your dimension via an association will, by default, benefit from its time-dependent data so that the dimension members and their names are displayed based on the current date.
+
+You can, optionally, add an input parameter to your analytical dataset to allow SAP Analytics Cloud users to enter a date of their choice and show dimension members based on that date.
 
 1.  Create an input parameter \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\) with data type *Date*.
 2.  Edit the CSN code to add a semantic type to the input parameter:

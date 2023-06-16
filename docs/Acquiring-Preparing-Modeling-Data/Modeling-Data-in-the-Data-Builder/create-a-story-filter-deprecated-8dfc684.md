@@ -2,13 +2,16 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a Story Filter
+# Create a Story Filter \(Deprecated\)
 
 Add a story filter to a view column to prompt users to filter on it when they consume your view in SAP Analytics Cloud.
 
 
 
 ## Context
+
+> ### Note:  
+> Story filters are deprecated and are not supported by entities with a *Semantic Usage* of *Fact*. You should instead, create a filter variable in your analytic model to trigger the display of the *Set Variables* dialog in SAP Analytics Cloud \(see [Add a Variable](add-a-variable-cdd8fa0.md)\).
 
 Story filters that you add to your view will trigger the display of the *Set Variables* dialog when an SAP Analytics Cloud user creates a story with your view as a data source \(see [Setting Story Variables](https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/305dcf7053634875a408a9d9832c8b8f.html)\).
 
@@ -48,15 +51,15 @@ Story filters that you add to your view will trigger the display of the *Set Var
     </tr>
     <tr>
     <td valign="top">
-
-    Type
+    
+        Type
 
 
     
     </td>
     <td valign="top">
-
-    Select the type of value that you want to allow or require the user to filter on. You can choose from:
+    
+        Select the type of value that you want to allow or require the user to filter on. You can choose from:
 
     -   *Single* - The user should enter a single value to filter on. You can optionally specify a default value.
     -   *Range* -The user should enter *From* and *To* values to specify the range to filter on. You can optionally specify default values.
@@ -67,15 +70,15 @@ Story filters that you add to your view will trigger the display of the *Set Var
     </tr>
     <tr>
     <td valign="top">
-
-    Mandatory
+    
+        Mandatory
 
 
     
     </td>
     <td valign="top">
-
-    Requires the user to enter a value.
+    
+        Requires the user to enter a value.
 
 
     
@@ -83,15 +86,15 @@ Story filters that you add to your view will trigger the display of the *Set Var
     </tr>
     <tr>
     <td valign="top">
-
-    Multiple Entries
+    
+        Multiple Entries
 
 
     
     </td>
     <td valign="top">
-
-    Allows the user to enter more than one value \(or range of values\) to filter on.
+    
+        Allows the user to enter more than one value \(or range of values\) to filter on.
 
 
     

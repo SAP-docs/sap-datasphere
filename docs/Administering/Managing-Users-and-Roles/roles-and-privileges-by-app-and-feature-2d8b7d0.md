@@ -162,7 +162,7 @@ Start page
 
 Dimension editor
 
-Analytical dataset editor
+Fact editor
 
 Fact model editor
 
@@ -181,7 +181,7 @@ Each page or editor requires a separate permission:
 
 -   Start page: *Data Warehouse Business Builder* \(-R------\)
 -   Dimension editor: *Data Warehouse Business Entity* \(CRUD----\)
--   Analytical dataset editor: *Data Warehouse Business Entity* \(CRUD----\)
+-   Fact editor: *Data Warehouse Business Entity* \(CRUD----\)
 -   Fact model editor: *Data Warehouse Fact Model* \(CRUD----\)
 -   Consumption model editor: *Data Warehouse Consumption Model* \(CRUD----\)
 -   Authorization scenario editor: *Data Warehouse Authorization Scenario* \(CRUD----\)

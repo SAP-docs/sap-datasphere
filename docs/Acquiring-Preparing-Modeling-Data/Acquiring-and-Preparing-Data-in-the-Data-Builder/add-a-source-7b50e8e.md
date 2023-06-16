@@ -52,31 +52,15 @@ Add a source to read data from. You can add multiple sources and combine them to
     </tr>
     <tr>
     <td valign="top">
-
-    Label
+    
+        Label
 
 
     
     </td>
     <td valign="top">
-
-    Enter a label to display in the source symbol.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Business Name / Technical Name / Type / Connection
-
-
-    
-    </td>
-    <td valign="top">
-
-    \[read-only\] Provide information to identify the source.
+        Enter a label to display in the source symbol.
 
 
     
@@ -84,15 +68,31 @@ Add a source to read data from. You can add multiple sources and combine them to
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Business Name / Technical Name / Type / Connection
 
 
     
     </td>
     <td valign="top">
+    
+        \[read-only\] Provide information to identify the source.
 
-     \[read-only\] Displays the deployment and error status of the object. 
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Status
+
+
+    
+    </td>
+    <td valign="top">
+    
+         \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
@@ -102,15 +102,15 @@ Add a source to read data from. You can add multiple sources and combine them to
     </tr>
     <tr>
     <td valign="top">
-
-    Use As
+    
+        Use As
 
 
     
     </td>
     <td valign="top">
-
-    \[local tables\] Specifies whether the table is used as a *Source* or *Target* in the data flow.
+    
+        \[local tables\] Specifies whether the table is used as a *Source* or *Target* in the data flow.
 
     > ### Note:  
     > Changing the use of a table will reset all its properties.
@@ -208,31 +208,15 @@ Add a source to read data from. You can add multiple sources and combine them to
     </tr>
     <tr>
     <td valign="top">
-
-    Control Fetch Size
+    
+        Control Fetch Size
 
 
     
     </td>
     <td valign="top">
-
-    To enforce a specific value for Batch Size, toggle this switch.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Fetch Size \(Number of Rows\)
-
-
-    
-    </td>
-    <td valign="top">
-
-    Specifies the amount of data being read. It indicates the number of rows that will be committed to target on each batch.
+        To enforce a specific value for Batch Size, toggle this switch.
 
 
     
@@ -240,15 +224,15 @@ Add a source to read data from. You can add multiple sources and combine them to
     </tr>
     <tr>
     <td valign="top">
-
-    Batch Query
+    
+        Fetch Size \(Number of Rows\)
 
 
     
     </td>
     <td valign="top">
-
-    Fetches the data batch by batch according to the fetch size defined above. Use this option for very large odata source files.
+    
+        Specifies the amount of data being read. It indicates the number of rows that will be committed to target on each batch.
 
 
     
@@ -256,15 +240,31 @@ Add a source to read data from. You can add multiple sources and combine them to
     </tr>
     <tr>
     <td valign="top">
-
-    Fail Run on String Truncation
+    
+        Batch Query
 
 
     
     </td>
     <td valign="top">
+    
+        Fetches the data batch by batch according to the fetch size defined above. Use this option for very large odata source files.
 
-    Fails the data flow run if string truncation is detected while fetching the source columns. This property is available only for CSV, JSON, and Excel files.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Fail Run on String Truncation
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Fails the data flow run if string truncation is detected while fetching the source columns. This property is available only for CSV, JSON, and Excel files.
 
 
     

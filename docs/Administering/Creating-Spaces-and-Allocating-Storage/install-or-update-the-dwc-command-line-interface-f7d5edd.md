@@ -45,16 +45,16 @@ You have installed the following on your system:
 2.  Test if the installation was successful by running the following command:
 
     ```
-    dwc -v
+    dwc --version
     ```
 
 3.  Run the following command to download the file of available `dwc` commands:
 
     ```
-    dwc cache init -H "<server-url>"
+    dwc cache init --host "<url>"
     ```
 
-    Where *<server-url\>* is the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant.
+    Where *<url\>* is the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant.
 
     > ### Note:  
     > If new commands become available for `dwc`, you will be prompted to run this command again.

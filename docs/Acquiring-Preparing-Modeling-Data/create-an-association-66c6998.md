@@ -4,7 +4,7 @@
 
 # Create an Association
 
-Click the *Create* button in the *Associations* section of the side panel of your table or view to create an association to another data entity. You can create an association from any table or view to any other table or view at any level of the data layer, including to define the relationships between analytical datasets and dimensions among your consumable views.
+Click the *Create* button in the *Associations* section of the side panel of your table or view to create an association to another data entity. You can create an association from any table or view to any other table or view at any level of the data layer, including to define the relationships between facts and dimensions among your consumable views.
 
 
 
@@ -18,7 +18,7 @@ You can create associations in the:
 
 In this example:
 
--   The ***Sales Order*** table has a semantic usage of *Analytical Dataset* and has an association from its ***Product ID*** column to the ***Product ID*** key of the ***Products*** table, which is a *Dimension*.
+-   The ***Sales Order*** table has a semantic usage of *Fact* and has an association from its ***Product ID*** column to the ***Product ID*** key of the ***Products*** table, which is a *Dimension*.
 -   The ***Products*** *Dimension* has an association from its ***PRODCATEGORYID*** column to the ***PRODCATEGORYID*** key of the ***Product Categories*** table, which is also a *Dimension*.
 
 ![](images/Associations_Example_7966865.png)
@@ -37,10 +37,10 @@ In this example:
 
     The rules for creating associations depend on the *Semantic Usage* of the entity:
 
-    -   An *Analytical Dataset* can point to a:
+    -   A *Fact* can point to a:
 
-        -   *Dimension* - One attribute in the \(source\) *Analytical Dataset* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
-        -   *Text Entity* - An attribute in the \(source\) *Analytical Dataset* must be mapped to the \(target\) *Text Entity* identifier key column.
+        -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
+        -   *Text Entity* - An attribute in the \(source\) *Fact* must be mapped to the \(target\) *Text Entity* identifier key column.
 
     -   A *Dimension* can point to a:
 

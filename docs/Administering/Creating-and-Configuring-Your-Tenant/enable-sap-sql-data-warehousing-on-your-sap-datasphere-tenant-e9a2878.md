@@ -4,7 +4,7 @@
 
 # Enable SAP SQL Data Warehousing on Your SAP Datasphere Tenant
 
-You can enable SAP SQL Data Warehousing on your SAP Datasphere tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement.
+Use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in your SAP Datasphere run-time database and then exchange data between your HDI containers and your SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.
 
 
 
@@ -15,25 +15,7 @@ To enable SAP SQL Data Warehousing on your SAP Datasphere tenant, an S-user must
 > ### Note:  
 > The SAP Datasphere tenant and SAP Business Technology Platform organization and space must be in the same data centre \(for example, eu10, us10\).
 
-This integrated SAP SQL data warehousing approach allows you to add HDI containers to your space and exchange data between them:
-
--   Use calculation views and other SAP Business Application Studio objects as sources for your SAP Datasphere views and data flows \(see [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:\).
-
-    ![HDI Container Objects are Sources for Space](images/HDI_as_Source_201d2a8.png)
-
--   Use SAP Datasphere views that are exposed for consumption as sources for your SAP Business Application Studio calculation views and flowgraphs \(see [Access Space Objects in Your HDI Container](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/656eebc2ced14ec09afa455224fa9a98.html "To access SAP Datasphere views that are exposed for consumption as sources for your calculation views and flowgraphs, you must create a database user with appropriate privileges, create a user-provided service in SAP BTP Cockpit, and configure your HDI project.") :arrow_upper_right:\).
-
-    ![HDI Container Reads View Exposed for Consumption](images/HDI_Read_Exposed_View_f8edd97.png)
-
--   Use SAP Business Application Studio tables as targets for your SAP Datasphere data flows \(see [Allow Your Space to Write to Your HDI Container](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aa3627f987d04b5f95fec1c45083dde9.html "To allow data flows in your SAP Datasphere space to use tables in your HDI container as targets, you must set the appropriate roles and add the container to your space.") :arrow_upper_right:\).
-
-    ![Space Data Flow Writes to HDI Container Table](images/HDI_Write_from_Space_ccf514b.png)
-
-
-> ### Note:  
-> See the blog [SAP BTP Showcase – Access the SAP HANA Cloud Database Underneath SAP Datasphere](https://blogs.sap.com/2021/01/31/sap-btp-showcase-access-the-sap-hana-cloud-database-underneath-sap-data-warehouse-cloud/) \(published in January 2021\) for an overview of the Integrated SAP SQL Warehousing approach.
-> 
-> See the blog [SAP Datasphere – Hybrid Access to SAP HANA for SQL Data Warehousing](https://blogs.sap.com/2020/06/19/sap-data-warehouse-cloud-hybrid-access-to-sap-hana-for-sql-data-warehousing/) \(published in June 2021\) for information about accessing your HDI objects on another server through a standard SAP HANA connection.
+For information about using this feature, see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1aec7ca95af24208a61c1a444b249d95.html "Use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in your SAP Datasphere run-time database and then exchange data between your HDI containers and your SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:.
 
 
 
@@ -67,15 +49,15 @@ This integrated SAP SQL data warehousing approach allows you to add HDI containe
     </tr>
     <tr>
     <td valign="top">
-
-    SAP Datasphere Tenant ID
+    
+        SAP Datasphere Tenant ID
 
 
     
     </td>
     <td valign="top">
-
-    In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> **<span class="FPA-icons"></span> \(*About*\).
+    
+        In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> **<span class="FPA-icons"></span> \(*About*\).
 
     > ### Note:  
     > You need the *Tenant ID* for the ticket, and the *Database ID* when building your containers in the SAP Datasphere run-time database.
@@ -86,15 +68,15 @@ This integrated SAP SQL data warehousing approach allows you to add HDI containe
     </tr>
     <tr>
     <td valign="top">
-
-     SAP Business Technology Platform Org GUID
+    
+         SAP Business Technology Platform Org GUID
 
 
     
     </td>
     <td valign="top">
-
-    Your SAP Business Technology Platform organization ID.
+    
+        Your SAP Business Technology Platform organization ID.
 
     You can use the Cloud Foundry CLI to find your organization GUID \(see [https://cli.cloudfoundry.org/en-US/v6/org.html](https://cli.cloudfoundry.org/en-US/v6/org.html)\).
 
@@ -104,15 +86,15 @@ This integrated SAP SQL data warehousing approach allows you to add HDI containe
     </tr>
     <tr>
     <td valign="top">
-
-     SAP Business Technology Platform Space GUID
+    
+         SAP Business Technology Platform Space GUID
 
 
     
     </td>
     <td valign="top">
-
-    The SAP Business Technology Platform space inside the organization.
+    
+        The SAP Business Technology Platform space inside the organization.
 
     You can use the Cloud Foundry CLI to find your space GUID \(see [https://cli.cloudfoundry.org/en-US/v6/space.html](https://cli.cloudfoundry.org/en-US/v6/space.html)\).
 

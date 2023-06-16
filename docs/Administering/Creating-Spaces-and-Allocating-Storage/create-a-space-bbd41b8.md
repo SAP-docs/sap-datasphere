@@ -41,15 +41,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Space Name
+    
+        Space Name
 
 
     
     </td>
     <td valign="top">
-
-    Enter the business name of the space. Can contain a maximum of 30 characters, and can contain spaces and special characters.
+    
+        Enter the business name of the space. Can contain a maximum of 30 characters, and can contain spaces and special characters.
 
 
     
@@ -57,15 +57,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Space ID
+    
+        Space ID
 
 
     
     </td>
     <td valign="top">
-
-    Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).
+    
+        Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).
 
 
     
@@ -97,31 +97,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Space ID
+    
+        Space ID
 
 
     
     </td>
     <td valign="top">
-
-    Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Space Name
-
-
-    
-    </td>
-    <td valign="top">
-
-    Enter the business name of the space. Can contain a maximum of 30 characters, and can contain spaces and special characters.
+        Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).
 
 
     
@@ -129,31 +113,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Space Status
+    
+        Space Name
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the status of the space. Newly-created spaces are always active.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Space Type
-
-
-    
-    </td>
-    <td valign="top">
-
-    \[read-only\] Displays the type of the space. You can only create spaces of type SAP Datasphere.
+        Enter the business name of the space. Can contain a maximum of 30 characters, and can contain spaces and special characters.
 
 
     
@@ -161,31 +129,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Created By
+    
+        Space Status
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the user that created the space.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Created On
-
-
-    
-    </td>
-    <td valign="top">
-
-    \[read-only\] Displays the date and time when the space was created.
+        \[read-only\] Displays the status of the space. Newly-created spaces are always active.
 
 
     
@@ -193,15 +145,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Deployment Status
+    
+        Space Type
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the deployment status of the space. Newly-created spaces are deployed, but when you make changes, you need to save and re-deploy them before they are available to space members.
+    
+        \[read-only\] Displays the type of the space. You can only create spaces of type SAP Datasphere.
 
 
     
@@ -209,15 +161,63 @@ Create a space, allocate storage, and assign one or more members to allow them t
     </tr>
     <tr>
     <td valign="top">
-
-    Deployed On
+    
+        Created By
 
 
     
     </td>
     <td valign="top">
+    
+        \[read-only\] Displays the user that created the space.
 
-    \[read-only\] Displays the date and time when the space was last deployed.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Created On
+
+
+    
+    </td>
+    <td valign="top">
+    
+        \[read-only\] Displays the date and time when the space was created.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Deployment Status
+
+
+    
+    </td>
+    <td valign="top">
+    
+        \[read-only\] Displays the deployment status of the space. Newly-created spaces are deployed, but when you make changes, you need to save and re-deploy them before they are available to space members.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Deployed On
+
+
+    
+    </td>
+    <td valign="top">
+    
+        \[read-only\] Displays the date and time when the space was last deployed.
 
 
     
@@ -268,15 +268,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
         </tr>
         <tr>
         <td valign="top">
-
-        Expose for Consumption by Default
+        
+                Expose for Consumption by Default
 
 
         
         </td>
         <td valign="top">
-
-        Choose the default setting for the *Expose for Consumption* property for views created in this space.
+        
+                Choose the default setting for the *Expose for Consumption* property for views created in this space.
 
 
         
@@ -285,7 +285,7 @@ Create a space, allocate storage, and assign one or more members to allow them t
         </table>
         
     -   *Data Access*/*Database Users* - Use the list in the *Database Users* section to create users who can connect external tools and read from and write to the space. See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator or DW Integrator role (space administrators and integrators) can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:.
-    -   *Data Access*/*HDI Containers* - Use the list in the *HDI Containers* section to associate HDI containers to the space. See [Prepare Your Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:.
+    -   *Data Access*/*HDI Containers* - Use the list in the *HDI Containers* section to associate HDI containers to the space. See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:.
     -   *Connections* - Follow the link in the *Connections* section to create connections to source systems in the space. See [Create a Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c2165842082c43fc85bad9f0c97572bb.html "Create a connection to allow the members of the space to use the connected source for data modeling and data access in SAP Datasphere.") :arrow_upper_right:.
     -   *Time Data*/*Time Tables and Dimensions* - Click the button in the *Time Tables and Dimensions* section to generate time data in the space. See [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:.
     -   *Auditing*/*Space Audit Settings* - Use the properties in the *Space Audit Settings* section to enable audit logging for the space. See [Enable or Disable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:.

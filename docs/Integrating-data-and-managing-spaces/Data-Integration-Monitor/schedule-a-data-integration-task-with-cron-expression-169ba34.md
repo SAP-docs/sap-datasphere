@@ -69,31 +69,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    **Remote table**
+    
+        **Remote table**
 
 
     
     </td>
     <td valign="top">
-
-    Select *Schedule Replication* \> *Create Snapshot Schedule*.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **View Persistency**
-
-
-    
-    </td>
-    <td valign="top">
-
-    Select *Schedule* \> *Create Schedule*.
+        Select *Schedule Replication* \> *Create Snapshot Schedule*.
 
 
     
@@ -101,15 +85,31 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    **Data flow**
+    
+        **View Persistency**
 
 
     
     </td>
     <td valign="top">
+    
+        Select *Schedule* \> *Create Schedule*.
 
-    Select :clock3: *Schedule* \> *Create Schedule*.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        **Data flow**
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Select :clock3: *Schedule* \> *Create Schedule*.
 
     > ### Note:  
     > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.
@@ -155,15 +155,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    x
+    
+        x
 
 
     
     </td>
     <td valign="top">
-
-    Where x is any number in the following range:
+    
+        Where x is any number in the following range:
 
     -   *Minute* – 0-59
 
@@ -182,15 +182,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    x,y
+    
+        x,y
 
 
     
     </td>
     <td valign="top">
-
-    Where x and y are two or more values of a list separated by a comma.
+    
+        Where x and y are two or more values of a list separated by a comma.
 
     Example: 4,5,6 in the *Month* field is equivalent to "April, May and June".
 
@@ -202,15 +202,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    x-y
+    
+        x-y
 
 
     
     </td>
     <td valign="top">
-
-    Where x and y are the first and last values of a range separated by a dash.
+    
+        Where x and y are the first and last values of a range separated by a dash.
 
     Example: 1-5 in the *Day \(Week\)* field is equivalent to "from Monday to Friday".
 
@@ -222,15 +222,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    \*/x
+    
+        \*/x
 
 
     
     </td>
     <td valign="top">
-
-    Where \* is all possible values and x is the step value, separated by a slash.
+    
+        Where \* is all possible values and x is the step value, separated by a slash.
 
     Example: \*/3 in the *Hour* field is equivalent to 0,3,6,9,12,15,18,21. The asterisk \(\*\) specifies "every hour" but the /3 means "every 3 hours".
 
@@ -242,15 +242,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    a-b/x
+    
+        a-b/x
 
 
     
     </td>
     <td valign="top">
-
-    Where a and b are the first and last values of a range and where x is the step value.
+    
+        Where a and b are the first and last values of a range and where x is the step value.
 
     Example: 1-15/2 in the *Day \(Month\)* field is equivalent to 1,3,5,7,9,11,13,15. 1-15 specifies "from day 1 to day 15" of the month but /2 means "every 2 days".
 
@@ -262,15 +262,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    \*
+    
+        \*
 
 
     
     </td>
     <td valign="top">
-
-    Where the asterisk is all possible values for the field.
+    
+        Where the asterisk is all possible values for the field.
 
     Example: an asterisk in the *Hour* field is equivalent to "every hour."
 
@@ -304,31 +304,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    0 0 1-3 \* \*
+    
+        0 0 1-3 \* \*
 
 
     
     </td>
     <td valign="top">
-
-    The task runs the first 3 days of each month at 00:00 \(UTC\).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    0 18 1,15,25 \* \*
-
-
-    
-    </td>
-    <td valign="top">
-
-    The task runs every 1st, 15th and 25th of each month at 6:00 PM \(UTC\).
+        The task runs the first 3 days of each month at 00:00 \(UTC\).
 
 
     
@@ -336,15 +320,15 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    0 8 \*/1 \* 1-5
+    
+        0 18 1,15,25 \* \*
 
 
     
     </td>
     <td valign="top">
-
-    The task runs from Monday to Friday at 8:00 AM \(UTC\).
+    
+        The task runs every 1st, 15th and 25th of each month at 6:00 PM \(UTC\).
 
 
     
@@ -352,15 +336,31 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </tr>
     <tr>
     <td valign="top">
-
-    0 2-8/2 \*/1 \* 1-5
+    
+        0 8 \*/1 \* 1-5
 
 
     
     </td>
     <td valign="top">
+    
+        The task runs from Monday to Friday at 8:00 AM \(UTC\).
 
-    The task runs every 2 hours between 2:00 AM \(UTC\) and 8:00 AM \(UTC\), from Monday to Friday.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        0 2-8/2 \*/1 \* 1-5
+
+
+    
+    </td>
+    <td valign="top">
+    
+        The task runs every 2 hours between 2:00 AM \(UTC\) and 8:00 AM \(UTC\), from Monday to Friday.
 
 
     

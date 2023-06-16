@@ -20,12 +20,20 @@ Add a *Filter* node to filter your data with an SQL expression.
 
 3.  Enter a SQL expression into the *Expression* field. You can use the following items in your SQL expression:
 
-    -   *Insert Values* - Click to open the *Insert Value* dialog:
+    -   *Insert Values* - Click to open the *Insert Value* dialog, select the values you need to insert in the list, and click *Insert Value*.
 
         > ### Note:  
-        > -   The button is enabled when, in the *Expression* field, a column name is followed by the operator `=`, `>`, `<`, `!=`, `IN`, `BETWEEN`, or `LIKE`. Values from the selected column are listed in the *Insert Value* dialog.
+        > -   The button is enabled when, in the *Expression* field, a column name is followed by the operator `=`, `>`, `<`, `>=`, `<=`, `!=`, `IN`, `BETWEEN`, or `LIKE`.
         > 
-        > -   You can insert values of the data types string, interger, boolean, date, and time. The data types binary and UUID aren't supported.
+        > -   The values listed in the dialog are retrieved from columns of tables, remote tables, views and intermediate nodes used by the view. You can insert values of the data types string, integer, boolean, date, and time. The data types binary and UUID aren't supported.
+        > -   Once your expression is valid, additional values cannot be inserted. You must edit your expression to make it incomplete; this enables the *Insert Values* button and allows you to insert other values.
+        > -   The *Insert Values* dialog doesn't format the expression. Manual formatting may be required after inserting values.
+        > 
+        > > ### Example:  
+        > > -   The expression `Column1 =`enables the *Insert Values* dialog. You can select a single value from the list.
+        > > 
+        > > -   The expression `Column2 BETWEEN` enables the *Insert Values* dialog. You can select two values from the list. If both values are available in a single search result, both of them can be selected together. However, if the values needs to be selected from two different search results, you have to select and insert one value at once.
+        > > -   The expression `Column3 IN` enables the *Insert Values* dialog. You can select multiple values from the list. If all the required values are available in a single search results, those values can be selected together. However, if the values have to be selected from different search results, you have to select and insert one value at once. You select and insert the values 2, 5, 6, and 9. The expression `Column3 IN (2, 5, 6, 9)` is valid. You want to add another value to it, so you click *Insert Values*. In the *Insert Values* dialog, you can only see the values 2, 5, 6, and 9 because the dialog is already filtered by the selected values. To see all available values, edit your expression to make it invalid: `Column3 IN (2, 5, 6, 9,`. The *Insert Values* button is available again and you can add new values.
 
         Select available value\(s\) and click *Insert* to add them to your expression.
 

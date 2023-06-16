@@ -874,5 +874,5 @@ No data type conversion possible
 </table>
 
 > ### Note:  
-> Columns with data types `hana.ST_POINT[(<srid>)]` and `hana.ST_GEOMETRY[(<srid>)]` cannot be consumed directly in SAP Analytics Cloud in a view with a semantic usage of *Analytical Dataset*. To use these geo-coordinates columns in SAP Analytics Cloud, add them to a view with a semantic usage of *Dimension*, and then create an association from your *Analytical Dataset* to the *Dimension*.
+> Columns with data types `hana.ST_POINT[(<srid>)]` and `hana.ST_GEOMETRY[(<srid>)]` cannot be consumed directly in SAP Analytics Cloud in a view with a semantic usage of *Fact*. To use these geo-coordinates columns in SAP Analytics Cloud, add them to a view with a semantic usage of *Dimension*, and then create an association from your *Fact* to the *Dimension*.
 

@@ -34,15 +34,15 @@ By default, table data is stored on disk. You can improve performance by enablin
     </tr>
     <tr>
     <td valign="top">
-
-    In-Memory Storage
+    
+        In-Memory Storage
 
 
     
     </td>
     <td valign="top">
-
-    Enable this option to store the table data directly in memory \(hot store\). By default, table data is stored on disk \(warm store\).
+    
+        Enable this option to store the table data directly in memory \(hot store\). By default, table data is stored on disk \(warm store\).
 
 
     

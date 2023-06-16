@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a Database Analysis User to Investigate Database Issues
+# Create a Database Analysis User to Debug Database Issues
 
 A database analysis user is an SAP HANA Cloud database user with wide-ranging privileges. It can be used to support monitoring, analyzing, tracing, and debugging of your SAP Datasphere run-time database.
 
@@ -45,31 +45,15 @@ A user with the *DW Administrator* role can create a database analysis user.
     </tr>
     <tr>
     <td valign="top">
-
-    Database Analysis User Name Suffix
+    
+        Database Analysis User Name Suffix
 
 
     
     </td>
     <td valign="top">
-
-    Enter the suffix, which is used to create the full name of the user. Can contain a maximum of 31 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). See [Rules for Technical Names](../Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Enable Space Schema Access
-
-
-    
-    </td>
-    <td valign="top">
-
-    Select only if you need to grant the user access to space data.
+        Enter the suffix, which is used to create the full name of the user. Can contain a maximum of 31 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). See [Rules for Technical Names](../Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
 
 
     
@@ -77,15 +61,31 @@ A user with the *DW Administrator* role can create a database analysis user.
     </tr>
     <tr>
     <td valign="top">
-
-    Database analysis user expires in
+    
+        Enable Space Schema Access
 
 
     
     </td>
     <td valign="top">
+    
+        Select only if you need to grant the user access to space data.
 
-    Select the number of days after which the user will be deactivated. We strongly recommend creating this user with an automatic expiration date.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Database analysis user expires in
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Select the number of days after which the user will be deactivated. We strongly recommend creating this user with an automatic expiration date.
 
 
     
@@ -106,6 +106,8 @@ A user with the *DW Administrator* role can create a database analysis user.
     -   *Open Database Explorer* - Open an SQL Console for the SAP Datasphere run-time database. 
 
         For more information, see [Getting Started With the SAP HANA Database Explorer](https://help.sap.com/docs/SAP_HANA_COCKPIT/e8d0ddfb84094942a9f90288cd6c05d3/7fa981c8f1b44196b243faeb4afb5793.html)\).
+
+        A database analysis user can run a procedure in Database Explorer to stop running statements. For more information, see [Stop a Running Statement](stop-a-running-statement-0cf11ed.md).
 
 
     > ### Note:  

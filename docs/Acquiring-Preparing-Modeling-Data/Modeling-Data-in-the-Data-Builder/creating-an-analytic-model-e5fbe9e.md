@@ -10,13 +10,13 @@ Create an analytic model as a basis for consumption in SAP Analytics Cloud.
 
 Analytic models are the analytical foundation for making data ready for consumption in SAP Analytics Cloud. They allow you to create and define multi-dimensional models to provide data for analytical purposes to answer different business questions. Pre-defined measures, hierarchies, filters, parameters, and associations provide flexible and simple navigation through the underlying data.
 
-The sources for analytic models are analytical datasets, which can contain dimensions, texts, and hierarchies.
+The sources for analytic models are facts \(or analytical datasets\), which can contain dimensions, texts, and hierarchies.
 
 > ### Note:  
 > Some terms and concepts are used differently in analytic models to align more closely with the terminology in SAP Analytics Cloud stories:
 > 
-> -   "Input parameters” in analytical datasets are called “variables” in analytic models.
-> -   "Attributes” in analytical datasets are called “dimensions” in analytic models.
+> -   "Input parameters” in facts are called “variables” in analytic models.
+> -   "Attributes” in facts are called “dimensions” in analytic models.
 
 This graphic shows the role of the analytic model within SAP Datasphere:
 
@@ -67,4 +67,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
 8.  You can choose *Preview* to check if the data looks like expected. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
 
-9.  
+    > ### Note:  
+    > When you change an analytic model for which a story has been defined, and you deploy it again, you need to open the story in SAP Analytics Cloud and save it again.
+
+

@@ -47,15 +47,15 @@ Availability of snapshot replication depends on the connection type. For more in
     </tr>
     <tr>
     <td valign="top">
-
-    **Directly start the replication**
+    
+        **Directly start the replication**
 
 
     
     </td>
     <td valign="top">
-
-    Select *Table Replication* \> *Load New Snapshot*.
+    
+        Select *Table Replication* \> *Load New Snapshot*.
 
 
     
@@ -63,15 +63,15 @@ Availability of snapshot replication depends on the connection type. For more in
     </tr>
     <tr>
     <td valign="top">
-
-    **Schedule the replication**
+    
+        **Schedule the replication**
 
 
     
     </td>
     <td valign="top">
-
-    Select *Schedule Replication* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    
+        Select *Schedule Replication* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
 
 
     

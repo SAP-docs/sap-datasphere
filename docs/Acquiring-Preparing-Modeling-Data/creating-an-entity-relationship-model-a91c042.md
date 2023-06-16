@@ -55,31 +55,15 @@ The work that you do in an E/R model benefits all the users in your space as the
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="FPA-icons"></span> \(Add Column\) 
+    
+         <span class="FPA-icons"></span> \(Add Column\) 
 
 
     
     </td>
     <td valign="top">
-
-    Add a column to the selected table.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     <span class="FPA-icons"></span> \(Create View from Selection\)
-
-
-    
-    </td>
-    <td valign="top">
-
-    Create a view from the selected entity \(see [Create a View in an E/R Model](create-a-view-in-an-e-r-model-9e547d1.md)\).
+        Add a column to the selected table.
 
 
     
@@ -87,31 +71,15 @@ The work that you do in an E/R model benefits all the users in your space as the
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="FPA-icons"></span> \(Create Table\)
+    
+         <span class="FPA-icons"></span> \(Create View from Selection\)
 
 
     
     </td>
     <td valign="top">
-
-    Create a table along with an association pointing from the selected entity to the new table \(see [Create a Table in an E/R Model](create-a-table-in-an-e-r-model-3939414.md)\).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     :arrow_right:
-
-
-    
-    </td>
-    <td valign="top">
-
-    Create an association from the selected entity to another entity \(see [Create an Association in an E/R Model Diagram](create-an-association-in-an-e-r-model-diagram-82e6869.md)\).
+        Create a view from the selected entity \(see [Create a View in an E/R Model](create-a-view-in-an-e-r-model-9e547d1.md)\).
 
 
     
@@ -119,31 +87,15 @@ The work that you do in an E/R model benefits all the users in your space as the
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="FPA-icons"></span> \(Add Related Entities\)
+    
+         <span class="FPA-icons"></span> \(Create Table\)
 
 
     
     </td>
     <td valign="top">
-
-    Add entities that are related \(by association\) to the selected entity \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     <span class="FPA-icons"></span> \(Preview Data\)
-
-
-    
-    </td>
-    <td valign="top">
-
-    Preview the data for the selected entity \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+        Create a table along with an association pointing from the selected entity to the new table \(see [Create a Table in an E/R Model](create-a-table-in-an-e-r-model-3939414.md)\).
 
 
     
@@ -151,15 +103,63 @@ The work that you do in an E/R model benefits all the users in your space as the
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    
+         :arrow_right:
 
 
     
     </td>
     <td valign="top">
+    
+        Create an association from the selected entity to another entity \(see [Create an Association in an E/R Model Diagram](create-an-association-in-an-e-r-model-diagram-82e6869.md)\).
 
-    Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         <span class="FPA-icons"></span> \(Add Related Entities\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Add entities that are related \(by association\) to the selected entity \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         <span class="FPA-icons"></span> \(Preview Data\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Preview the data for the selected entity \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
 
     \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md).\)
 
@@ -169,15 +169,15 @@ The work that you do in an E/R model benefits all the users in your space as the
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\)
+    
+        <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\)
 
 
     
     </td>
     <td valign="top">
-
-    \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. 
+    
+        \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. 
 
 
     
@@ -185,15 +185,15 @@ The work that you do in an E/R model benefits all the users in your space as the
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="SAP-icons"></span> \(Open in New Tab\)
+    
+         <span class="SAP-icons"></span> \(Open in New Tab\)
 
 
     
     </td>
     <td valign="top">
-
-    Open the selected entity in its own editor in a new tab.
+    
+        Open the selected entity in its own editor in a new tab.
 
 
     

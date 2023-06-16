@@ -49,15 +49,15 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </tr>
     <tr>
     <td valign="top">
-
-     Business Name 
+    
+         Business Name 
 
 
     
     </td>
     <td valign="top">
-
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    
+        Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -65,15 +65,15 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </tr>
     <tr>
     <td valign="top">
-
-     Technical Name 
+    
+         Technical Name 
 
 
     
     </td>
     <td valign="top">
-
-    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -86,23 +86,24 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </tr>
     <tr>
     <td valign="top">
-
-    Semantic Usage
+    
+        Semantic Usage
 
 
     
     </td>
     <td valign="top">
-
-     Select the way your entity should be used. 
+    
+         Select the way your entity should be used. 
 
     Choose from the following:
 
-    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating an Analytical Dataset](../Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Fact* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating a Fact](../Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Contains attributes containing master data like a product list or store directory, and supporting hierarchies \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - \[default\] Contains columns with no specific analytical purpose.
+    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 
     
@@ -110,15 +111,15 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </tr>
     <tr>
     <td valign="top">
-
-    Source Object \(Open SQL Schema/HDI Container\)
+    
+        Source Object \(Open SQL Schema/HDI Container\)
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
+    
+        \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
 
 
     
@@ -126,15 +127,15 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-     \[read-only\] Displays the deployment and error status of the object. 
+    
+         \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
@@ -146,7 +147,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
 3.  Based on the *Semantic Usage* of your entity, review and modify its *Columns*, *Attributes*, and/or *Measures*:
 
-    -   *Analytical Dataset* - Review the lists of measures and attributes \(see [Creating an Analytical Dataset](../Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Fact* - Review the lists of measures and attributes \(see [Creating a Fact](../Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Review the list of attributes \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Define the parent and child columns \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).

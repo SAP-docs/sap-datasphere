@@ -39,7 +39,11 @@ To log in, enter one of the following commands and press [Return\]:
 -   To pass the OAuth client information as options, enter:
 
     ```
-    dwc login -c "<client-id>" -C "<client-secret>" -A "<authorization-url>" -t "<token-url>"
+    dwc login 
+        --client-id "<id>" 
+        --client-secret "<secret>" 
+        --authorization-url "<url>" 
+        --token-url "<url>"
     ```
 
     > ### Note:  
@@ -48,7 +52,8 @@ To log in, enter one of the following commands and press [Return\]:
 -   To pass the OAuth client information in a secrets file, enter:
 
     ```
-    dwc login -s <secrets-file>.json
+    dwc login 
+        --secrets-file <file>.json
     ```
 
     Your secrets file must contain the OAuth client information and can optionally include the the following options:
@@ -73,8 +78,8 @@ To log in, enter one of the following commands and press [Return\]:
     </tr>
     <tr>
     <td valign="top">
-
-    ```
+    
+        ```
     {
         "client_id": "<client-id>",
         "client_secret": "<client-secret>",
@@ -87,8 +92,8 @@ To log in, enter one of the following commands and press [Return\]:
     
     </td>
     <td valign="top">
-
-    ```
+    
+        ```
     {
         "client_id": "<client-id>",
         "client_secret": "<client-secret>",
@@ -105,15 +110,15 @@ To log in, enter one of the following commands and press [Return\]:
     </tr>
     <tr>
     <td valign="top">
-
-    You are directed to log in with your SAP Datasphere username and password in a browser window once at the beginning of each OAuth session to determine your space permissions.
+    
+        You are directed to log in with your SAP Datasphere username and password in a browser window once at the beginning of each OAuth session to determine your space permissions.
 
 
     
     </td>
     <td valign="top">
-
-    You extract your OAuth access and refresh tokens,which are valid for 720 hours/30 days, and can run commands directly without any login during this period.
+    
+        You extract your OAuth access and refresh tokens,which are valid for 720 hours/30 days, and can run commands directly without any login during this period.
 
 
     
@@ -136,7 +141,14 @@ For more information about these commands and how to extract your tokens, see [L
 To list the spaces available to you on the tenant, enter the following command and press [Return\]:
 
 ```
-dwc spaces list -H "<server-url>" [-P] [-o <output-file>.json] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc spaces list 
+    [--host "<url>"] 
+    [--pretty] 
+    [--output <file>.json] 
+    [--verbose] 
+    [--options-file <file>.json] 
+    [--secrets-file <file>.json] 
+    [--passcode <code>]
 ```
 
 Complete the parameters as follows:
@@ -162,16 +174,14 @@ Description
 <tr>
 <td valign="top">
 
-<code>-H "<i class="varname">&lt;server-url&gt;</i>"</code>
+<code>--host "<i class="varname">&lt;url&gt;</i>"</code>
 
 
 
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant.
-
-Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -180,7 +190,7 @@ Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
 <tr>
 <td valign="top">
 
-`-P`
+`--pretty`
 
 
 
@@ -189,8 +199,6 @@ Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
 
 \[optional\] Pretty-print the output.
 
-Alternative: `--pretty`
-
 
 
 </td>
@@ -198,7 +206,7 @@ Alternative: `--pretty`
 <tr>
 <td valign="top">
 
-<code>-o <i class="varname">&lt;output-file&gt;</i>.json</code>
+<code>--output <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -209,8 +217,6 @@ Alternative: `--pretty`
 
 If you do not include this option, the output will be printed to the command line.
 
-Alternative: <code>--output <i class="varname">&lt;output-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -218,7 +224,7 @@ Alternative: <code>--output <i class="varname">&lt;output-file&gt;</i>.json</cod
 <tr>
 <td valign="top">
 
-`-V`
+`--verbose`
 
 
 
@@ -227,8 +233,6 @@ Alternative: <code>--output <i class="varname">&lt;output-file&gt;</i>.json</cod
 
 \[optional\] Print detailed log information to the console.
 
-Alternative: `--verbose`
-
 
 
 </td>
@@ -236,7 +240,7 @@ Alternative: `--verbose`
 <tr>
 <td valign="top">
 
-<code>-O <i class="varname">&lt;options-file&gt;</i>.json</code>
+<code>--options-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -254,8 +258,6 @@ A typical option file for a `list` command has the following syntax:
   }
 ```
 
-Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -263,7 +265,7 @@ Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.js
 <tr>
 <td valign="top">
 
-<code>-s <i class="varname">&lt;secrets-file&gt;</i>.json</code>
+<code>--secrets-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -288,8 +290,6 @@ Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.js
 
 Passing this file with the tokens allows you to run any command without having first to log in.
 
-Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -297,7 +297,7 @@ Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.js
 <tr>
 <td valign="top">
 
-<code>-p <i class="varname">&lt;passcode&gt;</i></code>
+<code>--passcode <i class="varname">&lt;code&gt;</i></code>
 
 
 
@@ -306,7 +306,7 @@ Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.js
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `-p` parameter. If you do not include the `-p` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
 
 1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
@@ -314,8 +314,6 @@ You can include a passcode with your command using the `-p` parameter. If you do
 
 > ### Note:  
 > If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
-
-Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 
 
 
@@ -332,7 +330,17 @@ Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 To export tables, views, and data access controls from your space to a `.json` file enter the following command with the `-D` option and press [Return\]:
 
 ```
-dwc spaces read -S <space-id> -H "<server-url>" [-P] [-D [<obj1>,<obj2>]] [-n] [-o <output-file>.json] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc spaces read 
+    --space <id> 
+    [--host "<url>"] 
+    [--pretty] 
+    [--definitions [<obj1>,<obj2>]] 
+    [--no-space-definition] 
+    [--output <file>.json] 
+    [--verbose] 
+    [--options-file <file>.json] 
+    [--secrets-file <file>.json] 
+    [--passcode <code>]
 ```
 
 Complete the parameters as follows:
@@ -358,7 +366,7 @@ Description
 <tr>
 <td valign="top">
 
-<code>-S <i class="varname">&lt;space-id&gt;</i></code>
+<code>--space <i class="varname">&lt;id&gt;</i></code>
 
 
 
@@ -367,7 +375,21 @@ Description
 
 Enter the *Space ID* of the space.
 
-Alternative: <code>--space <i class="varname">&lt;space-id&gt;</i></code>
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<code>--host "<i class="varname">&lt;url&gt;</i>"</code>
+
+
+
+</td>
+<td valign="top">
+
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -376,25 +398,7 @@ Alternative: <code>--space <i class="varname">&lt;space-id&gt;</i></code>
 <tr>
 <td valign="top">
 
-<code>-H "<i class="varname">&lt;server-url&gt;</i>"</code>
-
-
-
-</td>
-<td valign="top">
-
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant.
-
-Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`-P`
+`--pretty`
 
 
 
@@ -403,8 +407,6 @@ Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
 
 \[optional\] Pretty-print the output.
 
-Alternative: `--pretty`
-
 
 
 </td>
@@ -412,14 +414,14 @@ Alternative: `--pretty`
 <tr>
 <td valign="top">
 
-<code>-D [<i class="varname">&lt;obj1&gt;</i>,<i class="varname">&lt;obj2&gt;</i>]</code>
+<code>--definitions [<i class="varname">&lt;obj1&gt;</i>,<i class="varname">&lt;obj2&gt;</i>]</code>
 
 
 
 </td>
 <td valign="top">
 
-\[optional\] Read the object definitions contained in the space. You can use the `-D` parameter by itself to read all the objects, or specify a comma-separated list of object technical names.
+\[optional\] Read the object definitions contained in the space. You can use the `--definitions` parameter by itself to read all the objects, or specify a comma-separated list of object technical names.
 
 Object definitions are read using the standard CSN syntax \(see [Core Data Services Schema Notation \(CSN\)](https://cap.cloud.sap/docs/cds/csn#entity-definitions)\). The following objects can be read \(exported\):
 
@@ -438,7 +440,21 @@ Object definitions are read using the standard CSN syntax \(see [Core Data Servi
 > -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
-Alternative: <code>--definitions [<i class="varname">&lt;obj1&gt;</i>,<i class="varname">&lt;obj2&gt;</i>]]</code>
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`--no-space-definition`
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Suppress the display of the `spaceDefinition` property. When used with the `--definitions` option, this allows you to read object definitions without seeing the other properties of the space.
 
 
 
@@ -447,25 +463,7 @@ Alternative: <code>--definitions [<i class="varname">&lt;obj1&gt;</i>,<i class="
 <tr>
 <td valign="top">
 
-`-n`
-
-
-
-</td>
-<td valign="top">
-
-\[optional\] Suppress the display of the `spaceDefinition` property. When used with the `-D` option, this allows you to read object definitions without seeing the other properties of the space.
-
-Alternative: `--no-space-definition`
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<code>-o <i class="varname">&lt;output-file&gt;</i>.json</code>
+<code>--output <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -476,8 +474,6 @@ Alternative: `--no-space-definition`
 
 If you do not include this option, the output will be printed to the command line.
 
-Alternative: <code>--output <i class="varname">&lt;output-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -485,7 +481,7 @@ Alternative: <code>--output <i class="varname">&lt;output-file&gt;</i>.json</cod
 <tr>
 <td valign="top">
 
-`-V`
+`--verbose`
 
 
 
@@ -494,8 +490,6 @@ Alternative: <code>--output <i class="varname">&lt;output-file&gt;</i>.json</cod
 
 \[optional\] Print detailed log information to the console.
 
-Alternative: `--verbose`
-
 
 
 </td>
@@ -503,7 +497,7 @@ Alternative: `--verbose`
 <tr>
 <td valign="top">
 
-<code>-O <i class="varname">&lt;options-file&gt;</i>.json</code>
+<code>--options-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -526,8 +520,6 @@ A typical option file for a `read` command has the following syntax:
   }
 ```
 
-Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -535,7 +527,7 @@ Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.js
 <tr>
 <td valign="top">
 
-<code>-s <i class="varname">&lt;secrets-file&gt;</i>.json</code>
+<code>--secrets-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -560,8 +552,6 @@ Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.js
 
 Passing this file with the tokens allows you to run any command without having first to log in.
 
-Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -569,7 +559,7 @@ Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.js
 <tr>
 <td valign="top">
 
-<code>-p <i class="varname">&lt;passcode&gt;</i></code>
+<code>--passcode <i class="varname">&lt;code&gt;</i></code>
 
 
 
@@ -578,7 +568,7 @@ Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.js
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `-p` parameter. If you do not include the `-p` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
 
 1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
@@ -586,8 +576,6 @@ You can include a passcode with your command using the `-p` parameter. If you do
 
 > ### Note:  
 > If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
-
-Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 
 
 
@@ -608,7 +596,14 @@ To import tables, views, and data access controls into a space, you must first p
 When your file is ready, enter the following command and press [Return\]:
 
 ```
-dwc spaces create -H "<server-url>" -f <space-def-file>.json [-d] [-V] [-O <options-file>.json] [-s <secrets-file>.json] [-p <passcode>]
+dwc spaces create 
+    --file-path <file>.json 
+    [--host "<url>"] 
+    [--force-definition-deployment] 
+    [--verbose] 
+    [--options-file <file>.json] 
+    [--secrets-file <file>.json] 
+    [--passcode <code>]
 ```
 
 Complete the parameters as follows:
@@ -634,16 +629,14 @@ Description
 <tr>
 <td valign="top">
 
-<code>-H "<i class="varname">&lt;server-url&gt;</i>"</code>
+<code>--host "<i class="varname">&lt;url&gt;</i>"</code>
 
 
 
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant.
-
-Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -652,7 +645,7 @@ Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
 <tr>
 <td valign="top">
 
-<code>-f <i class="varname">&lt;space-def-file&gt;</i>.json</code>
+<code>--file-path <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -661,8 +654,6 @@ Alternative: <code>--host "<i class="varname">&lt;server-url&gt;</i>"</code>
 
 Enter a path to a file with a .json extension containing your space definition.
 
-Alternative: <code>--file-path <i class="varname">&lt;space-def-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -670,7 +661,7 @@ Alternative: <code>--file-path <i class="varname">&lt;space-def-file&gt;</i>.jso
 <tr>
 <td valign="top">
 
-`-d`
+`--force-definition-deployment`
 
 
 
@@ -679,7 +670,25 @@ Alternative: <code>--file-path <i class="varname">&lt;space-def-file&gt;</i>.jso
 
 \[optional\] Deploy changes to objects even if they will generate validation messages warning of impacts to objects that depend on them. Using this option is equivalent to clicking the *Deploy Anyway* button in the *Validation Messages* dialog \(see [Modifying Objects That Have Dependent Objects](modifying-objects-that-have-dependent-objects-f315863.md)\).
 
-Alternative: `--force-definition-deployment`
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<code>--input '<i class="varname">&lt;stringified-json&gt;</i>'</code>
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Provide your space definition in stringified json format instead of via the `--file-path` option. For example:
+
+```
+--input '{"MY_SPACE":{"spaceDefinition":{"version":"1.0.4"}}}'
+```
 
 
 
@@ -688,29 +697,7 @@ Alternative: `--force-definition-deployment`
 <tr>
 <td valign="top">
 
-<code>-I '<i class="varname">&lt;stringified-json&gt;</i>'</code>
-
-
-
-</td>
-<td valign="top">
-
-\[optional\] Provide your space definition in stringified json format instead of via the `-f` / `--file-path` option. For example:
-
-```
--I '{"MY_SPACE":{"spaceDefinition":{"version":"1.0.4"}}}'
-```
-
-Alternative: <code>--input '<i class="varname">&lt;stringified-json&gt;</i>'</code>
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`-V`
+`--verbose`
 
 
 
@@ -719,8 +706,6 @@ Alternative: <code>--input '<i class="varname">&lt;stringified-json&gt;</i>'</co
 
 \[optional\] Print detailed log information to the console.
 
-Alternative: `--verbose`
-
 
 
 </td>
@@ -728,7 +713,7 @@ Alternative: `--verbose`
 <tr>
 <td valign="top">
 
-<code>-O <i class="varname">&lt;options-file&gt;</i>.json</code>
+<code>--options-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -748,8 +733,6 @@ A typical option file for a `create` command has the following syntax:
   }
 ```
 
-Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -757,7 +740,7 @@ Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.js
 <tr>
 <td valign="top">
 
-<code>-s <i class="varname">&lt;secrets-file&gt;</i>.json</code>
+<code>--secrets-file <i class="varname">&lt;file&gt;</i>.json</code>
 
 
 
@@ -782,8 +765,6 @@ Alternative: <code>--options-file <i class="varname">&lt;options-file&gt;</i>.js
 
 Passing this file with the tokens allows you to run any command without having first to log in.
 
-Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.json</code>
-
 
 
 </td>
@@ -791,7 +772,7 @@ Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.js
 <tr>
 <td valign="top">
 
-<code>-p <i class="varname">&lt;passcode&gt;</i></code>
+<code>--passcode <i class="varname">&lt;code&gt;</i></code>
 
 
 
@@ -800,7 +781,7 @@ Alternative: <code>--secrets-file <i class="varname">&lt;secrets-file&gt;</i>.js
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `-p` parameter. If you do not include the `-p` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
 
 1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
@@ -808,8 +789,6 @@ You can include a passcode with your command using the `-p` parameter. If you do
 
 > ### Note:  
 > If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
-
-Alternative: <code>--passcode <i class="varname">&lt;passcode&gt;</i></code>
 
 
 

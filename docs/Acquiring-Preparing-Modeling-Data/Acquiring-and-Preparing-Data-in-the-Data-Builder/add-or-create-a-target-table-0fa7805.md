@@ -51,31 +51,15 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Label
+    
+        Label
 
 
     
     </td>
     <td valign="top">
-
-    Enter a label to display in the target table symbol.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Business Name / Technical Name / Type / Connection
-
-
-    
-    </td>
-    <td valign="top">
-
-    \[read-only\] Provide information to identify the target table.
+        Enter a label to display in the target table symbol.
 
 
     
@@ -83,15 +67,31 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Mode
+    
+        Business Name / Technical Name / Type / Connection
 
 
     
     </td>
     <td valign="top">
+    
+        \[read-only\] Provide information to identify the target table.
 
-    Specifies the mode with which to write to the target table or modify the data in the target table.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Mode
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Specifies the mode with which to write to the target table or modify the data in the target table.
 
     You can choose between:
 
@@ -109,15 +109,15 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Update Records By Primary Key \(UPSERT\)
+    
+        Update Records By Primary Key \(UPSERT\)
 
 
     
     </td>
     <td valign="top">
-
-    \[*Append* mode\] Instructs the flow to update, where appropriate, existing target table records that can be identified by their primary keys.
+    
+        \[*Append* mode\] Instructs the flow to update, where appropriate, existing target table records that can be identified by their primary keys.
 
     If this option is not selected then all source records \(including those that are already present in the target table\) are appended, which may cause duplicate key errors.
 
@@ -132,15 +132,15 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-     \[read-only\] Displays the deployment and error status of the object. 
+    
+         \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
@@ -150,15 +150,15 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Use As
+    
+        Use As
 
 
     
     </td>
     <td valign="top">
-
-    Specifies whether the table is used as a *Source* or *Target* in the data flow.
+    
+        Specifies whether the table is used as a *Source* or *Target* in the data flow.
 
     > ### Note:  
     > Changing the use of a table will reset all its properties.
@@ -204,15 +204,15 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Control Batch Size
+    
+        Control Batch Size
 
 
     
     </td>
     <td valign="top">
-
-    To enforce a specific value for Batch Size, toggle this switch.
+    
+        To enforce a specific value for Batch Size, toggle this switch.
 
 
     
@@ -220,15 +220,15 @@ Add a target table to write data to. You can only have one target table in a dat
     </tr>
     <tr>
     <td valign="top">
-
-    Batch Size \(Number of Rows\)
+    
+        Batch Size \(Number of Rows\)
 
 
     
     </td>
     <td valign="top">
-
-    Specifies the amount of data being read. That is, it indicates the number of rows that will be fetched from the source in each request.
+    
+        Specifies the amount of data being read. That is, it indicates the number of rows that will be fetched from the source in each request.
 
 
     

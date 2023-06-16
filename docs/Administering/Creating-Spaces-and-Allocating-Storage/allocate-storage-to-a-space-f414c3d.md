@@ -52,15 +52,15 @@ You can allocate specific amounts of in-memory and disk storage to a space or di
     </tr>
     <tr>
     <td valign="top">
-
-    Enable Space Quota
+    
+        Enable Space Quota
 
 
     
     </td>
     <td valign="top">
-
-    Disable this option to allow the space to consume any amount of disk and in-memory space up to the total amounts available in your tenant.
+    
+        Disable this option to allow the space to consume any amount of disk and in-memory space up to the total amounts available in your tenant.
 
     If this option was disabled and then subsequently re-enabled, the *Disk* and *In-Memory* properties are initialized to the minimum values required by the current contents of the space.
 
@@ -72,15 +72,15 @@ You can allocate specific amounts of in-memory and disk storage to a space or di
     </tr>
     <tr>
     <td valign="top">
-
-    Disk \(GB\)
+    
+        Disk \(GB\)
 
 
     
     </td>
     <td valign="top">
-
-    Enter the amount of disk storage allocated to the space in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100MB by hand.
+    
+        Enter the amount of disk storage allocated to the space in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100MB by hand.
 
     Default: 2 GB
 
@@ -90,15 +90,15 @@ You can allocate specific amounts of in-memory and disk storage to a space or di
     </tr>
     <tr>
     <td valign="top">
-
-    In-Memory \(GB\)
+    
+        In-Memory \(GB\)
 
 
     
     </td>
     <td valign="top">
-
-    Enter the amount of in-memory storage allocated to the space in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100MB by hand.
+    
+        Enter the amount of in-memory storage allocated to the space in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100MB by hand.
 
     Default: 1 GB
 
@@ -108,15 +108,15 @@ You can allocate specific amounts of in-memory and disk storage to a space or di
     </tr>
     <tr>
     <td valign="top">
-
-    Use This Space to Access the Data Lake
+    
+        Use This Space to Access the Data Lake
 
 
     
     </td>
     <td valign="top">
-
-    Enable access to the SAP HANA Cloud data lake. Enabling this option is only possible if no other space already has access to the data lake.
+    
+        Enable access to the SAP HANA Cloud data lake. Enabling this option is only possible if no other space already has access to the data lake.
 
     Default: Disabled
 

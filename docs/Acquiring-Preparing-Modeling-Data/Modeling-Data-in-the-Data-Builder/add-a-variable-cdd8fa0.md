@@ -10,7 +10,7 @@ When you add a variable, the user will be prompted to enter a value in the data 
 
 There are different types of variables to choose from:
 
--   source variable: A source variable is used in a fact source to map it to input parameters of the analytical dataset.
+-   source variable: A source variable is used in a fact source to map it to input parameters of the fact.
 -   restricted measure variable: A restricted measure variable is used in the filter condition of a restricted measure \(e.g. “Revenue of selected country” with ***country = <user input\>***\). It can be applied only in restricted measures, and they do not filter the entire data.
 -   filter variable: A filter variable refers to an attribute. When a story is opened, the variable dialog shows a filter for the attribute.
 -   reference date variable: When the analytic model has associations to a time-dependent dimension or text table, you can define a reference date variable. With a reference data variable, you can filter the data using a specific date. This allows SAP Analytics Cloud users to enter a date of their choice for their story and show dimension members based on that date. For more information on time-dependent dimensions, see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md).

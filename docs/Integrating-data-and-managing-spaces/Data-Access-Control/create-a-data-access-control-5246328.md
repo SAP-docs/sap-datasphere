@@ -45,15 +45,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-     Business Name 
+    
+         Business Name 
 
 
     
     </td>
     <td valign="top">
-
-     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    
+         Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -61,15 +61,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-     Technical Name 
+    
+         Technical Name 
 
 
     
     </td>
     <td valign="top">
-
-     Displays the name used in scripts and code, synchronized by default with the *Business Name*. 
+    
+         Displays the name used in scripts and code, synchronized by default with the *Business Name*. 
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -82,15 +82,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    Owner
+    
+        Owner
 
 
     
     </td>
     <td valign="top">
-
-    Enter the name of the person responsible for your data access control.
+    
+        Enter the name of the person responsible for your data access control.
 
 
     
@@ -98,15 +98,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    Permissions Entity
+    
+        Permissions Entity
 
 
     
     </td>
     <td valign="top">
-
-    Select a table or view containing user ids and one or more filter criteria. 
+    
+        Select a table or view containing user ids and one or more filter criteria. 
 
     For more information, see [Select a Table or View to Define Permissions](select-a-table-or-view-to-define-permissions-ffcae43.md).
 
@@ -116,15 +116,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    Identifier Column
+    
+        Identifier Column
 
 
     
     </td>
     <td valign="top">
-
-    Select a column containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\).
+    
+        Select a column containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\).
 
 
     
@@ -132,15 +132,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    Criteria
+    
+        Criteria
 
 
     
     </td>
     <td valign="top">
-
-    Lists the columns containing filter criteria selected for use in your data access control. 
+    
+        Lists the columns containing filter criteria selected for use in your data access control. 
 
     > ### Note:  
     > When you apply your data access control to a view, you must map each column of the list to an appropriate column in the view.
@@ -173,15 +173,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="FPA-icons"></span> \(Save\)
+    
+        <span class="FPA-icons"></span> \(Save\)
 
 
     
     </td>
     <td valign="top">
-
-    Save your changes to the design-time repository.
+    
+        Save your changes to the design-time repository.
 
 
     
@@ -189,15 +189,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="SAP-icons"></span> \(Deploy\)
+    
+        <span class="SAP-icons"></span> \(Deploy\)
 
 
     
     </td>
     <td valign="top">
-
-    Deploy your changes to make them available in the run-time environment. 
+    
+        Deploy your changes to make them available in the run-time environment. 
 
     For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
 
@@ -207,15 +207,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    
+        <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
 
 
     
     </td>
     <td valign="top">
-
-    Open the *Impact and Lineage Analysis* graph for the object. 
+    
+        Open the *Impact and Lineage Analysis* graph for the object. 
 
     For more information, see [Impact and Lineage Analysis](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage (or data provenance) of a selected object, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
 
@@ -225,15 +225,15 @@ This permissions entity must have at least two columns as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the status of the object. 
+    
+        \[read-only\] Displays the status of the object. 
 
     For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
 

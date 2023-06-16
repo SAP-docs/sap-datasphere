@@ -49,8 +49,8 @@ You have a dimension that has an attribute that contains data that needs to be t
     </tr>
     <tr>
     <td valign="top">
-
-    Identifier
+    
+        Identifier
 
     Identifies the master data member for which the text is provided.
 
@@ -60,15 +60,15 @@ You have a dimension that has an attribute that contains data that needs to be t
     
     </td>
     <td valign="top">
-
-    Yes
+    
+        Yes
 
 
     
     </td>
     <td valign="top">
-
-    None
+    
+        None
 
 
     
@@ -76,8 +76,8 @@ You have a dimension that has an attribute that contains data that needs to be t
     </tr>
     <tr>
     <td valign="top">
-
-    Language Identifier
+    
+        Language Identifier
 
     Identifies the language in which the text is provided.
 
@@ -87,15 +87,15 @@ You have a dimension that has an attribute that contains data that needs to be t
     
     </td>
     <td valign="top">
-
-    Yes
+    
+        Yes
 
 
     
     </td>
     <td valign="top">
-
-    *Language*
+    
+        *Language*
 
 
     
@@ -103,8 +103,8 @@ You have a dimension that has an attribute that contains data that needs to be t
     </tr>
     <tr>
     <td valign="top">
-
-    Validity Start Date
+    
+        Validity Start Date
 
     \[optional\] For time-dependent text entities, specifies the date from which the text is valid \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\).
 
@@ -114,15 +114,15 @@ You have a dimension that has an attribute that contains data that needs to be t
     
     </td>
     <td valign="top">
-
-    Yes
+    
+        Yes
 
 
     
     </td>
     <td valign="top">
-
-    *Business Date - From*
+    
+        *Business Date - From*
 
 
     
@@ -130,8 +130,8 @@ You have a dimension that has an attribute that contains data that needs to be t
     </tr>
     <tr>
     <td valign="top">
-
-    Validity End Date
+    
+        Validity End Date
 
     \[optional\] For time-dependent text entities, specifies the date until which the text is valid.
 
@@ -141,15 +141,15 @@ You have a dimension that has an attribute that contains data that needs to be t
     
     </td>
     <td valign="top">
-
-    No
+    
+        No
 
 
     
     </td>
     <td valign="top">
-
-    *Business Date - To*
+    
+        *Business Date - To*
 
 
     
@@ -157,8 +157,8 @@ You have a dimension that has an attribute that contains data that needs to be t
     </tr>
     <tr>
     <td valign="top">
-
-    Text
+    
+        Text
 
     Provides the text in the appropriate language.
 
@@ -168,15 +168,15 @@ You have a dimension that has an attribute that contains data that needs to be t
     
     </td>
     <td valign="top">
-
-    No
+    
+        No
 
 
     
     </td>
     <td valign="top">
-
-    *Text*
+    
+        *Text*
 
 
     

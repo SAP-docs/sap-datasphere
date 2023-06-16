@@ -45,21 +45,26 @@ In SAP Datasphere, You have created a connection of type *SAP BW/4HANA Model Tra
     > ### Note:  
     > Only analytic queries that have been exposed in the source system for consumption in SAP Datasphere can be imported. For more information see [Releasing Analytic Queries for Use in SAP Datasphere](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.latest/en-US/cb1e79fc792b4737881b00c1685edc2a.html).
 
-4.  Select the analytic query that you would like to transfer. In the pane on the right, you will see the list of objects which will be generated in the *Business Builder* and in the *Data Builder*. The *Import Status* tells you, if the objects already exist and will be overwritten. or if they are new.
+4.  Use the *Create Business Builder Objects* setting to control which objects to create:
+    -   *Business Entities and Consumption Models* \[default\] - Create all possible *Data Builder* and *Business Builder* objects.
+    -   *Business Entities Only* - Create *Data Builder* objects and *Business Builder* business entities.
+    -   *None* - Create only *Data Builder* objects. Queries are imported as SAP Datasphere analytic models, which can be consumed directly in SAP Analytics Cloud.
+
+5.  Select the analytic query that you would like to transfer. In the pane on the right, you will see the list of objects which will be generated in the *Business Builder* and in the *Data Builder*. The *Import Status* tells you if the objects already exist and will be overwritten or if they are new.
 
     > ### Note:  
     > When re-importing a model, changes in the column defintions of source entities that generate remote tables will automatically result in updating and redeploying the remote tables. This is only possible for remote tables that directly access data live in the source. Before doing the re-import, you need to stop snapshot and real-time replication for any affected remote tables. This is necessary because of the inconsistent changes in the source.
     > 
     > If there is a remote table that needs to be updated but has been set up for replication \(snapshot or real-time replication\), you will be notified and asked to stop replication first.
 
-5.  \[optional\] To import the analysis authorizations associated with the data in the query, click the *Import Permissions* button, and then click *OK*.
+6.  \[optional\] To import the analysis authorizations associated with the data in the query, click the *Import Permissions* button, and then click *OK*.
 
-    Additional objects will be added to the list of objects to be imported on the *Data Builder/Data Access Controls* tab to create the data access control and apply it to the analytical dataset.
+    Additional objects will be added to the list of objects to be imported on the *Data Builder/Data Access Controls* tab to create the data access control and apply it to the fact.
 
     > ### Note:  
     > If you do not import the analysis authorizations in this wizard, you can do it later in the *Data Access Controls* app \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/f56e4271dc4943aa9f21223ce5c93873.html "You can import analysis authorizations defined in SAP BW and SAP BW∕4HANA systems into SAP Datasphere to provide row-level protection for data imported from these systems.") :arrow_upper_right:\).
 
-6.  Choose *Import*.
+7.  Choose *Import*.
 
     > ### Note:  
     > The system will generate notifications about the import process.
@@ -68,17 +73,4 @@ In SAP Datasphere, You have created a connection of type *SAP BW/4HANA Model Tra
     > 
     > You can check this in detail by choosing <span class="FPA-icons"></span> \(Import\)** \> *SAP BW/4HANA* \> *Show Logs*.
 
-
-
-
-<a name="loioa3d4a2f91bea4810ba8839ff73577dac__section_qcy_z5w_x4b"/>
-
-## Result
-
-You can build a perspective which visualizes exactly the analytic query known from the SAP BW∕4HANA system and create stories in SAP Analytics Cloud on top of it.
-
-**Related Information**  
-
-
-[Imported Objects](imported-objects-92c0a5e.md "")
 

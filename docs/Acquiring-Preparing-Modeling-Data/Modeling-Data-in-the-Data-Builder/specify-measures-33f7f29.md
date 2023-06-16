@@ -4,7 +4,7 @@
 
 # Specify Measures
 
-Measures appear in tables and views with a *Semantic Usage* of *Analytical Dataset* and are columns containing numerical values that you want to analyze. Each *Analytical Dataset* must contain at least one measure.
+Measures appear in tables and views with a *Semantic Usage* of *Fact* and are columns containing numerical values that you want to analyze. Each *Fact* must contain at least one measure.
 
 Typical measures include:
 
@@ -19,7 +19,7 @@ Measures are displayed in the *Measures* section of tables and views.
 > ### Note:  
 > In the graphical view and sql view editors, you can click the *Edit Columns* button in the *Measures* list to open it in a dialog.
 
-By default, all columns in an analytical dataset are identified as attributes, and you must convert one or more into measures:
+By default, all columns in a fact are identified as attributes, and you must convert one or more into measures:
 
 -   In the graphical or SQL view editor:
     -   To convert a numerical attribute into a measure, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Change to Measure*, or drag the attribute token and drop it into the *Measures* list.
@@ -222,7 +222,9 @@ Show
 </td>
 <td valign="top">
 
- Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
+ \[deprecated\] Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
+
+You can now control the visibility of columns in SAP Analytics Cloud by choosing to include or exclude them in your analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 > ### Note:  
 > To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.

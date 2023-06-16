@@ -50,7 +50,7 @@
     -   [Connect to Your Open SQL Schema](Integrating-Data-Via-Database-Users/Open-SQL-Schema/connect-to-your-open-sql-schema-b78ad20.md)
     -   [Allow the Space to Write to the Open SQL Schema](Integrating-Data-Via-Database-Users/Open-SQL-Schema/allow-the-space-to-write-to-the-open-sql-schema-7eaa370.md)
 -   [Exchanging Data with SAP SQL Data Warehousing HDI Containers](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/exchanging-data-with-sap-sql-data-warehousing-hdi-con-1aec7ca.md)
-    -   [Prepare Your Project for Exchanging Data with Your Space](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/prepare-your-project-for-exchanging-data-with-your-sp-a94e163.md)
+    -   [Prepare Your HDI Project for Exchanging Data with Your Space](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/prepare-your-hdi-project-for-exchanging-data-with-you-a94e163.md)
     -   [Add an HDI Container and Access its Objects in Your Space](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/add-an-hdi-container-and-access-its-objects-in-your-s-5d55da5.md)
     -   [Access Space Objects in Your HDI Container](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/access-space-objects-in-your-hdi-container-656eebc.md)
     -   [Allow Your Space to Write to Your HDI Container](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/allow-your-space-to-write-to-your-hdi-container-aa3627f.md)

@@ -24,10 +24,10 @@ In addition to this method, you can also create associations in the side panel i
 
     The rules for creating associations depend on the *Semantic Usage* of the entity:
 
-    -   An *Analytical Dataset* can point to a:
+    -   A *Fact* can point to a:
 
-        -   *Dimension* - One attribute in the \(source\) *Analytical Dataset* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
-        -   *Text Entity* - An attribute in the \(source\) *Analytical Dataset* must be mapped to the \(target\) *Text Entity* identifier key column.
+        -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
+        -   *Text Entity* - An attribute in the \(source\) *Fact* must be mapped to the \(target\) *Text Entity* identifier key column.
 
     -   A *Dimension* can point to a:
 

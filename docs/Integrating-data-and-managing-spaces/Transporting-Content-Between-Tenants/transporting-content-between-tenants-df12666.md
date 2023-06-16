@@ -256,7 +256,7 @@ See [Creating an Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e
 </td>
 <td valign="top">
 
-The definition of an authorization scenario contains the definition of its data access control. When you export a task chain, the data access control is exported too.
+The definition of an authorization scenario contains the definition of its data access control. When you export an authorization scenario, the data access control is exported too.
 
 
 

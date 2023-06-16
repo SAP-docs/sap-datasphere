@@ -94,30 +94,14 @@ Select Filter Criteria
 <tr>
 <td valign="top">
 
-All objects with a semantic usage of *Analytical Dataset*
+All objects with a semantic usage of *Fact*
 
 
 
 </td>
 <td valign="top">
 
-*Semantic Usage*: *Analytical Dataset*
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-All objects with a semantic usage of *Analytical Dataset* or *Dimension*
-
-
-
-</td>
-<td valign="top">
-
-*Semantic Usage*: *Analytical Dataset*, *Dimension*
+*Semantic Usage*: *Fact*
 
 
 
@@ -126,7 +110,23 @@ All objects with a semantic usage of *Analytical Dataset* or *Dimension*
 <tr>
 <td valign="top">
 
-Only views with a semantic usage of *Analytical Dataset* or *Dimension*
+All objects with a semantic usage of *Fact* or *Dimension*
+
+
+
+</td>
+<td valign="top">
+
+*Semantic Usage*: *Fact*, *Dimension*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Only views with a semantic usage of *Fact* or *Dimension*
 
 
 
@@ -137,7 +137,7 @@ Only views with a semantic usage of *Analytical Dataset* or *Dimension*
 
 and
 
-*Semantic Usage*: *Analytical Dataset*, *Dimension*
+*Semantic Usage*: *Fact*, *Dimension*
 
 
 
@@ -275,15 +275,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Create
+    
+        Create
 
 
     
     </td>
     <td valign="top">
-
-    Create a new object \(independent of any selection\) and open it in the appropriate editor. 
+    
+        Create a new object \(independent of any selection\) and open it in the appropriate editor. 
 
     Choose from the following:
 
@@ -301,15 +301,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Edit
+    
+        Edit
 
 
     
     </td>
     <td valign="top">
-
-    Open the selected object in the appropriate editor. 
+    
+        Open the selected object in the appropriate editor. 
 
 
     
@@ -317,15 +317,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Deploy
+    
+        Deploy
 
 
     
     </td>
     <td valign="top">
-
-     Deploy the selected objects. Allows multi-selection of supported object types from a single space. 
+    
+         Deploy the selected objects. Allows multi-selection of supported object types from a single space. 
 
     Only the following object types can be deployed here:
 
@@ -344,15 +344,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Delete
+    
+        Delete
 
 
     
     </td>
     <td valign="top">
-
-    Delete the selected objects. Allows multi-selection. 
+    
+        Delete the selected objects. Allows multi-selection. 
 
     > ### Note:  
     > If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.
@@ -363,15 +363,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Share
+    
+        Share
 
 
     
     </td>
     <td valign="top">
-
-    Share the selected objects to other spaces. Allows multi-selection from a single space. 
+    
+        Share the selected objects to other spaces. Allows multi-selection from a single space. 
 
     For more information, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md).
 
@@ -381,15 +381,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Copy
+    
+        Copy
 
 
     
     </td>
     <td valign="top">
-
-    Create a copy of the selected object in the same space. You must specify a new business and technical name. 
+    
+        Create a copy of the selected object in the same space. You must specify a new business and technical name. 
 
 
     
@@ -397,15 +397,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Impact and Lineage Analysis
+    
+        Impact and Lineage Analysis
 
 
     
     </td>
     <td valign="top">
-
-    Open the *Impact and Lineage Analysis* graph for the selected object. 
+    
+        Open the *Impact and Lineage Analysis* graph for the selected object. 
 
     For more information, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
 
@@ -415,15 +415,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Select Columns
+    
+        Select Columns
 
 
     
     </td>
     <td valign="top">
-
-    Open the *Columns* dialog to control the display of columns in the results table. 
+    
+        Open the *Columns* dialog to control the display of columns in the results table. 
 
     Modify the column list in any of the following ways, and then click *OK* to apply your changes:
 
@@ -437,15 +437,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Sort
+    
+        Sort
 
 
     
     </td>
     <td valign="top">
-
-    Open the *Sort* dialog to control the ordering of the results table. 
+    
+        Open the *Sort* dialog to control the ordering of the results table. 
 
     By default, the table is sorted by *Best Match on Top*, which calculates relevance on a range of criteria, including objects that you have recently changed, those that you have created, and those that have validation errors. To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then click *OK* to apply them.
 
@@ -455,15 +455,15 @@ You can act on objects in the list in the following ways:
     </tr>
     <tr>
     <td valign="top">
-
-    Display as...
+    
+        Display as...
 
 
     
     </td>
     <td valign="top">
-
-    Set the presentation of the object list to *Table* \(default\), Grid, or List. 
+    
+        Set the presentation of the object list to *Table* \(default\), Grid, or List. 
 
 
     

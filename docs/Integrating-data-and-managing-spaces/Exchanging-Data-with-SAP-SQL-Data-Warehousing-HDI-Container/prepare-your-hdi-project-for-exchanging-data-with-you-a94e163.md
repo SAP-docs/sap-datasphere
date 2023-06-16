@@ -1,8 +1,8 @@
 <!-- loioa94e1637db484a5c8ec2da83cfa75156 -->
 
-# Prepare Your Project for Exchanging Data with Your Space
+# Prepare Your HDI Project for Exchanging Data with Your Space
 
-To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your project to build on your SAP Datasphere tenant and define the appropriate roles.
+To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.
 
 
 
@@ -12,7 +12,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
 
 1.  Create the required roles to allow SAP Datasphere to read from and, optionally, write to the container.
 
-    You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(with grant option\) in the container to allow you to add it to your space and allow you to exchange data between the container and the space..
+    You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(with grant option\) in the container to allow you to add it to your space and allow you to exchange data between the container and the space.
 
     The contents of the roles define the HDI objects that can be read from or written to. You can allow access to individual objects or to all the objects in the container.
 
@@ -38,8 +38,8 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     </tr>
     <tr>
     <td valign="top">
-
-    This example provides read access to one table and one view in the container:
+    
+        This example provides read access to one table and one view in the container:
 
     ```
     {
@@ -65,8 +65,8 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     
     </td>
     <td valign="top">
-
-    This example provides read access to all the objects in the container:
+    
+        This example provides read access to all the objects in the container:
 
     ```
     {
@@ -111,8 +111,8 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     </tr>
     <tr>
     <td valign="top">
-
-    This example provides write access to two tables in the container:
+    
+        This example provides write access to two tables in the container:
 
     ```
     {
@@ -138,8 +138,8 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     
     </td>
     <td valign="top">
-
-    This example provides write access to all the objects in the container:
+    
+        This example provides write access to all the objects in the container:
 
     ```
     {

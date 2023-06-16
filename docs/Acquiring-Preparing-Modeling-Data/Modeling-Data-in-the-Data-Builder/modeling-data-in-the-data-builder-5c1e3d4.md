@@ -6,7 +6,7 @@ Users with the *DW Modeler* role can add semantic information to their entities 
 
 This topic contains the following sections:
 
--   [Identify Measures to Analyze in an Analytical Dataset](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_facts)
+-   [Identify Measures to Analyze in a Fact](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_facts)
 -   [Prepare Master Data for Grouping in a Dimension](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_dimensions)
 -   [Support Translations of Attributes with a Text Entity](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_texts)
 -   [Enable Drill-Down with a Hierarchy](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchies)
@@ -18,11 +18,11 @@ This topic contains the following sections:
 
 <a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_facts"/>
 
-## Identify Measures to Analyze in an Analytical Dataset
+## Identify Measures to Analyze in a Fact
 
-Analytical datasets are entities that contain numerical measures that can be analyzed and are the principal type of object that is consumed by BI clients \(see [Creating an Analytical Dataset](creating-an-analytical-dataset-30089bd.md)\).
+Facts are entities that contain numerical measures that can be analyzed and are the principal type of object that is consumed by BI clients \(see [Creating a Fact](creating-a-fact-30089bd.md)\).
 
--   To get started: Select a *Semantic Usage* of *Analytical Dataset* to indicate that your entity contains numerical measures that can be analyzed.
+-   To get started: Select a *Semantic Usage* of *Fact* to indicate that your entity contains numerical measures that can be analyzed.
 -   You must identify at least one measure \(see [Specify Measures](specify-measures-33f7f29.md)\).
 -   You can create associations to dimensions and text entities \(see [Create an Association](../create-an-association-66c6998.md)\).
 -   To expose your data for consumption in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
@@ -77,7 +77,7 @@ External hierarchies are entities that contain data to define parent-child relat
 
 There are two methods for exposing view data for consumption outside SAP Datasphere:
 
--   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) prefer to consume view data via an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). Set the *Semantic Usage* of your view to *Analytical Dataset* and then add it to an analytic model to expose it. There is no need to enable the *Expose for Consumption* switch. Alternatively, you can consume data from a view with a *Semantic Usage* of *Analytical Dataset* directly if the *Expose for Consumption* switch is enabled.
+-   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
 -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
 
 For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
@@ -88,13 +88,13 @@ For more information, see [Consuming Data Exposed by SAP Datasphere](https://hel
 
 ## Combine Entities for Consumption in an Analytic Model
 
-Once your analytical dataset is ready for use, create an analytic model from it to consume its data in SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
+Once your fact is ready for use, create an analytic model from it to consume its data in SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 -   To get started: In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Analytic Model* to open the editor.
--   You must add an analytical dataset as a source and can choose to copy all its measures, attributes and associated dimensions to the analytic model \(see [Add a Source](add-a-source-27075ee.md)\).
+-   You must add a fact as a source and can choose to copy all its measures, attributes and associated dimensions to the analytic model \(see [Add a Source](add-a-source-27075ee.md)\).
 -   You can deselect measures and attributes to leave only those that are relevant to answer your particular analytic question.
 -   You can create additional calculated and restricted measures \(see [Add Measures](add-measures-e4cc3e8.md)\).
--   You can create multiple tightly-focused analytic models from a single analytical dataset, each providing only the data needed for a particular BI context, and enriched with appropriate variables, filters, and additional measures as necessary.
+-   You can create multiple tightly-focused analytic models from a single fact, each providing only the data needed for a particular BI context, and enriched with appropriate variables, filters, and additional measures as necessary.
 
 
 
@@ -130,15 +130,15 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </tr>
     <tr>
     <td valign="top">
-
-    New
+    
+        New
 
 
     
     </td>
     <td valign="top">
-
-    Create *Data Builder* objects \(independent of any selection\).
+    
+        Create *Data Builder* objects \(independent of any selection\).
 
 
     
@@ -146,15 +146,15 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </tr>
     <tr>
     <td valign="top">
-
-    Import
+    
+        Import
 
 
     
     </td>
     <td valign="top">
-
-    Import objects from files and connections:
+    
+        Import objects from files and connections:
 
     -   *Import CSV File* - Import data from a CSV file to create a local table \(see [Creating a Local Table from a CSV File](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)
     -   *Import Objects from CSN/JSON File* - Import table and view definitions from a CSN file to create tables and views or import data flow definitions from a JSON file to create data flows. \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
@@ -166,15 +166,15 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </tr>
     <tr>
     <td valign="top">
-
-    Edit
+    
+        Edit
 
 
     
     </td>
     <td valign="top">
-
-    Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
+    
+        Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
 
 
     
@@ -182,15 +182,15 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </tr>
     <tr>
     <td valign="top">
-
-    Deploy
+    
+        Deploy
 
 
     
     </td>
     <td valign="top">
-
-    Select one or more objects and deploy them at once.
+    
+        Select one or more objects and deploy them at once.
 
     Choose from the following entity types:
 
@@ -211,31 +211,15 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </tr>
     <tr>
     <td valign="top">
-
-    Share
+    
+        Share
 
 
     
     </td>
     <td valign="top">
-
-    Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Impact and Lineage Analysis
-
-
-    
-    </td>
-    <td valign="top">
-
-    View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+        Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
 
 
     
@@ -243,15 +227,31 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </tr>
     <tr>
     <td valign="top">
-
-    Delete
+    
+        Impact and Lineage Analysis
 
 
     
     </td>
     <td valign="top">
+    
+        View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
 
-    Delete the selected objects.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Delete
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Delete the selected objects.
 
     > ### Note:  
     > If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.

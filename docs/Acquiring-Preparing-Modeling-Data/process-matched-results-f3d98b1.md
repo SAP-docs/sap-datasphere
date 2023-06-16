@@ -44,31 +44,15 @@ Matched results are input records that are matched with a lookup record. You can
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
+    
+        <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
 
 
     
     </td>
     <td valign="top">
-
-    Collapse or expand all pairing groups.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Reject
-
-
-    
-    </td>
-    <td valign="top">
-
-    Reject the selected match and move the matched records to the *Unmatched* tab.
+        Collapse or expand all pairing groups.
 
 
     
@@ -76,15 +60,31 @@ Matched results are input records that are matched with a lookup record. You can
     </tr>
     <tr>
     <td valign="top">
-
-    Rows per Pairing Group
+    
+        Reject
 
 
     
     </td>
     <td valign="top">
+    
+        Reject the selected match and move the matched records to the *Unmatched* tab.
 
-    Specify the maximum number of rows to display for each pairing group.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Rows per Pairing Group
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Specify the maximum number of rows to display for each pairing group.
 
 
     

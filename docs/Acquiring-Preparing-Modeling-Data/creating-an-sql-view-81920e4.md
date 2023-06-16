@@ -15,7 +15,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
 > ### Note:  
 > There are two methods for exposing view data for consumption outside SAP Datasphere:
 > 
-> -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) prefer to consume view data via an analytic model \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). Set the *Semantic Usage* of your view to *Analytical Dataset* and then add it to an analytic model to expose it. There is no need to enable the *Expose for Consumption* switch. Alternatively, you can consume data from a view with a *Semantic Usage* of *Analytical Dataset* directly if the *Expose for Consumption* switch is enabled.
+> -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
 > -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
 > 
 > For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
@@ -73,6 +73,9 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
         > If your SQLScript is complicated, SAP Datasphere may not be able to determine the output structure. In this case, you are requested to review the list of columns. Click the *Edit* button to add or delete buttons or change column names and data types.
 
     -   Preview the data being output by the view by clicking <span class="SAP-icons"></span> \(Show or hide data preview\)\(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+
+        Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+
     -    Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog: 
         -   Click <span class="FPA-icons"></span> \(Previous Annotation\) and <span class="FPA-icons"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
         -   Enter changes for the custom CSN annotations in the code.
@@ -102,15 +105,15 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-     Business Name 
+    
+         Business Name 
 
 
     
     </td>
     <td valign="top">
-
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    
+        Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -118,15 +121,15 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-     Technical Name 
+    
+         Technical Name 
 
 
     
     </td>
     <td valign="top">
-
-    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -139,15 +142,15 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-    Language
+    
+        Language
 
 
     
     </td>
     <td valign="top">
-
-     Select the SQL language to use. 
+    
+         Select the SQL language to use. 
 
     Choose from the following:
 
@@ -160,15 +163,15 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-    Source Object \(Open SQL Schema/HDI Container\)
+    
+        Source Object \(Open SQL Schema/HDI Container\)
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
+    
+        \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
 
 
     
@@ -176,23 +179,24 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-    Semantic Usage
+    
+        Semantic Usage
 
 
     
     </td>
     <td valign="top">
-
-     Select the way your entity should be used. 
+    
+         Select the way your entity should be used. 
 
     Choose from the following:
 
-    -   *Analytical Dataset* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating an Analytical Dataset](Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Fact* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating a Fact](Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Contains attributes containing master data like a product list or store directory, and supporting hierarchies \(see [Creating a Dimension](Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - \[default\] Contains columns with no specific analytical purpose.
+    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 
     
@@ -200,20 +204,20 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-    Expose for Consumption
+    
+        Expose for Consumption
 
 
     
     </td>
     <td valign="top">
-
-     Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC. 
+    
+         Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC. 
 
     > ### Note:  
     > There are two methods for exposing view data for consumption outside SAP Datasphere:
     > 
-    > -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) prefer to consume view data via an analytic model \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). Set the *Semantic Usage* of your view to *Analytical Dataset* and then add it to an analytic model to expose it. There is no need to enable the *Expose for Consumption* switch. Alternatively, you can consume data from a view with a *Semantic Usage* of *Analytical Dataset* directly if the *Expose for Consumption* switch is enabled.
+    > -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
     > -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
     > 
     > For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
@@ -224,15 +228,15 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-    Run in Analytical Mode
+    
+        Run in Analytical Mode
 
 
     
     </td>
     <td valign="top">
-
-     Enable this option to send the `USE_OLAP_PLAN` hint to the SQL optimizer. 
+    
+         Enable this option to send the `USE_OLAP_PLAN` hint to the SQL optimizer. 
 
     This may improve view performance, particularly if a union is performed. It is only available if *Expose for Consumption* is enabled.
 
@@ -244,15 +248,15 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-     \[read-only\] Displays the deployment and error status of the object. 
+    
+         \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
@@ -264,7 +268,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     
 5.  Based on the *Semantic Usage* of your entity, review and modify its *Columns*, *Attributes*, and/or *Measures*:
 
-    -   *Analytical Dataset* - Review the lists of measures and attributes \(see [Creating an Analytical Dataset](Modeling-Data-in-the-Data-Builder/creating-an-analytical-dataset-30089bd.md)\).
+    -   *Fact* - Review the lists of measures and attributes \(see [Creating a Fact](Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Review the list of attributes \(see [Creating a Dimension](Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Define the parent and child columns \(see [Creating an External Hierarchy](Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).

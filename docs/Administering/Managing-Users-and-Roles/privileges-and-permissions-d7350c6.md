@@ -501,7 +501,7 @@ Allows access to the *Roles* app.
 
 The *Read* permission lets you see a list of users in a dialog; for example, when choosing which users to share a story with, or when choosing users to add to a team.
 
-To see the user list in *Security* \> *Users*, you need *Read*, *Create*, *Update*, and *Delete* permissions. Pleas note that the *Create*, *Update*, and *Delete* permissions are only assigned if your role is derived from the *DW Administrator* role and cannot be set manually in the role editor. If you have only the *Read* permission, you won't be able to view the user list.
+To see the user list in *Security* \> *Users*, you need the *Read* permission, plus one of the *Create*, *Update*, or *Delete* permissions. If you have only the *Read* permission, you won't be able to view the user list.
 
 Set the *Manage* permission to permit assigning users to roles, and approving role assignment requests from users.
 

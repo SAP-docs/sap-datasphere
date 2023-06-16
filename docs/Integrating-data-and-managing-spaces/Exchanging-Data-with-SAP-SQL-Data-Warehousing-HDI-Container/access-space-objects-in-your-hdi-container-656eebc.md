@@ -37,7 +37,7 @@ To access SAP Datasphere views that are exposed for consumption as sources for y
 
 5.  In your SAP Business Application Studio project, do the following:
 
-    -   Prepare your project for building, including specifying the name of your user-provided service instance in your `mta.yaml` file \(see [Prepare Your Project for Exchanging Data with Your Space](prepare-your-project-for-exchanging-data-with-your-sp-a94e163.md)\).
+    -   Prepare your project for building, including specifying the name of your user-provided service instance in your `mta.yaml` file \(see [Prepare Your HDI Project for Exchanging Data with Your Space](prepare-your-hdi-project-for-exchanging-data-with-you-a94e163.md)\).
     -   \[optional\] Create `hdbsynonym` and`hdbsynonymconfig` files to define synonyms for the views that you want to consume from your SAP Datasphere space, and an `hdbgrants` file to grant read access to them.
 
 6.  Build your project.

@@ -8,7 +8,7 @@ To allow data flows in your SAP Datasphere space to use tables in your HDI conta
 
 ## Procedure
 
-1.  Define the roles `DWC_WRITE_ROLE` and `DWC_WRITE_ROLE³` \(with grant option\) in your HDI container \(see [Prepare Your Project for Exchanging Data with Your Space](prepare-your-project-for-exchanging-data-with-your-sp-a94e163.md)\).
+1.  Define the roles `DWC_WRITE_ROLE` and `DWC_WRITE_ROLE³` \(with grant option\) in your HDI container \(see [Prepare Your HDI Project for Exchanging Data with Your Space](prepare-your-hdi-project-for-exchanging-data-with-you-a94e163.md)\).
 
 2.  Add the container to your space \(see [Add an HDI Container and Access its Objects in Your Space](add-an-hdi-container-and-access-its-objects-in-your-s-5d55da5.md)\).
 

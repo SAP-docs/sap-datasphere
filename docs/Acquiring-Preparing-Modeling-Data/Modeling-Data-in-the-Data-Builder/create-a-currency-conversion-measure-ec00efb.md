@@ -12,9 +12,9 @@ With a currency conversion measure, you can convert currencies.
 
 ## Prerequisites
 
-The tables and view containing currencies and exchange rates SAP.CURRENCY.TABLE.TCUR\* are available in the current space.
+The tables and view containing currencies and exchange rates `SAP.CURRENCY.TABLE.TCUR*` are available in the current space.
 
-You can create these tables in the Data Builder. For more information, see [Enabling Currency Conversion with TCUR\* Tables and Views](../Creating-Finding-Sharing-Objects/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
+You can create these tables in the *Data Builder* \(see [Enabling Currency Conversion with TCUR\* Tables and Views](../Creating-Finding-Sharing-Objects/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\).
 
 
 
@@ -22,7 +22,7 @@ You can create these tables in the Data Builder. For more information, see [Enab
 
 1.  You are in the editor of your analytic model. You can createa new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Measure in the properties panel. Choose *Currency Conversion Measure*.
 
-2.  Select the source measure. The source measure has to be a fact source and has to refer to a measure in the underlying analytical dataset with semantic type *Amount with Currency*. The measure in the analytical dataset has to have an assigned currency field.
+2.  Select the source measure. The source measure has to be a fact source and has to refer to a measure in the underlying fact with semantic type *Amount with Currency*. The measure in the fact has to have an assigned currency field.
 
 3.  Define the target currency.
 
@@ -30,7 +30,7 @@ You can create these tables in the Data Builder. For more information, see [Enab
 
     -   a constant value
 
-    -   a reference to a dimension that is mapped to an attribute of the analytical dataset with semantic type *Currency Code*.
+    -   a reference to a dimension that is mapped to an attribute of the fact with semantic type *Currency Code*.
 
 
 4.  Define the reference date.

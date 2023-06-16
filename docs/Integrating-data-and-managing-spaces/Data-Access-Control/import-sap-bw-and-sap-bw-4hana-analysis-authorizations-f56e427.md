@@ -82,8 +82,8 @@ The *Import Permissions* wizard will import the permissions table from the sourc
     </tr>
     <tr>
     <td valign="top">
-
-    ![](images/Data_Access_Control_Import_-_Standard_fecfebf.png)
+    
+        ![](images/Data_Access_Control_Import_-_Standard_fecfebf.png)
 
     For each selected remote table, the following objects are created:
 
@@ -95,8 +95,8 @@ The *Import Permissions* wizard will import the permissions table from the sourc
     
     </td>
     <td valign="top">
-
-    ![](images/Data_Access_Control_Import_-_Model_Transfer_339c553.png)
+    
+        ![](images/Data_Access_Control_Import_-_Model_Transfer_339c553.png)
 
     For each selected view, the following objects are created or modified:
 

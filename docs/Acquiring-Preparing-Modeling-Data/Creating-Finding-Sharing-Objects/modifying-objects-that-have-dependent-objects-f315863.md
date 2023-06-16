@@ -38,15 +38,15 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     </tr>
     <tr>
     <td valign="top">
-
-    Add Column
+    
+        Add Column
 
 
     
     </td>
     <td valign="top">
-
-    None.
+    
+        None.
 
     New columns are excluded by default from the output of dependent views and data flows and information messages are displayed.
 
@@ -56,15 +56,15 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     </tr>
     <tr>
     <td valign="top">
-
-    Change Column Data Type
+    
+        Change Column Data Type
 
 
     
     </td>
     <td valign="top">
-
-    Warning listing all dependent objects that use the column.
+    
+        Warning listing all dependent objects that use the column.
 
     > ### Note:  
     > You cannot change the data type of any columns that are used by a data access control \(see [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:\).
@@ -84,15 +84,15 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     </tr>
     <tr>
     <td valign="top">
-
-    Delete Column
+    
+        Delete Column
 
 
     
     </td>
     <td valign="top">
-
-    Warning listing all dependent objects that use the column.
+    
+        Warning listing all dependent objects that use the column.
 
     Column deletions will break dependent objects that use these columns. The last user to edit a dependent object will receive a notification inviting them to review the changes.
 
@@ -102,15 +102,15 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     </tr>
     <tr>
     <td valign="top">
-
-    Add, Delete, or Change Data Type of Input Parameter
+    
+        Add, Delete, or Change Data Type of Input Parameter
 
 
     
     </td>
     <td valign="top">
-
-    Warning listing all dependent objects.
+    
+        Warning listing all dependent objects.
 
     All changes to input parameters must be processed in all dependent objects.
 
@@ -123,15 +123,15 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     </tr>
     <tr>
     <td valign="top">
-
-    Change Business Properties
+    
+        Change Business Properties
 
 
     
     </td>
     <td valign="top">
-
-    None.
+    
+        None.
 
     Changes to the business name and other business properties of the object or its columns are propagated to dependent objects.
 

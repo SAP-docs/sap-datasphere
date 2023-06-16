@@ -36,15 +36,15 @@ Users with the *DW Space Administrator* or *DW Integrator* role \(space administ
     </tr>
     <tr>
     <td valign="top">
-
-    Database User Name Suffix
+    
+        Database User Name Suffix
 
 
     
     </td>
     <td valign="top">
-
-    Enter the name of your database user, which will be appended to the space name to give the name of the Open SQL schema.
+    
+        Enter the name of your database user, which will be appended to the space name to give the name of the Open SQL schema.
 
     Can contain a maximum of \(40 minus the space name\) uppercase letters or numbers and must not contain spaces or special characters other than \_ \(underscore\).
 
@@ -54,15 +54,15 @@ Users with the *DW Space Administrator* or *DW Integrator* role \(space administ
     </tr>
     <tr>
     <td valign="top">
-
-    Enable Password Policy
+    
+        Enable Password Policy
 
 
     
     </td>
     <td valign="top">
-
-    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with the DW Administrator role (administrators) can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
+    
+        Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with the DW Administrator role (administrators) can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
 
 
     
@@ -70,15 +70,15 @@ Users with the *DW Space Administrator* or *DW Integrator* role \(space administ
     </tr>
     <tr>
     <td valign="top">
-
-    Enable Automated Predictive Library and Predictive Analysis Library
+    
+        Enable Automated Predictive Library and Predictive Analysis Library
 
 
     
     </td>
     <td valign="top">
-
-    Allow the user to access the SAP HANA Cloud machine learning libraries.
+    
+        Allow the user to access the SAP HANA Cloud machine learning libraries.
 
     For information about enabling and using these libraries, see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: 
 
@@ -88,15 +88,15 @@ Users with the *DW Space Administrator* or *DW Integrator* role \(space administ
     </tr>
     <tr>
     <td valign="top">
-
-    Enable Read Access \(SQL\)
+    
+        Enable Read Access \(SQL\)
 
 
     
     </td>
     <td valign="top">
-
-    Allow the user to read all views that have *Expose for Consumption* enabled via their Open SQL schema.
+    
+        Allow the user to read all views that have *Expose for Consumption* enabled via their Open SQL schema.
 
     You can also enable:
 
@@ -109,15 +109,15 @@ Users with the *DW Space Administrator* or *DW Integrator* role \(space administ
     </tr>
     <tr>
     <td valign="top">
-
-    Enable Write Access \(SQL, DDL, DML\)
+    
+        Enable Write Access \(SQL, DDL, DML\)
 
 
     
     </td>
     <td valign="top">
-
-    Allow the user to create objects and write data to their Open SQL schema. These objects are available to any modeler working in the space for use as sources for their views and data flows \(see [Using the Source Browser](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7d2b21d974e44bdc9d548cf7532b5a43.html "You use the Source Browser to add objects as sources for your data flow, graphical view, SQL view, or intelligent lookup. In an E/R model you add objects to visualize them together in a diagram, including importing objects from connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
+    
+        Allow the user to create objects and write data to their Open SQL schema. These objects are available to any modeler working in the space for use as sources for their views and data flows \(see [Using the Source Browser](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7d2b21d974e44bdc9d548cf7532b5a43.html "You use the Source Browser to add objects as sources for your data flow, graphical view, SQL view, or intelligent lookup. In an E/R model you add objects to visualize them together in a diagram, including importing objects from connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
 
 
     
@@ -125,15 +125,15 @@ Users with the *DW Space Administrator* or *DW Integrator* role \(space administ
     </tr>
     <tr>
     <td valign="top">
-
-    Enable Audit Logs for Read Operations / Enable Audit Logs for Change Operations
+    
+        Enable Audit Logs for Read Operations / Enable Audit Logs for Change Operations
 
 
     
     </td>
     <td valign="top">
-
-    Enable logging of all read and change operations performed by the user.
+    
+        Enable logging of all read and change operations performed by the user.
 
     For more information, see [Enable or Disable Audit Logging](../../enable-or-disable-audit-logging-2665539.md).
 

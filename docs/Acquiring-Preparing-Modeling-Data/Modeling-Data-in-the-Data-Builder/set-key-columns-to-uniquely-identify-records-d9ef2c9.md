@@ -34,26 +34,26 @@ Mapping Keys When Creating Associations
 <tr>
 <td valign="top">
 
-*Analytical Dataset*
+*Fact*
 
-See [Creating an Analytical Dataset](creating-an-analytical-dataset-30089bd.md).
-
-
-
-</td>
-<td valign="top">
-
-You may set one or more key attributes for an *Analytical Dataset*, but none are required.
+See [Creating a Fact](creating-a-fact-30089bd.md).
 
 
 
 </td>
 <td valign="top">
 
-An *Analytical Dataset* can point to a:
+You may set one or more key attributes for a *Fact*, but none are required.
 
--   *Dimension* - One attribute in the \(source\) *Analytical Dataset* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
--   *Text Entity* - An attribute in the \(source\) *Analytical Dataset* must be mapped to the \(target\) *Text Entity* identifier key column.
+
+
+</td>
+<td valign="top">
+
+A *Fact* can point to a:
+
+-   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
+-   *Text Entity* - An attribute in the \(source\) *Fact* must be mapped to the \(target\) *Text Entity* identifier key column.
 
 
 

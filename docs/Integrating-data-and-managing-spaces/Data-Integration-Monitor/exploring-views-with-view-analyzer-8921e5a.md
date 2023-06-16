@@ -74,31 +74,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        *Entity Name*
+        
+                *Entity Name*
 
 
         
         </td>
         <td valign="top">
-
-        Name of the analyzed entity. It can be a local or a remote table, a view, a shared entity, an external entity, an intelligent lookup and or a data access control.
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        *Persisted*
-
-
-        
-        </td>
-        <td valign="top">
-
-        Indicates if the view is already persisted, or the remote table replicated.
+                Name of the analyzed entity. It can be a local or a remote table, a view, a shared entity, an external entity, an intelligent lookup and or a data access control.
 
 
         
@@ -106,15 +90,31 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        *Partitions*
+        
+                *Persisted*
 
 
         
         </td>
         <td valign="top">
+        
+                Indicates if the view is already persisted, or the remote table replicated.
 
-        Indicates if partitions have been defined for the analyzed views.
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Partitions*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Indicates if partitions have been defined for the analyzed views.
 
         > ### Note:  
         > If partitions have been defined for remote tables, it's not displayed. Only partitions defined for views are indicated by the *View Analyzer*.
@@ -125,31 +125,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        *Peak Memory \(MiB\)*
+        
+                *Peak Memory \(MiB\)*
 
 
         
         </td>
         <td valign="top">
-
-        Indicates the memory used during the simulation, or in case of the view already persisted, the memory used to persist the view.
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        *Row*
-
-
-        
-        </td>
-        <td valign="top">
-
-        Indicates the number of rows
+                Indicates the memory used during the simulation, or in case of the view already persisted, the memory used to persist the view.
 
 
         
@@ -157,15 +141,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        *Duration*
+        
+                *Row*
 
 
         
         </td>
         <td valign="top">
-
-        Indicates the duration in second to persist the view \(simulation or actual persistency\).
+        
+                Indicates the number of rows
 
 
         
@@ -173,15 +157,31 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        *Adapter*
+        
+                *Duration*
 
 
         
         </td>
         <td valign="top">
+        
+                Indicates the duration in second to persist the view \(simulation or actual persistency\).
 
-        Indicates if an adapter is used to access the remote table source.
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Adapter*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Indicates if an adapter is used to access the remote table source.
 
 
         
@@ -217,15 +217,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        <span class="FPA-icons"></span> \(Sort\)
+        
+                <span class="FPA-icons"></span> \(Sort\)
 
 
         
         </td>
         <td valign="top">
-
-        Set sort order and sort columns:
+        
+                Set sort order and sort columns:
 
         ![](images/Sort_View_Analyzer_Results_dd1987f.png)
 
@@ -235,15 +235,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        <span class="SAP-icons"></span> \(Filter\)
+        
+                <span class="SAP-icons"></span> \(Filter\)
 
 
         
         </td>
         <td valign="top">
-
-        Filter your results:
+        
+                Filter your results:
 
         ![](images/Filter_View_Analyzer_Results_1615f32.png)
 
@@ -253,15 +253,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-         <span class="FPA-icons"></span> \(Inspect\)
+        
+                 <span class="FPA-icons"></span> \(Inspect\)
 
 
         
         </td>
         <td valign="top">
-
-        Display the whole list of results that you can also export in CSV format:
+        
+                Display the whole list of results that you can also export in CSV format:
 
         ![](images/View_Analyzer_Full_list_of_Results_6fb1d68.png)
 
@@ -271,15 +271,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        *Start Analyzer*
+        
+                *Start Analyzer*
 
 
         
         </td>
         <td valign="top">
-
-        You can select one or more views and start a new view analyzer.
+        
+                You can select one or more views and start a new view analyzer.
 
         > ### Note:  
         > The analyzer will always start from the main view. Selecting the views here in the entity list, or in the lineage graph has an effect only on the persistency simulation. In case memory consumption is chosen, the persistency simulation will be executed for the selected views, regardless of their persistency status.
@@ -290,15 +290,15 @@ To use the *View Analyzer*,
         </tr>
         <tr>
         <td valign="top">
-
-        <span class="FPA-icons"></span> \(Lineage View\)
+        
+                <span class="FPA-icons"></span> \(Lineage View\)
 
 
         
         </td>
         <td valign="top">
-
-        Display the Lineage graph:
+        
+                Display the Lineage graph:
 
         ![](images/View_Analyzer_Impact_and_Lineage_graph_fcf57ea.png)
 

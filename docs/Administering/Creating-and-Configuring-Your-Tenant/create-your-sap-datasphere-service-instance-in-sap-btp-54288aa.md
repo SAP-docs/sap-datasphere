@@ -128,31 +128,15 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     </tr>
     <tr>
     <td valign="top">
-
-    *Service*
+    
+        *Service*
 
 
     
     </td>
     <td valign="top">
-
-    Select SAP Datasphere.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    *Plan*
-
-
-    
-    </td>
-    <td valign="top">
-
-    Select *Standard* or *Free*.
+        Select SAP Datasphere.
 
 
     
@@ -160,31 +144,15 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     </tr>
     <tr>
     <td valign="top">
-
-    *Runtime Environment*
+    
+        *Plan*
 
 
     
     </td>
     <td valign="top">
-
-    Select *Cloud Foundry*.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    *Space*
-
-
-    
-    </td>
-    <td valign="top">
-
-    \[no selection needed if you're creating the instance from the space area\] Select the SAP BTP space in which you want to create the service instance.
+        Select *Standard* or *Free*.
 
 
     
@@ -192,15 +160,47 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     </tr>
     <tr>
     <td valign="top">
-
-    *Instance Name*
+    
+        *Runtime Environment*
 
 
     
     </td>
     <td valign="top">
+    
+        Select *Cloud Foundry*.
 
-    Enter a name to identify your instance \(up to 32 alphanumeric characters, periods, underscores, and hyphens; cannot contain white spaces\).
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        *Space*
+
+
+    
+    </td>
+    <td valign="top">
+    
+        \[no selection needed if you're creating the instance from the space area\] Select the SAP BTP space in which you want to create the service instance.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        *Instance Name*
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Enter a name to identify your instance \(up to 32 alphanumeric characters, periods, underscores, and hyphens; cannot contain white spaces\).
 
 
     

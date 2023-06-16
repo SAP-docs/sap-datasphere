@@ -87,7 +87,7 @@ An *OTHERS* partition is set by default. It contains data that is not covered by
 
 ## Locking Partitions to Avoid Unnecessary Data Loads
 
-When you think the data will no longer change, or no change is expected for a while, you can check this option to avoid unnecessary data load. However, if you change the partitions definition, even the locked partitions will be updated.
+When you think the data will no longer change, or no change is expected for a while, you can check this option to avoid unnecessary data load.
 
 In the example below, I defined 2 partitions as *Locked* \(partitions 2 and 3\):
 
@@ -96,6 +96,14 @@ In the example below, I defined 2 partitions as *Locked* \(partitions 2 and 3\):
 When I load a new snapshot, only partitions 1, 4 and OTHERS are refreshed:
 
  ![](images/Message_Locked_Partitions_Defined_6d6de8f.png)
+
+> ### Note:  
+> If you change the partition definition, you can lock unchanged partitions to avoid unnecessary data loads. In the case of adding partitions, if you lock the unchanged partitions, only the new partitions will be loaded \(Locking new partitions is ineffective, as they need to be updated once after they are introduced. They will only be locked in the subsequent runs.\)
+> 
+> A full snapshot load will happen for the following cases:
+> 
+> -   You have no locked partitions.
+> -   You have changed the partitioning column. A full snapshot will happen at next data load.
 
 
 

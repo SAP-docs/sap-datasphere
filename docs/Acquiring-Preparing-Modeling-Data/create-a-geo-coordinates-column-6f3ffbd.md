@@ -12,8 +12,8 @@ Create a geo-coordinates column to combine latitude and longitude values and out
 
 You can create a geo coordinates only in a graphical view with a semantic usage of *Dimension*. To use the geo-coordinates column in SAP Analytics Cloud you must:
 
--   Create a view with a semantic usage of *Analytical Dataset* and enable *Expose for Consumption*.
--   Create an association in your *Analytical Dataset* that points to your *Dimension*.
+-   Create a view with a semantic usage of *Fact* and enable *Expose for Consumption*.
+-   Create an association in your *Fact* that points to your *Dimension*.
 
 When using the geo-coordinates column in an SAP Analytics Cloud geo map, the following types of layers are supported:
 
@@ -68,15 +68,15 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+    
+        Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 
     
@@ -84,15 +84,15 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     </tr>
     <tr>
     <td valign="top">
-
-    Technical Name
+    
+        Technical Name
 
 
     
     </td>
     <td valign="top">
-
-    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -105,15 +105,15 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     </tr>
     <tr>
     <td valign="top">
-
-    Spatial Reference Identifier
+    
+        Spatial Reference Identifier
 
 
     
     </td>
     <td valign="top">
-
-    Every spatial reference system has an identifier called a *Spatial Reference Identifier* \(or *SRID*\). By default, it is set to *4326* but can be changed to *0* or *3857*. For more information, see [Spatial Reference Identifier on SAP HANA](https://help.sap.com/viewer/cbbbfc20871e4559abfd45a78ad58c02/2.0.02/en-US/7a2ea357787c101488ecd1b725836f07.html).
+    
+        Every spatial reference system has an identifier called a *Spatial Reference Identifier* \(or *SRID*\). By default, it is set to *4326* but can be changed to *0* or *3857*. For more information, see [Spatial Reference Identifier on SAP HANA](https://help.sap.com/viewer/cbbbfc20871e4559abfd45a78ad58c02/2.0.02/en-US/7a2ea357787c101488ecd1b725836f07.html).
 
 
     
@@ -121,15 +121,15 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     </tr>
     <tr>
     <td valign="top">
-
-    Latitude and Longitude
+    
+        Latitude and Longitude
 
 
     
     </td>
     <td valign="top">
-
-    These columns must have string or double as data types.
+    
+        These columns must have string or double as data types.
 
 
     
@@ -146,7 +146,7 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
 
 6.  Open a view that will point to your *Dimension* with an association and set its properties as follows:
 
-    -   *Semantic Usage* - *Analytical Dataset*
+    -   *Semantic Usage* - *Fact*
     -   *Expose for Consumption* - Enabled
     -   Create an association and point to your dimension.
 

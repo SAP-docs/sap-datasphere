@@ -32,31 +32,15 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-
-    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+        Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 
     
@@ -64,15 +48,15 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     </tr>
     <tr>
     <td valign="top">
-
-    Semantic Usage
+    
+        Technical Name
 
 
     
     </td>
     <td valign="top">
-
-    Choose *Hierarchy*.
+    
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
 
     
@@ -80,15 +64,31 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     </tr>
     <tr>
     <td valign="top">
-
-    Parent Column / Child Column
+    
+        Semantic Usage
 
 
     
     </td>
     <td valign="top">
+    
+        Choose *Hierarchy*.
 
-    Select the columns containing the parent and child information for your hierarchy.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Parent Column / Child Column
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Select the columns containing the parent and child information for your hierarchy.
 
     > ### Note:  
     > The parent column and the child column must be of the same data type.
@@ -99,15 +99,15 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     </tr>
     <tr>
     <td valign="top">
-
-    Expose for Consumption
+    
+        Expose for Consumption
 
 
     
     </td>
     <td valign="top">
-
-    In order to consume your hierarchy in SAP Analytics Cloud, you must enable the *Expose for Consumption* switch.
+    
+        In order to consume your hierarchy in SAP Analytics Cloud, you must enable the *Expose for Consumption* switch.
 
 
     

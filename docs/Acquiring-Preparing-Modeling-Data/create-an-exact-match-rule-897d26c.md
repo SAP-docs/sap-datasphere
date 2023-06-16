@@ -34,31 +34,15 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Enter a name for your rule to identify it in the diagram.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Match Strategy
-
-
-    
-    </td>
-    <td valign="top">
-
-    Choose *Exact Match*.
+        Enter a name for your rule to identify it in the diagram.
 
 
     
@@ -66,15 +50,15 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    Input Scope
+    
+        Match Strategy
 
 
     
     </td>
     <td valign="top">
-
-    \[read-only\] Specifies which input records are processed by the rule.
+    
+        Choose *Exact Match*.
 
 
     
@@ -82,15 +66,31 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    Lookup Scope
+    
+        Input Scope
 
 
     
     </td>
     <td valign="top">
+    
+        \[read-only\] Specifies which input records are processed by the rule.
 
-    \[read-only\] Specifies which lookup records are available for matching by the rule.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Lookup Scope
+
+
+    
+    </td>
+    <td valign="top">
+    
+        \[read-only\] Specifies which lookup records are available for matching by the rule.
 
 
     
@@ -122,15 +122,15 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    ![](images/Exact_Match_-_One_Column_Pair_54e2255.png)
+    
+        ![](images/Exact_Match_-_One_Column_Pair_54e2255.png)
 
 
     
     </td>
     <td valign="top">
-
-    An input record is matched with a lookup record if:
+    
+        An input record is matched with a lookup record if:
 
     -   The value in the input `County` column exactly matches the value in the lookup `County Name` column.
 
@@ -140,15 +140,15 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    ![](images/Exact_Match_-_Two_Column_Pairs_adecfff.png)
+    
+        ![](images/Exact_Match_-_Two_Column_Pairs_adecfff.png)
 
 
     
     </td>
     <td valign="top">
-
-    An input record is matched with a lookup record if:
+    
+        An input record is matched with a lookup record if:
 
     -   The value in the input `Town` column exactly matches the value in the lookup `Town Name` column, and
     -   The value in the input `County` column exactly matches the value in the lookup `County Name` column.
@@ -184,15 +184,15 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    Case-Sensitive
+    
+        Case-Sensitive
 
 
     
     </td>
     <td valign="top">
-
-    Disable this option to allow case-insensitive matching. 
+    
+        Disable this option to allow case-insensitive matching. 
 
     By default, exact match rules are case-sensitive so that, for example, an input column containing the string "`paris`" will not be matched with a lookup column containing "`Paris`".
 
@@ -202,15 +202,15 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     <tr>
     <td valign="top">
-
-    Trim Leading and Trailing Whitespace 
+    
+        Trim Leading and Trailing Whitespace 
 
 
     
     </td>
     <td valign="top">
-
-    Disable this option to take into account any space characters preceding or following string values. 
+    
+        Disable this option to take into account any space characters preceding or following string values. 
 
     By default, exact match rules trim whitespace so that, for example, an input column containing the string "`London`" or `London` will be matched with a lookup column containing `London`.
 

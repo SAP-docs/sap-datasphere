@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Creating an Analytical Dataset
+# Creating a Fact
 
-Select a *Semantic Usage* of *Analytical Dataset* to indicate that your entity contains numerical measures that can be analyzed.
+Select a *Semantic Usage* of *Fact* to indicate that your entity contains numerical measures that can be analyzed.
 
 
 
@@ -12,13 +12,13 @@ Select a *Semantic Usage* of *Analytical Dataset* to indicate that your entity c
 
 ## Context
 
-Analytical datasets typically contain transactional data, such as:
+Facts typically contain transactional data, such as:
 
 -   Financial - Sales, Purchases, Orders
 -   Logistical - Deliveries, Orders
 -   Organizational - Attendance, Leave, Salaries, Expenses
 
-In this example, *Regional Sales* is an *Analytical Dataset* with:
+In this example, *Regional Sales* is a *Fact* with:
 
 -   Three measures: *Net Sales*, *Gross Sales*, and *Quantity*.
 -   Associations to three dimensions: *Time Dimension - Day*, *Geo Dimension*, and *Product Dimension*.
@@ -29,12 +29,12 @@ In this example, *Regional Sales* is an *Analytical Dataset* with:
 
 ## Procedure
 
-1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Analytical Dataset*.
+1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Fact*.
 
 2.  \[views\] To make your view available for consumption outside SAP Datasphere enable the *Expose for Consumption* property \(see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:\).
 
     > ### Note:  
-    > To consume your fact data in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
+    > To consume your data in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 3.  Specify one or more measures \(see [Specify Measures](specify-measures-33f7f29.md)\).
 
@@ -43,16 +43,16 @@ In this example, *Regional Sales* is an *Analytical Dataset* with:
 5.  \[optional\] Set attributes as keys to indicate that the data they contain can uniquely identify records.
 
     > ### Note:  
-    > You may set one or more key attributes for an *Analytical Dataset*, but none are required.
+    > You may set one or more key attributes for a *Fact*, but none are required.
 
     To set an attribute as a key column, select the checkbox in the *Key* column or hover over the attribute in the side panel and click <span class="FPA-icons"></span> \(Menu\)** \> *Set as Key*.
 
 6.  \[optional\] Create associations to point to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
 
-    An *Analytical Dataset* can point to a:
+    A *Fact* can point to a:
 
-    -   *Dimension* - One attribute in the \(source\) *Analytical Dataset* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
-    -   *Text Entity* - An attribute in the \(source\) *Analytical Dataset* must be mapped to the \(target\) *Text Entity* identifier key column.
+    -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
+    -   *Text Entity* - An attribute in the \(source\) *Fact* must be mapped to the \(target\) *Text Entity* identifier key column.
 
 7.  Complete or consult other sections as appropriate:
 

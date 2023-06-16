@@ -58,15 +58,15 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     </tr>
     <tr>
     <td valign="top">
-
-    :arrow_right:
+    
+        :arrow_right:
 
 
     
     </td>
     <td valign="top">
-
-    Click to create a flow to another operator in the data flow. Drag and drop the yellow dotted line to the required operator to which you want to connect.
+    
+        Click to create a flow to another operator in the data flow. Drag and drop the yellow dotted line to the required operator to which you want to connect.
 
 
     
@@ -74,15 +74,15 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="FPA-icons"></span> \(Preview Data\)
+    
+         <span class="FPA-icons"></span> \(Preview Data\)
 
 
     
     </td>
     <td valign="top">
-
-    Click to preview data of the selected operator. The Data Preview section is displayed.
+    
+        Click to preview data of the selected operator. The Data Preview section is displayed.
 
     > ### Note:  
     > -   If the table is wide or contains a number of large column types, the result in data preview may be truncated in order to avoid out of memory issues.
@@ -94,15 +94,15 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     </tr>
     <tr>
     <td valign="top">
-
-    <span class="FPA-icons"></span> \(Remove\)
+    
+        <span class="FPA-icons"></span> \(Remove\)
 
 
     
     </td>
     <td valign="top">
-
-    Click to delete the selected operator.
+    
+        Click to delete the selected operator.
 
     > ### Note:  
     > You can also delete the selected operator by clicking <span class="FPA-icons"></span> in the toolbar.

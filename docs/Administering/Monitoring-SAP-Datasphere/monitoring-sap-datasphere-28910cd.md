@@ -444,7 +444,7 @@ Shows the 5 spaces with the highest number of queued statements in the last 24 h
 </table>
 
 > ### Note:  
-> -   To investigate why statements are being queued or rejected, you can click *Open SAP HANA Cockpit* in the widgets dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Investigate Database Issues](create-a-database-analysis-user-to-investigate-database-issues-c28145b.md).
+> -   To investigate why statements are being queued or rejected, you can click *Open SAP HANA Cockpit* in the widgets dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
 > 
 > -   For more information about admission control thresholds, see [Set a Priority and Statement Limits for a Space](../Creating-Spaces-and-Allocating-Storage/set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
 
@@ -1002,6 +1002,9 @@ Shows the maximum amount of CPU time \(in ms\) the statement has used in SAP HAN
 <td valign="top">
 
 Shows the *More* link that you can click to view the complete SQL statement.
+
+> ### Note:  
+> For MDS queries - If you’ve enabled the tracing of MDS information \(see [Analyze Monitoring Data in a Space](analyze-monitoring-data-in-a-space-9cd0691.md)\), the payload of the MDS query that is run by SAP Analytics Cloud is displayed. If identified in the payload, the following information is also displayed: story ID, story name and data sources. You can copy or download the displayed information.
 
 
 

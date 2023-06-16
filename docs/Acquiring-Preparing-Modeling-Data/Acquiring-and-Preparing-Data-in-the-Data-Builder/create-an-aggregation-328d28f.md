@@ -42,15 +42,15 @@ Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT`
     </tr>
     <tr>
     <td valign="top">
-
-    *Label*
+    
+        *Label*
 
 
     
     </td>
     <td valign="top">
-
-    Provide a suitable name for your aggregation as per your requirement.
+    
+        Provide a suitable name for your aggregation as per your requirement.
 
 
     

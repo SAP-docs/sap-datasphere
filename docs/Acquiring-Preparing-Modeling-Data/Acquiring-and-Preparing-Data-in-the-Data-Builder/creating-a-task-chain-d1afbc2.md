@@ -30,7 +30,7 @@ Linear task chains allow you to define a group or series of tasks and execute th
 
 Parallel task chain branches allow you to specify that some individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
-Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, and Data Flow runs.
+Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, Intelligent Lookup, and Data Flow runs.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -40,7 +40,7 @@ After deploying a task chain, you can add tenant users or email addresses to not
 You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 > ### Note:  
-> Exporting and importing task chains via the <span class="FPA-icons"></span> \(*Transport*\) app is not supported for SAP Datasphere tenants provisioned prior to version 2021.03.
+> Exporting and importing task chains via the <span class="FPA-icons"></span> \(*Transport*\) app may not be supported for SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
 
 This topic contains information on performing the following tasks:
 
@@ -100,31 +100,15 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Name of the task chain
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-
-    Technical name of the task chain
+        Name of the task chain
 
 
     
@@ -132,31 +116,15 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Technical Name
 
 
     
     </td>
     <td valign="top">
-
-    Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Objects in the task chain
-
-
-    
-    </td>
-    <td valign="top">
-
-    Displays all objects that have been added to the task chain
+        Technical name of the task chain
 
 
     
@@ -164,15 +132,15 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Run Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-    Displays the current run status of the task chain: Not run yet, running, failed, or completed.
+    
+        Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
 
 
     
@@ -180,15 +148,47 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Email Notifications
+    
+        Objects in the task chain
 
 
     
     </td>
     <td valign="top">
+    
+        Displays all objects that have been added to the task chain
 
-    Set up email notification for task chain run completion.
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Run Status
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Displays the current run status of the task chain: Not run yet, running, failed, or completed.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Email Notifications
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Set up email notification for task chain run completion.
 
 
     
@@ -226,31 +226,15 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Business Name
+    
+        Business Name
 
 
     
     </td>
     <td valign="top">
-
-    Name of the object
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-
-    Technical name of the object
+        Name of the object
 
 
     
@@ -258,15 +242,15 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Object Type
+    
+        Technical Name
 
 
     
     </td>
     <td valign="top">
-
-    A remote table, view, or data flow
+    
+        Technical name of the object
 
 
     
@@ -274,19 +258,36 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Activity
+    
+        Object Type
 
 
     
     </td>
     <td valign="top">
+    
+        A remote table, view, or data flow
 
-    Activity that will be triggered by the task chain:
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        Activity
+
+
+    
+    </td>
+    <td valign="top">
+    
+        Activity that will be triggered by the task chain:
 
     -   Remote table - Replicate
 
     -   View - Persist
+    -   Intelligent Lookup - Run
     -   Data flow - Run
 
 
@@ -295,15 +296,15 @@ This topic contains information on performing the following tasks:
     </tr>
     <tr>
     <td valign="top">
-
-    Status
+    
+        Status
 
 
     
     </td>
     <td valign="top">
-
-    Deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
+    
+        Deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
 
 
     
