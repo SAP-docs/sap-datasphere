@@ -497,7 +497,7 @@ This third file will update the *Space Priority*, and will leave the other param
 ```
 
 > ### Note:  
-> The following properties are not supported when creating, reading, or updating spaces using `dwc`:
+> The following properties are not supported when creating, reading, or updating spaces using `datasphere`:
 > 
 > -   *Connections*
 > -   *Time Data*
@@ -627,7 +627,7 @@ For example, the following file will add three members to `NEWSPACE`:
 }
 ```
 
-When updating space members via `dwc`, you must always list all members that you want to have assigned to the space. This second file will add two new members and remove `peter.parker@sap.com`:
+When updating space members via `datasphere`, you must always list all members that you want to have assigned to the space. This second file will add two new members and remove `peter.parker@sap.com`:
 
 ```
 {
@@ -963,7 +963,7 @@ For example, the following file will add a database user to `NEWSPACE`:
 ```
 
 > ### Note:  
-> You can use the `dwc dbusers password reset` command to obtain a new password for a database user \(see[Manage Spaces via the Command Line](manage-spaces-via-the-command-line-5eac5b7.md)\).
+> You can use the `datasphere dbusers password reset` command to obtain a new password for a database user \(see[Manage Spaces via the Command Line](manage-spaces-via-the-command-line-5eac5b7.md)\).
 
 
 

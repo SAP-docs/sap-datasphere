@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__S4_OP_usage)
 -   [Configuring Connection Properties](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -371,7 +371,7 @@ Description
 </td>
 <td valign="top">
 
- Set to *true* if you want to use the connection for data flows, replication flows, or model import. The default is *false*. 
+ Set to *true* if your source is an on-premise source and you want to use the connection for data flows or replication flows. The default is *false*. 
 
 
 
@@ -387,7 +387,10 @@ Description
 </td>
 <td valign="top">
 
- Select a location. 
+ Select a location ID. 
+
+> ### Note:  
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
 
 
 

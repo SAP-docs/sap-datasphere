@@ -100,5 +100,5 @@ CALL "DWC_GLOBAL"."DATA_LAKE_CREATE_VIRTUAL_TABLE"
                       ) ;
 ```
 
-For more information see [System Views \[Data Lake\]](https://help.sap.com/viewer/9f153559aeb5471d8aff9384cdc500db/cloud/en-US/92e2e6c466d844e0b0e961069aa3b8d7.html).
+For more information see [System Views in Data Lake Relational Engine \(SAP HANA DB-Managed\)](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/a898e08b84f21015969fa437e89860c8/92e2e6c466d844e0b0e961069aa3b8d7.html).
 

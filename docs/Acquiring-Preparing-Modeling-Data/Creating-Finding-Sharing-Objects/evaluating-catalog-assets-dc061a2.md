@@ -82,7 +82,7 @@ Tabs
 </td>
 <td valign="top">
 
-Select a tab to view more information about the asset, such as asset properties and descriptions or the **Impact and Lineage Analysis** diagram.
+Select a tab to view more information about the asset, such as asset properties and descriptions and the **Impact and Lineage Analysis** diagram.
 
 
 
@@ -118,16 +118,16 @@ Select the action you want to perform on the asset.
 
 
 
-Use the *Overview* tab to view detailed overview information about the asset and the glossary terms, tags, and KPIs linked to the asset. The *Overview* tab is divided into the following sections:
+Use the *Overview* tab to view general information about the asset and relationship links to the asset. The *Overview* tab is divided into the following sections:
 
 -   Overview
 
--   Terms, Tags, and KPIs
+-   Relationships
 
 
-**Asset Overview Details**
+**Asset Overview**
 
-Displays the properties and description of the asset. This information is extracted from a data source.
+Displays the properties and description of the asset. This information is extracted from a data source or the catalog.
 
 ![](images/CatalogCardPropertyDesc_1acb3e1.png)
 
@@ -161,35 +161,42 @@ Properties
 </td>
 <td valign="top">
 
-Displays read-only asset property information that is extracted from a data source. 
+Displays asset properties extracted from the data source and description information added by a catalog administrator. 
 
-Properties common among all assets include:
+Source properties common among all assets include:
 
--   *Asset Name*: The file name of the asset on the source system. For an asset in SAP Datasphere, the asset name is the Technical Name that is used in scripts and code and is synchronized with the business name.
+-   *Name*: The file name of the asset on the source system. Assets in SAP Analytics Cloud have one name that appears, *Name*.
 
--   *Source Created On*: The date and time on which the asset was created on the source system. The name of the user who created the asset is also shown.
+    Assets in SAP Datasphere have two names that appear: **Technical Name**, which is the name that is used in scripts and code and is synchronized with the business name, and *Business Name*, which is the descriptive name of the asset that helps you identify the asset.
 
--   *Source Changed On*: The date and time on which the asset was changed on the source system. The name of the user who changed the asset is also shown.
+-   *Created On*: The date and time on which the asset was created on the source system. The name of the user who created the asset is also shown.
+
+-   *Changed On*: The date and time on which the asset was changed on the source system. The name of the user who changed the asset is also shown.
 
 
-Properties common among SAP Datasphere assets include:
+Source properties that show information about the source system include:
 
--   *Source Business Name*: The descriptive name of the asset. This name helps users identify the asset.
+-   *Container Name*: Name of the location of the asset. For assets in SAP Datasphere, this is the space name. For assets in SAP Analytics Cloud, this is the parent folder name.
 
--   *Semantic Usage*: The way the entity should be used. For example, Analytical Dataset, Dimension, Hierarchy, or Text.
+-   *Container Business Name*: Business name of the location of the asset. For assets in SAP Datasphere, this is a descriptive name for the space.
+
+-   *Path*: Folder location of the asset. This path appears for assets in the SAP Analytics Cloud.
+
+-   *Type*: Type of location where the asset is saved. The location type appears for assets in the SAP Datasphere.
+
+
+Source properties common among SAP Datasphere assets include:
+
+-   *Semantic Usage*: The way the entity should be used. For example, Fact, Dimension, Hierarchy, or Text.
 
 -   *Exposed for Consumption*: An indicator that shows whether the asset is made available for consumption in SAP Analytics Cloud and other BI clients.
 
     For more information on these properties, see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md).
 
 
-The container information shows information about the source system:
+If the catalog administrator enriched the asset, the date of the change shows as a catalog property:
 
--   *Name*: Name of the location of the asset. For assets in SAP Datasphere, this is the space name. For assets in SAP Analytics Cloud, this is the parent folder name.
-
--   *Path*: Folder location of the asset. This path appears for assets in the SAP Analytics Cloud.
-
--   *Type*: Type of location where the asset is saved. The location type appears for assets in the SAP Datasphere.
+-   *Enriched On*: The date and time on which the date asset was modified by a catalog administrator. The name of the user who enriched the asset is also shown.
 
 
 
@@ -219,9 +226,12 @@ Displays the asset description, which has two parts.
 </tr>
 </table>
 
-**Asset Terms, Tags, and KPIs**
+**Asset Relationships**
 
-Displays the glossary terms, tags, and KPIs that have been linked to the asset. Only catalog administrators can link terms, tags, and KPIs to assets.
+Displays the relationships for the asset. These relationships can include glossary terms, tags, and KPIs that are linked to the asset.
+
+> ### Tip:  
+> If you're a catalog administrator who wants to manage relationships to assets, see [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "As a catalog administrator, learn how to set up governance for your assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
 
 ![](images/Asset_Detail_Term_Tag_ac5b3b4.png)
 
@@ -253,7 +263,7 @@ Glossary Terms
 </td>
 <td valign="top">
 
- Displays a list of business glossary terms that are linked to the asset. The terms visible are for the selected business glossary. You can select a different business glossary to view other terms that are linked to the asset.
+ Displays a list of business glossary terms that are linked to the asset. You can use the free text search to see if a particular term is linked to the asset. 
 
 
 
@@ -269,7 +279,7 @@ Tags
 </td>
 <td valign="top">
 
- Displays a hierarchical list of all tags that are linked to the asset. Tags help classify the types of assets that are in the catalog. To see if a particular tag is linked to an asset, use the search tags feature.
+ Displays a hierarchical list of all tags that are linked to the asset. Tags help classify the types of assets that are in the catalog. You can use the free text search to see if a particular tag is linked to the asset. 
 
 
 
@@ -285,7 +295,7 @@ KPIs
 </td>
 <td valign="top">
 
- Displays a list of all key performance indicators \(KPIs\) that are linked to the asset. KPIs are used to track business requirements or goals.
+ Displays a list of all key performance indicators \(KPIs\) that are linked to the asset. KPIs are used to track business requirements or goals. You can use the free text search to see if a particular KPI is linked to the asset. 
 
 
 
@@ -470,7 +480,7 @@ If you edited a file, the catalog automatically detects the change. The metadata
 
 After you evaluate and determine that the asset is the right one for your needs, you can use it as part of a data project to build something new. For example:
 
--   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md) or [Modeling Data in the Business Builder](../Buisiness-Builder/modeling-data-in-the-business-builder-3829d46.md).
+-   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md) or [Modeling Data in the Data Builder](../Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
 -   As a content creator in SAP Analytics Cloud, you can use the asset in data object \(for example, a story or digital boardroom\). For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 

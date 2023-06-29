@@ -23,13 +23,13 @@ The following procedures are available in the schema `DWC_GLOBAL`:
                       ).
 ```
 
--   This procedure provides the option to create SAP HANA virtual tables in the open SQL schema that refer to objects in data lake. These virtual tables are used to query data in the data lake. For more information see [Data Lake SQL Statements Versus SAP HANA Cloud SQL Statements](https://help.sap.com/viewer/071308868de34b289a6b1553b8cc37b9/cloud/en-US/f23b60ec161a46f9b906eac15c5a3b95.html).
+-   This procedure provides the option to create SAP HANA virtual tables in the open SQL schema that refer to objects in data lake. These virtual tables are used to query data in the data lake. For more information see [What's the Difference Between Data Lake Relational Engine and SAP HANA Database SQL Statements?](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/9220e7fec0fe4503b5c5a6e21d584e63/f23b60ec161a46f9b906eac15c5a3b95.html).
 
-    The procedure can also be used to access system views of data lake in schema `SYS`. The optional `IN` parameter `IN_TARGET_SCHEMA_SYS` needs to be to true to create a virtual table on a data lake system view. For more information see [System Views \[Data Lake\]](https://help.sap.com/viewer/9f153559aeb5471d8aff9384cdc500db/cloud/en-US/92e2e6c466d844e0b0e961069aa3b8d7.html).
+    The procedure can also be used to access system views of data lake in schema `SYS`. The optional `IN` parameter `IN_TARGET_SCHEMA_SYS` needs to be to true to create a virtual table on a data lake system view. For more information see [System Views in Data Lake Relational Engine \(SAP HANA DB-Managed\)](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/a898e08b84f21015969fa437e89860c8/92e2e6c466d844e0b0e961069aa3b8d7.html).
 
     Virtual tables can be dropped directly using `DROP TABLE` <virtual\_table\_name\> syntax.
 
-    For more information see [Query Data Lake Data](https://help.sap.com/viewer/071308868de34b289a6b1553b8cc37b9/cloud/en-US/9c80f123c5d74f71a9f536682f2f479c.html).
+    For more information see [Query Data in Data Lake Relational Engine \(SAP HANA DB-Managed\)](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/9220e7fec0fe4503b5c5a6e21d584e63/9c80f123c5d74f71a9f536682f2f479c.html).
 
 
 

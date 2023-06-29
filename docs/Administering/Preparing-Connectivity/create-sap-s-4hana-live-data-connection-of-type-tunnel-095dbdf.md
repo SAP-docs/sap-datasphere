@@ -8,6 +8,14 @@ To securely connect to SAP S/4HANA on-premise when searching for ABAP CDS Views 
 
 
 
+<a name="loio095dbdf8db444b279e61b1dcf64150a2__prereq_o3n_brv_rxb"/>
+
+## Prerequisites
+
+See: [Model Import](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
+
+
+
 ## Procedure
 
 1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
@@ -59,5 +67,5 @@ To securely connect to SAP S/4HANA on-premise when searching for ABAP CDS Views 
 
 ## Results
 
-The connection is saved and now available for selection in the SAP Datasphere connection creation wizard for the SAP S/4HANA On-Premise connection.
+The connection is saved and now available for selection in the SAP Datasphere connection creation wizard for the *SAP S/4HANA On-Premise* connection.
 

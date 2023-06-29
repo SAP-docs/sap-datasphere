@@ -20,7 +20,7 @@ You can search for assets by clicking <span class="SAP-icons"></span>\(*Catal
 
 Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-From the third character, the field will begin proposing objects and search strings. Click on an object to open it directly. Click on a string to trigger a search on it.
+As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
 Filter the search results based on selected criteria to limit the number of results. There are five tabs next to the *Filter* icon that you can use to narrow your results:
 

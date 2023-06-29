@@ -4,7 +4,7 @@
 
 # Manage Your Space via the Command Line
 
-You can use the SAP Datasphere command line interface, `dwc`, to read, update, and delete your space. You can set space properties, assign \(or remove\) members, create database users, create or update objects \(tables, views, and data access controls\), and associate HDI containers to your space.
+You can use the SAP Datasphere command line interface, `datasphere`, to read, update, and delete your space. You can set space properties, assign \(or remove\) members, create database users, create or update objects \(tables, views, and data access controls\), and associate HDI containers to your space.
 
 The following sections are available in this topic:
 
@@ -18,7 +18,7 @@ The following sections are available in this topic:
 -   [Log Out of an SAP Datasphere OAuth Client](manage-your-space-via-the-command-line-34404bf.md#loio34404bf73b2949be8dce0b772fa5d443__section_oauth_logout)
 
 > ### Note:  
-> See the blog [@sap/dwc-cli: Command-Line Interface for SAP Datasphere: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.
+> See the blog [@sap/datasphere-cli: Command-Line Interface for SAP Datasphere: Overview](https://blogs.sap.com/2022/09/01/sap-dwc-cli-command-line-interface-for-sap-data-warehouse-cloud-overview/) \(updated September 2022\) for a summary of blogs about working with the command line interface.
 
 
 
@@ -26,7 +26,7 @@ The following sections are available in this topic:
 
 ## Prerequisites
 
-To use `dwc` to manage your space you must install it \(see [Install or Update the dwc Command Line Interface](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (dwc) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Space Administrator* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
+To use `datasphere` to manage your space you must install it \(see [Install or Update the datasphere Command Line Interface](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (datasphere) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Space Administrator* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
 
 
 
@@ -34,7 +34,7 @@ To use `dwc` to manage your space you must install it \(see [Install or Update t
 
 ## Log Into an SAP Datasphere OAuth Client
 
-We recommend that an administrator create an OAuth client for `dwc` command line interface users to log into for authorization \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+We recommend that an administrator create an OAuth client for `datasphere` command line interface users to log into for authorization \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
 
 > ### Note:  
 > If an OAuth client is not available, users must provide a passcode for each command that they issue.
@@ -44,7 +44,7 @@ To log in, enter one of the following commands and press [Return\]:
 -   To pass the OAuth client information as options, enter:
 
     ```
-    dwc login 
+    datasphere login 
         --client-id "<id>" 
         --client-secret "<secret>" 
         --authorization-url "<url>" 
@@ -57,7 +57,7 @@ To log in, enter one of the following commands and press [Return\]:
 -   To pass the OAuth client information in a secrets file, enter:
 
     ```
-    dwc login 
+    datasphere login 
         --secrets-file <file>.json
     ```
 
@@ -135,7 +135,7 @@ To log in, enter one of the following commands and press [Return\]:
     > Secrets files use versions of the options with underscores instead of hyphens.
 
 
-For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for dwc command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:.
+For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:.
 
 
 
@@ -146,7 +146,7 @@ For more information about these commands and how to extract your tokens, see [L
 To list the spaces available to you on the tenant, enter the following command and press [Return\]:
 
 ```
-dwc spaces list 
+datasphere spaces list 
     [--host "<url>"] 
     [--pretty] 
     [--output <file>.json] 
@@ -252,7 +252,7 @@ If you do not include this option, the output will be printed to the command lin
 </td>
 <td valign="top">
 
-\[optional\] Enter a path to a `.json` file containing all of some of your `dwc` options, listed using the full option names.
+\[optional\] Enter a path to a `.json` file containing all of some of your `datasphere` options, listed using the full option names.
 
 A typical option file for a `list` command has the following syntax:
 
@@ -311,14 +311,14 @@ Passing this file with the tokens allows you to run any command without having f
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `datasphere` will prompt you to obtain a passcode:
 
-1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
+1.  Enter [y\] and `datasphere` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
 3.  When you arrive at the passcode page, copy the temporary authentication code and paste it into the command line.
 
 > ### Note:  
-> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
+> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `datasphere`.
 
 
 
@@ -335,7 +335,7 @@ You can include a passcode with your command using the `--passcode` parameter. I
 To read a space definition to the console or to a file, enter the following command and press [Return\]:
 
 ```
-dwc spaces read 
+datasphere spaces read 
     --space <id> 
     [--host "<url>"] 
     [--pretty] 
@@ -509,7 +509,7 @@ If you do not include this option, the output will be printed to the command lin
 </td>
 <td valign="top">
 
-\[optional\] Enter a path to a `.json` file containing all of some of your `dwc` options, listed using the full option names.
+\[optional\] Enter a path to a `.json` file containing all of some of your `datasphere` options, listed using the full option names.
 
 A typical option file for a `read` command has the following syntax:
 
@@ -573,14 +573,14 @@ Passing this file with the tokens allows you to run any command without having f
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `datasphere` will prompt you to obtain a passcode:
 
-1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
+1.  Enter [y\] and `datasphere` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
 3.  When you arrive at the passcode page, copy the temporary authentication code and paste it into the command line.
 
 > ### Note:  
-> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
+> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `datasphere`.
 
 
 
@@ -604,7 +604,7 @@ To update a space, you must first prepare a space definition file \(see [The Spa
 When your file is ready, enter the following command and press [Return\]:
 
 ```
-dwc spaces create 
+datasphere spaces create 
     --file-path <file>.json 
     [--host "<url>"] 
     [--force-definition-deployment] 
@@ -728,7 +728,7 @@ Enter a path to a file with a .json extension containing your space definition.
 </td>
 <td valign="top">
 
-\[optional\] Enter a path to a `.json` file containing all of some of your `dwc` options, listed using the full option names.
+\[optional\] Enter a path to a `.json` file containing all of some of your `datasphere` options, listed using the full option names.
 
 A typical option file for a `create` command has the following syntax:
 
@@ -789,14 +789,14 @@ Passing this file with the tokens allows you to run any command without having f
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `datasphere` will prompt you to obtain a passcode:
 
-1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
+1.  Enter [y\] and `datasphere` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
 3.  When you arrive at the passcode page, copy the temporary authentication code and paste it into the command line.
 
 > ### Note:  
-> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
+> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `datasphere`.
 
 
 
@@ -818,7 +818,7 @@ The space is updated as you have specified.
 To reset a database user password, enter the following command and press [Return\]:
 
 ```
-dwc dbusers password reset 
+datasphere dbusers password reset 
     --space "<id>" 
     --databaseuser "<name>" 
     [--host "<url>"] 
@@ -836,7 +836,7 @@ dwc dbusers password reset
 For example, to reset the password of the `JEFF` user in the `SALES`, and pretty-print it to the file `jeff.json`, enter the following:
 
 ```
-dwc dbusers password reset --space "SALES" --databaseuser "SALES#JEFF" --host "<server-url>" --pretty --output "jeff.json"
+datasphere dbusers password reset --space "SALES" --databaseuser "SALES#JEFF" --host "<server-url>" --pretty --output "jeff.json"
 ```
 
 Complete the parameters as follows:
@@ -967,7 +967,7 @@ If you do not include this option, the output will be printed to the command lin
 </td>
 <td valign="top">
 
-\[optional\] Enter a path to a `.json` file containing all of some of your `dwc` options, listed using the full option names.
+\[optional\] Enter a path to a `.json` file containing all of some of your `datasphere` options, listed using the full option names.
 
 A typical option file for a `password reset` command has the following syntax:
 
@@ -1029,14 +1029,14 @@ Passing this file with the tokens allows you to run any command without having f
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `datasphere` will prompt you to obtain a passcode:
 
-1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
+1.  Enter [y\] and `datasphere` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
 3.  When you arrive at the passcode page, copy the temporary authentication code and paste it into the command line.
 
 > ### Note:  
-> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
+> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `datasphere`.
 
 
 
@@ -1056,7 +1056,7 @@ You can include a passcode with your command using the `--passcode` parameter. I
 To delete a space, enter the following command and press [Return\]:
 
 ```
-dwc spaces delete 
+datasphere spaces delete 
     --space <id> 
     [--host "<url>"] 
     [--force] 
@@ -1160,7 +1160,7 @@ Delete the space without confirmation. If you do not include this option you wil
 </td>
 <td valign="top">
 
-\[optional\] Enter a path to a `.json` file containing all of some of your `dwc` options, listed using the full option names.
+\[optional\] Enter a path to a `.json` file containing all of some of your `datasphere` options, listed using the full option names.
 
 A typical option file for a `delete` command has the following syntax:
 
@@ -1220,14 +1220,14 @@ Passing this file with the tokens allows you to run any command without having f
 
 \[optional\] If you are not logged into an OAuth client, you must provide a passcode that you have obtained from your SAP Datasphere tenant.
 
-You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `dwc` will prompt you to obtain a passcode:
+You can include a passcode with your command using the `--passcode` parameter. If you do not include the `--passcode` parameter, `datasphere` will prompt you to obtain a passcode:
 
-1.  Enter [y\] and `dwc` will open the passcode page for your tenant.
+1.  Enter [y\] and `datasphere` will open the passcode page for your tenant.
 2.  If you are not already logged in, you must enter your username and password.
 3.  When you arrive at the passcode page, copy the temporary authentication code and paste it into the command line.
 
 > ### Note:  
-> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `dwc`.
+> If you are not logged into an OAuth client, you must enter a new passcode for each command that you issue with `datasphere`.
 
 
 
@@ -1246,6 +1246,6 @@ If prompted, confirm that you want to delete the space. The space is deleted and
 To log out at the end of your session enter the following command:
 
 ```
-dwc logout
+datasphere logout
 ```
 

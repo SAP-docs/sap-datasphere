@@ -271,7 +271,7 @@ The definition of an authorization scenario contains the definition of its data 
 > You can also export certain content from and import content to your space via:
 > 
 > -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
-> -   The `dwc` command line \(see [Importing and Exporting Objects via the Command Line](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/649465700ff14cd3ab7aebd72f370115.html "You can use the SAP Datasphere command line interface, dwc, to import objects to and export objects from your space.") :arrow_upper_right:\).
+> -   The `dwc` command line \(see [Importing and Exporting Objects via the Command Line](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/649465700ff14cd3ab7aebd72f370115.html "You can use the SAP Datasphere command line interface, datasphere, to import objects to and export objects from your space.") :arrow_upper_right:\).
 
 For information about importing business content in the form of end-to-end business scenarios for specific industries and lines of business provided by SAP and its partners via the <span class="FPA-icons"></span> \(*Content Network*\) app, see [Importing SAP and Partner Business Content from the Content Network](../importing-sap-and-partner-business-content-from-the-content-network-400078d.md).
 

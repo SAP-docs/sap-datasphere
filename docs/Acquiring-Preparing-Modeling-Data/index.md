@@ -131,7 +131,7 @@
 -   [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md)
     -   [Creating a Fact](Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)
         -   [Specify Measures](Modeling-Data-in-the-Data-Builder/specify-measures-33f7f29.md)
-        -   [Semantic Types for Attributes and Measures](Modeling-Data-in-the-Data-Builder/semantic-types-for-attributes-and-measures-f7272c0.md)
+        -   [Specify Semantic Types for Measures and Attributes](Modeling-Data-in-the-Data-Builder/specify-semantic-types-for-measures-and-attributes-f7272c0.md)
         -   [Exposing a View For Consumption](Modeling-Data-in-the-Data-Builder/exposing-a-view-for-consumption-40ec77e.md)
     -   [Creating a Dimension](Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)
         -   [Specify Attributes](Modeling-Data-in-the-Data-Builder/specify-attributes-cedc59c.md)

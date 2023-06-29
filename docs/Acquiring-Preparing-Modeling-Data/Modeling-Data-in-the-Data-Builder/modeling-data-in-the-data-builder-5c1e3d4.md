@@ -2,10 +2,11 @@
 
 # Modeling Data in the Data Builder
 
-Users with the *DW Modeler* role can add semantic information to their entities and expose them directly or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud and other BI clients.
+Users with the *DW Modeler* role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud.
 
 This topic contains the following sections:
 
+-   [Model Facts, Dimensions, Texts, and Hierarchies](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_star_schema)
 -   [Identify Measures to Analyze in a Fact](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_facts)
 -   [Prepare Master Data for Grouping in a Dimension](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_dimensions)
 -   [Support Translations of Attributes with a Text Entity](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_texts)
@@ -13,6 +14,33 @@ This topic contains the following sections:
 -   [Expose View Data for Consumption Outside SAP Datasphere](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose)
 -   [Combine Entities for Consumption in an Analytic Model](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_analytic_model)
 -   [Create Objects and Act On Existing Objects](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_tools)
+
+
+
+<a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_star_schema"/>
+
+## Model Facts, Dimensions, Texts, and Hierarchies
+
+![](images/Star_Schema_9239037.png)
+
+Use the *Semantic Usage* property to indicate the type of data contained in your entity:
+
+-   Select a *Semantic Usage* of *Fact* to indicate that your entity contains numerical measures that can be analyzed.
+
+    In our example, ***Acme Sales View*** is a fact containing sales data.
+
+-   Select a *Semantic Usage* of *Dimension* to indicate that your entity contains attributes that can be used to analyze and categorize measures defined in other entities.
+
+    In our example, four dimensions surround the fact, allowing us to analyze it by ***Salespeople***, ***Time***, ***Product***, and ***Geo*** attributes.
+
+-   Select a *Semantic Usage* of *Text* to indicate that your entity contains strings with language identifiers to translate text attributes in other entities.
+
+    In our example, there are four translation entities to translate time and product dimension attributes.
+
+-   Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains parent-child relationships for members in a dimension.
+
+    In our example, the ***Acme Salespeople Hierarchy*** provides a hierarchy for the ***Salespeople*** dimension.
+
 
 
 

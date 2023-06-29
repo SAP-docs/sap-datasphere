@@ -134,7 +134,7 @@ Choose from the following:
 -   *Language* - The column contains a language code.
 -   *Geolocation...* - The column contains geo data.
 
-For more information, see [Semantic Types for Attributes and Measures](semantic-types-for-attributes-and-measures-f7272c0.md).
+For more information, see [Specify Semantic Types for Measures and Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md).
 
 
 

@@ -310,6 +310,9 @@ Description
 
  Select a location. 
 
+> ### Note:  
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
+
 
 
 </td>

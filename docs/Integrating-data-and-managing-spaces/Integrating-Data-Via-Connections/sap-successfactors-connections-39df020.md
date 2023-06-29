@@ -136,7 +136,7 @@ The syntax for the URL is: ****<SAP SuccessFactors API Server\>*/odata/v2/*<supp
 </td>
 <td valign="top">
 
- Displays the OData version used to implement the SAP SuccessFactors OData service. 
+ \[read-only\] Displays the OData version used to implement the SAP SuccessFactors OData service. 
 
 
 
@@ -228,7 +228,7 @@ Description
 </td>
 <td valign="top">
 
-Displays *SAML Bearer* as the grant type used to retrieve an access token. 
+\[read-only\] Displays *SAML Bearer* as the grant type used to retrieve an access token. 
 
 
 
@@ -269,38 +269,6 @@ Enter the API endpoint to use to request an access token: ****<SAP SuccessFactor
 <tr>
 <td valign="top">
 
-*OAuth API Endpoint*
-
-
-
-</td>
-<td valign="top">
-
-Enter the API endpoint to use to request a Security Assertion Markup Language \(SAML\) assertion: ****<SAP SuccessFactors API Server\>*/oauth/idp***.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*OAuth User ID*
-
-
-
-</td>
-<td valign="top">
-
-Enter the SAP SuccessFactors user ID to use to request a SAML assertion.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *OAuth Company ID*
 
 
@@ -315,6 +283,11 @@ Enter the SAP SuccessFactors company ID \(identifying the SAP SuccessFactors sys
 </td>
 </tr>
 </table>
+
+> ### Note:  
+> When editing a connection that has been created before entering the SAML assertion in the credentials was required, you can set the *Provide SAML Assertion* property in the *OAuth 2.0* section to *true* to switch to the new method and then enter a valid SAML assertion in the *Credentials* section.
+> 
+> Note that once you change the *Provide SAML Assertion* property to *true*, enter the SAML assertion and save the connection, you cannot turn back to use the /oauth/idp API to generate the SAML assertion.
 
 
 
@@ -359,14 +332,17 @@ Enter the API key received when registering SAP Datasphere as OAuth2 client appl
 <tr>
 <td valign="top">
 
-*Client Secret*
+*SAML Assertion*
 
 
 
 </td>
 <td valign="top">
 
-Enter the private key associated with the X.509 certificate for the registered OAuth2 client.
+Enter a valid SAML assertion that has been generated for authentication.
+
+> ### Note:  
+> If the SAML assertion expires, the connection gets invalid until you update the connection with a new valid SAML assertion.
 
 
 

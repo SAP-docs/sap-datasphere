@@ -275,7 +275,7 @@ no
 <tr>
 <td valign="top">
 
-[Amazon Simple Storage Service Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to access data from objects in Amazon S3.") :arrow_upper_right:
+[Amazon Simple Storage Service Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to access data from objects in Amazon S3 buckets.") :arrow_upper_right:
 
 
 

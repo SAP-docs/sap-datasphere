@@ -175,7 +175,7 @@ Description
 </td>
 <td valign="top">
 
- Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+ \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
 
 
 
@@ -191,7 +191,10 @@ Description
 </td>
 <td valign="top">
 
- Select a location. 
+ \[optional\] Select a location ID. 
+
+> ### Note:  
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
 
 
 
@@ -207,7 +210,7 @@ Description
 </td>
 <td valign="top">
 
- Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+ \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 

@@ -239,7 +239,7 @@ For more information about the supported use cases depending on the connection t
 
         *SAP ECC* \(data flows\)
 
-        *SAP S/4HANA On-Premise* \(data flows, replication flows\)
+        *SAP S/4HANA On-Premise* \(data flows, replication flows, model import\)
 
 
         
@@ -277,7 +277,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-                *SAP HANA* on-premise only \(data flows, remote tables via Cloud Connector\)
+                *SAP HANA* on-premise only \(data flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
 
 
         
@@ -335,7 +335,7 @@ For more information about the supported use cases depending on the connection t
         > ### Note:  
         > When adding the system mapping information, you enter internal and virtual system information. The internal host and port specify the actual host and port under which the backend system can be reached within the intranet. It must be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector tries to forward the request to the network address specified by the internal host and port, so this address needs to be real. The virtual host name and port represent the fully qualified domain name of the related system in the cloud.
         > 
-        > We recommend to use a virtual \(cloud-side\) name that is different from internal name.
+        > We recommend to use a virtual \(cloud-side\) name that is different from the internal name.
 
     3.  To grant access only to the resources needed by SAP Datasphere, select the system host you just added from the *Mapping Virtual To Internal System* list, and for each resource that you want to allow to be invoked on that host click :heavy_plus_sign: in the *Resources Of* section to open the *Add Resource* dialog.
 
@@ -393,6 +393,29 @@ For more information about the supported use cases depending on the connection t
 
         -   `/sap/bw/ina` – *Path and all sub-paths*
 
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *SAP S/4HANA On-Premise*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                *URL Path* \(for HTTPS\)
+
+
+        
+        </td>
+        <td valign="top">
+        
+                 `/` 
 
 
         

@@ -33,7 +33,7 @@ Click *Repository Explorer* in the left navigation area. There is no need to sel
 
 Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-From the third character, the field will begin proposing objects and search strings. Click on an object to open it directly. Click on a string to trigger a search on it.
+As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
 
 

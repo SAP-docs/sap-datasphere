@@ -2,7 +2,7 @@
 
 # Log into the Command Line Interface via an OAuth Client
 
-If an administrator has created an OAuth client for `dwc` command line interface users to log into, there are several methods for accessing it.
+If an administrator has created an OAuth client for `datasphere` command line interface users to log into, there are several methods for accessing it.
 
 For information about creating an OAuth client, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md).
 
@@ -13,7 +13,10 @@ This topic contains the following sections:
 -   [Avoid Running a Login Command by Extracting Access and Refresh Tokens](log-into-the-command-line-interface-via-an-oauth-client-eb7228a.md#loioeb7228a171a842fa84e48c899d48c970__section_extracting_tokens)
 
 > ### Note:  
-> See the blog [@sap/dwc-cli: Getting Rid of Passcodes Thanks to OAuth Client Support](https://blogs.sap.com/2022/09/21/sap-dwc-cli-getting-rid-of-passcodes-thanks-to-oauth-client-support/) \(published September 2022\) for more information about working the command line interface and OAuth.
+> See the blog [@sap/datasphere-cli: Getting Rid of Passcodes Thanks to OAuth Client Support](https://blogs.sap.com/2022/09/21/sap-dwc-cli-getting-rid-of-passcodes-thanks-to-oauth-client-support/) \(published September 2022\) for more information about working the command line interface and OAuth.
+
+> ### Note:  
+> The SAP Datasphere command line interface module has been renamed from `dwc` to `datasphere`. The command `dwc` will be decommissioned at the end of 2023: please use the new `datasphere` command instead.
 
 
 
@@ -29,7 +32,7 @@ You can log in by passing the OAuth client information as options on the command
 To log in, enter the following command and press [Return\]:
 
 ```
-dwc login 
+datasphere login 
     --client-id "<id>" 
     --client-secret "<secret>" 
     --authorization-url "<url>" 
@@ -145,7 +148,7 @@ You can log in more securely by passing the OAuth client information in a secret
 To log in, enter the following command and press [Return\]:
 
 ```
-dwc login 
+datasphere login 
     --secrets-file <file>.json
 ```
 
@@ -210,10 +213,10 @@ Prepare a .json file with the following syntax:
 
 You can avoid running a `login` command \(and entering your SAP Datasphere username and password\) at the beginning of each OAuth session by extracting the personal access and refresh tokens and passing them either as options or in a secrets file.
 
-To extract your tokens, log into `dwc` as usual and then enter the following command and press [Return\]:
+To extract your tokens, log into `datasphere` as usual and then enter the following command and press [Return\]:
 
 ```
-dwc secrets show
+datasphere secrets show
 ```
 
 Then copy the values for `access_token` and `refresh_token`. You can pass these values either as options on the command line or in an options file.
@@ -226,7 +229,7 @@ Having extracted your tokens, you no longer need to log in at the beginning of y
 For example, the following command, to read a space, can be run without having logged in beforehand:
 
 ```
-dwc spaces read --space My_SPACE --options-file <options-file>.json --secrets-file <secrets-file>.json
+datasphere spaces read --space My_SPACE --options-file <options-file>.json --secrets-file <secrets-file>.json
 ```
 
 Where the <code><i class="varname">&lt;options-file&gt;</i>.json</code> contains appropriate options and the <code><i class="varname">&lt;secrets-file&gt;</i>.json</code> contains the following options:
