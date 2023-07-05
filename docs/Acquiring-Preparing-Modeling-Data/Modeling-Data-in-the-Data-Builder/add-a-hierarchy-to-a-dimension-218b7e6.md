@@ -12,8 +12,8 @@ Add a hierarchy to your dimension to support drill-down and drill-up in BI clien
 
 You can specify the following types of hierarchy:
 
--   Parent-Child - the hierarchy is recursive, may have any number of levels, and is defined by specifying a parent column and a child column within the dimension. For example, a departmental hierarchy could be modeled with the ***Parent Department ID*** and ***Department ID*** columns.
--   Level-Based - the hierarchy is non-recursive, has a fixed number of levels, and is defined by specifying two or more level columns within the dimension. For example, a time hierarchy could be modeled with the: ***Year***, ***Quarter***, ***Month***, ***Week***, and ***Day*** columns.
+-   Parent-Child - the hierarchy is recursive, may have any number of levels, and is defined by specifying a parent column and a child column within the dimension. For example, a departmental hierarchy could be modeled with the `Parent Department ID` and `Department ID` columns.
+-   Level-Based - the hierarchy is non-recursive, has a fixed number of levels, and is defined by specifying two or more level columns within the dimension. For example, a time hierarchy could be modeled with the: `Year`, `Quarter`, `Month`, `Week`, and `Day` columns.
 -   External Hierarchy - the parent-child hierarchy information is contained in a seperate entity, which needs to be associated with the dimension.
 
 > ### Note:  
@@ -108,7 +108,7 @@ The following hierarchy features are not supported:
                 \[parent-child hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a new parent-child hierarchy. Select the parent and child columns that represent the hierarchy. You can set as many as necessary. The results of these hierarchies can be compounded.
 
         > ### Example:  
-        > You have a ***CostArea*** and ***CostCenter*** attributes with the following pairs of parent-child hierarchies:
+        > You have a `CostArea` and `CostCenter` attributes with the following pairs of parent-child hierarchies:
         > 
         > 
         > <table>
@@ -178,7 +178,7 @@ The following hierarchy features are not supported:
         > </tr>
         > </table>
         > 
-        > In the ***CostArea*** parent-child hierarchy:
+        > In the `CostArea` parent-child hierarchy:
         > 
         > -   A is parent to B.
         > -   B is child to A and parent to C.
@@ -252,7 +252,7 @@ The following hierarchy features are not supported:
         > </tr>
         > </table>
         > 
-        > In the ***CostCenter*** parent-child hierarchy:
+        > In the `CostCenter` parent-child hierarchy:
         > 
         > -   1 is parent to 2.
         > -   2 is child to 1 and parent to 3.
@@ -304,7 +304,7 @@ The following hierarchy features are not supported:
         
                 \[level-based hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
 
-        For example, in a ***Products*** dimension, you may add three levels containing the columns ***Product Line***, ***Product Category***, and ***Product***.
+        For example, in a `Products` dimension, you may add three levels containing the columns `Product Line`, `Product Category`, and `Product`.
 
 
         

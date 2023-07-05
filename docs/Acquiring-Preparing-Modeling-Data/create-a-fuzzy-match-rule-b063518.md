@@ -136,7 +136,7 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
 
     If an input record is matched to more than one lookup records with a score reaching this threshold, it is placed in the *Multiple* results category.
 
-    Default: ***100%***
+    Default: `100%`
 
 
     
@@ -156,7 +156,7 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
 
     If an input record is matched to more than one lookup records with a score between this threshold and the *Matched Records Score*, it is placed in the *Multiple* results category.
 
-    Default: ***80%***
+    Default: `80%`
 
 
     

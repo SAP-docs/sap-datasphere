@@ -27,11 +27,11 @@ Use the *Semantic Usage* property to indicate the type of data contained in your
 
 -   Select a *Semantic Usage* of *Fact* to indicate that your entity contains numerical measures that can be analyzed.
 
-    In our example, ***Acme Sales View*** is a fact containing sales data.
+    In our example, `Acme Sales View` is a fact containing sales data.
 
 -   Select a *Semantic Usage* of *Dimension* to indicate that your entity contains attributes that can be used to analyze and categorize measures defined in other entities.
 
-    In our example, four dimensions surround the fact, allowing us to analyze it by ***Salespeople***, ***Time***, ***Product***, and ***Geo*** attributes.
+    In our example, four dimensions surround the fact, allowing us to analyze it by `Salespeople`, `Time`, `Product`, and `Geo` attributes.
 
 -   Select a *Semantic Usage* of *Text* to indicate that your entity contains strings with language identifiers to translate text attributes in other entities.
 
@@ -39,7 +39,7 @@ Use the *Semantic Usage* property to indicate the type of data contained in your
 
 -   Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains parent-child relationships for members in a dimension.
 
-    In our example, the ***Acme Salespeople Hierarchy*** provides a hierarchy for the ***Salespeople*** dimension.
+    In our example, the `Acme Salespeople Hierarchy` provides a hierarchy for the `Salespeople` dimension.
 
 
 

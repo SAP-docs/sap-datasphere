@@ -327,7 +327,7 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     Determine what your `NameID` maps to in your SAP Datasphere system. It should map to . The user attribute you select must match the *User ID*, *Email* or a custom attribute. You can view your SAP Datasphere user attributes in *Security* \> *Users*.
 
     > ### Note:  
-    > `NameID` is case sensitive. The *User ID*, *Email*, or *Custom SAML User Mapping* must match the values in your SAML IdP exactly. For example, if the `NameId` returned by your SAML IdP is ***user@company.com*** and the email you used in SAP Datasphere is ***User@company.com*** the mapping will fail.
+    > `NameID` is case sensitive. The *User ID*, *Email*, or *Custom SAML User Mapping* must match the values in your SAML IdP exactly. For example, if the `NameId` returned by your SAML IdP is `user@company.com` and the email you used in SAP Datasphere is `User@company.com` the mapping will fail.
 
     Choose one of the following options:
 
@@ -346,9 +346,9 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     > ### Note:  
     > If you are using a live connection to SAP S/4HANA Cloud Edition with *OAuth 2.0 SAML Bearer Assertion*, `NameId` must be identical to the user name of the business user on your SAP S/4HANA system.
     > 
-    > For example, if you want to map an SAP Datasphere user with the user ID ***SACUSER*** to your SAP S/4HANA Cloud user with the user name ***S4HANAUSER***, you must select *Custom SAML User Mapping* and use ***S4HANAUSER*** as the *Login Credential* in Step 10.
+    > For example, if you want to map an SAP Datasphere user with the user ID `SACUSER` to your SAP S/4HANA Cloud user with the user name `S4HANAUSER`, you must select *Custom SAML User Mapping* and use `S4HANAUSER` as the *Login Credential* in Step 10.
     > 
-    > If you are using SAP Cloud Identity as your SAML IdP, you can choose *Login Name* as the *NameID* attribute for SAP Datasphere, then you can set the login name of your SAP Datasphere user as ***S4HANAUSER***.
+    > If you are using SAP Cloud Identity as your SAML IdP, you can choose *Login Name* as the *NameID* attribute for SAP Datasphere, then you can set the login name of your SAP Datasphere user as `S4HANAUSER`.
 
 11. Optional: Enable *Dynamic User Creation*.
 

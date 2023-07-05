@@ -18,8 +18,8 @@ You can create associations in the:
 
 In this example:
 
--   The ***Sales Order*** table has a semantic usage of *Fact* and has an association from its ***Product ID*** column to the ***Product ID*** key of the ***Products*** table, which is a *Dimension*.
--   The ***Products*** *Dimension* has an association from its ***PRODCATEGORYID*** column to the ***PRODCATEGORYID*** key of the ***Product Categories*** table, which is also a *Dimension*.
+-   The `Sales Order` table has a semantic usage of *Fact* and has an association from its `Product ID` column to the `Product ID` key of the `Products` table, which is a *Dimension*.
+-   The `Products` *Dimension* has an association from its `PRODCATEGORYID` column to the `PRODCATEGORYID` key of the `Product Categories` table, which is also a *Dimension*.
 
 ![](images/Associations_Example_7966865.png)
 
@@ -59,7 +59,7 @@ In this example:
 
 5.  Specify the mapping of join columns in the *Join* section:
 
-    -   A default mapping is automatically created by matching column names if possible. For example if the originating entity contains a column, ***Product ID***, and the target entity has a column with the same name, then a default mapping is created between these two columns.
+    -   A default mapping is automatically created by matching column names if possible. For example if the originating entity contains a column, `Product ID`, and the target entity has a column with the same name, then a default mapping is created between these two columns.
     -   To delete a mapping, select the link and then click <span class="FPA-icons"></span> \(Delete\).
     -   To manually map columns, drag a column from the left list and drop it onto a column in the right list.
     -   You can filter the *Join* section to show only mapped or unmapped pairs of columns.

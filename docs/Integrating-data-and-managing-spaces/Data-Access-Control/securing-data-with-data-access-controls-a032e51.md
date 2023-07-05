@@ -26,8 +26,8 @@ This diagram shows a typical environment where a permissions entity is maintaine
 
 In this environment:
 
--   The ***Permissions*** space members are a select group of business users who:
-    -   Maintain the ***Permissions*** table \(see [Select a Table or View to Define Permissions](select-a-table-or-view-to-define-permissions-ffcae43.md)\), assigning users \(which, in this case, are identified by their email address\) to the appropriate country, department, and any other relevant criteria:
+-   The `Permissions` space members are a select group of business users who:
+    -   Maintain the `Permissions` table \(see [Select a Table or View to Define Permissions](select-a-table-or-view-to-define-permissions-ffcae43.md)\), assigning users \(which, in this case, are identified by their email address\) to the appropriate country, department, and any other relevant criteria:
 
 
         <table>
@@ -102,26 +102,26 @@ In this environment:
         </tr>
         </table>
         
-    -   Share the ***Permissions*** table to the ***IT*** space to use as a data source for data access controls.
+    -   Share the `Permissions` table to the `IT` space to use as a data source for data access controls.
 
         > ### Note:  
         > Tables and views shared to a space cannot be directly used as the permissions entity for a data access control. Modelers in the space receiving the shared object must encapsulate it in a view, which can then serve as the permissions entity for one or more data access controls.
 
 
--   The ***IT*** space members are technical users who:
-    -   Use the shared ***Permissions*** table as the source for a ***Permissions*** view that they will use as a permissions entity in their space.
-    -   Create a ***Country*** data access control, which uses the ***Permissions*** view as its permissions entity.
-    -   Maintain a connection to a source system, from which they import the ***Sales*** table.
-    -   Create a ***Sales*** view for use by business analysts, to which they apply the ***Country*** data access control.
+-   The `IT` space members are technical users who:
+    -   Use the shared `Permissions` table as the source for a `Permissions` view that they will use as a permissions entity in their space.
+    -   Create a `Country` data access control, which uses the `Permissions` view as its permissions entity.
+    -   Maintain a connection to a source system, from which they import the `Sales` table.
+    -   Create a `Sales` view for use by business analysts, to which they apply the `Country` data access control.
 
         > ### Note:  
-        > The row-level security provided by the ***Country*** data access control can still be circumvented while the view remains in the ***IT*** space.
+        > The row-level security provided by the `Country` data access control can still be circumvented while the view remains in the `IT` space.
 
-    -   Share the ***Sales*** view to the ***Sales*** space where it can be used securely.
+    -   Share the `Sales` view to the `Sales` space where it can be used securely.
 
--   The ***Sales*** space members use the protected ***Sales*** view to do analytics on sales data:
-    -   Anne is a data modeler in the US sales department. She connects to SAP Datasphere and combines the ***Sales*** view with other data. Whenever she previews data, she can only see US data.
-    -   Jennifer is a business analyst in the French sales department. She connects to SAP Analytics Cloud, builds a story on the ***Sales*** view, and can only see French sales data.
+-   The `Sales` space members use the protected `Sales` view to do analytics on sales data:
+    -   Anne is a data modeler in the US sales department. She connects to SAP Datasphere and combines the `Sales` view with other data. Whenever she previews data, she can only see US data.
+    -   Jennifer is a business analyst in the French sales department. She connects to SAP Analytics Cloud, builds a story on the `Sales` view, and can only see French sales data.
 
 
 For information about:

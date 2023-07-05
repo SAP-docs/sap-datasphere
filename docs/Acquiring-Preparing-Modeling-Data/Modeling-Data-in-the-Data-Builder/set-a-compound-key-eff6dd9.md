@@ -24,7 +24,7 @@ Setting a single key column might not always be enough to ensure the uniqueness 
 A compound key is a key that consists of two or more key columns, namely a key column and a representative key. The representative key is the key holding the most specific/granular level of data. Together, these keys uniquely identify rows.
 
 > ### Example:  
-> You have two tables, ***CostArea*** and ***CostCenter***:
+> You have two tables, `CostArea` and `CostCenter`:
 > 
 > 
 > <table>
@@ -162,7 +162,7 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > </tr>
 > </table>
 > 
-> You need to compound these two keys to ensure that records are uniquely identified. Setting a compound key column allows analytical tools to combine the columns ***CostArea*** and ***CostCenter*** in order to uniquely represent records in analytical tool via the ***CostCenter\(Representative Key\)***. The compound key doesn't exist as an entity, but more like a semantic instruction for analytical tools. You may notice that the cost centers B2 and C3 don't exist:
+> You need to compound these two keys to ensure that records are uniquely identified. Setting a compound key column allows analytical tools to combine the columns `CostArea` and `CostCenter` in order to uniquely represent records in analytical tool via the `CostCenter(Representative Key)`. The compound key doesn't exist as an entity, but more like a semantic instruction for analytical tools. You may notice that the cost centers B2 and C3 don't exist:
 > 
 > 
 > <table>

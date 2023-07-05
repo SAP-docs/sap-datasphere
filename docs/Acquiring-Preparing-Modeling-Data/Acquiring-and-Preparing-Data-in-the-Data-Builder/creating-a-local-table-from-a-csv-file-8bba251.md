@@ -72,7 +72,7 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     </td>
     <td valign="top">
     
-        Select the character used to signify the boundary between columns. In general, the default value, ***Auto-detect*** is sufficient.
+        Select the character used to signify the boundary between columns. In general, the default value, `Auto-detect` is sufficient.
 
 
     
@@ -88,7 +88,7 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     > The values of a hana.REAL column are automatically converted when their format is invalid.
     > 
     > > ### Example:  
-    > > The value ***1.1*** will be read and written as ***1.100000023841858***.
+    > > The value `1.1` will be read and written as `1.100000023841858`.
     > 
     > This will cause issues if this column is used as a calculated column. In that case, avoid conversion by setting the column to another data type.
 

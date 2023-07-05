@@ -50,7 +50,7 @@ For more information, see [Preparing Cloud Connector Connectivity](preparing-clo
     -   To be able to use the Cloud Connector for SAP BW/4HANA Model Transfer connections to import analytic queries with the *Model Transfer Wizard* and for SAP S/4HANA On-Premise connections to import ABAP CDS Views with the *Import Entities* wizard, switch on *Allow live data to securely leave my network* in the *Live Data Sources* section.
 
         > ### Note:  
-        > The *Allow live data to securely leave my network* switch is audited, so that administrators can see who switched this feature on and off. To see the changes in the switch state, go to <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="SAP-icons"></span> \(*Activities*\), and search for ***ALLOW\_LIVE\_DATA\_MOVEMENT***.
+        > The *Allow live data to securely leave my network* switch is audited, so that administrators can see who switched this feature on and off. To see the changes in the switch state, go to <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="SAP-icons"></span> \(*Activities*\), and search for `ALLOW_LIVE_DATA_MOVEMENT`.
 
     -   If you have connected multiple Cloud Connector instances to your subaccount with different location IDs and you want to offer them for selection when creating connections using a Cloud Connector, in the *On-premise data sources* section, add the appropriate location IDs. If you don't add any location IDs here, the default location will be used.
 

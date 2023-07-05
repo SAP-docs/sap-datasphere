@@ -67,7 +67,7 @@ Filter on a column by clicking the column header, clicking <span class="FPA-icon
 2.  Select a column to filter on, a filtering option, and a value. You can add several filters. Click *OK* to apply the filter\(s\). The currently applied filters are displayed above the table.
 
     > ### Example:  
-    > To only see senior employees born between 1960 and 1969, select the column containing birth dates, the filtering value *between*, and the earliest and latest dates needed. Once applied, the filter will be displayed in a strip above the table as following: ***Birth Date \( Jan 1, 1960...Dec 31, 1969 \)***.
+    > To only see senior employees born between 1960 and 1969, select the column containing birth dates, the filtering value *between*, and the earliest and latest dates needed. Once applied, the filter will be displayed in a strip above the table as following: `Birth Date ( Jan 1, 1960...Dec 31, 1969 )`.
 
     > ### Note:  
     > -   The filtering options available depend on the data type of the column you filter on.

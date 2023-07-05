@@ -120,7 +120,7 @@ Description
 
  Enter the OData service provider URL of the SAP SuccessFactors service that you want to access. 
 
-The syntax for the URL is: ****<SAP SuccessFactors API Server\>*/odata/v2/*<supported SAP SuccessFactors service group\>**** or ****<SAP SuccessFactors API Server\>*/odatav4/*<supported SAP SuccessFactors service group\>**** 
+The syntax for the URL is: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/odata/v2/<i class="varname">&lt;supported SAP SuccessFactors service group&gt;</i></code> or <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/odatav4/<i class="varname">&lt;supported SAP SuccessFactors service group&gt;</i></code> 
 
 
 
@@ -244,7 +244,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the API endpoint to use to request an access token: ****<SAP SuccessFactors API Server\>*/oauth/token***.
+Enter the API endpoint to use to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
 
 
 

@@ -25,8 +25,9 @@ For an overview of connection types that require a Data Provisioning Agent setup
 
 ## Procedure
 
-1.  To prepare connectivity via Data Provisioning Agent, perform the following steps:
-2.  Download and install the latest Data Provisioning Agent version on a host in your local network.
+To prepare connectivity via Data Provisioning Agent, perform the following steps:
+
+1.  Download and install the latest Data Provisioning Agent version on a host in your local network.
 
     > ### Note:  
     > -   We recommend to always use the latest released version of the Data Provisioning Agent. For information on supported and available versions for the Data Provisioning Agent, see the [SAP HANA Smart Data Integration Product Availability Matrix \(PAM\)](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf).
@@ -35,20 +36,20 @@ For an overview of connection types that require a Data Provisioning Agent setup
 
     For more information, see [Install the Data Provisioning Agent](install-the-data-provisioning-agent-8f61850.md).
 
-3.  Add the external IPv4 address of the server on which your Data Provisioning Agent is running to the IP allowlist in SAP Datasphere. When using a proxy, the proxy's address needs to be included in IP allowlist as well.
+2.  Add the external IPv4 address of the server on which your Data Provisioning Agent is running to the IP allowlist in SAP Datasphere. When using a proxy, the proxy's address needs to be included in IP allowlist as well.
 
     > ### Note:  
     > For security reasons, all external connections to your SAP Datasphere instance are blocked by default. By adding external IPv4 addresses or address ranges to the allowlist you can manage external client connections.
 
     For more information, see [Add IP address to IP Allowlist](add-ip-address-to-ip-allowlist-a3c2145.md).
 
-4.  Connect the Data Provisioning Agent to SAP Datasphere.
+3.  Connect the Data Provisioning Agent to SAP Datasphere.
 
     This includes configuring the agent and setting the user credentials in the agent.
 
     For more information, see [Connect and Configure the Data Provisioning Agent](connect-and-configure-the-data-provisioning-agent-e87952d.md).
 
-5.  Register the adapters with SAP Datasphere.
+4.  Register the adapters with SAP Datasphere.
 
     > ### Note:  
     > For third-party adapters, you need to download and install any necessary JDBC libraries before registering the adapters.

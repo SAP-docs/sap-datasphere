@@ -50,7 +50,7 @@ The following options are available:
 
 -   Select *Use first row as column header* if your file contains column headers in its first line.
 -   Next to *Insert missing string value as*, select *Empty value* or *NULL* before adding a record. All new empty values are stored as the selected value.
--   Select the character used to signify the boundary between columns in *CSV Delimiter*. In general, the default value ***Auto-detect*** is sufficient.
+-   Select the character used to signify the boundary between columns in *CSV Delimiter*. In general, the default value `Auto-detect` is sufficient.
 
 Review the matching of columns in your table with those in your CSV file.
 

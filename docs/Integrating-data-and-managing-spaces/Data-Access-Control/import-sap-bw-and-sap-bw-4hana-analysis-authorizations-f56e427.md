@@ -87,9 +87,9 @@ The *Import Permissions* wizard will import the permissions table from the sourc
 
     For each selected remote table, the following objects are created:
 
-    -   ****<table\>* - Permissions Script*** \(****<table\>*\_P***\) - An SQL view to calculate the permissions to apply to the object.
-    -   ****<table\>* - Permissions*** \(****<table\>*\_D***\) - A data access control to consume the SQL view.
-    -   ****<table\>* - Protected*** \(****<table\>*\_V*** - An SQL view to wrap the table selected for protection and apply the data access control. Once the import is complete, you should only access the table via this view.
+    -   <code><i class="varname">&lt;table&gt;</i> - Permissions Script</code> \(<code><i class="varname">&lt;table&gt;</i>_P</code>\) - An SQL view to calculate the permissions to apply to the object.
+    -   <code><i class="varname">&lt;table&gt;</i> - Permissions</code> \(<code><i class="varname">&lt;table&gt;</i>_D</code>\) - A data access control to consume the SQL view.
+    -   <code><i class="varname">&lt;table&gt;</i> - Protected</code> \(<code><i class="varname">&lt;table&gt;</i>_V</code> - An SQL view to wrap the table selected for protection and apply the data access control. Once the import is complete, you should only access the table via this view.
 
 
     
@@ -100,10 +100,10 @@ The *Import Permissions* wizard will import the permissions table from the sourc
 
     For each selected view, the following objects are created or modified:
 
-    -   ****<view\>* - Base View*** \(****<view\>*\_B***\) - A copy of the view to protect, used for generating the permissions script view.
-    -   ****<view\>* - Permissions Script*** \(****<view\>*\_P***\) - An SQL view to calculate the permissions to apply to the object.
-    -   ****<view\>* - Permissions*** \(****<table\>*\_D***\) - A data access control to consume the SQL view, which will be applied to the view selected for protection.
-    -   ****<view\>**** \(****<view\>****\) - The original view is protected by applying the data access control to it and can continue to be used.
+    -   <code><i class="varname">&lt;view&gt;</i> - Base View</code> \(<code><i class="varname">&lt;view&gt;</i>_B</code>\) - A copy of the view to protect, used for generating the permissions script view.
+    -   <code><i class="varname">&lt;view&gt;</i> - Permissions Script</code> \(<code><i class="varname">&lt;view&gt;</i>_P</code>\) - An SQL view to calculate the permissions to apply to the object.
+    -   <code><i class="varname">&lt;view&gt;</i> - Permissions</code> \(<code><i class="varname">&lt;table&gt;</i>_D</code>\) - A data access control to consume the SQL view, which will be applied to the view selected for protection.
+    -   <code><i class="varname">&lt;view&gt;</i></code> \(<code><i class="varname">&lt;view&gt;</i></code>\) - The original view is protected by applying the data access control to it and can continue to be used.
 
 
     
@@ -112,7 +112,7 @@ The *Import Permissions* wizard will import the permissions table from the sourc
     </table>
     
     > ### Note:  
-    > If you have previously protected some or all of the selected objects, they will appear in the wizard with a *Status/Action* of ***Overwrite*** and will be overwritten.
+    > If you have previously protected some or all of the selected objects, they will appear in the wizard with a *Status/Action* of `Overwrite` and will be overwritten.
 
 6.  Click *Import and Deploy* to create, import, and deploy all these objects.
 

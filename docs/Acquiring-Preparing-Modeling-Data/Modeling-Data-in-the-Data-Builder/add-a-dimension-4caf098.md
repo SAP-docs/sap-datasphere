@@ -33,14 +33,15 @@ Here, you can see that the same dimension can be included more than once. To be 
 
 ## Procedure
 
-1.  There are different ways to add dimensions:
-2.  When you select your source, you can select the dimensions that you want to copy from the source.
+There are different ways to add dimensions:
 
-3.  When you click on your fact source on the canvas, you can select associated dimensions and attributes in the properties panel on the right. The attributes are also treated as dimensions in the analytic model.
+1.  When you select your source, you can select the dimensions that you want to copy from the source.
 
-4.  When you click on a dimension on the canvas, you can select associated dimensions of the dimension in the properties panel on the right.
+2.  When you click on your fact source on the canvas, you can select associated dimensions and attributes in the properties panel on the right. The attributes are also treated as dimensions in the analytic model.
 
-5.  To edit the properties of a dimension: Click on the dimension of the canvas to show its properties in the side panel. You can make the following changes here:
+3.  When you click on a dimension on the canvas, you can select associated dimensions of the dimension in the properties panel on the right.
+
+4.  To edit the properties of a dimension: Click on the dimension of the canvas to show its properties in the side panel. You can make the following changes here:
 
     -   You can change the alias of this item in the properties panel. The alias is the name that is shown in the story in SAP Analytics Cloud.
     -   You can add or deselect associated dimensions.

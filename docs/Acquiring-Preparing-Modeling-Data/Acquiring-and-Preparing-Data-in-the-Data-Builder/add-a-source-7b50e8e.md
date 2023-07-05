@@ -166,7 +166,7 @@ Add a source to read data from. You can add multiple sources and combine them to
     The depth of an OData object refers to the level of related entities that are included in the response when querying the OData service. The depth is by default set to 1 so that only the properties of the requested entity are returned. You can change the depth to 2 to include a second level. Depth is useful when you want to optimize performance by controlling the amount of data returned in a single request.
 
     > ### Example:  
-    > If an OData service has two objects for ***Products*** and ***Orders***, and a ***Product*** object has a navigation property to related ***Order*** objects, a request for a specific ***Product*** with a depth of 1 will return the properties of that ***Product***, but not the related ***Order*** objects. But if you specify a depth of 2, it will also return the related ***Order*** objects and their properties.
+    > If an OData service has two objects for `Products` and `Orders`, and a `Product` object has a navigation property to related `Order` objects, a request for a specific `Product` with a depth of 1 will return the properties of that `Product`, but not the related `Order` objects. But if you specify a depth of 2, it will also return the related `Order` objects and their properties.
 
     > ### Restriction:  
     > When the depth is set to 2, the *Columns* section shows the columns from the two collections \(or levels\) and the following problems occur:

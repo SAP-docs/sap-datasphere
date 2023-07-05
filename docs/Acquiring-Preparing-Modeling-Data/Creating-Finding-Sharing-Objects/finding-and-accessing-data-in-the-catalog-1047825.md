@@ -152,8 +152,8 @@ Filter by any of the categories listed in the *Filter By* area of the left panel
 
 You can select one or more values in each filter category in the *Filter By* section:
 
--   Each value selected in a category acts as an ***OR*** condition.
--   Each value selected in separate categories acts together as ***AND*** conditions.
+-   Each value selected in a category acts as an `OR` condition.
+-   Each value selected in separate categories acts together as `AND` conditions.
 
 
 <table>
@@ -1045,11 +1045,11 @@ For those filter options that are not related to date or time, you can create a 
 
 1.  Click *Show More* at the bottom of a filter category to open the Filter Settings dialog. Some filters have a *Select Items* and a *Define Conditions* tab.
 2.  On the *Define Conditions* tab, choose an operator and enter a value in the *Filter Condition* box.
-3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an ***OR*** operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an ***AND*** operator, so that both conditions must be true for the object to be returned in the search results.
+3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an `OR` operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an `AND` operator, so that both conditions must be true for the object to be returned in the search results.
 
 You can create advanced filter conditions for multiple filter categories. An object must meet one of the conditions in each of the categories to be included in the search results.
 
-For example, if you are viewing terms and want to create a condition to filter on the keywords “investment” and “stock”, you would click :heavy_plus_sign:. Then choose *Contains all of these words*. In the Filter Condition box, enter ***investment***. Click :heavy_plus_sign: again. Choose *Contains all of these words*. In the Filter Condition box, enter ***stock***, and then click *OK*. The new condition is listed in the Keyword group in the filter panel, and the filter results are automatically shown.
+For example, if you are viewing terms and want to create a condition to filter on the keywords “investment” and “stock”, you would click :heavy_plus_sign:. Then choose *Contains all of these words*. In the Filter Condition box, enter `investment`. Click :heavy_plus_sign: again. Choose *Contains all of these words*. In the Filter Condition box, enter `stock`, and then click *OK*. The new condition is listed in the Keyword group in the filter panel, and the filter results are automatically shown.
 
 
 

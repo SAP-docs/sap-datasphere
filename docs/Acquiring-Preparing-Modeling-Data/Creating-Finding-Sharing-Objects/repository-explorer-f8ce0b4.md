@@ -236,7 +236,7 @@ For those filter options that are not related to date or time, you can create a 
 
 1.  Click *Show More* at the bottom of a filter category to open the Filter Settings dialog. Some filters have a *Select Items* and a *Define Conditions* tab.
 2.  On the *Define Conditions* tab, choose an operator and enter a value in the *Filter Condition* box.
-3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an ***OR*** operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an ***AND*** operator, so that both conditions must be true for the object to be returned in the search results.
+3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an `OR` operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an `AND` operator, so that both conditions must be true for the object to be returned in the search results.
 
 You can create advanced filter conditions for multiple filter categories. An object must meet one of the conditions in each of the categories to be included in the search results.
 

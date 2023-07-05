@@ -18,7 +18,7 @@ To configure the access token in the agent's secure storage, the administrator h
 
 1.  At the command line, navigate to <code><i class="varname">&lt;DPAgent_root&gt;</i>/bin</code>.
 
-2.  Start the agent configuration tool with the ***setSecureProperty*** parameter.
+2.  Start the agent configuration tool with the `setSecureProperty` parameter.
 
     -   On Windows: `agentcli.bat --setSecureProperty`
 

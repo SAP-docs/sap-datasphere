@@ -70,7 +70,7 @@ Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. 
 
     6.  Enter the name of the agent registration \(agent name\).
 
-    7.  Enter ***true*** to use an encrypted connection over JDBC.
+    7.  Enter `true` to use an encrypted connection over JDBC.
 
         > ### Tip:  
         > An encrypted connection is always required when connecting to SAP HANA in a cloud-based environment.
@@ -79,23 +79,23 @@ Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. 
 
         For example:
 
-        -   Host name: ****<instance\_name\>*.hanacloud.ondemand.com***
-        -   Port number: ***443***
+        -   Host name: <code><i class="varname">&lt;instance_name&gt;</i>.hanacloud.ondemand.com</code>
+        -   Port number: `443`
 
-    9.  If HTTPS traffic from your agent host is routed through a proxy, enter ***true*** and specify any required proxy information as prompted.
+    9.  If HTTPS traffic from your agent host is routed through a proxy, enter `true` and specify any required proxy information as prompted.
 
-        1.  Enter ***true*** to specify that the proxy is an HTTP proxy.
+        1.  Enter `true` to specify that the proxy is an HTTP proxy.
 
         2.  Enter the proxy host and port.
 
-        3.  If you use proxy authentication, enter ***true*** and provide a proxy user name and password.
+        3.  If you use proxy authentication, enter `true` and provide a proxy user name and password.
 
 
     10. Enter the credentials for the HANA user for agent messaging.
 
         The HANA user for agent messaging is used only for messaging between the agent and SAP Datasphere.
 
-    11. Confirm that you want to save the connection settings you have made by entering ***true***.
+    11. Confirm that you want to save the connection settings you have made by entering `true`.
 
         > ### Note:  
         > Any existing agent connection settings will be overwritten.

@@ -43,7 +43,7 @@ You can maintain data in local tables that:
     > -   The values of a hana.REAL column are automatically overwritten when their format is invalid.
     > 
     >     > ### Example:  
-    >     > The value ***1.1*** is incorrectly formatted and will be overwritten as ***1.100000023841858***.
+    >     > The value `1.1` is incorrectly formatted and will be overwritten as `1.100000023841858`.
     > 
     >     This will cause issues if this column is used as a calculated column. In that case, avoid conversion by setting the column to another data type.
     > 

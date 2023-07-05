@@ -309,7 +309,7 @@ Reserved keywords which are not allowed are removed.
 </td>
 <td valign="top">
 
-" ***SYS***" ** \> ** ""
+" `SYS`" ** \> ** ""
 
 
 
@@ -325,7 +325,7 @@ Leading underscores \(\_\) are removed.
 </td>
 <td valign="top">
 
-"***\_NAME***" ** \> ** "***NAME***"
+"`_NAME`" ** \> ** "`NAME`"
 
 
 
@@ -341,7 +341,7 @@ Leading and trailing whitespaces \(" "\) are removed.
 </td>
 <td valign="top">
 
-"***NAME*** " ** \> ** "***NAME***"
+"`NAME` " ** \> ** "`NAME`"
 
 
 
@@ -357,7 +357,7 @@ Whitespaces \(" "\) within a name are replaced with underscores \(\_\).
 </td>
 <td valign="top">
 
-"***NA ME***" ** \> ** "***NA\_ME***"
+"`NA ME`" ** \> ** "`NA_ME`"
 
 
 
@@ -373,7 +373,7 @@ Characters with diacritical signs are replaced with their basic character.
 </td>
 <td valign="top">
 
-"***Namé***" ** \> ** "***Name***"
+"`Namé`" ** \> ** "`Name`"
 
 
 
@@ -389,7 +389,7 @@ Non-alphanumeric characters are removed.
 </td>
 <td valign="top">
 
-"***N$ME***" ** \> ** "***NME***"
+"`N$ME`" ** \> ** "`NME`"
 
 
 
@@ -405,7 +405,7 @@ Dots \(.\) and double quotes \("\) are replaced with underscores \(\_\).
 </td>
 <td valign="top">
 
-"***N.AM"E***" ** \> ** "***N\_AM\_E***"
+"`N.AM"E`" ** \> ** "`N_AM_E`"
 
 
 
@@ -421,7 +421,7 @@ Leading dots \(.\) are removed.
 </td>
 <td valign="top">
 
-"***.NAME***" ** \> ** "***NAME***"
+"`.NAME`" ** \> ** "`NAME`"
 
 
 

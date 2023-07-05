@@ -28,7 +28,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 
 2.  Drag a first source from the *Source Browser* and drop it into the diagram.
 
-    The source is added to the diagram along with an output node, initially entitiled ***View 1***, which represents the final output structure of the view.
+    The source is added to the diagram along with an output node, initially entitiled `View 1`, which represents the final output structure of the view.
 
     For more information, see [Add a Source](add-a-source-1eee180.md).
 

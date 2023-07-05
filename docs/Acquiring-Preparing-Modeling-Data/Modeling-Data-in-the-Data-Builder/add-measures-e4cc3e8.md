@@ -32,13 +32,13 @@ There are different types of measures to choose from:
     the expression field contains the formula to calculate the measure.
 
     > ### Example:  
-    > To calculate the price, the expression could be ***Amount / Quantity***.
+    > To calculate the price, the expression could be `Amount / Quantity`.
 
 4.  For restricted measures, proceed as follows:
 
     1.  Select the source measure.
     2.  Select the aggregation type.
-    3.  Enter your expression in the formula editor. An atomic expression usually has the format***<dimension\> <operator\> <value\> \(e.g. Country = 'Germany'\).***
+    3.  Enter your expression in the formula editor. An atomic expression usually has the format`<dimension> <operator> <value> (e.g. Country = 'Germany').`
 
 5.  For currency conversion measures, porceed as described here: [Create a Currency Conversion Measure](create-a-currency-conversion-measure-ec00efb.md).
 

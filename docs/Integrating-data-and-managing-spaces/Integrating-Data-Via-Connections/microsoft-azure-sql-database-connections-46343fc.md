@@ -146,7 +146,7 @@ Description
 </td>
 <td valign="top">
 
- Enter the port number of the Azure server. The default is ***1433***. 
+ Enter the port number of the Azure server. The default is `1433`. 
 
 
 
@@ -218,7 +218,7 @@ Description
 </td>
 <td valign="top">
 
- Enter ***\*.database.windows.net*** .
+ Enter `*.database.windows.net` .
 
 
 

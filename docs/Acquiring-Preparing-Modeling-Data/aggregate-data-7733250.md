@@ -20,7 +20,7 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
 2.  Create a projection node to exclude all columns except this column and the column\(s\) by which you want to group your values.
 
-    For example, if you want to aggregate ***Revenue*** per ***Country***, you should exclude all columns except ***Revenue*** and ***Country***.
+    For example, if you want to aggregate `Revenue` per `Country`, you should exclude all columns except `Revenue` and `Country`.
 
 3.  Select the projection node in order to display its context tools, and click <span class="FPA-icons"></span> \(Aggregation\).
 
@@ -59,7 +59,7 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
     -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
     -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](sql-reference-6a37cc5.md)\).
 
-    For example, if you have aggregated your ***Revenue*** column using `SUM`, and want to show only:
+    For example, if you have aggregated your `Revenue` column using `SUM`, and want to show only:
 
     -   Total revenues of more than 1m, enter `SUM(Revenue) > 1000000`
     -   Total revenues for the US only, enter `Country='US'`

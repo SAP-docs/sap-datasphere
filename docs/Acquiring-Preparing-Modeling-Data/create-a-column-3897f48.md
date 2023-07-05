@@ -46,7 +46,7 @@ Add a *Calculated Columns* node to create new columns and define calculations in
     -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
     -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](sql-reference-6a37cc5.md)\).
 
-    For example, if you want to calculate the price of a product minus a 15% discount, enter ***Price\*0.85***.
+    For example, if you want to calculate the price of a product minus a 15% discount, enter `Price*0.85`.
 
     When working on a large expression, click <span class="FPA-icons"></span> \(Enter Full Screen\) to expand the expression editor.
 
