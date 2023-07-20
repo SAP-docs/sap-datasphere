@@ -34,6 +34,8 @@ The following procedures are available in the schema `DWC_GLOBAL`:
 
 
 
+## Example
+
 Creating a table in data lake:
 
 ```

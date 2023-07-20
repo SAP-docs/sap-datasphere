@@ -84,7 +84,7 @@ To log in, enter one of the following commands and press [Return\]:
     <tr>
     <td valign="top">
     
-        ```
+    ```
     {
         "client_id": "<client-id>",
         "client_secret": "<client-secret>",
@@ -98,7 +98,7 @@ To log in, enter one of the following commands and press [Return\]:
     </td>
     <td valign="top">
     
-        ```
+    ```
     {
         "client_id": "<client-id>",
         "client_secret": "<client-secret>",
@@ -116,14 +116,14 @@ To log in, enter one of the following commands and press [Return\]:
     <tr>
     <td valign="top">
     
-        You are directed to log in with your SAP Datasphere username and password in a browser window once at the beginning of each OAuth session to determine your space permissions.
+    You are directed to log in with your SAP Datasphere username and password in a browser window once at the beginning of each OAuth session to determine your space permissions.
 
 
     
     </td>
     <td valign="top">
     
-        You extract your OAuth access and refresh tokens,which are valid for 720 hours/30 days, and can run commands directly without any login during this period.
+    You extract your OAuth access and refresh tokens,which are valid for 720 hours/30 days, and can run commands directly without any login during this period.
 
 
     

@@ -14,7 +14,7 @@ You need a space and you need to be assigned to this space as a user.
 
 If the product is delivered using the "Open SQL" delivery mode, you need access to a space and an Open SQL schema with credentials that you can share with the data provider.
 
- 
+
 
 
 

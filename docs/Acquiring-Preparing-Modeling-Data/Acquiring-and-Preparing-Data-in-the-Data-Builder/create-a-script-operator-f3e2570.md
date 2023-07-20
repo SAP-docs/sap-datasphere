@@ -56,14 +56,14 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     <tr>
     <td valign="top">
     
-        Label
+    Label
 
 
     
     </td>
     <td valign="top">
     
-        Provide a suitable name for the operator.
+    Provide a suitable name for the operator.
 
 
     
@@ -72,14 +72,14 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     <tr>
     <td valign="top">
     
-        Code Language
+    Code Language
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] The supported language is Python.
+    \[read-only\] The supported language is Python.
 
 
     
@@ -99,7 +99,7 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     -   Reorder the columns by dragging and dropping.
     -   Add any missing columns from input operators using <span class="FPA-icons"></span> \(Add Column\) and select the columns.
     -   Create new columns using <span class="FPA-icons"></span> \(Create New Column\) and provide a name and data type for the column. The new columns are easily identified in the the *Script* node *Columns* section with the <span class="FPA-icons"></span> \(New Column\) icon.
-    -   Remove multiple columns at once,  [ctrl\] + [click\]  to select the columns and choose <span class="FPA-icons"></span> \(Delete Columns\) .
+    -   Remove multiple columns at once, [ctrl\] + [click\]  to select the columns and choose <span class="FPA-icons"></span> \(Delete Columns\) .
     -   To remove all columns, click *Select All* and choose <span class="FPA-icons"></span> \(Delete Columns\) .
 
 6.  To complete the script operator, create a flow from it to the next operator or the target table, as appropriate.

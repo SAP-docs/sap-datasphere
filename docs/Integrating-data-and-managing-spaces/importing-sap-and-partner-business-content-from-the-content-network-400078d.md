@@ -60,14 +60,14 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <tr>
     <td valign="top">
     
-        Import Schedule
+    Import Schedule
 
 
     
     </td>
     <td valign="top">
     
-        Specifies what happens when the package is updated:
+    Specifies what happens when the package is updated:
 
     -   *None* - No updates are made on your system. This option is automatically selected for packages that cannot be updated.
     -   *Notify for new content* - You receive a notification and can choose whether to import the new version of the package to your system.
@@ -79,14 +79,14 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <tr>
     <td valign="top">
     
-        Overwrite Preferences
+    Overwrite Preferences
 
 
     
     </td>
     <td valign="top">
     
-        Controls what happens when an object to be imported already exists in your space:
+    Controls what happens when an object to be imported already exists in your space:
 
     -   *Don’t overwrite objects or data* - Protects existing objects in your space from being overwritten or having their data updated. You are notified if any of the objects selected for import already exist in your system.
 
@@ -106,14 +106,14 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <tr>
     <td valign="top">
     
-        Deployment Preference
+    Deployment Preference
 
 
     
     </td>
     <td valign="top">
     
-        Check the *Deploy after import* checkbox to automatically deploy objects after import. If you have selected:
+    Check the *Deploy after import* checkbox to automatically deploy objects after import. If you have selected:
 
     -   **Don't overwrite objects or data** - Only newly imported objects will be deployed.
     -   **Overwrite objects and data** - All imported objects in the space will be deployed.
@@ -125,14 +125,14 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <tr>
     <td valign="top">
     
-        Content
+    Content
 
 
     
     </td>
     <td valign="top">
     
-        Review the objects to be imported. All objects are imported by default.
+    Review the objects to be imported. All objects are imported by default.
 
     You can select and deselect individual objects, or types of objects. The *Impacted Object* column shows warnings for objects that will overwrite content on your system.
 

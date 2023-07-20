@@ -33,14 +33,14 @@ Select one or more filter values to restrict the connection list according to yo
     <tr>
     <td valign="top">
     
-        *Features* that a connection type supports
+    *Features* that a connection type supports
 
 
     
     </td>
     <td valign="top">
     
-        *Data Flows*
+    *Data Flows*
 
     *Model Import*
 
@@ -55,14 +55,14 @@ Select one or more filter values to restrict the connection list according to yo
     <tr>
     <td valign="top">
     
-        *Categories* that the corresponding source belongs to
+    *Categories* that the corresponding source belongs to
 
 
     
     </td>
     <td valign="top">
     
-        *Cloud*
+    *Cloud*
 
     *On-Premise*
 
@@ -73,14 +73,14 @@ Select one or more filter values to restrict the connection list according to yo
     <tr>
     <td valign="top">
     
-        *Sources* that you would like to connect
+    *Sources* that you would like to connect
 
 
     
     </td>
     <td valign="top">
     
-        *Non-SAP*
+    *Non-SAP*
 
     *Partner Tools*
 

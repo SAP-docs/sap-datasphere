@@ -2,7 +2,13 @@
 
 # Privileges and Permissions
 
-A privilege represents a task or an area in SAP Datasphere and is assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.
+A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.
+
+This topic contains the following sections:
+
+-   [Overview](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_e1w_nn1_wkb)
+-   [SAP Datasphere Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_qrv_ygt_xxb)
+-   [Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__permissions_list)
 
 
 
@@ -18,11 +24,11 @@ You can use the standard application roles to assign sets of privileges and perm
 
 
 
-<a name="loiod7350c6823a14733a7a5727bad8371aa__section_jkj_fdn_5nb"/>
+<a name="loiod7350c6823a14733a7a5727bad8371aa__section_qrv_ygt_xxb"/>
 
 ## SAP Datasphere Privileges and Permissions
 
-The following table lists the SAP Datasphere privileges and the permissions that can be set for each privilege.
+The following table lists the privileges and the permissions that can be set for each privilege.
 
 > ### Note:  
 > Some permissions require others and may automatically set them. For example, setting the *Delete* permission for the *Data Warehouse Data Builder* privilege automatically sets the *Read* permission as well.
@@ -57,7 +63,7 @@ Description
 <tr>
 <td valign="top">
 
- *Spaces* 
+*Spaces* 
 
 
 
@@ -93,7 +99,7 @@ See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f454942
 <tr>
 <td valign="top">
 
- *Space Files* 
+*Space Files* 
 
 
 
@@ -128,7 +134,7 @@ See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f454942
 <tr>
 <td valign="top">
 
- *Data Warehouse Data Builder* 
+*Data Warehouse Data Builder* 
 
 
 
@@ -157,7 +163,7 @@ See [Acquiring Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e
 <tr>
 <td valign="top">
 
- *Data Warehouse Remote Connection* 
+*Data Warehouse Remote Connection* 
 
 
 
@@ -187,7 +193,7 @@ See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974
 <tr>
 <td valign="top">
 
- *Data Warehouse Cloud Data Integration* 
+*Data Warehouse Cloud Data Integration* 
 
 
 
@@ -225,7 +231,7 @@ Allows access to the *Data Integration Monitor* app:
 <tr>
 <td valign="top">
 
- *Data Warehouse Business Catalog* 
+*Data Warehouse Business Catalog* 
 
 
 
@@ -250,7 +256,7 @@ See [Repository Explorer](https://help.sap.com/viewer/c8a54ee704e94e159265512932
 <tr>
 <td valign="top">
 
- *Data Warehouse Cloud Data Access Control* 
+*Data Warehouse Cloud Data Access Control* 
 
 
 
@@ -282,7 +288,7 @@ See [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967
 <tr>
 <td valign="top">
 
- *Data Warehouse Business Builder* 
+*Data Warehouse Business Builder* 
 
 
 
@@ -307,7 +313,7 @@ See [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee7
 <tr>
 <td valign="top">
 
- *Data Warehouse Business Entity* 
+*Data Warehouse Business Entity* 
 
 
 
@@ -332,7 +338,7 @@ See [Creating a Business Entity](https://help.sap.com/viewer/c8a54ee704e94e15926
 <tr>
 <td valign="top">
 
- *Data Warehouse Authorization Scenario* 
+*Data Warehouse Authorization Scenario* 
 
 
 
@@ -357,7 +363,7 @@ See [Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e159265512
 <tr>
 <td valign="top">
 
- *Data Warehouse Fact Model* 
+*Data Warehouse Fact Model* 
 
 
 
@@ -382,7 +388,7 @@ See [Creating a Fact Model](https://help.sap.com/viewer/c8a54ee704e94e1592655129
 <tr>
 <td valign="top">
 
- *Data Warehouse Consumption Model* 
+*Data Warehouse Consumption Model* 
 
 
 
@@ -407,7 +413,7 @@ See [Creating a Consumption Model](https://help.sap.com/viewer/c8a54ee704e94e159
 <tr>
 <td valign="top">
 
- *Data Warehouse Folder* 
+*Data Warehouse Folder* 
 
 
 

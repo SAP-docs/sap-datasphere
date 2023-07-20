@@ -120,6 +120,36 @@ instantclient-basiclite-linux.x64-12.2.0.1.0.zip
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+SimbaODBCDriverforGoogleBigQuery\_2.3.1.1001-Linux.tar.gz
+
+
+
+</td>
+<td valign="top">
+
+`https://cloud.google.com/bigquery/providers/simba-drivers`
+
+
+
+</td>
+<td valign="top">
+
+abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018
+
+
+
+</td>
+</tr>
 </table>
 
 When uploading the drivers, they are identified by their SHA256-formatted fingerprint. You can verify the fingerprint with the following command:

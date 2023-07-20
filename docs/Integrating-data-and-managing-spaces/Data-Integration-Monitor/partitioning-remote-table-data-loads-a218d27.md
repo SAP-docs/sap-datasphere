@@ -51,21 +51,21 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <tr>
     <td valign="top">
     
-        *Column*
+    *Column*
 
 
     
     </td>
     <td valign="top">
     
-        Select the column from which the partition will be defined.
+    Select the column from which the partition will be defined.
 
 
     
     </td>
     <td valign="top">
     
-        It might happen that you can’t see all the columns available in your dataset because:
+    It might happen that you can’t see all the columns available in your dataset because:
 
     -   Not all data types are supported for partitioning depending on your data sources:
         -   SAP HANA data: Only the following data types are supported
@@ -99,21 +99,21 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <tr>
     <td valign="top">
     
-        *Parallel Processes* \(SAP HANA smart data integration only\)
+    *Parallel Processes* \(SAP HANA smart data integration only\)
 
 
     
     </td>
     <td valign="top">
     
-        You can define up to 5 parallel processes.
+    You can define up to 5 parallel processes.
 
 
     
     </td>
     <td valign="top">
     
-        By default, the partitions are loaded one after the other to control resource consumption.
+    By default, the partitions are loaded one after the other to control resource consumption.
 
     > ### Note:  
     > No parallel processes are possible for remote tables connected with an SAP HANA smart data access adapter.
@@ -125,14 +125,14 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <tr>
     <td valign="top">
     
-        *Partitions*
+    *Partitions*
 
 
     
     </td>
     <td valign="top">
     
-        Create the number of desired partitions by entering a range for each of them.
+    Create the number of desired partitions by entering a range for each of them.
 
     > ### Caution:  
     > Ranges must not overlap
@@ -144,7 +144,7 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     </td>
     <td valign="top">
     
-        > ### Note:  
+    > ### Note:  
     > -   Partitioning requires an in-depth knowledge of the values that are used or are valid for the chosen partitioning column.
     > -   Negative values are not valid for partition bounds of numeric columns and will be converted to 0 at runtime.
     > -   The low bound must be lower than the high bound. The order is checked according to the type of the partition column. Example: for string-like columns, '90' <= DOC\_ID < '100' is not valid, whereas '090' <= DOC\_ID < '100' is valid.

@@ -24,7 +24,7 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
 
 3.  Select the object of your choice, and then drag it over a source or other node in the diagram. When the target node is highlighted green, drop the new source to create a join.
 
-     ![](images/Create_Join_Gif_dc051d5.gif)The source is added to the diagram and it is joined to the target node. The join symbol is selected and its properties are displayed in the side panel. A projection node is added after the join node to remove any duplicate columns.
+    ![](images/Create_Join_Gif_dc051d5.gif)The source is added to the diagram and it is joined to the target node. The join symbol is selected and its properties are displayed in the side panel. A projection node is added after the join node to remove any duplicate columns.
 
     > ### Note:  
     > If you choose a table or view from the *Sources* tab, it is automatically imported into the repository and deployed, and will be available on the *Repository* tab for future use by you or others.
@@ -54,14 +54,14 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <tr>
     <td valign="top">
     
-        Join Type
+    Join Type
 
 
     
     </td>
     <td valign="top">
     
-        Specifies the type of SQL join to create. You can choose from:
+    Specifies the type of SQL join to create. You can choose from:
 
     -   Cross - Return all of the rows from the left table joined to all of the rows from the right table.
     -   Full - Return all of the rows from both tables, joining records from the left table where possible.
@@ -76,14 +76,14 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <tr>
     <td valign="top">
     
-        Distinct Values
+    Distinct Values
 
 
     
     </td>
     <td valign="top">
     
-        Return only unique values.
+    Return only unique values.
 
 
     
@@ -92,14 +92,14 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <tr>
     <td valign="top">
     
-        Cardinality
+    Cardinality
 
 
     
     </td>
     <td valign="top">
     
-        Specifies the number of rows matching another table in a join and may improve the view's performance. You can choose from:
+    Specifies the number of rows matching another table in a join and may improve the view's performance. You can choose from:
 
     -   `MANY TO ONE`
     -   `MANY TO EXACT ONE`

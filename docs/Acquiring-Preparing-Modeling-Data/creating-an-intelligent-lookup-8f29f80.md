@@ -11,7 +11,82 @@ Create an intelligent lookup to merge data from two entities even if there are p
 ## Context
 
 > ### Note:  
-> For information about the roles or privileges needed to use this tool, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
+> The following privileges are required to work with intelligent lookups:
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Action
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> Requires Privileges
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> Contained in Standard Roles
+> 
+> 
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Create, edit, deploy, delete intelligent lookups
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> *Data Warehouse Data Builder* \(CRUD----\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> *DW Modeler*
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Run intelligent lookups and process results
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> *Data Warehouse Data Integration* \(--U-----\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> *DW Integrator*
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> For more information about the roles and privileges needed to work with editors, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
 
 When combining data, there may be no column in your primary entity that contains data to uniquely identify a record in the other entity, and which would thus allow the creation of a standard join. Or, if such a column \(a *foreign key*\) exists, its data may be incomplete or unreliable. This can be particularly common when one of the entities comes from outside your organization. It may require a lot of manual work in spreadsheets to join the entities, and the results of this work may not be easy to reuse when new data arrives.
 

@@ -50,6 +50,7 @@
         -   [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md)
         -   [Load or Delete Local Table Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/load-or-delete-local-table-data-870401f.md)
         -   [Maintain Local Table Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/maintain-local-table-data-4bd5e64.md)
+        -   [03191f36e9144b2aaa47b8c9eea039c1.xml](03191f36e9144b2aaa47b8c9eea039c1.md)
     -   [Creating a Local Table from a CSV File](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)
         -   [Column Properties and Profiling](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-properties-and-profiling-32654ad.md)
         -   [Apply Data Transforms](Acquiring-and-Preparing-Data-in-the-Data-Builder/apply-data-transforms-3f0d747.md)

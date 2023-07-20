@@ -52,14 +52,14 @@ Select a target \(connection and container\) to define the target environment fo
     <tr>
     <td valign="top">
     
-        **Group Delta By**
+    **Group Delta By**
 
 
     
     </td>
     <td valign="top">
     
-        For *Load Type* of *Initial and Delta*: Choose *None*, *Date*, or *Hour*.
+    For *Load Type* of *Initial and Delta*: Choose *None*, *Date*, or *Hour*.
 
     Specifies whether to create additional folders for sorting updates based on the date or hour.
 
@@ -70,14 +70,14 @@ Select a target \(connection and container\) to define the target environment fo
     <tr>
     <td valign="top">
     
-        **File Type**
+    **File Type**
 
 
     
     </td>
     <td valign="top">
     
-         *csv*:
+    *csv*:
 
     -   *File Delimiter*: Specifies the character to use as a delimiter for columns in CSV files.
     -   *File Header*: Specifies whether CSV files include a header row with the column names.
@@ -86,13 +86,13 @@ Select a target \(connection and container\) to define the target environment fo
 
     -   *File Compression*: Specifies the compression algorithm to use for parquet files \(*None*, *GZIP*, *Snappy*\).
 
-     *json*:
+    *json*:
 
     -   *Encoding*: Generated JSON files are encoded in UTF-8 format.
 
     -   *Orient*: Specifies the internal structure of the produced JSON files:*"records"*: \[\{column -\> value\}, ... ,\{column -\> value\}\]
 
-     *jsonlines*:
+    *jsonlines*:
 
     -   *Encoding*: Generated JSON Lines files are encoded in UTF-8 format.
 

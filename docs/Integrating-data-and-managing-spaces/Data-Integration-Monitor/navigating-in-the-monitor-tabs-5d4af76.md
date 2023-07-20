@@ -8,7 +8,7 @@ Selecting a specific monitor tab from *Data Integration Monitor* \(<span class="
 
 After selecting a specific monitor type, for remote table replication, view persistency, data flow, or task chain runs, each of the monitor displays provides a summary listing of currently scheduled and previously executed tasks. For example, here is a sample of the monitor display for the Remote Table Monitor.
 
- ![](images/monitor_summary_page_2560817.png) 
+![](images/monitor_summary_page_2560817.png)
 
 The display provides a summary of all currently scheduled and previously executed remote table replication tasks, their schedule and refresh frequency, various memory and disk usage statistics, as well as the last task update or execution. Similar displays are provided for each of the other monitor types, view persistency, data flow, or task chain runs.
 
@@ -16,7 +16,7 @@ To view more information on any specific task in the summary list, click \> in t
 
 The following is an example of the *Run Details* display for a Remote Table Monitor task.
 
- ![](images/monitor_run_detail_c63f557.png) 
+![](images/monitor_run_detail_c63f557.png)
 
 In the left-most column or panel, the monitor displays a list of all previous runs of the selected task as well as the status of the task, completed successfully or failed. In the right-most column or panel, the monitor displays log messages detailing the steps executed for the selected task. For failed task runs or execution, you can click on the highlighted *Failed* status to show more information.
 

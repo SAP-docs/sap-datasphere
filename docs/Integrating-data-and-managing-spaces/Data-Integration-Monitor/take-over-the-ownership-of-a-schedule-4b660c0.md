@@ -61,30 +61,14 @@ Changing the owner of the schedule is required when the user owning the schedule
     <tr>
     <td valign="top">
     
-        **Remote table**
+    **Remote table**
 
 
     
     </td>
     <td valign="top">
     
-        Select *Schedule Replication* \> *Edit Schedule*.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        **View**
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Select *Schedule* \> *Edit Schedule*.
+    Select *Schedule Replication* \> *Edit Schedule*.
 
 
     
@@ -93,14 +77,30 @@ Changing the owner of the schedule is required when the user owning the schedule
     <tr>
     <td valign="top">
     
-        **Data flow**
+    **View**
 
 
     
     </td>
     <td valign="top">
     
-        Select :clock3: *Schedule* \> *Edit Schedule*.
+    Select *Schedule* \> *Edit Schedule*.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Data flow**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select :clock3: *Schedule* \> *Edit Schedule*.
 
     > ### Note:  
     > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.

@@ -50,14 +50,14 @@ For information about using this feature, see [Exchanging Data with SAP SQL Data
     <tr>
     <td valign="top">
     
-        SAP Datasphere Tenant ID
+    SAP Datasphere Tenant ID
 
 
     
     </td>
     <td valign="top">
     
-        In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> **<span class="FPA-icons"></span> \(*About*\).
+    In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> **<span class="FPA-icons"></span> \(*About*\).
 
     > ### Note:  
     > You need the *Tenant ID* for the ticket, and the *Database ID* when building your containers in the SAP Datasphere run-time database.
@@ -69,14 +69,14 @@ For information about using this feature, see [Exchanging Data with SAP SQL Data
     <tr>
     <td valign="top">
     
-         SAP Business Technology Platform Org GUID
+    SAP Business Technology Platform Org GUID
 
 
     
     </td>
     <td valign="top">
     
-        Your SAP Business Technology Platform organization ID.
+    Your SAP Business Technology Platform organization ID.
 
     You can use the Cloud Foundry CLI to find your organization GUID \(see [https://cli.cloudfoundry.org/en-US/v6/org.html](https://cli.cloudfoundry.org/en-US/v6/org.html)\).
 
@@ -87,14 +87,14 @@ For information about using this feature, see [Exchanging Data with SAP SQL Data
     <tr>
     <td valign="top">
     
-         SAP Business Technology Platform Space GUID
+    SAP Business Technology Platform Space GUID
 
 
     
     </td>
     <td valign="top">
     
-        The SAP Business Technology Platform space inside the organization.
+    The SAP Business Technology Platform space inside the organization.
 
     You can use the Cloud Foundry CLI to find your space GUID \(see [https://cli.cloudfoundry.org/en-US/v6/space.html](https://cli.cloudfoundry.org/en-US/v6/space.html)\).
 

@@ -57,7 +57,7 @@ Description
 <tr>
 <td valign="top">
 
- Business Name 
+Business Name 
 
 
 
@@ -73,7 +73,7 @@ Enter a descriptive name to help users identify the object. This name can be cha
 <tr>
 <td valign="top">
 
- Technical Name 
+Technical Name 
 
 
 
@@ -101,7 +101,7 @@ Data Type
 </td>
 <td valign="top">
 
- Select the type of data that the column will contain. 
+Select the type of data that the column will contain. 
 
 For a list of available data types and their supported data type conversions, see [Column Data Types](../Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
 
@@ -119,7 +119,7 @@ Aggregation
 </td>
 <td valign="top">
 
- Select the default aggregation type for the column. 
+Select the default aggregation type for the column. 
 
 Choose from the following:
 
@@ -146,7 +146,7 @@ Semantic Type
 </td>
 <td valign="top">
 
- Select the appropriate semantic type to understand the value in the column. 
+Select the appropriate semantic type to understand the value in the column. 
 
 Choose from the following:
 
@@ -168,7 +168,7 @@ Unit Column
 </td>
 <td valign="top">
 
- Select an attribute with a semantic type of *Currency Code* or *Unit of Measure* to complete the semantic definition of the column. 
+Select an attribute with a semantic type of *Currency Code* or *Unit of Measure* to complete the semantic definition of the column. 
 
 
 
@@ -184,7 +184,7 @@ Default Value
 </td>
 <td valign="top">
 
- Enter an appropriate default value for the column. 
+Enter an appropriate default value for the column. 
 
 > ### Note:  
 > This property is only displayed in the table editor.
@@ -203,7 +203,7 @@ Not Null
 </td>
 <td valign="top">
 
- Select this option to indicate that the column must contain a value. 
+Select this option to indicate that the column must contain a value. 
 
 > ### Note:  
 > This property is only displayed in the table editor.
@@ -222,7 +222,7 @@ Show
 </td>
 <td valign="top">
 
- \[deprecated\] Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
+\[deprecated\] Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
 
 You can now control the visibility of columns in SAP Analytics Cloud by choosing to include or exclude them in your analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 

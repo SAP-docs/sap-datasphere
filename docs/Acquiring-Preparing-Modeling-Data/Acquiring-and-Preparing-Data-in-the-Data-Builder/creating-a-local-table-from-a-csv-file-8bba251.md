@@ -49,14 +49,14 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     <tr>
     <td valign="top">
     
-        Use first row as column header.
+    Use first row as column header.
 
 
     
     </td>
     <td valign="top">
     
-        Select if your file contains column headers in its first line.
+    Select if your file contains column headers in its first line.
 
 
     
@@ -65,14 +65,14 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     <tr>
     <td valign="top">
     
-        CSV Delimiter
+    CSV Delimiter
 
 
     
     </td>
     <td valign="top">
     
-        Select the character used to signify the boundary between columns. In general, the default value, `Auto-detect` is sufficient.
+    Select the character used to signify the boundary between columns. In general, the default value, `Auto-detect` is sufficient.
 
 
     

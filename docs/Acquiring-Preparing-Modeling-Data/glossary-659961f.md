@@ -102,7 +102,7 @@ A pricing model mode defines how often the data is delivered: either "One-time" 
 
 A data shipment defines how the the data is shipped to the consumer. It's either managed by Data Marketplace or by the Data provider. For more information, see [Data Shipment](data-shipment-837e749.md)
 
- 
+
 
 
 

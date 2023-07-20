@@ -61,14 +61,14 @@ The following hierarchy features are not supported:
         <tr>
         <td valign="top">
         
-                Business Name
+        Business Name
 
 
         
         </td>
         <td valign="top">
         
-                Enter a descriptive name to help users identify the object. This name can be changed at any time.
+        Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 
         
@@ -77,14 +77,14 @@ The following hierarchy features are not supported:
         <tr>
         <td valign="top">
         
-                Technical Name
+        Technical Name
 
 
         
         </td>
         <td valign="top">
         
-                Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
         To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -98,14 +98,14 @@ The following hierarchy features are not supported:
         <tr>
         <td valign="top">
         
-                Parent Column / Child Column
+        Parent Column / Child Column
 
 
         
         </td>
         <td valign="top">
         
-                \[parent-child hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a new parent-child hierarchy. Select the parent and child columns that represent the hierarchy. You can set as many as necessary. The results of these hierarchies can be compounded.
+        \[parent-child hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a new parent-child hierarchy. Select the parent and child columns that represent the hierarchy. You can set as many as necessary. The results of these hierarchies can be compounded.
 
         > ### Example:  
         > You have a `CostArea` and `CostCenter` attributes with the following pairs of parent-child hierarchies:
@@ -270,17 +270,17 @@ The following hierarchy features are not supported:
         >     --\> A/1  
         >        --\> B/2  
         >           --\> C/3  
-        >    
+        >   
         >     --\> A/2  
         >        --\> B/3  
-        >    
+        >   
         >     --\> B/1  
         >        --\> C/2  
-        >    
+        >   
         >     --\> C/1  
-        >    
+        >   
         >     --\>A/3   
-        >  
+        > 
         > 
         > 
         > 
@@ -295,14 +295,14 @@ The following hierarchy features are not supported:
         <tr>
         <td valign="top">
         
-                Levels
+        Levels
 
 
         
         </td>
         <td valign="top">
         
-                \[level-based hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
+        \[level-based hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
 
         For example, in a `Products` dimension, you may add three levels containing the columns `Product Line`, `Product Category`, and `Product`.
 

@@ -64,14 +64,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Source Amount Column
+    Source Amount Column
 
 
     
     </td>
     <td valign="top">
     
-        Select the column identifier containing the values to be converted.
+    Select the column identifier containing the values to be converted.
 
 
     
@@ -80,14 +80,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Steps
+    Steps
 
 
     
     </td>
     <td valign="top">
     
-        Define the steps that should be included in the conversion process:
+    Define the steps that should be included in the conversion process:
 
     -   *Shift* - enables a decimal shift according to the source currency selected.
     -   *Convert* - triggers the actual conversion from the source to the target currency.
@@ -101,14 +101,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Source Currency
+    Source Currency
 
 
     
     </td>
     <td valign="top">
     
-        Select the column describing the input unit. Click <span class="SAP-icons"></span> and choose a type:
+    Select the column describing the input unit. Click <span class="SAP-icons"></span> and choose a type:
 
     -   *Column* - Select a column and click *Select*.
 
@@ -121,14 +121,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Target Currency
+    Target Currency
 
 
     
     </td>
     <td valign="top">
     
-        Select the column describing the target unit. Click <span class="SAP-icons"></span> and choose a type:
+    Select the column describing the target unit. Click <span class="SAP-icons"></span> and choose a type:
 
     -   *Column* - Select a column and click *Select*.
 
@@ -142,14 +142,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Reference Date
+    Reference Date
 
 
     
     </td>
     <td valign="top">
     
-        Enter the column describing the currency reference date. Click <span class="SAP-icons"></span> and choose a type:
+    Enter the column describing the currency reference date. Click <span class="SAP-icons"></span> and choose a type:
 
     -   *Column* - Select a column and click *Select*.
 
@@ -186,14 +186,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Client
+    Client
 
 
     
     </td>
     <td valign="top">
     
-        Enter a three character string that is used to separate tenants within ERP system tables. This is used in the conversion tables to select the correct rows for each user.
+    Enter a three character string that is used to separate tenants within ERP system tables. This is used in the conversion tables to select the correct rows for each user.
 
     This parameter is mandatory, as the CLIENT session context variable is not used by this command.
 
@@ -204,14 +204,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Conversion Type
+    Conversion Type
 
 
     
     </td>
     <td valign="top">
     
-        Define the conversion type as stored in the conversion tables. The conversion types available in your system vary according to the setup of your ERP system. In general, these are either M or EURX. Contact your system administrator for the details of your specific table configuration.
+    Define the conversion type as stored in the conversion tables. The conversion types available in your system vary according to the setup of your ERP system. In general, these are either M or EURX. Contact your system administrator for the details of your specific table configuration.
 
 
     
@@ -220,14 +220,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Error Handling
+    Error Handling
 
 
     
     </td>
     <td valign="top">
     
-        Select a value to define how the system handles a situation where a row could not be converted. All mandatory values must be provided beforehand:
+    Select a value to define how the system handles a situation where a row could not be converted. All mandatory values must be provided beforehand:
 
     -   **Fail on Error** - the conversion fails with an error.
     -   **Set to Null** - the output from the row that caused the error is set to NULL.
@@ -262,14 +262,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Lookup
+    Lookup
 
 
     
     </td>
     <td valign="top">
     
-        Define the type of lookup to be performed:
+    Define the type of lookup to be performed:
 
     -   **Regular** - a regular conversion is performed.
     -   **Reverse** - performs a conversion with the input units swapped.
@@ -282,14 +282,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Accuracy
+    Accuracy
 
 
     
     </td>
     <td valign="top">
     
-        Defines the rounding behavior of the system:
+    Defines the rounding behavior of the system:
 
     -   **Compatibility** - mimics ERP behavior by rounding the result.
 
@@ -302,14 +302,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Date Format
+    Date Format
 
 
     
     </td>
     <td valign="top">
     
-        Defines the format in which the reference date is presented:
+    Defines the format in which the reference date is presented:
 
     -   **Auto Detect** - attempt automatic detection of the date format.
 
@@ -323,30 +323,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Precision Entity
+    Precision Entity
 
 
     
     </td>
     <td valign="top">
     
-        Select the entity identifier of the precision entity.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Configuration Entity
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Select the entity identifier of the conversion type configuration.
+    Select the entity identifier of the precision entity.
 
 
     
@@ -355,30 +339,14 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Prefactors Entity
+    Configuration Entity
 
 
     
     </td>
     <td valign="top">
     
-        Select the entity identifier of the pre-factors entity.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Rates Entity
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Select the entity identifier of the conversion rates entity.
+    Select the entity identifier of the conversion type configuration.
 
 
     
@@ -387,14 +355,46 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <tr>
     <td valign="top">
     
-        Notations Entity
+    Prefactors Entity
 
 
     
     </td>
     <td valign="top">
     
-        Select the entity identifier of the entity that stores notations.
+    Select the entity identifier of the pre-factors entity.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Rates Entity
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the entity identifier of the conversion rates entity.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Notations Entity
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the entity identifier of the entity that stores notations.
 
 
     

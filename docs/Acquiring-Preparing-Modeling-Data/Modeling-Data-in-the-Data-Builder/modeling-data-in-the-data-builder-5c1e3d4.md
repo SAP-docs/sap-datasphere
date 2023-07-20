@@ -159,14 +159,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        New
+    New
 
 
     
     </td>
     <td valign="top">
     
-        Create *Data Builder* objects \(independent of any selection\).
+    Create *Data Builder* objects \(independent of any selection\).
 
 
     
@@ -175,14 +175,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Import
+    Import
 
 
     
     </td>
     <td valign="top">
     
-        Import objects from files and connections:
+    Import objects from files and connections:
 
     -   *Import CSV File* - Import data from a CSV file to create a local table \(see [Creating a Local Table from a CSV File](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)
     -   *Import Objects from CSN/JSON File* - Import table and view definitions from a CSN file to create tables and views or import data flow definitions from a JSON file to create data flows. \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
@@ -195,14 +195,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Edit
+    Edit
 
 
     
     </td>
     <td valign="top">
     
-        Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
+    Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
 
 
     
@@ -211,14 +211,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Deploy
+    Deploy
 
 
     
     </td>
     <td valign="top">
     
-        Select one or more objects and deploy them at once.
+    Select one or more objects and deploy them at once.
 
     Choose from the following entity types:
 
@@ -240,30 +240,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Share
+    Share
 
 
     
     </td>
     <td valign="top">
     
-        Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Impact and Lineage Analysis
-
-
-    
-    </td>
-    <td valign="top">
-    
-        View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+    Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
 
 
     
@@ -272,14 +256,30 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Delete
+    Impact and Lineage Analysis
 
 
     
     </td>
     <td valign="top">
     
-        Delete the selected objects.
+    View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delete
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Delete the selected objects.
 
     > ### Note:  
     > If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.

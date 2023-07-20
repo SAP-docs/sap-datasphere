@@ -84,30 +84,14 @@ Description
 <tr>
 <td valign="top">
 
- *Endpoint* 
+*Endpoint* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the endpoint URL of the Amazon S3 server. The protocol prefix is not required. For example, `s3.amazonaws.com`. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Protocol* 
-
-
-
-</td>
-<td valign="top">
-
- Select the protocol. The default value is *HTTPS*. The value that you provide overwrites the value from the endpoint, if already set. 
+Enter the endpoint URL of the Amazon S3 server. The protocol prefix is not required. For example, `s3.amazonaws.com`. 
 
 
 
@@ -116,14 +100,30 @@ Description
 <tr>
 <td valign="top">
 
- *Root Path* 
+*Protocol* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example,`/My Folder/MySubfolder`. 
+Select the protocol. The default value is *HTTPS*. The value that you provide overwrites the value from the endpoint, if already set. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Root Path* 
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example,`/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
 
@@ -158,14 +158,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use Server Side Encryption* 
+*Use Server Side Encryption* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select *true* \(default\) if you want to use S3 objects encrypted through server side encryption. 
+\[optional\] Select *true* \(default\) if you want to use S3 objects encrypted through server side encryption. 
 
 
 
@@ -174,14 +174,14 @@ Description
 <tr>
 <td valign="top">
 
- *Encryption Option* 
+*Encryption Option* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] You can select: 
+\[optional\] You can select: 
 
 -   *Encryption with Amazon S3 Managed Keys \(SSE-S3\)* \(default\) if your objects are encrypted using the default encryption configuration for objects in your Amazon S3 buckets.
 
@@ -202,7 +202,7 @@ Description
 </td>
 <td valign="top">
 
- Enter the KMS key Amazon Resource Name \(ARN\) for the customer managed key which has been created to encrypt the objects in your Amazon S3 buckets. 
+Enter the KMS key Amazon Resource Name \(ARN\) for the customer managed key which has been created to encrypt the objects in your Amazon S3 buckets. 
 
 
 
@@ -235,14 +235,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use Assume Role* 
+*Use Assume Role* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select *true* if you want to use temporary security credentials and restrict access to your Amazon S3 buckets based on an Identity and Access Management role \(IAM role\). The default value is *false*. 
+\[optional\] Select *true* if you want to use temporary security credentials and restrict access to your Amazon S3 buckets based on an Identity and Access Management role \(IAM role\). The default value is *false*. 
 
 
 
@@ -251,14 +251,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Assume Role* = *true*\] *Role ARN* 
+\[if *Use Assume Role* = *true*\] *Role ARN* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role. 
+Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role. 
 
 
 
@@ -274,7 +274,7 @@ Description
 </td>
 <td valign="top">
 
- \[optional\] Enter the name to uniquely identify the assumed role session. 
+\[optional\] Enter the name to uniquely identify the assumed role session. 
 
 
 
@@ -355,14 +355,14 @@ Description
 <tr>
 <td valign="top">
 
- *Access Key* 
+*Access Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the access key ID of the user that is used to authenticate to Amazon S3. 
+Enter the access key ID of the user that is used to authenticate to Amazon S3. 
 
 
 
@@ -371,14 +371,14 @@ Description
 <tr>
 <td valign="top">
 
- *Secret Key* 
+*Secret Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the secret access key of the user that is used to authenticate to Amazon S3. 
+Enter the secret access key of the user that is used to authenticate to Amazon S3. 
 
 
 
@@ -418,7 +418,7 @@ Description
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties. 
 
 
 

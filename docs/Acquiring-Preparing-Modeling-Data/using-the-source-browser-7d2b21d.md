@@ -8,7 +8,7 @@ You use the *Source Browser* to add objects as sources for your data flow, graph
 
 The *Source Browser* is available in the left panel in each of these editors, and gives you access to all the objects that have been imported into or created in the space, and also to all the connections and other sources that are available in the space:
 
--    The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\). The following categories can be available:
+-   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\). The following categories can be available:
 
     -   *Tables* - Contains all remote and local tables in the space \(see [Acquiring Data in the Data Builder](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md)\).
     -   *Views* - Contains all graphical and SQL views present in the space \(see [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md)\).
@@ -19,7 +19,7 @@ The *Source Browser* is available in the left panel in each of these editors, an
     -   *Intelligent Lookups* - Contains all intelligent lookups present in the space \(see [Creating an Intelligent Lookup](creating-an-intelligent-lookup-8f29f80.md)\).
     -   *Shared Objects* - Contains all objects shared to the space \(see [Sharing Tables and Views To Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
 
--    The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. These can include: 
+-   The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. These can include: 
 
     -   *Connections* - Lists all the connections that have been created in the space \(see [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:\).
 

@@ -32,7 +32,7 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <tr>
 <td valign="top">
 
- **Provisioning** 
+**Provisioning** 
 
 
 
@@ -67,7 +67,10 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <tr>
 <td valign="top">
 
- **Size Configuration** 
+**Size Configuration**
+
+> ### Note:  
+> For maximum size configuration options, see the tables below.
 
 
 
@@ -117,7 +120,7 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <tr>
 <td valign="top">
 
- **Metering** 
+**Metering** 
 
 
 
@@ -149,7 +152,7 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <tr>
 <td valign="top">
 
- **Time Limitation** 
+**Time Limitation** 
 
 
 
@@ -183,7 +186,7 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <tr>
 <td valign="top">
 
- **Number of tenants** 
+**Number of tenants** 
 
 
 
@@ -207,6 +210,907 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 
 -   1 per SAP BTP global account.
 
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio2f80b57359254b5cbb4faac794ade90c__section_vdz_s2c_yxb"/>
+
+## Maximum Configuration Values
+
+The maxium configuration size of your tenant depends on regional availability and your server type.
+
+> ### Note:  
+> -   Data integration includes 200h/month from the minimum free package.
+> -   Catalog includes 0.5 GB/h from the minimum free package.
+> -   Catalog storage/crawling includes 100h/month from the minimum free package.
+
+**Amazon Web Services \(AWS\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler Regional Availability
+
+
+
+</th>
+<th valign="top">
+
+Compute
+
+
+
+</th>
+<th valign="top">
+
+Storage
+
+
+
+</th>
+<th valign="top">
+
+BW Bridge
+
+
+
+</th>
+<th valign="top">
+
+Data Lake
+
+
+
+</th>
+<th valign="top">
+
+Data Integration
+
+
+
+</th>
+<th valign="top">
+
+Catalog
+
+
+
+</th>
+<th valign="top">
+
+Catalog Storage / Crawling
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Europe \(Frankfurt\)
+
+
+
+</td>
+<td valign="top">
+
+5970 GB
+
+
+
+</td>
+<td valign="top">
+
+15872 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Australia
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Singapore
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+Not Supported
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+US East
+
+
+
+</td>
+<td valign="top">
+
+5970 GB
+
+
+
+</td>
+<td valign="top">
+
+15872 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Canada \(Montreal\)
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+Not Supported
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+South Korea
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+Not Supported
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EU Access \(Frankfurt\)
+
+
+
+</td>
+<td valign="top">
+
+1800 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+4096 GB
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+</table>
+
+**Microsoft Azure**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler Regional Availability
+
+
+
+</th>
+<th valign="top">
+
+Compute
+
+
+
+</th>
+<th valign="top">
+
+Storage
+
+
+
+</th>
+<th valign="top">
+
+BW Bridge
+
+
+
+</th>
+<th valign="top">
+
+Data Lake
+
+
+
+</th>
+<th valign="top">
+
+Data Integration
+
+
+
+</th>
+<th valign="top">
+
+Catalog
+
+
+
+</th>
+<th valign="top">
+
+Catalog Storage / Crawling
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Europe \(Amsterdam\)
+
+
+
+</td>
+<td valign="top">
+
+1920 GB
+
+
+
+</td>
+<td valign="top">
+
+7168 GB
+
+
+
+</td>
+<td valign="top">
+
+Not Supported
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+US West
+
+
+
+</td>
+<td valign="top">
+
+5600 GB
+
+
+
+</td>
+<td valign="top">
+
+13824 GB
+
+
+
+</td>
+<td valign="top">
+
+Not Supported
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+
+
+</td>
+</tr>
+</table>
+
+**Google Cloud Platform \(GCP\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler Regional Availability
+
+
+
+</th>
+<th valign="top">
+
+Compute
+
+
+
+</th>
+<th valign="top">
+
+Storage
+
+
+
+</th>
+<th valign="top">
+
+BW Bridge
+
+
+
+</th>
+<th valign="top">
+
+Data Lake
+
+
+
+</th>
+<th valign="top">
+
+Data Integration
+
+
+
+</th>
+<th valign="top">
+
+Catalog
+
+
+
+</th>
+<th valign="top">
+
+Catalog Storage / Crawling
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+US Central
+
+
+
+</td>
+<td valign="top">
+
+1344 GB
+
+
+
+</td>
+<td valign="top">
+
+3328 GB
+
+
+
+</td>
+<td valign="top">
+
+Not Supported
+
+
+
+</td>
+<td valign="top">
+
+90 TB
+
+
+
+</td>
+<td valign="top">
+
+4200 h/month
+
+
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+
+
+</td>
+<td valign="top">
+
+2100 h/month
 
 
 

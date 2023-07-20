@@ -99,7 +99,7 @@
 -   [Managing Your Space](managing-your-space-268ea7e.md)
     -   [Assign Members to Your Space](assign-members-to-your-space-9d59fe5.md)
     -   [Create Time Data and Dimensions](create-time-data-and-dimensions-c5cfce4.md)
-    -   [Enable or Disable Audit Logging](enable-or-disable-audit-logging-2665539.md)
+    -   [Enable Audit Logging](enable-audit-logging-2665539.md)
         -   [Export Audit Logs](export-audit-logs-0c5dc64.md)
     -   [Save and Deploy Your Space](save-and-deploy-your-space-95973c7.md)
     -   [Review Your Space Status](review-your-space-status-b2915bf.md)

@@ -61,30 +61,14 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the host name of the Redshift server. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Port* 
-
-
-
-</td>
-<td valign="top">
-
- Displays the default port 5439. You can overwrite the port, if required. 
+Enter the host name of the Redshift server. 
 
 
 
@@ -93,14 +77,30 @@ Description
 <tr>
 <td valign="top">
 
- *Database Name* 
+*Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the database to which you want to connect. 
+Displays the default port 5439. You can overwrite the port, if required. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Database Name* 
+
+
+
+</td>
+<td valign="top">
+
+Enter the name of the database to which you want to connect. 
 
 
 
@@ -140,7 +140,7 @@ Description
 </td>
 <td valign="top">
 
- Select the SSL certificate verification mode to use when connecting. The default is *false*. 
+Select the SSL certificate verification mode to use when connecting. The default is *false*. 
 
 
 
@@ -191,14 +191,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the Redshift user that has privileges to connect to the database. 
+Enter the name of the Redshift user that has privileges to connect to the database. 
 
 
 
@@ -207,14 +207,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password* 
+*Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the password of the Redshift user. 
+Enter the password of the Redshift user. 
 
 
 

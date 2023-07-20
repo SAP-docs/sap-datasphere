@@ -45,30 +45,14 @@ Review results are input records that are matched with a lookup record with a sc
     <tr>
     <td valign="top">
     
-        <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
+    <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
 
 
     
     </td>
     <td valign="top">
     
-        Collapse or expand all pairing groups.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Confirm
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Confirm the selected match and move the records to the *Matched* tab.
+    Collapse or expand all pairing groups.
 
 
     
@@ -77,30 +61,14 @@ Review results are input records that are matched with a lookup record with a sc
     <tr>
     <td valign="top">
     
-        Reject
+    Confirm
 
 
     
     </td>
     <td valign="top">
     
-        Reject the selected match and move the matched records to the *Unmatched* tab.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Rows per Pairing Group
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Specify the maximum number of rows to display for each pairing group.
+    Confirm the selected match and move the records to the *Matched* tab.
 
 
     
@@ -109,14 +77,46 @@ Review results are input records that are matched with a lookup record with a sc
     <tr>
     <td valign="top">
     
-        <span class="FPA-icons"></span> \(Settings\)
+    Reject
 
 
     
     </td>
     <td valign="top">
     
-        Select and reorder table columns.
+    Reject the selected match and move the matched records to the *Unmatched* tab.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Rows per Pairing Group
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Specify the maximum number of rows to display for each pairing group.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons"></span> \(Settings\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select and reorder table columns.
 
 
     

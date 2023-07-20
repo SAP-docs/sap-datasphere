@@ -76,21 +76,21 @@ SAP Datasphere can be hosted either on SAP data centers or on non-SAP data cente
     <tr>
     <td valign="top">
     
-        sp
+    sp
 
 
     
     </td>
     <td valign="top">
     
-        Yes
+    Yes
 
 
     
     </td>
     <td valign="top">
     
-        -   This is the name of the SAML 2 service provider for which SSO is performed.
+    -   This is the name of the SAML 2 service provider for which SSO is performed.
 
     -   The sp\_name value of the parameter equals the Entity ID of the service provider.
 
@@ -104,14 +104,14 @@ SAP Datasphere can be hosted either on SAP data centers or on non-SAP data cente
     <tr>
     <td valign="top">
     
-        index
+    index
 
 
     
     </td>
     <td valign="top">
     
-        > ### Note:  
+    > ### Note:  
     > You can choose by the index the correct ACS endpoint for unsolicited SAML response processing. Provide the index parameter when the default ACS endpoint that has been configured via the administration console cannot process unsolicited SAML responses.
 
 
@@ -119,7 +119,7 @@ SAP Datasphere can be hosted either on SAP data centers or on non-SAP data cente
     </td>
     <td valign="top">
     
-        -   Enter the index number of the endpoint of the assertion consumer service of the service provider as the target of the SAML response. Otherwise, the identity provider uses the default endpoint configured for the trusted service provider.
+    -   Enter the index number of the endpoint of the assertion consumer service of the service provider as the target of the SAML response. Otherwise, the identity provider uses the default endpoint configured for the trusted service provider.
 
     -   If your IdP doesn't support indexing, you must choose between IdP-initiated SSO or SP-initiated SSO. You can either replace the default ACS endpoint to initiate an IdP SSO or continue using the default endpoint to initiate an SP SSO.
 

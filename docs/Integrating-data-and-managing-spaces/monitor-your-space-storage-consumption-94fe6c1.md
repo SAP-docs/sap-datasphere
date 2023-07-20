@@ -76,7 +76,7 @@ See the *Table Storage Consumption* graph that displays all the relevant tables 
 </td>
 <td valign="top">
 
- ![](images/DWC_Table_Consumption_29e97f7.jpg) 
+![](images/DWC_Table_Consumption_29e97f7.jpg)
 
 
 
@@ -94,7 +94,7 @@ Sort your list of tables in ascending, descending order or group them together a
 </td>
 <td valign="top">
 
- ![](images/Monitoring_Tabel_Details_DWC_de3fb75.jpg) 
+![](images/Monitoring_Tabel_Details_DWC_de3fb75.jpg)
 
 
 

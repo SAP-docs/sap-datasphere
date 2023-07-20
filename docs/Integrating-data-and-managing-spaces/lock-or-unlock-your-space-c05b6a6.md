@@ -34,7 +34,7 @@ In this situation, these actions are possible:
 
 -   A space administrator can use the *Unlock* button on the *Space Management* page or on the space page to unlock the space for a 24-hour grace period, in case urgent changes must be deployed.
 -   An administrator can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk space.") :arrow_upper_right:\).
--   A space administrator can disable audit logs or decrease the number of days audit logs are kept for \(see [Enable or Disable Audit Logging](enable-or-disable-audit-logging-2665539.md)\).
+-   A space administrator can disable audit logs or decrease the number of days audit logs are kept for \(see [Enable Audit Logging](enable-audit-logging-2665539.md)\).
 
 
 

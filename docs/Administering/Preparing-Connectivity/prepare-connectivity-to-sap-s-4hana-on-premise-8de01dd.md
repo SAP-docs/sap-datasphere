@@ -120,14 +120,14 @@ Before you can use the connection to import entities, the following is required:
         <tr>
         <td valign="top">
         
-                SRV\_NAME
+        SRV\_NAME
 
 
         
         </td>
         <td valign="top">
         
-                EF608938F3EB18256CE851763C2952
+        EF608938F3EB18256CE851763C2952
 
 
         
@@ -136,14 +136,14 @@ Before you can use the connection to import entities, the following is required:
         <tr>
         <td valign="top">
         
-                SRV\_TYPE
+        SRV\_TYPE
 
 
         
         </td>
         <td valign="top">
         
-                HT
+        HT
 
 
         
@@ -174,30 +174,14 @@ Before you can use the connection to import entities, the following is required:
         <tr>
         <td valign="top">
         
-                DDLNAME
+        DDLNAME
 
 
         
         </td>
         <td valign="top">
         
-                <leave empty - this field is not used\>
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-                DDLSRCNAME
-
-
-        
-        </td>
-        <td valign="top">
-        
-                CSN\_EXPOSURE\_CDS
+        <leave empty - this field is not used\>
 
 
         
@@ -206,14 +190,30 @@ Before you can use the connection to import entities, the following is required:
         <tr>
         <td valign="top">
         
-                ACTVT
+        DDLSRCNAME
 
 
         
         </td>
         <td valign="top">
         
-                03
+        CSN\_EXPOSURE\_CDS
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        ACTVT
+
+
+        
+        </td>
+        <td valign="top">
+        
+        03
 
 
         

@@ -50,14 +50,14 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
-         Business Name 
+    Business Name 
 
 
     
     </td>
     <td valign="top">
     
-        Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -66,14 +66,14 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
-         Technical Name 
+    Technical Name 
 
 
     
     </td>
     <td valign="top">
     
-        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -87,14 +87,14 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
-        Semantic Usage
+    Semantic Usage
 
 
     
     </td>
     <td valign="top">
     
-         Select the way your entity should be used. 
+    Select the way your entity should be used. 
 
     Choose from the following:
 
@@ -112,14 +112,14 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
-        Source Object \(Open SQL Schema/HDI Container\)
+    Source Object \(Open SQL Schema/HDI Container\)
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
+    \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
 
 
     
@@ -128,14 +128,14 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
-        Status
+    Status
 
 
     
     </td>
     <td valign="top">
     
-         \[read-only\] Displays the deployment and error status of the object. 
+    \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
@@ -166,12 +166,9 @@ This procedure explains how to create an empty table by defining its columns. Yo
 
 5.  \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md) 
 
-6.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:
+6.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
 
-    -   *Save* to save your object.
-    -   *Save As* to create a local a copy of the object you're working on. The object must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
-
-    Click <span class="SAP-icons"></span> \(Deploy\) to deploy your entity.
+    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
 7.  Once your table is deployed, you can:
 

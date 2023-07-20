@@ -43,14 +43,14 @@ Insert a union operator to combine two data sets that share the same schema defi
     <tr>
     <td valign="top">
     
-        *Label*
+    *Label*
 
 
     
     </td>
     <td valign="top">
     
-        Provide a suitable name for your union operator as per your requirement.
+    Provide a suitable name for your union operator as per your requirement.
 
 
     
@@ -59,14 +59,14 @@ Insert a union operator to combine two data sets that share the same schema defi
     <tr>
     <td valign="top">
     
-        *Union All*
+    *Union All*
 
 
     
     </td>
     <td valign="top">
     
-        Toggle this button to include/exclude the duplicate records from the input operators. For example, if *Union All* is disabled, all the duplicate records are removed from the final result.
+    Toggle this button to include/exclude the duplicate records from the input operators. For example, if *Union All* is disabled, all the duplicate records are removed from the final result.
 
 
     
@@ -103,30 +103,14 @@ Insert a union operator to combine two data sets that share the same schema defi
     <tr>
     <td valign="top">
     
-        *Add All Source Columns as Output Columns*
+    *Add All Source Columns as Output Columns*
 
 
     
     </td>
     <td valign="top">
     
-        Add all columns in the left list to the right list \(if they are not already present\).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        *Add Selected Source Columns as Output Columns*
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Add columns selected in the left list to the right list \(if they are not already present\).
+    Add all columns in the left list to the right list \(if they are not already present\).
 
 
     
@@ -135,14 +119,14 @@ Insert a union operator to combine two data sets that share the same schema defi
     <tr>
     <td valign="top">
     
-        *Delete Selected Output Columns*
+    *Add Selected Source Columns as Output Columns*
 
 
     
     </td>
     <td valign="top">
     
-        Delete any columns selected in the right list so that they are no longer union output columns.
+    Add columns selected in the left list to the right list \(if they are not already present\).
 
 
     
@@ -151,14 +135,30 @@ Insert a union operator to combine two data sets that share the same schema defi
     <tr>
     <td valign="top">
     
-        *Delete All Output Columns*
+    *Delete Selected Output Columns*
 
 
     
     </td>
     <td valign="top">
     
-        Delete all columns in the right list so that they are no longer union output columns.
+    Delete any columns selected in the right list so that they are no longer union output columns.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Delete All Output Columns*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Delete all columns in the right list so that they are no longer union output columns.
 
 
     

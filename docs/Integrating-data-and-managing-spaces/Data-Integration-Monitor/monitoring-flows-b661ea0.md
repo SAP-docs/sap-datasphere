@@ -40,7 +40,7 @@ For more information and points to consider when using replication flows, see al
 
 1.  In the SAP Datasphere, navigate to *Data Integration Monitor* \> *Flow Monitor*.
 
-    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also define, edit, or delete schedules for your data flows under *Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also create, edit or delete a schedule for a data flow under *Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
 
     The list of deployed flows shows the following information:
 
@@ -65,14 +65,14 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-         *Name*
+    *Name*
 
 
     
     </td>
     <td valign="top">
     
-        Name of the flow
+    Name of the flow
 
 
     
@@ -81,14 +81,14 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-        *Last Run Status*
+    *Last Run Status*
 
 
     
     </td>
     <td valign="top">
     
-        Indicates the status of the last run of the flow. For more information on specifics for replication flow runs, see [Statuses for Replication Flow Runs](statuses-for-replication-flow-runs-e8b2ff9.md).
+    Indicates the status of the last run of the flow. For more information on specifics for replication flow runs, see [Statuses for Replication Flow Runs](statuses-for-replication-flow-runs-e8b2ff9.md).
 
     > ### Note:  
     > If the status of a flow is empty, it means that the data flow has not run yet.
@@ -100,14 +100,14 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-        *Frequency*
+    *Frequency*
 
 
     
     </td>
     <td valign="top">
     
-        Indicates if a schedule is defined for a data flow:
+    Indicates if a schedule is defined for a data flow:
 
     -   *Scheduled*: A schedule task is defined for this data flow. If you click on *Scheduled*, you get detailed information on the schedule. You can update the schedule options at any time from *Schedule* \> *Edit Schedule*, or delete the schedule from *Schedule* \> *Delete Schedule*
 
@@ -118,14 +118,14 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-        *Duration*
+    *Duration*
 
 
     
     </td>
     <td valign="top">
     
-        Provides information on the total execution time of the last run.
+    Provides information on the total execution time of the last run.
 
     > ### Note:  
     > The initialization time for executing a flow takes an average of 20 seconds even with smaller data loads, causing longer runtime for the flow.
@@ -137,30 +137,14 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-        *Last Run Start*
+    *Last Run Start*
 
 
     
     </td>
     <td valign="top">
     
-        Provides information on when the last run of the flow started.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        *Last Run End*
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Provides information on when the last run of the flow ended.
+    Provides information on when the last run of the flow started.
 
 
     
@@ -169,14 +153,30 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-        *Next Run*
+    *Last Run End*
 
 
     
     </td>
     <td valign="top">
     
-        If a schedule is set for a data flow, you can see here by when the next run is scheduled.
+    Provides information on when the last run of the flow ended.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Next Run*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    If a schedule is set for a data flow, you can see here by when the next run is scheduled.
 
 
     

@@ -38,7 +38,7 @@ Only administrators can create spaces. Both administrators and space administrat
 
 If you want to keep the data contained in your space, you can export the data before you delete the space.
 
- 
+
 
 To export data using the SAP HANA Database Explorer, follow these steps:
 

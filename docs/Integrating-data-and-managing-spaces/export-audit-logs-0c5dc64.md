@@ -19,7 +19,7 @@ To export audit log entries using the SAP HANA Database Explorer, follow these s
 **Related Information**  
 
 
-[Enable or Disable Audit Logging](enable-or-disable-audit-logging-2665539.md "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.")
+[Enable Audit Logging](enable-audit-logging-2665539.md "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.")
 
 [Delete Your Space](delete-your-space-3eb19b9.md "Delete a space if you are sure that you no longer need any of its content or data.")
 

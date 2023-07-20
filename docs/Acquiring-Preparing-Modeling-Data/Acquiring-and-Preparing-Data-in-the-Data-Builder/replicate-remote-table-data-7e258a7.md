@@ -24,15 +24,29 @@ By default, when you import a remote table, its data is not replicated and must 
 
             Directly start a copy of the full set of data from the source in the background.
 
+            > ### Note:  
+            > If you load a new snapshot on a remote table whose data access is Replicated \(Real-time\), you’ll remove the real-time replication for this table. Your data will no longer be updated in real-time and you’ll have to load new snapshots or create a schedule to get your data updated.
+
             For more information, see [Replicate Full Set of Data](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/35632cd706474d9796fa5da56ba15c6b.html "Use snapshot replication to copy the full set of data from your source object (usually a database table or view) into SAP Datasphere.") :arrow_upper_right:.
 
         -   *Remove Replicated Data*:
 
             Stop replication and delete data from replica table.
 
+            > ### Note:  
+            > If you need to remove the replicated data for a remote table whose data access is *Replicated \(Real-time\)*, you must ensure that the following requirements are met to allow a proper deletion:
+            > 
+            > -   The data provisioning agent is not disconnected.
+            > -   The real-time replication is not paused at connection level and is working properly.
+            > 
+            > If one of the requirement is not met, some objects won't be deleted and you'll have to delete them manually. See [3307334](https://launchpad.support.sap.com/#/notes/3307334) for more information.
+
         -   *Enable Real-Time Access*:
 
             Start replication of data changes in the source in real-time.
+
+            > ### Note:  
+            > When enabling the replication in real-time, the data is updated in real-time. You don’t need to load a new snapshot or to create a schedule to update your data.
 
             For more information, see [Replicate Data Changes in Real-Time](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/441d327ead5c49d580d8600301735c83.html "Use real-time replication to copy the data changes from your source object in real-time into SAP Datasphere.") :arrow_upper_right:.
 
@@ -41,6 +55,9 @@ By default, when you import a remote table, its data is not replicated and must 
         -   *Create Schedule*:
 
             Create a schedule to run snapshot replication in the background according to the settings defined in the schedule.
+
+            > ### Note:  
+            > If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time
 
             For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 

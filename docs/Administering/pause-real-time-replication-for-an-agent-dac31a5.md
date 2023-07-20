@@ -45,30 +45,14 @@ If you need to perform maintenance activities in a source system, you can pause 
     <tr>
     <td valign="top">
     
-        *Active*
+    *Active*
 
 
     
     </td>
     <td valign="top">
     
-        The connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Table Monitor* is *Error*\).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        *Inactive*
-
-
-    
-    </td>
-    <td valign="top">
-    
-        The connection type supports real-time replication and for the connection currently there is no table replicating via real-time replication.
+    The connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Table Monitor* is *Error*\).
 
 
     
@@ -77,14 +61,30 @@ If you need to perform maintenance activities in a source system, you can pause 
     <tr>
     <td valign="top">
     
-        *Paused*
+    *Inactive*
 
 
     
     </td>
     <td valign="top">
     
-        The connection type supports real-time replication and for the connection at least for one table real-time replication is paused.
+    The connection type supports real-time replication and for the connection currently there is no table replicating via real-time replication.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Paused*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The connection type supports real-time replication and for the connection at least for one table real-time replication is paused.
 
 
     

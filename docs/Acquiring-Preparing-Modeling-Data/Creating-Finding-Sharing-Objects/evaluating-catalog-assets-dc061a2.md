@@ -12,7 +12,7 @@ When you open an individual asset from the catalog home page, you're taken to th
 
 For example, as a data modeler, you can review the details of a catalog asset to determine whether it is the one you need to add to your model. You can also view the lineage diagram for an asset to see other assets that are consumed in the model and which assets are impacted by a change.
 
- <a name="concept_rfk_4ly_3wb"/>
+<a name="concept_rfk_4ly_3wb"/>
 
 <!-- concept\_rfk\_4ly\_3wb -->
 
@@ -20,7 +20,7 @@ For example, as a data modeler, you can review the details of a catalog asset to
 
 The asset header provides high-level information of the asset.
 
- ![](images/DataAssetHeader_e5ead6c.png) 
+![](images/DataAssetHeader_e5ead6c.png)
 
 
 <table>
@@ -82,7 +82,7 @@ Tabs
 </td>
 <td valign="top">
 
-Select a tab to view more information about the asset, such as asset properties and descriptions and the **Impact and Lineage Analysis** diagram.
+Select a tab to view more information about the asset, such as asset properties and descriptions and, for assets in SAP Datasphere, the **Impact and Lineage Analysis** diagram.
 
 
 
@@ -110,7 +110,7 @@ Select the action you want to perform on the asset.
 </tr>
 </table>
 
- <a name="concept_qhf_4my_3wb"/>
+<a name="concept_qhf_4my_3wb"/>
 
 <!-- concept\_qhf\_4my\_3wb -->
 
@@ -165,9 +165,7 @@ Displays asset properties extracted from the data source and description informa
 
 Source properties common among all assets include:
 
--   *Name*: The file name of the asset on the source system. Assets in SAP Analytics Cloud have one name that appears, *Name*.
-
-    Assets in SAP Datasphere have two names that appear: **Technical Name**, which is the name that is used in scripts and code and is synchronized with the business name, and *Business Name*, which is the descriptive name of the asset that helps you identify the asset.
+-   *Name*: The file name of the asset on the source system. Assets in SAP Analytics Cloud have one name that appears, *Name*. Assets in SAP Datasphere have two names that appear: *Technical Name*, which is the name that is used in scripts and code and is synchronized with the business name, and *Business Name*, which is the descriptive name of the asset that helps you identify the asset.
 
 -   *Created On*: The date and time on which the asset was created on the source system. The name of the user who created the asset is also shown.
 
@@ -263,7 +261,7 @@ Glossary Terms
 </td>
 <td valign="top">
 
- Displays a list of business glossary terms that are linked to the asset. You can use the free text search to see if a particular term is linked to the asset. 
+Displays a list of business glossary terms that are linked to the asset. You can use the free text search to see if a particular term is linked to the asset. 
 
 
 
@@ -279,7 +277,7 @@ Tags
 </td>
 <td valign="top">
 
- Displays a hierarchical list of all tags that are linked to the asset. Tags help classify the types of assets that are in the catalog. You can use the free text search to see if a particular tag is linked to the asset. 
+Displays a hierarchical list of all tags that are linked to the asset. Tags help classify the types of assets that are in the catalog. You can use the free text search to see if a particular tag is linked to the asset. 
 
 
 
@@ -295,7 +293,7 @@ KPIs
 </td>
 <td valign="top">
 
- Displays a list of all key performance indicators \(KPIs\) that are linked to the asset. KPIs are used to track business requirements or goals. You can use the free text search to see if a particular KPI is linked to the asset. 
+Displays a list of all key performance indicators \(KPIs\) that are linked to the asset. KPIs are used to track business requirements or goals. You can use the free text search to see if a particular KPI is linked to the asset. 
 
 
 
@@ -303,7 +301,7 @@ KPIs
 </tr>
 </table>
 
- <a name="concept_ewq_zmy_3wb"/>
+<a name="concept_ewq_zmy_3wb"/>
 
 <!-- concept\_ewq\_zmy\_3wb -->
 
@@ -418,7 +416,7 @@ You can show or hide the objects on either side of any object by clicking the <s
 
 For information on how to control the diagram layout and use tools to further analyze the objects, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
 
- <a name="task_x4m_cny_3wb"/>
+<a name="task_x4m_cny_3wb"/>
 
 <!-- task\_x4m\_cny\_3wb -->
 
@@ -466,7 +464,7 @@ After you find the asset you want, you can open the asset in the source system t
 
 If you edited a file, the catalog automatically detects the change. The metadata for the asset is automatically updated in real time, and the functional status label *Current* is applied.
 
- <a name="task_zpg_fny_3wb"/>
+<a name="task_zpg_fny_3wb"/>
 
 <!-- task\_zpg\_fny\_3wb -->
 

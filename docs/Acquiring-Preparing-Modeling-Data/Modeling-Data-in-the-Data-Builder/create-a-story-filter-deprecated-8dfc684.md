@@ -52,14 +52,14 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <tr>
     <td valign="top">
     
-        Type
+    Type
 
 
     
     </td>
     <td valign="top">
     
-        Select the type of value that you want to allow or require the user to filter on. You can choose from:
+    Select the type of value that you want to allow or require the user to filter on. You can choose from:
 
     -   *Single* - The user should enter a single value to filter on. You can optionally specify a default value.
     -   *Range* -The user should enter *From* and *To* values to specify the range to filter on. You can optionally specify default values.
@@ -71,14 +71,14 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <tr>
     <td valign="top">
     
-        Mandatory
+    Mandatory
 
 
     
     </td>
     <td valign="top">
     
-        Requires the user to enter a value.
+    Requires the user to enter a value.
 
 
     
@@ -87,14 +87,14 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <tr>
     <td valign="top">
     
-        Multiple Entries
+    Multiple Entries
 
 
     
     </td>
     <td valign="top">
     
-        Allows the user to enter more than one value \(or range of values\) to filter on.
+    Allows the user to enter more than one value \(or range of values\) to filter on.
 
 
     

@@ -45,7 +45,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     <tr>
     <td valign="top">
     
-        *Not Applicable*
+    *Not Applicable*
 
     Shown when the connection type doesn't support real-time replication.
 
@@ -56,7 +56,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     </td>
     <td valign="top">
     
-        none
+    none
 
 
     
@@ -65,7 +65,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     <tr>
     <td valign="top">
     
-        *Active*
+    *Active*
 
     Shown when the connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Table Monitor* is *Error*\).
 
@@ -74,7 +74,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     </td>
     <td valign="top">
     
-        Pause
+    Pause
 
 
     
@@ -83,7 +83,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     <tr>
     <td valign="top">
     
-        *Paused*
+    *Paused*
 
     Shown when the connection type supports real-time replication and for the connection at least for one table real-time replication is paused.
 
@@ -92,7 +92,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     </td>
     <td valign="top">
     
-        Restart
+    Restart
 
 
     
@@ -101,7 +101,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     <tr>
     <td valign="top">
     
-        *Inactive*
+    *Inactive*
 
     Shown when the connection type supports real-time replication and for the connection currently there is no table replicating via real-time replication.
 
@@ -110,7 +110,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     </td>
     <td valign="top">
     
-        Pause
+    Pause
 
 
     
@@ -119,7 +119,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     <tr>
     <td valign="top">
     
-        *Disconnected*
+    *Disconnected*
 
     Shown when the connection uses a Data Provisioning Agent that currently has status *Disconnected*.
 
@@ -128,7 +128,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     </td>
     <td valign="top">
     
-        none
+    none
 
 
     

@@ -33,30 +33,14 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <tr>
     <td valign="top">
     
-        Business Name
+    Business Name
 
 
     
     </td>
     <td valign="top">
     
-        Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 
     
@@ -65,14 +49,14 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <tr>
     <td valign="top">
     
-        Semantic Usage
+    Technical Name
 
 
     
     </td>
     <td valign="top">
     
-        Choose *Hierarchy*.
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
 
     
@@ -81,14 +65,30 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <tr>
     <td valign="top">
     
-        Parent Column / Child Column
+    Semantic Usage
 
 
     
     </td>
     <td valign="top">
     
-        Select the columns containing the parent and child information for your hierarchy.
+    Choose *Hierarchy*.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Parent Column / Child Column
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the columns containing the parent and child information for your hierarchy.
 
     > ### Note:  
     > The parent column and the child column must be of the same data type.
@@ -100,14 +100,14 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <tr>
     <td valign="top">
     
-        Expose for Consumption
+    Expose for Consumption
 
 
     
     </td>
     <td valign="top">
     
-        In order to consume your hierarchy in SAP Analytics Cloud, you must enable the *Expose for Consumption* switch.
+    In order to consume your hierarchy in SAP Analytics Cloud, you must enable the *Expose for Consumption* switch.
 
 
     
@@ -124,11 +124,8 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
 
     To set an attribute as a key column, select the checkbox in the *Key* column or hover over the attribute in the side panel and click <span class="FPA-icons"></span> \(Menu\)** \> *Set as Key*.
 
-3.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:
+3.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
 
-    -   *Save* to save your object.
-    -   *Save As* to create a local a copy of the object you're working on. The object must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
-
-    Click <span class="SAP-icons"></span> \(Deploy\) to deploy your entity.
+    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
 

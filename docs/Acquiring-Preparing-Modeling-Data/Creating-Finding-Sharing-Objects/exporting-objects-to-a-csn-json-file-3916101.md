@@ -53,14 +53,14 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <tr>
     <td valign="top">
     
-        Local Tables
+    Local Tables
 
 
     
     </td>
     <td valign="top">
     
-        The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
+    The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
 
 
     
@@ -69,14 +69,14 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <tr>
     <td valign="top">
     
-        Remote Tables
+    Remote Tables
 
 
     
     </td>
     <td valign="top">
     
-        The definition of a remote table contains information about its connection. Before importing a remote table, you must create the relevant connection with an identical technical name in the receiving space.
+    The definition of a remote table contains information about its connection. Before importing a remote table, you must create the relevant connection with an identical technical name in the receiving space.
 
     > ### Note:  
     > Remote tables exported from one space can be imported into another only if they were originally imported from a connection created in v2021.19 or later.
@@ -88,30 +88,14 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <tr>
     <td valign="top">
     
-        Views
+    Views
 
 
     
     </td>
     <td valign="top">
     
-        The definition of a view contains the definitions of all its sources and any used data access controls. When you export a view, these objects are exported too.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Data Flows
-
-
-    
-    </td>
-    <td valign="top">
-    
-        The definition of a data flow contains the definitions of all its sources and its target table. When you export a data flow, these objects are exported too.
+    The definition of a view contains the definitions of all its sources and any used data access controls. When you export a view, these objects are exported too.
 
 
     
@@ -120,30 +104,14 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <tr>
     <td valign="top">
     
-        Intelligent Lookups
+    Data Flows
 
 
     
     </td>
     <td valign="top">
     
-        The definition of an intelligent lookup contains the definitions of its input and lookup entities. When you export an intelligent lookup, these entities are exported too.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Analytic Models
-
-
-    
-    </td>
-    <td valign="top">
-    
-        The definition of an analytic model contains the definitions of its fact and dimension sources. When you export an analytic model, these entities are exported too.
+    The definition of a data flow contains the definitions of all its sources and its target table. When you export a data flow, these objects are exported too.
 
 
     
@@ -152,14 +120,46 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <tr>
     <td valign="top">
     
-        E/R Models
+    Intelligent Lookups
 
 
     
     </td>
     <td valign="top">
     
-        The definitions of all the tables and views in the model are exported. The model itself is not exported.
+    The definition of an intelligent lookup contains the definitions of its input and lookup entities. When you export an intelligent lookup, these entities are exported too.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Analytic Models
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The definition of an analytic model contains the definitions of its fact and dimension sources. When you export an analytic model, these entities are exported too.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    E/R Models
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The definitions of all the tables and views in the model are exported. The model itself is not exported.
 
 
     

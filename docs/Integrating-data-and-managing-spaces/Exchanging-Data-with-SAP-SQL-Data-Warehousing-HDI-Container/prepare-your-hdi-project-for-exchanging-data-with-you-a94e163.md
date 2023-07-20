@@ -39,7 +39,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     <tr>
     <td valign="top">
     
-        This example provides read access to one table and one view in the container:
+    This example provides read access to one table and one view in the container:
 
     ```
     {
@@ -66,7 +66,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     </td>
     <td valign="top">
     
-        This example provides read access to all the objects in the container:
+    This example provides read access to all the objects in the container:
 
     ```
     {
@@ -112,7 +112,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     <tr>
     <td valign="top">
     
-        This example provides write access to two tables in the container:
+    This example provides write access to two tables in the container:
 
     ```
     {
@@ -139,7 +139,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     </td>
     <td valign="top">
     
-        This example provides write access to all the objects in the container:
+    This example provides write access to all the objects in the container:
 
     ```
     {

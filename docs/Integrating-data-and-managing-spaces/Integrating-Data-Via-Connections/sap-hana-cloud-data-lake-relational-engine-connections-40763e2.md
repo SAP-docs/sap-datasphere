@@ -65,14 +65,14 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the host of the SAP HANA Cloud, data lake Relational Engine server. 
+Enter the host of the SAP HANA Cloud, data lake Relational Engine server. 
 
 
 
@@ -81,14 +81,14 @@ Description
 <tr>
 <td valign="top">
 
- *Port* 
+*Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the port number. The default port is `443`. 
+Enter the port number. The default port is `443`. 
 
 
 
@@ -121,14 +121,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the SAP HANA Cloud, data lake Relational Engine user.
+Enter the name of the SAP HANA Cloud, data lake Relational Engine user.
 
 > ### Note:  
 > This user needs to have corresponding privileges to access the tables or views in SAP HANA Cloud, data lake Relational Engine that you want to use in SAP Datasphere. For more information, see [SAP HANA Cloud, Data Lake User Management for Data Lake IQ](https://help.sap.com/viewer/745778e524f74bb4af87460cca5e62c4/latest/en-US) in the *SAP HANA Cloud, Data Lake* documentation.
@@ -140,14 +140,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password* 
+*Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the password. 
+Enter the password. 
 
 
 

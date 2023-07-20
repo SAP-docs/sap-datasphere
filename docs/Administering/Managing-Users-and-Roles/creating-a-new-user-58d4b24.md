@@ -59,7 +59,7 @@ The roles available depend on the licenses included in your subscription
 </td>
 <td valign="top">
 
- [Standard Application Roles](standard-application-roles-a50a51d.md) 
+[Standard Application Roles](standard-application-roles-a50a51d.md) 
 
 
 
@@ -82,7 +82,7 @@ Variations on the standard roles, created to meet your company's needs
 </td>
 <td valign="top">
 
- [Create a Custom Role](create-a-custom-role-862b88e.md) 
+[Create a Custom Role](create-a-custom-role-862b88e.md) 
 
 
 

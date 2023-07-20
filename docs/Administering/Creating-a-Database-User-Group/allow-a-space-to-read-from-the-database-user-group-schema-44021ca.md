@@ -71,14 +71,14 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <tr>
     <td valign="top">
     
-        operation
+    operation
 
 
     
     </td>
     <td valign="top">
     
-        -   'GRANT'
+    -   'GRANT'
 
     -   'REVOKE'
 
@@ -88,7 +88,7 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     </td>
     <td valign="top">
     
-        \[required\] Enter 'GRANT' to give the read privileges, or 'REVOKE' to remove the read privileges to the space.
+    \[required\] Enter 'GRANT' to give the read privileges, or 'REVOKE' to remove the read privileges to the space.
 
 
     
@@ -97,44 +97,21 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <tr>
     <td valign="top">
     
-        privilege
+    privilege
 
 
     
     </td>
     <td valign="top">
     
-        'SELECT'
+    'SELECT'
 
 
     
     </td>
     <td valign="top">
     
-        \[required\] Enter the read privilege that you want to grant \(or revoke\) to the space.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        schema\_name
-
-
-    
-    </td>
-    <td valign="top">
-    
-        '\[name of database user group schema\]'
-
-
-    
-    </td>
-    <td valign="top">
-    
-        \[required\] Enter the name of the schema you want the space to be able to read from.
+    \[required\] Enter the read privilege that you want to grant \(or revoke\) to the space.
 
 
     
@@ -143,14 +120,37 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <tr>
     <td valign="top">
     
-        object\_name
+    schema\_name
 
 
     
     </td>
     <td valign="top">
     
-        -   ' '
+    '\[name of database user group schema\]'
+
+
+    
+    </td>
+    <td valign="top">
+    
+    \[required\] Enter the name of the schema you want the space to be able to read from.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    object\_name
+
+
+    
+    </td>
+    <td valign="top">
+    
+    -   ' '
 
     -   null
 
@@ -162,7 +162,7 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     </td>
     <td valign="top">
     
-        \[required\] You can grant the read privileges, either at the schema level or at the object level.
+    \[required\] You can grant the read privileges, either at the schema level or at the object level.
 
     -   At the schema level \(all objets in the schema\): enter null or ' '.
 
@@ -176,21 +176,21 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <tr>
     <td valign="top">
     
-        space\_id
+    space\_id
 
 
     
     </td>
     <td valign="top">
     
-        '\[ID of the space\]'
+    '\[ID of the space\]'
 
 
     
     </td>
     <td valign="top">
     
-        \[required\] Enter the ID of the space you are granting the read privileges to.
+    \[required\] Enter the ID of the space you are granting the read privileges to.
 
 
     

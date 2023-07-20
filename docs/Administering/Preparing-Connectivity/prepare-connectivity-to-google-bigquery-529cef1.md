@@ -17,3 +17,16 @@ Before you can use the connection for creating views and accessing data via remo
     For more information, see [Upload Certificates \(Required for Remote Tables\)](upload-certificates-required-for-remote-tables-46f5467.md).
 
 
+
+
+<a name="loio529cef1eee6a45a69ae4e51951718900__prereq_df_GBQ"/>
+
+## Data Flows
+
+Before you can use the connection for data flows, the following is required:
+
+-   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
+
+    For more information, see [Upload Third-Party ODBC Drivers \(Required for Data Flows\)](upload-third-party-odbc-drivers-required-for-data-flows-b9b5579.md).
+
+

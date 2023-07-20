@@ -87,14 +87,14 @@ Description
 <tr>
 <td valign="top">
 
- *Open Connectors Instance* 
+*Open Connectors Instance* 
 
 
 
 </td>
 <td valign="top">
 
- Select the instance to which you want to connect. 
+Select the instance to which you want to connect. 
 
 
 

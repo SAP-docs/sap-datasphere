@@ -47,30 +47,14 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        Search
+    Search
 
 
     
     </td>
     <td valign="top">
     
-        In the search field, enter a search string to only show connection types that contain the string.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Sort
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Use <span class="SAP-icons"></span> \(Sort\) to sort alphabetically.
+    In the search field, enter a search string to only show connection types that contain the string.
 
 
     
@@ -79,14 +63,30 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        Filter
+    Sort
 
 
     
     </td>
     <td valign="top">
     
-        In the *Filters* section, use one of the following filters:
+    Use <span class="SAP-icons"></span> \(Sort\) to sort alphabetically.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Filter
+
+
+    
+    </td>
+    <td valign="top">
+    
+    In the *Filters* section, use one of the following filters:
 
     -   *Features* that a connection type supports \(*Remote Tables*, *Data Flows*, *Replication Flows*, *Model Import*\)
 
@@ -131,30 +131,14 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        *Connection Details*
+    *Connection Details*
 
 
     
     </td>
     <td valign="top">
     
-        Enter or select properties that are needed to locate the source system or database.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Various
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Enter or select properties in additional sections depending on the connection type.
+    Enter or select properties that are needed to locate the source system or database.
 
 
     
@@ -163,14 +147,14 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        *Credentials*
+    Various
 
 
     
     </td>
     <td valign="top">
     
-        Enter the credentials that are required to access the source.
+    Enter or select properties in additional sections depending on the connection type.
 
 
     
@@ -179,14 +163,30 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        *Features*
+    *Credentials*
 
 
     
     </td>
     <td valign="top">
     
-        Select additional connection properties to enabe a feature, if required.
+    Enter the credentials that are required to access the source.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Features*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select additional connection properties to enabe a feature, if required.
 
     You can click the info button next to the *Enabled* or *Disabled* information to get more information about what is required to enable the feature.
 
@@ -226,14 +226,14 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        *Business Name*
+    *Business Name*
 
 
     
     </td>
     <td valign="top">
     
-        Enter a descriptive name to help users identify the object. This name can be changed at any time.
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 
     
@@ -242,14 +242,14 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        *Technical Name*
+    *Technical Name*
 
 
     
     </td>
     <td valign="top">
     
-        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name. The maximum length is 40 characters. The name must be unique within the space.
 
@@ -263,14 +263,14 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <tr>
     <td valign="top">
     
-        *Description*
+    *Description*
 
 
     
     </td>
     <td valign="top">
     
-        Provide more information to help users understand the object.
+    Provide more information to help users understand the object.
 
 
     

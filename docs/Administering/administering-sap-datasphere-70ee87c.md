@@ -59,17 +59,17 @@ You must assign one or more roles to each of your users \(see [Managing Roles an
     -   **DW Administrator** - Can create users and spaces and has full privileges across the whole of the SAP Datasphere tenant. 
 
 -   Roles providing privileges to work in SAP Datasphere spaces:
-    -   **DW Space Administrator** - Can manage all aspects of spaces of which they are a member \(except the *Storage Assignment* and *Workload Management* properties\) and can create data access controls and use the *Content Network*. 
-    -   **DW Integrator** - Can create and edit connections and database users, and associate HDI containers in spaces of which they are a member. 
-    -   **DW Modeler** - Can create and edit objects in the *Data Builder* and *Business Builder* and view data in all objects in spaces of which they are a member. 
-    -   **DW Viewer** - Can view objects in spaces of which they are a member and view data output by views that are exposed for consumption in these spaces. 
+    -   **DW Space Administrator** - Can manage all aspects of a space \(except the *Storage Assignment* and *Workload Management* properties\) and can create data access controls and use the *Content Network*.
+    -   *DW Integrator* - Can integrate data via connections and can manage and monitor data integration in spaces of which they are a member.
+    -   **DW Modeler** - Can create and edit objects in the *Data Builder* and *Business Builder* and view data in all objects in spaces of which they are a member.
+    -   **DW Viewer** - Can view objects in spaces of which they are a member and view data output by views that are exposed for consumption in these spaces.
 
 -   Roles providing privileges to consume the data exposed by SAP Datasphere spaces:
     -   **DW Consumer** - Can consume data exposed by SAP Datasphere spaces of which they are members using SAP Analytics Cloud, and other clients, tools, and apps, but cannot log into SAP Datasphere. This role is intended for business analysts and other users who use SAP Datasphere data to drive their visualizations, but who have no need to access the modeling environment.
 
 -   Roles providing privileges to work in the SAP Datasphere catalog:
     -   **Catalog Administrator** - Can set up and implement data governance using the catalog. This includes connecting the catalog to source systems for extracting metadata, building business glossaries, creating tags for classification, and publishing enriched catalog assets so all catalog users can find and use them. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.
-    -   **Catalog User** - Can search and discover data and analytics content in the catalog for consumption. These user may be modelers who want to build additional content based on official, governed assets in the catalog, or viewers who just want to view these assets. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.
+    -   **Catalog User** - Can search and discover data and analytics content in the catalog for consumption. These users may be modelers who want to build additional content based on official, governed assets in the catalog, or viewers who just want to view these assets. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.
 
 
 

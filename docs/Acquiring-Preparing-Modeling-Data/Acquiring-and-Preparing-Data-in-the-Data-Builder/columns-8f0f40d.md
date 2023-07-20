@@ -53,7 +53,7 @@ Select the checkbox to specify that the column is a primary key column. Key colu
 <tr>
 <td valign="top">
 
- Business Name 
+Business Name 
 
 
 
@@ -69,7 +69,7 @@ Enter a descriptive name to help users identify the object. This name can be cha
 <tr>
 <td valign="top">
 
- Technical Name 
+Technical Name 
 
 
 

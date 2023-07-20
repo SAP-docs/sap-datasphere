@@ -111,14 +111,14 @@ Description
 <tr>
 <td valign="top">
 
- *URL*  
+*URL*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the OData service provider URL of the SAP SuccessFactors service that you want to access. 
+Enter the OData service provider URL of the SAP SuccessFactors service that you want to access. 
 
 The syntax for the URL is: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/odata/v2/<i class="varname">&lt;supported SAP SuccessFactors service group&gt;</i></code> or <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/odatav4/<i class="varname">&lt;supported SAP SuccessFactors service group&gt;</i></code> 
 
@@ -129,14 +129,14 @@ The syntax for the URL is: <code><i class="varname">&lt;SAP SuccessFactors API S
 <tr>
 <td valign="top">
 
- *Version*  
+*Version*  
 
 
 
 </td>
 <td valign="top">
 
- \[read-only\] Displays the OData version used to implement the SAP SuccessFactors OData service. 
+\[read-only\] Displays the OData version used to implement the SAP SuccessFactors OData service. 
 
 
 
@@ -377,14 +377,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the user name in *<username@companyID\>* format. 
+Enter the user name in *<username@companyID\>* format. 
 
 
 
@@ -393,14 +393,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password*  
+*Password*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the password. 
+Enter the password. 
 
 
 
@@ -440,7 +440,7 @@ Description
 </td>
 <td valign="top">
 
- *Remote Tables* are enabled without the need to set any additional connection properties. 
+*Remote Tables* are enabled without the need to set any additional connection properties. 
 
 
 
@@ -456,7 +456,7 @@ Description
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties. 
 
 
 

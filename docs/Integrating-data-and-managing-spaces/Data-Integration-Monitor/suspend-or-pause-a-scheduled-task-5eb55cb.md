@@ -8,14 +8,14 @@ After previously scheduling a task, you can select the *Schedule* \> *Edit Sched
 
 For example, for task chains, the scheduling options appear similar to the following:
 
- ![](images/Edit_Schedule_Menu_Option_7aa4e0d.png) 
+![](images/Edit_Schedule_Menu_Option_7aa4e0d.png)
 
 > ### Note:  
 > For remote table replication, scheduling options are available from the *Schedule Replication* menu. You also have the option with all tasks, to pause or postpone execution of a task when initially creating a schedule.
 
 Choosing the *Edit Schedule* option opens the Edit Schedule dialog:
 
- ![](images/Edit_Schedule_Dialog_581987e.png) 
+![](images/Edit_Schedule_Dialog_581987e.png)
 
 To suspend or pause the scheduled task, toggle the *Pause Schedule* switch from *No* to *Yes*. Then, click *Save*.
 

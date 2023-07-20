@@ -33,8 +33,8 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
 
 1.  Ensure that the following properties are set correctly for your view output node:
 
-    -    *Semantic Usage* - *Dimension* 
-    -    *Expose for Consumption* - Enabled
+    -   *Semantic Usage* - *Dimension* 
+    -   *Expose for Consumption* - Enabled
 
 2.  Select any object in your graphical view to display its context tools and click <span class="FPA-icons"></span> Calculated Columns.
 
@@ -69,14 +69,14 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <tr>
     <td valign="top">
     
-        Business Name
+    Business Name
 
 
     
     </td>
     <td valign="top">
     
-        Enter a descriptive name to help users identify the object. This name can be changed at any time.
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 
     
@@ -85,14 +85,14 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <tr>
     <td valign="top">
     
-        Technical Name
+    Technical Name
 
 
     
     </td>
     <td valign="top">
     
-        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -106,14 +106,14 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <tr>
     <td valign="top">
     
-        Spatial Reference Identifier
+    Spatial Reference Identifier
 
 
     
     </td>
     <td valign="top">
     
-        Every spatial reference system has an identifier called a *Spatial Reference Identifier* \(or *SRID*\). By default, it is set to *4326* but can be changed to *0* or *3857*. For more information, see [Spatial Reference Identifier on SAP HANA](https://help.sap.com/viewer/cbbbfc20871e4559abfd45a78ad58c02/2.0.02/en-US/7a2ea357787c101488ecd1b725836f07.html).
+    Every spatial reference system has an identifier called a *Spatial Reference Identifier* \(or *SRID*\). By default, it is set to *4326* but can be changed to *0* or *3857*. For more information, see [Spatial Reference Identifier on SAP HANA](https://help.sap.com/viewer/cbbbfc20871e4559abfd45a78ad58c02/2.0.02/en-US/7a2ea357787c101488ecd1b725836f07.html).
 
 
     
@@ -122,14 +122,14 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <tr>
     <td valign="top">
     
-        Latitude and Longitude
+    Latitude and Longitude
 
 
     
     </td>
     <td valign="top">
     
-        These columns must have string or double as data types.
+    These columns must have string or double as data types.
 
 
     
@@ -137,12 +137,9 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     </tr>
     </table>
     
-5.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:
+5.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
 
-    -   *Save* to save your object.
-    -   *Save As* to create a local a copy of the object you're working on. The object must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
-
-    Click <span class="SAP-icons"></span> \(Deploy\) to deploy your entity.
+    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
 6.  Open a view that will point to your *Dimension* with an association and set its properties as follows:
 

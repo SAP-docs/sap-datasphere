@@ -443,7 +443,7 @@ Description
 </td>
 <td valign="top">
 
- To enable *Remote Tables*, select a Data Provisioning Agent. 
+To enable *Remote Tables*, select a Data Provisioning Agent. 
 
 
 
@@ -459,7 +459,7 @@ Description
 </td>
 <td valign="top">
 
- To enable *Model Import*, select a Data Provisioning Agent. 
+To enable *Model Import*, select a Data Provisioning Agent. 
 
 
 
@@ -475,7 +475,7 @@ Description
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties. 
 
 
 
@@ -491,7 +491,7 @@ Description
 </td>
 <td valign="top">
 
- *Replication Flows* are enabled without the need to set any additional connection properties. 
+*Replication Flows* are enabled without the need to set any additional connection properties. 
 
 
 

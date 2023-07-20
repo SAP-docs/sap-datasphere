@@ -126,14 +126,14 @@ Description
 <tr>
 <td valign="top">
 
- *Host* 
+*Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the host name for SAP HANA Cloud, data lake Files. 
+Enter the host name for SAP HANA Cloud, data lake Files. 
 
 
 
@@ -142,14 +142,14 @@ Description
 <tr>
 <td valign="top">
 
- *Root Path* 
+*Root Path* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Enter a root path for browsing files. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
+\[optional\] Enter a root path for browsing files. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
 
@@ -184,14 +184,14 @@ Description
 <tr>
 <td valign="top">
 
- *Keystore File* 
+*Keystore File* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the Base64-encoded value of the client keystore file. The supported format is PCKS\#12 \(P12 and PFX files\). 
+Enter the Base64-encoded value of the client keystore file. The supported format is PCKS\#12 \(P12 and PFX files\). 
 
 You can also choose <span class="SAP-icons"></span> Browse and select the file from your download location.
 
@@ -202,14 +202,14 @@ You can also choose <span class="SAP-icons"></span> Browse and select the fil
 <tr>
 <td valign="top">
 
- *Keystore Password* 
+*Keystore Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the client keystore password. 
+Enter the client keystore password. 
 
 
 
@@ -249,7 +249,7 @@ Description
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties. 
 
 
 
@@ -265,7 +265,7 @@ Description
 </td>
 <td valign="top">
 
- *Replication Flows* are enabled without the need to set any additional connection properties. 
+*Replication Flows* are enabled without the need to set any additional connection properties. 
 
 
 

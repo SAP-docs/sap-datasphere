@@ -97,9 +97,9 @@ See when the persisted view was last updated.
 
 You can perform actions on data by clicking *View Persistency Actions*:
 
--    *Load New Snapshot*: Load new data to update or create the persisted view.
+-   *Load New Snapshot*: Load new data to update or create the persisted view.
 
--    *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
+-   *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
 
 
@@ -108,7 +108,7 @@ You can perform actions on data by clicking *View Persistency Actions*:
 
 ## Schedule View Persistency Tasks
 
-Define, edit or delete scheduling options for your persisted views.
+Define, edit, or delete scheduling options of your persisted view.
 
 For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:.
 

@@ -72,30 +72,14 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-        **Remote table**
+    **Remote table**
 
 
     
     </td>
     <td valign="top">
     
-        Select *Schedule Replication* \> *Create Snapshot Schedule*.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        **View Persistency**
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Select *Schedule* \> *Create Schedule*.
+    Select *Schedule Replication* \> *Create Snapshot Schedule*.
 
 
     
@@ -104,14 +88,30 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-        **Data flow**
+    **View Persistency**
 
 
     
     </td>
     <td valign="top">
     
-        Select :clock3: *Schedule* \> *Create Schedule*.
+    Select *Schedule* \> *Create Schedule*.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Data flow**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select :clock3: *Schedule* \> *Create Schedule*.
 
     > ### Note:  
     > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.
@@ -123,14 +123,14 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-        **Task Chain**
+    **Task Chain**
 
 
     
     </td>
     <td valign="top">
     
-        Select :clock3: *Schedule* \> *Create Schedule*.
+    Select :clock3: *Schedule* \> *Create Schedule*.
 
     > ### Note:  
     > You can also find the :clock3: *Schedule* menu on the run details page of a task chain.
@@ -180,14 +180,14 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-        *Frequency*
+    *Frequency*
 
 
     
     </td>
     <td valign="top">
     
-        -   *Hourly*: Define how often you want to trigger the schedule per day \(every 1 to 23 hours of the day\) and the start time.
+    -   *Hourly*: Define how often you want to trigger the schedule per day \(every 1 to 23 hours of the day\) and the start time.
 
         Optionally, you can specify an offset from which the tasks will run. For example, so that a task runs every 2 hours starting from 1:30 AM, specify 2 in *Every* and 1:30 in *Starting at \(UTC\)*.
 
@@ -203,7 +203,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
-        Let's take a few examples. Imagine that we are in April 14, 2021, it's 9:00 am and you define your schedule without a start and end date:
+    Let's take a few examples. Imagine that we are in April 14, 2021, it's 9:00 am and you define your schedule without a start and end date:
 
     -   *Hourly*: You select every "5" hours "00" minutes. You need to consider that a cycle run reset will occur every day at 0:00. Next runs will be:
 
@@ -247,14 +247,14 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-        *Time Range*
+    *Time Range*
 
 
     
     </td>
     <td valign="top">
     
-        -   *Start Date*: Specify a date if you want to the change the default start date, which is the current date.
+    -   *Start Date*: Specify a date if you want to the change the default start date, which is the current date.
     -   *End Date*: Optionally you can specify an end date. Otherwise, the schedule runs indefinitely.
 
 
@@ -262,7 +262,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
-        Now imagine we are still in April 14, 2021, but you set as start date "May 2, 2020" and as end date "March 31, 2021". If we take the same examples as above the next runs will be:
+    Now imagine we are still in April 14, 2021, but you set as start date "May 2, 2020" and as end date "March 31, 2021". If we take the same examples as above the next runs will be:
 
     -   *Daily*:
         -   May 6, 2021
@@ -284,21 +284,21 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-        *Preview*
+    *Preview*
 
 
     
     </td>
     <td valign="top">
     
-        You can see a preview of the schedule and when the five next runs are planned.
+    You can see a preview of the schedule and when the five next runs are planned.
 
 
     
     </td>
     <td valign="top">
     
-        Schedules are created in Coordinated Universal Time \(UTC\) but you can also view the next runs in local time.
+    Schedules are created in Coordinated Universal Time \(UTC\) but you can also view the next runs in local time.
 
 
     
@@ -319,7 +319,7 @@ The column *Refresh Frequency* \(for data flows: *Frequency*\) shows the status 
 
 The *Next Run* colums shows the start date and time of the next run according to the scheduling settings.
 
-As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png) *\(Remote Table Logs\)*,*\(View Persistency Logs\)*, or *\(Details\)*.
+As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(View Persistency Logs\)*, or *\(Details\)*.
 
 
 

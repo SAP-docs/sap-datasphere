@@ -21,7 +21,7 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 > 
 > Updating the perspective will break any existing SAP Analytics Cloud stories that consume it, and you will need to reselect the dimension manually in each story.
 
- <a name="task_w4m_nfy_qpb"/>
+<a name="task_w4m_nfy_qpb"/>
 
 <!-- task\_w4m\_nfy\_qpb -->
 
@@ -71,7 +71,7 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 11. In order to make your perspective consumable, you need to deploy it. Go back to your consumption model, choose the *Perspectives* tab and choose <span class="SAP-icons"></span> *Deploy*. A perspective needs to be deployed in order to be used in a story.
 
 
- <a name="task_ftv_vfy_qpb"/>
+<a name="task_ftv_vfy_qpb"/>
 
 <!-- task\_ftv\_vfy\_qpb -->
 

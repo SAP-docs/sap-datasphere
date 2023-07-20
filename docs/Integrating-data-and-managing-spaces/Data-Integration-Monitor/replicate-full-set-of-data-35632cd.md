@@ -48,14 +48,14 @@ Availability of snapshot replication depends on the connection type. For more in
     <tr>
     <td valign="top">
     
-        **Directly start the replication**
+    **Directly start the replication**
 
 
     
     </td>
     <td valign="top">
     
-        Select *Table Replication* \> *Load New Snapshot*.
+    Select *Table Replication* \> *Load New Snapshot*.
 
 
     
@@ -64,14 +64,14 @@ Availability of snapshot replication depends on the connection type. For more in
     <tr>
     <td valign="top">
     
-        **Schedule the replication**
+    **Schedule the replication**
 
 
     
     </td>
     <td valign="top">
     
-        Select *Schedule Replication* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    Select *Schedule Replication* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
 
 
     
@@ -90,7 +90,7 @@ When you directly started the replication, it starts in the background and you c
 
 When you scheduled the replication, the columns *Refresh Frequency* and *Next Run* are updated with the scheduling information. You can display the scheduling settings by clicking *Scheduled* in the *Refresh Frequency* column.
 
-You can access the detailed logs for the remote table: Select the relevant remote table and click ![](images/Remote_Table_Logs_Button_a6170ee.png) *\(Remote Table Logs\)*.
+You can access the detailed logs for the remote table: Select the relevant remote table and click ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*.
 
 Once, a snapshot has been replicated and you copy a new snapshot \(either directly or via scheduling\) the local data in SAP Datasphere will be deleted and a new snapshot will be loaded for the table.
 

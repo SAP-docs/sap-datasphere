@@ -123,30 +123,14 @@ Description
 <tr>
 <td valign="top">
 
- *Server Name* 
+*Server Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the host name of the Azure server. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Port* 
-
-
-
-</td>
-<td valign="top">
-
- Enter the port number of the Azure server. The default is `1433`. 
+Enter the host name of the Azure server. 
 
 
 
@@ -155,14 +139,14 @@ Description
 <tr>
 <td valign="top">
 
- *Database Name* 
+*Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the database to which you want to connect. 
+Enter the port number of the Azure server. The default is `1433`. 
 
 
 
@@ -171,14 +155,30 @@ Description
 <tr>
 <td valign="top">
 
- *Version* 
+*Database Name* 
 
 
 
 </td>
 <td valign="top">
 
- Select the version. 
+Enter the name of the database to which you want to connect. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Version* 
+
+
+
+</td>
+<td valign="top">
+
+Select the version. 
 
 
 
@@ -211,14 +211,14 @@ Description
 <tr>
 <td valign="top">
 
- *Host Name in Server Certificate* 
+*Host Name in Server Certificate* 
 
 
 
 </td>
 <td valign="top">
 
- Enter `*.database.windows.net` .
+Enter `*.database.windows.net` .
 
 
 
@@ -251,14 +251,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the Azure user that has privileges to connect to the database. 
+Enter the name of the Azure user that has privileges to connect to the database. 
 
 
 
@@ -267,14 +267,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password* 
+*Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the password of the Azure user. 
+Enter the password of the Azure user. 
 
 
 
@@ -314,7 +314,7 @@ Description
 </td>
 <td valign="top">
 
- To enable *Remote Tables*, select a Data Provisioning Agent. 
+To enable *Remote Tables*, select a Data Provisioning Agent. 
 
 
 
@@ -330,7 +330,7 @@ Description
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties. 
 
 
 
@@ -346,7 +346,7 @@ Description
 </td>
 <td valign="top">
 
- *Replication Flows* are enabled without the need to set any additional connection properties. 
+*Replication Flows* are enabled without the need to set any additional connection properties. 
 
 
 

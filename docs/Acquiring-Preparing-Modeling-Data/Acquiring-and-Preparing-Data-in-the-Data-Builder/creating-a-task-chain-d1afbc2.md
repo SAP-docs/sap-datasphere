@@ -12,7 +12,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Prerequisites
 
--   You have DW Integrator and DW Modeler role privileges. See [Standard Application Roles](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles, which you can use as templates to create new roles.") :arrow_upper_right: for more information.
+-   The DW Modeler role privilege is required to create task chains and the additional DW Integrator role privilege is required to set up email notification for completion of executed task chains. See [Standard Application Roles](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: for more information. In addition to these two role privileges, when setting up email notifications, the Team.Read privilege is also required to display and add notification recipients from a list of current tenant members. See [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
 
 -   Objects must have been already deployed, so that they can be added to the task chain. Task chains must also be deployed to allow selection of tenant users or specify email addresses for notification of task chain completion.
 
@@ -66,6 +66,9 @@ A basic or linear task chain allows you to define a group or series of tasks and
     > ### Note:  
     > In the repository, you can see the remote tables, views, and data flow objects that meet prerequisites and are available to be added to the task chain.
 
+    > ### Note:  
+    > If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
+
 3.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* \(described in the next section\) to place the new object.
 
     Choosing the *Add as New Task* option automatically connects the new object task to the previous object task. The properties panel for the task chain is also updated with the added objects.
@@ -76,7 +79,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
 
 5.  In the properties panel, specify a name for the task chain.
 
-     ![](images/Task_chain_properties_55f7187.png) 
+    ![](images/Task_chain_properties_55f7187.png)
 
     Task chain properties:
 
@@ -101,30 +104,14 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Business Name
+    Business Name
 
 
     
     </td>
     <td valign="top">
     
-        Name of the task chain
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Technical name of the task chain
+    Name of the task chain
 
 
     
@@ -133,30 +120,14 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Status
+    Technical Name
 
 
     
     </td>
     <td valign="top">
     
-        Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Objects in the task chain
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Displays all objects that have been added to the task chain
+    Technical name of the task chain
 
 
     
@@ -165,14 +136,14 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Run Status
+    Status
 
 
     
     </td>
     <td valign="top">
     
-        Displays the current run status of the task chain: Not run yet, running, failed, or completed.
+    Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
 
 
     
@@ -181,14 +152,46 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Email Notifications
+    Objects in the task chain
 
 
     
     </td>
     <td valign="top">
     
-        Set up email notification for task chain run completion.
+    Displays all objects that have been added to the task chain
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Run Status
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Displays the current run status of the task chain: Not run yet, running, failed, or completed.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Email Notifications
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Set up email notification for task chain run completion.
 
 
     
@@ -198,11 +201,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     
     When you click on one of the task chain objects, the properties for this selected task object is displayed in the properties panel:
 
-     ![](images/Select_Open_Object_08d0613.png) 
+    ![](images/Select_Open_Object_08d0613.png)
 
     Note that you can also access the details of each task chain object in the task chain properties panel. Select the relevant object in the object list and click <span class="SAP-icons"></span>:
 
-     ![](images/View_Detail_Object_fc2af80.png) 
+    ![](images/View_Detail_Object_fc2af80.png)
 
     Task chain object properties:
 
@@ -227,30 +230,14 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Business Name
+    Business Name
 
 
     
     </td>
     <td valign="top">
     
-        Name of the object
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Technical Name
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Technical name of the object
+    Name of the object
 
 
     
@@ -259,14 +246,14 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Object Type
+    Technical Name
 
 
     
     </td>
     <td valign="top">
     
-        A remote table, view, or data flow
+    Technical name of the object
 
 
     
@@ -275,14 +262,30 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Activity
+    Object Type
 
 
     
     </td>
     <td valign="top">
     
-        Activity that will be triggered by the task chain:
+    A remote table, view, or data flow
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Activity
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Activity that will be triggered by the task chain:
 
     -   Remote table - Replicate
 
@@ -297,14 +300,14 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <tr>
     <td valign="top">
     
-        Status
+    Status
 
 
     
     </td>
     <td valign="top">
     
-        Deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
+    Deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
 
 
     
@@ -319,7 +322,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
 
     The properties of your task chain are updated.
 
-     ![](images/Properties_Update_with_Deploy_3674719.png) 
+    ![](images/Properties_Update_with_Deploy_3674719.png)
 
     Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the Task Chain Monitor to monitor your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
@@ -332,15 +335,15 @@ In addition to linear task chains in which one task is executed after another, y
 
     -   Select the task object you added to the canvas and then click the *Add as Parallel Branch* option from the list of context menu options available.
 
-         ![](images/context_menu_create_branch_301a9fc.png) 
+        ![](images/context_menu_create_branch_301a9fc.png)
 
     -   Alternatively, you can select the task object, click <span class="FPA-icons"></span> Add from the shell bar above the canvas, and select the *Add Parallel Branch to Selected Task* menu option.
 
-         ![](images/add_parallel_branch_menu_option_88dd6d8.png) 
+        ![](images/add_parallel_branch_menu_option_88dd6d8.png)
 
         If you choose either of these options, a new task placeholder is added to the canvas, next to the currently selected task object.
 
-         ![](images/placeholder_2b7f857.png) 
+        ![](images/placeholder_2b7f857.png)
 
         You can then drag another task object on to the canvas to take the place of the new task placeholder.
 
@@ -349,11 +352,11 @@ In addition to linear task chains in which one task is executed after another, y
 
     -   Another way to create a parallel branch in a task chain is simply to drag a new object to the canvas on top of the currently selected task object and then choose the *Add as Parallel* context menu option.
 
-         ![](images/add_as_parallel_ca15c48.png) 
+        ![](images/add_as_parallel_ca15c48.png)
 
         Following this selection, the new task object will be placed next to the currently selected object. For example:
 
-         ![](images/new_parallel_task_d721fd4.png) 
+        ![](images/new_parallel_task_d721fd4.png)
 
         You may continue to add additional parallel task objects in the same way. There is no predefined limit on the number of tasks you can include in a parallel task chain branch, however you cannot nest another task chain within an existing one.
 
@@ -367,9 +370,9 @@ In addition to linear task chains in which one task is executed after another, y
 
 9.  Next, connect each of the parallel branch task objects to the ANY or ALL operator you placed on the canvas. To do that, select a task object in the branch, then click and drag the :arrow_right: arrow to the ANY or ALL operator to connect the selected task object.
 
-     ![](images/connect_to_operator_1_258e262.png) 
+    ![](images/connect_to_operator_1_258e262.png)
 
-     ![](images/connect_to_operator_2_6be4c2b.png) 
+    ![](images/connect_to_operator_2_6be4c2b.png)
 
 10. Connect the remaining task objects in the branch to the ANY or ALL operator, in the same way, to complete creation of the parallel task chain branch.
 
@@ -391,6 +394,9 @@ In addition to linear task chains in which one task is executed after another, y
 
 After creating and deploying a task chain, you can set up email notification for completion of task chain runs.
 
+> ### Note:  
+> The DW Integrator role privilege is required to set up email notification for completion of executed task chains. The *Email Notifications* section of the task chain *Properties* panel will not appear if you do not have this privilege assigned. See [Standard Application Roles](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: for more information. In addition to the DW Integrator role privilege, when setting up email notifications, the Team.Read privilege is also required to display and add notification recipients from a list of current tenant members
+
 To set up email notification:
 
 12. In the *Email Notifications* section of the *Properties* panel, select when you want notifications to be sent for the current task chain. You can choose from the following options:
@@ -404,7 +410,7 @@ To set up email notification:
 
     The *Email Notifications* section expands to show details of the email notification message to be sent to users on completion of task chain runs.
 
-     ![](images/Email_Notification_Setup_d5f7c97.png) 
+    ![](images/Email_Notification_Setup_d5f7c97.png)
 
     The notification setup includes a default template you can customize for both the email message subject and body text. You can choose to send notifications to other tenant users or specify email addresses of other users to receive notifications \(up to 20 recipients total\). Email addresses must be in the same domain as the tenant owner.
 
@@ -413,15 +419,18 @@ To set up email notification:
 
 13. Click the <span class="SAP-icons"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
 
-     ![](images/Recipients_List_527a05c.png) 
+    ![](images/Recipients_List_527a05c.png)
 
     From this dialog, you can select member users of the same tenant or click the *Others* tab to specify email addresses of other users you want to receive notifications \(up to 20 total recipients\). Email addresses must match the domain of the tenant owner, for example, jdoe@sap.com. After saving your selections, the display returns to the *Properties* panel, showing the selected users in the *Recipient Email Address* field.
+
+    > ### Note:  
+    > When setting up email notification, the Team.Read privilege is required to be able to display and add notification recipients from the list of current tenant members. If you do not have this privilege assigned, you can still add recipients manually from the *Others* tab.
 
 14. Review the default email subject and message body text and make any updates to either the text or placeholder variables used in the notification email message sent for the current task chain.
 
     Placeholder variables within the subject and message fields are enclosed by $$ characters, for example, $$status$$. You can click the <span class="SAP-icons"></span> icon to display a list of available placeholder variable names you may include in either the email subject or message body text fields.
 
     > ### Note:  
-    > Changes you make to the email notification template are saved when you redeploy the updated task chain that has email notification subject and body text template changes. When the task chain is run and notification emails are sent out, placeholder variables in the notification template will be replaced with actual values available at runtime.
+    > Changes you make to the email notification template are saved when you redeploy the updated task chain that has email notification subject and body text template changes. When the task chain is run and notification emails are sent out, placeholder variables in the notification template will be replaced with actual values available at runtime. You should note, however, that no email notifications will be sent out if any error occurs during initialization or preparation to run a task chain, before task execution actually starts.
 
 

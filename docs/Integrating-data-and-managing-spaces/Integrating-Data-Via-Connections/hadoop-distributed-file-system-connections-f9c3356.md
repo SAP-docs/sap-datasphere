@@ -45,7 +45,7 @@ Description
 <tr>
 <td valign="top">
 
- *Endpoint*  
+*Endpoint*  
 
 
 
@@ -66,7 +66,7 @@ Select *RPC* or *WEBHDFS*
 <tr>
 <td valign="top">
 
- *Host*  
+*Host*  
 
 
 
@@ -82,7 +82,7 @@ Enter the hostname or the IP address of the HDFS namenode.
 <tr>
 <td valign="top">
 
- *Port*  
+*Port*  
 
 
 
@@ -156,7 +156,7 @@ Select *true* to use an HDFS custom parameter.
 <tr>
 <td valign="top">
 
- \[if *Use Custom Parameters* = *true*\] *HDFS Configuration*  
+\[if *Use Custom Parameters* = *true*\] *HDFS Configuration*  
 
 
 
@@ -172,7 +172,7 @@ Enter the HDFS custom parameter.
 <tr>
 <td valign="top">
 
- \[if *Use Custom Parameters* = *true*\] *Value*  
+\[if *Use Custom Parameters* = *true*\] *Value*  
 
 
 
@@ -212,7 +212,7 @@ Description
 <tr>
 <td valign="top">
 
- *Authentication Type*  
+*Authentication Type*  
 
 
 
@@ -256,7 +256,7 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
@@ -272,7 +272,7 @@ Enter the user name of the HDFS user.
 <tr>
 <td valign="top">
 
- *Password*  
+*Password*  
 
 
 
@@ -314,7 +314,7 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
@@ -356,7 +356,7 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
@@ -372,7 +372,7 @@ Enter the user principal.
 <tr>
 <td valign="top">
 
- *keytab*  
+*keytab*  
 
 
 
@@ -416,7 +416,7 @@ Description
 <tr>
 <td valign="top">
 
- *krb5.config*  
+*krb5.config*  
 
 
 

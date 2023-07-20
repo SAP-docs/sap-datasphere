@@ -30,7 +30,7 @@ A recurring task will check for any status changes according to the configured f
 
 1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
-2.   
+2.  
 
 3.  Go to the *On-Premise Agents* section and click <span class="SAP-icons"></span> \(menu\) ** \> ** *Configure Sending Notifications*.
 

@@ -33,30 +33,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-         Business Name 
+    Business Name 
 
 
     
     </td>
     <td valign="top">
     
-         Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-         Technical Name 
-
-
-    
-    </td>
-    <td valign="top">
-    
-         \[read-only\] The technical names of remote tables cannot be modified. 
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -65,14 +49,30 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Semantic Usage
+    Technical Name 
 
 
     
     </td>
     <td valign="top">
     
-         Select the way your entity should be used. 
+    \[read-only\] The technical names of remote tables cannot be modified. 
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Semantic Usage
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the way your entity should be used. 
 
     Choose from the following:
 
@@ -117,18 +117,18 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-         *Connection* 
+    *Connection* 
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\]
+    \[read-only\]
 
     Displays the name of the connection the remote table belongs to.
 
-     Displays the name of the connection the remote table belongs to.
+    Displays the name of the connection the remote table belongs to.
 
 
     
@@ -137,14 +137,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Remote Table
+    Remote Table
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Displays the full path to the remote table in the source system.
+    \[read-only\] Displays the full path to the remote table in the source system.
 
 
     
@@ -153,14 +153,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Data Access
+    Data Access
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Displays how the remote table data is stored:
+    \[read-only\] Displays how the remote table data is stored:
 
     -   *Remote*: Data is accessed directly from the source \(federation\) and read from the virtual table.
     -   *Replicated*: Data is copied in SAP Datasphere and is read from the replica table.
@@ -177,14 +177,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Last Updated
+    Last Updated
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\]
+    \[read-only\]
 
     Displays when the data was last successfully updated in SAP Datasphere.
 
@@ -198,14 +198,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Refresh Frequency
+    Refresh Frequency
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\]
+    \[read-only\]
 
     Displays how often data is replicated. The value here shows the intended frequency that might have not been reached yet depending on the status of the remote table.
 
@@ -224,14 +224,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Status
+    Status
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\]
+    \[read-only\]
 
     Displays the current status of the remote table:
 
@@ -264,14 +264,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Statistics Type
+    Statistics Type
 
 
     
     </td>
     <td valign="top">
     
-        Displays the statistics type that has been created for the remote table :
+    Displays the statistics type that has been created for the remote table :
 
     -   *HISTOGRAM*: Creates a data statistics object that helps the query optimizer estimate the data distribution.
     -   *RECORD COUNT*: Creates a data statistics object that helps the query optimizer calculate the number of records \(rows\) in a table data source. The*RECORD COUNT* type is a table-wide statistic.
@@ -287,14 +287,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-        Statistics Last Updated
+    Statistics Last Updated
 
 
     
     </td>
     <td valign="top">
     
-        Displays the date when the last statistics update has been refreshed for the remote table.
+    Displays the date when the last statistics update has been refreshed for the remote table.
 
 
     

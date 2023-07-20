@@ -8,7 +8,7 @@ You need to perform some preparatory steps to be able to create and use connecti
 
 The following overview lists the most common prerequisites per connection type and points to further information about what needs to be prepared to connect and use a connection.
 
-** **
+****
 
 
 <table>
@@ -628,7 +628,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 
 

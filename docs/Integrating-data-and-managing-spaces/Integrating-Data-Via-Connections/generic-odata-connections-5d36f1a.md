@@ -58,14 +58,14 @@ Description
 <tr>
 <td valign="top">
 
- *URL*  
+*URL*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the OData service provider URL. 
+Enter the OData service provider URL. 
 
 > ### Note:  
 > The OData service URL needs to be publicly available.
@@ -77,14 +77,14 @@ Description
 <tr>
 <td valign="top">
 
- *Version*  
+*Version*  
 
 
 
 </td>
 <td valign="top">
 
- Select the OData version used to implement the OData service \(*V2* or *V4*\). 
+Select the OData version used to implement the OData service \(*V2* or *V4*\). 
 
 
 
@@ -117,14 +117,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use Cloud Connector* 
+*Use Cloud Connector* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
 
 
 
@@ -133,14 +133,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Location* 
+\[if *Use Cloud Connector* = *true*\] *Location* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select a location ID. 
+\[optional\] Select a location ID. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
@@ -152,14 +152,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
@@ -170,14 +170,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration. 
 
 
 
@@ -186,14 +186,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 
 
@@ -433,14 +433,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the user name. 
+Enter the user name. 
 
 
 
@@ -449,14 +449,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password*  
+*Password*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the password. 
+Enter the password. 
 
 
 

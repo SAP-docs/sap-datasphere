@@ -8,17 +8,17 @@ Review the standard roles and the privileges needed to access apps, tools, and o
 
 This topic contains the following sections:
 
--   [SAP Datasphere Apps](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_apps)
--   [SAP Datasphere Administration Tools](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_tools)
+-   [Apps](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_apps)
+-   [Administration Tools](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_tools)
 -   [Space Management Privileges and Permissions](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions)
--   [External Consumption of SAP Datasphere Data](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_consumption)
+-   [External Data Consumption](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_consumption)
 -   [The Command Line Interface](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_cli)
 
 
 
 <a name="loio2d8b7d04dcae402f911d119437ce0a74__section_apps"/>
 
-## SAP Datasphere Apps
+## Apps
 
 To access an app, tool, or editor, a user must have the following standard application role or a custom role containing the listed privileges:
 
@@ -57,14 +57,14 @@ Contained in Standard Role...
 </td>
 <td valign="top">
 
- *Data Warehouse General* \(-R------\)
+*Data Warehouse General* \(-R------\)
 
 
 
 </td>
 <td valign="top">
 
-All roles except *DW Consumer* 
+*DW Consumer* 
 
 
 
@@ -84,7 +84,7 @@ See [Repository Explorer](https://help.sap.com/viewer/c8a54ee704e94e159265512932
 
 *Data Warehouse Business Catalog* \(-R------\)
 
- 
+
 
 
 
@@ -155,7 +155,7 @@ See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/c8a54ee7
 </td>
 <td valign="top">
 
- *DW Integrator* 
+*DW Integrator* 
 
 
 
@@ -298,7 +298,7 @@ See [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967
 </td>
 <td valign="top">
 
- *DW Space Administrator* 
+*DW Space Administrator* 
 
 
 
@@ -319,7 +319,7 @@ See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be596
 *Data Warehouse Data Integration* \(-RU-E---\)
 
 > ### Note:  
-> The *DW Modeler* role includes *Data Warehouse Cloud Data Integration.Update*, which allows them to do only manual integration tasks. The *DW Integrator* role includes *Data Warehouse Data Access Control.Execute*, which also allows scheduling automated integration tasks.
+> The *DW Modeler* role includes *Data Warehouse Cloud Data Integration.Update*, which allows them to do only manual integration tasks. The *DW Integrator* role includes *Data Warehouse Cloud Data Integration.Execute*, which also allows scheduling automated integration tasks.
 
 
 
@@ -371,7 +371,7 @@ The following feature needs an additional permission \(which is included in the 
 > -   In addition to the roles and privileges listed, users who have roles other than *DW Administrator* must also be members of one or more spaces in order to use these apps \(see [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\).
 > -   Users with the role *DW Administrator* or *DW Space Administrator* have full access \(with full CRUD permissions\) to all the apps listed in this table.
 > -   Users with the *DW Viewer* role have read-only access to all the apps \(except for *Data Access Control*\) listed in this table.
-> -   For complete lists of roles, privileges, and permissions, see:
+> -   For complete lists of standard roles, privileges, and permissions, see:
 >     -   [Standard Application Roles](standard-application-roles-a50a51d.md)
 >     -   [Privileges and Permissions](privileges-and-permissions-d7350c6.md)
 
@@ -379,7 +379,7 @@ The following feature needs an additional permission \(which is included in the 
 
 <a name="loio2d8b7d04dcae402f911d119437ce0a74__section_tools"/>
 
-## SAP Datasphere Administration Tools
+## Administration Tools
 
 To access an administration tool, a user must have the following standard application role or a custom role containing the listed privileges:
 
@@ -413,7 +413,7 @@ Contained in Standard Role...
 
 ![](../images/Space_Management_a868247.png) \(*Space Management*\)
 
-See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and use other methods to bring data into their space. They can schedule and monitor data replication and other data integration tasks. Space administrators are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:
+See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:
 
 
 
@@ -435,9 +435,6 @@ See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3
 > -   Users with other roles can view \(but not edit\) the spaces they are members of.
 > 
 > -   Users with the *DW Integrator* role can create database users.
-> 
-> 
-> See [Space Management Privileges and Permissions](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions) 
 
 
 
@@ -522,7 +519,7 @@ Each sub-tool requires a separate permission:
 </td>
 <td valign="top">
 
- *DW Administrator* \(full access\)
+*DW Administrator* \(full access\)
 
 
 
@@ -633,9 +630,7 @@ Users with different roles have different levels of access to the *Space Managem
 
 -   A *DW Viewer* can log into SAP Datasphere, but has no *Spaces* permissions. They cannot see the *Space Management* tool.
 
--   A *DW Modeler* has *Spaces* `(-R------)` permission. They have read-only access to the page for their space \(though they cannot see all its properties\).
-
--   A *DW Integrator* has *Spaces* `(-R------)` permission. They can create and edit database users, and associate HDI containers in spaces of which they are a member.
+-   A *DW Modeler* and a *DW Integrator* have *Spaces* `(-R------)` permission. They have read-only access to the page for their space \(though they cannot see all its properties\).
 
 -   A *DW Space Administrator* has *Spaces* `(-RUD----)` permissions. They can see all the space properties, and edit those outside the *General Settings* and *Workload Management* sections.
 
@@ -811,7 +806,7 @@ DW Administrator and DW Space Administrator
 
 Modify *Database Access*
 
-See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator or DW Integrator role (space administrators and integrators) can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right: and [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
+See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right: and [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
 
 
 
@@ -861,7 +856,7 @@ DW Administrator and DW Space Administrator
 
 Modify *Auditing*
 
-See [Enable or Disable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:
+See [Enable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:
 
 
 
@@ -945,7 +940,7 @@ DW Administrator and DW Space Administrator
 
 <a name="loio2d8b7d04dcae402f911d119437ce0a74__section_external_consumption"/>
 
-## External Consumption of SAP Datasphere Data
+## External Data Consumption
 
 Users can consume data exposed by SAP Datasphere if they are a member of a space and have the Space Files.Read permission, which is included in all standard application roles.
 
@@ -986,7 +981,7 @@ See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509
 </td>
 <td valign="top">
 
- *Space Files* \(-R------\)
+*Space Files* \(-R------\)
 
 
 

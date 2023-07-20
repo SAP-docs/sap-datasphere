@@ -58,14 +58,14 @@ Description
 <tr>
 <td valign="top">
 
- *Region* 
+*Region* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the AWS region in your Amazon Athena regional endpoint that you use to make your requests. For example, `us-west-2`. 
+Enter the AWS region in your Amazon Athena regional endpoint that you use to make your requests. For example, `us-west-2`. 
 
 
 
@@ -74,14 +74,14 @@ Description
 <tr>
 <td valign="top">
 
- *Workgroup* 
+*Workgroup* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the workgroup. Amazon Athena uses workgroups to control query access and costs. The default workgroup is `primary`. 
+Enter the name of the workgroup. Amazon Athena uses workgroups to control query access and costs. The default workgroup is `primary`. 
 
 
 
@@ -114,14 +114,14 @@ Description
 <tr>
 <td valign="top">
 
- *Access Key* 
+*Access Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the access key ID of the user that the application must use to authenticate. 
+Enter the access key ID of the user that the application must use to authenticate. 
 
 
 
@@ -130,14 +130,14 @@ Description
 <tr>
 <td valign="top">
 
- *Secret Key* 
+*Secret Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the secret access key of the user that the application must use to authenticate. 
+Enter the secret access key of the user that the application must use to authenticate. 
 
 
 

@@ -21,9 +21,9 @@ These versions of SAP BW∕4HANA are supported:
 
 -   SAP BW∕4HANA 2.0 SPS01 to SPS06 after you have applied the following SAP Notes:
 
-    -    [2943200](https://launchpad.support.sap.com/#/notes/2943200) TCI for BW4HANA 2.0 Hybrid
+    -   [2943200](https://launchpad.support.sap.com/#/notes/2943200) TCI for BW4HANA 2.0 Hybrid
 
-    -    [2945277](https://launchpad.support.sap.com/#/notes/2945277) BW/4 - Enable DWC "Import from Connection" for BW/4 Query
+    -   [2945277](https://launchpad.support.sap.com/#/notes/2945277) BW/4 - Enable DWC "Import from Connection" for BW/4 Query
 
     -   [2989654](https://launchpad.support.sap.com/#/notes/2989654) BW/4 - Enable DWC "Import from Connection" for BW/4 Query - Revision 1
 

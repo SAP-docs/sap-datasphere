@@ -8,7 +8,7 @@ Monitor the status and progress of running and previously run task chains.
 
 To view all task chains that are scheduled to run, are currently running, or have already been run in your space, go to *Data Integration Monitor* and select the *Task Chain Monitor* tab:
 
- ![](images/task_chain_list_f82c833.png) 
+![](images/task_chain_list_f82c833.png)
 
 The monitor displays information on your task chains:
 
@@ -153,14 +153,17 @@ When the next run is scheduled.
 
 Click *Run* to manually start a new run of a selected task chain. If a task chain’s last run failed, you can also choose the *Run* \> *Retry Run* option to retry the failed task chain’s execution from the point at which it previously failed.
 
-You can click *Schedule* to create, edit, or delete a schedule for a selected task chain. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+> ### Note:  
+> If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
+
+You can click *Schedule* to create, edit or delete a schedule for a selected task chain. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
 Click <span class="FPA-icons"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or subtasks in the task chain, and log messages about a selected task chain’s execution.
 
- ![](images/task_chain_run_task_details_cf43bcd.png) 
+![](images/task_chain_run_task_details_cf43bcd.png)
 
 > ### Note:  
 > The task chain *Details* page also lets you resize \(<span class="SAP-icons"></span> and <span class="SAP-icons"></span>\), expand/collapse \(<span class="SAP-icons"></span>\), or close \( :x:\) the display of each panel to focus on specific detail information or log messages. In addition, you can sort \(<span class="SAP-icons"></span> \) and filter \(<span class="SAP-icons"></span> \) information displayed in the different panels, as well as search log messages.
@@ -176,7 +179,7 @@ In the right-side panel, the task chain monitor displays log messages for a sele
 
 Clicking on the *View in Monitor* link takes you to the monitoring page for a specific task object and displays the log messages for that specific run of the associated task.
 
- ![](images/task_chain_logs_4152b12.png) 
+![](images/task_chain_logs_4152b12.png)
 
 To return to the original *Run Details* display, click on the task chain name under the *Parent Task Chain* field in the upper right corner of the page.
 
@@ -188,7 +191,7 @@ To return to the original *Run Details* display, click on the task chain name un
 
 If a task chain’s last run failed, the *Run Details* panel provides a *Retry Run* option to retry the failed task chain’s execution. You can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain's execution. Note that the *Retry Latest Run* option is only active when the last taskchain runs failed.
 
- ![](images/retry_failed_task_chain_8c1fe17.png) 
+![](images/retry_failed_task_chain_8c1fe17.png)
 
 Any user with authorization to run the task chain can retry a task chain’s execution. Retries of a task chain are run on behalf of the original user and the retried task chain will have the same log ID as the original task chain run. The monitor will create a new log ID for retries of failed subtasks and both the original and retried subtasks appear in the hierarchy of tasks displayed in the *Run Details* panel.
 

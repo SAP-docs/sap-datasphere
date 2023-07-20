@@ -41,7 +41,7 @@ When adding such a view as a source in your SQL view, you must process each of t
     <tr>
     <td valign="top">
     
-        ```
+    ```
     "<SourceName>"(<IPName>: :PARAM_1)
     ```
 
@@ -50,7 +50,7 @@ When adding such a view as a source in your SQL view, you must process each of t
     </td>
     <td valign="top">
     
-        ```
+    ```
     "<SourceName>"(<IPName>=>:PARAM_1)
     ```
 
@@ -89,7 +89,7 @@ When adding such a view as a source in your SQL view, you must process each of t
         <tr>
         <td valign="top">
         
-                ```
+        ```
         "Sales"(IP_CITY: :IP_CITY,IP_DISCOUNT: :IP_DISCOUNT)
         ```
 
@@ -98,7 +98,7 @@ When adding such a view as a source in your SQL view, you must process each of t
         </td>
         <td valign="top">
         
-                ```
+        ```
         "Sales"(IP_CITY=>:IP_CITY,IP_DISCOUNT=>:IP_DISCOUNT)
         ```
 
@@ -133,7 +133,7 @@ When adding such a view as a source in your SQL view, you must process each of t
         <tr>
         <td valign="top">
         
-                ```
+        ```
         "Sales"(IP_CITY: 'Tokyo',IP_DISCOUNT: 10)
         ```
 
@@ -142,7 +142,7 @@ When adding such a view as a source in your SQL view, you must process each of t
         </td>
         <td valign="top">
         
-                ```
+        ```
         "Sales"(IP_CITY=>'Tokyo',IP_DISCOUNT=>10)
         ```
 

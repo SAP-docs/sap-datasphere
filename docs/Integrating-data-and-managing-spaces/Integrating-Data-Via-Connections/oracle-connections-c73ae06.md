@@ -2,7 +2,7 @@
 
 # Oracle Connections
 
- Use an *Oracle* connection to access data from an Oracle database \(on-premise\). 
+Use an *Oracle* connection to access data from an Oracle database \(on-premise\). 
 
 
 
@@ -64,30 +64,14 @@ Description
 <tr>
 <td valign="top">
 
- *Host*  
+*Host*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the host name or IP address on which the remote Oracle database is running. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Port*  
-
-
-
-</td>
-<td valign="top">
-
- Enter the Oracle database server port number. 
+Enter the host name or IP address on which the remote Oracle database is running. 
 
 
 
@@ -96,14 +80,30 @@ Description
 <tr>
 <td valign="top">
 
- *Database Name/SID*  
+*Port*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the Oracle database name 
+Enter the Oracle database server port number. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Database Name/SID*  
+
+
+
+</td>
+<td valign="top">
+
+Enter the Oracle database name 
 
 
 
@@ -170,14 +170,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use SSL*  
+*Use SSL*  
 
 
 
 </td>
 <td valign="top">
 
- Select whether you’re using SSL. The default value is *true*. 
+Select whether you’re using SSL. The default value is *true*. 
 
 
 
@@ -186,14 +186,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use SSL* = *true*\] *Distinguished Name \(DN\) in Certificate*  
+\[if *Use SSL* = *true*\] *Distinguished Name \(DN\) in Certificate*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the distinguished name \(DN\) of the primary data server certificate. 
+Enter the distinguished name \(DN\) of the primary data server certificate. 
 
 > ### Note:  
 > If this parameter is set, the DN field in the server certificate is verified to match this parameter. If it doesn’t match, the connection to the primary data server fails.
@@ -229,14 +229,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the Oracle user name \(case-sensitive\) 
+Enter the Oracle user name \(case-sensitive\) 
 
 
 
@@ -245,14 +245,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password*  
+*Password*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the Oracle user password 
+Enter the Oracle user password 
 
 
 

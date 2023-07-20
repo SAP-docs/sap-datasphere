@@ -150,7 +150,7 @@ Click *Add View* and select the view you want to persist. It's then added to the
 <tr>
 <td valign="top">
 
- *Delete persistency* 
+*Delete persistency* 
 
 
 
@@ -173,9 +173,9 @@ Perform action on data by clicking *View Persistency*
 </td>
 <td valign="top">
 
- *Load New Snapshot*: Load new data to update or create the persisted view.
+*Load New Snapshot*: Load new data to update or create the persisted view.
 
- *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
+*Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
 
 
@@ -184,7 +184,7 @@ Perform action on data by clicking *View Persistency*
 <tr>
 <td valign="top">
 
-Define, edit or delete scheduling options for your persisted views.
+Define, edit, or delete scheduling options of your persisted view.
 
 
 
@@ -217,6 +217,8 @@ Select the relevant view and click: <span class="SAP-icons"></span> \(View Pe
 
 
 
+
+
 <a name="loio9af04c990f294fd28c00f46763dd8b0d__section_o51_rdm_htb"/>
 
 ## Monitoring Persisted Views
@@ -244,7 +246,7 @@ Information
 <tr>
 <td valign="top">
 
- *Name* 
+*Name* 
 
 
 
@@ -260,7 +262,7 @@ Name of the persisted view
 <tr>
 <td valign="top">
 
- *Data Access* 
+*Data Access* 
 
 
 
@@ -279,7 +281,7 @@ See how you currently access your view.
 <tr>
 <td valign="top">
 
- *Refresh Frequency* 
+*Refresh Frequency* 
 
 
 
@@ -298,7 +300,7 @@ See if a schedule is defined for the view.
 <tr>
 <td valign="top">
 
- *Last Updated* 
+*Last Updated* 
 
 
 
@@ -314,7 +316,7 @@ See when the persisted view was last updated.
 <tr>
 <td valign="top">
 
- *New Run* 
+*New Run* 
 
 
 
@@ -330,7 +332,7 @@ If a schedule is set for the view, see by when the next run is scheduled.
 <tr>
 <td valign="top">
 
- *Used In-Memory \(MiB\)* 
+*Used In-Memory \(MiB\)* 
 
 
 
@@ -346,7 +348,7 @@ Track how much size the view is using in your memory.
 <tr>
 <td valign="top">
 
- *Used Disk \(MiB\)* 
+*Used Disk \(MiB\)* 
 
 
 
@@ -362,7 +364,7 @@ Track how much size the view is taking on your disk.
 <tr>
 <td valign="top">
 
- *Status* 
+*Status* 
 
 
 

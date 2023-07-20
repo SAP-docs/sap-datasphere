@@ -95,7 +95,7 @@ You can use the connection to add source and target objects to a replication flo
 > 
 > Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object in the source we strongly recommend to only use remote tables or replication flows and not both.
 
- <a name="loio27aebc8432aa419da75c5fc650981f24"/>
+<a name="loio27aebc8432aa419da75c5fc650981f24"/>
 
 <!-- loio27aebc8432aa419da75c5fc650981f24 -->
 
@@ -128,30 +128,14 @@ Description
 <tr>
 <td valign="top">
 
- *Category* 
+*Category* 
 
 
 
 </td>
 <td valign="top">
 
- Select *Cloud* to connect to an SAP HANA Cloud instance. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Host* 
-
-
-
-</td>
-<td valign="top">
-
- Enter the fully qualified host name or IP address on which the remote SAP HANA server is running. 
+Select *Cloud* to connect to an SAP HANA Cloud instance. 
 
 
 
@@ -160,14 +144,30 @@ Description
 <tr>
 <td valign="top">
 
- *Port* 
+*Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the SQL port number of the remote SAP HANA server. 
+Enter the fully qualified host name or IP address on which the remote SAP HANA server is running. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Port* 
+
+
+
+</td>
+<td valign="top">
+
+Enter the SQL port number of the remote SAP HANA server. 
 
 You can find the SQL port in the list of service details in the SAP HANA Cockpit. For more information, see [Service Details](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/latest/en-US/1d4b4fe9ee8b448a9977bfcc1fc55248.html?q=SQL%20port) in the *SAP HANA Administration with SAP HANA Cockpit* documentation.
 
@@ -202,14 +202,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the database user name \(case sensitive\). 
+Enter the database user name \(case sensitive\). 
 
 
 
@@ -218,14 +218,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password* 
+*Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the password of the SAP HANA database user. 
+Enter the password of the SAP HANA database user. 
 
 
 
@@ -344,7 +344,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties. 
 
 
 
@@ -360,7 +360,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 </td>
 <td valign="top">
 
- *Replication Flows* are enabled without the need to set any additional connection properties. 
+*Replication Flows* are enabled without the need to set any additional connection properties. 
 
 
 
@@ -368,7 +368,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 </tr>
 </table>
 
- <a name="loio77cec6a1e8d04371a791658e641dc0d5"/>
+<a name="loio77cec6a1e8d04371a791658e641dc0d5"/>
 
 <!-- loio77cec6a1e8d04371a791658e641dc0d5 -->
 
@@ -401,30 +401,14 @@ Description
 <tr>
 <td valign="top">
 
- *Category* 
+*Category* 
 
 
 
 </td>
 <td valign="top">
 
- Select *On-Premise* to connect to SAP HANA \(on-premise\). 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Host* 
-
-
-
-</td>
-<td valign="top">
-
- Enter the fully qualified host name or IP address on which the remote SAP HANA server is running. 
+Select *On-Premise* to connect to SAP HANA \(on-premise\). 
 
 
 
@@ -433,14 +417,30 @@ Description
 <tr>
 <td valign="top">
 
- *Port* 
+*Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the SQL port number of the remote SAP HANA server. 
+Enter the fully qualified host name or IP address on which the remote SAP HANA server is running. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Port* 
+
+
+
+</td>
+<td valign="top">
+
+Enter the SQL port number of the remote SAP HANA server. 
 
 You can find the SQL port in the list of service details in the SAP HANA Cockpit. For more information, see [Service Details](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/latest/en-US/1d4b4fe9ee8b448a9977bfcc1fc55248.html?q=SQL%20port) in the *SAP HANA Administration with SAP HANA Cockpit* documentation.
 
@@ -475,7 +475,7 @@ Description
 <tr>
 <td valign="top">
 
- *Use Cloud Connector* 
+*Use Cloud Connector* 
 
 
 
@@ -497,14 +497,14 @@ The default is *false*.
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Location* 
+\[if *Use Cloud Connector* = *true*\] *Location* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select a location ID. 
+\[optional\] Select a location ID. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
@@ -516,14 +516,14 @@ The default is *false*.
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
@@ -534,14 +534,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration. 
 
 
 
@@ -550,14 +550,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 
 
@@ -590,14 +590,14 @@ Description
 <tr>
 <td valign="top">
 
- *Enable SSL encryption* 
+*Enable SSL encryption* 
 
 
 
 </td>
 <td valign="top">
 
- Select whether to enable SSL encryption on the connection to the remote SAP HANA database. The default value is *true*. 
+Select whether to enable SSL encryption on the connection to the remote SAP HANA database. The default value is *true*. 
 
 > ### Note:  
 > To use SSL encryption with a remote SAP HANA database connected via SAP HANA smart data integration, the Data Provisioning Agent must already be correctly configured for SSL support.
@@ -611,14 +611,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Enable SSL encryption* = *true*\] *Validate Server Certificate* 
+\[if *Enable SSL encryption* = *true*\] *Validate Server Certificate* 
 
 
 
 </td>
 <td valign="top">
 
- Select whether to validate the certificate of the remote SAP HANA server. The default value is *true*. 
+Select whether to validate the certificate of the remote SAP HANA server. The default value is *true*. 
 
 If set to *false*, the host name used for the connection is used for verification.
 
@@ -636,14 +636,14 @@ If set to *false*, the host name used for the connection is used for verificatio
 <tr>
 <td valign="top">
 
- \[if *Validate Server Certificate* = *true*\] *Host Name in Server Certificate* 
+\[if *Validate Server Certificate* = *true*\] *Host Name in Server Certificate* 
 
 
 
 </td>
 <td valign="top">
 
- Verify the host name field of the server certificate: 
+Verify the host name field of the server certificate: 
 
 -   If the string is “\*”, any name matches.
 -   If the string starts with “CN=”, it is treated as a common name, and the textual representation of the common name entry in the certificate must be exactly the same.
@@ -679,14 +679,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the database user name \(case sensitive\). 
+Enter the database user name \(case sensitive\). 
 
 
 
@@ -695,14 +695,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password* 
+*Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the password of the SAP HANA database user. 
+Enter the password of the SAP HANA database user. 
 
 
 
@@ -800,7 +800,7 @@ Select the midleware to use when connecting to and accessing the on-premise syst
 </td>
 <td valign="top">
 
- Select an agent from the list of agents configured for SAP Datasphere. 
+Select an agent from the list of agents configured for SAP Datasphere. 
 
 
 
@@ -816,7 +816,7 @@ Select the midleware to use when connecting to and accessing the on-premise syst
 </td>
 <td valign="top">
 
- Select how you want to access data from source objects: 
+Select how you want to access data from source objects: 
 
 -   Select *Remote Only* if you want to federate data from the source objects of the connection and access them remotely in the source system.
 
@@ -845,7 +845,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 </td>
 <td valign="top">
 
- *Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
+*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
 
 
 
@@ -861,7 +861,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 </td>
 <td valign="top">
 
- *Replication Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
+*Replication Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
 
 
 

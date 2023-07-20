@@ -46,30 +46,14 @@ A user with the *DW Administrator* role can create a database analysis user.
     <tr>
     <td valign="top">
     
-        Database Analysis User Name Suffix
+    Database Analysis User Name Suffix
 
 
     
     </td>
     <td valign="top">
     
-        Enter the suffix, which is used to create the full name of the user. Can contain a maximum of 31 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). See [Rules for Technical Names](../Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Enable Space Schema Access
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Select only if you need to grant the user access to space data.
+    Enter the suffix, which is used to create the full name of the user. Can contain a maximum of 31 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). See [Rules for Technical Names](../Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
 
 
     
@@ -78,14 +62,30 @@ A user with the *DW Administrator* role can create a database analysis user.
     <tr>
     <td valign="top">
     
-        Database analysis user expires in
+    Enable Space Schema Access
 
 
     
     </td>
     <td valign="top">
     
-        Select the number of days after which the user will be deactivated. We strongly recommend creating this user with an automatic expiration date.
+    Select only if you need to grant the user access to space data.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Database analysis user expires in
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the number of days after which the user will be deactivated. We strongly recommend creating this user with an automatic expiration date.
 
 
     
@@ -111,7 +111,7 @@ A user with the *DW Administrator* role can create a database analysis user.
 
 
     > ### Note:  
-    > All actions of the database analysis user are logged in the `ANALYSIS_AUDIT_LOG` view, which is stored in the space that has been assigned to store audit logs \(see [Enable or Disable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:\).
+    > All actions of the database analysis user are logged in the `ANALYSIS_AUDIT_LOG` view, which is stored in the space that has been assigned to store audit logs \(see [Enable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:\).
     > 
     > The audit logs entries are kept for 180 days, after which they are deleted.
 

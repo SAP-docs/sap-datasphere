@@ -16,7 +16,7 @@ An administrator can make sure that a support user is created in your tenant. Tw
 
     1.  In the shell bar, click <span class="SAP-icons"></span> \(*Support*\).
 
-    2.  In the *Support* dialog, click <span class="SAP-icons"></span>   *Create Support User* and then choose *OK* to confirm the support user creation.
+    2.  In the *Support* dialog, click <span class="SAP-icons"></span> *Create Support User* and then choose *OK* to confirm the support user creation.
 
         An email is automatically sent to SAP Support to notify them of the newly created support user, and it is listed with your other users at *Security* \> *Users*.
 

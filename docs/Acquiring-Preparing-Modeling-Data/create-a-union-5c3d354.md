@@ -57,14 +57,14 @@ Drag a source from the *Source Browser*, hover over a source or other node, and 
     <tr>
     <td valign="top">
     
-        Union All
+    Union All
 
 
     
     </td>
     <td valign="top">
     
-        Default option and fastest to create. It combines two or more `SELECT` statements or queries and includes all rows, including duplicates. Disabling this option applies *Union*.
+    Default option and fastest to create. It combines two or more `SELECT` statements or queries and includes all rows, including duplicates. Disabling this option applies *Union*.
 
 
     
@@ -73,14 +73,14 @@ Drag a source from the *Source Browser*, hover over a source or other node, and 
     <tr>
     <td valign="top">
     
-        Union
+    Union
 
 
     
     </td>
     <td valign="top">
     
-        It combines the result set of two or more `SELECT` statements or queries \(only distinct values\) and returns fewer rows. It takes longer to create it because it removes duplicate rows.
+    It combines the result set of two or more `SELECT` statements or queries \(only distinct values\) and returns fewer rows. It takes longer to create it because it removes duplicate rows.
 
 
     

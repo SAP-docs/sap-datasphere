@@ -43,7 +43,7 @@ The columns available for selection are a subset of all view output columns. Som
 
 You can either select on a column that suits your business case:
 
- ![](images/Select_Column_For_Partitioning_8ac6d94.png)
+![](images/Select_Column_For_Partitioning_8ac6d94.png)
 
 Or click *Suggested Partitioning Columns*. When selecting *Suggested Partitioning Columns*, the list of column candidates is restricted to the most suitable columns for partitioning. A technical analysis of your view definition is carried out to determine which columns are suitable. For example, calculated columns or columns with moving values \(such as last changed date\) are excluded as it might be difficult to do a reliable partitioning on such data:
 
@@ -95,7 +95,7 @@ In the example below, I defined 2 partitions as *Locked* \(partitions 2 and 3\):
 
 When I load a new snapshot, only partitions 1, 4 and OTHERS are refreshed:
 
- ![](images/Message_Locked_Partitions_Defined_6d6de8f.png)
+![](images/Message_Locked_Partitions_Defined_6d6de8f.png)
 
 > ### Note:  
 > If you change the partition definition, you can lock unchanged partitions to avoid unnecessary data loads. In the case of adding partitions, if you lock the unchanged partitions, only the new partitions will be loaded \(Locking new partitions is ineffective, as they need to be updated once after they are introduced. They will only be locked in the subsequent runs.\)
@@ -120,7 +120,7 @@ In some cases, you might want to refresh data for a single or for multiple parti
 > 
 > Only the selected partitions are updated:
 > 
->  ![](images/Selected_Partitions_Updated_3c25ff1.png)
+> ![](images/Selected_Partitions_Updated_3c25ff1.png)
 
 > ### Note:  
 > If you change the partition definition, then the next load will be a full load. No manual load will be possible, and the *Load Selected Partitions* button will be disabled.

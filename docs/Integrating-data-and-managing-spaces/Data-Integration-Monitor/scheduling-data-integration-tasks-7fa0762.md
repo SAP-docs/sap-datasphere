@@ -17,3 +17,6 @@ Using a dedicated dialog box, you can specify the frequency and time range of th
 > ### Note:  
 > Schedules are created in Coordinated Universel Time \(UTC\).
 
+> ### Note:  
+> If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time.
+

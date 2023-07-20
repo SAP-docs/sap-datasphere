@@ -20,7 +20,7 @@ See: [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/9f804
 
 ## Using the Connection
 
-The connection type supports the remote table feature.
+The connection type supports the remote table as well as the data flow feature.
 
 Supported data access methods for remote tables:
 
@@ -60,14 +60,30 @@ Description
 <tr>
 <td valign="top">
 
- *Project* 
+*Project* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the ID of the Google Cloud project to which you want to connect. You can find the project ID in the json key file that you need for the credentials. 
+Enter the ID of the Google Cloud project to which you want to connect. You can find the project ID in the json key file that you need for the credentials. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location* 
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Enter an additional location for browsing datasets. It can be a region or multi-region, for example `us-west1`, `asia-east1`, or `EU`. 
 
 
 
@@ -100,14 +116,14 @@ Description
 <tr>
 <td valign="top">
 
- *Key* 
+*Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the content of the json key file that is used for authentication.
+Upload the json key file that is used for authentication.
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
 
@@ -122,4 +138,6 @@ Choose <span class="SAP-icons"></span> \(Browse\) and select the file from yo
 ### Features
 
 *Remote Tables* are enabled without the need to set any additional connection properties.
+
+*Data Flows* are enabled without the need to set any additional connection properties.
 

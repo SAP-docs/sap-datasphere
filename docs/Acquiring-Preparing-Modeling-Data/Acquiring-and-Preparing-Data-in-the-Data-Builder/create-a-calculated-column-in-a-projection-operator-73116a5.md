@@ -35,30 +35,14 @@ Add a new column in a projection operator and define the expression that will fi
     <tr>
     <td valign="top">
     
-        string
+    string
 
 
     
     </td>
     <td valign="top">
     
-        \(Optional\) *Length*: Define the maximum number of characters that is allowed for the column.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        binary
-
-
-    
-    </td>
-    <td valign="top">
-    
-        \(Optional\) *Length*: Define the maximum number of characters that is allowed for the column.
+    \(Optional\) *Length*: Define the maximum number of characters that is allowed for the column.
 
 
     
@@ -67,14 +51,30 @@ Add a new column in a projection operator and define the expression that will fi
     <tr>
     <td valign="top">
     
-        decimal
+    binary
 
 
     
     </td>
     <td valign="top">
     
-        *Precision*: Define the maximum number of digits \(including Scale\) that is allowed for a value in the column.
+    \(Optional\) *Length*: Define the maximum number of characters that is allowed for the column.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    decimal
+
+
+    
+    </td>
+    <td valign="top">
+    
+    *Precision*: Define the maximum number of digits \(including Scale\) that is allowed for a value in the column.
 
     *Scale*: Define the maximum number of digits that is allowed after the decimal point for a value in the column.
 

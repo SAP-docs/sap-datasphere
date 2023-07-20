@@ -80,7 +80,7 @@ agent.name=*<Agent Name\>*
 </td>
 <td valign="top">
 
- *Agent Name* \(the name defined by the user who registered the agent in SAP Datasphere; the name is case sensitive\)
+*Agent Name* \(the name defined by the user who registered the agent in SAP Datasphere; the name is case sensitive\)
 
 
 
@@ -96,7 +96,7 @@ hana.port=*<HANA Port\>*
 </td>
 <td valign="top">
 
- *HANA Port* 
+*HANA Port* 
 
 
 
@@ -128,7 +128,7 @@ hana.useSSL=true
 </td>
 <td valign="top">
 
- *HANA Use SSL* 
+*HANA Use SSL* 
 
 
 
@@ -144,7 +144,7 @@ hana.server=*<HANA Server\>*
 </td>
 <td valign="top">
 
- *HANA Server* 
+*HANA Server* 
 
 
 
@@ -160,7 +160,7 @@ jdbc.enabled=true
 </td>
 <td valign="top">
 
- *HANA via JDBC* 
+*HANA via JDBC* 
 
 
 
@@ -176,7 +176,7 @@ jdbc.host=*<HANA Server\>*
 </td>
 <td valign="top">
 
- *HANA Server* 
+*HANA Server* 
 
 
 
@@ -192,7 +192,7 @@ jdbc.port=*<HANA Port\>*
 </td>
 <td valign="top">
 
- *HANA Port* 
+*HANA Port* 
 
 
 

@@ -1,6 +1,6 @@
 <!-- loio266553976e1c4db9aaa28a75e2308b77 -->
 
-# Enable or Disable Audit Logging
+# Enable Audit Logging
 
 You can enable audit logs for your space so that read and change actions \(policies\) are recorded. Administrators can then analyze who did what and when in the database.
 

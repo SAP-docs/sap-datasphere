@@ -133,14 +133,14 @@ Select *Application Server* to connect to a single application server, or select
 <tr>
 <td valign="top">
 
- \[if *SAP Logon Connection Type* = *Application Server*\] *Application Server* 
+\[if *SAP Logon Connection Type* = *Application Server*\] *Application Server* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the application server to which you want to connect to. 
+Enter the name of the application server to which you want to connect to. 
 
 
 
@@ -149,14 +149,14 @@ Select *Application Server* to connect to a single application server, or select
 <tr>
 <td valign="top">
 
- \[if *SAP Logon Connection Type* = *Application Server*\] *System Number* 
+\[if *SAP Logon Connection Type* = *Application Server*\] *System Number* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the SAP ABAP system instance number. 
+Enter the SAP ABAP system instance number. 
 
 
 
@@ -252,7 +252,7 @@ Enter the system ID.
 </td>
 <td valign="top">
 
- Enter the two-digit ISO language code, EN for English or DE for German, for example. In the Data Builder, object and field descriptions are then shown in the specified language. If not set, the application uses the default logon language of the ABAP system for data flows, and EN is used for remote tables and views. 
+Enter the two-digit ISO language code, EN for English or DE for German, for example. In the Data Builder, object and field descriptions are then shown in the specified language. If not set, the application uses the default logon language of the ABAP system for data flows, and EN is used for remote tables and views. 
 
 
 
@@ -285,14 +285,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use Cloud Connector* 
+*Use Cloud Connector* 
 
 
 
 </td>
 <td valign="top">
 
- Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
 
 
 
@@ -301,14 +301,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Location* 
+\[if *Use Cloud Connector* = *true*\] *Location* 
 
 
 
 </td>
 <td valign="top">
 
- Select a location. 
+Select a location. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
@@ -320,14 +320,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
 
 
 </td>
 <td valign="top">
 
- Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
@@ -341,14 +341,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration. 
 
 
 
@@ -357,14 +357,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 
 
@@ -397,14 +397,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name* 
+*User Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the user name that is used to connect to the SAP ABAP system. 
+Enter the user name that is used to connect to the SAP ABAP system. 
 
 
 
@@ -413,14 +413,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password* 
+*Password* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the user password. 
+Enter the user password. 
 
 
 
@@ -455,30 +455,14 @@ Description
 <tr>
 <td valign="top">
 
- *Data Provisioning Agent* 
+*Data Provisioning Agent* 
 
 
 
 </td>
 <td valign="top">
 
- Select an agent if you want to use the connection to access data via imported remote tables and to build views. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- \[if you selected an agent\] *Streaming Read* 
-
-
-
-</td>
-<td valign="top">
-
- Set to *On* if you want to use ABAP RFC streaming for loading tables based on small batches. Set to *Off* to use non-RFC streaming. The default is *Off*. 
+Select an agent if you want to use the connection to access data via imported remote tables and to build views. 
 
 
 
@@ -487,30 +471,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Streaming Read* = *On*\] *Gateway Host* 
+\[if you selected an agent\] *Streaming Read* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the gateway host where the ABAP adapter would register an RFC server instance to receive callbacks with the table data batches. Usually, the gateway host is the same as the target ABAP system host. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- \[if *Streaming Read* = *On*\] *Gateway Port* 
-
-
-
-</td>
-<td valign="top">
-
- Enter the port number of the gateway server where the ABAP adapter would register an RFC server instance to receive callbacks with the table data batches. You can find the port number for <code>sapgw<i class="varname">&lt;ABAP_instance_number&gt;</i></code> in file `/etc/services` on the ABAP host. The default port number is <code>33<i class="varname">&lt;ABAP_instance_number&gt;</i></code>. If you have a file `/etc/services` with this mapping on the Data Provisioning Agent’s host, you can also enter <code>sapgw<i class="varname">&lt;ABAP_instance_number&gt;</i></code> instead of the port number.
+Set to *On* if you want to use ABAP RFC streaming for loading tables based on small batches. Set to *Off* to use non-RFC streaming. The default is *Off*. 
 
 
 
@@ -519,14 +487,46 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Streaming* = *On*\] *RFC Destination* 
+\[if *Streaming Read* = *On*\] *Gateway Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
+Enter the gateway host where the ABAP adapter would register an RFC server instance to receive callbacks with the table data batches. Usually, the gateway host is the same as the target ABAP system host. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Streaming Read* = *On*\] *Gateway Port* 
+
+
+
+</td>
+<td valign="top">
+
+Enter the port number of the gateway server where the ABAP adapter would register an RFC server instance to receive callbacks with the table data batches. You can find the port number for <code>sapgw<i class="varname">&lt;ABAP_instance_number&gt;</i></code> in file `/etc/services` on the ABAP host. The default port number is <code>33<i class="varname">&lt;ABAP_instance_number&gt;</i></code>. If you have a file `/etc/services` with this mapping on the Data Provisioning Agent’s host, you can also enter <code>sapgw<i class="varname">&lt;ABAP_instance_number&gt;</i></code> instead of the port number.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Streaming* = *On*\] *RFC Destination* 
+
+
+
+</td>
+<td valign="top">
+
+Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
 
 
 

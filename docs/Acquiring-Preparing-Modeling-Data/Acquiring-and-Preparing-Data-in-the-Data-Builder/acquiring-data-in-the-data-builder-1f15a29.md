@@ -16,7 +16,7 @@ This topic contains the following sections:
 -   [Create and Import Objects to Receive and Prepare Data](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_create_tables)
 -   [Create Objects and Act On Existing Objects](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_tools)
 
-Space administrators and integrators prepare connections and other sources to allow modelers to acquire data \(see [Integrating Data and Managing Spaces in SAP Datasphere](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f98d3c917f94452bafe288055b60b35.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and use other methods to bring data into their space. They can schedule and monitor data replication and other data integration tasks. Space administrators are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:\).
+Space administrators and integrators prepare connections and other sources to allow modelers to acquire data \(see [Integrating Data and Managing Spaces in SAP Datasphere](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f98d3c917f94452bafe288055b60b35.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:\).
 
 
 
@@ -149,14 +149,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        New
+    New
 
 
     
     </td>
     <td valign="top">
     
-        Create *Data Builder* objects \(independent of any selection\).
+    Create *Data Builder* objects \(independent of any selection\).
 
 
     
@@ -165,14 +165,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Import
+    Import
 
 
     
     </td>
     <td valign="top">
     
-        Import objects from files and connections:
+    Import objects from files and connections:
 
     -   *Import CSV File* - Import data from a CSV file to create a local table \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md)
     -   *Import Objects from CSN/JSON File* - Import table and view definitions from a CSN file to create tables and views or import data flow definitions from a JSON file to create data flows. \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
@@ -185,14 +185,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Edit
+    Edit
 
 
     
     </td>
     <td valign="top">
     
-        Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
+    Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
 
 
     
@@ -201,14 +201,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Deploy
+    Deploy
 
 
     
     </td>
     <td valign="top">
     
-        Select one or more objects and deploy them at once.
+    Select one or more objects and deploy them at once.
 
     Choose from the following entity types:
 
@@ -230,30 +230,14 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Share
+    Share
 
 
     
     </td>
     <td valign="top">
     
-        Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Impact and Lineage Analysis
-
-
-    
-    </td>
-    <td valign="top">
-    
-        View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+    Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
 
 
     
@@ -262,14 +246,30 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <tr>
     <td valign="top">
     
-        Delete
+    Impact and Lineage Analysis
 
 
     
     </td>
     <td valign="top">
     
-        Delete the selected objects.
+    View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delete
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Delete the selected objects.
 
     > ### Note:  
     > If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.

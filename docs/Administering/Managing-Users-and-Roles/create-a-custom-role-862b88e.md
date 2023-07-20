@@ -4,7 +4,7 @@
 
 # Create a Custom Role
 
-You can create a new custom role either by customizing a predefined role or by creating a role from a blank template.
+You can create a new custom role either by customizing a predefined role or by creating a role from a blank template. 
 
 
 
@@ -12,14 +12,7 @@ You can create a new custom role either by customizing a predefined role or by c
 
 ## Prerequisites
 
-To create custom roles and assign them to users, you need the DW Administrator role.
-
-
-
-## Context
-
-> ### Note:  
-> In this procedure, we use the *Roles* page to assign roles to users, but you can also assign roles on the *Users* page. Whether you create users first or roles first does not matter.
+To create a custom role, you need the DW Administrator role.
 
 
 
@@ -27,7 +20,7 @@ To create custom roles and assign them to users, you need the DW Administrator r
 
 1.  Go to <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Roles*\).
 
-2.  To create a custom role, click <span class="FPA-icons"></span> \(Add Role\).
+2.  To create a custom role, click <span class="FPA-icons"></span> \(Add Role\) and select *Create a Custom Role*.
 
 3.  Enter a unique name for the role and select the license type SAP Datasphere.
 
@@ -52,5 +45,8 @@ To create custom roles and assign them to users, you need the DW Administrator r
 
     > ### Note:  
     > You can't delete or save changes to the predefined standard roles.
+
+    > ### Note:  
+    > In this procedure, we use the *Roles* page to assign roles to users, but you can also assign roles on the *Users* page. Whether you create users first or roles first does not matter.
 
 

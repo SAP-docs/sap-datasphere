@@ -4,12 +4,13 @@
 
 # Integrating Data and Managing Spaces in SAP Datasphere
 
-Users with the *DW Space Administrator* or *DW Integrator* role can create connections to source systems and databases and use other methods to bring data into their space. They can schedule and monitor data replication and other data integration tasks. Space administrators are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.
+Users with the *DW Space Administrator* or *DW Integrator* role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.
 
 This topic contains the following sections:
 
 -   [Prepare and Manage Your Space](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_prepare_space)
--   [Integrate Data Sources](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_sources)
+-   [Create Connections to Source Systems](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_sources)
+-   [Integrate Other Data Sources](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_other)
 -   [Prepare Row-Level Security for Data](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_dacs)
 -   [Manage and Monitor Data Integration Tasks](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_monitor)
 
@@ -48,11 +49,18 @@ An administrator will assign you the DW Space Administrator role, create your sp
 
 <a name="loio8f98d3c917f94452bafe288055b60b35__section_integrate_sources"/>
 
-## Integrate Data Sources
+## Create Connections to Source Systems
 
-Space administrators and integrators create connections and other data sources in the space:
+Space administrators and integrators can create connections to source systems to allow space members to acquire data from those systems \(see [Integrating Data via Connections](Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md)\).
 
--   Create connections to source systems to allow space members to acquire data from those systems \(see [Integrating Data via Connections](Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md)\).
+
+
+<a name="loio8f98d3c917f94452bafe288055b60b35__section_integrate_other"/>
+
+## Integrate Other Data Sources
+
+Space administrators can integrate data from other sources:
+
 -   Create database users to allow external tools to connect to the space and write data to Open SQL schemas associated with the space \(see [Integrating Data via Database Users/Open SQL Schemas](Integrating-Data-Via-Database-Users/Open-SQL-Schema/integrating-data-via-database-users-open-sql-schemas-3de55a7.md)\).
 -   If your space has access to the SAP HANA Cloud, data lake, you can access it via an Open SQL schema \(see [Integrating Data to and From SAP HANA Cloud Data Lake](Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md)\).
 

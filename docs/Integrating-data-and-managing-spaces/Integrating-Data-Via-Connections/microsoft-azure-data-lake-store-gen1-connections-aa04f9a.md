@@ -41,30 +41,14 @@ Description
 <tr>
 <td valign="top">
 
- *Storage Account Name* 
+*Storage Account Name* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the Azure Data Lake Storage Gen1 account. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Tenant ID*  
-
-
-
-</td>
-<td valign="top">
-
- Enter the ID of the Azure Data Lake Storage Gen1 tenant. 
+Enter the name of the Azure Data Lake Storage Gen1 account. 
 
 
 
@@ -73,14 +57,30 @@ Description
 <tr>
 <td valign="top">
 
- *Root Path*  
+*Tenant ID*  
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. 
+Enter the ID of the Azure Data Lake Storage Gen1 tenant. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Root Path*  
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. 
 
 
 
@@ -113,14 +113,14 @@ Description
 <tr>
 <td valign="top">
 
- *Client ID*  
+*Client ID*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the client ID. 
+Enter the client ID. 
 
 
 
@@ -129,14 +129,14 @@ Description
 <tr>
 <td valign="top">
 
- *Client Key*  
+*Client Key*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the client key \(also referred to as client secret or authentication key\). 
+Enter the client key \(also referred to as client secret or authentication key\). 
 
 
 

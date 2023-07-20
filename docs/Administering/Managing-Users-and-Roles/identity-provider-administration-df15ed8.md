@@ -36,7 +36,7 @@ The Identity Provider Administration tool allows system owners to manage the cus
     <tr>
     <td valign="top">
     
-        https://console-eudp.eu1.sapanalytics.cloud/idp-admin/
+    https://console-eudp.eu1.sapanalytics.cloud/idp-admin/
 
 
     
@@ -45,7 +45,7 @@ The Identity Provider Administration tool allows system owners to manage the cus
     <tr>
     <td valign="top">
     
-        https://console-eudp.eu2.sapanalytics.cloud/idp-admin/
+    https://console-eudp.eu2.sapanalytics.cloud/idp-admin/
 
 
     

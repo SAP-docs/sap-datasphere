@@ -43,30 +43,14 @@ Description
 <tr>
 <td valign="top">
 
- *Protocol* 
+*Protocol* 
 
 
 
 </td>
 <td valign="top">
 
- Select the protocol \(wasb for unencrypted access or wasbs for TLS-encrypted access\). The default is wasbs. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Account Name* 
-
-
-
-</td>
-<td valign="top">
-
- Enter the name of the Microsoft Azure storage account through which Microsoft Azure Blob Storage is provisioned. 
+Select the protocol \(wasb for unencrypted access or wasbs for TLS-encrypted access\). The default is wasbs. 
 
 
 
@@ -75,14 +59,30 @@ Description
 <tr>
 <td valign="top">
 
- *Root Path* 
+*Account Name* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
+Enter the name of the Microsoft Azure storage account through which Microsoft Azure Blob Storage is provisioned. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Root Path* 
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
 
 If you have entered root path, then any path used with this connection is prefixed with the root path.
 
@@ -93,14 +93,14 @@ If you have entered root path, then any path used with this connection is prefix
 <tr>
 <td valign="top">
 
- *Endpoint Suffix* 
+*Endpoint Suffix* 
 
 
 
 </td>
 <td valign="top">
 
- Displays the default value for the endpoint suffix which is "core.windows.net". You can override the default value according to the domain assigned to the endpoint of your blob service. 
+Displays the default value for the endpoint suffix which is "core.windows.net". You can override the default value according to the domain assigned to the endpoint of your blob service. 
 
 
 
@@ -133,14 +133,14 @@ Description
 <tr>
 <td valign="top">
 
- *Account Key* 
+*Account Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the storage account access key \(shared key authorization\). 
+Enter the storage account access key \(shared key authorization\). 
 
 
 

@@ -53,30 +53,14 @@ Your object's status may be updated when changes to one or more of its sources a
     <tr>
     <td valign="top">
     
-        Add Column
+    Add Column
 
 
     
     </td>
     <td valign="top">
     
-        Adding columns to the permissions entity has no impact on the data access control.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Change Business Name
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Modifying the business name of the permissions entity or any of its columns has no impact on the data access control
+    Adding columns to the permissions entity has no impact on the data access control.
 
 
     
@@ -85,14 +69,14 @@ Your object's status may be updated when changes to one or more of its sources a
     <tr>
     <td valign="top">
     
-        Change Column Data Type
+    Change Business Name
 
 
     
     </td>
     <td valign="top">
     
-        Source column data type changes are not allowed for columns that are used by a data access control.
+    Modifying the business name of the permissions entity or any of its columns has no impact on the data access control
 
 
     
@@ -101,14 +85,30 @@ Your object's status may be updated when changes to one or more of its sources a
     <tr>
     <td valign="top">
     
-        Delete Column
+    Change Column Data Type
 
 
     
     </td>
     <td valign="top">
     
-        Deleting columns from the permissions entity generates errors in dependent data access controls if the columns are used:
+    Source column data type changes are not allowed for columns that are used by a data access control.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delete Column
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Deleting columns from the permissions entity generates errors in dependent data access controls if the columns are used:
 
     -   If the column was selected as the *Identifier Column*, an error message is displayed. You must specify a new column in this field.
     -   If the column was selected as a column in the *Criteria* list, an error message is displayed. You must remove this column from the *Criteria* list.

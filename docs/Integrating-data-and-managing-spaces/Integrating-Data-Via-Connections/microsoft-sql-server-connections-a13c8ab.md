@@ -160,14 +160,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use Cloud Connector* 
+*Use Cloud Connector* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
 
 
 
@@ -176,14 +176,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Location* 
+\[if *Use Cloud Connector* = *true*\] *Location* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select a location ID. 
+\[optional\] Select a location ID. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
@@ -195,14 +195,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
@@ -213,14 +213,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration. 
 
 
 
@@ -229,14 +229,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 
 
@@ -269,14 +269,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use SSL*  
+*Use SSL*  
 
 
 
 </td>
 <td valign="top">
 
- Select whether you’re using SSL. The default value is *true*. 
+Select whether you’re using SSL. The default value is *true*. 
 
 
 
@@ -285,14 +285,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use SSL* = *true*\] *Host Name in Certificate*  
+\[if *Use SSL* = *true*\] *Host Name in Certificate*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the host name that is in the SSL certificate. 
+Enter the host name that is in the SSL certificate. 
 
 
 
@@ -325,14 +325,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the Microsoft SQL Server user name. 
+Enter the Microsoft SQL Server user name. 
 
 
 
@@ -341,14 +341,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password*  
+*Password*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the Microsoft SQL Server user password. 
+Enter the Microsoft SQL Server user password. 
 
 
 

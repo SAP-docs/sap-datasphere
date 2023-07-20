@@ -31,11 +31,8 @@ You need to link a text dependent dimension to a text entity thanks to a text as
     > ### Note:  
     > You can also create a *Text Association* by going to the dimension's *Associations* section and clicking :arrow_right: \> *Text Association*.
 
-4.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:
+4.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
 
-    -   *Save* to save your object.
-    -   *Save As* to create a local a copy of the object you're working on. The object must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
-
-    Click <span class="SAP-icons"></span> \(Deploy\) to deploy your entity.
+    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
 

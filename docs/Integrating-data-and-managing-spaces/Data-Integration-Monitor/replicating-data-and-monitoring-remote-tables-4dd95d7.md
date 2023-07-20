@@ -158,14 +158,14 @@ Information
 <tr>
 <td valign="top">
 
- *Connection* 
+*Connection* 
 
 
 
 </td>
 <td valign="top">
 
- Displays the name of the connection the remote table belongs to. 
+Displays the name of the connection the remote table belongs to. 
 
 
 
@@ -174,7 +174,7 @@ Information
 <tr>
 <td valign="top">
 
- *Table* 
+*Table* 
 
 
 
@@ -190,7 +190,7 @@ Displays the name of the remote table.
 <tr>
 <td valign="top">
 
- *Data Access* 
+*Data Access* 
 
 
 
@@ -214,7 +214,7 @@ Displays how data is currently accessed.
 <tr>
 <td valign="top">
 
- *Refresh Frequency* 
+*Refresh Frequency* 
 
 
 
@@ -235,7 +235,7 @@ Displays how often data is replicated. The value here shows the intended frequen
 <tr>
 <td valign="top">
 
- *Status* 
+*Status* 
 
 
 
@@ -270,14 +270,14 @@ Displays the current status of the remote table:
 <tr>
 <td valign="top">
 
- *Latest Update* 
+*Latest Update* 
 
 
 
 </td>
 <td valign="top">
 
- Displays when the data was last successfully updated in SAP Datasphere. 
+Displays when the data was last successfully updated in SAP Datasphere. 
 
 
 
@@ -286,7 +286,7 @@ Displays the current status of the remote table:
 <tr>
 <td valign="top">
 
- *Latest Change \(Source\)* 
+*Latest Change \(Source\)* 
 
 
 
@@ -305,7 +305,7 @@ Displays the current status of the remote table:
 <tr>
 <td valign="top">
 
- *Number of Records* 
+*Number of Records* 
 
 
 
@@ -321,7 +321,7 @@ Displays the number of records replicated into SAP Datasphere. You can then comp
 <tr>
 <td valign="top">
 
- *New Run* 
+*New Run* 
 
 
 
@@ -337,7 +337,7 @@ Displays the next scheduled run \(if a schedule is set for the remote table\).
 <tr>
 <td valign="top">
 
- *Used In-Memory \(MiB\)* 
+*Used In-Memory \(MiB\)* 
 
 
 
@@ -353,7 +353,7 @@ Displays the size occupied by the remote table data in memory.
 <tr>
 <td valign="top">
 
- *Used Disk \(MiB\)* 
+*Used Disk \(MiB\)* 
 
 
 
@@ -397,7 +397,7 @@ Description
 <tr>
 <td valign="top">
 
- *Load New Snapshot* 
+*Load New Snapshot* 
 
 
 
@@ -405,6 +405,9 @@ Description
 <td valign="top">
 
 Directly start a copy of the full set of data from the source in the background.
+
+> ### Note:  
+> If you load a new snapshot on a remote table whose data access is Replicated \(Real-time\), you’ll remove the real-time replication for this table. Your data will no longer be updated in real-time and you’ll have to load new snapshots or create a schedule to get your data updated.
 
 For more information, see [Replicate Full Set of Data](replicate-full-set-of-data-35632cd.md).
 
@@ -415,7 +418,7 @@ For more information, see [Replicate Full Set of Data](replicate-full-set-of-dat
 <tr>
 <td valign="top">
 
- *Remove Replicated Data* 
+*Remove Replicated Data* 
 
 
 
@@ -424,6 +427,14 @@ For more information, see [Replicate Full Set of Data](replicate-full-set-of-dat
 
 Stop replication and delete data from replica table.
 
+> ### Note:  
+> If you need to remove the replicated data for a remote table whose data access is *Replicated \(Real-time\)*, you must ensure that the following requirements are met to allow a proper deletion:
+> 
+> -   The data provisioning agent is not disconnected.
+> -   The real-time replication is not paused at connection level and is working properly.
+> 
+> If one of the requirement is not met, some objects won't be deleted and you'll have to delete them manually. See [3307334](https://launchpad.support.sap.com/#/notes/3307334) for more information.
+
 
 
 </td>
@@ -431,7 +442,7 @@ Stop replication and delete data from replica table.
 <tr>
 <td valign="top">
 
- *Enable Real-Time Access* 
+*Enable Real-Time Access* 
 
 
 
@@ -439,6 +450,9 @@ Stop replication and delete data from replica table.
 <td valign="top">
 
 Start replication of data changes in the source in real-time.
+
+> ### Note:  
+> When enabling the replication in real-time, the data is updated in real-time. You don’t need to load a new snapshot or to create a schedule to update your data.
 
 For more information, see [Replicate Data Changes in Real-Time](replicate-data-changes-in-real-time-441d327.md).
 
@@ -449,7 +463,7 @@ For more information, see [Replicate Data Changes in Real-Time](replicate-data-c
 <tr>
 <td valign="top">
 
- *Go to Connections List* 
+*Go to Connections List* 
 
 
 
@@ -465,7 +479,7 @@ Switch to the list of connections in space management.
 <tr>
 <td valign="top">
 
- *Create Snapshot Schedule* 
+*Create Snapshot Schedule* 
 
 
 
@@ -473,6 +487,9 @@ Switch to the list of connections in space management.
 <td valign="top">
 
 Create a schedule to run snapshot replication in the background according to the settings defined in the schedule.
+
+> ### Note:  
+> If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time
 
 For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
@@ -483,7 +500,7 @@ For more information, see [Scheduling Data Integration Tasks](scheduling-data-in
 <tr>
 <td valign="top">
 
- *Edit Schedule* 
+*Edit Schedule* 
 
 
 
@@ -501,7 +518,7 @@ For more information, see [Take Over the Ownership of a Schedule](take-over-the-
 <tr>
 <td valign="top">
 
- *Delete Schedule* 
+*Delete Schedule* 
 
 
 
@@ -515,6 +532,8 @@ Delete the schedule if required.
 </td>
 </tr>
 </table>
+
+
 
 
 
@@ -749,6 +768,10 @@ If you need to cancel a running snapshot replication or an initialization task \
 
 1.  From the *Remote Table Monitor*, Click <span class="FPA-icons"></span> of the remote table you need to cancel the run.
 2.  Click *Cancel Run*.
+
+    > ### Note:  
+    > A replication task consists of several steps that include exchanges with SAP HANA. Therefore, you might get different status while clicking *Cancel Run*, depending where you are in the processing steps.
+
 
 As a consequence, the replication status of your remote table turns into *failed*, and a cancel replication task starts.
 

@@ -48,7 +48,7 @@ In SAP Datasphere, You have created a connection of type *SAP BW/4HANA Model Tra
 4.  Use the *Create Business Builder Objects* setting to control which objects to create:
     -   *Business Entities and Consumption Models* \[default\] - Create all possible *Data Builder* and *Business Builder* objects.
     -   *Business Entities Only* - Create *Data Builder* objects and *Business Builder* business entities.
-    -   *None* - Create only *Data Builder* objects. Queries are imported as SAP Datasphere analytic models, which can be consumed directly in SAP Analytics Cloud.
+    -   *None* - Create only *Data Builder* objects. Queries are imported as SAP Datasphere analytic models, which can be consumed directly in SAP Analytics Cloud. The analytic model inherits all the properties of the analytic query, like associations, global filter, restricted and calculated measure etc..
 
 5.  Select the analytic query that you would like to transfer. In the pane on the right, you will see the list of objects which will be generated in the *Business Builder* and in the *Data Builder*. The *Import Status* tells you if the objects already exist and will be overwritten or if they are new.
 

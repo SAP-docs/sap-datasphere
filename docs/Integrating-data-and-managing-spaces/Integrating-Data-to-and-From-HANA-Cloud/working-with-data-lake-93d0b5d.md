@@ -51,6 +51,8 @@ You can then work with your virtual tables in the *Data Builder* by selecting th
 
 
 
+## Example
+
 Creating a table in data lake:
 
 ```

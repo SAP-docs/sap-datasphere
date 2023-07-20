@@ -39,30 +39,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Business Name
+    Business Name
 
 
     
     </td>
     <td valign="top">
     
-        Enter a name for your rule to identify it in the diagram.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-        Match Strategy
-
-
-    
-    </td>
-    <td valign="top">
-    
-        Choose *Fuzzy Match* to display the *Match Thresholds* section.
+    Enter a name for your rule to identify it in the diagram.
 
 
     
@@ -71,14 +55,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Input Scope
+    Match Strategy
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Specifies which input records are processed by the rule.
+    Choose *Fuzzy Match* to display the *Match Thresholds* section.
 
 
     
@@ -87,14 +71,30 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Lookup Scope
+    Input Scope
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Specifies which lookup records are available for matching by the rule.
+    \[read-only\] Specifies which input records are processed by the rule.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Lookup Scope
+
+
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Specifies which lookup records are available for matching by the rule.
 
 
     
@@ -125,14 +125,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Matched Records Score
+    Matched Records Score
 
 
     
     </td>
     <td valign="top">
     
-        Set the minimum score needed to match an input record with a lookup record and place it in the *Matched* results category. 
+    Set the minimum score needed to match an input record with a lookup record and place it in the *Matched* results category. 
 
     If an input record is matched to more than one lookup records with a score reaching this threshold, it is placed in the *Multiple* results category.
 
@@ -145,14 +145,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Review Records Score
+    Review Records Score
 
 
     
     </td>
     <td valign="top">
     
-        Set the minimum score needed to match an input record with a lookup record and place it in the *Review* results category. 
+    Set the minimum score needed to match an input record with a lookup record and place it in the *Review* results category. 
 
     If an input record is matched to more than one lookup records with a score between this threshold and the *Matched Records Score*, it is placed in the *Multiple* results category.
 
@@ -165,14 +165,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Unmatched Records Score
+    Unmatched Records Score
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Displays the score beneath which an input record cannot be matched. 
+    \[read-only\] Displays the score beneath which an input record cannot be matched. 
 
     If an input record is not matched to any lookup record with a score above this threshold, then it is placed in the *Unmatched* results category.
 
@@ -207,14 +207,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        ![](images/Fuzzy_Match_-_One_to_One_d815e18.png)
+    ![](images/Fuzzy_Match_-_One_to_One_d815e18.png)
 
 
     
     </td>
     <td valign="top">
     
-        An input record is matched with a lookup record if:
+    An input record is matched with a lookup record if:
 
     -   The value in the input `Last Name` column,
     -   Matches the value in the lookup `Last Name` column,
@@ -227,14 +227,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        ![](images/Fuzzy_Match_-_Two_to_Two_c50db4d.png)
+    ![](images/Fuzzy_Match_-_Two_to_Two_c50db4d.png)
 
 
     
     </td>
     <td valign="top">
     
-        An input record is matched with a lookup record if the:
+    An input record is matched with a lookup record if the:
 
     -   The value obtained by concatenating the input `First Name` and `Last Name` columns,
     -   Matches the value obtained by concatenating the lookup `First Name` and `Last Name` columns,
@@ -247,14 +247,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        ![](images/Fuzzy_Match_-_One_to_Two_1edd1ed.png)
+    ![](images/Fuzzy_Match_-_One_to_Two_1edd1ed.png)
 
 
     
     </td>
     <td valign="top">
     
-        An input record is matched with a lookup record if:
+    An input record is matched with a lookup record if:
 
     -   The value in the input `Full Name` column,
     -   Matches the value obtained by concatenating the lookup `First Name` and `Last Name` columns,
@@ -289,14 +289,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <tr>
     <td valign="top">
     
-        Multiple Match Processing
+    Multiple Match Processing
 
 
     
     </td>
     <td valign="top">
     
-        Enables auto-selection among multiple matches when one match candidate scores conclusively higher than any other. 
+    Enables auto-selection among multiple matches when one match candidate scores conclusively higher than any other. 
 
     The following settings are available:
 

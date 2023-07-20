@@ -112,5 +112,5 @@ Statistics are created for each column of the table and can only be created if t
 
 You can update data statistics objects: when you choose the menu *Create Statistics* on a remote table for which data statistics are already available, the windows *Create Statistics* opens, and the existing type of statistics line is marked as active. You can then choose to create another type of statistics or update the existing ones.
 
-You can delete the data statistics object with the menu *Delete Statistics*.
+You can delete the data statistics objects with the menu *Delete Statistics*.
 

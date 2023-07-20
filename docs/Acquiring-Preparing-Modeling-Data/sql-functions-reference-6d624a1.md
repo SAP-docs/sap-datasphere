@@ -16,10 +16,8 @@ This topic contains the following sections:
 -   [Numeric Functions](sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_numeric_functions)
 -   [Security Functions](sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_security_functions)
 -   [String Functions](sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_string_functions)
+-   [Window Functions](sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_window_functions)
 -   [Example: Converting Currency Values with CONVERT\_CURRENCY](sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_example_currency)
-
-> ### Note:  
-> SAP Datasphere does not support SAP HANA Cloud "window functions" \(see [Window Functions and the Window Specification](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20a353327519101495dfd0a87060a0d3.html)\).
 
 
 
@@ -249,6 +247,54 @@ SAP Datasphere supports the following string functions, which perform extraction
 -   `XMLTABLE`
 
 For detailed documentation, see [String Functions](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20a24d4b75191014afc5ac3b997d3ce2.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
+
+
+
+<a name="loio6d624a1956234d818d0bfdc77cbd0e09__section_window_functions"/>
+
+## Window Functions
+
+SAP Datasphere supports the following window and window aggregation functions, which allow you to perform analytic operations over a set of input rows:
+
+-   `AVG`
+-   `BINNING`
+-   `CORR`
+-   `CORR_SPEARMAN`
+-   `COUNT`
+-   `CUBIC_SPLINE_APPROX`
+-   `CUME_DIST`
+-   `DENSE_RANK`
+-   `FIRST_VALUE`
+-   `LAG`
+-   `LAST_VALUE`
+-   `LEAD`
+-   `LINEAR_APPROX`
+-   `MAX`
+-   `MEDIAN`
+-   `MIN`
+-   `NTH_VALUE`
+-   `NTILE`
+-   `PERCENT_RANK`
+-   `RANDOM_PARTITION`
+-   `RANK`
+-   `ROW_NUMBER`
+-   `SERIES_FILTER`
+-   `STDDEV`
+-   `SUM`
+-   `VAR`
+-   `WEIGHTED_AVG`
+
+> ### Note:  
+> In the graphical view editor, window functions can only be used in a *Calculated Columns* node \(and not in *Filter* or *Aggregation* nodes\).
+> 
+> The following types of functions and syntaxes are not supported in SAP Datasphere views:
+> 
+> -   Inverse distribution functions
+> -   `COLLATE`
+> -   `SERIES`
+> -   `WITHIN GROUP`
+
+For detailed documentation of these functions, see [Window Functions and the Window Specification](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20a353327519101495dfd0a87060a0d3.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
 
 

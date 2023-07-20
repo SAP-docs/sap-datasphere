@@ -43,14 +43,14 @@ Description
 <tr>
 <td valign="top">
 
- *Storage Account Name*  
+*Storage Account Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the name of the Azure Data Lake Storage Gen2 used for authentication. 
+Enter the name of the Azure Data Lake Storage Gen2 used for authentication. 
 
 
 
@@ -59,14 +59,14 @@ Description
 <tr>
 <td valign="top">
 
- *Root Path*  
+*Root Path*  
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. Any path used with this connection will be prefixed with this root path. 
+\[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. Any path used with this connection will be prefixed with this root path. 
 
 
 
@@ -99,14 +99,14 @@ Description
 <tr>
 <td valign="top">
 
- *Authentication Type*  
+*Authentication Type*  
 
 
 
 </td>
 <td valign="top">
 
- Select the authentication type to be used: *Shared Key* \(default\) or *Shared Access Signature*. 
+Select the authentication type to be used: *Shared Key* \(default\) or *Shared Access Signature*. 
 
 Shared key provides full access to your storage account while with shared access signature you can provide secure delegate access to the storage account resources.
 
@@ -143,14 +143,14 @@ Description
 <tr>
 <td valign="top">
 
- *SAS Token*  
+*SAS Token*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the shared access signature token \(SAS token\) used in shared access signature authentication. 
+Enter the shared access signature token \(SAS token\) used in shared access signature authentication. 
 
 
 
@@ -185,14 +185,14 @@ Description
 <tr>
 <td valign="top">
 
- *Account Key*  
+*Account Key*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the account key used in the shared key authorization. 
+Enter the account key used in the shared key authorization. 
 
 
 

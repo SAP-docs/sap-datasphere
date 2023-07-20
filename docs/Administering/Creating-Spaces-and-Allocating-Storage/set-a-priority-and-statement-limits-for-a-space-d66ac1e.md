@@ -48,37 +48,21 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <tr>
         <td valign="top" rowspan="2">
         
-                Admission Control
+        Admission Control
 
 
         
         </td>
         <td valign="top">
         
-                ADMISSION CONTROL QUEUE CPU THRESHOLD
+        ADMISSION CONTROL QUEUE CPU THRESHOLD
 
 
         
         </td>
         <td valign="top">
         
-                80%
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-                ADMISSION CONTROL REJECT CPU THRESHOLD
-
-
-        
-        </td>
-        <td valign="top">
-        
-                99%
+        80%
 
 
         
@@ -87,21 +71,37 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <tr>
         <td valign="top">
         
-                Statement Limits
+        ADMISSION CONTROL REJECT CPU THRESHOLD
 
 
         
         </td>
         <td valign="top">
         
-                TOTAL STATEMENT THREAD LIMIT
+        99%
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Statement Limits
 
 
         
         </td>
         <td valign="top">
         
-                80%
+        TOTAL STATEMENT THREAD LIMIT
+
+
+        
+        </td>
+        <td valign="top">
+        
+        80%
 
 
         
@@ -142,21 +142,21 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <tr>
         <td valign="top" rowspan="2">
         
-                Admission Control
+        Admission Control
 
 
         
         </td>
         <td valign="top">
         
-                ADMISSION CONTROL QUEUE CPU THRESHOLD
+        ADMISSION CONTROL QUEUE CPU THRESHOLD
 
 
         
         </td>
         <td valign="top">
         
-                80%
+        80%
 
 
         
@@ -165,14 +165,14 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <tr>
         <td valign="top">
         
-                ADMISSION CONTROL REJECT CPU THRESHOLD
+        ADMISSION CONTROL REJECT CPU THRESHOLD
 
 
         
         </td>
         <td valign="top">
         
-                99%
+        99%
 
 
         
@@ -181,21 +181,21 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <tr>
         <td valign="top" rowspan="2">
         
-                Statement Limits
+        Statement Limits
 
 
         
         </td>
         <td valign="top">
         
-                TOTAL STATEMENT THREAD LIMIT
+        TOTAL STATEMENT THREAD LIMIT
 
 
         
         </td>
         <td valign="top">
         
-                In the *Total Statement Thread Limit* area, enter the maximum number \(or percentage\) of threads that statements running concurrently in the space can consume. You can enter a percentage between 1% and 70% \(or the equivalent number\) of the total number of threads available in your tenant.
+        In the *Total Statement Thread Limit* area, enter the maximum number \(or percentage\) of threads that statements running concurrently in the space can consume. You can enter a percentage between 1% and 70% \(or the equivalent number\) of the total number of threads available in your tenant.
 
         Setting this limit prevents the space from consuming too many threads, and can help with balancing resource consumption between competing spaces.
 
@@ -214,14 +214,14 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <tr>
         <td valign="top">
         
-                TOTAL STATEMENT MEMORY LIMIT
+        TOTAL STATEMENT MEMORY LIMIT
 
 
         
         </td>
         <td valign="top">
         
-                In the *Total Statement Memory Limit* area, enter the maximum number \(or percentage\) of GBs of memory that statements running concurrently in the space can consume. You can enter any value or percentage between 0 \(no limit\) and the total amount of memory available in your tenant.
+        In the *Total Statement Memory Limit* area, enter the maximum number \(or percentage\) of GBs of memory that statements running concurrently in the space can consume. You can enter any value or percentage between 0 \(no limit\) and the total amount of memory available in your tenant.
 
         Setting this limit prevents the space from consuming all available memory, and can help with balancing resource consumption between competing spaces.
 

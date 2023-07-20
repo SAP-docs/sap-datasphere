@@ -108,7 +108,7 @@ We create a view to:
 </td>
 <td valign="top">
 
- ![](images/il-charging-cleanup-1_e37bfe3.png) 
+![](images/il-charging-cleanup-1_e37bfe3.png)
 
 
 

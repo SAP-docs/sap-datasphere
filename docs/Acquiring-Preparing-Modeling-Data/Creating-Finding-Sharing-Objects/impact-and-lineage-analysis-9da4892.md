@@ -251,7 +251,7 @@ Scroll, zoom, or recenter the diagram:
 
 -   Click <span class="SAP-icons"></span> \(or press [F6\]\) to zoom in.
 -   Click <span class="SAP-icons"></span> \(or press [F7\]\) to zoom out.
--   Click the center button \(or press [F8\]\) to fit to screen, [CTRL\]-click the center button \(or press  [CTRL\] + [F5\] \) to zoom to 100% scale, or enter a percentage.
+-   Click the center button \(or press [F8\]\) to fit to screen, [CTRL\]-click the center button \(or press [CTRL\] + [F5\] \) to zoom to 100% scale, or enter a percentage.
 -   Click the arrow buttons \(or press the arrow keys\) to scroll horizontally or vertically.
 
 

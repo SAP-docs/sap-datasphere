@@ -52,7 +52,7 @@ Description
 </td>
 <td valign="top">
 
- Enter the ID of the Google Cloud Storage project to which you want to connect. 
+Enter the ID of the Google Cloud Storage project to which you want to connect. 
 
 
 
@@ -103,14 +103,14 @@ Description
 <tr>
 <td valign="top">
 
- *Key* 
+*Key* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the content of the json key file that is used for authentication. 
+Enter the content of the json key file that is used for authentication. 
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
 

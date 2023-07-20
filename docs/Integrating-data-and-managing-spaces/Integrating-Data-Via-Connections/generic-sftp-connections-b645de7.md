@@ -58,30 +58,14 @@ Description
 <tr>
 <td valign="top">
 
- *Category* 
+*Category* 
 
 
 
 </td>
 <td valign="top">
 
- Select the category. Select *Cloud* if you want to connect to an SFTP server in the public cloud, or select *On-Premise* if you want to connect to an SFTP server in your local network. 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- *Host* 
-
-
-
-</td>
-<td valign="top">
-
- Enter the host name of the SFTP server. 
+Select the category. Select *Cloud* if you want to connect to an SFTP server in the public cloud, or select *On-Premise* if you want to connect to an SFTP server in your local network. 
 
 
 
@@ -90,14 +74,14 @@ Description
 <tr>
 <td valign="top">
 
- *Port* 
+*Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the port number of the SFTP server. 
+Enter the host name of the SFTP server. 
 
 
 
@@ -106,14 +90,30 @@ Description
 <tr>
 <td valign="top">
 
- *Host Key* 
+*Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the public SSH host key \(not the key fingerprint\). 
+Enter the port number of the SFTP server. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Host Key* 
+
+
+
+</td>
+<td valign="top">
+
+Enter the public SSH host key \(not the key fingerprint\). 
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
 
@@ -168,14 +168,14 @@ Description
 <tr>
 <td valign="top">
 
- *Use Cloud Connector* 
+*Use Cloud Connector* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
 
 
 
@@ -184,14 +184,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Location* 
+\[if *Use Cloud Connector* = *true*\] *Location* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select a location ID. 
+\[optional\] Select a location ID. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
@@ -203,14 +203,14 @@ Description
 <tr>
 <td valign="top">
 
- \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
 
 
 </td>
 <td valign="top">
 
- \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
@@ -221,14 +221,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration. 
 
 
 
@@ -237,14 +237,14 @@ If host and port entered in the connection details match the virtual host and po
 <tr>
 <td valign="top">
 
- \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
 
 
 </td>
 <td valign="top">
 
- Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 
 
@@ -277,14 +277,14 @@ Description
 <tr>
 <td valign="top">
 
- *Authentication Type*  
+*Authentication Type*  
 
 
 
 </td>
 <td valign="top">
 
- Select the authentication type to be used. 
+Select the authentication type to be used. 
 
 
 
@@ -319,14 +319,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the user who is accessing the SFTP server. 
+Enter the user who is accessing the SFTP server. 
 
 
 
@@ -335,14 +335,14 @@ Description
 <tr>
 <td valign="top">
 
- *Private Key*  
+*Private Key*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the user SSH private key used for SSH key authentication. The server must know the user SSH public key. 
+Enter the user SSH private key used for SSH key authentication. The server must know the user SSH public key. 
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
 
@@ -353,14 +353,14 @@ Choose <span class="SAP-icons"></span> \(Browse\) and select the file from yo
 <tr>
 <td valign="top">
 
- *Passphrase*  
+*Passphrase*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the passphrase needed to decrypt the private key in SSH key authentication. 
+Enter the passphrase needed to decrypt the private key in SSH key authentication. 
 
 
 
@@ -395,14 +395,14 @@ Description
 <tr>
 <td valign="top">
 
- *User Name*  
+*User Name*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the user accessing the SFTP server. 
+Enter the user accessing the SFTP server. 
 
 
 
@@ -411,14 +411,14 @@ Description
 <tr>
 <td valign="top">
 
- *Password*  
+*Password*  
 
 
 
 </td>
 <td valign="top">
 
- Enter the user's password used for authentication. 
+Enter the user's password used for authentication. 
 
 
 

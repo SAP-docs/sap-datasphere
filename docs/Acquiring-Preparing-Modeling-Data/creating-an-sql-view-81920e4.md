@@ -76,7 +76,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
 
         Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
 
-    -    Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog: 
+    -   Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog: 
         -   Click <span class="FPA-icons"></span> \(Previous Annotation\) and <span class="FPA-icons"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
         -   Enter changes for the custom CSN annotations in the code.
         -   Click <span class="FPA-icons"></span> \(Validate CSN expression\) to check if changes invalidate or not the CSN expression.
@@ -106,14 +106,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-         Business Name 
+    Business Name 
 
 
     
     </td>
     <td valign="top">
     
-        Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
 
 
     
@@ -122,14 +122,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-         Technical Name 
+    Technical Name 
 
 
     
     </td>
     <td valign="top">
     
-        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
@@ -143,14 +143,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-        Language
+    Language
 
 
     
     </td>
     <td valign="top">
     
-         Select the SQL language to use. 
+    Select the SQL language to use. 
 
     Choose from the following:
 
@@ -164,14 +164,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-        Source Object \(Open SQL Schema/HDI Container\)
+    Source Object \(Open SQL Schema/HDI Container\)
 
 
     
     </td>
     <td valign="top">
     
-        \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
+    \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
 
 
     
@@ -180,14 +180,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-        Semantic Usage
+    Semantic Usage
 
 
     
     </td>
     <td valign="top">
     
-         Select the way your entity should be used. 
+    Select the way your entity should be used. 
 
     Choose from the following:
 
@@ -205,14 +205,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-        Expose for Consumption
+    Expose for Consumption
 
 
     
     </td>
     <td valign="top">
     
-         Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC. 
+    Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC. 
 
     > ### Note:  
     > There are two methods for exposing view data for consumption outside SAP Datasphere:
@@ -229,14 +229,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-        Run in Analytical Mode
+    Run in Analytical Mode
 
 
     
     </td>
     <td valign="top">
     
-         Enable this option to send the `USE_OLAP_PLAN` hint to the SQL optimizer. 
+    Enable this option to send the `USE_OLAP_PLAN` hint to the SQL optimizer. 
 
     This may improve view performance, particularly if a union is performed. It is only available if *Expose for Consumption* is enabled.
 
@@ -249,14 +249,14 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
-        Status
+    Status
 
 
     
     </td>
     <td valign="top">
     
-         \[read-only\] Displays the deployment and error status of the object. 
+    \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
@@ -283,11 +283,8 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
-7.  Click <span class="FPA-icons"></span> \(Save\) to save your entity:
+7.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
 
-    -   *Save* to save your object.
-    -   *Save As* to create a local a copy of the object you're working on. The object must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
-
-    Click <span class="SAP-icons"></span> \(Deploy\) to deploy your entity.
+    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
 

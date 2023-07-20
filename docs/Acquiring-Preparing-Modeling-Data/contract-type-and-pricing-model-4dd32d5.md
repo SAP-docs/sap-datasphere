@@ -27,7 +27,7 @@ Descriptions
 <tr>
 <td valign="top">
 
- **License Key** 
+**License Key** 
 
 
 
@@ -54,7 +54,7 @@ For more information, see [Acquiring a Data Product that needs a License Key](ac
 <tr>
 <td valign="top">
 
- **Free** 
+**Free** 
 
 
 
@@ -74,7 +74,7 @@ For more information, see [Acquiring a Free Data Product](acquiring-a-free-data-
 <tr>
 <td valign="top">
 
- **On Request** 
+**On Request** 
 
 
 

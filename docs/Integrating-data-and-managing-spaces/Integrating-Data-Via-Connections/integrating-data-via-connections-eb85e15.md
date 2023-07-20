@@ -40,7 +40,7 @@ Description
 <tr>
 <td valign="top">
 
- Remote Tables 
+Remote Tables 
 
 
 
@@ -68,7 +68,7 @@ For more information, see:
 <tr>
 <td valign="top">
 
- Data Flows 
+Data Flows 
 
 
 
@@ -86,7 +86,7 @@ For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a
 <tr>
 <td valign="top">
 
- Model Import 
+Model Import 
 
 
 
@@ -104,7 +104,7 @@ For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com
 <tr>
 <td valign="top">
 
- Replication Flows 
+Replication Flows 
 
 
 
@@ -140,7 +140,7 @@ The following connection types are available with SAP Datasphere:
 
 
 
-** **
+****
 
 
 <table>
@@ -629,7 +629,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 
 

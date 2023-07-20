@@ -40,7 +40,7 @@ Create individual users in the *Users* list
 </td>
 <td valign="top">
 
- [Creating a New User](creating-a-new-user-58d4b24.md) 
+[Creating a New User](creating-a-new-user-58d4b24.md) 
 
 
 
@@ -56,7 +56,7 @@ Import multiple users from a CSV file
 </td>
 <td valign="top">
 
- [Importing or Modifying Users from a File](importing-or-modifying-users-from-a-file-b2698da.md) 
+[Importing or Modifying Users from a File](importing-or-modifying-users-from-a-file-b2698da.md) 
 
 
 

@@ -20,7 +20,7 @@ The sources for analytic models are facts \(or analytical datasets\), which can 
 
 This graphic shows the role of the analytic model within SAP Datasphere:
 
- ![The graphic has an explanatory text.](images/DWC_-_analytic_model_5e78571.png) 
+![The graphic has an explanatory text.](images/DWC_-_analytic_model_5e78571.png)
 
 
 
@@ -65,7 +65,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     > ### Example:  
     > In many cases you need to have a more specific name for a field than the source provides. For example, the field name is *Costcenter*, but you want to specify if it is to *Receiving Costcenter* or *Sending Costcenter*.
 
-8.  You can choose *Preview* to check if the data looks like expected. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
+8.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
 
     > ### Note:  
     > When you change an analytic model for which a story has been defined, and you deploy it again, you need to open the story in SAP Analytics Cloud and save it again.

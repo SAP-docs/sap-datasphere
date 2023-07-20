@@ -52,14 +52,14 @@ The join operator requires two inputs, and it generates a single output.
     <tr>
     <td valign="top">
     
-        *Label*
+    *Label*
 
 
     
     </td>
     <td valign="top">
     
-        Provide a suitable name for your join as per your requirement.
+    Provide a suitable name for your join as per your requirement.
 
 
     
@@ -68,14 +68,14 @@ The join operator requires two inputs, and it generates a single output.
     <tr>
     <td valign="top">
     
-        *Join Type*
+    *Join Type*
 
 
     
     </td>
     <td valign="top">
     
-        Choose the type of join. The joins that are currently supported are `INNER`, `LEFT_OUTER`, and `RIGHT_OUTER`.
+    Choose the type of join. The joins that are currently supported are `INNER`, `LEFT_OUTER`, and `RIGHT_OUTER`.
 
 
     

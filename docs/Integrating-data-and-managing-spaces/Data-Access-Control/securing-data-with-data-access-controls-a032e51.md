@@ -57,21 +57,21 @@ In this environment:
         <tr>
         <td valign="top">
         
-                anne.archer@acme.com
+        anne.archer@acme.com
 
 
         
         </td>
         <td valign="top">
         
-                US
+        US
 
 
         
         </td>
         <td valign="top">
         
-                Sales
+        Sales
 
 
         
@@ -80,21 +80,21 @@ In this environment:
         <tr>
         <td valign="top">
         
-                jennifer.jones@acme.com
+        jennifer.jones@acme.com
 
 
         
         </td>
         <td valign="top">
         
-                FR
+        FR
 
 
         
         </td>
         <td valign="top">
         
-                Sales
+        Sales
 
 
         

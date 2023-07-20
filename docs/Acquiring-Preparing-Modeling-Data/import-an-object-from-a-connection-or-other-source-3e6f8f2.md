@@ -25,7 +25,7 @@ Drag objects from the *Sources* tab of the *Source Browser* to add them as sourc
 
 2.  Click the *Sources* tab.
 
-     The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. These can include: 
+    The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. These can include: 
 
     -   *Connections* - Lists all the connections that have been created in the space \(see [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:\).
 
@@ -46,7 +46,7 @@ Drag objects from the *Sources* tab of the *Source Browser* to add them as sourc
 
 5.  In the *Import Table* dialog, accept the default business and technical names or overwrite them and then click *Import and Deploy*:
 
-    ![](images/Import_Table_Dialog_ee879cd.png) 
+    ![](images/Import_Table_Dialog_ee879cd.png)
 
     The source is added to your diagram and is imported to the repository. From now on it is available to everyone in your space on the *Repository* tab of the *Source Browser*:
 
