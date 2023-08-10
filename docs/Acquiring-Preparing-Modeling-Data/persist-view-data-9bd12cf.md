@@ -48,7 +48,7 @@ Description
 </td>
 <td valign="top">
 
-See how you currently access your view.
+Shows how you currently access your view.
 
 -   *Persisted*: The view is persisted can be used immediately.
 -   *Virtual*: The view is accessed directly, no intermediate persistency is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
@@ -67,7 +67,7 @@ See how you currently access your view.
 </td>
 <td valign="top">
 
-Get the status of the persisted view.
+Shows the status of the persisted view.
 
 -   *Available*: The persisted view is available and can be used.
 -   *Loading*: The persisted view is currently creating or updating. You might need to refresh your screen until the loading is completed to get the final status. Until then the virtual access or the old persisted data is used if the view is accessed.
@@ -87,7 +87,7 @@ Get the status of the persisted view.
 </td>
 <td valign="top">
 
-See when the persisted view was last updated.
+Shows when the persisted view was last updated.
 
 
 

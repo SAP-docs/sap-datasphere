@@ -76,7 +76,7 @@ See if a schedule is defined for the task chain:
 
 -   *None \(--\)*: There is no schedule defined for this task chain. You can define one from *Schedule* \> *Create*.
 
--   *Scheduled*: A schedule is defined for this task chain. If you click *Scheduled*, you will get detailed information on the schedule. You can update the schedule options at any time from *Schedule* \> *Edit Schedule*, or delete the schedule from *Schedule* \> *Delete Schedule*.
+-   *Scheduled*: A schedule is defined for this task chain. If you click *Scheduled*, you will get detailed information on the schedule. You can click *Schedule* to create, edit, or delete a schedule for a selected task chain.
 
 
 
@@ -156,7 +156,7 @@ Click *Run* to manually start a new run of a selected task chain. If a task chai
 > ### Note:  
 > If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
 
-You can click *Schedule* to create, edit or delete a schedule for a selected task chain. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+You can click *Schedule* to create, edit, or delete a schedule for a selected task chain. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.

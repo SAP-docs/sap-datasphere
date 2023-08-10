@@ -187,7 +187,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     </td>
     <td valign="top">
     
-    Select the way your entity should be used. 
+    Select the way your entity should be used for data modeling purposes. 
 
     Choose from the following:
 

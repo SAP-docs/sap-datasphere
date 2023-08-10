@@ -1,6 +1,6 @@
 <!-- loiof7d5eddf20a34a1aa48d8e2c68a44e28 -->
 
-# Install or Update the `datasphere` Command Line Interface
+# Install or Update the SAP Datasphere Command Line Interface
 
 The SAP Datasphere command line interface \(`datasphere`\) is a `Node.js` package that you download using the Node Package Manager \(`npm`\).
 

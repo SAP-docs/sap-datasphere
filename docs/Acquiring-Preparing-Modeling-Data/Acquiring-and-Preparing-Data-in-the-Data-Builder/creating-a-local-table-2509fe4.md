@@ -94,7 +94,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </td>
     <td valign="top">
     
-    Select the way your entity should be used. 
+    Select the way your entity should be used for data modeling purposes. 
 
     Choose from the following:
 

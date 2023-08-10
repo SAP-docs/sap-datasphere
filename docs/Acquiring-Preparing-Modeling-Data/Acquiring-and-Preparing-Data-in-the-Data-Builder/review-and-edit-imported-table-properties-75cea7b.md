@@ -72,7 +72,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </td>
     <td valign="top">
     
-    Select the way your entity should be used. 
+    Select the way your entity should be used for data modeling purposes. 
 
     Choose from the following:
 
@@ -233,7 +233,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     \[read-only\]
 
-    Displays the current status of the remote table:
+    Displays the current status of the remote table.
 
     -   *\---*: Initial state
 

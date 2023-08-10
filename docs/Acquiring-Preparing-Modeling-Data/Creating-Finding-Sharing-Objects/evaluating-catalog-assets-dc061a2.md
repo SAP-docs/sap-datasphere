@@ -66,7 +66,7 @@ Asset Functional Status and Source System
 </td>
 <td valign="top">
 
-Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "As a catalog administrator, you determine what content is discoverable and visible to users who are searching in the catalog. Once you&apos;ve enriched asset metadata, applied appropriate classifications, and ensured the overall quality of the asset, you can then publish the asset and associated terms and KPIs for everyone to discover them.") :arrow_upper_right:.
+Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "As a catalog administrator, you determine what content is discoverable and visible to users who are searching in the catalog. You can publish a single asset from the asset details page, or you can publish several assets from the catalog home page.") :arrow_upper_right:.
 
 
 

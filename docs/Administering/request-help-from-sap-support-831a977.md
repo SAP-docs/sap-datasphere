@@ -42,13 +42,11 @@ An administrator can make sure that a support user is created in your tenant. Tw
 
     4.  Click *Save*.
 
-        In case of an incident, SAP Product Support can now request and generate a personalized support user for the affected tenant. This user is enabled for multi-factor authentication.
+        In case of an incident, a support engineer from SAP Product Support can now request and generate a personalized support user for the affected tenant. This user is enabled for multi-factor authentication.
 
-        The support user has read-only privileges \(DW Viewer role\) and does not consume a user license.
+        The support user either has read-only privileges \(DW Viewer role\) or, if requested by the support engineer and confirmed by the customer in the incident, the support user can have the DW Administrator role. The user does not consume a user license.
 
-        You can assign an appropriate role to the support user and add it to the required space.
-
-        The support user will be deleted after two days or after the incident has been closed.
+        The support user will be automatically deleted after two days or after the incident has been closed.
 
 
 

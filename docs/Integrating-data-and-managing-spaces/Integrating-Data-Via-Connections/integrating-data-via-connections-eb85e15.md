@@ -1271,7 +1271,7 @@ SAP
 <tr>
 <td valign="top">
 
-\[generated and only available within a SAP BW bridge space if SAP BW bridge has been provisioned\] [SAP Datasphere SAP BW bridge](https://help.sap.com/viewer/07fda46007d24ff7b8af36b26f9b9634/cloud/en-US/03cc8f27d3a44aabad3debaa79be0216.html "") :arrow_upper_right:
+\[generated and only available within a SAP BW bridge space if SAP BW bridge has been provisioned\] [Importing SAP BW Bridge Objects into SAP Datasphere](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "You can use SAP BW bridge to model objects and import them into SAP Datasphere.") :arrow_upper_right:SAP Datasphere SAP BW bridge
 
 
 

@@ -29,7 +29,7 @@ The following sections are available in this topic:
 
 ## Prerequisites
 
-To use `datasphere` you must install it \(see [Install or Update the datasphere Command Line Interface](install-or-update-the-datasphere-command-line-interface-f7d5edd.md)\) and have an SAP Datasphere user with the following roles or permissions:
+To use `datasphere` you must install it \(see [Install or Update the SAP Datasphere Command Line Interface](install-or-update-the-sap-datasphere-command-line-interface-f7d5edd.md)\) and have an SAP Datasphere user with the following roles or permissions:
 
 
 <table>

@@ -242,7 +242,7 @@ Displays how often data is replicated. The value here shows the intended frequen
 </td>
 <td valign="top">
 
-Displays the current status of the remote table:
+Displays the current status of the remote table.
 
 -   *\---*: Initial state
 
@@ -532,8 +532,6 @@ Delete the schedule if required.
 </td>
 </tr>
 </table>
-
-
 
 
 

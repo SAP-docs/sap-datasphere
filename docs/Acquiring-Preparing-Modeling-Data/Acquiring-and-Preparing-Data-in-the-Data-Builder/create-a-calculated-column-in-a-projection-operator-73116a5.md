@@ -89,7 +89,7 @@ Add a new column in a projection operator and define the expression that will fi
     
     For more information, see [Data Types](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2020_04_QRC/en-US/20a1569875191014b507cf392724b7eb.html) from the [SAP HANA Cloud SQL Reference Guide](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2020_04_QRC/en-US/b4b0eec1968f41a099c828a4a6c8ca0f.html).
 
-3.  In the *Expression* field, define the expression for the calculated column. You can build your expression by choosing from the *Functions*, *Columns*, and *Operators*. For more information, see [Function Reference for Data Transformation Language](https://help.sap.com/viewer/fd995896a5f841c696d2b6825d39f755/Cloud/en-US).
+3.  In the *Expression* field, define the expression for the calculated column. You can build your expression by choosing from the *Functions* \(see [Function Reference for Data Transformation Language](https://help.sap.com/viewer/fd995896a5f841c696d2b6825d39f755/Cloud/en-US)\), *Columns*, *Input Parameters* \(see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)\), and *Operators*.
 
     > ### Note:  
     > To validate your expression so that you can find any issues with it and fix them, click the *Validate* button.

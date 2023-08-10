@@ -8,5 +8,5 @@ SAP BW bridge enables you to use SAP BW functionality in the public cloud and to
 
 The SAP BW bridge connection differs from other connection types, as it can't be created or modified. It is being generated when SAP BW bridge is provisioned.
 
-To learn more about SAP BW bridge, see [Using SAP Datasphere, SAP BW Bridge in SAP Datasphere](https://help.sap.com/viewer/07fda46007d24ff7b8af36b26f9b9634/cloud/en-US/b2a2df3c588849a494295aff0aa698a0.html "SAP Datasphere, SAP BW bridge enables you to use SAP BW functionality in the public cloud, to convert SAP BW∕4HANA and SAP BW models into SAP BW bridge models, and to import SAP BW bridge models into SAP Datasphere.") :arrow_upper_right:.
+To learn more about SAP BW bridge, see [Acquiring and Combining Data](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/94a26e437db74b14ae4664b0d4634faf.html "You can now start acquiring data and combine it in SAP BW bridge.") :arrow_upper_right:.
 

@@ -43,7 +43,7 @@
     -   [Monitor Tenant and Space Storage](Creating-Spaces-and-Allocating-Storage/monitor-tenant-and-space-storage-39b08d3.md)
     -   [Rules for Technical Names](Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md)
     -   [Manage Spaces via the Command Line](Creating-Spaces-and-Allocating-Storage/manage-spaces-via-the-command-line-5eac5b7.md)
-        -   [Install or Update the datasphere Command Line Interface](Creating-Spaces-and-Allocating-Storage/install-or-update-the-datasphere-command-line-interface-f7d5edd.md)
+        -   [Install or Update the SAP Datasphere Command Line Interface](Creating-Spaces-and-Allocating-Storage/install-or-update-the-sap-datasphere-command-line-interface-f7d5edd.md)
         -   [Log into the Command Line Interface via an OAuth Client](Creating-Spaces-and-Allocating-Storage/log-into-the-command-line-interface-via-an-oauth-client-eb7228a.md)
         -   [The Space Definition File Format](Creating-Spaces-and-Allocating-Storage/the-space-definition-file-format-3fcbf61.md)
 -   [Preparing Connectivity for Connections](Preparing-Connectivity/preparing-connectivity-for-connections-bffbd58.md)

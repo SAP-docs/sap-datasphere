@@ -263,7 +263,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     </td>
     <td valign="top">
     
-    Select the way your entity should be used. 
+    Select the way your entity should be used for data modeling purposes. 
 
     Choose from the following:
 

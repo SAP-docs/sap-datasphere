@@ -29,11 +29,11 @@ The columns available for selection are a subset of all view output columns. Som
 -   Supported data types include:
 
     -   String
-    -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT,
-    -   Date, DateTime, Time, Timestamp,
+    -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT
+    -   Date, DateTime, Time, Timestamp
     -   Binary
 
-    For more information, see [Partitioning Limits](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2021_01_QRC/en-US/8dd866a688ec4914a074727a2c800142.html).
+    For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
 
 -   You can't select a column containing analytical measures as partitioning-columns, only columns containing dimensions can be partitioned.
 -   If you select a non-key column to define your partitions, you must ensure that the column value of a record in the source data is not changed while the view is persisted. Otherwise, data loading may fail because a record with the same key is persisted in two different partitions.

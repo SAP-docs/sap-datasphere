@@ -82,7 +82,7 @@ The *Import Entities* wizard allows you to import entities from SAP S/4HANA Clou
 
 ## Import Entities from SAP BW Bridge
 
-SAP BW bridge enables you to use SAP BW functionality in the public cloud and to import bridge entities into SAP Datasphere \(see [Import Entities from SAP BW Bridge](https://help.sap.com/viewer/07fda46007d24ff7b8af36b26f9b9634/cloud/en-US/f1de7a7df8f648fdbf5f8642e8bc8c2a.html "You can import SAP BW bridge objects into SAP Datasphere .") :arrow_upper_right:\).
+SAP BW bridge enables you to use SAP BW functionality in the public cloud and to import bridge entities into SAP Datasphere \(see[Importing Entities with Semantics from SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-bridge-7bcd321.md) \).
 
 
 

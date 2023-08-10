@@ -10,7 +10,7 @@ Add measures to your analytic model.
 
 ## Context
 
-Measures contain numerical values that you want to analyze. You can choose between fact source measures, calculated measures, and restricted measures.
+Measures contain numerical values that you want to analyze.
 
 There are different types of measures to choose from:
 
@@ -29,16 +29,12 @@ There are different types of measures to choose from:
 
 3.  For calculated measures, enter your expression in the formula editor.
 
-    the expression field contains the formula to calculate the measure.
+    The expression field contains the formula to calculate the measure.
 
     > ### Example:  
     > To calculate the price, the expression could be `Amount / Quantity`.
 
-4.  For restricted measures, proceed as follows:
-
-    1.  Select the source measure.
-    2.  Select the aggregation type.
-    3.  Enter your expression in the formula editor. An atomic expression usually has the format`<dimension> <operator> <value> (e.g. Country = 'Germany').`
+4.  For restricted measures, proceed as described here: [Create a Restricted Measure](create-a-restricted-measure-bfb43dd.md).
 
 5.  For currency conversion measures, porceed as described here: [Create a Currency Conversion Measure](create-a-currency-conversion-measure-ec00efb.md).
 

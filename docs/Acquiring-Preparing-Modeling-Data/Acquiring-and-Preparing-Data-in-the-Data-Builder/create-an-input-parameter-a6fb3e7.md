@@ -4,7 +4,7 @@
 
 # Create an Input Parameter
 
-Create input parameters in your data flows for use in projection operator filter conditions. When you want to staring a data flow run, you are prompted to enter a value and this value is used to filter the data to be loaded.
+Create input parameters in your data flows for use in projection operator filter conditions or calculated columns. When you want to staring a data flow run, you are prompted to enter a value and this value is used to filter the data to be loaded.
 
 
 
@@ -90,7 +90,7 @@ Create input parameters in your data flows for use in projection operator filter
     
 4.  Click *OK* to close the dialog and return to the side panel where the input parameter is available for use.
 
-5.  Use the input parameter as appropriate in the filter expression of the projection operator.
+5.  Use the input parameter as appropriate in the projection operator.
 
 
     <table>
@@ -120,9 +120,30 @@ Create input parameters in your data flows for use in projection operator filter
     </td>
     <td valign="top">
     
-    Projection Filter Expression \(see [Create a Projection Operator](create-a-projection-operator-912f740.md)\).
+    Projection Filter expression \(see [Create a Projection Operator](create-a-projection-operator-912f740.md)\).
 
     This filter expression takes the value entered by the user for `IP_Country` and uses it to restrict the data returned by the data flow to only those rows where the `Country` column contains this value.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `ADD_DAYS(Date,${IP_Days})`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Calculated Column expression \(see [Create a Calculated Column in a Projection Operator](create-a-calculated-column-in-a-projection-operator-73116a5.md)\)
+
+    This expression will fill the column with a value calculated by taking the value in the `Date` column and adding the value entered by the user \(days\) to the date.
+
+    > ### Note:  
+    > At runtime, the string entered by the user is converted into the correct data type.
 
 
     

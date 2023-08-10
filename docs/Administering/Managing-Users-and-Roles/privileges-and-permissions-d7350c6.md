@@ -18,9 +18,9 @@ This topic contains the following sections:
 
 A role represents the main tasks that a user performs in SAP Datasphere. Each role has a set of privileges with appropriate levels of permissions. The privileges represent areas of the application like the *Space Management* or the *Business Builder* and the files or objects created in those areas.
 
-The standard application roles provide sets of privileges and permissions that are appropriate for that role. For example, the *DW Administrator* role has all the *Spaces* permissions, while the *DW Viewer* role has none.
+The standard roles provide sets of privileges and permissions that are appropriate for that role. For example, the *DW Administrator* role has all the *Spaces* permissions, while the *DW Viewer* role has none.
 
-You can use the standard application roles to assign sets of privileges and permissions to your users \(see [Standard Application Roles](standard-application-roles-a50a51d.md)\) and create your own custom roles to group together other sets of privileges and permissions \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
+You can use the standard roles to assign sets of privileges and permissions to your users \(see [Standard Application Roles](standard-application-roles-a50a51d.md)\) and create your own custom roles to group together other sets of privileges and permissions \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
 
 
 
@@ -327,7 +327,7 @@ See [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee7
 </td>
 <td valign="top">
 
-Allows access to business objects \(dimensions and analytical datasets defined in the *Business Builder*.
+Allows access to business objects \(dimensions and facts\) defined in the *Business Builder*.
 
 See [Creating a Business Entity](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/c912cdc1537d4efbb24b08327ea68918.html "You use business entities to build your consumption model for analysis and reporting.") :arrow_upper_right:
 

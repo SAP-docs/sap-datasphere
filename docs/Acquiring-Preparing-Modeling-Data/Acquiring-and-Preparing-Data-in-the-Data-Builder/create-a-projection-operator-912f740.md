@@ -68,9 +68,7 @@ Insert a projection operator to add, remove, reorder, or rename columns.
 
 5.  \(Optional\) In the *Filter* section, define filters.
 
-    In the *Expression* field, enter the required expression. You can build your expression by choosing from the *Functions*, *Columns*, and *Operators*.
-
-    For more information, see [Function Reference for Data Transformation Language](https://help.sap.com/viewer/fd995896a5f841c696d2b6825d39f755/Cloud/en-US).
+    In the *Expression* field, enter the required expression. You can build your expression by choosing from the *Functions* \(see [Function Reference for Data Transformation Language](https://help.sap.com/viewer/fd995896a5f841c696d2b6825d39f755/Cloud/en-US)\), *Columns*, *Input Parameters* \(see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)\), and *Operators*.
 
     > ### Note:  
     > To validate your expression so that you can find any issues with it and fix them, click the *Validate* button.

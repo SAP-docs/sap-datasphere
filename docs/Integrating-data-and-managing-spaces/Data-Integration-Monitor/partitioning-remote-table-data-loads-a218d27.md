@@ -68,14 +68,14 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     It might happen that you can’t see all the columns available in your dataset because:
 
     -   Not all data types are supported for partitioning depending on your data sources:
-        -   SAP HANA data: Only the following data types are supported
+        -   SAP HANA data: Supported data types include:
 
-            -   Datetime types: DATE, TIME, TIMESTAMP, SECONDDATE
+            -   String
+            -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT
+            -   Date, DateTime, Time, Timestamp
+            -   Binary
 
-            -   Numeric types: TINYINT, SMALLINT, INT, BIGINT, DECIMAL\(p,s\)
-            -   Character string: NVARCHAR
-
-            For more information, see [Partitioning Limits](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2021_01_QRC/en-US/8dd866a688ec4914a074727a2c800142.html).
+            For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
 
 
     -   \(SAP HANA smart data integration only\) If you select a non-key column to define your partitions, you must ensure that the column value of a record in the source data is not changed during replication. Otherwise, data loading may fail because a record with the same key is replicated in two different partitions.

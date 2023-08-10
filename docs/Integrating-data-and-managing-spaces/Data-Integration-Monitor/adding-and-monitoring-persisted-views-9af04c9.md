@@ -217,8 +217,6 @@ Select the relevant view and click: <span class="SAP-icons"></span> \(View Pe
 
 
 
-
-
 <a name="loio9af04c990f294fd28c00f46763dd8b0d__section_o51_rdm_htb"/>
 
 ## Monitoring Persisted Views
@@ -269,7 +267,7 @@ Name of the persisted view
 </td>
 <td valign="top">
 
-See how you currently access your view.
+Shows how you currently access your view.
 
 -   *Persisted*: The view is persisted can be used immediately.
 -   *Virtual*: The view is accessed directly, no intermediate persistency is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
@@ -288,7 +286,7 @@ See how you currently access your view.
 </td>
 <td valign="top">
 
-See if a schedule is defined for the view.
+Shows if a schedule is defined for the view.
 
 -   *None*: There is no schedule task defined for this view. You can define one from *Schedule* \> *Create Schedule*.
 -   *Scheduled*: A schedule task is defined for this view. If you click on *Scheduled*, you will get detailed information on the schedule. You can update the schedule options at any time from *Schedule* \> *Edit Schedule*, or delete the schedule from *Schedule* \> *Delete Schedule*.
@@ -307,7 +305,7 @@ See if a schedule is defined for the view.
 </td>
 <td valign="top">
 
-See when the persisted view was last updated.
+Shows when the persisted view was last updated.
 
 
 
@@ -332,6 +330,22 @@ If a schedule is set for the view, see by when the next run is scheduled.
 <tr>
 <td valign="top">
 
+*Number Of Records* 
+
+
+
+</td>
+<td valign="top">
+
+Shows the records of the persisted views.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Used In-Memory \(MiB\)* 
 
 
@@ -339,7 +353,7 @@ If a schedule is set for the view, see by when the next run is scheduled.
 </td>
 <td valign="top">
 
-Track how much size the view is using in your memory.
+Tracks how much size the view is using in your memory.
 
 
 
@@ -355,7 +369,7 @@ Track how much size the view is using in your memory.
 </td>
 <td valign="top">
 
-Track how much size the view is taking on your disk.
+Tracks how much size the view is taking on your disk.
 
 
 
@@ -371,7 +385,7 @@ Track how much size the view is taking on your disk.
 </td>
 <td valign="top">
 
-Get the status of the persisted view.
+Shows the status of the persisted view.
 
 -   *Available*: The persisted view is available and can be used.
 -   *Loading*: The persisted view is currently creating or updating. You might need to refresh your screen until the loading is completed to get the final status. Until then the virtual access or the old persisted data is used if the view is accessed.
@@ -396,6 +410,33 @@ When you deploy a persisted view, you need to consider the following cases:
 -   If the view uses other views that were not changed, these views are not touched by the deployment and therefore the persistency is still available
 -   If you update or redeploy a view while view persistency is running, view persistency will fail. In this case, try again to persist the view or wait until the next scheduled run.
 -   If the persisted view is consuming a view for which a data access control has changed \(a data access control is added or removed, or its assignment has changed\), then the persistency of your parent view is removed when the underlying view is redeployed.
+
+
+
+<a name="loio9af04c990f294fd28c00f46763dd8b0d__section_zfx_b54_dyb"/>
+
+## Persistency and Remote Statements
+
+When your views are based on remote tables where data access is *Remote*, the data is read from a remote source system, and it can take times to persist the data.
+
+In the *View Persistency Monitor* - Details screen, when you run persistency for such views, you can access statistics information in the execution logs: number of remote statements, volume of data fetched from the remote source system:
+
+![](images/Example_of_a_Log_with_Remote_Queries_Information_13d5f7a.png)
+
+When you click on *View Details* you get a direct link to the*Remote Query Monitor*, where you can further analyze what’s happened with the remote statements:
+
+![](images/Remote_Queries_Logs_View_Details_f7e1cd0.png)
+
+If your view contains partitions, the log also shows how many partitions and how many remote statements are involved during persistency:
+
+![](images/Example_of_Remote_Queries_Logs_with_Partitions_926411f.png)
+
+You can analyze the remote statements per partitions because each partition has its own statement ID. Click on *View Details* on the partition row level of the log:
+
+![](images/View_Details_Remote_Query_Log_One_Partition_65d893b.png)
+
+> ### Caution:  
+> Remote statements can be shown for the remote connections from the same space only.
 
 
 
