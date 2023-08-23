@@ -137,11 +137,11 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
     -   *Create Schedule*: Create a schedule to run the data flow asynchronously and recurrently in the background according to the settings defined in the schedule.
 
-        For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
+        For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 
     -   *Edit Schedule*: Change how the schedule is specified, or change the owner of the schedule.
 
-        For more information, see [Take Over the Ownership of a Schedule](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner&apos;s behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.") :arrow_upper_right:.
+        For more information, see [Take Over the Ownership of a Schedule](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner&apos;s behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.") :arrow_upper_right:.
 
     -   *Delete Schedule*: Delete the schedule if necessary .
 
@@ -161,7 +161,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     > -   Metrics are displayed only for source and target tables and can be used for further analysis.
     > -   In your data flow, if a source view or an underlying view of the source view has data access controls applied to it, then no data is read from the view during the execution of the data flow. This results in incorrect data or no data in the output.
     > 
-    >     For more information, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:.
+    >     For more information, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:.
 
 12. You can configure more properties for a data flow, in the *Advanced Properties* section of the *Properties* panel.
 

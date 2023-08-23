@@ -8,6 +8,9 @@ From the *View Persistency Monitor*- Details screen, you can create partitions o
 
 Persisting views with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for Data modelers. To avoid such situations, you can create partitions when persisting a view and thus enable partitioned data transfer of large datasets for supported connection types.
 
+> ### Note:  
+> For this action, *Data Builder.READ* privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to either assign the *DW Space Administrator* or *DW Administrator* role to your user or to create a custom role containing the required privileges.
+
 > ### Caution:  
 > Some adapters used by the connected sources are not able to push down the filters for the partitioning. Thus, performance can be impacted by the number of partitions created.
 

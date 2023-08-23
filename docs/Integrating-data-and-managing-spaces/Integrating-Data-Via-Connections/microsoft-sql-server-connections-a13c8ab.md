@@ -10,7 +10,7 @@ Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Serv
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 

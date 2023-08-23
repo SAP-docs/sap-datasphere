@@ -10,7 +10,7 @@ Use an *SAP Fieldglass* connection to retrieve data from SAP Fieldglass.
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP Fieldglass](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03ca23660b5d4b69960f264f5c31990e.html "To be able to successfully validate and use a connection to SAP Fieldglass for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to SAP Fieldglass](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/03ca23660b5d4b69960f264f5c31990e.html "To be able to successfully validate and use a connection to SAP Fieldglass for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 

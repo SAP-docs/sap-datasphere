@@ -18,7 +18,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 > -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
 > -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
 > 
-> For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
+> For more information, see .
 
 
 
@@ -152,7 +152,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     Preview the data output by the selected diagram node in the *Data Preview* panel \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
 
     > ### Note:  
-    > Users with the *DW Viewer* role cannot preview data if the *Expose for Consumption* switch is disabled and, if the switch is enabled, can only preview data in the output node. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
+    > Users with the *DW Viewer* role cannot preview data if the *Expose for Consumption* switch is disabled and, if the switch is enabled, can only preview data in the output node. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
 
     You can preview the SQL generated for the node by clicking the *Preview SQL* button in the panel or by clicking <span class="FPA-icons"></span> Export and selecting *Preview SQL*. Click *Copy* to copy the SQL code for pasting into the SQL View editor or elsewhere.
 
@@ -272,7 +272,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - \[default\] Contains columns with no specific analytical purpose.
-    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
+    -   *Analytical Dataset \(Deprecated\)*Hierarchy - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 
     
@@ -296,7 +296,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     > -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
     > -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
     > 
-    > For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
+    > For more information, see .
 
 
     
@@ -355,7 +355,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\).
     -   *Persistency* - Persist the view data to improve performance \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
-    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 

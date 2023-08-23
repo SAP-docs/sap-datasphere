@@ -14,7 +14,7 @@ You can specify the following types of hierarchy:
 
 -   Parent-Child - the hierarchy is recursive, may have any number of levels, and is defined by specifying a parent column and a child column within the dimension. For example, a departmental hierarchy could be modeled with the `Parent Department ID` and `Department ID` columns.
 -   Level-Based - the hierarchy is non-recursive, has a fixed number of levels, and is defined by specifying two or more level columns within the dimension. For example, a time hierarchy could be modeled with the: `Year`, `Quarter`, `Month`, `Week`, and `Day` columns.
--   External Hierarchy - the parent-child hierarchy information is contained in a seperate entity, which needs to be associated with the dimension.
+-   External Hierarchy - the parent-child hierarchy information is contained in a seperate entity, which needs to be associated with the dimension \(see [Creating an External Hierarchy](creating-an-external-hierarchy-dbac7a8.md)\).
 
 > ### Note:  
 > You can create more than one hierarchy for a dimension, but they must all be of the same type \(internal and external Parent-Child hierarchies can be mixed\).
@@ -318,9 +318,9 @@ The following hierarchy features are not supported:
         2.  Drag the key column of your dimension and drop it on the child column of the hierarchy to map them.
 
             > ### Note:  
-            > The child attribute must be a key column..
+            > The child attribute must be a key column.
 
-        3.  Click *Add* to add the external hierarchy and return to the Hierarchies dialog.
+        3.  Click *Add* to add the external hierarchy and return to the *Hierarchies* dialog.
 
         > ### Note:  
         > Alternatively, you can add an external hierarchy in the *Associations* section of the dimension property sheet. Click <span class="FPA-icons"></span> \(Create Association\) and select *Hierarchy Association*. Drag and drop the key attribute of your dimension on the child column of the hierarchy to map them.

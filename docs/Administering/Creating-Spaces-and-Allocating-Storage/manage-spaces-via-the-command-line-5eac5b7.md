@@ -306,7 +306,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -514,7 +514,7 @@ Enter the *Space ID* of the space.
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -562,8 +562,8 @@ Object definitions are read using the standard CSN syntax \(see [Core Data Servi
 > ### Note:  
 > You can also export content from and import content to your space via:
 > 
-> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
-> -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
+> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+> -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
 
 
 
@@ -727,7 +727,9 @@ When your file is ready, enter the following command and press [Return\]:
 datasphere spaces create 
     --file-path <file>.json 
     [--host "<url>"] 
-    [--force-definition-deployment] 
+    [--force-definition-deployment]
+    [--enforce-database-user-deletion]
+ 
     [--verbose] 
     [--options-file <file>.json] 
     [--secrets-file <file>.json] 
@@ -764,7 +766,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -796,7 +798,23 @@ Enter a path to a file with a .json extension containing your space definition.
 </td>
 <td valign="top">
 
-\[optional\] Deploy changes to objects even if they will generate validation messages warning of impacts to objects that depend on them. Using this option is equivalent to clicking the *Deploy Anyway* button in the *Validation Messages* dialog \(see [Modifying Objects That Have Dependent Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f315863264db489593c7f54f1f7fd83e.html "Once a table or view is created, it can be used as a source, or pointed to via an association by other objects. When a data access control is created it can be attached to one or more views to provide row level security. When you modify objects that have dependent objects, you may receive validation messages to warn you that your changes can impact these dependent objects.") :arrow_upper_right:\).
+\[optional\] Deploy changes to objects even if they will generate validation messages warning of impacts to objects that depend on them. Using this option is equivalent to clicking the *Deploy Anyway* button in the *Validation Messages* dialog \(see [Modifying Objects That Have Dependent Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f315863264db489593c7f54f1f7fd83e.html "Once a table or view is created, it can be used as a source, or pointed to via an association by other objects. When a data access control is created it can be attached to one or more views to provide row level security. When you modify objects that have dependent objects, you may receive validation messages to warn you that your changes can impact these dependent objects.") :arrow_upper_right:\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`--enforce-database-user-deletion`
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Allow the deletion of database users and their associated Open SQL schemas, when the `dbusers` section is present in the space definition file. If any existing database user is not included in the `dbusers` section and this option is omitted, then they will not be deleted in order to protect against unintended data loss.
 
 
 
@@ -1021,7 +1039,7 @@ Enter the name of the database user.
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -1232,7 +1250,7 @@ Enter the *Space ID* of the space.
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 

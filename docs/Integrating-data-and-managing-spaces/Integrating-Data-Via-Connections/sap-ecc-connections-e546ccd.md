@@ -10,7 +10,7 @@ Use an *SAP ECC* connection to access data from virtual tables through RFC for O
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/cfc1b487fc014c8aa14af81bfa15a82d.html "To be able to successfully validate and use a connection to SAP ECC for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/cfc1b487fc014c8aa14af81bfa15a82d.html "To be able to successfully validate and use a connection to SAP ECC for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -526,7 +526,7 @@ Enter the port number of the gateway server where the ABAP adapter would registe
 </td>
 <td valign="top">
 
-Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
+Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
 
 
 

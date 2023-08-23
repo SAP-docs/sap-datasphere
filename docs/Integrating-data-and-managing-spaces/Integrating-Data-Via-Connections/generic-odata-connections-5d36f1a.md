@@ -10,7 +10,7 @@ Use a *Generic OData* connection to access data from an OData service.
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 

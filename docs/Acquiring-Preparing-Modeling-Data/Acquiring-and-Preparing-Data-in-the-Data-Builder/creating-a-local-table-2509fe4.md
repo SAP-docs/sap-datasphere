@@ -103,7 +103,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - \[default\] Contains columns with no specific analytical purpose.
-    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
+    -   *Analytical Dataset \(Deprecated\)*Hierarchy - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 
     
@@ -162,6 +162,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
         > ### Note:  
         > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.
 
+    -   *Partitions*- Define partitions for your local table. For more information, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](../Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
 5.  \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md) 

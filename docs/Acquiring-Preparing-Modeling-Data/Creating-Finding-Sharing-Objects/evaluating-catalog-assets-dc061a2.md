@@ -8,7 +8,7 @@ As a catalog user in SAP Datasphere, you can select an asset to review its detai
 
 From the <span class="SAP-icons"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
-When you open an individual asset from the catalog home page, you're taken to the details page for that asset. This page presents many different types of information about the asset itself, including the metadata extracted from the underlying source system and additional information added by catalog administrators, such as added description, glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data object or story is the right one you need for your business task at hand.
+When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information includes the metadata extracted from the underlying source system and additional information added by catalog administrators, such as added description, glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data or analytic object is the right one you need for your business task at hand.
 
 For example, as a data modeler, you can review the details of a catalog asset to determine whether it is the one you need to add to your model. You can also view the lineage diagram for an asset to see other assets that are consumed in the model and which assets are impacted by a change.
 
@@ -82,7 +82,7 @@ Tabs
 </td>
 <td valign="top">
 
-Select a tab to view more information about the asset, such as asset properties and descriptions and, for assets in SAP Datasphere, the **Impact and Lineage Analysis** diagram.
+Select a tab to view more information about the asset, such as asset properties and descriptions, asset details, and for assets in SAP Datasphere, the **Impact and Lineage Analysis** diagram.
 
 
 
@@ -192,7 +192,7 @@ Source properties common among SAP Datasphere assets include:
     For more information on these properties, see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md).
 
 
-If the catalog administrator enriched the asset, the date of the change shows as a catalog property:
+If the catalog administrator enriched the asset, the date of the change appears as a catalog property:
 
 -   *Enriched On*: The date and time on which the date asset was modified by a catalog administrator. The name of the user who enriched the asset is also shown.
 
@@ -301,6 +301,116 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 </tr>
 </table>
 
+<a name="concept_fm4_qbb_rxb"/>
+
+<!-- concept\_fm4\_qbb\_rxb -->
+
+## Viewing Detailed Metadata for an Asset
+
+Use the *Details* tab to review detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each data or analytic object.
+
+> ### Note:  
+> This tab appears only if the asset has details that can be shown. Currently, detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes in the source system, extracts metadata for the data and analytic objects, and updates the assets in the catalog.") :arrow_upper_right:.
+
+![](images/Catalog_Asset_Details_Tab_df97d1e.png)
+
+In addition to the detailed metadata, each metadata table has a column for *Related Objects*. If a row has one or more object \(terms or KPIs\) relationships, a button with the total number of object relationships is displayed. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
+
+![](images/Asset_Details_-_Related_Object_Popup_8bcfe1a.png)
+
+For each detailed metadata table available, you can use the toolbar to search for and organize the information:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Tool
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+:mag:
+
+
+
+</td>
+<td valign="top">
+
+Use the free-text search to search for a row by its name or description. .
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="FPA-icons"></span> \(Sort\)
+
+
+
+</td>
+<td valign="top">
+
+Sort the rows in the table by ascending or descending order based on the column you select.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons"></span> \(Filter\)
+
+
+
+</td>
+<td valign="top">
+
+Select column values for filtering the table.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="FPA-icons"></span> \(Select Columns\)
+
+
+
+</td>
+<td valign="top">
+
+Select which columns you want to show in the table.
+
+
+
+</td>
+</tr>
+</table>
+
+For information on the metadata that appears in this tab, see the help documentation for the source system and search for the data object or analytic object you want to know more about:
+
+-   For SAP Datasphere, see [Acquiring, Preparing, and Modeling Data with SAP Datasphere](../acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md).
+
+-   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
+
+
 <a name="concept_ewq_zmy_3wb"/>
 
 <!-- concept\_ewq\_zmy\_3wb -->
@@ -404,7 +514,7 @@ You can expand or collapse a container, using the <span class="FPA-icons"></s
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
-Authorized objects are published and can be discovered in the catalog. You can view the asset details by clicking <span class="SAP-icons"></span> \(Open Asset Details\). Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
+Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="SAP-icons"></span> \(Open Asset Details\). Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons"></span> \(Show Next Level\) or <span class="SAP-icons"></span> \(Hide All\) on the object.
 
@@ -447,7 +557,7 @@ After you find the asset you want, you can open the asset in the source system t
 
 2.  On the *Catalog* home page, use the filters or the search to find the asset you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
 
-3.  When viewing the asset details, in the top-right corner, click the *Open* button to open the source file in the source system in a new browser tab.
+3.  When viewing the page for the asset, in the top-right corner, click the *Open* button to open the source file in the source system in a new browser tab.
 
     The *Open* button appears only if the asset has been shared with you in the source system and you have permission to view or edit it.
 

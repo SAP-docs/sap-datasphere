@@ -21,12 +21,9 @@ Define general settings for your replication flow, such as the load type.
 
     -   If *Truncate* is marked for a **database table**, when you start the replication run, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source.
 
-        If not, the system tries to insert the data from the source after the existing data in the target, which can lead to issues with duplicate values in key fields.
+        If not, the system inserts new data records after the existing data in the target. For data records that already exist in the target and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode.
 
-    -   If *Truncate* is marked for a **data store table** \(such as SAP HANA Cloud, Data Lake\), when you start the replication run, the system deletes the table completely \(data and structure\) and re-creates it based on the source data.
-
-        If not, the system inserts the data from the source after the existing data in the target, which is the desired behavior for these tables in the majority of cases.
-
+    -   For data store objects \(for example from the data lake component of SAP HANA Cloud\), *Truncate* must always be set. \(If you still try to run a replication flow for an existing target without the *Truncate* option, you get an error message.\) When you start the replication run, the system deletes the object completely \(data and structure\) and re-creates it based on the source data.
 
     If the target structure does not yet exist or is empty, you can ignore the *Truncate* setting.
 

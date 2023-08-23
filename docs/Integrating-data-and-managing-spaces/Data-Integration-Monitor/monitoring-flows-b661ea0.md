@@ -14,9 +14,9 @@ In the Flow Monitor, you can find all the deployed flows per space.
 
 -   To use the Flow Monitor, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
 
--   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
--   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -40,7 +40,7 @@ For more information and points to consider when using replication flows, see al
 
 1.  In the SAP Datasphere, navigate to *Data Integration Monitor* \> *Flow Monitor*.
 
-    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also create, edit, delete, a schedule for a data flow under *Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also create, edit, delete, pause or resume a schedule for a data flow, or assign a schedule to your name under *Schedule*. Whenever it's applicable, you can select several data flows to group the scheduling actions. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
 
     The list of deployed flows shows the following information:
 
@@ -88,7 +88,7 @@ For more information and points to consider when using replication flows, see al
     </td>
     <td valign="top">
     
-    Indicates the status of the last run of the flow. For more information on specifics for replication flow runs, see [Statuses for Replication Flow Runs](statuses-for-replication-flow-runs-e8b2ff9.md).
+    Indicates the status of the last run of the flow. For more information on specifics for replication flow runs, see [Working With Existing Replication Flow Runs](working-with-existing-replication-flow-runs-da62e1e.md).
 
     > ### Note:  
     > If the status of a flow is empty, it means that the data flow has not run yet.

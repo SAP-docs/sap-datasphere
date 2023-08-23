@@ -10,7 +10,7 @@ Use an *SAP Marketing Cloud* connection to access data from SAP Marketing Cloud 
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP Marketing Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f5e0c06fdc834c62a10eeb19d9a79bab.html "To be able to successfully validate and use a connection to SAP Marketing Cloud for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to SAP Marketing Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f5e0c06fdc834c62a10eeb19d9a79bab.html "To be able to successfully validate and use a connection to SAP Marketing Cloud for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 

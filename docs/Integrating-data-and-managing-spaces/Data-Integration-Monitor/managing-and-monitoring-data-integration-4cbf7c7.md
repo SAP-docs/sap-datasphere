@@ -24,7 +24,7 @@ From <span class="FPA-icons"></span> \(*Data Integration Monitor*\), you can 
 
 -   *Task Chain Monitor*: Monitor the status and progress of running and past task chains. For more information, see [Monitoring Task Chains](monitoring-task-chains-4142201.md).
 
-Depending on your role and the tasks you need to perform in the *Data Integration Monitor*, you may need specific privileges. See [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+Depending on your role and the tasks you need to perform in the *Data Integration Monitor*, you may need specific privileges. See [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
 Here are some examples of privileges and permissions you would need to perform some tasks:
 

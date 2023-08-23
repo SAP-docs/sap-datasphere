@@ -16,7 +16,7 @@ For more information, see [Connections to Partner Tools](connections-to-partner-
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Precog](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ad13c31e33ab498a9d014b766bd5eea2.html "To be able to successfully validate and use a connection to Precog for view building certain preparations have to be made.") :arrow_upper_right: 
+See: [Prepare Connectivity to Precog](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ad13c31e33ab498a9d014b766bd5eea2.html "To be able to successfully validate and use a connection to Precog for view building certain preparations have to be made.") :arrow_upper_right: 
 
 
 

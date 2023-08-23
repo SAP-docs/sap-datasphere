@@ -21,7 +21,7 @@ The following sections are available in this topic:
 
 ## Prerequisites
 
-To use `datasphere` to export and import objects you must install it \(see [Install or Update the SAP Datasphere Command Line Interface](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (datasphere) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Modeler* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
+To use `datasphere` to export and import objects you must install it \(see [Install or Update the SAP Datasphere Command Line Interface](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f7d5eddf20a34a1aa48d8e2c68a44e28.html "The SAP Datasphere command line interface (datasphere) is a Node.js package that you download using the Node Package Manager (npm).") :arrow_upper_right:\) and have an SAP Datasphere user with the *DW Modeler* role or equivalent permissions \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
 
 
 
@@ -29,7 +29,7 @@ To use `datasphere` to export and import objects you must install it \(see [Inst
 
 ## Log Into an SAP Datasphere OAuth Client
 
-We recommend that an administrator create an OAuth client for `datasphere` command line interface users to log into for authorization \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+We recommend that an administrator create an OAuth client for `datasphere` command line interface users to log into for authorization \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
 
 > ### Note:  
 > If an OAuth client is not available, users must provide a passcode for each command that they issue.
@@ -130,7 +130,7 @@ To log in, enter one of the following commands and press [Return\]:
     > Secrets files use versions of the options with underscores instead of hyphens.
 
 
-For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:.
+For more information about these commands and how to extract your tokens, see [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:.
 
 
 
@@ -181,7 +181,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -389,7 +389,7 @@ Enter the *Space ID* of the space.
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -437,7 +437,7 @@ Object definitions are read using the standard CSN syntax \(see [Core Data Servi
 > ### Note:  
 > You can also export content from and import content to your space via:
 > 
-> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the Administrator or Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
 
@@ -591,7 +591,7 @@ The space definition is written to the console or to the specified file.
 
 ## Import Objects from a .json File
 
-To import tables, views, and data access controls into a space, you must first prepare a space definition file containing valid CSN object definitions \(see [The Space Definition File Format](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\).
+To import tables, views, and data access controls into a space, you must first prepare a space definition file containing valid CSN object definitions \(see [The Space Definition File Format](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3fcbf619f2774b849fa7df58163b3609.html "Space properties are set and retrieved in the space definition file format and stored as a .json file.") :arrow_upper_right:\).
 
 When your file is ready, enter the following command and press [Return\]:
 
@@ -599,7 +599,9 @@ When your file is ready, enter the following command and press [Return\]:
 datasphere spaces create 
     --file-path <file>.json 
     [--host "<url>"] 
-    [--force-definition-deployment] 
+    [--force-definition-deployment]
+    [--enforce-database-user-deletion]
+ 
     [--verbose] 
     [--options-file <file>.json] 
     [--secrets-file <file>.json] 
@@ -636,7 +638,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
+Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in your tenant. Alternatively, set a host value \(see [Set a Host Value to Identify Your SAP Datasphere Tenant](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/7aff63c8b8164c28908beb0b47dab3e0.html "If you specify the url to your SAP Datasphere tenant with the host set command, you can issue any number of other commands without the need to include the --host option.") :arrow_upper_right:\).
 
 
 
@@ -669,6 +671,22 @@ Enter a path to a file with a .json extension containing your space definition.
 <td valign="top">
 
 \[optional\] Deploy changes to objects even if they will generate validation messages warning of impacts to objects that depend on them. Using this option is equivalent to clicking the *Deploy Anyway* button in the *Validation Messages* dialog \(see [Modifying Objects That Have Dependent Objects](modifying-objects-that-have-dependent-objects-f315863.md)\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`--enforce-database-user-deletion`
+
+
+
+</td>
+<td valign="top">
+
+\[optional\] Allow the deletion of database users and their associated Open SQL schemas, when the `dbusers` section is present in the space definition file. If any existing database user is not included in the `dbusers` section and this option is omitted, then they will not be deleted in order to protect against unintended data loss.
 
 
 

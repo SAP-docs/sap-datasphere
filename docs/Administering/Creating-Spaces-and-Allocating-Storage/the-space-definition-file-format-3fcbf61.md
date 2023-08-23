@@ -4,8 +4,6 @@
 
 Space properties are set and retrieved in the space definition file format and stored as a `.json` file.
 
-A space definition file must not exceed 25MB, and can contain the following space information:
-
 -   [Space Properties](the-space-definition-file-format-3fcbf61.md#loio3fcbf619f2774b849fa7df58163b3609__section_space_properties)
 -   [Members](the-space-definition-file-format-3fcbf61.md#loio3fcbf619f2774b849fa7df58163b3609__section_members)
 -   [Database Users](the-space-definition-file-format-3fcbf61.md#loio3fcbf619f2774b849fa7df58163b3609__section_database_users)
@@ -27,7 +25,7 @@ Users with the *DW Administrator* role can create spaces and set any space prope
       "version": "1.0.4",
       "label": "<Space_Name>",
       "assignedStorage": <bytes>,
-      "assignedRam": <bytes>,
+      "assignedRam": <bytes>A space definition file must not exceed 25MB, and can contain the following space,
       "priority": <value>,
       "injection": {
         "dppRead": {
@@ -509,7 +507,7 @@ This third file will update the *Space Priority*, and will leave the other param
 
 ## Members
 
-Users with the *DW Administrator* or *DW Space Administrator* role can add members to a space \(see [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator* or *DW Space Administrator* role can add members to a space \(see [Assign Members to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\) using the following syntax:
 
 ```
 {
@@ -627,7 +625,7 @@ For example, the following file will add three members to `NEWSPACE`:
 }
 ```
 
-When updating space members via `datasphere`, you must always list all members that you want to have assigned to the space. This second file will add two new members and remove `peter.parker@sap.com`:
+When updating space members, you must always list all members that you want to have assigned to the space. To delete a member, remove them from the `members` section. This second file will add two new members and remove `peter.parker@sap.com`:
 
 ```
 {
@@ -663,7 +661,7 @@ When updating space members via `datasphere`, you must always list all members t
 
 ## Database Users
 
-Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can add database users to a space \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can add database users to a space \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\) using the following syntax:
 
 ```
 {
@@ -939,7 +937,7 @@ For example, the following file will add a database user to `NEWSPACE`:
     "spaceDefinition": {
       "version": "1.0.4",
       "dbusers": {
-        "MYSPACE#JJONES": {
+        "NEWSPACE#JJONES": {
           "ingestion": {
             "auditing": {
               "dppRead": {
@@ -962,6 +960,8 @@ For example, the following file will add a database user to `NEWSPACE`:
 }
 ```
 
+When updating database users, you must always list all database users that you want to have assigned to the space. To delete a database user, remove them from the `dbusers` section and include the `--enforce-database-user-deletion`. If any existing database user is not included in the `dbusers` section and this option is omitted, then they will not be deleted in order to protect against unintended data loss.
+
 > ### Note:  
 > You can use the `datasphere dbusers password reset` command to obtain a new password for a database user \(see[Manage Spaces via the Command Line](manage-spaces-via-the-command-line-5eac5b7.md)\).
 
@@ -971,7 +971,7 @@ For example, the following file will add a database user to `NEWSPACE`:
 
 ## HDI Containers
 
-Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can associate HDI containers to a space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1aec7ca95af24208a61c1a444b249d95.html "Use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in your SAP Datasphere run-time database and then exchange data between your HDI containers and your SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can associate HDI containers to a space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in your SAP Datasphere run-time database and then exchange data between your HDI containers and your SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\) using the following syntax:
 
 ```
 {
@@ -1034,7 +1034,7 @@ Description
 </tr>
 </table>
 
-For example, the following file will associate two HDB containers to `NEWSPACE`:
+For example, the following file will associate two HDI containers to `NEWSPACE`:
 
 ```
 {
@@ -1049,6 +1049,8 @@ For example, the following file will associate two HDB containers to `NEWSPACE`:
   } 
 }
 ```
+
+When updating HDI containers, you must always list all HDI containers that you want to have assigned to the space. To delete an HDI container, remove them from the `hdicontainers` section.
 
 
 

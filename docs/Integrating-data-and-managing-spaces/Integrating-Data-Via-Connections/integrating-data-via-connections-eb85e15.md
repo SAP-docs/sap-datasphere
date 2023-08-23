@@ -58,7 +58,7 @@ Allows modelers to import tables from a source when creating graphical and SQL v
 
 For more information, see:
 
--   [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
+-   [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
 -   [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md)
 
 
@@ -77,7 +77,7 @@ Data Flows
 
 Allows modelers to use objects from a connected source when creating data flows to extract, transform and load data.
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:.
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:.
 
 
 
@@ -95,7 +95,7 @@ Model Import
 
 Allows modelers to import objects from any supporting SAP system with rich metadata and, if supported, with their dependencies. This way, you can leverage your existing investment in your customer system landscape without having to rebuild the objects manually.
 
-For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
+For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
 
 
 
@@ -115,7 +115,7 @@ Allows modelers to replicate data from multiple source objects from a connected 
 
 You can enable a single initial load or request initial and delta loads to load changes at regular intervals. It depends on the connection type if you can use the connection as source or target connection.
 
-For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:.
+For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:.
 
 
 

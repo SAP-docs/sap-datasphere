@@ -282,7 +282,7 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
     
-    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly. For more information on CRON schedule, see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.") :arrow_upper_right:
+    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly. For more information on CRON schedule, see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.") :arrow_upper_right:
 
 
     
@@ -312,7 +312,7 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     </td>
     <td valign="top">
     
-    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right: 
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right: 
 
 
     
@@ -1195,7 +1195,7 @@ You can then choose a space that is dedicated to task framework monitoring. For 
 
     For more information, see [Analyze Monitoring Data in a Space](analyze-monitoring-data-in-a-space-9cd0691.md).
 
--   You need to import the package that contains monitoring views via the *Content Network*. Import the package *<Technical Content: Task Monitoring\>*. For more information, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
+-   You need to import the package that contains monitoring views via the *Content Network*. Import the package *<Technical Content: Task Monitoring\>*. For more information, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
 
 Thanks to SAP Datasphere pre-configured monitoring views, you can monitor data integration tasks in a more flexible way. They are based on top of the V\_EXT HANA views \(see previous section\), and we enriched them with further information as preparation for consumption in an SAP Analytics Cloud Story.
 
@@ -1203,7 +1203,7 @@ For more information about how to create such a story,
 
 See the blogs [SAP Datasphere: Data Integration Monitoring – Sample Content for Reporting](https://blogs.sap.com/2021/10/12/sap-data-warehouse-cloud-data-integration-monitoring-sample-content-for-reporting/) \(published in October 2021\) and [SAP Datasphere: Data Integration Monitoring – Running Task Overview](https://blogs.sap.com/2021/11/04/sap-data-warehouse-cloud-data-integration-monitoring-running-task-overview/) \(published in November 2021\).
 
-For more information about data integration, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
+For more information about data integration, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
 
 > ### Restriction:  
 > Content modification is not recommended as any update will overwrite custom changes.

@@ -49,7 +49,7 @@ For more information, see [Creating Partitions for Your Persisted Views](creatin
 
 SQL or Graphical views are created in the data builder. The views are accessed directly from the source data. Once they are deployed in a space, they can be persisted.
 
-For more information, see [Creating a Graphical View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/27efb479c4814252964d3fbc6ca2dfc3.html "Create a view to query sources in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns and filter or aggregate data, and specify measures and other aspects of your output structure in the output node.") :arrow_upper_right: and [Creating an SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/81920e4d583f45fd8761c662d3c8abab.html "Create a view to query sources in a powerful SQL editor. You can choose between writing a standard SQL query using SELECT statements and operators such as JOIN and UNION, or use SQLScript to produce a table function. You can drag sources from the Source Browser, and specify measures and other aspects of your output structure in the side panel.") :arrow_upper_right:.
+For more information, see [Creating a Graphical View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/27efb479c4814252964d3fbc6ca2dfc3.html "Create a view to query sources in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns and filter or aggregate data, and specify measures and other aspects of your output structure in the output node.") :arrow_upper_right: and [Creating an SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/81920e4d583f45fd8761c662d3c8abab.html "Create a view to query sources in a powerful SQL editor. You can choose between writing a standard SQL query using SELECT statements and operators such as JOIN and UNION, or use SQLScript to produce a table function. You can drag sources from the Source Browser, and specify measures and other aspects of your output structure in the side panel.") :arrow_upper_right:.
 
 
 
@@ -65,7 +65,7 @@ For more info, see [Replicating Data and Monitoring Remote Tables](replicating-d
 
 Table created from sources that have already been integrated into SAP Datasphere. It serves of source to create a view.
 
-For more information, see [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table to contain data by defining its column structure. Tables created in SAP Datasphere can be filled with data from a CSV file or via a data flow. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table to contain data by defining its column structure. Tables created in SAP Datasphere can be filled with data from a CSV file or via a data flow. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 
 
@@ -81,7 +81,7 @@ For more information, see [Connecting SAP HANA Cloud, SAP HANA Database to Remot
 
 Define the flow of your data, starting by reading data from sources and writing data into a target after performing transformations on the data.
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:.
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:.
 
 
 
@@ -97,7 +97,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 Local files can be imported and deployed to your space. They are then used to create a local table.
 
-For more information, see [Creating a Local Table from a CSV File](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8bba251c78874736963703cff56b1b74.html "Import a .csv file to create a table and fill it with the data from the file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table from a CSV File](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8bba251c78874736963703cff56b1b74.html "Import a .csv file to create a table and fill it with the data from the file.") :arrow_upper_right:.
 
 
 
@@ -136,6 +136,9 @@ Add a new persisted view
 <td valign="top">
 
 Click *Add View* and select the view you want to persist. It's then added to the *Persisted View* list. You can then either persist the view immediately, by selecting *View Persistency* \> *Load New Snapshot*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md)\).
+
+> ### Note:  
+> For this action, *Data Builder.READ* privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to either assign the *DW Space Administrator* or *DW Administrator* role to your user or to create a custom role containing the required privileges.
 
 > ### Note:  
 > You can set up a view as persisted even if it has been created on top of remote data.
@@ -184,7 +187,7 @@ Perform action on data by clicking *View Persistency*
 <tr>
 <td valign="top">
 
-Define, edit, or delete scheduling options of your persisted view.
+Define, edit, delete, pause, resume or assign schedule to your name.
 
 
 
@@ -214,6 +217,15 @@ Select the relevant view and click: <span class="SAP-icons"></span> \(View Pe
 </td>
 </tr>
 </table>
+
+> ### Note:  
+> You can select several views to group actions whenever it's applicable:
+> 
+> -   *Schedule*: You can delete, pause or resume schedules for several views that have schedules defined. You can also assign several schedules to your name and become the owner of the schedules.
+> -   *Remove Persisted Data*: You can select several views that have persisted data and remove the persisted data for all of them.
+> -   Many actions like *Load New Snapshot*, *Run*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
+> 
+> After triggering a group of actions, the status of each action is displayed in the notification area. As these operations run in an asynchronous mode, the status will not be updated automatically, and you need to manually *Refresh* the page to get the updated status.
 
 
 

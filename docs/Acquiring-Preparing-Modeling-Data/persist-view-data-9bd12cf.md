@@ -9,16 +9,16 @@ Improve the performance while working with views by persisting the view data, an
 By default a view is run every time it is accessed and, if the view is complex or a large amount of data is processed, this may impact the performance of other views or dashboards built on top of it. You can improve performance by persisting the view data and you can schedule regular updates to keep the data fresh.
 
 > ### Note:  
-> If your view consumes remote tables, check for additional and potential limitations. See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:.
+> If your view consumes remote tables, check for additional and potential limitations. See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow space members to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:.
 > 
-> While persisting complex views, see [View Persistency and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
+> While persisting complex views, see [View Persistency and Memory Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 
 
 When opening your view, in the *Properties* panel, under *Persistency*, you can see if your view has been made persisted or not.
 
 > ### Note:  
-> You can monitor persisted views in the *Data Integration Monitor*, under the tab *View Persistency Monitor*. You can access it directly by clicking <span class="SAP-icons"></span> \(Open Monitor\). For more information, see [Adding and Monitoring Persisted Views](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9af04c990f294fd28c00f46763dd8b0d.html "In the Data Integration Monitor, you can add and monitor, and schedule persisted views. Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> You can monitor persisted views in the *Data Integration Monitor*, under the tab *View Persistency Monitor*. You can access it directly by clicking <span class="SAP-icons"></span> \(Open Monitor\). For more information, see [Adding and Monitoring Persisted Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "In the Data Integration Monitor, you can add and monitor, and schedule persisted views. Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 
 
 <table>
@@ -108,9 +108,9 @@ You can perform actions on data by clicking *View Persistency Actions*:
 
 ## Schedule View Persistency Tasks
 
-Define, edit, or delete scheduling options of your persisted view.
+Define, edit, delete, pause, resume or assign schedule to your name.
 
-For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:.
+For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:.
 
 
 
@@ -132,5 +132,5 @@ When you deploy a persisted view, you need to consider the following cases:
 
 ## Persistency and Data Access Control
 
-While defining *Data Access Control* in your view, you need to consider the impact on the persistency. For more information, see [View Persistency and Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7a4a983611cc4efb9415e6f3db310eaa.html "When Data Access Control is defined, it can impact the View Persistency. Depending on where the Data Access Control is set, it might prevent you from persisting a view.") :arrow_upper_right:.
+While defining *Data Access Control* in your view, you need to consider the impact on the persistency. For more information, see [View Persistency and Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7a4a983611cc4efb9415e6f3db310eaa.html "When Data Access Control is defined, it can impact the View Persistency. Depending on where the Data Access Control is set, it might prevent you from persisting a view.") :arrow_upper_right:.
 

@@ -20,6 +20,9 @@ To use the *View Analyzer*,
 
 2.  Select *View Persistency* \> *Start View Analyzer*.
 
+    > ### Note:  
+    > For this action, *Data Builder.READ* privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to either assign the *DW Space Administrator* or *DW Administrator* role to your user or to create a custom role containing the required privileges.
+
     You can choose between 2 options:
 
     -   Run the *View Analyzer* without memory consumption: The *View Analyzer* will not execute the persistency simulation. For views already persisted , the memory consumption of view persistency task will be shown. The analyzer will analyze the entities that compose your data model and will provide you with the information it has collected.
@@ -33,10 +36,10 @@ To use the *View Analyzer*,
 
         ![](images/View_Analyzer_Settings_With_Memory_Consumption_6fe57f8.png)
 
-        Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set a Priority and Statement Limits for a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Use the properties in the Workload Management section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume.") :arrow_upper_right:.
+        Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set a Priority and Statement Limits for a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Use the properties in the Workload Management section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume.") :arrow_upper_right:.
 
         > ### Caution:  
-        > To use the *View Analyzer* with memory consumption during persistency simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:.
+        > To use the *View Analyzer* with memory consumption during persistency simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:.
 
 
 3.  Analyze your results

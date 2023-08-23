@@ -19,7 +19,7 @@ The SAP Datasphere command line interface \(`datasphere`\) is a `Node.js` packag
 
 You have installed the following on your system:
 
--   `Node.js` version \>= 16
+-   `Node.js` version \>= 18
 -   `npm` version \>= 8
 
 `npm` is distributed with `Node.js`. Therefore, when you download `Node.js`, `npm` is automatically installed. To download the `Node.js` installer, see [nodejs.org](https://nodejs.org/en/).

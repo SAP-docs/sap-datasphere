@@ -4,7 +4,7 @@
 
 # Importing Content from Another Tenant
 
-Users with the Administrator or Space Administrator role can import content that has been shared from another tenant.
+Users with the *DW Administrator* or *DW Space Administrator* role can import content that has been shared from another tenant.
 
 
 
@@ -17,7 +17,7 @@ Users with the Administrator or Space Administrator role can import content that
     Be aware that if your content contains objects that are shared from one space to another, then both spaces must exist.
 
     > ### Note:  
-    > The <span class="FPA-icons"></span> \(*Transport*\) app cannot create spaces or connections and cannot import content into a space with a different technical name to the space from which the content was exported. Only an administrator can create spaces \(see [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.") :arrow_upper_right:\), while an administrator, space administrator, or integrator can create connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
+    > The <span class="FPA-icons"></span> \(*Transport*\) app cannot create spaces or connections and cannot import content into a space with a different technical name to the space from which the content was exported. Only an administrator can create spaces \(see [Create a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.") :arrow_upper_right:\), while an administrator, space administrator, or integrator can create connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
 
 2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
 

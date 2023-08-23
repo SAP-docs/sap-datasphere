@@ -8,7 +8,7 @@ Use an *Oracle* connection to access data from an Oracle database \(on-premise\)
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -266,7 +266,7 @@ Enter the Oracle user password
 
 To enable *Remote Tables*, select a Data Provisioning Agent.
 
-*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
+*Data Flows* are enabled without the need to set any additional connection properties.
 
 
 
