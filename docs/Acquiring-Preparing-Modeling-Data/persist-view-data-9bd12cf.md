@@ -18,7 +18,7 @@ By default a view is run every time it is accessed and, if the view is complex o
 When opening your view, in the *Properties* panel, under *Persistency*, you can see if your view has been made persisted or not.
 
 > ### Note:  
-> You can monitor persisted views in the *Data Integration Monitor*, under the tab *View Persistency Monitor*. You can access it directly by clicking <span class="SAP-icons"></span> \(Open Monitor\). For more information, see [Adding and Monitoring Persisted Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "In the Data Integration Monitor, you can add and monitor, and schedule persisted views. Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> You can monitor persisted views in the *Data Integration Monitor*, under the tab *View Persistency Monitor*. You can access it directly by clicking <span class="SAP-icons"></span> \(Open Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "In the Data Integration Monitor, you can monitor, persist or schedule view persistency. Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 
 
 <table>

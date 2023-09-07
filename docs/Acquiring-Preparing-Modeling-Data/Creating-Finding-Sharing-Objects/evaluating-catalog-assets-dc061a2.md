@@ -66,7 +66,7 @@ Asset Functional Status and Source System
 </td>
 <td valign="top">
 
-Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "As a catalog administrator, you determine what content is discoverable and visible to users who are searching in the catalog. You can publish a single asset from the asset details page, or you can publish several assets from the catalog home page.") :arrow_upper_right:.
+Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "Users with the Catalog Administrator role can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, users can discover content.") :arrow_upper_right:.
 
 
 
@@ -229,7 +229,7 @@ Displays the asset description, which has two parts.
 Displays the relationships for the asset. These relationships can include glossary terms, tags, and KPIs that are linked to the asset.
 
 > ### Tip:  
-> If you're a catalog administrator who wants to manage relationships to assets, see [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "As a catalog administrator, learn how to set up governance for your assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
+> If you're a catalog administrator who wants to manage relationships to assets, see [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
 
 ![](images/Asset_Detail_Term_Tag_ac5b3b4.png)
 
@@ -310,7 +310,7 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 Use the *Details* tab to review detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each data or analytic object.
 
 > ### Note:  
-> This tab appears only if the asset has details that can be shown. Currently, detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes in the source system, extracts metadata for the data and analytic objects, and updates the assets in the catalog.") :arrow_upper_right:.
+> This tab appears only if the asset has details that can be shown. Currently, detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 

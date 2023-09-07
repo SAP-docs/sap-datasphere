@@ -16,7 +16,7 @@ From <span class="FPA-icons"></span> \(*Data Integration Monitor*\), you can 
     > ### Note:  
     > Remote tables from a source that is configured as data access *Remote Only* are not displayed in this monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md) 
 
--   *View Persistency Monitor*: Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Adding and Monitoring Persisted Views](adding-and-monitoring-persisted-views-9af04c9.md).
+-   *View Persistency Monitor*: Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
 -   *Data Flow Monitor*: View and monitor the execution details of the executed data flows. For more information, see [Monitoring Flows](monitoring-flows-b661ea0.md).
 -   *Remote Query Monitor*:
     -   *Remote Queries*: Check and analyze how the communication is running between the federation layer of SAP HANA Cloud and the connected remote source systems. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).

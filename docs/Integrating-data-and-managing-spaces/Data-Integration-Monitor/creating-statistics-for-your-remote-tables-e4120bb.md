@@ -25,6 +25,9 @@ To ensure the best possible performance when accessing your remote tables and pr
 >         -   SAP BW
 >         -   SAP ECC
 >         -   SAP S/4HANA On-Premise
+> 
+> 
+> -   If your remote table is based on Google BigQuery source, and if it contains one or more columns with data type STRUCT, then you can only create statistics of type *RECORD COUNT*.
 
 Statistics can be created from the *Remote Query Monitor*.
 

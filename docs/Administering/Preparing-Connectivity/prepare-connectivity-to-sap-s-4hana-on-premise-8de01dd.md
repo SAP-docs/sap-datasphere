@@ -44,7 +44,7 @@ Before you can use the connection for data flows, the following is required:
 
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
 
--   Supported source versions: SAP S/4HANA version 1909 FPS01 plus SAP Note [2873666](https://launchpad.support.sap.com/#/notes/2873666) \(*SAP Data Hub / Data Intelligence ABAP Integration - TCI note for SAP\_ABA 1909 SP0/SP1*\) or a higher SAP S/4HANA version
+-   Supported source versions: SAP S/4HANA version 1909 FPS01 plus SAP Note [2873666](https://me.sap.com/notes/2873666) \(*SAP Data Hub / Data Intelligence ABAP Integration - TCI note for SAP\_ABA 1909 SP0/SP1*\) or a higher SAP S/4HANA version
 
 
 
@@ -61,9 +61,9 @@ Before you can use the connection for replication flows, the following is requir
 
 -   For CDS views, replication is supported for version 1909 and later. TCI note implementation is required for:
 
-    -   SAP S/4HANA 1909 with TCI Note [3105890](https://launchpad.support.sap.com/#/notes/3105890) and central note [2830276](https://launchpad.support.sap.com/#/notes/2830276).
-    -   SAP S/4HANA 2020 with TCI Note [3105880](https://launchpad.support.sap.com/#/notes/3105880) and central note [2943599](https://launchpad.support.sap.com/#/notes/2943599).
-    -   SAP S/4HANA 2021 with TCI Note [3115128](https://launchpad.support.sap.com/#/notes/3115128) and central note [3085579](https://launchpad.support.sap.com/#/notes/3085579).
+    -   SAP S/4HANA 1909 with TCI Note [3105890](https://me.sap.com/notes/3105890) and central note [2830276](https://me.sap.com/notes/2830276).
+    -   SAP S/4HANA 2020 with TCI Note [3105880](https://me.sap.com/notes/3105880) and central note [2943599](https://me.sap.com/notes/2943599).
+    -   SAP S/4HANA 2021 with TCI Note [3115128](https://me.sap.com/notes/3115128) and central note [3085579](https://me.sap.com/notes/3085579).
 
     For information about which ABAP CDS Views are available for extraction, see [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/8308e6d301d54584a33cd04a9861bc52/latest/en-US/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation.
 
@@ -72,7 +72,7 @@ Before you can use the connection for replication flows, the following is requir
 -   ODP-based replication is supported for ODP context ODP\_SAPI and ODP\_BW, and requires ODP API version 2.
 
 
-For more information about integrating ABAP-based SAP systems, see [2890171](https://launchpad.support.sap.com/#/notes/2890171).
+For more information about integrating ABAP-based SAP systems, see [2890171](https://me.sap.com/notes/2890171).
 
 
 
@@ -86,11 +86,11 @@ Before you can use the connection to import entities, the following is required:
 
 ### In SAP S/4HANA
 
--   An administrator has followed the instructions from SAP Note [3081998](https://launchpad.support.sap.com/#/notes/3081998) to properly set up the SAP S/4HANA system, which includes:
+-   An administrator has followed the instructions from SAP Note [3081998](https://me.sap.com/notes/3081998) to properly set up the SAP S/4HANA system, which includes:
 
-    1.  SAP Note [3283282](https://launchpad.support.sap.com/#/notes/3283282) has been implemented to provide the required infrastructure in the SAP S/4HANA system.
+    1.  SAP Note [3283282](https://me.sap.com/notes/3283282) has been implemented to provide the required infrastructure in the SAP S/4HANA system.
 
-    2.  The required corrections have been implemented and checks have been performed to make sure that SAP Note [3283282](https://launchpad.support.sap.com/#/notes/3283282) and subsequent corrections have been applied properly and all required objects to provide the infrastructure are available and activated.
+    2.  The required corrections have been implemented and checks have been performed to make sure that SAP Note [3283282](https://me.sap.com/notes/3283282) and subsequent corrections have been applied properly and all required objects to provide the infrastructure are available and activated.
 
     3.  Report `ESH_CSN_CDS_TO_CSN` has been run to prepare the CDS Views for the import.
 

@@ -378,7 +378,7 @@ Bulgarian \(bgBG\); Catalan \(caES\); Chinese \(zhTW\); Chinese \(Simplified\) \
 
 ### Connectivity with SAP HANA Smart Data Integration
 
-We recommend to always use the latest released version of the Data Provisioning Agent but at least the recommended minimum version from SAP Note [2419138](https://launchpad.support.sap.com/#/notes/2419138). Make sure that all agents that you want to connect to SAP Datasphere have the same latest version.
+We recommend to always use the latest released version of the Data Provisioning Agent but at least the recommended minimum version from SAP Note [2419138](https://me.sap.com/notes/2419138). Make sure that all agents that you want to connect to SAP Datasphere have the same latest version.
 
 For more information, including information on minimum requirements for source systems and databases, see:
 

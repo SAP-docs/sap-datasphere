@@ -48,7 +48,7 @@ Download the latest Data Provisioning Agent 2.0 version from SAP Software Downlo
     For more information, see [Install from the Command Line](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/c00f296abd4046ccb59ccbfb5f69d547.html?locale=en-US&version=latest) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
 
     > ### Note:  
-    > If you have upgraded your Data Provisioning Agent to version 2.5.1 and want to create an Amazon Redshift connection, apply SAP note [2985825](https://launchpad.support.sap.com/#/notes/2985825).
+    > If you have upgraded your Data Provisioning Agent to version 2.5.1 and want to create an Amazon Redshift connection, apply SAP note [2985825](https://me.sap.com/notes/2985825).
 
 
 [Install the Data Provisioning Agent](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/dd8aaa71a6d4490485b8eb5123f46149.html)

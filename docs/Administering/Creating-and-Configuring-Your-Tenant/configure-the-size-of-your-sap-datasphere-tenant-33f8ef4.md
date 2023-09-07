@@ -57,6 +57,8 @@ To view all supported size combinations for compute and storage resources and th
 
 ## Tenant Configuration Page Properties
 
+**Base Configuration**
+
 
 <table>
 <tr>
@@ -136,6 +138,28 @@ Displays the size of memory calculated based on the selected number of compute b
 
 </td>
 </tr>
+</table>
+
+**Additional Data Warehouse Configuration**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
@@ -191,17 +215,55 @@ The process for allocating capacity units to SAP BW Bridge is not part of the co
 
 </td>
 </tr>
+</table>
+
+**Data Integration**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
-*Node Hours*
+*Data Integration*
 
 
 
 </td>
 <td valign="top">
 
-Included by default. The number of node hours available for Data Integration applications cannot be changed.
+Select the number of compute blocks to allocate to Data Integration applications.You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Execution Hours*
+
+
+
+</td>
+<td valign="top">
+
+The number of node hours available for Data Integration applications per month is calculated from the number of allocated compute blocks.
 
 
 
@@ -217,11 +279,33 @@ Included by default. The number of node hours available for Data Integration app
 </td>
 <td valign="top">
 
-The maximum number of parallel Data Integration application jobs cannot be changed.
+The maximum number of parallel jobs is calcuated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maxiumum of 10.
 
 
 
 </td>
+</tr>
+</table>
+
+**Catalog**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -287,14 +371,27 @@ The maximum number of parallel Catalog jobs cannot be changed.
 
 </td>
 </tr>
+</table>
+
+**Information for subscription-based tenants only**
+
+
+<table>
 <tr>
-<td valign="top" colspan="2">
+<th valign="top">
 
-Properties for subscription-based tenants only:
+Property
 
 
 
-</td>
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -315,7 +412,7 @@ Displays the total number of capacity units consumed by the storage and compute 
 <tr>
 <td valign="top">
 
-*Available Units*
+*Your Subscription: Available Units*
 
 
 
@@ -331,7 +428,7 @@ Displays the number of capacity units that are available for the tenant.
 <tr>
 <td valign="top">
 
-*Units in Use*
+*Your Consumption: Units in Use*
 
 
 
@@ -347,7 +444,7 @@ Displays the number of capacity units that you've already allocated to the stora
 <tr>
 <td valign="top">
 
-*Remaining Units*
+*Your Consumption: Remaining Units*
 
 
 
@@ -360,14 +457,27 @@ Displays the number of capacity units that you can still allocate to the storage
 
 </td>
 </tr>
+</table>
+
+**Information for consumption-based tenants created in SAP BTP only**
+
+
+<table>
 <tr>
-<td valign="top" colspan="2">
+<th valign="top">
 
-Properties for consumption-based tenants created in SAP BTP only:
+Property
 
 
 
-</td>
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
 </tr>
 <tr>
 <td valign="top">

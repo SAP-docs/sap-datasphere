@@ -281,6 +281,9 @@ The definition of an authorization scenario contains the definition of its data 
 
 1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Export*\) and then click :heavy_plus_sign:.
 
+    > ### Note:  
+    > You can, alternatively, use the*Packages* app to prepare and export packages \(see [Creating Packages to Export](creating-packages-to-export-24aba84.md)\).
+
 2.  On the *Choose content* page, expand the *SPACE* folder to show your spaces, select the objects you want to export, and then click *Next*.
 
     You can select a space to include all its objects, or expand it to select individual objects within it.

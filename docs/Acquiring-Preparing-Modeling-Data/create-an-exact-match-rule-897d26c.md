@@ -162,7 +162,20 @@ Create an exact match rule to compare values in input entity columns and lookup 
     > ### Note:  
     > You can only map a column to a column of the same data type.
 
-3.  \[optional\] Control case-sensitivity and whitespace trimming with the options in the *Advanced Settings* section.
+3.  \[optional\] Specify filters to restrict the records from your input and/or lookup entities that will be considered for matching in the rule using the following sections:
+
+    -   *Input Records Filter* - Specify a filter expression to restrict the input records that are considered for matching in the rule. You can reference any of the columns in the input entity and use any standard operators.
+    -   *Lookup Records Filter* - Specify a filter expression to restrict the lookup records that are considered for matching in the rule. You can reference any of the columns in the lookup entity and use any standard operators.
+
+    For example entering `Revenue > 100000 AND Status = 'Active'` would restrict the records to be processed to only those meeting both these criteria. 
+
+    If an *Input Records Filter* is defined, a filter symbol is displayed in the top-left corner of the rule symbol.
+
+    ![](images/IL_Rule_Filters_0a48d90.png)
+
+    If a *Lookup Records Filter* is defined, a filter symbol is displayed in the bottom-left corner of the rule symbol.
+
+4.  \[optional\] Control case-sensitivity and whitespace trimming with the options in the *Advanced Settings* section.
 
 
     <table>
@@ -220,7 +233,7 @@ Create an exact match rule to compare values in input entity columns and lookup 
     </tr>
     </table>
     
-4.  Save, deploy, and run your intelligent lookup to see the results of your rule.
+5.  Save, deploy, and run your intelligent lookup to see the results of your rule.
 
     1.  Click <span class="SAP-icons"></span> \(Deploy\) to save and deploy your intelligent lookup.
 

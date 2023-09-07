@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Adding and Monitoring Persisted Views
+# Persisting and Monitoring Views
 
-In the *Data Integration Monitor*, you can add and monitor, and schedule persisted views. Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
+In the *Data Integration Monitor*, you can monitor, persist or schedule view persistency. Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
 
 **Prerequisites**: Your view must be deployed.
 

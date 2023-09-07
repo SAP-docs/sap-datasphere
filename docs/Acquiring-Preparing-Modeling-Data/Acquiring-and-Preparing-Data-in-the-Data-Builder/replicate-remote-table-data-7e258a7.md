@@ -39,7 +39,7 @@ By default, when you import a remote table, its data is not replicated and must 
             > -   The data provisioning agent is not disconnected.
             > -   The real-time replication is not paused at connection level and is working properly.
             > 
-            > If one of the requirement is not met, some objects won't be deleted and you'll have to delete them manually. See [3307334](https://launchpad.support.sap.com/#/notes/3307334) for more information.
+            > If one of the requirement is not met, some objects won't be deleted and you'll have to delete them manually. See [3307334](https://me.sap.com/notes/3307334) for more information.
 
         -   *Enable Real-Time Access*:
 

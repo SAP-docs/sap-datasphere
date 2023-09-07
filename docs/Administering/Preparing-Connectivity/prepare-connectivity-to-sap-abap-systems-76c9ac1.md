@@ -24,7 +24,7 @@ Before you can use the connection for creating views and accessing data via remo
 
 -   If you want to stream ABAP tables for loading large amounts of data without running into memory issues, you need to configure suitable security privileges for successful registration on an SAP Gateway and you need to create an RFC destination of type TCP/IP in the ABAP source system. With the RFC destination you register the Data Provisioning Agent as server program in the source system. For more information, see [Prerequisites for ABAP RFC Streaming](prerequisites-for-abap-rfc-streaming-62adb44.md).
 
--   To be able to use ABAP Dictionary tables from connections to a SAP BW∕4HANA system for remote tables and creating views, please make sure that SAP note [2872997](https://launchpad.support.sap.com/#/notes/2872997) has been applied to the system.
+-   To be able to use ABAP Dictionary tables from connections to a SAP BW∕4HANA system for remote tables and creating views, please make sure that SAP note [2872997](https://me.sap.com/notes/2872997) has been applied to the system.
 
 
 
@@ -43,9 +43,9 @@ Before you can use the connection for data flows, the following is required:
 
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
 
-    See also: SAP Note [2835207](https://launchpad.support.sap.com/#/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
+    See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
--   For SAP S/4HANA, source version 1909 FPS01 plus SAP Note [2873666](https://launchpad.support.sap.com/#/notes/2873666) or higher versions are supported.
+-   For SAP S/4HANA, source version 1909 FPS01 plus SAP Note [2873666](https://me.sap.com/notes/2873666) or higher versions are supported.
 
 -   When connecting to SAP LT Replication Server:
 
@@ -103,5 +103,5 @@ Before you can use the connection for replication flows, the following is requir
 
 
 
-For more information about integrating ABAP-based SAP systems, see [2890171](https://launchpad.support.sap.com/#/notes/2890171).
+For more information about integrating ABAP-based SAP systems, see [2890171](https://me.sap.com/notes/2890171).
 

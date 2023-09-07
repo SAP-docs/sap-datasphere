@@ -30,7 +30,7 @@ In the Flow Monitor, you can find all the deployed flows \(data flows and replic
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
-For more information and points to consider when using replication flows, see also [SAP Note 3297105](https://launchpad.support.sap.com/#/notes/SAP Note 3297105).
+For more information and points to consider when using replication flows, see also [SAP Note 3297105](https://me.sap.com/notes/SAP Note 3297105).
 
 
 
@@ -91,7 +91,7 @@ For more information and points to consider when using replication flows, see al
     Indicates the status of the last run of the flow. For more information on specifics for replication flow runs, see [Working With Existing Replication Flow Runs](working-with-existing-replication-flow-runs-da62e1e.md).
 
     > ### Note:  
-    > If the status of a flow is empty, it means that the data flow has not run yet.
+    > If the status of a flow is empty, it means that the flow has not run yet.
 
 
     

@@ -82,7 +82,7 @@ FAIL\_CONSENT\_INVALIDATED
 </td>
 <td valign="top">
 
-This task or task chain could not be executed, typically due to a change in the Identity Provider configuration of the tenant. In that case, no new task jobs or task chains can be run or scheduled in the name of the affected user. If the assigned user still exists in the new IdP, revoke the scheduling consent and then grant it again. If the assigned user no longer exists, assign a new task job or task chain owner and provide the required task scheduling consent. See the following SAP note [3089828](https://launchpad.support.sap.com/#/notes/3089828) for more information.
+This task or task chain could not be executed, typically due to a change in the Identity Provider configuration of the tenant. In that case, no new task jobs or task chains can be run or scheduled in the name of the affected user. If the assigned user still exists in the new IdP, revoke the scheduling consent and then grant it again. If the assigned user no longer exists, assign a new task job or task chain owner and provide the required task scheduling consent. See the following SAP note [3089828](https://me.sap.com/notes/3089828) for more information.
 
 
 

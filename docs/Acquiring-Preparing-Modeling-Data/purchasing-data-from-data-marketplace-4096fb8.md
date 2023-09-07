@@ -5,7 +5,7 @@
 Enrich your own data with third-party data products.
 
 > ### Note:  
-> Data Marketplace and the Data Sharing Cockpit are only available in SAP Datasphere tenants provisioned since January 25, 2021. See [3148585](https://launchpad.support.sap.com/#/notes/3148585) for more information.
+> Data Marketplace and the Data Sharing Cockpit are only available in SAP Datasphere tenants provisioned since January 25, 2021. See [3148585](https://me.sap.com/notes/3148585) for more information.
 
 
 

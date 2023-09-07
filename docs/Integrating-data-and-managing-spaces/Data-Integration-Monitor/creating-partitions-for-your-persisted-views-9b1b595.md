@@ -38,19 +38,28 @@ The columns available for selection are a subset of all view output columns. Som
 
     For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
 
--   You can't select a column containing analytical measures as partitioning-columns, only columns containing dimensions can be partitioned.
+-   You can't select a column containing analytical measures as partitioning-columns, only columns containing dimensions can be used as partitioning columns.
 -   If you select a non-key column to define your partitions, you must ensure that the column value of a record in the source data is not changed while the view is persisted. Otherwise, data loading may fail because a record with the same key is persisted in two different partitions.
 
 > ### Note:  
 > Partitioning is not recommended on columns that stem from remote tables using ABAP adapter with ODP, as related filter conditions are not pushed to the source. Instead, use remote table partitioning. For connections using OData adapter, Camel JDBC adapter, or Cloud Data Integration adapter, partitioning may not have the desired effect as the related adapters have only limited capabilities and do may not push selections on partitioning intervals to the source system.
 
-You can either select on a column that suits your business case:
+You can either select on a column that suits your business case, or switch on the option *Rate Column Suitability*:
 
 ![](images/Select_Column_For_Partitioning_8ac6d94.png)
 
-Or click *Suggested Partitioning Columns*. When selecting *Suggested Partitioning Columns*, the list of column candidates is restricted to the most suitable columns for partitioning. A technical analysis of your view definition is carried out to determine which columns are suitable. For example, calculated columns or columns with moving values \(such as last changed date\) are excluded as it might be difficult to do a reliable partitioning on such data:
+It runs a technical analysis of your view definition to calculate the level of suitability for partitioning for each column. For example, calculated columns or columns with moving values \(such as last changed date\) are not suitable as it might be difficult to do a reliable partitioning on such data.
 
-![](images/Suggested_Partitioning_Columns_c967fcb.png)
+In a first step, general findings are displayed:
+
+![](images/Suitable_Partitioning_Columns_1_c967fcb.png)
+
+In a 2nd step, the columns are sorted by their partitioning suitability, and additional information is displayed:
+
+-   *Rating*: It shows the suitability column rating. Possible values can be good, intermediate or bad.
+-   *Details*: It shows additional details about important factors that influence the suitability for each column to help you with your choice. It can be one message or multiple messages.
+
+![](images/Suitable_Patitioning_Column_2_0965159.png)
 
 
 

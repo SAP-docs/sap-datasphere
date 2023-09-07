@@ -22,6 +22,8 @@ Your object's status may be updated when changes to one or more of its sources a
 
 
 
+<a name="loio702350c755d24d629545de04673acb1b__Steps_Source_Changes"/>
+
 ## Procedure
 
 1.  If a source change has generated warnings or errors in your view, you will receive a notification inviting you to review them, and you can click the notification to open it directly.

@@ -315,7 +315,7 @@ To troubleshoot connection issues, a Data Provisioning Agent administrator can e
 
 -   **Agent Logs**
 
-    Change the logging level to INFO \(default\), ALL, DEBUG, or TRACE according to your needs. For more informatiaon, see SAP Note [2496051](https://launchpad.support.sap.com/#/notes/2496051) - *How to change "Logging Level" \(Trace level\) of a Data Provisioning Agent - SAP HANA Smart Data Integration*.
+    Change the logging level to INFO \(default\), ALL, DEBUG, or TRACE according to your needs. For more informatiaon, see SAP Note [2496051](https://me.sap.com/notes/2496051) - *How to change "Logging Level" \(Trace level\) of a Data Provisioning Agent - SAP HANA Smart Data Integration*.
 
     The parameters for the logging level in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/dpagentconfig.ini</code> file are:
 
@@ -327,7 +327,7 @@ To troubleshoot connection issues, a Data Provisioning Agent administrator can e
     > ### Note:  
     > Changing the level to DEBUG or ALL will generate a large amount of data. We therefore recommend to change the logging level to these values only for a short period of time while you are actively debugging and change it to a lower information level after you have finished debugging.
 
-    See also SAP Note [2461391](https://launchpad.support.sap.com/#/notes/2461391) - *Where to find Data Provisioning Agent Log Files*
+    See also SAP Note [2461391](https://me.sap.com/notes/2461391) - *Where to find Data Provisioning Agent Log Files*
 
 -   **JDBC Trace**
 
@@ -342,13 +342,13 @@ To troubleshoot connection issues, a Data Provisioning Agent administrator can e
 
 ## Performance
 
-If you experience performance issues when replicating data via the Data Provisioning Agent, a Data Provisioning Agent administrator can consider increasing the agent memory as described in SAP Note [2737656](https://launchpad.support.sap.com/#/notes/2737656) - *How to increase DP Agent memory*.
+If you experience performance issues when replicating data via the Data Provisioning Agent, a Data Provisioning Agent administrator can consider increasing the agent memory as described in SAP Note [2737656](https://me.sap.com/notes/2737656) - *How to increase DP Agent memory*.
 
 For general memory sizing recommendations for SAP HANA Smart Data Integration, see
 
 -   [Data Provisioning Agent - Best Practices and Sizing Guide](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/bf2f0282053648f8a1ef873e65ded81a/eae32342b3b643639210675dbf4b06b6.html?locale=en-US&version=latest) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
 
--   SAP Note [2688382](https://launchpad.support.sap.com/#/notes/2688382) - *SAP HANA Smart Data Integration Memory Sizing Guideline*
+-   SAP Note [2688382](https://me.sap.com/notes/2688382) - *SAP HANA Smart Data Integration Memory Sizing Guideline*
 
 
 
@@ -450,7 +450,7 @@ For more information, see:
 
 -   [Add IP address to IP Allowlist](Preparing-Connectivity/add-ip-address-to-ip-allowlist-a3c2145.md)
 
--   SAP Note [2938870](https://launchpad.support.sap.com/#/notes/2938870) - *Errors when connecting DP Agent with DWC*
+-   SAP Note [2938870](https://me.sap.com/notes/2938870) - *Errors when connecting DP Agent with DWC*
 
 
 
@@ -491,7 +491,7 @@ When testing the connectivity directly with the JDBC driver, add the parameter `
 
 ## Reviewing Data Provisioning Agent Logs
 
-The logs are located in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/log</code> directory. For more information on the available log files, see SAP Note [2461391](https://launchpad.support.sap.com/#/notes/2461391).
+The logs are located in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/log</code> directory. For more information on the available log files, see SAP Note [2461391](https://me.sap.com/notes/2461391).
 
 If the agent is connected, you can review the framework log \(`framework_alert.trc`\) and the framework trace log \(`framework.trc`\) directly in SAP Datasphere. For more information, see [Monitoring Data Provisioning Agent Logs](monitoring-data-provisioning-agent-logs-e49785b.md).
 
@@ -501,19 +501,19 @@ If the agent is connected, you can review the framework log \(`framework_alert.t
 
 ## SAP Notes
 
-SAP Note [2938870](https://launchpad.support.sap.com/#/notes/2938870) - *Errors when connecting DP Agent with DWC* 
+SAP Note [2938870](https://me.sap.com/notes/2938870) - *Errors when connecting DP Agent with DWC* 
 
-SAP Note [2894588](https://launchpad.support.sap.com/#/notes/2894588) - *IP Allowlist in SAP Datasphere*
+SAP Note [2894588](https://me.sap.com/notes/2894588) - *IP Allowlist in SAP Datasphere*
 
-SAP Note [2511196](https://launchpad.support.sap.com/#/notes/2511196) - *What ports are used by Smart Data Integration*
+SAP Note [2511196](https://me.sap.com/notes/2511196) - *What ports are used by Smart Data Integration*
 
-SAP Note [2091095](https://launchpad.support.sap.com/#/notes/2091095) - *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality*
+SAP Note [2091095](https://me.sap.com/notes/2091095) - *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality*
 
-SAP Note [2400022](https://launchpad.support.sap.com/#/notes/2400022) - *FAQ: SAP HANA Smart Data Integration \(SDI\)*
+SAP Note [2400022](https://me.sap.com/notes/2400022) - *FAQ: SAP HANA Smart Data Integration \(SDI\)*
 
-SAP Note [2477204](https://launchpad.support.sap.com/#/notes/2477204) - *FAQ: SAP HANA Services and Ports*
+SAP Note [2477204](https://me.sap.com/notes/2477204) - *FAQ: SAP HANA Services and Ports*
 
-SAP Note [2688382](https://launchpad.support.sap.com/#/notes/2688382) - *SAP HANA Smart Data Integration Memory Sizing Guideline*
+SAP Note [2688382](https://me.sap.com/notes/2688382) - *SAP HANA Smart Data Integration Memory Sizing Guideline*
 
 
 

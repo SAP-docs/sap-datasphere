@@ -28,6 +28,9 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     > ### Note:  
     > Data flow currently doesn't support double quotes in column names, table names, owners, or other identifiers. If the source or target operators in a data flow contains double quotes, we recommend you to create a view in the source or in SAP Datasphere that renames the columns containing double quotes.
 
+    > ### Restriction:  
+    > Data flows don't support spatial data type columns.
+
 3.  Transform your data using one or more operators:
 
     -   *Join* - Insert a join operator to merge two data sets together using a join definition to match the records. See [Create a Join Operator](create-a-join-operator-e57633d.md).

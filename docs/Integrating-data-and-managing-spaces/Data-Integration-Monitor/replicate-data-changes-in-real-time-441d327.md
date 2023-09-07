@@ -46,7 +46,7 @@ Use real-time replication to copy the data changes from your source object in re
         See the blog [Finding the right CDS Extractor in SAP S/4HANA](https://blogs.sap.com/2022/01/07/finding-the-right-cds-extractor-in-sap-s-4hana/) \(published in January 2022\).
 
         > ### Note:  
-        > For an overview of all extractors released for ODP replication \(ODP SAPI\), see SAP note [2232584](https://launchpad.support.sap.com/#/notes/2232584).
+        > For an overview of all extractors released for ODP replication \(ODP SAPI\), see SAP note [2232584](https://me.sap.com/notes/2232584).
 
 
 -   For remote tables using an SAP HANA smart data access connection \(SAP HANA on-premise via Cloud Connector or SAP HANA Cloud\), you can replicate your data changes in real-time but with some restrictions as some remote object types are not supported:

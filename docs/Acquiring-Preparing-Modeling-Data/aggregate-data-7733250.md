@@ -14,6 +14,8 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
 
 
+<a name="loio7733250f9d2a46b690a5288634d269f0__Steps"/>
+
 ## Procedure
 
 1.  Identify one or more columns containing data that you want to aggregate. The columns must have a numerical data type and can be calculated columns.
