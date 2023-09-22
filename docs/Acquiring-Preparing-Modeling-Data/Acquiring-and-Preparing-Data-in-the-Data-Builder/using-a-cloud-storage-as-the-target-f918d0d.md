@@ -16,9 +16,20 @@ Each file contains the source columns as defined in the mapping for the replicat
 
 -   *\_\_operation\_type*: Identifies the type of target row:
     -   *L*: Written as part of the initial load.
+
     -   *I*: After the initial load completed, new source row added.
-    -   *U*: After the initial load completed, update to a source row.
-    -   *X*: After the initial load completed, source row deleted. The only target columns to contain data for this operation code are those that reflect the source key columns. All other target columns are empty.
+
+    -   *U*: After the initial load completed, after image of an update to a source row.
+
+        > ### Note:  
+        > For some sources the system switches the value *U* to *A* after you apply SAP Note [3044005](https://me.sap.com/notes/3044005). The APE\_KEEP\_UPDATE\_OPERATION parameter is described in the SAP Note.
+
+    -   *B*: After the initial load completed, before image of an update to a source row. These records are only sent by some sources \(like SAP HANA\) and only when the after image of the update is not passing the filters specified in the replication task.
+
+    -   *X*: After the initial load completed, source row deleted. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
+
+    -   *M*: After the initial load completed, archiving operations.
+
 
 -   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is not populated for all source systems \(for example, ABAP\).
 -   *\_\_timestamp*: The UTC date and time the system wrote the row.

@@ -1,6 +1,6 @@
-<!-- loio7733250f9d2a46b690a5288634d269f0 -->
+<!-- loiof368ba00de89482e8034d2c7281c255b -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Aggregate Data
 
@@ -8,13 +8,14 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
 
 
-<a name="loio7733250f9d2a46b690a5288634d269f0__context_dxg_lzf_knb"/>
+<a name="loiof368ba00de89482e8034d2c7281c255b__context_dxg_lzf_knb"/>
 
 ## Context
 
+> ### Note:  
+> It is not possible to use an *Aggregation* node if the delta capture setting is enabled for the source table.
 
 
-<a name="loio7733250f9d2a46b690a5288634d269f0__Steps"/>
 
 ## Procedure
 
@@ -26,7 +27,7 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
 3.  Select the projection node in order to display its context tools, and click <span class="FPA-icons"></span> \(Aggregation\).
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Create_Aggregation_Gif_DWC_e8edbdf.gif)An *Aggregation* node is created, its symbol is selected, and its properties are displayed in the side panel.
+    ![](images/Create_Aggregation_Gif_DWC_e8edbdf.gif)An *Aggregation* node is created, its symbol is selected, and its properties are displayed in the side panel.
 
 4.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
 
@@ -56,10 +57,10 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
         Select available value\(s\) and click *Insert* to add them to your expression.
 
-    -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
+    -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](../sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
     -   *Columns* - Browse or filter available columns. Click a column name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](sql-reference-6a37cc5.md)\).
+    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
+    -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](../sql-reference-6a37cc5.md)\).
 
     For example, if you have aggregated your `Revenue` column using `SUM`, and want to show only:
 
@@ -68,6 +69,6 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
     When working on a large expression, click <span class="FPA-icons"></span> \(Enter Full Screen\) to expand the expression editor.
 
-7.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+7.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

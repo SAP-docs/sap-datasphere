@@ -8,7 +8,10 @@ SAP Datasphere is delivered with several standard roles. A standard role include
 
 
 
-You can assign standard roles directly to users or, if you have different business needs, you can use them as a template for defining new roles \(custom roles\). You cannot delete nor edit standard roles.
+You can assign standard roles directly to users or, if you have different business needs, you can use them as a template for defining new roles, called custom roles \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
+
+> ### Note:  
+> You cannot delete nor edit standard roles.
 
 In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\). The following standard roles are available:
 

@@ -23,7 +23,7 @@ To enable access to a non-SAP database via ODBC to use it as a source for data f
 
 ## Context
 
-Drivers are required for the following connection types:
+Drivers are required for the following connection types \(if several driver versions are supported, we recommend to use the newest supported version mentioned below\):
 
 
 <table>
@@ -116,7 +116,7 @@ ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
 instantclient-basiclite-linux.x64-12.2.0.1.0.zip
 
 > ### Note:  
-> Make sure to select the *Basic Light* package zip file from the 12.2.0.1.0 version. The package applies to all versions supported by the Oracle connection type \(Oracle 12c, Oracle 18c, and Oracle 19c\).
+> Make sure to select the *Basic Light* package zip file. The package applies to all versions supported by the Oracle connection type \(Oracle 12c, Oracle 18c, and Oracle 19c\).
 
 
 
@@ -128,7 +128,7 @@ instantclient-basiclite-linux.x64-12.2.0.1.0.zip
 
 
 </td>
-<td valign="top" rowspan="2">
+<td valign="top">
 
 `https://oracle.com`
 
@@ -142,11 +142,13 @@ instantclient-basiclite-linux.x64-12.2.0.1.0.zip
 instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 
 > ### Note:  
-> Additional files:
+> -   Make sure to select the *Basic Light* package zip file. The package applies to all versions supported by the Oracle connection type \(Oracle 12c, Oracle 18c, and Oracle 19c\).
 > 
-> -   oraclepki.jar \(SHA256 fingerprint: e408e7ae67650917dbce3ad263829bdc6c791d50d4db2fd59aeeb5503175499b\)
-> -   osdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
-> -   osdt\_core.jar \(SHA256 fingerprint: c25e30184bb94c6da1227c8256f0e1336acb97b29229edb4aacf27167b96075e\)
+> -   Additional files might be required:
+> 
+>     -   oraclepki.jar \(SHA256 fingerprint: e408e7ae67650917dbce3ad263829bdc6c791d50d4db2fd59aeeb5503175499b\)
+>     -   osdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
+>     -   osdt\_core.jar \(SHA256 fingerprint: c25e30184bb94c6da1227c8256f0e1336acb97b29229edb4aacf27167b96075e\)
 
 
 
@@ -158,9 +160,16 @@ ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13
 
 
 </td>
+<td valign="top">
+
+`https://download.oracle.com/otn_software/linux/instantclient/1917000/instantclient-basic-linux.x64-19.17.0.0.0dbru.zip`
+
+
+
+</td>
 </tr>
 <tr>
-<td valign="top" rowspan="2">
+<td valign="top">
 
 [Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
 
@@ -181,25 +190,9 @@ abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018
 
 
 </td>
-<td valign="top" rowspan="2">
-
-`https://cloud.google.com/bigquery/providers/simba-drivers`
-
-
-
-</td>
-</tr>
-<tr>
 <td valign="top">
 
-SimbaODBCDriverforGoogleBigQuery\_3.0.0.1001-Linux.tar.gz
-
-
-
-</td>
-<td valign="top">
-
-58d3c9acfb93f0d26c081a230ff664a16c8544d567792ebc5436beb31e9e28e4
+`https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_2.3.1.1001-Linux.tar.gz`
 
 
 
@@ -224,7 +217,7 @@ When uploading the drivers, they are identified by their SHA256-formatted finger
 
 ## Upload a Driver
 
-Perform the following steps before creating the first Amazon Redshift or Oracle connection that you want to use for data flows.
+Perform the following steps before creating the first Amazon Redshift, Oracle, or Google BigQuery connection that you want to use for data flows.
 
 1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 

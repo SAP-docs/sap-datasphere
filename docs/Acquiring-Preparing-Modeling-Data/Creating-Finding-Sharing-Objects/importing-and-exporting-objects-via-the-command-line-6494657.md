@@ -42,8 +42,7 @@ To log in, enter one of the following commands and press [Return\]:
     datasphere login 
         --client-id "<id>" 
         --client-secret "<secret>" 
-        --authorization-url "<url>" 
-        --token-url "<url>"
+        
     ```
 
     > ### Note:  
@@ -143,7 +142,7 @@ To list the spaces available to you on the tenant, enter the following command a
 ```
 datasphere spaces list 
     [--host "<url>"] 
-    [--pretty] 
+    [--no-pretty] 
     [--output <file>.json] 
     [--verbose] 
     [--options-file <file>.json] 
@@ -190,14 +189,14 @@ Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in
 <tr>
 <td valign="top">
 
-`--pretty`
+`--no-pretty`
 
 
 
 </td>
 <td valign="top">
 
-\[optional\] Pretty-print the output.
+\[optional\] Don't pretty-print the output.
 
 
 
@@ -254,7 +253,7 @@ A typical option file for a `list` command has the following syntax:
 ```
 {
     "host": "<server-url>",
-    "pretty": true
+    "no-pretty": false
   }
 ```
 
@@ -333,7 +332,7 @@ To export tables, views, and data access controls from your space to a `.json` f
 datasphere spaces read 
     --space <id> 
     [--host "<url>"] 
-    [--pretty] 
+    [--no-pretty] 
     [--definitions [<obj1>,<obj2>]] 
     [--no-space-definition] 
     [--output <file>.json] 
@@ -398,14 +397,14 @@ Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in
 <tr>
 <td valign="top">
 
-`--pretty`
+`--no-pretty`
 
 
 
 </td>
 <td valign="top">
 
-\[optional\] Pretty-print the output.
+\[optional\] Don't pretty-print the output.
 
 
 
@@ -512,7 +511,7 @@ A typical option file for a `read` command has the following syntax:
 {
     "host": "<server-url>",
     "space": "<space-id>",
-    "pretty": true,
+    "no-pretty": false,
     "definitions": true
     "no-space-definition": false,
     "output": "<filepath>.json",

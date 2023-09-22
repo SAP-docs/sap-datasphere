@@ -330,7 +330,7 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -388,7 +388,7 @@ Australia
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -446,7 +446,7 @@ Singapore
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -504,7 +504,7 @@ Not Supported
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -562,7 +562,7 @@ Japan \(Tokyo\)
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -620,7 +620,7 @@ US East
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -678,7 +678,7 @@ Not Supported
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -736,7 +736,7 @@ Not Supported
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -794,7 +794,7 @@ EU Access \(Frankfurt\)
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -916,7 +916,7 @@ Not Supported
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -974,7 +974,7 @@ Not Supported
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 
@@ -1096,7 +1096,7 @@ Not Supported
 </td>
 <td valign="top">
 
-4200 h/month
+7200 h/month
 
 
 

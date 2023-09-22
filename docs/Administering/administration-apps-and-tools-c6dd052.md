@@ -279,7 +279,7 @@ More Information
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="2">
 
 *Audit*
 
@@ -304,6 +304,63 @@ More Information
 <tr>
 <td valign="top">
 
+*Audit Log Deletion*:
+
+
+
+</td>
+<td valign="top">
+
+[Delete Audit Logs](Monitoring-SAP-Datasphere/delete-audit-logs-589fa42.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="3">
+
+*Monitoring*
+
+
+
+</td>
+<td valign="top">
+
+*Monitoring View Enablement*:
+
+
+
+</td>
+<td valign="top" rowspan="3">
+
+[Analyze Monitoring Data in a Space](Monitoring-SAP-Datasphere/analyze-monitoring-data-in-a-space-9cd0691.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expensive Statement Tracing*:
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*MDS Information Tracing*:
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="2">
+
 *IP Allowlist*
 
 
@@ -311,14 +368,23 @@ More Information
 </td>
 <td valign="top">
 
-*IP Allowlist*: Control the range of external public IPv4 addresses that get access to the database of your SAP Datasphere by adding them to an allowlist.
+*Trusted IPs*: Control the range of external public IPv4 addresses that get access to the database of your SAP Datasphere by adding them to an allowlist.
 
 
 
 </td>
-<td valign="top">
+<td valign="top" rowspan="2">
 
 [Add IP address to IP Allowlist](Preparing-Connectivity/add-ip-address-to-ip-allowlist-a3c2145.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Trusted Cloud Connector IPs*:
 
 
 
@@ -404,6 +470,29 @@ Allocate the capacity units to storage and compute resources for your tenant.
 <td valign="top">
 
 [Configure the Size of Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP BW Bridge*
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+[Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:
 
 
 
@@ -612,8 +701,11 @@ Make sure that users are notified appropriately about issues in the tenant.
 
 Every user can view information about the software components and versions of your system, in particular:
 
--   *Version*: Shows the version of the SAP Datasphere tenant.
--   *Platform Version*: Shows the version of the SAP Analytics Cloud components used in SAP Datasphere.
+-   *Version*: Displays the version of the SAP Datasphere tenant.
+-   *Build Date*: Displays the date and time when the current version of the SAP Datasphere tenant was built.
+-   *Tenant*: Displays the SAP Datasphere tenant id.
+-   *Database*: Displays the id of the SAP Datasphere run-time database.
+-   *Platform Version*: Displays the version of the SAP Analytics Cloud components used in SAP Datasphere.
 
 Users with the DW Administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Finding SAP Datasphere IP addresses](Preparing-Connectivity/finding-sap-datasphere-ip-addresses-0934f7e.md)\).
 

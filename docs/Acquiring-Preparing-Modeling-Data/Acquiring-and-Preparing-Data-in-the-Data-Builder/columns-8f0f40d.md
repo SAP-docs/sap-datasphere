@@ -145,5 +145,37 @@ Select this option to indicate that the column must contain a value.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Change Type
+
+
+
+</td>
+<td valign="top">
+
+This column will track the type of last change made to a record. When a new record is inserted, the change type is set to "I" \(Insert\). When an existing record is updated, the change type is set to "U" \(Update\). When an existing record is deleted, the change type is set to "D" \(Delete\). The change type is set to "M" \(Maintenance - Archive Delete\), when records have been archived in an ABAP source. "M" records are treated as "D" records in SAP Datasphere. Note that deleting a record will not physically delete it. 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Change Date
+
+
+
+</td>
+<td valign="top">
+
+The column will track the last date and time of the last change to an individual record. Current UTC timestamp. 
+
+
+
+</td>
+</tr>
 </table>
 

@@ -2,13 +2,14 @@
 
 # Acquiring Data in the Data Builder
 
-Users with the *DW Modeler* role can import data directly into the *Data Builder* from connections and other sources, use replication flows to replicate multiple objects, and data flows to extract, transform and load data.
+Users with the *DW Modeler* role can import data directly into the *Data Builder* from connections and other sources, and use flows to replicate, extract, transform and load data.
 
 This topic contains the following sections:
 
 -   [Federate and Replicate Data in Remote Tables](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_federate_replicate)
 -   [Extract, Transform, and Load Data with Data Flows](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_etl)
 -   [Load Data from Multiple Objects with Replication Flows](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_replication_flows)
+-   [Load and Transform Data \(Including Delta Change Support\) with Transformation Flows](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_transformation_flows)
 -   [Import Entities from SAP S/4HANA](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_s4)
 -   [Import Entities from SAP BW Bridge](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_bw_bridge)
 -   [Import Data from CSV Files](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_import_csv)
@@ -67,6 +68,14 @@ Data flows support a wide range of extract, transform, and load \(ETL\) operatio
 ## Load Data from Multiple Objects with Replication Flows
 
 Certain connections support loading data from multiple source objects to SAP Datasphere via a replication flow. You can enable a single initial load or request initial and delta loads and perform simple projection operations \(see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\).
+
+
+
+<a name="loio1f15a29a25354ec28392ab10ca4e9350__section_transformation_flows"/>
+
+## Load and Transform Data \(Including Delta Change Support\) with Transformation Flows
+
+Create a transformation flow to load data from one or more source repository tables, apply transformations, and output the result to a target table. You can load a full set of data or only delta changes from each source table \(see [Creating a Transformation Flow](creating-a-transformation-flow-f7161e6.md)\).
 
 
 

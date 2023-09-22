@@ -112,6 +112,22 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
+    Delta Capture
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Track the delta changes that are made in the table adding 2 delta capture columns: `Change Type` and `Change Date`. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Source Object \(Open SQL Schema/HDI Container\)
 
 

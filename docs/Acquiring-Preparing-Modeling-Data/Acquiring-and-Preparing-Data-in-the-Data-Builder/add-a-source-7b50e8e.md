@@ -29,6 +29,7 @@ Add a source to read data from. You can add multiple sources and combine them to
     > ### Note:  
     > -   You cannot use views with input parameters as sources in a data flow.
     > -   When browsing a remote file storage such as Amazon Simple Storage Service, Google Cloud Storage, or Microsoft Azure Blob Storage, you can only select files of type JSON/JSONL, CSV, XLS/XLSX, ORC, or PARQUET.
+    > -   Local tables with delta capture can be added as source tables. However only the active records will be used. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
 
 4.  Click the source node to display its properties in the side panel, and complete the properties in the *General* section:
 

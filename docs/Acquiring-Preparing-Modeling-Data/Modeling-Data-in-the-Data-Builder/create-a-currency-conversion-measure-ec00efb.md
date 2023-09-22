@@ -20,7 +20,7 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
 
 ## Procedure
 
-1.  You are in the editor of your analytic model. You can createa new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Measure in the properties panel. Choose *Currency Conversion Measure*.
+1.  You are in the editor of your analytic model. You can create a new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Measure in the properties panel. Choose *Currency Conversion Measure*.
 
 2.  Select the source measure. The source measure has to be a fact source and has to refer to a measure in the underlying fact with semantic type *Amount with Currency*. The measure in the fact has to have an assigned currency field.
 

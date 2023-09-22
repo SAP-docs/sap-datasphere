@@ -4,11 +4,19 @@
 
 # Evaluating Catalog Assets
 
-As a catalog user in SAP Datasphere, you can select an asset to review its details and the impact and lineage analysis diagram to determine whether the asset is the one you need.
+Once you find the asset you want, you can select it to view its overview information, detailed metadata, and impact and lineage diagram. This information includes metadata that is extracted from the source system or data enrichments added in the catalog.
 
 From the <span class="SAP-icons"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
-When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information includes the metadata extracted from the underlying source system and additional information added by catalog administrators, such as added description, glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data or analytic object is the right one you need for your business task at hand.
+**Who does this apply to?** 
+
+-   Users who are assigned the *Catalog User* role.
+
+
+> ### Tip:  
+> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
+
+When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information can include extracted metadata, like the asset name, properties, description, and impact and lineage diagram. It also includes other data enrichments, such as glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data or analytic object is the right one you need for your business task at hand.
 
 For example, as a data modeler, you can review the details of a catalog asset to determine whether it is the one you need to add to your model. You can also view the lineage diagram for an asset to see other assets that are consumed in the model and which assets are impacted by a change.
 
@@ -50,7 +58,7 @@ Asset Name
 </td>
 <td valign="top">
 
-Displays the asset name and type with an identifying icon. This name might not match the name of the underlying source object if the catalog administrator edited it.
+Displays the asset name and type with an identifying icon. This name might not match the name of the underlying source object if it was enriched in the catalog.
 
 
 
@@ -66,7 +74,7 @@ Asset Functional Status and Source System
 </td>
 <td valign="top">
 
-Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "Users with the Catalog Administrator role can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, users can discover content.") :arrow_upper_right:.
+Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "You can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, anyone who uses the catalog can discover the published content.") :arrow_upper_right:.
 
 
 
@@ -161,7 +169,7 @@ Properties
 </td>
 <td valign="top">
 
-Displays asset properties extracted from the data source and description information added by a catalog administrator. 
+Displays asset properties extracted from the data source and data enrichments added in the catalog. 
 
 Source properties common among all assets include:
 
@@ -192,9 +200,9 @@ Source properties common among SAP Datasphere assets include:
     For more information on these properties, see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md).
 
 
-If the catalog administrator enriched the asset, the date of the change appears as a catalog property:
+If the asset data was enriched, the date of the change appears as a catalog property:
 
--   *Enriched On*: The date and time on which the date asset was modified by a catalog administrator. The name of the user who enriched the asset is also shown.
+-   *Enriched On*: The date and time on which the data enrichment was added to the asset. The name of the user who enriched the asset is also shown.
 
 
 
@@ -215,7 +223,7 @@ Displays the asset description, which has two parts.
 
 -   *Source Description*: This description is extracted from the source system and can't be edited.
 
--   *Description*: This catalog description is edited by the catalog administrator.
+-   *Description*: This catalog description is edited by users who have the *Catalog Administrator* role.
 
 
 
@@ -227,9 +235,6 @@ Displays the asset description, which has two parts.
 **Asset Relationships**
 
 Displays the relationships for the asset. These relationships can include glossary terms, tags, and KPIs that are linked to the asset.
-
-> ### Tip:  
-> If you're a catalog administrator who wants to manage relationships to assets, see [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
 
 ![](images/Asset_Detail_Term_Tag_ac5b3b4.png)
 
@@ -628,7 +633,7 @@ After you evaluate and determine that the asset is the right one for your needs,
 
 The catalog automatically detects the change in real time:
 
--   If you created a new file, a new unpublished catalog asset is created and the functional status is set to *Current*. This asset won't be available in the catalog until the catalog administrator enriches the metadata and publishes it.
+-   If you created a new file, a new unpublished catalog asset is created and the functional status is set to *Current*. This asset won't be available in the catalog until a user with the *Catalog Administrator* role enriches the metadata and publishes it.
 
 -   If you edited an existing file, the metadata for the asset is automatically updated.
 

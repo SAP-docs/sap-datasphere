@@ -4,7 +4,7 @@
 
 # Add IP address to IP Allowlist
 
-Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication from on-premise systems.
+Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication with remote tables from on-premise systems.
 
 
 
@@ -14,7 +14,7 @@ Clients in your local network need an entry in the appropriate IP allowlist in S
 
 To secure your environment, you can control the range of IPv4 addresses that get access to the database of your SAP Datasphere by adding them to an allowlist.
 
-You need to provide the **external \(public\) IPv4 address \(range\)** of the client directly connecting to the database of SAP Datasphere. This client might be an SAP HANA Smart Data Provisioning Agent on a server, a 3rd party ETL or analytics tool, or any other JDBC-client. If you're using a network firewall with a proxy, you need to provide the public IPv4 address of your proxy.
+You need to provide the **external \(public\) IPv4 address \(range\)** of the client directly connecting to the database of SAP Datasphere. This client might be an SAP HANA smart data integration Data Provisioning Agent on a server, a 3rd party ETL or analytics tool, or any other JDBC-client. If you're using a network firewall with a proxy, you need to provide the public IPv4 address of your proxy.
 
 Internet Protocol version 4 addresses \(IPv4 addresses\) have a size of 32 bits and are represented in dot-decimal notation, *192.168.100.1* for example. The external IPv4 address is the address that the internet and computers outside your local network can use to identify your system.
 
@@ -31,8 +31,8 @@ The address can either be a single IPv4 address or a range specified with a Clas
 
 2.  From the *IP Allowlist* dropdown, select the appropriate list:
 
-    -   *Trusted IPs*: For clients such as an SAP HANA Smart Data Provisioning Agent on a server, 3rd party ETL or analytics tools, or any other JDBC-client
-    -   *Trusted Cloud Connector IPs*: For Cloud Connectors that you want to use the for federation and replication from on-premise systems such as SAP HANA
+    -   *Trusted IPs*: For clients such as an Data Provisioning Agent on a server, 3rd party ETL or analytics tools, or any other JDBC-client
+    -   *Trusted Cloud Connector IPs*: For Cloud Connectors that you want to use for federation and replication with remote tables from on-premise systems such as SAP HANA
 
     The selected list shows all IP addresses that are allowed to connect to the SAP Datasphere database.
 
@@ -46,9 +46,11 @@ The address can either be a single IPv4 address or a range specified with a Clas
     > ### Note:  
     > Please make sure that you provide the **external** IPv4 address of your client respectively proxy when using a network firewall. The IP you enter needs to be your public internet IP.
 
-5.  In the dialog, click *Add* to return to the list.
+5.  \[optional\] You can add a description of up to 120 characters to better understand your IP entries.
 
-6.  To save your newly added IP to the allowlist on the database, click *Save* in the pushbutton bar of your list.
+6.  In the dialog, click *Add* to return to the list.
+
+7.  To save your newly added IP to the allowlist on the database, click *Save* in the pushbutton bar of your list.
 
     > ### Note:  
     > Updating the allowlist in the database requires some time. To check if your changes have been applied, click *Refresh*.

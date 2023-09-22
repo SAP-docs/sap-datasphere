@@ -176,7 +176,17 @@ You can specify from 0 TB \(minimum\) to 90 TB \(maximum\), by increments of 5 T
 
 Data lake storage includes data lake compute.
 
+To reduce the size of your data lake storage, you must first delete your data lake instance, and re-create it in the size that you want.
+
 > ### Note:  
+> Deletion cannot be reversed and all data stored in the data lake instance will be deleted.
+> 
+> You cannot delete your data lake storage if it's connected to a space. You must first disconnect the space:
+> 
+> 1.  Go to *Space Management*, choose a space.
+> 2.  Select *Edit*.
+> 3.  Under *General Settings*, clear the *Use this space to access data lake* checkbox.
+> 
 > Data lake is not available in all regions. See SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
 
 
@@ -247,7 +257,7 @@ Description
 </td>
 <td valign="top">
 
-Select the number of compute blocks to allocate to Data Integration applications.You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
+\[optional\] Select the number of compute blocks to allocate to Data Integration applications. You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
 
 
 
@@ -280,6 +290,57 @@ The number of node hours available for Data Integration applications per month i
 <td valign="top">
 
 The maximum number of parallel jobs is calcuated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maxiumum of 10.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Integration*: *Allocated Execution Hours*
+
+
+
+</td>
+<td valign="top">
+
+Displays the number of hours allocated to Data Integration applications.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Integration*: *Used Execution Hours*
+
+
+
+</td>
+<td valign="top">
+
+Displays the number of hours used by Data Integration applications.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Integration*: *Exceeded Execution Hours*
+
+
+
+</td>
+<td valign="top">
+
+Displays the execution hours you have used that exceed the amount allocated by your tenant configuration.
+
+> ### Note:  
+> This only appears if you have used more hours than allocated.
 
 
 
@@ -412,7 +473,7 @@ Displays the total number of capacity units consumed by the storage and compute 
 <tr>
 <td valign="top">
 
-*Your Subscription: Available Units*
+*Your Subscription*: *Available Units*
 
 
 
@@ -428,7 +489,7 @@ Displays the number of capacity units that are available for the tenant.
 <tr>
 <td valign="top">
 
-*Your Consumption: Units in Use*
+*Your Consumption*: *Units in Use*
 
 
 
@@ -444,7 +505,7 @@ Displays the number of capacity units that you've already allocated to the stora
 <tr>
 <td valign="top">
 
-*Your Consumption: Remaining Units*
+*Your Consumption*: *Remaining Units*
 
 
 

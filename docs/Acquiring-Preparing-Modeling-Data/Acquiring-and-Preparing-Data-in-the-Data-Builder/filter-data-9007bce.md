@@ -1,6 +1,6 @@
-<!-- loio6f6fa18c7c9444da8ca62d76656b7b1a -->
+<!-- copy9007bce656d04035bd92f7f018c704eb -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Filter Data
 
@@ -12,7 +12,7 @@ Add a *Filter* node to filter your data with an SQL expression.
 
 1.  Select an object in order to display its context tools, and click <span class="FPA-icons"></span> Filter.
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Create_Filter_Gif_93ef01a.gif)
+    ![](images/Create_Filter_Gif_93ef01a.gif)
 
     A filter node is created, its symbol is selected, and its properties are displayed in the side panel.
 
@@ -37,10 +37,10 @@ Add a *Filter* node to filter your data with an SQL expression.
 
         Select available value\(s\) and click *Insert* to add them to your expression.
 
-    -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
+    -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](../sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
     -   *Columns* - Browse or filter available columns. Click a column name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](sql-reference-6a37cc5.md)\).
+    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
+    -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](../sql-reference-6a37cc5.md)\).
 
     For example, if you want to list only those products with 10 units or less in stock, enter `Units_on_hand <= 10` 
 
@@ -48,6 +48,6 @@ Add a *Filter* node to filter your data with an SQL expression.
 
 4.  Click *Validate* to check if your expression is semantically correct, and fix any errors signaled. You can reference columns by name as well as HANA functions, operators, predicates, and case expressions.
 
-5.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+5.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

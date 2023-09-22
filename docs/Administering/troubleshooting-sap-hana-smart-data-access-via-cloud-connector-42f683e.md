@@ -72,7 +72,7 @@ Proxy server connect: connection not allowed by ruleset (<virtual_host>:<virtual
 The following error occurs if an invalid location ID was specified in the *Data Source Configuration* of the SAP Datasphere *Administration*:
 
 ```
-[LIBODBCHDB SO][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[89132] 
+[LIBODBCHDB SO][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[89133] 
 Proxy server connect: Network unreachable (<virtual_host>:<virtual_port>))
 
 ```
@@ -114,7 +114,7 @@ javax.net.ssl.SSLException: Received fatal alert: certificate_expired
 
 ```
 
-For information about renewing a subaccount certificate, see [Update the Certificate for a Subaccount](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/071708a655de4486b498cf5b16fb8ea8.html).
+For information about renewing a subaccount certificate, see [Update the Certificate for a Subaccount](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/071708a655de4486b498cf5b16fb8ea8.html) in the *SAP BTP Connectivity* documentation.
 
 
 
@@ -128,4 +128,9 @@ The following error occurs if the on-premise backend system requires TCP SSL:
 [LIBODBCHDB SO][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[89008] 
 Socket closed by peer (<virtual_host>:<virtual_port>))
 ```
+
+**Related Information**  
+
+
+[Troubleshooting Connection Issues with the Cloud Connector \(SAP HANA Cloud, SAP HANA Database documentation\)](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-data-access-guide/troubleshooting-connection-issues-with-cloud-connector)
 

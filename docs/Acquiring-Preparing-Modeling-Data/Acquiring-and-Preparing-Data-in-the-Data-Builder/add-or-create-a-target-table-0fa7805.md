@@ -25,6 +25,9 @@ Add a target table to write data to. You can only have one target table in a dat
 
 
 
+    > ### Note:  
+    > Local table with delta capture on can't be used as target table.
+
 2.  Click and drag the port on the right of the last operator in your data flow and drop it onto the target table.
 
     A flow is created between the operator and the target table.

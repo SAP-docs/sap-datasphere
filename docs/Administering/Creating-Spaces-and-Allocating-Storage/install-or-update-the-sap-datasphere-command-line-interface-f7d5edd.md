@@ -11,7 +11,7 @@ The SAP Datasphere command line interface \(`datasphere`\) is a `Node.js` packag
 `datasphere` is listed on [https://www.npmjs.com/](https://www.npmjs.com/) at [https://www.npmjs.com/package/@sap/datasphere-cli](https://www.npmjs.com/package/@sap/dwc-cli).
 
 > ### Note:  
-> The SAP Datasphere command line interface module has been renamed from `dwc` to `datasphere`. The command `dwc` will be decommissioned at the end of 2023: please use the new `datasphere` command instead.
+> The SAP Datasphere command line interface module has been renamed from `dwc` to `datasphere`. The command `dwc` will be decommissioned at the end of 2023: please use the new `datasphere` command instead. For more information, see [https://www.npmjs.com/package/@sap/datasphere-cli](https://www.npmjs.com/package/@sap/datasphere-cli).
 
 
 

@@ -18,4 +18,7 @@ You can create a local table directly in an E/R model.
 
 3.  Click <span class="FPA-icons"></span> \(Enter Full Screen\) in the side panel header and complete the definition of your table \(see [Creating a Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\).
 
+    > ### Note:  
+    > You can enable *Delta Capture* for your table. For more information, see [Capturing Delta Changes in Your Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/capturing-delta-changes-in-your-local-table-154bdff.md)
+
 

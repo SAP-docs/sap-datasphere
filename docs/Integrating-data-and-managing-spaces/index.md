@@ -75,6 +75,7 @@
         -   [View Persistency and Memory Consumption](Data-Integration-Monitor/view-persistency-and-memory-consumption-e3d0495.md)
     -   [Monitoring Flows](Data-Integration-Monitor/monitoring-flows-b661ea0.md)
         -   [Working With Existing Replication Flow Runs](Data-Integration-Monitor/working-with-existing-replication-flow-runs-da62e1e.md)
+        -   [Cancel a Transformation Flow Run](Data-Integration-Monitor/cancel-a-transformation-flow-run-ab885f0.md)
     -   [Monitoring Remote Queries](Data-Integration-Monitor/monitoring-remote-queries-806d7f0.md)
         -   [Creating Statistics for Your Remote Tables](Data-Integration-Monitor/creating-statistics-for-your-remote-tables-e4120bb.md)
     -   [Monitoring Task Chains](Data-Integration-Monitor/monitoring-task-chains-4142201.md)

@@ -84,6 +84,9 @@ You can maintain data in local tables that:
     > 
     >     Click <span class="FPA-icons"></span> \(Validation Messages\) on the top right corner of your screen to get guidance on how to solve your issue.
 
+    > ### Caution:  
+    > If you have enabled *Delta Capture* for your local table, changes are tracked with 2 columns, *Change Type* and *Change Date*. Deleting a record will not physically delete it, but will set the change type to "D" \(Delete\). Therefore, you can't add a new record with a key that already exists, even if the record has the change type set to "D". For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+
 4.  Click <span class="FPA-icons"></span> \(Save\) to save your changes and click *Table Editor* to close the *Data Editor* and return to the *Table Editor*.
 
 

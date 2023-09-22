@@ -13,10 +13,13 @@ This topic contains the following sections:
 -   [Avoid Running a Login Command by Extracting Access and Refresh Tokens](log-into-the-command-line-interface-via-an-oauth-client-eb7228a.md#loioeb7228a171a842fa84e48c899d48c970__section_extracting_tokens)
 
 > ### Note:  
-> See the blog [@sap/datasphere-cli: Getting Rid of Passcodes Thanks to OAuth Client Support](https://blogs.sap.com/2022/09/21/sap-dwc-cli-getting-rid-of-passcodes-thanks-to-oauth-client-support/) \(published September 2022\) for more information about working the command line interface and OAuth.
+> See the following blogs for more information about working with the command line interface and OAuth:
+> 
+> -   [@sap/datasphere-cli: Getting Rid of Passcodes Thanks to OAuth Client Support](https://blogs.sap.com/2022/09/21/sap-dwc-cli-getting-rid-of-passcodes-thanks-to-oauth-client-support/) \(published September 2022\)
+> -   [FAQ and Troubleshooting Guide for @sap/datasphere-cli](https://blogs.sap.com/2023/06/30/faq-troubleshooting-guide-for-sap-datasphere-cli/) \(published June 2023\)
 
 > ### Note:  
-> The SAP Datasphere command line interface module has been renamed from `dwc` to `datasphere`. The command `dwc` will be decommissioned at the end of 2023: please use the new `datasphere` command instead.
+> The SAP Datasphere command line interface module has been renamed from `dwc` to `datasphere`. The command `dwc` will be decommissioned at the end of 2023: please use the new `datasphere` command instead. For more information, see [https://www.npmjs.com/package/@sap/datasphere-cli](https://www.npmjs.com/package/@sap/datasphere-cli).
 
 
 
@@ -35,12 +38,15 @@ To log in, enter the following command and press [Return\]:
 datasphere login 
     --client-id "<id>" 
     --client-secret "<secret>" 
-    --authorization-url "<url>" 
-    --token-url "<url>"
+    
 ```
 
 > ### Note:  
 > You will be directed to log in with your SAP Datasphere username and password in a browser window once at the beginning of your OAuth session to determine your space permissions.
+
+You must specify the host which you are logging into using the option `--host` , or by first setting the host by calling `datasphere config host set <host>`, to allow the CLI to store the secret for the defined tenant URL. When running a command, the CLI uses the secret matching the currently maintained tenant URL via the `--host` option or set via `datasphere config host set <host>`.
+
+To connect to multiple tenants in parallel, switch the `host` info.
 
 Complete the parameters as follows:
 
@@ -110,7 +116,7 @@ Enter the *Secret* provided by your administrator.
 </td>
 <td valign="top">
 
-Enter the *Authorization URL* provided by your administrator.
+\[Optional\] Enter the *Authorization URL* provided by your administrator.
 
 
 
@@ -126,7 +132,7 @@ Enter the *Authorization URL* provided by your administrator.
 </td>
 <td valign="top">
 
-Enter the *Token URL* provided by your administrator.
+\[Optional\] Enter the *Token URL* provided by your administrator.
 
 
 
@@ -216,7 +222,31 @@ You can avoid running a `login` command \(and entering your SAP Datasphere usern
 To extract your tokens, log into `datasphere` as usual and then enter the following command and press [Return\]:
 
 ```
-datasphere secrets show
+datasphere config secrets show
+```
+
+Example output:
+
+```
+
+$ datasphere config secrets show
+[
+{
+"id": 0,
+"client_id": "sb-0d85e619...",
+"client_secret": "1dcc0522-...",
+"tenantUrl": "https://somehost.eu10.cloud.sap",
+...
+},
+{
+"id": 1,
+"client_id": "sb-0d85e619...",
+"client_secret": "1dcc0522-...",
+"tenantUrl": "https://somehost.us10.cloud.sap",
+...
+}
+]					
+				
 ```
 
 Then copy the values for `access_token` and `refresh_token`. You can pass these values either as options on the command line or in an options file.

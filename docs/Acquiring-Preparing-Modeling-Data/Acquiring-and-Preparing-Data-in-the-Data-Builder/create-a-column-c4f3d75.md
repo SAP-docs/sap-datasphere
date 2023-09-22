@@ -1,6 +1,6 @@
-<!-- loio3897f480b9404e6f82de9bba410f17c0 -->
+<!-- copyc4f3d75ab99f4f7d997812f7f2ea7e80 -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Create a Column
 
@@ -12,7 +12,7 @@ Add a *Calculated Columns* node to create new columns and define calculations in
 
 1.  Select an object in order to display its context tools, and click <span class="FPA-icons"></span> Calculated Columns.
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Create_Column_Gif_0560169.gif)
+    ![](images/Create_Column_Gif_0560169.gif)
 
     A calculated column node is created, its symbol is selected, and its properties are displayed in the side panel.
 
@@ -41,10 +41,10 @@ Add a *Calculated Columns* node to create new columns and define calculations in
 
         Select available value\(s\) and click *Insert* to add them to your expression.
 
-    -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
+    -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](../sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
     -   *Columns* - Browse or filter available columns. Click a column name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](sql-reference-6a37cc5.md)\).
+    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
+    -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](../sql-reference-6a37cc5.md)\).
 
     For example, if you want to calculate the price of a product minus a 15% discount, enter `Price*0.85`.
 
@@ -58,6 +58,6 @@ Add a *Calculated Columns* node to create new columns and define calculations in
     -   Modify the expression output by any column by clicking on the chevron on the right of its token.
     -   Delete a column that has been created in the node by clicking <span class="FPA-icons"></span> Delete Selected Calculated Column.
 
-7.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+7.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

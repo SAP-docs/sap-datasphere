@@ -25,7 +25,9 @@ Select a target \(connection and container\) to define the target environment fo
 
 2.  Select the relevant one for your use case.
 
-3.  If you replicate to the local repository \(SAP Datasphere\), the target container is automatically defined as the space you are in. For any other target, click *Browse target container*. A list of available containers appears. Select the relevant one for your use case.
+3.  If you replicate to the local repository \(SAP Datasphere\), the target container is automatically defined as the space you are in, and the data is replicated to a local table. If you want to use load type *Initial and Delta*, the local table must support delta capturing. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+
+    For any other target, click *Browse target container*. A list of available containers appears. Select the relevant one for your use case.
 
     To narrow down the selection, start typing a part of the container name in the *Search* field.
 

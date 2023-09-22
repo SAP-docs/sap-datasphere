@@ -47,8 +47,7 @@ To log in, enter one of the following commands and press [Return\]:
     datasphere login 
         --client-id "<id>" 
         --client-secret "<secret>" 
-        --authorization-url "<url>" 
-        --token-url "<url>"
+        
     ```
 
     > ### Note:  
@@ -148,7 +147,7 @@ To list the spaces available to you on the tenant, enter the following command a
 ```
 datasphere spaces list 
     [--host "<url>"] 
-    [--pretty] 
+    [--no-pretty] 
     [--output <file>.json] 
     [--verbose] 
     [--options-file <file>.json] 
@@ -195,14 +194,14 @@ Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in
 <tr>
 <td valign="top">
 
-`--pretty`
+`--no-pretty`
 
 
 
 </td>
 <td valign="top">
 
-\[optional\] Pretty-print the output.
+\[optional\] Don't pretty-print the output.
 
 
 
@@ -259,7 +258,7 @@ A typical option file for a `list` command has the following syntax:
 ```
 {
     "host": "<server-url>",
-    "pretty": true
+    "no-pretty": false
   }
 ```
 
@@ -338,7 +337,7 @@ To read a space definition to the console or to a file, enter the following comm
 datasphere spaces read 
     --space <id> 
     [--host "<url>"] 
-    [--pretty] 
+    [--no-pretty] 
     [--definitions [<obj1>,<obj2>]] 
     [--no-space-definition] 
     [--output <file>.json] 
@@ -403,14 +402,14 @@ Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in
 <tr>
 <td valign="top">
 
-`--pretty`
+`--no-pretty`
 
 
 
 </td>
 <td valign="top">
 
-\[optional\] Pretty-print the output.
+\[optional\] Don't pretty-print the output.
 
 
 
@@ -517,7 +516,7 @@ A typical option file for a `read` command has the following syntax:
 {
     "host": "<server-url>",
     "space": "<space-id>",
-    "pretty": true,
+    "no-pretty": false,
     "definitions": true
     "no-space-definition": false,
     "output": "<filepath>.json",
@@ -840,7 +839,7 @@ datasphere dbusers password reset
     --space "<id>" 
     --databaseuser "<name>" 
     [--host "<url>"] 
-    [--pretty] 
+    [--no-pretty] 
     [--output <file>.json] 
     [--verbose] 
     [--options-file <file>.json] 
@@ -854,7 +853,7 @@ datasphere dbusers password reset
 For example, to reset the password of the `JEFF` user in the `SALES`, and pretty-print it to the file `jeff.json`, enter the following:
 
 ```
-datasphere dbusers password reset --space "SALES" --databaseuser "SALES#JEFF" --host "<server-url>" --pretty --output "jeff.json"
+datasphere dbusers password reset --space "SALES" --databaseuser "SALES#JEFF" --host "<server-url>" --no-pretty --output "jeff.json"
 ```
 
 Complete the parameters as follows:
@@ -928,14 +927,14 @@ Enter the URL of your SAP Datasphere tenant. You can copy the URL of any page in
 <tr>
 <td valign="top">
 
-`--pretty`
+`--no-pretty`
 
 
 
 </td>
 <td valign="top">
 
-\[optional\] Pretty-print the output.
+\[optional\] Don't pretty-print the output.
 
 
 
@@ -994,7 +993,7 @@ A typical option file for a `password reset` command has the following syntax:
     "host": "<server-url>",
     "space": "<space-id>",
     "databaseuser": "<dbuser-name>",
-    "pretty": true,
+    "no-pretty": false,
     "output": "<output-file>.json"
   }
 ```

@@ -54,7 +54,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     3.  You can add or deselect associated dimensions.
     4.  You can add or deselect attributes.
 
-6.  To edit the properties of a dimension: Click on the dimension on the canvas to show the its properties in the side panel. You can make the following changes here:
+6.  To edit the properties of a dimension: Click on the dimension on the canvas to show its properties in the side panel. You can make the following changes here:
 
     1.  You can change the alias.
     2.  You can add or deselect associated dimensions.

@@ -1,6 +1,6 @@
-<!-- loiob846d0d6a527489f8f173d89e6f440ac -->
+<!-- copy1d5bfd655abf4c73a7c18dcf58e857fc -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Reorder, Rename, and Exclude Columns
 
@@ -12,7 +12,7 @@ Add a *Projection* node to rename, reorder, or exclude columns.
 
 1.  Select a node in order to display its context tools, and click <span class="SAP-icons"></span> \(Rename/Exclude Columns\).
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Create_Projection_Gif_95b1595.gif)A projection node is created, its symbol is selected, and its properties are displayed in the side panel.
+    ![](images/Create_Projection_Gif_95b1595.gif)A projection node is created, its symbol is selected, and its properties are displayed in the side panel.
 
 2.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
 
@@ -31,6 +31,6 @@ Add a *Projection* node to rename, reorder, or exclude columns.
         To select multiple columns for exclusion, press [Ctrl\] while selecting them. Alternatively, click *Select All* and press [Ctrl\] while deselecting columns.
 
 
-5.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+5.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

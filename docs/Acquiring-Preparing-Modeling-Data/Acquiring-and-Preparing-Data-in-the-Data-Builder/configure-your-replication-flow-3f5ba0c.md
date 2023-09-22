@@ -16,6 +16,8 @@ Define general settings for your replication flow, such as the load type.
 
     -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) once every 60 minutes and copies the changes to the target.
 
+        For more information about using this load type in connection with local tables, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+
 
 3.  The *Truncate* setting is relevant if the target structure already exists and contains data. Review the default setting and change it if required:
 

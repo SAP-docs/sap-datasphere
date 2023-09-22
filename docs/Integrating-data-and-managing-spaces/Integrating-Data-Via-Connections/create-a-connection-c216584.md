@@ -280,7 +280,7 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
     
 7.  If you connect to a partner tool such as Precog, in the *Additional Configuration* section of this wizard step, you'll find information about IP addresses that you can copy in order to add them to the IP allowlist in SAP Datasphere.
 
-    For more information, see [Add IP address to IP Allowlist](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication from on-premise systems.") :arrow_upper_right:.
+    For more information, see [Add IP address to IP Allowlist](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication with remote tables from on-premise systems.") :arrow_upper_right:.
 
 8.  Click *Create Connection* to create the connection and add it to the overview of available connections.
 
