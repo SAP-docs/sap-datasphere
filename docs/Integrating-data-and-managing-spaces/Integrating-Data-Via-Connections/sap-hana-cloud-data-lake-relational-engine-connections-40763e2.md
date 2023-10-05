@@ -32,7 +32,7 @@ Supported data access methods for remote tables:
 > 
 >     -   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
 > 
->     -   [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses that for particular remote applications must be added to allowlists before you can to use connections to these remote applications.") :arrow_upper_right:
+>     -   [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses that for particular remote applications must be added to allowlists before you can to use connections to these remote applications.") :arrow_upper_right:
 
 
 

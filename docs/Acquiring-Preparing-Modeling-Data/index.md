@@ -160,6 +160,7 @@
     -   [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)
         -   [Create a Text Association](Modeling-Data-in-the-Data-Builder/create-a-text-association-414df15.md)
     -   [Creating an External Hierarchy](Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)
+    -   [Creating a Hierarchy with Directory](Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)
     -   [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)
         -   [Create an Analytic Model Directly From a View or Table](Modeling-Data-in-the-Data-Builder/create-an-analytic-model-directly-from-a-view-or-table-1c674aa.md)
         -   [Add a Source](Modeling-Data-in-the-Data-Builder/add-a-source-27075ee.md)

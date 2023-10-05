@@ -26,7 +26,7 @@ You can also import objects from CSN/JSON files \(see [Importing and Exporting O
 
 ## Find Objects
 
-You can search across all the objects in all the spaces of which you are a member in the *Repository Explorer* \(see [Repository Explorer](repository-explorer-f8ce0b4.md)\).
+You can search across all the objects in all the spaces you're assigned to in the *Repository Explorer* \(see [Repository Explorer](repository-explorer-f8ce0b4.md)\).
 
 Alternatively, you can browse for trusted data assets that have been published to the *Catalog* \(see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md)\).
 
@@ -36,5 +36,5 @@ Alternatively, you can browse for trusted data assets that have been published t
 
 ## Share Objects
 
-Only members of a space can view objects in the space. To make a table or view in your space available to members of another space, you must share it there \(see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)\).
+Only users assigned to a space can view objects in the space. To make a table or view in your space available to users assigned to another space, you must share it there \(see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)\).
 

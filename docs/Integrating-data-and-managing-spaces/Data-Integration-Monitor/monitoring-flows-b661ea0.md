@@ -14,9 +14,9 @@ In the Flow Monitor, you can find all the deployed flows per space.
 
 -   To use the Flow Monitor, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
 
--   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
--   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
 
 

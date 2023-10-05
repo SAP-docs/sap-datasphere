@@ -12,7 +12,7 @@ Use the connection to access data from a Google BigQuery data source..
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/529cef1eee6a45a69ae4e51951718900.html "To be able to successfully validate and use a connection to a Google BigQuery data source for remote tables, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/529cef1eee6a45a69ae4e51951718900.html "To be able to successfully validate and use a connection to a Google BigQuery data source for remote tables, certain preparations have to be made.") :arrow_upper_right:
 
 
 

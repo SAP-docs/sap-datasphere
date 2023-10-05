@@ -10,7 +10,7 @@ Use an *Amazon Athena* connection to access data from Amazon Athena, an interact
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 

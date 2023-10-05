@@ -155,7 +155,7 @@ Change Type
 </td>
 <td valign="top">
 
-This column will track the type of last change made to a record. When a new record is inserted, the change type is set to "I" \(Insert\). When an existing record is updated, the change type is set to "U" \(Update\). When an existing record is deleted, the change type is set to "D" \(Delete\). The change type is set to "M" \(Maintenance - Archive Delete\), when records have been archived in an ABAP source. "M" records are treated as "D" records in SAP Datasphere. Note that deleting a record will not physically delete it. 
+This column will track the type of last change made to a record. When a record is inserted or updated corresponding change types are used \(for example "I" or "U"\). When an existing record is deleted other specific change types are used \(for example "D"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. 
 
 
 

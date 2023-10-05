@@ -38,5 +38,3 @@ As a Space Administrator, you can assign users as members of your space.
 
 The users you've added as members of the space are dislayed in the table of the *Members* area.
 
-You can also use the SAP Datasphere command line interface, `dwc`, to assign members to a space. For more information, see [Manage Spaces via the Command Line](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "You can use the SAP Datasphere command line interface, datasphere, to create, read, update, and delete spaces. You can set space properties, assign (or remove) members, create database users, create or update objects (tables, views, and data access controls), and associate HDI containers to a space.") :arrow_upper_right:.
-

@@ -8,7 +8,7 @@ Use an *Oracle* connection to access data from an Oracle database \(on-premise\)
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -16,7 +16,7 @@ See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c3243
 
 ## Using the Connection
 
-The connection type supports the remote table as well as the data flow feature.
+You can import database tables. The connection type supports the remote table as well as the data flow feature.
 
 Supported data access methods for remote tables:
 

@@ -13,7 +13,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__S4_Cloud_usage)
 -   [Configuring Connection Properties](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -67,7 +67,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
+You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
 
 
 

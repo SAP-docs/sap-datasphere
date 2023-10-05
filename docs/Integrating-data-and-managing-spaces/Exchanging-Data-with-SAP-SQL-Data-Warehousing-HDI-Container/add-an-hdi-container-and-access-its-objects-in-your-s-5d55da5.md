@@ -34,6 +34,6 @@ You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(w
 
 4.  Deploy your space.
 
-5.  Create a view or data flow and select one or more objects from the container as sources \(see [Import an Object from a Connection or Other Source](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3e6f8f274e1d42759f536d3004025d24.html "Drag objects from the Sources tab of the Source Browser to add them as sources in your data flow, graphical view, or SQL view. In an E/R model, you can add objects from any connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
+5.  Create a view or data flow and select one or more objects from the container as sources \(see [Import an Object from a Connection or Other Source](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3e6f8f274e1d42759f536d3004025d24.html "Drag objects from the Sources tab of the Source Browser to add them as sources in your data flow, graphical view, or SQL view. In an E/R model, you can add objects from any connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
 
 

@@ -33,7 +33,7 @@ To create a custom role, you need the DW Administrator role.
     > ### Note:  
     > Currently, it is not possible to add *Catalog* access to a custom role as a template. Assign either the *Catalog Administrator* or *Catalog User* standard application roles instead.
 
-6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share and manage\) represent the actions a user can perform. For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
+6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share and manage\) represent the actions a user can perform.For more details about privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 
 7.  If you want to change the role template that your new custom role will be based on, select <span class="FPA-icons"></span> \(*Select Template*\), and choose a role.
 

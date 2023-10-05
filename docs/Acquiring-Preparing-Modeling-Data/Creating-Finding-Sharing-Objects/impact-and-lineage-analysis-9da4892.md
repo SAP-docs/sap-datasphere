@@ -426,7 +426,7 @@ These additional link types display as follows::
 
 -   <span class="SAP-icons-TNT"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see[Create an Association](../create-an-association-66c6998.md)\).
 
--   <span class="SAP-icons"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+-   <span class="SAP-icons"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 
 
 
@@ -435,13 +435,13 @@ These additional link types display as follows::
 
 ## Shared Objects and Unauthorized Objects
 
-You only have permission to see an object if it is created in \(or shared to\) a space where you are a member. When exploring the diagram, you may encounter objects that you do not have permission to see. Such objects are shown as *Unauthorized*, and both the object and space show a :lock: icon:
+You only have permission to see an object if it is created in \(or shared to\) a space you're assigned to. When exploring the diagram, you may encounter objects that you do not have permission to see. Such objects are shown as *Unauthorized*, and both the object and space show a :lock: icon:
 
--   Unauthorized Lineage Objects - If the analyzed object \(or an object appearing in its lineage\) is shared from a space where you are not a member to a space where you are a member, this shared object is shown inside its space, which has a :lock: icon.
+-   Unauthorized Lineage Objects - If the analyzed object \(or an object appearing in its lineage\) is shared from a space you are not assigned to, to a space you are assigned to, this shared object is shown inside its space, which has a :lock: icon.
 
     You can show the immediate sources of this object but, if you do not have permission to see one or more of them, then they will be represented by *Unauthorized* placeholders. You cannot view the properties of these placeholder objects, perform any actions on them, or continue the analysis beyond them in any way.
 
--   Unauthorized Impact Objects - The analyzed object \(or an object appearing in its impacts\) may be shared to a space where you are not a member and used as a source by objects in that space.
+-   Unauthorized Impact Objects - The analyzed object \(or an object appearing in its impacts\) may be shared to a space you're assigned to and used as a source by objects in that space.
 
     You can show the objects that are immediately impacted by this object in their space, which has a locked icon but, if you do not have permission to see one or more of them, then you they will be represented by *Unauthorized* placeholders. You cannot view the properties of these placeholder objects, perform any actions on them, or continue the analysis beyond them in any way.
 

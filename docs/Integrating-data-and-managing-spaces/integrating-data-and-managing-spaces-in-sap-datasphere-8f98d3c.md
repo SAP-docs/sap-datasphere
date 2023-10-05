@@ -4,7 +4,7 @@
 
 # Integrating Data and Managing Spaces in SAP Datasphere
 
-Users with the *DW Space Administrator* or *DW Integrator* role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.
+Users with the *DW Space Administrator* or *DW Integrator* role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space users and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.
 
 This topic contains the following sections:
 
@@ -38,9 +38,9 @@ This topic contains the following sections:
 
 ## Prepare and Manage Your Space
 
-An administrator will assign you the DW Space Administrator role, create your space, and add you to it as a member. Once this is done, you can prepare your space as follows:
+An administrator will assign you the DW Space Administrator role, create your space, and assign you to it. Once this is done, you can prepare your space as follows:
 
--   Add SAP Datasphere users as members of your space \(see [Assign Members to Your Space](assign-members-to-your-space-9d59fe5.md)\).
+-   Assign SAP Datasphere users to your space \(see [Assign Members to Your Space](assign-members-to-your-space-9d59fe5.md)\).
 -   Optionally import SAP and partner business content to support end-to-end business scenarios for various industries and lines of business \(see [Importing SAP and Partner Business Content from the Content Network](importing-sap-and-partner-business-content-from-the-content-network-400078d.md)\).
 -   Transport objects securely to and from your space \(see [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\).
 -   Use various monitoring and logging tools to manage your space \(see [Managing Your Space](managing-your-space-268ea7e.md)\).
@@ -51,7 +51,7 @@ An administrator will assign you the DW Space Administrator role, create your sp
 
 ## Create Connections to Source Systems
 
-Space administrators and integrators can create connections to source systems to allow space members to acquire data from those systems \(see [Integrating Data via Connections](Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md)\).
+Space administrators and integrators can create connections to source systems to allow space users to acquire data from those systems \(see [Integrating Data via Connections](Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md)\).
 
 
 

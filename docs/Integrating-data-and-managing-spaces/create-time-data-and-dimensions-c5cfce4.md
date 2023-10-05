@@ -50,6 +50,6 @@ Create a time table and dimension views in your space to provide standardized ti
 
     The tables and views are listed with your other space objects and can be opened \(in read-only form\) from the *Data Builder* and *Repository Explorer*.
 
-    Members of your space can now use the views as dimensions by creating associations to them from their entities containing time data.
+    Users assigned to your space can now use the views as dimensions by creating associations to them from their entities containing time data.
 
 

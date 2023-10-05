@@ -117,7 +117,7 @@ Enter the public SSH host key \(not the key fingerprint\).
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
 
-If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host&apos;s public key is required.") :arrow_upper_right:.
+If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required.") :arrow_upper_right:.
 
 
 
@@ -194,7 +194,7 @@ Description
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges. 
 
 
 

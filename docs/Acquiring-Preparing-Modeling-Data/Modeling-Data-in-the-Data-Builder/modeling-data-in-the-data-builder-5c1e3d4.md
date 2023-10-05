@@ -11,6 +11,7 @@ This topic contains the following sections:
 -   [Prepare Master Data for Grouping in a Dimension](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_dimensions)
 -   [Support Translations of Attributes with a Text Entity](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_texts)
 -   [Enable Drill-Down with a Hierarchy](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchies)
+-   [Create Heterogeneous Hierarchies with a Hierarchy with Directory](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchy_with_directory)
 -   [Expose View Data for Consumption Outside SAP Datasphere](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose)
 -   [Combine Entities for Consumption in an Analytic Model](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_analytic_model)
 -   [Create Objects and Act On Existing Objects](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_tools)
@@ -99,6 +100,14 @@ External hierarchies are entities that contain data to define parent-child relat
 
 
 
+<a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchy_with_directory"/>
+
+## Create Heterogeneous Hierarchies with a Hierarchy with Directory
+
+A hierarchy with directory is an entity that contains one or more parent-child hierarchies and has an association to a directory dimension containing a list of the hierarchies. These types of hierarchy entities can include nodes from multiple dimensions \(for example, country, cost center group, and cost center\) and are commonly imported from SAP S/4HANA Cloud and SAP BW systems \(see [Creating a Hierarchy with Directory](creating-a-hierarchy-with-directory-36c39ee.md)\).
+
+
+
 <a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose"/>
 
 ## Expose View Data for Consumption Outside SAP Datasphere
@@ -108,7 +117,7 @@ There are two methods for exposing view data for consumption outside SAP Datasph
 -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
 -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
 
-For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces of which they are a member. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
+For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
 
 
 
@@ -225,7 +234,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 

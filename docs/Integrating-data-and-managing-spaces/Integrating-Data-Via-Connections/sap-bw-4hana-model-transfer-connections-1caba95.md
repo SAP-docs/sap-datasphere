@@ -10,7 +10,7 @@ Use an *SAP BW/4HANA Model Transfer* connection to import analytic queries from 
 
 ## Prerequisites
 
-See: [Preparing SAP BW/4HANA Model Transfer Connectivity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/962de2f99d234967b8b10541599f00c6.html "Accessing SAP BW/4HANA meta data and importing models into SAP Datasphere with a SAP BW/4HANA Model Transfer connection requires two protocols (or endpoints): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.") :arrow_upper_right:
+See: [Preparing SAP BW/4HANA Model Transfer Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/962de2f99d234967b8b10541599f00c6.html "Accessing SAP BW/4HANA meta data and importing models into SAP Datasphere with a SAP BW/4HANA Model Transfer connection requires two protocols (or endpoints): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.") :arrow_upper_right:
 
 
 
@@ -18,7 +18,7 @@ See: [Preparing SAP BW/4HANA Model Transfer Connectivity](https://help.sap.com/v
 
 The connection type supports the model import feature.
 
-For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
+For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
 
 
 
@@ -64,7 +64,7 @@ A live data connection of type tunnel is required for a secure connection to SAP
 
 If the required connection is not available for selection, you or an administrator need to create the tunnel connection before you can create the SAP BW/4HANA Model Transfer connection.
 
-For more information, see [Create Live Data Connection of Type Tunnel](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5d02f1103dd742aab5c0fc930debe51b.html "To securely connect and make http requests to SAP BW∕4HANA, you need to connect via Cloud Connector. This requires that you create a live data connection of type tunnel to the SAP BW∕4HANA system.") :arrow_upper_right:.
+For more information, see [Create Live Data Connection of Type Tunnel](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5d02f1103dd742aab5c0fc930debe51b.html "To securely connect and make http requests to SAP BW∕4HANA, you need to connect via Cloud Connector. This requires that you create a live data connection of type tunnel to the SAP BW∕4HANA system.") :arrow_upper_right:.
 
 
 

@@ -60,7 +60,7 @@ Download Site
 <tr>
 <td valign="top" rowspan="2">
 
-[Amazon Redshift Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
+[Amazon Redshift Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
 
 
 
@@ -106,7 +106,7 @@ ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
 <tr>
 <td valign="top" rowspan="2">
 
-[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 
 
@@ -171,7 +171,7 @@ ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13
 <tr>
 <td valign="top">
 
-[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
+[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
 
 
 
@@ -185,7 +185,7 @@ SimbaODBCDriverforGoogleBigQuery\_2.3.1.1001-Linux.tar.gz
 </td>
 <td valign="top">
 
-abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018
+abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018f
 
 
 

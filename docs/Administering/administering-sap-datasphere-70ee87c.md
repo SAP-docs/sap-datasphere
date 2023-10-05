@@ -4,7 +4,7 @@
 
 # Administering SAP Datasphere
 
-Users with the *DW Administrator* role can configure, manage, and monitor the SAP Datasphere tenant to support the work of acquiring, preparing, and modeling data for analytics. They manage users, create spaces, and allocate storage to them. They prepare and monitor connectivity for data integration and perform ongoing monitoring and maintainance of the tenant.
+Users with the *DW Administrator* role can configure, manage, and monitor the SAP Datasphere tenant to support the work of acquiring, preparing, and modeling data for analytics. They manage users and roles, create spaces, and allocate storage to them. They prepare and monitor connectivity for data integration and perform ongoing monitoring and maintainance of the tenant.
 
 This topic contains the following sections:
 
@@ -52,7 +52,7 @@ Either SAP will provision your tenant or you can create an instance in SAP BTP \
 
 An administrator creates SAP Datasphere users manually, from a `*.csv` file, or via an identity provider \(see [Managing SAP Datasphere Users](Managing-Users-and-Roles/managing-sap-datasphere-users-4fb82cb.md)\).
 
-You must assign one or more roles to each of your users \(see [Managing Roles and Privileges](Managing-Users-and-Roles/managing-roles-and-privileges-3740dac.md)\). The following standard roles are available:
+You must assign one or more roles to each of your users via scoped roles and global roles \(see [Managing Roles and Privileges](Managing-Users-and-Roles/managing-roles-and-privileges-3740dac.md)\). You can create your own custom roles or use the following standard roles delivered with SAP Datasphere:
 
 -   Roles providing privileges to administer the SAP Datasphere tenant:
     -   **System Owner** - Includes all user privileges to allow unrestricted access to all areas of the application. Exactly one user must be assigned to this role. 

@@ -26,7 +26,7 @@ This diagram shows a typical environment where a permissions entity is maintaine
 
 In this environment:
 
--   The `Permissions` space members are a select group of business users who:
+-   The `Permissions` space users are a select group of business users who:
     -   Maintain the `Permissions` table \(see [Select a Table or View to Define Permissions](select-a-table-or-view-to-define-permissions-ffcae43.md)\), assigning users \(which, in this case, are identified by their email address\) to the appropriate country, department, and any other relevant criteria:
 
 
@@ -108,7 +108,7 @@ In this environment:
         > Tables and views shared to a space cannot be directly used as the permissions entity for a data access control. Modelers in the space receiving the shared object must encapsulate it in a view, which can then serve as the permissions entity for one or more data access controls.
 
 
--   The `IT` space members are technical users who:
+-   The `IT` space users are technical users who:
     -   Use the shared `Permissions` table as the source for a `Permissions` view that they will use as a permissions entity in their space.
     -   Create a `Country` data access control, which uses the `Permissions` view as its permissions entity.
     -   Maintain a connection to a source system, from which they import the `Sales` table.
@@ -119,15 +119,15 @@ In this environment:
 
     -   Share the `Sales` view to the `Sales` space where it can be used securely.
 
--   The `Sales` space members use the protected `Sales` view to do analytics on sales data:
+-   The `Sales` space users use the protected `Sales` view to do analytics on sales data:
     -   Anne is a data modeler in the US sales department. She connects to SAP Datasphere and combines the `Sales` view with other data. Whenever she previews data, she can only see US data.
     -   Jennifer is a business analyst in the French sales department. She connects to SAP Analytics Cloud, builds a story on the `Sales` view, and can only see French sales data.
 
 
 For information about:
 
--   Applying a data access control to a data layer view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
--   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user&apos;s context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
+-   Applying a data access control to a data layer view, see [Apply a Data Access Control](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
+-   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
 -   Persisting data in a view that has a data access control applied to it \(see [View Persistency and Data Access Control](../Data-Integration-Monitor/view-persistency-and-data-access-control-7a4a983.md)\).
 
 > ### Note:  

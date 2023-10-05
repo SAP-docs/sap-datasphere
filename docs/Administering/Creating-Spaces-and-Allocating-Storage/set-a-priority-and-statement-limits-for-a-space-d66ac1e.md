@@ -270,9 +270,9 @@ Use the properties in the *Workload Management* section to prioritize between sp
         > 
         > -   **Avoid that tasks which consume a high load of CPU run at the same time**.
         > 
-        >     You can adjust the task schedules in the *Data Integration Monitor*. See [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
+        >     You can adjust the task schedules in the *Data Integration Monitor*. See [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 
 
-4.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to space members.
+4.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.
 
 

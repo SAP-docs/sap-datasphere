@@ -62,7 +62,7 @@ Users with the *DW Space Administrator* role can create database users, granting
     </td>
     <td valign="top">
     
-    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with the DW Administrator role (administrators) can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
+    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with the DW Administrator role (administrators) can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
 
 
     
@@ -80,7 +80,7 @@ Users with the *DW Space Administrator* role can create database users, granting
     
     Allow the user to access the SAP HANA Cloud machine learning libraries.
 
-    For information about enabling and using these libraries, see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: 
+    For information about enabling and using these libraries, see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: 
 
 
     
@@ -117,7 +117,7 @@ Users with the *DW Space Administrator* role can create database users, granting
     </td>
     <td valign="top">
     
-    Allow the user to create objects and write data to their Open SQL schema. These objects are available to any modeler working in the space for use as sources for their views and data flows \(see [Using the Source Browser](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7d2b21d974e44bdc9d548cf7532b5a43.html "You use the Source Browser to add objects as sources for your data flow, graphical view, SQL view, or intelligent lookup. In an E/R model you add objects to visualize them together in a diagram, including importing objects from connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
+    Allow the user to create objects and write data to their Open SQL schema. These objects are available to any modeler working in the space for use as sources for their views and data flows \(see [Using the Source Browser](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7d2b21d974e44bdc9d548cf7532b5a43.html "You use the Source Browser to add objects as sources for your data flow, graphical view, SQL view, or intelligent lookup. In an E/R model you add objects to visualize them together in a diagram, including importing objects from connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
 
 
     

@@ -25,7 +25,7 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
 > A custom identity provider is a separate solution, like for example Azure AD, and is not part of SAP Analytics Cloud or SAP Datasphere. Therefore the change in configuration is to be applied directly in the solution, not within SAP Analytics Cloud or SAP Datasphere. Also no access to SAP Analytics Cloud or SAP Datasphere is required to make the change, only an access to the Identity Provider, eg Azure AD.
 
 > ### Note:  
-> Be aware that the SAML attributes for SAP Datasphere roles do not cover space membership. A user who logs into a SAP Datasphere tenant through SSO must be assigned as a member of a space in order to access the space. If you do not assign space membership, the user will not have access to any space.
+> Be aware that the SAML attributes for SAP Datasphere roles do not cover user assignment to spaces. A user who logs into a SAP Datasphere tenant through SSO must be assigned to the space in order to access the space. If you do not assign a user to a space, the user will not have access to any space.
 
 
 

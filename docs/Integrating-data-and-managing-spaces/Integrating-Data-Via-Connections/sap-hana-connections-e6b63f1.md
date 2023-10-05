@@ -12,7 +12,7 @@ This topic contains the following sections:
 -   [Configuring Connection Properties \(SAP HANA Cloud\)](sap-hana-connections-e6b63f1.md#loio27aebc8432aa419da75c5fc650981f24)
 -   [Configuring Connection Properties \(SAP HANA on-premise\)](sap-hana-connections-e6b63f1.md#loio77cec6a1e8d04371a791658e641dc0d5)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -507,7 +507,7 @@ The default is *false*.
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges. 
 
 
 
@@ -627,7 +627,7 @@ If set to *false*, the host name used for the connection is used for verificatio
 > 
 > -   When using SAP HANA smart data access via Cloud Connector for remote tables: To validate the server certificate, the certificate must have been uploaded to SAP Datasphere.
 > 
->     For more information, see [Upload Certificates (Required for Remote Tables)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/46f5467adc5242deb1f6b68083e72994.html "To enable a secure SSL/TLS-based connection for a connection type that supports remote tables but doesn&apos;t use a Data Provisioning Agent, you need to upload a server certificate to SAP Datasphere.") :arrow_upper_right:.
+>     For more information, see [Upload Certificates (Required for Remote Tables)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "To enable a secure SSL/TLS-based connection for a connection type that supports remote tables but doesn't use a Data Provisioning Agent, you need to upload a server certificate to SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -784,7 +784,7 @@ Select the midleware to use when connecting to and accessing the on-premise syst
 > ### Note:  
 > When creating a connection to SAP HANA on-premise using SAP HANA smart data access via Cloud Connector, the system checks for a required internal service. In the connection overview, a warning icon indicates that the service might not be ready yet. This happens for the first connection you create or when you create a connection after the service has been disabled \(after an automated weekly check returning that there is no such connection anymore\). Getting the service ready might take up to 45 minutes. Validate the connection and check the message details for more information.
 > 
-> For troubleshooting the Cloud Connector, see [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/42f683edbf6742b19cf15e7a18b8a607.html "These are some of the most common issues that can occur when you use the Cloud Connector to connect to on-premise remote sources via SAP HANA Smart Data Access.") :arrow_upper_right:.
+> For troubleshooting the Cloud Connector, see [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/42f683edbf6742b19cf15e7a18b8a607.html "These are some of the most common issues that can occur when you use the Cloud Connector to connect to on-premise remote sources via SAP HANA Smart Data Access.") :arrow_upper_right:.
 
 
 

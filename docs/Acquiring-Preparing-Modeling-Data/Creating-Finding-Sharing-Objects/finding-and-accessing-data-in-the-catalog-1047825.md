@@ -140,7 +140,7 @@ Shows the assets, terms, and KPIs that have been recently added to the catalog.
 </tr>
 </table>
 
-You can also open a side panel when you click <span class="SAP-icons"></span> \(Show filters\) to filter by these categories and more. Click *Show More* to open a dialog with additional filter options.
+You can also open a side panel when you click <span class="FPA-icons"></span> \(Show filters\) to filter by these categories and more. Click *Show More* to open a dialog with additional filter options.
 
 
 
@@ -1060,5 +1060,5 @@ For example, if you are viewing terms and want to create a condition to filter o
 You can change the view to see different information.
 
 -   <span class="SAP-icons"></span> \(Display as Grid\)
--   <span class="SAP-icons"></span> \(Display as List\)
+-   <span class="FPA-icons"></span> \(Display as List\)
 

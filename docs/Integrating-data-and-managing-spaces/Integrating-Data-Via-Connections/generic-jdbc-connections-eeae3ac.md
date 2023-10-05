@@ -15,7 +15,7 @@ You can use this connection type to connect to most databases for which SAP Data
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 

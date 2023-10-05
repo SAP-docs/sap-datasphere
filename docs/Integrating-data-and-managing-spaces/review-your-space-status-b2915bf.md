@@ -106,7 +106,7 @@ A space is locked:
 
 For more information on how to unlock a space, see [Lock or Unlock Your Space](lock-or-unlock-your-space-c05b6a6.md).
 
-When a space is locked, its capabilities are limited. Members can continue to create and modify objects and save their changes in the repository, but they cannot deploy their changes to the run-time database.
+When a space is locked, its capabilities are limited. Users can continue to create and modify objects and save their changes in the repository, but they cannot deploy their changes to the run-time database.
 
 Restrictions include:
 
@@ -120,7 +120,7 @@ Restrictions include:
 
 -   insert privilege is removed from the Space Manager
 
--   adding members and creating open SQL schemas in Space Management is blocked
+-   assigning users and creating open SQL schemas in Space Management is blocked
 
 -   all direct execution or scheduling of tasks in the *Data Integration Monitor* or in the *Data Builder* that allow to add data to the space.
 

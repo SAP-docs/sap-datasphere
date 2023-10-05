@@ -6,23 +6,26 @@
 
 Once you find the asset you want, you can select it to view its overview information, detailed metadata, and impact and lineage diagram. This information includes metadata that is extracted from the source system or data enrichments added in the catalog.
 
-From the <span class="SAP-icons"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
-**Who does this apply to?** 
 
--   Users who are assigned the *Catalog User* role.
+<a name="loiodc061a23484241b1b791f5540b1f38e3__prereq_fcb_p1y_tyb"/>
 
+## Prerequisites
+
+You must be assigned the *Catalog User* role.
 
 > ### Tip:  
-> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
+> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role or appropriate privileges can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
+
+From the <span class="SAP-icons"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
 When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information can include extracted metadata, like the asset name, properties, description, and impact and lineage diagram. It also includes other data enrichments, such as glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data or analytic object is the right one you need for your business task at hand.
 
 For example, as a data modeler, you can review the details of a catalog asset to determine whether it is the one you need to add to your model. You can also view the lineage diagram for an asset to see other assets that are consumed in the model and which assets are impacted by a change.
 
-<a name="concept_rfk_4ly_3wb"/>
+<a name="concept_czq_hby_tyb"/>
 
-<!-- concept\_rfk\_4ly\_3wb -->
+<!-- concept\_czq\_hby\_tyb -->
 
 ## Viewing the Catalog Asset Header
 
@@ -110,7 +113,7 @@ Select the action you want to perform on the asset.
 
 -   *Open*: Opens the asset in the source system where you can view or edit it. This button appears if you have permission to access the asset in the source system.
 
--   :star:: Adds frequently used assets to your favorites.
+-   <span class="FPA-icons"></span> \(Add to Favorites\): Adds frequently used assets to your favorites.
 
 
 
@@ -118,13 +121,11 @@ Select the action you want to perform on the asset.
 </tr>
 </table>
 
-<a name="concept_qhf_4my_3wb"/>
+<a name="concept_nnp_4by_tyb"/>
 
-<!-- concept\_qhf\_4my\_3wb -->
+<!-- concept\_nnp\_4by\_tyb -->
 
 ## Viewing the Catalog Asset Overview
-
-
 
 Use the *Overview* tab to view general information about the asset and relationship links to the asset. The *Overview* tab is divided into the following sections:
 
@@ -306,9 +307,9 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 </tr>
 </table>
 
-<a name="concept_fm4_qbb_rxb"/>
+<a name="concept_s3f_vby_tyb"/>
 
-<!-- concept\_fm4\_qbb\_rxb -->
+<!-- concept\_s3f\_vby\_tyb -->
 
 ## Viewing Detailed Metadata for an Asset
 
@@ -346,7 +347,7 @@ Description
 <tr>
 <td valign="top">
 
-:mag:
+<span class="FPA-icons"></span> \(Search\)
 
 
 
@@ -378,7 +379,7 @@ Sort the rows in the table by ascending or descending order based on the column 
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Filter\)
+<span class="FPA-icons"></span> \(Filter\)
 
 
 
@@ -416,9 +417,9 @@ For information on the metadata that appears in this tab, see the help documenta
 -   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 
 
-<a name="concept_ewq_zmy_3wb"/>
+<a name="concept_qxv_gcy_tyb"/>
 
-<!-- concept\_ewq\_zmy\_3wb -->
+<!-- concept\_qxv\_gcy\_tyb -->
 
 ## Analyzing Data Impact and Lineage
 
@@ -461,7 +462,7 @@ Description
 </td>
 <td valign="top">
 
-Use the toolbar and diagram tools to control the layout of the diagram. Click <span class="SAP-icons"></span> \(Refresh\) to update the diagram with the latest changes.
+Use the toolbar and diagram tools to control the layout of the diagram. Click <span class="FPA-icons"></span> \(Refresh\) to update the diagram with the latest changes.
 
 
 
@@ -519,7 +520,7 @@ You can expand or collapse a container, using the <span class="FPA-icons"></s
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
-Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="SAP-icons"></span> \(Open Asset Details\). Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
+Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons"></span> \(Open Asset Details\). Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons"></span> \(Show Next Level\) or <span class="SAP-icons"></span> \(Hide All\) on the object.
 

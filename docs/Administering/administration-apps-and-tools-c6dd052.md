@@ -12,7 +12,7 @@ You administer SAP Datasphere using apps and tools in the side navigation area.
 
 ## ![](images/Space_Management_a868247.png) \(*Space Management*\)
 
-In the *Space Management*, you can set up, configure, and monitor your spaces, including assigning users to them. For more information, see [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space members and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:.
+In the *Space Management*, you can set up, configure, and monitor your spaces, including assigning users to them. For more information, see [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space users and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:.
 
 
 
@@ -295,7 +295,7 @@ More Information
 </td>
 <td valign="top">
 
-[Enable Audit Logging](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:
+[Enable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:
 
 
 
@@ -407,7 +407,7 @@ Clean-up task logs to reduce storage consumption in your SAP Datasphere tenant.
 </td>
 <td valign="top">
 
-[Deleting Task Logs to Reduce Storage Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c6902024ecd74956b4ba2d1c67ccb073.html "In the Configuration area, you can check how much spaces the task logs are using on your tenant, and decide to delete the obsolete ones to reduce storage consumption.") :arrow_upper_right:
+[Deleting Task Logs to Reduce Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c6902024ecd74956b4ba2d1c67ccb073.html "In the Configuration area, you can check how much spaces the task logs are using on your tenant, and decide to delete the obsolete ones to reduce storage consumption.") :arrow_upper_right:
 
 
 

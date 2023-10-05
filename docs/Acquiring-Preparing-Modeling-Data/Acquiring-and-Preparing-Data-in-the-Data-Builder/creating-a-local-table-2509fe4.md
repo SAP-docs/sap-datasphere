@@ -101,6 +101,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     -   *Fact* - Contains one or more measures and attributes. This is the principal type of object used by BI clients \(see [Creating a Fact](../Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Contains attributes containing master data like a product list or store directory, and supporting hierarchies \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Contains attributes defining a parent-child hierarchy \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
+    -   *Hierarchy with Directory* - Contains one or more parent-child hierarchies \(see [Creating a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\).
     -   *Text* - Contains attributes used to provide textual content in one or more languages \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - \[default\] Contains columns with no specific analytical purpose.
     -   *Analytical Dataset \(Deprecated\)*Hierarchy - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
@@ -166,6 +167,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     -   *Fact* - Review the lists of measures and attributes \(see [Creating a Fact](../Modeling-Data-in-the-Data-Builder/creating-a-fact-30089bd.md)\).
     -   *Dimension* - Review the list of attributes \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\).
     -   *Hierarchy* - Define the parent and child columns \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\).
+    -   *Hierarchy with Directory* - Define all the necessary attributes and settings \(see [Creating a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\).
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - Review the list of columns \(see [Columns](columns-8f0f40d.md)\).
 

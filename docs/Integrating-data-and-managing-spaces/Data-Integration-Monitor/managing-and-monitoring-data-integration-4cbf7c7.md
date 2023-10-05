@@ -24,12 +24,12 @@ From <span class="FPA-icons"></span> \(*Data Integration Monitor*\), you can 
 
 -   *Task Chain Monitor*: Monitor the status and progress of running and past task chains. For more information, see [Monitoring Task Chains](monitoring-task-chains-4142201.md).
 
-Depending on your role and the tasks you need to perform in the *Data Integration Monitor*, you may need specific privileges. See [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+Depending on your role and the tasks you need to perform in the *Data Integration Monitor*, you may need specific privileges. See [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
 
-Here are some examples of privileges and permissions you would need to perform some tasks:
+Here are some examples of privileges and permissions you need to perform some tasks:
 
 -   To create or update connections, you need the *Data Warehouse Remote Connection* privilege.
--   To perform one-time actions in one of the monitors, such as replicating full set of data, redeploying persisted views, loading new snapshot, or removing persisted data, you need the *Data Warehouse Data Integration* privilege and the **Update** permission.
--   To schedule tasks in one of the monitors and perform task execution and log retrieval in general, you need the *Data Warehouse Data Integration* privilege and the **Execute** permission.
--   To add a new view in the *View Persistency Monitor*, or to set up or change partitioned data loading in the *Remote Table Monitor*, you need the *Data Warehouse Data Builder* privilege with **Read** permission.
+-   To perform one-time actions in one of the monitors, such as replicating full set of data, redeploying persisted views, loading new snapshot, or removing persisted data, you need the privilege *Data Warehouse Data Integration* *Update*.
+-   To schedule tasks in one of the monitors and perform task execution and log retrieval in general, you need the privilege *Data Warehouse Data Integration* *Execute*.
+-   To add a new view in the *View Persistency Monitor*, or to set up or change partitioned data loading in the *Remote Table Monitor*, you need the privilege *Data Warehouse Data Builder* *Read*.
 

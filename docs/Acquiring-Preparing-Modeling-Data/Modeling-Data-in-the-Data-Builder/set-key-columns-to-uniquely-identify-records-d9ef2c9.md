@@ -150,6 +150,37 @@ A *Hierarchy* will generally not point to other entities.
 <tr>
 <td valign="top">
 
+*Hierarchy with Directory*
+
+See [Creating a Hierarchy with Directory](creating-a-hierarchy-with-directory-36c39ee.md).
+
+
+
+</td>
+<td valign="top">
+
+You must set exactly two key attributes for a *Hierarchy with Directory*:
+
+-   Child attribute of the parent-child hierarchy structure
+-   Hierarchy name attribute
+
+
+
+</td>
+<td valign="top">
+
+A *Hierarchy with Directory* must point to:
+
+-   A *Dimension* acting as its directory - The hierarchy name attribute in the \(source\) hierarchy entity must be mapped to the primary key column in the \(target\) dimension.
+-   Any non-leaf *Dimension* providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Relational Dataset*
 
 

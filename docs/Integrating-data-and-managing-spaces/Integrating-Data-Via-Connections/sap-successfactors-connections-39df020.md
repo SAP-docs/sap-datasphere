@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__SF_usage)
 -   [Configuring Connection Properties](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP SuccessFactors](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c9b19156c417409b8d563cc4b56c5dc0.html "To be able to successfully validate and use a connection to SAP SuccessFactors for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP SuccessFactors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c9b19156c417409b8d563cc4b56c5dc0.html "To be able to successfully validate and use a connection to SAP SuccessFactors for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 
 

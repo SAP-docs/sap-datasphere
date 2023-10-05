@@ -39,6 +39,11 @@ In addition to this method, you can also create associations in the side panel i
 
     -   A *Hierarchy* will generally not point to other entities.
 
+    -   A *Hierarchy with Directory* must point to:
+
+        -   A *Dimension* acting as its directory - The hierarchy name attribute in the \(source\) hierarchy entity must be mapped to the primary key column in the \(target\) dimension.
+        -   Any non-leaf *Dimension* providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
+
     -   A *Relational Dataset* can point to any other entity and should generally follow the rules for dimensions.
 
 

@@ -902,7 +902,7 @@ Europe \(Amsterdam\)
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 
 
@@ -960,7 +960,7 @@ US West
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 
 

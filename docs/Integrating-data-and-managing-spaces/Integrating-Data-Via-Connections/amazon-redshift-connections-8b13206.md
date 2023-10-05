@@ -10,7 +10,7 @@ Use an *Amazon Redshift* connection to access data from Amazon Redshift 8.x data
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/519b2dbc588940fb9698745e430c9859.html "To be able to successfully validate and use a connection to an Amazon Redshift database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/519b2dbc588940fb9698745e430c9859.html "To be able to successfully validate and use a connection to an Amazon Redshift database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 

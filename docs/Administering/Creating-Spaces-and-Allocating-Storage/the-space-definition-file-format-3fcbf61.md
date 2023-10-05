@@ -507,7 +507,7 @@ This third file will update the *Space Priority*, and will leave the other param
 
 ## Members
 
-Users with the *DW Administrator* or *DW Space Administrator* role can add members to a space \(see [Assign Members to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator* or *DW Space Administrator* role can add members to a space \(see  <?sap-ot O2O class="- topic/xref " href="9d59fe511ae644d98384897443054c16.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/def1691508833862/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/3fcbf619f2774b849fa7df58163b3609.xml" ?> \) using the following syntax:
 
 ```
 {
@@ -661,7 +661,7 @@ When updating space members, you must always list all members that you want to h
 
 ## Database Users
 
-Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can add database users to a space \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can add database users to a space \(see  <?sap-ot O2O class="- topic/xref " href="3de55a78a4614deda589633baea28645.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/def1691508833862/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/3fcbf619f2774b849fa7df58163b3609.xml" ?> \) using the following syntax:
 
 ```
 {
@@ -971,7 +971,7 @@ When updating database users, you must always list all database users that you w
 
 ## HDI Containers
 
-Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can associate HDI containers to a space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in your SAP Datasphere run-time database and then exchange data between your HDI containers and your SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\) using the following syntax:
+Users with the *DW Administrator*, *DW Space Administrator*, or *DW Integrator* role can associate HDI containers to a space \(see  <?sap-ot O2O class="- topic/xref " href="1aec7ca95af24208a61c1a444b249d95.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/def1691508833862/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/3fcbf619f2774b849fa7df58163b3609.xml" ?> \) using the following syntax:
 
 ```
 {

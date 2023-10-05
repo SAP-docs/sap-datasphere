@@ -25,7 +25,7 @@ The current status of a space is shown in its *Deployment Status* property, whic
 You can also view the date of the last deployment in the *Deployed On* area.
 
 > ### Note:  
-> -   When you add a member to the space, the member becomes active when you save the space. You can view this in the *Active* column of the *Members* area in your space.
+> -   When you assign a user to the space, the user becomes active when you save the space. You can view this in the *Active* column of the *Users* area in your space.
 > 
 > -   Any change that you make in the *Time Data* area of your space is immediately deployed even if you haven’t saved nor deployed the space. A message is displayed in this area, which indicates that the changes are immediately applied
 > -   The option *Expose for Consumption by Default* does not need a redeployment to be active.

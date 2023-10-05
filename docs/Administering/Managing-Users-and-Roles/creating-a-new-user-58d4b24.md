@@ -12,10 +12,7 @@ You can create individual users in SAP Datasphere.
 
 ## Prerequisites
 
-You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the standard application roles or custom roles. But don't worry-you can still assign roles after you've created the users.
-
-> ### Note:  
-> For more information about how to create a user and assign roles, check the in-app help in your system. Use F1 to open in-app help from SAP Datasphere User Interfaces. You can also use the question mark and click the *Help* tile to open the help.
+You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the standard roles or custom roles. You can still assign roles after you've created the users.
 
 
 <table>
@@ -112,7 +109,7 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 4.  Enter the user name details.
 
-    Only *Last Name* is mandatory, but it is recommended that you provide a *First Name*, *Last Name*, and *Display Name*. *Display Name* will appear in user-facing screens.
+    Only *Last Name* is mandatory, but it is recommended that you provide a *First Name*, *Last Name*, and *Display Name*. *Display Name* will appear in the screens.
 
 5.  Enter an *Email* address.
 
@@ -120,11 +117,7 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 6.  Select the *Manager* who will approve requests this user makes for new role assignments.
 
-    Users can request additional roles only if they have a custom role that allows for self-service.
-
 7.  Select the icon <span class="FPA-icons"></span> and choose one or more roles from the list.
-
-    If one or more default roles have already been created, you can leave *Roles* empty. Default roles will be assigned when you click save.
 
 8.  Select <span class="FPA-icons"></span> \(Save\).
 

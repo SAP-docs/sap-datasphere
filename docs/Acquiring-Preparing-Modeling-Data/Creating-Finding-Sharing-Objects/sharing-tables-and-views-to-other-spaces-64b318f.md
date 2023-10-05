@@ -4,7 +4,7 @@
 
 # Sharing Tables and Views To Other Spaces
 
-Share a *Data Builder* table or view to another space to allow that space's members to use it as a source for their objects.
+Share a *Data Builder* table or view to another space to allow that users assigned to the space use it as a source for their objects.
 
 This topic contains the following sections:
 
@@ -25,7 +25,7 @@ Your space is a secure area and its entities and other objects cannot be seen in
 > ### Note:  
 > Only *Data Builder* tables and views can be shared. Other *Data Builder* objects and *Business Builder* objects cannot be shared to other spaces.
 
-You can share tables and views, but only views can have row-level security applied to protect data \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+You can share tables and views, but only views can have row-level security applied to protect data \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 
 In this example, the *IT* space has imported the *Sales* and *Products* tables from a source system and wants to share them to the *Sales* space, but the *Sales* table contains sensitive data:
 
@@ -56,7 +56,7 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
 3.  In the *Add Spaces* field, enter the name of the space or spaces that you want to share the entities to \(or click <span class="SAP-icons"></span> to select the spaces in a list and then click *Select*.
 
     > ### Note:  
-    > You can share entities to any spaces in your SAP Datasphere tenant, including those you are not a member of.
+    > You can share entities to any spaces in your SAP Datasphere tenant, including those you are not a assigned to.
 
 4.  Click *Share* to grant the other spaces *Read* access to the objects.
 

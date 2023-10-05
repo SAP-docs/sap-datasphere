@@ -83,7 +83,7 @@ A transformation flow writes data to a target table. You can create a new target
     
     If the value of the *Truncate* option is *Yes*, when you start the transformation flow, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source table.
 
-    If not, the system inserts new data records after the existing data in the target table. For data records that already exist in the target table and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode.
+    If not, the system inserts new data records after the existing data in the target table. For data records that already exist in the target table and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode. Note that the system will only update such target records if the target table has a primary key column.
 
 
     
@@ -125,7 +125,7 @@ A transformation flow writes data to a target table. You can create a new target
     
 3.  In the *Mappings* section, review the mappings of incoming columns to the target table columns.
 
-    -   When you connect any operator to the target table, each incoming columns that has the same name and a compatible data type with a column in the target table is automatically mapped to it.
+    -   When you connect any operator to the target table, each incoming column that has the same name and a compatible data type with a column in the target table is automatically mapped to it.
 
     -   You can manually map an incoming columns with a target table column that has a compatible datatype by dragging the column from the left list and dropping it onto the appropriate column in the right list.
 
@@ -136,6 +136,9 @@ A transformation flow writes data to a target table. You can create a new target
 
     -   You can, at any time, click <span class="FPA-icons"></span> \(Auto Map\) to relaunch automapping based on names and datatypes.
 
+
+    > ### Note:  
+    > If the delta capture setting is enabled for the target table of a transformation flow, the *Change Date* column of the target table will always contain the time that the transformation flow was run, even if an incoming column is mapped to the *Change Date* column.
 
 4.  In the *Columns* section, view the columns of the target table. To check the data type of a column, hover over it and click <span class="FPA-icons"></span>.
 

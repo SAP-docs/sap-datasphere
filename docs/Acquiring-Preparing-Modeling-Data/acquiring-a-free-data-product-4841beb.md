@@ -12,7 +12,7 @@ A free data product does not need a license and can be downloaded directly from 
 
 You need a space and you need to be assigned to this space as a user.
 
-You need to have either the roles DW Integrator and DW Modeler, or the DW Admin role as the data marketplace creates artifacts and loads data. If you do not have sufficient privileges, the load button is disabled.
+You need to have either the roles DW Integrator and DW Modeler, as the data marketplace creates artifacts and loads data. If you do not have sufficient privileges, the load button is disabled.
 
 
 

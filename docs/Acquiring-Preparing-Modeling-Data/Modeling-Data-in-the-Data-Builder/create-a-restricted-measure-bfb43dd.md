@@ -4,9 +4,7 @@
 
 # Create a Restricted Measure
 
-
-
-## Context
+With a restricted measure, you can restrict available dimensions.
 
 
 
@@ -16,11 +14,9 @@
 
 2.  Select the source measure.
 
-3.  Select the aggregation type.
+3.  Enter your expression in the formula editor. An atomic expression usually has the format`<dimension> <operator> <value> (e.g. Country = 'Germany').`
 
-4.  Enter your expression in the formula editor. An atomic expression usually has the format`<dimension> <operator> <value> (e.g. Country = 'Germany').`
-
-5.  You can enable constant selection for the restricted measure. You can choose to set it for all dimensions or just for selected dimensions. A measure with constant selection will not be impacted by filters or drill-downs on the constant dimensions.
+4.  You can enable constant selection for the restricted measure. You can choose to set it for all dimensions or just for selected dimensions. A measure with constant selection will not be impacted by filters or drill-downs on the constant dimensions.
 
     Enabling constant selection is useful for comparing a single value with several different values. For example, you could create a restricted measure for sales in 2022, and then compare sales in 2022 with sales for all other years in the same table.
 

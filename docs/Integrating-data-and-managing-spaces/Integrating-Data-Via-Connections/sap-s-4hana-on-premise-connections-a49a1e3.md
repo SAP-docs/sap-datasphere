@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__S4_OP_usage)
 -   [Configuring Connection Properties](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -99,7 +99,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
+You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
 
 
 
@@ -390,7 +390,7 @@ Set to *true* if your source is an on-premise source and you want to use the con
 Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges.
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is not included in the *DW Integrator* or *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign the *DW Administrator* role to your user or to create a custom role containing the required privileges. 
 
 
 
@@ -633,7 +633,7 @@ Enter the port number of the gateway server where the ABAP adapter would registe
 </td>
 <td valign="top">
 
-Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
+Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
 
 
 
