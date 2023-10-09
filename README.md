@@ -23,8 +23,8 @@ We recommend using the SAP Datasphere documentation on SAP Help Portal as a star
    - [Acquiring, Preparing, and Modeling Data](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d?locale=en-US&state=PRODUCTION&version=cloud)
    - [Administering SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862?locale=en-US&state=PRODUCTION&version=cloud)
 3. You can either:
-    * Choose *Edit* to suggest a change for the current page you see in the Help Portal viewer, or
-    * Choose *Feedback* to open a GitHub issue in this repository.
+    * Choose *Feedback* > *Edit page* to suggest a change for the current page you see in the Help Portal viewer, or
+    * Choose *Feedback* > *Create issue* to open a GitHub issue in this repository.
 
 If you only make a small contribution, that's the quickest way to propose a change. For larger contributions, we recommend forking this repository to work locally. The filenames in the [docs](docs) directory are created based on the title of the page on SAP Help Portal.
 
