@@ -12,13 +12,82 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
 
 ## Procedure
 
-1.  Ensure that the space or spaces that you want to import into exist in your tenant, and that each one contains any connections required by remote tables that you are importing.
+1.  Ensure that your tenant is ready to import your content package:
 
-    Be aware that if your content contains objects that are shared from one space to another, then both spaces must exist.
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Prerequisite
+
+
+    
+    </th>
+    <th valign="top">
+
+    DW Administrator
+
+
+    
+    </th>
+    <th valign="top">
+
+    DW Space Administrator
+
+
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Does the space exist?
+
+    You cannot import content into a space with a different technical name to the space from which the content was exported
 
     > ### Note:  
-    > The <span class="FPA-icons"></span> \(*Transport*\) app cannot create spaces or connections and cannot import content into a space with a different technical name to the space from which the content was exported. Only an administrator can create spaces \(see [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.") :arrow_upper_right:\), while an administrator, space administrator, or integrator can create connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
+    > If the package contains objects from more than one space or objects that are shared from one space to another, then all referenced spaces must exist.
 
+
+    
+    </td>
+    <td valign="top">
+    
+    No preparation is necessary. Users with the *DW Administrator* can create spaces through the *Import* app.
+
+
+    
+    </td>
+    <td valign="top">
+    
+    If one or more required spaces does not exist, you must request a *DW Administrator* to create them for you.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Does the package contain remote tables?
+
+
+    
+    </td>
+    <td valign="top" colspan="2">
+    
+    Connections cannot be created via the *Import* app. In this case, before import:
+
+    -   A *DW Administrator* must create the space \(see [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:\).
+    -   A *DW Space Administrator* or *DW Integrator* assigned to the space must create the necessary connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
 2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
 
     If you don’t see expected packages to import, click the *Settings* button and review the import settings. You can:
@@ -142,5 +211,7 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     If you selected *Don’t overwrite objects or data*, a notification will let you know if any of the content wasn’t imported to avoid overwriting existing content.
 
     To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons"></span> History.
+
+6.  If you are a *DW Administrator* and have created a space as part of the import, you are assigned to the space as a *DW Space Administrator*. You can assign other users to the space \(including as space administrators\) as appropriate.
 
 

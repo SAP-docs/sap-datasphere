@@ -12,7 +12,7 @@ You can create new users or batch-update existing users by importing user data t
 
 The user data you want to import must be stored in a CSV file. At minimum, your CSV file needs columns for `UserID`, `LastName`, and `Email`, but it is recommended that you also include `FirstName` and `DisplayName`.
 
-If you want to assign new users different roles, include a `Roles` column in the CSV file. The role IDs used for role assignment are outlined in [Standard Application Roles](standard-application-roles-a50a51d.md).
+If you want to assign new users different roles, include a `Roles` column in the CSV file. The role IDs used for role assignment are outlined in [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 For existing users that you want to modify, you can create the CSV file by first exporting a CSV file from SAP Datasphere. For more information, see [Exporting Users](exporting-users-e227d3c.md).
 

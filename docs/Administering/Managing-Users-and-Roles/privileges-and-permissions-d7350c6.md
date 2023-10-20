@@ -7,7 +7,8 @@ A privilege represents a task or an area in SAP Datasphere and can be assigned t
 This topic contains the following sections:
 
 -   [Overview](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_e1w_nn1_wkb)
--   [SAP Datasphere Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_qrv_ygt_xxb)
+-   [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)
+-   [Scoped Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_scoped_privileges)
 -   [Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__permissions_list)
 
 
@@ -20,20 +21,22 @@ A role represents the main tasks that a user performs in SAP Datasphere. Each ro
 
 The standard roles provide sets of privileges and permissions that are appropriate for that role. For example, the *DW Administrator* role has all the *Spaces* permissions, while the *DW Viewer* role has none.
 
-You can use the standard roles to assign sets of privileges and permissions to your users \(see [Standard Application Roles](standard-application-roles-a50a51d.md)\) and create your own custom roles to group together other sets of privileges and permissions \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
+You can use the standard roles \(see [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)\) and create your own custom roles to group together other sets of privileges and permissions \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
+
+**Global versus scoped privileges** - Global privileges are privileges that are used at the tenant level and are not space-related, and can therefore be included in a global role, typically a tenant administrator role. Scoped privileges are privileges that are space-related and can therefore be included in a scoped role.
+
+> ### Caution:  
+> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
 
 
 
-<a name="loiod7350c6823a14733a7a5727bad8371aa__section_qrv_ygt_xxb"/>
+<a name="loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges"/>
 
-## SAP Datasphere Privileges and Permissions
+## Global Privileges and Permissions
 
-The following table lists the privileges and the permissions that can be set for each privilege.
+The following table lists the privileges and their permissions that can included in a global role.
 
-> ### Note:  
-> Some permissions require others and may automatically set them. For example, setting the *Delete* permission for the *Data Warehouse Data Builder* privilege automatically sets the *Read* permission as well.
-
-**Permissions by Privileges**
+**Global Privileges and Permissions**
 
 
 <table>
@@ -70,7 +73,7 @@ Description
 </td>
 <td valign="top">
 
-`CRUD---M`
+`C------M`
 
 
 
@@ -79,12 +82,11 @@ Description
 
 Allows access to spaces in the *Space Management* tool.
 
--   *Read* - To view the *Space Management*.
--   *Create*, *Update*, *Delete* - To create, update or delete spaces.
+-   *Create* - To create spaces.
 
-    To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+    To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
 
--   *Manage* - To view all spaces, not only the spaces a user is assigned to.
+-   *Manage* - To read, update and delete all spaces.
 
     > ### Caution:  
     > The permission *Manage* should be granted only to tenant administrators.
@@ -106,6 +108,106 @@ See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f454942
 </td>
 <td valign="top">
 
+`-------M`
+
+
+
+</td>
+<td valign="top">
+
+Allows access to all objects inside a space, such as views and tables.
+
+*Manage* - To view objects and data in all spaces.
+
+> ### Note:  
+> To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+
+> ### Caution:  
+> The permission *Manage* should be granted only to tenant administrators.
+
+See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Warehouse General*
+
+
+
+</td>
+<td valign="top">
+
+`-R------`
+
+
+
+</td>
+<td valign="top">
+
+Allows users to log into SAP Datasphere. Included in all standard roles except for *DW Consumer*.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role*
+
+
+
+</td>
+<td valign="top">
+
+`CRUD----`
+
+
+
+</td>
+<td valign="top">
+
+Allows access to the *Roles* app.
+
+See [Managing Roles and Privileges](managing-roles-and-privileges-3740dac.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*User*
+
+
+
+</td>
+<td valign="top">
+
 `CRUD---M`
 
 
@@ -113,16 +215,200 @@ See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f454942
 </td>
 <td valign="top">
 
-Allows access to all objects inside a space, such as views and tables, for users who are assigned to the space.
+Allows access to lists of users.
 
--   *Read* - To view the objects in the spaces users are assigned to.
+-   `R` \(*Read*\) - To see a list of users in a dialog, for example when choosing which users to share a story with, or when choosing users to add to a team.
 
--   *Create*, *Update*, *Delete* - To create, update or delete objects in the spaces users are assigned to.
+-   To open the *Security* \> *Users* tools, you need all 4 permissions `CRUD----`. If you have only the Read permission, you cannot see the list of users in *Security* \> *Users*.
 
--   *Manage* - To see objects and data in all spaces, not only in the spaces users are assigned to.
+    > ### Note:  
+    > The permissions `CRUD----` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
 
-    > ### Caution:  
-    > The permission *Manage* should be granted only to tenant administrators.
+-   `M` \(*Manage*\) - To permit assigning users to roles, and approving role assignment requests from users.
+
+
+See [Managing SAP Datasphere Users](managing-sap-datasphere-users-4fb82cb.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Activity Log*
+
+
+
+</td>
+<td valign="top">
+
+`-R-D----`
+
+
+
+</td>
+<td valign="top">
+
+Allows access to the *Activites* area in the *Security* tool.
+
+See [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Lifecycle*
+
+
+
+</td>
+<td valign="top">
+
+`-R---MS-`
+
+
+
+</td>
+<td valign="top">
+
+Allows to import and export content via the *Content Network* and *Transport* tools.
+
+-   `M` \(*Maintain*\) - Allows access to the tools *Content Network* and *Transport* \> *Import* so the user can import packages from the *Content Network*.
+-   `M` \(*Maintain*\) and `S` \(*Share*\) - Allows access to the tool *Transport* \> *Export* so the user can export packages from *Transport* \> *Export* in the*Content Network*.
+
+
+> ### Note:  
+> The permissions `-R---MS-` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
+
+See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right: and [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*System Information*
+
+
+
+</td>
+<td valign="top">
+
+`-RU-----`
+
+
+
+</td>
+<td valign="top">
+
+-   *Read* - To access the *About* area in the *System* tool.
+
+-   *Update* - To access the *Administration*, *Configuration* and *About* areas in the *System* tool.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loiod7350c6823a14733a7a5727bad8371aa__section_scoped_privileges"/>
+
+## Scoped Privileges and Permissions
+
+The following table lists the privileges and their permissions that can included in a scoped role.
+
+> ### Note:  
+> Some permissions require others and may automatically set them. For example, setting the *Delete* permission for the *Data Warehouse Data Builder* privilege automatically sets the *Read* permission as well.
+
+**Scoped Privileges and Permissions**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Privilege
+
+
+
+</th>
+<th valign="top">
+
+Permissions
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Spaces* 
+
+
+
+</td>
+<td valign="top">
+
+`-RUD----`
+
+
+
+</td>
+<td valign="top">
+
+Allows access to spaces in the *Space Management* tool.
+
+-   *Read* - To view the *Space Management*.
+-   *Update*, *Delete* - To update or delete spaces.
+
+
+See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Space Files* 
+
+
+
+</td>
+<td valign="top">
+
+`CRUD----`
+
+
+
+</td>
+<td valign="top">
+
+Allows access to all objects inside a space, such as views and tables.
+
+-   *Read* - To view the objects in spaces.
+
+-   *Create*, *Update*, *Delete* - To create, update or delete objects in spaces.
+
+    To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
 
 
 See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
@@ -181,7 +467,7 @@ Allows access to remote and run-time objects:
 
 -   *Read* - To view remote tables in the *Data Builder*.
 
--   *Create*, *Read*, *Update* and *Delete* - To create, update, or delete a connection in the *Connections* app, and users have to be a member of the space with the corresponding *Space Files* permission.
+-   *Create*, *Read*, *Update* and *Delete* - To create, update, or delete a connection in the *Connections* app, in addition to the corresponding *Space Files* permission.
 
 
 See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
@@ -217,7 +503,7 @@ Allows access to the *Data Integration Monitor* app:
 -   *Execute* - To work with schedules.
 
 > ### Note:  
-> In addition to these permissions, the following *Data Integration Monitor* actions require the DWC\_DATABUILDER privilege with *Read* permission:
+> In addition to these permissions, the following *Data Integration Monitor* actions require the *Data Warehouse Data Builder* \(*Read*\) privilege:
 > 
 > -   To add a new view in the *View Persistency Monitor*.
 > -   To set up or change partitioned data loading in the *Remote Table Monitor*.
@@ -238,16 +524,14 @@ Allows access to the *Data Integration Monitor* app:
 </td>
 <td valign="top">
 
-`-R------`
+Not in use
 
 
 
 </td>
 <td valign="top">
 
-Allows access to the *Repository Explorer* app. To see the contents the user also needs to be a member of the space and, therefore, requires *Read* on *Space Files*.
-
-See [Repository Explorer](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
+Not in use
 
 
 
@@ -495,171 +779,29 @@ Allows users to log into SAP Datasphere. Included in all standard roles except f
 <tr>
 <td valign="top">
 
-*Role*
+*Scoped Role User Assignment*
 
 
 
 </td>
 <td valign="top">
 
-`CRUD----`
+`-------M`
 
 
 
 </td>
 <td valign="top">
 
-Allows access to the *Roles* app.
+Allows to manage user assignment in a space.
 
-See [Managing Roles and Privileges](managing-roles-and-privileges-3740dac.md)
+`M` \(*Manage*\):
 
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*User*
-
-
-
-</td>
-<td valign="top">
-
-`CRUD---M`
-
-
-
-</td>
-<td valign="top">
-
-Allows access to lists of users.
-
--   `R` \(*Read*\) -
-
-    -   To see the list of members in a space, in addition to privileges *Spaces* \(`-R------`\) and *Team* \(`-R------`\).
-
-    -   To see a list of users in a dialog, for example when choosing which users to share a story with, or when choosing users to add to a team.
-
-
--   To open the *Security* \> *Users* tools, you need all 4 permissions `CRUD----`. If you have only the Read permission, you cannot see the list of users in *Security* \> *Users*.
-
-    > ### Note:  
-    > The permissions `CRUD----` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
-
--   `M` \(*Manage*\) - To permit assigning users to roles, and approving role assignment requests from users.
-
-
-See [Managing SAP Datasphere Users](managing-sap-datasphere-users-4fb82cb.md)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Team*
-
-
-
-</td>
-<td valign="top">
-
-`CRUD---M`
-
-
-
-</td>
-<td valign="top">
-
-Allows to assign and remove users to/from a space.
-
-See [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Activity Log*
-
-
-
-</td>
-<td valign="top">
-
-`-R-D----`
-
-
-
-</td>
-<td valign="top">
-
-Allows access to the *Activites* area in the *Security* tool.
-
-See [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Lifecycle*
-
-
-
-</td>
-<td valign="top">
-
-`-R---MS-`
-
-
-
-</td>
-<td valign="top">
-
-Allows to import and export content via the *Content Network* and *Transport* tools.
-
--   `M` \(*Maintain*\) - Allows access to the tools *Content Network* and *Transport* \> *Import* so the user can import packages from the*Content Network*.
--   `M` \(*Maintain*\) and `S` \(*Share*\) - Allows access to the tool *Transport* \> *Export* so the user can export packages from *Transport* \> *Export* in the*Content Network*.
-
+-   To see the *Users* area in the spaces assigned to the scoped role, in addition to *Spaces* `Read`.
+-   To edit the *Users* area in the spaces assigned to the scoped role, in addition to *Spaces* `Update`.
 
 > ### Note:  
-> The permissions `-R---MS-` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
-
-See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right: and [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*System Information*
-
-
-
-</td>
-<td valign="top">
-
-`-RU-----`
-
-
-
-</td>
-<td valign="top">
-
--   *Read* - To access the *About* area in the *System* tool.
-
--   *Update* - To access the *Administration*, *Configuration* and *About* areas in the *System* tool.
-
+> This privilege is displayed and available for selection only in a scoped role and is selected by default in the predefined scoped role DW Scoped Space Administrator.
 
 
 

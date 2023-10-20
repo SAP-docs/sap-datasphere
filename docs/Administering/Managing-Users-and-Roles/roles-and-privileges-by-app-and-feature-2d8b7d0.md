@@ -10,9 +10,15 @@ This topic contains the following sections:
 
 -   [Apps](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_apps)
 -   [Administration Tools](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_tools)
--   [Space Management Privileges and Permissions](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions)
+-   [Space Management Privileges and Permissions](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions_SDP_ON)
 -   [External Data Consumption](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_consumption)
 -   [The Command Line Interface](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_cli)
+
+> ### Note:  
+> For complete lists of standard roles, privileges, and permissions, see:
+> 
+> -   [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)
+> -   [Privileges and Permissions](privileges-and-permissions-d7350c6.md)
 
 
 
@@ -214,6 +220,8 @@ The following features need additional permissions \(which are included in the *
 </td>
 <td valign="top">
 
+*DW Space Administrator*
+
 *DW Modeler*
 
 *DW Viewer* \(read-only access\)
@@ -274,6 +282,8 @@ The following features need additional permissions \(which are included in the *
 
 </td>
 <td valign="top">
+
+*DW Space Administrator*
 
 *DW Modeler*
 
@@ -339,6 +349,8 @@ The following features need additional permissions \(which are included in the *
 </td>
 <td valign="top">
 
+*DW Space Administrator*
+
 *DW Integrator*
 
 *DW Modeler* \(manual tasks only\)
@@ -372,6 +384,8 @@ The following feature needs an additional permission \(which is included in the 
 </td>
 <td valign="top">
 
+*DW Space Administrator*
+
 *DW Integrator*
 
 *DW Modeler* \(read-only access\)
@@ -383,14 +397,6 @@ The following feature needs an additional permission \(which is included in the 
 </td>
 </tr>
 </table>
-
-> ### Note:  
-> -   In addition to the roles and privileges listed, users who have roles other than *DW Administrator* must also be members of one or more spaces in order to use these apps \(see [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:\).
-> -   Users with the role *DW Administrator* or *DW Space Administrator* have full access \(with full CRUD permissions\) to all the apps listed in this table.
-> -   Users with the *DW Viewer* role have read-only access to all the apps \(except for *Data Access Control*\) listed in this table.
-> -   For complete lists of standard roles, privileges, and permissions, see:
->     -   [Standard Application Roles](standard-application-roles-a50a51d.md)
->     -   [Privileges and Permissions](privileges-and-permissions-d7350c6.md)
 
 
 
@@ -438,6 +444,9 @@ See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3
 <td valign="top">
 
 *Spaces* \(CRUD---M\)
+
+> ### Note:  
+> For detailed information on permissions for *Spaces*, see [Space Management Privileges and Permissions](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions_SDP_ON)
 
 
 
@@ -641,7 +650,7 @@ See [Administering SAP Datasphere](../administering-sap-datasphere-70ee87c.md)
 
 
 
-<a name="loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions"/>
+<a name="loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions_SDP_ON"/>
 
 ## Space Management Privileges and Permissions
 
@@ -655,10 +664,13 @@ Users with different roles have different levels of access to the *Space Managem
 
 -   A *DW Space Administrator* has *Spaces* `(-RUD----)` permissions. They can see all the space properties, and edit those outside the *General Settings* and *Workload Management* sections.
 
--   A *DW Administrator* has *Spaces* `(CRUD---M)` permissions. They can create spaces and edit all properties, including modifying the storage allocated and the space priority.
+-   A *DW Administrator* has *Spaces* `(CRUD---M)` permissions. They can create spaces and edit some space properties, including modifying the storage allocated and the space priority.
 
 
 Various privileges and permissions are required to see and edit different parts of the *Space Management* tool:
+
+> ### Note:  
+> The global privilege *Spaces* `(-------M)` enables users to perform the following actions in all the spaces of the tenant: read, update and delete.
 
 
 <table>
@@ -697,7 +709,7 @@ See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bb
 </td>
 <td valign="top">
 
-*Spaces* `(CR-----M)` and *Team* `(CRU-----)`.
+Global privileges *Spaces* `(C------M)` and *User* `(-R------)`.
 
 
 
@@ -720,18 +732,28 @@ View Space Properties
 </td>
 <td valign="top">
 
-*Spaces* `(-R------)`
+Global privilege *Spaces* `(-------M)`
+
+or scoped privilege *Spaces* `(-R------)`
 
 > ### Note:  
 > In addition, you also need the following permissions to view these properties:
 > 
-> -   *Members*: *User* `(-R------)` and *Team* `(-R------)`
+> -   *Users*: Global privileges *Role* `(-R------)` or scoped privileges *Scoped Role User Assignment* `(-------M)`
 > 
-> -   *Database Access*: *Remote Connection*`(-R------)`
+> -   *Data Consumption* and *Database Users*: Global privilege *Spaces* `(-------M)` or scoped privilege *Spaces* `(-R------)`
 > 
-> -   *Time Data*: *Data Builder* `(-R------)`
+> -   *HDI Containers*:Scoped privileges *Spaces* `(-R------)` and *Remote Connection* `(-R------)`
 > 
-> -   *Auditing*: *Spaces* `(--U-----)`
+>     > ### Note:  
+>     > A DW Administrator cannot see the *HDI Containers* area in a space.
+> 
+> -   *Time Data*: Scoped privileges *Spaces* `(-R------)` and *Data Builder* `(-R------)`
+> 
+>     > ### Note:  
+>     > A DW Administrator cannot see the *Time Data* area in a space.
+> 
+> -   *Auditing*: Global privilege *Spaces* `(-------M)` or scoped privilege *Spaces* `(--R-----)`
 
 
 
@@ -759,7 +781,9 @@ See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bb
 </td>
 <td valign="top">
 
-*Spaces* `(-RU-----)`
+Global privilege *Spaces* `(-------M)` 
+
+or scoped privilege *Spaces* `(-RU-----)`
 
 
 
@@ -784,7 +808,7 @@ See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bb
 </td>
 <td valign="top">
 
-*Spaces* `(-R-----M)`
+Global privilege *Spaces* `(-------M)`
 
 
 
@@ -800,16 +824,16 @@ DW Administrator
 <tr>
 <td valign="top">
 
-Modify *Members*
-
-See [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:
+Modify *Users*
 
 
 
 </td>
 <td valign="top">
 
-*Spaces* `(-R------)` and *Team* `(--U-----)`
+Global privileges *Spaces* `(-------M)` and *Role* `(-------M)` 
+
+or scoped privileges *Spaces* `(--U-----)` and *Scoped Role User Assignment* `(-------M)`
 
 
 
@@ -825,23 +849,56 @@ DW Administrator and DW Space Administrator
 <tr>
 <td valign="top">
 
-Modify *Database Access*
+Modify *Data Consumption* and *Database Users*
 
-See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right: and [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
-
-
-
-</td>
-<td valign="top">
-
-*Spaces* `(-R------)` and *Remote Connection* `(--U-----)`
+See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:
 
 
 
 </td>
 <td valign="top">
 
-DW Administrator, DW Space Administrator and DW Integrator
+Global privilege *Spaces* `(-------M)`
+
+or scoped privileges *Spaces* `(-RU-----)`
+
+
+
+</td>
+<td valign="top">
+
+DW Administrator, DW Space Administrator
+
+> ### Note:  
+> A user with the DW Integrator role needs in addition the privilege *Spaces* `(--U-----)` to create database users.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Modify *HDI Containers*
+
+See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+Scoped privileges *Spaces* `(--U-----)` and *Remote Connection* `(--U-----)`
+
+
+
+</td>
+<td valign="top">
+
+DW Space Administrator
+
+> ### Note:  
+> A DW Administrator cannot access the *HDI Containers* area in a space.
 
 
 
@@ -859,14 +916,19 @@ See [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c
 </td>
 <td valign="top">
 
-*Spaces* `(-R------)` and *Data Builder* `(--U-----)`
+To update time data: scoped privileges *Spaces* `(--U-----)` and *Data Builder* `(--U-----)`
+
+To delete time data: scoped privileges *Spaces*`(--U-----)` and *Data Builder* `(---D----)`
 
 
 
 </td>
 <td valign="top">
 
-DW Administrator and DW Space Administrator
+DW Space Administrator
+
+> ### Note:  
+> A DW Administrator cannot access the *Time Data* area in a space.
 
 
 
@@ -884,7 +946,7 @@ See [Enable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f45494
 </td>
 <td valign="top">
 
-*Spaces* `(-RU-----)`
+Global privilege *Spaces* `(-------M)` or scoped privilege *Spaces* `(-RU-----)`
 
 
 
@@ -909,7 +971,7 @@ See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d
 </td>
 <td valign="top">
 
-*Spaces* `(-R------)`
+Scoped privilege *Spaces* `(-R------)`
 
 > ### Note:  
 > With *Spaces* `(-R-----M)`, a user with the DW Administrator role can monitor the tenant and space storage by seeing the bars about used/assigned disk/memory at the top of the *Space Management* tool \(see [Monitor Tenant and Space Storage](../Creating-Spaces-and-Allocating-Storage/monitor-tenant-and-space-storage-39b08d3.md)\).
@@ -928,6 +990,33 @@ DW Administrator, DW Space Administrator, DW Integrator and DW Modeler
 <tr>
 <td valign="top">
 
+Lock or Unlock a Space
+
+See [Lock or Unlock Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "If a space exceeds its assigned storage or if the audit logs enabled in the space consume too much disk storage, the space is automatically locked.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+Global privileges *Spaces* `(-------M)` 
+
+or scoped privilege *Spaces* `(--U-----)`
+
+
+
+</td>
+<td valign="top">
+
+DW Administrator and DW Space Administrator
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Delete a Space
 
 See [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data.") :arrow_upper_right:
@@ -937,7 +1026,9 @@ See [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425c
 </td>
 <td valign="top">
 
-*Spaces* `(-R-D----)` and *Team* `(---D----)`
+Global privileges *Spaces* `(-------M)` and *User* `(-------M)` 
+
+or scoped privileges *Spaces* `(---D----)` and *Scoped Role User Assignement* `(-------M)`
 
 
 
@@ -947,7 +1038,7 @@ See [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425c
 DW Administrator and DW Space Administrator
 
 > ### Note:  
-> A user with a space administrator role can delete only the spaces they’re assigned.
+> A user with a space administrator role can delete only the spaces they’re assigned via a scoped role.
 > 
 > A user with a tenant administrator role can delete any space as *Spaces* `(-------M)` is included in the role.
 
@@ -963,7 +1054,7 @@ DW Administrator and DW Space Administrator
 
 ## External Data Consumption
 
-Users can consume data exposed by SAP Datasphere if they are a member of a space and have the Space Files.Read permission, which is included in all standard application roles. 
+Users can consume data exposed by SAP Datasphere if they are assigned to a space via a scoped role and have the Space Files.Read permission. 
 
 
 <table>
@@ -1086,7 +1177,7 @@ Create/Update Space \(all properties\)
 <tr>
 <td valign="top">
 
-Update Space \(members, database users, HDI containers, entity definitions\)
+Update Space \(users, database users, HDI containers, entity definitions\)
 
 
 

@@ -147,8 +147,6 @@ When a local table with delta capture is deployed, the following objects are cre
     > This table is saved in the repository, but is deployed as a view in the database.
 
 
-The graphic below shows the different objects created: ![](images/Local_Table_with_Delta_Capture_-_Objects_created_90f3de9.png)
-
 The 2 objects are consumed differently by SAP Datasphere apps:
 
 -   Most SAP Datasphere apps consume a local table with delta capture through the *Active Records* table only. In these cases, local tables behave the same way independent of whether *Delta Capture* is set to "*On*" or "*Off*". For examples in Graphical Views, SQL Views, E/R Modeler or Business Builder.
@@ -164,4 +162,7 @@ The 2 objects are consumed differently by SAP Datasphere apps:
         -   File upload: You can update the delta capture table by uploading a new csv file, after deployment is completed. See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
 
 
+
+> ### Note:  
+> The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not allowed for external data access and is only consumed by the above SAP Datasphere internal apps.
 

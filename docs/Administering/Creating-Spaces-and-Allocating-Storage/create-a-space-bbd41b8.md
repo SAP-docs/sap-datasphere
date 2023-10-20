@@ -2,7 +2,7 @@
 
 # Create a Space
 
-Create a space, allocate storage, and assign one or more members to allow them to start acquiring and preparing data.
+Create a space, allocate storage, and set the space priority and statement limits.
 
 
 
@@ -11,7 +11,7 @@ Create a space, allocate storage, and assign one or more members to allow them t
 ## Context
 
 > ### Note:  
-> Only administrators can create spaces, allocate storage, and set the space priority and statement limits. The remaining space properties can be managed by the space administrators that the administrator assigns as members to the space.
+> Only administrators can create spaces, allocate storage, and set the space priority and statement limits. The remaining space properties can be managed by the space administrators that the administrator assigns to the space via a scoped role.
 
 
 
@@ -233,16 +233,7 @@ Create a space, allocate storage, and assign one or more members to allow them t
 
     For more information, see [Set a Priority and Statement Limits for a Space](set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
 
-6.  Use the list in the *Members* section to add users as members of the space.
-
-    You must assign at least one member in order to use the space:
-
-    -   **DW Space Administrator** - Can manage all aspects of a space \(except the *Storage Assignment* and *Workload Management* properties\) and can create data access controls and use the *Content Network*.
-    -   *DW Integrator* - Can integrate data via connections and can manage and monitor data integration in spaces of which they are a member.
-    -   **DW Modeler** - Can create and edit objects in the *Data Builder* and *Business Builder* and view data in all objects in spaces of which they are a member.
-    -   **DW Viewer** - Can view objects in spaces of which they are a member and view data output by views that are exposed for consumption in these spaces.
-
-    For more information, see [Assign Members to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.") :arrow_upper_right:.
+6.  You cannot assign users to the space as long as your space is not assigned to a scoped role \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)\). Once you assign one or more users to the space via a scoped role, the *Users* area will be automatically filled with the assigned users. You or a space administrator can then edit user assignments in this area \(see [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\).
 
 7.  \[optional\] Use the remaining sections to further configure the space.
 
@@ -286,7 +277,15 @@ Create a space, allocate storage, and assign one or more members to allow them t
         
     -   *Data Access*/*Database Users* - Use the list in the *Database Users* section to create users who can connect external tools and read from and write to the space. See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with the DW Space Administrator role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:.
     -   *Data Access*/*HDI Containers* - Use the list in the *HDI Containers* section to associate HDI containers to the space. See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:.
+
+        > ### Note:  
+        > A user with the DW Administrator role only cannot see the *HDI Containers* area.
+
     -   *Time Data*/*Time Tables and Dimensions* - Click the button in the *Time Tables and Dimensions* section to generate time data in the space. See [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:.
+
+        > ### Note:  
+        > A user with the DW Administrator role only cannot see the *Time Tables and Dimensions* area.
+
     -   *Auditing*/*Space Audit Settings* - Use the properties in the *Space Audit Settings* section to enable audit logging for the space. See [Enable Audit Logging](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:.
 
 8.  Either click *Save* to save your space \(and click *Deploy* later\), or directly click *Deploy* to save and deploy your space to the database in one click.

@@ -40,7 +40,7 @@ This topic contains the following sections:
 
 An administrator will assign you the DW Space Administrator role, create your space, and assign you to it. Once this is done, you can prepare your space as follows:
 
--   Assign SAP Datasphere users to your space \(see [Assign Members to Your Space](assign-members-to-your-space-9d59fe5.md)\).
+-   Assign SAP Datasphere users to your space \(see [Control User Access to Your Space](control-user-access-to-your-space-9d59fe5.md)\).
 -   Optionally import SAP and partner business content to support end-to-end business scenarios for various industries and lines of business \(see [Importing SAP and Partner Business Content from the Content Network](importing-sap-and-partner-business-content-from-the-content-network-400078d.md)\).
 -   Transport objects securely to and from your space \(see [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\).
 -   Use various monitoring and logging tools to manage your space \(see [Managing Your Space](managing-your-space-268ea7e.md)\).

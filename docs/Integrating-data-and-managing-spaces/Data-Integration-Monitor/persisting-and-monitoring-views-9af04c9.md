@@ -138,7 +138,7 @@ Add a new persisted view
 Click *Add View* and select the view you want to persist. It's then added to the *Persisted View* list. You can then either persist the view immediately, by selecting *View Persistency* \> *Load New Snapshot*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md)\).
 
 > ### Note:  
-> For this action, *Data Builder.READ* privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to either assign the *DW Space Administrator* or *DW Administrator* role to your user or to create a custom role containing the required privileges.
+> For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
 
 > ### Note:  
 > You can set up a view as persisted even if it has been created on top of remote data.

@@ -42,21 +42,21 @@ More Information
 <tr>
 <td valign="top">
 
-Standard application roles
+Standard Roles
 
 
 
 </td>
 <td valign="top">
 
-The roles available depend on the licenses included in your subscription
+Roles delivered with the application. The roles available depend on the licenses included in your subscription.
 
 
 
 </td>
 <td valign="top">
 
-[Standard Application Roles](standard-application-roles-a50a51d.md) 
+[Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md) 
 
 
 
@@ -65,14 +65,14 @@ The roles available depend on the licenses included in your subscription
 <tr>
 <td valign="top">
 
-Custom roles
+Custom Roles
 
 
 
 </td>
 <td valign="top">
 
-Variations on the standard roles, created to meet your company's needs
+Variations on the standard roles, created to meet your company's needs.
 
 
 
@@ -80,6 +80,29 @@ Variations on the standard roles, created to meet your company's needs
 <td valign="top">
 
 [Create a Custom Role](create-a-custom-role-862b88e.md) 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Scoped Roles
+
+
+
+</td>
+<td valign="top">
+
+Roles that inherit a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.
+
+
+
+</td>
+<td valign="top">
+
+[Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)
 
 
 
