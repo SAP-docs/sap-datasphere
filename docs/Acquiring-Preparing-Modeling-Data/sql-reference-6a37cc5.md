@@ -43,14 +43,10 @@ SAP Datasphere supports the following operators:
 
 Operator
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Description
 
 `+`
 
-
-
 </td>
 <td valign="top">
 
 Addition
-
-
 
 </td>
 </tr>
@@ -75,14 +67,10 @@ Addition
 
 `-`
 
-
-
 </td>
 <td valign="top">
 
 Subtraction
-
-
 
 </td>
 </tr>
@@ -91,14 +79,10 @@ Subtraction
 
 `*`
 
-
-
 </td>
 <td valign="top">
 
 Multiplication
-
-
 
 </td>
 </tr>
@@ -107,14 +91,10 @@ Multiplication
 
 `/`
 
-
-
 </td>
 <td valign="top">
 
 Division
-
-
 
 </td>
 </tr>
@@ -123,14 +103,10 @@ Division
 
 `AND`
 
-
-
 </td>
 <td valign="top">
 
 Logical conjunction
-
-
 
 </td>
 </tr>
@@ -139,14 +115,10 @@ Logical conjunction
 
 `OR`
 
-
-
 </td>
 <td valign="top">
 
 Logical disjunction
-
-
 
 </td>
 </tr>
@@ -155,14 +127,10 @@ Logical disjunction
 
 `NOT`
 
-
-
 </td>
 <td valign="top">
 
 Logical negation
-
-
 
 </td>
 </tr>
@@ -171,14 +139,10 @@ Logical negation
 
 `||`
 
-
-
 </td>
 <td valign="top">
 
 Concatenation
-
-
 
 </td>
 </tr>
@@ -187,14 +151,10 @@ Concatenation
 
 `<`
 
-
-
 </td>
 <td valign="top">
 
 Less than
-
-
 
 </td>
 </tr>
@@ -203,14 +163,10 @@ Less than
 
 `>`
 
-
-
 </td>
 <td valign="top">
 
 Greater than
-
-
 
 </td>
 </tr>
@@ -219,14 +175,10 @@ Greater than
 
 `=`
 
-
-
 </td>
 <td valign="top">
 
 Equal
-
-
 
 </td>
 </tr>
@@ -235,14 +187,10 @@ Equal
 
 `!=`
 
-
-
 </td>
 <td valign="top">
 
 Not equal
-
-
 
 </td>
 </tr>
@@ -251,14 +199,10 @@ Not equal
 
 `<=`
 
-
-
 </td>
 <td valign="top">
 
 Less than or equal
-
-
 
 </td>
 </tr>
@@ -267,14 +211,10 @@ Less than or equal
 
 `>=`
 
-
-
 </td>
 <td valign="top">
 
 Greater than or equal
-
-
 
 </td>
 </tr>
@@ -283,14 +223,10 @@ Greater than or equal
 
 `LIKE`
 
-
-
 </td>
 <td valign="top">
 
 Value similar to
-
-
 
 </td>
 </tr>
@@ -299,14 +235,10 @@ Value similar to
 
 `IS NULL`
 
-
-
 </td>
 <td valign="top">
 
 Value does not exist
-
-
 
 </td>
 </tr>
@@ -315,14 +247,10 @@ Value does not exist
 
 `BETWEEN`
 
-
-
 </td>
 <td valign="top">
 
 Value between two other values
-
-
 
 </td>
 </tr>
@@ -331,14 +259,10 @@ Value between two other values
 
 `()`
 
-
-
 </td>
 <td valign="top">
 
 Parentheses
-
-
 
 </td>
 </tr>
@@ -361,14 +285,10 @@ SAP Datasphere
 
 Predicate
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -377,14 +297,10 @@ Description
 
 `ANY`, `SOME`, `ALL`
 
-
-
 </td>
 <td valign="top">
 
 Compares values using the specified comparison operator and returns true, false, or unknown.
-
-
 
 </td>
 </tr>
@@ -393,14 +309,10 @@ Compares values using the specified comparison operator and returns true, false,
 
 `BETWEEN`
 
-
-
 </td>
 <td valign="top">
 
 Compares a value with a list of values within the specified range and returns true or false.
-
-
 
 </td>
 </tr>
@@ -409,14 +321,10 @@ Compares a value with a list of values within the specified range and returns tr
 
 `CONTAINS`
 
-
-
 </td>
 <td valign="top">
 
 Matches a search string with the results of a subquery.
-
-
 
 </td>
 </tr>
@@ -425,14 +333,10 @@ Matches a search string with the results of a subquery.
 
 `EXISTS`
 
-
-
 </td>
 <td valign="top">
 
 Tests for the presence of a value in a set and returns either true or false.
-
-
 
 </td>
 </tr>
@@ -441,14 +345,10 @@ Tests for the presence of a value in a set and returns either true or false.
 
 `IN`
 
-
-
 </td>
 <td valign="top">
 
 Searches for a value in a set of values and returns true or false.
-
-
 
 </td>
 </tr>
@@ -457,30 +357,10 @@ Searches for a value in a set of values and returns true or false.
 
 `LIKE`
 
-
-
 </td>
 <td valign="top">
 
 Performs a comparison to see if a character string matches a specified pattern.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`LIKE_REGEXPR`
-
-
-
-</td>
-<td valign="top">
-
-Performs regular expression matching.
-
-
 
 </td>
 </tr>
@@ -489,14 +369,10 @@ Performs regular expression matching.
 
 `MEMBER OF`
 
-
-
 </td>
 <td valign="top">
 
 Determines whether a value is a member of an array.
-
-
 
 </td>
 </tr>
@@ -505,20 +381,16 @@ Determines whether a value is a member of an array.
 
 `NULL`
 
-
-
 </td>
 <td valign="top">
 
 Performs a comparison of the value of an expression with NULL.
 
-
-
 </td>
 </tr>
 </table>
 
-For more information, see [Predicates](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20a2ab29751910148de0fe7189c330bc.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
+For more information, see [Predicates](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-reference-guide/predicates) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
 
 
@@ -535,14 +407,10 @@ SAP Datasphere
 
 Expression
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -551,14 +419,10 @@ Description
 
 `CASE WHEN THEN ELSE END`
 
-
-
 </td>
 <td valign="top">
 
 Provides if, then, else logic.
-
-
 
 </td>
 </tr>

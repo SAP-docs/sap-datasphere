@@ -46,7 +46,7 @@ SAP Datasphere supports the following SAP Open Connectors hub categories:
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
+See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
 
 
 
@@ -73,14 +73,10 @@ The connection type supports the data flow feature.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -89,14 +85,10 @@ Description
 
 *Open Connectors Instance* 
 
-
-
 </td>
 <td valign="top">
 
 Select the instance to which you want to connect. 
-
-
 
 </td>
 </tr>

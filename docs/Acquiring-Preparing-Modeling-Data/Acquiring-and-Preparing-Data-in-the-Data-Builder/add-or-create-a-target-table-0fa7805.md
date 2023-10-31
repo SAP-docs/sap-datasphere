@@ -19,9 +19,9 @@ Add a target table to write data to. You can only have one target table in a dat
     -   Drag an existing table from the *Source Browser*, drop it onto the canvas, and click the floating *Target* button to use it as the target table. You can choose:
         -   On the *Repository* tab - A local table.
         -   On the *Sources* tab:
-            -   A table in an Open SQL schema - if the space is granted write access to the table or schema \(see [Allow the Space to Write to the Open SQL Schema](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them.") :arrow_upper_right:\).
-            -   A table in a database user group schema - if the space is granted write access to the table or schema \(see [Allow a Space to Write to the Database User Group Schema](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5b27e03849fe4c7182bcb4274f010e90.html "To grant a space write privileges in the database user group schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the schema as targets and write data to them.") :arrow_upper_right:\).
-            -   A table in an SAP HDI container - if the space is granted write access to the table or schema \(see [Allow Your Space to Write to Your HDI Container](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aa3627f987d04b5f95fec1c45083dde9.html "To allow data flows in your SAP Datasphere space to use tables in your HDI container as targets, you must set the appropriate roles and add the container to your space.") :arrow_upper_right:\).
+            -   A table in an Open SQL schema - if the space is granted write access to the table or schema \(see [Allow the Space to Write to the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them.") :arrow_upper_right:\).
+            -   A table in a database user group schema - if the space is granted write access to the table or schema \(see [Allow a Space to Write to the Database User Group Schema](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5b27e03849fe4c7182bcb4274f010e90.html "To grant a space write privileges in the database user group schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the schema as targets and write data to them.") :arrow_upper_right:\).
+            -   A table in an SAP HDI container - if the space is granted write access to the table or schema \(see [Allow Your Space to Write to Your HDI Container](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aa3627f987d04b5f95fec1c45083dde9.html "To allow data flows in your SAP Datasphere space to use tables in your HDI container as targets, you must set the appropriate roles and add the container to your space.") :arrow_upper_right:\).
 
 
 
@@ -40,15 +40,11 @@ Add a target table to write data to. You can only have one target table in a dat
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -56,15 +52,11 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Label
-
-
     
     </td>
     <td valign="top">
     
     Enter a label to display in the target table symbol.
-
-
     
     </td>
     </tr>
@@ -72,15 +64,11 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Business Name / Technical Name / Type / Connection
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Provide information to identify the target table.
-
-
     
     </td>
     </tr>
@@ -88,8 +76,6 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Mode
-
-
     
     </td>
     <td valign="top">
@@ -114,8 +100,6 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Update Records By Primary Key \(UPSERT\)
-
-
     
     </td>
     <td valign="top">
@@ -125,12 +109,10 @@ Add a target table to write data to. You can only have one target table in a dat
     If this option is not selected then all source records \(including those that are already present in the target table\) are appended, which may cause duplicate key errors.
 
     > ### Note:  
-    > -   For working with data lake, UPSERT / APPEND operations via virtual tables are not supported \(see [Working with Data Lake](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/93d0b5d4faa24777a4b78513f7ed6172.html "Assign a SAP Datasphere space to access and work with SAP HANA Cloud, data lake.") :arrow_upper_right:\).
+    > -   For working with data lake, UPSERT / APPEND operations via virtual tables are not supported \(see [Working with Data Lake](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/93d0b5d4faa24777a4b78513f7ed6172.html "Assign a SAP Datasphere space to access and work with SAP HANA Cloud, data lake.") :arrow_upper_right:\).
     > -   If no primary key is defined in the target table, then all records will be appended.
 
     This feature is based on the UPSERT statement \(see [Upsert](https://help.sap.com/viewer/a4ae14a90e33416a90edc658d94a5c06/Cloud/en-US/972f970f9c0942d89c528f8ecc5a4977.html) in the *SQL Reference for SAP Vora in SAP Data Intelligence* guide\).
-
-
     
     </td>
     </tr>
@@ -138,8 +120,6 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
@@ -147,8 +127,6 @@ Add a target table to write data to. You can only have one target table in a dat
     \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>
@@ -156,8 +134,6 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Use As
-
-
     
     </td>
     <td valign="top">
@@ -194,15 +170,11 @@ Add a target table to write data to. You can only have one target table in a dat
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -210,15 +182,11 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Control Batch Size
-
-
     
     </td>
     <td valign="top">
     
     To enforce a specific value for Batch Size, toggle this switch.
-
-
     
     </td>
     </tr>
@@ -226,15 +194,11 @@ Add a target table to write data to. You can only have one target table in a dat
     <td valign="top">
     
     Batch Size \(Number of Rows\)
-
-
     
     </td>
     <td valign="top">
     
     Specifies the amount of data being read. That is, it indicates the number of rows that will be fetched from the source in each request.
-
-
     
     </td>
     </tr>

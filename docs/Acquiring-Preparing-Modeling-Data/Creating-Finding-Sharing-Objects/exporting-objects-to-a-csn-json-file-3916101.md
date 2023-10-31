@@ -38,15 +38,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <th valign="top">
 
     Object Type
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -54,15 +50,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     Local Tables
-
-
     
     </td>
     <td valign="top">
     
     The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
-
-
     
     </td>
     </tr>
@@ -70,8 +62,6 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     Remote Tables
-
-
     
     </td>
     <td valign="top">
@@ -89,15 +79,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     Views
-
-
     
     </td>
     <td valign="top">
     
     The definition of a view contains the definitions of all its sources and any used data access controls. When you export a view, these objects are exported too.
-
-
     
     </td>
     </tr>
@@ -105,15 +91,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     Data Flows
-
-
     
     </td>
     <td valign="top">
     
     The definition of a data flow contains the definitions of all its sources and its target table. When you export a data flow, these objects are exported too.
-
-
     
     </td>
     </tr>
@@ -121,15 +103,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     Intelligent Lookups
-
-
     
     </td>
     <td valign="top">
     
     The definition of an intelligent lookup contains the definitions of its input and lookup entities. When you export an intelligent lookup, these entities are exported too.
-
-
     
     </td>
     </tr>
@@ -137,15 +115,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     Analytic Models
-
-
     
     </td>
     <td valign="top">
     
     The definition of an analytic model contains the definitions of its fact and dimension sources. When you export an analytic model, these entities are exported too.
-
-
     
     </td>
     </tr>
@@ -153,15 +127,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     E/R Models
-
-
     
     </td>
     <td valign="top">
     
     The definitions of all the tables and views in the model are exported. The model itself is not exported.
-
-
     
     </td>
     </tr>

@@ -31,14 +31,10 @@ Click *Define Partitions* and define the partitions ranges:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -46,8 +42,6 @@ Description
 <td valign="top">
 
 *Attribute*/*Column*
-
-
 
 </td>
 <td valign="top">
@@ -65,8 +59,6 @@ Select the column from which the partition will be defined.
 <td valign="top">
 
 *Partitions*
-
-
 
 </td>
 <td valign="top">

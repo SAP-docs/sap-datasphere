@@ -21,21 +21,15 @@ The requirements listed here are for the current release.
 
 Client Software
 
-
-
 </th>
 <th valign="top">
 
 Version
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -44,14 +38,10 @@ Additional Information
 
 Desktop browser
 
-
-
 </td>
 <td valign="top">
 
 Google Chrome, latest version
-
-
 
 </td>
 <td valign="top">
@@ -60,8 +50,6 @@ Google releases continuous updates to their Chrome browser. We make every effort
 
 For additional system requirements, see your web browser documentation.
 
-
-
 </td>
 </tr>
 <tr>
@@ -69,14 +57,10 @@ For additional system requirements, see your web browser documentation.
 
 Microsoft Edge based on the Chromium engine, latest version
 
-
-
 </td>
 <td valign="top">
 
 Microsoft has available for download continuous updates to their new Chromium-based Edge browser. We make every effort to fully test and support the latest versions as they are released.
-
-
 
 </td>
 </tr>
@@ -85,21 +69,15 @@ Microsoft has available for download continuous updates to their new Chromium-ba
 
 Additional software
 
-
-
 </td>
 <td valign="top">
 
 Adobe Acrobat Reader 9 or higher
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -118,21 +96,15 @@ Adobe Acrobat Reader 9 or higher
 
 Client Configuration
 
-
-
 </th>
 <th valign="top">
 
 Setting
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -141,21 +113,15 @@ Additional Information
 
 Network bandwidth
 
-
-
 </td>
 <td valign="top">
 
 Minimum 500-800 kbit/s per user
 
-
-
 </td>
 <td valign="top">
 
 In general, SAP Datasphere requires no more bandwidth than is required to browse the internet. All application modules are designed for speed and responsiveness with minimal use of large graphic files.
-
-
 
 </td>
 </tr>
@@ -164,8 +130,6 @@ In general, SAP Datasphere requires no more bandwidth than is required to browse
 
 Screen resolution
 
-
-
 </td>
 <td valign="top">
 
@@ -173,14 +137,10 @@ XGA 1024x768 \(high color\) or higher
 
 Widescreen: 1366x766 or higher
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -189,14 +149,10 @@ Widescreen: 1366x766 or higher
 
 Minimum recommended browser cache size
 
-
-
 </td>
 <td valign="top">
 
 250 MB
-
-
 
 </td>
 <td valign="top">
@@ -205,8 +161,6 @@ SAP Datasphere is a Web 2.0 application. We recommend allowing browser caching b
 
 To set browser cache size, see your browser documentation.
 
-
-
 </td>
 </tr>
 <tr>
@@ -214,21 +168,15 @@ To set browser cache size, see your browser documentation.
 
 HTTP 1.1
 
-
-
 </td>
 <td valign="top">
 
 Enable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -237,21 +185,15 @@ Enable
 
 JavaScript
 
-
-
 </td>
 <td valign="top">
 
 Enable
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -260,21 +202,15 @@ Enable
 
 Cookies
 
-
-
 </td>
 <td valign="top">
 
 Enable web browser session cookies \(non-persistent\) for authentication purposes
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -283,21 +219,15 @@ Enable web browser session cookies \(non-persistent\) for authentication purpose
 
 Pop-up windows
 
-
-
 </td>
 <td valign="top">
 
 Allow pop-up windows from SAP Datasphere domains
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -306,21 +236,15 @@ Allow pop-up windows from SAP Datasphere domains
 
 Power Option Recommendation
 
-
-
 </td>
 <td valign="top">
 
 High Performance mode for improved JavaScript performance
 
-
-
 </td>
 <td valign="top">
 
 For Microsoft based Operating Systems
-
-
 
 </td>
 </tr>
@@ -339,14 +263,10 @@ For Microsoft based Operating Systems
 
 Client Browser
 
-
-
 </th>
 <th valign="top">
 
 What's Supported
-
-
 
 </th>
 </tr>
@@ -355,14 +275,10 @@ What's Supported
 
 Menus, buttons, messages, and other elements of the user interface.
 
-
-
 </td>
 <td valign="top">
 
 Bulgarian \(bgBG\); Catalan \(caES\); Chinese \(zhTW\); Chinese \(Simplified\) \(zhCN\); Croatian \(hrHR\); Czech \(csCZ\); Danish \(daDK\); Dutch \(nlNL\); English \(enGB\); English \(enUS\); Estonian \(etEE\); French \(frCA\); French \(frFR\); Finnish \(fiFI\); German \(deDE\); German \(deCH\); Greek \(elGR\); Hindi \(hiIN\); Hungarian \(huHU\); Indonesian \(idID\); Italian \(itIT\); Japanese \(jaJP\); Korean \(koKR\); Latvian \(lvLV\); Lithuanian \(ltLT\); Malay \(msMY\); Norwegian \(noNO\); Polish \(plPL\); Portuguese \(Brazil\) \(ptBR\); Portuguese \(Portugal\) \(ptPT\); Romanian \(roRO\); Russian \(ruRU\); Serbian \(srRS\); Slovakian \(skSK\); Slovenian \(slSL\); Spanish \(esES\); Spanish \(esMX\); Swedish \(svSE\); Thai \(thTH\); Turkish \(trTR\);Ukrainian \(ukUA\); Vietnamese \(viVN\) and Welsh \(cyGB\).
-
-
 
 </td>
 </tr>

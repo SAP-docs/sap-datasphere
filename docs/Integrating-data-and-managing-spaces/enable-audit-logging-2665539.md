@@ -11,7 +11,7 @@ You can enable audit logs for your space so that read and change actions \(polic
     If audit logs have been enabled, entries of all SAP Datasphere related objects are saved in an SAP HANA audit log. These logs don't include the objects of the database access schemas, like open SQL schemas, for example.
 
     > ### Note:  
-    > If you choose to enable audit logs, be aware that they can consume a large quantity of GB of disk in your SAP Datasphere tenant database, especially when combined with long retention periods. Administrators can delete audit logs when needed, which will free up disk space. For more information, see [Delete Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk space.") :arrow_upper_right:.
+    > If you choose to enable audit logs, be aware that they can consume a large quantity of GB of disk in your SAP Datasphere tenant database, especially when combined with long retention periods. Administrators can delete audit logs when needed, which will free up disk space. For more information, see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk space.") :arrow_upper_right:.
 
 -   For individual database schemas \(open SQL schemas\), you can enable auditing for read and change operations in *Space Management* \> *<Your Space\>* \> *Database Access* \> *Database Users* \> *Edit Privileges*. The retention time can be defined per schema.
 
@@ -44,5 +44,5 @@ When you disable an audit policy for a space or for a database user \(open SQL s
 **Related Information**  
 
 
-[Monitor Database Operations with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:
+[Monitor Database Operations with Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:
 

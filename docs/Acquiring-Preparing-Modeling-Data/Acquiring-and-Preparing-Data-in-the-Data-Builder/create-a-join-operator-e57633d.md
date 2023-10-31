@@ -37,15 +37,11 @@ The join operator requires two inputs, and it generates a single output.
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -53,15 +49,11 @@ The join operator requires two inputs, and it generates a single output.
     <td valign="top">
     
     *Label*
-
-
     
     </td>
     <td valign="top">
     
     Provide a suitable name for your join as per your requirement.
-
-
     
     </td>
     </tr>
@@ -69,15 +61,11 @@ The join operator requires two inputs, and it generates a single output.
     <td valign="top">
     
     *Join Type*
-
-
     
     </td>
     <td valign="top">
     
     Choose the type of join. The joins that are currently supported are `INNER`, `LEFT_OUTER`, and `RIGHT_OUTER`.
-
-
     
     </td>
     </tr>

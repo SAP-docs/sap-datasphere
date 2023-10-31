@@ -30,21 +30,15 @@ The script operator offers support for data manipulation and vector operations v
 
 Builtin Module \(version 3.9\)
 
-
-
 </th>
 <th valign="top">
 
 NumPy Module \(version 1.21.5\)
 
-
-
 </th>
 <th valign="top">
 
 Pandas Module \(version 1.2.5\)
-
-
 
 </th>
 </tr>
@@ -206,35 +200,25 @@ You can find the correspondence between the supported column data types and Pyth
 
 Column Data Type
 
-
-
 </th>
 <th valign="top">
 
 Python Class
-
-
 
 </th>
 <th valign="top">
 
 dtype
 
-
-
 </th>
 <th valign="top">
 
 Restrictions
 
-
-
 </th>
 <th valign="top">
 
 Observation
-
-
 
 </th>
 </tr>
@@ -243,35 +227,25 @@ Observation
 
 Binary
 
-
-
 </td>
 <td valign="top">
 
 byte
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -280,35 +254,25 @@ object
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 numpy.bool
-
-
 
 </td>
 <td valign="top">
 
 bool
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -317,35 +281,25 @@ bool
 
 Date
 
-
-
 </td>
 <td valign="top">
 
 pandas.Timestamp
-
-
 
 </td>
 <td valign="top">
 
 datetime64\[ns\]
 
-
-
 </td>
 <td valign="top">
 
 Can only represent range: `1677-09-21` to `2262-04-11`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -354,35 +308,25 @@ Can only represent range: `1677-09-21` to `2262-04-11`
 
 DateTime
 
-
-
 </td>
 <td valign="top">
 
 pandas.Timestamp
-
-
 
 </td>
 <td valign="top">
 
 datetime64\[ns\]
 
-
-
 </td>
 <td valign="top">
 
 Can only represent range: `1677-09-21 00:12:43.145225` to `2262-04-11 23:47:16.854775807`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -391,35 +335,25 @@ Can only represent range: `1677-09-21 00:12:43.145225` to `2262-04-11 23:47:16.8
 
 Decimal
 
-
-
 </td>
 <td valign="top">
 
 decimal.Decimal
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -428,35 +362,25 @@ object
 
 DecimalFloat
 
-
-
 </td>
 <td valign="top">
 
 decimal.Decimal
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -465,35 +389,25 @@ object
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 int
-
-
 
 </td>
 <td valign="top">
 
 int64\*
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 \*The smallest possible between uint8, uint16, uint32, and uint64 that can hold all values.
-
-
 
 </td>
 </tr>
@@ -502,35 +416,25 @@ int64\*
 
 Integer64
 
-
-
 </td>
 <td valign="top">
 
 int
-
-
 
 </td>
 <td valign="top">
 
 int64
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -539,35 +443,25 @@ int64
 
 LargeBinary
 
-
-
 </td>
 <td valign="top">
 
 bytes
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -576,35 +470,25 @@ object
 
 LargeString
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -613,35 +497,25 @@ object
 
 String
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -650,35 +524,25 @@ object
 
 Time
 
-
-
 </td>
 <td valign="top">
 
 pandas.Timestamp
-
-
 
 </td>
 <td valign="top">
 
 datetime64\[ns\]
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -687,35 +551,25 @@ datetime64\[ns\]
 
 TimeStamp
 
-
-
 </td>
 <td valign="top">
 
 pandas.Timestamp
-
-
 
 </td>
 <td valign="top">
 
 datetime64\[ns\]
 
-
-
 </td>
 <td valign="top">
 
 Can only represent range:`1677-09-21 00:12:43.145225` to`2262-04-11 23:47:16.854775807`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -754,35 +608,25 @@ Input table \(Example DataFrame stored locally in the script as data\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
-
-
 
 </th>
 <th valign="top">
 
 birthday
 
-
-
 </th>
 <th valign="top">
 
 customer\_name
 
-
-
 </th>
 <th valign="top">
 
 office\_location
-
-
 
 </th>
 </tr>
@@ -791,35 +635,25 @@ office\_location
 
 John
 
-
-
 </td>
 <td valign="top">
 
 Doe
-
-
 
 </td>
 <td valign="top">
 
 2002-04-09 12:33:58
 
-
-
 </td>
 <td valign="top">
 
 RedBull
 
-
-
 </td>
 <td valign="top">
 
 Walldorf
-
-
 
 </td>
 </tr>
@@ -828,35 +662,25 @@ Walldorf
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
-
-
 
 </td>
 <td valign="top">
 
 2005-03-03 12:33:58
 
-
-
 </td>
 <td valign="top">
 
 GoPro
 
-
-
 </td>
 <td valign="top">
 
 São Leopoldo
-
-
 
 </td>
 </tr>
@@ -871,21 +695,15 @@ Output table \(Example returning DataFrame projection\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 customer\_name
 
-
-
 </th>
 <th valign="top">
 
 office\_location
-
-
 
 </th>
 </tr>
@@ -894,21 +712,15 @@ office\_location
 
 John
 
-
-
 </td>
 <td valign="top">
 
 RedBull
 
-
-
 </td>
 <td valign="top">
 
 Walldorf
-
-
 
 </td>
 </tr>
@@ -917,21 +729,15 @@ Walldorf
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 GoPro
 
-
-
 </td>
 <td valign="top">
 
 São Leopoldo
-
-
 
 </td>
 </tr>
@@ -963,14 +769,10 @@ Input table \(Example DataFrame stored locally in the script as df\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
-
-
 
 </th>
 </tr>
@@ -979,14 +781,10 @@ last
 
 John
 
-
-
 </td>
 <td valign="top">
 
 Doe
-
-
 
 </td>
 </tr>
@@ -995,14 +793,10 @@ Doe
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
-
-
 
 </td>
 </tr>
@@ -1017,21 +811,15 @@ Output table \(Example returning DataFrame df\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
 
-
-
 </th>
 <th valign="top">
 
 full
-
-
 
 </th>
 </tr>
@@ -1040,21 +828,15 @@ full
 
 John
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 John.Doe
-
-
 
 </td>
 </tr>
@@ -1063,21 +845,15 @@ John.Doe
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 Jane.Doe
-
-
 
 </td>
 </tr>
@@ -1109,21 +885,15 @@ Input table \(Example of incoming DataFrame as data\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
 
-
-
 </th>
 <th valign="top">
 
 birthday
-
-
 
 </th>
 </tr>
@@ -1132,21 +902,15 @@ birthday
 
 John
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 2002-04-09 12:33:58
-
-
 
 </td>
 </tr>
@@ -1155,21 +919,15 @@ Doe
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 2005-03-03 12:33:58
-
-
 
 </td>
 </tr>
@@ -1184,21 +942,15 @@ Output table \(Example returning DataFrame as data\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
 
-
-
 </th>
 <th valign="top">
 
 birthday
-
-
 
 </th>
 </tr>
@@ -1207,21 +959,15 @@ birthday
 
 John
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 April 9, 2002, Tuesday
-
-
 
 </td>
 </tr>
@@ -1230,21 +976,15 @@ April 9, 2002, Tuesday
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 March 3, 2005, Thursday
-
-
 
 </td>
 </tr>
@@ -1283,14 +1023,10 @@ Input table \(Example of incoming DataFrame as data\):
 
 dept\_no
 
-
-
 </th>
 <th valign="top">
 
 dept\_name
-
-
 
 </th>
 </tr>
@@ -1299,14 +1035,10 @@ dept\_name
 
 dept\_101
 
-
-
 </td>
 <td valign="top">
 
 Audit
-
-
 
 </td>
 </tr>
@@ -1315,14 +1047,10 @@ Audit
 
 dept\_102
 
-
-
 </td>
 <td valign="top">
 
 Advisory
-
-
 
 </td>
 </tr>
@@ -1337,21 +1065,15 @@ Output table \(Example returning DataFrame as data\):
 
 dept\_no
 
-
-
 </th>
 <th valign="top">
 
 dept\_name
 
-
-
 </th>
 <th valign="top">
 
 start\_date\_utc\_long
-
-
 
 </th>
 </tr>
@@ -1360,21 +1082,15 @@ start\_date\_utc\_long
 
 dept\_101
 
-
-
 </td>
 <td valign="top">
 
 Audit
 
-
-
 </td>
 <td valign="top">
 
 Decimal\("123456789012345678901"\)
-
-
 
 </td>
 </tr>
@@ -1383,21 +1099,15 @@ Decimal\("123456789012345678901"\)
 
 dept\_102
 
-
-
 </td>
 <td valign="top">
 
 Advisory
 
-
-
 </td>
 <td valign="top">
 
 Decimal\("123456789012345678901"\)
-
-
 
 </td>
 </tr>
@@ -1428,21 +1138,15 @@ Input table \(Example of incoming DataFrame as data\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
 
-
-
 </th>
 <th valign="top">
 
 salary
-
-
 
 </th>
 </tr>
@@ -1451,21 +1155,15 @@ salary
 
 John
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 Decimal\("1099.99"\)
-
-
 
 </td>
 </tr>
@@ -1474,21 +1172,15 @@ Decimal\("1099.99"\)
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 Decimal\("1599.50"\)
-
-
 
 </td>
 </tr>
@@ -1503,21 +1195,15 @@ Output table \(Example returning DataFrame as data\):
 
 first
 
-
-
 </th>
 <th valign="top">
 
 last
 
-
-
 </th>
 <th valign="top">
 
 salary
-
-
 
 </th>
 </tr>
@@ -1526,21 +1212,15 @@ salary
 
 Jane
 
-
-
 </td>
 <td valign="top">
 
 Doe
 
-
-
 </td>
 <td valign="top">
 
 Decimal\("1599.50"\)
-
-
 
 </td>
 </tr>

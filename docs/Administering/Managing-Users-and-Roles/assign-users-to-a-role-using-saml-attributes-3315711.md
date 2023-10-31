@@ -22,8 +22,7 @@ Your custom SAML Identity Provider \(IdP\) must be configured and the authentica
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Roles*\).
-
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\).
 2.  Select a role \(or open the role\) and click ![](images/SAMLRoleMapping_Button_4b6783e.jpg) \(*Open 'SAML Role Mapping'*\).
 
 3.  Under *Conditions*, select a *SAML Attribute*, select a *Condition*, and enter a *Value* if required.

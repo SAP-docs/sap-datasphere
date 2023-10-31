@@ -20,15 +20,11 @@ Add a new column in a projection operator and define the expression that will fi
     <th valign="top">
 
     Data Type
-
-
     
     </th>
     <th valign="top">
 
     Additional Field
-
-
     
     </th>
     </tr>
@@ -36,15 +32,11 @@ Add a new column in a projection operator and define the expression that will fi
     <td valign="top">
     
     string
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\) *Length*: Define the maximum number of characters that is allowed for the column.
-
-
     
     </td>
     </tr>
@@ -52,15 +44,11 @@ Add a new column in a projection operator and define the expression that will fi
     <td valign="top">
     
     binary
-
-
     
     </td>
     <td valign="top">
     
     \(Optional\) *Length*: Define the maximum number of characters that is allowed for the column.
-
-
     
     </td>
     </tr>
@@ -68,8 +56,6 @@ Add a new column in a projection operator and define the expression that will fi
     <td valign="top">
     
     decimal
-
-
     
     </td>
     <td valign="top">

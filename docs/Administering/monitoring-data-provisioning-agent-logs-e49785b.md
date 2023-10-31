@@ -15,14 +15,10 @@ The following logs are available:
 
 Log File Name and Location on Data Provisioning Agent Server
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 <code><i class="varname">&lt;DPAgent_root&gt;</i>/log/framework_alert.trc</code>
 
-
-
 </td>
 <td valign="top">
 
 Data Provisioning Agent adapter framework log. Use this file to monitor data provisioning agent statistics.
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ Data Provisioning Agent adapter framework log. Use this file to monitor data pro
 
 <code><i class="varname">&lt;DPAgent_root&gt;</i>/log/framework.trc</code>
 
-
-
 </td>
 <td valign="top">
 
 Data Provisioning Agent adapter framework trace log. Use this file to trace and debug data provisioning agent issues.
-
-
 
 </td>
 </tr>

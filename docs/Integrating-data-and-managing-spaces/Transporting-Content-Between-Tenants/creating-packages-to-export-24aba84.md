@@ -65,15 +65,11 @@ Users with the *DW Space Administrator* role can create packages:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -81,15 +77,11 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Business Name 
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
     </td>
     </tr>
@@ -97,8 +89,6 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Technical Name 
-
-
     
     </td>
     <td valign="top">
@@ -118,15 +108,11 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Business Purpose
-
-
     
     </td>
     <td valign="top">
     
     Provide a description, purpose, contacts, and tags to help other users understand the package. 
-
-
     
     </td>
     </tr>
@@ -134,15 +120,11 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Category
-
-
     
     </td>
     <td valign="top">
     
     The only available category is `My Content`.
-
-
     
     </td>
     </tr>
@@ -150,15 +132,11 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Target Location
-
-
     
     </td>
     <td valign="top">
     
     Select the location within `My Content` to export to. 
-
-
     
     </td>
     </tr>
@@ -166,8 +144,6 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Version
-
-
     
     </td>
     <td valign="top">
@@ -175,8 +151,6 @@ Users with the *DW Space Administrator* role can create packages:
     Enter the version number of the package in the format `1.0.0` \(major version, minor version, patch number\). 
 
     You can re-export your package with the same version number to overwrite the current exported version or change the version to export a package update. The version number must always go up and never down.
-
-
     
     </td>
     </tr>
@@ -184,8 +158,6 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
@@ -208,15 +180,11 @@ Users with the *DW Space Administrator* role can create packages:
     <td valign="top">
     
     Current Exported Version
-
-
     
     </td>
     <td valign="top">
     
     Displays the last exported version of the package. 
-
-
     
     </td>
     </tr>
@@ -251,7 +219,7 @@ Users with the *DW Space Administrator* role can create packages:
     -   If no errors are found, your package is ready to be exported.
     -   If errors are found, you should try to resolve them by adding required packages or objects or by removing objects whose dependencies cannot be resolved, and then re-saving.
 
-    Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a806c67ed11749c788142775d2cc2494.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add tables, views, ER models, and analytic models to packages. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
+    Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a806c67ed11749c788142775d2cc2494.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add tables, views, ER models, and analytic models to packages. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
     > ### Note:  
     > Though modelers can add tables, views, ER models, and analytic models to a package, they cannot remove objects from a package.

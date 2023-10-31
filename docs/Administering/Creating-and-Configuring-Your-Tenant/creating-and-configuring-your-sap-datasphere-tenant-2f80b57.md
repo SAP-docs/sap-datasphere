@@ -11,21 +11,15 @@ You can request SAP to provision a subscription-based tenant or create your own 
 
 Characteristics
 
-
-
 </th>
 <th valign="top">
 
 Subscription-Based Tenant
 
-
-
 </th>
 <th valign="top">
 
 Consumption-Based Tenant \(Standard Plan or Free Plan\)
-
-
 
 </th>
 </tr>
@@ -33,8 +27,6 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <td valign="top">
 
 **Provisioning** 
-
-
 
 </td>
 <td valign="top">
@@ -122,8 +114,6 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 
 **Metering** 
 
-
-
 </td>
 <td valign="top">
 
@@ -153,8 +143,6 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <td valign="top">
 
 **Time Limitation** 
-
-
 
 </td>
 <td valign="top">
@@ -187,8 +175,6 @@ Consumption-Based Tenant \(Standard Plan or Free Plan\)
 <td valign="top">
 
 **Number of tenants** 
-
-
 
 </td>
 <td valign="top">
@@ -239,56 +225,40 @@ The maxium configuration size of your tenant depends on regional availability an
 
 Hyperscaler Regional Availability
 
-
-
 </th>
 <th valign="top">
 
 Compute
-
-
 
 </th>
 <th valign="top">
 
 Storage
 
-
-
 </th>
 <th valign="top">
 
 BW Bridge
-
-
 
 </th>
 <th valign="top">
 
 Data Lake
 
-
-
 </th>
 <th valign="top">
 
 Data Integration
-
-
 
 </th>
 <th valign="top">
 
 Catalog
 
-
-
 </th>
 <th valign="top">
 
 Catalog Storage / Crawling
-
-
 
 </th>
 </tr>
@@ -297,56 +267,40 @@ Catalog Storage / Crawling
 
 Europe \(Frankfurt\)
 
-
-
 </td>
 <td valign="top">
 
 5970 GB
-
-
 
 </td>
 <td valign="top">
 
 15872 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -355,56 +309,40 @@ Europe \(Frankfurt\)
 
 Australia
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -413,56 +351,40 @@ Australia
 
 Singapore
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -471,56 +393,40 @@ Singapore
 
 Brazil \(São Paulo\)
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 Not Supported
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -529,56 +435,40 @@ Not Supported
 
 Japan \(Tokyo\)
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -587,56 +477,40 @@ Japan \(Tokyo\)
 
 US East
 
-
-
 </td>
 <td valign="top">
 
 5970 GB
-
-
 
 </td>
 <td valign="top">
 
 15872 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -645,56 +519,40 @@ US East
 
 Canada \(Montreal\)
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 Not Supported
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -703,56 +561,40 @@ Not Supported
 
 South Korea
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 Not Supported
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -761,56 +603,40 @@ Not Supported
 
 EU Access \(Frankfurt\)
 
-
-
 </td>
 <td valign="top">
 
 1800 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 4096 GB
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -825,56 +651,40 @@ EU Access \(Frankfurt\)
 
 Hyperscaler Regional Availability
 
-
-
 </th>
 <th valign="top">
 
 Compute
-
-
 
 </th>
 <th valign="top">
 
 Storage
 
-
-
 </th>
 <th valign="top">
 
 BW Bridge
-
-
 
 </th>
 <th valign="top">
 
 Data Lake
 
-
-
 </th>
 <th valign="top">
 
 Data Integration
-
-
 
 </th>
 <th valign="top">
 
 Catalog
 
-
-
 </th>
 <th valign="top">
 
 Catalog Storage / Crawling
-
-
 
 </th>
 </tr>
@@ -883,56 +693,40 @@ Catalog Storage / Crawling
 
 Europe \(Amsterdam\)
 
-
-
 </td>
 <td valign="top">
 
 1920 GB
-
-
 
 </td>
 <td valign="top">
 
 7168 GB
 
-
-
 </td>
 <td valign="top">
 
 Supported
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -941,56 +735,40 @@ Supported
 
 US West
 
-
-
 </td>
 <td valign="top">
 
 5600 GB
-
-
 
 </td>
 <td valign="top">
 
 13824 GB
 
-
-
 </td>
 <td valign="top">
 
 Supported
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>
@@ -1005,56 +783,40 @@ Supported
 
 Hyperscaler Regional Availability
 
-
-
 </th>
 <th valign="top">
 
 Compute
-
-
 
 </th>
 <th valign="top">
 
 Storage
 
-
-
 </th>
 <th valign="top">
 
 BW Bridge
-
-
 
 </th>
 <th valign="top">
 
 Data Lake
 
-
-
 </th>
 <th valign="top">
 
 Data Integration
-
-
 
 </th>
 <th valign="top">
 
 Catalog
 
-
-
 </th>
 <th valign="top">
 
 Catalog Storage / Crawling
-
-
 
 </th>
 </tr>
@@ -1063,56 +825,40 @@ Catalog Storage / Crawling
 
 US Central
 
-
-
 </td>
 <td valign="top">
 
 1344 GB
-
-
 
 </td>
 <td valign="top">
 
 3328 GB
 
-
-
 </td>
 <td valign="top">
 
 Not Supported
-
-
 
 </td>
 <td valign="top">
 
 90 TB
 
-
-
 </td>
 <td valign="top">
 
 7200 h/month
-
-
 
 </td>
 <td valign="top">
 
 20.5 GB/h
 
-
-
 </td>
 <td valign="top">
 
 2100 h/month
-
-
 
 </td>
 </tr>

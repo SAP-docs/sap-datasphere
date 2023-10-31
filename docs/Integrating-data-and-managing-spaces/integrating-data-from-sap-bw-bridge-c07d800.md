@@ -8,5 +8,5 @@ SAP BW bridge enables you to use SAP BW functionality in the public cloud and to
 
 The SAP BW bridge connection differs from other connection types, as it can't be created or modified. It is being generated when SAP BW bridge is provisioned.
 
-To learn more about SAP BW bridge, see [Acquiring and Combining Data](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/94a26e437db74b14ae4664b0d4634faf.html "You can now start acquiring data and combine it in SAP BW bridge.") :arrow_upper_right:.
+To learn more about SAP BW bridge, see [Acquiring and Combining Data](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/94a26e437db74b14ae4664b0d4634faf.html "You can now start acquiring data and combine it in SAP BW bridge.") :arrow_upper_right:.
 

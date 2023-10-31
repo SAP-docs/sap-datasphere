@@ -12,9 +12,13 @@ The monitor shows the remote tables that have already been deployed in your spac
 
 SAP Datasphere is using SAP HANA smart data integration or SAP HANA smart data access adaptors to connect to remote tables. For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 
-Initially, by default, when a remote table is deployed, the data is directly accessed live from the source and no data is stored in SAP Datasphere. For connection types that support replication, in the *Remote Table Monitor*, for example, you can set up replication into SAP Datasphere to improve performance when accessing the data. The *Data Access* property of a remote table shows you whether data is accessed directly from the source or whether data is replicated.
+Initially, by default, when a remote table is deployed, the data is directly accessed live from the source and no data is stored in SAP Datasphere.
 
-When replicating data, you can use:
+For connection types that support replication, in the *Remote Table Monitor*, for example, you can set up replication into SAP Datasphere to improve performance when accessing the data.
+
+The *Data Access* property of a remote table shows you whether data is accessed directly from the source or whether data is replicated.
+
+When replicating data, you can select:
 
 -   Snapshot replication
 
@@ -30,9 +34,11 @@ When replicating data, you can use:
 > 
 > For example, if you want to run a new snapshot replication, but another task is already replicating data from the same table, then you will get a notification and your task will fail.
 
-The *Refresh Frequency* property of a remote table shows you whether or not data for a remote table is replicated and if yes, at what frequency the replication takes place. Replicated data is stored in a replica table. For more information on which connection types support snapshot and real-time replication, see [Integrating Data via Connections](../Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md).
+The *Frequency* property of a remote table shows you whether or not data for a remote table is replicated and if yes, at what frequency the replication takes place. Replicated data is stored in a replica table.
 
-As long as the prerequisites are met, you can switch between directly accessing the data from the source, snapshot replication, and real-time replication, according to your needs.
+For more information on which connection types support snapshot and real-time replication, see [Integrating Data via Connections](../Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md).
+
+As long as the prerequisites are met, you can switch between directly accessing the data from the source \(remote\), or accessing to replicated data \(data replication in real-time or in direct or schedule mode\), according to your needs.
 
 
 
@@ -55,7 +61,7 @@ Data is copied into SAP Datasphere and is read from the replica table:
 
 Data is not accessed locally in SAP Datasphere. It’s read from a virtual table, which accesses the data directly from the source via the adaptors. Remote tables are created from the *Data Builder*.
 
-For more information, see [Import Remote Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/fd04efbac29c44fb8cfeaf2166b3d882.html "Import remote tables from a connection into your space directly from the Data Builder start page or the Repository Explorer.") :arrow_upper_right:.
+For more information, see [Import Remote Tables](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/fd04efbac29c44fb8cfeaf2166b3d882.html "Import remote tables from a connection into your space directly from the Data Builder start page or the Repository Explorer.") :arrow_upper_right:.
 
 
 
@@ -75,13 +81,13 @@ For more information, see [Create Virtual tables](https://help.sap.com/docs/HANA
 
 ### Replication
 
-Run replication to improve performance when accessing the data. For connection types that support replication, in the *Remote Table Monitor*, you can set up replication to improve performance when accessing the data. You can replicate data via snapshot replication, real-time replication, or you can schedule your replication tasks. You can also partitions your data loads.
+Start a data replication to improve performance when accessing the data. For connection types that support replication, you can run a data replication to improve performance when accessing the data. You can replicate data via a direct data replication, real-time replication, or you can schedule your replication tasks. You can also partitions your data loads.
 
 For more information, see [Integrating Data via Connections](../Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md) and [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
 From the Data Builder, you can also restrict data loads to reduce the volume of data loaded in your remote table.
 
-For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:.
+For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:.
 
 
 
@@ -97,7 +103,7 @@ For more information, see [Connecting SAP HANA Cloud, SAP HANA database to Remot
 
 The Data Provisioning Agent is a lightweight component running outside the SAP Datasphere environment. It hosts data provisioning adapters for connectivity to remote sources, enabling data federation and replication scenarios. The Data Provisioning Agent acts as a gateway to SAP Datasphere, providing secure connectivity between the database of your SAP Datasphere tenant and the adapter-based remote sources.
 
-For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types that support creating views and accessing or replicating data via remote tables, for this purpose leverage SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:
+For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types that support creating views and accessing or replicating data via remote tables, for this purpose leverage SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:
 
 
 
@@ -113,7 +119,7 @@ For more information, see [Generic OData Connections](../Integrating-Data-Via-Co
 
 The SAP Cloud Connector provides a secure tunnel between SAP Datasphere and on-premise systems. You need to set up and configure Cloud Connector before creating a connection to an on-premise source that you want to use for remote tables via SAP HANA smart data integration.
 
-For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 
 
@@ -135,7 +141,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 ## Monitoring Remote Tables
 
-In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the refresh frequency shows if you replicate snapshots or if real-time replication is used to copy data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
+In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the frequency shows if you replicate snapshots or if real-time replication is used to copy data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
 
 
 <table>
@@ -144,14 +150,10 @@ In the monitor, for all the remote tables that have been previously deployed in 
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Information
-
-
 
 </th>
 </tr>
@@ -160,14 +162,10 @@ Information
 
 *Connection* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the connection the remote table belongs to. 
-
-
 
 </td>
 </tr>
@@ -176,14 +174,10 @@ Displays the name of the connection the remote table belongs to.
 
 *Table* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the remote table.
-
-
 
 </td>
 </tr>
@@ -191,8 +185,6 @@ Displays the name of the remote table.
 <td valign="top">
 
 *Data Access* 
-
-
 
 </td>
 <td valign="top">
@@ -214,9 +206,7 @@ Displays how data is currently accessed.
 <tr>
 <td valign="top">
 
-*Refresh Frequency* 
-
-
+*Frequency* 
 
 </td>
 <td valign="top">
@@ -227,6 +217,7 @@ Displays how often data is replicated. The value here shows the intended frequen
 -   *None*: There is no schedule defined for this table.
 -   *Scheduled*: A schedule is defined for this table.
 -   *Real-Time*: Real-time replication has been set up for the remote table.
+-   *Paused*: Data refresh is paused.
 
 
 
@@ -236,8 +227,6 @@ Displays how often data is replicated. The value here shows the intended frequen
 <td valign="top">
 
 *Status* 
-
-
 
 </td>
 <td valign="top">
@@ -260,7 +249,7 @@ Displays the current status of the remote table.
 
 -   *Disconnected*: SAP HANA smart data integration Data Provisioning Agent got disconnected
 
-    For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
+    For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
 
 
 
@@ -272,14 +261,10 @@ Displays the current status of the remote table.
 
 *Latest Update* 
 
-
-
 </td>
 <td valign="top">
 
 Displays when the data was last successfully updated in SAP Datasphere. 
-
-
 
 </td>
 </tr>
@@ -287,8 +272,6 @@ Displays when the data was last successfully updated in SAP Datasphere.
 <td valign="top">
 
 *Latest Change \(Source\)* 
-
-
 
 </td>
 <td valign="top">
@@ -307,14 +290,10 @@ Displays when the data was last successfully updated in SAP Datasphere.
 
 *Number of Records* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records replicated into SAP Datasphere. You can then compare this number with the number of records stored in the source system, and identify errors in your data replication.
-
-
 
 </td>
 </tr>
@@ -323,14 +302,10 @@ Displays the number of records replicated into SAP Datasphere. You can then comp
 
 *New Run* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the next scheduled run \(if a schedule is set for the remote table\).
-
-
 
 </td>
 </tr>
@@ -339,14 +314,10 @@ Displays the next scheduled run \(if a schedule is set for the remote table\).
 
 *Used In-Memory \(MiB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the size occupied by the remote table data in memory.
-
-
 
 </td>
 </tr>
@@ -355,14 +326,10 @@ Displays the size occupied by the remote table data in memory.
 
 *Used Disk \(MiB\)* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the size occupied by the remote table data on disk.
-
-
 
 </td>
 </tr>
@@ -372,7 +339,7 @@ Displays the size occupied by the remote table data on disk.
 
 <a name="loio4dd95d7bff1f48b399c8b55dbdd34b9e__section_flz_nlm_h4b"/>
 
-## Actions in the Remote Table Monitor
+## Actions in the *Remote Table Monitor*
 
 Depending on the combination of values in the *Data Access*, *Refresh Frequency* and *Status* column, from the *Remote Table Monitor*, you can perform the following actions on remote tables:
 
@@ -383,14 +350,10 @@ Depending on the combination of values in the *Data Access*, *Refresh Frequency*
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -398,8 +361,6 @@ Description
 <td valign="top">
 
 *Load New Snapshot* 
-
-
 
 </td>
 <td valign="top">
@@ -411,16 +372,12 @@ Directly start a copy of the full set of data from the source in the background.
 
 For more information, see [Replicate Full Set of Data](replicate-full-set-of-data-35632cd.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Remove Replicated Data* 
-
-
 
 </td>
 <td valign="top">
@@ -444,8 +401,6 @@ Stop replication and delete data from replica table.
 
 *Enable Real-Time Access* 
 
-
-
 </td>
 <td valign="top">
 
@@ -456,8 +411,6 @@ Start replication of data changes in the source in real-time.
 
 For more information, see [Replicate Data Changes in Real-Time](replicate-data-changes-in-real-time-441d327.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -465,14 +418,10 @@ For more information, see [Replicate Data Changes in Real-Time](replicate-data-c
 
 *Go to Connections List* 
 
-
-
 </td>
 <td valign="top">
 
 Switch to the list of connections in space management.
-
-
 
 </td>
 </tr>
@@ -481,19 +430,15 @@ Switch to the list of connections in space management.
 
 *Create Snapshot Schedule* 
 
-
-
 </td>
 <td valign="top">
 
-Create a schedule to run snapshot replication in the background according to the settings defined in the schedule.
+Create a schedule to start a data replication in the background according to the settings defined in the schedule.
 
 > ### Note:  
 > If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time
 
 For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
-
-
 
 </td>
 </tr>
@@ -502,16 +447,12 @@ For more information, see [Scheduling Data Integration Tasks](scheduling-data-in
 
 *Edit Schedule* 
 
-
-
 </td>
 <td valign="top">
 
 Change how the schedule is specified, or change the owner of the schedule.
 
 For more information, see [Take Over the Ownership of a Schedule](take-over-the-ownership-of-a-schedule-4b660c0.md).
-
-
 
 </td>
 </tr>
@@ -520,14 +461,10 @@ For more information, see [Take Over the Ownership of a Schedule](take-over-the-
 
 *Delete Schedule* 
 
-
-
 </td>
 <td valign="top">
 
 Delete the schedule if required.
-
-
 
 </td>
 </tr>
@@ -536,16 +473,12 @@ Delete the schedule if required.
 
 *Assign Schedule To Me* 
 
-
-
 </td>
 <td valign="top">
 
 Take the ownership of the schedule.
 
 For more information, see .[Take Over the Ownership of a Schedule](take-over-the-ownership-of-a-schedule-4b660c0.md).
-
-
 
 </td>
 </tr>
@@ -554,16 +487,12 @@ For more information, see .[Take Over the Ownership of a Schedule](take-over-the
 
 *Pause Schedule* 
 
-
-
 </td>
 <td valign="top">
 
 Pause the scheduled task.
 
-For more information, see [Suspend or Pause a Scheduled Task](suspend-or-pause-a-scheduled-task-5eb55cb.md).
-
-
+For more information, see [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md).
 
 </td>
 </tr>
@@ -572,14 +501,10 @@ For more information, see [Suspend or Pause a Scheduled Task](suspend-or-pause-a
 
 *Resume Schedule* 
 
-
-
 </td>
 <td valign="top">
 
 Resume the scheduled task that was previously paused.
-
-
 
 </td>
 </tr>
@@ -588,9 +513,9 @@ Resume the scheduled task that was previously paused.
 > ### Note:  
 > You can select several remote tables to group actions whenever it's applicable:
 > 
-> -   *Schedule Replication*: You can delete, pause or resume schedules for several remote tables that have schedules defined. You can also assign several schedules to your name and become the owner of the schedules.
+> -   *Schedule* data replication: You can delete, pause or resume schedules for several remote tables that have schedules defined. You can also assign several schedules to your name and become the owner of the schedules.
 > -   *Remove Replicated Data*: You can select several remote tables that have replicated data available and remove the replicated data for all of them.
-> -   Many actions like *Load New Snapshot*, *Run*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
+> -   Many actions like *Load New Snapshot* , *Remove Replicated Data*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
 > 
 > After triggering a group of actions, the status of each action is displayed in the notification area. As these operations run in an asynchronous mode, the status will not be updated automatically, and you need to manually *Refresh* the page to get the updated status.
 
@@ -609,28 +534,20 @@ Other actions are available on remote tables, but behavior depends on how your r
 
 Actions
 
-
-
 </th>
 <th valign="top">
 
 Remote Tables via SAP HANA Smart Data Access
-
-
 
 </th>
 <th valign="top">
 
 Remote Tables via SAP HANA Smart Data Integration
 
-
-
 </th>
 <th valign="top">
 
 Comments
-
-
 
 </th>
 </tr>
@@ -639,28 +556,20 @@ Comments
 
 Filtering data loads
 
+</td>
+<td valign="top">
 
+Supported but with restrictions depending on data type and adapter used.
 
 </td>
 <td valign="top">
 
 Supported but with restrictions depending on data type and adapter used.
 
-
-
 </td>
 <td valign="top">
 
-Supported but with restrictions depending on data type and adapter used.
-
-
-
-</td>
-<td valign="top">
-
-Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
-
-
+Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -669,28 +578,20 @@ Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*
 
 Exclude column when loading data
 
+</td>
+<td valign="top">
 
+Supported
 
 </td>
 <td valign="top">
 
 Supported
 
-
-
 </td>
 <td valign="top">
 
-Supported
-
-
-
-</td>
-<td valign="top">
-
-Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
-
-
+Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -699,28 +600,20 @@ Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*
 
 Refresh Remote Table Definition
 
-
-
 </td>
 <td valign="top">
 
 Supported with some connections.
-
-
 
 </td>
 <td valign="top">
 
 Supported.
 
-
-
 </td>
 <td valign="top">
 
-Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Process Source Changes in the Table Editor](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/622328b59afa40fd810b44ac84d6afd3.html "Identify available table structure updates in your data sources and resolve conflicting errors resulting from these updates. This operation applies to any remote tables as well as local tables from an Open SQL Schema.") :arrow_upper_right:
-
-
+Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Process Source Changes in the Table Editor](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/622328b59afa40fd810b44ac84d6afd3.html "Identify available table structure updates in your data sources and resolve conflicting errors resulting from these updates. This operation applies to any remote tables as well as local tables from an Open SQL Schema.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -729,28 +622,22 @@ Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*
 
 Partitioning data loads
 
-
-
 </td>
 <td valign="top">
 
 Partitioning on key columns only and for snapshot replication only \(no real-time\)
-
-
 
 </td>
 <td valign="top">
 
 Partitioning on key and non-key columns with certain restrictions depending on data type and adapter used.
 
-
-
 </td>
 <td valign="top">
 
-Action to be done from Remote Table Monitor details screen. For more information, see [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md)
+Action to be done from *Remote Table Monitor* details screen.
 
-
+For more information, see [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md)
 
 </td>
 </tr>
@@ -759,28 +646,22 @@ Action to be done from Remote Table Monitor details screen. For more information
 
 Statistics
 
-
-
 </td>
 <td valign="top">
 
 Supported
-
-
 
 </td>
 <td valign="top">
 
 Supported except for remote tables connected via an SAP HANA smart data integration CDI or an SAP HANA smart data integration ABAP adapters
 
-
-
 </td>
 <td valign="top">
 
-Action to be done from Remote Table Statistics Monitor. For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
+Action to be done from *Remote Table Statistics Monitor*.
 
-
+For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
 
 </td>
 </tr>
@@ -832,7 +713,7 @@ If you need to cancel a running snapshot replication or an initialization task \
     > A replication task consists of several steps that include exchanges with SAP HANA. Therefore, you might get different status while clicking *Cancel Run*, depending where you are in the processing steps.
 
 
-As a consequence, the replication status of your remote table turns into *failed*, and a cancel replication task starts.
+As a consequence, the replication status of your remote table turns into *Failed*, and a cancel replication task starts.
 
 > ### Note:  
 > If replica data already exists from a previous run, the remote table continues to use it after the run is canceled.

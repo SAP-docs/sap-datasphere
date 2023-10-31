@@ -15,14 +15,10 @@ Find all important terms and definitions here.
 
 Term
 
-
-
 </th>
 <th valign="top">
 
 Definition
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Definition
 
 **License Key**
 
-
-
 </td>
 <td valign="top">
 
 An activation key provides authorization to access one or multiple data products. The data provider sends the key via an email after a price has been determined between the consumer and provider. The price is negotiated outside of data marketplace.
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ An activation key provides authorization to access one or multiple data products
 
 **Data Product**
 
-
-
 </td>
 <td valign="top">
 
 A data product is a set of data that can either be acquired by consumers or that can be offered by data providers through the data marketplace.
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ A data product is a set of data that can either be acquired by consumers or that
 
 **Data Provider**
 
-
-
 </td>
 <td valign="top">
 
 A data provider is a person or company that offers one or multiple data products through data marketplace.
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ A data provider is a person or company that offers one or multiple data products
 
 **Pricing Model**
 
-
-
 </td>
 <td valign="top">
 
 A pricing model mode defines how often the data is delivered: either "One-time" \(no other delivery will happen\) or "Full" \(new data deliveries replace existing ones\). For more information, see [Contract Type and Pricing Model](contract-type-and-pricing-model-4dd32d5.md) 
-
-
 
 </td>
 </tr>
@@ -95,14 +75,10 @@ A pricing model mode defines how often the data is delivered: either "One-time" 
 
 **Data Shipment**
 
-
-
 </td>
 <td valign="top">
 
 A data shipment defines how the the data is shipped to the consumer. It's either managed by Data Marketplace or by the Data provider. For more information, see [Data Shipment](data-shipment-837e749.md)
-
-
 
 
 

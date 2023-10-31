@@ -22,15 +22,11 @@ Create input parameters in your data flows for use in projection operator filter
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -38,15 +34,11 @@ Create input parameters in your data flows for use in projection operator filter
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
     
     </td>
     </tr>
@@ -54,15 +46,11 @@ Create input parameters in your data flows for use in projection operator filter
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     Displays *string* as the currently available type.
-
-
     
     </td>
     </tr>
@@ -70,8 +58,6 @@ Create input parameters in your data flows for use in projection operator filter
     <td valign="top">
     
     Default Value
-
-
     
     </td>
     <td valign="top">
@@ -81,8 +67,6 @@ Create input parameters in your data flows for use in projection operator filter
     The default value is used whenever the data flow is run as part of a schedule or task chain.
 
     You can enter `CURRENT_DATE()` or `CURRENT_TIME()` to obtain the current UTC date or timestamp at runtime.
-
-
     
     </td>
     </tr>
@@ -98,15 +82,11 @@ Create input parameters in your data flows for use in projection operator filter
     <th valign="top">
 
     Example
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -114,8 +94,6 @@ Create input parameters in your data flows for use in projection operator filter
     <td valign="top">
     
     `Country = ${IP_Country}`
-
-
     
     </td>
     <td valign="top">
@@ -123,8 +101,6 @@ Create input parameters in your data flows for use in projection operator filter
     Projection Filter expression \(see [Create a Projection Operator](create-a-projection-operator-912f740.md)\).
 
     This filter expression takes the value entered by the user for `IP_Country` and uses it to restrict the data returned by the data flow to only those rows where the `Country` column contains this value.
-
-
     
     </td>
     </tr>
@@ -132,8 +108,6 @@ Create input parameters in your data flows for use in projection operator filter
     <td valign="top">
     
     `ADD_DAYS(Date,${IP_Days})`
-
-
     
     </td>
     <td valign="top">

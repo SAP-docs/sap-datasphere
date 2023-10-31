@@ -27,14 +27,10 @@ Attributes have the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,8 +38,6 @@ Description
 <td valign="top">
 
 Key
-
-
 
 </td>
 <td valign="top">
@@ -62,14 +56,10 @@ Select the checkbox to specify that the column is a primary key column. Key colu
 
 Business Name 
 
-
-
 </td>
 <td valign="top">
 
 Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
 
 </td>
 </tr>
@@ -77,8 +67,6 @@ Enter a descriptive name to help users identify the object. This name can be cha
 <td valign="top">
 
 Technical Name 
-
-
 
 </td>
 <td valign="top">
@@ -99,8 +87,6 @@ To override the default technical name, enter a new one in the field. Technical 
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
@@ -108,16 +94,12 @@ Select the type of data that the column will contain.
 
 For a list of available data types and their supported data type conversions, see [Column Data Types](../Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Semantic Type
-
-
 
 </td>
 <td valign="top">
@@ -136,8 +118,6 @@ Choose from the following:
 
 For more information, see [Specify Semantic Types for Measures and Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -145,14 +125,10 @@ For more information, see [Specify Semantic Types for Measures and Attributes](s
 
 Label Column
 
-
-
 </td>
 <td valign="top">
 
 Select an attribute with a semantic type of *Text* to act as the label for the column. 
-
-
 
 </td>
 </tr>
@@ -160,8 +136,6 @@ Select an attribute with a semantic type of *Text* to act as the label for the c
 <td valign="top">
 
 Default Value
-
-
 
 </td>
 <td valign="top">
@@ -180,8 +154,6 @@ Enter an appropriate default value for the column.
 
 Not Null
 
-
-
 </td>
 <td valign="top">
 
@@ -198,8 +170,6 @@ Select this option to indicate that the column must contain a value.
 <td valign="top">
 
 Show
-
-
 
 </td>
 <td valign="top">

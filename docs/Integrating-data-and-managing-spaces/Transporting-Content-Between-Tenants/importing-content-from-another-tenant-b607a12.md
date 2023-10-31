@@ -20,22 +20,16 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <th valign="top">
 
     Prerequisite
-
-
     
     </th>
     <th valign="top">
 
     DW Administrator
-
-
     
     </th>
     <th valign="top">
 
     DW Space Administrator
-
-
     
     </th>
     </tr>
@@ -55,15 +49,11 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <td valign="top">
     
     No preparation is necessary. Users with the *DW Administrator* can create spaces through the *Import* app.
-
-
     
     </td>
     <td valign="top">
     
     If one or more required spaces does not exist, you must request a *DW Administrator* to create them for you.
-
-
     
     </td>
     </tr>
@@ -71,15 +61,13 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <td valign="top">
     
     Does the package contain remote tables?
-
-
     
     </td>
     <td valign="top" colspan="2">
     
     Connections cannot be created via the *Import* app. In this case, before import:
 
-    -   A *DW Administrator* must create the space \(see [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:\).
+    -   A *DW Administrator* must create the space \(see [Create a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:\).
     -   A *DW Space Administrator* or *DW Integrator* assigned to the space must create the necessary connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
 
 
@@ -107,15 +95,11 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <th valign="top">
 
     Section
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -123,8 +107,6 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <td valign="top">
     
     Import Schedule
-
-
     
     </td>
     <td valign="top">
@@ -142,8 +124,6 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <td valign="top">
     
     Overwrite Preferences
-
-
     
     </td>
     <td valign="top">
@@ -169,8 +149,6 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <td valign="top">
     
     Deployment Preference
-
-
     
     </td>
     <td valign="top">
@@ -188,8 +166,6 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     <td valign="top">
     
     Content
-
-
     
     </td>
     <td valign="top">
@@ -197,8 +173,6 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     Review the objects to be imported. All objects are imported by default.
 
     You can select and deselect individual objects, or types of objects. The *Impacted Object* column shows warnings for objects that will overwrite content on your system.
-
-
     
     </td>
     </tr>

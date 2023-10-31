@@ -13,14 +13,10 @@ In this example, we want to enrich our website analytics data with latitude and 
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Result
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Result
 
 First, we try to join the two views by `city`, `country`, and `region` in a standard view but, since one or more of these columns may be empty, we find that only around 31% of our records can be matched.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/IL_Multi-Rule_Example_-_Join_651bff4.png)
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ First, we try to join the two views by `city`, `country`, and `region` in a stan
 
 We decide to join our entities via an intelligent lookup. We have previously created a calculated column to concatenate the `City`, `Region`, and `Country` columns to generate a unique identifier for each city and we select that as the pairing column.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/IL_Multi-Rule_Example_-_Pairing_Column_36819ee.png)
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ We decide to join our entities via an intelligent lookup. We have previously cre
 
 We recreate the same join mapping in an exact match rule and get the same result as for our view join.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/IL_Multi-Rule_Example_-_Rule_1_933a016.png)
-
-
 
 </td>
 </tr>
@@ -87,8 +71,6 @@ We add a second exact match rule to treat the unmatched records, this time mappi
 <td valign="top">
 
 ![](images/IL_Multi-Rule_Example_-_Rule_2_c9870f0.png)
-
-
 
 </td>
 </tr>
@@ -109,8 +91,6 @@ Next, we take the remaining 24% of unmatched records, create a fuzzy rule on jus
 
 ![](images/IL_Multi-Rule_Example_-_Rule_3_ec1b278.png)
 
-
-
 </td>
 </tr>
 <tr>
@@ -129,8 +109,6 @@ We create a final exact match rule to add a further condition for the multiple m
 
 ![](images/IL_Multi-Rule_Example_-_Rule_4_cd6c3cb.png)
 
-
-
 </td>
 </tr>
 <tr>
@@ -138,14 +116,10 @@ We create a final exact match rule to add a further condition for the multiple m
 
 Taken together, our four rules take us from just 31% of records matched with the standard view join, all the way to 79% matched with the intelligent lookup before any manual review.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/IL_Pie_Chart_Compare_3137108.png)
-
-
 
 </td>
 </tr>

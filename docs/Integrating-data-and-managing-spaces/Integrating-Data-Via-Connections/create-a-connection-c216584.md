@@ -12,7 +12,7 @@ Create a connection to allow users to a space to use the connected source for da
 
 ## Prerequisites
 
-See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bffbd58c15784a62af0520f171018ded.html "You need to perform some preparatory steps to be able to create and use connections in SAP Datasphere. The steps depend on the source you want to connect to and on the features you want to use with the connection.") :arrow_upper_right:.
+See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bffbd58c15784a62af0520f171018ded.html "You need to perform some preparatory steps to be able to create and use connections in SAP Datasphere. The steps depend on the source you want to connect to and on the features you want to use with the connection.") :arrow_upper_right:.
 
 
 
@@ -32,15 +32,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -48,15 +44,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     Search
-
-
     
     </td>
     <td valign="top">
     
     In the search field, enter a search string to only show connection types that contain the string.
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     Sort
-
-
     
     </td>
     <td valign="top">
     
     Use <span class="SAP-icons"></span> \(Sort\) to sort alphabetically.
-
-
     
     </td>
     </tr>
@@ -80,8 +68,6 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     Filter
-
-
     
     </td>
     <td valign="top">
@@ -116,15 +102,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <th valign="top">
 
     Property Section
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -132,15 +114,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     *Connection Details*
-
-
     
     </td>
     <td valign="top">
     
     Enter or select properties that are needed to locate the source system or database.
-
-
     
     </td>
     </tr>
@@ -148,15 +126,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     Various
-
-
     
     </td>
     <td valign="top">
     
     Enter or select properties in additional sections depending on the connection type.
-
-
     
     </td>
     </tr>
@@ -164,15 +138,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     *Credentials*
-
-
     
     </td>
     <td valign="top">
     
     Enter the credentials that are required to access the source.
-
-
     
     </td>
     </tr>
@@ -180,8 +150,6 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     *Features*
-
-
     
     </td>
     <td valign="top">
@@ -189,8 +157,6 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     Select additional connection properties to enabe a feature, if required.
 
     You can click the info button next to the *Enabled* or *Disabled* information to get more information about what is required to enable the feature.
-
-
     
     </td>
     </tr>
@@ -211,15 +177,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -227,15 +189,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     *Business Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
     
     </td>
     </tr>
@@ -243,8 +201,6 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     *Technical Name*
-
-
     
     </td>
     <td valign="top">
@@ -264,15 +220,11 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     <td valign="top">
     
     *Description*
-
-
     
     </td>
     <td valign="top">
     
     Provide more information to help users understand the object.
-
-
     
     </td>
     </tr>
@@ -280,7 +232,7 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/9f804b8
     
 7.  If you connect to a partner tool such as Precog, in the *Additional Configuration* section of this wizard step, you'll find information about IP addresses that you can copy in order to add them to the IP allowlist in SAP Datasphere.
 
-    For more information, see [Add IP address to IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication with remote tables from on-premise systems.") :arrow_upper_right:.
+    For more information, see [Add IP address to IP Allowlist](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Clients in your local network need an entry in the appropriate IP allowlist in SAP Datasphere. Cloud Connectors in your local network only require an entry if you want to use them for federation and replication with remote tables from on-premise systems.") :arrow_upper_right:.
 
 8.  Click *Create Connection* to create the connection and add it to the overview of available connections.
 
@@ -305,9 +257,9 @@ Depending on the connection type and the features that you have enabled for your
 
     For more information, see:
 
-    -   [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
-    -   [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:
-    -   [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
+    -   [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
+    -   [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:
+    -   [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
 
     > ### Note:  
     > Generally, when importing a table, it is created as remote table. However, tables imported from partner tool connections are created as local tables \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
@@ -321,6 +273,6 @@ Depending on the connection type and the features that you have enabled for your
     For more information, see:
 
     -   [SAP BW∕4HANA Model Transfer Connections](sap-bw-4hana-model-transfer-connections-1caba95.md)
-    -   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
+    -   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
 
 

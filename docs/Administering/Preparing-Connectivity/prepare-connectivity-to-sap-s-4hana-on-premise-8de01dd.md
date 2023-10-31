@@ -105,15 +105,11 @@ Before you can use the connection to import entities, the following is required:
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Value
-
-
         
         </th>
         </tr>
@@ -121,15 +117,11 @@ Before you can use the connection to import entities, the following is required:
         <td valign="top">
         
         SRV\_NAME
-
-
         
         </td>
         <td valign="top">
         
         EF608938F3EB18256CE851763C2952
-
-
         
         </td>
         </tr>
@@ -137,15 +129,11 @@ Before you can use the connection to import entities, the following is required:
         <td valign="top">
         
         SRV\_TYPE
-
-
         
         </td>
         <td valign="top">
         
         HT
-
-
         
         </td>
         </tr>
@@ -159,15 +147,11 @@ Before you can use the connection to import entities, the following is required:
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Value
-
-
         
         </th>
         </tr>
@@ -175,15 +159,11 @@ Before you can use the connection to import entities, the following is required:
         <td valign="top">
         
         DDLNAME
-
-
         
         </td>
         <td valign="top">
         
         <leave empty - this field is not used\>
-
-
         
         </td>
         </tr>
@@ -191,15 +171,11 @@ Before you can use the connection to import entities, the following is required:
         <td valign="top">
         
         DDLSRCNAME
-
-
         
         </td>
         <td valign="top">
         
         CSN\_EXPOSURE\_CDS
-
-
         
         </td>
         </tr>
@@ -207,15 +183,11 @@ Before you can use the connection to import entities, the following is required:
         <td valign="top">
         
         ACTVT
-
-
         
         </td>
         <td valign="top">
         
         03
-
-
         
         </td>
         </tr>
@@ -276,5 +248,5 @@ Before you can use the connection to import entities, the following is required:
 **Related Information**  
 
 
-[SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
+[SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
 

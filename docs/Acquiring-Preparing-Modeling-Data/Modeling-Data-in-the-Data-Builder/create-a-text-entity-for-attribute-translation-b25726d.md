@@ -34,22 +34,16 @@ For example:
     <th valign="top">
 
     Content
-
-
     
     </th>
     <th valign="top">
 
     Key
-
-
     
     </th>
     <th valign="top">
 
     Semantic Type
-
-
     
     </th>
     </tr>
@@ -61,22 +55,16 @@ For example:
     Identifies the master data member for which the text is provided.
 
     Example: `01`
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
     
     None
-
-
     
     </td>
     </tr>
@@ -93,22 +81,16 @@ For example:
     -   `EN-UK`
 
     Example: `en`
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
     
     *Language*
-
-
     
     </td>
     </tr>
@@ -120,22 +102,16 @@ For example:
     \[optional\] For time-dependent text entities, specifies the date from which the text is valid \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\).
 
     Example: `01/01/2022`
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
     
     *Business Date - From*
-
-
     
     </td>
     </tr>
@@ -147,22 +123,16 @@ For example:
     \[optional\] For time-dependent text entities, specifies the date until which the text is valid.
 
     Example: `31/12/2022`
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     <td valign="top">
     
     *Business Date - To*
-
-
     
     </td>
     </tr>
@@ -174,22 +144,16 @@ For example:
     Provides the text in the appropriate language.
 
     Example: `January`
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     <td valign="top">
     
     *Text*
-
-
     
     </td>
     </tr>

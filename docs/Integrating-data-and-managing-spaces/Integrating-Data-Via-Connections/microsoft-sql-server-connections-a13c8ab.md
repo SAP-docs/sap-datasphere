@@ -10,7 +10,7 @@ Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Serv
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -49,14 +49,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -64,8 +60,6 @@ Description
 <td valign="top">
 
 *Server Name*  
-
-
 
 </td>
 <td valign="top">
@@ -84,8 +78,6 @@ Enter the Microsoft SQL Server name.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
@@ -103,14 +95,10 @@ Enter the Microsoft SQL Server port number. The value range is 1–65535.
 
 *Database Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the Microsoft SQL Server database name. 
-
-
 
 </td>
 </tr>
@@ -119,14 +107,10 @@ Enter the Microsoft SQL Server database name.
 
 *Version*
 
-
-
 </td>
 <td valign="top">
 
 Select the Microsoft SQL Server version.
-
-
 
 </td>
 </tr>
@@ -146,14 +130,10 @@ Select the Microsoft SQL Server version.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -162,14 +142,10 @@ Description
 
 *Use Cloud Connector* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
-
-
 
 </td>
 </tr>
@@ -177,8 +153,6 @@ Description
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Location* 
-
-
 
 </td>
 <td valign="top">
@@ -197,16 +171,12 @@ Description
 
 \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
-
-
 
 </td>
 </tr>
@@ -215,14 +185,10 @@ If host and port entered in the connection details match the virtual host and po
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual host that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -231,14 +197,10 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -255,14 +217,10 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -271,14 +229,10 @@ Description
 
 *Use SSL*  
 
-
-
 </td>
 <td valign="top">
 
 Select whether you’re using SSL. The default value is *true*. 
-
-
 
 </td>
 </tr>
@@ -287,14 +241,10 @@ Select whether you’re using SSL. The default value is *true*.
 
 \[if *Use SSL* = *true*\] *Host Name in Certificate*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name that is in the SSL certificate. 
-
-
 
 </td>
 </tr>
@@ -311,14 +261,10 @@ Enter the host name that is in the SSL certificate.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -327,14 +273,10 @@ Description
 
 *User Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the Microsoft SQL Server user name. 
-
-
 
 </td>
 </tr>
@@ -343,14 +285,10 @@ Enter the Microsoft SQL Server user name.
 
 *Password*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the Microsoft SQL Server user password. 
-
-
 
 </td>
 </tr>

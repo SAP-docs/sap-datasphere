@@ -36,22 +36,16 @@ When *Delta Capture* is switched on:
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     <th valign="top">
 
     Possible Values
-
-
     
     </th>
     </tr>
@@ -59,22 +53,16 @@ When *Delta Capture* is switched on:
     <td valign="top">
     
     Change Date 
-
-
     
     </td>
     <td valign="top">
     
     The column will track the last date and time of the last change to an individual record.
-
-
     
     </td>
     <td valign="top">
     
     Current UTC timestamp. 
-
-
     
     </td>
     </tr>
@@ -82,22 +70,16 @@ When *Delta Capture* is switched on:
     <td valign="top">
     
     Change Type
-
-
     
     </td>
     <td valign="top">
     
     This column will track the type of last change made to a record.
-
-
     
     </td>
     <td valign="top">
     
     This column will track the type of last change made to a record.When a record is inserted or updated corresponding change types are used \(for example "I" or "U"\). When an existing record is deleted other specific change types are used \(for example "D"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling.
-
-
     
     </td>
     </tr>

@@ -32,14 +32,10 @@ These are the available mapping parameters when importing CSV user data:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -48,14 +44,10 @@ Description
 
 User ID
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -64,14 +56,10 @@ User ID
 
 First Name
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -80,14 +68,10 @@ First Name
 
 Last Name
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -96,14 +80,10 @@ Last Name
 
 Display Name
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -112,14 +92,10 @@ Display Name
 
 Email
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -128,14 +104,10 @@ Email
 
 Manager
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -144,14 +116,10 @@ Manager
 
 Roles
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -160,14 +128,10 @@ Roles
 
 Mobile
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -176,14 +140,10 @@ Mobile
 
 Phone
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -192,14 +152,10 @@ Phone
 
 Office Location
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -208,14 +164,10 @@ Office Location
 
 Function Area
 
-
-
 </td>
 <td valign="top">
 
 Can be used to refer to a user's team or area within their organization.
-
-
 
 </td>
 </tr>
@@ -224,14 +176,10 @@ Can be used to refer to a user's team or area within their organization.
 
 Job Title
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -240,14 +188,10 @@ Job Title
 
 Clean up notifications older than
 
-
-
 </td>
 <td valign="top">
 
 Set in user settings: when to automatically delete notifications.
-
-
 
 </td>
 </tr>
@@ -256,14 +200,10 @@ Set in user settings: when to automatically delete notifications.
 
 Email Notification
 
-
-
 </td>
 <td valign="top">
 
 Set in user settings.
-
-
 
 </td>
 </tr>
@@ -272,14 +212,10 @@ Set in user settings.
 
 Welcome message
 
-
-
 </td>
 <td valign="top">
 
 Message that is shown to the user on the home screen.
-
-
 
 </td>
 </tr>
@@ -288,14 +224,10 @@ Message that is shown to the user on the home screen.
 
 Page tips
 
-
-
 </td>
 <td valign="top">
 
 Enabled/disabled via the help center \(deprecated\).
-
-
 
 </td>
 </tr>
@@ -304,14 +236,10 @@ Enabled/disabled via the help center \(deprecated\).
 
 Closed Page tips
 
-
-
 </td>
 <td valign="top">
 
 Closed page tips are tracked so that they are not shown again.
-
-
 
 </td>
 </tr>
@@ -320,14 +248,10 @@ Closed page tips are tracked so that they are not shown again.
 
 Closed Item Picker Tips
 
-
-
 </td>
 <td valign="top">
 
 Closed tooltips are tracked so that they won't be reopened again \(for first time users\).
-
-
 
 </td>
 </tr>
@@ -336,14 +260,10 @@ Closed tooltips are tracked so that they won't be reopened again \(for first tim
 
 Current Banner
 
-
-
 </td>
 <td valign="top">
 
 Saves which banner is currently showing.
-
-
 
 </td>
 </tr>
@@ -352,14 +272,10 @@ Saves which banner is currently showing.
 
 Last Banner
 
-
-
 </td>
 <td valign="top">
 
 The UUID of the last closed banner.
-
-
 
 </td>
 </tr>
@@ -368,14 +284,10 @@ The UUID of the last closed banner.
 
 Last Maintenance Banner Version
 
-
-
 </td>
 <td valign="top">
 
 The version when the last maintenance banner was shown.
-
-
 
 </td>
 </tr>
@@ -384,14 +296,10 @@ The version when the last maintenance banner was shown.
 
 Marketing email opt in
 
-
-
 </td>
 <td valign="top">
 
 Set in user settings.
-
-
 
 </td>
 </tr>
@@ -400,14 +308,10 @@ Set in user settings.
 
 Homescreen content is initialized
 
-
-
 </td>
 <td valign="top">
 
 If default tiles have been set for the home screen.
-
-
 
 </td>
 </tr>
@@ -416,14 +320,10 @@ If default tiles have been set for the home screen.
 
 Expand Story Toolbar
 
-
-
 </td>
 <td valign="top">
 
 Set in user settings.
-
-
 
 </td>
 </tr>
@@ -432,14 +332,10 @@ Set in user settings.
 
 Is user concurrent
 
-
-
 </td>
 <td valign="top">
 
 If the user has a concurrent license.
-
-
 
 </td>
 </tr>
@@ -448,14 +344,10 @@ If the user has a concurrent license.
 
 On the *Edit Home Screen* dialog, a user can override all the default preferences that have been set by the administrator for the system \(*System* \> *Administration* \> *Default Appearance*\). These are the preferences:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -464,14 +356,10 @@ On the *Edit Home Screen* dialog, a user can override all the default preference
 
 Override Background Option
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -480,14 +368,10 @@ Override Background Option
 
 Override Logo Option
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -496,14 +380,10 @@ Override Logo Option
 
 Override Welcome Message
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -512,14 +392,10 @@ Override Welcome Message
 
 Override Home Search To Insight
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -528,14 +404,10 @@ Override Home Search To Insight
 
 Override Get Started
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -544,14 +416,10 @@ Override Get Started
 
 Override Recent Stories
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -560,14 +428,10 @@ Override Recent Stories
 
 Override Recent Presentations
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -576,14 +440,10 @@ Override Recent Presentations
 
 Override Calendar Highlights
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

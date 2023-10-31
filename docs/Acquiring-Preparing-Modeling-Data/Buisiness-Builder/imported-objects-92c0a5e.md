@@ -13,14 +13,10 @@ Overview of metadata mapping and the deployment status after model transfer
 
 SAP BW/4HANA
 
-
-
 </th>
 <th valign="top" colspan="2">
 
 SAP Datasphere
-
-
 
 </th>
 </tr>
@@ -29,28 +25,20 @@ SAP Datasphere
 
 Model
 
-
-
 </th>
 <th valign="top">
 
 Sub-Model
-
-
 
 </th>
 <th valign="top">
 
 Data Builder
 
-
-
 </th>
 <th valign="top">
 
 Business Builder
-
-
 
 </th>
 </tr>
@@ -59,21 +47,15 @@ Business Builder
 
 InfoObject
 
-
-
 </td>
 <td valign="top">
 
 Master Data
 
-
-
 </td>
 <td valign="top">
 
 Remote table
-
-
 
 </td>
 <td valign="top">
@@ -87,14 +69,10 @@ Remote table
 
 Text
 
-
-
 </td>
 <td valign="top">
 
 Remote table
-
-
 
 </td>
 <td valign="top">
@@ -108,21 +86,15 @@ Remote table
 
 InfoObject
 
-
-
 </td>
 <td valign="top">
 
 View with prefix DL
 
-
-
 </td>
 <td valign="top">
 
 Dimension
-
-
 
 </td>
 </tr>
@@ -131,14 +103,10 @@ Dimension
 
 InfoObject with text
 
-
-
 </td>
 <td valign="top">
 
 Additional view with prefix TA
-
-
 
 </td>
 <td valign="top">
@@ -152,21 +120,15 @@ Additional view with prefix TA
 
 CompositeProvider
 
-
-
 </td>
 <td valign="top">
 
 Fact
 
-
-
 </td>
 <td valign="top">
 
 Remote table
-
-
 
 </td>
 <td valign="top">
@@ -180,21 +142,15 @@ Remote table
 
 InfoProvider
 
-
-
 </td>
 <td valign="top">
 
 View with prefix DL \(with associations to dimension views\) \(fact\)
 
-
-
 </td>
 <td valign="top">
 
 Fact \(with associations to dimensions\)
-
-
 
 </td>
 </tr>
@@ -203,28 +159,20 @@ Fact \(with associations to dimensions\)
 
 Query
 
-
-
 </td>
 <td valign="top">
 
 Query \(Restricted Key Figure, Calculated Key Figure, Filter\)
-
-
 
 </td>
 <td valign="top">
 
 Analyic Model
 
-
-
 </td>
 <td valign="top">
 
 Consumption Model
-
-
 
 </td>
 </tr>
@@ -232,8 +180,6 @@ Consumption Model
 <td valign="top">
 
 Query \(visible part of query for consumption\)
-
-
 
 </td>
 <td valign="top">
@@ -244,8 +190,6 @@ Query \(visible part of query for consumption\)
 <td valign="top">
 
 Perspective for consumption in stories in SAP Analytics Cloud
-
-
 
 </td>
 </tr>

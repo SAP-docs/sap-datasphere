@@ -112,7 +112,7 @@ When I load a new snapshot, only partitions 1, 4 and OTHERS are refreshed:
 > ### Note:  
 > If you change the partition definition, you can lock unchanged partitions to avoid unnecessary data loads. In the case of adding partitions, if you lock the unchanged partitions, only the new partitions will be loaded \(Locking new partitions is ineffective, as they need to be updated once after they are introduced. They will only be locked in the subsequent runs.\)
 > 
-> A full snapshot load will happen for the following cases:
+> A full data load will happen for the following cases:
 > 
 > -   You have no locked partitions.
 > -   You have changed the partitioning column. A full snapshot will happen at next data load.

@@ -27,15 +27,11 @@ A transformation flow writes data to a target table. You can create a new target
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -43,15 +39,11 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     Business Name / Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Information to identify the target table.
-
-
     
     </td>
     </tr>
@@ -59,15 +51,11 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
     
     The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>
@@ -75,8 +63,6 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     Truncate
-
-
     
     </td>
     <td valign="top">
@@ -84,8 +70,6 @@ A transformation flow writes data to a target table. You can create a new target
     If the value of the *Truncate* option is *Yes*, when you start the transformation flow, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source table.
 
     If not, the system inserts new data records after the existing data in the target table. For data records that already exist in the target table and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode. Note that the system will only update such target records if the target table has a primary key column.
-
-
     
     </td>
     </tr>
@@ -93,15 +77,11 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     Delta Capture
-
-
     
     </td>
     <td valign="top">
     
     Indicates whether the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
-
-
     
     </td>
     </tr>
@@ -109,15 +89,11 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     Delta Capture Table Name
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] The delta capture table name. The system displays this field if the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
-
-
     
     </td>
     </tr>

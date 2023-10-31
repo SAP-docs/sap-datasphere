@@ -54,15 +54,11 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -70,15 +66,11 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
     
     </td>
     </tr>
@@ -86,8 +78,6 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <td valign="top">
     
     Technical Name
-
-
     
     </td>
     <td valign="top">
@@ -107,15 +97,11 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <td valign="top">
     
     Spatial Reference Identifier
-
-
     
     </td>
     <td valign="top">
     
     Every spatial reference system has an identifier called a *Spatial Reference Identifier* \(or *SRID*\). By default, it is set to *4326* but can be changed to *0* or *3857*. For more information, see [Spatial Reference Identifier on SAP HANA](https://help.sap.com/viewer/cbbbfc20871e4559abfd45a78ad58c02/2.0.02/en-US/7a2ea357787c101488ecd1b725836f07.html).
-
-
     
     </td>
     </tr>
@@ -123,15 +109,11 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     <td valign="top">
     
     Latitude and Longitude
-
-
     
     </td>
     <td valign="top">
     
     These columns must have string or double as data types.
-
-
     
     </td>
     </tr>

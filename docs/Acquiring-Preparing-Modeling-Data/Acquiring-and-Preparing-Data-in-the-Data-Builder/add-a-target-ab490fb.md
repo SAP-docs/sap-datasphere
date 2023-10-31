@@ -39,15 +39,11 @@ Select a target \(connection and container\) to define the target environment fo
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -55,8 +51,6 @@ Select a target \(connection and container\) to define the target environment fo
     <td valign="top">
     
     **Group Delta By**
-
-
     
     </td>
     <td valign="top">
@@ -64,8 +58,6 @@ Select a target \(connection and container\) to define the target environment fo
     For *Load Type* of *Initial and Delta*: Choose *None*, *Date*, or *Hour*.
 
     Specifies whether to create additional folders for sorting updates based on the date or hour.
-
-
     
     </td>
     </tr>
@@ -73,8 +65,6 @@ Select a target \(connection and container\) to define the target environment fo
     <td valign="top">
     
     **File Type**
-
-
     
     </td>
     <td valign="top">

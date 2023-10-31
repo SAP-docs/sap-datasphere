@@ -11,14 +11,10 @@ To review the properties of a column and obtain profiling information for the da
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ Description
 
 Column Details
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the column that will be created. You can modify this name.
-
-
 
 </td>
 </tr>
@@ -42,8 +34,6 @@ Displays the name of the column that will be created. You can modify this name.
 <td valign="top">
 
 Data Type
-
-
 
 </td>
 <td valign="top">
@@ -63,16 +53,12 @@ Displays the data type of the column that will be created. The following data ty
 
 You can select a different data type from the list and validate the choice by clicking the *Validation* button. Invalid values are marked in red and will be imported as `NULL`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Conversion Format
-
-
 
 </td>
 <td valign="top">
@@ -92,14 +78,10 @@ Displays the syntax for `Date`, `Time`, and `Date and Time` data:
 
 Set as Key
 
-
-
 </td>
 <td valign="top">
 
 Select the checkbox to specify that the column acts as a primary key. Each row in a key column should contain a unique value.
-
-
 
 </td>
 </tr>
@@ -107,8 +89,6 @@ Select the checkbox to specify that the column acts as a primary key. Each row i
 <td valign="top">
 
 Data Distribution
-
-
 
 </td>
 <td valign="top">
@@ -134,14 +114,10 @@ Displays profiling information for the data in the column textually and as a bar
 
 Validation
 
-
-
 </td>
 <td valign="top">
 
 Displays any issues detected in the data in the column.
-
-
 
 </td>
 </tr>

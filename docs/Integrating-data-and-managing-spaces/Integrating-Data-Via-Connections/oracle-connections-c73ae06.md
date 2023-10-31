@@ -8,7 +8,7 @@ Use an *Oracle* connection to access data from an Oracle database \(on-premise\)
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -50,14 +50,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -66,14 +62,10 @@ Description
 
 *Host*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name or IP address on which the remote Oracle database is running. 
-
-
 
 </td>
 </tr>
@@ -82,14 +74,10 @@ Enter the host name or IP address on which the remote Oracle database is running
 
 *Port*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the Oracle database server port number. 
-
-
 
 </td>
 </tr>
@@ -98,14 +86,10 @@ Enter the Oracle database server port number.
 
 *Database Name/SID*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the Oracle database name 
-
-
 
 </td>
 </tr>
@@ -114,16 +98,12 @@ Enter the Oracle database name
 
 *Service Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the service name of Oracle database. When creating a remote source, you must set only one of the following parameters: *Database Name* and *Service Name*. 
 
 If you set both, the Data Provisioning Agent connects to Oracle by the service name as the first choice.
-
-
 
 </td>
 </tr>
@@ -132,14 +112,10 @@ If you set both, the Data Provisioning Agent connects to Oracle by the service n
 
 *Version*
 
-
-
 </td>
 <td valign="top">
 
 Select a version. Supported versions are Oracle 12c, Oracle 18c, and Oracle 19c. Default version is Oracle 19c.
-
-
 
 </td>
 </tr>
@@ -156,14 +132,10 @@ Select a version. Supported versions are Oracle 12c, Oracle 18c, and Oracle 19c.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -172,14 +144,10 @@ Description
 
 *Use SSL*  
 
-
-
 </td>
 <td valign="top">
 
 Select whether you’re using SSL. The default value is *true*. 
-
-
 
 </td>
 </tr>
@@ -187,8 +155,6 @@ Select whether you’re using SSL. The default value is *true*.
 <td valign="top">
 
 \[if *Use SSL* = *true*\] *Distinguished Name \(DN\) in Certificate*  
-
-
 
 </td>
 <td valign="top">
@@ -215,14 +181,10 @@ Enter the distinguished name \(DN\) of the primary data server certificate.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -231,14 +193,10 @@ Description
 
 *User Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the Oracle user name \(case-sensitive\) 
-
-
 
 </td>
 </tr>
@@ -247,14 +205,10 @@ Enter the Oracle user name \(case-sensitive\)
 
 *Password*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the Oracle user password 
-
-
 
 </td>
 </tr>

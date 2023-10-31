@@ -44,14 +44,10 @@ Supported file types:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Description
 
 *Category* 
 
-
-
 </td>
 <td valign="top">
 
 Select the category. Select *Cloud* if you want to connect to an SFTP server in the public cloud, or select *On-Premise* if you want to connect to an SFTP server in your local network. 
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Select the category. Select *Cloud* if you want to connect to an SFTP server in 
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the SFTP server. 
-
-
 
 </td>
 </tr>
@@ -92,14 +80,10 @@ Enter the host name of the SFTP server.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the port number of the SFTP server. 
-
-
 
 </td>
 </tr>
@@ -108,8 +92,6 @@ Enter the port number of the SFTP server.
 
 *Host Key* 
 
-
-
 </td>
 <td valign="top">
 
@@ -117,9 +99,7 @@ Enter the public SSH host key \(not the key fingerprint\).
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
 
-If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required.") :arrow_upper_right:.
-
-
+If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -128,16 +108,12 @@ If you don’t know your host key, ask your administrator or use command line to
 
 *Root Path*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
 
 If you have entered root path, then any path used with this connection is prefixed with the root path.
-
-
 
 </td>
 </tr>
@@ -154,14 +130,10 @@ If you have entered root path, then any path used with this connection is prefix
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -170,14 +142,10 @@ Description
 
 *Use Cloud Connector* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
-
-
 
 </td>
 </tr>
@@ -185,8 +153,6 @@ Description
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Location* 
-
-
 
 </td>
 <td valign="top">
@@ -205,16 +171,12 @@ Description
 
 \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
-
-
 
 </td>
 </tr>
@@ -223,14 +185,10 @@ If host and port entered in the connection details match the virtual host and po
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual host that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -239,14 +197,10 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -263,14 +217,10 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -279,14 +229,10 @@ Description
 
 *Authentication Type*  
 
-
-
 </td>
 <td valign="top">
 
 Select the authentication type to be used. 
-
-
 
 </td>
 </tr>
@@ -305,14 +251,10 @@ If *Authentication Type* = *SSH*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -321,14 +263,10 @@ Description
 
 *User Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the user who is accessing the SFTP server. 
-
-
 
 </td>
 </tr>
@@ -337,16 +275,12 @@ Enter the user who is accessing the SFTP server.
 
 *Private Key*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the user SSH private key used for SSH key authentication. The server must know the user SSH public key. 
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
-
-
 
 </td>
 </tr>
@@ -355,14 +289,10 @@ Choose <span class="SAP-icons"></span> \(Browse\) and select the file from yo
 
 *Passphrase*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the passphrase needed to decrypt the private key in SSH key authentication. 
-
-
 
 </td>
 </tr>
@@ -381,14 +311,10 @@ If *Authentication Type* = *User Name and Password*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -397,14 +323,10 @@ Description
 
 *User Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the user accessing the SFTP server. 
-
-
 
 </td>
 </tr>
@@ -413,14 +335,10 @@ Enter the user accessing the SFTP server.
 
 *Password*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the user's password used for authentication. 
-
-
 
 </td>
 </tr>

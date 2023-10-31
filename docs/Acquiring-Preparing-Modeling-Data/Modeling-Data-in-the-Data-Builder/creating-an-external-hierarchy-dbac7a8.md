@@ -18,15 +18,11 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -34,15 +30,11 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
     
     </td>
     </tr>
@@ -50,15 +42,11 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <td valign="top">
     
     Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Displays the name used in scripts and code, synchronized by default with the *Business Name*.
-
-
     
     </td>
     </tr>
@@ -66,15 +54,11 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <td valign="top">
     
     Semantic Usage
-
-
     
     </td>
     <td valign="top">
     
     Choose *Hierarchy*.
-
-
     
     </td>
     </tr>
@@ -82,8 +66,6 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <td valign="top">
     
     Parent Column / Child Column
-
-
     
     </td>
     <td valign="top">
@@ -101,15 +83,11 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     <td valign="top">
     
     Expose for Consumption
-
-
     
     </td>
     <td valign="top">
     
     In order to consume your hierarchy in SAP Analytics Cloud, you must enable the *Expose for Consumption* switch.
-
-
     
     </td>
     </tr>

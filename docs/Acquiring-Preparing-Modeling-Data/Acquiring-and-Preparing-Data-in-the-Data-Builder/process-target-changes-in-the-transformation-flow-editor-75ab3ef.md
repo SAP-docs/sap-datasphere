@@ -25,15 +25,11 @@ If the target table of your transformation flow is modified, then the next time 
     <th valign="top">
 
     Change
-
-
     
     </th>
     <th valign="top">
 
     Impact
-
-
     
     </th>
     </tr>
@@ -41,8 +37,6 @@ If the target table of your transformation flow is modified, then the next time 
     <td valign="top">
     
     New Column
-
-
     
     </td>
     <td valign="top">
@@ -59,8 +53,6 @@ If the target table of your transformation flow is modified, then the next time 
     <td valign="top">
     
     Change Column Data Type
-
-
     
     </td>
     <td valign="top">
@@ -78,8 +70,6 @@ If the target table of your transformation flow is modified, then the next time 
     <td valign="top">
     
     Delete Column
-
-
     
     </td>
     <td valign="top">
@@ -97,8 +87,6 @@ If the target table of your transformation flow is modified, then the next time 
     <td valign="top">
     
     Change Key Column
-
-
     
     </td>
     <td valign="top">

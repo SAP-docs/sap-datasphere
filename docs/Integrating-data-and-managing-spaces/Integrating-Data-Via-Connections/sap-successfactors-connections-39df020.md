@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__SF_usage)
 -   [Configuring Connection Properties](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP SuccessFactors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c9b19156c417409b8d563cc4b56c5dc0.html "To be able to successfully validate and use a connection to SAP SuccessFactors for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP SuccessFactors](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c9b19156c417409b8d563cc4b56c5dc0.html "To be able to successfully validate and use a connection to SAP SuccessFactors for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -26,14 +26,10 @@ For information about the required prerequisites, see [Prepare Connectivity to S
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -41,8 +37,6 @@ Additional Information
 <td valign="top">
 
 Remote Tables
-
-
 
 </td>
 <td valign="top">
@@ -67,14 +61,10 @@ You can use remote tables imported from the connection either to access data dir
 
 Data Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a data flow.
-
-
 
 </td>
 </tr>
@@ -97,14 +87,10 @@ You can use the connection to add source objects to a data flow.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -113,16 +99,12 @@ Description
 
 *URL*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the OData service provider URL of the SAP SuccessFactors service that you want to access. 
 
 The syntax for the URL is: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/odata/v2/<i class="varname">&lt;supported SAP SuccessFactors service group&gt;</i></code> or <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/odatav4/<i class="varname">&lt;supported SAP SuccessFactors service group&gt;</i></code> 
-
-
 
 </td>
 </tr>
@@ -131,14 +113,10 @@ The syntax for the URL is: <code><i class="varname">&lt;SAP SuccessFactors API S
 
 *Version*  
 
-
-
 </td>
 <td valign="top">
 
 \[read-only\] Displays the OData version used to implement the SAP SuccessFactors OData service. 
-
-
 
 </td>
 </tr>
@@ -155,14 +133,10 @@ The syntax for the URL is: <code><i class="varname">&lt;SAP SuccessFactors API S
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -170,8 +144,6 @@ Description
 <td valign="top">
 
 *Authentication Type*
-
-
 
 </td>
 <td valign="top">
@@ -207,14 +179,10 @@ If *Authentication Type* = *OAuth 2.0*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -223,14 +191,10 @@ Description
 
 *OAuth Grant Type*
 
-
-
 </td>
 <td valign="top">
 
 \[read-only\] Displays *SAML Bearer* as the grant type used to retrieve an access token. 
-
-
 
 </td>
 </tr>
@@ -239,14 +203,10 @@ Description
 
 *OAuth Token Endpoint*
 
-
-
 </td>
 <td valign="top">
 
 Enter the API endpoint to use to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
-
-
 
 </td>
 </tr>
@@ -255,14 +215,10 @@ Enter the API endpoint to use to request an access token: <code><i class="varnam
 
 *OAuth Scope*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the OAuth scope, if applicable.
-
-
 
 </td>
 </tr>
@@ -271,14 +227,10 @@ Enter the API endpoint to use to request an access token: <code><i class="varnam
 
 *OAuth Company ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the SAP SuccessFactors company ID \(identifying the SAP SuccessFactors system on the SAP SuccessFactors API server\) to use to request an access token.
-
-
 
 </td>
 </tr>
@@ -302,14 +254,10 @@ If *Authentication Type* = *OAuth 2.0*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -318,14 +266,10 @@ Description
 
 *Client ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the API key received when registering SAP Datasphere as OAuth2 client application in SAP SuccessFactors. 
-
-
 
 </td>
 </tr>
@@ -333,8 +277,6 @@ Enter the API key received when registering SAP Datasphere as OAuth2 client appl
 <td valign="top">
 
 *SAML Assertion*
-
-
 
 </td>
 <td valign="top">
@@ -363,14 +305,10 @@ If *Authentication Type* = *User Name And Password*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -379,14 +317,10 @@ Description
 
 *User Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the user name in *<username@companyID\>* format. 
-
-
 
 </td>
 </tr>
@@ -395,14 +329,10 @@ Enter the user name in *<username@companyID\>* format.
 
 *Password*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the password. 
-
-
 
 </td>
 </tr>
@@ -419,14 +349,10 @@ Enter the password.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -435,14 +361,10 @@ Description
 
 *Remote Tables*
 
-
-
 </td>
 <td valign="top">
 
 *Remote Tables* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>
@@ -451,14 +373,10 @@ Description
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>

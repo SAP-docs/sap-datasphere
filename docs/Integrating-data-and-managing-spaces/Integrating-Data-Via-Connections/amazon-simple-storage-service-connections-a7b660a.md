@@ -24,14 +24,10 @@ This topic contains the following sections:
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -40,14 +36,10 @@ Additional Information
 
 Data Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a data flow.
-
-
 
 </td>
 </tr>
@@ -70,14 +62,10 @@ You can use the connection to add source objects to a data flow.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -86,14 +74,10 @@ Description
 
 *Endpoint* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the endpoint URL of the Amazon S3 server. The protocol prefix is not required. For example, `s3.amazonaws.com`. 
-
-
 
 </td>
 </tr>
@@ -102,14 +86,10 @@ Enter the endpoint URL of the Amazon S3 server. The protocol prefix is not requi
 
 *Protocol* 
 
-
-
 </td>
 <td valign="top">
 
 Select the protocol. The default value is *HTTPS*. The value that you provide overwrites the value from the endpoint, if already set. 
-
-
 
 </td>
 </tr>
@@ -118,16 +98,12 @@ Select the protocol. The default value is *HTTPS*. The value that you provide ov
 
 *Root Path* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example,`/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
-
-
 
 </td>
 </tr>
@@ -144,14 +120,10 @@ If you have specified the root path, then any path used with this connection is 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -160,14 +132,10 @@ Description
 
 *Use Server Side Encryption* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *true* \(default\) if you want to use S3 objects encrypted through server side encryption. 
-
-
 
 </td>
 </tr>
@@ -175,8 +143,6 @@ Description
 <td valign="top">
 
 *Encryption Option* 
-
-
 
 </td>
 <td valign="top">
@@ -197,14 +163,10 @@ Description
 
 \[if *Encryption Option* = *Encryption with AWS Key Management Service Keys \(SSE-KMS\)*\] *KMS Key ARN* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the KMS key Amazon Resource Name \(ARN\) for the customer managed key which has been created to encrypt the objects in your Amazon S3 buckets. 
-
-
 
 </td>
 </tr>
@@ -221,14 +183,10 @@ Enter the KMS key Amazon Resource Name \(ARN\) for the customer managed key whic
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -237,14 +195,10 @@ Description
 
 *Use Assume Role* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *true* if you want to use temporary security credentials and restrict access to your Amazon S3 buckets based on an Identity and Access Management role \(IAM role\). The default value is *false*. 
-
-
 
 </td>
 </tr>
@@ -253,14 +207,10 @@ Description
 
 \[if *Use Assume Role* = *true*\] *Role ARN* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role. 
-
-
 
 </td>
 </tr>
@@ -269,14 +219,10 @@ Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role.
 
 \[if *Use Assume Role* = *true*\] *Role Session Name* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the name to uniquely identify the assumed role session. 
-
-
 
 </td>
 </tr>
@@ -285,14 +231,10 @@ Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role.
 
 \[if *Use Assume Role* = *true*\] *Duration of Role Session \(in Seconds\)* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the duration. The default duration is *3600* seconds.
-
-
 
 </td>
 </tr>
@@ -301,14 +243,10 @@ Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role.
 
 \[if *Use Assume Role* = *true*\] *External ID* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] If an external ID is used for your account to make sure that only specified third parties can assume the role, enter the ID you've been provided.
-
-
 
 </td>
 </tr>
@@ -317,14 +255,10 @@ Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role.
 
 \[if *Use Assume Role* = *true*\] *Role Policy* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] If you want to use a session policy, enter the respective IAM policy in JSON format.
-
-
 
 </td>
 </tr>
@@ -341,14 +275,10 @@ Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -357,14 +287,10 @@ Description
 
 *Access Key* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the access key ID of the user that is used to authenticate to Amazon S3. 
-
-
 
 </td>
 </tr>
@@ -373,14 +299,10 @@ Enter the access key ID of the user that is used to authenticate to Amazon S3.
 
 *Secret Key* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the secret access key of the user that is used to authenticate to Amazon S3. 
-
-
 
 </td>
 </tr>
@@ -397,14 +319,10 @@ Enter the secret access key of the user that is used to authenticate to Amazon S
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -413,14 +331,10 @@ Description
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>

@@ -13,14 +13,10 @@ The *Dependent Objects* list is available in your entity property sheet, and inc
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Description
 
 Business / Technical Name
 
-
-
 </td>
 <td valign="top">
 
 Identify the object that depends on the present entity.
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ Identify the object that depends on the present entity.
 
 Status
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of the dependent object.
-
-
 
 </td>
 </tr>
@@ -60,8 +48,6 @@ Displays the status of the dependent object.
 <td valign="top">
 
 Dependency Type
-
-
 
 </td>
 <td valign="top">
@@ -80,8 +66,6 @@ Displays the type of the dependency, which can be:
 
 Sub-Dependencies
 
-
-
 </td>
 <td valign="top">
 
@@ -99,14 +83,10 @@ Displays the number of objects that are, in turn, dependent on the dependent obj
 
 Deployed On / Changed By / Changed On
 
-
-
 </td>
 <td valign="top">
 
 \[table list only\] Display information about the last user to change the object and when it was last changed and deployed.
-
-
 
 </td>
 </tr>

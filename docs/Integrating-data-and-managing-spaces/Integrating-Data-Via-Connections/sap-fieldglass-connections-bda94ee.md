@@ -10,7 +10,7 @@ Use an *SAP Fieldglass* connection to retrieve data from SAP Fieldglass.
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP Fieldglass](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03ca23660b5d4b69960f264f5c31990e.html "To be able to successfully validate and use a connection to SAP Fieldglass for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to SAP Fieldglass](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/03ca23660b5d4b69960f264f5c31990e.html "To be able to successfully validate and use a connection to SAP Fieldglass for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -45,14 +45,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,8 +56,6 @@ Description
 <td valign="top">
 
 *URL*
-
-
 
 </td>
 <td valign="top">
@@ -74,8 +68,6 @@ Host: Host for accessing the cloud OData service
 
 Service path: Relative path \(without host and port\) to the Cloud Data Integration service endpoint \(where the CDI provider service is running at the cloud provider side\). The value must start with a forward slash \( / \).
 
-
-
 </td>
 </tr>
 <tr>
@@ -83,14 +75,10 @@ Service path: Relative path \(without host and port\) to the Cloud Data Integrat
 
 *Root Path*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the root path name to restrict browsing to a certain CDI namespace or provider.
-
-
 
 </td>
 </tr>
@@ -107,14 +95,10 @@ Service path: Relative path \(without host and port\) to the Cloud Data Integrat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -123,14 +107,10 @@ Description
 
 *Use Cloud Connector* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
-
-
 
 </td>
 </tr>
@@ -138,8 +118,6 @@ Description
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Location* 
-
-
 
 </td>
 <td valign="top">
@@ -158,16 +136,12 @@ Description
 
 \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
-
-
 
 </td>
 </tr>
@@ -176,14 +150,10 @@ If host and port entered in the connection details match the virtual host and po
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual host that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -192,14 +162,10 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -216,14 +182,10 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -231,8 +193,6 @@ Description
 <td valign="top">
 
 *OAuth Grant Type*
-
-
 
 </td>
 <td valign="top">
@@ -253,14 +213,10 @@ You can select:
 
 *OAuth Token Endpoint*
 
-
-
 </td>
 <td valign="top">
 
 Enter the token endpoint that the application must use.
-
-
 
 </td>
 </tr>
@@ -269,14 +225,10 @@ Enter the token endpoint that the application must use.
 
 *OAuth Scope*
 
-
-
 </td>
 <td valign="top">
 
 Enter the OAuth scope value.
-
-
 
 </td>
 </tr>
@@ -285,14 +237,10 @@ Enter the OAuth scope value.
 
 *OAuth Resource*
 
-
-
 </td>
 <td valign="top">
 
 Enter the OAuth resource.
-
-
 
 </td>
 </tr>
@@ -301,14 +249,10 @@ Enter the OAuth resource.
 
 *OAuth Response Type*
 
-
-
 </td>
 <td valign="top">
 
 Select the OAuth response tyoe. The values are *token* or *none*.
-
-
 
 </td>
 </tr>
@@ -317,14 +261,10 @@ Select the OAuth response tyoe. The values are *token* or *none*.
 
 *OAuth Token Request Content Type*
 
-
-
 </td>
 <td valign="top">
 
 Select the value for the content-type HTTP header that the application must use when requesting a token. The values are *URLEncoded* or *JSON*.
-
-
 
 </td>
 </tr>
@@ -343,14 +283,10 @@ If *OAuth Grant Type* = *Client Credentials*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -359,14 +295,10 @@ Description
 
 *Client ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client ID. 
-
-
 
 </td>
 </tr>
@@ -375,14 +307,10 @@ Enter the client ID.
 
 *Client Secret*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client secret.
-
-
 
 </td>
 </tr>
@@ -397,14 +325,10 @@ If *OAuth Grant Type* = *User Name And Password*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -413,14 +337,10 @@ Description
 
 *User Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the OAuth user.
-
-
 
 </td>
 </tr>
@@ -429,14 +349,10 @@ Enter the name of the OAuth user.
 
 *Password \(OAuth 2.0\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the OAuth password.
-
-
 
 </td>
 </tr>

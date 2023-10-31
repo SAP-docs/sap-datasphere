@@ -24,14 +24,10 @@ This topic contains the following sections:
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -40,16 +36,12 @@ Additional Information
 
 Remote Tables
 
-
-
 </td>
 <td valign="top">
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
 For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
-
 
 </td>
 </tr>
@@ -58,14 +50,10 @@ For remote tables, real-time replication is supported. For information about any
 
 Data Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a data flow.
-
-
 
 </td>
 </tr>
@@ -74,14 +62,10 @@ You can use the connection to add source objects to a data flow.
 
 Replication Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a replication flow.
-
-
 
 </td>
 </tr>
@@ -109,14 +93,10 @@ You can use the connection to add source objects to a replication flow.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -125,14 +105,10 @@ Description
 
 *Server Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the Azure server. 
-
-
 
 </td>
 </tr>
@@ -141,14 +117,10 @@ Enter the host name of the Azure server.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the port number of the Azure server. The default is `1433`. 
-
-
 
 </td>
 </tr>
@@ -157,14 +129,10 @@ Enter the port number of the Azure server. The default is `1433`.
 
 *Database Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the database to which you want to connect. 
-
-
 
 </td>
 </tr>
@@ -173,14 +141,10 @@ Enter the name of the database to which you want to connect.
 
 *Version* 
 
-
-
 </td>
 <td valign="top">
 
 Select the version. 
-
-
 
 </td>
 </tr>
@@ -197,14 +161,10 @@ Select the version.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -213,14 +173,10 @@ Description
 
 *Host Name in Server Certificate* 
 
-
-
 </td>
 <td valign="top">
 
 Enter `*.database.windows.net` .
-
-
 
 </td>
 </tr>
@@ -237,14 +193,10 @@ Enter `*.database.windows.net` .
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -253,14 +205,10 @@ Description
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Azure user that has privileges to connect to the database. 
-
-
 
 </td>
 </tr>
@@ -269,14 +217,10 @@ Enter the name of the Azure user that has privileges to connect to the database.
 
 *Password* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the password of the Azure user. 
-
-
 
 </td>
 </tr>
@@ -293,14 +237,10 @@ Enter the password of the Azure user.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -309,14 +249,10 @@ Description
 
 *Remote Tables*
 
-
-
 </td>
 <td valign="top">
 
 To enable *Remote Tables*, select a Data Provisioning Agent. 
-
-
 
 </td>
 </tr>
@@ -325,14 +261,10 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>
@@ -341,14 +273,10 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 
 *Replication Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>

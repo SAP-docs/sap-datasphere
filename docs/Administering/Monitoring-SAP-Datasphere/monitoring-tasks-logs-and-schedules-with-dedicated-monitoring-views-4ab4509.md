@@ -25,15 +25,11 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Function
-
-
     
     </th>
     </tr>
@@ -41,15 +37,11 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     SPACE\_ID
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere space. Note that one space can contain several schemas.
-
-
     
     </td>
     </tr>
@@ -57,15 +49,11 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     SCHEMA\_NAME
-
-
     
     </td>
     <td valign="top">
     
     Name of the schema used to run the task.
-
-
     
     </td>
     </tr>
@@ -79,29 +67,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Key
-
-
     
     </th>
     <th valign="top">
 
     Function
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     </tr>
@@ -109,29 +89,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     SPACE\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere space which contains the object with the defined schedule.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -139,29 +111,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     OBJECT\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere object for which the schedule is defined.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -169,29 +133,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     APPLICATION\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the type of object
-
-
     
     </td>
     <td valign="top">
     
     For example: VIEWS, REMOTE\_TABLES, DATA\_FLOWS, TASK\_CHAINS
-
-
     
     </td>
     </tr>
@@ -199,15 +155,11 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     ACTIVITY
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
@@ -223,8 +175,6 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     For example: PERSIST \(View\), EXECUTE \(Dataflow\), REPLICATE \(Remote Tables\), RUN\_CHAIN \(Task Chain\)
-
-
     
     </td>
     </tr>
@@ -232,29 +182,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     OWNER
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the responsible of the schedule, schedule executed on users behalf, consent is checked against
-
-
     
     </td>
     <td valign="top">
     
     < DWC User ID \>
-
-
     
     </td>
     </tr>
@@ -262,29 +204,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     CRON
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Defines the recurrence of a schedule in CRON format
-
-
     
     </td>
     <td valign="top">
     
-    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly. For more information on CRON schedule, see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.") :arrow_upper_right:
-
-
+    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly. For more information on CRON schedule, see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -292,29 +226,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     FREQUENCY
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Defines the recurrence of a schedule in json format \(simple format\)
-
-
     
     </td>
     <td valign="top">
     
-    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right: 
-
-
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right: 
     
     </td>
     </tr>
@@ -322,29 +248,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     CHANGED\_BY
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     User who last changed the schedule configuration.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -352,29 +270,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     CHANGED\_AT
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Timestamp containing Date and Time, at which the schedule was last changed.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -388,29 +298,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Key
-
-
     
     </th>
     <th valign="top">
 
     Function
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     </tr>
@@ -418,29 +320,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     TASK\_LOG\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies an execution of a task.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -448,29 +342,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     SPACE\_ID
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere space which contains the object with the defined schedule.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -478,29 +364,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     APPLICATION\_ID
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the type of object
-
-
     
     </td>
     <td valign="top">
     
     For example: VIEWS, REMOTE\_TABLES, DATA\_FLOWS, TASK\_CHAINS
-
-
     
     </td>
     </tr>
@@ -508,29 +386,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     OBJECT\_ID
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere object for which the schedule is defined.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -538,29 +408,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     ACTIVITY
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     For each application there could be multiple activities, e.g. replicating or deleting data
-
-
     
     </td>
     <td valign="top">
     
     For example: PERSIST \(View\), EXECUTE \(Dataflow\), REPLICATE \(Remote Tables\), RUN\_CHAIN \(Task Chain\)
-
-
     
     </td>
     </tr>
@@ -568,29 +430,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     PEAK\_MEMORY
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Captures the highest peak memory consumption. Note: this value is not available for all apps. To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitorig*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
-
-
     
     </td>
     <td valign="top">
     
     Null \(not available for the application, or not measured because the *Enable Expensive Statement Tracing* is not set, or the threshold defined is not reached\), 0 or value of the memory consumption.
-
-
     
     </td>
     </tr>
@@ -598,29 +452,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     PEAK\_CPU
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Total CPU time consumed by the task. Note: This value is not available for all apps.To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitorig*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
-
-
     
     </td>
     <td valign="top">
     
     Null \(not available for the application, or not measured because the *Enable Expensive Statement Tracing* is not set, or the threshold defined is not reached\), 0 or value of the CPU time consumption.
-
-
     
     </td>
     </tr>
@@ -628,29 +474,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     RECORDS
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Shows the number of records of the target table after the task has finished running.
-
-
     
     </td>
     <td valign="top">
     
     Null \(not applicable or not measured\), 0 or number of records.
-
-
     
     </td>
     </tr>
@@ -658,29 +496,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     START\_TIME
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Timestamp containing Date and Time, at which the scheduled task was started.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -688,29 +518,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     END\_TIME
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Timestamp containing Date and Time, at which the scheduled task was stopped.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -718,29 +540,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     STATUS
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Reports if this task execution is still running, completed or failed.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -748,29 +562,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     TRIGGERED\_TYPE
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Indicates if task execution was triggered manually \(DIRECT\) or via schedule \(SCHEDULED\)
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -778,29 +584,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     APPLICATION\_USER
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The user on whose behalf the schedule was executed \(the owner at this point in time\)
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -808,29 +606,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     DURATION
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Duration of the task execution \(also works for ongoing execution\)
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -838,29 +628,21 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     START\_DATE
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Date when the scheduled task was started.
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     </tr>
@@ -874,22 +656,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Key
-
-
     
     </th>
     <th valign="top">
 
     Function
-
-
     
     </th>
     </tr>
@@ -897,22 +673,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     TASK\_LOG\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies an execution of a task
-
-
     
     </td>
     </tr>
@@ -920,22 +690,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     MESSAGE\_NO
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Order sequence of all messages belonging to a certain Tasklog ID.
-
-
     
     </td>
     </tr>
@@ -943,22 +707,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     SEVERITY
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Indicates if the message provides general information \(INFO\) or error information \(ERROR\)
-
-
     
     </td>
     </tr>
@@ -966,22 +724,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     TEXT
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     The message itself
-
-
     
     </td>
     </tr>
@@ -989,22 +741,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     DETAILS
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Technical additional information. For example, it can be an error stack or a correlation ID.
-
-
     
     </td>
     </tr>
@@ -1018,22 +764,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Key
-
-
     
     </th>
     <th valign="top">
 
     Function
-
-
     
     </th>
     </tr>
@@ -1041,22 +781,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     LOCK\_KEY
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier, flexible field as part of the lock identifier, usually set to WRITE or EXECUTE.
-
-
     
     </td>
     </tr>
@@ -1064,22 +798,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     APPLICATION\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the type of object.
-
-
     
     </td>
     </tr>
@@ -1087,22 +815,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     SPACE\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere space which contains the object with the defined schedule.
-
-
     
     </td>
     </tr>
@@ -1110,22 +832,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     OBJECT\_ID
-
-
     
     </td>
     <td valign="top">
     
     X
-
-
     
     </td>
     <td valign="top">
     
     Identifier of the SAP Datasphere object for which the schedule is defined.
-
-
     
     </td>
     </tr>
@@ -1133,22 +849,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     TASK\_LOG\_ID
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Uniquely identifies the task execution that set the lock.
-
-
     
     </td>
     </tr>
@@ -1156,22 +866,16 @@ Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recog
     <td valign="top">
     
     CREATION\_TIME
-
-
     
     </td>
     <td valign="top">
     
      
-
-
     
     </td>
     <td valign="top">
     
     Indicates when the lock has been set.
-
-
     
     </td>
     </tr>
@@ -1195,7 +899,7 @@ You can then choose a space that is dedicated to task framework monitoring. For 
 
     For more information, see [Analyze Monitoring Data in a Space](analyze-monitoring-data-in-a-space-9cd0691.md).
 
--   You need to import the package that contains monitoring views via the *Content Network*. Import the package *<Technical Content: Task Monitoring\>*. For more information, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
+-   You need to import the package that contains monitoring views via the *Content Network*. Import the package *<Technical Content: Task Monitoring\>*. For more information, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
 
 Thanks to SAP Datasphere pre-configured monitoring views, you can monitor data integration tasks in a more flexible way. They are based on top of the V\_EXT HANA views \(see previous section\), and we enriched them with further information as preparation for consumption in an SAP Analytics Cloud Story.
 
@@ -1203,7 +907,7 @@ For more information about how to create such a story,
 
 See the blogs [SAP Datasphere: Data Integration Monitoring – Sample Content for Reporting](https://blogs.sap.com/2021/10/12/sap-data-warehouse-cloud-data-integration-monitoring-sample-content-for-reporting/) \(published in October 2021\) and [SAP Datasphere: Data Integration Monitoring – Running Task Overview](https://blogs.sap.com/2021/11/04/sap-data-warehouse-cloud-data-integration-monitoring-running-task-overview/) \(published in November 2021\).
 
-For more information about data integration, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
+For more information about data integration, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:.
 
 > ### Restriction:  
 > Content modification is not recommended as any update will overwrite custom changes.

@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__S4_OP_usage)
 -   [Configuring Connection Properties](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -26,14 +26,10 @@ For information about the required prerequisites, see [Prepare Connectivity to S
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -41,8 +37,6 @@ Additional Information
 <td valign="top">
 
 Remote Tables
-
-
 
 </td>
 <td valign="top">
@@ -94,14 +88,10 @@ Real-time replication is supported for ODP sources. For information about any co
 
 Model Import
 
-
-
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
-
-
+You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
 
 </td>
 </tr>
@@ -109,8 +99,6 @@ You can use the connection to import semantically-rich entities from an SAP S/4H
 <td valign="top">
 
 Data Flows
-
-
 
 </td>
 <td valign="top">
@@ -130,8 +118,6 @@ You can use the connection to add source objects to a data flow.
 <td valign="top">
 
 Replication Flows
-
-
 
 </td>
 <td valign="top">
@@ -182,14 +168,10 @@ See [SAP Data Warehouse Cloud - First Guidance: Data Integration for ABAP Source
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -198,14 +180,10 @@ Description
 
 *SAP Logon Connection Type*
 
-
-
 </td>
 <td valign="top">
 
 Select *Application Server* to connect to a single application server, or select *Message Server* to use load balancing and connect to a message server that distributes the load to different application servers.
-
-
 
 </td>
 </tr>
@@ -214,14 +192,10 @@ Select *Application Server* to connect to a single application server, or select
 
 \[if *SAP Logon Connection Type* = *Application Server*\] *Application Server* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the application server to which you want to connect to. 
-
-
 
 </td>
 </tr>
@@ -230,14 +204,10 @@ Enter the name of the application server to which you want to connect to.
 
 \[if *SAP Logon Connection Type* = *Application Server*\] *System Number* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the SAP ABAP system instance number. 
-
-
 
 </td>
 </tr>
@@ -246,14 +216,10 @@ Enter the SAP ABAP system instance number.
 
 \[if *SAP Logon Connection Type* = *Message Server*\] *Message Server*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the message server to which you want to connect to.
-
-
 
 </td>
 </tr>
@@ -262,14 +228,10 @@ Enter the name of the message server to which you want to connect to.
 
 \[if *SAP Logon Connection Type* = *Message Server*\] *Message Server Port*
 
-
-
 </td>
 <td valign="top">
 
 Enter the message server port.
-
-
 
 </td>
 </tr>
@@ -278,14 +240,10 @@ Enter the message server port.
 
 \[if *SAP Logon Connection Type* = *Message Server*\] *Message Server Group*
 
-
-
 </td>
 <td valign="top">
 
 Enter the message server group.
-
-
 
 </td>
 </tr>
@@ -294,14 +252,10 @@ Enter the message server group.
 
 *Client* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the system client number. 
-
-
 
 </td>
 </tr>
@@ -310,14 +264,10 @@ Enter the system client number.
 
 *System ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the system ID.
-
-
 
 </td>
 </tr>
@@ -326,14 +276,10 @@ Enter the system ID.
 
 *Language* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the two-digit ISO language code, EN for English or DE for German, for example. In the Data Builder, object and field descriptions are then shown in the specified language. If not set, the application uses the default logon language of the ABAP system for data flows, and EN is used for remote tables and views. 
-
-
 
 </td>
 </tr>
@@ -350,14 +296,10 @@ Enter the two-digit ISO language code, EN for English or DE for German, for exam
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -366,14 +308,10 @@ Description
 
 *Use Cloud Connector* 
 
-
-
 </td>
 <td valign="top">
 
 Set to *true* if your source is an on-premise source and you want to use the connection for data flows or replication flows. The default is *false*. 
-
-
 
 </td>
 </tr>
@@ -381,8 +319,6 @@ Set to *true* if your source is an on-premise source and you want to use the con
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Location* 
-
-
 
 </td>
 <td valign="top">
@@ -400,8 +336,6 @@ Select a location ID.
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
-
-
 
 </td>
 <td valign="top">
@@ -422,14 +356,10 @@ If host and port entered in the connection details match the virtual host and po
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual host that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -438,14 +368,10 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -462,14 +388,10 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -478,14 +400,10 @@ Description
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the user name that is used to connect to the SAP ABAP system. 
-
-
 
 </td>
 </tr>
@@ -494,14 +412,10 @@ Enter the user name that is used to connect to the SAP ABAP system.
 
 *Password* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the user password. 
-
-
 
 </td>
 </tr>
@@ -518,14 +432,10 @@ Enter the user password.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -533,8 +443,6 @@ Description
 <td valign="top">
 
 *Remote Tables*
-
-
 
 </td>
 <td valign="top">
@@ -548,14 +456,10 @@ To enable *Remote Tables*, complete the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -564,14 +468,10 @@ Description
 
 *Data Provisioning Agent* 
 
-
-
 </td>
 <td valign="top">
 
 Select an agent if you want to use the connection to access data via imported remote tables and to build views. 
-
-
 
 </td>
 </tr>
@@ -580,14 +480,10 @@ Select an agent if you want to use the connection to access data via imported re
 
 \[if you selected an agent\] *Streaming Read* 
 
-
-
 </td>
 <td valign="top">
 
 Set to *On* if you want to use ABAP RFC streaming for loading tables based on small batches. Set to *Off* to use non-RFC streaming. The default is *Off*. 
-
-
 
 </td>
 </tr>
@@ -596,14 +492,10 @@ Set to *On* if you want to use ABAP RFC streaming for loading tables based on sm
 
 \[if *Streaming Read* = *On*\] *Gateway Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the gateway host where the ABAP adapter would register an RFC server instance to receive callbacks with the table data batches. Usually, the gateway host is the same as the target ABAP system host. 
-
-
 
 </td>
 </tr>
@@ -612,14 +504,10 @@ Enter the gateway host where the ABAP adapter would register an RFC server insta
 
 \[if *Streaming Read* = *On*\] *Gateway Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the port number of the gateway server where the ABAP adapter would register an RFC server instance to receive callbacks with the table data batches. You can find the port number for <code>sapgw<i class="varname">&lt;ABAP_instance_number&gt;</i></code> in file `/etc/services` on the ABAP host. The default port number is <code>33<i class="varname">&lt;ABAP_instance_number&gt;</i></code>. If you have a file `/etc/services` with this mapping on the Data Provisioning Agent’s host, you can also enter <code>sapgw<i class="varname">&lt;ABAP_instance_number&gt;</i></code> instead of the port number.
-
-
 
 </td>
 </tr>
@@ -628,14 +516,10 @@ Enter the port number of the gateway server where the ABAP adapter would registe
 
 \[if *Streaming* = *On*\] *RFC Destination* 
 
-
-
 </td>
 <td valign="top">
 
-Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
-
-
+Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
 
 </td>
 </tr>
@@ -650,14 +534,10 @@ Enter the name of the RFC destination that you have created in the source. For m
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
-
-
 
 </td>
 </tr>
@@ -666,14 +546,10 @@ Enter the name of the RFC destination that you have created in the source. For m
 
 *Replication Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
-
-
 
 </td>
 </tr>
@@ -682,14 +558,10 @@ Enter the name of the RFC destination that you have created in the source. For m
 
 *Model Import*
 
-
-
 </td>
 <td valign="top">
 
 To enable *Model Import*, select the live data connection that connects to your SAP S/4HANA system and select a Data Provisioning Agent.
-
-
 
 </td>
 </tr>

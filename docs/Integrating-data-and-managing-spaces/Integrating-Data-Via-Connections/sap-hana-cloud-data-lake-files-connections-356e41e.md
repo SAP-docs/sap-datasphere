@@ -35,7 +35,7 @@ Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Busine
 > 
 >     -   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
 > 
->     -   [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses that for particular remote applications must be added to allowlists before you can to use connections to these remote applications.") :arrow_upper_right:
+>     -   [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses that for particular remote applications must be added to allowlists before you can to use connections to these remote applications.") :arrow_upper_right:
 
 
 
@@ -50,14 +50,10 @@ Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Busine
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -66,14 +62,10 @@ Additional Information
 
 Data Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a data flow.
-
-
 
 </td>
 </tr>
@@ -82,14 +74,10 @@ You can use the connection to add source objects to a data flow.
 
 Replication Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add target objects to a replication flow.
-
-
 
 </td>
 </tr>
@@ -112,14 +100,10 @@ You can use the connection to add target objects to a replication flow.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -128,14 +112,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name for SAP HANA Cloud, data lake Files. 
-
-
 
 </td>
 </tr>
@@ -144,16 +124,12 @@ Enter the host name for SAP HANA Cloud, data lake Files.
 
 *Root Path* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter a root path for browsing files. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
-
-
 
 </td>
 </tr>
@@ -170,14 +146,10 @@ If you have specified the root path, then any path used with this connection is 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -186,16 +158,12 @@ Description
 
 *Keystore File* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the Base64-encoded value of the client keystore file. The supported format is PCKS\#12 \(P12 and PFX files\). 
 
 You can also choose <span class="SAP-icons"></span> Browse and select the file from your download location.
-
-
 
 </td>
 </tr>
@@ -204,14 +172,10 @@ You can also choose <span class="SAP-icons"></span> Browse and select the fil
 
 *Keystore Password* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the client keystore password. 
-
-
 
 </td>
 </tr>
@@ -228,14 +192,10 @@ Enter the client keystore password.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -244,14 +204,10 @@ Description
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>
@@ -260,14 +216,10 @@ Description
 
 *Replication Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>

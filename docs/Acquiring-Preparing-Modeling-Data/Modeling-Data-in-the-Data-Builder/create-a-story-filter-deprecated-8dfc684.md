@@ -37,15 +37,11 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -53,8 +49,6 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <td valign="top">
     
     Type
-
-
     
     </td>
     <td valign="top">
@@ -72,15 +66,11 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <td valign="top">
     
     Mandatory
-
-
     
     </td>
     <td valign="top">
     
     Requires the user to enter a value.
-
-
     
     </td>
     </tr>
@@ -88,15 +78,11 @@ Story filters that you add to your view will trigger the display of the *Set Var
     <td valign="top">
     
     Multiple Entries
-
-
     
     </td>
     <td valign="top">
     
     Allows the user to enter more than one value \(or range of values\) to filter on.
-
-
     
     </td>
     </tr>

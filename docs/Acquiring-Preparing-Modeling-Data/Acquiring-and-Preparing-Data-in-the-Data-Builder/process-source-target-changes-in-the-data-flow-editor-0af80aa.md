@@ -25,15 +25,11 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     <th valign="top">
 
     Change
-
-
     
     </th>
     <th valign="top">
 
     Impact in Dependent Data Flows
-
-
     
     </th>
     </tr>
@@ -41,8 +37,6 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     <td valign="top">
     
     New Column
-
-
     
     </td>
     <td valign="top">
@@ -59,8 +53,6 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     <td valign="top">
     
     Change Column Data Type
-
-
     
     </td>
     <td valign="top">
@@ -78,8 +70,6 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     <td valign="top">
     
     Delete Column
-
-
     
     </td>
     <td valign="top">

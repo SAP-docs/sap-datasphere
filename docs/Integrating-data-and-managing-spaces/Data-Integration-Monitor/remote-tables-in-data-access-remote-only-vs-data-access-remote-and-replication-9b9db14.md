@@ -5,7 +5,7 @@
 An administrator or a data integrator has configured the source connection as *Remote Only* to prevent remote tables from being replicated in SAP Datasphere.
 
 > ### Note:  
-> If your connections have been set up in a previous version, they have been updated with data access *Remote and Replication*.
+> If your connections have been set up in a previous version, they have been updated with data access **.
 
 The possibility to replicate the entire source object using remote table replication \(snapshot or real-time\) is useful for some use cases such as performance optimization.
 
@@ -24,21 +24,15 @@ The table below compares the actions you can do when your remote table is in dat
 
 Actions
 
-
-
 </th>
 <th valign="top">
 
 Data Access Remote Only
 
-
-
 </th>
 <th valign="top">
 
 Data Access Remote and Replication \(or no option\)
-
-
 
 </th>
 </tr>
@@ -47,18 +41,14 @@ Data Access Remote and Replication \(or no option\)
 
 Replication of Data
 
-
-
 </td>
 <td valign="top">
 
-Not possible directly. However, selected data can be replicated via *Replication flow Monitor* 
+Not possible directly. However, selected data can be replicated via *Flows Monitor*.
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:
 
 .
-
-
 
 </td>
 <td valign="top">
@@ -67,8 +57,6 @@ Possible. You can do it via snapshot replication or real-time replication when s
 
 For more information, see [Replicating Data and Monitoring Remote Tables](replicating-data-and-monitoring-remote-tables-4dd95d7.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -76,21 +64,15 @@ For more information, see [Replicating Data and Monitoring Remote Tables](replic
 
 Scheduling of data load
 
-
-
 </td>
 <td valign="top">
 
 Not possible
 
-
-
 </td>
 <td valign="top">
 
 Possible. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md)
-
-
 
 </td>
 </tr>
@@ -99,21 +81,15 @@ Possible. For more information, see [Scheduling Data Integration Tasks](scheduli
 
 Partition of data load
 
-
-
 </td>
 <td valign="top">
 
 Not possible
 
-
-
 </td>
 <td valign="top">
 
 Possible. See [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md)
-
-
 
 </td>
 </tr>
@@ -122,21 +98,15 @@ Possible. See [Partitioning Remote Table Data Loads](partitioning-remote-table-d
 
 Import/Edit/Delete/Refresh/Display
 
+</td>
+<td valign="top">
 
+Possible. For more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
 
-Possible. For more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
-
-
-
-</td>
-<td valign="top">
-
-Possible. or more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
-
-
+Possible. or more information, see [Importing Tables and Views from Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -145,21 +115,19 @@ Possible. or more information, see [Importing Tables and Views from Sources](htt
 
 Monitoring of remote tables
 
+</td>
+<td valign="top">
 
+No specific monitor is available. However, you can monitor the exchange of data between SAP Datasphere and the remote source system in the *Remote Query Monitor*.
+
+For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md)
 
 </td>
 <td valign="top">
 
-No specific monitor is available. However, you can monitor the exchange of data between SAP Datasphere and the remote source system in the *Remote Query Monitor*. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md)
+Possible. You can monitor remote tables via the *Remote Table Monitor*.
 
-
-
-</td>
-<td valign="top">
-
-Possible. You can monitor remote tables via the *Remote Table Monitor*. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
-
-
+For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
 
 </td>
 </tr>
@@ -168,21 +136,15 @@ Possible. You can monitor remote tables via the *Remote Table Monitor*. For more
 
 Create/Edit/Delete Statistics
 
-
-
 </td>
 <td valign="top">
 
 Yes. For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md)
 
-
-
 </td>
 <td valign="top">
 
 Not possible
-
-
 
 </td>
 </tr>

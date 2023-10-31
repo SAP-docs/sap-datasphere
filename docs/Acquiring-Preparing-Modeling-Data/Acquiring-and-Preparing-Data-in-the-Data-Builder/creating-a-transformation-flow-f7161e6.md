@@ -42,15 +42,11 @@ Creating a transformation flow involves two important steps:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -58,15 +54,11 @@ Creating a transformation flow involves two important steps:
     <td valign="top">
     
     Business Name / Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Information to identify the transformation flow.
-
-
     
     </td>
     </tr>
@@ -74,15 +66,11 @@ Creating a transformation flow involves two important steps:
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
     
     The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>
@@ -90,8 +78,6 @@ Creating a transformation flow involves two important steps:
     <td valign="top">
     
     Load Type
-
-
     
     </td>
     <td valign="top">
@@ -131,14 +117,14 @@ Creating a transformation flow involves two important steps:
     > ### Note:  
     > You will need to navigate to the *View Transform Editor* to check the validation messages for the transformation flow.
 
-7.  \[optional\] To create a schedule for the transformation flow, click <span class="FPA-icons"></span> \(Schedule\). For example, it may make sense to replicate delta changes to the target table at regular intervals. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:
+7.  \[optional\] To create a schedule for the transformation flow, click <span class="FPA-icons"></span> \(Schedule\). For example, it may make sense to replicate delta changes to the target table at regular intervals. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:
 
 8.  Click <span class="FPA-icons"></span> \(Run\) to start your transformation flow.
 
     You can also start your transformation flows in the *Data Integration Monitor*.
 
     > ### Note:  
-    > You can cancel a running transformation flow in the *Data Integration Monitor*. For more information, see [Cancel a Transformation Flow Run](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/ab885f05210f4a52aebe8306c8cad083.html "") :arrow_upper_right:.
+    > You can cancel a running transformation flow in the *Data Integration Monitor*. For more information, see [Cancel a Transformation Flow Run](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/ab885f05210f4a52aebe8306c8cad083.html "") :arrow_upper_right:.
 
 9.  To see more details about the run, open the *Flow Monitor* by clicking <span class="FPA-icons"></span> \(Open in Data Integration Monitor\).
 

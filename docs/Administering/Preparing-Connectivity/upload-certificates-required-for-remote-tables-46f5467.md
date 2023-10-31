@@ -21,21 +21,15 @@ If you want to create a connection to any of the following sources, you have dow
 
 Source
 
-
-
 </th>
 <th valign="top">
 
 Via
 
-
-
 </th>
 <th valign="top">
 
 Examples for Certificate Download Sites
-
-
 
 </th>
 </tr>
@@ -44,14 +38,10 @@ Examples for Certificate Download Sites
 
 Amazon Athena
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA Smart Data Access \(using HTTP-based REST APIs\)
-
-
 
 </td>
 <td valign="top">
@@ -74,21 +64,15 @@ SAP HANA Smart Data Access \(using HTTP-based REST APIs\)
 
 Google BigQuery
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA Smart Data Access \(using HTTP-based REST APIs\)
 
-
-
 </td>
 <td valign="top">
 
 `https://www.google.com/`
-
-
 
 </td>
 </tr>
@@ -97,14 +81,10 @@ SAP HANA Smart Data Access \(using HTTP-based REST APIs\)
 
 SAP HANA Cloud
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA Smart Data Access \(using the ODBC protocol\)
-
-
 
 </td>
 <td valign="top">
@@ -124,21 +104,15 @@ curl -O https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
 
 SAP HANA \(on-premise\)
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA Smart Data Access \(using the ODBC protocol\)
 
-
-
 </td>
 <td valign="top">
 
 not applicable
-
-
 
 </td>
 </tr>
@@ -147,21 +121,15 @@ not applicable
 
 Generic OData
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA Smart Data Integration \(using the OData protocol for direct connection toSAP Datasphere\)
 
-
-
 </td>
 <td valign="top">
 
 not applicable
-
-
 
 </td>
 </tr>
@@ -170,21 +138,15 @@ not applicable
 
 SAP SuccessFactors for Analytical Dashboards
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA Smart Data Integration\(using the OData protocol for direct connection toSAP Datasphere\)
 
-
-
 </td>
 <td valign="top">
 
 `https://performancemanager4.successfactors.com`
-
-
 
 </td>
 </tr>

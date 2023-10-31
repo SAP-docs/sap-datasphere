@@ -15,14 +15,10 @@ The following object types can be exported and imported via CSN files:
 
 Object Type
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Details
 
 Local Tables
 
-
-
 </td>
 <td valign="top">
 
 The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
-
-
 
 </td>
 </tr>
@@ -46,8 +38,6 @@ The definition of a local table contains the structure of the table only, and do
 <td valign="top">
 
 Remote Tables
-
-
 
 </td>
 <td valign="top">
@@ -66,14 +56,10 @@ The definition of a remote table contains information about its connection. Befo
 
 Views
 
-
-
 </td>
 <td valign="top">
 
 The definition of a view contains the definitions of all its sources and any used data access controls. When you export a view, these objects are exported too.
-
-
 
 </td>
 </tr>
@@ -82,14 +68,10 @@ The definition of a view contains the definitions of all its sources and any use
 
 Data Flows
 
-
-
 </td>
 <td valign="top">
 
 The definition of a data flow contains the definitions of all its sources and its target table. When you export a data flow, these objects are exported too.
-
-
 
 </td>
 </tr>
@@ -98,14 +80,10 @@ The definition of a data flow contains the definitions of all its sources and it
 
 Intelligent Lookups
 
-
-
 </td>
 <td valign="top">
 
 The definition of an intelligent lookup contains the definitions of its input and lookup entities. When you export an intelligent lookup, these entities are exported too.
-
-
 
 </td>
 </tr>
@@ -114,14 +92,10 @@ The definition of an intelligent lookup contains the definitions of its input an
 
 Analytic Models
 
-
-
 </td>
 <td valign="top">
 
 The definition of an analytic model contains the definitions of its fact and dimension sources. When you export an analytic model, these entities are exported too.
-
-
 
 </td>
 </tr>
@@ -130,14 +104,10 @@ The definition of an analytic model contains the definitions of its fact and dim
 
 E/R Models
 
-
-
 </td>
 <td valign="top">
 
 The definitions of all the tables and views in the model are exported. The model itself is not exported.
-
-
 
 </td>
 </tr>
@@ -146,6 +116,6 @@ The definitions of all the tables and views in the model are exported. The model
 > ### Note:  
 > You can also export content from and import content to your space via:
 > 
-> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+> -   The <span class="FPA-icons"></span> \(*Transport*\) app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   The `datasphere` command line interface \(see [Importing and Exporting Objects via the Command Line](importing-and-exporting-objects-via-the-command-line-6494657.md)\).
 

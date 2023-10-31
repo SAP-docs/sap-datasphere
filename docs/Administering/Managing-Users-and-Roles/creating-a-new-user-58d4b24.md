@@ -12,7 +12,7 @@ You can create individual users in SAP Datasphere.
 
 ## Prerequisites
 
-You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the standard roles or custom roles. You can still assign roles after you've created the users.
+You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the global roles and the scoped roles. You can still assign roles after you've created the users.
 
 
 <table>
@@ -21,67 +21,32 @@ You can select one or more roles while you're creating the user. Before getting 
 
 Type of Role
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 More Information
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Standard Roles
-
-
+Global Roles
 
 </td>
 <td valign="top">
 
-Roles delivered with the application. The roles available depend on the licenses included in your subscription.
-
-
+A role that enables users assigned to it to perform actions that are not space-related, typically a role that enables to administrate the tenant. A standard or custom role is considered as global when it includes global privileges.
 
 </td>
 <td valign="top">
 
-[Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md) 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Roles
-
-
-
-</td>
-<td valign="top">
-
-Variations on the standard roles, created to meet your company's needs.
-
-
-
-</td>
-<td valign="top">
-
-[Create a Custom Role](create-a-custom-role-862b88e.md) 
-
-
+[Managing Roles and Privileges](managing-roles-and-privileges-3740dac.md) 
 
 </td>
 </tr>
@@ -90,21 +55,15 @@ Variations on the standard roles, created to meet your company's needs.
 
 Scoped Roles
 
-
-
 </td>
 <td valign="top">
 
-Roles that inherit a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.
-
-
+A role that inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.
 
 </td>
 <td valign="top">
 
 [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)
-
-
 
 </td>
 </tr>
@@ -150,4 +109,7 @@ The method described here assumes that SAP Datasphere is using its default authe
 ## Results
 
 A welcome email including an account activation URL will be sent to the user, so that the user can set an initial password and access the system.
+
+> ### Note:  
+> In addition to the standard workflows, you can also create users via the command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
 

@@ -6,8 +6,23 @@
 
 A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.
 
+This topic contains the following sections:
+
+-   [Introduction to Scoped Roles](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_uhl_gzy_bzb)
+-   [Create a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_z4m_mpj_zyb)
+-   [Assign Spaces to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb)
+-   [Remove Spaces from a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_lbc_gbz_bzb)
+-   [Assign Users to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_u4g_xpj_zyb)
+-   [Remove Users from a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_anc_jbz_bzb)
+
 > ### Caution:  
 > Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
+
+
+
+<a name="loiob5c4e0b6c462414783ebbfc053815521__section_uhl_gzy_bzb"/>
+
+## Introduction to Scoped Roles
 
 A user with the DW Administrator role can create scoped roles.
 
@@ -15,9 +30,11 @@ A user with the DW Administrator role can create scoped roles.
 
 A DW Administrator can assign a role to multiple users in multiple spaces, in a single scoped role. As a consequence, a user can have different roles in different spaces: be a modeler in space Sales Germany and Sales France and a viewer in space Europe Sales.
 
-Users with the DW Space Administrator role can then assign and unassign users to their spaces and the changes are reflected in the scoped roles. See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+Users with the DW Space Administrator role can then assign and unassign users to their spaces and the changes are reflected in the scoped roles. See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 You can create a scoped role based on a standard role or on a custom role. In both cases, the scoped role inherits the privileges from the standard or custom role. You cannot edit the privileges of a scoped role or of a standard role. You can edit the privileges of a custom role. To create a scoped role with a different set of privileges, create a custom role with the set of privileges wanted and then create the scoped role from the custom role. You can then change the privileges of the custom role as needed, which will also change the privileges of all the scoped roles that are based on the custom role.
+
+We recommend that you create scoped roles by logical groups of spaces.
 
 In the following example, the DW administrator begins assigning users to the three Sales spaces by creating the appropriate scoped roles:
 
@@ -32,28 +49,20 @@ She creates three scoped roles based on standard and custom roles and assigns th
 
 Scoped Roles
 
-
-
 </th>
 <th valign="top">
 
 Roles \(Templates\)
-
-
 
 </th>
 <th valign="top">
 
 Users
 
-
-
 </th>
 <th valign="top">
 
 Spaces
-
-
 
 </th>
 </tr>
@@ -62,14 +71,10 @@ Spaces
 
 Sales Modeler
 
-
-
 </td>
 <td valign="top">
 
 DW Modeler standard role
-
-
 
 </td>
 <td valign="top">
@@ -78,8 +83,6 @@ Sally
 
 Bob
 
-
-
 </td>
 <td valign="top">
 
@@ -87,16 +90,12 @@ Sales Europe
 
 Sales US
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Senior Sales Modeler
-
-
 
 </td>
 <td valign="top">
@@ -115,14 +114,10 @@ Custom role “Senior Modeler” based on the DW Modeler standard role + these p
 
 Jim
 
-
-
 </td>
 <td valign="top">
 
 Sales Europe
-
-
 
 </td>
 </tr>
@@ -130,8 +125,6 @@ Sales Europe
 <td valign="top">
 
 Sales Spaces Admin
-
-
 
 </td>
 <td valign="top">
@@ -148,16 +141,12 @@ DW Space Administrator standard role + this privilege \(permission\):
 
 Joan
 
-
-
 </td>
 <td valign="top">
 
 Sales US
 
 Sales Asia
-
-
 
 </td>
 </tr>
@@ -168,6 +157,37 @@ If Bob no longer needs to work in the space Sales US, the DW administrator can u
 As Joan has the role of space administrator for the space Sales US, she can also unassign Bob from Sales US directly in the space page \(in the *Space Management*\). The user assignment change is automatically reflected in the Sales Modeler scoped role.
 
 Later on, Bob needs the space administration privileges for the space Sales Asia. From the page of the space Sales Asia, Joan assigns Bob to the space with the Sales Space Admin scoped role.
+
+
+
+
+
+For more information on scoped roles, see the blog [Preliminary Information SAP Datasphere– Scoped Roles](https://blogs.sap.com/2023/09/13/preliminary-information-sap-datasphere-scoped-roles/) \(published in September 2023\).
+
+
+
+<a name="loiob5c4e0b6c462414783ebbfc053815521__section_z4m_mpj_zyb"/>
+
+## Create a Scoped Role
+
+> ### Note:  
+> In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Manage Scoped Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/85085a35a58a4589bc121fb94efc4876.html "Users with a DW Administrator role (or with equivalent privileges) can create, read, update, and delete scoped roles via the command line.") :arrow_upper_right:\).
+
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\) and click your scoped role to open it.
+2.  Click <span class="FPA-icons"></span> \(Add Role\) and select *Create a Scoped Role*.
+
+    > ### Note:  
+    > As an alternative to creating a scoped role, you can use one of the predefined scoped roles that are delivered with SAP Datasphere in the *Roles* page and directly assign spaces and users to them.
+
+3.  Enter a unique name for the role and select the license type SAP Datasphere.
+
+4.  Click *Create*.
+
+5.  Select the role template, which can either be a standard role template or a custom role and click *Save*.
+
+6.  As your scoped role inherits privileges from the template you've chosen, you cannot edit the privileges, except for the one privilege *Scoped Role User Assignment* \(Manage\). If you're creating a scoped role for space administration purposes, you should select this privilege that allows to manage user assignment in a space.
+
+You can then assign spaces and users to the new scoped role. The spaces and users must be created beforehand and you must assign spaces before assigning users to them.
 
 > ### Note:  
 > If you’re creating a scoped role to assign space administration privileges to certain users in certain spaces, you can either do as follows:
@@ -181,70 +201,78 @@ Later on, Bob needs the space administration privileges for the space Sales Asia
 
 
 
+<a name="loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb"/>
 
+## Assign Spaces to a Scoped Role
 
-> ### Note:  
-> As an alternative to creating a scoped role, you can use one of the predefined scoped roles that are delivered with SAP Datasphere in the *Roles* page and assign spaces and users to them.
+To assign spaces to a scoped role, the spaces must be created beforehand.
 
-> ### Note:  
-> Default behavior when adding a user or a space to an existing scoped role:
-> 
-> -   When you add a user to an existing scoped role, the user is automatically assigned to all the spaces included in the scoped role. This happens when you assign a user to a scoped role from the area <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Users*\).
-> 
-> -   When you add a space to an existing scoped role, all users of the scoped roles are automatically assigned to the space.
-> 
-> 
-> You can change the user assignment within the scoped role.
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\) and click your scoped role to open it.
+2.  Click *Assign Scopes*, select one or more spaces in the dialog *Assign Scopes* and click *Save*.
 
-> ### Note:  
-> See the blog [Preliminary Information SAP Datasphere– Scoped Roles](https://blogs.sap.com/2023/09/13/preliminary-information-sap-datasphere-scoped-roles/) \(published in September 2023\).
+    By default, all users of the scoped role are automatically assigned to the spaces you've just added. You can change this and assign only certain members to certain spaces in the *User Assignment* page of the scoped role.
+
+    > ### Restriction:  
+    > You cannot assign yourself to a scoped role. For this reason, if your own user is included in the scoped role, your user is not automatically assigned to the spaces you've added in the scoped role.
 
 
 
-<a name="loiob5c4e0b6c462414783ebbfc053815521__section_scb_wj1_fxb"/>
 
-## Create a Scoped Role
+<a name="loiob5c4e0b6c462414783ebbfc053815521__section_lbc_gbz_bzb"/>
 
-**Prerequisites**
+## Remove Spaces from a Scoped Role
 
-To assign spaces and users in a scoped role, the spaces and users must be created beforehand.
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\) and click your scoped role to open it.
+2.  Click *\[number\] Scopes*.
 
-1.  Go to <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Roles*\).
+3.  In the *Selected Scopes* area of the dialog *Assign Scopes*, click the cross icon for each space that you want to remove from the role, then click *Save*.
 
-2.  Click <span class="FPA-icons"></span> \(Add Role\) and select *Create a Scoped Role*.
+    All users that were assigned to the spaces you've just removed are automatically removed from the scoped role.
 
-3.  Enter a unique name for the role and select the license type SAP Datasphere.
 
-4.  Click *Create*.
 
-5.  Select the role template, which can either be a standard role template or a custom role and click *Save*.
 
-6.  As your scoped role inherits privileges from the template you've chosen, you cannot edit the privileges, except for the one privilege *Scoped Role User Assignment* \(Manage\). If you're creating a scoped role for space administration purposes, you should select this privilege that allows to manage user assignment in a space.
-7.  To assign spaces, click *Assign Scopes*, select one or more spaces in the dialog *Assign Scopes* and click *Save*.
+<a name="loiob5c4e0b6c462414783ebbfc053815521__section_u4g_xpj_zyb"/>
 
-    > ### Note:  
-    > You must assign spaces before assigning users to them.
+## Assign Users to a Scoped Role
 
-8.  To assign users to one or more spaces, click *User Assignment*. All user assignements are displayed in the *User Assignment* page.
+To assign users to a scoped role, the users must be created beforehand.
 
-    -   To individually select users and assign them to spaces, click the button *Assign Users* or <span class="FPA-icons"></span> \(Add User Assignment\), then *Select Users*. Select one or more users in the wizard *Assign Users* and click *Next Step*. The spaces you've selected in the *Assign Scopes* dialog in the previous step are displayed. Select the one or more spaces to which you want to assign the users. Click *Next Step* and *Save*.
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\) and click your scoped role to open it.
+2.  Click *User Assignment*. All user assignements are displayed in the *User Assignment* page.
+
+    -   To individually select users and assign them to spaces, click <span class="FPA-icons"></span> \(Add User Assignment\), then *Select Users*. Select one or more users in the wizard *Assign Users* and click *Next Step*. By default, the added users are automatically assigned to all the spaces included in the scoped role. If you want to modify this, select the one or more spaces to which you want to assign the users. Click *Next Step* and *Save*.
+
+        > ### Note:  
+        > You can also add a user to a scoped role from the In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Users*\). The user is automatically assigned to all the spaces included in the scoped role.
+
+    -   To assign all users included in the scoped role to one or more spaces. To do so, click <span class="FPA-icons"></span> \(Add User Assignment\), then *All Users of Current Role*. Select one or more spaces in the wizard *Assign Users* and click *Next Step* and *Save*.
 
     -   To assign all users of the tenant to one or more spaces, click <span class="FPA-icons"></span> \(Add User Assignment\), then *All Users*. Select one or more spaces in the wizard *Assign Users* and click *Next Step* and *Save*.
 
 
-    Once you've assigned users to spaces a first time in the scoped role, you can change the user assignment as explained above and also do the following actions:
 
-    -   Assign all users included in the scoped role to one or more spaces. To do so, click <span class="FPA-icons"></span> \(Add User Assignment\), then *All Users of Current Role*. Select one or more spaces in the wizard *Assign Users* and click *Next Step* and *Save*.
+> ### Restriction:  
+> You cannot assign yourself to a scoped role.
 
-    -   Assign additional spaces to the scoped role. To do so, click *Scopes* in the main page of the scoped role and select the spaces you want to include. Be aware that all the users included in the scoped roles are automatically assigned to the added spaces. You can modify the user assignment in the *User Assignment* page.
-
-    -   Unassign users from spaces. To do so, check the relevant rows \(a row corresponding to a combination of a user and a space\) and click the garbage icon in the *User Assignment* page.
-
-
+> ### Restriction:  
+> A user can be assigned to a maximum of 100 spaces across all scoped roles.
 
 > ### Note:  
 > In the *User Assignment* page, you can filter users and spaces to see for example to which spaces and roles a user is assigned to.
 
 > ### Note:  
-> Users with the DW Space Administrator role can then manage the user assignment for their space directly in the page of their space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+> Users with the DW Space Administrator role can then manage the users for their space directly in the page of their space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+
+
+
+<a name="loiob5c4e0b6c462414783ebbfc053815521__section_anc_jbz_bzb"/>
+
+## Remove Users from a Scoped Role
+
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\) and click your scoped role to open it.
+2.  Click *User Assignment*. All user assignements are displayed in the *User Assignment* page.
+
+3.  Check the relevant rows \(a row corresponding to a combination of one user and one space\) and click the garbage icon. The users cannot access the spaces they were previously assigned to in the scoped role.
+
 

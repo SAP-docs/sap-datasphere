@@ -10,7 +10,7 @@ Use an *Amazon Redshift* connection to access data from Amazon Redshift 8.x data
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/519b2dbc588940fb9698745e430c9859.html "To be able to successfully validate and use a connection to an Amazon Redshift database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/519b2dbc588940fb9698745e430c9859.html "To be able to successfully validate and use a connection to an Amazon Redshift database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -47,14 +47,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -63,14 +59,10 @@ Description
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the host name of the Redshift server. 
-
-
 
 </td>
 </tr>
@@ -79,14 +71,10 @@ Enter the host name of the Redshift server.
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Displays the default port 5439. You can overwrite the port, if required. 
-
-
 
 </td>
 </tr>
@@ -95,14 +83,10 @@ Displays the default port 5439. You can overwrite the port, if required.
 
 *Database Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the database to which you want to connect. 
-
-
 
 </td>
 </tr>
@@ -119,14 +103,10 @@ Enter the name of the database to which you want to connect.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -135,14 +115,10 @@ Description
 
 *Use SSL* 
 
-
-
 </td>
 <td valign="top">
 
 Select the SSL certificate verification mode to use when connecting. The default is *false*. 
-
-
 
 </td>
 </tr>
@@ -151,16 +127,12 @@ Select the SSL certificate verification mode to use when connecting. The default
 
 \[if *Use SSL* = *true*\] *Validate Server Certificate*
 
-
-
 </td>
 <td valign="top">
 
 Select if the server certficate should be validated \(*true*\) or not \(*false*\). The default is *false*. 
 
 If you select *true*, then the host name in the certificate must match the host name specified in the *Host* field.
-
-
 
 </td>
 </tr>
@@ -177,14 +149,10 @@ If you select *true*, then the host name in the certificate must match the host 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -193,14 +161,10 @@ Description
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Redshift user that has privileges to connect to the database. 
-
-
 
 </td>
 </tr>
@@ -209,14 +173,10 @@ Enter the name of the Redshift user that has privileges to connect to the databa
 
 *Password* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the password of the Redshift user. 
-
-
 
 </td>
 </tr>

@@ -44,8 +44,9 @@ This graphic shows the role of the analytic model within SAP Datasphere:
         > ### Note:  
         > Once the object is saved, the technical name can no longer be modified.
 
-    3.  You can add a measure. For more information, see [Add Measures](add-measures-e4cc3e8.md).
-    4.  You can add a variable. For more information, see [Add a Variable](add-a-variable-cdd8fa0.md).
+    3.  Optional: Select a package. For more information, see [Packages](../Creating-Finding-Sharing-Objects/packages-a806c67.md).
+    4.  You can add a measure. For more information, see [Add Measures](add-measures-e4cc3e8.md).
+    5.  You can add a variable. For more information, see [Add a Variable](add-a-variable-cdd8fa0.md).
 
 5.  To edit the properties of a the fact source: Click on the fact source on the canvas to show the its properties in the side panel. You can make the following changes here:
 

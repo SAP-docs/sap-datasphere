@@ -26,22 +26,16 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <th valign="top">
 
         Parameter Type
-
-
         
         </th>
         <th valign="top">
 
         Parameter
-
-
         
         </th>
         <th valign="top">
 
         Value
-
-
         
         </th>
         </tr>
@@ -49,22 +43,16 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top" rowspan="2">
         
         Admission Control
-
-
         
         </td>
         <td valign="top">
         
         ADMISSION CONTROL QUEUE CPU THRESHOLD
-
-
         
         </td>
         <td valign="top">
         
         80%
-
-
         
         </td>
         </tr>
@@ -72,15 +60,11 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top">
         
         ADMISSION CONTROL REJECT CPU THRESHOLD
-
-
         
         </td>
         <td valign="top">
         
         99%
-
-
         
         </td>
         </tr>
@@ -88,22 +72,16 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top">
         
         Statement Limits
-
-
         
         </td>
         <td valign="top">
         
         TOTAL STATEMENT THREAD LIMIT
-
-
         
         </td>
         <td valign="top">
         
         80%
-
-
         
         </td>
         </tr>
@@ -120,22 +98,16 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <th valign="top">
 
         Parameter Type
-
-
         
         </th>
         <th valign="top">
 
         Parameter
-
-
         
         </th>
         <th valign="top">
 
         Value
-
-
         
         </th>
         </tr>
@@ -143,22 +115,16 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top" rowspan="2">
         
         Admission Control
-
-
         
         </td>
         <td valign="top">
         
         ADMISSION CONTROL QUEUE CPU THRESHOLD
-
-
         
         </td>
         <td valign="top">
         
         80%
-
-
         
         </td>
         </tr>
@@ -166,15 +132,11 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top">
         
         ADMISSION CONTROL REJECT CPU THRESHOLD
-
-
         
         </td>
         <td valign="top">
         
         99%
-
-
         
         </td>
         </tr>
@@ -182,15 +144,11 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top" rowspan="2">
         
         Statement Limits
-
-
         
         </td>
         <td valign="top">
         
         TOTAL STATEMENT THREAD LIMIT
-
-
         
         </td>
         <td valign="top">
@@ -206,8 +164,6 @@ Use the properties in the *Workload Management* section to prioritize between sp
         > If you’ve set a thread limit percentage \(or number\) that is no longer allowed, it is changed to the default percentage 70% \(or to the number corresponding to 70% of the total number of threads\).
 
         Default: 70%
-
-
         
         </td>
         </tr>
@@ -215,8 +171,6 @@ Use the properties in the *Workload Management* section to prioritize between sp
         <td valign="top">
         
         TOTAL STATEMENT MEMORY LIMIT
-
-
         
         </td>
         <td valign="top">
@@ -229,8 +183,6 @@ Use the properties in the *Workload Management* section to prioritize between sp
         > Be aware that setting this limit too low may cause out-of-memory issues, while excessively high values or 0 may allow the space to consume all available system memory.
 
         Default: 80%
-
-
         
         </td>
         </tr>
@@ -270,7 +222,7 @@ Use the properties in the *Workload Management* section to prioritize between sp
         > 
         > -   **Avoid that tasks which consume a high load of CPU run at the same time**.
         > 
-        >     You can adjust the task schedules in the *Data Integration Monitor*. See [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
+        >     You can adjust the task schedules in the *Data Integration Monitor*. See [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 
 
 4.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.

@@ -12,7 +12,7 @@ For a selected SAP HANA Smart Data Integration Data Provisioning Agent, you can 
 
 ## Context
 
-If you need to perform maintenance activities in a source system, you can pause real-time replication for the corresponding connection. For more information, see [Pause Real-Time Replication for a Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a11f2441b840405c91918de757589097.html "Pause real-time replication for a connection while updating or maintaining the source. After you have finished with your maintenance activities you can restart real-time replication.") :arrow_upper_right:.
+If you need to perform maintenance activities in a source system, you can pause real-time replication for the corresponding connection. For more information, see [Pause Real-Time Replication for a Connection](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a11f2441b840405c91918de757589097.html "Pause real-time replication for a connection while updating or maintaining the source. After you have finished with your maintenance activities you can restart real-time replication.") :arrow_upper_right:.
 
 
 
@@ -30,15 +30,11 @@ If you need to perform maintenance activities in a source system, you can pause 
     <th valign="top">
 
     Real-Time Replication status
-
-
     
     </th>
     <th valign="top">
 
     When do we show the status?
-
-
     
     </th>
     </tr>
@@ -46,15 +42,11 @@ If you need to perform maintenance activities in a source system, you can pause 
     <td valign="top">
     
     *Active*
-
-
     
     </td>
     <td valign="top">
     
     The connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Table Monitor* is *Error*\).
-
-
     
     </td>
     </tr>
@@ -62,15 +54,11 @@ If you need to perform maintenance activities in a source system, you can pause 
     <td valign="top">
     
     *Inactive*
-
-
     
     </td>
     <td valign="top">
     
     The connection type supports real-time replication and for the connection currently there is no table replicating via real-time replication.
-
-
     
     </td>
     </tr>
@@ -78,15 +66,11 @@ If you need to perform maintenance activities in a source system, you can pause 
     <td valign="top">
     
     *Paused*
-
-
     
     </td>
     <td valign="top">
     
     The connection type supports real-time replication and for the connection at least for one table real-time replication is paused.
-
-
     
     </td>
     </tr>

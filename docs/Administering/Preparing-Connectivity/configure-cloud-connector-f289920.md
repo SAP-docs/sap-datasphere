@@ -63,15 +63,11 @@ For more information about the supported use cases depending on the connection t
         <th valign="top">
 
         *Property*
-
-
         
         </th>
         <th valign="top">
 
         *Description*
-
-
         
         </th>
         </tr>
@@ -79,15 +75,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Region*
-
-
         
         </td>
         <td valign="top">
         
         Select your region host from the list.
-
-
         
         </td>
         </tr>
@@ -95,15 +87,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Subaccount*
-
-
         
         </td>
         <td valign="top">
         
         Add your SAP Datasphere subaccount name.
-
-
         
         </td>
         </tr>
@@ -111,15 +99,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Display Name*
-
-
         
         </td>
         <td valign="top">
         
         \[optional\] Add a name for the account.
-
-
         
         </td>
         </tr>
@@ -127,15 +111,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Subaccount User*
-
-
         
         </td>
         <td valign="top">
         
         Add your subaccount \(S-User\) username.
-
-
         
         </td>
         </tr>
@@ -143,15 +123,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Password*
-
-
         
         </td>
         <td valign="top">
         
         Add your S-User password for the SAP Business Technology Platform.
-
-
         
         </td>
         </tr>
@@ -159,8 +135,6 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Location ID*
-
-
         
         </td>
         <td valign="top">
@@ -182,15 +156,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Description*
-
-
         
         </td>
         <td valign="top">
         
         \(Optional\) Add a description for the Cloud Connector.
-
-
         
         </td>
         </tr>
@@ -218,15 +188,11 @@ For more information about the supported use cases depending on the connection t
         <th valign="top">
 
         Connection Type \(Feature used with the Connection\)
-
-
         
         </th>
         <th valign="top">
 
         Protocol
-
-
         
         </th>
         </tr>
@@ -240,8 +206,6 @@ For more information about the supported use cases depending on the connection t
         *SAP ECC* \(data flows\)
 
         *SAP S/4HANA On-Premise* \(data flows, replication flows, model import\)
-
-
         
         </td>
         <td valign="top">
@@ -249,8 +213,6 @@ For more information about the supported use cases depending on the connection t
         RFC
 
         See [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
-
-
         
         </td>
         </tr>
@@ -260,8 +222,6 @@ For more information about the supported use cases depending on the connection t
         *SAP BW/4HANA Model Transfer* \(model import\)
 
         *SAP S/4HANA On-Premise* \(model import\)
-
-
         
         </td>
         <td valign="top">
@@ -269,8 +229,6 @@ For more information about the supported use cases depending on the connection t
         HTTPS
 
         See [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) in the *SAP BTP Connectivity* documentation.
-
-
         
         </td>
         </tr>
@@ -278,8 +236,6 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *SAP HANA* on-premise only \(data flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
-
-
         
         </td>
         <td valign="top">
@@ -288,9 +244,7 @@ For more information about the supported use cases depending on the connection t
 
         See [Configure Access Control \(TCP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/befd4374d33a4833be117d7149b6a103.html) in the *SAP BTP Connectivity* documentation.
 
-        For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
-
-
+        For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
         
         </td>
         </tr>
@@ -298,8 +252,6 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Generic OData* \(data flows\)
-
-
         
         </td>
         <td valign="top">
@@ -307,8 +259,6 @@ For more information about the supported use cases depending on the connection t
         HTTPS
 
         See [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) in the *SAP BTP Connectivity* documentation.
-
-
         
         </td>
         </tr>
@@ -316,8 +266,6 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Microsoft SQL Server* \(data flows\)
-
-
         
         </td>
         <td valign="top">
@@ -325,8 +273,6 @@ For more information about the supported use cases depending on the connection t
         TCP
 
         See [Configure Access Control \(TCP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/befd4374d33a4833be117d7149b6a103.html) in the *SAP BTP Connectivity* documentation.
-
-
         
         </td>
         </tr>
@@ -347,22 +293,16 @@ For more information about the supported use cases depending on the connection t
         <th valign="top">
 
         Connection Type
-
-
         
         </th>
         <th valign="top">
 
         Resource Type \(depending on protocol\)
-
-
         
         </th>
         <th valign="top">
 
         Resources
-
-
         
         </th>
         </tr>
@@ -370,15 +310,11 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *SAP BW/4HANA Model Import*
-
-
         
         </td>
         <td valign="top">
         
         *URL Path* \(for HTTPS\)
-
-
         
         </td>
         <td valign="top">
@@ -402,22 +338,16 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *SAP S/4HANA On-Premise*
-
-
         
         </td>
         <td valign="top">
         
         *URL Path* \(for HTTPS\)
-
-
         
         </td>
         <td valign="top">
         
         `/` 
-
-
         
         </td>
         </tr>
@@ -427,15 +357,11 @@ For more information about the supported use cases depending on the connection t
         *SAP ABAP*
 
         *SAP S/4HANA On-Premise* 
-
-
         
         </td>
         <td valign="top">
         
         *Function Name* \(name of the function module for RFC\)
-
-
         
         </td>
         <td valign="top">
@@ -468,15 +394,11 @@ For more information about the supported use cases depending on the connection t
         *SAP BW*
 
         *SAP ECC*
-
-
         
         </td>
         <td valign="top">
         
         *Function Name* \(name of the function module for RFC\)
-
-
         
         </td>
         <td valign="top">

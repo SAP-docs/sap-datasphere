@@ -17,7 +17,7 @@ Replicating remote tables with larger data volumes without having out-of-memory 
 
 ## Creating Partitions for Your Remote Tables
 
-You can create partitions from the *Remote Table Monitor*– Details screeen:
+You can create partitions from the *Remote Table Monitor*– Details screen:
 
 1.  Click <span class="FPA-icons"></span> of the remote table you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.
@@ -29,22 +29,16 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     <th valign="top">
 
     Comment
-
-
     
     </th>
     </tr>
@@ -52,15 +46,11 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <td valign="top">
     
     *Column*
-
-
     
     </td>
     <td valign="top">
     
     Select the column from which the partition will be defined.
-
-
     
     </td>
     <td valign="top">
@@ -100,15 +90,11 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <td valign="top">
     
     *Parallel Processes* \(SAP HANA smart data integration only\)
-
-
     
     </td>
     <td valign="top">
     
     You can define up to 5 parallel processes.
-
-
     
     </td>
     <td valign="top">
@@ -126,8 +112,6 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     <td valign="top">
     
     *Partitions*
-
-
     
     </td>
     <td valign="top">
@@ -138,8 +122,6 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     > Ranges must not overlap
 
     .
-
-
     
     </td>
     <td valign="top">
@@ -157,7 +139,7 @@ You can create partitions from the *Remote Table Monitor*– Details screeen:
     </tr>
     </table>
     
-4.  Load a new snapshot of data to start the partitioning immediately, or alternatively create a schedule to load new snapshot later \(or wait until your next schedule run will occur\).
+4.  Load a data replication to start the partitioning immediately, or alternatively create a schedule to run the data replication later \(or wait until your next schedule run will occur\).
 
     > ### Note:  
     > Partitions can be updated or deleted using the corresponding menu. But for remote tables connected via SAP HANA smart data access, you must first remove the replicated data before you can delete the partitions.
@@ -175,7 +157,7 @@ Whenever it’s necessary, you can update the existing partitions using the menu
 > For example, you want to include a new year in your partitions, or you need to fine granular the existing partitions.
 
 > ### Note:  
-> Changes will be reflected only after a new data load via a snapshot replication, a scheduled replication or a real-time initial replication.
+> Changes will be reflected only after a new data replication \(snapshot or scheduled\), or a real-time replication.
 
 > ### Restriction:  
 > For remote tables connected via SAP HANA smart data access, you must first remove the replicated data before you can change the partitions.
@@ -203,7 +185,7 @@ Once the partitioning task is completed, messages with information on partitions
 -   In the *Remote Query Monitor* by displaying the SQL Statement: The SELECT statements sent by SAP HANA smart data integration to the remote source are listed. The partition information is part of the WHERE clause of the particular statement. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
 
 > ### Note:  
-> If your defined ranges don’t cover all the data, additional partitions are created in the background . For example, if rows have been inserted or modified since your last snapshot and they now don’t match any of the defined ranges. An additional partition called 'Others' is created to cover this data.
+> If your defined ranges don’t cover all the data, additional partitions are created in the background . For example, if rows have been inserted or modified since your last data replication and they now don’t match any of the defined ranges. An additional partition called 'Others' is created to cover this data.
 
 
 

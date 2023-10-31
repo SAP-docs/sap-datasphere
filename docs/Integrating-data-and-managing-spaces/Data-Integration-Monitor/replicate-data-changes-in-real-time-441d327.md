@@ -71,7 +71,7 @@ Use real-time replication to copy the data changes from your source object in re
 
 3.  Select the remote table that you want to replicate data for.
 
-4.  When changing from scheduled snapshot replication to real-time replication, first select *Table Replication* \> *Remove Replicated Data* to delete the current snapshot from the replica table and delete the schedule.
+4.  When changing from scheduled data replication to real-time replication, you must select *Table Replication* \> *Remove Replicated Data* to delete the current replicated data from the replica table and delete the schedule.
 
 5.  Select *Table Replication* \> *Enable Real-Time Access*.
 

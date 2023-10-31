@@ -15,21 +15,15 @@ When specifying the technical name of an object, bear in mind the following rule
 
 Object Type
 
-
-
 </th>
 <th valign="top">
 
 Rule
 
-
-
 </th>
 <th valign="top">
 
 Maximum Length
-
-
 
 </th>
 </tr>
@@ -37,8 +31,6 @@ Maximum Length
 <td valign="top">
 
 Space
-
-
 
 </td>
 <td valign="top">
@@ -49,14 +41,10 @@ Reserved keywords: SYS, PUBLIC, CREATE, SYSTEM, DBADMIN, MONITORING, PAL\_STEM\_
 
 Also, the keywords that are reserved for the SAP HANA database cannot be used in a space ID. See [Reserved Words](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/28bcd6af3eb6437892719f7c27a8a285.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
 
-
-
 </td>
 <td valign="top">
 
 20
-
-
 
 </td>
 </tr>
@@ -67,21 +55,15 @@ SAP BW bridge instance
 
 Remote table generated during the import of analysis authorizations from a SAP BW or SAP BW∕4HANA system
 
-
-
 </td>
 <td valign="top">
 
 The technical name can contain any characters except for the asterisk \(\*\), colon \(:\), and hash sign \(\#\). Also, tab, carriage return, and newline must not be used, and space must not be used at the start of the name. The maximum length is 50 characters.
 
-
-
 </td>
 <td valign="top">
 
 50
-
-
 
 </td>
 </tr>
@@ -98,21 +80,15 @@ Measure
 
 Analytical measure
 
-
-
 </td>
 <td valign="top">
 
 The technical name can only contain alphanumeric characters and underscores \(\_\). The maximum length is 50 characters.
 
-
-
 </td>
 <td valign="top">
 
 50
-
-
 
 </td>
 </tr>
@@ -121,21 +97,15 @@ The technical name can only contain alphanumeric characters and underscores \(\_
 
 Association
 
-
-
 </td>
 <td valign="top">
 
 The technical name can only contain alphanumeric characters, underscores \(\_\), and dots \(.\). The maximum length is 10.
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -144,21 +114,15 @@ The technical name can only contain alphanumeric characters, underscores \(\_\),
 
 Input parameter
 
-
-
 </td>
 <td valign="top">
 
 The technical name can only contain uppercase letters, numbers, and underscores \(\_\). The maximum length is 50 characters.
 
-
-
 </td>
 <td valign="top">
 
 30
-
-
 
 </td>
 </tr>
@@ -167,21 +131,15 @@ The technical name can only contain uppercase letters, numbers, and underscores 
 
 Database analysis user
 
-
-
 </td>
 <td valign="top">
 
 The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). The maximum length is 41 characters. This suffix is added to the default prefix DWCDBUSER\# to create your full user name. Note that you cannot change the prefix as it is a reserved prefix.
 
-
-
 </td>
 <td valign="top">
 
 31 \(40 minus prefix\)
-
-
 
 </td>
 </tr>
@@ -190,21 +148,15 @@ The user name suffix can only contain uppercase letters, numbers, and underscore
 
 Database user group user
 
-
-
 </td>
 <td valign="top">
 
 The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). The maximum length is 41 characters. This suffix is added to the default prefix DWCDBGROUP\# to create your full user name. Note that you cannot change the prefix as it is a reserved prefix.
 
-
-
 </td>
 <td valign="top">
 
 30 \(40 minus prefix\)
-
-
 
 </td>
 </tr>
@@ -213,21 +165,15 @@ The user name suffix can only contain uppercase letters, numbers, and underscore
 
 Database user \(Open SQL schema\)
 
-
-
 </td>
 <td valign="top">
 
 The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). The maximum length is 41 characters. This suffix is added to the default prefix <space ID\>\# to create your full user name. Note that you cannot change the prefix.
 
-
-
 </td>
 <td valign="top">
 
 40 minus space name \(or 41 minus prefix\)
-
-
 
 </td>
 </tr>
@@ -236,21 +182,15 @@ The user name suffix can only contain uppercase letters, numbers, and underscore
 
 Connection
 
-
-
 </td>
 <td valign="top">
 
 The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name. The maximum length is 40 characters.
 
-
-
 </td>
 <td valign="top">
 
 40
-
-
 
 </td>
 </tr>
@@ -259,21 +199,15 @@ The technical name can only contain alphanumeric characters and underscores \(\_
 
 Data access control
 
-
-
 </td>
 <td valign="top">
 
 The technical name can only contain alphanumeric characters, and underscores \(\_\). The maximum length is 50 characters.
 
-
-
 </td>
 <td valign="top">
 
 50
-
-
 
 </td>
 </tr>
@@ -288,14 +222,10 @@ The technical name by default is synchronized with the business name. While ente
 
 Rule
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -304,14 +234,10 @@ Example
 
 Reserved keywords which are not allowed are removed.
 
-
-
 </td>
 <td valign="top">
 
 " `SYS`" ** \> ** ""
-
-
 
 </td>
 </tr>
@@ -320,14 +246,10 @@ Reserved keywords which are not allowed are removed.
 
 Leading underscores \(\_\) are removed.
 
-
-
 </td>
 <td valign="top">
 
 "`_NAME`" ** \> ** "`NAME`"
-
-
 
 </td>
 </tr>
@@ -336,14 +258,10 @@ Leading underscores \(\_\) are removed.
 
 Leading and trailing whitespaces \(" "\) are removed.
 
-
-
 </td>
 <td valign="top">
 
 "`NAME` " ** \> ** "`NAME`"
-
-
 
 </td>
 </tr>
@@ -352,14 +270,10 @@ Leading and trailing whitespaces \(" "\) are removed.
 
 Whitespaces \(" "\) within a name are replaced with underscores \(\_\).
 
-
-
 </td>
 <td valign="top">
 
 "`NA ME`" ** \> ** "`NA_ME`"
-
-
 
 </td>
 </tr>
@@ -368,14 +282,10 @@ Whitespaces \(" "\) within a name are replaced with underscores \(\_\).
 
 Characters with diacritical signs are replaced with their basic character.
 
-
-
 </td>
 <td valign="top">
 
 "`Namé`" ** \> ** "`Name`"
-
-
 
 </td>
 </tr>
@@ -384,14 +294,10 @@ Characters with diacritical signs are replaced with their basic character.
 
 Non-alphanumeric characters are removed.
 
-
-
 </td>
 <td valign="top">
 
 "`N$ME`" ** \> ** "`NME`"
-
-
 
 </td>
 </tr>
@@ -400,14 +306,10 @@ Non-alphanumeric characters are removed.
 
 Dots \(.\) and double quotes \("\) are replaced with underscores \(\_\).
 
-
-
 </td>
 <td valign="top">
 
 "`N.AM"E`" ** \> ** "`N_AM_E`"
-
-
 
 </td>
 </tr>
@@ -416,14 +318,10 @@ Dots \(.\) and double quotes \("\) are replaced with underscores \(\_\).
 
 Leading dots \(.\) are removed.
 
-
-
 </td>
 <td valign="top">
 
 "`.NAME`" ** \> ** "`NAME`"
-
-
 
 </td>
 </tr>

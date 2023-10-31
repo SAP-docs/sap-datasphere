@@ -19,14 +19,10 @@ To limit the search results, you can combine different filters with different op
 
 Free
 
-
-
 </td>
 <td valign="top">
 
 Data products that are free of charge are provided without any payment. This could be public domain data or data provided by a commercial data provider as give-away data, for example. The data can be activated after accepting the data specific terms of use.
-
-
 
 </td>
 </tr>
@@ -34,8 +30,6 @@ Data products that are free of charge are provided without any payment. This cou
 <td valign="top">
 
 With License Key
-
-
 
 </td>
 <td valign="top">
@@ -58,14 +52,10 @@ License keys can be used:
 
 On Request
 
-
-
 </td>
 <td valign="top">
 
 To activate a data product, you need to send a request to the data provider. You can do this directly through the user interface where an email template is created. You can edit the predefined email and then send it to the provider who then gets in touch with you.
-
-
 
 </td>
 </tr>
@@ -86,14 +76,10 @@ To activate a data product, you need to send a request to the data provider. You
 
 Direct
 
-
-
 </td>
 <td valign="top">
 
 The data is copied directly into the space you've selected. After activating the product, a protocol is created in *My Data Products* → *Delivery Tracking*. Once the data is available, you can use the data as any other data in SAP Datasphere, for example, by using the data as a source in the *Data Builder*. The data also becomes visible in the *Explorer*.
-
-
 
 </td>
 </tr>
@@ -102,14 +88,10 @@ The data is copied directly into the space you've selected. After activating the
 
 Open SQL
 
-
-
 </td>
 <td valign="top">
 
 You need to create an OpenSQL Schema in the Space Management and share the details with the Data Provider. The Data Provider is then able to push the data directly into your tenant. Once data is delivered into the OpenSQL Schema by the data provider, it is then accessible through the *Data Builder* and the provided schema appears as a source. Inside this schema, you'll find the data as views or tables.
-
-
 
 </td>
 </tr>
@@ -118,14 +100,10 @@ You need to create an OpenSQL Schema in the Space Management and share the detai
 
 External Delivery
 
-
-
 </td>
 <td valign="top">
 
 The data is delivered by sharing files outside SAP Datasphere.
-
-
 
 </td>
 </tr>
@@ -154,14 +132,10 @@ Data providers tag their products with related categories and keywords to make y
 
 Full
 
-
-
 </td>
 <td valign="top">
 
 You can receive update of data. Updated data are available under *My Data Products*.
-
-
 
 </td>
 </tr>
@@ -170,14 +144,10 @@ You can receive update of data. Updated data are available under *My Data Produc
 
 One Time
 
-
-
 </td>
 <td valign="top">
 
 Only one data delivery is provided without any additional corrections or updates.
-
-
 
 </td>
 </tr>
@@ -222,14 +192,10 @@ Data providers tag their products with related categories and keywords to make y
 
 List of all available data providers
 
-
-
 </td>
 <td valign="top">
 
 Choose which data providers and their products you like to include in the search result.
-
-
 
 </td>
 </tr>
@@ -273,8 +239,6 @@ Data Providers can tag one or multiple SAP applications to which their data prod
 <td valign="top">
 
 List of all available data product sizes: S, M, L, XL, XXL, XXXL
-
-
 
 </td>
 <td valign="top">

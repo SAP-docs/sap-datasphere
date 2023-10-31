@@ -76,22 +76,16 @@ For importing queries, there are certain restrictions:
     <th valign="top">
 
     Source Modeling Pattern
-
-
     
     </th>
     <th valign="top">
 
     Business Builder Objects Created
-
-
     
     </th>
     <th valign="top">
 
     Data Builder Objects Created
-
-
     
     </th>
     </tr>
@@ -99,8 +93,6 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     `ANALYTICAL_QUERY`
-
-
     
     </td>
     <td valign="top">
@@ -132,8 +124,6 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     `ANALYTICAL_CUBE`
-
-
     
     </td>
     <td valign="top">
@@ -166,8 +156,6 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     `ANALYTICAL_DIMENSION`
-
-
     
     </td>
     <td valign="top">
@@ -200,15 +188,11 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     `LANGUAGE_DEPENDENT_TEXT`
-
-
     
     </td>
     <td valign="top">
     
     \(none\)
-
-
     
     </td>
     <td valign="top">
@@ -231,15 +215,11 @@ For importing queries, there are certain restrictions:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -247,15 +227,11 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Generated from the *Label* value.
-
-
     
     </td>
     </tr>
@@ -263,15 +239,11 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Generated from the *ID* value as: <code>remote.<i class="varname">&lt;connection_name&gt;</i>.<i class="varname">&lt;ID&gt;</i></code>.
-
-
     
     </td>
     </tr>
@@ -279,8 +251,6 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     Import Status
-
-
     
     </td>
     <td valign="top">

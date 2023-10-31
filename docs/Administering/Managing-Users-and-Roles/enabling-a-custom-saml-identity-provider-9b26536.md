@@ -69,15 +69,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <th valign="top">
 
     Attribute Name
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -85,15 +81,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     email
-
-
     
     </td>
     <td valign="top">
     
     Required if your `NameID` is "email".
-
-
     
     </td>
     </tr>
@@ -101,15 +93,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     Groups
-
-
     
     </td>
     <td valign="top">
     
     Required. The value must be set to "sac", even in case of SAP Datasphere. The Groups attribute is a custom attribute and must be added if it does not exist yet. You need to contact your administrator to get the path where the mapping needs to be changed.
-
-
     
     </td>
     </tr>
@@ -117,15 +105,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     familyName
-
-
     
     </td>
     <td valign="top">
     
     Optional. `familyName` is the user's last name \(surname\).
-
-
     
     </td>
     </tr>
@@ -133,15 +117,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     displayName
-
-
     
     </td>
     <td valign="top">
     
     Optional.
-
-
     
     </td>
     </tr>
@@ -149,15 +129,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     functionalArea
-
-
     
     </td>
     <td valign="top">
     
     Optional.
-
-
     
     </td>
     </tr>
@@ -165,15 +141,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     givenName
-
-
     
     </td>
     <td valign="top">
     
     Optional. `givenName` is the user's first name.
-
-
     
     </td>
     </tr>
@@ -181,15 +153,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     preferredLanguage
-
-
     
     </td>
     <td valign="top">
     
     Optional.
-
-
     
     </td>
     </tr>
@@ -197,15 +165,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     custom1
-
-
     
     </td>
     <td valign="top">
     
     Optional. For SAML role assignment.
-
-
     
     </td>
     </tr>
@@ -213,15 +177,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     custom2
-
-
     
     </td>
     <td valign="top">
     
     Optional. For SAML role assignment.
-
-
     
     </td>
     </tr>
@@ -229,15 +189,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     custom3
-
-
     
     </td>
     <td valign="top">
     
     Optional. For SAML role assignment.
-
-
     
     </td>
     </tr>
@@ -245,15 +201,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     custom4
-
-
     
     </td>
     <td valign="top">
     
     Optional. For SAML role assignment.
-
-
     
     </td>
     </tr>
@@ -261,15 +213,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
     <td valign="top">
     
     custom5
-
-
     
     </td>
     <td valign="top">
     
     Optional. For SAML role assignment.
-
-
     
     </td>
     </tr>

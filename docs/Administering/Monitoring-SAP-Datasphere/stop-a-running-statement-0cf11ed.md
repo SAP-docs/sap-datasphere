@@ -23,21 +23,15 @@ Complete the parameters as follows:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Value
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -46,21 +40,15 @@ Description
 
 ACTION
 
-
-
 </td>
 <td valign="top">
 
 CANCEL
 
-
-
 </td>
 <td valign="top">
 
 Enter CANCEL to run the statement ALTER SYSTEM CANCEL \[WORK IN\] SESSION \(see [ALTER SYSTEM CANCEL \[WORK IN\] SESSION Statement \(System Management\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c1d3f60099654ecfb3fe36ac93c121bb/20d0eb287519101498c4ecb8114cab17.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.\)
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ Enter CANCEL to run the statement ALTER SYSTEM CANCEL \[WORK IN\] SESSION \(see 
 
 DISCONNECT
 
-
-
 </td>
 <td valign="top">
 
 Enter DISCONNECT to run the statement ALTER SYSTEM DISCONNECT SESSION \(see [ALTER SYSTEM DISCONNECT SESSION Statement \(System Management\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c1d3f60099654ecfb3fe36ac93c121bb/20d1524e751910148706e0aab4063a0f.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.\)
-
-
 
 </td>
 </tr>
@@ -85,21 +69,15 @@ Enter DISCONNECT to run the statement ALTER SYSTEM DISCONNECT SESSION \(see [ALT
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Enter the ID of the connection to the database, which corresponds to the statement that you want to stop.
-
-
 
 </td>
 </tr>

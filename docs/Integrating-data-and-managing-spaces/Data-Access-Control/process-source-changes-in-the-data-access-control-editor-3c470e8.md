@@ -38,15 +38,11 @@ Your object's status may be updated when changes to one or more of its sources a
     <th valign="top">
 
     Change
-
-
     
     </th>
     <th valign="top">
 
     Impact in Dependent Data Access Controls
-
-
     
     </th>
     </tr>
@@ -54,15 +50,11 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Add Column
-
-
     
     </td>
     <td valign="top">
     
     Adding columns to the permissions entity has no impact on the data access control.
-
-
     
     </td>
     </tr>
@@ -70,15 +62,11 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Change Business Name
-
-
     
     </td>
     <td valign="top">
     
     Modifying the business name of the permissions entity or any of its columns has no impact on the data access control
-
-
     
     </td>
     </tr>
@@ -86,15 +74,11 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Change Column Data Type
-
-
     
     </td>
     <td valign="top">
     
     Source column data type changes are not allowed for columns that are used by a data access control.
-
-
     
     </td>
     </tr>
@@ -102,8 +86,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Delete Column
-
-
     
     </td>
     <td valign="top">

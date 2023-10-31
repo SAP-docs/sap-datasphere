@@ -38,15 +38,11 @@ Unmatched results are input records that are not matched with any lookup record.
     <th valign="top">
 
     Tools
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -54,15 +50,11 @@ Unmatched results are input records that are not matched with any lookup record.
     <td valign="top">
     
     <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
-
-
     
     </td>
     <td valign="top">
     
     Collapse or expand all pairing groups.
-
-
     
     </td>
     </tr>
@@ -70,15 +62,11 @@ Unmatched results are input records that are not matched with any lookup record.
     <td valign="top">
     
     Rows per Pairing Group
-
-
     
     </td>
     <td valign="top">
     
     Specify the maximum number of rows to display for each pairing group.
-
-
     
     </td>
     </tr>
@@ -86,15 +74,11 @@ Unmatched results are input records that are not matched with any lookup record.
     <td valign="top">
     
     Match
-
-
     
     </td>
     <td valign="top">
     
     Match all the records in the selected pairing group to the selected lookup record.
-
-
     
     </td>
     </tr>
@@ -102,8 +86,6 @@ Unmatched results are input records that are not matched with any lookup record.
     <td valign="top">
     
     <span class="FPA-icons"></span> \(Settings\)
-
-
     
     </td>
     <td valign="top">
@@ -111,8 +93,6 @@ Unmatched results are input records that are not matched with any lookup record.
     Select and reorder table columns. 
 
     In the right-hand lookup records table *View Settings* dialog, you can use the *Sort* and *Filter* tabs to sort on and filter by values in multiple columns.
-
-
     
     </td>
     </tr>

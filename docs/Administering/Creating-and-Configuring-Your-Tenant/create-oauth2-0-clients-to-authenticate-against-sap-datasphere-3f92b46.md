@@ -18,7 +18,7 @@ Users that have access to an OAuth client can:
     > ### Note:  
     > Consuming exposed data in third-party clients, tools, and apps via an OData service requires a three-legged OAuth2.0 flow with type `authorization_code`. Users must manually authenticate against the configured IDP in order to generate the authorization code before continuing with the remaining OAuth2.0 steps.
 
--   [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:
+-   [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:
 
 
 

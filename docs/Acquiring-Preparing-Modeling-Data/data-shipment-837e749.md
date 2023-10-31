@@ -19,14 +19,10 @@ The delivery of data products is either managed by Data Marketplace \(direct\) o
 
 Data Shipment
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Description
 
 Integrated Delivery
 
-
-
 </td>
 <td valign="top">
 
 The data is copied directly into the space you've selected. After activating the product, a protocol is created in *My Data Products* → *Delivery Tracking*. Once the data is available, you can use the data as any other data in SAP Datasphere, for example, by using the data as a source in the *Data Builder*. The data also becomes visible in the *Explorer*.
-
-
 
 </td>
 </tr>
@@ -61,14 +53,10 @@ The data is copied directly into the space you've selected. After activating the
 
  
 
-
-
 </th>
 <th valign="top">
 
  
-
-
 
 </th>
 </tr>
@@ -77,14 +65,10 @@ The data is copied directly into the space you've selected. After activating the
 
 Open SQL
 
-
-
 </td>
 <td valign="top">
 
 You need to create an OpenSQL Schema in the Space Management and share the details with the Data Provider. The Data Provider is then able to push the data directly into your tenant. Once data is delivered into the OpenSQL Schema by the data provider, it is then accessible through the *Data Builder* and the provided schema appears as a source. Inside this schema, you'll find the data as views or tables.
-
-
 
 </td>
 </tr>
@@ -93,14 +77,10 @@ You need to create an OpenSQL Schema in the Space Management and share the detai
 
 External Delivery
 
-
-
 </td>
 <td valign="top">
 
 The data is delivered by sharing files outside SAP Datasphere.
-
-
 
 </td>
 </tr>

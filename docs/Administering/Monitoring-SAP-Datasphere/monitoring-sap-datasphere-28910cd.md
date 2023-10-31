@@ -80,14 +80,10 @@ For each of the key indicator widgets listed below, you can see detailed informa
 
 Widget
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -98,14 +94,10 @@ Description
 
 *Last 24 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of tasks that have failed in the last 24 hours with a trend icon \(up or down arrow\) indicating if there are more or less failed tasks than the day before.
-
-
 
 </td>
 </tr>
@@ -116,14 +108,10 @@ Shows the number of tasks that have failed in the last 24 hours with a trend ico
 
 *Last 24 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of out-of-memory errors that have occurred in tasks and statements in the last 24 hours.
-
-
 
 </td>
 </tr>
@@ -134,16 +122,12 @@ Shows the number of out-of-memory errors that have occurred in tasks and stateme
 
 *Last 7 Days*
 
-
-
 </td>
 <td valign="top">
 
 Shows the schemas in which out-of-memory errors have occurred in the last 7 days because the statement limits have been exceeded.
 
 You can set the statement limits for a space in the *Workload Management* area of a space.
-
-
 
 </td>
 </tr>
@@ -154,14 +138,10 @@ You can set the statement limits for a space in the *Workload Management* area o
 
 *Last 7 Days*
 
-
-
 </td>
 <td valign="top">
 
 Shows the out-of-memory errors that are related to SAP HANA multi-dimensional services \(MDS\) requests, which is used for example for SAP Analytics Cloud consumption.
-
-
 
 </td>
 </tr>
@@ -172,14 +152,10 @@ Shows the out-of-memory errors that are related to SAP HANA multi-dimensional se
 
 *Last 7 Days*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of failed tasks by day for the last 7 days.
-
-
 
 </td>
 </tr>
@@ -190,14 +166,10 @@ Shows the number of failed tasks by day for the last 7 days.
 
 *Last 7 Days*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of out-of-memory errors that have occurred in tasks and statements, by day for the last 7 days.
-
-
 
 </td>
 </tr>
@@ -207,16 +179,12 @@ Shows the number of out-of-memory errors that have occurred in tasks and stateme
 *Top 5 Tasks by Run Duration*
 
 *Last 24 Hours*
-
-
 
 </td>
 <td valign="top">
 
 Shows the 5 tasks whose run duration time was the longest in the last 24 hours.
 
-
-
 </td>
 </tr>
 <tr>
@@ -226,14 +194,10 @@ Shows the 5 tasks whose run duration time was the longest in the last 24 hours.
 
 *Last 48 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the 5 tasks whose run duration time was the longest in the last 48 hours.
-
-
 
 </td>
 </tr>
@@ -243,16 +207,12 @@ Shows the 5 tasks whose run duration time was the longest in the last 48 hours.
 *Top 5 Tasks by Memory Consumption*
 
 *Last 24 Hours*
-
-
 
 </td>
 <td valign="top">
 
 Shows the 5 tasks whose memory consumption was the highest in the last 24 hours.
 
-
-
 </td>
 </tr>
 <tr>
@@ -262,14 +222,10 @@ Shows the 5 tasks whose memory consumption was the highest in the last 24 hours.
 
 *Last 48 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the 5 tasks whose memory consumption was the highest in the last 48 hours.
-
-
 
 </td>
 </tr>
@@ -280,14 +236,10 @@ Shows the 5 tasks whose memory consumption was the highest in the last 48 hours.
 
 *Last 24 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the 5 statements whose memory consumption was the highest in the last 24 hours.
-
-
 
 </td>
 </tr>
@@ -298,14 +250,10 @@ Shows the 5 statements whose memory consumption was the highest in the last 24 h
 
 *Last 48 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the 5 statements whose memory consumption was the highest in the last 48 hours.
-
-
 
 </td>
 </tr>
@@ -316,14 +264,10 @@ Shows the 5 statements whose memory consumption was the highest in the last 48 h
 
 *Last 24 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for example in SAP Analytics Cloud consumption\), whose memory consumption is the highest.
-
-
 
 </td>
 </tr>
@@ -333,16 +277,12 @@ Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for exam
 *Admission Control Rejection Events*
 
 *Last 24 Hours*
-
-
 
 </td>
 <td valign="top">
 
 Shows the number of statements that have been rejected in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less rejected statements than the day before.
 
-
-
 </td>
 </tr>
 <tr>
@@ -352,14 +292,10 @@ Shows the number of statements that have been rejected in the last 24 hours beca
 
 *Last 24 Hours*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of statements that have been queued in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less queued statements than the day before.
-
-
 
 </td>
 </tr>
@@ -370,14 +306,10 @@ Shows the number of statements that have been queued in the last 24 hours becaus
 
 *Last 7 Days*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of statements that have been rejected in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
-
-
 
 </td>
 </tr>
@@ -388,14 +320,10 @@ Shows the number of statements that have been rejected in the last 7 days becaus
 
 *Last 7 Days*
 
-
-
 </td>
 <td valign="top">
 
 Shows the number of statements that have been queued in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
-
-
 
 </td>
 </tr>
@@ -405,8 +333,6 @@ Shows the number of statements that have been queued in the last 7 days because 
 *Top 5 Admission Control Rejection Events by Space*
 
 *Last 7 Days*
-
-
 
 </td>
 <td valign="top">
@@ -426,8 +352,6 @@ Shows the 5 spaces with the highest number of rejected statements in the last 24
 *Top 5 Admission Control Queuing Events by Space*
 
 *Last 7 Days*
-
-
 
 </td>
 <td valign="top">
@@ -463,14 +387,10 @@ In *Logs* \> *Tasks*, the table shows the following information:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -479,14 +399,10 @@ Description
 
 *Start Time*
 
-
-
 </td>
 <td valign="top">
 
 Shows at what time \(date and hour\) the task has started to run.
-
-
 
 </td>
 </tr>
@@ -495,14 +411,10 @@ Shows at what time \(date and hour\) the task has started to run.
 
 *Duration \(sec\)*
 
-
-
 </td>
 <td valign="top">
 
 Shows how many seconds the task has run.
-
-
 
 </td>
 </tr>
@@ -511,14 +423,10 @@ Shows how many seconds the task has run.
 
 *Object Type*
 
-
-
 </td>
 <td valign="top">
 
 Shows the type of object that was run in the task. For example: view, remote table, data flow.
-
-
 
 </td>
 </tr>
@@ -527,14 +435,10 @@ Shows the type of object that was run in the task. For example: view, remote tab
 
 *Activity*
 
-
-
 </td>
 <td valign="top">
 
 Shows the action that was performed on the object. For example: persist, replicate, execute. You can click on the activity name, which takes you to the *Data Integration Monitor*.
-
-
 
 </td>
 </tr>
@@ -543,14 +447,10 @@ Shows the action that was performed on the object. For example: persist, replica
 
 *Space Name*
 
-
-
 </td>
 <td valign="top">
 
 Shows the name of the space in which the task is run.
-
-
 
 </td>
 </tr>
@@ -559,14 +459,10 @@ Shows the name of the space in which the task is run.
 
 *Object Name*
 
-
-
 </td>
 <td valign="top">
 
 Shows the name of the object. You can click on the object name, which opens the object in the *Data Builder*.
-
-
 
 </td>
 </tr>
@@ -574,8 +470,6 @@ Shows the name of the object. You can click on the object name, which opens the 
 <td valign="top">
 
 *SAP HANA Peak Memory*
-
-
 
 </td>
 <td valign="top">
@@ -600,8 +494,6 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 <td valign="top">
 
 *SAP HANA Peak CPU*
-
-
 
 </td>
 <td valign="top">
@@ -630,8 +522,6 @@ Shows the maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 
 *Records*
 
-
-
 </td>
 <td valign="top">
 
@@ -649,14 +539,10 @@ Shows the number of records of the target table after the task has finished runn
 
 *SAP HANA Used Memory*
 
-
-
 </td>
 <td valign="top">
 
 Shows the amount of memory \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
-
-
 
 </td>
 </tr>
@@ -665,14 +551,10 @@ Shows the amount of memory \(in MiB\) that is used by the target table in SAP HA
 
 *SAP HANA Used Disk*
 
-
-
 </td>
 <td valign="top">
 
 Shows the amount of disk space \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
-
-
 
 </td>
 </tr>
@@ -681,14 +563,10 @@ Shows the amount of disk space \(in MiB\) that is used by the target table in SA
 
 *Status*
 
-
-
 </td>
 <td valign="top">
 
 Shows the status of the task: completed, failed, running.
-
-
 
 </td>
 </tr>
@@ -697,14 +575,10 @@ Shows the status of the task: completed, failed, running.
 
 *Substatus*
 
-
-
 </td>
 <td valign="top">
 
-For tasks with the status “failed”, shows the substatus and a message describing the cause of failure. For more information about failed task substatuses, see [Navigating in the Monitor Tabs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d4af7620a214872a4dc5286f5e9e997.html "Selecting a specific monitor tab from Data Integration Monitor (  ) displays a tabular list of the scheduled tasks associated with the selected monitor type: remote table replication, view persistency, data flow, or task chain runs. From the tabular display, you can click > at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run.") :arrow_upper_right:.
-
-
+For tasks with the status “failed”, shows the substatus and a message describing the cause of failure. For more information about failed task substatuses, see [Navigating in the Monitor Tabs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5d4af7620a214872a4dc5286f5e9e997.html "Selecting a specific monitor tab from Data Integration Monitor (  ) displays a tabular list of the scheduled tasks associated with the selected monitor type . From the tabular display, you can click > at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -713,14 +587,10 @@ For tasks with the status “failed”, shows the substatus and a message descri
 
 *User*
 
-
-
 </td>
 <td valign="top">
 
 Shows the user who has run the task.
-
-
 
 </td>
 </tr>
@@ -729,14 +599,10 @@ Shows the user who has run the task.
 
 *Target Table*
 
-
-
 </td>
 <td valign="top">
 
 Shows the SAP HANA database technical name of the target table.
-
-
 
 </td>
 </tr>
@@ -744,8 +610,6 @@ Shows the SAP HANA database technical name of the target table.
 <td valign="top">
 
 *Statements*
-
-
 
 </td>
 <td valign="top">
@@ -766,14 +630,10 @@ Shows a link you can click to view all the statements of the task in the *Statem
 
 *Out-of-Memory*
 
-
-
 </td>
 <td valign="top">
 
 Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not \("No" is then displayed\).
-
-
 
 </td>
 </tr>
@@ -782,14 +642,10 @@ Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not 
 
 *Task Log ID*
 
-
-
 </td>
 <td valign="top">
 
 Shows the identifier of the run task.
-
-
 
 </td>
 </tr>
@@ -818,14 +674,10 @@ In *Logs* \> *Statements*, the table shows the following information, depending 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -834,14 +686,10 @@ Description
 
 *Start Time*
 
-
-
 </td>
 <td valign="top">
 
 Shows at what time \(date and hour\) the statement has started to run.
-
-
 
 </td>
 </tr>
@@ -850,14 +698,10 @@ Shows at what time \(date and hour\) the statement has started to run.
 
 *Duration \(ms\)*
 
-
-
 </td>
 <td valign="top">
 
 Shows how many milliseconds the statement has run.
-
-
 
 </td>
 </tr>
@@ -865,8 +709,6 @@ Shows how many milliseconds the statement has run.
 <td valign="top">
 
 *Object Type*
-
-
 
 </td>
 <td valign="top">
@@ -906,14 +748,10 @@ Shows how many milliseconds the statement has run.
 
 *Activity*
 
-
-
 </td>
 <td valign="top">
 
 Shows the action that was performed. For example: update, compile, select.
-
-
 
 </td>
 </tr>
@@ -922,14 +760,10 @@ Shows the action that was performed. For example: update, compile, select.
 
 *Object Name*
 
-
-
 </td>
 <td valign="top">
 
 If the statement is related to a task, it shows the name of the object for which the statement was run.
-
-
 
 </td>
 </tr>
@@ -938,14 +772,10 @@ If the statement is related to a task, it shows the name of the object for which
 
 *Schema Name* 
 
-
-
 </td>
 <td valign="top">
 
 Shows the name of the schema in which the statement is run.
-
-
 
 </td>
 </tr>
@@ -953,8 +783,6 @@ Shows the name of the schema in which the statement is run.
 <td valign="top">
 
 *SAP HANA Peak Memory*
-
-
 
 </td>
 <td valign="top">
@@ -975,8 +803,6 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 
 *SAP HANA Peak CPU*
 
-
-
 </td>
 <td valign="top">
 
@@ -996,8 +822,6 @@ Shows the maximum amount of CPU time \(in ms\) the statement has used in SAP HAN
 
 *Statement Details*
 
-
-
 </td>
 <td valign="top">
 
@@ -1015,14 +839,10 @@ Shows the *More* link that you can click to view the complete SQL statement.
 
 *Parameters*
 
-
-
 </td>
 <td valign="top">
 
 Shows the values of the parameters of the statement that are indicated by the character "?" in the popup that opens when clicking *More* in the *Statement Details* column.
-
-
 
 </td>
 </tr>
@@ -1031,14 +851,10 @@ Shows the values of the parameters of the statement that are indicated by the ch
 
 *Out-of-memory*
 
-
-
 </td>
 <td valign="top">
 
 Shows if the statement has an out-of-memory error \("Yes" is then displayed\) or not \("No" is then displayed\).
-
-
 
 </td>
 </tr>
@@ -1047,14 +863,10 @@ Shows if the statement has an out-of-memory error \("Yes" is then displayed\) or
 
 *Task Log ID*
 
-
-
 </td>
 <td valign="top">
 
 If the statement is related to a task, it shows the identifier of the task within a link, which takes you to the *Tasks* tab filtered on this task.
-
-
 
 </td>
 </tr>
@@ -1063,14 +875,10 @@ If the statement is related to a task, it shows the identifier of the task withi
 
 *Error Code*
 
-
-
 </td>
 <td valign="top">
 
 If the statement has failed, it shows the numeric code of the SQL error. See [SQL Error Codes](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/20a78d3275191014b41bae7c4a46d835.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
-
-
 
 </td>
 </tr>
@@ -1079,14 +887,10 @@ If the statement has failed, it shows the numeric code of the SQL error. See [SQ
 
 *Error Message*
 
-
-
 </td>
 <td valign="top">
 
 If the statement has failed, it shows a description of the SQL error.
-
-
 
 </td>
 </tr>
@@ -1095,14 +899,10 @@ If the statement has failed, it shows a description of the SQL error.
 
 *Workload Class*
 
-
-
 </td>
 <td valign="top">
 
 If the statement has an out-of-memory error, it shows the name of the workload class whose limit has been exceeded.
-
-
 
 </td>
 </tr>

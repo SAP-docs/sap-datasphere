@@ -12,7 +12,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Prerequisites
 
--   The DW Modeler role is required to create task chains and the additional DW Integrator role is required to set up email notification for completion of executed task chains. See [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: for more information. In addition to these two role privileges, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members. See [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
+-   The DW Modeler role is required to create task chains and the additional DW Integrator role is required to set up email notification for completion of executed task chains. See [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: for more information. In addition to these two role privileges, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members. See [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
 
 -   Objects must have been already deployed, so that they can be added to the task chain. Task chains must also be deployed to allow selection of tenant users or specify email addresses for notification of task chain completion.
 
@@ -37,7 +37,7 @@ Tasks chain scheduling may include execution of Remote Table Replication, View P
 
 After deploying a task chain, you can add tenant users or email addresses to notify individuals when task chain runs are completed.
 
-You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 > ### Note:  
 > Exporting and importing task chains via the <span class="FPA-icons"></span> \(*Transport*\) app may not be supported for SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
@@ -89,15 +89,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <th valign="top">
 
     Properties
-
-
     
     </th>
     <th valign="top">
 
     Comments
-
-
     
     </th>
     </tr>
@@ -105,15 +101,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the task chain
-
-
     
     </td>
     </tr>
@@ -121,15 +113,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Technical name of the task chain
-
-
     
     </td>
     </tr>
@@ -137,15 +125,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
     
     Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
-
-
     
     </td>
     </tr>
@@ -153,15 +137,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Objects in the task chain
-
-
     
     </td>
     <td valign="top">
     
     Displays all objects that have been added to the task chain
-
-
     
     </td>
     </tr>
@@ -169,15 +149,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Run Status
-
-
     
     </td>
     <td valign="top">
     
     Displays the current run status of the task chain: Not run yet, running, failed, or completed.
-
-
     
     </td>
     </tr>
@@ -185,15 +161,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Email Notifications
-
-
     
     </td>
     <td valign="top">
     
     Set up email notification for task chain run completion.
-
-
     
     </td>
     </tr>
@@ -215,15 +187,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <th valign="top">
 
     Properties
-
-
     
     </th>
     <th valign="top">
 
     Comments
-
-
     
     </th>
     </tr>
@@ -231,15 +199,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Name of the object
-
-
     
     </td>
     </tr>
@@ -247,15 +211,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Technical name of the object
-
-
     
     </td>
     </tr>
@@ -263,15 +223,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Object Type
-
-
     
     </td>
     <td valign="top">
     
     A remote table, view, intelligent lookup, data flow, or transformation flow
-
-
     
     </td>
     </tr>
@@ -279,8 +235,6 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Activity
-
-
     
     </td>
     <td valign="top">
@@ -302,15 +256,11 @@ A basic or linear task chain allows you to define a group or series of tasks and
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
     
     Deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
-
-
     
     </td>
     </tr>
@@ -325,7 +275,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
 
     ![](images/Properties_Update_with_Deploy_3674719.png)
 
-    Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the Task Chain Monitor to monitor your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the Task Chain Monitor to monitor your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 
 **Executing Parallel Tasks in a Task Chain**
@@ -396,7 +346,7 @@ In addition to linear task chains in which one task is executed after another, y
 After creating and deploying a task chain, you can set up email notification for completion of task chain runs.
 
 > ### Note:  
-> The DW Integrator role is required to set up email notification for completion of executed task chains. The *Email Notifications* section of the task chain *Properties* panel will not appear if you do not have this privilege assigned. See [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: for more information. In addition to the DW Integrator role, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members.
+> The DW Integrator role is required to set up email notification for completion of executed task chains. The *Email Notifications* section of the task chain *Properties* panel will not appear if you do not have this privilege assigned. See [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: for more information. In addition to the DW Integrator role, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members.
 
 To set up email notification:
 

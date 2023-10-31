@@ -39,15 +39,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -55,15 +51,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Label
-
-
     
     </td>
     <td valign="top">
     
     Enter a label to display in the source symbol.
-
-
     
     </td>
     </tr>
@@ -71,15 +63,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Business Name / Technical Name / Type / Connection
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Provide information to identify the source.
-
-
     
     </td>
     </tr>
@@ -87,8 +75,6 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
@@ -96,8 +82,6 @@ Add a source to read data from. You can add multiple sources and combine them to
     \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>
@@ -105,8 +89,6 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Use As
-
-
     
     </td>
     <td valign="top">
@@ -195,15 +177,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -211,15 +189,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Control Fetch Size
-
-
     
     </td>
     <td valign="top">
     
     To enforce a specific value for Batch Size, toggle this switch.
-
-
     
     </td>
     </tr>
@@ -227,15 +201,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Fetch Size \(Number of Rows\)
-
-
     
     </td>
     <td valign="top">
     
     Specifies the amount of data being read. It indicates the number of rows that will be committed to target on each batch.
-
-
     
     </td>
     </tr>
@@ -243,15 +213,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Batch Query
-
-
     
     </td>
     <td valign="top">
     
     Fetches the data batch by batch according to the fetch size defined above. Use this option for very large odata source files.
-
-
     
     </td>
     </tr>
@@ -259,15 +225,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     Fail Run on String Truncation
-
-
     
     </td>
     <td valign="top">
     
     Fails the data flow run if string truncation is detected while fetching the source columns. This property is available only for CSV, JSON, and Excel files.
-
-
     
     </td>
     </tr>

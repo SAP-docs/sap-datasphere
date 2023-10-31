@@ -153,15 +153,11 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <th valign="top">
 
     Tool
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -169,15 +165,11 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     New
-
-
     
     </td>
     <td valign="top">
     
     Create *Data Builder* objects \(independent of any selection\).
-
-
     
     </td>
     </tr>
@@ -185,8 +177,6 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     Import
-
-
     
     </td>
     <td valign="top">
@@ -205,15 +195,11 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     Edit
-
-
     
     </td>
     <td valign="top">
     
     Open the selected object in the appropriate editor. Alternatively, click the object directly in the list.
-
-
     
     </td>
     </tr>
@@ -221,8 +207,6 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     Deploy
-
-
     
     </td>
     <td valign="top">
@@ -234,15 +218,13 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 
     Other types of objects cannot be deployed.
 
     If one or more objects that you have selected cannot be deployed, the *Deploy* dialog opens, allowing you to review your selection. Click *Deploy* to deploy those objects listed on the *Deployable* tab, or *Cancel* to go back and alter your selection.
-
-
     
     </td>
     </tr>
@@ -250,15 +232,11 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     Share
-
-
     
     </td>
     <td valign="top">
     
     Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
-
-
     
     </td>
     </tr>
@@ -266,15 +244,11 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     Impact and Lineage Analysis
-
-
     
     </td>
     <td valign="top">
     
     View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
-
-
     
     </td>
     </tr>
@@ -282,8 +256,6 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     <td valign="top">
     
     Delete
-
-
     
     </td>
     <td valign="top">

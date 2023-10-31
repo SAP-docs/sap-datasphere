@@ -15,14 +15,10 @@ This following update-specific details are displayed in the table:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -31,14 +27,10 @@ Description
 
 Activation Date
 
-
-
 </td>
 <td valign="top">
 
 The date when the data product was activated
-
-
 
 </td>
 </tr>
@@ -47,14 +39,10 @@ The date when the data product was activated
 
 Provider Name
 
-
-
 </td>
 <td valign="top">
 
 The provider's name. Following the link to go to their page.
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ The provider's name. Following the link to go to their page.
 
 Product Name
 
-
-
 </td>
 <td valign="top">
 
 The name of the data product that was activated. Click the link to go to the product page.
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ The name of the data product that was activated. Click the link to go to the pro
 
 Delivery Mode
 
-
-
 </td>
 <td valign="top">
 
 Indicates the delivery mode. For more information see [Data Shipment](data-shipment-837e749.md).
-
-
 
 </td>
 </tr>
@@ -95,14 +75,10 @@ Indicates the delivery mode. For more information see [Data Shipment](data-shipm
 
 Last Update
 
-
-
 </td>
 <td valign="top">
 
 The date of the last update.
-
-
 
 </td>
 </tr>
@@ -110,8 +86,6 @@ The date of the last update.
 <td valign="top">
 
 Update Mode
-
-
 
 </td>
 <td valign="top">
@@ -130,14 +104,10 @@ The way the updates are delivered. Data products that are delivered in full mode
 
 License Validity
 
-
-
 </td>
 <td valign="top">
 
 The date until when the license is valid.
-
-
 
 </td>
 </tr>
@@ -146,14 +116,10 @@ The date until when the license is valid.
 
 Space
 
-
-
 </td>
 <td valign="top">
 
 The space that was selected to store the data product.
-
-
 
 </td>
 </tr>
@@ -161,8 +127,6 @@ The space that was selected to store the data product.
 <td valign="top">
 
 Status
-
-
 
 </td>
 <td valign="top">
@@ -186,14 +150,10 @@ The download status of the data product:
 
 Product Lifecycle
 
-
-
 </td>
 <td valign="top">
 
 Indicates wether the data product is listed or not in Data Marketplace.
-
-
 
 </td>
 </tr>

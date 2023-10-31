@@ -41,15 +41,11 @@ Views that contain input parameters require special treatment in the following s
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Desription
-
-
     
     </th>
     </tr>
@@ -57,15 +53,11 @@ Views that contain input parameters require special treatment in the following s
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
     </td>
     </tr>
@@ -73,8 +65,6 @@ Views that contain input parameters require special treatment in the following s
     <td valign="top">
     
     Technical Name
-
-
     
     </td>
     <td valign="top">
@@ -94,15 +84,11 @@ Views that contain input parameters require special treatment in the following s
     <td valign="top">
     
     Data Type
-
-
     
     </td>
     <td valign="top">
     
     Specify the type of data that the input parameter will contain \(see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md)\), and which should be appropriate for the contexts in which it will be used. Some data types require you to specific a length and or precision.
-
-
     
     </td>
     </tr>
@@ -110,15 +96,11 @@ Views that contain input parameters require special treatment in the following s
     <td valign="top">
     
     Default Value
-
-
     
     </td>
     <td valign="top">
     
     \[optional\] Enter a default value for the input parameter. Each time that a user is required to enter a value for the parameter, they can accept the default value or override it with their own chosen value.
-
-
     
     </td>
     </tr>
@@ -140,15 +122,11 @@ Views that contain input parameters require special treatment in the following s
         <th valign="top">
 
         Example
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -156,8 +134,6 @@ Views that contain input parameters require special treatment in the following s
         <td valign="top">
         
         `Country = :IP_Country`
-
-
         
         </td>
         <td valign="top">
@@ -165,8 +141,6 @@ Views that contain input parameters require special treatment in the following s
         Filter node \(see [Filter Data](filter-data-6f6fa18.md)\)
 
         This filter expression takes the value entered by the user for `IP_Country` and uses it to restrict the data returned by the view to only those rows where the `Country` column contains this value.
-
-
         
         </td>
         </tr>
@@ -174,8 +148,6 @@ Views that contain input parameters require special treatment in the following s
         <td valign="top">
         
         `Total*((100-IP_Discount)/100)`
-
-
         
         </td>
         <td valign="top">
@@ -183,8 +155,6 @@ Views that contain input parameters require special treatment in the following s
         Calculated Columns node \(see [Create a Column](create-a-column-3897f48.md)\)
 
         This expression will fill the column with a value calculated by taking the value in the `Total` column and deducting the percentage value entered by the user.
-
-
         
         </td>
         </tr>
@@ -192,8 +162,6 @@ Views that contain input parameters require special treatment in the following s
         <td valign="top">
         
         `SUM(Revenue) >IP_Min_Rev`
-
-
         
         </td>
         <td valign="top">
@@ -201,8 +169,6 @@ Views that contain input parameters require special treatment in the following s
         Aggregation node \(see [Aggregate Data](aggregate-data-7733250.md)\)
 
         This `HAVING` expression will limit the values aggregated to only those with a total `Revenue` over the value entered by the user.
-
-
         
         </td>
         </tr>

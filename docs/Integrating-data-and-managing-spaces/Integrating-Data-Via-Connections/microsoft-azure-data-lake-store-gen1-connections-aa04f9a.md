@@ -27,14 +27,10 @@ The connection type supports the data flow feature.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 *Storage Account Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Azure Data Lake Storage Gen1 account. 
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ Enter the name of the Azure Data Lake Storage Gen1 account.
 
 *Tenant ID*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the ID of the Azure Data Lake Storage Gen1 tenant. 
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ Enter the ID of the Azure Data Lake Storage Gen1 tenant.
 
 *Root Path*  
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. 
-
-
 
 </td>
 </tr>
@@ -99,14 +83,10 @@ Enter the ID of the Azure Data Lake Storage Gen1 tenant.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -115,14 +95,10 @@ Description
 
 *Client ID*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the client ID. 
-
-
 
 </td>
 </tr>
@@ -131,14 +107,10 @@ Enter the client ID.
 
 *Client Key*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the client key \(also referred to as client secret or authentication key\). 
-
-
 
 </td>
 </tr>

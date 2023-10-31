@@ -6,7 +6,7 @@ You can assign users to your space and manage them.
 
 
 
-If a DW Administrator has assigned you to a space as a DW Space Administrator via a scoped role, you can assign and manage users in your space. For more information about how a DW Administrator assigns users to roles in particular spaces via scoped roles, see [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
+If a DW Administrator has assigned you to a space as a DW Space Administrator via a scoped role, you can assign and manage users in your space. For more information about how a DW Administrator assigns users to roles in particular spaces via scoped roles, see [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
 
 In this example, based on scoped roles that the DW Administrator has created, users are assigned to spaces with scoped roles as follows:
 
@@ -17,14 +17,10 @@ In this example, based on scoped roles that the DW Administrator has created, us
 
 Spaces
 
-
-
 </th>
 <th valign="top">
 
 Users - Scoped Roles
-
-
 
 </th>
 </tr>
@@ -32,8 +28,6 @@ Users - Scoped Roles
 <td valign="top">
 
 Sales US
-
-
 
 </td>
 <td valign="top">
@@ -44,16 +38,12 @@ Bob - Sales Modeler
 
 Joan - Sales Spaces Admin
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Sales Europe
-
-
 
 </td>
 <td valign="top">
@@ -64,8 +54,6 @@ Bob - Sales Modeler
 
 Jim - Senior Sales Modeler
 
-
-
 </td>
 </tr>
 <tr>
@@ -73,14 +61,10 @@ Jim - Senior Sales Modeler
 
 Sales Asia
 
-
-
 </td>
 <td valign="top">
 
 Joan - Sales Spaces Admin
-
-
 
 </td>
 </tr>
@@ -100,7 +84,7 @@ She does the following change in the Sales Asia space:
 -   As Bob then needs to manage the space Sales Asia, Joan assigns Bob to the space with the Sales Space Admin scoped role.
 
 
-With the Joan's changes, users are now assigned to spaces with scoped roles as follows:
+With Joan's changes, users are now assigned to spaces with scoped roles as follows:
 
 
 <table>
@@ -109,14 +93,10 @@ With the Joan's changes, users are now assigned to spaces with scoped roles as f
 
 Spaces
 
-
-
 </th>
 <th valign="top">
 
 Users - Scoped Roles
-
-
 
 </th>
 </tr>
@@ -124,8 +104,6 @@ Users - Scoped Roles
 <td valign="top">
 
 Sales US
-
-
 
 </td>
 <td valign="top">
@@ -136,16 +114,12 @@ Jim - Sales Modeler
 
 Joan - Sales Spaces Admin
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Sales Europe
-
-
 
 </td>
 <td valign="top">
@@ -156,8 +130,6 @@ Bob - Sales Modeler
 
 Jim - Senior Sales Modeler
 
-
-
 </td>
 </tr>
 <tr>
@@ -165,16 +137,12 @@ Jim - Senior Sales Modeler
 
 Sales Asia
 
-
-
 </td>
 <td valign="top">
 
 Joan - Sales Spaces Admin
 
 Bob - Sales Spaces Admin
-
-
 
 </td>
 </tr>
@@ -212,6 +180,9 @@ You can add a user who will have certain privileges in your space by selecting t
 3.  Select one or more scoped roles and click *Create*.
 
 
+> ### Restriction:  
+> You cannot assign yourself to a scoped role. For this reason, you cannot add yourself to a space.
+
 
 
 <a name="loio9d59fe511ae644d98384897443054c16__section_sk1_wrj_byb"/>
@@ -240,5 +211,5 @@ You can unassign a user from your space. The user will be unassigned from the sp
 
 
 
-You can also use the SAP Datasphere command line interface, `dwc`, to assign users to a space. For more information, see [Manage Spaces via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "You can use the SAP Datasphere command line interface, datasphere, to create, read, update, and delete spaces. You can set space properties, assign (or remove) users, create database users, create or update objects (tables, views, and data access controls), and associate HDI containers to a space.") :arrow_upper_right:.
+You can also use the SAP Datasphere command line interface, `dwc`, to assign users to a space. For more information, see [Manage Spaces via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "You can use the SAP Datasphere command line interface, datasphere, to create, read, update, and delete spaces. You can set space properties, assign (or remove) users, create database users, create or update objects (tables, views, and data access controls), and associate HDI containers to a space.") :arrow_upper_right:.
 

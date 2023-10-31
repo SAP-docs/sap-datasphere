@@ -31,7 +31,7 @@ To ensure the best possible performance when accessing your remote tables and pr
 
 Statistics can be created from the *Remote Query Monitor*.
 
-1.  From the *Remote Query Monitor*, select *Remote Query Monitor* \> ** \> *Remote Table Statistics*.
+1.  From the *Data Integration Monitor* \(<span class="FPA-icons"></span>\), select *Remote Query Monitor* \> ** \> *Remote Table Statistics*.
 
     > ### Note:  
     > By default, the remote tables in data access remote are displayed. However, you can use the drop down list and display all remote tables if you need to see logs related to previous actions on remote tables with data access "replicated".
@@ -47,14 +47,10 @@ You can create three types of data statistics object:
 
 Statistics type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -63,14 +59,10 @@ Description
 
 *RECORD COUNT*
 
-
-
 </td>
 <td valign="top">
 
 Creates a data statistics object that helps the query optimizer calculate the number of records \(rows\) in a table data source. The*RECORD COUNT* type is a table-wide statistic.
-
-
 
 </td>
 </tr>
@@ -79,14 +71,10 @@ Creates a data statistics object that helps the query optimizer calculate the nu
 
 *SIMPLE*
 
-
-
 </td>
 <td valign="top">
 
 Creates a data statistics object that helps the query optimizer calculate basic statistics, such as min, max, null count, count, and distinct count.
-
-
 
 </td>
 </tr>
@@ -95,14 +83,10 @@ Creates a data statistics object that helps the query optimizer calculate basic 
 
 *HISTOGRAM*
 
-
-
 </td>
 <td valign="top">
 
 Creates a data statistics object that helps the query optimizer estimate the data distribution.
-
-
 
 </td>
 </tr>

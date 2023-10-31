@@ -13,14 +13,10 @@ The data provider can propose different types of contract:
 
 Contract Type
 
-
-
 </th>
 <th valign="top">
 
 Descriptions
-
-
 
 </th>
 </tr>
@@ -28,8 +24,6 @@ Descriptions
 <td valign="top">
 
 **License Key** 
-
-
 
 </td>
 <td valign="top">
@@ -47,16 +41,12 @@ License keys can be used:
 
 For more information, see [Acquiring a Data Product that needs a License Key](acquiring-a-data-product-that-needs-a-license-key-a4fd9d6.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 **Free** 
-
-
 
 </td>
 <td valign="top">
@@ -67,8 +57,6 @@ After accepting the terms of use, and selecting your space, the data product is 
 
 For more information, see [Acquiring a Free Data Product](acquiring-a-free-data-product-4841beb.md) and [Acquiring a Free Data Product on Request](acquiring-a-free-data-product-on-request-7119182.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -76,16 +64,12 @@ For more information, see [Acquiring a Free Data Product](acquiring-a-free-data-
 
 **On Request** 
 
-
-
 </td>
 <td valign="top">
 
 To activate a data product, you need to send a request to the data provider. You can do this directly through the user interface where an email template is created. You can edit the predefined email and then send it to the provider who then gets in touch with you.
 
 For more information, see [Acquiring a Data Product on Request](acquiring-a-data-product-on-request-d212107.md).
-
-
 
 </td>
 </tr>
@@ -100,21 +84,15 @@ Each of these contract types can be used with one of the following pricing model
 
 Pricing Model
 
-
-
 </th>
 <th valign="top">
 
 Field
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -123,21 +101,15 @@ Description
 
 One Time
 
-
-
 </td>
 <td valign="top">
 
 Pricing Description
 
-
-
 </td>
 <td valign="top">
 
 Some words on the pricing model
-
-
 
 </td>
 </tr>
@@ -146,14 +118,10 @@ Some words on the pricing model
 
 Price
 
-
-
 </td>
 <td valign="top">
 
 Price of the one time subscription
-
-
 
 </td>
 </tr>
@@ -162,14 +130,10 @@ Price of the one time subscription
 
 Currency Code
 
-
-
 </td>
 <td valign="top">
 
 Currency Code to be used, for example: EUR, USD
-
-
 
 </td>
 </tr>
@@ -178,21 +142,15 @@ Currency Code to be used, for example: EUR, USD
 
 Monthly
 
-
-
 </td>
 <td valign="top">
 
 Pricing Description
 
-
-
 </td>
 <td valign="top">
 
 Some words on the pricing model
-
-
 
 </td>
 </tr>
@@ -201,14 +159,10 @@ Some words on the pricing model
 
 Price per Month
 
-
-
 </td>
 <td valign="top">
 
 Price of the monthly subscription
-
-
 
 </td>
 </tr>
@@ -217,14 +171,10 @@ Price of the monthly subscription
 
 Currency Code
 
-
-
 </td>
 <td valign="top">
 
 Currency Code to be used, for example: EUR, USD
-
-
 
 </td>
 </tr>

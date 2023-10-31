@@ -39,15 +39,11 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -55,8 +51,6 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <td valign="top">
     
     Join Type
-
-
     
     </td>
     <td valign="top">
@@ -77,15 +71,11 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <td valign="top">
     
     Distinct Values
-
-
     
     </td>
     <td valign="top">
     
     Return only unique values.
-
-
     
     </td>
     </tr>
@@ -93,8 +83,6 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     <td valign="top">
     
     Cardinality
-
-
     
     </td>
     <td valign="top">
@@ -112,8 +100,6 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
     -   `EXACT ONE TO MANY`
 
     The cardinality is integrated in the code and is visible in the SQL preview.
-
-
     
     </td>
     </tr>

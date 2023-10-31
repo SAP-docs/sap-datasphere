@@ -19,7 +19,7 @@ Schedule data integration tasks such as remote table replication, persisting vie
     > ### Note:  
     > Your consent is valid for 12 months. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration Monitor*, a warning message appears 10 days before the expiry of consent.
 
-    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -47,7 +47,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 5.  For remote tables and views: Select the object for which you want to schedule a task.
 
-6.  Depending on the object, perform the following action:
+6.  Depending on the object perform the following action:
 
 
     <table>
@@ -55,15 +55,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <th valign="top">
 
     Object
-
-
     
     </th>
     <th valign="top">
 
     Action
-
-
     
     </th>
     </tr>
@@ -71,15 +67,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **Remote table**
-
-
     
     </td>
     <td valign="top">
     
     Select *Schedule Replication* \> *Create Snapshot Schedule*.
-
-
     
     </td>
     </tr>
@@ -87,15 +79,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **View Persistency**
-
-
     
     </td>
     <td valign="top">
     
     Select *Schedule* \> *Create Schedule*.
-
-
     
     </td>
     </tr>
@@ -103,8 +91,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **Data flow**
-
-
     
     </td>
     <td valign="top">
@@ -113,6 +99,23 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
     > ### Note:  
     > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Task Chain**
+    
+    </td>
+    <td valign="top">
+    
+    Select :clock3: *Schedule* \> *Create Schedule*.
+
+    > ### Note:  
+    > You can also find the :clock3: *Schedule* menu on the run details page of a task chain.
 
 
     
@@ -141,15 +144,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <th valign="top">
 
     Syntax
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -157,8 +156,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     x
-
-
     
     </td>
     <td valign="top">
@@ -184,8 +181,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     x,y
-
-
     
     </td>
     <td valign="top">
@@ -195,8 +190,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     Example: 4,5,6 in the *Month* field is equivalent to "April, May and June".
 
     Valid in: All fields except *Minute*
-
-
     
     </td>
     </tr>
@@ -204,8 +197,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     x-y
-
-
     
     </td>
     <td valign="top">
@@ -215,8 +206,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     Example: 1-5 in the *Day \(Week\)* field is equivalent to "from Monday to Friday".
 
     Valid in: All fields except *Minute*
-
-
     
     </td>
     </tr>
@@ -224,8 +213,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     \*/x
-
-
     
     </td>
     <td valign="top">
@@ -235,8 +222,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     Example: \*/3 in the *Hour* field is equivalent to 0,3,6,9,12,15,18,21. The asterisk \(\*\) specifies "every hour" but the /3 means "every 3 hours".
 
     Valid in: All fields except *Minute*
-
-
     
     </td>
     </tr>
@@ -244,8 +229,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     a-b/x
-
-
     
     </td>
     <td valign="top">
@@ -255,8 +238,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     Example: 1-15/2 in the *Day \(Month\)* field is equivalent to 1,3,5,7,9,11,13,15. 1-15 specifies "from day 1 to day 15" of the month but /2 means "every 2 days".
 
     Valid in: All fields except *Minute*
-
-
     
     </td>
     </tr>
@@ -264,8 +245,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     \*
-
-
     
     </td>
     <td valign="top">
@@ -275,8 +254,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     Example: an asterisk in the *Hour* field is equivalent to "every hour."
 
     Valid in: All fields except *Minute*
-
-
     
     </td>
     </tr>
@@ -290,15 +267,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <th valign="top">
 
     Expression
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -306,15 +279,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     0 0 1-3 \* \*
-
-
     
     </td>
     <td valign="top">
     
     The task runs the first 3 days of each month at 00:00 \(UTC\).
-
-
     
     </td>
     </tr>
@@ -322,15 +291,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     0 18 1,15,25 \* \*
-
-
     
     </td>
     <td valign="top">
     
     The task runs every 1st, 15th and 25th of each month at 6:00 PM \(UTC\).
-
-
     
     </td>
     </tr>
@@ -338,15 +303,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     0 8 \*/1 \* 1-5
-
-
     
     </td>
     <td valign="top">
     
     The task runs from Monday to Friday at 8:00 AM \(UTC\).
-
-
     
     </td>
     </tr>
@@ -354,15 +315,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     0 2-8/2 \*/1 \* 1-5
-
-
     
     </td>
     <td valign="top">
     
     The task runs every 2 hours between 2:00 AM \(UTC\) and 8:00 AM \(UTC\), from Monday to Friday.
-
-
     
     </td>
     </tr>
@@ -390,7 +347,7 @@ The column *Refresh Frequency* \(for data flows: *Frequency*\) shows the status 
 
 The *Next Run* colums shows the start date and time of the next run according to the scheduling settings.
 
-As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(View Persistency Logs\)*, or *\(Details\)*.
+As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png).
 
 
 
@@ -401,4 +358,6 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule/Schedule Replication* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
 The schedule can be removed at any time via the menu *Schedule/Schedule Replication* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
+
+You may also pause and then later resume execution of scheduled tasks via the menu *Schedule/Schedule Replication* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 

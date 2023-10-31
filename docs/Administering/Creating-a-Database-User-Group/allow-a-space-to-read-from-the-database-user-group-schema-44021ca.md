@@ -49,22 +49,16 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -72,8 +66,6 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <td valign="top">
     
     operation
-
-
     
     </td>
     <td valign="top">
@@ -89,8 +81,6 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <td valign="top">
     
     \[required\] Enter 'GRANT' to give the read privileges, or 'REVOKE' to remove the read privileges to the space.
-
-
     
     </td>
     </tr>
@@ -98,22 +88,16 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <td valign="top">
     
     privilege
-
-
     
     </td>
     <td valign="top">
     
     'SELECT'
-
-
     
     </td>
     <td valign="top">
     
     \[required\] Enter the read privilege that you want to grant \(or revoke\) to the space.
-
-
     
     </td>
     </tr>
@@ -121,22 +105,16 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <td valign="top">
     
     schema\_name
-
-
     
     </td>
     <td valign="top">
     
     '\[name of database user group schema\]'
-
-
     
     </td>
     <td valign="top">
     
     \[required\] Enter the name of the schema you want the space to be able to read from.
-
-
     
     </td>
     </tr>
@@ -144,8 +122,6 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <td valign="top">
     
     object\_name
-
-
     
     </td>
     <td valign="top">
@@ -177,22 +153,16 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
     <td valign="top">
     
     space\_id
-
-
     
     </td>
     <td valign="top">
     
     '\[ID of the space\]'
-
-
     
     </td>
     <td valign="top">
     
     \[required\] Enter the ID of the space you are granting the read privileges to.
-
-
     
     </td>
     </tr>

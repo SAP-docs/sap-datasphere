@@ -33,14 +33,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > CostArea
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -49,14 +45,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > A
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost area A
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -65,14 +57,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > B
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost area B
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -81,14 +69,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > C
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost area C
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -101,14 +85,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > CostCenter
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -117,14 +97,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > 1
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center for 1
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -133,14 +109,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > 2
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center for 2
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -149,14 +121,10 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > 3
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center for 3
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -171,28 +139,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > CostArea
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > CostCenter
-> 
-> 
 > 
 > </th>
 > <th valign="top">
 > 
 > CostCenter \(Representative Key\)
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -201,28 +161,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > A
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 1
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > A\\1
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 1 for the area A
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -231,28 +183,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > A
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 2
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > A\\2
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 2 for the area A
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -261,28 +205,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > A
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 3
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > A\\3
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 3 for the area A
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -291,28 +227,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > B
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 1
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > B\\1
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 1 for the area B
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -321,28 +249,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > B
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 3
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > B\\3
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 3 for the area B
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -350,29 +270,21 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > <td valign="top">
 > 
 > C
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 1
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > C\\1
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 1 for the area C
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -381,28 +293,20 @@ A compound key is a key that consists of two or more key columns, namely a key c
 > 
 > C
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 2
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > C\\2
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Cost center 2 for the area C
-> 
-> 
 > 
 > </td>
 > </tr>

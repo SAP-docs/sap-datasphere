@@ -53,22 +53,16 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -76,8 +70,6 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <td valign="top">
     
     operation
-
-
     
     </td>
     <td valign="top">
@@ -93,8 +85,6 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <td valign="top">
     
     \[required\] Enter 'GRANT' to give the write privileges, or 'REVOKE' to remove the write privileges to the space.
-
-
     
     </td>
     </tr>
@@ -102,8 +92,6 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <td valign="top">
     
     privilege
-
-
     
     </td>
     <td valign="top">
@@ -133,22 +121,16 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <td valign="top">
     
     schema\_name
-
-
     
     </td>
     <td valign="top">
     
     '\[name of database user group schema\]'
-
-
     
     </td>
     <td valign="top">
     
     \[required\] Enter the name of the schema you want the space to be able to write from.
-
-
     
     </td>
     </tr>
@@ -156,8 +138,6 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <td valign="top">
     
     object\_name
-
-
     
     </td>
     <td valign="top">
@@ -189,22 +169,16 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     <td valign="top">
     
     space\_id
-
-
     
     </td>
     <td valign="top">
     
     '\[ID of the space\]'
-
-
     
     </td>
     <td valign="top">
     
     \[required\] Enter the ID of the space you are granting the write privileges to.
-
-
     
     </td>
     </tr>

@@ -13,7 +13,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__S4_Cloud_usage)
 -   [Configuring Connection Properties](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -28,14 +28,10 @@ For information about the required prerequisites, see [Prepare Connectivity to S
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -44,16 +40,12 @@ Additional Information
 
 Remote Tables
 
-
-
 </td>
 <td valign="top">
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
 For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
-
 
 </td>
 </tr>
@@ -62,14 +54,10 @@ For remote tables, real-time replication is supported. For information about any
 
 Model Import
 
-
-
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
-
-
+You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
 
 </td>
 </tr>
@@ -77,8 +65,6 @@ You can use the connection to import semantically-rich entities from SAP S/4HANA
 <td valign="top">
 
 Data Flows
-
-
 
 </td>
 <td valign="top">
@@ -97,14 +83,10 @@ You can use the connection to add source objects to a data flow.
 
 Replication Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a replication flow. 
-
-
 
 </td>
 </tr>
@@ -139,14 +121,10 @@ For more information about extracting ABAP CDS Views from SAP S/4HANA Cloud, see
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -155,14 +133,10 @@ Description
 
 *Application Server*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the application server to which you want to connect.
-
-
 
 </td>
 </tr>
@@ -171,14 +145,10 @@ Enter the name of the application server to which you want to connect.
 
 *Client*
 
-
-
 </td>
 <td valign="top">
 
 Enter the system client number.
-
-
 
 </td>
 </tr>
@@ -187,14 +157,10 @@ Enter the system client number.
 
 *System ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the system ID of the system to which you want to connect.
-
-
 
 </td>
 </tr>
@@ -203,14 +169,10 @@ Enter the system ID of the system to which you want to connect.
 
 *Language*
 
-
-
 </td>
 <td valign="top">
 
 Enter a two-digit ISO language code, EN for English or DE for German, for example. Object and field descriptions in the data flow editor of the Data Builder are then shown in the specified language. If you don't enter any language code, the application uses the default logon language of the SAP S/4HANA system.
-
-
 
 </td>
 </tr>
@@ -219,14 +181,10 @@ Enter a two-digit ISO language code, EN for English or DE for German, for exampl
 
 *Port*
 
-
-
 </td>
 <td valign="top">
 
 Enter the port number of the WebSocket RFC connection endpoint. The default port number is 443.
-
-
 
 </td>
 </tr>
@@ -243,14 +201,10 @@ Enter the port number of the WebSocket RFC connection endpoint. The default port
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -258,8 +212,6 @@ Description
 <td valign="top">
 
 *Authentication Type*
-
-
 
 </td>
 <td valign="top">
@@ -272,8 +224,6 @@ You can select:
 -   *User Name And Password* for basic authentication
 
 The default is *X.509 Client Certificate*.
-
-
 
 </td>
 </tr>
@@ -292,14 +242,10 @@ If *Authentication Type* = *X.509 Client Certificate*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -308,14 +254,10 @@ Description
 
 *X.509 Client Certificate*
 
-
-
 </td>
 <td valign="top">
 
 Enter the certificate or certificate chain or click <span class="SAP-icons"></span> \(Browse\) to upload the certificate.
-
-
 
 </td>
 </tr>
@@ -324,14 +266,10 @@ Enter the certificate or certificate chain or click <span class="SAP-icons"><
 
 *X.509 Client Private Key*
 
-
-
 </td>
 <td valign="top">
 
 Enter the private key or click <span class="SAP-icons"></span> \(Browse\) to upload the key.
-
-
 
 </td>
 </tr>
@@ -340,14 +278,10 @@ Enter the private key or click <span class="SAP-icons"></span> \(Browse\) to 
 
 *X.509 Client Private Key Password*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] If the private key is encrypted, enter the password required for decryption.
-
-
 
 </td>
 </tr>
@@ -366,14 +300,10 @@ If *Authentication Type* = *User Name And Password*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -382,14 +312,10 @@ Description
 
 *User Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the user name that is used to connect to the SAP S/4HANA system.
-
-
 
 </td>
 </tr>
@@ -398,14 +324,10 @@ Enter the user name that is used to connect to the SAP S/4HANA system.
 
 *Password*
 
-
-
 </td>
 <td valign="top">
 
 Enter the user password.
-
-
 
 </td>
 </tr>
@@ -422,14 +344,10 @@ Enter the user password.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -438,14 +356,10 @@ Description
 
 *Remote Tables*
 
-
-
 </td>
 <td valign="top">
 
 To enable *Remote Tables*, select a Data Provisioning Agent. 
-
-
 
 </td>
 </tr>
@@ -454,14 +368,10 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 
 *Model Import*
 
-
-
 </td>
 <td valign="top">
 
 To enable *Model Import*, select a Data Provisioning Agent. 
-
-
 
 </td>
 </tr>
@@ -470,14 +380,10 @@ To enable *Model Import*, select a Data Provisioning Agent.
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>
@@ -486,14 +392,10 @@ To enable *Model Import*, select a Data Provisioning Agent.
 
 *Replication Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>

@@ -30,21 +30,15 @@ This new workflow provides the following benefits:
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Analytical Dataset
 
-
-
 </th>
 <th valign="top">
 
 Fact + Analytic Model
-
-
 
 </th>
 </tr>
@@ -53,14 +47,10 @@ Fact + Analytic Model
 
 Aggregations
 
-
-
 </td>
 <td valign="top">
 
 Standard aggregations only, such as SUM, COUNT.
-
-
 
 </td>
 <td valign="top">
@@ -69,8 +59,6 @@ Standard and post-aggregation measures \(calculated measures, restricted measure
 
 Move post-aggregation measures from your SAP Analytics Cloud stories into your analytic models to benefit from real-time previewing of results and to promote re-use.
 
-
-
 </td>
 </tr>
 <tr>
@@ -78,21 +66,15 @@ Move post-aggregation measures from your SAP Analytics Cloud stories into your a
 
 Measures and attribute selection
 
-
-
 </td>
 <td valign="top">
 
 All measures and attributes and first-level dimension always exposed to SAP Analytics Cloud. More remote dimensions cannot be included.
 
-
-
 </td>
 <td valign="top">
 
 Model as many measures, attributes, and associations to dimensions as appropriate in a fact, and then choose to expose only those that you need in each analytic model. You can select attributes from any dimension that is associated with the fact, whether it is a first-level dimension \(directly associated with the fact\) or any dimension that can be reached by following further associations.
-
-
 
 </td>
 </tr>
@@ -101,21 +83,15 @@ Model as many measures, attributes, and associations to dimensions as appropriat
 
 Data viewer
 
-
-
 </td>
 <td valign="top">
 
 Relational data viewer shows lists of records
 
-
-
 </td>
 <td valign="top">
 
 Rich analytic viewer, based on the SAP Analytics Cloud Data Analyzer, supports measure and attribute selection, filtering and pivoting, and hierarchy support​.
-
-
 
 </td>
 </tr>

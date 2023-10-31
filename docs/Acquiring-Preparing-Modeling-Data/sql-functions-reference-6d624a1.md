@@ -244,7 +244,6 @@ SAP Datasphere supports the following string functions, which perform extraction
 -   `UCASE`
 -   `UNICODE`
 -   `UPPER`
--   `XMLTABLE`
 
 For detailed documentation, see [String Functions](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/20a24d4b75191014afc5ac3b997d3ce2.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 

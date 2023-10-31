@@ -45,15 +45,11 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <th valign="top">
 
     Section
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -61,8 +57,6 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <td valign="top">
     
     Import Schedule
-
-
     
     </td>
     <td valign="top">
@@ -80,8 +74,6 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <td valign="top">
     
     Overwrite Preferences
-
-
     
     </td>
     <td valign="top">
@@ -107,8 +99,6 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <td valign="top">
     
     Deployment Preference
-
-
     
     </td>
     <td valign="top">
@@ -126,8 +116,6 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     <td valign="top">
     
     Content
-
-
     
     </td>
     <td valign="top">
@@ -135,8 +123,6 @@ Detailed documentation for all business content is available at [SAP Datasphere 
     Review the objects to be imported. All objects are imported by default.
 
     You can select and deselect individual objects, or types of objects. The *Impacted Object* column shows warnings for objects that will overwrite content on your system.
-
-
     
     </td>
     </tr>

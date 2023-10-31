@@ -14,7 +14,7 @@ Pause real-time replication for a connection while updating or maintaining the s
 
 You can pause real-time replication for connections that connect to a source through SAP HANA Smart Data Integration and its Data Provisioning Agent.
 
-If you need to upgrade or patch your Data Provisioning Agent, or you need to apply any changes to its configuration, you can pause all connections for the Data Provisioning Agent. For more information, see [Pause Real-Time Replication for an Agent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/dac31a5e96cb41cf98383668d01d22cc.html "For a selected SAP HANA Smart Data Integration Data Provisioning Agent, you can pause real-time replication for the connections that use the agent while applying changes to it, such as configuration changes or applying patches. After you have finished your agent changes, you can restart real-time replication.") :arrow_upper_right:.
+If you need to upgrade or patch your Data Provisioning Agent, or you need to apply any changes to its configuration, you can pause all connections for the Data Provisioning Agent. For more information, see [Pause Real-Time Replication for an Agent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/dac31a5e96cb41cf98383668d01d22cc.html "For a selected SAP HANA Smart Data Integration Data Provisioning Agent, you can pause real-time replication for the connections that use the agent while applying changes to it, such as configuration changes or applying patches. After you have finished your agent changes, you can restart real-time replication.") :arrow_upper_right:.
 
 
 
@@ -30,15 +30,11 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     <th valign="top">
 
     Real-Time Replication status
-
-
     
     </th>
     <th valign="top">
 
     Possible actions
-
-
     
     </th>
     </tr>
@@ -50,15 +46,11 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     Shown when the connection type doesn't support real-time replication.
 
     Shown when the *Remote Tables* feature for an SAP HANA connection is set to *Data Access* = *Remote Only*.
-
-
     
     </td>
     <td valign="top">
     
     none
-
-
     
     </td>
     </tr>
@@ -68,15 +60,11 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     *Active*
 
     Shown when the connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Table Monitor* is *Error*\).
-
-
     
     </td>
     <td valign="top">
     
     Pause
-
-
     
     </td>
     </tr>
@@ -86,15 +74,11 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     *Paused*
 
     Shown when the connection type supports real-time replication and for the connection at least for one table real-time replication is paused.
-
-
     
     </td>
     <td valign="top">
     
     Restart
-
-
     
     </td>
     </tr>
@@ -104,15 +88,11 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     *Inactive*
 
     Shown when the connection type supports real-time replication and for the connection currently there is no table replicating via real-time replication.
-
-
     
     </td>
     <td valign="top">
     
     Pause
-
-
     
     </td>
     </tr>
@@ -122,15 +102,11 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     *Disconnected*
 
     Shown when the connection uses a Data Provisioning Agent that currently has status *Disconnected*.
-
-
     
     </td>
     <td valign="top">
     
     none
-
-
     
     </td>
     </tr>

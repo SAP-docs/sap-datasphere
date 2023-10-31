@@ -15,7 +15,7 @@ Once you find the asset you want, you can select it to view its overview informa
 You must be assigned the *Catalog User* role.
 
 > ### Tip:  
-> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role or appropriate privileges can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
+> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role or appropriate privileges can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
 
 From the <span class="SAP-icons"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
@@ -40,14 +40,10 @@ The asset header provides high-level information of the asset.
 
 Section
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Description
 
 Asset Name
 
-
-
 </td>
 <td valign="top">
 
 Displays the asset name and type with an identifying icon. This name might not match the name of the underlying source object if it was enriched in the catalog.
-
-
 
 </td>
 </tr>
@@ -72,14 +64,10 @@ Displays the asset name and type with an identifying icon. This name might not m
 
 Asset Functional Status and Source System
 
-
-
 </td>
 <td valign="top">
 
-Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "You can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, anyone who uses the catalog can discover the published content.") :arrow_upper_right:.
-
-
+Displays the functional status of the asset with the source system name and type. For information on the functional statuses, see [Publishing to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "You can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, anyone who uses the catalog can discover the published content.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -88,14 +76,10 @@ Displays the functional status of the asset with the source system name and type
 
 Tabs
 
-
-
 </td>
 <td valign="top">
 
 Select a tab to view more information about the asset, such as asset properties and descriptions, asset details, and for assets in SAP Datasphere, the **Impact and Lineage Analysis** diagram.
-
-
 
 </td>
 </tr>
@@ -103,8 +87,6 @@ Select a tab to view more information about the asset, such as asset properties 
 <td valign="top">
 
 Actions
-
-
 
 </td>
 <td valign="top">
@@ -149,14 +131,10 @@ Displays the properties and description of the asset. This information is extrac
 
 Section Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -164,8 +142,6 @@ Description
 <td valign="top">
 
 Properties
-
-
 
 </td>
 <td valign="top">
@@ -215,8 +191,6 @@ If the asset data was enriched, the date of the change appears as a catalog prop
 
 Descriptions
 
-
-
 </td>
 <td valign="top">
 
@@ -246,14 +220,10 @@ Displays the relationships for the asset. These relationships can include glossa
 
 Section Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -262,14 +232,10 @@ Description
 
 Glossary Terms
 
-
-
 </td>
 <td valign="top">
 
 Displays a list of business glossary terms that are linked to the asset. You can use the free text search to see if a particular term is linked to the asset. 
-
-
 
 </td>
 </tr>
@@ -278,14 +244,10 @@ Displays a list of business glossary terms that are linked to the asset. You can
 
 Tags
 
-
-
 </td>
 <td valign="top">
 
 Displays a hierarchical list of all tags that are linked to the asset. Tags help classify the types of assets that are in the catalog. You can use the free text search to see if a particular tag is linked to the asset. 
-
-
 
 </td>
 </tr>
@@ -294,14 +256,10 @@ Displays a hierarchical list of all tags that are linked to the asset. Tags help
 
 KPIs
 
-
-
 </td>
 <td valign="top">
 
 Displays a list of all key performance indicators \(KPIs\) that are linked to the asset. KPIs are used to track business requirements or goals. You can use the free text search to see if a particular KPI is linked to the asset. 
-
-
 
 </td>
 </tr>
@@ -316,7 +274,7 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 Use the *Details* tab to review detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each data or analytic object.
 
 > ### Note:  
-> This tab appears only if the asset has details that can be shown. Currently, detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
+> This tab appears only if the asset has details that can be shown. Currently, detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
@@ -333,14 +291,10 @@ For each detailed metadata table available, you can use the toolbar to search fo
 
 Tool
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -349,14 +303,10 @@ Description
 
 <span class="FPA-icons"></span> \(Search\)
 
-
-
 </td>
 <td valign="top">
 
 Use the free-text search to search for a row by its name or description. .
-
-
 
 </td>
 </tr>
@@ -365,14 +315,10 @@ Use the free-text search to search for a row by its name or description. .
 
 <span class="FPA-icons"></span> \(Sort\)
 
-
-
 </td>
 <td valign="top">
 
 Sort the rows in the table by ascending or descending order based on the column you select.
-
-
 
 </td>
 </tr>
@@ -381,14 +327,10 @@ Sort the rows in the table by ascending or descending order based on the column 
 
 <span class="FPA-icons"></span> \(Filter\)
 
-
-
 </td>
 <td valign="top">
 
 Select column values for filtering the table.
-
-
 
 </td>
 </tr>
@@ -397,14 +339,10 @@ Select column values for filtering the table.
 
 <span class="FPA-icons"></span> \(Select Columns\)
 
-
-
 </td>
 <td valign="top">
 
 Select which columns you want to show in the table.
-
-
 
 </td>
 </tr>
@@ -441,14 +379,10 @@ The diagram provides the data analysis of the asset and contains the following f
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -457,14 +391,10 @@ Description
 
 \(1\) Toolbar and Diagram Tools
 
-
-
 </td>
 <td valign="top">
 
 Use the toolbar and diagram tools to control the layout of the diagram. Click <span class="FPA-icons"></span> \(Refresh\) to update the diagram with the latest changes.
-
-
 
 </td>
 </tr>
@@ -473,16 +403,12 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click <s
 
 \(2\) Source System
 
-
-
 </td>
 <td valign="top">
 
 The source system is the outermost object and has an icon that represents the type of system \(for example, SAP Datasphere or SAP Analytics Cloud tenant\). The number in brackets indicates the total number of objects in the source system that are part of the impact or lineage of the analyzed object.
 
 You can expand or collapse a source system, using the <span class="FPA-icons"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
-
-
 
 </td>
 </tr>
@@ -491,16 +417,12 @@ You can expand or collapse a source system, using the <span class="FPA-icons">�
 
 \(3\) Container
 
-
-
 </td>
 <td valign="top">
 
 The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud public folder\). It contains assets that appear in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
 You can expand or collapse a container, using the <span class="FPA-icons"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
-
-
 
 </td>
 </tr>
@@ -513,8 +435,6 @@ You can expand or collapse a container, using the <span class="FPA-icons"></s
 
 \(4c\) Analyzed Object
 
-
-
 </td>
 <td valign="top">
 
@@ -523,8 +443,6 @@ Authorized and unauthorized objects appear in the lineage or impact of the analy
 Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons"></span> \(Open Asset Details\). Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons"></span> \(Show Next Level\) or <span class="SAP-icons"></span> \(Hide All\) on the object.
-
-
 
 </td>
 </tr>

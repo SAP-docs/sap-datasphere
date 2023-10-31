@@ -18,15 +18,11 @@ Provide business-friendly names for your table and its columns, identify its sem
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -34,15 +30,11 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Business Name 
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
     </td>
     </tr>
@@ -50,15 +42,11 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Technical Name 
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] The technical names of remote tables cannot be modified. 
-
-
     
     </td>
     </tr>
@@ -66,8 +54,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Semantic Usage
-
-
     
     </td>
     <td valign="top">
@@ -103,15 +89,11 @@ Provide business-friendly names for your table and its columns, identify its sem
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -119,19 +101,15 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     *Connection* 
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\]
 
-    Displays the name of the connection the remote table belongs to.
+    Displays the name of the connection the remote table belongs to. 
 
     Displays the name of the connection the remote table belongs to.
-
-
     
     </td>
     </tr>
@@ -139,15 +117,11 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Remote Table
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Displays the full path to the remote table in the source system.
-
-
     
     </td>
     </tr>
@@ -155,8 +129,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Data Access
-
-
     
     </td>
     <td valign="top">
@@ -179,8 +151,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Last Updated
-
-
     
     </td>
     <td valign="top">
@@ -200,8 +170,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Refresh Frequency
-
-
     
     </td>
     <td valign="top">
@@ -214,6 +182,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     -   *None*: There is no schedule defined for this table.
     -   *Scheduled*: A schedule is defined for this table.
     -   *Real-Time*: Real-time replication has been set up for the remote table.
+    -   *Paused*: Data refresh is paused.
 
     > ### Note:  
     > This section is not available if the connection of your remote table is configured as data access: *Remote Only*.
@@ -226,8 +195,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
@@ -252,7 +219,7 @@ Provide business-friendly names for your table and its columns, identify its sem
 
     -   *Disconnected*: SAP HANA smart data integration Data Provisioning Agent got disconnected
 
-        For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
+        For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
 
 
     > ### Note:  
@@ -266,8 +233,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Statistics Type
-
-
     
     </td>
     <td valign="top">
@@ -279,7 +244,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     -   *SIMPLE*: Creates a data statistics object that helps the query optimizer calculate basic statistics, such as min, max, null count, count, and distinct count.
 
     > ### Note:  
-    > Statistics can be created after you have deployed your remote table, for more information, see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:
+    > Statistics can be created after you have deployed your remote table, for more information, see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:
 
 
     
@@ -289,21 +254,17 @@ Provide business-friendly names for your table and its columns, identify its sem
     <td valign="top">
     
     Statistics Last Updated
-
-
     
     </td>
     <td valign="top">
     
     Displays the date when the last statistics update has been refreshed for the remote table.
-
-
     
     </td>
     </tr>
     </table>
     
-    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
+    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
 
     > ### Note:  
     > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.

@@ -28,15 +28,11 @@ Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT`
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -44,15 +40,11 @@ Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT`
     <td valign="top">
     
     *Label*
-
-
     
     </td>
     <td valign="top">
     
     Provide a suitable name for your aggregation as per your requirement.
-
-
     
     </td>
     </tr>

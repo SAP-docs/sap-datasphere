@@ -20,15 +20,11 @@ You can add sharing destinations to your export and specify their level of permi
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -36,8 +32,6 @@ You can add sharing destinations to your export and specify their level of permi
     <td valign="top">
     
     Destination Type
-
-
     
     </td>
     <td valign="top">
@@ -60,8 +54,6 @@ You can add sharing destinations to your export and specify their level of permi
     <td valign="top">
     
     Access
-
-
     
     </td>
     <td valign="top">

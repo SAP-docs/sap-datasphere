@@ -19,7 +19,7 @@ To do so, you must have an SAP Datasphere administrator role.
 In the *Tenant Configuration* page of the *Configuration* area, you can increase the sizes for the various resources, within the permitted size combinations, to obtain a configuration that fits your exact needs, and then click *Save*.
 
 > ### Caution:  
-> Once you save the size configuration of your tenant, be aware that you cannot decrease the allocated resource sizes later. Exception: If you need to decrease the memory, see SAP note [3224686](https://launchpad.support.sap.com/#/notes/3224686).
+> Once you save the size configuration of your tenant, be aware that some resources cannot be resized later. Exception: If you need to decrease the memory, see SAP note [3224686](https://launchpad.support.sap.com/#/notes/3224686).
 
 Also, once you click *Save*:
 
@@ -27,7 +27,7 @@ Also, once you click *Save*:
 
 -   In case an error occurs, you are notified that the configuration cannot be completed and that you need to try again later by clicking the *Retry* button \(which replaces the *Save* button in such a case\). The delay depends on the error \(for example, if there is an error on the SAP HANA Cloud database side, you may need to retry after 60 minutes\).
 
--   You can change and save the size of the tenant once every 6 hours.
+-   You can only make changes to SAP HANA Compute and SAP HANA Storage once every 6 hours.
 
 -   If you try to change your SAP HANA configuration, SAP HANA Cloud functionalities \(Spaces, DPServer, Serving of Queries\) will not be available for around 10 minutes. If you run into issues after the configuration, use the *Retry* button.
 
@@ -66,14 +66,10 @@ To view all supported size combinations for compute and storage resources and th
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -82,8 +78,6 @@ Description
 
 *Storage*
 
-
-
 </td>
 <td valign="top">
 
@@ -91,16 +85,12 @@ Select the size of disk storage.
 
 You can specify from 256 GB \(minimum\), by increments of 256 GB.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Compute Blocks*
-
-
 
 </td>
 <td valign="top">
@@ -113,16 +103,12 @@ The number for memory is calculated based on the compute blocks and you cannot d
 
 **Dependencies between storage and compute blocks**: the storage and compute blocks depend on each other. When you modify a parameter, the other one needs to be changed accordingly. The minimum and maximum allowed storage sizes depend on the total memory defined by the selected compute blocks. The storage size must be higher than the memory size and can only be increased up to 4 times as much as the memory. All the possible size combinations of storage and compute blocks are controlled in the *Tenant Configuration* page. When the size combination you enter is allowed, the sizes are kept. When the size combination you enter is not allowed, error messages guide you to modify the sizes.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Memory*
-
-
 
 </td>
 <td valign="top">
@@ -149,14 +135,10 @@ Displays the size of memory calculated based on the selected number of compute b
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -164,8 +146,6 @@ Description
 <td valign="top">
 
 *Data Lake Storage*
-
-
 
 </td>
 <td valign="top">
@@ -198,8 +178,6 @@ To reduce the size of your data lake storage, you must first delete your data la
 
 *SAP BW Bridge Storage*
 
-
-
 </td>
 <td valign="top">
 
@@ -208,18 +186,20 @@ To reduce the size of your data lake storage, you must first delete your data la
 SAP BW Bridge includes SAP BTP, ABAP environment, runtime and compute.
 
 > ### Caution:  
-> You can only change the size of your SAP BW Bridge storage later if you don’t have any SAP BW Bridge instances.
+> You can only change the SAP BW Bridge storage allocation, if no SAP BW Bridge instances are created.
 
-The process for allocating capacity units to SAP BW Bridge is not part of the configuration process and runs in parallel.
+The process for allocating capacity units to SAP BW Bridge is not part of the configuration process.
 
 > ### Note:  
 > -   When you provision a non-productive tenant, you’ll need to request the SAP BW bridge Cloud-ABAP Service for your tenant by opening an incident via ServiceNow with the component DWC-BWB.
 > 
-> -   First finalize the size configuration of your tenant, then open the incident as a next step. Once the incident has been processed, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
+> -   First finalize the size configuration of your tenant, then open the incident as a next step. Once the incident has been processed, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
 > 
 > -   SAP BW Bridge is not available in all regions. See SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
 > 
 > -   When using a test tenant with the minimal configuration \(128 GB of storage and 1 compute block\), you cannot add SAP BW Bridge storage unless you add more compute blocks.
+> 
+> -   As soon as you click *Save*, the allocated capacity units will be assigned to SAP BW Bridge.
 
 
 
@@ -236,14 +216,10 @@ The process for allocating capacity units to SAP BW Bridge is not part of the co
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -252,14 +228,10 @@ Description
 
 *Data Integration*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select the number of compute blocks to allocate to Data Integration applications. You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
-
-
 
 </td>
 </tr>
@@ -268,14 +240,10 @@ Description
 
 *Execution Hours*
 
-
-
 </td>
 <td valign="top">
 
 The number of node hours available for Data Integration applications per month is calculated from the number of allocated compute blocks.
-
-
 
 </td>
 </tr>
@@ -284,14 +252,10 @@ The number of node hours available for Data Integration applications per month i
 
 *Maximum Parallel Jobs*
 
-
-
 </td>
 <td valign="top">
 
 The maximum number of parallel jobs is calcuated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maxiumum of 10.
-
-
 
 </td>
 </tr>
@@ -300,14 +264,10 @@ The maximum number of parallel jobs is calcuated from the number of execution ho
 
 *Data Integration*: *Allocated Execution Hours*
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of hours allocated to Data Integration applications.
-
-
 
 </td>
 </tr>
@@ -316,14 +276,10 @@ Displays the number of hours allocated to Data Integration applications.
 
 *Data Integration*: *Used Execution Hours*
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of hours used by Data Integration applications.
-
-
 
 </td>
 </tr>
@@ -331,8 +287,6 @@ Displays the number of hours used by Data Integration applications.
 <td valign="top">
 
 *Data Integration*: *Exceeded Execution Hours*
-
-
 
 </td>
 <td valign="top">
@@ -357,14 +311,10 @@ Displays the execution hours you have used that exceed the amount allocated by y
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -373,14 +323,10 @@ Description
 
 *Catalog Storage*
 
-
-
 </td>
 <td valign="top">
 
 Included by default. The amount of GB used per hour available for Catalog assets, activities and metadata cannot be changed.
-
-
 
 </td>
 </tr>
@@ -389,14 +335,10 @@ Included by default. The amount of GB used per hour available for Catalog assets
 
 *Catalog Crawling*
 
-
-
 </td>
 <td valign="top">
 
 Included by default. The number of blocks used by Catalog crawling cannot be changed.
-
-
 
 </td>
 </tr>
@@ -405,14 +347,10 @@ Included by default. The number of blocks used by Catalog crawling cannot be cha
 
 *Execution Hours*
 
-
-
 </td>
 <td valign="top">
 
 The number of hours consumed by Catalog usage every month.
-
-
 
 </td>
 </tr>
@@ -421,14 +359,10 @@ The number of hours consumed by Catalog usage every month.
 
 *Maximum Parallel Jobs*
 
-
-
 </td>
 <td valign="top">
 
 The maximum number of parallel Catalog jobs cannot be changed.
-
-
 
 </td>
 </tr>
@@ -443,14 +377,10 @@ The maximum number of parallel Catalog jobs cannot be changed.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -459,14 +389,10 @@ Description
 
 *Estimated Consumption*
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of capacity units consumed by the storage and compute resources you've specified.
-
-
 
 </td>
 </tr>
@@ -475,14 +401,10 @@ Displays the total number of capacity units consumed by the storage and compute 
 
 *Your Subscription*: *Available Units*
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of capacity units that are available for the tenant.
-
-
 
 </td>
 </tr>
@@ -491,14 +413,10 @@ Displays the number of capacity units that are available for the tenant.
 
 *Your Consumption*: *Units in Use*
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of capacity units that you've already allocated to the storage and compute resources.
-
-
 
 </td>
 </tr>
@@ -507,14 +425,10 @@ Displays the number of capacity units that you've already allocated to the stora
 
 *Your Consumption*: *Remaining Units*
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of capacity units that you can still allocate to the storage and compute resources.
-
-
 
 </td>
 </tr>
@@ -529,14 +443,10 @@ Displays the number of capacity units that you can still allocate to the storage
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -545,14 +455,10 @@ Description
 
 *Units in Use per Month*
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of capacity units consumed per month by the storage and compute resources you've specified.
-
-
 
 </td>
 </tr>

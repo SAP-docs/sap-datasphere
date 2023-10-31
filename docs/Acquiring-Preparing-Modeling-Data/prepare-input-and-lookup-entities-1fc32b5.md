@@ -20,14 +20,10 @@ Identify and prepare your input and lookup entities as follows:
 
 Your Input Entity
 
-
-
 </th>
 <th valign="top">
 
 Your Lookup Entity
-
-
 
 </th>
 </tr>

@@ -10,7 +10,7 @@ Use a *Generic OData* connection to access data from an OData service.
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -44,14 +44,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,8 +55,6 @@ Description
 <td valign="top">
 
 *URL*  
-
-
 
 </td>
 <td valign="top">
@@ -79,14 +73,10 @@ Enter the OData service provider URL.
 
 *Version*  
 
-
-
 </td>
 <td valign="top">
 
 Select the OData version used to implement the OData service \(*V2* or *V4*\). 
-
-
 
 </td>
 </tr>
@@ -103,14 +93,10 @@ Select the OData version used to implement the OData service \(*V2* or *V4*\).
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -119,14 +105,10 @@ Description
 
 *Use Cloud Connector* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
-
-
 
 </td>
 </tr>
@@ -134,8 +116,6 @@ Description
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Location* 
-
-
 
 </td>
 <td valign="top">
@@ -154,16 +134,12 @@ Description
 
 \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
-
-
 
 </td>
 </tr>
@@ -172,14 +148,10 @@ If host and port entered in the connection details match the virtual host and po
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual host that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -188,14 +160,10 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -212,14 +180,10 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -227,8 +191,6 @@ Description
 <td valign="top">
 
 *Authentication Type*
-
-
 
 </td>
 <td valign="top">
@@ -260,14 +222,10 @@ If *Authentication Type* = *OAuth 2.0*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -276,14 +234,10 @@ Description
 
 *OAuth Grant Type*
 
-
-
 </td>
 <td valign="top">
 
 Displays *Client Credentials* as grant type used to retrieve an access token. 
-
-
 
 </td>
 </tr>
@@ -292,14 +246,10 @@ Displays *Client Credentials* as grant type used to retrieve an access token.
 
 *OAuth Token Endpoint*
 
-
-
 </td>
 <td valign="top">
 
 Enter the API endpoint to use to request an access token.
-
-
 
 </td>
 </tr>
@@ -308,14 +258,10 @@ Enter the API endpoint to use to request an access token.
 
 *OAuth Scope*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the OAuth scope, if applicable.
-
-
 
 </td>
 </tr>
@@ -323,8 +269,6 @@ Enter the API endpoint to use to request an access token.
 <td valign="top">
 
 *OAuth Token Request Content Type*
-
-
 
 </td>
 <td valign="top">
@@ -361,14 +305,10 @@ If *Authentication Type* = *OAuth 2.0*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -377,14 +317,10 @@ Description
 
 *Client ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client ID to authenticate SAP Datasphere to the authorization server. 
-
-
 
 </td>
 </tr>
@@ -393,14 +329,10 @@ Enter the client ID to authenticate SAP Datasphere to the authorization server.
 
 *Client Secret*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client secret to authenticate SAP Datasphere to the authorziation server.
-
-
 
 </td>
 </tr>
@@ -419,14 +351,10 @@ If *Authentication Type* = *User Name And Password*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -435,14 +363,10 @@ Description
 
 *User Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the user name. 
-
-
 
 </td>
 </tr>
@@ -451,14 +375,10 @@ Enter the user name.
 
 *Password*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the password. 
-
-
 
 </td>
 </tr>

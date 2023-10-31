@@ -42,14 +42,10 @@ These types identify the type of value that the measure contains:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -58,14 +54,10 @@ Description
 
 Amount with Currency
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the measure contains a monetary amount. You should additionally select an attribute with the semantic type *Currency Code* in the *Unit Column* column \(see [Currency Code and Unit of Measure Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_currency_unit)\).
-
-
 
 </td>
 </tr>
@@ -74,14 +66,10 @@ Specifies that the measure contains a monetary amount. You should additionally s
 
 Quantity with Unit
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the measure contains a quantity of some kind. You should additionally select an attribute with the semantic type *Unit of Measure* in the *Unit Column* column \(see [Currency Code and Unit of Measure Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_currency_unit)\).
-
-
 
 </td>
 </tr>
@@ -102,14 +90,10 @@ These types are used with measure types \(see [Currency Code and Unit of Measure
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -118,16 +102,12 @@ Description
 
 Currency Code
 
-
-
 </td>
 <td valign="top">
 
 A currency code.
 
 This can be either an [ISO code](http://www.currency-iso.org/dl_iso_table_a1.xml) or an SAP currency code \(data type `CUKY`\).
-
-
 
 </td>
 </tr>
@@ -136,14 +116,10 @@ This can be either an [ISO code](http://www.currency-iso.org/dl_iso_table_a1.xml
 
 Unit of Measure
 
-
-
 </td>
 <td valign="top">
 
 A unit of measure.
-
-
 
 </td>
 </tr>
@@ -164,14 +140,10 @@ These types are typically used in text entities and identify columns containing 
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -180,14 +152,10 @@ Description
 
 Language
 
-
-
 </td>
 <td valign="top">
 
 A language code.
-
-
 
 </td>
 </tr>
@@ -196,14 +164,10 @@ A language code.
 
 Text
 
-
-
 </td>
 <td valign="top">
 
 A human-readable text that is not necessarily language-dependent.
-
-
 
 </td>
 </tr>
@@ -224,14 +188,10 @@ This type identifies attributes containing URLs to image files:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -239,8 +199,6 @@ Description
 <td valign="top">
 
 Image URL
-
-
 
 </td>
 <td valign="top">
@@ -271,14 +229,10 @@ These types identify attributes containing latitudes, longitudes, and other geol
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -286,8 +240,6 @@ Description
 <td valign="top">
 
 Geolocation - Cartoid
-
-
 
 </td>
 <td valign="top">
@@ -306,14 +258,10 @@ A geographical point.
 
 Geolocation - Latitude
 
-
-
 </td>
 <td valign="top">
 
 A latitude value for a city or other geographical point.
-
-
 
 </td>
 </tr>
@@ -322,14 +270,10 @@ A latitude value for a city or other geographical point.
 
 Geolocation - Longitude
 
-
-
 </td>
 <td valign="top">
 
 A longitude value for a city or other geographical point.
-
-
 
 </td>
 </tr>
@@ -337,8 +281,6 @@ A longitude value for a city or other geographical point.
 <td valign="top">
 
 Geolocation - Normalized Name
-
-
 
 </td>
 <td valign="top">
@@ -372,14 +314,10 @@ These types identify attributes containing dates for which information is being 
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -388,14 +326,10 @@ Description
 
 Business Date - At
 
-
-
 </td>
 <td valign="top">
 
 A key date.
-
-
 
 </td>
 </tr>
@@ -404,14 +338,10 @@ A key date.
 
 Business Date - From
 
-
-
 </td>
 <td valign="top">
 
 A date, timestamp, or interval that defines the validity of the data of the database table record from a business point of view. Use *System Date - Created at* to represent the date when the record was created.
-
-
 
 </td>
 </tr>
@@ -420,14 +350,10 @@ A date, timestamp, or interval that defines the validity of the data of the data
 
 Business Date - To
 
-
-
 </td>
 <td valign="top">
 
 A date, timestamp, or interval that defines the validity of the data of the database table record from a business point of view.
-
-
 
 </td>
 </tr>
@@ -448,14 +374,10 @@ The types identify attributes containing various kinds of dates:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -464,16 +386,12 @@ Description
 
 Calendar - Day of Month
 
-
-
 </td>
 <td valign="top">
 
 A day number relative to a calendar month.
 
 The number must be in the range `1 - 31`.
-
-
 
 </td>
 </tr>
@@ -482,16 +400,12 @@ The number must be in the range `1 - 31`.
 
 Calendar - Day of Year
 
-
-
 </td>
 <td valign="top">
 
 A day number relative to a calendar year.
 
 The number must be in the range `1 - 366`.
-
-
 
 </td>
 </tr>
@@ -500,16 +414,12 @@ The number must be in the range `1 - 366`.
 
 Calendar - Halfyear
 
-
-
 </td>
 <td valign="top">
 
 A calendar halfyear number as a string following the logical pattern H consisting of a single digit.
 
 The string must match the regex pattern `[1-2]`.
-
-
 
 </td>
 </tr>
@@ -518,16 +428,12 @@ The string must match the regex pattern `[1-2]`.
 
 Calendar - Month
 
-
-
 </td>
 <td valign="top">
 
 A calendar month number as a string following the logical pattern `MM` consisting of two digits.
 
 The string must match the regex pattern `0[1-9]|1[0-2]`.
-
-
 
 </td>
 </tr>
@@ -536,16 +442,12 @@ The string must match the regex pattern `0[1-9]|1[0-2]`.
 
 Calendar - Quarter
 
-
-
 </td>
 <td valign="top">
 
 A calendar quarter number as a string following the logical pattern `Q` consisting of a single digit.
 
 The string must match the regex pattern `[1-4]`.
-
-
 
 </td>
 </tr>
@@ -554,16 +456,12 @@ The string must match the regex pattern `[1-4]`.
 
 Calendar - Week
 
-
-
 </td>
 <td valign="top">
 
 A calendar week number as a string following the logical pattern `WW` consisting of two digits.
 
 The string must match the regex pattern `0[1-9]|[1-4][0-9]|5[2-3]`.
-
-
 
 </td>
 </tr>
@@ -572,16 +470,12 @@ The string must match the regex pattern `0[1-9]|[1-4][0-9]|5[2-3]`.
 
 Calendar - Year
 
-
-
 </td>
 <td valign="top">
 
 A year number as a string following the logical pattern `(-?)YYYY(Y*)` consisting of an optional minus sign for years B.C., followed by at least four digits.
 
 The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})`.
-
-
 
 </td>
 </tr>
@@ -590,16 +484,12 @@ The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})`.
 
 Calendar - Year Halfyear
 
-
-
 </td>
 <td valign="top">
 
 A calendar halfyear number as a string following the logical pattern `(-?)YYYY(Y*)H` consisting of an optional minus sign for years B.C., followed by at least five digits, where the last digit represents the halfyear.
 
 The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-2]`.
-
-
 
 </td>
 </tr>
@@ -608,16 +498,12 @@ The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-2]`.
 
 Calendar - Year Month
 
-
-
 </td>
 <td valign="top">
 
 A calendar year and month as a string following the logical pattern `(-?)YYYY(Y*)MM` consisting of an optional minus sign for years B.C., followed by at least six digits, where the last two digits represent the months January to December.
 
 The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})(0[1-9]|1[0-2])`.
-
-
 
 </td>
 </tr>
@@ -626,16 +512,12 @@ The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})(0[1-9]|1[0
 
 Calendar - Year Quarter
 
-
-
 </td>
 <td valign="top">
 
 A calendar year and quarter as a string following the logical pattern `(-?)YYYY(Y*)Q` consisting of an optional minus sign for years B.C., followed by at least five digits, where the last digit represents the quarter.
 
 The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-4]`.
-
-
 
 </td>
 </tr>
@@ -644,8 +526,6 @@ The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-4]`.
 
 Calendar - Year Week
 
-
-
 </td>
 <td valign="top">
 
@@ -653,16 +533,12 @@ A calendar year and week as a string following the logical pattern `(-?)YYYY(Y*)
 
 The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})(0[1-9]|[1-4][0-9]|5[2-3])`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Fiscal - Period
-
-
 
 </td>
 <td valign="top">
@@ -673,16 +549,12 @@ A fiscal period is covered by financial reports, for example, an annual report c
 
 The string must match the regex pattern `[0-9]{3}`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Fiscal - Year
-
-
 
 </td>
 <td valign="top">
@@ -691,16 +563,12 @@ A fiscal year number as a string following the logical pattern `YYYY` consisting
 
 The string must match the regex pattern `[1-9][0-9]{3}`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Fiscal - Year Period
-
-
 
 </td>
 <td valign="top">
@@ -709,8 +577,6 @@ A fiscal year and period as a string following the logical pattern `YYYYPPP` con
 
 The string must match the regex pattern `([1-9][0-9]{3})([0-9]{3})`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -718,14 +584,10 @@ The string must match the regex pattern `([1-9][0-9]{3})([0-9]{3})`.
 
 Fiscal - Year Variant
 
-
-
 </td>
 <td valign="top">
 
 A fiscal year variant, which describes the number of periods in a fiscal year and how they match the calendar year.
-
-
 
 </td>
 </tr>
@@ -734,14 +596,10 @@ A fiscal year variant, which describes the number of periods in a fiscal year an
 
 System Date - Created at
 
-
-
 </td>
 <td valign="top">
 
 A timestamp for when the database record was created.
-
-
 
 </td>
 </tr>
@@ -750,14 +608,10 @@ A timestamp for when the database record was created.
 
 System Date - Last changed at
 
-
-
 </td>
 <td valign="top">
 
 A timestamp for when the database record was last changed.
-
-
 
 </td>
 </tr>

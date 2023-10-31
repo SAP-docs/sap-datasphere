@@ -17,14 +17,10 @@ Each status shows the used storage and may indicate whether a space needs extra 
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -33,16 +29,12 @@ Description
 
 ![](images/Cold_Space_Status_ff2d06e.jpg)
 
-
-
 </td>
 <td valign="top">
 
 **Cold**
 
 The used storage is 5% or less.
-
-
 
 </td>
 </tr>
@@ -51,8 +43,6 @@ The used storage is 5% or less.
 
 ![](images/Green_Space_Status_f746833.jpg)
 
-
-
 </td>
 <td valign="top">
 
@@ -60,16 +50,12 @@ The used storage is 5% or less.
 
 The used storage is between 6% and 90%.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ![](images/Hot_Space_Status_c64656e.jpg)
-
-
 
 </td>
 <td valign="top">
@@ -82,16 +68,12 @@ This space is close to exceeding it's storage quota. It might make sense to dele
 
 If your space exceeds it's storage quota, it might change to a locked state.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ![](images/Status_Locked_Space_9fa9e79.jpg)
-
-
 
 </td>
 <td valign="top">

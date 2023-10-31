@@ -35,22 +35,16 @@ In this environment:
         <th valign="top">
 
         User ID
-
-
         
         </th>
         <th valign="top">
 
         Country
-
-
         
         </th>
         <th valign="top">
 
         Department
-
-
         
         </th>
         </tr>
@@ -58,22 +52,16 @@ In this environment:
         <td valign="top">
         
         anne.archer@acme.com
-
-
         
         </td>
         <td valign="top">
         
         US
-
-
         
         </td>
         <td valign="top">
         
         Sales
-
-
         
         </td>
         </tr>
@@ -81,22 +69,16 @@ In this environment:
         <td valign="top">
         
         jennifer.jones@acme.com
-
-
         
         </td>
         <td valign="top">
         
         FR
-
-
         
         </td>
         <td valign="top">
         
         Sales
-
-
         
         </td>
         </tr>
@@ -126,8 +108,8 @@ In this environment:
 
 For information about:
 
--   Applying a data access control to a data layer view, see [Apply a Data Access Control](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
--   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
+-   Applying a data access control to a data layer view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
+-   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
 -   Persisting data in a view that has a data access control applied to it \(see [View Persistency and Data Access Control](../Data-Integration-Monitor/view-persistency-and-data-access-control-7a4a983.md)\).
 
 > ### Note:  

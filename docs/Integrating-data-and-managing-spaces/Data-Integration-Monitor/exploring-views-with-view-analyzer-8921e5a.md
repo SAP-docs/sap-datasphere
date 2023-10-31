@@ -9,7 +9,7 @@ Use the *View Analyzer* to explore graphical or SQL views, and the entities they
 The *View Analyzer* provides you with statistics and useful information on each entity that composes your view, no matter the complexity of the view. It analyzes each view definition, the consumed views, the local tables and the data sources used by remote tables that compose your data model. You can then use this information to optimize your data model, and decide, for example, which view to persist when performance or technical problems such as out-of-memory errors occur.
 
 > ### Note:  
-> While working with complex views, see [View Persistency and Memory Consumption](view-persistency-and-memory-consumption-e3d0495.md).
+> While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
 To use the *View Analyzer*,
 
@@ -36,10 +36,10 @@ To use the *View Analyzer*,
 
         ![](images/View_Analyzer_Settings_With_Memory_Consumption_6fe57f8.png)
 
-        Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set a Priority and Statement Limits for a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Use the properties in the Workload Management section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume.") :arrow_upper_right:.
+        Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set a Priority and Statement Limits for a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Use the properties in the Workload Management section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume.") :arrow_upper_right:.
 
         > ### Caution:  
-        > To use the *View Analyzer* with memory consumption during persistency simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:.
+        > To use the *View Analyzer* with memory consumption during persistency simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:.
 
 
 3.  Analyze your results
@@ -66,15 +66,11 @@ To use the *View Analyzer*,
         <th valign="top">
 
         Column
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -82,15 +78,11 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Entity Name*
-
-
         
         </td>
         <td valign="top">
         
         Name of the analyzed entity. It can be a local or a remote table, a view, a shared entity, an external entity, an intelligent lookup and or a data access control.
-
-
         
         </td>
         </tr>
@@ -98,15 +90,11 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Persisted*
-
-
         
         </td>
         <td valign="top">
         
         Indicates if the view is already persisted, or the remote table replicated.
-
-
         
         </td>
         </tr>
@@ -114,8 +102,6 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Partitions*
-
-
         
         </td>
         <td valign="top">
@@ -133,15 +119,11 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Peak Memory \(MiB\)*
-
-
         
         </td>
         <td valign="top">
         
         Indicates the memory used during the simulation, or in case of the view already persisted, the memory used to persist the view.
-
-
         
         </td>
         </tr>
@@ -149,15 +131,11 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Row*
-
-
         
         </td>
         <td valign="top">
         
         Indicates the number of rows
-
-
         
         </td>
         </tr>
@@ -165,15 +143,11 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Duration*
-
-
         
         </td>
         <td valign="top">
         
         Indicates the duration in second to persist the view \(simulation or actual persistency\).
-
-
         
         </td>
         </tr>
@@ -181,15 +155,11 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Adapter*
-
-
         
         </td>
         <td valign="top">
         
         Indicates if an adapter is used to access the remote table source.
-
-
         
         </td>
         </tr>
@@ -209,15 +179,11 @@ To use the *View Analyzer*,
         <th valign="top">
 
         Action
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -225,8 +191,6 @@ To use the *View Analyzer*,
         <td valign="top">
         
         <span class="FPA-icons"></span> \(Sort\)
-
-
         
         </td>
         <td valign="top">
@@ -234,8 +198,6 @@ To use the *View Analyzer*,
         Set sort order and sort columns:
 
         ![](images/Sort_View_Analyzer_Results_dd1987f.png)
-
-
         
         </td>
         </tr>
@@ -243,8 +205,6 @@ To use the *View Analyzer*,
         <td valign="top">
         
         <span class="FPA-icons"></span> \(Filter\)
-
-
         
         </td>
         <td valign="top">
@@ -252,8 +212,6 @@ To use the *View Analyzer*,
         Filter your results:
 
         ![](images/Filter_View_Analyzer_Results_1615f32.png)
-
-
         
         </td>
         </tr>
@@ -261,8 +219,6 @@ To use the *View Analyzer*,
         <td valign="top">
         
         <span class="FPA-icons"></span> \(Inspect\)
-
-
         
         </td>
         <td valign="top">
@@ -270,8 +226,6 @@ To use the *View Analyzer*,
         Display the whole list of results that you can also export in CSV format:
 
         ![](images/View_Analyzer_Full_list_of_Results_6fb1d68.png)
-
-
         
         </td>
         </tr>
@@ -279,8 +233,6 @@ To use the *View Analyzer*,
         <td valign="top">
         
         *Start Analyzer*
-
-
         
         </td>
         <td valign="top">
@@ -298,8 +250,6 @@ To use the *View Analyzer*,
         <td valign="top">
         
         <span class="FPA-icons"></span> \(Lineage View\)
-
-
         
         </td>
         <td valign="top">

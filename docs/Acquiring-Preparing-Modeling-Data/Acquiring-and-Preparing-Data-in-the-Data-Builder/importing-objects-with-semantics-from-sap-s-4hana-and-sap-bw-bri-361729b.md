@@ -13,14 +13,10 @@ Objects with the following modeling patterns can be imported:
 
 Modeling Pattern
 
-
-
 </th>
 <th valign="top">
 
 Supported Connections
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Supported Connections
 
 `ANALYTICAL_QUERY`
 
-
-
 </td>
 <td valign="top">
 
 SAP BW bridge only
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ SAP BW bridge only
 
 `ANALYTICAL_CUBE`
 
-
-
 </td>
 <td valign="top">
 
 SAP BW bridge only
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ SAP BW bridge only
 
 `ANALYTICAL_FACT`
 
-
-
 </td>
 <td valign="top">
 
 SAP S/4HANA on-premise only
-
-
 
 </td>
 </tr>
@@ -77,14 +61,10 @@ SAP S/4HANA on-premise only
 
 `ANALYTICAL_DIMENSION`
 
-
-
 </td>
 <td valign="top">
 
 SAP BW bridge, SAP S/4HANA Cloud, SAP S/4HANA on-premise
-
-
 
 </td>
 </tr>
@@ -93,14 +73,10 @@ SAP BW bridge, SAP S/4HANA Cloud, SAP S/4HANA on-premise
 
 `LANGUAGE_DEPENDENT_TEXT`
 
-
-
 </td>
 <td valign="top">
 
 SAP BW bridge, SAP S/4HANA Cloud, SAP S/4HANA on-premise
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ SAP BW bridge, SAP S/4HANA Cloud, SAP S/4HANA on-premise
 
 `ANALYTICAL_PARENT_CHILD_HIERARCHY_NODE`
 
-
-
 </td>
 <td valign="top">
 
 SAP S/4HANA Cloud, SAP S/4HANA on-premise
-
-
 
 </td>
 </tr>

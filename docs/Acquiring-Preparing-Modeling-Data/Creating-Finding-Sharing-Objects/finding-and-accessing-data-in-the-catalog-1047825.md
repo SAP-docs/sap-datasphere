@@ -31,14 +31,10 @@ Filter the search results based on selected criteria to limit the number of resu
 
 Tab
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 All
 
-
-
 </td>
 <td valign="top">
 
 All the objects in the catalog are shown.
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ All the objects in the catalog are shown.
 
 Assets
 
-
-
 </td>
 <td valign="top">
 
 Shows only assets. An asset is any data or analytic object made available in the catalog. Assets are the objects that you provide governance around and publish to the catalog for users to discover, evaluate, and ultimately open and start using for their work.
-
-
 
 </td>
 </tr>
@@ -79,14 +67,10 @@ Shows only assets. An asset is any data or analytic object made available in the
 
 Terms
 
-
-
 </td>
 <td valign="top">
 
 Shows only terms. Terms are contained in a business glossary and provide meaning to your data. The business glossary provides a central and shared repository for defining terms and describing how and where they are used in the business.
-
-
 
 </td>
 </tr>
@@ -95,14 +79,10 @@ Shows only terms. Terms are contained in a business glossary and provide meaning
 
 KPIs
 
-
-
 </td>
 <td valign="top">
 
 Shows only key performance indicators \(KPIs\). KPIs measure progress towards a result such as a goal or objective. Use KPIs to track performance and provide an analytical basis for decision-making.
-
-
 
 </td>
 </tr>
@@ -111,14 +91,10 @@ Shows only key performance indicators \(KPIs\). KPIs measure progress towards a 
 
 Favorites
 
-
-
 </td>
 <td valign="top">
 
 Shows the assets, terms, and KPIs that have been marked as a favorite.
-
-
 
 </td>
 </tr>
@@ -127,14 +103,10 @@ Shows the assets, terms, and KPIs that have been marked as a favorite.
 
 Recent
 
-
-
 </td>
 <td valign="top">
 
 Shows the assets, terms, and KPIs that have been recently added to the catalog.
-
-
 
 </td>
 </tr>
@@ -162,14 +134,10 @@ You can select one or more values in each filter category in the *Filter By* sec
 
 To Display
 
-
-
 </th>
 <th valign="top">
 
 Select Filter Criteria
-
-
 
 </th>
 </tr>
@@ -178,14 +146,10 @@ Select Filter Criteria
 
 Assets that are a *Local Table*
 
-
-
 </td>
 <td valign="top">
 
 *Type:**Local Table*
-
-
 
 </td>
 </tr>
@@ -194,14 +158,10 @@ Assets that are a *Local Table*
 
 Assets that are a *Local Table* or *View*
 
-
-
 </td>
 <td valign="top">
 
 *Type:**Local Table*, *View*
-
-
 
 </td>
 </tr>
@@ -210,16 +170,12 @@ Assets that are a *Local Table* or *View*
 
 Assets that are a *Local Table* or *View* and on the system *SAP Datasphere*
 
-
-
 </td>
 <td valign="top">
 
 *Type:**Story*, *View*
 
 *System Type:* *SAP Datasphere*
-
-
 
 </td>
 </tr>
@@ -234,22 +190,16 @@ Assets that are a *Local Table* or *View* and on the system *SAP Datasphere*
 
 Filter Type
 
-
-
 </th>
 <th valign="top">
 
 Filter Category
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
@@ -257,44 +207,32 @@ Description
 
 Term
 
-
-
 </td>
 <td valign="top">
 
 Glossary
-
-
 
 </td>
 <td valign="top">
 
 Choose a glossary that can be expanded to filter on the category hierarchy, and then filter on terms within a category.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Term
-
-
 
 </td>
 <td valign="top">
 
 Published On
 
-
-
 </td>
 <td valign="top">
 
 Select the time range when the term was published.
-
-
 
 </td>
 </tr>
@@ -303,14 +241,10 @@ Select the time range when the term was published.
 
 Term
 
-
-
 </td>
 <td valign="top">
 
 Functional Status
-
-
 
 </td>
 <td valign="top">
@@ -324,8 +258,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -333,14 +265,10 @@ Choose one of the tabs and specify the options:
 
 Term
 
-
-
 </td>
 <td valign="top">
 
 Publication Status
-
-
 
 </td>
 <td valign="top">
@@ -351,30 +279,22 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Term
-
-
 
 </td>
 <td valign="top">
 
 Created On
 
-
-
 </td>
 <td valign="top">
 
 Select a time period or enter a specific date that the term or glossary was created.
-
-
 
 </td>
 </tr>
@@ -382,22 +302,16 @@ Select a time period or enter a specific date that the term or glossary was crea
 <td valign="top">
 
 Term
-
-
 
 </td>
 <td valign="top">
 
 Changed On
 
-
-
 </td>
 <td valign="top">
 
 Select a time period or enter a specific date that the term or glossary was modified.
-
-
 
 </td>
 </tr>
@@ -406,14 +320,10 @@ Select a time period or enter a specific date that the term or glossary was modi
 
 Term
 
-
-
 </td>
 <td valign="top">
 
 Keyword
-
-
 
 </td>
 <td valign="top">
@@ -424,8 +334,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -433,14 +341,10 @@ Choose one of the tabs and specify the options:
 
 Term
 
-
-
 </td>
 <td valign="top">
 
 ID
-
-
 
 </td>
 <td valign="top">
@@ -451,30 +355,22 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Asset
-
-
 
 </td>
 <td valign="top">
 
 Container
 
-
-
 </td>
 <td valign="top">
 
 Choose a container where the asset is located.
-
-
 
 </td>
 </tr>
@@ -483,14 +379,10 @@ Choose a container where the asset is located.
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Type
-
-
 
 </td>
 <td valign="top">
@@ -501,8 +393,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -510,14 +400,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Exposed For Consumption
-
-
 
 </td>
 <td valign="top">
@@ -528,8 +414,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -537,14 +421,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Semantic Usage
-
-
 
 </td>
 <td valign="top">
@@ -555,8 +435,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -564,14 +442,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Functional Status
-
-
 
 </td>
 <td valign="top">
@@ -587,8 +461,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -596,14 +468,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Publication Status
-
-
 
 </td>
 <td valign="top">
@@ -614,30 +482,22 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Asset
-
-
 
 </td>
 <td valign="top">
 
 Published On
 
-
-
 </td>
 <td valign="top">
 
 Select the time range when the asset was published.
-
-
 
 </td>
 </tr>
@@ -646,14 +506,10 @@ Select the time range when the asset was published.
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Remote System
-
-
 
 </td>
 <td valign="top">
@@ -664,8 +520,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -673,14 +527,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 System Type
-
-
 
 </td>
 <td valign="top">
@@ -691,8 +541,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -700,14 +548,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Related KPI Name
-
-
 
 </td>
 <td valign="top">
@@ -718,8 +562,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -727,14 +569,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Related Term Name
-
-
 
 </td>
 <td valign="top">
@@ -745,8 +583,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -754,14 +590,10 @@ Choose one of the tabs and specify the options:
 
 Asset
 
-
-
 </td>
 <td valign="top">
 
 Tag Hierarchies
-
-
 
 </td>
 <td valign="top">
@@ -772,30 +604,22 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 KPI
-
-
 
 </td>
 <td valign="top">
 
 Category
 
-
-
 </td>
 <td valign="top">
 
 Choose a category associated with the KPI. Categories can have multiple levels. You can choose the top-level category to include all the categories in that group, or one or more of the subcategories.
-
-
 
 </td>
 </tr>
@@ -803,22 +627,16 @@ Choose a category associated with the KPI. Categories can have multiple levels. 
 <td valign="top">
 
 KPI
-
-
 
 </td>
 <td valign="top">
 
 Created On
 
-
-
 </td>
 <td valign="top">
 
 Select a time period or enter a specific date that the KPI was created.
-
-
 
 </td>
 </tr>
@@ -826,22 +644,16 @@ Select a time period or enter a specific date that the KPI was created.
 <td valign="top">
 
 KPI
-
-
 
 </td>
 <td valign="top">
 
 Changed On
 
-
-
 </td>
 <td valign="top">
 
 Select a time period or enter a specific date that the KPI was edited.
-
-
 
 </td>
 </tr>
@@ -849,22 +661,16 @@ Select a time period or enter a specific date that the KPI was edited.
 <td valign="top">
 
 KPI
-
-
 
 </td>
 <td valign="top">
 
 Published On
 
-
-
 </td>
 <td valign="top">
 
 Select the time range when the KPI was published.
-
-
 
 </td>
 </tr>
@@ -873,14 +679,10 @@ Select the time range when the KPI was published.
 
 KPI
 
-
-
 </td>
 <td valign="top">
 
 Functional Status
-
-
 
 </td>
 <td valign="top">
@@ -894,8 +696,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -903,14 +703,10 @@ Choose one of the tabs and specify the options:
 
 KPI
 
-
-
 </td>
 <td valign="top">
 
 Publication Status
-
-
 
 </td>
 <td valign="top">
@@ -921,8 +717,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -930,14 +724,10 @@ Choose one of the tabs and specify the options:
 
 KPI
 
-
-
 </td>
 <td valign="top">
 
 ID
-
-
 
 </td>
 <td valign="top">
@@ -948,8 +738,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -957,14 +745,10 @@ Choose one of the tabs and specify the options:
 
 KPI
 
-
-
 </td>
 <td valign="top">
 
 Related KPI Name
-
-
 
 </td>
 <td valign="top">
@@ -975,8 +759,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -984,14 +766,10 @@ Choose one of the tabs and specify the options:
 
 KPI
 
-
-
 </td>
 <td valign="top">
 
 Related Term Name
-
-
 
 </td>
 <td valign="top">
@@ -1002,8 +780,6 @@ Choose one of the tabs and specify the options:
 
 *Define Conditions*: Create conditions and enter a value.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1011,14 +787,10 @@ Choose one of the tabs and specify the options:
 
 KPI
 
-
-
 </td>
 <td valign="top">
 
 Keyword
-
-
 
 </td>
 <td valign="top">
@@ -1028,8 +800,6 @@ Choose one of the tabs and specify the options:
 *Select Items*: Select one or more keywords defined in the KPI. If you have many keywords, you can refine the results in the following ways: enter a search term, sort by name or count, or view the options in a list, bar chart, or pie chart.
 
 *Define Conditions*: Create conditions and enter a value.
-
-
 
 </td>
 </tr>

@@ -21,14 +21,10 @@ The app shows a table including details of the contexts you are a member of:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Description
 
 Context Owner ID
 
-
-
 </td>
 <td valign="top">
 
 Shows the icon and name of the data provider who owns the context. By clicking on the name you can open the data provider profile page.
-
-
 
 </td>
 </tr>
@@ -53,14 +45,10 @@ Shows the icon and name of the data provider who owns the context. By clicking o
 
 Context Name
 
-
-
 </td>
 <td valign="top">
 
 Shows the icon and name of the context.
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ Shows the icon and name of the context.
 
 Hidden
 
-
-
 </td>
 <td valign="top">
 
 Specifies whether the data products of this context are hidden or visible on the landing page and via search. You can use this flag as a filter, to limit the visibility of data products which belong to a certain context only.
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ Specifies whether the data products of this context are hidden or visible on the
 
 Validity
 
-
-
 </td>
 <td valign="top">
 
 Shows the validity date of the context. If no date is specified, the context will not expire.
-
-
 
 </td>
 </tr>
@@ -100,8 +80,6 @@ Shows the validity date of the context. If no date is specified, the context wil
 <td valign="top">
 
 Status
-
-
 
 </td>
 <td valign="top">
@@ -120,14 +98,10 @@ The status of the context can be:
 
 *\>*
 
-
-
 </td>
 <td valign="top">
 
 Opens the details area where further information on the context \(like description, domains, etc\) is displayed. Click on *X* to close the details area.
-
-
 
 </td>
 </tr>

@@ -4,7 +4,7 @@
 
 # Monitoring Flows
 
-In the Flow Monitor, you can find all the deployed flows per space.
+In the *Flow Monitor*, you can find all the deployed flows per space.
 
 
 
@@ -12,11 +12,11 @@ In the Flow Monitor, you can find all the deployed flows per space.
 
 ## Prerequisites
 
--   To use the Flow Monitor, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
+-   To use the *Flow Monitor*, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
 
--   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
--   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -25,7 +25,7 @@ In the Flow Monitor, you can find all the deployed flows per space.
 
 ## Context
 
-In the Flow Monitor, you can find all the deployed flows \(data flows and replication flows\) per space. Here, you can run the deployed flows, and you can view and monitor the execution details of the flows.
+In the *Flow Monitor*, you can find all the deployed flows \(data flows, replication flows and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the execution details of the flows.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -50,15 +50,11 @@ For more information and points to consider when using replication flows, see al
     <th valign="top">
 
     Column
-
-
     
     </th>
     <th valign="top">
 
     Information
-
-
     
     </th>
     </tr>
@@ -66,15 +62,11 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Name*
-
-
     
     </td>
     <td valign="top">
     
-    Name of the flow
-
-
+    Name of the flow.
     
     </td>
     </tr>
@@ -82,8 +74,6 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Last Run Status*
-
-
     
     </td>
     <td valign="top">
@@ -101,8 +91,6 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Frequency*
-
-
     
     </td>
     <td valign="top">
@@ -119,8 +107,6 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Duration*
-
-
     
     </td>
     <td valign="top">
@@ -138,15 +124,11 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Last Run Start*
-
-
     
     </td>
     <td valign="top">
     
     Provides information on when the last run of the flow started.
-
-
     
     </td>
     </tr>
@@ -154,15 +136,11 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Last Run End*
-
-
     
     </td>
     <td valign="top">
     
     Provides information on when the last run of the flow ended.
-
-
     
     </td>
     </tr>
@@ -170,15 +148,11 @@ For more information and points to consider when using replication flows, see al
     <td valign="top">
     
     *Next Run*
-
-
     
     </td>
     <td valign="top">
     
     If a schedule is set for a data flow, you can see here by when the next run is scheduled.
-
-
     
     </td>
     </tr>
@@ -209,6 +183,6 @@ For more information and points to consider when using replication flows, see al
 
 4.  You can analyze errors that have occurred during your data flow runs with the *Checkup* function that creates a detailed log. Diagnostic information can also be downloaded for a flow: Click <span class="SAP-icons"></span> Download Run Details and save the JSON file to provide it to the SAP Support for troubleshooting.
 
-5.  To view and modify a flow, click <span class="SAP-icons"></span> Open in Editor.
+5.  6.  To view and modify a flow, click <span class="SAP-icons"></span> Open in Data Builder.
 
 

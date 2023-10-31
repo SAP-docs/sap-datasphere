@@ -31,14 +31,10 @@ The connection type supports the data flow feature.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 *Storage Account Name*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the Azure Data Lake Storage Gen2 used for authentication. 
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ Enter the name of the Azure Data Lake Storage Gen2 used for authentication.
 
 *Root Path*  
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. Any path used with this connection will be prefixed with this root path. 
-
-
 
 </td>
 </tr>
@@ -87,14 +75,10 @@ Enter the name of the Azure Data Lake Storage Gen2 used for authentication.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -102,8 +86,6 @@ Description
 <td valign="top">
 
 *Authentication Type*  
-
-
 
 </td>
 <td valign="top">
@@ -117,8 +99,6 @@ You can select:
 -   *OAuth 2.0*
 
 Shared key provides full access to your storage account while with shared access signature you can provide secure delegate access to the storage account resources.
-
-
 
 </td>
 </tr>
@@ -137,14 +117,10 @@ If *Authentication Type* = *Shared Key*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -153,14 +129,10 @@ Description
 
 *Account Key*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the account key used in the shared key authorization. 
-
-
 
 </td>
 </tr>
@@ -179,14 +151,10 @@ If *Authentication Type* = *Shared Access Signature*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -195,14 +163,10 @@ Description
 
 *SAS Token*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the shared access signature token \(SAS token\) used in shared access signature authentication. 
-
-
 
 </td>
 </tr>
@@ -221,14 +185,10 @@ If *Authentication Type* = *OAuth 2.0*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -236,8 +196,6 @@ Description
 <td valign="top">
 
 *OAuth Grant Type*  
-
-
 
 </td>
 <td valign="top">
@@ -259,14 +217,10 @@ You can select:
 
 \[if *OAuth Grant Type* = *Client Credentials with X.509 Client Certificate* or *Client Credentials*\] *OAuth Token Endpoint*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the token endpoint that the application must use to get the access token. 
-
-
 
 </td>
 </tr>
@@ -275,14 +229,10 @@ Enter the token endpoint that the application must use to get the access token.
 
 \[if *OAuth Grant Type* = *User Name and Password*\] *OAuth Client Endpoint*  
 
-
-
 </td>
 <td valign="top">
 
 Enter the client endpoint to get the access token for authorization method *User Name and Password*. 
-
-
 
 </td>
 </tr>
@@ -299,14 +249,10 @@ Enter the client endpoint to get the access token for authorization method *User
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -315,14 +261,10 @@ Description
 
 *Client ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client ID. 
-
-
 
 </td>
 </tr>
@@ -331,16 +273,12 @@ Enter the client ID.
 
 *X.509 Client Certificate*
 
-
-
 </td>
 <td valign="top">
 
 Upload the X.509 client certificate.
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
-
-
 
 </td>
 </tr>
@@ -349,16 +287,12 @@ Choose <span class="SAP-icons"></span> \(Browse\) and select the file from yo
 
 *X.509 Client Private Key*
 
-
-
 </td>
 <td valign="top">
 
 Upload the X.509 client's private key.
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
-
-
 
 </td>
 </tr>
@@ -377,14 +311,10 @@ If *OAuth Grant Type* = *Client Credentials*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -393,14 +323,10 @@ Description
 
 *Client ID*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client ID. 
-
-
 
 </td>
 </tr>
@@ -409,14 +335,10 @@ Enter the client ID.
 
 *Client Secret*
 
-
-
 </td>
 <td valign="top">
 
 Enter the client secret.
-
-
 
 </td>
 </tr>
@@ -431,14 +353,10 @@ If *OAuth Grant Type* = *User Name And Password*:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -447,14 +365,10 @@ Description
 
 *User Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the OAuth user.
-
-
 
 </td>
 </tr>
@@ -463,14 +377,10 @@ Enter the name of the OAuth user.
 
 *Password \(OAuth 2.0\)*
 
-
-
 </td>
 <td valign="top">
 
 Enter the OAuth password.
-
-
 
 </td>
 </tr>

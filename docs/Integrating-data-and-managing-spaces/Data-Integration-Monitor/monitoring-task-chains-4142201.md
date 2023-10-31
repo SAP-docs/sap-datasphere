@@ -6,7 +6,7 @@
 
 Monitor the status and progress of running and previously run task chains.
 
-To view all task chains that are scheduled to run, are currently running, or have already been run in your space, go to *Data Integration Monitor* and select the *Task Chain Monitor* tab:
+To view all task chains that are scheduled to run, are currently running, or have already been run in your space, go to *Data Integration Monitor* \> ** \> *Task Chain Monitor*:
 
 ![](images/task_chain_list_f82c833.png)
 
@@ -19,30 +19,22 @@ The monitor displays information on your task chains:
 
 Properties
 
-
-
 </th>
 <th valign="top">
 
 Comments
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-*Task chain name*
-
-
+*Task Chain Name*
 
 </td>
 <td valign="top">
 
 Name of the task chain.
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ Name of the task chain.
 
 *Last Run Status*
 
-
-
 </td>
 <td valign="top">
 
 Status of the task chain after last run.
-
-
 
 </td>
 </tr>
@@ -66,8 +54,6 @@ Status of the task chain after last run.
 <td valign="top">
 
 *Frequency*
-
-
 
 </td>
 <td valign="top">
@@ -87,14 +73,10 @@ See if a schedule is defined for the task chain:
 
 *Duration*
 
-
-
 </td>
 <td valign="top">
 
 How long it took to run the task chain.
-
-
 
 </td>
 </tr>
@@ -103,14 +85,10 @@ How long it took to run the task chain.
 
 *Last Run Start*
 
-
-
 </td>
 <td valign="top">
 
 Date and Time when the last run started.
-
-
 
 </td>
 </tr>
@@ -119,14 +97,10 @@ Date and Time when the last run started.
 
 *Last Run End*
 
-
-
 </td>
 <td valign="top">
 
 Date and Time when the last run ended.
-
-
 
 </td>
 </tr>
@@ -135,21 +109,17 @@ Date and Time when the last run ended.
 
 *Next Run*
 
-
-
 </td>
 <td valign="top">
 
 When the next run is scheduled.
-
-
 
 </td>
 </tr>
 </table>
 
 > ### Note:  
-> A task chain consists of multiple tasks that run one after another. As it takes some time for the task chain monitor to collect and update all a task’s status information, the task runtime information displayed here might not exactly match the task runtime information shown in a respective detail monitor, for example, in the View Persistency Monitor or Data Flow Monitor.
+> A task chain consists of multiple tasks that run one after another. As it takes some time for the task chain monitor to collect and update all a task’s status information, the task runtime information displayed here might not exactly match the task runtime information shown in a respective detail monitor, for example, in the *View Persistency Monitor* or *Data Flow Monitor*.
 
 Click *Run* to manually start a new run of a selected task chain. If a task chain’s last run failed, you can also choose the *Run* \> *Retry Run* option to retry the failed task chain’s execution from the point at which it previously failed.
 

@@ -35,15 +35,11 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -51,15 +47,11 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <td valign="top">
     
     Business Name 
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
     </td>
     </tr>
@@ -67,8 +59,6 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <td valign="top">
     
     Technical Name 
-
-
     
     </td>
     <td valign="top">
@@ -88,8 +78,6 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <td valign="top">
     
     Semantic Usage
-
-
     
     </td>
     <td valign="top">
@@ -114,15 +102,11 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <td valign="top">
     
     Delta Capture
-
-
     
     </td>
     <td valign="top">
     
     Track the delta changes that are made in the table adding 2 delta capture columns: `Change Type` and `Change Date`. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
-
-
     
     </td>
     </tr>
@@ -130,15 +114,11 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <td valign="top">
     
     Source Object \(Open SQL Schema/HDI Container\)
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
-
-
     
     </td>
     </tr>
@@ -146,8 +126,6 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
@@ -155,8 +133,6 @@ This procedure explains how to create an empty table by defining its columns. Yo
     \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>

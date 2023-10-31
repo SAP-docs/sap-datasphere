@@ -24,15 +24,11 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     <th valign="top">
 
     Read Access to Individual Objects
-
-
     
     </th>
     <th valign="top">
 
     Read Access to the Schema
-
-
     
     </th>
     </tr>
@@ -97,15 +93,11 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     <th valign="top">
 
     Write Access to Individual Objects
-
-
     
     </th>
     <th valign="top">
 
     Write Access to the Schema
-
-
     
     </th>
     </tr>

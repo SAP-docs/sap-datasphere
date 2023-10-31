@@ -54,22 +54,16 @@ SAP Datasphere can be hosted either on SAP data centers or on non-SAP data cente
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Mandatory
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -77,15 +71,11 @@ SAP Datasphere can be hosted either on SAP data centers or on non-SAP data cente
     <td valign="top">
     
     sp
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
@@ -105,8 +95,6 @@ SAP Datasphere can be hosted either on SAP data centers or on non-SAP data cente
     <td valign="top">
     
     index
-
-
     
     </td>
     <td valign="top">

@@ -13,21 +13,15 @@ It is important to set the necessary keys for your entity, based on its *Semanti
 
 Semantic Usage
 
-
-
 </th>
 <th valign="top">
 
 Keys Required
 
-
-
 </th>
 <th valign="top">
 
 Mapping Keys When Creating Associations
-
-
 
 </th>
 </tr>
@@ -38,14 +32,10 @@ Mapping Keys When Creating Associations
 
 See [Creating a Fact](creating-a-fact-30089bd.md).
 
-
-
 </td>
 <td valign="top">
 
 You may set one or more key attributes for a *Fact*, but none are required.
-
-
 
 </td>
 <td valign="top">
@@ -65,8 +55,6 @@ A *Fact* can point to a:
 *Dimension*
 
 See [Creating a Dimension](creating-a-dimension-5aae0e9.md).
-
-
 
 </td>
 <td valign="top">
@@ -98,8 +86,6 @@ A *Dimension* can point to a:
 
 See [Create a Text Entity for Attribute Translation](create-a-text-entity-for-attribute-translation-b25726d.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -116,8 +102,6 @@ You must set two or three key attributes for a *Text Entity*:
 
 A *Text Entity* must not point to other entities.
 
-
-
 </td>
 </tr>
 <tr>
@@ -126,8 +110,6 @@ A *Text Entity* must not point to other entities.
 *Hierarchy*
 
 See [Creating an External Hierarchy](creating-an-external-hierarchy-dbac7a8.md).
-
-
 
 </td>
 <td valign="top">
@@ -143,8 +125,6 @@ You must set exactly one key attribute for a *Hierarchy*:
 
 A *Hierarchy* will generally not point to other entities.
 
-
-
 </td>
 </tr>
 <tr>
@@ -153,8 +133,6 @@ A *Hierarchy* will generally not point to other entities.
 *Hierarchy with Directory*
 
 See [Creating a Hierarchy with Directory](creating-a-hierarchy-with-directory-36c39ee.md).
-
-
 
 </td>
 <td valign="top">
@@ -183,21 +161,15 @@ A *Hierarchy with Directory* must point to:
 
 *Relational Dataset*
 
-
-
 </td>
 <td valign="top">
 
 You may set one or more key attributes for a *Relational Dataset*, but none are required.
 
-
-
 </td>
 <td valign="top">
 
 A *Relational Dataset* can point to any other entity and should generally follow the rules for dimensions.
-
-
 
 </td>
 </tr>

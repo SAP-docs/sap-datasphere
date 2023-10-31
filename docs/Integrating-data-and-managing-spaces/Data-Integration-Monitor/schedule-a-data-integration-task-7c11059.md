@@ -19,7 +19,7 @@ You can schedule or unschedule data integration tasks such as remote table repli
     > ### Note:  
     > Your consent is valid for 12 months. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears 10 days before the expiry of consent.
 
-    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -57,15 +57,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <th valign="top">
 
     Object
-
-
     
     </th>
     <th valign="top">
 
     Action
-
-
     
     </th>
     </tr>
@@ -73,15 +69,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **Remote table**
-
-
     
     </td>
     <td valign="top">
     
     Select *Schedule Replication* \> *Create Snapshot Schedule*.
-
-
     
     </td>
     </tr>
@@ -89,15 +81,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **View Persistency**
-
-
     
     </td>
     <td valign="top">
     
     Select *Schedule* \> *Create Schedule*.
-
-
     
     </td>
     </tr>
@@ -105,8 +93,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **Data flow**
-
-
     
     </td>
     <td valign="top">
@@ -124,8 +110,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     **Task Chain**
-
-
     
     </td>
     <td valign="top">
@@ -158,22 +142,16 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <th valign="top">
 
     Categories
-
-
     
     </th>
     <th valign="top">
 
     Possible Values
-
-
     
     </th>
     <th valign="top">
 
     Examples
-
-
     
     </th>
     </tr>
@@ -181,8 +159,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     *Frequency*
-
-
     
     </td>
     <td valign="top">
@@ -248,8 +224,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     *Time Range*
-
-
     
     </td>
     <td valign="top">
@@ -285,22 +259,16 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <td valign="top">
     
     *Preview*
-
-
     
     </td>
     <td valign="top">
     
     You can see a preview of the schedule and when the five next runs are planned.
-
-
     
     </td>
     <td valign="top">
     
     Schedules are created in Coordinated Universal Time \(UTC\) but you can also view the next runs in local time.
-
-
     
     </td>
     </tr>
@@ -331,7 +299,7 @@ Once a schedule is defined, you can adjust the scheduling settings at any time s
 
 The schedule can be removed at any time via the menu *Schedule/Schedule Replication* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
 
-You may also pause and then later resume execution of scheduled tasks via the menu *Schedule/Schedule Replication* \> *Edit Schedule* option. See [Suspend or Pause a Scheduled Task](suspend-or-pause-a-scheduled-task-5eb55cb.md) for more information.
+You may also pause and then later resume execution of scheduled tasks via the menu *Schedule/Schedule Replication* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 
 **Related Information**  
 

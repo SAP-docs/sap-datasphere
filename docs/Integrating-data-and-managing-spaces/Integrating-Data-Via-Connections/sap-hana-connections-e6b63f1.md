@@ -12,7 +12,7 @@ This topic contains the following sections:
 -   [Configuring Connection Properties \(SAP HANA Cloud\)](sap-hana-connections-e6b63f1.md#loio27aebc8432aa419da75c5fc650981f24)
 -   [Configuring Connection Properties \(SAP HANA on-premise\)](sap-hana-connections-e6b63f1.md#loio77cec6a1e8d04371a791658e641dc0d5)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -27,14 +27,10 @@ For information about the required prerequisites, see [Prepare Connectivity to S
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -43,16 +39,12 @@ Additional Information
 
 Remote Tables
 
-
-
 </td>
 <td valign="top">
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
 For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
-
 
 </td>
 </tr>
@@ -61,14 +53,10 @@ For remote tables, real-time replication is supported. For information about any
 
 Data Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source objects to a data flow.
-
-
 
 </td>
 </tr>
@@ -77,14 +65,10 @@ You can use the connection to add source objects to a data flow.
 
 Replication Flows
 
-
-
 </td>
 <td valign="top">
 
 You can use the connection to add source and target objects to a replication flow.
-
-
 
 </td>
 </tr>
@@ -114,14 +98,10 @@ You can use the connection to add source and target objects to a replication flo
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -130,14 +110,10 @@ Description
 
 *Category* 
 
-
-
 </td>
 <td valign="top">
 
 Select *Cloud* to connect to an SAP HANA Cloud instance. 
-
-
 
 </td>
 </tr>
@@ -146,14 +122,10 @@ Select *Cloud* to connect to an SAP HANA Cloud instance.
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the fully qualified host name or IP address on which the remote SAP HANA server is running. 
-
-
 
 </td>
 </tr>
@@ -162,16 +134,12 @@ Enter the fully qualified host name or IP address on which the remote SAP HANA s
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the SQL port number of the remote SAP HANA server. 
 
 You can find the SQL port in the list of service details in the SAP HANA Cockpit. For more information, see [Service Details](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/latest/en-US/1d4b4fe9ee8b448a9977bfcc1fc55248.html?q=SQL%20port) in the *SAP HANA Administration with SAP HANA Cockpit* documentation.
-
-
 
 </td>
 </tr>
@@ -188,14 +156,10 @@ You can find the SQL port in the list of service details in the SAP HANA Cockpit
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -204,14 +168,10 @@ Description
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the database user name \(case sensitive\). 
-
-
 
 </td>
 </tr>
@@ -220,14 +180,10 @@ Enter the database user name \(case sensitive\).
 
 *Password* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the password of the SAP HANA database user. 
-
-
 
 </td>
 </tr>
@@ -244,14 +200,10 @@ Enter the password of the SAP HANA database user.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -259,8 +211,6 @@ Description
 <td valign="top">
 
 *Remote Tables*
-
-
 
 </td>
 <td valign="top">
@@ -276,14 +226,10 @@ Complete the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -292,8 +238,6 @@ Description
 
 *Data Provisioning Option*
 
-
-
 </td>
 <td valign="top">
 
@@ -301,16 +245,12 @@ Description
 
 The option for SAP HANA Cloud is always set to *Direct* because no middleware is required.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 *Data Access*
-
-
 
 </td>
 <td valign="top">
@@ -323,8 +263,6 @@ Select how you want to access data from source objects:
 
 
 For more information about the use cases for the options, see [Remote Tables in Data Access Remote Only Vs Data Access Remote and Replication](../Data-Integration-Monitor/remote-tables-in-data-access-remote-only-vs-data-access-remote-and-replication-9b9db14.md).
-
-
 
 </td>
 </tr>
@@ -339,14 +277,10 @@ For more information about the use cases for the options, see [Remote Tables in 
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>
@@ -355,14 +289,10 @@ For more information about the use cases for the options, see [Remote Tables in 
 
 *Replication Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. 
-
-
 
 </td>
 </tr>
@@ -387,14 +317,10 @@ For more information about the use cases for the options, see [Remote Tables in 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -403,14 +329,10 @@ Description
 
 *Category* 
 
-
-
 </td>
 <td valign="top">
 
 Select *On-Premise* to connect to SAP HANA \(on-premise\). 
-
-
 
 </td>
 </tr>
@@ -419,14 +341,10 @@ Select *On-Premise* to connect to SAP HANA \(on-premise\).
 
 *Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the fully qualified host name or IP address on which the remote SAP HANA server is running. 
-
-
 
 </td>
 </tr>
@@ -435,16 +353,12 @@ Enter the fully qualified host name or IP address on which the remote SAP HANA s
 
 *Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the SQL port number of the remote SAP HANA server. 
 
 You can find the SQL port in the list of service details in the SAP HANA Cockpit. For more information, see [Service Details](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/latest/en-US/1d4b4fe9ee8b448a9977bfcc1fc55248.html?q=SQL%20port) in the *SAP HANA Administration with SAP HANA Cockpit* documentation.
-
-
 
 </td>
 </tr>
@@ -461,14 +375,10 @@ You can find the SQL port in the list of service details in the SAP HANA Cockpit
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -476,8 +386,6 @@ Description
 <td valign="top">
 
 *Use Cloud Connector* 
-
-
 
 </td>
 <td valign="top">
@@ -490,16 +398,12 @@ Set to *true* if your source is an on-premise source and you want to use the con
 
 The default is *false*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \[if *Use Cloud Connector* = *true*\] *Location* 
-
-
 
 </td>
 <td valign="top">
@@ -518,16 +422,12 @@ The default is *false*.
 
 \[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
-
-
 
 </td>
 </tr>
@@ -536,14 +436,10 @@ If host and port entered in the connection details match the virtual host and po
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual host that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -552,14 +448,10 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 
 \[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
-
-
 
 </td>
 </tr>
@@ -576,14 +468,10 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -591,8 +479,6 @@ Description
 <td valign="top">
 
 *Enable SSL encryption* 
-
-
 
 </td>
 <td valign="top">
@@ -613,8 +499,6 @@ Select whether to enable SSL encryption on the connection to the remote SAP HANA
 
 \[if *Enable SSL encryption* = *true*\] *Validate Server Certificate* 
 
-
-
 </td>
 <td valign="top">
 
@@ -627,7 +511,7 @@ If set to *false*, the host name used for the connection is used for verificatio
 > 
 > -   When using SAP HANA smart data access via Cloud Connector for remote tables: To validate the server certificate, the certificate must have been uploaded to SAP Datasphere.
 > 
->     For more information, see [Upload Certificates (Required for Remote Tables)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "To enable a secure SSL/TLS-based connection for a connection type that supports remote tables but doesn't use a Data Provisioning Agent, you need to upload a server certificate to SAP Datasphere.") :arrow_upper_right:.
+>     For more information, see [Upload Certificates (Required for Remote Tables)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/46f5467adc5242deb1f6b68083e72994.html "To enable a secure SSL/TLS-based connection for a connection type that supports remote tables but doesn't use a Data Provisioning Agent, you need to upload a server certificate to SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -637,8 +521,6 @@ If set to *false*, the host name used for the connection is used for verificatio
 <td valign="top">
 
 \[if *Validate Server Certificate* = *true*\] *Host Name in Server Certificate* 
-
-
 
 </td>
 <td valign="top">
@@ -665,14 +547,10 @@ Verify the host name field of the server certificate:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -681,14 +559,10 @@ Description
 
 *User Name* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the database user name \(case sensitive\). 
-
-
 
 </td>
 </tr>
@@ -697,14 +571,10 @@ Enter the database user name \(case sensitive\).
 
 *Password* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the password of the SAP HANA database user. 
-
-
 
 </td>
 </tr>
@@ -721,14 +591,10 @@ Enter the password of the SAP HANA database user.
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -736,8 +602,6 @@ Description
 <td valign="top">
 
 *Remote Tables*
-
-
 
 </td>
 <td valign="top">
@@ -751,14 +615,10 @@ To enable *Remote Tables*, complete the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -766,8 +626,6 @@ Description
 <td valign="top">
 
 *Data Provisioning Option*
-
-
 
 </td>
 <td valign="top">
@@ -784,7 +642,7 @@ Select the midleware to use when connecting to and accessing the on-premise syst
 > ### Note:  
 > When creating a connection to SAP HANA on-premise using SAP HANA smart data access via Cloud Connector, the system checks for a required internal service. In the connection overview, a warning icon indicates that the service might not be ready yet. This happens for the first connection you create or when you create a connection after the service has been disabled \(after an automated weekly check returning that there is no such connection anymore\). Getting the service ready might take up to 45 minutes. Validate the connection and check the message details for more information.
 > 
-> For troubleshooting the Cloud Connector, see [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/42f683edbf6742b19cf15e7a18b8a607.html "These are some of the most common issues that can occur when you use the Cloud Connector to connect to on-premise remote sources via SAP HANA Smart Data Access.") :arrow_upper_right:.
+> For troubleshooting the Cloud Connector, see [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/42f683edbf6742b19cf15e7a18b8a607.html "These are some of the most common issues that can occur when you use the Cloud Connector to connect to on-premise remote sources via SAP HANA Smart Data Access.") :arrow_upper_right:.
 
 
 
@@ -795,14 +653,10 @@ Select the midleware to use when connecting to and accessing the on-premise syst
 
 \[if *Data Provisioning Option* = *Data Provisioning Agent*\] *Data Provisioning Agent*
 
-
-
 </td>
 <td valign="top">
 
 Select an agent from the list of agents configured for SAP Datasphere. 
-
-
 
 </td>
 </tr>
@@ -810,8 +664,6 @@ Select an agent from the list of agents configured for SAP Datasphere.
 <td valign="top">
 
 \[if *Data Provisioning Option* = *Cloud Connector* or *Data Provisioning Agent*\] *Data Access*
-
-
 
 </td>
 <td valign="top">
@@ -824,8 +676,6 @@ Select how you want to access data from source objects:
 
 
 For more information about the use cases for the options, see [Remote Tables in Data Access Remote Only Vs Data Access Remote and Replication](../Data-Integration-Monitor/remote-tables-in-data-access-remote-only-vs-data-access-remote-and-replication-9b9db14.md).
-
-
 
 </td>
 </tr>
@@ -840,14 +690,10 @@ For more information about the use cases for the options, see [Remote Tables in 
 
 *Data Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
-
-
 
 </td>
 </tr>
@@ -856,14 +702,10 @@ For more information about the use cases for the options, see [Remote Tables in 
 
 *Replication Flows*
 
-
-
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
-
-
 
 </td>
 </tr>

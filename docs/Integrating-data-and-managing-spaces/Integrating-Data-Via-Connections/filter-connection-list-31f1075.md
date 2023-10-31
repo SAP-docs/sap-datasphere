@@ -18,15 +18,11 @@ Select one or more filter values to restrict the connection list according to yo
     <th valign="top">
 
     Filter Category
-
-
     
     </th>
     <th valign="top">
 
     Values
-
-
     
     </th>
     </tr>
@@ -34,8 +30,6 @@ Select one or more filter values to restrict the connection list according to yo
     <td valign="top">
     
     *Features* that a connection type supports
-
-
     
     </td>
     <td valign="top">
@@ -47,8 +41,6 @@ Select one or more filter values to restrict the connection list according to yo
     *Remote Tables*
 
     *Replication Flows*
-
-
     
     </td>
     </tr>
@@ -56,8 +48,6 @@ Select one or more filter values to restrict the connection list according to yo
     <td valign="top">
     
     *Categories* that the corresponding source belongs to
-
-
     
     </td>
     <td valign="top">
@@ -65,8 +55,6 @@ Select one or more filter values to restrict the connection list according to yo
     *Cloud*
 
     *On-Premise*
-
-
     
     </td>
     </tr>
@@ -74,8 +62,6 @@ Select one or more filter values to restrict the connection list according to yo
     <td valign="top">
     
     *Sources* that you would like to connect
-
-
     
     </td>
     <td valign="top">
@@ -85,8 +71,6 @@ Select one or more filter values to restrict the connection list according to yo
     *Partner Tools*
 
     *SAP*
-
-
     
     </td>
     </tr>

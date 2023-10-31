@@ -43,14 +43,10 @@ Measures have the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Description
 
 Business Name 
 
-
-
 </td>
 <td valign="top">
 
 Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
 
 </td>
 </tr>
@@ -74,8 +66,6 @@ Enter a descriptive name to help users identify the object. This name can be cha
 <td valign="top">
 
 Technical Name 
-
-
 
 </td>
 <td valign="top">
@@ -96,8 +86,6 @@ To override the default technical name, enter a new one in the field. Technical 
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
@@ -105,16 +93,12 @@ Select the type of data that the column will contain.
 
 For a list of available data types and their supported data type conversions, see [Column Data Types](../Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Aggregation
-
-
 
 </td>
 <td valign="top">
@@ -141,8 +125,6 @@ Choose from the following:
 
 Semantic Type
 
-
-
 </td>
 <td valign="top">
 
@@ -163,14 +145,10 @@ Choose from the following:
 
 Unit Column
 
-
-
 </td>
 <td valign="top">
 
 Select an attribute with a semantic type of *Currency Code* or *Unit of Measure* to complete the semantic definition of the column. 
-
-
 
 </td>
 </tr>
@@ -178,8 +156,6 @@ Select an attribute with a semantic type of *Currency Code* or *Unit of Measure*
 <td valign="top">
 
 Default Value
-
-
 
 </td>
 <td valign="top">
@@ -198,8 +174,6 @@ Enter an appropriate default value for the column.
 
 Not Null
 
-
-
 </td>
 <td valign="top">
 
@@ -216,8 +190,6 @@ Select this option to indicate that the column must contain a value.
 <td valign="top">
 
 Show
-
-
 
 </td>
 <td valign="top">

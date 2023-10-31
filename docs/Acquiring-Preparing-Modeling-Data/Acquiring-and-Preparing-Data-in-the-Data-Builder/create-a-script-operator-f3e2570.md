@@ -41,15 +41,11 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -57,15 +53,11 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     <td valign="top">
     
     Label
-
-
     
     </td>
     <td valign="top">
     
     Provide a suitable name for the operator.
-
-
     
     </td>
     </tr>
@@ -73,15 +65,11 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     <td valign="top">
     
     Code Language
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] The supported language is Python.
-
-
     
     </td>
     </tr>

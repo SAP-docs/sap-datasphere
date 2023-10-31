@@ -38,15 +38,11 @@ Multiple results are input records that are matched with two or more lookup reco
     <th valign="top">
 
     Tools
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -54,15 +50,11 @@ Multiple results are input records that are matched with two or more lookup reco
     <td valign="top">
     
     Reject
-
-
     
     </td>
     <td valign="top">
     
     Reject all the match candidates for the selected input records and move the input records to the *Unmatched* tab.
-
-
     
     </td>
     </tr>
@@ -70,15 +62,11 @@ Multiple results are input records that are matched with two or more lookup reco
     <td valign="top">
     
     <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
-
-
     
     </td>
     <td valign="top">
     
     Collapse or expand all pairing groups.
-
-
     
     </td>
     </tr>
@@ -86,15 +74,11 @@ Multiple results are input records that are matched with two or more lookup reco
     <td valign="top">
     
     Rows per Pairing Group
-
-
     
     </td>
     <td valign="top">
     
     Specify the maximum number of rows to display for each pairing group.
-
-
     
     </td>
     </tr>
@@ -102,15 +86,11 @@ Multiple results are input records that are matched with two or more lookup reco
     <td valign="top">
     
     Match
-
-
     
     </td>
     <td valign="top">
     
     Match all the records in the selected pairing group to the selected lookup record.
-
-
     
     </td>
     </tr>
@@ -118,15 +98,11 @@ Multiple results are input records that are matched with two or more lookup reco
     <td valign="top">
     
     Match Records
-
-
     
     </td>
     <td valign="top">
     
     Select whether to display only *Match Candidates* for the selected pairing group or *All Records* in the lookup entity.
-
-
     
     </td>
     </tr>
@@ -134,8 +110,6 @@ Multiple results are input records that are matched with two or more lookup reco
     <td valign="top">
     
     <span class="FPA-icons"></span> \(Settings\)
-
-
     
     </td>
     <td valign="top">
@@ -143,8 +117,6 @@ Multiple results are input records that are matched with two or more lookup reco
     Select and reorder table columns. 
 
     In the right-hand lookup records table *View Settings* dialog, you can use the *Sort* and *Filter* tabs to sort on and filter by values in multiple columns.
-
-
     
     </td>
     </tr>

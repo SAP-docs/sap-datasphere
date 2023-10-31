@@ -20,15 +20,11 @@ By default, table data is stored on disk. You can improve performance by enablin
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -36,15 +32,11 @@ By default, table data is stored on disk. You can improve performance by enablin
     <td valign="top">
     
     In-Memory Storage
-
-
     
     </td>
     <td valign="top">
     
     Enable this option to store the table data directly in memory \(hot store\). By default, table data is stored on disk \(warm store\).
-
-
     
     </td>
     </tr>

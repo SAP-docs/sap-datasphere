@@ -20,15 +20,11 @@ If one or more of the source tables of your view transform is modified, then the
     <th valign="top">
 
     Change in Source
-
-
     
     </th>
     <th valign="top">
 
     Impact
-
-
     
     </th>
     </tr>
@@ -36,8 +32,6 @@ If one or more of the source tables of your view transform is modified, then the
     <td valign="top">
     
     Add Column
-
-
     
     </td>
     <td valign="top">
@@ -55,8 +49,6 @@ If one or more of the source tables of your view transform is modified, then the
     <td valign="top">
     
     Change Business Name
-
-
     
     </td>
     <td valign="top">
@@ -73,8 +65,6 @@ If one or more of the source tables of your view transform is modified, then the
     <td valign="top">
     
     Change Column Data Type
-
-
     
     </td>
     <td valign="top">
@@ -93,13 +83,11 @@ If one or more of the source tables of your view transform is modified, then the
     <td valign="top">
     
     Delete Column
-
-
     
     </td>
     <td valign="top">
     
-    Deletions of columns in source tables generate errors if the columns are used by the view transform:s:
+    Deletions of columns in source tables generate errors if the columns are used by the view transforms:
 
     -   An information message listing all deleted columns is displayed on the source.
     -   An error message is displayed on any intermediate node \(join, union, filter, calculated columns, aggregation\) in which a deleted column was used.

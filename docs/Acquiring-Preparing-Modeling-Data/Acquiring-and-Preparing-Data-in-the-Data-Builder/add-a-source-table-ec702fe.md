@@ -26,15 +26,11 @@ Add a source table to read data from. You can add multiple source tables and com
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -42,15 +38,11 @@ Add a source table to read data from. You can add multiple source tables and com
     <td valign="top">
     
     Business Name / Technical Name
-
-
     
     </td>
     <td valign="top">
     
     Information to identify the source table.
-
-
     
     </td>
     </tr>
@@ -58,15 +50,11 @@ Add a source table to read data from. You can add multiple source tables and com
     <td valign="top">
     
     Alias
-
-
     
     </td>
     <td valign="top">
     
     You can specify an SQL alias for the table if required.
-
-
     
     </td>
     </tr>
@@ -74,15 +62,11 @@ Add a source table to read data from. You can add multiple source tables and com
     <td valign="top">
     
     Distinct Values
-
-
     
     </td>
     <td valign="top">
     
     Indicates whether the source table uses SELECT DISTINCT statements to return only distinct values.
-
-
     
     </td>
     </tr>
@@ -90,15 +74,11 @@ Add a source table to read data from. You can add multiple source tables and com
     <td valign="top">
     
     Delta Capture
-
-
     
     </td>
     <td valign="top">
     
     Indicates whether the delta capture setting is enabled for a table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
-
-
     
     </td>
     </tr>
@@ -106,15 +86,11 @@ Add a source table to read data from. You can add multiple source tables and com
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
     
     The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>

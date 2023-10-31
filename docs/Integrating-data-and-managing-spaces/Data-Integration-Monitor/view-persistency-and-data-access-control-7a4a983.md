@@ -2,17 +2,17 @@
 
 # View Persistency and Data Access Control
 
-When *Data Access Control* is defined, it can impact the *View Persistency*. Depending on where the *Data Access Control* is set, it might prevent you from persisting a view.
+When *Data Access Control* is defined, it can impact the data persistence. Depending on where the *Data Access Control* is set, it might prevent you from persisting a view.
 
-Without *Data Access Control* \(DAC\), all users assigned to a space in SAP Datasphere can see and consume all data available in this space. When DAC is applied to a data layer view or a business layer object, the rows of data contained in the object are filtered based on the specified criteria and can impact the view persistency.
+Without *Data Access Control* \(DAC\), all users assigned to a space in SAP Datasphere can see and consume all data available in this space. When DAC is applied to a data layer view or a business layer object, the rows of data contained in the object are filtered based on the specified criteria and can impact the data persistence.
 
 
 
 <a name="loio7a4a983611cc4efb9415e6f3db310eaa__section_ylk_gf5_rnb"/>
 
-## Persistency and Data Access Control on view level
+## Persistency and Data Access Control on View Level
 
-While defining *Data Access Control* in your view, you need to consider the impact on the persistency:
+While defining *Data Access Control* in your view, you need to consider the impact on the data persistence:
 
 -   You can persist a view with *Data Access Control* set up.
 -   You can't persist a view consuming a view with *Data Access Control* set up.
@@ -42,7 +42,7 @@ While defining *Data Access Control* in your view, you need to consider the impa
 
 <a name="loio7a4a983611cc4efb9415e6f3db310eaa__section_v2k_xxt_y4b"/>
 
-## Persisted views and Data Access Control on object level
+## Persisted Views and Data Access Control on Object Level
 
 
 

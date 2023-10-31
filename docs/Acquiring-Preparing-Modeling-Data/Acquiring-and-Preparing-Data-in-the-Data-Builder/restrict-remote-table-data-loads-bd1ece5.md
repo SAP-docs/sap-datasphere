@@ -55,15 +55,11 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         <th valign="top">
 
         Property
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -71,8 +67,6 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         <td valign="top">
         
         Column
-
-
         
         </td>
         <td valign="top">
@@ -103,8 +97,6 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         >     -   BIGINT
 
         We recommend that you define your filters on columns that are not changing after initial creation. In case of using the advanced property "Triggers Record Primary Keys Only" in SAP HANA smart data integration based connections, filters on non-primary key columns won't work as expected.
-
-
         
         </td>
         </tr>
@@ -112,8 +104,6 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         <td valign="top">
         
         Operator
-
-
         
         </td>
         <td valign="top">
@@ -131,8 +121,6 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         <td valign="top">
         
         Values
-
-
         
         </td>
         <td valign="top">

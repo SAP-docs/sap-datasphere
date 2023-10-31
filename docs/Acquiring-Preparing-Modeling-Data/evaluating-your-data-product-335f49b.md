@@ -19,14 +19,10 @@ For each data product the following information is displayed by default:
 
 Entry
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Description
 
 Views
 
-
-
 </td>
 <td valign="top">
 
 How many times the data product was viewed in Data Marketplace.
-
-
 
 </td>
 </tr>
@@ -51,14 +43,10 @@ How many times the data product was viewed in Data Marketplace.
 
 Price
 
-
-
 </td>
 <td valign="top">
 
 The data product's pricing model. See section Pricing below.
-
-
 
 </td>
 </tr>
@@ -67,14 +55,10 @@ The data product's pricing model. See section Pricing below.
 
 Lifecycle Status
 
-
-
 </td>
 <td valign="top">
 
 The data products that you can see have the status Listed.
-
-
 
 </td>
 </tr>
@@ -83,14 +67,10 @@ The data products that you can see have the status Listed.
 
 *Listing managed by*
 
-
-
 </td>
 <td valign="top">
 
 It indicates if the data provider is managed by a content aggregator.
-
-
 
 </td>
 </tr>
@@ -127,21 +107,15 @@ Each product page provides details about your product and helps you to decide wh
 
 Product Details
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Comments
-
-
 
 </th>
 </tr>
@@ -150,21 +124,15 @@ Comments
 
 Data Category
 
-
-
 </td>
 <td valign="top">
 
 Indicates one or more categories where the data product fits in.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -173,21 +141,15 @@ Indicates one or more categories where the data product fits in.
 
 Industry
 
-
-
 </td>
 <td valign="top">
 
 Indicates one or more industries where the data product fits in.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -196,21 +158,15 @@ Indicates one or more industries where the data product fits in.
 
 SAP Application
 
-
-
 </td>
 <td valign="top">
 
 Indicates one or more SAP Applications where the data product fits in.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -219,21 +175,15 @@ Indicates one or more SAP Applications where the data product fits in.
 
 Regional Coverage
 
-
-
 </td>
 <td valign="top">
 
 Indicates the countries and regions for which the data product is assigned for.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -242,16 +192,12 @@ Indicates the countries and regions for which the data product is assigned for.
 
 Data Shipment
 
-
-
 </td>
 <td valign="top">
 
 Indicates the technical shipment of the data product. It varies depending on how the data provider offers their products.
 
 For more information, [Data Shipment](data-shipment-837e749.md).
-
-
 
 </td>
 <td valign="top">
@@ -277,14 +223,10 @@ Managed by the data provider:
 
 Delivery Mode
 
-
-
 </td>
 <td valign="top">
 
 Indicates if new deliveries can be offered by the data provider \(updates in data, for example\) and how these new deliveries can affect existing ones.
-
-
 
 </td>
 <td valign="top">
@@ -307,14 +249,10 @@ Indicates if new deliveries can be offered by the data provider \(updates in dat
 
 Delivery Pattern
 
-
-
 </td>
 <td valign="top">
 
 Indicates when and how often data products are updated.
-
-
 
 </td>
 <td valign="top">
@@ -338,14 +276,10 @@ For example:
 
 Size Category
 
-
-
 </td>
 <td valign="top">
 
 Indicates the size of your product, using the t-shirt size method.
-
-
 
 </td>
 <td valign="top">
@@ -366,21 +300,15 @@ Indicates the size of your product, using the t-shirt size method.
 
 Visibility
 
-
-
 </td>
 <td valign="top">
 
 Indicates who can view the product details.
 
-
-
 </td>
 <td valign="top">
 
 Currently only public data products can be offered and can be seen by all Data Marketplace users.
-
-
 
 </td>
 </tr>
@@ -389,21 +317,15 @@ Currently only public data products can be offered and can be seen by all Data M
 
 Product ID
 
-
-
 </td>
 <td valign="top">
 
 The unique identification of a data product.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -412,21 +334,15 @@ The unique identification of a data product.
 
 Additional Documents
 
-
-
 </td>
 <td valign="top">
 
 Additional documents can be attached to the data product.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -435,21 +351,15 @@ Additional documents can be attached to the data product.
 
 Data Provider Page
 
-
-
 </td>
 <td valign="top">
 
 The data provider profile page provides additional information about the data provider and other products or product groups.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

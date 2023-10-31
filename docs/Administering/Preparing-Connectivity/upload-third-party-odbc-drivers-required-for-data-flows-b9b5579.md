@@ -32,58 +32,42 @@ Drivers are required for the following connection types \(if several driver vers
 
 Connection Type
 
-
-
 </th>
 <th valign="top">
 
 Driver to be uploaded
-
-
 
 </th>
 <th valign="top">
 
 SHA256 Fingerprint
 
-
-
 </th>
 <th valign="top">
 
 Download Site
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
-[Amazon Redshift Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
-
-
+[Amazon Redshift Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
 
 </td>
 <td valign="top">
 
 AmazonRedshiftODBC-64-bit-1.4.11.1000-1.x86\_64.rpm
 
-
-
 </td>
 <td valign="top">
 
 6d811e2f198a030274bf9f099d4c828b1b071b78e99432eee1531d4988768a22
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 `https://docs.aws.amazon.com` 
-
-
 
 </td>
 </tr>
@@ -92,23 +76,17 @@ AmazonRedshiftODBC-64-bit-1.4.11.1000-1.x86\_64.rpm
 
 AmazonRedshiftODBC-64-bit-1.4.65.1000-1.x86\_64.rpm
 
-
-
 </td>
 <td valign="top">
 
 ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
-[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
-
-
+[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -125,14 +103,10 @@ instantclient-basiclite-linux.x64-12.2.0.1.0.zip
 
 1c3adb36f9605aae84ae98461bd6ee9eb26b303cace3f5534cd7985d470d0494
 
-
-
 </td>
 <td valign="top">
 
 `https://oracle.com`
-
-
 
 </td>
 </tr>
@@ -157,44 +131,49 @@ instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 
 ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13
 
-
-
 </td>
 <td valign="top">
 
 `https://download.oracle.com/otn_software/linux/instantclient/1917000/instantclient-basic-linux.x64-19.17.0.0.0dbru.zip`
 
-
-
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="2">
 
-[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
-
-
+[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
 
 </td>
 <td valign="top">
 
 SimbaODBCDriverforGoogleBigQuery\_2.3.1.1001-Linux.tar.gz
 
-
-
 </td>
 <td valign="top">
 
 abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018f
-
-
 
 </td>
 <td valign="top">
 
 `https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_2.3.1.1001-Linux.tar.gz`
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+SimbaODBCDriverforGoogleBigQuery\_3.0.0.1001-Linux.tar.gz
+
+</td>
+<td valign="top">
+
+58d3c9acfb93f0d26c081a230ff664a16c8544d567792ebc5436beb31e9e28e4
+
+</td>
+<td valign="top">
+
+`https://cloud.google.com/bigquery/providers/simba-drivers`
 
 </td>
 </tr>

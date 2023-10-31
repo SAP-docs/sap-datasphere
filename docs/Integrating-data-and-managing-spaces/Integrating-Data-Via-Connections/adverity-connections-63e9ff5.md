@@ -16,7 +16,7 @@ For more information, see [Connections to Partner Tools](connections-to-partner-
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Adverity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right: 
+See: [Prepare Connectivity to Adverity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right: 
 
 
 

@@ -20,15 +20,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -36,15 +32,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for your rule to identify it in the diagram.
-
-
     
     </td>
     </tr>
@@ -52,15 +44,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     Match Strategy
-
-
     
     </td>
     <td valign="top">
     
     Choose *Exact Match*.
-
-
     
     </td>
     </tr>
@@ -68,15 +56,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     Input Scope
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Specifies which input records are processed by the rule.
-
-
     
     </td>
     </tr>
@@ -84,15 +68,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     Lookup Scope
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Specifies which lookup records are available for matching by the rule.
-
-
     
     </td>
     </tr>
@@ -108,15 +88,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <th valign="top">
 
     Example
-
-
     
     </th>
     <th valign="top">
 
     Matching Criteria
-
-
     
     </th>
     </tr>
@@ -124,8 +100,6 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     ![](images/Exact_Match_-_One_Column_Pair_54e2255.png)
-
-
     
     </td>
     <td valign="top">
@@ -142,8 +116,6 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     ![](images/Exact_Match_-_Two_Column_Pairs_adecfff.png)
-
-
     
     </td>
     <td valign="top">
@@ -183,15 +155,11 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -199,8 +167,6 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     Case-Sensitive
-
-
     
     </td>
     <td valign="top">
@@ -208,8 +174,6 @@ Create an exact match rule to compare values in input entity columns and lookup 
     Disable this option to allow case-insensitive matching. 
 
     By default, exact match rules are case-sensitive so that, for example, an input column containing the string "`paris`" will not be matched with a lookup column containing "`Paris`".
-
-
     
     </td>
     </tr>
@@ -217,8 +181,6 @@ Create an exact match rule to compare values in input entity columns and lookup 
     <td valign="top">
     
     Trim Leading and Trailing Whitespace 
-
-
     
     </td>
     <td valign="top">
@@ -226,8 +188,6 @@ Create an exact match rule to compare values in input entity columns and lookup 
     Disable this option to take into account any space characters preceding or following string values. 
 
     By default, exact match rules trim whitespace so that, for example, an input column containing the string "`London`" or `London` will be matched with a lookup column containing `London`.
-
-
     
     </td>
     </tr>

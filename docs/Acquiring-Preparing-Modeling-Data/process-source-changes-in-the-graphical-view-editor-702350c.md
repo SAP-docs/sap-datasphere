@@ -41,15 +41,11 @@ Your object's status may be updated when changes to one or more of its sources a
     <th valign="top">
 
     Change in Source
-
-
     
     </th>
     <th valign="top">
 
     Impact in Dependent Views
-
-
     
     </th>
     </tr>
@@ -57,8 +53,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Add Column
-
-
     
     </td>
     <td valign="top">
@@ -76,8 +70,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Change Business Name
-
-
     
     </td>
     <td valign="top">
@@ -94,8 +86,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Change Column Data Type
-
-
     
     </td>
     <td valign="top">
@@ -114,8 +104,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Delete Column
-
-
     
     </td>
     <td valign="top">
@@ -135,8 +123,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Change to Input Parameter
-
-
     
     </td>
     <td valign="top">
@@ -158,8 +144,6 @@ Your object's status may be updated when changes to one or more of its sources a
     <td valign="top">
     
     Change to Data Access Control
-
-
     
     </td>
     <td valign="top">

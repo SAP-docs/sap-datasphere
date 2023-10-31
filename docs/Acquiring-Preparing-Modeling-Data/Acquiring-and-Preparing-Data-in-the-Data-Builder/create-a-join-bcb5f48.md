@@ -24,15 +24,11 @@ Use a join operator to merge two data sets together using a join definition to m
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -40,8 +36,6 @@ Use a join operator to merge two data sets together using a join definition to m
     <td valign="top">
     
     Join Type
-
-
     
     </td>
     <td valign="top">
@@ -62,15 +56,11 @@ Use a join operator to merge two data sets together using a join definition to m
     <td valign="top">
     
     Distinct Values
-
-
     
     </td>
     <td valign="top">
     
     Return only unique values.
-
-
     
     </td>
     </tr>
@@ -78,8 +68,6 @@ Use a join operator to merge two data sets together using a join definition to m
     <td valign="top">
     
     Cardinality
-
-
     
     </td>
     <td valign="top">
@@ -97,8 +85,6 @@ Use a join operator to merge two data sets together using a join definition to m
     -   `EXACT ONE TO MANY`
 
     The cardinality is integrated in the code and is visible in the SQL preview.
-
-
     
     </td>
     </tr>

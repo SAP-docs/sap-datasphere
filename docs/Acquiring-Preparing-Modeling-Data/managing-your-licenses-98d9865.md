@@ -13,14 +13,10 @@ In this app you can view and manage all licenses you have activated or in use.
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Description
 
 Data Provider
 
-
-
 </td>
 <td valign="top">
 
 The name of the data provider who licensed the data product to you.
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ The name of the data provider who licensed the data product to you.
 
 Reference
 
-
-
 </td>
 <td valign="top">
 
 Describes a reference.
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Describes a reference.
 
 Valid until
 
-
-
 </td>
 <td valign="top">
 
 The date until when the license is valid.
-
-
 
 </td>
 </tr>
@@ -77,14 +61,10 @@ The date until when the license is valid.
 
 Status
 
-
-
 </td>
 <td valign="top">
 
 The status of the license.
-
-
 
 </td>
 </tr>

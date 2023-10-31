@@ -80,14 +80,10 @@ For example, to:
 
 To Display
 
-
-
 </th>
 <th valign="top">
 
 Select Filter Criteria
-
-
 
 </th>
 </tr>
@@ -96,14 +92,10 @@ Select Filter Criteria
 
 All objects with a semantic usage of *Fact*
 
-
-
 </td>
 <td valign="top">
 
 *Semantic Usage*: *Fact*
-
-
 
 </td>
 </tr>
@@ -112,14 +104,10 @@ All objects with a semantic usage of *Fact*
 
 All objects with a semantic usage of *Fact* or *Dimension*
 
-
-
 </td>
 <td valign="top">
 
 *Semantic Usage*: *Fact*, *Dimension*
-
-
 
 </td>
 </tr>
@@ -127,8 +115,6 @@ All objects with a semantic usage of *Fact* or *Dimension*
 <td valign="top">
 
 Only views with a semantic usage of *Fact* or *Dimension*
-
-
 
 </td>
 <td valign="top">
@@ -138,8 +124,6 @@ Only views with a semantic usage of *Fact* or *Dimension*
 and
 
 *Semantic Usage*: *Fact*, *Dimension*
-
-
 
 </td>
 </tr>
@@ -154,14 +138,10 @@ Filtering for shared objects changes when you select a space:
 
 To Display
 
-
-
 </th>
 <th valign="top">
 
 Select Filter Criteria
-
-
 
 </th>
 </tr>
@@ -170,14 +150,10 @@ Select Filter Criteria
 
 All objects that are shared with any other spaces
 
-
-
 </td>
 <td valign="top">
 
 *Sharing* \> *Shared*
-
-
 
 </td>
 </tr>
@@ -185,8 +161,6 @@ All objects that are shared with any other spaces
 <td valign="top">
 
 All objects that are shared from a particular space
-
-
 
 </td>
 <td valign="top">
@@ -197,16 +171,12 @@ and
 
 *Sharing* \> *Shared from My Space*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 All objects that are shared with a particular space
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +186,6 @@ All objects that are shared with a particular space
 and
 
 *Sharing* \> *Shared with My Space*
-
-
 
 </td>
 </tr>
@@ -261,15 +229,11 @@ You can act on objects in the list in the following ways:
     <th valign="top">
 
     Tool
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -277,8 +241,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Create
-
-
     
     </td>
     <td valign="top">
@@ -292,7 +254,7 @@ You can act on objects in the list in the following ways:
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
     -   Entity-Relationship Model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\)
     -   Data Flow \(see [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
     -   Currency Conversion Views \(see [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\)
 
 
@@ -303,15 +265,11 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Edit
-
-
     
     </td>
     <td valign="top">
     
     Open the selected object in the appropriate editor. 
-
-
     
     </td>
     </tr>
@@ -319,8 +277,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Deploy
-
-
     
     </td>
     <td valign="top">
@@ -332,13 +288,11 @@ You can act on objects in the list in the following ways:
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 
     Other types of objects can only be deployed from their editors. If one or more objects that you have selected cannot be deployed, the *Deploy* dialog opens, allowing you to review your selection. Click *Deploy* to deploy those objects listed on the Deployable tab, or *Cancel* to go back and alter your selection.
-
-
     
     </td>
     </tr>
@@ -346,8 +300,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Delete
-
-
     
     </td>
     <td valign="top">
@@ -372,8 +324,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Share
-
-
     
     </td>
     <td valign="top">
@@ -381,8 +331,6 @@ You can act on objects in the list in the following ways:
     Share the selected objects to other spaces. Allows multi-selection from a single space. 
 
     For more information, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md).
-
-
     
     </td>
     </tr>
@@ -390,15 +338,11 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Copy
-
-
     
     </td>
     <td valign="top">
     
     Create a copy of the selected object in the same space. You must specify a new business and technical name. 
-
-
     
     </td>
     </tr>
@@ -406,8 +350,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Impact and Lineage Analysis
-
-
     
     </td>
     <td valign="top">
@@ -415,8 +357,6 @@ You can act on objects in the list in the following ways:
     Open the *Impact and Lineage Analysis* graph for the selected object. 
 
     For more information, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
-
-
     
     </td>
     </tr>
@@ -424,8 +364,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Select Columns
-
-
     
     </td>
     <td valign="top">
@@ -446,8 +384,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Sort
-
-
     
     </td>
     <td valign="top">
@@ -455,8 +391,6 @@ You can act on objects in the list in the following ways:
     Open the *Sort* dialog to control the ordering of the results table. 
 
     By default, the table is sorted by *Best Match on Top*, which calculates relevance on a range of criteria, including objects that you have recently changed, those that you have created, and those that have validation errors. To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then click *OK* to apply them.
-
-
     
     </td>
     </tr>
@@ -464,15 +398,11 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Display as...
-
-
     
     </td>
     <td valign="top">
     
     Set the presentation of the object list to *Table* \(default\), Grid, or List. 
-
-
     
     </td>
     </tr>

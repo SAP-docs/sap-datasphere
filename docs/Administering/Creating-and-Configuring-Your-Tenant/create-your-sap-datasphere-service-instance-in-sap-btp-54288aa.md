@@ -38,14 +38,10 @@ To create your SAP Datasphere service instance in SAP BTP, you need the followin
 
 Service Plan
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -54,14 +50,10 @@ Description
 
 Standard
 
-
-
 </td>
 <td valign="top">
 
 The standard plan provides an SAP Datasphere tenant for productive and non-productive use, which is represented by a service instance.
-
-
 
 </td>
 </tr>
@@ -70,14 +62,10 @@ The standard plan provides an SAP Datasphere tenant for productive and non-produ
 
 Free
 
-
-
 </td>
 <td valign="top">
 
 The free plan provides an SAP Datasphere tenant for a limited time for trial use, which is represented by a service instance.
-
-
 
 </td>
 </tr>
@@ -114,15 +102,11 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -130,15 +114,11 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     <td valign="top">
     
     *Service*
-
-
     
     </td>
     <td valign="top">
     
     Select SAP Datasphere.
-
-
     
     </td>
     </tr>
@@ -146,15 +126,11 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     <td valign="top">
     
     *Plan*
-
-
     
     </td>
     <td valign="top">
     
     Select *Standard* or *Free*.
-
-
     
     </td>
     </tr>
@@ -162,15 +138,11 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     <td valign="top">
     
     *Runtime Environment*
-
-
     
     </td>
     <td valign="top">
     
     Select *Cloud Foundry*.
-
-
     
     </td>
     </tr>
@@ -178,15 +150,11 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     <td valign="top">
     
     *Space*
-
-
     
     </td>
     <td valign="top">
     
     \[no selection needed if you're creating the instance from the space area\] Select the SAP BTP space in which you want to create the service instance.
-
-
     
     </td>
     </tr>
@@ -194,15 +162,11 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     <td valign="top">
     
     *Instance Name*
-
-
     
     </td>
     <td valign="top">
     
     Enter a name to identify your instance \(up to 32 alphanumeric characters, periods, underscores, and hyphens; cannot contain white spaces\).
-
-
     
     </td>
     </tr>

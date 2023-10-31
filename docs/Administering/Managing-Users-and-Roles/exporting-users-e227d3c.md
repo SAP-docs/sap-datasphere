@@ -27,14 +27,10 @@ The CSV file contains these columns:
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,14 +39,10 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -59,14 +51,10 @@ USER\_NAME
 
 FIRST\_NAME
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -75,14 +63,10 @@ FIRST\_NAME
 
 LAST\_NAME
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -91,14 +75,10 @@ LAST\_NAME
 
 DISPLAY\_NAME
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -107,14 +87,10 @@ DISPLAY\_NAME
 
 EMAIL
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -123,14 +99,10 @@ EMAIL
 
 MANAGER
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -139,14 +111,10 @@ MANAGER
 
 ROLES
 
-
-
 </td>
 <td valign="top">
 
 Roles assigned to the user.
-
-
 
 </td>
 </tr>
@@ -155,14 +123,10 @@ Roles assigned to the user.
 
 SAML\_USER\_MAPPING
 
-
-
 </td>
 <td valign="top">
 
 SAML property for the user \(if SAML enabled\).
-
-
 
 </td>
 </tr>
@@ -171,14 +135,10 @@ SAML property for the user \(if SAML enabled\).
 
 MOBILE
 
-
-
 </td>
 <td valign="top">
 
 Set in user preferences.
-
-
 
 </td>
 </tr>
@@ -187,14 +147,10 @@ Set in user preferences.
 
 OFFICE\_PHONE
 
-
-
 </td>
 <td valign="top">
 
 Set in user preferences.
-
-
 
 </td>
 </tr>
@@ -203,14 +159,10 @@ Set in user preferences.
 
 OFFICE\_ADDRESS
 
-
-
 </td>
 <td valign="top">
 
 Set in user preferences.
-
-
 
 </td>
 </tr>
@@ -219,14 +171,10 @@ Set in user preferences.
 
 AGILE\_BI\_ENABLED\_BY\_DEFAULT
 
-
-
 </td>
 <td valign="top">
 
 Opt in for the agile data preparation feature.
-
-
 
 </td>
 </tr>
@@ -235,14 +183,10 @@ Opt in for the agile data preparation feature.
 
 JOB\_TITLE
 
-
-
 </td>
 <td valign="top">
 
 Set in user preferences.
-
-
 
 </td>
 </tr>
@@ -251,14 +195,10 @@ Set in user preferences.
 
 MARKETING\_EMAIL\_OPT\_IN
 
-
-
 </td>
 <td valign="top">
 
 Set in user preferences.
-
-
 
 </td>
 </tr>
@@ -267,14 +207,10 @@ Set in user preferences.
 
 IS\_CONCURRENT
 
-
-
 </td>
 <td valign="top">
 
 Licensing attribute to indicate whether the user is consuming a named licensed user account \(0\) or a concurrent licensed user account \(1\).
-
-
 
 </td>
 </tr>
@@ -283,14 +219,10 @@ Licensing attribute to indicate whether the user is consuming a named licensed u
 
 DEFAULT\_APP
 
-
-
 </td>
 <td valign="top">
 
 The application that will launch when you access your SAP Datasphere URL. The default application can be set in *System* \> *Administration* \> *System Configuration* or in the user settings.
-
-
 
 </td>
 </tr>
@@ -299,14 +231,10 @@ The application that will launch when you access your SAP Datasphere URL. The de
 
 On the *Edit Home Screen* dialog, a user can override all the default preferences that have been set by the administrator for the system \(*System* \> *Administration* \> *Default Appearance*\). These are the preferences:
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -315,14 +243,10 @@ On the *Edit Home Screen* dialog, a user can override all the default preference
 
 OVERRIDE\_BACKGROUND\_OPTION
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -331,14 +255,10 @@ OVERRIDE\_BACKGROUND\_OPTION
 
 OVERRIDE\_LOGO\_OPTION
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -347,14 +267,10 @@ OVERRIDE\_LOGO\_OPTION
 
 OVERRIDE\_WELCOME\_MESSAGE\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -363,14 +279,10 @@ OVERRIDE\_WELCOME\_MESSAGE\_FLAG
 
 OVERRIDE\_HOME\_SEARCH\_TO\_INSIGHT\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -379,14 +291,10 @@ OVERRIDE\_HOME\_SEARCH\_TO\_INSIGHT\_FLAG
 
 OVERRIDE\_GET\_STARTED\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -395,14 +303,10 @@ OVERRIDE\_GET\_STARTED\_FLAG
 
 OVERRIDE\_RECENT\_FILES\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -411,14 +315,10 @@ OVERRIDE\_RECENT\_FILES\_FLAG
 
 OVERRIDE\_RECENT\_STORIES\_FLAGOVERRIDE\_RECENT\_STORIES\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -427,14 +327,10 @@ OVERRIDE\_RECENT\_STORIES\_FLAGOVERRIDE\_RECENT\_STORIES\_FLAG
 
 OVERRIDE\_RECENT\_PRESENTATIONS\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -443,14 +339,10 @@ OVERRIDE\_RECENT\_PRESENTATIONS\_FLAG
 
 OVERRIDE\_RECENT\_APPLICATIONS\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -459,14 +351,10 @@ OVERRIDE\_RECENT\_APPLICATIONS\_FLAG
 
 OVERRIDE\_CALENDAR\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -475,14 +363,10 @@ OVERRIDE\_CALENDAR\_FLAG
 
 OVERRIDE\_FEATURED\_FILES\_FLAG
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

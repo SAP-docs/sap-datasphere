@@ -8,7 +8,7 @@ In the *Remote Query Monitor*, you track the queries sent to your remote connect
 
 SAP Datasphere is connected to remote systems via SAP HANA Cloud using data federation. SAP HANA Cloud already provides a corresponding monitoring view of actual SAP HANA runtime data, including statistics and status information related to the execution of Data Manipulation Language \(DML\) statements. The *Remote Query Monitor* retrieves this information, so that you can keep an eye on how the communication between SAP Datasphere and the connected remote source systems is running and better analyze possibilities for performance bottlenecks while running queries in SAP Datasphere.
 
-*Remote Query Monitor* allows you to monitor the queries sent to your remote connected source systems for your space. This information is helpful when analyzing executions of story \(or on views or previews\), since it provides details of single read requests, like runtimes or result set size.
+The *Remote Query Monitor* allows you to monitor the queries sent to your remote connected source systems for your space. This information is helpful when analyzing executions of story \(or on views or previews\), since it provides details of single read requests, like runtimes or result set size.
 
 > ### Note:  
 > *Data Flows* executions are not contained in this monitoring view as *Data Flows* don't use SAP HANA Federation.
@@ -25,30 +25,22 @@ The *Remote Query Monitor* only shows the last 100 statements. It provides you w
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Connection
-
-
+*Connection* 
 
 </td>
 <td valign="top">
 
 Displays the name of the connection. 
-
-
 
 </td>
 </tr>
@@ -57,14 +49,10 @@ Displays the name of the connection.
 
 Start Time
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement start time. 
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ Displays the statement start time.
 
 End Time
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement end time. 
-
-
 
 </td>
 </tr>
@@ -89,14 +73,10 @@ Displays the statement end time.
 
 Statement Runtime
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the statement. 
-
-
 
 </td>
 </tr>
@@ -105,14 +85,10 @@ Displays the duration of the statement.
 
 Rows
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows that have been processed by the statement. 
-
-
 
 </td>
 </tr>
@@ -120,8 +96,6 @@ Displays the number of rows that have been processed by the statement.
 <td valign="top">
 
 Status
-
-
 
 </td>
 <td valign="top">
@@ -141,9 +115,7 @@ The status can be one of the following:
 <tr>
 <td valign="top">
 
-Remote SQL Statement
-
-
+Remote Statement
 
 </td>
 <td valign="top">
@@ -152,16 +124,12 @@ Displays the outgoing statement that is sent to the remote connected source syst
 
 As the statement is most often too long and appears as truncated, you need to click on *More* to get the full statement information.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Statement ID
-
-
 
 </td>
 <td valign="top">
@@ -170,16 +138,12 @@ Displays the ID of the statement.
 
 This ID is provided by SAP HANA and can be used to do deep dive analysis in the SAP HANA Cockpit. For more information, see [SAP HANA Cockpit](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/latest/en-US/da25cad976064dc0a24a1b0ee9b62525.html).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Executing SQL Statement
-
-
 
 </td>
 <td valign="top">
@@ -188,8 +152,6 @@ Displays the statement that is currently running in SAP HANA Cloud, and which in
 
 You might have a look at this statement if something goes wrong to identify the root cause. As the statement is most often too long and appears as truncated, you need to click on *More* to get the full statement information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -197,14 +159,10 @@ You might have a look at this statement if something goes wrong to identify the 
 
 Transaction
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source transaction. 
-
-
 
 </td>
 </tr>

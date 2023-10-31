@@ -20,14 +20,10 @@ Columns have the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -35,8 +31,6 @@ Description
 <td valign="top">
 
 Key
-
-
 
 </td>
 <td valign="top">
@@ -55,14 +49,10 @@ Select the checkbox to specify that the column is a primary key column. Key colu
 
 Business Name 
 
-
-
 </td>
 <td valign="top">
 
 Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
 
 </td>
 </tr>
@@ -70,8 +60,6 @@ Enter a descriptive name to help users identify the object. This name can be cha
 <td valign="top">
 
 Technical Name 
-
-
 
 </td>
 <td valign="top">
@@ -92,8 +80,6 @@ To override the default technical name, enter a new one in the field. Technical 
 
 Data Type
 
-
-
 </td>
 <td valign="top">
 
@@ -103,16 +89,12 @@ You can change the data type of a column. For more information, see [Modifying O
 
 For a list of available data types and their supported data type conversions, see [Column Data Types](column-data-types-7b1dc6e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Default Value
-
-
 
 </td>
 <td valign="top">
@@ -131,8 +113,6 @@ Enter an appropriate default value for the column.
 
 Not Null
 
-
-
 </td>
 <td valign="top">
 
@@ -150,14 +130,10 @@ Select this option to indicate that the column must contain a value.
 
 Change Type
 
-
-
 </td>
 <td valign="top">
 
 This column will track the type of last change made to a record. When a record is inserted or updated corresponding change types are used \(for example "I" or "U"\). When an existing record is deleted other specific change types are used \(for example "D"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. 
-
-
 
 </td>
 </tr>
@@ -166,14 +142,10 @@ This column will track the type of last change made to a record. When a record i
 
 Change Date
 
-
-
 </td>
 <td valign="top">
 
 The column will track the last date and time of the last change to an individual record. Current UTC timestamp. 
-
-
 
 </td>
 </tr>

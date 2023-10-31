@@ -32,14 +32,10 @@ This information is displayed in a table containing the following details:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -48,14 +44,10 @@ Description
 
 Activation Date
 
-
-
 </td>
 <td valign="top">
 
 The date when the data product was activated
-
-
 
 </td>
 </tr>
@@ -64,14 +56,10 @@ The date when the data product was activated
 
 Provider Name
 
-
-
 </td>
 <td valign="top">
 
 The provider's name. Following the link to go to their page.
-
-
 
 </td>
 </tr>
@@ -80,14 +68,10 @@ The provider's name. Following the link to go to their page.
 
 Product Name
 
-
-
 </td>
 <td valign="top">
 
 The name of the data product that was activated. Click the link to go to the product page.
-
-
 
 </td>
 </tr>
@@ -96,14 +80,10 @@ The name of the data product that was activated. Click the link to go to the pro
 
 Delivery Mode
 
-
-
 </td>
 <td valign="top">
 
 Delivery mode. For more information see [Data Shipment](data-shipment-837e749.md).
-
-
 
 </td>
 </tr>
@@ -112,14 +92,10 @@ Delivery mode. For more information see [Data Shipment](data-shipment-837e749.md
 
 Payment Method
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the data product was activated with a License or if it is free of charge. For more information, see [Contract Type and Pricing Model](contract-type-and-pricing-model-4dd32d5.md)
-
-
 
 </td>
 </tr>
@@ -127,8 +103,6 @@ Indicates whether the data product was activated with a License or if it is free
 <td valign="top">
 
 License Validity
-
-
 
 </td>
 <td valign="top">
@@ -147,14 +121,10 @@ The date until when the license is valid.
 
 Space
 
-
-
 </td>
 <td valign="top">
 
 The space that was selected to store the data product.
-
-
 
 </td>
 </tr>

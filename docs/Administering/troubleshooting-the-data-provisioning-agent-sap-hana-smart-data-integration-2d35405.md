@@ -59,14 +59,10 @@ The agent configuration is stored in the <code><i class="varname">&lt;DPAgent_ro
 
 dpagentconfig.ini file
 
-
-
 </th>
 <th valign="top">
 
 Agent Settings in SAP Datasphere
-
-
 
 </th>
 </tr>
@@ -75,14 +71,10 @@ Agent Settings in SAP Datasphere
 
 agent.name=*<Agent Name\>* 
 
-
-
 </td>
 <td valign="top">
 
 *Agent Name* \(the name defined by the user who registered the agent in SAP Datasphere; the name is case sensitive\)
-
-
 
 </td>
 </tr>
@@ -91,14 +83,10 @@ agent.name=*<Agent Name\>*
 
 hana.port=*<HANA Port\>* 
 
-
-
 </td>
 <td valign="top">
 
 *HANA Port* 
-
-
 
 </td>
 </tr>
@@ -107,14 +95,10 @@ hana.port=*<HANA Port\>*
 
 hana.onCloud=false
 
-
-
 </td>
 <td valign="top">
 
 n/a
-
-
 
 </td>
 </tr>
@@ -123,14 +107,10 @@ n/a
 
 hana.useSSL=true
 
-
-
 </td>
 <td valign="top">
 
 *HANA Use SSL* 
-
-
 
 </td>
 </tr>
@@ -139,14 +119,10 @@ hana.useSSL=true
 
 hana.server=*<HANA Server\>* 
 
-
-
 </td>
 <td valign="top">
 
 *HANA Server* 
-
-
 
 </td>
 </tr>
@@ -155,14 +131,10 @@ hana.server=*<HANA Server\>*
 
 jdbc.enabled=true
 
-
-
 </td>
 <td valign="top">
 
 *HANA via JDBC* 
-
-
 
 </td>
 </tr>
@@ -171,14 +143,10 @@ jdbc.enabled=true
 
 jdbc.host=*<HANA Server\>* 
 
-
-
 </td>
 <td valign="top">
 
 *HANA Server* 
-
-
 
 </td>
 </tr>
@@ -187,14 +155,10 @@ jdbc.host=*<HANA Server\>*
 
 jdbc.port=*<HANA Port\>* 
 
-
-
 </td>
 <td valign="top">
 
 *HANA Port* 
-
-
 
 </td>
 </tr>
@@ -203,14 +167,10 @@ jdbc.port=*<HANA Port\>*
 
 jdbc.encrypt=true
 
-
-
 </td>
 <td valign="top">
 
 n/a
-
-
 
 </td>
 </tr>
@@ -225,16 +185,12 @@ If you use a proxy server in your landscape, additionally check for the followin
 
 dpagentconfig.ini file
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 proxyType=http
-
-
 
 </td>
 </tr>
@@ -243,16 +199,12 @@ proxyType=http
 
 jdbc.useProxy=true
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 jdbc.proxyHost=*<your proxy host\>* 
-
-
 
 </td>
 </tr>
@@ -261,16 +213,12 @@ jdbc.proxyHost=*<your proxy host\>*
 
 jdbc.proxyPort=*<your proxy port\>* 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 jdbc.proxyHttp=true \(true in case of http proxy, false in case of SOCKS proxy\)
-
-
 
 </td>
 </tr>
@@ -279,8 +227,6 @@ jdbc.proxyHttp=true \(true in case of http proxy, false in case of SOCKS proxy\)
 
 \[if proxy authentication is required\] jdbc.useProxyAuth=true
 
-
-
 </td>
 </tr>
 <tr>
@@ -288,16 +234,12 @@ jdbc.proxyHttp=true \(true in case of http proxy, false in case of SOCKS proxy\)
 
 \[if proxy authentication is required\] jdbc.proxyUsername=*<your proxy user name\>* 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 \[if proxy authentication is required\] jdbc.proxyPassword=*<your proxy password\>* 
-
-
 
 </td>
 </tr>

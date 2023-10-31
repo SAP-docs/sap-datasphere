@@ -108,16 +108,26 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
 ![](images/Hierarchy_with_Directory_-_Hierarchy_8af4c75.png)
 
 1.  Open the table or view containing the hierarchy information and set the *Semantic Usage* property to *Hierarchy with Directory*.
-2.  Create an association from the hierarchy entity to the directory entity, and map the column you selected as the *Hierarchy Name Column* in the hierarchy entity to the primary key column in the directory entity.
+2.  Ensure the following columns are marked as keys:
+    -   The column containing the identifiers of child nodes in the parent-child relationship.
+
+        In our example, this is the `NodeID` column.
+
+    -   The column containing the identifier of the hierarchy to which the parent-child relationship belongs.
+
+        In our example, this is the `HierarchyName` column.
+
+
+3.  Create an association from the hierarchy entity to the directory entity, and map the column you selected as the *Hierarchy Name Column* in the hierarchy entity to the primary key column in the directory entity.
 
     In our example, the `HierarchyName` column in the hierarchy entity `I_GLAccountHierarchyNode`, is mapped to the primary key column in the directory entity, `I_GLAccountHierarchy`.
 
-3.  \[if multiple types of hierarchy nodes are specified\] Create an association from the hierarchy entity to each \(non-leaf\) dimension containing nodes that are used in the hierarchies, and map the appropriate node type values columns identified in the hierarchy entity to the key columns in the dimensions.
+4.  \[if multiple types of hierarchy nodes are specified\] Create an association from the hierarchy entity to each \(non-leaf\) dimension containing nodes that are used in the hierarchies, and map the appropriate node type values columns identified in the hierarchy entity to the key columns in the dimensions.
 
     In our example, the columns, `GLAccountHierarchy` and `HierarchyNode` in the hierarchy entity `I_GLAccountHierarchyNode`, are mapped to the key columns in the `GLAccountGroups` dimension.
 
-4.  \[optional\] If time-dependency columns are available, add the appropriate semantic types \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\).
-5.  Click the *Hierarchy with Directory Settings* button, complete the following properties in the dialog, and then click *OK*:
+5.  \[optional\] If time-dependency columns are available, add the appropriate semantic types \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\).
+6.  Click the *Hierarchy with Directory Settings* button, complete the following properties in the dialog, and then click *OK*:
 
 
     <table>
@@ -125,15 +135,11 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -141,17 +147,13 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <td valign="top">
     
     Parent
-
-
     
     </td>
     <td valign="top">
     
-    Select the column containing the identifier of parent nodes in the parent-child relationship.
+    Select the column containing the identifiers of parent nodes in the parent-child relationship.
 
     In our example, the `ParentID` column is selected.
-
-
     
     </td>
     </tr>
@@ -159,17 +161,15 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <td valign="top">
     
     Child
-
-
     
     </td>
     <td valign="top">
     
-    Select the column containing the identifier of child nodes in the parent-child relationship. This column must be marked as a key.
+    Select the column containing the identifiers of child nodes in the parent-child relationship.
+
+    This column must be marked as a key.
 
     In our example, the `NodeID` column is selected.
-
-
     
     </td>
     </tr>
@@ -177,17 +177,15 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <td valign="top">
     
     Hierarchy Name Column
-
-
     
     </td>
     <td valign="top">
     
-    Select the column containing the identifier of the hierarchy to which the parent-child relationship belongs. This column must be marked as a key.
+    Select the column containing the identifier of the hierarchy to which the parent-child relationship belongs.
+
+    This column must be marked as a key.
 
     In our example, the `HierarchyName` column is selected.
-
-
     
     </td>
     </tr>
@@ -195,15 +193,11 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <td valign="top">
     
     Hierarchy Directory Entity
-
-
     
     </td>
     <td valign="top">
     
     Displays the name of the hierarchy directory entity, once the *Hierarchy Name Column* property is set and an association is created to point from the hierarchy to the directory entity.
-
-
     
     </td>
     </tr>
@@ -211,8 +205,6 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <td valign="top">
     
     Node Type Column
-
-
     
     </td>
     <td valign="top">
@@ -220,8 +212,6 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     Select the column containing the type of the child node in the parent-child relationship.
 
     In our example, the `NodeTypeField` column is selected.
-
-
     
     </td>
     </tr>
@@ -229,8 +219,6 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <td valign="top">
     
     Node Type Values
-
-
     
     </td>
     <td valign="top">

@@ -30,15 +30,11 @@ Review results are input records that are matched with a lookup record with a sc
     <th valign="top">
 
     Tools
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -46,15 +42,11 @@ Review results are input records that are matched with a lookup record with a sc
     <td valign="top">
     
     <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
-
-
     
     </td>
     <td valign="top">
     
     Collapse or expand all pairing groups.
-
-
     
     </td>
     </tr>
@@ -62,15 +54,11 @@ Review results are input records that are matched with a lookup record with a sc
     <td valign="top">
     
     Confirm
-
-
     
     </td>
     <td valign="top">
     
     Confirm the selected match and move the records to the *Matched* tab.
-
-
     
     </td>
     </tr>
@@ -78,15 +66,11 @@ Review results are input records that are matched with a lookup record with a sc
     <td valign="top">
     
     Reject
-
-
     
     </td>
     <td valign="top">
     
     Reject the selected match and move the matched records to the *Unmatched* tab.
-
-
     
     </td>
     </tr>
@@ -94,15 +78,11 @@ Review results are input records that are matched with a lookup record with a sc
     <td valign="top">
     
     Rows per Pairing Group
-
-
     
     </td>
     <td valign="top">
     
     Specify the maximum number of rows to display for each pairing group.
-
-
     
     </td>
     </tr>
@@ -110,15 +90,11 @@ Review results are input records that are matched with a lookup record with a sc
     <td valign="top">
     
     <span class="FPA-icons"></span> \(Settings\)
-
-
     
     </td>
     <td valign="top">
     
     Select and reorder table columns.
-
-
     
     </td>
     </tr>

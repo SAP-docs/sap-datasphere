@@ -26,15 +26,11 @@ When adding such a view as a source in your SQL view, you must process each of t
     <th valign="top">
 
     SQL View
-
-
     
     </th>
     <th valign="top">
 
     SQLScript View
-
-
     
     </th>
     </tr>
@@ -74,15 +70,11 @@ When adding such a view as a source in your SQL view, you must process each of t
         <th valign="top">
 
         SQL View
-
-
         
         </th>
         <th valign="top">
 
         SQLScript View
-
-
         
         </th>
         </tr>
@@ -118,15 +110,11 @@ When adding such a view as a source in your SQL view, you must process each of t
         <th valign="top">
 
         SQL View
-
-
         
         </th>
         <th valign="top">
 
         SQLScript View
-
-
         
         </th>
         </tr>

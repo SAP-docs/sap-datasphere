@@ -26,15 +26,11 @@ Insert a projection operator to add, remove, reorder, or rename columns.
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -42,15 +38,11 @@ Insert a projection operator to add, remove, reorder, or rename columns.
     <td valign="top">
     
     *Label*
-
-
     
     </td>
     <td valign="top">
     
     Provide a suitable name for your projection as per your requirement.
-
-
     
     </td>
     </tr>

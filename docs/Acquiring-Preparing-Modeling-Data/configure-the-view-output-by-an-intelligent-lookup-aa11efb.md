@@ -33,15 +33,11 @@ You can use the output of your intelligent lookup as a source for a view or data
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ You can use the output of your intelligent lookup as a source for a view or data
     <td valign="top">
     
     Business Name 
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
     </td>
     </tr>
@@ -65,8 +57,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     <td valign="top">
     
     Technical Name 
-
-
     
     </td>
     <td valign="top">
@@ -86,15 +76,11 @@ You can use the output of your intelligent lookup as a source for a view or data
     <td valign="top">
     
     Semantic Usage
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] The semantic usage of the view produced by an intelligent lookup is always set to *Relational Dataset*.
-
-
     
     </td>
     </tr>
@@ -102,8 +88,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     <td valign="top">
     
     Include Review Records
-
-
     
     </td>
     <td valign="top">
@@ -111,8 +95,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     Include all records that remain in the *Review* category in the output. 
 
     Default: *On*
-
-
     
     </td>
     </tr>
@@ -120,8 +102,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     <td valign="top">
     
     Include Unmatched Records
-
-
     
     </td>
     <td valign="top">
@@ -129,8 +109,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     Include all records that remain in the *Multiple* and *Unmatched* categories after all rules are applied in the output. Input records in these categories have default values assigned in their return columns. 
 
     Default: *Off*
-
-
     
     </td>
     </tr>
@@ -138,8 +116,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     <td valign="top">
     
     Include "Unmatched Record" Column
-
-
     
     </td>
     <td valign="top">
@@ -147,8 +123,6 @@ You can use the output of your intelligent lookup as a source for a view or data
     Adds an *Unmatched Record* column to the intelligent lookup output. 
 
     This column contains the value *Yes* if the record remains in either the *Multiple* or *Unmatched* category after all rules are applied.
-
-
     
     </td>
     </tr>

@@ -34,15 +34,11 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -50,15 +46,11 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     <td valign="top">
     
     Use first row as column header.
-
-
     
     </td>
     <td valign="top">
     
     Select if your file contains column headers in its first line.
-
-
     
     </td>
     </tr>
@@ -66,15 +58,11 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     <td valign="top">
     
     CSV Delimiter
-
-
     
     </td>
     <td valign="top">
     
     Select the character used to signify the boundary between columns. In general, the default value, `Auto-detect` is sufficient.
-
-
     
     </td>
     </tr>

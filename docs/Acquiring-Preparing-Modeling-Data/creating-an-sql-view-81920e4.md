@@ -91,15 +91,11 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -107,15 +103,11 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Business Name 
-
-
     
     </td>
     <td valign="top">
     
     Enter a descriptive name to help users identify the object. This name can be changed at any time. 
-
-
     
     </td>
     </tr>
@@ -123,8 +115,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Technical Name 
-
-
     
     </td>
     <td valign="top">
@@ -144,8 +134,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Package
-
-
     
     </td>
     <td valign="top">
@@ -157,9 +145,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add tables, views, ER models, and analytic models to packages. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
-
-
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add tables, views, ER models, and analytic models to packages. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -167,8 +153,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Language
-
-
     
     </td>
     <td valign="top">
@@ -188,15 +172,11 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Source Object \(Open SQL Schema/HDI Container\)
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Displays the technical name of the Open SQL Schema or HDI Container and the object name.
-
-
     
     </td>
     </tr>
@@ -204,8 +184,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Semantic Usage
-
-
     
     </td>
     <td valign="top">
@@ -230,8 +208,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Expose for Consumption
-
-
     
     </td>
     <td valign="top">
@@ -254,8 +230,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Run in Analytical Mode
-
-
     
     </td>
     <td valign="top">
@@ -265,8 +239,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     This may improve view performance, particularly if a union is performed. It is only available if *Expose for Consumption* is enabled.
 
     For more information, see [HINT Details](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/4ba9edce1f2347a0b9fcda99879c17a1.html) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
-
-
     
     </td>
     </tr>
@@ -274,8 +246,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <td valign="top">
     
     Status
-
-
     
     </td>
     <td valign="top">
@@ -283,8 +253,6 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     \[read-only\] Displays the deployment and error status of the object. 
 
     For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
-
-
     
     </td>
     </tr>
@@ -304,7 +272,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\).
     -   *Persistency* - Persist the view data to improve performance \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
-    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 

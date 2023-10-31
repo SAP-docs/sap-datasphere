@@ -11,14 +11,10 @@ Depending on the type of model, the following measure types are available:
 
 Type of measure
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ Description
 
 Aggregation
 
-
-
 </td>
 <td valign="top">
 
 You need to set the aggregation type \(sum, average, count, max, min\).
-
-
 
 </td>
 </tr>
@@ -43,14 +35,10 @@ You need to set the aggregation type \(sum, average, count, max, min\).
 
 Derived Measure
 
-
-
 </td>
 <td valign="top">
 
 A derived measure refers to another measure and allows restrictions on available attributes.
-
-
 
 </td>
 </tr>
@@ -59,14 +47,10 @@ A derived measure refers to another measure and allows restrictions on available
 
 Count Distinct
 
-
-
 </td>
 <td valign="top">
 
 Counts unique \(tuple\) occurrences of attributes \(e.g. in case multiple rows contain the country "Germany", it is counted only once\).
-
-
 
 </td>
 </tr>
@@ -75,14 +59,10 @@ Counts unique \(tuple\) occurrences of attributes \(e.g. in case multiple rows c
 
 Calculation
 
-
-
 </td>
 <td valign="top">
 
 A calculated measure references other measures and allows the combination of measures with elementary arithmetic \(operations of addition, subtraction, multiplication, and division\), and also more complex functions like maximum/minimum, IF \(as function\), mathematical functions like round, and conversion functions like convert to decfloat.
-
-
 
 </td>
 </tr>
@@ -91,14 +71,10 @@ A calculated measure references other measures and allows the combination of mea
 
 Fixed Value
 
-
-
 </td>
 <td valign="top">
 
 Define a fixed value that can be used for further calculation.
-
-
 
 </td>
 </tr>
@@ -107,14 +83,10 @@ Define a fixed value that can be used for further calculation.
 
 Converted Currency
 
-
-
 </td>
 <td valign="top">
 
 You can define all the parameters you need to convert currency values into another currency.
-
-
 
 </td>
 </tr>

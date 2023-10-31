@@ -13,14 +13,10 @@ Unfortunately, the downloaded data has some missing and inconsistent values for 
 
 Electric Vehicle Charging Entity `County` Column Value
 
-
-
 </th>
 <th valign="top">
 
 Geo Master Data `County Name` Column
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Geo Master Data `County Name` Column
 
 Argyll
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ Argyll
 
 Argyll & Bute
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Argyll & Bute
 
 Argyll and Bute
 
-
-
 </td>
 <td valign="top">
 
 Argyll and Bute
-
-
 
 </td>
 </tr>
@@ -83,14 +67,10 @@ Once we've loaded the raw data into SAP Datasphere:
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Result
-
-
 
 </th>
 </tr>
@@ -110,8 +90,6 @@ We create a view to:
 
 ![](images/il-charging-cleanup-1_e37bfe3.png)
 
-
-
 </td>
 </tr>
 <tr>
@@ -119,14 +97,10 @@ We create a view to:
 
 We create an intelligent lookup, add our view as the input entity, and set the pairing column to `County`, as this is the column that contains the data that should be joined with our lookup entity.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/il-ex-4-pairing-column_e5af482.png)
-
-
 
 </td>
 </tr>
@@ -135,14 +109,10 @@ We create an intelligent lookup, add our view as the input entity, and set the p
 
 We add our `Geo` view as the lookup entity, and select the `County ID` and `County Name` columns as return columns.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/il-ex-6-return-columns_564b1d8.png)
-
-
 
 </td>
 </tr>
@@ -151,14 +121,10 @@ We add our `Geo` view as the lookup entity, and select the `County ID` and `Coun
 
 We create a fuzzy rule to compare county names in each entity.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/il-ex-8-match-columns_7a11924.png)
-
-
 
 </td>
 </tr>
@@ -169,14 +135,10 @@ We deploy and run the intelligent lookup and our rule is able to match just unde
 
 We review and process the remaining records in the *Preview Data* panel.
 
-
-
 </td>
 <td valign="top">
 
 ![](images/IL_Counties_Example_-_Normal_Width_b2f02fe.png)
-
-
 
 </td>
 </tr>

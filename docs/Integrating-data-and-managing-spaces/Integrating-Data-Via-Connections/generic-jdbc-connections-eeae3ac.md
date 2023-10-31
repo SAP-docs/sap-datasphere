@@ -15,7 +15,7 @@ You can use this connection type to connect to most databases for which SAP Data
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -49,14 +49,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -65,14 +61,10 @@ Description
 
 *JDBC Driver Class* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the JDBC driver class for the database you are using. 
-
-
 
 </td>
 </tr>
@@ -80,8 +72,6 @@ Enter the JDBC driver class for the database you are using.
 <td valign="top">
 
 *JDBC URL*
-
-
 
 </td>
 <td valign="top">
@@ -108,14 +98,10 @@ Enter the URL for the JDBC driver.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -124,14 +110,10 @@ Description
 
 *User Name*
 
-
-
 </td>
 <td valign="top">
 
 Enter the database user name.
-
-
 
 </td>
 </tr>
@@ -140,14 +122,10 @@ Enter the database user name.
 
 *Password*
 
-
-
 </td>
 <td valign="top">
 
 Enter the password for the database user.
-
-
 
 </td>
 </tr>

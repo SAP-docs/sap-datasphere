@@ -10,7 +10,7 @@ Use an *Amazon Athena* connection to access data from Amazon Athena, an interact
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -44,14 +44,10 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,14 +56,10 @@ Description
 
 *Region* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the AWS region in your Amazon Athena regional endpoint that you use to make your requests. For example, `us-west-2`. 
-
-
 
 </td>
 </tr>
@@ -76,14 +68,10 @@ Enter the AWS region in your Amazon Athena regional endpoint that you use to mak
 
 *Workgroup* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the name of the workgroup. Amazon Athena uses workgroups to control query access and costs. The default workgroup is `primary`. 
-
-
 
 </td>
 </tr>
@@ -100,14 +88,10 @@ Enter the name of the workgroup. Amazon Athena uses workgroups to control query 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -116,14 +100,10 @@ Description
 
 *Access Key* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the access key ID of the user that the application must use to authenticate. 
-
-
 
 </td>
 </tr>
@@ -132,14 +112,10 @@ Enter the access key ID of the user that the application must use to authenticat
 
 *Secret Key* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the secret access key of the user that the application must use to authenticate. 
-
-
 
 </td>
 </tr>

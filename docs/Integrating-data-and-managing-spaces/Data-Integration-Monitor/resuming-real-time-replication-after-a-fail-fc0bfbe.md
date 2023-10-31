@@ -10,7 +10,7 @@ You want to resume a real-time replication after it has failed, once you have co
 
 ## Context
 
-It can occur that your real-time replication has been paused with errors. To resume your real-time replication, you need to check the relevant log in the *Remote Table Monitor* – Details screen to identify what is the error and how to solve it. Once the error has been corrected, use the *Retry* button to resume the real-time replication:
+It can occur that your real-time replication has been paused with errors. To resume your real-time replication, you need to check the relevant log in the details screen of the relevant remote table to identify what is the error and how to solve it. Once the error has been corrected, use the *Retry* button to resume the real-time replication:
 
 
 

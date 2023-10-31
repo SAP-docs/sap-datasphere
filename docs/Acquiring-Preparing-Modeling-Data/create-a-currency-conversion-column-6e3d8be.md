@@ -49,15 +49,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -65,15 +61,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Source Amount Column
-
-
     
     </td>
     <td valign="top">
     
     Select the column identifier containing the values to be converted.
-
-
     
     </td>
     </tr>
@@ -81,8 +73,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Steps
-
-
     
     </td>
     <td valign="top">
@@ -102,8 +92,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Source Currency
-
-
     
     </td>
     <td valign="top">
@@ -122,8 +110,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Target Currency
-
-
     
     </td>
     <td valign="top">
@@ -143,8 +129,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Reference Date
-
-
     
     </td>
     <td valign="top">
@@ -171,15 +155,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -187,8 +167,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Client
-
-
     
     </td>
     <td valign="top">
@@ -196,8 +174,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     Enter a three character string that is used to separate tenants within ERP system tables. This is used in the conversion tables to select the correct rows for each user.
 
     This parameter is mandatory, as the CLIENT session context variable is not used by this command.
-
-
     
     </td>
     </tr>
@@ -205,15 +181,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Conversion Type
-
-
     
     </td>
     <td valign="top">
     
     Define the conversion type as stored in the conversion tables. The conversion types available in your system vary according to the setup of your ERP system. In general, these are either M or EURX. Contact your system administrator for the details of your specific table configuration.
-
-
     
     </td>
     </tr>
@@ -221,8 +193,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Error Handling
-
-
     
     </td>
     <td valign="top">
@@ -247,15 +217,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -263,8 +229,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Lookup
-
-
     
     </td>
     <td valign="top">
@@ -283,8 +247,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Accuracy
-
-
     
     </td>
     <td valign="top">
@@ -303,8 +265,6 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Date Format
-
-
     
     </td>
     <td valign="top">
@@ -324,15 +284,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Precision Entity
-
-
     
     </td>
     <td valign="top">
     
     Select the entity identifier of the precision entity.
-
-
     
     </td>
     </tr>
@@ -340,15 +296,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Configuration Entity
-
-
     
     </td>
     <td valign="top">
     
     Select the entity identifier of the conversion type configuration.
-
-
     
     </td>
     </tr>
@@ -356,15 +308,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Prefactors Entity
-
-
     
     </td>
     <td valign="top">
     
     Select the entity identifier of the pre-factors entity.
-
-
     
     </td>
     </tr>
@@ -372,15 +320,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Rates Entity
-
-
     
     </td>
     <td valign="top">
     
     Select the entity identifier of the conversion rates entity.
-
-
     
     </td>
     </tr>
@@ -388,15 +332,11 @@ For more information about the creation of the tables, see [Enabling Currency Co
     <td valign="top">
     
     Notations Entity
-
-
     
     </td>
     <td valign="top">
     
     Select the entity identifier of the entity that stores notations.
-
-
     
     </td>
     </tr>

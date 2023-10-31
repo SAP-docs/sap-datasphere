@@ -40,14 +40,10 @@ The diagram can contain the following kinds of symbols:
 
 Symbol
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -56,16 +52,12 @@ Description
 
 ![](images/Impact_and_Lineage_Analysis_-_Analyzed_Object_81ad0b4.png)
 
-
-
 </td>
 <td valign="top">
 
 The object being analyzed.
 
 You can show or hide the objects on either side of this or any object by clicking the <span class="SAP-icons"></span> \(Show Next Level\) or <span class="SAP-icons"></span> \(Hide All\) buttons on the symbol.
-
-
 
 </td>
 </tr>
@@ -74,8 +66,6 @@ You can show or hide the objects on either side of this or any object by clickin
 
 ![](images/Impact_and_Lineage_Analysis_-_Dependent_Object_44ffb7e.png)
 
-
-
 </td>
 <td valign="top">
 
@@ -83,16 +73,12 @@ Objects appearing in the lineage or impacts of the analyzed object.
 
 If you do not have permission to view an object, it is shown with the :lock: icon and the name *Unauthorized* \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ![](images/Impact_and_Lineage_Analysis_-_Space_3_43b4eb1.png)
-
-
 
 </td>
 <td valign="top">
@@ -102,8 +88,6 @@ Spaces that contain objects appearing in the lineage or impacts of the analyzed 
 You can expand or collapse a space, using the <span class="FPA-icons"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
 
 If you do not have permission to view a space, it is shown with the :lock: icon \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
-
-
 
 </td>
 </tr>
@@ -124,14 +108,10 @@ Use the diagram tools to control the layout of the diagram:
 
 Tool
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -139,8 +119,6 @@ Description
 <td valign="top">
 
 Data Analysis / Dependency Analysis
-
-
 
 </td>
 <td valign="top">
@@ -159,14 +137,10 @@ Toggle between the two modes:
 
 Search
 
-
-
 </td>
 <td valign="top">
 
 Find and select objects in the diagram. Results are proposed once three characters are entered. Click a result in the list to select the object symbol and highlight other objects on its path to the analyzed object.
-
-
 
 </td>
 </tr>
@@ -175,14 +149,10 @@ Find and select objects in the diagram. Results are proposed once three characte
 
 Lineage
 
-
-
 </td>
 <td valign="top">
 
 Enable/disable the display of the lineage of the analyzed object.
-
-
 
 </td>
 </tr>
@@ -191,14 +161,10 @@ Enable/disable the display of the lineage of the analyzed object.
 
 Impact
 
-
-
 </td>
 <td valign="top">
 
 Enable/disable the display of the impacts of the analyzed object.
-
-
 
 </td>
 </tr>
@@ -206,8 +172,6 @@ Enable/disable the display of the impacts of the analyzed object.
 <td valign="top">
 
 Layout
-
-
 
 </td>
 <td valign="top">
@@ -226,14 +190,10 @@ Change the orientation of the diagram:
 
 Reset
 
-
-
 </td>
 <td valign="top">
 
 Restore the default layout. Changing the mode also resets the layout.
-
-
 
 </td>
 </tr>
@@ -241,8 +201,6 @@ Restore the default layout. Changing the mode also resets the layout.
 <td valign="top">
 
 ![](images/Impact_and_Lineage_Diagram_-_Compass_69fc8ea.png)
-
-
 
 </td>
 <td valign="top">
@@ -275,14 +233,10 @@ In addition to their business and technical names and their object type \(indica
 
 Icon
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -291,14 +245,10 @@ Description
 
 <span class="FPA-icons"></span> \(Persisted\)/\(Replicated\)
 
-
-
 </td>
 <td valign="top">
 
 Persisted and replicated objects have their data copied locally to enhance performance \(see [Persist View Data](../persist-view-data-9bd12cf.md) and [Replicate Remote Table Data](../Acquiring-and-Preparing-Data-in-the-Data-Builder/replicate-remote-table-data-7e258a7.md)\).
-
-
 
 </td>
 </tr>
@@ -307,14 +257,10 @@ Persisted and replicated objects have their data copied locally to enhance perfo
 
 <span class="FPA-icons"></span> \(Exposed for Consumption\)
 
-
-
 </td>
 <td valign="top">
 
 Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, tools and apps \(see [Exposing a View For Consumption](../Modeling-Data-in-the-Data-Builder/exposing-a-view-for-consumption-40ec77e.md)\).
-
-
 
 </td>
 </tr>
@@ -323,14 +269,10 @@ Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, too
 
 <span class="FPA-icons"></span> \(Deployed\)
 
-
-
 </td>
 <td valign="top">
 
 Deployment Status \(see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md)\).
-
-
 
 </td>
 </tr>
@@ -345,14 +287,10 @@ Select an object to display its context menu, which contains the following tools
 
 Tool
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -361,14 +299,10 @@ Description
 
 <span class="SAP-icons"></span> \(Show Details\)
 
-
-
 </td>
 <td valign="top">
 
 Preview the object's properties.
-
-
 
 </td>
 </tr>
@@ -377,14 +311,10 @@ Preview the object's properties.
 
 <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
 
-
-
 </td>
 <td valign="top">
 
 Change the focus of the diagram to analyze this object. You can go back to the previous diagram by clicking <span class="SAP-icons"></span> \(Navigate Back\) in the dialog header.
-
-
 
 </td>
 </tr>
@@ -393,14 +323,10 @@ Change the focus of the diagram to analyze this object. You can go back to the p
 
 <span class="SAP-icons"></span> \(Open in New Tab\)
 
-
-
 </td>
 <td valign="top">
 
 Open the object in its editor in a new browser tab.
-
-
 
 </td>
 </tr>
@@ -426,7 +352,7 @@ These additional link types display as follows::
 
 -   <span class="SAP-icons-TNT"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see[Create an Association](../create-an-association-66c6998.md)\).
 
--   <span class="SAP-icons"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+-   <span class="SAP-icons"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 
 
 

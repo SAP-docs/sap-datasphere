@@ -11,14 +11,10 @@ You can check wether your data products are up-to-date or if updates are running
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -27,14 +23,10 @@ Description
 
 Activation Date
 
-
-
 </td>
 <td valign="top">
 
 The date when the data product was activated
-
-
 
 </td>
 </tr>
@@ -43,14 +35,10 @@ The date when the data product was activated
 
 Provider Name
 
-
-
 </td>
 <td valign="top">
 
 The provider's name. Click on the link to go to their profile page.
-
-
 
 </td>
 </tr>
@@ -59,14 +47,10 @@ The provider's name. Click on the link to go to their profile page.
 
 Product Name
 
-
-
 </td>
 <td valign="top">
 
 The name of the data product that was activated. Click the link to go to the product page.
-
-
 
 </td>
 </tr>
@@ -75,14 +59,10 @@ The name of the data product that was activated. Click the link to go to the pro
 
 Space
 
-
-
 </td>
 <td valign="top">
 
 The space that was selected to store the data product.
-
-
 
 </td>
 </tr>
@@ -90,8 +70,6 @@ The space that was selected to store the data product.
 <td valign="top">
 
 Status
-
-
 
 </td>
 <td valign="top">
@@ -115,14 +93,10 @@ The download status of the data product can be:
 
 \>
 
-
-
 </td>
 <td valign="top">
 
 Opens the details area where further information on the latest deliveries is displayed. By clicking on \> you get to the complete list with all information \(start time, duration, number of records, etc\) on the update.
-
-
 
 </td>
 </tr>

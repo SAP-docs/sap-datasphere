@@ -34,15 +34,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -50,15 +46,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Measure Type
-
-
     
     </td>
     <td valign="top">
     
     Choose *Converted Currency*.
-
-
     
     </td>
     </tr>
@@ -66,15 +58,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Source Measure
-
-
     
     </td>
     <td valign="top">
     
     Select the *Source Measure*. It has to have the type *Amount with Currency*.
-
-
     
     </td>
     </tr>
@@ -82,15 +70,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Client ID
-
-
     
     </td>
     <td valign="top">
     
     Enter a three character string that is used to separate tenants within ERP system tables. This is used in the conversion tables to select the correct rows for each user.
-
-
     
     </td>
     </tr>
@@ -98,15 +82,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Target Currency
-
-
     
     </td>
     <td valign="top">
     
     Select your target currency.
-
-
     
     </td>
     </tr>
@@ -120,15 +100,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -136,15 +112,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Current Date
-
-
     
     </td>
     <td valign="top">
     
     The current date is used.
-
-
     
     </td>
     </tr>
@@ -152,15 +124,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Constant Value
-
-
     
     </td>
     <td valign="top">
     
     Select a date on the calendar.
-
-
     
     </td>
     </tr>
@@ -168,15 +136,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Field Reference
-
-
     
     </td>
     <td valign="top">
     
     This is a reference to a field in the row indicating which date to use.
-
-
     
     </td>
     </tr>
@@ -194,15 +158,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -210,15 +170,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Set to null
-
-
     
     </td>
     <td valign="top">
     
     If any error happens during the currency conversion, the target value is set to NULL.
-
-
     
     </td>
     </tr>
@@ -226,15 +182,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Fail on error
-
-
     
     </td>
     <td valign="top">
     
     The conversion fails with an error.
-
-
     
     </td>
     </tr>
@@ -242,15 +194,11 @@ You can use currency conversion for measures in a business entity or a consumtio
     <td valign="top">
     
     Keep unconverted
-
-
     
     </td>
     <td valign="top">
     
     The input value is returned.
-
-
     
     </td>
     </tr>

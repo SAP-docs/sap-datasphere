@@ -31,14 +31,10 @@ The connection type supports the data flow feature.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 *Project* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the ID of the Google Cloud Storage project to which you want to connect. 
-
-
 
 </td>
 </tr>
@@ -63,16 +55,12 @@ Enter the ID of the Google Cloud Storage project to which you want to connect.
 
 *Root Path*
 
-
-
 </td>
 <td valign="top">
 
 \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
-
-
 
 </td>
 </tr>
@@ -89,14 +77,10 @@ If you have specified the root path, then any path used with this connection is 
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -105,16 +89,12 @@ Description
 
 *Key* 
 
-
-
 </td>
 <td valign="top">
 
 Enter the content of the json key file that is used for authentication. 
 
 Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
-
-
 
 </td>
 </tr>

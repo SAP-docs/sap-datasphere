@@ -13,7 +13,7 @@ Per default, the user who creates a task schedule owns the schedule which means 
 ## Prerequisites
 
 -   With the `DW Integrator` role you can change the schedule and let the scheduling component run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
--   To let the job scheduling component of SAP Datasphere run scheduled tasks on your behalf, you need to give your consent. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+-   To let the job scheduling component of SAP Datasphere run scheduled tasks on your behalf, you need to give your consent. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -36,7 +36,7 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 4.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the monitor asking for your consent. Give your consent.
 
-5.  For remote tables and views: Select the object for which you want to schedule a task.
+5.  Select the object for which you want to schedule a task.
 
 6.  Depending on the object perform the following action:
 
@@ -46,15 +46,11 @@ Changing the owner of the schedule is required when the user owning the schedule
     <th valign="top">
 
     Object
-
-
     
     </th>
     <th valign="top">
 
     Action
-
-
     
     </th>
     </tr>
@@ -62,15 +58,11 @@ Changing the owner of the schedule is required when the user owning the schedule
     <td valign="top">
     
     **Remote table**
-
-
     
     </td>
     <td valign="top">
     
     Select *Schedule Replication* \> *Edit Schedule*.
-
-
     
     </td>
     </tr>
@@ -78,15 +70,11 @@ Changing the owner of the schedule is required when the user owning the schedule
     <td valign="top">
     
     **View**
-
-
     
     </td>
     <td valign="top">
     
     Select *Schedule* \> *Edit Schedule*.
-
-
     
     </td>
     </tr>
@@ -94,8 +82,6 @@ Changing the owner of the schedule is required when the user owning the schedule
     <td valign="top">
     
     **Data flow**
-
-
     
     </td>
     <td valign="top">

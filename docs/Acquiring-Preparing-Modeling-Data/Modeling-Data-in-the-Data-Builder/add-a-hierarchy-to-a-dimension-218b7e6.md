@@ -46,15 +46,11 @@ The following hierarchy features are not supported:
         <th valign="top">
 
         Property
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -62,15 +58,11 @@ The following hierarchy features are not supported:
         <td valign="top">
         
         Business Name
-
-
         
         </td>
         <td valign="top">
         
         Enter a descriptive name to help users identify the object. This name can be changed at any time.
-
-
         
         </td>
         </tr>
@@ -78,8 +70,6 @@ The following hierarchy features are not supported:
         <td valign="top">
         
         Technical Name
-
-
         
         </td>
         <td valign="top">
@@ -99,8 +89,6 @@ The following hierarchy features are not supported:
         <td valign="top">
         
         Parent Column / Child Column
-
-
         
         </td>
         <td valign="top">
@@ -117,14 +105,10 @@ The following hierarchy features are not supported:
         > 
         > ParentCostArea
         > 
-        > 
-        > 
         > </th>
         > <th valign="top">
         > 
         > CostArea
-        > 
-        > 
         > 
         > </th>
         > </tr>
@@ -133,14 +117,10 @@ The following hierarchy features are not supported:
         > 
         > B
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > C
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -149,14 +129,10 @@ The following hierarchy features are not supported:
         > 
         > A
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > B
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -165,14 +141,10 @@ The following hierarchy features are not supported:
         > 
         > NULL
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > A
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -191,14 +163,10 @@ The following hierarchy features are not supported:
         > 
         > ParentCostCenter
         > 
-        > 
-        > 
         > </th>
         > <th valign="top">
         > 
         > CostCenter
-        > 
-        > 
         > 
         > </th>
         > </tr>
@@ -207,14 +175,10 @@ The following hierarchy features are not supported:
         > 
         > 2
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > 3
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -223,14 +187,10 @@ The following hierarchy features are not supported:
         > 
         > 1
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > 2
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -239,14 +199,10 @@ The following hierarchy features are not supported:
         > 
         > NULL
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > 1
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -282,8 +238,6 @@ The following hierarchy features are not supported:
         >     --\>A/3   
         > 
         > 
-        > 
-        > 
         > </td>
         > </tr>
         > </table>
@@ -296,8 +250,6 @@ The following hierarchy features are not supported:
         <td valign="top">
         
         Levels
-
-
         
         </td>
         <td valign="top">
@@ -305,8 +257,6 @@ The following hierarchy features are not supported:
         \[level-based hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
 
         For example, in a `Products` dimension, you may add three levels containing the columns `Product Line`, `Product Category`, and `Product`.
-
-
         
         </td>
         </tr>

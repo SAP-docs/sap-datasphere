@@ -24,15 +24,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -40,15 +36,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Business Name
-
-
     
     </td>
     <td valign="top">
     
     Enter a name for your rule to identify it in the diagram.
-
-
     
     </td>
     </tr>
@@ -56,15 +48,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Match Strategy
-
-
     
     </td>
     <td valign="top">
     
     Choose *Fuzzy Match* to display the *Match Thresholds* section.
-
-
     
     </td>
     </tr>
@@ -72,15 +60,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Input Scope
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Specifies which input records are processed by the rule.
-
-
     
     </td>
     </tr>
@@ -88,15 +72,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Lookup Scope
-
-
     
     </td>
     <td valign="top">
     
     \[read-only\] Specifies which lookup records are available for matching by the rule.
-
-
     
     </td>
     </tr>
@@ -110,15 +90,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -126,8 +102,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Matched Records Score
-
-
     
     </td>
     <td valign="top">
@@ -137,8 +111,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     If an input record is matched to more than one lookup records with a score reaching this threshold, it is placed in the *Multiple* results category.
 
     Default: `100%`
-
-
     
     </td>
     </tr>
@@ -146,8 +118,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Review Records Score
-
-
     
     </td>
     <td valign="top">
@@ -157,8 +127,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     If an input record is matched to more than one lookup records with a score between this threshold and the *Matched Records Score*, it is placed in the *Multiple* results category.
 
     Default: `80%`
-
-
     
     </td>
     </tr>
@@ -166,8 +134,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Unmatched Records Score
-
-
     
     </td>
     <td valign="top">
@@ -175,8 +141,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     \[read-only\] Displays the score beneath which an input record cannot be matched. 
 
     If an input record is not matched to any lookup record with a score above this threshold, then it is placed in the *Unmatched* results category.
-
-
     
     </td>
     </tr>
@@ -192,15 +156,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <th valign="top">
 
     Example
-
-
     
     </th>
     <th valign="top">
 
     Match Criteria
-
-
     
     </th>
     </tr>
@@ -208,8 +168,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     ![](images/Fuzzy_Match_-_One_to_One_d815e18.png)
-
-
     
     </td>
     <td valign="top">
@@ -228,8 +186,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     ![](images/Fuzzy_Match_-_Two_to_Two_c50db4d.png)
-
-
     
     </td>
     <td valign="top">
@@ -248,8 +204,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     ![](images/Fuzzy_Match_-_One_to_Two_1edd1ed.png)
-
-
     
     </td>
     <td valign="top">
@@ -287,15 +241,11 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <th valign="top">
 
     Property
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -303,8 +253,6 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     <td valign="top">
     
     Multiple Match Processing
-
-
     
     </td>
     <td valign="top">
