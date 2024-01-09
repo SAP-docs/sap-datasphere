@@ -34,7 +34,7 @@ You can use the standard roles \(see [Standard Roles Delivered with SAP Datasphe
 
 ## Global Privileges and Permissions
 
-The following table lists the privileges and their permissions that can included in a global role.
+The following table lists the privileges and their permissions that can be included in a global role.
 
 **Global Privileges and Permissions**
 
@@ -133,15 +133,21 @@ Allows users to log into SAP Datasphere. Included in all standard roles except f
 <tr>
 <td valign="top">
 
+*Data Warehouse Runtime*
 
+</td>
+<td valign="top">
+
+`-R--E---`
 
 </td>
 <td valign="top">
 
- 
+-   *Read* - Allows users of the View Analyzer to download the generated SQL analyzer plan file.
 
-</td>
-<td valign="top">
+    See [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views, and the entities they consume.") :arrow_upper_right:
+
+-   *Execute* - not in use
 
 
 
@@ -253,10 +259,214 @@ See [Importing SAP and Partner Business Content from the Content Network](https:
 </td>
 <td valign="top">
 
--   *Read* - To access the *About* area in the *System* tool.
+-   *Read*: To access the *About* area in the *System* tool.
 
--   *Update* - To access the *Administration*, *Configuration* and *About* areas in the *System* tool.
+-   *Update*: To access the *Administration*, *Configuration* and *About* areas in the *System* tool.
 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Asset*
+
+</td>
+<td valign="top">
+
+`CRUD---M`
+
+</td>
+<td valign="top">
+
+-   *Create*: Add an asset.
+-   *Read*:
+    -   Access the catalog and view asset details.
+    -   Search assets, favorites, and recent.
+    -   Filter linked tags, terms, and KPIs.
+
+-   *Update*: Edit the asset name and description.
+-   *Delete*: Remove an asset from the catalog.
+-   *Manage*:
+    -   View published and unpublished assets.
+    -   Publish or unpublish assets.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Glossary*
+
+</td>
+<td valign="top">
+
+`CRUD----`
+
+</td>
+<td valign="top">
+
+-   *Create*: Use with the *Update* privilege to create a glossary.
+-   *Read*: Use with *Catalog Glossary Object* to:
+    -   View the term details and glossary list.
+    -   Create a category.
+    -   Search for terms, favorites, and assets.
+
+-   *Update*: Edit a glossary.
+-   *Delete*: Delete a glossary.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Glossary Object*
+
+</td>
+<td valign="top">
+
+`CRUD---M`
+
+</td>
+<td valign="top">
+
+-   *Create*: Create a term.
+-   *Read*: Use with *Catalog Glossary* to:
+    -   View the term details and glossary list.
+    -   Create a category.
+    -   Search for terms, favorites, and assets.
+
+-   *Update*: Edit a term.
+-   *Delete*: Delete a term.
+-   *Manage*:
+    -   View published and unpublished terms.
+    -   Publish or unpublish a term.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Tag Hierarchy*
+
+</td>
+<td valign="top">
+
+`CRUD----`
+
+</td>
+<td valign="top">
+
+-   *Create*: Create a tag hierarchy.
+-   *Read*: View tag hierarchies and search for tags.
+-   *Update*: Edit tag hierarchies.
+-   *Delete*: Delete a tag hierarchy.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog System*
+
+</td>
+<td valign="top">
+
+`CRUDE---`
+
+</td>
+<td valign="top">
+
+-   *Create*: Create a system.
+-   *Read*: View systems overview.
+-   *Update*: Configure and update a system.
+-   *Delete*: Delete a system.
+-   *Execute*: Synchronize source systems manually.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog KPI Object*
+
+</td>
+<td valign="top">
+
+`CRUD---M`
+
+</td>
+<td valign="top">
+
+-   *Create*: Use with *Catalog KPI Template* with *Read* permission to create a KPI.
+-   *Read*: Use with *Catalog KPI Template* with *Read* permission to:
+    -   View KPI details.
+    -   Search for KPIs, favorites, and recent.
+    -   Filter KPIs on linked terms.
+
+-   *Update*: Use with *Catalog KPI Template* with *Read* permission to update a KPI.
+-   *Delete*: Delete a KPI.
+-   *Manage*:
+    -   View published and unpublished KPIs.
+    -   Publish or unpublish KPIs.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog KPI Template*
+
+</td>
+<td valign="top">
+
+`-RU-----`
+
+</td>
+<td valign="top">
+
+-   *Read*: Use with *Catalog KPI Object* with *Read* permission to:
+    -   View KPI details.
+    -   Search for KPIs, favorites, and recent.
+    -   Filter KPIs on linked terms.
+
+-   *Update*: Edit the KPI template.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Log*
+
+</td>
+<td valign="top">
+
+`-R------`
+
+</td>
+<td valign="top">
+
+-   *Read*: View and search extraction logs for assets and batch job details.
 
 
 
@@ -270,7 +480,7 @@ See [Importing SAP and Partner Business Content from the Content Network](https:
 
 ## Scoped Privileges and Permissions
 
-The following table lists the privileges and their permissions that can included in a scoped role.
+The following table lists the privileges and their permissions that can be included in a scoped role.
 
 > ### Note:  
 > Some permissions require others and may automatically set them. For example, setting the *Delete* permission for the *Data Warehouse Data Builder* privilege automatically sets the *Read* permission as well.
@@ -388,14 +598,14 @@ Allows access to remote and run-time objects:
 -   *Create*, *Read*, *Update* and *Delete* - To create, update, or delete a connection in the *Connections* app, in addition to the corresponding *Space Files* permission.
 
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Data Warehouse Cloud Data Integration* 
+*Data Warehouse Data Integration* 
 
 </td>
 <td valign="top">
@@ -409,16 +619,16 @@ Allows access to the *Data Integration Monitor* app:
 
 -   *Read* - To view the *Data Integration Monitor*.
 -   *Update*:
-    -   To perform any one-off replication/persistency actions in the *Data Integration Monitor* or *Data Builder*.
-    -   To redeploy views in the *Data Builder* where data persistency is used \(including in the view lineage\)
+    -   To perform any one-off data replication/persistence actions in the *Data Integration Monitor* or *Data Builder*.
+    -   To redeploy views in the *Data Builder* where data persistence is used \(including in the view lineage\)
 
 -   *Execute* - To work with schedules.
 
 > ### Note:  
 > In addition to these permissions, the following *Data Integration Monitor* actions require the *Data Warehouse Data Builder* \(*Read*\) privilege:
 > 
-> -   To add a new view in the *View Persistency Monitor*.
-> -   To set up or change partitioned data loading in the *Remote Table Monitor*.
+> -   To add a new view in the *Views* monitor.
+> -   To set up or change partitioned data loading in the *Remote Tables* monitor.
 > 
 > See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
@@ -446,7 +656,7 @@ Not in use
 <tr>
 <td valign="top">
 
-*Data Warehouse Cloud Data Access Control* 
+*Data Warehouse Data Access Control* 
 
 </td>
 <td valign="top">
@@ -604,7 +814,7 @@ Allows access to data in modeling objects:
 
     This permission is given to users with the standard *DW Viewer* role \(who have read-only access to SAP Datasphere\) and users with the *DW Consumer* role \(who do not have access to SAP Datasphere and merely consume exposed data in SAP Analytics Cloud and other analytics clients\).
 
--   `U` \(*Update*\) - Upload data from a CSV file to a local table and delete data from a local table.
+-   `U` \(*Update*\) - Upload data from a csv file to a local table. For local tables with delta capture enabled, updates are tracked in the "Change Type" column.
 -   `E` \(*Execute*\) - Access data in all *Data Builder* and *Business Builder* objects and edit data in *Data Builder* local tables.
 
 See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:

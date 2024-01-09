@@ -203,7 +203,7 @@ no
 <tr>
 <td valign="top">
 
-[Amazon Simple Storage Service Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to access data from objects in Amazon S3 buckets.") :arrow_upper_right:
+[Amazon Simple Storage Service Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to connect to and access data from objects in Amazon S3 buckets.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -438,17 +438,7 @@ no
 <tr>
 <td valign="top">
 
-[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
+[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -478,6 +468,16 @@ no
 </td>
 <td valign="top">
 
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
 [Prepare Connectivity to Google BigQuery](prepare-connectivity-to-google-bigquery-529cef1.md)
 
 </td>
@@ -485,7 +485,7 @@ no
 <tr>
 <td valign="top">
 
-[Google Cloud Storage Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to access objects from Google Cloud Storage.") :arrow_upper_right:
+[Google Cloud Storage Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to connect to and access objects from Google Cloud Storage.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -626,7 +626,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen1 Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aa04f9a3dd454b1b8761a963079887a3.html "Use the connection to access objects in Microsoft Azure Data Lake Gen1 (ADL Gen1).") :arrow_upper_right:
+[Microsoft Azure Data Lake Store Gen1 Connections (Deprecated)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aa04f9a3dd454b1b8761a963079887a3.html "Use the connection to access objects in Microsoft Azure Data Lake Gen1 (ADL Gen1).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -673,7 +673,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen2 Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
+[Microsoft Azure Data Lake Store Gen2 Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
 
 </td>
 <td valign="top">

@@ -196,6 +196,9 @@ You can change the privileges that the user has in your space by assigning it to
 2.  Select one or more scoped roles and click *Select*.
 
 
+> ### Restriction:  
+> You cannot assign yourself to a scoped role. For this reason, you cannot change the privileges that you have in the space by assigning yourself to another scoped role.
+
 
 
 <a name="loio9d59fe511ae644d98384897443054c16__section_sbt_wrj_byb"/>

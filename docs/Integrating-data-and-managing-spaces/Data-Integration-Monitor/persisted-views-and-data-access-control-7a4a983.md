@@ -1,6 +1,6 @@
 <!-- loio7a4a983611cc4efb9415e6f3db310eaa -->
 
-# View Persistency and Data Access Control
+# Persisted Views and Data Access Control
 
 When *Data Access Control* is defined, it can impact the data persistence. Depending on where the *Data Access Control* is set, it might prevent you from persisting a view.
 
@@ -10,7 +10,7 @@ Without *Data Access Control* \(DAC\), all users assigned to a space in SAP Data
 
 <a name="loio7a4a983611cc4efb9415e6f3db310eaa__section_ylk_gf5_rnb"/>
 
-## Persistency and Data Access Control on View Level
+## Persisted Views and Data Access Control on View Level
 
 While defining *Data Access Control* in your view, you need to consider the impact on the data persistence:
 
@@ -25,16 +25,16 @@ While defining *Data Access Control* in your view, you need to consider the impa
     > ### Example:  
     > A view A is created on top of view B and view B is created on top of view C. *Data Access Control* is set on view C. View B and view A can’t be persisted.
 
--   If you change *Data Access Control* on a view the following happens:
+-   If you change *Data Access Control* on a view, the following happens:
 
-    -   If the view is already set as persisted, the persistency is removed when the view is deployed. You need to persist the view again.
-    -   If views on top are persisted, then the persistency of the top view is removed:
-        -   For top views within the same space as the deployed view, the persistency is removed when you deploy your changes.
+    -   If the view is already set as persisted, the persistence is removed when the view is deployed. You need to persist the view again.
+    -   If views on top are persisted, then the persistence of the top view is removed:
+        -   For top views within the same space as the deployed view, the persistence is removed when you deploy your changes.
 
             > ### Example:  
-            > View A is persisted, and it consumes view B. You add a DAC on view B. When redeploying view B, persistency of view A is removed.
+            > View A is persisted, and it consumes view B. You add a DAC on view B. When redeploying view B, persistence of view A is removed.
 
-        -   For other top views, the persistency is removed during the next persistency run of the top view.
+        -   For other top views, the persistence is removed during the next data persistence run of the top view.
 
 
 
@@ -48,7 +48,7 @@ While defining *Data Access Control* in your view, you need to consider the impa
 
 ### Example 1: Data Access Control is set on one column.
 
-Let's take the following example: You have a dataset containing salary information for employees. On the view "Salary" on top of this dataset a *Data Access Control* is set on "Region" column:
+*Data Access Control* is set on "Region" column:
 
 ![](images/DAC_Use_Case_Introduction_d2229da.png)
 
@@ -64,7 +64,7 @@ Taking back the previous example, we now create the "Salary\_Bonus" view on top 
 
 ![](images/DAC_Inner_Join_One_Column_50169a5.png)
 
-Due to the inner join, only the sales records matching the authorized records from the "Salary" view are selected. The "Sales" and "Salary" views can be persisted but the "Salary\_Bonus" view can’t due to DAC assigned to the "Salary" view.
+Due to the inner join, only the sales records matching the authorized records from the "Salary" view are selected. The "Sales" and "Salary" views can be persisted but the "Salary\_Bonus" view can’t be persisted due to DAC assigned to the "Salary" view.
 
 
 
@@ -74,7 +74,7 @@ Again the "Salary\_Bonus" view is created on top of the "Sales" and "Salary" vie
 
 ![](images/DAC_on_one_column_with_left_outer_join_030ce83.png)
 
-Due to the left outer join, the "Salary\_Bonus" view contains all records of the "Sales" view. Even the records from "Sales" view, where no authorized join partner exists in the "Salary" view are considered in the "Salary\_Bonus" view. The "Sales" and "Salary" views can be persisted but the Salary\_Bonus" view can’t due to DAC assigned to the "Salary" view.
+Due to the left outer join, the "Salary\_Bonus" view contains all records of the "Sales" view. Even the records from "Sales" view, where no authorized join partner exists in the "Salary" view are considered in the "Salary\_Bonus" view. The "Sales" and "Salary" views can be persisted but the Salary\_Bonus" view can’t be persisted due to DAC assigned to the "Salary" view.
 
 
 
@@ -104,7 +104,7 @@ Now, the "Sales\_Bonus" view is created on top of "Sales External" and "Sales In
 
 ![](images/Dac_on_2_columns_and_one_union_082e108.png)
 
-With a Union, data records are selected from the underlying sources and the respective authorizations are applied . The result set is the sum of the selected records. You can persist both the "Sales External" and "Sales Internal" views but you can't persist the "Sales\_Bonus".
+With a Union, data records are selected from the underlying sources and the respective authorizations are applied . The result set is the sum of the selected records. You can persist both the "Sales External" and "Sales Internal" views but you can't persist the "Sales\_Bonus" view.
 
 
 

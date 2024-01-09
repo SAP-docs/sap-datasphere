@@ -27,7 +27,7 @@ Also, once you click *Save*:
 
 -   In case an error occurs, you are notified that the configuration cannot be completed and that you need to try again later by clicking the *Retry* button \(which replaces the *Save* button in such a case\). The delay depends on the error \(for example, if there is an error on the SAP HANA Cloud database side, you may need to retry after 60 minutes\).
 
--   You can only make changes to SAP HANA Compute and SAP HANA Storage once every 6 hours.
+-   You can only make changes to SAP HANA Compute and SAP HANA Storage once every 24 hours.
 
 -   If you try to change your SAP HANA configuration, SAP HANA Cloud functionalities \(Spaces, DPServer, Serving of Queries\) will not be available for around 10 minutes. If you run into issues after the configuration, use the *Retry* button.
 
@@ -116,11 +116,23 @@ The number for memory is calculated based on the compute blocks and you cannot d
 Displays the size of memory calculated based on the selected number of compute blocks.
 
 > ### Note:  
-> If you’re using a tenant in regions EU10 or US10 with the hyperscaler Amazon Web Services \(AWS\), you can choose among the maximum available memory sizes in the *Predefined* area. This area is visible only if you’re using a tenant in these regions.
+> If you’re using a tenant in regions EU10, EU11, or US10 with the hyperscaler Amazon Web Services \(AWS\), EU20 with the hyperscaler Azure, or US30 with the hyperscaler Google Cloud Platform \(GCP\), you can choose among the maximum available memory sizes in the *Predefined* area. This area is visible only if you’re using a tenant in these regions.
 > 
 > For more information on the SAP HANA database sizes supported by regions, see [Memory and Storage Sizes Supported by SAP HANA Database](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/798c2c6ba7ae41e898f423aa34491ac3.html) in the *SAP HANA Cloud Administration Guide*.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable the SAP HANA Cloud Script Server* 
+
+</td>
+<td valign="top">
+
+Enable this to access the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries.
 
 </td>
 </tr>
@@ -231,7 +243,14 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select the number of compute blocks to allocate to Data Integration applications. You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
+\[optional\] Select the number of compute blocks to allocate to Data Integration applications which provide enhanced data integration capabilities. This comprises the replication flow that enables data integration with delta processing which is the recommended integration solution for all supported source and target systems.
+
+You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
+
+> ### Note:  
+> Data flows are not part of this commercial package.
+
+
 
 </td>
 </tr>
@@ -245,6 +264,8 @@ Description
 
 The number of node hours available for Data Integration applications per month is calculated from the number of allocated compute blocks.
 
+Every month you're entitled to running up to 200 hours of jobs. Using more than 200 hours has no impact in other jobs. The consumption of data integration is not limited to avoid interrupting critical integration scenarios, but you will be billed for the overusage when it happens.
+
 </td>
 </tr>
 <tr>
@@ -256,6 +277,8 @@ The number of node hours available for Data Integration applications per month i
 <td valign="top">
 
 The maximum number of parallel jobs is calcuated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maxiumum of 10.
+
+Each parallel job means that roughly 5 datasets, from one or several replication flows, can be run in parallel. If more replication flows are running, processing will be queued and replication will occur less frequently.
 
 </td>
 </tr>
@@ -302,6 +325,89 @@ Displays the execution hours you have used that exceed the amount allocated by y
 </tr>
 </table>
 
+**Premium Outbound Integration**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Outbound Blocks*
+
+</td>
+<td valign="top">
+
+You can increase or decrease the number of storage blocks allocated for premium outbound integration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Outbound Volume*
+
+</td>
+<td valign="top">
+
+The outbound volume is calculated from the number of allocated blocks.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Premium Outbound Usage*: *Allocated Data Volume*
+
+</td>
+<td valign="top">
+
+Displays the number of GB allocated to premium outbound integration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Premium Outbound Usage*: *Used Data Volume*
+
+</td>
+<td valign="top">
+
+Displays the number of GB used by premium outbound integration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Premium Outbound Usage*: *Exceeded Data Volume*
+
+</td>
+<td valign="top">
+
+Displays the data volume you have used that exceeds the amount allocated by your tenant configuration.
+
+> ### Note:  
+> This only appears if you have used more data than allocated.
+
+
+
+</td>
+</tr>
+</table>
+
 **Catalog**
 
 
@@ -326,7 +432,19 @@ Description
 </td>
 <td valign="top">
 
-Included by default. The amount of GB used per hour available for Catalog assets, activities and metadata cannot be changed.
+Included by default. You can increase or decrease the number of storage blocks allocated for the catalog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Storage*
+
+</td>
+<td valign="top">
+
+The amount of storage available for the catalog is calculated from the number of allocated blocks.
 
 </td>
 </tr>
@@ -338,7 +456,7 @@ Included by default. The amount of GB used per hour available for Catalog assets
 </td>
 <td valign="top">
 
-Included by default. The number of blocks used by Catalog crawling cannot be changed.
+Included by default. You can increase or decrease the number of storage blocks allocated for catalog crawling.
 
 </td>
 </tr>
@@ -350,7 +468,7 @@ Included by default. The number of blocks used by Catalog crawling cannot be cha
 </td>
 <td valign="top">
 
-The number of hours consumed by Catalog usage every month.
+The number of hours consumed by catalog usage every month.
 
 </td>
 </tr>
@@ -362,7 +480,48 @@ The number of hours consumed by Catalog usage every month.
 </td>
 <td valign="top">
 
-The maximum number of parallel Catalog jobs cannot be changed.
+The maximum number of parallel jobs is calcuated from the number of blocks allocated for catalog crawling.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Usage*: *Allocated Storage*
+
+</td>
+<td valign="top">
+
+Displays the number of GB allocated to the catalog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Usage*: *Used Storage*
+
+</td>
+<td valign="top">
+
+Displays the number of GB used by the catalog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Catalog Usage*: *Exceeded Storage*
+
+</td>
+<td valign="top">
+
+Displays the amount of storage you have used that exceeds the amount allocated by your tenant configuration.
+
+> ### Note:  
+> This only appears if you have used more storage space than allocated.
+
+
 
 </td>
 </tr>

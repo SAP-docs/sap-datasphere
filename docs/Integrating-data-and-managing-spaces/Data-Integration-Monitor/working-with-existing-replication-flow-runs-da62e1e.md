@@ -36,6 +36,8 @@ On the left of the monitoring screen, you find the aggregated status information
 
 -   `Failed (Stopped)`: You have stopped the replication flow. For more information about the consequences and about what you can do next, see below under Stopping a Replication Flow Run.
 
+-   `Failed (Locked)`: A parallel flow is already running for this object. As you can have several flows running on the same objects, the first flow will continue running and the other ones will get the status *Failed \(Locked\)*.
+
 -   `Completed`: This status is relevant for initial load and means that the run has been finished successfully for all objects.
 
 
@@ -59,4 +61,12 @@ When you resume the flow, the system replicates all source data changes that hap
 ## Stopping a Replication Flow Run
 
 If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather then from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. For more information, see [Deleting a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ssf_mk5_hzb"/>
+
+## Removing Replication Objects from a Running Replication Flow
+
+You can remove individual replication objects from a running replication flow without stopping the replication flow run. To do so, choose the *Remove* button to the right of each object you want to remove, then deploy the flow once again. The relevant objects are then no longer replicated. Any data for the removed objects that already exists in the target \(from previous runs\) remains as-is.
 

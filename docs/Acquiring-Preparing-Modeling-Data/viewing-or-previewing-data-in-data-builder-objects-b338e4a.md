@@ -36,9 +36,10 @@ You can view data in the following contexts in the data layer:
 To open the *Data Viewer* panel, click <span class="SAP-icons"></span> \(Show or hide data viewer\)in a data object context menu, in the main toolbar, or in a diagram symbol toolbar.
 
 > ### Note:  
-> -   In a view editor, if the *Input Parameters* dialog appears, the view contains one or more input parameters and you must enter a value to apply for each of them \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). You can edit values at any moment by clicking the input parameter strip.
+> -   In the table editor or the view editor, the *Input Parameters* dialog appears if the remote table or the view contains one or more input parameters and you must enter a value to apply for each of them \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). A value might already appear if the input parameter has a predefined default value. You can edit values at any moment by clicking the input parameter strip and entering a new value or get access to a list of predefined values with the *Value Help Dialog* if your input parameter has a predefined default value.
 > 
->     Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+>     > ### Note:  
+>     > Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
 > 
 > -   If a column has *Binary*, *Large Binary*, *ST\_Point*, and *ST\_Geometry* set as data type, the data viewer is unavailable and records are shown as *Cannot be shown*. If no data can be found, the data viewer shows it as *NULL*.
 

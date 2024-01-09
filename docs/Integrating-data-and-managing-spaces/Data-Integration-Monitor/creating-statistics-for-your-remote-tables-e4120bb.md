@@ -29,14 +29,14 @@ To ensure the best possible performance when accessing your remote tables and pr
 > 
 > -   If your remote table is based on Google BigQuery source, and if it contains one or more columns with data type STRUCT, then you can only create statistics of type *RECORD COUNT*.
 
-Statistics can be created from the *Remote Query Monitor*.
+Statistics can be created from the *Remote Queries* monitor.
 
-1.  From the *Data Integration Monitor* \(<span class="FPA-icons"></span>\), select *Remote Query Monitor* \> ** \> *Remote Table Statistics*.
+1.  From the *Data Integration Monitor* \(<span class="FPA-icons"></span>\), select *Remote Queries* \> *Remote Table Statistics*.
 
     > ### Note:  
-    > By default, the remote tables in data access remote are displayed. However, you can use the drop down list and display all remote tables if you need to see logs related to previous actions on remote tables with data access "replicated".
+    > With the different tabs, you can navigate between the remote tables in *Data Access: Remote* or *Data Access: Replicated*. However, statistics can be created only on remote tables with *Data Access: Remote*. However, you can still navigate in existing statistics from previous actions.
 
-2.  Select the remote table for which you need to create statistics for, and choose *Statistics* \> *Create Statistics*. Or select the remote table, click <span class="FPA-icons"></span> to navigate to the details screen, and click the button *Create Statistics*.
+2.  Select the remote table for which you need to create statistics for, and choose *Create Statistics*. Or select the remote table, click <span class="FPA-icons"></span> to navigate to the details screen, and click the button *Create Statistics*.
 
 You can create three types of data statistics object:
 

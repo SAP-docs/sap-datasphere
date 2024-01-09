@@ -1,8 +1,8 @@
 <!-- loio656eebc2ced14ec09afa455224fa9a98 -->
 
-# Access Space Objects in Your HDI Container
+# Consume Space Objects in Your HDI Container
 
-To access SAP Datasphere views that are exposed for consumption as sources for your calculation views and flowgraphs, you must create a database user with appropriate privileges, create a user-provided service in SAP BTP Cockpit, and configure your HDI project.
+To consume SAP Datasphere views that are exposed for consumption as sources for your calculation views and flowgraphs, you must create a database user with appropriate privileges, create a user-provided service in SAP BTP Cockpit, and configure your HDI project.
 
 
 
@@ -38,7 +38,23 @@ To access SAP Datasphere views that are exposed for consumption as sources for y
 5.  In your SAP Business Application Studio project, do the following:
 
     -   Prepare your project for building, including specifying the name of your user-provided service instance in your `mta.yaml` file \(see [Prepare Your HDI Project for Exchanging Data with Your Space](prepare-your-hdi-project-for-exchanging-data-with-you-a94e163.md)\).
-    -   \[optional\] Create `hdbsynonym` and`hdbsynonymconfig` files to define synonyms for the views that you want to consume from your SAP Datasphere space, and an `hdbgrants` file to grant read access to them.
+    -   Create an `hdbgrants` file to grant read access to the views that you want to consume from your SAP Datasphere space.
+
+        You can, optionally, grant access to the Application Function Library by including the following code in `hdbgrants`:
+
+        ```
+                	"global_roles" : [
+                    	{
+                        	"roles" : [ "AFL__SYS_AFL_AFLPAL_EXECUTE_WITH_GRANT_OPTION"]
+                    	}
+                	]			
+        
+        ```
+
+        > ### Note:  
+        > The SAP HANA Cloud Script Server must be enabled to allow this grant \(see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right:\).
+
+    -   Create `hdbsynonym` and `hdbsynonymconfig` files to define synonyms for the consumable views.
 
 6.  Build your project.
 

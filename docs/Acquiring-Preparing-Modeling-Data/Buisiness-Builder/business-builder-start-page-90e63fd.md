@@ -10,6 +10,8 @@ The Business Builder start page gives you access to the different editors.
 
 You can access the editors for consumption models, fact models, analytical datasets and dimensions, and create authorization scenarios.
 
+![The graphic has a descriptive text.](images/DWC_-_business_builder_start_page_646b7c9.png)
+
 Apart from that, there are several functions which you can access here directly:
 
 -   You can search for objects.

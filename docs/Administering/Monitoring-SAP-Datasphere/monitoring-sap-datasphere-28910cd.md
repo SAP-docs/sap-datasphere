@@ -578,7 +578,7 @@ Shows the status of the task: completed, failed, running.
 </td>
 <td valign="top">
 
-For tasks with the status “failed”, shows the substatus and a message describing the cause of failure. For more information about failed task substatuses, see [Navigating in the Monitor Tabs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5d4af7620a214872a4dc5286f5e9e997.html "Selecting a specific monitor tab from Data Integration Monitor (  ) displays a tabular list of the scheduled tasks associated with the selected monitor type . From the tabular display, you can click > at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run.") :arrow_upper_right:.
+For tasks with the status “failed”, shows the substatus and a message describing the cause of failure. For more information about failed task substatuses, see [Navigating in the Monitor Tabs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5d4af7620a214872a4dc5286f5e9e997.html "Selecting a specific monitor tab from Data Integration Monitor (  ) displays a tabular list of the scheduled tasks associated with the selected monitor type. You can personalize the columns you want to display clicking on  Select Columns From the tabular display, you can click > at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -652,7 +652,7 @@ Shows the identifier of the run task.
 </table>
 
 > ### Note:  
-> Data on tasks are kept for the time specified in <span class="FPA-icons"></span> \(Configuration\) → *Task Logs*.
+> Data on tasks are kept for the time specified in <span class="FPA-icons"></span> \(Configuration\) → *Tasks*.
 
 
 

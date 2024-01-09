@@ -4,7 +4,7 @@
 
 You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries.
 
-To enable the SAP HANA Cloud script server, an S-user must request this service with an SAP ticket. For a step-by-step guide to creating the ticket, see [2994416 - Enablement of APL and PAL in DWC](https://launchpad.support.sap.com/#/notes/2994416).
+To enable the SAP HANA Cloud script server, go to the *Tenant Configuration* page and select the checkbox in the *Base Configuration* section. For more information, see [Configure the Size of Your SAP Datasphere Tenant](configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md).
 
 > ### Note:  
 > The script server cannot be enabled in a SAP Datasphere consumption-based tenant with free plan.

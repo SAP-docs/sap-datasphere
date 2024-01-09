@@ -6,6 +6,9 @@ Delete your SAP Datasphere service instance in SAP BTP.
 
 To do so, you must have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
 
+> ### Note:  
+> When you delete your service instance, all your data will also be deleted. The tenant and all its data cannot be recovered.
+
 1.  In SAP BTP, select the subaccount and the space where the service instance was created.
 
 2.  Navigate to *Instances and Subscriptions*.

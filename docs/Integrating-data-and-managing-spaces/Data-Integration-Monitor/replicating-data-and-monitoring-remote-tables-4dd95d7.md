@@ -4,7 +4,7 @@
 
 # Replicating Data and Monitoring Remote Tables
 
-In the *Data Integration Monitor*, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing \(CDC\).
+In *Remote Tables* \(monitor\), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing \(CDC\).
 
 
 
@@ -14,17 +14,17 @@ SAP Datasphere is using SAP HANA smart data integration or SAP HANA smart data a
 
 Initially, by default, when a remote table is deployed, the data is directly accessed live from the source and no data is stored in SAP Datasphere.
 
-For connection types that support replication, in the *Remote Table Monitor*, for example, you can set up replication into SAP Datasphere to improve performance when accessing the data.
+For connection types that support replication, you can set up data replication to improve performance when accessing the data.
 
 The *Data Access* property of a remote table shows you whether data is accessed directly from the source or whether data is replicated.
 
 When replicating data, you can select:
 
--   Snapshot replication
+-   *Start Data Replication* 
 
-    Snapshot replication copies the full set of data from your source object \(usually a database table or view\) into SAP Datasphere.
+    It copies the full set of data from your source object \(usually a database table or view\) into SAP Datasphere.
 
--   Real-time replication
+-   *Enable Real-Time Data Replication*
 
     Real-time replication is only availabe for connection types and source objects that support copying data changes in real-time into SAP Datasphere via change data capturing \(CDC\). Examples are database connections such as SAP HANA, Microsoft SQL Server, or Oracle, supporting real-time replication for tables after the data has been updated in the source. With schedules, you can copy the full set of data from your source recurrently and asynchronously in the background.
 
@@ -32,11 +32,11 @@ When replicating data, you can select:
 > ### Note:  
 > Parallel execution is not supported. You can't perform two similar tasks at the same time and therefore you need to wait until the currently running task is completed before launching a new identical task.
 > 
-> For example, if you want to run a new snapshot replication, but another task is already replicating data from the same table, then you will get a notification and your task will fail.
+> For example, if you want to start a data replication, but another task is already replicating data from the same table, then you will get a notification and your task will fail.
 
 The *Frequency* property of a remote table shows you whether or not data for a remote table is replicated and if yes, at what frequency the replication takes place. Replicated data is stored in a replica table.
 
-For more information on which connection types support snapshot and real-time replication, see [Integrating Data via Connections](../Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md).
+For more information on which connection types support data replication \(direct or scheduled replication\) and real-time replication, see [Integrating Data via Connections](../Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md).
 
 As long as the prerequisites are met, you can switch between directly accessing the data from the source \(remote\), or accessing to replicated data \(data replication in real-time or in direct or schedule mode\), according to your needs.
 
@@ -52,7 +52,7 @@ The interactive graphic below summarizes how data is replicated:
 
 Data is copied into SAP Datasphere and is read from the replica table:
 
--   For snapshots replication, replicated means that data is read from the replica table but not expected to be updated in real-time.
+-   For data replication, replicated means that data is read from the replica table but not expected to be updated in real-time. To get your data updated, you must start a direct data replication or create a schedule to plan regular replication.
 -   For real-time replication, replicated means that data is read from the replica table and expected to be updated in real-time.
 
 
@@ -67,7 +67,7 @@ For more information, see [Import Remote Tables](https://help.sap.com/viewer/24f
 
 ### Replica table
 
-Remote data is read from these replica tables once the data access is replicated. For remote tables connected via SAP HANA smart data access, only one remote table per source entity of a connection can be in status "Replicated" \(Snapshot or Real-Time\).
+Remote data is read from these replica tables once the data access is replicated. For remote tables connected via SAP HANA smart data access, only one remote table per source entity of a connection can be in status "Replicated" \(direct or scheduled replication, or real-time replication\).
 
 
 
@@ -141,7 +141,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 ## Monitoring Remote Tables
 
-In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the frequency shows if you replicate snapshots or if real-time replication is used to copy data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
+In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the frequency shows how you are replicating your data: in real-time, using a schedule \(scheduled\) or on-demand \(none\) to capture your data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
 
 
 <table>
@@ -160,24 +160,24 @@ Information
 <tr>
 <td valign="top">
 
-*Connection* 
+*Connection \(Business Name\) or Connection \(Technical Name* 
 
 </td>
 <td valign="top">
 
-Displays the name of the connection the remote table belongs to. 
+Displays the name of the connection the remote table belongs to.Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Table* 
+*Technical Name \(or Business Name\)* 
 
 </td>
 <td valign="top">
 
-Displays the name of the remote table.
+Displays the name of the remote table. Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
 
 </td>
 </tr>
@@ -193,10 +193,8 @@ Displays how data is currently accessed.
 
 -   *Remote*: Data is accessed directly from the source \(federation\) and read from the virtual table.
 -   *Replicated*: Data is copied in SAP Datasphere and is read from the replica table.
-    -   For snapshots, *Replicated* means that data is read from the replica table but not expected to be updated in real-time.
-
-    -   For real-time replication, *Replicated* means that data is read from the replica table and expected to be updated in real-time.
-
+    -   *Replicated \(Snapshot\)*: The data is read from the replica table but is not expected to be updated in real-time. You can create a schedule to refresh the data regularly.
+    -   *Replicated \(Real-Time\)*: The data is read from the replica table and expected to be updated in real-time.
 
 
 
@@ -333,15 +331,29 @@ Displays the size occupied by the remote table data on disk.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Schedule Owner* 
+
+</td>
+<td valign="top">
+
+Displays the name of the current schedule owners.
+
+</td>
+</tr>
 </table>
+
+You can personalize the columns you want to display clicking on :gear:
 
 
 
 <a name="loio4dd95d7bff1f48b399c8b55dbdd34b9e__section_flz_nlm_h4b"/>
 
-## Actions in the *Remote Table Monitor*
+## Actions in the *Remote Tables*
 
-Depending on the combination of values in the *Data Access*, *Refresh Frequency* and *Status* column, from the *Remote Table Monitor*, you can perform the following actions on remote tables:
+Depending on the combination of values in the *Data Access*, *Frequency* and *Status* columns, from the *Remote Tables* monitor, you can perform the following actions on remote tables:
 
 
 <table>
@@ -360,7 +372,7 @@ Description
 <tr>
 <td valign="top">
 
-*Load New Snapshot* 
+*Start Data Replication* 
 
 </td>
 <td valign="top">
@@ -368,7 +380,7 @@ Description
 Directly start a copy of the full set of data from the source in the background.
 
 > ### Note:  
-> If you load a new snapshot on a remote table whose data access is Replicated \(Real-time\), you’ll remove the real-time replication for this table. Your data will no longer be updated in real-time and you’ll have to load new snapshots or create a schedule to get your data updated.
+> If you start data replication on a remote table whose data access is Replicated \(Real-time\), you’ll remove the real-time replication for this table. Your data will no longer be updated in real-time and you’ll have to start a new data replication or create a schedule to get your data updated.
 
 For more information, see [Replicate Full Set of Data](replicate-full-set-of-data-35632cd.md).
 
@@ -399,7 +411,7 @@ Stop replication and delete data from replica table.
 <tr>
 <td valign="top">
 
-*Enable Real-Time Access* 
+*Enable Real-Time Data Replication* 
 
 </td>
 <td valign="top">
@@ -407,7 +419,7 @@ Stop replication and delete data from replica table.
 Start replication of data changes in the source in real-time.
 
 > ### Note:  
-> When enabling the replication in real-time, the data is updated in real-time. You don’t need to load a new snapshot or to create a schedule to update your data.
+> When enabling the replication in real-time, the data is updated in real-time. You don’t need to start a new data replication or to create a schedule to update your data
 
 For more information, see [Replicate Data Changes in Real-Time](replicate-data-changes-in-real-time-441d327.md).
 
@@ -416,19 +428,7 @@ For more information, see [Replicate Data Changes in Real-Time](replicate-data-c
 <tr>
 <td valign="top">
 
-*Go to Connections List* 
-
-</td>
-<td valign="top">
-
-Switch to the list of connections in space management.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Create Snapshot Schedule* 
+*Create Schedule* 
 
 </td>
 <td valign="top">
@@ -515,7 +515,7 @@ Resume the scheduled task that was previously paused.
 > 
 > -   *Schedule* data replication: You can delete, pause or resume schedules for several remote tables that have schedules defined. You can also assign several schedules to your name and become the owner of the schedules.
 > -   *Remove Replicated Data*: You can select several remote tables that have replicated data available and remove the replicated data for all of them.
-> -   Many actions like *Load New Snapshot* , *Remove Replicated Data*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
+> -   Many actions like *Start Data Replication*, *Remove Replicated Data*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
 > 
 > After triggering a group of actions, the status of each action is displayed in the notification area. As these operations run in an asynchronous mode, the status will not be updated automatically, and you need to manually *Refresh* the page to get the updated status.
 
@@ -635,7 +635,7 @@ Partitioning on key and non-key columns with certain restrictions depending on d
 </td>
 <td valign="top">
 
-Action to be done from *Remote Table Monitor* details screen.
+Action to be done from *Remote Tables* monitor details screen.
 
 For more information, see [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md)
 
@@ -659,7 +659,7 @@ Supported except for remote tables connected via an SAP HANA smart data integrat
 </td>
 <td valign="top">
 
-Action to be done from *Remote Table Statistics Monitor*.
+Action to be done from *Remote Table Statistics* monitor.
 
 For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
 
@@ -693,9 +693,9 @@ For remote tables connected via SAP HANA smart data access, only one remote tabl
 
 If the replication status shows an error for snapshot or real-time replication, you can repair the load.
 
-1.  Select the remote table and choose *Table Replication* \> *Remove Replicated Data*.
+1.  Select the remote table and choose *Data Replication* \> *Remove Replicated Data*.
 
-2.  Select the remote table and choose *Table Replication* \> *Load New Snapshot* or *Table Replication* \> *Enable Real-Time Access*.
+2.  Select the remote table and choose *Data Replication* \> *Start Data Replication* or *Data Replication* \> *Enable Real-Time Data Replication*.
 
 
 
@@ -704,9 +704,9 @@ If the replication status shows an error for snapshot or real-time replication, 
 
 ## Canceling a Run
 
-If you need to cancel a running snapshot replication or an initialization task \(for example if the replication or initialization takes long\) you can click the *Cancel Run* button available in the *Remote Table Monitor* Details screen:
+If you need to cancel a running snapshot replication or an initialization task \(for example if the replication or initialization takes long\) you can click the *Cancel Run* button available in the *Remote Tables* Details screen:
 
-1.  From the *Remote Table Monitor*, Click <span class="FPA-icons"></span> of the remote table you need to cancel the run.
+1.  From the *Remote Tables*, Click <span class="FPA-icons"></span> of the remote table you need to cancel the run.
 2.  Click *Cancel Run*.
 
     > ### Note:  

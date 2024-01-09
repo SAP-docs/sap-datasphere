@@ -1,7 +1,5 @@
 <!-- loio4b660c0395454bd0923f732eef4ee4b2 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Take Over the Ownership of a Schedule
 
 Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.
@@ -38,72 +36,9 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 5.  Select the object for which you want to schedule a task.
 
-6.  Depending on the object perform the following action:
+6.  Select *Schedule* \> *Assign Schedule to me*
 
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Object
-    
-    </th>
-    <th valign="top">
-
-    Action
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Remote table**
-    
-    </td>
-    <td valign="top">
-    
-    Select *Schedule Replication* \> *Edit Schedule*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **View**
-    
-    </td>
-    <td valign="top">
-    
-    Select *Schedule* \> *Edit Schedule*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Data flow**
-    
-    </td>
-    <td valign="top">
-    
-    Select :clock3: *Schedule* \> *Edit Schedule*.
-
-    > ### Note:  
-    > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.
-
-
-    
-    </td>
-    </tr>
-    </table>
-    
-    The *Edit Schedule* window opens.
-
-    For data flows, you first enter a dialog where you select the relevant data flow before you get to the *Edit Schedule* window.
-
-7.  Click *Assign to Me* and confirm the following message.
-
-8.  Click *OK* to save the schedule.
+7.  Click *OK* to save the schedule.
 
 
 

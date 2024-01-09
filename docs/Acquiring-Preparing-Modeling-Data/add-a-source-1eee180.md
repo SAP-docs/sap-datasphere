@@ -14,7 +14,7 @@ Drag a table or view from the *Source Browser* panel and drop it on the diagram.
 
 2.  Browse or search for the object you want to add on either of the tabs.
 
-    -   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\).. You can search and expand the categories \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
+    -   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\).. For more information, see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md).
 
     -   The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. However it shows only limited records. If you can't see the sources you are looking for, use *Import from Connection* to perform search. You can:
 
@@ -22,9 +22,9 @@ Drag a table or view from the *Source Browser* panel and drop it on the diagram.
         -   Open the *Import Objects from Connection* dialog on a particular connection to select multiple objects for import \(see [Import Multiple Objects from a Connection](import-multiple-objects-from-a-connection-e720b13.md)\).
 
 
-3.  Select the object of your choice, and then drag and drop it onto the diagram.
+3.  Select your object and drag and drop it onto the diagram.
 
-    ![](images/Create_Source_Gif_fec4071.gif)The source is added to the diagram, its symbol is selected, and its properties are displayed in the side panel. In addition, an output node, initially entitiled `View 1`, which represents the final output structure of the view, is created in the diagram and linked to the source.
+    ![](images/Create_Source_Gif_fec4071.gif) The source is added to the diagram, its symbol is selected, and its properties are displayed in the side panel. In addition, an output node, initially entitiled `View 1`, which represents the final output structure of the view, is created in the diagram and linked to the source.
 
     > ### Note:  
     > If you choose a table or view from the *Sources* tab, it is automatically imported into the repository and deployed, and will be available on the *Repository* tab for future use by you or others.

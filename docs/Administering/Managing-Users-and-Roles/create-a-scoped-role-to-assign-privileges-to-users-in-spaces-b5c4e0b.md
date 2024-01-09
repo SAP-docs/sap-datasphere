@@ -102,7 +102,7 @@ Senior Sales Modeler
 
 Custom role “Senior Modeler” based on the DW Modeler standard role + these privileges \(and permissions\):
 
--   Data Warehouse Cloud Data Integration \(Execute\)
+-   Data Warehouse Data Integration \(Execute\)
 
 -   Data Warehouse Remote Connection \(Create, Read, Update and Delete\)
 
@@ -171,7 +171,7 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
 ## Create a Scoped Role
 
 > ### Note:  
-> In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Manage Scoped Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/85085a35a58a4589bc121fb94efc4876.html "Users with a DW Administrator role (or with equivalent privileges) can create, read, update, and delete scoped roles via the command line.") :arrow_upper_right:\).
+> In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Manage Scoped Roles via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/85085a35a58a4589bc121fb94efc4876.html "Users with a DW Administrator role (or with equivalent privileges) can create, read, update, and delete scoped roles via the command line.") :arrow_upper_right:\).
 
 1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\) and click your scoped role to open it.
 2.  Click <span class="FPA-icons"></span> \(Add Role\) and select *Create a Scoped Role*.

@@ -32,6 +32,10 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 
     For more information, see [Add a Source](add-a-source-1eee180.md).
 
+    If your source has an iput parameter, the *Map Input Parameter* dialog appears. You can either set a value for each parameter or map to an input parameter in the view. If you choose to set a value, you can either enter a value manually or, if your input parameter has a predefined default value, get access to a list of predefined values with the *Value Help Dialog*. Only the first 10 records are shown by default. You can see more by using the *Search* bar or clicking *More*.
+
+    For more information, see [Create an Input Parameter](create-an-input-parameter-53fa99a.md).
+
 3.  Optional. Drag additional sources from the *Source Browser* and drop them on your source to create a join or union.
 
     For more information, see [Create a Join](create-a-join-947d6d8.md) and [Create a Union](create-a-union-5c3d354.md).
@@ -210,6 +214,25 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
+    Package
+    
+    </td>
+    <td valign="top">
+    
+    Select the package to which the object belongs. 
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Semantic Usage
     
     </td>
@@ -297,7 +320,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 7.  Complete or consult other sections as appropriate:
 
     -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\).
-    -   *Persistency* - Persist the view data to improve performance \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
+    -   *Data Persistence* - Persist the view data to improve performance \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
     -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.

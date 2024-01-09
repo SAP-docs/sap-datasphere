@@ -83,7 +83,7 @@ Users with the *DW Space Administrator* role can create database users, granting
     You can also enable:
 
     -   *With Grant Option* - Allow the user to grant read access to other database users.
-    -   *Enable HDI Consumption* - Allow the creation of a user-defined service to give read access to an HDI container added to the space \(see [Access Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/access-space-objects-in-your-hdi-container-656eebc.md)\).
+    -   *Enable HDI Consumption* - Allow the creation of a user-defined service to give read access to an HDI container added to the space \(see [Consume Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/consume-space-objects-in-your-hdi-container-656eebc.md)\).
 
 
     
@@ -138,7 +138,7 @@ Users with the *DW Space Administrator* role can create database users, granting
         -   Port
 
 
-7.  If you are using your database user to consume space data in an SAP SQL Data Warehousing HDI container, click the *Copy Full Credentials* button to copy the json code that you can use to initialize your user-defined service \(see [Access Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/access-space-objects-in-your-hdi-container-656eebc.md)\).
+7.  If you are using your database user to consume space data in an SAP SQL Data Warehousing HDI container, click the *Copy Full Credentials* button to copy the json code that you can use to initialize your user-defined service \(see [Consume Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/consume-space-objects-in-your-hdi-container-656eebc.md)\).
 
 8.  Click *Close* to return to your space page.
 

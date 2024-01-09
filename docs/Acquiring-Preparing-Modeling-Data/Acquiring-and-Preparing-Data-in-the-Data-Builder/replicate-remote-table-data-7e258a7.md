@@ -20,14 +20,16 @@ By default, when you import a remote table, its data is not replicated and must 
 
     -   Click *Table Replication* to:
 
-        -   *Load New Snapshot*:
+        -   *Start Data Replication*
+
+            :
 
             Directly start a copy of the full set of data from the source in the background.
 
             > ### Note:  
-            > If you load a new snapshot on a remote table whose data access is Replicated \(Real-time\), you’ll remove the real-time replication for this table. Your data will no longer be updated in real-time and you’ll have to load new snapshots or create a schedule to get your data updated.
+            > If you start data replication on a remote table whose data access is Replicated \(Real-time\), you’ll remove the real-time replication for this table. Your data will no longer be updated in real-time and you’ll have to start a new data replication or create a schedule to get your data updated.
 
-            For more information, see [Replicate Full Set of Data](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/35632cd706474d9796fa5da56ba15c6b.html "Use snapshot replication to copy the full set of data from your source object (usually a database table or view) into SAP Datasphere.") :arrow_upper_right:.
+            For more information, see [Replicate Full Set of Data](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/35632cd706474d9796fa5da56ba15c6b.html "Start a data replication to copy the full set of data from your source object (usually a database table or view) into SAP Datasphere.") :arrow_upper_right:.
 
         -   *Remove Replicated Data*:
 
@@ -41,12 +43,14 @@ By default, when you import a remote table, its data is not replicated and must 
             > 
             > If one of the requirement is not met, some objects won't be deleted and you'll have to delete them manually. See [3307334](https://me.sap.com/notes/3307334) for more information.
 
-        -   *Enable Real-Time Access*:
+        -   *Enable Real-Time Data Replication*
+
+            :
 
             Start replication of data changes in the source in real-time.
 
             > ### Note:  
-            > When enabling the replication in real-time, the data is updated in real-time. You don’t need to load a new snapshot or to create a schedule to update your data.
+            > When enabling the replication in real-time, the data is updated in real-time. You don’t need to start a new data replication or to create a schedule to update your data
 
             For more information, see [Replicate Data Changes in Real-Time](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/441d327ead5c49d580d8600301735c83.html "Use real-time replication to copy the data changes from your source object in real-time into SAP Datasphere.") :arrow_upper_right:.
 
@@ -73,6 +77,6 @@ By default, when you import a remote table, its data is not replicated and must 
 
 
 
-3.  \[optional\] You may need to click the *Refresh* tool to refresh the properties in the *Remote* section see [Process Source Changes in the Table Editor](process-source-changes-in-the-table-editor-622328b.md)\). You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
+3.  \[optional\] You may need to click the *Refresh* tool to refresh the properties in the *Remote* section see [Process Source Changes in the Table Editor](process-source-changes-in-the-table-editor-622328b.md)\). You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In Remote Tables (monitor), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
 
 

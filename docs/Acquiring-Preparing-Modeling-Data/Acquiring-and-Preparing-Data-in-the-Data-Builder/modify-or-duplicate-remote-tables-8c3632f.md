@@ -41,7 +41,7 @@ In the *Remote* section of your remote table, click *Change Remote Table Source*
     > 
     > -   You must remove the remote table filter conditions as they are not supported by an SAP HANA smart data access connection.
     > 
-    > -   You must remove partitioning on non-key columns as they are not supported by an SAP HANA smart data access connection..
+    > -   You must remove partitioning on non-key columns as they are not supported by an SAP HANA smart data access connection.
 
     Once you have confirmed your changes, a refresh is automatically done and you can see the changes in the remote table editor. You can then save your changes and redeploy the remote table.
 
@@ -57,5 +57,5 @@ Copying your remote table can be helpful in some cases. For example if you made 
 From the *Data Builder*, open the relevant remote table in the table editor. Select*Save As*.
 
 > ### Note:  
-> For remote tables connected via SAP HANA smart data access, only one remote table per source entity of one connection can be in status *Replicated* \(Snapshot or Real-Time\). For more information, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
+> For remote tables connected via SAP HANA smart data access, only one remote table per source entity of one connection can be in status *Replicated* \(Snapshot or Real-Time\). For more information, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In Remote Tables (monitor), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
 

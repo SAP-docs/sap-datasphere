@@ -22,14 +22,14 @@ You can create a custom role to enable users to do either global actions on the 
 
 -   If you create a custom role for global purposes, you should include only global privileges and permissions. You can then assign the role to the relevant users.
 
--   If you create a custom role for space-related purposes, you should include only scoped privileges and permissions. As a second step, you will need to create a scoped role based on this custom role to assign users and spaces to the set of privileges included. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
+-   If you create a custom role for space-related purposes, you should include only scoped privileges and permissions. As a second step, you need to create a scoped role based on this custom role to assign users and spaces to the set of privileges included. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
 
 You should not mix global and scoped privileges in a custom role.
 
--   If you include a scoped privilege in a custom role that you create for global purposes, the privilege will be ignored.
+-   If you include a scoped privilege in a custom role that you create for global purposes, the privilege is ignored.
 
--   If you include a global privilege in a custom role that you want to use as a template for a scoped role, the privilege will be ignored.
+-   If you include a global privilege in a custom role that you want to use as a template for a scoped role, the privilege is ignored .
 
 
 > ### Note:  
@@ -38,7 +38,7 @@ You should not mix global and scoped privileges in a custom role.
 For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 
 > ### Caution:  
-> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
+> Scoped roles and all related features are rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
 
 
 
@@ -56,10 +56,7 @@ For more details about global and scoped privileges, see [Privileges and Permiss
 
     The role templates are the predefined standard roles associated with the SAP Datasphere license type. If you wish to create a role without extending a predefined standard role, choose the blank template. After you select a template, a page opens showing you the individual permissions assigned to the privileges that have been defined for the role template you chose.
 
-    > ### Note:  
-    > Currently, it is not possible to add *Catalog* access to a custom role as a template. Assign either the *Catalog Administrator* or *Catalog User* standard application roles instead.
-
-6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share and manage\) represent the actions a user can perform.For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
+6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app, or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share, and manage\) represent the actions a user can perform.For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 
 7.  If you want to change the role template that your new custom role will be based on, select <span class="FPA-icons"></span> \(*Select Template*\), and choose a role.
 

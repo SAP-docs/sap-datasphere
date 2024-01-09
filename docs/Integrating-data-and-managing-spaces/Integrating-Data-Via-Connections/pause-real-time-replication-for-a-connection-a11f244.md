@@ -59,7 +59,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
     
     *Active*
 
-    Shown when the connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Table Monitor* is *Error*\).
+    Shown when the connection type supports real-time replication and for the connection at least one table is replicated via real-time replication \(even if the status in the *Remote Tables* monitor is *Error*\).
     
     </td>
     <td valign="top">
@@ -116,12 +116,12 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
 
     The status in the list of the connections changes from *Active* or *Inactive* to *Paused*.
 
-    In the *Remote Table Monitor*, the status for affected tables changes to *Paused* and actions related to real-time replication are not available for these tables. Also, you cannot start real-time replication for any table of a paused connection.
+    In the *Remote Tables* monitor, the status for affected tables changes to *Paused* and actions related to real-time replication are not available for these tables. Also, you cannot start real-time replication for any table of a paused connection.
 
 4.  You can now perform maintenance activities in the source.
 
 5.  Once your maintenance activities finished, restart real-time replication. Select the connection in question and click *Restart*.
 
-    The status in the list of the connections as well as in the *Remote Table Monitor* changes accordingly and you can again perform real-time related actions for the tables or start real-time replication.
+    The status in the list of the connections as well as in the *Remote Tables* monitor changes accordingly and you can again perform real-time related actions for the tables or start real-time replication.
 
 

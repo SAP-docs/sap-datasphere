@@ -12,7 +12,7 @@ Add a *Projection* node to rename, reorder, or exclude columns.
 
 1.  Select a node in order to display its context tools, and click <span class="SAP-icons"></span> \(Rename/Exclude Columns\).
 
-    ![](images/Create_Projection_Gif_95b1595.gif)A projection node is created, its symbol is selected, and its properties are displayed in the side panel.
+    ![](images/Create_Projection_Gif_95b1595.gif) A projection node is created, its symbol is selected, and its properties are displayed in the side panel.
 
 2.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
 

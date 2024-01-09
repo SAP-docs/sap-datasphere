@@ -14,7 +14,7 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
 
 2.  Browse or search for the object you want to add on either of the tabs.
 
-    -   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\).. You can search and expand the categories \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
+    -   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\).. For more information, see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md).
 
     -   The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. However it shows only limited records. If you can't see the sources you are looking for, use *Import from Connection* to perform search. You can:
 
@@ -22,9 +22,9 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
         -   Open the *Import Objects from Connection* dialog on a particular connection to select multiple objects for import \(see [Import Multiple Objects from a Connection](import-multiple-objects-from-a-connection-e720b13.md)\).
 
 
-3.  Select the object of your choice, and then drag it over a source or other node in the diagram. When the target node is highlighted green, drop the new source to create a join.
+3.  Select your object and drag it over a source or other node in the diagram. When the target node is highlighted green, drop the new source to create a join.
 
-    ![](images/Create_Join_Gif_dc051d5.gif)The source is added to the diagram and it is joined to the target node. The join symbol is selected and its properties are displayed in the side panel. A projection node is added after the join node to remove any duplicate columns.
+    ![](images/Create_Join_Gif_dc051d5.gif) The source is added to the diagram and it is joined to the target node. The join symbol is selected and its properties are displayed in the side panel. A projection node is added after the join node to remove any duplicate columns.
 
     > ### Note:  
     > If you choose a table or view from the *Sources* tab, it is automatically imported into the repository and deployed, and will be available on the *Repository* tab for future use by you or others.

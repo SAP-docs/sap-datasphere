@@ -97,14 +97,31 @@ See [Governing and Publishing Catalog Assets](https://help.sap.com/viewer/97d1d2
 </td>
 <td valign="top">
 
-Currently, it is not possible to add *Catalog* access to a custom role using privileges. Assign one of the standard application roles instead.
+-   *Catalog Asset* \(CRUD---M\)
+
+-   *Catalog Glossary* \(CRUD----\)
+
+-   *Catalog Glossary Object* \(CRUD---M\)
+
+-   *Catalog Tag Hierarchy* \(CRUD------\)
+
+-   *Catalog System* \(CRUDE---\)
+
+-   *Catalog KPI Object* \(CRUD---M\)
+
+-   *Catalog KPI Template* \(-RU-----\)
+
+-   *Catalog Log* \(-R------\)
+
+
+
 
 </td>
 <td valign="top">
 
 *Catalog Administrator*
 
-*Catalog User* \(read-only access\)
+*Catalog User* \(read-only access for all privileges, except no access for *Catalog System* and *Catalog Log*\)
 
 In addition, the following sub-tools require the *Catalog Administrator* role:
 
@@ -131,7 +148,7 @@ See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f83607
 
 -   *Data Warehouse Remote Connection* \(CRUD--S-\)
 
--   *Data Warehouse Cloud Data Integration* \(-RU-E---\)
+-   *Data Warehouse Data Integration* \(-RU-E---\)
 
 -   *Data Warehouse Data Builder* \(CRU-----\)
 
@@ -145,6 +162,45 @@ See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f83607
 *DW Modeler*
 
 *DW Administrator*, *DW Space Administrator* and *DW Viewer* : read-only access
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="FPA-icons"></span> \(*Semantic Onboarding*\)
+
+See [Semantic Onboarding](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4c9e45e19ff14271a65f883e30023736.html "The Semantic Onboarding app provides a central entry point to import semantically-rich objects from your SAP systems and the Content Network, as well as the Public Data Marketplace and other marketplace contexts.") :arrow_upper_right:.
+
+</td>
+<td valign="top">
+
+*Data Warehouse General* \(-R------\)
+
+Each section requires a specific permission:
+
+-   *SAP Systems*:
+    -   *Data Warehouse Data Builder* \(CRU-----\)
+    -   *Data Warehouse Business Entity* \(CRU-----\)
+
+        *Data Warehouse Consumption Model* \(CRU-----\)
+
+
+-   *Content Network*:
+    -   *Lifecycle* \(-R---MS-\)
+
+-   *Data Products* - See *Data Marketplace*, above.
+
+
+
+</td>
+<td valign="top">
+
+*DW Viewer* \(read-only access\)
+
+*DW Space Administrator* \(all sections\)
+
+*DW Modeler \(**SAP Systems* and *Data Products*\)
 
 </td>
 </tr>
@@ -237,7 +293,7 @@ The following features need additional permissions \(which are included in the *
     > ### Note:  
     > The *DW Viewer* role includes *Data Warehouse Consumption.Read*, which allows these users to preview only data output by views with the *Expose for Consumption* switch enabled.
 
--   Upload and delete data in a local table - *Data Warehouse Consumption.Update* 
+-   Upload data in a local table - *Data Warehouse Consumption.Update* 
 -   Access the local table *Data Editor* screen - *Data Warehouse Data Builder.Update*
 -   See remote objects in *Data Builder* editors - *Data Warehouse Remote Connection.Read*
 
@@ -245,6 +301,7 @@ The following features need additional permissions \(which are included in the *
 
 -   Run an intelligent lookup - *Data Warehouse Data Integration.Update*
 -   Run a task chain - *Data Warehouse Data Integration.Update*
+-   Delete data in a local table - *Data Warehouse Data Integration.Update*
 
 
 
@@ -296,13 +353,13 @@ See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36c
 *Data Warehouse Data Integration* \(-RU-E---\)
 
 > ### Note:  
-> The *DW Modeler* role includes *Data Warehouse Cloud Data Integration.Update*, which allows them to do only manual integration tasks. The *DW Integrator* role includes *Data Warehouse Cloud Data Integration.Execute*, which also allows scheduling automated integration tasks.
+> The *DW Modeler* role includes *Data Warehouse Data Integration.Update*, which allows them to do only manual integration tasks. The *DW Integrator* role includes *Data Warehouse Data Integration.Execute*, which also allows scheduling automated integration tasks.
 
 The following features need additional permissions \(which are included in the *DW Space Administrator* role\):
 
--   View persistency ** \> ** Add a view - *Data Builder.READ*
--   View persistency ** \> ** Define partitions - *Data Builder.READ*
--   View persistency ** \> *View Analyzer* - *Data Builder.READ*
+-   Views \(monitor\) ** \> ** Add a view - *Data Builder.READ*
+-   Views \(monitor\) ** \> ** Define partitions - *Data Builder.READ*
+-   Views \(monitor\) ** \> *View Analyzer* - *Data Builder.READ*
 
 
 
@@ -324,7 +381,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="FPA-icons"></span> \(*Connections*\)
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:
+See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -423,27 +480,6 @@ See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-data
 <td valign="top">
 
 *DW Administrator*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<span class="FPA-icons"></span> \(*Content Network*\)
-
-See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator or DW Space Administrator role can import business content and sample content from SAP and partners from the Content Network.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-*Lifecycle* \(-R---MS-\)
-
-</td>
-<td valign="top">
-
-*DW Administrator*
-
-*DW Space Administrator*
 
 </td>
 </tr>
@@ -895,6 +931,812 @@ DW Administrator and DW Space Administrator
 > A user with a tenant administrator role can delete any space as *Spaces* `(-------M)` is included in the role.
 
 
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio2d8b7d04dcae402f911d119437ce0a74__section_arj_3xw_jzb"/>
+
+## Catalog Role Privilege Dependencies
+
+When creating a custom role for using or administering the catalog, you must set the permissions for the privileges in certain ways so that you can complete various tasks. Review the following table of tasks to see which permissions and privilege combinations you need.
+
+To be able to access the *Catalog* app from the side navigation, all custom catalog roles need the *Read* permission on Catalog Asset.
+
+> ### Note:  
+> All custom catalog roles need the SAP Datasphere read permission on Space Files to allow users to mark assets, terms, and KPIs as their favorite.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Category
+
+</th>
+<th valign="top">
+
+What do you want to do
+
+</th>
+<th valign="top">
+
+Required combination of privileges
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Search for an asset and view the detailed information for it.
+
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, and key performance indicators (KPIs).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+View detailed information for an asset, including the details for any term, tag, or KPI that is linked. 
+
+See [Evaluating Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "When you find the asset you want, you can select it to view its overview information, a preview of its detailed metadata, and a diagram of its impact and lineage. This information includes metadata that is extracted from the source system and data enrichments added in the catalog.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R------)` 
+
+Catalog Glossary: `(-R------)` 
+
+Catalog Glossary Object: `(-R------)` 
+
+Tag Hierarchy: `(-R------)` 
+
+Catalog KPI Object: `(-R------)` 
+
+Catalog KPI Template: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Edit the name of the asset that appears in the catalog.
+
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-RU-----)` 
+
+Catalog Tag Hierarchy: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Add a catalog description for the asset.
+
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: Read, Update
+
+Catalog Tag Hierarchy: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
+
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: Read, Update
+
+Catalog Tag Hierarchy: `(-R------)` 
+
+Catalog Glossary Object: `(-R------)` 
+
+Catalog KPI Object: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Create or delete a relationship between a tag and an asset.
+
+See [Add and Manage Asset Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "Add, edit, and remove asset tags.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-RU-----)` 
+
+Catalog Tag Hierarchy: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Manage the relationship for a term and an asset.
+
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary Object: `(-R------)`
+
+Catalog Asset: `(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Manage the relationship for a KPI and an asset.
+
+See [Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-R------)` 
+
+Catalog Asset: `(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Assets
+
+</td>
+<td valign="top">
+
+Publish/Unpublish assets to the catalog.
+
+See [Publishing to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "You can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, anyone who uses the catalog can discover the published content.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R-----M)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tags
+
+</td>
+<td valign="top">
+
+Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
+
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-RU-----)` 
+
+Catalog Tag Hierarchy: `(-R------)` 
+
+Catalog Glossary Object: `(-R------)` 
+
+Catalog KPI Object: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tags
+
+</td>
+<td valign="top">
+
+Create a tag hierarchy.
+
+See [Manage Hierarchies and Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Tag Hierarchy: `(CRU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tags
+
+</td>
+<td valign="top">
+
+Edit a tag hierarchy.
+
+See [Manage Hierarchies and Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Tag Hierarchy: `(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tags
+
+</td>
+<td valign="top">
+
+Delete a tag hierarchy.
+
+See [Manage Hierarchies and Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Tag Hierarchy: `(-R-D----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tags
+
+</td>
+<td valign="top">
+
+Create or delete a relationship between a tag and an asset.
+
+See [Add and Manage Asset Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "Add, edit, and remove asset tags.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-RU-----)` 
+
+Catalog Tag Hierarchy: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Glossary
+
+</td>
+<td valign="top">
+
+Create a glossary.
+
+See [Create and Manage a Glossary](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(C-------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Glossary
+
+</td>
+<td valign="top">
+
+Edit a glossary.
+
+See [Create and Manage a Glossary](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-RU-----)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Glossary
+
+</td>
+<td valign="top">
+
+Delete a glossary.
+
+See [Create and Manage a Glossary](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R-D----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Glossary
+
+</td>
+<td valign="top">
+
+Create a glossary category.
+
+See [Create and Manage a Glossary Category](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R------)`
+
+Catalog Glossary Object: `(C-------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Glossary
+
+</td>
+<td valign="top">
+
+Edit a glossary category.
+
+See [Create and Manage a Glossary Category](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R------)` 
+
+Catalog Glossary Object: `(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Glossary
+
+</td>
+<td valign="top">
+
+Delete a glossary category.
+
+See [Create and Manage a Glossary Category](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R------)` 
+
+Catalog Glossary Object: `(-R-D----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Terms
+
+</td>
+<td valign="top">
+
+Create a glossary term.
+
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R------)` 
+
+Catalog Glossary Object: `(C-------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Terms
+
+</td>
+<td valign="top">
+
+Edit a glossary term.
+
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R------)` 
+
+Catalog Glossary Object: `(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Terms
+
+</td>
+<td valign="top">
+
+Delete a glossary term.
+
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary: `(-R------)` 
+
+Catalog Glossary Object: `(-R-D----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Terms
+
+</td>
+<td valign="top">
+
+Publish or unpublish a glossary term.
+
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary Object: `(-R-----M)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Terms
+
+</td>
+<td valign="top">
+
+Manage the relationship for a term and an asset.
+
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog Glossary Object: `(-R------)` 
+
+Catalog Asset:`(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Create a KPI.
+
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(C-------)` 
+
+Catalog KPI Template: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Edit a KPI.
+
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-RU-----)` 
+
+Catalog KPI Template: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Delete a KPI.
+
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-R-D----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Publish/Unpublish a KPI.
+
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-R-----M)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Manage the relationship for a KPI and an asset.
+
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-R------)` 
+
+Catalog Asset: `(-RU-----)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Create a KPI category. [Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(C-------)`
+
+Catalog KPI Template: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Edit a KPI category.
+
+[Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-RU-----)` 
+
+Catalog KPI Template: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Delete a KPI category.
+
+[Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Object: `(-R-D----)` 
+
+Catalog KPI Template: `(-R------)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+KPIs
+
+</td>
+<td valign="top">
+
+Edit KPI template.
+
+See[Define the Key Performance Indicator Template](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b3ead0d4944c40ddbdb1ebae239cc69f.html "Define the elements to be included in all your key performance indicators (KPIs).") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+Catalog KPI Template: `(-RU-----)`
+
+</td>
+</tr>
+</table>
+
+Here are a few examples for catalog roles and permissions.
+
+
+<table>
+<tr>
+<th valign="top">
+
+For users who...
+
+</th>
+<th valign="top">
+
+Include these privileges in the custom role
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Review assets: update asset names and descriptions, add tags, and publishe assets.
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-RU----M)`
+
+Catalog Tag Hierarchy: `(-RU-----)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Manage and publish glossaries, terms, and KPIs; also add terms and KPI relationships to assets.
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-RU-----)`
+
+Catalog Glossary: `(CRUD----)`
+
+Catalog Glossary Object: `(CRUD---M)`
+
+Catalog KPI Object: `(CRUD---M)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Manage terms within existing glossaries and manages tags, but do not add these relationships to assets.
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R------)`
+
+Catalog Glossary: `(-R------)`
+
+Catalog Glossary Object: `(CRUD---M)`
+
+Catalog Tag Hierarchy: `(CRUD----)`
 
 </td>
 </tr>

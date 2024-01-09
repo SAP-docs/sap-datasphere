@@ -23,6 +23,7 @@ Views that contain input parameters require special treatment in the following s
 
 -   Adding a view as a source in the graphical view editor - You must map each input parameter in the source view to a value or an input parameter in the new view \(see [Add a Source](add-a-source-1eee180.md)\).
 -   Adding a view as a source in the SQL view editor - You must complete the syntax to map each input parameter parameter in the source view to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\).
+-   Consuming view data via the OData API - Set a value for each input parameter using the <code>(<i class="varname">&lt;param&gt;</i>='<i class="varname">&lt;val&gt;</i>'[,...])/Set</code> syntax \(see [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:\).
 -   Using a view as a data source in an SAP Analytics Cloud story - Enter a value for each input parameter in the *Set Variables* dialog \(see [Setting Story Variables](https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/305dcf7053634875a408a9d9832c8b8f.html) in the *SAP Analytics Cloud Help Library*\).
 
 
@@ -101,6 +102,26 @@ Views that contain input parameters require special treatment in the following s
     <td valign="top">
     
     \[optional\] Enter a default value for the input parameter. Each time that a user is required to enter a value for the parameter, they can accept the default value or override it with their own chosen value.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Default Value Help
+    
+    </td>
+    <td valign="top">
+    
+    Define if your input parameter needs a default value help or not:
+
+    -   If not, select *No Value Help*.
+    -   If yes, select *Predefined Value from an Object*. The predefined value comes from an attribute from any table or view of the type dimension. Once this option is selected, you must define:
+        1.  *Object:* Click to open the *Add Objects* dialog. Select an object among the list of available items and click *Add Object*.
+        2.  *Column:* Click to open the *Value Help Dialog* and see the list of available columns from which you want to propagate the default value.
+
+
+    All records are loaded by default. You can see more by using the *Search* bar or scrolling down. You may experience performance issues if too many records are to be loaded.
     
     </td>
     </tr>

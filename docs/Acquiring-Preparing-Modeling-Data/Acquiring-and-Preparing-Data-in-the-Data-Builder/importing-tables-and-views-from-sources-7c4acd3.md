@@ -8,7 +8,7 @@ SAP Datasphere provides various methods for importing tables into your space:
 
 -   Data Builder start page - Use the import wizards to:
     -   Import remote tables from any connection \(see [Import Remote Tables](import-remote-tables-fd04efb.md)\).
-    -   Import objects from SAP Datasphere, SAP BW Bridge \(see [Importing Entities with Semantics from SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-bridge-7bcd321.md)\).
+    -   Import objects from SAP Datasphere, SAP BW Bridge \(see [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md)\).
     -   Import a table, view, or other object \(including, potentially, *Business Builder* objects\), along with all the objects it depends on from an SAP S/4HANA connection \(see [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)\).
 
 -   E/R Model - Import tables into the space and add them to the E/R model diagram \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md) or [Import Multiple Objects from a Connection](../import-multiple-objects-from-a-connection-e720b13.md)\).
@@ -33,7 +33,7 @@ Table Type
 <tr>
 <td valign="top">
 
-Connection \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:\)
+Connection \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:\)
 
 </td>
 <td valign="top">

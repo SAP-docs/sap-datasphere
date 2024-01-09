@@ -22,7 +22,7 @@ Detailed documentation for all business content is available at [SAP Datasphere 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Content Network*\), and then click one of the following tiles:
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Semantic Onboarding*\), and then click one of the following tiles: 
 
     -   *Business Content*: End-to-end business scenarios created by SAP for various industries and lines of business.
     -   *3rd Party Content*: End-to-end business scenarios created by SAP partners. Some third-party content has to be purchased in the *SAP Store*.

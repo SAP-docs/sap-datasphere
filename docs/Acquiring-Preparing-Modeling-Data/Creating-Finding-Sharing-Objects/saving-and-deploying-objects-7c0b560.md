@@ -20,7 +20,7 @@ This topic contains the following sections:
 
 ## Create a Copy of an Object
 
-You can create a copy of most objects by:
+You can create a copy of many types of objects by:
 
 -   Selecting the object in the Repository Explorer and clicking *Duplicate*.
 -   Opening the object in its editor and clicking *Save* \> *Save As*
@@ -81,11 +81,11 @@ The run-time database server might be unavailable under exceptional circumstance
 -   *Deploy*
 -   *Share*
 -   *Delete*
--   *Sources* Browser
+-   *Source Browser*
 -   *Preview Data*
 -   *Import CSV File*
 -   *Validate SQL and Preview Data*
--   *Run* a data flow
+-   *Run* a flow
 
-You can solve this problem by waiting a few minutes and refreshing your web browser. If the problem persists, [open a support ticket](https://launchpad.support.sap.com/#incident/solution).
+You can try to solve this issue by waiting a few minutes and refreshing your web browser. If the problem persists, [open a support ticket](https://launchpad.support.sap.com/#incident/solution).
 

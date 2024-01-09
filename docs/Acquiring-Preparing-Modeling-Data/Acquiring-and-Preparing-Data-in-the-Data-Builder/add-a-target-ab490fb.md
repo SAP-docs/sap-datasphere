@@ -12,7 +12,7 @@ Select a target \(connection and container\) to define the target environment fo
 
 ## Context
 
--   Connections are created by your system administration. You can only use a target if a connection has been created for it in your space and if you have the necessary authorizations.
+-   Connections are created by your system administration. You can only use a target if a connection has been created for it in your space and if you have the necessary authorizations. For more information about connections and connection types, see [Integrating Data via Connections](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/eb85e157ab654152bd68a8714036e463.html).
 
 -   Containers are the parent objects that hold the data.
 
@@ -31,7 +31,7 @@ Select a target \(connection and container\) to define the target environment fo
 
     To narrow down the selection, start typing a part of the container name in the *Search* field.
 
-4.  If you select a cloud storage \(Data Lake Files from SAP HANA Cloud, data lake\) as the target, a list of additional options is displayed. Choose the relevant ones for your use case.
+4.  If you select a cloud storage provider as the target, a list of additional options is displayed. Choose the relevant ones for your use case.
 
 
     <table>
@@ -95,4 +95,6 @@ Select a target \(connection and container\) to define the target environment fo
     </tr>
     </table>
     
+5.  \(Optional\) To modify the throughput, you can change the number of replication threads. To do so, choose <span class="FPA-icons"></span> \(Browse source settings\), replace the default value of 10 with the value you want to use, and save your change.
+
 

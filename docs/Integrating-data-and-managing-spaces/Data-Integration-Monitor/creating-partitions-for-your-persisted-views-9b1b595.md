@@ -4,7 +4,7 @@
 
 # Creating Partitions for Your Persisted Views
 
-From the *View Persistency Monitor*- Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts to enable persistency on views with large data volume.
+From the *Views*- Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts to enable persistency on views with large data volume.
 
 Persisting views with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for Data modelers. To avoid such situations, you can create partitions when persisting a view and thus enable partitioned data transfer of large datasets for supported connection types.
 
@@ -14,7 +14,7 @@ Persisting views with larger data volumes without having out-of-memory errors or
 > ### Caution:  
 > Some adapters used by the connected sources are not able to push down the filters for the partitioning. Thus, performance can be impacted by the number of partitions created.
 
-You can create partitions from the *View Persistency Monitor* – Details screen:
+You can create partitions from the *Views* – Details screen:
 
 1.  Click <span class="FPA-icons"></span> for the view in virtual access mode you would like to persist and for which you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.
@@ -79,7 +79,7 @@ Check the *Locked* option if you don't want to update a partition in the next ru
 > ### Caution:  
 > If locked partitions contain data filtered by authorizations provided by data access controls, you need to unlock partitions and load a new snaphot of data, whenever these authorizations are changed.
 
-An *OTHERS* partition is set by default. It contains data that is not covered by your defined intervals . For example, if rows have been inserted or modified since your last snapshot and they now don’t match any of the defined intervals. This *OTHERS* partitions can't be locked.
+An *OTHERS* partition is set by default. It contains data that is not covered by your defined intervals . For example, if rows have been inserted or modified since your last data persistence and they now don’t match any of the defined intervals. This *OTHERS* partitions can't be locked.
 
 > ### Note:  
 > -   Partitioning requires an in-depth knowledge of the values that are used or are valid for the chosen partitioning column.

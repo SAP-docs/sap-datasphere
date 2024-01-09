@@ -2,19 +2,21 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a Data Access Control
+# Create a Data Access Control 
 
-Space administrators can create data access controls to define criteria on which data can be displayed to users.
+Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.
 
 
 
 ## Context
 
-Each data access control uses a table or view that contains permission information.
+Before creating your data access control, you must have prepared a permissions entity with the following columns:
 
-This permissions entity must have at least two columns as follows:
+-   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). This column must be selected as the *Identifier Column* in your data access control.
 
--   A column containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). This column must be selected as the *Identifier Column* in your data access control.
+    > ### Note:  
+    > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
+
 -   One or more columns containing filter criteria \(country or region names or ids, department names or ids, or any other criteria to control how your data is exposed to users\). These columns must be selected as *Criteria* columns in your data access control.
 
 
@@ -42,19 +44,19 @@ This permissions entity must have at least two columns as follows:
     <tr>
     <td valign="top">
     
-    Business Name 
+    Business Name
     
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Technical Name 
+    Technical Name
     
     </td>
     <td valign="top">
@@ -67,6 +69,25 @@ This permissions entity must have at least two columns as follows:
     > Once the object is saved, the technical name can no longer be modified.
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Package
+    
+    </td>
+    <td valign="top">
+    
+    Select the package to which the object belongs. 
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](../Transporting-Content-Between-Tenants/creating-packages-to-export-24aba84.md).
     
     </td>
     </tr>
@@ -90,9 +111,7 @@ This permissions entity must have at least two columns as follows:
     </td>
     <td valign="top">
     
-    Select a table or view containing user ids and one or more filter criteria. 
-
-    For more information, see [Select a Table or View to Define Permissions](select-a-table-or-view-to-define-permissions-ffcae43.md).
+    Select the table or view containing your user ids and criteria.
     
     </td>
     </tr>
@@ -108,106 +127,23 @@ This permissions entity must have at least two columns as follows:
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    Criteria
-    
-    </td>
-    <td valign="top">
-    
-    Lists the columns containing filter criteria selected for use in your data access control. 
-
-    > ### Note:  
-    > When you apply your data access control to a view, you must map each column of the list to an appropriate column in the view.
-
-
-    
-    </td>
-    </tr>
     </table>
     
-3.  The following tools are available in the data access control editor toolbar:
+3.  Select your permissions entity:
+
+    1.  Click the *Permissions Entity* field to open the *Select Permissions Entity* dialog.
+
+    2.  In the *Data Objects* list, select the table or view containing your user logins and columns with filter criteria.
+
+    3.  In the *Available Columns* list, select one or more columns containing the criteria on which you want to control the display of data.
+
+        These columns will be listed in the *Criteria* section. When you assign a data access control to a view, these columns must be mapped to columns in the view to enforce filtering by these criteria.
+
+    4.  Click *OK* to confirm the selection.
 
 
-    <table>
-    <tr>
-    <th valign="top">
+4.  Click *Save* and then *Deploy* to deploy your data access control and make it available for use.
 
-    Tool
-    
-    </th>
-    <th valign="top">
-
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    <span class="FPA-icons"></span> \(Save\)
-    
-    </td>
-    <td valign="top">
-    
-    Save your changes to the design-time repository.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    <span class="SAP-icons"></span> \(Deploy\)
-    
-    </td>
-    <td valign="top">
-    
-    Deploy your changes to make them available in the run-time environment. 
-
-    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
-    
-    </td>
-    <td valign="top">
-    
-    Open the *Impact and Lineage Analysis* graph for the object. 
-
-    For more information, see [Impact and Lineage Analysis](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage (or data provenance) of a selected object, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Status
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Displays the status of the object. 
-
-    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
-    
-    </td>
-    </tr>
-    </table>
-    
-
-
-
-## Results
-
-Once your data access control is deployed, it is ready to be used:
-
--   For information about applying a data access control to a data layer view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
-
--   For information about using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
+    For information about attaching a data access control to a view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
 
 

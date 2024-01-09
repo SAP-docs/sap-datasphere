@@ -14,7 +14,7 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
 
 2.  Click the *Repository* tab.
 
-    The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\). The following categories can be available:
+    The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\). The following categories can be available: 
 
     -   *Tables* - Contains all remote and local tables in the space \(see [Acquiring Data in the Data Builder](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md)\).
     -   *Views* - Contains all graphical and SQL views present in the space \(see [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md)\).

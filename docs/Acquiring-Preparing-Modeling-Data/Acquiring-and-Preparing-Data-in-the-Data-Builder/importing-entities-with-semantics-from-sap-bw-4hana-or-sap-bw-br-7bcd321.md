@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Importing Entities with Semantics from SAP BW Bridge
+# Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge
 
-You can use the *Import Entities* wizard to load metadata from your SAP BW bridge connection via semantically-rich objects. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
+You can use the *Import Entities* wizard to load metadata from your SAP BW∕4HANA and SAP BW bridge connection via semantically-rich objects. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
 
 
 
@@ -18,31 +18,40 @@ You must have a user in the bridge tools with the business role template `SAP_DW
 
 ## Context
 
-If the SAP Datasphere, SAP BW bridge option is enabled:
+You can import entities from the following types of sources:
 
--   A SAP BW bridge space is created, containing an SAP BW bridge connection to your bridge tools.
--   You can use the *Import Entities* wizard to import your SAP BW bridge Queries, CompositeProviders, DataStore objects \(inbound table and/or active table depending on the type of the DataStore object\), and Master data tables:
-    -   Remote tables to load the data are created in the SAP BW bridge space and then automatically shared to the target space you specify in the wizard.
-    -   Views and business entities that draw their data from and are built on these remote tables are created in your target space.
+-   SAP BW∕4HANA \(see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:\).
+-   SAP BW bridge
+
+    If the SAP Datasphere, SAP BW bridge option is enabled:
+
+    -   A SAP BW bridge space is created, containing an SAP BW bridge connection to your bridge tools.
+    -   You can use the *Import Entities* wizard to import your SAP BW bridge Queries, CompositeProviders, DataStore objects \(inbound table and/or active table depending on the type of the DataStore object\), and Master data tables:
+        -   Remote tables to load the data are created in the SAP BW bridge space and then automatically shared to the target space you specify in the wizard.
+        -   Views and business entities that draw their data from and are built on these remote tables are created in your target space.
 
 
-For importing queries, there are certain restrictions:
+    For importing queries, there are certain restrictions:
 
--   When an object is remodeled in SAP BW bridge, the query definition is broken.
--   Input and exit variables are removed.
--   Constant selection is not supported.
--   For dimensions, the following features are not supported: external hierarchies, compound characteristics, and time dependency.
+    -   When an object is remodeled in SAP BW bridge, the query definition is broken.
+    -   Input and exit variables are removed.
+    -   Constant selection is not supported.
+    -   For dimensions, the following features are not supported: external hierarchies, compound characteristics, and time dependency.
+
+    You can use the app *Query* to get an overview on the supported analytical queries. For more information, see [Overview of Apps](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/65fc810abf0549ee861b0d2c7b73ada2.html).
+
 
 
 
 ## Procedure
 
-1.  Open the wizard from the *Repository Explorer* or the *Data Builder*:
+1.  Open the wizard from the *Repository Explorer*, *Semantic Onboarding*, or the *Data Builder*:
 
     -   In the side navigation area, click <span class="SAP-icons"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
+    -   In the side navigation area, click <span class="FPA-icons"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
     -   In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Entities*.
 
-2.  On the *Select Connection Type* page, select the *SAP BW Bridge* connection type, and then click *Next Step*.
+2.  On the *Select Connection Type* page, select the *SAP BW/4HANA* or *SAP BW Bridge* connection type, and then click *Next Step*.
 
 3.  On the *Select Target Space* page, click the target space that you want to import the entities into, and click *Next Step*.
 
@@ -156,6 +165,8 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     `ANALYTICAL_DIMENSION`
+
+    \(SAP BW Bridge only\)
     
     </td>
     <td valign="top">
@@ -188,6 +199,8 @@ For importing queries, there are certain restrictions:
     <td valign="top">
     
     `LANGUAGE_DEPENDENT_TEXT`
+
+    \(SAP BW Bridge only\)
     
     </td>
     <td valign="top">

@@ -4,11 +4,11 @@
 
 # Navigating in the Monitor Tabs
 
-Selecting a specific monitor tab from *Data Integration Monitor* \(<span class="FPA-icons"></span> \) displays a tabular list of the scheduled tasks associated with the selected monitor type. From the tabular display, you can click \> at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run.
+Selecting a specific monitor tab from *Data Integration Monitor* \(<span class="FPA-icons"></span> \) displays a tabular list of the scheduled tasks associated with the selected monitor type. You can personalize the columns you want to display clicking on :gear: From the tabular display, you can click \> at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run.
 
-After selecting a specific monitor type, for remote table replication, view persistency, flows, or task chain runs, each of the monitor displays provides a summary listing of currently scheduled and previously executed tasks. For example, here is a sample of the monitor display for the Remote Table Monitor.
+After selecting a specific monitor type, for *Remote Tables*, *Views*, *Flows*, or *Task Chains*, each of the monitor displays provides a summary listing of currently scheduled and previously executed tasks. For example, here is a sample of the monitor display for the *Remote Tables* monitor
 
-![](images/monitor_summary_page_2560817.png)
+![](images/Example_Remote_Tables_monitor_61c3dc3.jpg)
 
 The display provides a summary of all currently scheduled and previously executed remote table replication tasks, their schedule and refresh frequency, various memory and disk usage statistics, as well as the last task update or execution. Similar displays are provided for each of the other monitor types.
 
@@ -16,9 +16,11 @@ To view more information on any specific task in the summary list, click \> in t
 
 The following is an example of the *Run Details* display for a remote table replication task.
 
-![](images/monitor_run_detail_c63f557.png)
+![](images/Example_Remote_Table_Details_Run_ebb2b68.jpg)
 
 In the left-most column or panel, the monitor displays a list of all previous runs of the selected task as well as the status of the task, completed successfully or failed. In the right-most column or panel, the monitor displays log messages detailing the steps executed for the selected task. For failed task runs or execution, you can click on the highlighted *Failed* status to show more information.
+
+By default, the failed tasks appear on the top.
 
 The following table lists and describes the available substatuses.
 
@@ -229,4 +231,7 @@ The user could not be authenticated, has been locked, or deleted.
 </td>
 </tr>
 </table>
+
+> ### Note:  
+> From each monitor, you can navigate back to the *Data Builder* to change your objects by clicking *Open in Data Builder*.
 

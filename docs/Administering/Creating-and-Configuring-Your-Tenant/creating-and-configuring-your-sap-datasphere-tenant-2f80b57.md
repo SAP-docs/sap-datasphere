@@ -265,91 +265,7 @@ Catalog Storage / Crawling
 <tr>
 <td valign="top">
 
-Europe \(Frankfurt\)
-
-</td>
-<td valign="top">
-
-5970 GB
-
-</td>
-<td valign="top">
-
-15872 GB
-
-</td>
-<td valign="top">
-
-4096 GB
-
-</td>
-<td valign="top">
-
-90 TB
-
-</td>
-<td valign="top">
-
-7200 h/month
-
-</td>
-<td valign="top">
-
-20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Australia
-
-</td>
-<td valign="top">
-
-1800 GB
-
-</td>
-<td valign="top">
-
-7168 GB
-
-</td>
-<td valign="top">
-
-4096 GB
-
-</td>
-<td valign="top">
-
-90 TB
-
-</td>
-<td valign="top">
-
-7200 h/month
-
-</td>
-<td valign="top">
-
-20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Singapore
 
 </td>
 <td valign="top">
@@ -433,6 +349,132 @@ Not Supported
 <tr>
 <td valign="top">
 
+Canada \(Montreal\)
+
+</td>
+<td valign="top">
+
+1800 GB
+
+</td>
+<td valign="top">
+
+7168 GB
+
+</td>
+<td valign="top">
+
+4096 GB
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+5970 GB
+
+</td>
+<td valign="top">
+
+15872 GB
+
+</td>
+<td valign="top">
+
+4096 GB
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+EU Access \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+5970 GB
+
+</td>
+<td valign="top">
+
+15872 GB
+
+</td>
+<td valign="top">
+
+4096 GB
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Japan \(Tokyo\)
 
 </td>
@@ -475,49 +517,7 @@ Japan \(Tokyo\)
 <tr>
 <td valign="top">
 
-US East
-
-</td>
-<td valign="top">
-
-5970 GB
-
-</td>
-<td valign="top">
-
-15872 GB
-
-</td>
-<td valign="top">
-
-4096 GB
-
-</td>
-<td valign="top">
-
-90 TB
-
-</td>
-<td valign="top">
-
-7200 h/month
-
-</td>
-<td valign="top">
-
-20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Canada \(Montreal\)
+Singapore
 
 </td>
 <td valign="top">
@@ -537,7 +537,7 @@ Canada \(Montreal\)
 </td>
 <td valign="top">
 
-Not Supported
+90 TB
 
 </td>
 <td valign="top">
@@ -601,17 +601,17 @@ Not Supported
 <tr>
 <td valign="top">
 
-EU Access \(Frankfurt\)
+US East
 
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+15872 GB
 
 </td>
 <td valign="top">
@@ -696,12 +696,12 @@ Europe \(Amsterdam\)
 </td>
 <td valign="top">
 
-1920 GB
+5600 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+13824 GB
 
 </td>
 <td valign="top">
@@ -823,17 +823,101 @@ Catalog Storage / Crawling
 <tr>
 <td valign="top">
 
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+14336 GB
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+India \(Mumbai\)
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+14336 GB
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 US Central
 
 </td>
 <td valign="top">
 
-1344 GB
+5750 GB
 
 </td>
 <td valign="top">
 
-3328 GB
+14336 GB
 
 </td>
 <td valign="top">

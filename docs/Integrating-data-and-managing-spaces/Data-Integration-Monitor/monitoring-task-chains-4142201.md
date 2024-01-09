@@ -6,9 +6,9 @@
 
 Monitor the status and progress of running and previously run task chains.
 
-To view all task chains that are scheduled to run, are currently running, or have already been run in your space, go to *Data Integration Monitor* \> ** \> *Task Chain Monitor*:
+To view all task chains that are scheduled to run, are currently running, or have already been run in your space, go to *Data Integration Monitor* \> *Task Chains*:
 
-![](images/task_chain_list_f82c833.png)
+![](images/Task_Chain_Example_04c0f7d.jpg)
 
 The monitor displays information on your task chains:
 
@@ -29,24 +29,30 @@ Comments
 <tr>
 <td valign="top">
 
-*Task Chain Name*
+*Business Name* or *Technical Name*
 
 </td>
 <td valign="top">
 
-Name of the task chain.
+Name of the task chain. Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings*
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Last Run Status*
+*Status*
 
 </td>
 <td valign="top">
 
 Status of the task chain after last run.
+
+-   *Running*: the task chain is currently running.
+-   *Completed*: the task chain is completed successfully.
+-   *Failed*: Something goes wrong during the task chain run and it could not be completed. Go to the details screen of your task chain and check the logs to identify to issue.
+
+All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Navigating in the Monitor Tabs](navigating-in-the-monitor-tabs-5d4af76.md).
 
 </td>
 </tr>
@@ -62,7 +68,8 @@ See if a schedule is defined for the task chain:
 
 -   *None \(--\)*: There is no schedule defined for this task chain. You can define one from *Schedule* \> *Create*.
 
--   *Scheduled*: A schedule is defined for this task chain. If you click *Scheduled*, you will get detailed information on the schedule. You can click *Schedule* to create, edit, delete, pause or resume a schedule for a selected task chain or to assign a schedule to your name. .
+-   *Scheduled*: A schedule is defined for this task chain. If you click *Scheduled*, you will get detailed information on the schedule. You can click *Schedule* to create, edit, delete, pause or resume a schedule for a selected task chain or to assign a schedule to your name.
+-   *Paused*: A schedule is defined for this task chain but it's currently paused. You can resume it if you click*Schedule* \> *Resume*
 
 
 
@@ -116,12 +123,26 @@ When the next run is scheduled.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Schedule Owner* 
+
+</td>
+<td valign="top">
+
+Displays the name of the current schedule owners.
+
+</td>
+</tr>
 </table>
 
-> ### Note:  
-> A task chain consists of multiple tasks that run one after another. As it takes some time for the task chain monitor to collect and update all a task’s status information, the task runtime information displayed here might not exactly match the task runtime information shown in a respective detail monitor, for example, in the *View Persistency Monitor* or *Data Flow Monitor*.
+You can personalize the columns you want to display clicking on :gear:
 
-Click *Run* to manually start a new run of a selected task chain. If a task chain’s last run failed, you can also choose the *Run* \> *Retry Run* option to retry the failed task chain’s execution from the point at which it previously failed.
+> ### Note:  
+> A task chain consists of multiple tasks that run one after another. As it takes some time for the task chain monitor to collect and update all a task’s status information, the task runtime information displayed here might not exactly match the task runtime information shown in a respective detail monitor, for example, in the *Views* or *Flows* monitors.
+
+Click *Run* \> *Start Run* to manually start a new run of a selected task chain. If a task chain’s last run failed, you can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain’s execution from the point at which it previously failed.
 
 > ### Note:  
 > If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
@@ -133,7 +154,7 @@ You can click *Schedule* to create, edit, delete, pause or resume a schedule for
 
 Click <span class="FPA-icons"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or subtasks in the task chain, and log messages about a selected task chain’s execution.
 
-![](images/task_chain_run_task_details_cf43bcd.png)
+![](images/Task_Chain_Runs_86dce77.jpg)
 
 > ### Note:  
 > The task chain *Details* page also lets you resize \(<span class="SAP-icons"></span> and <span class="SAP-icons"></span>\), expand/collapse \(<span class="SAP-icons"></span>\), or close \( :x:\) the display of each panel to focus on specific detail information or log messages. In addition, you can sort \(<span class="SAP-icons"></span> \) and filter \(<span class="SAP-icons"></span> \) information displayed in the different panels, as well as search log messages.
@@ -147,9 +168,8 @@ The center *Run Details* panel provides a list of task chain objects and child t
 
 In the right-side panel, the task chain monitor displays log messages for a selected task chain. When you click on an object in the *Run Details* task list, detailed log messages for the selected task or subtask are displayed in the right-most panel.
 
-Clicking on the *View in Monitor* link takes you to the monitoring page for a specific task object and displays the log messages for that specific run of the associated task.
-
-![](images/task_chain_logs_4152b12.png)
+> ### Note:  
+> From each monitor, you can navigate back to the *Data Builder* to change your objects by clicking *Open in Data Builder*.
 
 To return to the original *Run Details* display, click on the task chain name under the *Parent Task Chain* field in the upper right corner of the page.
 
@@ -161,7 +181,7 @@ To return to the original *Run Details* display, click on the task chain name un
 
 If a task chain’s last run failed, the *Run Details* panel provides a *Retry Run* option to retry the failed task chain’s execution. You can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain's execution. Note that the *Retry Latest Run* option is only active when the last taskchain runs failed.
 
-![](images/retry_failed_task_chain_8c1fe17.png)
+![](images/Task_Chain_Retry_Run_9896a10.jpg)
 
 Any user with authorization to run the task chain can retry a task chain’s execution. Retries of a task chain are run on behalf of the original user and the retried task chain will have the same log ID as the original task chain run. The monitor will create a new log ID for retries of failed subtasks and both the original and retried subtasks appear in the hierarchy of tasks displayed in the *Run Details* panel.
 

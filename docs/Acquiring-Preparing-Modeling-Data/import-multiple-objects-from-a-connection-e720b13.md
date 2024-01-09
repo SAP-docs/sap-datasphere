@@ -21,9 +21,9 @@ Use the *Import Objects from Connection* dialog to select multiple objects from 
 
 ## Procedure
 
-1.  Click the *Sources* tab of the *Source Browser*, expand the *Connections* node, and then hover over a sub-node and click the <span class="FPA-icons"></span> \(Import from Connection\) button:
+1.  Click the *Sources* tab of the *Source Browser*, expand the *Connections* node, and then hover over a sub-node and click the <span class="FPA-icons"></span> \(Import from Connection\) button:
 
-    ![](images/Import_from_Connection_326e799.png)
+    ![](images/Import_from_Connection_326e799.jpg)
 
     Alternatively, in an E/R model, click <span class="FPA-icons"></span> \(Import\) in the toolbar, select a connection, and click *Next*.
 

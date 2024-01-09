@@ -4,7 +4,7 @@
 
 # Creating Packages to Export
 
-Users with the *DW Space Administrator* role can create packages to model groups of related objects for transport between tenants. Modelers can add tables, views, ER models, and analytic models to packages. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.
+Users with the *DW Space Administrator* role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the *Package* field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.
 
 This topic contains the following sections:
 
@@ -12,6 +12,7 @@ This topic contains the following sections:
 -   [Create a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_create)
 -   [Export a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_export)
 -   [Update a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_update)
+-   [Delete a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_delete)
 
 
 
@@ -54,7 +55,7 @@ Users with the *DW Space Administrator* role can create packages:
 
 1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **:package: \(*Packages*\) to open the list of packages. 
 
-    Use the *Space* control at the top of the page to show packages from all spaces or only one space.
+    Use the *Space* filter field to show packages from all spaces or only one space.
 
 2.  Click *Add* and specify a space, if necessary, to create a new package and open it in the editor.
 3.  Enter the following properties on the *General* tab:
@@ -190,7 +191,7 @@ Users with the *DW Space Administrator* role can create packages:
     </tr>
     </table>
     
-4.  \[optional\] Add any packages containing objects that the objects you will add to the package depend on as part of their lineage.
+4.  \[optional\] Add any packages that contain objects that the objects you add to your package depend on as part of their lineage. 
     1.  Click the *Required Packages* tab.
     2.  Click *Add* to open the *Select Packages* dialog, which lists all packages you have permission to see.
 
@@ -214,12 +215,12 @@ Users with the *DW Space Administrator* role can create packages:
         You can add your objects even if errors are shown. In general errors can be resolved by adding the package containing the objects that cannot be added as a required package.
 
 
-6.  Click *Save* to save your package and validate all dependencies:
+6.  Click *Save* to save your package and validate all dependencies.
 
     -   If no errors are found, your package is ready to be exported.
     -   If errors are found, you should try to resolve them by adding required packages or objects or by removing objects whose dependencies cannot be resolved, and then re-saving.
 
-    Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a806c67ed11749c788142775d2cc2494.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add tables, views, ER models, and analytic models to packages. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
+    Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a806c67ed11749c788142775d2cc2494.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
     > ### Note:  
     > Though modelers can add tables, views, ER models, and analytic models to a package, they cannot remove objects from a package.
@@ -238,9 +239,7 @@ Users with the *DW Space Administrator* role can export packages:
     -   All deployable objects in your package must have a status of *Deployed* \(see [Deploy Objects](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/7c0b560e2cb94eea86219d78d87f9623.html?version=cloud#deploy-objects)\).
     -   Any required packages must have a status of *Exported*.
 
-2.  Click *Export* to export your package to the Content Network with the filename <code><i class="varname">&lt;TechnicalName_Version&gt;</i></code>.
-
-    The package status changes to *Exporting* and it all its contents will be locked during the export.
+2.  Click *Export* to export your package to the Content Network with the filename <code><i class="varname">&lt;TechnicalName_Version&gt;</i></code>. 
 
     When the export is complete, the package status changes to *Exported* and you will receive a notification confirming the export.
 
@@ -254,8 +253,18 @@ Users with the *DW Space Administrator* role can export packages:
 
 Once your package is exported, you can continue to evolve it by adding, removing, or updating objects. Modelers in your space may also deploy changes to the objects it contains and add new objects to it.
 
-When any such update is made, the package status changes to *Changes to Export*. You can choose at any time to export these changes. If you:
+When any updates are made to a package that has been exported, its status changes to *Changes to Export*. You can choose at any time to export these changes. If you:
 
 -   Leave the version number unchanged, your new export will overwrite the previous exported version.
 -   Set a new, higher version number, a new package version is exported.
+
+
+
+<a name="loio24aba84ceeb3416881736f70f02e3a0a__section_delete"/>
+
+## Delete a Package
+
+Select a package and click *Delete* to delete it.
+
+You cannot delete a package if it is listed among the *Required Packages* for any other package.
 

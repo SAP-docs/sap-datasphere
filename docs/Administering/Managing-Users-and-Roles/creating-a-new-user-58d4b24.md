@@ -12,7 +12,7 @@ You can create individual users in SAP Datasphere.
 
 ## Prerequisites
 
-You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the global roles and the scoped roles. You can still assign roles after you've created the users.
+You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the global roles and scoped roles. You can still assign roles after you've created the users.
 
 
 <table>
@@ -97,11 +97,12 @@ The method described here assumes that SAP Datasphere is using its default authe
 
     A welcome email with logon information will be sent to this address.
 
-6.  Select the *Manager* who will approve requests this user makes for new role assignments.
+    > ### Note:  
+    > The *Manager* column is not relevant for SAP Datasphere users.
 
-7.  Select the icon <span class="FPA-icons"></span> and choose one or more roles from the list.
+6.  Select the icon <span class="FPA-icons"></span> and choose one or more roles from the list.
 
-8.  Select <span class="FPA-icons"></span> \(Save\).
+7.  Select <span class="FPA-icons"></span> \(Save\).
 
 
 
@@ -111,5 +112,5 @@ The method described here assumes that SAP Datasphere is using its default authe
 A welcome email including an account activation URL will be sent to the user, so that the user can set an initial password and access the system.
 
 > ### Note:  
-> In addition to the standard workflows, you can also create users via the command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
+> In addition to the standard workflows, you can also create users via the command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
 

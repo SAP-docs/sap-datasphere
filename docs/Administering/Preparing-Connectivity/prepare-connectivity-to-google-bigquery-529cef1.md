@@ -21,7 +21,7 @@ Before you can use the connection for creating views and accessing data via remo
 
 <a name="loio529cef1eee6a45a69ae4e51951718900__prereq_df_GBQ"/>
 
-## Data Flows
+## Data Flows and Replication Flows
 
 Before you can use the connection for data flows, the following is required:
 

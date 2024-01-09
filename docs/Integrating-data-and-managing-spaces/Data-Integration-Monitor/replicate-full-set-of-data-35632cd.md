@@ -2,7 +2,7 @@
 
 # Replicate Full Set of Data
 
-Use snapshot replication to copy the full set of data from your source object \(usually a database table or view\) into SAP Datasphere.
+Start a data replication to copy the full set of data from your source object \(usually a database table or view\) into SAP Datasphere.
 
 
 
@@ -19,11 +19,11 @@ Availability of data replication \(snapshot\) depends on the connection type. Fo
 
 1.  Go to *Data Integration Monitor* and select the space in which the relevant remote table resides.
 
-2.  Go to the *Remote Table Monitor* .
+2.  Go to the *Remote Tables*.
 
 3.  Select the remote table that you want to replicate data for.
 
-4.  When real-time replication has been used before, select *Table Replication* \> *Remove Replicated Data*.
+4.  When real-time replication has been used before, select *Data Replication* \> *Remove Replicated Data*.
 
 5.  You have two options:
 
@@ -49,7 +49,7 @@ Availability of data replication \(snapshot\) depends on the connection type. Fo
     </td>
     <td valign="top">
     
-    Select *Table Replication* \> *Load New Snapshot*.
+    Select *Data Replication* \> *Start Data Replication*.
     
     </td>
     </tr>
@@ -61,7 +61,7 @@ Availability of data replication \(snapshot\) depends on the connection type. Fo
     </td>
     <td valign="top">
     
-    Select *Schedule Replication* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    Select *Schedule* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
     
     </td>
     </tr>

@@ -1,7 +1,5 @@
 <!-- loio169ba34e19744362be25a4325de8d10c -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Schedule a Data Integration Task \(with Cron Expression\)
 
 Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.
@@ -47,87 +45,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 5.  For remote tables and views: Select the object for which you want to schedule a task.
 
-6.  Depending on the object perform the following action:
+6.  Click *Schedule* \> *Create Schedule* 
 
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Object
-    
-    </th>
-    <th valign="top">
-
-    Action
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Remote table**
-    
-    </td>
-    <td valign="top">
-    
-    Select *Schedule Replication* \> *Create Snapshot Schedule*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **View Persistency**
-    
-    </td>
-    <td valign="top">
-    
-    Select *Schedule* \> *Create Schedule*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Data flow**
-    
-    </td>
-    <td valign="top">
-    
-    Select :clock3: *Schedule* \> *Create Schedule*.
-
-    > ### Note:  
-    > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Task Chain**
-    
-    </td>
-    <td valign="top">
-    
-    Select :clock3: *Schedule* \> *Create Schedule*.
-
-    > ### Note:  
-    > You can also find the :clock3: *Schedule* menu on the run details page of a task chain.
-
-
-    
-    </td>
-    </tr>
-    </table>
-    
-    You can also use schedules to automate actions on remote tables or persisted views from the Data Builder.
+    You can also use schedules to automate actions on objects created from the Data Builder
 
     The *Create Schedule* window opens.
-
-    For data flows, you first enter a dialog where you select the relevant data flow before you get to the *Create Schedule* window.
 
     > ### Note:  
     > Tasks for which you own a schedule without having authorized SAP Datasphere to run scheduled tasks on your behalf before won't be executed but will fail.
@@ -343,7 +265,9 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 ## Results
 
-The column *Refresh Frequency* \(for data flows: *Frequency*\) shows the status *Scheduled*. By clicking the status you can display the scheduling settings.
+The column *Frequency* shows the status *Scheduled*. By clicking the status you can display the scheduling settings.
+
+The column *Schedule Owners* displays the name of the current schedule owner.
 
 The *Next Run* colums shows the start date and time of the next run according to the scheduling settings.
 
@@ -355,9 +279,9 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 
 ## Next Steps
 
-Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule/Schedule Replication* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
+Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule/Schedule Replication* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
 
-You may also pause and then later resume execution of scheduled tasks via the menu *Schedule/Schedule Replication* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
+You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 

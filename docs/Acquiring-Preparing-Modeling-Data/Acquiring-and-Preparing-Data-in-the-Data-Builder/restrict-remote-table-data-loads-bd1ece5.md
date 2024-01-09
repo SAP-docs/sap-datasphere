@@ -142,7 +142,7 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
 
         > ### Note:  
         > -   When previewing data, filters are applied.
-        > -   The task log displayed in the *Remote Table Monitor* details view will summarize the filter conditions used to load the new snapshot of data.
+        > -   The task log displayed in the *Remote Tables* monitor details view will summarize the filter conditions used to load the new snapshot of data.
         > -   If you want to change your filter conditions, you need to remove the replicated data first, as filters cannot get changed when the remote table is in data access "replicated".
 
         > ### Caution:  

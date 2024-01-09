@@ -33,15 +33,23 @@ Define the source for your replication flow \(connection, container, and objects
 
     To narrow down the selection, start typing a part of the folder name in the *Search* field.
 
+    If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to Initial because Initial and Delta is not supported for SAP Datasphere as the source.
+
 3.  Choose *Add Source Objects*. A list of available objects appears. Select the relevant ones for your use case and choose *Next*. A list of the objects you selected appears.
 
     > ### Note:  
-    > Objects for which replication is not supported are not shown in the list. For example, when replicating data from an SAP S/4HANA source you will only be shown CDS views that have the required annotations for data extraction.
+    > -   The list only shows objects for which replication is supported. For example, when replicating data from an SAP S/4HANA source you will only be shown CDS views that have the required annotations for data extraction.
+    > 
+    >     If a CDS view for which replication is enabled is not shown in the CDS\_EXTRACTION folder, please ensure that the user in the source connection has the required authorizations. For connections to an SAP S/4HANA Cloud source system, this might mean that the user must be assigned to an authorization group that contains the CDS view \(as described in [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/f509eddda867452db9631dae1ae442a3.html?version=2308.503)\).
+    > 
+    > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed, are **not** enabled for delta capturing, and have a primary key.
 
 4.  If you decide that you do not want to include an object after all, select it and choose *Remove from Selection*. If you want to include more objects, go back to the *Available* tab and select the relevant objects. When you are done, choose *Add Selection*. The system then imports the object definitions so that they are available for the subsequent process steps.
 
     > ### Note:  
     > An object can only be included in one replication flow at any given point in time \(not multiple ones\).
+
+5.  \(Optional\) To modify the throughput, you can change the number of replication threads. To do so, choose <span class="FPA-icons"></span> \(Browse source settings\), replace the default value of 10 with the value you want to use, and save your change.
 
 
 

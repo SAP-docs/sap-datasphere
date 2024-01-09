@@ -90,12 +90,12 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <tr>
     <td valign="top">
     
-    Data Flows
+    Flows
     
     </td>
     <td valign="top">
     
-    The definition of a data flow contains the definitions of all its sources and its target table. When you export a data flow, these objects are exported too.
+    The definition of a data flow, replication flow, or transformation flow contains the definitions of all its sources and its target table. When you export a flow, these objects are exported too.
     
     </td>
     </tr>

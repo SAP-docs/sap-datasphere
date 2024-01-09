@@ -1,7 +1,5 @@
 <!-- loio7c11059ed3314e1fb753736b7867512c -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Schedule a Data Integration Task
 
 You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.
@@ -14,10 +12,10 @@ You can schedule or unschedule data integration tasks such as remote table repli
 
 -   With the `DW Integrator` role you can create, change, or delete a schedule and let the scheduling component of SAP Datasphere run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
 
--   To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of SAP Datasphere. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
+-   To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of SAP Datasphere. In your profile settings under *Authorized Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
 
     > ### Note:  
-    > Your consent is valid for 12 months. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears 10 days before the expiry of consent.
+    > Your consent is valid for 12 months. If your consent will expire within the next four weeks, when you attempt to schedule new tasks, SAP Datasphere displays a message warning that your consent is approaching its expiration date. After the consent has expired, a log message informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears four weeks before the expiry of consent.
 
     For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
@@ -49,87 +47,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 5.  For remote tables and views: Select the object for which you want to schedule a task.
 
-6.  Depending on the object perform the following action:
+6.  Click *Schedule* \> *Create Schedule* 
 
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Object
-    
-    </th>
-    <th valign="top">
-
-    Action
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Remote table**
-    
-    </td>
-    <td valign="top">
-    
-    Select *Schedule Replication* \> *Create Snapshot Schedule*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **View Persistency**
-    
-    </td>
-    <td valign="top">
-    
-    Select *Schedule* \> *Create Schedule*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Data flow**
-    
-    </td>
-    <td valign="top">
-    
-    Select :clock3: *Schedule* \> *Create Schedule*.
-
-    > ### Note:  
-    > You can also find the :clock3: *Schedule* menu on the run details page of a data flow.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Task Chain**
-    
-    </td>
-    <td valign="top">
-    
-    Select :clock3: *Schedule* \> *Create Schedule*.
-
-    > ### Note:  
-    > You can also find the :clock3: *Schedule* menu on the run details page of a task chain.
-
-
-    
-    </td>
-    </tr>
-    </table>
-    
-    You can also use schedules to automate actions on remote tables or persisted views from the Data Builder.
+    You can also use schedules to automate actions on objects created from the Data Builder
 
     The *Create Schedule* window opens.
-
-    For data flows, you first enter a dialog where you select the relevant data flow before you get to the *Create Schedule* window.
 
     > ### Note:  
     > Tasks for which you own a schedule without having authorized SAP Datasphere to run scheduled tasks on your behalf before won't be executed but will fail.
@@ -163,6 +85,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
+    -   *Minutes*: Define how often per hour that you want to trigger the scheduled run during the designated time or date range. You can specify scheduled runs every 10, 15, 20, or 30 minutes.
     -   *Hourly*: Define how often you want to trigger the schedule per day \(every 1 to 23 hours of the day\) and the start time.
 
         Optionally, you can specify an offset from which the tasks will run. For example, so that a task runs every 2 hours starting from 1:30 AM, specify 2 in *Every* and 1:30 in *Starting at \(UTC\)*.
@@ -181,6 +104,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     
     Let's take a few examples. Imagine that we are in April 14, 2021, it's 9:00 am and you define your schedule without a start and end date:
 
+    -   *Minutes*: You set frequency of scheduled task runs to 15 minutes. Tasks will now be triggered to run every 15 minutes within designated time/date range.
     -   *Hourly*: You select every "5" hours "00" minutes. You need to consider that a cycle run reset will occur every day at 0:00. Next runs will be:
 
         -   Apr 14, 2021 10:00
@@ -283,7 +207,9 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 ## Results
 
-The column *Refresh Frequency* \(for data flows: *Frequency*\) shows the status *Scheduled*. By clicking the status you can display the scheduling settings.
+The column *Frequency* shows the status *Scheduled*. By clicking the status you can display the scheduling settings.
+
+The column *Schedule Owners* displays the name of the current schedule owner.
 
 The *Next Run* colums shows the start date and time of the next run according to the scheduling settings.
 
@@ -295,11 +221,11 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 
 ## Next Steps
 
-Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule/Schedule Replication* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
+Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule/Schedule Replication* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
 
-You may also pause and then later resume execution of scheduled tasks via the menu *Schedule/Schedule Replication* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
+You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 
 **Related Information**  
 

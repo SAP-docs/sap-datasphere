@@ -23,7 +23,7 @@ The integrated SAP SQL data warehousing approach allows you to add HDI container
 
     ![HDI Container Objects are Sources for Space](images/HDI_as_Source_201d2a8.png)
 
--   Use data exposed from your SAP Datasphere space as a source for calculation views and flowgraphs built in your HDI container \(see [Access Space Objects in Your HDI Container](access-space-objects-in-your-hdi-container-656eebc.md)\).
+-   Use data exposed from your SAP Datasphere space as a source for calculation views and flowgraphs built in your HDI container \(see [Consume Space Objects in Your HDI Container](consume-space-objects-in-your-hdi-container-656eebc.md)\).
 
     ![HDI Container Reads View Exposed for Consumption](images/HDI_Read_Exposed_View_f8edd97.png)
 

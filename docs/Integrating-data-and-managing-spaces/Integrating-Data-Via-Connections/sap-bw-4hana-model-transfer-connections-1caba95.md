@@ -106,16 +106,28 @@ Displays the SAP HANA port retrieved from SAP BW∕4HANA via the selected tunnel
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Schema*
+
+</td>
+<td valign="top">
+
+Displays the default schema in which DDIC tables are located in the underlying SAP HANA database of SAP BW∕4HANA.
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
-> If required in exceptional cases, you can change the value in the *Host* and *Port* fields.
+> If required in exceptional cases, you can change the values in the *Host*, *Port*, and *Schema* fields.
 > 
-> In some use cases, for example when SAP BW∕4HANA is hosted by a third-party cloud provider, host and port can't be retrieved and you must enter it manually.
+> In some use cases, for example when SAP BW∕4HANA is hosted by a third-party cloud provider, host, port, and schema can't be retrieved and you must enter them manually.
 > 
-> In case of an error when retrieving host and port, for example because of missing authorizations, because of any of the services necessary for the tunnel connection not being active, or because of any other issue with the tunnel connection, you can enter host and port manually to be able to proceed with connection creation before validating and fixing the tunnel connection. We recommend, however, to validate and fix the tunnel connection first.
+> In case of an error when retrieving host, port, and schema for example because of missing authorizations, because of any of the services necessary for the tunnel connection not being active, or because of any other issue with the tunnel connection, you can enter host, port, and schema manually to be able to proceed with connection creation before validating and fixing the tunnel connection. We recommend, however, to validate and fix the tunnel connection first.
 > 
-> You can reset the value for the *Host* and *Port* fields to the values retrieved from SAP BW∕4HANA by clicking *Reset*.
+> You can reset the values for the *Host*, *Port*, and *Schema* fields to the values retrieved from SAP BW∕4HANA by clicking *Reset*.
 
 
 

@@ -118,7 +118,7 @@ instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 > ### Note:  
 > -   Make sure to select the *Basic Light* package zip file. The package applies to all versions supported by the Oracle connection type \(Oracle 12c, Oracle 18c, and Oracle 19c\).
 > 
-> -   Additional files might be required:
+> -   Additional files are required if SSL is used:
 > 
 >     -   oraclepki.jar \(SHA256 fingerprint: e408e7ae67650917dbce3ad263829bdc6c791d50d4db2fd59aeeb5503175499b\)
 >     -   osdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
@@ -141,7 +141,7 @@ ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13
 <tr>
 <td valign="top" rowspan="2">
 
-[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to access data from a Google BigQuery data source..") :arrow_upper_right:
+[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 
 </td>
 <td valign="top">

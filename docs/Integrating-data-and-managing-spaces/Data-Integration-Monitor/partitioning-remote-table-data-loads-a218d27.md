@@ -4,7 +4,7 @@
 
 # Partitioning Remote Table Data Loads
 
-Replication capabilities depend on the data type and size. Larger data volumes can cause replication runs to terminate because of memory shortage. From the *Remote Table Monitor* - Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts.
+Replication capabilities depend on the data type and size. Larger data volumes can cause replication runs to terminate because of memory shortage. From the *Data Integration Monitor* \> *Remote Tables* - Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts.
 
 Replicating remote tables with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for Data modelers. To avoid such situations, you can create partitions per remote tables and thus enable partitioned data transfer of large datasets for supported connection types \(which are all remote table-enabled connections that use a Data Provisioning agent\).
 
@@ -17,7 +17,7 @@ Replicating remote tables with larger data volumes without having out-of-memory 
 
 ## Creating Partitions for Your Remote Tables
 
-You can create partitions from the *Remote Table Monitor*– Details screen:
+You can create partitions from the *Data Integration Monitor* \> *Remote Tables*– Details screen:
 
 1.  Click <span class="FPA-icons"></span> of the remote table you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.
@@ -182,7 +182,7 @@ You can delete an existing partition using the menu *Partitions* \> *Delete*.
 Once the partitioning task is completed, messages with information on partitions is created. You have different places to monitor the partitioned data loads:
 
 -   In the task logs that are created: one log is created per partition and contains detailed information.
--   In the *Remote Query Monitor* by displaying the SQL Statement: The SELECT statements sent by SAP HANA smart data integration to the remote source are listed. The partition information is part of the WHERE clause of the particular statement. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
+-   In the *Data Integration Monitor* \> *Remote Queries* by displaying the SQL Statement: The SELECT statements sent by SAP HANA smart data integration to the remote source are listed. The partition information is part of the WHERE clause of the particular statement. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
 
 > ### Note:  
 > If your defined ranges don’t cover all the data, additional partitions are created in the background . For example, if rows have been inserted or modified since your last data replication and they now don’t match any of the defined ranges. An additional partition called 'Others' is created to cover this data.

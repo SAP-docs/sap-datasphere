@@ -25,6 +25,6 @@ The data type and semantic type information is inherited from the fact \(or anal
 4.  If the source is a view containing one or more input parameters, you must decide how each input parameter will be processed:
 
     -   *Map To*: Map the source input parameter to a variable in your analytic model. Users of this view will need to provide a value for the variable.
-    -   *Set Value*: Enter a value to resolve the variable. The variable is resolved and users of this analytic model will no longer need to provide a value for it.
+    -   *Set Value*: Enter a value to resolve the variable. The variable is resolved and users of this analytic model will no longer need to provide a value for it. If a value is already set by default, you can either set it or edit it by clicking the value and selecting another one in the list of available values of the *Select Member* dialog. The *Select Member* dialog is available only if a predefined default value has been defined in the input parameter.
 
 

@@ -25,7 +25,7 @@ Space administrators and integrators prepare connections and other sources to al
 
 ## Federate and Replicate Data in Remote Tables
 
-Many connections \(including most connections to SAP systems\) support importing remote tables to federate or replicate data \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:\).
+Many connections \(including most connections to SAP systems\) support importing remote tables to federate or replicate data \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:\).
 
 You can import remote tables to make the data available in your space from the *Data Builder* start page, in an entity-relationship model, or directly as a source in a view.
 
@@ -46,7 +46,7 @@ You can import remote tables to make the data available in your space from the *
 
 ## Extract, Transform, and Load Data with Data Flows
 
-Many connections \(including most connections to SAP systems\) support loading data to SAP Datasphere via data flows \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.") :arrow_upper_right:\).
+Many connections \(including most connections to SAP systems\) support loading data to SAP Datasphere via data flows \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:\).
 
 Data flows support a wide range of extract, transform, and load \(ETL\) operations.
 
@@ -91,7 +91,7 @@ The *Import Entities* wizard allows you to import entities from SAP S/4HANA Clou
 
 ## Import Entities from SAP BW Bridge
 
-SAP BW bridge enables you to use SAP BW functionality in the public cloud and to import bridge entities into SAP Datasphere \(see[Importing Entities with Semantics from SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-bridge-7bcd321.md) \).
+SAP BW bridge enables you to use SAP BW functionality in the public cloud and to import bridge entities into SAP Datasphere \(see[Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md) \).
 
 
 
@@ -132,7 +132,7 @@ You can create and import empty tables and views to receive and prepare data:
 All the objects you import or create in the *Data Builder* are listed on the *Data Builder* start page. You can act on objects in the list in the following ways:
 
 -   Click one of the tabs to filter the list by object type.
--   Click a tile to create a new object.
+-   Click a tile to create a new object
 -   Enter a string in the *Search* field to filter the list on business and technical names and users.
 -   Click a column header to sort or filter the list by values in the column.
 -   Select one or more objects and use any of the following tools:
@@ -208,7 +208,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   Local Table \(see [Creating a Local Table](creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a "Simple Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as simple values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\)
 

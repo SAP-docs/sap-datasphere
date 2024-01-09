@@ -2,7 +2,7 @@
 
 # Integrating Data via Connections
 
-Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. To connect to different sources, SAP Datasphere provides different connection types.
+Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.
 
 
 
@@ -118,7 +118,7 @@ To allow space users using a feature, the feature must be enabled in the connect
 
 ## Connection Types Overview
 
-The following connection types are available with SAP Datasphere:
+To connect to different sources, SAP Datasphere provides different connection types. The following connection types are available with SAP Datasphere:
 
 
 
@@ -289,12 +289,49 @@ no
 </td>
 <td valign="top">
 
-no
+yes \(target\)
 
 </td>
 <td valign="top">
 
 yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+Cloud
+
+</td>
+<td valign="top">
+
+Non SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Apache Kafka Connections](apache-kafka-connections-1992c6b.md)
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes \(target\)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -474,7 +511,7 @@ yes
 </td>
 <td valign="top">
 
-no
+yes \(target\)
 
 </td>
 <td valign="top">
@@ -511,7 +548,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes \(target\)
 
 </td>
 <td valign="top">
@@ -612,7 +649,7 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen1 Connections](microsoft-azure-data-lake-store-gen1-connections-aa04f9a.md)
+[Microsoft Azure Data Lake Store Gen1 Connections \(Deprecated\)](microsoft-azure-data-lake-store-gen1-connections-deprecated-aa04f9a.md)
 
 </td>
 <td valign="top">
@@ -659,7 +696,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes \(target\)
 
 </td>
 <td valign="top">

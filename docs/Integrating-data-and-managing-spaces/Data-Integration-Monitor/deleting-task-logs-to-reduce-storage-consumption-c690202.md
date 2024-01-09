@@ -1,5 +1,7 @@
 <!-- loioc6902024ecd74956b4ba2d1c67ccb073 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Deleting Task Logs to Reduce Storage Consumption
 
 In the *Configuration* area, you can check how much spaces the task logs are using on your tenant, and decide to delete the obsolete ones to reduce storage consumption.
@@ -20,7 +22,7 @@ However, task logs can consume a lot of spaces in a tenant. Deleting old task lo
 
 ## Procedure
 
-1.  In the side navigation area, click *Configuration* and, then *Task logs*.
+1.  In the side navigation area, click <span class="FPA-icons"></span> \(Configuration\) → *Tasks*.
 
 2.  Check how much size the task logs consume on your tenant. If needed, decide how you want to delete the task logs.
 

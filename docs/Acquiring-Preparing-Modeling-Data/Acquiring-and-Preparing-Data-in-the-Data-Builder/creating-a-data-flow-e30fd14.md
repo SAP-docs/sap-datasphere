@@ -13,7 +13,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 ## Context
 
 > ### Note:  
-> Data flows support loading data exclusively to local tables in the SAP Datasphere repository.
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
 
 
@@ -25,11 +25,12 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 2.  Add one or more objects from the *Source Browser* panel on the left of the screen as sources \(see [Add a Source](add-a-source-7b50e8e.md)\).
 
-    > ### Note:  
-    > Data flow currently doesn't support double quotes in column names, table names, owners, or other identifiers. If the source or target operators in a data flow contains double quotes, we recommend you to create a view in the source or in SAP Datasphere that renames the columns containing double quotes.
-
     > ### Restriction:  
-    > Data flows don't support spatial data type columns.
+    > -   Data flows support loading data exclusively to local tables in the SAP Datasphere repository.
+    > 
+    > -   Data flow currently doesn't support double quotes in column names, table names, owners, or other identifiers. If the source or target operators in a data flow contains double quotes, we recommend you to create a view in the source or in SAP Datasphere that renames the columns containing double quotes.
+    > 
+    > -   Data flows don't support spatial data type columns.
 
 3.  Transform your data using one or more operators:
 

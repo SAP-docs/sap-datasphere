@@ -100,16 +100,14 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    *Connection* 
+    *Connection \(Business Name\) or Connection \(Technical Name* 
     
     </td>
     <td valign="top">
     
     \[read-only\]
 
-    Displays the name of the connection the remote table belongs to. 
-
-    Displays the name of the connection the remote table belongs to.
+    Displays the name of the connection the remote table belongs to.Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
     
     </td>
     </tr>
@@ -137,10 +135,8 @@ Provide business-friendly names for your table and its columns, identify its sem
 
     -   *Remote*: Data is accessed directly from the source \(federation\) and read from the virtual table.
     -   *Replicated*: Data is copied in SAP Datasphere and is read from the replica table.
-        -   For snapshots, *Replicated* means that data is read from the replica table but not expected to be updated in real-time.
-
-        -   For real-time replication, *Replicated* means that data is read from the replica table and expected to be updated in real-time.
-
+        -   *Replicated \(Snapshot\)*: The data is read from the replica table but is not expected to be updated in real-time. You can create a schedule to refresh the data regularly.
+        -   *Replicated \(Real-Time\)*: The data is read from the replica table and expected to be updated in real-time.
 
 
 
@@ -169,7 +165,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    Refresh Frequency
+    Frequency
     
     </td>
     <td valign="top">
@@ -264,7 +260,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     </table>
     
-    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Table Monitor* to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Data Integration Monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
+    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Tables* monitor to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In Remote Tables (monitor), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
 
     > ### Note:  
     > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.
@@ -273,17 +269,10 @@ Provide business-friendly names for your table and its columns, identify its sem
 
 4.  \[remote tables only\] Create filter conditions to load only the data that is needed \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
 
-5.  Complete or consult other sections as appropriate:
+5.  \[Remote Tables only\]\[read-only\] *Input Parameters*: If your remote table consumes parameterized Hana SQL views using SAP HANA smart data access as source, the parameters are displayed with their properties. As the parameters are part of the metadata definition coming from the remote source, this new section is ready only.
 
-    -   *Associations* - Create associations to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
-    -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-    -   *Table Services* - Enable the *In-Memory Storage* option to store the table data directly in memory \(see [Accelerate Table Data Access with In-Memory Storage](accelerate-table-data-access-with-in-memory-storage-407d1df.md)\).
-
-        > ### Note:  
-        > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.
-
-    -   *Partitions*- Define partitions for your local table. For more information, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
-    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](../Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
+    > ### Note:  
+    > To preview data, you must enter a value for each input parameter. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)
 
 6.  Save and Deploy
 

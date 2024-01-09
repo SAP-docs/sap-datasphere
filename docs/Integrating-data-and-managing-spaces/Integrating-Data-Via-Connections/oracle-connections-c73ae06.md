@@ -149,6 +149,11 @@ Description
 
 Select whether you’re using SSL. The default value is *true*. 
 
+> ### Note:  
+> If you selected SSL and you want to use the connection for data flows, in addition to the ODBC driver file additional files must have been uploaded to SAP Datasphere \(see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:\).
+
+
+
 </td>
 </tr>
 <tr>

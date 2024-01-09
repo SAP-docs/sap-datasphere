@@ -14,7 +14,7 @@ Drag a source from the *Source Browser*, hover over a source or other node, and 
 
 2.  Browse or search for the object you want to add on either of the tabs.
 
-    -   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\).. You can search and expand the categories \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
+    -   The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\).. For more information, see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md).
 
     -   The *Sources* tab lists all the connections and other data sources that have been integrated to the space from which you can import tables. However it shows only limited records. If you can't see the sources you are looking for, use *Import from Connection* to perform search. You can:
 
@@ -22,7 +22,7 @@ Drag a source from the *Source Browser*, hover over a source or other node, and 
         -   Open the *Import Objects from Connection* dialog on a particular connection to select multiple objects for import \(see [Import Multiple Objects from a Connection](import-multiple-objects-from-a-connection-e720b13.md)\).
 
 
-3.  Select the object of your choice, and then drag it over a source or other node in the diagram. Wait for the context menu to appear, slide your cursor over the *Union* option and then release the mouse button.
+3.  Select your object and drag it over a source or other node in the diagram. Wait for the context menu to appear, slide your cursor over the *Union* option and then release the mouse button.
 
     ![](images/Create_Union_Gif_3b4f168.gif)
 

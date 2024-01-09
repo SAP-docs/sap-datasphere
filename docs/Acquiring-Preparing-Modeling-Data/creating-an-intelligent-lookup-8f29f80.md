@@ -127,7 +127,89 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
 
     You can set the name of the view, choose to include unmatched records in it, review its columns, and set default values to insert into the return columns of unmatched records \(see [Configure the View Output by an Intelligent Lookup](configure-the-view-output-by-an-intelligent-lookup-aa11efb.md)\).
 
-6.  Deploy and run the intelligent lookup:
+6.  Click the diagram background and enter the following properties of your intelligent lookup as necessary:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Business Name 
+    
+    </td>
+    <td valign="top">
+    
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Technical Name 
+    
+    </td>
+    <td valign="top">
+    
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*. 
+
+    To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
+
+    > ### Note:  
+    > Once the object is saved, the technical name can no longer be modified.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Package
+    
+    </td>
+    <td valign="top">
+    
+    Select the package to which the object belongs. 
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Status
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the deployment and error status of the object. 
+
+    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    </table>
+    
+7.  Deploy and run the intelligent lookup:
 
     1.  Click <span class="SAP-icons"></span> \(Deploy\) , enter business and technical names in the *Save Intelligent Lookup* dialog, then click *Save*.
 
@@ -138,7 +220,7 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
         Once the run is complete, the color-coded results of the rule are displayed on its symbol as percentages of the input records.
 
 
-7.  Select the rule node and then click <span class="FPA-icons"></span> \(Preview Data\) to open the *Preview Data* panel and process the results in the various tabs:
+8.  Select the rule node and then click <span class="FPA-icons"></span> \(Preview Data\) to open the *Preview Data* panel and process the results in the various tabs:
 
     ![](images/IL_Results_-_Multiple_90ceef5.png)
 
@@ -166,7 +248,7 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
         > Only records that have new pairing column values are included here. New records that have the same pairing column value as an existing pairing group are automatically placed in the appropriate results category for that pairing group.
 
 
-8.  If necessary, modify your rule or add further rules to refine your output.
+9.  If necessary, modify your rule or add further rules to refine your output.
 
     > ### Note:  
     > You are not required to match all records. You can stop at any time when the view produced by the intelligent lookup is satisfactory for your needs.

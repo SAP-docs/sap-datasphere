@@ -79,6 +79,8 @@ Replication Flows
 
 You can use the connection to add target objects to a replication flow.
 
+For more information, see [Using a Cloud Storage Provider As the Target](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:. 
+
 </td>
 </tr>
 </table>

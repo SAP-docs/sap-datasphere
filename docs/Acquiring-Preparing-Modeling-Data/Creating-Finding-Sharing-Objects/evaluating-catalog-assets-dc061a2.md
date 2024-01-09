@@ -4,7 +4,7 @@
 
 # Evaluating Catalog Assets
 
-Once you find the asset you want, you can select it to view its overview information, detailed metadata, and impact and lineage diagram. This information includes metadata that is extracted from the source system or data enrichments added in the catalog.
+When you find the asset you want, you can select it to view its overview information, a preview of its detailed metadata, and a diagram of its impact and lineage. This information includes metadata that is extracted from the source system and data enrichments added in the catalog.
 
 
 
@@ -12,7 +12,17 @@ Once you find the asset you want, you can select it to view its overview informa
 
 ## Prerequisites
 
-You must be assigned the *Catalog User* role.
+You must be assigned one of the following:
+
+-   The *Catalog User* role.
+
+-   A custom role with the *Read* permission for *Catalog Asset*.
+
+
+
+    > ### Note:  
+    > To see the details of any terms, tags, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
+
 
 > ### Tip:  
 > If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role or appropriate privileges can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
@@ -150,7 +160,7 @@ Displays asset properties extracted from the data source and data enrichments ad
 
 Source properties common among all assets include:
 
--   *Name*: The file name of the asset on the source system. Assets in SAP Analytics Cloud have one name that appears, *Name*. Assets in SAP Datasphere have two names that appear: *Technical Name*, which is the name that is used in scripts and code and is synchronized with the business name, and *Business Name*, which is the descriptive name of the asset that helps you identify the asset.
+-   *Name*: The file name of the asset on the source system. The asset name can also include a *Business Name* or a *Technical Name*. For example, assets in SAP Analytics Cloud have one name that appears. Assets in SAP Datasphere have a business name, which is the descriptive name of the asset that helps you identify the asset, and a technical name, which is the name that is used in scripts and code and is synchronized with the business name.
 
 -   *Created On*: The date and time on which the asset was created on the source system. The name of the user who created the asset is also shown.
 
@@ -159,11 +169,11 @@ Source properties common among all assets include:
 
 Source properties that show information about the source system include:
 
--   *Container Name*: Name of the location of the asset. For assets in SAP Datasphere, this is the space name. For assets in SAP Analytics Cloud, this is the parent folder name.
+-   *Container Name*: Name of the location of the asset. For example, the container name for assets in SAP Datasphereis the space name. The container for assets in SAP Analytics Cloud is the parent folder name.
 
--   *Container Business Name*: Business name of the location of the asset. For assets in SAP Datasphere, this is a descriptive name for the space.
+-   *Container Business Name*: Business name of the location of the asset. For example, the container business name for assets in SAP Datasphere is a descriptive name for the space.
 
--   *Path*: Folder location of the asset. This path appears for assets in the SAP Analytics Cloud.
+-   *Path*: Folder location of the asset, if available. For example, this path appears for assets in the SAP Analytics Cloud.
 
 -   *Type*: Type of location where the asset is saved. The location type appears for assets in the SAP Datasphere.
 
@@ -271,14 +281,14 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 
 ## Viewing Detailed Metadata for an Asset
 
-Use the *Details* tab to review detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each data or analytic object.
+Use the *Details* tab to view a preview of the detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each data or analytic object.
 
 > ### Note:  
-> This tab appears only if the asset has details that can be shown. Currently, detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
+> This tab appears only if the asset has detailed metadata that can be shown. Currently, a preview of the detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
-In addition to the detailed metadata, each metadata table has a column for *Related Objects*. If a row has one or more object \(terms or KPIs\) relationships, a button with the total number of object relationships is displayed. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
+In addition to the preview of the detailed metadata, each metadata table has a column for *Related Objects*. If a row has one or more object \(terms or KPIs\) relationships, a button with the total number of object relationships is displayed. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
 
 ![](images/Asset_Details_-_Related_Object_Popup_8bcfe1a.png)
 

@@ -13,40 +13,60 @@ The *View Analyzer* provides you with statistics and useful information on each 
 
 To use the *View Analyzer*,
 
-1.  Go to *Data Integration Monitor* \> *View Persistency Monitor*. Select the view you need to analyze and navigate to the details screen of this view.
+1.  Go to *Data Integration Monitor**Views*. Select the view you need to analyze and navigate to the details screen of this view.
 
     > ### Note:  
     > You need to select a space if you are assigned to several spaces.
 
-2.  Select *View Persistency* \> *Start View Analyzer*.
+2.  Select *Data Persistence**Start View Analyzer*.
 
     > ### Note:  
     > For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
 
-    You can choose between 2 options:
+    You can choose between 3 options:
 
-    -   Run the *View Analyzer* without memory consumption: The *View Analyzer* will not execute the persistency simulation. For views already persisted , the memory consumption of view persistency task will be shown. The analyzer will analyze the entities that compose your data model and will provide you with the information it has collected.
+    ![](images/View_Analyzer_Settings_a8359c5.png)
 
-        ![](images/View_Analyzer_Settings_Without_Memory_Consumption_cff6761.png)
-
-    -   Run the *View Analyzer* with memory consumption: In addition to exploring the entities that compose your data model, the analyzer will execute the persistency simulation for non persisted views. It will report the memory consumption that would be used to get an entity persisted or will provide you with the actual memory consumption used when you have persisted your data. The simulations are executed sequentially as they may add some workloads to the system. To reduce these workloads, you can define a limit to the memory consumption that can be used to persist the view thanks to the threshold. If one of the analyzed views exceeds the limit, then no further view persistency simulations are run.
+    -   Run the *View Analyzer* without memory consumption: The *View Analyzer* will not execute the data persistence simulation. For views already persisted , the memory consumption of data persistence task will be shown. The analyzer will analyze the entities that compose your data model and will provide you with the information it has collected.
 
         > ### Note:  
-        > To start the*View Analyzer* with memory consumption, you must have the space *Read* privilege. If you are missing this privilege, the *View Analyzer* will run without memory consumption by default.
+        > If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it.
 
-        ![](images/View_Analyzer_Settings_With_Memory_Consumption_6fe57f8.png)
+    -   Run the *View Analyzer* with memory consumption: In addition to exploring the entities that compose your data model, the analyzer will execute the data persistence simulation for non persisted views. It will report the memory consumption that would be used to get an entity persisted or will provide you with the actual memory consumption used when you have persisted your data. The simulations are executed sequentially as they may add some workloads to the system. To reduce these workloads, you can define a limit to the memory consumption that can be used to persist the view thanks to the threshold. If one of the analyzed views exceeds the limit, then no further data persistence simulations are run.
+
+        > ### Note:  
+        > -   To start the*View Analyzer* with memory consumption, you must have the space *Read* privilege. If you are missing this privilege, the *View Analyzer* will run without memory consumption by default.
+        > -   If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it.
 
         Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set a Priority and Statement Limits for a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Use the properties in the Workload Management section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume.") :arrow_upper_right:.
 
         > ### Caution:  
-        > To use the *View Analyzer* with memory consumption during persistency simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:.
+        > To use the *View Analyzer* with memory consumption during data persistence simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Analyze Monitoring Data in a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "Define the two spaces dedicated to monitoring SAP Datasphere (such as monitoring the database for resource consumption).") :arrow_upper_right:.
+
+    -   *Generate SQL Analyzer Plan File*: Before using this option, you must consider the following requirements:
+
+        > ### Caution:  
+        > -   To download this file, you must have the *DW Administrator* role or a custom role that includes the *Data Warehouse Runtime* privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
+        > -   To open this file, you must have installed a compatible SQL plan visualization tool, such as SQL Analyzer Tool for SAP HANA.
+        > -   This option requires additional system resources.
+
+        With this option, the data persistence simulation is run for the main view only, and the analyzer creates a file containing detailed information about your data model that you can download for further analysis.
+
+        > ### Note:  
+        > -   If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it.
+        > -   If you want to analyze one of the underlying views, select the relevant view from the dependency graph or the entity list, and launch the *View Analyzer* with SQL analyzer plan file option.
+        > -   You can select only one view for analysis.
+
+        The Plan File is stored along with task logs and has a retention period that is the same as the task logs:
+
+        ![](images/PlanViz_595c8da.jpg)
 
 
 3.  Analyze your results
 
     To understand how you can interpret the analyzer's findings, let's take an example with the following View\_001\_001. It consumes 4 views \(in red\) and 4 remote tables \(in purple\): ![](images/View_Analyzer_Example_with_an_Analyzed_View_a5955d0.png)
 
-    Now, let's start the *View Analyzer* with memory consumption. On the total of 8 GiB that I have allowed in my statement memory limit, let's decide to limit the memory consumption to 4 GiB. This means that if a persistency task exceeds this limit, the next persistency simulations will be canceled:
+    Now, let's start the *View Analyzer* with memory consumption. On the total of 8 GiB that I have allowed in my statement memory limit, let's decide to limit the memory consumption to 4 GiB. This means that if a data persistence task exceeds this limit, the next data persistence simulations will be canceled:
 
     ![](images/View_Analyzer_Settings_ec24c8a.png)
 
@@ -147,7 +167,7 @@ To use the *View Analyzer*,
         </td>
         <td valign="top">
         
-        Indicates the duration in second to persist the view \(simulation or actual persistency\).
+        Indicates the duration in second to persist the view \(simulation or actual data persistence\).
         
         </td>
         </tr>
@@ -240,7 +260,7 @@ To use the *View Analyzer*,
         You can select one or more views and start a new view analyzer.
 
         > ### Note:  
-        > The analyzer will always start from the main view. Selecting the views here in the entity list, or in the lineage graph has an effect only on the persistency simulation. In case memory consumption is chosen, the persistency simulation will be executed for the selected views, regardless of their persistency status.
+        > The analyzer will always start from the main view. Selecting the views here in the entity list, or in the lineage graph has an effect only on the data persistence simulation. In case memory consumption is chosen, the data persistence simulation will be executed for the selected views, regardless of their data persistence status.
 
 
         

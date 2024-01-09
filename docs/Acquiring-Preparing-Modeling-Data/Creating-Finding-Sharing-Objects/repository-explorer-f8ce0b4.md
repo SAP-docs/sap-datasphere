@@ -1,5 +1,7 @@
 <!-- loiof8ce0b4a24fe473a962176c8aa3cad42 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Repository Explorer
 
 The *Repository Explorer* gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.
@@ -10,6 +12,8 @@ This topic contains the following sections:
 -   [Enter a String to Search On](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_string_search)
 -   [Filter by Collection or Space](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter)
 -   [Filter by Criteria](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_criteria_filter)
+-   [Define Advanced Filter Conditions](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_advanced_filter)
+-   [Favorite Objects](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_favorite)
 -   [Create Objects and Act on Existing Objects](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_tools)
 
 
@@ -39,11 +43,11 @@ As you type, the field will begin proposing objects and search strings. Select a
 
 <a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter"/>
 
-## Filter by Collection or Space
+## Filter by Collection or Space 
 
-Restrict the scope of the list by selecting a collection or space in the *Search In* area of the left panel.
+Restrict the scope of the list by selecting a collection or a space in the *Search In* area of the left panel.
 
-Choose one collection or one space:
+Choose one collection or space: 
 
 -   *Collection*:
     -   *All* \(default\)
@@ -54,9 +58,9 @@ Choose one collection or one space:
         > ### Note:  
         > If you are not assigned to a space an object is shared from, it appears greyed out and you cannot open or otherwise act on it.
 
-    -   *Favorites* - Objects that you have favorited \(by clicking the star in the *Actions* column\)
+    -   *Favorites* - Objects that you have favorited
 
--   *Space*: Up to five spaces are listed here in order of your last visit. If you are assigned to more than five spaces, you can add them by clicking *Show More* and selecting them in the dialog.
+-   *Space*: Spaces you are assigned to are listed here in order of your last visit.
 
 
 
@@ -185,7 +189,7 @@ All objects that are shared with a particular space
 
 and
 
-*Sharing* \> *Shared with My Space*
+*Sharing* \> *Shared to My Space*
 
 </td>
 </tr>
@@ -196,7 +200,7 @@ and
 
 
 
-<a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_b25_xs5_cxb"/>
+<a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_advanced_filter"/>
 
 ## Define Advanced Filter Conditions
 
@@ -207,6 +211,16 @@ For those filter options that are not related to date or time, you can create a 
 3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an `OR` operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an `AND` operator, so that both conditions must be true for the object to be returned in the search results.
 
 You can create advanced filter conditions for multiple filter categories. An object must meet one of the conditions in each of the categories to be included in the search results.
+
+
+
+<a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_favorite"/>
+
+## Favorite Objects
+
+To add an object to your favorites, click the <span class="FPA-icons"></span> \(Add to Favorites\) tool in the *Actions* column.
+
+To view your favorites, select *Favorites* in the *Collection* list
 
 
 
@@ -254,7 +268,7 @@ You can act on objects in the list in the following ways:
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
     -   Entity-Relationship Model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\)
     -   Data Flow \(see [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a "Simple Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as simple values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
     -   Currency Conversion Views \(see [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\)
 
 
@@ -288,7 +302,7 @@ You can act on objects in the list in the following ways:
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Space administrators can create data access controls to define criteria on which data can be displayed to users.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a "Simple Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as simple values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 

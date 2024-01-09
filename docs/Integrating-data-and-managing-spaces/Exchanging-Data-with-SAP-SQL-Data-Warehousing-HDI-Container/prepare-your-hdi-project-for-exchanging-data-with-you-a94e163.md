@@ -156,7 +156,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
 
 2.  Configure your *Cloud Foundry Settings* to build to your SAP Datasphere tenant.
 
-3.  Edit your `mta.yaml` file to reference the database id of your SAP Datasphere tenant, your HDI container, and the name of your user-provided service instance \(see [Access Space Objects in Your HDI Container](access-space-objects-in-your-hdi-container-656eebc.md)\).
+3.  Edit your `mta.yaml` file to reference the database id of your SAP Datasphere tenant, your HDI container, and the name of your user-provided service instance \(see [Consume Space Objects in Your HDI Container](consume-space-objects-in-your-hdi-container-656eebc.md)\).
 
 4.  Build your database module.
 

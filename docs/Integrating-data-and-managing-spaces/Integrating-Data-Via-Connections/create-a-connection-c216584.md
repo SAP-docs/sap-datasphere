@@ -4,7 +4,7 @@
 
 # Create a Connection
 
-Create a connection to allow users to a space to use the connected source for data modeling and data access in SAP Datasphere.
+Create a connection to allow users assigned to a space to use the connected source or target for data modeling and data access in SAP Datasphere.
 
 
 

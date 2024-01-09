@@ -4,7 +4,7 @@
 
 # Persisting and Monitoring Views
 
-In the *Data Integration Monitor*, you can monitor views, persist views or schedule data persistence for views.Persisted views are available locally and can be used directly to improve performance when accessing your data, for your models or stories, for example. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
+From the *Data Integration Monitor* \> *Views*, you can add views that have been created in the *Data Builder*, and persist these views \(direct execution or via a schedule\) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
 
 **Prerequisites**: Your view must be deployed.
 
@@ -39,7 +39,7 @@ Copy of the virtual views to be persisted into SAP HANA Cloud. The definition of
 
 ### Persist Data
 
-Views can be persisted by loading a snapshot or scheduling a persistency task. You can also partition your data load into smaller parts to improve the performance.
+Views can be persisted by running a data persistence or scheduling a data persistence task. You can also partition your data load into smaller parts to improve the performance.
 
 For more information, see [Creating Partitions for Your Persisted Views](creating-partitions-for-your-persisted-views-9b1b595.md) and [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
@@ -103,9 +103,9 @@ For more information, see [Creating a Local Table from a CSV File](https://help.
 
 <a name="loio9af04c990f294fd28c00f46763dd8b0d__section_jxb_ydh_snb"/>
 
-## Action in *View Persistency Monitor*
+## Action in *Views*
 
-From *View Persistency Monitor* tab, you perform the following actions on views:
+From *Views* tab, you perform the following actions on views:
 
 
 <table>
@@ -129,7 +129,7 @@ Add a new persisted view
 </td>
 <td valign="top">
 
-Click *Add View* and select the view you want to persist. It's then added to the *Persisted View* list. You can then either persist the view immediately, by selecting *View Persistency* \> *Load New Snapshot*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md)\).
+Click *Add View* and select the view you want to persist. It's then added to the *Views* list. You can then either persist the view immediately, by selecting *Data Persistence* \> *Start Data Persistence*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md)\).
 
 > ### Note:  
 > For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
@@ -147,7 +147,7 @@ Click *Add View* and select the view you want to persist. It's then added to the
 <tr>
 <td valign="top">
 
-*Delete persistency* 
+*Remove Persisted Data* 
 
 </td>
 <td valign="top">
@@ -159,12 +159,12 @@ The persisted data is deleted and the persisted view is deleted from the list of
 <tr>
 <td valign="top">
 
-Perform action on data by clicking *View Persistency* 
+Perform action on data by clicking *Data Persistence* 
 
 </td>
 <td valign="top">
 
-*Load New Snapshot* : Start a new data persistence to update or create the persisted view.
+*Start Data Persistence*: Start a new data persistence to update or create the persisted view.
 
 *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
@@ -190,7 +190,7 @@ Access the detailed logs to monitor what's happened with your persisted view.
 </td>
 <td valign="top">
 
-Select the relevant view and click: <span class="SAP-icons"></span> \(View Persistency Logs\).
+Select the relevant view and click: <span class="SAP-icons"></span> \(View Details\).
 
 </td>
 </tr>
@@ -201,7 +201,7 @@ Select the relevant view and click: <span class="SAP-icons"></span> \(View Pe
 > 
 > -   *Schedule*: You can delete, pause or resume schedules for several views that have schedules defined. You can also assign several schedules to your name and become the owner of the schedules.
 > -   *Remove Persisted Data*: You can select several views that have persisted data and remove the persisted data for all of them.
-> -   Many actions like *Load New Snapshot*, *Run*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
+> -   Many actions like *Start Data Persistence*, *Run*, *Create Schedule*, etc. cannot be grouped. In such cases, they are disabled.
 > 
 > After triggering a group of actions, the status of each action is displayed in the notification area. As these operations run in an asynchronous mode, the status will not be updated automatically, and you need to manually *Refresh* the page to get the updated status.
 
@@ -233,12 +233,12 @@ Information
 <tr>
 <td valign="top">
 
-*Name* *Technical Name \(or Business Name\)* 
+*Technical Name \(or Business Name\)* 
 
 </td>
 <td valign="top">
 
-Name of the persisted view.
+Name of the persisted view.Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
 
 </td>
 </tr>
@@ -355,7 +355,21 @@ Shows the status of the persisted view.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Schedule Owner* 
+
+</td>
+<td valign="top">
+
+Displays the name of the schedule owner.
+
+</td>
+</tr>
 </table>
+
+You can personalize the columns you want to display clicking on :gear:
 
 
 
@@ -365,7 +379,7 @@ Shows the status of the persisted view.
 
 When you deploy a persisted view, you need to consider the following cases:
 
--   If you update or redeploy a persisted view, you need the right permission level \(Data Integration - Update\). For more information, see [Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/862b88eed50244049d41361ba3290456.html#loio1c4bf1ee5cdf4333807b22568ce0d874). Note that after a redeployment, the data persistence might be deleted and the data access could be changed back to virtual for views with structural changes. This will happen as soon as the underlying database object is recreated as part of the deployment. This can be seen in the *Data Access* status in the *View Builder* or in the *Data Integration Monitor* \> *View Persistency Monitor*. The update of the data persistence has to be triggered again.
+-   If you update or redeploy a persisted view, you need the right permission level \(Data Integration - Update\). For more information, see [Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/862b88eed50244049d41361ba3290456.html#loio1c4bf1ee5cdf4333807b22568ce0d874). Note that after a redeployment, the data persistence might be deleted and the data access could be changed back to virtual for views with structural changes. This will happen as soon as the underlying database object is recreated as part of the deployment. This can be seen in the *Data Access* status in the *View Builder* or in the *Data Integration Monitor* \> *Views*. The update of the data persistence has to be triggered again.
 -   If the view uses other views that were changed but not yet deployed, they are deployed as well. If these views are persisted, the persistence is deleted as well.
 -   If the view uses other views that were not changed, these views are not touched by the deployment and therefore the persistence is still available
 -   If you update or redeploy a view while you are persisting data, the persistence will fail. In this case, try again to persist the view or wait until the next scheduled run.
@@ -379,11 +393,11 @@ When you deploy a persisted view, you need to consider the following cases:
 
 When your views are based on remote tables where data access is *Remote*, the data is read from a remote source system, and it can take times to persist the data.
 
-In the *View Persistency Monitor* - Details screen, when you run data persistence for such views, you can access statistics information in the execution logs: number of remote statements, volume of data fetched from the remote source system:
+In the *Data Integration Monitor* \> *Views* - Details screen, when you run data persistence for such views, you can access statistics information in the execution logs: number of remote statements, volume of data fetched from the remote source system:
 
 ![](images/Example_of_a_Log_with_Remote_Queries_Information_13d5f7a.png)
 
-When you click on *View Details* you get a direct link to the*Remote Query Monitor*, where you can further analyze what’s happened with the remote statements:
+When you click on *View Details* you get a direct link to the*Data Integration Monitor* \> *Remote Queries*, where you can further analyze what’s happened with the remote statements:
 
 ![](images/Remote_Queries_Logs_View_Details_f7e1cd0.png)
 

@@ -93,6 +93,7 @@
         -   [Receive Notifications About Data Provisioning Agent Status Changes](receive-notifications-about-data-provisioning-agent-status-changes-85790bb.md)
     -   [Pause Real-Time Replication for an Agent](pause-real-time-replication-for-an-agent-dac31a5.md)
     -   [Troubleshooting the Data Provisioning Agent \(SAP HANA Smart Data Integration\)](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md)
+    -   [Troubleshooting Cloud Connector Related Issues](troubleshooting-cloud-connector-related-issues-1d2c171.md)
     -   [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](troubleshooting-sap-hana-smart-data-access-via-cloud-connector-42f683e.md)
 -   [Creating a Database User Group](Creating-a-Database-User-Group/creating-a-database-user-group-1097a47.md)
     -   [Create Users, Schemas, and Roles in a Database User Group](Creating-a-Database-User-Group/create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md)
@@ -108,4 +109,5 @@
         -   [Stop a Running Statement](Monitoring-SAP-Datasphere/stop-a-running-statement-0cf11ed.md)
         -   [Delete a Database Analysis User](Monitoring-SAP-Datasphere/delete-a-database-analysis-user-b73e544.md)
     -   [Configure Notifications](Monitoring-SAP-Datasphere/configure-notifications-4388411.md)
+    -   [Check Consent Expirations](Monitoring-SAP-Datasphere/check-consent-expirations-58e4bb2.md)
 

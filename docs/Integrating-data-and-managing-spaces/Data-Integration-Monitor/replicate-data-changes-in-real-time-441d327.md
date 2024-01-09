@@ -67,13 +67,13 @@ Use real-time replication to copy the data changes from your source object in re
 
 1.  Go to *Data Integration Monitor* and select the space in which the relevant remote table resides.
 
-2.  Go to the *Remote Table Monitor*.
+2.  Go to the *Remote Tables*.
 
 3.  Select the remote table that you want to replicate data for.
 
-4.  When changing from scheduled data replication to real-time replication, you must select *Table Replication* \> *Remove Replicated Data* to delete the current replicated data from the replica table and delete the schedule.
+4.  When changing from scheduled data replication to real-time replication, you must select *Data Replication* \> *Remove Replicated Data* to delete the current replicated data from the replica table and delete the schedule.
 
-5.  Select *Table Replication* \> *Enable Real-Time Access*.
+5.  Select *Data Replication* \> *Enable Real-Time Data Replication*.
 
 
 

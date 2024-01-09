@@ -57,7 +57,7 @@ In this example, *Regional Sales* is a *Fact* with:
 7.  Complete or consult other sections as appropriate:
 
     -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\).
-    -   *Persistency* - Persist the view data to improve performance \(see [Persist View Data](../persist-view-data-9bd12cf.md)\).
+    -   *Data Persistence* - Persist the view data to improve performance \(see [Persist View Data](../persist-view-data-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
     -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.

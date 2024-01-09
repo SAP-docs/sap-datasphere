@@ -4,19 +4,19 @@
 
 # Monitoring Remote Queries
 
-In the *Remote Query Monitor*, you track the queries sent to your remote connected source systems for your space. You can monitor the communication between the federation layer of SAP HANA Cloud and the connected remote source systems, and analyze them.
+In the *Remote Queries* monitor, you track the queries sent to your remote connected source systems for your space. You can monitor the communication between the federation layer of SAP HANA Cloud and the connected remote source systems, and analyze them.
 
-SAP Datasphere is connected to remote systems via SAP HANA Cloud using data federation. SAP HANA Cloud already provides a corresponding monitoring view of actual SAP HANA runtime data, including statistics and status information related to the execution of Data Manipulation Language \(DML\) statements. The *Remote Query Monitor* retrieves this information, so that you can keep an eye on how the communication between SAP Datasphere and the connected remote source systems is running and better analyze possibilities for performance bottlenecks while running queries in SAP Datasphere.
+SAP Datasphere is connected to remote systems via SAP HANA Cloud using data federation. SAP HANA Cloud already provides a corresponding monitoring view of actual SAP HANA runtime data, including statistics and status information related to the execution of Data Manipulation Language \(DML\) statements. The *Remote Queries* monitor retrieves this information, so that you can keep an eye on how the communication between SAP Datasphere and the connected remote source systems is running and better analyze possibilities for performance bottlenecks while running queries in SAP Datasphere.
 
-The *Remote Query Monitor* allows you to monitor the queries sent to your remote connected source systems for your space. This information is helpful when analyzing executions of story \(or on views or previews\), since it provides details of single read requests, like runtimes or result set size.
+The *Remote Queries* monitor allows you to monitor the queries sent to your remote connected source systems for your space. This information is helpful when analyzing executions of story \(or on views or previews\), since it provides details of single read requests, like runtimes or result set size.
 
 > ### Note:  
 > *Data Flows* executions are not contained in this monitoring view as *Data Flows* don't use SAP HANA Federation.
 
 > ### Example:  
-> You build a story on top on a view. In this story, you create charts and set filters on those charts. Let’s say you remove one of those filters. A query is then triggered to the connected remote source system. A new entry appears in the *Remote Query Monitor* and you can see the last statement sent by the story.
+> You build a story on top on a view. In this story, you create charts and set filters on those charts. Let’s say you remove one of those filters. A query is then triggered to the connected remote source system. A new entry appears in the *Remote Queries* monitor and you can see the last statement sent by the story.
 
-The *Remote Query Monitor* only shows the last 100 statements. It provides you with the following information:
+The *Remote Queries* monitor only shows the last 100 statements. It provides you with the following information:
 
 
 <table>
@@ -35,7 +35,7 @@ Description
 <tr>
 <td valign="top">
 
-*Connection* 
+*Connection \(Business Name or Technical Name\)*
 
 </td>
 <td valign="top">
@@ -167,6 +167,8 @@ Displays the remote source transaction.
 </td>
 </tr>
 </table>
+
+You can personalize the columns you want to display clicking on :gear:
 
 > ### Note:  
 > You can personalize the columns you want to display and the display order of those columns clicking on :gear:.
