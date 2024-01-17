@@ -40,7 +40,7 @@ There are different types of measures to choose from:
 
 6.  For count distinct measures, select the dimensions for which this measure shall be applied.
 
-7.  For calculated measures, restricted measures, and fact source measures, you can define an exception aggregation.
+7.  For calculated measures, restricted measures, and fact source measures, you can define an exception aggregation. The exception aggregation determines how a measure is aggregated with regard to one or more dimensions. A dimension is needed for exception aggregation in order to define the granularity with which the aggregation rule is applied. For more information, see [Aggregation and Exception Aggregation](aggregation-and-exception-aggregation-88ca394.md).
 
 8.  Decide whether your measure should be an *Auxiliary Measure*. An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud.
 

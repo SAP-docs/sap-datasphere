@@ -21,7 +21,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 
 You can monitor out-of-memory errors and other information that are related to SAP HANA database SQL statements, depending on what you've specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*:
 
--   If *Enable Expensive Statement Tracing* is not selected, then in *System Monitor* \> *Dashboard*, you cannot see the widgets about out-of-memory errors and about other information related to statements. For example, you cannot see the widgets: *Out-of-Memory Errors*, *Top 5 Statements by Memory Consumption*.
+-   If *Enable Expensive Statement Tracing* is not selected, then in *System Monitor* \> *Dashboard*, you cannot see the widgets about out-of-memory errors and about other information related to statements. For example, you cannot see the widgets: *Out-of-Memory Errors*, *Top 5 Statements by Processing Memory Consumption*.
 
 -   If *Enable Expensive Statement Tracing* is not selected and none of the threshold options is selected, then in the tables of *System Monitor* \> *Logs*, you cannot see any information about out-of-memory errors and about other information related to statements. For example, no information is displayed in the columns *Peak Memory \(MiB\)* and *Peak CPU \(ms\)*.
 
@@ -51,11 +51,11 @@ The out-of-memory widgets and top-memory consumption widgets help you to identif
 
 The following information is available in the *Dashboard* tab:
 
--   *Disk Used by Spaces* - Shows the total amount of disk storage used in all spaces, out of the total amount of disk storage assigned to all spaces.
+-   *Disk Used by Spaces for Storage* - Shows the total amount of disk storage used in all spaces, out of the total amount of disk storage assigned to all spaces.
 
-    In *Storage Distribution*, you can see a breakdown between:
+    In *Disk Storage Used*, you can see a breakdown between:
 
-    -   *Space Data*: All data that is stored in spaces.
+    -   *Data in Spaces*: All data that is stored in spaces.
 
     -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who did what and when.") :arrow_upper_right:\).
 
@@ -67,9 +67,9 @@ The following information is available in the *Dashboard* tab:
     -   *Administrative Data*: Data used to administer the tenant and all spaces \(such as space quota, space version\). Includes all information stored in the central schemas \(DWC\_GLOBAL, DWC\_GLOBAL\_LOG, DWC\_TENANT\_OWNER\).
 
 
--   *Memory Used by Spaces* - Shows the total amount of memory storage used in all spaces, out of the total amount of memory storage assigned to all spaces.
--   *Disk Assigned to Spaces* - Shows the total amount of disk storage assigned to all spaces.
--   *Memory Assigned to Spaces* - Shows the total amount of memory storage assigned to all spaces.
+-   *Memory Used by Spaces for Storage* - Shows the total amount of memory storage used in all spaces, out of the total amount of memory storage assigned to all spaces.
+-   *Disk Assigned to Spaces for Storage* - Shows the total amount of disk storage assigned to all spaces.
+-   *Memory Assigned to Spaces for Storage* - Shows the total amount of memory storage assigned to all spaces.
 
 For each of the key indicator widgets listed below, you can see detailed information by clicking the link *View Logs*, which takes you to the *Logs* tab.
 
@@ -204,70 +204,70 @@ Shows the 5 tasks whose run duration time was the longest in the last 48 hours.
 <tr>
 <td valign="top">
 
-*Top 5 Tasks by Memory Consumption*
+*Top 5 Tasks by Processing Memory Consumption*
 
 *Last 24 Hours*
 
 </td>
 <td valign="top">
 
-Shows the 5 tasks whose memory consumption was the highest in the last 24 hours.
+Shows the 5 tasks whose processing memory consumption was the highest in the last 24 hours.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Top 5 Tasks by Memory Consumption*
+*Top 5 Tasks by Processing Memory Consumption*
 
 *Last 48 Hours*
 
 </td>
 <td valign="top">
 
-Shows the 5 tasks whose memory consumption was the highest in the last 48 hours.
+Shows the 5 tasks whose processing memory consumption was the highest in the last 48 hours.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Top 5 Statements by Memory Consumption*
+*Top 5 Statements by Processing Memory Consumption*
 
 *Last 24 Hours*
 
 </td>
 <td valign="top">
 
-Shows the 5 statements whose memory consumption was the highest in the last 24 hours.
+Shows the 5 statements whose processing memory consumption was the highest in the last 24 hours.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Top 5 Statements by Memory Consumption*
+*Top 5 Statements by Processing Memory Consumption*
 
 *Last 48 Hours*
 
 </td>
 <td valign="top">
 
-Shows the 5 statements whose memory consumption was the highest in the last 48 hours.
+Shows the 5 statements whose processing memory consumption was the highest in the last 48 hours.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Top 5 MDS Requests by Memory Consumption*
+*Top 5 MDS Requests by Processing Memory Consumption*
 
 *Last 24 Hours*
 
 </td>
 <td valign="top">
 
-Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for example in SAP Analytics Cloud consumption\), whose memory consumption is the highest.
+Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for example in SAP Analytics Cloud consumption\), whose processing memory consumption is the highest.
 
 </td>
 </tr>
@@ -493,7 +493,7 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 <tr>
 <td valign="top">
 
-*SAP HANA Peak CPU*
+*SAP HANA CPU Time*
 
 </td>
 <td valign="top">
@@ -801,7 +801,7 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 <tr>
 <td valign="top">
 
-*SAP HANA Peak CPU*
+*SAP HANA CPU Time*
 
 </td>
 <td valign="top">
@@ -937,7 +937,7 @@ You can control the tables in *Tasks* and *Statements* in the following ways:
         > -   You can enter filter or sort values in multiple columns.
 
         > ### Note:  
-        > If you filter on one of the following columns and you enter a number, use the “.” \(period\) character as the decimal separator, regardless of the decimal separator used in the number formatting that you’ve chosen in the general user settings \(*Settings* \> *Language & Region*\): *SAP HANA Peak Memory*, *SAP HANA Peak CPU*, *SAP HANA Used Memory* and *SAP HANA Used Disk*.
+        > If you filter on one of the following columns and you enter a number, use the “.” \(period\) character as the decimal separator, regardless of the decimal separator used in the number formatting that you’ve chosen in the general user settings \(*Settings* \> *Language & Region*\): *SAP HANA Peak Memory*, *SAP HANA CPU Time*, *SAP HANA Used Memory* and *SAP HANA Used Disk*.
 
     3.  Click *Clear Filter* in the filter strip or <span class="FPA-icons"></span> \(Remove Filter\)in the *Define Filter* dialog to remove the filter.
 

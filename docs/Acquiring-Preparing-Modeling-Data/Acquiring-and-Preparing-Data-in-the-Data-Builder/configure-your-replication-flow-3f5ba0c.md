@@ -1,16 +1,20 @@
 <!-- loio3f5ba0c5ae3944c1b7279bb989a2a5b5 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Configure Your Replication Flow
 
-Define general settings for your replication flow, such as the load type.
+Define settings and properties for your replication flow and individual replication objects.
 
 
 
 ## Procedure
 
-1.  Click *Settings*.
+1.  Go to the *Settings* tab of the canvas to review the general settings \(load type and truncate\) and change them as appropriate.
 
-2.  Select the relevant load type for your replication flow:
+    Alternatively, you can select the relevant replication object and review its settings and properties in the side panel.
+
+2.  Select the relevant load type:
 
     -   *Initial Only*: Load all selected data once.
 
@@ -33,5 +37,27 @@ Define general settings for your replication flow, such as the load type.
     -   For data store objects \(for example from the data lake component of SAP HANA Cloud\), *Truncate* must always be set. \(If you still try to run a replication flow for an existing target without the *Truncate* option, you get an error message.\) When you start the replication run, the system deletes the object completely \(data and structure\) and re-creates it based on the source data.
 
     If the target structure does not yet exist or is empty, you can ignore the *Truncate* setting.
+
+4.  Click <span class="FPA-icons"></span> \(Browse target settings\)to review the target settings **at replication flow level** and change them as appropriate.
+
+    -   Replication Thread Limit: You can change the default value as appropriate.
+
+    -   Overwrite Target Settings at Object Level: \[only relevant if the target is a cloud storage provider\] By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option.
+
+    -   Additional settings that are only relevant for a specific target type and can be made for the replication flow itself as well as for individual replication objects. For more information, see
+
+        -   [Using a Cloud Storage Provider As the Target](using-a-cloud-storage-provider-as-the-target-43d93a2.md)
+
+        -   [Using Google BigQuery As the Target](using-google-bigquery-as-the-target-56d4472.md)
+
+        -   [Using Apache Kafka As the Target](using-apache-kafka-as-the-target-6df55db.md).
+
+
+
+5.  Review the settings for each replication object and change or complete them as appropriate.
+
+    To do so, select the relevant repliation object. Its properties are then displayed in the side panel.
+
+    For a list of properties and further information, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md).
 
 

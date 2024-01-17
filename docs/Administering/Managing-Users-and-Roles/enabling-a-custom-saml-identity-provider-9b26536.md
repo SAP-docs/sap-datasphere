@@ -12,13 +12,11 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
 
 ## Prerequisites
 
+SAP Datasphere can be hosted on non-SAP data centers.
+
 -   You must have an IdP that supports SAML 2.0 protocol.
 -   You must be able to configure your IdP.
 -   You must be assigned to the *System Owner* role. For more information see [Transfer the System Owner Role](transfer-the-system-owner-role-b3d19a1.md).
--   SAP Datasphere can be hosted either on SAP data centers or on non-SAP data centers. Determine which environment SAP Datasphere is hosted in by inspecting your SAP Datasphere URL:
-    -   A single-digit number, for example us1 or jp1, indicates an SAP data center.
-    -   A two-digit number, for example eu10 or us30, indicates a non-SAP data center.
-
 -   If your users are connecting from Apple devices using the mobile app, the certificate used by your IdP must be compatible with Apple's App Transport Security \(ATS\) feature.
 
 > ### Note:  
@@ -33,7 +31,7 @@ By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Dat
 
 ## Procedure
 
-1.  From the side navigation, go to <span class="FPA-icons"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security* .
+1.  From the side navigation, go to <span class="FPA-icons"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*.
 
     If you've provisioned SAP Datasphere prior to version 2021.03 you'll see a different UI and need go to <span class="FPA-icons"></span> \(*Product Switch*\) → <span class="FPA-icons"></span> \(*Analytics*\) → <span class="FPA-icons"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) → *Security*.
 

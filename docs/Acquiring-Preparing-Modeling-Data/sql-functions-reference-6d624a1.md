@@ -267,7 +267,6 @@ SAP Datasphere supports the following window and window aggregation functions, w
 -   `LAG`
 -   `LAST_VALUE`
 -   `LEAD`
--   `LINEAR_APPROX`
 -   `MAX`
 -   `MEDIAN`
 -   `MIN`

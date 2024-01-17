@@ -2,7 +2,7 @@
 
 # Microsoft SQL Server Connections
 
-Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Server \(on-premise\).
+Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Server database \(on-premise\).
 
 
 
@@ -110,7 +110,7 @@ Enter the Microsoft SQL Server database name.
 </td>
 <td valign="top">
 
-Select the Microsoft SQL Server version.
+Select the Microsoft SQL Server version. Supported versions are Microsoft SQL Server 2012 to 2022 \(default is 2022\).
 
 </td>
 </tr>

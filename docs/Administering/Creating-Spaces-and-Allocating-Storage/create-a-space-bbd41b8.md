@@ -177,7 +177,7 @@ Create a space, allocate storage, and set the space priority and statement limit
     </tr>
     </table>
     
-4.  \[optional\] Use the *Storage Assignment* properties to allocate disk and in-memory storage to the space and to choose whether it will have access to the SAP HANA data lake.
+4.  \[optional\] Use the *Space Storage* properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.
 
     For more information, see [Allocate Storage to a Space](allocate-storage-to-a-space-f414c3d.md).
 

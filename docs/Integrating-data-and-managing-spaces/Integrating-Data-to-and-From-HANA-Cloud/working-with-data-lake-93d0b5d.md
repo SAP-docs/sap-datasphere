@@ -21,7 +21,7 @@ You can assign a space that connects to data lake. Tables in the data lake can t
 > ### Note:  
 > -   Currently, DDL statements in your data lake are not audited.
 > 
-> -   For data flows, UPSERT / APPEND operations via virtual tables are not supported.
+> -   For data flows, only APPEND \(UPSERT option not selected\) and TRUNCATE modes are supported. APPEND \(with UPSERT option selected\) and DELETE modes are not supported.
 
 
 

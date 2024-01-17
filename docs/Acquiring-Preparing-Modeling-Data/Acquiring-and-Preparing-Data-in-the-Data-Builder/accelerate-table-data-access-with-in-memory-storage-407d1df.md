@@ -31,7 +31,7 @@ By default, table data is stored on disk. You can improve performance by enablin
     <tr>
     <td valign="top">
     
-    In-Memory Storage
+    *Store Table Data in Memory*
     
     </td>
     <td valign="top">

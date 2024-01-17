@@ -96,7 +96,7 @@ Creating a transformation flow involves two important steps:
     <tr>
     <td valign="top">
     
-    Load Type
+    Load Type 
     
     </td>
     <td valign="top">
@@ -132,19 +132,5 @@ Creating a transformation flow involves two important steps:
 
     -   Transformation flows that have changes to deploy are redeployed.
 
-
-    > ### Note:  
-    > You will need to navigate to the *View Transform Editor* to check the validation messages for the transformation flow.
-
-7.  \[optional\] To create a schedule for the transformation flow, click <span class="FPA-icons"></span> \(Schedule\). For example, it may make sense to replicate delta changes to the target table at regular intervals. For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:
-
-8.  Click <span class="FPA-icons"></span> \(Run\) to start your transformation flow.
-
-    You can also start your transformation flows in the *Data Integration Monitor*.
-
-    > ### Note:  
-    > You can cancel a running transformation flow in the *Data Integration Monitor*. For more information, see [Cancel a Transformation Flow Run](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/ab885f05210f4a52aebe8306c8cad083.html "You want to cancel a transformation flow that is running.") :arrow_upper_right:.
-
-9.  To see more details about the run, open the *Flows* monitor by clicking <span class="FPA-icons"></span> \(Open in Data Integration Monitor\).
 
 

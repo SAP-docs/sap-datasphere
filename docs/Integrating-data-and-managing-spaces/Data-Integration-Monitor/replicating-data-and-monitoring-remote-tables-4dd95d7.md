@@ -310,7 +310,7 @@ Displays the next scheduled run \(if a schedule is set for the remote table\).
 <tr>
 <td valign="top">
 
-*Used In-Memory \(MiB\)* 
+*Memory Used for Storage \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -322,7 +322,7 @@ Displays the size occupied by the remote table data in memory.
 <tr>
 <td valign="top">
 
-*Used Disk \(MiB\)* 
+*Disk Used for Storage \(MiB\)* 
 
 </td>
 <td valign="top">

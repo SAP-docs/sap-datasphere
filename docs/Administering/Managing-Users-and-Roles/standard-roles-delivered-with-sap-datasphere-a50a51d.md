@@ -23,7 +23,7 @@ In the side navigation area, click <span class="FPA-icons"></span> \(*Securit
     -   **DW Administrator** - Can create users, roles and spaces and has other administration privileges across the SAP Datasphere tenant. Cannot access any of the apps \(such as the *Data Builder*\). 
 
 -   Roles providing privileges to work in SAP Datasphere spaces:
-    -   **DW Space Administrator** \(template\) - Can manage all aspects of the spaces users are assigned to \(except the *Storage Assignment* and *Workload Management* properties\) and can create data access controls.
+    -   **DW Space Administrator** \(template\) - Can manage all aspects of the spaces users are assigned to \(except the *Space Storage* and *Workload Management* properties\) and can create data access controls.
         -   *DW Scoped Space Administrator* - This predefined scoped role is based on the DW Space Administrator role and inherits its privileges and permissions.
 
             > ### Note:  

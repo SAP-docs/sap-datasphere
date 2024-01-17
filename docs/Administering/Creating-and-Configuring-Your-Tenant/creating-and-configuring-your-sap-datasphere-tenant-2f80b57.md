@@ -733,6 +733,48 @@ Supported
 <tr>
 <td valign="top">
 
+Europe \(Switzerland\)
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+13824 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 US West
 
 </td>

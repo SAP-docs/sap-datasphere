@@ -24,7 +24,7 @@ Import a `.csv` file to create a table and fill it with the data from the file.
 2.  Click *Select Source File*, navigate to, and select the CSV file you want to upload.
 
     > ### Note:  
-    > The file extension must be `*.csv`. The file size must not exceed 200 MB.
+    > The file must have the extension `*.csv` and contain Unicode text only. The file size must not exceed 25 MB.
 
 3.  Review the following options, and then click *Upload* to open your file in SAP Datasphere:
 

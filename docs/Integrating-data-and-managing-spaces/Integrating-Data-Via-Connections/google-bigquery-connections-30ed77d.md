@@ -126,7 +126,14 @@ Enter the ID of the Google Cloud project to which you want to connect. You can f
 </td>
 <td valign="top">
 
-\[optional\] Enter an additional location for browsing datasets. It can be a region or multi-region, for example `us-west1`, `asia-east1`, or `EU`. 
+\[optional\] Enter an additional location. By default, SAP Datasphere connects to BigQuery datasets only from Google's default location - `US`. Datasets from any other location will only be available in the*Data Builder* if you enter the additional location here. 
+
+A location can be a region, for example `us-west1`or `asia-east1`, or a multi-region, for example `EU`.
+
+> ### Note:  
+> If you provide an invalid location, the connection validation still passes, but failures will happen when you're using the connection in the *Data Builder*.
+
+
 
 </td>
 </tr>

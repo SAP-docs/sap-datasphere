@@ -244,7 +244,7 @@ To assign users to a scoped role, the users must be created beforehand.
     -   To individually select users and assign them to spaces, click <span class="FPA-icons"></span> \(Add User Assignment\), then *Select Users*. Select one or more users in the wizard *Assign Users* and click *Next Step*. By default, the added users are automatically assigned to all the spaces included in the scoped role. If you want to modify this, select the one or more spaces to which you want to assign the users. Click *Next Step* and *Save*.
 
         > ### Note:  
-        > You can also add a user to a scoped role from the In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Users*\). The user is automatically assigned to all the spaces included in the scoped role.
+        > You can also add a user to a scoped role from the <span class="FPA-icons"></span> \(*Users*\) area. In such a case, the user is automatically assigned to all the spaces included in the scoped role. See [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
 
     -   To assign all users included in the scoped role to one or more spaces. To do so, click <span class="FPA-icons"></span> \(Add User Assignment\), then *All Users of Current Role*. Select one or more spaces in the wizard *Assign Users* and click *Next Step* and *Save*.
 

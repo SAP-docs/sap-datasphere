@@ -170,7 +170,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
 
     -   *Associations* - Create associations to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-    -   *Table Services* - Enable the *In-Memory Storage* option to store the table data directly in memory \(see [Accelerate Table Data Access with In-Memory Storage](accelerate-table-data-access-with-in-memory-storage-407d1df.md)\).
+    -   *Table Services* - Enable the *Memory Storage* option to store the table data directly in memory \(see [Accelerate Table Data Access with In-Memory Storage](accelerate-table-data-access-with-in-memory-storage-407d1df.md)\).
 
         > ### Note:  
         > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics* monitor.

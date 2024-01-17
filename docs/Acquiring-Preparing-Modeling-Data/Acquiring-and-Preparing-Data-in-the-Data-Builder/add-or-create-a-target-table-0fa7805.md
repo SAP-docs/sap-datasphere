@@ -51,7 +51,7 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Label
+    *Label* 
     
     </td>
     <td valign="top">
@@ -63,7 +63,7 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Business Name / Technical Name / Type / Connection
+    *Business Name / Technical Name / Type / Connection*
     
     </td>
     <td valign="top">
@@ -75,12 +75,43 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Mode
+    Package
     
     </td>
     <td valign="top">
     
-    Specifies the mode with which to write to the target table or modify the data in the target table.
+    Select the package to which the object belongs. 
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Type* 
+    
+    </td>
+    <td valign="top">
+    
+    Type of object. For example: a local table. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Mode* 
+    
+    </td>
+    <td valign="top">
+    
+    Specifies the mode with which to write to the target table or modify the data in the target table..
 
     You can choose between:
 
@@ -88,8 +119,8 @@ Add a target table to write data to. You can only have one target table in a dat
     -   *Truncate*: Erase the existing data in the target table and replace it with the data obtained from the data flow.
     -   *Delete*: Delete records in the target table based on the columns mapped in the target. All the column mappings are considered for the match condition and if the value of these columns match the record in the target table, the record will be deleted.
 
-        > ### Restriction:  
-        > The *Delete* mode fails for a target table when a mapped column contains NULL values.
+        > ### Note:  
+        > The Delete mode fails for a target table when a mapped column contains NULL values.
 
 
 
@@ -99,27 +130,25 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Update Records By Primary Key \(UPSERT\)
+    *Update Records By Primary Key \(UPSERT\)*
     
     </td>
     <td valign="top">
     
-    \[*Append* mode\] Instructs the flow to update, where appropriate, existing target table records that can be identified by their primary keys.
-
-    If this option is not selected then all source records \(including those that are already present in the target table\) are appended, which may cause duplicate key errors.
+    \[Append mode\] Instructs the flow to update, where appropriate, existing target table records that can be identified by their primary keys. If this option is not selected then all source records \(including those that are already present in the target table\) are appended, which may cause duplicate key errors. 
 
     > ### Note:  
-    > -   For working with data lake, UPSERT / APPEND operations via virtual tables are not supported \(see [Working with Data Lake](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/93d0b5d4faa24777a4b78513f7ed6172.html "Assign a SAP Datasphere space to access and work with SAP HANA Cloud, data lake.") :arrow_upper_right:\).
+    > -   When working with data lake, only APPEND \(UPSERT option not selected\) and TRUNCATE modes are supported. APPEND \(with UPSERT option selected\) and DELETE modes are not supported.
     > -   If no primary key is defined in the target table, then all records will be appended.
 
-    This feature is based on the UPSERT statement \(see [Upsert](https://help.sap.com/viewer/a4ae14a90e33416a90edc658d94a5c06/Cloud/en-US/972f970f9c0942d89c528f8ecc5a4977.html) in the *SQL Reference for SAP Vora in SAP Data Intelligence* guide\).
+    This feature is based on the UPSERT statement \(see Upsert in the SQL Reference for SAP Vora in SAP Data Intelligence guide\). 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Status
+    *Status*
     
     </td>
     <td valign="top">
@@ -133,12 +162,12 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Use As
+    *Use As*
     
     </td>
     <td valign="top">
     
-    Specifies whether the table is used as a *Source* or *Target* in the data flow.
+    \[read-only\] Specifies whether the table is used as a Source or Target in the data flow.
 
     > ### Note:  
     > Changing the use of a table will reset all its properties.
@@ -181,7 +210,7 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Control Batch Size
+    *Control Batch Size*
     
     </td>
     <td valign="top">
@@ -193,12 +222,29 @@ Add a target table to write data to. You can only have one target table in a dat
     <tr>
     <td valign="top">
     
-    Batch Size \(Number of Rows\)
+    *Batch Size \(Number of Rows\)*
     
     </td>
     <td valign="top">
     
     Specifies the amount of data being read. That is, it indicates the number of rows that will be fetched from the source in each request.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Enable ODBC Tracing*
+    
+    </td>
+    <td valign="top">
+    
+    : \[SAP HANA connection only\] Enable this option to create a new log file in the vflow graph pod with HANA ODBC debug logs.
+
+    > ### Caution:  
+    > Enabling this option must be used for troubleshooting purposes only, as it uses a lot of system resources.
+
+
     
     </td>
     </tr>

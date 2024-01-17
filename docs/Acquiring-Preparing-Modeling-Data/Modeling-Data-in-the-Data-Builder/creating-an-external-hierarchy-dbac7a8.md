@@ -79,18 +79,6 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    Expose for Consumption
-    
-    </td>
-    <td valign="top">
-    
-    In order to consume your hierarchy in SAP Analytics Cloud, you must enable the *Expose for Consumption* switch.
-    
-    </td>
-    </tr>
     </table>
     
 2.  Set attributes as keys to indicate that the data they contain can uniquely identify records.

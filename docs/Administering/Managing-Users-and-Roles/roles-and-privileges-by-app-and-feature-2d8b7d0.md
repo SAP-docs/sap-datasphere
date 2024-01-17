@@ -978,7 +978,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, and key performance indicators (KPIs).") :arrow_upper_right:
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, listed data products, terms, and key performance indicators (KPIs).") :arrow_upper_right:
 
 </td>
 <td valign="top">

@@ -4,7 +4,7 @@
 
 All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
 
-An administrator must create one or more spaces. They allocate disk and in-memory storage to the space, set its priority, and can limit how much memory and how many threads its statements can consume. See [Creating Spaces and Allocating Storage](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2ace657356d54199b0b87d2327b1a70b.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:.
+An administrator must create one or more spaces. They allocate disk and memory storage to the space, set its priority, and can limit how much memory and how many threads its statements can consume. See [Creating Spaces and Allocating Storage](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2ace657356d54199b0b87d2327b1a70b.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:.
 
 If an administrator has assigned you the role of space administrator for a certain space via a scoped role, you can assign other users, create connections to source systems, secure data with data access controls, and manage other aspects of the space.
 

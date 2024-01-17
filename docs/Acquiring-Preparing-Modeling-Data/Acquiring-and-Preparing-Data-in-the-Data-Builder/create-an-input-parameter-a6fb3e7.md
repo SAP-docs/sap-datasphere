@@ -4,7 +4,7 @@
 
 # Create an Input Parameter
 
-Create input parameters in your data flows for use in projection operator filter conditions or calculated columns. When you want to staring a data flow run, you are prompted to enter a value and this value is used to filter the data to be loaded.
+Create input parameters in your data flows for use in projection operator filter conditions or calculated columns. When you want to staring a data flow run, you are prompted to enter a value and this value is used to filter the data to be loaded
 
 
 
@@ -33,40 +33,36 @@ Create input parameters in your data flows for use in projection operator filter
     <tr>
     <td valign="top">
     
-    Name
+    Name 
     
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Data Type
-    
-    </td>
-    <td valign="top">
-    
-    Displays *string* as the currently available type.
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Default Value
+    Data Type 
     
     </td>
     <td valign="top">
     
-    \[optional\] Enter a default value for the input parameter. Each time the user is required to enter a value for the parameter, they can accept the default value or override it. The values must be entered inside of single quotes, for example, 'Germany'.
-
-    The default value is used whenever the data flow is run as part of a schedule or task chain.
-
-    You can enter `CURRENT_DATE()` or `CURRENT_TIME()` to obtain the current UTC date or timestamp at runtime.
+    Displays *string* as the currently available type. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Default Value 
+    
+    </td>
+    <td valign="top">
+    
+    \[optional\] Enter a default value for the input parameter. Each time the user is required to enter a value for the parameter, they can accept the default value or override it. The values must be entered inside of single quotes, for example, 'Germany'. The default value is used whenever the data flow is run as part of a schedule or task chain. You can enter `CURRENT_DATE()` or `CURRENT_TIME()` to obtain the current UTC date or timestamp at runtime. 
     
     </td>
     </tr>

@@ -23,7 +23,7 @@ Example
 <tr>
 <td valign="top">
 
-See the amount of disk storage and in-memory storage used in your space.
+See the amount of disk storage and memory storage used in your space.
 
 For more information about storage capacity, see [Allocate Storage to a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f414c3d62bfe49b38e2cfdd7b4e7d786.html "Use the Storage Assignment properties to allocate disk and in-memory storage to the space and to choose whether it will have access to the SAP HANA data lake.") :arrow_upper_right:.
 

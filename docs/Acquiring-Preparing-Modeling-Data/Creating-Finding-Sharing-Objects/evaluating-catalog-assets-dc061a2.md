@@ -21,7 +21,7 @@ You must be assigned one of the following:
 
 
     > ### Note:  
-    > To see the details of any terms, tags, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
+    > To see the details of any terms, tags, data products, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
 
 
 > ### Tip:  
@@ -566,4 +566,9 @@ The catalog automatically detects the change in real time:
 
 -   If you edited an existing file, the metadata for the asset is automatically updated.
 
+
+**Related Information**  
+
+
+[Evaluating your Data Product](../evaluating-your-data-product-335f49b.md "Each data product has a dedicated page that describes the data product in detail to allow a transparent elaboration.")
 

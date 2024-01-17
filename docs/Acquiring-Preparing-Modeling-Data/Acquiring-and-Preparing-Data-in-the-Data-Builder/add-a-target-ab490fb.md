@@ -31,70 +31,8 @@ Select a target \(connection and container\) to define the target environment fo
 
     To narrow down the selection, start typing a part of the container name in the *Search* field.
 
-4.  If you select a cloud storage provider as the target, a list of additional options is displayed. Choose the relevant ones for your use case.
+4.  Review the target settings and properties and change or complete them as appropriate.
 
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Option
-    
-    </th>
-    <th valign="top">
-
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Group Delta By**
-    
-    </td>
-    <td valign="top">
-    
-    For *Load Type* of *Initial and Delta*: Choose *None*, *Date*, or *Hour*.
-
-    Specifies whether to create additional folders for sorting updates based on the date or hour.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **File Type**
-    
-    </td>
-    <td valign="top">
-    
-    *csv*:
-
-    -   *File Delimiter*: Specifies the character to use as a delimiter for columns in CSV files.
-    -   *File Header*: Specifies whether CSV files include a header row with the column names.
-
-    *parquet*:
-
-    -   *File Compression*: Specifies the compression algorithm to use for parquet files \(*None*, *GZIP*, *Snappy*\).
-
-    *json*:
-
-    -   *Encoding*: Generated JSON files are encoded in UTF-8 format.
-
-    -   *Orient*: Specifies the internal structure of the produced JSON files:*"records"*: \[\{column -\> value\}, ... ,\{column -\> value\}\]
-
-    *jsonlines*:
-
-    -   *Encoding*: Generated JSON Lines files are encoded in UTF-8 format.
-
-
-
-    
-    </td>
-    </tr>
-    </table>
-    
-5.  \(Optional\) To modify the throughput, you can change the number of replication threads. To do so, choose <span class="FPA-icons"></span> \(Browse source settings\), replace the default value of 10 with the value you want to use, and save your change.
+    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
 
 

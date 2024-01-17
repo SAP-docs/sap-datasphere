@@ -59,7 +59,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
     -   **DW Administrator** - Can create users, roles and spaces and has other administration privileges across the SAP Datasphere tenant. Cannot access any of the apps \(such as the *Data Builder*\). 
 
 -   Roles providing privileges to work in SAP Datasphere spaces:
-    -   **DW Space Administrator** \(template\) - Can manage all aspects of the spaces users are assigned to \(except the *Storage Assignment* and *Workload Management* properties\) and can create data access controls.
+    -   **DW Space Administrator** \(template\) - Can manage all aspects of the spaces users are assigned to \(except the *Space Storage* and *Workload Management* properties\) and can create data access controls.
         -   *DW Scoped Space Administrator* - This predefined scoped role is based on the DW Space Administrator role and inherits its privileges and permissions.
 
             > ### Note:  
@@ -98,7 +98,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
 
 All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
 
-An administrator must create one or more spaces. They allocate disk and in-memory storage to the space, set its priority, and can limit how much memory and how many threads its statements can consume. See [Creating Spaces and Allocating Storage](Creating-Spaces-and-Allocating-Storage/creating-spaces-and-allocating-storage-2ace657.md).
+An administrator must create one or more spaces. They allocate disk and memory storage to the space, set its priority, and can limit how much memory and how many threads its statements can consume. See [Creating Spaces and Allocating Storage](Creating-Spaces-and-Allocating-Storage/creating-spaces-and-allocating-storage-2ace657.md).
 
 
 

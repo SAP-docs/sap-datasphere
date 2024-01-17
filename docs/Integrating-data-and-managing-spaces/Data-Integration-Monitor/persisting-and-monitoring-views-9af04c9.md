@@ -316,7 +316,7 @@ Shows the records of the persisted views.
 <tr>
 <td valign="top">
 
-*Used In-Memory \(MiB\)* 
+*Memory Used for Storage \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -328,7 +328,7 @@ Tracks how much size the view is using in your memory.
 <tr>
 <td valign="top">
 
-*Used Disk \(MiB\)* 
+*Disk Used for Storage \(MiB\)* 
 
 </td>
 <td valign="top">

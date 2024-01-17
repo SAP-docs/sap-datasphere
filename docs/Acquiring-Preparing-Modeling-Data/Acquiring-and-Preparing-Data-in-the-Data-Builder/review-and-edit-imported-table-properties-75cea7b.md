@@ -4,7 +4,7 @@
 
 # Review and Edit Imported Table Properties
 
-Provide business-friendly names for your table and its columns, identify its semantic usage, enable replication and in-memory storage, and set other properties.
+Provide business-friendly names for your table and its columns, identify its semantic usage, enable replication and memory storage, and set other properties.
 
 
 

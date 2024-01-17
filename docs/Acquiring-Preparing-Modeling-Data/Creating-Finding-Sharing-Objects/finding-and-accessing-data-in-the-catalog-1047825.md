@@ -4,7 +4,7 @@
 
 # Finding and Accessing Data in the Catalog
 
-Discover data by searching and filtering results. Mark your favorite assets, terms, and key performance indicators \(KPIs\).
+Discover data by searching and filtering results. Mark your favorite assets, listed data products, terms, and key performance indicators \(KPIs\).
 
 The catalog provides an effective data governance strategy by bringing together an organized inventory of business metadata and data assets to enable business and technical users to unlock the full potential of their enterprise data. The catalog is a central place to discover, classify, understand, and prepare all the data in your enterprise.
 
@@ -24,7 +24,7 @@ You can search for assets by clicking <span class="SAP-icons"></span>\(*Catal
 
 ## Search by Entering a String
 
-You can find objects globally by using the search bar and entering all or part of the characters in a term, asset, or KPI. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+You can find objects globally by using the search bar and entering all or part of the characters in a term, asset, listed data product, or KPI. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
 As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
@@ -65,6 +65,18 @@ Assets
 <td valign="top">
 
 Shows only assets. An asset is any data or analytic object made available in the catalog. Assets are the objects that you provide governance around and publish to the catalog for users to discover, evaluate, and ultimately open and start using for their work.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Products
+
+</td>
+<td valign="top">
+
+Shows only listed data products. Data products must be listed in Data Marketplace before they appear in the catalog. A data product is either free or purchased data from a third-party provider that you can use in this product.
 
 </td>
 </tr>

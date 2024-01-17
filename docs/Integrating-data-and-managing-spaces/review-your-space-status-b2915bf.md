@@ -82,7 +82,7 @@ If your space exceeds it's storage quota, it might change to a locked state.
 
 A space is locked:
 
--   if the space exceeds its allocations of in-memory or disk storage,
+-   if the space exceeds its allocations of memory or disk storage,
 -   if the audit logs consume too much disk storage,
 -   if a space administrator has manually locked the space.
 

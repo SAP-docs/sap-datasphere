@@ -1,10 +1,10 @@
 <!-- loiod04f5dd6bbda44448407d54d2a7979be -->
 
-# Data Persistence and Job Execution Settings
+# Data Persistence and Processing Mode
 
-From the *Views*  Details screen, you can change the settings of the job execution.
+From the *Views* Details screen, you can change the settings of the processing mode.
 
-While persisting a view, an SQL procedure is called in SAP HANA. The SQL procedure can be executed synchronously or asynchronously. In the settings tab of the *Views*  - Details screen, you can change the settings to optimize the job execution to persist a view following your needs:
+While persisting a view, an SQL procedure is called in SAP HANA. The SQL procedure can be executed synchronously or asynchronously. In the settings tab of the *Views* - Details screen, you can change the settings to optimize the processing mode while persistîng a view following your needs:
 
 -   Default \(asynchronous, may change in future\)
 

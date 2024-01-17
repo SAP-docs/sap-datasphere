@@ -14,7 +14,7 @@ You can use replication flows to copy data from the following source objects:
 
 -   CDS views \(in ABAP-based SAP systems\) that are enabled for extraction
 
--   Tables that have a unique key \(primary key\)
+-   Tables that have a primary key
 
 -   Objects from ODP providers, such as extractors or SAP BW artifacts
 
@@ -37,22 +37,207 @@ For more information about available connection types, sources, and targets, see
 
 2.  Select a source connection and a source container, then add source objects \(see [Add a Source](add-a-source-7496380.md)\).
 
-    The *Details* side panel shows the properties of your replication flow. If you select an object in the canvas, the side panel changes to show the properties of the selected object.
+    The side panel shows the properties of your replication flow. Complete the missing information as appropriate:
 
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Business Name
+    
+    </td>
+    <td valign="top">
+    
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Technical Name
+    
+    </td>
+    <td valign="top">
+    
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Package
+    
+    </td>
+    <td valign="top">
+    
+    Select the package to which the object belongs. 
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Status
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the deployment and error status of the object. 
+
+    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delta Load Interval
+    
+    </td>
+    <td valign="top">
+    
+    \[only relevant for load type `Initial and Delta`\] Define the time interval for replicating changes from the source to the target. 
+
+    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Run Status
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`.
+
+    For more detailed information, go to the flow monitor.
+    
+    </td>
+    </tr>
+    </table>
+    
 3.  Select a target connection and target container \(see [Add a Target](add-a-target-ab490fb.md)\).
 
-4.  Review the default settings for *Load Type* and *Truncate* and change them if necessary \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
+4.  Click <span class="FPA-icons"></span> \(Target Settings\)to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
 
-5.  Define filters and mapping as required for your use case:
-
-    -   Define filters to delimit the scope of your replication flow \(see [Define Filters](define-filters-5a6ef36.md)\).
-
-    -   Define mappings to specify where you want the data from the source to go in the target \(see [Define Mapping](define-mapping-2c7948f.md)\).
+5.  Select a replication object in the canvas to review its properties in the side panel and change or complete them as appropriate:
 
 
-6.  Click <span class="FPA-icons"></span> \(Save\). A dialog box appears. Enter a business name and a technical name for your replication flow.
+    <table>
+    <tr>
+    <th valign="top">
 
-    When you enter a business name, the system automatically suggests a corresponding technical name, but you can change the technical name if required. Both names must be unique within the space you work in.
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Projections
+    
+    </td>
+    <td valign="top">
+    
+    Add a projection to define a filter or mappings.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delta Capture
+    
+    </td>
+    <td valign="top">
+    
+    \[only relevant for local tables\] Keep track of changes in your data source.
+
+    For more information, see[Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Load Type
+    
+    </td>
+    <td valign="top">
+    
+    Specify how you want to load the data \(initial only or initial and delta\).
+
+    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Truncate
+    
+    </td>
+    <td valign="top">
+    
+    Decide whether you want to delete any existing content in the target.
+
+    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Columns
+    
+    </td>
+    <td valign="top">
+    
+    Lists the target column names. A key symbol next to a column name indicates that this column is a key column.
+    
+    </td>
+    </tr>
+    </table>
+    
+    > ### Note:  
+    > Some further properties are only relevant for specific types of targets. You can find a list of these properties in the detailed information for the respective targets:
+    > 
+    > -   [Using a Cloud Storage Provider As the Target](using-a-cloud-storage-provider-as-the-target-43d93a2.md)
+    > 
+    > -   [Using Google BigQuery As the Target](using-google-bigquery-as-the-target-56d4472.md)
+    > 
+    > -   [Using Apache Kafka As the Target](using-apache-kafka-as-the-target-6df55db.md).
+
+6.  Click <span class="FPA-icons"></span> \(Save\).
 
 7.  Click <span class="SAP-icons"></span> \(Deploy\) to make your replication flow ready to run.
 

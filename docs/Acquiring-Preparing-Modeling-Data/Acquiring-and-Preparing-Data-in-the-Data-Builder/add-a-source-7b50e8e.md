@@ -28,8 +28,11 @@ Add a source to read data from. You can add multiple sources and combine them to
 
     > ### Note:  
     > -   You cannot use views with input parameters as sources in a data flow.
-    > -   When browsing a remote file storage such as Amazon Simple Storage Service, Google Cloud Storage, or Microsoft Azure Blob Storage, you can only select files of type JSON/JSONL, CSV, XLS/XLSX, ORC, or PARQUET.
-    > -   Local tables with delta capture can be added as source tables. However only the active records will be used. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+    > -   When browsing a remote file storage such as Amazon Simple Storage Service, Google Cloud Storage, or Microsoft Azure Blob Storage, you can only select files of type JSON/JSONL, CSV, XLS/XLSX, ORC, or PARQUET. Note that each cloud provider has its own naming convention for defining bucket and object names. These conventions should be followed accordingly to avoid any source-related issue. Even though Flowagent-based operators accept most special characters, we recommend that only alphanumeric characters are used \(no multibyte characters\). This will avoid any undesired issue because all sources work well with such characters. Furthermore, some special characters such as ", +, and , are not allowed by our Flowagent File Producer operator and should not be used.
+    > -   Local tables with delta capture can be added as source tables. However, only the active records will be used. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+
+    > ### Restriction:  
+    > If you add an excel file, you must ensure that the file size does not exceed 50 MB.
 
 4.  Click the source node to display its properties in the side panel, and complete the properties in the *General* section:
 
@@ -50,7 +53,7 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Label
+    *Label* 
     
     </td>
     <td valign="top">
@@ -62,19 +65,50 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Business Name / Technical Name / Type / Connection
+    *Business Name / Technical Name / Type / Connection*
     
     </td>
     <td valign="top">
     
-    \[read-only\] Provide information to identify the source.
+    \[read-only\] Provide information to identify the source table.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Status
+    Package
+    
+    </td>
+    <td valign="top">
+    
+    Select the package to which the object belongs. 
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Type*
+    
+    </td>
+    <td valign="top">
+    
+    Type of object. For example: a local table.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Status*
     
     </td>
     <td valign="top">
@@ -88,12 +122,12 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Use As
+    *Use As*
     
     </td>
     <td valign="top">
     
-    \[local tables\] Specifies whether the table is used as a *Source* or *Target* in the data flow.
+    \[read-only\] Specifies whether the table is used as a Source or Target in the data flow.
 
     > ### Note:  
     > Changing the use of a table will reset all its properties.
@@ -188,7 +222,7 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Control Fetch Size
+    *Control Fetch Size*
     
     </td>
     <td valign="top">
@@ -200,7 +234,7 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Fetch Size \(Number of Rows\)
+    *Fetch Size \(Number of Rows\)*
     
     </td>
     <td valign="top">
@@ -212,7 +246,7 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Batch Query
+    *Batch Query*
     
     </td>
     <td valign="top">
@@ -224,12 +258,29 @@ Add a source to read data from. You can add multiple sources and combine them to
     <tr>
     <td valign="top">
     
-    Fail Run on String Truncation
+    *Fail Run on String Truncation*
     
     </td>
     <td valign="top">
     
     Fails the data flow run if string truncation is detected while fetching the source columns. This property is available only for CSV, JSON, and Excel files.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Enable ODBC Tracing*
+    
+    </td>
+    <td valign="top">
+    
+    : \[SAP HANA connection only\] Enable this option to create a new log file in the vflow graph pod with HANA ODBC debug logs.
+
+    > ### Caution:  
+    > Enabling this option must be used for troubleshooting purposes only, as it uses a lot of system resources.
+
+
     
     </td>
     </tr>

@@ -23,7 +23,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 1.  In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor.
 
-2.  Add one or more objects from the *Source Browser* panel on the left of the screen as sources \(see [Add a Source](add-a-source-7b50e8e.md)\).
+2.  Drag one or more source objects from the *Source Browser* and drop it into the diagram \(see [Add a Source](add-a-source-7b50e8e.md)\).
 
     > ### Restriction:  
     > -   Data flows support loading data exclusively to local tables in the SAP Datasphere repository.
@@ -89,6 +89,44 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     <tr>
     <td valign="top">
     
+    <span class="FPA-icons"></span> \(Add Table\)
+    
+    </td>
+    <td valign="top">
+    
+    Create a new target table.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
+
+    \(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md).\)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons"></span> \(Open in New Tab\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the selected entity in its own editor in a new tab.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     <span class="FPA-icons"></span> \(Remove\)
     
     </td>
@@ -108,65 +146,128 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     > ### Tip:  
     > In the toolbar, you can use <span class="SAP-icons"></span> \(Auto Layout\) and :desktop_computer: to organize the objects in your canvas.
 
-5.  Add or create a target table that the data flow will write its data to \(see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md)\).
+5.  Add or create a target table that the data flow will write its data to.
 
-6.  Click <span class="FPA-icons"></span> \(Save\) to save the data flow:
+    > ### Note:  
+    > You can only have one target table in a data flow.
+
+    For more information, see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md).
+
+6.  Click on the canva and review your data flow properties in the right panel:
+
+    -   Under *General*:
+
+
+        <table>
+        <tr>
+        <th valign="top">
+
+        Property
+        
+        </th>
+        <th valign="top">
+
+        Description
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Business Name
+        
+        </td>
+        <td valign="top">
+        
+        Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Technical Name
+        
+        </td>
+        <td valign="top">
+        
+        Displays the name used in scripts and code, synchronized by default with the *Business Name*.
+
+        To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
+
+        > ### Note:  
+        > Once the object is saved, the technical name can no longer be modified.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Package
+        
+        </td>
+        <td valign="top">
+        
+        Select the package to which the object belongs. 
+
+        Packages are used to group related objects in order to facilitate their transport between tenants.
+
+        > ### Note:  
+        > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+        For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Status
+        
+        </td>
+        <td valign="top">
+        
+        \[read-only\] Displays the deployment and error status of the object. 
+
+        For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+        
+        </td>
+        </tr>
+        </table>
+        
+    -   Under Run Status:
+
+        Displays the status of the flow run:
+
+        -   *Running*: The flow is currently running.
+        -   *Completed*: The flow is completed successfully.
+        -   *Failed*: Something goes wrong during the flow run and it could not be completed. Go to the details screen of your flow run and check the logs to identify to issue.
+
+    -   Under Input Parameters:Create a new input parameter or modify an existing one. For more information, see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)
+    -   Under Advanced Properties
+        -   *Dynamic Memory Allocation*: You can allocate memory usage manually. Set the *Expected Data Volume* to *Small*, *Medium*, or *Large*.
+
+            > ### Note:  
+            > -   Dynamic memory allocation should be done only if your data flow run is facing out-of-memory failures.
+            > -   If multiple data flows are scheduled with *Expected Data Volume* as large, it doesn't alter/increase the actual memory needed for the data flow. However, the execution engine will allocate enough memory to handle such large volume of data and only after successful memory allocation, the data flow run is started.
+            > 
+            >     Execution engine allocates memory based on the data volume configured and the complexity of the operations performed in the data flow.
+
+        -   *Automatic restart on run failure*: Set this option to restart the data flow automatically if there are any failures or system upgrades, for example.
+
+
+7.  Click <span class="FPA-icons"></span> \(Save\) to save your data flow:
 
     -   *Save* to save the data flow.
     -   *Save As* to create a local a copy of the data flow. The data flow must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
 
-7.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy the data flow:
+8.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy the data flow:
 
     -   Newly created data flows are deployed for the first time.
     -   Data flows that have changes to deploy are redeployed.
 
     With deployment, you will be able to save draft version of your data flow without affecting the execution.
-
-    > ### Note:  
-    > In very rare situations, an error may occur the first time that a scheduled data flow is run in a space. In this case, you should run the data flow manually once. Subsequent scheduled runs will not require further intervention.
-
-8.  To create schedule for the data flow, click <span class="FPA-icons"></span> \(Schedule\):
-
-    -   *Create Schedule*: Create a schedule to run the data flow asynchronously and recurrently in the background according to the settings defined in the schedule.
-
-        For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
-
-    -   *Edit Schedule*: Change how the schedule is specified, or change the owner of the schedule.
-
-        For more information, see [Take Over the Ownership of a Schedule](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.") :arrow_upper_right:.
-
-    -   *Delete Schedule*: Delete the schedule if necessary .
-
-    > ### Note:  
-    > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
-
-9.  To run the data flow, click *Run*.
-
-    If the data flow contains input parameters, a dialog box appears prompting the user to enter a value for each input parameter. You can either keep the default value or override it \(see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)\).
-
-10. To view the *Run Status* section in the data flow properties panel, click the diagram background.
-
-11. To see more details about the run, open the *Data Flow Monitor* by clicking <span class="FPA-icons"></span> \(Open in Data Integration Monitor\).
-
-    > ### Note:  
-    > -   The initialization time for executing a data flow takes an average of 20 seconds even with smaller data loads causing longer runtime for the data flow.
-    > -   Metrics are displayed only for source and target tables and can be used for further analysis.
-    > -   In your data flow, if a source view or an underlying view of the source view has data access controls applied to it, then no data is read from the view during the execution of the data flow. This results in incorrect data or no data in the output.
-    > 
-    >     For more information, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:.
-
-12. You can configure more properties for a data flow, in the *Advanced Properties* section of the *Properties* panel.
-
-    -   To allocate memory usage for your data flow manually, enable the *Dynamic Memory Allocation* option.
-
-        -   Set the *Expected Data Volume* to *Small*, *Medium*, or *Large*.
-
-        > ### Note:  
-        > -   Dynamic memory allocation should be done only if your data flow run is facing out-of-memory failures.
-        > -   If multiple data flows are scheduled with *Expected Data Volume* as large, it doesn't alter/increase the actual memory needed for the data flow. However, the execution engine will allocate enough memory to handle such large volume of data and only after successful memory allocation, the data flow run is started.
-        > 
-        >     Execution engine allocates memory based on the data volume configured and the complexity of the operations performed in the data flow.
-
-    -   To restart the data flow automatically if there are any failures or system upgrades, enable the *Automatic restart on run failure* checkbox.
 
 

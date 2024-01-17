@@ -22,7 +22,7 @@ Identify available table structure updates in your data sources and resolve conf
 > ### Restriction:  
 > In case you remove columns from the remote table definition compared to the source object \(remote table having less columns than the source entity\), real-time replications don't work for remote tables connected via SAP HANA smart data access or Cloud Connector for SAP HANA on-premise versions lower than 2.0 SPS06.
 
-Keeping your data up-to-date can sometimes be a challenge for modelers. When an update is available in your data source, you can do a refresh of your table structure in the *Data Builder* .
+Keeping your data up-to-date can sometimes be a challenge for modelers. When an update is available in your data source, you can do a refresh of your table structure in the *Data Builder* or click <span class="FPA-icons"></span> Validate Remote Tables form the *Data Builder* landing page. For more information, see [Process Source Changes for Several Remote Tables](process-source-changes-for-several-remote-tables-4e0be16.md).
 
 > ### Note:  
 > This refresh is a manual action from the *Table Editor*. When you click *Refresh*, you will receive a notification of any structural changes in the remote source and can then decide whether to proceed and import the changes or cancel.

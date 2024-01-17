@@ -186,7 +186,7 @@ yes \(Outbound IP Address\)
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -244,6 +244,53 @@ no
 <td valign="top">
 
 n/a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Apache Kafka Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1992c6b7154c4bc080d83c8977382ff4.html "Use the connection to connect to and access data from an Apache Kafka cluster.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+[Prepare Connectivity to Apache Kafka](prepare-connectivity-to-apache-kafka-1483ceb.md)
 
 </td>
 </tr>
@@ -797,7 +844,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -891,7 +938,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
