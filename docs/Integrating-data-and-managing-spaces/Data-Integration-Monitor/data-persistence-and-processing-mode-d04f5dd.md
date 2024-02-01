@@ -2,13 +2,21 @@
 
 # Data Persistence and Processing Mode
 
-From the *Views* Details screen, you can change the settings of the processing mode.
+From the *Views* Details screen, you can change the settings to persist your data to ensure that you choose the best processing mode depending on your business case.
 
-While persisting a view, an SQL procedure is called in SAP HANA. The SQL procedure can be executed synchronously or asynchronously. In the settings tab of the *Views* - Details screen, you can change the settings to optimize the processing mode while persistîng a view following your needs:
+When persisting a view, an SQL procedure is called in SAP HANA. In case of high data volume to persist, processing the SQL procedure can impact the memory consumption and the system resources. In the details screen of the view under *Settings*, you can optimize the processing mode depending on your needs.
+
+
+
+<a name="loiod04f5dd6bbda44448407d54d2a7979be__section_j35_dhw_tzb"/>
+
+## Processing Mode
+
+While persisting a view, an SQL procedure is called in SAP HANA. The SQL procedure can be executed synchronously or asynchronously. You can change the settings to optimize the processing mode while persistîng a view following your needs:
 
 -   Default \(asynchronous, may change in future\)
 
-    By default, while persisting a view, the process is run using the asynchronous mode. Keeping the default mode ensures that you always stick to the recommended SAP default execution, even if the default mode is changed by SAP..
+    By default, while persisting a view, the process is run using the asynchronous mode. Keeping the default mode ensures that you always stick to the recommended SAP default execution, even if the default mode is changed by SAP.
 
 -   Synchronous
 

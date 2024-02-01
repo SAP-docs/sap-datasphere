@@ -24,7 +24,7 @@ Drag a source from the *Source Browser*, hover over a source or other node, and 
 
 3.  Select your object and drag it over a source or other node in the diagram. Wait for the context menu to appear, slide your cursor over the *Union* option and then release the mouse button.
 
-    ![](images/Create_Union_Gif_3b4f168.gif)
+    ![](images/Graphical_View_Editor_-_Create_a_Union_c133c71.gif)
 
     The source is added to the diagram and it is unioned with the target node. The union symbol is selected and its properties are displayed in the side panel. You can add multiple tables to the union by dragging and dropping them on the union symbol.
 

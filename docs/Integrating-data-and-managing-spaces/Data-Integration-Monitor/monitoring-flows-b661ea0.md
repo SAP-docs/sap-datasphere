@@ -84,7 +84,7 @@ For more information and points to consider when using replication flows, see al
     -   *Completed*: the flow is completed successfully.
     -   *Failed*: Something goes wrong during the flow run and it could not be completed. Go to the details screen of your flow and check the logs to identify to issue.
 
-    All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Navigating in the Monitor Tabs](navigating-in-the-monitor-tabs-5d4af76.md).
+    All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Understanding Statuses and Substatuses](understanding-statuses-and-substatuses-19cb5bd.md).
 
     > ### Note:  
     > If the status of a flow is empty, it means that the flow has not run yet.

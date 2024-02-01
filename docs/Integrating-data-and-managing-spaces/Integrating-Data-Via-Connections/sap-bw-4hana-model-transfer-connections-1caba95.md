@@ -114,7 +114,7 @@ Displays the SAP HANA port retrieved from SAP BW∕4HANA via the selected tunnel
 </td>
 <td valign="top">
 
-Displays the default schema in which DDIC tables are located in the underlying SAP HANA database of SAP BW∕4HANA.
+Displays the default schema in which DDIC tables are located in the underlying SAP HANA database of SAP BW∕4HANA. The information is retrieved from SAP BW∕4HANA via the selected tunnel connection.
 
 </td>
 </tr>

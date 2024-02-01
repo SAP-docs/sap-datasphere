@@ -276,7 +276,7 @@ Every month you're entitled to running up to 200 hours of jobs. Using more than 
 </td>
 <td valign="top">
 
-The maximum number of parallel jobs is calcuated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maxiumum of 10.
+The maximum number of parallel jobs is calculated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maximum of 10.
 
 Each parallel job means that roughly 5 datasets, from one or several replication flows, can be run in parallel. If more replication flows are running, processing will be queued and replication will occur less frequently.
 
@@ -349,7 +349,7 @@ Description
 </td>
 <td valign="top">
 
-You can increase or decrease the number of storage blocks allocated for premium outbound integration.
+You can increase or decrease the number of storage blocks allocated for premium outbound integration. Each block provides 20 GB of storage.
 
 </td>
 </tr>

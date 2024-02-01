@@ -274,6 +274,9 @@ Provide business-friendly names for your table and its columns, identify its sem
     > ### Note:  
     > To preview data, you must enter a value for each input parameter. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)
 
+    > ### Restriction:  
+    > Parameters with data type cds.LargeBinary are not supported.
+
 6.  Save and Deploy
 
     > ### Note:  

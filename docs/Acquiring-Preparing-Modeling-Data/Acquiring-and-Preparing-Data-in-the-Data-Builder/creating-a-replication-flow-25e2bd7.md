@@ -132,9 +132,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`.
-
-    For more detailed information, go to the flow monitor.
+    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`.For more detailed information, go to the flow monitor.
     
     </td>
     </tr>
@@ -142,7 +140,7 @@ For more information about available connection types, sources, and targets, see
     
 3.  Select a target connection and target container \(see [Add a Target](add-a-target-ab490fb.md)\).
 
-4.  Click <span class="FPA-icons"></span> \(Target Settings\)to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
+4.  Click <span class="FPA-icons"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
 
 5.  Select a replication object in the canvas to review its properties in the side panel and change or complete them as appropriate:
 
@@ -182,7 +180,7 @@ For more information about available connection types, sources, and targets, see
     
     \[only relevant for local tables\] Keep track of changes in your data source.
 
-    For more information, see[Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
     
     </td>
     </tr>

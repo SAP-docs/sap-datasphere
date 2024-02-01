@@ -57,23 +57,6 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    Does the package contain remote tables?
-    
-    </td>
-    <td valign="top" colspan="2">
-    
-    Connections cannot be created via the *Import* app. In this case, before import:
-
-    -   A *DW Administrator* must create the space \(see [Create a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:\).
-    -   A *DW Space Administrator* or *DW Integrator* assigned to the space must create the necessary connections \(see [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md)\).
-
-
-    
-    </td>
-    </tr>
     </table>
     
 2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
@@ -140,6 +123,9 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
 
         Select *Including permissions* to update the *Privacy* and *Data Access Control* settings for models and dimensions. The corresponding permissions assigned to each role are also updated.
 
+        > ### Note:  
+        > Connections won't be overwritten by the import.
+
 
 
     
@@ -186,6 +172,16 @@ Users with the *DW Administrator* or *DW Space Administrator* role can import co
 
     To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons"></span> History.
 
-6.  If you are a *DW Administrator* and have created a space as part of the import, you are assigned to the space as a *DW Space Administrator*. You can assign other users to the space \(including as space administrators\) as appropriate.
+6.  If your content included one or more connections that didn't exist in your space before the import, then you should:
+
+    1.  In the *Connections* app, open each connection, complete the configuration and enter appropriate credentials to connect to your system \(see [Edit a Connection](../Integrating-Data-Via-Connections/edit-a-connection-ba20892.md)\).
+
+    2.  In the *Repository Explorer* or in the object editors, select the imported objects that depend on an imported connection \(and which could not, therefore, be automatically deployed\) and click <span class="SAP-icons"></span> \(Deploy\) to deploy them.
+
+        > ### Note:  
+        > If you checked the *Deploy after import* checkbox in the *Import Options*, you can find a notification about the failed deployment of objects in the *Notifications* panel. Clicking the notification directly leads you to the list of imported objects in the *Repository Explorer*.
+
+
+7.  If you are a *DW Administrator* and have created a space as part of the import, you are assigned to the space as a *DW Space Administrator*. You can assign other users to the space \(including as space administrators\) as appropriate.
 
 

@@ -15,7 +15,7 @@ As an administrator, you need to keep an eye on how tasks and schedules are runn
 
 ## Using SAP HANA Monitoring Views From the DWC\_GLOBAL Schema
 
-Five monitoring views are ready to use in the DWC\_GOBAL schema and can be recognized as they have a naming convention Suffix\_V\_EXT:
+The following monitoring views are ready to use in the DWC\_GLOBAL schema and can be recognized as they have a naming convention Suffix\_V\_EXT:
 
 -   SPACE\_SCHEMAS\_V\_EXT:
 

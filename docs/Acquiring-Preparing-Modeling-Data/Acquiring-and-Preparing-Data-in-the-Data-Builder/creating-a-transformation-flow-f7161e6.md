@@ -14,9 +14,9 @@ A transformation flow run is a one-time event that completes when the relevant d
 
 Creating a transformation flow involves two important steps:
 
--   Using the *View Transform* operator to combine and transform data from one or more source tables.
+-   Creating a graphical view transform or an SQL view transform to load data from source tables and to transform data.
 
--   Adding a target table to the transformation flow and mapping the columns from the view transform created in the first step to the target table.
+-   Adding a target table to the transformation flow and mapping the columns from the graphical view transform or SQL view transform created in the first step to the target table.
 
 
 > ### Note:  
@@ -28,7 +28,7 @@ Creating a transformation flow involves two important steps:
 
 1.  In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Transformation Flow* to open the editor. The system displays the *New Transformation Flow* screen.
 
-2.  You use the *View Transform* operator to load data from source tables and to transform data. Create a new *View Transform* by clicking the *Define View Transform* button \(see [Create a View Transform](create-a-view-transform-c65e37c.md)\).
+2.  Create a graphical view transform or an SQL view transform to load data from source tables and to transform data. To create a graphical view transform, click the *Graphical View Transform* button \(see [Create a Graphical View Transform](create-a-graphical-view-transform-c65e37c.md)\). To create an SQL view transform, click the *SQL View Transform* button \(see [Create an SQL View Transform](create-an-sql-view-transform-775e0ab.md)\).
 
 3.  Click the *Back* button to return to the *Transformation Flow Editor*. Add or create a target table that the transformation flow will write its data to \(see [Add or Create a Target Table](add-or-create-a-target-table-0950746.md)\).
 
@@ -101,6 +101,8 @@ Creating a transformation flow involves two important steps:
     </td>
     <td valign="top">
     
+    Select the relevant load type. 
+
     The following options are possible:
 
     -   Initial Only
@@ -115,6 +117,20 @@ Creating a transformation flow involves two important steps:
 
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Run Status 
+    
+    </td>
+    <td valign="top">
+    
+    View the details of the last run. 
+
+    You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose the *Schedule* button to run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](running-a-flow-5b591d4.md). You can also open the transformation flow run in the *Data Integration Monitor*.
     
     </td>
     </tr>

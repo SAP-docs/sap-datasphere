@@ -1859,6 +1859,29 @@ Contained in Standard Role
 <tr>
 <td valign="top">
 
+`datasphere objects`
+
+</td>
+<td valign="top">
+
+-   *Data Builder* \(CRUD----\)
+-   *Data Warehouse Business Entity* \(CRUD----\)
+-   *Data Warehouse Fact Model* \(CRUD----\)
+-   *Data Warehouse Consumption Model* \(CRUD----\)
+-   *Data Warehouse Authorization Scenario* \(CRUD----\)
+
+
+
+</td>
+<td valign="top">
+
+*DW Modeler*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `datasphere scoped-roles`
 
 </td>

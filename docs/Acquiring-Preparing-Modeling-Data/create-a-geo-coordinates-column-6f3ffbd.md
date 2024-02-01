@@ -38,7 +38,7 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
 
 2.  Select any object in your graphical view to display its context tools and click <span class="FPA-icons"></span> Calculated Columns.
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Create_Column_Gif_0560169.gif)
+    ![](images/Create_Column_Gif_0560169.gif)
 
     A calculated column node is created, its symbol is selected, and its properties are displayed in the side panel.
 

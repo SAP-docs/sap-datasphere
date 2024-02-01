@@ -2,7 +2,7 @@
 
 # SQL Reference
 
-SAP Datasphere supports a subset of the SQL syntax supported by SAP HANA Cloud.
+SAP Datasphere views support a subset of the SQL syntax supported by SAP HANA Cloud.
 
 SAP Datasphere primarily supports the SQL syntax listed in the `SELECT` statement \(see [SELECT Statement \(Data Manipulation\)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/cloud/en-US/20fcf24075191014a89e9dc7b8408b26.html) and related sections of the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
@@ -276,7 +276,7 @@ For more information, see [Operators](https://help.sap.com/viewer/c1d3f60099654e
 
 ## SQL Predicates
 
-SAP Datasphere
+SAP Datasphere supports the following predicates:
 
 
 <table>
@@ -398,7 +398,7 @@ For more information, see [Predicates](https://help.sap.com/docs/hana-cloud-data
 
 ## Expressions
 
-SAP Datasphere
+SAP Datasphere supports the `CASE` expression:
 
 
 <table>

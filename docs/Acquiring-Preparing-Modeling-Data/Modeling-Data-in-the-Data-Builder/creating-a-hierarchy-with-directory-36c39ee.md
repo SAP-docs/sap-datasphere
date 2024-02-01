@@ -4,10 +4,9 @@
 
 Select a *Semantic Usage* of *Hierarchy with Directory* to indicate that your entity contains one or more parent-child hierarchies and has an association to a directory dimension containing a list of the hierarchies.
 
-These types of hierarchy entities can include nodes from multiple dimensions \(for example, country, cost center group, and cost center\) and are commonly imported from SAP S/4HANA Cloud and SAP BW systems.
+These types of hierarchy entities can include nodes from multiple dimensions \(for example, country, cost center group, and cost center\) and are commonly imported from SAP S/4HANA Cloud and SAP BW \(including SAP BW Bridge\) systems.
 
-> ### Note:  
-> For SAP BW systems, you must have defined an SAP BW Bridge connection to get the *Hierarchy with Directory*. For more information, see [Preparing Connectivity for for ODP Source Systems in SAP BW Bridge](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/18d69431efb34a71b1939eb5a071db08.html "") :arrow_upper_right:.
+See also the [Hierarchy with Directory Samples](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/blob/main/Hierarchy_with_Directory_Sample/README.md) Community Content page for SAP S/4HANA samples, and the blog series beginning with [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere/) for more information and walkthroughs.
 
 This topic contains the following sections:
 

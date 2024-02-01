@@ -2,21 +2,23 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a View Transform
+# Create a Graphical View Transform
 
-Create a view transform that uses SQL syntax to combine and transform data as part of your transformation flow. You can drag and drop source tables from the *Repository*, join them as appropriate, add other operators to remove or create columns and filter or aggregate data.
+Create a graphical view transform that uses SQL syntax to combine and transform data as part of your transformation flow. You can drag and drop source tables from the *Repository*, join them as appropriate, add other operators to remove or create columns and filter or aggregate data.
 
 
 
 ## Procedure
 
-1.  Create a new *View Transform* by clicking the *Define View Transform* button.
+1.  On the *New Transformation Flow* screen, click the *View Transform* node.
 
-2.  The system displays the *View Transform Editor*. Add a source table. For more information, see [Add a Source Table](add-a-source-table-ec702fe.md).
+2.  Create a new *Graphical View Transform* for your transformation flow by clicking the *Graphical View Transform* button.
 
-3.  Optional: Drag additional source tables from the repository and drop them onto a source table to create a join or union. For more information, see [Create a Join](create-a-join-bcb5f48.md) and [Create a Union](create-a-union-9cd6fbf.md).
+3.  The system displays the *Graphical View Editor*. Add a source table. For more information, see [Add a Source Table](add-a-source-table-ec702fe.md).
 
-4.  Click a node in the diagram to display tools for creating operators and performing other actions:
+4.  Optional: Drag additional source tables from the repository and drop them onto a source table to create a join or union. For more information, see [Create a Join](create-a-join-bcb5f48.md) and [Create a Union](create-a-union-9cd6fbf.md).
+
+5.  Click a node in the diagram to display tools for creating operators and performing other actions:
 
     > ### Note:  
     > You can only create one each of the *Filter*, *Projection*, *Calculated Columns*, and *Aggregation* operators per source or join in your diagram. Operators can be created in any order.
@@ -137,4 +139,6 @@ Create a view transform that uses SQL syntax to combine and transform data as pa
     </tr>
     </table>
     
+6.  Click the *Back* button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Add or Create a Target Table](add-or-create-a-target-table-0950746.md).
+
 

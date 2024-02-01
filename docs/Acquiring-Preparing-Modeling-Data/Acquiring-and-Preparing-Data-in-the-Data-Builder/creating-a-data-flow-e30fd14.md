@@ -80,7 +80,8 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
     > ### Note:  
     > -   If the table is wide or contains a number of large column types, the result in data preview may be truncated in order to avoid out of memory issues.
-    > -   Data preview is **not** available for ABAP sources. Also you can't perform data preview on the transformation operators.
+    > -   Data preview is **not** available for ABAP sources.
+    > -   You can't perform data preview on the transformation operators.
 
 
     

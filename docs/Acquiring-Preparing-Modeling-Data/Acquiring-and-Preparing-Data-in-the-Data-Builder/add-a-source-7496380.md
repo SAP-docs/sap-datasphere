@@ -25,7 +25,7 @@ Define the source for your replication flow \(connection, container, and objects
 
 1.  Choose *Select Source Connection* at the bottom left of the screen. A list of available source connections appears. Select the relevant one for your use case.
 
-    If you are not sure which one to choose, or if none of the connections in the list is suitable for your purposes, contact your administrator.
+    If you are not sure which one to choose, or if none of the connections in the list is suitable for your purposes, contact your administration.
 
     Alternatively, you can get started by clicking <span class="FPA-icons"></span> \(Browse source connections\)
 
@@ -33,7 +33,9 @@ Define the source for your replication flow \(connection, container, and objects
 
     To narrow down the selection, start typing a part of the folder name in the *Search* field.
 
-    If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to Initial because Initial and Delta is not supported for SAP Datasphere as the source.
+    If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to *Initial* because *Initial and Delta* is not supported for SAP Datasphere as the source.
+
+    For SAP Landscape Transformation Replication Server \(SLT\), the container is the relevant mass transfer ID. Make sure that it is available in SLT before you start creating your replication flow.
 
 3.  Choose *Add Source Objects*. A list of available objects appears. Select the relevant ones for your use case and choose *Next*. A list of the objects you selected appears.
 
@@ -48,8 +50,6 @@ Define the source for your replication flow \(connection, container, and objects
 
     > ### Note:  
     > An object can only be included in one replication flow at any given point in time \(not multiple ones\).
-
-5.  \(Optional\) To modify the throughput, you can change the number of replication threads. To do so, choose <span class="FPA-icons"></span> \(Browse source settings\), replace the default value of 10 with the value you want to use, and save your change.
 
 
 

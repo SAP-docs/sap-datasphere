@@ -202,7 +202,7 @@ More Information
 </td>
 <td valign="top">
 
-[Upload Certificates \(Required for Remote Tables\)](Preparing-Connectivity/upload-certificates-required-for-remote-tables-46f5467.md)
+[Manage Certificates for Connections](Preparing-Connectivity/manage-certificates-for-connections-46f5467.md)
 
 </td>
 </tr>

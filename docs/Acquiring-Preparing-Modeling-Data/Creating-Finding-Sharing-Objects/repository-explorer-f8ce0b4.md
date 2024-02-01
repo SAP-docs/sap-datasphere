@@ -10,7 +10,8 @@ This topic contains the following sections:
 
 -   [Open the Repository Explorer](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_open)
 -   [Enter a String to Search On](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_string_search)
--   [Filter by Collection or Space](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter)
+-   [Filter by Collection, Space, or Folder](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter)
+-   [Search Mode vs List Mode](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_browsing)
 -   [Filter by Criteria](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_criteria_filter)
 -   [Define Advanced Filter Conditions](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_advanced_filter)
 -   [Favorite Objects](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_favorite)
@@ -26,9 +27,6 @@ Click *Repository Explorer* in the left navigation area. There is no need to sel
 
 ![](images/explorer_e469392.png)
 
-> ### Note:  
-> The *Repository Explorer* lists your *Data Builder* objects and data access controls. *Business Builder* objects can be accessed via the *Business Builder* start page \(see [Modeling Data in the Business Builder](../Buisiness-Builder/modeling-data-in-the-business-builder-3829d46.md)\).
-
 
 
 <a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_string_search"/>
@@ -43,11 +41,11 @@ As you type, the field will begin proposing objects and search strings. Select a
 
 <a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter"/>
 
-## Filter by Collection or Space 
+## Filter by Collection, Space, or Folder
 
-Restrict the scope of the list by selecting a collection or a space in the *Search In* area of the left panel.
+Restrict the scope of the list by selecting a collection, space, or folder in the *Search In* area of the left panel.
 
-Choose one collection or space: 
+Choose one collection, space, or folder: 
 
 -   *Collection*:
     -   *All* \(default\)
@@ -60,7 +58,29 @@ Choose one collection or space:
 
     -   *Favorites* - Objects that you have favorited
 
--   *Space*: Spaces you are assigned to are listed here in order of your last visit.
+-   *Space*: Spaces you are assigned to are listed here in order of your last visit. Click a space to show only objects contained in that space. If your space contains folders, you can drill down into the folder structure. Click a folder to show only objects contained in that folder.
+
+![](images/Folders_Example_a96c940.png)
+
+
+
+<a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_browsing"/>
+
+## Search Mode vs List Mode
+
+By default, when you enter the *Repository Explorer*, you are searching the *All* collection, which shows all the objects you are permitted to see across all your spaces \(and folders\) in a flat list. In this example, we see that we are searching in the *All* collection, and 462 objects are shown:
+
+![](images/Explorer_-_Default_34e9a4a.png)
+
+If you click a space or folder, then the display changes to list only the objects contained directly in that space or folder. To see the contents of a sub-folder, click it to go down into it.
+
+Here, we see that there are only the two objects contained directly in the *Sales \> Resources* folder, both of which are sub-folders:
+
+![](images/Explorer_-_Browse_7352e84.png)
+
+If you then search for a string \(or apply a filter\), the display changes back to searching in the current space or folder \(and any sub-folders\) and presents the results in a flat list. Here, we see that we are now searching for the string `time` in the *Sales \> Resources* folder. The folder structure is no longer displayed, and nine objects are shown in a flat list, including the *Time* folder, and a number of objects inside it:
+
+![](images/Explorer_-_Search_2f2533d.png)
 
 
 
@@ -260,18 +280,6 @@ You can act on objects in the list in the following ways:
     <td valign="top">
     
     Create a new object \(independent of any selection\) and open it in the appropriate editor. 
-
-    Choose from the following:
-
-    -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
-    -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
-    -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Entity-Relationship Model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\)
-    -   Data Flow \(see [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md)\)
-    -   Data Access Control \(see [Create a "Single Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
-    -   Currency Conversion Views \(see [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\)
-
-
     
     </td>
     </tr>
@@ -302,7 +310,7 @@ You can act on objects in the list in the following ways:
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a "Single Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 

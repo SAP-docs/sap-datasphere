@@ -80,18 +80,6 @@ The *Import Permissions* wizard will import the permissions table from the sourc
 
     <table>
     <tr>
-    <th valign="top">
-
-    Standard Connection \(Remote Tables\)
-    
-    </th>
-    <th valign="top">
-
-    Model Transfer Connection \(Views\)
-    
-    </th>
-    </tr>
-    <tr>
     <td valign="top">
     
     ![](images/Data_Access_Control_Import_-_Standard_fecfebf.png)
@@ -100,7 +88,7 @@ The *Import Permissions* wizard will import the permissions table from the sourc
 
     -   <code><i class="varname">&lt;table&gt;</i> - Permissions Script</code> \(<code><i class="varname">&lt;table&gt;</i>_P</code>\) - An SQL view to calculate the permissions to apply to the object.
     -   <code><i class="varname">&lt;table&gt;</i> - Permissions</code> \(<code><i class="varname">&lt;table&gt;</i>_D</code>\) - A data access control to consume the SQL view.
-    -   <code><i class="varname">&lt;table&gt;</i> - Protected</code> \(<code><i class="varname">&lt;table&gt;</i>_V</code> - An SQL view to wrap the table selected for protection and apply the data access control. Once the import is complete, you should only access the table via this view.
+    -   <code><i class="varname">&lt;table&gt;</i> - Protected</code> \(<code><i class="varname">&lt;table&gt;</i>_V</code>\) - An SQL view to wrap the table selected for protection and apply the data access control. Once the import is complete, you should only access the table via this view.
 
 
     

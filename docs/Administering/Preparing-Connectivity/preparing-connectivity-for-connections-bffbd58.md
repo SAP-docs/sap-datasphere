@@ -45,11 +45,6 @@ SAP Datasphere IP Required in Source Allowlist?
 </th>
 <th valign="top">
 
-Server Certificate Upload Required?
-
-</th>
-<th valign="top">
-
 Source IP Required in SAP Datasphere IP Allowlist?
 
 </th>
@@ -63,11 +58,6 @@ Additional Information and Prerequisites
 <td valign="top">
 
 [Adverity Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/63e9ff5825384a03979666dbc3e715f2.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -139,11 +129,6 @@ no
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -186,11 +171,6 @@ yes \(Outbound IP Address\)
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -204,11 +184,6 @@ no
 <td valign="top">
 
 [Amazon Simple Storage Service Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to connect to and access data from objects in Amazon S3 buckets.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -280,11 +255,6 @@ no
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -313,11 +283,6 @@ no
 <td valign="top">
 
 yes \(for data flows\)
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -379,11 +344,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 [Prepare Connectivity for Generic JDBC](prepare-connectivity-for-generic-jdbc-648fabf.md)
 
 </td>
@@ -421,11 +381,6 @@ no
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -439,11 +394,6 @@ no
 <td valign="top">
 
 [Generic SFTP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -515,11 +465,6 @@ no
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -533,11 +478,6 @@ no
 <td valign="top">
 
 [Google Cloud Storage Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to connect to and access objects from Google Cloud Storage.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -614,11 +554,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 n/a
 
 </td>
@@ -627,11 +562,6 @@ n/a
 <td valign="top">
 
 [Microsoft Azure Blob Storage Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df5a7c56ac21472c973f6fab341f3991.html "Use the connection to access objects in Microsoft Azure Blob Storage.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -708,11 +638,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 n/a
 
 </td>
@@ -721,11 +646,6 @@ n/a
 <td valign="top">
 
 [Microsoft Azure Data Lake Store Gen2 Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -802,11 +722,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 [Prepare Connectivity to Microsoft Azure SQL Database](prepare-connectivity-to-microsoft-azure-sql-database-782bd8c.md)
 
 </td>
@@ -814,7 +729,7 @@ no
 <tr>
 <td valign="top">
 
-[Microsoft SQL Server Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use a Microsoft SQL Server connection to access data from a Microsoft SQL Server (on-premise).") :arrow_upper_right:
+[Microsoft SQL Server Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use a Microsoft SQL Server connection to access data from a Microsoft SQL Server database (on-premise).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -844,11 +759,6 @@ no
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -862,11 +772,6 @@ no
 <td valign="top">
 
 [Open Connectors Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9bfe7db51216449d985a0b59f5e181c4.html "Use an Open Connectors connection to access data from sources that are connected to the SAP Open Connectors account that is integrated with your space.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -938,11 +843,6 @@ no
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -956,11 +856,6 @@ no
 <td valign="top">
 
 [Precog Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6e5f2255ae8540d5895dcbef4157b82d.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -1037,11 +932,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 [Prepare Connectivity to SAP ABAP Systems](prepare-connectivity-to-sap-abap-systems-76c9ac1.md)
 
 </td>
@@ -1065,11 +955,6 @@ no
 <td valign="top">
 
 yes \(for data flows\)
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -1131,11 +1016,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 [Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md)
 
 </td>
@@ -1159,11 +1039,6 @@ no
 <td valign="top">
 
 yes \(for data flows\)
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -1225,11 +1100,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 [Prepare Connectivity to SAP Fieldglass](prepare-connectivity-to-sap-fieldglass-03ca236.md)
 
 </td>
@@ -1267,11 +1137,6 @@ no
 </td>
 <td valign="top">
 
-yes \(for cloud\)
-
-</td>
-<td valign="top">
-
 Cloud Connector IP \(for on-premise when using Cloud Connector for remote tables feature\)
 
 </td>
@@ -1285,11 +1150,6 @@ Cloud Connector IP \(for on-premise when using Cloud Connector for remote tables
 <td valign="top">
 
 [SAP HANA Cloud, Data Lake Files Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -1366,11 +1226,6 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
 n/a
 
 </td>
@@ -1394,11 +1249,6 @@ no
 <td valign="top">
 
 yes \(for data flows\)
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -1455,11 +1305,6 @@ yes \(HANA IP Address\)
 </td>
 <td valign="top">
 
-yes
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -1478,11 +1323,6 @@ no
 <td valign="top">
 
 yes
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">
@@ -1535,11 +1375,6 @@ no
 <td valign="top">
 
 yes \(for data flows, replication flows, and model import\)
-
-</td>
-<td valign="top">
-
-no
 
 </td>
 <td valign="top">

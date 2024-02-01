@@ -1,8 +1,8 @@
 <!-- loio098ada182bbe43febadbd6374105a173 -->
 
-# Process Source Changes in the View Transform Editor
+# Process Source Changes in the Graphical View Editor
 
-If one or more of the source tables of your view transform is modified, then the next time you open the view transform editor, you can view any changes by viewing the relevant validation messages.
+If one or more of the source tables of your view transform is modified, then the next time you open the *Graphical View Editor*, you can view any changes by viewing the relevant validation messages.
 
 
 
@@ -10,7 +10,7 @@ If one or more of the source tables of your view transform is modified, then the
 
 ## Procedure
 
-1.  If a source change has generated warnings or errors in your view transform, you can view any changes by viewing the relevant validation messages.
+1.  If a source change has generated warnings or errors in your graphical view transform, you can view any changes by viewing the relevant validation messages.
 
 2.  The following validation messages may be displayed:
 
@@ -100,7 +100,7 @@ If one or more of the source tables of your view transform is modified, then the
     </tr>
     </table>
     
-3.  Review all information and warning messages to ensure that they do not adversely impact the output of your view transform.
+3.  Review all information and warning messages to ensure that they do not adversely impact the output of your graphical view transform.
 
 4.  Review and resolve any error messages on intermediate nodes.
 

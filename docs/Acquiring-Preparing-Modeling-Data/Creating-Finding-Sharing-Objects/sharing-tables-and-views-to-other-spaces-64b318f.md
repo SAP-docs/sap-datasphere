@@ -29,15 +29,15 @@ You can share tables and views, but only views can have row-level security appli
 
 In this example, the *IT* space has imported the *Sales* and *Products* tables from a source system and wants to share them to the *Sales* space, but the *Sales* table contains sensitive data:
 
-![](images/Sharing_Example_-_Before_e588dcd.png)
+![](images/Sharing_Example_-_Step_1_e588dcd.png)
 
 In order to protect that data and ensure that users can view only data for which they have permission, an *IT* space user consumes the *Sales* table in the *Sales* view and applies a data access control to the view \(see [Apply a Data Access Control](../apply-a-data-access-control-8f79fc8.md)\):
 
-![](images/Sharing_Example_-_Before_2_6b60b6c.png)
+![](images/Sharing_Example_-_Step_2_6b60b6c.png)
 
 Now that the data is protected, the *Sales* view and the *Products* table can both be shared to the *Sales* space, where they are joined with the *Promotions* view to produce the *Sales by Product* view, which inherits the row-level security from the shared *Sales* view:
 
-![](images/Sharing_Example_4bbcf1c.png)
+![](images/Sharing_Example_-_Step_3_4bbcf1c.png)
 
 
 

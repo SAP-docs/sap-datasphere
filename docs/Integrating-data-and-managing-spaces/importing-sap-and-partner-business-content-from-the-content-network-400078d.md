@@ -90,6 +90,9 @@ Detailed documentation for all business content is available at [SAP Datasphere 
 
         Select *Including permissions* to update the *Privacy* and *Data Access Control* settings for models and dimensions. The corresponding permissions assigned to each role are also updated.
 
+        > ### Note:  
+        > Connections won't be overwritten by the import.
+
 
 
     

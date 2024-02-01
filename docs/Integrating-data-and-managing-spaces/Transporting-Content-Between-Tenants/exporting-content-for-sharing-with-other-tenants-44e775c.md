@@ -33,14 +33,14 @@ Details
 <tr>
 <td valign="top">
 
-Local Tables
+Connections
 
-See [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table to contain data by defining its column structure. Tables created in SAP Datasphere can be filled with data from a CSV file or via a data flow. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+See [Create a Connection](../Integrating-Data-Via-Connections/create-a-connection-c216584.md).
 
 </td>
 <td valign="top">
 
-The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
+The definition of a connection does not have dependencies on any other objects.
 
 </td>
 </tr>
@@ -54,7 +54,21 @@ See [Import Remote Tables](https://help.sap.com/viewer/24f836070a704022a40c15442
 </td>
 <td valign="top">
 
-The definition of a remote table contains information about its connection. Before importing a remote table, you must create the relevant connection with an identical technical name in the receiving space.
+The definition of a remote table contains information about its connection.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Local Tables
+
+See [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table to contain data by defining its column structure. Tables created in SAP Datasphere can be filled with data from a CSV file or via a data flow. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+
+</td>
+<td valign="top">
+
+The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
 
 </td>
 </tr>

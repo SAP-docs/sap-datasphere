@@ -12,7 +12,7 @@ Add a *Calculated Columns* node to create new columns and define calculations in
 
 1.  Select an object in order to display its context tools, and click <span class="FPA-icons"></span> Calculated Columns.
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Create_Column_Gif_0560169.gif)
+    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Graphical_View_Editor_-_Create_a_Column_83113a9.gif)
 
     A calculated column node is created, its symbol is selected, and its properties are displayed in the side panel.
 

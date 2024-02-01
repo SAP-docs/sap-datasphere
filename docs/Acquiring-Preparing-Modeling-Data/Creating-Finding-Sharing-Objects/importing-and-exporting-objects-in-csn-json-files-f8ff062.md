@@ -42,7 +42,7 @@ Remote Tables
 </td>
 <td valign="top">
 
-The definition of a remote table contains information about its connection. Before importing a remote table, you must create the relevant connection with an identical technical name in the receiving space.
+The definition of a remote table contains information about its connection.
 
 > ### Note:  
 > Remote tables exported from one space can be imported into another only if they were originally imported from a connection created in v2021.19 or later.

@@ -1,8 +1,10 @@
 <!-- loioeb85e157ab654152bd68a8714036e463 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Integrating Data via Connections
 
-Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.
+Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.
 
 
 
@@ -10,6 +12,7 @@ This topic contains the following sections:
 
 -   [Supported Connection Type Features](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_features)
 -   [Connection Types Overview](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_overview)
+-   [Managing Connections](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_management)
 
 
 
@@ -1394,5 +1397,191 @@ SAP
 
 \*\*\*Connections marked as "On-Premise" can be used to connect to sources located in the cloud, too. Note that in order to connect to a cloud-based SAP ABAP or Microsoft SQL Server, for example, you have to connect through the on-premise installed SAP HANA smart data integration Data Provisioning Agent.
 
-> ### Note:  
+
+
+<a name="loioeb85e157ab654152bd68a8714036e463__section_connection_management"/>
+
+## Managing Connections
+
+In the <span class="FPA-icons"></span> \(*Connections*\) app, you get an overview of all connections created in your space.
+
+Use the following tools to create and manage connections:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Tool
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Create
+
+</td>
+<td valign="top">
+
+Create a connection to allow users assigned to the space to use the connected remote system for data modeling and data access in SAP Datasphere.
+
+For more information, see [Create a Connection](create-a-connection-c216584.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edit
+
+</td>
+<td valign="top">
+
+Select and edit a connection to change its properties. Warnings might indicate that you need to edit a connection.
+
+For more information, see [Edit a Connection](edit-a-connection-ba20892.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Delete
+
+</td>
+<td valign="top">
+
+Select and delete one or more connections if they are not used anymore.
+
+For more information, see [Delete a Connection](delete-a-connection-e90c290.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Validate
+
+</td>
+<td valign="top">
+
+Select and validate a connection to get detailed status information and make sure that it can be used for data modeling and data access. Always validate a connection after you have created or edited it.
+
+For more information, see [Validate a Connection](validate-a-connection-99bd229.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Pause/Restart
+
+</td>
+<td valign="top">
+
+For connections that connect to a remote system through SAP HANA Smart Data Integration and its Data Provisioning Agent, you can pause and restart real-time replication for selected connections, if required.
+
+For more information, see [Pause Real-Time Replication for a Connection](pause-real-time-replication-for-a-connection-a11f244.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons"></span> \(Reload Connection List\)
+
+</td>
+<td valign="top">
+
+Reload the connections list to include the latest updates into the list.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons"></span> \(Sort Connections\)
+
+</td>
+<td valign="top">
+
+Open the *Sort* dialog to control the ordering of the connections list.
+
+By default, the list is sorted by *Business Name*. To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then click *OK* to apply them.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons"></span> \(Filter Connections\)
+
+</td>
+<td valign="top">
+
+Select one or more filter values to restrict the connection list according to your needs.
+
+For more information, see [Filter Connection List](filter-connection-list-31f1075.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+:gear:
+
+</td>
+<td valign="top">
+
+Open the *Columns* dialog to control the display of columns in the results table.
+
+Modify the column list in any of the following ways, and then click *OK* to apply your changes:
+
+-   To select a column for display, select its checkbox. To hide a column deselect its checkbox.
+-   Click on a column token to highlight it and use the arrow buttons to move it in the list.
+-   Click *Reset* to go back to the default column display.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Search
+
+</td>
+<td valign="top">
+
+Enter one or more characters in the *Search* field to restrict the list to connections containing the string.
+
+Search considers the *Technical Name*, *Business Name*, *Real-Time Replication Status*, and *Owner* column.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+![](images/Connection_Warning_Message_Button_2689954.png)
+
+\(Warning Messages\)
+
+</td>
+<td valign="top">
+
+When there is one or more messages for your connections, a button is displayed specifying the number of warning messages for all connections in the list.
+
+Click the button to open the list of messages. Clicking a message title selects the corresponding connection in the list. Clicking <span class="SAP-icons"></span> \(Navigation\) for a message opens a more detailed message containing guidance on how to solve the issue.
+
+In the connections list, connections with warning messages are highlighted in yellow.
+
+</td>
+</tr>
+</table>
 

@@ -105,7 +105,7 @@ File Compression
 </td>
 <td valign="top">
 
-\[only relevant for file type Parquet\] Select the file compression type.You can choose between None \[default\], Gzip, and Snappy.
+\[only relevant for file type Parquet\] Select the file compression type. You can choose between None \[default\], Gzip, and Snappy. 
 
 </td>
 </tr>

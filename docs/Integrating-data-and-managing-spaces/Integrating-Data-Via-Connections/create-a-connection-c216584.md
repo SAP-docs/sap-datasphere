@@ -219,6 +219,27 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
     <tr>
     <td valign="top">
     
+    *Package* 
+    
+    </td>
+    <td valign="top">
+    
+    Select the package to which the connection belongs. 
+
+    Users with the *DW Space Administrator* role \(or equivalent privileges\) can create packages in the *Packages* editor. Once a package is created in your space, you can select it here.
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](../Transporting-Content-Between-Tenants/creating-packages-to-export-24aba84.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     *Description*
     
     </td>

@@ -52,7 +52,7 @@ Status of the task chain after last run.
 -   *Completed*: the task chain is completed successfully.
 -   *Failed*: Something goes wrong during the task chain run and it could not be completed. Go to the details screen of your task chain and check the logs to identify to issue.
 
-All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Navigating in the Monitor Tabs](navigating-in-the-monitor-tabs-5d4af76.md).
+All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Understanding Statuses and Substatuses](understanding-statuses-and-substatuses-19cb5bd.md).
 
 </td>
 </tr>
@@ -126,7 +126,7 @@ When the next run is scheduled.
 <tr>
 <td valign="top">
 
-*Schedule Owner* 
+*Schedule Owner*
 
 </td>
 <td valign="top">

@@ -12,7 +12,7 @@ To be able to successfully validate and use a connection to SAP HANA Cloud or SA
 
 A DW administrator has uploaded the server certificate to SAP Datasphere.
 
-For more information, see [Upload Certificates \(Required for Remote Tables\)](upload-certificates-required-for-remote-tables-46f5467.md).
+For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 
 
@@ -55,7 +55,7 @@ Before you can use the connection for creating views and accessing data via remo
 
         A DW administrator has uploaded the server certificate to SAP Datasphere.
 
-        For more information, see [Upload Certificates \(Required for Remote Tables\)](upload-certificates-required-for-remote-tables-46f5467.md).
+        For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 
 

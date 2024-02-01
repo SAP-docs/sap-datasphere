@@ -32,6 +32,7 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
 
     -   a reference to a dimension that is mapped to an attribute of the fact with semantic type *Currency Code*.
 
+    -   a variable. For more information, see [Use Variables for Currency Conversion](use-variables-for-currency-conversion-0379a7c.md).
 
 4.  Define the reference date.
 
@@ -41,8 +42,17 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     -   a constant value, with a fixed date
 
     -   a reference to a dimension with data type *Date*
+    -   a variable. For more information, see [Use Variables for Currency Conversion](use-variables-for-currency-conversion-0379a7c.md).
 
 5.  Select the exchange rate type to be used on the conversion.
+
+    The target currency can be specified as:
+
+    -   a constant value
+
+    -   a reference to a dimension that is mapped to an attribute of the fact
+
+    -   a variable. For more information, see [Use Variables for Currency Conversion](use-variables-for-currency-conversion-0379a7c.md).
 
 6.  Select the client. The currency conversion tables have a client field, which you can enter here.
 

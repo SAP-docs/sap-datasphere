@@ -14,20 +14,44 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
 
 2.  Click the *Repository* tab.
 
-    The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\). The following categories can be available: 
+    The *Repository* tab lists all the tables, views, and intelligent lookups that are available in the space \(including objects shared to the space\). You can filter and sort the list as follows:
 
-    -   *Tables* - Contains all remote and local tables in the space \(see [Acquiring Data in the Data Builder](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md)\).
-    -   *Views* - Contains all graphical and SQL views present in the space \(see [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md)\).
 
-        > ### Note:  
-        > You cannot use views with input parameters as sources in a data flow.
+    <table>
+    <tr>
+    <td valign="top">
+    
+    ![](images/Source_Browser_With_Folders_4853e2d.png)
+    
+    </td>
+    <td valign="top">
+    
+    -   Select a *Collection*:
+        -   *All* \(default\)
+        -   *Recent* - Objects that you recently opened
+        -   *My Objects* - Objects that you created
+        -   *Shared* - Objects that are shared to your space
+        -   *Favorites* - Objects that you have favorited
 
-    -   *Intelligent Lookups* - Contains all intelligent lookups present in the space \(see [Creating an Intelligent Lookup](creating-an-intelligent-lookup-8f29f80.md)\).
-    -   *Shared Objects* - Contains all objects shared to the space \(see [Sharing Tables and Views To Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    -   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-3.  Drag the object from the *Repository Browser* and drop it on the diagram.
+        As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
-    ![](images/Add_Source_3a8e699.gif)
+    -   Click <span class="FPA-icons"></span> \(More\) to access the *Sort* and *Filter* options.
+    -   Click a folder in the list to drill down into and restrict your search to the folder.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  When you find an object, you can preview it before adding it. Click <span class="FPA-icons"></span> \(More\) and select:
+
+    -   *Show Info* - See additional properties and optionally open it in a new tab.
+    -   *Show Data Preview* - Preview the object's data \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+
+4.  Drag the object from the *Repository Browser* and drop it on the diagram.
 
     > ### Note:  
     > In an E/R model, you can additionally::

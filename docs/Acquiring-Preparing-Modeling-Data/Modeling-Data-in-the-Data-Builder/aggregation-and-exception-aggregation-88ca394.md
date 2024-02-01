@@ -15,9 +15,19 @@ A measure is calculated in the following order: first the standard aggregation, 
 
 <a name="loio88ca394d455642ccbdd3102298de7959__section_d4w_ptq_5zb"/>
 
-## Example
+## Examples
 
-Count number of customer within a year:
+
+
+### Calculate Stock
+
+You want to calculate the stock at the beginning of a month and the end of the month. You can do that by creating two measures: one with different exception aggregation behavior First and one with exception aggregation behavior Last.
+
+With exception aggregation First, only the value of the first day in the month is taken and with exception aggregation Last, only the value of the last day in the month is taken.
+
+
+
+### Count Number of Customers Within a Year
 
 
 <table>

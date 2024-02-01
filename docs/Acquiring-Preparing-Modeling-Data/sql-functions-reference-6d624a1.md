@@ -2,7 +2,7 @@
 
 # SQL Functions Reference
 
-SAP Datasphere supports a subset of the SQL functions supported by SAP HANA Cloud.
+SAP Datasphere views support a subset of the SQL functions supported by SAP HANA Cloud.
 
 
 

@@ -26,7 +26,10 @@ Add a target table to write data to. You can only have one target table in a dat
 
 
     > ### Note:  
-    > Local table with delta capture on can't be used as target table.
+    > -   Local table with delta capture on can't be used as target table.
+    > -   If your target table is a virtual table, the following modes are not supported:
+    >     -   *APPEND* mode if *Update Records By Primary Key \(UPSERT\)* is selected.
+    >     -   *DELETE* mode.
 
 2.  Click and drag the port on the right of the last operator in your data flow and drop it onto the target table.
 
