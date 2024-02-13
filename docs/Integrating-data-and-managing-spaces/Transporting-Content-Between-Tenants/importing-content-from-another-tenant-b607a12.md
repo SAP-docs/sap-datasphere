@@ -4,7 +4,7 @@
 
 # Importing Content from Another Tenant
 
-Users with the *DW Administrator* or *DW Space Administrator* role can import content that has been shared from another tenant.
+Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Transport* app to import content that has been shared from another tenant.
 
 
 

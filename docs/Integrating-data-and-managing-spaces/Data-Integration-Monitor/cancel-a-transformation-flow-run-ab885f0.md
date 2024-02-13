@@ -24,8 +24,8 @@ You can use the *Cancel Run* button to stop a transformation flow run that is cu
 
 3.  To stop a run that is currently running, select the relevant run and click the *Cancel Run* button.
 
-    If the run has been cancelled successfully, the status of the transformation flow run will have the value *Failed \(Canceled\)*.
+    If the run has been canceled successfully, the status of the transformation flow run will have the value *Failed \(Canceled\)*.
 
-    Cancelling a transformation flow involves rolling back database transactions. Therefore, it might take some time until the transformation flow is cancelled and the status changes to *Failed \(Canceled\)*.
+    Canceling a transformation flow involves rolling back database transactions. Therefore, it might take some time until the transformation flow is canceled and the status changes to *Failed \(Canceled\)*.
 
 

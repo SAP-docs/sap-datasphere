@@ -870,12 +870,12 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-5750 GB
+1344 GB
 
 </td>
 <td valign="top">
 
-14336 GB
+3328 GB
 
 </td>
 <td valign="top">
@@ -912,12 +912,12 @@ India \(Mumbai\)
 </td>
 <td valign="top">
 
-5750 GB
+1344 GB
 
 </td>
 <td valign="top">
 
-14336 GB
+3328 GB
 
 </td>
 <td valign="top">

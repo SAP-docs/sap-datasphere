@@ -4,7 +4,7 @@
 
 # Exporting Content for Sharing with Other Tenants
 
-Users with the *DW Administrator* or *DW Space Administrator* role can export content from one or more spaces for sharing with other tenants.
+Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Transport* app to export content from one or more spaces for sharing with other tenants.
 
 
 
@@ -161,7 +161,7 @@ The definition of a data access control contains the definition of its permissio
 
 Task Chains
 
-See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.") :arrow_upper_right:.
+See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. (You can also nest other task chains within a task chain.) Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -209,8 +209,6 @@ See [Creating a Consumption Model](https://help.sap.com/viewer/24f836070a704022a
 <td valign="top">
 
 The definition of a consumption model contains all its perspectives \(which are also listed separately\), along with the definition of all its source fact models and business entities. When you export a consumption model \(or one of its perspectives\), these objects are exported too.
-
-You can deselect individual perspectives to exclude them from export. When overwriting a consumption model during an import, any perspectives excluded from the package will be deleted.
 
 </td>
 </tr>

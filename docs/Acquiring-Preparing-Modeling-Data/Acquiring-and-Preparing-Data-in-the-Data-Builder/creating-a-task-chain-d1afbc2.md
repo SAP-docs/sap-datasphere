@@ -4,7 +4,7 @@
 
 # Creating a Task Chain
 
-Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.
+Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. \(You can also nest other task chains within a task chain.\) Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.
 
 
 
@@ -30,7 +30,7 @@ Linear task chains allow you to define a group or series of tasks and execute th
 
 Parallel task chain branches allow you to specify that some individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
-Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, Intelligent Lookup, Data Flow, and Transformation Flow runs.
+Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, Intelligent Lookup, Data Flow, and Transformation Flow runs. You can also nest other task chains within a task chain.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -295,7 +295,12 @@ A basic or linear task chain allows you to define a group or series of tasks and
 
     ![](images/Properties_Update_with_Deploy_3674719.png)
 
-    Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to chech your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    Once the task chain is deployed, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+
+    Once a task chain run has started, it will continue running as long as possible. Until all tasks in the chain have been executed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain has "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
+
+    > ### Note:  
+    > If a nested task chain within a parent task chain fails, you need to retry the parent task chain, not the specific nested chain that failed. In that case, when you retry the parent task chain, only the nested task chain that failed will be run again, not any of the other tasks in the chain that had already run successfully.
 
 
 **Executing Parallel Tasks in a Task Chain**
@@ -355,8 +360,6 @@ In addition to linear task chains in which one task is executed after another, y
     > SAP Datasphere allows you to save task chains that may have unconnected task objects on the canvas. However, you will not be able to deploy and run them until all task objects are connected to define their order of execution when the task chain is run.
 
     When a task chain is run that includes a parallel task chain branch, execution of all the branch tasks are triggered to be run in parallel. The ANY or ALL condition applied to the branch specifies whether ANY or ALL branch tasks must be completed successfully to continue with execution of remaining tasks in the chain.
-
-    A task chain will continue running as long as possible. Until all tasks in the chain have been executed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain is "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
 
     After finishing a task chain run that includes one or more parallel task branches, it may be possible that one or more tasks may be reported in an error state \(in each branch\). For example, in branches where completion of tasks is evaluated with the ANY operator. In that case, if you restart or retry the task chain, SAP Datasphere will then restart previously-failed tasks and run all subsequent tasks that had not yet run. In particular, this means that if a failed task is in a parallel branch which was evaluated with the ANY operator, those tasks in the same branch which had run successfully will not be run again. Only those tasks that have failed will be retried or run again.
 

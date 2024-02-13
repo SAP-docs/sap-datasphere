@@ -47,7 +47,7 @@ Displays the name of the connection.
 <tr>
 <td valign="top">
 
-Start Time
+*Start Time*
 
 </td>
 <td valign="top">
@@ -59,7 +59,7 @@ Displays the statement start time.
 <tr>
 <td valign="top">
 
-End Time
+*End Time*
 
 </td>
 <td valign="top">
@@ -71,19 +71,19 @@ Displays the statement end time.
 <tr>
 <td valign="top">
 
-Statement Runtime
+*Remote Statement Duration*
 
 </td>
 <td valign="top">
 
-Displays the duration of the statement. 
+Displays the duration in milliseconds of the total remote statement \(open/fetch/close\). 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Rows
+*Rows*
 
 </td>
 <td valign="top">
@@ -95,7 +95,7 @@ Displays the number of rows that have been processed by the statement.
 <tr>
 <td valign="top">
 
-Status
+*Status*
 
 </td>
 <td valign="top">
@@ -115,7 +115,7 @@ The status can be one of the following:
 <tr>
 <td valign="top">
 
-Remote Statement
+*Remote Statement*
 
 </td>
 <td valign="top">
@@ -129,7 +129,7 @@ As the statement is most often too long and appears as truncated, you need to cl
 <tr>
 <td valign="top">
 
-Statement ID
+*Statement ID*
 
 </td>
 <td valign="top">
@@ -143,7 +143,7 @@ This ID is provided by SAP HANA and can be used to do deep dive analysis in the 
 <tr>
 <td valign="top">
 
-Executing SQL Statement
+*Executing SQL Statement*
 
 </td>
 <td valign="top">
@@ -157,7 +157,7 @@ You might have a look at this statement if something goes wrong to identify the 
 <tr>
 <td valign="top">
 
-Transaction
+*Transaction*
 
 </td>
 <td valign="top">
@@ -166,10 +166,67 @@ Displays the remote source transaction.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Adapter*
+
+</td>
+<td valign="top">
+
+Displays the name of the adapter 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Connection Type*
+
+</td>
+<td valign="top">
+
+Displays the type of the connection. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Provisioning Agent*
+
+</td>
+<td valign="top">
+
+Displays the name of the data provisioning agent. For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types that support creating views and accessing or replicating data via remote tables, for this purpose leverage SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Statement Details*
+
+</td>
+<td valign="top">
+
+Displays the statement details. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Source*
+
+</td>
+<td valign="top">
+
+Displays the name of the remote source. 
+
+</td>
+</tr>
 </table>
 
 You can personalize the columns you want to display clicking on :gear:
-
-> ### Note:  
-> You can personalize the columns you want to display and the display order of those columns clicking on :gear:.
 

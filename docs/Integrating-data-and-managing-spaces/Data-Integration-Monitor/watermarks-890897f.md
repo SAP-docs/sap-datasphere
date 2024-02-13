@@ -29,5 +29,5 @@ Resetting the watermark can make sense in the following situations:
 -   If corrupt data is present in the target table, you can reset the watermark for the transformation flow to ensure that the latest data from the source table is loaded to the target table.
 
 
-On the *Delta Capture Settings* tab of the *Data Integration Monitor*, you can reset the watermark for a transformation flow. Choose the *Reset Watermark* button.
+You can reset the watermark for a transformation flow in the *Data Integration Monitor*. Open your transformation flow and navigate to the *Delta Capture Settings* tab. To reset the watermark, choose the *Reset Watermark* button.
 

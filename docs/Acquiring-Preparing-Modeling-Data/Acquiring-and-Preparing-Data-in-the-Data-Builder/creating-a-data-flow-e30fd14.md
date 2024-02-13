@@ -80,7 +80,10 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
     > ### Note:  
     > -   If the table is wide or contains a number of large column types, the result in data preview may be truncated in order to avoid out of memory issues.
-    > -   Data preview is **not** available for ABAP sources.
+    > -   Data preview is **not** available for ABAP sources. Except for:
+    >     -   CDS views if the source connection is SAP S/4HANA Cloud 2302, SAP S/4HANA on-premise 1909 or higher.
+    >     -   SAP Landscape Transformation Replication Server objects if ABAP Add-on DMIS 2018 SP08 / DMIS 2020 SP04 is installed.
+    > 
     > -   You can't perform data preview on the transformation operators.
 
 
@@ -248,7 +251,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
     -   Under Input Parameters:Create a new input parameter or modify an existing one. For more information, see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)
     -   Under Advanced Properties
-        -   *Dynamic Memory Allocation*: You can allocate memory usage manually. Set the *Expected Data Volume* to *Small*, *Medium*, or *Large*.
+        -   *Dynamic Memory Allocation* You can allocate memory usage manually. Set the *Expected Data Volume* to *Small*, *Medium*, or *Large*.
 
             > ### Note:  
             > -   Dynamic memory allocation should be done only if your data flow run is facing out-of-memory failures.

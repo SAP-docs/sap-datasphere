@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a Data Access Control 
+# Create a "Single Values" Data Access Control
 
 Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.
 
@@ -23,7 +23,7 @@ Before creating your data access control, you must have prepared a permissions e
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor.
+1.  In the side navigation area, click <span class="SAP-icons"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor. 
 
 2.  Complete the following properties:
 
@@ -100,6 +100,18 @@ Before creating your data access control, you must have prepared a permissions e
     <td valign="top">
     
     Enter the name of the person responsible for your data access control.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Structure
+    
+    </td>
+    <td valign="top">
+    
+    Select *Single Values*.
     
     </td>
     </tr>

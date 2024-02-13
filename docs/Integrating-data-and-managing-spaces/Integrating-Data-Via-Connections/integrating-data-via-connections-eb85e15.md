@@ -4,7 +4,7 @@
 
 # Integrating Data via Connections
 
-Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.
+Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.
 
 
 
@@ -121,7 +121,7 @@ To allow space users using a feature, the feature must be enabled in the connect
 
 ## Connection Types Overview
 
-To connect to different sources, SAP Datasphere provides different connection types. The following connection types are available with SAP Datasphere:
+To connect to remote systems, applications, databases, or storages, SAP Datasphere provides different connection types. The following connection types are available with SAP Datasphere:
 
 
 
@@ -1568,14 +1568,14 @@ Search considers the *Technical Name*, *Business Name*, *Real-Time Replication S
 <tr>
 <td valign="top">
 
-![](images/Connection_Warning_Message_Button_2689954.png)
+![](images/2689954ed5874af480166f033f98b1bd.image)
 
 \(Warning Messages\)
 
 </td>
 <td valign="top">
 
-When there is one or more messages for your connections, a button is displayed specifying the number of warning messages for all connections in the list.
+When there is one or more messages for your connections, a button is displayed on the top right corner of the *Connections* app specifying the number of warning messages for all connections in the list.
 
 Click the button to open the list of messages. Clicking a message title selects the corresponding connection in the list. Clicking <span class="SAP-icons"></span> \(Navigation\) for a message opens a more detailed message containing guidance on how to solve the issue.
 

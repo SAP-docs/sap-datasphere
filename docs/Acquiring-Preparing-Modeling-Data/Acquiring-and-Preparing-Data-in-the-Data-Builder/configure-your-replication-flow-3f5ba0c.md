@@ -18,7 +18,7 @@ Define settings and properties for your replication flow and individual replicat
 
     -   *Initial Only*: Load all selected data once.
 
-    -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load interval is 60 minutes. You can change it in the side panel by entering an integer between 0 and 24 for hours and 0 and 59 for minutes, respectively. The maximum allowed value is 24 hours 0 minutes. If you enter 0 hours and 0 seconds, the system replicates any source changes immediately.
+    -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load interval is 60 minutes. You can change it in the side panel by entering an integer between 0 and 24 for hours and 0 and 59 for minutes, respectively. The maximum allowed value is 24 hours 0 minutes. If you enter 0 hours and 0 minutes, the system replicates any source changes immediately.
 
         > ### Note:  
         > -   A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status *Running* until it is stopped or paused or an issue occurs.

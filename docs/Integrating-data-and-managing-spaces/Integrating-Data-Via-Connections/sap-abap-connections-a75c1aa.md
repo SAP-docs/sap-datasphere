@@ -114,7 +114,10 @@ You can access the following data:
 > ### Note:  
 > -   Data flows currently support one-time loading of data \(also known as initial load\) only.
 > 
-> -   The data preview in the data flow editor of the Data Builder is **not** available for ABAP sources.
+> -   The data preview in the data flow editor of the *Data Builder* is **not** available for ABAP sources. Except for:
+> 
+>     -   CDS views if the source connection is SAP S/4HANA Cloud 2302, SAP S/4HANA on-premise 1909 or higher.
+>     -   SAP Landscape Transformation Replication Server objects if ABAP Add-on DMIS 2018 SP08 / DMIS 2020 SP04 is installed.
 
 
 

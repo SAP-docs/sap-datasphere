@@ -4,7 +4,7 @@
 
 # Importing SAP and Partner Business Content from the Content Network
 
-Users with the *DW Administrator* or *DW Space Administrator* role can import business content and sample content from SAP and partners from the *Content Network*.
+Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Semantic Onboarding* app to import business content and sample content from SAP and partners published to the *Content Network*.
 
 
 
@@ -17,6 +17,8 @@ Detailed documentation for all business content is available at [SAP Datasphere 
 
 > ### Note:  
 > The *Content Network* is not available for trial users.
+
+We also provide content for download at our [Community Content](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content) site.
 
 
 

@@ -36,7 +36,7 @@ On the left of the monitoring screen, you find the aggregated status information
 
 -   `Failed (Stopped)`: You have stopped the replication flow. For more information about the consequences and about what you can do next, see below under Stopping a Replication Flow Run.
 
--   `Failed (Locked)`: A parallel flow is already running for this object. As you can have several flows running on the same objects, the first flow will continue running and the other ones will get the status *Failed \(Locked\)*.
+-   `Failed (Locked)`: A parallel flow is already running for this object. As you cannot have several flows running on the same objects, the first flow will continue running and the other ones will get the status *Failed \(Locked\)*.
 
 -   `Completed`: This status is relevant for initial load and means that the run has been finished successfully for all objects.
 

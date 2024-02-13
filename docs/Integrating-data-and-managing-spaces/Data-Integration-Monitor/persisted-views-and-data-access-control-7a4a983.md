@@ -14,7 +14,11 @@ Without *Data Access Control* \(DAC\), all users assigned to a space in SAP Data
 
 While defining *Data Access Control* in your view, you need to consider the impact on the data persistence:
 
--   You can persist a view with *Data Access Control* set up.
+-   You can persist a view if a data access control with structure "Values Only" is assigned to it.
+
+    > ### Note:  
+    > *Data Access Control* structures "Operator and Values" and "Hierarchy" are not supported by persisted views.
+
 -   You can't persist a view consuming a view with *Data Access Control* set up.
 
     > ### Example:  

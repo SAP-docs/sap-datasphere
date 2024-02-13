@@ -21,7 +21,7 @@ You must be assigned one of the following:
 
 
     > ### Note:  
-    > To see the details of any terms, tags, data products, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
+    > To see the details of any terms, tags, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
 
 
 > ### Tip:  
@@ -430,7 +430,7 @@ You can expand or collapse a source system, using the <span class="FPA-icons">�
 </td>
 <td valign="top">
 
-The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud public folder\). It contains assets that appear in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
+The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud folder\). It contains assets that appear in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
 You can expand or collapse a container, using the <span class="FPA-icons"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
 
@@ -439,18 +439,23 @@ You can expand or collapse a container, using the <span class="FPA-icons"></s
 <tr>
 <td valign="top">
 
-\(4a\) Authorized Object
+\(4\) Authorized Object
 
-\(4b\) Unauthorized Object
+\(5\) Unauthorized Object
 
-\(4c\) Analyzed Object
+\(6\) Analyzed Object
 
 </td>
 <td valign="top">
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
-Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons"></span> \(Open Asset Details\). Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
+-   Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons"></span> \(Open Asset Details\).
+
+-   Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
+
+-   The analyzed object appears as a light blue object.
+
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons"></span> \(Show Next Level\) or <span class="SAP-icons"></span> \(Hide All\) on the object.
 
@@ -550,7 +555,7 @@ After you evaluate and determine that the asset is the right one for your needs,
 
     -   In SAP Datasphere, save and then deploy the source file. Only files that have been saved and deployed can be added to the catalog. For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
-    -   In SAP Analytics Cloud, save the source file in the *Public* folder. Only files that have been saved in the *Public* folder can be added to the catalog.
+    -   In SAP Analytics Cloud, save the source file in a folder location.
 
 
 

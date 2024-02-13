@@ -12,7 +12,7 @@ Add a source table to read data from. You can add multiple source tables and com
 
 ## Procedure
 
-1.  Navigate to the *View Transform Editor*.
+1.  Navigate to the *Graphical View Editor*.
 
 2.  Drag a table from the *Repository* and drop it onto the diagram.
 
@@ -105,5 +105,8 @@ Add a source table to read data from. You can add multiple source tables and com
 4.  In the *Columns* section, you can view the columns of the source table. To check the data type of a column, hover over it and click <span class="FPA-icons"></span>.
 
     If the delta capture setting is enabled for a table, two additional columns are present in the table to track changes. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+
+    > ### Note:  
+    > If the delta capture setting is enabled for a source table, the columns *Change Date* and *Change Type* are automatically mapped to these columns in the target table. Mapping these columns \(or a calculated column that contains the content of these columns\) to any other target column is not permitted. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
 
 

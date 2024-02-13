@@ -222,6 +222,18 @@ The user could not be authenticated, has been locked, or deleted.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*RESOURCE\_LIMIT\_ERROR*
+
+</td>
+<td valign="top">
+
+The task can't be performed because sufficient resources are not available. Navigate to the details screen of the relevant log and check the message detail for more information.
+
+</td>
+</tr>
 </table>
 
 You can also monitor the statuses and substatuses in the <span class="FPA-icons"></span> \(*System Monitor*\). For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/28910cded17a42a0bf16225309cb8bf6.html "Administrators have access to various monitoring logs and views, and can create database analysis users, if necessary, to help troubleshoot issues.") :arrow_upper_right:

@@ -156,6 +156,23 @@ Allows users to log into SAP Datasphere. Included in all standard roles except f
 <tr>
 <td valign="top">
 
+*Other Datasources*
+
+</td>
+<td valign="top">
+
+`----E---`
+
+</td>
+<td valign="top">
+
+Some connection types require this privilege. For more information, see [Permissions](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/93fec5646f144e109745ce74fd492c3f.html) in the *SAP Analytics Cloud Help*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Role*
 
 </td>
@@ -598,7 +615,7 @@ Allows access to remote and run-time objects:
 -   *Create*, *Read*, *Update* and *Delete* - To create, update, or delete a connection in the *Connections* app, in addition to the corresponding *Space Files* permission.
 
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of sources, cloud as well as on-premise sources, SAP as well as Non-SAP sources, and partner tools. They allow users assigned to a space to use objects from the connected source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -817,7 +834,7 @@ Allows access to data in modeling objects:
 -   `U` \(*Update*\) - Upload data from a csv file to a local table. For local tables with delta capture enabled, updates are tracked in the "Change Type" column.
 -   `E` \(*Execute*\) - Access data in all *Data Builder* and *Business Builder* objects and edit data in *Data Builder* local tables.
 
-See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of SAP Datasphere with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:
+See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:
 
 </td>
 </tr>

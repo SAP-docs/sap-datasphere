@@ -25,9 +25,9 @@ For more information on global and scoped privileges, see [Privileges and Permis
 
 Users have relevant privileges depending on which actions they can do in the spaces.
 
--   Lisa administrate the SAP Datasphere tenant.
--   Phyllis administrates the SAP Datasphere tenant and also has modeler privileges in the two spaces Sales Europe and Sales US.
--   James has purchasing modeler privileges in the Purchasing space and has viewer privileges in the Global Purchasing space.
--   Sally and Bob have modeler privileges in the two spaces Sales Europe and Sales US.
--   Jim has modeler privileges in the Sales Europe Space.
+-   Lisa administers the SAP Datasphere tenant.
+-   Claret administers the SAP Datasphere tenant and also has modeler privileges in the two spaces Sales Europe and Sales US.
+-   Jorge has purchasing modeler privileges in the Purchasing space and has viewer privileges in the Worldwide Purchasing space.
+-   Maeve and Ahmed have modeler privileges in the two spaces Sales Europe and Sales US.
+-   Lucia has modeler privileges in the Sales Europe space.
 

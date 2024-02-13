@@ -4,7 +4,7 @@
 
 # Transporting Content Between Tenants
 
-Users with the *DW Administrator* or *DW Space Administrator* role can use the *Transport* app to transfer content between tenants via a private cloud storage area.
+Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Transport* app to transfer content between tenants via a private cloud storage area.
 
 The following object types can be exported and imported via the <span class="FPA-icons"></span> \(*Transport*\) app:
 
@@ -153,7 +153,7 @@ The definition of a data access control contains the definition of its permissio
 
 Task Chains
 
-See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.") :arrow_upper_right:.
+See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. (You can also nest other task chains within a task chain.) Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -202,8 +202,6 @@ See [Creating a Consumption Model](https://help.sap.com/viewer/24f836070a704022a
 
 The definition of a consumption model contains all its perspectives \(which are also listed separately\), along with the definition of all its source fact models and business entities. When you export a consumption model \(or one of its perspectives\), these objects are exported too.
 
-You can deselect individual perspectives to exclude them from export. When overwriting a consumption model during an import, any perspectives excluded from the package will be deleted.
-
 </td>
 </tr>
 <tr>
@@ -229,7 +227,7 @@ The definition of an authorization scenario contains the definition of its data 
 > You can also export certain content from and import content to your space via:
 > 
 > -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
-> -   The `datasphere` command line interface \(see [Importing and Exporting Objects via the Command Line](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/649465700ff14cd3ab7aebd72f370115.html "You can use the SAP Datasphere command line interface, datasphere, to import objects to and export objects from your space.") :arrow_upper_right:\).
+> -   The `datasphere` command line interface `objects` commands \(see [List, Read, and Delete Modeling Objects via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/6f5c65f209004751aa48f9682ee2ec45.html "You can list, read, and delete tables, views, and other modeling objects from the command line.") :arrow_upper_right:\).
 
-For information about importing business content in the form of end-to-end business scenarios for specific industries and lines of business provided by SAP and its partners via the <span class="FPA-icons"></span> \(*Content Network*\) app, see [Importing SAP and Partner Business Content from the Content Network](../importing-sap-and-partner-business-content-from-the-content-network-400078d.md).
+For information about importing business content in the form of end-to-end business scenarios for specific industries and lines of business provided by SAP and its partners via the <span class="FPA-icons"></span> \(*Semantic Onboarding*\) app, see [Importing SAP and Partner Business Content from the Content Network](../importing-sap-and-partner-business-content-from-the-content-network-400078d.md).
 

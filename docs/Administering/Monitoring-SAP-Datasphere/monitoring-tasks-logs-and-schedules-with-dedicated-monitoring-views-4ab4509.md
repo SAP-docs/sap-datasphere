@@ -59,6 +59,60 @@ The following monitoring views are ready to use in the DWC\_GLOBAL schema and ca
     </tr>
     </table>
     
+-   SPACE\_USERS\_V\_EXT:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Column
+    
+    </th>
+    <th valign="top">
+
+    Function
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SPACE\_ID
+    
+    </td>
+    <td valign="top">
+    
+    Identifier of the SAP Datasphere space. Note that one space can contain several users.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    USER\_NAME
+    
+    </td>
+    <td valign="top">
+    
+    Identifier of the user.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    USER\_TYPE
+    
+    </td>
+    <td valign="top">
+    
+    Type of user, such as space technical user \(for example database user for open SQL schemas\) or global user.
+    
+    </td>
+    </tr>
+    </table>
+    
 -   TASK\_SCHEDULES\_V\_EXT:
 
 

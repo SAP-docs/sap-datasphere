@@ -145,6 +145,6 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 
 
 
-> ### Note:  
-> The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not allowed for external data access and is only consumed by the above SAP Datasphere internal apps.
+> ### Restriction:  
+> The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not permitted for external data access and is only consumed by the above SAP Datasphere internal apps. Using the internal delta capture columns \(*Change Date* or *Change Type*\) or their content directly or indirectly for external delta replication outside the Premium Outbound Integration is also not permitted. For more information, see [Premium Outbound Integration](https://blogs.sap.com/2023/11/16/replication-flow-blog-series-part-2-premium-outbound-integration/).
 

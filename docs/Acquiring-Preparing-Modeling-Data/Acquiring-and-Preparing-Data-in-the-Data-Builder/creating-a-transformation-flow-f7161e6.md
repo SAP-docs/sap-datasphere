@@ -22,6 +22,9 @@ Creating a transformation flow involves two important steps:
 > ### Note:  
 > A transformation flow only supports the loading of data to a local table in the SAP Datasphere repository.
 
+> ### Note:  
+> A transformation flow generates internal SQL objects that must only be consumed by SAP Datasphere internal apps, and are not allowed for external data access.
+
 
 
 ## Procedure

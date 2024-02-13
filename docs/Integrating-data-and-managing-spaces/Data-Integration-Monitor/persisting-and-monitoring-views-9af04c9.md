@@ -4,7 +4,7 @@
 
 # Persisting and Monitoring Views
 
-From the *Data Integration Monitor* \> *Views*, you can add views that have been created in the *Data Builder*, and persist these views \(direct execution or via a schedule\) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
+From *Data Integration Monitor* \> *Views*, you can add views that have been created in the *Data Builder*, and persist these views \(direct execution or via a schedule\) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
 
 **Prerequisites**: Your view must be deployed.
 
@@ -384,33 +384,6 @@ When you deploy a persisted view, you need to consider the following cases:
 -   If the view uses other views that were not changed, these views are not touched by the deployment and therefore the persistence is still available
 -   If you update or redeploy a view while you are persisting data, the persistence will fail. In this case, try again to persist the view or wait until the next scheduled run.
 -   If the persisted view is consuming a view for which a data access control has changed \(a data access control is added or removed, or its assignment has changed\), then the persistence of your parent view is removed when the underlying view is redeployed.
-
-
-
-<a name="loio9af04c990f294fd28c00f46763dd8b0d__section_zfx_b54_dyb"/>
-
-## Persisted Views and Remote Statements
-
-When your views are based on remote tables where data access is *Remote*, the data is read from a remote source system, and it can take times to persist the data.
-
-In the *Data Integration Monitor* \> *Views* - Details screen, when you run data persistence for such views, you can access statistics information in the execution logs: number of remote statements, volume of data fetched from the remote source system:
-
-![](images/Example_of_a_Log_with_Remote_Queries_Information_13d5f7a.png)
-
-When you click on *View Details* you get a direct link to the*Data Integration Monitor* \> *Remote Queries*, where you can further analyze what’s happened with the remote statements:
-
-![](images/Remote_Queries_Logs_View_Details_f7e1cd0.png)
-
-If your view contains partitions, the log also shows how many partitions and how many remote statements are involved during data persistence:
-
-![](images/Example_of_Remote_Queries_Logs_with_Partitions_926411f.png)
-
-You can analyze the remote statements per partitions because each partition has its own statement ID. Click on *View Details* on the partition row level of the log:
-
-![](images/View_Details_Remote_Query_Log_One_Partition_65d893b.png)
-
-> ### Caution:  
-> Remote statements can be shown for the remote connections from the same space only.
 
 
 

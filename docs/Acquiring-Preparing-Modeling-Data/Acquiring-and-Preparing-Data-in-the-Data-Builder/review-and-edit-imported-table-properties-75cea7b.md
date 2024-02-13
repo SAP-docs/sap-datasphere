@@ -107,7 +107,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     \[read-only\]
 
-    Displays the name of the connection the remote table belongs to.Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
+    Displays the name of the connection the remote table belongs to. Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
     
     </td>
     </tr>
@@ -269,13 +269,15 @@ Provide business-friendly names for your table and its columns, identify its sem
 
 4.  \[remote tables only\] Create filter conditions to load only the data that is needed \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
 
-5.  \[Remote Tables only\]\[read-only\] *Input Parameters*: If your remote table consumes parameterized Hana SQL views using SAP HANA smart data access as source, the parameters are displayed with their properties. As the parameters are part of the metadata definition coming from the remote source, this new section is ready only.
+5.  \[Remote Tables only\] *Input Parameters*: If your remote table consumes parameterized Hana SQL views using SAP HANA smart data access as source, the parameters are displayed with their properties. You can define a default value for the parameters..
+
+    ![](images/Input_Parameter_for_Remote_Table_885d97e.jpg)
 
     > ### Note:  
-    > To preview data, you must enter a value for each input parameter. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)
+    > When previewing data, the default value for each input parameter is used. You can however change it if needed. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)
 
     > ### Restriction:  
-    > Parameters with data type cds.LargeBinary are not supported.
+    > Parameters with data type cds.LargeBinary and parameters that start with '$$' are not supported.
 
 6.  Save and Deploy
 

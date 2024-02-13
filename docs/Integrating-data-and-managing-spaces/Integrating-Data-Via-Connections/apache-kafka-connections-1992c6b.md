@@ -228,7 +228,9 @@ You can select:
 </td>
 <td valign="top">
 
-\[read-only\] Displays the Simple Authentication and Security Layer \(SASL\) authentication mechanism to use depending on your selection for *Authentication Type*:
+\[read-only\] Displays the Simple Authentication and Security Layer \(SASL\) authentication mechanism to use depending on your selection for *Authentication Type*. 
+
+The mechanisms are:
 
 -   *PLAIN*: plaintext password defined in RFC 4616.
 -   *SCRAM-256*: Salted Challenge Response Authentication Mechanism \(SCRAM\) password-based challenge-response authentication from a user to a server -based on SHA 256.

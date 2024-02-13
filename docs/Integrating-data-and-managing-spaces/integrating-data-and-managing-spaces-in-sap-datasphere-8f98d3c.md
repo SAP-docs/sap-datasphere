@@ -11,6 +11,7 @@ This topic contains the following sections:
 -   [Prepare and Manage Your Space](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_prepare_space)
 -   [Create Connections to Source Systems](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_sources)
 -   [Integrate Other Data Sources](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_other)
+-   [Import Business and Sample Content](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_content)
 -   [Prepare Row-Level Security for Data](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_dacs)
 -   [Manage and Monitor Data Integration Tasks](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_monitor)
 
@@ -41,7 +42,6 @@ This topic contains the following sections:
 An administrator will assign you the DW Space Administrator role, create your space, and assign you to it. Once this is done, you can prepare your space as follows:
 
 -   Assign SAP Datasphere users to your space \(see [Control User Access to Your Space](control-user-access-to-your-space-9d59fe5.md)\).
--   Optionally import SAP and partner business content to support end-to-end business scenarios for various industries and lines of business \(see [Importing SAP and Partner Business Content from the Content Network](importing-sap-and-partner-business-content-from-the-content-network-400078d.md)\).
 -   Transport objects securely to and from your space \(see [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\).
 -   Use various monitoring and logging tools to manage your space \(see [Managing Your Space](managing-your-space-268ea7e.md)\).
 
@@ -66,6 +66,14 @@ Space administrators can integrate data from other sources:
 
 -   Add SAP HDI containers to your space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/exchanging-data-with-sap-sql-data-warehousing-hdi-con-1aec7ca.md)\)
 -   Generate a time table and associated time dimension views for use in the space \(see [Create Time Data and Dimensions](create-time-data-and-dimensions-c5cfce4.md)\).
+
+
+
+<a name="loio8f98d3c917f94452bafe288055b60b35__section_content"/>
+
+## Import Business and Sample Content
+
+SAP and our partners provide business content to support end-to-end business scenarios for various industries and lines of business via the Content Network and our [Community Content](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content) site \(see [Importing SAP and Partner Business Content from the Content Network](importing-sap-and-partner-business-content-from-the-content-network-400078d.md)\).
 
 
 

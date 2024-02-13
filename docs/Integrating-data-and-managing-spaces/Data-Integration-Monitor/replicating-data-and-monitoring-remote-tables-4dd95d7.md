@@ -165,7 +165,7 @@ Information
 </td>
 <td valign="top">
 
-Displays the name of the connection the remote table belongs to.Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
+Displays the name of the connection the remote table belongs to. Technical or Business Name is displayed, depending on how you have configured your UI settings in *Your Profile* \> *Settings* 
 
 </td>
 </tr>

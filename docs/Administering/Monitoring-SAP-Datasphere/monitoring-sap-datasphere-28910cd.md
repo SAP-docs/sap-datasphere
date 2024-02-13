@@ -498,7 +498,7 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 </td>
 <td valign="top">
 
-Shows the maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
+Shows the amount of CPU time \(in ms\) the task has used in SAP HANA.
 
 > ### Note:  
 > You can see this information:
@@ -806,12 +806,15 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 </td>
 <td valign="top">
 
-Shows the maximum amount of CPU time \(in ms\) the statement has used in SAP HANA.
+Shows the amount of CPU time \(in ms\) the statement has used in SAP HANA.
 
 > ### Note:  
 > You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
 > 
 > Otherwise, no number is displayed.
+
+> ### Note:  
+> The CPU time indicates how much time is used for all threads. It means that if the CPU time is significantly higher than the duration of the statement, then many threads are used. If many threads are used for a long time, no other tasks should be scheduled at that point in time, or resource bottlenecks may occur and tasks may even be canceled.
 
 
 

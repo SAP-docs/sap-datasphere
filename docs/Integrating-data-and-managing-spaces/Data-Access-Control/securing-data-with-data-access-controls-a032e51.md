@@ -17,7 +17,11 @@ This topic contains the following sections:
 
 ## Permissions Entities
 
-Your criteria are defined in a table or view that lists SAP Datasphere user IDs \(in the form required by your identity provider\) and assigns them to one or more criteria.
+Your criteria are defined in a table or view that lists SAP Datasphere user IDs \(in the form required by your identity provider\) and assigns them to one or more criteria. You can define the following types of criteria:
+
+-   Single Values - Each user can only see the records that match any of the single values she is authorized for in the permissions entity. See [Create a "Single Values" Data Access Control](create-a-single-values-data-access-control-5246328.md).
+-   Operator and Values - Each user can only see the records that fulfill the operator-value pairs she is authorized for in the permissions entity, including support for complex `AND` and `OR` combinations. See [Create an "Operator and Values" Data Access Control](create-an-operator-and-values-data-access-control-501594b.md).
+-   Hierarchy - Each user can only see the records that match the hierarchy values she is authorized for in the permissions entity, along with any of their descendents. See [Create a "Hierarchy" Data Access Control](create-a-hierarchy-data-access-control-0afeeed.md)
 
 You can create one or more data access controls that consume each permissions entity, and select one or more columns in each data access control to specify the criteria that it will enforce. You can apply a single data access control to multiple views. Each view protected in this way will filter the results available in its data preview to only those rows meeting the criteria for the current user.
 

@@ -23,3 +23,5 @@ By default, the failed tasks appear on the top. For more information on statuses
 > ### Note:  
 > From each monitor, you can navigate back to the *Data Builder* to change your objects by clicking *Open in Data Builder*.
 
+You also get information about who runs the task \(*Run By*\) and how it has run \(*Run Type*\): *Direct* \(the task started directly while clicking the *Run* button\) or *Scheduled* \(a schedule is created\)
+
