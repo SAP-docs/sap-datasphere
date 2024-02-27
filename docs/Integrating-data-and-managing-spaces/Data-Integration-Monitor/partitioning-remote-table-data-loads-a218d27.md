@@ -19,7 +19,7 @@ Replicating remote tables with larger data volumes without having out-of-memory 
 
 You can create partitions from the *Data Integration Monitor* \> *Remote Tables*– Details screen:
 
-1.  Click <span class="FPA-icons"></span> of the remote table you need to create partitions for.
+1.  Click <span class="FPA-icons-V3"></span> of the remote table you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.
 3.  In the *Define Partitions* window, define your partitions settings. Note that the available options can differ depending if your remote table is connected via SAP HANA smart data integration or SAP HANA smart data access:
 

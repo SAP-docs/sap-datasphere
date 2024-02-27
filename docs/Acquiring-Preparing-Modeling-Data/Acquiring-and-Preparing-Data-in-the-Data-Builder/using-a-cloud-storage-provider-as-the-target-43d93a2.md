@@ -43,7 +43,7 @@ For more information about the corresponding connection types, see [Integrating 
 
 ## Additional Properties
 
-In addition to the properties that apply to all targets \(see the list in [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\), there are the following properties that are only relevant for cloud storage providers. You can review and change these properties for the replication flow itself \(by choosing <span class="FPA-icons"></span> \(Browse target settings\)\) or for individual replication objects \(by selecting an object so that its properties get displayed in the side panel\).
+In addition to the properties that apply to all targets \(see the list in [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\), there are the following properties that are only relevant for cloud storage providers. You can review and change these properties for the replication flow itself \(by choosing <span class="FPA-icons-V3"></span> \(Browse target settings\)\) or for individual replication objects \(by selecting an object so that its properties get displayed in the side panel\).
 
 
 <table>
@@ -117,7 +117,7 @@ Suppress Duplicates
 </td>
 <td valign="top">
 
-Enable this option to avoid duplicate records in your target file. During initial load, if a data record already exists in the target, the default system behavior with cloud storage provider targets is to write this record to the target once again, which results in duplicate records. If this is not the desired behavior for your use case, you can change it by enabling this option.
+Enable this option to avoid duplicate records in your target file. During initial load, if a data record already exists in the target, the default system behavior with cloud storage provider targets would be to write this record to the target once again, which results in duplicate records. However, this is not the desired behavior for many use cases of replication flows, and consequently duplicate suppression is active by default. You can deactivate it if required for your specific use case \(for example to continue using existing replication flows that do not support duplicate suppression\).
 
 </td>
 </tr>

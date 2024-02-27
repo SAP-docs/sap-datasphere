@@ -137,7 +137,7 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     -   [Process Source/Target Changes in the Data Flow Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-target-changes-in-the-data-flow-editor-0af80aa.md)
     -   [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:
 
-5.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy your object.
+5.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy your object.
 
     If any warnings have been generated, the *Validation Messages* dialog opens to allow you to review them. Click *Deploy Anyway* to deploy your changes and dismiss the warning messages.
 

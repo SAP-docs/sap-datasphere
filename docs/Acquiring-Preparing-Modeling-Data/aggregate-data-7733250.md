@@ -24,7 +24,7 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
     For example, if you want to aggregate `Revenue` per `Country`, you should exclude all columns except `Revenue` and `Country`.
 
-3.  Select the projection node in order to display its context tools, and click <span class="FPA-icons"></span> \(Aggregation\).
+3.  Select the projection node in order to display its context tools, and click <span class="FPA-icons-V3"></span> \(Aggregation\).
 
     ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Graphical_View_Editor_-_Aggregate_Data_90e85f4.gif) An *Aggregation* node is created, its symbol is selected, and its properties are displayed in the side panel.
 
@@ -66,8 +66,8 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
     -   Total revenues of more than 1m, enter `SUM(Revenue) > 1000000`
     -   Total revenues for the US only, enter `Country='US'`
 
-    When working on a large expression, click <span class="FPA-icons"></span> \(Enter Full Screen\) to expand the expression editor.
+    When working on a large expression, click <span class="FPA-icons-V3"></span> \(Enter Full Screen\) to expand the expression editor.
 
-7.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+7.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

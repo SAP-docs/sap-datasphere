@@ -14,9 +14,22 @@ Define the source for your replication flow \(connection, container, and objects
 
 -   Connections are created by your system administration. You can only use a data source if a connection has been created for it in your space and if you have the necessary authorizations.
 
--   Containers are the parent objects that hold the data. For a CDS view, for example, the container is the relevant CDS root folder.
+-   Containers are the parent objects that hold the data:
 
--   Replication objects are the datasets that you choose for replication, for example CDS views or database tables.
+    -   For CDS view entities, the container is called SQL\_SERVICE.
+
+    -   For standard CDS views, the container is the CDS root folder \(CDS\_EXTRACTION\).
+
+        If a standard CDS view for which replication is enabled is not shown in the CDS\_EXTRACTION folder, make sure that the user in the source connection has the required authorizations. For connections to an SAP S/4HANA Cloud source system, this might mean that the user must be assigned to an authorization group that contains the CDS view \(as described in [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/f509eddda867452db9631dae1ae442a3.html?version=2308.503)\).
+
+    -   For database tables, the container is the schema that includes the table.
+
+    -   For SAP Landscape Transformation Replication Server \(SLT\), the container is the relevant mass transfer ID. Make sure that it is available in SLT before you start creating your replication flow.
+
+
+-   You can use the SQL service exposure from SAP BTP, ABAP environment, or SAP S/4HANA Cloud, respectively, to replicate custom and standard CDS view entities if your system administration has created the relevant communication arrangements. For more information, see [Data Consumption using SAP Datasphere](https://help.sap.com/docs/btp/sap-business-technology-platform/data-consumption-using-sap-datasphere). For information about the relevant integration scenario, see [Integrating SQL Services using SAP Datasphere](https://help.sap.com/docs/btp/sap-business-technology-platform/integrating-sql-services-using-sap-datasphere).
+
+-   Replication objects are the datasets that you choose for replication, for example individual CDS view entities or database tables.
 
 
 
@@ -27,22 +40,21 @@ Define the source for your replication flow \(connection, container, and objects
 
     If you are not sure which one to choose, or if none of the connections in the list is suitable for your purposes, contact your administration.
 
-    Alternatively, you can get started by clicking <span class="FPA-icons"></span> \(Browse source connections\)
+    Alternatively, you can get started by clicking <span class="FPA-icons-V3"></span> \(Browse source connections\)
 
 2.  Choose *Select Source Container*. A list of available source containers appears. Select the relevant one for your use case.
 
     To narrow down the selection, start typing a part of the folder name in the *Search* field.
 
-    If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to *Initial* because *Initial and Delta* is not supported for SAP Datasphere as the source.
+    -   If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to *Initial* because *Initial and Delta* is not supported for SAP Datasphere as the source.
 
-    For SAP Landscape Transformation Replication Server \(SLT\), the container is the relevant mass transfer ID. Make sure that it is available in SLT before you start creating your replication flow.
+    -   If CDS view entities have been made available using the SQL service exposure in SAP BTP, ABAP environment, you find these entities in a folder called SQL\_SERVICE.
+
 
 3.  Choose *Add Source Objects*. A list of available objects appears. Select the relevant ones for your use case and choose *Next*. A list of the objects you selected appears.
 
     > ### Note:  
-    > -   The list only shows objects for which replication is supported. For example, when replicating data from an SAP S/4HANA source you will only be shown CDS views that have the required annotations for data extraction.
-    > 
-    >     If a CDS view for which replication is enabled is not shown in the CDS\_EXTRACTION folder, please ensure that the user in the source connection has the required authorizations. For connections to an SAP S/4HANA Cloud source system, this might mean that the user must be assigned to an authorization group that contains the CDS view \(as described in [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/f509eddda867452db9631dae1ae442a3.html?version=2308.503)\).
+    > -   The list only shows objects for which replication is supported. For example, if you select SAP S/4HANA Cloud as the source and the folder SQL\_SERVICE as the container, you will only be shown CDS view entities that have the required annotations for data extraction.
     > 
     > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed, are **not** enabled for delta capturing, and have a primary key.
 

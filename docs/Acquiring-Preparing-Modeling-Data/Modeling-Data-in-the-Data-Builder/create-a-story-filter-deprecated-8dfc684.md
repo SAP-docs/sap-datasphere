@@ -27,7 +27,7 @@ Story filters that you add to your view will trigger the display of the *Set Var
 
 1.  Select the output node of your view to display its properties in the side panel and scroll down to the *Attributes* section.
 
-2.  Hover over the column which you want to set the filter on, then click <span class="FPA-icons"></span> \(Menu\)** \> *Add Story Filter* to open the filter properties in the side panel.
+2.  Hover over the column which you want to set the filter on, then click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Add Story Filter* to open the filter properties in the side panel.
 
 3.  Set the following properties as appropriate.
 
@@ -93,6 +93,6 @@ Story filters that you add to your view will trigger the display of the *Set Var
     The column displays a filter icon to show that it contains a story filter.
 
     > ### Note:  
-    > To edit or remove the filter, hover over the column and click <span class="FPA-icons"></span> \(Menu\)** \> *Edit Story Filter* or *Remove Story Filter*.
+    > To edit or remove the filter, hover over the column and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Edit Story Filter* or *Remove Story Filter*.
 
 

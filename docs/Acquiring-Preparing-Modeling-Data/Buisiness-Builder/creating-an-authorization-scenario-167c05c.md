@@ -24,7 +24,7 @@ For example, a manager wants to access their employees' data. They only should s
 
 3.  Click *Create*.
 
-4.  Go to the *Data Restrictions* tab and click <span class="FPA-icons"></span> *Data Restrictions*.
+4.  Go to the *Data Restrictions* tab and click <span class="FPA-icons-V3"></span> *Data Restrictions*.
 
 5.  Select a *Business Entity*.
 

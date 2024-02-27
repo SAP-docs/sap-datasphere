@@ -21,7 +21,7 @@ Select a target \(connection and container\) to define the target environment fo
 
 ## Procedure
 
-1.  Choose <span class="FPA-icons"></span> \(Browse target connections\). A list of available target connections appears.
+1.  Choose <span class="FPA-icons-V3"></span> \(Browse target connections\). A list of available target connections appears.
 
 2.  Select the relevant one for your use case.
 

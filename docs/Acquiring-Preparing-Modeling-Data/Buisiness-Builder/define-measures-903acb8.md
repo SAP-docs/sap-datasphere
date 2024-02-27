@@ -18,9 +18,9 @@ Measures can only be used in a consumption model if the business entity is used 
 
 1.  Go to the *Measures* tab.
 
-2.  To define one measure, choose <span class="FPA-icons"></span> *Add*.
+2.  To define one measure, choose <span class="FPA-icons-V3"></span> *Add*.
 
-    To define multiple measures: Choose <span class="FPA-icons"></span> *Add Measures*. Select your measures and choose *Apply*. By default, these measure are of type *Aggregation*. To change details for the measure, choose <span class="FPA-icons"></span> *Details*.
+    To define multiple measures: Choose <span class="FPA-icons-V3"></span> *Add Measures*. Select your measures and choose *Apply*. By default, these measure are of type *Aggregation*. To change details for the measure, choose <span class="FPA-icons-V3"></span> *Details*.
 
 3.  Give your measure a meaningful and business-ready name. This can contain a maximum of 120 characters/special characters.
 
@@ -42,6 +42,6 @@ Measures can only be used in a consumption model if the business entity is used 
 
 11. Save your entries.
 
-12. To duplicate measures, choose <span class="SAP-icons"></span> *Duplicate existing measure*.
+12. To duplicate measures, choose <span class="SAP-icons-V5"></span> *Duplicate existing measure*.
 
 

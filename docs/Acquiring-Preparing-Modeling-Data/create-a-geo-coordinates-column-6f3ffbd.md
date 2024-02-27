@@ -36,13 +36,13 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     -   *Semantic Usage* - *Dimension* 
     -   *Expose for Consumption* - Enabled
 
-2.  Select any object in your graphical view to display its context tools and click <span class="FPA-icons"></span> Calculated Columns.
+2.  Select any object in your graphical view to display its context tools and click <span class="FPA-icons-V3"></span> Calculated Columns.
 
     ![](images/Create_Column_Gif_0560169.gif)
 
     A calculated column node is created, its symbol is selected, and its properties are displayed in the side panel.
 
-3.  Click <span class="FPA-icons"></span> \(Add New Calculated Column\) \> <span class="SAP-icons"></span> \(Geo-Coordinates Column\) to create a new geo-coordinates column.
+3.  Click <span class="FPA-icons-V3"></span> \(Add New Calculated Column\) \> <span class="SAP-icons-V5"></span> \(Geo-Coordinates Column\) to create a new geo-coordinates column.
 
     The new column properties are displayed in the side panel. The column is named *Location* by default.
 
@@ -119,7 +119,7 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
     </tr>
     </table>
     
-5.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
+5.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 

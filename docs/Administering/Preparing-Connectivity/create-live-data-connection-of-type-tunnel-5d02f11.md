@@ -18,10 +18,10 @@ See the prerequisites 1 to 4 in [Preparing SAP BW/4HANA Model Transfer Connectiv
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
     > ### Note:  
-    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons"></span> \(Product Switch\) ** \> ** <span class="FPA-icons"></span> *Analytics*** \> ** <span class="FPA-icons"></span> \(Connections\) and continue with step 3.
+    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** <span class="FPA-icons-V3"></span> \(Connections\) and continue with step 3.
 
 2.  In the *Live Data Connections \(Tunnel\)* section, click *Manage Live Data Connections*.
 

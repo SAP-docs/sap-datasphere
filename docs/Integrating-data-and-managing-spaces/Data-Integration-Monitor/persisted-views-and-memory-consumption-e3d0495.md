@@ -33,7 +33,7 @@ You might need to think about the following steps before persisting the view:
 
 Persisting views can consume a lot of memory and it might be useful to keep an eye on memory figures that are stored with task logs.
 
-You can monitor memory consumption in the task logs if you switch on the option *Expensive Statement Tracing* \(under <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*\).
+You can monitor memory consumption in the task logs if you switch on the option *Expensive Statement Tracing* \(under <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*\).
 
 > ### Note:  
 > -   The memory consumption is measured at runtime only.

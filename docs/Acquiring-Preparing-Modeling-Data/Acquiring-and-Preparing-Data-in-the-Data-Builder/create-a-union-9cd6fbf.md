@@ -79,6 +79,6 @@ A union combines the results from two select statements on separate sources.
 
     The source table is added to the diagram and added to the union node. The union symbol is selected, its properties are displayed in the side panel, the new source table is displayed in the *Mappings* section and its columns are mapped automatically by matching column names where possible.
 
-6.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+6.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

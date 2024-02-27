@@ -141,11 +141,11 @@ Creating a transformation flow involves two important steps:
     
     In the *Run Status* section, you can view the status of the transformation flow run.
 
-5.  Click <span class="FPA-icons"></span> \(Save\). A dialog box appears. Enter a business name and a technical name for your transformation flow.
+5.  Click <span class="FPA-icons-V3"></span> \(Save\). A dialog box appears. Enter a business name and a technical name for your transformation flow.
 
     When you enter a business name, the system automatically suggests a corresponding technical name, but you can change the technical name if required. Both names must be unique within the space you work in.
 
-6.  Click <span class="SAP-icons"></span> \(Deploy\) to make your transformation flow ready to run.
+6.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to make your transformation flow ready to run.
 
     -   Newly created transformation flows are deployed for the first time.
 

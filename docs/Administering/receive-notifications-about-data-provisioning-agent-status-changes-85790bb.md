@@ -28,11 +28,11 @@ A recurring task will check for any status changes according to the configured f
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
 2.  
 
-3.  Go to the *On-Premise Agents* section and click <span class="SAP-icons"></span> \(menu\) ** \> ** *Configure Sending Notifications*.
+3.  Go to the *On-Premise Agents* section and click <span class="SAP-icons-V5"></span> \(menu\) ** \> ** *Configure Sending Notifications*.
 
 4.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the *Configure Sending Notifications* dialog asking for your consent. Give your consent.
 
@@ -55,7 +55,7 @@ A recurring task will check for any status changes according to the configured f
 
 If the status check finds any status change for the agent, a notification will be sent that you can find by clicking :bell: on the shell bar.
 
-When you click on the notification, you’ll get to the *On-Premise Agents* section in <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration* where you can start searching for the root cause in case the agent is disconnected.
+When you click on the notification, you’ll get to the *On-Premise Agents* section in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration* where you can start searching for the root cause in case the agent is disconnected.
 
 
 

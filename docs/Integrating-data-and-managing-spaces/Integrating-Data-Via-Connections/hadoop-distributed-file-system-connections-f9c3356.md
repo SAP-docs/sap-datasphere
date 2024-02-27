@@ -309,7 +309,7 @@ Enter the user principal.
 
 Enter the content of the keytab file of the user from the local system. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>
@@ -345,7 +345,7 @@ Description
 
 Enter the content of the krb5.conf configuration file from your local system. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>

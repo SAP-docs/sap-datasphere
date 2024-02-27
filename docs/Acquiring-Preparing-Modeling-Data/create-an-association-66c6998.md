@@ -31,7 +31,7 @@ In this example:
 
 1.  Open the table or view that will be the source of your association \(or select it in an E/R model to open its *Properties* panel\).
 
-2.  In the *Associations* section, click <span class="FPA-icons"></span> \(Create Association\) to open the *Select Association Target* dialog.
+2.  In the *Associations* section, click <span class="FPA-icons-V3"></span> \(Create Association\) to open the *Select Association Target* dialog.
 
 3.  You can filter the list of available targets by name and type. Select the appropriate target data entity from the list and click *OK* to create the association and open it in the side panel.
 
@@ -65,17 +65,17 @@ In this example:
 5.  Specify the mapping of join columns in the *Join* section:
 
     -   A default mapping is automatically created by matching column names if possible. For example if the originating entity contains a column, `Product ID`, and the target entity has a column with the same name, then a default mapping is created between these two columns.
-    -   To delete a mapping, select the link and then click <span class="FPA-icons"></span> \(Delete\).
+    -   To delete a mapping, select the link and then click <span class="FPA-icons-V3"></span> \(Delete\).
     -   To manually map columns, drag a column from the left list and drop it onto a column in the right list.
     -   You can filter the *Join* section to show only mapped or unmapped pairs of columns.
     -   You can filter or sort the left or right column lists independently
 
     > ### Note:  
-    > To delete an association, select it in the list and click <span class="FPA-icons"></span> \(Delete Association\).
+    > To delete an association, select it in the list and click <span class="FPA-icons-V3"></span> \(Delete Association\).
 
 6.  If the view builds on another source view that itself has an association, you can copy that association:
 
-    1.  Click <span class="FPA-icons"></span> \(Create Association\) \> *Copy from Source*. The *Copy Associations from Source* dialog opens and shows a table containing all source associations available to copy.
+    1.  Click <span class="FPA-icons-V3"></span> \(Create Association\) \> *Copy from Source*. The *Copy Associations from Source* dialog opens and shows a table containing all source associations available to copy.
     2.  Select the association\(s\) to copy and click *Create*. The new association\(s\) is added in the *Association* section in the output node's side panel.
 
 

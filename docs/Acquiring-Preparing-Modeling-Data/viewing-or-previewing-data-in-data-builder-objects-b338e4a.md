@@ -33,7 +33,7 @@ You can view data in the following contexts in the data layer:
 -   Graphical view editor - Click on any diagram symbol \(sources, intermediate nodes, or the output node\).
 -   *Repository* tab of the *Source Browser* - Click on any entity to view its data before adding it to your diagram.
 
-To open the *Data Viewer* panel, click <span class="SAP-icons"></span> \(Show or hide data viewer\)in a data object context menu, in the main toolbar, or in a diagram symbol toolbar.
+To open the *Data Viewer* panel, click <span class="SAP-icons-V5"></span> \(Show or hide data viewer\)in a data object context menu, in the main toolbar, or in a diagram symbol toolbar.
 
 > ### Note:  
 > -   In the table editor or the view editor, the *Input Parameters* dialog appears if the remote table or the view contains one or more input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\). A value might already appear if the input parameter has a predefined default value. You can edit values at any moment by clicking the input parameter strip and entering a new value or get access to a list of predefined values with the *Value Help Dialog* if your input parameter has a predefined default value.
@@ -55,16 +55,16 @@ The viewer headers indicate the total number of rows that can be displayed by sc
 You can control the data viewer in the following ways:
 
 -   Reorder your columns in the panel by drag and drop.
--   Sort on a column by clicking the column header and then clicking <span class="SAP-icons"></span> \(Sort Ascending\) or <span class="SAP-icons"></span> \(Sort Descending\).
+-   Sort on a column by clicking the column header and then clicking <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
 -   Filter on a column. For more information, see the **Filter Data** section below.
 
 
 
 ### Filter Data
 
-Filter on a column by clicking the column header, clicking <span class="FPA-icons"></span> \(Filter\) to open the *Define Filter* dialog. The advanced filtering options are available:
+Filter on a column by clicking the column header, clicking <span class="FPA-icons-V3"></span> \(Filter\) to open the *Define Filter* dialog. The advanced filtering options are available:
 
-1.  Choose the appropriate section for your filter. If your filter is meant to include data in the Data Viewer \(you could say "I want my Data Viewer to show"\), add your filter in the *Include* section. If your filter is meant to exclude data from the Data Viewer \(you could say "I want my Data Viewer to hide"\), add your filter in the *Exclude* section. When in the appropriate section, click <span class="FPA-icons"></span> \(Add Filter\) to add a filter.
+1.  Choose the appropriate section for your filter. If your filter is meant to include data in the Data Viewer \(you could say "I want my Data Viewer to show"\), add your filter in the *Include* section. If your filter is meant to exclude data from the Data Viewer \(you could say "I want my Data Viewer to hide"\), add your filter in the *Exclude* section. When in the appropriate section, click <span class="FPA-icons-V3"></span> \(Add Filter\) to add a filter.
 2.  Select a column to filter on, a filtering option, and a value. You can add several filters. Click *OK* to apply the filter\(s\). The currently applied filters are displayed above the table.
 
     > ### Example:  
@@ -76,7 +76,7 @@ Filter on a column by clicking the column header, clicking <span class="FPA-icon
     > -   Filters applied to text columns are case-sensitive.
     > -   You can enter filter or sort values in multiple columns.
 
-3.  Click *Clear Filter* in the filter strip or <span class="FPA-icons"></span> \(Remove Filter\)in the *Define Filter* dialog to remove the filter.
+3.  Click *Clear Filter* in the filter strip or <span class="FPA-icons-V3"></span> \(Remove Filter\)in the *Define Filter* dialog to remove the filter.
 
 
 
@@ -91,9 +91,9 @@ Show, hide, sort, and filter on multiple columns by clicking :gear: to open the 
 
 When you're done, click *OK* to update the viewer or *Cancel* to erase your changes. To return to the default data viewer columns, click *Reset*.
 
--   Refresh the data viewer at any time by clicking <span class="SAP-icons"></span> \(Refresh\).
+-   Refresh the data viewer at any time by clicking <span class="SAP-icons-V5"></span> \(Refresh\).
 -   Close the data viewer by clicking :x:.
--   In the *Graphical View* editor, preview the SQL generated for the node by clicking <span class="SAP-icons"></span> \(Preview SQL\). Click *Copy* to copy the SQL code for pasting into the *SQL View editor* or elsewhere.
+-   In the *Graphical View* editor, preview the SQL generated for the node by clicking <span class="SAP-icons-V5"></span> \(Preview SQL\). Click *Copy* to copy the SQL code for pasting into the *SQL View editor* or elsewhere.
 
 > ### Note:  
 > The data view may not be fully displayed:
@@ -125,7 +125,7 @@ For more information, see the **Open the Data Viewer** section above.
 ### Working with the data preview
 
 -   Sort data like in the data viewer. For more information, see the **Sort Data** section above.
--   Filter on a column by clicking the column header, clicking <span class="FPA-icons"></span> \(Filter\), and entering a value to filter on.
+-   Filter on a column by clicking the column header, clicking <span class="FPA-icons-V3"></span> \(Filter\), and entering a value to filter on.
 -   Select columns to display as appropriate in the *Columns* dialog. For more information, see the **Choose Columns to Display** section above.
 
 > ### Restriction:  

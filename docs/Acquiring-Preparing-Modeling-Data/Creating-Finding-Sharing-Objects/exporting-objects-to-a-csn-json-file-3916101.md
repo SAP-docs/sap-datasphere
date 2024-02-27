@@ -26,7 +26,7 @@ The *Export to CSN/JSON File* button is available in the following editors:
 
 ## Procedure
 
-1.  In the editor toolbar, click <span class="FPA-icons"></span> \(Export\)** \> *Export to CSN/JSON File*.
+1.  In the editor toolbar, click <span class="FPA-icons-V3"></span> \(Export\)** \> *Export to CSN/JSON File*.
 
 2.  If the editor contains unsaved changes, you are prompted to save. Click *OK*.
 

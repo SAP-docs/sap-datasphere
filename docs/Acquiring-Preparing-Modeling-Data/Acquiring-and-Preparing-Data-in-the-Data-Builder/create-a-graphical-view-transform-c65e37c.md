@@ -40,7 +40,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Filter\)
+    <span class="FPA-icons-V3"></span> \(Filter\)
     
     </td>
     <td valign="top">
@@ -52,7 +52,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Rename/Exclude Columns\)
+    <span class="SAP-icons-V5"></span> \(Rename/Exclude Columns\)
     
     </td>
     <td valign="top">
@@ -64,7 +64,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Calculated Columns\)
+    <span class="FPA-icons-V3"></span> \(Calculated Columns\)
     
     </td>
     <td valign="top">
@@ -76,7 +76,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Aggregation\)
+    <span class="FPA-icons-V3"></span> \(Aggregation\)
     
     </td>
     <td valign="top">
@@ -88,7 +88,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Join Suggestion\)
+    <span class="FPA-icons-V3"></span> \(Join Suggestion\)
     
     </td>
     <td valign="top">
@@ -100,21 +100,21 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
     
     </td>
     <td valign="top">
     
     Preview the data output by the selected diagram node in the *Data Preview* panel \(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
 
-    You can preview the SQL generated for the node by clicking the *Preview SQL* button in the panel or by clicking <span class="FPA-icons"></span> Export and selecting *Preview SQL*. Click *Copy* to copy the SQL code for pasting into the SQL View editor or elsewhere.
+    You can preview the SQL generated for the node by clicking the *Preview SQL* button in the panel or by clicking <span class="FPA-icons-V3"></span> Export and selecting *Preview SQL*. Click *Copy* to copy the SQL code for pasting into the SQL View editor or elsewhere.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
     
     </td>
     <td valign="top">
@@ -128,7 +128,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Open in New Tab\)
+    <span class="SAP-icons-V5"></span> \(Open in New Tab\)
     
     </td>
     <td valign="top">

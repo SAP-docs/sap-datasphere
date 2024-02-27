@@ -83,12 +83,12 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
 
     By default, all the input columns are displayed. You can:
 
-    -   Hover on a column and click <span class="FPA-icons"></span> to see its data type.
+    -   Hover on a column and click <span class="FPA-icons-V3"></span> to see its data type.
     -   Reorder the columns by dragging and dropping.
-    -   Add any missing columns from input operators using <span class="FPA-icons"></span> \(Add Column\) and select the columns.
-    -   Create new columns using <span class="FPA-icons"></span> \(Create New Column\) and provide a name and data type for the column. The new columns are easily identified in the the *Script* node *Columns* section with the <span class="FPA-icons"></span> \(New Column\) icon.
-    -   Remove multiple columns at once, [ctrl\] + [click\]  to select the columns and choose <span class="FPA-icons"></span> \(Delete Columns\) .
-    -   To remove all columns, click *Select All* and choose <span class="FPA-icons"></span> \(Delete Columns\) .
+    -   Add any missing columns from input operators using <span class="FPA-icons-V3"></span> \(Add Column\) and select the columns.
+    -   Create new columns using <span class="FPA-icons-V3"></span> \(Create New Column\) and provide a name and data type for the column. The new columns are easily identified in the the *Script* node *Columns* section with the <span class="FPA-icons-V3"></span> \(New Column\) icon.
+    -   Remove multiple columns at once, [ctrl\] + [click\]  to select the columns and choose <span class="FPA-icons-V3"></span> \(Delete Columns\) .
+    -   To remove all columns, click *Select All* and choose <span class="FPA-icons-V3"></span> \(Delete Columns\) .
 
 6.  To complete the script operator, create a flow from it to the next operator or the target table, as appropriate.
 

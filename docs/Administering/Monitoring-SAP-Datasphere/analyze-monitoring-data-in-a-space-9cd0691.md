@@ -103,7 +103,7 @@ If the tracing is enabled, you can view information on MDS queries when clicking
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+1.  Go to <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 2.  Select a space from the drop-down list and click *Confirm Selected Space*.
 3.  If you've created the *<SAP\_ADMIN\>* space and you want to enable it, click *Enable access to SAP Monitoring Content Space*. If there isn't any space named *<SAP\_ADMIN\>* in your tenant, this is not available for selection.
 4.  To trace expensive statements, select *Enable Expensive Statement Tracing*, specify the following parameters to configure and filter the trace details, then save your changes.

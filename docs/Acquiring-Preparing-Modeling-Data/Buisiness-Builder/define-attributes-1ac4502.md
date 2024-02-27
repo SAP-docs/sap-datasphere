@@ -22,9 +22,9 @@ For more information on the different attribute types, see [Attribute Types](att
 
 1.  Go to the *Attributes* tab.
 
-2.  To define one attribute: Choose <span class="FPA-icons"></span> *New attribute*.
+2.  To define one attribute: Choose <span class="FPA-icons-V3"></span> *New attribute*.
 
-    To define multiple attributes: Choose <span class="FPA-icons"></span> *Add Dimension Source Attributes*. Select your attributes and choose *Apply*. To define the details for an attribute, choose <span class="FPA-icons"></span> *Details*.
+    To define multiple attributes: Choose <span class="FPA-icons-V3"></span> *Add Dimension Source Attributes*. Select your attributes and choose *Apply*. To define the details for an attribute, choose <span class="FPA-icons-V3"></span> *Details*.
 
 3.  Select the attribute type. More information: [Attribute Types](attribute-types-911ec0d.md)
 

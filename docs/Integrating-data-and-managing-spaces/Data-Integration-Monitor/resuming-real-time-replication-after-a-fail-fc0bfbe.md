@@ -16,7 +16,7 @@ It can occur that your real-time replication has been paused with errors. To res
 
 ## Procedure
 
-1.  Go to the Details screen of the remote table using the button <span class="FPA-icons"></span> Remote Table Logs.
+1.  Go to the Details screen of the remote table using the button <span class="FPA-icons-V3"></span> Remote Table Logs.
 
 2.  Check the log details and correct the error.
 

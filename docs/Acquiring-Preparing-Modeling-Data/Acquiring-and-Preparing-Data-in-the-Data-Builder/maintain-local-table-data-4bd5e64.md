@@ -35,10 +35,10 @@ You can maintain data in local tables that:
     You can sort, reorder, filter, or replace your data:
 
     -   **Reorder** - Drag and drop your columns to reorder them.
-    -   **Sort** - Click on the column header and click <span class="SAP-icons"></span> \(Sort Ascending\) or <span class="SAP-icons"></span> \(Sort Descending\).
-    -   **Filter** - Click on the column header and <span class="FPA-icons"></span> \(Filter\) to open the *Define Filter* dialog. Click <span class="FPA-icons"></span> \(Add Filter\), select a column to filter on, a filtering option, and a value. You can apply several filters.
-    -   **Find and Replace** - Click on the column header and <span class="SAP-icons"></span> \(Find and Replace\) to open the *Find and Replace* dialog. You can find and replace string values that aren't key columns or delta table columns. Enter a string value or select *Empty* or *Null* values in the *Find* and *Replace* fields. Check *Match Case* or *Match Entire Field* in the *Settings* sections. \(optional\) Toggle on the occurrence count.
-    -   **Control the previewed columns** - Click <span class="FPA-icons"></span> \(Columns Settings\) and select the columns to show in the preview.
+    -   **Sort** - Click on the column header and click <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
+    -   **Filter** - Click on the column header and <span class="FPA-icons-V3"></span> \(Filter\) to open the *Define Filter* dialog. Click <span class="FPA-icons-V3"></span> \(Add Filter\), select a column to filter on, a filtering option, and a value. You can apply several filters.
+    -   **Find and Replace** - Click on the column header and <span class="SAP-icons-V5"></span> \(Find and Replace\) to open the *Find and Replace* dialog. You can find and replace string values that aren't key columns or delta table columns. Enter a string value or select *Empty* or *Null* values in the *Find* and *Replace* fields. Check *Match Case* or *Match Entire Field* in the *Settings* sections. \(optional\) Toggle on the occurrence count.
+    -   **Control the previewed columns** - Click <span class="FPA-icons-V3"></span> \(Columns Settings\) and select the columns to show in the preview.
 
     > ### Note:  
     > -   The values of a hana.REAL column are automatically overwritten when their format is invalid.
@@ -87,11 +87,11 @@ You can maintain data in local tables that:
     >     -   The value's format is invalid.
     >     -   A field cannot be left empty.
     > 
-    >     Click <span class="FPA-icons"></span> \(Validation Messages\) on the top right corner of your screen to get guidance on how to solve your issue.
+    >     Click <span class="FPA-icons-V3"></span> \(Validation Messages\) on the top right corner of your screen to get guidance on how to solve your issue.
 
     > ### Caution:  
     > If you have enabled *Delta Capture* for your local table, changes are tracked with 2 columns, *Change Type* and *Change Date*. Deleting a record will not physically delete it, but will set the change type to "D" \(Delete\). Therefore, you can't add a new record with a key that already exists, even if the record has the change type set to "D". For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
 
-4.  Click <span class="FPA-icons"></span> \(Save\) to save your changes and click *Table Editor* to close the *Data Editor* and return to the *Table Editor*.
+4.  Click <span class="FPA-icons-V3"></span> \(Save\) to save your changes and click *Table Editor* to close the *Data Editor* and return to the *Table Editor*.
 
 

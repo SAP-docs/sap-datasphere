@@ -107,14 +107,14 @@ Your object's status may be updated when changes to one or more of its sources a
     
 3.  Once you have processed the modifications to the *Identifier Column* or *Criteria* list, and if your data access control is applied to any views, warning messages are displayed urging you to review the impacted views to ensure that the changes have not compromised row level security.
 
-4.  Click <span class="FPA-icons"></span> \(Save\) to save the changes to your object and dismiss any info and warning messages.
+4.  Click <span class="FPA-icons-V3"></span> \(Save\) to save the changes to your object and dismiss any info and warning messages.
 
     If the source changes were saved but not deployed, your object's status should change from *Design-Time Error* to *Changes to Deploy*.
 
     > ### Note:  
     > As the new version of your object depends on the source updates, you should coordinate with the person who has modified the source about deployment. The new version of your object will work correctly in the run-time only when both it and its source are deployed.
 
-5.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy your object.
+5.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy your object.
 
     Your object's status should change from *Changes to Deploy* \(or *Run-Time Error*\) to *Deployed*.
 

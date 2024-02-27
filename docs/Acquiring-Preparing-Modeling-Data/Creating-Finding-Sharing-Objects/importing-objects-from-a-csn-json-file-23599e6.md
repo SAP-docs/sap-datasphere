@@ -16,7 +16,7 @@ A CSN \(Core Data Services Schema Notation\) file contains only the definition o
 
 ## Procedure
 
-1.  Navigate to the *Data Builder* start page or to an entity-relationship model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\) and click <span class="FPA-icons"></span> \(Import\)** \> *Import Objects from CSN/JSON File*.
+1.  Navigate to the *Data Builder* start page or to an entity-relationship model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\) and click <span class="FPA-icons-V3"></span> \(Import\)** \> *Import Objects from CSN/JSON File*.
 
 2.  Select the CSN/JSON file you want to import, and click *Next* to open the *Select Objects to Import* dialog, which lists the objects contained in the CSN/JSON file, their type and semantic usage, as well as status:
 

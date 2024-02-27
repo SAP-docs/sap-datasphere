@@ -10,7 +10,7 @@ If you want to synchronize SAP Datasphere user data with other systems, you can 
 
 ## Procedure
 
-On the *Users* page of the *Security* area, choose <span class="FPA-icons"></span> \(Export\).
+On the *Users* page of the *Security* area, choose <span class="FPA-icons-V3"></span> \(Export\).
 
 
 

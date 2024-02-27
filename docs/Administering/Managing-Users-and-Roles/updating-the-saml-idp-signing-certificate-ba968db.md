@@ -25,15 +25,15 @@ To upload the new metadata file, do the following:
 
 ## Procedure
 
-1.  From the side navigation, go to <span class="FPA-icons"></span> \(*System*\) → <span class="FPA-icons"></span> \(*Administration*\) →*Security* .
+1.  From the side navigation, go to <span class="FPA-icons-V3"></span> \(*System*\) → <span class="FPA-icons-V3"></span> \(*Administration*\) →*Security* .
 
-    If you've provisioned SAP Datasphere prior to version 2020.03 you'll see a different UI and need go to <span class="FPA-icons"></span> \(*My Products*\) → <span class="FPA-icons"></span> \(*Analytics*\) → <span class="FPA-icons"></span> \(*System*\) → <span class="FPA-icons"></span> \(*Administration*\) → *Security*.
+    If you've provisioned SAP Datasphere prior to version 2020.03 you'll see a different UI and need go to <span class="FPA-icons-V3"></span> \(*My Products*\) → <span class="FPA-icons-V3"></span> \(*Analytics*\) → <span class="FPA-icons-V3"></span> \(*System*\) → <span class="FPA-icons-V3"></span> \(*Administration*\) → *Security*.
 
-2.  Select <span class="FPA-icons"></span> \(Edit\) 
+2.  Select <span class="FPA-icons-V3"></span> \(Edit\) 
 
 3.  Under *Step 2*, select *Update* and provide the new metadata file.
 
-4.  Select <span class="FPA-icons"></span> \(Save\) and confirm the change to complete the update.
+4.  Select <span class="FPA-icons-V3"></span> \(Save\) and confirm the change to complete the update.
 
     The update will take effect within two minutes.
 

@@ -10,7 +10,7 @@ Add a *Filter* node to filter your data with an SQL expression.
 
 ## Procedure
 
-1.  Select an object in order to display its context tools, and click <span class="FPA-icons"></span> Filter.
+1.  Select an object in order to display its context tools, and click <span class="FPA-icons-V3"></span> Filter.
 
     ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Graphical_View_Editor_-_Filter_Data_6e54f2d.gif)
 
@@ -44,10 +44,10 @@ Add a *Filter* node to filter your data with an SQL expression.
 
     For example, if you want to list only those products with 10 units or less in stock, enter `Units_on_hand <= 10` 
 
-    When working on a large expression, click <span class="FPA-icons"></span> \(Enter Full Screen\) to expand the expression editor.
+    When working on a large expression, click <span class="FPA-icons-V3"></span> \(Enter Full Screen\) to expand the expression editor.
 
 4.  Click *Validate* to check if your expression is semantically correct, and fix any errors signaled. You can reference columns by name as well as HANA functions, operators, predicates, and case expressions.
 
-5.  Click <span class="FPA-icons"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+5.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
 
 

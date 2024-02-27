@@ -23,7 +23,7 @@ For detailed information about user groups, see [User Groups](https://help.sap.c
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database User Groups*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database User Groups*.
 
 2.  On the *Database User Group* page, click *Create*.
 

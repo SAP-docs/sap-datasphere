@@ -20,7 +20,7 @@ External hierarchies are not created within a business entity; instead, they are
 
 1.  Go to the *Hierarchies* tab.
 
-2.  To add a hierarchy, choose <span class="FPA-icons"></span> \(Add\).
+2.  To add a hierarchy, choose <span class="FPA-icons-V3"></span> \(Add\).
 
 3.  Select your hierarchy and choose *Apply*. The key mapping and the hierarchy structure will be prefilled. The hierarchy structure cannot be changed here, ony in the hierarchy view in the Business Builder.
 

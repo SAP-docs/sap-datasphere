@@ -297,7 +297,7 @@ Enter the realm defined for the Kafka Kerberos broker.
 
 Upload the content of the krb5.conf configuration file. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 Once uploaded, you can check the configuration file by clicking the *inspection* button.
 
@@ -439,7 +439,7 @@ Enter the user name.
 
 Upload the content of the keytab file. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 Once uploaded, you can check the keytab file by clicking the *inspection* button.
 
@@ -557,7 +557,7 @@ Select *true* to use mutual authentication with validating both client and serve
 
 Upload the client key. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>
@@ -571,7 +571,7 @@ Choose <span class="SAP-icons"></span> \(Browse\) and select the file from yo
 
 Upload the client certificate. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>

@@ -8,5 +8,5 @@ Let's look at the objects you might need to create in order to analyze the sales
 
 In the Data Builder, your data engineer has created the tables and views with the data you need. In the Business Builder, you first create the business entities *time*, *sales quota*, *product* and *sales pipeline* and connect them to the objects in the Data Builder. Since you want to reuse this information for a different analysis, you then create a fact model on *pipeline coverage* on top. On top of that, you create your consumption model with the *sales forecasting* perspective, which contains all the data that is relevant for your analysis.
 
-![The graphic has a descriptive text.](images/DWC_-_business_layer_example_ce50900.png)
+![The graphic has an explanatory text.](images/DWC_-_Business_builder_example_new_c1fc99e.png)
 

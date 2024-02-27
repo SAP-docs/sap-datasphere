@@ -40,11 +40,11 @@ Define settings and properties for your replication flow and individual replicat
 
     If the target structure does not yet exist or is empty, you can ignore the *Truncate* setting.
 
-4.  Click <span class="FPA-icons"></span> \(Browse target settings\) to review the target settings **at replication flow level** and change them as appropriate.
+4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the target settings **at replication flow level** and change them as appropriate.
 
     -   Replication Thread Limit: To modify the throughput, you can increase or decrease the default value for the number of replication threads as appropriate for your use case.
 
-        You can change the thread limit in the source accordingly by clicking <span class="FPA-icons"></span> \(Browse source settings\) and entering the appropriate value. The recommendation is to use the same value for the source and the target.
+        You can change the thread limit in the source accordingly by clicking <span class="FPA-icons-V3"></span> \(Browse source settings\) and entering the appropriate value. The recommendation is to use the same value for the source and the target.
 
         See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
 

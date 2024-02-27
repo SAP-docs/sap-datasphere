@@ -26,7 +26,7 @@ The associations that you defined for the business entity are available as dimen
 
 1.  Go to the *Exposed Dimension Sources* tab.
 
-2.  Choose <span class="FPA-icons"></span> *Add* and select the dimension source you want to expose.
+2.  Choose <span class="FPA-icons-V3"></span> *Add* and select the dimension source you want to expose.
 
 3.  Enter a name and a description.
 

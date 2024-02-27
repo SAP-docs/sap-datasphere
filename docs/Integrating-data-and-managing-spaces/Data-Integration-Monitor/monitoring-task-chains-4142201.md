@@ -152,12 +152,12 @@ You can click *Schedule* to create, edit, delete, pause or resume a schedule for
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
-Click <span class="FPA-icons"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or subtasks in the task chain, and log messages about a selected task chain’s execution.
+Click <span class="FPA-icons-V3"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or subtasks in the task chain, and log messages about a selected task chain’s execution.
 
 ![](images/Task_Chain_Runs_86dce77.jpg)
 
 > ### Note:  
-> The task chain *Details* page also lets you resize \(<span class="SAP-icons"></span> and <span class="SAP-icons"></span>\), expand/collapse \(<span class="SAP-icons"></span>\), or close \( :x:\) the display of each panel to focus on specific detail information or log messages. In addition, you can sort \(<span class="SAP-icons"></span> \) and filter \(<span class="SAP-icons"></span> \) information displayed in the different panels, as well as search log messages.
+> The task chain *Details* page also lets you resize \(<span class="SAP-icons-V5"></span> and <span class="SAP-icons-V5"></span>\), expand/collapse \(<span class="SAP-icons-V5"></span>\), or close \( :x:\) the display of each panel to focus on specific detail information or log messages. In addition, you can sort \(<span class="SAP-icons-V5"></span> \) and filter \(<span class="SAP-icons-V5"></span> \) information displayed in the different panels, as well as search log messages.
 
 To view details about a specific task run, select it in the *Runs* list in the left-side panel. The *Runs* list provides a summary of all the selected task chain’s previous runs as well as those scheduled in the future. It also indicates the status of each task chain run, whether previous task chains completed successfully, failed, are currently running, or are scheduled to be run.
 

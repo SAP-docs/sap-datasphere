@@ -40,7 +40,7 @@ After deploying a task chain, you can add tenant users or email addresses to not
 You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 > ### Note:  
-> Exporting and importing task chains via the <span class="FPA-icons"></span> \(*Transport*\) app may not be supported for SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
+> Exporting and importing task chains via the <span class="FPA-icons-V3"></span> \(*Transport*\) app may not be supported for SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
 
 This topic contains information on performing the following tasks:
 
@@ -105,7 +105,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
     </td>
     <td valign="top">
     
-    Name of the task chain
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
     
     </td>
     </tr>
@@ -117,7 +117,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
     </td>
     <td valign="top">
     
-    Technical name of the task chain
+    Displays the name used in scripts and code, synchronized by default with the *Business Name*. 
     
     </td>
     </tr>
@@ -148,19 +148,19 @@ A basic or linear task chain allows you to define a group or series of tasks and
     </td>
     <td valign="top">
     
-    Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy
+    Displays the deployment status of the task chain: it can be deployed, not deployed, or changes to deploy.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Objects in the task chain
+    Objects in Task Chain
     
     </td>
     <td valign="top">
     
-    Displays all objects that have been added to the task chain
+    Displays all objects that have been added to the task chain.
     
     </td>
     </tr>
@@ -194,7 +194,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
 
     ![](images/Select_Open_Object_08d0613.png)
 
-    Note that you can also access the details of each task chain object in the task chain properties panel. Select the relevant object in the object list and click <span class="SAP-icons"></span>:
+    Note that you can also access the details of each task chain object in the task chain properties panel. Select the relevant object in the object list and click <span class="SAP-icons-V5"></span>:
 
     ![](images/View_Detail_Object_fc2af80.png)
 
@@ -313,7 +313,7 @@ In addition to linear task chains in which one task is executed after another, y
 
         ![](images/context_menu_create_branch_301a9fc.png)
 
-    -   Alternatively, you can select the task object, click <span class="FPA-icons"></span> Add from the shell bar above the canvas, and select the *Add Parallel Branch to Selected Task* menu option.
+    -   Alternatively, you can select the task object, click <span class="FPA-icons-V3"></span> Add from the shell bar above the canvas, and select the *Add Parallel Branch to Selected Task* menu option.
 
         ![](images/add_parallel_branch_menu_option_88dd6d8.png)
 
@@ -391,7 +391,7 @@ To set up email notification:
     > ### Note:  
     > Task chains must also first be deployed before you can select or specify users to receive notifications.
 
-13. Click the <span class="SAP-icons"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
+13. Click the <span class="SAP-icons-V5"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
 
     ![](images/Recipients_List_527a05c.png)
 
@@ -402,7 +402,7 @@ To set up email notification:
 
 14. Review the default email subject and message body text and make any updates to either the text or placeholder variables used in the notification email message sent for the current task chain.
 
-    Placeholder variables within the subject and message fields are enclosed by $$ characters, for example, $$status$$. You can click the <span class="SAP-icons"></span> icon to display a list of available placeholder variable names you may include in either the email subject or message body text fields.
+    Placeholder variables within the subject and message fields are enclosed by $$ characters, for example, $$status$$. You can click the <span class="SAP-icons-V5"></span> icon to display a list of available placeholder variable names you may include in either the email subject or message body text fields.
 
     > ### Note:  
     > Changes you make to the email notification template are saved when you redeploy the updated task chain that has email notification subject and body text template changes. When the task chain is run and notification emails are sent out, placeholder variables in the notification template will be replaced with actual values available at runtime. You should note, however, that no email notifications will be sent out if any error occurs during initialization or preparation to run a task chain, before task execution actually starts.

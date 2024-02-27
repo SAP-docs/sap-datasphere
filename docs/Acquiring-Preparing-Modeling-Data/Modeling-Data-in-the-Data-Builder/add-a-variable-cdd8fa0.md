@@ -21,7 +21,7 @@ There are different types of variables to choose from:
 
 ## Create Source Variable
 
-1.  You can create a new source variable by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Variable in the properties panel. Choose *Source Variable*.
+1.  You can create a new source variable by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Variable in the properties panel. Choose *Source Variable*.
 2.  Enter a name for your variable.
 3.  You can set a default value.
 
@@ -31,7 +31,7 @@ There are different types of variables to choose from:
 
 ## Create Restricted Measure Variable
 
-1.  You can create a new source variable by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Variable in the properties panel. Choose *Restricted Measure Variable*.
+1.  You can create a new source variable by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Variable in the properties panel. Choose *Restricted Measure Variable*.
 2.  Choose the dimension for which the variable should be created.
 3.  Choose the *Filter Type*. The filter can be
     -   a single value: The user should enter a single value to filter on. You can optionally specify a default value.
@@ -49,7 +49,7 @@ There are different types of variables to choose from:
 
 You can create only one filter variable for each dimemsion.
 
-1.  You can create a new filter variable by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Variable in the properties panel. Choose *Filter Variable*.
+1.  You can create a new filter variable by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Variable in the properties panel. Choose *Filter Variable*.
 2.  Choose the dimension for which the variable should be created.
 3.  Choose the *Filter Type*. The filter can be
     -   a single value: The user should enter a single value to filter on. You can optionally specify a default value.
@@ -66,7 +66,7 @@ You can create only one filter variable for each dimemsion.
 
 ## Create a Reference Date Variable
 
-1.  You can create a new reference date variable by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Variable in the properties panel. Choose *Reference Date Variable*.
+1.  You can create a new reference date variable by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Variable in the properties panel. Choose *Reference Date Variable*.
 2.  You can set a single value as a default value. The variable is always mandatory.
 
 

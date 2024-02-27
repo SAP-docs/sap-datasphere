@@ -10,7 +10,7 @@ Matched results are input records that are matched with a lookup record. You can
 
 ## Procedure
 
-1.  Select the rule node and then click <span class="FPA-icons"></span> \(Preview Data\) to open the *Preview* panel.
+1.  Select the rule node and then click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Preview* panel.
 
 2.  Click the *Matched* tab.
 
@@ -41,7 +41,7 @@ Matched results are input records that are matched with a lookup record. You can
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
+    <span class="SAP-icons-V5"></span> \(Collapse All\) / <span class="SAP-icons-V5"></span> \(Expand All\)
     
     </td>
     <td valign="top">

@@ -129,7 +129,7 @@ Add a new persisted view
 </td>
 <td valign="top">
 
-Click *Add View* and select the view you want to persist. It's then added to the *Views* list. You can then either persist the view immediately, by selecting *Data Persistence* \> *Start Data Persistence*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md)\).
+Click *Add View* and select the view you want to persist. It's then added to the *Views* list. You can then either persist the view immediately, by selecting *Data Persistence* \> *Start Data Persistence*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md)\).
 
 > ### Note:  
 > For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
@@ -178,7 +178,7 @@ Define, edit, delete, pause, resume or assign schedule to your name.
 </td>
 <td valign="top">
 
-For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
 
 </td>
 </tr>
@@ -190,7 +190,7 @@ Access the detailed logs to monitor what's happened with your persisted view.
 </td>
 <td valign="top">
 
-Select the relevant view and click: <span class="SAP-icons"></span> \(View Details\).
+Select the relevant view and click: <span class="SAP-icons-V5"></span> \(View Details\).
 
 </td>
 </tr>

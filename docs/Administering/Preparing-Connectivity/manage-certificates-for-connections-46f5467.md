@@ -38,9 +38,9 @@ For connections secured by leveraging HTTPS as the underlying transport protocol
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
 
-2.  Click <span class="FPA-icons"></span> Add Certificate.
+2.  Click <span class="FPA-icons-V3"></span> Add Certificate.
 
 3.  In the *Upload Certificate* dialog, browse your local directory and select the certificate.
 

@@ -22,9 +22,9 @@ Measures are displayed in the *Measures* section of tables and views.
 By default, all columns in a fact are identified as attributes, and you must convert one or more into measures:
 
 -   In the graphical or SQL view editor:
-    -   To convert a numerical attribute into a measure, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Change to Measure*, or drag the attribute token and drop it into the *Measures* list.
+    -   To convert a numerical attribute into a measure, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Change to Measure*, or drag the attribute token and drop it into the *Measures* list.
 
-    -   To convert a measure into an attribute, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Change to Attribute*, or drag the measure token and drop it into the *Attributes* list.
+    -   To convert a measure into an attribute, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Change to Attribute*, or drag the measure token and drop it into the *Attributes* list.
 
 
 -   In the local or remote table editor:
@@ -114,7 +114,7 @@ Choose from the following:
 -   *NONE* - Perform no aggregation.
 
 > ### Note:  
-> To modify the default aggregation type of a column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Change Aggregation* \> **<Aggregation\>**.
+> To modify the default aggregation type of a column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Change Aggregation* \> **<Aggregation\>**.
 
 
 
@@ -199,7 +199,7 @@ Show
 You can now control the visibility of columns in SAP Analytics Cloud by choosing to include or exclude them in your analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 > ### Note:  
-> To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.
+> To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.
 
 
 

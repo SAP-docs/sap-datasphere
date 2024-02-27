@@ -45,7 +45,7 @@ Key
 Select the checkbox to specify that the column is a primary key column. Key columns cannot be null. 
 
 > ### Note:  
-> To set or remove an attribute as a primary key column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Set as Key* or *Remove as Key*.
+> To set or remove an attribute as a primary key column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Set as Key* or *Remove as Key*.
 
 
 
@@ -179,7 +179,7 @@ Show
 You can now control the visibility of columns in SAP Analytics Cloud by choosing to include or exclude them in your analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 > ### Note:  
-> To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.
+> To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.
 
 
 

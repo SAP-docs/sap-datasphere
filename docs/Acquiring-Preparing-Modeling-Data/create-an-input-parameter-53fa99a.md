@@ -30,9 +30,9 @@ Views that contain input parameters require special treatment in the following s
 
 ## Procedure
 
-1.  Select the output node of your view to display its properties in the side panel, scroll down to the *Input Parameters* section, and click <span class="FPA-icons"></span> \(Input Parameters\).
+1.  Select the output node of your view to display its properties in the side panel, scroll down to the *Input Parameters* section, and click <span class="FPA-icons-V3"></span> \(Input Parameters\).
 
-2.  In the *Input Parameters* dialog, click <span class="FPA-icons"></span> \(Add\) to create a new parameter. 
+2.  In the *Input Parameters* dialog, click <span class="FPA-icons-V3"></span> \(Add\) to create a new parameter. 
 
 3.  Complete the properties of the input parameter:
 

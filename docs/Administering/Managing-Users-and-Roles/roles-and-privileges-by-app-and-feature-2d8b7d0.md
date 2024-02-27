@@ -50,7 +50,7 @@ Contained in Standard Role...
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Home*\) 
+<span class="FPA-icons-V3"></span> \(*Home*\) 
 
 </td>
 <td valign="top">
@@ -69,7 +69,7 @@ All roles except *DW Consumer*
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(*Repository Explorer*\)
+<span class="SAP-icons-V5"></span> \(*Repository Explorer*\)
 
 See [Repository Explorer](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
 
@@ -90,7 +90,7 @@ All roles except *DW Consumer*
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>\(*Catalog*\)
+<span class="SAP-icons-V5"></span>\(*Catalog*\)
 
 See [Governing and Publishing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "The SAP Datasphere catalog is the central place to discover, enrich, classify, and publish high-quality, trusted data and analytic assets from across your enterprise.") :arrow_upper_right:
 
@@ -168,7 +168,7 @@ See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f83607
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Semantic Onboarding*\)
+<span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\)
 
 See [Semantic Onboarding](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4c9e45e19ff14271a65f883e30023736.html "The Semantic Onboarding app provides a central entry point to import semantically-rich objects from your SAP systems and the Content Network, as well as the Public Data Marketplace and other marketplace contexts.") :arrow_upper_right:.
 
@@ -207,7 +207,7 @@ Each section requires a specific permission:
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Business Builder*\)
+<span class="FPA-icons-V3"></span> \(*Business Builder*\)
 
 Start page
 
@@ -319,7 +319,7 @@ The following features need additional permissions \(which are included in the *
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(*Data Access Controls*\)
+<span class="SAP-icons-V5"></span> \(*Data Access Controls*\)
 
 See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
 
@@ -343,7 +343,7 @@ See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Data Integration Monitor*\)
+<span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\)
 
 See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
@@ -379,7 +379,7 @@ The following features need additional permissions \(which are included in the *
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Connections*\)
+<span class="FPA-icons-V3"></span> \(*Connections*\)
 
 See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:
 
@@ -467,7 +467,7 @@ See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/ac69
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*System Monitor*\)
+<span class="FPA-icons-V3"></span> \(*System Monitor*\)
 
 See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md)
 
@@ -486,21 +486,24 @@ See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-data
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Security*\)
+<span class="FPA-icons-V3"></span> \(*Security*\)
 
 Users \(see [Managing SAP Datasphere Users](managing-sap-datasphere-users-4fb82cb.md)\)
 
 Roles \(see [Managing Roles and Privileges](managing-roles-and-privileges-3740dac.md)\)
+
+Authorization Overview \(see [View Authorizations \(Users, Roles and Spaces\)](view-authorizations-users-roles-and-spaces-c6538ea.md)\)
 
 Activities \(see [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)\)
 
 </td>
 <td valign="top">
 
-Each sub-tool requires a separate permission:
+The sub-tools require the following permissions:
 
 -   Users: *User* \(CRUD---M\)
 -   Roles: *Role* \(CRUD----\)
+-   Authorization Overview: *Role* \(CRUD----\)
 -   Activities: *Activity Log* \(-R-D----\)
 
 
@@ -515,9 +518,9 @@ Each sub-tool requires a separate permission:
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*Transport*\)
+<span class="FPA-icons-V3"></span> \(*Transport*\)
 
-See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator or DW Space Administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
+See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with the DW Administrator global role (or users with both a scoped DW Space Administrator role and a global role providing the Lifecycle privilege), can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -536,7 +539,7 @@ See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35b
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(*Data Sharing Cockpit*\)
+<span class="SAP-icons-V5"></span> \(*Data Sharing Cockpit*\)
 
 See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Start with Data Marketplace as a data provider.") :arrow_upper_right:
 
@@ -564,7 +567,7 @@ See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb189
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(*System*\)
+<span class="FPA-icons-V3"></span> \(*System*\)
 
 Configuration
 

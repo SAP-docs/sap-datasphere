@@ -18,7 +18,7 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
 
 2.  Click *Create* to open the connection creation wizard.
 
@@ -60,7 +60,7 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
     </td>
     <td valign="top">
     
-    Use <span class="SAP-icons"></span> \(Sort\) to sort alphabetically.
+    Use <span class="SAP-icons-V5"></span> \(Sort\) to sort alphabetically.
     
     </td>
     </tr>
@@ -260,7 +260,7 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
     > ### Note:  
     > When creating a connection to a partner tool such as Precog, the system checks whether the required IP address or addresses are already available in the IP allowlist. Note that connection creation takes longer because checking the allowlist in the database requires some time.
 
-9.  Select the connection and click <span class="SAP-icons"></span> \(Validate Connection\) to check if your connection is valid and can be used for the enabled features.
+9.  Select the connection and click <span class="SAP-icons-V5"></span> \(Validate Connection\) to check if your connection is valid and can be used for the enabled features.
 
     > ### Note:  
     > When creating a connection to SAP HANA on-premise using SAP HANA smart data access via Cloud Connector, the system checks for a required internal service. In the connection overview, a warning icon indicates that the service might not be ready yet. This happens for the first connection you create or when you create a connection after the service has been disabled \(after an automated weekly check returning that there is no such connection anymore\). Getting the service ready might take up to 45 minutes. Validate the connection and check the message details for more information.

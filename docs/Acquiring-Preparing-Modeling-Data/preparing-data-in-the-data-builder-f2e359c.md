@@ -79,7 +79,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
 
 -   Click one of the tabs to filter the list by object type.
 -   Click a tile to create a new object
--   Click <span class="FPA-icons"></span> \(Show filters\) to filter the list on collections and search by criteria. Click *Show More* to open a dialog with additional filter options.
+-   Click <span class="FPA-icons-V3"></span> \(Show filters\) to filter the list on collections and search by criteria. Click *Show More* to open a dialog with additional filter options.
 -   Enter a string in the *Search* field to filter the list on business and technical names and users.
 -   Click a column header to sort or filter the list by values in the column.
 -   Select one or more objects and use any of the following tools:

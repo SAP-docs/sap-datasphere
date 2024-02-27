@@ -34,7 +34,7 @@ For more information about the File adapter configuration, see [File](https://he
 
 ## Procedure
 
-1.  From the <span class="SAP-icons"></span> main menu, open *Configuration* \> *Data Integration*.
+1.  From the <span class="SAP-icons-V5"></span> main menu, open *Configuration* \> *Data Integration*.
 
 2.  On the agent’s tile, click *Edit*.
 

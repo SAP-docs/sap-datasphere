@@ -198,9 +198,9 @@ When uploading the drivers, they are identified by their SHA256-formatted finger
 
 Perform the following steps before creating the first Amazon Redshift, Oracle, or Google BigQuery connection that you want to use for data flows.
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
-2.  Go to *Third-Party Drivers* and choose <span class="FPA-icons"></span> Upload.
+2.  Go to *Third-Party Drivers* and choose <span class="FPA-icons-V3"></span> Upload.
 
 3.  In the following dialog box, choose *Browse* to select the driver file from your download location.
 
@@ -209,7 +209,7 @@ Perform the following steps before creating the first Amazon Redshift, Oracle, o
 
 4.  Choose *Upload*.
 
-5.  Choose <span class="FPA-icons"></span> sync to synchronize the driver with the underlying component. Wait for about 5 to 10 minutes to finish synchronization before you start creating connections or using data flows with the connection.
+5.  Choose <span class="FPA-icons-V3"></span> sync to synchronize the driver with the underlying component. Wait for about 5 to 10 minutes to finish synchronization before you start creating connections or using data flows with the connection.
 
 
 
@@ -220,11 +220,11 @@ Perform the following steps before creating the first Amazon Redshift, Oracle, o
 
 You might need to remove a driver when you want to upload a new version of the driver or your licence agreement has terminated.
 
-1.  Select the driver and choose <span class="FPA-icons"></span> Delete.
+1.  Select the driver and choose <span class="FPA-icons-V3"></span> Delete.
 
-2.  If you're using a connection that requires the removed driver for data flows, choose <span class="FPA-icons"></span> Upload to re-upload the driver to make sure that you can continue using the data flows.
+2.  If you're using a connection that requires the removed driver for data flows, choose <span class="FPA-icons-V3"></span> Upload to re-upload the driver to make sure that you can continue using the data flows.
 
-3.  Choose <span class="FPA-icons"></span> sync to synchronize the driver changes with the underlying component. Once the synchronization has finished, you can continue using data flows with the connection, or, if you haven't uploaded a new driver, you won't be able to use data flows with the connection anymore unless you re-upload the driver.
+3.  Choose <span class="FPA-icons-V3"></span> sync to synchronize the driver changes with the underlying component. Once the synchronization has finished, you can continue using data flows with the connection, or, if you haven't uploaded a new driver, you won't be able to use data flows with the connection anymore unless you re-upload the driver.
 
 
 

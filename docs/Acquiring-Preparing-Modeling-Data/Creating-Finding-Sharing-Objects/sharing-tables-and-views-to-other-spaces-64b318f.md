@@ -52,8 +52,8 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
     > ### Note:  
     > An entity must be deployed before it can be shared.
 
-2.  Click <span class="FPA-icons"></span> \(Share\) to open the *Share* dialog.
-3.  In the *Add Spaces* field, enter the name of the space or spaces that you want to share the entities to \(or click <span class="SAP-icons"></span> to select the spaces in a list and then click *Select*.
+2.  Click <span class="FPA-icons-V3"></span> \(Share\) to open the *Share* dialog.
+3.  In the *Add Spaces* field, enter the name of the space or spaces that you want to share the entities to \(or click <span class="SAP-icons-V5"></span> to select the spaces in a list and then click *Select*.
 
     > ### Note:  
     > You can share entities to any spaces in your SAP Datasphere tenant, including those you are not a assigned to.
@@ -67,7 +67,7 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
 
 5.  Click *Close* to close the *Share* dialog.
 
-    Entities that are shared to other spaces display a <span class="FPA-icons"></span> \(Share\) icon after their business name in the *Data Builder* start page and *Repository Explorer*. You can click this icon to open the *Share* dialog, review the spaces the object is shared to, and, if appropriate, stop sharing it.
+    Entities that are shared to other spaces display a <span class="FPA-icons-V3"></span> \(Share\) icon after their business name in the *Data Builder* start page and *Repository Explorer*. You can click this icon to open the *Share* dialog, review the spaces the object is shared to, and, if appropriate, stop sharing it.
 
 
 

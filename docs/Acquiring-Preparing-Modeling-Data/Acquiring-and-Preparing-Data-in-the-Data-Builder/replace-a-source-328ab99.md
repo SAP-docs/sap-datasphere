@@ -54,6 +54,6 @@ The output structure of the view is preserved as far as possible, and any impact
 
 8.  If your view is itself used as a source by other views, then review the *Dependent Objects* section in the side panel to see if your change has impacted any of them. You can click on an object in the list to navigate to it and review any errors and warnings.
 
-9.  When appropriate, click <span class="SAP-icons"></span> \(Deploy\)to deploy your transformation flow.
+9.  When appropriate, click <span class="SAP-icons-V5"></span> \(Deploy\)to deploy your transformation flow.
 
 

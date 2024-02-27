@@ -455,9 +455,9 @@ Override Calendar Highlights
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Users*\).
+1.  Go to <span class="FPA-icons-V3"></span> \(*Expand*\)** \> **<span class="FPA-icons-V3"></span> \(*Security*\)** \> **<span class="FPA-icons-V3"></span> \(*Users*\).
 
-2.  Select <span class="FPA-icons"></span> \(Import Users\)** \> *Import Users from File*.
+2.  Select <span class="FPA-icons-V3"></span> \(Import Users\)** \> *Import Users from File*.
 
 3.  In the *Import Users* dialog, choose *Select Source File* to upload your CSV file.
 

@@ -65,23 +65,23 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
         > ### Note:  
         > SQLScript cannot be formatted.
 
-    -   Validate your code and update the display of your output structure in the side panel at any time by clicking <span class="FPA-icons"></span> \(Validate SQL and Preview Data\).
+    -   Validate your code and update the display of your output structure in the side panel at any time by clicking <span class="FPA-icons-V3"></span> \(Validate SQL and Preview Data\).
 
         SQL errors and warnings are shown in the *Errors* pane at the bottom of the editor. Problems with the output structure are shown on the *Validation Messages* button in the side panel header.
 
         > ### Note:  
         > If your SQLScript is complicated, SAP Datasphere may not be able to determine the output structure. In this case, you are requested to review the list of columns. Click the *Edit* button to add or delete buttons or change column names and data types.
 
-    -   Preview the data being output by the view by clicking <span class="SAP-icons"></span> \(Show or hide data preview\)\(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+    -   Preview the data being output by the view by clicking <span class="SAP-icons-V5"></span> \(Show or hide data preview\)\(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
 
         Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
 
-    -   Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog: 
-        -   Click <span class="FPA-icons"></span> \(Previous Annotation\) and <span class="FPA-icons"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
+    -   Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog: 
+        -   Click <span class="FPA-icons-V3"></span> \(Previous Annotation\) and <span class="FPA-icons-V3"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
         -   Enter changes for the custom CSN annotations in the code.
-        -   Click <span class="FPA-icons"></span> \(Validate CSN expression\) to check if changes invalidate or not the CSN expression.
+        -   Click <span class="FPA-icons-V3"></span> \(Validate CSN expression\) to check if changes invalidate or not the CSN expression.
 
-    -   View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\) by clicking <span class="FPA-icons"></span> \(Impact and Lineage Analysis\) \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+    -   View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\) by clicking <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
 
 4.  Enter the following properties as appropriate in the side panel:
 
@@ -276,7 +276,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
-7.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
+7.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 

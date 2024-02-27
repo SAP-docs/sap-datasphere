@@ -109,6 +109,6 @@ If the target table of your transformation flow is modified, then the next time 
 
     You cannot modify the structure of the target table directly in the transformation flow editor. If you need to make such changes \(for example to add new source columns or change data types\), you must open and edit it in the table editor. Once you have saved the updated target table, you can return to the transformation flow and adjust mappings as appropriate in the target table node.
 
-6.  Click <span class="FPA-icons"></span> \(Save\) to save the changes to your transformation flow and dismiss the information messages.
+6.  Click <span class="FPA-icons-V3"></span> \(Save\) to save the changes to your transformation flow and dismiss the information messages.
 
 

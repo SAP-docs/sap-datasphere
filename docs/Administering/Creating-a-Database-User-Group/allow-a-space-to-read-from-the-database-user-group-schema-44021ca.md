@@ -24,7 +24,7 @@ You can grant read privileges by running an SAP Datasphere specific stored proce
 
 ## Procedure
 
-1.  From the side navigation area, go to <span class="FPA-icons"></span> *\(System\)* → <span class="FPA-icons"></span> \(*Configuration*\) → *Database Access*→ *Database User Groups*.
+1.  From the side navigation area, go to <span class="FPA-icons-V3"></span> *\(System\)* → <span class="FPA-icons-V3"></span> \(*Configuration*\) → *Database Access*→ *Database User Groups*.
 
 2.  Select the database user group and click *Open Database Explorer*.
 

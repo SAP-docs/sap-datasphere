@@ -43,7 +43,7 @@ Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third
 
 
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Connections*\), select a space if necessary, click the *SAP Open Connectors* tab, and then click *Integrate your SAP Open Connectors Account* to open the *Integrate your SAP Open Connectors Account* dialog.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, click the *SAP Open Connectors* tab, and then click *Integrate your SAP Open Connectors Account* to open the *Integrate your SAP Open Connectors Account* dialog.
 
 2.  In the dialog, provide the following data:
 

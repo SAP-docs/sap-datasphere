@@ -44,9 +44,9 @@ Design-time objects do not contain any data, but you can preview the data they w
 
 The current status of an object is shown in its *Status* property, which can have the following values:
 
--   <span class="SAP-icons"></span> \(Not Deployed\) - The object has never been deployed and exists only as a design-time artifact.
+-   <span class="SAP-icons-V5"></span> \(Not Deployed\) - The object has never been deployed and exists only as a design-time artifact.
 -   :clock3: - The object is deployed to the run-time database and its design-time and run-time versions are identical.
--   <span class="SAP-icons"></span> \(Changes to Deploy\) - The design-time version of the object contains changes that need to be deployed to make them available in the run-time.
+-   <span class="SAP-icons-V5"></span> \(Changes to Deploy\) - The design-time version of the object contains changes that need to be deployed to make them available in the run-time.
 -   \(Design-Time Error\) - The design-time version of the object is invalid. You can save an object with design-time errors, but you cannot deploy it. To correct design-time errors, review each of the validation messages in the editor, make the necessary changes, and then save the object.
 -   \(Run-Time Error\) - The run-time version of the object is invalid and can no longer be used. Run-time errors may be caused by changes in one or more of the object's sources \(see [Modifying Objects That Have Dependent Objects](modifying-objects-that-have-dependent-objects-f315863.md)\). To correct the errors, review each of the validation messages in the editor, make the necessary changes, and then save and deploy the object.
 

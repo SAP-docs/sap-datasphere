@@ -14,7 +14,7 @@ You can share content across tenants from one or more landscapes and set access 
 
 Each tenant can store up to 300 MB of exported content for free in the *My Content* area.
 
-The following object types can be exported and imported via the <span class="FPA-icons"></span> \(*Transport*\) app:
+The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:
 
 
 <table>
@@ -235,7 +235,7 @@ The definition of an authorization scenario contains the definition of its data 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Export*\) and then click :heavy_plus_sign:.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Export*\) and then click :heavy_plus_sign:.
 
     > ### Note:  
     > You can, alternatively, use the*Packages* app to prepare and export packages \(see [Creating Packages to Export](creating-packages-to-export-24aba84.md)\).
@@ -347,7 +347,7 @@ The definition of an authorization scenario contains the definition of its data 
     
 4.  On the *Review and export* page, review the overview of your package.
 
-    If there are any problems, select the warning icon <span class="SAP-icons"></span> to see how to fix them.
+    If there are any problems, select the warning icon <span class="SAP-icons-V5"></span> to see how to fix them.
 
 5.  Click *Export* to export your package.
 

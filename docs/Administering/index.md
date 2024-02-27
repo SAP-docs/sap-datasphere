@@ -35,6 +35,7 @@
         -   [Create a Scoped Role to Assign Privileges to Users in Spaces](Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)
         -   [Assign Users to a Role](Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)
         -   [Assign Users to a Role Using SAML Attributes](Managing-Users-and-Roles/assign-users-to-a-role-using-saml-attributes-3315711.md)
+        -   [View Authorizations \(Users, Roles and Spaces\)](Managing-Users-and-Roles/view-authorizations-users-roles-and-spaces-c6538ea.md)
         -   [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md)
         -   [Roles and Privileges by App and Feature](Managing-Users-and-Roles/roles-and-privileges-by-app-and-feature-2d8b7d0.md)
         -   [Automated Conversion to Scoped Roles](Managing-Users-and-Roles/automated-conversion-to-scoped-roles-6f7c6df.md)

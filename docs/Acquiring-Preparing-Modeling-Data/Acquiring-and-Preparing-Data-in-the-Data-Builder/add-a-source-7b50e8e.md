@@ -140,15 +140,15 @@ Add a source to read data from. You can add multiple sources and combine them to
     
 5.  In the *Columns* section, review the columns of the source.
 
-    -   To view the data type of a column, hover over it and click <span class="FPA-icons"></span>
-    -   If the source is a CSV, JSON, or Excel file, you can change the data type of a column and its corresponding properties by hovering over the column and clicking <span class="FPA-icons"></span> \(Menu\)*Edit Column*.
+    -   To view the data type of a column, hover over it and click <span class="FPA-icons-V3"></span>
+    -   If the source is a CSV, JSON, or Excel file, you can change the data type of a column and its corresponding properties by hovering over the column and clicking <span class="FPA-icons-V3"></span> \(Menu\)*Edit Column*.
 
         > ### Note:  
         > For CSV, JSON, or Excel files, the schema is calculated based on a subset of data and hence you can adjust/verify the suggested data as per your requirements to cover all the data.
 
     -   For a remote source, you can control the data being read.
-        -   To add/delete columns from source, click <span class="FPA-icons"></span>/<span class="FPA-icons"></span> \(Delete\) respectively.
-        -   To add new/removed columns from the source based on latest metadata, click <span class="SAP-icons"></span> \(Refresh to fetch column changes from source\)
+        -   To add/delete columns from source, click <span class="FPA-icons-V3"></span>/<span class="FPA-icons-V3"></span> \(Delete\) respectively.
+        -   To add new/removed columns from the source based on latest metadata, click <span class="SAP-icons-V5"></span> \(Refresh to fetch column changes from source\)
 
 
 6.  \[optional\] For CDI, OData, and ABAP CDS sources complete the *Source Filters* section to define filter conditions for the consumption of their data:
@@ -167,7 +167,7 @@ Add a source to read data from. You can add multiple sources and combine them to
 
     `<column_name>` is a column in the target table where data is being replicated, normally of type `date` or `timestamp`.
 
-7.  \[optional\] For source tables from OData remote connections, you can add or edit the parameters of a selected source table in the *OData Parameters* section. OData parameters allow you to define additional information or constraints to control how the data is returned from the OData connection. Click <span class="FPA-icons"></span> \(Define Parameters\) to open the *OData Parameters* dialog. You can:
+7.  \[optional\] For source tables from OData remote connections, you can add or edit the parameters of a selected source table in the *OData Parameters* section. OData parameters allow you to define additional information or constraints to control how the data is returned from the OData connection. Click <span class="FPA-icons-V3"></span> \(Define Parameters\) to open the *OData Parameters* dialog. You can:
 
     -   Manually enter a custom parameter according to URI conventions \(see [URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)\).
 
@@ -178,7 +178,7 @@ Add a source to read data from. You can add multiple sources and combine them to
 
     In the *OData Parameters* section, enable the *Apply Parameters on Preview* toggle if you want to see how the changes in parameter impact the table preview.
 
-8.  \[optional\] For source tables from OData remote connections, you can edit the depth properties of a selected source table in the *OData Properties* section. Click <span class="FPA-icons"></span> \(Edit OData Properties\) to open the *OData Properties* dialog. You can set the depth of the source table to either 1 or 2.
+8.  \[optional\] For source tables from OData remote connections, you can edit the depth properties of a selected source table in the *OData Properties* section. Click <span class="FPA-icons-V3"></span> \(Edit OData Properties\) to open the *OData Properties* dialog. You can set the depth of the source table to either 1 or 2.
 
     The depth of an OData object refers to the level of related entities that are included in the response when querying the OData service. The depth is by default set to 1 so that only the properties of the requested entity are returned. You can change the depth to 2 to include a second level. Depth is useful when you want to optimize performance by controlling the amount of data returned in a single request.
 

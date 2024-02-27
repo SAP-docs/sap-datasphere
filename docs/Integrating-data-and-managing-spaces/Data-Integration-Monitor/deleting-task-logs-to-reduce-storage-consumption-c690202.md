@@ -22,7 +22,7 @@ However, task logs can consume a lot of spaces in a tenant. Deleting old task lo
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(Configuration\) → *Tasks*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(Configuration\) → *Tasks*.
 
 2.  Check how much size the task logs consume on your tenant. If needed, decide how you want to delete the task logs.
 

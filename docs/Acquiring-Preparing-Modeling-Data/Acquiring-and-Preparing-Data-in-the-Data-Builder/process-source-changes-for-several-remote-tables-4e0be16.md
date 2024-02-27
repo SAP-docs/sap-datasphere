@@ -23,7 +23,7 @@ To identify source changes for several remote tables sharing the same connection
 
 ## Procedure
 
-1.  Click <span class="FPA-icons"></span> Validate Remote Tables.
+1.  Click <span class="FPA-icons-V3"></span> Validate Remote Tables.
 
 2.  From the windows *Validate Remote Tables*, select the relevant source connection and then the remote tables you want to check, and click *Validate*:
 

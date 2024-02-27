@@ -130,7 +130,7 @@ You can use the output of your intelligent lookup as a source for a view or data
     
 3.  In the *Columns* section, review the columns that will be output in the view .
 
-4.  \[optional\] To set a default value for a return column \(to be used when the *Include Unmatched Records* option is enabled\), hover over the return column, click <span class="FPA-icons"></span> \(Menu\)** \> *Set Default Value*, enter a default value in the dialog and click *OK*.
+4.  \[optional\] To set a default value for a return column \(to be used when the *Include Unmatched Records* option is enabled\), hover over the return column, click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Set Default Value*, enter a default value in the dialog and click *OK*.
 
     The default value is shown on the token under the column name.
 

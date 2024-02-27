@@ -35,7 +35,7 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 
 1.  In your consumption model, choose *Data Preview*.
 
-2.  The context menu <span class="FPA-icons"></span> on a field has various options:
+2.  The context menu <span class="FPA-icons-V3"></span> on a field has various options:
 
     -   To remove fields from the output but keep it in the perspective: choose *Remove from Output*.
     -   To remove or add fields: choose *Remove from Perspective* or *Add to Perspecive.* 
@@ -46,13 +46,13 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 
 3.  You can also add or remove fields via drag&drop.
 
-4.  To define a filter you can also choose <span class="FPA-icons"></span> *Add Filter* the bar above the data preview. Here you can choose between the simple and the advanced editor.
+4.  To define a filter you can also choose <span class="FPA-icons-V3"></span> *Add Filter* the bar above the data preview. Here you can choose between the simple and the advanced editor.
 
-5.  You can also select more than one field by choosing <span class="FPA-icons"></span> *Multi Select* and then perform the action for multiple fields.
+5.  You can also select more than one field by choosing <span class="FPA-icons-V3"></span> *Multi Select* and then perform the action for multiple fields.
 
-6.  You can also remove a field from the output by chhoosing <span style="font-size:16px;"><span class="FPA-icons"></span></span> *Remove from Output*.
+6.  You can also remove a field from the output by chhoosing <span style="font-size:16px;"><span class="FPA-icons-V3"></span></span> *Remove from Output*.
 
-7.  You can define settings for your perspective by choosing <span class="FPA-icons"></span> *Settings*:
+7.  You can define settings for your perspective by choosing <span class="FPA-icons-V3"></span> *Settings*:
 
     Define your preferences for the
 
@@ -68,7 +68,7 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 
 10. Switching to other perspectives: When you click on the title of your perspective, you can see the titles of the existing perspectives for this consumption model. From here, you can also open these perspectives.
 
-11. In order to make your perspective consumable, you need to deploy it. Go back to your consumption model, choose the *Perspectives* tab and choose <span class="SAP-icons"></span> *Deploy*. A perspective needs to be deployed in order to be used in a story.
+11. In order to make your perspective consumable, you need to deploy it. Go back to your consumption model, choose the *Perspectives* tab and choose <span class="SAP-icons-V5"></span> *Deploy*. A perspective needs to be deployed in order to be used in a story.
 
 
 <a name="task_ftv_vfy_qpb"/>
@@ -83,17 +83,17 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 
 ## Procedure
 
-1.  Go to the *Perspectives* tab and choose<span class="FPA-icons"></span> \(New Perspective\) .
+1.  Go to the *Perspectives* tab and choose<span class="FPA-icons-V3"></span> \(New Perspective\) .
 
 2.  Enter a business purpose.
 
 3.  Enter an authorization scenario, if required.
 
-4.  Select your measures by choosing <span class="FPA-icons"></span> \(New\)
+4.  Select your measures by choosing <span class="FPA-icons-V3"></span> \(New\)
 
-5.  Select your attributes by choosing <span class="FPA-icons"></span> \(New\)
+5.  Select your attributes by choosing <span class="FPA-icons-V3"></span> \(New\)
 
-6.  Select your hierarchies by choosing <span class="FPA-icons"></span> \(New\)
+6.  Select your hierarchies by choosing <span class="FPA-icons-V3"></span> \(New\)
 
 7.  You can select *Run in Analytical Mode*. When you select this option, the `USE_OLAP_PLAN` hint is sent to the SQL optimizer.
 
@@ -105,7 +105,7 @@ You can create a perspective in the *Perspectives* tab of your consumption model
 
 9.  When you make changes to your perspective, you can save the changes or you can save this changed perspective as a new perspective by choosing *Save As*. You can undo your changes by choosing *Reset*.
 
-10. In order to make your perspective consumable, you need to deploy it. Go back to the *Perspectives* tab and choose <span class="SAP-icons"></span> *Deploy*. A perspective needs to be deployed in order to be used in a story.
+10. In order to make your perspective consumable, you need to deploy it. Go back to the *Perspectives* tab and choose <span class="SAP-icons-V5"></span> *Deploy*. A perspective needs to be deployed in order to be used in a story.
 
 
 

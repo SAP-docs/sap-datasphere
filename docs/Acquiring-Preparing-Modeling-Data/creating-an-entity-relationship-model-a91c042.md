@@ -52,7 +52,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Add Column\) 
+    <span class="FPA-icons-V3"></span> \(Add Column\) 
     
     </td>
     <td valign="top">
@@ -64,7 +64,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Create View from Selection\)
+    <span class="FPA-icons-V3"></span> \(Create View from Selection\)
     
     </td>
     <td valign="top">
@@ -76,7 +76,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Create Table\)
+    <span class="FPA-icons-V3"></span> \(Create Table\)
     
     </td>
     <td valign="top">
@@ -100,7 +100,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Add Related Entities\)
+    <span class="FPA-icons-V3"></span> \(Add Related Entities\)
     
     </td>
     <td valign="top">
@@ -112,7 +112,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
     
     </td>
     <td valign="top">
@@ -124,7 +124,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
     
     </td>
     <td valign="top">
@@ -138,19 +138,19 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\)
+    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\)
     
     </td>
     <td valign="top">
     
-    \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. 
+    \[optional\] Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Open in New Tab\)
+    <span class="SAP-icons-V5"></span> \(Open in New Tab\)
     
     </td>
     <td valign="top">
@@ -163,12 +163,12 @@ The work that you do in an E/R model benefits all the users in your space as the
     
 4.  Edit the selected entity's properties in the *Properties* panel.
 
-5.  Click <span class="FPA-icons"></span> \(Save\) to save your model:
+5.  Click <span class="FPA-icons-V3"></span> \(Save\) to save your model:
 
     -   *Save* to save the entities displayed in your E/R model.
     -   *Save As* to create a local a copy of the entities displayed in your E/R model. The model must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
 
-6.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy the entities displayed in your E/R model:
+6.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy the entities displayed in your E/R model:
 
     -   Newly-created entities are deployed for the first time.
     -   Entities that have changes to deploy are re-deployed.

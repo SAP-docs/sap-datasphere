@@ -71,23 +71,23 @@ The join operator requires two inputs, and it generates a single output.
     </tr>
     </table>
     
-5.  In the *Join Definition* section, click on <span class="FPA-icons"></span> \(Edit\) to modify the predefined join mappings.
+5.  In the *Join Definition* section, click on <span class="FPA-icons-V3"></span> \(Edit\) to modify the predefined join mappings.
 
-    -   Click on <span class="FPA-icons"></span> \(Auto Map\) to automatically create a join that matches column names if possible.
+    -   Click on <span class="FPA-icons-V3"></span> \(Auto Map\) to automatically create a join that matches column names if possible.
     -   To manually create a new join mapping, drag and drop any left column onto any right column.
-    -   To delete a join mapping, select it and click <span class="FPA-icons"></span>.
-    -   To clear all mappings, click <span class="SAP-icons"></span> \(Remove all Mappings\).
+    -   To delete a join mapping, select it and click <span class="FPA-icons-V3"></span>.
+    -   To clear all mappings, click <span class="SAP-icons-V5"></span> \(Remove all Mappings\).
 
 6.  In the *Columns* section, specify the mapping of your columns:
 
-    -   All unique columns from the input operators are displayed. Hover on a column and click <span class="FPA-icons"></span> to view its data type.
+    -   All unique columns from the input operators are displayed. Hover on a column and click <span class="FPA-icons-V3"></span> to view its data type.
     -   You can reorder the columns by dragging and dropping.
-    -   You can add any missing columns from input operators using <span class="FPA-icons"></span> \(Add Column\) and select the columns.
-    -   Click <span class="FPA-icons"></span> \(Menu\) to rename, remove, or duplicate selected column.
-    -   To remove multiple columns at once, press the [Ctrl\] key, click on each columns you want to select, and click <span class="FPA-icons"></span> \(Delete Columns\).
-    -   To remove all columns, click *Select All* and choose <span class="FPA-icons"></span> \(Delete Columns\).
+    -   You can add any missing columns from input operators using <span class="FPA-icons-V3"></span> \(Add Column\) and select the columns.
+    -   Click <span class="FPA-icons-V3"></span> \(Menu\) to rename, remove, or duplicate selected column.
+    -   To remove multiple columns at once, press the [Ctrl\] key, click on each columns you want to select, and click <span class="FPA-icons-V3"></span> \(Delete Columns\).
+    -   To remove all columns, click *Select All* and choose <span class="FPA-icons-V3"></span> \(Delete Columns\).
 
-7.  In the *Advanced Properties* section, click on <span class="FPA-icons"></span> \(Edit\) to define the join optimization. By default, it is set to *Automatic*. Manual optimization should be done only when absolutely necessary.
+7.  In the *Advanced Properties* section, click on <span class="FPA-icons-V3"></span> \(Edit\) to define the join optimization. By default, it is set to *Automatic*. Manual optimization should be done only when absolutely necessary.
 
     -   Select *Join Optimization* as *Manual*.
     -   For left and right joins, respectively;

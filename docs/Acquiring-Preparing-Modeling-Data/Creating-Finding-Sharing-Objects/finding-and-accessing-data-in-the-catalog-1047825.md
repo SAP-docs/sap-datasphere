@@ -10,7 +10,7 @@ The catalog provides an effective data governance strategy by bringing together 
 
 Use the catalog to find the single-source of truth for your data domain to build reusable business models. With the catalog, you can find which stories are impacted by your changes. It all begins by finding the data you need.
 
-You can search for assets by clicking <span class="SAP-icons"></span>\(*Catalog*\) in the side navigation menu.
+You can search for assets by clicking <span class="SAP-icons-V5"></span>\(*Catalog*\) in the side navigation menu.
 
 > ### Note:  
 > You must be assigned one of the following:
@@ -130,7 +130,7 @@ Shows the assets, terms, and KPIs that have been recently added to the catalog.
 </tr>
 </table>
 
-You can also open a side panel when you click <span class="FPA-icons"></span> \(Show filters\) to filter by these categories and more. Click *Show More* to open a dialog with additional filter options.
+You can also open a side panel when you click <span class="FPA-icons-V3"></span> \(Show filters\) to filter by these categories and more. Click *Show More* to open a dialog with additional filter options.
 
 
 
@@ -246,8 +246,8 @@ For example, if you are viewing terms and want to create a condition to filter o
 
 You can change the view to see different information.
 
--   <span class="SAP-icons"></span> \(Display as Grid\)
--   <span class="FPA-icons"></span> \(Display as List\)
+-   <span class="SAP-icons-V5"></span> \(Display as Grid\)
+-   <span class="FPA-icons-V3"></span> \(Display as List\)
 
 **Related Information**  
 

@@ -305,11 +305,11 @@ Ensure that your Data Provisioning Agent is connected to SAP HANA.
 
 ### In SAP Datasphere
 
-In <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*** \> *On-Premise Agents* a green bar and status information on the agent tile indicates if the agent is connected.
+In <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*** \> *On-Premise Agents* a green bar and status information on the agent tile indicates if the agent is connected.
 
 ![](images/DWC_DPA_Status_f2f9c84.png)
 
-In *On-Premise Agents*, click <span class="SAP-icons"></span> *Refresh Agents* if the tile of a newly connected agent doesn’t display the updated connection status.
+In *On-Premise Agents*, click <span class="SAP-icons-V5"></span> *Refresh Agents* if the tile of a newly connected agent doesn’t display the updated connection status.
 
 > ### Note:  
 > When you connect a new agent, it might take several minutes until it is connected.

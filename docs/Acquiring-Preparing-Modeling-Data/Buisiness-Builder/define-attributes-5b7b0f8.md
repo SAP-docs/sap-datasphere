@@ -20,9 +20,9 @@ Attributes in consumption models can either reference attributes from the includ
 
 1.  Go to the *Attributes* tab.
 
-2.  To define an attribute: Choose <span class="FPA-icons"></span> *New attribute*.
+2.  To define an attribute: Choose <span class="FPA-icons-V3"></span> *New attribute*.
 
-    To add multiple attributes: Choose <span class="FPA-icons"></span> *Add Attributes*. Select your attributes and choose *Apply*. To change details for an attribute, choose <span class="FPA-icons"></span> *Details*.
+    To add multiple attributes: Choose <span class="FPA-icons-V3"></span> *Add Attributes*. Select your attributes and choose *Apply*. To change details for an attribute, choose <span class="FPA-icons-V3"></span> *Details*.
 
 3.  Select the attribute type. More information: [Attribute Types](attribute-types-911ec0d.md)
 

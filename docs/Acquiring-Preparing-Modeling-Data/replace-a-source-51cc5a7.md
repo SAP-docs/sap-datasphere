@@ -45,13 +45,13 @@ The output structure of the view is preserved as far as possible, and any impact
 
 6.  \[if old source columns were left unmapped\] Review each of the validation warnings and errors and correct them as appropriate.
 
-7.  Click <span class="FPA-icons"></span> \(Save\) to save your view and update its *Status*.
+7.  Click <span class="FPA-icons-V3"></span> \(Save\) to save your view and update its *Status*.
 
     > ### Note:  
     > If you have not resolved all the validation errors, then you can still save your view, but you will not be allowed to deploy it.
 
 8.  If your view is itself used as a source by other views, then review the *Dependent Objects* section in the side panel to see if your change has impacted any of them. You can click on an object in the list to navigate to it and review any errors and warnings.
 
-9.  When appropriate, click <span class="SAP-icons"></span> \(Deploy\)to deploy your view.
+9.  When appropriate, click <span class="SAP-icons-V5"></span> \(Deploy\)to deploy your view.
 
 

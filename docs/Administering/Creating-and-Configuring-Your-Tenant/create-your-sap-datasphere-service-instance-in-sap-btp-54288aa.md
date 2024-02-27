@@ -7,7 +7,7 @@ Create your SAP Datasphere service instance in SAP Business Technology Platform.
 > ### Note:  
 > Creating an SAP Datasphere service instance in SAP Business Technology Platform \(SAP BTP\) results in provisioning an SAP Datasphere tenant.
 
-If you've signed the Cloud Platform Enterprise Agreement \(CPEA\), you can access the SAP BTP cockpit and view all currently available services in a global account. You need to structure this global account into subaccounts and other related artefacts, such as directories and/or spaces.
+For both subscription-based contracts \(initiated on November 2023\) and consumption-based contracts, you can access the SAP BTP cockpit and view all currently available services in a global account. You need to structure this global account into subaccounts and other related artefacts, such as directories and/or spaces.
 
 
 
@@ -15,10 +15,9 @@ If you've signed the Cloud Platform Enterprise Agreement \(CPEA\), you can acces
 
 ## Prerequisites
 
-To create your SAP Datasphere service instance in SAP BTP, you need the following prerequites:
+To create your SAP Datasphere service instance in SAP BTP, you need the following prerequisites:
 
--   Your global account has a commercial entitlement via cloud credits \(a consumption-based model\).
-
+-   Your global account has a commercial entitlement either via cloud credits \(in case of a consumption-based contract\) or via a subscription-based contract.
 -   A Cloud Foundry subaccount which is entitled for SAP Datasphere. For more information, see [Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5ba357b4fa1e4de4b9fcc4ae771609da.html).
 -   You have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
 
@@ -172,7 +171,7 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     </tr>
     </table>
     
-4.  Click *Next* and enter the following information about the SAP Datasphere system owner, who will be notified when the service instance is created: email, first name and last name.
+4.  Click *Next* and enter the following information about the SAP Datasphere system owner, who will be notified when the service instance is created: *First Name*,*Last Name*, *Email*, and *Host Name*.
 
     > ### Note:  
     > Alternatively, you can use a JSON file to provide the information above.

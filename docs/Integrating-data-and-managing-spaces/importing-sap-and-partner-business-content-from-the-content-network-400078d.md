@@ -24,7 +24,7 @@ We also provide content for download at our [Community Content](https://github.c
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Semantic Onboarding*\), and then click one of the following tiles: 
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click one of the following tiles: 
 
     -   *Business Content*: End-to-end business scenarios created by SAP for various industries and lines of business.
     -   *3rd Party Content*: End-to-end business scenarios created by SAP partners. Some third-party content has to be purchased in the *SAP Store*.
@@ -139,6 +139,6 @@ We also provide content for download at our [Community Content](https://github.c
 
     If you selected *Don’t overwrite objects or data*, a notification will let you know if any of the content wasn’t imported to avoid overwriting existing content.
 
-    To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons"></span> History.
+    To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons-V5"></span> History.
 
 

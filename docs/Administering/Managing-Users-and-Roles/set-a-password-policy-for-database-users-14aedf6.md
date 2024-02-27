@@ -20,7 +20,7 @@ Users with the *DW Space Administrator* role \(space administrators\) can create
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
 
 2.  In the *Password Policy Configuration* section, enter the number of days after which a database user's password will expire.
 

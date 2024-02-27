@@ -28,7 +28,7 @@ Business entities can be modeled as a dimension or as a fact. The definition doe
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Business Builder*\), select a space if necessary, and click *New Dimension* or *New Fact* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Business Builder*\), select a space if necessary, and click *New Dimension* or *New Fact* to open the editor.
 
 2.  Select a source. You can use views or tables which have been created in the Data Builder as a source.
 

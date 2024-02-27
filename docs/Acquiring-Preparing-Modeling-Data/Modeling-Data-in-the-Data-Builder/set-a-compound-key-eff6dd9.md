@@ -320,11 +320,11 @@ A compound key is a key that consists of two or more key columns, namely a key c
 
 1.  You can access the *Compound Key* dialog via two entry points:
 
-    -   In the *Table Editor*, in the *Attributes* table toolbar, select at least two columns and click <span class="SAP-icons"></span> \(Edit Compound Key\).
+    -   In the *Table Editor*, in the *Attributes* table toolbar, select at least two columns and click <span class="SAP-icons-V5"></span> \(Edit Compound Key\).
 
-    -   In the*Graphical View* editor and *E/R Model* editor, in the *Properties* panel, in the *Attributes* section, click <span class="SAP-icons"></span> \(Edit Compound Key\).
+    -   In the*Graphical View* editor and *E/R Model* editor, in the *Properties* panel, in the *Attributes* section, click <span class="SAP-icons-V5"></span> \(Edit Compound Key\).
 
-2.  \[optional\] Reorder keys in the *Key Column\(s\)* section by clicking <span class="FPA-icons"></span> \(Move Up\) and <span class="SAP-icons"></span> \(Move Down\).
+2.  \[optional\] Reorder keys in the *Key Column\(s\)* section by clicking <span class="FPA-icons-V3"></span> \(Move Up\) and <span class="SAP-icons-V5"></span> \(Move Down\).
 
 3.  Define a representative key by selecting a key in the*Key Column\(s\)* section and clicking *Add*. The key has been transferred to the *Representative Key* section.
 

@@ -18,7 +18,7 @@ By default a view is run every time it is accessed and, if the view is complex o
 When opening your view, in the *Properties* panel, under *Data Persistence*, you can see if your view has been made persisted or not.
 
 > ### Note:  
-> You can monitor persisted views in the *Data Integration Monitor*, under *Views*. You can access it directly by clicking <span class="SAP-icons"></span> \(Views Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can add views that have been created in the Data Builder, and persist these views (direct execution or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> You can monitor persisted views in the *Data Integration Monitor*, under *Views*. You can access it directly by clicking <span class="SAP-icons-V5"></span> \(Views Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can add views that have been created in the Data Builder, and persist these views (direct execution or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 
 
 <table>
@@ -98,7 +98,7 @@ You can perform actions on data by clicking *Data Persistence*:
 
 Define, edit, delete, pause, resume or assign schedule to your name.
 
-For more information, see [Schedule a Data Integration Task](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.") :arrow_upper_right:.
+For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
 
 
 

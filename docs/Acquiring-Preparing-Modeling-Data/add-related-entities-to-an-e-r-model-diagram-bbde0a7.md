@@ -12,7 +12,7 @@ If a table or view in your E/R model diagram has previously been connected to ot
 
 ## Procedure
 
-1.  Selecting the entity to open its context menu, and then click <span class="FPA-icons"></span> \(Add Related Entities\) to open the *Add Related Entities* dialog.
+1.  Selecting the entity to open its context menu, and then click <span class="FPA-icons-V3"></span> \(Add Related Entities\) to open the *Add Related Entities* dialog.
 
     Any entities that are connected to the current entity by an association and that aren't already present in the diagram are listed.
 

@@ -18,7 +18,7 @@ If you need to perform maintenance activities in a source system, you can pause 
 
 ## Procedure
 
-1.  In SAP Datasphere, from the <span class="SAP-icons"></span>main menu, open *Configuration* \> *Data Integration* \> *On-Premise Agents*.
+1.  In SAP Datasphere, from the <span class="SAP-icons-V5"></span>main menu, open *Configuration* \> *Data Integration* \> *On-Premise Agents*.
 
 2.  To show the Data Provisioning Agent tiles with a list of all connections they use, click the *Connections* button.
 
@@ -76,7 +76,7 @@ If you need to perform maintenance activities in a source system, you can pause 
     </tr>
     </table>
     
-3.  To pause the agent's connections with replication status *Active* or *Inactive*, on the tile of the agent choose <span class="SAP-icons"></span> \(menu\) and then <span class="SAP-icons"></span> *Pause All Connections*.
+3.  To pause the agent's connections with replication status *Active* or *Inactive*, on the tile of the agent choose <span class="SAP-icons-V5"></span> \(menu\) and then <span class="SAP-icons-V5"></span> *Pause All Connections*.
 
     In the list of connections shown on the tile, the status for affected connections changes to *Paused*. You can also see the status change for the connections in the *Connections* application.
 
@@ -84,7 +84,7 @@ If you need to perform maintenance activities in a source system, you can pause 
 
 4.  You can now apply the changes to your Data Provisiong Agent.
 
-5.  Once you're finished with the changes, restart real-time replication for the agent. Choose <span class="SAP-icons"></span> \(menu\) and then :arrow_forward: *Restart All Connections*.
+5.  Once you're finished with the changes, restart real-time replication for the agent. Choose <span class="SAP-icons-V5"></span> \(menu\) and then :arrow_forward: *Restart All Connections*.
 
     The status in the list of connections shown on the tile, in the *Connections* application as well as in the *Remote Table Monitor* changes accordingly and you can again perform real-time related actions for the tables or start real-time replication.
 

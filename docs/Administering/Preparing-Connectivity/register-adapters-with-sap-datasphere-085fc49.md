@@ -20,11 +20,11 @@ For third-party adapters, ensure that you have downloaded and installed any nece
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
 2.  In the *On-Premise Agents* section, click the *Adapters* button to display the agents with their adapter information.
 
-3.  Click <span class="SAP-icons"></span> \(menu\) and then :pencil2: *Edit*.
+3.  Click <span class="SAP-icons-V5"></span> \(menu\) and then :pencil2: *Edit*.
 
 4.  In the *Agent Settings* dialog, under *Agent Adapters* select the adapters.
 
@@ -39,7 +39,7 @@ For third-party adapters, ensure that you have downloaded and installed any nece
 
 ## Next Steps
 
-To use new functionality of an already registered adapter or to update the adapter in case of issues that have been fixed in a new agent version, you can refresh the adapter by clicking the <span class="SAP-icons"></span> \(menu\) button and then choosing <span class="SAP-icons"></span> *Refresh*.
+To use new functionality of an already registered adapter or to update the adapter in case of issues that have been fixed in a new agent version, you can refresh the adapter by clicking the <span class="SAP-icons-V5"></span> \(menu\) button and then choosing <span class="SAP-icons-V5"></span> *Refresh*.
 
 **Related Information**  
 

@@ -6,9 +6,9 @@
 
 Select one or more filter values to restrict the connection list according to your needs.
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
 
-2.  Click <span class="FPA-icons"></span> \(Filter Connections\) and select one or more filter values to get a better overview of the connections in the list.
+2.  Click <span class="FPA-icons-V3"></span> \(Filter Connections\) and select one or more filter values to get a better overview of the connections in the list.
 
     The following filter categories and values are available:
 

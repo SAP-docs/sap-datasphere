@@ -18,7 +18,7 @@ You can use the *Cancel Run* button to stop a transformation flow run that is cu
 
 1.  Navigate to *Data Integration Monitor* \> *Flows*.
 
-2.  Navigate to the run details of your transformation flow by clicking <span class="SAP-icons"></span> \(Details\) for the relevant flow.
+2.  Navigate to the run details of your transformation flow by clicking <span class="SAP-icons-V5"></span> \(Details\) for the relevant flow.
 
     The *Run Details* page opens. It shows the runs of the flow in the left panel and their corresponding messages in the right panel. Under *Runs*, you can view the status of the transformation flow runs \(the *Run* activity\) and also the status of any attempts to cancel a transformation flow run \(the *Cancel* activity\).
 

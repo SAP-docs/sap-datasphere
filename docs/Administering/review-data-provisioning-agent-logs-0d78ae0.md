@@ -18,7 +18,7 @@ The logs are written to the database of SAP Datasphere. For more information, se
 
 ## Procedure
 
-1.  From the <span class="SAP-icons"></span> main menu, open *Configuration* \> *Data Integration*.
+1.  From the <span class="SAP-icons-V5"></span> main menu, open *Configuration* \> *Data Integration*.
 
 2.  On the agent’s tile, click *Review Logs*.
 
@@ -28,7 +28,7 @@ The logs are written to the database of SAP Datasphere. For more information, se
 
 4.  You have the following options to restrict the results in the display of the logs:
 
-    -   Search: In the *<agent name\>* field, enter a search string and click <span class="FPA-icons"></span> \(Search\) to search in the messages of the logs.
+    -   Search: In the *<agent name\>* field, enter a search string and click <span class="FPA-icons-V3"></span> \(Search\) to search in the messages of the logs.
 
     -   Filters: You can filter based on time, message type and log file name. When you’ve made your selection, click *Apply Filters*.
 

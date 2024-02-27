@@ -4,7 +4,7 @@
 
 # Replicating Data and Monitoring Remote Tables
 
-In *Remote Tables* \(monitor\), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing \(CDC\).
+In the *Remote Tables* monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing \(CDC\).
 
 
 
@@ -30,9 +30,7 @@ When replicating data, you can select:
 
 
 > ### Note:  
-> Parallel execution is not supported. You can't perform two similar tasks at the same time and therefore you need to wait until the currently running task is completed before launching a new identical task.
-> 
-> For example, if you want to start a data replication, but another task is already replicating data from the same table, then you will get a notification and your task will fail.
+> Parallel execution is not supported. You can't perform two similar tasks at the same time and therefore you need to wait until the currently running task is completed before launching a new identical task. For example, if you want to start a data replication, but another task is already replicating data from the same table, then you will get a notification and your task will fail.
 
 The *Frequency* property of a remote table shows you whether or not data for a remote table is replicated and if yes, at what frequency the replication takes place. Replicated data is stored in a replica table.
 
@@ -635,9 +633,7 @@ Partitioning on key and non-key columns with certain restrictions depending on d
 </td>
 <td valign="top">
 
-Action to be done from *Remote Tables* monitor details screen.
-
-For more information, see [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md)
+Action to be done from *Remote Tables* monitor details screen. For more information, see [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md)
 
 </td>
 </tr>
@@ -659,9 +655,7 @@ Supported except for remote tables connected via an SAP HANA smart data integrat
 </td>
 <td valign="top">
 
-Action to be done from *Remote Table Statistics* monitor.
-
-For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
+Action to be done from *Remote Table Statistics* monitor.For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
 
 </td>
 </tr>
@@ -706,7 +700,7 @@ If the replication status shows an error for snapshot or real-time replication, 
 
 If you need to cancel a running snapshot replication or an initialization task \(for example if the replication or initialization takes long\) you can click the *Cancel Run* button available in the *Remote Tables* Details screen:
 
-1.  From the *Remote Tables*, Click <span class="FPA-icons"></span> of the remote table you need to cancel the run.
+1.  From the *Remote Tables* , Click <span class="FPA-icons-V3"></span> of the remote table you need to cancel the run.
 2.  Click *Cancel Run*.
 
     > ### Note:  

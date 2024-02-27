@@ -12,7 +12,7 @@ You can upload data from a CSV file to a local table. You can also delete all da
 
 ## Loading Local Table Data
 
-From the toolbar, select *Edit* \> **<span class="FPA-icons"></span> \(Upload Data From CSV File\).
+From the toolbar, select *Edit* \> **<span class="FPA-icons-V3"></span> \(Upload Data From CSV File\).
 
 > ### Note:  
 > You must have the standard *DW Modeler* role to use this tool. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right: 
@@ -49,7 +49,7 @@ Review the matching of columns in your table with those in your CSV file.
 
 ## Deleting Local Table Data
 
-From the toolbar, select <span class="FPA-icons"></span> \(Delete Data From Table\).
+From the toolbar, select <span class="FPA-icons-V3"></span> \(Delete Data From Table\).
 
 > ### Caution:  
 > To delete data, you must have the role *DW Integrator* or *DW Administrator*.

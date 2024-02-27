@@ -62,7 +62,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Filter\)
+    <span class="FPA-icons-V3"></span> \(Filter\)
     
     </td>
     <td valign="top">
@@ -74,7 +74,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Rename/Exclude Columns\)
+    <span class="SAP-icons-V5"></span> \(Rename/Exclude Columns\)
     
     </td>
     <td valign="top">
@@ -86,7 +86,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Calculated Columns\)
+    <span class="FPA-icons-V3"></span> \(Calculated Columns\)
     
     </td>
     <td valign="top">
@@ -98,7 +98,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Aggregation\)
+    <span class="FPA-icons-V3"></span> \(Aggregation\)
     
     </td>
     <td valign="top">
@@ -110,7 +110,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Join Suggestion\)
+    <span class="FPA-icons-V3"></span> \(Join Suggestion\)
     
     </td>
     <td valign="top">
@@ -122,7 +122,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
     
     </td>
     <td valign="top">
@@ -132,14 +132,14 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     > ### Note:  
     > Users with the *DW Viewer* role cannot preview data if the *Expose for Consumption* switch is disabled and, if the switch is enabled, can only preview data in the output node. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
 
-    You can preview the SQL generated for the node by clicking the *Preview SQL* button in the panel or by clicking <span class="FPA-icons"></span> Export and selecting *Preview SQL*. Click *Copy* to copy the SQL code for pasting into the SQL View editor or elsewhere.
+    You can preview the SQL generated for the node by clicking the *Preview SQL* button in the panel or by clicking <span class="FPA-icons-V3"></span> Export and selecting *Preview SQL*. Click *Copy* to copy the SQL code for pasting into the SQL View editor or elsewhere.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
     
     </td>
     <td valign="top">
@@ -153,7 +153,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Open in New Tab\)
+    <span class="SAP-icons-V5"></span> \(Open in New Tab\)
     
     </td>
     <td valign="top">
@@ -326,12 +326,12 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
-8.  Click <span class="FPA-icons"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons"></span> \(Deploy\) to save and deploy it immediately.
+8.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
 
-9.  \[optional\] Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md) 
+9.  \[optional\] Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md) 
 
-10. Click <span class="FPA-icons"></span> \(Impact and Lineage Analysis\) in the toolbar to understand the lineage and impacts of the output \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+10. Click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar to understand the lineage and impacts of the output \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
 
 

@@ -19,7 +19,7 @@ You can then use these models as they are or enhance the data in SAP Datasphere 
 
 The graphic shows the process flow for importing queries:
 
-![First, you need to release queries for import, then you create a connection, then you select the queries, and finally you can use the generated models for further modeling.](images/DWC_-_BW4_Model_Import_bf4b951.png)
+![First, you need to release queries for import, then you create a connection, then you select the queries, and finally you can use the generated models for further modeling.](images/DWC_-_import_BW4_models_bew_699b73f.png)
 
 
 
@@ -41,7 +41,7 @@ In SAP Datasphere, You have created a connection of type *SAP BW/4HANA Model Tra
 
 1.  In the side navigation area, click *Business Builder*. Select a space if necessary.
 
-2.  Choose <span class="FPA-icons"></span> \(Import\) ** \> *SAP BW/4HANA* \> *Model Transfer Wizard*.
+2.  Choose <span class="FPA-icons-V3"></span> \(Import\) ** \> *SAP BW/4HANA* \> *Model Transfer Wizard*.
 
 3.  In the *Model Transfer Wizard*, search for and select the SAP BW∕4HANA connection that you would like to use. Choose *Next*. The system will show you all available analytic queries.
 
@@ -74,6 +74,6 @@ In SAP Datasphere, You have created a connection of type *SAP BW/4HANA Model Tra
     > 
     > If the import was successful, the generated objects will appear in the Business Builder and Data Builder.
     > 
-    > You can check this in detail by choosing <span class="FPA-icons"></span> \(Import\)** \> *SAP BW/4HANA* \> *Show Logs*.
+    > You can check this in detail by choosing <span class="FPA-icons-V3"></span> \(Import\)** \> *SAP BW/4HANA* \> *Show Logs*.
 
 

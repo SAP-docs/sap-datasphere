@@ -20,9 +20,9 @@ To assign roles, you need the DW Administrator role.
 
 ## Assign or Update an Individual User's Role
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Users*\).
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 2.  On the *Users* page, find the required user.
-3.  In the user's row, select the <span class="FPA-icons"></span> icon in the *Roles* column. A list of *Available Roles* will appear.
+3.  In the user's row, select the <span class="FPA-icons-V3"></span> icon in the *Roles* column. A list of *Available Roles* will appear.
 4.  Select one or more roles.
 5.  Select *OK*.
 
@@ -41,7 +41,7 @@ To assign roles, you need the DW Administrator role.
 > ### Note:  
 > This is not relevant for scoped roles. For information about how to assign users to spaces in a scoped role, see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\).
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Find the role that you want to assign.
 3.  At the bottom of the role box, click the link to change which users the role will be assigned to.
 4.  Click *Users* and select one or more users from the *Assign Role User* list.

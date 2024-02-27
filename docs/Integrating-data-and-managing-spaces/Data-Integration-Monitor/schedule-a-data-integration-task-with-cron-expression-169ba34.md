@@ -2,7 +2,7 @@
 
 # Schedule a Data Integration Task \(with Cron Expression\)
 
-Schedule data integration tasks such as remote table replication, persisting views, or data flow execution, by entering directly a cron expression.
+Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.
 
 
 
@@ -43,7 +43,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 4.  If you haven't authorized SAP DatasphereTo run recurring scheduled tasks on your behalf, you need to authorize the yet to run your scheduled tasks for you, you will see a message at the top of the monitor asking for your consent. Give your consent.
 
-5.  For remote tables and views: Select the object for which you want to schedule a task.
+5.  Select the object for which you want to schedule a task.
 
 6.  Click *Schedule* \> *Create Schedule* 
 

@@ -52,14 +52,14 @@ In addition to this method, you can also create associations in the side panel i
 4.  Specify the mapping of join columns in the *Join* section:
 
     -   A default mapping is automatically created by matching column names if possible. For example if the originating entity contains a column, `Product ID`, and the target entity has a column with the same name, then a default mapping is created between these two columns.
-    -   To delete a mapping, select the link and then click <span class="FPA-icons"></span> \(Delete\).
+    -   To delete a mapping, select the link and then click <span class="FPA-icons-V3"></span> \(Delete\).
     -   To manually map columns, drag a column from the left list and drop it onto a column in the right list.
     -   You can filter the *Join* section to show only mapped or unmapped pairs of columns.
     -   You can filter or sort the left or right column lists independently
 
     > ### Note:  
-    > To delete an association, select it in the list and click <span class="FPA-icons"></span> \(Delete Association\).
+    > To delete an association, select it in the list and click <span class="FPA-icons-V3"></span> \(Delete Association\).
 
-5.  To delete an association, select the arrow and click <span class="FPA-icons"></span> \(Delete Association\).
+5.  To delete an association, select the arrow and click <span class="FPA-icons-V3"></span> \(Delete Association\).
 
 

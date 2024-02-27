@@ -6,7 +6,7 @@
 
 Select a connection and open the validation message to get detailed status information.
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
 
 2.  Select the relevant connection and click *Validate*.
 

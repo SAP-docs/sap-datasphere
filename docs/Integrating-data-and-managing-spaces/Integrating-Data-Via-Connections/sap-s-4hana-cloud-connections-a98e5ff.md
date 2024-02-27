@@ -257,7 +257,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the certificate or certificate chain or click <span class="SAP-icons"></span> \(Browse\) to upload the certificate.
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>
@@ -269,7 +269,7 @@ Enter the certificate or certificate chain or click <span class="SAP-icons"><
 </td>
 <td valign="top">
 
-Enter the private key or click <span class="SAP-icons"></span> \(Browse\) to upload the key.
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>

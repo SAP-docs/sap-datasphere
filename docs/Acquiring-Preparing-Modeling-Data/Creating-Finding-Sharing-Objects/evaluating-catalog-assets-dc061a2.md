@@ -27,7 +27,7 @@ You must be assigned one of the following:
 > ### Tip:  
 > If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with the Catalog Administrator role or appropriate privileges can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
 
-From the <span class="SAP-icons"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
+From the <span class="SAP-icons-V5"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
 When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information can include extracted metadata, like the asset name, properties, description, and impact and lineage diagram. It also includes other data enrichments, such as glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data or analytic object is the right one you need for your business task at hand.
 
@@ -105,7 +105,7 @@ Select the action you want to perform on the asset.
 
 -   *Open*: Opens the asset in the source system where you can view or edit it. This button appears if you have permission to access the asset in the source system.
 
--   <span class="FPA-icons"></span> \(Add to Favorites\): Adds frequently used assets to your favorites.
+-   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used assets to your favorites.
 
 
 
@@ -288,7 +288,7 @@ Use the *Details* tab to view a preview of the detailed metadata about the asset
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
-In addition to the preview of the detailed metadata, each metadata table has a column for *Related Objects*. If a row has one or more object \(terms or KPIs\) relationships, a button with the total number of object relationships is displayed. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
+In addition to the preview of the detailed metadata, each metadata table has a column for *Related Objects*. If a row has one or more object \(term or KPI\) relationships, a button with the total number of object relationships is displayed. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
 
 ![](images/Asset_Details_-_Related_Object_Popup_8bcfe1a.png)
 
@@ -311,7 +311,7 @@ Description
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(Search\)
+<span class="FPA-icons-V3"></span> \(Search\)
 
 </td>
 <td valign="top">
@@ -323,7 +323,7 @@ Use the free-text search to search for a row by its name or description. .
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(Sort\)
+<span class="FPA-icons-V3"></span> \(Sort\)
 
 </td>
 <td valign="top">
@@ -335,7 +335,7 @@ Sort the rows in the table by ascending or descending order based on the column 
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(Filter\)
+<span class="FPA-icons-V3"></span> \(Filter\)
 
 </td>
 <td valign="top">
@@ -347,7 +347,7 @@ Select column values for filtering the table.
 <tr>
 <td valign="top">
 
-<span class="FPA-icons"></span> \(Select Columns\)
+<span class="FPA-icons-V3"></span> \(Select Columns\)
 
 </td>
 <td valign="top">
@@ -404,7 +404,7 @@ Description
 </td>
 <td valign="top">
 
-Use the toolbar and diagram tools to control the layout of the diagram. Click <span class="FPA-icons"></span> \(Refresh\) to update the diagram with the latest changes.
+Use the toolbar and diagram tools to control the layout of the diagram. Click <span class="FPA-icons-V3"></span> \(Refresh\) to update the diagram with the latest changes.
 
 </td>
 </tr>
@@ -418,7 +418,7 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click <s
 
 The source system is the outermost object and has an icon that represents the type of system \(for example, SAP Datasphere or SAP Analytics Cloud tenant\). The number in brackets indicates the total number of objects in the source system that are part of the impact or lineage of the analyzed object.
 
-You can expand or collapse a source system, using the <span class="FPA-icons"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
+You can expand or collapse a source system, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
 
 </td>
 </tr>
@@ -432,7 +432,7 @@ You can expand or collapse a source system, using the <span class="FPA-icons">�
 
 The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud folder\). It contains assets that appear in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
-You can expand or collapse a container, using the <span class="FPA-icons"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
+You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
 
 </td>
 </tr>
@@ -450,14 +450,14 @@ You can expand or collapse a container, using the <span class="FPA-icons"></s
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
--   Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons"></span> \(Open Asset Details\).
+-   Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons-V3"></span> \(Open Asset Details\).
 
 -   Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
 
 -   The analyzed object appears as a light blue object.
 
 
-You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons"></span> \(Show Next Level\) or <span class="SAP-icons"></span> \(Hide All\) on the object.
+You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 
 </td>
 </tr>
@@ -492,7 +492,7 @@ After you find the asset you want, you can open the asset in the source system t
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons"></span>\(*Catalog*\).
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
 
 2.  On the *Catalog* home page, use the filters or the search to find the asset you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
 
@@ -537,7 +537,7 @@ After you evaluate and determine that the asset is the right one for your needs,
 > 
 > -   To use SAP Datasphere, in the side navigation area, right-click the application you want to use and click *Open App in New Tab*.
 > 
-> -   To use SAP Analytics Cloud, in the side navigation area, right-click any application and click *Open App in New Tab*. In the shell bar click <span class="SAP-icons"></span> \(*Product Switch*\) and click *Analytics*.
+> -   To use SAP Analytics Cloud, in the side navigation area, right-click any application and click *Open App in New Tab*. In the shell bar click <span class="SAP-icons-V5"></span> \(*Product Switch*\) and click *Analytics*.
 
 
 
@@ -545,7 +545,7 @@ After you evaluate and determine that the asset is the right one for your needs,
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons"></span>\(*Catalog*\).
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
 
 2.  On the *Catalog* home page, use the filters or the search to find the asset you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
 

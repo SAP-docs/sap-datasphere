@@ -47,8 +47,8 @@ You can import entities from the following types of sources:
 
 1.  Open the wizard from the *Repository Explorer*, *Semantic Onboarding*, or the *Data Builder*:
 
-    -   In the side navigation area, click <span class="SAP-icons"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
-    -   In the side navigation area, click <span class="FPA-icons"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
+    -   In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
+    -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
     -   In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Entities*.
 
 2.  On the *Select Connection Type* page, select the *SAP BW/4HANA* or *SAP BW Bridge* connection type, and then click *Next Step*.
@@ -285,12 +285,12 @@ You can import entities from the following types of sources:
 
     When the import is complete, you will have two notifications:
 
-    -   Click the first notification to see the imported entities listed in the <span class="SAP-icons"></span> \(*Repository Explorer*\).
+    -   Click the first notification to see the imported entities listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
     -   Click the second notification to view the import log messages.
 
         If any entity could not be created, an error is given.
 
 
-    The imported entities are available for review and use in the <span class="FPA-icons"></span> \(*Business Builder*\) and the ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\).
+    The imported entities are available for review and use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\).
 
 

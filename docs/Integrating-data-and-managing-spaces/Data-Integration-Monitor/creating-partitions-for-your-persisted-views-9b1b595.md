@@ -16,7 +16,7 @@ Persisting views with larger data volumes without having out-of-memory errors or
 
 You can create partitions from the *Views* – Details screen:
 
-1.  Click <span class="FPA-icons"></span> for the view in virtual access mode you would like to persist and for which you need to create partitions for.
+1.  Click <span class="FPA-icons-V3"></span> for the view in virtual access mode you would like to persist and for which you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.
 
 
@@ -67,7 +67,7 @@ In a 2nd step, the columns are sorted by their partitioning suitability, and add
 
 ## Defining Intervals for Your Partitions
 
-Create the number of desired partitions by clicking <span class="FPA-icons"></span> \(Add Partitions\) 
+Create the number of desired partitions by clicking <span class="FPA-icons-V3"></span> \(Add Partitions\) 
 
 Enter an interval for each of them.
 

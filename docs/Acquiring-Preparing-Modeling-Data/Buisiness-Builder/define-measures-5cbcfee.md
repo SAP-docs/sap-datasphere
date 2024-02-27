@@ -20,9 +20,9 @@ A measure is a quantifiable value that refers to an aggregatable field of the un
 
 1.  Go to the *Measures* tab.
 
-2.  To define a measure, choose <span class="FPA-icons"></span> *New measure*.
+2.  To define a measure, choose <span class="FPA-icons-V3"></span> *New measure*.
 
-    To add multiple fact source measures, choose <span class="FPA-icons"></span> *Add Measures*. Select your measures and choose *Apply*. To change details for a measure, choose <span class="FPA-icons"></span> *Details*.
+    To add multiple fact source measures, choose <span class="FPA-icons-V3"></span> *Add Measures*. Select your measures and choose *Apply*. To change details for a measure, choose <span class="FPA-icons-V3"></span> *Details*.
 
 3.  Select a type of measure and define the properties. The properties depend on the type of measure. More information: [Measure Types](measure-types-f37eaaf.md)
 
@@ -36,6 +36,6 @@ A measure is a quantifiable value that refers to an aggregatable field of the un
 
 7.  Save your entries.
 
-8.  To duplicate measures, choose <span class="SAP-icons"></span> *Duplicate existing measure*.
+8.  To duplicate measures, choose <span class="SAP-icons-V5"></span> *Duplicate existing measure*.
 
 

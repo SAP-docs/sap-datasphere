@@ -21,7 +21,7 @@ Keys need to be unique. A business entity can have more than one key and you can
 
 1.  Go to the *Key Definitions* tab.
 
-2.  Choose <span class="FPA-icons"></span> *Add*.
+2.  Choose <span class="FPA-icons-V3"></span> *Add*.
 
 3.  Enter a title for your key.
 

@@ -59,7 +59,7 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
     </tr>
     </table>
     
-2.  In the side navigation area, click <span class="FPA-icons"></span> \(*Transport*\)** \> **<span class="FPA-icons"></span> \(*Import*\) to open the list of content available for import.
+2.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Import*\) to open the list of content available for import.
 
     If you don’t see expected packages to import, click the *Settings* button and review the import settings. You can:
 
@@ -170,13 +170,13 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 
     If you selected *Don’t overwrite objects or data*, a notification will let you know if any of the content wasn’t imported to avoid overwriting existing content.
 
-    To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons"></span> History.
+    To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons-V5"></span> History.
 
 6.  If your content included one or more connections that didn't exist in your space before the import, then you should:
 
     1.  In the *Connections* app, open each connection, complete the configuration and enter appropriate credentials to connect to your system \(see [Edit a Connection](../Integrating-Data-Via-Connections/edit-a-connection-ba20892.md)\).
 
-    2.  In the *Repository Explorer* or in the object editors, select the imported objects that depend on an imported connection \(and which could not, therefore, be automatically deployed\) and click <span class="SAP-icons"></span> \(Deploy\) to deploy them.
+    2.  In the *Repository Explorer* or in the object editors, select the imported objects that depend on an imported connection \(and which could not, therefore, be automatically deployed\) and click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy them.
 
         > ### Note:  
         > If you checked the *Deploy after import* checkbox in the *Import Options*, you can find a notification about the failed deployment of objects in the *Notifications* panel. Clicking the notification directly leads you to the list of imported objects in the *Repository Explorer*.

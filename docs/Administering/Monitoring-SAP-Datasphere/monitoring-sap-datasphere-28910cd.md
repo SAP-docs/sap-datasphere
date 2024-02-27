@@ -6,7 +6,7 @@
 
 Administrators have access to various monitoring logs and views, and can create database analysis users, if necessary, to help troubleshoot issues.
 
-Click <span class="FPA-icons"></span> \(*System Monitor*\) to access the main monitoring tool. The *System Monitor* allows to monitor the performance of your system and identify storage, task, out-of-memory, and other issues across all spaces.
+Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) to access the main monitoring tool. The *System Monitor* allows to monitor the performance of your system and identify storage, task, out-of-memory, and other issues across all spaces.
 
 For example, you can see all the errors \(such as failed tasks and out-of-memory errors\) that occurred yesterday or the top five statements with the highest peak memory consumption.
 
@@ -19,7 +19,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 
 ## Monitoring Out-of-Memory Errors and Other Statement-Related Information
 
-You can monitor out-of-memory errors and other information that are related to SAP HANA database SQL statements, depending on what you've specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*:
+You can monitor out-of-memory errors and other information that are related to SAP HANA database SQL statements, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
 
 -   If *Enable Expensive Statement Tracing* is not selected, then in *System Monitor* \> *Dashboard*, you cannot see the widgets about out-of-memory errors and about other information related to statements. For example, you cannot see the widgets: *Out-of-Memory Errors*, *Top 5 Statements by Processing Memory Consumption*.
 
@@ -479,7 +479,7 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 > ### Note:  
 > You can see this information:
 > 
-> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
 > -   And if the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
 > 
@@ -503,7 +503,7 @@ Shows the amount of CPU time \(in ms\) the task has used in SAP HANA.
 > ### Note:  
 > You can see this information:
 > 
-> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
 > -   And if the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
 > 
@@ -617,7 +617,7 @@ Shows the SAP HANA database technical name of the target table.
 Shows a link you can click to view all the statements of the task in the *Statements* table.
 
 > ### Note:  
-> -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
 > -   However, as statements are traced for a limited period, you may not be able to see the statements used in the task.
 
@@ -652,7 +652,7 @@ Shows the identifier of the run task.
 </table>
 
 > ### Note:  
-> Data on tasks are kept for the time specified in <span class="FPA-icons"></span> \(Configuration\) → *Tasks*.
+> Data on tasks are kept for the time specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Tasks*.
 
 
 
@@ -660,7 +660,7 @@ Shows the identifier of the run task.
 
 ## Statements
 
-In *Logs* \> *Statements*, the table shows the following information, depending on what you've specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*:
+In *Logs* \> *Statements*, the table shows the following information, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
 
 -   If the option *Enable Expensive Statement Tracing* is disabled, then the *Statements* tab is disabled.
 
@@ -790,7 +790,7 @@ Shows the name of the schema in which the statement is run.
 Shows the maximum amount of memory \(in MiB\) the statement has used during the runtime in SAP HANA.
 
 > ### Note:  
-> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
 > Otherwise, no number is displayed.
 
@@ -809,7 +809,7 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 Shows the amount of CPU time \(in ms\) the statement has used in SAP HANA.
 
 > ### Note:  
-> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*.
+> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
 > Otherwise, no number is displayed.
 
@@ -912,7 +912,7 @@ If the statement has an out-of-memory error, it shows the name of the workload c
 </table>
 
 > ### Note:  
-> Data on statements are kept for a time that depends on the thresholds specified in <span class="FPA-icons"></span> \(Configuration\) → *Monitoring*. As a certain number of statements are kept \(30.000 by default\), if very low thresholds are set, the time period may be very low \(for example, only a few hours\). To keep the statements for a longer time, the thresholds should be set accordingly.
+> Data on statements are kept for a time that depends on the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. As a certain number of statements are kept \(30.000 by default\), if very low thresholds are set, the time period may be very low \(for example, only a few hours\). To keep the statements for a longer time, the thresholds should be set accordingly.
 
 
 
@@ -923,12 +923,12 @@ If the statement has an out-of-memory error, it shows the name of the workload c
 You can control the tables in *Tasks* and *Statements* in the following ways:
 
 -   Reorder the columns by drag and drop.
--   Sort on a column by clicking the column header and then clicking <span class="SAP-icons"></span> \(Sort Ascending\) or <span class="SAP-icons"></span> \(Sort Descending\).
--   Filter on a column by clicking the column header, then clicking <span class="FPA-icons"></span> \(Filter\)
+-   Sort on a column by clicking the column header and then clicking <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
+-   Filter on a column by clicking the column header, then clicking <span class="FPA-icons-V3"></span> \(Filter\)
 
     The *Define Filter* dialog opens and advanced filtering options are available:
 
-    1.  Chose the appropriate section for your filter. If your filter is meant to include data in the table \(you could say "I want my Data Preview to show"\), add your filter in the *Include* section. If your filter is meant to exclude data from the table \(you could say "I want my Data Preview to hide"\), add your filter in the *Exclude* section. When in the appropriate section, click <span class="FPA-icons"></span> \(Add Filter\) to add a filter.
+    1.  Chose the appropriate section for your filter. If your filter is meant to include data in the table \(you could say "I want my Data Preview to show"\), add your filter in the *Include* section. If your filter is meant to exclude data from the table \(you could say "I want my Data Preview to hide"\), add your filter in the *Exclude* section. When in the appropriate section, click <span class="FPA-icons-V3"></span> \(Add Filter\) to add a filter.
     2.  Select a column to filter on, a filtering option, and a value. You can add several filters. Click *OK* to apply the filter\(s\). The currently applied filters are displayed above the table.
 
         > ### Example:  
@@ -942,7 +942,7 @@ You can control the tables in *Tasks* and *Statements* in the following ways:
         > ### Note:  
         > If you filter on one of the following columns and you enter a number, use the “.” \(period\) character as the decimal separator, regardless of the decimal separator used in the number formatting that you’ve chosen in the general user settings \(*Settings* \> *Language & Region*\): *SAP HANA Peak Memory*, *SAP HANA CPU Time*, *SAP HANA Used Memory* and *SAP HANA Used Disk*.
 
-    3.  Click *Clear Filter* in the filter strip or <span class="FPA-icons"></span> \(Remove Filter\)in the *Define Filter* dialog to remove the filter.
+    3.  Click *Clear Filter* in the filter strip or <span class="FPA-icons-V3"></span> \(Remove Filter\)in the *Define Filter* dialog to remove the filter.
 
 -   Show or hide columns by clicking :gear: to open the *Columns Settings* dialog, selecting columns as appropriate. To return to the default preview columns, click *Reset*.
 -   Refresh the table at any time by clicking *Refresh*.

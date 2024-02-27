@@ -18,7 +18,7 @@ Consumption models are use-case specific. You can take advantage of the authoriz
 
 1.  Select a consumption model.
 
-2.  Go to the *General* tab. Under *Authorization Scenario*, next to *Supported Authorization Scenarios*, click <span class="FPA-icons"></span>.
+2.  Go to the *General* tab. Under *Authorization Scenario*, next to *Supported Authorization Scenarios*, click <span class="FPA-icons-V3"></span>.
 
 3.  The *Authorization Scenarios* dialog opens. The listed authorizations scenarios come from the business entities used as Fact Source in the consumption model. Select the ones you want to use in your consumption model. Click *Select*.
 

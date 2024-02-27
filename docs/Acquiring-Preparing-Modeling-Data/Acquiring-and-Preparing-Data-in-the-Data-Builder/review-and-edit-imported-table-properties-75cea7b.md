@@ -260,7 +260,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     </table>
     
-    You can, at any time, click <span class="SAP-icons"></span> \(Open Monitor\) and, either navigate to the *Remote Tables* monitor to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In Remote Tables (monitor), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
+    You can, at any time, click <span class="SAP-icons-V5"></span> \(Open Monitor\) and, either navigate to the *Remote Tables* monitor to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
 
     > ### Note:  
     > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.
@@ -284,6 +284,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     > ### Note:  
     > \[Remote tables connected via SAP HANA smart data integration \(SDI\) only\]:
     > 
-    > If a remote table definition created by an import doesn't match the remote table source definition, you won't be allowed to deploy it. You'll need to click <span class="SAP-icons"></span> \(Refresh\) to repair the table structure and continue with deployment.
+    > If a remote table definition created by an import doesn't match the remote table source definition, you won't be allowed to deploy it. You'll need to click <span class="SAP-icons-V5"></span> \(Refresh\) to repair the table structure and continue with deployment.
 
 

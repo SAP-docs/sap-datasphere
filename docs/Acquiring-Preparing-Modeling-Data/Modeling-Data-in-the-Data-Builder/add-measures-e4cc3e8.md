@@ -25,7 +25,7 @@ There are different types of measures to choose from:
 
 1.  To add fact source measures, click on your fact source on the canvas to select measures in the properties panel on the right.
 
-2.  You can create new measures by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Measure in the properties panel. Choose the type of measure.
+2.  You can create new measures by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Measure in the properties panel. Choose the type of measure.
 
 3.  For calculated measures, enter your expression in the formula editor.
 

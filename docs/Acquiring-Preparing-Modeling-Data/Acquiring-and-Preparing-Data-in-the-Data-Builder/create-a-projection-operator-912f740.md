@@ -50,13 +50,13 @@ Insert a projection operator to add, remove, reorder, or rename columns.
     
 4.  In the *Columns* section, specify the mapping of your columns.
 
-    -   Hover on a column and click <span class="FPA-icons"></span> to view its data type.
+    -   Hover on a column and click <span class="FPA-icons-V3"></span> to view its data type.
     -   You can reorder the columns by dragging and dropping.
-    -   You can add any missing columns from input operator using <span class="FPA-icons"></span> \(Add Column\) and select the columns. You can also add calculated column. See [Create a Calculated Column in a Projection Operator](create-a-calculated-column-in-a-projection-operator-73116a5.md) for more information.
-    -   Click <span class="FPA-icons"></span> \(Menu\) to rename, remove, or duplicate a selected column.
-    -   You can edit the name, data type, and expression of a column by choosing <span class="FPA-icons"></span> option.
-    -   To remove multiple columns at once, press the [Ctrl\] key, click on each columns you want to select, and click <span class="FPA-icons"></span> \(Delete Columns\).
-    -   To remove all columns, click *Select All* and choose <span class="FPA-icons"></span> \(Delete Columns\).
+    -   You can add any missing columns from input operator using <span class="FPA-icons-V3"></span> \(Add Column\) and select the columns. You can also add calculated column. See [Create a Calculated Column in a Projection Operator](create-a-calculated-column-in-a-projection-operator-73116a5.md) for more information.
+    -   Click <span class="FPA-icons-V3"></span> \(Menu\) to rename, remove, or duplicate a selected column.
+    -   You can edit the name, data type, and expression of a column by choosing <span class="FPA-icons-V3"></span> option.
+    -   To remove multiple columns at once, press the [Ctrl\] key, click on each columns you want to select, and click <span class="FPA-icons-V3"></span> \(Delete Columns\).
+    -   To remove all columns, click *Select All* and choose <span class="FPA-icons-V3"></span> \(Delete Columns\).
 
 5.  \(Optional\) In the *Filter* section, define filters.
 

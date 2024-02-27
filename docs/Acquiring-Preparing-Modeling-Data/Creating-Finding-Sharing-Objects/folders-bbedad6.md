@@ -50,6 +50,9 @@ Users with the *DW Modeler* role \(or equivalent privileges\) can move objects i
 -   In the *Data Builder*, select the objects you want to move, click *Move To*, select your target folder, and click *Move*.
 -   In the *Business Builder*, select the objects you want to move, click *Folder* \> *Move*, select your target folder, and click *Apply*.
 
+> ### Note:  
+> You cannot move objects that are shared to your space into folders.
+
 
 
 <a name="loiobbedad63821443518fcd8fe56f7d26f7__section_delete"/>

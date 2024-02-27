@@ -31,11 +31,11 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 ## Procedure
 
-1.  From the side navigation, go to <span class="FPA-icons"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*.
+1.  From the side navigation, go to <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*.
 
-    If you've provisioned SAP Datasphere prior to version 2021.03 you'll see a different UI and need go to <span class="FPA-icons"></span> \(*Product Switch*\) → <span class="FPA-icons"></span> \(*Analytics*\) → <span class="FPA-icons"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) → *Security*.
+    If you've provisioned SAP Datasphere prior to version 2021.03 you'll see a different UI and need go to <span class="FPA-icons-V3"></span> \(*Product Switch*\) → <span class="FPA-icons-V3"></span> \(*Analytics*\) → <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) → *Security*.
 
-2.  Select <span class="FPA-icons"></span> \(Edit\).
+2.  Select <span class="FPA-icons-V3"></span> \(Edit\).
 
 3.  In the *Authentication Method* area, select *SAML Single Sign-On \(SSO\)* if it is not already selected.
 
@@ -314,7 +314,7 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 13. Test the SAML IdP setup, by logging in with your IdP, and then clicking *Verify Account* to open a dialog for validation.
 
-    In another browser, log on to the URL provided in the *Verify Your Account* dialog, using your SAML IdP credentials. You can copy the URL by selecting <span class="FPA-icons"></span> \(Copy\).
+    In another browser, log on to the URL provided in the *Verify Your Account* dialog, using your SAML IdP credentials. You can copy the URL by selecting <span class="FPA-icons-V3"></span> \(Copy\).
 
     You must use a private session to log onto the URL; for example, guest mode in Chrome. This ensures that when you log on to the dialog and select SAP Datasphere, you are prompted to log in and do not reuse an existing browser session.
 
@@ -327,7 +327,7 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
     If the verification was successful, a green border should appear around the *Login Credential* box.
 
-15. Select <span class="FPA-icons"></span> \(Save\).
+15. Select <span class="FPA-icons-V3"></span> \(Save\).
 
     The *Convert to SAML Single Sign-On* confirmation dialog will appear.
 
@@ -337,7 +337,7 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 17. Log on to SAP Datasphere with the credentials you used for the verification step.
 
-18. From the side navigation, go to <span class="FPA-icons"></span> \(*Security*\) → and <span class="FPA-icons"></span> \(*Users*\)look for the <span class="FPA-icons"></span> column of the *User Attribute* you selected in step 8.
+18. From the side navigation, go to <span class="FPA-icons-V3"></span> \(*Security*\) → and <span class="FPA-icons-V3"></span> \(*Users*\)look for the <span class="FPA-icons-V3"></span> column of the *User Attribute* you selected in step 8.
 
     The values in this column should be a case sensitive match with the `NameId` sent by your IdP's SAML assertion.
 

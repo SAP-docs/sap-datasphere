@@ -113,13 +113,13 @@ A transformation flow writes data to a target table. You can create a new target
 
     -   To delete a mapping, select it, and click *Delete*. To delete all mappings, *Remove all Mappings.*
 
-    -   You can, at any time, click <span class="FPA-icons"></span> \(Auto Map\) to relaunch automapping based on names and datatypes.
+    -   You can, at any time, click <span class="FPA-icons-V3"></span> \(Auto Map\) to relaunch automapping based on names and datatypes.
 
 
     > ### Note:  
     > If the delta capture setting is enabled for the target table of a transformation flow, the *Change Date* column of the target table will always contain the time that the transformation flow was run, even if an incoming column is mapped to the *Change Date* column.
 
-4.  In the *Columns* section, view the columns of the target table. To check the data type of a column, hover over it and click <span class="FPA-icons"></span>.
+4.  In the *Columns* section, view the columns of the target table. To check the data type of a column, hover over it and click <span class="FPA-icons-V3"></span>.
 
     If the delta capture setting is enabled for a table, two additional columns are present in the table to track changes. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
 

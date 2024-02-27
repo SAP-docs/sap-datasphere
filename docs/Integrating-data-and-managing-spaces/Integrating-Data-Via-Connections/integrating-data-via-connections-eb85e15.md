@@ -1403,7 +1403,7 @@ SAP
 
 ## Managing Connections
 
-In the <span class="FPA-icons"></span> \(*Connections*\) app, you get an overview of all connections created in your space.
+In the <span class="FPA-icons-V3"></span> \(*Connections*\) app, you get an overview of all connections created in your space.
 
 Use the following tools to create and manage connections:
 
@@ -1494,7 +1494,7 @@ For more information, see [Pause Real-Time Replication for a Connection](pause-r
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Reload Connection List\)
+<span class="SAP-icons-V5"></span> \(Reload Connection List\)
 
 </td>
 <td valign="top">
@@ -1506,7 +1506,7 @@ Reload the connections list to include the latest updates into the list.
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Sort Connections\)
+<span class="SAP-icons-V5"></span> \(Sort Connections\)
 
 </td>
 <td valign="top">
@@ -1520,7 +1520,7 @@ By default, the list is sorted by *Business Name*. To sort on a specific column,
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Filter Connections\)
+<span class="SAP-icons-V5"></span> \(Filter Connections\)
 
 </td>
 <td valign="top">
@@ -1568,7 +1568,7 @@ Search considers the *Technical Name*, *Business Name*, *Real-Time Replication S
 <tr>
 <td valign="top">
 
-![](images/2689954ed5874af480166f033f98b1bd.image)
+![](images/Connection_Warning_Message_Button_2689954.png)
 
 \(Warning Messages\)
 
@@ -1577,7 +1577,7 @@ Search considers the *Technical Name*, *Business Name*, *Real-Time Replication S
 
 When there is one or more messages for your connections, a button is displayed on the top right corner of the *Connections* app specifying the number of warning messages for all connections in the list.
 
-Click the button to open the list of messages. Clicking a message title selects the corresponding connection in the list. Clicking <span class="SAP-icons"></span> \(Navigation\) for a message opens a more detailed message containing guidance on how to solve the issue.
+Click the button to open the list of messages. Clicking a message title selects the corresponding connection in the list. Clicking <span class="SAP-icons-V5"></span> \(Navigation\) for a message opens a more detailed message containing guidance on how to solve the issue.
 
 In the connections list, connections with warning messages are highlighted in yellow.
 

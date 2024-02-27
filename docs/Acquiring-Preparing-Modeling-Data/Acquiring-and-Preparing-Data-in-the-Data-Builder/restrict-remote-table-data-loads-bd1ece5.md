@@ -38,9 +38,9 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
     1.  Go to *Columns* section.
 
     2.  Select the columns that you want to remove.
-    3.  Click <span class="FPA-icons"></span> \(Remove\).
+    3.  Click <span class="FPA-icons-V3"></span> \(Remove\).
 
-    4.  <span class="SAP-icons"></span> \(Deploy\) your remote table.
+    4.  <span class="SAP-icons-V5"></span> \(Deploy\) your remote table.
 
     > ### Restriction:  
     > In case you remove columns from the remote table definition compared to the source object \(remote table having less columns than the source entity\), real-time replications don't work for remote tables connected via SAP HANA smart data access or Cloud Connector for SAP HANA on-premise versions lower than 2.0 SPS06.
@@ -137,7 +137,7 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
         </tr>
         </table>
         
-    2.  <span class="SAP-icons"></span> \(Deploy\)
+    2.  <span class="SAP-icons-V5"></span> \(Deploy\)
     3.  Replicate your data
 
         > ### Note:  
@@ -153,9 +153,9 @@ Loading larger data volumes can take a long time and cause high memory peaks. To
 
     1.  Go to the *Columns* section.
 
-    2.  Click <span class="FPA-icons"></span> \(Add\)
+    2.  Click <span class="FPA-icons-V3"></span> \(Add\)
     3.  Select the columns to add and click *OK*. You can add new columns available from the data source, or re-add previously excluded columns.
-    4.  <span class="SAP-icons"></span> \(Deploy\)
+    4.  <span class="SAP-icons-V5"></span> \(Deploy\)
     5.  Replicate your data.
 
 

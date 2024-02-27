@@ -75,7 +75,7 @@ Consider the following when editing a connection which uses a Data Provisioning 
 
 ## Edit a Connection
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
 
 2.  Select the relevant connection and click *Edit*.
 

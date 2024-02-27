@@ -12,7 +12,7 @@ When you have created a database user, you can connect to your Open SQL schema w
 
 ## Obtaining Your Open SQL Schema Connection Information
 
-To obtain the host name, port, and user name required to connect to your Open SQL schema, click the <span class="FPA-icons"></span> button for your user in the *Database Users* list.
+To obtain the host name, port, and user name required to connect to your Open SQL schema, click the <span class="FPA-icons-V3"></span> button for your user in the *Database Users* list.
 
 For security reasons, the password is not displayed in this dialog. If you have forgotten your password, you can generate a new one by clicking *Request New Password*.
 

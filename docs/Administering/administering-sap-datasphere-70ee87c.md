@@ -17,9 +17,9 @@ This topic contains the following sections:
 > ### Tip:  
 > The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
 > 
-> -   <span class="SAP-icons"></span> Feedback ** \> *Edit page*: Contribute to a documentation page. This option opens a pull request on GitHub.
+> -   <span class="SAP-icons-V5"></span> Feedback ** \> *Edit page*: Contribute to a documentation page. This option opens a pull request on GitHub.
 > 
-> -   <span class="SAP-icons"></span> Feedback ** \> *Create issue*: Provide feedback about a documentation page. This option opens an issue on GitHub.
+> -   <span class="SAP-icons-V5"></span> Feedback ** \> *Create issue*: Provide feedback about a documentation page. This option opens an issue on GitHub.
 > 
 > 
 > You need a GitHub account to use these options.
@@ -96,7 +96,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
 
 ## Create Spaces and Allocate Storage to Them
 
-All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
+All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
 
 An administrator must create one or more spaces. They allocate disk and memory storage to the space, set its priority, and can limit how much memory and how many threads its statements can consume. See [Creating Spaces and Allocating Storage](Creating-Spaces-and-Allocating-Storage/creating-spaces-and-allocating-storage-2ace657.md).
 

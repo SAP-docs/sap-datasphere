@@ -161,18 +161,18 @@ Your object's status may be updated when changes to one or more of its sources a
 3.  Review all information and warning messages to ensure that they do not adversely impact the output of your view.
 
     > ### Note:  
-    > If you want to include a new source column in your view output, select it in the projection node and click <span class="FPA-icons"></span> \(Menu\)** \> *Restore Column*.
+    > If you want to include a new source column in your view output, select it in the projection node and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Restore Column*.
 
 4.  Review and resolve any error messages on intermediate nodes.
 
-5.  Click <span class="FPA-icons"></span> \(Save\) to save the changes to your object and dismiss any info and warning messages.
+5.  Click <span class="FPA-icons-V3"></span> \(Save\) to save the changes to your object and dismiss any info and warning messages.
 
     If the source changes were saved but not deployed, your object's status should change from *Design-Time Error* to *Changes to Deploy*.
 
     > ### Note:  
     > As the new version of your object depends on the source updates, you should coordinate with the person who has modified the source about deployment. The new version of your object will work correctly in the run-time only when both it and its source are deployed.
 
-6.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy your object.
+6.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy your object.
 
     Your object's status should change from *Changes to Deploy* \(or *Run-Time Error*\) to *Deployed*.
 

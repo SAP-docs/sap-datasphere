@@ -42,6 +42,6 @@ By default, table data is stored on disk. You can improve performance by enablin
     </tr>
     </table>
     
-3.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy the table and move its data into in-memory storage.
+3.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy the table and move its data into in-memory storage.
 
 

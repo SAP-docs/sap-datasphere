@@ -12,7 +12,7 @@ Multiple results are input records that are matched with two or more lookup reco
 
 ## Procedure
 
-1.  Select the rule node and then click <span class="FPA-icons"></span> \(Preview Data\) to open the *Preview Data* panel.
+1.  Select the rule node and then click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Preview Data* panel.
 
 2.  Click the *Multiple* tab.
 
@@ -61,7 +61,7 @@ Multiple results are input records that are matched with two or more lookup reco
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
+    <span class="SAP-icons-V5"></span> \(Collapse All\) / <span class="SAP-icons-V5"></span> \(Expand All\)
     
     </td>
     <td valign="top">
@@ -109,7 +109,7 @@ Multiple results are input records that are matched with two or more lookup reco
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Settings\)
+    <span class="FPA-icons-V3"></span> \(Settings\)
     
     </td>
     <td valign="top">

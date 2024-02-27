@@ -97,7 +97,7 @@ Enter the port number of the SFTP server.
 
 Enter the public SSH host key \(not the key fingerprint\). 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required.") :arrow_upper_right:.
 
@@ -280,7 +280,7 @@ Enter the user who is accessing the SFTP server.
 
 Enter the user SSH private key used for SSH key authentication. The server must know the user SSH public key. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>

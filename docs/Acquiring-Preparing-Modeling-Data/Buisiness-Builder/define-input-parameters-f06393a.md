@@ -20,7 +20,7 @@ For more information on input parameters, see [Create an Input Parameter](../cre
 
 1.  Go to the *Input Parameters* tab.
 
-2.  To define input parameters: Choose <span class="FPA-icons"></span> \(New\) .
+2.  To define input parameters: Choose <span class="FPA-icons-V3"></span> \(New\) .
 
 3.  Choose the source for the input parameter.
 

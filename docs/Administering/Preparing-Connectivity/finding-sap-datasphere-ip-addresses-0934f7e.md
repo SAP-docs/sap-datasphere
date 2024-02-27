@@ -18,7 +18,7 @@ The network for Amazon Redshift, Microsoft Azure SQL Database, or SAP SuccessFac
 
 Find the *Outbound IP Address* in the last step of the connection creation wizard.
 
-Administrators can find the *Outbound IP Address* from the side navigation area by clicking <span class="FPA-icons"></span> \(*System*\)** \> ** <span class="FPA-icons"></span> \(*About*\) and expanding the *More* section in the dialog.
+Administrators can find the *Outbound IP Address* from the side navigation area by clicking <span class="FPA-icons-V3"></span> \(*System*\)** \> ** <span class="FPA-icons-V3"></span> \(*About*\) and expanding the *More* section in the dialog.
 
 
 
@@ -28,7 +28,7 @@ Administrators can find the *Outbound IP Address* from the side navigation area 
 
 Access to SAP SuccessFactors instances is restricted. To be able to use a*SAP SuccessFactors* connection for remote tables and view building, the connected source requires the externally facing IP addresses of theSAP Datasphere tenant to be added to an allowlist.
 
-Administrators can find the *HANA IP Addresses* from the side navigation area by clicking <span class="FPA-icons"></span> \(*System*\)** \> ** <span class="FPA-icons"></span> \(*About*\) and expanding the *More* section in the dialog.
+Administrators can find the *HANA IP Addresses* from the side navigation area by clicking <span class="FPA-icons-V3"></span> \(*System*\)** \> ** <span class="FPA-icons-V3"></span> \(*About*\) and expanding the *More* section in the dialog.
 
 For more information about adding the IP addresses in SAP SuccessFactors, see [Adding an IP Restriction](https://help.sap.com/viewer/DRAFT/bf014ed11dae45ecae6f8c6e42fa68bb/latest/en-US/34a127f33b504201b7da29a112f21bc5.html) in the *SAP SuccessFactors platform* documentation.
 

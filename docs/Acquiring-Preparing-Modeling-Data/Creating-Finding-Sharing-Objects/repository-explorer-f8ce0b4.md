@@ -238,7 +238,7 @@ You can create advanced filter conditions for multiple filter categories. An obj
 
 ## Favorite Objects
 
-To add an object to your favorites, click the <span class="FPA-icons"></span> \(Add to Favorites\) tool in the *Actions* column.
+To add an object to your favorites, click the <span class="FPA-icons-V3"></span> \(Add to Favorites\) tool in the *Actions* column.
 
 To view your favorites, select *Favorites* in the *Collection* list
 

@@ -30,7 +30,7 @@ As a result, the consumption model allows harmonized reporting on different meas
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Business Builder*\), select a space if necessary, and click *New Consumption Model* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Business Builder*\), select a space if necessary, and click *New Consumption Model* to open the editor.
 
 2.  Enter a title for your consumption model. Choose *Step 2*.
 
@@ -38,11 +38,11 @@ As a result, the consumption model allows harmonized reporting on different meas
 
 4.  Define a *Source Alias* and choose *Create*. You are taken to the graphical representation of your model. At the center of the diagram, you can see your fact source.
 
-5.  You can zoom into your fact source and add associated business entities for consumption by selecting your fact source and choosing <span class="SAP-icons"></span> \(Show Source Graph\) .
+5.  You can zoom into your fact source and add associated business entities for consumption by selecting your fact source and choosing <span class="SAP-icons-V5"></span> \(Show Source Graph\) .
 
     If your consumption model contains just one fact source, you will see all associations from the selected fact by default.
 
-6.  To add dimension sources, choose <span class="FPA-icons"></span> *Add Dimension Sources* and select your business entities. They then appear under *Dimensions* in the right half of the screen.
+6.  To add dimension sources, choose <span class="FPA-icons-V3"></span> *Add Dimension Sources* and select your business entities. They then appear under *Dimensions* in the right half of the screen.
 
     ![](images/DWC_-_business_Builder_consumption_gif_1c10a90.gif)
 

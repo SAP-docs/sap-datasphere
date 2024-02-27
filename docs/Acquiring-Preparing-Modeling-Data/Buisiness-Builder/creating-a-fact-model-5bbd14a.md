@@ -24,7 +24,7 @@ As an example, you have five consumption models that require the same ten calcul
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Business Builder*\), select a space if necessary, and click *New Fact Model* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Business Builder*\), select a space if necessary, and click *New Fact Model* to open the editor.
 
 2.  Enter a title for your fact model.
 

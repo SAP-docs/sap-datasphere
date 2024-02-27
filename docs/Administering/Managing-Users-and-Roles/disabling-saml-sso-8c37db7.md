@@ -10,15 +10,15 @@ You can revert your system to the default identity provider \(SAP Cloud Identity
 
 ## Procedure
 
-1.  From the side navigation, go to <span class="FPA-icons"></span> \(*System*\)→ <span class="FPA-icons"></span> \(*Administration*\) → *Security*.
+1.  From the side navigation, go to <span class="FPA-icons-V3"></span> \(*System*\)→ <span class="FPA-icons-V3"></span> \(*Administration*\) → *Security*.
 
-    If you've provisioned SAP Datasphere prior to version 2021.03 you'll see a different UI and need go to <span class="FPA-icons"></span> \(*My Products*\) → <span class="FPA-icons"></span> \(*Analytics*\) → <span class="FPA-icons"></span> \(*System*\) → <span class="FPA-icons"></span> \(*Administration*\) → *Security*.
+    If you've provisioned SAP Datasphere prior to version 2021.03 you'll see a different UI and need go to <span class="FPA-icons-V3"></span> \(*My Products*\) → <span class="FPA-icons-V3"></span> \(*Analytics*\) → <span class="FPA-icons-V3"></span> \(*System*\) → <span class="FPA-icons-V3"></span> \(*Administration*\) → *Security*.
 
-2.  Select <span class="FPA-icons"></span> \(Edit\) .
+2.  Select <span class="FPA-icons-V3"></span> \(Edit\) .
 
 3.  In the *Authentication Method* area, select *SAP Cloud Identity \(default\)*.
 
-4.  Select <span class="FPA-icons"></span> \(Save\) .
+4.  Select <span class="FPA-icons-V3"></span> \(Save\) .
 
 
 

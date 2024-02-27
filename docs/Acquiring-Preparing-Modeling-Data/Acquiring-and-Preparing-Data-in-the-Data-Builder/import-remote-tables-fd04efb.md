@@ -20,7 +20,7 @@ You can import tables from any valid connection that supports the remote tables 
 
 1.  From the side navigation, choose *Data Builder* and select a space if necessary.
 
-2.  Choose <span class="FPA-icons"></span> Import Remote Tables. All the available connections are listed.
+2.  Choose <span class="FPA-icons-V3"></span> Import Remote Tables. All the available connections are listed.
 
 3.  Select the connection. Choose *Next Step*.
 

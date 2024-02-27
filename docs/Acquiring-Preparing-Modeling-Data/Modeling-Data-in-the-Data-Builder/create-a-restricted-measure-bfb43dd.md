@@ -10,7 +10,7 @@ With a restricted measure, you can restrict available dimensions.
 
 ## Procedure
 
-1.  You are in the editor of your analytic model. You can createa new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons"></span> Add Measure in the properties panel. Choose *Restricted Measure*.
+1.  You are in the editor of your analytic model. You can createa new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Measure in the properties panel. Choose *Restricted Measure*.
 
 2.  Select the source measure.
 

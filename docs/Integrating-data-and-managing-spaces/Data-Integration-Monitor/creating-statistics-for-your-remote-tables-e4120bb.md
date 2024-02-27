@@ -31,12 +31,12 @@ To ensure the best possible performance when accessing your remote tables and pr
 
 Statistics can be created from the *Remote Queries* monitor.
 
-1.  From the *Data Integration Monitor* \(<span class="FPA-icons"></span>\), select *Remote Queries* \> *Remote Table Statistics*.
+1.  From the *Data Integration Monitor* \(<span class="FPA-icons-V3"></span>\), select *Remote Queries* \> *Remote Table Statistics*.
 
     > ### Note:  
     > With the different tabs, you can navigate between the remote tables in *Data Access: Remote* or *Data Access: Replicated*. However, statistics can be created only on remote tables with *Data Access: Remote*. However, you can still navigate in existing statistics from previous actions.
 
-2.  Select the remote table for which you need to create statistics for, and choose *Create Statistics*. Or select the remote table, click <span class="FPA-icons"></span> to navigate to the details screen, and click the button *Create Statistics*.
+2.  Select the remote table for which you need to create statistics for, and choose *Create Statistics*. Or select the remote table, click <span class="FPA-icons-V3"></span> to navigate to the details screen, and click the button *Create Statistics*.
 
 You can create three types of data statistics object:
 

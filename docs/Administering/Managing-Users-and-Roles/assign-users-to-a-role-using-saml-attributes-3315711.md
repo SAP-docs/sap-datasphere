@@ -14,7 +14,7 @@ For example, you want to give a specific role to all employees that are assigned
 
 ## Prerequisites
 
-Your custom SAML Identity Provider \(IdP\) must be configured and the authentication method selected must be *SAML Single Sign-On \(SSO\)* in <span class="FPA-icons"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*. See [Enabling a Custom SAML Identity Provider](enabling-a-custom-saml-identity-provider-9b26536.md).
+Your custom SAML Identity Provider \(IdP\) must be configured and the authentication method selected must be *SAML Single Sign-On \(SSO\)* in <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*. See [Enabling a Custom SAML Identity Provider](enabling-a-custom-saml-identity-provider-9b26536.md).
 
 
 
@@ -22,7 +22,7 @@ Your custom SAML Identity Provider \(IdP\) must be configured and the authentica
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Security*\) ** \> ** <span class="FPA-icons"></span> \(*Roles*\).
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Select a role \(or open the role\) and click ![](images/SAMLRoleMapping_Button_4b6783e.jpg) \(*Open 'SAML Role Mapping'*\).
 
 3.  Under *Conditions*, select a *SAML Attribute*, select a *Condition*, and enter a *Value* if required.

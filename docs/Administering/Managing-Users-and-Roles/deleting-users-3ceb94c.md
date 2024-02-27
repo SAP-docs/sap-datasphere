@@ -16,7 +16,7 @@ You can delete users.
 
     The whole row is selected.
 
-2.  Choose <span class="FPA-icons"></span> \(Delete\) from the toolbar.
+2.  Choose <span class="FPA-icons-V3"></span> \(Delete\) from the toolbar.
 
 3.  Select *OK* to continue and remove the user from the system.
 

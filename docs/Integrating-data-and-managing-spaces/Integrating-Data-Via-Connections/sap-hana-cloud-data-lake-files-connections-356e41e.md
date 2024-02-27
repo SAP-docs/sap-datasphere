@@ -165,7 +165,7 @@ Description
 
 Enter the Base64-encoded value of the client keystore file. The supported format is PCKS\#12 \(P12 and PFX files\). 
 
-You can also choose <span class="SAP-icons"></span> Browse and select the file from your download location.
+You can also choose <span class="SAP-icons-V5"></span> Browse and select the file from your download location.
 
 </td>
 </tr>

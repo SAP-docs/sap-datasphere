@@ -81,9 +81,9 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Users*\).
+1.  Go to <span class="FPA-icons-V3"></span> \(*Expand*\)** \> **<span class="FPA-icons-V3"></span> \(*Security*\)** \> **<span class="FPA-icons-V3"></span> \(*Users*\).
 
-2.  Select <span class="FPA-icons"></span> \(New\) to add a new user to the user management table.
+2.  Select <span class="FPA-icons-V3"></span> \(New\) to add a new user to the user management table.
 
 3.  Enter a *User ID*.
 
@@ -100,9 +100,9 @@ The method described here assumes that SAP Datasphere is using its default authe
     > ### Note:  
     > The *Manager* column is not relevant for SAP Datasphere users.
 
-6.  Select the icon <span class="FPA-icons"></span> and choose one or more roles from the list.
+6.  Select the icon <span class="FPA-icons-V3"></span> and choose one or more roles from the list.
 
-7.  Select <span class="FPA-icons"></span> \(Save\).
+7.  Select <span class="FPA-icons-V3"></span> \(Save\).
 
 
 

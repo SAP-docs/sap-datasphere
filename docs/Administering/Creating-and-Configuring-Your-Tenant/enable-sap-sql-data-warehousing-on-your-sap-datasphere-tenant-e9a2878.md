@@ -51,7 +51,7 @@ For information about using this feature, see [Exchanging Data with SAP SQL Data
     </td>
     <td valign="top">
     
-    In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> **<span class="FPA-icons"></span> \(*About*\).
+    In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> **<span class="FPA-icons-V3"></span> \(*About*\).
 
     > ### Note:  
     > You need the *Tenant ID* for the ticket, and the *Database ID* when building your containers in the SAP Datasphere run-time database.

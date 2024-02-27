@@ -27,7 +27,7 @@ The address can either be a single IPv4 address or a range specified with a Clas
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *IP Allowlist*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *IP Allowlist*.
 
 2.  From the *IP Allowlist* dropdown, select the appropriate list:
 

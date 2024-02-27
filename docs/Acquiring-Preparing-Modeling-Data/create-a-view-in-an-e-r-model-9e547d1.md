@@ -10,7 +10,7 @@ You can create a view directly in an E/R model, and complete the definition of t
 
 ## Procedure
 
-1.  Select a table or view in the diagram as a source for the new view, and click <span class="FPA-icons"></span> \(Create View from Selection\) to open the *Create View* dialog.
+1.  Select a table or view in the diagram as a source for the new view, and click <span class="FPA-icons-V3"></span> \(Create View from Selection\) to open the *Create View* dialog.
 
 2.  Enter a business name and a technical name for the new view.
 

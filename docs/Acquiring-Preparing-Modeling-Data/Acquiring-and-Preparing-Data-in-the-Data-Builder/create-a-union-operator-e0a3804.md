@@ -66,9 +66,9 @@ Insert a union operator to combine two data sets that share the same schema defi
 
     -   Click on *All*, *Mapped*, or *Unmapped* to show the union columns of your choice.
     -   Drag a column from source and drop onto the required union column to create or modify the mapping.
-    -   To delete mappings, select one or more existing mappings and click <span class="FPA-icons"></span>.
+    -   To delete mappings, select one or more existing mappings and click <span class="FPA-icons-V3"></span>.
 
-    You can click <span class="FPA-icons"></span> \(Settings\)to manually add or delete source columns as output columns of the union, and select the required action.
+    You can click <span class="FPA-icons-V3"></span> \(Settings\)to manually add or delete source columns as output columns of the union, and select the required action.
 
 
     <table>
@@ -136,11 +136,11 @@ Insert a union operator to combine two data sets that share the same schema defi
     
 6.  In the *Columns* section, specify the columns.
 
-    -   All columns from the first input operator are displayed. Hover on a column and click <span class="FPA-icons"></span> to see its data type.
+    -   All columns from the first input operator are displayed. Hover on a column and click <span class="FPA-icons-V3"></span> to see its data type.
 
     -   You can reorder the columns by dragging and dropping.
-    -   Click <span class="FPA-icons"></span> \(Menu\) to rename or remove selected column.
-    -   To remove multiple columns at once, press the [Ctrl\] key, click on each columns you want to select, and click <span class="FPA-icons"></span> \(Delete Columns\).
+    -   Click <span class="FPA-icons-V3"></span> \(Menu\) to rename or remove selected column.
+    -   To remove multiple columns at once, press the [Ctrl\] key, click on each columns you want to select, and click <span class="FPA-icons-V3"></span> \(Delete Columns\).
 
 7.  To complete the union, create a flow from it to the next operator or the target table, as appropriate.
 

@@ -10,7 +10,7 @@ Review results are input records that are matched with a lookup record with a sc
 
 ## Procedure
 
-1.  Select the rule node and then click <span class="FPA-icons"></span> \(Preview Data\) to open the *Preview Data* panel.
+1.  Select the rule node and then click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Preview Data* panel.
 
 2.  Click the *Review* tab.
 
@@ -41,7 +41,7 @@ Review results are input records that are matched with a lookup record with a sc
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(Collapse All\) / <span class="SAP-icons"></span> \(Expand All\)
+    <span class="SAP-icons-V5"></span> \(Collapse All\) / <span class="SAP-icons-V5"></span> \(Expand All\)
     
     </td>
     <td valign="top">
@@ -89,7 +89,7 @@ Review results are input records that are matched with a lookup record with a sc
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Settings\)
+    <span class="FPA-icons-V3"></span> \(Settings\)
     
     </td>
     <td valign="top">

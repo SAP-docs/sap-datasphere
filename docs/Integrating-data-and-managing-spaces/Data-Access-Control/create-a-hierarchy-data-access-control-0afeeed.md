@@ -157,7 +157,7 @@ For example:
 -   The `Geo Hierarchy` data access control uses the `Geo Permissions` table as a permissions entity and, when it is applied to a view, ensures that the following users will only have access to records with the appropriate geo location values:
     -   `bob` - `Europe`, `France`, or `Paris`.
     -   `jim` - `France` or `Paris`.
-    -   `bob` - `Paris`.
+    -   `ann` - `Paris`.
 
 
 
@@ -166,7 +166,7 @@ For example:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor. 
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor. 
 
 2.  Complete the properties in the *General Section*:
 

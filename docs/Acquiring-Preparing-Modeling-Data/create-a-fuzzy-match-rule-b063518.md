@@ -148,7 +148,7 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     
 3.  Use the *Match Columns* section to specify columns to compare.
 
-    Click <span class="FPA-icons"></span> \(Add\), and select one or more string columns from each entity to compare. When you select more than one column on either side, the columns are concatenated together in the order in which they are displayed in the list.
+    Click <span class="FPA-icons-V3"></span> \(Add\), and select one or more string columns from each entity to compare. When you select more than one column on either side, the columns are concatenated together in the order in which they are displayed in the list.
 
 
     <table>
@@ -275,14 +275,14 @@ A fuzzy match rule lets you broaden the search for matches to include data that 
     
 6.  Save, deploy, and run your intelligent lookup to see the results of your rule.
 
-    1.  Click <span class="SAP-icons"></span> \(Deploy\) to save and deploy your intelligent lookup.
+    1.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy your intelligent lookup.
 
         If you have not previously saved the intelligent lookup, you will be prompted to provide a business and technical name for it. Enter appropriate names, and then click Save.
 
         > ### Note:  
         > You need to re-deploy your intelligent lookup each time your make a change to it. If you have pending changes, they will be saved automatically before deployment.
 
-    2.  Once deployment is complete, click <span class="FPA-icons"></span> \(Run\) to run the intelligent lookup and review the results.
+    2.  Once deployment is complete, click <span class="FPA-icons-V3"></span> \(Run\) to run the intelligent lookup and review the results.
 
 
 

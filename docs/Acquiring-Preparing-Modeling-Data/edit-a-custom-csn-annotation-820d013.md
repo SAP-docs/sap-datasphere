@@ -18,11 +18,11 @@ The *Table Editor*, *Graphical View Editor*, *SQL Editor*, and *E/R Modeler* all
 
 ## Procedure
 
-1.  Click <span class="SAP-icons"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog:
+1.  Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog:
 
-    -   Click <span class="FPA-icons"></span> \(Previous Annotation\) and <span class="FPA-icons"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
+    -   Click <span class="FPA-icons-V3"></span> \(Previous Annotation\) and <span class="FPA-icons-V3"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
     -   Enter changes for the custom CSN annotations in the code.
-    -   Click <span class="FPA-icons"></span> \(Validate CSN expression\) to check if changes invalidate or not the CSN expression.
+    -   Click <span class="FPA-icons-V3"></span> \(Validate CSN expression\) to check if changes invalidate or not the CSN expression.
 
 2.  Click *OK* to save the changes or *Cancel* to go back to the editor without saving.
 

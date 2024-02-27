@@ -1,8 +1,8 @@
 <!-- loio7c11059ed3314e1fb753736b7867512c -->
 
-# Schedule a Data Integration Task
+# Schedule a Data Integration Task \(Simple Schedule\)
 
-You can schedule or unschedule data integration tasks such as remote table replication, persisting views, or data flow execution. You may also pause and then later resume execution of scheduled tasks.
+You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow or task chains runs. You may also pause and then later resume the run of scheduled tasks.
 
 
 
@@ -45,7 +45,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 4.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the monitor asking for your consent. Give your consent.
 
-5.  For remote tables and views: Select the object for which you want to schedule a task.
+5.  Select the object for which you want to schedule a task.
 
 6.  Click *Schedule* \> *Create Schedule* 
 
@@ -213,7 +213,7 @@ The column *Schedule Owners* displays the name of the current schedule owner.
 
 The *Next Run* colums shows the start date and time of the next run according to the scheduling settings.
 
-As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(View Persistency Logs\)*, or *\(Details\)*.
+As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(Views Logs\)*, or *\(Details\)*.
 
 
 

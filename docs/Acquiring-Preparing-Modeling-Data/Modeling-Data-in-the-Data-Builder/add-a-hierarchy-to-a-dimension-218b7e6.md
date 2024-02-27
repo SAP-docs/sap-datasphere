@@ -31,12 +31,12 @@ The following hierarchy features are not supported:
 
 ## Procedure
 
-1.  Open your dimension and click <span class="FPA-icons"></span> \(Hierarchies\) to open the *Hierarchies* dialog.
+1.  Open your dimension and click <span class="FPA-icons-V3"></span> \(Hierarchies\) to open the *Hierarchies* dialog.
 
     > ### Note:  
     > For tables, the editor for hierarchies is in the menu bar on top of the canvas. For views and entity-relationship models, it is on the properties panel.
 
-2.  Click <span class="FPA-icons"></span> \(Add\)and then select:
+2.  Click <span class="FPA-icons-V3"></span> \(Add\)and then select:
 
     -   *Parent-Child Hierarchy* or *Level-Based Hierarchy* - To create a new hierarchy inside the dimension. Complete the following properties as appropriate:
 
@@ -93,7 +93,7 @@ The following hierarchy features are not supported:
         </td>
         <td valign="top">
         
-        \[parent-child hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a new parent-child hierarchy. Select the parent and child columns that represent the hierarchy. You can set as many as necessary. The results of these hierarchies can be compounded.
+        \[parent-child hierarchies\] Click <span class="FPA-icons-V3"></span> \(Add\) to add a new parent-child hierarchy. Select the parent and child columns that represent the hierarchy. You can set as many as necessary. The results of these hierarchies can be compounded.
 
         > ### Example:  
         > You have a `CostArea` and `CostCenter` attributes with the following pairs of parent-child hierarchies:
@@ -254,7 +254,7 @@ The following hierarchy features are not supported:
         </td>
         <td valign="top">
         
-        \[level-based hierarchies\] Click <span class="FPA-icons"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
+        \[level-based hierarchies\] Click <span class="FPA-icons-V3"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons-V3"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
 
         For example, in a `Products` dimension, you may add three levels containing the columns `Product Line`, `Product Category`, and `Product`.
         
@@ -273,7 +273,7 @@ The following hierarchy features are not supported:
         3.  Click *Add* to add the external hierarchy and return to the *Hierarchies* dialog.
 
         > ### Note:  
-        > Alternatively, you can add an external hierarchy in the *Associations* section of the dimension property sheet. Click <span class="FPA-icons"></span> \(Create Association\) and select *Hierarchy Association*. Drag and drop the key attribute of your dimension on the child column of the hierarchy to map them.
+        > Alternatively, you can add an external hierarchy in the *Associations* section of the dimension property sheet. Click <span class="FPA-icons-V3"></span> \(Create Association\) and select *Hierarchy Association*. Drag and drop the key attribute of your dimension on the child column of the hierarchy to map them.
 
 
 3.  Click *Close* to close the dialog and return to your dimension.

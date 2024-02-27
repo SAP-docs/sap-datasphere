@@ -18,7 +18,7 @@ To run a flow, you have 3 main options depending on your flow type:
 
 ## Run a Direct Flow
 
-Once you have completed the flow configuration and saved it, you can run it. Click <span class="FPA-icons"></span> \(Run\) to start the process to acquire and transform data as per your defined settings. Once completed, the *Run Status* section in the property panel is updated. You can navigate to the *Flows* monitor to get more detail on the run. See [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
+Once you have completed the flow configuration and saved it, you can run it. Click <span class="FPA-icons-V3"></span> \(Run\) to start the process to acquire and transform data as per your defined settings. Once completed, the *Run Status* section in the property panel is updated. You can navigate to the *Flows* monitor to get more detail on the run. See [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 
 > ### Note:  
 > Regarding data flows:
@@ -42,7 +42,7 @@ Once you have completed the flow configuration and saved it, you can run it. Cli
 
 ## Create a Schedule to Run Your Flow
 
-You can also create a schedule to run your data flow or your transformation flow on regular basis. Click <span class="FPA-icons"></span> \(Schedule\) and define your schedule. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
+You can also create a schedule to run your data flow or your transformation flow on regular basis. Click <span class="FPA-icons-V3"></span> \(Schedule\) and define your schedule. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -58,7 +58,7 @@ You can also create a schedule to run your data flow or your transformation flow
 
 You can run a data flow using a task chain. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 
-Alternatively, you can also run your flows from the <span class="FPA-icons"></span> \( Data Integration Monitor\).
+Alternatively, you can also run your flows from the <span class="FPA-icons-V3"></span> \( Data Integration Monitor\).
 
 From the *Flows* monitor, you can check details of your runs, and perform other actions on your flows. For more information, see [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 

@@ -37,7 +37,7 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
 
         As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
-    -   Click <span class="FPA-icons"></span> \(More\) to access the *Sort* and *Filter* options.
+    -   Click <span class="FPA-icons-V3"></span> \(More\) to access the *Sort* and *Filter* options.
     -   Click a folder in the list to drill down into and restrict your search to the folder.
 
 
@@ -46,7 +46,7 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
     </tr>
     </table>
     
-3.  When you find an object, you can preview it before adding it. Click <span class="FPA-icons"></span> \(More\) and select:
+3.  When you find an object, you can preview it before adding it. Click <span class="FPA-icons-V3"></span> \(More\) and select:
 
     -   *Show Info* - See additional properties and optionally open it in a new tab.
     -   *Show Data Preview* - Preview the object's data \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
@@ -56,7 +56,7 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
     > ### Note:  
     > In an E/R model, you can additionally::
     > 
-    > -   Add multiple objects simultaneously, click <span class="FPA-icons"></span> \(Add from Repository\) to open the *Add Repository Object* dialog. Select the objects you want to import and click *OK*.
+    > -   Add multiple objects simultaneously, click <span class="FPA-icons-V3"></span> \(Add from Repository\) to open the *Add Repository Object* dialog. Select the objects you want to import and click *OK*.
     > -   Add objects that are related to those already in the diagram \(see [Add Related Entities to an E/R Model Diagram](add-related-entities-to-an-e-r-model-diagram-bbde0a7.md)\).
     > -   Add objects from a CSN file \(see [Importing Objects from a CSN/JSON File](Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
 

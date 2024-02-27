@@ -61,7 +61,7 @@ Availability of data replication \(snapshot\) depends on the connection type. Fo
     </td>
     <td valign="top">
     
-    Select *Schedule* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    Select *Schedule* \> *Create Schedule*. For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
     
     </td>
     </tr>

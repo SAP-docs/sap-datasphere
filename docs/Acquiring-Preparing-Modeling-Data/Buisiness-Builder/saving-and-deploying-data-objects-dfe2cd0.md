@@ -12,10 +12,10 @@ In the Business Builder, all objects apart from the perspective are just saved.
 
 To review the current status of a perspective, open it in its editor and look for the *Deployment Status* property, which can have the following values:
 
--   <span class="SAP-icons"></span> \(Not Deployed\) - The object has never been deployed and exists only as a design-time artifact.
+-   <span class="SAP-icons-V5"></span> \(Not Deployed\) - The object has never been deployed and exists only as a design-time artifact.
 -   :clock3: - The object is deployed to the run-time database and its design-time and run-time versions are identical.
--   <span class="SAP-icons"></span> \(Changes to Deploy\) - The design-time version of the object contains changes that need to be deployed to make them available in the run-time.
--   <span class="FPA-icons"></span> \(Design-Time Error\) - The deployment process failed and you should try to deploy again.
+-   <span class="SAP-icons-V5"></span> \(Changes to Deploy\) - The design-time version of the object contains changes that need to be deployed to make them available in the run-time.
+-   <span class="FPA-icons-V3"></span> \(Design-Time Error\) - The deployment process failed and you should try to deploy again.
 
 When you deploy a perspective, you create a run-time version, which can be used by other run-time objects and consumed in stories in SAP Analytics Cloud, or any other BI client.
 

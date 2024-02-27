@@ -18,7 +18,7 @@ The associated business entities will be available as dimensions when you create
 
 1.  Go to the *Associations* tab.
 
-2.  Choose <span class="FPA-icons"></span> *Create*.
+2.  Choose <span class="FPA-icons-V3"></span> *Create*.
 
 3.  Select your target business entity. The information *Referential Integrity Ensured* is used for performance optimizations during querying. If switched on, it indicates that each data record of the currently opened business entity finds a match in the selected target business entity with the configured key mapping. If there is no match found for every data record but *Referential Integrity Ensured* is switched on, it can impact the result during querying.
 

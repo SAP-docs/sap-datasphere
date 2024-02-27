@@ -2,6 +2,7 @@
 
 -   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md)
 -   [Creating, Finding, and Sharing Objects](Creating-Finding-Sharing-Objects/creating-finding-and-sharing-objects-6c69b30.md)
+    -   [Working in Spaces](Creating-Finding-Sharing-Objects/working-in-spaces-6a396f6.md)
     -   [Repository Explorer](Creating-Finding-Sharing-Objects/repository-explorer-f8ce0b4.md)
     -   [Folders](Creating-Finding-Sharing-Objects/folders-bbedad6.md)
     -   [Packages](Creating-Finding-Sharing-Objects/packages-a806c67.md)

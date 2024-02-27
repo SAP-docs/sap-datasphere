@@ -10,7 +10,7 @@ Delete your database analysis user as soon as the support task is completed to a
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
 
 2.  Select the user you want to delete and then click *Delete*.
 

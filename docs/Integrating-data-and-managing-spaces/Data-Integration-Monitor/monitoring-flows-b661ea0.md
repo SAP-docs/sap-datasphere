@@ -40,7 +40,7 @@ For more information and points to consider when using replication flows, see al
 
 1.  In the SAP Datasphere, navigate to *Data Integration Monitor* \> *Flows*.
 
-    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also create, edit, delete, pause or resume a schedule for a data flow, or assign a schedule to your name under *Schedule*. Whenever it's applicable, you can select several data flows to group the scheduling actions. For more information, see [Schedule a Data Integration Task](schedule-a-data-integration-task-7c11059.md).
+    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also create, edit, delete, pause or resume a schedule for a data flow, or assign a schedule to your name under *Schedule*. Whenever it's applicable, you can select several data flows to group the scheduling actions. For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
 
     The list of deployed flows shows the following information:
 
@@ -194,7 +194,7 @@ For more information and points to consider when using replication flows, see al
     > ### Note:  
     > Parallel execution is not supported: You can't run two identical flows at the same time. You need to wait until the first run is completed before you can launch another one. Otherwise your second run gets the status *Failed*.
 
-2.  To see the run details of a flow, click <span class="SAP-icons"></span> \(Details\) for the relevant flow.
+2.  To see the run details of a flow, click <span class="SAP-icons-V5"></span> \(Details\) for the relevant flow.
 
     The run details page opens. It shows the runs of the flow in the left panel and their corresponding messages in the right panel. Here, you can use the *Stop Run* \(for *Replication Flow*\), *Cancel Run* \(for *Transformation Flow*\) or *Set to failed* \(for *Data Flow\)* buttons to stop a run that is currently running. The buttons are available until the run ends.
 
@@ -214,10 +214,10 @@ For more information and points to consider when using replication flows, see al
         > -   For historical runs of a flow, metrics can’t be retrieved.
 
 
-4.  You can analyze errors that have occurred during your data flow runs downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons"></span> Download Run Details
+4.  You can analyze errors that have occurred during your data flow runs downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details
 
 5.  You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*
 
-6.  To view and modify a flow, click <span class="SAP-icons"></span> Open in Data Builder.
+6.  To view and modify a flow, click <span class="SAP-icons-V5"></span> Open in Data Builder.
 
 

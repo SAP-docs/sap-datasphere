@@ -12,7 +12,7 @@ Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. 
 
 1.  In SAP Datasphere, register the Data Provisioning Agent.
 
-    1.  In the side navigation area, click <span class="FPA-icons"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+    1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
     2.  In the *On-Premise Agents* section, add a new tile to create a new agent registration in SAP Datasphere.
 
@@ -135,7 +135,7 @@ Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. 
 
 The Data Provisioning Agent is now connected.
 
-If the tile of the registered Data Provisioning Agent doesn’t display the updated connection status, select <span class="SAP-icons"></span>*Refresh Agents*.
+If the tile of the registered Data Provisioning Agent doesn’t display the updated connection status, select <span class="SAP-icons-V5"></span>*Refresh Agents*.
 
 **Related Information**  
 

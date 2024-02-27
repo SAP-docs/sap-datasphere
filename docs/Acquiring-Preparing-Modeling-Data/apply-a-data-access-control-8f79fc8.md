@@ -24,13 +24,13 @@ For detailed information about defining and using data access controls, see [Sec
 
 3.  Select the output node of the view and open the *Data Access Control* section in its side panel.
 
-4.  Click <span class="FPA-icons"></span> \(Add\), select the data access control you want to apply, and click *OK*.
+4.  Click <span class="FPA-icons-V3"></span> \(Add\), select the data access control you want to apply, and click *OK*.
 
 5.  In the *Join* section, map columns from your view to the criteria columns defined in the data access control.
 
     You must map a column from your view to each of the criteria columns defined in the data access control in order to correctly filter your view's data by the criteria.
 
-6.  Click <span class="SAP-icons"></span> \(Deploy\) to save and deploy the view.
+6.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy the view.
 
 
 

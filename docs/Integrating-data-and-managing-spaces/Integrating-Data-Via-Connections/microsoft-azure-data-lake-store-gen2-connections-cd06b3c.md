@@ -142,7 +142,7 @@ Description
 </td>
 <td valign="top">
 
-Select the authentication type to be used: or *Shared Access Signature*. 
+Select the authentication type to be used: 
 
 You can select:
 
@@ -328,9 +328,7 @@ Enter the client ID.
 </td>
 <td valign="top">
 
-Upload the X.509 client certificate.
-
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location. 
 
 </td>
 </tr>
@@ -342,9 +340,7 @@ Choose <span class="SAP-icons"></span> \(Browse\) and select the file from yo
 </td>
 <td valign="top">
 
-Upload the X.509 client's private key.
-
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location. 
 
 </td>
 </tr>

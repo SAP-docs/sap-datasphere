@@ -38,7 +38,7 @@ Key
 Select the checkbox to specify that the column is a primary key column. Key columns cannot be null. 
 
 > ### Note:  
-> To set or remove an attribute as a primary key column in a view editor side panel, hover over it and click <span class="FPA-icons"></span> \(Menu\)** \> *Set as Key* or *Remove as Key*.
+> To set or remove an attribute as a primary key column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Set as Key* or *Remove as Key*.
 
 
 
@@ -133,7 +133,7 @@ Change Type
 </td>
 <td valign="top">
 
-This column will track the type of last change made to a record. When a record is inserted or updated corresponding change types are used \(for example "I" or "U"\). When an existing record is deleted other specific change types are used \(for example "D"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. For more information on records deletion, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md) .
+This column will track the type of last change made to a record. When a record is inserted or updated corresponding change types are used: "*I*" for insert \(a new record is added\), "*U*" for update \(an existing record gets an updated value\), or "*A*" for upsert \(insert records if they do not exist yet in the target table, or update them by primary key if they do exist\). When an existing record is deleted other specific change types are used \(for example "*D*"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. For more information on records deletion, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md) .
 
 </td>
 </tr>

@@ -10,7 +10,7 @@ Add a new column in a projection operator and define the expression that will fi
 
 ## Procedure
 
-1.  In the properties panel of the projection operator, choose <span class="FPA-icons"></span> \(Add New Calculated Column\) in the *Columns* section.
+1.  In the properties panel of the projection operator, choose <span class="FPA-icons-V3"></span> \(Add New Calculated Column\) in the *Columns* section.
 
 2.  Provide a name and data type for the column. Additional fields are displayed for the following data types:
 

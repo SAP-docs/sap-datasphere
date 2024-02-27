@@ -121,7 +121,7 @@ Users with the *DW Space Administrator* role can create database users, granting
 
     You will receive a notification when the deployment of the space is complete.
 
-5.  Click the <span class="FPA-icons"></span> button for your user in the *Database Users* list to open the *Database User Details* dialog.
+5.  Click the <span class="FPA-icons-V3"></span> button for your user in the *Database Users* list to open the *Database User Details* dialog.
 
 6.  Request a password for your database user:
 

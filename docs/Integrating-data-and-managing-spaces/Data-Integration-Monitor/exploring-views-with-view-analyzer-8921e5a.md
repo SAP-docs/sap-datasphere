@@ -210,7 +210,7 @@ To use the *View Analyzer*,
         <tr>
         <td valign="top">
         
-        <span class="FPA-icons"></span> \(Sort\)
+        <span class="FPA-icons-V3"></span> \(Sort\)
         
         </td>
         <td valign="top">
@@ -224,7 +224,7 @@ To use the *View Analyzer*,
         <tr>
         <td valign="top">
         
-        <span class="FPA-icons"></span> \(Filter\)
+        <span class="FPA-icons-V3"></span> \(Filter\)
         
         </td>
         <td valign="top">
@@ -238,7 +238,7 @@ To use the *View Analyzer*,
         <tr>
         <td valign="top">
         
-        <span class="FPA-icons"></span> \(Inspect\)
+        <span class="FPA-icons-V3"></span> \(Inspect\)
         
         </td>
         <td valign="top">
@@ -269,7 +269,7 @@ To use the *View Analyzer*,
         <tr>
         <td valign="top">
         
-        <span class="FPA-icons"></span> \(Lineage View\)
+        <span class="FPA-icons-V3"></span> \(Lineage View\)
         
         </td>
         <td valign="top">

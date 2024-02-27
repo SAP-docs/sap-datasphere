@@ -63,7 +63,7 @@ If you are not comfortable with SQL, you can still build a view by using the *Gr
         > ### Note:  
         > SQLScript cannot be formatted.
 
-    -   Validate your code and update the display of your output structure in the side panel at any time by clicking <span class="FPA-icons"></span> \(Validate SQL and Preview Data\).
+    -   Validate your code and update the display of your output structure in the side panel at any time by clicking <span class="FPA-icons-V3"></span> \(Validate SQL and Preview Data\).
 
         > ### Note:  
         > If you add a new column to a table, but do not deploy the table, the system will display an error message if you validate SQL code that references that column.
@@ -73,7 +73,7 @@ If you are not comfortable with SQL, you can still build a view by using the *Gr
         > ### Note:  
         > If your SQLScript is complicated, SAP Datasphere may not be able to determine the output structure. In this case, you are requested to review the list of columns. Click the *Edit* button to add or delete buttons or change column names and data types.
 
-    -   Preview the data being output by the view by clicking <span class="SAP-icons"></span> \(Show or hide data preview\)\(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+    -   Preview the data being output by the view by clicking <span class="SAP-icons-V5"></span> \(Show or hide data preview\)\(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
 
         > ### Note:  
         > It is not possible to preview data if you are using SQLScript.

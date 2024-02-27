@@ -23,7 +23,7 @@ Before creating your data access control, you must have prepared a permissions e
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor. 
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor. 
 
 2.  Complete the following properties:
 

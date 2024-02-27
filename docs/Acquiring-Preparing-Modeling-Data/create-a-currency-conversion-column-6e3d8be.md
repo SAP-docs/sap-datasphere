@@ -35,7 +35,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
 
 ## Procedure
 
-1.  In a *Calculated Columns* node, click <span class="FPA-icons"></span> \(Add New Calculated Column\) \> <span class="SAP-icons"></span> \(Currency Conversion Column\) to create a new *Currency Conversion* column.
+1.  In a *Calculated Columns* node, click <span class="FPA-icons-V3"></span> \(Add New Calculated Column\) \> <span class="SAP-icons-V5"></span> \(Currency Conversion Column\) to create a new *Currency Conversion* column.
 
     The new column properties are displayed in the side panel.
 
@@ -96,7 +96,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the column describing the input unit. Click <span class="SAP-icons"></span> and choose a type:
+    Select the column describing the input unit. Click <span class="SAP-icons-V5"></span> and choose a type:
 
     -   *Column* - Select a column and click *Select*.
 
@@ -114,7 +114,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the column describing the target unit. Click <span class="SAP-icons"></span> and choose a type:
+    Select the column describing the target unit. Click <span class="SAP-icons-V5"></span> and choose a type:
 
     -   *Column* - Select a column and click *Select*.
 
@@ -133,7 +133,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Enter the column describing the currency reference date. Click <span class="SAP-icons"></span> and choose a type:
+    Enter the column describing the currency reference date. Click <span class="SAP-icons-V5"></span> and choose a type:
 
     -   *Column* - Select a column and click *Select*.
 

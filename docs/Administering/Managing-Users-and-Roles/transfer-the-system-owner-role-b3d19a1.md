@@ -23,11 +23,11 @@ You must be logged on as a user with the *System Information Update* privilege.
 
 1.  On the *Users* page of the *Security* area, select the user you want to assign the system owner role to.
 
-2.  Select <span class="FPA-icons"></span> \(Assign as System Owner\).
+2.  Select <span class="FPA-icons-V3"></span> \(Assign as System Owner\).
 
     The *Transfer System Owner Role* dialog appears.
 
-3.  Under *New Role*, enter a new role for the previous system owner, or select <span class="FPA-icons"></span> to open a list of available roles.
+3.  Under *New Role*, enter a new role for the previous system owner, or select <span class="FPA-icons-V3"></span> to open a list of available roles.
 
     > ### Note:  
     > One or more roles may be selected.

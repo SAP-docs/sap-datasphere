@@ -140,7 +140,7 @@ For more information about available connection types, sources, and targets, see
     
 3.  Select a target connection and target container \(see [Add a Target](add-a-target-ab490fb.md)\).
 
-4.  Click <span class="FPA-icons"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
+4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
 
 5.  Select a replication object in the canvas to review its properties in the side panel and change or complete them as appropriate:
 
@@ -235,15 +235,15 @@ For more information about available connection types, sources, and targets, see
     > 
     > -   [Using Apache Kafka As the Target](using-apache-kafka-as-the-target-6df55db.md).
 
-6.  Click <span class="FPA-icons"></span> \(Save\).
+6.  Click <span class="FPA-icons-V3"></span> \(Save\).
 
-7.  Click <span class="SAP-icons"></span> \(Deploy\) to make your replication flow ready to run.
+7.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to make your replication flow ready to run.
 
     When you deploy your replication flow, it gets saved in the shared repository and is available for other users to view, import, or modify.
 
     When deploying your replication flow, the system does a series of validation checks and outputs an error message if it finds an issue in the flow configuration.
 
-8.  Click <span class="FPA-icons"></span> \(Run\) to start your replication flow.
+8.  Click <span class="FPA-icons-V3"></span> \(Run\) to start your replication flow.
 
     For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 

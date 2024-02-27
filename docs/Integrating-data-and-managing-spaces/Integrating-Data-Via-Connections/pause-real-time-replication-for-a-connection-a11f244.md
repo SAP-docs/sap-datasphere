@@ -20,7 +20,7 @@ If you need to upgrade or patch your Data Provisioning Agent, or you need to app
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
 
 2.  In the list of connections, you can see the *Real-Time Replication Status* for each connection. Depending on the status you can perform different actions.
 

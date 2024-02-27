@@ -97,7 +97,7 @@ You can specify from 256 GB \(minimum\), by increments of 256 GB.
 
 Select the number of compute blocks.
 
-You can specify from 2 blocks \(minimum\), by increments of 1 block. Each compute block provides a range of 60 to 64 GB of RAM, depending on the hyperscaler.
+You can specify from 2 blocks \(minimum\), and add increments of 1 block. Each compute block provides a range of 60 to 64 GB of RAM, depending on the hyperscaler.
 
 The number for memory is calculated based on the compute blocks and you cannot directly modify it.
 

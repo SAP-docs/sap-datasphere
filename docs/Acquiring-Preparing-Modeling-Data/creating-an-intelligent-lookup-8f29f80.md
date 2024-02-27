@@ -211,16 +211,16 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
     
 7.  Deploy and run the intelligent lookup:
 
-    1.  Click <span class="SAP-icons"></span> \(Deploy\) , enter business and technical names in the *Save Intelligent Lookup* dialog, then click *Save*.
+    1.  Click <span class="SAP-icons-V5"></span> \(Deploy\) , enter business and technical names in the *Save Intelligent Lookup* dialog, then click *Save*.
 
-    2.  Once deployment is complete, click <span class="FPA-icons"></span> \(Run\) to run the intelligent lookup and review the results.
+    2.  Once deployment is complete, click <span class="FPA-icons-V3"></span> \(Run\) to run the intelligent lookup and review the results.
 
         ![](images/IL_Counties_Example_-_Normal_Width_b2f02fe.png)
 
         Once the run is complete, the color-coded results of the rule are displayed on its symbol as percentages of the input records.
 
 
-8.  Select the rule node and then click <span class="FPA-icons"></span> \(Preview Data\) to open the *Preview Data* panel and process the results in the various tabs:
+8.  Select the rule node and then click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Preview Data* panel and process the results in the various tabs:
 
     ![](images/IL_Results_-_Multiple_90ceef5.png)
 

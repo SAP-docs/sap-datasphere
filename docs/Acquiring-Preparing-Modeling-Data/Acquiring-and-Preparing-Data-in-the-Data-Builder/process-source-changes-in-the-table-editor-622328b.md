@@ -22,7 +22,7 @@ Identify available table structure updates in your data sources and resolve conf
 > ### Restriction:  
 > In case you remove columns from the remote table definition compared to the source object \(remote table having less columns than the source entity\), real-time replications don't work for remote tables connected via SAP HANA smart data access or Cloud Connector for SAP HANA on-premise versions lower than 2.0 SPS06.
 
-Keeping your data up-to-date can sometimes be a challenge for modelers. When an update is available in your data source, you can do a refresh of your table structure in the *Data Builder* or click <span class="FPA-icons"></span> Validate Remote Tables form the *Data Builder* landing page. For more information, see [Process Source Changes for Several Remote Tables](process-source-changes-for-several-remote-tables-4e0be16.md).
+Keeping your data up-to-date can sometimes be a challenge for modelers. When an update is available in your data source, you can do a refresh of your table structure in the *Data Builder* or click <span class="FPA-icons-V3"></span> Validate Remote Tables form the *Data Builder* landing page. For more information, see [Process Source Changes for Several Remote Tables](process-source-changes-for-several-remote-tables-4e0be16.md).
 
 > ### Note:  
 > This refresh is a manual action from the *Table Editor*. When you click *Refresh*, you will receive a notification of any structural changes in the remote source and can then decide whether to proceed and import the changes or cancel.
@@ -32,7 +32,7 @@ Keeping your data up-to-date can sometimes be a challenge for modelers. When an 
 
 To import changes from the underlying sources,
 
-1.  Click <span class="SAP-icons"></span> \(Refresh\) to import available changes.
+1.  Click <span class="SAP-icons-V5"></span> \(Refresh\) to import available changes.
 
     > ### Note:  
     > Changes in data type, length, or precision are also automatically updated or aligned with the source table structure for either SAP HANA smart data acess or SAP HANA smart data integration remote connections.
@@ -46,8 +46,8 @@ To import changes from the underlying sources,
     > 
     > -   Columns can be added or removed at any time from the column section. For more information, see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md).
 
-2.  Once import is completed, you can see the changes in the validation area <span class="FPA-icons"></span> \(Validation Messages\).
-3.  Click <span class="FPA-icons"></span> \(Preview Data\) to preview the data contained in your remote table.
+2.  Once import is completed, you can see the changes in the validation area <span class="FPA-icons-V3"></span> \(Validation Messages\).
+3.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to preview the data contained in your remote table.
 
     > ### Note:  
     > Previewing data on a remote system is similar to previewing data of a local table. However, it might take longer, it can impact the remote system’s performance, and some preview controls aren't available. You can replicate the table locally to address performance issues and have a richer preview experience. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md). Moreover, the remote table data preview is limited for the following connection types:
@@ -55,9 +55,9 @@ To import changes from the underlying sources,
     > -   *ABAP* connection: the filters `=` and `IN` only are available.
     > -   *Cloud Data Integration \(CDI\)*connection: rows won't be counted in headers.
 
-4.  <span class="FPA-icons"></span> \(Save\) Save your changes.
-5.  <span class="SAP-icons"></span> \(Deploy\). A pop up informs you about the source updates before you can go forward with deployment and access data from the updated remote source.
+4.  <span class="FPA-icons-V3"></span> \(Save\) Save your changes.
+5.  <span class="SAP-icons-V5"></span> \(Deploy\). A pop up informs you about the source updates before you can go forward with deployment and access data from the updated remote source.
 
 > ### Caution:  
-> If your remote table is replicated, you can refresh, import, preview, and save the changes as stated above. However, once import of changes is completed, you can't directly redeploy your table without first going back to the *Remote Tables* monitor and removing the replicated data. Once replicated data is removed, you’ll be able to redeploy your table with its updated structure. For more information on removing replicated data, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In Remote Tables (monitor), you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
+> If your remote table is replicated, you can refresh, import, preview, and save the changes as stated above. However, once import of changes is completed, you can't directly redeploy your table without first going back to the *Remote Tables* monitor and removing the replicated data. Once replicated data is removed, you’ll be able to redeploy your table with its updated structure. For more information on removing replicated data, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
 

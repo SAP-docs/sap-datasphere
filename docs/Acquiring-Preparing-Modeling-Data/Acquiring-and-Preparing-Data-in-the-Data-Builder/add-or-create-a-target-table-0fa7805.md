@@ -12,7 +12,7 @@ Add a target table to write data to. You can only have one target table in a dat
 
 1.  Add a target table to the data flow in one of the following ways:
 
-    -   Click <span class="FPA-icons"></span> \(Add Table\) in the toolbar, and drag and drop it onto the canvas to create a new target table
+    -   Click <span class="FPA-icons-V3"></span> \(Add Table\) in the toolbar, and drag and drop it onto the canvas to create a new target table
 
         The target table is added to your data flow. The text **New** at the bottom-right of the operator shows that the table is newly added.
 
@@ -189,10 +189,10 @@ Add a target table to write data to. You can only have one target table in a dat
 
     -   To delete a mapping, select it, and click *Delete*. To delete all mappings, *Remove all Mappings.*
 
-    -   You can, at any time, click <span class="FPA-icons"></span> \(Auto Map\) to relaunch automapping based on names and datatypes.
+    -   You can, at any time, click <span class="FPA-icons-V3"></span> \(Auto Map\) to relaunch automapping based on names and datatypes.
 
 
-5.  In the *Columns* section, view the columns of the target table. To check the data type of a column, hover over it and click <span class="FPA-icons"></span>.
+5.  In the *Columns* section, view the columns of the target table. To check the data type of a column, hover over it and click <span class="FPA-icons-V3"></span>.
 
 6.  \[optional\] In the *Advanced* section, configure the following properties:
 

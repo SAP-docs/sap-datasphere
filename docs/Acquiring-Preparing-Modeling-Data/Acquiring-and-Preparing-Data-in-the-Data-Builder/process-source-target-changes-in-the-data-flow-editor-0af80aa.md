@@ -96,6 +96,6 @@ If one or more of the sources \(or the target table\) of your data flow is modif
     > ### Note:  
     > If you leave any target table column unmapped, new runs of the data flow will insert null values into it.
 
-6.  Click <span class="FPA-icons"></span> \(Save\) to save the changes to your data flow and dismiss the information messages.
+6.  Click <span class="FPA-icons-V3"></span> \(Save\) to save the changes to your data flow and dismiss the information messages.
 
 

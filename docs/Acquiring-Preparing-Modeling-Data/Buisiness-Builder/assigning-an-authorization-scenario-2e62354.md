@@ -18,9 +18,9 @@ Authorization scenarios help you define different business authorization context
 
 1.  In the *Business Builder*, select your business entity.
 
-2.  In the *Authorization Scenario* tab, click <span class="FPA-icons"></span> *Add* and select your authorization scenario. You can add one or several authorization scenarios and use the ones that are relevant to your use-case.
+2.  In the *Authorization Scenario* tab, click <span class="FPA-icons-V3"></span> *Add* and select your authorization scenario. You can add one or several authorization scenarios and use the ones that are relevant to your use-case.
 
-3.  Under *Data Restriction Context*, click <span class="FPA-icons"></span> to open the *Select Context* dialog. You can see all available association contexts. They resolve your business entity defined as a restriction in the authorization scenario. Select your context and *Save*.
+3.  Under *Data Restriction Context*, click <span class="FPA-icons-V3"></span> to open the *Select Context* dialog. You can see all available association contexts. They resolve your business entity defined as a restriction in the authorization scenario. Select your context and *Save*.
 
 4.  In the *General* tab under *Public Data Access*, you can choose to make your model public or not. You can combine it to an authorization scenario. If you've switched on *Public Data Access* for your business entity, using an authorization scenario is optional. If you've switched off *Public Data Access* for your business entity, you have to use an authorization scenario. If your model has no authorization scenario or *Public Data Access*, you won't be able to use our model.
 
@@ -31,7 +31,7 @@ Authorization scenarios help you define different business authorization context
 
 ## Results
 
-You can see the different authorization scenarios you've created for your business entity in the data preview. In the Data Preview side panel, click <span class="FPA-icons"></span>. Under *Authorization Scenario*, you can directly switch from one authorization scenario to another. Authorizations are automatically applied on data.
+You can see the different authorization scenarios you've created for your business entity in the data preview. In the Data Preview side panel, click <span class="FPA-icons-V3"></span>. Under *Authorization Scenario*, you can directly switch from one authorization scenario to another. Authorizations are automatically applied on data.
 
 **Related Information**  
 

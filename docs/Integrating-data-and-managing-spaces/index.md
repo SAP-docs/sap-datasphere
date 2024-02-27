@@ -84,7 +84,7 @@
         -   [Creating Statistics for Your Remote Tables](Data-Integration-Monitor/creating-statistics-for-your-remote-tables-e4120bb.md)
     -   [Monitoring Task Chains](Data-Integration-Monitor/monitoring-task-chains-4142201.md)
     -   [Scheduling Data Integration Tasks](Data-Integration-Monitor/scheduling-data-integration-tasks-7fa0762.md)
-        -   [Schedule a Data Integration Task](Data-Integration-Monitor/schedule-a-data-integration-task-7c11059.md)
+        -   [Schedule a Data Integration Task \(Simple Schedule\)](Data-Integration-Monitor/schedule-a-data-integration-task-simple-schedule-7c11059.md)
         -   [Schedule a Data Integration Task \(with Cron Expression\)](Data-Integration-Monitor/schedule-a-data-integration-task-with-cron-expression-169ba34.md)
         -   [Take Over the Ownership of a Schedule](Data-Integration-Monitor/take-over-the-ownership-of-a-schedule-4b660c0.md)
         -   [Pause or Resume a Scheduled Task](Data-Integration-Monitor/pause-or-resume-a-scheduled-task-5eb55cb.md)

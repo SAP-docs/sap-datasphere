@@ -10,9 +10,9 @@ Create input parameters in your data flows for use in projection operator filter
 
 ## Procedure
 
-1.  Open the data flow properties in the side panel, scroll down to the *Input Parameter* section and click <span class="FPA-icons"></span> \(Input Parameters\).
+1.  Open the data flow properties in the side panel, scroll down to the *Input Parameter* section and click <span class="FPA-icons-V3"></span> \(Input Parameters\).
 
-2.  In the *Input Parameter* dialog, click <span class="FPA-icons"></span> \(Add\) to create a new parameter.
+2.  In the *Input Parameter* dialog, click <span class="FPA-icons-V3"></span> \(Add\) to create a new parameter.
 
 3.  Complete the properties of the input parameter:
 

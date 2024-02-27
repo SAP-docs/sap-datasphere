@@ -71,7 +71,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
     
     </td>
     <td valign="top">
@@ -93,7 +93,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Add Table\)
+    <span class="FPA-icons-V3"></span> \(Add Table\)
     
     </td>
     <td valign="top">
@@ -105,7 +105,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
     
     </td>
     <td valign="top">
@@ -119,7 +119,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Open in New Tab\)
+    <span class="FPA-icons-V3"></span> \(Open in New Tab\)
     
     </td>
     <td valign="top">
@@ -131,7 +131,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons"></span> \(Remove\)
+    <span class="FPA-icons-V3"></span> \(Remove\)
     
     </td>
     <td valign="top">
@@ -139,7 +139,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     Click to delete the selected operator.
 
     > ### Note:  
-    > You can also delete the selected operator by clicking <span class="FPA-icons"></span> in the toolbar.
+    > You can also delete the selected operator by clicking <span class="FPA-icons-V3"></span> in the toolbar.
 
 
     
@@ -148,7 +148,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     </table>
     
     > ### Tip:  
-    > In the toolbar, you can use <span class="SAP-icons"></span> \(Auto Layout\) and :desktop_computer: to organize the objects in your canvas.
+    > In the toolbar, you can use <span class="SAP-icons-V5"></span> \(Auto Layout\) and :desktop_computer: to organize the objects in your canvas.
 
 5.  Add or create a target table that the data flow will write its data to.
 
@@ -262,12 +262,12 @@ Create a data flow to move and transform data in an intuitive graphical interfac
         -   *Automatic restart on run failure*: Set this option to restart the data flow automatically if there are any failures or system upgrades, for example.
 
 
-7.  Click <span class="FPA-icons"></span> \(Save\) to save your data flow:
+7.  Click <span class="FPA-icons-V3"></span> \(Save\) to save your data flow:
 
     -   *Save* to save the data flow.
     -   *Save As* to create a local a copy of the data flow. The data flow must have been previously saved at least once. The *Save* dialog opens. Enter new business and technical names and click *Save*.
 
-8.  Click <span class="SAP-icons"></span> \(Deploy\) to deploy the data flow:
+8.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy the data flow:
 
     -   Newly created data flows are deployed for the first time.
     -   Data flows that have changes to deploy are redeployed.

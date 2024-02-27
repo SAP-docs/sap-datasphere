@@ -434,11 +434,11 @@ For more information about the supported use cases depending on the connection t
 
 ## Next Steps
 
-1.  If you have defined a location ID in the Cloud Connector configuration and want to use it when creating connections, you need to add the location ID in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
+1.  If you have defined a location ID in the Cloud Connector configuration and want to use it when creating connections, you need to add the location ID in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
-2.  If you want to create SAP BW/4HANA Model Transfer connections or SAP S/4HANA On-Premise connections for model import, you need to switch on *Allow live data to securely leave my network* in <span class="FPA-icons"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*
+2.  If you want to create SAP BW/4HANA Model Transfer connections or SAP S/4HANA On-Premise connections for model import, you need to switch on *Allow live data to securely leave my network* in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 

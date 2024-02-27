@@ -13,13 +13,13 @@ To continue using SAML SSO, an administrator must renew the certificate before i
 An email with details on how to renew the SAML X509 certificate is sent to administrators before the certificate expiry date. If the certificate expiry is less than 30 days away, a warning message appears when you log on to SAP Datasphere.
 
 > ### Note:  
-> If you click the *Renew* link on the warning message, you're taken to the *Security* tab on the <span class="FPA-icons"></span> \(*Administration*\) page.
+> If you click the *Renew* link on the warning message, you're taken to the *Security* tab on the <span class="FPA-icons-V3"></span> \(*Administration*\) page.
 
 
 
 ## Procedure
 
-1.  From the side navigation, go to <span class="FPA-icons"></span> \(*System*\) → <span class="FPA-icons"></span> \(*Administration*\)→ *Security*.
+1.  From the side navigation, go to <span class="FPA-icons-V3"></span> \(*System*\) → <span class="FPA-icons-V3"></span> \(*Administration*\)→ *Security*.
 
 2.  Select *Renew*.
 

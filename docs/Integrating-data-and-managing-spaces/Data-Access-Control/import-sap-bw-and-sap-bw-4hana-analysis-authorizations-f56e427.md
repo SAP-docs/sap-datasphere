@@ -50,7 +50,7 @@ See the following blogs for additional information about this feature:
 
 The *Import Permissions* wizard will import the permissions table from the source system, create additional objects to calculate the permissions, and apply a data access control to each selected object.
 
-1.  In the side navigation area, click <span class="SAP-icons"></span> \(*Data Access Controls*\), select a space if necessary, and click *Import* \> *Import Permissions* to open the *Import Permissions* wizard.
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Data Access Controls*\), select a space if necessary, and click *Import* \> *Import Permissions* to open the *Import Permissions* wizard.
 2.  Select the connection from which you want to import permissions and click *Next*.
 3.  Import or accept the permissions table for this connection. If the permissions table is:
 

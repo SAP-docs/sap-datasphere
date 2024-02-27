@@ -44,9 +44,9 @@ For more details about global and scoped privileges, see [Privileges and Permiss
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons"></span> \(*Expand*\)** \> **<span class="FPA-icons"></span> \(*Security*\)** \> **<span class="FPA-icons"></span> \(*Roles*\).
+1.  Go to <span class="FPA-icons-V3"></span> \(*Expand*\)** \> **<span class="FPA-icons-V3"></span> \(*Security*\)** \> **<span class="FPA-icons-V3"></span> \(*Roles*\).
 
-2.  To create a custom role, click <span class="FPA-icons"></span> \(Add Role\) and select *Create a Custom Role*.
+2.  To create a custom role, click <span class="FPA-icons-V3"></span> \(Add Role\) and select *Create a Custom Role*.
 
 3.  Enter a unique name for the role and select the license type SAP Datasphere.
 
@@ -58,7 +58,7 @@ For more details about global and scoped privileges, see [Privileges and Permiss
 
 6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app, or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share, and manage\) represent the actions a user can perform.For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 
-7.  If you want to change the role template that your new custom role will be based on, select <span class="FPA-icons"></span> \(*Select Template*\), and choose a role.
+7.  If you want to change the role template that your new custom role will be based on, select <span class="FPA-icons-V3"></span> \(*Select Template*\), and choose a role.
 
 8.  Save your new custom role.
 

@@ -54,7 +54,7 @@ Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT`
 
     Hover over a column and click:
 
-    -   <span class="FPA-icons"></span> \(Menu\)** \> *Change Aggregation* to change its aggregation. You can choose:
+    -   <span class="FPA-icons-V3"></span> \(Menu\)** \> *Change Aggregation* to change its aggregation. You can choose:
 
         -   `` \[no value\] - Default. Use as grouping column.
         -   `SUM` - \[numeric columns only\] Calculate the total value of all the rows.
@@ -66,8 +66,8 @@ Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT`
         > ### Note:  
         > Any column that has the default, empty aggregation is used to group the aggregations by its unique values. If multiple columns are used to group, then their unique value combinations are used for grouping.
 
-    -   <span class="FPA-icons"></span> \(Menu\)** \> *Change Name* to change its name.
-    -   <span class="FPA-icons"></span> to view its data type.
+    -   <span class="FPA-icons-V3"></span> \(Menu\)** \> *Change Name* to change its name.
+    -   <span class="FPA-icons-V3"></span> to view its data type.
 
 6.  To complete the aggregation, create a flow from it to the next operator or the target table, as appropriate.
 

@@ -25,7 +25,7 @@ This topic contains the following sections:
 
 Semantic types are only available for measures and attributes in entities with a *Semantic Usage* of *Fact*, *Dimension* or *Text*.
 
-To specify a semantic type, hover over the attribute or measure, and click <span class="FPA-icons"></span> \(Menu\)** \> *Semantic Type* \> **<Type\>**.
+To specify a semantic type, hover over the attribute or measure, and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Semantic Type* \> **<Type\>**.
 
 
 

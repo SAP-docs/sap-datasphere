@@ -146,7 +146,7 @@ Description
 
 Enter the content of the json key file that is used for authentication. 
 
-Choose <span class="SAP-icons"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
 </td>
 </tr>
