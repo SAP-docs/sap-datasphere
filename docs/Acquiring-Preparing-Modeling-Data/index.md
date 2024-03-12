@@ -1,7 +1,7 @@
 # Acquiring, Preparing, and Modeling Data with SAP Datasphere
 
 -   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md)
--   [Creating, Finding, and Sharing Objects](Creating-Finding-Sharing-Objects/creating-finding-and-sharing-objects-6c69b30.md)
+-   [Working with Objects](Creating-Finding-Sharing-Objects/working-with-objects-6c69b30.md)
     -   [Working in Spaces](Creating-Finding-Sharing-Objects/working-in-spaces-6a396f6.md)
     -   [Repository Explorer](Creating-Finding-Sharing-Objects/repository-explorer-f8ce0b4.md)
     -   [Folders](Creating-Finding-Sharing-Objects/folders-bbedad6.md)
@@ -18,6 +18,7 @@
         -   [Exporting Objects to a CSN/JSON File](Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md)
     -   [Importing and Exporting Objects via the Command Line](Creating-Finding-Sharing-Objects/importing-and-exporting-objects-via-the-command-line-6494657.md)
     -   [Enabling Currency Conversion with TCUR\* Tables and Views](Creating-Finding-Sharing-Objects/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)
+    -   [Deleting Objects](Creating-Finding-Sharing-Objects/deleting-objects-1e69cbb.md)
 -   [Semantic Onboarding](semantic-onboarding-4c9e45e.md)
 -   [Purchasing Data from Data Marketplace](purchasing-data-from-data-marketplace-4096fb8.md)
     -   [Searching and Browsing](searching-and-browsing-2dfea3a.md)
@@ -94,6 +95,7 @@
     -   [Creating a Transformation Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-transformation-flow-f7161e6.md)
         -   [Create a Graphical View Transform](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-a-graphical-view-transform-c65e37c.md)
             -   [Add a Source Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/add-a-source-table-ec702fe.md)
+                -   [Additional Information About Remote Tables](Acquiring-and-Preparing-Data-in-the-Data-Builder/additional-information-about-remote-tables-4c088d1.md)
             -   [Create a Join](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-a-join-bcb5f48.md)
             -   [Create a Union](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-a-union-9cd6fbf.md)
             -   [Reorder, Rename, and Exclude Columns](Acquiring-and-Preparing-Data-in-the-Data-Builder/reorder-rename-and-exclude-columns-1d5bfd6.md)
@@ -102,6 +104,7 @@
             -   [Aggregate Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/aggregate-data-f368ba0.md)
             -   [Replace a Source](Acquiring-and-Preparing-Data-in-the-Data-Builder/replace-a-source-328ab99.md)
         -   [Create an SQL View Transform](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-an-sql-view-transform-775e0ab.md)
+            -   [Additional Information About Remote Tables](Acquiring-and-Preparing-Data-in-the-Data-Builder/additional-information-about-remote-tables-ab4db76.md)
         -   [Add or Create a Target Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/add-or-create-a-target-table-0950746.md)
         -   [Processing Changes to Source and Target Tables](Acquiring-and-Preparing-Data-in-the-Data-Builder/processing-changes-to-source-and-target-tables-705292c.md)
             -   [Process Target Changes in the Transformation Flow Editor](Acquiring-and-Preparing-Data-in-the-Data-Builder/process-target-changes-in-the-transformation-flow-editor-75ab3ef.md)

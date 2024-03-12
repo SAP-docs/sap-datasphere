@@ -79,10 +79,13 @@ Allows access to spaces in the *Space Management* tool.
 -   *Manage* - To read, update and delete all spaces.
 
     > ### Caution:  
-    > The permission *Manage* should be granted only to tenant administrators.
+    > The permission *Manage* should be granted only to tenant administrators. and for other privileges.
 
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+> ### Note:  
+> The permissions *Read*, *Update* and *Delete* are scoped permissions and are described in the scoped privileges and permissions table \(see [Scoped Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_scoped_privileges)\).
+
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -109,7 +112,10 @@ Allows access to all objects inside a space, such as views and tables.
 > ### Caution:  
 > The permission *Manage* should be granted only to tenant administrators.
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+> ### Note:  
+> The permissions *Create*, *Read*, *Update* and *Delete* are scoped permissions and are described in the scoped privileges and permissions table \(see [Scoped Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_scoped_privileges)\).
+
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -231,7 +237,10 @@ See [Managing SAP Datasphere Users](managing-sap-datasphere-users-4fb82cb.md)
 </td>
 <td valign="top">
 
-Allows access to the *Activites* area in the *Security* tool.
+Allows access to the *Activities* page in the *Security* tool.
+
+-   *Read* - To view the activities in the *Activities* page and download the activity log for a specific time period.
+-   *Delete* - To delete the activity log for a specific time period.
 
 See [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)
 
@@ -542,7 +551,10 @@ Allows access to spaces in the *Space Management* tool.
 -   *Update*, *Delete* - To update or delete spaces.
 
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+> ### Note:  
+> The permissions *Create* and *Manage* are global permissions and are described in the global privileges and permissions table \(see [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)\).
+
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -565,10 +577,13 @@ Allows access to all objects inside a space, such as views and tables.
 
 -   *Create*, *Update*, *Delete* - To create, update or delete objects in spaces.
 
-    To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
 
+To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+> ### Note:  
+> The permission *Manage* is a global permission and is described in the global privileges and permissions table \(see [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)\).
+
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -645,7 +660,7 @@ Allows access to the *Data Integration Monitor* app:
 > In addition to these permissions, the following *Data Integration Monitor* actions require the *Data Warehouse Data Builder* \(*Read*\) privilege:
 > 
 > -   To add a new view in the *Views* monitor.
-> -   To set up or change partitioned data loading in the *Remote Tables* monitor.
+> -   To set up or change partitioned data loading in the *Remote Tables* monitor or in the *Views* monitor.
 > 
 > See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 

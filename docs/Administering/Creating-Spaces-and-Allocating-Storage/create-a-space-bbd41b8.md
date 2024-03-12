@@ -185,9 +185,7 @@ Create a space, allocate storage, and set the space priority and statement limit
 
     For more information, see [Set a Priority and Statement Limits for a Space](set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
 
-6.  You cannot assign users to the space as long as your space is not assigned to a scoped role \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)\). Once you assign one or more users to the space via a scoped role, the *Users* area will be automatically filled with the assigned users. You or a space administrator can then edit user assignments in this area \(see [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\).
-
-7.  \[optional\] Use the remaining sections to further configure the space.
+6.  \[optional\] Use the remaining sections to further configure the space.
 
     -   *Data Access*/*Data Consumption*: Modify the following property, if appropriate:
 
@@ -232,6 +230,15 @@ Create a space, allocate storage, and set the space priority and statement limit
 
     -   *Auditing*/*Space Audit Settings* - Use the properties in the *Space Audit Settings* section to enable audit logging for the space. See [Enable Audit Logging](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who did what and when in the database.") :arrow_upper_right:.
 
-8.  Either click *Save* to save your space \(and click *Deploy* later\), or directly click *Deploy* to save and deploy your space to the database in one click.
+7.  Click *Deploy* to deploy your space to the database.
+
+8.  Add your space to one or more scoped roles by doing one of the following actions:
+
+    -   Add your space to an existing scoped role.
+    -   Create a scoped role and add your space and at least one user to the scoped role.
+
+    For more information, see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)\).
+
+    All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can manage the user access to your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:. Either an administrator or a user with space administrator privileges can do so.
 
 

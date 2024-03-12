@@ -4,7 +4,7 @@
 
 # Creating an Entity-Relationship Model
 
-Create an E/R model to import, visualize, edit, and deploy multiple data entities \(tables and views\) together. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders.
+Create an E/R model to import, visualize, edit, and deploy multiple tables and views together. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders.
 
 
 
@@ -105,7 +105,7 @@ The work that you do in an E/R model benefits all the users in your space as the
     </td>
     <td valign="top">
     
-    Add entities that are related \(by association\) to the selected entity \(see [Add Objects from the Repository](add-objects-from-the-repository-13fcecd.md)\).
+    Add entities that are related \(by association\) to the selected entity \(see [Add Related Entities to an E/R Model Diagram](add-related-entities-to-an-e-r-model-diagram-bbde0a7.md)\).
     
     </td>
     </tr>

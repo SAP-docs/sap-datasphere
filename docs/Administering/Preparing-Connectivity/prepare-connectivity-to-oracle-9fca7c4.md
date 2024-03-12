@@ -23,6 +23,8 @@ Before you can use the connection for creating views and accessing data via remo
 
 
 
+<a name="loio9fca7c484e974429afc6570196303c35__prereq_df_Oracle"/>
+
 ## Data Flows
 
 Before you can use the connection for data flows, the following is required:

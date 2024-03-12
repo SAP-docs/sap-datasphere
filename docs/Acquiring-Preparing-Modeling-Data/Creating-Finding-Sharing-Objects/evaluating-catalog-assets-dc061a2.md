@@ -29,9 +29,9 @@ You must be assigned one of the following:
 
 From the <span class="SAP-icons-V5"></span>\(*Catalog*\) home page, you can select the *Assets* filter to find the asset you want.
 
-When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information can include extracted metadata, like the asset name, properties, description, and impact and lineage diagram. It also includes other data enrichments, such as glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the data or analytic object is the right one you need for your business task at hand.
+When you open an individual asset from the catalog home page, you're taken to a page that provides many different types of information about the asset. This information can include extracted metadata, like the asset name, properties, description, and impact and lineage diagram. It also includes other data enrichments, such as glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the asset is the right one you need for your business task at hand.
 
-For example, as a data modeler, you can review the details of a catalog asset to determine whether it is the one you need to add to your model. You can also view the lineage diagram for an asset to see other assets that are consumed in the model and which assets are impacted by a change.
+For example, as a data modeler, you can review the details of a catalog asset to determine whether it is the one you need to add to your model. You can also view the impact and lineage diagram of that asset to see other assets that are consumed or impacted by it.
 
 <a name="concept_czq_hby_tyb"/>
 
@@ -39,7 +39,7 @@ For example, as a data modeler, you can review the details of a catalog asset to
 
 ## Viewing the Catalog Asset Header
 
-The asset header provides high-level information of the asset.
+The asset header provides high-level information about the asset.
 
 ![](images/DataAssetHeader_e5ead6c.png)
 
@@ -89,7 +89,7 @@ Tabs
 </td>
 <td valign="top">
 
-Select a tab to view more information about the asset, such as asset properties and descriptions, asset details, and for assets in SAP Datasphere, the **Impact and Lineage Analysis** diagram.
+Select a tab to view more information about the asset, such as an overview of the asset's properties and descriptions, a preview of the asset's details, and a diagram of the asset's lineage and it's impact on other objects.
 
 </td>
 </tr>
@@ -156,7 +156,9 @@ Properties
 </td>
 <td valign="top">
 
-Displays asset properties extracted from the data source and data enrichments added in the catalog. 
+Displays asset properties extracted from the source system and data enrichments added in the catalog. Properties are divided into source properties and catalog properties. 
+
+**Source Properties**
 
 Source properties common among all assets include:
 
@@ -186,6 +188,8 @@ Source properties common among SAP Datasphere assets include:
 
     For more information on these properties, see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md).
 
+
+**Catalog Properties**
 
 If the asset data was enriched, the date of the change appears as a catalog property:
 
@@ -281,10 +285,10 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 
 ## Viewing Detailed Metadata for an Asset
 
-Use the *Details* tab to view a preview of the detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each data or analytic object.
+Use the *Details* tab to see a preview of the detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each object. This tab appears only if the asset has detailed metadata that can be shown.
 
 > ### Note:  
-> This tab appears only if the asset has detailed metadata that can be shown. Currently, a preview of the detailed metadata can be extracted for all supported SAP Datasphere object types and only for the following SAP Analytics Cloud model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
+> If you are viewing an SAP Analytics Cloud asset, this tab is available only for the following model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
@@ -316,7 +320,7 @@ Description
 </td>
 <td valign="top">
 
-Use the free-text search to search for a row by its name or description. .
+Use the free-text search to search for a row by its name or description.
 
 </td>
 </tr>
@@ -376,7 +380,7 @@ Use the *Lineage* tab to view the **Impact and Lineage Analysis** diagram. This 
 -   *Lineage* is displayed to the left of the object \(or below it\). It shows objects that the analyzed asset uses as sources. It allows you to trace errors back to the root cause.
 -   *Impact* is displayed to the right of the object \(or above it\). It shows objects that use the analyzed asset as a source. It allows you to understand the impact of changes on dependent objects.
 
-In this example, a user views the diagram to analyze the **Sales Story** asset. The **Sales Story** asset is in the **Public** folder in SAP Analytics Cloud and has two sources that are objects in a SAP Datasphere space.
+In this example, a user views the diagram to analyze the **Sales** story asset. The **Sales** story asset is in the **Public** folder in SAP Analytics Cloud and has two sources that are objects in an SAP Datasphere space.
 
 ![](images/Impact_and_Lineage_Catalog_View_4c0c62d.png)
 
@@ -430,9 +434,9 @@ You can expand or collapse a source system, using the <span class="FPA-icons-V3"
 </td>
 <td valign="top">
 
-The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud folder\). It contains assets that appear in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
+The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud folder\). It contains assets that appear in the lineage of or that impact the analyzed object. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
-You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
+You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
 
 </td>
 </tr>
@@ -450,7 +454,7 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
--   Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons-V3"></span> \(Open Asset Details\).
+-   Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons-V3"></span> \(Open Asset Details\) icon.
 
 -   Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
 
@@ -477,11 +481,12 @@ For information on how to control the diagram layout and use tools to further an
 
 ## Context
 
-After you find the asset you want, you can open the asset in the source system to view or edit it. When the source file for an asset has been shared with you, the *Open* button appears in the top-right corner. For information on how to share source files, see:
+After you find the asset you want, you can open the asset in the source system to view or edit it. When the source file for an asset has been shared with you, the *Open* button appears in the top-right corner. For information about sharing files with other users within a source system, see the documentation for the specific source system:
 
--   In SAP Datasphere, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md).
+-   For SAP Datasphere, see [Acquiring, Preparing, and Modeling Data with SAP Datasphere](../acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md).
 
--   In SAP Analytics Cloud, see [Share Files and Folders](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/35b0bdae69254b04b075e09702d8cb56.html).
+-   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
+
 
 > ### Tip:  
 > If the source file for the asset has not been shared with you, contact the person who created the asset or the person who most recently changed it. You can find this information in the asset properties.
@@ -535,9 +540,7 @@ After you evaluate and determine that the asset is the right one for your needs,
 > ### Tip:  
 > Before you search for an asset in the catalog, determine which application you want to use the asset in and open it in a new browser tab. By keeping the catalog open in a separate tab, you can find the asset you want and have its property information readily available as you switch between tabs.
 > 
-> -   To use SAP Datasphere, in the side navigation area, right-click the application you want to use and click *Open App in New Tab*.
-> 
-> -   To use SAP Analytics Cloud, in the side navigation area, right-click any application and click *Open App in New Tab*. In the shell bar click <span class="SAP-icons-V5"></span> \(*Product Switch*\) and click *Analytics*.
+> Depending on the SAP application you are using, you can open it from the <span class="SAP-icons-V5"></span> \(*Product Switch*\) or from the side navigation. For example, to use SAP Datasphere, in the side navigation area, right-click the application you want to use and click *Open App in New Tab*. Or to use SAP Analytics Cloud, in the side navigation area, right-click any application and click *Open App in New Tab*. In the shell bar click <span class="SAP-icons-V5"></span> \(*Product Switch*\) and click *Analytics*.
 
 
 
@@ -549,14 +552,14 @@ After you evaluate and determine that the asset is the right one for your needs,
 
 2.  On the *Catalog* home page, use the filters or the search to find the asset you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
 
-3.  Go to the tab where SAP Datasphere or SAP Analytics Cloud is open and find and open an existing file or data object or create a new one and add the asset. If you haven't opened the application in a new tab, do that now.
+3.  Go to the tab where the application you want is open.
 
-4.  Save the file or data object.
+4.  Find and open an existing object or create a new object and add the asset. If you haven't opened the application in a new tab, do that now.
 
-    -   In SAP Datasphere, save and then deploy the source file. Only files that have been saved and deployed can be added to the catalog. For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+5.  Save the object in the location you want.
 
-    -   In SAP Analytics Cloud, save the source file in a folder location.
-
+    > ### Note:  
+    > If the object you are saving is in SAP Datasphere, you must save and then deploy it before it can be added to the catalog. For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
 
 

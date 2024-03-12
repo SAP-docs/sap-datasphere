@@ -54,7 +54,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </td>
     <td valign="top">
     
-    Disable this option to allow the space to consume any amount of disk and memory space up to the total amounts available in your tenant.
+    Disable this option to allow the space to consume any amount of disk and memory storage up to the total amounts available in your tenant.
 
     If this option was disabled and then subsequently re-enabled, the *Disk* and *Memory* properties are initialized to the minimum values required by the current contents of the space.
 
@@ -70,7 +70,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </td>
     <td valign="top">
     
-    Enter the amount of disk storage allocated to the space in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100 MB by hand.
+    Enter the amount of disk storage allocated in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100 MB by hand.
 
     Default: 2 GB
     
@@ -84,7 +84,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </td>
     <td valign="top">
     
-    Enter the amount of memory storage allocated to the space in GB. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100 MB by hand.
+    Enter the amount of memory storage allocated in GB. This value cannot exceed the amount of disk storage allocated. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100 MB by hand.
 
     Default: 1 GB
     

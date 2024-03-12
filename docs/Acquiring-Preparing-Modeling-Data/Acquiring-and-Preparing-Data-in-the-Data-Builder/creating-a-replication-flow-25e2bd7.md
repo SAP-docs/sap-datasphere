@@ -4,7 +4,7 @@
 
 # Creating a Replication Flow
 
-Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.
+Create a replication flow to copy multiple data assets from a source to a target.
 
 
 
@@ -178,7 +178,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    \[only relevant for local tables\] Keep track of changes in your data source.
+    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source.
 
     For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
     
@@ -192,7 +192,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Specify how you want to load the data \(initial only or initial and delta\).
+    Select how you want to load the data \(initial only or initial and delta\).
 
     For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
     
@@ -206,7 +206,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Decide whether you want to delete any existing content in the target.
+    Enable this option want to delete any existing content in the target.
 
     For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
     

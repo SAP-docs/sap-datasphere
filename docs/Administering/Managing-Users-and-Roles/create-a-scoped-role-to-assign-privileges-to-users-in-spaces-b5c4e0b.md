@@ -208,9 +208,10 @@ You can then assign spaces and users to the new scoped role. The spaces and user
 To assign spaces to a scoped role, the spaces must be created beforehand.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
-2.  Click *Assign Scopes*, select one or more spaces in the dialog *Assign Scopes* and click *Save*.
+2.  Click *Add Scopes*, select one or more spaces in the dialog *Add Scopes* and click *Save*.
 
-    By default, all users of the scoped role are automatically assigned to the spaces you've just added. You can change this and assign only certain members to certain spaces in the *User Assignment* page of the scoped role.
+    > ### Note:  
+    > By default, all users of the scoped role are automatically assigned to the spaces you've just added. You can change this and assign only certain members to certain spaces in the *Users* page of the scoped role.
 
     > ### Restriction:  
     > You cannot assign yourself to a scoped role. For this reason, if your own user is included in the scoped role, your user is not automatically assigned to the spaces you've added in the scoped role.
@@ -225,7 +226,7 @@ To assign spaces to a scoped role, the spaces must be created beforehand.
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
 2.  Click *\[number\] Scopes*.
 
-3.  In the *Selected Scopes* area of the dialog *Assign Scopes*, click the cross icon for each space that you want to remove from the role, then click *Save*.
+3.  In the *Selected Scopes* area of the dialog *Add Scopes*, click the cross icon for each space that you want to remove from the role, then click *Save*.
 
     All users that were assigned to the spaces you've just removed are automatically removed from the scoped role.
 
@@ -239,30 +240,32 @@ To assign spaces to a scoped role, the spaces must be created beforehand.
 To assign users to a scoped role, the users must be created beforehand.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
-2.  Click *User Assignment*. All user assignements are displayed in the *User Assignment* page.
+2.  Click *Users*. All user assignements are displayed in the *Users* page.
 
-    -   To individually select users and assign them to spaces, click <span class="FPA-icons-V3"></span> \(Add User Assignment\), then *Select Users*. Select one or more users in the wizard *Assign Users* and click *Next Step*. By default, the added users are automatically assigned to all the spaces included in the scoped role. If you want to modify this, select the one or more spaces to which you want to assign the users. Click *Next Step* and *Save*.
+    -   To individually select users and assign them to spaces, click <span class="FPA-icons-V3"></span> \(Add Users to Scopes\), then *Add New Users to Scopes*. Select one or more users in the wizard *Add Users to Scopes* and click *Next Step*.
+
+        > ### Note:  
+        > By default, the added users are automatically assigned to all the spaces included in the scoped role. If you want to modify this, select the one or more spaces to which you want to assign the users.
+
+        Click *Next Step* and *Save*.
 
         > ### Note:  
         > You can also add a user to a scoped role from the <span class="FPA-icons-V3"></span> \(*Users*\) area. In such a case, the user is automatically assigned to all the spaces included in the scoped role. See [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
 
-    -   To assign all users included in the scoped role to one or more spaces. To do so, click <span class="FPA-icons-V3"></span> \(Add User Assignment\), then *All Users of Current Role*. Select one or more spaces in the wizard *Assign Users* and click *Next Step* and *Save*.
+    -   To assign all users included in the scoped role to one or more spaces. To do so, click <span class="FPA-icons-V3"></span> \(Add Users to Scopes\), then *Add All Current Users to Scopes*. Select one or more spaces in the wizard *Add Users to Scopes* and click *Next Step* and *Save*.
 
-    -   To assign all users of the tenant to one or more spaces, click <span class="FPA-icons-V3"></span> \(Add User Assignment\), then *All Users*. Select one or more spaces in the wizard *Assign Users* and click *Next Step* and *Save*.
+    -   To assign all users of the tenant to one or more spaces, click <span class="FPA-icons-V3"></span> \(Add Users to Scopes\), then *Add All Users to Scopes*. Select one or more spaces in the wizard *Add Users to Scopes* and click *Next Step* and *Save*.
 
 
-
-> ### Restriction:  
-> You cannot assign yourself to a scoped role.
 
 > ### Restriction:  
-> A user can be assigned to a maximum of 100 spaces across all scoped roles.
+> -   You cannot assign yourself to a scoped role.
+> -   A user can be assigned to a maximum of 100 spaces across all scoped roles.
 
 > ### Note:  
-> In the *User Assignment* page, you can filter users and spaces to see for example to which spaces and roles a user is assigned to.
+> In the *Users* page, you can filter users and spaces to see for example to which spaces and roles a user is assigned to.
 
-> ### Note:  
-> Users with the DW Space Administrator role can then manage the users for their space directly in the page of their space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
 
@@ -271,7 +274,7 @@ To assign users to a scoped role, the users must be created beforehand.
 ## Remove Users from a Scoped Role
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
-2.  Click *User Assignment*. All user assignements are displayed in the *User Assignment* page.
+2.  Click *Users*. All user assignements are displayed in the *Users* page.
 
 3.  Check the relevant rows \(a row corresponding to a combination of one user and one space\) and click the garbage icon. The users cannot access the spaces they were previously assigned to in the scoped role.
 

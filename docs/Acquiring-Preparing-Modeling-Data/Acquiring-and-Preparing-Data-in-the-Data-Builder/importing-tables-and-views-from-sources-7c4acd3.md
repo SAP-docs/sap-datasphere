@@ -4,12 +4,11 @@
 
 Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space. 
 
-SAP Datasphere provides various methods for importing tables into your space:
+SAP Datasphere provides various methods for importing data into your space:
 
--   Data Builder start page - Use the import wizards to:
+-   *Repository Explorer* / *Data Builder* start page - Use the import wizards to:
+    -   Import semantically-rich objects \(along with the objects they depend on\) from SAP S/4HANA, SAP BW∕4HANA, and SAP Datasphere, SAP BW Bridge connections \(see [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)\).
     -   Import remote tables from any connection \(see [Import Remote Tables](import-remote-tables-fd04efb.md)\).
-    -   Import objects from SAP Datasphere, SAP BW Bridge \(see [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md)\).
-    -   Import a table, view, or other object \(including, potentially, *Business Builder* objects\), along with all the objects it depends on from an SAP S/4HANA connection \(see [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)\).
 
 -   E/R Model - Import tables into the space and add them to the E/R model diagram \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md) or [Import Multiple Objects from a Connection](../import-multiple-objects-from-a-connection-e720b13.md)\).
 -   Graphical or SQL view - Import tables into the space and use them directly as sources in the view \(see [Add a Source](../add-a-source-1eee180.md)\).

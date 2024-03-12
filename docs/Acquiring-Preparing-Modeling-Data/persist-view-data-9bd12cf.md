@@ -18,7 +18,7 @@ By default a view is run every time it is accessed and, if the view is complex o
 When opening your view, in the *Properties* panel, under *Data Persistence*, you can see if your view has been made persisted or not.
 
 > ### Note:  
-> You can monitor persisted views in the *Data Integration Monitor*, under *Views*. You can access it directly by clicking <span class="SAP-icons-V5"></span> \(Views Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can add views that have been created in the Data Builder, and persist these views (direct execution or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> You can monitor persisted views in the *Data Integration Monitor*, under *Views*. You can access it directly by clicking <span class="SAP-icons-V5"></span> \(Views Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 
 
 <table>
@@ -87,6 +87,12 @@ You can perform actions on data by clicking *Data Persistence*:
 
 -   *Start Data Persistence*: Start a new data persistence to update or create the persisted view.
 
+    > ### Note:  
+    > You can set up a view as persisted even if it has been created on top of remote data.
+
+    > ### Restriction:  
+    > A view, which contains input parameters can't be persisted.
+
 -   *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
 
@@ -96,7 +102,21 @@ You can perform actions on data by clicking *Data Persistence*:
 
 ## Schedule Data Persistence Tasks
 
-Define, edit, delete, pause, resume or assign schedule to your name.
+Schedule Data Persistence
+
+From this menu, you can :
+
+-   *Create Schedule*: Select the relevant persisted view and create a simple or recurring schedule for your view. You define your scheduling options and thus ensure that you always have an up-to-date persisted view.
+
+    *Edit Schedule*: Your scheduling options need to be updated? You can adapt them to your needs at any time from this menu.
+
+-   *Delete Schedule*: You don't need to schedule a Data Persistence task anymore? Then you can simply delete it from this menu.
+-   *Assign Schedule To Me*: Become the owner of the schedule.
+-   *Pause Schedule*: Pause the scheduled task
+-   *Resume Schedule*: Resume the pause scheduled task
+
+> ### Note:  
+> You need to authorize SAP to run the recurring scheduled tasks on your behalf. You can do so via the message that is displayed at the top of the monitor, or in your profile settings under *Schedule Consent Settings*.
 
 For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
 

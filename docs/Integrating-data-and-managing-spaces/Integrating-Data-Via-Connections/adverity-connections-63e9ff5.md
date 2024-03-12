@@ -34,7 +34,7 @@ The connection type supports creating views and entity-relationship models.
 
 
 
-Wizard step *Configure partner settings* shows an embedded Adverity UI. Here, you log on to the regional Adverity server and perform the following steps:
+Wizard step *Configure Partner Connection* shows an embedded Adverity UI. Here, you log on to the regional Adverity server and perform the following steps:
 
 1.  Enter the URL for your regional Adverity server.
 

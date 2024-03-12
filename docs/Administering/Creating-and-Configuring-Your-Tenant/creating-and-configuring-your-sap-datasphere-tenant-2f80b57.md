@@ -100,7 +100,7 @@ To view all supported size combinations, go to the [SAP Datasphere Capacity Unit
 </td>
 <td valign="top">
 
-**Free plan**:
+:
 
 -   The usage of a free plan tenant is reported to your SAP BTP account, but SAP does not charge you for using this tenant.
 
@@ -117,7 +117,7 @@ To view all supported size combinations, go to the [SAP Datasphere Capacity Unit
 </td>
 <td valign="top">
 
--   **Subscription Contract**: depenedent on the contract.
+-   **Subscription Contract**: dependent on the contract.
 -   **Consumption Based Contract**: no time limitation.
 
 
@@ -125,7 +125,7 @@ To view all supported size combinations, go to the [SAP Datasphere Capacity Unit
 </td>
 <td valign="top">
 
-**Free plan**:
+:
 
 The time limitation is 90 days and the trial duration cannot be extended.
 

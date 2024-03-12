@@ -84,7 +84,7 @@ The following procedure uses the SAP BTP cockpit to create the service instance.
 In the *SAP Datasphere Administration Guide*, we provide high-level steps to create an SAP Datasphere tenant on SAP BTP. For more detailed information, or for instructions that use the Cloud Foundry Command-Line Interface, see the [SAP Business Technology \(SAP BTP\) documentation](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/73beb06e127f4e47b849aa95344aabe1.html).
 
 > ### Note:  
-> You can create only one free tenant under the global account.
+> You can create only one free tenant under the global account. If your SAP BTP service causes issues, you can open an incident ticket via ServiceNow.
 
 1.  In the SAP BTP cockpit, navigate to the space in which you want to create the service instance, and click *Services* \> *Service Marketplace* in the left navigation area.
 
@@ -141,7 +141,12 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     </td>
     <td valign="top">
     
-    Select *Cloud Foundry*.
+    Select a runtime environment.
+
+    > ### Note:  
+    > Not all runtime environments are available for free.
+
+
     
     </td>
     </tr>

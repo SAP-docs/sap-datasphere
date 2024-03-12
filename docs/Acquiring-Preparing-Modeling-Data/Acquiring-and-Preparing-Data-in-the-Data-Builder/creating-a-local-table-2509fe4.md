@@ -4,7 +4,7 @@
 
 # Creating a Local Table
 
-Create a table to contain data by defining its column structure. Tables created in SAP Datasphere can be filled with data from a CSV file or via a data flow. You can also import tables from a connection or a CSN file.
+Create a table and define columns to receive data from a flow or a CSV file. You can also import tables from a connection or a CSN file.
 
 
 
@@ -15,9 +15,9 @@ Create a table to contain data by defining its column structure. Tables created 
 This procedure explains how to create an empty table by defining its columns. You can, alternatively:
 
 -   Create a table by importing a CSV file \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md)\).
--   Create a table as the output of a data flow \(see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md)\).
+-   Create a table as the output of a flow \(see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md)\).
 -   Import a table from:
-    -   A connection via the *Sources* tab of the *Source Browser* in any of the data builder editors \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md)\).
+    -   A connection or other source in the *Sources* tab of the *Source Browser* in any of the data builder editors \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md)\).
     -   A CSN file via the *Import* menu in the data builder start page or an ER model \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
 
 

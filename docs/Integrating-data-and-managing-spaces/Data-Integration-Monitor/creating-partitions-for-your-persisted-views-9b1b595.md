@@ -42,7 +42,7 @@ The columns available for selection are a subset of all view output columns. Som
 -   If you select a non-key column to define your partitions, you must ensure that the column value of a record in the source data is not changed while the view is persisted. Otherwise, data loading may fail because a record with the same key is persisted in two different partitions.
 
 > ### Note:  
-> Partitioning is not recommended on columns that stem from remote tables using ABAP adapter with ODP, as related filter conditions are not pushed to the source. Instead, use remote table partitioning. For connections using OData adapter, Camel JDBC adapter, or Cloud Data Integration adapter, partitioning may not have the desired effect as the related adapters have only limited capabilities and do may not push selections on partitioning intervals to the source system.
+> Partitioning is not recommended on columns that stem from remote tables using ABAP adapter with ODP, as related filter conditions are not pushed to the source. Instead, use remote table partitioning. The changes will be reflected only after a new data replication \(snapshot or scheduled\), or a real-time data replication. For more details, see [Partitioning Remote Table Data Loads](partitioning-remote-table-data-loads-a218d27.md). For connections using OData adapter, Camel JDBC adapter, or Cloud Data Integration adapter, partitioning may not have the desired effect as the related adapters have only limited capabilities and do may not push selections on partitioning intervals to the source system.
 
 You can either select on a column that suits your business case, or switch on the option *Rate Column Suitability*:
 

@@ -17,12 +17,13 @@ You can use input parameters when creating graphical and SQL views:
 
 Views that contain input parameters require special treatment in the following situations:
 
--   Previewing data - You must enter a value for each input parameter \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+-   Previewing data - Accept the default value, if one is provided, or enter a value for each input parameter \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
 
     Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
 
--   Adding a view as a source in the graphical view editor - You must map each input parameter in the source view to a value or an input parameter in the new view \(see [Add a Source](add-a-source-1eee180.md)\).
--   Adding a view as a source in the SQL view editor - You must complete the syntax to map each input parameter parameter in the source view to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\).
+-   Adding a view as a source for a graphical view - Map each input parameter in the source view to a value or an input parameter in the new view \(see [Add a Source](add-a-source-1eee180.md)\).
+-   Adding a view as a source for a SQL view - Complete the syntax to map each input parameter in the source view to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\).
+-   Adding a table as a source for an analytic model - Map each input parameter in the source table to a variable in the model \(see [Add a Variable](Modeling-Data-in-the-Data-Builder/add-a-variable-cdd8fa0.md)\).
 -   Consuming view data via the OData API - Set a value for each input parameter using the <code>(<i class="varname">&lt;param&gt;</i>='<i class="varname">&lt;val&gt;</i>'[,...])/Set</code> syntax \(see [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:\).
 -   Using a view as a data source in an SAP Analytics Cloud story - Enter a value for each input parameter in the *Set Variables* dialog \(see [Setting Story Variables](https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/305dcf7053634875a408a9d9832c8b8f.html) in the *SAP Analytics Cloud Help Library*\).
 

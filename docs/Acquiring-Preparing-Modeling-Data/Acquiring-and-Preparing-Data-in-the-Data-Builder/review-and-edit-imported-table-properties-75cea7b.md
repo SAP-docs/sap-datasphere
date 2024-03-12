@@ -76,7 +76,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     </table>
     
-2.  \[remote tables only\] Review the properties in the *Remote* section:
+2.  \[remote tables\] Review the properties in the *Remote* section:
 
     > ### Note:  
     > To enable replication, use the tools at the top of this section \(see [Replicate Remote Table Data](replicate-remote-table-data-7e258a7.md)\).
@@ -260,29 +260,33 @@ Provide business-friendly names for your table and its columns, identify its sem
     </tr>
     </table>
     
-    You can, at any time, click <span class="SAP-icons-V5"></span> \(Open Monitor\) and, either navigate to the *Remote Tables* monitor to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or navigate to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
+    You can, at any time, click <span class="SAP-icons-V5"></span> \(Open Monitor\) and navigate to the *Remote Tables* monitor to review details of recent replication runs \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\), or to *Remote Table Statistics* to create or review existing statistics for the remote table \(see [Creating Statistics for Your Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e4120bbb98e44994aa1e0b32ff3f209d.html "Create statistics for your remote tables to improve federated query execution.") :arrow_upper_right:\).
 
     > ### Note:  
     > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics*monitor.
 
 3.  Review the columns that are contained in your table. You can change the *Business Name* of columns and set keys here \(see [Set Key Columns to Uniquely Identify Records](../Modeling-Data-in-the-Data-Builder/set-key-columns-to-uniquely-identify-records-d9ef2c9.md)\).
 
-4.  \[remote tables only\] Create filter conditions to load only the data that is needed \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
+4.  \[remote tables\] Create filter conditions to load only the data that is needed \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
 
-5.  \[Remote Tables only\] *Input Parameters*: If your remote table consumes parameterized Hana SQL views using SAP HANA smart data access as source, the parameters are displayed with their properties. You can define a default value for the parameters..
+5.  \[imported remote and local tables\] *Input Parameters*: If your remote table consumes an SAP HANA SQL view with input parameters, the parameter properties are displayed. You can define a default value for each parameter:
 
     ![](images/Input_Parameter_for_Remote_Table_885d97e.jpg)
-
-    > ### Note:  
-    > When previewing data, the default value for each input parameter is used. You can however change it if needed. For more information on previewing data, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)
 
     > ### Restriction:  
     > Parameters with data type cds.LargeBinary and parameters that start with '$$' are not supported.
 
+    Tables that contain input parameters require special treatment in the following situations:
+
+    -   Previewing data - Accept the default value, if one is provided, or enter a value for each input parameter \(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+    -   Adding a table as a source in the graphical view editor - Map each input parameter in the source table to a value or an input parameter in the view \(see [Add a Source](../add-a-source-1eee180.md)\).
+    -   Adding a table as a source in the SQL view editor - Complete the syntax to map each input parameter in the source table to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](../process-source-input-parameters-in-an-sql-view-58d8763.md)\).
+    -   Adding a table as a source in the analytic model editor - Map each input parameter in the source table to a variable in the model \(see [Add a Variable](../Modeling-Data-in-the-Data-Builder/add-a-variable-cdd8fa0.md)\).
+
 6.  Save and Deploy
 
     > ### Note:  
-    > \[Remote tables connected via SAP HANA smart data integration \(SDI\) only\]:
+    > \[remote tables connected via SAP HANA smart data integration \(SDI\) only\]:
     > 
     > If a remote table definition created by an import doesn't match the remote table source definition, you won't be allowed to deploy it. You'll need to click <span class="SAP-icons-V5"></span> \(Refresh\) to repair the table structure and continue with deployment.
 

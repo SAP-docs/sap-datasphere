@@ -43,7 +43,7 @@ To assign roles, you need the DW Administrator role.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Find the role that you want to assign.
-3.  At the bottom of the role box, click the link to change which users the role will be assigned to.
-4.  Click *Users* and select one or more users from the *Assign Role User* list.
+3.  At the bottom of the role box, click the link *Add Users*.
+4.  Select one or more users from the *Assign Role to User* dialog.
 5.  Select *OK*.
 

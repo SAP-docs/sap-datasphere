@@ -286,12 +286,58 @@ You can act on objects in the list in the following ways:
     <tr>
     <td valign="top">
     
+    Import
+    
+    </td>
+    <td valign="top">
+    
+    Import CSV files or objects from files or connections.
+
+    For more information, see:
+
+    -   [Creating a Local Table from a CSV File](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)
+    -   [Importing Objects from a CSN/JSON File](importing-objects-from-a-csn-json-file-23599e6.md)
+    -   [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)
+    -   [Import Remote Tables](../Acquiring-and-Preparing-Data-in-the-Data-Builder/import-remote-tables-fd04efb.md)
+    -   [Process Source Changes for Several Remote Tables](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-for-several-remote-tables-4e0be16.md)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Edit
     
     </td>
     <td valign="top">
     
     Open the selected object in the appropriate editor. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delete
+    
+    </td>
+    <td valign="top">
+    
+    Delete the selected objects. Allows multi-selection. 
+
+    If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.
+
+    > ### Note:  
+    > If you want to delete a remote table with a data access of *Replicated \(Real-Time\)*, you must ensure that:
+    > 
+    > -   The data provisioning agent is connected.
+    > -   The real-time replication is not paused and is working normally.
+    > 
+    > If either of these requirements is not met, you must remove the replicated data before you can delete the remote table.
+
+
     
     </td>
     </tr>
@@ -321,30 +367,6 @@ You can act on objects in the list in the following ways:
     <tr>
     <td valign="top">
     
-    Delete
-    
-    </td>
-    <td valign="top">
-    
-    Delete the selected objects. Allows multi-selection. 
-
-    > ### Note:  
-    > -   If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.
-    > -   If you want to delete a remote table whose data access is *Replicated \(Real-time\)*, you must ensure that the following requirements are met to allow a proper deletion:
-    > 
-    >     -   The data provisioning agent is not disconnected.
-    > 
-    >     -   The real-time replication is not paused at connection level and is working properly.
-    > 
-    >     If one of the requirement is not met, you must remove the replicated data first, before you can delete the remote table.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     Share
     
     </td>
@@ -353,6 +375,20 @@ You can act on objects in the list in the following ways:
     Share the selected objects to other spaces. Allows multi-selection from a single space. 
 
     For more information, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Move To
+    
+    </td>
+    <td valign="top">
+    
+    Move the selected objects to another folder. Allows multi-selection from a single space. 
+
+    For more information, see [Folders](folders-bbedad6.md).
     
     </td>
     </tr>
@@ -376,9 +412,23 @@ You can act on objects in the list in the following ways:
     </td>
     <td valign="top">
     
-    Open the *Impact and Lineage Analysis* graph for the selected object. 
+    Open the *Impact and Lineage Analysis* dialog for the selected object to see the objects on which it depends and the objects that depend on it. 
 
     For more information, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Sort
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Sort* dialog to control the ordering of the results table. 
+
+    By default, the table is sorted by *Best Match on Top*, which calculates relevance on a range of criteria, including objects that you have recently changed, those that you have created, and those that have validation errors. To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then click *OK* to apply them.
     
     </td>
     </tr>
@@ -399,20 +449,6 @@ You can act on objects in the list in the following ways:
     -   Click *Reset* to go back to the default column display.
 
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Sort
-    
-    </td>
-    <td valign="top">
-    
-    Open the *Sort* dialog to control the ordering of the results table. 
-
-    By default, the table is sorted by *Best Match on Top*, which calculates relevance on a range of criteria, including objects that you have recently changed, those that you have created, and those that have validation errors. To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then click *OK* to apply them.
     
     </td>
     </tr>

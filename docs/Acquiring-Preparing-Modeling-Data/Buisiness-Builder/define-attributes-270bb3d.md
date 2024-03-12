@@ -35,9 +35,6 @@ It provides meaningful business insight into corresponding measures.
 
     -   To display a text: Select Text. Then select the text attribute.
     -   To display a language dependent text: Select Language Dependent Text. Select the text table. The text table has to be defined in the Data Builder.
-  
-    > ### Note:
-    > Only one column can be defined as *Text*. By default, the first column with the semantic type *Text* from your text table is used. To use a different column, either reassign the semantic type *Text* in the table, or create a View, selecting the required column.
 
 6.  Decide whether your attribute should be an *Auxiliary Attribute* meaning an attribute which can be used further within the business entity, but is not exposed to consumption models.
 

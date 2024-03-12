@@ -4,7 +4,7 @@
 
 # Modeling Data in the Data Builder
 
-Users with the *DW Modeler* role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud.
+Users with the *DW Modeler* role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, MS Excel, and other clients, apps, and tools.
 
 This topic contains the following sections:
 

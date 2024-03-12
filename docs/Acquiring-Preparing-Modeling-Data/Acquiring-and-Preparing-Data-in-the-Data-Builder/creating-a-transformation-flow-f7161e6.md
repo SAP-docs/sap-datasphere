@@ -4,7 +4,7 @@
 
 # Creating a Transformation Flow
 
-Create a transformation flow to load data from one or more source tables, apply transformations \(such as a join\), and output the result in a target table. You can load a full set of data from one or more source tables to a target table. You can also load delta changes \(including deleted records\) from one source table to a target table.
+Create a transformation flow to load data from one or more source tables, apply transformations \(such as a join\), and output the result in a target table. You can load a full set of data from one or more source tables to a target table. You can add local tables and also remote tables located in BW Bridge spaces. Note that remote tables located in SAP BW bridge spaces must be shared with the SAP Datasphere space you are using to create your transformation flow. You can also load delta changes \(including deleted records\) from one source table to a target table.
 
 
 

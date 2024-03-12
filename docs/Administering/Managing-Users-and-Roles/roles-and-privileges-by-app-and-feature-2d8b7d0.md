@@ -273,6 +273,8 @@ Entity-relationship model editor
 
 Data flow editor
 
+Transformation flow editor
+
 Intelligent lookup editor
 
 Task chain editor
@@ -353,13 +355,14 @@ See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36c
 *Data Warehouse Data Integration* \(-RU-E---\)
 
 > ### Note:  
-> The *DW Modeler* role includes *Data Warehouse Data Integration.Update*, which allows them to do only manual integration tasks. The *DW Integrator* role includes *Data Warehouse Data Integration.Execute*, which also allows scheduling automated integration tasks.
+> *Data Warehouse Data Integration.Update* allows you to do only manual integration tasks. The *DW Integrator* role includes *Data Warehouse Data Integration.Execute*, which also allows scheduling automated integration tasks.
 
 The following features need additional permissions \(which are included in the *DW Space Administrator* role\):
 
--   Views \(monitor\) ** \> ** Add a view - *Data Builder.READ*
--   Views \(monitor\) ** \> ** Define partitions - *Data Builder.READ*
--   Views \(monitor\) ** \> *View Analyzer* - *Data Builder.READ*
+-   *Views* \(monitor\) ** \> ** Add a view - *Data Builder.READ*
+-   *Views* \(monitor\) ** \> ** Define partitions - *Data Builder.READ*
+-   *Views* \(monitor\) ** \> *View Analyzer* - *Data Builder.READ*
+-   *Views* \(monitor\) ** \> *Generate SQL Analyzer Plan File* - *Data Warehouse.RUNTIME*
 
 
 
@@ -501,17 +504,17 @@ Activities \(see [Monitor Object Changes with Activities](../Monitoring-SAP-Data
 
 The sub-tools require the following permissions:
 
--   Users: *User* \(CRUD---M\)
--   Roles: *Role* \(CRUD----\)
--   Authorization Overview: *Role* \(CRUD----\)
--   Activities: *Activity Log* \(-R-D----\)
+-   *Users*: *User* \(CRUD---M\)
+-   *Roles*: *Role* \(CRUD----\)
+-   *Authorization Overview*: *Role* \(CRUD----\)
+-   *Activities*: *Activity Log* \(-R-D----\)
 
 
 
 </td>
 <td valign="top">
 
-*DW Administrator* \(full access\)
+*DW Administrator* \(read-only access for the sub-tool *Activities*\)
 
 </td>
 </tr>

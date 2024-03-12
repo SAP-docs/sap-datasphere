@@ -124,47 +124,18 @@ Information
 <tr>
 <td valign="top">
 
-Add a new persisted view
+*Data Persistence* menu
 
 </td>
 <td valign="top">
 
-Click *Add View* and select the view you want to persist. It's then added to the *Views* list. You can then either persist the view immediately, by selecting *Data Persistence* \> *Start Data Persistence*, or later by creating a schedule via *Schedule* \> *Create Schedule* \(see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md)\).
-
-> ### Note:  
-> For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
+*Start Data Persistence*: Start a new data persistence to update or create the persisted view.
 
 > ### Note:  
 > You can set up a view as persisted even if it has been created on top of remote data.
 
 > ### Restriction:  
 > A view, which contains input parameters can't be persisted.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Remove Persisted Data* 
-
-</td>
-<td valign="top">
-
-The persisted data is deleted and the persisted view is deleted from the list of persisted views..
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Perform action on data by clicking *Data Persistence* 
-
-</td>
-<td valign="top">
-
-*Start Data Persistence*: Start a new data persistence to update or create the persisted view.
 
 *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
@@ -173,10 +144,24 @@ Perform action on data by clicking *Data Persistence*
 <tr>
 <td valign="top">
 
-Define, edit, delete, pause, resume or assign schedule to your name.
+Schedule Data Persistence
 
 </td>
 <td valign="top">
+
+From this menu, you can :
+
+-   *Create Schedule*: Select the relevant persisted view and create a simple or recurring schedule for your view. You define your scheduling options and thus ensure that you always have an up-to-date persisted view.
+
+    *Edit Schedule*: Your scheduling options need to be updated? You can adapt them to your needs at any time from this menu.
+
+-   *Delete Schedule*: You don't need to schedule a Data Persistence task anymore? Then you can simply delete it from this menu.
+-   *Assign Schedule To Me*: Become the owner of the schedule.
+-   *Pause Schedule*: Pause the scheduled task
+-   *Resume Schedule*: Resume the pause scheduled task
+
+> ### Note:  
+> You need to authorize SAP to run the recurring scheduled tasks on your behalf. You can do so via the message that is displayed at the top of the monitor, or in your profile settings under *Schedule Consent Settings*.
 
 For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
 

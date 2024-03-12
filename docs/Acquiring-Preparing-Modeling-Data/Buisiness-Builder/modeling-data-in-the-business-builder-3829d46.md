@@ -2,7 +2,7 @@
 
 # Modeling Data in the Business Builder
 
-Users with the *DW Modeler* role can use the *Business Builder* editors to combine, refine, and enrich *Data Builder* objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and other BI clients.
+Users with the *DW Modeler* role can use the *Business Builder* editors to combine, refine, and enrich *Data Builder* objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and MS Excel.
 
 This topic contains the following sections:
 

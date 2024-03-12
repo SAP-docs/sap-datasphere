@@ -1,5 +1,7 @@
 <!-- loioe6b63f176d3640609adcf06297fb37e9 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # SAP HANA Connections
 
 Use an *SAP HANA* connection to access data from a remote SAP HANA database \(on-premise or cloud\).
@@ -147,7 +149,106 @@ You can find the SQL port in the list of service details in the SAP HANA Cockpit
 
 
 
-### Credentials
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to SAP HANA. 
+
+You can select:
+
+-   *X.509 Client Certificate* \(default\)
+-   *User Name And Password* for basic authentication
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(X.509 Client Certificate\)
+
+If *Authentication Type* = *X.509 Client Certificate*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Private Key Password*
+
+</td>
+<td valign="top">
+
+\[optional\] If the private key is encrypted, enter the password required for decryption.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(User Name And Password\)
+
+If *Authentication Type* = *User Name And Password*:
 
 
 <table>
@@ -538,7 +639,106 @@ Verify the host name field of the server certificate:
 
 
 
-### Credentials
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to SAP HANA. 
+
+You can select:
+
+-   *X.509 Client Certificate* \(default\)
+-   *User Name And Password* for basic authentication
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(X.509 Client Certificate\)
+
+If *Authentication Type* = *X.509 Client Certificate*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Private Key Password*
+
+</td>
+<td valign="top">
+
+\[optional\] If the private key is encrypted, enter the password required for decryption.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(User Name And Password\)
+
+If *Authentication Type* = *User Name And Password*:
 
 
 <table>

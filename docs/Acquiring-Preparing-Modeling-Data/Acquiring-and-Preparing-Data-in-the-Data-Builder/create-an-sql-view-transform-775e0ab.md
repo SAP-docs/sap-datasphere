@@ -28,6 +28,9 @@ If you are not comfortable with SQL, you can still build a view by using the *Gr
     > ### Note:  
     > SAP Datasphere supports a subset of the SQL functions supported by SAP HANA Cloud. For more information, see [SQL Functions Reference](../sql-functions-reference-6d624a1.md).
 
+    > ### Note:  
+    > If you use an SQL view transform to load delta changes from a remote table located in an SAP BW bridge space, the language must be *SQL \(Standard Query\)*. *SQLScript \(Table Function\)* is not supported.
+
 4.  Enter your code in the *SQL View Editor*. You can:
 
     -   Access auto-complete suggestions for keywords and object names including source tables by typing.
@@ -36,6 +39,9 @@ If you are not comfortable with SQL, you can still build a view by using the *Gr
 
         > ### Note:  
         > If the delta capture setting is enabled for a source table, the columns *Change Date* and *Change Type* are automatically mapped to these columns in the target table. Mapping these columns \(or a calculated column that contains the content of these columns\) to any other target column is not permitted. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+
+        > ### Note:  
+        > The *Change Type* column does not support null values. Ensure that no null values are written to the *Change Type* column of the target table.
 
     -   Add comments to document your code:
 
