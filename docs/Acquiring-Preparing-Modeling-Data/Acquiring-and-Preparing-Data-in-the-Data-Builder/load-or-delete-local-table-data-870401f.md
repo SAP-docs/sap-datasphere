@@ -66,7 +66,12 @@ This option allows you to delete all records from the table, no matter if they a
 
 
 
-### Delete All-Fully Processed Records with Change Type "Deleted"
+### Delete All Fully-Processed Records with Change Type "Deleted"
 
-If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed. You also define a retention period..
+If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed. You also define a retention period.
+
+> ### Note:  
+> You can automate the deletion of those records using a scheduling option within a task chain. ![](images/delete_records_in_a_task_chain_76ac374.png)
+> 
+> For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 

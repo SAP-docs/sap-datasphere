@@ -19,7 +19,7 @@ Before creating your data access control, you must have prepared a permissions e
     > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
 
 -   Restriction Column - Each restriction per user must have a unique name, and one or more criteria can belong to each restriction. All criteria belonging to a restriction act together as an `AND` condition. If you have more than one restriction per user then all restrictions act together as an `OR` condition.
--   Criterion Column - The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It need not exactly match a column name but should guide the user to the column to which it should be mapped.
+-   Criterion Column - The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It does not need to exactly match a column name, but should guide the user to the column to which it should be mapped.
 -   Operator Column - The following operators are supported:
     -   `ALL` \(or `*`\) - Provides access to all records. No values required.
     -   `N` \(or `IS NULL`\) - Is null. No values required.
@@ -392,7 +392,7 @@ Based on these three records:
     
     Select the permissions entity column that contains the criteria names. 
 
-    The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It need not exactly match a column name but should guide the user to the column to which it should be mapped.
+    The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It does not need to exactly match a column name, but should guide the user to the column to which it should be mapped.
     
     </td>
     </tr>

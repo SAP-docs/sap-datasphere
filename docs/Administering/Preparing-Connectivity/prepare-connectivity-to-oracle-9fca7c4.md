@@ -33,11 +33,11 @@ Before you can use the connection for data flows, the following is required:
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 
+    To use encrypted communication \(connection is configured to use SSL\), additional files are required to be uploaded.
+
     For more information, see [Upload Third-Party ODBC Drivers \(Required for Data Flows\)](upload-third-party-odbc-drivers-required-for-data-flows-b9b5579.md).
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
-
-    To use encrypted communication \(connection is configured to use SSL\), additional files are required to be uploaded.
 
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 

@@ -208,7 +208,7 @@ Descriptions
 </td>
 <td valign="top">
 
-Displays the asset description, which has two parts.
+Displays the asset description.
 
 -   *Source Description*: This description is extracted from the source system and can't be edited.
 

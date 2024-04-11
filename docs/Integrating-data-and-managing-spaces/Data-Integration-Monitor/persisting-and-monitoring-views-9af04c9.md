@@ -4,7 +4,7 @@
 
 # Persisting and Monitoring Views
 
-From *Data Integration Monitor* \> *Views*, you can add views that have been created in the *Data Builder*, and persist these views \(direct execution or via a schedule\) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
+From *Data Integration Monitor* \> *Views*, you can monitor views that have been created in the *Data Builder*. You can persist these views \(direct run or via a schedule\) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
 
 **Prerequisites**: Your view must be deployed.
 
@@ -65,7 +65,7 @@ For more info, see [Replicating Data and Monitoring Remote Tables](replicating-d
 
 Table created from sources that have already been integrated into SAP Datasphere. It serves of source to create a view.
 
-For more information, see [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table to contain data by defining its column structure. Tables created in SAP Datasphere can be filled with data from a CSV file or via a data flow. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data from a flow or a CSV file. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 
 
@@ -81,7 +81,7 @@ For more information, see [Connecting SAP HANA Cloud, SAP HANA Database to Remot
 
 Define the flow of your data, starting by reading data from sources and writing data into a target after performing transformations on the data.
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:.
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target.") :arrow_upper_right:.
 
 
 
@@ -105,7 +105,13 @@ For more information, see [Creating a Local Table from a CSV File](https://help.
 
 ## Action in *Views*
 
-From *Views* tab, you perform the following actions on views:
+The monitor displays the views in 3 tabs:
+
+-   *All Views*: It displays all the deployed views that have been created in the *Data Builder* for the current space.
+-   *Scheduled* \(default\): It displays the views for which a schedule is defined to persist the data.
+-   *Persisted*: It displays the views already persisted.
+
+You can perform the following actions \(might depend on your role and privilege, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right::
 
 
 <table>
@@ -138,6 +144,8 @@ Information
 > A view, which contains input parameters can't be persisted.
 
 *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
+
+*Start View Analyzer*: Analyzes each view definition, the consumed views and the data sources used by local and remote tables that compose your data model. You can then use the provided information and warnings to decide on some improvements for your data model. You can also generate an SQL Analyzer Plan File that you can download \(if you have the required authorizations\) for detailed analysis. For more infromation, see [Exploring Views with View Analyzer](exploring-views-with-view-analyzer-8921e5a.md).
 
 </td>
 </tr>

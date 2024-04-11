@@ -63,6 +63,7 @@
     -   [Prepare Connectivity to Adverity](Preparing-Connectivity/prepare-connectivity-to-adverity-a37a758.md)
     -   [Prepare Connectivity to Amazon Athena](Preparing-Connectivity/prepare-connectivity-to-amazon-athena-8d80f60.md)
     -   [Prepare Connectivity to Apache Kafka](Preparing-Connectivity/prepare-connectivity-to-apache-kafka-1483ceb.md)
+    -   [Prepare Connectivity to Confluent](Preparing-Connectivity/prepare-connectivity-to-confluent-3515f11.md)
     -   [Prepare Connectivity to Amazon Redshift](Preparing-Connectivity/prepare-connectivity-to-amazon-redshift-519b2db.md)
     -   [Prepare Connectivity for Cloud Data Integration](Preparing-Connectivity/prepare-connectivity-for-cloud-data-integration-b6fd8de.md)
     -   [Prepare Connectivity for Generic JDBC](Preparing-Connectivity/prepare-connectivity-for-generic-jdbc-648fabf.md)

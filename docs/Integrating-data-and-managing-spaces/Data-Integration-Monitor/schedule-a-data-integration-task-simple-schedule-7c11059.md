@@ -2,7 +2,7 @@
 
 # Schedule a Data Integration Task \(Simple Schedule\)
 
-You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow or task chains runs. You may also pause and then later resume the run of scheduled tasks.
+You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.
 
 
 
@@ -11,6 +11,8 @@ You can schedule or unschedule data integration tasks such as remote data replic
 ## Prerequisites
 
 -   With the `DW Integrator` role you can create, change, or delete a schedule and let the scheduling component of SAP Datasphere run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
+
+-   For replication flows, scheduling is possible if all objects in the flow have load type *Initial Only*.
 
 -   To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of SAP Datasphere. In your profile settings under *Authorized Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
 

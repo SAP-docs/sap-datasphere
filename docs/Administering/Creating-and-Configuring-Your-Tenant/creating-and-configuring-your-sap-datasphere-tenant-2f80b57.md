@@ -835,7 +835,7 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 <td valign="top">
@@ -877,7 +877,7 @@ India \(Mumbai\)
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 <td valign="top">
@@ -919,7 +919,7 @@ US Central
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 <td valign="top">

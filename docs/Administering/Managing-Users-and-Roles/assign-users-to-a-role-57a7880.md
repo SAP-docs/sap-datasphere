@@ -29,9 +29,6 @@ To assign roles, you need the DW Administrator role.
 > ### Note:  
 > If you assign a user to a scoped role, be aware that the user is automatically assigned to all the spaces included in the scoped role. You can change the user assignment in the scoped role. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
-> ### Restriction:  
-> You cannot assign yourself to a scoped role.
-
 
 
 <a name="loio57a78804d8bd48ca9e7e73a0d33e355f__section_wf2_zd3_3kb"/>

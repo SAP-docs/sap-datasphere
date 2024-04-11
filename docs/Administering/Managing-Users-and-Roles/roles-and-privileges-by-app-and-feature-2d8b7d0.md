@@ -26,7 +26,7 @@ This topic contains the following sections:
 
 ## Apps
 
-To access an app, tool, or editor, a user must have the following standard application role or a custom role containing the listed privileges:
+To access an app, tool, or editor, a user must have the following standard role or a custom role containing the listed privileges:
 
 
 <table>
@@ -43,14 +43,16 @@ Requires Privileges \(Permissions\)…
 </th>
 <th valign="top">
 
-Contained in Standard Role...
+Granted by Role Template...
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-<span class="FPA-icons-V3"></span> \(*Home*\) 
+<span class="FPA-icons-V3"></span> \(*Home*\)
+
+See [The SAP Datasphere Homepage](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/2d85c8b63c454df585099fc93e4f8baf.html "The SAP Datasphere homepage gives you access to recent objects, quick actions, and blog posts. You can choose to show, hide, and reorder cards to suit your needs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -221,7 +223,7 @@ Consumption model editor
 
 Authorization scenario editor
 
-See [Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with the DW Modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and other BI clients.") :arrow_upper_right:
+See [Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with the DW Modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and MS Excel.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -259,7 +261,7 @@ The following features need additional permissions \(which are included in the *
 <tr>
 <td valign="top">
 
-![](images/Data_Builder_f73dc45.png) \(*Data Builder*\) 
+<span class="FPA-icons-V3"></span> \(*Data Builder*\) 
 
 Start Page
 
@@ -275,11 +277,15 @@ Data flow editor
 
 Transformation flow editor
 
+Replication flow editor
+
+Analytic model editor
+
 Intelligent lookup editor
 
 Task chain editor
 
-See [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right: and [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud.") :arrow_upper_right:
+See [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:, [Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with the DW Modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, MS Excel, and other clients, apps, and tools.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -359,7 +365,6 @@ See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36c
 
 The following features need additional permissions \(which are included in the *DW Space Administrator* role\):
 
--   *Views* \(monitor\) ** \> ** Add a view - *Data Builder.READ*
 -   *Views* \(monitor\) ** \> ** Define partitions - *Data Builder.READ*
 -   *Views* \(monitor\) ** \> *View Analyzer* - *Data Builder.READ*
 -   *Views* \(monitor\) ** \> *Generate SQL Analyzer Plan File* - *Data Warehouse.RUNTIME*
@@ -418,7 +423,7 @@ The following feature needs an additional permission \(which is included in the 
 
 ## Administration Tools
 
-To access an administration tool, a user must have the following standard application role or a custom role containing the listed privileges:
+To access an administration tool, a user must have the following standard role or a custom role containing the listed privileges:
 
 
 <table>
@@ -435,7 +440,7 @@ Requires Privileges \(Permissions\)…
 </th>
 <th valign="top">
 
-Contained in Standard Role...
+Granted by Role Template...
 
 </th>
 </tr>
@@ -645,7 +650,7 @@ Requires Privilege \(Permission\)
 </th>
 <th valign="top">
 
-Contained in Standard Role
+Granted by Role Template...
 
 </th>
 </tr>
@@ -1771,7 +1776,7 @@ Requires Privileges \(Permissions\)…
 </th>
 <th valign="top">
 
-Contained in Standard Role...
+Granted by Role Template...
 
 </th>
 </tr>
@@ -1807,7 +1812,7 @@ All roles
 
 ## The Command Line Interface
 
-To use the command line interface \(see [Manage Spaces via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "You can use the SAP Datasphere command line interface, datasphere, to create, read, update, and delete spaces. You can set space properties, assign (or remove) users, create database users, create or update objects (tables, views, and data access controls), and associate HDI containers to a space.") :arrow_upper_right:\), a user must have the following standard application role or a custom role containing the listed privileges:
+To use the command line interface \(see [Manage Spaces via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "You can use the SAP Datasphere command line interface, datasphere, to create, read, update, and delete spaces. You can set space properties, assign (or remove) users, create database users, create or update objects (tables, views, and data access controls), and associate HDI containers to a space.") :arrow_upper_right:\), a user must have the following standard role or a custom role containing the listed privileges:
 
 
 <table>

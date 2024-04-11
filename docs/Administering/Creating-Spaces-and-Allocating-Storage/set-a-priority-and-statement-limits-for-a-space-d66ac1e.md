@@ -2,7 +2,7 @@
 
 # Set a Priority and Statement Limits for a Space
 
-Use the properties in the *Workload Management* section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume.
+Use the properties in the *Workload Management* section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.
 
 
 

@@ -23,6 +23,8 @@ This topic contains the following sections:
 
 You need to edit connections in various cases, for example:
 
+-   In case of password or credential rotation.
+
 -   When there's changes in the setup of the connected remote system
 
     Changes in the remote system setup must also be made in the connection by updating the corresponding properties, for example changes in the authentication method, host changes, changes in security settings, or changes in the Data Provisioning Agent.
@@ -60,9 +62,13 @@ Consider the following when editing a connection which uses a Data Provisioning 
 
 -   When the connection isn't used and its real-time replication status is *Inactive*, you can change any property except for the technical name.
 
--   When you use the connection and its real-time replication status is *Active*, you can only change the business name and description. Pause real-time replication to enable editing connection properties.
+-   When you use the connection and its real-time replication status is *Active*, you can only change the business name and description. If no package has been assigned yet, you can select a package. Note that credential changes are not considered when saving the connection.
 
--   When the connection has real-time replication status *Active* but the Data Provisioning Agent is disconnected, you can only change the business name and description. Reconnect the agent and pause the connection to enable editing connection properties.
+    If you want to change other connection properties, pause real-time replication in the *Connections* app, or if required disable real-time replication for all affected remote tables in the *Data Integration Monitor*.
+
+-   When the connection has real-time replication status *Active* but the Data Provisioning Agent is disconnected, you can only change the business name and description. If no package has been assigned yet, you can select a package. Note that credential changes are not considered when saving the connection.
+
+    If you want to change other connection properties, you must first reconnect the agent and pause real-time replication in the *Connections* app, or if required disable real-time replication for all affected remote tables in the *Data Integration Monitor*.
 
 -   When the connection has real-time replication status *Paused*, you can only change a subset of the properties. It depends on the connection type if any properties can be changed at all and if yes which properties can be changed. Note that the user name cannot be changed in this case.
 

@@ -4,7 +4,7 @@
 
 # Define Attributes
 
-An Attribute is a descriptive element of a business entity.
+An attribute is a descriptive element of a business entity.
 
 
 
@@ -33,8 +33,11 @@ It provides meaningful business insight into corresponding measures.
 
 5.  You can define attributes with texts and language dependent texts. This enables you to display your data with ID and text, or with a language dependent text, when you preview or analyze your data. For language dependent texts, the language in the user settings is taken.
 
-    -   To display a text: Select Text. Then select the text attribute.
-    -   To display a language dependent text: Select Language Dependent Text. Select the text table. The text table has to be defined in the Data Builder.
+    -   To display a text: Select *Text*. Then select the text attribute.
+    -   To display a language dependent text: Select *Language Dependent Text*. Select the text table. The text table has to be defined in the Data Builder.
+
+    > ### Note:  
+    > Only one column can be defined as *Text*. By default, the first column with the semantic type *Text* from your text table is used. To use a different column, either reassign the semantic type *Text* in the table, or create a View, selecting the required column.
 
 6.  Decide whether your attribute should be an *Auxiliary Attribute* meaning an attribute which can be used further within the business entity, but is not exposed to consumption models.
 

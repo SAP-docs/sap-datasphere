@@ -10,9 +10,9 @@ This topic contains the following sections:
 
 -   [Introduction to Scoped Roles](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_uhl_gzy_bzb)
 -   [Create a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_z4m_mpj_zyb)
--   [Assign Spaces to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb)
+-   [Add Spaces to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb)
 -   [Remove Spaces from a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_lbc_gbz_bzb)
--   [Assign Users to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_u4g_xpj_zyb)
+-   [Add Users to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_u4g_xpj_zyb)
 -   [Remove Users from a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_anc_jbz_bzb)
 
 > ### Caution:  
@@ -203,18 +203,15 @@ You can then assign spaces and users to the new scoped role. The spaces and user
 
 <a name="loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb"/>
 
-## Assign Spaces to a Scoped Role
+## Add Spaces to a Scoped Role
 
-To assign spaces to a scoped role, the spaces must be created beforehand.
+To add spaces to a scoped role, the spaces must be created beforehand.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
 2.  Click *Add Scopes*, select one or more spaces in the dialog *Add Scopes* and click *Save*.
 
     > ### Note:  
     > By default, all users of the scoped role are automatically assigned to the spaces you've just added. You can change this and assign only certain members to certain spaces in the *Users* page of the scoped role.
-
-    > ### Restriction:  
-    > You cannot assign yourself to a scoped role. For this reason, if your own user is included in the scoped role, your user is not automatically assigned to the spaces you've added in the scoped role.
 
 
 
@@ -235,9 +232,9 @@ To assign spaces to a scoped role, the spaces must be created beforehand.
 
 <a name="loiob5c4e0b6c462414783ebbfc053815521__section_u4g_xpj_zyb"/>
 
-## Assign Users to a Scoped Role
+## Add Users to a Scoped Role
 
-To assign users to a scoped role, the users must be created beforehand.
+To add users to a scoped role, the users must be created beforehand.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
 2.  Click *Users*. All user assignements are displayed in the *Users* page.
@@ -259,8 +256,7 @@ To assign users to a scoped role, the users must be created beforehand.
 
 
 > ### Restriction:  
-> -   You cannot assign yourself to a scoped role.
-> -   A user can be assigned to a maximum of 100 spaces across all scoped roles.
+> A user can be assigned to a maximum of 100 spaces across all scoped roles.
 
 > ### Note:  
 > In the *Users* page, you can filter users and spaces to see for example to which spaces and roles a user is assigned to.

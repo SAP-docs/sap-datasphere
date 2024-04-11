@@ -294,7 +294,7 @@ The following monitoring views are ready to use in the DWC\_GLOBAL schema and ca
     </td>
     <td valign="top">
     
-    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right: 
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration. For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right: 
     
     </td>
     </tr>
@@ -493,7 +493,7 @@ The following monitoring views are ready to use in the DWC\_GLOBAL schema and ca
     </td>
     <td valign="top">
     
-    Captures the highest peak memory consumption. Note: this value is not available for all apps. To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitorig*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    Captures the highest peak memory consumption \(in bytes\). Note: this value is not available for all apps. To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitoring*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
     
     </td>
     <td valign="top">
@@ -515,7 +515,7 @@ The following monitoring views are ready to use in the DWC\_GLOBAL schema and ca
     </td>
     <td valign="top">
     
-    Total CPU time consumed by the task. Note: This value is not available for all apps.To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitorig*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    Total CPU time \(in microseconds\) consumed by the task. Note: This value is not available for all apps.To capture this value when it's available, you must check *Enable Expensive Statement Tracing* in *Configuration* \> *Monitoring*. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
     
     </td>
     <td valign="top">

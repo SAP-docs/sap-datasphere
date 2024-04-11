@@ -31,9 +31,11 @@ In this example:
 
 1.  Open the table or view that will be the source of your association \(or select it in an E/R model to open its *Properties* panel\).
 
-2.  In the *Associations* section, click <span class="FPA-icons-V3"></span> \(Create Association\) to open the *Select Association Target* dialog.
+2.  In the *Associations* section, click <span class="FPA-icons-V3"></span> \(Create Association\) to open the *Select Object* dialog.
 
-3.  You can filter the list of available targets by name and type. Select the appropriate target data entity from the list and click *OK* to create the association and open it in the side panel.
+    Find available objects by entering the object's name in the search bar or click <span class="FPA-icons-V3"></span> \(Show filters\) and filter by *Semantic Usage* or other criteria. 
+
+3.  Select the appropriate target data entity from the list and click *OK* to create the association and open it in the side panel.
 
     The rules for creating associations depend on the *Semantic Usage* of the entity:
 

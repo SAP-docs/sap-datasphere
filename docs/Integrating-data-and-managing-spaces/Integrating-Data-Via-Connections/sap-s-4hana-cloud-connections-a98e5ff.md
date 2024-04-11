@@ -71,6 +71,11 @@ Data Flows
 
 You can use the connection to add source objects to a data flow.
 
+You can access the following data:
+
+-   ABAP CDS views
+
+
 > ### Note:  
 > The data preview in the data flow editor of the Data Builder is **not** available for SAP S/4HANA Cloud sources.
 
@@ -88,6 +93,13 @@ Replication Flows
 
 You can use the connection to add source objects to a replication flow. 
 
+You can access the following data:
+
+-   ABAP CDS views
+
+
+
+
 </td>
 </tr>
 </table>
@@ -100,7 +112,7 @@ For more information about extracting ABAP CDS Views from SAP S/4HANA Cloud, see
 
 
 > ### Note:  
-> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows.
+> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\).
 > 
 > Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object in the source we strongly recommend to only use remote tables or replication flows and not both.
 

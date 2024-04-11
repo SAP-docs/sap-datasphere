@@ -4,9 +4,17 @@
 
 You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.
 
+This topic contains the following sections:
+
+-   [Statuses for Replication Flow Runs](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RunStatuses) 
+-   [Scheduling a Replication Flow](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Scheduling) 
+-   [Pausing and Resuming a Replication Flow Run](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Pausing) 
+-   [Stopping a Replication Flow Run](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Stopping) 
+-   [Removing Replication Objects from a Running Replication Flow](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects) 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_awz_hrj_3yb"/>
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RunStatuses"/>
 
 ## Statuses for Replication Flow Runs
 
@@ -43,7 +51,15 @@ On the left of the monitoring screen, you find the aggregated status information
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_opk_mrj_3yb"/>
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Scheduling"/>
+
+## Scheduling a Replication Flow
+
+You create a schedule for your replication flow and include your replication flow in a task chain if all objects in it have load type *Initial Only*. For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule. You can create linear task chains in which one task is run after another. (You can also nest other task chains within a task chain.) Or, you can create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully. In addition, when creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion.") :arrow_upper_right:.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Pausing"/>
 
 ## Pausing and Resuming a Replication Flow Run
 
@@ -52,11 +68,13 @@ You may want to pause a replication flow run, for example, while a system update
 > ### Note:  
 > If you have many data changes in your source, and if you pause the replication flow for a longer time \(such as several hours\), the logging tables can become quite big.
 
+To pause a replication flow that has a **schedule**, you need to pause the schedule. \(Pausing the replication flow run itself is not possible in this case.\)
+
 When you resume the flow, the system replicates all source data changes that happened while the replication flow was paused, which means that the first replication flow run after a pause can take considerably longer than usual.
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_v3v_prj_3yb"/>
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Stopping"/>
 
 ## Stopping a Replication Flow Run
 
@@ -64,7 +82,7 @@ If you do so, the flow run is stopped permanently in SAP Datasphere as well as i
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ssf_mk5_hzb"/>
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects"/>
 
 ## Removing Replication Objects from a Running Replication Flow
 

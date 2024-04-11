@@ -94,7 +94,7 @@ ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
 instantclient-basiclite-linux.x64-12.2.0.1.0.zip
 
 > ### Note:  
-> Make sure to select the *Basic Light* package zip file. The package applies to all versions supported by the Oracle connection type \(Oracle 12c, Oracle 18c, and Oracle 19c\).
+> Make sure to select the *Basic Light* package zip file. The package applies to version 12c supported by the Oracle connection type.
 
 
 
@@ -121,7 +121,7 @@ instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 > -   Additional files are required if SSL is used:
 > 
 >     -   oraclepki.jar \(SHA256 fingerprint: e408e7ae67650917dbce3ad263829bdc6c791d50d4db2fd59aeeb5503175499b\)
->     -   osdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
+>     -   package zip file. The package applies to allosdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
 >     -   osdt\_core.jar \(SHA256 fingerprint: c25e30184bb94c6da1227c8256f0e1336acb97b29229edb4aacf27167b96075e\)
 
 
@@ -134,7 +134,15 @@ ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13
 </td>
 <td valign="top">
 
-`https://download.oracle.com/otn_software/linux/instantclient/1917000/instantclient-basic-linux.x64-19.17.0.0.0dbru.zip`
+Driver: `https://download.oracle.com/otn_software/linux/instantclient/1917000/instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip`
+
+Additional files if SSL is used:
+
+-   `https://repo1.maven.org/maven2/com/oracle/database/security/oraclepki/19.17.0.0/oraclepki-19.17.0.0.jar`
+-   `https://repo1.maven.org/maven2/com/oracle/database/security/osdt_core/19.17.0.0/osdt_core-19.17.0.0.jar`
+-   `https://repo1.maven.org/maven2/com/oracle/database/security/osdt_cert/19.17.0.0/osdt_cert-19.17.0.0.jar`
+
+
 
 </td>
 </tr>

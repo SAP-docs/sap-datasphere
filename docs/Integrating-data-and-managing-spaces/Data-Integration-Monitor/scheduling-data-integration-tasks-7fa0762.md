@@ -4,7 +4,7 @@
 
 Schedule data integration tasks to run periodically at a specified date or time.
 
-You can schedule or unschedule data integration tasks such as remote table replication, persisting views, and data flow or task chain execution. You may also pause and then later resume execution of scheduled tasks.
+You can schedule or unschedule data integration tasks such as remote table replication, persisting views, and data flow, replication flow, or task chain execution. You may also pause and then later resume execution of scheduled tasks.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.

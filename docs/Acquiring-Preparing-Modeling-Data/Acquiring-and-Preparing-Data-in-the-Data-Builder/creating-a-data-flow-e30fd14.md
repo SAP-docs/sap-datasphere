@@ -21,7 +21,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor.
 
 2.  Drag one or more source objects from the *Source Browser* and drop it into the diagram \(see [Add a Source](add-a-source-7b50e8e.md)\).
 

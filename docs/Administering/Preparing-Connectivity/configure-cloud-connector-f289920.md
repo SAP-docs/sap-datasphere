@@ -211,8 +211,6 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         RFC
-
-        See [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
         
         </td>
         </tr>
@@ -227,22 +225,18 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         HTTPS
-
-        See [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) in the *SAP BTP Connectivity* documentation.
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-        *SAP HANA* on-premise only \(data flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
+        *SAP HANA* on-premise only \(data flows, replication flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
         
         </td>
         <td valign="top">
         
         TCP
-
-        See [Configure Access Control \(TCP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/befd4374d33a4833be117d7149b6a103.html) in the *SAP BTP Connectivity* documentation.
 
         For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
         
@@ -257,8 +251,6 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         HTTPS
-
-        See [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) in the *SAP BTP Connectivity* documentation.
         
         </td>
         </tr>
@@ -271,13 +263,40 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Apache Kafka* on-premise only \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Confluent* - Confluent Platform on-premise only \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        -   For the Kafka broker: TCP
+        -   For the Schema Registry: HTTP
 
-        See [Configure Access Control \(TCP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/befd4374d33a4833be117d7149b6a103.html) in the *SAP BTP Connectivity* documentation.
+
         
         </td>
         </tr>
         </table>
         
+        For more information, see [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) and [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
+
         > ### Note:  
         > When adding the system mapping information, you enter internal and virtual system information. The internal host and port specify the actual host and port under which the backend system can be reached within the intranet. It must be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector tries to forward the request to the network address specified by the internal host and port, so this address needs to be real. The virtual host name and port represent the fully qualified domain name of the related system in the cloud.
         > 
@@ -413,6 +432,23 @@ For more information about the supported use cases depending on the connection t
 
 
 
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Confluent* - Confluent Platform \(for the Schema Registry\)
+        
+        </td>
+        <td valign="top">
+        
+        *URL Path* \(for HTTPS\)
+        
+        </td>
+        <td valign="top">
+        
+        `/` 
         
         </td>
         </tr>

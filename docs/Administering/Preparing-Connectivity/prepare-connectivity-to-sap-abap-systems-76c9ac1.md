@@ -35,6 +35,11 @@ Before you can use the connection for creating views and accessing data via remo
 
 ## Data Flows
 
+> ### Note:  
+> The availability of the data flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the minimum versions mentioned below.We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> 
+> For more information about integrating ABAP-based SAP systems and about required and recommended versions in the source systems, see SAP Note [2890171](https://me.sap.com/notes/2890171).
+
 Before you can use the connection for data flows, the following is required:
 
 -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
@@ -45,9 +50,13 @@ Before you can use the connection for data flows, the following is required:
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
--   For SAP S/4HANA, source version 1909 FPS01 plus SAP Note [2873666](https://me.sap.com/notes/2873666) or higher versions are supported.
+-   When connecting to SAP S/4HANA Cloud to access CDS views, an administrator has created a communication arrangement for the communication scenario `SAP_COM_0532` \(*SAP Data Hub – ABAP CDS Pipeline Integration*\) in the SAP S/4HANA Cloud system.
 
--   When connecting to SAP LT Replication Server:
+    For more information, see [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud *documentation.
+
+-   When connecting to SAP S/4HANA to access CDS views, source version 1909 FPS01 plus SAP Note [2873666](https://me.sap.com/notes/2873666) or higher versions are supported.
+
+-   When connecting to ABAP-based systems using SAP LT Replication Server as the source to access tables:
 
     Connectivity to SAP LT Replication Server is supported for:
 
@@ -69,16 +78,17 @@ Before you can use the connection for data flows, the following is required:
 
     For more information, see [Creating a Configuration](https://help.sap.com/viewer/007c373fcacb4003b990c6fac29a26e4/latest/en-US/5a3be474248e4d758ba09a3d292ff1dc.html) in the *SAP Landscape Transformation Replication Server* documentation.
 
--   When connecting to SAP S/4HANA Cloud, an administrator has created a communication arrangement for the communication scenario `SAP_COM_0532` \(*SAP Data Hub – ABAP CDS Pipeline Integration*\) in the SAP S/4HANA Cloud system.
-
-    For more information, see [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud *documentation.
-
 
 
 
 <a name="loio76c9ac1a318c4de2bea29e72c64be8a0__section_stp_5kk_qwb"/>
 
 ## Replication Flows
+
+> ### Note:  
+> The availability of the replication flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the minimum versions mentioned below.We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> 
+> For more information about integrating ABAP-based SAP systems and about required and recommended versions in the source systems, see SAP Note [2890171](https://me.sap.com/notes/2890171).
 
 Before you can use the connection for replication flows, the following is required:
 
@@ -88,20 +98,28 @@ Before you can use the connection for replication flows, the following is requir
 
 -   For table-based replication via SAP LT Replication Server, replication is supported for systems using:
 
-    -   DMIS 2018 addon
+    -   DMIS 2018 addon Support Package 6 or higher
 
-    -   DMIS 2020 addon
+    -   DMIS 2020 addon Support Package 3 or higher
 
+
+    Source systems connected to an SAP LT Replication Server are supported down to:
+
+    -   version 4.6C via Addon DMIS 2010
+
+    -   version 6.20 via Addon DMIS 2011
+
+
+    > ### Note:  
+    > Consider the version dependency when using a dedicated SAP LT Replication Server. For more information, see the *Installation Guide* in the [SAP Landscape Transformation Replication Server](https://help.sap.com/docs/SAP_LANDSCAPE_TRANSFORMATION_REPLICATION_SERVER) documentation.
 
 -   ODP-based replication is supported for systems using:
 
-    -   DMIS 2011 addon
+    -   DMIS 2011 addon Support Package 23 or higher
 
-    -   DMIS 2018 addon
+    -   DMIS 2018 addon Support Package 8 or higher
 
-    -   DMIS 2020 addon
+    -   DMIS 2020 addon Support Package 4 or higher
 
 
-
-For more information about integrating ABAP-based SAP systems, see [2890171](https://me.sap.com/notes/2890171).
 

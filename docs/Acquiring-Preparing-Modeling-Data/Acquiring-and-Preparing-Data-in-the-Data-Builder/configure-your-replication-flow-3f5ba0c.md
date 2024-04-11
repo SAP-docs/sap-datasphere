@@ -37,6 +37,8 @@ Define settings and properties for your replication flow and individual replicat
         If not, the system inserts new data records after the existing data in the target. For data records that already exist in the target and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode.
 
     -   For cloud storage provider targets, *Truncate* must always be set. \(If you still try to run a replication flow for an existing target without the *Truncate* option, you get an error message.\) When you start the replication run, the system deletes the object completely \(data and structure\) and re-creates it based on the source data.
+    -   For Apache Kafka and Confluent Kafka, when *Truncate* is enabled, the target topic is re-created. This means that all existing records in that topic are deleted as well. Truncation has no effect on the schema registry.
+
 
     If the target structure does not yet exist or is empty, you can ignore the *Truncate* setting.
 

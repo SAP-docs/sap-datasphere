@@ -21,6 +21,12 @@ You must have a user in the bridge tools with the business role template `SAP_DW
 You can import entities from the following types of sources:
 
 -   SAP BW∕4HANA \(see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:\).
+
+    > ### Note:  
+    > When you re-import a SAP BW∕4HANA entity, the imported table in SAP Datasphere is overwritten. So in case you have made changes to the imported table, these changes will be lost.
+    > 
+    > If you would like to keep the changes you have made to the table in SAP Datasphere, you can refresh the table in the table editor in order to get updates from the original entity in the SAP BW∕4HANA system.
+
 -   SAP BW bridge
 
     If the SAP Datasphere, SAP BW bridge option is enabled:
@@ -45,24 +51,55 @@ You can import entities from the following types of sources:
 
 ## Procedure
 
-1.  Open the wizard from the *Repository Explorer*, *Semantic Onboarding*, or the *Data Builder*:
+1.  Open the wizard from *Semantic Onboarding*, the *Repository Explorer*, or the *Data Builder*:
 
     -   In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
     -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
-    -   In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Entities*.
+    -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Entities*.
 
-2.  On the *Select Connection Type* page, select the *SAP BW/4HANA* or *SAP BW Bridge* connection type, and then click *Next Step*.
+2.  Select your connection and target space:
 
-3.  On the *Select Target Space* page, click the target space that you want to import the entities into, and click *Next Step*.
 
-    If you opened the wizard from the ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), only your current space can be selected.
+    <table>
+    <tr>
+    <th valign="top">
 
-    > ### Note:  
-    > The *SAP BW Bridge* space cannot be selected as the target space. When importing entities from bridge, any remote tables are imported to the *SAP BW Bridge* space and automatically shared to your selected target space, where the remaining objects are created.
+    *Semantic Onboarding*
+    
+    </th>
+    <th valign="top">
 
-4.  On the *Select Connection* page, click the specific connection to the source you want to import from, and click *Next Step*.
+    *Repository Explorer*/ *Data Builder*
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Select the connection to the source you want to import from from the list, and then click *Next Step*.
 
-5.  On the *Select Entities* page, select the entities that you want to import from the *Results* list, and click *Next Step*.
+    You can use the *Filter By* pane on the left to filter the connections by space.
+    
+    </td>
+    <td valign="top">
+    
+    1.  Select the *SAP BW/4HANA* or *SAP BW Bridge* connection type, and then click *Next Step*.
+    2.  Select the target space that you want to import the entities into, and click *Next Step*.
+
+        If you opened the wizard from the <span class="FPA-icons-V3"></span> \(*Data Builder*\), only your current space can be selected.
+
+        > ### Note:  
+        > The *SAP BW Bridge* space cannot be selected as the target space. When importing entities from bridge, any remote tables are imported to the *SAP BW Bridge* space and automatically shared to your selected target space, where the remaining objects are created.
+
+    3.  Click the specific connection to the source you want to import from, and click *Next Step*.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  On the *Select Entities* page, select the entities that you want to import from the *Results* list, and click *Next Step*.
 
     Use the *Search* field to search by label. Depending on your connection type, you can filter by:
 
@@ -70,7 +107,7 @@ You can import entities from the following types of sources:
     -   Modeling Pattern
     -   Software Component
 
-6.  On the *Review Entities* page, review the entities that you will import.
+4.  On the *Review Entities* page, review the entities that you will import.
 
     The left pane lists the entities you have selected for import and the right pane has two tabs listing all the entities that will be created in the SAP Datasphere *Business Builder* and *Data Builder* during the import of the selected entity.
 
@@ -279,18 +316,20 @@ You can import entities from the following types of sources:
     </tr>
     </table>
     
-7.  Click *Import and Deploy*.
+5.  Click *Import and Deploy*.
 
-    A notification is sent immediately, and this notification will update as the import process continues.
+    A notification is sent immediately, and this notification will update as the import process continues. When the import is complete:
 
-    When the import is complete, you will have two notifications:
+    -   You have two notifications:
+        -   Click the first notification to see the imported entities listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
+        -   Click the second notification to view the import log messages.
 
-    -   Click the first notification to see the imported entities listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
-    -   Click the second notification to view the import log messages.
-
-        If any entity could not be created, an error is given.
+            If any entity could not be created, an error is given.
 
 
-    The imported entities are available for review and use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\).
+    -   The imported entities are available for use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the <span class="FPA-icons-V3"></span> \(*Data Builder*\).
+
+
+6.  \[optional\] By default, data is only federated to your remote tables. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
 
 

@@ -21,6 +21,8 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 -   Views must not have parameters or data access controls assigned to them.
 
 -   If a data flow that has input parameters is included in a task chain, task chain runs will use default parameter values defined for the data flow.
+-   A replication flow can be included in a task chain if all objects in the flow have load type *Initial Only*.
+
 
 
 
@@ -30,7 +32,7 @@ Linear task chains allow you to define a group or series of tasks and execute th
 
 Parallel task chain branches allow you to specify that some individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
-Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, Intelligent Lookup, Data Flow, and Transformation Flow runs. You can also nest other task chains within a task chain.
+Tasks chain scheduling may include execution of Remote Table Replication, View Persistency, Intelligent Lookup, Data Flow, Replication Flow \(load type *Initial Only*\), and Transformation Flow runs. You can also nest other task chains within a task chain.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -64,7 +66,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
 2.  From the left-side panel, drag and drop a first object on to the task chain canvas from those available in the repository.
 
     > ### Note:  
-    > In the repository, you can see the remote tables, views, intelligent lookups, data flow, and transformation flow objects that meet prerequisites and are available to be added to the task chain.
+    > In the repository, you can see the remote tables, views, intelligent lookups, data flow, replication flow, and transformation flow objects that meet prerequisites and are available to be added to the task chain.
 
     > ### Note:  
     > If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
@@ -246,7 +248,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
     </td>
     <td valign="top">
     
-    A remote table, view, intelligent lookup, data flow, or transformation flow
+    A remote table, view, intelligent lookup, data flow, replication flow \(load type *Initial Only*\), or transformation flow
     
     </td>
     </tr>
@@ -265,6 +267,7 @@ A basic or linear task chain allows you to define a group or series of tasks and
     -   View - Persist
     -   Intelligent lookup - Run
     -   Data flow - Run
+    -   Replication Flow - Run
     -   Transformation flow - Run
     -   Local table - Delete Records with Change Type "Deleted"
 

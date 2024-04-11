@@ -211,6 +211,10 @@ You can select:
 
 -   *No Authentication*
 -   *User Name And Password*
+
+    > ### Note:  
+    > For basic authentication with user name and password, we recommend to use TLS encryption to ensure secure communication.
+
 -   *Salted Challenge Response Authentication Mechanism \(256\)*
 -   *Salted Challenge Response Authentication Mechanism \(512\)* \(default\)
 -   *Kerberos with Username and Password*
@@ -333,7 +337,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the Kafka SASL connection user name. 
+Enter the user name that is used for Kafka SASL SCRAM authentication. 
 
 </td>
 </tr>
@@ -345,7 +349,7 @@ Enter the Kafka SASL connection user name.
 </td>
 <td valign="top">
 
-Enter the Kafka SASL connection password. 
+Enter the Kafka SASL SCRAM connection password. 
 
 </td>
 </tr>
@@ -379,7 +383,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the user name. 
+Enter the user name that is used for Kafka SASL PLAIN authentication. 
 
 </td>
 </tr>
@@ -391,7 +395,7 @@ Enter the user name.
 </td>
 <td valign="top">
 
-Enter the password. 
+Enter the Kafka SASL PLAIN connection password. 
 
 </td>
 </tr>
@@ -425,7 +429,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the user name. 
+Enter the name of the user that is used to connect to the Kerberos service. 
 
 </td>
 </tr>
@@ -475,7 +479,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the user name. 
+Enter the name of the user that is used to connect to the Kerberos service. 
 
 </td>
 </tr>
@@ -487,7 +491,7 @@ Enter the user name.
 </td>
 <td valign="top">
 
-Enter the password. 
+Enter the Kerberos password. 
 
 </td>
 </tr>

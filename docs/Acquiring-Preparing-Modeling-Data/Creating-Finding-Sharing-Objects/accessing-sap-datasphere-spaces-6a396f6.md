@@ -1,6 +1,6 @@
 <!-- loio6a396f6cf7ad41faa3a8cdd24f4e728a -->
 
-# Working in Spaces
+# Accessing SAP Datasphere Spaces
 
 All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
 

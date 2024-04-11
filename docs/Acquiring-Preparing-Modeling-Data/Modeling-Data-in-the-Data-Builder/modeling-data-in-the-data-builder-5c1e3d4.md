@@ -129,7 +129,7 @@ For more information, see [Consuming Data Exposed by SAP Datasphere](https://hel
 
 Once your fact is ready for use, create an analytic model from it to consume its data in SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
--   To get started: In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Analytic Model* to open the editor.
+-   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Analytic Model* to open the editor.
 -   You must add a fact as a source and can choose to copy all its measures, attributes and associated dimensions to the analytic model \(see [Add a Source](add-a-source-27075ee.md)\).
 -   You can deselect measures and attributes to leave only those that are relevant to answer your particular analytic question.
 -   You can create additional calculated and restricted measures \(see [Add Measures](add-measures-e4cc3e8.md)\).

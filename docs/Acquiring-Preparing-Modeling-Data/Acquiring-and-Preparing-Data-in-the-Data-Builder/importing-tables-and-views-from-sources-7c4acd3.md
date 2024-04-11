@@ -63,6 +63,16 @@ As these sources are already integrated into SAP Datasphere in staging tables ne
 </tr>
 </table>
 
+> ### Note:  
+> For connection types that allow to enable remote tables, two SAP HANA Cloud features are used today:
+> 
+> -   SAP HANA smart data integration \(SDI\), which is used in connections with *Data Provisioning* option *Data Provisioning Agent*
+> 
+> -   SAP HANA smart data access \(SDA\), which is used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connection*.
+> 
+> 
+> For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html)
+
 When you import an object through any of these methods, it is added to the repository and is available for use by any user assigned to the space in:
 
 -   The *Data Builder* start page.

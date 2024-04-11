@@ -26,7 +26,7 @@ You can combine, filter, enrich and otherwise prepare data in views.
 
 -   You can write SQL or SQLScript \(table function\) code in a powerful SQL editor \(see [Creating an SQL View](creating-an-sql-view-81920e4.md)\).
 
-    -   To get started: In the side navigation area, click ![](Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New SQL View* to open the editor.
+    -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New SQL View* to open the editor.
 
     -   SAP Datasphere supports:
         -   A subset of the SQL syntax supported by SAP HANA Cloud \(see [SQL Reference](sql-reference-6a37cc5.md)\).
@@ -34,7 +34,7 @@ You can combine, filter, enrich and otherwise prepare data in views.
 
 
 -   You can prepare your data in a graphical no code/low code environment \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
-    -   To get started: In the side navigation area, click ![](Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Graphical View* to open the editor.
+    -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Graphical View* to open the editor.
     -   You can add and combine your sources by drag and drop \(see [Add a Source](add-a-source-1eee180.md), [Create a Join](create-a-join-947d6d8.md), and [Create a Union](create-a-union-5c3d354.md)\).
     -   You can refine, filter, and enrich your data in the diagram \(see [Reorder, Rename, and Exclude Columns](reorder-rename-and-exclude-columns-b846d0d.md), [Create a Column](create-a-column-3897f48.md), [Filter Data](filter-data-6f6fa18.md), and [Aggregate Data](aggregate-data-7733250.md)\).
 

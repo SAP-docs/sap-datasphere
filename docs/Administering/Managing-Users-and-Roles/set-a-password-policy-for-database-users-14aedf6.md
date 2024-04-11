@@ -12,7 +12,7 @@ Users with the *DW Administrator* role \(administrators\) can set a password pol
 
 ## Context
 
-Users with the *DW Space Administrator* role \(space administrators\) can create database users in their spaces to allow the connection of ETL tools to write to and read from Open SQL schemas attached to the space schema \(see[Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\).
+Users with the *DW Space Administrator* role \(space administrators\) can create database users in their spaces to allow the connection of ETL tools to write to and read from Open SQL schemas attached to the space schema \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\).
 
 
 
@@ -27,6 +27,6 @@ Users with the *DW Space Administrator* role \(space administrators\) can create
     After this period, the user will be prompted to set a new password.
 
     > ### Note:  
-    > The password policy applies only to database users where the *Enable Password Policy* property is selected. If a user does not log on with their initial password during this period, they will be deactivated until their password is reset.
+    > The password policy applies only to database users where the *Enable Password Policy* property is selected, for both existing and new users. If a user does not log on with their initial password during this period, they will be deactivated until their password is reset.
 
 

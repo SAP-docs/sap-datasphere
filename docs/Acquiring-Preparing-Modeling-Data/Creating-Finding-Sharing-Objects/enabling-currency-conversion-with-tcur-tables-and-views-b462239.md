@@ -1,5 +1,7 @@
 <!-- loiob462239ffb644d9baab4442a10a72edf -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Enabling Currency Conversion with TCUR\* Tables and Views
 
 Create currency conversion views and the necessary supporting objects based on an SAP connection, tables shared from another space, or manually.
@@ -21,7 +23,7 @@ Once the objects are created, you will be able to convert currency values into a
 
 ## Create Currency Conversion Objects
 
-1.  In the side navigation area, click ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click +, then *Currency Conversion Views*. The *Currency Conversion Views* dialog opens.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click +, then *Currency Conversion Views*. The *Currency Conversion Views* dialog opens.
 
     > ### Note:  
     > You can also access the *Currency Conversion Views* dialog from the *Repository Explorer*.
@@ -73,7 +75,7 @@ Once you’ve created the currency conversion objects in your space, you can sha
 > ### Note:  
 > As a general rule, you can share objects \(including TCUR\* tables\) to another space by following another procedure. For more information, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)
 
-1.  In the side navigation area, click ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click +, then *Currency Conversion Views*. The *Currency Conversion Views* dialog opens.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click +, then *Currency Conversion Views*. The *Currency Conversion Views* dialog opens.
 
 2.  Click *Share*.
 

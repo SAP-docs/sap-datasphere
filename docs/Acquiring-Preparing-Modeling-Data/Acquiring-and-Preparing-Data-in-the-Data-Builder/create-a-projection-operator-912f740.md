@@ -67,6 +67,9 @@ Insert a projection operator to add, remove, reorder, or rename columns.
     > 
     > -   In the expression, you must enclose a column name within double quotations and a constant string value within single quotations.
 
+    > ### Caution:  
+    > If your expression contains boolean columns, the validation capabilities are limited.
+
 6.  To complete the projection, create a flow from it to the next operator or the target table, as appropriate.
 
 

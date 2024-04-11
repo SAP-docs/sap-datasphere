@@ -1,8 +1,8 @@
 # Acquiring, Preparing, and Modeling Data with SAP Datasphere
 
 -   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md)
--   [Working with Objects](Creating-Finding-Sharing-Objects/working-with-objects-6c69b30.md)
-    -   [Working in Spaces](Creating-Finding-Sharing-Objects/working-in-spaces-6a396f6.md)
+-   [Creating, Finding, and Sharing Objects](Creating-Finding-Sharing-Objects/creating-finding-and-sharing-objects-6c69b30.md)
+    -   [Accessing SAP Datasphere Spaces](Creating-Finding-Sharing-Objects/accessing-sap-datasphere-spaces-6a396f6.md)
     -   [Repository Explorer](Creating-Finding-Sharing-Objects/repository-explorer-f8ce0b4.md)
     -   [Folders](Creating-Finding-Sharing-Objects/folders-bbedad6.md)
     -   [Packages](Creating-Finding-Sharing-Objects/packages-a806c67.md)
@@ -90,6 +90,7 @@
         -   [Using a Cloud Storage Provider As the Target](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-a-cloud-storage-provider-as-the-target-43d93a2.md)
         -   [Using Google BigQuery As the Target](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-google-bigquery-as-the-target-56d4472.md)
         -   [Using Apache Kafka As the Target](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-apache-kafka-as-the-target-6df55db.md)
+        -   [Using Confluent Kafka As the Target](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-confluent-kafka-as-the-target-74b3c95.md)
         -   [Editing an Existing Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/editing-an-existing-replication-flow-a24c71f.md)
         -   [Deleting a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/deleting-a-replication-flow-bdd81ec.md)
     -   [Creating a Transformation Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-transformation-flow-f7161e6.md)

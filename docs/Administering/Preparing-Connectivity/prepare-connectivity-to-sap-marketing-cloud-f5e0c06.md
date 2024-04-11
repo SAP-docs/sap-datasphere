@@ -16,7 +16,7 @@ Before you can use the connection for creating views and accessing data via remo
 
     For more information, see [Preparing Data Provisioning Agent Connectivity](preparing-data-provisioning-agent-connectivity-f1a39d1.md).
 
--   A communication arrangement has been created for communication scenario `SAP_COM_0531` \(*CDI API for CDS Based Extraction*\) in the source system. 
+-   A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system. 
 
     For more information, see [Integrating CDI](https://help.sap.com/viewer/e0cd7c1ecf3d4f2f9feb46ec1c5b68fb/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP Marketing Cloud* documentation.
 
@@ -29,11 +29,7 @@ Before you can use the connection for creating views and accessing data via remo
 
 Before you can use the connection for data flows, the following is required:
 
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
-
-    For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
-
--   A communication arrangement has been created for communication scenario `SAP_COM_0531` \(*CDI API for CDS Based Extraction*\) in the source system. 
+-   A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system. 
 
     For more information, see [Integrating CDI](https://help.sap.com/viewer/e0cd7c1ecf3d4f2f9feb46ec1c5b68fb/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP Marketing Cloud* documentation.
 

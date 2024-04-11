@@ -28,6 +28,8 @@ You can find objects globally by using the search bar and entering all or part o
 
 As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
+Filter the search results based on selected criteria to limit the number of results.
+
 There are five tabs next to the *Filter* icon that you can use to narrow your results:
 
 

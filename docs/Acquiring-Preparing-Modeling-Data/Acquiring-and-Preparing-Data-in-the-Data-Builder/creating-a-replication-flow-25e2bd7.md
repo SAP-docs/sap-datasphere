@@ -33,7 +33,7 @@ For more information about available connection types, sources, and targets, see
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Replication Flow* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Replication Flow* to open the editor.
 
 2.  Select a source connection and a source container, then add source objects \(see [Add a Source](add-a-source-7496380.md)\).
 
@@ -206,7 +206,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Enable this option want to delete any existing content in the target.
+    Enable this option to delete any existing content in the target.
 
     For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
     

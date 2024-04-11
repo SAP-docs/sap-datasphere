@@ -102,14 +102,14 @@ Allows modelers to replicate data from multiple source objects from a connected 
 
 You can enable a single initial load or request initial and delta loads to load changes at regular intervals. It depends on the connection type if you can use the connection as source or target connection.
 
-For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow if you want to copy multiple data assets from the same source to the same target in a fast and easy way and do not require complex projections.") :arrow_upper_right:.
+For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target.") :arrow_upper_right:.
 
 </td>
 </tr>
 </table>
 
 > ### Note:  
-> Some connection types, such as SAP S/4HANA Cloud and on-premise or SAP ABAP, support replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows.
+> Some connection types, such as SAP S/4HANA Cloud and on-premise or SAP ABAP, support replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\).
 > 
 > Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object we strongly recommend to only use remote tables **or** replication flows and not both.
 
@@ -387,6 +387,43 @@ Cloud
 <td valign="top">
 
 SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Confluent Connections](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52)
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes \(target\)
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+On-Premise, Cloud
+
+</td>
+<td valign="top">
+
+Non SAP
 
 </td>
 </tr>

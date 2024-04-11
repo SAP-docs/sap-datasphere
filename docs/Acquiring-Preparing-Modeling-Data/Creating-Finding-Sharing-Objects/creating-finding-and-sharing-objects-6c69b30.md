@@ -1,14 +1,14 @@
 <!-- loio6c69b305c2dc46798d51cd1f7a39c163 -->
 
-# Working with Objects
+# Creating, Finding, and Sharing Objects
 
 All SAP Datasphere users use the *Repository Explorer* to browse objects. Modelers can create objects and otherwise act on them here or in the dedicated builder apps. Users with the *Catalog User* role can, additionally, browse the *Catalog* for trusted data assets that have been published there.
 
 This topic contains the following sections:
 
--   [Create or Import Objects](working-with-objects-6c69b30.md#loio6c69b305c2dc46798d51cd1f7a39c163__section_create)
--   [Find Objects](working-with-objects-6c69b30.md#loio6c69b305c2dc46798d51cd1f7a39c163__section_find)
--   [Share Objects](working-with-objects-6c69b30.md#loio6c69b305c2dc46798d51cd1f7a39c163__section_share)
+-   [Create or Import Objects](creating-finding-and-sharing-objects-6c69b30.md#loio6c69b305c2dc46798d51cd1f7a39c163__section_create)
+-   [Find Objects](creating-finding-and-sharing-objects-6c69b30.md#loio6c69b305c2dc46798d51cd1f7a39c163__section_find)
+-   [Share Objects](creating-finding-and-sharing-objects-6c69b30.md#loio6c69b305c2dc46798d51cd1f7a39c163__section_share)
 
 
 

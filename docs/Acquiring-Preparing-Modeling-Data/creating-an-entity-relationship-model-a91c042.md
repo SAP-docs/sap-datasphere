@@ -22,7 +22,7 @@ The work that you do in an E/R model benefits all the users in your space as the
 
 ## Procedure
 
-1.  In the side navigation area, click ![](Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New ER Model* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New ER Model* to open the editor.
 
 2.  Add, import, or create entities in the diagram:
 

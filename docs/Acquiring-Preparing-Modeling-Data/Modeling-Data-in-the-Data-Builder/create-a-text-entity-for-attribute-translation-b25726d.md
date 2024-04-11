@@ -52,7 +52,7 @@ For example:
     
     Identifier
 
-    Identifies the master data member for which the text is provided.
+    Specifies the dimension member for which the text is provided.
 
     Example: `01`
     
@@ -73,14 +73,21 @@ For example:
     
     Language Identifier
 
-    Identifies the language in which the text is provided. The following identifier formats are supported for any data access language available in SAP Analytics Cloud:
+    Specifies the language in which the text is provided and must be used with the appropriate <code>String(<i class="varname">&lt;n&gt;</i>)</code> data type.
 
-    -   `E`
-    -   `en`
-    -   `EN`
-    -   `EN-UK`
+    Example: `fr`
 
-    Example: `en`
+    > ### Note:  
+    > The following identifier formats are supported:
+    > 
+    > -   `F` - `String(1)`
+    > -   `fr` - `String(2)`
+    > -   `FR` - `String(2)`
+    > -   `fr-FR` - `String(5)`
+    > 
+    > For the list of data access languages supported by SAP Analytics Cloud, see [Supported Data Access Languages](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/8310076258a94a4194a926506b80c390.html).
+
+
     
     </td>
     <td valign="top">

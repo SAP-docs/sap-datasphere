@@ -25,7 +25,7 @@ In the *Flows* monitor, you can find all the deployed flows per space.
 
 ## Context
 
-In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the execution details of the flows.
+In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows, and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the execution details of the flows.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -40,7 +40,7 @@ For more information and points to consider when using replication flows, see al
 
 1.  In the SAP Datasphere, navigate to *Data Integration Monitor* \> *Flows*.
 
-    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. You can also create, edit, delete, pause or resume a schedule for a data flow, or assign a schedule to your name under *Schedule*. Whenever it's applicable, you can select several data flows to group the scheduling actions. For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
+    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. For some flows, you can create, edit, delete, pause or resume a schedule, or assign a schedule to your name under *Schedule*, and you can select several data flows to group the scheduling actions. For more information about scheduling, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
 
     The list of deployed flows shows the following information:
 

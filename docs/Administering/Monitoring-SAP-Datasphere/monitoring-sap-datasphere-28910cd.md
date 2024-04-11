@@ -6,6 +6,14 @@
 
 Administrators have access to various monitoring logs and views, and can create database analysis users, if necessary, to help troubleshoot issues.
 
+This topic contains the following sections:
+
+-   [Monitoring Out-of-Memory Errors and Other Statement-Related Information](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_zn2_nyr_c5b)
+-   [Dashboard](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_k1v_2jx_b5b)
+-   [Tasks](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_ocq_twn_wtb)
+-   [Statements](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_fyv_twn_wtb)
+-   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
+
 Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) to access the main monitoring tool. The *System Monitor* allows to monitor the performance of your system and identify storage, task, out-of-memory, and other issues across all spaces.
 
 For example, you can see all the errors \(such as failed tasks and out-of-memory errors\) that occurred yesterday or the top five statements with the highest peak memory consumption.

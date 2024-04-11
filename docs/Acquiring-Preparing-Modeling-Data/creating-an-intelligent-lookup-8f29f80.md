@@ -92,7 +92,7 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
 
 ## Procedure
 
-1.  In the side navigation area, click ![](Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *New Intelligent Lookup* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Intelligent Lookup* to open the editor.
 
 2.  Select your input entity:
 

@@ -14,7 +14,9 @@ You need to link a text dependent dimension to a text entity thanks to a text as
 
 ## Procedure
 
-1.  Select your text dependent dimension to show its side panel. In the *Attributes* section, hover over an attribute and click <span class="FPA-icons-V3"></span> \(More\) \> *Add Text Association*. The *Select Text Association Target* dialog opens and text entities available for association are listed.
+1.  Select your text dependent dimension to show its side panel. In the *Attributes* section, hover over an attribute and click <span class="FPA-icons-V3"></span> \(More\) \> *Add Text Association*. The *Select Object* dialog opens and text entities available for association are listed.
+
+    Find available objects by entering the object's name in the search bar or click <span class="FPA-icons-V3"></span> \(Show filters\) and filter by *Semantic Usage* or other criteria.  
 
 2.  Select a target entity and click *OK*.
 

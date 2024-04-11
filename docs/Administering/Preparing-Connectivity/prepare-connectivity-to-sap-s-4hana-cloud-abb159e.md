@@ -16,7 +16,7 @@ Before you can use the connection for creating views and accessing data via remo
 
     For more information, see [Preparing Data Provisioning Agent Connectivity](preparing-data-provisioning-agent-connectivity-f1a39d1.md).
 
--   A communication arrangement has been created for communication scenario `SAP_COM_0531` \(*CDI API for CDS Based Extraction*\) in the source system. 
+-   A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system. 
 
     For more information, see [Integrating CDI](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP S/4HANA Cloud* documentation.
 
@@ -27,13 +27,11 @@ Before you can use the connection for creating views and accessing data via remo
 
 ## Data Flows and Replication Flows
 
-Before you can use the connection for data flows, the following is required:
+Before you can use the connection for data flows and replication flows, the following is required:
 
--   A communication arrangement has been created for communication scenario `SAP_COM_0532` \(*SAP Data Hub – ABAP CDS Pipeline Integration*\) in the SAP S/4HANA Cloud system.
+-   A communication arrangement has been created for communication scenario `SAP_COM_0532` in the SAP S/4HANA Cloud system.
 
-    For more information, see [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation.
-
--   For replication flows, CDS view replication is supported for SAP S/4HANA Cloud version 2202 and higher.
+    For more information, see [Integrating CDS Views Using SAP Datasphere](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation.
 
 
 
@@ -50,11 +48,11 @@ Before you can use the connection for model import, the following is required:
 
 -   In the SAP S/4HANA Cloud system, communication arrangements have been created for the following communication scenarios:
 
-    -   `SAP_COM_0532` \(*SAP Data Hub – ABAP CDS Pipeline Integration*\)
+    -   `SAP_COM_0532` 
 
-        For more information, see [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation.
+        For more information, see [Integrating CDS Views Using SAP Datasphere](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation.
 
-    -   `SAP_COM_0531` \(CDI API for CDS Based Extraction\)
+    -   `SAP_COM_0531`
 
         For more information, see [Integrating CDI](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP S/4HANA Cloud* documentation.
 

@@ -37,6 +37,8 @@ Enter one or more characters in the *Search* field and press *Enter* \(or click 
 
 As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
 
+The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+
 
 
 <a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter"/>

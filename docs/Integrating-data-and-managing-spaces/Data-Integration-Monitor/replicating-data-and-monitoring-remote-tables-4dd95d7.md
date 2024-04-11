@@ -10,7 +10,13 @@ In the *Remote Tables* monitor, you can find a remote table monitor per space. H
 
 The monitor shows the remote tables that have already been deployed in your space. Also, it only shows remote tables for connections that have been created within your space.
 
-SAP Datasphere is using SAP HANA smart data integration or SAP HANA smart data access adaptors to connect to remote tables. For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
+SAP Datasphere is using two types of adaptors to connect to remote tables:
+
+-   SAP HANA smart data integration \(used in connections with *Data Provisioning* option = *Data Provisioning Agent*\)
+
+-   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connection*\)
+
+For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 
 Initially, by default, when a remote table is deployed, the data is directly accessed live from the source and no data is stored in SAP Datasphere.
 
@@ -567,7 +573,7 @@ Supported but with restrictions depending on data type and adapter used.
 </td>
 <td valign="top">
 
-Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
+Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -589,7 +595,7 @@ Supported
 </td>
 <td valign="top">
 
-Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
+Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -611,7 +617,7 @@ Supported.
 </td>
 <td valign="top">
 
-Action to be done from the ![](images/Data_Builder_f73dc45.png) \(*Data Builder*\). For more information, see [Process Source Changes in the Table Editor](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/622328b59afa40fd810b44ac84d6afd3.html "Identify available table structure updates in your data sources and resolve conflicting errors resulting from these updates. This operation applies to any remote tables as well as local tables from an Open SQL Schema.") :arrow_upper_right:
+Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Process Source Changes in the Table Editor](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/622328b59afa40fd810b44ac84d6afd3.html "Identify available table structure updates in your data sources and resolve conflicting errors resulting from these updates. This operation applies to any remote tables as well as local tables from an Open SQL Schema.") :arrow_upper_right:
 
 </td>
 </tr>

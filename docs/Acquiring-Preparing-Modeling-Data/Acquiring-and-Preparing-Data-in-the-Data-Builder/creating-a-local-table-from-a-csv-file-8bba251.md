@@ -19,7 +19,7 @@ Import a `.csv` file to create a table and fill it with the data from the file.
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../Creating-Finding-Sharing-Objects/images/Data_Builder_f73dc45.png) \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import CSV File* to open the editor.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import CSV File* to open the editor.
 
 2.  Click *Select Source File*, navigate to, and select the CSV file you want to upload.
 

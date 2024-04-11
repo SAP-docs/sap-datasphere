@@ -31,75 +31,13 @@ In this example, a user opens the diagram to analyze the *Enriched Sales View* i
 
 ![](images/Impact_and_Lineage_Example_253b09a.png)
 
-The diagram can contain the following kinds of symbols:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Symbol
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-![](images/Impact_and_Lineage_Analysis_-_Analyzed_Object_81ad0b4.png)
-
-</td>
-<td valign="top">
-
-The object being analyzed.
-
-You can show or hide the objects on either side of this or any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) buttons on the symbol.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-![](images/Impact_and_Lineage_Analysis_-_Dependent_Object_44ffb7e.png)
-
-</td>
-<td valign="top">
-
-Objects appearing in the lineage or impacts of the analyzed object.
-
-If you do not have permission to view an object, it is shown with the :lock: icon and the name *Unauthorized* \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-![](images/Impact_and_Lineage_Analysis_-_Space_3_43b4eb1.png)
-
-</td>
-<td valign="top">
-
-Spaces that contain objects appearing in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the space that are part of the impact or lineage of the analyzed object.
-
-You can expand or collapse a space, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
-
-If you do not have permission to view a space, it is shown with the :lock: icon \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
-
-</td>
-</tr>
-</table>
-
 
 
 <a name="loio9da4892cb0e4427ab80ad8d89e6676b8__section_exploring"/>
 
 ## Control the Diagram Layout
 
-Use the diagram tools to control the layout of the diagram:
+Use the diagram tools to control the layout of the diagram. 
 
 
 <table>
@@ -218,6 +156,68 @@ Scroll, zoom, or recenter the diagram:
 </tr>
 </table>
 
+The diagram can contain various types of symbols. 
+
+
+<table>
+<tr>
+<th valign="top">
+
+Symbol
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+![](images/Impact_and_Lineage_Analysis_-_Analyzed_Object_81ad0b4.png)
+
+</td>
+<td valign="top">
+
+The object being analyzed.
+
+You can show or hide the objects on either side of this or any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) buttons on the symbol.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+![](images/Impact_and_Lineage_Analysis_-_Dependent_Object_44ffb7e.png)
+
+</td>
+<td valign="top">
+
+Objects appearing in the lineage or impacts of the analyzed object.
+
+If you do not have permission to view an object, it is shown with the :lock: icon and the name *Unauthorized* \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+![](images/Impact_and_Lineage_Analysis_-_Space_3_43b4eb1.png)
+
+</td>
+<td valign="top">
+
+Spaces that contain objects appearing in the lineage or impacts of the analyzed objects. The number in brackets indicates the total number of objects in the space that are part of the impact or lineage of the analyzed object.
+
+You can expand or collapse a space, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
+
+If you do not have permission to view a space, it is shown with the :lock: icon \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
+
+</td>
+</tr>
+</table>
+
 
 
 <a name="loio9da4892cb0e4427ab80ad8d89e6676b8__section_properties"/>
@@ -278,7 +278,7 @@ Deployment Status \(see [Saving and Deploying Objects](saving-and-deploying-obje
 </tr>
 </table>
 
-Select an object to display its context menu, which contains the following tools:
+Select an object to display its context menu, which contains tools for furthering the analysis. 
 
 
 <table>
