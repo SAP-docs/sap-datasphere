@@ -46,7 +46,7 @@ Define the source for your replication flow \(connection, container, and objects
 
     To narrow down the selection, start typing a part of the folder name in the *Search* field.
 
-    -   If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to *Initial* because *Initial and Delta* is not supported for SAP Datasphere as the source.
+    -   If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to *Initial Only* because *Initial and Delta* is currently not supported for SAP Datasphere as the source. \(This applies irrespective of whether the local table itself is enabled for delta capturing or not.\)
 
     -   If CDS view entities have been made available using the SQL service exposure in SAP BTP, ABAP environment, you find these entities in a folder called SQL\_SERVICE.
 
@@ -56,7 +56,7 @@ Define the source for your replication flow \(connection, container, and objects
     > ### Note:  
     > -   The list only shows objects for which replication is supported. For example, if you select SAP S/4HANA Cloud as the source and the folder SQL\_SERVICE as the container, you will only be shown CDS view entities that have the required annotations for data extraction.
     > 
-    > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed, are **not** enabled for delta capturing, and have a primary key.
+    > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed and have a primary key.
 
 4.  If you decide that you do not want to include an object after all, select it and choose *Remove from Selection*. If you want to include more objects, go back to the *Available* tab and select the relevant objects. When you are done, choose *Add Selection*. The system then imports the object definitions so that they are available for the subsequent process steps.
 

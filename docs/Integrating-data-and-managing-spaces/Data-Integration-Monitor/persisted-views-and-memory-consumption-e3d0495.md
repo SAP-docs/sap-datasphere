@@ -24,6 +24,7 @@ You might need to think about the following steps before persisting the view:
 
     You can check the SQL statement that is used to retrieve the data for a remote source in *Remote Queries*. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md). If the needed filter condition is not part of the SELECT statement, then the filter is applied on all the data. This leads to a higher memory consumption and a performance decrease. It might be a solution to replicate the data for some remote tables where the data does not change regularly, for example master data tables. You can also try to persist views that just do basic joins/unions on some remote tables, and are used in more than one view. If these remote tables and views are persisted, then the data retrieval for other scenarios is highly improved in terms of memory consumption and performance, because the top views can use tables in the same SAP HANA instance.
 
+-   You can change the run mode of your data persistence and choose between performance and memory consumptions. For more information, see [Data Persistence and Run Mode](data-persistence-and-run-mode-d04f5dd.md).
 
 
 

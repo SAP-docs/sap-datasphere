@@ -56,7 +56,7 @@ Once the objects are created, you will be able to convert currency values into a
 
     -   If you've chosen *Manual*, local tables and views have been created and you now need to enter currency conversion data manually or for example import the data from a CSV file in a local table.
 
-    -   If you've chosen a connection as a source, local tables, views, data flows and - for an SAP ABAP connection - remote tables have been created. You now need to run the data flows to fill the tables with data. See [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md).
+    -   If you've chosen a connection as a source, local tables, views, data flows and - for an SAP ABAP connection - remote tables have been created. You now need to run the data flows to fill the tables with data. See [Running a Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/running-a-flow-5b591d4.md).
 
     -   If you've chosen a space as a source, views have been created and data is read from the tables.
 
@@ -70,7 +70,7 @@ Next steps: Now that the necessary objects are created, you can convert currency
 
 ## Share Currency Conversion Tables to Other Spaces
 
-Once you’ve created the currency conversion objects in your space, you can share the TCUR\* tables to other spaces. The spaces to which you share these tables will then have your space as an alternative source.
+Once you’ve created the currency conversion objects in your space, you can share the TCUR\* tables to other spaces. The spaces to which you share these tables can then use them as a source to generate their own TCUR\* views with the dialog.
 
 > ### Note:  
 > As a general rule, you can share objects \(including TCUR\* tables\) to another space by following another procedure. For more information, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)
@@ -84,5 +84,6 @@ Once you’ve created the currency conversion objects in your space, you can sha
 
 3.  In the dialog box that opens, enter or select the spaces to which you want to share the TCUR\* currency conversion tables and click *Share*.
 
-Next steps: Now that the TCUR\* tables are shared to other spaces, these spaces will see your space as an alternative source in the *Source* field.
+> ### Note:  
+> If the TCUR\* tables have been shared to your space, you must still use the *Currency Conversion Views* dialog to create local TCUR\* views, before you can do currency conversion.
 

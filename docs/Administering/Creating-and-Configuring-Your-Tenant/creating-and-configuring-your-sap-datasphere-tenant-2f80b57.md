@@ -65,7 +65,7 @@ Free Plan
 </td>
 <td valign="top">
 
--   Tenants are initially created with minimal configuration that includes 256 GB of storage and 2 compute blocks.
+-   Tenants are initially created with minimal configuration that includes 128 GB of storage and 32 GB of memory \(2 compute blocks\).
 -   Once logged to your tenant, upscaling can be done at any time. See [Configure the Size of Your SAP Datasphere Tenant](configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md).
 
     > ### Note:  
@@ -77,7 +77,7 @@ To view all supported size combinations, go to the [SAP Datasphere Capacity Unit
 </td>
 <td valign="top">
 
--   The minimal and only possible configuration provided for SAP Datasphere resources is: 128 GB of storage and 1 compute block.
+-   Tenants are created with 128 GB of storage and 32 GB of memory \(2 compute blocks\).
 -   You cannot upscale free plan tenants. You need to update your plan from free to standard if any sizing configuration is required.
 
 
@@ -169,7 +169,6 @@ The maxium configuration size of your tenant depends on regional availability an
 > ### Note:  
 > -   Data integration includes 200h/month from the minimum free package.
 > -   Catalog includes 0.5 GB/h from the minimum free package.
-> -   Catalog storage/crawling includes 100h/month from the minimum free package.
 
 **Amazon Web Services \(AWS\)**
 
@@ -183,7 +182,7 @@ Hyperscaler Regional Availability
 </th>
 <th valign="top">
 
-Compute
+Memory
 
 </th>
 <th valign="top">
@@ -213,7 +212,12 @@ Catalog
 </th>
 <th valign="top">
 
-Catalog Storage / Crawling
+Catalog Storage
+
+</th>
+<th valign="top">
+
+vCPU
 
 </th>
 </tr>
@@ -225,12 +229,12 @@ Australia
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -258,6 +262,11 @@ Australia
 2100 h/month
 
 </td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -267,12 +276,12 @@ Brazil \(São Paulo\)
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -298,6 +307,11 @@ Not Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -309,12 +323,12 @@ Canada \(Montreal\)
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -340,6 +354,11 @@ Not Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -356,7 +375,7 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-15872 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -382,6 +401,11 @@ Europe \(Frankfurt\)
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -398,7 +422,7 @@ EU Access \(Frankfurt\)
 </td>
 <td valign="top">
 
-15872 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -424,6 +448,11 @@ EU Access \(Frankfurt\)
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -435,12 +464,12 @@ Japan \(Tokyo\)
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -466,6 +495,11 @@ Japan \(Tokyo\)
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -477,12 +511,12 @@ Singapore
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -510,6 +544,11 @@ Singapore
 2100 h/month
 
 </td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -519,12 +558,12 @@ South Korea
 </td>
 <td valign="top">
 
-1800 GB
+5970 GB
 
 </td>
 <td valign="top">
 
-7168 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -552,6 +591,11 @@ Not Supported
 2100 h/month
 
 </td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -566,7 +610,7 @@ US East
 </td>
 <td valign="top">
 
-15872 GB
+16000 GB
 
 </td>
 <td valign="top">
@@ -592,6 +636,11 @@ US East
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+440 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -609,7 +658,7 @@ Hyperscaler Regional Availability
 </th>
 <th valign="top">
 
-Compute
+Memory
 
 </th>
 <th valign="top">
@@ -639,7 +688,12 @@ Catalog
 </th>
 <th valign="top">
 
-Catalog Storage / Crawling
+Catalog Storage
+
+</th>
+<th valign="top">
+
+vCPU
 
 </th>
 </tr>
@@ -656,7 +710,7 @@ Europe \(Amsterdam\)
 </td>
 <td valign="top">
 
-13824 GB
+27840 GB
 
 </td>
 <td valign="top">
@@ -682,6 +736,11 @@ Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -698,7 +757,7 @@ Europe \(Switzerland\)
 </td>
 <td valign="top">
 
-13824 GB
+27840 GB
 
 </td>
 <td valign="top">
@@ -724,6 +783,11 @@ Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -740,7 +804,7 @@ US West
 </td>
 <td valign="top">
 
-13824 GB
+27840 GB
 
 </td>
 <td valign="top">
@@ -766,6 +830,11 @@ Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
 
 </td>
 </tr>
@@ -783,7 +852,7 @@ Hyperscaler Regional Availability
 </th>
 <th valign="top">
 
-Compute
+Memory
 
 </th>
 <th valign="top">
@@ -813,7 +882,12 @@ Catalog
 </th>
 <th valign="top">
 
-Catalog Storage / Crawling
+Catalog Storage
+
+</th>
+<th valign="top">
+
+vCPU
 
 </th>
 </tr>
@@ -825,12 +899,12 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-1344 GB
+5750 GB
 
 </td>
 <td valign="top">
 
-3328 GB
+28928 GB
 
 </td>
 <td valign="top">
@@ -856,6 +930,11 @@ Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
 
 </td>
 </tr>
@@ -867,12 +946,12 @@ India \(Mumbai\)
 </td>
 <td valign="top">
 
-1344 GB
+5750 GB
 
 </td>
 <td valign="top">
 
-3328 GB
+28928 GB
 
 </td>
 <td valign="top">
@@ -898,6 +977,11 @@ Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
 
 </td>
 </tr>
@@ -914,7 +998,7 @@ US Central
 </td>
 <td valign="top">
 
-14336 GB
+28928 GB
 
 </td>
 <td valign="top">
@@ -940,6 +1024,11 @@ Supported
 <td valign="top">
 
 2100 h/month
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
 
 </td>
 </tr>

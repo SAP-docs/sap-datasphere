@@ -151,7 +151,7 @@ Add a source to read data from. You can add multiple sources and combine them to
         -   To add new/removed columns from the source based on latest metadata, click <span class="SAP-icons-V5"></span> \(Refresh to fetch column changes from source\)
 
 
-6.  \[optional\] For CDI, OData, and ABAP CDS sources complete the *Source Filters* section to define filter conditions for the consumption of their data:
+6.  \[optional\] For CDI, OData, Open Connectors and ABAP CDS sources complete the *Source Filters* section to define filter conditions for the consumption of their data:
 
     When defining filter conditions for columns,the following rules are applied:
 

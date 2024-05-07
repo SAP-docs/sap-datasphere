@@ -242,10 +242,10 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
 
     -   *Unprocessed* \(Grey\) - Unprocessed records were not present the last time that the rule was run. 
 
-        You can re-run your intelligent lookup to process these records.
+        You can re-run your intelligent lookup to process these records. 
 
         > ### Note:  
-        > Only records that have new pairing column values are included here. New records that have the same pairing column value as an existing pairing group are automatically placed in the appropriate results category for that pairing group.
+        > Only records that have new pairing column values are included here. New records that have the same pairing column value as an existing pairing group are automatically placed in the appropriate results category for that pairing group. 
 
 
 9.  If necessary, modify your rule or add further rules to refine your output.

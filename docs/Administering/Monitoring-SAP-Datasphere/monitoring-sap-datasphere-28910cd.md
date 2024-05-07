@@ -946,6 +946,9 @@ You can control the tables in *Tasks* and *Statements* in the following ways:
         > -   The filtering options available depend on the data type of the column you filter on.
         > -   Filters applied to text columns are case-sensitive.
         > -   You can enter filter or sort values in multiple columns.
+        > -   Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+        > 
+        > -   To increase performance, only the first 1,000 rows are displayed. Use filters to find the data you are looking for. Filters are applied to all rows, but only the first filtered 1,000 rows are displayed.
 
         > ### Note:  
         > If you filter on one of the following columns and you enter a number, use the “.” \(period\) character as the decimal separator, regardless of the decimal separator used in the number formatting that you’ve chosen in the general user settings \(*Settings* \> *Language & Region*\): *SAP HANA Peak Memory*, *SAP HANA CPU Time*, *SAP HANA Used Memory* and *SAP HANA Used Disk*.

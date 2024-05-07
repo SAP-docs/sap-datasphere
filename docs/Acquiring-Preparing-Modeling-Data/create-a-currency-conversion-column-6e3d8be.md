@@ -171,9 +171,9 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Enter a three character string that is used to separate tenants within ERP system tables. This is used in the conversion tables to select the correct rows for each user.
+    Enter a three character string that is used to separate tenants within ERP system tables.
 
-    This parameter is mandatory, as the CLIENT session context variable is not used by this command.
+    This parameter should normally be set to `000`.
     
     </td>
     </tr>
@@ -343,7 +343,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </table>
     
     > ### Note:  
-    > You can also create a Currency Conversion Column using the `CONVERT_CURRENCY` function in a Calculated Column's *Expression* field. For full documentation of this function, see [CONVERT\_FUNCTION](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
+    > You can, alternatively, use the `CONVERT_CURRENCY` function in a standard calculated column \(see [CONVERT\_CURRENCY](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA* documentation\).
 
 6.  Click *Validate* once all properties are set to check if they are correct, and fix any error signaled. When you are satisfied, open or refresh the *Data Preview* panel to review the results of your currency conversion in your new column.
 

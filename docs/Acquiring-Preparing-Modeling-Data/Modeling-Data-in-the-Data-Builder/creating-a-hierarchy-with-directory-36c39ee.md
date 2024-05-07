@@ -6,7 +6,10 @@ Select a *Semantic Usage* of *Hierarchy with Directory* to indicate that your en
 
 These types of hierarchy entities can include nodes from multiple dimensions \(for example, country, cost center group, and cost center\) and are commonly imported from SAP S/4HANA Cloud and SAP BW \(including SAP BW Bridge\) systems.
 
-See also the [Hierarchy with Directory Samples](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/blob/main/Hierarchy_with_Directory_Sample/README.md) Community Content page for SAP S/4HANA samples, and the blog series beginning with [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere/) for more information and walkthroughs.
+For more information and walkthroughs, see also:
+
+-   SAP S/4HANA [Hierarchy with Directory Samples](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/blob/main/Hierarchy_with_Directory_Sample/README.md) on the Community Content Github.
+-   The blog series beginning with [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere/) on the SAP Community site.
 
 This topic contains the following sections:
 

@@ -89,7 +89,7 @@ Tabs
 </td>
 <td valign="top">
 
-Select a tab to view more information about the asset, such as an overview of the asset's properties and descriptions, a preview of the asset's details, and a diagram of the asset's lineage and it's impact on other objects.
+Select a tab to view more information about the asset, such as an overview of the asset's properties and descriptions, a preview of the asset's details, and a diagram of the asset's lineage and its impact on other objects.
 
 </td>
 </tr>
@@ -196,7 +196,9 @@ If the asset data was enriched, the date of the change appears as a catalog prop
 -   *Enriched On*: The date and time on which the data enrichment was added to the asset. The name of the user who enriched the asset is also shown.
 
 
+**Additional Source Properties**
 
+Other source properties that can help you better understand and evaluate an asset appear under this section for additional source properties. For information about these properties, see the documentation for the source system.
 
 </td>
 </tr>
@@ -288,7 +290,7 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 Use the *Details* tab to see a preview of the detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each object. This tab appears only if the asset has detailed metadata that can be shown.
 
 > ### Note:  
-> If you are viewing an SAP Analytics Cloud asset, this tab is available only for the following model types: planning and analytical models. For a full list of the supported object types, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog automatically detects changes to the data and analytic objects in the source system, extracts metadata for those objects, and updates the corresponding assets in the catalog.") :arrow_upper_right:.
+> If you are viewing an SAP Analytics Cloud asset, this tab is available only for the following model types: planning and analytical models. For a list of the supported object types for each source system, see [Connecting to Data Sources](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/287ad2d8640449d5a62c6bb5b4a37d4d.html "On the Remote Systems page, you can create connections to a variety of data sources and then manage the data sources and extract metadata to populate the catalog.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
@@ -368,6 +370,8 @@ For information on the metadata that appears in this tab, see the help documenta
 
 -   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 
+-   For SAP Datasphere, SAP BW bridge, see [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
+
 
 <a name="concept_qxv_gcy_tyb"/>
 
@@ -380,11 +384,9 @@ Use the *Lineage* tab to view the **Impact and Lineage Analysis** diagram. This 
 -   *Lineage* is displayed to the left of the object \(or below it\). It shows objects that the analyzed asset uses as sources. It allows you to trace errors back to the root cause.
 -   *Impact* is displayed to the right of the object \(or above it\). It shows objects that use the analyzed asset as a source. It allows you to understand the impact of changes on dependent objects.
 
-In this example, a user views the diagram to analyze the **Sales** story asset. The **Sales** story asset is in the **Public** folder in SAP Analytics Cloud and has two sources that are objects in an SAP Datasphere space.
-
 ![](images/Impact_and_Lineage_Catalog_View_4c0c62d.png)
 
-The diagram provides the data analysis of the asset and contains the following features.
+This diagram provides the data analysis of the asset and contains the following features.
 
 
 <table>
@@ -420,7 +422,7 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click <s
 </td>
 <td valign="top">
 
-The source system is the outermost object and has an icon that represents the type of system \(for example, SAP Datasphere or SAP Analytics Cloud tenant\). The number in brackets indicates the total number of objects in the source system that are part of the impact or lineage of the analyzed object.
+The source system is the outermost object and has an icon that represents the type of system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud tenant\). The number in brackets indicates the total number of objects in the source system that are part of the impact or lineage of the analyzed object.
 
 You can expand or collapse a source system, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
 
@@ -434,7 +436,7 @@ You can expand or collapse a source system, using the <span class="FPA-icons-V3"
 </td>
 <td valign="top">
 
-The container is directly inside the source system and has an icon that represents its type \(for example, SAP Datasphere space or SAP Analytics Cloud folder\). It contains assets that appear in the lineage of or that impact the analyzed object. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
+The container is directly inside the source system and has an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains assets that appear in the lineage of or that impact the analyzed object. The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
 
@@ -454,11 +456,11 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
--   Authorized objects are published and can be discovered in the catalog. You can view the information page for the asset by clicking <span class="FPA-icons-V3"></span> \(Open Asset Details\) icon.
+-   Authorized objects are published and can be discovered in the catalog. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). You can view the details page for the asset by clicking <span class="FPA-icons-V3"></span> \(Open Asset Details\) icon.
 
--   Unauthorized objects are unpublished and are not available in the catalog. They are shown with the :lock:.
+-   Unauthorized objects are unpublished and are not available in the catalog. They are represented with the :lock: icon.
 
--   The analyzed object appears as a light blue object.
+-   The analyzed object appears as a light blue object. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(Story\)\).
 
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
@@ -481,11 +483,13 @@ For information on how to control the diagram layout and use tools to further an
 
 ## Context
 
-After you find the asset you want, you can open the asset in the source system to view or edit it. When the source file for an asset has been shared with you, the *Open* button appears in the top-right corner. For information about sharing files with other users within a source system, see the documentation for the specific source system:
+After you find the asset you want and have evaluated it, you might be able to open the asset in the source system to view or edit it. If the asset has been shared with you in the source system, the *Open* button appears in the top-right corner. For information about sharing files with other users within a source system, see the documentation for the specific source system:
 
 -   For SAP Datasphere, see [Acquiring, Preparing, and Modeling Data with SAP Datasphere](../acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md).
 
 -   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
+
+-   For SAP Datasphere, SAP BW bridge, see [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
 
 
 > ### Tip:  
@@ -503,7 +507,10 @@ After you find the asset you want, you can open the asset in the source system t
 
 3.  When viewing the page for the asset, in the top-right corner, click the *Open* button to open the source file in the source system in a new browser tab.
 
-    The *Open* button appears only if the asset has been shared with you in the source system and you have permission to view or edit it.
+    > ### Note:  
+    > For certain source systems, the *Open* button appears if the asset has been shared with you and you have permission to view or edit it. For example, if the asset is from SAP Datasphere or SAP Analytics Cloud, the *Open* button appears only if the asset has been shared with you in the source system and you have permission to view or edit it.
+    > 
+    > However, for some source systems, the *Open* button is not available regardless if the asset has been shared with you in the source system. For example, if the asset is from an SAP Datasphere, SAP BW bridge, the *Open* button does not appear. To view or edit the asset, you must open it directly in the source system.
 
     ![](images/Asset_Details_-_Open_Button_24913a7.png)
 
@@ -516,7 +523,9 @@ After you find the asset you want, you can open the asset in the source system t
 
 ## Results
 
-If you edited a file, the catalog automatically detects the change. The metadata for the asset is automatically updated in real time, and the functional status label *Current* is applied.
+If you edited a file that is saved in SAP Datasphere or SAP Analytics Cloud, the catalog automatically detects the change. The metadata for the asset is automatically updated in real time, and the functional status label *Current* is applied.
+
+If you edited a file that is saved in SAP Datasphere, SAP BW bridge, an user with the appropriate permission can run a manual synchronization to ensure the catalog assets are up-to-date.
 
 <a name="task_zpg_fny_3wb"/>
 
@@ -535,6 +544,8 @@ After you evaluate and determine that the asset is the right one for your needs,
 -   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md) or [Modeling Data in the Data Builder](../Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
 -   As a content creator in SAP Analytics Cloud, you can use the asset in data object \(for example, a story or digital boardroom\). For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
+
+-   As a data modeler in SAP Datasphere, SAP BW bridge, you can merge data into models and make them available for reporting and analysis purposes. For more information, see the help for [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
 
 
 > ### Tip:  

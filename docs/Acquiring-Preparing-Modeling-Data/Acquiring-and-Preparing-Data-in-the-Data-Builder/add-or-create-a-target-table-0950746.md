@@ -73,6 +73,11 @@ A transformation flow writes data to a target table. You can create a new target
     If the value of the *Truncate* option is *Yes*, when you start the transformation flow, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source table.
 
     If not, the system inserts new data records after the existing data in the target table. For data records that already exist in the target table and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode. Note that the system will only update such target records if the target table has a primary key column.
+
+    > ### Note:  
+    > If the target table is a delta capture table, it is not possible to use the truncate function. If the source table is not a delta capture table, and you want to transfer updated data to a target delta capture table, you need to delete the data in the target table, and then run the transformation flow again.
+
+
     
     </td>
     </tr>
@@ -85,6 +90,15 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     Indicates whether the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+
+    If the source table is a delta capture table, then the default value of the *Delta Capture* property for the target table is *On*. If you switch delta capture off for the target table, the system removes the delta capture columns *Change Date* and *Change Type* from the target table. If you switch delta capture on again, the system will add the delta capture columns to the target table. Note that even If the source table does not contain both delta capture columns, the system will add both columns to the target table.
+
+    If the source table is not a delta capture table, then the default value of the *Delta Capture* property for the target table is *Off*. If you switch delta capture on for the target table, the system adds the delta capture columns *Change Date* and *Change Type* to the target table
+
+    > ### Note:  
+    > If the source table is not a delta capture table and the target table is a delta capture table, then the value of the column *Change Type* for the target table will always be "I", as the only supported load type is *Initial Only*.
+
+
     
     </td>
     </tr>

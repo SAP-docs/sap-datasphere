@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__S4_OP_usage)
 -   [Configuring Connection Properties](sap-s-4hana-on-premise-connections-a49a1e3.md#loioa49a1e3cc50f4af89711d8306bdd8f26__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites in the connected systems and SAP Datasphere, and about supported source system versions, see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -105,10 +105,27 @@ Data Flows
 
 You can use the connection to add source objects to a data flow.
 
+You can replicate the following data:
+
+-   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
+
+    For more information, see [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation.
+
+-   Tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server.
+
+
 > ### Note:  
+> -   The availability of the data flow feature depends on the used version and Support Package level of SAP S/4HANA or the DMIS addon in the source. Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> 
+>     For more information about required versions, recommended system landscape, considerations for the supported source objects, and more, see SAP Note [2890171](https://me.sap.com/notes/2890171).
+> 
 > -   Data flows currently support one-time loading of data \(also known as initial load\) only.
 > 
-> -   The data preview in the data flow editor of the Data Builder is **not** available for ABAP sources.
+> -   The data preview in the data flow editor of the *Data Builder* is **not** available, except for:
+> 
+>     -   CDS views if the version of the connected system is SAP S/4HANA 1909 or higher.
+> 
+>     -   SAP Landscape Transformation Replication Server objects if ABAP Add-on DMIS 2018 SP08 or DMIS 2020 SP04 is installed or a higher DMIS version.
 
 
 
@@ -124,13 +141,20 @@ Replication Flows
 
 You can use the connection to add source objects to a replication flow.
 
-You can access the following data:
+You can replicate the following data:
 
--   ABAP CDS Views
+-   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
+
+    For more information, see [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation.
 
 -   Tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server.
 
 -   Data from ODP sources \(extraction contexts *SAPI* and *BW*\)
+
+> ### Note:  
+> The availability of the replication flow feature depends on the used version and Support Package level of SAP S/4HANA or the DMIS addon in the source. Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> 
+> For more information about required versions, recommended system landscape, considerations for the supported source objects, and more, see SAP Note [2890171](https://me.sap.com/notes/2890171).
 
 
 
@@ -600,6 +624,8 @@ Available properties:
 -   \[if *SNC Mode* = *On*\] *SNC SSO*
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
+
+-   *RFC Serialization*
 
 -   \[if *Streaming Read* = *On*\] *Batch Size, MB*
 

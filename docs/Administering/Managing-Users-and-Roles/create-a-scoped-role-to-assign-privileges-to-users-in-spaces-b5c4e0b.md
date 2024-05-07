@@ -208,7 +208,7 @@ You can then assign spaces and users to the new scoped role. The spaces and user
 To add spaces to a scoped role, the spaces must be created beforehand.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
-2.  Click *Add Scopes*, select one or more spaces in the dialog *Add Scopes* and click *Save*.
+2.  Click *\[number\] Scopes*, select one or more spaces in the dialog *Scopes* and click *Save*.
 
     > ### Note:  
     > By default, all users of the scoped role are automatically assigned to the spaces you've just added. You can change this and assign only certain members to certain spaces in the *Users* page of the scoped role.
@@ -223,7 +223,7 @@ To add spaces to a scoped role, the spaces must be created beforehand.
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
 2.  Click *\[number\] Scopes*.
 
-3.  In the *Selected Scopes* area of the dialog *Add Scopes*, click the cross icon for each space that you want to remove from the role, then click *Save*.
+3.  In the *Selected Scopes* area of the dialog *Scopes*, click the cross icon for each space that you want to remove from the role, then click *Save*.
 
     All users that were assigned to the spaces you've just removed are automatically removed from the scoped role.
 

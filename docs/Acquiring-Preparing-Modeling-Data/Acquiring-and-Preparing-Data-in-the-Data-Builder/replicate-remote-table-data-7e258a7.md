@@ -50,6 +50,13 @@ By default, when you import a remote table, its data is not replicated and must 
 
             For more information, see [Replicate Data Changes in Real-Time](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/441d327ead5c49d580d8600301735c83.html "Use real-time replication to copy the data changes from your source object in real-time into SAP Datasphere.") :arrow_upper_right:.
 
+        -   *Disable Real-Time Data Replication*
+
+            Disable real-time data replication even if your source system is unreachable and switch the data access from *Replicated \(Real-time\)* to *Replicated \(snapshot\)*. It preserves the replica table and its replicated data to allow further actions on the remote table such as deleting or changing the properties of the connection. For more information, see [Disabling Real-Time Data Replication](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/82380e6f01c84fac898a285ac40a1e50.html "Disable real-time data replication even if your source system is unreachable, and switch the data access from Replicated (Real-time) to Replicated (Snapshot).") :arrow_upper_right:.
+
+            > ### Note:  
+            > The remote table must be connected via SAP HANA smart data integration, and must not be connected via SAP HANA smart data access.
+
 
     -   Click *Schedule Replication* to:
         -   *Create Schedule*

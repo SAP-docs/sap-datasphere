@@ -15,7 +15,7 @@ To import a certificate into the SAP Datasphere trust chain, obtain the certific
 You have downloaded the required SSL/TLS certificate from an appropriate website. As one option for downloading, common browsers provide functionality to export these certificates.
 
 > ### Note:  
-> -   Only X.509 Base64-encoded certificates enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----" are supported. The common filename extension for the certificates is .pem \(Privacy-enhanced Electronic Mail\). We also support filename extensions .crt and .cer.
+> -   Only X.509 Base64-encoded certificates enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----" are supported. The common filename extension for the certificates is .pem \(privacy-enhanced mail\). We also support filename extensions .crt and .cer.
 > 
 > -   A certificate used in one region might differ from those used in other regions. Also, some sources, such as Amazon Athena, might require more than one certificate.
 > 

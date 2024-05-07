@@ -12,7 +12,7 @@ This topic contains the following sections:
 -   [Control the Diagram Layout](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_exploring)
 -   [Display Object Properties and Analyze or Open Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_properties)
 -   [Dependency Analysis Mode](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_dependency_analysis)
--   -   [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)
+-   [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)
 
 
 
@@ -64,7 +64,7 @@ Data Analysis / Dependency Analysis
 Toggle between the two modes:
 
 -   *Data Analysis* - Focus exclusively on data movements and transformations.
--   *Dependency Analysis* - Additionally display objects connected through associations and data access controls \(see [Dependency Analysis Mode](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_dependency_analysis)\).
+-   *Dependency Analysis* - Additionally display objects connected through associations and data access controls \(see [https://help.sap.com/docs/SAP\_DATASPHERE/c8a54ee704e94e15926551293243fd1d/9da4892cb0e4427ab80ad8d89e6676b8.html?dependency-analysis-mode](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/9da4892cb0e4427ab80ad8d89e6676b8.html?dependency-analysis-mode)\).
 
 
 

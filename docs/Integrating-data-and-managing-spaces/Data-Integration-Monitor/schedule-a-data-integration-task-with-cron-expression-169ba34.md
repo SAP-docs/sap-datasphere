@@ -15,7 +15,7 @@ Schedule data integration tasks such as data replication, data persistence, or d
 -   SAP Datasphere. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
 
     > ### Note:  
-    > Your consent is valid for 12 months. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration Monitor*, a warning message appears 10 days before the expiry of consent.
+    > Your consent is valid for 365 days. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration Monitor*, a warning message appears 10 days before the expiry of consent.
 
     For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 

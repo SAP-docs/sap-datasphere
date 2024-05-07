@@ -77,6 +77,9 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </tr>
     </table>
     
+    > ### Note:  
+    > \[SAP S/4HANA Cloud\] If your connection supports using replication flows to load data, the *Data Access* field is displayed and defaults to *Replication Flow to Local Tables*. We recommend using this option to optimize load times but you can, if you prefer, revert to creating *Remote Tables*.
+
 3.  On the *Select Entities* page, select the entities that you want to import from the *Results* list, and click *Next Step*.
 
     Use the *Search* field to search by label. Depending on your connection type, you can filter by:
@@ -299,9 +302,13 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
 
     -   The imported entities are available for use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the <span class="FPA-icons-V3"></span> \(*Data Builder*\).
 
+        > ### Note:  
+        > If you have enabled metadata translation in the target space and the entities are available in the specified source language then they will be imported in this language \(see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:\). Otherwise, they will be imported in English, by default.
+
 
 6.  Navigate to the appropriate objects to review data access:
 
+    -   *Replication Flow to Local Tables* - \[SAP S/4HANA Cloud\] Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Running a Flow](running-a-flow-5b591d4.md)\).
     -   *Remote Tables* - By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Local Tables* - In cases where only local tables are imported, you must create your own flow to load data to them \(see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\).
 

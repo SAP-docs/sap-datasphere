@@ -474,6 +474,8 @@ Available properties:
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
 
+-   *RFC Serialization*
+
 -   \[if *Streaming Read* = *On*\] *Batch Size, MB*
 
 -   \[if *Streaming Read* = *On*\] *Batch Receive Timeout*

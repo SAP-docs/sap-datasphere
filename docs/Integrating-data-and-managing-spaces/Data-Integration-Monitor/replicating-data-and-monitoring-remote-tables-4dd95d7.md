@@ -432,6 +432,23 @@ For more information, see [Replicate Data Changes in Real-Time](replicate-data-c
 <tr>
 <td valign="top">
 
+*Disable Real-Time Data Replication*
+
+</td>
+<td valign="top">
+
+Disable real-time data replication even if your source system is unreachable and switch the data access from *Replicated \(Real-time\)* to *Replicated \(snapshot\)*. It preserves the replica table and its replicated data to allow further actions on the remote table such as deleting or changing the properties of the connection. For more information, see [Disabling Real-Time Data Replication](disabling-real-time-data-replication-82380e6.md).
+
+> ### Note:  
+> The remote table must be connected via SAP HANA smart data integration, and must not be connected via SAP HANA smart data access.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Create Schedule* 
 
 </td>

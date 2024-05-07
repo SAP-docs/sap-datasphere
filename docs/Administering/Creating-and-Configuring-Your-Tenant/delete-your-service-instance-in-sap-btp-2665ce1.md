@@ -18,3 +18,120 @@ To do so, you must have SAP BTP administration authorization on the subaccount t
     You can view the progress of the deletion.
 
 
+<a name="task_rzb_xhw_cbc"/>
+
+<!-- task\_rzb\_xhw\_cbc -->
+
+## Restore Accidental Deletion of Your Service Instance
+
+
+
+<a name="task_rzb_xhw_cbc__context_njz_b3w_cbc"/>
+
+## Context
+
+If you accidentally deleted your SAP Datasphere service instance in SAP BTP, you can restore it within 7 days.
+
+
+
+<a name="task_rzb_xhw_cbc__steps_j4s_pjw_cbc"/>
+
+## Procedure
+
+1.  Create a customer incident using the component `DS-PROV`, set the priority to *High*, and ask SAP support to restore impacted SAP Datasphere tenant. You must provide the SAP Datasphere tenant URL.
+
+    Once completed, SAP Support will inform you that that the impacted tenant has been restored and unlocked successfully.
+
+2.  Get the OAuth Client ID and OAuth Client Secret:
+
+    1.  Log on to the impacted SAP Datasphere tenant.
+
+    2.  From the side navigation, choose *System* \> *Administration*.
+
+    3.  Choose the *App Integration* tab.
+
+    4.  Select *Add a New OAuth Client*.
+
+    5.  From the *Purpose* list, select *API Access*.
+
+    6.  Choose at least one API option from the *Access* list.
+
+    7.  Set *Authorization Grant* to *Client Credentials*.
+
+    8.  Select *Save*.
+
+    9.  Copy and save the *OAuth Client ID* and *OAuth Client Secret* for Step 3.
+
+
+3.  Fetch your access token via http POST request to the OAuth Client Token URL.
+
+    1.  Provide the following information with your POST request:
+
+        ```
+        curl --location --request POST '<TokenURL>/oauth/token/oauth/token?grant_type=client_credentials' \
+        --header 'Content-Type: application/json' \
+        --header 'Authorization: Basic <OAuthClientID>:<OAuthClientSecret>' \
+        --data''
+        ```
+
+        Replace *<TokenURL\>* with your OAuth Client Token URL. Replace *<OAuthClientID\>* with your OAuth Client ID, and your *<OAuthClientSecret\>* with the OAuth Client Secret. The secret must be Base64 encoded.
+
+    2.  Save the access token returned by the POST request.
+
+
+4.  Get the UUID for your tenant.
+
+    1.  Log on to the impacted tenant.
+
+    2.  Go to *System* \> *About*.
+
+    3.  Copy the ID under *Tenant*.
+
+
+5.  Create a new BTP service instance and link it to the impacted tenant.
+
+    1.  Log on to the SAP BTP Cockpit.
+
+    2.  Navigate to the subaccount where the deleted SAP BTP service instance was assigned.
+
+    3.  Navigate to *Services* \> *Instances and Subscriptions*.
+
+    4.  Click *Create*.
+
+    5.  Select *Service*: SAP Datasphere.
+
+    6.  Select *Plan*: *Standard*.
+
+    7.  Select *Runtime Environment*: *Other*.
+
+    8.  Enter a name for the service instance.
+
+    9.  Click *Next*.
+
+    10. In the parameters dialog, switch from *Form* to *JSON*.
+
+    11. Maintain the following two parameters in JSON format:
+
+        ```
+        {
+            "tenantUuid": "<TenantUUID>",
+            "access_token": "<AccessToken>"
+        }
+        ```
+
+        Replace *<TenantUUID\>* with the ID you retrieved in Step 4c. Replace *<AccessToken\>* with the token you fetched in Step 3b.
+
+    12. Click *Next*.
+
+    13. In the review dialog click *Create*.
+
+
+
+
+
+<a name="task_rzb_xhw_cbc__result_scl_xrw_cbc"/>
+
+## Results
+
+A new service instance is created and linked to the SAP Datasphere tenant that was accidentally deleted. All tenant data is restored.
+

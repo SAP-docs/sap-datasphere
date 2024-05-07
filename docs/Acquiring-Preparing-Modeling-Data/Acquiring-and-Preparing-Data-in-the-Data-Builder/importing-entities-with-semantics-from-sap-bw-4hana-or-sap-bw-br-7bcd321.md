@@ -32,17 +32,19 @@ You can import entities from the following types of sources:
     If the SAP Datasphere, SAP BW bridge option is enabled:
 
     -   A SAP BW bridge space is created, containing an SAP BW bridge connection to your bridge tools.
-    -   You can use the *Import Entities* wizard to import your SAP BW bridge Queries, CompositeProviders, DataStore objects \(inbound table and/or active table depending on the type of the DataStore object\), and Master data tables:
+    -   You can use the *Import Entities* wizard to import your SAP BW bridge Queries, CompositeProviders, DataStore objects \(inbound table and/or active table depending on the type of the DataStore object\), and Master data tables \(including hierarchies in the case of SAP BW bridge\):
         -   Remote tables to load the data are created in the SAP BW bridge space and then automatically shared to the target space you specify in the wizard.
         -   Views and business entities that draw their data from and are built on these remote tables are created in your target space.
 
+
+    For SAP BW bridge, you can import hierarchies modeled in SAP BW bridge including its semantic information into SAP Datasphere and use it as display hierarchy in the analytic model. When importing an InfoObject \(ANALYTICAL\_DIMENSION\) which has a hierarchy, the hierarchy is imported as well. The following objects are created for the hierarchy with directory in the Data Builder: hierarchy store, hierarchy directory, hierarchy directory description, and hierarchy note text.
 
     For importing queries, there are certain restrictions:
 
     -   When an object is remodeled in SAP BW bridge, the query definition is broken.
     -   Input and exit variables are removed.
     -   Constant selection is not supported.
-    -   For dimensions, the following features are not supported: external hierarchies, compound characteristics, and time dependency.
+    -   For dimensions, the following features are not supported: compound characteristics, and time dependency.
 
     You can use the app *Query* to get an overview on the supported analytical queries. For more information, see [Overview of Apps](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/65fc810abf0549ee861b0d2c7b73ada2.html).
 
@@ -328,6 +330,9 @@ You can import entities from the following types of sources:
 
 
     -   The imported entities are available for use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the <span class="FPA-icons-V3"></span> \(*Data Builder*\).
+
+        > ### Note:  
+        > If you have enabled metadata translation in the target space and the entities are available in the specified source language then they will be imported in this language \(see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:\). Otherwise, they will be imported in English, by default.
 
 
 6.  \[optional\] By default, data is only federated to your remote tables. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).

@@ -177,6 +177,9 @@ Create a space, allocate storage, and set the space priority and statement limit
     </tr>
     </table>
     
+    > ### Note:  
+    > Once the space is created, users with space administrator privileges can use the *Translation* area to choose the language from which business textual information will be translated. For more information, see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:.
+
 4.  \[optional\] Use the *Space Storage* properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.
 
     For more information, see [Allocate Storage to a Space](allocate-storage-to-a-space-f414c3d.md).

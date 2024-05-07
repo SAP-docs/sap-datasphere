@@ -563,6 +563,11 @@ Upload the client key.
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
+> ### Note:  
+> The supported filename extensions for the key are .pem \(privacy-enhanced mail\) and .key.
+
+
+
 </td>
 </tr>
 <tr>
@@ -576,6 +581,11 @@ Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from
 Upload the client certificate. 
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
+
+> ### Note:  
+> The supported filename extensions for the certificate are .pem \(privacy-enhanced mail\) and .crt.
+
+
 
 </td>
 </tr>

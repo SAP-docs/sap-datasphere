@@ -8,6 +8,9 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 
 The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:
 
+> ### Note:  
+> Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants.
+
 
 <table>
 <tr>

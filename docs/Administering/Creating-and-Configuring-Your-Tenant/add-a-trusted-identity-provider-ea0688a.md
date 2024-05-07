@@ -13,7 +13,7 @@ If you use the OAuth 2.0 SAML Bearer Assertion workflow, you must add a trusted 
 The OAuth 2.0 SAML Bearer Assertion workflow allows third-party applications to access protected resources without prompting users to log into SAP Datasphere when there is an existing SAML assertion from the third-party application identity provider.
 
 > ### Note:  
-> Both SAP Datasphere and the third-party application must be configured with the same identity provider. The identity provider must have a user attibute `Groups` set to the static value `sac`.
+> Both SAP Datasphere and the third-party application must be configured with the same identity provider. The identity provider must have a user attibute `Groups` set to the static value `sac`. See also the blog [Integrating with SAP Datasphere Consumption APIs using SAML Bearer Assertion](https://community.sap.com/t5/technology-blogs-by-sap/integrating-with-sap-datasphere-consumption-apis-using-saml-bearer/ba-p/13647905) \(published March 2024\).
 
 
 

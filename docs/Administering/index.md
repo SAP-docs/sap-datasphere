@@ -14,6 +14,7 @@
     -   [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)
         -   [Add a Trusted Identity Provider](Creating-and-Configuring-Your-Tenant/add-a-trusted-identity-provider-ea0688a.md)
     -   [Delete Your Service Instance in SAP BTP](Creating-and-Configuring-Your-Tenant/delete-your-service-instance-in-sap-btp-2665ce1.md)
+    -   [Display Your System Information](Creating-and-Configuring-Your-Tenant/display-your-system-information-6bdd798.md)
 -   [Managing Users and Roles](Managing-Users-and-Roles/managing-users-and-roles-903b75e.md)
     -   [Configuring Identity Provider Settings](Managing-Users-and-Roles/configuring-identity-provider-settings-48b5c8b.md)
         -   [Enable IdP-Initiated Single Sign On \(SAP Data Center Only\)](Managing-Users-and-Roles/enable-idp-initiated-single-sign-on-sap-data-center-only-4d2536a.md)

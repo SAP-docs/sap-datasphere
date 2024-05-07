@@ -16,6 +16,9 @@ Each tenant can store up to 300 MB of exported content for free in the *My Conte
 
 The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:
 
+> ### Note:  
+> Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants.
+
 
 <table>
 <tr>

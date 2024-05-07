@@ -100,6 +100,7 @@ When you're done, click *OK* to update the viewer or *Cancel* to erase your chan
 > 
 > -   If your data object is or relies on a remote table, viewing data may take a long time to load or cannot succeed. The data viewer also has a timeout limit of three minutes and will display an error on the *Errors* tab if it is unable to return data in that time. The restrictions inherent to remote tables are passed along to the output view. Replicate the remote table data to avoid long loading times and view instantly. For more information, see [Replicate Remote Table Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/replicate-remote-table-data-7e258a7.md).
 > -   Your data object data type is a *HANA Numeric* data type and cannot be viewed. In such cases, change the data type of your object to the corresponding one supported by SAP Datasphere. For more information, see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
+> -   To increase performance, only the first 1,000 rows are displayed. Use filters to find the data you are looking for. Filters are applied to all rows, but only the first filtered 1,000 rows are displayed.
 
 
 

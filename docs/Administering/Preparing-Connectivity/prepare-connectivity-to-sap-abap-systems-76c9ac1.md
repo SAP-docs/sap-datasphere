@@ -36,13 +36,13 @@ Before you can use the connection for creating views and accessing data via remo
 ## Data Flows
 
 > ### Note:  
-> The availability of the data flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the minimum versions mentioned below.We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> The availability of the replication flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
 > 
-> For more information about integrating ABAP-based SAP systems and about required and recommended versions in the source systems, see SAP Note [2890171](https://me.sap.com/notes/2890171).
+> For more information about required versions, recommended system landscape, considerations for the supported source objects, and more , see SAP Note [2890171](https://me.sap.com/notes/2890171).
 
 Before you can use the connection for data flows, the following is required:
 
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+-   If the connected system is an on-premise source, an adminstrator has installed and configured Cloud Connector.
 
     In the Cloud Connector configuration, an administrator has made sure that access to the required resources is granted.
 
@@ -50,33 +50,9 @@ Before you can use the connection for data flows, the following is required:
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
--   When connecting to SAP S/4HANA Cloud to access CDS views, an administrator has created a communication arrangement for the communication scenario `SAP_COM_0532` \(*SAP Data Hub – ABAP CDS Pipeline Integration*\) in the SAP S/4HANA Cloud system.
+-   If you want to connect to SAP S/4HANA Cloud to replicate extraction-enabled, C1-released CDS views: Consider the information about preparing an SAP S/4HANA Cloud connection for data flows.
 
-    For more information, see [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud *documentation.
-
--   When connecting to SAP S/4HANA to access CDS views, source version 1909 FPS01 plus SAP Note [2873666](https://me.sap.com/notes/2873666) or higher versions are supported.
-
--   When connecting to ABAP-based systems using SAP LT Replication Server as the source to access tables:
-
-    Connectivity to SAP LT Replication Server is supported for:
-
-    -   Systems with Addon DMIS 2011 Support Package 19 or higher \(supporting SAP ECC 6.00 or higher\)
-
-    -   Systems with Addon DMIS 2018 Support Package 4 or higher \(supporting SAP S/4HANA 1709 or higher\)
-
-    -   SAP S/4HANA 2020 or higher
-
-
-    Source systems connected to an SAP LT Replication Server are supported down to:
-
-    -   version 4.6C via Addon DMIS 2010
-
-    -   version 6.20 via Addon DMIS 2011
-
-
-    In the ABAP-based system in which SAP LT Replication Server is installed, an administrator has created a configuration to specify the source system, the SAP LT Replication Server system and SAP Datasphere as target system.
-
-    For more information, see [Creating a Configuration](https://help.sap.com/viewer/007c373fcacb4003b990c6fac29a26e4/latest/en-US/5a3be474248e4d758ba09a3d292ff1dc.html) in the *SAP Landscape Transformation Replication Server* documentation.
+    For more information, see [Prepare Connectivity to SAP S/4HANA Cloud](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md).
 
 
 
@@ -86,40 +62,22 @@ Before you can use the connection for data flows, the following is required:
 ## Replication Flows
 
 > ### Note:  
-> The availability of the replication flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the minimum versions mentioned below.We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> The availability of the replication flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
 > 
-> For more information about integrating ABAP-based SAP systems and about required and recommended versions in the source systems, see SAP Note [2890171](https://me.sap.com/notes/2890171).
+> For more information about required versions, recommended system landscape, considerations for the supported source objects, and more , see SAP Note [2890171](https://me.sap.com/notes/2890171).
 
 Before you can use the connection for replication flows, the following is required:
 
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+-   If the connected system is an on-premise source, an adminstrator has installed and configured Cloud Connector.
+
+    In the Cloud Connector configuration, an administrator has made sure that access to the required resources is granted.
 
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
 
--   For table-based replication via SAP LT Replication Server, replication is supported for systems using:
+    See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
-    -   DMIS 2018 addon Support Package 6 or higher
+-   If you want to connect to SAP S/4HANA Cloud to replicate extraction-enabled, C1-released CDS views or you want to replicate CDS view entities using the SQL service exposure: Consider the information about preparing an SAP S/4HANA Cloud connection for replication flows.
 
-    -   DMIS 2020 addon Support Package 3 or higher
-
-
-    Source systems connected to an SAP LT Replication Server are supported down to:
-
-    -   version 4.6C via Addon DMIS 2010
-
-    -   version 6.20 via Addon DMIS 2011
-
-
-    > ### Note:  
-    > Consider the version dependency when using a dedicated SAP LT Replication Server. For more information, see the *Installation Guide* in the [SAP Landscape Transformation Replication Server](https://help.sap.com/docs/SAP_LANDSCAPE_TRANSFORMATION_REPLICATION_SERVER) documentation.
-
--   ODP-based replication is supported for systems using:
-
-    -   DMIS 2011 addon Support Package 23 or higher
-
-    -   DMIS 2018 addon Support Package 8 or higher
-
-    -   DMIS 2020 addon Support Package 4 or higher
-
+    For more information, see [Prepare Connectivity to SAP S/4HANA Cloud](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md).
 
 

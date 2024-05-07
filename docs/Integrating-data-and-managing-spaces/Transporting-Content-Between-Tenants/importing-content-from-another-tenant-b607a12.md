@@ -111,20 +111,19 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
     </td>
     <td valign="top">
     
-    Controls what happens when an object to be imported already exists in your space:
+    Controls whether objects that are already present in your space can be overwritten during an import.
 
-    -   *Don’t overwrite objects or data* - Protects existing objects in your space from being overwritten or having their data updated. You are notified if any of the objects selected for import already exist in your system.
+    > ### Note:  
+    > Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants.
+
+    You can choose between:
+
+    -   *Don’t overwrite objects or data* - \[default\] Imports only objects that are not already present in your space. Objects that are already present are not updated, and are listed with warnings in the *Import* window.
+    -   *Overwrite data only* - Not supported for SAP Datasphere.
+    -   *Overwrite objects and data* - Imports all objects from the package, even if certain objects are already present in your space. These objects may be updated, and these updates may impact data \(for example, if a column is deleted\).
 
         > ### Note:  
-        > If objects or data on your system will be overwritten by the import, a warning appears in the import window and next to the relevant objects in the *Content* list.
-
-    -   *Overwrite data only* - Not currently supported for SAP Datasphere.
-    -   *Overwrite objects and data* - Objects on your system can be overwritten and their data can be updated.
-
-        Select *Including permissions* to update the *Privacy* and *Data Access Control* settings for models and dimensions. The corresponding permissions assigned to each role are also updated.
-
-        > ### Note:  
-        > Connections won't be overwritten by the import.
+        > Connections are never overwritten by an import. The *Including permissions* option is not supported for SAP Datasphere.
 
 
 
@@ -143,6 +142,9 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 
     -   **Don't overwrite objects or data** - Only newly imported objects will be deployed.
     -   **Overwrite objects and data** - All imported objects in the space will be deployed.
+
+    > ### Note:  
+    > This option does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Tables and Views To Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a Data Builder table or view to another space to allow that users assigned to the space use it as a source for their objects.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
 
 
     

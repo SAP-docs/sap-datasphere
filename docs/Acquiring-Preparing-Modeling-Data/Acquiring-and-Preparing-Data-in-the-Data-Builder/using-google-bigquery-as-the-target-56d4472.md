@@ -49,6 +49,8 @@ Target table names may only contain the following special characters:
 
 The maximum length for target column names is 300 characters.
 
+Decimals with precision larger than 76 are not supported.
+
 If the **target structure already exists** in Google BigQuery, you cannot make changes such as renaming a column or changing a data type in SAP Datasphere. You need to do this directly in Google BigQuery.
 
 
@@ -87,7 +89,7 @@ Google BigQuery does not support the data types DECFLOAT16, DECFLOAT34 and UINT6
 
 For the DECFLOAT data types, the following conditions apply:
 
--   Precision can be between 38 and 77.
+-   Precision can be between 38 and 76.
 
 -   Scale can be between 9 and 38.
 

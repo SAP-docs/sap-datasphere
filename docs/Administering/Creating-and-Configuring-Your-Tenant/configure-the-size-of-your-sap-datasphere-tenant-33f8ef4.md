@@ -106,7 +106,7 @@ You can specify from 128 GB \(minimum\), by increments of 64 GB.
 
 Set the memory allocated to your tenant.
 
-You can specify from 128 GB \(minimum\), by increments of 64 GB.
+You can specify from 32 GB \(minimum\), by increments of 16 GB.
 
 </td>
 </tr>

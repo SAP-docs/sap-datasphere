@@ -99,25 +99,32 @@ Data Flows
 
 You can use the connection to add source objects to a data flow.
 
-You can access the following data:
+You can replicate the following data:
 
--   When using *RFC \(Use for on Premise ABAP Systems\)*, you can access tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server. In the *Sources* of the data flow editor, you then can find the source objects in an *SLT - SAP LT Replication Server* folder of the connection.
+-   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
 
--   When using *Web Socket RFC \(Use for S/4HANA Cloud Systems\)* endpoint, you can access all extraction-enabled ABAP CDS views that are C1-released that is views with annotation `@Analytics.dataextraction.enabled: true` that are available in the system. For more information, see [Data Integration](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/c3a5da91691d4ebd89748d9f40af7a4c.html) in the *SAP S/4HANA Cloud* documentation.
+    For more information, see:
 
-    To find out which extraction-enabled ABAP CDS views are C1-released and delta-enabled, you can use the public CDS View I\_DataExtractionEnabledView, which is available in SAP S/4HANA Cloud as well as in SAP S/4 HANA \(as of SAP S/4HANA 2020\). For more information, see [this blog post](https://blogs.sap.com/2019/06/06/discover-cds-view-based-extractors-from-sap-s4hana-cloud/).
+    -   in the *SAP S/4HANA Cloud* documentation: [Data Integration](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/c3a5da91691d4ebd89748d9f40af7a4c.html) and [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/870d66c6bfc44d6c9f128c888f0c7957.html)
 
-    > ### Note:  
-    > To create new connections to SAP S/4HANA Cloud, we recommend using connection type *SAP S/4HANA Cloud* which supports both, view building and remote tables as well as data flows. For more information, see [SAP S/4HANA Cloud Connections](sap-s-4hana-cloud-connections-a98e5ff.md).
+    -   in the *SAP S/4HANA* documentation: [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html)
+
+
+-   Tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server. In the *Sources* of the data flow editor, you then can find the source objects in an *SLT - SAP LT Replication Server* folder of the connection.
 
 
 > ### Note:  
+> -   The availability of the data flow feature depends on the used version and Support Package level of SAP S/4HANA or the DMIS addon in the source. Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> 
+>     For more information about required versions, recommended system landscape, considerations for the supported source objects, and more, see SAP Note [2890171](https://me.sap.com/notes/2890171).
+> 
 > -   Data flows currently support one-time loading of data \(also known as initial load\) only.
 > 
-> -   The data preview in the data flow editor of the *Data Builder* is **not** available for ABAP sources. Except for:
+> -   The data preview in the data flow editor of the *Data Builder* is **not** available, except for:
 > 
->     -   CDS views if the source connection is SAP S/4HANA Cloud 2302, SAP S/4HANA on-premise 1909 or higher.
->     -   SAP Landscape Transformation Replication Server objects if ABAP Add-on DMIS 2018 SP08 / DMIS 2020 SP04 is installed.
+>     -   CDS views if the version of the connected system is SAP S/4HANA on-premise 1909 or SAP S/4HANA 1909 or a higher version respectively.
+> 
+>     -   SAP Landscape Transformation Replication Server objects if ABAP Add-on DMIS 2018 SP08 or DMIS 2020 SP04 is installed or a higher DMIS version.
 
 
 
@@ -135,15 +142,41 @@ You can use the connection to add source objects to a replication flow.
 
 You can access the following data:
 
--   CDS Views
+-   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
+
+    For more information, see:
+
+    -   in the *SAP S/4HANA Cloud* documentation: [Data Integration](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/c3a5da91691d4ebd89748d9f40af7a4c.html) and [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/870d66c6bfc44d6c9f128c888f0c7957.html)
+
+    -   in the *SAP S/4HANA* documentation: [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html)
+
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
+
+-   standard and custom CDS view entities that are exposed using the SQL service from SAP BTP, ABAP environment, orSAP S/4HANA Cloud, respectively
+
+    For more information, see:
+
+    -   in the *SAP S/4HANA Cloud* documentation: [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html)
+
+    -   in the *SAP BTP* documentation: [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/btp/sap-business-technology-platform/data-consumption-using-sap-datasphere)
+
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
 
 -   Tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server.
 
--   Data from ODP sources
+-   Data from ODP sources \(extraction contexts *SAPI* and *BW*\)
 
 
 > ### Note:  
-> The SAP BW and SAP ECC connection types don't support replication flows. Instead, you can use the *SAP ABAP* connection type to use replication flows for replication from SAP BW, SAP BW/4HANA or SAP ECC systems.
+> -   The availability of the replication flow feature depends on the used version and Support Package level of SAP S/4HANA or the DMIS addon in the source. Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> 
+>     For more information about required versions, recommended system landscape, considerations for the supported source objects, and more, see SAP Note [2890171](https://me.sap.com/notes/2890171).
+> 
+> -   The SAP BW and SAP ECC connection types don't support replication flows. Instead, you can use the *SAP ABAP* connection type to use replication flows for replication from SAP BW, SAP BW/4HANA or SAP ECC systems.
 
 
 
@@ -641,6 +674,8 @@ Available properties:
 -   \[if *SNC Mode* = *On*\] *SNC SSO*
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
+
+-   *RFC Serialization*
 
 -   \[if *Streaming Read* = *On*\] *Batch Size, MB*
 
