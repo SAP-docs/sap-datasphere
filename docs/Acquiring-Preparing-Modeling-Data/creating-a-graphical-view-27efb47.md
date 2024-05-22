@@ -127,7 +127,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     </td>
     <td valign="top">
     
-    Preview the data output by the selected diagram node in the *Data Preview* panel \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+    Preview the data output by the selected diagram node in the *Data Preview* panel \(see [Viewing Object Data](viewing-object-data-b338e4a.md)\).
 
     > ### Note:  
     > Users with the *DW Viewer* role cannot preview data if the *Expose for Consumption* switch is disabled and, if the switch is enabled, can only preview data in the output node. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
@@ -146,7 +146,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     
     Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
 
-    \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md).\)
+    \(see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).\)
     
     </td>
     </tr>
@@ -302,7 +302,19 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     
     \[read-only\] Displays the deployment and error status of the object. 
 
-    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Deployed On
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the date and time of the last deployment. 
     
     </td>
     </tr>
@@ -324,14 +336,14 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
     -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
+    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
 8.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
-    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
 9.  \[optional\] Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md) 
 
-10. Click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar to understand the lineage and impacts of the output \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+10. Click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar to understand the lineage and impacts of the output \(see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)\).
 
 

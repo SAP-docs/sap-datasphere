@@ -29,7 +29,7 @@ Drag a table or view from the *Source Browser* panel and drop it on the diagram.
     > ### Note:  
     > If you choose a table or view from the *Sources* tab, it is automatically imported into the repository and deployed, and will be available on the *Repository* tab for future use by you or others.
 
-4.  If the source is a view containing one or more input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\), the *Map Input Parameters* dialog is displayed, and you must decide how each input parameter will be processed:
+4.  If the source is a view or a table containing one or more input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\), the *Map Input Parameters* dialog is displayed, and you must decide how each input parameter will be processed:
 
     -   *Map To* - Map the source input parameter to an input parameter in the view. You can select an existing input parameter or create a new one.
 
@@ -47,6 +47,6 @@ Drag a table or view from the *Source Browser* panel and drop it on the diagram.
 
     ![](images/Input_Parameters_Source_Symbol_d4621d9.png)
 
-5.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+5.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](viewing-object-data-b338e4a.md).
 
 

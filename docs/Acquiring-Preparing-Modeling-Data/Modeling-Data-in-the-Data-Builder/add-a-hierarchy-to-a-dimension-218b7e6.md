@@ -93,156 +93,9 @@ The following hierarchy features are not supported:
         </td>
         <td valign="top">
         
-        \[parent-child hierarchies\] Click <span class="FPA-icons-V3"></span> \(Add\) to add a new parent-child hierarchy. Select the parent and child columns that represent the hierarchy. You can set as many as necessary. The results of these hierarchies can be compounded.
+        \[parent-child hierarchies\] Select the parent and child columns that represent the hierarchy. The child column must be a key column and the parent and child columns must have the same data type.
 
-        > ### Example:  
-        > You have a `CostArea` and `CostCenter` attributes with the following pairs of parent-child hierarchies:
-        > 
-        > 
-        > <table>
-        > <tr>
-        > <th valign="top">
-        > 
-        > ParentCostArea
-        > 
-        > </th>
-        > <th valign="top">
-        > 
-        > CostArea
-        > 
-        > </th>
-        > </tr>
-        > <tr>
-        > <td valign="top">
-        > 
-        > B
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > C
-        > 
-        > </td>
-        > </tr>
-        > <tr>
-        > <td valign="top">
-        > 
-        > A
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > B
-        > 
-        > </td>
-        > </tr>
-        > <tr>
-        > <td valign="top">
-        > 
-        > NULL
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > A
-        > 
-        > </td>
-        > </tr>
-        > </table>
-        > 
-        > In the `CostArea` parent-child hierarchy:
-        > 
-        > -   A is parent to B.
-        > -   B is child to A and parent to C.
-        > -   C is child to B.
-        > 
-        > 
-        > <table>
-        > <tr>
-        > <th valign="top">
-        > 
-        > ParentCostCenter
-        > 
-        > </th>
-        > <th valign="top">
-        > 
-        > CostCenter
-        > 
-        > </th>
-        > </tr>
-        > <tr>
-        > <td valign="top">
-        > 
-        > 2
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > 3
-        > 
-        > </td>
-        > </tr>
-        > <tr>
-        > <td valign="top">
-        > 
-        > 1
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > 2
-        > 
-        > </td>
-        > </tr>
-        > <tr>
-        > <td valign="top">
-        > 
-        > NULL
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > 1
-        > 
-        > </td>
-        > </tr>
-        > </table>
-        > 
-        > In the `CostCenter` parent-child hierarchy:
-        > 
-        > -   1 is parent to 2.
-        > -   2 is child to 1 and parent to 3.
-        > -   3 is child to 2.
-        > 
-        > Compounding these two hierarchies will create the following compounded parent-child hierarchy, with the hierarchical structure of the two initial dimensions taken into consideration:
-        > 
-        > 
-        > <table>
-        > <tr>
-        > <td valign="top">
-        > 
-        >   
-        >  NULL  
-        >     --\> A/1  
-        >        --\> B/2  
-        >           --\> C/3  
-        >   
-        >     --\> A/2  
-        >        --\> B/3  
-        >   
-        >     --\> B/1  
-        >        --\> C/2  
-        >   
-        >     --\> C/1  
-        >   
-        >     --\>A/3   
-        > 
-        > 
-        > </td>
-        > </tr>
-        > </table>
-
-
+        If your dimension has more than one key column, then you should click <span class="FPA-icons-V3"></span> \(Add\) to add an additional line for each key column.
         
         </td>
         </tr>
@@ -257,6 +110,11 @@ The following hierarchy features are not supported:
         \[level-based hierarchies\] Click <span class="FPA-icons-V3"></span> \(Add\) to add a level and select the column containing values for the highest level of your hierarchy. Click <span class="FPA-icons-V3"></span> \(Add\) again to add the next level down. Keep adding levels until you reach the lowest level of your hierarchy.
 
         For example, in a `Products` dimension, you may add three levels containing the columns `Product Line`, `Product Category`, and `Product`.
+
+        > ### Note:  
+        > Level-based hierarchies are not supported for dimensions with more than one key column.
+
+
         
         </td>
         </tr>

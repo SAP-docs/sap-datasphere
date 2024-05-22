@@ -98,6 +98,6 @@ Use a join operator to merge two data sets together using a join definition to m
     -   You can filter the *Mappings* section to show only mapped or unmapped pairs of columns.
     -   You can filter or sort the left or right column lists independently
 
-5.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+5.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md).
 
 

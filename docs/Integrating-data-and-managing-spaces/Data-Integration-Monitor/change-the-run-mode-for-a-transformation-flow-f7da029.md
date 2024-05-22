@@ -2,11 +2,7 @@
 
 # Change the Run Mode for a Transformation Flow
 
-
-
-## Context
-
-You can change the run mode of your transformation flow.
+You can change the run mode for a transformation flow.
 
 
 

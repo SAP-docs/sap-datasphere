@@ -1,6 +1,6 @@
 <!-- loiof315863264db489593c7f54f1f7fd83e -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Modifying Objects That Have Dependent Objects
 
@@ -62,7 +62,7 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     In the case of tables:
 
     -   You can always increase the length of a data type, but you can reduce it only if the change will not truncate any data currently held in the column. For example, if your column’s current data type is `string(256)` and the longest string contained in it is 200 characters, then you cannot reduce the length to less than `string(200)`.
-    -   You can change the data type if the new type is compatible with the family of the old type and the data can be converted. For more information about data type conversions, see [Column Data Types](../Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
+    -   You can change the data type if the new type is compatible with the family of the old type and the data can be converted. For more information about data type conversions, see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
 
         > ### Note:  
         > You cannot change the data types of columns containing *ST\_POINT* or *ST\_GEOMETRY* data.
@@ -131,10 +131,10 @@ Once a table or view is created, it can be used as a source, or pointed to via a
 
     Notifications are sent to the last user who edited each of the dependent objects that now has a status of *Design-Time Error*, inviting them to review the changes. For more information, see:
 
-    -   [Process Source Changes in the Table Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-table-editor-622328b.md)
-    -   [Process Source Changes in the Graphical View Editor](../process-source-changes-in-the-graphical-view-editor-702350c.md)
-    -   [Process Source Changes in the SQL View Editor](../process-source-changes-in-the-sql-view-editor-f7e43ce.md)
-    -   [Process Source/Target Changes in the Data Flow Editor](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-target-changes-in-the-data-flow-editor-0af80aa.md)
+    -   [Process Source Changes in the Table Editor](Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-in-the-table-editor-622328b.md)
+    -   [Process Source Changes in the Graphical View Editor](process-source-changes-in-the-graphical-view-editor-702350c.md)
+    -   [Process Source Changes in the SQL View Editor](process-source-changes-in-the-sql-view-editor-f7e43ce.md)
+    -   [Process Source/Target Changes in the Data Flow Editor](Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-target-changes-in-the-data-flow-editor-0af80aa.md)
     -   [Process Source Changes in the Data Access Control Editor](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3c470e82554145658a5029d7a1dca4a0.html "If the permissions entity that is consumed by your data access control is modified, then the next time you open the data access control, you will be asked to process the changes. If the source change has generated warnings or errors in your data access control, its status will be updated and you will receive a notification inviting you to review the changes.") :arrow_upper_right:
 
 5.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy your object.
@@ -142,6 +142,6 @@ Once a table or view is created, it can be used as a source, or pointed to via a
     If any warnings have been generated, the *Validation Messages* dialog opens to allow you to review them. Click *Deploy Anyway* to deploy your changes and dismiss the warning messages.
 
     > ### Note:  
-    > You should consider the impact of your object on its dependent objects before deploying it. If many objects or particularly important objects will be impacted, you should coordinate with the appropriate other users to deploy the source and its dependent objects together. You could create an ER model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\) to contain the source and its dependent objects and use the ER model *Deploy* button to deploy them simultaneously once all the changes are processed.
+    > You should consider the impact of your object on its dependent objects before deploying it. If many objects or particularly important objects will be impacted, you should coordinate with the appropriate other users to deploy the source and its dependent objects together. You could create an ER model \(see [Creating an Entity-Relationship Model](creating-an-entity-relationship-model-a91c042.md)\) to contain the source and its dependent objects and use the ER model *Deploy* button to deploy them simultaneously once all the changes are processed.
 
 

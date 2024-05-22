@@ -48,12 +48,23 @@ As a result, the consumption model allows harmonized reporting on different meas
 
 7.  Define the authorizations for the consupmption model. Go to the *General* tab and choose either *Allow public data access* or choose an auhtorization scenario.
 
-8.  Define the measures of your consumption model. More information: [Define Measures](define-measures-5cbcfee.md)
+8.  \[optional\] Select the package to which the object belongs.
 
-9.  Define the attibutes of your consumption model. More information: [Define Attributes](define-attributes-5b7b0f8.md)
+    Packages are used to group related objects in order to facilitate their transport between tenants.
 
-10. Define the filters for your consumption model. More information: [Define Filters](define-filters-bc73ffe.md)
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-11. Define the perspectives for your consumption model. More information: [Define Perspectives](define-perspectives-ce26fd3.md)
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+
+    Perspectives are automatically assigned to the same package.
+
+9.  Define the measures of your consumption model. More information: [Define Measures](define-measures-5cbcfee.md)
+
+10. Define the attibutes of your consumption model. More information: [Define Attributes](define-attributes-5b7b0f8.md)
+
+11. Define the filters for your consumption model. More information: [Define Filters](define-filters-bc73ffe.md)
+
+12. Define the perspectives for your consumption model. More information: [Define Perspectives](define-perspectives-ce26fd3.md)
 
 

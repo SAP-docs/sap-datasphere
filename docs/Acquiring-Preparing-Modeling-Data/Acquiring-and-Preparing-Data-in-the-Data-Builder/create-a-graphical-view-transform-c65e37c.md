@@ -105,7 +105,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </td>
     <td valign="top">
     
-    Preview the data output by the selected diagram node in the *Data Preview* panel \(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+    Preview the data output by the selected diagram node in the *Data Preview* panel \(see [Viewing Object Data](../viewing-object-data-b338e4a.md)\).
 
     You can preview the SQL generated for the node by clicking the *Preview SQL* button in the panel or by clicking <span class="FPA-icons-V3"></span> Export and selecting *Preview SQL*. Click *Copy* to copy the SQL code for pasting into the SQL View editor or elsewhere.
     
@@ -121,7 +121,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     
     Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
 
-    \(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md).\)
+    \(see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).\)
     
     </td>
     </tr>

@@ -111,6 +111,18 @@ The definitions of all the tables and views in the model are exported. The model
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Data Access Controls
+
+</td>
+<td valign="top">
+
+The definition of a data access control contains the definition of its permissions entity. When you export a data access control, the permissions entity is exported too.
+
+</td>
+</tr>
 </table>
 
 > ### Note:  

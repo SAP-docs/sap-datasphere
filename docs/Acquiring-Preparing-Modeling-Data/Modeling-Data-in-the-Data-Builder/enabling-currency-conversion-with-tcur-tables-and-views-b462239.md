@@ -73,7 +73,7 @@ Next steps: Now that the necessary objects are created, you can convert currency
 Once you’ve created the currency conversion objects in your space, you can share the TCUR\* tables to other spaces. The spaces to which you share these tables can then use them as a source to generate their own TCUR\* views with the dialog.
 
 > ### Note:  
-> As a general rule, you can share objects \(including TCUR\* tables\) to another space by following another procedure. For more information, see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)
+> As a general rule, you can share objects \(including TCUR\* tables\) to another space by following another procedure. For more information, see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click +, then *Currency Conversion Views*. The *Currency Conversion Views* dialog opens.
 

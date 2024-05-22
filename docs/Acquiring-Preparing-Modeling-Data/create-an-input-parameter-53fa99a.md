@@ -17,9 +17,9 @@ You can use input parameters when creating graphical and SQL views:
 
 Views that contain input parameters require special treatment in the following situations:
 
--   Previewing data - Accept the default value, if one is provided, or enter a value for each input parameter \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+-   Previewing data - Accept the default value, if one is provided, or enter a value for each input parameter \(see [Viewing Object Data](viewing-object-data-b338e4a.md)\).
 
-    Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+    You cannot view data in an SQL view if any of its sources is shared from another space and has an input parameter.
 
 -   Adding a view as a source for a graphical view - Map each input parameter in the source view to a value or an input parameter in the new view \(see [Add a Source](add-a-source-1eee180.md)\).
 -   Adding a view as a source for a SQL view - Complete the syntax to map each input parameter in the source view to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\).

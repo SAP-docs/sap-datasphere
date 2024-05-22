@@ -246,7 +246,7 @@ Based on these three records:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Data Access Controls*\), select a space if necessary, and click *New Data Access Control* to open the editor. 
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Access Control* to open the editor.
 
 2.  Complete the properties in the *General* section:
 

@@ -58,6 +58,6 @@ Add a *Calculated Columns* node to create new columns and define calculations in
     -   Modify the expression output by any column by clicking on the chevron on the right of its token.
     -   Delete a column that has been created in the node by clicking <span class="FPA-icons-V3"></span> Delete Selected Calculated Column.
 
-7.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+7.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](viewing-object-data-b338e4a.md).
 
 

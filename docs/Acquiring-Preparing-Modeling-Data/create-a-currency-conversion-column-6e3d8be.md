@@ -21,7 +21,7 @@ To perform currency conversion, the following tables must be available in your s
 -   `TCURC` - Currency codes
 -   `TCURT` - Currency text
 
-For more information about the creation of the tables, see [Enabling Currency Conversion with TCUR\* Tables and Views](Creating-Finding-Sharing-Objects/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
+For more information about the creation of the tables, see [Enabling Currency Conversion with TCUR\* Tables and Views](Modeling-Data-in-the-Data-Builder/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
 
 > ### Note:  
 > SAP Analytics Cloud can consume views performing currency conversion only if the following restrictions are respected:
@@ -343,7 +343,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </table>
     
     > ### Note:  
-    > You can, alternatively, use the `CONVERT_CURRENCY` function in a standard calculated column \(see [CONVERT\_CURRENCY](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA* documentation\).
+    > You can, alternatively, useg the `CONVERT_CURRENCY` function in a standard calculated column \(see [CONVERT\_CURRENCY](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA* documentation\).
 
 6.  Click *Validate* once all properties are set to check if they are correct, and fix any error signaled. When you are satisfied, open or refresh the *Data Preview* panel to review the results of your currency conversion in your new column.
 

@@ -79,7 +79,7 @@ When *Delta Capture* is switched on:
     </td>
     <td valign="top">
     
-    This column will track the type of last change made to a record.When a record is inserted or updated corresponding change types are used \(for example "I" or "U"\). When an existing record is deleted other specific change types are used \(for example "D"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. For more information on records deletion, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
+    This column will track the type of last change made to a record.When a record is inserted or updated corresponding change types are used: "*I*" for insert \(a new record is added\), "*U*" for update \(an existing record gets an updated value\), or "*A*" for upsert \(insert records if they do not exist yet in the target table, or update them by primary key if they do exist\). When an existing record is deleted other specific change types are used \(for example "*D*"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the Local Table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. For more information on records deletion, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
     
     </td>
     </tr>
@@ -139,11 +139,14 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 
     -   *Replication Flow*: The Delta Capture Table can be used as source \(with load type *Initial Only*\) or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add a Source](add-a-source-7496380.md).
     -   *Table Editor*:
-        -   Data Preview: Once deployment is completed, it show only the delta capture tables. See [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)
+        -   Data Preview: Once deployment is completed, it show only the delta capture tables. See [Viewing Object Data](../viewing-object-data-b338e4a.md)
         -   Data Maintenance: You can perform table maintenance on the delta capture table \(only\) once deployment is completed. See [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)
         -   File upload: You can update the delta capture table by uploading a new csv file, after deployment is completed. See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
 
 
+
+> ### Note:  
+> If the table is used as source or target in an object, for example in a flow, you can see it in the table editor under dependent objects. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 
 > ### Restriction:  
 > The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not permitted for external data access and is only consumed by the above SAP Datasphere internal apps. Using the internal delta capture columns \(*Change Date* or *Change Type*\) or their content directly or indirectly for external delta replication outside the Premium Outbound Integration is also not permitted. For more information, see [Premium Outbound Integration](https://blogs.sap.com/2023/11/16/replication-flow-blog-series-part-2-premium-outbound-integration/).

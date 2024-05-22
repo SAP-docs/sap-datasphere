@@ -1,6 +1,6 @@
 <!-- loio9da4892cb0e4427ab80ad8d89e6676b8 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Impact and Lineage Analysis
 
@@ -248,7 +248,7 @@ Description
 </td>
 <td valign="top">
 
-Persisted and replicated objects have their data copied locally to enhance performance \(see [Persist View Data](../persist-view-data-9bd12cf.md) and [Replicate Remote Table Data](../Acquiring-and-Preparing-Data-in-the-Data-Builder/replicate-remote-table-data-7e258a7.md)\).
+Persisted and replicated objects have their data copied locally to enhance performance \(see [Persist View Data](persist-view-data-9bd12cf.md) and [Replicate Remote Table Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/replicate-remote-table-data-7e258a7.md)\).
 
 </td>
 </tr>
@@ -260,7 +260,7 @@ Persisted and replicated objects have their data copied locally to enhance perfo
 </td>
 <td valign="top">
 
-Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, tools and apps \(see [Exposing a View For Consumption](../Modeling-Data-in-the-Data-Builder/exposing-a-view-for-consumption-40ec77e.md)\).
+Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, tools and apps \(see [Exposing a View For Consumption](Modeling-Data-in-the-Data-Builder/exposing-a-view-for-consumption-40ec77e.md)\).
 
 </td>
 </tr>
@@ -346,11 +346,11 @@ In this example, the *Sales View* entity shows a single source table in *Data An
 
 In *Dependency Analysis* mode, it shows several other entities, to which it is linked via associations, along with a data access control:
 
-![](images/Share_Semantic_Entities_-_Fact_Example_60337a6.png)
+![](Creating-Finding-Sharing-Objects/images/Share_Semantic_Entities_-_Fact_Example_60337a6.png)
 
 These additional link types display as follows::
 
--   <span class="SAP-icons-TNT-V3"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see[Create an Association](../create-an-association-66c6998.md)\).
+-   <span class="SAP-icons-TNT-V3"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see[Create an Association](create-an-association-66c6998.md)\).
 
 -   <span class="SAP-icons-V5"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 

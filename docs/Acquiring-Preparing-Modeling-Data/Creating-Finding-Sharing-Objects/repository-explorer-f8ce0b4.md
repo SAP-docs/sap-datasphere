@@ -416,7 +416,7 @@ You can act on objects in the list in the following ways:
     
     Open the *Impact and Lineage Analysis* dialog for the selected object to see the objects on which it depends and the objects that depend on it. 
 
-    For more information, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+    For more information, see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
     
     </td>
     </tr>

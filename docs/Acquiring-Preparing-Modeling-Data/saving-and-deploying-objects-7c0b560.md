@@ -1,6 +1,6 @@
 <!-- loio7c0b560e2cb94eea86219d78d87f9623 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Saving and Deploying Objects
 
@@ -31,7 +31,7 @@ You can create a copy of many types of objects by:
 
 ## Preview Data
 
-Design-time objects do not contain any data, but you can preview the data they will contain when they are deployed to the run-time environment \(see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\). You can save an object even if it contains validation errors.
+Design-time objects do not contain any data, but you can preview the data they will contain when they are deployed to the run-time environment \(see [Viewing Object Data](viewing-object-data-b338e4a.md)\). You can save an object even if it contains validation errors.
 
 
 
@@ -57,8 +57,8 @@ When you deploy a table or view, you create a run-time version, which can be use
 
 The following types of object are automatically deployed upon creation and immediately available in the run-time:
 
--   Remote tables imported into the repository from a source system, database user schema or HDI container \(see [Importing Tables and Views from Sources](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)\).
--   Tables created by importing data from a `*.csv` file \(see [Creating a Local Table from a CSV File](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)\).
+-   Remote tables imported into the repository from a source system, database user schema or HDI container \(see [Importing Tables and Views from Sources](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)\).
+-   Tables created by importing data from a `*.csv` file \(see [Creating a Local Table from a CSV File](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)\).
 
 
 

@@ -259,10 +259,10 @@ See [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monito
 </td>
 <td valign="top">
 
-Allows to import and export content via the *Content Network* and *Transport* tools.
+Allows to import content from the *Content Network* and to import and export content via the *Transport* tool.
 
--   `M` \(*Maintain*\) - Allows access to the tools *Content Network* and *Transport* \> *Import* so the user can import packages from the *Content Network*.
--   `M` \(*Maintain*\) and `S` \(*Share*\) - Allows access to the tool *Transport* \> *Export* so the user can export packages from *Transport* \> *Export* in the*Content Network*.
+-   `M` \(*Maintain*\) - Allows to import packages from the *Content Network* and *Transport* \> *Import*.
+-   `M` \(*Maintain*\) and `S` \(*Share*\) - Allows to export packages via *Transport* \> *Export*.
 
 
 > ### Note:  
@@ -698,14 +698,10 @@ Not in use
 </td>
 <td valign="top">
 
-Allows access to the *Data Access Control* app and objects.
+Allows access to data access controls in the *Data Builder* app:
 
--   *Update* - To see the *Data Access Control* app.
-
--   *Read* - To use a *Data Access Control* object to protect a view.
-
--   *Update* - To change a view, in addition to *Read*.
-
+-   *Create*, *Update* and *Delete* - To create, update, or delete a data access control in the editor.
+-   *Read* - To use a data access control to protect a view.
 
 See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
 
@@ -912,14 +908,12 @@ See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scop
 
 Allows access to the *Translation* tool:
 
--   C *\(Create\)*: Lets you select objects to translate, translate manually, download and upload translations using XLIFF files, or review translations. This permission can be given to users with the scoped *DW Space Administrator* role.
--   R *\(Read\)*: Lets you access the *Translation* tool. This permission can be given to users with the scoped roles *DW Space Administrator* and *DW Modeler*.
--   D *\(Delete\)*: Lets you delete the translations. This permission can be given to users with the scoped *DW Space Administrator* role.
+-   C *\(Create\)*: Lets you select objects to translate, translate manually, download and upload translations using XLIFF files, or review translations.
+-   R *\(Read\)*: Lets you access the *Translation* tool.
+-   D *\(Delete\)*: Lets you delete the translations.
 
 > ### Note:  
-> -   This privilege is displayed and available for selection only in a scoped role for DW Modeler and DW Space Administrator.
-> 
-> -   Custom roles cannot be assigned this privilege.
+> Custom roles cannot be assigned this privilege.
 
 
 

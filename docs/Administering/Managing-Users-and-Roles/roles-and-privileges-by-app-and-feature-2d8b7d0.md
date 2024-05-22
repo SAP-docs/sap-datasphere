@@ -285,7 +285,16 @@ Intelligent lookup editor
 
 Task chain editor
 
-See [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:, [Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with the DW Modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, MS Excel, and other clients, apps, and tools.") :arrow_upper_right:
+Data access control editor
+
+See:
+
+-   [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+-   [Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with the DW Modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
+-   [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, MS Excel, and other clients, apps, and tools.") :arrow_upper_right:
+-   [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
+
+
 
 </td>
 <td valign="top">
@@ -301,7 +310,7 @@ The following features need additional permissions \(which are included in the *
     > ### Note:  
     > The *DW Viewer* role includes *Data Warehouse Consumption.Read*, which allows these users to preview only data output by views with the *Expose for Consumption* switch enabled.
 
--   Upload data in a local table - *Data Warehouse Consumption.Update* 
+-   Upload data in a local table - *Data Warehouse Consumption.Update* or *Data Warehouse Data Integration.Update*
 -   Access the local table *Data Editor* screen - *Data Warehouse Data Builder.Update*
 -   See remote objects in *Data Builder* editors - *Data Warehouse Remote Connection.Read*
 
@@ -310,6 +319,14 @@ The following features need additional permissions \(which are included in the *
 -   Run an intelligent lookup - *Data Warehouse Data Integration.Update*
 -   Run a task chain - *Data Warehouse Data Integration.Update*
 -   Delete data in a local table - *Data Warehouse Data Integration.Update*
+
+The following features need additional permissions \(which are included in the *DW Space Administrator* role\):
+
+-   Create, update, and delete a data access control - *Data Warehouse Data Access Control* \(CRUD----\)
+
+    > ### Note:  
+    > The *DW Modeler* role includes *Data Warehouse Data Access Control.Read*, which allows them to apply an existing data access control to a view.
+
 
 
 
@@ -321,30 +338,6 @@ The following features need additional permissions \(which are included in the *
 *DW Modeler*
 
 *DW Viewer* \(read-only access\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<span class="SAP-icons-V5"></span> \(*Data Access Controls*\)
-
-See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-*Data Warehouse Data Access Control* \(CRUD----\)
-
-> ### Note:  
-> The *DW Modeler* role includes *Data Warehouse Data Access Control.Read*, which allows them to apply an existing data access control to a *Data Builder* view.
-
-
-
-</td>
-<td valign="top">
-
-*DW Space Administrator* 
 
 </td>
 </tr>
@@ -488,6 +481,27 @@ See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-data
 <td valign="top">
 
 *DW Administrator*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons-V5"></span> \(*Translation*\)
+
+See [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+*Translation* \(CR-D----\)
+
+</td>
+<td valign="top">
+
+*DW Space Administrator*
+
+*DW Modeler* \(read-only access\)
 
 </td>
 </tr>

@@ -90,7 +90,7 @@ Add a source table to read data from. You can add multiple source tables and com
     </td>
     <td valign="top">
     
-    The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>

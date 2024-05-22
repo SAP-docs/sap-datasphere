@@ -72,16 +72,16 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
         > ### Note:  
         > If your SQLScript is complicated, SAP Datasphere may not be able to determine the output structure. In this case, you are requested to review the list of columns. Click the *Edit* button to add or delete buttons or change column names and data types.
 
-    -   Preview the data being output by the view by clicking <span class="SAP-icons-V5"></span> \(Show or hide data preview\)\(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md)\).
+    -   Preview the data being output by the view by clicking <span class="SAP-icons-V5"></span> \(Show or hide data preview\)\(see [Viewing Object Data](viewing-object-data-b338e4a.md)\).
 
-        Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+        You cannot view data in an SQL view if any of its sources is shared from another space and has an input parameter.
 
     -   Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog: 
         -   Click <span class="FPA-icons-V3"></span> \(Previous Annotation\) and <span class="FPA-icons-V3"></span> \(Next Annotation\) to navigate from one custom CSN annotation to another.
         -   Enter changes for the custom CSN annotations in the code.
         -   Click <span class="FPA-icons-V3"></span> \(Validate CSN expression\) to check if changes invalidate or not the CSN expression.
 
-    -   View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\) by clicking <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) \(see [Impact and Lineage Analysis](Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+    -   View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\) by clicking <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) \(see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)\).
 
 4.  Enter the following properties as appropriate in the side panel:
 
@@ -252,7 +252,19 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     
     \[read-only\] Displays the deployment and error status of the object. 
 
-    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Deployed On
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the date and time of the last deployment.
     
     </td>
     </tr>
@@ -274,10 +286,10 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     -   *Associations* - Create associations to other entities \(see [Create an Association](create-an-association-66c6998.md)\).
     -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
+    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
 7.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
-    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
 

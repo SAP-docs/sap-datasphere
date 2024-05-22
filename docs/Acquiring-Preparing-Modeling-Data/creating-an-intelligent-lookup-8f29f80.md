@@ -203,7 +203,7 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
     
     \[read-only\] Displays the deployment and error status of the object. 
 
-    For more information, see [Saving and Deploying Objects](Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>

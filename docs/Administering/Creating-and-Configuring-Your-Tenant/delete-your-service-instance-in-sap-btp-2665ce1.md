@@ -7,7 +7,7 @@ Delete your SAP Datasphere service instance in SAP BTP.
 To do so, you must have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
 
 > ### Note:  
-> When you delete your service instance, all your data will also be deleted. The tenant and all its data cannot be recovered.
+> If you delete your service instance by accident, it can be recovered within seven days. After seven days has passed, the tenant and all its data will be deleted and cannot be recovered.
 
 1.  In SAP BTP, select the subaccount and the space where the service instance was created.
 
@@ -30,7 +30,10 @@ To do so, you must have SAP BTP administration authorization on the subaccount t
 
 ## Context
 
-If you accidentally deleted your SAP Datasphere service instance in SAP BTP, you can restore it within 7 days.
+If you accidentally delete your SAP Datasphere service instance in SAP BTP, you can restore it within seven days. For more information, see [SAP Note 3455188](https://me.sap.com/notes/3455188).
+
+> ### Note:  
+> Restoring your service instance is only supported for standard service plans.
 
 
 
@@ -38,7 +41,7 @@ If you accidentally deleted your SAP Datasphere service instance in SAP BTP, you
 
 ## Procedure
 
-1.  Create a customer incident using the component `DS-PROV`, set the priority to *High*, and ask SAP support to restore impacted SAP Datasphere tenant. You must provide the SAP Datasphere tenant URL.
+1.  Create a customer incident through ServiceNow using the component `DS-PROV`. Set the priority to *High*, and ask SAP support to restore impacted SAP Datasphere tenant. You must provide the tenant URL.
 
     Once completed, SAP Support will inform you that that the impacted tenant has been restored and unlocked successfully.
 
@@ -65,16 +68,18 @@ If you accidentally deleted your SAP Datasphere service instance in SAP BTP, you
 
 3.  Fetch your access token via http POST request to the OAuth Client Token URL.
 
+    The *Token URL* is displayed on the *App Integration* tab, above the list of *Configured Clients*.
+
     1.  Provide the following information with your POST request:
 
         ```
         curl --location --request POST '<TokenURL>/oauth/token/oauth/token?grant_type=client_credentials' \
         --header 'Content-Type: application/json' \
-        --header 'Authorization: Basic <OAuthClientID>:<OAuthClientSecret>' \
+        --header 'Authorization: Basic <OAuthClientSecret>' \
         --data''
         ```
 
-        Replace *<TokenURL\>* with your OAuth Client Token URL. Replace *<OAuthClientID\>* with your OAuth Client ID, and your *<OAuthClientSecret\>* with the OAuth Client Secret. The secret must be Base64 encoded.
+        Replace *<TokenURL\>* with your OAuth Client Token URL. Replace *<OAuthClientSecret\>* with the OAuth Client Secret. The secret must be Base64 encoded.
 
     2.  Save the access token returned by the POST request.
 

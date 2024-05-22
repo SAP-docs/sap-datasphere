@@ -49,7 +49,7 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
 3.  When you find an object, you can preview it before adding it. Click <span class="FPA-icons-V3"></span> \(More\) and select:
 
     -   *Show Info* - See additional properties and optionally open it in a new tab.
-    -   *Show Data Preview* - Preview the object's data \(see [Viewing or Previewing Data in Data Builder Objects](viewing-or-previewing-data-in-data-builder-objects-b338e4a.md).
+    -   *Show Data Preview* - Preview the object's data \(see [Viewing Object Data](viewing-object-data-b338e4a.md).
 
 4.  Drag the object from the *Repository Browser* and drop it on the diagram.
 

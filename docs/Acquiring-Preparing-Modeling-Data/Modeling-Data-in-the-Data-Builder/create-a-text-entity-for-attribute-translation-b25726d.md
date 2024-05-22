@@ -18,6 +18,9 @@ For example:
 
 ![](images/Text_Entity_Example_2b15da2.png)
 
+> ### Note:  
+> When a dimension has a compound key defined, you can only provide translations for the representative key column. Other key columns cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
+
 
 
 ## Procedure
@@ -50,9 +53,9 @@ For example:
     <tr>
     <td valign="top">
     
-    Identifier
+    Identifiers
 
-    Specifies the dimension member for which the text is provided.
+    One or more identifiers specify the dimension member for which the text is provided.
 
     Example: `01`
     
@@ -169,9 +172,9 @@ For example:
 3.  Set attributes as keys to indicate that the data they contain can uniquely identify records.
 
     > ### Note:  
-    > You must set two or three key attributes for a *Text Entity*:
+    > You must set two or more key attributes for a *Text Entity*:
     > 
-    > -   Identifier
+    > -   One or more identifiers
     > -   Language Identifier
     > -   Validity Start Date - if time-dependency is required \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\)
 
@@ -179,6 +182,6 @@ For example:
 
 4.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
-    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
 

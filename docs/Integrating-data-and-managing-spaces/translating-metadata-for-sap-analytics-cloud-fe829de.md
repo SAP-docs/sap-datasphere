@@ -16,7 +16,6 @@ You can refer to the list below for the supported languages in SAP Datasphere.
 
 This topic contains the following sections:
 
--   [fe829debe389450394cf7a15860e2caa.md\#loiofe829debe389450394cf7a15860e2caa\_\_section\_permissions](translating-metadata-for-sap-analytics-cloud-fe829de.md#loiofe829debe389450394cf7a15860e2caa__section_permissions)
 -   [Enable Translation](translating-metadata-for-sap-analytics-cloud-fe829de.md#loiofe829debe389450394cf7a15860e2caa__section_activatingtranslation)
 -   [Select Objects to Translate](translating-metadata-for-sap-analytics-cloud-fe829de.md#loiofe829debe389450394cf7a15860e2caa__section_addobjects)
 -   [Translate Metadata via XLIFF Files](translating-metadata-for-sap-analytics-cloud-fe829de.md#loiofe829debe389450394cf7a15860e2caa__section_translatexliff)

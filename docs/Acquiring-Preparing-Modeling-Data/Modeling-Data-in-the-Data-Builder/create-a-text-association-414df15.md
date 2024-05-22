@@ -4,37 +4,35 @@
 
 # Create a Text Association
 
-
-
-## Context
-
-You need to link a text dependent dimension to a text entity thanks to a text association.
+Create a text association to link your entity to a text entity, which will provide text in one or more languages for an attribute.
 
 
 
 ## Procedure
 
-1.  Select your text dependent dimension to show its side panel. In the *Attributes* section, hover over an attribute and click <span class="FPA-icons-V3"></span> \(More\) \> *Add Text Association*. The *Select Object* dialog opens and text entities available for association are listed.
+1.  In the *Associations* section of your entity, click:arrow_right: \> *Text Association* to open the *Select Object* dialog listing available text entities.
 
-    Find available objects by entering the object's name in the search bar or click <span class="FPA-icons-V3"></span> \(Show filters\) and filter by *Semantic Usage* or other criteria.  
+    Alternatively, in a view side panel, in the *Attributes* section, hover over an attribute and click <span class="FPA-icons-V3"></span> \(More\) \> *Add Text Association*.
 
 2.  Select a target entity and click *OK*.
 
-3.  Specify the text association mapping of attributes in the *Mappings* section:
+    Find available objects by entering the object's name in the search bar or click <span class="FPA-icons-V3"></span> \(Show filters\) and filter by *Semantic Usage* or other criteria.
+
+3.  In the *Mappings* section, map the appropriate attributes from your entity to those in the text entity:
 
     -   A default mapping is automatically created by matching a selected element to the first key element whose *Semantic Type* is *None*.
     -   To delete a mapping, select the link and then click <span class="FPA-icons-V3"></span> \(Delete\).
     -   To manually map columns, drag a column from the left list and drop it onto a column in the right list.
-    -   You can filter the *Mappings* section to show only all, mapped, or unmapped pairs of columns.
+    -   You can filter the *Mappings* section to show all, mapped, or unmapped pairs of columns.
     -   You can filter or sort the left or right column lists independently
 
-    The text dependent dimension is associated to the *Text* entity's attribute. The icon <span class="FPA-icons-V3"></span> signals which attributes and associations are related to the dimension.
-
     > ### Note:  
-    > You can also create a *Text Association* by going to the dimension's *Associations* section and clicking :arrow_right: \> *Text Association*.
+    > When you have defined a compound key for a dimension, you must map all key columns to the text entity. You can only provide translations for the representative key column. Other key columns cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
+
+    The icon <span class="FPA-icons-V3"></span> signals that an attribute is mapped to a text entity.
 
 4.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
-    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
 

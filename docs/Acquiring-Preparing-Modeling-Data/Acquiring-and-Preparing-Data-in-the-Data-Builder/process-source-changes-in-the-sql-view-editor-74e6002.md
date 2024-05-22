@@ -2,10 +2,6 @@
 
 # Process Source Changes in the SQL View Editor
 
-
-
-## Context
-
 If one or more of the source tables of your SQL view transform is modified, then the next time you edit the SQL view transform you can view any changes by viewing the relevant validation messages.
 
 

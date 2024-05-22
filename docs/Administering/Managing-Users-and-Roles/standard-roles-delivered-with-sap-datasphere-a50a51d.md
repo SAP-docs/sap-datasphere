@@ -55,7 +55,9 @@ In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Secu
 
 
 > ### Note:  
-> Users are assigned roles in particular spaces via scoped roles. One user may have different roles in different spaces depending on the scoped role they're assigned to. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
+> Please do not use the roles *DW Support User* and *DW Scoped Support User* as they are reserved for SAP Support.
+
+Users are assigned roles in particular spaces via scoped roles. One user may have different roles in different spaces depending on the scoped role they're assigned to. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
 > ### Note:  
 > Please note for SAP Datasphere tenants that were initially provisioned prior to version 2021.03, you need the following additional roles to work with stories:

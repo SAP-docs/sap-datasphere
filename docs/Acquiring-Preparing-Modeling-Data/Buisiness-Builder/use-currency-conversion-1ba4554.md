@@ -10,7 +10,7 @@ You can convert currency values into another currency.
 
 ## Prerequisites
 
-To enable currency conversion, you create the necessary objects in your space. For more information, see [Enabling Currency Conversion with TCUR\* Tables and Views](../Creating-Finding-Sharing-Objects/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
+To enable currency conversion, you create the necessary objects in your space. For more information, see [Enabling Currency Conversion with TCUR\* Tables and Views](../Modeling-Data-in-the-Data-Builder/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
 
 
 

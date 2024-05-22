@@ -79,6 +79,7 @@
         -   [Exploring Views with View Analyzer](Data-Integration-Monitor/exploring-views-with-view-analyzer-8921e5a.md)
         -   [Persisted Views and Memory Consumption](Data-Integration-Monitor/persisted-views-and-memory-consumption-e3d0495.md)
         -   [Data Persistence, Detailed Logs and Remote Statements](Data-Integration-Monitor/data-persistence-detailed-logs-and-remote-statements-9eb35ee.md)
+        -   [Understanding the Data Persistence Metrics](Data-Integration-Monitor/understanding-the-data-persistence-metrics-d65994c.md)
     -   [Monitoring Flows](Data-Integration-Monitor/monitoring-flows-b661ea0.md)
         -   [Working With Existing Replication Flow Runs](Data-Integration-Monitor/working-with-existing-replication-flow-runs-da62e1e.md)
         -   [Cancel a Transformation Flow Run](Data-Integration-Monitor/cancel-a-transformation-flow-run-ab885f0.md)

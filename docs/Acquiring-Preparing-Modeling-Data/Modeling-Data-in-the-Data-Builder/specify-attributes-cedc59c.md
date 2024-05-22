@@ -111,7 +111,7 @@ Choose from the following:
 -   *None* - \[default\] No semantic meaning.
 -   *Currency Code* - The column specifies the currency for one or more measures with the semantic type *Amount with Currency*. Attributes with this semantic type can be selected in the *Measures* list *Unit Column*.
 -   *Unit of Measure* - The column specifies the unit for one or more measures with the semantic type *Quantity with Unit*. Attributes with this semantic type can be selected in the *Measures* list *Unit Column*.
--   *Text* - The column contains text. Attributes with this semantic type can be selected in the *Attributes* list *Label Column*.
+-   *Text* - The column contains text. Attributes with this semantic type can be selected in the *Attributes* list *Text / Association*.
 -   *Business Date...*, *Fiscal...*, *Calendar...*, *System Date...* - The column contains a date or fiscal or calendar period.
 -   *Language* - The column contains a language code.
 -   *Geolocation...* - The column contains geo data.
@@ -123,12 +123,22 @@ For more information, see [Specify Semantic Types for Measures and Attributes](s
 <tr>
 <td valign="top">
 
-Label Column
+Text / Association
 
 </td>
 <td valign="top">
 
-Select an attribute with a semantic type of *Text* to act as the label for the column. 
+Specifies the purpose of the attribute when your entity is consumed by an analytic model. 
+
+This property can contain:
+
+-   An association pointing to a dimension \(see [Create an Association](../create-an-association-66c6998.md)\)
+-   A text association pointing to a text entity \(see [Create a Text Association](create-a-text-association-414df15.md)\)
+-   An attribute with a semantic type of *Text*
+
+This property is automatically filled when you create an association or a text association. If you want to specify an attribute with a semantic type of *Text* to act as a label for the column, then you must manually select the attribute here.
+
+In cases where multiple associations and/or text association are defined on a single attribute, you can manually choose which association \(or local text attribute\) should be used by the analytic model by making the appropriate selection here.
 
 </td>
 </tr>

@@ -4,7 +4,7 @@
 
 # Exporting Objects to a CSN/JSON File
 
-Export the definitions of your tables, views, and other objects to a CSN/JSON file, which can be imported into another space.
+Export the definitions of your tables, views, and other objects to a CSN/JSON file, which can be imported into another space or tenant.
 
 
 
@@ -14,13 +14,15 @@ A CSN \(Core Data Services Schema Notation\) file contains only the definition o
 
 The *Export to CSN/JSON File* button is available in the following editors:
 
--   Table editor
--   Graphical view editor
--   SQL view editor
--   Data flow editor
--   Intelligent lookup editor
--   Analytic model editor
--   Entity-relationship model editor
+-   Local tables \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
+-   Remote tables \(see [Importing Tables and Views from Sources](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)\)
+-   Graphical views \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
+-   SQL views \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
+-   Data flows \(see [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md)\)
+-   Intelligent lookups \(see [Creating an Intelligent Lookup](../creating-an-intelligent-lookup-8f29f80.md)\)
+-   Analytic models \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
+-   Entity-relationship models \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\)
+-   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\)
 
 
 
@@ -132,6 +134,18 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     The definitions of all the tables and views in the model are exported. The model itself is not exported.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Data Access Controls
+    
+    </td>
+    <td valign="top">
+    
+    The definition of a data access control contains the definition of its permissions entity. When you export a data access control, the permissions entity is exported too.
     
     </td>
     </tr>

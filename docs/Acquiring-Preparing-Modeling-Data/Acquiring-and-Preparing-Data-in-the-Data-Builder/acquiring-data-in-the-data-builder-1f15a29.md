@@ -176,9 +176,10 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     
     Import objects from files and connections:
 
-    -   *Import CSV File* - Import data from a CSV file to create a local table \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md)
-    -   *Import Objects from CSN/JSON File* - Import table and view definitions from a CSN file to create tables and views or import data flow definitions from a JSON file to create data flows. \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
+    -   *Import CSV File* - Import data from a CSV file to create a local table \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md).
+    -   *Import Objects from CSN/JSON File* - Import table, view, and other object definitions from a CSN/JSON file \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
     -   *Import Remote Tables* - Import remote tables from a connection \(see [Import Remote Tables](import-remote-tables-fd04efb.md)\).
+    -   *Import Permissions* - Import analysis authorizations from SAP BW and and SAP BW∕4HANA systems to create data access controls \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/f56e4271dc4943aa9f21223ce5c93873.html "You can import analysis authorizations defined in SAP BW and SAP BW∕4HANA systems into SAP Datasphere to provide row-level protection for data imported from these systems.") :arrow_upper_right:\).
 
 
     
@@ -204,18 +205,18 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </td>
     <td valign="top">
     
-    Select one or more objects and deploy them at once.
+    Select one or more objects and deploy them together.
 
     Choose from the following entity types:
 
-    -   Local Table \(see [Creating a Local Table](creating-a-local-table-2509fe4.md)\)
-    -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
-    -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a "Single Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
-    -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
-    -   Task Chain \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\)
+    -   Local tables \(see [Creating a Local Table](creating-a-local-table-2509fe4.md)\)
+    -   Graphical views \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
+    -   SQL views \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
+    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\)
+    -   Analytic models \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
+    -   Task chains \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\)
 
-    Other types of objects cannot be deployed.
+    Other types of objects can only be deployed via their editors.
 
     If one or more objects that you have selected cannot be deployed, the *Deploy* dialog opens, allowing you to review your selection. Click *Deploy* to deploy those objects listed on the *Deployable* tab, or *Cancel* to go back and alter your selection.
     
@@ -241,7 +242,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </td>
     <td valign="top">
     
-    View the objects that depend on an analyzed object \(its impacts\) and the objects on which the analyzed object depends \(its lineage\)\(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+    View the objects that depend on the selected object, and those objects on which it depends \(see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md)\).
     
     </td>
     </tr>
@@ -253,12 +254,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </td>
     <td valign="top">
     
-    Delete the selected objects.
-
-    > ### Note:  
-    > If the object is used by one or more other objects then a dialog listing these dependencies opens, and the deletion is canceled.
-
-
+    Delete the selected objects \(see [Deleting Objects](../deleting-objects-1e69cbb.md)\).
     
     </td>
     </tr>

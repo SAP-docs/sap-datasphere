@@ -469,7 +469,7 @@ You can show or hide the objects on either side of any object by clicking the <s
 </tr>
 </table>
 
-For information on how to control the diagram layout and use tools to further analyze the objects, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+For information on how to control the diagram layout and use tools to further analyze the objects, see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
 
 <a name="task_x4m_cny_3wb"/>
 
@@ -570,7 +570,7 @@ After you evaluate and determine that the asset is the right one for your needs,
 5.  Save the object in the location you want.
 
     > ### Note:  
-    > If the object you are saving is in SAP Datasphere, you must save and then deploy it before it can be added to the catalog. For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    > If the object you are saving is in SAP Datasphere, you must save and then deploy it before it can be added to the catalog. For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
 
 

@@ -112,7 +112,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     
     Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
 
-    \(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md).\)
+    \(see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).\)
     
     </td>
     </tr>
@@ -235,7 +235,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
         
         \[read-only\] Displays the deployment and error status of the object. 
 
-        For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+        For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
         
         </td>
         </tr>

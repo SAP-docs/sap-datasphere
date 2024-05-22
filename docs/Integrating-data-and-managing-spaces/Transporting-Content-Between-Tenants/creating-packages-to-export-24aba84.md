@@ -223,7 +223,7 @@ Users with the *DW Space Administrator* role can create packages:
     Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a806c67ed11749c788142775d2cc2494.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
     > ### Note:  
-    > Though modelers can add tables, views, ER models, and analytic models to a package, they cannot remove objects from a package.
+    > Though modelers can add objects to a package in the object editors, they cannot remove objects from a package.
 
 
 

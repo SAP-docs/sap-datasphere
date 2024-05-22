@@ -49,8 +49,8 @@ Typical types of dimensions include:
     A *Dimension* can point to a:
 
     -   *Dimension* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
-    -   *Text Entity* - An attribute in the \(source\) *Dimension* must be mapped to the \(target\) *Text Entity* identifier key column.
-    -   *Hierarchy* - The key attribute in the \(source\) *Dimension* must be mapped to the \(target\) *Hierarchy* child attribute key column.
+    -   *Text Entity* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Text Entity* identifier key column.
+    -   *Hierarchy* - Each key attribute in the \(source\) *Dimension* must be mapped to a \(target\) *Hierarchy* child attribute key column.
 
 5.  Complete or consult other sections as appropriate:
 
@@ -59,10 +59,10 @@ Typical types of dimensions include:
     -   *Associations* - Create associations to other entities \(see [Create an Association](../create-an-association-66c6998.md)\).
     -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](../Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
+    -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
 6.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
-    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
 

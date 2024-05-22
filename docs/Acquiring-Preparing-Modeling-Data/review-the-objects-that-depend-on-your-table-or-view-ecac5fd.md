@@ -55,6 +55,7 @@ Dependency Type
 Displays the type of the dependency, which can be:
 
 -   *Source* - The dependent object uses the present object as a source.
+-   *Target* - The dependent object uses the present object as target \(table with delta capture enabled, for example\)
 -   *Association* - The dependent object points to the present object with an association.
 
 

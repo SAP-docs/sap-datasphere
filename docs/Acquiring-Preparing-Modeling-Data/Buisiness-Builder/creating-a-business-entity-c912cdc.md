@@ -22,7 +22,7 @@ Business entities can define measures or attributes. Measures are quantifiable v
 
 In order to model a meaningful consumption model, business entities define associations between each other. All potential association targets can be pre-defined on the data layer in order to provide business users a variety of modeling options to choose from when preparing their use case-specific consumption model.
 
-Business entities can be modeled as a dimension or as a fact. The definition doesn't really differ but rather the intended usage within the consumption model. Dimensions are generally used to contain master data and must have a key defined. Facts are generally used to contain transactional data and must have at least one measure defined.
+Business entities can be modeled as a dimension or as a fact. Dimensions are generally used to contain master data and must have a key defined. Facts are generally used to contain transactional data and must have at least one measure defined.
 
 
 
@@ -46,31 +46,40 @@ Business entities can be modeled as a dimension or as a fact. The definition doe
     > ### Note:  
     > Once the object is saved, the technical name can no longer be modified.
 
-6.  Choose *Public Data Access* if you want to allow unrestricted access for this business entity.
+6.  \[optional\] Select the package to which the object belongs.
+
+    Packages are used to group related objects in order to facilitate their transport between tenants.
+
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+
+7.  Choose *Public Data Access* if you want to allow unrestricted access for this business entity.
 
     Keep in mind that in most cases data restrictions need to be applied. To do this, select an appropriate authorization scenario. More information: [Authorization Scenario](authorization-scenario-46d8c42.md)
 
-7.  Define the version of your business entity. More information: [Create Versions of an Object](create-versions-of-an-object-e13efeb.md)
+8.  Define the version of your business entity. More information: [Create Versions of an Object](create-versions-of-an-object-e13efeb.md)
 
-8.  If you feel that you have chosen the wrong type for your purpose, you can still convert your dimension into a fact, or vice versa.
+9.  If you feel that you have chosen the wrong type for your purpose, you can still convert your dimension into a fact, or vice versa.
 
-9.  Save your entries.
+10. Save your entries.
 
-10. Define the measures of your business entity. More information: [Define Measures](define-measures-903acb8.md)
+11. Define the measures of your business entity. More information: [Define Measures](define-measures-903acb8.md)
 
-11. Define the attributes of your business entity. More information: [Define Attributes](define-attributes-270bb3d.md)
+12. Define the attributes of your business entity. More information: [Define Attributes](define-attributes-270bb3d.md)
 
-12. Define the keys of your business entity. You need to define at least one unique key in order to use the business entity as a dimension later on. More information: [Define a Key](define-a-key-9748bab.md)
+13. Define the keys of your business entity. You need to define at least one unique key in order to use the business entity as a dimension later on. More information: [Define a Key](define-a-key-9748bab.md)
 
     In case you have taken over the key definition from the source, you need to verify the uniqueness of your key. Go to the *Key Definitions* tab and choose *Verify*.
 
-13. Associate the dimensions. More information: [Define Associations](define-associations-77cb7fc.md)
+14. Associate the dimensions. More information: [Define Associations](define-associations-77cb7fc.md)
 
-14. You can assign an authorization scenario, if you want to restrict the access to this business entity. More information: [Assigning an Authorization Scenario](assigning-an-authorization-scenario-2e62354.md)
+15. You can assign an authorization scenario, if you want to restrict the access to this business entity. More information: [Assigning an Authorization Scenario](assigning-an-authorization-scenario-2e62354.md)
 
-15. You can check your business entity in the data preview. A data preview is only possible if the underlying object in the Data Builder is deployed.
+16. You can check your business entity in the data preview. A data preview is only possible if the underlying object in the Data Builder is deployed.
 
-16. Once you are satisfied with the definition of your business entity, you can set the status of your version to *Ready to Use*. For more information on versions, see [Create Versions of an Object](create-versions-of-an-object-e13efeb.md).
+17. Once you are satisfied with the definition of your business entity, you can set the status of your version to *Ready to Use*. For more information on versions, see [Create Versions of an Object](create-versions-of-an-object-e13efeb.md).
 
 
 

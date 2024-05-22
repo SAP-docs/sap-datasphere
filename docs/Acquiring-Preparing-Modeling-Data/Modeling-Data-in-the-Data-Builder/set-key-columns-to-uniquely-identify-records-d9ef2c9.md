@@ -1,8 +1,21 @@
 <!-- loiod9ef2c91f6d647e584bad51999e441cd -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Set Key Columns to Uniquely Identify Records
 
 Set one or more columns as keys to uniquely identify records in an entity. Each value in a key column \(or each combination of values, when two or more key columns are set\) must be unique.
+
+This topic contains the following sections:
+
+-   [Keys and Associations](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_required_keys)
+-   [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys)
+
+
+
+<a name="loiod9ef2c91f6d647e584bad51999e441cd__section_required_keys"/>
+
+## Keys and Associations
 
 It is important to set the necessary keys for your entity, based on its *Semantic Usage*, and to be aware of the requirements for mapping to these keys when creating associations:
 
@@ -72,8 +85,8 @@ You must set one or more key attributes for a *Dimension*:
 A *Dimension* can point to a:
 
 -   *Dimension* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
--   *Text Entity* - An attribute in the \(source\) *Dimension* must be mapped to the \(target\) *Text Entity* identifier key column.
--   *Hierarchy* - The key attribute in the \(source\) *Dimension* must be mapped to the \(target\) *Hierarchy* child attribute key column.
+-   *Text Entity* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Text Entity* identifier key column.
+-   *Hierarchy* - Each key attribute in the \(source\) *Dimension* must be mapped to a \(target\) *Hierarchy* child attribute key column.
 
 
 
@@ -89,9 +102,9 @@ See [Create a Text Entity for Attribute Translation](create-a-text-entity-for-at
 </td>
 <td valign="top">
 
-You must set two or three key attributes for a *Text Entity*:
+You must set two or more key attributes for a *Text Entity*:
 
--   Identifier
+-   One or more identifiers
 -   Language Identifier
 -   Validity Start Date - if time-dependency is required \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\)
 
@@ -114,9 +127,9 @@ See [Creating an External Hierarchy](creating-an-external-hierarchy-dbac7a8.md).
 </td>
 <td valign="top">
 
-You must set exactly one key attribute for a *Hierarchy*:
+You must set one or more key attributes for a *Hierarchy*:
 
--   Child attribute of the parent-child hierarchy structure
+-   Child attributes of the parent-child hierarchy structure
 
 
 
@@ -174,4 +187,135 @@ A *Relational Dataset* can point to any other entity and should generally follow
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys"/>
+
+## Compound Keys and Representative Keys
+
+If you set more than one key column to uniquely identify records in a dimension, you should, in addition, specify a representative key, which is the column containing the most granular level of data. Specifying a representative key allows analytic tools to correctly consume the dimension.
+
+For example, in the `Cost Center` table, both the `Controlling Area` and `Cost Center` column are set as key columns and the `Cost Center` column is set as the representative key:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Controlling Area
+
+</th>
+<th valign="top">
+
+Cost Center
+
+</th>
+<th valign="top">
+
+Name
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1000
+
+</td>
+<td valign="top">
+
+Development
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1001
+
+</td>
+<td valign="top">
+
+Support
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1002
+
+</td>
+<td valign="top">
+
+Sales
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1003
+
+</td>
+<td valign="top">
+
+Training
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+2
+
+</td>
+<td valign="top">
+
+2000
+
+</td>
+<td valign="top">
+
+Development
+
+</td>
+</tr>
+</table>
+
+To define a compound key and set its representative key:
+
+1.  Open your table or view and set its *Semantic Usage* to *Dimension*.
+2.  Set two or more columns as keys.
+3.  In the *Attributes* section toolbar, click <span class="SAP-icons-V5"></span> \(Edit Compound Key\) to open the *Compound Key* dialog.
+4.  Select a key in the *Key Columns* section and click *Add* to identify it as the representative key and move it to the *Representative Key* section.
+5.  \[optional\] Reorder keys in the *Key Column\(s\)* section by clicking <span class="FPA-icons-V3"></span> \(Move Up\) and <span class="SAP-icons-V5"></span> \(Move Down\).
+
+    The *Compound Key* field shows the order of the key columns, with the representative key shown last and in bold.
+
+6.  Click *Close* to complete the definition of the compound key.
+
+> ### Note:  
+> When you define a compound key for a dimension and want to provide translations of the dimension members, you must map all key columns to the text entity. You can only provide translations for the representative key column. Other key columns cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
 

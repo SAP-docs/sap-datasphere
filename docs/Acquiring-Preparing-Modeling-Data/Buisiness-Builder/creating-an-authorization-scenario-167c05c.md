@@ -24,15 +24,24 @@ For example, a manager wants to access their employees' data. They only should s
 
 3.  Click *Create*.
 
-4.  Go to the *Data Restrictions* tab and click <span class="FPA-icons-V3"></span> *Data Restrictions*.
+4.  \[optional\] Select the package to which the object belongs.
 
-5.  Select a *Business Entity*.
+    Packages are used to group related objects in order to facilitate their transport between tenants.
 
-6.  You have access to the business entity's key definitions. It gives you access to key members. For each business entity used as data restriction, you need to map each key member to the data access control's criteria column.
+    > ### Note:  
+    > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
+
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+
+5.  Go to the *Data Restrictions* tab and click <span class="FPA-icons-V3"></span> *Data Restrictions*.
+
+6.  Select a *Business Entity*.
+
+7.  You have access to the business entity's key definitions. It gives you access to key members. For each business entity used as data restriction, you need to map each key member to the data access control's criteria column.
 
     To learn more about defining keys for a business entity, see [Define a Key](define-a-key-9748bab.md).
 
-7.  Click *Save* to save your authorization scenario.
+8.  Click *Save* to save your authorization scenario.
 
     You can define several restrictions on several business entities within the same authorization scenario.
 

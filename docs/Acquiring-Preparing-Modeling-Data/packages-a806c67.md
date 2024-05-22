@@ -50,7 +50,7 @@ In our example:
 
 Only a user with the *DW Space Administrator* role \(or equivalent privileges\) can create a package \(see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
-Once one or more packages is created in your space, the *Package* property becomes available in the table, view, ER model and analytic model editors, and modelers can add their objects to the package \(see [Add an Object to a Package](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_add)\).
+Once one or more packages is created in your space, the *Package* property becomes available in the object editors, and modelers can add their objects to the package \(see [Add an Object to a Package](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_add)\).
 
 
 
@@ -60,7 +60,7 @@ Once one or more packages is created in your space, the *Package* property becom
 
 Users with the *DW Space Administrator* role \(or equivalent privileges\) can add any object to a package using the package editor \(see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
-Modelers can add tables, view, ER models, and analytic models to a package from the relevant editor:
+Modelers can add objects to a package from the relevant editor:
 
 1.  Open your object in its editor.
 2.  In the property sheet, select the package from the *Package* field.

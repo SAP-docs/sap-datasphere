@@ -477,7 +477,7 @@ Available properties:
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
 
--   *RFC Serialization*
+-   *RFC Serialization* \(requires Data Provisioning Agent version 2.3.7.2 or higher\)
 
 -   \[if *Streaming Read* = *On*\] *Batch Size, MB*
 

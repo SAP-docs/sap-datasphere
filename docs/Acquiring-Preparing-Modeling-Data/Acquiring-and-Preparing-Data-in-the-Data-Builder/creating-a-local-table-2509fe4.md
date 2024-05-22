@@ -151,7 +151,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
     \[read-only\] Displays the deployment and error status of the object. 
 
-    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>
@@ -176,13 +176,13 @@ This procedure explains how to create an empty table by defining its columns. Yo
         > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics* monitor.
 
     -   *Partitions*- Define partitions for your local table. For more information, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
-    -   *Dependent Objects*- If your entity is used as a source or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../Creating-Finding-Sharing-Objects/review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
+    -   *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 
 5.  \[optional\] Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md) 
 
 6.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
-    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
 7.  Once your table is deployed, you can:
 
@@ -190,7 +190,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     -   Manually add, edit, duplicate, or delete individual records \(see [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)\).
     -   Understand the lineage and impacts of the table
 
-        \(see [Impact and Lineage Analysis](../Creating-Finding-Sharing-Objects/impact-and-lineage-analysis-9da4892.md)\).
+        \(see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md)\).
 
 
 

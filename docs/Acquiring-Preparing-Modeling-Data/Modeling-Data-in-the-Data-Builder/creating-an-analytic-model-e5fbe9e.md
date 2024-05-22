@@ -101,7 +101,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     
     \[read-only\] Displays the deployment and error status of the object.
 
-    For more information, see [Saving and Deploying Objects](../Creating-Finding-Sharing-Objects/saving-and-deploying-objects-7c0b560.md).
+    For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>
@@ -136,7 +136,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     </td>
     <td valign="top">
     
-    You can change the alias of this item. The alias is the name that is shown in the story in SAP Analytics Cloud.
+    You can change the alias of this item.The alias is the name that is shown in the story in SAP Analytics Cloud.
 
     > ### Example:  
     > In many cases you need to have a more specific name for a field than the source provides. For example, the field name is *Costcenter*, but you want to specify if it is to *Receiving Costcenter* or *Sending Costcenter*.
@@ -153,7 +153,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     </td>
     <td valign="top">
     
-    You can add or deselect measures.
+    You can add or deselect measures. You can copy measures \(which are not fact source measures\) to create a new measure with same properties.
     
     </td>
     </tr>
@@ -177,7 +177,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     </td>
     <td valign="top">
     
-    You can add or deselect attributes.
+    You can add or deselect attributes. Attributes used in associations cannot be unselected.
     
     </td>
     </tr>
@@ -199,7 +199,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
 7.  You can choose <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Support Information* to export information from the runtime CSN for support to analyze it.
 
-8.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing or Previewing Data in Data Builder Objects](../viewing-or-previewing-data-in-data-builder-objects-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
+8.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
 
     > ### Note:  
     > When you change an analytic model for which a story has been defined, and you deploy it again, you need to open the story in SAP Analytics Cloud and save it again.

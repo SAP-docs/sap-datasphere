@@ -14,7 +14,7 @@ With a currency conversion measure, you can convert currencies.
 
 The tables and view containing currencies and exchange rates `SAP.CURRENCY.TABLE.TCUR*` are available in the current space.
 
-You can create these tables in the *Data Builder* \(see [Enabling Currency Conversion with TCUR\* Tables and Views](../Creating-Finding-Sharing-Objects/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\).
+You can create these tables in the *Data Builder* \(see [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\).
 
 
 
@@ -71,7 +71,9 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     </tr>
     </table>
     
-3.  Edit the following properties:
+3.  Select the source measure. The source measure has to be a fact source and has to refer to a measure in the underlying fact with semantic type *Amount with Currency*. The measure in the fact has to have an assigned currency field.
+
+4.  Define the currency properties:
 
 
     <table>
@@ -86,18 +88,6 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     Description
     
     </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Source Measure
-    
-    </td>
-    <td valign="top">
-    
-    The source measure has to be a fact source and has to refer to a measure in the underlying fact with semantic type *Amount with Currency*. The measure in the fact has to have an assigned currency field.
-    
-    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -150,6 +140,24 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     The exchange rate types are predefined.
     
     </td>
+    </tr>
+    </table>
+    
+5.  Define further properties:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
     </tr>
     <tr>
     <td valign="top">

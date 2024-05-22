@@ -946,7 +946,7 @@ You can control the tables in *Tasks* and *Statements* in the following ways:
         > -   The filtering options available depend on the data type of the column you filter on.
         > -   Filters applied to text columns are case-sensitive.
         > -   You can enter filter or sort values in multiple columns.
-        > -   Previewing a SQL view isn't possible if one of the view's objects is shared from another space and has an input parameter.
+        > -   You cannot view data in an SQL view if any of its sources is shared from another space and has an input parameter.
         > 
         > -   To increase performance, only the first 1,000 rows are displayed. Use filters to find the data you are looking for. Filters are applied to all rows, but only the first filtered 1,000 rows are displayed.
 

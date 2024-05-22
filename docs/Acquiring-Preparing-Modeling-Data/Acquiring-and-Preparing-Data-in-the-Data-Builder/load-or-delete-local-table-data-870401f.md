@@ -43,6 +43,16 @@ Review the matching of columns in your table with those in your CSV file.
 > -   Time columns: `HH:MI:SS` or `HH24:MI[:SS]` 
 > -   Date time columns: `YYYY-MM-DD HH:MI:SS`
 
+Once the load action is completed, you can click on the notification from the notification area to navigate to the detailed log:
+
+![](images/Notification_9d6e4cd.png)
+
+![](images/Upload_File_log_5789482.png)
+
+Alternatively, you can navigate to the detailed logs via the menu System Monitor -\> Logs:
+
+![](images/System_Monitor_Logs_a191f94.png)
+
 
 
 <a name="loio870401f211f94132909bd9f2fafd91b2__section_qdq_nvw_mzb"/>
