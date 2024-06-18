@@ -61,3 +61,8 @@ Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third
 
 With connection type *Open Connectors* you can now create connections to the third-party data sources available as connector instances with your SAP Open Connectors account.
 
+**Related Information**  
+
+
+[Open Connectors Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9bfe7db51216449d985a0b59f5e181c4.html "Use an Open Connectors connection to access data from sources that are connected to the SAP Open Connectors account that is integrated with your space.") :arrow_upper_right:
+

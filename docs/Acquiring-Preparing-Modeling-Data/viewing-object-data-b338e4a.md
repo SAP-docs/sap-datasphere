@@ -12,7 +12,7 @@ This topic contains the following sections:
 -   [Sort Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_sort)
 -   [Filter Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_filter)
 -   [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
--   [Preview Data in Data Flows and E/R Models](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)
+-   [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)
 
 
 
@@ -20,7 +20,7 @@ This topic contains the following sections:
 
 ## Open the Data Viewer
 
-You can view data in the table, graphical view, SQL view, and transformation flow editors. The E/R model and data flow editors provide a limited data preview \(see [Preview Data in Data Flows and E/R Models](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)\).
+You can view data in the table, graphical view, SQL view, E/R model, analytic model, and transformation flow editors. The analytic model has an additional analytic data viewer \(see [Using the Data Preview](Modeling-Data-in-the-Data-Builder/using-the-data-preview-9f1fa73.md)\). The data flow editor provides a limited data preview \(see [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)\). 
 
 > ### Note:  
 > Users with the standard *DW Modeler* role can preview data in any object in their space. Users with the *DW Viewer* role can only preview data output by views with the *Expose for Consumption* switch enabled. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
@@ -89,12 +89,12 @@ You can view data in the table, graphical view, SQL view, and transformation flo
     <tr>
     <td valign="top">
     
-    Export Debug CSN
+    <span class="SAP-icons-V5"></span> \(Export Support Information\)
     
     </td>
     <td valign="top">
     
-    Download a JSON file containing technical information to send to SAP support.
+    Download a file containing technical information to send to SAP support.
     
     </td>
     </tr>
@@ -195,9 +195,9 @@ Click *OK* to update the viewer or *Cancel* to erase your changes. To return to 
 
 <a name="loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview"/>
 
-## Preview Data in Data Flows and E/R Models
+## Preview Data in Data Flows
 
-You can preview data for any entity displayed in an E/R model or any source or output of a data flow \(intermediate nodes do not support data preview\), but the following limitations apply:
+You can preview data for any source or output of a data flow \(intermediate nodes do not support data preview\), but the following limitations apply:
 
 -   The preview can only show the first 1,000 records retrieved from the object, and any filters are only applied on these 1,000 records.
 -   The complex filtering available in *Define Filter* dialog is not available. You can only filter only on simple values by clicking a column header and selecting <span class="FPA-icons-V3"></span> \(Filter\).

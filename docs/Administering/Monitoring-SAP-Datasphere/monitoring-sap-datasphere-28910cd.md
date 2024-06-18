@@ -622,7 +622,7 @@ Shows the SAP HANA database technical name of the target table.
 </td>
 <td valign="top">
 
-Shows a link you can click to view all the statements of the task in the *Statements* table.
+Shows a link you can click to view all the statements of the task in the *Statements* tab, if the information is available.
 
 > ### Note:  
 > -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
@@ -878,6 +878,25 @@ Shows if the statement has an out-of-memory error \("Yes" is then displayed\) or
 <td valign="top">
 
 If the statement is related to a task, it shows the identifier of the task within a link, which takes you to the *Tasks* tab filtered on this task.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Node*
+
+</td>
+<td valign="top">
+
+If the statement exceeds the thresholds specified in the option *Enable Expensive Statement Tracing* in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
+
+-   Shows the name of the elastic compute node if the statement is run on an elastic compute node.
+
+-   Shows a hyphen \(-\) if the statement is run on the main instance.
+
+
+
 
 </td>
 </tr>

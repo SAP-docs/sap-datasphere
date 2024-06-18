@@ -24,7 +24,7 @@ A calculated measure references other measures and allows the combination of mea
     </th>
     <th valign="top">
 
-    Desription
+    Description
     
     </th>
     </tr>

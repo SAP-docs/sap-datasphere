@@ -106,7 +106,9 @@ You can specify from 128 GB \(minimum\), by increments of 64 GB.
 
 Set the memory allocated to your tenant.
 
-You can specify from 32 GB \(minimum\), by increments of 16 GB.
+You can increase the amount of memory from 32 GB \(minimum\), by increments of 16 GB. You can reduce the amount of memory, but the lower limit depends on how much space you have assigned to space management.
+
+For more information, see [Allocate Storage to a Space](../Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md).
 
 </td>
 </tr>
@@ -136,7 +138,7 @@ Enable this to access the SAP HANA Automated Predictive Library \(APL\) and SAP 
 </tr>
 </table>
 
-**Additional Data Warehouse Configuration**
+**Additional Configuration**
 
 
 <table>
@@ -201,8 +203,6 @@ SAP BW Bridge includes SAP BTP, ABAP environment, runtime and compute.
 The process for allocating capacity units to SAP BW Bridge is not part of the configuration process.
 
 > ### Note:  
-> -   When you provision a non-productive tenant, you’ll need to request the SAP BW bridge Cloud-ABAP Service for your tenant by opening an incident via ServiceNow with the component DWC-BWB.
-> 
 > -   First finalize the size configuration of your tenant, then open the incident as a next step. Once the incident has been processed, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
 > 
 > -   SAP BW Bridge is not available in all regions. See SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).

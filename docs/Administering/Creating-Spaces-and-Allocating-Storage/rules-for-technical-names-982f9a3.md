@@ -51,6 +51,23 @@ Also, the keywords that are reserved for the SAP HANA database cannot be used in
 <tr>
 <td valign="top">
 
+Elastic Compute Node
+
+</td>
+<td valign="top">
+
+The elastic compute node technical name can only contain lowercase letters \(a-z\) and numbers \(0-9\). It must contain the prefix: ds. The minimum length is 3 and the maximum length is 9 characters.
+
+</td>
+<td valign="top">
+
+9
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP BW bridge instance
 
 Remote table generated during the import of analysis authorizations from a SAP BW or SAP BW∕4HANA system

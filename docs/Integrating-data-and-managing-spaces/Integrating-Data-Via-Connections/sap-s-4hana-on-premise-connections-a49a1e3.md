@@ -91,7 +91,23 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the import wizard. Note that corresponding dependent entities are not considered in the import. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
+You can use the connection to import semantically-rich entities from an SAP S/4HANA system which you have selected in the *Import Entities* wizard. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
+
+You can import extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system. For more information, see [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation.
+
+The options to access the data depend on the version of the SAP S/4HANA system. You can see the data access option when you have selected a connection in the *Import Entities* wizard:
+
+-   *Replication Flow to Local Tables* - available if the connected system is SAP S/4HANA 2021 or higher \(SAP\_BASIS 756 and higher\). It's the default and recommended option for these system versions.
+
+-   *Remote Tables* - available if the connected system is SAP S/4HANA 1809 or higher \(SAP\_BASIS 753 and higher\)
+
+    In the *Import Entities* wizard, you can change from the default *Replication Flow to Local Tables* to *Remote Tables* if your system is SAP S/4HANA 2021 or higher \(SAP\_BASIS 756 and higher\).
+
+
+> ### Note:  
+> Note that associated entities can only be included in the import when data access is *Replication Flow to Local Tables*. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:.
+
+
 
 </td>
 </tr>

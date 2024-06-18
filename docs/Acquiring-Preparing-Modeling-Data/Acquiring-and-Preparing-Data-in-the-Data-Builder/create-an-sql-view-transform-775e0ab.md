@@ -35,7 +35,10 @@ If you are not comfortable with SQL, you can still build a view by using the *Gr
 
     -   Access auto-complete suggestions for keywords and object names including source tables by typing.
 
-    -   Drag source tables from the *Repository* to the *SQL View Editor*.
+    -   Drag source objects to the *SQL View Editor*.
+
+        > ### Note:  
+        > If you add a source view that has input parameters, the source and its parameters will be added to your code and you will need to enter a value to resolve each parameter.
 
         > ### Note:  
         > If the delta capture setting is enabled for a source table, the columns *Change Date* and *Change Type* are automatically mapped to these columns in the target table. Mapping these columns \(or a calculated column that contains the content of these columns\) to any other target column is not permitted. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).

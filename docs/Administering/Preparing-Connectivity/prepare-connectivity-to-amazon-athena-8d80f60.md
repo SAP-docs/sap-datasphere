@@ -17,3 +17,8 @@ Before you can use the connection for creating views and accessing data via remo
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 
+**Related Information**  
+
+
+[Amazon Athena Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1b21cd00fa9842f5ba747047b80fe3ab.html "Use an Amazon Athena connection to access data from Amazon Athena, an interactive query service which can be used to analyze data in Amazon S3 using standard SQL.") :arrow_upper_right:
+

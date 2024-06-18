@@ -4,7 +4,7 @@
 
 # Creating a Transformation Flow
 
-Create a transformation flow to load data from one or more source tables, apply transformations \(such as a join\), and output the result in a target table. You can load a full set of data from one or more source tables to a target table. You can add local tables and also remote tables located in BW Bridge spaces. Note that remote tables located in SAP BW bridge spaces must be shared with the SAP Datasphere space you are using to create your transformation flow. You can also load delta changes \(including deleted records\) from one source table to a target table.
+Create a transformation flow to load data from one or more sources, apply transformations \(such as a join\), and output the result in a target table. You can load a full set of data from one or more sources to a target table. You can add local tables and views, Open SQL schema objects, and also remote tables located in BW Bridge spaces. You can also load delta changes \(including deleted records\) from one source table to a target table.
 
 
 
@@ -12,9 +12,18 @@ Create a transformation flow to load data from one or more source tables, apply 
 
 A transformation flow run is a one-time event that completes when the relevant data is loaded to the target table successfully. You can run a transformation flow multiple times, for example if you are loading delta changes to the target table.
 
+> ### Note:  
+> Views and Open SQL schema objects that reference remote tables \(either directly or indirectly\) are not supported. However, views that reference remote tables in BW Bridge spaces are supported.
+
+> ### Note:  
+> If a data access control has been applied to a view or to an Open SQL schema object \(either directly or indirectly\), then the view or the Open SQL schema object is not supported.
+
+> ### Note:  
+> Remote tables located in SAP BW bridge spaces must be shared with the SAP Datasphere space you are using to create your transformation flow.
+
 Creating a transformation flow involves two important steps:
 
--   Creating a graphical view transform or an SQL view transform to load data from source tables and to transform data.
+-   Creating a graphical view transform or an SQL view transform to load data from sources and to transform data.
 
 -   Adding a target table to the transformation flow and mapping the columns from the graphical view transform or SQL view transform created in the first step to the target table.
 
@@ -31,7 +40,7 @@ Creating a transformation flow involves two important steps:
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Transformation Flow* to open the editor. The system displays the *New Transformation Flow* screen.
 
-2.  Create a graphical view transform or an SQL view transform to load data from source tables and to transform data. To create a graphical view transform, click the *Graphical View Transform* button \(see [Create a Graphical View Transform](create-a-graphical-view-transform-c65e37c.md)\). To create an SQL view transform, click the *SQL View Transform* button \(see [Create an SQL View Transform](create-an-sql-view-transform-775e0ab.md)\).
+2.  Create a graphical view transform or an SQL view transform to load data from sources and to transform data. To create a graphical view transform, click the *Graphical View Transform* button \(see [Create a Graphical View Transform](create-a-graphical-view-transform-c65e37c.md)\). To create an SQL view transform, click the *SQL View Transform* button \(see [Create an SQL View Transform](create-an-sql-view-transform-775e0ab.md)\).
 
 3.  Click the *Back* button to return to the *Transformation Flow Editor*. Add or create a target table that the transformation flow will write its data to \(see [Add or Create a Target Table](add-or-create-a-target-table-0950746.md)\).
 
@@ -114,9 +123,9 @@ Creating a transformation flow involves two important steps:
 
     -   Initial and Delta
 
-        The first time you run the transformation flow, the system will load all the full set of data to the target table. For subsequent runs, the system will only load delta changes to the target table.
-
         If you want to load delta changes from a source table, you need to ensure that the value of the option *Delta Capture* is *On* for both the source table and for the target table.
+
+        The first time you run the transformation flow, the system will load all the full set of data to the target table. For subsequent runs, the system will only load delta changes to the target table.
 
 
 

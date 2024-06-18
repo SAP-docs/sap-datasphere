@@ -4,7 +4,7 @@
 
 # Create a Graphical View Transform
 
-Create a graphical view transform that uses SQL syntax to combine and transform data as part of your transformation flow. You can drag and drop source tables from the *Repository*, join them as appropriate, add other operators to remove or create columns and filter or aggregate data.
+Create a graphical view transform that uses SQL syntax to combine and transform data as part of your transformation flow. You can drag and drop sources from the *Repository* tab or from the *Sources* tab, join them as appropriate, add other operators to remove or create columns and filter or aggregate data.
 
 
 
@@ -14,9 +14,9 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
 
 2.  Create a new *Graphical View Transform* for your transformation flow by clicking the *Graphical View Transform* button.
 
-3.  The system displays the *Graphical View Editor*. Add a source table. For more information, see [Add a Source Table](add-a-source-table-ec702fe.md).
+3.  The system displays the *Graphical View Editor*. Add a source. For more information, see [Add a Source](add-a-source-ec702fe.md).
 
-4.  Optional: Drag additional source tables from the repository and drop them onto a source table to create a join or union. For more information, see [Create a Join](create-a-join-bcb5f48.md) and [Create a Union](create-a-union-9cd6fbf.md).
+4.  Optional: Drag additional sources from the *Repository* tab or from the *Sources* tab and drop them onto a source to create a join or union. For more information, see [Create a Join](create-a-join-bcb5f48.md) and [Create a Union](create-a-union-9cd6fbf.md).
 
 5.  Click a node in the diagram to display tools for creating operators and performing other actions:
 

@@ -115,3 +115,11 @@ You can allocate specific amounts of memory and disk storage to a space or disab
 3.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.
 
 
+
+
+<a name="loiof414c3d62bfe49b38e2cfdd7b4e7d786__result_px4_425_4bc"/>
+
+## Results
+
+To view the total storage available and the amount assigned to and used by all spaces, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
+

@@ -26,7 +26,7 @@ You can import entities from the following types of sources:
 We recommend that, where possible, you use the *Import Entities* wizard for importing CDS views from these connection types, as it as able to leverage their rich semantics to import higher-level objects and to follow associations to dimensions, hierarchies, and text entities and include them in the import.
 
 > ### Note:  
-> Only SAP S/4HANA Cloud connections can include associated entities in the import. SAP S/4HANA on-premise connections cannot follow associations, but the information is included in each imported object's CSN definition, and associations will be automatically recreated in SAP Datasphere if their target entities are already present or are subsequently imported.
+> Only SAP S/4HANA Cloud and SAP S/4HANA on-premise connections from SAP\_BASIS Release 756 onwards \(with a connection based on SAP Note [3463326](https://me.sap.com/notes/3463326)\) can include associated entities in the import. On-premise connections that do not meet these requirements cannot follow associations, but the information is included in each imported object's CSN definition, and associations will be automatically recreated in SAP Datasphere if their target entities are already present or are subsequently imported.
 
 
 
@@ -78,7 +78,7 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </table>
     
     > ### Note:  
-    > \[SAP S/4HANA Cloud\] If your connection supports using replication flows to load data, the *Data Access* field is displayed and defaults to *Replication Flow to Local Tables*. We recommend using this option to optimize load times but you can, if you prefer, revert to creating *Remote Tables*.
+    > If your connection supports using replication flows to load data, the *Data Access* field is displayed and defaults to *Replication Flow to Local Tables*. We recommend using this option to optimize load times but you can, if you prefer, revert to creating *Remote Tables*.
 
 3.  On the *Select Entities* page, select the entities that you want to import from the *Results* list, and click *Next Step*.
 
@@ -228,7 +228,7 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     </table>
     
     > ### Note:  
-    > When importing from an SAP S/4HANA on-premise connection, only a business entity and a remote table are created for the selected entity. Associated objects are not created.
+    > When importing from an SAP S/4HANA on-premise connection using data access *Remote Tables*, only a business entity and a remote table are created for the selected entity. Associated objects are not created.
 
     Each object has the following read-only properties:
 
@@ -308,7 +308,7 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
 
 6.  Navigate to the appropriate objects to review data access:
 
-    -   *Replication Flow to Local Tables* - \[SAP S/4HANA Cloud\] Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Running a Flow](running-a-flow-5b591d4.md)\).
+    -   *Replication Flow to Local Tables* - Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Running a Flow](running-a-flow-5b591d4.md)\).
     -   *Remote Tables* - By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Local Tables* - In cases where only local tables are imported, you must create your own flow to load data to them \(see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\).
 

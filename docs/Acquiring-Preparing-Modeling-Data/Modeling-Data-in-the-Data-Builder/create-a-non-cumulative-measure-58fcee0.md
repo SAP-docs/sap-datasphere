@@ -30,7 +30,7 @@ For example the measure can describe items in stock in a warehouse, or the bank 
     </th>
     <th valign="top">
 
-    Desription
+    Description
     
     </th>
     </tr>
@@ -117,7 +117,7 @@ For example the measure can describe items in stock in a warehouse, or the bank 
     </td>
     <td valign="top">
     
-    You can set a time interval to improve performance of the calculation of the non-cumulative. Choose dates which are likedly to be used by any imaginable, meaningful report for looking at the data.
+    You can set a time interval to improve performance of the calculation of the non-cumulative. Choose dates which are likely to be used by any imaginable, meaningful report for looking at the data.
     
     </td>
     </tr>

@@ -32,11 +32,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 
     For more information, see [Add a Source](add-a-source-1eee180.md).
 
-    If your source has an iput parameter, the *Map Input Parameter* dialog appears. You can either set a value for each parameter or map to an input parameter in the view. If you choose to set a value, you can either enter a value manually or, if your input parameter has a predefined default value, get access to a list of predefined values with the *Value Help Dialog*. Only the first 10 records are shown by default. You can see more by using the *Search* bar or clicking *More*.
-
-    For more information, see [Create an Input Parameter](create-an-input-parameter-53fa99a.md).
-
-3.  Optional. Drag additional sources from the *Source Browser* and drop them on your source to create a join or union.
+3.  \[optional\] Drag additional sources from the *Source Browser* and drop them on your source to create a join or union.
 
     For more information, see [Create a Join](create-a-join-947d6d8.md) and [Create a Union](create-a-union-5c3d354.md).
 
@@ -318,6 +314,32 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Data Validation Status
+    
+    </td>
+    <td valign="top">
+    
+    Displays the status of the last data validation. 
+
+    Click the button to open the *Data Validation* panel \(see [Validating View Data](validating-view-data-ed4063d.md)\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Validated On
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the date and time of the last data validation.
+    
+    </td>
+    </tr>
     </table>
     
 6.  Based on the *Semantic Usage* of your entity, review and modify its *Columns*, *Attributes*, and/or *Measures*:
@@ -328,6 +350,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     -   *Hierarchy with Directory* - Define all the necessary attributes and settings \(see [Creating a Hierarchy with Directory](Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\).
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - Review the list of columns \(see [Columns](Acquiring-and-Preparing-Data-in-the-Data-Builder/columns-8f0f40d.md)\).
+    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 7.  Complete or consult other sections as appropriate:
 

@@ -15,7 +15,7 @@ From the *Remote Tables* monitor, select one or more remote tables and click *Da
 > 
 > -   The remote table must be connected via SAP HANA smart data integration \(in the connection, *Data Provisioning* option is set to *Data Provisioning Agent*\) and not via SAP HANA smart data access.
 
-When you disable the real-time data replication, it changes the data access from *Replicated \(Real-Time\)* to *Replicated \(Snapshot\)*. It preserves the replica table and its replicated data to allow further data replication and consumption. For more information, see [Disabling Real-Time Data Replication](disabling-real-time-data-replication-82380e6.md).
+When you disable the real-time data replication, it changes the data access from *Replicated \(Real-Time\)* to *Replicated \(Snapshot\)*. It preserves the replica table and its replicated data to allow further data consumption.
 
 Switching the data access from *Replicated \(Real-Time\)* to *Replicated \(Snapshot\)* allows you to:
 

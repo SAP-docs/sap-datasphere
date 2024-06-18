@@ -134,8 +134,8 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 -   Most SAP Datasphere apps consume a local table with delta capture through the *Active Records* table only. In these cases, local tables behave the same way independent of whether *Delta Capture* is set to "*On*" or "*Off*". For examples in Graphical Views, SQL Views, E/R Modeler or Business Builder.
 -   The following SAP Datasphere apps also interact with the Delta Capture Table that contains the delta columns:
     -   *Transformation Flow*:
-        -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source Table](add-a-source-table-ec702fe.md)
-        -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Source and Target Tables](processing-changes-to-source-and-target-tables-705292c.md) and [Add or Create a Target Table](add-or-create-a-target-table-0950746.md) 
+        -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source](add-a-source-ec702fe.md)
+        -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](processing-changes-to-sources-and-target-tables-705292c.md) and [Add or Create a Target Table](add-or-create-a-target-table-0950746.md) 
 
     -   *Replication Flow*: The Delta Capture Table can be used as source \(with load type *Initial Only*\) or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add a Source](add-a-source-7496380.md).
     -   *Table Editor*:

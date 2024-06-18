@@ -11,7 +11,8 @@ This topic contains the following sections:
 -   [Remote Tables](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_rt_S4_OP)
 -   [Data Flows](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_df_S4_OP)
 -   [Replication Flows](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_rf_S4_OP)
--   [Model Import](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
+-   [Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
+-   [Model Import \(Data Access: Replication Flow to Local Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP_replication_flow)
 
 
 
@@ -80,9 +81,11 @@ Before you can use the connection for replication flows, the following is requir
 
 <a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP"/>
 
-## Model Import
+## Model Import \(Data Access: Remote Tables\)
 
-Before you can use the connection to import entities, the following is required:
+Supported source versions: SAP S/4HANA 1809 or higher \(SAP\_BASIS 753 and higher\)
+
+Before you can use the connection to import entities with data access *Remote Tables*, the following is required:
 
 
 
@@ -235,6 +238,10 @@ Before you can use the connection to import entities, the following is required:
 
     For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
+-   In the side navigation area of SAP Datasphere, click *System* \> *Administration* \> *Data Source Configuration* \> *On-premise data sources*, you have added the location ID of your Cloud Connector instance.
+
+    For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
+
 -   In *System* \> *Configuration* \> *Data Integration* \> *Live Data Connections \(Tunnel\)*, you have created a live data connection of type tunnel to SAP S/4HANA.
 
     For more information, see [Create SAP S/4HANA Live Data Connection of Type Tunnel](create-sap-s-4hana-live-data-connection-of-type-tunnel-095dbdf.md).
@@ -242,9 +249,17 @@ Before you can use the connection to import entities, the following is required:
 
 
 
-### Supported Source Versions
+<a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP_replication_flow"/>
 
--   Supported source versions: SAP S/4HANA 1809 or higher
+## Model Import \(Data Access: Replication Flow to Local Tables\)
+
+Supported source versions: SAP S/4HANA 2021 or higher \(SAP\_BASIS 756 and higher\)
+
+Before you can use the connection to import entities with data access *Replication Flow to Local Tables*, the following is required:
+
+1.  You have met all prerequisites mentioned in section [Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP).
+
+2.  You have met all prerequisites mentioned in SAP Note [3463326](https://me.sap.com/notes/3463326).
 
 
 **Related Information**  

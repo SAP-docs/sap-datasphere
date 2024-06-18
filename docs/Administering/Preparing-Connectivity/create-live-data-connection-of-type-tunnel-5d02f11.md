@@ -12,7 +12,7 @@ To securely connect and make http requests to SAP BW∕4HANA, you need to connec
 
 ## Prerequisites
 
-See the prerequisites 1 to 4 in [Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md).
+See the prerequisites 1 to 5 in [Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md).
 
 
 
@@ -43,6 +43,9 @@ See the prerequisites 1 to 4 in [Preparing SAP BW/4HANA Model Transfer Connectiv
 
 7.  Select the Location ID.
 
+    > ### Note:  
+    > In the next step, you will need to specify the virtual host that is mapped to your on-premise system. This depends on the settings in your selected Cloud Connector location.
+
 8.  Add your SAP BW∕4HANA host name, HTTPS port, and client.
 
     Use the virtual host name and virtual port that were configured in the Cloud Connector.
@@ -54,7 +57,7 @@ See the prerequisites 1 to 4 in [Preparing SAP BW/4HANA Model Transfer Connectiv
     > ### Note:  
     > You must know which languages are installed on your SAP BW∕4HANA system before adding a language code. If the language code you enter is invalid, SAP Datasphere will default to the language specified by your system metadata.
 
-10. Under *Authentication Method* select *User Name and Password*.
+10. Under *Authentication Method*, select *User Name and Password*.
 
 11. Enter user name \(case sensitive\) and password of the technical user for the connection.
 

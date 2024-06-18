@@ -12,7 +12,7 @@ Data lake is a fully managed cloud service for securely storing and analyzing la
 
 Data lake includes elastically scalable compute to provide high-performance analysis on-demand, and enabling cost control when it isn’t in use. It’s fully integrated into SAP HANA Cloud, sharing common security, tenancy, and tooling.
 
-For more information on data lake, please visit the [SAP HANA, Data Lake](https://help.sap.com/viewer/product/SAP_HANA_DATA_LAKE/cloud/en-US) product page.
+For more information on data lake, please visit the [SAP HANA Cloud, Data Lake](https://help.sap.com/docs/hana-cloud-data-lake) product page.
 
 
 

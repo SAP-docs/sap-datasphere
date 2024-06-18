@@ -12,7 +12,7 @@ To securely connect to SAP S/4HANA on-premise when searching for ABAP CDS Views 
 
 ## Prerequisites
 
-See: [Model Import](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
+See: [Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
 
 
 
@@ -40,6 +40,9 @@ See: [Model Import](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#lo
 6.  Set the *Connection Type* to *Tunnel*.
 
 7.  Select the Location ID.
+
+    > ### Note:  
+    > In the next step, you will need to specify the virtual host that is mapped to your on-premise system. This depends on the settings in your selected Cloud Connector location.
 
 8.  Add your SAP S/4HANA host name, HTTPS port, and client.
 

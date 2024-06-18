@@ -19,6 +19,7 @@ Any object can be saved, but only valid objects can be deployed for use in your 
 
 -   [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md)
 -   [Validating Objects](validating-objects-685b1e0.md)
+-   [Validating View Data](validating-view-data-ed4063d.md)
 
 
 

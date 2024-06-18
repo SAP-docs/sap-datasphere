@@ -281,6 +281,18 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
+        *Generic SFTP* \(data flows\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         *Confluent* - Confluent Platform on-premise only \(replication flows\)
         
         </td>

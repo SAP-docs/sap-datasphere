@@ -215,6 +215,22 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
+    Object Thread Count for Delta Loads
+    
+    </td>
+    <td valign="top">
+    
+    Ennter the number of threads to be used for parallel processing during delta load.
+
+    This option is available for SLT tables, CDS views, and SQL service objects that have load type *Initial and Delta*.
+
+    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Target Columns
     
     </td>

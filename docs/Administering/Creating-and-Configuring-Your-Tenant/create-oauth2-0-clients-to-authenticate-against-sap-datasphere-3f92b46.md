@@ -17,7 +17,7 @@ Users that have access to an OAuth client can:
 -   [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API.") :arrow_upper_right: 
 
     > ### Note:  
-    > Consuming exposed data in third-party clients, tools, and apps via an OData service requires a three-legged OAuth2.0 flow with type `authorization_code`
+    > Consuming exposed data in third-party clients, tools, and apps via an OData service requires a three-legged OAuth2.0 flow with type `authorization_code`.
 
 
 
@@ -111,6 +111,9 @@ Users that have access to an OAuth client can:
 
     > ### Note:  
     > Once you close the dialog, the secret is no longer available.
+
+    > ### Note:  
+    > Clients created before v2024.08 have a *Show Secret* button, which allows you to display and copy the secret at any time after the client is created.
 
 
     

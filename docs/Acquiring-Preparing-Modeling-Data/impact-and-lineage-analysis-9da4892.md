@@ -4,7 +4,7 @@
 
 # Impact and Lineage Analysis
 
-The *Impact and Lineage Analysis* diagram helps you to understand the lineage \(or data provenance\) of a selected object, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.
+The *Impact and Lineage Analysis* diagram helps you to understand the lineage \(or data provenance\) of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.
 
 This topic contains the following sections:
 
@@ -12,6 +12,7 @@ This topic contains the following sections:
 -   [Control the Diagram Layout](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_exploring)
 -   [Display Object Properties and Analyze or Open Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_properties)
 -   [Dependency Analysis Mode](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_dependency_analysis)
+-   [Column Analysis](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_column_analysis)
 -   [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)
 
 
@@ -25,11 +26,10 @@ You can open the *Impact and Lineage Analysis* dialog from various screens:
 -   In the *Repository Explorer* or the *Data Builder* start page, select an object to analyze and click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar.
 -   In the *Catalog*, click the *Lineage* tab of an asset page.
 -   In *Data Builder* object editors, click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar or, if the editor contains a diagram, select a table, view, or data flow symbol and click the tool in the symbol toolbar.
--   In *Data Access Controls*, click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar.
 
 In this example, a user opens the diagram to analyze the *Enriched Sales View* in the *Sales* space, which has two sources and which is a source for two objects in other spaces:
 
-![](images/Impact_and_Lineage_Example_253b09a.png)
+![](images/Impact_and_Lineage_Main_Example_253b09a.png)
 
 
 
@@ -64,7 +64,7 @@ Data Analysis / Dependency Analysis
 Toggle between the two modes:
 
 -   *Data Analysis* - Focus exclusively on data movements and transformations.
--   *Dependency Analysis* - Additionally display objects connected through associations and data access controls \(see [https://help.sap.com/docs/SAP\_DATASPHERE/c8a54ee704e94e15926551293243fd1d/9da4892cb0e4427ab80ad8d89e6676b8.html?dependency-analysis-mode](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/9da4892cb0e4427ab80ad8d89e6676b8.html?dependency-analysis-mode)\).
+-   *Dependency Analysis* - Additionally display objects connected through associations and data access controls.
 
 
 
@@ -196,7 +196,7 @@ You can show or hide the objects on either side of this or any object by clickin
 
 Objects appearing in the lineage or impacts of the analyzed object.
 
-If you do not have permission to view an object, it is shown with the :lock: icon and the name *Unauthorized* \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
+If you do not have permission to view an object, it is shown with the :lock: icon and the name *Unauthorized*.
 
 </td>
 </tr>
@@ -212,7 +212,7 @@ Spaces that contain objects appearing in the lineage or impacts of the analyzed 
 
 You can expand or collapse a space, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the symbol.
 
-If you do not have permission to view a space, it is shown with the :lock: icon \(see [Shared Objects and Unauthorized Objects](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_shared_unauthorized)\).
+If you do not have permission to view a space, it is shown with the :lock: icon.
 
 </td>
 </tr>
@@ -273,6 +273,18 @@ Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, too
 <td valign="top">
 
 Deployment Status \(see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md)\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+![](images/Column_List_Icon_9814d35.png)
+
+</td>
+<td valign="top">
+
+Number of columns in the object. Click to see the column list and, in the case of the analyzed object, to select one or more columns for analysis \(see [Column Analysis](impact-and-lineage-analysis-9da4892.md#loio9da4892cb0e4427ab80ad8d89e6676b8__section_column_analysis)\).
 
 </td>
 </tr>
@@ -346,14 +358,38 @@ In this example, the *Sales View* entity shows a single source table in *Data An
 
 In *Dependency Analysis* mode, it shows several other entities, to which it is linked via associations, along with a data access control:
 
-![](Creating-Finding-Sharing-Objects/images/Share_Semantic_Entities_-_Fact_Example_60337a6.png)
+![](images/IA_-_Dependency_Mode_576a52a.png)
 
 These additional link types display as follows::
 
--   <span class="SAP-icons-TNT-V3"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see[Create an Association](create-an-association-66c6998.md)\).
+-   <span class="SAP-icons-TNT-V3"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see [Create an Association](create-an-association-66c6998.md)\).
 
 -   <span class="SAP-icons-V5"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 
+
+
+
+<a name="loio9da4892cb0e4427ab80ad8d89e6676b8__section_column_analysis"/>
+
+## Column Analysis
+
+To review the lineage and impacts of one or more columns in your analyzed object:
+
+1.  Click the columns button on the analyzed object to open the list of columns.
+2.  Select one or more columns that you want to analyze and then click *Select*.
+
+    The diagram refreshes to show the selected columns under the analyzed object and columns implicated in their lineage or impacts under all other relevant objects. A green filter bar shows the number of columns selected.
+
+    > ### Note:  
+    > Column analysis is only supported for tables, graphical and SQL \(Standard Query\) views, and analytic models. The analysis cannot continue beyond other types of objects.
+
+    ![](images/IA_-_Column_Mode_0cc073a.png)
+
+3.  \[optional\] Click any column in the analyzed object \(or any other object\) to highlight its participation in the graph.
+
+    ![](images/IA_-_Column_Mode_Highlight_b93f9a4.png)
+
+4.  You can change your column selection at any time, and leave column analysis by clicking the X on the right of the filter bar.
 
 
 
@@ -377,5 +413,5 @@ In our example:
 -   The user can see the *Sales* table that is shared from the *IT* space to the *Sales* space, but does not have permission to see the sources of that table \(if any\) or any other objects in the *IT* space.
 -   The user does not have permission to see any objects in the *Sales US* space, to which the *Enriched Sales View* is shared.
 
-![](images/Impact_and_Lineage_Example_253b09a.png)
+![](images/Impact_and_Lineage_Main_Example_253b09a.png)
 

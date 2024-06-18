@@ -4,7 +4,7 @@
 
 # Apache Kafka Connections
 
-Use the connection to connect to and access data from an Apache Kafka cluster.
+Use the connection to connect to an Apache Kafka cluster.
 
 
 

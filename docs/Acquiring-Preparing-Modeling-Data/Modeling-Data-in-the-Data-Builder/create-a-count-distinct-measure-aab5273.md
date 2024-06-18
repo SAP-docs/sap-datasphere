@@ -24,7 +24,7 @@ A count distinct measure counts unique occurrences of attributes.
     </th>
     <th valign="top">
 
-    Desription
+    Description
     
     </th>
     </tr>

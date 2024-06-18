@@ -4,7 +4,7 @@
 
 # Finding and Accessing Data in the Catalog
 
-Discover data by searching and filtering results. Mark your favorite assets, listed data products, terms, and key performance indicators \(KPIs\).
+Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators \(KPIs\), listed marketplace data products, or data providers.
 
 The catalog provides an effective data governance strategy by bringing together an organized inventory of business metadata and data assets to enable business and technical users to unlock the full potential of their enterprise data. The catalog is a central place to discover, classify, understand, and prepare all the data in your enterprise.
 
@@ -24,9 +24,9 @@ You can search for assets by clicking <span class="SAP-icons-V5"></span>\(*Ca
 
 ## Search by Entering a String
 
-You can find objects globally by using the search bar and entering all or part of the characters in a term, asset, listed data product, or KPI. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+You can find objects globally by using the search bar and entering all or part of the characters in an asset, term, KPI, listed marketplace data product, or data provider. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
+As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
 
 Filter the search results based on selected criteria to limit the number of results.
 
@@ -78,7 +78,19 @@ Data Products
 </td>
 <td valign="top">
 
-Shows only listed data products. Data products must be listed in Data Marketplace before they appear in the catalog. A data product is either free or purchased data from a third-party provider that you can use in this product.
+Shows only listed data products. Data products must be listed in Data Marketplace before they appear in the catalog. A data product can be obtained through internal means or by acquiring free or purchased data from a third-party provider, which can then be utilized within the product.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Providers
+
+</td>
+<td valign="top">
+
+Shows a list of providers that deliver data products to companies. A data provider is a person or company that offers one or multiple data products through the Data Marketplace.
 
 </td>
 </tr>
@@ -114,7 +126,7 @@ Favorites
 </td>
 <td valign="top">
 
-Shows the assets, terms, and KPIs that have been marked as a favorite.
+Shows the assets, terms, KPIs, listed marketplace data products, and data providers that have been marked as a favorite.
 
 </td>
 </tr>
@@ -126,7 +138,7 @@ Recent
 </td>
 <td valign="top">
 
-Shows the assets, terms, and KPIs that have been recently added to the catalog.
+Shows the assets, terms, KPIs, listed marketplace data products, and data providers that have been recently viewed by you.
 
 </td>
 </tr>
@@ -250,6 +262,7 @@ You can change the view to see different information.
 
 -   <span class="SAP-icons-V5"></span> \(Display as Grid\)
 -   <span class="FPA-icons-V3"></span> \(Display as List\)
+-   <span class="SAP-icons-V5"></span> \(Display as Table\)
 
 **Related Information**  
 

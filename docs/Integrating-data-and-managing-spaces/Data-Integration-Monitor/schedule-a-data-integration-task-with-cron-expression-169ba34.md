@@ -250,6 +250,8 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     > ### Note:  
     > You can copy to the clipboard the cron expression you've entered by clicking the copy icon button next to the cron expression.
 
+    The *Duration* area is available only for elastic compute notes. See [Run an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
+
 9.  In the *Start Date* area, specify a date if you want to the change the default start date, which is the current date.
 
 10. Optionally, in the *End Date* area, specify a date. If you do not specify an end date, the schedule runs indefinitely.

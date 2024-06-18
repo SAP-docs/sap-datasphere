@@ -35,7 +35,7 @@ Drag a table or view from the *Source Browser* panel and drop it on the diagram.
 
         Users of this view will need to provide a value for the input parameter.
 
-    -   *Set Value* - Enter a value to resolve the input parameter.
+    -   *Set Value* - Enter a value \(or use the value help, if available\) to resolve the input parameter.
 
         The input parameter is resolved and users of this view will no longer need to provide a value for it.
 

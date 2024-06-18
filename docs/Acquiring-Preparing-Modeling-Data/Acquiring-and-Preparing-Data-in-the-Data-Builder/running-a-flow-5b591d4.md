@@ -34,7 +34,11 @@ Once you have completed the flow configuration and saved it, you can run it. Cli
 > ### Note:  
 > Regarding transformation flows:
 > 
-> You can cancel a running transformation flow in the *Data Integration Monitor*. For more information, see [Cancel a Transformation Flow Run](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/ab885f05210f4a52aebe8306c8cad083.html "You want to cancel a transformation flow that is running.") :arrow_upper_right:.
+> -   You can cancel a running transformation flow in the *Data Integration Monitor*. For more information, see [Cancel a Transformation Flow Run](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/ab885f05210f4a52aebe8306c8cad083.html "You want to cancel a transformation flow that is running.") :arrow_upper_right:.
+> 
+> -   If a source view or an underlying view of the source view has data access controls applied to it, then no data is read from the view during the execution of the transformation flow. This results in incorrect data or no data in the output.
+> 
+>     For more information, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:.
 
 
 

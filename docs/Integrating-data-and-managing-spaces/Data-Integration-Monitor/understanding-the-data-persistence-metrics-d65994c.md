@@ -164,6 +164,20 @@ For more information, see [Data Persistence and Run Mode](data-persistence-and-r
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Data Access Controls* 
+
+</td>
+<td valign="top">
+
+Displays if view data is protected by data access controls.
+
+For more information, see [Persisted Views and Data Access Control](persisted-views-and-data-access-control-7a4a983.md)
+
+</td>
+</tr>
 </table>
 
 

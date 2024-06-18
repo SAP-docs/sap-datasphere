@@ -24,7 +24,7 @@ With a restricted measure, you can restrict available dimensions.
     </th>
     <th valign="top">
 
-    Desription
+    Description
     
     </th>
     </tr>

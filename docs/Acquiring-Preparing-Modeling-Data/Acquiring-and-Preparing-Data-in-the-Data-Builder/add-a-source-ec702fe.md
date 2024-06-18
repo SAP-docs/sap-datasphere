@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Add a Source Table
+# Add a Source
 
-Add a source table to read data from. You can add multiple source tables and combine them together using join or union operators.
+Add a source to read data from.
 
 
 
@@ -14,9 +14,18 @@ Add a source table to read data from. You can add multiple source tables and com
 
 1.  Navigate to the *Graphical View Editor*.
 
-2.  Drag a table from the *Repository* and drop it onto the diagram.
+2.  Browse or search for the object you want to add on either of the tabs.
 
-3.  Click the source table node to display its properties in the side panel, and review the properties in the *General* section:
+    -   The *Repository* tab lists all the tables and views that are available in the space.
+    -   The *Sources* tab lists all the Open SQL schemas that have been integrated to the space from which you can import tables and views. Each Open SQL schema appears as a root node in this tab \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\).
+
+3.  Drag a table from the relevant tab and drop it onto the diagram.
+
+4.  If the source is a view containing one or more input parameters, the *Map Input Parameters* dialog is displayed, and you can enter a value to resolve the input parameter.
+
+    You can click*Cancel* in the dialog and do not specify a value to resolve the input parameter, an error is displayed on the source, and you must subsequently specify a value in the source side panel *Input Parameters* section.
+
+5.  Click the source node to display its properties in the side panel, and review the properties in the *General* section:
 
     ****
 
@@ -42,7 +51,7 @@ Add a source table to read data from. You can add multiple source tables and com
     </td>
     <td valign="top">
     
-    Information to identify the source table.
+    Information to identify the source object.
     
     </td>
     </tr>
@@ -54,7 +63,7 @@ Add a source table to read data from. You can add multiple source tables and com
     </td>
     <td valign="top">
     
-    You can specify an SQL alias for the table if required.
+    You can specify an SQL alias for the source object if required.
     
     </td>
     </tr>
@@ -66,7 +75,7 @@ Add a source table to read data from. You can add multiple source tables and com
     </td>
     <td valign="top">
     
-    Indicates whether the source table uses SELECT DISTINCT statements to return only distinct values.
+    Indicates whether the source object uses SELECT DISTINCT statements to return only distinct values.
     
     </td>
     </tr>
@@ -94,6 +103,18 @@ Add a source table to read data from. You can add multiple source tables and com
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Input Parameters
+    
+    </td>
+    <td valign="top">
+    
+    If the source contains input parameters, you can view them here.
+    
+    </td>
+    </tr>
     </table>
     
     If the delta capture setting is enabled for a table, you can view the *Delta Settings* section. By default, the option *Delta Capture* is selected. This option loads delta changes to the target table. If required, you can select the option *All Active Records* to load the full set of data to the target table.
@@ -102,7 +123,7 @@ Add a source table to read data from. You can add multiple source tables and com
 
     To load delta changes from a source table \(including deleted records\), the delta capture setting must be enabled for the table. It is only possible to load delta changes from one source table. If you want to load delta changes from a source table, you need to ensure that the value of the option *Delta Capture* is *On* for both the source table and for the target table. In the *Transformation Flow Properties* panel, ensure that the load type *Initial and Delta* is selected.
 
-4.  In the *Columns* section, you can view the columns of the source table. To check the data type of a column, hover over it and click <span class="FPA-icons-V3"></span>.
+6.  In the *Columns* section, you can view the columns of the source table. To check the data type of a column, hover over it and click <span class="FPA-icons-V3"></span>.
 
     If the delta capture setting is enabled for a table, two additional columns are present in the table to track changes. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
 

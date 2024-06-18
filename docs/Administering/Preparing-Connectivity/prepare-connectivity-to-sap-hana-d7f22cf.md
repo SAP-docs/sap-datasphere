@@ -70,3 +70,8 @@ For SAP HANA \(on-premise\), before you can use the connection for data flows an
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
 
 
+**Related Information**  
+
+
+[SAP HANA Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e6b63f176d3640609adcf06297fb37e9.html#loioe6b63f176d3640609adcf06297fb37e9 "Use an SAP HANA connection to access data from a remote SAP HANA database (on-premise or cloud).") :arrow_upper_right:
+

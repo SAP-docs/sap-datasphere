@@ -163,7 +163,7 @@ See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f83607
 
 *DW Modeler*
 
-*DW Administrator*, *DW Space Administrator* and *DW Viewer* : read-only access
+*DW Administrator*, *DW Space Administrator* and *DW Viewer*: read-only access
 
 </td>
 </tr>
@@ -346,7 +346,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\)
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -898,11 +898,6 @@ See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/9f36ca3
 
 Scoped privilege *Spaces* `(-R------)`
 
-> ### Note:  
-> With *Spaces* `(-R-----M)`, a user with the DW Administrator role can monitor the tenant and space storage by seeing the bars about used/assigned disk/memory at the top of the *Space Management* tool \(see [Monitor Tenant and Space Storage](../Creating-Spaces-and-Allocating-Storage/monitor-tenant-and-space-storage-39b08d3.md)\).
-
-
-
 </td>
 <td valign="top">
 
@@ -1003,7 +998,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, listed data products, terms, and key performance indicators (KPIs).") :arrow_upper_right:
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), listed data products, or data providers.") :arrow_upper_right:
 
 </td>
 <td valign="top">

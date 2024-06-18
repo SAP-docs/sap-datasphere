@@ -165,6 +165,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     -   *Hierarchy with Directory* - Define all the necessary attributes and settings \(see [Creating a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\).
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - Review the list of columns \(see [Columns](columns-8f0f40d.md)\).
+    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 4.  Complete or consult other sections as appropriate:
 

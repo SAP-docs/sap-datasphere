@@ -99,6 +99,17 @@ If the tracing is enabled, you can view information on MDS queries when clicking
 
 
 
+<a name="loio9cd0691c44a74f2aa47b52f615f74433__section_nzd_rhs_5zb"/>
+
+## Elastic Compute Node Tracing
+
+To analyze individual elastic compute node query, you can enable the tracing of elastic compute node information in the area *Elastic Compute Node Tracing*.
+
+-   If the tracing is disabled, only the statements of currently running elastic compute nodes are displayed in the *System Monitor*. If the elastic compute nodes are stopped, the information is deleted.
+-   If the tracing is enabled, the traced information is not deleted and remain visible in the *System Monitor*. If an elastic compute node is started and stopped more than once, only the information about the previous run is displayed. The information is kept for 10 days or is deleted if more than 100 individual elastic compute nodes have run. To view the statements that were run for an elastic compute node, select *System Monitor* \> *Dashboard* \> *Top 5 Statements by Processing Memory Consumption* \> *Previous Run* and click *View Logs*, which opens the *Statements* tab. Alternatively, you can directly go to the *Statements* tab and filter by duration on the previous run.
+
+
+
 <a name="loio9cd0691c44a74f2aa47b52f615f74433__section_jt3_hfb_xpb"/>
 
 ## Procedure
@@ -122,6 +133,7 @@ If the tracing is enabled, you can view information on MDS queries when clicking
     For more information about these parameters, see [Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/5faf04f17830464eacdb7938b383d2ab.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
 
 5.  To trace MDS information, select *Enable MDS Information Tracing* and save.
+6.  To trace elastic compute node data, select *Enable Elastic Compute Node Data Tracing* and save.
 
 
 

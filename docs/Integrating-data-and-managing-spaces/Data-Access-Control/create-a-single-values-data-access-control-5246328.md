@@ -156,6 +156,6 @@ Before creating your data access control, you must have prepared a permissions e
 
 4.  Click *Save* and then *Deploy* to deploy your data access control and make it available for use.
 
-    For information about attaching a data access control to a view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
+    For information about attaching a data access control to a view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:. 
 
 

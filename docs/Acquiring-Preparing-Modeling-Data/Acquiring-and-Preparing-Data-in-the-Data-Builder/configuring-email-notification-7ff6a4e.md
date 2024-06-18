@@ -1,0 +1,54 @@
+<!-- loio7ff6a4e584a345a88d002c18c1fc321e -->
+
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
+# Configuring Email Notification
+
+After creating and deploying a task chain, set up email notification of users for completion of task chain runs.
+
+
+
+## Context
+
+> ### Note:  
+> The DW Integrator role is required to set up email notification for completion of task chain runs. The *Email Notifications* section of the task chain *Properties* panel will not appear if you do not have this privilege assigned. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. In addition to the DW Integrator role, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members.
+
+
+
+## Procedure
+
+1.  In the *Email Notifications* section of the *Properties* panel, select when you want notifications to be sent for the current task chain. You can choose from the following options:
+
+    -   Send email notification only when the run has completed with an error.
+
+    -   Send email notification only when the run has completed successfully.
+
+    -   Send email notification when the run has completed.
+
+
+    The *Email Notifications* section expands to show details of the email notification message to be sent to users on completion of task chain runs.
+
+    ![](images/Email_Notification_Setup_d5f7c97.png)
+
+    The notification setup includes a default template you can customize for both the email message subject and body text. You can choose to send notifications to other tenant users or specify email addresses of other users to receive notifications \(up to 20 recipients total\). Email addresses must be in the same domain as the tenant owner.
+
+    > ### Note:  
+    > Task chains must also first be deployed before you can select or specify users to receive notifications.
+
+2.  Click the <span class="SAP-icons-V5"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
+
+    ![](images/Recipients_List_527a05c.png)
+
+    From this dialog, you can select member users of the same tenant or click the *Others* tab to specify email addresses of other users you want to receive notifications \(up to 20 total recipients\). Email addresses must match the domain of the tenant owner, for example, jdoe@sap.com. After saving your selections, the display returns to the *Properties* panel, showing the selected users in the *Recipient Email Address* field.
+
+    > ### Note:  
+    > When setting up email notification, either the Team.Read or User.Read privilege is required to be able to display and add notification recipients from the list of current tenant members. If you do not have this privilege assigned, you can still add recipients manually from the *Others* tab.
+
+3.  Review the default email subject and message body text and make any updates to either the text or placeholder variables used in the notification email message sent for the current task chain.
+
+    Placeholder variables within the subject and message fields are enclosed by $$ characters, for example, $$status$$. You can click the <span class="SAP-icons-V5"></span> icon to display a list of available placeholder variable names you may include in either the email subject or message body text fields.
+
+    > ### Note:  
+    > Changes you make to the email notification template are saved when you redeploy the updated task chain that has email notification subject and body text template changes. When the task chain is run and notification emails are sent out, placeholder variables in the notification template will be replaced with actual values available at runtime.
+
+

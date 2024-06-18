@@ -4,29 +4,54 @@
 
 SAP Datasphere views support a subset of the SQL syntax supported by SAP HANA Cloud.
 
-SAP Datasphere primarily supports the SQL syntax listed in the `SELECT` statement \(see [SELECT Statement \(Data Manipulation\)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/cloud/en-US/20fcf24075191014a89e9dc7b8408b26.html) and related sections of the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
+This topic contains the following sections::
 
-SAP Datasphere supports the following:
+-   [The SAP HANA "SELECT" Statement](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__select)
+-   [SQL Operators](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__operators)
+-   [SQL Predicates](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__predicates)
+-   [Expressions](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__expressions)
 
--   Operators \(see [SQL Operators](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__operators)\)
--   Predicates \(see [SQL Predicates](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__predicates)\)
--   Expressions \(see [Expressions](sql-reference-6a37cc5.md#loio6a37cc58322548a986496d5e139e9201__expressions)\)
--   Functions \(see [SQL Functions Reference](sql-functions-reference-6d624a1.md)\)
+See also [SQL Functions Reference](sql-functions-reference-6d624a1.md).
 
-> ### Tip:  
-> An alternative to using `TOP`, which is not supported in SAP Datasphere is to use `limit`.
+
+
+<a name="loio6a37cc58322548a986496d5e139e9201__select"/>
+
+## The SAP HANA "SELECT" Statement
+
+SAP Datasphere primarily supports the SQL syntax listed in the `SELECT` statement.
+
+In this example, a view is created in which:
+
+-   Various columns are selected from the `Sales` and `Products` entities and given aliases via the `AS` keyword.
+-   A new, calculated column, `Unit_Price` is created using the `ROUND()` function.
+-   The `FROM` clause defines an `INNER JOIN` between the entities on their `Product_ID` columns.
+-   The `WHERE` clause filters the results by the `Product_Line`, which must be `Electronics`.
+-   The `ORDER BY` clause orders the results by the value of `Gross_Sales` in descending order.
+
+```
+SELECT
+  "Sales"."Date" AS "Date",
+  "Products"."Product_ID" AS "Product_ID",
+  "Products"."Line" AS "Product_Line",
+  "Products"."Category" AS "Product_Category",
+  "Products"."Product" AS "Product",
+  ROUND("Sales"."Gross_Sales" / "Sales"."Quantity", 2) AS "Unit_Price",
+  "Sales"."Gross_Sales" AS "Gross_Sales"
+FROM ("Sales" INNER JOIN "Products" ON "Sales"."Product_ID" = "Products"."Product_ID")
+WHERE "Products"."Product_Line" = "Electronics"
+ORDER BY "Gross_Sales" DESC
+```
+
+> ### Note:  
+> -   If you define an alias in your `SELECT` statement, then you must use the alias \(rather than the source name\) consistently in all clauses in the statement.
+> -   The `TOP` keyword is not supported in SAP Datasphere, but you can use the `LIMIT` keyword instead, at the end of your `ORDER BY` clause:
 > 
-> So, instead of using:
-> 
-> ```
-> SELECT TOP 3 "SMALL_INT" FROM "ALLDATASV0" ORDER BY "SMALL_INT" DESC
-> ```
-> 
-> You can use:
-> 
-> ```
-> SELECT  "SMALL_INT" FROM "ALLDATASV0" ORDER BY "SMALL_INT" DESC limit 3
-> ```
+>     ```
+>     ORDER BY "Gross_Sales" DESC LIMIT 5
+>     ```
+
+For full documentation, see [SELECT Statement \(Data Manipulation\)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/cloud/en-US/20fcf24075191014a89e9dc7b8408b26.html) and related sections of the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
 
 

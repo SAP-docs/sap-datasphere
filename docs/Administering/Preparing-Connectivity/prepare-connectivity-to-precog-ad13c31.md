@@ -14,3 +14,8 @@ Before you can use the connection, the following is required:
     > You can find and copy the relevant IP addresses in the final step of the connection creation wizard.
 
 
+**Related Information**  
+
+
+[Precog Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6e5f2255ae8540d5895dcbef4157b82d.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.") :arrow_upper_right:
+

@@ -23,6 +23,9 @@ To assign roles, you need the DW Administrator role.
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 2.  On the *Users* page, find the required user.
 3.  In the user's row, select the <span class="FPA-icons-V3"></span> icon in the *Roles* column. A list of *Available Roles* will appear.
+
+    The icon is not available if the user has the system owner role, which means that, from the *Security* \> *Users* page, you cannot assign an additional role to a user who has the system owner role. You can do so from the *Security* \> *Roles* page \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)\).
+
 4.  Select one or more roles.
 5.  Select *OK*.
 

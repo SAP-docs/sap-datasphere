@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../../css/sap-icons.css"/>
 
-# Allow the Space to Write to the Open SQL Schema
+# Allow the Space to Access the Open SQL Schema
 
-To grant the space write privileges in the Open SQL schema, use the GRANT\_PRIVILEGE\_TO\_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them.
+To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT\_PRIVILEGE\_TO\_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.
 
 
 
@@ -101,6 +101,8 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     -   'UPDATE'
 
     -   'DELETE'
+
+    -   'EXECUTE'
 
 
 
@@ -210,6 +212,21 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     
     
     ```
+
+    To grant a space the ability to run procedures in the Open SQL schema:
+
+    ```
+    CALL "DWC_GLOBAL"."GRANT_PRIVILEGE_TO_SPACE" (
+    	OPERATION => 'GRANT', 
+    	PRIVILEGE => 'EXECUTE, 
+    	SCHEMA_NAME => 'SALE#ETL', 
+    	OBJECT_NAME => '', 
+    	SPACE_ID => 'SALES');
+    
+    
+    ```
+
+    For more information on the SAP HANA statement CREATE PROCEDURE, see [CREATE PROCEDURE Statement \(Procedural\)](https://help.sap.com/docs/HANA_SERVICE_CF/7c78579ce9b14a669c1f3295b0d8ca16/20d467407519101484f190f545d54b24.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
 
 4.  Run the query by clicking <span class="SAP-icons-watt"></span> \(Run\) or press F8.
 

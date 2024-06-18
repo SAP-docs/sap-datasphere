@@ -14,3 +14,8 @@ Before you can use the connection for replication flows, the following is requir
 
 -   An administrator has installed and configured Cloud Connector to connect to the Apache Kafka on-premise implementation.
 
+**Related Information**  
+
+
+[Apache Kafka Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1992c6b7154c4bc080d83c8977382ff4.html "Use the connection to connect to an Apache Kafka cluster.") :arrow_upper_right:
+

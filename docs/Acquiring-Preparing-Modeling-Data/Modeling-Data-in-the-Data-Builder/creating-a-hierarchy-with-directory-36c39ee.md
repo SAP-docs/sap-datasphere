@@ -8,7 +8,7 @@ These types of hierarchy entities can include nodes from multiple dimensions \(f
 
 For more information and walkthroughs, see also:
 
--   SAP S/4HANA [Hierarchy with Directory Samples](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/blob/main/Hierarchy_with_Directory_Sample/README.md) on the Community Content Github.
+-   SAP S/4HANA [Hierarchy with Directory Samples](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content/blob/main/Technical_Samples/DSP_Hierarchy_with_Directory_Sample/README.md) on the Community Content Github.
 -   The blog series beginning with [An Introduction to Hierarchy with Directory in SAP Datasphere](https://blogs.sap.com/2024/01/15/an-introduction-to-hierarchy-with-directory-in-sap-datasphere/) on the SAP Community site.
 
 This topic contains the following sections:

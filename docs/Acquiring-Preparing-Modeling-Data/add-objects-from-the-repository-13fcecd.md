@@ -35,7 +35,7 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
 
     -   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-        As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to trigger a search on it.
+        As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
 
     -   Click <span class="FPA-icons-V3"></span> \(More\) to access the *Sort* and *Filter* options.
     -   Click a folder in the list to drill down into and restrict your search to the folder.

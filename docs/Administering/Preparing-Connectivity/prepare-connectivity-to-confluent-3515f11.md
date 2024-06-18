@@ -18,3 +18,8 @@ Before you can use the connection for replication flows, the following is requir
     > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location is while connecting to the Kafka brokers happens in another location.
 
 
+**Related Information**  
+
+
+[Confluent Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/d83c08ad4eaf49dba9602b1d51c07a52.html#loiod83c08ad4eaf49dba9602b1d51c07a52 "Use the connection to connect to Apache Kafka hosted on either the Confluent Platform or Confluent Cloud. The connection type has two endpoints: the Kafka brokers and the Schema Registry.") :arrow_upper_right:
+

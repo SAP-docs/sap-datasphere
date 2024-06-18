@@ -34,7 +34,7 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     </th>
     <th valign="top">
 
-    Desription
+    Description
     
     </th>
     </tr>

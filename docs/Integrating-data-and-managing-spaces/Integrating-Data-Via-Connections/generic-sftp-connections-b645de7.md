@@ -95,11 +95,11 @@ Enter the port number of the SFTP server.
 </td>
 <td valign="top">
 
-Enter the public SSH host key \(not the key fingerprint\). 
+Enter the public SSH host key \(public key of the SFTP server, not the key fingerprint\). 
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
-If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required.") :arrow_upper_right:.
+If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
 
 </td>
 </tr>

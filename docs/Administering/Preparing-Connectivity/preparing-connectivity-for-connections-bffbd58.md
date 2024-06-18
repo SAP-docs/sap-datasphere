@@ -225,7 +225,7 @@ n/a
 <tr>
 <td valign="top">
 
-[Apache Kafka Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1992c6b7154c4bc080d83c8977382ff4.html "Use the connection to connect to and access data from an Apache Kafka cluster.") :arrow_upper_right:
+[Apache Kafka Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1992c6b7154c4bc080d83c8977382ff4.html "Use the connection to connect to an Apache Kafka cluster.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -450,7 +450,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes \(for on-premise\)
 
 </td>
 <td valign="top">
@@ -1122,7 +1122,7 @@ no
 </td>
 <td valign="top">
 
-yes \(for data flows\)
+no
 
 </td>
 <td valign="top">
@@ -1290,7 +1290,7 @@ no
 </td>
 <td valign="top">
 
-yes \(for data flows\)
+no
 
 </td>
 <td valign="top">

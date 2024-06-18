@@ -50,5 +50,5 @@ Create perspectives from a consumption model for exposure to SAP Analytics Cloud
 
 ## Import SAP BW∕4HANA Queries
 
-Import an SAP BW4/HANA query, along with its supporting InfoObjects and CompositeProviders to SAP Datasphere \(see [Importing SAP BW∕4HANA Models](importing-sap-bw-4hana-models-a3d4a2f.md)\).
+Import an SAP BW∕4HANA query, along with its supporting InfoObjects and CompositeProviders to SAP Datasphere \(see [Importing SAP BW∕4HANA Models](importing-sap-bw-4hana-models-a3d4a2f.md)\).
 

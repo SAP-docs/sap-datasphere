@@ -290,7 +290,7 @@ Displays a list of all key performance indicators \(KPIs\) that are linked to th
 Use the *Details* tab to see a preview of the detailed metadata about the asset, which can include columns, attributes, measures, dimensions, and properties specific to each object. This tab appears only if the asset has detailed metadata that can be shown.
 
 > ### Note:  
-> If you are viewing an SAP Analytics Cloud asset, this tab is available only for the following model types: planning and analytical models. For a list of the supported object types for each source system, see [Connecting to Data Sources](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/287ad2d8640449d5a62c6bb5b4a37d4d.html "On the Remote Systems page, you can create connections to a variety of data sources and then manage the data sources and extract metadata to populate the catalog.") :arrow_upper_right:.
+> If you are viewing an SAP Analytics Cloud asset, this tab is available only for the following model types: planning and analytical models. For a list of supported object types, see [Connecting and Monitoring Source Systems](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Users with the Catalog Administrator role can open the Remote Systems page to create connections to a variety of data sources in the same landscape. This page also includes tools for monitoring and managing data sources, allowing metadata for objects to be extracted and added to the catalog assets.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 

@@ -42,3 +42,8 @@ Before you can use the connection for data flows, the following is required:
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 
+**Related Information**  
+
+
+[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
+

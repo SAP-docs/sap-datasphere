@@ -18,15 +18,42 @@ A CSN \(Core Data Services Schema Notation\) file contains only the definition o
 
 1.  Navigate to the *Data Builder* start page or to an entity-relationship model \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\) and click <span class="FPA-icons-V3"></span> \(Import\)** \> *Import Objects from CSN/JSON File*.
 
-2.  Select the CSN/JSON file you want to import, and click *Next* to open the *Select Objects to Import* dialog, which lists the objects contained in the CSN/JSON file, their type and semantic usage, as well as status:
+2.  Select the CSN/JSON file you want to import, and click *Next* to open the *Select Objects to Import* dialog, which lists the objects contained in the CSN/JSON file, their type and semantic usage, as well as:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Status
+    
+    </td>
+    <td valign="top">
+    
+    Can be:
 
     -   *Ready to Import* - No object with this technical name is present in the space.
     -   *Already in the Repository* - The object is already present in the repository. If you select it for import, it will overwrite the existing object
 
-3.  Select the objects you want to import and click *Import*.
 
-    > ### Note:  
-    > Remote tables exported from one space can be imported into another only if they were originally imported from a connection created in v2021.19 or later.
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  Select the objects you want to import and click *Import*.
 
     In addition to the objects you select, other objects may be imported:
 

@@ -92,7 +92,8 @@ We also provide content for download at our [Community Content](https://github.c
     -   *Overwrite objects and data* - Imports all objects from the package, even if certain objects are already present in your space. These objects may be updated, and these updates may impact data \(for example, if a column is deleted\).
 
         > ### Note:  
-        > Connections are never overwritten by an import. The *Including permissions* option is not supported for SAP Datasphere.
+        > -   The *Including permissions* option is not supported for SAP Datasphere.
+        > -   Connections are never overwritten by an import.
 
 
 

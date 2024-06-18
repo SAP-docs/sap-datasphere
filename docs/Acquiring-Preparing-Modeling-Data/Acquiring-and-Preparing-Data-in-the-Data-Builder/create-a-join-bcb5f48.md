@@ -12,11 +12,13 @@ Use a join operator to merge two data sets together using a join definition to m
 
 ## Procedure
 
-1.  Select a source table in the *Repository*, and then drag it over a source table in the diagram. Wait for the context menu to appear, slide your cursor over the *Join* option and then release the mouse button.
+1.  Browse or search for the object you want to add on either the *Repository* tab or the *Sources* tab.
 
-2.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
+2.  Select a source, and then drag it over a source or other node in the diagram. Wait for the context menu to appear, slide your cursor over the *Join* option and then release the mouse button.
 
-3.  Set the following properties in the *General* section:
+3.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
+
+4.  Set the following properties in the *General* section:
 
 
     <table>
@@ -90,7 +92,7 @@ Use a join operator to merge two data sets together using a join definition to m
     </tr>
     </table>
     
-4.  Specify the mapping of join columns in the *Mappings* section:
+5.  Specify the mapping of join columns in the *Mappings* section:
 
     -   A mapping is automatically created by matching column names if possible.
     -   To manually map columns, drag a column from the left list and drop it onto a column in the right list.
@@ -98,6 +100,6 @@ Use a join operator to merge two data sets together using a join definition to m
     -   You can filter the *Mappings* section to show only mapped or unmapped pairs of columns.
     -   You can filter or sort the left or right column lists independently
 
-5.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md).
+6.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md).
 
 

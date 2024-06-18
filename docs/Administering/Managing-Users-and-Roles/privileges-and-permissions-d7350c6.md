@@ -72,11 +72,11 @@ Description
 
 Allows access to spaces in the *Space Management* tool.
 
--   *Create* - To create spaces.
+-   *Create* - To create spacesand elastic compute nodes.
 
     To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
 
--   *Manage* - To read, update and delete all spaces.
+-   *Manage* - To read, update and delete all spacesand elastic compute nodes.
 
     > ### Caution:  
     > The permission *Manage* should be granted only to tenant administrators. and for other privileges.
@@ -215,7 +215,7 @@ Allows access to lists of users.
 -   To open the *Security* \> *Users* tools, you need all 4 permissions `CRUD----`. If you have only the Read permission, you cannot see the list of users in *Security* \> *Users*.
 
     > ### Note:  
-    > The permissions `CRUD----` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
+    > The permissions `` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
 
 -   `M` \(*Manage*\) - To permit assigning users to roles, and approving role assignment requests from users.
 
@@ -578,7 +578,7 @@ Allows access to all objects inside a space, such as views and tables.
 -   *Create*, *Update*, *Delete* - To create, update or delete objects in spaces.
 
 
-To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege Spaces and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
 
 > ### Note:  
 > The permission *Manage* is a global permission and is described in the global privileges and permissions table \(see [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)\).
@@ -662,7 +662,7 @@ Allows access to the *Data Integration Monitor* app:
 > -   To set up or change partitioned data loading in the *Remote Tables* monitor or in the *Views* monitor.
 > -   To start the *View Analyzer* in the *Views* monitor.
 > 
-> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
 
 

@@ -20,6 +20,10 @@ You can add a tenant type indicator to show all users which system they are usin
 
 3.  Select a tenant type from the list. If you select a *Custom* type, you must add a *Title*. The tenant type will be displayed in the information bar.
 
+    Example *Custom* dialog:
+
+    ![](images/SystemInformationCustom_c76dcb5.png)
+
 4.  Select a color.
 
     A preview of the favicon and information bar will be displayed.
@@ -28,4 +32,14 @@ You can add a tenant type indicator to show all users which system they are usin
 
 6.  Turn on the *Display System Information* toggle.
 
+
+
+
+<a name="loio6bdd79878afa4ec5bcd9d3502158a06e__result_gll_bmb_4bc"/>
+
+## Results
+
+The tenant information that you set is displayed to all users above the shell bar. For example:
+
+![](images/SystemInformationBar_6407d53.png)
 

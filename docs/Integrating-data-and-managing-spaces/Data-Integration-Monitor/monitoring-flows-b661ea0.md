@@ -213,6 +213,9 @@ For more information and points to consider when using replication flows, see al
         > -   If the flow run has been optimized for better performance, no record count information is shown.
         > -   For historical runs of a flow, metrics can’t be retrieved.
 
+        > ### Restriction:  
+        > For data flows, the logs messages and metrics are only displayed in English.
+
 
 4.  You can analyze errors that have occurred during your data flow runs downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details
 

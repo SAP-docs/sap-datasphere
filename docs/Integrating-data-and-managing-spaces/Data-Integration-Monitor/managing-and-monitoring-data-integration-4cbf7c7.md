@@ -4,7 +4,7 @@
 
 # Managing and Monitoring Data Integration
 
-From <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\), you can run and monitor data replication for remote tables, monitor flows and task chain runs, add and monitor persisted views, and track the queries sent to your remote connected source systems for your space.
+From <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
@@ -16,6 +16,7 @@ The *Data Integration Monitor* is composed of several monitors that help you tra
     > ### Note:  
     > Remote tables from a source that is configured as data access *Remote Only* are not displayed in this monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md) 
 
+-   *Local Tables*: Monitor all local tables which have been created in a space and display their metrics.
 -   *Views*: Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
 -   *Flows*: View and monitor the execution details of the executed data flows, replication flows or transformation flows. For more information, see [Monitoring Flows](monitoring-flows-b661ea0.md).
 -   *Remote Queries*:

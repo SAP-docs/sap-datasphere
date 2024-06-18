@@ -2,7 +2,7 @@
 
 # Process Source Changes in the Graphical View Editor
 
-If one or more of the source tables of your view transform is modified, then the next time you open the *Graphical View Editor*, you can view any changes by viewing the relevant validation messages.
+If one or more of the sources of your view transform is modified, then the next time you open the *Graphical View Editor*, you can view any changes by viewing the relevant validation messages.
 
 
 
@@ -53,7 +53,7 @@ If one or more of the source tables of your view transform is modified, then the
     </td>
     <td valign="top">
     
-    Changes to the business name and other business properties of a source table or its columns are automatically propagated to dependent objects:
+    Changes to the business name and other business properties of a source table or view or its columns are automatically propagated to dependent objects:
 
     -   An information message specifying the source object changes or listing all changed columns is displayed on the source.
 
@@ -87,12 +87,49 @@ If one or more of the source tables of your view transform is modified, then the
     </td>
     <td valign="top">
     
-    Deletions of columns in source tables generate errors if the columns are used by the view transforms:
+    Deletions of columns in source tables or views generate errors if the columns are used by the view transforms:
 
     -   An information message listing all deleted columns is displayed on the source.
     -   An error message is displayed on any intermediate node \(join, union, filter, calculated columns, aggregation\) in which a deleted column was used.
     -   A warning message listing all deleted columns that were previously present in the output node *Columns* list is displayed on the output node.
     -   If deleted output columns were used by any dependent objects of this view, then a warning message listing those views is displayed on the output node.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Change to Input Parameter
+    
+    </td>
+    <td valign="top">
+    
+    Changes to input parameters in source views generate messages in dependent views:
+
+    -   An information message listing all input parameter changes is displayed on the source.
+    -   An error or warning is displayed on the source for each input parameter that is added, deleted, or changed.
+    -   An error message is displayed on any intermediate node \(join, union, filter, calculated columns, aggregation\) in which a deleted input parameter was used.
+
+    > ### Note:  
+    > If an input parameter that has a default value is added to a source view, then this source input parameter is, by default, mapped to the default value in dependent views. You can override this default mapping and map the source input parameter to an input parameter in the dependent view.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Change to Data Access Control
+    
+    </td>
+    <td valign="top">
+    
+    Changes to a data access control generate warnings in views to which they are attached:
+
+    -   A warning message is displayed on the output node to encourage you to review the changes before redeploying the view.
 
 
     

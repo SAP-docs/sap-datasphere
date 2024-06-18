@@ -34,3 +34,8 @@ Before you can use the connection for data flows and replication flows, the foll
     For information on where a DW administrator can find the IP address, see [Finding SAP Datasphere IP addresses](finding-sap-datasphere-ip-addresses-0934f7e.md).
 
 
+**Related Information**  
+
+
+[Microsoft Azure SQL Database Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/46343fc1c4544fa9a075d97f84d39826.html "Use a Microsoft Azure SQL Database connection to access table data from a Microsoft Azure SQL database.") :arrow_upper_right:
+

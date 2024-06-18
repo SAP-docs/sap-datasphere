@@ -781,6 +781,50 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 
 
+### Security For Schema Registry
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use TLS*
+
+</td>
+<td valign="top">
+
+Select *true* \(default\) to use TLS encryption.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Validate Server Certificate*
+
+</td>
+<td valign="top">
+
+Select *true* \(default\) to validate the TLS server certificate.
+
+</td>
+</tr>
+</table>
+
+
+
 ### Features
 
 
@@ -889,17 +933,7 @@ Description
 </td>
 <td valign="top">
 
-Select the authentication type to use to connect to the Kafka brokers. 
-
-You must select:
-
--   *User Name And Password*
-
-    > ### Note:  
-    > Confluent Cloud supports authentication based on API keys. When selecting this entry, you can enter the API key and secret in the user name and password credentials.
-
-
-
+\[read-only\] Displays *API Key and Secrect* for authentication based on API keys. 
 
 </td>
 </tr>
@@ -907,9 +941,7 @@ You must select:
 
 
 
-### Credentials \(User Name and Password\)
-
-If *Authentication Type* = *User Name And Password*:
+### Credentials \(API Key and Secret\)
 
 
 <table>
@@ -928,7 +960,7 @@ Description
 <tr>
 <td valign="top">
 
-*User Name* 
+*API Key* 
 
 </td>
 <td valign="top">
@@ -940,7 +972,7 @@ Enter the Confluent Cloud API key that is used to control access to Confluent Cl
 <tr>
 <td valign="top">
 
-*Password* 
+*Secret* 
 
 </td>
 <td valign="top">
@@ -1068,6 +1100,50 @@ Enter the Confluent Cloud API key that is used to control access to the Schema R
 <td valign="top">
 
 Enter the Confluent Cloud API secret. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Security For Schema Registry
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use TLS*
+
+</td>
+<td valign="top">
+
+Select *true* \(default\) to use TLS encryption.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Validate Server Certificate*
+
+</td>
+<td valign="top">
+
+Select *true* \(default\) to validate the TLS server certificate.
 
 </td>
 </tr>

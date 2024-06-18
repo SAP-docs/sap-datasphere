@@ -22,7 +22,7 @@ To do so, you must have SAP BTP administration authorization on the subaccount t
 
 <!-- task\_rzb\_xhw\_cbc -->
 
-## Restore Accidental Deletion of Your Service Instance
+## Restore an Accidentally Deleted Service Instance
 
 
 

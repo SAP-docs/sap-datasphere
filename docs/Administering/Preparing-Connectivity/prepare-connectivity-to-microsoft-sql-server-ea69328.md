@@ -39,3 +39,8 @@ Before you can use the connection for data flows, the following is required:
 -   The required driver is pre-bundled and doesn't need to be uploaded by an administrator.
 
 
+**Related Information**  
+
+
+[Microsoft SQL Server Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use a Microsoft SQL Server connection to access data from a Microsoft SQL Server database (on-premise).") :arrow_upper_right:
+

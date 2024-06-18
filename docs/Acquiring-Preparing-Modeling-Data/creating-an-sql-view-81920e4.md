@@ -10,6 +10,36 @@ Create a view to query sources in a powerful SQL editor. You can choose between 
 
 ## Context
 
+In this example, a view is created in which:
+
+-   Various columns are selected from the `Sales` and `Products` entities and given aliases via the `AS` keyword.
+-   A new, calculated column, `Unit_Price` is created using the `ROUND()` function.
+-   The `FROM` clause defines an `INNER JOIN` between the entities on their `Product_ID` columns.
+-   The `WHERE` clause filters the results by the `Product_Line`, which must be `Electronics`.
+-   The `ORDER BY` clause orders the results by the value of `Gross_Sales` in descending order.
+
+```
+SELECT
+  "Sales"."Date" AS "Date",
+  "Products"."Product_ID" AS "Product_ID",
+  "Products"."Line" AS "Product_Line",
+  "Products"."Category" AS "Product_Category",
+  "Products"."Product" AS "Product",
+  ROUND("Sales"."Gross_Sales" / "Sales"."Quantity", 2) AS "Unit_Price",
+  "Sales"."Gross_Sales" AS "Gross_Sales"
+FROM ("Sales" INNER JOIN "Products" ON "Sales"."Product_ID" = "Products"."Product_ID")
+WHERE "Products"."Product_Line" = "Electronics"
+ORDER BY "Gross_Sales" DESC
+```
+
+> ### Note:  
+> -   If you define an alias in your `SELECT` statement, then you must use the alias \(rather than the source name\) consistently in all clauses in the statement.
+> -   The `TOP` keyword is not supported in SAP Datasphere, but you can use the `LIMIT` keyword instead, at the end of your `ORDER BY` clause:
+> 
+>     ```
+>     ORDER BY "Gross_Sales" DESC LIMIT 5
+>     ```
+
 If you are not comfortable with SQL, you can still build a view in SAP Datasphere by using the Graphical View editor, which lets you compose SQL code using an intuitive graphical interface \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
 
 > ### Note:  
@@ -268,6 +298,32 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Data Validation Status
+    
+    </td>
+    <td valign="top">
+    
+    Displays the status of the last data validation.
+
+    Click the button to open the *Data Validation* panel \(see [Validating View Data](validating-view-data-ed4063d.md)\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Validated On
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the date and time of the last data validation.
+    
+    </td>
+    </tr>
     </table>
     
 5.  Based on the *Semantic Usage* of your entity, review and modify its *Columns*, *Attributes*, and/or *Measures*:
@@ -278,6 +334,7 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     -   *Hierarchy with Directory* - Define all the necessary attributes and settings \(see [Creating a Hierarchy with Directory](Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\).
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - Review the list of columns \(see [Columns](Acquiring-and-Preparing-Data-in-the-Data-Builder/columns-8f0f40d.md)\).
+    -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
 
 6.  Complete or consult other sections as appropriate:
 

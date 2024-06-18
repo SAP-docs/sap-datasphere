@@ -149,6 +149,25 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
+    *Duration*
+
+    Elastic compute nodes only. See [Run an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     *Time Range*
     
     </td>

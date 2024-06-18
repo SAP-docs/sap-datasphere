@@ -175,6 +175,18 @@ Create a space, allocate storage, and set the space priority and statement limit
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Description
+    
+    </td>
+    <td valign="top">
+    
+    \[optional\] Enter a description for the space. Can contain a maximum of 4 000 characters.
+    
+    </td>
+    </tr>
     </table>
     
     > ### Note:  

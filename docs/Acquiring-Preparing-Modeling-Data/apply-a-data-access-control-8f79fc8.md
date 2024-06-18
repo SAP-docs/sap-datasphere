@@ -32,10 +32,6 @@ For detailed information about defining and using data access controls, see [Sec
 
 5.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy the view.
 
+    Users opening your view in SAP Datasphere or in SAP Analytics Cloud or other analytics tools will only see the data permitted by the assignment of their username to the criteria defined in the data access control.
 
-
-
-## Results
-
-Users opening your view in SAP Datasphere or in SAP Analytics Cloud or other analytics tools will only see the data permitted by the assignment of their username to the criteria defined in the data access control.
 

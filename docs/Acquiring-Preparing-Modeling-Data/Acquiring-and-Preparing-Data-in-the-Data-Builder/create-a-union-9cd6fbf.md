@@ -12,13 +12,15 @@ A union combines the results from two select statements on separate sources.
 
 ## Procedure
 
-1.  Select a source table in the *Repository*, and then drag it over a source table in the diagram. Wait for the context menu to appear, slide your cursor over the *Union* option and then release the mouse button.
+1.  Browse or search for the object you want to add on either the *Repository* tab or the *Sources* tab.
 
-    The source table is added to the diagram and it is unioned with the target node. The union symbol is selected and its properties are displayed in the side panel. You can add multiple tables to the union by dragging and dropping them on the union symbol.
+2.  Select a source, and then drag it over a source table in the diagram. Wait for the context menu to appear, slide your cursor over the *Union* option and then release the mouse button.
 
-2.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
+    The source is added to the diagram and it is unioned with the target node. The union symbol is selected and its properties are displayed in the side panel. You can add multiple tables to the union by dragging and dropping them on the union symbol.
 
-3.  Set the following properties in the *General* section:
+3.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
+
+4.  Set the following properties in the *General* section:
 
 
     <table>
@@ -60,7 +62,7 @@ A union combines the results from two select statements on separate sources.
     </tr>
     </table>
     
-4.  The *Mappings* section shows, by default, the recently dropped source object columns on the left and the union output colums, initialized from the target source columns on the right.
+5.  The *Mappings* section shows, by default, the recently dropped source object columns on the left and the union output columns, initialized from the target source columns on the right.
 
     -   Mappings are automatically created by matching column names where possible.
     -   To manually map input columns to union output columns, drag a column from the left list and drop it onto a column in the right list.
@@ -75,10 +77,10 @@ A union combines the results from two select statements on separate sources.
 
     -   To switch to viewing another input, click the drop-down arrow above the left column list and select it in the list.
 
-5.  Optional. Drop another source object onto the union node to union it with the existing unioned sources.
+6.  Optional. Drop another source object onto the union node to union it with the existing unioned sources.
 
     The source table is added to the diagram and added to the union node. The union symbol is selected, its properties are displayed in the side panel, the new source table is displayed in the *Mappings* section and its columns are mapped automatically by matching column names where possible.
 
-6.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md).
+7.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md).
 
 

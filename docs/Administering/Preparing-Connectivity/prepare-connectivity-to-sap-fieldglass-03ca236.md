@@ -17,3 +17,8 @@ Before you can use the connection for creating views and accessing data via remo
     For more information, see [Preparing Data Provisioning Agent Connectivity](preparing-data-provisioning-agent-connectivity-f1a39d1.md).
 
 
+**Related Information**  
+
+
+[SAP Fieldglass Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/bda94ee6c9d5403f8556af174399d221.html "Use an SAP Fieldglass connection to retrieve data from SAP Fieldglass.") :arrow_upper_right:
+

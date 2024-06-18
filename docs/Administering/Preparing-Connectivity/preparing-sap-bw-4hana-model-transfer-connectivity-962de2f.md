@@ -44,14 +44,21 @@ Before creating a connection for SAP BW/4HANA Model Transfer in SAP Datasphere, 
 
     For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
-5.  In the side navigation area of SAP Datasphere, open *System* \> *Configuration* \> *Data Integration* \> *Live Data Connections \(Tunnel\)* and create a live data connection of type tunnel to SAP BW∕4HANA.
+5.  In the side navigation area of SAP Datasphere, click *System* \> *Administration* \> *Data Source Configuration* \> *On-premise data sources* and add the location ID of your Cloud Connector instance.
+
+    > ### Note:  
+    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** *System* \> *Administration* \> *Data Source Configuration* \> *On-premise data sources*.
+
+    For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
+
+6.  In the side navigation area of SAP Datasphere, open *System* \> *Configuration* \> *Data Integration* \> *Live Data Connections \(Tunnel\)* and create a live data connection of type tunnel to SAP BW∕4HANA.
 
     > ### Note:  
     > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** <span class="FPA-icons-V3"></span> \(Connections\).
 
     For more information, see [Create Live Data Connection of Type Tunnel](create-live-data-connection-of-type-tunnel-5d02f11.md).
 
-6.  Install and configure a Data Provisioning Agent and register the SAP HANA adapter with SAP Datasphere:
+7.  Install and configure a Data Provisioning Agent and register the SAP HANA adapter with SAP Datasphere:
 
     -   Install the latest Data Provisioning Agent version on a local host or updat your agent to the latest version. For more information, see [Install the Data Provisioning Agent](install-the-data-provisioning-agent-8f61850.md).
 
@@ -62,4 +69,9 @@ Before creating a connection for SAP BW/4HANA Model Transfer in SAP Datasphere, 
     -   In SAP Datasphere, register the SAP HANA adapter with SAP Datasphere. For more information, see [Register Adapters with SAP Datasphere](register-adapters-with-sap-datasphere-085fc49.md).
 
 
+
+**Related Information**  
+
+
+[SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:
 
