@@ -48,6 +48,8 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 5.  Upload the metadata file to your SAML IdP.
 
+    If you are creating a new SAP Datasphere application on the SAP Identity Authentication Service \(IAS\) side with type the type "unknown", set the type to "Unknown".
+
     The file includes metadata for SAP Datasphere, and is used to create a trust relationship between your SAML Identity Provider and your SAP Datasphere system.
 
 6.  Optional: You can access the system from your SAML Identity Provider by adding a new assertion consumer service endpoint to your identity provider. For more information, see [Enable IdP-Initiated Single Sign On \(SAP Data Center Only\)](enable-idp-initiated-single-sign-on-sap-data-center-only-4d2536a.md).
@@ -221,7 +223,7 @@ SAP Datasphere can be hosted on non-SAP data centers.
     </tr>
     </table>
     
-    Example:
+    Example of SAML assertion:
 
     ```
     <AttributeStatement>
@@ -337,7 +339,7 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 17. Log on to SAP Datasphere with the credentials you used for the verification step.
 
-18. From the side navigation, go to <span class="FPA-icons-V3"></span> \(*Security*\) → and <span class="FPA-icons-V3"></span> \(*Users*\)look for the <span class="FPA-icons-V3"></span> column of the *User Attribute* you selected in step 8.
+18. From the side navigation, go to <span class="FPA-icons-V3"></span> \(*Security*\) → and <span class="FPA-icons-V3"></span> \(*Users*\), look for the <span class="FPA-icons-V3"></span> column of the *User Attribute* you selected in step 8.
 
     The values in this column should be a case sensitive match with the `NameId` sent by your IdP's SAML assertion.
 

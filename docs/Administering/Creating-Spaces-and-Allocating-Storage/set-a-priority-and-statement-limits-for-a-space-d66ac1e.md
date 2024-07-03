@@ -81,7 +81,7 @@ Use the properties in the *Workload Management* section to prioritize between sp
         </td>
         <td valign="top">
         
-        100%
+        70%
         
         </td>
         </tr>

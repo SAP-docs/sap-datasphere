@@ -365,8 +365,160 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 
     For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
-9.  \[optional\] Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md) 
+9.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
 
-10. Click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar to understand the lineage and impacts of the output \(see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)\).
 
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Share\)
+    
+    </td>
+    <td valign="top">
+    
+    Share the object to other spaces. 
+
+    See [Sharing Tables and Views To Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    
+    </td>
+    <td valign="top">
+    
+    Show the *Source Browser* panel to drag sources into the editor. 
+
+    See [Using the Source Browser](using-the-source-browser-7d2b21d.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Data Preview* panel to preview data in the selected diagram node. 
+
+    See [Viewing Object Data](viewing-object-data-b338e4a.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    
+    </td>
+    <td valign="top">
+    
+    Revert the last change to the object or redo a change you have previously undone.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export the object to a CSN/JSON file. 
+
+    See [Exporting Objects to a CSN/JSON File](Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\)
+    
+    </td>
+    <td valign="top">
+    
+    Work with custom CSN annotations that are not otherwise supported by the interface. 
+
+    See [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Impact and Lineage Analysis* graph for the object. 
+
+    See [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-TNT-V3"></span> \(Generate OData Request\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Generate OData Request* dialog to prepare access to the OData API. 
+
+    See [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    </table>
+    
 

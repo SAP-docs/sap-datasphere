@@ -176,4 +176,132 @@ The work that you do in an E/R model benefits all the users in your space as the
     > ### Note:  
     > The E/R model itself is not deployed and does not have a deployment status.
 
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    
+    </td>
+    <td valign="top">
+    
+    Show the *Source Browser* panel to drag objects into the E/R model diagram. 
+
+    See [Using the Source Browser](using-the-source-browser-7d2b21d.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Data Preview* panel to preview data in the selected object.
+
+    See [Viewing Object Data](viewing-object-data-b338e4a.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    
+    </td>
+    <td valign="top">
+    
+    Revert the last change to the object or redo a change you have previously undone.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Add from Repository\)
+    
+    </td>
+    <td valign="top">
+    
+    Add entities connected to your entity by associations.
+
+    For more information, see [Add Related Entities to an E/R Model Diagram](add-related-entities-to-an-e-r-model-diagram-bbde0a7.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Import\)
+    
+    </td>
+    <td valign="top">
+    
+    Import entities from a connection or from a CSN file.
+
+    For more information, see [Import an Object from a Connection or Other Source](import-an-object-from-a-connection-or-other-source-3e6f8f2.md) and [Importing Objects from a CSN/JSON File](Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export all the objects in the E/R model to a CSN/JSON file. 
+
+    See [Exporting Objects to a CSN/JSON File](Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    
+    </td>
+    </tr>
+    </table>
+    
 

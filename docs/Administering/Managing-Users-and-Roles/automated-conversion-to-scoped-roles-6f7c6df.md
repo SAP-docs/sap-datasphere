@@ -11,9 +11,6 @@ This topic contains the following sections:
 -   [Example of a Converted Scoped Role](automated-conversion-to-scoped-roles-6f7c6df.md#loio6f7c6dfa3cb249debb749c729025bae0__section_fx4_1mn_fyb)
 -   [Adapting Converted Scoped Roles](automated-conversion-to-scoped-roles-6f7c6df.md#loio6f7c6dfa3cb249debb749c729025bae0__section_zxd_cnw_dzb)
 
-> ### Caution:  
-> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
 
 
 <a name="loio6f7c6dfa3cb249debb749c729025bae0__section_bd2_xc4_fyb"/>

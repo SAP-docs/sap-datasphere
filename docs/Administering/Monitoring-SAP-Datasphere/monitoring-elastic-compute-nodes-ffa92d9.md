@@ -57,7 +57,7 @@ Shows the following information about the latest or the previous run of the curr
 
 -   The total run duration \(uptime\) from the starting to the stopping phase.
 
--   The number of block-hours is the numbers of hours that have been consumed by the run. The number of block-hours is the result of the run duration in numbers of hours multiplied by the number of compute blocks. If a node that includes 1 compute block runs for 5 hours, 5 block-hours have been consumed. In such a case, the uptime equals the block-hours. If a node that includes 2 compute blocks runs for 5 hours, 10 block-hours have been consumed.
+-   The number of block-hours is the numbers of hours that have been consumed by the run. The number of block-hours is the result of the run duration in numbers of hours multiplied by the number of compute blocks. If a node that includes 4 compute blocks runs for 5 hours, 20 block-hours have been consumed. In such a case, the uptime equals the block-hours. If a node that includes 8 compute blocks runs for 5 hours, 40 block-hours have been consumed.
 
 
 

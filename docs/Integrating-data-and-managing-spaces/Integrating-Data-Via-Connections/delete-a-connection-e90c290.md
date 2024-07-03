@@ -6,7 +6,7 @@
 
 Select one or more connections and delete them if they are not used.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\) and select a space if necessary.
 
 2.  Select one or more connections and click *Delete*.
 

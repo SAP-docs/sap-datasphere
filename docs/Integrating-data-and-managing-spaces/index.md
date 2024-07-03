@@ -108,6 +108,7 @@
         -   [Adding Sharing Destinations](Transporting-Content-Between-Tenants/adding-sharing-destinations-562e996.md)
         -   [Managing Exported Content](Transporting-Content-Between-Tenants/managing-exported-content-638bf6a.md)
     -   [Importing Content from Another Tenant](Transporting-Content-Between-Tenants/importing-content-from-another-tenant-b607a12.md)
+    -   [Transporting Your Content through SAP Cloud Transport Management](Transporting-Content-Between-Tenants/transporting-your-content-through-sap-cloud-transport-management-0538398.md)
 -   [Managing Your Space](managing-your-space-268ea7e.md)
     -   [Control User Access to Your Space](control-user-access-to-your-space-9d59fe5.md)
     -   [Create Time Data and Dimensions](create-time-data-and-dimensions-c5cfce4.md)

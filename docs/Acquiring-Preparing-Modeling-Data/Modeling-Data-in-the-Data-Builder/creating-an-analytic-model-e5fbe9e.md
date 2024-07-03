@@ -195,13 +195,140 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     </tr>
     </table>
     
-6.  You can choose <span class="FPA-icons-V3"></span> \(Export\)** \> *Export to CSN/JSON File* to export the definition of your analytic models to a CSN/JSON file. For more information, see [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
-
-7.  You can choose <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Support Information* to export information from the runtime CSN for support to analyze it.
-
-8.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
+6.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
 
     > ### Note:  
     > When you change an analytic model for which a story has been defined, and you deploy it again, you need to open the story in SAP Analytics Cloud and save it again.
 
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    
+    </td>
+    <td valign="top">
+    
+    Show the *Source Browser* panel to drag sources into the editor. 
+
+    See [Using the Source Browser](../using-the-source-browser-7d2b21d.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Data Preview* panel to preview data in the selected diagram node. 
+
+    See [Viewing Object Data](../viewing-object-data-b338e4a.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    
+    </td>
+    <td valign="top">
+    
+    Revert the last change to the object or redo a change you have previously undone.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export:
+
+    -   The object to a CSN/JSON file \(see [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md)\).
+    -   Support information to send to SAP Support to help analyze an issue.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Impact and Lineage Analysis* graph for the object. 
+
+    See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-TNT-V3"></span> \(Generate OData Request\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Generate OData Request* dialog to prepare access to the OData API. 
+
+    See [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    </table>
+    
 

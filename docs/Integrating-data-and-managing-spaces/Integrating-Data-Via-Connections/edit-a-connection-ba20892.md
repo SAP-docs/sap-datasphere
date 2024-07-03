@@ -4,7 +4,7 @@
 
 # Edit a Connection
 
-Edit a connection, for example if the setup of the connected remote system changed, if the connection has been imported from another tenant, or if a new feature is available for the connection type after you have created your connection.
+Edit a connection, for example if the setup of the connected remote system changed, if the connection has been imported from another tenant, or if a new feature is available for the connection type after you have created your connection. A warning in the connections list might indicate the need to edit a connection.
 
 
 
@@ -81,7 +81,7 @@ Consider the following when editing a connection which uses a Data Provisioning 
 
 ## Edit a Connection
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\) and select a space if necessary.
 
 2.  Select the relevant connection and click *Edit*.
 
@@ -90,7 +90,7 @@ Consider the following when editing a connection which uses a Data Provisioning 
 
 3.  Make the required changes.
 
-4.  Re-enter your credentials.
+4.  For empty and editable credential fields: Re-enter your credentials.
 
 5.  Click *Save*.
 

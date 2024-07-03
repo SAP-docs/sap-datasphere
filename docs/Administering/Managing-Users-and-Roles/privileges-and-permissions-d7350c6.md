@@ -25,9 +25,6 @@ You can use the standard roles \(see [Standard Roles Delivered with SAP Datasphe
 
 **Global versus scoped privileges** - Global privileges are privileges that are used at the tenant level and are not space-related, and can therefore be included in a global role, typically a tenant administrator role. Scoped privileges are privileges that are space-related and can therefore be included in a scoped role.
 
-> ### Caution:  
-> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
 
 
 <a name="loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges"/>
@@ -662,7 +659,7 @@ Allows access to the *Data Integration Monitor* app:
 > -   To set up or change partitioned data loading in the *Remote Tables* monitor or in the *Views* monitor.
 > -   To start the *View Analyzer* in the *Views* monitor.
 > 
-> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
 
 

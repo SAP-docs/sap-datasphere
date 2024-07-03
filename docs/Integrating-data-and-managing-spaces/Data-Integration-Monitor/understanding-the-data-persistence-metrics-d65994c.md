@@ -178,6 +178,18 @@ For more information, see [Persisted Views and Data Access Control](persisted-vi
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Node Name* 
+
+</td>
+<td valign="top">
+
+Displays the technical name of the elastic compute node used to persist the view. If no elastic compute node is used the value is empty.
+
+</td>
+</tr>
 </table>
 
 
@@ -259,6 +271,32 @@ Displays the maximum amount of memory \(in MiB\) the task to persist view data f
 > You can see this information if the option *Enable Expensive Statement Tracing* is enabled, and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. Otherwise, no number is displayed.
 
 For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/28910cded17a42a0bf16225309cb8bf6.html "Administrators have access to various monitoring logs and views, and can create database analysis users, if necessary, to help troubleshoot issues.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Access Controls* 
+
+</td>
+<td valign="top">
+
+Displays if view data is protected by data access controls.
+
+For more information, see [Persisted Views and Data Access Control](persisted-views-and-data-access-control-7a4a983.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Node Name* 
+
+</td>
+<td valign="top">
+
+Displays the technical name of the elastic compute node used to persist the view. If no elastic compute node is used the value is empty.
 
 </td>
 </tr>

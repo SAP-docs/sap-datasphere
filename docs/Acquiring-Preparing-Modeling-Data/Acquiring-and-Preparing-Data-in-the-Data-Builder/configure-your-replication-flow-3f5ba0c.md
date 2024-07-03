@@ -44,13 +44,13 @@ Define settings and properties for your replication flow and individual replicat
 
 4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the target settings and change them as appropriate.
 
-    -   Target Thread Limit: To modify the throughput, you can increase or decrease the number of replication threads to be used for your replication flow as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during *initial load*.
+    -   Target Thread Limit: To modify the throughput, you can increase or decrease the number of replication threads to be used for your replication flow as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during *initial load*. Possible values are integers between 1 and 100, the default is 10. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance.
 
-        You can change the thread limit in the source accordingly by clicking <span class="FPA-icons-V3"></span> \(Browse source settings\) and entering the appropriate value. We recommend using the same value for the source and the target. When replicating data from SAP HANA, specify an even number for the maximum number of connections, as this helps to improve performance.
+        You can change the thread limit in the source accordingly by clicking <span class="FPA-icons-V3"></span> \(Browse source settings\) and entering the appropriate value. We recommend using the same value for the source and the target.
 
         See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
 
-    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1. The maximum possible value is determined by what you define for target thread limit and source thread limit, respectively, with an absolute maximum value of 10 - whichever is lowest. This option is only available for SLT tables and CDS views that have load type *Initial and Delta*.
+    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 10. This option is only available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta*.
 
     -   Overwrite Target Settings at Object Level: \[only relevant if the target is a cloud storage provider\] By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option.
 
@@ -61,6 +61,8 @@ Define settings and properties for your replication flow and individual replicat
         -   [Using Google BigQuery As the Target](using-google-bigquery-as-the-target-56d4472.md)
 
         -   [Using Apache Kafka As the Target](using-apache-kafka-as-the-target-6df55db.md).
+
+        -   [Using Confluent Kafka As the Target](using-confluent-kafka-as-the-target-74b3c95.md)
 
 
 

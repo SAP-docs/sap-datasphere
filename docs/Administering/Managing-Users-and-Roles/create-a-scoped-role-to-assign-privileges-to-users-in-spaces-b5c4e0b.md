@@ -15,9 +15,6 @@ This topic contains the following sections:
 -   [Add Users to a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_u4g_xpj_zyb)
 -   [Remove Users from a Scoped Role](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_anc_jbz_bzb)
 
-> ### Caution:  
-> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
 
 
 <a name="loiob5c4e0b6c462414783ebbfc053815521__section_uhl_gzy_bzb"/>

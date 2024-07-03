@@ -37,9 +37,6 @@ You should not mix global and scoped privileges in a custom role.
 
 For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 
-> ### Caution:  
-> Scoped roles and all related features are rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
 
 
 ## Procedure

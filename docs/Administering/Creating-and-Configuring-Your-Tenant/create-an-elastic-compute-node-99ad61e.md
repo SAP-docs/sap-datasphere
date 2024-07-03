@@ -79,6 +79,11 @@ The *DW Administrator* global role, for example, grants these privileges \(see [
     <td valign="top">
     
     Enter the technical name of the elastic compute node. The technical name must be unique. It can only contain lowercase letters \(a-z\) and numbers \(0-9\). It must contain the prefix: ds \(which helps to identify elastic compute nodes in monitoring tools\). The minimum length is 3 and the maximum length is 9 characters. See [Rules for Technical Names](../Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
+
+    > ### Note:  
+    > As the technical name will be displayed in monitoring tools, including SAP internal tools, we recommend that you do not mention sensitive information in the name.
+
+
     
     </td>
     </tr>
@@ -118,7 +123,7 @@ The *DW Administrator* global role, for example, grants these privileges \(see [
     > ### Note:  
     > You can modify the number of compute blocks later on by selecting the elastic compute node and click *Configure*.
 
-    The price you pay for additional resources depends on the duration of an elastic compute node run and the number of compute blocks. If a node that includes 1 compute block runs for 5 hours, you pay for 5 block-hours. If a node that includes 2 compute blocks runs for 5 hours, you pay for 10 block-hours.
+    The price you pay for additional resources depends on the duration of an elastic compute node run and the number of compute blocks. If a node that includes 4 compute blocks runs for 5 hours, you pay for 20 block-hours. If a node that includes 8 compute blocks runs for 5 hours, you pay for 40 block-hours.
     
     </td>
     </tr>

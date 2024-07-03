@@ -10,7 +10,7 @@ Non-cumulative measures are processed in a specific way. In order to get the res
 
 ## Exception Aggregation
 
-A non-cumulative meaure cannot be aggregated over time as this would not lead to the expected result. Time-based aggregation is performed using "exception aggregation", which for example calculates the first, last, maximum or average value across a time period.
+A non-cumulative measure cannot be aggregated over time as this would not lead to the expected result. Time-based aggregation is performed using "exception aggregation", which for example calculates the first, last, maximum or average value across a time period.
 
 The standard aggregation specifies how non-time dimensions are aggregated, whereas the exception aggregation specifies how the time dimension is aggregated.
 

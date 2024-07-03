@@ -267,4 +267,130 @@ See the blog [One-Stop-Shop to Intelligent Lookup in SAP Datasphere](https://blo
     > 
     > If you modify a rule or add a new rule, you must redeploy the intelligent lookup before you can rerun it.
 
+10. The tools in the editor toolbar help you work with your object throughout its lifecycle:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Run\)
+    
+    </td>
+    <td valign="top">
+    
+    Run the object to obtain or update its output results.
+
+    You must deploy the object before you can run it.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    
+    </td>
+    <td valign="top">
+    
+    Show the *Source Browser* panel to drag sources into the editor. 
+
+    See [Using the Source Browser](using-the-source-browser-7d2b21d.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Data Preview* panel to preview data in the selected entity or to review and process the results of the selected rule.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export the object to a CSN/JSON file. 
+
+    See [Exporting Objects to a CSN/JSON File](Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Delete Data From Table\)
+    
+    </td>
+    <td valign="top">
+    
+    Delete all matches produced by the intelligent lookup. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Impact and Lineage Analysis* graph for the object. 
+
+    See [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    </table>
+    
 

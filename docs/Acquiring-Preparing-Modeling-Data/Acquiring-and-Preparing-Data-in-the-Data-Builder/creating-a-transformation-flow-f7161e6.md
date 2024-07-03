@@ -16,7 +16,11 @@ A transformation flow run is a one-time event that completes when the relevant d
 > Views and Open SQL schema objects that reference remote tables \(either directly or indirectly\) are not supported. However, views that reference remote tables in BW Bridge spaces are supported.
 
 > ### Note:  
-> If a data access control has been applied to a view or to an Open SQL schema object \(either directly or indirectly\), then the view or the Open SQL schema object is not supported.
+> Views and Open SQL schema objects are not supported in the following cases:
+> 
+> -   A data access control has been applied to the view.
+> 
+> -   A view or Open SQL schema object consumes \(either directly or indirectly\) a view that has a data access control applied to it.
 
 > ### Note:  
 > Remote tables located in SAP BW bridge spaces must be shared with the SAP Datasphere space you are using to create your transformation flow.
@@ -161,4 +165,104 @@ Creating a transformation flow involves two important steps:
     -   Transformation flows that have changes to deploy are redeployed.
 
 
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Run\)
+    
+    </td>
+    <td valign="top">
+    
+    Run the object to obtain or update its output results.
+
+    You must deploy the object before you can run it.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    
+    </td>
+    <td valign="top">
+    
+    Revert the last change to the object or redo a change you have previously undone.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export the object to a CSN/JSON file. 
+
+    See [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Impact and Lineage Analysis* graph for the object. 
+
+    See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    </table>
+    
 

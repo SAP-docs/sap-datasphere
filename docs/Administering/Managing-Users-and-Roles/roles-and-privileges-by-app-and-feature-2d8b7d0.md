@@ -346,7 +346,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\)
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -998,7 +998,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), listed data products, or data providers.") :arrow_upper_right:
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), listed marketplace data products, or data providers.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1017,7 +1017,7 @@ Assets
 
 View detailed information for an asset, including the details for any term, tag, or KPI that is linked. 
 
-See [Evaluating Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "When you find the asset you want, you can select it to view its overview information, a preview of its detailed metadata, and a diagram of its impact and lineage. This information includes metadata that is extracted from the source system and data enrichments added in the catalog.") :arrow_upper_right:
+See [Evaluating Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1046,7 +1046,7 @@ Assets
 
 Edit the name of the asset that appears in the catalog.
 
-See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if it's the one they need.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1067,7 +1067,7 @@ Assets
 
 Add a catalog description for the asset.
 
-See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if it's the one they need.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1088,7 +1088,7 @@ Assets
 
 Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
 
-See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if it's the one they need.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1113,7 +1113,7 @@ Assets
 
 Create or delete a relationship between a tag and an asset.
 
-See [Add and Manage Asset Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "Add, edit, and remove asset tags.") :arrow_upper_right:
+See [Managing Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1195,7 +1195,7 @@ Tags
 
 Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
 
-See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if its the one they need.") :arrow_upper_right:
+See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if it's the one they need.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1277,7 +1277,7 @@ Tags
 
 Create or delete a relationship between a tag and an asset.
 
-See [Add and Manage Asset Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "Add, edit, and remove asset tags.") :arrow_upper_right:
+See [Managing Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
 
 </td>
 <td valign="top">

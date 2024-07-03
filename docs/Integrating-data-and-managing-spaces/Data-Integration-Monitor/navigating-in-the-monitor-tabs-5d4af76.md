@@ -4,7 +4,7 @@
 
 # Navigating in the Monitor Tabs
 
-Selecting a specific monitor tab from *Data Integration Monitor* \(<span class="FPA-icons-V3"></span> \) displays a tabular list of the scheduled tasks associated with the selected monitor type. You can personalize the columns you want to display clicking on :gear:. From the tabular display, you can click \> at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run. After selecting a specific monitor type, for *Remote Tables*, *Views*, *Flows*, or *Task Chains*, each of the monitor displays provides a summary listing of currently scheduled and previously executed tasks. For example, here is a sample of the monitor display for the *Remote Tables* monitor
+Selecting a specific monitor tab from *Data Integration Monitor* \(<span class="FPA-icons-V3"></span> \) displays a tabular list of the scheduled tasks associated with the selected monitor type. It shows the details of runs executed in last 60 days. You can personalize the columns you want to display clicking on :gear:. From the tabular display, you can click \> at the end of a particular task row to display details of that monitored item’s execution history including the completion date and status of each run. After selecting a specific monitor type, for *Remote Tables*, *Views*, *Flows*, or *Task Chains*, each of the monitor displays provides a summary listing of currently scheduled and previously executed tasks. For example, here is a sample of the monitor display for the *Remote Tables* monitor
 
 ![](images/Example_Remote_Tables_monitor_61c3dc3.jpg)
 

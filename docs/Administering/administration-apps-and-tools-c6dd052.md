@@ -133,12 +133,14 @@ More Information
 </td>
 <td valign="top">
 
-*Live Data Connections \(Tunnel\)*: For SAP BW∕4HANA model import, you need Cloud Connector to make http requests to SAP BW∕4HANA. This requires a live data connection of type tunnel to SAP BW∕4HANA.
+*Live Data Connections \(Tunnel\)*: For SAP BW∕4HANA and SAP S/4HANA model import, you need Cloud Connector. This requires a live data connection of type tunnel.
 
 </td>
 <td valign="top">
 
-[Create Live Data Connection of Type Tunnel](Preparing-Connectivity/create-live-data-connection-of-type-tunnel-5d02f11.md)
+[Create Live Data Connection of Type Tunnel](Preparing-Connectivity/create-live-data-connection-of-type-tunnel-5d02f11.md) \(SAP BW∕4HANA\)
+
+[Create SAP S/4HANA Live Data Connection of Type Tunnel](Preparing-Connectivity/create-sap-s-4hana-live-data-connection-of-type-tunnel-095dbdf.md) \(SAP S/4HANA\)
 
 </td>
 </tr>
@@ -197,7 +199,7 @@ More Information
 </td>
 <td valign="top">
 
-*SSL/TLS Certificates* : Upload server certificates to enable secure SSL/TLS-based connections to certain sources.
+*SSL/TLS Certificates*: Upload server certificates to enable secure SSL/TLS-based connections to certain sources.
 
 </td>
 <td valign="top">
@@ -383,6 +385,23 @@ Allocate the capacity units to storage and compute resources for your tenant.
 <td valign="top">
 
 [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*System Information*
+
+</td>
+<td valign="top">
+
+Add a visual tenant type indicator to show all users which system they are using, for example a test or production system.
+
+</td>
+<td valign="top">
+
+[Display Your System Information](Creating-and-Configuring-Your-Tenant/display-your-system-information-6bdd798.md)
 
 </td>
 </tr>

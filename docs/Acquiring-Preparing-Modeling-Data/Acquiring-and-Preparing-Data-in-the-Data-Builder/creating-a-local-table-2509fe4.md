@@ -179,13 +179,11 @@ This procedure explains how to create an empty table by defining its columns. Yo
     -   *Partitions*- Define partitions for your local table. For more information, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
     -   *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 
-5.  \[optional\] Click <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) to open the *Edit Custom CSN Annotations* dialog. For more information, see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md) 
-
-6.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
+5.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
-7.  Once your table is deployed, you can:
+6.  Once your table is deployed, you can:
 
     -   Import data from a CSV file or delete all table data \(see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)\).
     -   Manually add, edit, duplicate, or delete individual records \(see [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)\).
@@ -194,4 +192,177 @@ This procedure explains how to create an empty table by defining its columns. Yo
         \(see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md)\).
 
 
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Share\)
+    
+    </td>
+    <td valign="top">
+    
+    Share the object to other spaces. 
+
+    See [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Data Preview* panel to preview the data stored in the object.
+
+    See [Viewing Object Data](../viewing-object-data-b338e4a.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    
+    </td>
+    <td valign="top">
+    
+    Revert the last change to the object or redo a change you have previously undone.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export the object to a CSN/JSON file. 
+
+    See [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Upload Data From CSV File\)
+    
+    </td>
+    <td valign="top">
+    
+    Upload data.
+
+    See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Hierarchies\)
+    
+    </td>
+    <td valign="top">
+    
+    Add a hierarchy to your dimension to support drill-down and drill-up in BI clients.
+
+    See [Add a Hierarchy to a Dimension](../Modeling-Data-in-the-Data-Builder/add-a-hierarchy-to-a-dimension-218b7e6.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Delete Data From Table\)
+    
+    </td>
+    <td valign="top">
+    
+    Delete data:
+
+    -   Standard table - Delete all records.
+    -   Delta enabled - Delete all records or delete all fully-processed records with change type "Deleted".
+
+    See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\)
+    
+    </td>
+    <td valign="top">
+    
+    Work with custom CSN annotations that are not otherwise supported by the interface. 
+
+    See [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Impact and Lineage Analysis* graph for the object. 
+
+    See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    </table>
+    
 

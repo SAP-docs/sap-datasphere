@@ -18,9 +18,6 @@ Each standard or custom role is either a global role or a template for scoped ro
 
 For more information on global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 
-> ### Caution:  
-> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
 ![](images/RolesGraph_638d925.png)
 
 Users have relevant privileges depending on which actions they can do in the spaces.

@@ -13,9 +13,6 @@ A DW Administrator can use standard roles as templates for creating custom roles
 > ### Note:  
 > You cannot delete nor edit standard roles.
 
-> ### Caution:  
-> Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
 In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\). The following standard roles are available:
 
 -   Roles providing privileges to administer the SAP Datasphere tenant:

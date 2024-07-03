@@ -4,13 +4,13 @@
 
 # Sharing Tables and Views To Other Spaces
 
-Share a *Data Builder* table or view to another space to allow that users assigned to the space use it as a source for their objects.
+Share a *Data Builder* table or view to another space to allow users assigned to that space to use it as a source for their objects.
 
 This topic contains the following sections:
 
 -   [Preparing to Share](sharing-tables-and-views-to-other-spaces-64b318f.md#loio64b318f8afd74bb78467cf56eb44294f__section_preparation)
 -   [Share Entities](sharing-tables-and-views-to-other-spaces-64b318f.md#loio64b318f8afd74bb78467cf56eb44294f__section_share)
--   [Share Entities Containing Associations](sharing-tables-and-views-to-other-spaces-64b318f.md#loio64b318f8afd74bb78467cf56eb44294f__section_semantics)
+-   [Share Supporting Entities](sharing-tables-and-views-to-other-spaces-64b318f.md#loio64b318f8afd74bb78467cf56eb44294f__section_semantics)
 -   [Review Entities Shared With Your Space](sharing-tables-and-views-to-other-spaces-64b318f.md#loio64b318f8afd74bb78467cf56eb44294f__section_review)
 -   [Unshare an Entity](sharing-tables-and-views-to-other-spaces-64b318f.md#loio64b318f8afd74bb78467cf56eb44294f__section_unshare)
 
@@ -74,9 +74,19 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
 
 <a name="loio64b318f8afd74bb78467cf56eb44294f__section_semantics"/>
 
-## Share Entities Containing Associations
+## Share Supporting Entities
 
-Entities with a semantic usage of *Fact* or *Dimension* commonly have associations to other entities and when sharing them, you will often want to share the associated entities too.
+Entities with a semantic usage of *Fact* or *Dimension* commonly have dependencies on other entities and when sharing them, you must also share these associated entities in order to make the services they provide work in the target space:
+
+-   Dimensions - Providing categories to analyze measures \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\)
+-   Text entities - Providing translations of text values \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\)
+-   External hierarchies - Providing drill-down capabilities \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\)
+-   Hierarchies with directories - Including all their supporting entities \(see [Creating a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\)
+-   Value help entities - Providing values for input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\)
+-   Lookup entities - Providing help in deriving values for variables \(see [Add a Variable](../Modeling-Data-in-the-Data-Builder/add-a-variable-cdd8fa0.md)\)
+
+> ### Note:  
+> If any expected service is missing in the space to which you share your entity, verify that the relevant supporting entity is correctly shared. For example, if texts, hierarchies, or value helps are missing, verify that you have shared the appropriate text entity, hierarchy, or value help entity.
 
 In this example, the *Cities* entity has a semantic usage of *Dimension* and has associations to the *Cities Texts* text entity and to the *Countries* dimension \(which, itself, has an association to the *Countries Texts* text entity\). When sharing *Cities*, you would generally share the other three entities as well:
 

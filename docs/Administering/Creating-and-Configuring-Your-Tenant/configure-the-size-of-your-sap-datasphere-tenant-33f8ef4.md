@@ -76,7 +76,7 @@ Select a performance class for your tenant:
 -   High-Compute
 
 > ### Note:  
-> The performance class you select determines the number of vCPUs allocated to your tenant.
+> The performance class you select determines the number of vCPUs allocated to your tenant. For a detailed list, see the **vCPU Allocation** table below.
 
 
 
@@ -106,9 +106,7 @@ You can specify from 128 GB \(minimum\), by increments of 64 GB.
 
 Set the memory allocated to your tenant.
 
-You can increase the amount of memory from 32 GB \(minimum\), by increments of 16 GB. You can reduce the amount of memory, but the lower limit depends on how much space you have assigned to space management.
-
-For more information, see [Allocate Storage to a Space](../Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md).
+You can increase the amount of memory from 32 GB \(minimum\), by increments of 16 GB.
 
 </td>
 </tr>
@@ -526,6 +524,480 @@ Displays the estimated number of capacity units consumed per month by the storag
 <td valign="top">
 
 Displays the estimated number of capacity units consumed per hour by the storage and compute resources you've specified.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio33f8ef4ec359409fb75925a68c23ebc3__section_w4d_15g_sbc"/>
+
+## vCPU Allocation
+
+When you set your base configuration, the performance class you select and the hyperscaler you are using determines the ratio of memory to vCPUs allocated to your tenant. The tables below list the memory to vCPU ratio for each hyperscaler.
+
+**Performance Class: Memory**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler
+
+</th>
+<th valign="top">
+
+Memory
+
+</th>
+<th valign="top">
+
+vCPUs
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+32-960 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+1024-1792 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+1800 GB
+
+</td>
+<td valign="top">
+
+15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+5970 GB
+
+</td>
+<td valign="top">
+
+13.57
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+32-960 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+1024-1344 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+32-1024 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+1088-1920 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+2800 GB
+
+</td>
+<td valign="top">
+
+13.72
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+3744 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+13.59
+
+</td>
+</tr>
+</table>
+
+**Performance Class: High Memory**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler
+
+</th>
+<th valign="top">
+
+Memory
+
+</th>
+<th valign="top">
+
+vCPUs
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+3600 GB
+
+</td>
+<td valign="top">
+
+30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+3700 GB
+
+</td>
+<td valign="top">
+
+23.72
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+28.19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+3776 GB
+
+</td>
+<td valign="top">
+
+31.47
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+5595 GB
+
+</td>
+<td valign="top">
+
+27.43
+
+</td>
+</tr>
+</table>
+
+**Performance Class: Compute**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler
+
+</th>
+<th valign="top">
+
+Memory
+
+</th>
+<th valign="top">
+
+vCPUs
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+32-912 GB
+
+</td>
+<td valign="top">
+
+8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+32-608 GB
+
+</td>
+<td valign="top">
+
+8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+32-480 GB
+
+</td>
+<td valign="top">
+
+8
+
+</td>
+</tr>
+</table>
+
+**Performance Class: High Compute**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Hyperscaler
+
+</th>
+<th valign="top">
+
+Memory
+
+</th>
+<th valign="top">
+
+vCPUs
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+32-352 GB
+
+</td>
+<td valign="top">
+
+4
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+32-288 GB
+
+</td>
+<td valign="top">
+
+4
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+32-352 GB
+
+</td>
+<td valign="top">
+
+4
 
 </td>
 </tr>

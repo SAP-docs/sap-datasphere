@@ -40,9 +40,6 @@ Your custom SAML Identity Provider \(IdP\) must be configured and the authentica
     > ### Note:  
     > If a user is assigned to a scoped role via SAML attributes, the user is automatically assigned to all the spaces included in the scoped role.
 
-    > ### Caution:  
-    > Scoped roles and all related features will be rolled out to all tenants over the course of a number of versions. For more details, see SAP Note [3380409](https://launchpad.support.sap.com/#/notes/3380409).
-
     In the *Roles* page, a dedicated icon in the role tile is displayed, indicating that the users are assigned to the role via SAML attributes. When you hover over the icon, the conditions defined for the role are displayed.
 
 

@@ -8,8 +8,10 @@ Use the *View Analyzer* to explore graphical or SQL views, and the entities they
 
 The *View Analyzer* provides you with statistics and useful information on each entity that composes your view, no matter the complexity of the view. It analyzes each view definition, the consumed views, the local tables and the data sources used by remote tables that compose your data model. You can then use this information to optimize your data model, and decide, for example, which view to persist when performance or technical problems such as out-of-memory errors occur.
 
-> ### Note:  
+> ### Tip:  
 > While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
+
+
 
 To use the *View Analyzer*,
 

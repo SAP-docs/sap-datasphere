@@ -220,9 +220,9 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Ennter the number of threads to be used for parallel processing during delta load.
+    Enter the number of threads to be used for parallel processing during delta load.
 
-    This option is available for SLT tables, CDS views, and SQL service objects that have load type *Initial and Delta*.
+    This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta*.
 
     For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
     
@@ -263,4 +263,90 @@ For more information about available connection types, sources, and targets, see
 
     For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 
+9.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Tool
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Save\)
+    
+    </td>
+    <td valign="top">
+    
+    Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Deploy\)
+    
+    </td>
+    <td valign="top">
+    
+    Deploy your changes to make them available in the run-time environment.
+
+    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Run\)
+    
+    </td>
+    <td valign="top">
+    
+    Run the object to obtain or update its output results.
+
+    You must deploy the object before you can run it.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Add Projection
+    
+    </td>
+    <td valign="top">
+    
+    Define a projection \(filter or mapping\) for an object by selecting it and choosing *Add Projection*.
+
+    See [Define Filters](define-filters-5a6ef36.md) and [Define Mapping](define-mapping-2c7948f.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Open in Data Integration Monitor\)
+    
+    </td>
+    <td valign="top">
+    
+    Go to the monitor to get status information for your replication flow runs.
+    
+    </td>
+    </tr>
+    </table>
+    
 

@@ -13,7 +13,7 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 > ### Note:  
 > Use of sample content and business content is optional and not part of the business functionality of the product. Content packages may be discontinued or replaced at any time.
 
-Detailed documentation for all business content is available at [SAP Datasphere Content Documentation](https://help.sap.com/doc/4b618244ad5f4fbb8423d08996f8b891/cloud/en-US/SAP_Data_Warehouse_Cloud_Content.pdf).
+Detailed documentation for all business content is available at [SAP Datasphere Business Content](https://help.sap.com/docs/SAP_DATASPHERE/6eb1eff34e4c4b1f90adfbfba1334240/a87964c26bfc1014a79e69594ccc91ad.html).
 
 > ### Note:  
 > The *Content Network* is not available for trial users.
