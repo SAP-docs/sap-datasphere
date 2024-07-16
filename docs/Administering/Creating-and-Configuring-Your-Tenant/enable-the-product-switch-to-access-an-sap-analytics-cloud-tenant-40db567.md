@@ -8,7 +8,7 @@ You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant and enab
 
 ## Procedure
 
-1.  Go to *System* \> *Configuration* \> *Tenant Links*.
+1.  Go to *System* \> *Administration* \> *Tenant Links*.
 
 2.  Enter the URL of your SAP Analytics Cloud tenant.
 

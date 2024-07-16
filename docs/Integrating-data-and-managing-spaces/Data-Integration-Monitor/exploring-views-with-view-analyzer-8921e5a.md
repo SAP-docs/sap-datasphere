@@ -11,7 +11,8 @@ The *View Analyzer* provides you with statistics and useful information on each 
 > ### Tip:  
 > While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
-
+> ### Note:  
+> The *View Analyzer* can't analyze a view that has input parameters.
 
 To use the *View Analyzer*,
 

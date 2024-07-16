@@ -34,4 +34,7 @@ For detailed information about defining and using data access controls, see [Sec
 
     Users opening your view in SAP Datasphere or in SAP Analytics Cloud or other analytics tools will only see the data permitted by the assignment of their username to the criteria defined in the data access control.
 
+    > ### Note:  
+    > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](viewing-object-data-b338e4a.md)\).
+
 

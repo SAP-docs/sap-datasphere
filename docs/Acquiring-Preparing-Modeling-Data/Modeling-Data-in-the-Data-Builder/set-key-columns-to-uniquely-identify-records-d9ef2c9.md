@@ -43,7 +43,7 @@ Mapping Keys When Creating Associations
 
 *Fact*
 
-See [Creating a Fact](creating-a-fact-30089bd.md).
+See [Create a Fact to Contain Measurable Data](create-a-fact-to-contain-measurable-data-30089bd.md).
 
 </td>
 <td valign="top">
@@ -56,7 +56,7 @@ You may set one or more key attributes for a *Fact*, but none are required.
 A *Fact* can point to a:
 
 -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
--   *Text Entity* - An attribute in the \(source\) *Fact* must be mapped to the \(target\) *Text Entity* identifier key column.
+-   *Text Entity* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Text Entity* identifier key column.
 
 
 
@@ -67,7 +67,7 @@ A *Fact* can point to a:
 
 *Dimension*
 
-See [Creating a Dimension](creating-a-dimension-5aae0e9.md).
+See [Create a Dimension to Categorize Data](create-a-dimension-to-categorize-data-5aae0e9.md).
 
 </td>
 <td valign="top">
@@ -122,7 +122,7 @@ A *Text Entity* must not point to other entities.
 
 *Hierarchy*
 
-See [Creating an External Hierarchy](creating-an-external-hierarchy-dbac7a8.md).
+See [Create an External Hierarchy for Drill-Down](create-an-external-hierarchy-for-drill-down-dbac7a8.md).
 
 </td>
 <td valign="top">
@@ -145,7 +145,7 @@ A *Hierarchy* will generally not point to other entities.
 
 *Hierarchy with Directory*
 
-See [Creating a Hierarchy with Directory](creating-a-hierarchy-with-directory-36c39ee.md).
+See [Create a Hierarchy with Directory](create-a-hierarchy-with-directory-36c39ee.md).
 
 </td>
 <td valign="top">
@@ -187,6 +187,8 @@ A *Relational Dataset* can point to any other entity and should generally follow
 </td>
 </tr>
 </table>
+
+See also [Create an Association to Define a Semantic Relationship Between Entities](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md).
 
 
 
@@ -317,5 +319,5 @@ To define a compound key and set its representative key:
 6.  Click *Close* to complete the definition of the compound key.
 
 > ### Note:  
-> When you define a compound key for a dimension and want to provide translations of the dimension members, you must map all key columns to the text entity. You can only provide translations for the representative key column. Other key columns cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
+> When you define a compound key for a dimension and want to provide translations of the dimension members, you must map all key columns to the text entity and identify the representative key column in the text entity as well. You can only provide translations for the representative key column. Other key columns in the compound key cannot be translated.
 

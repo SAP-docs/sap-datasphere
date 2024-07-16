@@ -51,11 +51,11 @@ Use the *Semantic Usage* property to indicate the type of data contained in your
 
 ## Identify Measures to Analyze in a Fact
 
-Facts are entities that contain numerical measures that can be analyzed and are the principal type of object that is consumed by BI clients \(see [Creating a Fact](creating-a-fact-30089bd.md)\).
+Facts are entities that contain numerical measures that can be analyzed and are the principal type of object that is consumed by BI clients \(see [Create a Fact to Contain Measurable Data](create-a-fact-to-contain-measurable-data-30089bd.md)\).
 
 -   To get started: Select a *Semantic Usage* of *Fact* to indicate that your entity contains numerical measures that can be analyzed.
--   You must identify at least one measure \(see [Specify Measures](specify-measures-33f7f29.md)\).
--   You can create associations to dimensions and text entities \(see [Create an Association](../create-an-association-66c6998.md)\).
+-   You must identify at least one measure \(see [Specify Measures to Analyze](specify-measures-to-analyze-33f7f29.md)\).
+-   You can create associations to dimensions and text entities \(see [Create an Association to Define a Semantic Relationship Between Entities](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
 -   To expose your data for consumption in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 
@@ -64,12 +64,12 @@ Facts are entities that contain numerical measures that can be analyzed and are 
 
 ## Prepare Master Data for Grouping in a Dimension
 
-Dimensions are entities that contain master data that categorize and group the numerical data contained in your measures \(see [Creating a Dimension](creating-a-dimension-5aae0e9.md)\).
+Dimensions are entities that contain master data that categorize and group the numerical data contained in your measures \(see [Create a Dimension to Categorize Data](create-a-dimension-to-categorize-data-5aae0e9.md)\).
 
 -   To get started: Select a *Semantic Usage* of *Dimension* to indicate that your entity contains attributes that can be used to analyze and categorize measures defined in other entities.
 
 -   You must set at least one key column \(see [Set Key Columns to Uniquely Identify Records](set-key-columns-to-uniquely-identify-records-d9ef2c9.md)\).
--   You can create associations to other dimensions, text entities, and hierarchies \(see [Create an Association](../create-an-association-66c6998.md)\).
+-   You can create associations to other dimensions, text entities, and hierarchies \(see [Create an Association to Define a Semantic Relationship Between Entities](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
 -   You can add parent-child or level-based hierarchies to support drill-down \(see [Add a Hierarchy to a Dimension](add-a-hierarchy-to-a-dimension-218b7e6.md)\).
 -   You can make your dimension time-dependent, so that its members can change over time \(see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md)\).
 
@@ -92,7 +92,7 @@ Text entities are entities that contain data to store strings in multiple langua
 
 ## Enable Drill-Down with a Hierarchy
 
-External hierarchies are entities that contain data to define parent-child relationships for a dimension \(see [Creating an External Hierarchy](creating-an-external-hierarchy-dbac7a8.md)\).
+External hierarchies are entities that contain data to define parent-child relationships for a dimension \(see [Create an External Hierarchy for Drill-Down](create-an-external-hierarchy-for-drill-down-dbac7a8.md)\).
 
 -   To get started: Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains parent-child relationships for members in a dimension.
 -   You must specify the parent and child attributes and set the child attribute as a key.
@@ -106,7 +106,7 @@ External hierarchies are entities that contain data to define parent-child relat
 
 ## Create Heterogeneous Hierarchies with a Hierarchy with Directory
 
-A hierarchy with directory is an entity that contains one or more parent-child hierarchies and has an association to a directory dimension containing a list of the hierarchies. These types of hierarchy entities can include nodes from multiple dimensions \(for example, country, cost center group, and cost center\) and are commonly imported from SAP S/4HANA Cloud and SAP BW systems \(see [Creating a Hierarchy with Directory](creating-a-hierarchy-with-directory-36c39ee.md)\).
+A hierarchy with directory is an entity that contains one or more parent-child hierarchies and has an association to a directory dimension containing a list of the hierarchies. These types of hierarchy entities can include nodes from multiple dimensions \(for example, country, cost center group, and cost center\) and are commonly imported from SAP S/4HANA Cloud and SAP BW systems \(see [Create a Hierarchy with Directory](create-a-hierarchy-with-directory-36c39ee.md)\).
 
 
 

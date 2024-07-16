@@ -24,7 +24,7 @@ This topic contains the following sections:
 You can open the *Impact and Lineage Analysis* dialog from various screens:
 
 -   In the *Repository Explorer* or the *Data Builder* start page, select an object to analyze and click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar.
--   In the *Catalog*, click the *Lineage* tab of an asset page.
+-   In the *Catalog*, click the *Open Impact and Lineage Analysis* button on the asset details page.
 -   In *Data Builder* object editors, click <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) in the toolbar or, if the editor contains a diagram, select a table, view, or data flow symbol and click the tool in the symbol toolbar.
 
 In this example, a user opens the diagram to analyze the *Enriched Sales View* in the *Sales* space, which has two sources and which is a source for two objects in other spaces:
@@ -362,7 +362,7 @@ In *Dependency Analysis* mode, it shows several other entities, to which it is l
 
 These additional link types display as follows::
 
--   <span class="SAP-icons-TNT-V3"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see [Create an Association](create-an-association-66c6998.md)\).
+-   <span class="SAP-icons-TNT-V3"></span> \(Association\) - Association pointing to another entity to indicate a potential join between them \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
 
 -   <span class="SAP-icons-V5"></span> \(Data Access Control\) - Data access control providing row-level security \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 

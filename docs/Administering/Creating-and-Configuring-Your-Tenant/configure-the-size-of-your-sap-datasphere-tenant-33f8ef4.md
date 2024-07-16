@@ -108,6 +108,10 @@ Set the memory allocated to your tenant.
 
 You can increase the amount of memory from 32 GB \(minimum\), by increments of 16 GB.
 
+You can reduce the amount of memory, but the lower limit depends on how much space you have assigned to space management.
+
+For more information, see [Allocate Storage to a Space](../Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md).
+
 </td>
 </tr>
 <tr>
@@ -208,6 +212,113 @@ The process for allocating capacity units to SAP BW Bridge is not part of the co
 > -   When using a test tenant with the minimal configuration \(128 GB of storage and 1 compute block\), you cannot add SAP BW Bridge storage unless you add more compute blocks.
 > 
 > -   As soon as you click *Save*, the allocated capacity units will be assigned to SAP BW Bridge.
+
+
+
+</td>
+</tr>
+</table>
+
+**Elastic Compute Node**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Performance Class*
+
+</td>
+<td valign="top">
+
+> ### Note:  
+> If you try to modify the settings and discover that elastic compute node functionality has not been enabled on your SAP HANA Cloud Database, follow the steps described in[SAP Note 3432666](https://me.sap.com/notes/3432666). This functionality is not enabled by default on older tenants.
+
+\[optional\] Select a performance class for your elastic compute node block-hours:
+
+-   Memory
+-   Compute
+-   High-Compute
+
+> ### Note:  
+> The performance class you select determines the number of vCPUs and the RAM allocated to your tenant.
+
+You can only use one performance class at a time. To use a different performance class, you must re-configure your *Tenant Configuration* settings.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Block Specifications*
+
+</td>
+<td valign="top">
+
+Displays the number of vCPUs and the amount of RAM allocated to your tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Block-Hours*
+
+</td>
+<td valign="top">
+
+\[optional\] Set the number of blocks-hours scheduled for elastic compute node consumption. Each block-hour is an additional block of vCPu and RAM for your tenant to use in one hour. The maximum number of block-hours you can consume in one hour is four.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Node Usage: Allocated Block-Hours*
+
+</td>
+<td valign="top">
+
+Displays the number of blocks currently scheduled for elastic compute node consumption.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Node Usage: Used Block-Hours*
+
+</td>
+<td valign="top">
+
+Displays the total number of blocks consumed by elastic compute nodes. The total is independent of which performance-class is selected.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Node Usage: Exceeded Block-Hours*
+
+</td>
+<td valign="top">
+
+Displays the block-hours you have used that exceed the amount allocated by your tenant configuration.
+
+> ### Note:  
+> This only appears if you have used more block-hours than allocated.
 
 
 

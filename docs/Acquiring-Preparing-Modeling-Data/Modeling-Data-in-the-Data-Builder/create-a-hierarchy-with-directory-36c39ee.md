@@ -1,6 +1,6 @@
 <!-- loio36c39eee184c485a80ebce9d0fec49ec -->
 
-# Creating a Hierarchy with Directory
+# Create a Hierarchy with Directory
 
 Select a *Semantic Usage* of *Hierarchy with Directory* to indicate that your entity contains one or more parent-child hierarchies and has an association to a directory dimension containing a list of the hierarchies.
 
@@ -13,12 +13,12 @@ For more information and walkthroughs, see also:
 
 This topic contains the following sections:
 
--   [Example: SAP S/4HANA Cloud General Ledger Account Hierarchy](creating-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_example)
--   [Prepare the Leaf Node and Other Hierarchy Node Dimensions and Text Entities](creating-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_dimension)
--   [Prepare the Hierarchy Directory Entity and Text Entities](creating-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_directory)
--   [Prepare the Hierarchy Entity](creating-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_hierarchy)
--   [Use a Hierarchy in an Analytic Model](creating-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_use_am)
--   [Use a Hierarchy in an SAP Analytics Cloud Story](creating-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_use_sac)
+-   [Example: SAP S/4HANA Cloud General Ledger Account Hierarchy](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_example)
+-   [Prepare the Leaf Node and Other Hierarchy Node Dimensions and Text Entities](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_dimension)
+-   [Prepare the Hierarchy Directory Entity and Text Entities](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_directory)
+-   [Prepare the Hierarchy Entity](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_hierarchy)
+-   [Use a Hierarchy in an Analytic Model](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_use_am)
+-   [Use a Hierarchy in an SAP Analytics Cloud Story](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_use_sac)
 
 
 
@@ -64,7 +64,7 @@ In our example, `GLAccountInChartOfAccounts` is the leaf node dimension and `GLA
 
     Your leaf node dimension must have a key and will contain records of members that are related in one or more parent-child hierarchies.
 
-    For more information about dimensions, see [Creating a Dimension](creating-a-dimension-5aae0e9.md).
+    For more information about dimensions, see [Create a Dimension to Categorize Data](create-a-dimension-to-categorize-data-5aae0e9.md).
 
 2.  In the *Associations* section, click *New* \> *Hierarchy Association*, select your hierarchy entity and complete the mapping.
 3.  In the *Associations* section, click *New* \> *Text Association*, select the appropriate text entity and complete the mapping.

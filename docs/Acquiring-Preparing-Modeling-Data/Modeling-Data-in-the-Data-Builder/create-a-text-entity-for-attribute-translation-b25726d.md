@@ -19,7 +19,7 @@ For example:
 ![](images/Text_Entity_Example_2b15da2.png)
 
 > ### Note:  
-> When a dimension has a compound key defined, you can only provide translations for the representative key column. Other key columns cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
+> When a dimension has a compound key defined, you can only provide translations for the representative key column. Other key columns in the compound key cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
 
 
 
@@ -27,7 +27,7 @@ For example:
 
 1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Text*.
 
-2.  Specify your attributes \(see [Specify Attributes](specify-attributes-cedc59c.md)\).
+2.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
 
     You must specify at least the following attributes:
 

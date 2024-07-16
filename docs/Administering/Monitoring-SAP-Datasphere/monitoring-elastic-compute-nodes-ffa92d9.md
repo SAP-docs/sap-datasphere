@@ -163,7 +163,7 @@ To see detailed information about the errors, you can click *View Logs*, which t
 </td>
 <td valign="top">
 
-Shows the amount of memory allocated to the elastic compute node, broken down between:
+Shows the amount of memory allocated to the elastic compute node, if in a running state, broken down between:
 
 -   *Unused Memory* - Shows the amount of memory available for the elastic compute node.
 
@@ -171,6 +171,9 @@ Shows the amount of memory allocated to the elastic compute node, broken down be
 
 -   *Memory Used for Processing* - Shows the amount of memory used by the processes that are currently running for the elastic compute node. For example: consumption of the queries running on the elastic compute node.
 
+
+> ### Note:  
+> If the elastic compute node is not in a running state, no data is displayed.
 
 
 

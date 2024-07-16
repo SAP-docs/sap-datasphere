@@ -114,16 +114,20 @@ The *DW Administrator* global role, for example, grants these privileges \(see [
     </td>
     <td valign="top">
     
-    Select the number of compute blocks. You can specify from 1 to 4 blocks. Each compute block provides 64 GB of memory and 4 CPUs.
+    Select the number of compute blocks. You can choose 4, 8, 12, or 16 blocks. The amount of memory and vCPU depends on the performance class you choose:
 
-    Default: 1
+    -   Memory: 1 vCPU and 16 GB RAM per block
+    -   Compute: 2 vCPUs and 16 GB RAM per block
+    -   High Compute: 4 vCPUs and 16 GB RAM per block
+
+    Default: 4
 
     The number of GB for memory and storage and the number of CPU are calculated based on the compute blocks and you cannot modify them.
 
     > ### Note:  
     > You can modify the number of compute blocks later on by selecting the elastic compute node and click *Configure*.
 
-    The price you pay for additional resources depends on the duration of an elastic compute node run and the number of compute blocks. If a node that includes 4 compute blocks runs for 5 hours, you pay for 20 block-hours. If a node that includes 8 compute blocks runs for 5 hours, you pay for 40 block-hours.
+    The price you pay for additional resources depends on the compute blocks and the performance class. If a node that includes 4 compute blocks runs for 30 minutes, you pay for 2 block-hours.
     
     </td>
     </tr>

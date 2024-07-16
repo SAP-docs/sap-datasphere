@@ -10,7 +10,7 @@ Create an association between two entities graphically in an E/R model diagram.
 
 ## Context
 
-In addition to this method, you can also create associations in the side panel in an E/R model, or in the table editor, graphical view editor, or SQL view editor \(see [Create an Association](create-an-association-66c6998.md)\).
+In addition to this method, you can also create associations in the side panel in an E/R model, or in the table editor, graphical view editor, or SQL view editor \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
 
 
 
@@ -27,7 +27,7 @@ In addition to this method, you can also create associations in the side panel i
     -   A *Fact* can point to a:
 
         -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
-        -   *Text Entity* - An attribute in the \(source\) *Fact* must be mapped to the \(target\) *Text Entity* identifier key column.
+        -   *Text Entity* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Text Entity* identifier key column.
 
     -   A *Dimension* can point to a:
 

@@ -15,7 +15,7 @@ This topic contains the following sections:
 
 ## Use Facts with Analytic Models to Expose Data to SAP Analytics Cloud
 
-Facts \(see [Creating a Fact](creating-a-fact-30089bd.md)\) allow you to model data in all the ways familiar from analytical datasets, but they are not intended to be consumed directly in SAP Analytics Cloud.
+Facts \(see [Create a Fact to Contain Measurable Data](create-a-fact-to-contain-measurable-data-30089bd.md)\) allow you to model data in all the ways familiar from analytical datasets, but they are not intended to be consumed directly in SAP Analytics Cloud.
 
 The preferred way to expose data to SAP Analytics Cloud is now to identify your measures in a table or view with a semantic usage of *Fact* and then to use this fact in one or more analytic models, each of which can be consumed by one or more stories \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 

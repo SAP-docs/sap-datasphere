@@ -78,10 +78,10 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
 
 Entities with a semantic usage of *Fact* or *Dimension* commonly have dependencies on other entities and when sharing them, you must also share these associated entities in order to make the services they provide work in the target space:
 
--   Dimensions - Providing categories to analyze measures \(see [Creating a Dimension](../Modeling-Data-in-the-Data-Builder/creating-a-dimension-5aae0e9.md)\)
+-   Dimensions - Providing categories to analyze measures \(see [Create a Dimension to Categorize Data](../Modeling-Data-in-the-Data-Builder/create-a-dimension-to-categorize-data-5aae0e9.md)\)
 -   Text entities - Providing translations of text values \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\)
--   External hierarchies - Providing drill-down capabilities \(see [Creating an External Hierarchy](../Modeling-Data-in-the-Data-Builder/creating-an-external-hierarchy-dbac7a8.md)\)
--   Hierarchies with directories - Including all their supporting entities \(see [Creating a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/creating-a-hierarchy-with-directory-36c39ee.md)\)
+-   External hierarchies - Providing drill-down capabilities \(see [Create an External Hierarchy for Drill-Down](../Modeling-Data-in-the-Data-Builder/create-an-external-hierarchy-for-drill-down-dbac7a8.md)\)
+-   Hierarchies with directories - Including all their supporting entities \(see [Create a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/create-a-hierarchy-with-directory-36c39ee.md)\)
 -   Value help entities - Providing values for input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\)
 -   Lookup entities - Providing help in deriving values for variables \(see [Add a Variable](../Modeling-Data-in-the-Data-Builder/add-a-variable-cdd8fa0.md)\)
 

@@ -140,12 +140,14 @@ Information
 > ### Note:  
 > You can set up a view as persisted even if it has been created on top of remote data.
 
-> ### Restriction:  
-> A view, which contains input parameters can't be persisted.
-
 *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
 *Start View Analyzer*: Analyzes each view definition, the consumed views and the data sources used by local and remote tables that compose your data model. You can then use the provided information and warnings to decide on some improvements for your data model. You can also generate an SQL Analyzer Plan File that you can download \(if you have the required authorizations\) for detailed analysis. For more infromation, see [Exploring Views with View Analyzer](exploring-views-with-view-analyzer-8921e5a.md).
+
+> ### Note:  
+> The *View Analyzer* can't analyze a view that has input parameters.
+
+
 
 </td>
 </tr>
@@ -246,6 +248,7 @@ Name of the persisted view.Technical or Business Name is displayed, depending on
 Shows how you currently access your view.
 
 -   *Persisted*: The view is persisted can be used immediately.
+-   *Partially Persisted*: Not all view data has been persisted. If your view contains an input parameter, only records that match the input parameter default value are persisted.
 -   *Virtual*: The view is accessed directly, no intermediate persistency is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
 
 
@@ -363,6 +366,21 @@ Displays the name of the schedule owner.
 </table>
 
 You can personalize the columns you want to display clicking on :gear:
+
+
+
+<a name="loio9af04c990f294fd28c00f46763dd8b0d__section_lmn_ffp_rbc"/>
+
+## Persisted Views and Input Parameters
+
+Data persistence can be run in case a view contains a parameter only if the following prerequisites are met:
+
+-   The view contains one single input parameter,
+-   The input parameter has a default value maintained.
+
+If a view contains several input parameters, or if the input parameter has no default value, the view can’t be persisted.
+
+Once persisted, the view takes the data access value *Partially Persisted* because only records that match the input parameter default value are persisted.
 
 
 

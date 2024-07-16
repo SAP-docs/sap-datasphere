@@ -137,9 +137,9 @@ The 2 objects are consumed differently by SAP Datasphere apps:
         -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source](add-a-source-ec702fe.md)
         -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](processing-changes-to-sources-and-target-tables-705292c.md) and [Add or Create a Target Table](add-or-create-a-target-table-0950746.md) 
 
-    -   *Replication Flow*: The Delta Capture Table can be used as source \(with load type *Initial Only*\) or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add a Source](add-a-source-7496380.md).
+    -   *Replication Flow*: The Delta Capture Table can be used as source or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add a Source](add-a-source-7496380.md).
     -   *Table Editor*:
-        -   Data Preview: Once deployment is completed, it show only the delta capture tables. See [Viewing Object Data](../viewing-object-data-b338e4a.md)
+        -   Data Preview: Once deployment is completed, it shows only the delta capture tables. See [Viewing Object Data](../viewing-object-data-b338e4a.md)
         -   Data Maintenance: You can perform table maintenance on the delta capture table \(only\) once deployment is completed. See [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)
         -   File upload: You can update the delta capture table by uploading a new csv file, after deployment is completed. See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
 

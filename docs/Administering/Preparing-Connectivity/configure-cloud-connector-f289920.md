@@ -299,7 +299,7 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         -   For the Kafka broker: TCP
-        -   For the Schema Registry: HTTP
+        -   For the Schema Registry: HTTPS
 
 
         

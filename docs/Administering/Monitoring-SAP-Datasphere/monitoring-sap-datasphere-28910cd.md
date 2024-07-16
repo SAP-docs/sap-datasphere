@@ -65,7 +65,7 @@ The following information is available in the *Dashboard* tab:
 
     -   *Data in Spaces*: All data that is stored in spaces.
 
-    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who did what and when.") :arrow_upper_right:\).
+    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\).
 
         > ### Note:  
         > Audit logs can grow quickly and consume a great deal of disk storage \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\).

@@ -45,6 +45,7 @@ Description
 Shows how you currently access your view.
 
 -   *Persisted*: The view is persisted can be used immediately.
+-   *Partially Persisted*: Not all view data has been persisted. If your view contains an input parameter, only records that match the input parameter default value are persisted.
 -   *Virtual*: The view is accessed directly, no intermediate persistency is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
 
 
@@ -90,9 +91,6 @@ You can perform actions on data by clicking *Data Persistence*:
     > ### Note:  
     > You can set up a view as persisted even if it has been created on top of remote data.
 
-    > ### Restriction:  
-    > A view, which contains input parameters can't be persisted.
-
 -   *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
 
@@ -119,6 +117,21 @@ From this menu, you can :
 > You need to authorize SAP to run the recurring scheduled tasks on your behalf. You can do so via the message that is displayed at the top of the monitor, or in your profile settings under *Schedule Consent Settings*.
 
 For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
+
+
+
+<a name="loio9bd12cf116ae40e09cdba8b60cf75e11__section_lmn_ffp_rbc"/>
+
+## Persisted Views and Input Parameters
+
+Data persistence can be run in case a view contains a parameter only if the following prerequisites are met:
+
+-   The view contains one single input parameter,
+-   The input parameter has a default value maintained.
+
+If a view contains several input parameters, or if the input parameter has no default value, the view can’t be persisted.
+
+Once persisted, the view takes the data access value *Partially Persisted* because only records that match the input parameter default value are persisted.
 
 
 

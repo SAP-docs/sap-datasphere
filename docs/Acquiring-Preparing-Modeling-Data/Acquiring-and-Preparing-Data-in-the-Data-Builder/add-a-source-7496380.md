@@ -46,7 +46,7 @@ Define the source for your replication flow \(connection, container, and objects
 
     To narrow down the selection, start typing a part of the folder name in the *Search* field.
 
-    -   If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in. In addition, the load type is automatically set to *Initial Only* because *Initial and Delta* is currently not supported for SAP Datasphere as the source. \(This applies irrespective of whether the local table itself is enabled for delta capturing or not.\)
+    -   If you choose SAP Datasphere as the source connection, the source container is automatically defined as the space you are in.
 
     -   If CDS view entities have been made available using the SQL service exposure in SAP BTP, ABAP environment, you find these entities in a folder called SQL\_SERVICE.
 

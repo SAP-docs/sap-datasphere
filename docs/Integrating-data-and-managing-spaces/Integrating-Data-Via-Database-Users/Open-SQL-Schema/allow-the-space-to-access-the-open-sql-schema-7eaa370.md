@@ -96,7 +96,7 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     </td>
     <td valign="top">
     
-    -   'INSERT"
+    -   'INSERT'
 
     -   'UPDATE'
 
@@ -205,7 +205,7 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     ```
     CALL "DWC_GLOBAL"."GRANT_PRIVILEGE_TO_SPACE" (
     	OPERATION => 'GRANT', 
-    	PRIVILEGE => 'UPDATE, 
+    	PRIVILEGE => 'UPDATE', 
     	SCHEMA_NAME => 'SALE#ETL', 
     	OBJECT_NAME => 'MY_TABLE', 
     	SPACE_ID => 'SALES');
@@ -218,7 +218,7 @@ You can grant write privileges by running an SAP Datasphere specific stored proc
     ```
     CALL "DWC_GLOBAL"."GRANT_PRIVILEGE_TO_SPACE" (
     	OPERATION => 'GRANT', 
-    	PRIVILEGE => 'EXECUTE, 
+    	PRIVILEGE => 'EXECUTE', 
     	SCHEMA_NAME => 'SALE#ETL', 
     	OBJECT_NAME => '', 
     	SPACE_ID => 'SALES');

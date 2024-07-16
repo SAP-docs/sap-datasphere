@@ -267,7 +267,7 @@ You can change the view to see different information.
 **Related Information**  
 
 
-[Evaluating Catalog Assets](evaluating-catalog-assets-dc061a2.md "When you find the asset you want, you can select it to view its overview information, a preview of its detailed metadata, and a diagram of its impact and lineage. This information includes metadata that is extracted from the source system and data enrichments added in the catalog.")
+[Evaluating Catalog Assets](evaluating-catalog-assets-dc061a2.md "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.")
 
 [Evaluating your Data Product](../evaluating-your-data-product-335f49b.md "Each data product has a dedicated page that describes the data product in detail to allow a transparent elaboration.")
 

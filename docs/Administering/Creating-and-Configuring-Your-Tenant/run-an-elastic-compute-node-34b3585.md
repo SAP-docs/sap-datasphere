@@ -37,10 +37,16 @@ An elastic compute node can have the following statuses:
 
 -   *Running* - The node is in its running phase: the data that have been replicated during the starting phase can be consumed in SAP Analytics Cloud for the spaces and objects specified.
 
+    > ### Note:  
+    > The *Running* status displayed in red indicates that the elastic compute node contains issues. We recommend that you stop and restart the node, or, alternatively that you stop and delete the node and create a new one.
+
 -   *Stopping* - You’ve stopped the elastic compute node manually by clicking the *Stop* button or it has been stopped via a schedule: persisted view replicas, local table replicas and routing are being deleted from the node.
 
 -   *Stopping Failed* \(displayed in red\) - You’ve stopped the elastic compute node manually by clicking the *Stop* button or it has been stopped via a schedule: issues have occurred. You can stop again the elastic compute node.
 
+
+> ### Note:  
+> Up to 4 elastic compute nodes can run at the same time.
 
 **Updates of local tables or persisted views while an elastic compute node is running** - An elastic compute node is in its running phase, which means that its local tables and persisted views have been replicated. Here is the behavior if these objects are updated while the node is running:
 

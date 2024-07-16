@@ -712,7 +712,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes \(Microsoft Azure deployments only: Virtual Network Subnet ID\)
 
 </td>
 <td valign="top">
@@ -722,7 +722,7 @@ no
 </td>
 <td valign="top">
 
-n/a
+[Prepare Connectivity to Microsoft Azure Data Lake Store Gen2](prepare-connectivity-to-microsoft-azure-data-lake-store-gen2-6b3fd2c.md)
 
 </td>
 </tr>

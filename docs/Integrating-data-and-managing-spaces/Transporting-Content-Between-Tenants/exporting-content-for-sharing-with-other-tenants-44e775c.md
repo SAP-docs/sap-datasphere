@@ -252,7 +252,7 @@ The definition of an authorization scenario contains the definition of its data 
     If an object depends on other objects, then they will also be selected. For example, when you select a view, all its sources and any used data access controls will be selected.
 
     > ### Note:  
-    > If an object selected for export depends on one or more objects that have been shared from other spaces \(see [Sharing Tables and Views To Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a Data Builder table or view to another space to allow that users assigned to the space use it as a source for their objects.") :arrow_upper_right:\), then you must be a member of each of those spaces in order to include all the necessary objects in your package.
+    > If an object selected for export depends on one or more objects that have been shared from other spaces \(see [Sharing Tables and Views To Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a Data Builder table or view to another space to allow users assigned to that space to use it as a source for their objects.") :arrow_upper_right:\), then you must be a member of each of those spaces in order to include all the necessary objects in your package.
     > 
     > If you are not a member of one or more sharing spaces, then you can still export your package \(no error will be displayed\), but it will fail to import correctly unless all the missing objects are already present in the target tenant.
     > 

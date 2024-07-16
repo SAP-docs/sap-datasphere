@@ -27,12 +27,11 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 2.  Configure the landscape for your transports, by creating transport destinations, routes, and nodes.
     1.  Create a destination in the SAP Business Technology Platform cockpit of the DEV subaccount of your cloud application, pointing to Cloud Transport Management. See [Create Transport Destinations](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-destinations).
 
-        -   To integrate with SAP Datasphere, the destination must have an endpoint URL in this format: `https://<tenant_URL>/api/v1/content/deploy/`
-        -   Add the additional property such as *PLATFORM\_TYPES* and value as *ACN\_NEO* only for Neo destinations.
+        To integrate with SAP Datasphere, the destination must have an endpoint URL in this format: `https://<tenant_URL>/api/v1/content/deploy/`
 
         ![](images/Destination_Config_da27266.png)
 
-    2.  Create nodes and routes. See [Create Transport Nodes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-nodes) and [Create Transport Routes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-routes).
+    2.  Create nodes and routes. See [Create Transport Nodes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-nodes) and [Create Transport Routes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-routes). Make sure to select the checkbox *Allow Upload to Node* when creating a source node. When defining a target node, the content type must be *Application Content* to be able to select the destination name you've created in the previous step.
 
         > ### Tip:  
         > Go to *System*→*Administration*→*App Integration* to find the token URL and add the extension `<Token URL>?grant_type=client_credentials`.
@@ -56,7 +55,8 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 1.  In the side navigation area, click *Transport* \> *Export* and select the package you want to export.
 2.  Click <span class="SAP-icons-V5"></span> *Upload to SAP Cloud Transport Management Node* from the menu bar: in the dialog box, you can see the list of selected packages.
 3.  In the *Export Node* dropdown, choose the source node of SAP Cloud Transport Management to which you want to export your packages. For more information on source and target nodes, see [Create Transport Nodes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-nodes).
-4.  Click *Upload*.
+4.  Select the checkbox to agree to use your user rights \(based on IDP user ID\) to deploy the package in the target tenant.
+5.  Click *Upload*.
 
 
 
@@ -66,4 +66,15 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 2.  In the *Target Node Details* page, you can see your packages that are ready for import: select the package and click *Import Selected*.
 
 Once the import is completed, you see the content of the package available in its corresponding destination in your SAP Datasphere account.
+
+> ### Note:  
+> The user who uploaded the package must be a member of the target tenant.
+
+
+
+## Troubleshooting
+
+In case of import failure, you can access the logs to investigate the error by adding this endpoint to the target tenant URL:
+
+`/contentmanager/v4/jobs/{ProcessID}?brief=false`
 

@@ -17,6 +17,8 @@ Before you can use the connection for replication flows, the following is requir
     > ### Note:  
     > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location is while connecting to the Kafka brokers happens in another location.
 
+    For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
+
 
 **Related Information**  
 

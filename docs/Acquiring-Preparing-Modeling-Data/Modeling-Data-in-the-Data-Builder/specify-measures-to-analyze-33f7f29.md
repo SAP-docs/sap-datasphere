@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Specify Measures
+# Specify Measures to Analyze
 
 Measures appear in tables and views with a *Semantic Usage* of *Fact* and are columns containing numerical values that you want to analyze. Each *Fact* must contain at least one measure.
 
@@ -17,7 +17,7 @@ Typical measures include:
 Measures are displayed in the *Measures* section of tables and views.
 
 > ### Note:  
-> In the graphical view and sql view editors, you can click the *Edit Columns* button in the *Measures* list to open it in a dialog.
+> In the graphical view and SQL view editors, you can click the *Edit Columns* button in the *Measures* list to open it in a dialog.
 
 By default, all columns in a fact are identified as attributes, and you must convert one or more into measures:
 

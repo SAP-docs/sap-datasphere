@@ -70,7 +70,13 @@ For information about using this feature, see [Exchanging Data with SAP SQL Data
     
     Your SAP Business Technology Platform organization ID.
 
-    You can use the Cloud Foundry CLI to find your organization GUID \(see [https://cli.cloudfoundry.org/en-US/v6/org.html](https://cli.cloudfoundry.org/en-US/v6/org.html)\).
+    You can use the Cloud Foundry CLI to find your organization GUID:
+
+    ```
+    cf org <ORG> --guid
+    ```
+
+    See [https://cli.cloudfoundry.org/en-US/v6/org.html](https://cli.cloudfoundry.org/en-US/v6/org.html).
     
     </td>
     </tr>
@@ -84,7 +90,13 @@ For information about using this feature, see [Exchanging Data with SAP SQL Data
     
     The SAP Business Technology Platform space inside the organization.
 
-    You can use the Cloud Foundry CLI to find your space GUID \(see [https://cli.cloudfoundry.org/en-US/v6/space.html](https://cli.cloudfoundry.org/en-US/v6/space.html)\).
+    You can use the Cloud Foundry CLI to find your space GUID:
+
+    ```
+    cf space <SPACE> --guid
+    ```
+
+    See [https://cli.cloudfoundry.org/en-US/v6/space.html](https://cli.cloudfoundry.org/en-US/v6/space.html).
     
     </td>
     </tr>

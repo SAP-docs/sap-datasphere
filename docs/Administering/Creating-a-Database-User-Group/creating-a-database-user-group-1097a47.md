@@ -12,7 +12,7 @@ Users with the DW Administrator role can create database user groups in SAP Data
 
 When creating a database user group, an administrator is also created. This administrator can create other users, schemas, and roles using SAP Datasphere stored procedures. The administrator and their users can create data entities \(DDL\) and ingest data \(DML\) directly into their schemas and prepare them for consumption by spaces.
 
-For detailed information about user groups, see [User Groups](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2020_04_QRC/en-US/b9174d035f274ce481387700c13b7d2c.html?q=user%20groups) in the *SAP HANA Cloud* documentation.
+For detailed information about user groups, see [User Groups](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/user-groups) in the *SAP HANA Cloud* documentation.
 
 > ### Note:  
 > Users with the DW Space Administrator role can create database users, which are associated with their space \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\).

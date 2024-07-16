@@ -14,7 +14,7 @@ You can specify the following types of hierarchy:
 
 -   Parent-Child - the hierarchy is recursive, may have any number of levels, and is defined by specifying a parent column and a child column within the dimension. For example, a departmental hierarchy could be modeled with the `Parent Department ID` and `Department ID` columns.
 -   Level-Based - the hierarchy is non-recursive, has a fixed number of levels, and is defined by specifying two or more level columns within the dimension. For example, a time hierarchy could be modeled with the: `Year`, `Quarter`, `Month`, `Week`, and `Day` columns.
--   External Hierarchy - the parent-child hierarchy information is contained in a seperate entity, which needs to be associated with the dimension \(see [Creating an External Hierarchy](creating-an-external-hierarchy-dbac7a8.md)\).
+-   External Hierarchy - the parent-child hierarchy information is contained in a seperate entity, which needs to be associated with the dimension \(see [Create an External Hierarchy for Drill-Down](create-an-external-hierarchy-for-drill-down-dbac7a8.md)\).
 
 > ### Note:  
 > You can create more than one hierarchy for a dimension, but they must all be of the same type \(internal and external Parent-Child hierarchies can be mixed\).

@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Specify Attributes
+# Specify Attributes as Keys, Units, and Other Characteristics
 
 Attributes are all columns that are not identified as measures, and can contain identifiers, master data, and other data that is used in support of analytics. Attributes appear in tables and views with any *Semantic Usage* except *Relational Dataset*.
 
@@ -132,13 +132,16 @@ Specifies the purpose of the attribute when your entity is consumed by an analyt
 
 This property can contain:
 
--   An association pointing to a dimension \(see [Create an Association](../create-an-association-66c6998.md)\)
--   A text association pointing to a text entity \(see [Create a Text Association](create-a-text-association-414df15.md)\)
+-   An association pointing to a dimension \(see [Create an Association to a Dimension](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md#loio66c6998af9974dac8f54a46515777560__section_dimension)\)
+-   A text association pointing to a text entity \(see [Create an Association to a Text Entity](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md#loio66c6998af9974dac8f54a46515777560__section_text)\)
 -   An attribute with a semantic type of *Text*
 
-This property is automatically filled when you create an association or a text association. If you want to specify an attribute with a semantic type of *Text* to act as a label for the column, then you must manually select the attribute here.
+It is automatically filled when you create an association or a text association and map the attribute as the source of the association. If you want to specify an attribute with a semantic type of *Text* to act as a label for the column, then you must manually select the attribute here.
 
-In cases where multiple associations and/or text association are defined on a single attribute, you can manually choose which association \(or local text attribute\) should be used by the analytic model by making the appropriate selection here.
+> ### Note:  
+> In cases where multiple associations and/or text associations are defined on a single attribute, you can manually choose which association \(or local text attribute\) should be used by the analytic model by making the appropriate selection here.
+
+
 
 </td>
 </tr>

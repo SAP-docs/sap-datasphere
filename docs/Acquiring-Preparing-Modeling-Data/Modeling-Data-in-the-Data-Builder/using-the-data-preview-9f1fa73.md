@@ -20,6 +20,14 @@ If you want to set filters, choose <span class="SAP-icons-V5"></span> Add Fil
 
 
 
+<a name="loio9f1fa73a33424cbe9bac3064702c0dbd__section_hy2_scj_wbc"/>
+
+## Exporting Data
+
+By choosing <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Excel* or ** \> *Export CSV*, you can export the data as an Excel or CSV file. This enables you to share the intermediate results with colleagues, and to validate the calculations and measures.
+
+
+
 <a name="loio9f1fa73a33424cbe9bac3064702c0dbd__section_q3j_d4r_yhb"/>
 
 ## Using the Builder Panel

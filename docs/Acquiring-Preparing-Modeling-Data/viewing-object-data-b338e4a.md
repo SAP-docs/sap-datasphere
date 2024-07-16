@@ -12,6 +12,7 @@ This topic contains the following sections:
 -   [Sort Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_sort)
 -   [Filter Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_filter)
 -   [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
+-   [View Data as a Different User](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_impersonation)
 -   [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)
 
 
@@ -95,6 +96,18 @@ You can view data in the table, graphical view, SQL view, E/R model, analytic mo
     <td valign="top">
     
     Download a file containing technical information to send to SAP support.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Preview as User\)
+    
+    </td>
+    <td valign="top">
+    
+    \[views\] Open the *Preview as User* dialog to select another user to preview the data with their permissions and see which records will be visible to them. Select a space user from the list or enter any other user identifier \(see [View Data as a Different User](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_impersonation)\).
     
     </td>
     </tr>
@@ -190,6 +203,23 @@ To display, hide, or reorder columns, click :gear: to open the *View Settings* d
 -   Use the *Sort* and *Filter* tabs
 
 Click *OK* to update the viewer or *Cancel* to erase your changes. To return to the default data viewer columns, click *Reset*.
+
+
+
+<a name="loiob338e4aa7e7e494eb68c383720ebfd3a__section_impersonation"/>
+
+## View Data as a Different User
+
+You can review the effects of any data access controls you apply to a view by checking the records that another user will be allowed to see:
+
+1.  Click <span class="SAP-icons-V5"></span> \(View as User\) to open the *View as User* dialog.
+2.  Select a space user from the list or enter any other user identifier and then click *View*.
+
+    The data viewer updates to show only the records visible to the selected user.
+
+    > ### Note:  
+    > *View as User* is only available in the graphic view, SQL view, and analytic model editors, and can only simulate data access controls that are applied in the current space and have a status of *Deployed*. If your view has one or more sources shared from other spaces, then a warning is shown to indicate that you may not see exactly the same records as the user you are impersonating.
+
 
 
 

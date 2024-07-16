@@ -190,6 +190,18 @@ Displays the technical name of the elastic compute node used to persist the view
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Input Parameter* 
+
+</td>
+<td valign="top">
+
+if your view contains an input parameter, it displays the name of the parameter used to persist the view data.
+
+</td>
+</tr>
 </table>
 
 
@@ -297,6 +309,18 @@ For more information, see [Persisted Views and Data Access Control](persisted-vi
 <td valign="top">
 
 Displays the technical name of the elastic compute node used to persist the view. If no elastic compute node is used the value is empty.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Input Parameter* 
+
+</td>
+<td valign="top">
+
+if your view contains an input parameter, it displays the name of the parameter used to persist the view data.
 
 </td>
 </tr>
