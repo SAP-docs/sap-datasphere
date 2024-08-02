@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Deleting Users
+# Delete Users
 
 You can delete users.
 
@@ -24,9 +24,9 @@ You can delete users.
 **Related Information**  
 
 
-[Creating a New User](creating-a-new-user-58d4b24.md "You can create individual users in SAP Datasphere.")
+[Create a User](create-a-user-58d4b24.md "You can create individual users in SAP Datasphere.")
 
-[Importing or Modifying Users from a File](importing-or-modifying-users-from-a-file-b2698da.md "You can create new users or batch-update existing users by importing user data that you have saved in a CSV file.")
+[Import or Modify Users from a File](import-or-modify-users-from-a-file-b2698da.md "You can create users or batch-update existing users by importing user data that you have saved in a CSV file.")
 
-[Updating User Email Addresses](updating-user-email-addresses-0889208.md "You can update the user email addresses used for logon.")
+[Update User Email Addresses](update-user-email-addresses-0889208.md "You can update the user email addresses used for logon.")
 

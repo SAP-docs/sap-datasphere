@@ -171,7 +171,7 @@ For more information, see [Using Confluent Kafka As the Target](using-confluent-
 The **target container** is automatically set to "/" because Confluent Kafka does not have a superordinate container layer.
 
 > ### Note:  
-> If the Kafka cluster is behind an SAP Cloud Connector \(SCC\), the Kafka cluster and the SCC must be configured such that the broker addresses advertised by the cluster match the virtual hosts maintained for the brokers in the SCC. The simplest solution is to use the same value for virtual and internal hosts in the SCC and to maintain no dedicated advertised listeners for the Kafka brokers. If advertised listeners are maintained, these must be used as virtual hosts in SCC and as broker addresses in the connection definition.
+> If the Kafka cluster is behind an SAP Cloud Connector \(SCC\), the Kafka cluster and the SCC must be configured such that the broker addresses advertised by the cluster match the virtual hosts maintained for the brokers in the SCC. The simplest solution is to use the same value for virtual and internal hosts in the SCC and to maintain no dedicated advertised listeners for the Kafka brokers. When adding additional brokers to a cluster to scale up, the SCC mapping must be adapted to include the additional brokers.
 
 Each record from the source system is transferred into a single **message** in the target topic. The key of the messages is the combination of all primary key values of the record concatenated by "\_".
 

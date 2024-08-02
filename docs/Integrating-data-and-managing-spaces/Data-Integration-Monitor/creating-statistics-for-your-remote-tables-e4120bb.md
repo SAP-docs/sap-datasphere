@@ -95,7 +95,7 @@ Creates a data statistics object that helps the query optimizer estimate the dat
 Statistics are created for each column of the table and can only be created if the data access is "Remote". Only one data statistics object at a time is allowed per remote table.
 
 > ### Note:  
-> Creating statistics can cause a significant workload on the source system. RECORD COUNT is the simplest statistics object, and complexity increases for SIMPLE and HISTOGRAM, which causes heavier workload.
+> Creating statistics can cause a significant workload on the source system, especially if the source object is a view, like for example a CDS View in ABAP or an SQL View in a Database. RECORD COUNT is the simplest statistics object, and complexity increases for SIMPLE and HISTOGRAM, which causes heavier workload.
 
 You can update data statistics objects: when you choose the menu *Create Statistics* on a remote table for which data statistics are already available, the windows *Create Statistics* opens, and the existing type of statistics line is marked as active. You can then choose to create another type of statistics or update the existing ones.
 

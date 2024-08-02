@@ -29,7 +29,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 
 You can monitor out-of-memory errors and other information that are related to SAP HANA database SQL statements, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
 
--   If *Enable Expensive Statement Tracing* is not selected, then in *System Monitor* \> *Dashboard*, you cannot see the widgets about out-of-memory errors and about other information related to statements. For example, you cannot see the widgets: *Out-of-Memory Errors*, *Top 5 Statements by Processing Memory Consumption*.
+-   If *Enable Expensive Statement Tracing* is not selected, then in *System Monitor* \> *Dashboard*, you cannot see the cards about out-of-memory errors and about other information related to statements. For example, you cannot see the cards: *Out-of-Memory Errors*, *Top 5 Statements by Processing Memory Consumption*.
 
 -   If *Enable Expensive Statement Tracing* is not selected and none of the threshold options is selected, then in the tables of *System Monitor* \> *Logs*, you cannot see any information about out-of-memory errors and about other information related to statements. For example, no information is displayed in the columns *Peak Memory \(MiB\)* and *Peak CPU \(ms\)*.
 
@@ -55,7 +55,7 @@ For more information on enabling and configuring expensive statement tracing, se
 
 ## Dashboard
 
-The out-of-memory widgets and top-memory consumption widgets help you to identify issues. You can see detailed information about the issues by clicking *View Logs*, which takes you to the *Logs* tab. For example, you can find out if tasks have to be scheduled at another time so that high-memory consuming tasks do not run at the same time. If single tasks consume too much memory, some additional views may need to be persisted or the view partitioning may need to be used to lower the memory consumption.
+The out-of-memory cards and top-memory consumption cards help you to identify issues. You can see detailed information about the issues by clicking *View Logs*, which takes you to the *Logs* tab. For example, you can find out if tasks have to be scheduled at another time so that high-memory consuming tasks do not run at the same time. If single tasks consume too much memory, some additional views may need to be persisted or the view partitioning may need to be used to lower the memory consumption.
 
 The following information is available in the *Dashboard* tab:
 
@@ -79,14 +79,14 @@ The following information is available in the *Dashboard* tab:
 -   *Disk Assigned to Spaces for Storage* - Shows the total amount of disk storage assigned to all spaces.
 -   *Memory Assigned to Spaces for Storage* - Shows the total amount of memory storage assigned to all spaces.
 
-For each of the key indicator widgets listed below, you can see detailed information by clicking the link *View Logs*, which takes you to the *Logs* tab.
+For each of the key indicator cards listed below, you can see detailed information by clicking the link *View Logs*, which takes you to the *Logs* tab.
 
 
 <table>
 <tr>
 <th valign="top">
 
-Widget
+Card
 
 </th>
 <th valign="top">
@@ -345,7 +345,7 @@ Shows the number of statements that have been queued in the last 7 days because 
 </td>
 <td valign="top">
 
-Shows the 5 spaces with the highest number of rejected statements in the last 24 hours.
+Shows the 5 spaces with the highest number of rejected statements in the last 7 days.
 
 > ### Note:  
 > A space that has been deleted is prefixed with an asterisk character.
@@ -364,7 +364,7 @@ Shows the 5 spaces with the highest number of rejected statements in the last 24
 </td>
 <td valign="top">
 
-Shows the 5 spaces with the highest number of queued statements in the last 24 hours.
+Shows the 5 spaces with the highest number of queued statements in the last 7 days.
 
 > ### Note:  
 > A space that has been deleted is prefixed with an asterisk character.
@@ -376,7 +376,7 @@ Shows the 5 spaces with the highest number of queued statements in the last 24 h
 </table>
 
 > ### Note:  
-> -   To investigate why statements are being queued or rejected, you can click *Open SAP HANA Cockpit* in the widgets dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
+> -   To investigate why statements are being queued or rejected, you can click *Open SAP HANA Cockpit* in the cards dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
 > 
 > -   For more information about admission control thresholds, see [Set a Priority and Statement Limits for a Space](../Creating-Spaces-and-Allocating-Storage/set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
 

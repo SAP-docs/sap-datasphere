@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Exporting Users
+# Export Users
 
 If you want to synchronize SAP Datasphere user data with other systems, you can export the data to a CSV file.
 

@@ -51,6 +51,8 @@ You can use remote tables imported from the connection either to access data dir
 >     Please note that since the *Generic OData* connection type doesn’t use snapshot-based pagination at all, we do not recommend to use it to federate or replicate SAP SuccessFactors data with remote tables.
 > 
 > -   When replicating employee-related data, independently of their validity not only current data is replicated but all data including historical data.
+> 
+> -   Picklists used in SAP SuccessFactors are not available in remote tables because they are exposed as navigation properties and not as exposed properties of the entity. For more information on picklists, see SAP Note [2088679](https://me.sap.com/notes/2088679).
 
 
 

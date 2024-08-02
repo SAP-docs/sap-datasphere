@@ -303,7 +303,7 @@ SAP Datasphere can be hosted on non-SAP data centers.
     When dynamic user creation is enabled, new users will be automatically created using the default role and will be able to use SAML SSO to log onto SAP Datasphere. After users are created, you can set roles using SAML attributes.
 
     > ### Note:  
-    > Automatic user deletion is not supported. If a user in SAP Datasphere is removed from your SAML IdP, you must go to *Security* \> *Users* and manually delete users. For more information, see [Deleting Users](deleting-users-3ceb94c.md).
+    > Automatic user deletion is not supported. If a user in SAP Datasphere is removed from your SAML IdP, you must go to *Security* \> *Users* and manually delete users. For more information, see [Delete Users](delete-users-3ceb94c.md).
     > 
     > If this option is enabled, dynamic user creation still occurs even when SAML user attributes have not been set for all IdP users. To prevent a user from being automatically created, your SAML IdP must deny the user access to SAP Datasphere.
 

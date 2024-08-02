@@ -82,7 +82,7 @@ In the area *Expensive Statement Tracing*, you can enable expensive statement tr
 
 -   The information on statements that exceed the specified thresholds are included in dedicated views that you can access in the selected monitoring space.
 
--   All the database statements that exceed the thresholds specified for memory consumption \(*Threshold Memory*\) and runtime \(*Threshold Duration*\) are displayed in the widgets and tables of the *System Monitor*. If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
+-   All the database statements that exceed the thresholds specified for memory consumption \(*Threshold Memory*\) and runtime \(*Threshold Duration*\) are displayed in the cards and tables of the *System Monitor*. If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
 
 -   By default, 30 000 records maximum are stored in the monitoring tables. You can change this number, which will impact the views dedicated to monitoring and information related to statements in the *System Monitor*. For example, if about 5 days are traced in the expensive statement tables and you don’t want to change the thresholds, you can double the number of records in *In-Memory Tracing Records* so that about 10 days are traced. Be aware that increasing this number will also increase the used storage.
 
@@ -114,7 +114,7 @@ To analyze individual elastic compute node query, you can enable the tracing of 
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Monitoring*.
 2.  Select a space from the drop-down list and click *Confirm Selected Space*.
 3.  If you've created the *<SAP\_ADMIN\>* space and you want to enable it, click *Enable access to SAP Monitoring Content Space*. If there isn't any space named *<SAP\_ADMIN\>* in your tenant, this is not available for selection.
 4.  To trace expensive statements, select *Enable Expensive Statement Tracing*, specify the following parameters to configure and filter the trace details, then save your changes.

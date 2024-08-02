@@ -264,6 +264,17 @@ You can change the view to see different information.
 -   <span class="FPA-icons-V3"></span> \(Display as List\)
 -   <span class="SAP-icons-V5"></span> \(Display as Table\)
 
+
+
+<a name="loio10478251045b43e782fa15e0f3e113b0__section_vcp_wg5_zbc"/>
+
+## Search for Third-Party Data
+
+You can use the Datarade Data Finder website to search and request additional third-party data products from various data providers. Access the Datarade website from the catalog by choosing the *Data Products* tab or the *Data Providers* tab, and then clicking the *Request Data from Datarade* button.
+
+> ### Note:  
+> Clicking the *Request Data from Datarade* button takes you to the Datarade website. This site is external to our product.
+
 **Related Information**  
 
 

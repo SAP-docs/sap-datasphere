@@ -96,7 +96,12 @@ Description
 </td>
 <td valign="top">
 
-Enter the endpoint URL of the Amazon S3 server. The protocol prefix is not required. For example, `s3.amazonaws.com`. 
+Enter the endpoint URL of the Amazon S3 server, for example `s3.amazonaws.com`. The protocol prefix is not required. 
+
+> ### Note:  
+> When using *Assume Role*, you must enter the regional endpoint, for example `s3.us-west-2.amazonaws.com`.
+
+
 
 </td>
 </tr>

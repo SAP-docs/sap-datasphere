@@ -139,9 +139,7 @@ Enter the fully qualified host name or IP address on which the remote SAP HANA s
 </td>
 <td valign="top">
 
-Enter the SQL port number of the remote SAP HANA server. 
-
-You can find the SQL port in the list of service details in the SAP HANA Cockpit. For more information, see [Service Details](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/latest/en-US/1d4b4fe9ee8b448a9977bfcc1fc55248.html?q=SQL%20port) in the *SAP HANA Administration with SAP HANA Cockpit* documentation.
+Enter the SQL port number of the SAP HANA Cloud instance: 443. 
 
 </td>
 </tr>
@@ -457,9 +455,9 @@ Enter the fully qualified host name or IP address on which the remote SAP HANA s
 </td>
 <td valign="top">
 
-Enter the SQL port number of the remote SAP HANA server. 
+Enter the TCP SQL port number of the remote SAP HANA server. 
 
-You can find the SQL port in the list of service details in the SAP HANA Cockpit. For more information, see [Service Details](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/latest/en-US/1d4b4fe9ee8b448a9977bfcc1fc55248.html?q=SQL%20port) in the *SAP HANA Administration with SAP HANA Cockpit* documentation.
+For more information about port assignment for SAP HANA, see [Port Assignment in Tenant Databases](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/440f6efe693d4b82ade2d8b182eb1efb.html) in the *SAP HANA Platform* documentation.
 
 </td>
 </tr>

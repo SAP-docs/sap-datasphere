@@ -74,7 +74,7 @@ Once the import is completed, you see the content of the package available in it
 
 ## Troubleshooting
 
-In case of import failure, you can access the logs to investigate the error by adding this endpoint to the target tenant URL:
+In case of import failure, you can access the logs to investigate the error by adding this endpoint to the target tenant URL in your browser:
 
-`/contentmanager/v4/jobs/{ProcessID}?brief=false`
+`{TenantURL}/contentmanager/v4/jobs/{ProcessID}?brief=false`
 

@@ -2,7 +2,7 @@
 
 # Lock or Unlock Your Space
 
-If a space exceeds its assigned storage or if the audit logs enabled in the space consume too much disk storage, the space is automatically locked.
+When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.
 
 If you want to put a space on hold and you are a space administrator, you can manually lock it.
 

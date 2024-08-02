@@ -8,7 +8,7 @@ SAP Datasphere is delivered with several standard roles. A standard role include
 
 
 
-A DW Administrator can use standard roles as templates for creating custom roles with a different set of privileges \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\). You can also use the standard roles that include scoped privileges as templates for creating scoped roles \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)\). You can assign the standard roles that contain global privileges \(DW Administrator, Catalog Administrator and Catalog User\) directly to users.
+A DW Administrator can use standard roles as templates for creating custom roles with a different set of privileges \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\). You can also use the standard roles that include scoped privileges as templates for creating scoped roles \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)\). You can assign the standard roles that contain global privileges \(such as DW Administrator, Catalog Administrator and Catalog User\) directly to users.
 
 > ### Note:  
 > You cannot delete nor edit standard roles.

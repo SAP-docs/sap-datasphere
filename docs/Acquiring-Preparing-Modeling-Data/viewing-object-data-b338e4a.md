@@ -43,8 +43,6 @@ You can view data in the table, graphical view, SQL view, E/R model, analytic mo
     > -   The *Data Viewer* will time out and display an error on the *Errors* tab if it is unable to load data in under three minutes. If you experience timeouts or slow performance and some or all of the data you want to view is not replicated to SAP Datasphere, consider replicating it \(see [Replicate Remote Table Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/replicate-remote-table-data-7e258a7.md)\).
     > -   If a column has a *HANA Numeric* data type its data cannot be shown. Consider, changing the data type to one supported by SAP Datasphere \(see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md)\).
     > -   If a column has *Binary*, *Large Binary*, *ST\_Point*, and *ST\_Geometry* set as data type, the data viewer is unavailable and records are shown as *Cannot be shown*. If no data can be found, the data viewer shows it as *NULL*.
-    > -   You cannot view data in an SQL view if any of its sources is shared from another space and has an input parameter.
-    > 
     > -   When viewing data in a persisted view, the data is read from the view's persistency table, unless the view has a status of *Changes to Deploy*, in which case the view is run and the results displayed.
 
 4.  The following tools are available in the panel toolbar:
@@ -218,8 +216,14 @@ You can review the effects of any data access controls you apply to a view by ch
     The data viewer updates to show only the records visible to the selected user.
 
     > ### Note:  
-    > *View as User* is only available in the graphic view, SQL view, and analytic model editors, and can only simulate data access controls that are applied in the current space and have a status of *Deployed*. If your view has one or more sources shared from other spaces, then a warning is shown to indicate that you may not see exactly the same records as the user you are impersonating.
+    > *View as User* is only available in the graphic view, SQL view, and analytic model editors, and can only simulate data access controls that are applied in the current space and which have a status of *Deployed*. In addition, if the view:
+    > 
+    > -   Is shared from another space then *View as User* is not supported.
+    > -   Has one or more sources shared from other spaces, then a warning is shown to indicate that you may not see exactly the same records as the user you are impersonating.
+    > -   Is secured by data access controls created by importing analysis authorizations from SAP BW or SAP BW/4HANA, then *View as User* is not supported.
 
+
+For more information about data access controls, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:.
 
 
 

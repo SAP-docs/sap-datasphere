@@ -51,7 +51,7 @@ Select *RPC* or *WEBHDFS*
 > ### Note:  
 > Along with Remote Procedure Call \(RPC\), HDFS can also extend connections with WebHDFS.
 > 
-> If you select *RPC*, make sure that both the NameNode and the DataNodes are exposed and can be connected from SAP Datasphere. For more information, see [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses that for particular remote applications must be added to allowlists before you can to use connections to these remote applications.") :arrow_upper_right:.
+> If you select *RPC*, make sure that both the NameNode and the DataNodes are exposed and can be connected from SAP Datasphere. For more information, see [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses and IDs that must be added to allowlists in particular remote applications before you can use connections to these remote applications.") :arrow_upper_right:.
 
 
 

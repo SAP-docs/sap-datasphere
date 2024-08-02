@@ -47,10 +47,19 @@ You can use remote tables imported from the connection either to access data dir
 
 You can access the following data:
 
--   ABAP CDS-Views exposed as OData services for data extraction \(access via Cloud Data Integration\)
+-   for federation and replication: ABAP CDS Views exposed as OData services for data extraction \(access via Cloud Data Integration\)
+
+    For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+
+-   for federation: standard and custom CDS view entities that are exposed using the SQL service from SAP S/4HANA Cloud
+
+    For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:.
+
+    > ### Note:  
+    > On the *Sources* tab of the remote-table-related Data Builder editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
 
 
-For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+
 
 </td>
 </tr>
@@ -373,6 +382,102 @@ Enter the user password.
 
 
 
+### Remote Tables
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Provisioning Option*
+
+</td>
+<td valign="top">
+
+Select the middleware to use when connecting to and accessing SAP S/4HANA Cloud: 
+
+-   *None* \(default\): if you don't want to use remote tables.
+
+-   *Data Provisioning Agent*: if you want to use federation and replication via SAP HANA smart data integration CloudDataIntegrationAdapter.
+
+-   *Direct*: if you want to federate data from the source objects of the connection and access them remotely in the source system using the ABAP SQL service.
+
+    > ### Note:  
+    > This option is supported for authentication type *User Name And Password*.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Data Provisioning Option* = *Data Provisioning Agent* or *Direct*\] *Data Access* 
+
+</td>
+<td valign="top">
+
+\[read-only\] Displays how data from source objects can be accessed: 
+
+-   *Remote and Replication*: if you selected data provisioning option *Data Provisioning Agent*.
+
+-   *Remote Only*: if you selected data provisioning option *Direct*.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Data Provisioning Option* = *Data Provisioning Agent*\] *Data Provisioning Agent* 
+
+</td>
+<td valign="top">
+
+Select an agent from the list of agents configured for SAP Datasphere.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Data Provisioning Option* = *Direct*\] *Type Map* 
+
+</td>
+<td valign="top">
+
+Specify how ABAP data types are mapped to SAP HANA data types: 
+
+-   ﻿*native*﻿: no conversion of ABAP data types
+
+-   ﻿*semantic*﻿: conversion of the ABAP data types to an ABAP-independent data format
+
+-   *semanticDatsTimsAsWchar*: like *semantic*, except that the ABAP types DATS and TIMS are mapped to the ODBC type SQL\_WCHAR to allow for lossless conversion of date literals and time literals
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ### Features
 
 
@@ -397,7 +502,7 @@ Description
 </td>
 <td valign="top">
 
-To enable *Remote Tables*, select a Data Provisioning Agent. 
+To enable*Remote Tables*, complete the connection properties in the *Remote Tables* section. 
 
 </td>
 </tr>

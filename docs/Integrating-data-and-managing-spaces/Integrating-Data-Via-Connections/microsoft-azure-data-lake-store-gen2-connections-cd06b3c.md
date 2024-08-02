@@ -13,7 +13,7 @@ This topic contains the following sections:
 -   [Supported Features](microsoft-azure-data-lake-store-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_usage)
 -   [Configuring Connection Properties](microsoft-azure-data-lake-store-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure Data Lake Store Gen2](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/6b3fd2c371284637bac465edb9cc9e50.html "To be able to successfully validate and use a connection to Microsoft Azure Data Lake Store Gen2 certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure Data Lake Store Gen2](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/6b3fd2c371284637bac465edb9cc9e50.html "To be able to successfully validate and use a connection to Microsoft Azure Data Lake Store Gen2 certain preparations have to be made.") :arrow_upper_right:.
 
 
 

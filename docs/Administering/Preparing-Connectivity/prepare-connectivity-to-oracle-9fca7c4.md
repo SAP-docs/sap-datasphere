@@ -29,7 +29,12 @@ Before you can use the connection for creating views and accessing data via remo
 
 Before you can use the connection for data flows, the following is required:
 
--   To directly consume data in data flows, the Oracle database must be available on the public internet.
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
+
+    > ### Note:  
+    > Cloud Connector is not required if your Oracle database is available on the public internet.
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 
@@ -45,5 +50,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
 

@@ -269,6 +269,18 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
+        *Oracle* \(data flows\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         *Apache Kafka* on-premise only \(replication flows\)
         
         </td>

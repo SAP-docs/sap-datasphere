@@ -71,6 +71,11 @@ Add a source to read data from. You can add multiple sources and combine them to
     <td valign="top">
     
     \[read-only\] Provide information to identify the source table.
+
+    > ### Note:  
+    > Business names are not supported for columns in data flow editor.
+
+
     
     </td>
     </tr>

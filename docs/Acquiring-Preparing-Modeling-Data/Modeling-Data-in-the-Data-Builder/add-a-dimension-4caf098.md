@@ -46,5 +46,6 @@ There are different ways to add dimensions:
     -   You can change the alias of this item in the properties panel. The alias is the name that is shown in the story in SAP Analytics Cloud.
     -   You can add or deselect associated dimensions.
     -   You can add or deselect attributes.
+    -   You can specify a custom prefix or suffix for the technical name of attributes. For more information, see [Add a Prefix or a Suffix](add-a-prefix-or-a-suffix-0373c60.md).
 
 

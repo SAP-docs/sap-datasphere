@@ -30,19 +30,17 @@ A recurring task will check for any status changes according to the configured f
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
-2.  
+2.  Go to the *On-Premise Agents* section and click <span class="SAP-icons-V5"></span> \(menu\) ** \> ** *Configure Sending Notifications*.
 
-3.  Go to the *On-Premise Agents* section and click <span class="SAP-icons-V5"></span> \(menu\) ** \> ** *Configure Sending Notifications*.
+3.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the *Configure Sending Notifications* dialog asking for your consent. Give your consent.
 
-4.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the *Configure Sending Notifications* dialog asking for your consent. Give your consent.
-
-5.  Switch on the *Send Notifications* toggle.
+4.  Switch on the *Send Notifications* toggle.
 
     An additional field *Owner* appears that shows that you have been automatically assigned as the owner of the task.
 
-6.  Select the frequency in which the status of the Data Provisioning Agent should be checked.
+5.  Select the frequency in which the status of the Data Provisioning Agent should be checked.
 
-7.  Save your configuration.
+6.  Save your configuration.
 
     This will start the first status check. After the first check, the status check will be performed according to the defined frequency.
 

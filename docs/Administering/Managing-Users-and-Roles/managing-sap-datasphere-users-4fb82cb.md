@@ -34,7 +34,7 @@ Create individual users in the *Users* list
 </td>
 <td valign="top">
 
-[Creating a New User](creating-a-new-user-58d4b24.md) 
+[Create a User](create-a-user-58d4b24.md) 
 
 </td>
 </tr>
@@ -46,7 +46,7 @@ Import multiple users from a CSV file
 </td>
 <td valign="top">
 
-[Importing or Modifying Users from a File](importing-or-modifying-users-from-a-file-b2698da.md) 
+[Import or Modify Users from a File](import-or-modify-users-from-a-file-b2698da.md) 
 
 </td>
 </tr>
@@ -80,7 +80,7 @@ Export user data to a CSV file, to synchronize with other systems
 </td>
 <td valign="top">
 
-[Exporting Users](exporting-users-e227d3c.md)
+[Export Users](export-users-e227d3c.md)
 
 </td>
 </tr>
@@ -92,7 +92,7 @@ Update the email address a user logs on with
 </td>
 <td valign="top">
 
-[Updating User Email Addresses](updating-user-email-addresses-0889208.md)
+[Update User Email Addresses](update-user-email-addresses-0889208.md)
 
 </td>
 </tr>
@@ -104,7 +104,7 @@ Delete users
 </td>
 <td valign="top">
 
-[Deleting Users](deleting-users-3ceb94c.md)
+[Delete Users](delete-users-3ceb94c.md)
 
 </td>
 </tr>

@@ -2,40 +2,73 @@
 
 # Oracle Connections
 
-Use an *Oracle* connection to access data from an Oracle database \(on-premise\). 
+Use the connection to connect to and access data from an Oracle database \(on-premise\). 
 
 
 
-## Prerequisites
+This topic contains the following sections:
 
-See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+-   [Supported Features](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_usage)
+-   [Configuring Connection Properties](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__connection_properties)
+
+For information about the required prerequisites, see [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
 <a name="loioc73ae0601d364f47830d339b6e86b7e8__Oracle_usage"/>
 
-## Using the Connection
-
-You can import database tables. The connection type supports the remote table as well as the data flow feature.
-
-Supported data access methods for remote tables:
-
--   Remote
--   Replication \(snapshot\)
--   Replication \(real-time\)
-
-    > ### Note:  
-    > SAP Datasphere uses trigger-based replication. For more information, see [Oracle Trigger-Based Replication](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/0167d05537d84b0ea32979be85266b54.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.
+## Supported Features
 
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
+
+For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
 
 > ### Note:  
-> Note that only databases available on the public internet can be consumed in data flows directly. To avoid this restriction, you can use a remote table as a source for your data flow. To do so, you can deploy a remote table by importing the data set you're interested in from the connection into an E/R model in your space, for example. When creating a data flow in the space, the remote table then is available from the *Repository* tab in the *Source Browser*.
+> SAP Datasphere uses trigger-based replication. For more information, see [Oracle Trigger-Based Replication](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/0167d05537d84b0ea32979be85266b54.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.
 
 
 
-<a name="loioc73ae0601d364f47830d339b6e86b7e8__section_nrb_hcc_x4b"/>
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loioc73ae0601d364f47830d339b6e86b7e8__connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -116,6 +149,96 @@ If you set both, the Data Provisioning Agent connects to Oracle by the service n
 <td valign="top">
 
 Select a version. Supported versions are Oracle 12c, Oracle 18c, and Oracle 19c. Default version is Oracle 19c.
+
+</td>
+</tr>
+</table>
+
+
+
+### Cloud Connector
+
+> ### Note:  
+> Cloud Connector is not required if your Oracle database is available on the public internet.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector* 
+
+</td>
+<td valign="top">
+
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+\[optional\] Select a location ID. 
+
+> ### Note:  
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role that includes the required *Connection.Read* privilege.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+
+If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Enter the virtual host that you defined during Cloud Connector configuration. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 </td>
 </tr>

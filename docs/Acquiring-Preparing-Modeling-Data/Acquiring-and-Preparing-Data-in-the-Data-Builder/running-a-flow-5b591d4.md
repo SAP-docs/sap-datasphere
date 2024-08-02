@@ -12,6 +12,9 @@ To run a flow, you have 3 main options depending on your flow type:
 -   Click *Schedule* to run your data flow or your transformation flow at later time, or on regular basis \(this is not available for *Replication Flow*\).
 -   Add the flow into a task chain. This is only valid for a data flow. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 
+> ### Caution:  
+> A data flow uses a technical user during run. So, if a source view or an underlying view of the source view uses the SESSION\_CONTEXT function, incorrect data is read from the view during the execution of the data flow. This results in incorrect data or no data in the output.
+
 
 
 <a name="loio5b591d4998fa4a148750016a29ada91e__section_kxy_dq3_pzb"/>

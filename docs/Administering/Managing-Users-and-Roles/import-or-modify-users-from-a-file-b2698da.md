@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Importing or Modifying Users from a File
+# Import or Modify Users from a File
 
-You can create new users or batch-update existing users by importing user data that you have saved in a CSV file.
+You can create users or batch-update existing users by importing user data that you have saved in a CSV file.
 
 
 
@@ -14,7 +14,7 @@ The user data you want to import must be stored in a CSV file. At minimum, your 
 
 If you want to assign new users different roles, include a `Roles` column in the CSV file. The role IDs used for role assignment are outlined in [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
-For existing users that you want to modify, you can create the CSV file by first exporting a CSV file from SAP Datasphere. For more information, see [Exporting Users](exporting-users-e227d3c.md).
+For existing users that you want to modify, you can create the CSV file by first exporting a CSV file from SAP Datasphere. For more information, see [Export Users](export-users-e227d3c.md).
 
 > ### Note:  
 > The first name, last name, and display name are linked to the identity provider, and can't be changed in the User list page, or when importing a CSV file. \(In the User list page, those columns are grayed out.\)

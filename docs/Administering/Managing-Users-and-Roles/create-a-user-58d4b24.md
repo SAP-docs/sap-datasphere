@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Creating a New User
+# Create a User
 
 You can create individual users in SAP Datasphere.
 

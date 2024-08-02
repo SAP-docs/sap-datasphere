@@ -86,7 +86,7 @@ ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
 <tr>
 <td valign="top" rowspan="2">
 
-[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use an Oracle connection to access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -121,7 +121,7 @@ instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 > -   Additional files are required if SSL is used:
 > 
 >     -   oraclepki.jar \(SHA256 fingerprint: e408e7ae67650917dbce3ad263829bdc6c791d50d4db2fd59aeeb5503175499b\)
->     -   package zip file. The package applies to allosdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
+>     -   osdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
 >     -   osdt\_core.jar \(SHA256 fingerprint: c25e30184bb94c6da1227c8256f0e1336acb97b29229edb4aacf27167b96075e\)
 
 

@@ -18,3 +18,8 @@ For more information on the available filters, see [Overview of Filters](overvie
 
 By clicking an entry in the search result list, you will be directly forwarded to the corresponding data product page or data provider profile. There, you can evaluate the data product or data provider and eventually bookmark them. For more information, see [Using Bookmarks](using-bookmarks-aec68bb.md).
 
+You can use the Datarade data finder website to search and request additional third-party data products from various data providers. Access Datarade by clicking the *Request Data from Datarade* button.
+
+> ### Note:  
+> Clicking the *Request Data from Datarade* button takes you to the Datarade website. This site is external to our product.
+
