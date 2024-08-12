@@ -147,8 +147,10 @@ password
 Syntax of GET request:
 
 ```
-https://<tenant-url>/oauth/token?grant_type=client_credentials
+https://<token-url>/oauth/token?grant_type=client_credentials
 ```
+> ### Note:  
+> The token URL is listed in the System > Administration menu.
 
 The response body returns the access token, which you'll then use as the bearer token to obtain the csrf token.
 
