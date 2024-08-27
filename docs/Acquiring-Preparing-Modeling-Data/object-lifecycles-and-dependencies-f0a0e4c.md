@@ -29,6 +29,7 @@ Any object can be saved, but only valid objects can be deployed for use in your 
 
 Objects depend on their sources and on other objects they are associated with. Changing an object that is consumed by other objects may break those consumer objects. Be aware of object dependencies and ensure that changes you make can be communicated to and managed by consumers. See:
 
+-   [Releasing Stable Views for Consumption](releasing-stable-views-for-consumption-5b99e9b.md)
 -   [Packages](packages-a806c67.md)
 -   [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)
 -   [Modifying Objects That Have Dependent Objects](modifying-objects-that-have-dependent-objects-f315863.md)

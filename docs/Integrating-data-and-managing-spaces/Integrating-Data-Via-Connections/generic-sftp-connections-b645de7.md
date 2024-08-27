@@ -27,6 +27,8 @@ Supported file types:
 -   XLS, XLSX
 
 
+For information about the required prerequisites, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+
 
 
 <a name="loiob645de78a8374c24871ab6169be40d35__section_nrb_hcc_x4b"/>

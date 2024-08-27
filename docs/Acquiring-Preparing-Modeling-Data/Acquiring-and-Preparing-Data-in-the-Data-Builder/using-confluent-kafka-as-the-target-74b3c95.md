@@ -142,7 +142,26 @@ Compatibility Mode
 </td>
 <td valign="top">
 
-\[only relevant if *Use Schema Registry* is enabled\] Select the compatibility mode for the created subject in the schema registry. If the subject already exists and a value other than DEFAULT is specified, the compatibility mode of the subject is changed to the provided value.
+\[only relevant if *Use Schema Registry* is enabled\] Select the compatibility mode for the created subject in the schema registry. If the subject already exists and you choose a value other than DEFAULT, the system changes the compatibility mode of the subject to the provided value. If you leave the value as DEFAULT, the system uses the default value that has been defined for the Confluent cluster.
+
+The following Confluent compatibility modes are available:
+
+-   Backward
+
+-   Backward Transitive
+
+-   Forward
+
+-   Forward Transitive
+
+-   Full
+
+-   Full Transitive
+
+-   None.
+
+
+
 
 </td>
 </tr>

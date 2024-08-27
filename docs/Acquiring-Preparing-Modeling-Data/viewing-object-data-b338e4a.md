@@ -216,7 +216,9 @@ You can review the effects of any data access controls you apply to a view by ch
     The data viewer updates to show only the records visible to the selected user.
 
     > ### Note:  
-    > *View as User* is only available in the graphic view, SQL view, and analytic model editors, and can only simulate data access controls that are applied in the current space and which have a status of *Deployed*. In addition, if the view:
+    > *View as User* is only available in the graphic view, SQL view, and analytic model editors, and can only simulate data access controls that are applied in the current space and which have a status of *Deployed*. If the data access controls affecting your object were last deployed before your tenant was updated to version 2024.15 on July 16, 2024, you must re-deploy them.
+    > 
+    > In addition, if the view:
     > 
     > -   Is shared from another space then *View as User* is not supported.
     > -   Has one or more sources shared from other spaces, then a warning is shown to indicate that you may not see exactly the same records as the user you are impersonating.

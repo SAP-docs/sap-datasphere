@@ -30,7 +30,7 @@ As you type, the field will begin proposing objects and search strings. Select a
 
 Filter the search results based on selected criteria to limit the number of results.
 
-There are five tabs next to the *Filter* icon that you can use to narrow your results:
+There are tabs next to the *Filter* icon that you can use to narrow your results. The tabs shown are based on your permissions:
 
 
 <table>

@@ -51,9 +51,28 @@ A CSN \(Core Data Services Schema Notation\) file contains only the definition o
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Messages
+    
+    </td>
+    <td valign="top">
+    
+    Lists warnings or blocking errors related to the import. Click the message to see more details:
+
+    -   Invalid Release State - An object in the repository will be overwritten by an object in the file with an inconsistent release state \(see [Releasing Stable Views for Consumption](../releasing-stable-views-for-consumption-5b99e9b.md)\).
+
+
+    
+    </td>
+    </tr>
     </table>
     
 3.  Select the objects you want to import and click *Import*.
+
+    > ### Note:  
+    > Remote tables exported from one space can be imported into another only if they were originally imported from a connection created in v2021.19 or later.
 
     In addition to the objects you select, other objects may be imported:
 

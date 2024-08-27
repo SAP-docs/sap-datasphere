@@ -12,7 +12,7 @@ To be able to successfully validate and use a connection to Amazon Athena for re
 
 Before you can use the connection for creating views and accessing data via remote tables, the following is required:
 
--   A DW administrator has uploaded the server certificates to SAP Datasphere. Two certificates are required, one for Amazon Athena and one for Amazon S3. Region-specific certificates might be required for Amazon Athena.
+-   A DW administrator has uploaded the server certificates to SAP Datasphere. Two certificates are required, one for Amazon Athena and one for Amazon S3. Region-specific certificates might be required for Amazon Athena. Alternatively, if the common root CA certificate contains trust for both endpoints, Amazon Athena and Amazon Simple Storage Service \(API/Athena and the Data/S3\), you can upload the root certificate.
 
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 

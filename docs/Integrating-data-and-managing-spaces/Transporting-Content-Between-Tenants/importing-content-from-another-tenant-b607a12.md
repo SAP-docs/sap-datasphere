@@ -12,54 +12,7 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 
 ## Procedure
 
-1.  Ensure that your tenant is ready to import your content package:
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Prerequisite
-    
-    </th>
-    <th valign="top">
-
-    DW Administrator
-    
-    </th>
-    <th valign="top">
-
-    DW Space Administrator
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Does the space exist?
-
-    You cannot import content into a space with a different technical name to the space from which the content was exported
-
-    > ### Note:  
-    > If the package contains objects from more than one space or objects that are shared from one space to another, then all referenced spaces must exist.
-
-
-    
-    </td>
-    <td valign="top">
-    
-    No preparation is necessary. Users with the *DW Administrator* can create spaces through the *Import* app.
-    
-    </td>
-    <td valign="top">
-    
-    If one or more required spaces does not exist, you must request a *DW Administrator* to create them for you.
-    
-    </td>
-    </tr>
-    </table>
-    
-2.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Import*\) to open the list of content available for import.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Import*\) to open the list of content available for import.
 
     If you don’t see expected packages to import, click the *Settings* button and review the import settings. You can:
 
@@ -68,9 +21,9 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 
     If, after checking these settings, an expected package is still not listed, contact an administrator for help.
 
-3.  Click a package to open it and see an overview of its content.
+2.  Click a package to open it and see an overview of its content.
 
-4.  Review the *Import Overview* section. For more details, and to modify any of the options, click the *Import Options* tab:
+3.  Review the *Import Overview* section. For more details, and to modify any of the options, click the *Import Options* tab:
 
 
     <table>
@@ -125,6 +78,7 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
         > ### Note:  
         > -   The *Including permissions* option is not supported for SAP Datasphere.
         > -   Connections are never overwritten by an import.
+        > -   When overwriting objects with a release state, the objects you are importing must have the same release state or another release state that is consistent with their lifecycle \(see [Releasing Stable Views for Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5b99e9bcb5964ab69b094215d285feb1.html "To encourage confidence in the stability of your views and to guarantee backward compatibility when they are updated, you can set their Release State to Released. Once a view is released, it must continue to provide the same output columns until it is replaced by a successor, at which point it can be deprecated and, eventually, decommissioned.") :arrow_upper_right:\).
 
 
 
@@ -159,6 +113,18 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
     </td>
     <td valign="top">
     
+    Select the space or spaces to import your content into in the *Space Mapping* field. You must choose one space for each space listed in the package:
+
+    -   You can select any space for which you have the *Spaces.Update* permission to import the space's content into.
+
+        If you have the *Spaces.Manage* permission, then you can choose to import into any space in your tenant.
+
+    -   If the space does not exist in your tenant and you have the *Spaces.Create* permission, then you are invited to create it by default.
+    -   You cannot "merge" content from two or more spaces included in your package. You must select a separate space for each space listed.
+
+    > ### Note:  
+    > Choosing space mappings is only possible if the source objects for any shared objects are included in the package. For example if your package contains shared objects in `Space A` that have been shared from `Space B`, then the source objects from `Space B` must be included in the package. If the sources of any shared objects cannot be resolved in the package, then the package must be imported into spaces with the same technical names as the spaces listed in the package.
+
     Review the objects to be imported. All objects are imported by default.
 
     You can select and deselect individual objects, or types of objects. The *Impacted Object* column shows warnings for objects that will overwrite content on your system.
@@ -167,7 +133,7 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
     </tr>
     </table>
     
-5.  Click *Import* to begin importing the content. 
+4.  Click *Import* to begin importing the content. 
 
     You will receive a notification when the process is complete, or if an error occurs.
 
@@ -175,7 +141,7 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
 
     To view the log of updates and imports for a package, select the package in the content network and choose <span class="SAP-icons-V5"></span> History.
 
-6.  If your content included one or more connections that didn't exist in your space before the import, then you should:
+5.  If your content included one or more connections that didn't exist in your space before the import, then you should:
 
     1.  In the *Connections* app, open each connection, complete the configuration and enter appropriate credentials to connect to your system \(see [Edit a Connection](../Integrating-Data-Via-Connections/edit-a-connection-ba20892.md)\).
 
@@ -185,6 +151,6 @@ Users with the *DW Administrator* global role \(or users with both a scoped *DW 
         > If you checked the *Deploy after import* checkbox in the *Import Options*, you can find a notification about the failed deployment of objects in the *Notifications* panel. Clicking the notification directly leads you to the list of imported objects in the *Repository Explorer*.
 
 
-7.  If you are a *DW Administrator* and have created a space as part of the import, you are assigned to the space as a *DW Space Administrator*. You can assign other users to the space \(including as space administrators\) as appropriate.
+6.  If you are a *DW Administrator* and have created a space as part of the import, you are assigned to the space as a *DW Space Administrator*. You can assign other users to the space \(including as space administrators\) as appropriate.
 
 

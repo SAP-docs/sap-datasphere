@@ -22,8 +22,6 @@ Before creating your data access control, you must have prepared a permissions e
 -   Criterion Column - The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It does not need to exactly match a column name, but should guide the user to the column to which it should be mapped.
 -   Operator Column - The following operators are supported:
     -   `ALL` \(or `*`\) - Provides access to all records. No values required.
-    -   `N` \(or `IS NULL`\) - Is null. No values required.
-    -   `NN` \(or `NOT NULL`\) - Is not null. No values required.
     -   `EQ` \(or `=`\) - Equal to *First Value*.
     -   `NE` \(or `<>` or `!=`\) - Not equal to *First Value*.
     -   `GT` \(or `>`\) - Greater than *First Value*.

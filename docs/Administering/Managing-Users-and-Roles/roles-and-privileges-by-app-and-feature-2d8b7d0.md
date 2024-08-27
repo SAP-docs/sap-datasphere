@@ -811,7 +811,7 @@ DW Administrator and DW Space Administrator
 
 Modify *Storage Assignment*, *Data Lake Access*, *Workload Management*
 
-See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bbd41b8.md), [Allocate Storage to a Space](../Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md) and [Set a Priority and Statement Limits for a Space](../Creating-Spaces-and-Allocating-Storage/set-a-priority-and-statement-limits-for-a-space-d66ac1e.md)
+See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bbd41b8.md), [Allocate Storage to a Space](../Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md) and [Set Priorities and Statement Limits for Spaces](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-d66ac1e.md)
 
 </td>
 <td valign="top">
@@ -963,7 +963,7 @@ DW Administrator, DW Space Administrator, DW Integrator and DW Modeler
 
 Lock or Unlock a Space
 
-See [Lock or Unlock Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "If a space exceeds its assigned storage or if the audit logs enabled in the space consume too much disk storage, the space is automatically locked.") :arrow_upper_right:
+See [Lock or Unlock Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1166,7 +1166,7 @@ Assets
 
 Create or delete a relationship between a tag and an asset.
 
-See [Managing Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
+See [Manage Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1229,7 +1229,7 @@ Assets
 
 Publish/Unpublish assets to the catalog.
 
-See [Publishing to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "You can determine what content is available to users who search the catalog. Single assets can be published directly from its information page or several assets can be published from the catalog home page. Once published, anyone who uses the catalog can discover the published content.") :arrow_upper_right:
+See [Publishing Content to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "When you publish assets to the catalog, you determine what content is available for catalog users to discover. You can set source systems to automatically publish content, or you can be more involved and manually publish individual assets from the asset details page or manually publish small groups of assets from the catalog home page.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1330,7 +1330,7 @@ Tags
 
 Create or delete a relationship between a tag and an asset.
 
-See [Managing Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
+See [Manage Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1972,7 +1972,7 @@ Contained in Standard Role
 <tr>
 <td valign="top">
 
-`datasphere spaces`
+`datasphere spaces` and `datasphere workload` 
 
 </td>
 <td valign="top">
@@ -1981,7 +1981,25 @@ Contained in Standard Role
     -   *Spaces* `(C------M)`
     -   *User* `(-R------)`
 
--   Update/ delete spaces:
+
+
+
+</td>
+<td valign="top">
+
+*DW Administrator* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`datasphere spaces`
+
+</td>
+<td valign="top">
+
+-   Update/delete spaces:
     -   *Spaces* \(-RUD---M\)
 
 -   Update space users:
@@ -1994,7 +2012,7 @@ Contained in Standard Role
 </td>
 <td valign="top">
 
-*DW Administrator* 
+*DW Administrator* and *DW Space Administrator*
 
 </td>
 </tr>

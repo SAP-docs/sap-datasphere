@@ -87,7 +87,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     Enter the amount of memory storage allocated in GB. This value cannot exceed the amount of disk storage allocated. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100 MB by hand.
 
     > ### Note:  
-    > The memory allocated is used to store data and is not related to processing memory. For more information on limiting processing memory in a space, see [Set a Priority and Statement Limits for a Space](set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
+    > The memory allocated is used to store data and is not related to processing memory. For more information on limiting processing memory in a space, see [Set Priorities and Statement Limits for Spaces](set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
 
     Default: 1 GB
     
@@ -110,7 +110,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </table>
     
     > ### Note:  
-    > If a space exceeds its allocations of memory or disk storage, it will be locked until a user of the space deletes the excess data or an administrator assigns additional storage. See [Lock or Unlock Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "If a space exceeds its assigned storage or if the audit logs enabled in the space consume too much disk storage, the space is automatically locked.") :arrow_upper_right:.
+    > If a space exceeds its allocations of memory or disk storage, it will be locked until a user of the space deletes the excess data or an administrator assigns additional storage. See [Lock or Unlock Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.") :arrow_upper_right:.
 
 3.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.
 

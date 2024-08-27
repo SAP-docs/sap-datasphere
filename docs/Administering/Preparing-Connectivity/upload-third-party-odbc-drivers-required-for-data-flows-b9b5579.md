@@ -84,33 +84,11 @@ ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="2">
+<td valign="top">
 
 [Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 </td>
-<td valign="top">
-
-instantclient-basiclite-linux.x64-12.2.0.1.0.zip
-
-> ### Note:  
-> Make sure to select the *Basic Light* package zip file. The package applies to version 12c supported by the Oracle connection type.
-
-
-
-</td>
-<td valign="top">
-
-1c3adb36f9605aae84ae98461bd6ee9eb26b303cace3f5534cd7985d470d0494
-
-</td>
-<td valign="top">
-
-`https://oracle.com`
-
-</td>
-</tr>
-<tr>
 <td valign="top">
 
 instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip

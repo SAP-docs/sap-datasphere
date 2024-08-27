@@ -32,17 +32,20 @@ You can import entities from the following types of sources:
     If the SAP Datasphere, SAP BW bridge option is enabled:
 
     -   A SAP BW bridge space is created, containing an SAP BW bridge connection to your bridge tools.
-    -   You can use the *Import Entities* wizard to import your SAP BW bridge Queries, CompositeProviders, DataStore objects \(inbound table and/or active table depending on the type of the DataStore object\), and Master data tables \(including hierarchies in the case of SAP BW bridge\):
+    -   You can use the *Import Entities* wizard to import your SAP BW bridge Queries, CompositeProviders, DataStore objects \(inbound table and/or active table depending on the type of the DataStore object\), and Master data tables \(including hierarchies\):
         -   Remote tables to load the data are created in the SAP BW bridge space and then automatically shared to the target space you specify in the wizard.
         -   Views and business entities that draw their data from and are built on these remote tables are created in your target space.
 
 
     For SAP BW bridge, you can import hierarchies modeled in SAP BW bridge including its semantic information into SAP Datasphere and use it as display hierarchy in the analytic model. When importing an InfoObject \(ANALYTICAL\_DIMENSION\) which has a hierarchy, the hierarchy is imported as well. The following objects are created for the hierarchy with directory in the Data Builder: hierarchy store, hierarchy directory, hierarchy directory description, and hierarchy note text.
 
+    When you import objects with variables, you can use these variables in an analytic model. The default values set in SAP BW bridge are displayed in the preview. You can also define your own values.
+
+    Not all types of variables are supported in SAP Datasphere. In most cases these are input-ready variables for characteristic values. Note also that the variable in the global filter can be the only restriction.
+
     For importing queries, there are certain restrictions:
 
     -   When an object is remodeled in SAP BW bridge, the query definition is broken.
-    -   Input and exit variables are removed.
     -   Constant selection is not supported.
     -   For dimensions, the following features are not supported: compound characteristics, and time dependency.
 

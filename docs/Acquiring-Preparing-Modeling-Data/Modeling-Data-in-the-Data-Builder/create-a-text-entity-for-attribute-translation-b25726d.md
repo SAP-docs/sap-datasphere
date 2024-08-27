@@ -49,6 +49,11 @@ For example:
     Semantic Type
     
     </th>
+    <th valign="top">
+
+    Text / Association
+    
+    </th>
     </tr>
     <tr>
     <td valign="top">
@@ -56,6 +61,8 @@ For example:
     Identifiers
 
     One or more identifiers specify the dimension member for which the text is provided.
+
+    If more than one identifier is specified, ensure that the representative key is specified in the dimension.
 
     Example: `01`
     
@@ -68,6 +75,11 @@ For example:
     <td valign="top">
     
     None
+    
+    </td>
+    <td valign="top">
+    
+    Select the attribute with the *Text* semantic type for the identifier or representative key.
     
     </td>
     </tr>
@@ -103,6 +115,11 @@ For example:
     *Language*
     
     </td>
+    <td valign="top">
+    
+    \-
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -122,6 +139,11 @@ For example:
     <td valign="top">
     
     *Business Date - From*
+    
+    </td>
+    <td valign="top">
+    
+    \-
     
     </td>
     </tr>
@@ -145,6 +167,11 @@ For example:
     *Business Date - To*
     
     </td>
+    <td valign="top">
+    
+    \-
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -164,6 +191,11 @@ For example:
     <td valign="top">
     
     *Text*
+    
+    </td>
+    <td valign="top">
+    
+    \-
     
     </td>
     </tr>

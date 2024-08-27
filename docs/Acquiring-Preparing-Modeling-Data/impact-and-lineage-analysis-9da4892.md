@@ -279,6 +279,18 @@ Deployment Status \(see [Saving and Deploying Objects](saving-and-deploying-obje
 <tr>
 <td valign="top">
 
+<span class="SAP-icons-V5"></span> \(Released\)
+
+</td>
+<td valign="top">
+
+Release State \(see [Releasing Stable Views for Consumption](releasing-stable-views-for-consumption-5b99e9b.md)\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 ![](images/Column_List_Icon_9814d35.png)
 
 </td>

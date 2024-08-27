@@ -14,10 +14,12 @@ You can use replication flows to copy data from the following source objects:
 
 -   CDS views \(in ABAP-based SAP systems\) that are enabled for extraction
 
--   Tables that have a primary key
+-   Objects from ODP providers, such as extractors or SAP BW artifacts \(from any SAP system that is based on SAP NetWeaver and has a suitable version of the DMIS add-on, see SAP Note [3412110](https://me.sap.com/notes/3412110)\)
 
--   Objects from ODP providers, such as extractors or SAP BW artifacts \(from any SAP system that is based on SAP NetWeaver and has a suitable version of the DMIS add-on, see SAP Note [3412110](https://me.sap.com/notes/3412110)\).
+-   Tables that have a primary key.
 
+
+CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [Using an Object Without Primary Key As the Source](using-an-object-without-primary-key-as-the-source-2267a9f.md).
 
 For more information about available connection types, sources, and targets, see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:.
 
@@ -195,6 +197,20 @@ For more information about available connection types, sources, and targets, see
     Select how you want to load the data \(initial only or initial and delta\).
 
     For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    ABAP Exit
+    
+    </td>
+    <td valign="top">
+    
+    \[only relevant for replication of CDS views and if this feature is supported for the source\] Select a BAdI implementation to add your own projection logic for replication of CDS view data.
+
+    For more information, see [Add Customer-Specific Projection Logic](add-customer-specific-projection-logic-970636e.md).
     
     </td>
     </tr>

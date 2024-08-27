@@ -8,10 +8,13 @@ Administrators have access to various monitoring logs and views, and can create 
 
 This topic contains the following sections:
 
--   [Monitoring Out-of-Memory Errors and Other Statement-Related Information](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_zn2_nyr_c5b)
--   [Dashboard](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_k1v_2jx_b5b)
--   [Tasks](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_ocq_twn_wtb)
--   [Statements](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_fyv_twn_wtb)
+-   [Monitor Disk and Memory Assignment](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_irf_214_1cc)
+-   [Monitor Tasks](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_qyl_sc4_ccc)
+-   [Monitor Statements](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc)
+-   [Monitor Access Control Issues](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_tt5_sc4_ccc)
+-   [Monitor Elastic Compute Nodes](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_yvw_k24_ccc)
+-   [Tasks Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
+-   [Statements Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
 -   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
 
 Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) to access the main monitoring tool. The *System Monitor* allows to monitor the performance of your system and identify storage, task, out-of-memory, and other issues across all spaces.
@@ -23,45 +26,37 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 
 
 
-<a name="loio28910cded17a42a0bf16225309cb8bf6__section_zn2_nyr_c5b"/>
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_irf_214_1cc"/>
 
-## Monitoring Out-of-Memory Errors and Other Statement-Related Information
+## Monitor Disk and Memory Assignment
 
-You can monitor out-of-memory errors and other information that are related to SAP HANA database SQL statements, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\).
 
--   If *Enable Expensive Statement Tracing* is not selected, then in *System Monitor* \> *Dashboard*, you cannot see the cards about out-of-memory errors and about other information related to statements. For example, you cannot see the cards: *Out-of-Memory Errors*, *Top 5 Statements by Processing Memory Consumption*.
-
--   If *Enable Expensive Statement Tracing* is not selected and none of the threshold options is selected, then in the tables of *System Monitor* \> *Logs*, you cannot see any information about out-of-memory errors and about other information related to statements. For example, no information is displayed in the columns *Peak Memory \(MiB\)* and *Peak CPU \(ms\)*.
+    You can monitor available disk and memory storage on your tenant with the following cards:
 
 
-A maximum of 30.000 records by default \(a number that you can change\) are stored for expensive statements. It means that the thresholds also determine how long you are able to see the statements. If the thresholds are very low, many statements are traced in a short timeframe.
+    <table>
+    <tr>
+    <th valign="top">
 
-For this reason, we recommend the following:
+    Card
+    
+    </th>
+    <th valign="top">
 
--   *Threshold Duration* - Specify 5 seconds.
-
--   *Threshold Memory* - Specify 1.000 MB.
-
--   *Threshold CPU Time* - Do not select this option.
-
-
-You can change the maximum number of records to trace more data in the *System Monitor*. For example, if about 5 days are traced in the expensive statement tables and you don’t want to change the thresholds, you can double the number of records in *In-Memory Tracing Records* so that about 10 days are traced.
-
-For more information on enabling and configuring expensive statement tracing, see [Analyze Monitoring Data in a Space](analyze-monitoring-data-in-a-space-9cd0691.md).
-
-
-
-<a name="loio28910cded17a42a0bf16225309cb8bf6__section_k1v_2jx_b5b"/>
-
-## Dashboard
-
-The out-of-memory cards and top-memory consumption cards help you to identify issues. You can see detailed information about the issues by clicking *View Logs*, which takes you to the *Logs* tab. For example, you can find out if tasks have to be scheduled at another time so that high-memory consuming tasks do not run at the same time. If single tasks consume too much memory, some additional views may need to be persisted or the view partitioning may need to be used to lower the memory consumption.
-
-The following information is available in the *Dashboard* tab:
-
--   *Disk Used by Spaces for Storage* - Shows the total amount of disk storage used in all spaces, out of the total amount of disk storage assigned to all spaces.
-
-    In *Disk Storage Used*, you can see a breakdown between:
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Disk Storage Used*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total amount of disk storage used in all spaces, broken down between:
 
     -   *Data in Spaces*: All data that is stored in spaces.
 
@@ -75,316 +70,565 @@ The following information is available in the *Dashboard* tab:
     -   *Administrative Data*: Data used to administer the tenant and all spaces \(such as space quota, space version\). Includes all information stored in the central schemas \(DWC\_GLOBAL, DWC\_GLOBAL\_LOG, DWC\_TENANT\_OWNER\).
 
 
--   *Memory Used by Spaces for Storage* - Shows the total amount of memory storage used in all spaces, out of the total amount of memory storage assigned to all spaces.
--   *Disk Assigned to Spaces for Storage* - Shows the total amount of disk storage assigned to all spaces.
--   *Memory Assigned to Spaces for Storage* - Shows the total amount of memory storage assigned to all spaces.
 
-For each of the key indicator cards listed below, you can see detailed information by clicking the link *View Logs*, which takes you to the *Logs* tab.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Disk Used by Spaces for Storage*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total amount of disk storage used in all spaces, out of the total amount of disk storage assigned to all spaces. You can see a breakdown of this amount in the card *Disk Storage Used*.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Memory Used by Spaces for Storage*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total amount of memory storage used in all spaces, out of the total amount of memory storage assigned to all spaces.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Disk Assigned to Spaces for Storage*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total amount of disk storage assigned to all spaces.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Memory Assigned to Spaces for Storage*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total amount of memory storage assigned to all spaces.
+    
+    </td>
+    </tr>
+    </table>
+    
+2.  To investigate issues in particular spaces:
+    1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\).
+    2.  Display the list of spaces in the table layout and order by column. For example, you can display at the top of the table the spaces that use the highest amount of storage by choosing the descending order for the column *Used Storage*.
+    3.  Open a space and click *Monitor* in the space details page to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:\).
+
+
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_qyl_sc4_ccc"/>
+
+## Monitor Tasks
+
+For example, you can find out if tasks have to be scheduled at another time so that high-memory consuming tasks do not run at the same time. If single tasks consume too much memory, some additional views may need to be persisted or the view partitioning may need to be used to lower the memory consumption.
+
+To investigate issues:
+
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\).
+
+    You can identify issues with tasks with the following cards:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Card
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Failed Tasks*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
+
+    -   Shows the number of tasks that have failed in the last 24 hours with a trend icon \(up or down arrow\) indicating if there are more or less failed tasks than the day before.
+    -   Shows the number of failed tasks by day for the last 7 days.
+
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Tasks by Run Duration*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
 
-<table>
-<tr>
-<th valign="top">
+    -   Shows the 5 tasks whose run duration time was the longest in the last 24 hours.
+    -   Shows the 5 tasks whose run duration time was the longest in the last 48 hours.
 
-Card
 
-</th>
-<th valign="top">
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Tasks by Processing Memory Consumption*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
 
-Description
+    -   Shows the 5 tasks whose processing memory consumption was the highest in the last 24 hours.
+    -   Shows the 5 tasks whose processing memory consumption was the highest in the last 48 hours.
 
-</th>
-</tr>
-<tr>
-<td valign="top">
 
-*Failed Tasks*
+    
+    </td>
+    </tr>
+    </table>
+    
+2.  Click *View Logs* in a card to go to the *Logs* tab, then *Tasks* sub-tab, which displays information filtered on the card criteria. For more information on the *Tasks* tab, see [Tasks Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab).
+3.  Click the links in the following columns:
+    -   *Activity* column - For the spaces you have access to \(via scoped roles\), a link opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
 
-*Last 24 Hours*
+    -   *Object Name* column - For the spaces you have access to \(via scoped roles\), a link opens the editor of the object.
 
-</td>
-<td valign="top">
 
-Shows the number of tasks that have failed in the last 24 hours with a trend icon \(up or down arrow\) indicating if there are more or less failed tasks than the day before.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
 
-*Out-of-Memory Errors* 
 
-*Last 24 Hours*
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc"/>
 
-</td>
-<td valign="top">
-
-Shows the number of out-of-memory errors that have occurred in tasks and statements in the last 24 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Out-of-Memory Errors \(Workload Class\) by Space*
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the schemas in which out-of-memory errors have occurred in the last 7 days because the statement limits have been exceeded.
-
-You can set the statement limits for a space in the *Workload Management* area of a space.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Out-of-Memory Errors \(MDS Requests\)*
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the out-of-memory errors that are related to SAP HANA multi-dimensional services \(MDS\) requests, which is used for example for SAP Analytics Cloud consumption.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Failed Tasks* 
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the number of failed tasks by day for the last 7 days.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Out-of-Memory Errors*
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the number of out-of-memory errors that have occurred in tasks and statements, by day for the last 7 days.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Tasks by Run Duration*
-
-*Last 24 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 tasks whose run duration time was the longest in the last 24 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Tasks by Run Duration*
-
-*Last 48 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 tasks whose run duration time was the longest in the last 48 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Tasks by Processing Memory Consumption*
-
-*Last 24 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 tasks whose processing memory consumption was the highest in the last 24 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Tasks by Processing Memory Consumption*
-
-*Last 48 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 tasks whose processing memory consumption was the highest in the last 48 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Statements by Processing Memory Consumption*
-
-*Last 24 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 statements whose processing memory consumption was the highest in the last 24 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Statements by Processing Memory Consumption*
-
-*Last 48 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 statements whose processing memory consumption was the highest in the last 48 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 MDS Requests by Processing Memory Consumption*
-
-*Last 24 Hours*
-
-</td>
-<td valign="top">
-
-Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for example in SAP Analytics Cloud consumption\), whose processing memory consumption is the highest.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Admission Control Rejection Events*
-
-*Last 24 Hours*
-
-</td>
-<td valign="top">
-
-Shows the number of statements that have been rejected in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less rejected statements than the day before.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Admission Control Queuing Events*
-
-*Last 24 Hours*
-
-</td>
-<td valign="top">
-
-Shows the number of statements that have been queued in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less queued statements than the day before.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Admission Control Rejection Events*
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the number of statements that have been rejected in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Admission Control Queuing Events*
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the number of statements that have been queued in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top 5 Admission Control Rejection Events by Space*
-
-*Last 7 Days*
-
-</td>
-<td valign="top">
-
-Shows the 5 spaces with the highest number of rejected statements in the last 7 days.
+## Monitor Statements
 
 > ### Note:  
-> A space that has been deleted is prefixed with an asterisk character.
+> If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *System Monitor*. For more information on enabling and configuring expensive statement tracing, see [Configure Monitoring](configure-monitoring-9cd0691.md).
+
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\).
+
+    You can monitor statements with the following cards:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Card
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Statements by Processing Memory Consumption*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
+
+    -   Shows the 5 statements whose processing memory consumption was the highest in the last 24 hours.
+    -   Shows the 5 statements whose processing memory consumption was the highest in the last 48 hours.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Out-of-Memory Errors*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
+
+    -   Shows the number of out-of-memory errors that have occurred in tasks and statements in the last 24 hours.
+    -   Shows the number of out-of-memory errors that have occurred in tasks and statements, by day for the last 7 days.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 MDS Requests by Processing Memory Consumption*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the 5 SAP HANA multi-dimensional services \(MDS\) requests \(used for example in SAP Analytics Cloud consumption\), whose processing memory consumption is the highest.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Out-of-Memory Errors \(MDS Requests\)*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the out-of-memory errors that are related to SAP HANA multi-dimensional services \(MDS\) requests, which is used for example for SAP Analytics Cloud consumption.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Out-of-Memory Errors \(Workload Class\) by Space*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the schemas in which out-of-memory errors have occurred in the last 7 days because the statement limits have been exceeded.
+
+    To set the statement limits for spaces, see [Set Priorities and Statement Limits for Spaces](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
+    
+    </td>
+    </tr>
+    </table>
+    
+2.  Click *View Logs* in a card to go to the *Logs* tab, then *Statements* sub-tab, which displays information filtered on the card criteria. For more information on the *Statements* tab, see [Statements Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
+3.  Click the links in the *Statement Details* column.
 
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_tt5_sc4_ccc"/>
 
-*Top 5 Admission Control Queuing Events by Space*
+## Monitor Access Control Issues
 
-*Last 7 Days*
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\).
 
-</td>
-<td valign="top">
-
-Shows the 5 spaces with the highest number of queued statements in the last 7 days.
-
-> ### Note:  
-> A space that has been deleted is prefixed with an asterisk character.
+    You can monitor statements that are rejected or queued with the following cards.
 
 
+    <table>
+    <tr>
+    <th valign="top">
 
-</td>
-</tr>
-</table>
+    Card
+    
+    </th>
+    <th valign="top">
 
-> ### Note:  
-> -   To investigate why statements are being queued or rejected, you can click *Open SAP HANA Cockpit* in the cards dedicated to admission contol. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
-> 
-> -   For more information about admission control thresholds, see [Set a Priority and Statement Limits for a Space](../Creating-Spaces-and-Allocating-Storage/set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Admission Control Rejection Events by Space*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the 5 spaces with the highest number of rejected statements in the last 7 days.
+
+    > ### Note:  
+    > A space that has been deleted is prefixed with an asterisk character.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Admission Control Rejection Events*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
+
+    -   Shows the number of statements that have been rejected in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less rejected statements than the day before.
+    -   Shows the number of statements that have been rejected in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Admission Control Queuing Events by Space*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the 5 spaces with the highest number of queued statements in the last 7 days.
+
+    > ### Note:  
+    > A space that has been deleted is prefixed with an asterisk character.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Admission Control Queuing Events*
+    
+    </td>
+    <td valign="top">
+    
+    Two cards provide information:
+
+    -   Shows the number of statements that have been queued in the last 24 hours because they’ve exceeded the threshold percentage of CPU usage. A trend icon \(up or down arrow\) indicates if there are more or less queued statements than the day before.
+    -   Shows the number of statements that have been queued in the last 7 days because they’ve exceeded the threshold percentage of CPU usage.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+2.  To investigate further, click *Open SAP HANA Cockpit* in a card.
+
+    If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
+
+
+For more information about admission control thresholds, see [Set Priorities and Statement Limits for Spaces](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
 
 
 
-<a name="loio28910cded17a42a0bf16225309cb8bf6__section_ocq_twn_wtb"/>
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_yvw_k24_ccc"/>
 
-## Tasks
+## Monitor Elastic Compute Nodes
+
+Once you’ve created an elastic compute node in the *Space Management* app \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md)\), you can monitor its key figures, such as the start and end time of the last run or the amount of memory used for data replication.
+
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\), then click the *Elastic Compute Nodes* tab.
+
+2.  From the dropdown list, select the elastic compute node that you want to monitor.
+
+    > ### Note:  
+    > If one elastic compute node exists, related monitoring information is automatically displayed in the tab. If several elastic compute nodes exist, you must select a node from the dropdown list to display monitoring information in the tab.
+
+    You can view elastic compute node key figures or identify issues with the following cards:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Card
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Configuration*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the following information about the current elastic compute node:
+
+    -   Technical name.
+
+    -   Status, such as *Ready* or *Running* \(see [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
+
+    -   The performance class and the resources allocated to the node: number of compute blocks, memory, disk storage and number of vCPUs.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Run Details* 
+    
+    </td>
+    <td valign="top">
+    
+    Shows the following information about the latest or the previous run of the current elastic compute node:
+
+    -   The date and time at which the elastic compute node has started and stopped.
+
+    -   The total run duration \(uptime\) from the starting to the stopping phase.
+
+    -   The number of block-hours is the numbers of hours that have been consumed by the run. The number of block-hours is the result of the run duration in numbers of hours multiplied by the number of compute blocks. If a node that includes 4 compute blocks runs for 5 hours, 20 block-hours have been consumed. In such a case, the uptime equals the block-hours. If a node that includes 8 compute blocks runs for 5 hours, 40 block-hours have been consumed.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Monthly Uptime*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the following information about the elastic compute node runs for the current month or the last month:
+
+    -   The total duration \(uptime\) of all runs in the current or last month.
+
+    -   The total number of block-hours consumed by all the runs in the current or last month.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Average CPU*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the average percentage of the number of vCPUs consumed, during the latest or previous run of the elastic compute node.
+
+    The trend icon \(up or down arrow\) indicates if the percentage is higher or lower than the previous run.
+
+    To see the real-time average CPU utilization in percentage for the elastic compute note, click *Performance Monitor \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Perfomance Monitor](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/performance-monitor) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Average Memory*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the average amount of memory consumed \(in GiB\), during the latest or previous run of the elastic compute node.
+
+    The trend icon \(up or down arrow\) indicates if the percentage is higher or lower than the previous run.
+
+    To see the real-time average memory utilization in GB for the elastic compute note, click *Performance Monitor \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Perfomance Monitor](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/performance-monitor) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Total Uptime*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total duration in hours of all runs of the elastic compute node.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Statements by Processing Memory Consumption*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the 5 statements whose memory consumption was the highest during the last run of the elastic compute node.
+
+    To see detailed information about the statements, you can click *View Logs*, which takes you to the *Logs* \> *Statements* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Out-of-Memory Errors*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the number of out-of-memory errors that have occurred in tasks and statements related to the elastic compute node, during the last run.
+
+    To see detailed information about the errors, you can click *View Logs*, which takes you to the *Logs* \> *Statements* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Memory Distribution*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of memory allocated to the elastic compute node, if in a running state, broken down between:
+
+    -   *Unused Memory* - Shows the amount of memory available for the elastic compute node.
+
+    -   *Memory Used for Data Replication* - Shows the amount of memory used to store replicated data for the elastic compute node.
+
+    -   *Memory Used for Processing* - Shows the amount of memory used by the processes that are currently running for the elastic compute node. For example: consumption of the queries running on the elastic compute node.
+
+
+    > ### Note:  
+    > If the elastic compute node is not in a running state, no data is displayed.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  To investigate further, you can do the following:
+
+    -   To view statement details, click *View Logs* in a card to go to the *Logs* tab, then *Statements* sub-tab, which displays information filtered on the card criteria. Then, click the links in the *Statement Details* column. For more information on the *Statements* tab, see [Statements Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
+    -   To view details on a run, click *View Logs* in a card to go to the *Logs* tab, then *Tasks* sub-tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
+    -   To navigate to the elastic compute node in the *Space Management* app, click *Manage Elastic Compute Node* \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md) and [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
+
+    -   To analyze the performance of the SAP HANA database, click *Database Overview \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Database Overview Page](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/database-overview-page) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
+
+
+
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_task_tab"/>
+
+## Tasks Logs Tab
 
 In *Logs* \> *Tasks*, the table shows the following information:
 
@@ -511,7 +755,7 @@ Shows the amount of CPU time \(in ms\) the task has used in SAP HANA.
 > ### Note:  
 > You can see this information:
 > 
-> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
 > 
 > -   And if the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
 > 
@@ -625,7 +869,7 @@ Shows the SAP HANA database technical name of the target table.
 Shows a link you can click to view all the statements of the task in the *Statements* tab, if the information is available.
 
 > ### Note:  
-> -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+> -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
 > 
 > -   However, as statements are traced for a limited period, you may not be able to see the statements used in the task.
 
@@ -657,6 +901,18 @@ Shows the identifier of the run task.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Start Date*
+
+</td>
+<td valign="top">
+
+Shows at which date the task has started to run.
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
@@ -664,9 +920,9 @@ Shows the identifier of the run task.
 
 
 
-<a name="loio28910cded17a42a0bf16225309cb8bf6__section_fyv_twn_wtb"/>
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab"/>
 
-## Statements
+## Statements Logs Tab
 
 In *Logs* \> *Statements*, the table shows the following information, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
 
@@ -674,6 +930,8 @@ In *Logs* \> *Statements*, the table shows the following information, depending 
 
 -   If the option *Enable Expensive Statement Tracing* is enabled, you can see all the database statements that exceed the specified thresholds.
 
+
+See [Configure Monitoring](configure-monitoring-9cd0691.md).
 
 
 <table>
@@ -798,7 +1056,7 @@ Shows the name of the schema in which the statement is run.
 Shows the maximum amount of memory \(in MiB\) the statement has used during the runtime in SAP HANA.
 
 > ### Note:  
-> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
 > 
 > Otherwise, no number is displayed.
 
@@ -817,7 +1075,7 @@ Shows the maximum amount of memory \(in MiB\) the statement has used during the 
 Shows the amount of CPU time \(in ms\) the statement has used in SAP HANA.
 
 > ### Note:  
-> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
 > 
 > Otherwise, no number is displayed.
 
@@ -839,7 +1097,7 @@ Shows the amount of CPU time \(in ms\) the statement has used in SAP HANA.
 Shows the *More* link that you can click to view the complete SQL statement.
 
 > ### Note:  
-> For MDS queries - If you’ve enabled the tracing of MDS information \(see [Analyze Monitoring Data in a Space](analyze-monitoring-data-in-a-space-9cd0691.md)\), the payload of the MDS query that is run by SAP Analytics Cloud is displayed. If identified in the payload, the following information is also displayed: story ID, story name and data sources. You can copy or download the displayed information.
+> For MDS queries - If you’ve enabled the tracing of MDS information \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\), the payload of the MDS query that is run by SAP Analytics Cloud is displayed. If identified in the payload, the following information is also displayed: story ID, story name and data sources. You can copy or download the displayed information.
 
 
 
@@ -889,7 +1147,7 @@ If the statement is related to a task, it shows the identifier of the task withi
 </td>
 <td valign="top">
 
-If the statement exceeds the thresholds specified in the option *Enable Expensive Statement Tracing* in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
+If the statement exceeds the thresholds specified in the option *Enable Expensive Statement Tracing* in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring* \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\):
 
 -   Shows the name of the elastic compute node if the statement is run on an elastic compute node.
 
@@ -936,10 +1194,34 @@ If the statement has an out-of-memory error, it shows the name of the workload c
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Statement ID*
+
+</td>
+<td valign="top">
+
+Shows the identifier of the statement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Start Date*
+
+</td>
+<td valign="top">
+
+Shows at which date the statement has started to run.
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
-> Data on statements are kept for a time that depends on the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. As a certain number of statements are kept \(30.000 by default\), if very low thresholds are set, the time period may be very low \(for example, only a few hours\). To keep the statements for a longer time, the thresholds should be set accordingly.
+> Data on statements are kept for a time that depends on the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring* \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\). As a certain number of statements are kept \(30.000 by default\), if very low thresholds are set, the time period may be very low \(for example, only a few hours\). To keep the statements for a longer time, the thresholds should be set accordingly.
 
 
 

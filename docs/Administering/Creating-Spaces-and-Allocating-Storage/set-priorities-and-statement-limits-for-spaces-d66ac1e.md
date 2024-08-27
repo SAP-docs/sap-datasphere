@@ -1,8 +1,10 @@
 <!-- loiod66ac1efb5054068a104c4559b72d272 -->
 
-# Set a Priority and Statement Limits for a Space
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-Use the properties in the *Workload Management* section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.
+# Set Priorities and Statement Limits for Spaces
+
+Prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.
 
 
 
@@ -10,11 +12,14 @@ Use the properties in the *Workload Management* section to prioritize between sp
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it. Then, select *Workload Management*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*, then click on the row of the space for which you want to edit the properties.
 
-2.  To prioritize between spaces, enter in the *Space Priority* section the prioritization of this space when querying the database. You can enter a value from 1 \(lowest priority\) to 8 \(highest priority\). The default value is 5. In situations where spaces are competing for available threads, those with higher priorities have their statements run before those of spaces with lower priorities.
+    > ### Note:  
+    > You can search for a space based on its ID by entering one or more characters in the *Search* field. Only the spaces whose space ID includes the entered characters are displayed in the table.
 
-3.  To manage other workload parameters, you can select either of the following in the *Space Configuration* dropdown list:
+2.  To prioritize between spaces, specify in the *Space Priority* section the prioritization of this space when querying the database. You can choose a value from 1 \(lowest priority\) to 8 \(highest priority\). The default value is 5. In situations where spaces are competing for available threads, those with higher priorities have their statements run before those of spaces with lower priorities.
+
+3.  To manage other workload parameters, you can select either of the following in the *Configuration* dropdown list:
 
     -   *Default*. The default configuration provides generous resource limits, while preventing any single space from overloading the system. The default configuration is applied by default to new spaces.
 
@@ -201,7 +206,7 @@ Use the properties in the *Workload Management* section to prioritize between sp
         > A statement which exceeds a reject threshold is rejected with the SQL error 616: 'rejected by workload class configuration'. A statement which exceeds a queue threshold is queued for up to 10 minutes, after this time the statement is rejected with the SQL error 616: 'queue wait timeout exceeded'. For more information, see [Properties for Workload Classes and Mappings](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/3ae17c3b1d6c4adea6f0ddfec3041dd4.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
 
         > ### Note:  
-        > If too many statements are rejected, we recommend you to do these two actions:
+        > If too many statements are rejected, we recommend that you to perform these two actions:
         > 
         > -   **Decrease the total statement thread limit for the spaces which consume a large amount of CPU time**.
         > 
@@ -225,6 +230,9 @@ Use the properties in the *Workload Management* section to prioritize between sp
         >     You can adjust the task schedules in the *Data Integration Monitor*. See [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:.
 
 
-4.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.
+4.  Click *Save*. The changes are reflected in the space details page in read-only.
+
+    > ### Note:  
+    > You can use the SAP Datasphere command line interface, `datasphere`, to set space priorities and statement limits for spaces. See [Manage Space Priorities and Statement Limits via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/9e3537b72e6c445d9f34201df650735b.html "You can use the SAP Datasphere datasphere command line interface to set space priorities and statement limits for spaces.") :arrow_upper_right:.
 
 

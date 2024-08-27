@@ -176,6 +176,20 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
+    Release State
+    
+    </td>
+    <td valign="top">
+    
+    Specifies whether the object is released, providing modelers and consumers with confidence that it will remain available in its current form for the foreseeable future. 
+
+    For more information, see [Releasing Stable Views for Consumption](releasing-stable-views-for-consumption-5b99e9b.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Language
     
     </td>

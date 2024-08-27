@@ -19,3 +19,5 @@ You can only display the connection. Here, you can copy the SAP BW service key, 
 
 The connection type SAP BW bridge connection doesn’t show up in any other space, it cannot be modified, and you cannot create such a connection yourself.
 
+SAP BW bridge connections only support remote tables and model import. Data flows and replication flows are not supported.
+

@@ -4,6 +4,10 @@
 
 You can create your own tenant in the SAP BTP Cockpit. The procedure is the same for both subscription-based and consumption-based contracts. Some details may vary depending on the chosen service plan \(free or standard\). For more information about limitations for a free plan, see SAP Note [3227267](https://launchpad.support.sap.com/#/notes/3227267).
 
+When the tenant is configured, a data center region is selected. The main role of a data center is to guarantee the uninterrupted operation of computer systems. It also provides secure storage, processing, and networking capabilities for your data. A data center refers to the physical location, which could be a building or a group of buildings, housing computer systems and their components.
+
+Each data center has multiple availability zones. Your workloads are deployed in these various zones. By distributing workloads across different zones, we ensure our services remain available, even if a specific zone experiences issues. By keeping backup data within the same data center, the latency for data transfers and access is minimized. This infrastructure strategy balances the workload and enhances performance. The zone deployment contributes to a more robust and reliable infrastructure, ensuring near-zero downtime for your critical processing needs.
+
 
 <table>
 <tr>

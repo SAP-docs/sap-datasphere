@@ -1,5 +1,7 @@
 <!-- loiobbd41b82ad4d4d9ba91341545f0b37e7 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Create a Space
 
 Create a space, allocate storage, and set the space priority and statement limits.
@@ -196,11 +198,7 @@ Create a space, allocate storage, and set the space priority and statement limit
 
     For more information, see [Allocate Storage to a Space](allocate-storage-to-a-space-f414c3d.md).
 
-5.  \[optional\] Use the properties in the *Workload Management* section to prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.
-
-    For more information, see [Set a Priority and Statement Limits for a Space](set-a-priority-and-statement-limits-for-a-space-d66ac1e.md).
-
-6.  \[optional\] Use the remaining sections to further configure the space.
+5.  \[optional\] Use the remaining sections to further configure the space.
 
     -   *Data Access*/*Data Consumption*: Modify the following property, if appropriate:
 
@@ -245,9 +243,9 @@ Create a space, allocate storage, and set the space priority and statement limit
 
     -   *Auditing*/*Space Audit Settings* - Use the properties in the *Space Audit Settings* section to enable audit logging for the space. See [Enable Audit Logging](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:.
 
-7.  Click *Deploy* to deploy your space to the database.
+6.  Click *Deploy* to deploy your space to the database.
 
-8.  Add your space to one or more scoped roles by doing one of the following actions:
+7.  Add your space to one or more scoped roles by doing one of the following actions:
 
     -   Add your space to an existing scoped role \(see [Add Spaces to a Scoped Role](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb)\).
     -   Create a scoped role and add your space and at least one user to the scoped role \(see [Create a Scoped Role](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_z4m_mpj_zyb)\).
@@ -255,5 +253,9 @@ Create a space, allocate storage, and set the space priority and statement limit
     For more information, see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
     All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\). Either an administrator or a user with space administrator privileges can do so.
+
+8.  \[optional\] The properties in the *Workload Management* section are set with their default values. To change them, go in the side navigation area and click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*.
+
+    For more information, see [Set Priorities and Statement Limits for Spaces](set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
 
 

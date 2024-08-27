@@ -154,5 +154,5 @@ Monitor an elastic compute node to see for example all its start and stop runs o
 > ### Note:  
 > To monitor the start and stop runs for all elastic compute nodes, you can click *View Logs* in the left-hand area of the *Space Management*.
 
-You can monitor key figures related to an elastic compute node \(such as start and end time of the last run; amount of memory used for data replication\), in a dedicated tab of the *System Monitor* \(see [Monitoring Elastic Compute Nodes](../Monitoring-SAP-Datasphere/monitoring-elastic-compute-nodes-ffa92d9.md)\).
+You can monitor key figures related to an elastic compute node \(such as start and end time of the last run; amount of memory used for data replication\), in the *Elastic Compute Nodes* tab of the *System Monitor*  \(see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md)\).
 

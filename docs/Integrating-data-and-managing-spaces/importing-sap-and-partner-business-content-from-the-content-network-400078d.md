@@ -94,6 +94,7 @@ We also provide content for download at our [Community Content](https://github.c
         > ### Note:  
         > -   The *Including permissions* option is not supported for SAP Datasphere.
         > -   Connections are never overwritten by an import.
+        > -   When overwriting objects with a release state, the objects you are importing must have the same release state or another release state that is consistent with their lifecycle \(see [Releasing Stable Views for Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5b99e9bcb5964ab69b094215d285feb1.html "To encourage confidence in the stability of your views and to guarantee backward compatibility when they are updated, you can set their Release State to Released. Once a view is released, it must continue to provide the same output columns until it is replaced by a successor, at which point it can be deprecated and, eventually, decommissioned.") :arrow_upper_right:\).
 
 
 
@@ -128,6 +129,18 @@ We also provide content for download at our [Community Content](https://github.c
     </td>
     <td valign="top">
     
+    Select the space or spaces to import your content into in the *Space Mapping* field. You must choose one space for each space listed in the package:
+
+    -   You can select any space for which you have the *Spaces.Update* permission to import the space's content into.
+
+        If you have the *Spaces.Manage* permission, then you can choose to import into any space in your tenant.
+
+    -   If the space does not exist in your tenant and you have the *Spaces.Create* permission, then you are invited to create it by default.
+    -   You cannot "merge" content from two or more spaces included in your package. You must select a separate space for each space listed.
+
+    > ### Note:  
+    > Choosing space mappings is only possible if the source objects for any shared objects are included in the package. For example if your package contains shared objects in `Space A` that have been shared from `Space B`, then the source objects from `Space B` must be included in the package. If the sources of any shared objects cannot be resolved in the package, then the package must be imported into spaces with the same technical names as the spaces listed in the package.
+
     Review the objects to be imported. All objects are imported by default.
 
     You can select and deselect individual objects, or types of objects. The *Impacted Object* column shows warnings for objects that will overwrite content on your system.

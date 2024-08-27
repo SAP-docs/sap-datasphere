@@ -6,10 +6,9 @@
 
 If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.
 
-> ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
-
 This topic contains the following sections:
+
+-   [Prerequisites](using-a-cloud-storage-provider-as-the-target-43d93a2.md#loio43d93a27150a4a218e3df14e3abdf456__section_ReplTargets_NonSAPTargets_Prerequisites)
 
 -   [Available Targets](using-a-cloud-storage-provider-as-the-target-43d93a2.md#loio43d93a27150a4a218e3df14e3abdf456__section_ReplTargets_NonSAPTargets)
 
@@ -17,6 +16,19 @@ This topic contains the following sections:
 
 -   [Files](using-a-cloud-storage-provider-as-the-target-43d93a2.md#loio43d93a27150a4a218e3df14e3abdf456__section_ReplFlow_Files)
 
+-   [Naming Conventions](using-a-cloud-storage-provider-as-the-target-43d93a2.md#loio43d93a27150a4a218e3df14e3abdf456__section_ReplFlow_NonSAP_Targets_Naming)
+
+
+
+
+<a name="loio43d93a27150a4a218e3df14e3abdf456__section_ReplTargets_NonSAPTargets_Prerequisites"/>
+
+## Prerequisites
+
+> ### Note:  
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+
+You have a folder in the target environment \(object store provider\) into which the data can be replicated.
 
 
 
@@ -194,4 +206,38 @@ Each file contains the source columns as defined in the mapping for the replicat
 
 -   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is not populated for all source systems \(for example, ABAP\).
 -   *\_\_timestamp*: The UTC date and time the system wrote the row.
+
+
+
+<a name="loio43d93a27150a4a218e3df14e3abdf456__section_ReplFlow_NonSAP_Targets_Naming"/>
+
+## Naming Conventions
+
+The name of the **target container** must meet the following requirements:
+
+-   Length must be from 1 to 127 characters
+
+-   The following ASCII characters are allowed:
+
+    -   Lower case \(a-z\) and upper-case letters \(A-Z\)
+
+    -   Numbers \(0-9\)
+
+    -   Space \(<blank\>\)
+
+    -   Period \(.\)
+
+    -   Slash \(/\)
+
+    -   Hyphen \(-\)
+
+    -   Underscore \(\_\)
+
+    -   Apostrophe \('\)
+
+    -   Parentheses \( \( and \) \)
+
+
+-   Leading and Trailing spaces are not allowed.
+
 

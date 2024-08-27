@@ -262,7 +262,7 @@ More Information
 </td>
 <td valign="top" rowspan="3">
 
-[Analyze Monitoring Data in a Space](Monitoring-SAP-Datasphere/analyze-monitoring-data-in-a-space-9cd0691.md)
+[Configure Monitoring](Monitoring-SAP-Datasphere/configure-monitoring-9cd0691.md)
 
 </td>
 </tr>

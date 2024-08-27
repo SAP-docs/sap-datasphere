@@ -13,6 +13,8 @@ This topic contains the following sections:
 -   [Supported Features](apache-kafka-connections-1992c6b.md#loio1992c6b7154c4bc080d83c8977382ff4__Kafka_usage)
 -   [Configuring Connection Properties](apache-kafka-connections-1992c6b.md#loio1992c6b7154c4bc080d83c8977382ff4__connection_properties)
 
+For information about the required prerequisites, see [Prepare Connectivity to Apache Kafka](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/1483cebf45a242aca94236240d94d2c7.html "To be able to use a connection to Apache Kafka (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:.
+
 
 
 <a name="loio1992c6b7154c4bc080d83c8977382ff4__Kafka_usage"/>

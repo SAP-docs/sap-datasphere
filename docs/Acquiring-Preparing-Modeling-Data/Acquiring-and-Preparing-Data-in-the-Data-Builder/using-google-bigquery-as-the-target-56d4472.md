@@ -32,6 +32,8 @@ The system always uses **write mode** *Append*.
 
 The *Truncate* setting is not available.
 
+The target container is a Google BigQuery **dataset**.
+
 
 
 <a name="loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetTables"/>

@@ -11,5 +11,5 @@ The elastic compute nodes will take over the read peak loads and support the SAP
 
 Using elastic compute nodes can lower the overall cost of ownership: instead of sizing your tenant on the basis of the maximum load, you can use elastic compute nodes to handle short periods of exceptional peak load. For example, you can use an elastic compute node for two months in the year to support end-of-year reporting, or you can use an elastic compute node to cover a specific eight-hour period in the working day.
 
-To identify peak loads, you can look at the following areas in the *System Monitor*: out-of-memory widgets in the *Dashboard* tab, key figures in *Logs* \> *Statements*, views used in MDS statements in *Logs* \> *Statements*. See [Monitoring Elastic Compute Nodes](../Monitoring-SAP-Datasphere/monitoring-elastic-compute-nodes-ffa92d9.md).
+To identify peak loads, you can look at the following areas in the *System Monitor*: out-of-memory widgets in the *Dashboard* tab, key figures in *Logs* \> *Statements*, views used in MDS statements in *Logs* \> *Statements*. See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
 
