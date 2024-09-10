@@ -14,12 +14,10 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 -   The DW Modeler role is required to create task chains, and the additional DW Integrator role is required to set up email notification for completion of task chain runs, and to run the activity *Delete Records with Change Type "Deleted"* in the case of local table with delta capture enabled. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. In addition to these two role privileges, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members. See [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
 
--   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, an administrator must grant EXECUTE privileges to the database user for objects in the Open SQL schema space. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
+-   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the schema’s owner must grant EXECUTE privileges to the space user for objects in the Open SQL schema. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
 -   Objects must have been already deployed, so that they can be added to the task chain. Task chains must also be deployed to allow selection of tenant users or specify email addresses for notification of task chain completion.
 
--   Remote tables must not be set to real-time replication.
-
--   Views must not have parameters or data access controls assigned to them.
+-   Persisting of views may include one parameter that uses the default value defined with the view. Views must not have data access controls assigned to them.
 
 -   If a data flow that has input parameters is included in a task chain, task chain runs will use default parameter values defined for the data flow.
 -   A replication flow can be included in a task chain if all objects in the flow have load type *Initial Only*.
@@ -29,7 +27,16 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Context
 
-You can create task chains that include SAP Datasphere repository objects, that is, Remote Table Replication, View Persistency, Intelligent Lookup, Data Flow, Replication Flow \(load type *Initial Only*\), and Transformation Flow runs. You can also include non-repository objects such as SAP HANA Open SQL schema procedures. In addition, you can nest other existing task chains in new or different task chains.
+You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Intelligent Lookup, Data Flow, Replication Flow \(load type *Initial Only*\), and Transformation Flow runs. You can also include non-repository objects such as SAP HANA Open SQL schema procedures. In addition, you can nest other existing task chains in new or different task chains.
+
+> ### Note:  
+> For remote table and view objects included in a task chain, you have the option, by default, to replicate or persist the data associated with the corresponding remote tables or views. Or, you can choose to remove the replicated or persisted data by selecting that option in the *Activities* section of an object’s *Properties* detail display.
+> 
+> -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that data will be removed. If the data is being replicated via Real Time Replication, the data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table's log to indicate that the data access type has been changed when the remote table object is run.\)
+> 
+> -   For views, if you choose the *Remove Persisted Data* option, that view’s data will be removed.
+> 
+> If replication and data removal tasks are both attempted to run at the same time, the tasks are given priority based on a first-come, first served basis.
 
 When creating a task chain, you can create linear task in which one task is run after another. A succeeding task is only run once the previous task in the series has finished successfully with a *completed* status. The running of tasks in the series will not resume if the previous task has a *failed* status. You can also create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
@@ -54,7 +61,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     > ### Note:  
     > From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, and transformation flow objects that meet prerequisites and are available to be added to the task chain. From the *Others* tab, you can see the non-repository Open SQL schema procedures you can add to a task chain. For more information on adding Open SQL schema procedures from the *Others* tab, see [Running Open SQL Procedures in a Task Chain](running-open-sql-procedures-in-a-task-chain-59b9c77.md).
     > 
-    > If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
+    > For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that data will be removed. If the data is being replicated via Real Time Replication, and you choose the *Remove Replicated Data* option, that table's data will also be removed and the object’s data access method will be changed to Remote access. For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
 
 3.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* to place the new object.
 
@@ -255,6 +262,13 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   Replication Flow - Run
     -   Transformation flow - Run
     -   Local table - Delete Records with Change Type "Deleted"
+
+    > ### Note:  
+    > For remote table and view objects included in a task chain, the default option lets you replicate or persist the data associated with the remote table or view respectively. Or, you can choose to remove the replicated or persisted data.
+    > 
+    > -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that table's data will be removed. If the data is being replicated via Real Time Replication, the table's data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table log to indicate that the data access type has been changed when the remote table object is run.\)
+    > 
+    > -   For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
 
 
     

@@ -750,7 +750,7 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 </td>
 <td valign="top">
 
-Shows the amount of CPU time \(in ms\) the task has used in SAP HANA.
+Shows the maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 
 > ### Note:  
 > You can see this information:
@@ -1203,6 +1203,18 @@ If the statement has an out-of-memory error, it shows the name of the workload c
 <td valign="top">
 
 Shows the identifier of the statement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Connection ID*
+
+</td>
+<td valign="top">
+
+Shows the ID used to connect to the database.
 
 </td>
 </tr>

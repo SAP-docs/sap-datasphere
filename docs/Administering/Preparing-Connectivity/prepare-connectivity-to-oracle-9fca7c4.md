@@ -20,6 +20,12 @@ Before you can use the connection for creating views and accessing data via remo
 
 -   [Required Permissions for Oracle Trigger-Based Replication](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/bd79ed316a1447ffb1fbd3757aff9c71.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*
 
+-   If encrypted communication is used \(connection is configured to use SSL\), the server certificate must be uploaded to the Data Provisioning Agent.
+
+    To retrieve the certificate, you can use for example the following command:`openssl s_client -showcerts -servername <host>:<port> -connect <host>:<port>`
+
+    For more information about uploading the certificate to the Data Provisioning Agent, see [Configure the Adapter Truststore and Keystore](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/1d0259de04e247d994258429b34b8546.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
+
 
 
 
@@ -43,6 +49,8 @@ Before you can use the connection for data flows, the following is required:
     For more information, see [Upload Third-Party ODBC Drivers \(Required for Data Flows\)](upload-third-party-odbc-drivers-required-for-data-flows-b9b5579.md).
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
+
+    To retrieve the certificate, you can use for example the following command:`openssl s_client -showcerts -servername <host>:<port> -connect <host>:<port>`
 
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 

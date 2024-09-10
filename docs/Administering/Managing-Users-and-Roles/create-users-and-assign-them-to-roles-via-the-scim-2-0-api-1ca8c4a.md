@@ -1,5 +1,7 @@
 <!-- loio1ca8c4a9467f43df9ae6d4ed3734f05a -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Create Users and Assign Them to Roles via the SCIM 2.0 API
 
 You can create, read, update, and delete users and add them to roles via the SCIM 2.0 API.
@@ -147,8 +149,11 @@ password
 Syntax of GET request:
 
 ```
-https://<tenant-url>/oauth/token?grant_type=client_credentials
+https://<token_url>/oauth/token?grant_type=client_credentials
 ```
+
+> ### Note:  
+> You can find the token URL in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration* \> *OAuth Clients* \> *Token URL*.
 
 The response body returns the access token, which you'll then use as the bearer token to obtain the csrf token.
 
@@ -252,7 +257,7 @@ key
 Syntax of GET request:
 
 ```
-<tenant-url>/api/v1/csrf
+<tenant_url>/api/v1/csrf
 ```
 
 The CSRF token is returned in the `x-csrf-token` response header. This token can then be included in the POST, PUT, PATCH, or DELETE request in the <code>x-csrf-token:<i class="varname">&lt;token&gt;</i></code> header.

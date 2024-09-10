@@ -4,7 +4,7 @@
 
 # Finding and Accessing Data in the Catalog
 
-Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators \(KPIs\), listed marketplace data products, or data providers.
+Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators \(KPIs\), Marketplace data products, or data providers.
 
 The catalog provides an effective data governance strategy by bringing together an organized inventory of business metadata and data assets to enable business and technical users to unlock the full potential of their enterprise data. The catalog is a central place to discover, classify, understand, and prepare all the data in your enterprise.
 
@@ -24,7 +24,7 @@ You can search for assets by clicking <span class="SAP-icons-V5"></span>\(*Ca
 
 ## Search by Entering a String
 
-You can find objects globally by using the search bar and entering all or part of the characters in an asset, term, KPI, listed marketplace data product, or data provider. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+You can find objects globally by using the search bar and entering all or part of the characters in an asset, term, KPI, listed Marketplace data product, or data provider. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
 As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
 
@@ -73,12 +73,12 @@ Shows only assets. An asset is any data or analytic object made available in the
 <tr>
 <td valign="top">
 
-Data Products
+Marketplace Data Products
 
 </td>
 <td valign="top">
 
-Shows only listed data products. Data products must be listed in Data Marketplace before they appear in the catalog. A data product can be obtained through internal means or by acquiring free or purchased data from a third-party provider, which can then be utilized within the product.
+Shows only listed Marketplace data products that are created and used within SAP Datasphere. Data products must be listed in Data Marketplace before they appear in the catalog. A data product can be obtained through internal means or by acquiring free or purchased data from a third-party provider, which can then be utilized within the product.
 
 </td>
 </tr>

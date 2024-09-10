@@ -175,8 +175,6 @@ Clamp Decimal Floating Point Data Types
 
 Clamping is enabled by default and cannot be switched off. 
 
-For more information, see [Using Confluent Kafka As the Target](using-confluent-kafka-as-the-target-74b3c95.md).
-
 </td>
 </tr>
 </table>

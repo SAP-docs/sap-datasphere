@@ -147,7 +147,7 @@ All roles except *DW Consumer*
 
 <span class="SAP-icons-V5"></span>\(*Catalog*\)
 
-See [Governing and Publishing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "The SAP Datasphere catalog is the central place to discover, enrich, classify, and publish high-quality, trusted data and analytic assets from across your enterprise.") :arrow_upper_right:
+See [Governing and Publishing in Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "The SAP Datasphere catalog is the central place to discover, enrich, classify, and publish high-quality, trusted data and analytic assets and data products from across your enterprise.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1020,7 +1020,7 @@ When creating a custom role for using or administering the catalog, you must set
 To be able to access the *Catalog* app from the side navigation, all custom catalog roles need the *Read* permission on Catalog Asset.
 
 > ### Note:  
-> All custom catalog roles need the SAP Datasphere read permission on Space Files to allow users to mark assets, terms, and KPIs as their favorite.
+> All custom catalog roles need the SAP Datasphere read permission on**Space Files** to allow users to mark assets, terms, and KPIs as their favorite.
 
 
 <table>
@@ -1051,7 +1051,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), listed marketplace data products, or data providers.") :arrow_upper_right:
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), Marketplace data products, or data providers.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1742,6 +1742,33 @@ See[Define the Key Performance Indicator Template](https://help.sap.com/viewer/9
 <td valign="top">
 
 Catalog KPI Template: `(-RU-----)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Marketplace Data Products
+
+</td>
+<td valign="top">
+
+Search for a data marketplace data product, view the detailed information for it, and install it to a space.
+
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), Marketplace data products, or data providers.") :arrow_upper_right: and  <?sap-ot O2O class="- topic/xref " href="92c35efd6a4945a1a78250539aee9a51.xml" text="" desc="" xtrc="xref:99" xtrf="file:/home/builder/src/dita-all/mdc1723708216287/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/2d8b7d04dcae402f911d119437ce0a74.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+</td>
+<td valign="top">
+
+Spaces: `(-R------)`
+
+Space Files: `(CRUD----)`
+
+Data Warehouse Remote Connection: `(CRUD----)`
+
+Data Warehouse Data Integration: `(-RU-----)`
+
+Data Warehouse Data Builder: `(CRU-----)`
 
 </td>
 </tr>

@@ -39,10 +39,6 @@ DW Space Administrators can turn on the toggle to enable content translation for
 
 4.  Select a language as *Source Language*. For more information on available languages, see [Learn About the Translation Process](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/8310076258a94a4194a926506b80c390.html) in SAP Analytics Cloud.
 
-> ### Caution:  
-> -   If you enable translation and deploy the space, you won't be able to disable it.
-> -   The source language cannot be changed.
-
 
 
 <a name="loiofe829debe389450394cf7a15860e2caa__section_addobjects"/>

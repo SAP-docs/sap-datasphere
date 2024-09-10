@@ -81,6 +81,7 @@
         -   [Define Filters](Acquiring-and-Preparing-Data-in-the-Data-Builder/define-filters-5a6ef36.md)
         -   [Define Mapping](Acquiring-and-Preparing-Data-in-the-Data-Builder/define-mapping-2c7948f.md)
         -   [Add Customer-Specific Projection Logic](Acquiring-and-Preparing-Data-in-the-Data-Builder/add-customer-specific-projection-logic-970636e.md)
+        -   [Using a Cloud Storage Provider As the Source](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-a-cloud-storage-provider-as-the-source-4d481a2.md)
         -   [Using an Object Without Primary Key As the Source](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-an-object-without-primary-key-as-the-source-2267a9f.md)
         -   [Using a Cloud Storage Provider As the Target](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-a-cloud-storage-provider-as-the-target-43d93a2.md)
         -   [Using Google BigQuery As the Target](Acquiring-and-Preparing-Data-in-the-Data-Builder/using-google-bigquery-as-the-target-56d4472.md)

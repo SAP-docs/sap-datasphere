@@ -112,6 +112,11 @@ Enter the host name or IP address on which the remote Oracle database is running
 
 Enter the Oracle database server port number. 
 
+> ### Note:  
+> The port number can vary depending on whether SSL is used or not.
+
+
+
 </td>
 </tr>
 <tr>

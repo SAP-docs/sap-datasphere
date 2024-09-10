@@ -5,7 +5,10 @@
 The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.
 
 > ### Note:  
-> This feature is only available in an SAP S/4HANA Cloud 3-system landscape. For information about system landscapes, see: [System Landscapes in SAP S/4HANA Cloud](https://help.sap.com/docs/SAP_S4HANA_CLOUD/a630d57fc5004c6383e7a81efee7a8bb/aa60b129af7b4ce8ae052618c8315d29.html) in the *SAP S/4HANA Cloud* documentation.
+> This feature requires developer extensibility in SAP S/4HANA Cloud \(including ABAP development tools\), which is only available in an 3-system landscape. For more information, see the *SAP S/4HANA Cloud* documentation:
+> 
+> -   [Developer Extensibility](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/e1059ff581854a699f15734049f14293.html)
+> -   [System Landscapes in SAP S/4HANA Cloud](https://help.sap.com/docs/SAP_S4HANA_CLOUD/a630d57fc5004c6383e7a81efee7a8bb/aa60b129af7b4ce8ae052618c8315d29.html)
 
 For both consumption scenarios using the SQL service, data federation and data replication, privileged data access needs to be enabled for communication users in SAP S/4HANA Cloud.
 

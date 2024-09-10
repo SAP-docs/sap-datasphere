@@ -13,6 +13,7 @@ Users with the *DW Administrator* role can create OAuth2.0 clients and provide t
 Users that have access to an OAuth client can:
 
 -   [Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:
+-   Log into the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\)
 -   [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from a view exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:
 -   [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API.") :arrow_upper_right: 
 
@@ -49,7 +50,7 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    Name
+    *Name*
     
     </td>
     <td valign="top">
@@ -61,7 +62,7 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    OAuth Client ID
+    *OAuth Client ID*
     
     </td>
     <td valign="top">
@@ -73,15 +74,36 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    Purpose
+    *Purpose*
     
     </td>
     <td valign="top">
     
-    Select *Interactive Usage*.
+    Select *Interactive Usage* or *API Access*.
 
-    > ### Note:  
-    > The *API Access* purpose is not used in SAP Datasphere.
+    If you select *API Access*, you can then select *User Provisioning* from the *Access* dropdown list.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Authorization Grant*
+    
+    </td>
+    <td valign="top">
+    
+    Depending on the purpose selected, the following authorization grants are avaialble:
+
+    -   For the purpose *Interactive Usage*, only *Authorization Code* is selected and cannot be changed.
+
+    -   For the purpose *API Access*, select one of these options:
+
+        -   *SAML2.0 Bearer* - Select this option when the user context is passed or to control access based on user permissions.
+
+        -   *Client Credentials* - Select this option when the client application is accessing its own resources or when the permission to access resources has been granted by the resource owner via another mechanism.
+
+
 
 
     
@@ -90,19 +112,7 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    Authorization Grant
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Only the *Authorization Code* grant is available.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Secret
+    *Secret*
     
     </td>
     <td valign="top">
@@ -122,7 +132,7 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    Redirect URI
+    *Redirect URI*
     
     </td>
     <td valign="top">
@@ -134,6 +144,9 @@ Users that have access to an OAuth client can:
     -   When working with the `datasphere` command line interface \(see [Accessing SAP Datasphere via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/3f9a42ccde6b4b6aba121e2aab79c36d.html "You can use our command line interface, datasphere, to connect to SAP Datasphere and manage certain types of objects.") :arrow_upper_right:\), set this value to `http://localhost:8080/`.
     -   When connecting SAP Analytics Cloud to SAP Datasphere via an OData services connection \(see [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from a view exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:\), use the *Redirect URl* provided in the SAP Analytics Cloud connection dialog.
 
+    > ### Note:  
+    > *Redirect URI* is not available if you've selected *API Access* as the purpose.
+
 
     
     </td>
@@ -141,7 +154,7 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    Token Lifetime
+    *Token Lifetime*
     
     </td>
     <td valign="top">
@@ -155,7 +168,7 @@ Users that have access to an OAuth client can:
     <tr>
     <td valign="top">
     
-    Refresh Token Lifetime
+    *Refresh Token Lifetime*
     
     </td>
     <td valign="top">

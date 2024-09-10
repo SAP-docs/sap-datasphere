@@ -14,6 +14,9 @@ Before you can use the connection for creating views and accessing data via remo
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
 
+    > ### Note:  
+    > The root certificate `GTS Root R1` which is valid until 2036 is required. In your browser, open [https://cloud.google.com/](https://cloud.google.com/) to export it \(see SAP Note [3424000](https://me.sap.com/notes/3424000)\).
+
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 

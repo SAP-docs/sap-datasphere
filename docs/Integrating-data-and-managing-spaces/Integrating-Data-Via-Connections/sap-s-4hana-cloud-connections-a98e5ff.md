@@ -47,16 +47,19 @@ You can use remote tables imported from the connection either to access data dir
 
 You can access the following data:
 
--   for federation and replication: ABAP CDS Views exposed as OData services for data extraction \(access via Cloud Data Integration\)
-
-    For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
--   for federation: standard and custom CDS view entities that are exposed using the SQL service from SAP S/4HANA Cloud
+-   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud \(**recommended for federation scenarios**\)
 
     For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:.
 
     > ### Note:  
     > On the *Sources* tab of the remote-table-related Data Builder editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
+
+-   for federation and replication: ABAP CDS Views exposed as OData services for data extraction. Data is accessed via Cloud Data Integration \(**legacy**\)
+
+    > ### Note:  
+    > This legacy option is still supported, however we recommend using the ABAP SQL service for federation \(if available\) and replication flows for replication.
+
+    For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
 
 
 
@@ -114,9 +117,16 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow. 
+You can use the connection to add source objects to a replication flow. \(**recommended for replication scenarios**\)
 
 You can replicate the following data:
+
+-   standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud
+
+    For more information, see [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html).
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
 
 -   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
 
@@ -130,13 +140,6 @@ You can replicate the following data:
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
 
--   standard and custom CDS view entities that are exposed using the SQL service from SAP S/4HANA Cloud
-
-    For more information, see [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html).
-
-    > ### Note:  
-    > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
-
 
 
 
@@ -145,9 +148,9 @@ You can replicate the following data:
 </table>
 
 > ### Note:  
-> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\).
+> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows.
 > 
-> Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object in the source we strongly recommend to only use remote tables or replication flows and not both.
+> Regardless of whether you use the same connection or two separate connections, for replicating data from a dedicated source object in the source we strongly recommend to only use remote tables or replication flows and not both. Generally, for replication scenarios, we recommend to use replication flows.
 
 
 
@@ -269,6 +272,10 @@ You can select:
 
 -   *X.509 Client Certificate* 
 -   *User Name And Password* for basic authentication
+
+    > ### Note:  
+    > For federated access with remote tables using the ABAP SQL service, authentication with *User Name and Password* is required.
+
 
 The default is *X.509 Client Certificate*.
 
@@ -415,7 +422,9 @@ Select the middleware to use when connecting to and accessing SAP S/4HANA Cloud:
 -   *Direct*: if you want to federate data from the source objects of the connection and access them remotely in the source system using the ABAP SQL service.
 
     > ### Note:  
-    > This option is supported for authentication type *User Name And Password*.
+    > -   We recommend this option for federation scenarios.
+    > 
+    > -   This option is supported for authentication type *User Name And Password*.
 
 
 
@@ -432,9 +441,9 @@ Select the middleware to use when connecting to and accessing SAP S/4HANA Cloud:
 
 \[read-only\] Displays how data from source objects can be accessed: 
 
--   *Remote and Replication*: if you selected data provisioning option *Data Provisioning Agent*.
+-   *Remote and Replication*: if you selected data provisioning option *Data Provisioning Agent* \(using the SAP HANA smart data integration CloudDataIntegrationAdapter\).
 
--   *Remote Only*: if you selected data provisioning option *Direct*.
+-   *Remote Only*: if you selected data provisioning option *Direct* \(using the ABAP SQL service\).
 
 
 
@@ -504,6 +513,11 @@ Description
 
 To enable*Remote Tables*, complete the connection properties in the *Remote Tables* section. 
 
+> ### Note:  
+> For federation scenarios, we recommend using the ABAP SQL service \(data provisioning option *Direct*\).
+
+
+
 </td>
 </tr>
 <tr>
@@ -539,6 +553,11 @@ To enable *Model Import*, select a Data Provisioning Agent.
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. 
+
+> ### Note:  
+> For replication scenarios, we recommend using replication flows.
+
+
 
 </td>
 </tr>

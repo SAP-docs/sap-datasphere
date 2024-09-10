@@ -47,6 +47,19 @@ When you resume the flow, the system replicates all source data changes that hap
 
 
 
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_eqf_clj_kcc"/>
+
+## Monitoring Premium Outbound Volume
+
+When you open the *Flows* monitor for a replcation flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for all replication flow runs with premium outbound integration \(replication to a non-SAP target\) in this tenant during the last 90 days.
+
+> ### Note:  
+> The value may change significantly from one day to the other, for example when you run an initial load for a replication flow, or when an initial load drops out of the statistics because it happened more than 90 days ago.
+
+The value is updated once per hour.
+
+
+
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Stopping"/>
 
 ## Stopping a Replication Flow Run

@@ -1,5 +1,7 @@
 <!-- loio0cf11ede362b4f4186c459097464943d -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Stop a Running Statement
 
 Using a database analysis user, you can stop a statement that is currently running.
@@ -78,6 +80,11 @@ CONNECTION\_ID
 <td valign="top">
 
 Enter the ID of the connection to the database, which corresponds to the statement that you want to stop.
+
+> ### Note:  
+> You can find the connection ID in <span class="FPA-icons-V3"></span> \(*System Monitor*\)** \> *Logs* \> *Statements*, then the column *Connection ID*.
+
+
 
 </td>
 </tr>
