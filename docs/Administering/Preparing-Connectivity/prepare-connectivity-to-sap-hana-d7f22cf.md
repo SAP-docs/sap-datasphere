@@ -12,6 +12,8 @@ To be able to successfully validate and use a connection to SAP HANA Cloud or SA
 
 A DW administrator has uploaded the server certificate to SAP Datasphere.
 
+A DW administrator has uploaded the TLS server certificate `DigiCert Global Root CA` \(`DigiCertGlobalRootCA.crt.pem`\).
+
 For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 

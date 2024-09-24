@@ -8,5 +8,5 @@ You can delete a replication flow if you do not need it anymore and thus free up
 
 In the Data Builder, select the relevant replication flow and choose <span class="FPA-icons-V3"></span> \(Delete\).
 
-You can only delete replication flows that have the status *Completed* or *Stopped*.
+If you delete a running replication flow, the system first stops the flow and then deletes it. However, the recommended approach is to first stop the replication flow by choosing *Stop* and then delete it.
 

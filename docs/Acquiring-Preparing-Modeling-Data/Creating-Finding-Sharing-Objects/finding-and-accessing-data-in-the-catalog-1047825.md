@@ -4,7 +4,7 @@
 
 # Finding and Accessing Data in the Catalog
 
-Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators \(KPIs\), Marketplace data products, or data providers.
+Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators \(KPIs\), Marketplace data products, or data providers. For more information about these objects, see [Catalog Concepts](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/5772386034824e2ba7146fe7b3109d21.html "Learn about the major concepts related to the catalog and data governance.") :arrow_upper_right:.
 
 The catalog provides an effective data governance strategy by bringing together an organized inventory of business metadata and data assets to enable business and technical users to unlock the full potential of their enterprise data. The catalog is a central place to discover, classify, understand, and prepare all the data in your enterprise.
 
@@ -280,5 +280,5 @@ You can use the Datarade Data Finder website to search and request additional th
 
 [Evaluating Catalog Assets](evaluating-catalog-assets-dc061a2.md "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.")
 
-[Evaluating your Data Product](../evaluating-your-data-product-335f49b.md "Each data product has a dedicated page that describes the data product in detail to allow a transparent elaboration.")
+[Evaluating Marketplace Data Products](evaluating-marketplace-data-products-92c35ef.md "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.")
 

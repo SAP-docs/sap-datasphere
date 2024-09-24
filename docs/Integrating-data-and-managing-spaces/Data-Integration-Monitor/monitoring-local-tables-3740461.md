@@ -47,7 +47,7 @@ Displays the technical name or the business name of the table, depending on how 
 </td>
 <td valign="top">
 
-Indicates the number of records contained in the table
+Indicates the number of records contained in the table.
 
 </td>
 </tr>

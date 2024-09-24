@@ -4,7 +4,7 @@
 
 # Create Users and Assign Them to Roles via the SCIM 2.0 API
 
-You can create, read, update, and delete users and add them to roles via the SCIM 2.0 API.
+You can create, read, modify and delete users and add them to roles via the SCIM 2.0 API.
 
 This topic contains the following sections:
 
@@ -17,6 +17,7 @@ This topic contains the following sections:
 -   [Modify a User](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_zq5_rlp_tbc)
 -   [Delete a User](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jhl_xlp_tbc)
 -   [Optional User Properties](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_vpq_skn_xbc)
+-   [Bulk Operations](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_hqv_wtg_qcc)
 -   [Get Information About the SCIM API](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_n1l_vdy_rbc)
 
 
@@ -31,7 +32,7 @@ SAP Datasphere exposes a REST API based on the System for Cross-domain Identity 
 
 Using this API, you can perform the following actions:
 
--   Create, read, update, patch, delete users.
+-   Create, read, modify and delete users.
 
 -   Add users to existing scoped or global roles.
 
@@ -53,7 +54,10 @@ To access the API specification and try out the functionality in SAP Analytics C
 
 ## Log in with a OAuth Client
 
-Beforehand you can log in with a Oauth client, a user with the administrator role must create an OAuth2.0 client in your SAP Datasphere tenant and provide you with the OAuth client ID and secret parameters \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)\).
+Beforehand you can log in with a Oauth client, a user with the administrator role must create an OAuth2.0 client in your SAP Datasphere tenant and provide you with the OAuth client ID and secret parameters.
+
+> ### Note:  
+> The OAuth client must be configured with the *Purpose* *API Access* and the *Access* *User Provisioning* \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)\).
 
 To log in to the OAuth client, send a GET request with the following elements:
 
@@ -682,6 +686,8 @@ Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/
 > If you are using SAML authentication, `idpUserId` should be set to the property you are using for your SAML mapping. For example, the user's *USER ID*, *EMAIL*, or *CUSTOM SAML MAPPING*. If your SAML mapping is set to *EMAIL*, the email address you add to `idpUserId` must match the email address you use for `email`.
 > 
 > To find this information, log on to SAP Datasphere and go to *\(Security\)* \> *\(Users\)*.
+> 
+> The userName attribute can only contain alphanumeric and underscore characters. The maximum length is 20 characters.
 
 > ### Note:  
 > When creating or modifying a user, you can add optional properties to the user.
@@ -876,7 +882,7 @@ https://<tenant_url>/api/v1/scim2/Users/<user ID>
 > ### Note:  
 > If you are using SAML authentication, and you are using *USER ID* as your SAML mapping, you cannot change the `userName` using this API. The `userName` you use in the request body must match the user *<ID\>*.
 > 
-> The `active` attribute is not currently used and will not activate or deactivate users.
+> You can use the `active` attribute to activate or deactivate users.
 
 > ### Note:  
 > When creating or modifying a user, you can add optional properties to the user.
@@ -1198,6 +1204,215 @@ Example:
   "systemNotificationsEmailOptIn": true,
   "marketingEmailOptIn": false
   },
+```
+
+
+
+<a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_hqv_wtg_qcc"/>
+
+## Bulk Operations
+
+To create, modify or delete users in bulk, use the POST request with the `/api/v1/scim2/Users/` endpoint and the following elements:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Request Component
+
+</th>
+<th valign="top">
+
+Setting
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Authorization
+
+</td>
+<td valign="top">
+
+type
+
+</td>
+<td valign="top">
+
+`Bearer Token`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authorization
+
+</td>
+<td valign="top">
+
+token
+
+</td>
+<td valign="top">
+
+*<access token retrieved when logging in with the OAuth client\>*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+key
+
+</td>
+<td valign="top">
+
+`x-sap-sac-custom-auth=true`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+key
+
+</td>
+<td valign="top">
+
+`x-csrf-token: csrf token value`
+
+</td>
+</tr>
+</table>
+
+The supported operations are POST, PUT, PATCH and DELETE.
+
+Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/api/v1/scim2/Users/</code>
+
+> ### Note:  
+> A maximum of 30 operations per request can be processed.
+
+The following example shows how to create two users:
+
+```
+{
+  "schemas": ["urn:ietf:params:scim:api:messages:2.0:BulkRequest"],
+  "Operations": [
+       {
+           "method": "POST",
+           "path": "/Users",
+           "bulkId": "bulkId1",
+           "data":{
+                "schemas": [
+                    "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters",
+                    "urn:ietf:params:scim:schemas:core:2.0:User"
+                ],
+                "userName": "LGARCIA",
+                "name": {
+                    "familyName": "Garcia",
+                    "givenName": "Lisa "
+                },
+                "displayName": "Lisa Garcia",
+              "emails": [
+                    {
+                        "value": "lisa.garcia@company.com"
+                    }
+                ],
+                "roles":[
+                    {
+                        "value": "PROFILE:t.V:Sales_Modeler",
+                        "display": "Sales_Modeler",
+                        "primary": true
+                    }  
+                ],
+                "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters": {
+                    "dataAccessLanguage": "en",
+                    "numberFormatting": "1,234.56",
+                    "idpUserId": "lisa.garcia@company.com",
+                    "timeFormatting": "H:mm:ss",
+                    "dateFormatting": "MMM d, yyyy",
+                   
+                }
+            }
+       },
+       {
+           "method": "POST",
+           "path": "/Users",
+           "bulkId": "bulkId2",
+           "data": {
+                "schemas": [
+                    "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters",
+                    "urn:ietf:params:scim:schemas:core:2.0:User"
+                ],
+                "userName": "JOWEN",
+                "name": {
+                    "familyName": "Owen",
+                    "givenName": "Joe"
+                },
+                "displayName": "Joe Owen",
+                "emails": [
+                    {
+                        "value": "joe.owen@company.com"
+                    }
+                ],
+                "roles":[
+                    {
+                        "value": "PROFILE:t.V:Sales_Modeler",
+                        "display": "Sales_Modeler",
+                      "primary": true
+                    }  
+                ],
+                "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters": {
+                    "dataAccessLanguage": "en",
+                    "numberFormatting": "1,234.56",
+                    "idpUserId": "joe.owen@company.com",
+                    "timeFormatting": "H:mm:ss",
+                    "dateFormatting": "MMM d, yyyy",
+                     }
+            }
+       }
+  ]
+}
+
+
+```
+
+The following example shows how to delete two users using their IDs:
+
+```
+{
+  "schemas": ["urn:ietf:params:scim:api:messages:2.0:BulkRequest"],
+  "Operations": [
+       {
+           "method": "DELETE",
+                  "path": "/Users/<userID_User1>"
+       },
+       {
+           "method": "DELETE",
+           "path": "/Users/<userID_User2>"
+       }
+  ]
+}
+
+
 ```
 
 

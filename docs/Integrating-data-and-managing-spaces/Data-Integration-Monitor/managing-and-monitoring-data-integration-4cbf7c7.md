@@ -16,7 +16,7 @@ The *Data Integration Monitor* is composed of several monitors that help you tra
     > ### Note:  
     > Remote tables from a source that is configured as data access *Remote Only* are not displayed in this monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md) 
 
--   *Local Tables*: Monitor all local tables which have been created in a space and display their metrics.
+-   *Local Tables*: Monitor all local tables which have been created in a space and display their metrics. From the detail screen, you can also delete table records on-demand, using filter conditions or using a schedule.
 -   *Views*: Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
 -   *Flows*: View and monitor the execution details of the executed data flows, replication flows or transformation flows. For more information, see [Monitoring Flows](monitoring-flows-b661ea0.md).
 -   *Remote Queries*:

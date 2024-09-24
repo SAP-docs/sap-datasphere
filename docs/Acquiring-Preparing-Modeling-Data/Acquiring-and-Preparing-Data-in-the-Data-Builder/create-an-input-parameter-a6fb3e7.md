@@ -4,7 +4,7 @@
 
 # Create an Input Parameter
 
-Create input parameters in your data flows for use in projection operator filter conditions or calculated columns. When you want to staring a data flow run, you are prompted to enter a value and this value is used to filter the data to be loaded
+Create input parameters in your data flows for use in projection operator filter conditions or calculated columns. When you want to start a data flow run, you are prompted to enter a value and this value is used to filter the data to be loaded
 
 
 

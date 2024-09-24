@@ -46,7 +46,6 @@ You can import entities from the following types of sources:
     For importing queries, there are certain restrictions:
 
     -   When an object is remodeled in SAP BW bridge, the query definition is broken.
-    -   Constant selection is not supported.
     -   For dimensions, the following features are not supported: compound characteristics, and time dependency.
 
     You can use the app *Query* to get an overview on the supported analytical queries. For more information, see [Overview of Apps](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/65fc810abf0549ee861b0d2c7b73ada2.html).

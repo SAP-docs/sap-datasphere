@@ -12,7 +12,9 @@ After configuring the Data Provisioning Agent, in SAP Datasphere, register the D
 
 ## Prerequisites
 
-For third-party adapters, ensure that you have downloaded and installed any necessary JDBC libraries. Place the files in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/lib</code> folder before registering the adapters with SAP Datasphere. For connection types *Amazon Redshift* and *Generic JDBC*, place the file in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/camel/lib</code> folder. For information about the proper JDBC library for your source, see the *SAP HANA smart data integration Product Availability Matrix \(PAM\)*. Search for the library in the internet and download it from an appropriate web page.
+For third-party adapters, ensure that you have downloaded and installed any necessary JDBC libraries. Place the files in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/lib</code> folder before registering the adapters with SAP Datasphere. For connection types *Amazon Redshift* and *Generic JDBC*, place the file in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/camel/lib</code> folder.
+
+For information about the proper JDBC library for your source, see the [SAP HANA smart data integration and all its patches Product Availability Matrix \(PAM\) for SAP HANA SDI 2.0](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf). Search for the library in the internet and download it from an appropriate web page.
 
 
 
@@ -28,9 +30,12 @@ For third-party adapters, ensure that you have downloaded and installed any nece
 
 4.  In the *Agent Settings* dialog, under *Agent Adapters* select the adapters.
 
-5.  Close the dialog.
+5.  Click *Close* to close the dialog and register the selected adapters with SAP Datasphere.
 
-    The selected adapters are registered with SAP Datasphere and available for creating connections to the supported on-premise sources.
+    > ### Note:  
+    > It is not required to save to update the agent settings.
+
+    The registered adapters are now available for creating connections to the supported on-premise sources.
 
 
 
@@ -40,9 +45,4 @@ For third-party adapters, ensure that you have downloaded and installed any nece
 ## Next Steps
 
 To use new functionality of an already registered adapter or to update the adapter in case of issues that have been fixed in a new agent version, you can refresh the adapter by clicking the <span class="SAP-icons-V5"></span> \(menu\) button and then choosing <span class="SAP-icons-V5"></span> *Refresh*.
-
-**Related Information**  
-
-
-[SAP HANA smart data integration and all its patches Product Availability Matrix \(PAM\) for SAP HANA SDI 2.0](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf)
 

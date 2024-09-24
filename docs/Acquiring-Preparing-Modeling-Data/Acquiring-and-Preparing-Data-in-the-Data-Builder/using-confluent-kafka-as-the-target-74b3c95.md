@@ -158,7 +158,7 @@ The following Confluent compatibility modes are available:
 
 -   Full Transitive
 
--   None.
+-   None
 
 
 
@@ -174,6 +174,8 @@ Clamp Decimal Floating Point Data Types
 <td valign="top">
 
 Clamping is enabled by default and cannot be switched off. 
+
+See also below under Further Information.
 
 </td>
 </tr>

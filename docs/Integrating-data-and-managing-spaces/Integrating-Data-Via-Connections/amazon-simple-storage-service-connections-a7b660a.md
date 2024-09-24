@@ -275,7 +275,7 @@ Enter the role Amazon Resource Name \(ARN\) of the assumed IAM role.
 </td>
 <td valign="top">
 
-\[optional\] If an external ID is used for your account to make sure that only specified third parties can assume the role, enter the ID you've been provided.
+\[optional\] If an external ID is used to make sure that SAP Datasphere as a specified third party can assume the role, enter the ID.
 
 </td>
 </tr>

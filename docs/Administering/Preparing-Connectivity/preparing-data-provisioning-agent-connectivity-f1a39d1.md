@@ -2,7 +2,7 @@
 
 # Preparing Data Provisioning Agent Connectivity
 
-Most connection types that support creating views and accessing or replicating data via remote tables, for this purpose leverage SAP HANA Smart Data Integration \(SDI\) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.
+Most connection types supporting remote tables use SAP HANA Smart Data Integration \(SDI\) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.
 
 
 
@@ -15,6 +15,9 @@ The Data Provisioning Agent is a lightweight component running outside the SAP D
 ![](images/DWC_DPA_as_Gateway_f089144.png)
 
 Through the Data Provisioning Agent, the preinstalled data provisioning adapters communicate with the Data Provisioning Server for connectivity, metadata browsing, and data access. The Data Provisioning Agent connects to SAP Datasphere using JDBC. It needs to be installed on a local host in your network and needs to be configured for use with SAP Datasphere.
+
+> ### Note:  
+> A given Data Provisioning Agent can only connected to one SAP Datasphere tenant \(see SAP Note [2445282](https://me.sap.com/notes/2445282)\).
 
 For an overview of connection types that require a Data Provisioning Agent setup, see [Preparing Connectivity for Connections](preparing-connectivity-for-connections-bffbd58.md).
 

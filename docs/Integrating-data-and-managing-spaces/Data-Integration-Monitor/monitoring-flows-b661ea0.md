@@ -101,7 +101,7 @@ For more information and points to consider when using replication flows, see al
     </td>
     <td valign="top">
     
-    Indicates the type of flow: data flow, transformation flow or replications flow.
+    Indicates the type of flow: data flow, transformation flow or replication flow.
     
     </td>
     </tr>
@@ -219,7 +219,7 @@ For more information and points to consider when using replication flows, see al
 
 4.  You can analyze errors that have occurred during your data flow runs downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details
 
-5.  You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*
+5.  You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
 
 6.  To view and modify a flow, click <span class="SAP-icons-V5"></span> Open in Data Builder.
 

@@ -110,7 +110,7 @@ Enter the Microsoft SQL Server database name.
 </td>
 <td valign="top">
 
-Select the Microsoft SQL Server version. Supported versions are Microsoft SQL Server 2012 to 2022 \(default is 2022\). 
+Select the Microsoft SQL Server version. Supported versions are Microsoft SQL Server 2012, 2014, 2016, 2017, 2019, and 2022 \(default is 2022\). 
 
 > ### Note:  
 > Microsoft SQL Server 2012 is **not** supported for remote tables.

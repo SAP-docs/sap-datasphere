@@ -31,6 +31,9 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
+    > ### Note:  
+    > If you have an account but cannot see the account information here, enter the SAP BTP user ID. This ID is typically the email address you used to create your SAP BTP account. After you have entered the ID, you can see the *Account Information* for SAP Datasphere.
+
 
 
 
@@ -456,6 +459,23 @@ For more information about the supported use cases depending on the connection t
 
 
 
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP Datasphere, SAP BW bridge* \(connectivity for ODP source systems in SAP BW bridge\)
+        
+        </td>
+        <td valign="top">
+        
+        *Function Name* \(name of the function module for RFC\)
+        
+        </td>
+        <td valign="top">
+        
+        See [Add Resources to Source System](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/2505f3efb2744a829a811985cb2b62c3.html "You need to add some additional ressources to your source system.") :arrow_upper_right:.
         
         </td>
         </tr>

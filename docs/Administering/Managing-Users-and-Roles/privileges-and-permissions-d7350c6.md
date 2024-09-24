@@ -148,7 +148,7 @@ Allows users to log into SAP Datasphere. Included in all standard roles except f
 
 -   *Read* - Allows users of the View Analyzer to download the generated SQL analyzer plan file.
 
-    See [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views, and the entities they consume.") :arrow_upper_right:
+    See [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:
 
 -   *Execute* - not in use
 

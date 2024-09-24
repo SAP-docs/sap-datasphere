@@ -307,7 +307,7 @@ Ensure that your Data Provisioning Agent is connected to SAP HANA.
 
 In <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*** \> *On-Premise Agents* a green bar and status information on the agent tile indicates if the agent is connected.
 
-![](images/DWC_DPA_Status_f2f9c84.png)
+![](Preparing-Connectivity/images/DWC_DPA_Status_f2f9c84.png)
 
 In *On-Premise Agents*, click <span class="SAP-icons-V5"></span> *Refresh Agents* if the tile of a newly connected agent doesn’t display the updated connection status.
 
@@ -316,12 +316,15 @@ In *On-Premise Agents*, click <span class="SAP-icons-V5"></span> *Refresh Age
 
 
 
-### Via Data Provisioning Agent Configuration Tool
+### Via Data Provisioning Agent Configuration Tool \(for agent versions lower than 2.7.4\)
 
 1.  Navigate to the command line and run <code><i class="varname">&lt;DPAgent_root&gt;</i>/bin/agentcli.bat --configAgent</code>.
 2.  Choose *Agent Status* to check the connection status.
 3.  Make sure the output shows *Agent connected to HANA: Yes*.
 4.  If the output doesn't show that the agent is connected, it may show an error message. Resolve the error, and then select option *Start or Stop Agent*, and then option *Start Agent* to start the agent.
+
+> ### Note:  
+> For agent version 2.7.4 and higher, if in the agent status the message *No connection established yet* is shown, this can be ignored. You can check the connection status in SAP Datasphere instead. For more information about the agent/SAP HANA connection status in agent version 2.7.4 and higher, see SAP Note [3487646](https://me.sap.com/notes/3487646).
 
 
 

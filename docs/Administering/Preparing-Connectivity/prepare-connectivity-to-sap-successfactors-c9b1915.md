@@ -8,6 +8,8 @@ Before you can use the connection, the following is required:
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
 
+    Example for Certificate Download Site: `https://performancemanager4.successfactors.com`
+
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
 -   When using OAuth 2.0 for authentication:

@@ -23,7 +23,7 @@ To get data products into your SAP Datasphere tenant and consume them, you can f
 
 
 
-![](images/Image_map_Data_Marketplace_Consumer_Workflow_d71c3ac.png)
+![](images/Image_map_Enrich_Data_4_2ceb007.png)
 
 Independent from time, you can also view and manage your licenses. For more information, see [Managing your Licenses](managing-your-licenses-98d9865.md).
 

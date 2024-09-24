@@ -109,7 +109,10 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 ## Results
 
-A welcome email including an account activation URL will be sent to the user, so that the user can set an initial password and access the system.
+-   A welcome email including an account activation URL will be sent to the user, so that the user can set an initial password and access the system. Optionally, you can disable the welcome email notification \(see [Configure Notifications](../Monitoring-SAP-Datasphere/configure-notifications-4388411.md)\).
+
+-   When you create a user, it is activated by default. You may want to deactivate a user in specific cases, for example when a user is on long-term leave. To deactivate a user, select the relevant check box in the leftmost column of the table, click the icon \(*Deactivate Users*\) and optionally select *Email users to notify them that their accounts have been deactivated*. Deactivated users cannot login to SAP Datasphere until they are activated again.
+
 
 > ### Note:  
 > In addition to the standard workflows, you can also create users via the command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).

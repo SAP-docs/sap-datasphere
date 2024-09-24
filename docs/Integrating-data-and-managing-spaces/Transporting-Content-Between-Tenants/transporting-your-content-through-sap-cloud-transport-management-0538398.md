@@ -35,7 +35,7 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 
         > ### Tip:  
         > -   Go to *System*→*Administration*→*App Integration* to find the token URL and add the extension `<Token URL>?grant_type=client_credentials`.
-        > -   You must create the OAuth Client \(client ID and secret\) with access *Analytics Content Network Interaction*.
+        > -   You must create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
 
 
 3.  Go to your SAP Business Technology Platform subaccount. Choose the SAP Cloud Transport Management instance of your choice. In the instance details page, choose *…* → *Download* to download the SAP Cloud Transport Management instance key.

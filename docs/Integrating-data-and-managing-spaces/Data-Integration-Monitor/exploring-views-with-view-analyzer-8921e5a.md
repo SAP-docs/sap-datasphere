@@ -4,22 +4,16 @@
 
 # Exploring Views with View Analyzer
 
-Use the *View Analyzer* to explore graphical or SQL views, and the entities they consume.
+Use the *View Analyzer* to explore graphical or SQL views and the entities they consume.
 
-The *View Analyzer* provides you with statistics and useful information on each entity that composes your view, no matter the complexity of the view. It analyzes each view definition, the consumed views, the local tables and the data sources used by remote tables that compose your data model. You can then use this information to optimize your data model, and decide, for example, which view to persist when performance or technical problems such as out-of-memory errors occur.
-
-> ### Tip:  
-> While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
-
-> ### Note:  
-> The *View Analyzer* can't analyze a view that has input parameters.
+The *View Analyzer* provides you with statistics and useful information on each entity that composes your view, no matter the complexity of the view. It analyzes each view definition, the consumed views, the local tables and the data sources used by remote tables that compose your data model. You can then use this information to optimize your data model and decide, for example, which view to persist when performance or technical problems such as out-of-memory errors occur.
 
 To use the *View Analyzer*,
 
-1.  Go to *Data Integration Monitor**Views*. Select the view you need to analyze and navigate to the details screen of this view.
+1.  Go to *Data Integration Monitor**Views*. Select the view you need to analyze and navigate to the details screen of this view. You need to select a space if you are assigned to several spaces.
 
     > ### Note:  
-    > You need to select a space if you are assigned to several spaces.
+    > The *View Analyzer* can't analyze a view that has input parameters.
 
 2.  Select *Data Persistence**Start View Analyzer*.
 
@@ -50,7 +44,7 @@ To use the *View Analyzer*,
 
         > ### Caution:  
         > -   To download this file, you must have the *DW Administrator* role or a custom role that includes the *Data Warehouse Runtime* \(Read\) privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
-        > -   To open this file, you must have installed a compatible SQL plan visualization tool, such as SQL Analyzer Tool for SAP HANA.
+        > -   To open this file, you mustinstall a compatible SQL plan visualization tool, such as [SQL Analyzer Tool for SAP HANA](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/sql-analyzer?state=DRAFT&version=2024_2_QRC).
         > -   This option requires additional system resources.
 
         With this option, the data persistence simulation is run for the main view only, and the analyzer creates a file containing detailed information about your data model that you can download for further analysis.
@@ -64,6 +58,9 @@ To use the *View Analyzer*,
 
         ![](images/PlanViz_595c8da.jpg)
 
+
+    > ### Tip:  
+    > While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
 3.  Analyze your results
 
@@ -158,7 +155,7 @@ To use the *View Analyzer*,
         </td>
         <td valign="top">
         
-        Indicates the number of rows
+        Indicates the number of rows.
         
         </td>
         </tr>
@@ -295,7 +292,4 @@ To use the *View Analyzer*,
         </table>
         
 
-
-> ### Note:  
-> The *View Analyzer* is executed in asynchronous mode. If necessary, for example if the run takes too long, you can select the task and use the *Cancel Run* button to stop it.
 

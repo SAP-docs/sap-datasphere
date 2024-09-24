@@ -73,6 +73,7 @@
         -   [Disabling Real-Time Data Replication](Data-Integration-Monitor/disabling-real-time-data-replication-82380e6.md)
         -   [Partitioning Remote Table Data Loads](Data-Integration-Monitor/partitioning-remote-table-data-loads-a218d27.md)
     -   [Monitoring Local Tables](Data-Integration-Monitor/monitoring-local-tables-3740461.md)
+        -   [Performing Data Deletion for Local Tables](Data-Integration-Monitor/performing-data-deletion-for-local-tables-2a59b71.md)
     -   [Persisting and Monitoring Views](Data-Integration-Monitor/persisting-and-monitoring-views-9af04c9.md)
         -   [Data Persistence and Run Mode](Data-Integration-Monitor/data-persistence-and-run-mode-d04f5dd.md)
         -   [Persisted Views and Data Access Control](Data-Integration-Monitor/persisted-views-and-data-access-control-7a4a983.md)

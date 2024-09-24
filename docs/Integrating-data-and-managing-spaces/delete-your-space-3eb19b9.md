@@ -20,7 +20,7 @@ When you delete a space, be aware that the following content will be **permanent
 > ### Note:  
 > Before deleting your space, you may want to:
 > 
-> -   Export the data contained in your space \(see [Export Data Contained in Your Space](delete-your-space-3eb19b9.md#loio3eb19b96e6ba41dfbffd759c5c8370bb__section_y3p_3dv_kwb)\).
+> -   Export the data contained in your space \(see [Export Space Data Before Deletion](delete-your-space-3eb19b9.md#loio3eb19b96e6ba41dfbffd759c5c8370bb__section_lk4_xrc_rcc)\).
 > 
 > -   Export the audit log entries generated for your space \(see [Export Audit Logs](export-audit-logs-0c5dc64.md)\).
 
@@ -32,9 +32,9 @@ Only administrators can create spaces. Both administrators and space administrat
 
 
 
-<a name="loio3eb19b96e6ba41dfbffd759c5c8370bb__section_y3p_3dv_kwb"/>
+<a name="loio3eb19b96e6ba41dfbffd759c5c8370bb__section_lk4_xrc_rcc"/>
 
-## Export Data Contained in Your Space
+## Export Space Data Before Deletion
 
 If you want to keep the data contained in your space, you can export the data before you delete the space.
 

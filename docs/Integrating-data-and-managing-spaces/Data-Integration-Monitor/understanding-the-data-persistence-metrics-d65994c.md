@@ -198,7 +198,7 @@ Displays the technical name of the elastic compute node used to persist the view
 </td>
 <td valign="top">
 
-if your view contains an input parameter, it displays the name of the parameter used to persist the view data.
+If your view contains an input parameter, it displays the name of the parameter used to persist the view data.
 
 </td>
 </tr>
@@ -320,7 +320,7 @@ Displays the technical name of the elastic compute node used to persist the view
 </td>
 <td valign="top">
 
-if your view contains an input parameter, it displays the name of the parameter used to persist the view data.
+If your view contains an input parameter, it displays the name of the parameter used to persist the view data.
 
 </td>
 </tr>

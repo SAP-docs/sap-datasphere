@@ -4,7 +4,7 @@
 
 # Define Attributes
 
-You can define attrbutes for your consumption model.
+You can define attributes for your consumption model.
 
 
 

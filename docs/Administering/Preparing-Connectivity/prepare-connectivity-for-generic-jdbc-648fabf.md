@@ -21,7 +21,7 @@ Before you can use the connection for creating views and accessing data via remo
     For latest information about supported data sources and versions, see the [SAP HANA Smart Data Integration Product Availability Matrix \(PAM\)](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf).
 
     > ### Note:  
-    > For information about unsupported data sources, see [3130999](https://me.sap.com/notes/3130999).
+    > For information about unsupported data sources, see SAP Note [3130999](https://me.sap.com/notes/3130999).
 
 -   An administrator has downloadad and installed the required JDBC library in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/camel/lib</code> folder and restarted the Data Provisioning Agent before registering the adapter with SAP Datasphere.
 

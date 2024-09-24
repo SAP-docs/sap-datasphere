@@ -184,7 +184,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the name of the API-URL from the communication arrangements that you set up in SAP S/4HANA Cloud \(without https://\), for example `myXXXXX-api.s4hana.ondemand.com` or `myXXXXX-api.s4hana.cloud.sap`.
+Enter the name of the **API**-URL from the communication arrangements that you set up in SAP S/4HANA Cloud \(without https://\), for example `myXXXXX-api.s4hana.ondemand.com` or `myXXXXX-api.s4hana.cloud.sap`.
 
 For more information about the required communication arrangements, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 
@@ -417,14 +417,15 @@ Select the middleware to use when connecting to and accessing SAP S/4HANA Cloud:
 
 -   *None* \(default\): if you don't want to use remote tables.
 
--   *Data Provisioning Agent*: if you want to use federation and replication via SAP HANA smart data integration CloudDataIntegrationAdapter.
-
--   *Direct*: if you want to federate data from the source objects of the connection and access them remotely in the source system using the ABAP SQL service.
+-   *Data Provisioning Agent*: if you want to use federation and replication via SAP HANA smart data integration CloudDataIntegrationAdapter \(**legacy**\).
 
     > ### Note:  
-    > -   We recommend this option for federation scenarios.
-    > 
-    > -   This option is supported for authentication type *User Name And Password*.
+    > This legacy option is still supported, however we recommend using the ABAP SQL service for federation \(if available\) and replication flows for replication.
+
+-   *Direct*: if you want to federate data from the source objects of the connection and access them remotely in the source system using the ABAP SQL service \(**recommended for federation scenarios**\).
+
+    > ### Note:  
+    > This option is supported for authentication type *User Name And Password*.
 
 
 

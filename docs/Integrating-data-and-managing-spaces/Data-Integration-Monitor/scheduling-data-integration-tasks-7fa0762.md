@@ -15,7 +15,7 @@ Using a dedicated dialog box, you can specify the frequency and time range of th
 > When you click *Create*, the definition of the schedule that is created and saved is the one that is currently displayed \(either in the *Simple Schedule* area or the *Cron Expression* area\).
 
 > ### Note:  
-> Schedules are created in Coordinated Universel Time \(UTC\).
+> Schedules are created in Coordinated Universal Time \(UTC\).
 
 > ### Note:  
 > If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time.
