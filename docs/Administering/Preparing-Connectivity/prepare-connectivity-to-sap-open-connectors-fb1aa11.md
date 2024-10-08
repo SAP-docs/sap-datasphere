@@ -21,6 +21,8 @@ Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third
 
     For information about setting up SAP Integration Suite from a production SAP BTP account, see [Initial Setup](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/sap.cp.integration.suite/en-US/3dcf507f92f54597bc203600bf8f94c5.html) in the *SAP Integration Suite* documentation.
 
+    For information about SAP Open Connectors availability in data centers, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+
 2.  In your SAP Open Connectors account, create connector instances for the sources that you want to connect to SAP Datasphere.
 
     For more information about creating an instance, see [Authenticate a Connector Instance \(UI\)](https://help.openconnectors.ext.hana.ondemand.com/home/authenticate-an-element-instance-ui) in the *SAP Open Connectors* documentation.

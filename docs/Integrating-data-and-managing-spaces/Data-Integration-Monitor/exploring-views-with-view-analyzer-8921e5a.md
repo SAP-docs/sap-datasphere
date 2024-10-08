@@ -20,7 +20,7 @@ To use the *View Analyzer*,
     > ### Note:  
     > For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
 
-    You can choose between 3 options:
+    You can choose between 3 options::
 
     ![](images/View_Analyzer_Settings_a8359c5.png)
 
@@ -32,19 +32,19 @@ To use the *View Analyzer*,
     -   Run the *View Analyzer* with memory consumption: In addition to exploring the entities that compose your data model, the analyzer will execute the data persistence simulation for non persisted views. It will report the memory consumption that would be used to get an entity persisted or will provide you with the actual memory consumption used when you have persisted your data. The simulations are executed sequentially as they may add some workloads to the system. To reduce these workloads, you can define a limit to the memory consumption that can be used to persist the view thanks to the threshold. If one of the analyzed views exceeds the limit, then no further data persistence simulations are run.
 
         > ### Note:  
-        > -   To start the*View Analyzer* with memory consumption, you must have the space *Read* privilege. If you are missing this privilege, the *View Analyzer* will run without memory consumption by default.
+        > -   To start the*View Analyzer* with memory consumption, you must have the *Space \(Read\)* privilege. If you are missing this privilege, the *View Analyzer* will run without memory consumption by default.
         > -   If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it.
 
         Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set Priorities and Statement Limits for Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.") :arrow_upper_right:.
 
-        > ### Caution:  
+        > ### Note:  
         > To use the *View Analyzer* with memory consumption during data persistence simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Configure Monitoring](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor.") :arrow_upper_right:.
 
     -   *Generate SQL Analyzer Plan File*: Before using this option, you must consider the following requirements:
 
-        > ### Caution:  
-        > -   To download this file, you must have the *DW Administrator* role or a custom role that includes the *Data Warehouse Runtime* \(Read\) privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
-        > -   To open this file, you mustinstall a compatible SQL plan visualization tool, such as [SQL Analyzer Tool for SAP HANA](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/sql-analyzer?state=DRAFT&version=2024_2_QRC).
+        > ### Note:  
+        > -   To download this file, you must have the *DW Administrator* role or a custom role that includes the *Data Warehouse Runtime \(Read\)* privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
+        > -   To open this file, you must install a compatible SQL plan visualization tool, such as [SQL Analyzer Tool for SAP HANA](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/sql-analyzer?state=DRAFT&version=2024_2_QRC).
         > -   This option requires additional system resources.
 
         With this option, the data persistence simulation is run for the main view only, and the analyzer creates a file containing detailed information about your data model that you can download for further analysis.
@@ -61,6 +61,8 @@ To use the *View Analyzer*,
 
     > ### Tip:  
     > While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
+    > 
+    > Cross-space analysis can be analyzed in *View Analyer* in, but you can only view entities that you have authorizion to view. For more information see: [Authorization and Permissions](authorization-and-permissions-e5f9e81.md)
 
 3.  Analyze your results
 
@@ -78,7 +80,7 @@ To use the *View Analyzer*,
 
     -   *Entities*: It contains the details of the *View Analyzer* findings per analyzed entities. Information is displayed in a table format:
 
-        ![](images/Analyzed_View_Entities_tab_ac6253e.png)
+        ![](images/Cross-space_view_analyzer_1_b273634.png)
 
 
         <table>
@@ -103,6 +105,18 @@ To use the *View Analyzer*,
         <td valign="top">
         
         Name of the analyzed entity. It can be a local or a remote table, a view, a shared entity, an external entity, an intelligent lookup and or a data access control.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Space*
+        
+        </td>
+        <td valign="top">
+        
+        Name of the space the entity resides in.
         
         </td>
         </tr>
@@ -245,7 +259,7 @@ To use the *View Analyzer*,
         
         Display the whole list of results that you can also export in CSV format:
 
-        ![](images/View_Analyzer_Full_list_of_Results_6fb1d68.png)
+        ![](images/Cross-Space_Results_728f98e.png)
         
         </td>
         </tr>

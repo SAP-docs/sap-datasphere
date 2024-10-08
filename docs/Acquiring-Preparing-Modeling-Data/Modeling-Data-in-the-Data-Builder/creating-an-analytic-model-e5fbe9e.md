@@ -201,7 +201,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     > When you change an analytic model for which a story has been defined, and you deploy it again, you need to open the story in SAP Analytics Cloud and save it again.
 
     > ### Note:  
-    > For technical reasons, there is a timeout after three seconds when opening the data preview or when executing a query against an analytic model in SAP Analytics Cloud.
+    > For technical reasons, there is a timeout after three minutes when opening the data preview or when executing a query against an analytic model in SAP Analytics Cloud.
 
 7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
 

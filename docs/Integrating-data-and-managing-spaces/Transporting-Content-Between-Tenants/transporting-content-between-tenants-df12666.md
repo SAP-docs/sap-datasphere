@@ -4,7 +4,7 @@
 
 # Transporting Content Between Tenants
 
-Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Transport* app to transfer content between tenants via a private cloud storage area.
+You can use the *Transport* app to transfer content between tenants via a private cloud storage area.
 
 The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:
 

@@ -33,12 +33,13 @@ SAP Datasphere supports the following SAP Open Connectors hub categories:
 
 
 > ### Note:  
-> Some SAP Open Connectors types might not work in case the API hasn't been fully implemented. We recommend to check the connector on SAP Open Connectors side first before using it in SAP Datasphere. For more information, see [Working with Connectors](https://help.openconnectors.ext.hana.ondemand.com/home/working-with-elements) in the SAP Open Connectors documentation.
+> -   For information about SAP Open Connectors availability in data centers, see SAP Note [2903776](https://me.sap.com/notes/2903776).
 > 
-> For sources which SAP Datasphere natively supports with dedicated connection types, such as Amazon S3 or Microsoft SQL Server, use the corresponding SAP Datasphere connection type. We do not recommend using SAP Open Connectors connectivity in this case.
-
-> ### Note:  
-> Input parameters are not supported for data flows. For resources with mandatory parameters the parameters have to be replaced in SAP Open Connectors, or the respective connector has to be cloned and adjusted to work without any mandatory parameter. For more information, see [Setup Configuration and Parameters \(for custom connectors\)](https://help.openconnectors.ext.hana.ondemand.com/home/element-builder-setup-configuration-and-parameters) in the SAP Open Connectors documentation.
+> -   Some SAP Open Connectors types might not work in case the API hasn't been fully implemented. We recommend to check the connector on SAP Open Connectors side first before using it in SAP Datasphere. For more information, see [Working with Connectors](https://help.openconnectors.ext.hana.ondemand.com/home/working-with-elements) in the SAP Open Connectors documentation.
+> 
+> -   For sources which SAP Datasphere natively supports with dedicated connection types, such as Amazon S3 or Microsoft SQL Server, use the corresponding SAP Datasphere connection type. We do not recommend using SAP Open Connectors connectivity in this case.
+> 
+> -   Input parameters are not supported for data flows. For resources with mandatory parameters the parameters have to be replaced in SAP Open Connectors, or the respective connector has to be cloned and adjusted to work without any mandatory parameter. For more information, see Setup Configuration and Parameters \(for custom connectors\) in the SAP Open Connectors documentation.
 
 
 

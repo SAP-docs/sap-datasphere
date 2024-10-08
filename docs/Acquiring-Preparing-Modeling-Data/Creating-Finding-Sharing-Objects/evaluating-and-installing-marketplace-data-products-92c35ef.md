@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Evaluating Marketplace Data Products
+# Evaluating and Installing Marketplace Data Products
 
 You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.
 

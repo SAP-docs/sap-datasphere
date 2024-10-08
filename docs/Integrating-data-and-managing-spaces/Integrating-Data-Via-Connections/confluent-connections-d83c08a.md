@@ -14,7 +14,7 @@ This topic contains the following sections:
 -   [Configuring Connection Properties For Confluent Platform](confluent-connections-d83c08a.md#loioa5d1e1d2885f4a69ae3cc5049eb0cabf)
 -   [Configuring Connection Properties For Confluent Cloud](confluent-connections-d83c08a.md#loio8cd75f509baf41bdb859fd2efa045c84)
 
-For information about the required prerequisites, see [Prepare Connectivity to Confluent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3515f11430044e479cc4934cd221e010.html "To be able to use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Confluent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3515f11430044e479cc4934cd221e010.html "To be able to successfully validate and use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -150,7 +150,7 @@ Set the property to *true* if your platform is on-premise. The default is *false
 Select the location ID for the Cloud Connector instance that is set up for connecting to the Kafka brokers.
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role that includes the required *Connection.Read* privilege.
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
 
 
 
@@ -320,7 +320,7 @@ Upload the content of the krb5.conf configuration file.
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
-Once uploaded, you can check the configuration file by clicking the *inspection* button.
+Once uploaded, you can check the configuration file by clicking the <span class="SAP-icons-V5"></span> \(inspection\) button.
 
 </td>
 </tr>
@@ -462,7 +462,7 @@ Upload the content of the keytab file.
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
-Once uploaded, you can check the keytab file by clicking the *inspection* button.
+Once uploaded, you can check the keytab file by clicking the <span class="SAP-icons-V5"></span> \(inspection\) button.
 
 </td>
 </tr>
@@ -733,7 +733,7 @@ Select the location ID for the Cloud Connector instance that is set up for conne
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role that includes the required *Connection.Read* privilege.
+> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
 
 
 

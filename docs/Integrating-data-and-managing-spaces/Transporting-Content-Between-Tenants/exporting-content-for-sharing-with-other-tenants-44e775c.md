@@ -4,11 +4,32 @@
 
 # Exporting Content for Sharing with Other Tenants
 
-Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Transport* app to export content from one or more spaces for sharing with other tenants.
+You can use the *Transport* app to export content from one or more spaces for sharing with other tenants.
 
 
 
 ## Context
+
+To export content from a space via the *Export* app, you must have either:
+
+-   A global role that allows you to access and export content from any space, by granting you the following privileges:
+
+    -   *Lifecycle.Maintain* - to use the *Transport* apps.
+    -   *Spaces.Manage* - to update all spaces and space properties.
+    -   *Spaces Files.Manage* - to create, read, update, and delete all objects in all spaces.
+
+    The *DW Administrator* role, for example, grants these privileges.
+
+-   A combination of a global role and a scoped role that allow you to access specific spaces:
+
+    -   A global role that grants you the *Lifecycle.Maintain* privilege - to use the *Transport* apps.
+    -   A scoped role that grants you access to the space or spaces to export from with the following privileges:
+        -   *Space Files.Read* - to view specific spaces and their contents.
+        -   *Data Warehouse Data Builder.Read* - to view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
+
+
+    The *DW Space Administrator* global and scoped role templates, for example, grant this combination of privileges \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
+
 
 You can share content across tenants from one or more landscapes and set access rights for each sharing destination, for example, to allow other tenants to update a package and export it again.
 

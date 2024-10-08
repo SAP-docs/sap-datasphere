@@ -355,5 +355,5 @@ If you're the data provider or a content aggregator and noticed that the profile
 -   [Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 -   [Managing your Data Product's Lifecycle](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c400001264094f8c89da104db72514ad.html "To reflect various situations and different phases in the lifecycle of a data product, you can change its lifecycle status.") :arrow_upper_right:
 
-If you're a data consumer and you're interested in any of the data products, you can select a data product that you are interested in and evaluate it to see if it meets your needs. For more information, see [Evaluating Marketplace Data Products](evaluating-marketplace-data-products-92c35ef.md).
+If you're a data consumer and you're interested in any of the data products, you can select a data product that you are interested in and evaluate it to see if it meets your needs. For more information, see [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md).
 

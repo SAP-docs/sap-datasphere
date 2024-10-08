@@ -87,15 +87,7 @@ The technical name can contain any characters except for the asterisk \(\*\), co
 <tr>
 <td valign="top">
 
-Entity created in the Data Builder and Business Builder, for example a table or view
-
-Column
-
-Attribute
-
-Measure
-
-Analytical measure
+Object created in the Data Builder, for example a table, view, or E/R model
 
 </td>
 <td valign="top">
@@ -106,6 +98,40 @@ The technical name can only contain alphanumeric characters and underscores \(\_
 <td valign="top">
 
 50
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Element in the Data Builder, for example a column, or a join, projection, or aggregation node
+
+</td>
+<td valign="top">
+
+The technical name can only contain alphanumeric characters and underscores \(\_\). The maximum length is 30 characters.
+
+</td>
+<td valign="top">
+
+30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Object created in the Business Builder, for example a fact, dimension, fact model, consumption model, or authorization scenario
+
+</td>
+<td valign="top">
+
+The technical name can only contain alphanumeric characters and underscores \(\_\). The maximum length is 30 characters.
+
+</td>
+<td valign="top">
+
+30
 
 </td>
 </tr>
@@ -134,7 +160,7 @@ Input parameter
 </td>
 <td valign="top">
 
-The technical name can only contain uppercase letters, numbers, and underscores \(\_\). The maximum length is 50 characters.
+The technical name can only contain uppercase letters, numbers, and underscores \(\_\). The maximum length is 30 characters.
 
 </td>
 <td valign="top">

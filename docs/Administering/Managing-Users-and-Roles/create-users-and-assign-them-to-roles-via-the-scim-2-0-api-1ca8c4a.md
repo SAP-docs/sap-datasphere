@@ -57,9 +57,18 @@ To access the API specification and try out the functionality in SAP Analytics C
 Beforehand you can log in with a Oauth client, a user with the administrator role must create an OAuth2.0 client in your SAP Datasphere tenant and provide you with the OAuth client ID and secret parameters.
 
 > ### Note:  
-> The OAuth client must be configured with the *Purpose* *API Access* and the *Access* *User Provisioning* \(see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)\).
+> The OAuth client must be configured with the following properties:
+> 
+> -   *Purpose*: *API Access*
+> 
+> -   *Access*: *User Provisioning*
+> 
+> -   *Authorization Grant*: *Client Credentials*
+> 
+> 
+> See [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md) 
 
-To log in to the OAuth client, send a GET request with the following elements:
+To log in to the OAuth client, send a GET \(or POST\) request with the following elements:
 
 
 <table>

@@ -269,12 +269,12 @@ Provide business-friendly names for your table and its columns, identify its sem
 
 4.  \[remote tables\] Create filter conditions to load only the data that is needed \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
 
-5.  \[imported remote and local tables\] *Input Parameters*: If your remote table consumes an SAP HANA SQL view with input parameters, the parameter properties are displayed. You can define a default value for each parameter:
+5.  \[imported remote and local tables\] *Input Parameters*: If your remote table consumes an SAP HANA SQL view or SAP HANA calculation view with input parameters, the parameter properties are displayed. You can define a default value for each parameter:
 
     ![](images/Input_Parameter_for_Remote_Table_885d97e.jpg)
 
     > ### Restriction:  
-    > Parameters with data type cds.LargeBinary and parameters that start with '$$' are not supported.
+    > Parameters with data type cds.LargeBinary are not supported.
 
     Tables that contain input parameters require special treatment in the following situations:
 

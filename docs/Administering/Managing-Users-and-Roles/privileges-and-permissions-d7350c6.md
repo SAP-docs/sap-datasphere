@@ -76,7 +76,7 @@ Allows access to spaces in the *Space Management* tool.
 -   *Manage* - To read, update and delete all spacesand elastic compute nodes.
 
     > ### Caution:  
-    > The permission *Manage* should be granted only to tenant administrators. and for other privileges.
+    > The permission *Manage* should be granted only to tenant administrators.
 
 
 > ### Note:  
@@ -628,6 +628,15 @@ Allows access to remote and run-time objects:
 
 
 See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+
+> ### Note:  
+> The following feature needs an additional permission:
+> 
+> Select a location ID - *Connection.Read*
+> 
+> The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
+
+
 
 </td>
 </tr>

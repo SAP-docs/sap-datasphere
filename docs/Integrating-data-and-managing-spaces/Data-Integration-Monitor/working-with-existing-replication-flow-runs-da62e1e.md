@@ -9,7 +9,9 @@ This topic contains the following sections:
 -   [Statuses for Replication Flow Runs](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RunStatuses) 
 -   [Scheduling a Replication Flow](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Scheduling) 
 -   [Pausing and Resuming a Replication Flow Run](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Pausing) 
+-   [Monitoring Premium Outbound Volume](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_POI) 
 -   [Stopping a Replication Flow Run](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Stopping) 
+-   [Space Deletion](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_SpaceDeletion) 
 -   [Removing Replication Objects from a Running Replication Flow](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects) 
 
 
@@ -47,7 +49,7 @@ When you resume the flow, the system replicates all source data changes that hap
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_eqf_clj_kcc"/>
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_POI"/>
 
 ## Monitoring Premium Outbound Volume
 
@@ -65,6 +67,14 @@ The value is updated once per hour.
 ## Stopping a Replication Flow Run
 
 If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather then from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. For more information, see [Deleting a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_SpaceDeletion"/>
+
+## Space Deletion
+
+If you have replication flows in a space that is about to be deleted, make sure to stop your replication flows before space deletion starts. This helps to avoid issues during space deletion and makes it possible for you to start the replication flows again if the space gets restored. When the space gets permanently deleted, all replication flows in it are deleted as well. For more information about space deletion, see [Delete Your Space](../delete-your-space-3eb19b9.md).
 
 
 

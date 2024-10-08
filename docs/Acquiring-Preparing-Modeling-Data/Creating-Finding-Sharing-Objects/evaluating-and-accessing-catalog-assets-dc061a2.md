@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Evaluating Catalog Assets
+# Evaluating and Accessing Catalog Assets
 
 After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.
 

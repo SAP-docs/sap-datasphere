@@ -107,9 +107,9 @@ Users can use an appropriately-configured OAuth client to:
 
     -   For the purpose *API Access*, select one of these options:
 
-        -   *SAML2.0 Bearer* - Select this option when the user context is passed or to control access based on user permissions.
+        -   *Client Credentials* - Select this option when the client application is accessing its own resources or when the permission to access resources has been granted by the resource owner via another mechanism. To use the SCIM 2.0 API, select this option \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
 
-        -   *Client Credentials* - Select this option when the client application is accessing its own resources or when the permission to access resources has been granted by the resource owner via another mechanism.
+        -   *SAML2.0 Bearer* - Select this option when the user context is passed using SAML or to control access based on user permissions using SAML. This option requires specific client-side infrastructure to support SAML.
 
 
 

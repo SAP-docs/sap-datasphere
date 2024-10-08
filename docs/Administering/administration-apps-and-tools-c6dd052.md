@@ -582,5 +582,5 @@ Every user can view information about the software components and versions of yo
 -   *Database*: Displays the id of the SAP Datasphere run-time database.
 -   *Platform Version*: Displays the version of the SAP Analytics Cloud components used in SAP Datasphere.
 
-Users with the DW Administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Finding SAP Datasphere IP addresses](Preparing-Connectivity/finding-sap-datasphere-ip-addresses-0934f7e.md)\).
+Users with the DW Administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Finding SAP Datasphere IP addresses](Preparing-Connectivity/finding-sap-datasphere-ip-addresses-0934f7e.md)\). Administrators can also upgrade their SAP HANA database patch version. For details, see [Apply a Patch Upgrade to Your SAP HANA Database](Creating-and-Configuring-Your-Tenant/apply-a-patch-upgrade-to-your-sap-hana-database-489dc3b.md).
 

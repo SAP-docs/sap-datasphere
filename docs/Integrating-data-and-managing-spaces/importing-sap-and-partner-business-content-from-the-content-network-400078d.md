@@ -4,11 +4,34 @@
 
 # Importing SAP and Partner Business Content from the Content Network
 
-Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Semantic Onboarding* app to import business content and sample content from SAP and partners published to the *Content Network*.
+You can use the *Semantic Onboarding* app to import business content and sample content from SAP and partners published to the *Content Network*.
 
 
 
 ## Context
+
+To import business content and sample content from SAP and partners via the *Semantic Onboarding* app, you must have either:
+
+-   A global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
+
+    -   *Lifecycle.Maintain* - to use the *Content Network* tiles in the *Semantic Onboarding* app.
+    -   *Spaces.Manage* - to update all spaces and space properties.
+    -   *Spaces.Create* - to create spaces.
+    -   *Spaces Files.Manage* - to create, read, update, and delete all objects in all spaces.
+
+    The *DW Administrator* role, for example, grants these privileges.
+
+-   A combination of a global role and a scoped role that allow you to update specific spaces:
+
+    -   A global role that grants you the *Lifecycle.Maintain* privilege - to use the *Content Network* tiles in the *Semantic Onboarding* app.
+    -   A scoped role that grants you access to the space or spaces to import into with the following privileges:
+        -   *Spaces.Update* - to update your spaces and their properties.
+        -   *Spaces Files \(CRUD\)* - to create, read, update, and delete objects in your spaces.
+        -   *Data Warehouse Data Builder \(CRUD--S-\)* - to create, read, update, delete and share data builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
+
+
+    The *DW Space Administrator* global and scoped role templates, for example, grant this combination of privileges \(see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:\).
+
 
 > ### Note:  
 > Use of sample content and business content is optional and not part of the business functionality of the product. Content packages may be discontinued or replaced at any time.

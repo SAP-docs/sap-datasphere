@@ -1070,7 +1070,7 @@ Assets
 
 View detailed information for an asset, including the details for any term, tag, or KPI that is linked. 
 
-See [Evaluating Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.") :arrow_upper_right:
+See [Evaluating and Accessing Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1755,7 +1755,7 @@ Marketplace Data Products
 
 Search for a data marketplace data product, view the detailed information for it, and install it to a space.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), Marketplace data products, or data providers. For more information about these objects, see .") :arrow_upper_right: and [Evaluating Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.") :arrow_upper_right:.
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), Marketplace data products, or data providers. For more information about these objects, see .") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

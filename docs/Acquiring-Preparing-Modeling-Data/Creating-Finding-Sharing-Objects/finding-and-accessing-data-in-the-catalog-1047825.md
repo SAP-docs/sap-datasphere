@@ -278,7 +278,7 @@ You can use the Datarade Data Finder website to search and request additional th
 **Related Information**  
 
 
-[Evaluating Catalog Assets](evaluating-catalog-assets-dc061a2.md "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.")
+[Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.")
 
-[Evaluating Marketplace Data Products](evaluating-marketplace-data-products-92c35ef.md "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.")
+[Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.")
 
