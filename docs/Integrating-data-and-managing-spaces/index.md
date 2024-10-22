@@ -42,6 +42,7 @@
         -   [SAP S/4HANA Cloud Connections](Integrating-Data-Via-Connections/sap-s-4hana-cloud-connections-a98e5ff.md)
         -   [SAP S/4HANA On-Premise Connections](Integrating-Data-Via-Connections/sap-s-4hana-on-premise-connections-a49a1e3.md)
         -   [Connections to Partner Tools](Integrating-Data-Via-Connections/connections-to-partner-tools-55da0fa.md)
+    -   [Add a Connection to a System in Unified Customer Landscape to the Space](Integrating-Data-Via-Connections/add-a-connection-to-a-system-in-unified-customer-landscape-to-the-space-2629b2e.md)
     -   [Edit a Connection](Integrating-Data-Via-Connections/edit-a-connection-ba20892.md)
     -   [Validate a Connection](Integrating-Data-Via-Connections/validate-a-connection-99bd229.md)
     -   [Delete a Connection](Integrating-Data-Via-Connections/delete-a-connection-e90c290.md)

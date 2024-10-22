@@ -36,7 +36,7 @@ You can combine, filter, enrich and otherwise prepare data in views.
 -   You can prepare your data in a graphical no code/low code environment \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
     -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Graphical View* to open the editor.
     -   You can add and combine your sources by drag and drop \(see [Add a Source](add-a-source-1eee180.md), [Create a Join](create-a-join-947d6d8.md), and [Create a Union](create-a-union-5c3d354.md)\).
-    -   You can refine, filter, and enrich your data in the diagram \(see [Reorder, Rename, and Exclude Columns](reorder-rename-and-exclude-columns-b846d0d.md), [Create a Column](create-a-column-3897f48.md), [Filter Data](filter-data-6f6fa18.md), and [Aggregate Data](aggregate-data-7733250.md)\).
+    -   You can refine, filter, and enrich your data in the diagram \(see [Reorder, Rename, and Exclude Columns](reorder-rename-and-exclude-columns-b846d0d.md), [Create a Calculated Column](create-a-calculated-column-3897f48.md), [Filter Data](filter-data-6f6fa18.md), and [Aggregate Data](aggregate-data-7733250.md)\).
 
 -   By default, views are virtual and must be run each time they are accessed. You can improve performance by persisting the view \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
 
@@ -174,7 +174,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </td>
     <td valign="top">
     
-    Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
+    Share the selected tables and views to other spaces \(see [Sharing Tables and Views to Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
     
     </td>
     </tr>

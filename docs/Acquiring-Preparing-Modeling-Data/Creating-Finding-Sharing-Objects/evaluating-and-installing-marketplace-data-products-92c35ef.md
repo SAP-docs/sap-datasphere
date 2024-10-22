@@ -39,7 +39,7 @@ For example, when a data modeler reviews the details of a data product, they can
 
 <!-- concept\_czq\_hby\_tyb -->
 
-## Viewing the Header for a Data Product
+## Viewing the Header for a Marketplace Data Product
 
 The header provides high-level information about the data product.
 
@@ -184,7 +184,7 @@ Select a tab to view more information about the data product, such as an overvie
 
 <!-- concept\_nnp\_4by\_tyb -->
 
-## Viewing a Data Product's Properties
+## Viewing a Marketplace Data Product's Properties
 
 You can view the properties of the data product by selecting the *Overview tab* \> *Properties*.
 
@@ -429,7 +429,7 @@ Displays a link that shows the number of additional data products from the data 
 
 <!-- concept\_s3f\_vby\_tyb -->
 
-## Viewing the Details for a Data Product
+## Viewing the Details for a Marketplace Data Product
 
 You can view the details of the data product by selecting the *Overview tab* \> *Details*.
 
@@ -495,7 +495,7 @@ Review the installations for the data product. The information available include
 
 <!-- concept\_fls\_bjg\_2cc -->
 
-## Viewing the Documentation for a Data Product
+## Viewing the Documentation for a Marketplace Data Product
 
 You can view supporting documentation for the data product by selecting the *Documentation* tab.
 
@@ -601,7 +601,7 @@ Open the file explorer on your computer to find the sample dataset and then use 
 
 <!-- task\_wz2\_ymg\_2cc -->
 
-## Installing a Data Product
+## Installing a Marketplace Data Product
 
 
 

@@ -240,7 +240,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     </td>
     <td valign="top">
     
-    A remote table, view, intelligent lookup, data flow, replication flow \(load type *Initial Only*\), or transformation flow
+    A remote table, view, intelligent lookup, data flow, local table, replication flow \(load type *Initial Only*\), or transformation flow.
     
     </td>
     </tr>

@@ -6,6 +6,9 @@ Track the changes that will be made later on your local table after you have dep
 
 Local tables can be used as source data or target data by SAP Datasphere apps. For some business scenarios, you might need to keep an eye on changes that will be made after you have deployed your local table. For example, when you import a new csv file, or while running a replication flow, you might want to know which data is updated or deleted. When creating a local table, you can switch on a toggle that will capture the future updates made in your table.
 
+> ### Restriction:  
+> The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not permitted for external data access and is only consumed by the above SAP Datasphere internal apps. Using the internal delta capture columns \(*Change Date* or *Change Type*\) or their content directly or indirectly for external delta replication outside the Premium Outbound Integration is also not permitted. For more information, see [Premium Outbound Integration](https://blogs.sap.com/2023/11/16/replication-flow-blog-series-part-2-premium-outbound-integration/).
+
 
 
 <a name="loio154bdffb35814d5481d1f6de143a6b9e__section_uz2_bcm_2yb"/>
@@ -134,8 +137,8 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 -   Most SAP Datasphere apps consume a local table with delta capture through the *Active Records* table only. In these cases, local tables behave the same way independent of whether *Delta Capture* is set to "*On*" or "*Off*". For examples in Graphical Views, SQL Views, E/R Modeler or Business Builder.
 -   The following SAP Datasphere apps also interact with the Delta Capture Table that contains the delta columns:
     -   *Transformation Flow*:
-        -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source](add-a-source-ec702fe.md)
-        -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](processing-changes-to-sources-and-target-tables-705292c.md) and [Add or Create a Target Table](add-or-create-a-target-table-0950746.md) 
+        -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source to Your Transformation Flow](add-a-source-to-your-transformation-flow-ec702fe.md)
+        -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](processing-changes-to-sources-and-target-tables-705292c.md) and [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md) 
 
     -   *Replication Flow*: The Delta Capture Table can be used as source or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add a Source](add-a-source-7496380.md).
     -   *Table Editor*:
@@ -147,7 +150,4 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 
 > ### Note:  
 > If the table is used as source or target in an object, for example in a flow, you can see it in the table editor under dependent objects. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
-
-> ### Restriction:  
-> The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not permitted for external data access and is only consumed by the above SAP Datasphere internal apps. Using the internal delta capture columns \(*Change Date* or *Change Type*\) or their content directly or indirectly for external delta replication outside the Premium Outbound Integration is also not permitted. For more information, see [Premium Outbound Integration](https://blogs.sap.com/2023/11/16/replication-flow-blog-series-part-2-premium-outbound-integration/).
 

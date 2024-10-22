@@ -90,6 +90,6 @@ If you are not comfortable with SQL, you can still build a view by using the *Gr
 
 5.  Review the list of columns \(see [Columns](columns-8f0f40d.md)\).
 
-6.  Click the *Back* button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Add or Create a Target Table](add-or-create-a-target-table-0950746.md).
+6.  Click the *Back* button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
 
 

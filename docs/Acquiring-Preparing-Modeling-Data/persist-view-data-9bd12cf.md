@@ -120,8 +120,6 @@ For more information, see [Schedule a Data Integration Task (Simple Schedule)](h
 
 
 
-<a name="loio9bd12cf116ae40e09cdba8b60cf75e11__section_lmn_ffp_rbc"/>
-
 ## Persisted Views and Input Parameters
 
 Data persistence can be run in case a view contains a parameter only if the following prerequisites are met:

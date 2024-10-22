@@ -4,7 +4,7 @@
 
 # Create a Join
 
-Use a join operator to merge two data sets together using a join definition to match the records.
+Use a join operator to merge two datasets together using a join definition to match the records.
 
 
 

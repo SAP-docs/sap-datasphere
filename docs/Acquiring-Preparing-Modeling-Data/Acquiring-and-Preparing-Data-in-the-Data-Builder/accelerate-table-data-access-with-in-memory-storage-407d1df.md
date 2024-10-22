@@ -12,7 +12,7 @@ By default, table data is stored on disk. You can improve performance by enablin
 
 1.  Open your table in the table editor and scroll to the *Table Services* section.
 
-2.  Enable the following option:
+2.  Enable the following option:Update the property as follows:
 
 
     <table>

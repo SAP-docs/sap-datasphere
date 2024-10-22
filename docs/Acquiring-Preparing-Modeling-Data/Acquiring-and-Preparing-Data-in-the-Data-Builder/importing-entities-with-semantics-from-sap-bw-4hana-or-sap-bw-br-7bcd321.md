@@ -88,14 +88,13 @@ You can import entities from the following types of sources:
     <td valign="top">
     
     1.  Select the *SAP BW/4HANA* or *SAP BW Bridge* connection type, and then click *Next Step*.
-    2.  Select the target space that you want to import the entities into, and click *Next Step*.
+    2.  Select the connection/target space that you want to import the entities from/into, and click *Next Step*.
 
         If you opened the wizard from the <span class="FPA-icons-V3"></span> \(*Data Builder*\), only your current space can be selected.
 
         > ### Note:  
         > The *SAP BW Bridge* space cannot be selected as the target space. When importing entities from bridge, any remote tables are imported to the *SAP BW Bridge* space and automatically shared to your selected target space, where the remaining objects are created.
 
-    3.  Click the specific connection to the source you want to import from, and click *Next Step*.
 
 
     

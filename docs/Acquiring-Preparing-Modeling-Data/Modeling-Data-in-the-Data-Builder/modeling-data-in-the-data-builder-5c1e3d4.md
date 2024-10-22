@@ -14,8 +14,8 @@ This topic contains the following sections:
 -   [Support Translations of Attributes with a Text Entity](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_texts)
 -   [Enable Drill-Down with a Hierarchy](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchies)
 -   [Create Heterogeneous Hierarchies with a Hierarchy with Directory](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_hierarchy_with_directory)
--   [Expose View Data for Consumption Outside SAP Datasphere](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose)
 -   [Combine Entities for Consumption in an Analytic Model](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_analytic_model)
+-   [Expose Data Outside SAP Datasphere](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose)
 -   [Create Objects and Act On Existing Objects](modeling-data-in-the-data-builder-5c1e3d4.md#loio5c1e3d4a49554fcd8fcf199d664d1109__section_tools)
 
 
@@ -110,19 +110,6 @@ A hierarchy with directory is an entity that contains one or more parent-child h
 
 
 
-<a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose"/>
-
-## Expose View Data for Consumption Outside SAP Datasphere
-
-There are two methods for exposing view data for consumption outside SAP Datasphere:
-
--   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
--   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
-
-For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
-
-
-
 <a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_analytic_model"/>
 
 ## Combine Entities for Consumption in an Analytic Model
@@ -134,6 +121,151 @@ Once your fact is ready for use, create an analytic model from it to consume its
 -   You can deselect measures and attributes to leave only those that are relevant to answer your particular analytic question.
 -   You can create additional calculated and restricted measures \(see [Add Measures](add-measures-e4cc3e8.md)\).
 -   You can create multiple tightly-focused analytic models from a single fact, each providing only the data needed for a particular BI context, and enriched with appropriate variables, filters, and additional measures as necessary.
+
+
+
+<a name="loio5c1e3d4a49554fcd8fcf199d664d1109__section_expose"/>
+
+## Expose Data Outside SAP Datasphere
+
+Data can be exposed as analytic models, perspectives, and views, which are accessible to clients, tools, and apps as follows:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Object
+
+</th>
+<th valign="top">
+
+SAP Analytics Cloud
+
+</th>
+<th valign="top">
+
+Microsoft Excel
+
+</th>
+<th valign="top">
+
+Other Clients, Tools, and Apps
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Analytic models \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\)
+
+Exposed: Automatically
+
+</td>
+<td valign="top">
+
+Live Connection
+
+</td>
+<td valign="top">
+
+Live Connection \(via an SAP Add-In\)
+
+</td>
+<td valign="top">
+
+OData
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Perspectives \(see [Define Perspectives](../Buisiness-Builder/define-perspectives-ce26fd3.md)\)
+
+Exposed: Automatically
+
+</td>
+<td valign="top">
+
+Live Connection
+
+</td>
+<td valign="top">
+
+Live Connection \(via an SAP Add-In\)
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Views\* \(see [Exposing Data For Consumption](exposing-data-for-consumption-40ec77e.md)\)
+
+Exposed: When the *Expose for Consumption* switch is enabled
+
+</td>
+<td valign="top">
+
+OData\*\*
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+<td valign="top">
+
+OData
+
+ODBC/JDBC
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+For more information, see:
+
+</td>
+<td valign="top">
+
+-   [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives to create stories and analytic applications.") :arrow_upper_right:
+-   [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+-   [Consume Data in Microsoft Excel via an SAP Add-In](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/ef6e226fc32e48a5b3655fdb1102c0d5.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives in Microsoft Excel, via the SAP Analytics Cloud, add-in for Microsoft Excel.") :arrow_upper_right:
+
+
+
+</td>
+<td valign="top">
+
+-   [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API.") :arrow_upper_right:
+-   [Consume Data in Power BI and Other Clients, Tools, and Apps via ODBC/JDBC](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/4db6f5a329af44509ae422ad707877b2.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via an Open SQL schema and ODBC/JDBC.") :arrow_upper_right:
+
+
+
+</td>
+</tr>
+</table>
+
+\* The workflow of consuming views with a semantic usage of *Analytical Dataset* in SAP Analytics Cloud and Microsoft Excel via live connection is now deprecated. We recommend that you migrate your analytical datasets to the new *Fact* semantic usage and expose your view data via analytic models \(see [Analytical Datasets \(Deprecated\)](analytical-datasets-deprecated-70dab71.md)\).
+
+\*\* SAP Analytics Cloud primarily uses the consumption of view data via OData for planning \(see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:\).
+
+> ### Note:  
+> Before exposing data for consumption, you should consider applying row-level security via data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
 
 
 
@@ -240,7 +372,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </td>
     <td valign="top">
     
-    Share the selected tables and views to other spaces \(see [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
+    Share the selected tables and views to other spaces \(see [Sharing Tables and Views to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
     
     </td>
     </tr>

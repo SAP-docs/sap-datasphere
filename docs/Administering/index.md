@@ -67,6 +67,7 @@
     -   [Finding SAP Datasphere IP addresses](Preparing-Connectivity/finding-sap-datasphere-ip-addresses-0934f7e.md)
     -   [Manage Certificates for Connections](Preparing-Connectivity/manage-certificates-for-connections-46f5467.md)
     -   [Upload Third-Party ODBC Drivers \(Required for Data Flows\)](Preparing-Connectivity/upload-third-party-odbc-drivers-required-for-data-flows-b9b5579.md)
+    -   [Defining Allowed Spaces for Unified Customer Landscape Connections](Preparing-Connectivity/defining-allowed-spaces-for-unified-customer-landscape-connections-67ec785.md)
     -   [Prepare Connectivity to Adverity](Preparing-Connectivity/prepare-connectivity-to-adverity-a37a758.md)
     -   [Prepare Connectivity to Amazon Athena](Preparing-Connectivity/prepare-connectivity-to-amazon-athena-8d80f60.md)
     -   [Prepare Connectivity to Apache Kafka](Preparing-Connectivity/prepare-connectivity-to-apache-kafka-1483ceb.md)

@@ -65,11 +65,10 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     <td valign="top">
     
     1.  Select the *SAP S/4HANA Cloud* or *SAP S/4HANA* connection type, and then click *Next Step*.
-    2.  Select the target space that you want to import the entities into, and click *Next Step*.
+    2.  Select the connection/target space that you want to import the entities from/into, and click *Next Step*. 
 
-        If you opened the wizard from the <span class="FPA-icons-V3"></span> \(*Data Builder*\), only your current space can be selected.
+        If you opened the wizard from the <span class="FPA-icons-V3"></span> \(*Data Builder*\), only connections in your current space can be selected.
 
-    3.  Click the specific connection to the source you want to import from, and click *Next Step*.
 
 
     

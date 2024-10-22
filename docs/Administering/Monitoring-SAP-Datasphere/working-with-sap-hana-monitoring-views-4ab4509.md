@@ -691,7 +691,7 @@ You must:
 
 -   Create a space with the space ID *<SAP\_ADMIN\>* and the space name *<Administration \(SAP\)\>* and configure it as a monitoring space by enabling the toggle *Enable Access to SAP Monitoring Content Space* \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\).
 
--   Import the `Technical Content: Task Monitoring`package from the *Content Network* \(see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with the DW Administrator global role (or users with both a scoped DW Space Administrator role and a global role providing the Lifecycle privilege), can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:\).
+-   Import the `Technical Content: Task Monitoring`package from the *Content Network* \(see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "You can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:\).
 
 The following views are available:
 

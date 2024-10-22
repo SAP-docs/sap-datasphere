@@ -9,19 +9,20 @@ From <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\), you c
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
-The *Data Integration Monitor* is composed of several monitors that help you track how data is managed within your space:
+The *Data Integration Monitor* is composed of several monitors that help you track how data is managed within your space.
 
--   *Remote Tables*: Copy data for remote tables that have been deployed in your space and monitor the replication of the data. Copy or schedule copying the full set of data from the source, or set up replication of data changes in real-time via change data capturing \(CDC\). For more information, see [Replicating Data and Monitoring Remote Tables](replicating-data-and-monitoring-remote-tables-4dd95d7.md).
+-   *Remote Tables* : Copy data for remote tables that have been deployed in your space and monitor the replication of the data. Copy or schedule copying the full set of data from the source, or set up replication of data changes in real-time via change data capturing \(CDC\). For more information, see [Replicating Data and Monitoring Remote Tables](replicating-data-and-monitoring-remote-tables-4dd95d7.md).
 
     > ### Note:  
     > Remote tables from a source that is configured as data access *Remote Only* are not displayed in this monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md) 
 
--   *Local Tables*: Monitor all local tables which have been created in a space and display their metrics. From the detail screen, you can also delete table records on-demand, using filter conditions or using a schedule.
--   *Views*: Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
+-   *Local Tables* : Monitor all local tables which have been created in a space and display their metrics. From the detail screen, you can also delete table records on-demand, using filter conditions or using a schedule.
+-   *Local Tables \(Files\)* : Check how and when your local tables \(files\) were last updated and if new data has still to be merged. For more information, see  <?sap-ot O2O class="- topic/xref " href="6b2d0073a8684ee6a59d6f47d00ec895.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/gkb1727160449983/loiob8faae83b519439fb4ea9d0eb1a5f26e_en-US/src/content/localization/en-us/1611f7a9507f49a2b2ec74cbc374d0f9.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+-   *Views* : Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
 -   *Flows*: View and monitor the execution details of the executed data flows, replication flows or transformation flows. For more information, see [Monitoring Flows](monitoring-flows-b661ea0.md).
 -   *Remote Queries*:
     -   *Remote Queries*: Check and analyze how the communication is running between the federation layer of SAP HANA Cloud and the connected remote source systems. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
-    -   *Remote Table Statistics*: Create statistics for your remote tables to improve federated query execution. For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
+    -   *Remote Table Statistics* : Create statistics for your remote tables to improve federated query execution. For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
 
 -   *Task Chains*: Monitor the status and progress of running and past task chains. For more information, see [Monitoring Task Chains](monitoring-task-chains-4142201.md).
 

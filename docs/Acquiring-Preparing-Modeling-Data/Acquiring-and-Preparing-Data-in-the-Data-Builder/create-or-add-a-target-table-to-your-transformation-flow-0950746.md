@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Add or Create a Target Table
+# Create or Add a Target Table to Your Transformation Flow
 
 A transformation flow writes data to a target table. You can create a new target table or use an existing one.
 

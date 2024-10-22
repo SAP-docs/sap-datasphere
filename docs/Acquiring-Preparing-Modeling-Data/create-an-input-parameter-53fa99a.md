@@ -174,7 +174,7 @@ Views that contain input parameters require special treatment in the following s
         </td>
         <td valign="top">
         
-        Calculated Columns node \(see [Create a Column](create-a-column-3897f48.md)\)
+        Calculated Columns node \(see [Create a Calculated Column](create-a-calculated-column-3897f48.md)\)
 
         This expression will fill the column with a value calculated by taking the value in the `Total` column and deducting the percentage value entered by the user.
         

@@ -4,9 +4,9 @@
 
 Whether and how you can change the settings for a replication flow depends on several factors.
 
-For target objects in the local repository \(SAP Datasphere\), you can no longer use the mapping function to add columns to your target structure after you save the replication flow. However you can still add columns manually using the table editor. To make the corresponding changes in your replication flow, select the relevant target object and choose *Additional Options* \> ** \> *Map to Existing Target Object*. Then deploy and run the replication flow again.
+For target objects in the local repository \(SAP Datasphere\), you can no longer use the mapping function to add columns to your target structure after you save the replication flow. However you can still add columns manually using the table editor. To make the corresponding changes in your replication flow, select the relevant target object and choose *Additional Options* \> *Map to Existing Target Object*. Then deploy and run the replication flow again.
 
-For other target objects, you can use the mapping function to add columns to your target structure. Make sure redeploy the replication flow when you're done and manually implement the same changes in actual table structure before running the replication flow.
+For other target objects, you can use the mapping function to add columns to your target structure. Make sure to redeploy the replication flow when you're done and manually implement the same changes in actual table structure before running the replication flow.
 
 For replication flows that contain objects of type *Initial and Delta* and have the status *Active*, you can add or remove individual replication objects without stopping the replication flow run first. To do so, add or remove objects as required in the data builder, then save and deploy the flow again.
 

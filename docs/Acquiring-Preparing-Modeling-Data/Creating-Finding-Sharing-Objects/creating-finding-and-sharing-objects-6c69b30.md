@@ -36,5 +36,5 @@ Alternatively, you can browse for trusted data assets that have been published t
 
 ## Share Objects
 
-Only users assigned to a space can view objects in the space. To make a table or view in your space available to users assigned to another space, you must share it there \(see [Sharing Tables and Views To Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)\).
+Only users assigned to a space can view objects in the space. To make a table or view in your space available to users assigned to another space, you must share it there \(see [Sharing Tables and Views to Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md)\).
 

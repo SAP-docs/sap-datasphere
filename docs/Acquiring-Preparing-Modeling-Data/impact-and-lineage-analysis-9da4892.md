@@ -260,7 +260,7 @@ Persisted and replicated objects have their data copied locally to enhance perfo
 </td>
 <td valign="top">
 
-Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, tools and apps \(see [Exposing a View For Consumption](Modeling-Data-in-the-Data-Builder/exposing-a-view-for-consumption-40ec77e.md)\).
+Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, tools and apps \(see [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md)\).
 
 </td>
 </tr>

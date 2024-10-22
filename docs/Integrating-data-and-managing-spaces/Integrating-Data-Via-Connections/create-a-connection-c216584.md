@@ -18,9 +18,9 @@ See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116d
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\), select a space if necessary, and then click the *Local Connections* tab.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\) and select a space if necessary.
 
-2.  Click *Create* to open the connection creation wizard.
+2.  On the *Connections* tab, click <span class="FPA-icons-V3"></span> \(Add Connection\) ** \> *Create Connection* to open the connection creation wizard.
 
 3.  Click an appropriate connection type tile for your source.
 

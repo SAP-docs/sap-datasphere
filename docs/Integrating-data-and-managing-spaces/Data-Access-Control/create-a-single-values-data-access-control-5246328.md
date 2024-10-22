@@ -123,7 +123,9 @@ Before creating your data access control, you must have prepared a permissions e
     </td>
     <td valign="top">
     
-    Select the table or view containing your user ids and criteria.
+    Select the table or view containing your user ids and criteria. 
+
+    The permissions entity must match the structure selected in the *Structure* field. Click the *Open in New Tab* button to the right of the field to open the entity in its own editor.
     
     </td>
     </tr>

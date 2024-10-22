@@ -129,7 +129,7 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Status
+    Run Status
     
     </td>
     <td valign="top">
@@ -180,7 +180,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source. For some use cases, this property has a predefined value \(on or off\) that cannot be changed. 
+    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source.
 
     For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
     
@@ -196,7 +196,7 @@ For more information about available connection types, sources, and targets, see
     
     Select how you want to load the data \(initial only or initial and delta\).
 
-    Depending on the source and target you're planning to use, only one of the types may be available for use. For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -231,7 +231,7 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Object Object Thread Count for Delta Loads
+    Object Thread Count for Delta Loads
     
     </td>
     <td valign="top">

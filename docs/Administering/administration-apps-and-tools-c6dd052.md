@@ -391,6 +391,23 @@ Allocate the capacity units to storage and compute resources for your tenant.
 <tr>
 <td valign="top">
 
+*Unified Customer Landscape*
+
+</td>
+<td valign="top">
+
+Prepare a connection generated from an SAP BTP Unified Customer Landscape formation to allow its use in selected spaces.
+
+</td>
+<td valign="top">
+
+[Defining Allowed Spaces for Unified Customer Landscape Connections](Preparing-Connectivity/defining-allowed-spaces-for-unified-customer-landscape-connections-67ec785.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *System Information*
 
 </td>

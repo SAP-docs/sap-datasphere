@@ -25,7 +25,7 @@ SAP Datasphere helps you to:
 
 Your entities can be exposed for consumption:
 
--   Directly as relational objects via OData or ODBC \(views only\). See [Exposing a View For Consumption](exposing-a-view-for-consumption-40ec77e.md).
+-   Directly as relational objects via OData or ODBC/JDBC \(views only\). See [Exposing Data For Consumption](exposing-data-for-consumption-40ec77e.md).
 -   Combined and further refined and enriched via an analytic model. See [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md).
 -   Via further combination in the *Business Builder*. See [Modeling Data in the Business Builder](../Buisiness-Builder/modeling-data-in-the-business-builder-3829d46.md).
 

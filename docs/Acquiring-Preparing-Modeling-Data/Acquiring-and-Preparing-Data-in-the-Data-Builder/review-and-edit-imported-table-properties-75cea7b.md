@@ -344,7 +344,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     Share the object to other spaces. 
 
-    See [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    See [Sharing Tables and Views to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

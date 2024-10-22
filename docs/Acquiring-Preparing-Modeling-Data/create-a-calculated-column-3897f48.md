@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Create a Column
+# Create a Calculated Column
 
 Add a *Calculated Columns* node to create new columns and define calculations in them.
 

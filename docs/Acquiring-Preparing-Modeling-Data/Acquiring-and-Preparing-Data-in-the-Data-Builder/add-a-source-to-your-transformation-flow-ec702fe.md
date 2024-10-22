@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Add a Source
+# Add a Source to Your Transformation Flow
 
-Add a source to read data from.
+Add a source to your transformation flow to read data from.
 
 
 
@@ -94,12 +94,41 @@ Add a source to read data from.
     <tr>
     <td valign="top">
     
+    Delta Capture Table Name
+    
+    </td>
+    <td valign="top">
+    
+    Display the default name for the delta capture table \(Technical name + Delta\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Status
     
     </td>
     <td valign="top">
     
     The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delta Capture Settings
+    
+    </td>
+    <td valign="top">
+    
+    Indicates how you want to load the records from the table:
+
+    -   Delta capture: You want to load the delta changes to the target table.
+    -   All active records: You want to load the active records to the target table: It excludes both the delta capture columns and records marked as deleted.
+
+
     
     </td>
     </tr>
@@ -117,8 +146,6 @@ Add a source to read data from.
     </tr>
     </table>
     
-    If the delta capture setting is enabled for a table, you can view the *Delta Settings* section. By default, the option *Delta Capture* is selected. This option loads delta changes to the target table. If required, you can select the option *All Active Records* to load the full set of data to the target table.
-
     **Additional Information About Loading Delta Changes**
 
     To load delta changes from a source table \(including deleted records\), the delta capture setting must be enabled for the table. It is only possible to load delta changes from one source table. If you want to load delta changes from a source table, you need to ensure that the value of the option *Delta Capture* is *On* for both the source table and for the target table. In the *Transformation Flow Properties* panel, ensure that the load type *Initial and Delta* is selected.

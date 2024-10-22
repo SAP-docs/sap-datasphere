@@ -14,7 +14,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
 
 2.  Create a new *Graphical View Transform* for your transformation flow by clicking the *Graphical View Transform* button.
 
-3.  The system displays the *Graphical View Editor*. Add a source. For more information, see [Add a Source](add-a-source-ec702fe.md).
+3.  The system displays the *Graphical View Editor*. Add a source. For more information, see [Add a Source to Your Transformation Flow](add-a-source-to-your-transformation-flow-ec702fe.md).
 
 4.  Optional: Drag additional sources from the *Repository* tab or from the *Sources* tab and drop them onto a source to create a join or union. For more information, see [Create a Join](create-a-join-bcb5f48.md) and [Create a Union](create-a-union-9cd6fbf.md).
 
@@ -69,7 +69,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </td>
     <td valign="top">
     
-    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Column](../create-a-column-3897f48.md).
+    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Calculated Column](../create-a-calculated-column-3897f48.md).
     
     </td>
     </tr>
@@ -139,6 +139,6 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </tr>
     </table>
     
-6.  Click the *Back* button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Add or Create a Target Table](add-or-create-a-target-table-0950746.md).
+6.  Click the *Back* button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
 
 

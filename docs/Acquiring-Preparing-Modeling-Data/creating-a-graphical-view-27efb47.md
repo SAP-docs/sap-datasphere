@@ -12,13 +12,7 @@ Create a view to query sources in an intuitive graphical interface. You can drag
 
 If you are comfortable writing SQL code or want to use SQL Script to create your view, you can use the SQL View editor \(see [Creating an SQL View](creating-an-sql-view-81920e4.md)\).
 
-> ### Note:  
-> There are two methods for exposing view data for consumption outside SAP Datasphere:
-> 
-> -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
-> -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
-> 
-> For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
+For information about making your data accessible outside SAP Datasphere, see [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md).
 
 
 
@@ -87,7 +81,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     </td>
     <td valign="top">
     
-    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Column](create-a-column-3897f48.md) or [SAP HANA SQL and System Views Reference](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/20a61f29751910149f99f0300dd95cd9.html).
+    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Calculated Column](create-a-calculated-column-3897f48.md) or [SAP HANA SQL and System Views Reference](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/20a61f29751910149f99f0300dd95cd9.html).
     
     </td>
     </tr>
@@ -258,17 +252,9 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     </td>
     <td valign="top">
     
-    Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC. 
+    Enable this option to make the view available for consumption outside SAP Datasphere via OData or ODBC/JDBC. 
 
-    > ### Note:  
-    > There are two methods for exposing view data for consumption outside SAP Datasphere:
-    > 
-    > -   SAP Analytics Cloud \(and Microsoft Excel via an SAP add-in\) do not consume view data directly. Set the *Semantic Usage* of your view to *Fact* and then add it to an analytic model to expose it \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). There is no need to enable the *Expose for Consumption* switch.
-    > -   Other third-party BI clients, tools, and apps can consume data from views with any *Semantic Usage* via OData or ODBC if the *Expose for Consumption* switch is enabled.
-    > 
-    > For more information, see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
-
-
+    This option is not required if you want to expose your data through an analytic model \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\). For an overview about making your data accessible outside SAP Datasphere, see [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md).
     
     </td>
     </tr>
@@ -419,7 +405,7 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
     
     Share the object to other spaces. 
 
-    See [Sharing Tables and Views To Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    See [Sharing Tables and Views to Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

@@ -125,7 +125,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     </td>
     <td valign="top">
     
-    Track the delta changes that are made in the table adding 2 delta capture columns: `Change Type` and `Change Date`. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+    Track the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
     
     </td>
     </tr>
@@ -246,7 +246,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
     Share the object to other spaces. 
 
-    See [Sharing Tables and Views To Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    See [Sharing Tables and Views to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

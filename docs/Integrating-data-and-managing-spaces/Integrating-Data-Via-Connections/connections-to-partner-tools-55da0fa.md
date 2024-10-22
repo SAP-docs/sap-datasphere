@@ -19,7 +19,7 @@ After the connection has been created in the SAP Datasphere space, you can use i
 > 
 >     Once the partner tool fetches data from a source, in the *Data Builder* you can find the corresponding table in *Source Browser* \> *Sources* \> *Connections* \> *<partner connection name\>*. When importing the table into the *Data Builder*, a local table is created and deployed. You can use it the same way as any other table originating from an Open SQL schema.
 
-You can access the Open SQL Schema that has been generated for the partner connection from a third-party BI client via ODBC. For more information, see [Consume Data in Power BI and Other Clients, Tools, and Apps via ODBC](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/4db6f5a329af44509ae422ad707877b2.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via an Open SQL schema and ODBC.") :arrow_upper_right:.
+You can access the Open SQL Schema that has been generated for the partner connection from a third-party BI client via ODBC. For more information, see [Consume Data in Power BI and Other Clients, Tools, and Apps via ODBC/JDBC](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/4db6f5a329af44509ae422ad707877b2.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via an Open SQL schema and ODBC/JDBC.") :arrow_upper_right:.
 
 **Related Information**  
 
