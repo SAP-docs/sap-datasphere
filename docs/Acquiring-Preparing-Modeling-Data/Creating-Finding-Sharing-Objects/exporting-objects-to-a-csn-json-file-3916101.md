@@ -23,6 +23,7 @@ The *Export to CSN/JSON File* button is available in the following editors:
 -   Analytic models \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
 -   Entity-relationship models \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\)
 -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\)
+-   Task chains \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 
 
 
@@ -146,6 +147,18 @@ The *Export to CSN/JSON File* button is available in the following editors:
     <td valign="top">
     
     The definition of a data access control contains the definition of its permissions entity. When you export a data access control, the permissions entity is exported too.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Task Chains
+    
+    </td>
+    <td valign="top">
+    
+    The definition of a task chain does not include the objects that it automates. These objects must be selected manually.
     
     </td>
     </tr>

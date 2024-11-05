@@ -405,7 +405,7 @@ For information about making your data accessible outside SAP Datasphere, see [E
     
     Share the object to other spaces. 
 
-    See [Sharing Tables and Views to Other Spaces](Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    See [Sharing Entities and Task Chains to Other Spaces](Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

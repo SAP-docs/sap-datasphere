@@ -65,7 +65,7 @@ For more info, see [Replicating Data and Monitoring Remote Tables](replicating-d
 
 Table created from sources that have already been integrated into SAP Datasphere. It serves of source to create a view.
 
-For more information, see [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data from a flow or a CSV file. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 
 

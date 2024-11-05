@@ -4,7 +4,7 @@
 
 # Evaluating and Installing Marketplace Data Products
 
-You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.
+When you find a data product that interests you, you can view information about it to make sure it's the right one for your business needs. You can then test a sample dataset or install it to an SAP Datasphere space.
 
 
 
@@ -29,534 +29,17 @@ You also must be assigned as a member user for one or more spaces and be a membe
 > ### Note:  
 > If a data product is delivered using the Open SQL delivery mode, you must have access to a space and an Open SQL schema with credentials that you can share with the data provider.
 
-From the <span class="SAP-icons-V5"></span>\(*Catalog*\) home page, you can select the *Marketplace Data Products* filter to show only market place data products. Marketplace data products are high-quality coherent data sets you can use with other data projects within SAP Datasphere tenants in the same data region to help you make better business decisions.
+<a name="concept_atb_t5v_zcc"/>
 
-For each data product, you'll see the a preview of the data product, including its name, data type, and a short summary. When you find a data product that might suit your needs, select it to view its details page that provides many different types of information about it. This information can include a preview of its pricing information, marketing description and images, terms of use, and more.
+<!-- concept\_atb\_t5v\_zcc -->
 
-For example, when a data modeler reviews the details of a data product, they can review the pricing and installation information, review the terms of use and other supplemental documents, and download and test a sample dataset \(if available\).
+## Evaluating a Marketplace Data Product
 
-<a name="concept_czq_hby_tyb"/>
+From the <span class="SAP-icons-V5"></span>\(*Catalog*\) home page, you can select the *Marketplace Data Products* filter and then apply more filters or search terms to discover data products that can help you with your business goals.
 
-<!-- concept\_czq\_hby\_tyb -->
+To know for sure if a data product will met your needs, you can view the its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like it's name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation. For more information on the detailed information that you can review, see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md).
 
-## Viewing the Header for a Marketplace Data Product
-
-The header provides high-level information about the data product.
-
-![](images/Data_Product_Header_4616b40.png)
-
-
-<table>
-<tr>
-<th valign="top">
-
-Field
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Name and Type
-
-</td>
-<td valign="top">
-
-Displays the data product name and type.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Status and Product Views
-
-</td>
-<td valign="top">
-
-Displays the lifecycle status of the data product and the number of times it was viewed.
-
--   A data product that is listed is active and available for public or limited visibility. Catalog users can search for the data product.
--   A data product that is delisted is inactive and no longer available for consumers. Consumers who obtained the data product before it became inactive can still use it. However, support and updates from the data provider might be limited or not available.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Provider
-
-</td>
-<td valign="top">
-
-Displays the name of the data provider and contact information.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Contexts
-
-</td>
-<td valign="top">
-
-Displays the context for the data product. Contexts control who has access to the data product. For a user to be able to use a data product, they must belong to a context that is assigned to the data product. 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Access and Price
-
-</td>
-<td valign="top">
-
-Displays the license access type and the price for the data product.
-
-The data product has these different access types:
-
--   *Open*: The data product is free of charge and does not require a license key to activate it. This data product can be part of public domain data or data provided by a commercial data provider as give-away data. This data product is activated after accepting the data specific terms of use.
--   *License Key*: The data product requires a license key to activate it. The license key provides authorization to access one or multiple data products. License keys can be used for commercial data products, where the data provider sends the license key via email after closing the commercial agreement, or for any other type of product that needs access authorization \(for example for scenarios where non-public data is exchanged without payment\).
--   *On Request*: The data product must be requested from the data provider before you can have access to install it.
-
-For data products that require you to purchase a license key, the price, currency code, and pricing model are displayed.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Catalog Activity
-
-</td>
-<td valign="top">
-
-Displays the date when the data product was added to the catalog and when it was updated.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Toolbar
-
-</td>
-<td valign="top">
-
-The following tools are available for the data product.
-
--   *Install*: Opens a dialog for installing the free data product.
--   *Install with License Key*: Opens a dialog for installing a data product that requires a license key. If you are installing the data product for the first time, you must enter the license key to activate the data products. For subsequent installations, the license key will be marked as registered.
--   *Request Access*: Opens an email message that you can edit and send to the data provider to request access to the data product.
--   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used data products to your favorites.
-
-    Adding a data product to your favorites is different from using bookmarks. For more information about bookmarks, see [Using Bookmarks](../using-bookmarks-aec68bb.md).
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Tabs
-
-</td>
-<td valign="top">
-
-Select a tab to view more information about the data product, such as an overview of the data product's properties, sample data, terms of use, and more.
-
-</td>
-</tr>
-</table>
-
-<a name="concept_nnp_4by_tyb"/>
-
-<!-- concept\_nnp\_4by\_tyb -->
-
-## Viewing a Marketplace Data Product's Properties
-
-You can view the properties of the data product by selecting the *Overview tab* \> *Properties*.
-
-![](images/Data_Product_Properties_e8bbfe0.png)
-
-The properties are separated into the following areas: 
-
--   Data product properties are properties directly related to the data product, such as the name, shipment, lifecycle status and delivery mode of the data product.
--   Source properties are properties about the data provider or data aggregator.
-
-For more information about properties not described here, see the documentation for the data product.
-
-**Data Product Properties**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Field
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Business Name
-
-</td>
-<td valign="top">
-
-Displays the business name for the data product.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Product ID
-
-</td>
-<td valign="top">
-
-Displays the unique identifier for the data product.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Data Shipment
-
-</td>
-<td valign="top">
-
-Displays how the data product will be delivered to your space. The shipment varies depending on how the data provider offers the data product.
-
--   *Integrated Delivery*: The data is copied directly into the selected space. After the data product is activated, it is visible in the *Repository Explorer*, where it can be selected for use in an SAP Datasphere project. For example, the data product can be used as a source in the *Data Builder*. This type of data shipment is managed by Data Marketplace.
--   *External Delivery*: The data is delivered by sharing files outside SAP Datasphere. This type of data shipment is managed by the data provider.
--   *Open SQL*: The data is delivered by using an Open SQL Schema. Consumers create an OpenSQL Schema in the space and provide the information to the data provider using the Data Inbox. Once the data product is activated, consumers can access the data through the *Data Builder* and the provided schema appears as a source. This type of data shipment is managed by the data provider.
-
-For more information, see [Data Shipment](../data-shipment-837e749.md).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Delivery Pattern
-
-</td>
-<td valign="top">
-
-Displays the update cycle of the data product. For example, a data product can be updated biweekly, daily, monthly, quarterly, weekly, yearly, or other.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Size Category
-
-</td>
-<td valign="top">
-
-Displays the size of the data product, using the following ranges.
-
--   S: Less than 1000 records
--   M: Between 1000 and 100,000 records
--   L: Between 100,000 and 1 million records
--   XL: Between 1 million and 10 million records
--   XXL: Between 10 million and 100 million records
--   XXXL: More than 100 million records
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Status
-
-</td>
-<td valign="top">
-
-Displays the lifecycle status of the data product.
-
--   A data product is active when it is listed and available for public or limited visibility.
--   A data product is inactive when it is delisted, deactivated, deleted, or in draft. These data products are not available for consumers. Consumers who obtained a previously active data product before it became inactive can still use it. However, support and updates from the data provider might be limited or not available.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Delivery Mode
-
-</td>
-<td valign="top">
-
-Displays whether new deliveries \(for example, data updates\) are offered by the data provider and how these deliveries affect the existing data.
-
--   **Full Replication**: Delivers multiple data updates. You can find the updated data under *My Data Products*.
--   **Live Access**: Delivers data within the same tenant without replication. Because the data view is shared live with the target space, the data is always up-to-date and doesn’t require any update. In the target space, under **Shared Objects**, you can find the views in the repository corresponding to all other views shared with the space
--   **One-Time Replication**: Delivers data only once without any additional corrections or updates. This type of delivery is suited when the nature of the data doesn't require a refresh on the consumer side. For example, a snapshot of historical facts such as: NYC Taxi Trip Data of 2020. If the consumer needs to receive data corrections, they can re-load the data through **My Data Products** re-initialization.
-
-> ### Note:  
-> For data products that require a license key, the license validity is not effective for products with live access delivery.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Delivery Pattern Description
-
-</td>
-<td valign="top">
-
-Displays the description of the delivery pattern for the data product.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Visibility
-
-</td>
-<td valign="top">
-
-Displays who \(public or private\) can view the product details. Currently, only public data products can be offered and can be seen by all users.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Additional Properties
-
-</td>
-<td valign="top">
-
-Displays the additional properties for the data product. These properties are hidden by default and are visible after you select the **Show More** link.
-
--   Data Category: Displays one or more categories where the data product can be used.
--   Industry: Displays one or more industries where the data product can be used.
--   SAP Application: Displays one or more SAP Applications where the data product can be used.
--   Regional Coverage: Displays the countries and regions the data product is assigned for.
-
-
-
-</td>
-</tr>
-</table>
-
-**Source Properties**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Field
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Content Aggregator
-
-</td>
-<td valign="top">
-
-Displays the content aggregator's name. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Data Provider Page
-
-</td>
-<td valign="top">
-
-Displays a link to the data provider profile page that provides additional information about the data provider and other data products or product groups.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Data Provider Products
-
-</td>
-<td valign="top">
-
-Displays a link that shows the number of additional data products from the data provider.
-
-</td>
-</tr>
-</table>
-
-<a name="concept_s3f_vby_tyb"/>
-
-<!-- concept\_s3f\_vby\_tyb -->
-
-## Viewing the Details for a Marketplace Data Product
-
-You can view the details of the data product by selecting the *Overview tab* \> *Details*.
-
-![](images/Data_Product_Details_991f211.png)
-
-This section has tabs for sample data, available objects, and installations. Each tab has a table shows a preview of up to 20 rows. If there are more than 20 rows, select *Show All* to see the rest of the rows for the tab in a separate page.
-
-
-<table>
-<tr>
-<th valign="top">
-
-Tab
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Sample Data
-
-</td>
-<td valign="top">
-
-Review the contents of a sample dataset and download it if you think it might work for your needs. Sample data is usually in JSON format, but can only be downloaded as a Microsoft Excel file. Some data products offer free sample data that you can activate and then use for testing purposes. 
-
-This tab appears only if one or more samples are available.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Available Objects
-
-</td>
-<td valign="top">
-
-View a preview of all available dimensions and measures in the data product. The information available for the dimensions and measures includes the name of the object, a description, the attribute, delivery mode, and data filter.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Installations
-
-</td>
-<td valign="top">
-
-Review the installations for the data product. The information available includes the space name where the data product is installed and the date it was installed on.
-
-</td>
-</tr>
-</table>
-
-<a name="concept_fls_bjg_2cc"/>
-
-<!-- concept\_fls\_bjg\_2cc -->
-
-## Viewing the Documentation for a Marketplace Data Product
-
-You can view supporting documentation for the data product by selecting the *Documentation* tab.
-
-![](images/Data_Product_Documentation_tab_89287bd.png)
-
-
-<table>
-<tr>
-<th valign="top">
-
-Tab
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Pricing
-
-</td>
-<td valign="top">
-
-Displays the pricing information, the price with the currency code, and pricing model \(one time or monthly\) for the data product. If you need to purchase a license key for the data product, you can select the *URL for License Key Purchase* to purchase your own license.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Terms of Use
-
-</td>
-<td valign="top">
-
-Displays the terms of use for the data product.As a best practice, review the terms of use before installing the data product. By installing the data product, you agree to the terms as outlined by the data provider.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Attachments
-
-</td>
-<td valign="top">
-
-Displays a list of additional documents for the data product.These documents can include the following types:
-
--   **Legal**: Documents that outline the legal agreement between you and the data provider for using the data product.
--   **Supplemental**: Documents that describe the data available in the data product or provide other information about the data product and its terms of use \(for example, warranties and refund policies\).
-
-
-
-</td>
-</tr>
-</table>
+After you've evaluated and found a data product, use the following steps to download a sample dataset for testing or to install the data product in an SAP Datasphere space.
 
 <a name="task_y5j_bmg_2cc"/>
 
@@ -570,7 +53,7 @@ Displays a list of additional documents for the data product.These documents can
 
 ## Context
 
-After you find the data product you want and have evaluated it, you might want to test a sample dataset to see if it’s really what you need.
+If you want to further evaluate a data product, you can download a sample dataset \(if available\) and test it to see if it’s really what you need.
 
 
 
@@ -595,7 +78,7 @@ After you find the data product you want and have evaluated it, you might want t
 
 ## Results
 
-Open the file explorer on your computer to find the sample dataset and then use it where you need it. If it passes all your tests and satisfies your business needs, you can go back to the data product and install it in the space that you need it in.
+Open the file explorer on your computer to find the sample dataset and then use it where you need it. If it passes all your tests, you can go back to the data product and install it in the SAP Datasphere space that you need it in.
 
 <a name="task_wz2_ymg_2cc"/>
 
@@ -609,7 +92,7 @@ Open the file explorer on your computer to find the sample dataset and then use 
 
 ## Context
 
-After you decide that the data product is what you need, you can install it in any space you have access to and use in a data project.
+After you decide that the data product is what you need, you can install it in any SAP Datasphere space you have access to and use in a data project.
 
 
 
@@ -657,7 +140,13 @@ After you decide that the data product is what you need, you can install it in a
 
 ## Results
 
-The data product is installed in the space you selected. You can go to the *Repository Explorer* to find the data product and use it in a data project as a source. For example, in the *Data Builder*, you can create a graphical view. For information on preparing data in the *Data Builder*, see [Preparing Data in the Data Builder](../preparing-data-in-the-data-builder-f2e359c.md).
+Objects from the data product are created and deployed in the space you selected. You can view the objects in the *Repository Explorer* and start using them, or users can discover them in the catalog.
+
+-   In the *Repository Explorer*, select the space where the data product was installed to. When you find the objects from the data product, you can use them in a new or existing project as a source.
+
+    For example, in the *Data Builder*, you use the objects from the data product to create a graphical view. For information on preparing data in the *Data Builder*, see [Preparing Data in the Data Builder](../preparing-data-in-the-data-builder-f2e359c.md).
+
+-   In the catalog, users will be able to discover the objects. Select the *Assets* tab and use the filters or the search to find the objects. The objects are discoverable only if authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "After a source system is connected to the catalog, the catalog detects changes to the objects in the source system, extracts metadata for those objects, and then updates the corresponding assets in the catalog.") :arrow_upper_right:.
 
 <a name="concept_mhv_gxp_lcc"/>
 

@@ -158,13 +158,13 @@ See [Governing and Publishing in Catalog](https://help.sap.com/viewer/97d1d2f0e3
 
 -   *Catalog Glossary Object* \(CRUD---M\)
 
--   *Catalog Tag Hierarchy* \(CRUD------\)
-
--   *Catalog System* \(CRUDE---\)
-
 -   *Catalog KPI Object* \(CRUD---M\)
 
 -   *Catalog KPI Template* \(-RU-----\)
+
+-   *Catalog Tag Hierarchy* \(CRUD------\)
+
+-   *Catalog System* \(CRUDE---\)
 
 -   *Catalog Log* \(-R------\)
 
@@ -1070,7 +1070,7 @@ Assets
 
 View detailed information for an asset, including the details for any term, tag, or KPI that is linked. 
 
-See [Evaluating and Accessing Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.") :arrow_upper_right:
+See [Evaluating and Accessing Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "When you find an asset that interests you, you can view information about it to make sure it's the right one for your business needs. You can then choose to view or edit the asset in more details in its source system or use it in a data project.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1125,7 +1125,7 @@ See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e
 </td>
 <td valign="top">
 
-Catalog Asset: Read, Update
+Catalog Asset: `(-RU-----)` 
 
 Catalog Tag Hierarchy: `(-R------)` 
 
@@ -1146,7 +1146,7 @@ See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e
 </td>
 <td valign="top">
 
-Catalog Asset: Read, Update
+Catalog Asset: `(-RU-----)` 
 
 Catalog Tag Hierarchy: `(-R------)` 
 
@@ -1187,7 +1187,7 @@ Assets
 
 Manage the relationship for a term and an asset.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1227,7 +1227,7 @@ Assets
 </td>
 <td valign="top">
 
-Publish/Unpublish assets to the catalog.
+Publish/Unpublish assets to the catalog or exclude assets from being automatically published.
 
 See [Publishing Content to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "When you publish assets to the catalog, you determine what content is available for catalog users to discover. You can set source systems to automatically publish content, or you can be more involved and manually publish individual assets from the asset details page or manually publish small groups of assets from the catalog home page.") :arrow_upper_right:
 
@@ -1471,7 +1471,7 @@ Terms
 
 Create a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1492,7 +1492,7 @@ Terms
 
 Edit a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1513,7 +1513,7 @@ Terms
 
 Delete a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1534,7 +1534,7 @@ Terms
 
 Publish or unpublish a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1553,7 +1553,7 @@ Terms
 
 Manage the relationship for a term and an asset.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition to assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1755,7 +1755,7 @@ Marketplace Data Products
 
 Search for a data marketplace data product, view the detailed information for it, and install it to a space.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), Marketplace data products, or data providers. For more information about these objects, see .") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.") :arrow_upper_right:.
+See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), Marketplace data products, or data providers. For more information about these objects, see .") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "When you find a data product that interests you, you can view information about it to make sure it's the right one for your business needs. You can then test a sample dataset or install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1793,7 +1793,7 @@ Include these privileges in the custom role
 <tr>
 <td valign="top">
 
-Review assets: update asset names and descriptions, add tags, and publishe assets.
+Review assets: update asset names and descriptions, add tags, and publish assets.
 
 </td>
 <td valign="top">

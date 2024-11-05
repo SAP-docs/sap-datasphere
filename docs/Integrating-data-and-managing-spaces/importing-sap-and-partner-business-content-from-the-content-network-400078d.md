@@ -138,7 +138,7 @@ We also provide content for download at our [Community Content](https://github.c
     -   **Overwrite objects and data** - All imported objects in the space will be deployed.
 
     > ### Note:  
-    > This option does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Tables and Views to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
+    > This option does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
 
 
     

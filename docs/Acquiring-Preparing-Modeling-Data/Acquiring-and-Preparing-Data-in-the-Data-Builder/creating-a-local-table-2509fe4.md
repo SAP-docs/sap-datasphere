@@ -4,7 +4,7 @@
 
 # Creating a Local Table
 
-Create a table and define columns to receive data from a flow or a CSV file. You can also import tables from a connection or a CSN file.
+Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.
 
 
 
@@ -246,7 +246,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
     Share the object to other spaces. 
 
-    See [Sharing Tables and Views to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    See [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

@@ -8,11 +8,7 @@ You can search and browse for data providers. When you find a data provider, you
 
 
 
-<a name="loio9ce49dcb70df4065880342beec03e25e__prereq_fcb_p1y_tyb"/>
-
-## Prerequisites
-
-You must be assigned one of the following roles:
+To search for and view the details of a data provider, you must be assigned one of the following roles:
 
 -   DW Viewer
 -   DW Modeler
@@ -35,15 +31,11 @@ To learn more, see [Data Provider Vs Content Aggregator](https://help.sap.com/vi
 
 For example, if you’re a content aggregator, you might want to review the data provider profile of one of the companies that you manage so you can make sure their information is correct and that their data offerings are current. If any changes are needed, you can go to the Data Sharing Cockpit to make them. For more information, see [Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
 
-<a name="concept_czq_hby_tyb"/>
 
-<!-- concept\_czq\_hby\_tyb -->
 
-## Viewing the Header for a Data Provider
+You can review the header to get high-level information about the data provider.
 
-The header provides high-level information about the data provider.
-
-![](images/Data_Marketplace_Data_Provider_202efb5.png)
+**Data Provider Details Header**
 
 
 <table>
@@ -114,15 +106,9 @@ Select a tab to view more information about the data provider and their data pro
 </tr>
 </table>
 
-<a name="concept_nnp_4by_tyb"/>
 
-<!-- concept\_nnp\_4by\_tyb -->
 
-## Viewing a Data Provider's Properties
-
-You can view the properties of the data provider and data aggregator by selecting the *Overview tab* \> *Properties*.
-
-![](images/Data_Provider_Properties_e3a696a.png)
+To view the properties of the data provider, select *Overview tab* \> *Properties*.
 
 The properties are divided into the following sections: data provider properties and contact details. The following tables provide descriptions of the content you'll see. For more information about properties not described here, see the documentation for the data provider.
 
@@ -279,15 +265,15 @@ Displays the additional properties for the data provider. These properties are h
 
 Displays the contact details for the data provider and data aggregator, which can include the email address, address, and phone number.
 
-<a name="concept_r2r_fh3_2cc"/>
 
-<!-- concept\_r2r\_fh3\_2cc -->
 
-## Viewing a Data Provider's Data Products
+<a name="loio9ce49dcb70df4065880342beec03e25e__section_y52_qcn_bdc"/>
+
+## Data Provider's Data Products
 
 To see what types of data products the data provider offers, select *Overview tab* \> *Data Products*. This tab provides a list of all active and inactive data products from the data provider.
 
-![](images/Data_Marketplace_Data_Provider_Data_Products_Tab_241ed65.png)
+**Data Provider's Data Products**
 
 
 <table>
@@ -341,9 +327,12 @@ Displays the contexts that the data provider has data products for. For a user t
 </tr>
 </table>
 
-<a name="concept_a1y_yh3_2cc"/>
+> ### Tip:  
+> If you know which assets are impacted by or in the lineage of a certain data product, you can open the assets details page of the asset and view the impact and lineage analysis diagram. See the section **Analyzing the Impact and Lineage of an Asset** in [Catalog Asset Details](catalog-asset-details-afccc58.md).
 
-<!-- concept\_a1y\_yh3\_2cc -->
+
+
+<a name="loio9ce49dcb70df4065880342beec03e25e__section_gnd_zcn_bdc"/>
 
 ## Next Steps
 

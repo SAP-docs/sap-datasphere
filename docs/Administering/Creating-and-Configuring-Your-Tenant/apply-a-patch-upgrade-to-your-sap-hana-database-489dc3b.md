@@ -4,14 +4,20 @@
 
 # Apply a Patch Upgrade to Your SAP HANA Database
 
-As an SAP Datasphere administrator, you can upgrade your SAP HANA database. This ensures your system is up to date and running smoothly.
+As an SAP Datasphere administrator, you can manually upgrade your SAP HANA database. This ensures your system is up to date and running smoothly.
 
 
 
 ## Context
 
+Automated database upgrades are not impacted by your ability to upgrade your patch version manually. You can follow this procedure in cases where a patch upgrade resolves an issue with the previous patch version.
+
 > ### Note:  
-> This task is limited to patch upgrades. For example, if your current database version is 2024.28.3, and the next patch version of 2024.28.4 is available, you can upgrade. You cannot go from version 2024.28.4 to 2024.29.0, because that is a larger upgrade, not a patch.
+> To upgrade the SAP HANA database, you must have a global role that grants you the privilege System Information with the Update permission. The DW Administrator global role, for example, grants this privilege \(see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md)\).
+> 
+> This task is limited to patch upgrades. For example, if your current database version is 2024.28.3, and the next patch version of 2024.28.4 is available, you can upgrade. You cannot go from version 2024.28.4 to 2024.29.0, because that is a larger upgrade, not a patch
+> 
+> .
 
 
 

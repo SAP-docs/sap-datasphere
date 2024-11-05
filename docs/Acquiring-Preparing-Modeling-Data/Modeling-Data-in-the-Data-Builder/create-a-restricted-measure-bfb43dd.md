@@ -121,7 +121,7 @@ With a restricted measure, you can restrict available dimensions.
     </td>
     <td valign="top">
     
-    The exception aggregation determines how a measure is aggregated with regard to one or more dimensions.A dimension is needed for exception aggregation in order to define the granularity with which the aggregation rule is applied. For more information, see [Aggregation and Exception Aggregation](aggregation-and-exception-aggregation-88ca394.md).Exception aggregation is only supported for restricted measures if the source measure is a fact source measure. You can use the exception aggregation to calculate the stock for a given time. You can also define no restrictions for the restricted measure, and just use it for the exception aggregation.
+    The exception aggregation determines how a measure aggregated with regard to one or more dimensions.A dimension is needed for exception aggregation in order to define the granularity with which the aggregation rule is applied. For more information, see [Aggregation and Exception Aggregation](aggregation-and-exception-aggregation-88ca394.md).Exception aggregation is only supported for restricted measures if the source measure is a fact source measure. You can use the exception aggregation to calculate the stock for a given time. You can also define no restrictions for the restricted measure, and just use it for the exception aggregation.
     
     </td>
     </tr>

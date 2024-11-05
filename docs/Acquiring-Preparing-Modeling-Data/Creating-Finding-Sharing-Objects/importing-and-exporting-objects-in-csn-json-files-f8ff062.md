@@ -123,6 +123,18 @@ The definition of a data access control contains the definition of its permissio
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Task Chains
+
+</td>
+<td valign="top">
+
+The definition of a task chain does not include the objects that it automates. These objects must be selected manually.
+
+</td>
+</tr>
 </table>
 
 > ### Note:  

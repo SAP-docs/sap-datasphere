@@ -129,12 +129,24 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Run Status
+    Status
     
     </td>
     <td valign="top">
     
-    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`.For more detailed information, go to the flow monitor.
+    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`..For more detailed information, go to the flow monitor.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Frequency
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the run frequency, if applicable, for example `Scheduled`.
     
     </td>
     </tr>

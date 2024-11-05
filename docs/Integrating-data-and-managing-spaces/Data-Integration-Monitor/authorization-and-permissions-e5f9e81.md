@@ -66,6 +66,20 @@ To run *View Analyzer* without memory consumption, you must have a role that is 
 <tr>
 <td valign="top">
 
+*Generate Explain Plan* 
+
+</td>
+<td valign="top">
+
+You can generate the Explain Plan with the same permission required to run *View Analyzer* without memory consumption.
+
+To download the SQL analyzer plan file, you must have either the scoped role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Run *View Analyzer* with memory consumption
 
 </td>

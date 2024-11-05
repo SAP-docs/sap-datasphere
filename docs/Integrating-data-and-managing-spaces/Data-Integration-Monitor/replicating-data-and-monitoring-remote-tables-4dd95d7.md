@@ -12,9 +12,9 @@ The monitor shows the remote tables that have already been deployed in your spac
 
 SAP Datasphere is using two types of adaptors to connect to remote tables:
 
--   SAP HANA smart data integration \(used in connections with *Data Provisioning* option = *Data Provisioning Agent*\)
+-   SAP HANA smart data integration \(used in connections with *Data Provisioning* option = *Data Provisioning Agent*\).
 
--   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connection*\)
+-   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
 
 For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 

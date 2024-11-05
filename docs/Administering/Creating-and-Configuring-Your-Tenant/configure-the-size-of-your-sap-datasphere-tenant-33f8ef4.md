@@ -195,21 +195,17 @@ To reduce the size of your data lake storage, you must first delete your data la
 </td>
 <td valign="top">
 
-\[optional\] Select the size of SAP BW bridge using the dropdown menu, starting from 0 GB \(minimum\).
+\[optional\] Select the size of SAP BW bridge using the dropdown menu.
 
-SAP BW Bridge includes SAP BTP, ABAP environment, runtime and compute.
+SAP BW Bridge includes SAP BTP, ABAP environment, and an own HANA Cloud runtime and compute.
 
 > ### Caution:  
-> You can only change the SAP BW Bridge storage allocation, if no SAP BW Bridge instances are created.
-
-The process for allocating capacity units to SAP BW Bridge is not part of the configuration process.
+> You can only change the size of SAP BW bridge in Flexible Tenant Configuration as long as the tenant has not been created. After tenant creation, SAP BW bridge can be upsized by creating a support case on component DS-BWB.
 
 > ### Note:  
-> -   First finalize the size configuration of your tenant, then open the incident as a next step. Once the incident has been processed, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
+> -   First finalize the size configuration of your tenant. Then, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
 > 
-> -   SAP BW Bridge is not available in all regions. See SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
-> 
-> -   When using a test tenant with the minimal configuration \(128 GB of storage and 1 compute block\), you cannot add SAP BW Bridge storage unless you add more compute blocks.
+> -   For data center availability, check SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
 > 
 > -   As soon as you click *Save*, the allocated capacity units will be assigned to SAP BW Bridge.
 

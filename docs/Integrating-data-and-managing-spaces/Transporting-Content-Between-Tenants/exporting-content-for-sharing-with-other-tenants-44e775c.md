@@ -87,7 +87,7 @@ The definition of a remote table contains information about its connection.
 
 Local Tables
 
-See [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data from a flow or a CSV file. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+See [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -162,7 +162,7 @@ See [Creating an Entity-Relationship Model](https://help.sap.com/viewer/24f83607
 </td>
 <td valign="top">
 
-The definition of an E/R model does not include the objects that it visualizes as dependencies. These visualized objects must be selected manually.
+The definition of an E/R model does not include the objects that it visualizes as dependencies. These objects must be selected manually.
 
 </td>
 </tr>
@@ -190,7 +190,7 @@ See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c1544
 </td>
 <td valign="top">
 
-The definition of a task chain contains the definition of all the objects that it automates. When you export a task chain, these objects are exported too.
+The definition of a task chain does not include the objects that it automates. These objects must be selected manually.
 
 </td>
 </tr>
@@ -273,7 +273,7 @@ The definition of an authorization scenario contains the definition of its data 
     If an object depends on other objects, then they will also be selected. For example, when you select a view, all its sources and any used data access controls will be selected.
 
     > ### Note:  
-    > If an object selected for export depends on one or more objects that have been shared from other spaces \(see [Sharing Tables and Views to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects.") :arrow_upper_right:\), then you must be a member of each of those spaces in order to include all the necessary objects in your package.
+    > If an object selected for export depends on one or more objects that have been shared from other spaces \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:\), then you must be a member of each of those spaces in order to include all the necessary objects in your package.
     > 
     > If you are not a member of one or more sharing spaces, then you can still export your package \(no error will be displayed\), but it will fail to import correctly unless all the missing objects are already present in the target tenant.
     > 
@@ -351,7 +351,19 @@ The definition of an authorization scenario contains the definition of its data 
     </td>
     <td valign="top">
     
-    Select the sharing destinations for the export and their permissions on the content \(see [Adding Sharing Destinations](adding-sharing-destinations-562e996.md)\)
+    Select the sharing destinations for the export and their permissions on the content \(see [Adding Sharing Destinations](adding-sharing-destinations-562e996.md)\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Include Data Audit
+    
+    </td>
+    <td valign="top">
+    
+    Not used in SAP Datasphere.
     
     </td>
     </tr>
@@ -377,8 +389,8 @@ The definition of an authorization scenario contains the definition of its data 
 
     You can check the progress of your export in the *Notifications* list. You'll also receive a message when it is complete, and you can check the *Export Summary* to see the status of all the objects in the package.
 
-    When the export completes successfully, the package becomes available in the *My Content* section of the *Content Network* for the tenants you added.
+    When the export completes successfully, the package becomes available in the *Transport / Import / My Content* section of the *Import* app for the tenants you added.
 
-    You can edit the content, share it with other tenants, or delete it from the *Manage Packages* page \(see [Managing Exported Content](managing-exported-content-638bf6a.md)\).
+    You can edit the content, share it with other tenants, or delete it from the *Transport / Export / My Content* page \(see [Managing Exported Content](managing-exported-content-638bf6a.md)\).
 
 

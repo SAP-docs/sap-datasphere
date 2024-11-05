@@ -9,6 +9,7 @@ This topic contains the following sections:
 -   [Run a Data Validation](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_intro)
 -   [Key Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_keys)
 -   [Hierarchy Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_hierarchies)
+-   [Data Type Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_data_types)
 
 
 
@@ -209,6 +210,44 @@ No Circular Hierarchies
 No hierarchy node may have circular parent-child relationships.
 
 For example, if a hierarchy node `A` has a parent node `B`, then it may not also have node `B` as a direct child or other descendant.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loioed4063dc7f53436d806ea48f2fd3949a__section_data_types"/>
+
+## Data Type Validation Rules
+
+The following rules are available in the *Data Types* category:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Rule
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Consistent Data Types
+
+</td>
+<td valign="top">
+
+All columns must have appropriate data types.
+
+For example, if a column `A` is specified as having a data type `Date`, and SAP HANA Cloud determines that the data type must be `String(10)`, then this inconsistency may cause run-time errors or wrong data to be returned.
 
 </td>
 </tr>

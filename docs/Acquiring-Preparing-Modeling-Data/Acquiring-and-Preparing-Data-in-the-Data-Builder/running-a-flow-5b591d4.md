@@ -10,7 +10,7 @@ To run a flow, you have 3 main options depending on your flow type:
 
 -   Click *Run* to start a direct run.
 -   Click *Schedule* to run your data flow or your transformation flow at later time, or on regular basis \(this is not available for *Replication Flow*\).
--   Add the flow into a task chain. This is only valid for a data flow. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
+-   Add the flow into a task chain. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 
 > ### Caution:  
 > A data flow uses a technical user during run. So, if a source view or an underlying view of the source view uses the SESSION\_CONTEXT function, incorrect data is read from the view during the execution of the data flow. This results in incorrect data or no data in the output.
@@ -39,7 +39,7 @@ Once you have completed the flow configuration and saved it, you can run it. Cli
 > 
 > -   You can cancel a running transformation flow in the *Data Integration Monitor*. For more information, see [Cancel a Transformation Flow Run](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/ab885f05210f4a52aebe8306c8cad083.html "You want to cancel a transformation flow that is running.") :arrow_upper_right:.
 > 
-> -   If a source view or an underlying view of the source view has data access controls applied to it, then no data is read from the view during the execution of the transformation flow. This results in incorrect data or no data in the output.
+> -   If a source view or an underlying view of the source view has data access controls applied to it, then the transformation flow aborts with an error.
 > 
 >     For more information, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:.
 
@@ -63,7 +63,7 @@ You can also create a schedule to run your data flow or your transformation flow
 
 ## Run Your Data Flow Using a Task Chain
 
-You can run a data flow using a task chain. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
+You can run a flow using a task chain. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 
 Alternatively, you can also run your flows from the <span class="FPA-icons-V3"></span> \( Data Integration Monitor\).
 

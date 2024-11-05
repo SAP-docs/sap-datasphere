@@ -103,7 +103,9 @@ A restricted measure variable is used in the filter condition of a restricted me
     </td>
     <td valign="top">
     
-    Choose the Filter Type. The filter can be
+    Choose the *Filter Type*.
+
+    The filter can be
 
     -   a single value: The user should enter a single value to filter on. You can optionally specify a default value.
 

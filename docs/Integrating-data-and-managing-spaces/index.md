@@ -83,8 +83,11 @@
         -   [Data Persistence, Detailed Logs and Remote Statements](Data-Integration-Monitor/data-persistence-detailed-logs-and-remote-statements-9eb35ee.md)
         -   [Understanding the Data Persistence Metrics](Data-Integration-Monitor/understanding-the-data-persistence-metrics-d65994c.md)
         -   [Exploring Views with View Analyzer](Data-Integration-Monitor/exploring-views-with-view-analyzer-8921e5a.md)
+            -   [Getting Started with View Analyzer](Data-Integration-Monitor/getting-started-with-view-analyzer-e0aeddb.md)
             -   [Authorization and Permissions](Data-Integration-Monitor/authorization-and-permissions-e5f9e81.md)
+            -   [Analyze Results](Data-Integration-Monitor/analyze-results-9ad9b8b.md)
             -   [Warning Notifications](Data-Integration-Monitor/warning-notifications-8337d8d.md)
+            -   [Data Persistence Guidance](Data-Integration-Monitor/data-persistence-guidance-85f7be4.md)
     -   [Monitoring Flows](Data-Integration-Monitor/monitoring-flows-b661ea0.md)
         -   [Working With Existing Replication Flow Runs](Data-Integration-Monitor/working-with-existing-replication-flow-runs-da62e1e.md)
         -   [Cancel a Transformation Flow Run](Data-Integration-Monitor/cancel-a-transformation-flow-run-ab885f0.md)
@@ -124,5 +127,6 @@
     -   [Lock or Unlock Your Space](lock-or-unlock-your-space-c05b6a6.md)
     -   [Monitor Your Space Storage Consumption](monitor-your-space-storage-consumption-94fe6c1.md)
     -   [Manage Your Space via the Command Line](manage-your-space-via-the-command-line-34404bf.md)
+    -   [Export Your Space Data](export-your-space-data-27c7761.md)
     -   [Delete Your Space](delete-your-space-3eb19b9.md)
 

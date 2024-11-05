@@ -274,7 +274,8 @@ Provide business-friendly names for your table and its columns, identify its sem
     ![](images/Input_Parameter_for_Remote_Table_885d97e.jpg)
 
     > ### Restriction:  
-    > Parameters with data type cds.LargeBinary are not supported.
+    > -   Parameters with data type cds.LargeBinary are not supported.
+    > -   Your remote table must be connected via an SAP HANA smart data access adaptor \(used in connections with Data Provisioning option = Direct or Cloud Connector\).
 
     Tables that contain input parameters require special treatment in the following situations:
 
@@ -344,7 +345,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     Share the object to other spaces. 
 
-    See [Sharing Tables and Views to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md).
+    See [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

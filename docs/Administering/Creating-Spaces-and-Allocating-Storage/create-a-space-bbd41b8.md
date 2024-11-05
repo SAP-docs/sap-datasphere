@@ -254,8 +254,6 @@ Create a space, allocate storage, and set the space priority and statement limit
 
     All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\). Either an administrator or a user with space administrator privileges can do so.
 
-8.  \[optional\] The properties in the *Workload Management* section are set with their default values. To change them, go in the side navigation area and click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*.
-
-    For more information, see [Set Priorities and Statement Limits for Spaces](set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
+8.  \[optional\] The properties in the *Workload Management* section are set with their default values. To change them, go in the side navigation area and click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \(see [Set Priorities and Statement Limits for Spaces](set-priorities-and-statement-limits-for-spaces-d66ac1e.md)\).
 
 

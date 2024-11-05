@@ -58,7 +58,7 @@ The definition of a remote table contains information about its connection.
 
 Local Tables
 
-See [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data from a flow or a CSV file. You can also import tables from a connection or a CSN file.") :arrow_upper_right:.
+See [Creating a Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -133,7 +133,7 @@ See [Creating an Entity-Relationship Model](https://help.sap.com/viewer/24f83607
 </td>
 <td valign="top">
 
-The definition of an E/R model does not include the objects that it visualizes as dependencies. These visualized objects must be selected manually.
+The definition of an E/R model does not include the objects that it visualizes as dependencies. These objects must be selected manually.
 
 </td>
 </tr>
@@ -161,7 +161,7 @@ See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c1544
 </td>
 <td valign="top">
 
-The definition of a task chain contains the definition of all the objects that it automates. When you export a task chain, these objects are exported too.
+The definition of a task chain does not include the objects that it automates. These objects must be selected manually.
 
 </td>
 </tr>

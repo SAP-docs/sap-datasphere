@@ -95,7 +95,7 @@ Message Encoder
 </td>
 <td valign="top">
 
-Select the message format for the Kafka topic 
+Select the message format for the Kafka topic. 
 
 You can choose between AVRO and JSON \[default\]. If you select AVRO, the column name must consist of only alphanumeric and underscore characters, and it must start with a letter or an underscore.
 

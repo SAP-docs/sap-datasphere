@@ -426,7 +426,7 @@ Modelers can choose to share certain tables and views from their space to other 
 
 In our example, the modelers in the `HR` and `Sales` spaces share views to the `Sales EU` and `Sales US` spaces.
 
-See [Sharing Tables and Views to Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md).
+See [Sharing Entities and Task Chains to Other Spaces](sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
 
 
 

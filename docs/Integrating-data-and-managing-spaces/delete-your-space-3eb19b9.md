@@ -6,7 +6,6 @@ Delete a space if you are sure that you no longer need any of its content or dat
 
 This topic contains the following sections:
 
--   [Export Space Data Before Deletion](delete-your-space-3eb19b9.md#loio3eb19b96e6ba41dfbffd759c5c8370bb__section_lk4_xrc_rcc)
 -   [Delete Your Space](delete-your-space-3eb19b9.md#loio3eb19b96e6ba41dfbffd759c5c8370bb__section_scx_lmz_dcc)
 -   [Restore Your Space](delete-your-space-3eb19b9.md#loio3eb19b96e6ba41dfbffd759c5c8370bb__section_qjv_qnz_dcc)
 
@@ -18,31 +17,11 @@ When you delete a space, the space is moved to the *Recycle Bin* area and can be
 > ### Note:  
 > Before deleting your space, you may want to:
 > 
-> -   Export the data contained in your space \(see [Export Space Data Before Deletion](delete-your-space-3eb19b9.md#loio3eb19b96e6ba41dfbffd759c5c8370bb__section_lk4_xrc_rcc)\).
+> -   Export the data contained in your space \(see [Export Your Space Data](export-your-space-data-27c7761.md)\).
 > 
 > -   Export the audit log entries generated for your space \(see [Export Audit Logs](export-audit-logs-0c5dc64.md)\).
 
 Only administrators can create spaces. Both administrators and space administrators can delete spaces.
-
-
-
-<a name="loio3eb19b96e6ba41dfbffd759c5c8370bb__section_lk4_xrc_rcc"/>
-
-## Export Space Data Before Deletion
-
-If you want to keep the data contained in your space, you can export the data before you delete the space.
-
-
-
-To export data using the SAP HANA Database Explorer, follow these steps:
-
-1.  Expose for consumption the views containing the data you want to export \(see [Exposing Data For Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/40ec77ec24f244279a81448969a7e769.html "When your view is ready, you can make its data available for consumption in SAP Analytics Cloud and other clients, tools, and apps.") :arrow_upper_right:\).
-2.  Create a database user in your space \(see [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)\).
-
-3.  Connect to your Open SQL schema with SAP HANA database explorer \(see [Connect to Your Open SQL Schema](Integrating-Data-Via-Database-Users/Open-SQL-Schema/connect-to-your-open-sql-schema-b78ad20.md)\).
-
-4.  Export the data \(see [Export Schemas, Tables, and Other Catalog Objects](https://help.sap.com/docs/SAP_HANA_COCKPIT/e8d0ddfb84094942a9f90288cd6c05d3/1f20a6c4364c4b0680596e74e4ba281d.html) in the *SAP HANA Database Explorer* guide\).
-
 
 
 

@@ -141,7 +141,7 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
     </td>
     <td valign="top">
     
-    Select a runtime environment.
+    Select *Other*.
 
     > ### Note:  
     > Not all runtime environments are available for free.

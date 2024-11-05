@@ -372,7 +372,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     </td>
     <td valign="top">
     
-    Share the selected tables and views to other spaces \(see [Sharing Tables and Views to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-tables-and-views-to-other-spaces-64b318f.md)\).
+    Share the selected tables and views to other spaces \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\).
     
     </td>
     </tr>

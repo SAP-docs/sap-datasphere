@@ -76,7 +76,7 @@ Before you can use the connection for replication flows, the following is requir
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
-
+-   
 
 
 <a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP"/>

@@ -376,7 +376,7 @@ You can act on objects in the list in the following ways:
     
     Share the selected objects to other spaces. Allows multi-selection from a single space. 
 
-    For more information, see [Sharing Tables and Views to Other Spaces](sharing-tables-and-views-to-other-spaces-64b318f.md).
+    For more information, see [Sharing Entities and Task Chains to Other Spaces](sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
     
     </td>
     </tr>

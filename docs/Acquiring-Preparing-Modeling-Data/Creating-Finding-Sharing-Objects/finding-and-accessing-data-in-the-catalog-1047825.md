@@ -278,7 +278,7 @@ You can use the Datarade Data Finder website to search and request additional th
 **Related Information**  
 
 
-[Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md "After finding the asset you want, select it to view an overview of its information, a preview of its detailed metadata, and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.")
+[Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md "When you find an asset that interests you, you can view information about it to make sure it's the right one for your business needs. You can then choose to view or edit the asset in more details in its source system or use it in a data project.")
 
-[Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "You can search and browse for marketplace data products. When you find a marketplace data product, you can select it to view information about it to make sure it’s the right one for your business needs.")
+[Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "When you find a data product that interests you, you can view information about it to make sure it's the right one for your business needs. You can then test a sample dataset or install it to an SAP Datasphere space.")
 

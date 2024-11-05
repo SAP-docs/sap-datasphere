@@ -896,7 +896,7 @@ https://<tenant_url>/api/v1/scim2/Users/<user ID>
 > ### Note:  
 > When creating or modifying a user, you can add optional properties to the user.
 
-The following example shows how to assign a user to a role:
+The following example shows how to add a user to a role with a PUT request:
 
 ```
 {
@@ -934,6 +934,64 @@ The following example shows how to assign a user to a role:
     "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters": {
         "idpUserId": "lisa.garcia@company.com"
         }
+}
+
+```
+
+The following example shows how to remove a user from a role and add it to another role with a PATCH request:
+
+```
+{
+  "schemas": [
+    "urn:ietf:params:scim:api:messages:2.0:PatchOp"
+  ],
+  "Operations": [
+    {
+      "op": "replace",
+      "path": "roles",
+      "value": [
+      {
+          "value": "PROFILE:t.V:Sales_Modeler_US",
+          "display": "Sales_Modeler_US",
+          "primary": true
+        }
+      ]
+    }
+  ]
+}
+
+```
+
+The following example shows how to do the following changes with a PATCH request: remove a user from a role and add it to another role, and modify a user's email address and its idpUserId.
+
+```
+{
+  "schemas": [
+    "urn:ietf:params:scim:api:messages:2.0:PatchOp"
+  ],
+  "Operations": [
+    {
+      "op": "replace",
+      "path": "roles",
+      "value": [
+      {
+      "value": "PROFILE:t.V:Sales_Modeler_US",
+      "display": "Sales_Modeler_US",
+      "primary": true
+      }
+     ]
+    },
+    {
+      "op": "replace",
+      "path": "emails.value",
+      "value": lisa.garcia+1@company.com
+    },
+    {
+      "op": "replace",
+      "path": "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters.idpUserId",
+      "value": lisa.garcia+1@company.com
+    }
+  ]
 }
 
 ```
@@ -1221,7 +1279,7 @@ Example:
 
 ## Bulk Operations
 
-To create, modify or delete users in bulk, use the POST request with the `/api/v1/scim2/Users/` endpoint and the following elements:
+To create, modify or delete users in bulk, use the POST request with the `/api/v1/scim2/Bulk/` endpoint and the following elements:
 
 
 <table>
@@ -1314,7 +1372,7 @@ key
 
 The supported operations are POST, PUT, PATCH and DELETE.
 
-Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/api/v1/scim2/Users/</code>
+Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/api/v1/scim2/Bulk/</code>
 
 > ### Note:  
 > A maximum of 30 operations per request can be processed.

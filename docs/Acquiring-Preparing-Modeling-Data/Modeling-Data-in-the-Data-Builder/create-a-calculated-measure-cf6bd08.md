@@ -102,7 +102,7 @@ A calculated measure references other measures and allows the combination of mea
     </td>
     <td valign="top">
     
-    The exception aggregation determines how a measure is aggregated with regard to one or more dimensions.A dimension is needed for exception aggregation in order to define the granularity with which the aggregation rule is applied. For more information, see [Aggregation and Exception Aggregation](aggregation-and-exception-aggregation-88ca394.md).
+    The exception aggregation determines how a measure is aggregated with regard to one or more dimensions.[Aggregation and Exception Aggregation](aggregation-and-exception-aggregation-88ca394.md).
     
     </td>
     </tr>

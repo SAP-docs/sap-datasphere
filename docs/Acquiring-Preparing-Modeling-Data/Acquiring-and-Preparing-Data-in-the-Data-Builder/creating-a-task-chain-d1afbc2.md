@@ -12,7 +12,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Prerequisites
 
--   The DW Modeler role is required to create task chains, and the additional DW Integrator role is required to set up email notification for completion of task chain runs, and to run the activity *Delete Records with Change Type "Deleted"* in the case of local table with delta capture enabled. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. In addition to these two role privileges, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members. See [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
+-   The DW Modeler role is required to create task chains as well as share task chains with other spaces. The additional DW Integrator role is required to run task chains shared from other spaces as well as set up email notification for completion of task chain runs. In addition, this role is required to run the activity *Delete Records with Change Type "Deleted"* in the case of local table with delta capture enabled. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. In addition to these two role privileges, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members. See [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
 
 -   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the schema’s owner must grant EXECUTE privileges to the space user for objects in the Open SQL schema. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
 -   Objects must have been already deployed, so that they can be added to the task chain. Task chains must also be deployed to allow selection of tenant users or specify email addresses for notification of task chain completion.
@@ -27,7 +27,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Context
 
-You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Intelligent Lookup, Data Flow, Replication Flow \(load type *Initial Only*\), and Transformation Flow runs. You can also include non-repository objects such as SAP HANA Open SQL schema procedures. In addition, you can nest other existing task chains in new or different task chains.
+You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Local Tables, Intelligent Lookups, Data Flows, Replication Flows \(load type *Initial Only*\), and Transformation Flows. You can also include non-repository objects such as SAP HANA Open SQL schema procedures. In addition, you can nest other existing, locally-created or shared task chains in other task chains, as well as share task chains you've created to other spaces.
 
 > ### Note:  
 > For remote table and view objects included in a task chain, you have the option, by default, to replicate or persist the data associated with the corresponding remote tables or views. Or, you can choose to remove the replicated or persisted data by selecting that option in the *Activities* section of an object’s *Properties* detail display.
@@ -59,7 +59,9 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
 2.  From the left-side panel, drag and drop a first object on to the task chain canvas from those available in the repository \(from the *Repository* tab\), or non-repository objects \(selected from the *Others* tab\).
 
     > ### Note:  
-    > From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, and transformation flow objects that meet prerequisites and are available to be added to the task chain. From the *Others* tab, you can see the non-repository Open SQL schema procedures you can add to a task chain. For more information on adding Open SQL schema procedures from the *Others* tab, see [Running Open SQL Procedures in a Task Chain](running-open-sql-procedures-in-a-task-chain-59b9c77.md).
+    > From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, transformation flow objects and task chains that meet prerequisites and are available to be added to the task chain. Task chains you've shared or have been shared with you from another space are denoted by the <span class="FPA-icons-V3"></span> \(Share\) icon following the task chain's business name. For more information on sharing and running shared task chains, see [Nesting and Sharing Task Chains](nesting-and-sharing-task-chains-8067b77.md).
+    > 
+    > From the *Others* tab, you can see the non-repository Open SQL schema procedures you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Running Open SQL Procedures in a Task Chain](running-open-sql-procedures-in-a-task-chain-59b9c77.md).
     > 
     > For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that data will be removed. If the data is being replicated via Real Time Replication, and you choose the *Remove Replicated Data* option, that table's data will also be removed and the object’s data access method will be changed to Remote access. For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
 
@@ -262,13 +264,13 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   Replication Flow - Run
     -   Transformation flow - Run
     -   Local table - Delete Records with Change Type "Deleted"
+    -   Task Chain - Run
 
-    > ### Note:  
-    > For remote table and view objects included in a task chain, the default option lets you replicate or persist the data associated with the remote table or view respectively. Or, you can choose to remove the replicated or persisted data.
-    > 
-    > -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that table's data will be removed. If the data is being replicated via Real Time Replication, the table's data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table log to indicate that the data access type has been changed when the remote table object is run.\)
-    > 
-    > -   For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
+    For remote table and view objects included in a task chain, the default option lets you replicate or persist the data associated with the remote table or view respectively. Or, you can choose to remove the replicated or persisted data.
+
+    -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that table's data will be removed. If the data is being replicated via Real Time Replication, the table's data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table log to indicate that the data access type has been changed when the remote table object is run.\)
+
+    -   For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
 
 
     
@@ -288,8 +290,10 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     </tr>
     </table>
     
+    When you add a shared task chain to the current task chain, the Properties display also lists the space from which the task chain was shared, when that object is selected.
+
     > ### Note:  
-    > When you select an object, you can delete it from the task chain or navigate to the corresponding editor for that object.
+    > When you select an object, you can also delete it from the task chain or navigate to the corresponding editor for that object.
 
 6.  When you’ve finished adding objects to the task chain, save and deploy your new task chain.
 
@@ -303,6 +307,12 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     After creating and deploying a task chain, you can optionally set up email notification for completion of task chain runs. For more information, see [Configuring Email Notification](configuring-email-notification-7ff6a4e.md).
 
     After you've finished making changes and optionally setting up email notification for the task chain, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+
+    > ### Note:  
+    > In addition to running a task chain, you can also share or export the task chain following deployment:
+    > 
+    > -   To share a task chain to another space, click the editor toolbar <span class="FPA-icons-V3"></span> \(Share\) icon. You are then prompted to specify one or more spaces you want to share the task chain to. For more information, see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
+    > -   To export the definition of a task chain to a CSN/JSON file, which may later be imported again in the same space or other spaces, click the <span class="FPA-icons-V3"></span> \(Export\) icon. Note that the exported file does not create the objects defined in the task chain or include the recipients of email notification for the exported task chain. For more information on exporting objects, see [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
 
     Once a task chain run has started, it will continue running as long as possible. Until all tasks in the chain have been completed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain has "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
 
@@ -371,6 +381,20 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     <tr>
     <td valign="top">
     
+    <span class="FPA-icons-V3"></span> \(Share\)
+    
+    </td>
+    <td valign="top">
+    
+    Share the object to other spaces.
+
+    See [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     <span class="FPA-icons-V3"></span> \(Source Browser\)
     
     </td>
@@ -391,6 +415,20 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     <td valign="top">
     
     Revert the last change to the object or redo a change you have previously undone.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export the object to a CSN/JSON file.
+
+    See [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
     
     </td>
     </tr>

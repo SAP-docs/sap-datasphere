@@ -3,7 +3,7 @@
 -   [Administering SAP Datasphere](administering-sap-datasphere-70ee87c.md)
     -   [Administration Apps and Tools](administration-apps-and-tools-c6dd052.md)
     -   [System Requirements and Technical Prerequisites](system-requirements-and-technical-prerequisites-70ffed4.md)
-    -   [Request Help from SAP Support](request-help-from-sap-support-831a977.md)
+    -   [Request Help from SAP Technical Support](request-help-from-sap-technical-support-831a977.md)
 -   [Creating and Configuring Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/creating-and-configuring-your-sap-datasphere-tenant-2f80b57.md)
     -   [Create Your SAP Datasphere Service Instance in SAP BTP](Creating-and-Configuring-Your-Tenant/create-your-sap-datasphere-service-instance-in-sap-btp-54288aa.md)
     -   [Configure the Size of Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)
