@@ -82,7 +82,7 @@ CONNECTION\_ID
 Enter the ID of the connection to the database, which corresponds to the statement that you want to stop.
 
 > ### Note:  
-> You can find the connection ID in <span class="FPA-icons-V3"></span> \(*System Monitor*\)** \> *Logs* \> *Statements*, then the column *Connection ID*.
+> You can find the connection ID in <span class="FPA-icons-V3"></span> \(*System Monitor*\)** \> *Statement Logs*, then the column *Connection ID*.
 
 
 

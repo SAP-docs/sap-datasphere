@@ -4,6 +4,9 @@
 
 You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.
 
+> ### Tip:  
+> This text explains the options related to replication flow **runs** \(in the context of monitoring\). For information about how to make changes to an existing replication flow in the *Data Builder*, see [Editing an Existing Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+
 This topic contains the following sections:
 
 -   [Statuses for Replication Flow Runs](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RunStatuses) 
@@ -12,7 +15,8 @@ This topic contains the following sections:
 -   [Monitoring Premium Outbound Volume](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_POI) 
 -   [Stopping a Replication Flow Run](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Stopping) 
 -   [Space Deletion](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_SpaceDeletion) 
--   [Removing Replication Objects from a Running Replication Flow](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects) 
+-   [Adding or Removing Replication Objects](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects) 
+-   [Changing the Delta Interval for a Replication Flow](working-with-existing-replication-flow-runs-da62e1e.md#loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_ChangeDeltaInterval) 
 
 
 
@@ -53,10 +57,12 @@ When you resume the flow, the system replicates all source data changes that hap
 
 ## Monitoring Premium Outbound Volume
 
-When you open the *Flows* monitor for a replcation flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for all replication flow runs with premium outbound integration \(replication to a non-SAP target\) in this tenant during the last 90 days.
+When you open the *Flows* monitor for a replcation flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for all replication flow runs with premium outbound integration \(replication to a non-SAP target\) in this tenant during the last 360 days.
 
 > ### Note:  
-> The value may change significantly from one day to the other, for example when you run an initial load for a replication flow, or when an initial load drops out of the statistics because it happened more than 90 days ago.
+> -   The value may change significantly from one day to the other, for example when you run an initial load for a replication flow, or when an initial load drops out of the statistics because it happened more than 360 days ago.
+> 
+> -   The retention period has been increased from 90 days to 360 days starting as of July 11, 2024, so depending on when you access this feature you may see the data for less than 360 days.
 
 The value is updated once per hour.
 
@@ -66,7 +72,7 @@ The value is updated once per hour.
 
 ## Stopping a Replication Flow Run
 
-If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather then from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. For more information, see [Deleting a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. For more information, see [Deleting a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
 
 
 
@@ -74,13 +80,28 @@ If you do so, the flow run is stopped permanently in SAP Datasphere as well as i
 
 ## Space Deletion
 
-If you have replication flows in a space that is about to be deleted, make sure to stop your replication flows before space deletion starts. This helps to avoid issues during space deletion and makes it possible for you to start the replication flows again if the space gets restored. When the space gets permanently deleted, all replication flows in it are deleted as well. For more information about space deletion, see [Delete Your Space](../delete-your-space-3eb19b9.md).
+If you have replication flows in a space that is about to be deleted, make sure to stop your replication flows before space deletion starts. This helps to avoid issues during space deletion and makes it possible for you to start the replication flows again if the space gets restored at a later point in time.
+
+When a space gets permanently deleted, all replication flows in it are deleted as well.
+
+For more information about space deletion, see [Delete Your Space](../delete-your-space-3eb19b9.md).
 
 
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects"/>
 
-## Removing Replication Objects from a Running Replication Flow
+## Adding or Removing Replication Objects
 
-You can remove individual replication objects from a running replication flow without stopping the replication flow run. To do so, choose the *Remove* button to the right of each object you want to remove, then deploy the flow once again. The relevant objects are then no longer replicated. Any data for the removed objects that already exists in the target \(from previous runs\) remains as-is.
+This can be done in the *Data Builder*, see [Editing an Existing Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+
+> ### Note:  
+> Adding or removing objects without stopping the replication flow first is only possible for replication flows in status *Active*.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_ChangeDeltaInterval"/>
+
+## Changing the Delta Interval for a Replication Flow
+
+This can be done in the *Data Builder*, see [Editing an Existing Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 

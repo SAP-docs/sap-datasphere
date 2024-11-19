@@ -31,7 +31,7 @@ In this example, *Regional Sales* is a *Fact* with:
 
 1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Fact*.
 
-2.  \[views\] To make your view available for consumption outside SAP Datasphere enable the *Expose for Consumption* property \(see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:\).
+2.  \[views\] To make your view available for consumption outside SAP Datasphere enable the *Expose for Consumption* property \(see [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:\).
 
     > ### Note:  
     > To consume your data in SAP Analytics Cloud, add it to an analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).

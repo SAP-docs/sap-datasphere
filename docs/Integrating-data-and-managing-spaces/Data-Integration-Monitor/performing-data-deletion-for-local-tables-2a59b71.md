@@ -46,7 +46,7 @@ Displays the size used by the local table if it is stored on the disk.
 </td>
 <td valign="top">
 
-Displays the size used by the table, if it is stored in-memory. For more information, see [Accelerate Table Data Access with In-Memory Storage](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/407d1dff76a842699ea08c17eb8748dd.html "By default, when you are working in an SAP HANA Cloud, SAP HANA database space, table data is stored on disk. You can improve performance by enabling in-memory storage.") :arrow_upper_right: 
+Displays the size used by the table, if it is stored in-memory. For more information, see [Accelerate Table Data Access with In-Memory Storage](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/407d1dff76a842699ea08c17eb8748dd.html "By default, table data is stored on disk. You can improve performance by enabling in-memory storage.") :arrow_upper_right: 
 
 </td>
 </tr>

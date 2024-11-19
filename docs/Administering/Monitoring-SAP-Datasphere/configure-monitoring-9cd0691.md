@@ -154,7 +154,7 @@ You need the DW Administrator role to access the *Monitoring* page.
     </tr>
     </table>
     
-    If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statements* tab in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
+    If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statement Logs* tab in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
 
 5.  To trace elastic compute node data, select *Enable Elastic Compute Node Data Tracing* and save.
     -   If the tracing is disabled, only the statements of currently running nodes are displayed in the *System Monitor*. If a node is stopped, its information is deleted.

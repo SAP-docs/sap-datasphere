@@ -28,5 +28,5 @@ You can delete users.
 
 [Import or Modify Users from a File](import-or-modify-users-from-a-file-b2698da.md "You can create users or batch-update existing users by importing user data that you have saved in a CSV file.")
 
-[Update User Email Addresses](update-user-email-addresses-0889208.md "You can update the user email addresses used for logon.")
+[Update a User Email Address](update-a-user-email-address-0889208.md "You can update a user email address used for logon.")
 

@@ -505,6 +505,18 @@ For information about making your data accessible outside SAP Datasphere, see [E
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Details
+    
+    </td>
+    <td valign="top">
+    
+    Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
     </table>
     
 

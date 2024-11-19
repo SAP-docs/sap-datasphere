@@ -302,6 +302,18 @@ The work that you do in an E/R model benefits all the users in your space as the
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Details
+    
+    </td>
+    <td valign="top">
+    
+    Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
     </table>
     
 

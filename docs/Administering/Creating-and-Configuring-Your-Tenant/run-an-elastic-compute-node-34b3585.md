@@ -146,7 +146,7 @@ Monitor an elastic compute node to see for example all its start and stop runs o
 
 2.  Click *View Logs*.
 
-    The *Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node. For more information about logs in the *System Monitor*, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
+    The *Statement Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node. For more information about logs in the *System Monitor*, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
 
     If local tables or persisted views were not replicated, you can go back to the elastic compute node and update it to replicate them.
 

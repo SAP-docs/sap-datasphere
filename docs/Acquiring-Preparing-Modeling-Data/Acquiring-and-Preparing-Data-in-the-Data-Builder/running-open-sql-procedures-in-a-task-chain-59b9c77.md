@@ -4,6 +4,8 @@
 
 # Running Open SQL Procedures in a Task Chain
 
+Include and run Open SQL schema procedures in a task chain: Users must have EXECUTE privileges for objects in the Open SQL schema space to include and run Open SQL procedures from a task chain.
+
 
 
 <a name="loio59b9c773035a48c5beb54ce9bb29f1d8__prereq_ccw_sdc_gtb"/>

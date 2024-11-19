@@ -33,9 +33,25 @@ You can create one or more data access controls that consume each permissions en
 
 We recommend that you develop clear policies for securing data, and that you:
 
--   Secure data as soon as possible once it is ingested into SAP Datasphere and then only use the protected view going forward.
--   Recreate permissions/authorizations from the source system where possible, including via import for SAP BW \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](import-sap-bw-and-sap-bw-4hana-analysis-authorizations-f56e427.md)\).
 -   Focus in particular on securing transactional data and sensitive master data.
+-   Recreate permissions/authorizations from the source system where possible, including via import for SAP BW \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](import-sap-bw-and-sap-bw-4hana-analysis-authorizations-f56e427.md)\).
+-   Avoid applying multiple data access controls to a view if possible.
+-   Secure data as soon as possible once it is ingested into SAP Datasphere and then only use the protected view going forward, keeping the following factors in mind as you plan your modeling strategy for security and performance:
+    -   Encapsulating individual source tables in views and applying data access controls to them:
+        -   Improves performance by filtering records immediately, as fewer go forward for subsequent preparation.
+        -   Can impact performance when any view that combines multiple sources is run, by increasing the number of data access controls that must be applied.
+        -   Can impact performance by excluding the possibility of persisting subsequent views, since views cannot be persisted if any of their sources is protected by a data access control.
+
+    -   Doing initial processing and joining separate data sources before applying a single, more targeted data access control to the result:
+        -   Improves performance by applying only a single data access control to a combined view.
+        -   Improves performance by allowing the use of persistence at any stage during the preparation.
+        -   Can impact performance as more records will pass through each stage of the data preparation.
+
+
+-   When using *Operator and Values* data access controls, try to control the size of the permissions entity and, in particular, avoid having more than 5,000 permissions records for a single user:
+    -   Consider applying the filter against a different column that could simplify calculation.
+    -   You can use the `*` operator to provide access to all records.
+
 
 > ### Note:  
 > The row-level security provided by the data access control can be circumvented while the view remains in its space. It is enforced only when the view is:

@@ -363,6 +363,18 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Details
+    
+    </td>
+    <td valign="top">
+    
+    Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
     </table>
     
 

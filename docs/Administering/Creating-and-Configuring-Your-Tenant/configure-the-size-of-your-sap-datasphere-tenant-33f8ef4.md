@@ -17,17 +17,17 @@ To do so, you must have an SAP Datasphere administrator role.
 In the *Tenant Configuration* page of the *Configuration* area, you can increase the sizes for the various resources, within the permitted size combinations, to obtain a configuration that fits your exact needs, and then click *Save*.
 
 > ### Caution:  
-> Once you save the size configuration of your tenant, be aware that some resources cannot be resized later. Storage cannot be downsized. If you require a storage downsize, you must recreate the tenant. Exception: If you need to decrease the memory, see SAP note [3224686](https://launchpad.support.sap.com/#/notes/3224686).
+> Once you save the size configuration of your tenant, some resources cannot be resized later. Storage cannot be downsized. If you require storage downsize, you must recreate the tenant. Exception: If you need to decrease the memory, see SAP note [3224686](https://launchpad.support.sap.com/#/notes/3224686).
 
 Also, once you click *Save*:
 
--   The whole process may take more than 90 minutes. The configuration process is not long, but the operational process in the background can take a while.
+-   The whole process could take more than 90 minutes. The configuration process is not long, but the operational process in the background can take a while.
 
--   In case an error occurs, you are notified that the configuration cannot be completed and that you need to try again later by clicking the *Retry* button \(which replaces the *Save* button in such a case\). The delay depends on the error \(for example, if there is an error on the SAP HANA Cloud database side, you may need to retry after 60 minutes\).
+-   In case an error occurs, you are notified that the configuration cannot be completed and that you need to try again later by clicking the *Retry* button \(which replaces the *Save* button in such a case\). The delay depends on the error \(for example, if there is an error on the SAP HANA Cloud database side, you can retry after 60 minutes\).
 
--   You can only make changes to SAP HANA Compute and SAP HANA Storage once every 24 hours.
+-   You can only change SAP HANA Compute and SAP HANA Storage once every 24 hours.
 
--   If you try to change your SAP HANA configuration, SAP HANA Cloud functionalities \(Spaces, DPServer, Serving of Queries\) will not be available for around 10 minutes. If you run into issues after the configuration, use the *Retry* button.
+-   If you try to change your SAP HANA configuration, SAP HANA Cloud functionality \(Spaces, DPServer, Serving of Queries\) will not be available for around 10 minutes. If you run into issues after the configuration, use the *Retry* button.
 
 
 
@@ -36,7 +36,7 @@ Also, once you click *Save*:
 
 ## Supported Sizes
 
-To view all supported size combinations for compute and storage resources and the number of capacity units consumed, go to the [SAP Datasphere Capacity Unit Estimator](https://datasphere-estimator-sac-saceu10.cfapps.eu10.hana.ondemand.com/).
+To view all supported size combinations for compute and storage resources and the number of capacity units consumed, go to the [https://datasphere-estimator-sac-saceu10.cfapps.eu10.hana.ondemand.com/](https://datasphere-estimator-sac-saceu10.cfapps.eu10.hana.ondemand.com/).
 
 
 
@@ -76,7 +76,7 @@ Select a performance class for your tenant:
 -   High-Compute
 
 > ### Note:  
-> The performance class you select determines the number of vCPUs allocated to your tenant. For a detailed list, see the **vCPU Allocation** table below.
+> **vCPU Allocation** table below.
 
 
 
@@ -134,7 +134,7 @@ Displays the number of vCPUs allocated to your tenant. The number is calculated 
 </td>
 <td valign="top">
 
-Enable this to access the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries.
+Enable this option to access the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries.
 
 </td>
 </tr>
@@ -164,7 +164,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select the size of data lake disk storage.
+\[optional\] Select the size of data lake disk storage. The performance class you select determines the number of vCPUs allocated to your tenant.
 
 You can specify from 0 TB \(minimum\) to 90 TB \(maximum\), by increments of 1 TB.
 
@@ -173,15 +173,15 @@ Data lake storage includes data lake compute.
 To reduce the size of your data lake storage, you must first delete your data lake instance, and re-create it in the size that you want.
 
 > ### Note:  
-> Deletion cannot be reversed and all data stored in the data lake instance will be deleted.
+> Deletion cannot be reversed and all data stored in the data lake instance is deleted.
 > 
 > You cannot delete your data lake storage if it's connected to a space. You must first disconnect the space:
 > 
-> 1.  Go to *Space Management*, choose a space.
+> 1.  Go to *Space Management*and choose a space.
 > 2.  Select *Edit*.
 > 3.  Under *General Settings*, clear the *Use this space to access data lake* checkbox.
 > 
-> Data lake is not available in all regions. See SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
+> Data lake is not available in all regions. See SAP Note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
 
 
 
@@ -240,7 +240,7 @@ Description
 <td valign="top">
 
 > ### Note:  
-> If you try to modify the settings and discover that elastic compute node functionality has not been enabled on your SAP HANA Cloud Database, follow the steps described in[SAP Note 3432666](https://me.sap.com/notes/3432666). This functionality is not enabled by default on older tenants.
+> If you try to modify the settings and discover that elastic compute node functionality has not been enabled on your SAP HANA Cloud Database, follow the steps described in [SAP Note 3432666](https://me.sap.com/notes/3432666). This functionality is not enabled by default on older tenants.
 
 \[optional\] Select a performance class for your elastic compute node block-hours:
 
@@ -314,7 +314,7 @@ Displays the total number of blocks consumed by elastic compute nodes. The total
 Displays the block-hours you have used that exceed the amount allocated by your tenant configuration.
 
 > ### Note:  
-> This only appears if you have used more block-hours than allocated.
+> This option only appears if you have used more block-hours than allocated.
 
 
 
@@ -346,14 +346,9 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select the number of compute blocks to allocate to Data Integration applications which provide enhanced data integration capabilities. This comprises the replication flow that enables data integration with delta processing which is the recommended integration solution for all supported source and target systems.
+\[optional\] \] Enter the number of blocks to allocate to data integration applications \(replication flows\).
 
-You can increase the number of blocks to assign a maximum of 7200 node hours. You can decrease the number of blocks until you reach the minimum number of node hours included in your plan.
-
-> ### Note:  
-> Data flows are not part of this commercial package.
-
-
+Even if you don’t allocate blocks here, you have a default number of execution hours for data integration \(depending on your contract\). For more information about this, as well as about how many execution hours you get per block, see the SAP Datasphere and SAP Datasphere, Test Tenant Supplemental Terms and Conditions, which are a part of the [Service Level Agreement](https://help.sap.com/viewer/86054eedd0dd480f92b0824c281923d5/cloud/en-US/962dfadea39843efaa806323b9a872fe.html "The Service Level Agreement (SLA) is a contract between SAP and its customers that forms the basis of your contractual relationship with SAP when referenced in specific order forms.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -365,9 +360,12 @@ You can increase the number of blocks to assign a maximum of 7200 node hours. Yo
 </td>
 <td valign="top">
 
-The number of node hours available for Data Integration applications per month is calculated from the number of allocated compute blocks.
+Displays the number of execution hours available for data integration applications per month. It is calculated by multiplying the number of allocated compute blocks by the number of execution hours per block \(as per your contract\).
 
-Every month you're entitled to running up to 200 hours of jobs. Using more than 200 hours has no impact in other jobs. The consumption of data integration is not limited to avoid interrupting critical integration scenarios, but you will be billed for the overusage when it happens.
+> ### Note:  
+> If you exceed the available execution hours, your data integration processes \(such as replication flow runs\) continues running to avoid interrupting critical integration scenarios, which can result in additional costs \(depending on your plan\).
+
+
 
 </td>
 </tr>
@@ -379,9 +377,13 @@ Every month you're entitled to running up to 200 hours of jobs. Using more than 
 </td>
 <td valign="top">
 
-The maximum number of parallel jobs is calculated from the number of execution hours assigned. For every 100 execution hours, you are given one extra parallel job, up to a maximum of 10.
+Displays the maximum number of jobs that can run in parallel.
 
-Each parallel job means that roughly 5 datasets, from one or several replication flows, can be run in parallel. If more replication flows are running, processing will be queued and replication will occur less frequently.
+The minimal configuration of SAP Datasphere supports 2 parallel jobs. For every additional 100 execution hours allocated, you get one extra parallel job, up to a maximum of 10.
+
+Each parallel job means that roughly 5 replication objects \(from one or more replication flows\) can be processed in parallel.
+
+If the number of running replication flows exceeds the maximum number of parallel jobs, processing is queued, and replication occurs less frequently.
 
 </td>
 </tr>
@@ -393,7 +395,7 @@ Each parallel job means that roughly 5 datasets, from one or several replication
 </td>
 <td valign="top">
 
-Displays the number of hours allocated to Data Integration applications.
+Displays the number of execution hours allocated to data integration applications so that you can easily compare it against the used execution hours.
 
 </td>
 </tr>
@@ -405,7 +407,7 @@ Displays the number of hours allocated to Data Integration applications.
 </td>
 <td valign="top">
 
-Displays the number of hours used by Data Integration applications.
+Displays the number of hours used by data integration applications in the current month. The value is updated once every 6 hours.
 
 </td>
 </tr>
@@ -417,10 +419,10 @@ Displays the number of hours used by Data Integration applications.
 </td>
 <td valign="top">
 
-Displays the execution hours you have used that exceed the amount allocated by your tenant configuration.
+Displays the execution hours that you have used in the current month that exceed the amount allocated in tenant configuration.
 
 > ### Note:  
-> This only appears if you have used more hours than allocated.
+> This option only appears if you have used more hours than allocated.
 
 
 
@@ -452,7 +454,9 @@ Description
 </td>
 <td valign="top">
 
-You can increase or decrease the number of storage blocks allocated for premium outbound integration. Each block provides 20 GB of storage.
+Enter the number of blocks to be used for premium outbound integration. Having at least one block assigned here is a prerequisite for using a non-SAP target in a replication flow. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right:.
+
+Each block gives you 20 GB of data volume for transfer.
 
 </td>
 </tr>
@@ -464,7 +468,12 @@ You can increase or decrease the number of storage blocks allocated for premium 
 </td>
 <td valign="top">
 
-The outbound volume is calculated from the number of allocated blocks.
+Displays the data volume available for premium outbound integration per month. It is calculated by multiplying the number of allocated blocks by 20 GB.
+
+> ### Note:  
+> If you exceed the assigned volume, your data integration processes \(such as replication flow runs\) continues running to avoid interrupting critical integration scenarios, which can result in additional costs \(depending on your plan\).
+
+
 
 </td>
 </tr>
@@ -476,7 +485,7 @@ The outbound volume is calculated from the number of allocated blocks.
 </td>
 <td valign="top">
 
-Displays the number of GB allocated to premium outbound integration.
+Displays the allocated data volume \(in GB\) for premium outbound integration so that you can easily compare it against the used volume.
 
 </td>
 </tr>
@@ -488,7 +497,7 @@ Displays the number of GB allocated to premium outbound integration.
 </td>
 <td valign="top">
 
-Displays the number of GB used by premium outbound integration.
+Displays the used data volume \(in GB\) for premium outbound integration in the current month. The value is updated once every 6 hours.
 
 </td>
 </tr>
@@ -500,10 +509,10 @@ Displays the number of GB used by premium outbound integration.
 </td>
 <td valign="top">
 
-Displays the data volume you have used that exceeds the amount allocated by your tenant configuration.
+Displays the data volume that you have used in the current month that exceeds the amount allocated in tenant configuration.
 
 > ### Note:  
-> This only appears if you have used more data than allocated.
+> This option only appears if you have used more data than allocated.
 
 
 
@@ -583,10 +592,10 @@ Displays the number of GB used by the catalog.
 </td>
 <td valign="top">
 
-Displays the amount of storage you have used that exceeds the amount allocated by your tenant configuration.
+Displays the amount of storage that you have used that exceeds the amount allocated by your tenant configuration.
 
 > ### Note:  
-> This only appears if you have used more storage space than allocated.
+> This option only appears if you have used more storage space than allocated.
 
 
 
@@ -613,24 +622,48 @@ Description
 <tr>
 <td valign="top">
 
-*Units in Use per Month*
+*Purchased units*
 
 </td>
 <td valign="top">
 
-Displays the estimated number of capacity units consumed per month by the storage and compute resources you've specified.
+Displays the capacity units purchased for the month.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Units in Use per Hour*
+*Estimated Units*
 
 </td>
 <td valign="top">
 
-Displays the estimated number of capacity units consumed per hour by the storage and compute resources you've specified.
+Displays the number of units anticipated to be charged to the user by the end of the month. This calculation assumes that the current configuration stays unchanged and all pay-per-use services are fully utilized.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Available Units*
+
+</td>
+<td valign="top">
+
+Displays the estimated capacity units left for this month. This number is calculated as Purchased Units - Estimated Units = Available Units.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Your Consumption*
+
+</td>
+<td valign="top">
+
+Displays the amount charged to the users this month for all services. This calculation accounts for any configuration changes made during the month and the precise usage of pay-per-use services.
 
 </td>
 </tr>
@@ -758,7 +791,24 @@ GCP
 </td>
 <td valign="top">
 
-1024-1344 GB
+1024-1856 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+1904
 
 </td>
 <td valign="top">

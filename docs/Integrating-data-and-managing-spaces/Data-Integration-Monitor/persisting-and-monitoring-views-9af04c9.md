@@ -144,11 +144,6 @@ Information
 
 *Start View Analyzer*: Analyzes each view definition, the consumed views and the data sources used by local and remote tables that compose your data model. You can then use the provided information and warnings to decide on some improvements for your data model. You can also generate an SQL Analyzer Plan File that you can download \(if you have the required authorizations\) for detailed analysis. For more infromation, see [Exploring Views with View Analyzer](exploring-views-with-view-analyzer-8921e5a.md).
 
-> ### Note:  
-> The *View Analyzer* can't analyze a view that has input parameters.
-
-
-
 </td>
 </tr>
 <tr>

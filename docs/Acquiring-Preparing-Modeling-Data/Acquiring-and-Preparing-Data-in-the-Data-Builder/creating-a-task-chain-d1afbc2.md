@@ -446,6 +446,18 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Details
+    
+    </td>
+    <td valign="top">
+    
+    Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
     </table>
     
 

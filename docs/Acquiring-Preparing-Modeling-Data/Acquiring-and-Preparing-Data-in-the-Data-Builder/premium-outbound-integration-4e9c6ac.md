@@ -25,7 +25,7 @@ This topic is relevant for you if you want to use one of the following as the ta
 -   Confluent Kafka
 
 
-Before you can create a replication flow for any of these targets, your administrator needs to allocate at least one premium outbound integration block in SAP Datasphere tenant configuration \(in addition to the data integration blocks that you need for any replication flow, irrespective of its target\). For general information about tenant configuration, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
+Before you can create a replication flow for any of these targets, your administrator needs to allocate at least one premium outbound integration block in SAP Datasphere tenant configuration \(in addition to the data integration blocks that you need for any replication flow, irrespective of its target\). For more information about tenant configuration, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
 
 > ### Example:  
 > You want to replicate data into Google BigQuery. You are expecting a data volume of 300 GB for initial load and a change data volume \(delta\) of 60 GB per month. Considering that you need one premium outbound integration block per 20 GB of data to be transferred, you need 18 premium outbound integration blocks \(15 for initial load and 3 for delta load\) for the first month and 3 premium outbound blocks for each subsequent month.
@@ -52,7 +52,12 @@ What exactly you need to do to set up your replication flow depends on the targe
 
 ## Monitoring
 
-When you open the *Flows* monitor for a replcation flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for **all** replication flows in this tenant during the last 90 days. This means that the value may change significantly from one day to the other, for example when you run an initial load for a replication flow, or when an initial load drops out of the statistics because it happened more than 90 days ago. The value is updated once per hour.
+When you open the *Flows* monitor for a replication flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for **all** replication flow runs with premium outbound integration in this tenant during the last 360 days. The value is updated once per hour.
+
+> ### Note:  
+> -   The value may change significantly from one day to the other, for example when you run an initial load for a replication flow, or when an initial load drops out of the statistics because it happened more than 360 days ago.
+> 
+> -   The retention period has been increased from 90 days to 360 days starting as of July 11, 2024, so depending on when you access this feature you may see the data for less than 360 days.
 
 Further usage-related information is available on the *Tenant Configuration* page of the *Configuration* area. In particular, you can see how much data volume has been used for premium outbound integration in this tenant in the current month and whether the allocated number of execution hours has been exceeded. \(The latter value is updated once every six hours.\)
 

@@ -495,7 +495,7 @@ Granted by Role Template...
 
 ![](../images/Space_Management_a868247.png) \(*Space Management*\)
 
-See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/8cb00503395049029055bb7aceafc080.html "Users with the DW Space Administrator or DW Integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators use other methods to integrate data into their space and are responsible for maintaining the list of space users and monitoring and managing the space. They can create data access controls to secure data, and can transport content between tenants.") :arrow_upper_right:
+See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -616,7 +616,7 @@ See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35b
 
 <span class="SAP-icons-V5"></span> \(*Data Sharing Cockpit*\)
 
-See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Start with Data Marketplace as a data provider.") :arrow_upper_right:
+See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1246,7 +1246,7 @@ Tags
 </td>
 <td valign="top">
 
-Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
+Add a tag relationship to the asset from the asset’s detailed information page.
 
 See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom description, and creating relationships with tags, terms, and KPIs. These improvements enrich the information about the asset so that anyone who uses the catalog can evaluate the asset and determine if it's the one they need.") :arrow_upper_right:
 
@@ -1256,10 +1256,6 @@ See [Editing and Enriching Catalog Assets](https://help.sap.com/viewer/97d1d2f0e
 Catalog Asset: `(-RU-----)` 
 
 Catalog Tag Hierarchy: `(-R------)` 
-
-Catalog Glossary Object: `(-R------)` 
-
-Catalog KPI Object: `(-R------)` 
 
 </td>
 </tr>
@@ -1874,7 +1870,7 @@ Granted by Role Template...
 
 Consume data in SAP Analytics Cloud, Microsoft Excel, and other clients, tools, and apps
 
-See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:
+See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1999,7 +1995,9 @@ Contained in Standard Role
 <tr>
 <td valign="top">
 
-`datasphere spaces` and `datasphere workload` 
+`datasphere spaces`
+
+`datasphere workload`
 
 </td>
 <td valign="top">
@@ -2074,6 +2072,40 @@ Contained in Standard Role
 <td valign="top">
 
 *DW Administrator*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`datasphere configuration certificates`
+
+</td>
+<td valign="top">
+
+*System Information* \(-RU-----\)
+
+</td>
+<td valign="top">
+
+*DW Administrator*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`datasphere spaces connections`
+
+</td>
+<td valign="top">
+
+*Data Warehouse Remote Connection* \(CRUD----\)
+
+</td>
+<td valign="top">
+
+*DW Integrator*
 
 </td>
 </tr>

@@ -375,6 +375,18 @@ For more information about available connection types, sources, and targets, see
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Details
+    
+    </td>
+    <td valign="top">
+    
+    Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
     </table>
     
 

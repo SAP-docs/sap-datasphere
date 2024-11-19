@@ -32,7 +32,7 @@
         -   [Create a User](Managing-Users-and-Roles/create-a-user-58d4b24.md)
         -   [Import or Modify Users from a File](Managing-Users-and-Roles/import-or-modify-users-from-a-file-b2698da.md)
         -   [Export Users](Managing-Users-and-Roles/export-users-e227d3c.md)
-        -   [Update User Email Addresses](Managing-Users-and-Roles/update-user-email-addresses-0889208.md)
+        -   [Update a User Email Address](Managing-Users-and-Roles/update-a-user-email-address-0889208.md)
         -   [Delete Users](Managing-Users-and-Roles/delete-users-3ceb94c.md)
         -   [Set a Password Policy for Database Users](Managing-Users-and-Roles/set-a-password-policy-for-database-users-14aedf6.md)
     -   [Managing Roles and Privileges](Managing-Users-and-Roles/managing-roles-and-privileges-3740dac.md)

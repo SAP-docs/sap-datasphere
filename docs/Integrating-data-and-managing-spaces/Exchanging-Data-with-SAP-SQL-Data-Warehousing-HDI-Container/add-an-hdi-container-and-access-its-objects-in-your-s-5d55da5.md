@@ -27,10 +27,20 @@ You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(w
 
 3.  Select one or more HDI containers and then click *Add* to add them to your space.
 
-    If no HDI containers are listed then they are all already assigned to other spaces.
+    If your HDI container is not available:
 
-    > ### Note:  
-    > Each HDI container can only be added to one SAP Datasphere space.
+    -   It may already be assigned to another space.
+
+        > ### Note:  
+        > Each HDI container can only be added to one SAP Datasphere space. A database analysis user can review the assignment of HDI assignments using the following query:
+        > 
+        > ```
+        > select * from DWC_TENANT_OWNER.SPACE_SCHEMAS where SCHEMA_TYPE = 'hdi_owned';
+        > ```
+        > 
+        > See [Create a Database Analysis User to Debug Database Issues](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c28145bcb76c4415a1ec6265dd2a4c11.html "A database analysis user is an SAP HANA Cloud database user with wide-ranging privileges. It can be used to support monitoring, analyzing, tracing, and debugging of your SAP Datasphere run-time database.") :arrow_upper_right:.
+
+    -   It may have been created before assignment was enabled or the `database_id` may need to be specified \(see [Set Up an HDI Container](https://help.sap.com/docs/HANA_SERVICE_CF/cc53ad464a57404b8d453bbadbc81ceb/93cdbb1bd50d49fe872e7b648a4d9677.html) in the *SAP HANA Service* documentation\).
 
 4.  Deploy your space.
 

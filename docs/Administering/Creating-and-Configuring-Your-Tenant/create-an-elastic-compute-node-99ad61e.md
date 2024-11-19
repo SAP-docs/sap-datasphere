@@ -24,7 +24,7 @@ Once an administrator has purchased additional resources dedicated to elastic co
 
 You can select the following objects for an elastic compute node: perspectives and analytic models, and views of type analytical dataset and that are exposed for consumption. To make the data of the objects avalaible for consumption, their sources - persisted views and local tables - are replicated to the elastic compute node.
 
-Users of SAP Analytics Cloud and Microsoft Excel \(with the SAP add-in\) will then automatically benefit from the improved performance of the elastic compute nodes when consuming data exposed by SAP Datasphere. See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/ff47998f19154d159b89da50980f98b2.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
+Users of SAP Analytics Cloud and Microsoft Excel \(with the SAP add-in\) will then automatically benefit from the improved performance of the elastic compute nodes when consuming data exposed by SAP Datasphere. See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/ff47998f19154d159b89da50980f98b2.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:.
 
 To create and manage elastic compute nodes, you must have the following privileges:
 
@@ -152,7 +152,7 @@ Select the spaces and objects whose data you want to make available in an elasti
 
     You can deactivate the automatic assignment and manually select the objects.
 
-    There are 3 types of exposed objects: analytic models, perspectives and views \(of type analytical dataset and that are exposed for consumption\). See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/ff47998f19154d159b89da50980f98b2.html "All users of with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted the DW Consumer role.") :arrow_upper_right:.
+    There are 3 types of exposed objects: analytic models, perspectives and views \(of type analytical dataset and that are exposed for consumption\). See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/ff47998f19154d159b89da50980f98b2.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:.
 
 3.  To manually select the objects of a space, select the space and click *Add Objects*. Uncheck *Add All Objects Automatically*, then select the objects you want and click *Add Objects*.
 

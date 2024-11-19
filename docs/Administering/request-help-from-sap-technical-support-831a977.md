@@ -61,7 +61,7 @@ Before creating an incident with SAP, proceed as follows:
 
     The support user has minimum privileges and does not consume a user license.
 
-    You can assign an appropriate scoped role to the support user to add it to the required space.
+    You can assign an appropriate scoped role to the support user and add the user to the required space, or assign the DW or Catalog Administrator role if required.
 
 3.  Delete the support user when your issue is resolved.
 

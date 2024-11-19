@@ -2,7 +2,7 @@
 
 # Authorization and Permissions
 
-Working in *View Analyzer* requires different privileges and permissions to perform different tasks. You will not be able to view entities that you do not have the correct role to access.
+Working in *View Analyzer* requires different privileges and permissions depending on the tasks you want to perform. You will not be able to view entities that you are not authorized to view.
 
 
 
@@ -12,7 +12,7 @@ Working in *View Analyzer* requires different privileges and permissions to perf
 
 When a user does not have permission to access a space or spaces, a row titled *unauthorized* will be displayed.
 
-You can only view enties that you have permsission to see. Entites from spaces that you are not al allowed to view will be labeled as unauthorized. You must ask permission from an administrator for correct authorization to view hidden entities.
+You can only view enties that you are authorized to view. Entites from spaces that you are not allowed to view will be labeled as unauthorized. Contact your administrator to get authorization to view the hidden entites.
 
 > ### Note:  
 > To start the *View Analyzer* you will need the *DW Integrator* scoped role and the *Data Builder \(Read\)* privilege which can be found in the *DW Modeler* scoped role. You will be able to see all entities with either the global role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.

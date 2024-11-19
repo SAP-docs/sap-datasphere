@@ -13,8 +13,8 @@ This topic contains the following sections:
 -   [Monitor Statements](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc)
 -   [Monitor Access Control Issues](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_tt5_sc4_ccc)
 -   [Monitor Elastic Compute Nodes](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_yvw_k24_ccc)
--   [Tasks Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
--   [Statements Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
+-   [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
+-   [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
 -   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
 
 Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) to access the main monitoring tool. The *System Monitor* allows to monitor the performance of your system and identify storage, task, out-of-memory, and other issues across all spaces.
@@ -211,7 +211,7 @@ To investigate issues:
     </tr>
     </table>
     
-2.  Click *View Logs* in a card to go to the *Logs* tab, then *Tasks* sub-tab, which displays information filtered on the card criteria. For more information on the *Tasks* tab, see [Tasks Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab).
+2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. For more information on the *Task Logs* tab, see [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab).
 3.  Click the links in the following columns:
     -   *Activity* column - For the spaces you have access to \(via scoped roles\), a link opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
 
@@ -320,7 +320,7 @@ To investigate issues:
     </tr>
     </table>
     
-2.  Click *View Logs* in a card to go to the *Logs* tab, then *Statements* sub-tab, which displays information filtered on the card criteria. For more information on the *Statements* tab, see [Statements Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
+2.  Click *View Logs* in a card to go to the *Statement Logs*, which displays information filtered on the card criteria. For more information on the *Statements* tab, see [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
 3.  Click the links in the *Statement Details* column.
 
 
@@ -570,7 +570,7 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
     
     Shows the 5 statements whose memory consumption was the highest during the last run of the elastic compute node.
 
-    To see detailed information about the statements, you can click *View Logs*, which takes you to the *Logs* \> *Statements* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    To see detailed information about the statements, you can click *View Logs*, which takes you to the *Statement Logs* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
     
     </td>
     </tr>
@@ -584,7 +584,7 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
     
     Shows the number of out-of-memory errors that have occurred in tasks and statements related to the elastic compute node, during the last run.
 
-    To see detailed information about the errors, you can click *View Logs*, which takes you to the *Logs* \> *Statements* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    To see detailed information about the errors, you can click *View Logs*, which takes you to the *Statement Logs* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
     
     </td>
     </tr>
@@ -616,8 +616,8 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
     
 3.  To investigate further, you can do the following:
 
-    -   To view statement details, click *View Logs* in a card to go to the *Logs* tab, then *Statements* sub-tab, which displays information filtered on the card criteria. Then, click the links in the *Statement Details* column. For more information on the *Statements* tab, see [Statements Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
-    -   To view details on a run, click *View Logs* in a card to go to the *Logs* tab, then *Tasks* sub-tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
+    -   To view statement details, click *View Logs* in a card to go to the *Statement Logs* tab, which displays information filtered on the card criteria. Then, click the links in the *Statement Details* column. For more information on the *Statement Logs* tab, see [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
+    -   To view details on a run, click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
     -   To navigate to the elastic compute node in the *Space Management* app, click *Manage Elastic Compute Node* \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md) and [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
 
     -   To analyze the performance of the SAP HANA database, click *Database Overview \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Database Overview Page](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/database-overview-page) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
@@ -628,9 +628,9 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
 
 <a name="loio28910cded17a42a0bf16225309cb8bf6__section_task_tab"/>
 
-## Tasks Logs Tab
+## Task Logs Tab
 
-In *Logs* \> *Tasks*, the table shows the following information:
+In *Task Logs*, the table shows the following information:
 
 
 <table>
@@ -922,9 +922,9 @@ Shows at which date the task has started to run.
 
 <a name="loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab"/>
 
-## Statements Logs Tab
+## Statement Logs Tab
 
-In *Logs* \> *Statements*, the table shows the following information, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
+In *Statement Logs*, the table shows the following information, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
 
 -   If the option *Enable Expensive Statement Tracing* is disabled, then the *Statements* tab is disabled.
 
@@ -1241,32 +1241,98 @@ Shows at which date the statement has started to run.
 
 ## Show/Hide, Filter, Sort and Reorder Task and Statement Columns
 
-You can control the tables in *Tasks* and *Statements* in the following ways:
+You can control the tables in *Task Logs* and *Statement Logs* in the following ways:
 
 -   Reorder the columns by drag and drop.
 -   Sort on a column by clicking the column header and then clicking <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
--   Filter on a column by clicking the column header, then clicking <span class="FPA-icons-V3"></span> \(Filter\)
+-   Filter on a column by using the quick filtering or the advanced filtering options.
 
-    The *Define Filter* dialog opens and advanced filtering options are available:
+    -   **Quick Filters** 
 
-    1.  Chose the appropriate section for your filter. If your filter is meant to include data in the table \(you could say "I want my Data Preview to show"\), add your filter in the *Include* section. If your filter is meant to exclude data from the table \(you could say "I want my Data Preview to hide"\), add your filter in the *Exclude* section. When in the appropriate section, click <span class="FPA-icons-V3"></span> \(Add Filter\) to add a filter.
-    2.  Select a column to filter on, a filtering option, and a value. You can add several filters. Click *OK* to apply the filter\(s\). The currently applied filters are displayed above the table.
 
+        <table>
+        <tr>
+        <th valign="top">
+
+        Filter
+        
+        </th>
+        <th valign="top">
+
+        Description
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Date and Time Range*
+        
+        </td>
+        <td valign="top">
+        
+        Enter one date and time range or click <span class="SAP-icons-V5"></span> to see the available options:
+
+        -   Single Dates - *Today*, *Yesterday*
+        -   Date Ranges - *From/To*, *From/To \(Date and Time\)*, *From*, *To*, *From \(Date and Time\)*,*To \(Date and Time\)*, *Last X Minutes/Hours/Days/Weeks* 
+        -   Custom Options - *Last 1 Hour*, *Last 6 Hours*, *Last 24 Hours*
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Spaces*
+        
+        </td>
+        <td valign="top">
+        
+        Select or enter the name of at least one space. All spaces of the tenant are available, even the ones you are not added to.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Statuses*
+        
+        </td>
+        <td valign="top">
+        
+        Select or enter at least one status: *Completed*, *Failed*, or *Running*.
+        
+        </td>
+        </tr>
+        </table>
+        
         > ### Example:  
-        > To only see the tasks that have failed on remote tables, in the *Include* area, select the column *Object Type*, then the filtering value *contains* and enter "REMOTE". Then, add a filter, select the column *Status*, then the filtering value *contains* and enter "FAILED". Once applied, the filter is displayed above the table.
+        > You are looking for all failed and running records that happened last week in the space *ACME\_TF*. Define the time range by clicking <span class="SAP-icons-V5"></span> to display the list of available options and selecting *From/To* in *Date and Time Range* and selecting the dates relevant to you in the calendar. Then, select the space *ACME\_TF* in the *Space* filter drop down list. Finally, select *Failed* and *Running* in the *Statuses* drop down list. The log list automatically updates after each filter definition.
 
         > ### Note:  
-        > -   The filtering options available depend on the data type of the column you filter on.
-        > -   Filters applied to text columns are case-sensitive.
-        > -   You can enter filter or sort values in multiple columns.
-        > -   You cannot view data in an SQL view if any of its sources is shared from another space and has an input parameter.
-        > 
-        > -   To increase performance, only the first 1,000 rows are displayed. Use filters to find the data you are looking for. Filters are applied to all rows, but only the first filtered 1,000 rows are displayed.
+        > -   Defined quick filters are shown in the *Define Filter* dialog. If you add an advanced filter in the *Define Filter* dialog, the quick filters fields will be cleared. The filters are not deleted.
+        > -   Filters defined in the *Define Filter* dialog are not shown in the quick filters fields.
 
-        > ### Note:  
-        > If you filter on one of the following columns and you enter a number, use the “.” \(period\) character as the decimal separator, regardless of the decimal separator used in the number formatting that you’ve chosen in the general user settings \(*Settings* \> *Language & Region*\): *SAP HANA Peak Memory*, *SAP HANA CPU Time*, *SAP HANA Used Memory* and *SAP HANA Used Disk*.
+    -   **Advanced Filters** 
+        1.  Click a column header, then click <span class="FPA-icons-V3"></span> \(Filter\). The *Define Filter* dialog opens and advanced filtering options are available.
+        2.  Chose the appropriate section for your filter. If your filter is meant to include data in the table \(you could say "I want my Data Preview to show"\), add your filter in the *Include* section. If your filter is meant to exclude data from the table \(you could say "I want my Data Preview to hide"\), add your filter in the *Exclude* section. When in the appropriate section, click <span class="FPA-icons-V3"></span> \(Add Filter\) to add a filter.
+        3.  Select a column to filter on, a filtering option, and a value. You can add several filters. Click *OK* to apply the filter\(s\). The currently applied filters are displayed above the table.
 
-    3.  Click *Clear Filter* in the filter strip or <span class="FPA-icons-V3"></span> \(Remove Filter\)in the *Define Filter* dialog to remove the filter.
+            > ### Example:  
+            > To only see the tasks that have failed on remote tables, in the *Include* area, select the column *Object Type*, then the filtering value *contains* and enter "REMOTE". Then, add a filter, select the column *Status*, then the filtering value *contains* and enter "FAILED". Once applied, the filter is displayed above the table.
+
+        4.  Click *Clear Filter* in the filter strip or <span class="FPA-icons-V3"></span> \(Remove Filter\) in the *Define Filter* dialog to remove the filter.
+
+
+    > ### Note:  
+    > -   The filtering options available depend on the data type of the column you filter on.
+    > -   Filters applied to text columns are case-sensitive.
+    > -   You can enter filter or sort values in multiple columns.
+    > -   To increase performance, only the first 1,000 rows are displayed. Use filters to find the data you are looking for. Filters are applied to all rows, but only the first filtered 1,000 rows are displayed.
+
+    > ### Note:  
+    > If you filter on one of the following columns and you enter a number, use the “.” \(period\) character as the decimal separator, regardless of the decimal separator used in the number formatting that you’ve chosen in the general user settings \(*Settings* \> *Language & Region*\): *SAP HANA Peak Memory*, *SAP HANA CPU Time*, *SAP HANA Used Memory* and *SAP HANA Used Disk*.
 
 -   Show or hide columns by clicking :gear: to open the *Columns Settings* dialog, selecting columns as appropriate. To return to the default preview columns, click *Reset*.
 -   Refresh the table at any time by clicking *Refresh*.

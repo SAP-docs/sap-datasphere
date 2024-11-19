@@ -92,7 +92,7 @@ Update the email address a user logs on with
 </td>
 <td valign="top">
 
-[Update User Email Addresses](update-user-email-addresses-0889208.md)
+[Update a User Email Address](update-a-user-email-address-0889208.md)
 
 </td>
 </tr>

@@ -2,7 +2,7 @@
 
 # Data Persistence Guidance
 
-Data persistence guidance provides concrete recommendation on what views to persist in *View Analyzer*. The entire lineage graph is reviewed and relative metrics are analyzed to provide guidance for the optimal views to persist to improve performance, run-time, and memory consumption.
+Data persistence guidance provides recommendation on what views to persist in *View Analyzer*. The entire lineage graph is reviewed and relative metrics are analyzed to provide guidance for the optimal views to persist to improve performance, run-time, and memory consumption.
 
 
 
@@ -17,7 +17,7 @@ The best candidate to be persisted can be the main view or a view of the lineage
 > ### Note:  
 > Data persistence guidance is most useful with models that have complex lineage graphs.
 
-The *Best Data Candidate Score* column provides recommendations of the best views to persist.
+The *Data Persistence Candidate Score* column gives you recommendations by identifying views that can help improve your model if they are persisted.
 
 ![](images/Persist_Guide_1_a57aee1.png)
 
@@ -25,12 +25,8 @@ The information tab provides more details of the *View Analyzer Results* and the
 
 ![](images/Persist_Guide_2_f4948e7.png)
 
-There are six main metrics used to calculate the data persistence candidate score: the number of sources, the number of targets, the overall number of souces, the number of federated remote tables, federated remote tables with limited adapter capabilities, and if the view is a SQL script view.
-
-*View Analyzer* will recommend the best candidate to be persisted and the best alternatives. Persist the best recommended view and check the performance of the main view. If a view cannot be persisted, try the next best available candidate or start the *View Analyzer* for the view that cannot be persisted.
-
 > ### Tip:  
-> Persist only one view at a time. Check the performance of the main view after the persited view completed.. One possibility to check the performance is to simulate the data persistence in the *View Analyzer* with the option, 'With memory consumption'. Continue the process in an iterative way until the optimal performance is reached. The goal is to persist the minimal number of views required to optimize performance.
+> Persist only one view at a time. Check the performance of the main view after the persitence run completed.. One possibility to check the performance is to simulate the data persistence in the *View Analyzer* with the option, 'With memory consumption'. Continue the process in an iterative way until the optimal performance is reached. The goal is to persist the minimal number of views required to optimize performance.
 
 > ### Note:  
 > To get the best results from data persistence guidence, it is recommended that the user have permission to see all views in the model from all spaces. If a user is unauthorized to see some views, the view with the highest rating value may remain hidden \(a warning will be displayed\). For more information about authorizations and permision in *View Analyzer* see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
@@ -65,7 +61,7 @@ A model can have a *Data Persistence Candidate Score* with values ranging from 0
 
 Analysis for data persistence guidance will be run for all entitites including shared entities from other spaces.
 
-The best candidate score will be computed regardless of the space the views belong to. Results of the analysis will be able to be viewed by those that have the authorization. If the best candidate is from a space the user does not have the authorization to see the result from, a message will be shown. See [Authorization and Permissions](authorization-and-permissions-e5f9e81.md) for more information.
+The best candidate score will be computed regardless of the entitites the views belong to. Results of the analysis will be able to be viewed by those that have the authorization. If the best candidate is from a space the user does not have the authorization to see the result from, a message will be shown. See [Authorization and Permissions](authorization-and-permissions-e5f9e81.md) for more information.
 
 
 

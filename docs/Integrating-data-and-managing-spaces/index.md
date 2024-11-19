@@ -49,6 +49,7 @@
     -   [Pause Real-Time Replication for a Connection](Integrating-Data-Via-Connections/pause-real-time-replication-for-a-connection-a11f244.md)
     -   [Filter Connection List](Integrating-Data-Via-Connections/filter-connection-list-31f1075.md)
     -   [Importing SAP BW Queries – A Comparison of the Different Options](Integrating-Data-Via-Connections/importing-sap-bw-queries-a-comparison-of-the-different-options-c87d4b7.md)
+    -   [Manage Connectivity via REST APIs](Integrating-Data-Via-Connections/manage-connectivity-via-rest-apis-5aafe32.md)
 -   [Integrating Data From SAP BW Bridge](integrating-data-from-sap-bw-bridge-c07d800.md)
 -   [Integrating Data via Database Users/Open SQL Schemas](Integrating-Data-Via-Database-Users/Open-SQL-Schema/integrating-data-via-database-users-open-sql-schemas-3de55a7.md)
     -   [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)

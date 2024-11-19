@@ -403,7 +403,7 @@ no
 </td>
 <td valign="top">
 
-yes \(target\)
+yes \(source and target\)
 
 </td>
 <td valign="top">

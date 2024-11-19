@@ -17,7 +17,6 @@ The *Data Integration Monitor* is composed of several monitors that help you tra
     > Remote tables from a source that is configured as data access *Remote Only* are not displayed in this monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md) 
 
 -   *Local Tables* : Monitor all local tables which have been created in a space and display their metrics. From the detail screen, you can also delete table records on-demand, using filter conditions or using a schedule.
--   *Local Tables \(Files\)* : Check how and when your local tables \(files\) were last updated and if new data has still to be merged. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
 -   *Views* : Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
 -   *Flows*: View and monitor the execution details of the executed data flows, replication flows or transformation flows. For more information, see [Monitoring Flows](monitoring-flows-b661ea0.md).
 -   *Remote Queries*:
