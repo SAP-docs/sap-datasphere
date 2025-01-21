@@ -18,6 +18,10 @@ You need the DW Administrator role to access the *Monitoring* page.
 2.  To obtain independent access to the underlying SAP HANA monitoring views that power the *System Monitor*:
 
     1.  Select a space from the drop-down list and click *Confirm Selected Space*.
+
+        > ### Note:  
+        > File spaces are not available in the list as they cannot be chosen as the monitoring space.
+
     2.  If you've created the *<SAP\_ADMIN\>* space and you want to enable it, click *Enable access to SAP Monitoring Content Space*. If there isn't any space named *<SAP\_ADMIN\>* in your tenant, this is not available for selection.
 
     For more information, see [Working with SAP HANA Monitoring Views](working-with-sap-hana-monitoring-views-4ab4509.md).

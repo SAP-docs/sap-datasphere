@@ -82,7 +82,7 @@ Allows access to spaces in the *Space Management* tool.
 > ### Note:  
 > The permissions *Read*, *Update* and *Delete* are scoped permissions and are described in the scoped privileges and permissions table \(see [Scoped Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_scoped_privileges)\).
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "Users with a space administrator role are responsible for controlling user access to their space, and monitoring and otherwise managing the space.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -112,7 +112,7 @@ Allows access to all objects inside a space, such as views and tables.
 > ### Note:  
 > The permissions *Create*, *Read*, *Update* and *Delete* are scoped permissions and are described in the scoped privileges and permissions table \(see [Scoped Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_scoped_privileges)\).
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "Users with a space administrator role are responsible for controlling user access to their space, and monitoring and otherwise managing the space.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -159,6 +159,30 @@ Allows users to log into SAP Datasphere. Included in all standard roles except f
 <tr>
 <td valign="top">
 
+*Data Warehouse AI Consumption*
+
+</td>
+<td valign="top">
+
+`----E---`
+
+</td>
+<td valign="top">
+
+Allows users to use SAP Business AI features.
+
+See [Enable SAP Business AI for SAP Datasphere](../Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md).
+
+> ### Note:  
+> To enable SAP Business AI in your SAP Datasphere tenant, go to SAP note [3522010](https://me.sap.com/notes/3522010).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Other Datasources*
 
 </td>
@@ -188,7 +212,7 @@ Some connection types require this privilege. For more information, see [Permiss
 
 Allows access to *Security* \> *Roles* and *Security* \> *Authorization Overview*.
 
-See [Managing Roles and Privileges](managing-roles-and-privileges-3740dac.md) and [View Authorizations \(Users, Roles and Spaces\)](view-authorizations-users-roles-and-spaces-c6538ea.md)
+See [Managing Roles and Privileges](managing-roles-and-privileges-3740dac.md) and [View Authorizations by User, Role, or Space](view-authorizations-by-user-role-or-space-c6538ea.md)
 
 </td>
 </tr>
@@ -265,7 +289,7 @@ Allows to import content from the *Content Network* and to import and export con
 > ### Note:  
 > The permissions `-R---MS-` are included in the DW Administrator role. When you create a custom role based on the DW Administrator role, the permissions are automatically included and you cannot edit them.
 
-See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "You can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right: and [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "You can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
+See [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with an administrator role or space administrator role, can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right: and [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -551,7 +575,7 @@ Allows access to spaces in the *Space Management* tool.
 > ### Note:  
 > The permissions *Create* and *Manage* are global permissions and are described in the global privileges and permissions table \(see [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)\).
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "Users with a space administrator role are responsible for controlling user access to their space, and monitoring and otherwise managing the space.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -580,7 +604,7 @@ To view certain space properties or perform actions on spaces, you need a combin
 > ### Note:  
 > The permission *Manage* is a global permission and is described in the global privileges and permissions table \(see [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)\).
 
-See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.") :arrow_upper_right:
+See [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "Users with a space administrator role are responsible for controlling user access to their space, and monitoring and otherwise managing the space.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -603,7 +627,7 @@ Users with the *Share* permission can share objects to other spaces.
 
 Also allows access to the *Data Sharing Cockpit* app with the *Create*, *Read* and *Update* permissions.
 
-See [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:, [Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with the DW Modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:, [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with the DW Modeler role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, MS Excel, and other clients, apps, and tools.") :arrow_upper_right: and [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:.
+See [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:, [Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:, [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with a modeler role can add semantic information to their entities and combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, Microsoft Excel, and other clients, apps, and tools.") :arrow_upper_right: and [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -627,7 +651,7 @@ Allows access to remote and run-time objects:
 -   *Create*, *Update* and *Delete* - To create, update, or delete a connection in the *Connections* app, in addition to the corresponding *Space Files* permission.
 
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with the DW Modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right: and [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
 
 > ### Note:  
 > The following feature needs an additional permission:
@@ -668,7 +692,7 @@ Allows access to the *Data Integration Monitor* app:
 > -   To set up or change partitioned data loading in the *Remote Tables* monitor or in the *Views* monitor.
 > -   To start the *View Analyzer* in the *Views* monitor.
 > 
-> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:
+> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
 
 
 
@@ -709,7 +733,7 @@ Allows access to data access controls in the *Data Builder* app:
 -   *Create*, *Update* and *Delete* - To create, update, or delete a data access control in the editor.
 -   *Read* - To use a data access control to protect a view.
 
-See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
+See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -728,7 +752,7 @@ See [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca
 
 Allows access to the *Business Builder* app.
 
-See [Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with the DW Modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and MS Excel.") :arrow_upper_right:
+See [Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with a modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and Microsoft Excel.") :arrow_upper_right:
 
 </td>
 </tr>

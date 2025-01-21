@@ -21,7 +21,7 @@ You can use replication flows to copy data from the following source objects:
 
 CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [Using an Object Without Primary Key As the Source](using-an-object-without-primary-key-as-the-source-2267a9f.md).
 
-For more information about available connection types, sources, and targets, see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Connections provide access to data from a wide range of remote systems, cloud as well as on-premise, SAP as well as Non-SAP, and partner tools. They allow users assigned to a space to use objects from the connected remote system as source to acquire, prepare and access data from those sources in SAP Datasphere. In addition, you can use certain connections to define targets for replication flows.") :arrow_upper_right:.
+For more information about available connection types, sources, and targets, see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
 
 > ### Note:  
 > Replication flows may not be available in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
@@ -37,7 +37,7 @@ For more information about available connection types, sources, and targets, see
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Replication Flow* to open the editor.
 
-2.  Select a source connection and a source container, then add source objects \(see [Add a Source](add-a-source-7496380.md)\).
+2.  Select a source connection and a source container, then add source objects \(see [Add the Source for a Replication Flow](add-the-source-for-a-replication-flow-7496380.md)\).
 
     The side panel shows the properties of your replication flow. Complete the missing information as appropriate:
 
@@ -122,7 +122,7 @@ For more information about available connection types, sources, and targets, see
     
     \[only relevant for load type `Initial and Delta`\] Define the time interval for replicating changes from the source to the target. 
 
-    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -150,11 +150,23 @@ For more information about available connection types, sources, and targets, see
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Skip Unmapped Target Columns
+    
+    </td>
+    <td valign="top">
+    
+    \[only relevant if the target table has columns that don't exist in the corresponding source object\] Activate this option if you want to skip target columns that don't exist in the source. For more information, see [Add the Target for a Replication Flow](add-the-target-for-a-replication-flow-ab490fb.md).
+    
+    </td>
+    </tr>
     </table>
     
-3.  Select a target connection and target container \(see [Add a Target](add-a-target-ab490fb.md)\).
+3.  Select a target connection and target container \(see [Add the Target for a Replication Flow](add-the-target-for-a-replication-flow-ab490fb.md)\).
 
-4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md)\).
+4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)\).
 
 5.  Select a replication object in the canvas to review its properties in the side panel and change or complete them as appropriate:
 
@@ -192,7 +204,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source.
+    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source. For local table \(file\), delta capturing is activated by default and cannot be switched off. 
 
     For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
     
@@ -208,7 +220,7 @@ For more information about available connection types, sources, and targets, see
     
     Select how you want to load the data \(initial only or initial and delta\).
 
-    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -222,7 +234,7 @@ For more information about available connection types, sources, and targets, see
     
     \[only relevant for replication of CDS views and if this feature is supported for the source\] Select a BAdI implementation to add your own projection logic for replication of CDS view data.
 
-    For more information, see [Add Customer-Specific Projection Logic](add-customer-specific-projection-logic-970636e.md).
+    For more information, see [Define Custom Projection Logic in a Replication Flow](define-custom-projection-logic-in-a-replication-flow-970636e.md).
     
     </td>
     </tr>
@@ -234,9 +246,9 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Enable this option to delete any existing content in the target.
+    Enable this option to delete any existing content in the target. For some connection types and use cases, this property has a fixed value that cannot be changed. 
 
-    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -248,11 +260,9 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Enter the number of threads to be used for parallel processing during delta load.
+    Enter the number of threads to be used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta*. 
 
-    This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta*.
-
-    For more information, see [Configure Your Replication Flow](configure-your-replication-flow-3f5ba0c.md).
+    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -273,11 +283,11 @@ For more information about available connection types, sources, and targets, see
     > ### Note:  
     > Some further properties are only relevant for specific types of targets. You can find a list of these properties in the detailed information for the respective targets:
     > 
-    > -   [Using a Cloud Storage Provider As the Target](using-a-cloud-storage-provider-as-the-target-43d93a2.md)
+    > -   [Cloud Storage Provider Targets](cloud-storage-provider-targets-43d93a2.md)
     > 
-    > -   [Using Google BigQuery As the Target](using-google-bigquery-as-the-target-56d4472.md)
+    > -   [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
     > 
-    > -   [Using Apache Kafka As the Target](using-apache-kafka-as-the-target-6df55db.md).
+    > -   [Apache Kafka Targets](apache-kafka-targets-6df55db.md).
 
 6.  Click <span class="FPA-icons-V3"></span> \(Save\).
 
@@ -352,6 +362,20 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
+    <span class="FPA-icons-V3"></span> \(Export\)
+    
+    </td>
+    <td valign="top">
+    
+    Export the object to a CSN/JSON file. 
+
+    See [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Add Projection
     
     </td>
@@ -359,7 +383,7 @@ For more information about available connection types, sources, and targets, see
     
     Define a projection \(filter or mapping\) for an object by selecting it and choosing *Add Projection*.
 
-    See [Define Filters](define-filters-5a6ef36.md) and [Define Mapping](define-mapping-2c7948f.md)
+    See [Define Filters in a Replication Flow](define-filters-in-a-replication-flow-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md)
     
     </td>
     </tr>

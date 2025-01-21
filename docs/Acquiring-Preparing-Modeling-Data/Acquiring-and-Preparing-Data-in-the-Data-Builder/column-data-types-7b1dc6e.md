@@ -427,7 +427,7 @@ Decimal, Double, hana.SMALLDECIMAL, hana.SMALLINT, hana.REAL, Integer, Integer64
 </tr>
 </table>
 
-For more information, see [Numeric Data Types](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/4ee2f261e9c44003807d08ccc2e249ac.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
+For more information, see [Numeric Data Types](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-reference-guide/numeric-data-types) in the *SAP HANA Cloud, SAP HANA Database SQL Reference Guide* documentation.
 
 
 

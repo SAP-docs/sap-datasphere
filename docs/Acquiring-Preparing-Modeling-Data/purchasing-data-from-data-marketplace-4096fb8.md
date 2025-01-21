@@ -2,7 +2,7 @@
 
 # Purchasing Data from Data Marketplace
 
-Enrich your own data with third-party data products.
+Users with a modeler role can purchase external data from the *Data Marketplace* to combine with and enrich their internal data.
 
 > ### Note:  
 > Data Marketplace and the Data Sharing Cockpit are only available in SAP Datasphere tenants provisioned since January 25, 2021. See [3148585](https://me.sap.com/notes/3148585) for more information.

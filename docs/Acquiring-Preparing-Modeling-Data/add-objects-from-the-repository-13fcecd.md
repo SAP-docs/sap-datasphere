@@ -33,9 +33,11 @@ Drag objects from the *Repository* tab of the *Source Browser* to add them as so
         -   *Shared* - Objects that are shared to your space
         -   *Favorites* - Objects that you have favorited
 
-    -   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+    -   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\). 
 
         As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
+
+        The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 
     -   Click <span class="FPA-icons-V3"></span> \(More\) to access the *Sort* and *Filter* options.
     -   Click a folder in the list to drill down into and restrict your search to the folder.

@@ -86,7 +86,7 @@ A space is locked:
 -   if the audit logs consume too much disk storage,
 -   if a space administrator has manually locked the space.
 
-For more information on how to unlock a space, see [Lock or Unlock Your Space](lock-or-unlock-your-space-c05b6a6.md).
+For more information on how to unlock a space, see [Unlock a Locked Space](unlock-a-locked-space-c05b6a6.md).
 
 When a space is locked, its capabilities are limited. Users can continue to create and modify objects and save their changes in the repository, but they cannot deploy their changes to the run-time database.
 

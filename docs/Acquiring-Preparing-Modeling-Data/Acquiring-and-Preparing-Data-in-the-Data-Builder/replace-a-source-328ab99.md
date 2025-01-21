@@ -43,7 +43,7 @@ The output structure of the view is preserved as far as possible, and any impact
     -   If any new source columns were left unmapped, insert a projection node after the source \(if one is not already present\) and exclude these new columns so that they do not modify the output columns.
     -   Update the *Status* of your view.
 
-5.  \[if new source columns were left unmapped\] Review the projection node and restore any new columns that you want to make available \(see [Reorder, Rename, and Exclude Columns](../reorder-rename-and-exclude-columns-b846d0d.md)\)
+5.  \[if new source columns were left unmapped\] Review the projection node and restore any new columns that you want to make available \(see [Reorder, Rename, and Exclude Columns in a Graphical View](../reorder-rename-and-exclude-columns-in-a-graphical-view-b846d0d.md)\)
 
 6.  \[if old source columns were left unmapped\] Review each of the validation warnings and errors and correct them as appropriate.
 

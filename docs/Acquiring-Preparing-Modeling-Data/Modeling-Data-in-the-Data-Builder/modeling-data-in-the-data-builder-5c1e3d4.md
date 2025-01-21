@@ -4,7 +4,7 @@
 
 # Modeling Data in the Data Builder
 
-Users with the *DW Modeler* role can add semantic information to their entities and expose them directly to clients, tools, and apps, or combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, MS Excel, and other clients, apps, and tools.
+Users with a modeler role can add semantic information to their entities and combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, Microsoft Excel, and other clients, apps, and tools.
 
 This topic contains the following sections:
 
@@ -117,9 +117,9 @@ A hierarchy with directory is an entity that contains one or more parent-child h
 Once your fact is ready for use, create an analytic model from it to consume its data in SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
 -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Analytic Model* to open the editor.
--   You must add a fact as a source and can choose to copy all its measures, attributes and associated dimensions to the analytic model \(see [Add a Source](add-a-source-27075ee.md)\).
+-   You must add a fact as a source and can choose to copy all its measures, attributes and associated dimensions to the analytic model \(see [Add a Fact to an Analytic Model](add-a-fact-to-an-analytic-model-27075ee.md)\).
 -   You can deselect measures and attributes to leave only those that are relevant to answer your particular analytic question.
--   You can create additional calculated and restricted measures \(see [Add Measures](add-measures-e4cc3e8.md)\).
+-   You can create additional calculated and restricted measures \(see [Create a Measure in an Analytic Model](create-a-measure-in-an-analytic-model-e4cc3e8.md)\).
 -   You can create multiple tightly-focused analytic models from a single fact, each providing only the data needed for a particular BI context, and enriched with appropriate variables, filters, and additional measures as necessary.
 
 
@@ -265,7 +265,7 @@ For more information, see:
 \*\* SAP Analytics Cloud primarily uses the consumption of view data via OData for planning \(see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:\).
 
 > ### Note:  
-> Before exposing data for consumption, you should consider applying row-level security via data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+> Before exposing data for consumption, you should consider applying row-level security via data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
 
 
 
@@ -278,7 +278,12 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
 -   Click one of the tabs to filter the list by object type.
 -   Click a tile to create a new object
 -   Click <span class="FPA-icons-V3"></span> \(Show filters\) to filter the list on collections and search by criteria. Click *Show More* to open a dialog with additional filter options.
--   Enter a string in the *Search* field to filter the list on business and technical names and users.
+-   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\). 
+
+    As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
+
+    The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+
 -   Click a column header to sort or filter the list by values in the column.
 -   Select one or more objects and use any of the following tools:
 
@@ -354,7 +359,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   Local tables \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical views \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL views \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\)
+    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\)
     -   Analytic models \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\)
     -   Task chains \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 

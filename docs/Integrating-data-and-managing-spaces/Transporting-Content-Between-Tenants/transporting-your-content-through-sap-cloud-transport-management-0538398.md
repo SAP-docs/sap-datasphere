@@ -25,6 +25,11 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 
 1.  As an administrator of SAP Cloud Transport Management, set up an environment to transport content objects directly in SAP Datasphere, see [Initial Setup to Transport Content Objects Directly in an Application](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/set-up-environment-to-transport-content-archives-directly-in-application).
 2.  Configure the landscape for your transports, by creating transport destinations, routes, and nodes.
+
+    > ### Tip:  
+    > -   Go to *System*→*Administration*→*App Integration* to find the token URL and add the extension `<Token URL>?grant_type=client_credentials`.
+    > -   You must create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
+
     1.  Create a destination in the SAP Cloud Transport Management subaccount for each target environment of SAP Datasphere. See [Create Transport Destinations](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-destinations).
 
         To integrate with SAP Datasphere, the destination must have an endpoint URL in this format: `https://<tenant_URL>/api/v1/content/deploy/`
@@ -32,11 +37,6 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
         ![](images/Destination_Config_da27266.png)
 
     2.  Create nodes and routes. See [Create Transport Nodes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-nodes) and [Create Transport Routes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-routes). Make sure to select the checkbox *Allow Upload to Node* when creating a source node. When defining a target node, the content type must be *Application Content* to be able to select the destination name you've created in the previous step.
-
-        > ### Tip:  
-        > -   Go to *System*→*Administration*→*App Integration* to find the token URL and add the extension `<Token URL>?grant_type=client_credentials`.
-        > -   You must create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
-
 
 3.  Go to your SAP Business Technology Platform subaccount. Choose the SAP Cloud Transport Management instance of your choice. In the instance details page, choose *…* → *Download* to download the SAP Cloud Transport Management instance key.
 

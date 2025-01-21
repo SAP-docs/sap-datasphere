@@ -26,13 +26,13 @@ Your space is a secure area and its entities and other objects cannot be seen in
 > ### Note:  
 > Only entities \(tables and views\) and task chains can be shared. Other *Data Builder* objects and *Business Builder* objects cannot be shared to other spaces.
 
-You can share tables and views, but only views can have row-level security applied to protect data \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+You can share tables and views, but only views can have row-level security applied to protect data \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
 
 In this example, the *IT* space has imported the *Sales* and *Products* tables from a source system and wants to share them to the *Sales* space, but the *Sales* table contains sensitive data:
 
 ![](images/Sharing_Example_-_Step_1_e588dcd.png)
 
-In order to protect that data and ensure that users can view only data for which they have permission, an *IT* space user consumes the *Sales* table in the *Sales* view and applies a data access control to the view \(see [Apply a Data Access Control](../apply-a-data-access-control-8f79fc8.md)\):
+In order to protect that data and ensure that users can view only data for which they have permission, an *IT* space user consumes the *Sales* table in the *Sales* view and applies a data access control to the view \(see [Apply a Data Access Control to a Graphical or SQL View](../apply-a-data-access-control-to-a-graphical-or-sql-view-8f79fc8.md)\):
 
 ![](images/Sharing_Example_-_Step_2_6b60b6c.png)
 
@@ -85,8 +85,8 @@ Entities with a semantic usage of *Fact* or *Dimension* commonly have dependenci
 -   Text entities - Providing translations of text values \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\)
 -   External hierarchies - Providing drill-down capabilities \(see [Create an External Hierarchy for Drill-Down](../Modeling-Data-in-the-Data-Builder/create-an-external-hierarchy-for-drill-down-dbac7a8.md)\)
 -   Hierarchies with directories - Including all their supporting entities \(see [Create a Hierarchy with Directory](../Modeling-Data-in-the-Data-Builder/create-a-hierarchy-with-directory-36c39ee.md)\)
--   Value help entities - Providing values for input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\)
--   Lookup entities - Providing help in deriving values for variables \(see [Add a Variable](../Modeling-Data-in-the-Data-Builder/add-a-variable-cdd8fa0.md)\)
+-   Value help entities - Providing values for input parameters \(see [Create an Input Parameter in a Graphical View](../create-an-input-parameter-in-a-graphical-view-53fa99a.md)\)
+-   Lookup entities - Providing help in deriving values for variables \(see [Create a Variable in an Analytic Model](../Modeling-Data-in-the-Data-Builder/create-a-variable-in-an-analytic-model-cdd8fa0.md)\)
 
 > ### Note:  
 > If any expected service is missing in the space to which you share your entity, verify that the relevant supporting entity is correctly shared. For example, if texts, hierarchies, or value helps are missing, verify that you have shared the appropriate text entity, hierarchy, or value help entity.

@@ -6,22 +6,13 @@ To be able to successfully validate and use a connection to an OData service for
 
 
 
-<a name="loiod9c43a2dd2b340c48e4e665967c853e8__prereq_general_OData"/>
-
-## General
-
-Before you can use the connection, the following is required:
-
--   The OData service URL needs to be publicly available.
-
-
-
-
 <a name="loiod9c43a2dd2b340c48e4e665967c853e8__prereq_rt_OData"/>
 
 ## Remote Tables
 
 Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+
+-   The OData service URL needs to be publicly available.
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
 

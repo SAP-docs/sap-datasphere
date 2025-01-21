@@ -2,7 +2,7 @@
 
 # Object Lifecycles and Dependencies
 
-In SAP Datasphere, data is loaded via flows or other methods into tables and then consumed in views and other types of objects, before being exposed for consumption in clients, tools, and apps. We provide various tools to help you ensure that your objects are valid and correctly deployed, and to understand and manage the dependencies between them.
+Users with a modeler or space administrator role are responsible for ensuring that their objects are valid and correctly deployed, and to understand and manage the dependencies between them.
 
 This topic contains the following sections:
 

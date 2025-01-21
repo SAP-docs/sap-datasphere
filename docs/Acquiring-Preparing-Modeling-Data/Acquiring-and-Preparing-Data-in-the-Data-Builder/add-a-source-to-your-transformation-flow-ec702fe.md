@@ -16,8 +16,8 @@ Add a source to your transformation flow to read data from.
 
 2.  Browse or search for the object you want to add on either of the tabs.
 
-    -   The *Repository* tab lists all the tables and views that are available in the space.
-    -   The *Sources* tab lists all the Open SQL schemas that have been integrated to the space from which you can import tables and views. Each Open SQL schema appears as a root node in this tab \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.") :arrow_upper_right:\).
+    -   The *Repository* tab lists all the tables, local tables \(files\), and views that are available in the space.
+    -   The *Sources* tab lists all the Open SQL schemas that have been integrated to the space from which you can import tables and views. Each Open SQL schema appears as a root node in this tab \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\).
 
 3.  Drag a table from the relevant tab and drop it onto the diagram.
 
@@ -88,6 +88,22 @@ Add a source to your transformation flow to read data from.
     <td valign="top">
     
     Indicates whether the delta capture setting is enabled for a table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Storage
+    
+    </td>
+    <td valign="top">
+    
+    \(read-only\) Displays the table storage. 
+
+    For local tables created in a space with SAP HANA Cloud, SAP HANA database storage the values can be "Disk" or "In-Memory". 
+
+    For local tables created in a space with SAP HANA Cloud data lake storage, the value is "File".
     
     </td>
     </tr>

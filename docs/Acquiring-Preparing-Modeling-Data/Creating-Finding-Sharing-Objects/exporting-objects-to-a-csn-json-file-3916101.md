@@ -19,10 +19,11 @@ The *Export to CSN/JSON File* button is available in the following editors:
 -   Graphical views \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
 -   SQL views \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
 -   Data flows \(see [Creating a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-data-flow-e30fd14.md)\)
+-   Replication flows \(see [Creating a Replication Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-replication-flow-25e2bd7.md)\)
 -   Intelligent lookups \(see [Creating an Intelligent Lookup](../creating-an-intelligent-lookup-8f29f80.md)\)
 -   Analytic models \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
 -   Entity-relationship models \(see [Creating an Entity-Relationship Model](../creating-an-entity-relationship-model-a91c042.md)\)
--   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\)
+-   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\)
 -   Task chains \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 
 

@@ -2,5 +2,5 @@
 
 # SQL and SQLScript Reference
 
-SAP Datasphere views use a subset of the SAP HANA Cloud SQL and SQLScript syntax.
+Users with a modeler role use a subset of the SAP HANA Cloud SQL and SQLScript syntax to create views.
 

@@ -20,7 +20,9 @@ This topic contains the following sections:
 
 ## Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md) \(recommended for federation scenarios\).
+
+If you want to federate and replicate data using SAP HANA smart data integration, the following is required before you can use the connection \(legacy\):
 
 -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
 
@@ -76,7 +78,18 @@ Before you can use the connection for replication flows, the following is requir
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
--   
+-   Making use of fast serialization requires the following prerequisites:
+
+    -   The endpoint is either RFC or RFCLB \(for loadbalancing via message server\). Fast serialization is not available for endpoints WSRFC or SQL.
+
+    -   The SAP S/4HANA on-premise system needs to support the feature.
+
+    -   In the SAP S/4HANA on-premise system, the feature has not been disabled via parameter `APE_DISABLE_RUCKSACK` in `DHBAS_RUNTIME` configuration table.
+
+
+    For more information about using fast serialization in SAP Datasphere and its prerequisites, see SAP Note [3486245](https://me.sap.com/notes/3486245).
+
+
 
 
 <a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP"/>

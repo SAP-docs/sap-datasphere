@@ -2,5 +2,5 @@
 
 # Managing Users and Roles
 
-Create and manage users, manage secure access to SAP Datasphere using roles, and set up authentication for your users if you are using your own identity provider.
+Users with an administrator role can create SAP Datasphere users and manage secure access to the tenant through roles and privileges.
 

@@ -2,5 +2,5 @@
 
 # Managing and Monitoring Connectivity for Data Integration
 
-Monitor Data Provisioning Agent connectivity in SAP Datasphere, manage the impacts of agent changes in SAP Datasphere, and troubleshoot Data Provisioning Agent or Cloud Connector connectivity.
+Users with an administrator role can monitor and troubleshoot Data Provisioning Agent and Cloud Connector connectivity.
 

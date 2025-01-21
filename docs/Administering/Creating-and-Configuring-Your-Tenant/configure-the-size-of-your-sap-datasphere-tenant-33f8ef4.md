@@ -215,6 +215,65 @@ SAP BW Bridge includes SAP BTP, ABAP environment, and an own HANA Cloud runtime 
 </tr>
 </table>
 
+**Object Store**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Storage*
+
+</td>
+<td valign="top">
+
+Select the size of storage in TB.
+
+You can specify the storage size starting from 1 TB.
+
+Storage is correlated to SAP HANA Data Lake Files \(HDLF\) size.
+
+> ### Note:  
+> You may incur higher consumption costs because data lake files keep a previous copy of any file affected by an operation for a given retention time to allow for operations such as `RESTORESNAPSHOT`. These previous copies incur data lake storage costs. For example, you may have a 10 MB table, and the storage will be higher than that because of the number of operations initiated and copied. For more information, see [Restoring data in Data Lake Files](https://help.sap.com/docs/hana-cloud-data-lake/user-guide-for-data-lake-files/restoring-data-in-data-lake-files#context) and [Limitations of Data Lake files](https://help.sap.com/docs/hana-cloud-data-lake/user-guide-for-data-lake-files/limitations-of-data-lake-files).
+> 
+> Storage is rounded to the next whole GB. For example, if all of the files in storage consume 1.2 GB, then the memory is rounded up to the next full gigabyte. In this example, it would round up to 2 GB.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Compute*
+
+</td>
+<td valign="top">
+
+Select the number of block-hours starting from 1.
+
+Values set here are mapped to Spark Compute and the number of Object Store Requests.
+
+4 GB of Spark Compute are equal to 0.149 Object Store Compute Blocks.
+
+1000 Object Store Requests are equal to 0.026 Object Store Compute Blocks.
+
+</td>
+</tr>
+</table>
+
 **Elastic Compute Node**
 
 
@@ -238,9 +297,6 @@ Description
 
 </td>
 <td valign="top">
-
-> ### Note:  
-> If you try to modify the settings and discover that elastic compute node functionality has not been enabled on your SAP HANA Cloud Database, follow the steps described in [SAP Note 3432666](https://me.sap.com/notes/3432666). This functionality is not enabled by default on older tenants.
 
 \[optional\] Select a performance class for your elastic compute node block-hours:
 
@@ -675,7 +731,7 @@ Displays the amount charged to the users this month for all services. This calcu
 
 ## vCPU Allocation
 
-When you set your base configuration, the performance class you select and the hyperscaler you are using determines the ratio of memory to vCPUs allocated to your tenant. The tables below list the memory to vCPU ratio for each hyperscaler.
+When you set your base configuration, the performance class you select and the hyperscaler you are using determines the amount of memory in GB available for each vCPU in the system. For example, an AWS system with 32 GB of memory has 2 vCPUs, whereas an AWS system with 320 GB of memory has 20 vCPUs. The tables below list the memory to vCPU ratio for each hyperscaler.
 
 **Performance Class: Memory**
 
@@ -945,6 +1001,40 @@ AWS
 <tr>
 <td valign="top">
 
+AWS
+
+</td>
+<td valign="top">
+
+9000 GB
+
+</td>
+<td valign="top">
+
+20.36
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+12000 GB
+
+</td>
+<td valign="top">
+
+27.15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 GCP
 
 </td>
@@ -979,6 +1069,40 @@ GCP
 <tr>
 <td valign="top">
 
+GCP
+
+</td>
+<td valign="top">
+
+8630 GB
+
+</td>
+<td valign="top">
+
+20.95
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GCP
+
+</td>
+<td valign="top">
+
+11520 GB
+
+</td>
+<td valign="top">
+
+27.96
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Azure
 
 </td>
@@ -1007,6 +1131,40 @@ Azure
 <td valign="top">
 
 27.43
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+7440 GB
+
+</td>
+<td valign="top">
+
+18.05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Azure
+
+</td>
+<td valign="top">
+
+11150 GB
+
+</td>
+<td valign="top">
+
+20.95
 
 </td>
 </tr>

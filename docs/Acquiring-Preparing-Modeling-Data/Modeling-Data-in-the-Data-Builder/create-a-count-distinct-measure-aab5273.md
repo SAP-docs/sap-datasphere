@@ -8,6 +8,14 @@ A count distinct measure counts unique occurrences of attributes.
 
 
 
+<a name="loioaab52739c2ae48fa8a5c26fd0e9afd26__context_fm2_v1q_kdc"/>
+
+## Context
+
+The count distinct measures considers only booked values.
+
+
+
 ## Procedure
 
 1.  You are in the editor of your analytic model. You can create a new count distinct measure by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Measure in the properties panel. Choose *Count Distinct Measure*.

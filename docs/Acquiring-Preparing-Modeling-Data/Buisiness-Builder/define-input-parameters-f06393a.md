@@ -12,7 +12,7 @@ You have to create input parameters, if the underlying view has input parameters
 
 Input parameters defined for business entities are inherited to the fact and consumption models, but can also be overwritten.
 
-For more information on input parameters, see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md).
+For more information on input parameters, see [Create an Input Parameter in a Graphical View](../create-an-input-parameter-in-a-graphical-view-53fa99a.md).
 
 
 

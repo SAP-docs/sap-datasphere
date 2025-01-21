@@ -28,4 +28,7 @@ You can use the *Cancel Run* button to stop a transformation flow run that is cu
 
     Canceling a transformation flow involves rolling back database transactions. Therefore, it might take some time until the transformation flow is canceled and the status changes to *Failed \(Canceled\)*.
 
+    > ### Caution:  
+    > For a transformation flow in a file space, when you cancel a run, it stops where it is, and does not roll back what has already been processed. If you restart the run later, it will restart from the beginning, not where it has stopped.
+
 

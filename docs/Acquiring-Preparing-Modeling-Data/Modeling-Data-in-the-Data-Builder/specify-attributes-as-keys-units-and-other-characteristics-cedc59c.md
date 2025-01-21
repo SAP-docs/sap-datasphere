@@ -42,12 +42,12 @@ Key
 </td>
 <td valign="top">
 
-Select the checkbox to specify that the column is a primary key column. Key columns cannot be null. 
+Select the checkbox to specify that the column is a primary key column, which uniquely identifies the record. Key columns cannot contain null values and each value \(or set of combined values for multi-column compound keys\) must be unique. 
 
 > ### Note:  
 > To set or remove an attribute as a primary key column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Set as Key* or *Remove as Key*.
 
-
+See also [Set Key Columns to Uniquely Identify Records](set-key-columns-to-uniquely-identify-records-d9ef2c9.md). To validate the data in your key columns, see "Key Validation Rules" in [Validating View Data](../validating-view-data-ed4063d.md). 
 
 </td>
 </tr>

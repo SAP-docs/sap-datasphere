@@ -105,10 +105,11 @@ A standard variable is used in a fact source to map it to input parameters of th
     
     Choose how the variable should be filled:
 
-    -   Manual Input
+    -   *Manual Input*
 
-    -   Derive Value. Derived variables are hidden in the data preview or in an SAP Analytics Cloud story.
+    -   *Derive Value*: Derived variables are hidden in the data preview or in an SAP Analytics Cloud story.
 
+    -   *Dynamic Default*: You get a derived value in the parameter dialog list when opening the analytic preview, and in the variable prompt for an SAP Analytics Cloud story.
 
 
     

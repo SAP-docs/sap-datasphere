@@ -137,10 +137,10 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 -   Most SAP Datasphere apps consume a local table with delta capture through the *Active Records* table only. In these cases, local tables behave the same way independent of whether *Delta Capture* is set to "*On*" or "*Off*". For examples in Graphical Views, SQL Views, E/R Modeler or Business Builder.
 -   The following SAP Datasphere apps also interact with the Delta Capture Table that contains the delta columns:
     -   *Transformation Flow*:
-        -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source to Your Transformation Flow](add-a-source-to-your-transformation-flow-ec702fe.md)
+        -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md)
         -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](processing-changes-to-sources-and-target-tables-705292c.md) and [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md) 
 
-    -   *Replication Flow*: The Delta Capture Table can be used as source or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add a Source](add-a-source-7496380.md).
+    -   *Replication Flow*: The Delta Capture Table can be used as source or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add the Source for a Replication Flow](add-the-source-for-a-replication-flow-7496380.md).
     -   *Table Editor*:
         -   Data Preview: Once deployment is completed, it shows only the delta capture tables. See [Viewing Object Data](../viewing-object-data-b338e4a.md)
         -   Data Maintenance: You can perform table maintenance on the delta capture table \(only\) once deployment is completed. See [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)

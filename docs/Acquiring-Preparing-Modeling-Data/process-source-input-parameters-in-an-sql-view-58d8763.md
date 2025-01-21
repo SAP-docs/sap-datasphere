@@ -8,7 +8,7 @@ Process input parameters contained in source views by mapping them to new input 
 
 ## Context
 
-Graphical and SQL views can contain input parameters, which prompt the user to enter a value for use in filtering or other calculations when the view is run \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\).
+Graphical and SQL views can contain input parameters, which prompt the user to enter a value for use in filtering or other calculations when the view is run \(see [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md)\).
 
 When adding such a view as a source in your SQL view, you must process each of the input parameters.
 
@@ -60,7 +60,7 @@ When adding such a view as a source in your SQL view, you must process each of t
 
     -   Map the source input parameter to an input parameter in the view.
 
-        You must first create the input parameter in the side panel \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\) and then enter its name in the code, prefixed by a colon. The new input parameters can have the same name as the source input parameters, but this is not required.
+        You must first create the input parameter in the side panel \(see [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md)\) and then enter its name in the code, prefixed by a colon. The new input parameters can have the same name as the source input parameters, but this is not required.
 
         In this example the `Sales` view is added as a source and its input parameters, `IP_CITY` and `IP_DISCOUNT`, are mapped to new input parameters with the same names:
 

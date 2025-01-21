@@ -59,7 +59,7 @@ Run *View Analyzer* without memory consumption
 </td>
 <td valign="top">
 
-To run *View Analyzer* without memory consumption, you must have a role that is either based on the scroped role *DW Administrator* or on a custom role that includes the *Data Warehouse Data Integration \(Read, Update, Execute\)* and *Data Builder \(Read\)* privileges.
+To run *View Analyzer* without memory consumption, you must have a role that is either based on the scoped role *DW Administrator* or on a custom role that includes the *Data Warehouse Data Integration \(Read, Update, Execute\)* and *Data Builder \(Read\)* privileges.
 
 </td>
 </tr>
@@ -73,7 +73,7 @@ To run *View Analyzer* without memory consumption, you must have a role that is 
 
 You can generate the Explain Plan with the same permission required to run *View Analyzer* without memory consumption.
 
-To download the SQL analyzer plan file, you must have either the scoped role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
+To generate Explain Plan, you must have either the scoped role *DW Administrator* or an additional custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ To run the*View Analyzer* with memory consumption you must have a role that is e
 
 You can generate a SQL analyzer plan file with the same permission required to run *View Analyzer* without memory consumption.
 
-To download the SQL analyzer plan file, you must have either the scoped role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
+To download the SQL analyzer plan file, you must have either the scoped role *DW Administrator* or an additional custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
 
 </td>
 </tr>

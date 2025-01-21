@@ -6,6 +6,9 @@ See the storage amount assigned to and used by your space.
 
 To open the monitoring page, select your space and click *Monitor* from the *Space Management* page or alternatively open your space and click *Monitor* on the upper-right side of your space.
 
+> ### Note:  
+> You cannot monitor a file space.
+
 
 <table>
 <tr>

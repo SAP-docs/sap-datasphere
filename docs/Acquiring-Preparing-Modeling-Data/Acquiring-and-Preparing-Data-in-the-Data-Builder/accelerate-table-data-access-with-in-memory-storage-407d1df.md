@@ -4,13 +4,13 @@
 
 # Accelerate Table Data Access with In-Memory Storage
 
-By default, table data is stored on disk. You can improve performance by enabling in-memory storage.
+By default, when you are working in an SAP HANA Cloud, SAP HANA database space, table data is stored on disk. You can improve performance by enabling in-memory storage.
 
 
 
 ## Procedure
 
-1.  Open your table in the table editor and scroll to the *Table Services* section.
+1.  Open your table in the table editor and navigate to the property Storage
 
 2.  Enable the following option:Update the property as follows:
 
@@ -31,12 +31,12 @@ By default, table data is stored on disk. You can improve performance by enablin
     <tr>
     <td valign="top">
     
-    *Store Table Data in Memory*
+    Storage
     
     </td>
     <td valign="top">
     
-    Enable this option to store the table data directly in memory \(hot store\). By default, table data is stored on disk \(warm store\).
+    Change the value from "Disc" to "In-Memory
     
     </td>
     </tr>

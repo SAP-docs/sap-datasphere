@@ -4,12 +4,23 @@
 
 # Set Key Columns to Uniquely Identify Records
 
-Set one or more columns as keys to uniquely identify records in an entity. Each value in a key column \(or each combination of values, when two or more key columns are set\) must be unique.
+Set one or more columns as keys to uniquely identify records in an entity. Key columns cannot contain null values and each value \(or set of combined values for multi-column compound keys\) must be unique.
 
 This topic contains the following sections:
 
+-   [Set Columns as Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_set_keys)
 -   [Keys and Associations](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_required_keys)
 -   [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys)
+
+
+
+<a name="loiod9ef2c91f6d647e584bad51999e441cd__section_set_keys"/>
+
+## Set Columns as Keys
+
+To set a column as a key, select the checkbox in its *Key* column. You can set one column as a key or, if necessary, set multiple columns to define a compound key \(see [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys)\).
+
+Key columns cannot contain null values and each value \(or set of combined values for multi-column compound keys\) must be unique. To validate the data in your key columns, see "Key Validation Rules" in [Validating View Data](../validating-view-data-ed4063d.md). 
 
 
 

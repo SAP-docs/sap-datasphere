@@ -12,7 +12,7 @@ Create a connection to allow users assigned to a space to use the connected sour
 
 ## Prerequisites
 
-See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bffbd58c15784a62af0520f171018ded.html "You need to perform some preparatory steps to be able to create and use connections in SAP Datasphere. The steps depend on the source you want to connect to and on the features you want to use with the connection.") :arrow_upper_right:.
+See [Preparing Connectivity for Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bffbd58c15784a62af0520f171018ded.html "Users with an administrator role can prepare SAP Datasphere connectivity to allow the creation of connections to remote systems in spaces.") :arrow_upper_right:.
 
 
 

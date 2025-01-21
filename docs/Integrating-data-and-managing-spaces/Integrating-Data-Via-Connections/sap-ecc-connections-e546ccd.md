@@ -120,6 +120,11 @@ Description
 
 Select *Application Server* to connect to a single application server, or select *Message Server* to use load balancing and connect to a message server that distributes the load to different application servers.
 
+> ### Note:  
+> The SAP Logon connection type you select here must match the connection type in the system mapping in the Cloud Connector configuration \(load balancing logon or connecting to a specific application server\).
+
+
+
 </td>
 </tr>
 <tr>

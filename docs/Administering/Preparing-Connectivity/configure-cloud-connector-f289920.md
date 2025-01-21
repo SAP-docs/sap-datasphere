@@ -223,6 +223,13 @@ For more information about the supported use cases depending on the connection t
         *SAP BW/4HANA Model Transfer* \(model import\)
 
         *SAP S/4HANA On-Premise* \(model import\)
+
+        *SAP S/4HANA On-Premise* \(remote tables via ABAP SQL service\)
+
+        > ### Note:  
+        > When configuring the connection for using the ABAP SQL for data federation with remote tables, using the model import feature is not supported with the same connection
+
+
         
         </td>
         <td valign="top">
@@ -325,9 +332,13 @@ For more information about the supported use cases depending on the connection t
         For more information, see [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) and [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
 
         > ### Note:  
-        > When adding the system mapping information, you enter internal and virtual system information. The internal host and port specify the actual host and port under which the backend system can be reached within the intranet. It must be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector tries to forward the request to the network address specified by the internal host and port, so this address needs to be real. The virtual host name and port represent the fully qualified domain name of the related system in the cloud.
+        > -   When adding the system mapping information, you enter internal and virtual system information. The internal host and port specify the actual host and port under which the backend system can be reached within the intranet. It must be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector tries to forward the request to the network address specified by the internal host and port, so this address needs to be real. The virtual host name and port represent the fully qualified domain name of the related system in the cloud.
         > 
-        > We recommend to use a virtual \(cloud-side\) name that is different from the internal name.
+        >     We recommend to use a virtual \(cloud-side\) name that is different from the internal name.
+        > 
+        > -   For ABAP-based connection types: When using load balancing, make sure to directly specify the message server port in the *System ID* field of the system mapping information.
+        > -   For ABAP-based connection types: The connection type selected in the system mapping information \(load balancing logon or connecting to a specific application server\) must match the SAP Logon connection type selected in SAP Datasphere connection management \(message server or application server\).
+        > -   If encrypted communication using TLS/SSL is defined in the SAP Datasphere connection \(to establish end-to-end encryption\), ensure that the associated system mapping in the Cloud Connector does not use TLS.
 
     3.  To grant access only to the resources needed by SAP Datasphere, select the system host you just added from the *Mapping Virtual To Internal System* list, and for each resource that you want to allow to be invoked on that host click :heavy_plus_sign: in the *Resources Of* section to open the *Add Resource* dialog.
 
@@ -393,7 +404,17 @@ For more information about the supported use cases depending on the connection t
         </td>
         <td valign="top">
         
-        `/` 
+        For model import:
+
+        -   `/`
+
+
+        For data federation with remote tables via the ABAP SQL service:
+
+        -   Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example:`/sap/bc/sql/sql1/sap/s_privileged`.
+        -   Select the *WebSocket* option in the *Add Resources* dialog.
+
+
         
         </td>
         </tr>

@@ -26,10 +26,10 @@ The information tab provides more details of the *View Analyzer Results* and the
 ![](images/Persist_Guide_2_f4948e7.png)
 
 > ### Tip:  
-> Persist only one view at a time. Check the performance of the main view after the persitence run completed.. One possibility to check the performance is to simulate the data persistence in the *View Analyzer* with the option, 'With memory consumption'. Continue the process in an iterative way until the optimal performance is reached. The goal is to persist the minimal number of views required to optimize performance.
+> Persist only one view at a time. Check the performance of the main view after the persitence run completed. One possibility to check the performance is to simulate the data persistence in the *View Analyzer* with the option, 'With memory consumption'. Continue the process in an iterative way until the optimal performance is reached. The goal is to persist the minimal number of views required to optimize performance.
 
 > ### Note:  
-> To get the best results from data persistence guidence, it is recommended that the user have permission to see all views in the model from all spaces. If a user is unauthorized to see some views, the view with the highest rating value may remain hidden \(a warning will be displayed\). For more information about authorizations and permision in *View Analyzer* see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
+> To get the best results from data persistence guidance, it is recommended that the user have permission to see all views in the model from all spaces. If a user is unauthorized to see some views, the view with the highest rating value may remain hidden \(a warning will be displayed\). For more information about authorization and permision in *View Analyzer* see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
 
 
 

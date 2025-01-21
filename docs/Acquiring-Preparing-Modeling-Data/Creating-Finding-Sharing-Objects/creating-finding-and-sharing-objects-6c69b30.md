@@ -2,7 +2,7 @@
 
 # Creating, Finding, and Sharing Objects
 
-All SAP Datasphere users use the *Repository Explorer* to browse objects. Modelers can create objects and otherwise act on them here or in the dedicated builder apps. Users with the *Catalog User* role can, additionally, browse the *Catalog* for trusted data assets that have been published there.
+All SAP Datasphere users can use the *Repository Explorer* to browse objects. Users with a modeler role can create objects and otherwise act on them here or in the dedicated builder apps. Users with a catalog user role can, additionally, browse the *Catalog* for trusted data assets that have been published there.
 
 This topic contains the following sections:
 
@@ -28,7 +28,7 @@ You can also import objects from CSN/JSON files \(see [Importing and Exporting O
 
 You can search across all the objects in all the spaces you're assigned to in the *Repository Explorer* \(see [Repository Explorer](repository-explorer-f8ce0b4.md)\).
 
-Alternatively, you can browse for trusted data assets that have been published to the *Catalog* \(see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md)\).
+Alternatively, you can browse for trusted data assets that have been published to the *Catalog* \(see [Finding and Accessing Data in the Catalog](../finding-and-accessing-data-in-the-catalog-1047825.md)\).
 
 
 

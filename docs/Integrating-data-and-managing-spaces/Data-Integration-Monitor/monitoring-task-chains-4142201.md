@@ -154,7 +154,7 @@ You can click *Schedule* to create, edit, delete, pause or resume a schedule for
 
 Click <span class="FPA-icons-V3"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or subtasks in the task chain, and log messages about a selected task chain’s execution.
 
-![](images/Task_Chain_Runs_86dce77.jpg)
+![](images/Task_Chain_Runs_86dce77.png)
 
 > ### Note:  
 > The task chain *Details* page also lets you resize \(<span class="SAP-icons-V5"></span> and <span class="SAP-icons-V5"></span>\), expand/collapse \(<span class="SAP-icons-V5"></span>\), or close \( :x:\) the display of each panel to focus on specific detail information or log messages. In addition, you can sort \(<span class="SAP-icons-V5"></span> \) and filter \(<span class="SAP-icons-V5"></span> \) information displayed in the different panels, as well as search log messages.
@@ -165,6 +165,8 @@ To view details about a specific task run, select it in the *Runs* list in the l
 > For failed task chain runs, you can click on *Failed* in the Status field to show the likely cause of the failure, when that information is available.
 
 The center *Run Details* panel provides a list of task chain objects and child tasks \(if any are defined\) for a selected task chain and displays their individual type and execution status.
+
+The *Run Details* panel also provides a *Cancel Run* link in the top right-hand corner of the display for a specific task chain. If you click this link, SAP Datasphere initiates the Cancel operation and immediately remove all child tasks not already triggered. For any child task that has already started, the effect of the Cancel operation depends on the individual object. For example, replication flows and Open SQL procedures cannot effectively be cancelled, so successful completion of the task chain cancellation will wait until those child tasks are completed. Finally, when the task chain cancellation is complete, the task chain cancel activity will then display a *Run Status* of *Completed*.
 
 In the right-side panel, the task chain monitor displays log messages for a selected task chain. When you click on an object in the *Run Details* task list, detailed log messages for the selected task or subtask are displayed in the right-most panel.
 

@@ -2,7 +2,7 @@
 
 # Integrating Data to and From SAP HANA Cloud Data Lake
 
-Connect your SAP Datasphere space with SAP HANA Cloud, data lake to store and gain access to large amounts of data.
+Users with an administrator role can connect an SAP Datasphere space with SAP HANA Cloud, data lake to store and access large amounts of data. 
 
 
 

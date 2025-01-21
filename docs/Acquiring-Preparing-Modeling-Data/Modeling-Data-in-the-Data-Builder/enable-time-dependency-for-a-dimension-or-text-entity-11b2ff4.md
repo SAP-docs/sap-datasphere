@@ -41,7 +41,7 @@ To enable time-dependency in a dimension or text entity, you must identify one c
     > For information about setting keys and mapping them in associations, see [Set Key Columns to Uniquely Identify Records](set-key-columns-to-uniquely-identify-records-d9ef2c9.md).
 
 5.  \[optional\] By default, the *Business Date - From* and *Business Date - To* are treated inclusively. If you want to exclude one or both, you must edit the CSN code for your entity:
-    1.  Click *Edit Custom CSN Annotations* \(see [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md)\).
+    1.  Click *Edit Custom CSN Annotations* \(see [Edit Custom CSN Annotations in a View or Table](../edit-custom-csn-annotations-in-a-view-or-table-820d013.md)\).
     2.  Directly after the opening brace following the entity name, add the following code:
 
         ```
@@ -73,7 +73,7 @@ When an analytic model containing a fact that has an association pointing to the
 
 Any analytic model containing a fact pointing to your dimension via an association will, by default, benefit from its time-dependent data so that the dimension members and their names are displayed based on the current date.
 
-You can, optionally, create a reference date variable in your analytic model to allow SAP Analytics Cloud users to enter a date of their choice and show dimension members based on that date \(see [Add a Variable](add-a-variable-cdd8fa0.md)\).
+You can, optionally, create a reference date variable in your analytic model to allow SAP Analytics Cloud users to enter a date of their choice and show dimension members based on that date \(see [Create a Variable in an Analytic Model](create-a-variable-in-an-analytic-model-cdd8fa0.md)\).
 
 
 
@@ -88,7 +88,7 @@ Any analytical dataset pointing to your dimension via an association will, by de
 
 You can, optionally, add an input parameter to your analytical dataset to allow SAP Analytics Cloud users to enter a date of their choice and show dimension members based on that date.
 
-1.  Create an input parameter \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\) with data type *Date*.
+1.  Create an input parameter \(see [Create an Input Parameter in a Graphical View](../create-an-input-parameter-in-a-graphical-view-53fa99a.md)\) with data type *Date*.
 2.  Edit the CSN code to add a semantic type to the input parameter:
     1.  Click *Edit Custom CSN Annotations*
     2.  In the `params` section, find your parameter and add the following line after its `type`:

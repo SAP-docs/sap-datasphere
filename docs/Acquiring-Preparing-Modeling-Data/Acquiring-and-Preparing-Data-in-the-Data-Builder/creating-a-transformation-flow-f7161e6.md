@@ -139,6 +139,18 @@ Creating a transformation flow involves two important steps:
     <tr>
     <td valign="top">
     
+    Runtime
+    
+    </td>
+    <td valign="top">
+    
+    Runtime used to run the transformation flow. It can be SAP HANA \(for transformation flow\) or Apache Spark \(for transformation flow in file space\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Run Status 
     
     </td>
@@ -146,7 +158,12 @@ Creating a transformation flow involves two important steps:
     
     View the details of the last run. 
 
-    You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose the *Schedule* button to run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](running-a-flow-5b591d4.md). You can also open the transformation flow run in the *Data Integration Monitor*.
+    You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose:
+
+    -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](running-a-flow-5b591d4.md).
+    -   *Simulate Run*: In the *Data Integration Monitor*, you can open the transformation flow and click *Run* \> *Run with Settings* \> *Simulate Run* to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table. For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
+
+
     
     </td>
     </tr>
@@ -272,6 +289,27 @@ Creating a transformation flow involves two important steps:
     <td valign="top">
     
     Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> Show Sources
+    
+    </td>
+    <td valign="top">
+    
+    Enable to see the table and views used as sources for the view transform.
+
+    Source objects are in read-only mode in the transformation flow editor. Click a source object to see additional information about them in the *Properties* side panel. Click <span class="FPA-icons-V3"></span> \(Open in New Tab\) to open the source object in its own editor in a new tab.
+
+    > ### Note:  
+    > -   Source objects cannot be previewed in the view transform editor. Open them in a new tab to preview the data.
+    > -   A SQL view transform with validation error cannot be displayed as a source object.
+    > -   The input parameter panel cannot be displayed in an SQL view transform.
+
+
     
     </td>
     </tr>

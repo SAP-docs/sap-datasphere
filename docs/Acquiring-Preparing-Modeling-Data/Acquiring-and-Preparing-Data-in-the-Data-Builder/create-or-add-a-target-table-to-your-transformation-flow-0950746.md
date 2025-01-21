@@ -21,6 +21,8 @@ A transformation flow writes data to a target table. You can create a new target
 
     > ### Note:  
     > If the load type of the transformation flow is *Initial and Delta* and you change the target table, only delta data will be transferred to the new target table. If you want to transfer all data to the target table, you can reset the watermark in the *Data Integration Monitor*. For more information, see [Watermarks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/890897f00a4944c7a6f90d3816a8d4c6.html "When you run a transformation flow that loads delta changes to a target table, the system uses a watermark (a timestamp) to track the data that has been transferred.") :arrow_upper_right:.
+    > 
+    > Local Tables \(File\) cannot be partitioned.
 
 2.  Click the target node to display its properties in the side panel, and review the properties in the *General* section:
 
@@ -111,6 +113,22 @@ A transformation flow writes data to a target table. You can create a new target
     <td valign="top">
     
     \[read-only\] The delta capture table name. The system displays this field if the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Storage
+    
+    </td>
+    <td valign="top">
+    
+    \[read only\] Displays the table storage. 
+
+    For local tables created in a space with SAP HANA Cloud, SAP HANA database storage the values can be "Disk" or "In-Memory". 
+
+    For local tables created in a space with SAP HANA Cloud data lake storage, the value is "File".
     
     </td>
     </tr>

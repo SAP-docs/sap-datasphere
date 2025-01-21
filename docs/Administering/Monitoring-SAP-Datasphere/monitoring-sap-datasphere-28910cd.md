@@ -24,6 +24,9 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
+> ### Note:  
+> SAP Datasphere is integrated into SAP Cloud ALM for health monitoring, which enables you to check the health of your one or more SAP Datasphere tenants from the *Health Monitoring* app in SAP Cloud ALM. See [Health Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/health-monitoring) in the *SAP Cloud ALM - Application Help*.
+
 
 
 <a name="loio28910cded17a42a0bf16225309cb8bf6__section_irf_214_1cc"/>
@@ -213,7 +216,7 @@ To investigate issues:
     
 2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. For more information on the *Task Logs* tab, see [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab).
 3.  Click the links in the following columns:
-    -   *Activity* column - For the spaces you have access to \(via scoped roles\), a link opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
+    -   *Activity* column - For the spaces you have access to \(via scoped roles\), a link opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
 
     -   *Object Name* column - For the spaces you have access to \(via scoped roles\), a link opens the editor of the object.
 
@@ -528,7 +531,7 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
 
     The trend icon \(up or down arrow\) indicates if the percentage is higher or lower than the previous run.
 
-    To see the real-time average CPU utilization in percentage for the elastic compute note, click *Performance Monitor \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Perfomance Monitor](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/performance-monitor) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
+    To see the real-time average CPU utilization in percentage for the elastic compute note, click *Performance Monitor*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Perfomance Monitor](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/performance-monitor) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
     
     </td>
     </tr>
@@ -544,7 +547,7 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
 
     The trend icon \(up or down arrow\) indicates if the percentage is higher or lower than the previous run.
 
-    To see the real-time average memory utilization in GB for the elastic compute note, click *Performance Monitor \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Perfomance Monitor](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/performance-monitor) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
+    To see the real-time average memory utilization in GB for the elastic compute note, click *Performance Monitor*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Perfomance Monitor](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/performance-monitor) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
     
     </td>
     </tr>
@@ -617,10 +620,10 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
 3.  To investigate further, you can do the following:
 
     -   To view statement details, click *View Logs* in a card to go to the *Statement Logs* tab, which displays information filtered on the card criteria. Then, click the links in the *Statement Details* column. For more information on the *Statement Logs* tab, see [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
-    -   To view details on a run, click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "From  (Data Integration Monitor), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.") :arrow_upper_right:\).
+    -   To view details on a run, click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
     -   To navigate to the elastic compute node in the *Space Management* app, click *Manage Elastic Compute Node* \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md) and [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
 
-    -   To analyze the performance of the SAP HANA database, click *Database Overview \(SAP HANA Cockpit\)*, which opens the Performance Monitor page in the SAP HANA Cockpit \(see [The Database Overview Page](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/database-overview-page) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
+    -   To analyze the performance of the SAP HANA database, click *Database Overview \(SAP HANA Cockpit\)*, which opens the Database Overview page in the SAP HANA Cockpit \(see [The Database Overview Page](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/database-overview-page) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
 
 
 
@@ -915,8 +918,18 @@ Shows at which date the task has started to run.
 </tr>
 </table>
 
+You can cancel a task run by selecting one single task and clicking *Cancel Task*. You can cancel a task run on the following objects:
+
+-   Transformation flow
+-   Remote table view
+-   Data flow
+-   Task chain
+
+Cancelling a task run may be required when it takes too long or if the run impacts negatively other runs by taking too many resources away. Canceling a task via the *System Monitor* is the most reliable option. Its access isn't restricted when resource consumption is too high \(as in the *Data Integration Monitor*\), and it is the fastest way to cancel a task \(compared to the *Database Explorer*\). The data is rolled back and restored to the state that existed before the task run was initially triggered.
+
 > ### Note:  
-> Data on tasks are kept for the time specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Tasks*.
+> -   Data on tasks are kept for the time specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Tasks*.
+> -   You may not be able to cancel a task via the *Data Integration Monitor* or the *Database Explorer* when resource consumption is too high. You will always be able to cancel a task via the *System Monitor*.
 
 
 

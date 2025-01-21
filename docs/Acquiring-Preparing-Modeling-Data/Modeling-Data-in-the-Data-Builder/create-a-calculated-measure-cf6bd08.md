@@ -108,4 +108,7 @@ A calculated measure references other measures and allows the combination of mea
     </tr>
     </table>
     
+    > ### Note:  
+    > When you create a calculated measure based on a dimension then you should include the dimension on which the calculation is based on in the analytic model. Otherwise the calculated measure will show no data.
+
 

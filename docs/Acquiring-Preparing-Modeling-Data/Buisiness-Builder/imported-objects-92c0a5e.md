@@ -43,7 +43,7 @@ Business Builder
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="4">
+<td valign="top" rowspan="5">
 
 InfoObject
 
@@ -116,6 +116,23 @@ Additional view with prefix TA
 </td>
 </tr>
 <tr>
+<td valign="top">
+
+Hierarchy and dependent objects, e.g. texts, hierarchy nodes, hierarchy node texts
+
+</td>
+<td valign="top">
+
+Remote table\(s\) and view\(s\) for hierarchy and dependent objects with suffix, e.g. H, HT, NT
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
 <td valign="top" rowspan="2">
 
 CompositeProvider
@@ -167,7 +184,7 @@ Query \(Restricted Key Figure, Calculated Key Figure, Filter\)
 </td>
 <td valign="top">
 
-Analyic Model
+Analytic Model
 
 </td>
 <td valign="top">

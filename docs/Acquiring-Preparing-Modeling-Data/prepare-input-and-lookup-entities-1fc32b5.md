@@ -62,5 +62,5 @@ Your Lookup Entity
 </table>
 
 > ### Note:  
-> Views containing input parameters \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\) cannot be used as input or lookup entities in an intelligent lookup.
+> Views containing input parameters \(see [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md)\) cannot be used as input or lookup entities in an intelligent lookup.
 

@@ -4,7 +4,7 @@
 
 # Preparing Data in the Data Builder
 
-Users with the *DW Modeler* role can use views and intelligent lookups in the *Data Builder* to combine, clean, and otherwise prepare data.
+Users with a modeler role can use views and intelligent lookups in the *Data Builder* to combine, clean, and otherwise prepare data.
 
 This topic contains the following sections:
 
@@ -35,10 +35,10 @@ You can combine, filter, enrich and otherwise prepare data in views.
 
 -   You can prepare your data in a graphical no code/low code environment \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
     -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Graphical View* to open the editor.
-    -   You can add and combine your sources by drag and drop \(see [Add a Source](add-a-source-1eee180.md), [Create a Join](create-a-join-947d6d8.md), and [Create a Union](create-a-union-5c3d354.md)\).
-    -   You can refine, filter, and enrich your data in the diagram \(see [Reorder, Rename, and Exclude Columns](reorder-rename-and-exclude-columns-b846d0d.md), [Create a Calculated Column](create-a-calculated-column-3897f48.md), [Filter Data](filter-data-6f6fa18.md), and [Aggregate Data](aggregate-data-7733250.md)\).
+    -   You can add and combine your sources by drag and drop \(see [Add a Source to a Graphical View](add-a-source-to-a-graphical-view-1eee180.md), [Create a Join in a Graphical View](create-a-join-in-a-graphical-view-947d6d8.md), and [Create a Union in a Graphical View](create-a-union-in-a-graphical-view-5c3d354.md)\).
+    -   You can refine, filter, and enrich your data in the diagram \(see [Reorder, Rename, and Exclude Columns in a Graphical View](reorder-rename-and-exclude-columns-in-a-graphical-view-b846d0d.md), [Create a Calculated Column in a Graphical View](create-a-calculated-column-in-a-graphical-view-3897f48.md), [Filter Data in a Graphical View](filter-data-in-a-graphical-view-6f6fa18.md), and [Aggregate Data in a Graphical View](aggregate-data-in-a-graphical-view-7733250.md)\).
 
--   By default, views are virtual and must be run each time they are accessed. You can improve performance by persisting the view \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
+-   By default, views are virtual and must be run each time they are accessed. You can improve performance by persisting the view \(see [Persist Data in a Graphical or SQL View](persist-data-in-a-graphical-or-sql-view-9bd12cf.md)\).
 
 
 
@@ -55,7 +55,7 @@ You can join two entities even where there is no appropriate foreign key column 
 
 ## Browse the Catalog for Trusted Data Assets
 
-You can browse the catalog to discover high-quality trusted data assets to use as sources in your views and other objects \(see [Finding and Accessing Data in the Catalog](Creating-Finding-Sharing-Objects/finding-and-accessing-data-in-the-catalog-1047825.md)\).
+You can browse the catalog to discover high-quality trusted data assets to use as sources in your views and other objects \(see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md)\).
 
 
 
@@ -67,7 +67,7 @@ SAP Datasphere provides various ways to visualize and understand the dependencie
 
 -   You can visualize the objects that your object depends on \(its lineage\) and those that depend on it \(its impacts\) by opening its impact and lineage analysis \(see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)\).
 -   You can visualize a set of entities and the associations between them by adding them to an entity-relationship model \(see [Creating an Entity-Relationship Model](creating-an-entity-relationship-model-a91c042.md)\).
--   You can trace the source of a column in your graphical view and the transformations it has passed through \(see [Visualize the Lineage of Columns and Input Parameters in a Graphical View](visualize-the-lineage-of-columns-and-input-parameters-in-a-graphical-view-a2426b7.md)\).
+-   You can trace the source of a column in your graphical view and the transformations it has passed through \(see [Visualize Column and Input Parameter Lineages in a Graphical View](visualize-column-and-input-parameter-lineages-in-a-graphical-view-a2426b7.md)\).
 
 
 
@@ -80,7 +80,12 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
 -   Click one of the tabs to filter the list by object type.
 -   Click a tile to create a new object
 -   Click <span class="FPA-icons-V3"></span> \(Show filters\) to filter the list on collections and search by criteria. Click *Show More* to open a dialog with additional filter options.
--   Enter a string in the *Search* field to filter the list on business and technical names and users.
+-   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\). 
+
+    As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
+
+    The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+
 -   Click a column header to sort or filter the list by values in the column.
 -   Select one or more objects and use any of the following tools:
 
@@ -156,7 +161,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   Local tables \(see [Creating a Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical views \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\)
     -   SQL views \(see [Creating an SQL View](creating-an-sql-view-81920e4.md)\)
-    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\)
+    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\)
     -   Analytic models \(see [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task chains \(see [Creating a Task Chain](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 

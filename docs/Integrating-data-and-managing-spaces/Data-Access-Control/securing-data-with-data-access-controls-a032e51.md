@@ -2,7 +2,7 @@
 
 # Securing Data with Data Access Controls
 
-Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.
+Users with a space administrator role can create data access controls to allow modelers to apply row-level security to *Data Builder* and *Business Builder* objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria. 
 
 This topic contains the following sections:
 
@@ -34,7 +34,6 @@ You can create one or more data access controls that consume each permissions en
 We recommend that you develop clear policies for securing data, and that you:
 
 -   Focus in particular on securing transactional data and sensitive master data.
--   Recreate permissions/authorizations from the source system where possible, including via import for SAP BW \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](import-sap-bw-and-sap-bw-4hana-analysis-authorizations-f56e427.md)\).
 -   Avoid applying multiple data access controls to a view if possible.
 -   Secure data as soon as possible once it is ingested into SAP Datasphere and then only use the protected view going forward, keeping the following factors in mind as you plan your modeling strategy for security and performance:
     -   Encapsulating individual source tables in views and applying data access controls to them:
@@ -67,7 +66,7 @@ We recommend that you develop clear policies for securing data, and that you:
 
 For information about:
 
--   Applying a data access control to a data layer view, see [Apply a Data Access Control](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
+-   Applying a data access control to a data layer view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
 -   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
 -   Persisting data in a view that has a data access control applied to it, see [Persisted Views and Data Access Control](../Data-Integration-Monitor/persisted-views-and-data-access-control-7a4a983.md).
 

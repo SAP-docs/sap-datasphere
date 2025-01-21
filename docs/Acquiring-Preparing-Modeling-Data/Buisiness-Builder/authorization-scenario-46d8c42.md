@@ -15,9 +15,9 @@ In the Business Builder, modelers can create, assign, and consume authorization 
 
 [Using an Authorization Scenario in a Consumption Model](using-an-authorization-scenario-in-a-consumption-model-54839e8.md "Choose from your business entities which authorization scenarios to use in a consumption model.")
 
-[Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:
+[Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:
 
 [Create a "Single Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:
 
-[Apply a Data Access Control](../apply-a-data-access-control-8f79fc8.md "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.")
+[Apply a Data Access Control to a Graphical or SQL View](../apply-a-data-access-control-to-a-graphical-or-sql-view-8f79fc8.md "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.")
 

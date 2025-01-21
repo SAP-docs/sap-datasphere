@@ -30,7 +30,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
 1.  From the side navigation, choose *Data Builder*, select a space if necessary, and choose *New Analytic Model* to open the editor.
 
-2.  Drag your source from the Repository and drop it onto the canvas. For more information, see [Add a Source](add-a-source-27075ee.md).
+2.  Drag your source from the Repository and drop it onto the canvas. For more information, see [Add a Fact to an Analytic Model](add-a-fact-to-an-analytic-model-27075ee.md).
 
 3.  The side panel shows the properties of your analytic model. Complete the missing information as appropriate:
 
@@ -107,7 +107,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     </tr>
     </table>
     
-4.  Select your fact source on the canvas to select or deselect any measures, associated dimensions, or attributes in the properties panel on the right. For more information, see [Add a Dimension](add-a-dimension-4caf098.md).
+4.  Select your fact source on the canvas to select or deselect any measures, associated dimensions, or attributes in the properties panel on the right. For more information, see [Add a Dimension to an Analytic Model](add-a-dimension-to-an-analytic-model-4caf098.md).
 
     > ### Note:  
     > Attributes of type ***LargeString*** are not consumable in SAP Analytics Cloud.
@@ -195,7 +195,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     </tr>
     </table>
     
-6.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
+6.  You can choose *Preview* to check if the data looks like expected. Here you have two options: there is the simple preview which is available via the context menu in the editor at the analytic model. For more information, see [Viewing Object Data](../viewing-object-data-b338e4a.md). And then there is the analytical preview in which you can drill down by rows and columns. For more information, see [Preview Data in an Analytic Model](preview-data-in-an-analytic-model-9f1fa73.md).
 
     > ### Note:  
     > When you change an analytic model for which a story has been defined, and you deploy it again, you need to open the story in SAP Analytics Cloud and save it again.

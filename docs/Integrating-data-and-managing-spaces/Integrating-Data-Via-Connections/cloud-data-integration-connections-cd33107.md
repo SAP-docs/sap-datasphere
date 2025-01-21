@@ -355,7 +355,7 @@ Enter the OAuth resource.
 </td>
 <td valign="top">
 
-Select the OAuth response tyoe. The values are *token* or *none*.
+Select the OAuth response type. The values are *token* or *none*.
 
 </td>
 </tr>

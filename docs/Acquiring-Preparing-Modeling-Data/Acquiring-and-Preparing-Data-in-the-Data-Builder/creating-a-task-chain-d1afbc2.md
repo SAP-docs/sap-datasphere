@@ -264,6 +264,14 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   Replication Flow - Run
     -   Transformation flow - Run
     -   Local table - Delete Records with Change Type "Deleted"
+    -   Local Table \(File\) - Merge or Optimize.
+
+        > ### Note:  
+        > -   Merge: Add, update or delete data into the existing local table \(file\).
+        > -   Optimize: Combine several small files into bigger files to optimize the read access.
+        > 
+        > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) 
+
     -   Task Chain - Run
 
     For remote table and view objects included in a task chain, the default option lets you replicate or persist the data associated with the remote table or view respectively. Or, you can choose to remove the replicated or persisted data.
@@ -314,7 +322,10 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     > -   To share a task chain to another space, click the editor toolbar <span class="FPA-icons-V3"></span> \(Share\) icon. You are then prompted to specify one or more spaces you want to share the task chain to. For more information, see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
     > -   To export the definition of a task chain to a CSN/JSON file, which may later be imported again in the same space or other spaces, click the <span class="FPA-icons-V3"></span> \(Export\) icon. Note that the exported file does not create the objects defined in the task chain or include the recipients of email notification for the exported task chain. For more information on exporting objects, see [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
 
-    Once a task chain run has started, it will continue running as long as possible. Until all tasks in the chain have been completed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain has "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
+    Once a task chain run has started, it will continue running as long as possible, unless you cancel the task chain run. Until all tasks in the chain have been completed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain has "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
+
+    > ### Note:  
+    > After starting a task chain run, you can also choose to cancel it from the *Run Details* display in the *Data Integration Monitor*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
     When a task chain is run that includes a parallel task chain branch, all the branch tasks are triggered to be run in parallel. The ANY or ALL condition applied to the branch specifies whether ANY or ALL branch tasks must be completed successfully to continue running remaining tasks in the chain.
 

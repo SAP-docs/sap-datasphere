@@ -4,24 +4,29 @@
 
 # Managing and Monitoring Data Integration
 
-From <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\), you can run and monitor data replication for remote tables, monitor flows and task chain, monitor your local tables, your persisted views, and track the queries sent to your remote connected source systems for your space.
+Users with a space administrator or integrator role can use the *Data Integration Monitor* app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
-The *Data Integration Monitor* is composed of several monitors that help you track how data is managed within your space.
+The *Data Integration Monitor* is composed of several monitors that help you track how data is managed within your space. Note that the available monitors depend on space capabilities. 
 
--   *Remote Tables* : Copy data for remote tables that have been deployed in your space and monitor the replication of the data. Copy or schedule copying the full set of data from the source, or set up replication of data changes in real-time via change data capturing \(CDC\). For more information, see [Replicating Data and Monitoring Remote Tables](replicating-data-and-monitoring-remote-tables-4dd95d7.md).
+-   *Remote Tables* \(Not available if you are in space of type SAP HANA Cloud data lake files\): Copy data for remote tables that have been deployed in your space and monitor the replication of the data. Copy or schedule copying the full set of data from the source, or set up replication of data changes in real-time via change data capturing \(CDC\). For more information, see [Replicating Data and Monitoring Remote Tables](replicating-data-and-monitoring-remote-tables-4dd95d7.md).
 
     > ### Note:  
     > Remote tables from a source that is configured as data access *Remote Only* are not displayed in this monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md) 
 
--   *Local Tables* : Monitor all local tables which have been created in a space and display their metrics. From the detail screen, you can also delete table records on-demand, using filter conditions or using a schedule.
--   *Views* : Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
+-   *Local Tables* \(Not available if you are in space of type SAP HANA Cloud data lake files\): Monitor all local tables which have been created in a space and display their metrics. From the detail screen, you can also delete table records on-demand, using filter conditions or using a schedule.
+-   *Local Tables \(Files\)* \(Not available if you are in space of type SAP HANA Cloud, SAP HANA database\): Check how and when your local tables \(files\) were last updated and if new data has still to be merged. For more information, see [Monitoring Local Tables \(File\)](monitoring-local-tables-file-6b2d007.md)
+-   *Views* \(Not available if you are in space of type SAP HANA Cloud data lake files\): Add, monitor and schedule persisted views. Turn your views into persisted views to improve performance while accessing your data. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md).
 -   *Flows*: View and monitor the execution details of the executed data flows, replication flows or transformation flows. For more information, see [Monitoring Flows](monitoring-flows-b661ea0.md).
+
+    > ### Note:  
+    > Data flows are not available for spaces of type SAP HANA Cloud data lake files
+
 -   *Remote Queries*:
     -   *Remote Queries*: Check and analyze how the communication is running between the federation layer of SAP HANA Cloud and the connected remote source systems. For more information, see [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md).
-    -   *Remote Table Statistics* : Create statistics for your remote tables to improve federated query execution. For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
+    -   *Remote Table Statistics* \(Not available if you are in space of type SAP HANA Cloud data lake files\): Create statistics for your remote tables to improve federated query execution. For more information, see [Creating Statistics for Your Remote Tables](creating-statistics-for-your-remote-tables-e4120bb.md).
 
 -   *Task Chains*: Monitor the status and progress of running and past task chains. For more information, see [Monitoring Task Chains](monitoring-task-chains-4142201.md).
 

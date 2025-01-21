@@ -51,7 +51,7 @@ You can use the connection to add source and target objects to a replication flo
 
 With Schema Registry, replication flows use a schema reference when serializing a Kafka topic message instead of providing the schema definition in every message. In the target settings of the replication flow configuration, you can decide to use Schema Registry.
 
-For more information, see [Using Confluent Kafka As the Target](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [Confluent Kafka Targets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 </td>
 </tr>

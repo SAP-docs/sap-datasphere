@@ -146,6 +146,9 @@ Select the spaces and objects whose data you want to make available in an elasti
 
 2.  Click *Add Spaces*, then in the dialog box, select the spaces that contain objects whose data you want to make available in an elastic compute node and click *Add Spaces*.
 
+    > ### Note:  
+    > File spaces are not displayed in the dialog box as they cannot be added to an elastic compute node.
+
     The number of spaces added to the elastic compute node is displayed in the list of nodes on the left part of the screen.
 
     By default, all current and future exposed objects of the selected spaces are automatically assigned to the elastic compute node and *All Exposed Objects* is displayed in the space tile.
@@ -159,7 +162,7 @@ Select the spaces and objects whose data you want to make available in an elasti
 All the objects added across all the added spaces, are displayed in the *Exposed Objects* tab, whether they've been added manually or automatically via the option *All Exposed Objects*.
 
 > ### Note:  
-> Remote Tables - Data that is replicated from remote tables in the main instance cannot be replicated to an elastic compute node. If you want to make data from a replicated remote table available in an elastic compute node, you should build a view on top of the remote table and persist its data in the view \(see [Persist View Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:\). You should then make sure that the object \(analytic model, perspective or view\) does not consume the remote table but now consumes the persisted view.
+> Remote Tables - Data that is replicated from remote tables in the main instance cannot be replicated to an elastic compute node. If you want to make data from a replicated remote table available in an elastic compute node, you should build a view on top of the remote table and persist its data in the view \(see [Persist Data in a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:\). You should then make sure that the object \(analytic model, perspective or view\) does not consume the remote table but now consumes the persisted view.
 
 **Shared Table Example** - Making data from a shared table available in an elastic compute node:
 

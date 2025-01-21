@@ -5,7 +5,7 @@
 You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.
 
 > ### Tip:  
-> This text explains the options related to replication flow **runs** \(in the context of monitoring\). For information about how to make changes to an existing replication flow in the *Data Builder*, see [Editing an Existing Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+> This text explains the options related to replication flow **runs** \(in the context of monitoring\). For information about how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 
 This topic contains the following sections:
 
@@ -72,7 +72,7 @@ The value is updated once per hour.
 
 ## Stopping a Replication Flow Run
 
-If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. For more information, see [Deleting a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. For more information, see [Delete a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
 
 
 
@@ -92,7 +92,7 @@ For more information about space deletion, see [Delete Your Space](../delete-you
 
 ## Adding or Removing Replication Objects
 
-This can be done in the *Data Builder*, see [Editing an Existing Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 
 > ### Note:  
 > Adding or removing objects without stopping the replication flow first is only possible for replication flows in status *Active*.
@@ -103,5 +103,5 @@ This can be done in the *Data Builder*, see [Editing an Existing Replication Flo
 
 ## Changing the Delta Interval for a Replication Flow
 
-This can be done in the *Data Builder*, see [Editing an Existing Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 

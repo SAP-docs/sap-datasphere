@@ -80,9 +80,10 @@ For more information and points to consider when using replication flows, see al
     
     Indicates the status of the last run of the flow:
 
-    -   *Running*: the flow is currently running.
-    -   *Completed*: the flow is completed successfully.
+    -   *Running*: The flow is currently running.
+    -   *Completed*: The flow is completed successfully.
     -   *Failed*: Something goes wrong during the flow run and it could not be completed. Go to the details screen of your flow and check the logs to identify to issue.
+    -   *Stopped*: The flow has been stopped by a user.
 
     All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Understanding Statuses and Substatuses](understanding-statuses-and-substatuses-19cb5bd.md).
 
@@ -192,7 +193,7 @@ For more information and points to consider when using replication flows, see al
     You can personalize the columns you want to display clicking on :gear:
 
     > ### Note:  
-    > Parallel execution is not supported: You can't run two identical flows at the same time. You need to wait until the first run is completed before you can launch another one. Otherwise your second run gets the status *Failed*.
+    > Parallel execution is not supported: You can't run two identical flows at the same time. You need to wait until the first run is completed before you can launch another one. Otherwise your second run gets the status *Failed \(Run Already in Progress\)*.
 
 2.  To see the run details of a flow, click <span class="SAP-icons-V5"></span> \(Details\) for the relevant flow.
 

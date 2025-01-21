@@ -4,7 +4,7 @@
 
 # Running Open SQL Procedures in a Task Chain
 
-Include and run Open SQL schema procedures in a task chain: Users must have EXECUTE privileges for objects in the Open SQL schema space to include and run Open SQL procedures from a task chain.
+Include and run Open SQL schema procedures in a task chain. Use to efficiently manage and execute Open SQL procedures in task chains.
 
 
 
@@ -12,7 +12,7 @@ Include and run Open SQL schema procedures in a task chain: Users must have EXEC
 
 ## Prerequisites
 
--   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, an administrator must grant EXECUTE privileges to the database user for objects in the Open SQL schema space. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
+-   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the Open SQL schema database user must grant EXECUTE privileges to the space technical HANA user so that other users of the space can view and execute Open SQL schema procedures. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
 
 
 
@@ -20,6 +20,7 @@ Include and run Open SQL schema procedures in a task chain: Users must have EXEC
 
 -   No deployment is required for individual Open SQL procedure objects, since they are non-repository objects that already exist in SAP HANA. However, task chains that include Open SQL procedures still require deployment to run, as always.
 
+-   Running Open SQL procedures in spaces where the Relational Data Lake Engine option is enabled are not supported. Enabling the data lake option is specified by the Data Lake Access: *Use this space to access the data lake* option in the *General Settings* tab section of the *Space Management* app.
 -   Open SQL procedures added to task chains may include scalar input parameters for which the user is prompted to enter values when the procedure is added to a task chain.
 
 

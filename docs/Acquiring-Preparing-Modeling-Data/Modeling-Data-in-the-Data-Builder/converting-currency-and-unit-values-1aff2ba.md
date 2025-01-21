@@ -22,7 +22,7 @@ To prepare for currency conversion, use the wizard to import or create the neces
 
 Once the `TCUR*` views are available in your space, you can use them to do currency conversion in:
 
--   Graphical views - see [Create a Currency Conversion Column](../create-a-currency-conversion-column-6e3d8be.md).
+-   Graphical views - see [Create a Currency Conversion Column in a Graphical View](../create-a-currency-conversion-column-in-a-graphical-view-6e3d8be.md).
 -   SQL views - see [Example: Converting Currency Values with CONVERT\_CURRENCY](../sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_example_currency).
 -   Analytic models - see [Create a Currency Conversion Measure](create-a-currency-conversion-measure-ec00efb.md).
 -   Business Builder objects - see [Use Currency Conversion](../Buisiness-Builder/use-currency-conversion-1ba4554.md).
@@ -47,7 +47,7 @@ To prepare for unit conversion, you must import the `T006` and `T006D` tables to
 
 Once the `T006*` views are available in your space, you can use them to do currency conversion in:
 
--   Graphical views - see [Create a Unit Conversion Column](../create-a-unit-conversion-column-23bc94f.md).
+-   Graphical views - see [Create a Unit Conversion Column in a Graphical View](../create-a-unit-conversion-column-in-a-graphical-view-23bc94f.md).
 -   SQL views - use the `CONVERT_UNIT` function.
 
 You should always identify columns containing unit values and codes with the following semantic types:

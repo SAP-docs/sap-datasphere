@@ -60,8 +60,8 @@ While a released view must maintain each of its output columns, it is possible t
 
 You can:
 
--   Add a column \(see [Create a Calculated Column](create-a-calculated-column-3897f48.md)\).
--   Add an input parameter with a default value, so long as the view already contains at least one input parameter \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\).
+-   Add a column \(see [Create a Calculated Column in a Graphical View](create-a-calculated-column-in-a-graphical-view-3897f48.md)\).
+-   Add an input parameter with a default value, so long as the view already contains at least one input parameter \(see [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md)\).
 -   Add an association \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
 
 You may not remove columns, parameters, or associations, or make other changes that could impact consumer objects, and additional validation messages are enabled to warn you if you make an unauthorized change.
@@ -130,5 +130,5 @@ When you are importing an object to update or replace an object that already exi
 
 -   The *Transport* app - Objects with invalid release states cannot be imported \(see [Importing Content from Another Tenant](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b607a12931d74c4a93506ea64c55ab4e.html "You can use the Transport app to import content that has been shared from another tenant.") :arrow_upper_right:\).
 -   CSN/JSON file import - If necessary, users with the *Spaces.Update* permission \(included in the *DW Space Administrator* role\) can override the warnings and import objects with invalid release states \(see [Importing Objects from a CSN/JSON File](Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
--   `datasphere` command line interface - If necessary, users with the *Spaces.Update* permission \(included in the *DW Space Administrator* role\) can override the warnings and import objects with invalid release states \(see [Manage Modeling Objects via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a DW Modeler role (or equivalent privileges) can list, create, update, and delete modeling objects via the command line.") :arrow_upper_right:\).
+-   `datasphere` command line interface - If necessary, users with the *Spaces.Update* permission \(included in the *DW Space Administrator* role\) can override the warnings and import objects with invalid release states \(see [Manage Modeling Objects via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
 

@@ -14,9 +14,9 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
 
 2.  Create a new *Graphical View Transform* for your transformation flow by clicking the *Graphical View Transform* button.
 
-3.  The system displays the *Graphical View Editor*. Add a source. For more information, see [Add a Source to Your Transformation Flow](add-a-source-to-your-transformation-flow-ec702fe.md).
+3.  The system displays the *Graphical View Editor*. Add a source. For more information, see [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md).
 
-4.  Optional: Drag additional sources from the *Repository* tab or from the *Sources* tab and drop them onto a source to create a join or union. For more information, see [Create a Join](create-a-join-bcb5f48.md) and [Create a Union](create-a-union-9cd6fbf.md).
+4.  Optional: Drag additional sources from the *Repository* tab or from the *Sources* tab and drop them onto a source to create a join or union. For more information, see [Create a Join in a Graphical View](../create-a-join-in-a-graphical-view-947d6d8.md) and [Create a Union in a Graphical View](../create-a-union-in-a-graphical-view-5c3d354.md).
 
 5.  Click a node in the diagram to display tools for creating operators and performing other actions:
 
@@ -45,7 +45,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </td>
     <td valign="top">
     
-    Add a *Filter* node to filter your data with an SQL expression. For more information, see [Filter Data](../filter-data-6f6fa18.md).
+    Add a *Filter* node to filter your data with an SQL expression. For more information, see [Filter Data in a Graphical View](../filter-data-in-a-graphical-view-6f6fa18.md).
     
     </td>
     </tr>
@@ -57,7 +57,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </td>
     <td valign="top">
     
-    Add a *Projection* node to rename, reorder, or exclude columns. For more information, see [Reorder, Rename, and Exclude Columns](../reorder-rename-and-exclude-columns-b846d0d.md).
+    Add a *Projection* node to rename, reorder, or exclude columns. For more information, see [Reorder, Rename, and Exclude Columns in a Graphical View](../reorder-rename-and-exclude-columns-in-a-graphical-view-b846d0d.md).
     
     </td>
     </tr>
@@ -69,7 +69,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </td>
     <td valign="top">
     
-    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Calculated Column](../create-a-calculated-column-3897f48.md).
+    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Calculated Column in a Graphical View](../create-a-calculated-column-in-a-graphical-view-3897f48.md).
     
     </td>
     </tr>
@@ -81,7 +81,7 @@ Create a graphical view transform that uses SQL syntax to combine and transform 
     </td>
     <td valign="top">
     
-    Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculations. For more information, see [Aggregate Data](aggregate-data-f368ba0.md).
+    Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculations. For more information, see [Aggregate Data in a Graphical View](../aggregate-data-in-a-graphical-view-7733250.md).
     
     </td>
     </tr>

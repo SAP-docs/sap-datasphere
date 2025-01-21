@@ -61,6 +61,18 @@ Create a space, allocate storage, and set the space priority and statement limit
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Storage Type
+    
+    </td>
+    <td valign="top">
+    
+    \[Default\] Select *SAP HANA Database \(Disk and In-Memory\)*.
+    
+    </td>
+    </tr>
     </table>
     
     The space is created and its property sheet opens.
@@ -186,6 +198,18 @@ Create a space, allocate storage, and set the space priority and statement limit
     <td valign="top">
     
     \[optional\] Enter a description for the space. Can contain a maximum of 4 000 characters.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Storage Type
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays where the space is stored on.
     
     </td>
     </tr>

@@ -280,9 +280,9 @@ Provide business-friendly names for your table and its columns, identify its sem
     Tables that contain input parameters require special treatment in the following situations:
 
     -   Previewing data - Accept the default value, if one is provided, or enter a value for each input parameter \(see [Viewing Object Data](../viewing-object-data-b338e4a.md)\).
-    -   Adding a table as a source in the graphical view editor - Map each input parameter in the source table to a value or an input parameter in the view \(see [Add a Source](../add-a-source-1eee180.md)\).
+    -   Adding a table as a source in the graphical view editor - Map each input parameter in the source table to a value or an input parameter in the view \(see [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md)\).
     -   Adding a table as a source in the SQL view editor - Complete the syntax to map each input parameter in the source table to a value or an input parameter in the new view \(see [Process Source Input Parameters in an SQL View](../process-source-input-parameters-in-an-sql-view-58d8763.md)\).
-    -   Adding a table as a source in the analytic model editor - Map each input parameter in the source table to a variable in the model \(see [Add a Variable](../Modeling-Data-in-the-Data-Builder/add-a-variable-cdd8fa0.md)\).
+    -   Adding a table as a source in the analytic model editor - Map each input parameter in the source table to a variable in the model \(see [Create a Variable in an Analytic Model](../Modeling-Data-in-the-Data-Builder/create-a-variable-in-an-analytic-model-cdd8fa0.md)\).
 
 6.  Save and Deploy.
 
@@ -444,7 +444,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     Work with custom CSN annotations that are not otherwise supported by the interface. 
 
-    See [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md).
+    See [Edit Custom CSN Annotations in a View or Table](../edit-custom-csn-annotations-in-a-view-or-table-820d013.md).
     
     </td>
     </tr>

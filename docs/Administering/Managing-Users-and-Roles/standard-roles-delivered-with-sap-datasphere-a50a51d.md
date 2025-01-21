@@ -50,6 +50,13 @@ In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Secu
     -   **Catalog Administrator** - Can set up and implement data governance using the catalog. This includes connecting the catalog to source systems for extracting metadata, building business glossaries, creating tags for classification, and publishing enriched catalog assets so all catalog users can find and use them. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.
     -   **Catalog User** - Can search and discover data and analytics content in the catalog for consumption. These users may be modelers who want to build additional content based on official, governed assets in the catalog, or viewers who just want to view these assets. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.
 
+-   Role providing privileges to use AI features in SAP Datasphere:
+    -   **DW AI Consumer** - Can use SAP Business AI features.
+
+        > ### Note:  
+        > To activate SAP Business AI features in your SAP Datasphere tenant, go to SAP note [0003522010](https://me.sap.com/notes/0003522010).
+
+
 
 > ### Note:  
 > Please do not use the roles *DW Support User* and *DW Scoped Support User* as they are reserved for SAP Support.

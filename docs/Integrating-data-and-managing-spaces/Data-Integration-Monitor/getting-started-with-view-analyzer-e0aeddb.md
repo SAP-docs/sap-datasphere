@@ -1,5 +1,7 @@
 <!-- loioe0aeddba00b14be29b5e49b47001d43b -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Getting Started with View Analyzer
 
 Use the *View Analyzer* to explore graphical or SQL views and the entities they consume.
@@ -45,12 +47,18 @@ To use *View Analyzer*,
         > 
         > To download the Explain Plan, you must have either the scoped role *DW Administrator* DW Administrator or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
 
-    3.  Run the *View Analyzer* without memory consumption: The *View Analyzer* will not execute the data persistence simulation. For views already persisted, the memory consumption of data persistence task will be shown. The analyzer will analyze the entities that compose your data model and will provide you with the information it has collected.
+    3.  Run the *View Analyzer* with memory consumption: In addition to exploring the entities that compose your data model, the analyzer will execute the data persistence simulation for non persisted views. It will report the memory consumption that would be used to get an entity persisted or will provide you with the actual memory consumption used when you have persisted your data. The simulations are executed sequentially as they may add some workloads to the system. To reduce these workloads, you can define a limit to the memory consumption that can be used to persist the view thanks to the threshold. If one of the analyzed views exceeds the limit, then no further data persistence simulations are run.
 
         > ### Note:  
-        > If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it.
+        > -   To start the*View Analyzer* with memory consumption, you must have the space *Read* privilege. If you are missing this privilege, the *View Analyzer* will run without memory consumption by default.
+        > -   If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it.
 
-        Note: The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set Priorities and Statement Limits for Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.") :arrow_upper_right:.
+        If your data persistence contains partitions, the number of partitions is displayed in the results, but the data persistence simulation does not consider it. You can run *View Analyzer* with memory consumption for views with one input parameter with default value.
+
+        The maximum memory consumption is based on the statement memory limit of the space workload configuration. For more information on statement limits, see [Set Priorities and Statement Limits for Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.") :arrow_upper_right:.
+
+        > ### Note:  
+        > To use the *View Analyzer* with memory consumption during data persistence simulation, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Configure Monitoring](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor.") :arrow_upper_right:.
 
     4.  *Generate SQL Analyzer Plan File*: Before using this option, you must consider the following requirements:
 

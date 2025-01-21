@@ -12,6 +12,9 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 ## Context
 
+> ### Remember:  
+> Data flows don't support delta processing. If you want to load delta data from an external source into SAP Datasphere, use a replication flow instead. See [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)
+
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
@@ -23,7 +26,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor.
 
-2.  Drag one or more source objects from the *Source Browser* and drop it into the diagram \(see [Add a Source](add-a-source-7b50e8e.md)\).
+2.  Drag one or more source objects from the *Source Browser* and drop it into the diagram \(see [Add a Source to a Data Flow](add-a-source-to-a-data-flow-7b50e8e.md)\).
 
     > ### Restriction:  
     > -   Data flows support loading data exclusively to local tables in the SAP Datasphere repository.
@@ -34,11 +37,11 @@ Create a data flow to move and transform data in an intuitive graphical interfac
 
 3.  Transform your data using one or more operators:
 
-    -   *Join* - Insert a join operator to merge two data sets together using a join definition to match the records. See [Create a Join Operator](create-a-join-operator-e57633d.md).
-    -   *Union* - Insert a union operator to combine two data sets that share the same schema definition. See [Create a Union Operator](create-a-union-operator-e0a3804.md).
-    -   *Projection* - Insert a projection operator to add, remove, reorder, or rename columns. See [Create a Projection Operator](create-a-projection-operator-912f740.md).
-    -   *Aggregation* - Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT` calculations. See [Create an Aggregation](create-an-aggregation-328d28f.md).
-    -   *Script* - Insert a script operator to transform incoming data with a Python script and output structured data to the next operator. See [Create a Script Operator](create-a-script-operator-f3e2570.md).
+    -   *Join* - Insert a join operator to merge two data sets together using a join definition to match the records. See [Create a Join in a Data Flow](create-a-join-in-a-data-flow-e57633d.md).
+    -   *Union* - Insert a union operator to combine two data sets that share the same schema definition. See [Create a Union in a Data Flow](create-a-union-in-a-data-flow-e0a3804.md).
+    -   *Projection* - Insert a projection operator to add, remove, reorder, or rename columns. See [Create a Projection in a Data Flow](create-a-projection-in-a-data-flow-912f740.md).
+    -   *Aggregation* - Insert an aggregation operator to perform `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT` calculations. See [Create an Aggregation in a Data Flow](create-an-aggregation-in-a-data-flow-328d28f.md).
+    -   *Script* - Insert a script operator to transform incoming data with a Python script and output structured data to the next operator. See [Create a Script in a Data Flow](create-a-script-in-a-data-flow-f3e2570.md).
 
 4.  Select an object in the canvas to display its properties in the side panel and to reveal its contextual toolbar, which contains some or all of the following tools:
 
@@ -155,7 +158,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
     > ### Note:  
     > You can only have one target table in a data flow.
 
-    For more information, see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md).
+    For more information, see [Add or Create a Target Table in a Data Flow](add-or-create-a-target-table-in-a-data-flow-0fa7805.md).
 
 6.  Click on the canva and review your data flow properties in the right panel:
 
@@ -249,7 +252,7 @@ Create a data flow to move and transform data in an intuitive graphical interfac
         -   *Completed*: The flow is completed successfully.
         -   *Failed*: Something goes wrong during the flow run and it could not be completed. Go to the details screen of your flow run and check the logs to identify to issue.
 
-    -   Under Input Parameters:Create a new input parameter or modify an existing one. For more information, see [Create an Input Parameter](create-an-input-parameter-a6fb3e7.md)
+    -   Under Input Parameters:Create a new input parameter or modify an existing one. For more information, see [Create an Input Parameter in a Data Flow](create-an-input-parameter-in-a-data-flow-a6fb3e7.md)
     -   Under Advanced Properties
         -   *Dynamic Memory Allocation* You can allocate memory usage manually. Set the *Expected Data Volume* to *Small*, *Medium*, or *Large*.
 

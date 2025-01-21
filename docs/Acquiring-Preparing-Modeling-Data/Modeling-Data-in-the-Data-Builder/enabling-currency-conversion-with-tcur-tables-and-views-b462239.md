@@ -15,7 +15,7 @@ To enable currency conversion, you create the necessary objects in your space.
 -   You can use the currency conversion tables shared from another space.
 
 
-Once the objects are created, you will be able to convert currency values into another currency using a currency conversion column in a graphical view or an SQL view. See [Create a Currency Conversion Column](../create-a-currency-conversion-column-6e3d8be.md).
+Once the objects are created, you will be able to convert currency values into another currency using a currency conversion column in a graphical view or an SQL view. See [Create a Currency Conversion Column in a Graphical View](../create-a-currency-conversion-column-in-a-graphical-view-6e3d8be.md).
 
 
 
@@ -62,7 +62,7 @@ Once the objects are created, you will be able to convert currency values into a
 
 
 
-Next steps: Now that the necessary objects are created, you can convert currency values into another currency using a currency conversion column in a graphical view. See [Create a Currency Conversion Column](../create-a-currency-conversion-column-6e3d8be.md).
+Next steps: Now that the necessary objects are created, you can convert currency values into another currency using a currency conversion column in a graphical view. See [Create a Currency Conversion Column in a Graphical View](../create-a-currency-conversion-column-in-a-graphical-view-6e3d8be.md).
 
 
 

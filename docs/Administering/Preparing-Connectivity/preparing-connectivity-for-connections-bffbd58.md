@@ -2,7 +2,7 @@
 
 # Preparing Connectivity for Connections
 
-You need to perform some preparatory steps to be able to create and use connections in SAP Datasphere. The steps depend on the source you want to connect to and on the features you want to use with the connection.
+Users with an administrator role can prepare SAP Datasphere connectivity to allow the creation of connections to remote systems in spaces.
 
 
 

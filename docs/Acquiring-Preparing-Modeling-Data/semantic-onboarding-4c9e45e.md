@@ -2,7 +2,7 @@
 
 # Semantic Onboarding
 
-The *Semantic Onboarding* app provides a central entry point to import semantically-rich objects from your SAP systems and the Content Network, as well as the Public Data Marketplace and other marketplace contexts.
+Users with a modeler or space administrator role can use the *Semantic Onboarding* app, a central entry point for importing semantically-rich objects from your SAP systems and the *Content Network*, as well as the Public Data Marketplace and other marketplace contexts.
 
 This topic contains the following sections:
 
@@ -16,7 +16,7 @@ This topic contains the following sections:
 
 ## Import Entities from SAP Systems
 
-Users with the *DW Modeler* role \(or equivalent privileges\) can can use the *Import Entities* wizard to import semantically-rich objects from your SAP S/4HANA Cloud, SAP S/4HANA on-premise, SAP BW∕4HANA, and SAP BW bridge connections. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
+Users with the *DW Modeler* role \(or equivalent privileges\) can use the *Import Entities* wizard to import semantically-rich objects from your SAP S/4HANA Cloud, SAP S/4HANA on-premise, SAP BW∕4HANA, and SAP BW bridge connections. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
 
 Click a tile to open the *Import Entities* wizard for that connection type \(see [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)\).
 
@@ -43,7 +43,7 @@ Users with the *DW Space Administrator* role \(or equivalent privileges\) can im
 -   *3rd Party Content*: End-to-end business scenarios created by SAP partners. Some third-party content has to be purchased in the *SAP Store*.
 -   *Samples*: Sample content to get started with SAP Datasphere.
 
-For more information, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "You can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:.
+For more information, see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with an administrator role or space administrator role, can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:.
 
 
 

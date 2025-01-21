@@ -2,7 +2,7 @@
 
 # Integrating Data From SAP BW Bridge
 
-You can use the SAP BW bridge connection to import SAP BW bridge objects into SAP Datasphere as remote tables.
+Users with a modeler role and who have access to SAP BW bridge, can import SAP BW bridge objects into SAP Datasphere as remote tables.
 
 SAP BW bridge enables you to use SAP BW functionality in the public cloud and to import SAP BW bridge data models into SAP Datasphere.
 

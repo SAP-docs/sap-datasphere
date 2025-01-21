@@ -2,6 +2,8 @@
 
 # Creating and Configuring Your SAP Datasphere Tenant
 
+Users with an administrator role can create their SAP Datasphere tenant \(or use the tenant provisioned by SAP\), configure its size, and purchase additional resources if needed.
+
 You can create your own tenant in the SAP BTP Cockpit. The procedure is the same for both subscription-based and consumption-based contracts. Some details may vary depending on the chosen service plan \(free or standard\). For more information about limitations for a free plan, see SAP Note [3227267](https://launchpad.support.sap.com/#/notes/3227267).
 
 When the tenant is configured, a data center region is selected. The main role of a data center is to guarantee the uninterrupted operation of computer systems. It also provides secure storage, processing, and networking capabilities for your data. A data center refers to the physical location, which could be a building or a group of buildings, housing computer systems and their components.
@@ -376,12 +378,12 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-5970 GB
+12000 GB
 
 </td>
 <td valign="top">
 
-16000 GB
+61440 GB
 
 </td>
 <td valign="top">
@@ -411,7 +413,7 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-440 \(Memory Performance Class\)
+442 \(High Memory Performance Class\)
 
 </td>
 </tr>
@@ -611,12 +613,12 @@ US East
 </td>
 <td valign="top">
 
-5970 GB
+12000 GB
 
 </td>
 <td valign="top">
 
-16000 GB
+61440 GB
 
 </td>
 <td valign="top">
@@ -646,7 +648,7 @@ US East
 </td>
 <td valign="top">
 
-440 \(Memory Performance Class\)
+442 \(High Memory Performance Class\)
 
 </td>
 </tr>
@@ -711,12 +713,12 @@ Europe \(Amsterdam\)
 </td>
 <td valign="top">
 
-5600 GB
+11150 GB
 
 </td>
 <td valign="top">
 
-27840 GB
+55760 GB
 
 </td>
 <td valign="top">
@@ -805,12 +807,12 @@ US West
 </td>
 <td valign="top">
 
-5600 GB
+11150 GB
 
 </td>
 <td valign="top">
 
-27840 GB
+55760 GB
 
 </td>
 <td valign="top">
@@ -905,7 +907,7 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-5750 GB
+11520 GB
 
 </td>
 <td valign="top">
@@ -940,7 +942,7 @@ Supported
 </td>
 <td valign="top">
 
-204 \(High Memory Performance Class\)
+412 \(High Memory Performance Class\)
 
 </td>
 </tr>
@@ -994,12 +996,64 @@ Supported
 <tr>
 <td valign="top">
 
-US Central
+Saudi Arabia
+
+> ### Note:  
+> Only available to customers representing critical national infrastructure or the public sector.
+
+
 
 </td>
 <td valign="top">
 
 5750 GB
+
+</td>
+<td valign="top">
+
+28928 GB
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+2100 h/month
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+US Central
+
+</td>
+<td valign="top">
+
+11520 GB
 
 </td>
 <td valign="top">
@@ -1034,7 +1088,7 @@ Supported
 </td>
 <td valign="top">
 
-204 \(High Memory Performance Class\)
+412 \(High Memory Performance Class\)
 
 </td>
 </tr>

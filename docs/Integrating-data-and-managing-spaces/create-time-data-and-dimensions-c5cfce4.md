@@ -12,9 +12,6 @@ Create a time table and dimension views in your space to provide standardized ti
 
 2.  In the *Time Data* section, click *Create Time Tables and Dimensions* to open the dialog.
 
-    > ### Note:  
-    > However, the *To year* should not be larger than 100 years from the current year.
-
     The dialog lists all the objects that will be created:
 
     -   *Time Table* - A table containing one record for each day from, by default, the year 1900 to the year 2050.
@@ -42,6 +39,10 @@ Create a time table and dimension views in your space to provide standardized ti
 3.  \[optional\] Modify the values in any of the following fields:
 
     -   Enter different years in the *From Year* and *To Year* fields to expand or reduce the scope of the time table data.
+
+        > ### Note:  
+        > The *To Year* cannot be more than 100 years later than the current year.
+
     -   Edit any of the proposed business names for the tables and views to be created. The technical names cannot be modified.
 
 4.  Click *Create*.

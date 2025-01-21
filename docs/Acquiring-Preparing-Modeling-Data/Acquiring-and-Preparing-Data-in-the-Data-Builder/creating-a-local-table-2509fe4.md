@@ -15,7 +15,7 @@ Create a table and define columns to receive data.. You can add data from a flow
 This procedure explains how to create an empty table by defining its columns. You can, alternatively:
 
 -   Create a table by importing a CSV file \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md)\).
--   Create a table as the output of a flow \(see [Add or Create a Target Table](add-or-create-a-target-table-0fa7805.md)\).
+-   Create a table as the output of a flow \(see [Add or Create a Target Table in a Data Flow](add-or-create-a-target-table-in-a-data-flow-0fa7805.md) and [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)\).
 -   Import a table from:
     -   A connection or other source in the *Sources* tab of the *Source Browser* in any of the data builder editors \(see [Import an Object from a Connection or Other Source](../import-an-object-from-a-connection-or-other-source-3e6f8f2.md)\).
     -   A CSN file via the *Import* menu in the data builder start page or an ER model \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
@@ -120,6 +120,24 @@ This procedure explains how to create an empty table by defining its columns. Yo
     <tr>
     <td valign="top">
     
+    Storage
+    
+    </td>
+    <td valign="top">
+    
+    Displays the table storage.
+
+    For local tables created in a space with SAP HANA Cloud, SAP HANA database storage the values can be "Disk" or "In-Memory". 
+
+    For local tables created in a space with SAP HANA Cloud data lake storage, the value is "File".
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Delta Capture
     
     </td>
@@ -171,11 +189,6 @@ This procedure explains how to create an empty table by defining its columns. Yo
 
     -   *Associations* - Create associations to other entities \(see [Create an Association to Define a Semantic Relationship Between Entities](../Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-    -   *Table Services* - Enable the *Memory Storage* option to store the table data directly in memory \(see [Accelerate Table Data Access with In-Memory Storage](accelerate-table-data-access-with-in-memory-storage-407d1df.md)\).
-
-        > ### Note:  
-        > If the connection of your remote table source is configured as data access: *Remote Only,* you can navigate only to the *Remote Table Statistics* monitor.
-
     -   *Partitions*- Define partitions for your local table. For more information, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
     -   *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 
@@ -345,7 +358,7 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
     Work with custom CSN annotations that are not otherwise supported by the interface. 
 
-    See [Edit a Custom CSN Annotation](../edit-a-custom-csn-annotation-820d013.md).
+    See [Edit Custom CSN Annotations in a View or Table](../edit-custom-csn-annotations-in-a-view-or-table-820d013.md).
     
     </td>
     </tr>

@@ -24,11 +24,11 @@ For information about making your data accessible outside SAP Datasphere, see [E
 
     The source is added to the diagram along with an output node, initially entitiled `View 1`, which represents the final output structure of the view.
 
-    For more information, see [Add a Source](add-a-source-1eee180.md).
+    For more information, see [Add a Source to a Graphical View](add-a-source-to-a-graphical-view-1eee180.md).
 
 3.  \[optional\] Drag additional sources from the *Source Browser* and drop them on your source to create a join or union.
 
-    For more information, see [Create a Join](create-a-join-947d6d8.md) and [Create a Union](create-a-union-5c3d354.md).
+    For more information, see [Create a Join in a Graphical View](create-a-join-in-a-graphical-view-947d6d8.md) and [Create a Union in a Graphical View](create-a-union-in-a-graphical-view-5c3d354.md).
 
 4.  Click a node in the diagram to display tools for creating operators and performing other actions:
 
@@ -57,7 +57,7 @@ For information about making your data accessible outside SAP Datasphere, see [E
     </td>
     <td valign="top">
     
-    Add a *Filter* node to filter your data with an SQL expression. For more information, see [Filter Data](filter-data-6f6fa18.md).
+    Add a *Filter* node to filter your data with an SQL expression. For more information, see [Filter Data in a Graphical View](filter-data-in-a-graphical-view-6f6fa18.md).
     
     </td>
     </tr>
@@ -69,7 +69,7 @@ For information about making your data accessible outside SAP Datasphere, see [E
     </td>
     <td valign="top">
     
-    Add a *Projection* node to rename, reorder, or exclude columns. For more information, see [Reorder, Rename, and Exclude Columns](reorder-rename-and-exclude-columns-b846d0d.md).
+    Add a *Projection* node to rename, reorder, or exclude columns. For more information, see [Reorder, Rename, and Exclude Columns in a Graphical View](reorder-rename-and-exclude-columns-in-a-graphical-view-b846d0d.md).
     
     </td>
     </tr>
@@ -81,7 +81,7 @@ For information about making your data accessible outside SAP Datasphere, see [E
     </td>
     <td valign="top">
     
-    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Calculated Column](create-a-calculated-column-3897f48.md) or [SAP HANA SQL and System Views Reference](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/20a61f29751910149f99f0300dd95cd9.html).
+    Add a *Calculated Columns* node to create new columns and define calculations in them. For more information, see [Create a Calculated Column in a Graphical View](create-a-calculated-column-in-a-graphical-view-3897f48.md) or [SAP HANA SQL and System Views Reference](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/20a61f29751910149f99f0300dd95cd9.html).
     
     </td>
     </tr>
@@ -93,7 +93,7 @@ For information about making your data accessible outside SAP Datasphere, see [E
     </td>
     <td valign="top">
     
-    Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculations. For more information, see [Aggregate Data](aggregate-data-7733250.md).
+    Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculations. For more information, see [Aggregate Data in a Graphical View](aggregate-data-in-a-graphical-view-7733250.md).
     
     </td>
     </tr>
@@ -340,10 +340,10 @@ For information about making your data accessible outside SAP Datasphere, see [E
 
 7.  Complete or consult other sections as appropriate:
 
-    -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter](create-an-input-parameter-53fa99a.md)\).
-    -   *Data Persistence* - Persist the view data to improve performance \(see [Persist View Data](persist-view-data-9bd12cf.md)\).
+    -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md)\).
+    -   *Data Persistence* - Persist the view data to improve performance \(see [Persist Data in a Graphical or SQL View](persist-data-in-a-graphical-or-sql-view-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
-    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Data access controls allow you to apply row-level security to your objects. When a data access control is applied to a data layer view or a business layer object, any user viewing its data will see only the rows for which they are authorized, based on the specified criteria.") :arrow_upper_right:\).
+    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
@@ -473,7 +473,7 @@ For information about making your data accessible outside SAP Datasphere, see [E
     
     Work with custom CSN annotations that are not otherwise supported by the interface. 
 
-    See [Edit a Custom CSN Annotation](edit-a-custom-csn-annotation-820d013.md).
+    See [Edit Custom CSN Annotations in a View or Table](edit-custom-csn-annotations-in-a-view-or-table-820d013.md).
     
     </td>
     </tr>

@@ -183,16 +183,14 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     <tr>
     <td valign="top">
     
-    Hierarchy Name Column
+    Hierarchy Directory Association
     
     </td>
     <td valign="top">
     
-    Select the column containing the identifier of the hierarchy to which the parent-child relationship belongs.
+    Select the association pointing to the hierarchy directory entity.
 
-    This column must be marked as a key.
-
-    In our example, the `HierarchyName` column is selected.
+    In our example, the `To Hierarchy Directory` association is selected.
     
     </td>
     </tr>
@@ -204,7 +202,7 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
     </td>
     <td valign="top">
     
-    Displays the name of the hierarchy directory entity, once the *Hierarchy Name Column* property is set and an association is created to point from the hierarchy to the directory entity.
+    Displays the name of the hierarchy directory entity, based on the property above.
     
     </td>
     </tr>
@@ -255,6 +253,9 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy node:
         -   Two columns, `ChartOfAccounts` and `GLAccount` identify nodes from the `GLAccountInChartOfAccounts` dimension.
         -   Two columns, `GLAccountHierarchy` and `HierarchyNode` identify nodes from the `GLAccountGroups` dimension.
 
+        > ### Note:  
+        > You must ensure that all columns you select contain values only for records with the appropriate node type value. Records with other node type values must leave these columns empty \(and must only contain values in the columns selected to contain their identifiers\). Failure to do so may cause errors in data aggregation.
+
 
 
     
@@ -282,7 +283,7 @@ If your leaf dimension is included in an analytic model, you can enable any of y
     The hierarchy is shown collapsed and you can drill down into it as appropriate.
 
 
-For more information about working with the analytic preview, see [Using the Data Preview](using-the-data-preview-9f1fa73.md).
+For more information about working with the analytic preview, see [Preview Data in an Analytic Model](preview-data-in-an-analytic-model-9f1fa73.md).
 
 
 

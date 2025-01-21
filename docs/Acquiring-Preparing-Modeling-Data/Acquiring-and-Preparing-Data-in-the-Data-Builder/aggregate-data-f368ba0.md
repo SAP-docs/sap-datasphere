@@ -59,7 +59,7 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
     -   *Functions* - Browse, select a category, or filter available functions \(see [SQL Functions Reference](../sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression.
     -   *Columns* - Browse or filter available columns. Click a column name to see its properties or click elsewhere in its token to add it to your expression.
-    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter](../create-an-input-parameter-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
+    -   *Parameters* - Browse or filter available input parameters \(see [Create an Input Parameter in a Graphical View](../create-an-input-parameter-in-a-graphical-view-53fa99a.md)\). Click a parameter name to see its properties or click elsewhere in its token to add it to your expression.
     -   *Other* - Browse available operators, predicates, and case expressions, and click one to add it to your expression \(see [SQL Reference](../sql-reference-6a37cc5.md)\).
 
     For example, if you have aggregated your `Revenue` column using `SUM`, and want to show only:

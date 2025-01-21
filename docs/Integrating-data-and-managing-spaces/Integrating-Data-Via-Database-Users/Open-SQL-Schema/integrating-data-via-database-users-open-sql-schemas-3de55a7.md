@@ -2,7 +2,7 @@
 
 # Integrating Data via Database Users/Open SQL Schemas
 
-Create a database user in your space to read and write directly to the SAP HANA Cloud database on which SAP Datasphere runs. Each database user has an Open SQL schema, which is attached to a space schema and provides a secure method for exchanging data with the space.
+Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.
 
 Depending on the privileges they are granted, a database user can use their Open SQL schema to:
 
@@ -32,5 +32,5 @@ A database user is required in order to:
 -   Work with SAP HANA Cloud, data lake \(see [Integrating Data to and From SAP HANA Cloud Data Lake](../../Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md)\).
 
 > ### Note:  
-> Users with the DW Administrator role can create database user groups, which are similar to database users, but which are not assigned to a single space and can allow multiple spaces to read from and write to their schemas \(see [Creating a Database User Group](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/1097a470be40432e89f91288bdc14378.html "Users with the DW Administrator role can create database user groups in SAP Datasphere to allow users to work in a sandboxed area in the underlying SAP HANA Cloud database, unattached to any space. These users can transfer an existing data warehouse implementation into the SAP Datasphere database or do any other work in SAP HANA Cloud and then make it available to one or more spaces as appropriate.") :arrow_upper_right:\).
+> Users with the DW Administrator role can create database user groups, which are similar to database users, but which are not assigned to a single space and can allow multiple spaces to read from and write to their schemas \(see [Creating a Database User Group](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/1097a470be40432e89f91288bdc14378.html "Users with an administrator role can create database user groups in SAP Datasphere to allow users to work in a sandboxed area in the underlying SAP HANA Cloud database, unattached to any space. These users can transfer an existing data warehouse implementation into the SAP Datasphere database or do any other work in SAP HANA Cloud and then make it available to one or more spaces as appropriate.") :arrow_upper_right:\).
 

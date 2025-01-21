@@ -179,7 +179,7 @@ If your view has a source entity that itself has associations, you can copy one 
 
 Any number of analytic models can consume a single fact and the entities it connects to via associations \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
 
-When creating an analytic model, the modeler decides for each dimension towards which the fact has an association, whether to include it in the model \(see [Add a Dimension](add-a-dimension-4caf098.md)\). When a particular dimension is included, then the analytic model will follow the association to bring in the relevant data from the dimension.
+When creating an analytic model, the modeler decides for each dimension towards which the fact has an association, whether to include it in the model \(see [Add a Dimension to an Analytic Model](add-a-dimension-to-an-analytic-model-4caf098.md)\). When a particular dimension is included, then the analytic model will follow the association to bring in the relevant data from the dimension.
 
 While it is possible to define multiple associations that use the same attribute as their source, the analytic model can use only one association per attribute. To be sure that the analytic model is using the correct association, review the attribute's *Text / Association* property.
 

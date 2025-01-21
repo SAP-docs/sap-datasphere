@@ -47,7 +47,7 @@ The search is case-insensitive and automatically applies wildcards so that, for 
 
 Restrict the scope of the list by selecting a collection, space, or folder in the *Search In* area of the left panel.
 
-Choose one collection, space, or folder: 
+Choose one collection, space, or folder:
 
 -   *Collection*:
     -   *All* \(default\)

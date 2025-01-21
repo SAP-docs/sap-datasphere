@@ -9,11 +9,13 @@ You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere
 
 
 > ### Note:  
-> The import of SAP BW/4HANA models is now also integrated in the Import Entities wizard, which can be accessed from the Data Builder and the Repository Explorer. When you use the Import Entities wizard to import SAP BW∕4HANA models, you can now also import InfoProviders besides analytic queries. Note that this is only supported for SAP BW∕4HANA 2.0.
+> The import of SAP BW/4HANA models is also integrated in the Import Entities wizard, which can be accessed from the Data Builder and the Repository Explorer. When you use the Import Entities wizard to import SAP BW∕4HANA models, you can also import InfoProviders besides analytic queries. Note that this is only supported for SAP BW∕4HANA 2.0. For information on the Import Entities wizard, see [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
 
 The import of SAP BW∕4HANA models enables you to re-use existing metadata and data from SAP BW∕4HANA systems so that you can include this metadata and data in SAP Datasphere without having to rebuild them manually. To enable interaction between SAP Datasphere and SAP BW∕4HANA, we need to ensure that SAP Datasphere and SAP BW∕4HANA understand each other. This requires a transformation of metadata of entities from SAP BW∕4HANA to the definition of entities known in SAP Datasphere.
 
-With the import, objects are generated in the Business Builder and the Data Builder. Data access to SAP BW∕4HANA is realized through these objects. The data is retrieved directly from the SAP BW∕4HANA system via remote tables.
+For information on supported objects and functions, see SAP Note [2932647](https://me.sap.com/notes/2932647).
+
+With the import, objects are generated in the Data Builder and optionally in the Business Builder as well. Data access to SAP BW∕4HANA is realized through these objects. The data is retrieved directly from the SAP BW∕4HANA system via remote tables.
 
 You can then use these models as they are or enhance the data in SAP Datasphere on each level of your model - for example by adding master data to a view of type dimension.
 
@@ -27,11 +29,11 @@ The graphic shows the process flow for importing queries:
 
 ## Prerequisites
 
-You have a SAP BW∕4HANA system installed.
+You have an SAP BW∕4HANA system installed.
 
-In your SAP BW∕4HANA system, you need to release the analytic queries for transferring into SAP Datasphere. For more information, see: [Releasing Analytic Queries for Use in SAP Datasphere](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.7/en-US/cb1e79fc792b4737881b00c1685edc2a.html) 
+In your SAP BW∕4HANA system, you need to release the analytic queries for transferring into SAP Datasphere. For more information, see: [Releasing Analytic Queries for Use in SAP Datasphere](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.7/en-US/cb1e79fc792b4737881b00c1685edc2a.html).
 
-In SAP Datasphere, You have created a connection of type *SAP BW/4HANA Model Transfer* to connect to your SAP BW∕4HANA system. For more information, see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:.
+In SAP Datasphere, you have created a connection of type *SAP BW/4HANA Model Transfer* to connect to your SAP BW∕4HANA system. For more information, see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:.
 
 
 

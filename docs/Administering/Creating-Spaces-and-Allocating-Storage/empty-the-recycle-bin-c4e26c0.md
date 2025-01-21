@@ -30,4 +30,7 @@ Be aware that the following content will also be **permanently** deleted:
 
     The spaces are permanently deleted from the database and cannot be recovered.
 
+    > ### Note:  
+    > When you delete a file space, it can take more than 5 minutes and a timeout message from your browser might be displayed even though the space is being properly deleted. To make sure that your space has been permanently deleted, you can check later that it is no more in the recycle bin.
+
 

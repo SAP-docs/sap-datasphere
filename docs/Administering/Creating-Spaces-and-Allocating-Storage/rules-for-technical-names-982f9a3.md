@@ -87,7 +87,7 @@ The technical name can contain any characters except for the asterisk \(\*\), co
 <tr>
 <td valign="top">
 
-Object created in the Data Builder, for example a table, view, or E/R model
+Object created in the Data Builder, for example a table, view, E/R model, flow, intelligent lookup, task chain, or data access control
 
 </td>
 <td valign="top">
@@ -143,12 +143,12 @@ Association
 </td>
 <td valign="top">
 
-The technical name can only contain alphanumeric characters, underscores \(\_\), and dots \(.\). The maximum length is 10.
+The technical name can only contain alphanumeric characters, underscores \(\_\), and dots \(.\). The maximum length is 20.
 
 </td>
 <td valign="top">
 
-10
+20
 
 </td>
 </tr>
@@ -234,23 +234,6 @@ The technical name can only contain alphanumeric characters and underscores \(\_
 <td valign="top">
 
 40
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Data access control
-
-</td>
-<td valign="top">
-
-The technical name can only contain alphanumeric characters, and underscores \(\_\). The maximum length is 50 characters.
-
-</td>
-<td valign="top">
-
-50
 
 </td>
 </tr>
