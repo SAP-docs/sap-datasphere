@@ -4,7 +4,7 @@
 
 # Assign Users to a Role
 
-There are multiple ways to assign users to a role. 
+You can assign an individual user to a role \(global or scoped\) in the *Users* page,and you can assign several users to a global role at the same time in the *Roles* page. 
 
 
 
@@ -12,13 +12,15 @@ There are multiple ways to assign users to a role.
 
 ## Prerequisites
 
-To assign roles, you need the DW Administrator role.
+Users with an admnistrator role can assign roles to users in the *Users* and *Roles* pages.
 
 
 
 <a name="loio57a78804d8bd48ca9e7e73a0d33e355f__section_xf2_zd3_3kb"/>
 
-## Assign or Update an Individual User's Role
+## Assign an Individual User to a Role
+
+You can assign an individual user to a role \(global or scoped\) in the *Users* page.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 2.  On the *Users* page, find the required user.
@@ -36,7 +38,9 @@ To assign roles, you need the DW Administrator role.
 
 <a name="loio57a78804d8bd48ca9e7e73a0d33e355f__section_wf2_zd3_3kb"/>
 
-## Assign a Global Role to Multiple Users
+## Assign Several Users to a Global Role
+
+You can assign several users to a global role at the same time in the *Roles* page.
 
 > ### Note:  
 > This is not relevant for scoped roles. For information about how to assign users to spaces in a scoped role, see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).

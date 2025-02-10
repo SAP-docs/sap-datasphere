@@ -51,7 +51,7 @@ Before you can use the connection for creating views and accessing data via remo
 
     -   An administrator has added the Cloud Connector IP address to the IP allowlist.
 
-        For more information, see [Add IP address to IP Allowlist](add-ip-address-to-ip-allowlist-a3c2145.md).
+        For more information, see [Manage IP Allowlist](manage-ip-allowlist-a3c2145.md).
 
     -   If you use encrypted communication and the server certificate should be validated \(see the *Security* properties in the connection creation wizard\):
 

@@ -8,7 +8,7 @@ Before you can use the connection, the following is required:
 
 -   In Precog, you have added the source for which you want to create the connection.
 
--   In SAP Datasphere, you have added the necessary Precog IP addresses to the IP allowlist. For more information, see [Add IP address to IP Allowlist](add-ip-address-to-ip-allowlist-a3c2145.md).
+-   In SAP Datasphere, you have added the necessary Precog IP addresses to the IP allowlist. For more information, see [Manage IP Allowlist](manage-ip-allowlist-a3c2145.md).
 
     > ### Note:  
     > You can find and copy the relevant IP addresses in the final step of the connection creation wizard.

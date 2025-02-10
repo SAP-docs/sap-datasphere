@@ -29,12 +29,12 @@ In this situation, these actions are possible:
 
 ## Space Locked as Audit Logs Consume Too Much Disk Storage
 
-If the total size of all audit logs across all spaces has reached 50% of the tenant disk storage, the system automatically locks any spaces whose audit logs consume more than 30% of the total audit log size.
+If the total size of all audit logs across all spaces has reached 40% of the tenant disk storage, the system automatically locks any spaces - and deactivate any database analysis users - whose audit logs consume more than 30% of the total audit log size.
 
 In this situation, these actions are possible:
 
 -   A space administrator can use the *Unlock* button on the *Space Management* page or on the space page to unlock the space for a 24-hour grace period, in case urgent changes must be deployed.
--   An administrator can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk space.") :arrow_upper_right:\).
+-   An administrator can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right:\).
 -   A space administrator can disable audit logs or decrease the number of days audit logs are kept for \(see [Enable Audit Logging](enable-audit-logging-2665539.md)\).
 
 

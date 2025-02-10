@@ -12,7 +12,7 @@ This topic contains the following sections:
 When you delete a space, the space is moved to the *Recycle Bin* area and can be restored at any time. To recover the disk storage used by the data in a space, the space must be deleted from the *Recycle Bin* \(see [Empty the Recycle Bin](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "To recover the disk storage used by the data in spaces, you must delete them from the Recycle Bin area.") :arrow_upper_right:\).
 
 > ### Note:  
-> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. An administrator can decide to delete them \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk space.") :arrow_upper_right: \).
+> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. An administrator can decide to delete them \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right: \).
 
 > ### Note:  
 > Before deleting your space, you may want to:
@@ -51,7 +51,7 @@ Once the space is in the *Recycle Bin*:
 -   For remote tables connected via SAP HANA smart data access, with real-time replication, data replication is stopped and data is removed.
 -   For remote tables connected via SAP HANA smart data integration, real-time replication is stopped.
 -   You cannot create a new space with the ID of a space that is in the recycle bin. If you want to delete a space and recreate it with the same ID, you must first delete the space from the recycle bin \(see [Empty the Recycle Bin](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "To recover the disk storage used by the data in spaces, you must delete them from the Recycle Bin area.") :arrow_upper_right:\).
--   A database analysis user can still access the deleted space. For more information on a database analysis user, see [Create a Database Analysis User to Debug Database Issues](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c28145bcb76c4415a1ec6265dd2a4c11.html "A database analysis user is an SAP HANA Cloud database user with wide-ranging privileges. It can be used to support monitoring, analyzing, tracing, and debugging of your SAP Datasphere run-time database.") :arrow_upper_right:.
+-   A database analysis user can still access the deleted space. For more information on a database analysis user, see [Create a Database Analysis User to Debug Database Issues](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c28145bcb76c4415a1ec6265dd2a4c11.html "Database analysis users are SAP HANA Cloud database users who have read-only access to all space schemas, and all their activities are recorded in audit logs. You create a database user to monitor, analyze, trace, or debug your SAP Datasphere database, and resolve a specific database issue.") :arrow_upper_right:.
 
 
 

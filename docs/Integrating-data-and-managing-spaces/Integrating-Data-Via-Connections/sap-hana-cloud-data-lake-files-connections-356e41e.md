@@ -124,7 +124,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the host name for SAP HANA Cloud, data lake Files. 
+Enter the SAP HANA Cloud, data lake Files REST API endpoint, for example <code><i class="varname">&lt;instance id&gt;</i>files.hdl.prod-eu10.hanacloud.ondemand.com</code>. 
 
 </td>
 </tr>

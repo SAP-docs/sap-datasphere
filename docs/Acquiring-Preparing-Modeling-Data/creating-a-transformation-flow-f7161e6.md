@@ -1,6 +1,6 @@
 <!-- loiof7161e6c20204672ac4a6d90c81762e4 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Creating a Transformation Flow
 
@@ -105,7 +105,7 @@ Creating a transformation flow involves two important steps:
     </td>
     <td valign="top">
     
-    The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    The deployment and error status of the object. For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>
@@ -160,7 +160,7 @@ Creating a transformation flow involves two important steps:
 
     You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose:
 
-    -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](running-a-flow-5b591d4.md).
+    -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/running-a-flow-5b591d4.md).
     -   *Simulate Run*: In the *Data Integration Monitor*, you can open the transformation flow and click *Run* \> *Run with Settings* \> *Simulate Run* to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table. For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
 
 
@@ -208,7 +208,7 @@ Creating a transformation flow involves two important steps:
     
     Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
 
-    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>
@@ -222,7 +222,7 @@ Creating a transformation flow involves two important steps:
     
     Deploy your changes to make them available in the run-time environment.
 
-    See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>
@@ -262,7 +262,7 @@ Creating a transformation flow involves two important steps:
     
     Export the object to a CSN/JSON file. 
 
-    See [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
+    See [Exporting Objects to a CSN/JSON File](Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
     
     </td>
     </tr>
@@ -276,7 +276,7 @@ Creating a transformation flow involves two important steps:
     
     Open the *Impact and Lineage Analysis* graph for the object. 
 
-    See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    See [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
     
     </td>
     </tr>

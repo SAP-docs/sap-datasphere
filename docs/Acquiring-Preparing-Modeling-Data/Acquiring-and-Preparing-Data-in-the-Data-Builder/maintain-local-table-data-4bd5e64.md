@@ -37,7 +37,14 @@ You can maintain data in local tables that:
     -   **Reorder** - Drag and drop your columns to reorder them.
     -   **Sort** - Click on the column header and click <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
     -   **Filter** - Click on the column header and <span class="FPA-icons-V3"></span> \(Filter\) to open the *Define Filter* dialog. Click <span class="FPA-icons-V3"></span> \(Add Filter\), select a column to filter on, a filtering option, and a value. You can apply several filters.
-    -   **Find and Replace** - Click on the column header and <span class="SAP-icons-V5"></span> \(Find and Replace\) to open the *Find and Replace* dialog. You can find and replace string values that aren't key columns or delta table columns. Enter a string value or select *Empty* or *Null* values in the *Find* and *Replace* fields. Check *Match Case* or *Match Entire Field* in the *Settings* sections. \(optional\) Toggle on the occurrence count.
+    -   **Find and Replace** - Click on the column header and <span class="SAP-icons-V5"></span> \(Find and Replace\) to open the *Find and Replace* dialog. You can find and replace string values that aren't key columns or delta capture table columns. Enter a string value or select *Empty* or *Null* values in the *Find* and *Replace* fields. Check *Match Case* or *Match Entire Field* in the *Settings* sections. \(optional\) Toggle on the occurrence count.
+
+        > ### Note:  
+        > You must consider the following information:
+        > 
+        > -   You must have the privilee DW\_CONSUMER.UPDATE
+        > -   If you have set a filter on your data, the *Find and Replace* operation wil happen within this filer limit.
+
     -   **Control the previewed columns** - Click <span class="FPA-icons-V3"></span> \(Columns Settings\) and select the columns to show in the preview.
 
     > ### Note:  

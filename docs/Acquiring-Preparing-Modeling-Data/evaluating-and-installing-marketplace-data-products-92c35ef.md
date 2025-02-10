@@ -37,7 +37,7 @@ You also must be assigned as a member user for one or more spaces and be a membe
 
 From the <span class="SAP-icons-V5"></span>\(*Catalog*\) search page, you can select the *Marketplace Data Products* filter and then apply more filters or search terms to discover data products that can help you with your business goals.
 
-To know for sure if a data product will met your needs, you can view the its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like it's name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation. For more information on the detailed information that you can review, see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md).
+To know for sure if a data product will met your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like its name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation. For more information on the detailed information that you can review, see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md).
 
 After you've evaluated and found a data product, use the following steps to download a sample dataset for testing or to install the data product in an SAP Datasphere space.
 
@@ -69,7 +69,7 @@ If you want to further evaluate a data product, you can download a sample datase
 
 1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
 
-2.  On the catalog search page, use the filters or the search to find the data product you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
+2.  On the catalog search page, use the filters or the search to find the data product you want. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
 
 3.  When viewing the page for the data product, select *Overview tab* \> *Details*, and select the *Sample Data* tab.
 
@@ -108,7 +108,7 @@ After you decide that the data product is what you need, you can install it in a
 
 1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
 
-2.  On the catalog search page, use the filters or the search to find the data product you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
+2.  On the catalog search page, use the filters or the search to find the data product you want. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
 
 3.  On the data product details page, choose one of the following to install it:
 
@@ -152,7 +152,7 @@ Objects from the data product are created and deployed in the space you selected
 
     For example, in the *Data Builder*, you use the objects from the data product to create a graphical view. For information on preparing data in the *Data Builder*, see [Preparing Data in the Data Builder](preparing-data-in-the-data-builder-f2e359c.md).
 
--   In the catalog, users will be able to discover the objects. Select the *Assets* tab and use the filters or the search to find the objects. The objects are discoverable only if authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding How Automatic Extraction Works](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "The catalog monitors changes to objects in connected source systems. When changes are detected, the catalog extracts metadata for those objects and updates the corresponding assets. The catalog can also detect when objects are added or removed.") :arrow_upper_right:.
+-   In the catalog, users will be able to discover the objects. Select the *Assets* tab and use the filters or the search to find the objects. The objects are discoverable only if authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for data and assets is extracted automatically or manually. These different methods help you can ensure that the data and assets in the catalog are up-to-date.") :arrow_upper_right:.
 
 <a name="marketplacedp_manage"/>
 

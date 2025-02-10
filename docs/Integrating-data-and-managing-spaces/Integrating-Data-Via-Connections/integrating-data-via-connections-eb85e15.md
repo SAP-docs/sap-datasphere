@@ -1024,7 +1024,7 @@ SAP
 
 [SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "You can use SAP BW bridge to model objects and import them into SAP Datasphere.") :arrow_upper_right:
 
-\[generated and only available within a SAP BW bridge space if SAP BW bridge has been provisioned\]
+\[generated and only available within an SAP BW bridge space if SAP BW bridge has been provisioned\]
 
 </td>
 <td valign="top">
@@ -1044,7 +1044,7 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">

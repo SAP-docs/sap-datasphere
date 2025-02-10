@@ -77,7 +77,7 @@ Certain connections support loading data from multiple source objects to SAP Dat
 
 ## Load and Transform Data \(Including Delta Change Support\) with Transformation Flows
 
-Create a transformation flow to load data from one or more source repository tables, apply transformations, and output the result to a target table. You can load a full set of data or only delta changes from each source table \(see [Creating a Transformation Flow](creating-a-transformation-flow-f7161e6.md)\).
+Create a transformation flow to load data from one or more source repository tables, apply transformations, and output the result to a target table. You can load a full set of data or only delta changes from each source table \(see [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md)\).
 
 
 
@@ -137,10 +137,12 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
 -   Click a tile to create a new object
 -   Click <span class="FPA-icons-V3"></span> \(Show filters\) to filter the list on collections and search by criteria. Click *Show More* to open a dialog with additional filter options.
 -   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\). 
+    -   As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
 
-    As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
+    -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 
-    The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+    -   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results appropriately. See [Natural Language Search](../Creating-Finding-Sharing-Objects/natural-language-search-04170c6.md).
+
 
 -   Click a column header to sort or filter the list by values in the column.
 -   Select one or more objects and use any of the following tools:

@@ -62,7 +62,7 @@ Before creating a connection for SAP BW/4HANA Model Transfer in SAP Datasphere, 
 
     -   Install the latest Data Provisioning Agent version on a local host or update your agent to the latest version. For more information, see [Install the Data Provisioning Agent](install-the-data-provisioning-agent-8f61850.md).
 
-    -   In SAP Datasphere, add the external IPv4 address of the server on which your Data Provisioning Agent is running, or in case you are using a network firewall add the public proxy IP address to the IP allowlist. For more information, see [Add IP address to IP Allowlist](add-ip-address-to-ip-allowlist-a3c2145.md).
+    -   In SAP Datasphere, add the external IPv4 address of the server on which your Data Provisioning Agent is running, or in case you are using a network firewall add the public proxy IP address to the IP allowlist. For more information, see [Manage IP Allowlist](manage-ip-allowlist-a3c2145.md).
 
     -   Connect the Data Provisioning Agent to SAP Datasphere. For more information, see [Connect and Configure the Data Provisioning Agent](connect-and-configure-the-data-provisioning-agent-e87952d.md).
 

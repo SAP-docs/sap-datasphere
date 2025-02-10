@@ -12,7 +12,7 @@ Add a *Filter* node to filter your data with an SQL expression.
 
 1.  Select an object in order to display its context tools, and click <span class="FPA-icons-V3"></span> Filter.
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Graphical_View_Editor_-_Filter_Data_6e54f2d.gif)
+    ![](images/Graphical_View_Editor_-_Filter_Data_6e54f2d.gif)
 
     A filter node is created, its symbol is selected, and its properties are displayed in the side panel.
 

@@ -393,7 +393,7 @@ Verify that the external \(public\) IPv4 address of the server where the agent i
 
 For more information, see:
 
--   [Add IP address to IP Allowlist](Preparing-Connectivity/add-ip-address-to-ip-allowlist-a3c2145.md)
+-   [Manage IP Allowlist](Preparing-Connectivity/manage-ip-allowlist-a3c2145.md)
 
 -   SAP Note [2938870](https://me.sap.com/notes/2938870) - *Errors when connecting DP Agent with DWC*
 

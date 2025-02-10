@@ -27,7 +27,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > ### Note:  
     > On file space, you can only create *Graphical View Transform*.
 
-3.  Add a source. For more information, see [Add a Source to Your Transformation Flow](add-a-source-to-your-transformation-flow-ec702fe.md). Note that you can only add a local table \(file\).
+3.  Add a source. For more information, see  <?sap-ot O2O class="- topic/xref " href="ec702fe3b1134f278c5c538b447b7435.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/yyv1736254891721/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> . Note that you can only add a local table \(file\).
 4.  Add a Transformation. The *View Transform* does not support all functions available in a transformation flow created in an SAP HANA space. For more information, see [List of Functions Supported by a Transformation Flow \(in a File Space\)](list-of-functions-supported-by-a-transformation-flow-in-a-file-s-37e737f.md):
 
 
@@ -52,7 +52,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Create a Join](create-a-join-bcb5f48.md)
+    See  <?sap-ot O2O class="- topic/xref " href="bcb5f48ec99242da8f2cb3483b8409b7.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/yyv1736254891721/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
     
     </td>
     </tr>
@@ -64,7 +64,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Create a Union](create-a-union-9cd6fbf.md)
+    See  <?sap-ot O2O class="- topic/xref " href="9cd6fbf4710e4a31a3fd5246302ed9ec.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/yyv1736254891721/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
     
     </td>
     </tr>
@@ -112,7 +112,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Aggregate Data](aggregate-data-f368ba0.md)
+    See  <?sap-ot O2O class="- topic/xref " href="f368ba00de89482e8034d2c7281c255b.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/yyv1736254891721/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
     
     </td>
     </tr>
@@ -122,12 +122,12 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > Local tables \(file\) support a limited number of data types. For more information, see [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
 5.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. For more information, see [Creating a Python Operator](creating-a-python-operator-a747acf.md).
-6.  Add a target table. For more information, see [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
+6.  Add a target table. For more information, see [Create or Add a Target Table to Your Transformation Flow](../create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
 
     > ### Note:  
-    > It can only be a local table \(file\) and truncate is not supported.
+    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
 
-7.  Review the properties of your transformation flow, save and deploy it. See [Creating a Transformation Flow](creating-a-transformation-flow-f7161e6.md).
+7.  Review the properties of your transformation flow, save and deploy it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
 
     > ### Note:  
     > The transformation will be saved in the object store. While deploying, a virtual procedure will be created to enable the runtime in the file space.

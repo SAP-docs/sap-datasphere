@@ -104,6 +104,19 @@ A filter variable refers to an attribute. When a story is opened, the variable d
     <td valign="top">
     
     Choose the *Filter Type*.
+
+    The filter can be
+
+    -   a single value: The user should enter a single value to filter on. You can optionally specify a default value.
+
+    -   multiple single values: Allows the user to enter more than one value \(or range of values\) to filter on.
+
+    -   an interval: Allows the user to enter an interval of values to filter on.
+
+    -   a range of values: Allows the user to enter a range of values to filter on.
+
+
+
     
     </td>
     </tr>

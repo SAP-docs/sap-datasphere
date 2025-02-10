@@ -35,9 +35,12 @@ Click *Repository Explorer* in the left navigation area. There is no need to sel
 
 Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
+-   As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
 
-The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+-   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+
+-   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results appropriately. See [Natural Language Search](natural-language-search-04170c6.md).
+
 
 
 
@@ -230,7 +233,7 @@ For those filter options that are not related to date or time, you can create a 
 
 1.  Click *Show More* at the bottom of a filter category to open the Filter Settings dialog. Some filters have a *Select Items* and a *Define Conditions* tab.
 2.  On the *Define Conditions* tab, choose an operator and enter a value in the *Filter Condition* box.
-3.  Click the plus icon to create an alternative condition. Each condition in one category acts as an `OR` operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an `AND` operator, so that both conditions must be true for the object to be returned in the search results.
+3.  Click :heavy_plus_sign: to create an alternative condition. Each condition in one category acts as an `OR` operator, so that an object must meet one of the conditions to be included in the search results. If you define one condition in two categories, then each category acts as an `AND` operator, so that both conditions must be true for the object to be returned in the search results.
 
 You can create advanced filter conditions for multiple filter categories. An object must meet one of the conditions in each of the categories to be included in the search results.
 

@@ -44,7 +44,7 @@ To prepare connectivity via Data Provisioning Agent, perform the following steps
     > ### Note:  
     > For security reasons, all external connections to your SAP Datasphere instance are blocked by default. By adding external IPv4 addresses or address ranges to the allowlist you can manage external client connections.
 
-    For more information, see [Add IP address to IP Allowlist](add-ip-address-to-ip-allowlist-a3c2145.md).
+    For more information, see [Manage IP Allowlist](manage-ip-allowlist-a3c2145.md).
 
 3.  Connect the Data Provisioning Agent to SAP Datasphere.
 

@@ -12,6 +12,9 @@ You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant and enab
 
 2.  Enter the URL of your SAP Analytics Cloud tenant.
 
+    > ### Note:  
+    > You must select an SAP Analytics Cloud tenant hosted in a Cloud Foundry environment. Linking to NEO tenants is not supported.
+
 3.  Click *Save* to confirm the connection.
 
     > ### Note:  

@@ -4,16 +4,16 @@
 
 # Create a Database Analysis User to Debug Database Issues
 
-A database analysis user is an SAP HANA Cloud database user with wide-ranging privileges. It can be used to support monitoring, analyzing, tracing, and debugging of your SAP Datasphere run-time database.
+Database analysis users are SAP HANA Cloud database users who have read-only access to all space schemas, and all their activities are recorded in audit logs. You create a database user to monitor, analyze, trace, or debug your SAP Datasphere database, and resolve a specific database issue.
 
 
 
 ## Context
 
-A user with the *DW Administrator* role can create a database analysis user.
+A user with an administrator role can create a database analysis user.
 
 > ### Note:  
-> You should only create a database analysis user to resolve a specific database issue and then delete it immediately after the issue is resolved. This user can access all SAP HANA Cloud monitoring views and all SAP Datasphere data in all spaces, including any sensitive data stored there.
+> You should only create a database analysis user to resolve a specific database issue and then delete it immediately after the issue is resolved \(see [Manage Database Analysis Users](manage-database-analysis-users-4bb6d37.md)\). This user can access all SAP HANA Cloud monitoring views and all SAP Datasphere data in all spaces, including any sensitive data stored there.
 
 
 
@@ -91,12 +91,12 @@ A user with the *DW Administrator* role can create a database analysis user.
 
         For more information, see [Getting Started With the SAP HANA Database Explorer](https://help.sap.com/docs/SAP_HANA_COCKPIT/e8d0ddfb84094942a9f90288cd6c05d3/7fa981c8f1b44196b243faeb4afb5793.html)\).
 
-        A database analysis user can run a procedure in Database Explorer to stop running statements. For more information, see [Stop a Running Statement](stop-a-running-statement-0cf11ed.md).
+        A database analysis user can run a procedure in Database Explorer to stop running statements. For more information, see [Stop a Running Statement With a Database Analysis User](stop-a-running-statement-with-a-database-analysis-user-0cf11ed.md).
 
 
     > ### Note:  
     > All actions of the database analysis user are logged in the `ANALYSIS_AUDIT_LOG` view, which is stored in the space that has been assigned to store audit logs \(see [Enable Audit Logging](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:\).
     > 
-    > The audit logs entries are kept for 180 days, after which they are deleted.
+    > Audit logs can consume a large quantity of GB of disk in your SAP Datasphere tenant database. The audit log entries for database analysis users are kept for 180 days, after which they are automatically deleted. You can also manually delete the audit logs to free up disk space \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\). Also, a database analysis user can be automatically deactivated due to a large amount of disk storage consumed by audit logs \(see [Manage Database Analysis Users](manage-database-analysis-users-4bb6d37.md)\).
 
 

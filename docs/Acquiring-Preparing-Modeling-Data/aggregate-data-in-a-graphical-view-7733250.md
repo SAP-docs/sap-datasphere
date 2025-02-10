@@ -26,7 +26,7 @@ Add an *Aggregation* node to perform `SUM`, `COUNT`, `MIN`, and `MAX` calculatio
 
 3.  Select the projection node in order to display its context tools, and click <span class="FPA-icons-V3"></span> \(Aggregation\).
 
-    ![](Acquiring-and-Preparing-Data-in-the-Data-Builder/images/Graphical_View_Editor_-_Aggregate_Data_90e85f4.gif) An *Aggregation* node is created, its symbol is selected, and its properties are displayed in the side panel.
+    ![](images/Graphical_View_Editor_-_Aggregate_Data_90e85f4.gif) An *Aggregation* node is created, its symbol is selected, and its properties are displayed in the side panel.
 
 4.  Optional. Rename the node in its side panel to clearly identify it. This name can be changed at any time and can contain only alphanumeric characters and underscores.
 

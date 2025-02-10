@@ -28,7 +28,7 @@ You can also import objects from CSN/JSON files \(see [Importing and Exporting O
 
 You can search across all the objects in all the spaces you're assigned to in the *Repository Explorer* \(see [Repository Explorer](repository-explorer-f8ce0b4.md)\).
 
-Alternatively, you can browse for trusted data assets that have been published to the *Catalog* \(see [Finding and Accessing Data in the Catalog](../finding-and-accessing-data-in-the-catalog-1047825.md)\).
+Alternatively, you can browse for trusted data assets that have been published to the *Catalog* \(see [Finding Data and Assets in the Catalog](../finding-data-and-assets-in-the-catalog-1047825.md)\).
 
 
 

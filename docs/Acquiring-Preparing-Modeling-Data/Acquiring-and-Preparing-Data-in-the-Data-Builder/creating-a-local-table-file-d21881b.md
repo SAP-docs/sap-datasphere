@@ -26,14 +26,12 @@ SAP Datasphere supports two types of local table to persist data:
 
 You cannot create views and analytic models in file spaces, but you can share local tables \(file\) to standard spaces where they can be consumed by views, flows, and analytic models \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\).
 
-A local table is the central entity for data persistence in SAP Datasphere. When they create spaces, space administrators, can decide if they want to allow space capabilities to enable the object store. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a space with SAP HANA data lake files storage in the object store, allocate compute resources and assign one or more users to allow them to start acquiring and preparing data. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area.") :arrow_upper_right:.
-
 SAP HANA Cloud, data lake allows SAP Datasphere to store and manage mass-data efficiently in a secured environment. The SAP HANA native SQL on files feature gives you a direct access to the data stored in the object store and enables large data-based business scenarios at lower costs.
 
 As a local table \(file\) is capturing delta changes via flows, it creates different entities in the repository after it is deployed:
 
--   An active records entity for accessing the the delta capture entity through a virtual table. It excludes the delta capture columns and deleted records, and keeps only the active records.
--   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time.
+-   An active records entity for accessing the delta capture entity through a virtual table. It excludes the delta capture columns and deleted records, and keeps only the active records.
+-   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(File\) has a specific folder in file storage \(inbound buffer\) to which a replication flow writes data files to a specific target object. To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run via a task chain \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See and [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:\)
 
 
 
@@ -183,7 +181,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     > ### Caution:  
     > Once you've deployed the local table \(file\), if data exists, you can't update:
     > 
-    > -   The technical name,,
+    > -   The technical name,
     > -   The data type,
     > -   The key column: you can't remove or add a new key column
     > -   Select additional *Not Null* option for an existing column.
@@ -297,7 +295,9 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </td>
     <td valign="top">
     
-    This column will track the type of last change made to a record. When a record is inserted or updated corresponding change types are used: "*I*" for insert \(a new record is added\), "*U*" for update \(an existing record gets an updated value\), or "*A*" for upsert \(insert records if they do not exist yet in the target table, or update them by primary key if they do exist\). When an existing record is deleted other specific change types are used \(for example "*D*"\). Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the local table \(using the Active Records Table\). Also, note that the change types provided by the different SAP Datasphere apps vary and may depend on the actual source that is connected. The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. For more information on records deletion, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
+    This column will track the type of last change made to a record. 
+
+    Note that deleting a record will not physically delete it, so that the changes can be propagated to the different objects that consume it in delta mode. It is however filtered out when accessing the local table \(using the Active Records Table\). The handling of the different change types is implemented internally by SAP Datasphere apps that consume the Delta Capture Table with no need for consideration in modeling. For more information on records deletion, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
     
     </td>
     </tr>

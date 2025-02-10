@@ -73,7 +73,7 @@ Displays the functional and publication statuses of the asset.
 
 Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users.
 
-For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom summary description, adding a custom long description, and creating relationships with tags, terms, and KPIs. These enhancements enrich the asset's details, which helps catalog users evaluate and decide if the asset meets their needs. Also, you can review the functional and publication status of the catalog assets and ensure they are in good shape and available for catalog users.") :arrow_upper_right:.
+For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>

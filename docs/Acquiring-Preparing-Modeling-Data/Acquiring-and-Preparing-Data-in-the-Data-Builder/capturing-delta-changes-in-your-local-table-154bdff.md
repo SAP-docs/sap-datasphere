@@ -138,7 +138,7 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 -   The following SAP Datasphere apps also interact with the Delta Capture Table that contains the delta columns:
     -   *Transformation Flow*:
         -   As Source, you can choose between source with "Delta Capture" or "All Active Records". See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md)
-        -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](processing-changes-to-sources-and-target-tables-705292c.md) and [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md) 
+        -   As target, it depends of the combination of the load type used and the table type \(local table with or without delta capture\). See [Processing Changes to Sources and Target Tables](../processing-changes-to-sources-and-target-tables-705292c.md) and [Create or Add a Target Table to Your Transformation Flow](../create-or-add-a-target-table-to-your-transformation-flow-0950746.md) 
 
     -   *Replication Flow*: The Delta Capture Table can be used as source or as target, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md) and [Add the Source for a Replication Flow](add-the-source-for-a-replication-flow-7496380.md).
     -   *Table Editor*:

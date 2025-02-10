@@ -25,6 +25,9 @@ Your criteria are defined in a table or view that lists SAP Datasphere user IDs 
 
 You can create one or more data access controls that consume each permissions entity, and select one or more columns in each data access control to specify the criteria that it will enforce. You can apply a single data access control to multiple views. Each view protected in this way will filter the results available in its data preview to only those rows meeting the criteria for the current user.
 
+> ### Note:  
+> Permissions entities must not, themselves, be protected by a data access control, or have any protected view among their sources.
+
 
 
 <a name="loioa032e51c730147c7a1fcac125b4cfe14__section_best_practices"/>

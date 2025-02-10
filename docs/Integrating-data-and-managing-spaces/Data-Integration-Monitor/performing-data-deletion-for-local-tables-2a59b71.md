@@ -113,7 +113,7 @@ Description
 <tr>
 <td valign="top">
 
-*All Records* 
+*Delete All Records* 
 
 </td>
 <td valign="top">
@@ -125,7 +125,7 @@ You want to delete all records contained in the local table. Note that in case o
 <tr>
 <td valign="top">
 
-*Filter* 
+*Delete Filtered Records* 
 
 </td>
 <td valign="top">
@@ -145,7 +145,7 @@ You define a filter and based on this filter, the records will be deleted. Note 
 <tr>
 <td valign="top">
 
-*Record marked as "Deleted"* 
+*Delete Records Marked as "Deleted"* 
 
 </td>
 <td valign="top">

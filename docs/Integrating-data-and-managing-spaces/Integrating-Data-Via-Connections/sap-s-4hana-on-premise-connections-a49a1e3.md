@@ -416,7 +416,7 @@ If host and port entered in the connection details match the virtual host and po
 > When you select *Derive Virtual Host and Port from Connection Details* for ABAP-based connections, virtual port is set to ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
 
 > ### Note:  
-> When the connection is configured for using the ABAP SQL service for data federation with remote tables, you must enter virtual host and port manually. Deriving virtual host and port the connection details is not supported because the Cloud Connector configuration requires two system mappings having different virtual ports \(one for RFC protocol for data flows and replication flows, and one for HTTP/HTTPS protocoll for remote tables using the ABAP SQL service\).
+> When the connection is configured for using the ABAP SQL service for data federation with remote tables, you must enter virtual host and port manually. Deriving virtual host and port from the connection details is not supported because the Cloud Connector configuration requires two system mappings having different virtual ports \(one for RFC protocol for data flows and replication flows, and one for HTTP/HTTPS protocoll for remote tables using the ABAP SQL service\).
 
 
 

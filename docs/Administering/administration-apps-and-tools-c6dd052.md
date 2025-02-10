@@ -293,7 +293,7 @@ More Information
 </td>
 <td valign="top" rowspan="2">
 
-[Add IP address to IP Allowlist](Preparing-Connectivity/add-ip-address-to-ip-allowlist-a3c2145.md)
+[Manage IP Allowlist](Preparing-Connectivity/manage-ip-allowlist-a3c2145.md)
 
 </td>
 </tr>

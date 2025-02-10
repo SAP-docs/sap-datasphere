@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Stop a Running Statement
+# Stop a Running Statement With a Database Analysis User
 
 Using a database analysis user, you can stop a statement that is currently running.
 

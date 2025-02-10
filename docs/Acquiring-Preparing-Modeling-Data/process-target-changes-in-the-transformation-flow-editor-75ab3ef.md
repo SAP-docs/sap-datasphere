@@ -1,6 +1,6 @@
 <!-- loio75ab3ef235f845b6bfddcafee198449c -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Process Target Changes in the Transformation Flow Editor
 

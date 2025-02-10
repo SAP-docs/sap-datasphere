@@ -425,10 +425,10 @@ Provide business-friendly names for your table and its columns, identify its sem
     </td>
     <td valign="top">
     
-    Delete data:
+    Delete records:
 
-    -   Standard table - Delete all records.
-    -   Delta enabled - Delete all records or delete all fully-processed records with change type "Deleted".
+    -   Standard table - Delete all records
+    -   Delta capture table- Delete all records, Delete all records \(mark as "deleted"\) or Delete all records marked for deletion which are older than the specified number of days.
 
     See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
     

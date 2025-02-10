@@ -7,7 +7,7 @@ Delete your SAP Datasphere service instance in SAP BTP.
 To do so, you must have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
 
 > ### Note:  
-> If you delete your service instance by accident, it can be recovered within seven days. After seven days has passed, the tenant and all its data will be deleted and cannot be recovered.
+> If you delete your service instance by accident, it can be recovered within seven days. After seven days have passed, the tenant and all its data will be deleted and cannot be recovered.
 
 1.  In SAP BTP, select the subaccount and the space where the service instance was created.
 
@@ -15,7 +15,7 @@ To do so, you must have SAP BTP administration authorization on the subaccount t
 
 3.  In the *Service Instances* page, find the SAP Datasphere service instance that you want to delete, click the button at the end of the row and select *Delete*, then click *Delete* in the confirmation dialog.
 
-    You can view the progress of the deletion.
+    You can view the progress of the deletion. The tenant stays in a suspended state for seven days. During that time, you cannot use the same tenant host name.
 
 
 <a name="task_rzb_xhw_cbc"/>
@@ -43,7 +43,7 @@ If you accidentally delete your SAP Datasphere service instance in SAP BTP, you 
 
 1.  Create a customer incident through ServiceNow using the component `DS-PROV`. Set the priority to *High*, and ask SAP support to restore impacted SAP Datasphere tenant. You must provide the tenant URL.
 
-    Once completed, SAP Support will inform you that that the impacted tenant has been restored and unlocked successfully.
+    Once completed, SAP Support informs you that the impacted tenant has been restored and unlocked successfully.
 
 2.  Get the OAuth Client ID and OAuth Client Secret:
 
@@ -66,7 +66,9 @@ If you accidentally delete your SAP Datasphere service instance in SAP BTP, you 
     9.  Copy and save the *OAuth Client ID* and *OAuth Client Secret* for Step 3.
 
 
-3.  Fetch your access token via http POST request to the OAuth Client Token URL.
+3.  Create an OAuth Client in the impacted SAP Datasphere tenant. You can name it something like `DSP_SERVICE_INSTANCE_LINKING`.
+
+4.  Fetch your access token via http POST request to the OAuth Client Token URL.
 
     The *Token URL* is displayed on the *App Integration* tab, above the list of *Configured Clients*.
 
@@ -84,7 +86,7 @@ If you accidentally delete your SAP Datasphere service instance in SAP BTP, you 
     2.  Save the access token returned by the POST request.
 
 
-4.  Get the UUID for your tenant.
+5.  Get the UUID for your tenant.
 
     1.  Log on to the impacted tenant.
 
@@ -93,7 +95,7 @@ If you accidentally delete your SAP Datasphere service instance in SAP BTP, you 
     3.  Copy the ID under *Tenant*.
 
 
-5.  Create a new BTP service instance and link it to the impacted tenant.
+6.  Create a new BTP service instance for SAP Datasphere and link it to the impacted SAP Datasphere tenant.
 
     1.  Log on to the SAP BTP Cockpit.
 
@@ -124,11 +126,13 @@ If you accidentally delete your SAP Datasphere service instance in SAP BTP, you 
         }
         ```
 
-        Replace *<TenantUUID\>* with the ID you retrieved in Step 4c. Replace *<AccessToken\>* with the token you fetched in Step 3b.
+        Replace *<TenantUUID\>* with the ID that you retrieved in Step 4c. Replace *<AccessToken\>* with the token that you fetched in Step 3b.
 
     12. Click *Next*.
 
-    13. In the review dialog click *Create*.
+    13. In the review dialog, click *Create*.
+
+    14. Back in the SAP Datasphere tenant, go to *System* \> *Administration* and delete the OAuth Client named DSP\_SERVICE\_INSTANCE\_LINKING, previously created in Step 3.
 
 
 

@@ -147,7 +147,7 @@ All roles except *DW Consumer*
 
 <span class="SAP-icons-V5"></span>\(*Catalog*\)
 
-See [Governing and Publishing in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "Users with a catalog administrator role are responsible for connecting source systems to the catalog and monitoring those systems, and for enriching, classifying, and publishing objects extracted from these systems as catalog assets.") :arrow_upper_right:
+See [Governing and Publishing Data in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "Users with a catalog administrator role are responsible for connecting source systems to the catalog and monitoring those systems, and for enriching, classifying, and publishing objects extracted from these systems as catalog assets.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1051,7 +1051,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), marketplace data products, or data providers. For more information about these objects, see .") :arrow_upper_right:
+See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1099,7 +1099,7 @@ Assets
 
 Edit the name of the asset that appears in the catalog.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom summary description, adding a custom long description, and creating relationships with tags, terms, and KPIs. These enhancements enrich the asset's details, which helps catalog users evaluate and decide if the asset meets their needs. Also, you can review the functional and publication status of the catalog assets and ensure they are in good shape and available for catalog users.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1120,7 +1120,7 @@ Assets
 
 Add a catalog description for the asset.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom summary description, adding a custom long description, and creating relationships with tags, terms, and KPIs. These enhancements enrich the asset's details, which helps catalog users evaluate and decide if the asset meets their needs. Also, you can review the functional and publication status of the catalog assets and ensure they are in good shape and available for catalog users.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1141,7 +1141,7 @@ Assets
 
 Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom summary description, adding a custom long description, and creating relationships with tags, terms, and KPIs. These enhancements enrich the asset's details, which helps catalog users evaluate and decide if the asset meets their needs. Also, you can review the functional and publication status of the catalog assets and ensure they are in good shape and available for catalog users.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1229,7 +1229,7 @@ Assets
 
 Publish/Unpublish assets to the catalog or exclude assets from being automatically published.
 
-See [Publishing Content to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "When you publish assets to the catalog, you determine what content is available for catalog users to discover. You can set source systems to automatically publish content, or you can be more involved and manually publish individual assets from the asset details page or manually publish small groups of assets from the catalog search page.") :arrow_upper_right:
+See [Publishing Content to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "When you publish assets, terms, and key performance indicators (KPIs) to the catalog, you determine what content is available for catalog users to discover. You can set source systems to automatically publish assets, or you can be more involved and manually publish individual assets from the asset details page or manually publish small groups of assets from the catalog search page.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1248,7 +1248,7 @@ Tags
 
 Add a tag relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can improve the information of an asset by editing its name, adding a custom summary description, adding a custom long description, and creating relationships with tags, terms, and KPIs. These enhancements enrich the asset's details, which helps catalog users evaluate and decide if the asset meets their needs. Also, you can review the functional and publication status of the catalog assets and ensure they are in good shape and available for catalog users.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1751,7 +1751,7 @@ Marketplace Data Products
 
 Search for a data marketplace data product, view the detailed information for it, and install it to a space.
 
-See [Finding and Accessing Data in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Discover data by searching and filtering results. Mark your favorite assets, terms, key performance indicators (KPIs), marketplace data products, or data providers. For more information about these objects, see .") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "When you find a data product that interests you, review its details page and test the sample data sets (if available) to make sure it's the right one for your business needs. After you evaluate it and decide it's what you need, you can install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "When you find a data product that interests you, review its details page and test the sample data sets (if available) to make sure it's the right one for your business needs. After you evaluate it and decide it's what you need, you can install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

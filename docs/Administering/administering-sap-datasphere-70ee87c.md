@@ -93,7 +93,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
     -   **DW AI Consumer** - Can use SAP Business AI features.
 
         > ### Note:  
-        > To activate SAP Business AI features in your SAP Datasphere tenant, go to SAP note [0003522010](https://me.sap.com/notes/0003522010).
+        > To activate SAP Business AI features in your SAP Datasphere tenant, see [Enable SAP Business AI for SAP Datasphere](Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md)
 
 
 

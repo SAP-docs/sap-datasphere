@@ -2,7 +2,7 @@
 
 # Discovering Data and Assets in the Catalog
 
-Users with a catalog user role can browse the catalog for trusted data and analytic assets that have been published.
+Users with a catalog user role can browse for trusted data and analytic assets that have been published to the catalog.
 
 
 
@@ -10,7 +10,7 @@ Users with a catalog user role can browse the catalog for trusted data and analy
 
 ## Discover Data and Assets
 
-Search, filter, and explore data and assets in the catalog. See [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
+Search, filter, and explore data and assets in the catalog. See [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
 
 
 
@@ -18,9 +18,12 @@ Search, filter, and explore data and assets in the catalog. See [Finding and Acc
 
 ## Evaluate Data and Assets
 
-When you find an item that interests you, view descriptions and other metadata about it. You can also view information on how to use the object and see impact and lineage diagram that shows the its source, the transformations it goes through, its final state, and other objects affected by changes made to it. All this information helps you decide if the data or asset is what you want.
+When you find an item that interests you, view descriptions and other metadata about it. You can also view information on how to use the object and see the impact and lineage diagram that shows its source, the transformations it goes through, its final state, and other objects affected by changes made to it. All this information helps you decide if the data or asset is what you want.
 
-See [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md) and [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md).
+See
+
+-   [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md)
+-   [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md)
 
 
 
@@ -31,7 +34,7 @@ See [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-a
 After finding and evaluating the data or asset, you can do one of the following:
 
 -   Open the catalog asset to view the asset in its source system.
--   Install the data product to a space.
+-   Install the data product to a space on the local SAP Datasphere tenant.
 -   Use the installed data product or asset as part of an existing data project to build something new.
 
 To use the data in an SAP app, see the help documentation for the app you want to use. For example:

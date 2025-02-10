@@ -111,7 +111,7 @@ For more information, see [Standard Roles Delivered with SAP Datasphere](https:/
     Controls whether objects that are already present in your space can be overwritten during an import.
 
     > ### Note:  
-    > Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants.
+    > Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app.
 
     You can choose between:
 

@@ -1,6 +1,6 @@
 <!-- loio0950746ab4444e5ca6a665ee1b0380a1 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Create or Add a Target Table to Your Transformation Flow
 
@@ -60,24 +60,24 @@ A transformation flow writes data to a target table. You can create a new target
     </td>
     <td valign="top">
     
-    The deployment and error status of the object. For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    The deployment and error status of the object. For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Truncate
+    Delete All Before Loading
     
     </td>
     <td valign="top">
     
-    If the value of the *Truncate* option is *Yes*, when you start the transformation flow, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source table.
+    If the value of the *Delete All Before Loading* option is *Yes*, when you start the transformation flow, the system deletes all of the table content. All of the original individual records are permanently deleted, but the system leaves the table structure intact and fills it with the relevant data from the source table.
 
     If not, the system inserts new data records after the existing data in the target table. For data records that already exist in the target table and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode. Note that the system will only update such target records if the target table has a primary key column.
 
     > ### Note:  
-    > If the target table is a delta capture table, it is not possible to use the truncate function. If the source table is not a delta capture table, and you want to transfer updated data to a target delta capture table, you need to delete the data in the target table, and then run the transformation flow again.
+    > If the target table is a delta capture table, it is not possible to use the *Delete All Before Loading* function. If the source table is not a delta capture table, and you want to transfer updated data to a target delta capture table, you need to delete the data in the target table, and then run the transformation flow again.
 
 
     
@@ -91,7 +91,7 @@ A transformation flow writes data to a target table. You can create a new target
     </td>
     <td valign="top">
     
-    Indicates whether the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    Indicates whether the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/capturing-delta-changes-in-your-local-table-154bdff.md).
 
     If the source table is a delta capture table, then the default value of the *Delta Capture* property for the target table is *On*. If you switch delta capture off for the target table, the system removes the delta capture columns *Change Date* and *Change Type* from the target table. If you switch delta capture on again, the system will add the delta capture columns to the target table. Note that even If the source table does not contain both delta capture columns, the system will add both columns to the target table.
 
@@ -112,7 +112,7 @@ A transformation flow writes data to a target table. You can create a new target
     </td>
     <td valign="top">
     
-    \[read-only\] The delta capture table name. The system displays this field if the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    \[read-only\] The delta capture table name. The system displays this field if the delta capture setting is enabled for the table. For more information, see [Capturing Delta Changes in Your Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/capturing-delta-changes-in-your-local-table-154bdff.md).
     
     </td>
     </tr>
@@ -153,6 +153,6 @@ A transformation flow writes data to a target table. You can create a new target
 
 4.  In the *Columns* section, view the columns of the target table. To check the data type of a column, hover over it and click <span class="FPA-icons-V3"></span>.
 
-    If the delta capture setting is enabled for a table, two additional columns are present in the table to track changes. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    If the delta capture setting is enabled for a table, two additional columns are present in the table to track changes. For more information, see [Capturing Delta Changes in Your Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/capturing-delta-changes-in-your-local-table-154bdff.md).
 
 

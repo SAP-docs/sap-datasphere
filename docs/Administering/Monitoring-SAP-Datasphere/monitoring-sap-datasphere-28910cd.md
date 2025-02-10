@@ -4,7 +4,7 @@
 
 # Monitoring SAP Datasphere
 
-Administrators have access to various monitoring logs and views, and can create database analysis users, if necessary, to help troubleshoot issues.
+Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.
 
 This topic contains the following sections:
 

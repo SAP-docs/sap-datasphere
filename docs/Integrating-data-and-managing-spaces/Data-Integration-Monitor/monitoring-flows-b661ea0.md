@@ -81,6 +81,7 @@ For more information and points to consider when using replication flows, see al
     Indicates the status of the last run of the flow:
 
     -   *Running*: The flow is currently running.
+    -   *Active*: \[Replication Flow only\] A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status Active until it is stopped or paused or an issue occurs.
     -   *Completed*: The flow is completed successfully.
     -   *Failed*: Something goes wrong during the flow run and it could not be completed. Go to the details screen of your flow and check the logs to identify to issue.
     -   *Stopped*: The flow has been stopped by a user.

@@ -12,7 +12,7 @@ When you find an asset that interests you, you can view information about it to 
 
 ## Prerequisites
 
-When you find an asset that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in an SAP Datasphere space or share it externally.
+When you find an asset that interests you, you can view information about it to make sure it’s the right one for your business needs.
 
 You must be assigned one of the following:
 
@@ -69,7 +69,7 @@ For information about sharing files with other users within a source system, see
 
 1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
 
-2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
+2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
 
 3.  When viewing the page for the asset, in the top-right corner, click the *Open* button to open the source file in the source system in a new browser tab.
 
@@ -127,7 +127,7 @@ After you determine the asset is the right one for your needs, you can use it as
 
 1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
 
-2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Finding and Accessing Data in the Catalog](finding-and-accessing-data-in-the-catalog-1047825.md).
+2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
 
 3.  Go to the tab where the application you want is open.
 

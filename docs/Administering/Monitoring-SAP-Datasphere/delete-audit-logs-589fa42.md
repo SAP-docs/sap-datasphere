@@ -2,21 +2,22 @@
 
 # Delete Audit Logs
 
-Delete audit logs and free up disk space.
+Delete audit logs and free up disk storage.
 
-All spaces for which auditing is enabled, are listed in the *Audit Log Deletion* area.
+You can delete audit logs for:
 
-For each space, you can delete separately all the audit log entries recorded for read operations and all the audit log entries recorded for change operations. All the entries recorded before the date and time you specify are deleted.
+-   Spaces for which auditing is enabled. For each space, you can delete separately all the audit log entries recorded for read operations and all the audit log entries recorded for change operations. All the entries recorded before the date and time you specify are deleted.
+-   All read audit logs recorded for all database analysis users. They are grouped together into the audit policy DWC\_ANALYSIS\_USERS\_AUDIT\_ALL.
 
-1.  Go to *System* \> *Configuration* \> *Audit*.
+1.  Go to *System* \> *Configuration* \> *Audit* \> *Audit Log Deletion*.
 
-2.  Select the spaces and the audit policy names \(read or change\) for which you want to delete all audit log entries and click *Delete*.
+2.  Select the spaces \(and the audit policy names - read or change\) or the database analysis user audit policy \(DWC\_ANALYSIS\_USERS\_AUDIT\_ALL\) for which you want to delete all audit log entries and click *Delete*.
 
 3.  Select a date and time and click *Delete*.
 
     All entries that have been recorded before this date and time are deleted.
 
-    Deleting audit logs frees up disk space, which you can see in the *Used Disk* bar of the *Space Management* page.
+    Deleting audit logs frees up disk storage, which you can see in the *Disk Storage Used* card in *System Monitor* \> *Dashboard*.
 
 
 > ### Note:  
