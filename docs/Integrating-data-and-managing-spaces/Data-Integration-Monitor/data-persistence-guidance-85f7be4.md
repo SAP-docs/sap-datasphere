@@ -43,7 +43,7 @@ The Data Persistence Candidate Score is not a specific inherent value but a rank
 
 ![](images/Persist_Guide_3_e85593f.png)
 
-The primary metrics are: the number of sources, the number of targets, the overall number of sources, the number of federated remote tables, and the number of federated remote tables with limited adapter capabilites, and if the view is a SQL script view.
+The primary metrics are: the number of sources, the number of targets, the overall number of sources, the number of federated remote tables, the number of federated remote tables with limited adapter capabilites, number of local tables \(file\), and if the view is a SQL script view.
 
 > ### Note:  
 > The values of the score are relative weighted values determined by the pimary metrics in the lineage graph.

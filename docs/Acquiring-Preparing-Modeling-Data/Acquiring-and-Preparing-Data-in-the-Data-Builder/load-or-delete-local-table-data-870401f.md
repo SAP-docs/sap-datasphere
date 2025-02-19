@@ -45,11 +45,9 @@ Review the matching of columns in your table with those in your CSV file.
 
 Once the load action is completed, you can click on the notification from the notification area to navigate to the detailed log:
 
-![](images/Notification_9d6e4cd.png)
-
 ![](images/Upload_File_log_5789482.png)
 
-Alternatively, you can navigate to the detailed logs via the menu System Monitor -\> Logs:
+Alternatively, you can navigate to the detailed logs via the menu System Monitor -\> Task Logs:
 
 ![](images/System_Monitor_Logs_a191f94.png)
 
@@ -84,535 +82,535 @@ Depending if your local table is delta enabled or not, you will have different o
 
 \[Delta capture table only\] If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed. You also define a retention period.Once this is given, selecting this option allows you to safely delete records already fully-processed according to the retention period you've defined. Default retention period is 90 days.
 
-> ### Note:  
-> You can automate the deletion of those records using a scheduling option within a task chain. ![](images/delete_records_in_a_task_chain_76ac374.png)
+> ### Example:  
+> Today, it's January 13, 2025. I have the following table where 5 records have been marked for deletion. To make it easier, we will consider that all records have been fully-processed by other apps and are candidates for deletion:
 > 
-> > ### Example:  
-> > Today, it's January 13, 2025. I have the following table where 5 records have been marked for deletion. To make it easier, we will consider that all records have been fully-processed by other apps and are candidates for deletion:
-> > 
-> > 
-> > <table>
-> > <tr>
-> > <th valign="top">
-> > 
-> > Employee ID
-> > 
-> > </th>
-> > <th valign="top">
-> > 
-> > Employee Name
-> > 
-> > </th>
-> > <th valign="top">
-> > 
-> > Employee First Name
-> > 
-> > </th>
-> > <th valign="top">
-> > 
-> > Age
-> > 
-> > </th>
-> > <th valign="top">
-> > 
-> > Position
-> > 
-> > </th>
-> > <th valign="top">
-> > 
-> > Change Date
-> > 
-> > </th>
-> > <th valign="top">
-> > 
-> > Change Type
-> > 
-> > </th>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I003963
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > SMITH
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Emma
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 45
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Manager
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > January 2, 2025
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > I
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I005939
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > RIVIERA
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Olivier
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 20
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > September 2, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > I
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I297820
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > SANCHEZ
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Liam
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 32
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > January 2, 2025
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > U
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I205939
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > GONZALEZ
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Olivia
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 18
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > January 2, 2025
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > I
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I133939
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > MARSHALL
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Emily
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 33
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > January 2, 2025
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > D
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I065394
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > DOWN
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Anna
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 39
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Semptember 2, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > I
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I055563
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > JOHNSON
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Jayden
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 46
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > EMPLOYEE
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > October 10, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > I
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I135693
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > WILLIAMS
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Henri
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 50
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > September 2, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > U
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I326981
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > BROWN
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Isabella
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 28
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > September 2, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > I
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I013598
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > JONES
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Noah
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 29
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > November 2, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > D
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I003645
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > MILLER
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Madison
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 36
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > November 2, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > D
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I695313
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > DEVIS
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Amelia
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 34
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Employee
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > October 10, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > D
-> > 
-> > </td>
-> > </tr>
-> > <tr>
-> > <td valign="top">
-> > 
-> > I000036
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > GARCIA
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Chloe
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > 46
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > Manager
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > October 10, 2024
-> > 
-> > </td>
-> > <td valign="top">
-> > 
-> > D
-> > 
-> > </td>
-> > </tr>
-> > </table>
-> > 
-> > Now let's say that I want to delete records marked for deletion for more than 60 days. As a result, 4 on the 5 records that have change type "D"" will be deleted, considering that record “ Marshall” was marked as deleted on January 2, 2025.
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Employee ID
+> 
+> </th>
+> <th valign="top">
+> 
+> Employee Name
+> 
+> </th>
+> <th valign="top">
+> 
+> Employee First Name
+> 
+> </th>
+> <th valign="top">
+> 
+> Age
+> 
+> </th>
+> <th valign="top">
+> 
+> Position
+> 
+> </th>
+> <th valign="top">
+> 
+> Change Date
+> 
+> </th>
+> <th valign="top">
+> 
+> Change Type
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I003963
+> 
+> </td>
+> <td valign="top">
+> 
+> SMITH
+> 
+> </td>
+> <td valign="top">
+> 
+> Emma
+> 
+> </td>
+> <td valign="top">
+> 
+> 45
+> 
+> </td>
+> <td valign="top">
+> 
+> Manager
+> 
+> </td>
+> <td valign="top">
+> 
+> January 2, 2025
+> 
+> </td>
+> <td valign="top">
+> 
+> I
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I005939
+> 
+> </td>
+> <td valign="top">
+> 
+> RIVIERA
+> 
+> </td>
+> <td valign="top">
+> 
+> Olivier
+> 
+> </td>
+> <td valign="top">
+> 
+> 20
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> September 2, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> I
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I297820
+> 
+> </td>
+> <td valign="top">
+> 
+> SANCHEZ
+> 
+> </td>
+> <td valign="top">
+> 
+> Liam
+> 
+> </td>
+> <td valign="top">
+> 
+> 32
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> January 2, 2025
+> 
+> </td>
+> <td valign="top">
+> 
+> U
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I205939
+> 
+> </td>
+> <td valign="top">
+> 
+> GONZALEZ
+> 
+> </td>
+> <td valign="top">
+> 
+> Olivia
+> 
+> </td>
+> <td valign="top">
+> 
+> 18
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> January 2, 2025
+> 
+> </td>
+> <td valign="top">
+> 
+> I
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I133939
+> 
+> </td>
+> <td valign="top">
+> 
+> MARSHALL
+> 
+> </td>
+> <td valign="top">
+> 
+> Emily
+> 
+> </td>
+> <td valign="top">
+> 
+> 33
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> January 2, 2025
+> 
+> </td>
+> <td valign="top">
+> 
+> D
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I065394
+> 
+> </td>
+> <td valign="top">
+> 
+> DOWN
+> 
+> </td>
+> <td valign="top">
+> 
+> Anna
+> 
+> </td>
+> <td valign="top">
+> 
+> 39
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> Semptember 2, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> I
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I055563
+> 
+> </td>
+> <td valign="top">
+> 
+> JOHNSON
+> 
+> </td>
+> <td valign="top">
+> 
+> Jayden
+> 
+> </td>
+> <td valign="top">
+> 
+> 46
+> 
+> </td>
+> <td valign="top">
+> 
+> EMPLOYEE
+> 
+> </td>
+> <td valign="top">
+> 
+> October 10, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> I
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I135693
+> 
+> </td>
+> <td valign="top">
+> 
+> WILLIAMS
+> 
+> </td>
+> <td valign="top">
+> 
+> Henri
+> 
+> </td>
+> <td valign="top">
+> 
+> 50
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> September 2, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> U
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I326981
+> 
+> </td>
+> <td valign="top">
+> 
+> BROWN
+> 
+> </td>
+> <td valign="top">
+> 
+> Isabella
+> 
+> </td>
+> <td valign="top">
+> 
+> 28
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> September 2, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> I
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I013598
+> 
+> </td>
+> <td valign="top">
+> 
+> JONES
+> 
+> </td>
+> <td valign="top">
+> 
+> Noah
+> 
+> </td>
+> <td valign="top">
+> 
+> 29
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> November 2, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> D
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I003645
+> 
+> </td>
+> <td valign="top">
+> 
+> MILLER
+> 
+> </td>
+> <td valign="top">
+> 
+> Madison
+> 
+> </td>
+> <td valign="top">
+> 
+> 36
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> November 2, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> D
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I695313
+> 
+> </td>
+> <td valign="top">
+> 
+> DEVIS
+> 
+> </td>
+> <td valign="top">
+> 
+> Amelia
+> 
+> </td>
+> <td valign="top">
+> 
+> 34
+> 
+> </td>
+> <td valign="top">
+> 
+> Employee
+> 
+> </td>
+> <td valign="top">
+> 
+> October 10, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> D
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> I000036
+> 
+> </td>
+> <td valign="top">
+> 
+> GARCIA
+> 
+> </td>
+> <td valign="top">
+> 
+> Chloe
+> 
+> </td>
+> <td valign="top">
+> 
+> 46
+> 
+> </td>
+> <td valign="top">
+> 
+> Manager
+> 
+> </td>
+> <td valign="top">
+> 
+> October 10, 2024
+> 
+> </td>
+> <td valign="top">
+> 
+> D
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> Now let's say that I want to delete records marked for deletion for more than 60 days. As a result, 4 on the 5 records that have change type "D"" will be deleted, considering that record “ Marshall” was marked as deleted on January 2, 2025.
+
+> ### Note:  
+> You can automate the deletion of those records using a scheduling option within a task chain.
 > 
 > For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 

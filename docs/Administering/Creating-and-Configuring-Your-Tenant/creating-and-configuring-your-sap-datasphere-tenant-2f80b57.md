@@ -220,11 +220,6 @@ Catalog
 </th>
 <th valign="top">
 
-Catalog Storage
-
-</th>
-<th valign="top">
-
 vCPU
 
 </th>
@@ -263,11 +258,6 @@ Australia
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -314,11 +304,6 @@ Not Supported
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 440 \(Memory Performance Class\)
 
 </td>
@@ -357,11 +342,6 @@ Not Supported
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -408,11 +388,6 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 442 \(High Memory Performance Class\)
 
 </td>
@@ -451,11 +426,6 @@ EU Access \(Frankfurt\)
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -502,11 +472,6 @@ Japan \(Tokyo\)
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 440 \(Memory Performance Class\)
 
 </td>
@@ -545,11 +510,6 @@ Singapore
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -596,11 +556,6 @@ Not Supported
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 440 \(Memory Performance Class\)
 
 </td>
@@ -639,11 +594,6 @@ US East
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -696,11 +646,6 @@ Catalog
 </th>
 <th valign="top">
 
-Catalog Storage
-
-</th>
-<th valign="top">
-
 vCPU
 
 </th>
@@ -739,11 +684,6 @@ Supported
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -790,11 +730,6 @@ Supported
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 412 \(Memory Performance Class\)
 
 </td>
@@ -837,7 +772,44 @@ Supported
 </td>
 <td valign="top">
 
-2100 h/month
+412 \(Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+US East
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+27840 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
 
 </td>
 <td valign="top">
@@ -890,11 +862,6 @@ Catalog
 </th>
 <th valign="top">
 
-Catalog Storage
-
-</th>
-<th valign="top">
-
 vCPU
 
 </th>
@@ -937,11 +904,6 @@ Supported
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 412 \(High Memory Performance Class\)
 
 </td>
@@ -980,11 +942,6 @@ Supported
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">
@@ -1036,11 +993,6 @@ Not supported
 </td>
 <td valign="top">
 
-2100 h/month
-
-</td>
-<td valign="top">
-
 204 \(High Memory Performance Class\)
 
 </td>
@@ -1079,11 +1031,6 @@ Supported
 <td valign="top">
 
 20.5 GB/h
-
-</td>
-<td valign="top">
-
-2100 h/month
 
 </td>
 <td valign="top">

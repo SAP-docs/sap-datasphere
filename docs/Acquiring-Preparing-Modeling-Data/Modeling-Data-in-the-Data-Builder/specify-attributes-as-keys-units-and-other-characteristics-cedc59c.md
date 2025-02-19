@@ -189,7 +189,7 @@ Show
 
 \[deprecated\] Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
 
-You can now control the visibility of columns in SAP Analytics Cloud by choosing to include or exclude them in your analytic model \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\).
+Users working in analytic models can, for each measure and attribute, choose whether to include or exclude it in the data exposed to SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). 
 
 > ### Note:  
 > To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.

@@ -27,7 +27,7 @@ An elastic compute node can have the following statuses:
 
 -   *Not Ready* - The node cannot be run because no spaces or objects are assigned to it.
 
--   *Ready* - Spaces or objects are assigned to the node, which can be run, either by starting the run manually or scheduling it.
+-   *Ready* - Spaces or objects are assigned to the node, which can be run, either by starting the run manually or scheduling it. The status displayed in grey indicates that the elastic compute node has never run whereas green indicates that it has already run.
 
 -   *Starting* - You’ve started the elastic compute node manually by clicking the *Start* button or it has been started via a schedule: persisted views and local tables are being replicated and routing is created to the elastic compute node.
 

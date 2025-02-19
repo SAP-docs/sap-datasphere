@@ -55,3 +55,128 @@ You can export a replication flow and import it into another space \(see [Import
 > ### Note:  
 > For you to be able to work with an imported replication flow, a suitable connection has to be available in the space to which you imported the replication flow. \(Connection information is space-dependent and consequently not part of the information that gets exported.\)
 
+
+
+<a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_pn3_1xf_xdc"/>
+
+## Changing the Content Type \(ABAP-Based Source Systems Only\)
+
+When you have created your replication flow, you have choosen a content type \(*Template Type* or *Native Type*\) to load your data and you now want to change it.
+
+For more information, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)
+
+> ### Restriction:  
+> -   You can't change the content type for replication flows created before wave 2025.04.
+> -   Your replication flow can't be in status "Running".
+> -   You must consider the impact on other replication flows that use the same source objects.
+> -   You must be certain about the existing column data types in the existing target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
+> -   Changing the content type selection will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow.
+
+When changing the content type, you must convert some data types to ensure that they are supported by the selected content type:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Data Types
+
+</th>
+<th valign="top">
+
+Native Type
+
+</th>
+<th valign="top">
+
+Template Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Date
+
+</td>
+<td valign="top">
+
+String \(length = native content length\)
+
+</td>
+<td valign="top">
+
+Date
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Time
+
+</td>
+<td valign="top">
+
+String \(length = native content length\)
+
+</td>
+<td valign="top">
+
+Time
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+String \(length = native content length\)
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Timestamp
+
+</td>
+<td valign="top">
+
+Decimal \(Precision = abapLength, scale = abapDecimals\)
+
+</td>
+<td valign="top">
+
+Timestamp
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Raw
+
+</td>
+<td valign="top">
+
+Binary
+
+</td>
+<td valign="top">
+
+String/Binary
+
+</td>
+</tr>
+</table>
+

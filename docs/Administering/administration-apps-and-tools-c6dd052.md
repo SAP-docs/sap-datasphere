@@ -391,17 +391,17 @@ Allocate the capacity units to storage and compute resources for your tenant.
 <tr>
 <td valign="top">
 
-*Unified Customer Landscape*
+*Business Data Products*
 
 </td>
 <td valign="top">
 
-Prepare a connection generated from an SAP BTP Unified Customer Landscape formation to allow its use in selected spaces.
+Select spaces to which SAP Business Data Cloud data products from an activated data package can be installed.
 
 </td>
 <td valign="top">
 
-[Defining Allowed Spaces for Unified Customer Landscape Connections](Preparing-Connectivity/defining-allowed-spaces-for-unified-customer-landscape-connections-67ec785.md)
+[Authorize Spaces to Install SAP Business Data Cloud Data Products](Preparing-Connectivity/authorize-spaces-to-install-sap-business-data-cloud-data-products-67ec785.md)
 
 </td>
 </tr>

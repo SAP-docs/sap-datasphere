@@ -23,22 +23,24 @@ To identify source changes for several remote tables sharing the same connection
 
 ## Procedure
 
-1.  Click <span class="FPA-icons-V3"></span> Validate Remote Tables.
+1.  Click <span class="FPA-icons-V3"></span> → Validate Remote Tables.
 
 2.  From the windows *Validate Remote Tables*, select the relevant source connection and then the remote tables you want to check, and click *Validate*:
 
-    ![](images/ValidateRemoteTables_d882b35.jpg)
+    ![](images/ValidateRemoteTables_d882b35.png)
 
     > ### Note:  
     > From the *Repository Explorer*, if you have remote tables in several spaces, you will be prompted to select a space.
 
     SAP Datasphere will compare the source and the target remote tables, and will refresh the status: Remote tables with incompatible changes will get the status *Runtime Error* \(for example a column has been removed\), whereas remote tables with compatible changes will get the status *Changes to Deploy* \(for example a non-key column has been added\). Remote tables that are not deployed at this time and have any changes in the source will get the status *Design Time Error*.
 
+    ![](images/Validate_Remote_Tables_Change_to_deploy_3acb594.png)
+
 3.  To apply the changes, open the remote table in the table editor.
 
     The editor automatically opens a window to allow you to proceed with the changes:
 
-    ![](images/Refresh_MassValidation_b399f2c.jpg)
+    ![](images/Refresh_MassValidation_b399f2c.png)
 
     The object status set by *Validate Remote Tables* is only an indicator that a certain remote table requires action in the *Table Editor*. As there may be a delay between the *Validate* action and the time you enter into *Table Editor* screen, it is required to proceed with the *Refresh* action in the *Table Editor* to integrate the actual source changes in your remote table.
 

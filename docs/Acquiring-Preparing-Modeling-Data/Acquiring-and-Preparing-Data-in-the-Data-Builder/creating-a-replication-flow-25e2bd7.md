@@ -162,6 +162,33 @@ For more information about available connection types, sources, and targets, see
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Content Type
+    
+    </td>
+    <td valign="top">
+    
+    \[only relevant for ABAP-based source systems\]. Select the best content type to use when loading data from an ABAP-based system.
+
+    You can choose between 2 content types:
+
+    -   *Template Type*: The data types used in the source table will be applied in the target table.
+    -   *Native Type* \(default\): Different data types will be applied to the target table. A string data type will be used for the date column in the target table, and a decimal data type will be used for the timestamp column to the target table.
+
+    > ### Example:  
+    > Your source table contains a date column that doesn't have values in ISO format. If you select the content type *Template Type* your replication flow run will fail with an error because the target table will expect data in ISO format. You'd better select the *Native Type* to run the replication flow, so that the data type will be turned into string.
+
+    > ### Note:  
+    > -   This option is available only for replication flows created from wave 2025.04.
+    > -   It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
+    > -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify a Replication Flow](modify-a-replication-flow-a24c71f.md).
+
+
+    
+    </td>
+    </tr>
     </table>
     
 3.  Select a target connection and target container \(see [Add the Target for a Replication Flow](add-the-target-for-a-replication-flow-ab490fb.md)\).

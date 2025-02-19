@@ -28,7 +28,7 @@ The *Source Browser* is available in the left panel in each of these editors, an
         -   *Favorites* - Objects that you have favorited
 
     -   Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\). 
-        -   As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it.
+        -   If you've searched for objects before, clicking in the search field shows a list of recently entered searches. As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it. 
 
         -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 

@@ -20,7 +20,9 @@ Or you must be assigned a custom role with the following settings:
 -   *Create*, *Read*, *Update*, and *Delete* permissions for *Space Files* and *Data Warehouse Remote Connection*
 -   *Read* and *Update* for *Data Warehouse Data Integration* and *Data Warehouse Data Builder*
 
-From the <span class="SAP-icons-V5"></span>\(*Catalog*\) search page, you can select the *Data Providers* filter to show only data providers. On each card, you'll see the data provider's name and a short description. You can select a data provider to see a page that shows their profile information. This information includes all legally required and additional information, such as company and contact information and general information about the data products offered, including the industry your data products belong to and the SAP applications that are related to your data products.
+The *Marketplace Data Products* and *Data Providers* tabs are only available in the SAP Datasphere catalog.
+
+From the catalog search page, you can select the *Data Providers* filter to show only data providers. On each card, you'll see the data provider's name and a short description. You can select a data provider to see a page that shows their profile information. This information includes all legally required and additional information, such as company and contact information and general information about the data products offered, including the industry your data products belong to and the SAP applications that are related to your data products.
 
 Data provider profiles are managed by the data provider themselves or by a content aggregator.
 

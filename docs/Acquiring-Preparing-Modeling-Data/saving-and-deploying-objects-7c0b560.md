@@ -11,6 +11,7 @@ This topic contains the following sections:
 -   [Create a Copy of an Object](saving-and-deploying-objects-7c0b560.md#loio7c0b560e2cb94eea86219d78d87f9623__section_create_a_copy)
 -   [Preview Data](saving-and-deploying-objects-7c0b560.md#loio7c0b560e2cb94eea86219d78d87f9623__section_preview_data)
 -   [Deploy Objects](saving-and-deploying-objects-7c0b560.md#loio7c0b560e2cb94eea86219d78d87f9623__section_deploy_objects)
+-   [Debug View Deployment Issues with the View Analyzer](saving-and-deploying-objects-7c0b560.md#loio7c0b560e2cb94eea86219d78d87f9623__section_debug_deploy_views)
 -   [Save Anyway and Deploy Anyway](saving-and-deploying-objects-7c0b560.md#loio7c0b560e2cb94eea86219d78d87f9623__section_save_anyway)
 -   [Run-Time Database Unavailable](saving-and-deploying-objects-7c0b560.md#loio7c0b560e2cb94eea86219d78d87f9623__section_database_unavailable)
 
@@ -59,6 +60,16 @@ The following types of object are automatically deployed upon creation and immed
 
 -   Remote tables imported into the repository from a source system, database user schema or HDI container \(see [Importing Tables and Views from Sources](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)\).
 -   Tables created by importing data from a `*.csv` file \(see [Creating a Local Table from a CSV File](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)\).
+
+
+
+<a name="loio7c0b560e2cb94eea86219d78d87f9623__section_debug_deploy_views"/>
+
+## Debug View Deployment Issues with the View Analyzer
+
+If your view contains very complex calculations or subqueries, includes multiple unions of large views, or has a complicated or deep dependency tree, then you may encounter performance issues \(or even, very occasionally, out of memory errors\) when deploying.
+
+In such situations, you may be able to improve deployment performance or resolve the errors by persisting one or more of your view's sources. We recommend that you use the *View Analyzer* and look at the peak memory usage and duration values to guide you in these decisions \(see [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:\).
 
 
 

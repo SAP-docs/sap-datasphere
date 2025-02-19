@@ -519,6 +519,30 @@ See [Importing SAP and Partner Business Content from the Content Network](https:
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Cloud Data Product*
+
+</td>
+<td valign="top">
+
+`(------S)`
+
+</td>
+<td valign="top">
+
+-   *Share*: Use with *Catalog Asset* with *Read* permission to:
+    -   Share an SAP Business Data Cloud with external users.
+    -   View the sharing details of the data product.
+    -   Edit the authorized users who the data product is shared with.
+    -   Delete or remove the sharing access for the data product.
+
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -693,6 +717,9 @@ Allows access to the *Data Integration Monitor* app:
 > -   To start the *View Analyzer* in the *Views* monitor.
 > 
 > See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
+
+> ### Note:  
+> To run and schedule flows, you must have the privilege *Data Warehouse Data Integration* with *Read*, *Update* and *Execute* permissions.
 
 
 

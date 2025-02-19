@@ -179,7 +179,7 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
 4.  Click *Next* and enter the following information about the SAP Datasphere system owner, who will be notified when the service instance is created: *First Name*,*Last Name*, *Email*, and *Host Name*.
 
     > ### Note:  
-    > Alternatively, you can use a JSON file to provide the information above.
+    > Alternatively, you can use a JSON file to provide the information above. See [Create an API Access Configuration JSON File](create-an-api-access-configuration-json-file-703912a.md).
 
 5.  Click *Next* to go to the final page of the wizard where you can review your selections, and then click *Create* to exit the wizard.
 

@@ -13,7 +13,6 @@ This topic contains the following sections:
 -   [Use Cases for Editing a Connection](edit-a-connection-ba20892.md#loioba20892f25744b86a62ae571e3ea6ead__section_connection_editing_use_cases)
 -   [Restrictions When Editing Connections](edit-a-connection-ba20892.md#loioba20892f25744b86a62ae571e3ea6ead__section_connection_editing_restrictions)
 -   [Edit a Connection](edit-a-connection-ba20892.md#loioba20892f25744b86a62ae571e3ea6ead__section_connection_editing)
--   [Edit a Connection to a System Integrated via Unified Customer Landscape](edit-a-connection-ba20892.md#loioba20892f25744b86a62ae571e3ea6ead__section_connection_editing_UCL)
 -   [Add a Connection to a Package](edit-a-connection-ba20892.md#loioba20892f25744b86a62ae571e3ea6ead__section_connection_adding_package)
 
 
@@ -41,17 +40,6 @@ You need to edit connections in various cases, for example:
     For an existing connection that has been created before the connection type supported a new feature, you must re-enter the credentials before you can use the new feature.
 
 -   When you want to change the business name or description
-
--   For connections to systems integrated via Unified Customer Landscape: When you want to change the business name
-
--   For connections to systems integrated via Unified Customer Landscape: When you need to connect or re-connect to a remote system, for example:
-
-    -   when the previously connected remote system has been excluded from the formation in Unified Customer Landscape and you need to connect to another remote system in the same formation
-
-    -   when there's other reasons why you need to connect to another remote system in the same formation, for example to change the connection to a test system to a connection to a production system
-
-    -   when the connection has been imported into the tenant
-
 
 
 
@@ -89,12 +77,6 @@ Consider the following when editing a connection which uses a Data Provisioning 
 
 
 
-### Connections to Systems Integrated via Unified Customer Landscape
-
-You can only edit the business name, or you can connect to another remote system available in the formation that includes your SAP Datasphere tenant and the previously connected remote system.
-
-
-
 <a name="loioba20892f25744b86a62ae571e3ea6ead__section_connection_editing"/>
 
 ## Edit a Connection
@@ -113,40 +95,6 @@ You can only edit the business name, or you can connect to another remote system
 5.  Click *Save*.
 
 6.  Select the connection and click *Validate* to receive detailed status information.
-
-
-
-
-<a name="loioba20892f25744b86a62ae571e3ea6ead__section_connection_editing_UCL"/>
-
-## Edit a Connection to a System Integrated via Unified Customer Landscape
-
-Background: If a remote system has been integrated with SAP Datasphere with a formation in the Unified Customer Landscape, the corresponding connection has been generated in SAP Datasphere. After an administrator allows the connection for your space, and an integrator adds it, you can edit the connection.
-
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Connections*\) and select a space if necessary.
-
-2.  Select the relevant connection and click *Edit*.
-
-    > ### Tip:  
-    > If there is no remote system connected, for example because the remote system has been removed from the formation in Unified Customer Landscape, the connection is highlighted in the connections list. You can click the warning button on the top right corner of the app to see a corresponding message.
-
-3.  Make the required changes:
-
-    -   Change the business name of the connection.
-
-    -   Connect to another remote system. To do so, select the corresponding generated connection in the *Connect With:* dropdown.
-
-        > ### Note:  
-        > You can only see and select generated connections in the drop down if the following two conditions are met:
-        > 
-        > -   The remote system used in the generated connection is included in the same formation in which the originally connected system was included.
-        > 
-        > -   An administrator has allowed adding the connection to your space \(see [Defining Allowed Spaces for Unified Customer Landscape Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "For remote systems that are integrated with SAP Datasphere in the Unified Customer Landscape, connections are generated in SAP Datasphere. These generated connections are not assigned to any spaces yet. In the Configuration tool, users with an administrator role can control which spaces users with an integrator role can add the connection to. Once added to a space, space users can use the connection to replicate data with replication flows from the remote systems.") :arrow_upper_right:\).
-
-
-4.  Click *Save*.
-
-5.  Select the connection and click *Validate* to receive detailed status information.
 
 
 

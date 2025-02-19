@@ -43,7 +43,7 @@ There are different ways to add dimensions:
 
 4.  To edit the properties of a dimension: Click on the dimension of the canvas to show its properties in the side panel. You can make the following changes here:
 
-    -   You can change the business name of the dimension, the technical name, and the technical name of the sttribute.
+    -   You can change the business name of the dimension, the technical name, and the technical name of the attribute.
     -   You can add or deselect associated dimensions.
     -   You can add or deselect attributes.
     -   You can specify a custom prefix or suffix for the technical name of attributes. For more information, see [Add a Prefix or a Suffix to Dimension Attributes](add-a-prefix-or-a-suffix-to-dimension-attributes-0373c60.md).

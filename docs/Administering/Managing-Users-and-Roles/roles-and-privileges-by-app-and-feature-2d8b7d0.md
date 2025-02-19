@@ -168,6 +168,8 @@ See [Governing and Publishing Data in the Catalog](https://help.sap.com/viewer/9
 
 -   *Catalog Log* \(-R------\)
 
+-   *Cloud Data Product* \(------S\)
+
 
 
 
@@ -176,7 +178,7 @@ See [Governing and Publishing Data in the Catalog](https://help.sap.com/viewer/9
 
 *Catalog Administrator*
 
-*Catalog User* \(read-only access for all privileges, except no access for *Catalog System* and *Catalog Log*\)
+*Catalog User* \(read-only access for all privileges, except no access for *Catalog System*, *Catalog Log*, and *Cloud Data Product*\)
 
 In addition, the following sub-tools require the *Catalog Administrator* role:
 
@@ -1099,7 +1101,7 @@ Assets
 
 Edit the name of the asset that appears in the catalog.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1120,7 +1122,7 @@ Assets
 
 Add a catalog description for the asset.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1141,7 +1143,7 @@ Assets
 
 Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1248,7 +1250,7 @@ Tags
 
 Add a tag relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "You can help catalog users quickly find the data and assets by editing edit the name and descriptions for the assets and add relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1765,6 +1767,69 @@ Data Warehouse Remote Connection: `(CRUD----)`
 Data Warehouse Data Integration: `(-RU-----)`
 
 Data Warehouse Data Builder: `(CRU-----)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Business Data Cloud Data Products
+
+</td>
+<td valign="top">
+
+Search for an SAP Business Data Cloud data product and view the detailed information for it.
+
+See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.") :arrow_upper_right:.
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R------)` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Business Data Cloud Data Products
+
+</td>
+<td valign="top">
+
+Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.") :arrow_upper_right:.
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R------)`
+
+Spaces: `(-R------)`
+
+Space Files: `(CRUD----)`
+
+Data Warehouse Data Builder: `(CRU-----)`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Business Data Cloud Data Products
+
+</td>
+<td valign="top">
+
+Search for an SAP Business Data Cloud data product, view the detailed information for it, and share it with external users.
+
+See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.") :arrow_upper_right:.
+
+</td>
+<td valign="top">
+
+Catalog Asset: `(-R------)`
+
+Cloud Data Product: `(------S)`
 
 </td>
 </tr>

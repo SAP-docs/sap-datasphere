@@ -25,7 +25,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
 > ### Note:  
-> SAP Datasphere is integrated into SAP Cloud ALM for health monitoring, which enables you to check the health of your one or more SAP Datasphere tenants from the *Health Monitoring* app in SAP Cloud ALM. See [Health Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/health-monitoring) in the *SAP Cloud ALM - Application Help*.
+> SAP Datasphere is integrated into SAP Cloud ALM for health monitoring, which enables you to check the health of one or more SAP Datasphere tenants from the *Health Monitoring* app in SAP Cloud ALM. See [Health Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/health-monitoring) in the *SAP Cloud ALM - Application Help*.
 
 
 
@@ -85,7 +85,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
     </td>
     <td valign="top">
     
-    Shows the total amount of disk storage used in all spaces, out of the total amount of disk storage assigned to all spaces. You can see a breakdown of this amount in the card *Disk Storage Used*.
+    Shows the total amount of disk storage out of the total amount of disk storage. You can see a breakdown of this amount in the card *Disk Storage Used*.
     
     </td>
     </tr>
@@ -97,31 +97,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
     </td>
     <td valign="top">
     
-    Shows the total amount of memory storage used in all spaces, out of the total amount of memory storage assigned to all spaces.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Disk Assigned to Spaces for Storage*
-    
-    </td>
-    <td valign="top">
-    
-    Shows the total amount of disk storage assigned to all spaces.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Memory Assigned to Spaces for Storage*
-    
-    </td>
-    <td valign="top">
-    
-    Shows the total amount of memory storage assigned to all spaces.
+    Shows the total amount of memory storage out of the total amount of memory storage.
     
     </td>
     </tr>

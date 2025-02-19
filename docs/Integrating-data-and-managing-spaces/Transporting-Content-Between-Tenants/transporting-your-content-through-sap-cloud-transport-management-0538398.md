@@ -70,6 +70,8 @@ Once the import is completed, you see the content of the package available in it
 
 > ### Note:  
 > The user who uploaded the package must be a member of the target tenant.
+> 
+> The authentication method \(defined by the tenant owner\) must be the same on the source and on the target tenant. If the selected method is single sign-on \(SSO\), make sure to define the same user attribute for the source and the target tenant. For more information on authentication methods, see [Configuring Identity Provider Settings](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/48b5c8b637a54fa491594272941855b9.html "By default, SAP Cloud Identity Authentication is used by SAP Datasphere. We also support single sign-on (SSO), using your identity provider (IdP).") :arrow_upper_right:.
 
 
 
@@ -77,8 +79,8 @@ Once the import is completed, you see the content of the package available in it
 
 In case of import failure, you can access the logs to investigate the error by adding this endpoint to the target tenant URL in your browser:
 
-`{TenantURL}/contentmanager/v4/jobs/{ProcessID}?brief=false` 
+`{TenantURL}/contentmanager/v4/jobs/{ContentReferenceID}?brief=false` 
 
 > ### Note:  
-> The Process ID is retrieved from the SAP Cloud Transport Management import logs.
+> The Content Reference ID is retrieved from the SAP Cloud Transport Management import logs.
 

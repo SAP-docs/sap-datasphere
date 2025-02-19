@@ -163,6 +163,8 @@ For example, if an object has primary key columns `ID` and `Language` no record 
 </tr>
 </table>
 
+For information about working with keys, see [Set Key Columns to Uniquely Identify Records](Modeling-Data-in-the-Data-Builder/set-key-columns-to-uniquely-identify-records-d9ef2c9.md).
+
 
 
 <a name="loioed4063dc7f53436d806ea48f2fd3949a__section_hierarchies"/>
@@ -215,6 +217,12 @@ For example, if a hierarchy node `A` has a parent node `B`, then it may not also
 </tr>
 </table>
 
+For information about working with hierarchies, see:
+
+-   [Create an External Hierarchy for Drill-Down](Modeling-Data-in-the-Data-Builder/create-an-external-hierarchy-for-drill-down-dbac7a8.md)
+-   [Create a Hierarchy with Directory](Modeling-Data-in-the-Data-Builder/create-a-hierarchy-with-directory-36c39ee.md)
+-   [Add a Hierarchy to a Dimension](Modeling-Data-in-the-Data-Builder/add-a-hierarchy-to-a-dimension-218b7e6.md)
+
 
 
 <a name="loioed4063dc7f53436d806ea48f2fd3949a__section_data_types"/>
@@ -252,4 +260,6 @@ For example, if a column `A` is specified as having a data type `Date`, and SAP 
 </td>
 </tr>
 </table>
+
+For information about working with data types, see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
 

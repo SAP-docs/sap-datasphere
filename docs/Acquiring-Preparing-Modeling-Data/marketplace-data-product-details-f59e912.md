@@ -25,7 +25,9 @@ You also must be assigned as a member user for one or more spaces and be a membe
 > ### Note:  
 > If a data product is delivered using the Open SQL delivery mode, you must have access to a space and an Open SQL schema with credentials that you can share with the data provider.
 
-From the <span class="SAP-icons-V5"></span>\(*Catalog*\) search page, you can select the *Marketplace Data Products* filter to show only market place data products. A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs. SAP and partners produce other data products that can be acquired from the SAP Datasphere Marketplace. You can become a data provider and use the marketplace to package and publish your own data products for distribution within your organization, to business partners, or to all SAP Datasphere users.
+The *Marketplace Data Products* and *Data Providers* tabs are only available in the SAP Datasphere catalog.
+
+From the catalog search page, you can select the *Marketplace Data Products* filter to show only market place data products. A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs. SAP and partners produce other data products that can be acquired from the SAP Datasphere Marketplace. You can become a data provider and use the marketplace to package and publish your own data products for distribution within your organization, to business partners, or to all SAP Datasphere users.
 
 For each data product, you'll see the a preview of the data product, including its name, data type, and a short summary. When you find a data product that might suit your needs, select it to view its details page that provides many different types of information about it. This information can include a preview of its pricing information, marketing description and images, terms of use, and more.
 
