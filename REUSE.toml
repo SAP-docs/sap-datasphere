@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "sap-datasphere"
+SPDX-PackageSupplier = "Venet Cindy (cindy.venet@sap.com)"
+SPDX-PackageDownloadLocation = "https://github.com/sap-docs/sap-datasphere"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 SAP SE or an SAP affiliate company and sap-datasphere contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
