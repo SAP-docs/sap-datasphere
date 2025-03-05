@@ -298,7 +298,7 @@ Enter the name of the message server to which you want to connect to.
 </td>
 <td valign="top">
 
-Enter the message server port.
+Enter the message server port \(numerical\).
 
 </td>
 </tr>
@@ -436,7 +436,7 @@ Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
 > ### Note:  
-> When you select *Derive Virtual Host and Port from Connection Details* for ABAP-based connections, virtual port is set to ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
+> If the *SAP Logon Connection Type* for your connection is *Application Server*: When you select *Derive Virtual Host and Port from Connection Details* for ABAP-based connections, virtual port is set to ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
 
 
 
@@ -463,6 +463,13 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
+
+> ### Note:  
+> -   If the *SAP Logon Connection Type* for your connection is *Application Server*: Enter ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
+> 
+> -   If the *SAP Logon Connection Type* for your connection is *Message Server*: Enter a numerical port and make sure it is the port defined in the Cloud Connector configuration.
+
+
 
 </td>
 </tr>

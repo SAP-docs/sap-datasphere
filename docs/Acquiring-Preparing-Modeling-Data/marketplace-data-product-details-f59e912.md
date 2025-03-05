@@ -4,40 +4,19 @@
 
 # Marketplace Data Product Details
 
-You can use the catalog to discover marketplace data products for your business needs. When you find one that interests you, review its detailed information, such as its lifecycle status, price, supporting documentation, and more.
+If you're interested in a data product, review its detailed information, such as its lifecycle status, price, supporting documentation, and more.
 
 
 
-To search for and view the details of a data product, you must be assigned one of the following roles:
-
--   DW Viewer
--   DW Modeler
--   DW Integrator
-
-Or you must be assigned a custom role with the following settings:
-
--   *Read* permission for *Spaces*
--   *Create*, *Read*, *Update*, and *Delete* permissions for *Space Files* and *Data Warehouse Remote Connection*
--   *Create*, *Read*, and *Update* for *Data Warehouse Data Integration* and *Data Warehouse Data Builder*
-
-You also must be assigned as a member user for one or more spaces and be a member of one or more contexts.
-
-> ### Note:  
-> If a data product is delivered using the Open SQL delivery mode, you must have access to a space and an Open SQL schema with credentials that you can share with the data provider.
-
-The *Marketplace Data Products* and *Data Providers* tabs are only available in the SAP Datasphere catalog.
-
-From the catalog search page, you can select the *Marketplace Data Products* filter to show only market place data products. A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs. SAP and partners produce other data products that can be acquired from the SAP Datasphere Marketplace. You can become a data provider and use the marketplace to package and publish your own data products for distribution within your organization, to business partners, or to all SAP Datasphere users.
-
-For each data product, you'll see the a preview of the data product, including its name, data type, and a short summary. When you find a data product that might suit your needs, select it to view its details page that provides many different types of information about it. This information can include a preview of its pricing information, marketing description and images, terms of use, and more.
+The catalog search results provides high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, select it to view its details page that provides many different types of information about it. This information can include a preview of its pricing information, marketing description and images, terms of use, and more.
 
 For example, when a data modeler reviews the details of a data product, they can review the pricing and installation information and review the terms of use and other supplemental documents.
 
-After reviewing the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space. See [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md).
+After you review the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space \(see [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md)\).
 
 
 
-You can review the header to get high-level information about the data product.
+To get high-level information about the data product, review the header section.
 
 **Data Product Details Header**
 
@@ -93,6 +72,18 @@ Provider
 <td valign="top">
 
 Displays the name of the data provider and contact information.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Content Aggregator
+
+</td>
+<td valign="top">
+
+Displays the content aggregator's name. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -393,7 +384,7 @@ Content Aggregator
 </td>
 <td valign="top">
 
-Displays the content aggregator's name. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+Displays the content aggregator's name. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -622,7 +613,7 @@ The number in brackets indicates the total number of objects in the container th
 The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains assets that either appear in the lineage or impact the analyzed object. If an asset is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
--   A :package: data product. The data product is visible if you are a member of the context associated with the data product or if you are a member of the space where the data set has been installed and have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
+-   A :package: marketplace data product. The data product is visible if you are a member of the context associated with the data product or if you are a member of the space where the data set has been installed and have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -633,9 +624,9 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 
 \(4\) Authorized Object
 
-\(5\) Unauthorized Object
+\(5\) Analyzed Object
 
-\(6\) Analyzed Object
+\(6\) Unauthorized Object
 
 </td>
 <td valign="top">
@@ -649,9 +640,9 @@ Authorized and unauthorized objects appear in the lineage or impact of the analy
     -   For datasets, click a link that generates a remote table or view it in the different spaces where the data product has been installed.
 
 
--   Unauthorized objects are unpublished assets or datasets or are objects that you do not have access permission to in the source system. They are represented with the :lock: icon.
-
 -   The analyzed object appears as a light blue object. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(Story\) or <span class="FPA-icons-V3"></span> \(Transformation\)\).
+
+-   Unauthorized objects are unpublished assets or datasets or are objects that you do not have access permission to in the source system. They are represented with the :lock: icon.
 
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.

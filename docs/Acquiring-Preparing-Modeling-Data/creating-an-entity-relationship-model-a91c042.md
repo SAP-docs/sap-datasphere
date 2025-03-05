@@ -305,6 +305,20 @@ The work that you do in an E/R model benefits all the users in your space as the
     <tr>
     <td valign="top">
     
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](reviewing-and-restoring-object-versions-4f717cc.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Details
     
     </td>

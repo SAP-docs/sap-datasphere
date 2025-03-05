@@ -4,7 +4,7 @@
 
 # Evaluating and Accessing Catalog Assets
 
-When you find an asset that interests you, you can view information about it to make sure it's the right one for your business needs. You can then choose to view or edit the asset in more details in its source system or use it in a data project.
+Use the catalog *Assets* collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.
 
 
 
@@ -12,19 +12,17 @@ When you find an asset that interests you, you can view information about it to 
 
 ## Prerequisites
 
-When you find an asset that interests you, you can view information about it to make sure it’s the right one for your business needs.
+To search for and evaluate objects in the *Assets* collection, you must have a global role that grants you the following privileges:
 
-You must be assigned one of the following:
+-   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
+-   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
+-   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
+-   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 
--   The *Catalog User* role.
+The *Catalog User* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
--   A custom role with the *Read* permission for *Catalog Asset*.
-
-
-
-    > ### Note:  
-    > To see the details of any terms, tags, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
-
+> ### Tip:  
+> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with a catalog administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
 
 <a name="concept_pm1_qqv_zcc"/>
 
@@ -32,11 +30,11 @@ You must be assigned one of the following:
 
 ## Evaluating an Asset
 
-On the catalog search page, you can use the filters or the search to discover assets that can help you with your business goals.
+An asset is any data or analytic object that is available in the catalog. For example, a local table or view sourced from SAP Datasphere or a story from SAP Analytics Cloud. From the catalog search page, select the *Assets* collection to show only assets, and then select one or more filters to narrow the search results.
 
-To know for sure if an asset will met your needs, you can view its details and evaluate how it can help you. Some of the information that you will be reviewing includes metadata extracted from the source system, like the name and description. Other information are data enrichments, like links to glossary terms, KPIs, and tags, that were added to the asset in the catalog. For more information on the detailed information that you can review, see [Catalog Asset Details](catalog-asset-details-afccc58.md).
+To know for sure if an asset will meet your needs, you can view its details and evaluate how it can help you. Some of the information that you will be reviewing includes metadata extracted from the source system, like the name and description. Other information are data enrichments, like links to glossary terms, KPIs, and tags, that were added to the asset in the catalog \(see [Catalog Asset Details](catalog-asset-details-afccc58.md)\).
 
-After you've evaluated and found an asset, use the following steps to view or edit the asset or use the asset in a data project.
+After you've evaluated and found an asset, use the following steps to view or edit the asset in its source system or use the asset in a data project.
 
 <a name="task_x4m_cny_3wb"/>
 
@@ -67,9 +65,9 @@ For information about sharing files with other users within a source system, see
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
-2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
+2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
 3.  When viewing the page for the asset, click the *Open* button to open the source file in the source system in a new browser tab. If you don't see the *Open* button, it might be available by clicking <span class="FPA-icons-V3"></span> \(Additional Options\).
 
@@ -125,9 +123,9 @@ After you determine the asset is the right one for your needs, you can use it as
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
-2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
+2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
 3.  Go to the tab where the application you want is open.
 

@@ -41,6 +41,14 @@ Use real-time replication to copy the data changes from your source object in re
 
     -   ODP-CDS: For all ABAP CDS views with primary key and that are delta-enabled
 
+        > ### Note:  
+        > If you apply filters to replicate your remote table, you must apply them on primary key fields only. Indeed, delete operations on ABAP CDS Views are only recorded with their key fields in the Operational Delta Queue \(ODQ\), but no content is recorded for other field types. In case of filtering on non-key fields, there is strong risk that deletions are not propagated consistently to the target remote table.
+        > 
+        > For more information, see:
+        > 
+        > -   \[CDS based data extraction – Part II Delta Handling. See [SAP Blogs](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/)\]: "In case of a DELETE operation the job generates an empty record with just the key field\(s\) filled, sets the deletion indicator and hands them over to ODQ".
+        > -   [2930269](https://me.sap.com/notes/2930269)"Question1: How the deleted record looks like during delta load?"
+
     -   ODP-SAPI: For all extractors that are delta enabled \(delta method ADD\* not allowed\) and have a primary key. For more information, see [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/8308e6d301d54584a33cd04a9861bc52/b7a5b8b72d3643b7a8ecf4cd695e0791.html).
 
         See the blog [Finding the right CDS Extractor in SAP S/4HANA](https://blogs.sap.com/2022/01/07/finding-the-right-cds-extractor-in-sap-s-4hana/) \(published in January 2022\).

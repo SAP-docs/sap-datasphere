@@ -23,11 +23,7 @@ If your organization has extended the SAP Business Data Cloud tables exposed via
 
     In this example, two data products are consumed by views and eventually exposed via analytic models:
 
-    ![](images/Extending_insight_application_diagram_-_first_step_c34c5a7.png)
-
-    ![](images/Extending_insight_application_diagram_-_first_step_c34c5a7.png)
-
-    ![](images/Extending_Data_Products_-_first_step_2025_03_e3a9436.pptx)
+    ![](images/Extending_Data_Products_-_first_step_2025_03_e3a9436.png)
 
 2.  Request a user with the **DW Administrator** role \(or equivalent privileges\) to copy each of these spaces. This will create editable versions of all objects by removing them from the protective namespace, transforming `sap.s4.entity` technical names to `sap_s4_entity`.
 
@@ -37,7 +33,7 @@ If your organization has extended the SAP Business Data Cloud tables exposed via
 
     ![](images/Extending_insight_application_diagram_-_second_step_763ba40.png)
 
-3.  A user with the**DW Modeler** role \(or equivalent privileges\) adjusts the sources of all the relevant objects, so that they now consume the data products or views in the copied spaces.
+3.  A user with the*DW Modeler* role \(or equivalent privileges\) adjusts the sources of all the relevant objects, so that they now consume the data products or views in the copied spaces.
 
     For more information, see [Replace a Source](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/51cc5a70a95e46a7aadbe49512b18ddb.html).
 

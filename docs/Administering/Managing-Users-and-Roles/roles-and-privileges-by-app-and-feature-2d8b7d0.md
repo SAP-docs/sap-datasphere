@@ -145,7 +145,7 @@ All roles except *DW Consumer*
 <tr>
 <td valign="top">
 
-<span class="SAP-icons-V5"></span>\(*Catalog*\)
+<span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)
 
 See [Governing and Publishing Data in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "Users with a catalog administrator role are responsible for connecting source systems to the catalog and monitoring those systems, and for enriching, classifying, and publishing objects extracted from these systems as catalog assets.") :arrow_upper_right:
 
@@ -203,7 +203,7 @@ See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f83607
 
 -   *Space Files* \(CRUD----\)
 
--   *Data Warehouse Remote Connection* \(CRUD--S-\)
+-   *Data Warehouse Connection* \(CRUD--S-\)
 
 -   *Data Warehouse Data Integration* \(-RU-E---\)
 
@@ -367,7 +367,7 @@ The following features need additional permissions \(which are included in the *
 
 -   Upload data in a local table - *Data Warehouse Consumption.Update* or *Data Warehouse Data Integration.Update*
 -   Access the local table *Data Editor* screen - *Data Warehouse Data Builder.Update*
--   See remote objects in *Data Builder* editors - *Data Warehouse Remote Connection.Read*
+-   See remote objects in *Data Builder* editors - *Data Warehouse Connection.Read*
 
 The following features need additional permissions \(which are included in the *DW Integrator* role\):
 
@@ -401,7 +401,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\)
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -442,7 +442,7 @@ See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc614
 </td>
 <td valign="top">
 
-*Data Warehouse Remote Connection* \(CRUD--S-\)
+*Data Warehouse Connection* \(CRUD--S-\)
 
 The following feature needs an additional permission \(which is included in the *DW Administrator* role\):
 
@@ -581,7 +581,7 @@ The sub-tools require the following permissions:
 -   *Users*: *User* \(CRUD---M\)
 -   *Roles*: *Role* \(CRUD----\)
 -   *Authorization Overview*: *Role* \(CRUD----\)
--   *Activities*: *Activity Log* \(-R-D----\)
+-   *Activities*: *Activity Log*
 
 
 
@@ -660,9 +660,6 @@ See [Administering SAP Datasphere](../administering-sap-datasphere-70ee87c.md)
 *System Information* \(-RU-----\)
 
 > ### Note:  
-> -   The Read \(R\) permission gives access to the *About* dialog.
-> 
-> -   The Update \(U\) permission gives access to all areas.
 
 
 
@@ -761,7 +758,7 @@ or scoped privilege *Spaces* `(-R------)`
 > 
 > -   *Data Consumption* and *Database Users*: Global privilege *Spaces* `(-------M)` or scoped privilege *Spaces* `(-R------)`
 > 
-> -   *HDI Containers*:Scoped privileges *Spaces* `(-R------)` and *Remote Connection* `(-R------)`
+> -   *HDI Containers*:Scoped privileges *Spaces* `(-R------)` and *Data Warehouse Connection* `(-R------)`
 > 
 >     > ### Note:  
 >     > A DW Administrator cannot see the *HDI Containers* area in a space.
@@ -882,7 +879,7 @@ See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.
 </td>
 <td valign="top">
 
-Scoped privileges *Spaces* `(--U-----)` and *Remote Connection* `(--U-----)`
+Scoped privileges *Spaces* `(--U-----)` and *Data Warehouse Connection* `(--U-----)`
 
 </td>
 <td valign="top">
@@ -927,7 +924,7 @@ DW Space Administrator
 
 Modify *Auditing*
 
-See [Enable Audit Logging](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
+See [Logging Read and Change Actions for Audit](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1053,7 +1050,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right:
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1072,7 +1069,7 @@ Assets
 
 View detailed information for an asset, including the details for any term, tag, or KPI that is linked. 
 
-See [Evaluating and Accessing Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "When you find an asset that interests you, you can view information about it to make sure it's the right one for your business needs. You can then choose to view or edit the asset in more details in its source system or use it in a data project.") :arrow_upper_right:
+See [Evaluating and Accessing Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "Use the catalog Assets collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1101,7 +1098,7 @@ Assets
 
 Edit the name of the asset that appears in the catalog.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1122,7 +1119,7 @@ Assets
 
 Add a catalog description for the asset.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1143,7 +1140,7 @@ Assets
 
 Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1250,7 +1247,7 @@ Tags
 
 Add a tag relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1753,7 +1750,7 @@ Marketplace Data Products
 
 Search for a data marketplace data product, view the detailed information for it, and install it to a space.
 
-See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "When you find a data product that interests you, review its details page and test the sample data sets (if available) to make sure it's the right one for your business needs. After you evaluate it and decide it's what you need, you can install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Marketplace Data Products collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1762,7 +1759,7 @@ Spaces: `(-R------)`
 
 Space Files: `(CRUD----)`
 
-Data Warehouse Remote Connection: `(CRUD----)`
+Data Warehouse Connection: `(CRUD----)`
 
 Data Warehouse Data Integration: `(-RU-----)`
 
@@ -1780,7 +1777,7 @@ SAP Business Data Cloud Data Products
 
 Search for an SAP Business Data Cloud data product and view the detailed information for it.
 
-See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1797,7 +1794,7 @@ SAP Business Data Cloud Data Products
 </td>
 <td valign="top">
 
-Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.") :arrow_upper_right:.
+Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1822,7 +1819,7 @@ SAP Business Data Cloud Data Products
 
 Search for an SAP Business Data Cloud data product, view the detailed information for it, and share it with external users.
 
-See [Finding Data and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see .") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -2165,7 +2162,7 @@ Contained in Standard Role
 </td>
 <td valign="top">
 
-*Data Warehouse Remote Connection* \(CRUD----\)
+*Data Warehouse Connection* \(CRUD----\)
 
 </td>
 <td valign="top">

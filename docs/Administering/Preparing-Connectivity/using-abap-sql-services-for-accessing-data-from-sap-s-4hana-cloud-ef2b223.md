@@ -12,7 +12,7 @@ The ABAP SQL service provides SQL-level access to published CDS view entities fo
 
 For both consumption scenarios using the SQL service, data federation and data replication, privileged data access needs to be enabled for communication users in SAP S/4HANA Cloud.
 
-For more information about the consumption scenarios and privileged access, see [Data Integration Patterns](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/96368bd086ff4f79933b078a6cf7feaa.html) in the *SAP S/4HANA Cloud* documentation.
+For more information about the consumption scenarios and privileged access, see [Data Integration Patterns](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/data-integration-patterns?version=s4hana_cloud) in the *ABAP Cloud* documentation for SAP S/4HANA Cloud Public Edition.
 
 
 
@@ -24,13 +24,13 @@ In SAP S/4HANA Cloud, a business user and administrator must perform the followi
 
 1.  There are some prerequisites and constraints that must be considered before using the SQL service.
 
-    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/5e8488149308423b9f8b2f2c8ef9c761.html) in the *SAP S/4HANA Cloud* documentation. Note that the information about the ODBC driver is not relevant for SAP Datasphere as a consumer of an exposed SQL service.
+    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints?version=s4hana_cloud) in the *ABAP Cloud* documentation. Note that the information about the ODBC driver is not relevant for SAP Datasphere as a consumer of an exposed SQL service.
 
 2.  To expose CDS view entities using the SQL service, an SAP S/4HANA Cloud business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
 
     In the *Enabled Operations* area of the service binding, the business user must select access type *SELECT* to enable federated access.
 
-    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/c1cf6c9796ad4fecb893672fd91e660d.html) in the *SAP S/4HANA Cloud* documentation.
+    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4hana_cloud) in the *ABAP Cloud* documentation.
 
 3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
 
@@ -48,7 +48,7 @@ In SAP S/4HANA Cloud, a business user and administrator must perform the followi
     3.  An administrator has created a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
 
 
-    For more information about the above steps, see [Exposing the SQL Service for Data Federation and Replication with Privileged Access](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/70b2fc2a9e37475b993d4e6fd6d3eb07.html) in the *SAP S/4HANA Cloud* documentation.
+    For more information about the above steps, see [Exposing the SQL Service for Data Federation and Replication with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access?version=s4hana_cloud) in the *ABAP Cloud* documentation.
 
 
 
@@ -61,13 +61,13 @@ In SAP S/4HANA Cloud, a business user and administrator must perform the followi
 
 1.  There are some prerequisites and constraints that must be considered before using the SQL service.
 
-    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/5e8488149308423b9f8b2f2c8ef9c761.html) in the *SAP S/4HANA Cloud* documentation. Note that the information about the ODBC driver is not relevant for SAP Datasphere as a consumer of an exposed SQL service.
+    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints?version=s4hana_cloud) in the *ABAP Cloud* documentation. Note that the information about the ODBC driver is not relevant for SAP Datasphere as a consumer of an exposed SQL service.
 
 2.  To expose CDS view entities using the SQL service, an SAP S/4HANA Cloud business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
 
     In the *Enabled Operations* area of the service binding, the business user must select access type *REPLICATE* to enable data replication.
 
-    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/c1cf6c9796ad4fecb893672fd91e660d.html) in the *SAP S/4HANA Cloud* documentation.
+    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4hana_cloud) in the *ABAP Cloud* documentation.
 
 3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
 
@@ -83,15 +83,13 @@ In SAP S/4HANA Cloud, a business user and administrator must perform the followi
     3.  An administrator has created a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
 
 
-    For more information about the above steps, see [Exposing the SQL Service for Data Federation and Replication with Privileged Access](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/70b2fc2a9e37475b993d4e6fd6d3eb07.html) in the *SAP S/4HANA Cloud* documentation.
+    For more information about the above steps, see [Exposing the SQL Service for Data Federation and Replication with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access?version=s4hana_cloud) in the *ABAP Cloud* documentation.
 
 4.  An administrator has created a communication arrangement for communication scenario SAP\_COM\_0532 in the SAP Fiori launchpad of the ABAP environment.
 
-    For more information, see [Creating a Communication Arrangement to Enable Replication Flows in SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/96368bd086ff4f79933b078a6cf7feaa.html) in the *SAP S/4HANA Cloud* documentation.
+    For more information, see [Creating a Communication Arrangement to Enable Replication Flows in SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-communication-arrangement-to-enable-replication-flows-in-sap-datasphere?version=s4hana_cloud) in the *ABAP Cloud* documentation.
 
 
 > ### Note:  
 > Note that the same communication user must be added to all communication arrangements.
-
-For more information about using SQL services to replicate ABAP-managed data to SAP Datasphere, see [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html) in the *SAP S/4HANA Cloud* documentation.
 

@@ -341,8 +341,9 @@ This procedure explains how to create an empty table by defining its columns. Yo
     
     Delete records:
 
-    -   Standard table - Delete all records
-    -   Delta capture table- Delete all records, Delete all records \(mark as "deleted"\) or Delete all records marked for deletion which are older than the specified number of days.
+    -   Standard table: *Delete All Records* 
+    -   Delta capture table: *Delete All Records*, *Delete Records Marked as "Deleted"*, or *Delete all records marked for deletion which are older than the specified number of days*.
+    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete previous versions \(Vacuum\), which are older than the specified number of days* 
 
     See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
     
@@ -373,6 +374,20 @@ This procedure explains how to create an empty table by defining its columns. Yo
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](../reviewing-and-restoring-object-versions-4f717cc.md).
     
     </td>
     </tr>

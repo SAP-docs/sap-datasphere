@@ -11,14 +11,14 @@ By default a view is run every time it is accessed and, if the view is complex o
 > ### Note:  
 > If your view consumes remote tables, check for additional and potential limitations. See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
 > 
-> While persisting complex views, see [Persisted Views and Memory Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
+> While persisting complex views, see [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 
 
 When opening your view, in the *Properties* panel, under *Data Persistence*, you can see if your view has been made persisted or not.
 
 > ### Note:  
-> You can monitor persisted views in the *Data Integration Monitor*, under *Views*. You can access it directly by clicking <span class="SAP-icons-V5"></span> \(Views Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> You can monitor persisted views in the *Data Integration Monitor*, under *Views*. You can access it directly by clicking <span class="SAP-icons-V5"></span> \(Views Monitor\). For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 
 
 <table>
@@ -116,7 +116,7 @@ From this menu, you can :
 > ### Note:  
 > You need to authorize SAP to run the recurring scheduled tasks on your behalf. You can do so via the message that is displayed at the top of the monitor, or in your profile settings under *Schedule Consent Settings*.
 
-For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
+For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
 
 
 
@@ -151,5 +151,5 @@ When you deploy a persisted view, you need to consider the following cases:
 
 ## Persisted Views and Data Access Control
 
-While defining *Data Access Control* in your view, you need to consider the impact on the persistency. For more information, see [Persisted Views and Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7a4a983611cc4efb9415e6f3db310eaa.html "When Data Access Control is defined, it can impact the data persistence. Depending on where the Data Access Control is set, it might prevent you from persisting a view.") :arrow_upper_right:.
+While defining *Data Access Control* in your view, you need to consider the impact on the persistency. For more information, see [Persisted Views and Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7a4a983611cc4efb9415e6f3db310eaa.html "When Data Access Control is defined, it can impact the data persistence. Depending on where the Data Access Control is set, it might prevent you from persisting a view.") :arrow_upper_right:.
 

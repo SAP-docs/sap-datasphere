@@ -57,7 +57,7 @@
     -   [Copy a Space and its Contents](Creating-Spaces-and-Allocating-Storage/copy-a-space-and-its-contents-73068ac.md)
     -   [Rules for Technical Names](Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md)
     -   [Create Spaces via the Command Line](Creating-Spaces-and-Allocating-Storage/create-spaces-via-the-command-line-0cee58f.md)
-    -   [Empty the Recycle Bin](Creating-Spaces-and-Allocating-Storage/empty-the-recycle-bin-c4e26c0.md)
+    -   [Restore Spaces from, or Empty the Recycle Bin](Creating-Spaces-and-Allocating-Storage/restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md)
 -   [Preparing Connectivity for Connections](Preparing-Connectivity/preparing-connectivity-for-connections-bffbd58.md)
     -   [Preparing Data Provisioning Agent Connectivity](Preparing-Connectivity/preparing-data-provisioning-agent-connectivity-f1a39d1.md)
         -   [Install the Data Provisioning Agent](Preparing-Connectivity/install-the-data-provisioning-agent-8f61850.md)

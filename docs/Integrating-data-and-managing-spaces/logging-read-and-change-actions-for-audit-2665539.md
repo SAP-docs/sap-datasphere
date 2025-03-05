@@ -1,10 +1,20 @@
 <!-- loio266553976e1c4db9aaa28a75e2308b77 -->
 
-# Enable Audit Logging
+# Logging Read and Change Actions for Audit
 
 You can enable audit logs for your space so that read and change actions \(policies\) are recorded. Administrators can then analyze who performed which action at which point in time.
 
+This topic contains the following sections:
 
+-   [Enable Audit Logs](logging-read-and-change-actions-for-audit-2665539.md#loio266553976e1c4db9aaa28a75e2308b77__section_pgz_ym4_2jb)
+-   [Disable Audit Logs](logging-read-and-change-actions-for-audit-2665539.md#loio266553976e1c4db9aaa28a75e2308b77__section_gzv_3kx_rvb)
+-   [Export Audit Logs](logging-read-and-change-actions-for-audit-2665539.md#loio266553976e1c4db9aaa28a75e2308b77__section_js3_ylk_k2c)
+
+
+
+<a name="loio266553976e1c4db9aaa28a75e2308b77__section_pgz_ym4_2jb"/>
+
+## Enable Audit Logs
 
 -   Enable audit logs of SAP Datasphere objects for read and change operations on the space level in *Space Management* \> *<Your Space\>* \> *Edit Space* \> *Auditing*. You can set the retention time in days for each audit log policy \(read or change\). The default and minimum retention time is 7 days and the maximum retention time is 10 000 days.
 
@@ -39,10 +49,30 @@ The policy names of the SAP Datasphere administered objects are:
 When you disable an audit policy for a space or for a database user \(open SQL schema\), all related audit log entries are deleted.
 
 > ### Note:  
-> If you want to keep the audit log entries generated for your space, you can export them before the space is deleted. For more information, see [Export Audit Logs](export-audit-logs-0c5dc64.md).
+> You can keep the audit log entries generated for your space by exporting them before the space is deleted.
+
+
+
+<a name="loio266553976e1c4db9aaa28a75e2308b77__section_js3_ylk_k2c"/>
+
+## Export Audit Logs
+
+If you want to keep the audit log entries generated for your space, you can export them before they are automatically deleted by these actions: deleting a space, deleting a database user \(open SQL schema\), disabling an audit policy for a space, disabling an audit policy for a database user \(open SQL schema\) and unassigning an HDI container from a space.
+
+To export audit log entries using the SAP HANA Database Explorer, follow these steps:
+
+1.  Expose for consumption the view containing the audit log entries that you want to export. See [Exposing Data For Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/40ec77ec24f244279a81448969a7e769.html "Data can only be accessed outside of your SAP Datasphere space if it is exposed for consumption.") :arrow_upper_right:.
+2.  Create a database user in your space. See [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)
+
+3.  Connect to your Open SQL schema with SAP HANA database explorer. See [Connect to Your Open SQL Schema](Integrating-Data-Via-Database-Users/Open-SQL-Schema/connect-to-your-open-sql-schema-b78ad20.md)
+
+4.  Export the data. See [Export Schemas, Tables, and Other Catalog Objects](https://help.sap.com/docs/SAP_HANA_COCKPIT/e8d0ddfb84094942a9f90288cd6c05d3/1f20a6c4364c4b0680596e74e4ba281d.html) in the *SAP HANA Database Explorer* guide.
+
 
 **Related Information**  
 
 
 [Monitor Database Operations with Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:
+
+[Delete Your Space](delete-your-space-3eb19b9.md "Delete a space if you are sure that you no longer need any of its content or data.")
 

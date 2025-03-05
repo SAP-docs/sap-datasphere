@@ -113,7 +113,7 @@ Displays the memory currently used by the local table in MiB.
 Displays the timestamp when the local table was last updated.
 
 > ### Restriction:  
-> If the local table is updated through a replication flow, the information is not available as not supported for this flow type.
+> If the local table is updated through a replication flow, the information is not available if the flow is running via the load type *Initial and Delta*.
 
 
 
@@ -133,7 +133,7 @@ Indicates how the table was last updated. For example, name of the flow if it wa
 > If you are authorized to navigate to the relevant object, a clickable link is provided and you can navigate to the object details. If you are not authorized to navigate to the object, you’ll get the value unauthorized.
 
 > ### Restriction:  
-> If the local table is updated through a replication flow, the information is not available as not supported for this flow type.
+> If the local table is updated through a replication flow, the information is not available if the flow is running via the load type *Initial and Delta*.
 
 
 

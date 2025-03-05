@@ -4,7 +4,7 @@
 
 # Evaluating and Installing SAP Business Data Cloud Data Products
 
-When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.
+Use the catalog **SAP Business Data Cloud** collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.
 
 
 
@@ -12,22 +12,19 @@ When you find an SAP Business Data Cloud data product that interests you, you ca
 
 ## Prerequisites
 
-To search for and view the details of a data product, you must be assigned one of the following:
+A user with an administrator role must choose the spaces to which the data product can be installed \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
 
--   The *Catalog User* role
--   A custom role with the *Read* permission for *Catalog Asset*
+To search for and evaluate objects in the **SAP Business Data Cloud** *Data Products* collection, you must have
 
-To install the data product to a space and then use it, the following must already be set up:
+-   A global role that grants you the following privilege:
+    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
 
--   An SAP Datasphere administrator must choose the spaces to which the data product can be installed \(see [Defining Allowed Spaces for Unified Customer Landscape Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "For remote systems that are integrated with SAP Datasphere in the Unified Customer Landscape, connections are generated in SAP Datasphere. These generated connections are not assigned to any spaces yet. In the Configuration tool, users with an administrator role can control which spaces users with an integrator role can add the connection to. Once added to a space, space users can use the connection to replicate data with replication flows from the remote systems.") :arrow_upper_right:\)
--   You must additionally be assigned one of the following:
-    -   The *DW Modeler* or *DW Space Administrator* role
-    -   A custom role with the following settings. This custom role can be the same role that has the *Catalog Asset* privilege set:
-        -   *Read* permission for *Spaces*
-        -   *Create*, *Read*, *Update*, and *Delete* permissions for *Space Files*
-        -   *Create*, *Read*, and *Update* for *Data Warehouse Data Builder*
+-   A scoped role that grants you access to the space or spaces to install to, with the following privileges :
+    -   *Spaces* \(`–R–––--`\) - To access a space.
+    -   *Space Files* \(`CRU––--`\) - To install data products to a space.
 
 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="concept_bx2_pkv_zcc"/>
 
@@ -35,13 +32,11 @@ To install the data product to a space and then use it, the following must alrea
 
 ## Evaluating an SAP Business Data Cloud Data Product
 
-SAP Business Data Cloud data products are high-quality, coherent data sets that you can use via APIs in various SAP or third-party products across different data regions to help you make better business decisions. A single data product contains a coherent set of data that can include business objects, entities, analytic data, and more.
+SAP Business Data Cloud data products are high-quality, coherent data sets that you can use via APIs in various SAP or third-party products across different data regions to help you make better business decisions. A single data product contains a coherent set of data that can include business objects, entities, analytic data, and more. From the catalog search page, select the **SAP Business Data Cloud***Data Products* collection and then select one or more filters to narrow the search results.
 
-On the catalog search page, you can discover data products by selecting the **SAP Business Data Cloud***Data Products* filter. To further narrow your focus, enter part of a data product's name and search for it or apply filters.
+To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it \(see [SAP Business Data Cloud Data Product Details](sap-business-data-cloud-data-product-details-71f4d15.md)\).
 
-When you find a data product, review its details page to learn more about it. You'll see summary information about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it \(see [SAP Business Data Cloud Data Product Details](sap-business-data-cloud-data-product-details-71f4d15.md)\).
-
-After you've evaluated the data product and decide it's the one you need, you can install it to your space \(see steps below\).
+After you've evaluated and found a data product, you can install it in your space \(see steps below\).
 
 <a name="task_abn_f2n_gcc"/>
 
@@ -67,9 +62,9 @@ The following diagram displays the flow for data products.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog*\).
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
-2.  On the catalog search page, search for a data product by entering a portion of its name or use the filters. For more information, see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
+2.  On the catalog search page, search for a data product by entering a portion of its name or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
 3.  When you find the data product you want, check that it has an active status and select it, to open its details page.
 
@@ -109,7 +104,7 @@ The data product objects are created and deployed in the ingestion space and sha
 
 -   You can view the objects in the *Repository Explorer*.
 -   You can view and work with them in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed to. To work with the objects, see [Preparing Data in the Data Builder](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
--   In the catalog, users can discover the objects. Select the *Assets* tab and use the filters or the search to find the objects. The objects are discoverable only if an authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for data and assets is extracted automatically or manually. These different methods help you ensure that the data and assets in the catalog are up-to-date.") :arrow_upper_right:.
+-   In the catalog, users can discover the objects. Select the *Assets* collection and use the filters or the search to find the objects. The objects are discoverable only if an authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for data and assets is extracted automatically, by a background process, or manually. These different methods help you ensure that the data and assets in the catalog are up-to-date.") :arrow_upper_right:.
 
     > ### Note:  
     > If the entity has a replication flow, two objects are created: one object is created by the replication flow \(a delta object\), and the other object is the actual object that is used as part of the installation of the data product. Both objects will have the same business name, but the technical name will be different. The delta object's name is appended with "\_Delta".
@@ -118,7 +113,7 @@ The data product objects are created and deployed in the ingestion space and sha
 **Related Information**  
 
 
-[Defining Allowed Spaces for Unified Customer Landscape Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "For remote systems that are integrated with SAP Datasphere in the Unified Customer Landscape, connections are generated in SAP Datasphere. These generated connections are not assigned to any spaces yet. In the Configuration tool, users with an administrator role can control which spaces users with an integrator role can add the connection to. Once added to a space, space users can use the connection to replicate data with replication flows from the remote systems.") :arrow_upper_right:
+[Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:
 
 [Importing Entities with Semantics from SAP S/4HANA](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-s-4hana-845fedb.md "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.")
 

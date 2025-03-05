@@ -45,7 +45,7 @@ There are different ways to add dimensions:
 
     -   You can change the business name of the dimension, the technical name, and the technical name of the attribute.
     -   You can add or deselect associated dimensions.
-    -   You can add or deselect attributes.
+    -   You can add or deselect attributes. See also [Exclude Non-Navigable Dimension Attributes](exclude-non-navigable-dimension-attributes-4d96a8a.md).
     -   You can specify a custom prefix or suffix for the technical name of attributes. For more information, see [Add a Prefix or a Suffix to Dimension Attributes](add-a-prefix-or-a-suffix-to-dimension-attributes-0373c60.md).
     -   You can change the technical name of the attributes.
 

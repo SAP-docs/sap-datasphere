@@ -55,7 +55,7 @@ You can join two entities even where there is no appropriate foreign key column 
 
 ## Browse the Catalog for Trusted Data Assets
 
-You can browse the catalog to discover high-quality trusted data assets to use as sources in your views and other objects \(see [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md)\).
+You can browse the catalog to discover high-quality trusted data assets to use as sources in your views and other objects \(see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md)\).
 
 
 

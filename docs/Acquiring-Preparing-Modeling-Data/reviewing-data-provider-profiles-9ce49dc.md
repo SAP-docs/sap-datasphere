@@ -4,25 +4,13 @@
 
 # Reviewing Data Provider Profiles
 
-You can search and browse for data providers. When you find a data provider, you can select it to view their profile, where you’ll learn more about the data provider and what data products they offer.
+Use the catalog *Data Providers* collection to search for data providers. You can see their profile details and find out which data products they offer.
 
 
 
-To search for and view the details of a data provider, you must be assigned one of the following roles:
+The *Marketplace Data Products* and *Data Providers* collections are only available in the SAP Datasphere catalog.
 
--   DW Viewer
--   DW Modeler
--   DW Integrator
-
-Or you must be assigned a custom role with the following settings:
-
--   *Read* permission for *Spaces*
--   *Create*, *Read*, *Update*, and *Delete* permissions for *Space Files* and *Data Warehouse Remote Connection*
--   *Read* and *Update* for *Data Warehouse Data Integration* and *Data Warehouse Data Builder*
-
-The *Marketplace Data Products* and *Data Providers* tabs are only available in the SAP Datasphere catalog.
-
-From the catalog search page, you can select the *Data Providers* filter to show only data providers. On each card, you'll see the data provider's name and a short description. You can select a data provider to see a page that shows their profile information. This information includes all legally required and additional information, such as company and contact information and general information about the data products offered, including the industry your data products belong to and the SAP applications that are related to your data products.
+From the catalog search page, you can select the *Data Providers* collection and then select one or more filters to narrow the search results. The search results provides high-level information about a data provider, including their name and a short description. If you want to know more about a data provider, select their name to view their profile page that provides all legally required and additional information, such as company and contact information and general information about the data products offered, including the industry your data products belong to and the SAP applications that are related to your data products.
 
 Data provider profiles are managed by the data provider themselves or by a content aggregator.
 
@@ -31,11 +19,11 @@ Data provider profiles are managed by the data provider themselves or by a conte
 
 To learn more, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
-For example, if you’re a content aggregator, you might want to review the data provider profile of one of the companies you manage so you can make sure their information is correct and that their data offerings are current. If any changes are needed, you can go to the Data Sharing Cockpit to make them. For more information, see [Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
+For example, if you’re a content aggregator, you might want to review the data provider profile of a company you manage to ensure that their information is correct and their data offerings are current. If any changes are needed, go to the Data Sharing Cockpit to make them. For more information, see [Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
 
 
 
-You can review the header to get high-level information about the data provider.
+Review the header to get high-level information about the data provider.
 
 **Data Provider Details Header**
 
@@ -192,7 +180,7 @@ Content Aggregator
 </td>
 <td valign="top">
 
-Displays the content aggregator's name. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+ 
 
 </td>
 </tr>
@@ -265,7 +253,7 @@ Displays the additional properties for the data provider. These properties are h
 
 **Contact Details**
 
-Displays the contact details for the data provider and data aggregator, which can include the email address, address, and phone number.
+Displays the contact details for the data provider and content aggregator, which can include the email address, address, and phone number. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 
 
@@ -273,7 +261,7 @@ Displays the contact details for the data provider and data aggregator, which ca
 
 ## Data Provider's Data Products
 
-To see what types of data products the data provider offers, select *Overview tab* \> *Data Products*. This tab provides a list of all active and inactive data products from the data provider.
+To see what types of data products the data provider offers, select the *Data Products* tab. This tab provides a list of all active and inactive data products from the data provider. If the data provider has a lot of data products, select the *Show All* link to see a filtered view of the catalog search results for that data provider.
 
 **Data Provider's Data Products**
 
@@ -427,7 +415,7 @@ Data Consumer
 </td>
 <td valign="top">
 
-Select a data product and evaluate it for your business needs.
+Select a data product and evaluate it to see if you can use it.
 
 </td>
 <td valign="top">

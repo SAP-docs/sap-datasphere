@@ -32,21 +32,23 @@ By choosing <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Excel*
 
 ## Using the Builder Panel
 
-The *Builder* panel is displayed at the right side of the application. You can show it or hide it by choosing <span class="SAP-icons-V5"></span> Query Builder Designer Panel.
+The *Builder* panel is displayed at the right side of the application. You can show it or hide it by choosing <span class="SAP-icons-V5"></span> Query Builder Designer Panel. See **\(1\)**.
 
-When you choose *Available Objects*, you get a list of all available dimensions and measures in the analytic model. Here you can select dimensions and measures and assign them directly to the table's rows or columns by clicking <span class="SAP-icons-V5"></span> Column or <span class="SAP-icons-V5"></span> Row.
+![This is a screenshot of the data preview.](images/DWC_-_data_preview_1557d18.png)
+
+When you choose *Available Objects*, you get a list of all available dimensions and measures in the analytic model. Here you can select dimensions and measures and assign them directly to the table's rows or columns by clicking <span class="SAP-icons-V5"></span> Column or <span class="SAP-icons-V5"></span> Row. See **\(2\)**.
 
 You can also drag and drop dimensions from the *Available Objects* panel into the *Builder* panel.
 
 Some functions that make it easier for you to work with the panel:
 
 -   You can search for items.
--   You can change the items' display between *ID* and *Description* as well as their sort order by clicking <span class="SAP-icons-V5"></span> More.
+-   You can change the items' display between *ID* and *Description* as well as their sort order by clicking <span class="SAP-icons-V5"></span> More. See **\(3\)**.
 -   You can resize the width of the left side panel for *Available Objects*. This way you can display long dimension names.
 
 Under *Rows* and *Columns*, you see all measures and dimensions that are displayed in the table.
 
-For the *Rows* and *Columns*, you are offered a context menu that you can open by clicking <span class="SAP-icons-V5"></span> More . Here you can use the following functions:
+For the *Rows* and *Columns*, you are offered a context menu that you can open by clicking <span class="SAP-icons-V5"></span> More . See **\(4\)**. Here you can use the following functions:
 
 -   *Totals*: You can set the display of the totals.
 

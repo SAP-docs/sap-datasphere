@@ -233,7 +233,7 @@ More Information
 </td>
 <td valign="top">
 
-[Enable Audit Logging](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
+[Logging Read and Change Actions for Audit](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -319,7 +319,7 @@ Also allows you to view a list of users whose authorization consent will expire 
 </td>
 <td valign="top">
 
-[Deleting Task Logs to Reduce Storage Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c6902024ecd74956b4ba2d1c67ccb073.html "In the Configuration area, you can check how much spaces the task logs are using on your tenant, and decide to delete the obsolete ones to reduce storage consumption.") :arrow_upper_right:
+[Deleting Task Logs to Reduce Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c6902024ecd74956b4ba2d1c67ccb073.html "In the Configuration area, you can check how much spaces the task logs are using on your tenant, and decide to delete the obsolete ones to reduce storage consumption.") :arrow_upper_right:
 
 [Check Consent Expirations](Monitoring-SAP-Datasphere/check-consent-expirations-58e4bb2.md)
 

@@ -14,11 +14,14 @@
 
     Once the *View Analyzer* has completed the task, 2 tabs are available in the details screen:
 
+    > ### Note:  
+    > The *Analyzed Views* tab was previously called the *Entities* tab.
+
     -   *Task Log*: It contains all information related to the *View Analyzer* task itself. You can see that my 5 views have been analyzed, and an overview of some key indicators is displayed: memory consumption, number of records, etc.
 
         ![](images/TaskLog_AnalyzedView_cc9147b.png)
 
-    -   *Entities*: It contains the details of the *View Analyzer* findings per analyzed entities. Information is displayed in a table format:
+    -   *Analyzed Views*: It contains the details of the *View Analyzer* findings per analyzed entities. Information is displayed in a table format:
 
         ![](images/Cross-space_view_analyzer_1_b273634.png)
 
@@ -145,7 +148,7 @@
 
         In the message's details, you can see that the remote table is using an adapter that has limited capacities. This is why the entity was marked with a warning in the results.
 
-        From the *Entities* tab, you can do many actions to explore your results:
+        From the *Analyzed Views* tab, you can do many actions to explore your results:
 
 
         <table>

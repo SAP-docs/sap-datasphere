@@ -4,34 +4,24 @@
 
 # Catalog Asset Details
 
-You can use the catalog to discover assets for your business needs. When you find one that interests you, review its detailed information, such as a preview of its detailed metadata and a diagram illustrating its impact and lineage. This information encompasses metadata extracted from the source system as well as data enrichments incorporated in the catalog.
+If you're interested in an asset, review its detailed information, which includes a preview of its detailed metadata and a diagram illustrating its impact and lineage. This information encompasses metadata from the source system and data enrichments incorporated in the catalog.
 
 
 
-To search for and view the details of an asset, you must be assigned one of the following:
+The catalog search results provides high-level information about an asset, including as its name, data type, and a short summary. If you want to know more about an asset, select it to view its details page that provides many different types of information about it, including the following:
 
--   The *Catalog User* role.
+-   Extracted metadata, like the asset name, properties, description, and impact and lineage diagram
 
--   A custom role with the *Read* permission for *Catalog Asset*.
-
-    > ### Note:  
-    > To see the details of any terms, tags, or KPIs, the role must also have the *Read* permission for each of the following privileges: *Catalog Glossary Object*, *Catalog Tag Hierarchy*, and *Catalog KPI Object*.
+-   Data enrichments that were applied to the asset in the catalog, such as glossary term, key performance indicator \(KPI\), and tag relationships
 
 
-> ### Tip:  
-> If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Enriching, Classifying, and Publishing](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with a catalog administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
+You can use the information provided to evaluate and make an assessment on whether the asset is the right one you need for your business task at hand. For example, if you're data modeler reviewing the details of an asset, you can review the asset's metadata, description, and other semantic enrichments to determine whether you should add it to your model. You can also view the impact and lineage diagram of that asset to see other assets it affects or is consumed by, as well as the data sources and transformations it underwent.
 
-From the catalog search page, you can select the *Assets* filter to show only assets. An asset is any data or analytic object that is available in the catalog. For example, a local table or view sourced from SAP Datasphere or a story from SAP Analytics Cloud.
-
-For each asset, you'll see the a preview of the asset, including its name, data type, and a short summary. When you find an asset that might suit your needs, select it to view its details page that provides many different types of information about it. This information can include extracted metadata, like the asset name, properties, description, and impact and lineage diagram. It also includes other data enrichments, such as glossary term, tag, and key performance indicator \(KPI\) relationships applied to the asset, and much more. You can use the information provided to evaluate and make an assessment on whether the asset is the right one you need for your business task at hand.
-
-For example, when a data modeler reviews the details of an asset, they can review its metadata, description, and other semantic enrichments to determine whether it is the one needed to add to their model. They can also view the impact and lineage diagram of that asset to see other assets it affects or is consumed by, as well as the data sources and transformations it underwent.
-
-After reviewing the asset details, you can choose to view the asset in more details in its source system or use it in a new project. See [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md).
+After reviewing the asset details, you can choose to view the asset in more details in its source system or use it in a new project \(see [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md)\).
 
 
 
-You can review the header to get high-level information about the asset.
+To get high-level information about the asset, review the header section.
 
 **Asset Details Header**
 
@@ -73,7 +63,7 @@ Displays the functional and publication statuses of the asset.
 
 Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users.
 
-For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with tags, terms, and KPIs. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
+For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -496,7 +486,7 @@ The number in brackets indicates the total number of objects in the container th
 The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains assets that either appear in the lineage or impact the analyzed object. If an asset is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
--   A :package: data product. The data product is visible if you are a member of the context associated with the data product or if you are a member of the space where the data set has been installed and have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
+-   A :package: marketplace data product. The data product is visible if you are a member of the context associated with the data product or if you are a member of the space where the data set has been installed and have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -507,9 +497,9 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 
 \(4\) Authorized Object
 
-\(5\) Unauthorized Object
+\(5\) Analyzed Object
 
-\(6\) Analyzed Object
+\(6\) Unauthorized Object
 
 </td>
 <td valign="top">
@@ -523,9 +513,9 @@ Authorized and unauthorized objects appear in the lineage or impact of the analy
     -   For datasets, click a link that generates a remote table or view it in the different spaces where the data product has been installed.
 
 
--   Unauthorized objects are unpublished assets or datasets or are objects that you do not have access permission to in the source system. They are represented with the :lock: icon.
-
 -   The analyzed object appears as a light blue object. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(Story\) or <span class="FPA-icons-V3"></span> \(Transformation\)\).
+
+-   Unauthorized objects are unpublished assets or datasets or are objects that you do not have access permission to in the source system. They are represented with the :lock: icon.
 
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.

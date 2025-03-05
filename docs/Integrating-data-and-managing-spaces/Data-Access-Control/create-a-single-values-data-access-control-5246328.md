@@ -12,7 +12,7 @@ Users with the *DW Space Administrator* role \(or equivalent privileges\) can cr
 
 Before creating your data access control, you must have prepared a permissions entity with the following columns:
 
--   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). This column must be selected as the *Identifier Column* in your data access control.
+-   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your identity provider (IdP).") :arrow_upper_right:\). This column must be selected as the *Identifier Column* in your data access control.
 
     > ### Note:  
     > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
@@ -246,6 +246,20 @@ Before creating your data access control, you must have prepared a permissions e
     \[read-only\] Displays the status of the object. 
 
     See [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4f717cc0d90e4453a072b37f6b043593.html "Each time you deploy your object, a new version is created in the repository. You can review previous versions of an object at any time and choose to restore a previous version.") :arrow_upper_right:.
     
     </td>
     </tr>

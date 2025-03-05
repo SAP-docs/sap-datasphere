@@ -200,7 +200,7 @@ To reduce the size of your data lake storage, you must first delete your data la
 SAP BW Bridge includes SAP BTP, ABAP environment, and an own HANA Cloud runtime and compute.
 
 > ### Caution:  
-> You can only change the size of SAP BW bridge in Flexible Tenant Configuration as long as the tenant has not been created. After tenant creation, SAP BW bridge can be upsized by creating a support case on component DS-BWB.
+> You can only change the size of SAP BW bridge in Tenant Configuration as long as the tenant has not been created. After tenant creation, SAP BW bridge can be upsized by creating a support case on component DS-BWB.
 
 > ### Note:  
 > -   First finalize the size configuration of your tenant. Then, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).

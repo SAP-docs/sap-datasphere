@@ -341,7 +341,7 @@ Business Date - From
 </td>
 <td valign="top">
 
-A date, timestamp, or interval that defines the validity of the data of the database table record from a business point of view. Use *System Date - Created at* to represent the date when the record was created.
+A date or interval that defines the validity of the data of the database table record from a business point of view. Use *System Date - Created at* to represent the date when the record was created.
 
 </td>
 </tr>

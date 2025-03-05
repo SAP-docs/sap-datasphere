@@ -27,25 +27,25 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 ## Context
 
-You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Local Tables, Intelligent Lookups, Data Flows, Replication Flows \(load type *Initial Only*\), and Transformation Flows. You can also include non-repository objects such as SAP HANA Open SQL schema procedures. In addition, you can nest other existing, locally-created or shared task chains in other task chains, as well as share task chains you've created to other spaces.
+You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Local Tables, Intelligent Lookups, Data Flows, Replication Flows \(load type *Initial Only*\), and Transformation Flows. You can also include non-repository objects such as SAP HANA Open SQL schema procedures and SAP BW Bridge process chains. In addition, you can nest other existing, locally-created or shared task chains in other task chains, as well as share task chains you've created to other spaces.
 
 > ### Note:  
 > For remote table and view objects included in a task chain, you have the option, by default, to replicate or persist the data associated with the corresponding remote tables or views. Or, you can choose to remove the replicated or persisted data by selecting that option in the *Activities* section of an object’s *Properties* detail display.
 > 
-> -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, the replicated data will be removed and the data will be read directly from the remote source and no longer from the repository. For more information, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:. If the data is being replicated via Real Time Replication, the data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table's log to indicate that the data access type has been changed when the remote table object is run.\)
+> -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, the replicated data will be removed and the data will be read directly from the remote source and no longer from the repository. For more information, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:. If the data is being replicated via Real Time Replication, the data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table's log to indicate that the data access type has been changed when the remote table object is run.\)
 > 
-> -   For views, if you choose the *Remove Persisted Data* option, data persistence will be removed and the view data will be read from the remote source and no longer from the repository. For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> -   For views, if you choose the *Remove Persisted Data* option, data persistence will be removed and the view data will be read from the remote source and no longer from the repository. For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 > 
 > If replication and data removal tasks are both attempted to run at the same time, the tasks are given priority based on a first-come, first served basis.
 
-When creating a task chain, you can create linear task in which one task is run after another. A succeeding task is only run once the previous task in the series has finished successfully with a *completed* status. The running of tasks in the series will not resume if the previous task has a *failed* status. You can also create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
+When creating a task chain, you can create linear task chains in which one task is run after another. A succeeding task is only run once the previous task in the series has finished successfully with a *completed* status. The running of tasks in the series will not resume if the previous task has a *failed* status. You can also create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows and task chains that may contain these tasks. There is a limit on how many tasks can be started at the same time. If you come close to this limit, scheduled task runs may be delayed and, if you go beyond the limit, some scheduled task runs might even be skipped.
 
 When creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion. After deploying a task chain, you can add tenant users or email addresses to notify individuals when task chain runs are completed.
 
-You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 > ### Note:  
 > Exporting and importing task chains via the <span class="FPA-icons-V3"></span> \(*Transport*\) app may not be supported for SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
@@ -61,7 +61,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     > ### Note:  
     > From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, transformation flow objects and task chains that meet prerequisites and are available to be added to the task chain. Task chains you've shared or have been shared with you from another space are denoted by the <span class="FPA-icons-V3"></span> \(Share\) icon following the task chain's business name. For more information on sharing and running shared task chains, see [Nesting and Sharing Task Chains](nesting-and-sharing-task-chains-8067b77.md).
     > 
-    > From the *Others* tab, you can see the non-repository Open SQL schema procedures you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Running Open SQL Procedures in a Task Chain](running-open-sql-procedures-in-a-task-chain-59b9c77.md).
+    > From the *Others* tab, you can see the non-repository Open SQL schema procedures and BW Bridge process chains you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Running Open SQL Procedures in a Task Chain](running-open-sql-procedures-in-a-task-chain-59b9c77.md). For more information on adding BW Bridge process chains to a task chain, see [Running BW Bridge Process Chains in a Task Chain](running-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md).
     > 
     > For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that data will be removed. If the data is being replicated via Real Time Replication, and you choose the *Remove Replicated Data* option, that table's data will also be removed and the object’s data access method will be changed to Remote access. For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
 
@@ -264,13 +264,17 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   Replication Flow - Run
     -   Transformation flow - Run
     -   Local table - Delete Records with Change Type "Deleted"
-    -   Local Table \(File\) - Merge or Optimize.
+    -   Local Table \(File\) - Merge, Optimize or Delete Records.
 
         > ### Note:  
-        > -   Merge: Add, update or delete data into the existing local table \(file\).
-        > -   Optimize: Combine several small files into bigger files to optimize the read access.
+        > -   Merge: Add, update or delete data into the existing local table \(file\). A replication flow writes data files to the inbound buffer \(specific folder in file storage\) of a target local table \(File\). To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run..
+        > -   Optimize: Combine several small files into bigger files to optimize the read access..
+        > -   Delete Records: Delete records from your local table \(file\). Under Settings, define what type of deletion you want:
+        >     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
+        >     -   *Delete previous versions \(Vacuum\), which are older than the specified number of days*: Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. 
         > 
-        > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) 
+        > 
+        > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
 
     -   Task Chain - Run
 
@@ -314,7 +318,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
 
     After creating and deploying a task chain, you can optionally set up email notification for completion of task chain runs. For more information, see [Configuring Email Notification](configuring-email-notification-7ff6a4e.md).
 
-    After you've finished making changes and optionally setting up email notification for the task chain, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    After you've finished making changes and optionally setting up email notification for the task chain, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right: and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
     > ### Note:  
     > In addition to running a task chain, you can also share or export the task chain following deployment:
@@ -325,7 +329,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     Once a task chain run has started, it will continue running as long as possible, unless you cancel the task chain run. Until all tasks in the chain have been completed and are in a non-running state, the task chain itself is considered to be "running". When finished, the overall state or status of the task chain will be reported as “failed” if any task in the chain has "failed". The final status of COMPLETED for a task chain is reported only if all tasks are COMPLETED.
 
     > ### Note:  
-    > After starting a task chain run, you can also choose to cancel it from the *Run Details* display in the *Data Integration Monitor*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    > After starting a task chain run, you can also choose to cancel it from the *Run Details* display in the *Data Integration Monitor*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
     When a task chain is run that includes a parallel task chain branch, all the branch tasks are triggered to be run in parallel. The ANY or ALL condition applied to the branch specifies whether ANY or ALL branch tasks must be completed successfully to continue running remaining tasks in the chain.
 
@@ -454,6 +458,20 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](../reviewing-and-restoring-object-versions-4f717cc.md).
     
     </td>
     </tr>

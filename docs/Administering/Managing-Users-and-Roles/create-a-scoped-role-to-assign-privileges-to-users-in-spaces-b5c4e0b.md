@@ -101,7 +101,7 @@ Custom role “Senior Modeler” based on the DW Modeler standard role + these p
 
 -   Data Warehouse Data Integration \(Execute\)
 
--   Data Warehouse Remote Connection \(Create, Read, Update and Delete\)
+-   Data Warehouse Connection \(Create, Read, Update and Delete\)
 
 
 

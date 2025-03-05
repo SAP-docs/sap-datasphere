@@ -12,7 +12,7 @@ Working in *View Analyzer* requires different privileges and permissions dependi
 
 When a user does not have permission to access a space or spaces, a row titled *unauthorized* will be displayed.
 
-You can only view enties that you are authorized to view. Entites from spaces that you are not allowed to view will be labeled as unauthorized. Contact your administrator to get authorization to view the hidden entites.
+You can only view entities that you are authorized to view. Entities from spaces that you are not allowed to view will be labeled as unauthorized. Contact your administrator to get authorization to view the hidden entities.
 
 > ### Note:  
 > To start the *View Analyzer* you will need the *DW Integrator* scoped role and the *Data Builder \(Read\)* privilege which can be found in the *DW Modeler* scoped role. You will be able to see all entities with either the global role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
@@ -31,7 +31,7 @@ This can also be seen in the lineage graph.
 
 ## Permissions
 
-The *View Analyzer* provides you with statistcs and useful information on each entity that composes your view. There are a variety of ways to learn more about your view and make decisions to optimize your data model and performance. Due to the potential sensitivity of information gathered in *View Analyzer*, either the *DW Administrator* role or a custom role is required to run the view or to read the results of generated files.
+The *View Analyzer* provides you with statistics and useful information on each entity that composes your view. There are a variety of ways to learn more about your view and make decisions to optimize your data model and performance. Due to the potential sensitivity of information gathered in *View Analyzer*, either the *DW Administrator* role or a custom role is required to run the view or to read the results of generated files.
 
 Ask your tenant administrator to assign you a scoped or custom role that fits your required task.
 

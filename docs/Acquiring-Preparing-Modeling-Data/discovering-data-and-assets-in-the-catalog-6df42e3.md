@@ -10,7 +10,7 @@ Users with a catalog user role can browse for trusted data and analytic assets t
 
 ## Discover Data and Assets
 
-Search, filter, and explore data and assets in the catalog. See [Finding Data and Assets in the Catalog](finding-data-and-assets-in-the-catalog-1047825.md).
+Search, filter, and explore data and assets in the catalog. See [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
 
 

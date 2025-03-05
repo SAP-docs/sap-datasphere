@@ -16,6 +16,7 @@ This topic contains the following sections:
 -   [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
 -   [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
 -   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
+-   [Monitor Capacity Units](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_i3j_y34_g2c)
 
 Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) to access the main monitoring tool. The *System Monitor* allows to monitor the performance of your system and identify storage, task, out-of-memory, and other issues across all spaces.
 
@@ -192,7 +193,7 @@ To investigate issues:
     
 2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. For more information on the *Task Logs* tab, see [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab).
 3.  Click the links in the following columns:
-    -   *Activity* column - For the spaces you have access to \(via scoped roles\), a link opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
+    -   *Activity* column - For the spaces you have access to \(via scoped roles\), a link opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
 
     -   *Object Name* column - For the spaces you have access to \(via scoped roles\), a link opens the editor of the object.
 
@@ -596,13 +597,24 @@ Once you’ve created an elastic compute node in the *Space Management* app \(se
 3.  To investigate further, you can do the following:
 
     -   To view statement details, click *View Logs* in a card to go to the *Statement Logs* tab, which displays information filtered on the card criteria. Then, click the links in the *Statement Details* column. For more information on the *Statement Logs* tab, see [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
-    -   To view details on a run, click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
+    -   To view details on a run, click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria. In the *Activity* column, click the link to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
     -   To navigate to the elastic compute node in the *Space Management* app, click *Manage Elastic Compute Node* \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md) and [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
 
     -   To analyze the performance of the SAP HANA database, click *Database Overview \(SAP HANA Cockpit\)*, which opens the Database Overview page in the SAP HANA Cockpit \(see [The Database Overview Page](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/database-overview-page) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
 
 
 
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_i3j_y34_g2c"/>
+
+## Monitor Capacity Units
+
+As a tenant administrator, you can view the consumption of capacity units for various features over time.
+
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\), then click the *Capaciaty Monitoring* tab.
+
+2.  
 
 
 <a name="loio28910cded17a42a0bf16225309cb8bf6__section_task_tab"/>
@@ -809,7 +821,7 @@ Shows the status of the task: completed, failed, running.
 </td>
 <td valign="top">
 
-For tasks with the status “failed”, shows the substatus and a message describing the cause of failure. For more information about failed task substatuses, see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the System Monitor.") :arrow_upper_right:.
+For tasks with the status “failed”, shows the substatus and a message describing the cause of failure. For more information about failed task substatuses, see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the System Monitor.") :arrow_upper_right:.
 
 </td>
 </tr>

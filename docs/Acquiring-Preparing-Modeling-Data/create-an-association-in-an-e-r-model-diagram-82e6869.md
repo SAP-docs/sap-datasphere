@@ -18,7 +18,7 @@ In addition to this method, you can also create associations in the side panel i
 
 1.  Select an object to open its context menu.
 
-2.  Click and hold:arrow_right:, then release once you've placed your cursor over the target object.
+2.  Click and hold :arrow_right:, then release once you've placed your cursor over the target object.
 
     ![](images/Create_Association_8b48c15.gif)
 

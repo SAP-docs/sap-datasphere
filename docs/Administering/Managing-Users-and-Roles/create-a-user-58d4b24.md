@@ -87,7 +87,7 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 3.  Enter a *User ID*.
 
-    Each user needs a unique ID. Only alphanumeric and underscore characters are allowed. The maximum length is 127 characters.
+    Each user needs a unique ID. Only alphanumeric and underscore characters are allowed. The maximum length is 20 characters.
 
 4.  Enter the user name details.
 

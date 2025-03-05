@@ -12,7 +12,7 @@ To use *View Analyzer*,
 
 1.  Go to *Data Integration Monitor* \> *Views*. Select the view you need to analyze and navigate to the details screen of this view. You need to select a space if you are assigned to several spaces.
 
-2.  Select *Data Persistance* \> *Start View Analyzer*.
+2.  Select *Data Persistence* \> *Start View Analyzer*.
 
     > ### Note:  
     > For this action, *Data Builder \(Read\)* privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the DW Space Administrator role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration \(Read, Update, Execute\)* and *Data Builder \(Read\)*. For more information see, [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
@@ -81,7 +81,7 @@ To use *View Analyzer*,
         > ### Tip:  
         > While working with complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
         > 
-        > Cross-space analysis can be analyzed in *View Analyer*, but you can only view entities that you are authorized to view. For more information see: [Authorization and Permissions](authorization-and-permissions-e5f9e81.md)
+        > Cross-space analysis can be analyzed in *View Analyzer*, but you can only view entities that you are authorized to view. For more information see: [Authorization and Permissions](authorization-and-permissions-e5f9e81.md)
 
         > ### Note:  
         > For views with one input parameter with default value, you can execute views with memory consumption. For views with input parameters with default values, you can generate Explain Plan and SQL analyzer plan file.

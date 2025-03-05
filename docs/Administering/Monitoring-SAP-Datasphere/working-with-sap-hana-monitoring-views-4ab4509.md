@@ -253,7 +253,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     
     Defines the recurrence of a schedule in CRON format .
 
-    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly \(see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:\).
+    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly \(see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -267,7 +267,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     
     Defines the recurrence of a schedule in json format \(simple format\).
 
-    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration \(see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:\).
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration \(see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -487,7 +487,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     </td>
     <td valign="top">
     
-    Duration of the task execution \(also works for ongoing execution\).
+    Duration in seconds of the task execution \(also works for ongoing execution\).
     
     </td>
     </tr>

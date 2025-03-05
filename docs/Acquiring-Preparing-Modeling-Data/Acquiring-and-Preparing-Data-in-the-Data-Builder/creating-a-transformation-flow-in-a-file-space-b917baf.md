@@ -27,7 +27,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > ### Note:  
     > On file space, you can only create *Graphical View Transform*.
 
-3.  Add a source. For more information, see  <?sap-ot O2O class="- topic/xref " href="ec702fe3b1134f278c5c538b447b7435.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/sqq1737416514784/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> . Note that you can only add a local table \(file\).
+3.  Add a source. For more information, see [Creating a Transformation Flow in a File Space](creating-a-transformation-flow-in-a-file-space-b917baf.md). Note that you can only add a local table \(file\).
 4.  Add a Transformation. The *View Transform* does not support all functions available in a transformation flow created in an SAP HANA space. For more information, see [List of Functions Supported by a Transformation Flow \(in a File Space\)](list-of-functions-supported-by-a-transformation-flow-in-a-file-s-37e737f.md):
 
 
@@ -52,7 +52,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See  <?sap-ot O2O class="- topic/xref " href="bcb5f48ec99242da8f2cb3483b8409b7.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/sqq1737416514784/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md)
     
     </td>
     </tr>
@@ -64,7 +64,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See  <?sap-ot O2O class="- topic/xref " href="9cd6fbf4710e4a31a3fd5246302ed9ec.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/sqq1737416514784/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    See [Create a Join in a Graphical View](../create-a-join-in-a-graphical-view-947d6d8.md)
     
     </td>
     </tr>
@@ -112,7 +112,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See  <?sap-ot O2O class="- topic/xref " href="f368ba00de89482e8034d2c7281c255b.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/sqq1737416514784/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/b917baf0431343bea8381fa37e12eeb8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+    See [Create a Union in a Graphical View](../create-a-union-in-a-graphical-view-5c3d354.md)
     
     </td>
     </tr>
@@ -138,6 +138,6 @@ As a Datasphere modeler, you want to model transformation flows with local table
     -   Simulate a run that doesn't save changes in the target table by clicking *Simulate Run*. Simulating allows you to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to deploy the flow, resolve errors, or to optimize the flow to improve performances.
     -   Download a PLV file of a visual map of the operators and their relationships and hierarchies by clicking *Generate a SQL Analyzer Plan File*. The plan file contains detailed information about your data model that you can download for further analysis. Analyzing this file allows you to resolve errors and enhance the transformation flow performances.
 
-    For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
+    For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
 
 

@@ -54,7 +54,7 @@ Using the **Connections API**, you can perform the following actions:
 
 To manage connections via the REST API, you must have a scoped role based on the *DW Integrator* role or equivalent privileges:
 
--   **Data Warehouse Remote Connection \(CRUD----\)**
+-   **Data Warehouse Connection \(CRUD----\)**
 
 
 You must, in addition, obtain the following parameters for an OAuth client created in your SAP Datasphere tenant \(with *Purpose* set to *Interactive Usage* and the *Redirect URI* set to the URI provided by the client, tool, or app that you want to connect\):

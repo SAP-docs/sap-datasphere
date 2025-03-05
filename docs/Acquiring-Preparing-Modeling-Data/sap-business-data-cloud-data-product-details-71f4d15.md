@@ -4,26 +4,19 @@
 
 # SAP Business Data Cloud Data Product Details
 
-You can use the catalog to search and browse for SAP Business Data Cloud data products. When you find a data product that interests you, you can view information about it to make sure it’s the right one for your business needs.
+If you're interested in a data product, review its detailed information, such as properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it.
 
 
 
-To search for and view the details of a data product, you must be assigned one of the following:
+The catalog search results provides high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, select it to view its details page that provides many different types of information about it. This information includes properties about the data product, detailed information about the APIs, and resources that can provide information or examples on how to use the data product.
 
--   The *Catalog User* role
--   A custom role with the *Read* permission for *Catalog Asset*.
+For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use it. They can also review individual APIs and learn how to extend them.
 
-From the catalog search page, you can select the **SAP Business Data Cloud** *Data Products* filter to show only these data products. SAP Business Data Cloud data products are high-quality, coherent data sets that you can use via APIs in various SAP or third-party products across different data regions to help you make better business decisions.
-
-For each data product, you'll see a preview of the data product, including its name, data type, and a short summary. When you find a data product that might suit your needs, select it to view its details page that provides many different types of information about it. This information includes properties about the data product, detailed information about the APIs, and resources that can provide information or examples on how to use the data product.
-
-For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use the data product. They can also review individual APIs and learn how to extend them.
-
-After reviewing the data product details, you can choose to install it in your SAP Datasphere space. See [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md).
+After you data product details, you can choose to install it in your space \(see [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md)\).
 
 
 
-You can review the header to get high-level information about the data product.
+To get high-level information about the data product, review the header section.
 
 **SAP Business Data Cloud Details Header**
 
@@ -543,7 +536,7 @@ Actions
 </td>
 <td valign="top">
 
-Select *Install* and use the *Import Entities* to import entities from the data product to your SAP Datasphere space.
+Select *Install* and use the *Import Entities* wizard to import entities from the data product to your SAP Datasphere space.
 
 See [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md).
 

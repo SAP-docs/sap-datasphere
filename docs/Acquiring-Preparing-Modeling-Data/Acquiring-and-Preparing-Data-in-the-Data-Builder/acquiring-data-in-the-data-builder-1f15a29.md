@@ -29,6 +29,20 @@ Space administrators and integrators prepare connections and other sources to al
 
 Many connections \(including most connections to SAP systems\) support importing remote tables to federate or replicate data \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:\).
 
+SAP Datasphere is using two types of adaptors to connect to remote tables:
+
+-   SAP HANA smart data integration \(used in connections with *Data Provisioning* option = *Data Provisioning Agent*\).
+
+-   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
+
+> ### Note:  
+> If your source data comes from an SAP HANA On-Premise system, select the adaptor following your use case:
+> 
+> -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adaptor to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
+> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md). In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adaptor to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
+> 
+> For more information on these adaptors, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
+
 You can import remote tables to make the data available in your space from the *Data Builder* start page, in an entity-relationship model, or directly as a source in a view.
 
 -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Remote Tables*. See [Import Remote Tables](import-remote-tables-fd04efb.md).

@@ -111,7 +111,7 @@ Users with the *DW Space Administrator* role can create database users, granting
     
     Enable logging of all read and change operations performed by the user.
 
-    For more information, see [Enable Audit Logging](../../enable-audit-logging-2665539.md).
+    For more information, see [Logging Read and Change Actions for Audit](../../logging-read-and-change-actions-for-audit-2665539.md).
     
     </td>
     </tr>

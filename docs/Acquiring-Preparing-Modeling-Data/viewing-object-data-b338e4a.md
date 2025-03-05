@@ -222,7 +222,6 @@ You can review the effects of any data access controls you apply to a view by ch
     > 
     > -   Is shared from another space then *View as User* is not supported.
     > -   Has one or more sources shared from other spaces, then a warning is shown to indicate that you may not see exactly the same records as the user you are impersonating.
-    > -   Is secured by data access controls created by importing analysis authorizations from SAP BW or SAP BW/4HANA, then *View as User* is not supported.
 
 
 For more information about data access controls, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:.

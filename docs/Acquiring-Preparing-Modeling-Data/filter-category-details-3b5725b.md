@@ -828,6 +828,22 @@ Choose one of the tabs and specify the options:
 <tr>
 <td valign="top">
 
+Featured
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose to show data products that have been marked as featured.
+
+*Define Conditions*: Create conditions and enter a value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Industry
 
 </td>
@@ -963,6 +979,22 @@ Data Category
 Choose one of the tabs and specify the options:
 
 *Select Items*: Choose a category defined by the data providers to make your search easier and more efficient.
+
+*Define Conditions*: Create conditions and enter a value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Featured
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose to show data providers that have data products that have been marked as featured.
 
 *Define Conditions*: Create conditions and enter a value.
 

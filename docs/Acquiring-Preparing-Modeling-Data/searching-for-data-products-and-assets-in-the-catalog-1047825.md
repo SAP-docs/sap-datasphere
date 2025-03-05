@@ -2,25 +2,36 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Finding Data and Assets in the Catalog
+# Searching for Data Products and Assets in the Catalog
 
-Users with a catalog user role can discover data by searching and filtering results. They can also mark which data or assets are their favorite. To find out more about the data and assets that are in the catalog, see [Catalog Concepts](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/5772386034824e2ba7146fe7b3109d21.html "Learn about the major concepts related to the catalog and data governance.") :arrow_upper_right:.
-
-Use the catalog to find the single-source of truth for your data domain to build reusable data models. With the catalog, you can find which analytic stories in SAP Analytics Cloud are impacted by your changes. It all begins by finding the data you need.
-
-To access the catalog and search for data and assets, you must be assigned one of the following:
-
--   The *Catalog User* role.
--   The *DW Viewer*, *DW Modeler*, or *DW Integrator* role.
--   A custom role with the *Read* permission for *Catalog Asset*, *Catalog Tag Hierarchy*, *Catalog Glossary Object*, and *Catalog KPI Object*.
-
-You can search for data and assets by clicking <span class="SAP-icons-V5"></span>\(*Catalog*\)  in the side navigation menu.
+The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.
 
 
 
-<a name="loio10478251045b43e782fa15e0f3e113b0__section_akz_tj2_bxb"/>
+<a name="loio10478251045b43e782fa15e0f3e113b0__prereq_lfm_gnt_32c"/>
+
+## Prerequisites
+
+To access the catalog and view objects, you must have:
+
+-   A global role that grants you the following privileges:
+    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
+    -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
+    -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
+
+-   A scoped role that grants you the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To view objects in the *Marketplace Data Products* and *Data Providers* collections.
+
+
+The *Catalog User* global role and the *DW Viewer* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+<a name="concept_dk1_g4t_32c"/>
+
+<!-- concept\_dk1\_g4t\_32c -->
 
 ## Search by Entering a String
+
+In the side navigation area, select <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="FPA-icons-V3"></span> \(*Search*\) to access the catalog and start searching for data products and assets.
 
 You can find objects globally by using the search bar and entering all or part of the characters in an asset, term, KPI, data product, or data provider. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
@@ -92,6 +103,8 @@ Shows only marketplace data products that are created and used within SAP Datasp
 
 Data products must have a lifecycle status of active \(or listed\) before they appear in the catalog. A data product can be created and shared internally or can be licensed for free or at a cost from a third-party provider.
 
+Data products that are marked as featured appear at the beginning of the search results.
+
 </td>
 </tr>
 <tr>
@@ -104,7 +117,7 @@ Data Providers
 
 Shows a list of providers that deliver data products to companies. This tab appears only in the SAP Datasphere catalog.
 
-A data provider is a person or company that offers one or multiple data products.
+A data provider is a person or company that offers one or multiple data products. Data providers marked as featured appear at the beginning of the search results.
 
 </td>
 </tr>
@@ -160,9 +173,9 @@ Shows the data and assets that you've recently viewed.
 
 You can also open a side panel when you click <span class="FPA-icons-V3"></span> \(Show filters\) to filter by these collections and more. Click *Show More* to open a dialog with additional filter options.
 
+<a name="concept_w12_d4t_32c"/>
 
-
-<a name="loio10478251045b43e782fa15e0f3e113b0__section_vcp_wg5_zbc"/>
+<!-- concept\_w12\_d4t\_32c -->
 
 ## Search for Third-Party Data
 
@@ -171,9 +184,9 @@ You can use the Datarade Data Finder website to search and request additional th
 > ### Note:  
 > Clicking the *Request External Products* button takes you to the Datarade website. This site is external to our product.
 
+<a name="concept_qns_xnt_32c"/>
 
-
-<a name="loio10478251045b43e782fa15e0f3e113b0__section_pgp_5l2_bxb"/>
+<!-- concept\_qns\_xnt\_32c -->
 
 ## Filter by Criteria
 
@@ -240,9 +253,9 @@ Under the *System Type* filter, select **SAP Datasphere**
 
 For detailed information on the filter categories for the different collections, see [Filter Category Details](filter-category-details-3b5725b.md).
 
+<a name="concept_urf_5nt_32c"/>
 
-
-<a name="loio10478251045b43e782fa15e0f3e113b0__section_fkl_st5_cxb"/>
+<!-- concept\_urf\_5nt\_32c -->
 
 ## Define Advanced Filter Conditions
 
@@ -257,9 +270,9 @@ You can create advanced filter conditions for multiple filter categories. An obj
 > ### Example:  
 > For example, if you are viewing terms and want to create a condition to filter on the keywords “investment” and “stock”, you would click :heavy_plus_sign:. Then choose *Contains*. In the Filter Condition box, enter `investment`. Click :heavy_plus_sign: again. Choose *Contains*. In the Filter Condition box, enter `stock`, and then click *OK*. The new condition is listed in the Keyword group in the filter panel, and the filter results are automatically shown.
 
+<a name="concept_ryt_3nt_32c"/>
 
-
-<a name="loio10478251045b43e782fa15e0f3e113b0__section_ijd_2qx_kwb"/>
+<!-- concept\_ryt\_3nt\_32c -->
 
 ## Change the View for Search Results
 
@@ -274,11 +287,11 @@ The information and actions available in each view differs. See [Information and
 **Related Information**  
 
 
-[Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md "When you find an asset that interests you, you can view information about it to make sure it's the right one for your business needs. You can then choose to view or edit the asset in more details in its source system or use it in a data project.")
+[Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md "Use the catalog Assets collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.")
 
-[Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "When you find a data product that interests you, review its details page and test the sample data sets (if available) to make sure it's the right one for your business needs. After you evaluate it and decide it's what you need, you can install it to an SAP Datasphere space.")
+[Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "Use the catalog Marketplace Data Products collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md "When you find an SAP Business Data Cloud data product that interests you, you can view information about it to make sure it’s the right one for your business needs. You can then install it in your SAP Datasphere space.")
+[Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
+[System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
 

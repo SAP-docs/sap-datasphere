@@ -111,7 +111,7 @@ Displays the timestamp when the inbound buffer was last updated by a replication
 </td>
 <td valign="top">
 
-Indicates the name of the replication flow who last updated the inbound buffer.
+Indicates the name of the replication flow that last updated the inbound buffer.
 
 </td>
 </tr>

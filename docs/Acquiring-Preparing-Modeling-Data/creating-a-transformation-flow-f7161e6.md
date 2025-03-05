@@ -161,7 +161,7 @@ Creating a transformation flow involves two important steps:
     You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose:
 
     -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/running-a-flow-5b591d4.md).
-    -   *Simulate Run*: In the *Data Integration Monitor*, you can open the transformation flow and click *Run* \> *Run with Settings* \> *Simulate Run* to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table. For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
+    -   *Simulate Run*: In the *Data Integration Monitor*, you can open the transformation flow and click *Run* \> *Run with Settings* \> *Simulate Run* to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table. For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
 
 
     
@@ -277,6 +277,20 @@ Creating a transformation flow involves two important steps:
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](reviewing-and-restoring-object-versions-4f717cc.md).
     
     </td>
     </tr>

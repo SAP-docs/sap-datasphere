@@ -21,7 +21,7 @@ This topic contains the following sections:
 
 ## Preparing to Share Entities
 
-Your space is a secure area and its entities and other objects cannot be seen in other spaces unless you choose to share them. When you share an entity to another space, users in that space can use it as a source for their views and other objects.
+Your space is a secure area and its entities and other objects \(and their data\) cannot be seen in other spaces unless you choose to share them. When you share an entity to another space, users in that space can see its data and use it as a source for their views and other objects.
 
 > ### Note:  
 > Only entities \(tables and views\) and task chains can be shared. Other *Data Builder* objects and *Business Builder* objects cannot be shared to other spaces.
@@ -46,7 +46,7 @@ Now that the data is protected, the *Sales* view and the *Products* table can bo
 
 ## Share Entities
 
-When you share an entity to another space, users in that space can use it as a source for their views and other objects.
+When you share an entity to another space, users in that space can see its data and use it as a source for their views and other objects.
 
 1.  Select the entity or entities you want to share in the *Data Builder* start page or *Repository Explorer*.
 

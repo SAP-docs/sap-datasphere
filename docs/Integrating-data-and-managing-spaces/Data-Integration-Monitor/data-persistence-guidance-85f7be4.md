@@ -26,10 +26,10 @@ The information tab provides more details of the *View Analyzer Results* and the
 ![](images/Persist_Guide_2_f4948e7.png)
 
 > ### Tip:  
-> Persist only one view at a time. Check the performance of the main view after the persitence run completed. One possibility to check the performance is to simulate the data persistence in the *View Analyzer* with the option, 'With memory consumption'. Continue the process in an iterative way until the optimal performance is reached. The goal is to persist the minimal number of views required to optimize performance.
+> Persist only one view at a time. Check the performance of the main view after the persistence run completed. One possibility to check the performance is to simulate the data persistence in the *View Analyzer* with the option, 'With memory consumption'. Continue the process in an iterative way until the optimal performance is reached. The goal is to persist the minimal number of views required to optimize performance.
 
 > ### Note:  
-> To get the best results from data persistence guidance, it is recommended that the user have permission to see all views in the model from all spaces. If a user is unauthorized to see some views, the view with the highest rating value may remain hidden \(a warning will be displayed\). For more information about authorization and permision in *View Analyzer* see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
+> To get the best results from data persistence guidance, it is recommended that the user have permission to see all views in the model from all spaces. If a user is unauthorized to see some views, the view with the highest rating value may remain hidden \(a warning will be displayed\). For more information about authorization and permission in *View Analyzer* see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
 
 
 
@@ -43,15 +43,15 @@ The Data Persistence Candidate Score is not a specific inherent value but a rank
 
 ![](images/Persist_Guide_3_e85593f.png)
 
-The primary metrics are: the number of sources, the number of targets, the overall number of sources, the number of federated remote tables, the number of federated remote tables with limited adapter capabilites, number of local tables \(file\), and if the view is a SQL script view.
+The primary metrics are: the number of sources, the number of targets, the overall number of sources, the number of federated remote tables, the number of federated remote tables with limited adapter capabilities, number of local tables \(file\), and if the view is a SQL script view.
 
 > ### Note:  
-> The values of the score are relative weighted values determined by the pimary metrics in the lineage graph.
+> The values of the score are relative weighted values determined by the primary metrics in the lineage graph.
 
 > ### Note:  
-> Branches of the views that are already persisted are are not considered in the metric evaluation of the *Data Persistence Candidate Score*. It is best to persist one view at a time and then check the performance.
+> Branches of the views that are already persisted are not considered in the metric evaluation of the *Data Persistence Candidate Score*. It is best to persist one view at a time and then check the performance.
 
-A model can have a *Data Persistence Candidate Score* with values ranging from 0 - 10. Any change in the model, for example, persisting one view, will change the values due to the change in the metrics used to calcuate the data persistence score.
+A model can have a *Data Persistence Candidate Score* with values ranging from 0 - 10. Any change in the model, for example, persisting one view, will change the values due to the change in the metrics used to calculate the data persistence score.
 
 
 
@@ -59,9 +59,9 @@ A model can have a *Data Persistence Candidate Score* with values ranging from 0
 
 ## Views using Shared Entities from Other Spaces
 
-Analysis for data persistence guidance will be run for all entitites including shared entities from other spaces.
+Analysis for data persistence guidance will be run for all entities including shared entities from other spaces.
 
-The best candidate score will be computed regardless of the entitites the views belong to. Results of the analysis will be able to be viewed by those that have the authorization. If the best candidate is from a space the user does not have the authorization to see the result from, a message will be shown. See [Authorization and Permissions](authorization-and-permissions-e5f9e81.md) for more information.
+The best candidate score will be computed regardless of the entities the views belong to. Results of the analysis will be able to be viewed by those that have the authorization. If the best candidate is from a space the user does not have the authorization to see the result from, a message will be shown. See [Authorization and Permissions](authorization-and-permissions-e5f9e81.md) for more information.
 
 
 

@@ -335,6 +335,20 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     <tr>
     <td valign="top">
     
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](../reviewing-and-restoring-object-versions-4f717cc.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Details
     
     </td>

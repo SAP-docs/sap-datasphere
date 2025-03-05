@@ -1,5 +1,7 @@
 <!-- loiob2915bf4c184465983f2ed055ebc00fc -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Review Your Space Status
 
 Color codes and icons indicate the health of a space.
@@ -27,12 +29,10 @@ Description
 <tr>
 <td valign="top">
 
-![](images/Cold_Space_Status_ff2d06e.jpg)
+<span style="color:#007cc0;"><span class="FPA-icons-V3"></span></span> \(**Cold**\)
 
 </td>
 <td valign="top">
-
-**Cold**
 
 The used storage is 5% or less.
 
@@ -41,26 +41,22 @@ The used storage is 5% or less.
 <tr>
 <td valign="top">
 
-![](images/Green_Space_Status_f746833.jpg)
+<span style="color:#007833;"><span class="FPA-icons-V3"></span></span> \(**Healthy**\)
 
 </td>
 <td valign="top">
 
-**Healthy**
-
-The used storage is between 6% and 90%.
+The used storage is between 6% and 90%
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-![](images/Hot_Space_Status_c64656e.jpg)
+<span style="color:#d14900;"><span class="FPA-icons-V3"></span></span> \(**Critical**\)
 
 </td>
 <td valign="top">
-
-**Critical**
 
 The used storage is greater than 90%.
 
@@ -73,12 +69,10 @@ If your space exceeds it's storage quota, it might change to a locked state.
 <tr>
 <td valign="top">
 
-![](images/Status_Locked_Space_9fa9e79.jpg)
+<span style="color:#cc1919;"><span class="FPA-icons-V3"></span></span> \(**Locked**\)
 
 </td>
 <td valign="top">
-
-**Locked**
 
 A space is locked:
 

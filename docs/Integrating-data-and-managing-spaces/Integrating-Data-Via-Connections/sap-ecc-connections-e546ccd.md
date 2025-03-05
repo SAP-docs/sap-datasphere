@@ -171,7 +171,7 @@ Enter the name of the message server to which you want to connect to.
 </td>
 <td valign="top">
 
-Enter the message server port.
+Enter the message server port \(numerical\).
 
 </td>
 </tr>
@@ -312,6 +312,13 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
+
+> ### Note:  
+> -   If the *SAP Logon Connection Type* for your connection is *Application Server*: Enter ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
+> 
+> -   If the *SAP Logon Connection Type* for your connection is *Message Server*: Enter a numerical port and make sure it is the port defined in the Cloud Connector configuration.
+
+
 
 </td>
 </tr>

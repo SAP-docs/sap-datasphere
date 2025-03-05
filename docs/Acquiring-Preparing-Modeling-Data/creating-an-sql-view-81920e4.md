@@ -494,6 +494,20 @@ If you are not comfortable with SQL, you can still build a view in SAP Dataspher
     <tr>
     <td valign="top">
     
+    Versions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Version History* dialog for the object. 
+
+    See [Reviewing and Restoring Object Versions](reviewing-and-restoring-object-versions-4f717cc.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Details
     
     </td>

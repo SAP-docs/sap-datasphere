@@ -11,5 +11,5 @@ You cannot:
 -   Create your own namespaces.
 -   Use a dot in any technical name.
 
-For information about copying a space and its contents to create unprotected copies of namespace-protected content, see [Copy a Space and its Contents](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/73068ac8e1934615b419d8c6c4095a9a.html "You can copy a space and all the Data Builder objects it contains into a new space.") :arrow_upper_right:.
+For information about copying a space and its contents to create unprotected copies of namespace-protected content, see [Copy a Space and its Contents](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/73068ac8e1934615b419d8c6c4095a9a.html "You can copy a space and all the Data Builder objects it contains into a new space.") :arrow_upper_right:.
 

@@ -66,7 +66,7 @@ Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. 
 
     4.  Choose *SAP HANA Connection*.
 
-    5.  Choose *Connect to SAP Data Warehouse Cloud via JDBC*.
+    5.  Choose *Connect to SAP Datasphere via JDBC*.
 
     6.  Enter the name of the agent registration \(agent name\).
 

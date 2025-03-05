@@ -16,11 +16,20 @@ Define filters to delimit the scope of your replication flow.
 
     The key symbol next to a column name indicates a key field.
 
-4.  Select the relevant condition and enter the relevant values.
+4.  Select the relevant filter condition and enter the desired values.
 
-    What options you have here depends on the replication objects you choose and their respective data types.
+    Supported filters:
 
-    For a string field, for example, you can only choose *equal to* and enter a value. For an integer field, you can use mathematical operators, such as *greater than*, and enter a numeric value.
+    -   *Less than*
+    -   *Greater than*
+    -   *Great Than* and *Equal To*
+    -   *Less Than* and *Equal To*
+    -   *Between*
+
+    The options you can select depend on the replication objects you choose and their respective data types and connections:
+
+    -   Boolean data type can only support *Equal To* for SAP ABAP ODP and SAP S/4HANA Connections.
+    -   Binary data type can only support *Equal To* for SAP HANA \(internal and external\) connections.
 
 5.  When you're done, choose *Add Expression*.
 

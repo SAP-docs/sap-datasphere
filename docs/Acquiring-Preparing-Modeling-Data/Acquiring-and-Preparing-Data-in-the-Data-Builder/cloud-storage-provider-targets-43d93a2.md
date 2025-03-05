@@ -185,6 +185,11 @@ The `.sap.partfile.metadata` objects include metadata information for the replic
 
 The replication flow creates multiple files \(<code>part-*.<i class="varname">&lt;extension&gt;</i></code>\) during initial and delta loading. The number and size of these files depends on the source table size and structure as well as change frequency \(during delta loading\).
 
+> ### Note:  
+> Parquet name files are generated using this logic:
+> 
+> The name pattern is part-<Replication Flow Task ID \(UUID, SAP internal\)\>-<delimitation number of the task \(01 to 60, SAP internal\)\>.parquet. This is just a random UUID+NN that is unique to the whole replication task process, to avoid accidentally overwriting an existing file.
+
 Each file contains the source columns as defined in the mapping for the replication object in the replication flow. The system appends the following columns:
 
 -   *\_\_operation\_type*: Identifies the type of target row:

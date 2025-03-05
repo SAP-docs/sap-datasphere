@@ -104,7 +104,7 @@ For information about working with SAP Datasphere and HDI containers, see [Excha
     
     You will be notified when your ticket has been processed.
 
-4.  Build one or more new HDI containers in the SAP Datasphere run-time database \(identified by the *Database ID* on the SAP Datasphere *About* dialog\).
+4.  Build one or more new HDI containers in the SAP Business Technology Platform Space and they will be created in the SAP Datasphere run-time database \(identified by the *Database ID* on the SAP Datasphere *About* dialog\).
 
     For information about setting up your build, see [Set Up an HDI Container](https://help.sap.com/docs/HANA_SERVICE_CF/cc53ad464a57404b8d453bbadbc81ceb/93cdbb1bd50d49fe872e7b648a4d9677.html?locale=en-US&version=Cloud).
 
