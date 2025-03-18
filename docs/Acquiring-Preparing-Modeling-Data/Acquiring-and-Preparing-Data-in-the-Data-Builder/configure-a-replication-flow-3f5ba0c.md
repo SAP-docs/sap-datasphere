@@ -19,6 +19,11 @@ Define settings and properties for your replication flow and individual replicat
         > ### Note:  
         > -   A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status *Active* until it is stopped or paused or an issue occurs.
         > 
+        >     > ### Caution:  
+        >     > You must always stop or pause a running replication flow before a source system downtime. For more information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:
+        > 
+        >     .
+        > 
         > -   The system load caused by the delta load operations can vary substantially depending on the frequency of changes in your data source in combination with the interval length you define. Make sure that your tenant configuration supports your settings. For more information, see [Configure the Size of your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
         > 
         > -   The next interval starts after all changes from the previous interval have been replicated. For example, if replicating a set of changes starts at 10:30 a. m. and takes until 10:45 a. m., and you have defined one-hour intervals, the next delta replication starts at 11:45 a. m.
@@ -26,14 +31,14 @@ Define settings and properties for your replication flow and individual replicat
         > -   If your source object is a local table, you can only use load type *Initial and Delta* if *Delta Capture* is switched on for the local table \(see [Capturing Delta Changes in Your Local Table](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/154bdffb35814d5481d1f6de143a6b9e.html)\).
 
 
-2.  On the *Settings* tab of the canvas, review the *Truncate* setting and change it as required. This setting is only relevant if the target structure already exists and contains data. If the target structure does not yet exist or is empty, you can ignore the *Truncate* setting.
+2.  On the *Settings* tab of the canvas, review the *Delete All Before Loading* setting and change it as required. This setting is only relevant if the target structure already exists and contains data. If the target structure does not yet exist or is empty, you can ignore the *Delete All Before Loading* setting.
 
-    -   If *Truncate* is activated for a **database table**, when you start the replication run, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source.
+    -   If *Delete All Before Loading* is activated for a **database table**, when you start the replication run, the system deletes the table content, but leaves the table structure intact and fills it with the relevant data from the source.
 
         If not, the system inserts new data records after the existing data in the target. For data records that already exist in the target and have been changed in the source, the system updates the target records with the changed data from the source using the UPSERT mode.
 
-    -   For cloud storage provider targets, *Truncate* must always be set. \(If you still try to run a replication flow for an existing target without the *Truncate* option, you get an error message.\) When you start the replication run, the system deletes the object completely \(data and structure\) and re-creates it based on the source data.
-    -   For Apache Kafka and Confluent Kafka, when *Truncate* is enabled, the target topic is re-created. This means that all existing records in that topic are deleted as well. Truncation has no effect on the schema registry.
+    -   For cloud storage provider targets, *Delete All Before Loading* must always be set. \(If you still try to run a replication flow for an existing target without the *Delete All Before Loading* option, you get an error message.\) When you start the replication run, the system deletes the object completely \(data and structure\) and re-creates it based on the source data.
+    -   For Apache Kafka and Confluent Kafka, when *Delete All Before Loading* is enabled, the target topic is re-created. This means that all existing records in that topic are deleted as well. Truncation has no effect on the schema registry.
 
 
 3.  Click <span class="FPA-icons-V3"></span> \(Browse source settings\) to review the source settings and change them as appropriate.

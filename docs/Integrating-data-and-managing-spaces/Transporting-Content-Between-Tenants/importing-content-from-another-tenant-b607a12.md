@@ -21,6 +21,7 @@ To import content into a space via the *Import* app, you must have either:
 
 A global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Spaces* \(`C-------`\) - To create spaces.
@@ -33,7 +34,9 @@ The *DW Administrator* role, for example, grants these privileges.
 
 A combination of a global role and a scoped role:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   A global role that grants you the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
 
 -   A scoped role that grants you access to the space or spaces to import into with the following privileges:

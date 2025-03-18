@@ -268,7 +268,7 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Truncate
+    Delete All Before Loading
     
     </td>
     <td valign="top">
@@ -326,7 +326,7 @@ For more information about available connection types, sources, and targets, see
 
 8.  Click <span class="FPA-icons-V3"></span> \(Run\) to start your replication flow.
 
-    For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
+    For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 
 9.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
 

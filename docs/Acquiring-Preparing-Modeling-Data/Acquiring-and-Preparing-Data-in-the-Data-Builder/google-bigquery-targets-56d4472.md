@@ -33,7 +33,7 @@ This topic contains the following sections:
 
 The system always uses **write mode** *Append*.
 
-The *Truncate* setting is not available.
+The *Delete All Before Loading* setting is not available.
 
 The target container is a Google BigQuery **dataset**.
 

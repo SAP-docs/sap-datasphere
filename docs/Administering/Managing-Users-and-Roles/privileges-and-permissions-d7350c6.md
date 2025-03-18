@@ -148,7 +148,7 @@ Allows users to log into SAP Datasphere. Included in all standard roles except f
 
 -   *Read* - Allows users of the View Analyzer to download the generated SQL analyzer plan file.
 
-    See [Exploring Views with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:
+    See [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:
 
 -   *Execute* - not in use
 
@@ -716,7 +716,7 @@ Allows access to the *Data Integration Monitor* app:
 > -   To set up or change partitioned data loading in the *Remote Tables* monitor or in the *Views* monitor.
 > -   To start the *View Analyzer* in the *Views* monitor.
 > 
-> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
+> See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
 
 > ### Note:  
 > To run and schedule flows, you must have the privilege *Data Warehouse Data Integration* with *Read*, *Update* and *Execute* permissions.

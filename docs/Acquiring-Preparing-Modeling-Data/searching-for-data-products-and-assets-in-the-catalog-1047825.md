@@ -12,18 +12,14 @@ The catalog is the place where you can discover data products and assets, such a
 
 ## Prerequisites
 
-To access the catalog and view objects, you must have:
+To access the catalog and view objects, you must have a global role that grants you the following privileges:
 
--   A global role that grants you the following privileges:
-    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
-    -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
-    -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
+-   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
+-   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 
--   A scoped role that grants you the following privilege:
-    -   *Data Warehouse General* \(`-R------`\) - To view objects in the *Marketplace Data Products* and *Data Providers* collections.
-
-
-The *Catalog User* global role and the *DW Viewer* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="concept_dk1_g4t_32c"/>
 
@@ -39,7 +35,7 @@ If you've searched for objects before, clicking in the search field shows a list
 
 Filter the search results based on selected criteria to limit the number of results.
 
-Tabs next to the *Filter* icon let you narrow your results by collection. The tabs shown are based on your permissions:
+Tabs next to the *Filter* icon let you narrow your results by collection. The collections shown are based on your permissions:
 
 
 <table>
@@ -87,7 +83,7 @@ SAP Business Data Cloud Data Products
 </td>
 <td valign="top">
 
-Shows data products from other SAP cloud applications and partners.
+Shows data products from other SAP cloud applications and partners. This collection appears if the SAP Datasphere tenant is part of an SAP Business Data Cloud formation \(see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "SAP Business Data Cloud is a fully managed SaaS solution that unifies and governs all SAP data and seamlessly connects with third-party data—giving line-of-business leaders context to make even more impactful decisions.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -99,11 +95,13 @@ Marketplace Data Products
 </td>
 <td valign="top">
 
-Shows only marketplace data products that are created and used within SAP Datasphere. This tab appears only in the SAP Datasphere catalog.
+Shows only marketplace data products that are created and used within SAP Datasphere.
 
 Data products must have a lifecycle status of active \(or listed\) before they appear in the catalog. A data product can be created and shared internally or can be licensed for free or at a cost from a third-party provider.
 
 Data products that are marked as featured appear at the beginning of the search results.
+
+This collection is only available in the SAP Datasphere catalog.
 
 </td>
 </tr>
@@ -115,9 +113,11 @@ Data Providers
 </td>
 <td valign="top">
 
-Shows a list of providers that deliver data products to companies. This tab appears only in the SAP Datasphere catalog.
+Shows a list of providers that deliver data products to companies.
 
 A data provider is a person or company that offers one or multiple data products. Data providers marked as featured appear at the beginning of the search results.
+
+This collection is only available in the SAP Datasphere catalog.
 
 </td>
 </tr>

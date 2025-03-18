@@ -99,6 +99,7 @@
         -   [Cancel a Transformation Flow Run](Data-Integration-Monitor/cancel-a-transformation-flow-run-ab885f0.md)
         -   [Watermarks](Data-Integration-Monitor/watermarks-890897f.md)
         -   [Change the Run Mode for a Transformation Flow](Data-Integration-Monitor/change-the-run-mode-for-a-transformation-flow-f7da029.md)
+        -   [Metrics for Transformation Flows](Data-Integration-Monitor/metrics-for-transformation-flows-b42fa5b.md)
         -   [Explore Transformation Flows](Data-Integration-Monitor/explore-transformation-flows-7588192.md)
     -   [Monitoring Remote Queries](Data-Integration-Monitor/monitoring-remote-queries-806d7f0.md)
         -   [Creating Statistics for Your Remote Tables](Data-Integration-Monitor/creating-statistics-for-your-remote-tables-e4120bb.md)

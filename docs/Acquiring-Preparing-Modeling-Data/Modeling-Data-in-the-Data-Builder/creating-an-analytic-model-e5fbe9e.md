@@ -51,7 +51,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     <tr>
     <td valign="top">
     
-    Business Name
+    Name
     
     </td>
     <td valign="top">
@@ -109,6 +109,12 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     
 4.  Select your fact source on the canvas to select or deselect any measures, associated dimensions, or attributes in the properties panel on the right. For more information, see [Add a Dimension to an Analytic Model](add-a-dimension-to-an-analytic-model-4caf098.md).
 
+    -   add measures. See [Create a Measure in an Analytic Model](create-a-measure-in-an-analytic-model-e4cc3e8.md).
+    -   add or deselect dimensions. Dimensions used in associations cannot be unselected. See [Add a Dimension to an Analytic Model](add-a-dimension-to-an-analytic-model-4caf098.md).
+    -   add variables. See [Create a Variable in an Analytic Model](create-a-variable-in-an-analytic-model-cdd8fa0.md).
+    -   add data access controls. See [Apply a Data Access Control to an Analytic Model](apply-a-data-access-control-to-an-analytic-model-8d8e2f9.md).
+    -   add a filter. See [Create a Global Filter in an Analytic Model](create-a-global-filter-in-an-analytic-model-e9924dc.md).
+
     > ### Note:  
     > Attributes of type ***LargeString*** are not consumable in SAP Analytics Cloud.
 
@@ -131,41 +137,17 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     <tr>
     <td valign="top">
     
-    Alias
+    Business Name
     
     </td>
     <td valign="top">
     
-    You can change the alias of this item.The alias is the name that is shown in the story in SAP Analytics Cloud.
+    You can change the business name of this item.This is the name that is shown in the story in SAP Analytics Cloud.
 
     > ### Example:  
     > In many cases you need to have a more specific name for a field than the source provides. For example, the field name is *Costcenter*, but you want to specify if it is to *Receiving Costcenter* or *Sending Costcenter*.
 
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Measures
-    
-    </td>
-    <td valign="top">
-    
-    You can add or deselect measures. You can copy measures \(which are not fact source measures\) to create a new measure with same properties.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Associated Dimensions
-    
-    </td>
-    <td valign="top">
-    
-    You can add or deselect associated dimensions.
     
     </td>
     </tr>
@@ -184,12 +166,12 @@ This graphic shows the role of the analytic model within SAP Datasphere:
     <tr>
     <td valign="top">
     
-    Input Parameters
+    Associated Dimensions
     
     </td>
     <td valign="top">
     
-    You can add or deselect input parameters.
+    You can display associated dimensions.
     
     </td>
     </tr>

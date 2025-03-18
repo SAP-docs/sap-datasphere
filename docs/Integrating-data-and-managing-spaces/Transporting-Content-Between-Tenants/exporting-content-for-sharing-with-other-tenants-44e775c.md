@@ -8,7 +8,9 @@ You can use the *Transport* app to export content from one or more spaces for sh
 
 
 
-## Context
+<a name="loio44e775c3b7d24d2483caaf02c598bc21__prereq_tcs_hfk_m2c"/>
+
+## Prerequisites
 
 To export content from a space via the *Export* app, you must have either:
 
@@ -19,6 +21,7 @@ To export content from a space via the *Export* app, you must have either:
 
 A global role that allows you to access and export content from any space, by granting you the following privileges:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Spaces Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
@@ -31,9 +34,11 @@ The *DW Administrator* role, for example, grants these privileges.
 A combination of a global role and a scoped role:
 
 -   A global role that grants you the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
 
 -   A scoped role that grants you access to the space or spaces to export from with the following privileges:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Spaces Files* \(`-R------`\) - To view specific spaces and their contents.
     -   *Data Warehouse Data Builder* \(`-R------`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
 
@@ -45,6 +50,10 @@ The *DW Space Administrator* global and scoped role templates, for example, gran
 </table>
 
 For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+## Context
 
 You can share content across tenants from one or more landscapes and set access rights for each sharing destination, for example, to allow other tenants to update a package and export it again.
 

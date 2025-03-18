@@ -20,9 +20,7 @@ A transformation flow writes data to a target table. You can create a new target
 
 
     > ### Note:  
-    > If the load type of the transformation flow is *Initial and Delta* and you change the target table, only delta data will be transferred to the new target table. If you want to transfer all data to the target table, you can reset the watermark in the *Data Integration Monitor*. For more information, see [Watermarks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/890897f00a4944c7a6f90d3816a8d4c6.html "When you run a transformation flow that loads delta changes to a target table, the system uses a watermark (a timestamp) to track the data that has been transferred.") :arrow_upper_right:.
-    > 
-    > Local Tables \(File\) cannot be partitioned.
+    > If the load type of the transformation flow is *Initial and Delta* and you change the target table, only delta data will be transferred to the new target table. If you want to transfer all data to the target table, you can reset the watermark in the *Data Integration Monitor*. For more information, see [Watermarks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/890897f00a4944c7a6f90d3816a8d4c6.html "When you run a transformation flow that loads delta changes to a target table, the system uses a watermark (a timestamp) to track the data that has been transferred.") :arrow_upper_right:.
 
 2.  Click the target node to display its properties in the side panel, and review the properties in the *General* section:
 

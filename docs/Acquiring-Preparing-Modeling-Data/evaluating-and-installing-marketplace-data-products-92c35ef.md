@@ -15,10 +15,10 @@ Use the catalog *Marketplace Data Products* collection to view data products for
 To search for and evaluate objects in the *Marketplace Data Products* collection, you must have:
 
 -   A global role that grants you the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Catalog Asset* \(`–R–––--`\) - To access the catalog.
 
 -   A scoped role that grants you access to the space or spaces to install to, with the following privileges:
-    -   *Data Warehouse General* \(`-R------`\) - To view objects in the *Marketplace Data Products* and *Data Providers* collections.
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRU––--`\) - To install data products to a space.
     -   *Data Warehouse Data Integration* \(`-RU––--`\) - To acquire data in the space where the data product is installed.
@@ -27,15 +27,13 @@ To search for and evaluate objects in the *Marketplace Data Products* collection
 
 The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
-The *Marketplace Data Products* and *Data Providers* collections are only available in the SAP Datasphere catalog.
-
 <a name="concept_atb_t5v_zcc"/>
 
 <!-- concept\_atb\_t5v\_zcc -->
 
 ## Evaluating a Marketplace Data Product
 
-A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Marketplace Data Products* collection and then select one or more filters to narrow the search results.
+A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Marketplace Data Products* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog.
 
 To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like its name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation \(see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md)\).
 

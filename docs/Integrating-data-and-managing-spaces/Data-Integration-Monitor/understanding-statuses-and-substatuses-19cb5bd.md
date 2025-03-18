@@ -6,7 +6,7 @@
 
 When you run an activity \(replicate a remote table, persist a view, etc..\), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the *System Monitor*.
 
-InSAP Datasphere , the activities can take a minimum of 3 main statuses:
+In SAP Datasphere , the activities can take a minimum of 3 main statuses:
 
 -   *Running* or *Loading*: The task is currently running.
 -   *Completed* or *Available*: The task has completed successfully.

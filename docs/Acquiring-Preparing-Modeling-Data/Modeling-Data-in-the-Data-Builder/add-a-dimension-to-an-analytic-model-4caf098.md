@@ -8,26 +8,7 @@ You can add dimensions to your analytic model.
 
 ## Context
 
-The source of your analytic model can contain associations to dimensions, texts, and hierarchies. Dimensions contain attributes that can be used to analyze and categorize measures defined in other entities. Attributes are used as dimensions in the analytic model. When you take over associated dimensions from your source, the object type is also taken over. Thus, you can easily build a multidimensional model in a star schema with the fact source in the center and the dimensions as direct associations.
-
-These associations are supported:
-
--   Associations to dimensions \(associations to a table or a view with semantic usage Dimension\)
--   Associations to a text table \(associations to a table or a view with semantic usage Text\). They are automatically used by the analytic model if a dimension has a text association.
--   Association from a dimension to a hierarchy table. They are automatically used by the analytic model if a dimension has a hierarchy association.
-
-You can also add dimensions of dimensions.
-
-The graphic shows the star schema of the analytic model: the fact source is in the center and the dimensions are surrounding it. The dimension *Product ID* also has a dimension: *Product Category*.
-
-![The analytic model is a multidimensional model in a star schema with the fact source in the center and the dimensions surrounding it.](images/DWC_-_Analytic_model_star_1587456.png)
-
-Here, you can see that the same dimension can be included more than once. To be able to distiguish between the different roles of the dimension in the data preview and the story in SAP Analytics Cloud, you can give the dimensions different aliases. The alias enables you to give a dimension a more specific name for a field than the source provides.
-
-> ### Example:  
-> The dimension V\_Employees is included twice, but can be distiguished by the aliases *Responsible Manager*and *Product Manager*.
-
-![The graphic has explanatory text.](images/DWC_-_analytic_model_dimensions_8e178de.png)
+For more information about dimensions, see [What's a Dimension?](what-s-a-dimension-b05ddf4.md).
 
 
 
@@ -47,6 +28,6 @@ There are different ways to add dimensions:
     -   You can add or deselect associated dimensions.
     -   You can add or deselect attributes. See also [Exclude Non-Navigable Dimension Attributes](exclude-non-navigable-dimension-attributes-4d96a8a.md).
     -   You can specify a custom prefix or suffix for the technical name of attributes. For more information, see [Add a Prefix or a Suffix to Dimension Attributes](add-a-prefix-or-a-suffix-to-dimension-attributes-0373c60.md).
-    -   You can change the technical name of the attributes.
+    -   You can change the technical name of the attributes. This is helpful when you have duplicated attributes in your analytic model, and you want to differentiate between them.
 
 

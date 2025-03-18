@@ -20,7 +20,7 @@ When working in a view transform, you are using an editor similar to the standar
     > 
     > -   It is no longer possible to preview the data being output by the view transform.
     > -   The system adds the following read-only input parameters to the view transform:
-    >     -   REQTSN\_LOW - When loading delta changes, the value of this input parameter is the watermark. When loading all active records, the value of this input parameter is the minimum timestamp. For more information, see [Watermarks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/890897f00a4944c7a6f90d3816a8d4c6.html "When you run a transformation flow that loads delta changes to a target table, the system uses a watermark (a timestamp) to track the data that has been transferred.") :arrow_upper_right:.
+    >     -   REQTSN\_LOW - When loading delta changes, the value of this input parameter is the watermark. When loading all active records, the value of this input parameter is the minimum timestamp. For more information, see [Watermarks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/890897f00a4944c7a6f90d3816a8d4c6.html "When you run a transformation flow that loads delta changes to a target table, the system uses a watermark (a timestamp) to track the data that has been transferred.") :arrow_upper_right:.
     >     -   REQTSN\_HIGH - The value of this input parameter is the maximum timestamp.
     >     -   EXTRACTION\_MODE - The value of this input parameter is DELTA\_AI to indicate the loading of delta changes from the remote table.
 

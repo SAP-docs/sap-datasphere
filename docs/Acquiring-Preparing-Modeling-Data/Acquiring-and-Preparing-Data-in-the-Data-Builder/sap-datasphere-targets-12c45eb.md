@@ -44,7 +44,7 @@ The following **sources** are **not** supported:
 
 -   **Delta capturing** is **activated** by default and cannot be switched off.
 
--   **Truncate** is **deactivated** by default and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*.
+-   **Delete All Before Loading** is **deactivated** by default and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*.
 
 -   Only load type *Initial and Delta* can be used.
 

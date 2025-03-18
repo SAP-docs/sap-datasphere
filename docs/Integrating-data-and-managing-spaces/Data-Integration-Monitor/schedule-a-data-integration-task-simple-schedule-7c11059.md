@@ -30,9 +30,6 @@ You can schedule or unschedule data integration tasks such as remote data replic
 
 The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of the owner of the schedule. Per default, the user who creates a schedule is the owner of the schedule. You can takeover the ownership, however, if required. Scheduled tasks run in the background according to the settings defined in the schedule.
 
-> ### Note:  
-> By default, time in the monitors and in the scheduling dialog box is specified in your browser's timezone whereas the time specified in the audit log is specified in Coordinated Universal Time \(UTC\).
-
 
 
 <a name="loio7c11059ed3314e1fb753736b7867512c__steps_xx4_vyd_h4b"/>
@@ -59,6 +56,8 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     > Tasks for which you own a schedule without having authorized SAP Datasphere to run scheduled tasks on your behalf before won't be executed but will fail.
 
 7.  Define your scheduling options:
+
+    ****
 
 
     <table>
@@ -149,9 +148,32 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Duration*
+    *Time Zone*
+    
+    </td>
+    <td valign="top">
+    
+    -   *UTC*: This is the default schedule setting.
+    -   *Region/Location*: You can choose a regional time zone. This will automatically adjust for daylight saving time.
 
-    Elastic compute nodes only. See [Run an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:
+
+    
+    </td>
+    <td valign="top">
+    
+    UTC is the default setting. You can also choose a regional time zone in the format of Region/Location, for example, Europe/Berlin, America/New\_York, or Asia/Kolkata.
+
+    > ### Note:  
+    > Make sure your location reflects local daylight saving changes when choosing a time zone. Schedules will be automatically updated to reflect daylight saving time changes locally.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Duration* Elastic compute nodes only. See [Run an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
     
     </td>
     <td valign="top">
@@ -208,12 +230,39 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
-    You can see a preview of the schedule and when the five next runs are planned.
+    *Show Runs In:* 
+
+    -   *UTC*
+    -   *Local Time*
+    -   *Region/Location* selected in the *Time Zone* drop down.
+
+
     
     </td>
     <td valign="top">
     
-    Schedules are created in Coordinated Universal Time \(UTC\) but you can also view the next runs in local time.
+    Preview your next five runs in either UTC time, local time, or the Region/Location time selected. The preview will take into consideration changes in daylight saving time.
+
+    Let's look at an example. You schedule a task to run in the time zone America/Los\_Angeles every week on Monday at 20:00. Your start date is March 5, 2025. You want to preview your next runs.
+
+    *Show Runs In:*
+
+    -   *UTC*: You have scheduled your task to run in the America/Los\_Angeles time zone. You check your next scheduled runs in UTC time.
+        -   Mar 11, 2025 3:00:00
+        -   Mar 18, 2025 3:00:00
+        -   Mar 25, 2025 3:00:00
+        -   Apr 1, 2025 3:00:00
+        -   Apr 8, 2025 3:00:00
+
+    -   *Local Time*: You have scheduled your task to run in the America/Los\_Angeles time zone. You are working in Europe/Berlin time zone and check your scheduled run times in your local time zone.
+        -   Mar 11, 2025 4:00:00
+        -   Mar 18, 2025 4:00:00
+        -   Mar 25, 2025 4:00:00
+        -   Apr 1, 2025 5:00:00
+        -   Apr 8, 2025 5:00:00
+
+
+    Daylight saving time in the Berlin location of Europe takes place at the end of March 2025. UTC time does not take daylight saving into consideration. You can see that daylight saving time has automatically been adjusted for in your local time zone \(Europe/Berlin\).
     
     </td>
     </tr>
@@ -232,7 +281,7 @@ The column *Frequency* shows the status *Scheduled*. By clicking the status you 
 
 The column *Schedule Owners* displays the name of the current schedule owner.
 
-The *Next Run* colums shows the start date and time of the next run according to the scheduling settings.
+The *Next Run* column shows the start date and time of the next run according to the scheduling settings.
 
 As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(Views Logs\)*, or *\(Details\)*.
 
@@ -244,7 +293,7 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* colum gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* column gets cleared.
 
 You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 

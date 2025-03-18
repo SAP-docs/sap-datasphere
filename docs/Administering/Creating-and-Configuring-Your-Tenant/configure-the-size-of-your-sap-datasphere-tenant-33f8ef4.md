@@ -416,7 +416,7 @@ Even if you don’t allocate blocks here, you have a default number of execution
 </td>
 <td valign="top">
 
-Displays the number of execution hours available for data integration applications per month. It is calculated by multiplying the number of allocated compute blocks by the number of execution hours per block \(as per your contract\).
+Displays the number of execution hours available for data integration applications per month. It is calculated by multiplying the number of allocated compute blocks by the number of execution hours per block \(per your contract\). You can increase or decrease the data integration node hours without downtime. The amount of job processing in parallel is automatically adjusted within the limits set: Every 100h of your allocated data integration hours gets one extra parallel pod for job processing. For example, if you have 400h or data integration, you will have a maximum of four parallel pods available for processing.
 
 > ### Note:  
 > If you exceed the available execution hours, your data integration processes \(such as replication flow runs\) continues running to avoid interrupting critical integration scenarios, which can result in additional costs \(depending on your plan\).
@@ -541,7 +541,7 @@ Displays the data volume available for premium outbound integration per month. I
 </td>
 <td valign="top">
 
-Displays the allocated data volume \(in GB\) for premium outbound integration so that you can easily compare it against the used volume.
+Displays the monthly allocated data volume \(in GB\) for premium outbound integration so that you can easily compare it against the used volume.
 
 </td>
 </tr>

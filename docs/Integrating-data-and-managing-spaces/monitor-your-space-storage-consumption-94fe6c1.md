@@ -4,6 +4,26 @@
 
 See the storage amount assigned to and used by your space.
 
+
+
+<a name="loio94fe6c13f6a340288cd50ee355566591__section_hqj_whj_42c"/>
+
+## Prerequisites
+
+To monitor the storage consumption of your space, you must have a scoped role that grants you access to your space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-R------`\) - To open your space in the *Space Management* tool.
+-   *Space Files* \(`-R------`\) - To view objects in your space.
+
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio94fe6c13f6a340288cd50ee355566591__section_nlt_thj_42c"/>
+
+## Procedure
+
 To open the monitoring page, select your space and click *Monitor* from the *Space Management* page or alternatively open your space and click *Monitor* on the upper-right side of your space.
 
 > ### Note:  

@@ -7,7 +7,7 @@
 Whether and how you can change the settings for a replication flow depends on several factors.
 
 > ### Tip:  
-> This text explains the options for editing the replication flow itself \(in the *Data Builder*\). For monitoring-related information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:.
+> This text explains the options for editing the replication flow itself \(in the *Data Builder*\). For monitoring-related information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:.
 
 
 
@@ -42,7 +42,7 @@ You can make the following changes to a replication flow with status *Active* wi
 -   Change the source or target thread limit: Choose <span class="FPA-icons-V3"></span> \(Browse source settings\) or <span class="FPA-icons-V3"></span> \(Browse target settings\), respectively, change the value as required, save your change, and deploy the flow again.
 
 
-To change the load type, truncate setting, projections, or filters for a replication flow, you need to stop the replication flow, make the required changes, deploy the replication flow, and then run it again.
+To change the load type, delete all before loading setting, projections, or filters for a replication flow, you need to stop the replication flow, make the required changes, deploy the replication flow, and then run it again.
 
 
 

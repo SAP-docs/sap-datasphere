@@ -48,10 +48,67 @@ If you are using an existing table as the target object, this table may contain 
 
 -   If you activate the property *Skip Unmapped Columns*, the system ignores the unmapped target columns during the replication flow. Their existing content remains as-is.
 
--   If you deactivate it, you get an error message for each unmapped target column when saving the replication flow.
+    The way these additional columns will appear when you perform a data preview depends on your target type:
 
 
-For replication flows created before version 2025.01 of SAP Datasphere, the property is deactivated by default, but you can activate it as required. For replication flows created with version 2025.01 or later, this property is activated by default, and you can deactivate it as required.
+    <table>
+    <tr>
+    <th valign="top">
+
+    Target
+    
+    </th>
+    <th valign="top">
+
+    How Additional Columns are Displayed
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SAP Datasphere \(SAP HANA space\)
+    
+    </td>
+    <td valign="top">
+    
+    Additional columns will appear with configured default value or null.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SAP Datasphere \(File Space\)
+    
+    </td>
+    <td valign="top">
+    
+    Additional columns will not appear
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Confluent / Kafka
+    
+    </td>
+    <td valign="top">
+    
+    Additional columns will not appear
+    
+    </td>
+    </tr>
+    </table>
+    
+    > ### Note:  
+    > Changing the toggle on an active replication flow will have no effect.
+
+-   If you deactivate it, you get an error message for each unmapped target column when saving the replication flow. However, you can still manually set each column to *Skip Mapping* in the *Mapping* tab.
+
+
+For replication flows created before version 2025.01 of SAP Datasphere, the property is deactivated by default, but you can activate it as required. For replication flows created with version 2025.02 or later, this property is activated by default, and you can deactivate it as required.
 
 If a projection is defined for a target column that doesn't exist in the source, this projection takes precedence over the skipping setting. If there are no unmapped columns in the target, activating or deactivating this property is of no effect.
 

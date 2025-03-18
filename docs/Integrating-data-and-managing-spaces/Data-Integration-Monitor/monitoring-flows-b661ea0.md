@@ -89,7 +89,7 @@ For more information and points to consider when using replication flows, see al
     All these statuses can be combined with a sub-status. For more information on sub-statuses, see [Understanding Statuses and Substatuses](understanding-statuses-and-substatuses-19cb5bd.md).
 
     > ### Note:  
-    > If the status of a flow is empty, it means that the flow has not run yet.
+    > If the status of a flow is empty, it means that the flow has not run yet. The status is updated every 10 minutes for replication flow \(except when it is run via a task chain: It updates every 2 minutes\), and every 1 minute for a transformation flow or a data flow. To get an immediate updated status, navigate to the run details page.
 
     For more information on specifics for replication flow runs, see [Working With Existing Replication Flow Runs](working-with-existing-replication-flow-runs-da62e1e.md).
     
@@ -135,7 +135,7 @@ For more information and points to consider when using replication flows, see al
     Provides information on the total execution time of the last flow run.
 
     > ### Note:  
-    > The initialization time for executing a flow takes an average of 20 seconds even with smaller data loads, causing longer runtime for the flow.
+    > The initialization time for executing a flow takes an average of 20 seconds even with smaller data loads, causing longer runtime for the flow. It is calculated using the task start time and task end time. For replication flow, it does not depend on the initial load duration.
 
 
     
@@ -218,11 +218,17 @@ For more information and points to consider when using replication flows, see al
         > ### Restriction:  
         > For data flows, the logs messages and metrics are only displayed in English.
 
+        For more information, see [Metrics for Transformation Flows](metrics-for-transformation-flows-b42fa5b.md).
 
-4.  You can analyze errors that have occurred during your data flow runs downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details
 
-5.  You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
+4.  If your flow failed, you can use the following tools from the details page of the flow run to analyze and solve your issue:
 
-6.  To view and modify a flow, click <span class="SAP-icons-V5"></span> Open in Data Builder.
+    -   \[Data Flow only\] You can analyze the errors that have occurred during your data flow runs, downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details.
+    -   \[Data Flow only\] You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
+    -   \[Transformation Flow only\]: You can run your transformation flow with Support Settings. For more information, see [Explore Transformation Flows](explore-transformation-flows-7588192.md).
+
+
+
+5.  To view and modify a flow, click <span class="SAP-icons-V5"></span> Open in Data Builder.
 
 

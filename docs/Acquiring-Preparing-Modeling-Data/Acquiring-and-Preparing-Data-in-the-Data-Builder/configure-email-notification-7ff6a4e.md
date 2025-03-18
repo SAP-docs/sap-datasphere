@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Configuring Email Notification
+# Configure Email Notification
 
 After creating and deploying a task chain, set up email notification of users for completion of task chain runs.
 

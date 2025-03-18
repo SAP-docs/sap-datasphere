@@ -28,9 +28,6 @@ Schedule data integration tasks such as data replication, data persistence, or d
 
 The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of the owner of the schedule. By default, the user who creates a schedule is the owner of the schedule. You can takeover the ownership, however, if required. Scheduled tasks run in the background according to the settings defined in the schedule.
 
-> ### Note:  
-> By default, time in the monitors and in the scheduling dialog is specified in Coordinated Universal Time \(UTC\).
-
 
 
 ## Procedure
@@ -41,7 +38,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 3.  Open the monitor for the object for which you want to schedule a task.
 
-4.  If you haven't authorized SAP DatasphereTo run recurring scheduled tasks on your behalf, you need to authorize the yet to run your scheduled tasks for you, you will see a message at the top of the monitor asking for your consent. Give your consent.
+4.  If you haven't authorized SAP Datasphereto run recurring scheduled tasks on your behalf, you need to authorize it to run your scheduled tasks for you. You will see a message at the top of the monitor asking for your consent. Give your consent.
 
 5.  Select the object for which you want to schedule a task.
 
@@ -54,9 +51,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     > ### Note:  
     > Tasks for which you own a schedule without having authorized SAP Datasphere to run scheduled tasks on your behalf before won't be executed but will fail.
 
-7.  In the *Frequency* area, select *Cron Expression* from the *Enter As* dropdown list.
+7.  In the *Frequency* area, select *Cron Expression* from the *Enter As* drop down list.
 
-8.  Define when the task will be run by using the unix-cron string format \(\* \* \* \* \*\) in the five following fields: *Minute*, *Hour*, *Day \(Month\)*, *Month* and *Day \(Week\)*.
+8.  In the *Frequency* area, select your preferred Region//Location from the *Time Zone* drop down list. Cron expression will reflect the time in the Region/Location you have chosen.
+
+9.  Define when the task will be run by using the unix-cron string format \(\* \* \* \* \*\) in the five following fields: *Minute*, *Hour*, *Day \(Month\)*, *Month* and *Day \(Week\)*.
 
     Either enter the cron expression directly in the fields or copy it from another source to the cron expression area by selecting one of the five fields and pasting it.
 
@@ -252,13 +251,13 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
     The *Duration* area is available only for elastic compute notes. See [Run an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
 
-9.  In the *Start Date* area, specify a date if you want to the change the default start date, which is the current date.
+10. In the *Start Date* area, specify a date if you want to the change the default start date, which is the current date.
 
-10. Optionally, in the *End Date* area, specify a date. If you do not specify an end date, the schedule runs indefinitely.
+11. Optionally, in the *End Date* area, specify a date. If you do not specify an end date, the schedule runs indefinitely.
 
-11. In the right area of the dialog box, you can see a preview of the schedule and when the five next runs are planned. Schedules are created in Coordinated Universal Time \(UTC\) but you can also view the next runs in local time.
+12. In the right area of the dialog box, you can see a preview of the schedule and when the five next runs are planned. Schedules are viewed in Coordinated Universal Time \(UTC\) by default. You can also view the next runs in local time or the Region/Location time that you have set as your preferrence.
 
-12. Click *Create* to create the schedule.
+13. Click *Create* to create the schedule.
 
 
 

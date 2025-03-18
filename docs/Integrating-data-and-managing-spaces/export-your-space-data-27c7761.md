@@ -4,6 +4,20 @@
 
 You can export the data contained in your space at any time. For example, you may want to export data before deleting your space.
 
+
+
+<a name="loio27c7761eaef44a6da4e3ae6bc9acbc90__section_jvy_c3j_42c"/>
+
+## Prerequisites
+
+To export the data contained in your space, you need to connect to an Open SQL schema or to allow the space to access the open SQL schema. To do so, you must have a database user and a password \(see [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)\).
+
+
+
+<a name="loio27c7761eaef44a6da4e3ae6bc9acbc90__section_ylp_13j_42c"/>
+
+## Procedure
+
 To export data using the SAP HANA Database Explorer, follow these steps:
 
 1.  Expose for consumption the views containing the data you want to export \(see [Exposing Data For Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/40ec77ec24f244279a81448969a7e769.html "Data can only be accessed outside of your SAP Datasphere space if it is exposed for consumption.") :arrow_upper_right:\).

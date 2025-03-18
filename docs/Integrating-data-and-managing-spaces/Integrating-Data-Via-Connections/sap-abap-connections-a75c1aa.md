@@ -477,7 +477,171 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 
 
-### Credentials
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to the SAP ABAP system. 
+
+You can select:
+
+-   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
+-   *OAuth 2.0* - You can select this option only if you have selected the *RFC* protocol and if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables currently are not supported with OAuth authentication.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### OAuth 2.0
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Grant Type*
+
+</td>
+<td valign="top">
+
+Displays *Client Credentials* as grant type used to retrieve an access token. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Token Endpoint*
+
+</td>
+<td valign="top">
+
+Enter the API endpoint to use to request an access token.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Scope*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the OAuth scope, if applicable.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Token Request Content Type*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the content type of the OAuth2 token request. 
+
+You can select:
+
+-   *URL Encoded* \(default value\)
+
+    OAuth2 token request parameters will be url-encoded and included in the HTTP request body.
+
+-   *JSON*
+
+    OAuth2 token request parameters will be in JSON format and included in the HTTP request body.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(OAuth 2.0\)
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID to authenticate SAP Datasphere to the SAP ABAP system. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client Secret*
+
+</td>
+<td valign="top">
+
+Enter the client secret to authenticate SAP Datasphere to the SAP ABAP system.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(User Name and Password\)
 
 
 <table>

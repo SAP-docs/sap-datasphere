@@ -6,7 +6,7 @@ Restore spaces, or delete them from the *Recycle Bin* to recover the disk storag
 
 This topic contains the following sections:
 
--   [Restore A Space](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc)
+-   [Restore a Space](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc)
 -   [Delete a Space Permanently](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_vqc_dkz_dcc)
 
 Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data.") :arrow_upper_right:\), you can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space.
@@ -15,7 +15,7 @@ Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your 
 
 <a name="loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc"/>
 
-## Restore A Space
+## Restore a Space
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\).
 
@@ -30,9 +30,9 @@ Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your 
 As the following actions are not automatically done with the space restore, you can perform them manually:
 
 -   Resume the schedules that were paused.
--   Run the replication for remote tables connected via SAP HANA smart data access, with real-time replication, and for replication flows with the load type "Initial and Delta" \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
--   Re-enable real-time replication for remote tables connected via SAP HANA smart data integration, with real-time replication \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
--   If replication flows were stopped before the space was deleted, ensure that they get started again \(see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:\).
+-   Run the replication for remote tables connected via SAP HANA smart data access, with real-time replication, and for replication flows with the load type "Initial and Delta" \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
+-   Re-enable real-time replication for remote tables connected via SAP HANA smart data integration, with real-time replication \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
+-   If replication flows were stopped before the space was deleted, ensure that they get started again \(see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:\).
 -   Synchronize the source system with the catalog \(see [Manually Synchronizing a System](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/48c11915d74b41fcb8c07dd4bf1c4c86.html "After you create a connection to a source system, you'll want to manually synchronize it with the catalog to ensure that existing data objects from the new source system are added as assets to the catalog. You may also need to manually synchronize existing source systems for specific situations, such as troubleshooting synchronization issues or reauthenticating the system user.") :arrow_upper_right:\).
 
 

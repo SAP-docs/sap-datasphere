@@ -9,7 +9,7 @@
         -   [Create an API Access Configuration JSON File](Creating-and-Configuring-Your-Tenant/create-an-api-access-configuration-json-file-703912a.md)
     -   [Configure the Size of Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)
     -   [Update Your Free Plan to Standard Plan in SAP BTP](Creating-and-Configuring-Your-Tenant/update-your-free-plan-to-standard-plan-in-sap-btp-f173be2.md)
-    -   [Enable the Product Switch to Access an SAP Analytics Cloud Tenant](Creating-and-Configuring-Your-Tenant/enable-the-product-switch-to-access-an-sap-analytics-cloud-tenant-40db567.md)
+    -   [Review and Manage Links to SAP Analytics Cloud and SAP Business Data Cloud Tenants](Creating-and-Configuring-Your-Tenant/review-and-manage-links-to-sap-analytics-cloud-and-sap-business-data-cloud-t-40db567.md)
     -   [Enable SAP SQL Data Warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)
     -   [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-the-sap-hana-cloud-script-server-on-your-sap-datasphere-tenant-2871942.md)
     -   [Enable SAP Business AI for SAP Datasphere](Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md)

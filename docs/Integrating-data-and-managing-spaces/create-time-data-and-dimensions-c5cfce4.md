@@ -6,6 +6,21 @@ Create a time table and dimension views in your space to provide standardized ti
 
 
 
+<a name="loioc5cfce4d22b04650b2fd6078762cdeb9__prereq_xfq_31j_42c"/>
+
+## Prerequisites
+
+To work with the time table and dimensions in your space, you must have a scoped role that grants you access to your space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-R------`\) - To open your space in the *Space Management* tool.
+-   *Space Files* \(`-R------`\) - To view objects in your space.
+-   *Data Warehouse Data Builder* \(`-RUD----`\) - To read, update and delete objects in the *Data Builder*.
+
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
 ## Procedure
 
 1.  In the side navigation area, click ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
@@ -47,7 +62,7 @@ Create a time table and dimension views in your space to provide standardized ti
 
 4.  Click *Create*.
 
-    When creation is complete, the content of the section changes to show that the objects are now present in the space. You can use the tools to edit the*Time Table* values, refresh the time data, or delete these entities.
+    When creation is complete, the content of the section changes to show that the objects are now present in the space. You can use the tools to edit the *Time Table* values, refresh the time data, or delete these entities.
 
     > ### Note:  
     > From v2023.08, we use the `ISOWEEK()` function to generate ISO-standard year and week numbers \(see [ISOWEEK Function \(Datetime\)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/20e23edc7519101482eae3271722de36.html) in the *SAP HANA Platform* documentation. To regenerate time data generated before this version, click *Edit*, modify your *From Year* or *To Year*, and click *Save*.

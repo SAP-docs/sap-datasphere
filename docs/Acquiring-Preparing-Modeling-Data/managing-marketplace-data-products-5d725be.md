@@ -17,10 +17,10 @@ Marketplace data products and data providers are only available in the SAP Datas
 To search for and evaluate objects in the *Marketplace Data Products* collection, you must have:
 
 -   A global role that grants you the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Catalog Asset* \(`–R–––--`\) - To access the catalog.
 
 -   A scoped role that grants you access to the space or spaces to install to, with the following privileges:
-    -   *Data Warehouse General* \(`-R------`\) - To view objects in the *Marketplace Data Products* and *Data Providers* collections.
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRU––--`\) - To install data products to a space.
     -   *Data Warehouse Data Integration* \(`-RU––--`\) - To acquire data in the space where the data product is installed.

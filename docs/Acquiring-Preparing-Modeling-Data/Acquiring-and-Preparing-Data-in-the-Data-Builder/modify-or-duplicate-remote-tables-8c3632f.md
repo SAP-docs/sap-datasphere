@@ -19,12 +19,12 @@ From the *Data Builder*, open the remote table in the table editor.
 
 In the *Remote* section of your remote table, click *Change Remote Table Source*. A wizard opens and allows you to change the connection and/or the remote table source object in 3 steps:
 
-1.  *Connections*: Change the connection. All the connections available in your space are displayed. Select the new connection and click *Next Step* to move to the *Tables* section.
+1.  *Connections*: Change the connection. All the connections available in your space are displayed. Select the new connection and click *Next Step* to move to the *Source Object* section.
 
     > ### Note:  
     > If you want to change only the remote table source object, you can ignore this step by reselecting the current connection and click *Next Step*.
 
-2.  *Tables*: Change the remote table source. If you want to change the remote table source, you can do so by selecting *Change Remote Table Source*. You can then browse through schemas available for the selected connection \(on the right side of the screen\), and their associated tables \(left side of the screen\).
+2.  *Source Object*: Change the remote table source. If you want to change the remote table source, you can do so by selecting *Change Remote Table Source*. You can then browse through schemas available for the selected connection \(on the right side of the screen\), and their associated tables \(left side of the screen\).
 
     > ### Note:  
     > Schemas only exist for SAP HANA smart data access-based connections and SAP HANA smart data integration-based database connections.
@@ -57,5 +57,5 @@ Copying your remote table can be helpful in some cases. For example if you made 
 From the *Data Builder*, open the relevant remote table in the table editor. Select*Save As*.
 
 > ### Note:  
-> For remote tables connected via SAP HANA smart data access, only one remote table per source entity of one connection can be in status *Replicated* \(Snapshot or Real-Time\). For more information, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
+> For remote tables connected via SAP HANA smart data access, only one remote table per source entity of one connection can be in status *Replicated* \(Snapshot or Real-Time\). For more information, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
 

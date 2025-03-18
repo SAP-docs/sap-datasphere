@@ -20,7 +20,7 @@ Define the source for your replication flow \(connection, container, and objects
 
     -   For standard CDS views, the container is the CDS root folder \(CDS\_EXTRACTION\).
 
-        If a standard CDS view for which replication is enabled is not shown in the CDS\_EXTRACTION folder, make sure that the user in the source connection has the required authorizations. For connections to an SAP S/4HANA Cloud source system, this might mean that the user must be assigned to an authorization group that contains the CDS view \(as described in [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/f509eddda867452db9631dae1ae442a3.html?version=2308.503)\).
+        If a standard CDS view for which replication is enabled is not shown in the CDS\_EXTRACTION folder, make sure that the user in the source connection has the required authorizations. For connections to an SAP S/4HANA Cloud source system, this might mean that the user must be assigned to an authorization group that contains the CDS view as described in [Integrating CDS Views Using ABAP CDS Pipeline](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/f509eddda867452db9631dae1ae442a3.html?).
 
     -   For database tables, the container is the schema that includes the table.
 

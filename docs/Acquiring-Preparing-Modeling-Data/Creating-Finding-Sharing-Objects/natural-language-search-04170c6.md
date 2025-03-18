@@ -15,9 +15,11 @@ If natural language search is enabled on your tenant \(and you have the appropri
 To use natural language search, it must be enabled in your tenant \(see [Enable SAP Business AI for SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/1b3fe45f38df4db1a9cda97a5a7bcdaf.html "SAP Business AI is a fully managed service by SAP that allows you to integrate artificial intelligence (AI) models in different business solutions. SAP Business AI provides a simple and easy-to-use API with various endpoints that you can use in your solution for different tasks such as text generation, summarization, language translation, creative content development.") :arrow_upper_right:\) and you must have both a global role and a scoped role:
 
 -   A global role that grants you the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Data Warehouse AI Consumption* \(`----E---`\) - To use SAP Business AI features.
 
 -   A scoped role that grants you access to the space or spaces to search in with the following privilege:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Spaces Files* \(`-R------`\) - To access objects in a space.
 
 

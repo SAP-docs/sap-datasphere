@@ -8,9 +8,9 @@ Use the catalog *Data Providers* collection to search for data providers. You ca
 
 
 
-The *Marketplace Data Products* and *Data Providers* collections are only available in the SAP Datasphere catalog.
+From the catalog search page, you can select the *Data Providers* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog.
 
-From the catalog search page, you can select the *Data Providers* collection and then select one or more filters to narrow the search results. The search results provides high-level information about a data provider, including their name and a short description. If you want to know more about a data provider, select their name to view their profile page that provides all legally required and additional information, such as company and contact information and general information about the data products offered, including the industry your data products belong to and the SAP applications that are related to your data products.
+The search results provides high-level information about a data provider, including their name and a short description. If you want to know more about a data provider, select their name to view their profile page that provides all legally required and additional information, such as company and contact information and general information about the data products offered, including the industry your data products belong to and the SAP applications that are related to your data products.
 
 Data provider profiles are managed by the data provider themselves or by a content aggregator.
 

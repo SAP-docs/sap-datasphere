@@ -101,12 +101,12 @@ If the status of an elastic compute node is *Starting* or *Running*, you can sto
 
 ## Schedule an Elastic Compute Node
 
-You can schedule an elastic compute node to run periodically at a specified date or time. You can also pause and then later resume the schedule. You create and manage a schedule to run an elastic compute node as any other data integration task \(see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:\) and, in addition, you can specify the duration time frame as follows.
+You can schedule an elastic compute node to run periodically at a specified date or time. You can also pause and then later resume the schedule. You create and manage a schedule to run an elastic compute node as any other data integration task \(see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:\) and, in addition, you can specify the duration time frame as follows.
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), then select the elastic compute node.
 
 2.  Click *Schedule*, then *Create Schedule*.
-3.  In the *Create Schedule* dialog, specify the options of the schedule, just like for any other integration task. See [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right: and [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:.
+3.  In the *Create Schedule* dialog, specify the options of the schedule, just like for any other integration task. See [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right: and [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:.
 
 4.  In addition, specify in the *Duration* area the total number of hours and minutes of an elastic compute node run, from the starting to the stopping stages.
 
@@ -117,7 +117,7 @@ You can schedule an elastic compute node to run periodically at a specified date
 
 Once you've created the schedule, a schedule icon is displayed next to the elastic compute node in the list of nodes in the left-hand side area of the *Space Management*.
 
-You can then perform the following actions for the schedule by clicking *Schedule*: edit, pause, resume, delete or take over the ownership of the schedule \(see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:\).
+You can then perform the following actions for the schedule by clicking *Schedule*: edit, pause, resume, delete or take over the ownership of the schedule \(see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:\).
 
 
 

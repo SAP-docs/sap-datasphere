@@ -21,7 +21,7 @@ The suffix/prefix is a dimension property that is added to all attributes of tha
 
 1.  Click on a dimension of the canvas to show its properties in the side panel.
 
-2.  Choose <span class="FPA-icons-V3"></span> Edit to edit the prefix or suffix for the technical name of attributes. Note that prefixes cannot start with an underscore.
+2.  Choose <span style="color:#007cc0;"><span class="FPA-icons-V3"></span></span> Edit to edit the prefix or suffix for the technical name of attributes. Note that prefixes cannot start with an underscore.
 
 3.  You can reset the technical names of attributes.
 

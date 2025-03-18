@@ -256,7 +256,7 @@ Yes
 </td>
 <td valign="top">
 
-Not supported
+Yes
 
 </td>
 </tr>

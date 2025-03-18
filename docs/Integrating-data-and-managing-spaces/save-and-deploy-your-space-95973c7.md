@@ -4,6 +4,26 @@
 
 When you save a space, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your spaces. When you deploy a space, you are creating a run-time version for use in the SAP Datasphere database.
 
+
+
+<a name="loio95973c709373415ebf42f6446a909924__section_ymj_g2j_42c"/>
+
+## Prerequisites
+
+To save and deploy the changes you've made in your space, you must have a scoped role that grants you access to your space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
+-   *Spaces Files* \(`-RU-----`\) - To read and update objects in your space.
+
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio95973c709373415ebf42f6446a909924__section_nyq_b2j_42c"/>
+
+## Space Deployment
+
 The current status of a space is shown in its *Deployment Status* property, which can have the following values:
 
 -   *Not Deployed* - The space has never been deployed and exists only as a design-time version.

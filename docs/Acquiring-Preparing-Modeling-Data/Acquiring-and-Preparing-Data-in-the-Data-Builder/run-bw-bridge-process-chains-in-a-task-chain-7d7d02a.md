@@ -1,8 +1,8 @@
 <!-- loio7d7d02a81bfe401ab85ce4d6c527a536 -->
 
-# Running BW Bridge Process Chains in a Task Chain
+# Run BW Bridge Process Chains in a Task Chain
 
-Include and run BW Bridge process chains in a task chain.
+Include and run SAP BW Bridge process chains in a task chain.
 
 
 
@@ -35,7 +35,7 @@ To include BW Bridge process chains in a task chain, users need SAP Datasphere D
 
 SAP BW Bridge process chains available to be run in a task chain are show in the *Others* tab in the task chain editor.
 
-You can monitor the status of process chains runs within a task chain using the Data Integration Monitor, the same as any other object run in a task chain. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. In addition, you can also monitor process chain execution from the SAP BW Bridge Cockpit. For more information, see [Monitoring Process Chains](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/d541939cf28540f08946a2ea9a0d4f34.html) and [Monitoring Process Chain Runs](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/3ff97fc3ef6747d58e969f16beeb0922.html).
+You can monitor the status of process chains runs within a task chain using the Data Integration Monitor, the same as any other object run in a task chain. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. In addition, you can also monitor process chain execution from the SAP BW Bridge Cockpit. For more information, see [Monitoring Process Chains](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/d541939cf28540f08946a2ea9a0d4f34.html) and [Monitoring Process Chain Runs](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/3ff97fc3ef6747d58e969f16beeb0922.html).
 
 
 
@@ -64,7 +64,7 @@ You can monitor the status of process chains runs within a task chain using the 
 
 5.  After you have finished adding all objects you want to run in a task chain, save and deploy the task chain.
 
-    You can now immediately run the task chain, or schedule the task chain run, the same way you would run or schedule any other task chain. Similarly, you can monitor the task chain run, including the status or the process chain execution, in the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. You can also monitor the execution of process chains from the SAP BW Bridge cockpit by clicking on the *View in SAP BW Bridge Monitor* link that is available in the task log messages after successful start of a process chain.
+    You can now immediately run the task chain, or schedule the task chain run, the same way you would run or schedule any other task chain. Similarly, you can monitor the task chain run, including the status or the process chain execution, in the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. You can also monitor the execution of process chains from the SAP BW Bridge cockpit by clicking on the *View in SAP BW Bridge Monitor* link that is available in the task log messages after successful start of a process chain.
 
     > ### Note:  
     > SAP BW Bridge process chains are available across all SAP Datasphere spaces. If a process chain is already being run in one space, it will be locked until the current execution is finished. If you try to run a process chain that is already running, SAP Datasphere returns the error "A conflicting task is already running." Clicking the *View in Monitor* link on the locked task takes you to a page where can see the RUNNING task. That page also shows the details of the space where it is currently being run, as well as the name of the parent chain if the user also has access to that space.

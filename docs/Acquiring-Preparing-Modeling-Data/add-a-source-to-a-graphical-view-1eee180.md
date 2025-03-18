@@ -24,7 +24,7 @@ Drag a table or view from the *Source Browser* panel and drop it on the diagram.
 
 3.  Select your object and drag and drop it onto the diagram.
 
-    ![](images/Graphical_View_Editor_-_Add_a_Source_e999b9f.gif) The source is added to the diagram, its symbol is selected, and its properties are displayed in the side panel. In addition, an output node, initially entitiled `View 1`, which represents the final output structure of the view, is created in the diagram and linked to the source.
+    ![](images/GIF_2025_-_Add_a_Source_to_a_Graphical_View_761f49b.gif) The source is added to the diagram, its symbol is selected, and its properties are displayed in the side panel. In addition, an output node, initially entitiled `View 1`, which represents the final output structure of the view, is created in the diagram and linked to the source.
 
     > ### Note:  
     > If you choose a table or view from the *Sources* tab, it is automatically imported into the repository and deployed, and will be available on the *Repository* tab for future use by you or others.
