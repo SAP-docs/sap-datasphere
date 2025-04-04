@@ -7,16 +7,14 @@
 Create transformation flows with local tables \(file\) as sources, apply various transformations, and store the resulted dataset into another local table \(file\).
 
 > ### Note:  
-> The object store is not enabled by default in SAP Datasphere tenants. To enable it in your tenant, see SAP note [3525760](https://me.sap.com/notes/3525760).
-> 
-> For additional information on working with data in the object store, see SAP Note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 > 
 > The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
 As a Datasphere modeler, you want to model transformation flows with local tables \(file\) as sources, apply various transformations in a file space dedicated to loading and preparing large quantities of data, and store the resulted dataset into another local table \(file\).
 
 > ### Caution:  
-> -   You must be in a file space. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a space with SAP HANA data lake files storage in the object store, allocate compute resources and assign one or more users to allow them to start acquiring and preparing data. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area.") :arrow_upper_right:.
+> -   You must be in a file space. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
 > -   You source and target targe must be local table \(file\). For more information, see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
 > -   You can only create a graphical view transform.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
@@ -122,7 +120,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > Local tables \(file\) support a limited number of data types. For more information, see [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
 5.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. For more information, see [Creating a Python Operator](creating-a-python-operator-a747acf.md).
-6.  Add a target table. For more information, see [Create or Add a Target Table to Your Transformation Flow](../create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
+6.  Add a target table. For more information, see [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
     > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.

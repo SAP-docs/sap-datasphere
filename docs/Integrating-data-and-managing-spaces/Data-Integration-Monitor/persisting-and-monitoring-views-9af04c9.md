@@ -6,12 +6,31 @@
 
 From *Data Integration Monitor* \> *Views*, you can monitor views that have been created in the *Data Builder*. You can persist these views \(direct run or via a schedule\) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.
 
-**Prerequisites**: Your view must be deployed.
+
+
+<a name="loio9af04c990f294fd28c00f46763dd8b0d__section_zpd_nhb_t2c"/>
+
+## Prerequisites
+
+To persist and monitor views, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-RU-E---`\) - To perform data replication/persistence actions \(in the *Data Integration Monitor* or *Data Builder*\), and schedule the actions. The *DW Integrator* role template, for example, grants this privilege.
+-   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions. The *DW Space Administrator* role template, for example, grants this privilege.
+-   *Data Warehouse Runtime* \(`-R------`\) - To allow users of the *View Analyzer* to download the generated SQL analyzer plan file. The *DW Space Administrator* role template, for example, grants this privilege.
+
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+To persist and monitor a view, the view must be deployed.
+
+
+
+<a name="loio9af04c990f294fd28c00f46763dd8b0d__section_mnr_b1g_mtb"/>
+
+## Introduction to Persisting and Monitoring Views
 
 > ### Note:  
 > While persisting complex views, see [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
-
-
 
 The interactive graphic below summarizes how views are persisted:
 

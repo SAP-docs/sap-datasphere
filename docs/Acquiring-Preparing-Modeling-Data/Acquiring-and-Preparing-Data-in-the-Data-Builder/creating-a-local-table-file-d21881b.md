@@ -13,9 +13,7 @@ Create a local table \(file\) to store data in the object store. Load data to yo
 ## Context
 
 > ### Note:  
-> The object store is not enabled by default in SAP Datasphere tenants. To enable it in your tenant, see SAP note [3525760](https://me.sap.com/notes/3525760).
-> 
-> For additional information on working with data in the object store, see SAP Note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 > 
 > The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
@@ -31,7 +29,7 @@ SAP HANA Cloud, data lake allows SAP Datasphere to store and manage mass-data ef
 As a local table \(file\) is capturing delta changes via flows, it creates different entities in the repository after it is deployed:
 
 -   An active records entity for accessing the delta capture entity through a virtual table. It excludes the delta capture columns and deleted records, and keeps only the active records.
--   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(File\) has a specific folder in file storage \(inbound buffer\) to which a replication flow writes data files to a specific target object. To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run via a task chain \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\). 
+-   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(File\) has a specific folder in file storage \(inbound buffer\) to which a replication flow writes data files to a specific target object. To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md).\) You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
 
 
 

@@ -428,7 +428,7 @@ Displays a description of the provider.
 </tr>
 </table>
 
-You can view a list of APIs for the data product by selecting *Overview tab* \> *Details*. This table provides high-level information for each API. The information includes the API's name, description, and version, the APIs protocol, supported use cases and more. Review the list to see which APIs best suit your needs. If there are more than 20 rows, select *Show All* to see the rest of the rows for the tab in a separate page.
+You can view a list of APIs for the data product by selecting *Overview tab* \> *Details*. This table provides high-level information for each data product \(API\), which includes its name, description, version, protocol, functional status and more. If there are more than 20 rows, select *Show All* to see the rest of the rows for the tab in a separate page.
 
 
 <table>
@@ -452,7 +452,7 @@ Name
 </td>
 <td valign="top">
 
-Displays the name for the API.
+Displays the name for the data product \(API\).
 
 </td>
 </tr>
@@ -464,7 +464,7 @@ Description
 </td>
 <td valign="top">
 
-Displays a description for the use and purpose of the API.
+Displays a description for the use and purpose of the data product \(API\).
 
 </td>
 </tr>
@@ -476,7 +476,7 @@ Version
 </td>
 <td valign="top">
 
-Displays version number of the API.
+Displays version number of the data product \(API\).
 
 </td>
 </tr>
@@ -488,7 +488,7 @@ Protocol
 </td>
 <td valign="top">
 
-Displays the API protocols.
+Displays the data product \(API\) protocols.
 
 </td>
 </tr>
@@ -500,7 +500,7 @@ Functional Status
 </td>
 <td valign="top">
 
-Displays the functional status of the API.
+Displays the functional status of the data product \(API\).
 
 </td>
 </tr>
@@ -512,7 +512,7 @@ Visibility
 </td>
 <td valign="top">
 
-Displays whether the API is public or private.
+Displays whether the data product \(API\) is public or private.
 
 </td>
 </tr>
@@ -524,7 +524,7 @@ Supported Use Cases
 </td>
 <td valign="top">
 
-Displays the API use cases, if provided. If you don't see this column, select <span class="FPA-icons-V3"></span> \(Select Columns\) to show it.
+Displays the data product \(API\) use cases, if provided. If you don't see this column, select <span class="FPA-icons-V3"></span> \(Select Columns\) to show it.
 
 </td>
 </tr>
@@ -544,11 +544,11 @@ See [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating
 </tr>
 </table>
 
-You can select an API to view its details page, where you can learn more about it. The API details page has a similar layout to the data product details page, where information is separated into the following areas:
+You can select an data product \(API\) to view its details page, where you can learn more about it. Information is separated into the following areas:
 
--   API properties that include all the same high-level information of the API list plus other information, such as its open resource discovery \(ORD\) identifier.
--   Available objects in the API and their container path and primary key. If the primary key is missing, the data product cannot be installed.
--   Documentation that provides a more detailed description of the API, links that can give you more information on how to use it, and extensibility information.
+-   Data product \(API\) properties that include all the same high-level information of the data product \(API\) *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
+-   Available objects and their container path and primary key. If the primary key is missing, the data product \(API\) cannot be installed.
+-   Documentation that provides a more detailed description of the data product \(API\), links that can give you more information on how to use it, and extensibility information.
 
 
 

@@ -1,5 +1,7 @@
 <!-- loio7588192bf4cd4e3db43704239ba4d366 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Explore Transformation Flows
 
 Use *Run with Settings* to explore graphical or SQL views and the entities they consume in a transformation flow.
@@ -8,12 +10,19 @@ The *Run with Settings* option provides you with the ability to simulate a run, 
 
 1.  Go to *Data Integration Monitor* \> *Flows*. Select the view you need to analyze and navigate to the details screen of this view. You need to select a space if you are assigned to several spaces.
 
-2.  Select *Run* \> *Run with Settings*. You have two options:
+2.  Select *Run* \> *Run with Settings*. You have several options:
 
     -   *Simulate Run*: Simulating a flow allows you to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table.
 
         > ### Note:  
         > A simulated run will not take the truncate function into account.
+
+        *Generate Explain Plan*: The Explain Plan shows how the selected transformation flow run will be executed and provides a compiled plan in tabular form, listing the operators used to execute a query along with relevant information about them. This lightweight tool can be generated in case of transformation flow run simulation failure or out-of-memory errors when the SQL Analyzer Plan file fails.
+
+        To generate an Explain Plan, you must have the *DWC\_RUNTIME* privilege added to your *DW Administrator* role or custom role. For more information, see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
+
+        -   view it by clicking *View Details*. This is possible only if the plan has less than a 1000 rows. If not, only downloading the plan is possible.
+        -   download it as a `.csv` file by clicking *Download* in the *Explain Plan* window, or <span class="SAP-icons-V5"></span> \(Download\) in the activity log.
 
     -   *Generate SQL Analyzer Plan File*: Before using this option, you must consider the following requirements:
 

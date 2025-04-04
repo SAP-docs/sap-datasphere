@@ -12,12 +12,12 @@ In the *Flows* monitor, you can find all the deployed flows per space.
 
 ## Prerequisites
 
--   To use the *Flows* monitor, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
+To run and schedule flows in the *Flows* monitor, you must have a scoped role that grants you access to a space with the following privileges:
 
--   To run the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Update** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-RU-E---`\) - To run and schedule a flow. The *DW Integrator* role template, for example, grants this privilege.
 
--   To schedule the flows, you need the `DWC_DATAINTEGRATION` privilege and the **Execute** permission. For more information, see [Managing Roles and Privileges](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3740dacbc2794f33bb5d8d42216cc3bc.html "Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.") :arrow_upper_right:.
-
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -199,6 +199,15 @@ For more information and points to consider when using replication flows, see al
 2.  To see the run details of a flow, click <span class="SAP-icons-V5"></span> \(Details\) for the relevant flow.
 
     The run details page opens. It shows the runs of the flow in the left panel and their corresponding messages in the right panel. Here, you can use the *Stop Run* \(for *Replication Flow*\), *Cancel Run* \(for *Transformation Flow*\) or *Set to failed* \(for *Data Flow\)* buttons to stop a run that is currently running. The buttons are available until the run ends.
+
+    For transformation flows, the following tabs are available:
+
+    -   *Logs* shows activities related to previous and running actions on your flow run. You can see a run *Start* date and time, *Activity*, and *Status*. Click \> to show the run details.
+    -   *Delta Capture Settings* tracks the data that has been transferred when running a transformation flow that loads delta changes to a target table. You can see the source table technical name and watermark. Click *Reset Watermark* to transfer all data to the target table the next time the transformation flow runs \(using the load type Initial and Delta\). For more information, see [Watermarks](watermarks-890897f.md).
+    -   *Settings* shows which options are available for *Run Mode*:
+        -   Transformation flow: *Performance-Optimized \(Recommended\)* or *Memory-Optimized*.
+        -   Transformation flow in a File space:*Apache Spark Settings* can be set to *Use Space Default* settings or *Define New Settings for this Flow*.
+
 
 3.  Select a flow run in the left panel to view its details. The run details contain messages for all runs and metrics for the current run.
 

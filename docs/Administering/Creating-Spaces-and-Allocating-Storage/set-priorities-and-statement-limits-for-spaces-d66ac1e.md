@@ -8,6 +8,15 @@ Prioritize between spaces for resource consumption and set limits to the amount 
 
 
 
+<a name="loiod66ac1efb5054068a104c4559b72d272__context_fml_vgc_r2c"/>
+
+## Context
+
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
+
+
 <a name="loiod66ac1efb5054068a104c4559b72d272__steps_abz_fhb_wrb"/>
 
 ## Procedure

@@ -127,7 +127,7 @@ Enter the Oracle database server port number.
 </td>
 <td valign="top">
 
-Enter the Oracle database name 
+Enter the Oracle database name. 
 
 </td>
 </tr>
@@ -139,9 +139,9 @@ Enter the Oracle database name
 </td>
 <td valign="top">
 
-Enter the service name of Oracle database. When creating a remote source, you must set only one of the following parameters: *Database Name* and *Service Name*. 
+Enter the service name of Oracle database. 
 
-If you set both, the Data Provisioning Agent connects to Oracle by the service name as the first choice.
+Only one of the following properties is required for the connection: *Database Name* and *Service Name*. If you enter values for both properties, the Data Provisioning Agent connects to Oracle by the service name as the first choice.
 
 </td>
 </tr>
@@ -292,10 +292,11 @@ Select whether you’re using SSL. The default value is *true*.
 </td>
 <td valign="top">
 
-Enter the distinguished name \(DN\) of the primary data server certificate. 
+When using the connection for remote tables, enter the distinguished name \(DN\) of the primary data server certificate. 
 
 > ### Note:  
-> If this parameter is set, the DN field in the server certificate is verified to match this parameter. If it doesn’t match, the connection to the primary data server fails.
+> -   The DN field in the server certificate is verified to match what you've entered here. If it doesn’t match, the connection to the primary data server fails.
+> -   The distinguished name must contain no quotes, and there must be a space between CN and C. For example, `CN=..., C=...` \(see [Configure SSL for the Oracle Log Reader Adapter](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/03c4f2f0629d40f28d333723a820a0d4.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
 
 
 
@@ -329,7 +330,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the Oracle user name \(case-sensitive\) 
+Enter the Oracle user name \(case-sensitive\). 
 
 </td>
 </tr>
@@ -341,7 +342,7 @@ Enter the Oracle user name \(case-sensitive\)
 </td>
 <td valign="top">
 
-Enter the Oracle user password 
+Enter the Oracle user password. 
 
 </td>
 </tr>

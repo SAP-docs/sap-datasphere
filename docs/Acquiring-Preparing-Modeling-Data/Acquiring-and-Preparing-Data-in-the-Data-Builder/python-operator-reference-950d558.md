@@ -6,11 +6,486 @@ Learn about the Python support offered by the Python operator in a transformatio
 
 This topic contains the following sections:
 
--   [Support for builtins, Numpy, and Pandas Modules](script-operator-python-reference-73e8ba1.md#loio73e8ba1a69cd4eeba722b458a253779d__section_modules)
--   [Support for builtins Exception Types](script-operator-python-reference-73e8ba1.md#loio73e8ba1a69cd4eeba722b458a253779d__section_exception_types)
--   [Data Mapping](script-operator-python-reference-73e8ba1.md#loio73e8ba1a69cd4eeba722b458a253779d__section_data_mapping)
--   [Basic Examples](script-operator-python-reference-73e8ba1.md#loio73e8ba1a69cd4eeba722b458a253779d__section_examples)
--   [Handling Decimal Types](script-operator-python-reference-73e8ba1.md#loio73e8ba1a69cd4eeba722b458a253779d__section_decimal_types)
+-   [Support for Python Standard Libraries](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_standardlibraries)
+-   [Basic Examples for Standard Libraries](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_exampleslibraries)
+-   [Support for builtins, Numpy, and Pandas Modules](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_modules)
+-   [Support for builtins Exception Types](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_exception_types)
+-   [Basic Examples for Exception Types](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_examplesexceptiontypes)
+-   [Handling Decimal Types](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_decimal_types)
+-   [Basic Examples for Decimal Types](python-operator-reference-950d558.md#loio950d55834dee450c9f71786d8b14a634__section_examplesdecimaltypes)
+
+
+
+<a name="loio950d55834dee450c9f71786d8b14a634__section_standardlibraries"/>
+
+## Support for Python Standard Libraries
+
+The following standard python libraries are supported:
+
+-   time
+-   dateutil.parser
+-   datetime
+-   calendar
+-   random
+-   math
+-   re
+
+These libraries don’t have any alias and can be used directly.
+
+
+
+<a name="loio950d55834dee450c9f71786d8b14a634__section_exampleslibraries"/>
+
+## Basic Examples for Standard Libraries
+
+
+
+### Example 1
+
+> ### Sample Code:  
+> ```
+> 
+> def transform(data): data['street_number'] =
+> 	data['address'].apply(lambda x: (re.findall(r'\d+', x))[0]).astype(int)
+> 	current_date = datetime.date.today()
+> 	data['service_years']=data['date_of_joining'].apply(lambda x: current_date.year - x.year) 
+> 	data["bonus_rounded"]=data["bonus"].apply(math.ceil) 
+> 	return data
+> ```
+
+This code snippet creates three new columns:
+
+-   `street_number [Integer]`: extracts the digits from the address column \(string type\) in the source table.
+-   `bonus_rounded [Integer]`: rounds off the column bonus \(float type\) to nearest integer.
+-   `service_years [Integer]`: calculates the difference between the current year and `date_of_joining` \(date type\).
+
+**Source Table** 
+
+
+<table>
+<tr>
+<th valign="top">
+
+first
+
+</th>
+<th valign="top">
+
+last
+
+</th>
+<th valign="top">
+
+address
+
+</th>
+<th valign="top">
+
+date\_of\_joining
+
+</th>
+<th valign="top">
+
+bonus
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+John
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+123 St, Rock Valley
+
+</td>
+<td valign="top">
+
+Feb 26, 2022
+
+</td>
+<td valign="top">
+
+67.5
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Jane
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+456 St, It Valley
+
+</td>
+<td valign="top">
+
+Dec 9, 2005
+
+</td>
+<td valign="top">
+
+90.75
+
+</td>
+</tr>
+</table>
+
+**Taget Table** 
+
+
+<table>
+<tr>
+<th valign="top">
+
+first
+
+</th>
+<th valign="top">
+
+last
+
+</th>
+<th valign="top">
+
+address
+
+</th>
+<th valign="top">
+
+date\_of\_joining
+
+</th>
+<th valign="top">
+
+bonus
+
+</th>
+<th valign="top">
+
+service\_year
+
+</th>
+<th valign="top">
+
+bonus\_rounded
+
+</th>
+<th valign="top">
+
+street\_number
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+John
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+123 St, Rock Valley
+
+</td>
+<td valign="top">
+
+Feb 26, 2022
+
+</td>
+<td valign="top">
+
+6700
+
+</td>
+<td valign="top">
+
+3
+
+</td>
+<td valign="top">
+
+68
+
+</td>
+<td valign="top">
+
+123
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Jane
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+456 St, It Valley
+
+</td>
+<td valign="top">
+
+Dec 9, 2005
+
+</td>
+<td valign="top">
+
+9000
+
+</td>
+<td valign="top">
+
+20
+
+</td>
+<td valign="top">
+
+91
+
+</td>
+<td valign="top">
+
+456
+
+</td>
+</tr>
+</table>
+
+
+
+### Example 2
+
+> ### Sample Code:  
+> ```
+> 
+> def transform(data):
+> 	data['current_timestamp']=time.strftime('%Y-%m-%d %H:%M:%S')
+> 	data[‘employee_rating’]= [random.randint(1,5) for _ in range(len(data))]
+> 	data[‘day_of_the_week’]=data['date_of_joining’].apply(lambda x:calendar.day_name[dateutil.parser.parse(x).weekday()]) 
+> 	return data
+> ```
+
+This code snippet expects a column `date_of_joining` of type `string` which has a date in `string` format. It uses the calendar library and fetches the `day_name` of the week by parsing it using the `dateutil.parser` library, and stores in the new column `day_of_the_week`.
+
+The current timestamp is fetched with the help of the `timestamp` column and stored in `string` format using the `time` library and stored in the new column as `current_timestamp`.
+
+The employee rating is assigned randomly in the range of 1 to 5 using the `random` library and stored in the new column `employee_rating`.
+
+**Source Table** 
+
+
+<table>
+<tr>
+<th valign="top">
+
+first
+
+</th>
+<th valign="top">
+
+last
+
+</th>
+<th valign="top">
+
+address
+
+</th>
+<th valign="top">
+
+date\_of\_joining
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+John
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+123 St, Rock Valley
+
+</td>
+<td valign="top">
+
+24-09-1999
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Jane
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+456 St, It Valley
+
+</td>
+<td valign="top">
+
+23-10-2005
+
+</td>
+</tr>
+</table>
+
+**Target Table** 
+
+
+<table>
+<tr>
+<th valign="top">
+
+first
+
+</th>
+<th valign="top">
+
+last
+
+</th>
+<th valign="top">
+
+address
+
+</th>
+<th valign="top">
+
+date\_of\_joining
+
+</th>
+<th valign="top">
+
+current\_timestamp
+
+</th>
+<th valign="top">
+
+day\_of\_the\_week
+
+</th>
+<th valign="top">
+
+employee\_rating
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+John
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+123 St, Rock Valley
+
+</td>
+<td valign="top">
+
+24-09-1999
+
+</td>
+<td valign="top">
+
+2025-03-11 07:58:19
+
+</td>
+<td valign="top">
+
+Friday
+
+</td>
+<td valign="top">
+
+4
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Jane
+
+</td>
+<td valign="top">
+
+Doe
+
+</td>
+<td valign="top">
+
+456 St, It Valley
+
+</td>
+<td valign="top">
+
+23-10-2005
+
+</td>
+<td valign="top">
+
+2025-03-11 07:58:19
+
+</td>
+<td valign="top">
+
+Sunday
+
+</td>
+<td valign="top">
+
+2
+
+</td>
+</tr>
+</table>
 
 
 
@@ -185,9 +660,9 @@ The following builtin exception types are supported for use in error handling.
 
 
 
-<a name="loio950d55834dee450c9f71786d8b14a634__section_examples"/>
+<a name="loio950d55834dee450c9f71786d8b14a634__section_examplesexceptiontypes"/>
 
-## Basic Examples
+## Basic Examples for Exception Types
 
 Type of incoming data is restricted to Pandas DataFrame.
 
@@ -358,9 +833,9 @@ It expects that the target table has only these three attributes, `first`, `cust
 > ```
 > 
 > def transform(data):
-> df = data[['first','last']]
-> df[full] =  df['first'] + '.' + df['last']
-> return df
+> 	df = data[['first','last']]
+> 	df[full] =  df['first'] + '.' + df['last']
+> 	return df
 > ```
 
 This script extracts the 'first' and 'last' columns of the incoming DataFrame, assuming that they exist in the source table, and stores these two columns as a separate DataFrame in the local variable 'df'. It then computes a third column email from the extracted columns, updates the df, and returns it.
@@ -607,7 +1082,13 @@ To work with decimal types in the script operator, the built-in Python `Decimal`
 
 
 
-### Example 4
+<a name="loio950d55834dee450c9f71786d8b14a634__section_examplesdecimaltypes"/>
+
+## Basic Examples for Decimal Types
+
+
+
+### Example 1
 
 > ### Sample Code:  
 > ```
@@ -722,7 +1203,7 @@ In this case, it assumes that the source and target tables have the same schema 
 
 
 
-### Example 5
+### Example 2
 
 > ### Sample Code:  
 > ```

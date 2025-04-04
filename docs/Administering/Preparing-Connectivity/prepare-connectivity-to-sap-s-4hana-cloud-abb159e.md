@@ -10,7 +10,7 @@ To be able to successfully validate and use a connection to SAP S/4HANA Cloud, c
 
 ## Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+Before you can use the connection for remote tables, the following is required:
 
 -   For federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud \(**recommended for federation scenarios**\):
 

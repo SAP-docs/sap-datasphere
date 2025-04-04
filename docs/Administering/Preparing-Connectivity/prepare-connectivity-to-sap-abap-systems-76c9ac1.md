@@ -8,7 +8,7 @@ To be able to successfully validate and use a connection to an SAP ABAP system f
 
 ## Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+Before you can use the connection for remote tables, the following is required:
 
 -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
 
@@ -36,7 +36,7 @@ Before you can use the connection for creating views and accessing data via remo
 ## Data Flows
 
 > ### Note:  
-> The availability of the replication flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
+> The availability of the data flow feature depends on the used version and Support Package level of the ABAP-based SAP system \(SAP S/4HANA or the DMIS addon in the source\). Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
 > 
 > For more information about required versions, recommended system landscape, considerations for the supported source objects, and more , see SAP Note [2890171](https://me.sap.com/notes/2890171).
 

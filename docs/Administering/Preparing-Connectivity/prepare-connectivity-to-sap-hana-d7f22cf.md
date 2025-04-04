@@ -28,7 +28,7 @@ For more information, see [Manage Certificates for Connections](manage-certifica
 
 ### Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+Before you can use the connection for remote tables, the following is required:
 
 -   If you want to use SAP HANA Smart Data Integration:
 

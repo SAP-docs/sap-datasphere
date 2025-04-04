@@ -28,7 +28,12 @@ You can use the *Cancel Run* button to stop a transformation flow run that is cu
 
     Canceling a transformation flow involves rolling back database transactions. Therefore, it might take some time until the transformation flow is canceled and the status changes to *Failed \(Canceled\)*.
 
+    For a transformation flow in a file space, when you cancel a run, you can:
+
+    -   *Cancel run with rollback*: The run will stop and what has already been processed will be canceled, including parallel changes from other apps. The data is restored to the version it had when the run started.
+    -   *Cancel run without rollback*: The run will stop where it is and what has already been processed will be kept, including parallel changes from other apps. Data might be altered. If you restart the run later, it will resume from where it has stopped.
+
     > ### Caution:  
-    > For a transformation flow in a file space, when you cancel a run, it stops where it is, and does not roll back what has already been processed. If you restart the run later, it will restart from the beginning, not where it has stopped.
+    > Cancelling a run with rollback may create duplicate records for the target table. If this table is used as source in another transformation flow, the run may fail because of duplicate delta records. Reset the watermark on the failing transformation flow to ensure that these changes are reflected in records that have already been transferred. For more information, see [Watermarks](watermarks-890897f.md).
 
 

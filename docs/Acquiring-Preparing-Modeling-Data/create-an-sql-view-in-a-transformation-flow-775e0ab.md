@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Create an SQL View Transform
+# Create an SQL View in a Transformation Flow
 
 Create an SQL view transform to combine and transform data in a powerful SQL editor. You can choose between writing a standard SQL query using `SELECT` statements and operators such as `JOIN` and `UNION`, or use SQLScript to produce a table function. You can drag sources from the *Repository*, and easily view the columns defined for your output structure in the side panel.
 
@@ -10,7 +10,7 @@ Create an SQL view transform to combine and transform data in a powerful SQL edi
 
 ## Context
 
-If you are not comfortable with SQL, you can still build a view transform by using the *Graphical View Editor*, which lets you compose SQL code using an intuitive graphical interface. For more information, see [Create a Graphical View Transform](create-a-graphical-view-transform-c65e37c.md).
+If you are not comfortable with SQL, you can still build a view transform by using the *Graphical View Editor*, which lets you compose SQL code using an intuitive graphical interface. For more information, see [Create a Graphical View in a Transformation Flow](create-a-graphical-view-in-a-transformation-flow-c65e37c.md).
 
 When working in a view transform, you are using an editor similar to the standard view editors with the following modifications:
 
@@ -106,6 +106,6 @@ When working in a view transform, you are using an editor similar to the standar
 
 5.  Review the list of columns \(see [Columns](Acquiring-and-Preparing-Data-in-the-Data-Builder/columns-8f0f40d.md)\).
 
-6.  Click the <span class="FPA-icons-V3"></span> \(Navigate Back\) button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
+6.  Click the <span class="FPA-icons-V3"></span> \(Navigate Back\) button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Create or Add a Target Table to a Transformation Flow](create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
 

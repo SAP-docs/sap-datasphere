@@ -2,7 +2,7 @@
 
 # List of Functions Supported by a Transformation Flow \(in a File Space\)
 
-Review the list of functions supported by a graphical view transform of a tranformation flow in a file space.
+Review the list of functions supported by a graphical view transform of a transformation flow in a file space.
 
 A graphical view transform of a transformation flow created in a file space can support the following functions:
 
@@ -173,23 +173,6 @@ Returns the sum of the expression. This function can also be used as a window fu
 <tr>
 <td valign="top">
 
-VARIANCE\(EXPR\)
-
-</td>
-<td valign="top">
-
-Returns the variance of the given expression as the square of the standard deviation.
-
-> ### Note:  
-> It corresponds to the function VAR for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 VAR\_POP
 
 </td>
@@ -254,91 +237,6 @@ ACOS
 <td valign="top">
 
 Returns the arc-cosine, in radians, of a numeric argument between -1 and 1.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BIT\_AND\(EXPR\)
-
-</td>
-<td valign="top">
-
-Performs an AND operation on the bits of two arguments.
-
-> ### Note:  
-> It corresponds to the function BITAND\(value1, value2\) for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BIT\_COUNT\(EXPR\)
-
-</td>
-<td valign="top">
-
-Counts the number of set bits of an expression.
-
-> ### Note:  
-> It corresponds to the function BITCOUNT\(expr\) for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-~EXPR
-
-</td>
-<td valign="top">
-
-Performs a bitwise NOT operation on the bits of an expression.
-
-> ### Note:  
-> It corresponds to the function BITNOT for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BIT\_OR\(EXPR\)
-
-</td>
-<td valign="top">
-
-This function performs an OR operation on the bits of two arguments.
-
-> ### Note:  
-> It corresponds to the function BITOR\(exp1, exp2\) for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BIT\_XOR
-
-</td>
-<td valign="top">
-
-Performs an XOR operation on the bits of two arguments.
-
-> ### Note:  
-> It corresponds to the function BITXOR for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -558,23 +456,6 @@ Returns the hyperbolic tangent of the specified numeric argument.
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-NEGATIVE\(EXPR\)
-
-</td>
-<td valign="top">
-
-Returns the negated value of the specified numeric argument.
-
-> ### Note:  
-> It corresponds to the function UMINUS for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
 </table>
 
 
@@ -596,23 +477,6 @@ Functions
 Description
 
 </th>
-</tr>
-<tr>
-<td valign="top">
-
-DATE\_ADD , DATEADD
-
-</td>
-<td valign="top">
-
-Computes the specified date, plus or minus the specified number of days.
-
-> ### Note:  
-> It corresponds to the function ADD\_DAYS for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -653,23 +517,6 @@ Returns the current local system timestamp information.
 <tr>
 <td valign="top">
 
-LOCALTIMESTAMP
-
-</td>
-<td valign="top">
-
-Returns the local system time.
-
-> ### Note:  
-> It corresponds to the function CURRENT\_TIME for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 DAYOFMONTH
 
 </td>
@@ -688,23 +535,6 @@ DAYOFYEAR
 <td valign="top">
 
 Returns an integer representation of the day of the year for the specified date.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-DATE\_DIFF\(ENDDATE,STARTDATE\)
-
-</td>
-<td valign="top">
-
-Computes the number of entire \(24 hour\) days between two dates.
-
-> ### Note:  
-> It corresponds to the function DAYS\_BETWEEN for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -741,23 +571,6 @@ LAST\_DAY
 <td valign="top">
 
 Returns the date of the last day of the month that contains the specified date.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TO\_UTC\_TIMESTAMP\(TIMESTAMP,TIMEZONE\)
-
-</td>
-<td valign="top">
-
-A timestamp parameter holding the time to be converted between UTC and local time.
-
-> ### Note:  
-> It corresponds to the function LOCALTOUTC for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -824,23 +637,6 @@ Returns the second portion of a specified time.
 <tr>
 <td valign="top">
 
-WEEKOFYEAR\(DATE\)
-
-</td>
-<td valign="top">
-
-Returns a week number between 1 and 54 for the specified date.
-
-> ### Note:  
-> It corresponds to the function WEEK for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 WEEKDAY
 
 </td>
@@ -859,40 +655,6 @@ YEAR
 <td valign="top">
 
 Returns the year number of a specified date.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-FROM\_UTC\_TIMESTAMP\(TIMESTAMP,TIMEZONE\)
-
-</td>
-<td valign="top">
-
-Converts the specified timestamp between UTC and local time.
-
-> ### Note:  
-> It corresponds to the function UTCTOLOCAL for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-QUARTER\(DATE\) - returns a number in range \(1,4\)
-
-</td>
-<td valign="top">
-
-Returns the quarter for the specified date. Returns a number in range \(1,4\).
-
-> ### Note:  
-> It corresponds to the function QUARTER\(DATE,START\_MONTH\) for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -1041,23 +803,6 @@ Determines whether two expressions are equal.
 <tr>
 <td valign="top">
 
-UUID\(\)
-
-</td>
-<td valign="top">
-
-Returns a new universally unique identifier that is generated by the connected SAP HANA instance.
-
-> ### Note:  
-> It corresponds to the function SYSUUID for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 WIDTH\_BUCKET
 
 </td>
@@ -1140,46 +885,12 @@ Returns the arc-tangent, in radians, of the ratio of two numbers.
 <tr>
 <td valign="top">
 
-HEX\(<EXPR\>\)
-
-</td>
-<td valign="top">
-
-Converts a binary string to an NVARCHAR hexadecimal value.
-
-> ### Note:  
-> It corresponds to the function BINTOHEX for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 CHAR
 
 </td>
 <td valign="top">
 
 Returns the character that has the ASCII value of the specified number.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-UNHEX\(EXPR\)
-
-</td>
-<td valign="top">
-
-Converts a string of hexadecimal characters to a VARBINARY value.
-
-> ### Note:  
-> It corresponds to the function HEXTOBIN\(<hexadecimal\_string\>\) for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -1246,23 +957,6 @@ Returns the position of a substring within a string.
 <tr>
 <td valign="top">
 
-REGEXPR\_INSTR\(STR,REGEXPR\)
-
-</td>
-<td valign="top">
-
-Searches a string for a regular expression pattern and returns an integer indicating the beginning position, or the ending position plus 1, of one occurrence of the matched substring.
-
-> ### Note:  
-> It corresponds to the function LOCATE\_REGEXPR for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 LOWER
 
 </td>
@@ -1299,63 +993,12 @@ Returns a string, trimmed of all leading spaces.
 <tr>
 <td valign="top">
 
-HEX\(EXPR\)
-
-</td>
-<td valign="top">
-
-Converts a numeric value to a hexadecimal value.
-
-> ### Note:  
-> It corresponds to the function NUMTOHEX for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-REGEXPR\_COUNT\(STR,REGEXPR\)
-
-</td>
-<td valign="top">
-
-Returns the number of matches of a regular expression search within a string.
-
-> ### Note:  
-> It corresponds to the function OCCURRENCES\_REGEXPR for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 REPLACE
 
 </td>
 <td valign="top">
 
 Searches within a string for all occurrences of a specified string and replaces them with another specified string.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-REGEXPR\_REPLACE\(STR,REGEXPR,REPLACE,POSITION\)
-
-</td>
-<td valign="top">
-
-Searches a string for a regular expression pattern and returns the string with either one or every occurrence of the regular expression pattern that is replaced using a replacement string.
-
-> ### Note:  
-> It corresponds to the function REPLACE\_REGEXPR for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -1410,23 +1053,6 @@ Converts alphabet characters into a sound code that represents their sound.
 <tr>
 <td valign="top">
 
-TO\_BINARY\(STR,FMT\)
-
-</td>
-<td valign="top">
-
-Converts all characters in a string into a binary encoding using the specified codepage.
-
-> ### Note:  
-> It corresponds to the function STRTOBIN for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 TRIM
 
 </td>
@@ -1472,23 +1098,6 @@ Returns a substring from an input value, starting from a specified position with
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-REGEXPR\_SUBSTR\(STR, REGEXPR\)
-
-</td>
-<td valign="top">
-
-Searches a string for a regular expression pattern and returns one occurrence of the matching substring.
-
-> ### Note:  
-> It corresponds to the function SUBSTRING\_REGEXPR for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
 </table>
 
 
@@ -1520,158 +1129,6 @@ CAST
 <td valign="top">
 
 Returns the value of an expression converted to a supplied data type.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BIGINT\(EXPR\)
-
-</td>
-<td valign="top">
-
-Converts a value to a BIGINT data type.
-
-> ### Note:  
-> It corresponds to the function TO\_BIGINT for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BINARY\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_BINARY for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-BOOLEAN\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_BOOLEAN for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-DATE\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_DATE for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-DECIMAL\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_DECIMAL for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-DOUBLE\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_DOUBLE for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-INT\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_INT for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAMLLINT\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_SAMLLINT for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TINYINT\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_TINYINT for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TIMESTAMP\(EXPR\)
-
-</td>
-<td valign="top">
-
-> ### Note:  
-> It corresponds to the function TO\_TIMESTAMP for a transformation flow created in an SAP HANA space.
-
-
 
 </td>
 </tr>
@@ -1794,63 +1251,4 @@ Sequentially numbers the rows within a partition of a result set, with the first
 </td>
 </tr>
 </table>
-
-
-
-<a name="loio37e737fc0aee4ac7bcee4660d189dc26__section_n1w_ch2_bdc"/>
-
-## Array Functions
-
-
-<table>
-<tr>
-<th valign="top">
-
-Functions
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-GET\(ARRAY,INDEX\)
-
-</td>
-<td valign="top">
-
-Returns values from a specified array position.
-
-> ### Note:  
-> It corresponds to the function MEMBER\_AT for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SLICE\(ARRAY,START,LENGHT\)
-
-</td>
-<td valign="top">
-
-Returns a subset of values from the specified array beginning from the specified start position.
-
-> ### Note:  
-> It corresponds to the function SUBARRAY for a transformation flow created in an SAP HANA space.
-
-
-
-</td>
-</tr>
-</table>
-
-> ### Note:  
-> You can't select an unsupported function.
 

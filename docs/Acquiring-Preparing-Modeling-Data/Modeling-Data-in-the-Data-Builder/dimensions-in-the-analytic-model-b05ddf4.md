@@ -1,6 +1,6 @@
 <!-- loiob05ddf48de704f8484804ea6cf953c8c -->
 
-# What's a Dimension?
+# Dimensions in the Analytic Model
 
 Dimensions contain attributes that can be used to analyze and categorize measures defined in other entities.
 
@@ -12,7 +12,9 @@ Typical types of dimensions include:
 -   Organization - Company, Department, Organization Unit
 -   Time - Year, Quarter, Month, Day
 
-The source of your analytic model can contain associations to dimensions, texts, and hierarchies. Dimensions contain attributes that can be used to analyze and categorize measures defined in other entities. Attributes are used as dimensions in the analytic model. When you take over associated dimensions from your source, the object type is also taken over. Thus, you can easily build a multidimensional model in a star schema with the fact source in the center and the dimensions as direct associations.
+The source of your analytic model can contain associations to dimensions, texts, and hierarchies. Dimensions contain attributes that can be used to analyze and categorize measures defined in other entities. In the analytic model, attributes are used as dimensions.
+
+When you create your analytic model you can take over the associated dimensions from the source. Thus, you can easily build a multidimensional model in a star schema with the fact source in the center and the dimensions as direct associations.
 
 These associations are supported:
 

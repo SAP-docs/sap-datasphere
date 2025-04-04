@@ -6,35 +6,81 @@ Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Serv
 
 
 
-<a name="loioa13c8abb328f45be891599c9cc76fb91__section_j1b_byq_spb"/>
+This topic contains the following sections:
 
-## Prerequisites
+-   [Supported Features](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_usage)
+-   [Configuring Connection Properties](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__connection_properties)
 
-See: [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+For more information about the required prerequisites, see [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
 <a name="loioa13c8abb328f45be891599c9cc76fb91__MSSQL_usage"/>
 
-## Using the Connection
-
-The connection type supports the remote table as well as the data flow feature.
-
-Supported data access methods for remote tables:
-
--   Remote
--   Replication \(snapshot\)
--   Replication \(real-time\)
-
-    > ### Note:  
-    > SAP Datasphere uses trigger-based replication. For more information, see [Microsoft SQL Server Trigger-Based Replication](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/c27c15981a22450985e478d58d3c851d.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.
+## Supported Features
 
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
+
+For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+
+> ### Note:  
+> SAP Datasphere uses trigger-based replication. For more information, see [Microsoft SQL Server Trigger-Based Replication](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/c27c15981a22450985e478d58d3c851d.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.
 
 
 
-<a name="loioa13c8abb328f45be891599c9cc76fb91__section_nrb_hcc_x4b"/>
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a replication flow.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loioa13c8abb328f45be891599c9cc76fb91__connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -150,7 +196,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows and replication flows. The default is *false*. 
 
 </td>
 </tr>
@@ -303,9 +349,57 @@ Enter the Microsoft SQL Server user password.
 
 ### Features
 
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
 To enable *Remote Tables*, select a Data Provisioning Agent.
 
-*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+</table>
 
 
 

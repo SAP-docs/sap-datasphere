@@ -2,7 +2,7 @@
 
 # Prepare Connectivity to Microsoft SQL Server
 
-To be able to successfully validate and use a connection to a Microsoft SQL Server for remote tables or data flows, certain preparations have to be made.
+To be able to successfully validate and use a connection to a Microsoft SQL Server, certain preparations have to be made.
 
 
 
@@ -10,7 +10,7 @@ To be able to successfully validate and use a connection to a Microsoft SQL Serv
 
 ## Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+Before you can use the connection for remote tables, the following is required:
 
 -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the MssqlLogReaderAdapter.
 
@@ -25,9 +25,9 @@ Before you can use the connection for creating views and accessing data via remo
 
 <a name="loioea69328fb328449ab7b04d2b142592f8__prereq_df_MSSQL"/>
 
-## Data Flows
+## Data Flows and Replication Flows
 
-Before you can use the connection for data flows, the following is required:
+Before you can use the connection for data flows and replication flows, the following is required:
 
 -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
 

@@ -12,7 +12,7 @@ Metrics provide the record count for source and target tables used in the flow. 
 
 -   `TRUNCATE`
 
-    Indicates whether the *Delete All Before Loading* option is used for the transformation flow run. For more information, see [Create or Add a Target Table to Your Transformation Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/0950746ab4444e5ca6a665ee1b0380a1.html "A transformation flow writes data to a target table. You can create a new target table or use an existing one.") :arrow_upper_right:.
+    Indicates whether the *Delete All Before Loading* option is used for the transformation flow run. For more information, see [Create or Add a Target Table to a Transformation Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/0950746ab4444e5ca6a665ee1b0380a1.html "A transformation flow writes data to a target table. You can create a new target table or use an existing one.") :arrow_upper_right:.
 
 -   `REMOTE_ACCESS` 
 

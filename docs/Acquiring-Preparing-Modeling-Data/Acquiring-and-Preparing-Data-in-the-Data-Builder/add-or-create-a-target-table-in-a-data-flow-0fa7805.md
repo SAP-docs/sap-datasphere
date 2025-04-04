@@ -251,6 +251,27 @@ Add a target table to write data to. You can only have one target table in a dat
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Access Method*
+    
+    </td>
+    <td valign="top">
+    
+    Select the open connector API to use to access the data:
+
+    -   *GET*: The Open Connectors data query API is called directly once per page to retrieve data. It's the recommended default method, except in cases of large amounts of data.
+
+        > ### Note:  
+        > When you select the *GET* method, you can also update the *WebService Data Receive Timeout \(milliseconds\)*. This property controls the timeouts for each individual HTTP request sent to the Open Connector API. For example if it is set to the 5 mins, then you can have 5 back requests of 4mins, but if one will last 6 mins, then it will fail.
+
+    -   *BULK*: An asynchronous query job is created on Open Connectors to start streaming the data. It's better to use this method to get better performance in cases of large amounts of data.
+
+
+    
+    </td>
+    </tr>
     </table>
     
     > ### Note:  

@@ -9,7 +9,7 @@ This topic contains the following sections:
 -   [Restore a Space](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc)
 -   [Delete a Space Permanently](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_vqc_dkz_dcc)
 
-Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data.") :arrow_upper_right:\), you can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space.
+Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:\), you can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space.
 
 
 
@@ -50,6 +50,10 @@ Be aware that the following content will also be **permanently** deleted:
 -   All connections defined in the space.
 -   All objects and data contained in any Open SQL schema associated with the space.
 -   All audit logs entries generated for the space, including audit log entries related to any Open SQL schema associated with the space.
+
+    > ### Note:  
+    > For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Delete Audit Logs](../Monitoring-SAP-Datasphere/delete-audit-logs-589fa42.md) \).
+
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\).
 

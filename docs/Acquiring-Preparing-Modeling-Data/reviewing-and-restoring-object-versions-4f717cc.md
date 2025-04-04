@@ -298,7 +298,7 @@ To view the version history of an object:
     Versions can have the following types:
 
     -   *Deployment* - Created by a user deploying the object.
-    -   *Move to Recycle Bin* - Created by a user deleting the space \(see [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data.") :arrow_upper_right:\).
+    -   *Move to Recycle Bin* - Created by a user deleting the space \(see [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:\).
     -   *Restore from Recycle Bin* - Created by a user restoring the space.
 
 3.  You can perform the following actions on an object version:

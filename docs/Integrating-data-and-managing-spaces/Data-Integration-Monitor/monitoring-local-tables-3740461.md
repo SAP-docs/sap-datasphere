@@ -4,6 +4,30 @@
 
 Monitor all the local tables created for a space in the *Data Builder* and check their metrics.
 
+
+
+<a name="loio374046156e5b47599fc9b96c8c3a4dce__section_fml_rfb_t2c"/>
+
+## Prerequisites
+
+To monitor local tables, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
+
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio374046156e5b47599fc9b96c8c3a4dce__section_ljm_3y1_t2c"/>
+
+## Monitoring Local Tables
+
 Local tables can be used as source data or target data by SAP Datasphere apps. As a Data Integrator you might want to monitor all local tables which have been created in the current space to check data size, updates in these tables, etc.
 
 Go to *Data Integration Monitor* \> *Local Tables*. All local tables that have been created in the *Data Builder* are listed.

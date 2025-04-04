@@ -267,8 +267,8 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   Local Table \(File\) - Merge, Optimize or Delete Records.
 
         > ### Note:  
-        > -   Merge: Add, update or delete data into the existing local table \(file\). A replication flow writes data files to the inbound buffer \(specific folder in file storage\) of a target local table \(File\). To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run..
-        > -   Optimize: Improve data access performance by optimizing the layout of data in file storage \(for examply by grouping small files into larger files..
+        > -   Merge: Add, update or delete data into the existing local table \(file\). A replication flow writes data files to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run..
+        > -   Optimize: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files..
         > -   Delete Records: Delete records from your local table \(file\). Under Settings, define what type of deletion you want:
         >     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
         >     -   *Delete previous versions \(Vacuum\), which are older than the specified number of days*: Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. 
@@ -285,6 +285,23 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Apache Spark Settings
+    
+    </td>
+    <td valign="top">
+    
+    \[File Space Only\] When creating a file space, administrators have defined default *Apache Spark Applications* to run tasks \(in Workload Management\). You can update these settings following your needs by object types:
+
+    -   *Use Default*: The default application is the application selected by an administrator during the file space creation. However, if the settings have been changed on the object level, in the data integration monitor, this value has become the default value, erasing the value defined in *Workload Management*.
+    -   *Define New Setting for This Task*: Select another *Apache Spark Application* that fits your need.
+
+    For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: and [Update the Settings Used to Run Your Transformation Flow (in a File Space)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e5c4ac8ab3bf4573b86cd4f4f3118c16.html "Update the maximum amount of compute resources that the file space can consume to run a transformation flow.") :arrow_upper_right:.
     
     </td>
     </tr>

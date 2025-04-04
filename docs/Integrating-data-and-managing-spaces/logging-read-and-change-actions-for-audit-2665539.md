@@ -24,6 +24,9 @@ To enable audit logs for your space, you must have a scoped role that grants you
 
 The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 
 
 <a name="loio266553976e1c4db9aaa28a75e2308b77__section_pgz_ym4_2jb"/>
@@ -88,5 +91,5 @@ To export audit log entries using the SAP HANA Database Explorer, follow these s
 
 [Monitor Database Operations with Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:
 
-[Delete Your Space](delete-your-space-3eb19b9.md "Delete a space if you are sure that you no longer need any of its content or data.")
+[Delete Your Space](delete-your-space-3eb19b9.md "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.")
 

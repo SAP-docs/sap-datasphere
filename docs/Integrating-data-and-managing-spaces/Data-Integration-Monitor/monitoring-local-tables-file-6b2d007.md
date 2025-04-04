@@ -1,13 +1,37 @@
 <!-- loio6b2d0073a8684ee6a59d6f47d00ec895 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Monitoring Local Tables \(File\)
 
 Monitor your local tables \(file\). Check how and when they were last updated and if new data has still to be merged.
 
+
+
+<a name="loio6b2d0073a8684ee6a59d6f47d00ec895__section_hvj_5gb_t2c"/>
+
+## Prerequisites
+
+To monitor local tables \(file\), you must have a scoped role that grants you access to the space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
+
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio6b2d0073a8684ee6a59d6f47d00ec895__section_jqp_rgb_t2c"/>
+
+## Monitoring Local Tables \(File\)
+
 > ### Note:  
-> The object store is not enabled by default in SAP Datasphere tenants. To enable it in your tenant, see SAP note [3525760](https://me.sap.com/notes/3525760).
-> 
-> For additional information on working with data in the object store, see SAP Note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 > 
 > The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
@@ -140,4 +164,6 @@ Indicates if the local table \(file\) contains partitions.
 </td>
 </tr>
 </table>
+
+Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table. From the *Logs* tab, you can see the logs that relate on previous and running actions on your table. From the *Setting* tab you can change the default settings defined for the merge or optimize tasks. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md).
 

@@ -2,12 +2,10 @@
 
 # Create a File Space to Load Data in the Object Store
 
-Create a space with SAP HANA data lake files storage in the object store, allocate compute resources and assign one or more users to allow them to start acquiring and preparing data. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area.
+Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.
 
 > ### Note:  
-> The object store is not enabled by default in SAP Datasphere tenants. To enable it in your tenant, see SAP note [3525760](https://me.sap.com/notes/3525760).
-> 
-> For additional information on working with data in the object store, see SAP Note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 > 
 > The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
@@ -16,7 +14,7 @@ Create a space with SAP HANA data lake files storage in the object store, alloca
 > 
 > You can create up to 5 file spaces in a tenant.
 
-Users with an administrator role can create spaces, allocate compute resources and assign users. The remaining space properties can be managed by the space administrators that the administrator assigns to the space via a scoped role.
+Users with an administrator role can create spaces, allocate compute resources and assign users. The remaining space properties can be managed by users with a space administrator role.
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), and click *Create*.
 
@@ -68,7 +66,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     </td>
     <td valign="top">
     
-    Select *SAP HANA Data Lake Files*.
+    Select *SAP HANA Data Lake Files*. The option is greyed out if no resources have been allocated to the object store \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
     
     </td>
     </tr>
@@ -214,7 +212,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     </tr>
     </table>
     
-5.  *Workload Management* section - The maximum amount of compute resources that the file space can consume when processing statements are allocated to its Apache Spark instance. The resources allocated for the file space are based on the resources allocated for the SAP Datasphere tenant in the *Tenant Configuration* page \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
+5.  *Workload Management* section - The maximum amount of compute resources that the file space can consume when processing statements are allocated to its Apache Spark instance. The resources allocated for the file space depend on the resources allocated for the object store in the *Tenant Configuration* page \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
 
     Several applications are available for the instance and are used to run tasks.
 
@@ -319,9 +317,9 @@ Users with an administrator role can create spaces, allocate compute resources a
     </td>
     <td valign="top">
     
-    \[read-only\] The checkbox indicates the application that is used by default to run a merge activity via a task chain.
+    \[read-only\] The checkbox indicates the application that is used by default to run a merge activity via a task chain or the *Local Tables \(File\)* monitor.
 
-    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:
+    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -333,9 +331,9 @@ Users with an administrator role can create spaces, allocate compute resources a
     </td>
     <td valign="top">
     
-    \[read-only\] The checkbox indicates the application that is used by default to run an optimize activity via a task chain.
+    \[read-only\] The checkbox indicates the application that is used by default to run an optimize activity via a task chain or the *Local Tables \(File\)* monitor.
 
-    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:
+    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -374,5 +372,5 @@ Users with an administrator role can create spaces, allocate compute resources a
 > 
 > -   If your file space and its data lake instance or Apache Spark instance run into communication errors, click *Deploy*.
 
-For more information about working with data in the object store, see [Acquiring and Preparing Data in the Object Store](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2a6bc3f6d79b4c39a01b6d58d043fbaf.html "Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the object store. You can prepare the data using transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.") :arrow_upper_right:.
+For more information about working with data in the object store, see [Acquiring and Preparing Data in the Object Store](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2a6bc3f6d79b4c39a01b6d58d043fbaf.html "Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the SAP Datasphere object store. You can prepare the data using Apache Spark transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.") :arrow_upper_right:.
 

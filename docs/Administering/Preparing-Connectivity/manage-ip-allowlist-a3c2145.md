@@ -29,7 +29,9 @@ Internet Protocol version 4 addresses \(IPv4 addresses\) have a size of 32 bits 
 The address can either be a single IPv4 address or a range specified with a Classless Inter-Domain Routing suffix \(CIDR suffix\). An example for a CIDR suffix is **/24** which represents 256 addresses and is typically used for a large local area network \(LAN\). The CIDR notation for the IPv4 address above would be: *192.168.100.1/24* to denote the IP addresses between *192.168.100.0* and *192.168.100.255* \(the leftmost 24 bits of the address in binary notation are fixed\). The external \(public\) IP address \(range\) to enter into the allowlist will be outside of the range *192.168.0.0/16*. You can find more information on Classless Inter-Domain Routing on [Wikipedia](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing).
 
 > ### Note:  
-> The number of entries in the allowlist is limited. Once the limit has been reached, you won't be able to add entries. Therefore, please consider which IP addresses should be added and whether the number of allowlist entries can be reduced by using ranges to request as few allowlist entries as possible.
+> -   Private IP ranges are not relevant to be included in the allowlist.
+> 
+> -   The number of entries in the allowlist is limited. Once the limit has been reached, you won't be able to add entries. Therefore, please consider which IP addresses should be added and whether the number of allowlist entries can be reduced by using ranges to request as few allowlist entries as possible.
 
 
 

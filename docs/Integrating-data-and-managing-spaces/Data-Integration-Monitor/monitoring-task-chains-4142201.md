@@ -6,6 +6,30 @@
 
 Monitor the status and progress of running and previously run task chains.
 
+
+
+<a name="loio4142201ec1aa49faad89a688a2f1852c__section_cxm_1mb_t2c"/>
+
+## Prerequisites
+
+To monitor task chains, you must have a scoped role that grants you access to the space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
+
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio4142201ec1aa49faad89a688a2f1852c__section_nnb_tlb_t2c"/>
+
+## Monitoring Task Chains
+
 To view all task chains that are scheduled to run, are currently running, or have already been run in your space, go to *Data Integration Monitor* \> *Task Chains*:
 
 ![](images/Task_Chain_Example_04c0f7d.jpg)
@@ -142,7 +166,7 @@ You can personalize the columns you want to display clicking on :gear:
 > ### Note:  
 > A task chain consists of multiple tasks that run one after another. As it takes some time for the task chain monitor to collect and update all a task’s status information, the task runtime information displayed here might not exactly match the task runtime information shown in a respective detail monitor, for example, in the *Views* or *Flows* monitors.
 
-Click *Run* \> *Start Run* to manually start a new run of a selected task chain. If a task chain’s last run failed, you can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain’s execution from the point at which it previously failed.
+Click *Run* \> *Start Run* to manually start a new run of a selected task chain. If a task chain’s last run failed, you can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain’s execution from the point at which it previously failed. This behavior also applies to task chains that include a nested task chain where a task failed. In that case, retrying a task chain will only retry execution of the individual task within the nested task chain that failed, without needing to execute preceding tasks that had already completed successfully.
 
 > ### Note:  
 > If you add a remote table whose data access is *Replicated \(Real-time\)* in a task chain, the replication type will change from real-time replication to batch replication at the next run of the task chain. The data will no longer be updated in real-time.
@@ -181,7 +205,7 @@ To return to the original *Run Details* display, click on the task chain name un
 
 ## Retrying Failed Task Chain Runs
 
-If a task chain’s last run failed, the *Run Details* panel provides a *Retry Run* option to retry the failed task chain’s execution. You can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain's execution. Note that the *Retry Latest Run* option is only active when the last taskchain runs failed.
+If a task chain’s last run failed, the *Run Details* panel provides a *Retry Run* option to retry the failed task chain’s execution. You can also choose the *Run* \> *Retry Latest Run* option to retry the failed task chain's execution. Note that the *Retry Latest Run* option is only active when the last task chain runs failed. This behavior also applies to task chains that include a nested task chain where a task failed. In that case, retrying a task chain will only retry execution of the individual task within the nested task chain that failed, without needing to execute preceding tasks that had already completed successfully.
 
 ![](images/Task_Chain_Retry_Run_9896a10.jpg)
 

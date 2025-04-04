@@ -367,7 +367,7 @@ Description
 </td>
 <td valign="top">
 
-Set to *true* if you want to use the connection for one of the following features: 
+Set to *true* if you want to use the connection for one or more of the following features: 
 
 -   remote tables for data federation via the ABAP SQL service
 -   data flows
@@ -448,6 +448,7 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 > -   If the *SAP Logon Connection Type* for your connection is *Application Server*: Enter ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
 > 
 > -   If the *SAP Logon Connection Type* for your connection is *Message Server*: Enter a numerical port and make sure it is the port defined in the Cloud Connector configuration.
+> -   If you're using the ABAP SQL service for data federation with this connection: Enter the virtual port defined in the Cloud Connector system mapping for the HTTP/HTTPS protocol which has been created for remote tables.
 
 
 

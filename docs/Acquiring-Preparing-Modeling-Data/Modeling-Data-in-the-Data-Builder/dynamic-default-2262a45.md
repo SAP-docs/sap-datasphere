@@ -9,5 +9,11 @@ When you choose *Dynamic Default* in the properties of a variable, you get a der
 > ### Note:  
 > *Dynamic Default* is only supported for standard variables and reference date variables.
 
-The properties *Dynamic Default Values* and *Derived Value* are quite similar. The only difference is that dynamic default values appear in the variable prompt when opening the analytic preview while derived values do not appear in the prompt.
+The properties *Dynamic Default* and *Derived Value* are quite similar. They differ in when the derivation takes place:
+
+-   for *Dynamic Default*, the value is derived before the variable prompt pops up.
+-   For *Derive Value*, the derivation happens after you have chosen your values in the variable prompt.
+
+
+This means that dynamic default values appear in the variable prompt when opening the analytic preview while derived values do not appear in the prompt.
 

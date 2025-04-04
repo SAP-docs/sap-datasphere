@@ -2,7 +2,7 @@
 
 # Acquiring and Preparing Data in the Object Store
 
-Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the object store. You can prepare the data using transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.
+Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the SAP Datasphere object store. You can prepare the data using Apache Spark transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.
 
 This topic contains the following sections:
 
@@ -19,9 +19,7 @@ This topic contains the following sections:
 ## Introduction to the SAP Datasphere Object Store
 
 > ### Note:  
-> The object store is not enabled by default in SAP Datasphere tenants. To enable it in your tenant, see SAP note [3525760](https://me.sap.com/notes/3525760).
-> 
-> For additional information on working with data in the object store, see SAP Note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 > 
 > The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
@@ -33,7 +31,7 @@ The object store provides an inbound layer for staging large quantities of data 
 
 ## Create a File Space in the Object Store
 
-A user with an administrator role can create a space with SAP HANA data lake files storage in the object store. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area \(see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a space with SAP HANA data lake files storage in the object store, allocate compute resources and assign one or more users to allow them to start acquiring and preparing data. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area.") :arrow_upper_right:\).
+A user with an administrator role can create a space with SAP HANA data lake files storage in the object store. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area \(see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:\).
 
 > ### Note:  
 > You cannot create views, data flows, data access controls, analytic models, intelligent lookups, E/R models or use the *Business Builder* in a file space. You cannot import or export objects via CSN/JSON files and you cannot import CSV files, entities, remote tables or currency conversion tables.
@@ -44,7 +42,7 @@ A user with an administrator role can create a space with SAP HANA data lake fil
 
 ## Load Data with Replication Flows
 
-Users with a modeler role can use replication flows to load data in local tables \(file\) that are stored in a file space \(see [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)\). A replication flow writes data files to the inbound buffer \(specific folder in file storage\) of a target local table \(File\). To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run via a task chain \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:\).
+Users with a modeler role can use replication flows to load data in local tables \(file\) that are stored in a file space \(see [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)\). A replication flow writes data files to the inbound buffer \(specific folder in file storage\) of a target local table \(File\). To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run via a task chain \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\) or via the Local Tables \(File\) monitor. You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:\).
 
 
 

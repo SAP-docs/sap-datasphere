@@ -32,7 +32,7 @@ By choosing <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Excel*
 
 ## Using the Builder Panel
 
-The *Builder* panel is displayed at the right side of the application. You can show it or hide it by choosing <span class="SAP-icons-V5"></span> Query Builder Designer Panel. See **\(1\)**.
+The *Builder* panel is displayed at the right side of the application. You can show it or hide it by clicking on the *Builder* icon . See **\(1\)**.
 
 ![This is a screenshot of the data preview.](images/DWC_-_data_preview_1557d18.png)
 

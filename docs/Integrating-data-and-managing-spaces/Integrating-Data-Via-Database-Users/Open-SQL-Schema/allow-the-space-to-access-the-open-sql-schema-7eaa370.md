@@ -12,15 +12,9 @@ To grant the space write privileges in the Open SQL schema and the ability to wr
 
 ## Prerequisites
 
+To connect to an Open SQL schema or to allow the space to access the open SQL schema, you must have a database user and a password \(see [Create a Database User](create-a-database-user-798e3fd.md)\).
+
 Only the database user for the open SQL schema has the privilege to run the stored procedure "DWC\_GLOBAL"."GRANT\_PRIVILEGE\_TO\_SPACE".
-
-
-
-<a name="loio7eaa370fe4624dea9f182ee9c9ab645f__context_odf_tdb_lqb"/>
-
-## Context
-
-You can grant write privileges by running an SAP Datasphere specific stored procedure in the SQL console in the SAP HANA Database Explorer.
 
 
 

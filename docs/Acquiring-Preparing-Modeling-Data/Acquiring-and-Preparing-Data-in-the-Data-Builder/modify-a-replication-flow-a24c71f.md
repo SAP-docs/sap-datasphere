@@ -44,6 +44,9 @@ You can make the following changes to a replication flow with status *Active* wi
 
 To change the load type, delete all before loading setting, projections, or filters for a replication flow, you need to stop the replication flow, make the required changes, deploy the replication flow, and then run it again.
 
+> ### Note:  
+> If you install the data product corresponding to an active replication flow via SAP Business Data Cloud, you don't need to stop the run: Reinstalling the data product will alter the existing table and apply the changes by redeploying the replication flow. An initial load will then happen, taking into consideration the new changes.
+
 
 
 <a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_smp_xtw_mdc"/>

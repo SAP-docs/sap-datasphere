@@ -4,7 +4,21 @@
 
 # Create a Database User
 
-Users with the *DW Space Administrator* role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.
+Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.
+
+
+
+<a name="loio798e3fd6707940c3bd2219b2d1ebaac2__prereq_yvd_3q1_q2c"/>
+
+## Prerequisites
+
+To create a database user, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
+-   *Space Files* \(`-R------`\) - To view objects in your space.
+
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 

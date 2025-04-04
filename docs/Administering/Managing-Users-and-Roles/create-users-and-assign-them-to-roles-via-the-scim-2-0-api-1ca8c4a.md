@@ -46,8 +46,6 @@ Using this API, you can perform the following actions:
 
 This API uses SCIM 2.0. For more information, see [SCIM Core Schema](https://tools.ietf.org/html/rfc7643).
 
-To access the API specification and try out the functionality in SAP Analytics Cloud, see the [SAP Business Accelerator Hub](https://api.sap.com/api/Story_API/resource/Users).
-
 
 
 <a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_th4_syw_tbc"/>

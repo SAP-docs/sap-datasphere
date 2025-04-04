@@ -8,7 +8,7 @@ You can add dimensions to your analytic model.
 
 ## Context
 
-For more information about dimensions, see [What's a Dimension?](what-s-a-dimension-b05ddf4.md).
+For more information about dimensions, see [Dimensions in the Analytic Model](dimensions-in-the-analytic-model-b05ddf4.md).
 
 
 
@@ -26,7 +26,7 @@ There are different ways to add dimensions:
 
     -   You can change the business name of the dimension, the technical name, and the technical name of the attribute.
     -   You can add or deselect associated dimensions.
-    -   You can add or deselect attributes. See also [Exclude Non-Navigable Dimension Attributes](exclude-non-navigable-dimension-attributes-4d96a8a.md).
+    -   You can add or deselect attributes.
     -   You can specify a custom prefix or suffix for the technical name of attributes. For more information, see [Add a Prefix or a Suffix to Dimension Attributes](add-a-prefix-or-a-suffix-to-dimension-attributes-0373c60.md).
     -   You can change the technical name of the attributes. This is helpful when you have duplicated attributes in your analytic model, and you want to differentiate between them.
 

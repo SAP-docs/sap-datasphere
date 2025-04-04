@@ -4,7 +4,7 @@
 
 # Review and Manage Links to SAP Analytics Cloud and SAP Business Data Cloud Tenants
 
-You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant accessible in the <span class="SAP-icons-V5"></span> \(*Product Switch*\) in the top right of the shell bar, to help your users easily navigate between them. In addition, your tenant can be linked to by SAP Analytics Cloud and SAP Business Data Cloud tenant administrators.
+You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant accessible in the <span class="SAP-icons-V5"></span> \(*Product Switch*\) in the top right of the shell bar, to help your users easily navigate between them. In addition, your tenant can be linked to by SAP Analytics Cloud and SAP Business Data Cloud administrators.
 
 
 
@@ -19,7 +19,7 @@ To view the *Administration* page containing the *Tenant Links* tab, you must ha
 The *DW Administrator* global role, for example, grants these privileges.For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 > ### Note:  
-> To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *Tenant Owner* role.
+> To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *System Owner* role.
 
 
 
@@ -65,7 +65,7 @@ SAP Analytics Cloud URL
 </td>
 <td valign="top">
 
-Displays the URL for the SAP Analytics Cloud selected by the *Tenant Owner* to be accessible via the <span class="SAP-icons-V5"></span> \(*Product Switch*\) \(see [\)](review-and-manage-links-to-sap-analytics-cloud-and-sap-business-data-cloud-t-40db567.md#loio40db56764bff4f9ab7eace16ac8e7e67__section_product_switch)
+Displays the URL for the SAP Analytics Cloud selected by the *System Owner* to be accessible via the <span class="SAP-icons-V5"></span> \(*Product Switch*\).
 
 </td>
 </tr>
@@ -120,8 +120,6 @@ For more information about SAP Business Data Cloud, see:
 -   [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "SAP Business Data Cloud is a fully managed SaaS solution that unifies and governs all SAP data and seamlessly connects with third-party data—giving line-of-business leaders context to make even more impactful decisions.") :arrow_upper_right:
 -   [Integrate SAP Business Data Cloud Provisioned Systems](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/d6ec89febd8a40dbb7fb461b60bef289.html) \(in the *SAP Business Data Cloud* documentation\)
 
-.
-
 
 
 <a name="loio40db56764bff4f9ab7eace16ac8e7e67__section_product_switch"/>
@@ -130,7 +128,7 @@ For more information about SAP Business Data Cloud, see:
 
 You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant accessible in the <span class="SAP-icons-V5"></span> \(*Product Switch*\) in the top right of the shell bar, to help your users easily navigate between them.
 
-To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *Tenant Owner* role.
+To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *System Owner* role.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Tenant Links*.
 2.  Enter the URL of your SAP Analytics Cloud tenant.

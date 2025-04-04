@@ -6,6 +6,9 @@
 
 Color codes and icons indicate the health of a space.
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 You can see the status of all spaces at the top of the *Space Management* page.
 
 You also can see the status of an individual space at the top-left of the space.
@@ -17,7 +20,7 @@ Each status shows the used storage and may indicate whether a space needs extra 
 <tr>
 <th valign="top">
 
-Icon
+Status
 
 </th>
 <th valign="top">

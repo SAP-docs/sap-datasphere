@@ -105,7 +105,7 @@ If you are using an existing table as the target object, this table may contain 
     > ### Note:  
     > Changing the toggle on an active replication flow will have no effect.
 
--   If you deactivate it, you get an error message for each unmapped target column when saving the replication flow. However, you can still manually set each column to *Skip Mapping* in the *Mapping* tab.
+-   If you deactivate it, you get an error message for each unmapped target column when saving the replication flow. However, you can still manually map each column in the *Mapping* tab.
 
 
 For replication flows created before version 2025.01 of SAP Datasphere, the property is deactivated by default, but you can activate it as required. For replication flows created with version 2025.02 or later, this property is activated by default, and you can deactivate it as required.

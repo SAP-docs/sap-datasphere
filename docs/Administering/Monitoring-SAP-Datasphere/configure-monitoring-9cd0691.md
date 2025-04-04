@@ -26,7 +26,7 @@ You need the DW Administrator role to access the *Monitoring* page.
 
     For more information, see [Working with SAP HANA Monitoring Views](working-with-sap-hana-monitoring-views-4ab4509.md).
 
-3.  To analyze individual SQL queries whose execution exceeds one or more thresholds that you specify, select *Enable Expensive Statement Tracing*, specify the following parameters to configure and filter the trace details, then save your changes.
+3.  Analyze individual SQL queries whose execution exceeds one or more thresholds, select *Enable Expensive Statement Tracing*. Keep the default settings or specify the following parameters to configure and filter the trace details, then save your changes.
 
 
     <table>
@@ -45,7 +45,7 @@ You need the DW Administrator role to access the *Monitoring* page.
     <tr>
     <td valign="top">
     
-    In-Memory Tracing Records
+    Memory Tracing Records
     
     </td>
     <td valign="top">
@@ -53,6 +53,8 @@ You need the DW Administrator role to access the *Monitoring* page.
     Specify the maximum number of records that are stored in the monitoring tables.
 
     For example, if about 5 days are traced in the expensive statement tables and you don’t want to change the thresholds, you can double the number of records in *In-Memory Tracing Records* so that about 10 days are traced. Be aware that increasing this number will also increase the used storage.
+
+    Default: 30,000
 
     Maximum: 100,000
     
@@ -70,7 +72,7 @@ You need the DW Administrator role to access the *Monitoring* page.
 
     When set to 0, all SQL statements are traced.
 
-    Recommended: 0
+    Default: 0
     
     </td>
     </tr>
@@ -86,7 +88,9 @@ You need the DW Administrator role to access the *Monitoring* page.
 
     When set to 0, all SQL statements are traced.
 
-    Recommended: 1,000MB
+    Default: 1,024MB
+
+    Maximum: 1 GB
     
     </td>
     </tr>
@@ -102,7 +106,7 @@ You need the DW Administrator role to access the *Monitoring* page.
 
     When set to 0, all SQL statements are traced.
 
-    Recommended: 5
+    Default: 50000 Microseconds
     
     </td>
     </tr>
@@ -115,6 +119,8 @@ You need the DW Administrator role to access the *Monitoring* page.
     <td valign="top">
     
     In SQL statements, field values may be specified as parameters \(using a "?" in the syntax\). If these parameter values are not required, then do not select the option to reduce the amount of data traced.
+
+    Default: False
     
     </td>
     </tr>

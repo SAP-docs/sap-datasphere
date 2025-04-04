@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Create a Graphical View Transform
+# Create a Graphical View in a Transformation Flow
 
 Create a graphical view transform that uses SQL syntax to combine and transform data as part of your transformation flow. You can drag and drop sources from the *Repository* tab or from the *Sources* tab, join them as appropriate, add other operators to remove or create columns and filter or aggregate data.
 
@@ -162,6 +162,6 @@ When working in a view transform, you are using an editor similar to the standar
     </tr>
     </table>
     
-6.  Click the <span class="FPA-icons-V3"></span> \(Navigate Back\) button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md).
+6.  Click the <span class="FPA-icons-V3"></span> \(Navigate Back\) button to save your work and return to the *Transformation Flow Editor*. You can then add or create a target table for the transformation flow. For more information, see [Create or Add a Target Table to a Transformation Flow](create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
 

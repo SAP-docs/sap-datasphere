@@ -14,6 +14,8 @@ A transformation flow run is a one-time event that completes when the relevant d
 
 > ### Note:  
 > Views and Open SQL schema objects that reference remote tables \(either directly or indirectly\) are not supported. However, views that reference remote tables in BW Bridge spaces are supported.
+> 
+> Loading delta changes from views is not supported.
 
 > ### Note:  
 > Views and Open SQL schema objects are not supported in the following cases:
@@ -44,9 +46,9 @@ Creating a transformation flow involves two important steps:
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Transformation Flow* to open the editor. The system displays the *New Transformation Flow* screen.
 
-2.  Create a graphical view transform or an SQL view transform to load data from sources and to transform data. To create a graphical view transform, click the *Graphical View Transform* button \(see [Create a Graphical View Transform](create-a-graphical-view-transform-c65e37c.md)\). To create an SQL view transform, click the *SQL View Transform* button \(see [Create an SQL View Transform](create-an-sql-view-transform-775e0ab.md)\).
+2.  Create a graphical view transform or an SQL view transform to load data from sources and to transform data. To create a graphical view transform, click the *Graphical View Transform* button \(see [Create a Graphical View in a Transformation Flow](create-a-graphical-view-in-a-transformation-flow-c65e37c.md)\). To create an SQL view transform, click the *SQL View Transform* button \(see [Create an SQL View in a Transformation Flow](create-an-sql-view-in-a-transformation-flow-775e0ab.md)\).
 
-3.  Click the *Back* button to return to the *Transformation Flow Editor*. Add or create a target table that the transformation flow will write its data to \(see [Create or Add a Target Table to Your Transformation Flow](create-or-add-a-target-table-to-your-transformation-flow-0950746.md)\).
+3.  Click the *Back* button to return to the *Transformation Flow Editor*. Add or create a target table that the transformation flow will write its data to \(see [Create or Add a Target Table to a Transformation Flow](create-or-add-a-target-table-to-a-transformation-flow-0950746.md)\).
 
 4.  Click the *Details* button to display the *Transformation Flow Properties* panel.
 

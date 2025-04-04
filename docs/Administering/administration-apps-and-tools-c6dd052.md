@@ -288,7 +288,7 @@ Also allows you to view a list of users whose authorization consent will expire 
 </td>
 <td valign="top">
 
-[Deleting Task Logs to Reduce Storage Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c6902024ecd74956b4ba2d1c67ccb073.html "In the Configuration area, you can check how much spaces the task logs are using on your tenant, and decide to delete the obsolete ones to reduce storage consumption.") :arrow_upper_right:
+[Delete Task Logs to Reduce Storage Consumption](Monitoring-SAP-Datasphere/delete-task-logs-to-reduce-storage-consumption-c690202.md)
 
 [Check Consent Expirations](Monitoring-SAP-Datasphere/check-consent-expirations-58e4bb2.md)
 

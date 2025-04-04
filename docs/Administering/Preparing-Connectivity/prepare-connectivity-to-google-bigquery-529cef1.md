@@ -10,7 +10,7 @@ To be able to successfully validate and use a connection to a Google BigQuery da
 
 ## Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+Before you can use the connection for remote tables, the following is required:
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
 

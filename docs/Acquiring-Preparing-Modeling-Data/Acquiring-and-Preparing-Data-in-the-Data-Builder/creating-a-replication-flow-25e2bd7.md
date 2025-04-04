@@ -189,6 +189,23 @@ For more information about available connection types, sources, and targets, see
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Merge Data Automatically
+    
+    </td>
+    <td valign="top">
+    
+    \[only relevant for replication flow created in file space\] Select this option if you want new data to be automatically replicated in your local table \(file\). When new data appears in the inbound buffer, a merge task is automatically run and data is updated in your target local table \(file\).
+
+    > ### Note:  
+    > The option is enabled by default when you create a new replication with SAP Datasphere as target and load type *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(and a redeployment will be needed\).
+
+
+    
+    </td>
+    </tr>
     </table>
     
 3.  Select a target connection and target container \(see [Add the Target for a Replication Flow](add-the-target-for-a-replication-flow-ab490fb.md)\).

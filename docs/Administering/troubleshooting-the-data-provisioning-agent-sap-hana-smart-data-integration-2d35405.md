@@ -10,7 +10,7 @@ The following sections provide information about checks, logs, and actions that 
 
 -   [Initial Checks](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_initial_checks)
 -   [Configuration Checks](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_configuration_checks)
--   [Logs and Traces](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_logs_traces)
+-   [Setting Log and JDBC Trace Levels](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_logs_traces)
 -   [Performance](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_performance)
 -   [Validating the Connection from the Server the Agent is Running to SAP Datasphere](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_validation)
 -   [Troubleshooting Connection Issues](troubleshooting-the-data-provisioning-agent-sap-hana-smart-data-integration-2d35405.md#loio2d354053fa84499191794f68de8b752f__section_troubleshooting)
@@ -31,7 +31,7 @@ A Data Provisioning Agent administrator can perform the following checks:
 
 -   **Firewall**
 
-    For a successful connection, make sure that outbound connections from the Data Provisioning Agent to the target host and port, which is provided in the Data Provisioning Agent registration information in SAP Datasphere, are not blocked by your firewall.
+    SAP Datasphere, are not blocked by your firewall.
 
 -   **Agent version**
 
@@ -50,7 +50,7 @@ A Data Provisioning Agent administrator can perform the following checks:
 
 ## Configuration Checks
 
-The agent configuration is stored in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/dpagentconfig.ini</code> file in the agent installation root location \(<code><i class="varname">&lt;DPAgent_root&gt;</i></code>\). A Data Provisioning Agent administrator can double-check for the correct values \(please do not maintain the parameters directly in the configuration file; the values are set with the command-line agent configuration tool\):
+The agent configuration is stored in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/dpagentconfig.ini</code> file in the agent installation root location \(<code><i class="varname">&lt;DPAgent_root&gt;</i></code> file in the agent installation root location \(For a successful connection, make sure that outbound connections from the Data Provisioning Agent to the target host and port, which is provided in the Data Provisioning Agent registration information in file in the agent installation root location\). A Data Provisioning Agent administrator can double-check for the correct values \(please do not maintain the parameters directly in the configuration file; the values are set with the command-line agent configuration tool\):
 
 
 <table>
@@ -251,7 +251,7 @@ For more information, see [Agent Configuration Parameters](https://help.sap.com/
 
 <a name="loio2d354053fa84499191794f68de8b752f__section_logs_traces"/>
 
-## Logs and Traces
+## Setting Log and JDBC Trace Levels
 
 To troubleshoot connection issues, a Data Provisioning Agent administrator can enable logging and JDBC tracing for the Data Provisioning Agent.
 

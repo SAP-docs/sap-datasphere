@@ -10,7 +10,7 @@ To be able to successfully validate and use a connection to an OData service for
 
 ## Remote Tables
 
-Before you can use the connection for creating views and accessing data via remote tables, the following is required:
+Before you can use the connection for remote tables, the following is required:
 
 -   The OData service URL needs to be publicly available.
 

@@ -187,9 +187,9 @@ Show
 </td>
 <td valign="top">
 
-Deselect the checkbox to hide the column from users working in analytic models. 
+\[deprecated\] Deselect the checkbox to hide the column from users in SAP Analytics Cloud. 
 
-Users working in analytic models can, for each measure and attribute, choose whether to include or exclude it in the data exposed to SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). Dimension attributes that are made available to the analytic model user and excluded by her to optimize the model can still be displayed in SAP Analytics Cloud tables as non-navigable properties \(see [Exclude Non-Navigable Dimension Attributes](exclude-non-navigable-dimension-attributes-4d96a8a.md)\). 
+Users working in analytic models can, for each measure and attribute, choose whether to include or exclude it in the data exposed to SAP Analytics Cloud \(see [Creating an Analytic Model](creating-an-analytic-model-e5fbe9e.md)\). 
 
 > ### Note:  
 > To control the visibility of a column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Hide in Story* or *Show in Story*.

@@ -55,6 +55,23 @@ For full documentation, see [SELECT Statement \(Data Manipulation\)](https://hel
 
 
 
+<a name="loio6a37cc58322548a986496d5e139e9201__section_cbg_kdc_r2c"/>
+
+## SAP Datasphere Spaces and Schemas
+
+Each SAP Datasphere space has its own schema, where the name of the schema is the *Space ID*.
+
+To provide the name of an object with its schema, use the syntax <code><i class="varname">&lt;schema_name&gt;</i>.<i class="varname">&lt;object_name&gt;</i></code>. For example, to reference the `MySales` view in the `SALES` space, you should enter:
+
+```
+SALES.MySales
+```
+
+> ### Note:  
+> When referencing objects shared to your space, the schema is the *Space ID* for the source space from which the object was shared.
+
+
+
 <a name="loio6a37cc58322548a986496d5e139e9201__operators"/>
 
 ## SQL Operators

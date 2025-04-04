@@ -11,7 +11,7 @@ The data preview is an analytic preview. It is accessible from every model in th
 
 A data preview is only possible if the underlying object in the Data Builder has been deployed.
 
-When you open the data preview from a business entity or a fact model \(only for single fact models\), you can save the data preview as a consumption model. A consumtion model and a perspective is generated with the attributes and measures chosen in the data preview. This can be used as a visual method of modeling.
+When you open the data preview from a business entity or a fact model \(only for single fact models\), you can save the data preview as a consumption model. A consumption model and a perspective is generated with the attributes and measures chosen in the data preview. This can be used as a visual method of modeling.
 
 **Related Information**  
 

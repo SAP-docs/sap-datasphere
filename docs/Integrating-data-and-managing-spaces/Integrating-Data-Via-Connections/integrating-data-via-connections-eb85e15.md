@@ -865,7 +865,7 @@ yes \(including real-time replication\*\*\)
 </td>
 <td valign="top">
 
-no
+yes \(source\)
 
 </td>
 <td valign="top">

@@ -4,6 +4,15 @@
 
 You can assign users to your space and manage them.
 
+This topic contains the following sections:
+
+-   [Prerequisites](control-user-access-to-your-space-9d59fe5.md#loio9d59fe511ae644d98384897443054c16__section_j1n_kz3_42c)
+-   [Introduction to Space User Access](control-user-access-to-your-space-9d59fe5.md#loio9d59fe511ae644d98384897443054c16__section_sj4_drj_byb)
+-   [Access the Users Area in Your Space](control-user-access-to-your-space-9d59fe5.md#loio9d59fe511ae644d98384897443054c16__section_wt4_p2t_2yb)
+-   [Assign Users to Your Space](control-user-access-to-your-space-9d59fe5.md#loio9d59fe511ae644d98384897443054c16__section_hf2_srj_byb)
+-   [Change Privileges for a User in Your Space](control-user-access-to-your-space-9d59fe5.md#loio9d59fe511ae644d98384897443054c16__section_sk1_wrj_byb)
+-   [Unassign Users from Your Space](control-user-access-to-your-space-9d59fe5.md#loio9d59fe511ae644d98384897443054c16__section_sbt_wrj_byb)
+
 
 
 <a name="loio9d59fe511ae644d98384897443054c16__section_j1n_kz3_42c"/>

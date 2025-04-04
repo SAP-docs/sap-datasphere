@@ -6,6 +6,30 @@
 
 In the *Remote Queries* monitor, you track the queries sent to your remote connected source systems for your space. You can monitor the communication between the federation layer of SAP HANA Cloud and the connected remote source systems, and analyze them.
 
+
+
+<a name="loio806d7f0c45a14f1fb07db0a226b2b822__section_tz1_zkb_t2c"/>
+
+## Prerequisites
+
+To monitor remote queries, you must have a scoped role that grants you access to the space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
+
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio806d7f0c45a14f1fb07db0a226b2b822__section_obv_vkb_t2c"/>
+
+## Monitoring Remote Queries
+
 SAP Datasphere is connected to remote systems via SAP HANA Cloud using data federation. SAP HANA Cloud already provides a corresponding monitoring view of actual SAP HANA runtime data, including statistics and status information related to the execution of Data Manipulation Language \(DML\) statements. The *Remote Queries* monitor retrieves this information, so that you can keep an eye on how the communication between SAP Datasphere and the connected remote source systems is running and better analyze possibilities for performance bottlenecks while running queries in SAP Datasphere.
 
 The *Remote Queries* monitor allows you to monitor the queries sent to your remote connected source systems for your space. This information is helpful when analyzing executions of story \(or on views or previews\), since it provides details of single read requests, like runtimes or result set size.

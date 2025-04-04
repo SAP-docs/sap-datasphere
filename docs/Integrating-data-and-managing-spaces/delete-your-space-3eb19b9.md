@@ -2,21 +2,7 @@
 
 # Delete Your Space
 
-Delete a space if you are sure that you no longer need any of its content or data.
-
-When you delete a space, the space is moved to the *Recycle Bin* area. From the *Recycle Bin*, a user with an administrator role can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space \(see [Restore Spaces from, or Empty the Recycle Bin](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
-
-> ### Note:  
-> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right: \).
-
-> ### Note:  
-> Before deleting your space, you may want to:
-> 
-> -   Export the data contained in your space \(see [Export Your Space Data](export-your-space-data-27c7761.md)\).
-> 
-> -   Export the audit log entries generated for your space \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
-
-Only users with an administrator role can create spaces. Users with an administrator or a space administrator role can delete spaces.
+Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.
 
 
 
@@ -33,6 +19,16 @@ To move your space to the *Recycle Bin* area, you must have a scoped role that g
 
 The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
+> ### Note:  
+> Before deleting your space, you may want to:
+> 
+> -   Export the data contained in your space \(see [Export Your Space Data](export-your-space-data-27c7761.md)\).
+> 
+> -   Export the audit log entries generated for your space \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
+
+> ### Note:  
+> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right: \).
+
 
 
 <a name="loio3eb19b96e6ba41dfbffd759c5c8370bb__section_scx_lmz_dcc"/>
@@ -48,10 +44,10 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 3.  In the confirmation message, enter DELETE if you are sure that you no longer need any of its content or data, then click the *Delete* button.
 
-    The space is moved to the *Recycle Bin* area until it is restored or permanently deleted from the database \(see [Restore Spaces from, or Empty the Recycle Bin](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
+    The space is moved to the *Recycle Bin* area. From the *Recycle Bin*, a user with an administrator role can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space \(see [Restore Spaces from, or Empty the Recycle Bin](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
 
     > ### Note:  
-    > The *Recycle Bin* is only accessible to users with an administrator role.
+    > The *Recycle Bin* is only visible and accessible to users with an administrator role.
 
 
 Once the space is in the *Recycle Bin*:

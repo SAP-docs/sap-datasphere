@@ -1,8 +1,18 @@
 <!-- loio656eebc2ced14ec09afa455224fa9a98 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Consume Space Objects in Your HDI Container
 
 To consume SAP Datasphere views that are exposed for consumption as sources for your calculation views and flowgraphs, you must create a database user with appropriate privileges, create a user-provided service in SAP BTP Cockpit, and configure your HDI project.
+
+
+
+<a name="loio656eebc2ced14ec09afa455224fa9a98__prereq_nvw_np1_t2c"/>
+
+## Prerequisites
+
+To consume space objects in your HDI container, it must be added to your space \(see [Add an HDI Container and Access its Objects in Your Space](add-an-hdi-container-and-access-its-objects-in-your-s-5d55da5.md)\).
 
 
 
@@ -19,9 +29,7 @@ To consume SAP Datasphere views that are exposed for consumption as sources for 
 
 ## Procedure
 
-1.  Add the HDI container to your space \(see [Add an HDI Container and Access its Objects in Your Space](add-an-hdi-container-and-access-its-objects-in-your-s-5d55da5.md)\).
-
-2.  Create a database user with the following privileges:
+1.  Create a database user with the following privileges:
 
     -   *Enable Read Access \(SQL\)*
     -   *Enable Write Access \(SQL, DDL, DML\)*
@@ -29,7 +37,9 @@ To consume SAP Datasphere views that are exposed for consumption as sources for 
 
     See [Create a Database User](../Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md).
 
-3.  Open the *Database User Details* dialog and copy the credentials from the *HDI Consumption* section.
+2.  In the *Database Users* area, click the <span class="FPA-icons-V3"></span> button for your database user.
+
+3.  In the *Database User Details* dialog that opens, copy the credentials from the *HDI Consumption* section.
 
 4.  Go to the SAP BTP Cockpit, open *Service Instances*, and use the copied credentials to create a user-provided service instance, which will provide the connection between SAP BTP Cockpit and your SAP Datasphere tenant.
 

@@ -258,6 +258,9 @@ When any updates are made to a package that has been exported, its status change
 -   Leave the version number unchanged, your new export will overwrite the previous exported version.
 -   Set a new, higher version number, a new package version is exported.
 
+> ### Note:  
+> If objects are removed from the package, the record of these removals is not transported, and the removed objects will not be deleted in the target tenant.
+
 
 
 <a name="loio24aba84ceeb3416881736f70f02e3a0a__section_delete"/>

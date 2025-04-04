@@ -8,6 +8,14 @@ When you have created a database user, you can connect to your Open SQL schema w
 
 
 
+<a name="loiob78ad208f8c4494489aabf97284679b6__section_a51_yq1_q2c"/>
+
+## Prerequisites
+
+To connect to an Open SQL schema or to allow the space to access the open SQL schema, you must have a database user and a password \(see [Create a Database User](create-a-database-user-798e3fd.md)\).
+
+
+
 <a name="loiob78ad208f8c4494489aabf97284679b6__section_efv_nx1_btb"/>
 
 ## Obtaining Your Open SQL Schema Connection Information
