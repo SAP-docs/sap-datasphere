@@ -710,7 +710,7 @@ Shows the maximum amount of memory \(in MiB\) the task has used during the runti
 > ### Note:  
 > You can see this information:
 > 
-> -   The option *Enable Expensive Statement Tracing* is enabled by default. It traces tasks exceeding the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+> -   The option *Enable Expensive Statement Tracing* is enabled by default. It traces task exceeding the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
 > -   And if the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
 > 
@@ -916,7 +916,9 @@ Cancelling a task run may be required when it takes too long or if the run impac
 In *Statement Logs*, the table shows the following information, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
 
 -   The option *Enable Expensive Statement Tracing* is enabled by default, you can see all the database statements that exceed the specified thresholds.
+
 -   If the option *Enable Expensive Statement Tracing* is disabled, then the *Statements* tab is disabled.
+
 
 See [Configure Monitoring](configure-monitoring-9cd0691.md).
 
@@ -1110,7 +1112,7 @@ Shows the values of the parameters of the statement that are indicated by the ch
 </td>
 <td valign="top">
 
-Shows if the statement has an out-of-memory error. If there is one, a timestamp is then displayed. If not, *NULL* is then displayed.
+Shows if the statement has an out-of-memory error. If there is one, a timestamp is displayed. If there is none, *NULL* is then displayed.
 
 </td>
 </tr>

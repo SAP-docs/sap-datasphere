@@ -1,10 +1,10 @@
 <!-- loioe5c4ac8ab3bf4573b86cd4f4f3118c16 -->
 
-# Update the Settings Used to Run Your Transformation Flow \(in a File Space\)
+# Override the Default Settings to Run Your Transformation Flow \(in a File Space\)
 
 Update the maximum amount of compute resources that the file space can consume to run a transformation flow.
 
-When creating a file space, administrators have defined the maximum amount of compute resources that the file space can consume when processing statements in its Apache Spark instance. In the Workload management, they have defined default Apache Spark Applications to run tasks, including transformation flow runs. For more information see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
+When creating a file space, administrators have defined the maximum amount of compute resources that the file space can consume when processing statements in its Apache Spark instance. In the *Workload Management*, they have defined default Apache Spark Applications to run tasks, including transformation flow runs. For more information see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
 
 However, you can change the maximum amount of compute resources that can get consumed specifically by one transformation flow.
 

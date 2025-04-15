@@ -64,7 +64,7 @@ You must, in addition, obtain the following parameters for an OAuth client creat
 -   *Authorization URL*
 -   *Token URL*.
 
-For more information about obtaining the OAuth client parameters, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with the DW Administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
+For more information about obtaining the OAuth client parameters, see [Create an OAuth2.0 Client with an Interactive Usage Purpose](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/db71f7e867ca46889dc1ae33b1f75f19.html "Users with an administrator role can create OAuth2.0 clients with an interactive usage purpose and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
 
 
 

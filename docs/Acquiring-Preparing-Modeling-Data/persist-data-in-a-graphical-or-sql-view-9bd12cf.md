@@ -46,7 +46,7 @@ Shows how you currently access your view.
 
 -   *Persisted*: The view is persisted can be used immediately.
 -   *Partially Persisted*: Not all view data has been persisted. If your view contains an input parameter, only records that match the input parameter default value are persisted.
--   *Virtual*: The view is accessed directly, no intermediate persistency is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
+-   *Virtual*: The view is accessed directly, no intermediate persistence is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
 
 
 

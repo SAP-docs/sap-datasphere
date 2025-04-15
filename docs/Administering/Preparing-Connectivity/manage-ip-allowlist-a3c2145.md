@@ -264,7 +264,7 @@ You can use a file produced in the same or on a different SAP Datasphere tenant.
     2.  Click *Select Source File*, and choose the allowlist file. Click *Open*.
     3.  Choose one of the following:
         -   *Append new IPs*: Add the unique IP addresses to the current list or update existing IP descriptions.
-        -   *Override existing IPs*: Remove the old IP addresses and add only those addresses in this file.
+        -   *Overwrite existing IPs*: Remove the old IP addresses and add only those addresses in this file.
 
     4.  Click *Import*.
 

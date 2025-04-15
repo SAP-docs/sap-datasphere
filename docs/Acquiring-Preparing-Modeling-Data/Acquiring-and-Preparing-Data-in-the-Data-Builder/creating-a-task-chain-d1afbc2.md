@@ -267,7 +267,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
     -   Local Table \(File\) - Merge, Optimize or Delete Records.
 
         > ### Note:  
-        > -   Merge: Add, update or delete data into the existing local table \(file\). A replication flow writes data files to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run..
+        > -   Merge: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run..
         > -   Optimize: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files..
         > -   Delete Records: Delete records from your local table \(file\). Under Settings, define what type of deletion you want:
         >     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.

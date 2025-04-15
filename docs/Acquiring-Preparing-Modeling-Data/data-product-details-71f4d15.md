@@ -2,17 +2,19 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# SAP Business Data Cloud Data Product Details
+# Data Product Details
 
-If you're interested in a data product, review its detailed information, such as properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it.
+If you're interested in a SAP Business Data Cloud data product, review its detailed information, such as properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it.
 
 
+
+This topic discusses data products that are coming from tenants that are part of a SAP Business Data Cloud formation.
 
 The catalog search results provides high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, select it to view its details page that provides many different types of information about it. This information includes properties about the data product, detailed information about the APIs, and resources that can provide information or examples on how to use the data product.
 
 For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use it. They can also review individual APIs and learn how to extend them.
 
-After you data product details, you can choose to install it in your space \(see [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md)\).
+After you view data product details, you can choose to install it in your space \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
 
 
 
@@ -129,7 +131,7 @@ Select a tab to view more information about the data product, such as an overvie
 
 <a name="loio71f4d1599dba4aa59e6682a314650cf7__section_b5q_ytl_bdc"/>
 
-## SAP Business Data Cloud Data Product's Properties and Details
+## Data Product Properties and Details
 
 To view the properties of the data product, select *Overview tab* \> *Properties*.
 
@@ -536,9 +538,9 @@ Actions
 </td>
 <td valign="top">
 
-Select *Install* and use the *Import Entities* wizard to import entities from the data product to your SAP Datasphere space.
+Select *Install* and follow the steps in the *Import Entities* wizard to import entities from the data product to your space on the local SAP Datasphere tenant. This action is available when you access the data product from a SAP Datasphere catalog.
 
-See [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md).
+The *Install* action is only available in the SAP Datasphere catalog and appears if you have the appropriate privileges \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
 
 </td>
 </tr>
@@ -549,12 +551,13 @@ You can select an data product \(API\) to view its details page, where you can l
 -   Data product \(API\) properties that include all the same high-level information of the data product \(API\) *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
 -   Available objects and their container path and primary key. If the primary key is missing, the data product \(API\) cannot be installed.
 -   Documentation that provides a more detailed description of the data product \(API\), links that can give you more information on how to use it, and extensibility information.
+-   Actions for the data product \(API\) appear in a toolbar at the top of the page.
 
 
 
 <a name="loio71f4d1599dba4aa59e6682a314650cf7__section_axs_q5l_bdc"/>
 
-## SAP Business Data Cloud Data Product Documentation
+## Data Product Documentation
 
 The *Documentation* tab provides supporting documentation and resources for the data product:
 

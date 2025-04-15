@@ -64,7 +64,7 @@ Beforehand you can log in with a Oauth client, a user with the administrator rol
 > -   *Authorization Grant*: *Client Credentials*
 > 
 > 
-> See [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md) 
+> See [Create an OAuth2.0 Client with an API Access Purpose](../Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-an-api-access-purpose-9850063.md).
 
 To log in to the OAuth client, send a GET \(or POST\) request with the following elements:
 

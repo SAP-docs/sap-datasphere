@@ -4,9 +4,9 @@
 
 # Creating Partitions for Your Persisted Views
 
-From the *Views*- Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts to enable persistency on views with large data volume.
+From the *Views* details screen, you can create partitions on columns from your dataset and break down your data into smaller and more manageable parts to enable persistence on views with large data volume.
 
-Persisting views with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for Data modelers. To avoid such situations, you can create partitions when persisting a view and thus enable partitioned data transfer of large datasets for supported connection types.
+Persisting views with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for data modelers. To avoid such situations, you can create partitions when persisting a view and thus enable partitioned data transfer of large datasets for supported connection types.
 
 > ### Note:  
 > For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
@@ -14,7 +14,7 @@ Persisting views with larger data volumes without having out-of-memory errors or
 > ### Caution:  
 > Some adapters used by the connected sources are not able to push down the filters for the partitioning. Thus, performance can be impacted by the number of partitions created.
 
-You can create partitions from the *Views* – Details screen:
+You can create partitions from the *Views* details screen:
 
 1.  Click <span class="FPA-icons-V3"></span> for the view in virtual access mode you would like to persist and for which you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.
@@ -38,7 +38,7 @@ The columns available for selection are a subset of all view output columns. Som
 
     For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
 
--   You can't select a column containing analytical measures as partitioning-columns, only columns containing dimensions can be used as partitioning columns.
+-   You can't select a column containing analytical measures as partitioning-columns, only columns containing dimensions can be used as partitioning-column.
 -   If you select a non-key column to define your partitions, you must ensure that the column value of a record in the source data is not changed while the view is persisted. Otherwise, data loading may fail because a record with the same key is persisted in two different partitions.
 
 > ### Note:  
@@ -69,15 +69,12 @@ In a 2nd step, the columns are sorted by their partitioning suitability, and add
 
 Create the number of desired partitions by clicking <span class="FPA-icons-V3"></span> \(Add Partitions\) 
 
-Enter an interval for each of them.
-
-> ### Caution:  
-> Intervals must not overlap
+Enter an interval for each of them. Intervals must not overlap.
 
 Check the *Locked* option if you don't want to update a partition in the next run.
 
 > ### Caution:  
-> If locked partitions contain data filtered by authorizations provided by data access controls, you need to unlock partitions and load a new snaphot of data, whenever these authorizations are changed.
+> If locked partitions contain data filtered by authorizations provided by data access controls, you need to unlock partitions and load a new snapshot of data, whenever these authorizations are changed.
 
 An *OTHERS* partition is set by default. It contains data that is not covered by your defined intervals . For example, if rows have been inserted or modified since your last data persistence and they now don’t match any of the defined intervals. This *OTHERS* partitions can't be locked.
 
@@ -101,11 +98,11 @@ An *OTHERS* partition is set by default. It contains data that is not covered by
 
 When you think the data will no longer change, or no change is expected for a while, you can check this option to avoid unnecessary data load.
 
-In the example below, I defined 2 partitions as *Locked* \(partitions 2 and 3\):
+In the example below, 2 partitions are defined as *Locked* \(partitions 2 and 3\):
 
 ![](images/Locking_Partitions_32cae47.png)
 
-When I load a new snapshot, only partitions 1, 4 and OTHERS are refreshed:
+When a new snapshot is loaded, only partitions 1, 4 and OTHERS are refreshed:
 
 ![](images/Message_Locked_Partitions_Defined_6d6de8f.png)
 
@@ -126,7 +123,7 @@ When I load a new snapshot, only partitions 1, 4 and OTHERS are refreshed:
 In some cases, you might want to refresh data for a single or for multiple partitions only, independently if they are locked or not. To do so, select the desired partitions and click *Load Selected Partitions*.
 
 > ### Example:  
-> In the example below, I have selected 2 partitions. Partition 1 is not locked and partition 2 is locked:
+> In the example below, 2 partitions have been selected. Partition 1 is not locked and partition 2 is locked:
 > 
 > ![](images/Select_PartitionsToUpdate_a04c46a.png)
 > 

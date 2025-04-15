@@ -15,7 +15,7 @@ When a user does not have permission to access a space or spaces, a row titled *
 You can only view entities that you are authorized to view. Entities from spaces that you are not allowed to view will be labeled as unauthorized. Contact your administrator to get authorization to view the hidden entities.
 
 > ### Note:  
-> To start the *View Analyzer* you will need the *DW Integrator* scoped role and the *Data Builder \(Read\)* privilege which can be found in the *DW Modeler* scoped role. You will be able to see all entities with either the global role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
+> To start the *View Analyzer*, you will need the *DW Integrator* scoped role and the *Data Builder \(Read\)* privilege which can be found in the *DW Modeler* scoped role. You will be able to see all entities with either the global role *DW Administrator* or a custom role that includes *Data Warehouse Runtime \(Read\)* privilege.
 > 
 > Ask your tenant administrator to assign you a scoped or custom role that fits your required task.
 

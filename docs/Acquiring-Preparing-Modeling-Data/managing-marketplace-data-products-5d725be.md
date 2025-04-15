@@ -14,7 +14,7 @@ Use the *Marketplace Data Products* page to keep track of and manage all your in
 
 Marketplace data products and data providers are only available in the SAP Datasphere catalog.
 
-To search for and evaluate objects in the *Marketplace Data Products* collection, you must have:
+To search for and evaluate objects in the *Data Products \(Marketplace\)* collection, you must have:
 
 -   A global role that grants you the following privilege:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.

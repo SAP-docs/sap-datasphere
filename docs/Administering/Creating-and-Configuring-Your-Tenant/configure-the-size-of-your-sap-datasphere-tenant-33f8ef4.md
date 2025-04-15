@@ -402,7 +402,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] \] Enter the number of blocks to allocate to data integration applications \(replication flows\).
+\[optional\] \] Enter the number of blocks to allocate to data integration applications \(replication flows and transformation flows\).
 
 Even if you don’t allocate blocks here, you have a default number of execution hours for data integration \(depending on your contract\). For more information about this, as well as about how many execution hours you get per block, see the SAP Datasphere and SAP Datasphere, Test Tenant Supplemental Terms and Conditions, which are a part of the [Service Level Agreement](https://help.sap.com/viewer/86054eedd0dd480f92b0824c281923d5/cloud/en-US/962dfadea39843efaa806323b9a872fe.html "The Service Level Agreement (SLA) is a contract between SAP and its customers that forms the basis of your contractual relationship with SAP when referenced in specific order forms.") :arrow_upper_right:.
 

@@ -198,7 +198,10 @@ For more information and points to consider when using replication flows, see al
 
 2.  To see the run details of a flow, click <span class="SAP-icons-V5"></span> \(Details\) for the relevant flow.
 
-    The run details page opens. It shows the runs of the flow in the left panel and their corresponding messages in the right panel. Here, you can use the *Stop Run* \(for *Replication Flow*\), *Cancel Run* \(for *Transformation Flow*\) or *Set to failed* \(for *Data Flow\)* buttons to stop a run that is currently running. The buttons are available until the run ends.
+    The run details page opens. It shows the runs of the flow in the left panel and their corresponding messages in the right panel. Here, you can use the *Stop Run* \(for *Replication Flow* and *Data Flow*\) or *Cancel Run* \(for *Transformation Flow*\) buttons to stop a run that is currently running. The buttons are available until the run ends.
+
+    > ### Note:  
+    > For *Data flow*, if the *Stop Run* does not work properly, or if the flow seems to be blocked at the current step, you can click on *Set to failed*.
 
     For transformation flows, the following tabs are available:
 
@@ -232,7 +235,7 @@ For more information and points to consider when using replication flows, see al
 
 4.  If your flow failed, you can use the following tools from the details page of the flow run to analyze and solve your issue:
 
-    -   \[Data Flow only\] You can analyze the errors that have occurred during your data flow runs, downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details.
+    -   \[Data Flow and Replication Flow only\] You can analyze the errors that have occurred during your flow runs, downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details.
     -   \[Data Flow only\] You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
     -   \[Transformation Flow only\]: You can run your transformation flow with Support Settings. For more information, see [Explore Transformation Flows](explore-transformation-flows-7588192.md).
 

@@ -22,6 +22,10 @@ SAP Datasphere supports two types of local table to persist data:
 -   Local tables – Are stored on disk or in-memory \(see [Creating a Local Table](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/2509fe4d86aa472b9858164b55b38077.html?locale=en-US&state=DRAFT&version=DEV)\). These tables can use delta capture and can only be created in a standard space \(with **SAP HANA Database \(Disk and In-Memory\)** storage \(see [Create a Space](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/bbd41b82ad4d4d9ba91341545f0b37e7.html?locale=en-US&state=DRAFT&version=DEV)\).
 -   Local tables \(file\) – Are stored on files and are intended for file storage with large amounts of data at lower cost. These tables always use delta capture and can only be created in a file space \(with **SAP HANA Data Lake Files** storage \(see [Create a File Space to Load Big Data](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/947444683e524cfd9169d7671b72ba0c.html?locale=en-US&state=DRAFT&version=DEV)\).
 
+    > ### Note:  
+    > Local tables \(file\) can also be created by the Data Product Generator from SAP BW or SAP BW/4HANA, and the behavior of such tables can differ. For more information, see [Working With Local Tables (File) Received From the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/72a055fc7dad40079efa442ddd4b998e.html "An administrator in SAP BW or SAP BW/4HANA has pushed data into SAP Datasphere as a local table (file), and you now want to use it for your business case.") :arrow_upper_right:.
+
+
 You cannot create views and analytic models in file spaces, but you can share local tables \(file\) to standard spaces where they can be consumed by views, flows, and analytic models \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\).
 
 SAP HANA Cloud, data lake allows SAP Datasphere to store and manage mass-data efficiently in a secured environment. The SAP HANA native SQL on files feature gives you a direct access to the data stored in the object store and enables large data-based business scenarios at lower costs.
@@ -29,7 +33,7 @@ SAP HANA Cloud, data lake allows SAP Datasphere to store and manage mass-data ef
 As a local table \(file\) is capturing delta changes via flows, it creates different entities in the repository after it is deployed:
 
 -   An active records entity for accessing the delta capture entity through a virtual table. It excludes the delta capture columns and deleted records, and keeps only the active records.
--   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(File\) has a specific folder in file storage \(inbound buffer\) to which a replication flow writes data files to a specific target object. To process data updates from this inbound buffer to the local table \(File\), and therefore make data visible, a merge task has to run \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md).\) You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
+-   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(file\) has a specific folder in file storage \(inbound buffer\) to which data updates are stored until they are pushed to the local table \(file\) by a merge task \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
 
 
 
@@ -84,7 +88,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     <tr>
     <td valign="top">
     
-    Business Name
+    Technical Name
     
     </td>
     <td valign="top">

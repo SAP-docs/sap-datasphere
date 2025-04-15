@@ -1,6 +1,6 @@
 <!-- loio4b660c0395454bd0923f732eef4ee4b2 -->
 
-# Take Over the Ownership of a Schedule
+# Modify the Owner of a Schedule
 
 Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.
 

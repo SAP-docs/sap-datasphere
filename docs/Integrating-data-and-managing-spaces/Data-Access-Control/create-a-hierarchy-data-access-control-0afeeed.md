@@ -237,6 +237,44 @@ For example:
     <tr>
     <td valign="top">
     
+    Owner
+    
+    </td>
+    <td valign="top">
+    
+    Enter the name of the person responsible for your data access control.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Status
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the deployment and error status of the object.
+
+    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Deployed On
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays the date and time of the last deployment.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Structure
     
     </td>

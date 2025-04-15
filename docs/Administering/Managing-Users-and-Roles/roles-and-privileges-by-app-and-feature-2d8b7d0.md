@@ -685,21 +685,25 @@ See [Administering SAP Datasphere](../administering-sap-datasphere-70ee87c.md)
 
 Users with different roles have different levels of access to the *Space Management* tool:
 
--   A *DW Consumer* cannot log into SAP Datasphere.
+-   A user with a consumer role cannot log into SAP Datasphere.
 
--   A *DW Viewer* can log into SAP Datasphere, but has no *Spaces* permissions. They cannot see the *Space Management* tool.
+-   A user with a viewer role can log into SAP Datasphere, but has no *Spaces* permissions and cannot see the *Space Management* tool.
 
--   A *DW Modeler* and a *DW Integrator* have *Spaces* `(-R------)` permission. They have read-only access to the page for their space \(though they cannot see all its properties\).
+-   A user with a modeler or integrator role has *Spaces* `(-R------)` permission. They have read-only access to the page for their space \(though they cannot see all its properties\).
 
--   A *DW Space Administrator* has *Spaces* `(-RUD----)` permissions. They can see all the space properties, and edit those outside the *General Settings* and *Workload Management* sections.
+-   A user with a space administrator role has *Spaces* `(-RUD----)` permissions. They can see all the space properties, and edit those outside the *General Settings* and *Workload Management* sections.
 
--   A *DW Administrator* has *Spaces* `(CRUD---M)` permissions. They can create spaces and edit some space properties, including modifying the storage allocated and the space priority.
+-   A user with an administrator role has *Spaces* `(CRUD---M)` permissions. They can create spaces and edit some space properties, including modifying the storage allocated and the space priority.
 
 
 Various privileges and permissions are required to see and edit different parts of the *Space Management* tool:
 
 > ### Note:  
-> The global privilege *Spaces* `(-------M)` enables users to perform the following actions in all the spaces of the tenant: read, update and delete.
+> -   In addition to all the privileges listed in the table below that are required to work with the *Space Management* tool, the following privileges are required:
+>     -   *Data Warehouse General* `(-R------)` \(both global and scoped privilege\) - To access SAP Datasphere.
+>     -   Global privilege *Space Files* `(-------M)` or scoped privilege *Space Files* `(-R------)`- To view objects in your space.
+> 
+> -   The global privilege *Spaces* `(-------M)` enables users with a global role to perform the following actions in all the spaces of the tenant: read, update and delete.
 
 
 <table>
@@ -758,7 +762,7 @@ or scoped privilege *Spaces* `(-R------)`
 > 
 > -   *Data Consumption* and *Database Users*: Global privilege *Spaces* `(-------M)` or scoped privilege *Spaces* `(-R------)`
 > 
-> -   *HDI Containers*:Scoped privileges *Spaces* `(-R------)` and *Data Warehouse Connection* `(-R------)`
+> -   *HDI Containers*: Scoped privileges *Spaces* `(-R------)` and *Data Warehouse Connection* `(-R------)`
 > 
 >     > ### Note:  
 >     > A DW Administrator cannot see the *HDI Containers* area in a space.
@@ -778,7 +782,7 @@ or scoped privilege *Spaces* `(-R------)`
 DW Administrator and DW Space Administrator
 
 > ### Note:  
-> A user with the role DW Modeler or DW Integrator have read-only access to the page for their space but they cannot view all its properties.
+> A user with a role based on the DW Modeler or DW Integrator role template have read-only access to the page for their space but they cannot view all its properties.
 
 
 
@@ -787,7 +791,7 @@ DW Administrator and DW Space Administrator
 <tr>
 <td valign="top">
 
-Modify *General Settings* \(except for *Storage Assignment*\)
+Modify *General Settings* \(except for *Space Storage*\)
 
 See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bbd41b8.md)
 
@@ -808,7 +812,7 @@ DW Administrator and DW Space Administrator
 <tr>
 <td valign="top">
 
-Modify *Storage Assignment*, *Data Lake Access*, *Workload Management*
+Modify *Space Storage*, *Data Lake Access*, *Workload Management*
 
 See [Create a Space](../Creating-Spaces-and-Allocating-Storage/create-a-space-bbd41b8.md), [Allocate Storage to a Space](../Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md) and [Set Priorities and Statement Limits for Spaces](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-d66ac1e.md)
 
@@ -828,6 +832,8 @@ DW Administrator
 <td valign="top">
 
 Modify *Users*
+
+See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -863,7 +869,7 @@ or scoped privileges *Spaces* `(-RU-----)`
 DW Administrator, DW Space Administrator
 
 > ### Note:  
-> A user with the DW Integrator role needs in addition the privilege *Spaces* `(--U-----)` to create database users.
+> A user with a role based in the DW Integrator role template needs in addition the privilege *Spaces* `(--U-----)` to create database users.
 
 
 
@@ -948,7 +954,9 @@ See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/9f36ca3
 </td>
 <td valign="top">
 
-Scoped privilege *Spaces* `(-R------)`
+Global privileges *Spaces* `(-------M)`
+
+or scoped privilege *Spaces* `(-R------)`
 
 </td>
 <td valign="top">
@@ -990,7 +998,7 @@ See [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852
 
 Global privileges *Spaces* `(-------M)` and *User* `(-------M)` 
 
-or scoped privileges *Spaces* `(---D----)` and *Scoped Role User Assignement* `(-------M)`
+or scoped privileges *Spaces* `(-RUD----)` and *Scoped Role User Assignment* `(-------M)`
 
 </td>
 <td valign="top">
@@ -998,7 +1006,7 @@ or scoped privileges *Spaces* `(---D----)` and *Scoped Role User Assignement* `(
 DW Administrator and DW Space Administrator
 
 > ### Note:  
-> A user with a space administrator role can delete only the spaces they’re assigned via a scoped role.
+> A user with a space administrator role can delete only the spaces they’re assigned to via a scoped role.
 > 
 > A user with a tenant administrator role can delete any space as *Spaces* `(-------M)` is included in the role.
 
@@ -1777,7 +1785,7 @@ SAP Business Data Cloud Data Products
 
 Search for an SAP Business Data Cloud data product and view the detailed information for it.
 
-See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1794,7 +1802,7 @@ SAP Business Data Cloud Data Products
 </td>
 <td valign="top">
 
-Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1819,7 +1827,7 @@ SAP Business Data Cloud Data Products
 
 Search for an SAP Business Data Cloud data product, view the detailed information for it, and share it with external users.
 
-See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing SAP Business Data Cloud Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

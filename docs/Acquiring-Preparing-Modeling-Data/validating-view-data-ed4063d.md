@@ -163,6 +163,25 @@ For example, if an object has primary key columns `ID` and `Language` no record 
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Referential Integrity
+
+</td>
+<td valign="top">
+
+No fact record may contain a value in a foreign key column if the value is not present in the mapped key column of the associated dimension.
+
+For example, if the `Sales` fact has a foreign key column `Product ID` with an association to a `Products` dimension, then all the values in that column must be found in the primary key column of the dimension.
+
+> ### Note:  
+> This validation rule is only available in views with a semantic usage "Fact" and for associations from the fact to dimensions.
+
+
+
+</td>
+</tr>
 </table>
 
 For information about working with keys, see [Set Key Columns to Uniquely Identify Records](Modeling-Data-in-the-Data-Builder/set-key-columns-to-uniquely-identify-records-d9ef2c9.md).

@@ -80,7 +80,7 @@ Before you can use the connection for replication flows, the following is requir
 
 -   Making use of fast serialization requires the following prerequisites:
 
-    -   The endpoint is either RFC or RFCLB \(for loadbalancing via message server\). Fast serialization is not available for endpoints WSRFC or SQL.
+    -   The endpoint is either RFC or RFCLB \(for load balancing via message server\). Fast serialization is not available for endpoints WSRFC or SQL.
 
     -   The SAP S/4HANA on-premise system needs to support the feature.
 

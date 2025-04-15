@@ -2,7 +2,7 @@
 
 # Add a Fact to an Analytic Model
 
-As a source for your analytic model, you need an object of type fact.
+As a source for your analytic model, you need an object of type fact or another analytic model.
 
 
 
@@ -10,11 +10,22 @@ As a source for your analytic model, you need an object of type fact.
 
 The data type and semantic type information is inherited from the fact, as well as the standard aggregation behaviour for a measure. For fields with semantic type *Amount with Currency* and *Quantity with Unit* you only need to add the measure in the analytic model, the quantity or unit are added automatically.
 
+For analytic models as a source, these properties are copied to the new analytic model:
+
+-   All measures that are not auxiliary
+
+-   All fact source attributes and attributes from all selected dimensions
+-   Associations
+-   Variables
+-   Global filter
+-   Data access controls
+-   All attributes needed in the association to the dimension and all additional necessary attributes, e.g for hierarchies on dimensions.
+
 
 
 ## Procedure
 
-1.  Browse or search for the object you want to add. The repository shows only the objects which can be used in an analytic model: facts.
+1.  Browse or search for the object you want to add. The repository shows only the objects which can be used in an analytic model: facts and analytic models.
 
 2.  Drag your source from the Repository and drop it onto the canvas.
 

@@ -24,7 +24,7 @@ See:
 
 -   [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md)
 -   [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md)
--   [Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md)
+-   [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)
 
 Marketplace data products are only available in the SAP Datasphere catalog.
 

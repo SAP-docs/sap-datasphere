@@ -176,8 +176,60 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
     > ### Note:  
     > As an alternative to creating a scoped role, you can use one of the predefined scoped roles that are delivered with SAP Datasphere in the *Roles* page and directly assign spaces and users to them.
 
-3.  Enter a unique name for the role and select the license type SAP Datasphere.
+3.  In the *Create a New Role* dialog, complete the following properties:
 
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Enter a unique name for the role. The name can only contain upper and lower case letters, numbers, and underscores and its maximum length is 20 characters.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Description
+    
+    </td>
+    <td valign="top">
+    
+    \[optional\] Enter a description, which can be changed at any time. The description can only contain upper and lower case letters, numbers, spaces, and dashes and its maximum length is 155 characters.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    License Type
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Shows SAP Datasphere.
+    
+    </td>
+    </tr>
+    </table>
+    
 4.  Click *Create*.
 
 5.  Select the role template, which can either be a standard role template or a custom role and click *Save*.

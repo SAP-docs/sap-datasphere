@@ -100,7 +100,9 @@ The method described here assumes that SAP Datasphere is using its default authe
     > ### Note:  
     > The *Manager* column is not relevant for SAP Datasphere users.
 
-6.  Select the icon <span class="FPA-icons-V3"></span> and choose one or more roles from the list.
+6.  In the *Roles* column, select the icon <span class="FPA-icons-V3"></span> and choose one or more roles from the list.
+
+    If one or more default roles have already been created, you can leave *Roles* empty. Default roles will be assigned to the user when you click *Save*.
 
 7.  Select <span class="FPA-icons-V3"></span> \(Save\).
 

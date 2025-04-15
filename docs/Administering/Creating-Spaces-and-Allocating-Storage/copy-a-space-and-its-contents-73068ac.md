@@ -14,6 +14,7 @@ You can copy a space and all the *Data Builder* objects it contains into a new s
 
 To copy a space and its contents, you must have a global role that grants you the following privileges:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - to create spaces.
 -   *Spaces* \(`-------M`\) - to update all spaces and space properties.
 -   *Spaces Files* \(`-------M`\) - to create, read, update, and delete all objects in all spaces.

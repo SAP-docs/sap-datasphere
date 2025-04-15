@@ -300,5 +300,5 @@ You may also pause and then later resume execution of scheduled tasks via the me
 **Related Information**  
 
 
-[Take Over the Ownership of a Schedule](take-over-the-ownership-of-a-schedule-4b660c0.md "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.")
+[Modify the Owner of a Schedule](modify-the-owner-of-a-schedule-4b660c0.md "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.")
 

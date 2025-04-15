@@ -12,7 +12,7 @@ Use the catalog *Marketplace Data Products* collection to view data products for
 
 ## Prerequisites
 
-To search for and evaluate objects in the *Marketplace Data Products* collection, you must have:
+To search for and evaluate objects in the *Data Products \(Marketplace\)* collection, you must have:
 
 -   A global role that grants you the following privilege:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.

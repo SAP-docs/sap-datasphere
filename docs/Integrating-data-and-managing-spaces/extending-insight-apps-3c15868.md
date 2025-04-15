@@ -13,6 +13,9 @@ The data products installed via SAP Business Data Cloud as part of an insight ap
 If your organization has extended the SAP source system via data products as part of your insight app, then to consume the custom fields included in the reinstalled data products you will need to copy the preparation and app spaces in order to modify the SAP-managed content.
 
 > ### Note:  
+> You must always copy both the preparation and app spaces and complete the entire extension process, so that your copied spaces are entirely independent of the insight app preparation and app spaces. A situation, for example, where objects in a copied app space depend on objects in the insight app preparation space, is not supported.
+
+> ### Note:  
 > If SAP updates the data products and content, these updates are not made available automatically to your copied space and, therefore, you would need to repeat this process for any updated data products.
 
 

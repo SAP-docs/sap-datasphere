@@ -149,7 +149,7 @@ Information
 <tr>
 <td valign="top">
 
-*Data Persistence* menu
+Data Persistence Menu
 
 </td>
 <td valign="top">
@@ -161,7 +161,7 @@ Information
 
 *Remove Persisted Data*: Remove the data that have been persisted in the view and switch the access back to virtual.
 
-*Start View Analyzer*: Analyzes each view definition, the consumed views and the data sources used by local and remote tables that compose your data model. You can then use the provided information and warnings to decide on some improvements for your data model. You can also generate an SQL Analyzer Plan File that you can download \(if you have the required authorizations\) for detailed analysis. For more infromation, see [Exploring Views with View Analyzer](exploring-views-with-view-analyzer-8921e5a.md).
+*Start View Analyzer*: Analyzes each view definition, the consumed views and the data sources used by local and remote tables that compose your data model. You can then use the provided information and warnings to decide on some improvements for your data model. You can also generate an SQL Analyzer Plan File that you can download \(if you have the required authorizations\) for detailed analysis. For more information, see [Exploring Views with View Analyzer](exploring-views-with-view-analyzer-8921e5a.md).
 
 </td>
 </tr>
@@ -263,7 +263,7 @@ Shows how you currently access your view.
 
 -   *Persisted*: The view is persisted can be used immediately.
 -   *Partially Persisted*: Not all view data has been persisted. If your view contains an input parameter, only records that match the input parameter default value are persisted.
--   *Virtual*: The view is accessed directly, no intermediate persistency is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
+-   *Virtual*: The view is accessed directly, no intermediate persistence is used. Or the view was persisted and has now been turned into virtual to free up memory space, for example.
 
 
 

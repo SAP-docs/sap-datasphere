@@ -139,7 +139,8 @@ A transformation flow writes data to a target table. You can create a new target
     -   You can manually map an incoming columns with a target table column that has a compatible datatype by dragging the column from the left list and dropping it onto the appropriate column in the right list.
 
         > ### Note:  
-        > For the data type "string", incoming columns and target table columns do not need to be the same length. It is possible to map incoming columns to target table columns that have a greater length.
+        > -   Mappings cannot be done on a new table before adding a target table. This will give you access to the *Mappings* section and the possibility to edit the automatically generated mapping.
+        > -   For the data type "string", incoming columns and target table columns do not need to be the same length. It is possible to map incoming columns to target table columns that have a greater length.
 
     -   To delete a mapping, select it, and click *Delete*. To delete all mappings, *Remove all Mappings.*
 

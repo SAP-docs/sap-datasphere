@@ -123,7 +123,7 @@ Indicates how the local table \(file\) was last updated. For example, name of th
 </td>
 <td valign="top">
 
-Displays the timestamp when the inbound buffer was last updated by a replication flow.
+Displays the timestamp when the inbound buffer was last updated by a replication flow or by an SAP BW data push.
 
 </td>
 </tr>
@@ -135,7 +135,7 @@ Displays the timestamp when the inbound buffer was last updated by a replication
 </td>
 <td valign="top">
 
-Indicates the name of the replication flow that last updated the inbound buffer.
+Indicates the name of the replication flow or the local table \(file\) generated from SAP BW that last updated the inbound buffer.
 
 </td>
 </tr>

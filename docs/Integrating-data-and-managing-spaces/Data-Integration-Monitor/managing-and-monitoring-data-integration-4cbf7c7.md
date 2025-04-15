@@ -32,10 +32,3 @@ The *Data Integration Monitor* is composed of several monitors that help you tra
 
 Depending on your role and the tasks you need to perform in the *Data Integration Monitor*, you may need specific privileges. See [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
 
-Here are some examples of privileges and permissions you need to perform some tasks:
-
--   To create or update connections, you need the *Data Warehouse Connection* privilege.
--   To perform one-time actions in one of the monitors, such as replicating full set of data, redeploying persisted views, loading new snapshot, or removing persisted data, you need the privilege *Data Warehouse Data Integration* *Update*.
--   To schedule tasks in one of the monitors and perform task execution and log retrieval in general, you need the privilege *Data Warehouse Data Integration* *Execute*.
--   To add a new view in the *Views* monitor, or to set up or change partitioned data loading in the *Remote Tables* monitor, you need the privilege *Data Warehouse Data Builder* *Read*.
-

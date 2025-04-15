@@ -226,10 +226,7 @@ For more information about the supported use cases depending on the connection t
 
         *SAP S/4HANA On-Premise* \(remote tables via ABAP SQL service\)
 
-        > ### Note:  
-        > When configuring the connection for using the ABAP SQL for data federation with remote tables, using the model import feature is not supported with the same connection
-
-
+        *SAP ABAP* on-premise only \(remote tables via ABAP SQL service\)
         
         </td>
         <td valign="top">
@@ -267,7 +264,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Microsoft SQL Server* \(data flows\)
+        *Microsoft SQL Server* \(data flows, replication flows\)
         
         </td>
         <td valign="top">
@@ -320,16 +317,15 @@ For more information about the supported use cases depending on the connection t
         </td>
         <td valign="top">
         
-        -   For the Kafka broker: TCP
-        -   For the Schema Registry: HTTPS
+        TCP - for the Kafka broker
 
-
+        HTTPS - for the Schema Registry
         
         </td>
         </tr>
         </table>
         
-        For more information, see [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) and [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
+        For more information, see [Configure Access Control](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control) in the *SAP BTP Connectivity* documentation.
 
         > ### Note:  
         > -   When adding the system mapping information, you enter internal and virtual system information. The internal host and port specify the actual host and port under which the backend system can be reached within the intranet. It must be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector tries to forward the request to the network address specified by the internal host and port, so this address needs to be real. The virtual host name and port represent the fully qualified domain name of the related system in the cloud.
@@ -337,8 +333,13 @@ For more information about the supported use cases depending on the connection t
         >     We recommend to use a virtual \(cloud-side\) name that is different from the internal name.
         > 
         > -   For ABAP-based connection types: When using load balancing, make sure to directly specify the message server port in the *System ID* field of the system mapping information.
-        > -   For ABAP-based connection types: The connection type selected in the system mapping information \(load balancing logon or connecting to a specific application server\) must match the SAP Logon connection type selected in SAP Datasphere connection management \(message server or application server\).
+        > -   For ABAP-based connection types: The *Connection Type* selected in the system mapping information \(load balancing logon or connecting to a specific application server\) must match the *SAP Logon Connection Type* selected in SAP Datasphere connection management \(*Message Server* or *Application Server*\).
         > -   If encrypted communication using TLS/SSL is defined in the SAP Datasphere connection \(to establish end-to-end encryption\), ensure that the associated system mapping in the Cloud Connector does not use TLS.
+        > -   For *SAP S/4HANA On-Premise* connections using the ABAP SQL service for data federation with remote tables:
+        >     -   Using the model import feature is not supported with the same connection.
+        >     -   If you want to use the same connection for remote tables and flows, you need to create two system mappings. For more information about what to consider when creating the required system mappings, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md).
+        > 
+        > -   For *SAP ABAP* \(on-premise\) connections using the ABAP SQL service for data federation with remote tables: If you want to use the same connection for remote tables and flows, you need to create two system mappings. For more information about what to consider when creating the required system mappings, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md).
 
     3.  To grant access only to the resources needed by SAP Datasphere, select the system host you just added from the *Mapping Virtual To Internal System* list, and for each resource that you want to allow to be invoked on that host click :heavy_plus_sign: in the *Resources Of* section to open the *Add Resource* dialog.
 

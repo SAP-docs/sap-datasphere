@@ -17,10 +17,10 @@ SAP Datasphere is using two types of adaptors to connect to remote tables:
 -   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
 
 > ### Note:  
-> If your source data comes from an SAP HANA On-Premise system, select the adaptor following your use case:
+> If your source data comes from an SAP HANA On-Premise system, select the adapter following your use case:
 > 
-> -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adaptor to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
-> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md). In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adaptor to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
+> -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adapter to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
+> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md). In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adapter to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
 > 
 > For more information on these adaptors, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 
@@ -86,7 +86,7 @@ SAP Datasphere is using two types of adaptors to connect to remote tables:
 
             Change how the schedule is specified, or change the owner of the schedule.
 
-            For more information, see [Take Over the Ownership of a Schedule](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.") :arrow_upper_right:.
+            For more information, see [Modify the Owner of a Schedule](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.") :arrow_upper_right:.
 
         -   *Delete Schedule*
 

@@ -176,6 +176,11 @@ Enter the name of the message server to which you want to connect to.
 
 Enter the message server port \(numerical\).
 
+> ### Note:  
+> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
+
+
+
 </td>
 </tr>
 <tr>
@@ -288,7 +293,13 @@ Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 
 > ### Note:  
-> When you select *Derive Virtual Host and Port from Connection Details* for ABAP-based connections, virtual port is set to ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
+> When you select *Derive Virtual Host and Port from Connection Details* for ABAP-based connections:
+> 
+> -   The virtual application or message server defined in the Cloud Connector configuration must be the same application or message server that you have entered in the connection details.
+> 
+> -   If the *SAP Logon Connection Type* for your connection is *Application Server*: virtual port is set to ***sapgw*<system number\>**** \(with the system number that you have entered in the connection details\) to make sure that it matches the virtual port defined in the Cloud Connector configuration.
+> 
+> -   If the *SAP Logon Connection Type* for your connection is *Message Server*: virtual port is set to the numerical message server port that you have entered in the connection details.
 
 
 
@@ -318,7 +329,6 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 > ### Note:  
 > -   If the *SAP Logon Connection Type* for your connection is *Application Server*: Enter ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
-> 
 > -   If the *SAP Logon Connection Type* for your connection is *Message Server*: Enter a numerical port and make sure it is the port defined in the Cloud Connector configuration.
 
 

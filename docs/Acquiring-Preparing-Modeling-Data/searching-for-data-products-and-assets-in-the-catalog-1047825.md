@@ -15,7 +15,7 @@ The catalog is the place where you can discover data products and assets, such a
 To access the catalog and view objects, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
+-   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
 -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 
@@ -78,7 +78,7 @@ Shows only assets. An asset is any data or analytic object made available in the
 <tr>
 <td valign="top">
 
-SAP Business Data Cloud Data Products
+Data Products
 
 </td>
 <td valign="top">
@@ -90,7 +90,7 @@ Shows data products from other SAP cloud applications and partners. This collect
 <tr>
 <td valign="top">
 
-Marketplace Data Products
+Data Products \(Marketplace\)
 
 </td>
 <td valign="top">
@@ -179,7 +179,7 @@ You can also open a side panel when you click <span class="FPA-icons-V3"></sp
 
 ## Search for Third-Party Data
 
-You can use the Datarade Data Finder website to search and request additional third-party data products from various data providers. Access the Datarade website from the catalog by choosing the *Marketplace Data Products* tab or the *Data Providers* tab, and then clicking the *Request External Products* button.
+You can use the Datarade Data Finder website to search and request additional third-party data products from various data providers. Access the Datarade website from the catalog by choosing the *Data Products \(Marketplace\)* tab or the *Data Providers* tab, and then clicking the *Request External Products* button.
 
 > ### Note:  
 > Clicking the *Request External Products* button takes you to the Datarade website. This site is external to our product.
@@ -291,7 +291,7 @@ The information and actions available in each view differs. See [Information and
 
 [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "Use the catalog Marketplace Data Products collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[Evaluating and Installing SAP Business Data Cloud Data Products](evaluating-and-installing-sap-business-data-cloud-data-products-ea7cb80.md "Use the catalog SAP Business Data Cloud collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
+[Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
 [System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
 

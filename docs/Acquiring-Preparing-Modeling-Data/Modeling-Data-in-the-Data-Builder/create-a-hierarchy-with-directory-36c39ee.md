@@ -110,7 +110,7 @@ In our example, `I_GLAccountHierarchy` is the hierarchy directory dimension:
 
 You must identify a hierarchy entity that contains parent-child hierarchy data, along with hierarchy identifiers, node types, and unique identifier columns for each type of node.
 
-In our example `I_GLAccountHierarchyNode` is the hierarchy node:
+In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
 
 ![](images/Hierarchy_with_Directory_-_Hierarchy_8af4c75.png)
 

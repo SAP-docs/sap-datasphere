@@ -24,7 +24,7 @@ A global role that allows you to access and export content from any space, by gr
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
--   *Spaces Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
+-   *Space Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
 
 The *DW Administrator* role, for example, grants these privileges.
 

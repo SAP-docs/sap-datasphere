@@ -14,6 +14,7 @@ You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant accessib
 
 To view the *Administration* page containing the *Tenant Links* tab, you must have a global role that grants you the following privileges:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-R------`\) - to open the *Administration* app.
 
 The *DW Administrator* global role, for example, grants these privileges.For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).

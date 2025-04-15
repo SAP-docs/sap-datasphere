@@ -8,6 +8,20 @@ Pause real-time replication for a connection while updating or maintaining the s
 
 
 
+<a name="loioa11f2441b840405c91918de757589097__prereq_q5y_zmz_52c"/>
+
+## Prerequisites
+
+To pause real-time replication for a connection, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Connection* \(`-RU-----`\) - To edit a connection.
+-   *Space Files* \(`-R------`\) - To view objects in your space.
+
+The *DW Space Administrator* and *DW Integrator* role templates, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+
+
+
 <a name="loioa11f2441b840405c91918de757589097__context_kg3_ppt_y4b"/>
 
 ## Context

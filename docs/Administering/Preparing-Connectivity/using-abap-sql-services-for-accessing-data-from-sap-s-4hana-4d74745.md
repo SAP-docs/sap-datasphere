@@ -11,6 +11,8 @@ The ABAP SQL service provides SQL-level access to published CDS view entities fo
 > 
 > -   Make sure the SAP S/4HANA system you want to connect is based on the ABAP platform 2021 FPS01 or higher where the ABAP SQL service is available.
 > 
+> -   Data federation with remote tables using the ABAP SQL service is supported for SAP Logon connection type *Application Server* and basic authentication with *User Name and Password*.
+> 
 > -   When a connection is configured for using the ABAP SQL service for data federation with remote tables, you can't use the same connection for model import.
 
 
@@ -19,10 +21,10 @@ Perform the following steps to prepare data federation with remote tables:
 
 -   Set up Cloud Connector for using the ABAP SQL service, which involves the following Cloud Connector configuration:
 
-    1.  When adding the system mapping to the SAP S/4HANA system, select HTTP or HTTPS protocol.
+    1.  When adding the system mapping to the SAP S/4HANA system, select HTTPS protocol.
 
         > ### Note:  
-        > When a connection uses both data or replication flow and remote table features, you need two system mappings:
+        > When you want to use a connection for both data or replication flows and remote tables, you need to create two system mapping entries in the Cloud Connector considering the following:
         > 
         > 
         > <table>
@@ -35,6 +37,11 @@ Perform the following steps to prepare data federation with remote tables:
         > <th valign="top">
         > 
         > Protocol
+        > 
+        > </th>
+        > <th valign="top">
+        > 
+        > Host
         > 
         > </th>
         > <th valign="top">
@@ -59,14 +66,21 @@ Perform the following steps to prepare data federation with remote tables:
         > RFC
         > 
         > </td>
-        > <td valign="top">
+        > <td valign="top" rowspan="2">
         > 
-        > Enter the same virtual host in Cloud Connector system mapping and in the connection \(virtual host in the connections' Cloud Connector properties must be manually entered\).
+        > Enter the same host for both system mapping entries.
+        > 
+        > </td>
+        > <td valign="top" rowspan="2">
+        > 
+        > Enter the same virtual host for both system mapping entries.
+        > 
+        > Also, the virtual host must be the same in the Cloud Connector system mapping and in the connection's Cloud Connector properties.
         > 
         > </td>
         > <td valign="top">
         > 
-        > Make sure that the virtual port defined in the Cloud Connector configuration matches the virtual port entered in the connections' Cloud Connector properties: ***sapgw*<system number\>****.
+        > The virtual port is derived from the instance number \(system number\) entered in the system mapping: ***sapgw*<system number\>****.
         > 
         > </td>
         > </tr>
@@ -78,23 +92,18 @@ Perform the following steps to prepare data federation with remote tables:
         > </td>
         > <td valign="top">
         > 
-        > HTTP or HTTPS
+        > HTTPS
         > 
         > </td>
         > <td valign="top">
         > 
-        > Enter the same virtual host in Cloud Connector and in the connection \(virtual host in the connections' Cloud Connector properties must be manually entered\).
-        > 
-        > </td>
-        > <td valign="top">
-        > 
-        > Enter the same virtual port in Cloud Connector and in the connection \(virtual port in the connections' Cloud Connector properties must be manually entered\).
+        > Enter the same virtual port in the Cloud Connector system mapping and in the connection's Cloud Connector properties.
         > 
         > </td>
         > </tr>
         > </table>
         > 
-        > In the connection, you must enter virtual host and port in separate fields. Deriving virtual host and port is not supported in the connection because of the different virtual ports used in the two system mappings.
+        > In the connection, you must enter virtual host and virtual port in separate fields. Deriving virtual host and port is not supported in the connection because of the different virtual ports used in the two system mappings.
 
     2.  You need to specify the URL path \(*Resources*\):
         1.  Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example:`/sap/bc/sql/sql1/sap/s_privileged`.

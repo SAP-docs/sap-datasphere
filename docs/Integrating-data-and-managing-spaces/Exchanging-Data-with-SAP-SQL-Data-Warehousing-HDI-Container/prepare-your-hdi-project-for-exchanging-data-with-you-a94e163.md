@@ -6,13 +6,13 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
 
 
 
-<a name="loioa94e1637db484a5c8ec2da83cfa75156__steps_jk3_ybq_5sb"/>
+<a name="loioa94e1637db484a5c8ec2da83cfa75156__prereq_gn1_p5d_w2c"/>
 
-## Procedure
+## Prerequisites
 
-1.  Create the required roles to allow SAP Datasphere to read from and, optionally, write to the container.
+To prepare your HDI project for exchanging data with your space, you must create the required roles to allow SAP Datasphere to read from and, optionally, write to the container.
 
-    You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(with grant option\) in the container to allow you to add it to your space and allow you to exchange data between the container and the space.
+-   To allow you to add a container to your space and allow you to exchange data between the container and the space, you must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(with grant option\) in the container.
 
     The contents of the roles define the HDI objects that can be read from or written to. You can allow access to individual objects or to all the objects in the container.
 
@@ -83,7 +83,7 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     </tr>
     </table>
     
-    To allow data flows in your space to write to the container you must, in addition, define the roles `DWC_WRITE_ROLE` and `DWC_WRITE_ROLE#`.
+-   To allow data flows in your space to write to the container you must, in addition, define the roles `DWC_WRITE_ROLE` and `DWC_WRITE_ROLE#`.
 
     These examples show roles that provide write access to individual objects or to all objects in the container:
 
@@ -154,11 +154,18 @@ To allow your SAP Datasphere space to read from and, if appropriate, write to th
     
     For detailed information about hdbroles, see [Roles \(.hdbrole and .hdbroleconfig\)](https://help.sap.com/viewer/3823b0f33420468ba5f1cf7f59bd6bd9/latest/en-US/625d7733c30b4666b4a522d7fa68a550.html) in the *SAP HANA Platform* documentation.
 
-2.  Configure your *Cloud Foundry Settings* to build to your SAP Datasphere tenant.
 
-3.  Edit your `mta.yaml` file to reference the database id of your SAP Datasphere tenant, your HDI container, and the name of your user-provided service instance \(see [Consume Space Objects in Your HDI Container](consume-space-objects-in-your-hdi-container-656eebc.md)\).
 
-4.  Build your database module.
+
+<a name="loioa94e1637db484a5c8ec2da83cfa75156__steps_jk3_ybq_5sb"/>
+
+## Procedure
+
+1.  Configure your *Cloud Foundry Settings* to build to your SAP Datasphere tenant.
+
+2.  Edit your `mta.yaml` file to reference the database id of your SAP Datasphere tenant, your HDI container, and the name of your user-provided service instance \(see [Consume Space Objects in Your HDI Container](consume-space-objects-in-your-hdi-container-656eebc.md)\).
+
+3.  Build your database module.
 
     Once the build is complete, the HDI container is available to be added to your SAP Datasphere space \(see [Add an HDI Container and Access its Objects in Your Space](add-an-hdi-container-and-access-its-objects-in-your-s-5d55da5.md)\).
 

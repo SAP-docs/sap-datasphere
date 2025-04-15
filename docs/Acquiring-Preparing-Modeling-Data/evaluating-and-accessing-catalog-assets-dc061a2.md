@@ -15,7 +15,7 @@ Use the catalog *Assets* collection to view data and analytic assets for use in 
 To search for and evaluate objects in the *Assets* collection, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and **SAP Business Data Cloud** *Data Products* collections.
+-   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
 -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
 -   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
@@ -108,7 +108,7 @@ After you determine the asset is the right one for your needs, you can use it as
 
 -   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data in the Data Builder](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md) or [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
--   As a content creator in SAP Analytics Cloud, you can use the asset in a story or digital boardroom. For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
+-   As a content creator in SAP Analytics Cloud, you can use the asset in a story. For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 
 -   As a data modeler in SAP Datasphere, SAP BW bridge, you can merge data into models and make them available for reporting and analysis purposes. For more information, see the help for [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
 

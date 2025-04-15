@@ -60,10 +60,10 @@ SAP Datasphere is using two types of adaptors to connect to remote tables:
 -   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
 
 > ### Note:  
-> If your source data comes from an SAP HANA On-Premise system, select the adaptor following your use case:
+> If your source data comes from an SAP HANA On-Premise system, select the adapter following your use case:
 > 
-> -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adaptor to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
-> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target.") :arrow_upper_right:. In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adaptor to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
+> -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adapter to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
+> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target.") :arrow_upper_right:. In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adapter to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
 > 
 > For more information on these adaptors, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 

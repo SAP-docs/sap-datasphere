@@ -139,7 +139,7 @@ For more information about the creation of the tables, see [Enabling Currency Co
 
     -   *Fixed Date* - Select a date on the calendar or enter it in the format YEAR-MONTH-DAY. For example, for the 1st of December 2021, enter 2021-12-01.
     -   *Input Parameter* - Select an Input Parameter and click *Select*. You can also directly enter the technical name in the currency conversion column's properties panel.
-    -   *Expression* - Enter a SQL expression into the *Expression* field. Browse, select a category, or filter available *Date & Time Functions* \(see [SQL Functions Reference](sql-functions-reference-6d624a1.md)\). Click a function name to see its syntax or click elsewhere in its token to add it to your expression. Click *Validate* to check if your expression is semantically correct, and fix any errors signaled. For example,
+    -   *Expression* - Enter a SQL expression into the *Expression* field. Browse, select a category, or filter available *Date & Time Functions* \(see [SQL Functions Reference](sql-functions-reference-6d624a1.md)\).
 
 
     

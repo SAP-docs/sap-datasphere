@@ -10,9 +10,7 @@ Review the following tables to get more details about the filter categories for 
 
 <!-- concept\_hk4\_psz\_ydc -->
 
-## Filter Categories for Assets
-
-**Collection: Assets**
+## Collection: Assets
 
 
 <table>
@@ -291,9 +289,7 @@ Choose one of the tabs and specify the options:
 
 <!-- concept\_csn\_nsz\_ydc -->
 
-## Filter Categories for SAP Business Data Cloud Data Products
-
-**Collection: SAP Business Data Cloud Data Products**
+## Collection: Data Products
 
 
 <table>
@@ -667,9 +663,7 @@ Choose one of the tabs and specify the options:
 
 <!-- concept\_az2\_msz\_ydc -->
 
-## Filter Categories for Marketplace Data Products
-
-**Collection: Marketplace Data Products**
+## Collection: Data Products \(Marketplace\)
 
 
 <table>
@@ -934,9 +928,7 @@ Choose one of the tabs and specify the options:
 
 <!-- concept\_gqw\_ksz\_ydc -->
 
-## Filter Categories for Data Providers
-
-**Collection: Data Providers**
+## Collection: Data Providers
 
 
 <table>
@@ -1054,9 +1046,7 @@ Choose one of the tabs and specify the options:
 
 <!-- concept\_mqs\_jsz\_ydc -->
 
-## Filter Categories for Key Performance Indicators \(KPIs\)
-
-**Collection: KPIs**
+## Collection: KPIs
 
 
 <table>
@@ -1241,9 +1231,7 @@ Choose one of the tabs and specify the options:
 
 <!-- concept\_kr1\_3sz\_ydc -->
 
-## Filter Categories for Terms
-
-**Collection: Terms**
+## Collection: Terms
 
 
 <table>

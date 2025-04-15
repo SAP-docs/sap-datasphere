@@ -6,9 +6,15 @@ To be able to successfully validate and use a connection to an SAP ABAP system f
 
 
 
+<a name="loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_rt_SAP_ABAP"/>
+
 ## Remote Tables
 
-Before you can use the connection for remote tables, the following is required:
+If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA \(on-premise\), see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md) \(recommended for federation scenarios\).
+
+If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-ef2b223.md) \(recommended for federation scenarios\).
+
+If you want to federate and replicate data from ABAP-based on-premise systems using SAP HANA smart data integration, the following is required before you can use the connection \(legacy\):
 
 -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
 
@@ -25,8 +31,6 @@ Before you can use the connection for remote tables, the following is required:
 -   If you want to stream ABAP tables for loading large amounts of data without running into memory issues, you need to configure suitable security privileges for successful registration on an SAP Gateway and you need to create an RFC destination of type TCP/IP in the ABAP source system. With the RFC destination you register the Data Provisioning Agent as server program in the source system. For more information, see [Prerequisites for ABAP RFC Streaming](prerequisites-for-abap-rfc-streaming-62adb44.md).
 
 -   To be able to use ABAP Dictionary tables from connections to a SAP BW∕4HANA system for remote tables and creating views, please make sure that SAP note [2872997](https://me.sap.com/notes/2872997) has been applied to the system.
-
-
 
 
 
@@ -68,7 +72,7 @@ Before you can use the connection for data flows, the following is required:
 
 Before you can use the connection for replication flows, the following is required:
 
--   If the connected system is an on-premise source, an adminstrator has installed and configured Cloud Connector.
+-   If the connected system is an on-premise source, an administrator has installed and configured Cloud Connector.
 
     In the Cloud Connector configuration, an administrator has made sure that access to the required resources is granted.
 

@@ -355,7 +355,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     
     To modify the size of the instance at any time, change the number of vCPUs and click *Update*. You should change the size of your instance based on the resource amounts displayed in the *Max. Used* column of the table. For example, you can see that the application used to run a transformation flow is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter the number of 672 in *vCPUs*. The amount of memory is automatically calculated based on the number of vCPUs with a ratio of 1:4 \(for example 672 vCPUs, 2688 GB of memory\). The minimum size for the instance is 408 vCPUs \(and 1632 GB of memory\), and the maximum size is 2048 vCPUs \(and 8192 GB of memory\).
 
-6.  Add your space to one or more scoped roles by doing one of the following actions:
+6.  Add your space to one or more scoped roles. You can:
 
     -   Add your space to an existing scoped role \(see [Add Spaces to a Scoped Role](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md#loiob5c4e0b6c462414783ebbfc053815521__section_pr1_5pj_zyb)\).
 
