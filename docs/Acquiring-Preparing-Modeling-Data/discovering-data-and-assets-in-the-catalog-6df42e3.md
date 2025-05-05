@@ -39,6 +39,7 @@ After finding and evaluating the data or asset, you can do one of the following:
 -   Open the catalog asset to view the asset in its source system.
 -   Install the data product to a space on the local SAP Datasphere tenant.
 -   Use the installed data product or asset as part of an existing data project to build something new.
+-   Share the data product to a target system.
 
 To use the data in an SAP app, see the help documentation for the app you want to use. For example:
 

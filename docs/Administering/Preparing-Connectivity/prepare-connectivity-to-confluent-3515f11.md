@@ -2,7 +2,7 @@
 
 # Prepare Connectivity to Confluent
 
-To be able to use a connection to Confluent Platform \(on-premise\) for replication flows, certain preparations have to be made.To be able to successfully validate and use a connection to Confluent Platform \(on-premise\) for replication flows, certain preparations have to be made.
+To be able to successfully validate and use a connection to Confluent Platform \(on-premise\) for replication flows, certain preparations have to be made.
 
 
 

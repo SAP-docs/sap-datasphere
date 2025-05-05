@@ -32,7 +32,7 @@ You can **rename** target objects \(Kafka topics\). The following conditions app
 -   The maximum length for the new name is 249 characters.
 
 
-For more information and examples, see also [SAP Datasphere Replication Flows Blog Series Part 3 – Integration with Kafka.](https://blogs.sap.com/2023/12/04/sap-datasphere-replication-flows-blog-series-part-3-integration-with-kafka/)
+For more information and examples, see also [SAP Datasphere Replication Flows Blog Series Part 3 – Integration with Kafka.](https://blogs.sap.com/2023/12/04/sap-datasphere-replication-flows-blog-series-part-3-integration-with-kafka/) and [Confluent as Replication Target](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-part-6-confluent-as-replication-target/ba-p/13693888).
 
 This topic contains the following sections:
 

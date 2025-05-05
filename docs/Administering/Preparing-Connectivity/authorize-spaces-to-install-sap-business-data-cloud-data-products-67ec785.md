@@ -36,7 +36,7 @@ Before an SAP Datasphere modeler can install data products from an SAP system to
 5.  To remove one or more spaces from your selection, choose *Remove*.
 
     > ### Note:  
-    > You can only remove a space if none of the objects from any of the system's installed data products is used in this space \(see the *Objects Used in Space* column in the list of selected spaces\).
+    > You can only remove a space if no data products are installed in this space \(see the *Data Products Installed* column in the list of selected spaces\).
 
 
 

@@ -8,7 +8,7 @@ When an insight app is installed, data is loaded from the source system into SAP
 
 ## Installation and Data Ingestion
 
-![](images/BDC_diagram_-_no_DBX_only_insight_apps_6ab7f36.png)
+![](images/BDC_diagram_-_with_DBX_only_insight_apps_9d8148a.png)
 
 Data is loaded from the source system into SAP Datasphere, where the following spaces are created:
 

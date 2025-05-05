@@ -4,7 +4,7 @@
 
 # Evaluating and Installing Data Products
 
-Use the catalog *Data Product* collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.
+Use the catalog *Data Product* collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere spaceor share it to SAP Databricks.
 
 
 
@@ -24,7 +24,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
 
 -   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges :
     -   *Spaces* \(`–R–––--`\) - To access a space.
-    -   *Space Files* \(`CRUD–--`\) - To install data products to a space.
+    -   *Space Files* \(`CRUD–--`\) - To install data products to or uninstall data products from a space.
     -   *Data Warehouse Data Builder* \(`CRUD–--`\) - To create, edit, or remove objects in the *Data Builder*.
 
 
@@ -36,11 +36,11 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 ## Evaluating a Data Product
 
-Data products are high-quality, coherent data sets that you can use via APIs in various SAP or third-party products across different data regions to help you make better business decisions. A single data product can include business objects, entities, analytic data, and more. On the search page in the SAP Datasphere catalog, select the *Data Products* collection and then select one or more filters to narrow the search results.
+Data products are high-quality, coherent data sets that you can use via APIs in various SAP or third-party products across different data regions to help you make better business decisions. A single data product can include business objects, entities, analytic data, and more. On the search page in the SAP Datasphere catalog, select the *Data Products* collection and then select one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formations.
 
 To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you can review includes properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it \(see [Data Product Details](data-product-details-71f4d15.md)\).
 
-After you've evaluated and found a data product, you can install it in your space \(see steps below\).
+After you've evaluated and found a data product, you can install it in your space \(see steps below\)or share it to SAP Databricks \(see [Sharing Data Products to SAP Databricks](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/09881ade3e20468a98aa90e44f8c44ff.html "Seamlessly share data products to SAP Databricks, where users can query and enrich them using machine learning and generative AI tools. Those users will then give you authorized access to the enriched data products so that you can use them in SAP Datasphere for your models.") :arrow_upper_right:\).
 
 <a name="task_abn_f2n_gcc"/>
 
@@ -58,7 +58,7 @@ After you find an active data product in the SAP Datasphere catalog, you can ins
 
 The following diagram displays the flow for data products.
 
-![](images/BDC_diagram_-_no_DBX_data_packages_only_56bce1b.png)
+![](images/BDC_diagram_-_expanded_BDX_BDC_on_the_bottom_with_DBX_024dbaa.png)
 
 
 
@@ -113,4 +113,98 @@ The data product objects are created and deployed in the ingestion space and sha
     > ### Note:  
     > If the entity has a replication flow, two objects are created: one object is created by the replication flow \(a delta object\), and the other object is the actual object that is used as part of the installation of the data product. Both objects will have the same business name, but the technical name will be different. The delta object's name is appended with "\_Delta".
 
+
+<a name="task_dw1_ykv_s2c"/>
+
+<!-- task\_dw1\_ykv\_s2c -->
+
+## Uninstalling a Data Product from an SAP Datasphere Space
+
+
+
+<a name="task_dw1_ykv_s2c__prereq_e1l_clv_s2c"/>
+
+## Prerequisites
+
+Remove all dependent objects for the data product before you uninstall a data product \(API\) from your SAP Datasphere space.
+
+
+
+<a name="task_dw1_ykv_s2c__context_apk_bqx_t2c"/>
+
+## Context
+
+If you no longer need a data product in a particular space, you can uninstall it.
+
+
+
+## Procedure
+
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
+
+2.  In the SAP Datasphere catalog, search for the data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
+
+3.  When you find the data product you want to remove, select it to open its details page.
+
+4.  Select *Overview* \> *Details* to see all available data product APIs.
+
+5.  Find the API that you want to uninstall and select *Uninstall*.
+
+    The dialog that appears shows a list of all spaces where the data product is installed. If any objects in a space still depend on the data product, preventing its removal, a note is displayed for that space.
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Option
+    
+    </th>
+    <th valign="top">
+
+    Steps
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Space with no dependent objects**
+    
+    </td>
+    <td valign="top">
+    
+    1.  Select a system.
+    2.  In the confirmation dialog, select *Uninstall* to uninstall the data product from that space.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Space with dependent objects**
+    
+    </td>
+    <td valign="top">
+    
+    1.  Select a system to see all dependent objects.
+    2.  To remove a single dependent object, select it, which opens it, and then delete it.
+    3.  To remove several dependent objects, select the *View in Repository Explorer* button, which opens the *Repository Explorer*, and then delete all dependent objects.
+    4.  After all dependent objects are removed, go back to the data product and uninstall it from the space.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+
+**Related Information**  
+
+
+[Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:
+
+[Importing Entities with Semantics from SAP S/4HANA](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-s-4hana-845fedb.md "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.")
 

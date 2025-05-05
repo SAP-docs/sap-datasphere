@@ -120,3 +120,5 @@ By default, the topics are read starting from the oldest available partition off
 </tr>
 </table>
 
+For more information, see the blog [Confluent as Replication Source](https://community.sap.com/t5/technology-blogs-by-sap/replication-flows-blog-series-part-8-confluent-as-a-replication-source/ba-p/13938148)
+

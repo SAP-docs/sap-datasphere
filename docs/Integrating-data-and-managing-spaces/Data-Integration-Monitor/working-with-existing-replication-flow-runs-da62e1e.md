@@ -1,5 +1,7 @@
 <!-- loioda62e1ee746448e8bc043e1be4377cbe -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Working With Existing Replication Flow Runs
 
 You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.
@@ -56,13 +58,22 @@ To pause a replication flow that has a **schedule**, you need to pause the sched
 
 When you resume the flow, the system replicates all source data changes that happened while the replication flow was paused, which means that the first replication flow run after a pause can take considerably longer than usual.
 
+To pause, resume or restart a replication flow:
+
+1.  Go to the *Data Integration* monitor,
+2.  Select the relevant space
+3.  Navigate to the *Flows* monitor. All flows that have been created in the *Data Builder* are listed.
+4.  Select the relevant replication flow
+5.  Navigate to its details screen by clicking <span class="SAP-icons-V5"></span> \(Details\)
+6.  Click *Run* \> *Pause Run* or *Run* \> *Resume Run* depending the action you want to apply.
+
 
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_POI"/>
 
 ## Monitoring Premium Outbound Volume
 
-When you open the *Flows* monitor for a replcation flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for all replication flow runs with premium outbound integration \(replication to a non-SAP target\) in this tenant during the last 360 days.
+When you open the *Flows* monitor for a replication flow with premium outbound integration, a value called *Used Premium Outbound Data Volume* is shown in the overview panel on the left. This is the total volume for all replication flow runs with premium outbound integration \(replication to a non-SAP target\) in this tenant during the last 360 days.
 
 > ### Note:  
 > -   The value may change significantly from one day to the other, for example when you run an initial load for a replication flow, or when an initial load drops out of the statistics because it happened more than 360 days ago.
@@ -78,6 +89,14 @@ The value is updated once per hour.
 ## Stopping a Replication Flow Run
 
 If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+
+To stop a replication flow run:
+
+1.  Go to the *Data Integration* monitor,
+2.  Select the relevant space
+3.  Navigate to the *Flows* monitor \(all flows created in the *Data Builder* are listed\) and select the relevant replication flow
+4.  Navigate to its details screen by clicking <span class="SAP-icons-V5"></span> \(Details\)
+5.  Click *Run* \> *Stop Run*.
 
 
 
@@ -101,6 +120,28 @@ This can be done in the *Data Builder*, see [Modify a Replication Flow](https://
 
 > ### Note:  
 > Adding or removing objects without stopping the replication flow first is only possible for replication flows in status *Active*.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_bvl_xyg_1fc"/>
+
+## Pausing, Resuming or Restarting a Replication Flow Run Object
+
+To pause, resume or restart a replication flow:
+
+1.  Go to the *Data Integration* monitor,
+2.  Select the relevant space
+3.  Navigate to the *Flows* monitor. All flows that have been created in the *Data Builder* are listed.
+4.  Select the relevant replication flow
+5.  Navigate to its details screen by clicking <span class="SAP-icons-V5"></span> \(Details\)
+6.  In the *Object* list, select the relevant object and click *Object* \> *Pause Object* or *Object* \> *Resume Object* or *Object* \> *Restart Object* depending the action you want to perform.
+
+> ### Note:  
+> When you pause an object flow run, the flow is stopped in SAP Datasphere for this object only, but not in the source. Consequently, the system still keeps track of changes in the source, but does not copy them to the target. The other objects contain in the replication flow are not paused and are being replicated.
+> 
+> When you resume the object flow run, the system replicates all source data changes that happened while the object flow run was paused.
+> 
+> When you restart an object flow run, the replication restarts from the beginning.
 
 
 

@@ -869,6 +869,48 @@ vCPU
 <tr>
 <td valign="top">
 
+Brazil
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+28928 GB
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Europe \(Frankfurt\)
 
 </td>
@@ -927,6 +969,90 @@ India \(Mumbai\)
 <td valign="top">
 
 Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Israel
+
+</td>
+<td valign="top">
+
+3700 GB
+
+</td>
+<td valign="top">
+
+28928 GB
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+124 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Japan
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+28928 GB
+
+</td>
+<td valign="top">
+
+Not supported
 
 </td>
 <td valign="top">

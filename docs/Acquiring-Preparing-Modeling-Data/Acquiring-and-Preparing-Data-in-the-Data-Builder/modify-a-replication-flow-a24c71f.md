@@ -183,3 +183,27 @@ String/Binary
 </tr>
 </table>
 
+
+
+<a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_a3s_yx1_y2c"/>
+
+## Renaming a Target Object
+
+You can rename an existing target object:
+
+1.  Open the replication flow in the replication flow editor.
+2.  Select the replication object you want to rename.
+3.  Click *...* \> *Rename Target Object*.
+4.  Update the techincal name as desired.
+
+    > ### Note:  
+    > If you rename the object with a name that already exists for another object in the space, it will reuse the definition of this existing object.
+
+5.  \[Optional\] You can select *Copy Columns from Source Object* if you want to do so.
+
+    > ### Note:  
+    > By default, the new target object will inherit columns from the old target object. If you select this option, columns will be copied from the source instead.
+
+6.  Click *Rename*.
+7.  Save and Redeploy
+

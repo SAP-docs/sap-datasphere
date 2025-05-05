@@ -73,6 +73,9 @@ Once the import is completed, you see the content of the package available in it
 > 
 > The authentication method \(defined by the tenant owner\) must be the same on the source and on the target tenant. If the selected method is single sign-on \(SSO\), make sure to define the same user attribute for the source and the target tenant. For more information on authentication methods, see [Configuring Identity Provider Settings](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/48b5c8b637a54fa491594272941855b9.html "By default, SAP Cloud Identity Authentication is used by SAP Datasphere. We also support single sign-on (SSO), using your identity provider (IdP).") :arrow_upper_right:.
 
+> ### Note:  
+> The deployment after import does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
+
 
 
 ## Troubleshooting

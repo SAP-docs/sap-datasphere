@@ -345,6 +345,20 @@ Change the focus of the diagram to analyze this object. You can go back to the p
 <tr>
 <td valign="top">
 
+<span class="SAP-icons-V5"></span> \(Runtime Metrics\)
+
+</td>
+<td valign="top">
+
+Open the *Runtime Metrics* tool to analyze the performance of your view. This tool also provides the option to directly generate and download an Explain Plan or execute *View Analyzer* to improve your view performance.
+
+See [Analyze View Performance in Data Builder](analyze-view-performance-in-data-builder-6e9ba26.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 <span class="SAP-icons-V5"></span> \(Open in New Tab\)
 
 </td>

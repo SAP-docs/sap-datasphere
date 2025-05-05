@@ -144,7 +144,7 @@ The following tools are available for the data product.
 -   *Install*: Opens a dialog for installing the free data product.
 -   *Install with License Key*: Opens a dialog for installing a data product that requires a license key. If you are installing the data product for the first time, you must enter the license key to activate the data products. For subsequent installations, the license key will be marked as registered.
 -   *Request Access*: Opens an email message that you can edit and send to the data provider to request access to the data product.
--   *Open Impact and Lineage Analysis*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
+-   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
 -   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used data products to your favorites.
 
     Adding a data product to your favorites is different from using bookmarks. For more information about bookmarks, see [Using Bookmarks](using-bookmarks-aec68bb.md).
@@ -547,7 +547,7 @@ Displays a list of additional documents for the data product.These documents can
 
 ## Impact and Lineage Analysis Diagram for a Marketplace Data Product
 
-Select the *Open Impact and Lineage Analysis* button in the header to see a diagram for the analyzed data product. This diagram shows the data analysis of the analyzed object and provides an end-to-end visualization of the object dependencies across multiple systems and layers. It can help you better understand the lineage \(also known as data provenance\) and impacts of a selected object in the catalog. Impact and lineage contain information about the source of the object, the transformations it goes through, its final state, and objects affected by changes made to it. Impact and lineage serve distinct purposes.
+Select the *Open Impact and Lineage* button in the header to see a diagram for the analyzed data product. This diagram shows the data analysis of the analyzed object and provides an end-to-end visualization of the object dependencies across multiple systems and layers. It can help you better understand the lineage \(also known as data provenance\) and impacts of a selected object in the catalog. Impact and lineage contain information about the source of the object, the transformations it goes through, its final state, and objects affected by changes made to it. Impact and lineage serve distinct purposes.
 
 -   *Lineage* is displayed to the left of the analyzed object \(or below it\). It shows objects that the analyzed object uses as sources. It allows you to trace errors back to the root cause.
 -   *Impact* is displayed to the right of the analyzed object \(or above it\). It shows objects that use the analyzed object as a source. It allows you to understand the impact of changes on dependent objects.
@@ -593,10 +593,7 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click *R
 </td>
 <td valign="top">
 
-The outermost container represents one of the following:
-
--   A source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud tenant\)
--   A <span class="SAP-icons-V5"></span> data provider
+The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud tenant\) or a <span class="SAP-icons-V5"></span> data provider.
 
 The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object. You can expand or collapse the container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
 
@@ -612,8 +609,8 @@ The number in brackets indicates the total number of objects in the container th
 
 The inner container represents one of the following:
 
--   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains assets that either appear in the lineage or impact the analyzed object. If an asset is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
--   A :package: marketplace data product. The data product is visible if you are a member of the context associated with the data product or if you are a member of the space where the data set has been installed and have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
+-   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains objects that either appear in the lineage or impact the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
+-   A :package: data product. The data product is visible if you are a member of the context associated with it or if you are a member of the space where the datasets have been installed and you have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -633,16 +630,11 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 
 Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
 
--   Authorized objects are published and can be discovered in the catalog. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). Click the <span class="FPA-icons-V3"></span> \(Open Asset Details\) icon to view the details page.
-
-    -   For catalog assets, click the <span class="FPA-icons-V3"></span> \(Open Asset Details\) icon to view its view the details page.
-
-    -   For datasets, click a link that generates a remote table or view it in the different spaces where the data product has been installed.
-
+-   Authorized objects are published and can be discovered in the catalog. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). Click the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to view the details page for the object.
 
 -   The analyzed object appears as a light blue object. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(Story\) or <span class="FPA-icons-V3"></span> \(Transformation\)\).
 
--   Unauthorized objects are unpublished assets or datasets or are objects that you do not have access permission to in the source system. They are represented with the :lock: icon.
+-   Unauthorized objects are unpublished objects that you don't have access permission to in the source system. They are represented with the :lock: icon.
 
 
 You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.

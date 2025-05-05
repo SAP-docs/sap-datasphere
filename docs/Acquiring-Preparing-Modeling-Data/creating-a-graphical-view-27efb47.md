@@ -14,6 +14,12 @@ If you are comfortable writing SQL code or want to use SQL Script to create your
 
 For information about making your data accessible outside SAP Datasphere, see [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md).
 
+In addition to working with views in the editor, you can also:
+
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+-   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
+
 
 
 ## Procedure
@@ -137,6 +143,20 @@ For information about making your data accessible outside SAP Datasphere, see [E
     Open the Impact and Lineage Analysis diagram. This diagram enables you to understand the lineage and impacts of the selected object. 
 
     \(see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).\)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Runtime Metrics\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Runtime Metrics* tool to analyze the performance of your view. This tool also provides the option to directly generate and download an Explain Plan or execute *View Analyzer* to improve your view performance.
+
+    \(see [Analyze View Performance in Data Builder](analyze-view-performance-in-data-builder-6e9ba26.md).\)
     
     </td>
     </tr>
@@ -502,6 +522,20 @@ For information about making your data accessible outside SAP Datasphere, see [E
     Open the *Generate OData Request* dialog to prepare access to the OData API. 
 
     See [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Runtime Metrics\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Runtime Metrics* tool to analyze the performance of your view. This tool also provides the option to directly generate and download an Explain Plan or execute *View Analyzer* to improve your view performance.
+
+    See [Analyze View Performance in Data Builder](analyze-view-performance-in-data-builder-6e9ba26.md).
     
     </td>
     </tr>

@@ -29,12 +29,17 @@ Add a source to read data from. You can add multiple sources and combine them to
         -   Open the *Import Objects from Connection* dialog on a particular connection to select multiple objects for import \(see [Import Multiple Objects from a Connection](../import-multiple-objects-from-a-connection-e720b13.md)\).
 
 
+
+> ### Note:  
+> When you want to import a CDS view while creating a flow, you can’t search for it using its technical name. You must expand the folder and search for it manually. See [Import Rules and Terms from an SAP Information Steward Connection](https://help.sap.com/docs/data-intelligence-cloud/sap-data-intelligence-data-governance/import-rules-and-terms-from-sap-information-steward-connection?locale=en-US).
+
 3.  Select the object of your choice, and then drag and drop it onto the diagram.
 
     > ### Note:  
     > -   You cannot use views with input parameters as sources in a data flow.
     > -   When browsing a remote file storage such as Amazon Simple Storage Service, Google Cloud Storage, or Microsoft Azure Blob Storage, you can only select files of type JSON/JSONL, CSV, XLS/XLSX, ORC, or PARQUET. Note that each cloud provider has its own naming convention for defining bucket and object names. These conventions should be followed accordingly to avoid any source-related issue. Even though Flowagent-based operators accept most special characters, we recommend that only alphanumeric characters are used \(no multibyte characters\). This will avoid any undesired issue because all sources work well with such characters. Furthermore, some special characters such as ", +, and , are not allowed by our Flowagent File Producer operator and should not be used.
-    > -   Local tables with delta capture can be added as source tables. However, only the active records will be used. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+    > -   Local tables with delta capture can be added as source tables. However, only the active records will be used. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    > -   If your source object contains columns with unsupported data types, they will be skipped. Only the columns with supported data types will be used.
 
     > ### Restriction:  
     > If you add an excel file, you must ensure that the file size does not exceed 50 MB.

@@ -4,7 +4,7 @@
 
 # Evaluating and Installing Marketplace Data Products
 
-Use the catalog *Marketplace Data Products* collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets \(if available\), and if you have the appropriate permissions, install it to an SAP Datasphere space.
+Use the catalog *Data Products \(Marketplace\)* collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets \(if available\), and if you have the appropriate permissions, install it to an SAP Datasphere space.
 
 
 
@@ -33,7 +33,7 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 ## Evaluating a Marketplace Data Product
 
-A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Marketplace Data Products* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog.
+A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Data Products \(Marketplace\)* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog. Also, these data products are created in and only available in SAP Datasphere.
 
 To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like its name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation \(see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md)\).
 
@@ -82,7 +82,7 @@ If you want to further evaluate a data product, you can download a sample datase
 
 ## Results
 
-Open the file explorer on your computer to find the sample dataset and then use it where you need it. If it passes all your tests, you can go back to the data product and install it in the SAP Datasphere space that you need it in.
+Open the file explorer on your computer to find the sample dataset and then use it where you need it. If it passes all your tests, you can go back to the data product and install it in your SAP Datasphere space.
 
 <a name="marketplacedp_install"/>
 

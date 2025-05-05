@@ -23,9 +23,7 @@ This topic contains the following sections:
 Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Business Technology Platform Cockpit. It is composed of the default data lake Files component and the data lake Relational Engine component, and it is not integrated with SAP HANA database. For more information, see [What is SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/a896c6a184f21015b5bcf4c7a967df07/228c19ac890046ecbe8e38a540c0cb6b.html) in the *SAP HANA Cloud, Data Lake* documentation.
 
 > ### Note:  
-> -   With connection type *SAP HANA Cloud, Data Lake Files* you cannot connect to the SAP HANA Cloud, data lake instance that is available with SAP Datasphere. To connect to this instance, use your Open SQL schema in the space which you have selected to access the data lake.
-> 
->     For more information, see [Integrating Data to and From SAP HANA Cloud Data Lake](../Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md).
+> -   With connection type *SAP HANA Cloud, Data Lake Files* you cannot connect to the SAP HANA Cloud, data lake instance that is available with SAP Datasphere.
 > 
 > -   SAP HANA Cloud, data lake Files connections are secure by default. They are encrypted without the need of configuring any TLS settings. Also, uploading server certificates isn't required.
 > 
@@ -119,7 +117,7 @@ Description
 <tr>
 <td valign="top">
 
-*Host* 
+*Endpoint* 
 
 </td>
 <td valign="top">

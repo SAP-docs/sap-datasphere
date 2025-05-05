@@ -13,7 +13,7 @@ Use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud
 To enable SAP SQL Data Warehousing on your SAP Datasphere tenant, an S-user must create an SAP ticket to connect your SAP BTP account.
 
 > ### Note:  
-> The SAP Datasphere tenant and SAP Business Technology Platform organization and space must be in the same data centre \(for example, eu10, us10\). This feature is not available for Free Tier plan tenants \(see SAP Note [3227267](https://me.sap.com/notes/3227267)\).
+> The SAP Datasphere tenant and SAP Business Technology Platform organization and space must be in the same data center \(for example, eu10, us10\). This feature is not available for Free Tier plan tenants \(see SAP Note [3227267](https://me.sap.com/notes/3227267)\).
 
 For information about working with SAP Datasphere and HDI containers, see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:.
 

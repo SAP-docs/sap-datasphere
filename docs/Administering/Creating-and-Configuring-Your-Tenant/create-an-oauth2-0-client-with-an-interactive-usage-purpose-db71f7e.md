@@ -12,7 +12,7 @@ Users with an administrator role can create OAuth2.0 clients with an interactive
 
 You create an OAuth2.0 client with an *Interactive Usage* purpose:
 
--   To use the `datasphere` command line interface \([Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client (with Purpose set to Interactive Usage) for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:\).
+-   To use the `datasphere` command line interface \([Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client (with Purpose set to Interactive Usage or Technical User) for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:\).
 -   To consume data via the OData API \(see [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from a view exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:\).
 
     > ### Note:  

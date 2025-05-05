@@ -103,7 +103,7 @@ Perform the following steps to prepare data federation with remote tables:
         > </tr>
         > </table>
         > 
-        > In the connection, you must enter virtual host and virtual port in separate fields. Deriving virtual host and port is not supported in the connection because of the different virtual ports used in the two system mappings.
+        > In the SAP Datasphere *Connections* app, you must enter the virtual port for the HTTPS protocol and the virtual host in separate fields. Deriving virtual host and port is not supported in the *Connections* app because of the different virtual ports used in the two system mappings.
 
     2.  You need to specify the URL path \(*Resources*\):
         1.  Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example:`/sap/bc/sql/sql1/sap/s_privileged`.

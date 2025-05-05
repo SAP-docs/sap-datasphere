@@ -75,4 +75,5 @@ If your organization has extended the SAP source system via data products as par
 
     For more information, see [Applying Row-Level Security to Data Delivered through Insight Apps](applying-row-level-security-to-data-delivered-through-insight-apps-c83225f.md).
 
+9.  Communicate the new models and fields to the business analyst working in SAP Analytics Cloud. See [Modifying and Sharing Insight Apps](https://help.sap.com/docs/business-data-cloud/viewing-insight-apps/modifying-and-sharing-insight-apps) for the next steps.
 

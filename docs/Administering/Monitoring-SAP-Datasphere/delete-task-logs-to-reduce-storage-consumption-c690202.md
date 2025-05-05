@@ -12,7 +12,7 @@ In the *Configuration* area, you can check how much spaces the task logs are usi
 
 ## Prerequisites
 
-To delete task logs and reduce storage consumption, you must have a global role that grants you the following privilege:
+To delete task logs and reduce storage consumption, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Administration*, *Configuration* and *About* areas in the *System* tool.

@@ -143,20 +143,6 @@ You create an OAuth2.0 Client with an *API Access* purpose:
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    Refresh Token Lifetime
-    
-    </td>
-    <td valign="top">
-    
-    Enter a lifetime for the refresh token from a minimum of 60 seconds to a maximum of 180 days.
-
-    Default: 30 days
-    
-    </td>
-    </tr>
     </table>
     
 4.  Click *Add* to create the client and generate the ID and secret.

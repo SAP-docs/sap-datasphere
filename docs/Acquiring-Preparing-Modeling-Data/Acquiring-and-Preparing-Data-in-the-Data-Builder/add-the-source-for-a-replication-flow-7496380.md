@@ -58,6 +58,8 @@ Define the source for your replication flow \(connection, container, and objects
     > ### Note:  
     > -   The list only shows objects for which replication is supported. For example, if you select SAP S/4HANA Cloud as the source and the folder SQL\_SERVICE as the container, you will only be shown CDS view entities that have the required annotations for data extraction.
     > 
+    > -   When you want to import a CDS view while creating a flow, you can’t search for it using its technical name. You must expand the folder and search for it manually. See [Import Rules and Terms from an SAP Information Steward Connection](https://help.sap.com/docs/data-intelligence-cloud/sap-data-intelligence-data-governance/import-rules-and-terms-from-sap-information-steward-connection?locale=en-US).
+    > 
     > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed and have a primary key.
 
 4.  If you decide that you do not want to include an object after all, select it and choose *Remove from Selection*. If you want to include more objects, go back to the *Available* tab and select the relevant objects. When you are done, choose *Add Selection*. The system then imports the object definitions so that they are available for the subsequent process steps.

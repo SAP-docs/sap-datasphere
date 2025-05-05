@@ -335,7 +335,7 @@ Enter the client ID.
 </td>
 <td valign="top">
 
-To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location. 
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file. 
 
 </td>
 </tr>
@@ -347,7 +347,7 @@ To upload the certificate or certificate chain that is used to authenticate to t
 </td>
 <td valign="top">
 
-To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location. 
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file. 
 
 </td>
 </tr>
