@@ -220,12 +220,13 @@ For more information and points to consider when using replication flows, see al
 
     -   Metrics:
 
-        For successful runs, the metrics provide the record count for source and target tables used in the flow.
+        For successful runs, the metrics provide the record count for the source and target tables used in the flow.
 
         > ### Note:  
         > -   It takes a while to load the metrics once the flow run is completed.
         > -   If the flow run has been optimized for better performance, no record count information is shown.
         > -   For historical runs of a flow, metrics can’t be retrieved.
+        > -   \[Replication Flow\]: Additional information is available under *View Details* in the replication flow metrics or in the replication flow object metrics.
 
         > ### Restriction:  
         > For data flows, the logs messages and metrics are only displayed in English.
@@ -235,11 +236,9 @@ For more information and points to consider when using replication flows, see al
 
 4.  If your flow failed, you can use the following tools from the details page of the flow run to analyze and solve your issue:
 
-    -   \[Data Flow and Replication Flow only\] You can analyze the errors that have occurred during your flow runs, downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details.
-    -   \[Data Flow only\] You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
-    -   \[Transformation Flow only\]: You can run your transformation flow with Support Settings. For more information, see [Explore Transformation Flows](explore-transformation-flows-7588192.md).
-
-
+    -   \[Data Flow and Replication Flow\] You can analyze the errors that have occurred during your flow runs, downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details.
+    -   \[Data Flow\] You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
+    -   \[Transformation Flow\]: You can run your transformation flow with Support Settings. For more information, see [Explore Transformation Flows](explore-transformation-flows-7588192.md).
 
 5.  To view and modify a flow, click <span class="SAP-icons-V5"></span> Open in Data Builder.
 

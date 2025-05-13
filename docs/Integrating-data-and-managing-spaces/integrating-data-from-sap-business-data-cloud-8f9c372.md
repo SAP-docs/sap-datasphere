@@ -25,7 +25,7 @@ For detailed information, see the [SAP Business Data Cloud](https://help.sap.com
 
 ## SAP Business Data Cloud Insight Apps
 
-An SAP Business Data Cloud can install insight apps to the SAP Datasphere and SAP Analytics Cloud tenants in the formation \(see [Installing Insight Apps](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/35b64d44efd54502a935f67ba66ffd4e.html) in the *SAP Business Data Cloud* documentation\).
+An SAP Business Data Cloud administrator can install insight apps to the SAP Datasphere and SAP Analytics Cloud tenants in the formation \(see [Installing Insight Apps](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/35b64d44efd54502a935f67ba66ffd4e.html) in the *SAP Business Data Cloud* documentation\).
 
 When an insight app is installed:
 
@@ -46,14 +46,14 @@ SAP Datasphere users can work with insight app content in the following ways:
 
 ## SAP Business Data Cloud Data Products
 
-An SAP Business Data Cloud can activate data packages to allow the contained data products to be installed in SAP Datasphere \(see [Activating Data Packages](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/fcf9975b49ea4adeb837e4be16116175.html) in the *SAP Business Data Cloud* documentation\).
+An SAP Business Data Cloud adminstrator can activate data packages to allow the contained data products to be installed in SAP Datasphere \(see [Activating Data Packages](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/fcf9975b49ea4adeb837e4be16116175.html) in the *SAP Business Data Cloud* documentation\).
 
 ![](images/with_DBX_only_data_packages_6c65420.png)
 
 When a data package is activated, SAP Datasphere users can work with data products in the following ways:
 
 -   An SAP Datasphere administrator must choose the spaces to which data products from the originating SAP system can be installed \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
--   SAP Datasphere modelers can install data products to their space for use in their modeling projects \(see [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+-   SAP Datasphere modelers can install data products to their space for use in their modeling projects \(see [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:\).
 -   SAP Datasphere Catalog administrators can share data products to SAP Databricks \(see [Sharing Data Products to SAP Databricks](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/09881ade3e20468a98aa90e44f8c44ff.html "Seamlessly share data products to SAP Databricks, where users can query and enrich them using machine learning and generative AI tools. Those users will then give you authorized access to the enriched data products so that you can use them in SAP Datasphere for your models.") :arrow_upper_right:\).
 
 

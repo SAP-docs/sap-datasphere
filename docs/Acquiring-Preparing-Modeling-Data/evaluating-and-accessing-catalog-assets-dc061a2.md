@@ -88,9 +88,10 @@ For information about sharing files with other users within a source system, see
 
 ## Results
 
-Because the catalog monitors changes to objects saved in SAP Datasphere and SAP Analytics Cloud source systems, these changes are detected in real time. The metadata for the assets are automatically extracted, and the functional status label *Current* is applied.
+Changes saved to objects in the source systems are updated in the catalog as follows:
 
-The catalog does not monitor changes to objects saved in SAP Datasphere, SAP BW bridge source systems. To ensure that these assets are up-to-date, a user with the appropriate permission must run a manual synchronization, which will manually extract all metadata for the assets.
+-   The catalog monitors SAP Datasphere and SAP Analytics Cloud source systems. The catalog detects changes to those objects in real time and automatically extracts the metadata.
+-   The catalog does not monitor changes to objects saved in SAP Datasphere, SAP BW bridge source systems. The updated metatdata is extracted on the next scheduled synchronization.
 
 <a name="task_zpg_fny_3wb"/>
 
@@ -144,13 +145,18 @@ After you determine the asset is the right one for your needs, you can use it as
 
 ## Results
 
-The catalog automatically detects the change in real time:
+Changes saved to objects in the source systems are updated in the catalog as follows:
 
--   If you created a new file, a new unpublished catalog asset is created and the functional status is set to *Current*. This asset will only be visible to users who have the *Catalog Administrator* role until they enrich it and then publish it to the catalog. After the asset is published, then it will be available for all catalog users to find.
+-   The catalog monitors SAP Datasphere and SAP Analytics Cloud source systems.
 
--   If you edited an existing file, the metadata for the asset is automatically updated.
+    -   If you created a new file, a new unpublished catalog asset is created and the functional status is set to *Current*. This asset will only be visible to users who have the *Catalog Administrator* role until they enrich it and then publish it to the catalog. After the asset is published, then it will be available for all catalog users to find.
+
+    -   If you edited an existing file, the metadata for the asset is automatically updated.
 
 
-> ### Note:  
-> For files in SAP Datasphere, SAP BW bridge, a user with the necessary permission must run a manual synchronization to add a new asset to the catalog or update an existing asset.
+-   The catalog does not monitor changes to objects saved in SAP Datasphere, SAP BW bridge source systems.
+
+    -   The updated metatdata is extracted on the next scheduled synchronization.
+
+
 

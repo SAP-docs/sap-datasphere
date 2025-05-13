@@ -100,6 +100,25 @@ The count distinct measures considers only booked values.
     <tr>
     <td valign="top">
     
+    Formatting
+    
+    </td>
+    <td valign="top">
+    
+    You can change the format of a measure in an analytic model. You can change the scale \(Thousand, Million, Billion, Percent\) and the number of decimal places.
+
+    > ### Example:  
+    > A value of a measure with the formatting settings Scale: Unformatted and Decimal Places: 3 will be displayed as 200, 200.000$
+    > 
+    > A value of a measure with the formatting settings Scale: Million, Decimal Places: 2 will be displayed as 200.00Million$
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Settings
     
     </td>

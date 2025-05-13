@@ -101,6 +101,8 @@ instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 >     -   oraclepki.jar \(SHA256 fingerprint: e408e7ae67650917dbce3ad263829bdc6c791d50d4db2fd59aeeb5503175499b\)
 >     -   osdt\_cert.jar \(SHA256 fingerprint: 6b152d4332bd39f258a88e58b9215a926048d740e148971fe1628b09060176a8\)
 >     -   osdt\_core.jar \(SHA256 fingerprint: c25e30184bb94c6da1227c8256f0e1336acb97b29229edb4aacf27167b96075e\)
+> 
+> -   Before uploading the files, you must rename them following the names already indicated: oraclepki.jar, osdt\_cert.jar, osdt\_core.jar.
 
 
 

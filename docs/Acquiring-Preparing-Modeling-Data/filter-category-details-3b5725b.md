@@ -93,22 +93,6 @@ Choose one of the tabs and specify the options:
 <tr>
 <td valign="top">
 
-Formation ID
-
-</td>
-<td valign="top">
-
-Choose one of the tabs and specify the options:
-
-*Select Items*: If you use SAP Business Data Cloud, choose the formation ID that you want included in the search result.
-
-*Define Conditions*: Create conditions and enter a value.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Functional Status
 
 </td>

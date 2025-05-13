@@ -10,7 +10,7 @@ You can publish data from SAP BW/4HANA and SAP BW to the SAP Datasphere object s
 
 ## Prerequisites
 
-The data product generator for SAP Business Data Cloud is supported for the releases SAP BW/4HANA 2023 SP0 onwards, SAP BW/4HANA 2021 SP4 onwards, and SAP BW in SAP NetWeaver 7.50 SP24 onwards.
+The data product generator for SAP Business Data Cloud is supported for the releases SAP BW/4HANA 2023 SP0 or higher, SAP BW/4HANA 2021 SP4 or higher, and SAP BW in SAP NetWeaver 7.50 SP24 or higher.
 
 For the configuration of the data product generator for SAP Business Data Cloud, see SAP Note [3590400](https://me.sap.com/notes/3590400).
 

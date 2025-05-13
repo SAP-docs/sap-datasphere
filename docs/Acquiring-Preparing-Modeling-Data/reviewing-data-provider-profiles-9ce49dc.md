@@ -154,21 +154,23 @@ Displays the data shipment types the data provider supports.
 <tr>
 <td valign="top">
 
-Marketplace Visibility
+Visibility
 
 </td>
 <td valign="top">
 
 Displays the visibility of the data provider profile. The visibility affects which contexts have visible access to the data products.
 
--   *Public Data Provider*: The data provider profile and data products are visible for everyone in the context owned by SAP.
+-   *public*: The data provider profile and data products are visible for everyone in the context owned by SAP. These data products are available in the *Data Products \(Marketplace\)* collection.
 
--   *Private Data Provider*: The data provider profile and data products are visible to users that are members of contexts created by the data provider. These type of contexts include Private Data Products, Private Data Exchange, or Data Shop.
+-   *private*: The data provider profile and data products are visible to users that are members of contexts created by the data provider. These type of contexts include Private Data Products, Private Data Exchange, or Data Shop. These data products are available in the *Data Products \(Marketplace\)* collection.
 
--   *Internal Data Provider*: The data provider profile and data products are visible to only members who belong to tenants that have been specified in your contexts. Data providers can also restrict the visibility to individual users.
+-   *internal*: The data provider profile and data products are visible to only members who belong to tenants that have been specified in your contexts. Data providers can also restrict the visibility to individual users. These data products are available in the *Data Products \(Marketplace\)* collection.
+
+-   *formation*: The data products for this data provider are available in the *Data Products* collection.
 
 
-A data provider can have both public and private visibility options. The internal option cannot be used with the public or private options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
+A data provider can have both public and private visibility options. The internal and formation options cannot be used with the other options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
 
 </td>
 </tr>

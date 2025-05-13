@@ -163,6 +163,54 @@ Indicates if the local table \(file\) contains partitions.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Number of Active Records*
+
+</td>
+<td valign="top">
+
+Displays the number of active records.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Active Records File Storage \(MiB\)*
+
+</td>
+<td valign="top">
+
+Displays the size used by the active records only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Total Table File Storage \(MiB\)*
+
+</td>
+<td valign="top">
+
+Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\) and space required for administrative information.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Previous Versions File Storage \(MiB\)*
+
+</td>
+<td valign="top">
+
+Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\)* .
+
+</td>
+</tr>
 </table>
 
 Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table. From the *Logs* tab, you can see the logs that relate on previous and running actions on your table. From the *Setting* tab you can change the default settings defined for the merge or optimize tasks. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md).

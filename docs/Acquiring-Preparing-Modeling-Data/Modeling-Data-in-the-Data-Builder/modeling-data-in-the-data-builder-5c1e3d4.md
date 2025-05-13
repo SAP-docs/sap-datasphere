@@ -251,7 +251,7 @@ For more information, see:
 </td>
 <td valign="top">
 
--   [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API.") :arrow_upper_right:
+-   [Consume Data in Power BI and Other Clients, Tools, and Apps via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/add771abf6f54c9d8de4c7e470a0e6f0.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via the OData API. You can connect Power BI to SAP Datasphere via an OData service by way of a custom connector or a blank query and consume views that are exposed for consumption.") :arrow_upper_right:
 -   [Consume Data in Power BI and Other Clients, Tools, and Apps via ODBC/JDBC](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/4db6f5a329af44509ae422ad707877b2.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via an Open SQL schema and ODBC/JDBC.") :arrow_upper_right:
 
 

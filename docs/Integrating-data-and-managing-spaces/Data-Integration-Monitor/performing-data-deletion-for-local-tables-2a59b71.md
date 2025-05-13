@@ -29,7 +29,7 @@ Description
 <tr>
 <td valign="top">
 
-*Used Disk* 
+*Table Size on Disk \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -41,7 +41,7 @@ Displays the size used by the local table if it is stored on the disk.
 <tr>
 <td valign="top">
 
-*Used In-Memory \(MiB\)* 
+*Table Size in-Memory \(MiB\)* 
 
 </td>
 <td valign="top">

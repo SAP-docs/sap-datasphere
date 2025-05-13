@@ -4,6 +4,8 @@
 
 # Preview and Edit Local Table \(File\) Data
 
+You want to preview and edit local table \(file\) data.
+
 Local Tables \(File\) are intended for file storage with large amount of data. Due to the volume of data, some actions are limited compared to what you can do in the *Data Builder*.
 
 > ### Caution:  
@@ -11,6 +13,9 @@ Local Tables \(File\) are intended for file storage with large amount of data. D
 > 
 > -   Must have the status *Deployed*
 > -   Contain at least one key column
+
+> ### Restriction:  
+> Some activities like default sorting and filtering are disabled.
 
 
 
@@ -20,8 +25,10 @@ Local Tables \(File\) are intended for file storage with large amount of data. D
 
 To preview data, from the table editor, click <span class="SAP-icons-V5"></span> \(Data Viewer\).
 
+The record count on data preview may not be available if some data statistics have not been computed yet. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
+
 > ### Note:  
-> Data preview of local tables \(file\) displays only active records. This is different to local tables where the data preview displays records from the delta capture entity. For more information, see [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)
+> The data is read from the object store using SAP HANA SQL on Files to optimize the resources usage \(see [SAP HANA Native SQL on Files: Overview](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-on-files-guide/sap-hana-native-sql-on-files-overview?q=sap+hana+sql+on+files)\).
 
 
 
@@ -32,7 +39,6 @@ To preview data, from the table editor, click <span class="SAP-icons-V5"></sp
 You can decide how you want to display your data:
 
 -   **Reorder**: Drag and drop your columns to reorder them.
--   **Sort**: Click on the column header and click <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
 
 
 
@@ -44,22 +50,15 @@ You can choose which columns from your table you want to display. Click <span cl
 
 
 
-<a name="loioe57e12d39535439eb078078228c6f7bf__section_fdf_q44_12c"/>
-
-## Filter Your Data
-
--   Click on the column header and <span class="FPA-icons-V3"></span> \(Filter\) to open the *Define Filter* dialog. Click <span class="FPA-icons-V3"></span> \(Add Filter\), select a column to filter on, a filtering option, and a value. You can apply several filters.
-
-
-
 <a name="loioe57e12d39535439eb078078228c6f7bf__section_qkd_t44_12c"/>
 
 ## Find and Replace Strings
 
-Find & Replace operation on local tables \(File\) works slighlty differently compared to local tables:
+Find & Replace operation on local tables \(File\) works slightly differently compared to local tables:
 
--   Due to high volume of data, the *Find and Replace* action is run as an asynchronous task using Apache Spark application 300. If the find and replace task uses more memory than the resources allowed by the application 300, the task will fail. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right: 
--   Find and replace is done via the *Data Viewer* whereas in local table it's done via the *Data Editor*.
+-   The *Find and Replace* activity is run as an asynchronous task using Apache Spark application 300. If the find and replace task uses more memory than the resources allowed by the application 300, the task will fail. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right: 
+-   Filtering is not possible during *Find and Replace*.
+-   *Find and replace* is done via the *Data Viewer* whereas in local table it's done via the *Data Editor*.
 -   You can access the detailed logs of the find and replace task via the *Find and Replace Log* button \(in the *Table Editor* toolbar section\).
 
 For more information on local table *Find and Replace*, see [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md) .

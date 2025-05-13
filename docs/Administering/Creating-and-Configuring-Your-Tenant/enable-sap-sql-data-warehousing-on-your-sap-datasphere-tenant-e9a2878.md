@@ -106,7 +106,7 @@ For information about working with SAP Datasphere and HDI containers, see [Excha
 
 4.  Build one or more new HDI containers in the SAP Business Technology Platform Space and they will be created in the SAP Datasphere run-time database \(identified by the *Database ID* on the SAP Datasphere *About* dialog\).
 
-    For information about setting up your build, see [Set Up an HDI Container](https://help.sap.com/docs/HANA_SERVICE_CF/cc53ad464a57404b8d453bbadbc81ceb/93cdbb1bd50d49fe872e7b648a4d9677.html?locale=en-US&version=Cloud).
+    For information about setting up your build, see [Binding Applications to an SAP HANA Cloud Instance](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-getting-started-guide/binding-applications-to-sap-hana-cloud-instance).
 
 5.  When one or more containers are available in the run-time database, the *Enable Access* button is replaced by the *\+* button in the *HDI Containers* section for all your SAP Datasphere spaces \(see [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:\).
 

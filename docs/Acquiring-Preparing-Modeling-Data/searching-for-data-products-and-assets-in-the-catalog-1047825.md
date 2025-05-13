@@ -29,7 +29,7 @@ The *Catalog User* global role and the *DW Viewer* role template \(used directly
 
 In the side navigation area, select <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="FPA-icons-V3"></span> \(*Search*\) to access the catalog and start searching for data products and assets.
 
-You can find objects globally by using the search bar and entering all or part of the characters in an asset, term, KPI, data product, or data provider. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+You can find objects globally by using the search bar and entering all or part of the characters in an asset, data product, data provider, term, or KPI. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
 If you've searched for objects before, clicking in the search field shows a list of recently entered searches. As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it. 
 
@@ -153,7 +153,7 @@ Favorites
 </td>
 <td valign="top">
 
-Shows the data and assets that you marked as a favorite.
+Shows objects that you marked as a favorite.
 
 </td>
 </tr>
@@ -165,7 +165,7 @@ Recent
 </td>
 <td valign="top">
 
-Shows the data and assets that you've recently viewed.
+Shows objects that you've recently viewed.
 
 </td>
 </tr>
@@ -196,6 +196,8 @@ You can select one or more values in each filter category in the *Filter By* sec
 
 -   Each value selected in a category acts as an `OR` condition.
 -   Each value selected in separate categories acts together as `AND` conditions.
+
+Review the following example to get a better understanding of how filters work.
 
 
 <table>
@@ -238,7 +240,7 @@ Under the *Type* filter, select *Local Table* and *View*
 <tr>
 <td valign="top">
 
-Assets that are a *Local Table* or *View* and in an *SAP Datasphere* system
+Assets that are a *Local Table* or *View* and in an **SAP Datasphere** system
 
 </td>
 <td valign="top">

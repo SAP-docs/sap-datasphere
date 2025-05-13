@@ -10,11 +10,11 @@ By default, when you import a remote table, its data is not replicated and must 
 
 ## Context
 
-SAP Datasphere is using two types of adaptors to connect to remote tables:
+SAP Datasphere is using two types of adapters to connect to remote tables:
 
 -   SAP HANA smart data integration \(used in connections with *Data Provisioning* option = *Data Provisioning Agent*\).
 
--   SAP HANA smart data access adaptors \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
+-   SAP HANA smart data access adapters \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
 
 > ### Note:  
 > If your source data comes from an SAP HANA On-Premise system, select the adapter following your use case:
@@ -22,7 +22,7 @@ SAP Datasphere is using two types of adaptors to connect to remote tables:
 > -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adapter to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
 > -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md). In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adapter to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
 > 
-> For more information on these adaptors, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
+> For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 
 
 

@@ -101,10 +101,10 @@ Toolbar
 
 Select the action you want to perform on the asset.
 
+-   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram. 
+-   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used assets to your favorites.
 -   *Open*: Opens the asset in the source system where you can view or edit it. This button appears if you have permission to access the asset in the source system.
 
--   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used assets to your favorites.
--   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram. 
 
 
 
@@ -245,7 +245,7 @@ Type of container where the asset is saved. The type appears for assets in the S
 
 
 
-You can see a preview of the detailed metadata about the asset by selecting *Overview* \> *Details*. The detailed metadata can include columns, attributes, measures, dimensions, and properties specific to each object. This tab option appears only if the asset has detailed metadata that can be shown. Each tab in this section represents the metadata type, such as measures or attributes, and has a table with its data. The number in brackets is the total number of rows for the table, with the preview showing up to 20 rows. If there are more than 20 rows for the table, select *Show All* to see the rest of the rows in a separate page.
+You can see a preview of the detailed metadata about the asset by selecting *Overview* \> *Details*. The detailed metadata can include columns, attributes, measures, dimensions, and other properties specific to each object. This tab option appears only if the asset has detailed metadata that can be shown. Each tab in this section represents the metadata type, such as measures or attributes, and has a table with its data. The number in brackets is the total number of rows for the table, with the preview showing up to 20 rows. If there are more than 20 rows for the table, select *Show All* to see the rest of the rows in a separate page.
 
 > ### Note:  
 > -   For assets in SAP Analytics Cloud, this section is available only for the following model types: planning and analytical models.
@@ -255,7 +255,7 @@ You can see a preview of the detailed metadata about the asset by selecting *Ove
 >     -   For analytic models, only measures appear in this section.
 >     -   For any asset with measures, the aggregation type does not appear if it is an inherited aggregation type or a calculated measure.
 > 
->     For a list of supported object types, see [Connecting and Monitoring Source Systems](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Users with a catalog administrator role can open the Remote Systems page to create connections to a variety of data sources in the same landscape. This page also includes tools for monitoring and managing data sources, allowing metadata for objects to be extracted and added to the catalog assets.") :arrow_upper_right:.
+>     For a list of supported object types, see [Connecting and Monitoring Source Systems](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Users with a catalog administrator role can open the Metadata Extractions page to create connections from data sources to the catalog and then manage and monitor those data sources, allowing metadata for objects to be extracted and added to the catalog assets.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
@@ -312,6 +312,18 @@ Sort the rows in the table by ascending or descending order based on the column 
 <td valign="top">
 
 Select column values for filtering the table.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons-V5"></span> \(Group\)
+
+</td>
+<td valign="top">
+
+Select how to group the table rows or leave them not grouped. This tool appears if the content can be organized into groups.
 
 </td>
 </tr>
@@ -483,7 +495,7 @@ The number in brackets indicates the total number of objects in the container th
 The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains objects that either appear in the lineage or impact the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
--   A :package: data product. The data product is visible if you are a member of the context associated with it or if you are a member of the space where the datasets have been installed and you have **View** permission. Also, you will be able to view the details to see brief summary of the data product or open the data product page.
+-   A :package: data product. The data product is visible if you have access and view permission for it. For example, you are a member of the context associated with it or if you are a member of the space where it has been installed. Also, you will be able to view the details to see a brief summary of the data product or open the data product page.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 

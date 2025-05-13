@@ -8,7 +8,23 @@ Users with the *DW Space Administrator* role \(or equivalent privileges\) can cr
 
 
 
-## Context
+<a name="loio501594bf2afb4e49ab5ce254e35e3504__section_prerequisites"/>
+
+## Prerequisites
+
+To create data access controls, you must have a scoped role that grants you access to the space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Builder* \(`-R------`\) - To access the *Data Builder*.
+-   *Data Warehouse Data Access Control* \(`CRUD----`\) - To create, read, update, and delete data access controls.
+
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+<a name="loio501594bf2afb4e49ab5ce254e35e3504__section_permissions_entity"/>
+
+## Prepare an Operator and Values Permissions Entity
 
 Before creating your data access control, you must have prepared a permissions entity with the following columns:
 
@@ -242,10 +258,11 @@ Based on these three records:
 
 
 
-## Procedure
+<a name="loio501594bf2afb4e49ab5ce254e35e3504__section_create_dac"/>
+
+## Create an "Operator and Values" Data Access Control
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Access Control* to open the editor.
-
 2.  Complete the properties in the *General* section:
 
 
@@ -480,14 +497,14 @@ Based on these three records:
 
     All available criteria are listed in the table and are all selected to be applied by default. To remove a criterion, deselect it in the list.
 
-5.  Click *Save* and then *Deploy* to deploy your data access control and make it available for use.
+5.  Click *Save* and then *Deploy* to deploy your data access control and make it available for use. 
 
     For information about attaching a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
 
     > ### Note:  
     > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/b338e4aa7e7e494eb68c383720ebfd3a.html "You can, at any time, view the data contained in (or output by) your tables, views, and other Data Builder objects. When working in the graphical view editor, you can view the data output by each node in the diagram.") :arrow_upper_right:\).
 
-6.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+6.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>

@@ -112,7 +112,7 @@ Displays the disk storage currently used by the local table in MiB.
 <tr>
 <td valign="top">
 
-*Used In-Memory \(MiB\)*
+*Used in-Memory \(MiB\)*
 
 </td>
 <td valign="top">
@@ -174,7 +174,7 @@ Indicates how the table was last updated. For example, name of the flow if it wa
 Displays the number of partitions defined on the local table.
 
 > ### Note:  
-> Displays 0 if no partitions have been defined on the local table. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions based on one column of your local table to break your data down into smaller tables, and better manage tables with large volume of data.") :arrow_upper_right:.
+> Displays 0 if no partitions have been defined on the local table. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with large volume of data.") :arrow_upper_right:.
 
 
 

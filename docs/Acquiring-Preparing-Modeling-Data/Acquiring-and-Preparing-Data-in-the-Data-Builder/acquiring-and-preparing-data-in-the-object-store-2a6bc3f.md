@@ -35,7 +35,7 @@ The object store provides an inbound layer for staging large quantities of data 
 A user with an administrator role can create a space with SAP HANA data lake files storage in the object store. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area \(see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:\).
 
 > ### Note:  
-> You cannot create views, data flows, data access controls, analytic models, intelligent lookups, E/R models or use the *Business Builder* in a file space. You cannot import or export objects via CSN/JSON files and you cannot import CSV files, entities, remote tables or currency conversion tables.
+> You cannot create views, data flows, data access controls, analytic models, intelligent lookups, E/R models, or use the *Business Builder* in a file space. You cannot import objects via CSN/JSON files, and you cannot import CSV files, entities, remote tables or currency conversion tables. SAP HANA smart data access and SAP HANA smart data integration are therefore not applicable as they are only used in spaces with storage type *SAP HANA Database \(Disk and In-Memory\)*\(see [Importing Tables and Views from Sources](importing-tables-and-views-from-sources-7c4acd3.md)\).
 
 
 

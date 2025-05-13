@@ -49,3 +49,122 @@ You can also use SAP HANA Views:
 
 For more information on how to use system view, see [Working with SAP HANA Monitoring Views](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "You can obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor to do additional analysis on them and visualize them in SAP Analytics Cloud.") :arrow_upper_right:.
 
+
+
+<a name="loioe3d04951a4a344c28b25b2b1b13bf3d8__section_ihh_flw_42c"/>
+
+## Out-of-Memory Errors
+
+An out-of-memory event occurs when HANA is unable to persist a view. There are a few reasons you may receive an out-of-memory error when trying to persist a view:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Out of Memory Category
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Query Level
+
+</td>
+<td valign="top">
+
+Receive an out-of-memory error if your view is too complex. Check your view to make sure you have enough memory. Run *View Analyzer* to optimize your model and improve memory consumption of your view.
+
+For more information see, [Getting Started with View Analyzer](getting-started-with-view-analyzer-e0aeddb.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Composite Level
+
+</td>
+<td valign="top">
+
+You can receive an out-of-memory error when you are running too many tasks simultaneously. Although your system and view may have sufficient memory, HANA distributes memory across your work environment. Make sure to distribute your work such as scheduling tasks and running task chains and transformation flows. Check your system monitor to look at your workload distribution.
+
+</td>
+</tr>
+</table>
+
+Out of Memory Limitations -
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Out of Memory Limitation
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Global Allocation Limit
+
+</td>
+<td valign="top">
+
+The global allocation limit is a predefined maximum for system-wide memory allocation. When this limit is reached, a global allocation limit OOM event occurs, leading to aborted statements or data ejection from memory to manage the situation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Statement Memory Limit
+
+</td>
+<td valign="top">
+
+The statement memory limit restricts the memory allocated for specific SQL statements. When a statement surpasses this limit, it results in a statement memory limit OOM event, commonly due to complex queries requiring excessive memory.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Workload Class Limitations
+
+</td>
+<td valign="top">
+
+SAP HANA workload management allows optimization of system performance through defined limits on memory and CPU resources. Exceeding these limits, such as the statement thread limit or statement memory limit defined within a workload class, can lead to OOM situations.
+
+Proper configuration of these limitations is crucial to avoid errors indicating memory limit violations.
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> This is not an exhaustive list of reasons out of memory limitations, but a list of some of the main examples.
+
+Preventing and Managing Out of Memory Situations
+
+-   Regularly analyze system memory usage and allocation limits using system monitoring tools. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:.
+-   Carefully configure workload class limitations to optimize resource allocation without triggering OOM events. For more information see, [Set Priorities and Statement Limits for Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces for resource consumption and set limits to the amount of memory and threads that a space can consume when processing statements.") :arrow_upper_right:.
+-   Run View Analyzer to optimize your model and improve memory consumption of your view. For more information see, [Getting Started with View Analyzer](getting-started-with-view-analyzer-e0aeddb.md).
+

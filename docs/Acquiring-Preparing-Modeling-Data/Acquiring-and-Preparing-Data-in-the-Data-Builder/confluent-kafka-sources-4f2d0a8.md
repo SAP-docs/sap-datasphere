@@ -20,27 +20,212 @@ By default, the `__message_id` column is used as the primary key for the purpose
 
 
 
-<a name="loio4f2d0a8f23384efdab6891b29093786a__section_c51_myq_5bc"/>
+<a name="loio4f2d0a8f23384efdab6891b29093786a__section_y3h_lg3_y2c"/>
 
 ## Configuring Source Schemas
 
-When you select a replication object, its properties, including schema-related information, are displayed in the side panel. To change the schema-related properties, choose *Configure Schema* in the side panel. You can then do the following:
+When you select a replication object, its properties, including schema-related information, are displayed in the side panel. To change the schema-related properties,
 
--   View the technical name, data type, precision and scale, and key column status for each source column in the table.
+1.  Open the relevant replication flow in the replication flow editor.
+2.  Select the relevant replication object.
+3.  Click *Configure Schema* in the side panel.
 
--   Display either the flattened structure \(default\) or the nested structures.
+    The configure schema dialog opens in 2 sections:
 
-    > ### Note:  
-    > Array and map fields are not supported.
-
--   Select a subject name from the list of available values.
-
--   Select a schema version from the list of available values.
+    -   The *Properties* section, where you can select properties that will affect the schema:
 
 
-The property *Include Technical Key* is switched on by default and cannot be switched off. It ensures that the `__message_id` column is included as part of the selected table and treated as the primary key.
+        <table>
+        <tr>
+        <th valign="top">
 
-When you are done, choose *Update Schema* to save and apply your changes.
+        Properties
+        
+        </th>
+        <th valign="top">
+
+        Description
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Subject Name*
+        
+        </td>
+        <td valign="top">
+        
+        Select the schema you want to use from the list of available values.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Schema Version*
+        
+        </td>
+        <td valign="top">
+        
+        Select the schema version to use from the list of available values.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Expand Array or Map*
+        
+        </td>
+        <td valign="top">
+        
+        In case the selected Kafka Schema contains arrays or maps, you can select at most one field for expansion.
+
+        > ### Note:  
+        > Array\_index or map\_key can serve as primary keys. However, if you configure the Opcode, array\_index should not be used as a primary key, and you must select another item-level field as the item key.
+
+        When an array or a map is expanded, you must select at least 2 primary keys: one at the header level and one at the item level.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        Omit Non-Expanded Arrays/Maps
+        
+        </td>
+        <td valign="top">
+        
+        When this option is enabled, all array/map fields that are not selected for expansion will be removed from the schema.
+
+        > ### Note:  
+        > If this option is unchecked, the content of all non-expanded array and map fields will be marshaled into a string. If *Fail on Data Truncation* is enabled and the marshaled string exceeds 5,000 characters, the content will be truncated to a maximum length of 5,000 characters.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Include Technical Key*
+        
+        </td>
+        <td valign="top">
+        
+        When the property *Include Technical Key* is selected, it ensures that the \_\_message\_id column is included as part of the selected table and treated as the primary key. If you deselect it, you hide the current primary key and a new one must be selected.
+        
+        </td>
+        </tr>
+        </table>
+        
+    -   The *Schema* section, where you will update the schema itself. It can be displayed in two different modes: *Flat* or *Nested*:
+
+
+        <table>
+        <tr>
+        <th valign="top">
+
+        Properties
+        
+        </th>
+        <th valign="top">
+
+        Description
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        **Source columns \(Technical Name\)**
+        
+        </td>
+        <td valign="top">
+        
+        Displays the technical name of the source column.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Source Data Type*
+        
+        </td>
+        <td valign="top">
+        
+        Displays the column data type.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Opcode*
+        
+        </td>
+        <td valign="top">
+        
+        You can define a source column to be interpreted as an operation code column. Only one column of data type *String* can be selected. Once *Opcode* is selected, you must define the opcode mapping.
+
+        > ### Note:  
+        > When you add an opcode, it's recommended that you select a different primary key for the item level to avoid inconsistency problems when applying change delta capture operations. We therefore recommend that:
+        > 
+        > 1.  '\_\_array\_index' is not defined as the primary key, because the '\_\_array\_index' can be changed by the source.
+        > 2.  You check the order of messages pushing all relevant messages into one partition.
+        > 
+        > The reason is that if array\_index is used as part of the primary key, when a message comes with a differently ordered array and for example, an updated opcode, it could update the wrong row, generating unexpected results.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        **Opcode Mapping**
+        
+        </td>
+        <td valign="top">
+        
+        Define how the SAP opcodes column must be mapped with the values contained in your dataset for Insert, Update or Delete.
+
+        > ### Note:  
+        > You can define multiple values for one opcode if needed \(use a coma as separator\).
+
+        > ### Example:  
+        > You have inserted data from another system \(we will call it SystemA\) into Confluent. This dataset contains several columns, one of which indicates the type of operation performed, acting as the operation code column. This column stores values for different operations such as insert, update, or delete. For example, SystemA might use values like INS or INSR for insert operations, and UPD or UP for update operations.
+        > 
+        > While replicating this data from Confluent to another system, you can mark that column as the operation code column, and provide a mapping by providing values in insert, update and delete input fields. So as Opcode Mapping I will set:
+        > 
+        > -   INSERT = INS, INSR
+        > -   UPDATE = UPD, UP
+        > 
+        > When you specify values like INS and INSRT in the Insert field, SAP Datasphere will use those values while replicating the data using their equivalent operation code whenever it encounters INS or INSRT during replication.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Key Column*
+        
+        </td>
+        <td valign="top">
+        
+        One primary key must be defined. By default the message\_id column is selected. However, you can choose a different primary key.
+        
+        </td>
+        </tr>
+        </table>
+        
+
+4.  Click *Apply Changes*.
+5.  Save and redeploy
 
 
 
