@@ -40,7 +40,7 @@ Data products are high-quality, coherent data sets that you can use via APIs in 
 
 To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you can review includes properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it \(see [Data Product Details](data-product-details-71f4d15.md)\).
 
-After you've evaluated and found a data product, you can install it in your space \(see steps below\)or share it to SAP Databricks \(see [Sharing Data Products to SAP Databricks](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/09881ade3e20468a98aa90e44f8c44ff.html "Seamlessly share data products to SAP Databricks, where users can query and enrich them using machine learning and generative AI tools. Those users will then give you authorized access to the enriched data products so that you can use them in SAP Datasphere for your models.") :arrow_upper_right:\).
+After you've evaluated and found a data product, you can install it in your space \(see steps below\)or share it to SAP Databricks \(see  <?sap-ot O2O class="- topic/xref " href="09881ade3e20468a98aa90e44f8c44ff.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/tsd1747116449521/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/ea7cb802cbea47b39a441888873c3a49.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
 
 <a name="task_abn_f2n_gcc"/>
 
@@ -74,7 +74,7 @@ The following diagram displays the flow for data products.
 
     You can review the list of APIs by choosing the tab *Overview* \> *Details*.
 
-4.  For the row you want, select the *Install* button.
+4.  For the row you want, select the *Install* action.
 
     The *Import Entities* wizard opens.
 
@@ -83,9 +83,12 @@ The following diagram displays the flow for data products.
 
 5.  Select a target space and select *Next Step*.
 
-6.  On the *Review Entities* page, review the entities that you will import.
+6.  On the *Review Entities* page, review the entities that you will import and then choose the appropriate data access method.
 
-    You'll be able to see a list of all the objects that will be created in SAP Datasphere *Data Builder*.
+    -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
+    -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
+
+    You'll be able to see a list of all the objects that will be created in the *Data Builder*.
 
 7.  Select *Start Import and Deploy*.
 
@@ -104,15 +107,29 @@ The following diagram displays the flow for data products.
 
 ## Results
 
-The data product objects are created and deployed in the ingestion space and shared with your space:
+The data product objects are created and deployed in the ingestion space and shared with your space.
 
--   You can view the objects in the *Repository Explorer*.
--   You can view and work with them in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data in the Data Builder](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
--   In the catalog, users can discover the objects. Select the *Assets* collection and use the filters or search field to find the objects. The objects are discoverable only if an authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for objects is extracted automatically, as a scheduled task, by a background process, or manually. These different methods help you ensure that the content in the catalog is up-to-date.") :arrow_upper_right:.
+-   Navigate to the objects in the *Repository Explorer* and review the data based on the data access method you selected.
+    -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
+    -   *Replication flow to Local Tables*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Running a Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/running-a-flow-5b591d4.md)\).
 
-    > ### Note:  
-    > If the entity has a replication flow, two objects are created: one object is created by the replication flow \(a delta object\), and the other object is the actual object that is used as part of the installation of the data product. Both objects will have the same business name, but the technical name will be different. The delta object's name is appended with "\_Delta".
+-   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data in the Data Builder](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
+<a name="task_zbr_nl5_gfc"/>
+
+<!-- task\_zbr\_nl5\_gfc -->
+
+## Modifying the Data Access for a Data Product
+
+
+
+<a name="task_zbr_nl5_gfc__context_ygp_pl5_gfc"/>
+
+## Context
+
+When selecting a data access method, you will consider both storage and processing time costs and data freshness. You can at any time change the data access method for your data product.
+
+To change the data access method, find the data product that you want and reinstall it. When you're on the *Review Entities* page of the wizard, remember to switch the data access method to the one you want.
 
 <a name="task_dw1_ykv_s2c"/>
 

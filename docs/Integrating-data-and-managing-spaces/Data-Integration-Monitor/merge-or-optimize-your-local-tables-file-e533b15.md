@@ -18,8 +18,8 @@ You can optimize or update your local table \(file\) data:
 2.  Select the relevant table
 3.  Click:
     -   *Merge Table*: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run.
-    -   *Optimize Table*: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files.
-    -   *Schedule*: Create, edit, or delete a schedule to automatize, optimize, or merge tasks on regular basis. See [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+    -   *Optimize Table*: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\).
+    -   *Schedule*: Create, edit, or delete a schedule to automate, optimize, or merge tasks on regular basis. See [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
 
 *Merge Table* or *Optimize Table* will launch the task in asynchronous mode and will use the settings defined by an administrator, while configuring the file space. You will be notified via the notification area once done.

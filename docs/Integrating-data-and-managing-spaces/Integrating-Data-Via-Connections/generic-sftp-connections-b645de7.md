@@ -4,34 +4,70 @@
 
 # Generic SFTP Connections
 
-Use a *Generic SFTP* connection to access files on a Secure File Transfer Protocol \(SFTP\) server. 
+Use a *Generic SFTP* connection to connect to and access files on a Secure File Transfer Protocol \(SFTP\) server. 
+
+
+
+This topic contains the following sections:
+
+-   [Supported Features](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_usage)
+-   [Configuring Connection Properties](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__connection_properties)
+
+For information about the required prerequisites, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
 
 
 
 <a name="loiob645de78a8374c24871ab6169be40d35__SFTP_usage"/>
 
-## Using the Connection
-
-The connection type supports the data flow feature.
-
-Supported file types:
-
--   JSON, JSONL
-
--   Parquet
-
--   ORC
-
--   CSV
-
--   XLS, XLSX
+## Supported Features
 
 
-For information about the required prerequisites, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow. Supported file formats are JSON, JSONL, CSV, XLS, XLSX, ORC, and PARQUET.
+
+For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add target objects to a replication flow. Supported file formats are CSV, JSON, JSONL, and PARQUET.
+
+For more information, see [Secure File Transfer Protocol (SFTP) as Targets for Your Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5a14eb1709a24a35821d1618285d021d.html "You want to replicate data using a secure file transfer protocol (SFTP) for secure and reliable file transfers.") :arrow_upper_right:.
+
+</td>
+</tr>
+</table>
 
 
 
-<a name="loiob645de78a8374c24871ab6169be40d35__section_nrb_hcc_x4b"/>
+<a name="loiob645de78a8374c24871ab6169be40d35__connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -61,7 +97,7 @@ Description
 </td>
 <td valign="top">
 
-Select the category. Select *Cloud* if you want to connect to an SFTP server in the public cloud, or select *On-Premise* if you want to connect to an SFTP server in your local network. 
+Select *Cloud* if you want to connect to an SFTP server in the public cloud, or select *On-Premise* if you want to connect to an SFTP server in your local network. 
 
 </td>
 </tr>
@@ -101,7 +137,7 @@ Enter the public SSH host key \(public key of the SFTP server, not the key finge
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
-If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To create a Generic SFTP connection, the host's public key is required. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -113,7 +149,7 @@ If you don’t know your host key, ask your administrator or use command line to
 </td>
 <td valign="top">
 
-\[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
+\[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, **`/My Folder/MySubfolder`**. 
 
 If you have entered root path, then any path used with this connection is prefixed with the root path.
 
@@ -147,7 +183,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows and replication flows. The default is *false*. 
 
 </td>
 </tr>
@@ -176,9 +212,18 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select how you want to specify the virtual destination. 
 
-If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
+You can select:
+
+-   *Derive Virtual Host and Port from Connection Details* \(default\)
+
+    If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you don't need to enter the values manually.
+
+-   *Enter Virtual Host and Port in Separate Fields*
+
+
+
 
 </td>
 </tr>
@@ -236,6 +281,13 @@ Description
 
 Select the authentication type to be used. 
 
+You can select:
+
+-   *SSH* for using the Secure Shell \(SSH\) protocol \(default value\)
+-   *User Name And Password* for basic authentication
+
+
+
 </td>
 </tr>
 </table>
@@ -282,7 +334,7 @@ Enter the user who is accessing the SFTP server.
 
 Enter the user SSH private key used for SSH key authentication. The server must know the user SSH public key. 
 
-Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
+Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
 </td>
 </tr>
@@ -350,5 +402,43 @@ Enter the user's password used for authentication.
 
 ### Features
 
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
 *Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+</table>
 

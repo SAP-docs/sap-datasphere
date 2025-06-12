@@ -6,8 +6,29 @@ Restore spaces, or delete them from the *Recycle Bin* to recover the disk storag
 
 This topic contains the following sections:
 
+-   [Prerequisites](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_nnm_pcp_hfc)
+-   [Context](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_l1p_4cp_hfc)
 -   [Restore a Space](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc)
 -   [Delete a Space Permanently](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_vqc_dkz_dcc)
+
+
+
+<a name="loioc4e26c09325a45d3ab7011a600c8fc6c__section_nnm_pcp_hfc"/>
+
+## Prerequisites
+
+To restore spaces, or delete them from the *Recycle Bin*, you must have a global role with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-------M`\) - To access the *Recycle Bin* in the *Space Management* tool.
+
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
+<a name="loioc4e26c09325a45d3ab7011a600c8fc6c__section_l1p_4cp_hfc"/>
+
+## Context
 
 Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:\), you can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space.
 

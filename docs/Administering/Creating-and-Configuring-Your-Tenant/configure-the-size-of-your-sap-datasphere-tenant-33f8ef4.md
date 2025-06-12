@@ -264,11 +264,21 @@ Storage is correlated to SAP HANA Data Lake Files \(HDLF\) size.
 
 Select the number of block-hours starting from 1.
 
-Values set here are mapped to Spark Compute and the number of Object Store Requests.
+4 GB of Spark Compute are equal to 0.149 capacity units.
 
-4 GB of Spark Compute are equal to 0.149 Object Store Compute Blocks.
+</td>
+</tr>
+<tr>
+<td valign="top">
 
-1000 Object Store Requests are equal to 0.026 Object Store Compute Blocks.
+*Requests*
+
+</td>
+<td valign="top">
+
+Select the number of API calls needed per month in units of 1000.
+
+1000 Object Store Requests are equal to 0.026 capacity units.
 
 </td>
 </tr>

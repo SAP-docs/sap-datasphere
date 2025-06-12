@@ -488,6 +488,47 @@ Specify how ABAP data types are mapped to SAP HANA data types:
 
 
 
+### Replication Flows
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Fast Serialization*
+
+</td>
+<td valign="top">
+
+Turn on RFC fast serialization to help improve replication flow performance by avoiding unnecessary, costly conversions in ABAP. This can be useful particularly in cases of large data volumes. The default is *On*.
+
+> ### Note:  
+> -   Fast serialization has no impacts on data flows.
+> 
+> -   For information about the prerequisites for using fast serialization in SAP Datasphere, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+> 
+>     Use the connection validation to check if the prerequisites in the source system for using fast serialization are met.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ### Features
 
 

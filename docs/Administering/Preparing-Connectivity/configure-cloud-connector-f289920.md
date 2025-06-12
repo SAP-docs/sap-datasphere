@@ -300,7 +300,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Generic SFTP* \(data flows\)
+        *Generic SFTP* \(data flows, replication flows\)
         
         </td>
         <td valign="top">

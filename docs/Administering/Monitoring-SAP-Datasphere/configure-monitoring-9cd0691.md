@@ -6,7 +6,18 @@
 
 You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the *System Monitor*.
 
-You need the DW Administrator role to access the *Monitoring* page.
+
+
+<a name="loio9cd0691c44a74f2aa47b52f615f74433__section_hwq_qtq_hfc"/>
+
+## Prerequisites
+
+To control which monitoring data is collected, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 

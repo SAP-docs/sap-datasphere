@@ -60,12 +60,17 @@ Define the source for your replication flow \(connection, container, and objects
     > 
     > -   When you want to import a CDS view while creating a flow, you can’t search for it using its technical name. You must expand the folder and search for it manually. See [Import Rules and Terms from an SAP Information Steward Connection](https://help.sap.com/docs/data-intelligence-cloud/sap-data-intelligence-data-governance/import-rules-and-terms-from-sap-information-steward-connection?locale=en-US).
     > 
-    > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed and have a primary key.
+    > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed and have a primary key, or an SQL or a script view that has a primary key.
+    > 
+    > -   One source object can be reused in several replication flows.
+    > 
+    >     > ### Restriction:  
+    >     > You won't be able to deploy a replication flow that is reusing objects from:
+    >     > 
+    >     > -   SAP HANA Cloud, data lake files
+    >     > -   ABAP SLT source. For ABAP SLT, only one SLT mass transfer ID per replication can be used. If the SLT source is reused for another replication, another mass transfer ID is required to be used. For more information, you can refer to [KBA2329159](https://me.sap.com/notes/0002329159)
 
 4.  If you decide that you do not want to include an object after all, select it and choose *Remove from Selection*. If you want to include more objects, go back to the *Available* tab and select the relevant objects. When you are done, choose *Add Selection*. The system then imports the object definitions so that they are available for the subsequent process steps.
-
-    > ### Note:  
-    > An object can only be included in one replication flow at any given point in time \(not multiple ones\).
 
 
 

@@ -10,7 +10,7 @@ Assign a SAP Datasphere space to access and work with SAP HANA Cloud, data lake.
 
 ## Prerequisites
 
-Before you can work with data lake, you need to enable it by selecting a storage size in *System* \> *Configuration* \> *Tenant Configuration* \(see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
+Before you can work with data lake, it must be enabled by selecting a storage size in *System* \> *Configuration* \> *Tenant Configuration* \(see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
 
 
 
@@ -27,17 +27,19 @@ You can assign a space that connects to data lake. Tables in the data lake can t
 
 ## Procedure
 
-1.  Go to *Space Management* and select the space that you want to give access to data lake. Alternatively, you could create a dedicated space for the data lake.
+1.  Go to *Space Management*. As only one space can connect to the data lake, you should check first that no other space already has access to the data lake. To do so, you can choose the table layout and sort on the *Data Lake Access* column.
 
-2.  Under *Storage Assignment* select the check box *Use this space to access the data lake*. If another space already has access to the data lake, you won't be able to assign your space.
+2.  Select the space that you want to give access to the data lake. Alternatively, you can create a dedicated space for the data lake.
 
-3.  Click *Save*.
+3.  Under *Storage Assignment* select the check box *Use this space to access the data lake*. Even though the option is available for selection, it will not be taken into account if another space can already access the data lake.
+
+4.  Click *Save*.
 
     You can now use your preferred SQL tool to create tables in data lake and access these tables via SAP HANA virtual tables in your open SQL schema. SAP Datasphere offers two stored procedures that you can use to easily create and access the tables. For more information and examples on the stored procedures see [Data Lake API](data-lake-api-12b6825.md).
 
-4.  In your SQL tool, use the `"DWC_GLOBAL"."DATA_LAKE_EXECUTE" ( IN STMT NCLOB )` stored procedure in the schema `DWC_GLOBAL` to create tables in data lake. Please note, that the statements issued via this procedure are not audited.
+5.  In your SQL tool, use the `"DWC_GLOBAL"."DATA_LAKE_EXECUTE" ( IN STMT NCLOB )` stored procedure in the schema `DWC_GLOBAL` to create tables in data lake. Please note, that the statements issued via this procedure are not audited.
 
-5.  Then create SAP HANA virtual tables in your open SQL schema that refer to the tables in data lake. The virtual tables are used to query the tables in data lake.
+6.  Then create SAP HANA virtual tables in your open SQL schema that refer to the tables in data lake. The virtual tables are used to query the tables in data lake.
 
     Use the following procedure to create a virtual table in your open SQL schema:
 

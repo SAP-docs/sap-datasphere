@@ -57,6 +57,7 @@ Define settings and properties for your replication flow and individual replicat
 
         -   [Confluent Kafka Sources](confluent-kafka-sources-4f2d0a8.md)
 
+        -   [Secure File Transfer Protocol \(SFTP\) as Targets for Your Replication Flows](secure-file-transfer-protocol-sftp-as-targets-for-your-replicati-5a14eb1.md)
 
 
 4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the target settings and change them as appropriate.

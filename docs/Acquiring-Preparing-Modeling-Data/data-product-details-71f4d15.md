@@ -14,7 +14,7 @@ The catalog search results provides high-level information about a data product,
 
 For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use it. They can also review individual APIs and learn how to extend them.
 
-After you view the data product details, you can choose to install it in your space \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\) or share it to SAP Databricks \(see [Sharing Data Products to SAP Databricks](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/09881ade3e20468a98aa90e44f8c44ff.html "Seamlessly share data products to SAP Databricks, where users can query and enrich them using machine learning and generative AI tools. Those users will then give you authorized access to the enriched data products so that you can use them in SAP Datasphere for your models.") :arrow_upper_right:\).
+After you view the data product details, you can choose to install it in your space \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
 
 
 
@@ -546,7 +546,6 @@ Select an action:
 
 -   *Install*: Opens the *Import Entities* wizard. Follow the steps to import entities from the data product to your space on the local SAP Datasphere tenant.
 -   *Uninstall*: Opens a dialog, where you select a space to uninstall the data product. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
--   *Share*: Opens the *Manage Share Access* dialog that you use to share the data product to a target system.
 
 The actions to install or uninstall data products are only available in the SAP Datasphere catalog. Also, these actions appear based on the privileges that are assigned to you \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
 

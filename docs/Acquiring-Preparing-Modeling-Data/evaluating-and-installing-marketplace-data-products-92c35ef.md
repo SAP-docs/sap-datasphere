@@ -33,7 +33,7 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 ## Evaluating a Marketplace Data Product
 
-A data product is a self-contained set of tables containing data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Data Products \(Marketplace\)* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog. Also, these data products are created in and only available in SAP Datasphere.
+A data product is a self-contained set of tables that has data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Data Products \(Marketplace\)* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog. Also, these data products are created in and only available in SAP Datasphere.
 
 To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like its name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation \(see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md)\).
 

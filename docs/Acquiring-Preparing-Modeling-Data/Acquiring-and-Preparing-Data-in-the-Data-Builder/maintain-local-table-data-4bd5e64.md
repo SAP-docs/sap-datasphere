@@ -43,7 +43,7 @@ You can maintain data in local tables that:
         > You must consider the following information:
         > 
         > -   You must have the privilee DW\_CONSUMER.UPDATE
-        > -   If you have set a filter on your data, the *Find and Replace* operation wil happen within this filer limit.
+        > -   If you have set a filter on your data, the *Find and Replace* operation wil happen within this filter limit.
 
     -   **Control the previewed columns** - Click <span class="FPA-icons-V3"></span> \(Columns Settings\) and select the columns to show in the preview.
 

@@ -172,8 +172,6 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     \[read-only\]
 
-    Displays how often data is replicated. The value here shows the intended frequency that might have not been reached yet depending on the status of the remote table.
-
     -   *–-*: Refresh frequency doesn't apply.
     -   *None*: There is no schedule defined for this table.
     -   *Scheduled*: A schedule is defined for this table.

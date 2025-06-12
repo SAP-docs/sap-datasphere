@@ -14,17 +14,9 @@ This topic contains the following sections:
 
 
 
-<a name="loio99ad61e1b63a44de8572a49c6f374e8a__section_wyd_q1t_qzb"/>
+<a name="loio99ad61e1b63a44de8572a49c6f374e8a__section_w1d_csy_ffc"/>
 
-## Introduction to Elastic Compute Nodes
-
-Once an administrator has purchased additional resources dedicated to elastic compute nodes, they can create and manage elastic compute nodes in the *Space Management*. You can create an elastic compute node and allocate resources to it, assign spaces and objects to it to specify the data that will be replicated to the node, and start the node \(manually or via a schedule\) to replicate the data to be consumed.
-
-![](images/ECN_MainGraph_e3c4cd0.png)
-
-You can select the following objects for an elastic compute node: perspectives and analytic models, and views of type analytical dataset and that are exposed for consumption. To make the data of the objects avalaible for consumption, their sources - persisted views and local tables - are replicated to the elastic compute node.
-
-Users of SAP Analytics Cloud and Microsoft Excel \(with the SAP add-in\) will then automatically benefit from the improved performance of the elastic compute nodes when consuming data exposed by SAP Datasphere. See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/ff47998f19154d159b89da50980f98b2.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:.
+## Prerequisites
 
 To create and manage elastic compute nodes, you must have the following privileges:
 
@@ -33,6 +25,20 @@ To create and manage elastic compute nodes, you must have the following privileg
 -   *System Information* \(--U-----\) - To access tenant settings needed to manage elastic compute nodes
 
 The *DW Administrator* global role, for example, grants these privileges \(see [Roles and Privileges by App and Feature](../Managing-Users-and-Roles/roles-and-privileges-by-app-and-feature-2d8b7d0.md)\).
+
+
+
+<a name="loio99ad61e1b63a44de8572a49c6f374e8a__section_wyd_q1t_qzb"/>
+
+## Introduction to Elastic Compute Nodes
+
+Once an administrator has purchased additional resources dedicated to elastic compute nodes, they can create and manage elastic compute nodes in the *Space Management*. You can create an elastic compute node and allocate resources to it, assign spaces and objects to it to specify the data that will be replicated to the node, and start the node \(manually or via a schedule\) to replicate the data to be consumed.
+
+![](images/ECN_MainGraph_e3c4cd0.png)
+
+You can select the following objects for an elastic compute node: perspectives and analytic models, and views of type analytical dataset and that are exposed for consumption. To make the data of the objects available for consumption, their sources - persisted views, local tables, and, if enabled, open SQL schema tables and HDI container tables - are replicated to the elastic compute node.
+
+Users of SAP Analytics Cloud and Microsoft Excel \(with the SAP add-in\) will then automatically benefit from the improved performance of the elastic compute nodes when consuming data exposed by SAP Datasphere. See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/ff47998f19154d159b89da50980f98b2.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:.
 
 
 
@@ -140,7 +146,7 @@ The *DW Administrator* global role, for example, grants these privileges \(see [
 
 ## Add Spaces and Objects to an Elastic Compute Node
 
-Select the spaces and objects whose data you want to make available in an elastic compute node. The data of the objects you've selected, which is stored in local tables and persisted views, will be replicated to the node and available for consumption when the elastic compute node is run.
+Select the spaces and objects whose data you want to make available in an elastic compute node. The data of the objects you've selected, which is stored in local tables, persisted views, and, if enabled, open SQL schema tables and HDI container tables, will be replicated to the node and available for consumption when the elastic compute node is run.
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), then select the elastic compute node.
 
@@ -160,6 +166,12 @@ Select the spaces and objects whose data you want to make available in an elasti
 3.  To manually select the objects of a space, select the space and click *Add Objects*. Uncheck *Add All Objects Automatically*, then select the objects you want and click *Add Objects*.
 
 All the objects added across all the added spaces, are displayed in the *Exposed Objects* tab, whether they've been added manually or automatically via the option *All Exposed Objects*.
+
+> ### Note:  
+> To enable the following tables to be replicated:
+> 
+> -   Open SQL schema tables - see [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:
+> -   HDI container tables - see [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
 
 > ### Note:  
 > Remote Tables - Data that is replicated from remote tables in the main instance cannot be replicated to an elastic compute node. If you want to make data from a replicated remote table available in an elastic compute node, you should build a view on top of the remote table and persist its data in the view \(see [Persist Data in a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:\). You should then make sure that the object \(analytic model, perspective or view\) does not consume the remote table but now consumes the persisted view.

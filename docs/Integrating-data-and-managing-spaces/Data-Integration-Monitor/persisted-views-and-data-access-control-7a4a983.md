@@ -27,7 +27,8 @@ While defining *Data Access Control* in your view, you need to consider the impa
 
 -   If you change *Data Access Control* on a view, the following happens:
 
-    -   If the view is already set as persisted, the persistence is removed when the view is deployed. You need to persist the view again.
+    -   If the view is already set as persisted, the persistence will be re-attached when the view is deployed.
+    -   For views that are deployed in a deprecated way, the persistence will be removed. You need to persist the view again. For more information see [3571243](https://me.sap.com/notes/3571243).
     -   If views on top are persisted, then the persistence of the top view is removed:
         -   For top views within the same space as the deployed view, the persistence is removed when you deploy your changes.
 

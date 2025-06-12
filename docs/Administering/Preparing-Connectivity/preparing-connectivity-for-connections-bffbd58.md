@@ -435,7 +435,7 @@ no
 <tr>
 <td valign="top">
 
-[Generic SFTP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
+[Generic SFTP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to connect to and access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
 
 </td>
 <td valign="top">

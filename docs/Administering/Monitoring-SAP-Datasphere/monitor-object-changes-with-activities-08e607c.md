@@ -8,8 +8,30 @@ Monitor the changes that users perform on modeling objects \(such as spaces and 
 
 This topic contains the following sections:
 
+-   [Prerequisites](monitor-object-changes-with-activities-08e607c.md#loio08e607c58e5343bd9c0287e7e22c452a__section_of4_45q_hfc)
+-   [Context](monitor-object-changes-with-activities-08e607c.md#loio08e607c58e5343bd9c0287e7e22c452a__section_elq_m5q_hfc)
 -   [View all Activities and Filter on Specific Activities](monitor-object-changes-with-activities-08e607c.md#loio08e607c58e5343bd9c0287e7e22c452a__section_azg_szx_mdc)
 -   [Download and Delete the Activity Log for a Specific Time Period](monitor-object-changes-with-activities-08e607c.md#loio08e607c58e5343bd9c0287e7e22c452a__section_wbw_szx_mdc)
+
+
+
+<a name="loio08e607c58e5343bd9c0287e7e22c452a__section_of4_45q_hfc"/>
+
+## Prerequisites
+
+To monitor object changes with activities, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Activity Log* \(`-R------`\) - To view and download activities. The *DW Administrator* role template, for example, grants this privilege.
+-   *Activity Log* \(`---D----`\) - To delete activity logs.
+
+For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
+<a name="loio08e607c58e5343bd9c0287e7e22c452a__section_elq_m5q_hfc"/>
+
+## Context
 
 Actions that are performed by users are logged in *Security* \> *Activities*.
 

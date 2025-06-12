@@ -110,7 +110,7 @@ This task job could not be executed because it does not have an assigned system 
 </td>
 <td valign="top">
 
-The assigned user does not have the privileges necessary to execute this task.
+The assigned user does not have the privileges necessary to execute this task. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md)
 
 </td>
 </tr>

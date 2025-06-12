@@ -27,7 +27,10 @@ To validate data \(or review the results of a previous validation\):
 
 2.  If the panel is empty \(or if you want to re-run the validation\), click *Validate*.
 
-    If the view has one or more remote sources, a warning is displayed and you can continue with the validation, cancel, or open the View Analyzer \(see [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:\).
+    If the view has one or more remote sources, you can run validations if this is supported by the connection adapter. In this case, a warning is displayed and you can choose to continue with the validation, cancel, or open the *View Analyzer* to determine whether one or more sources should be replicated \(see [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:\).
+
+    > ### Note:  
+    > If individual validation rules cannot be run against remote sources they will provide this information in place of a result.
 
     The time required for data validation depends on the number of records and the complexity of calculations required. If validation is taking too long, you can click *Cancel Validation* in the panel toolbar. You will receive a notification when validation is complete.
 

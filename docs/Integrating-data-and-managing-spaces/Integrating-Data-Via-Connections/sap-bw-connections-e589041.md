@@ -259,7 +259,7 @@ Description
 </td>
 <td valign="top">
 
-Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
 
 </td>
 </tr>
@@ -271,7 +271,7 @@ Set to *true* if your source is an on-premise source and you want to use the con
 </td>
 <td valign="top">
 
-Select a location. 
+\[optional\] Select a location. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
@@ -288,9 +288,16 @@ Select a location.
 </td>
 <td valign="top">
 
-Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select how you want to specify the virtual destination. 
 
-If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
+You can select:
+
+-   *Derive Virtual Host and Port from Connection Details* \(default\)
+
+    If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you don't need to enter the values manually.
+
+-   *Enter Virtual Host and Port in Separate Fields*
+
 
 > ### Note:  
 > When you select *Derive Virtual Host and Port from Connection Details* for ABAP-based connections:

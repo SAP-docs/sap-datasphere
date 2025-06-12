@@ -6,6 +6,19 @@ Configure notifications about system events and network connection issues, and d
 
 
 
+<a name="loio4388411066ef476aa99e4f35ce64bab6__section_yqq_fvq_hfc"/>
+
+## Prerequisites
+
+To configure notifications, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
 <a name="loio4388411066ef476aa99e4f35ce64bab6__section_rkp_dvm_jrb"/>
 
 ## Notify All Users about Network Connection Issues

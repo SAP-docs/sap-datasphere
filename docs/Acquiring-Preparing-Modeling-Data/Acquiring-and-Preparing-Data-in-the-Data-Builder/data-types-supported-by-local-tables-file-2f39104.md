@@ -95,6 +95,18 @@ No
 <tr>
 <td valign="top">
 
+hana.BINARY
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 hana.REAL
 
 </td>
@@ -108,6 +120,18 @@ No
 <td valign="top">
 
 hana.SMALLINT
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+hana.TINYINT
 
 </td>
 <td valign="top">

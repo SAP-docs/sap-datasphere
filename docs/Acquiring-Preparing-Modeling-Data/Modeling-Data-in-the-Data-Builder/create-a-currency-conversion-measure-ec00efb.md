@@ -4,7 +4,7 @@
 
 # Create a Currency Conversion Measure
 
-With a currency conversion measure, you can convert currencies.
+With a currency conversion measure, you can convert currencies into a target currency.
 
 
 
@@ -12,9 +12,15 @@ With a currency conversion measure, you can convert currencies.
 
 ## Prerequisites
 
-The tables and view containing currencies and exchange rates `SAP.CURRENCY.TABLE.TCUR*` are available in the current space.
+To prepare for currency conversion, you must import the ***T006*** and ***T006D*** tables to your space from your SAP system \(or have these tables shared to your space from another space\). See [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
 
-You can create these tables in the *Data Builder* \(see [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\).
+
+
+<a name="loioec00efb338f3421a87dab4006d7ce6c8__context_ihx_ndq_kfc"/>
+
+## Context
+
+The sources of your analytic model may have values in different currencies. You can convert measures with currencies into a common target currency in SAP Datasphere to enable a proper data analysis.
 
 
 
@@ -167,7 +173,7 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     </td>
     <td valign="top">
     
-    The currency conversion tables have a client field, which you can enter here.
+    The conversion tables have a client field, which you can enter here.
     
     </td>
     </tr>
@@ -203,9 +209,9 @@ You can create these tables in the *Data Builder* \(see [Enabling Currency Conve
     You can change the format of a measure in an analytic model. You can change the scale \(Thousand, Million, Billion, Percent\) and the number of decimal places.
 
     > ### Example:  
-    > A value of a measure with the formatting settings Scale: Unformatted and Decimal Places: 3 will be displayed as 200, 200.000$
+    > A value of a measure with the formatting settings *Scale: Unformatted* and *Decimal Places: 3*will be displayed as 200, 200.000$
     > 
-    > A value of a measure with the formatting settings Scale: Million, Decimal Places: 2 will be displayed as 200.00Million$
+    > A value of a measure with the formatting settings *Scale: Million*and *Decimal Places: 2* will be displayed as 200.00Million$
 
 
     

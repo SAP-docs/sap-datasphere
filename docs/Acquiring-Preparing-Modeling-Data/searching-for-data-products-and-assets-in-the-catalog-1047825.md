@@ -78,18 +78,6 @@ Shows only assets. An asset is any data or analytic object made available in the
 <tr>
 <td valign="top">
 
-Data Products
-
-</td>
-<td valign="top">
-
-Shows data products from other SAP cloud applications and partners. This collection appears if the SAP Datasphere tenant is part of an SAP Business Data Cloud formation \(see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "SAP Business Data Cloud is a fully managed SaaS solution that unifies and governs all SAP data and seamlessly connects with third-party data—giving line-of-business leaders context to make even more impactful decisions.") :arrow_upper_right:\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Data Products \(Marketplace\)
 
 </td>

@@ -132,4 +132,5 @@
         -   [Stop a Running Statement With a Database Analysis User](Monitoring-SAP-Datasphere/stop-a-running-statement-with-a-database-analysis-user-0cf11ed.md)
     -   [Configure Notifications](Monitoring-SAP-Datasphere/configure-notifications-4388411.md)
     -   [Check Consent Expirations](Monitoring-SAP-Datasphere/check-consent-expirations-58e4bb2.md)
+    -   [Monitor Capacities](Monitoring-SAP-Datasphere/monitor-capacities-ba3d05b.md)
 

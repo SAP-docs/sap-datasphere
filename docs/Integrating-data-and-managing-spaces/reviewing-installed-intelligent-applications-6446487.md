@@ -1,8 +1,8 @@
 <!-- loio644648756d334daaaf35d4fc9a0feeda -->
 
-# Reviewing Installed Insight Apps
+# Reviewing Installed Intelligent Applications
 
-When an insight app is installed, data is loaded from the source system into SAP Datasphere, combined and prepared for analytics, and then exposed for consumption in SAP Analytics Cloud, where business users can consume it as stories.
+When an intelligent application is installed, data is loaded from the source system into SAP Datasphere, combined and prepared for analytics, and then exposed for consumption in SAP Analytics Cloud, where business users can consume it as stories.
 
 
 
@@ -14,7 +14,7 @@ Data is loaded from the source system into SAP Datasphere, where the following s
 
 -   Ingestion space - contains the data products as local tables, and the replication flows that load data to them.
 -   Preparation space - contains views built on top of the data products to prepare them for consumption.
--   App space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the insight app.
+-   App space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the intelligent application.
 
 > ### Note:  
 > These spaces are SAP-managed. You cannot create objects in them, share objects to or from them or otherwise import or export content to or from them.
@@ -23,9 +23,9 @@ Data is loaded from the source system into SAP Datasphere, where the following s
 
 <a name="loio644648756d334daaaf35d4fc9a0feeda__section_rf1_vzd_zcc"/>
 
-## Viewing Insight App Objects
+## Viewing Intelligent Application Objects
 
-The spaces created for the insight app and the objects they contain are SAP-managed, and cannot be edited.
+The spaces created for the intelligent application and the objects they contain are SAP-managed, and cannot be edited.
 
 However, users who are members of the relevant spaces can view these objects in the standard editors.
 
@@ -33,9 +33,9 @@ However, users who are members of the relevant spaces can view these objects in 
 
 <a name="loio644648756d334daaaf35d4fc9a0feeda__section_ds5_312_d2c"/>
 
-## Running and Scheduling Insight App Task Chains
+## Running and Scheduling Intelligent Application Task Chains
 
-If the insight app contains one or more task chains, then a user with access to the space and a DW Integrator role \(or equivalent privileges\) must run each task chain at least once, and should then create a schedule to run the task chain regularly in the future. For more information, see:
+If the intelligent application contains one or more task chains, then a user with access to the space and a DW Integrator role \(or equivalent privileges\) must run each task chain at least once, and should then create a schedule to run the task chain regularly in the future. For more information, see:
 
 -   [Monitoring Task Chains](Data-Integration-Monitor/monitoring-task-chains-4142201.md)
 -   [Scheduling Data Integration Tasks](Data-Integration-Monitor/scheduling-data-integration-tasks-7fa0762.md)

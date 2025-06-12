@@ -302,7 +302,7 @@ Shows when the persisted view was last updated.
 <tr>
 <td valign="top">
 
-*New Run* 
+*Next Run* 
 
 </td>
 <td valign="top">
@@ -326,7 +326,7 @@ Shows the records of the persisted views.
 <tr>
 <td valign="top">
 
-*Memory Used for Storage \(MiB\)* 
+*Size in-Memory \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -338,7 +338,7 @@ Tracks how much size the view is using in your memory.
 <tr>
 <td valign="top">
 
-*Disk Used for Storage \(MiB\)* 
+*Size on Disk \(MiB\)* 
 
 </td>
 <td valign="top">

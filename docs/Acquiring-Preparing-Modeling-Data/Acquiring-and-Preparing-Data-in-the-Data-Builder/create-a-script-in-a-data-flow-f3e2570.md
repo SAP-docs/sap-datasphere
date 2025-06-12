@@ -73,6 +73,23 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Python Version
+    
+    </td>
+    <td valign="top">
+    
+    Select the Python version to use.
+
+    > ### Note:  
+    > It is recommended to use Python 3.11 as Python 3.9 will no longer be supported from October 2025. In addition, for an existing data flow that contains multiple script operators, if you change the version for one script, the change will apply to the other script operators.
+
+
+    
+    </td>
+    </tr>
     </table>
     
 4.  In the *Script* section, enter your Python script to transform the incoming data and produce an output schema.

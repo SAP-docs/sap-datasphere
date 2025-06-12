@@ -311,6 +311,6 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
 
     -   *Replication Flow to Local Tables* - Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Running a Flow](running-a-flow-5b591d4.md)\).
     -   *Remote Tables* - By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
-    -   *Local Tables* - In cases where only local tables are imported, you must find an appropriate method to load data to them.
+    -   *Local Tables* - If you have selected an entity that is not extractable, only local tables are imported, and you must choose an appropriate method to load data to them.
 
 

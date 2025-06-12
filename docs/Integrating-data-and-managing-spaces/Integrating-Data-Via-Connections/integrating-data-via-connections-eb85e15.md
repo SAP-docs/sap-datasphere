@@ -569,7 +569,7 @@ no
 </td>
 <td valign="top">
 
-no
+no\)
 
 </td>
 <td valign="top">

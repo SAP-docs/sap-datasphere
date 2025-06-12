@@ -4,6 +4,27 @@
 
 Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.
 
+
+
+<a name="loio947444683e524cfd9169d7671b72ba0c__section_zmp_nbp_hfc"/>
+
+## Prerequisites
+
+To create a file space, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`C-------`\) - To create spaces.
+-   *User* \(`-R------`\) - To allow the creation of spaces.
+-   *Spaces* \(`-------M`\) - To update all spaces and space properties.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
+<a name="loio947444683e524cfd9169d7671b72ba0c__section_u3t_mbp_hfc"/>
+
+## Context
+
 > ### Note:  
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 > 
@@ -15,6 +36,12 @@ Create a file space and allocate compute resources to it. File spaces are intend
 > You can create up to 5 file spaces in a tenant.
 
 Users with an administrator role can create spaces, allocate compute resources and assign users. The remaining space properties can be managed by users with a space administrator role.
+
+
+
+<a name="loio947444683e524cfd9169d7671b72ba0c__section_oyn_kbp_hfc"/>
+
+## Procedure
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), and click *Create*.
 
@@ -212,9 +239,9 @@ Users with an administrator role can create spaces, allocate compute resources a
     </tr>
     </table>
     
-5.  *Workload Management* section - The maximum amount of compute resources that the file space can consume when processing statements are allocated to its Apache Spark instance. The resources allocated for the file space depend on the resources allocated for the object store in the *Tenant Configuration* page \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
+5.  *Apache Spark* section - The maximum amount of compute resources that the file space can consume when processing statements are allocated to its Apache Spark instance. The resources allocated for the file space depend on the resources allocated for the object store in the *Tenant Configuration* page \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
 
-    Several applications are available for the instance and are used to run tasks.
+    The following applications, which are listed in the *Applications* area, are available for the instance and are used to run the tasks that are listed in the *Task Assignment* area.
 
 
     <table>
@@ -239,11 +266,6 @@ Users with an administrator role can create spaces, allocate compute resources a
     <td valign="top">
     
     \[read-only\] Shows the name of the application.
-
-    > ### Note:  
-    > Applications 100, 200 and 500 are currently not in use.
-
-
     
     </td>
     </tr>
@@ -295,65 +317,85 @@ Users with an administrator role can create spaces, allocate compute resources a
     
     </td>
     </tr>
+    </table>
+    
+    You can view which applications are used by default to run which tasks in the *Task Assignment* area.
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Object Type
+    
+    </th>
+    <th valign="top">
+
+    Activity
+    
+    </th>
+    <th valign="top">
+
+    Default Application
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
     <tr>
     <td valign="top">
     
-    *Transformation Flow Default*
+    LOCAL\_TABLE
     
     </td>
     <td valign="top">
     
-    \[read-only\] The checkbox indicates the application that is used by default to run a transformation flow in a file space.
+    DELETE\_DATA, MERGE\_FILES, OPTIMIZE\_FILES, TRUNCATE\_FILES, VACUUM\_FILES, FIND\_AND\_REPLACE
+    
+    </td>
+    <td valign="top">
+    
+    300
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Indicates the application that is used by default to run all the activities listed via a task chain or the *Local Tables \(File\)* monitor.
+
+    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    TRANSFORMATION\_FLOWS
+    
+    </td>
+    <td valign="top">
+    
+    EXECUTE
+    
+    </td>
+    <td valign="top">
+    
+    400
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Indicates the application that is used by default to run a transformation flow in a file space.
 
     See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with local tables (file) as sources, apply various transformations, and store the resulted dataset into another local table (file).") :arrow_upper_right:
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    *Merge Default*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] The checkbox indicates the application that is used by default to run a merge activity via a task chain or the *Local Tables \(File\)* monitor.
-
-    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Optimize Default*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] The checkbox indicates the application that is used by default to run an optimize activity via a task chain or the *Local Tables \(File\)* monitor.
-
-    See [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Local Table \(File\) Deployment*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] The checkbox indicates the application that is used by default to deploy a local table \(file\).
-
-    See [Creating a Local Table (File)](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:
-    
-    </td>
-    </tr>
     </table>
     
-    To modify the size of the instance at any time, change the number of vCPUs and click *Update*. You should change the size of your instance based on the resource amounts displayed in the *Max. Used* column of the table. For example, you can see that the application used to run a transformation flow is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter the number of 672 in *vCPUs*. The amount of memory is automatically calculated based on the number of vCPUs with a ratio of 1:4 \(for example 672 vCPUs, 2688 GB of memory\). The minimum size for the instance is 408 vCPUs \(and 1632 GB of memory\), and the maximum size is 2048 vCPUs \(and 8192 GB of memory\).
+    To modify the size of the instance at any time, change the number of vCPUs and click *Update*. You should change the size of your instance based on the resource amounts displayed in the *Max. Used* column of the table. For example, you can see in that the application used to run transformation flows is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter the number of 672 in *vCPUs*. The amount of memory is automatically calculated based on the number of vCPUs with a ratio of 1:4 \(for example 672 vCPUs, 2688 GB of memory\). The minimum size for the instance is 408 vCPUs \(and 1632 GB of memory\), and the maximum size is 2048 vCPUs \(and 8192 GB of memory\).
 
 6.  Add your space to one or more scoped roles. You can:
 

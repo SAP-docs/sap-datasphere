@@ -15,12 +15,12 @@ As a Datasphere modeler, you want to model transformation flows with local table
 
 > ### Caution:  
 > -   You must be in a file space. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
-> -   You source and target targe must be local table \(file\). For more information, see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
+> -   You source and target must be local table \(file\). For more information, see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
 > -   You can only create a graphical view transform.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a file space \(if required\) and click *New Transformation Flow*.
-2.  On the *New Transformation Flow* screen, click the *View Transform* node, and then click *Graphical View Transform* button.
+2.  On the *New Transformation Flow* screen, you can either drag and drop an object onto the source operator or click the *View Transform* node, and then click *Graphical View Transform* button.
 
     > ### Note:  
     > On file space, you can only create *Graphical View Transform*.

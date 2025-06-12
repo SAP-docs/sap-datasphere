@@ -84,6 +84,9 @@ For delta loading, the default is that each object is processed as one partition
 
 For replication flows, the most important parameters at tenant level are execution hours \(also referred to as node hours\), compute blocks for data integration, and maximum parallel jobs, plus premium outbound integration if you want to use non-SAP targets.
 
+> ### Note:  
+> One source object can be used in several replication flows. However, you must consider that if the same source is being read at the same time, it can impact the performance.
+
 For more information, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:, particularly the Premium Outbound Integration section \(if applicable\) and the Data Integration section.
 
 

@@ -12,7 +12,7 @@ The *Python* operator allows data manipulation and vector operations by providin
 
 The incoming `data` parameter in the `transform` function is of type Pandas DataFrame. The input table is converted into a DataFrame and fed into transform function as data parameter. You are expected to provide scripts for the intended transformation of the incoming DataFrame and also return a valid DataFrame from transform function. It is important that the returning DataFrame from the transform function has the same column names, types and order as the specified table for the output. Otherwise, execution of the data flow results in failure.
 
-1.  Select the *View Transform* to display its context menu, and click <span class="SAP-icons-TNT-V3"></span> Python operator to create the *Python* operator.
+1.  Drag and drop an object onto the source operator or select the *View Transform* to display its context menu, and click <span class="SAP-icons-TNT-V3"></span> Python operator to create the *Python* operator.
 2.  Click the *Python* operator to display its properties in the side panel.
 3.  In the *Script* section, enter your Python script to transform the incoming data and produce an output schema.
 

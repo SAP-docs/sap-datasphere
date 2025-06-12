@@ -57,7 +57,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 7.  Define your scheduling options:
 
-    ****
+    **Schduling Options**
 
 
     <table>
@@ -81,12 +81,12 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Frequency*
+    *Frequency* 
     
     </td>
     <td valign="top">
     
-    -   *Minutes*: Define how often per hour that you want to trigger the scheduled run during the designated time or date range. You can specify scheduled runs every 10, 15, 20, or 30 minutes.
+    -   *Minutes*: Define how often per hour that you want to trigger the scheduled run during the designated time or date range. You can specify scheduled runs every 5, 10, 15, 20, or 30 minutes.
     -   *Hourly*: Define how often you want to trigger the schedule per day \(every 1 to 23 hours of the day\) and the start time.
 
         Optionally, you can specify an offset from which the tasks will run. For example, so that a task runs every 2 hours starting from 1:30 AM, specify 2 in *Every* and 1:30 in *Starting at \(UTC\)*.
@@ -190,7 +190,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Time Range*
+    Time Range
     
     </td>
     <td valign="top">
@@ -225,7 +225,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Preview*
+    *Next Run*
     
     </td>
     <td valign="top">

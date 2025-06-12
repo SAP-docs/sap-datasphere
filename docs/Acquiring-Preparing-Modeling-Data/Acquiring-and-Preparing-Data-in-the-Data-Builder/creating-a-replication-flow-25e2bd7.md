@@ -338,6 +338,8 @@ For more information about available connection types, sources, and targets, see
     > -   [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
     > 
     > -   [Apache Kafka Targets](apache-kafka-targets-6df55db.md).
+    > 
+    > -   [Secure File Transfer Protocol \(SFTP\) as Targets for Your Replication Flows](secure-file-transfer-protocol-sftp-as-targets-for-your-replicati-5a14eb1.md)
 
 6.  Click <span class="FPA-icons-V3"></span> \(Save\).
 

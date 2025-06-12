@@ -17,7 +17,6 @@ To copy a space and its contents, you must have a global role that grants you th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
--   *Spaces Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

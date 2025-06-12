@@ -71,6 +71,8 @@ Before you can use the connection for replication flows, the following is requir
     > ### Note:  
     > The same communication user must be added to all communication arrangements you're using for the connection.
 
+-   If you want to use RFC fast serialization for your replication flows, see SAP Note [3486245](https://me.sap.com/notes/3486245).
+
 
 
 

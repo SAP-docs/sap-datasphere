@@ -138,7 +138,7 @@ Global Pattern
 </td>
 <td valign="top">
 
-Enter a glob pattern if you want to only replicate files whose names conform with the pattern. See below for detailed examples.
+Enter a global pattern if you want to only replicate files whose names conform with the pattern. See below for detailed examples.
 
 </td>
 </tr>

@@ -8,6 +8,21 @@ Create a space, allocate storage, and set the space priority and statement limit
 
 
 
+<a name="loiobbd41b82ad4d4d9ba91341545f0b37e7__prereq_mqg_vv4_hfc"/>
+
+## Prerequisites
+
+To create a space, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`C-------`\) - To create spaces.
+-   *User* \(`-R------`\) - To allow the creation of spaces.
+-   *Spaces* \(`-------M`\) - To update all spaces and space properties.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
 <a name="loiobbd41b82ad4d4d9ba91341545f0b37e7__context_owz_zmt_vrb"/>
 
 ## Context

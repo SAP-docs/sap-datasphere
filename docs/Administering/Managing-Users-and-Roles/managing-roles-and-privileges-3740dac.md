@@ -1,8 +1,31 @@
 <!-- loio3740dacbc2794f33bb5d8d42216cc3bc -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Managing Roles and Privileges
 
 Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.
+
+
+
+<a name="loio3740dacbc2794f33bb5d8d42216cc3bc__section_qvm_vr4_hfc"/>
+
+## Prerequisites
+
+To manage roles and privileges, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Role* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Roles*\) and <span class="SAP-icons-V5"></span> \(*Authorization Overview*\) areas in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete roles.
+-   *User* \(`-------M`\) - To add users to roles.
+-   *Spaces* \(`-------M`\) - To add spaces to scoped roles.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
+<a name="loio3740dacbc2794f33bb5d8d42216cc3bc__section_wp5_sr4_hfc"/>
+
+## Introduction to Roles and Privileges
 
 A role is a set of privileges and permissions.
 

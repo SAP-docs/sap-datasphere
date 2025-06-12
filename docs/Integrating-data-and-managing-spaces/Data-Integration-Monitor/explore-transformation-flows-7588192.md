@@ -35,7 +35,7 @@ The *Run with Settings* option provides you with the ability to simulate a run, 
         > 
         >     For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:.
         > 
-        > -   To open this file, you must install a compatible SQL plan visualization tool, such as [SQL Analyzer Tool for SAP HANA](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/sql-analyzer?state=DRAFT&version=2024_2_QRC).
+        > -   To open this file, you must install a compatible SQL plan visualization tool, such as [SQL Analyzer Tool for SAP HANA](https://help.sap.com/docs/sql-analyzer/sap-hana-sql-analyzer/guide-to-sql-analyzer-tool-for-sap-hana?locale=en-US).
         > -   This option requires additional system resources.
 
         This file allows you to analyze your transformation flow to resolve errors and enhance its performances. With this option, you create a plan file \(also called `.plv` file\) containing detailed information about your data model that you can download for further analysis. This file provides more details than the *Simulate Run* option.

@@ -306,9 +306,9 @@ See [Importing SAP and Partner Business Content from the Content Network](https:
 </td>
 <td valign="top">
 
--   *Read*: To access the *About* area in the *System* tool.
+-   *Read*: To access the *Configuration* area in read-only in the *System* tool.
 
--   *Update*: To access the *Administration*, *Configuration* and *About* areas in the *System* tool.
+-   *Update*: To access the *Administration* and *Configuration* areas in the *System* tool.
 
 
 

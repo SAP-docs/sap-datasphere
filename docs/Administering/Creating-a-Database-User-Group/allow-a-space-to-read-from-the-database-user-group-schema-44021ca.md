@@ -12,7 +12,7 @@ By default, no SAP Datasphere space can access the database user group schema. T
 
 ## Prerequisites
 
-Only the administrator of a database user group has the privilege to run the stored procedure "DWC\_GLOBAL"."GRANT\_PRIVILEGE\_TO\_SPACE".
+To allow a space to read from the database user group schema, you must have a database user group administrator and a password \([Creating a Database User Group](creating-a-database-user-group-1097a47.md)\).
 
 
 

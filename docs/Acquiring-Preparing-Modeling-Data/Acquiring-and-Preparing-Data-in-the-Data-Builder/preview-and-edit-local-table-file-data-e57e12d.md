@@ -59,7 +59,7 @@ Find & Replace operation on local tables \(File\) works slightly differently com
 -   The *Find and Replace* activity is run as an asynchronous task using Apache Spark application 300. If the find and replace task uses more memory than the resources allowed by the application 300, the task will fail. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right: 
 -   Filtering is not possible during *Find and Replace*.
 -   *Find and replace* is done via the *Data Viewer* whereas in local table it's done via the *Data Editor*.
--   You can access the detailed logs of the find and replace task via the *Find and Replace Log* button \(in the *Table Editor* toolbar section\).
+-   You can access the detailed logs of the find and replace task by navigating to the *Local Tables \(File\)* monitor. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
 
 For more information on local table *Find and Replace*, see [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md) .
 

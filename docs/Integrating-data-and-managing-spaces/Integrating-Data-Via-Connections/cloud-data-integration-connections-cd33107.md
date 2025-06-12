@@ -141,9 +141,18 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] Select how you want to specify the virtual destination. 
 
-If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
+You can select:
+
+-   *Derive Virtual Host and Port from Connection Details* \(default\)
+
+    If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you don't need to enter the values manually.
+
+-   *Enter Virtual Host and Port in Separate Fields*
+
+
+
 
 </td>
 </tr>

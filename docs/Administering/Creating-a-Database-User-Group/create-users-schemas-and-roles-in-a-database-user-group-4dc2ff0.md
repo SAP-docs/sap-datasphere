@@ -6,12 +6,21 @@ A database user group administrator can create users, schemas, and roles to orga
 
 This topic contains the following sections:
 
+-   [Prerequisites](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_azl_bfp_hfc)
 -   [Log In With Your Database User Group Administrator](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_log_in)
 -   [Create a User](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_create_user)
 -   [Create a Schema](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_create_schema)
 -   [Grant a Role to a User or to Another Role](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_grant_role)
 -   [Revoke a Role](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_revoke_role)
 -   [Drop a Role](create-users-schemas-and-roles-in-a-database-user-group-4dc2ff0.md#loio4dc2ff03b37e482fb209dd08a9550826__section_drop_role)
+
+
+
+<a name="loio4dc2ff03b37e482fb209dd08a9550826__section_azl_bfp_hfc"/>
+
+## Prerequisites
+
+To create users, schemas, and roles in a database user group, you must have a database user group administrator and a password \([Creating a Database User Group](creating-a-database-user-group-1097a47.md)\).
 
 
 

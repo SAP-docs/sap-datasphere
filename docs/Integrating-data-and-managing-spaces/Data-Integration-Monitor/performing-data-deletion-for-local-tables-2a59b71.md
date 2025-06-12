@@ -29,7 +29,7 @@ Description
 <tr>
 <td valign="top">
 
-*Table Size on Disk \(MiB\)* 
+*Size on Disk \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -41,7 +41,7 @@ Displays the size used by the local table if it is stored on the disk.
 <tr>
 <td valign="top">
 
-*Table Size in-Memory \(MiB\)* 
+*Size in-Memory \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -221,7 +221,7 @@ To create a schedule, click *Create*.
 The *Schedule Data Deletion* window opens:
 
 1.  Define the settings of the schedule: Give a business name and a technical name to your schedule, and select the type of deletion you would like to apply.
-2.  Define the *Frequency* and *Time Range* for your schedule. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+2.  Define the Frequency and Time Range for your schedule. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 3.  Click *Next Step*.
 4.  Review your settings and click *Create Schedule*.
 
@@ -248,6 +248,8 @@ Description
 
 </td>
 <td valign="top">
+
+e
 
 Displays the type of deletion you applied on your table.
 

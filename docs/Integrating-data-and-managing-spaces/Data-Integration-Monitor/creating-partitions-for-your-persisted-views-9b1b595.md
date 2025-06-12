@@ -33,7 +33,7 @@ The columns available for selection are a subset of all view output columns. Som
 
     -   String
     -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT
-    -   Date, DateTime, Time, Timestamp
+    -   Date, DateTime, Timestamp
     -   Binary
 
     For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.

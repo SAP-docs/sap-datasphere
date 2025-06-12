@@ -26,7 +26,7 @@ Only the database user for the open SQL schema has the privilege to run the stor
 
 2.  In the space page, go to *Database Access* \> *Database Users*, then select the database user and click *Open Database Explorer*.
 
-3.  In the SQL console in SAP HANA Database Explorer, call the stored procedure to grant the ‘INSERT’, ‘UPDATE’, or ‘DELETE’ privilege to a space using the following syntax:
+3.  In the SQL console in SAP HANA Database Explorer, call the stored procedure to grant a privilege \(such as ‘INSERT’, ‘UPDATE’, ‘DELETE’\) to a space using the following syntax:
 
     ```
     CALL "DWC_GLOBAL"."GRANT_PRIVILEGE_TO_SPACE" (
@@ -97,6 +97,8 @@ Only the database user for the open SQL schema has the privilege to run the stor
     -   'DELETE'
 
     -   'EXECUTE'
+
+    -   'ALTER'
 
 
 
@@ -219,6 +221,41 @@ Only the database user for the open SQL schema has the privilege to run the stor
     
     
     ```
+
+    To allow the tables of the Open SQL schema to be replicated as part of an elastic compute node process, you must grant the privileges ALTER and UPDATE and run the following queries:
+
+    -   First, to allow table replication \(table replica creation or removal\):
+
+        ```
+        CALL "DWC_GLOBAL"."GRANT_PRIVILEGE_TO_SPACE" (
+        	OPERATION => 'GRANT', 
+        	PRIVILEGE => 'ALTER', 
+        	SCHEMA_NAME => 'SALE#ETL', 
+        	OBJECT_NAME => '', 
+        	SPACE_ID => 'SALES');
+        
+        
+        ```
+
+        For more information, see [Synchronous Table Replication](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/6173b69c6a5343e0b4a1a8b21cb504fb.html) in the *SAP HANA Administration Guide for SAP HANA Platform*.
+
+    -   Second, to allow the data to be loaded in memory in order to accelerate the first run of the elastic compute node:
+
+        ```
+        CALL "DWC_GLOBAL"."GRANT_PRIVILEGE_TO_SPACE" (
+        	OPERATION => 'GRANT', 
+        	PRIVILEGE => 'UPDATE', 
+        	SCHEMA_NAME => 'SALE#ETL', 
+        	OBJECT_NAME => '', 
+        	SPACE_ID => 'SALES');
+        
+        
+        ```
+
+        For more information, see [LOAD Statement \(Data Manipulation\)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/20f83c8c75191014b215d6c8c427c91b.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*
+
+
+    For more information on elastic compute nodes, see [Create an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/99ad61e1b63a44de8572a49c6f374e8a.html "Once you've purchased additional resources, you can create an elastic compute node to take over peak loads.") :arrow_upper_right:.
 
     For more information on the SAP HANA statement CREATE PROCEDURE, see [CREATE PROCEDURE Statement \(Procedural\)](https://help.sap.com/docs/HANA_SERVICE_CF/7c78579ce9b14a669c1f3295b0d8ca16/20d467407519101484f190f545d54b24.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
 

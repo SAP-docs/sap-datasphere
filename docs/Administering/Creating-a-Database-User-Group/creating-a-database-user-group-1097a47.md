@@ -8,6 +8,19 @@ Users with an administrator role can create database user groups in SAP Datasphe
 
 
 
+<a name="loio1097a470be40432e89f91288bdc14378__prereq_yx4_t2p_hfc"/>
+
+## Prerequisites
+
+To create a database user group, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges.For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
 ## Context
 
 When creating a database user group, an administrator is also created. This administrator can create other users, schemas, and roles using SAP Datasphere stored procedures. The administrator and their users can create data entities \(DDL\) and ingest data \(DML\) directly into their schemas and prepare them for consumption by spaces.

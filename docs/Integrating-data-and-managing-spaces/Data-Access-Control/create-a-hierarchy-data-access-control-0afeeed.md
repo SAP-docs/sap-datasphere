@@ -4,7 +4,7 @@
 
 # Create a "Hierarchy" Data Access Control
 
-Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as hierarchy values. Each user can only see the records that match the hierarchy values she is authorized for in the permissions entity, along with any of their descendents.
+Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as hierarchy values. Each user can only see the records that match the hierarchy values she is authorized for in the permissions entity, along with any of their descendants.
 
 
 
@@ -28,15 +28,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 Before creating your data access control, you must have identified the following entities:
 
--   A permissions entity containing the following columns:
-    -   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your identity provider (IdP).") :arrow_upper_right:\). 
-
-        > ### Note:  
-        > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
-
-    -   Criterion column - A column containing the criterion data. This criterion data is organized into a hierarchy via an external entity with a semantic usage of *Hierarchy*.
-
--   An entity with a semantic usage of *Hierarchy* containing parent-child relationships for the records in the permissions entity.
+-   An entity with a semantic usage of *Hierarchy* containing parent-child relationships for the records in the permissions entity \(see [Create an External Hierarchy for Drill-Down](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dbac7a862b3744d8a71d268644aac389.html "Select a Semantic Usage of Hierarchy to indicate that your entity contains parent-child relationships for members in a dimension.") :arrow_upper_right:\).
 
     > ### Note:  
     > Only external hierarchies with a single pair of parent-child columns are supported. Level-based hierarchies, dimensions with internal hierarchies, and entities with a semantic usage of *Hierarchy with Directory* cannot be used, and the data in your hierarchy must respect the following rules:
@@ -45,63 +37,17 @@ Before creating your data access control, you must have identified the following
     > -   No nodes with multiple parents
     > -   No circular relationships
 
+-   A permissions entity containing the following columns:
+    -   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your identity provider (IdP).") :arrow_upper_right:\). 
+
+        > ### Note:  
+        > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
+
+    -   Criterion column - A column containing the criterion data. This criterion data is organized into a hierarchy via an external entity with a semantic usage of *Hierarchy*.
+
 
 For example:
 
--   The `Geo Permissions` table is used as a permissions entity, and contains the following records:
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    User ID
-    
-    </th>
-    <th valign="top">
-
-    Geo Criteria
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `bob@acme.com`
-    
-    </td>
-    <td valign="top">
-    
-    Europe
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `jim@acme.com`
-    
-    </td>
-    <td valign="top">
-    
-    France
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `ann@acme.com`
-    
-    </td>
-    <td valign="top">
-    
-    Paris
-    
-    </td>
-    </tr>
-    </table>
-    
 -   The `Geo Hierarchy` table has a semantic usage of *Hierarchy* and contains the following records:
 
 
@@ -163,6 +109,60 @@ For example:
     <td valign="top">
     
     France
+    
+    </td>
+    </tr>
+    </table>
+    
+-   The `Geo Permissions` table is used as a permissions entity, and contains the following records:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    User ID
+    
+    </th>
+    <th valign="top">
+
+    Geo Criteria
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `bob@acme.com`
+    
+    </td>
+    <td valign="top">
+    
+    Europe
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `jim@acme.com`
+    
+    </td>
+    <td valign="top">
+    
+    France
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `ann@acme.com`
+    
+    </td>
+    <td valign="top">
+    
+    Paris
     
     </td>
     </tr>

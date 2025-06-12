@@ -120,7 +120,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for replication flows. The default is *false*. 
+\[optional\] \[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for replication flows. The default is *false*. 
 
 </td>
 </tr>
@@ -132,7 +132,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select a location ID. 
+\[optional\] \[optional\] Select a location ID. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
@@ -149,7 +149,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
+\[optional\] \[optional\] Select *Derive Virtual Host and Port from Connection Details* or *Enter Virtual Host and Port in Separate Fields*. 
 
 If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you can select *Derive Virtual Host and Port from Connection Details* and don't need to enter the values manually.
 

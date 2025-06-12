@@ -10,6 +10,13 @@ Use the *Space Storage* properties to allocate disk and memory storage to the sp
 
 ## Prerequisites
 
+To allocate disk and memory storage to your space, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-------M`\) - To update all spaces and space properties.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
 > ### Note:  
 > Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
 
@@ -110,7 +117,10 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </td>
     <td valign="top">
     
-    Enable access to the SAP HANA Cloud data lake. Enabling this option is only possible if no other space already has access to the data lake.
+    Enable access to the SAP HANA Cloud data lake. Only one space can connect to the data lake.
+
+    > ### Note:  
+    > Even though the option is available for selection, you should check first that no other space already has access to the data lake. To do so, you can choose the table layout in the *Space Management* overview page and sort on the *Data Lake Access* column.
 
     Default: Disabled
     

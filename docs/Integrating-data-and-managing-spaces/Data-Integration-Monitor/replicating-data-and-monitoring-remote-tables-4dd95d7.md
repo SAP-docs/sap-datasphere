@@ -180,7 +180,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 ## Monitoring Remote Tables
 
-In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the frequency shows how you are replicating your data: in real-time, using a schedule \(scheduled\) or on-demand \(none\) to capture your data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
+In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the *Frequency* shows how you are replicating your data: in real-time, using a schedule \(scheduled\) or on-demand \(none\) to capture your data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
 
 
 <table>
@@ -248,7 +248,7 @@ Displays how data is currently accessed.
 </td>
 <td valign="top">
 
-Displays how often data is replicated. The value here shows the intended frequency that might have not been reached yet depending on the status of the remote table.
+Displays how often data is replicated. The value here shows the intended frequency that might have not been reached yet depending on the status of the remote table. 
 
 -   *–-*: Refresh frequency doesn't apply.
 -   *None*: There is no schedule defined for this table.
@@ -337,7 +337,7 @@ Displays the number of records replicated into SAP Datasphere. You can then comp
 <tr>
 <td valign="top">
 
-*New Run* 
+*Next Run* 
 
 </td>
 <td valign="top">
@@ -349,7 +349,7 @@ Displays the next scheduled run \(if a schedule is set for the remote table\).
 <tr>
 <td valign="top">
 
-*Memory used for storage \(MiB\)* 
+*Size in-Memory \(MiB\)* 
 
 </td>
 <td valign="top">
@@ -361,7 +361,7 @@ Displays the size occupied by the remote table data in memory.
 <tr>
 <td valign="top">
 
-*Disk used for storage \(MiB\)* 
+*Size on Disk \(MiB\)* 
 
 </td>
 <td valign="top">
