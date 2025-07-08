@@ -221,7 +221,7 @@ To create a schedule, click *Create*.
 The *Schedule Data Deletion* window opens:
 
 1.  Define the settings of the schedule: Give a business name and a technical name to your schedule, and select the type of deletion you would like to apply.
-2.  Define the Frequency and Time Range for your schedule. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+2.  Define the Settings and Date Range for your schedule. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 3.  Click *Next Step*.
 4.  Review your settings and click *Create Schedule*.
 
@@ -270,7 +270,7 @@ Displays the business name or technical name of the schedule. Technical or Busin
 <tr>
 <td valign="top">
 
-*Frequency* 
+Scheculed Frequency 
 
 </td>
 <td valign="top">

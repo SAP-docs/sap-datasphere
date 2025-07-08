@@ -53,9 +53,6 @@ In addition to working with task chains in the editor, you can also:
 -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
-> ### Note:  
-> Exporting and importing task chains via the <span class="FPA-icons-V3"></span> \(*Transport*\) app may not be supported for SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
-
 
 
 ## Procedure
@@ -281,6 +278,8 @@ In addition to working with task chains in the editor, you can also:
         > 
         > 
         > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
+
+        \[Optional\]. When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator.
 
     -   Task Chain - Run
 

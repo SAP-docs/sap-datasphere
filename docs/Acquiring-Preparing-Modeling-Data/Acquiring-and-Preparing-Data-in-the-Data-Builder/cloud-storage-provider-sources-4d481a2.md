@@ -31,7 +31,7 @@ For more information about the corresponding connection types, see [Integrating 
 
 ## Prerequisites
 
-All objects in your replication flow have load type *Initial Only*. \(Delta loading is not supported.\)
+All objects in your replication flow have load type *Initial Only*.
 
 The data you want to replicate is stored in CSV files, and one of the following delimiters is used:
 

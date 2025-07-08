@@ -514,7 +514,7 @@ Displays the type of context. A context can be one of the following types:
 
 -   **Private Data Exchange**, where a data exchange is built with multiple data providers and consumers \(from different companies\). All participants have the same rights.
 
--   **Internal Data Marketplace**, for the scenario where all the users of a tenant can acquire data products internally. By default, all the users of the tenant are automatically added to the context.
+-   **Internal Data Marketplace**, for the scenario where all the users of a system can acquire data products internally. By default, all the users of the system are automatically added to the context.
 
 
 For more information about these context types and others, see [Context Management App](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.

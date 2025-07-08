@@ -1,7 +1,5 @@
 <!-- loio962de2f99d234967b8b10541599f00c6 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Preparing SAP BW/4HANA Model Transfer Connectivity
 
 Accessing SAP BW/4HANA meta data and importing models into SAP Datasphere with a SAP BW/4HANA Model Transfer connection requires two protocols \(or endpoints\): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.
@@ -39,22 +37,13 @@ Before creating a connection for SAP BW/4HANA Model Transfer in SAP Datasphere, 
 
 4.  In the side navigation area of SAP Datasphere, click *System* \> *Administration* \> *Data Source Configuration* \> *Live Data Sources* and switch on *Allow live data to leave my network*.
 
-    > ### Note:  
-    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** *System* \> *Administration* \> *Data Source Configuration* \> *Live Data Sources*.
-
     For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
 5.  In the side navigation area of SAP Datasphere, click *System* \> *Administration* \> *Data Source Configuration* \> *On-premise data sources* and add the location ID of your Cloud Connector instance.
 
-    > ### Note:  
-    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** *System* \> *Administration* \> *Data Source Configuration* \> *On-premise data sources*.
-
     For more information, [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
 6.  In the side navigation area of SAP Datasphere, open *System* \> *Configuration* \> *Data Integration* \> *Live Data Connections \(Tunnel\)* and create a live data connection of type tunnel to SAP BW∕4HANA.
-
-    > ### Note:  
-    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** <span class="FPA-icons-V3"></span> \(Connections\).
 
     For more information, see [Create Live Data Connection of Type Tunnel](create-live-data-connection-of-type-tunnel-5d02f11.md).
 

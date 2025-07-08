@@ -19,9 +19,9 @@ The ABAP SQL service provides SQL-level access to published CDS view entities fo
 
 Perform the following steps to prepare data federation with remote tables:
 
--   Set up Cloud Connector for using the ABAP SQL service, which involves the following Cloud Connector configuration:
+-   Configure Cloud Connector to use the ABAP SQL service \(see [Configure Cloud Connector](configure-cloud-connector-f289920.md)\), paying particular attention to the following configuration steps:
 
-    1.  When adding the system mapping to the SAP S/4HANA system, select HTTPS protocol.
+    1.  When adding the system mapping to the SAP S/4HANA system, select *HTTPS* protocol.
 
         > ### Note:  
         > When you want to use a connection for both data or replication flows and remote tables, you need to create two system mapping entries in the Cloud Connector considering the following:
@@ -105,14 +105,22 @@ Perform the following steps to prepare data federation with remote tables:
         > 
         > In the SAP Datasphere *Connections* app, you must enter the virtual port for the HTTPS protocol and the virtual host in separate fields. Deriving virtual host and port is not supported in the *Connections* app because of the different virtual ports used in the two system mappings.
 
-    2.  You need to specify the URL path \(*Resources*\):
+    2.  When adding resources, specify the URL path:
         1.  Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example:`/sap/bc/sql/sql1/sap/s_privileged`.
 
-        2.  Select the *WebSocket* option.
+        2.  Select the *Upgrade Allowed* option.
+
+            > ### Note:  
+            > In older Cloud Connector versions, the option might appear as *WebSocket* or *WebSocket Upgrade*.
 
 
 
-    For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
+    For more information, see:
+
+    -   [Configure Cloud Connector](configure-cloud-connector-f289920.md)
+    -   [Configure Access Control \(HTTP\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control-http) in the *SAP BTP Connectivity* documentation
+
+    .
 
 -   In SAP S/4HANA, a business user and administrator must perform the following steps to prepare data federation with remote tables:
 

@@ -32,6 +32,8 @@ Typical types of dimensions include:
 
 1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Dimension*.
 
+
+
 2.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
 
 3.  Set attributes as keys to indicate that the data they contain can uniquely identify records.

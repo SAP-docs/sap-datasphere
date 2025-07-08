@@ -13,6 +13,7 @@ This topic contains the following sections:
 -   [Monitor Statements](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc)
 -   [Monitor Access Control Issues](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_tt5_sc4_ccc)
 -   [Monitor Elastic Compute Nodes](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_yvw_k24_ccc)
+-   [Monitoring File Space Storage Consumption and Apache Spark Application Usage](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_apachespark_tasks)
 -   [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
 -   [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
 -   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
@@ -294,7 +295,7 @@ To investigate issues:
     
     Shows the schemas in which out-of-memory errors have occurred in the last 7 days because the statement limits have been exceeded.
 
-    To set the statement limits for spaces, see [Set Priorities and Statement Limits for Spaces](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
+    To set the statement limits for spaces, see [Set Priorities and Statement Limits for Spaces or Groups](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
     
     </td>
     </tr>
@@ -402,7 +403,7 @@ To investigate issues:
     If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
 
 
-For more information about admission control thresholds, see [Set Priorities and Statement Limits for Spaces](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
+For more information about admission control thresholds, see [Set Priorities and Statement Limits for Spaces or Groups](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
 
 
 
@@ -614,7 +615,73 @@ As a tenant administrator, you can view the consumption of capacity units for va
 
 From the side navigation menu, click <span class="FPA-icons-V3"></span> \(*System Monitor*\)** \> *Capacities*.
 
-Your dailly consumption for the current month is shown. You track usage relitive to your subscription. You can also download detailed hourly data. See [Monitor Capacities](monitor-capacities-ba3d05b.md).
+Your dailly consumption for the current month is shown. You track usage relative to your subscription. You can also download detailed hourly data. See [Monitor Capacities](monitor-capacities-ba3d05b.md).
+
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_apachespark_tasks"/>
+
+## Monitoring File Space Storage Consumption and Apache Spark Application Usage
+
+You can monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. This allows you to understand where storage consumption is the highest and to target specific tasks.
+
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\), then click the *Object Store* tab.
+
+2.  Select the file space of your choice in the *Spaces* drop-down list. All file spaces of the tenant are listed.
+3.  You can monitor the storage utilization of your selected file space and of all file spaces with the two following cards:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Card
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *SAP HANA Data Lake Files: Storage Utilization*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of storage used in terabyte \(TB\) for the selected space.
+
+    > ### Note:  
+    > As an administrator, you can see the storage of all spaces even if you aren't a member.
+
+    You can see the space usage of tasks runs in the*Apache Spark: Tasks* table below.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *SAP HANA Data Lake Files: Storage Utilization of All Spaces*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of storage used in terabyte \(TB\) for all spaces.
+    
+    </td>
+    </tr>
+    </table>
+    
+4.  You can investigate the selected space's tasks further in the *Apache Spark: Tasks* table:
+    1.  Select a time frame in the *Date and Time Range* options \(*Single Dates*, *Date Ranges*, *Weeks*, *Months*, or *Custom Options*\).
+    2.  The table shows the following information:
+        -   *Applications*: Shows the name of the application.
+        -   *Number of Tasks*: Shows the total of tasks that ran in the application during the selected time range. Select the line or click <span class="SAP-icons-V5"></span> \(Details\) to show more information about the tasks, such as *Application Configuration* details \(*Executor CPU*, *Executor Memory*,*Driver CPU*, *Driver Memory*, *Maximum CPU*, and *Maximum Memory*\) and *Tasks details* \(*Object Type*, *Task Activity*, and *Number of Tasks*\). Sorting and filtering abilities are available.
+
+
 
 
 

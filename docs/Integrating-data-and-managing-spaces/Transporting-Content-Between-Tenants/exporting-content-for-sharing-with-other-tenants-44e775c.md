@@ -276,9 +276,6 @@ The definition of an authorization scenario contains the definition of its data 
 </tr>
 </table>
 
-> ### Note:  
-> Only local and remote tables, views, data flows, and E/R models can be selected for exporting in SAP Datasphere tenants provisioned prior to version 2021.03. While objects created in SAP Datasphere tenants provisioned prior to version 2021.03 can be transported to tenants provisioned after that date, transport of objects in the other direction is not possible.
-
 
 
 ## Procedure

@@ -645,48 +645,6 @@ n/a
 <tr>
 <td valign="top">
 
-[Microsoft Azure Data Lake Store Gen1 Connections (Deprecated)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/aa04f9a3dd454b1b8761a963079887a3.html "Use the connection to access objects in Microsoft Azure Data Lake Gen1 (ADL Gen1).") :arrow_upper_right:
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-n/a
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 [Microsoft Azure Data Lake Store Gen2 Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
 
 </td>

@@ -6,7 +6,7 @@ Using options available for creating, editing, and removing task scheduling, you
 
 After previously scheduling a task, you can select *Schedule* \> *Pause Schedule* to pause the next schedule run of a task, or select *Schedule* \> *Resume Schedule* to resume a schedule previously paused.
 
-If you pause a schedule, when you return to the task display, the *Frequency* column displays *Paused* for the selected task, and the Next Run column is cleared of any future scheduled runs. The defined schedule for future scheduled runs is still saved, however, so you can simply go back later and resume the schdule to run future scheduled task again.
+If you pause a schedule, when you return to the task display, the *Scheduled Frequency* column displays *Paused* for the selected task, and the Next Run column is cleared of any future scheduled runs. The defined schedule for future scheduled runs is still saved, however, so you can simply go back later and resume the schdule to run future scheduled task again.
 
 If you pause one or more objects within a replication flow that has a schedule, the schedule continues unchanged for all other objects in the flow, wheras no replication takes place for the paused objects until you resume them.
 

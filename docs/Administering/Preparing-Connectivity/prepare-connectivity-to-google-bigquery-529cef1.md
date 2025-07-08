@@ -15,7 +15,9 @@ Before you can use the connection for remote tables, the following is required:
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
 
     > ### Note:  
-    > The root certificate `GTS Root R1` which is valid until 2036 is required. In your browser, open [https://cloud.google.com/](https://cloud.google.com/) to export it \(see SAP Note [3424000](https://me.sap.com/notes/3424000)\).
+    > The root certificates `GTS Root R1` and `GTS Root R4` \(valid until 2036\) are required. In your browser, open [https://cloud.google.com/](https://cloud.google.com/) \(*Google Trust Services Repository*\) to download the certificates \(supported filename extensions are .pem and .crt\).
+    > 
+    > For more information, see SAP Notes [3424000](https://me.sap.com/notes/3424000) and [3567141](https://me.sap.com/notes/3567141).
 
     For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
 
@@ -26,7 +28,7 @@ Before you can use the connection for remote tables, the following is required:
 
 ## Data Flows and Replication Flows
 
-Before you can use the connection for data flows, the following is required:
+Before you can use the connection for data flows and replication flows, the following is required:
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 

@@ -32,8 +32,6 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 > ### Note:  
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
-> 
-> The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
 Local tables can be used as source data or target data by SAP Datasphere apps. As a Data Integrator you might want to monitor all local tables \(file\) deployed in your space and check how and when data has been last updated and if some data must still be merged.
 

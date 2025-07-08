@@ -83,7 +83,7 @@ All these statuses can be combined with a sub-status. For more information on su
 <tr>
 <td valign="top">
 
-*Frequency*
+*Scheduled Frequency*
 
 </td>
 <td valign="top">
@@ -138,7 +138,7 @@ Date and Time when the last run ended.
 <tr>
 <td valign="top">
 
-*Next Run*
+*Scheduled Next Run*
 
 </td>
 <td valign="top">

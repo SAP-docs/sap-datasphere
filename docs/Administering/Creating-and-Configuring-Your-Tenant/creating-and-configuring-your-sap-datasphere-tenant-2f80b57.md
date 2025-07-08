@@ -653,6 +653,48 @@ vCPU
 <tr>
 <td valign="top">
 
+Brazil
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+27840 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Europe \(Amsterdam\)
 
 </td>
@@ -869,12 +911,12 @@ vCPU
 <tr>
 <td valign="top">
 
-Brazil
+Australia
 
 </td>
 <td valign="top">
 
-5750 GB
+3700 GB
 
 </td>
 <td valign="top">
@@ -905,6 +947,48 @@ Supported
 <td valign="top">
 
 204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Brazil
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+28928 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+124 \(High Memory Performance Class\)
 
 </td>
 </tr>
@@ -1083,6 +1167,53 @@ Saudi Arabia
 
 > ### Note:  
 > Only available to customers representing critical national infrastructure or the public sector.
+
+
+
+</td>
+<td valign="top">
+
+5750 GB
+
+</td>
+<td valign="top">
+
+28928 GB
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Saudi Arabia
+
+> ### Note:  
+> Available to non-regulated customers.
 
 
 

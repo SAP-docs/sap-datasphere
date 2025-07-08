@@ -8,8 +8,6 @@ Create transformation flows with local tables \(file\) as sources, apply various
 
 > ### Note:  
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
-> 
-> The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
 As a Datasphere modeler, you want to model transformation flows with local tables \(file\) as sources, apply various transformations in a file space dedicated to loading and preparing large quantities of data, and store the resulted dataset into another local table \(file\).
 
@@ -50,7 +48,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md)
+    See [Create a Join in a Graphical View](../create-a-join-in-a-graphical-view-947d6d8.md)
     
     </td>
     </tr>
@@ -62,7 +60,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Create a Join in a Graphical View](../create-a-join-in-a-graphical-view-947d6d8.md)
+    See [Create a Union in a Graphical View](../create-a-union-in-a-graphical-view-5c3d354.md)
     
     </td>
     </tr>
@@ -110,7 +108,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Create a Union in a Graphical View](../create-a-union-in-a-graphical-view-5c3d354.md)
+    See [Aggregate Data in a Graphical View](../aggregate-data-in-a-graphical-view-7733250.md)
     
     </td>
     </tr>

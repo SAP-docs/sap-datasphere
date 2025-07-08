@@ -84,7 +84,7 @@ Also, see [Preparing Connectivity for Connections](https://help.sap.com/viewer/9
 
     -   *Features* that a connection type supports \(*Remote Tables*, *Data Flows*, *Replication Flows*, *Model Import*\)
 
-        For more information about the available features with SAP Datasphere, see [Supported Connection Type Features](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_features).
+        For more information about the available features with SAP Datasphere, see [Features Supported by Connections](features-supported-by-connections-505bf40.md).
 
     -   *Categories* that the corresponding source belongs to \(*On-Premise*, *Cloud*\)
 
@@ -173,7 +173,7 @@ Also, see [Preparing Connectivity for Connections](https://help.sap.com/viewer/9
     > ### Note:  
     > If you connect to a partner tool, you will be redirected to an embedded partner UI to there enter credentials and required connection properties, if applicable.
 
-    For an overview of all connection types including links to detailed property documentation, see [Connection Types Overview](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_overview).
+    For an overview of all connection types including links to detailed property documentation, see [Connection Types](connection-types-9456242.md).
 
 5.  \[optional\] For some connection types that use a Data Provisioning Agent to connect to the source, for example SAP ABAP, SAP HANA, or Microsoft SQL Server, you can define advanced properties which give you more control over your connectivity setup. If required, override default values according to your customer scenario’s needs, and then click *Next Step*.
 
@@ -282,7 +282,7 @@ Also, see [Preparing Connectivity for Connections](https://help.sap.com/viewer/9
 
 Depending on the connection type and the features that you have enabled for your connection:
 
--   You can use the connection either to import tables when creating views or ER models, to create data flows, or to create replication flows, or all three.
+-   You can use the connection either to import tables, to create data flows, or to create replication flows, or all three.
 
     For more information, see:
 

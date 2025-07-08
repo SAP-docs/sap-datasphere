@@ -152,7 +152,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
         -   Port
 
 
-7.  If you are using your database user to consume space data in an SAP SQL Data Warehousing HDI container, click the *Copy Full Credentials* button to copy the json code that you can use to initialize your user-defined service \(see [Consume Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/consume-space-objects-in-your-hdi-container-656eebc.md)\).
+7.  If you are using your database user to consume space data in an SAP HANA for SQL data warehousing HDI container, click the *Copy Full Credentials* button to copy the json code that you can use to initialize your user-defined service \(see [Consume Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/consume-space-objects-in-your-hdi-container-656eebc.md)\).
 
 8.  Click *Close* to return to your space page.
 

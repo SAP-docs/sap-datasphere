@@ -272,7 +272,7 @@ Shows how you currently access your view.
 <tr>
 <td valign="top">
 
-*Frequency* 
+*Scheduled Frequency* 
 
 </td>
 <td valign="top">
@@ -302,7 +302,7 @@ Shows when the persisted view was last updated.
 <tr>
 <td valign="top">
 
-*Next Run* 
+*Scheduled Next Run* 
 
 </td>
 <td valign="top">

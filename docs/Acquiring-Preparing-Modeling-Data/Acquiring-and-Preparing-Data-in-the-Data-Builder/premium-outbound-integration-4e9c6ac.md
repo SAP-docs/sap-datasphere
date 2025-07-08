@@ -24,6 +24,7 @@ This topic is relevant for you if you want to use one of the following as the ta
 
 -   Confluent Kafka
 
+-   Secure File Transfer Protocol \(SFTP\)
 
 Before you can create a replication flow for any of these targets, your administrator needs to allocate at least one premium outbound integration block in SAP Datasphere tenant configuration \(in addition to the data integration blocks that you need for any replication flow, irrespective of its target\). For more information about tenant configuration, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
 

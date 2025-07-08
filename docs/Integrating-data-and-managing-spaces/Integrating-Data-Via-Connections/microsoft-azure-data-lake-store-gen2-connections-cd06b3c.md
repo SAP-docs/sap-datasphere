@@ -15,6 +15,9 @@ This topic contains the following sections:
 
 For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure Data Lake Store Gen2](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/6b3fd2c371284637bac465edb9cc9e50.html "To be able to successfully validate and use a connection to Microsoft Azure Data Lake Store Gen2 certain preparations have to be made.") :arrow_upper_right:.
 
+> ### Note:  
+> If you still have *Microsoft Azure Data Lake Storage Gen1* connections, recreate your existing Gen1 connections with the *Microsoft Azure Data Lake Storage Gen2* connection type, adapt your models and processes to the new connection, and delete your Gen1 connections. The Gen1 connection type has been removed from the Connections app because Microsoft Azure Data Lake Storage Gen1 was retired on February 29, 2024 \(see [Action required: Switch to Azure Data Lake Storage Gen2 by 29 February 2024](https://azure.microsoft.com/en-us/updates?id=action-required-switch-to-azure-data-lake-storage-gen2-by-29-february-2024) on the Microsoft *Azure Updates* pages\).
+
 
 
 <a name="loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_usage"/>

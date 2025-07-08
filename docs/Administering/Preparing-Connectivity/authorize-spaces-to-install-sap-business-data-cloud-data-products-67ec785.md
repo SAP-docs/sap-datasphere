@@ -52,6 +52,6 @@ An SAP Datasphere modeler installing the data products in the  catalog can selec
 
 For more information, see:
 
--   [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space or share it to Databricks in SAP Business Data Cloud.") :arrow_upper_right:
+-   [Evaluating and Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:
 -   [Business Data Product Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5661d8813b4c4eb395158cd90e0f4b2f.html "If your SAP Datasphere tenant is included in an SAP Business Data Cloud formation, Business Data Product connections are used to connect to other SAP systems included in the same formation.") :arrow_upper_right:
 

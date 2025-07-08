@@ -195,7 +195,7 @@ To reduce the size of your data lake storage, you must first delete your data la
 </td>
 <td valign="top">
 
-\[optional\] Select the size of SAP BW bridge using the dropdown menu.
+\[optional\] Enter a value to select the size of SAP BW bridge storage. The system updates to the nearest value automatically. You can also click the *\+* and *\-* buttons to adjust to your desired size.
 
 SAP BW Bridge includes SAP BTP, ABAP environment, and an own HANA Cloud runtime and compute.
 

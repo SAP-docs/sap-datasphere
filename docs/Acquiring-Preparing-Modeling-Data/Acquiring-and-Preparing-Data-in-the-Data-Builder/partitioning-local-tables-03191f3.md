@@ -144,7 +144,7 @@ To create partitions for local table:
         Create the number of desired partitions.
 
         > ### Note:  
-        > The default value is 10.
+        > The default value is 10 and the maximum value is 9999.
 
 
         

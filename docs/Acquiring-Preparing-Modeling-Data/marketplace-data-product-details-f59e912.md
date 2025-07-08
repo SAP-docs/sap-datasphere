@@ -16,16 +16,14 @@ After you review the data product details, you can choose to download a sample d
 
 
 
-To get high-level information about the data product, review the header section.
-
-**Data Product Details Header**
+The data product details header provides high-level information about the data product and organizes the information as shown in the following table:
 
 
 <table>
 <tr>
 <th valign="top">
 
-Field
+Section
 
 </th>
 <th valign="top">
@@ -37,27 +35,15 @@ Description
 <tr>
 <td valign="top">
 
-Name and Type
+Name, type, status, and product views
 
 </td>
 <td valign="top">
 
-Displays the data product name and type.
+Displays the data product's name and type, its release and lifecycle statues, the number of times it was viewed.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Status and Product Views
-
-</td>
-<td valign="top">
-
-Displays the lifecycle status of the data product and the number of times it was viewed.
-
--   A data product that is listed is active and available for public or limited visibility. Catalog users can search for the data product.
--   A data product that is delisted is inactive and no longer available for consumers. Consumers who obtained the data product before it became inactive can still use it. However, support and updates from the data provider might be limited or not available.
+-   A data product with a lifecycle status of *Listed* is active and available for public or limited visibility. Catalog users can search for the data product.
+-   A data product with a lifecycle status *Delisted* is inactive and no longer available for consumers. Consumers who obtained the data product before it became inactive can still use it. However, support and updates from the data provider might be limited or not available.
 
 
 
@@ -66,43 +52,25 @@ Displays the lifecycle status of the data product and the number of times it was
 <tr>
 <td valign="top">
 
-Provider
+Provider and visibility information
 
 </td>
 <td valign="top">
 
-Displays the name of the data provider and contact information.
+Displays the data provider, content aggregator, and visibility context information.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+-   Displays the name of the data provider and contact information.
+-   Displays the content aggregator's name if the data provider's profile is managed by a content aggregator. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+-   Displays the context for the data product. Contexts control who has access to the data product. For a user to be able to use a data product, they must belong to a context that is assigned to the data product.
 
-Content Aggregator
 
-</td>
-<td valign="top">
-
-Displays the content aggregator's name. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Contexts
-
-</td>
-<td valign="top">
-
-Displays the context for the data product. Contexts control who has access to the data product. For a user to be able to use a data product, they must belong to a context that is assigned to the data product. 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Access and Price
+Access and price
 
 </td>
 <td valign="top">
@@ -122,7 +90,7 @@ For data products that require you to purchase a license key, the price, currenc
 <tr>
 <td valign="top">
 
-Catalog Activity
+Catalog activity
 
 </td>
 <td valign="top">
@@ -131,38 +99,83 @@ Displays the date when the data product was added to the catalog and when it was
 
 </td>
 </tr>
+</table>
+
+In the header, you'll also be able to see a toolbar with actions available for catalog users.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Tool
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
-Toolbar
+*Install*
 
 </td>
 <td valign="top">
 
-The following tools are available for the data product.
-
--   *Install*: Opens a dialog for installing the free data product.
--   *Install with License Key*: Opens a dialog for installing a data product that requires a license key. If you are installing the data product for the first time, you must enter the license key to activate the data products. For subsequent installations, the license key will be marked as registered.
--   *Request Access*: Opens an email message that you can edit and send to the data provider to request access to the data product.
--   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
--   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used data products to your favorites.
-
-    Adding a data product to your favorites is different from using bookmarks. For more information about bookmarks, see [Using Bookmarks](using-bookmarks-aec68bb.md).
-
-
-
+Opens a dialog for installing the free data product.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Tabs
+*Install with License Key*
 
 </td>
 <td valign="top">
 
-Select a tab to view more information about the data product, such as an overview of the data product's properties, sample data, terms of use, and more.
+Opens a dialog for installing a data product that requires a license key. If you are installing the data product for the first time, you must enter the license key to activate the data products. For subsequent installations, the license key will be marked as registered.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Request Access*
+
+</td>
+<td valign="top">
+
+Opens an email message that you can edit and send to the data provider to request access to the data product.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Open Impact and Lineage*
+
+</td>
+<td valign="top">
+
+Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="FPA-icons-V3"></span> \(Add to Favorites\)
+
+</td>
+<td valign="top">
+
+Adds frequently used data products to your favorites.
+
+Adding a data product to your favorites is different from using bookmarks. For more information about bookmarks, see [Using Bookmarks](using-bookmarks-aec68bb.md).
 
 </td>
 </tr>
@@ -305,7 +318,7 @@ Delivery Mode
 Displays whether new deliveries \(for example, data updates\) are offered by the data provider and how these deliveries affect the existing data.
 
 -   **Full Replication**: Delivers multiple data updates. You can find the updated data under *My Data Products*.
--   **Live Access**: Delivers data within the same tenant without replication. Because the data view is shared live with the target space, the data is always up-to-date and doesn’t require any update. In the target space, under **Shared Objects**, you can find the views in the repository corresponding to all other views shared with the space
+-   **Live Access**: Delivers data within the same system without replication. Because the data view is shared live with the target space, the data is always up-to-date and doesn’t require any update. In the target space, under **Shared Objects**, you can find the views in the repository corresponding to all other views shared with the space
 -   **One-Time Replication**: Delivers data only once without any additional corrections or updates. This type of delivery is suited when the nature of the data doesn't require a refresh on the consumer side. For example, a snapshot of historical facts such as: NYC Taxi Trip Data of 2020. If the consumer needs to receive data corrections, they can re-load the data through **My Data Products** re-initialization.
 
 > ### Note:  
@@ -347,7 +360,7 @@ Additional Properties
 </td>
 <td valign="top">
 
-Displays the additional properties for the data product. These properties are hidden by default and are visible after you select the **Show More** link.
+Displays the additional properties for the data product. The following properties are hidden by default and appear after you select the **Show More** link.
 
 -   Data Category: Displays one or more categories where the data product can be used.
 -   Industry: Displays one or more industries where the data product can be used.
@@ -593,7 +606,7 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click *R
 </td>
 <td valign="top">
 
-The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud tenant\) or a <span class="SAP-icons-V5"></span> data provider.
+The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud system\) or a <span class="SAP-icons-V5"></span> data provider.
 
 The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object. You can expand or collapse the container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
 

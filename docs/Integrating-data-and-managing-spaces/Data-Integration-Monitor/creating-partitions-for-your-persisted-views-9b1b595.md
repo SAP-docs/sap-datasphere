@@ -4,9 +4,9 @@
 
 # Creating Partitions for Your Persisted Views
 
-From the *Views* details screen, you can create partitions on columns from your dataset and break down your data into smaller and more manageable parts to enable persistence on views with large data volume.
+From the *Views* details screen, you can create partitions on columns from your data set and break down your data into smaller and more manageable parts to enable persistence on views with large data volume.
 
-Persisting views with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for data modelers. To avoid such situations, you can create partitions when persisting a view and thus enable partitioned data transfer of large datasets for supported connection types.
+Persisting views with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for data modelers. To avoid such situations, you can create partitions when persisting a view and thus enable partitioned data transfer of large data sets for supported connection types.
 
 > ### Note:  
 > For this action, *Data Builder* \(*Read*\) privilege is required which is not included in the *DW Integrator* role. To perform this action, ask your tenant administrator to assign your user to a scoped role that is based either on the *DW Space Administrator* role or on a custom role that includes the following required privileges: *Data Warehouse Data Integration* \(*Read*, *Update*, *Execute*\) and *Data Builder* \(*Read*\).
@@ -74,7 +74,7 @@ Enter an interval for each of them. Intervals must not overlap.
 Check the *Locked* option if you don't want to update a partition in the next run.
 
 > ### Caution:  
-> If locked partitions contain data filtered by authorizations provided by data access controls, you need to unlock partitions and load a new snapshot of data, whenever these authorizations are changed.
+> If a view is deployed in a deprecated way and locked partitions contain data filtered by authorizations provided by data access controls, you need to unlock partitions and load a new snapshot of data when these authorizations are changed. For more information see [3571243](https://me.sap.com/notes/3571243).
 
 An *OTHERS* partition is set by default. It contains data that is not covered by your defined intervals . For example, if rows have been inserted or modified since your last data persistence and they now don’t match any of the defined intervals. This *OTHERS* partitions can't be locked.
 

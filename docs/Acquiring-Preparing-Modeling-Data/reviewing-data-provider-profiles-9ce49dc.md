@@ -23,16 +23,14 @@ For example, if you’re a content aggregator, you might want to review the data
 
 
 
-Review the header to get high-level information about the data provider.
-
-**Data Provider Details Header**
+The data provider details header provides high-level information about the data provider and organizes the information as shown in the following table.
 
 
 <table>
 <tr>
 <th valign="top">
 
-Field
+Section
 
 </th>
 <th valign="top">
@@ -65,45 +63,31 @@ Displays the number of published data products and the total number of views for
 
 </td>
 </tr>
-<tr>
-<td valign="top">
+</table>
 
-Toolbar
-
-</td>
-<td valign="top">
-
-The following tools are available for the data provider profile.
+In the header, you'll also be able to see a toolbar with actions available for all catalog users.
 
 -   *Contact*: Opens an email message that you can edit and send to the data provider.
 -   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently viewed data providers to your favorites.
 
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+<a name="loio9ce49dcb70df4065880342beec03e25e__section_cwg_yzm_bdc"/>
 
-Tabs
+## Data Provider's Description and Properties
 
-</td>
-<td valign="top">
+In the *Overview* tab, you'll find a description of the data provider and their other properties organized into the following groups: data provider details and contact details. To view the properties, select *Overview* \> *Properties*.
 
-Select a tab to view more information about the data provider and their data products.
-
-</td>
-</tr>
-</table>
-
-
-
-To view the properties of the data provider, select *Overview tab* \> *Properties*.
-
-The properties are divided into the following sections: data provider properties and contact details. The following tables provide descriptions of the content you'll see. For more information about properties not described here, see the documentation for the data provider.
+Review the following descriptions for the content you'll see. If a property is not described here, please see the documentation for the data provider.
 
 > ### Tip:  
 > If the property is related to a search filter, each value appears as a link that you can select. The link opens the catalog search page with the filter value applied.
+
+**Data Provider Properties**
+
+Displays properties for the data provider, such as the following:
+
+Displays the contact details for the data provider and content aggregator, which can include the email address, address, and phone number. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 **Data Provider Properties**
 
@@ -129,7 +113,78 @@ Business Name
 </td>
 <td valign="top">
 
-Displays the business name of the data provider.
+Displays the data provider's business name.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+URL
+
+</td>
+<td valign="top">
+
+Displays a link to the data provider's website.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Marketplace Visibility
+
+</td>
+<td valign="top">
+
+Displays the marketplace visibility of the data provider profile. The visibility affects which contexts have visible access to the data products. Data products can have the following visibilities:
+
+-   *Public Data Provider*: Data products are visible for everyone in the context owned by SAP and are available in the *Data Products \(Marketplace\)* collection.
+
+-   *Private Data Provider*: Data products are visible to users that are members of contexts created by the data provider and are available in the *Data Products \(Marketplace\)* collection. These type of contexts include Private Data Products, Private Data Exchange, or Data Shop.
+
+-   *Internal Data Provider*: Data products are visible to only members who belong to systems that have been specified in your contexts and are available in the *Data Products \(Marketplace\)* collection. Data providers can also restrict the visibility to individual users.
+
+-   *Formations*: Data products are available to all users in the *Data Products* collection.
+
+
+A data provider can have both public and private visibility options. The internal and formation options cannot be used with the other options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Category
+
+</td>
+<td valign="top">
+
+Displays one or more categories that the data provider has data products for.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Provider Data Products
+
+</td>
+<td valign="top">
+
+Displays the total number of data products that the data provider has in the catalog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Regional Coverage
+
+</td>
+<td valign="top">
+
+Displays the countries and regions that the data provider has data products for.
 
 </td>
 </tr>
@@ -148,41 +203,6 @@ Displays the data shipment types the data provider supports.
 -   *Open SQL*: The data is delivered by using an Open SQL Schema. Consumers create an OpenSQL Schema in the space and provide the information to the data provider using the Data Inbox. Once the data product is activated, consumers can access the data through the *Data Builder* and the provided schema appears as a source. This type of data shipment is managed by the data provider.
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Visibility
-
-</td>
-<td valign="top">
-
-Displays the visibility of the data provider profile. The visibility affects which contexts have visible access to the data products.
-
--   *public*: The data provider profile and data products are visible for everyone in the context owned by SAP. These data products are available in the *Data Products \(Marketplace\)* collection.
-
--   *private*: The data provider profile and data products are visible to users that are members of contexts created by the data provider. These type of contexts include Private Data Products, Private Data Exchange, or Data Shop. These data products are available in the *Data Products \(Marketplace\)* collection.
-
--   *internal*: The data provider profile and data products are visible to only members who belong to tenants that have been specified in your contexts. Data providers can also restrict the visibility to individual users. These data products are available in the *Data Products \(Marketplace\)* collection.
-
--   *formation*: The data products for this data provider are available in the *Data Products* collection.
-
-
-A data provider can have both public and private visibility options. The internal and formation options cannot be used with the other options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Content Aggregator
-
-</td>
-<td valign="top">
-
- 
 
 </td>
 </tr>
@@ -213,41 +233,12 @@ Displays one or more industries that the data provider has data products for.
 <tr>
 <td valign="top">
 
-Provider Data Products
-
-</td>
-<td valign="top">
-
-Displays a link that shows the number of additional data products from the data provider.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 SAP Application
 
 </td>
 <td valign="top">
 
 Displays one or more SAP applications that the data provider has data products for.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Additional Properties
-
-</td>
-<td valign="top">
-
-Displays the additional properties for the data provider. These properties are hidden by default and are visible after you select the **Show More** link.
-
--   Data Category: Displays one or more categories that the data provider has data products for.
--   Regional Coverage: Displays the countries and regions that the data provider has data products for.
-
-
 
 </td>
 </tr>

@@ -51,14 +51,12 @@ After you've evaluated and found an asset, use the following steps to view or ed
 
 After you find the asset you want, you might be able to open the asset in the source system to view or edit it. If the asset has been shared with you in the source system, the *Open* button appears in the top-right corner. If the source file for the asset has not been shared with you, contact the person who created the asset or the person who most recently changed it. You can find this information in the asset details page.
 
-For information about sharing files with other users within a source system, see the documentation for the specific source system:
+For information about sharing files with other users within an SAP source system, see the help documentation:
 
--   For SAP Datasphere, see [Acquiring, Preparing, and Modeling Data with SAP Datasphere](acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md).
-
--   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
-
--   For SAP Datasphere, SAP BW bridge, see [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
-
+-   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html)
+-   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)
+-   [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
+-   [SAP BW∕4HANA](https://help.sap.com/docs/SAP_BW4HANA/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
 
 
 
@@ -75,7 +73,7 @@ For information about sharing files with other users within a source system, see
     > ### Note:  
     > For certain source systems, the *Open* button appears if the asset has been shared with you and you have permission to view or edit it. For example, if the asset is from SAP Datasphere or SAP Analytics Cloud, the *Open* button appears only if the asset has been shared with you in the source system and you have permission to view or edit it.
     > 
-    > However, for some source systems, the *Open* button is not available regardless of whether the asset has been shared with you in the source system. For example, if the asset is from an SAP Datasphere, SAP BW bridge, the *Open* button does not appear. To view or edit the asset, you must open it directly in the source system.
+    > However, for some source systems, the *Open* button is not available regardless of whether the asset has been shared with you in the source system. For example, if the asset is from an SAP BW system, the *Open* button does not appear. To view or edit the asset, you must open it directly in the source system.
 
     ![](images/Asset_Details_-_Open_Button_24913a7.png)
 
@@ -91,7 +89,7 @@ For information about sharing files with other users within a source system, see
 Changes saved to objects in the source systems are updated in the catalog as follows:
 
 -   The catalog monitors SAP Datasphere and SAP Analytics Cloud source systems. The catalog detects changes to those objects in real time and automatically extracts the metadata.
--   The catalog does not monitor changes to objects saved in SAP Datasphere, SAP BW bridge source systems. The updated metatdata is extracted on the next scheduled synchronization.
+-   The catalog does not monitor changes to objects saved in SAP BW source systems. The updated metatdata is extracted on the next scheduled synchronization.
 
 <a name="task_zpg_fny_3wb"/>
 
@@ -111,7 +109,7 @@ After you determine the asset is the right one for your needs, you can use it as
 
 -   As a content creator in SAP Analytics Cloud, you can use the asset in a story. For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 
--   As a data modeler in SAP Datasphere, SAP BW bridge, you can merge data into models and make them available for reporting and analysis purposes. For more information, see the help for [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
+-   As a data modeler in an SAP BW system, you can merge data into models and make them available for reporting and analysis purposes. For more information, see the help for [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html) or [SAP BW∕4HANA](https://help.sap.com/docs/SAP_BW4HANA/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
 
 
 > ### Tip:  
@@ -154,7 +152,7 @@ Changes saved to objects in the source systems are updated in the catalog as fol
     -   If you edited an existing file, the metadata for the asset is automatically updated.
 
 
--   The catalog does not monitor changes to objects saved in SAP Datasphere, SAP BW bridge source systems.
+-   The catalog does not monitor changes to objects saved in SAP BW source systems.
 
     -   The updated metatdata is extracted on the next scheduled synchronization.
 

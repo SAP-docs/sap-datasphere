@@ -9,6 +9,7 @@ Users with a modeler role can use views and intelligent lookups in the *Data Bui
 This topic contains the following sections:
 
 -   [Combine, Filter, and Enrich Data with Views](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_views)
+-   [Transform Data \(Including Delta Change Support\) with Transformation Flows](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_transformation_flows)
 -   [Combine Data via Match Rules in an Intelligent Lookup](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_intelligent_lookups)
 -   [Browse the Catalog for Trusted Data Assets](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_catalog)
 -   [Visualize and Understand the Dependencies Between Objects](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_er_models)
@@ -40,6 +41,14 @@ You can combine, filter, enrich and otherwise prepare data in views.
 
 -   By default, views are virtual and must be run each time they are accessed. You can improve performance by persisting the view \(see [Persist Data in a Graphical or SQL View](persist-data-in-a-graphical-or-sql-view-9bd12cf.md)\).
 
+
+
+
+<a name="loiof2e359c899fa4351b5f514d1d86ed9e2__section_transformation_flows"/>
+
+## Transform Data \(Including Delta Change Support\) with Transformation Flows
+
+Create a transformation flow to load data from one or more source repository tables, apply transformations, and output the result to a target table. You can load a full set of data or only delta changes from each source table \(see [Creating a Transformation Flow](creating-a-transformation-flow-f7161e6.md)\).
 
 
 

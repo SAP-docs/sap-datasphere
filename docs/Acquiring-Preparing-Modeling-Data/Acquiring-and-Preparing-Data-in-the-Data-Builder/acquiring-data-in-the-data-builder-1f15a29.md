@@ -11,9 +11,8 @@ This topic contains the following sections:
 -   [Federate and Replicate Data in Remote Tables](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_federate_replicate)
 -   [Extract, Transform, and Load Data with Data Flows](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_etl)
 -   [Load Data from Multiple Objects with Replication Flows](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_replication_flows)
--   [Load and Transform Data \(Including Delta Change Support\) with Transformation Flows](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_transformation_flows)
--   [Import Entities from SAP S/4HANA](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_s4)
--   [Import Entities from SAP BW Bridge](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_bw_bridge)
+-   [Acquire Data from SAP S/4HANA](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_s4)
+-   [Acquire Data from SAP BW and SAP BW Bridge](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_bw_bridge)
 -   [Import Data from CSV Files](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_import_csv)
 -   [Purchase Data from Data Marketplace](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_marketplace)
 -   [Create and Import Objects to Receive and Prepare Data](acquiring-data-in-the-data-builder-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_create_tables)
@@ -28,20 +27,6 @@ Space administrators and integrators prepare connections and other sources to al
 ## Federate and Replicate Data in Remote Tables
 
 Many connections \(including most connections to SAP systems\) support importing remote tables to federate or replicate data \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:\).
-
-SAP Datasphere is using two types of adapters to connect to remote tables:
-
--   SAP HANA smart data integration \(used in connections with *Data Provisioning* option = *Data Provisioning Agent*\).
-
--   SAP HANA smart data access adapters \(used in connections with no *Data Provisioning* option or *Data Provisioning* option = *Cloud Connector* or *Direct*\).
-
-> ### Note:  
-> If your source data comes from an SAP HANA On-Premise system, select the adapter following your use case:
-> 
-> -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adapter to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
-> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md). In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adapter to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
-> 
-> For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 
 You can import remote tables to make the data available in your space from the *Data Builder* start page, in an entity-relationship model, or directly as a source in a view.
 
@@ -70,7 +55,7 @@ Data flows support a wide range of extract, transform, and load \(ETL\) operatio
 -   To add a source to your data flow, drag it from the *Source Browser* \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
 -   In addition to connections, data flows can load and transform data from the following kinds of sources:
     -   Open SQL schemas \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\)
-    -   HDI containers \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP SQL Data Warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP SQL Data Warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\).
+    -   HDI containers \(see [Exchanging Data with SAP HANA for SQL data warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\).
     -   Objects that are already in the SAP Datasphere repository \(see [Add Objects from the Repository](../add-objects-from-the-repository-13fcecd.md)\).
 
 -   Data flows load data into local tables.
@@ -87,27 +72,21 @@ Certain connections support loading data from multiple source objects to SAP Dat
 
 
 
-<a name="loio1f15a29a25354ec28392ab10ca4e9350__section_transformation_flows"/>
-
-## Load and Transform Data \(Including Delta Change Support\) with Transformation Flows
-
-Create a transformation flow to load data from one or more source repository tables, apply transformations, and output the result to a target table. You can load a full set of data or only delta changes from each source table \(see [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md)\).
-
-
-
 <a name="loio1f15a29a25354ec28392ab10ca4e9350__section_s4"/>
 
-## Import Entities from SAP S/4HANA
+## Acquire Data from SAP S/4HANA
 
-The *Import Entities* wizard allows you to import entities from  and SAP S/4HANA on-premise systems with rich metadata \(see [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)\).
+The *Import Entities* wizard allows you to import entities from SAP S/4HANA Cloud and SAP S/4HANA on-premise systems with rich metadata. See [Importing Entities with Semantics from SAP S/4HANA](importing-entities-with-semantics-from-sap-s-4hana-845fedb.md).
 
 
 
 <a name="loio1f15a29a25354ec28392ab10ca4e9350__section_bw_bridge"/>
 
-## Import Entities from SAP BW Bridge
+## Acquire Data from SAP BW and SAP BW Bridge
 
-SAP BW bridge enables you to use SAP BW functionality in the public cloud and to import bridge entities into SAP Datasphere \(see[Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md) \).
+The *Import Entities* wizard allows you to import entities from SAP BW∕4HANA and SAP BW bridge systems with rich metadata. See [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
+
+If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can also be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cca4744c85b14788babe7cb6b77c9973.html "SAP Business Data Cloud enables you to lift your existing SAP BW system to the private cloud and secure your investments into SAP BW.") :arrow_upper_right:.
 
 
 

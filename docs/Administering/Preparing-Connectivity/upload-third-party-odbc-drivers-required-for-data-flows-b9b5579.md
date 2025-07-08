@@ -40,11 +40,6 @@ Driver to be uploaded
 </th>
 <th valign="top">
 
-SHA256 Fingerprint
-
-</th>
-<th valign="top">
-
 Download Site
 
 </th>
@@ -57,12 +52,7 @@ Download Site
 </td>
 <td valign="top">
 
-AmazonRedshiftODBC-64-bit-1.4.11.1000-1.x86\_64.rpm
-
-</td>
-<td valign="top">
-
-6d811e2f198a030274bf9f099d4c828b1b071b78e99432eee1531d4988768a22
+AmazonRedshiftODBC-64-bit-1.4.11.1000-1.x86\_64.rpm \(SHA256 fingerprint: 6d811e2f198a030274bf9f099d4c828b1b071b78e99432eee1531d4988768a22\)
 
 </td>
 <td valign="top" rowspan="2">
@@ -74,12 +64,7 @@ AmazonRedshiftODBC-64-bit-1.4.11.1000-1.x86\_64.rpm
 <tr>
 <td valign="top">
 
-AmazonRedshiftODBC-64-bit-1.4.65.1000-1.x86\_64.rpm
-
-</td>
-<td valign="top">
-
-ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
+AmazonRedshiftODBC-64-bit-1.4.65.1000-1.x86\_64.rpm \(SHA256 fingerprint: ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0\)
 
 </td>
 </tr>
@@ -91,7 +76,7 @@ ee79a8d41760a90b6fa2e1a074e33b0518e3393afd305f0bee843b5393e10df0
 </td>
 <td valign="top">
 
-instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
+instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip \(SHA256 fingerprint: ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13\)
 
 > ### Note:  
 > -   Make sure to select the *Basic Light* package zip file. The package applies to all versions supported by the Oracle connection type \(Oracle 12c, Oracle 18c, and Oracle 19c\).
@@ -105,11 +90,6 @@ instantclient-basiclite-linux.x64-19.17.0.0.0dbru.zip
 > -   Before uploading the files, you must rename them following the names already indicated: oraclepki.jar, osdt\_cert.jar, osdt\_core.jar.
 
 
-
-</td>
-<td valign="top">
-
-ea4a9557c6355f5b56b648b7dff47db79a1403b7e9f7abeca9e1a0e952498e13
 
 </td>
 <td valign="top">
@@ -134,12 +114,7 @@ Additional files if SSL is used:
 </td>
 <td valign="top">
 
-SimbaODBCDriverforGoogleBigQuery\_2.3.1.1001-Linux.tar.gz
-
-</td>
-<td valign="top">
-
-abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018f
+SimbaODBCDriverforGoogleBigQuery\_2.3.1.1001-Linux.tar.gz \(SHA256 fingerprint: abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018f\)
 
 </td>
 <td valign="top">
@@ -151,12 +126,7 @@ abf4551d621c26f4fa30539e7ece2a47daaf6e1d67c59e5b7e79c43a3335018f
 <tr>
 <td valign="top">
 
-SimbaODBCDriverforGoogleBigQuery\_3.0.0.1001-Linux.tar.gz
-
-</td>
-<td valign="top">
-
-58d3c9acfb93f0d26c081a230ff664a16c8544d567792ebc5436beb31e9e28e4
+SimbaODBCDriverforGoogleBigQuery\_3.0.0.1001-Linux.tar.gz \(SHA256 fingerprint: 58d3c9acfb93f0d26c081a230ff664a16c8544d567792ebc5436beb31e9e28e4\)
 
 </td>
 <td valign="top">

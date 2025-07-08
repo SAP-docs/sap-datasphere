@@ -24,7 +24,7 @@ Once the `TCUR*` views are available in your space, you can use them to do curre
 
 -   Graphical views - see [Create a Currency Conversion Column in a Graphical View](../create-a-currency-conversion-column-in-a-graphical-view-6e3d8be.md).
 -   SQL views - see [Example: Converting Currency Values with CONVERT\_CURRENCY](../sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_example_currency).
--   Analytic models - see [Create a Currency Conversion Measure](create-a-currency-conversion-measure-ec00efb.md).
+-   Analytic models - see [Create a Conversion Measure for Currencies](create-a-conversion-measure-for-currencies-ec00efb.md).
 -   Business Builder objects - see [Use Currency Conversion](../Buisiness-Builder/use-currency-conversion-1ba4554.md).
 
 You should always identify columns containing currency values and codes with the following semantic types:

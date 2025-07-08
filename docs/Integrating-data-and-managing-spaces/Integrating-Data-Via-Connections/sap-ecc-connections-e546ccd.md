@@ -18,7 +18,7 @@ See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/935116dd7c324
 
 ## Using the Connection
 
-The connection type supports the remote table as well as the data flow feature.For more information, see [Supported Connection Type Features](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_features).
+The connection type supports the remote table as well as the data flow feature.For more information, see [eb85e157ab654152bd68a8714036e463.md\#loioeb85e157ab654152bd68a8714036e463\_\_section\_connection\_features](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_features).
 
 > ### Note:  
 > This connection type doesn't support replication flows. Instead, we recommend using the *SAP ABAP* connection type for replication flows.

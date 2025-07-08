@@ -55,7 +55,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     > ### Note:  
     > Tasks for which you own a schedule without having authorized SAP Datasphere to run scheduled tasks on your behalf before won't be executed but will fail.
 
-7.  Define your scheduling options:
+7.  Select *Simple* as *Settings Type* and define your scheduling options:
 
     **Schduling Options**
 
@@ -190,7 +190,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    Time Range
+    Date Range
     
     </td>
     <td valign="top">
@@ -225,7 +225,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Next Run*
+    *Scheduled Next Run*
     
     </td>
     <td valign="top">
@@ -277,11 +277,11 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 ## Results
 
-The column *Frequency* shows the status *Scheduled*. By clicking the status you can display the scheduling settings.
+The column *Scheduled Frequency* shows the status *Scheduled*. By clicking the status you can display the scheduling settings.
 
 The column *Schedule Owners* displays the name of the current schedule owner.
 
-The *Next Run* column shows the start date and time of the next run according to the scheduling settings.
+The *Scheduled Next Run* column shows the start date and time of the next run according to the scheduling settings.
 
 As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(Views Logs\)*, or *\(Details\)*.
 
@@ -293,7 +293,7 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Run* column gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Scheduled Next Run* column gets cleared.
 
 You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 

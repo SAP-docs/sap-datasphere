@@ -30,7 +30,7 @@ Each business entity created in the *Business Builder* consumes data from a *Dat
 
 ## Combine Business Entities in Fact Models and Consumption Models
 
-Combine your business entities into star-schemas to prepare them for consumption \(see [Creating a Consumption Model](creating-a-consumption-model-337fa99.md)\).
+Combine your business entities into star schemas to prepare them for consumption \(see [Creating a Consumption Model](creating-a-consumption-model-337fa99.md)\).
 
 You can use a single business entity in multiple consumption models and modify it by adding and removing measures and attributes as appropriate for a particular reporting context.
 

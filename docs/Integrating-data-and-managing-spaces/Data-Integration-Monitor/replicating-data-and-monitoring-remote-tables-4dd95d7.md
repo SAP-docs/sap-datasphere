@@ -73,7 +73,7 @@ When replicating data, you can select:
 > ### Note:  
 > Parallel execution is not supported. You can't perform two similar tasks at the same time and therefore you need to wait until the currently running task is completed before launching a new identical task. For example, if you want to start a data replication, but another task is already replicating data from the same table, then you will get a notification and your task will fail.
 
-The *Frequency* property of a remote table shows you whether or not data for a remote table is replicated and if yes, at what frequency the replication takes place. Replicated data is stored in a replica table.
+The *Scheduled Frequency* property of a remote table shows you whether or not data for a remote table is replicated and if yes, at what frequency the replication takes place. Replicated data is stored in a replica table.
 
 For more information on which connection types support data replication \(direct or scheduled replication\) and real-time replication, see [Integrating Data via Connections](../Integrating-Data-Via-Connections/integrating-data-via-connections-eb85e15.md).
 
@@ -180,7 +180,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 ## Monitoring Remote Tables
 
-In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the *Frequency* shows how you are replicating your data: in real-time, using a schedule \(scheduled\) or on-demand \(none\) to capture your data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
+In the monitor, for all the remote tables that have been previously deployed in your space, you can see how the data is accessed, remotely from the source or replicated. For replicated data, the *Scheduled Frequency* shows how you are replicating your data: in real-time, using a schedule \(scheduled\) or on-demand \(none\) to capture your data changes. You monitor the size and replication status of the tables and you can see when the latest replication for a remote table took place.
 
 
 <table>
@@ -243,7 +243,7 @@ Displays how data is currently accessed.
 <tr>
 <td valign="top">
 
-*Frequency* 
+*Scheduled Frequency* 
 
 </td>
 <td valign="top">
@@ -337,7 +337,7 @@ Displays the number of records replicated into SAP Datasphere. You can then comp
 <tr>
 <td valign="top">
 
-*Next Run* 
+*Scheduled Next Run* 
 
 </td>
 <td valign="top">
@@ -392,7 +392,7 @@ You can personalize the columns you want to display clicking on :gear:
 
 ## Actions in the *Remote Tables*
 
-Depending on the combination of values in the *Data Access*, *Frequency* and *Status* columns, from the *Remote Tables* monitor, you can perform the following actions on remote tables:
+Depending on the combination of values in the *Data Access*, *Scheduled Frequency* and *Status* columns, from the *Remote Tables* monitor, you can perform the following actions on remote tables:
 
 
 <table>

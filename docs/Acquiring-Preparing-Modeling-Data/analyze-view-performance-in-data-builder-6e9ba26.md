@@ -21,7 +21,7 @@ The *Runtime Metrics* tool helps analyze the performance of your view by executi
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary. Select the view you want to analyze the performance of.
 
-    -   The *Runtime Metrics* tool can be accessed from the *Data Builder* toolbar and from a view in the lineage graph. For more information on the lineage graph see, [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+    -   The *Runtime Metrics* tool can be accessed from the *Data Builder* toolbar.
     -   The *Runtime Metrics* tool can be used in both Graphical and SQL views.
 
 2.  Click on the <span class="SAP-icons-V5"></span> \(Runtime Metrics\) icon in the toolbar.

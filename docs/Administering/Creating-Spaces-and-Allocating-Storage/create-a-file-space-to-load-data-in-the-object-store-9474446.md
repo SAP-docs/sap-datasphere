@@ -27,8 +27,6 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 > ### Note:  
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
-> 
-> The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
 > ### Note:  
 > You cannot create or manage a file space via the command line, add a file space to an elastic compute node, or choose a file space as a monitoring space. You cannot monitor, lock, or unlock a file space. You cannot generate time data, enable audit logging, create database users, or associate HDI containers in a file space.
@@ -395,7 +393,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     </tr>
     </table>
     
-    To modify the size of the instance at any time, change the number of vCPUs and click *Update*. You should change the size of your instance based on the resource amounts displayed in the *Max. Used* column of the table. For example, you can see in that the application used to run transformation flows is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter the number of 672 in *vCPUs*. The amount of memory is automatically calculated based on the number of vCPUs with a ratio of 1:4 \(for example 672 vCPUs, 2688 GB of memory\). The minimum size for the instance is 408 vCPUs \(and 1632 GB of memory\), and the maximum size is 2048 vCPUs \(and 8192 GB of memory\).
+    To modify the size of the instance at any time, change the amount of memory and click *Update*. You should change the size of your instance based on the resource amounts displayed in the *Max. Used* column of the table. For example, you can see that the application used to run transformation flows is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter 2688 in *Memory \(GB\)*. The amount of vCPUs is automatically calculated based on the amount of memory with a ratio of 4:1 \(for example 2688 GB of memory and 672 vCPUs\). The minimum size for the instance is 1632 GB of memory \(and 408 vCPUs\), and its maximum size is 8192 GB of memory \(and 2048 vCPUs\).
 
 6.  Add your space to one or more scoped roles. You can:
 

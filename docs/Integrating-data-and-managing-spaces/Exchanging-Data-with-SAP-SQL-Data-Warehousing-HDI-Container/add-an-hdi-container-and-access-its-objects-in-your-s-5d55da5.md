@@ -38,7 +38,7 @@ You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(w
 
 2.  In the *HDI Container* section, click the *\+* button to open the *Add Unassigned HDI Containers* dialog.
 
-    If the *\+* button is not available, then you need to raise a ticket \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](exchanging-data-with-sap-sql-data-warehousing-hdi-con-1aec7ca.md)\) or no HDI containers have yet been built on the SAP Datasphere tenant.
+    If the *\+* button is not available, no HDI containers have yet been built on the SAP Datasphere tenant.
 
 3.  Select one or more HDI containers and then click *Add* to add them to your space.
 

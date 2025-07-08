@@ -20,9 +20,6 @@ To generally allow SAP Technical Support to create support users based on incide
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *System Configuration*.
 
-    > ### Note:  
-    > If your tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** *System* \> *Administration* \> *System Configuration*.
-
 2.  Choose *Edit*.
 
 3.  Set the *Allow SAP support user creation* setting to *ON*.

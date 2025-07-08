@@ -412,8 +412,12 @@ For more information about the supported use cases depending on the connection t
 
         For data federation with remote tables via the ABAP SQL service:
 
-        -   Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example:`/sap/bc/sql/sql1/sap/s_privileged`.
-        -   Select the *WebSocket* option in the *Add Resources* dialog.
+        -   Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example: `/sap/bc/sql/sql1/sap/s_privileged` – *Path and all sub-paths*
+        -   Select the *Upgrade Allowed* option in the *Add Resources* dialog.
+
+            > ### Note:  
+            > In older Cloud Connector versions, the option might appear as *WebSocket* or *WebSocket Upgrade*.
+
 
 
         

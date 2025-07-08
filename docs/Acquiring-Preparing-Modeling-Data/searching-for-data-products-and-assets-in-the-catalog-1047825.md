@@ -78,6 +78,18 @@ Shows only assets. An asset is any data or analytic object made available in the
 <tr>
 <td valign="top">
 
+Data Products
+
+</td>
+<td valign="top">
+
+Shows data products from other SAP cloud applications and partners. This collection appears if the SAP Datasphere tenant is part of an SAP Business Data Cloud formation \(see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "SAP Business Data Cloud is a fully managed SaaS solution that unifies and governs all SAP data and seamlessly connects with third-party data—giving line-of-business leaders context to make even more impactful decisions.") :arrow_upper_right:\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Data Products \(Marketplace\)
 
 </td>
@@ -88,8 +100,6 @@ Shows only marketplace data products that are created and used within SAP Datasp
 Data products must have a lifecycle status of active \(or listed\) before they appear in the catalog. A data product can be created and shared internally or can be licensed for free or at a cost from a third-party provider.
 
 Data products that are marked as featured appear at the beginning of the search results.
-
-This collection is only available in the SAP Datasphere catalog.
 
 </td>
 </tr>
@@ -104,8 +114,6 @@ Data Providers
 Shows a list of providers that deliver data products to companies.
 
 A data provider is a person or company that offers one or multiple data products. Data providers marked as featured appear at the beginning of the search results.
-
-This collection is only available in the SAP Datasphere catalog.
 
 </td>
 </tr>
@@ -281,7 +289,7 @@ The information and actions available in each view differs. See [Information and
 
 [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space or share it to SAP Databricks.")
+[Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
 [System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
 

@@ -14,8 +14,6 @@ Create a local table \(file\) to store data in the object store. Load data to yo
 
 > ### Note:  
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
-> 
-> The object store cannot be enabled in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://me.sap.com/notes/3268282).
 
 SAP Datasphere supports two types of local table to persist data:
 
@@ -322,7 +320,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     > ### Note:  
     > -   You can select several columns to partition your data but you must not select all columns.
     > -   You can’t change the partition definition after you have deployed the table if it contains data.
-    > -   If the cardinality of a column is very high, do not use that column for partitioning. For example, do not create partitions on a key column.
+    > -   If the cardinality of a column is very high, do not use that column for partitioning. For that reason, in case there is only one key column, this column can't be select for partitioning.
 
 7.  *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 8.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.

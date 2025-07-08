@@ -74,9 +74,9 @@ Availability of data replication \(snapshot\) depends on the connection type. Fo
 
 ## Results
 
-When you directly start the replication, it starts in the background and you can see the progress of the replication in the replication status. Once the replication has finished, you can see it in the *Status* column. For a successful load, you will see the status *Available* and the date and time of the latest update. The *Frequency* for a replication you started directly is *None*. The changed size of the remote table will also be shown in the monitor.
+When you directly start the replication, it starts in the background and you can see the progress of the replication in the replication status. Once the replication has finished, you can see it in the *Status* column. For a successful load, you will see the status *Available* and the date and time of the latest update. The *Scheduled Frequency* for a replication you started directly is *None*. The changed size of the remote table will also be shown in the monitor.
 
-When you scheduled the replication, the columns *Frequency* and *Next Run* are updated with the scheduling information.
+When you scheduled the replication, the columns *Scheduled Frequency* and *Scheduled Next Run* are updated with the scheduling information.
 
 You can access the detailed logs for the remote table: Select the relevant remote table and click ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*.
 

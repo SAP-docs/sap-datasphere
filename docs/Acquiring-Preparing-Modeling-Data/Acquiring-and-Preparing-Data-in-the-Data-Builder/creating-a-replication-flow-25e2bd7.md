@@ -24,9 +24,6 @@ CDS views and ODP artifacts that do not have a primary key can be used as the so
 For more information about available connection types, sources, and targets, see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
 
 > ### Note:  
-> Replication flows may not be available in SAP Datasphere tenants provisioned prior to version 2021.03. To request the migration of your tenant, see SAP note [3268282](https://launchpad.support.sap.com/#/notes/3268282).
-
-> ### Note:  
 > To make sure that you have the most up-to-date information and important considerations regarding replication flows, please read SAP Note [3297105](https://me.sap.com/notes/3297105) **before** you start creating a replication flow.
 > 
 > In addition to working with flows in the editor, you can also:
@@ -126,7 +123,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    \[only relevant for load type `Initial and Delta`\] Define the time interval for replicating changes from the source to the target. 
+    \[only relevant for load type *Initial and Delta* and *Delta Only*\] Define the time interval for replicating changes from the source to the target. 
 
     For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
@@ -268,9 +265,9 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Select how you want to load the data \(initial only or initial and delta\).
+    Select how you want to load the data \(initial only, initial and delta or delta only\).
 
-    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md) and[Load Types and Connections for Your Replication Flows](load-types-and-connections-for-your-replication-flows-1089119.md).
     
     </td>
     </tr>
@@ -310,7 +307,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    Enter the number of threads to be used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta*. 
+    Enter the number of threads to be used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*. 
 
     For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     

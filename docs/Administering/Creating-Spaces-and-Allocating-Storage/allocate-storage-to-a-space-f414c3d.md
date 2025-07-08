@@ -103,7 +103,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     Enter the amount of memory storage allocated in GB. This value cannot exceed the amount of disk storage allocated. You can use the buttons to change the amount by whole GBs or enter fractional values in increments of 100 MB by hand.
 
     > ### Note:  
-    > The memory allocated is used to store data and is not related to processing memory. For more information on limiting processing memory in a space, see [Set Priorities and Statement Limits for Spaces](set-priorities-and-statement-limits-for-spaces-d66ac1e.md).
+    > The memory allocated is used to store data and is not related to processing memory. For more information on limiting processing memory in a space, see [Set Priorities and Statement Limits for Spaces or Groups](set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
 
     Default: 1 GB
     

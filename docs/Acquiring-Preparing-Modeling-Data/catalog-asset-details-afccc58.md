@@ -21,9 +21,7 @@ After reviewing the asset details, you can choose to view the asset in more deta
 
 
 
-To get high-level information about the asset, review the header section.
-
-**Asset Details Header**
+The asset details header provides high-level information about the asset and organizes the information as shown in the following table.
 
 
 <table>
@@ -42,35 +40,23 @@ Description
 <tr>
 <td valign="top">
 
-Name and Type
+Name, type, and status
 
 </td>
 <td valign="top">
 
-Displays the asset name and type. The name might not match the name of the underlying source object if it was enriched in the catalog.
+Displays the asset's name and type, and displays its functional and publication status.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+If the asset was enriched, the name displayed might not match the name of the underlying source object.
 
-Asset Status
-
-</td>
-<td valign="top">
-
-Displays the functional and publication statuses of the asset.
-
-Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users.
-
-For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
+Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Summary
+Summary description
 
 </td>
 <td valign="top">
@@ -82,7 +68,7 @@ Displays a summary description of the asset. If you want a more detailed descrip
 <tr>
 <td valign="top">
 
-Catalog Activity
+Catalog activity
 
 </td>
 <td valign="top">
@@ -91,34 +77,108 @@ Displays date and time when the asset was added to the catalog and when it was l
 
 </td>
 </tr>
+</table>
+
+In the header, you'll also be able to see a toolbar with actions available for all catalog users.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Toolbar Actions
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
-Toolbar
+*Open Impact and Lineage* 
 
 </td>
 <td valign="top">
 
-Select the action you want to perform on the asset.
-
--   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram. 
--   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used assets to your favorites.
--   *Open*: Opens the asset in the source system where you can view or edit it. This button appears if you have permission to access the asset in the source system.
-
-
-
+Opens a dialog that displays the *Impact and Lineage Analysis* diagram. 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Tabs
+<span class="FPA-icons-V3"></span> \(Add to Favorites\) 
 
 </td>
 <td valign="top">
 
-Select a tab to view more information about the asset, such as an overview of the asset's properties from the source system, a more detailed description of the asset, semantic enrichments, and more.
+Adds frequently used assets to your favorites. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Open* 
+
+</td>
+<td valign="top">
+
+Opens the asset in the source system where you can view or edit it. This button appears if you have permission to access the asset in the source system. 
+
+</td>
+</tr>
+</table>
+
+If you're a user with the *Catalog Administrator* role, you'll see additional actions in the toolbar.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Toolbar Actions
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Publishing actions:
+
+-   *Publish*
+
+-   *Unpublish*
+
+-   *Exclude*
+
+
+
+
+</td>
+<td valign="top">
+
+Depending on the publishing status of the asset, publishes or unpublishes assets, or excludes assets from being automatically published to the catalog.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Edit* 
+
+</td>
+<td valign="top">
+
+Opens a dialog, where you can edit the asset's name and summary description to improve it for users who use the catalog.
 
 </td>
 </tr>
@@ -130,7 +190,7 @@ Select a tab to view more information about the asset, such as an overview of th
 
 ## Source Properties and Detailed Metadata for an Asset
 
-To view the source properties that have been extracted from the source system for the asset, select *Overview* \> *Source*.
+To view the asset's properties that have been extracted from the source system, select *Overview* \> *Source*.
 
 The following table shows some common source properties that are extracted from the source system. Other source properties that are specific to the asset and the source system can also appear within these source properties or under a separate heading for **Additional Source Properties**. For more information about properties not described here, see the documentation for the source system. 
 
@@ -225,7 +285,7 @@ Path
 </td>
 <td valign="top">
 
-Folder location of the asset, if available. This path does not appear for assets in SAP Datasphere.
+The name of the location where the asset is saved on the source system. This information can be a path name, container name, InfoArea name, or other name where the object is saved on the source system.
 
 </td>
 </tr>
@@ -341,14 +401,12 @@ Select which columns you want to show in the table.
 </tr>
 </table>
 
-For information on the metadata that appears in this tab, see the help documentation for the source system and search for the object you want to know more about:
+For information on the metadata that appears in this tab, see the help documentation for the SAP source system and search for the object you want to know more about:
 
--   For SAP Datasphere, see [Acquiring, Preparing, and Modelling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html).
-
--   For SAP Analytics Cloud, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
-
--   For SAP Datasphere, SAP BW bridge, see [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html).
-
+-   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html)
+-   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)
+-   [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
+-   [SAP BW∕4HANA](https://help.sap.com/docs/SAP_BW4HANA/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
 
 
 
@@ -478,7 +536,7 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click *R
 </td>
 <td valign="top">
 
-The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud tenant\) or a <span class="SAP-icons-V5"></span> data provider.
+The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud system\) or a <span class="SAP-icons-V5"></span> data provider.
 
 The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object. You can expand or collapse the container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
 

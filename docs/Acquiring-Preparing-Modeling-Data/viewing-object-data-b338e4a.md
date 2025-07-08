@@ -43,7 +43,7 @@ You can view data in the table, graphical view, SQL view, E/R model, analytic mo
     > -   The *Data Viewer* will time out and display an error on the *Errors* tab if it is unable to load data in under three minutes. If you experience timeouts or slow performance and some or all of the data you want to view is not replicated to SAP Datasphere, consider replicating it \(see [Replicate Remote Table Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/replicate-remote-table-data-7e258a7.md)\).
     > -   If a column has a *HANA Numeric* data type its data cannot be shown. Consider, changing the data type to one supported by SAP Datasphere \(see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md)\).
     > -   If a column has *Binary*, *Large Binary*, *ST\_Point*, and *ST\_Geometry* set as data type, the data viewer is unavailable and records are shown as *Cannot be shown*. If no data can be found, the data viewer shows it as *NULL*.
-    > -   When viewing data in a persisted view, the data is read from the view's persistency table, unless the view has a status of *Changes to Deploy*, in which case the view is run and the results displayed.
+    > -   When viewing data in a persisted view, the data is read from the view's persistence table, unless the view has a status of *Changes to Deploy*, in which case the view is run and the results displayed. Note also that changes and redeployment can impact the data persistence. For more information, see [Persist Data in a Graphical or SQL View](persist-data-in-a-graphical-or-sql-view-9bd12cf.md) and [Process Source Changes in a Graphical View](process-source-changes-in-a-graphical-view-702350c.md).
 
 4.  The following tools are available in the panel toolbar:
 

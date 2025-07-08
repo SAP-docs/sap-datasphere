@@ -77,7 +77,6 @@ For SAP BW/4HANA, you can create and maintain the subscription in the SAP BW Coc
 
     -   Full
     -   Delta
-    -   Delta and Streaming
 
 
     

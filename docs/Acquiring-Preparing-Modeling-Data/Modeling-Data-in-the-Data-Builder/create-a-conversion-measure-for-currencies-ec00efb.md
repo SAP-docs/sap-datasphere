@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a Currency Conversion Measure
+# Create a Conversion Measure for Currencies
 
 With a currency conversion measure, you can convert currencies into a target currency.
 
@@ -26,7 +26,7 @@ The sources of your analytic model may have values in different currencies. You 
 
 ## Procedure
 
-1.  You are in the editor of your analytic model. You can create a new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Measure in the properties panel. Choose *Currency Conversion Measure*.
+1.  You are in the editor of your analytic model. You can create a new currency conversion measure by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Measure in the properties panel. Choose *Conversion Measure*.
 
 2.  Edit the following properties:
 

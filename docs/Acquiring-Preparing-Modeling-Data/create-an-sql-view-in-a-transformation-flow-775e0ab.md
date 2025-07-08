@@ -96,7 +96,8 @@ When working in a view transform, you are using an editor similar to the standar
         SQL errors and warnings are shown in the *Errors* pane at the bottom of the editor. Problems with the output structure are shown on the *Validation Messages* button in the side panel header.
 
         > ### Note:  
-        > If your SQLScript is complicated, SAP Datasphere may not be able to determine the output structure. In this case, you are requested to review the list of columns. Click the *Edit* button to add or delete buttons or change column names and data types.
+        > -   Tables, columns, and aliases cannot be found if double quotes are missing from the `SELECT` function.
+        > -   If your SQLScript is complicated, SAP Datasphere may not be able to determine the output structure. In this case, you are requested to review the list of columns. Click the *Edit* button to add or delete buttons or change column names and data types.
 
     -   View the data being output by the deployed view by clicking <span class="SAP-icons-V5"></span> \(Data Viewer\). For more information, see [Viewing Object Data](viewing-object-data-b338e4a.md).
 

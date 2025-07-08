@@ -27,6 +27,8 @@ For example:
 
 1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Text*.
 
+
+
 2.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
 
     You must specify at least the following attributes:

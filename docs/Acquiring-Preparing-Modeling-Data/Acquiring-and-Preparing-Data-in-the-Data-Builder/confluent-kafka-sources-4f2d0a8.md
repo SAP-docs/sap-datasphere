@@ -10,7 +10,7 @@ You can transfer Kafka messages from Confluent Platform and Confluent Cloud topi
 
 The source container that you select for the replication is a schema registry context in Confluent, and the replication objects are Confluent topics. The default context of the Confluent schema registry is displayed as period \(.\).
 
-All replication objects must have load type *Initial and Delta*.
+All replication objects must have load type *Initial and Delta* \(other load types are not supported\).
 
 After you confirm your selection of replication objects, the system tries to determine the relevant schema for each object. The schema is defined by pulling the first message from the topic, fetching its schema ID, and extracting the schema from the selected context. If the schema ID is not found in the context, the replication fails and a context with the corresponding schema must be selected. If no message exists in the topic, the system tries to find a subject following the topic name strategy in the context. If nothing is found, you can still use the object, but have to configure the schema manually as described below.
 

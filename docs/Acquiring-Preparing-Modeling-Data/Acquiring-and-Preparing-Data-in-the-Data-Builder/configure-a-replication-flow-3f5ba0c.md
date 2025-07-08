@@ -30,6 +30,25 @@ Define settings and properties for your replication flow and individual replicat
         > 
         > -   If your source object is a local table, you can only use load type *Initial and Delta* if *Delta Capture* is switched on for the local table \(see [Capturing Delta Changes in Your Local Table](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/154bdffb35814d5481d1f6de143a6b9e.html)\).
 
+    -   *Delta Only*: Perform replications on changed records \(inserted, updated or deleted records\).
+
+        While choosing this load type, you may consider:
+
+        -   Not all targets and sources support this load type. If it is not supported, it will not be available in the load type selection.
+        -   The *Delta Only* load type should not be used for data migration purposes, but it can be useful for transactional data where the history of data is not relevant, and therefore only the newly provided data being generated should be used in the target system of the replication flow. Indeed, since the initial load is skipped, data consistency cannot be guaranteed between the source and target. As a result, there may be time gaps between the completion of the initial load and the initiation of delta capture in the delta-only task, potentially leading to missing transaction records in the delta capture log and resulting in data inconsistencies.
+
+            > ### Example:  
+            > -   If data has not changed in the source when you start a replication with the *Delta Only* load type, then no data will be seen in the target. Hence, the target table does not capture a complete snapshot of the source table.
+            > -   If the source table has two records with a primary key \(key 1 and key 2\), and after you've started the replication with the *Delta Only* load type the record with key1 does not contain changes in the source table. Hence, it won't be replicated to the target table, making it inconsistent.
+
+            > ### Note:  
+            > If you want to automate your replication flow run with a task chain or a schedule, you can’t use the *Delta Only* load type as it is not supported.
+
+        -   *Delta Only* is a long running task similar to *Initial and Delta*.
+
+        > ### Note:  
+        > For more information on supported load types and connections, see [Load Types and Connections for Your Replication Flows](load-types-and-connections-for-your-replication-flows-1089119.md).
+
 
 2.  On the *Settings* tab of the canvas, review the *Delete All Before Loading* setting and change it as required. This setting is only relevant if the target structure already exists and contains data. If the target structure does not yet exist or is empty, you can ignore the *Delete All Before Loading* setting.
 
@@ -47,7 +66,7 @@ Define settings and properties for your replication flow and individual replicat
 
         See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
 
-    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 10. This option is only available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta*.
+    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 10. This option is only available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*.
 
     -   Overwrite Source Settings at Object Level: \[only relevant if the source is a cloud storage provider\] By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option.
 
@@ -66,7 +85,7 @@ Define settings and properties for your replication flow and individual replicat
 
         See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
 
-    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 10. This option is only available for SLT tables, CDS views, and CDS view entities and load type *Initial and Delta*.
+    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 10. This option is only available for SLT tables, CDS views, and CDS view entities and load type *Initial and Delta* or *Delta Only*.
 
     -   Overwrite Target Settings at Object Level: \[only relevant if the target is a cloud storage provider\] By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option.
 

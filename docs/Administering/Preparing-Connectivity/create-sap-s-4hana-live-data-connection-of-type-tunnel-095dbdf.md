@@ -20,9 +20,6 @@ See: [Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
-    > ### Note:  
-    > If your SAP Datasphere tenant was provisioned prior to version 2021.03, click <span class="FPA-icons-V3"></span> \(Product Switch\) ** \> ** <span class="FPA-icons-V3"></span> *Analytics*** \> ** <span class="FPA-icons-V3"></span> \(Connections\) and continue with step 3.
-
 2.  In the *Live Data Connections \(Tunnel\)* section, click *Manage Live Data Connections*.
 
     The *Manage Live Data Connections* dialog appears.

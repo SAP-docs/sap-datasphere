@@ -64,7 +64,7 @@ Space administrators can integrate data from other sources:
 -   Create database users to allow external tools to connect to the space and write data to Open SQL schemas associated with the space \(see [Integrating Data via Database Users/Open SQL Schemas](Integrating-Data-Via-Database-Users/Open-SQL-Schema/integrating-data-via-database-users-open-sql-schemas-3de55a7.md)\).
 -   If your space has access to the SAP HANA Cloud, data lake, you can access it via an Open SQL schema \(see [Integrating Data to and From SAP HANA Cloud Data Lake](Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md)\).
 
--   Add SAP HDI containers to your space \(see [Exchanging Data with SAP SQL Data Warehousing HDI Containers](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/exchanging-data-with-sap-sql-data-warehousing-hdi-con-1aec7ca.md)\)
+-   Add SAP HDI containers to your space \(see [Exchanging Data with SAP HANA for SQL data warehousing HDI Containers](Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/exchanging-data-with-sap-hana-for-sql-data-warehousin-1aec7ca.md)\)
 -   Generate a time table and associated time dimension views for use in the space \(see [Create Time Data and Dimensions](create-time-data-and-dimensions-c5cfce4.md)\).
 
 

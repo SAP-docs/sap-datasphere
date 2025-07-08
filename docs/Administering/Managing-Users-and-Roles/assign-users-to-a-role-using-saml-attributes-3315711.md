@@ -14,7 +14,7 @@ For example, you want to give a specific role to all employees that are assigned
 
 ## Prerequisites
 
-Your custom SAML Identity Provider \(IdP\) must be configured and the authentication method selected must be *SAML Single Sign-On \(SSO\)* in <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*. See [Enabling a Custom SAML Identity Provider](enabling-a-custom-saml-identity-provider-9b26536.md).
+Your custom SAML Identity Provider \(IdP\) must be configured and the authentication method selected must be *SAML Single Sign-On \(SSO\)* in <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*. See [Enabling a Custom SAML Identity Provider \(Legacy Custom IdP\)](enabling-a-custom-saml-identity-provider-legacy-custom-idp-9b26536.md).
 
 
 

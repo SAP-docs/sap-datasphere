@@ -10,7 +10,7 @@ This topic contains the following sections:
 
 -   [Configure Your SAP Datasphere Tenant](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_configure)
 -   [Create Users and Assign Roles](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_users_roles)
--   [Create Spaces and Allocate Storage to Them](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces)
+-   [Create Spaces and Allocate Storage](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces)
 -   [Prepare Connectivity](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_connectivity)
 -   [Monitor and Maintain SAP Datasphere](administering-sap-datasphere-70ee87c.md#loio70ee87c19d3b47459ac7f2c8d4fea48a__section_monitoring)
 
@@ -41,7 +41,7 @@ This topic contains the following sections:
 Either SAP will provision your tenant or you can create an instance in SAP BTP \(see [Creating and Configuring Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/creating-and-configuring-your-sap-datasphere-tenant-2f80b57.md)\).
 
 -   We recommend that you link your tenant to an SAP Analytics Cloud tenant \(see [Review and Manage Links to SAP Analytics Cloud and SAP Business Data Cloud Tenants](Creating-and-Configuring-Your-Tenant/review-and-manage-links-to-sap-analytics-cloud-and-sap-business-data-cloud-t-40db567.md)\).
--   You can enable SAP SQL data warehousing on your tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement \(see [Enable SAP SQL Data Warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)\).
+-   You can enable SAP HANA for SQL data warehousing on your tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement \(see [Enable SAP HANA for SQL data warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-hana-for-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)\).
 -   You can enable the SAP HANA Cloud script server to access the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries \(see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-the-sap-hana-cloud-script-server-on-your-sap-datasphere-tenant-2871942.md)\).
 
 
@@ -101,7 +101,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
 
 <a name="loio70ee87c19d3b47459ac7f2c8d4fea48a__section_spaces"/>
 
-## Create Spaces and Allocate Storage to Them
+## Create Spaces and Allocate Storage
 
 All data acquisition, preparation, and modeling in SAP Datasphere happens inside spaces. A space is a secure area - space data cannot be accessed outside the space unless it is shared to another space or exposed for consumption.
 

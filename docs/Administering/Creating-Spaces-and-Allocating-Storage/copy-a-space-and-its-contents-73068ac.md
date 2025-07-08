@@ -32,7 +32,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Context
 
-If you copy a space that contains objects protected by a namespace, the copied objects will be modified so that they are removed from the namespace and become editable. Copying protected content in this way allows you to extend content delivered through SAP Business Data Cloud \(see [Extending Insight Apps](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of an insight app do not include any extensions defined in your source system. However, you can modify the data products to add any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:\).
+If you copy a space that contains objects protected by a namespace, the copied objects will be modified so that they are removed from the namespace and become editable. Copying protected content in this way allows you to extend content delivered through SAP Business Data Cloud \(see [Extending Intelligent Applications](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any extensions defined in your source system. However, you can update the data products to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:\).
 
 
 

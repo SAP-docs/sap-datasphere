@@ -8,7 +8,7 @@ If you're interested in a data product, review its detailed information, such as
 
 
 
-This topic describes the details for data products from tenants that are part of an SAP Business Data Cloud formation.
+This topic describes the details for data products from systems that are part of an SAP Business Data Cloud formation.
 
 The catalog search results provides high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, select it to view its details page. You'll see different types of information about the data product, including its properties, detailed information about its APIs, and resources that can provide information or examples on how to use it.
 
@@ -18,16 +18,14 @@ After you view the data product details, you can choose to install it in your sp
 
 
 
-To get high-level information about the data product, review the header section.
-
-**Data Product Details Header**
+The data product details header provides high-level information about the data product and organizes the information as shown in the following table:
 
 
 <table>
 <tr>
 <th valign="top">
 
-Field
+Section
 
 </th>
 <th valign="top">
@@ -39,31 +37,19 @@ Description
 <tr>
 <td valign="top">
 
-Name and Type
+Name, type, status, and version
 
 </td>
 <td valign="top">
 
-Displays the data product name and type.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Status and Version
-
-</td>
-<td valign="top">
-
-Displays the lifecycle, release, and functional statuses of the data product and the version number.
+Displays the data product's name and type, its lifecycle, release, and functional statuses, and its version number.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Summary
+Summary description
 
 </td>
 <td valign="top">
@@ -75,12 +61,12 @@ Displays a short summary of the data product.
 <tr>
 <td valign="top">
 
-Data Provider
+Extraction system and data provider
 
 </td>
 <td valign="top">
 
-Displays the system type and system name.
+Displays the name and type of source system the data product is extracted from and the data provider's name.
 
 </td>
 </tr>
@@ -92,41 +78,17 @@ Catalog Activity
 </td>
 <td valign="top">
 
-Displays the date when the data product was added to the catalog and when it was updated in the catalog.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Toolbar
-
-</td>
-<td valign="top">
-
-The following tools are available for the data product.
-
--   *View Version History*: Opens a dialog that shows the change history for the data product.
--   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
--   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used data products to your favorites.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Tabs
-
-</td>
-<td valign="top">
-
-Select a tab to view more information about the data product, such as an overview of the data product's properties, references that give your more information on the data product, and more.
+Displays the date when the data product was added to the catalog and when it was updated.
 
 </td>
 </tr>
 </table>
+
+In the header, you'll also be able to see a toolbar with actions available for catalog users.
+
+-   *View Version History*: Opens a dialog that shows the change history for the data product.
+-   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
+-   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used data products to your favorites.
 
 
 
@@ -328,7 +290,7 @@ Additional Properties
 </td>
 <td valign="top">
 
-Displays the additional properties for the data product. These properties are hidden by default and are visible after you select the **Show More** link.
+Displays the additional properties for the data product. 
 
 For data products from SAP Datasphere systems, additional properties can include the following:
 
@@ -368,7 +330,7 @@ System Instance Name
 </td>
 <td valign="top">
 
-Displays the name of the data provider's system. The system can be the name of an SAP tenant not in the same landscape or third-party system.
+Displays the name of the data provider's system. The system can be the name of an SAP system not in the same landscape or third-party system.
 
 </td>
 </tr>
@@ -544,7 +506,7 @@ Actions
 
 Select an action:
 
--   *Install*: Opens the *Import Entities* wizard. Follow the steps to import entities from the data product to your space on the local SAP Datasphere tenant.
+-   *Install*: Opens the *Import Entities* wizard. Follow the steps to import entities from the data product to your space on the local SAP Datasphere system.
 -   *Uninstall*: Opens a dialog, where you select a space to uninstall the data product. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
 The actions to install or uninstall data products are only available in the SAP Datasphere catalog. Also, these actions appear based on the privileges that are assigned to you \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
@@ -620,7 +582,7 @@ Use the toolbar and diagram tools to control the layout of the diagram. Click *R
 </td>
 <td valign="top">
 
-The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud tenant\) or a <span class="SAP-icons-V5"></span> data provider.
+The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud system\) or a <span class="SAP-icons-V5"></span> data provider.
 
 The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object. You can expand or collapse the container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
 

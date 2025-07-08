@@ -49,7 +49,7 @@ SAP Business AI is integrated to generate AI content recommendations in various 
 
 ## Next Steps
 
-You can see this icon indicating that SAP Business AI is available for authorized users in the header area: <span class="SAP-icons-V5"></span>
+Grant access to use SAP Business AI features by assigning the *DW AI Consumer* role or another global role that grants the *Data Warehouse AI Consumption* privilege \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
 
-To use SAP Business AI features, users need to have the *DW AI Consumer* role or another global role that grants the *Data Warehouse AI Consumption* privilege \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
+When users have been granted the privilege to SAP Business AI, they will see this icon in areas of SAP Datasphere where AI is available for use: <span class="SAP-icons-V5"></span>
 

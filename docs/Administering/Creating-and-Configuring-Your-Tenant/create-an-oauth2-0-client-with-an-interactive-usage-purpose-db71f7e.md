@@ -13,7 +13,7 @@ Users with an administrator role can create OAuth2.0 clients with an interactive
 You create an OAuth2.0 client with an *Interactive Usage* purpose:
 
 -   To use the `datasphere` command line interface \([Log into the Command Line Interface via an OAuth Client](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/eb7228a171a842fa84e48c899d48c970.html "If an administrator has created an OAuth client (with Purpose set to Interactive Usage) for datasphere command line interface users to log into, there are several methods for accessing it.") :arrow_upper_right:\).
--   To consume data via the OData API \(see [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from a view exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:\).
+-   To consume data via the OData API \(see [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from an asset exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:\).
 
     > ### Note:  
     > Consuming exposed data in third-party clients, tools, and apps via an OData service requires a three-legged OAuth2.0 flow with type `authorization_code`.
@@ -124,7 +124,7 @@ You create an OAuth2.0 client with an *Interactive Usage* purpose:
     The client, tool, or app that you want to connect is responsible for providing the redirect URI:
 
     -   When working with the `datasphere` command line interface, set this value to `http://localhost:8080/` \(see [Accessing SAP Datasphere via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/3f9a42ccde6b4b6aba121e2aab79c36d.html "Many of the features available to SAP Datasphere users can also be accessed via the command line.") :arrow_upper_right:\).
-    -   When connecting SAP Analytics Cloud to SAP Datasphere via an OData services connection, use the *Redirect URl* provided in the SAP Analytics Cloud connection dialog \(see [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from a view exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:\).
+    -   When connecting SAP Analytics Cloud to SAP Datasphere via an OData services connection, use the *Redirect URl* provided in the SAP Analytics Cloud connection dialog \(see [Consume SAP Datasphere Data in SAP Analytics Cloud via an OData Service](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/9de2c660fd3b4db2b89ad25e584e8857.html "You can create an import data connection in SAP Analytics Cloud to consume data from an asset exposed via the SAP Datasphere OData API and consume it in an SAP Analytics Cloud model.") :arrow_upper_right:\).
 
 
     

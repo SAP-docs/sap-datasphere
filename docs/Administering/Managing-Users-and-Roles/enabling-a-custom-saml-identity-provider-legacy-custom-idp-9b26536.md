@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Enabling a Custom SAML Identity Provider
+# Enabling a Custom SAML Identity Provider \(Legacy Custom IdP\)
 
-By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Datasphere also supports single sign-on \(SSO\), using your identity provider \(IdP\).
+By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on \(SSO\), using your custom identity provider.
 
 
 
@@ -16,11 +16,16 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 -   You must have an IdP that supports SAML 2.0 protocol.
 -   You must be able to configure your IdP.
--   You must be assigned to the *System Owner* role. For more information see [Transfer the System Owner Role](transfer-the-system-owner-role-b3d19a1.md).
+-   You must be the system owner of the SAP Datasphere tenant. For more information see [Transfer the System Owner Role](transfer-the-system-owner-role-b3d19a1.md).
 -   If your users are connecting from Apple devices using the mobile app, the certificate used by your IdP must be compatible with Apple's App Transport Security \(ATS\) feature.
 
-> ### Note:  
-> A custom identity provider is a separate solution, like for example Azure AD, and is not part of SAP Analytics Cloud or SAP Datasphere. Therefore the change in configuration is to be applied directly in the solution, not within SAP Analytics Cloud or SAP Datasphere. Also no access to SAP Analytics Cloud or SAP Datasphere is required to make the change, only an access to the Identity Provider, eg Azure AD.
+
+
+<a name="loio9b26536159354aea9024a99cbbe60b4e__context_axs_j3w_tfc"/>
+
+## Context
+
+A custom identity provider is a separate solution, like for example Azure AD, and is not part of SAP Analytics Cloud or SAP Datasphere. Therefore the change in configuration is to be applied directly in the solution, not within SAP Datasphere. No access to SAP Datasphere is required to make the change, only an access to the IdP.
 
 > ### Note:  
 > Be aware that the SAML attributes for SAP Datasphere roles do not cover user assignment to spaces. A user who logs into a SAP Datasphere tenant through SSO must be assigned to the space in order to access the space. If you do not assign a user to a space, the user will not have access to any space.
@@ -33,35 +38,26 @@ SAP Datasphere can be hosted on non-SAP data centers.
 
 1.  From the side navigation, go to <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*.
 
-    If you've provisioned SAP Datasphere prior to version 2021.03 you'll see a different UI and need go to <span class="FPA-icons-V3"></span> \(*Product Switch*\) → <span class="FPA-icons-V3"></span> \(*Analytics*\) → <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) → *Security*.
-
 2.  Select <span class="FPA-icons-V3"></span> \(Edit\).
 
 3.  In the *Authentication Method* area, select *SAML Single Sign-On \(SSO\)* if it is not already selected.
 
     > ### Note:  
-    > By default, SAP Cloud ID is used for authentication.
+    > By default, SAP Cloud Identity is used for authentication.
 
 4.  In *Step 1*, select *Download* and save the metadata file.
 
-    A metadata file is saved.
+    A SAP Datasphere metadata file is saved.
 
-5.  Upload the metadata file to your SAML IdP.
+5.  Upload the SAP Datasphere metadata file to your SAML IdP.
 
-    If you are creating a new SAP Datasphere application on the SAP Identity Authentication Service \(IAS\) side with type the type "unknown", set the type to "Unknown".
+    If you are creating a new SAP Datasphere application on the Identity Authentication Service \(IAS\) side with the type "unknown", set the type to "Unknown".
 
     The file includes metadata for SAP Datasphere, and is used to create a trust relationship between your SAML Identity Provider and your SAP Datasphere system.
 
-6.  Optional: You can access the system from your SAML Identity Provider by adding a new assertion consumer service endpoint to your identity provider. For more information, see [Enable IdP-Initiated Single Sign On \(SAP Data Center Only\)](enable-idp-initiated-single-sign-on-sap-data-center-only-4d2536a.md).
+6.  Map your SAML IdP user attributes and roles.
 
-7.  Map your SAML IdP user attributes and roles.
-
-    If SAP Datasphere is running on an SAP data center, you must submit an [SAP Product Support Incident](https://launchpad.support.sap.com/#incident/solution) using the component `LOD-ANA-ADM`. In the support ticket, indicate that you want to set up user profiles and role assignment based on custom SAML attributes, and include your SAP Datasphere tenant URL.
-
-    > ### Note:  
-    > If SAP Datasphere is running on an SAP data center, and you want to continue using User Profiles and Role assignment using SAML attributes, you will need to open a support ticket each time you switch to a different custom IdP.
-
-    If SAP Datasphere is running on a non-SAP data center, you must configure your SAML IdP to map user attributes to the following case-sensitive allowlisted assertion attributes:
+    Configure your SAML IdP to map user attributes to the following case-sensitive allowlisted assertion attributes. We recommend that you map only the user attributes and roles that will be used in SAP Analytics Cloud. Mapping additional user attributes may result in a large SAML assertion, which could produce a login error.
 
 
     <table>
@@ -258,13 +254,13 @@ SAP Datasphere can be hosted on non-SAP data centers.
     ```
 
     > ### Note:  
-    > If you are using the SAP Cloud Identity Authentication service as your IdP, map the `Groups` attribute under *Default Attributes* for your SAP Datasphere application. The remaining attributes should be mapped under *Assertion Attributes* for your application.
+    > If you are using the SAP Cloud Identity Authentication service as your IdP, map the `Groups` "sac" attribute under *Default Attributes* for your SAP Datasphere tenant. The remaining attributes should be mapped under *Assertion Attributes* for your SAP Datasphere tenant.
 
-8.  Download metadata from your SAML IdP.
+7.  Download metadata from your SAML IdP.
 
-9.  In *Step 2*, select *Upload*, and choose the metadata file you downloaded from your SAML IdP.
+8.  In *Step 2*, select *Upload*, and choose the metadata file you downloaded from your SAML IdP.
 
-10. In *Step 3*, select a *User Attribute*.
+9.  In *Step 3*, select a *User Attribute*.
 
     The attribute will be used to map users from your existing SAML user list to SAP Datasphere`NameID` used in your custom SAML assertion:
 
@@ -298,48 +294,60 @@ SAP Datasphere can be hosted on non-SAP data centers.
     > 
     > If you are using SAP Cloud Identity as your SAML IdP, you can choose *Login Name* as the *NameID* attribute for SAP Datasphere, then you can set the login name of your SAP Datasphere user as `S4HANAUSER`.
 
-11. Optional: Enable *Dynamic User Creation*.
+10. \[Optional\] Enable *Dynamic User Creation*.
 
-    When dynamic user creation is enabled, new users will be automatically created using the default role and will be able to use SAML SSO to log onto SAP Datasphere. After users are created, you can set roles using SAML attributes.
+    When dynamic user creation is enabled, new users will be automatically created and assigned the default role and will be able to use SAML SSO to log onto SAP Datasphere. Once the users are created, you can assign roles using SAML attributes \(see [Assign Users to a Role Using SAML Attributes](assign-users-to-a-role-using-saml-attributes-3315711.md)\).
 
     > ### Note:  
     > Automatic user deletion is not supported. If a user in SAP Datasphere is removed from your SAML IdP, you must go to *Security* \> *Users* and manually delete users. For more information, see [Delete Users](delete-users-3ceb94c.md).
     > 
-    > If this option is enabled, dynamic user creation still occurs even when SAML user attributes have not been set for all IdP users. To prevent a user from being automatically created, your SAML IdP must deny the user access to SAP Datasphere.
+    > If this option is enabled, dynamic user creation still occurs in SAP Datasphere even when SAML user attributes have not been set for all IdP users. To prevent a user from being automatically created, your SAML IdP must deny the user access to SAP Datasphere.
 
-12. In *Step 4*, enter *<Your Unique Identifier\>*.
+11. In *Step 4*, enter *<Your Unique Identifier\>*.
 
-    This value must identify the system owner. The *Login Credential* provided here are automatically set for your user.
+    This value must identify the SAP Datasphere system owner. The *Login Credential* provided here are automatically set for your user.
 
     > ### Note:  
     > The *Login Credential* depends on the *User Attribute* you selected under *Step 3*.
 
-13. Test the SAML IdP setup, by logging in with your IdP, and then clicking *Verify Account* to open a dialog for validation.
+12. Test the SAML IdP setup, by logging in with your IdP, and then clicking *Verify Account* to open a dialog for validation.
 
     In another browser, log on to the URL provided in the *Verify Your Account* dialog, using your SAML IdP credentials. You can copy the URL by selecting <span class="FPA-icons-V3"></span> \(Copy\).
 
     You must use a private session to log onto the URL; for example, guest mode in Chrome. This ensures that when you log on to the dialog and select SAP Datasphere, you are prompted to log in and do not reuse an existing browser session.
 
     > ### Note:  
-    > If SAP Datasphere is running on a non-SAP data center, upon starting the verification step, you will see a new screen when logging into SAP Datasphere. Two links will be displayed on this page. One will link to your current IdP and the other will link to the new IdP you will switch to. To perform the *Verify Account* step, use the link for the new IdP. Other SAP Datasphere users can continue logging on with the current IdP. Once you have completed Step 16 and the IdP switch has completed, this screen will no longer appear.
+    > When starting the verification step, you will see a new screen when logging into SAP Datasphere. Two links will be displayed on this page. One will link to your current IdP and the other will link to the new IdP you will switch to. To perform the *Verify Account* step, use the link for the new IdP. Other SAP Datasphere users can continue logging on with the current IdP. Once you have completed Step 16 and the IdP switch has completed, this screen will no longer appear.
 
     If you can log on successfully, the SAML IdP setup is correct.
 
-14. In the *Verify Your Account* dialog, select *Check Verification*.
+13. In the *Verify Your Account* dialog, select *Check Verification*.
 
     If the verification was successful, a green border should appear around the *Login Credential* box.
 
-15. Select <span class="FPA-icons-V3"></span> \(Save\).
+14. \[Optional\] Enter a password management URL.
+
+    The URL should link to the password management page of your SAML IdP.
+
+15. \[Optional\] Configure the logout by choosing one of the following logout options:
+
+    -   *IdP Logout*: Log out of your SAML IdP.
+    -   *Application log out*: Log out of SAP Datasphere and remain signed in to your IdP system.
+
+    > ### Note:  
+    > By default, when users log out of SAP Datasphere, they are automatically logged out of their SAML IdP.
+
+16. Select <span class="FPA-icons-V3"></span> \(Save\).
 
     The *Convert to SAML Single Sign-On* confirmation dialog will appear.
 
-16. Select *Convert*.
+17. Select *Convert*.
 
-    When conversion is complete, you will be logged out and directed to the logon page of your SAML IdP.
+    When the conversion is complete, you will be logged out and directed to the logon page of your SAML IdP.
 
-17. Log on to SAP Datasphere with the credentials you used for the verification step.
+18. Log on to SAP Datasphere with the credentials you used for the verification step.
 
-18. From the side navigation, go to <span class="FPA-icons-V3"></span> \(*Security*\) → and <span class="FPA-icons-V3"></span> \(*Users*\), look for the <span class="FPA-icons-V3"></span> column of the *User Attribute* you selected in step 8.
+19. From the side navigation, go to <span class="FPA-icons-V3"></span> \(*Security*\) → and <span class="FPA-icons-V3"></span> \(*Users*\), look for the <span class="FPA-icons-V3"></span> column of the *User Attribute* you selected in step 9.
 
     The values in this column should be a case sensitive match with the `NameId` sent by your IdP's SAML assertion.
 
@@ -364,9 +372,5 @@ Users will be able to use SAML SSO to log onto SAP Datasphere.
 
 ## Next Steps
 
-
-
-### Switch to a Different Custom IdP
-
-If SAML SSO is enabled and you would like to switch to a different SAML IdP, you can repeat the above steps using the new SAML IdP metadata.
+Switching to a Different Custom IdP: If SAML SSO is enabled and you would like to switch to a different SAML IdP, you can repeat the above steps using the new SAML IdP metadata.
 

@@ -34,7 +34,7 @@ You can make the following changes to a replication flow with status *Active* wi
     -   To add one or more objects, choose <span class="FPA-icons-V3"></span> \(Add source objects\), select the relevant objects as usual, and then deploy the flow once again.
 
         > ### Note:  
-        > When you add one or more objects, these objects start getting replicated directly after you save your changes.
+        > When you add one or more objects, these objects start getting replicated directly after you save and deploy the replication flow.
 
 
 -   Change the delta interval: In the *Data Builder*, go to the properties panel for the flow and change the values in the *Delta Load Interval* section as required, then deploy the flow once again. The change takes effect after the next delta with the previous interval value is completed. Example: You have an active replication flow with a delta interval of one hour. The next delta is due in 30 minutes. If you change the delta interval to 20 minutes, the next delta will still start in 30 minutes, and the following one 20 minutes after completion of the first one.
@@ -206,4 +206,12 @@ You can rename an existing target object:
 
 6.  Click *Rename*.
 7.  Save and Redeploy
+
+
+
+<a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_n2t_5c4_qfc"/>
+
+## Switching From or To The Delta Only Load Type
+
+You can switch the load type of an existing replication flow to or from Delta Only to another supported load type. Note that when you switch from one load type to another, you need to redeploy so that the changes can be applied. The replication flow will run with the new load type as if it were just created from scratch.
 

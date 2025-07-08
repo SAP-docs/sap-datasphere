@@ -275,6 +275,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     > -   If your table is accessed from an SAP HANA connection, you must have the **CATALOG READ** privilege in SAP HANA Cloud. For more information, see [System Privileges \(Reference\)](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-security-guide/system-privileges-reference).
     > -   Parameters with data type cds.LargeBinary are not supported.
     > -   Your remote table must be connected via an SAP HANA smart data access adapter \(used in connections with Data Provisioning option = Direct or Cloud Connector\).
+    > -   Your input parameter must have only one single value of type constant.
 
     Tables that contain input parameters require special treatment in the following situations:
 

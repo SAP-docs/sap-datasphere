@@ -63,12 +63,6 @@ In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Secu
 
 Users are assigned roles in particular spaces via scoped roles. One user may have different roles in different spaces depending on the scoped role they're assigned to. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
-> ### Note:  
-> Please note for SAP Datasphere tenants that were initially provisioned prior to version 2021.03, you need the following additional roles to work with stories:
-> 
-> -   BI Content Creator - Creates and changes stories.
-> -   BI Content Viewer - Views stories.
-
 
 
 <a name="loioa50a51d80d5746c9b805a2aacbb7e4ee__section_wrs_gzw_wtb"/>

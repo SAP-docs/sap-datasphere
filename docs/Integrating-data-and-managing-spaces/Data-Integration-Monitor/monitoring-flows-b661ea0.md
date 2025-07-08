@@ -110,7 +110,7 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-    *Frequency*
+    *Scheduled Frequency*
     
     </td>
     <td valign="top">
@@ -168,7 +168,7 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-    *Next Run*
+    *Scheduled Next Run*
     
     </td>
     <td valign="top">
