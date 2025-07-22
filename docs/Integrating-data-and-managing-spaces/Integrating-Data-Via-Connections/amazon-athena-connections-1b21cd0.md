@@ -4,6 +4,9 @@
 
 Use an *Amazon Athena* connection to access data from Amazon Athena, an interactive query service which can be used to analyze data in Amazon S3 using standard SQL.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loio1b21cd00fa9842f5ba747047b80fe3ab__section_j1b_byq_spb"/>

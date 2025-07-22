@@ -29,6 +29,8 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 
 You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Local Tables, Intelligent Lookups, Data Flows, Replication Flows \(load type *Initial Only*\), and Transformation Flows. You can also include non-repository objects such as SAP HANA Open SQL schema procedures and SAP BW Bridge process chains. In addition, you can nest other existing, locally-created or shared task chains in other task chains, as well as share task chains you've created to other spaces.
 
+n addition to the objects available from the Repository or Others tabs, you can also add two other additional objects to task chains that are only available from the task chain toolbar. The *API Task* object lets you configure and run API asks to access external systems. The *Notification Task* object lets you configure email notification for individual task chain tasks.
+
 > ### Note:  
 > For remote table and view objects included in a task chain, you have the option, by default, to replicate or persist the data associated with the corresponding remote tables or views. Or, you can choose to remove the replicated or persisted data by selecting that option in the *Activities* section of an object’s *Properties* detail display.
 > 
@@ -66,15 +68,18 @@ In addition to working with task chains in the editor, you can also:
     > 
     > From the *Others* tab, you can see the non-repository Open SQL schema procedures and BW Bridge process chains you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md). For more information on adding BW Bridge process chains to a task chain, see [Run BW Bridge Process Chains in a Task Chain](run-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md).
     > 
-    > For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that data will be removed. If the data is being replicated via Real Time Replication, and you choose the *Remove Replicated Data* option, that table's data will also be removed and the object’s data access method will be changed to Remote access. For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
+    > In addition to the objects available from the Repository or Others tabs, you can also add two other additional objects to task chains that are only available from the task chain toolbar. The *API Task* object lets you configure API Tasks to access external systems. \(For more information, see [Run API Tasks in a Task Chain](run-api-tasks-in-a-task-chain-9a8489e.md).\) The *Notification Task* object lets you configure email notification for individual task chain tasks. \(For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).\)
 
-3.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* to place the new object.
+3.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* to place the new object in the linear arrangement of tasks in the task chain, or as a task in parallel with a selected task.
 
     Choosing the *Add as New Task* option automatically connects the new object task to the previous object task. The properties panel for the task chain is also updated with the added objects.
 
+    > ### Note:  
+    > Options on the task chain toolbar in the *Plus Sign* \(*\+*\) menu also let you add new task objects to the task chain. The *Add Placeholder after Selected Task* option places a new task object placeholder in the existing linear arrangement of tasks in the task chain. The *Add Parallel Branch after Selected Task* option places a new task object placeholder in parallel with the currently selected task. For more information on creating task chains with parallel task branches, see [Run Parallel Tasks in a Task Chain](run-parallel-tasks-in-a-task-chain-363ffe9.md).
+
 4.  Continue adding remaining object tasks you want to include in the task chain.
 
-    In addition to adding or replacing object tasks in a task chain, you can drag objects already on the task chain canvas to change the order in which tasks are run.
+    In addition to adding or replacing object tasks in a task chain, you can drag objects already on the task chain canvas to change the order in which tasks are run. By default, tasks in a task chain are displayed in a vertical direction, from top to bottom. On the left side of the task chain toolbar, the *Layout* menu provides options to let you change the orientation of tasks from Top to Bottom \(*Top-Bottom*\) to Left to Right \(*Left-Right*\).
 
 5.  In the properties panel, specify a name for the task chain.
 
@@ -257,7 +262,9 @@ In addition to working with task chains in the editor, you can also:
     </td>
     <td valign="top">
     
-    Activity that will be triggered by the task chain:
+    Activity that will be triggered by the task chain.
+
+    *Repository Objects:*
 
     -   Remote table - Replicate
 
@@ -288,6 +295,16 @@ In addition to working with task chains in the editor, you can also:
     -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, that table's data will be removed. If the data is being replicated via Real Time Replication, the table's data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table log to indicate that the data access type has been changed when the remote table object is run.\)
 
     -   For views, if you choose the *Remove Persisted Data* option, that view's data will be removed.
+
+    *Other \(Non-Repository\) Objects:*
+
+    -   BW Process Chains - Run \(For more information, see [Run BW Bridge Process Chains in a Task Chain](run-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md)\)
+    -   SQL Script Procedures - Run \(For more information, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md)\)
+
+    *Task Chain Toolbar Objects:*
+
+    -   API Tasks - Run \(For more information, see [Run API Tasks in a Task Chain](run-api-tasks-in-a-task-chain-9a8489e.md).\)
+    -   Notification Tasks - Run \(For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).\)
 
 
     

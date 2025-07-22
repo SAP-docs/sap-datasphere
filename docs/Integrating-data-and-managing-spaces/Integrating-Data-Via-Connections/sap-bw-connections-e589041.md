@@ -4,6 +4,9 @@
 
 Use an *SAP BW* connection to access data from virtual tables through RFC for ODP sources \(extractors\) and ABAP Dictionary tables from SAP Business Warehouse \(SAP BW\) or SAP BW∕4HANA systems. For SAP BW systems that don't have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loioe589041e80264f43b6c209c407336376__section_j1b_byq_spb"/>

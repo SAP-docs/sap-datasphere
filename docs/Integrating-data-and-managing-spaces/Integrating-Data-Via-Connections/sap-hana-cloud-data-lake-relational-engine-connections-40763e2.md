@@ -1,8 +1,13 @@
 <!-- loio40763e2e3e33440db0c37f6bcbe650f0 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # SAP HANA Cloud, Data Lake Relational Engine Connections
 
 Use an *SAP HANA Cloud, Data Lake Relational Engine* connection to access table data from the Relational Engine component of a standalone SAP HANA Cloud, data lake.
+
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Business Technology Platform Cockpit. It is composed of the default data lake Files component and the data lake Relational Engine component, and it is not integrated with SAP HANA database. For more information, see [What is SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/a896c6a184f21015b5bcf4c7a967df07/228c19ac890046ecbe8e38a540c0cb6b.html) in the *SAP HANA Cloud, Data Lake* documentation.
 
@@ -86,7 +91,116 @@ Enter the port number. The default port is `443`.
 
 
 
-### Credentials
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to SAP S/4HANA Cloud. 
+
+You can select:
+
+-   *X.509 Client Certificate* \(default value\)
+-   *User Name And Password* for basic authentication
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(X.509 Client Certificate\)
+
+If *Authentication Type* = *X.509 Client Certificate*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Password*
+
+</td>
+<td valign="top">
+
+\[optional\] If the private key is encrypted, enter the password required for decryption.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(User Name and Password\)
+
+If *Authentication Type* = *User Name And Password*:
 
 
 <table>

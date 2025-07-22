@@ -209,6 +209,30 @@ Displays the size of previous versions of the table. This includes files of prev
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Buffer File Count*
+
+</td>
+<td valign="top">
+
+Displays the number of files that are waiting in the buffer to be merged. You may need to manually trigger a merge task and explore why it’s still not merged if you have automated the merge task.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Buffer File Size \(MiB\)*
+
+</td>
+<td valign="top">
+
+Displays the estimation of the size of the files waiting for a merge in the buffer. This size will be added to the total size once the merge is complete.
+
+</td>
+</tr>
 </table>
 
 Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table. From the *Logs* tab, you can see the logs that relate on previous and running actions on your table. From the *Setting* tab you can change the default settings defined for the merge or optimize tasks. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md).

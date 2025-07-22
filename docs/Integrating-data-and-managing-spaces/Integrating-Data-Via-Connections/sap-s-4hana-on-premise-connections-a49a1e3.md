@@ -19,6 +19,9 @@ For information about the required prerequisites in the connected systems and SA
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables, data flows, and model import are not supported.
+
 
 <table>
 <tr>
@@ -907,7 +910,12 @@ Description
 </td>
 <td valign="top">
 
-To enable*Remote Tables*, complete the connection properties in the *Remote Tables* section. 
+To enable*Remote Tables*, complete the connection properties in the *Remote Tables* section.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
+
 
 </td>
 </tr>
@@ -920,6 +928,11 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>
@@ -944,6 +957,9 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 <td valign="top">
 
 To enable *Model Import*, select the live data connection that connects to your SAP S/4HANA system and select a Data Provisioning Agent.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Model import is not supported.
 
 > ### Note:  
 > When the connection is configured for using the ABAP SQL service for data federation with remote tables, you can't use the same connection for model import.

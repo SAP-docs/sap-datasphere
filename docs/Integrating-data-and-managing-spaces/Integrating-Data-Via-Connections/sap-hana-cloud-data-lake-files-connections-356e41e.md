@@ -41,6 +41,9 @@ Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Busine
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
 
 <table>
 <tr>
@@ -214,7 +217,12 @@ Description
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>

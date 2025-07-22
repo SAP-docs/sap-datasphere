@@ -145,8 +145,6 @@ Displays the marketplace visibility of the data provider profile. The visibility
 
 -   *Internal Data Provider*: Data products are visible to only members who belong to systems that have been specified in your contexts and are available in the *Data Products \(Marketplace\)* collection. Data providers can also restrict the visibility to individual users.
 
--   *Formations*: Data products are available to all users in the *Data Products* collection.
-
 
 A data provider can have both public and private visibility options. The internal and formation options cannot be used with the other options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
 
@@ -310,6 +308,18 @@ Contexts
 <td valign="top">
 
 Displays the contexts that the data provider has data products for.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Access
+
+</td>
+<td valign="top">
+
+Displays the license access type for the data product.
 
 </td>
 </tr>

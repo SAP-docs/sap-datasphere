@@ -4,6 +4,9 @@
 
 Use a *Generic OData* connection to access data from an OData service. 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loio5d36f1aae68a4e59989c424a66d948c9__section_j1b_byq_spb"/>

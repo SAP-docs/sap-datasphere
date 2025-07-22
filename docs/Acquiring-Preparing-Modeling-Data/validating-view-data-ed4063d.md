@@ -239,6 +239,24 @@ For example, if a hierarchy node `A` has a parent node `B`, then it may not also
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Missing Hierarchy Nodes
+
+</td>
+<td valign="top">
+
+Available only in views with a *Semantic Usage* of *Fact* that have an association to a dimension that is, in turn, associated to a *Hierarchy with Directory*.
+
+Each hierarchy defined in the hierarchy with directory must provide nodes for all appropriate foreign key values used in records in the fact.
+
+For example, if a fact contains records with the `DE` country code but that code is not present in a hierarchy defined in an associated hierarchy with directory, then any data allocated to `DE` will not appear in aggregations that are viewed using this hierarchy.
+
+This rule can generate files to collect missing nodes and allocate them to an "Unassigned" root node \(see [Collect Unassigned Fact Records for Inclusion in Aggregations and Visualizations](collect-unassigned-fact-records-for-inclusion-in-aggregations-and-visualizations-1fd3f07.md)\).
+
+</td>
+</tr>
 </table>
 
 For information about working with hierarchies, see:

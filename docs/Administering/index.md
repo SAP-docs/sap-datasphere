@@ -16,6 +16,7 @@
     -   [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md)
         -   [Create an OAuth2.0 Client with an Interactive Usage Purpose](Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-an-interactive-usage-purpose-db71f7e.md)
         -   [Create an OAuth2.0 Client with an API Access Purpose](Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-an-api-access-purpose-9850063.md)
+        -   [Create an OAuth2.0 Client with a Technical User Purpose](Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-a-technical-user-purpose-88b1346.md)
         -   [Add a Trusted Identity Provider](Creating-and-Configuring-Your-Tenant/add-a-trusted-identity-provider-ea0688a.md)
     -   [Delete Your Service Instance in SAP BTP](Creating-and-Configuring-Your-Tenant/delete-your-service-instance-in-sap-btp-2665ce1.md)
     -   [Add Scalable Processing Capacity via Elastic Compute Nodes](Creating-and-Configuring-Your-Tenant/add-scalable-processing-capacity-via-elastic-compute-nodes-1f7c181.md)

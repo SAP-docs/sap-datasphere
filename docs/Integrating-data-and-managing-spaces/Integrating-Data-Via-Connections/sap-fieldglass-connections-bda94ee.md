@@ -4,6 +4,9 @@
 
 Use an *SAP Fieldglass* connection to retrieve data from SAP Fieldglass.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loiobda94ee6c9d5403f8556af174399d221__section_yjk_zk5_rrb"/>

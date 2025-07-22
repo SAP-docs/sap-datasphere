@@ -15,9 +15,13 @@ The Identity Provider Administration tool allows system owners to manage the ide
 
 To configure your bundled SAP Cloud Identity Services tenant for your SAP Datasphere tenant:
 
--   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\)
+-   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\).
 -   You must have a S-user with the same email as the system owner of the SAP Datasphere tenant. If you do not have an S-user, click the *Register* button and create a user with email address used by the system owner.
 -   We recommend that the S-user has multi-factor authentication enabled.
+
+> ### Note:  
+> -   SAP Datasphere is hosted on non-SAP data centers, so only available on a Cloud Foundry environment.
+> -   Bundled SAP Cloud Identity Services are only available for public cloud systems, so not available for private cloud \(AliCloud\) or sovereign cloud \(NS2\).
 
 
 

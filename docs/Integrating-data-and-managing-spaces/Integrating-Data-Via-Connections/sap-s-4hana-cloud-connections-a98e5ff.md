@@ -21,6 +21,9 @@ For information about the required prerequisites in the connected systems and SA
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables, data flows, and model import are not supported.
+
 
 <table>
 <tr>
@@ -306,31 +309,41 @@ Description
 <tr>
 <td valign="top">
 
-*X.509 Client Certificate*
+*Certificate*
 
 </td>
 <td valign="top">
 
 To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*X.509 Client Private Key*
+*Private Key*
 
 </td>
 <td valign="top">
 
 To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
+
+
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*X.509 Client Private Key Password*
+*Private Key Password*
 
 </td>
 <td valign="top">
@@ -558,6 +571,9 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 > ### Note:  
 > For federation scenarios, we recommend using the ABAP SQL service \(data provisioning option *Direct*\).
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
 
 
 </td>
@@ -570,7 +586,12 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 </td>
 <td valign="top">
 
-To enable *Model Import*, select a Data Provisioning Agent. 
+To enable *Model Import*, select a Data Provisioning Agent.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Model import is not supported.
+
+
 
 </td>
 </tr>
@@ -582,7 +603,12 @@ To enable *Model Import*, select a Data Provisioning Agent.
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>

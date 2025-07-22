@@ -6,6 +6,9 @@
 
 Use the connection to access objects from an Hadoop Distributed File System \(HDFS\) server. 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loiof9c33566c4eb412d9d36a2f044bb5126__HDFS_usage"/>

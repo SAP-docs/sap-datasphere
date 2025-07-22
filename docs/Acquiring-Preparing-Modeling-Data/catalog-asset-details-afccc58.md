@@ -68,6 +68,18 @@ Displays a summary description of the asset. If you want a more detailed descrip
 <tr>
 <td valign="top">
 
+Extraction system
+
+</td>
+<td valign="top">
+
+Displays the name and type of systems that the asset is extracted from.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Catalog activity
 
 </td>
@@ -192,9 +204,9 @@ Opens a dialog, where you can edit the asset's name and summary description to i
 
 To view the asset's properties that have been extracted from the source system, select *Overview* \> *Source*.
 
-The following table shows some common source properties that are extracted from the source system. Other source properties that are specific to the asset and the source system can also appear within these source properties or under a separate heading for **Additional Source Properties**. For more information about properties not described here, see the documentation for the source system. 
+These properties are separated into the following groups: object properties and extraction system details. The properties that appear are different for each asset. The most common properties you'll see are described in this section. Additional sections for asset properties can appear as needed. For example, the Open Hub Destination \(DEST\) asset from an SAP BW∕4HANA system will have a property group called **Destination Properties**. For details on properties not described here, see the help documentation for the source system.
 
-**Common Source Properties**
+Object properties for an asset can include the following:
 
 
 <table>
@@ -218,74 +230,45 @@ Name
 </td>
 <td valign="top">
 
-The file name of the asset on the source system. The asset name can also include a *Business Name* or a *Technical Name*. For example, assets in SAP Analytics Cloud have one name that appears. Assets in SAP Datasphere have a business name, which is the descriptive name of the asset that helps you identify the asset, and a technical name, which is the name that is used in scripts and code and is synchronized with the business name.
+The file name of the asset on the source system. The name can also include a *Business Name* or a *Technical Name*. For example, assets in SAP Analytics Cloud have one name that appears. Assets in SAP Datasphere have a business name, which is the descriptive name of the asset that helps you identify the asset, and a technical name, which is the name that is used in scripts and code and is synchronized with the business name.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-System Name and Type
+Location on the source system
 
 </td>
 <td valign="top">
 
-The source system name and type of system \(for example, SAP Datasphere or SAP Analytics Cloud\).
+The name of the location where the asset is saved on the source system. This information can be a path name, container name, InfoArea name, or other name where the object is saved on the source system. For example, the container name for assets in SAP Datasphere is the space name. The path name for assets in SAP Analytics Cloud is the folder name.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Created On
-
-</td>
-<td valign="top">
-
-The date and time on which the asset was created on the source system. The name of the user who created the asset is also shown.
+The container can also include a *Container Business Name*. For example, the container business name for assets in SAP Datasphere is a descriptive name for the space. For SAP Datasphere, only information for the space appears.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Changed On
+Description
 
 </td>
 <td valign="top">
 
-The date and time on which the asset was changed on the source system. The name of the user who changed the asset is also shown.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Container Name and Container Business Name
-
-</td>
-<td valign="top">
-
-The location name in the source system where the asset is saved. For example, the container name for assets in SAP Datasphere is the space name. The container name for assets in SAP Analytics Cloud is the parent folder name.
-
-The container can also include a *Container Business Name*. For example, the container business name for assets in SAP Datasphere is a descriptive name for the space.
-
-> ### Note:  
-> For SAP Datasphere, only information for the space appears.
-
-
+The description of the asset as it appears in the source system.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Path
+Source object activity
 
 </td>
 <td valign="top">
 
-The name of the location where the asset is saved on the source system. This information can be a path name, container name, InfoArea name, or other name where the object is saved on the source system.
+The date and time on which the asset was created or changed in the source system. The name of the user who created the asset is also shown.
 
 </td>
 </tr>
@@ -297,11 +280,13 @@ Type
 </td>
 <td valign="top">
 
-Type of container where the asset is saved. The type appears for assets in the SAP Datasphere, and it is always <span class="FPA-icons-V3"></span> Space.
+The type of container where the asset is saved. The type appears for assets in the SAP Datasphere, and it is always <span class="FPA-icons-V3"></span> Space.
 
 </td>
 </tr>
 </table>
+
+Extraction system details for an asset include the source system's instance name and type. For example, the non-technical name given to an SAP Datasphere or SAP Analytics Cloud system.
 
 
 
@@ -319,7 +304,7 @@ You can see a preview of the detailed metadata about the asset by selecting *Ove
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
-In addition to the preview of the detailed metadata, each metadata table has a column for *Related Objects*. If a row has one or more object \(term or KPI\) relationships, a button with the total number of object relationships is displayed. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
+In addition to the preview of the detailed metadata, each metadata table has a column for *Related Objects*. If none of the rows have any object \(term or KPI\) relationships, the column is hidden. After the object relationships are added for one or more rows, the column appears and a button with the total number of object relationships appears for the row. You can select the button to see the relationships for the row. To view the term or KPI details, select the link in the dialog.
 
 ![](images/Asset_Details_-_Related_Object_Popup_8bcfe1a.png)
 

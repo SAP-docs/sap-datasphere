@@ -22,8 +22,8 @@ SAP Business AI is integrated to generate AI content recommendations in various 
 
 -   Your SAP Datasphere tenant is on a landscape that supports SAP Business AI. See SAP Note [0003491182](https://me.sap.com/notes/0003491182).
 -   You've purchased the **SAP AI Units** license. For more information about **SAP AI Units** license, contact your Account Executive.
--   To activate an SAP Business AI feature, you need the tenant administrator role.
--   You could have access to the *AI Services* tab, but it's possible that the tenant has not been activated with SAP Business AI yet, or SAP Business AI features are not supported yet. For more information, see SAP Note [https://me.sap.com/notes/0003522010](https://me.sap.com/notes/https://me.sap.com/notes/0003522010).
+-   To activate an SAP Business AI feature, you need the*DW Administrator* role.
+-   You could have access to the *AI Services* tab, but it's possible that the tenant has not been activated with SAP Business AI yet, or SAP Business AI features are not supported yet. For more information, see SAP Note [0003522010](https://me.sap.com/notes/0003522010).
 
 
 
@@ -42,14 +42,8 @@ SAP Business AI is integrated to generate AI content recommendations in various 
 
 4.  Click *Save*.
 
+5.  Grant the *DW AI Consumer* privilege to users whom you want to access SAP Business AI features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
 
+    Users who have been granted the privilege will see this icon in areas of SAP Datasphere where AI is available for use: <span class="SAP-icons-V5"></span>
 
-
-<a name="loio194ad917defc4979b30bdf6b0dcb522e__postreq_mmz_t1c_tdc"/>
-
-## Next Steps
-
-Grant access to use SAP Business AI features by assigning the *DW AI Consumer* role or another global role that grants the *Data Warehouse AI Consumption* privilege \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
-
-When users have been granted the privilege to SAP Business AI, they will see this icon in areas of SAP Datasphere where AI is available for use: <span class="SAP-icons-V5"></span>
 

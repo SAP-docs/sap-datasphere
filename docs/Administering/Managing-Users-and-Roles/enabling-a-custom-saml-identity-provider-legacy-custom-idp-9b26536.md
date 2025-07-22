@@ -12,12 +12,15 @@ By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also su
 
 ## Prerequisites
 
-SAP Datasphere can be hosted on non-SAP data centers.
+To enable and configure your custom identity provider for your SAP Datasphere tenant:
 
 -   You must have an IdP that supports SAML 2.0 protocol.
 -   You must be able to configure your IdP.
--   You must be the system owner of the SAP Datasphere tenant. For more information see [Transfer the System Owner Role](transfer-the-system-owner-role-b3d19a1.md).
+-   You must have the system owner role for your SAP Datasphere tenant.
 -   If your users are connecting from Apple devices using the mobile app, the certificate used by your IdP must be compatible with Apple's App Transport Security \(ATS\) feature.
+
+> ### Note:  
+> SAP Datasphere is hosted on non-SAP data centers.
 
 
 

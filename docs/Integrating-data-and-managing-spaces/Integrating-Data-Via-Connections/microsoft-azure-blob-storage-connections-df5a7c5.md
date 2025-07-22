@@ -4,6 +4,9 @@
 
 Use the connection to access objects in Microsoft Azure Blob Storage. 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loiodf5a7c56ac21472c973f6fab341f3991__WASB_usage"/>

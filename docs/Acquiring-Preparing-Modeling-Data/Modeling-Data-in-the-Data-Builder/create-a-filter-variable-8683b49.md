@@ -98,6 +98,26 @@ A filter variable refers to an attribute. When a story is opened, the variable d
     <tr>
     <td valign="top">
     
+    Variable filled by
+    
+    </td>
+    <td valign="top">
+    
+    Choose how the variable should be filled:
+
+    -   *Manual Input*
+
+    -   *Derive Value*: Derived variables are hidden in the data preview or in an SAP Analytics Cloud story. See [Derived Variables](derived-variables-82f40f7.md).
+
+    -   *Dynamic Default*: You get a derived value in the parameter dialog list when opening the analytic preview, and in the variable prompt for an SAP Analytics Cloud story. See [Dynamic Default](dynamic-default-2262a45.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Filter Type
     
     </td>

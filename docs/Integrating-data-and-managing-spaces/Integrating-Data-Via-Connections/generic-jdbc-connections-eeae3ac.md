@@ -9,6 +9,9 @@ You can use this connection type to connect to most databases for which SAP Data
 > ### Note:  
 > For information about unsupported data sources, see SAP Note [3130999](https://me.sap.com/notes/3130999).
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loioeeae3aca6d0040149f7b1e658c434f15__section_j1b_byq_spb"/>

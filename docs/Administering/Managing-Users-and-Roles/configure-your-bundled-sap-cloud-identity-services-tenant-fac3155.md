@@ -30,9 +30,13 @@ You provision and configure a bundled SAP Cloud Identity Services tenant for you
 
 To configure your bundled SAP Cloud Identity Services tenant for your SAP Datasphere tenant:
 
--   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\)
+-   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\).
 -   You must have a S-user with the same email as the system owner of the SAP Datasphere tenant. If you do not have an S-user, click the *Register* button and create a user with email address used by the system owner.
 -   We recommend that the S-user has multi-factor authentication enabled.
+
+> ### Note:  
+> -   SAP Datasphere is hosted on non-SAP data centers, so only available on a Cloud Foundry environment.
+> -   Bundled SAP Cloud Identity Services are only available for public cloud systems, so not available for private cloud \(AliCloud\) or sovereign cloud \(NS2\).
 
 
 
@@ -188,6 +192,15 @@ As a prerequisite, an SAP Cloud Identity Services tenant must be provisioned for
 
 You are taken to the *My Tenants* page, and the status of your tenant will be updated.
 
+Identity provisioning is partially configured:
+
+-   Identity authentication is configured as the source system.
+-   SAP Datasphere is partially configured as the target system.
+
+To use identity provisioning, the following steps must be completed: [Identity Provisioning Service - SAP Datasphere](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/sap-datasphere-eb95de0358124c8d944ec0ad190ba905)
+
+You must use an SAP Datasphere OAuth client with the *Client Credentials* grant type. For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md). The *User* and *Password* properties must be updated with the OAuth client credentials.
+
 
 
 <a name="loiofac3155d77154775b919ceba36ffc325__section_xly_x14_sfc"/>
@@ -199,7 +212,7 @@ Once you have created your authentication bundle, you can change the configurati
 1.  In the *My Tenants* page, go to the bundled tenant you want to modify, then select <span class="FPA-icons-V3"></span> ** \> *Configure Authentication*.
 2.  In the *Select User Attribute Type* step, you can change the user attribute type, or enable dynamic user creation.
 3.  Click *Step 2*.
-4.  Go through steps 5-10 of the **Configure Authentication** procedure above.
+4.  Go through the next steps as described the **Configure Authentication** procedure above.
 
 
 
@@ -215,7 +228,8 @@ You can disable your bundled SAP Cloud Identity Services tenant and revert to us
 1.  Sign in to the Identity Provider Administration tool \(see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md)\).
 2.  In the *My Tenants* page, go to the bundled tenant you want to modify, then select <span class="FPA-icons-V3"></span>** \> *Disable Bundling*.
 3.  Select *SAP Cloud Identity \(Default\)* and click *Step 2*.
-4.  Select *Finish* to disable the bundle.
+4.  If users are out-of-sync between SAP Datasphere and your default IdP, click *Synchronize Users*. When the process bar reaches 100%, click *Step 3*.
+5.  Select *Finish* to disable the bundle.
 
 Disabling the bundled SAP Cloud Identity Services tenant can take up to 1 hour to complete. A progress bar will indicate your provisioning status. It will change to a success message once the provisioning is complete.
 
@@ -459,7 +473,7 @@ To establish a trust relationship between your SAML IdP and your SAP Datasphere 
     -   *Custom Authentication User Mapping*: To map to a custom value.
 
         > ### Note:  
-        > If you select this option, there will be a new column named *SAML User Mapping* in *Security* \> *Users*. After switching to your SAP Cloud Identity Services tenant, you must manually update this column for all existing users.
+        > If you select this option, there will be a new column named *SAML User Mapping* in *Security* \> *Users*. After switching to your SAML IdP, you must manually update this column for all existing users.
 
 
 11. \[Optional\] Enable *Dynamic User Creation*.

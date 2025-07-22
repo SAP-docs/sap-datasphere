@@ -91,6 +91,25 @@ For more information, see [Creating a Replication Flow](https://help.sap.com/vie
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+API Tasks
+
+</td>
+<td valign="top">
+
+Allows modelers to add API tasks to task chains. This feature is only available with *Generic HTTP* connections.
+
+For more information, see:
+
+-   [Run API Tasks in a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:
+-   [Generic HTTP Connections](generic-http-connections-b79b865.md)
+
+
+
+</td>
+</tr>
 </table>
 
 > ### Note:  

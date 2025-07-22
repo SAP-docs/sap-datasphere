@@ -4,6 +4,9 @@
 
 Use an *SAP SuccessFactors* connection to access employee-related data in SAP SuccessFactors.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 This topic contains the following sections:

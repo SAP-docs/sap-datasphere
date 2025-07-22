@@ -7,9 +7,9 @@ To connect to remote systems, applications, databases, or storages, SAP Datasphe
 The following connection types are available with SAP Datasphere.
 
 > ### Note:  
-> All connection types are available in spaces with storage type *SAP HANA Database \(Disk and In-Memory\)*.
+> Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
 > 
-> Connection types supporting replication flows additionally are available in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\). Connection Types which do not support replication flows are not available in file spaces.
+> Spaces with storage type *SAP HANA Data Lake Files* \(file spaces\) provide a subset of connection types \(see column *Available in File Spaces* below\). In file spaces, the connection types only support replication flows. Remote tables, data flows, and model import are not supported in file spaces.
 
 ****
 
@@ -23,6 +23,11 @@ Connection Type
 </th>
 <th valign="top">
 
+Supported in File Spaces
+
+</th>
+<th valign="top">
+
 Remote Tables
 
 \(remote access and snapshot or scheduled replication\)
@@ -31,8 +36,6 @@ Remote Tables
 <th valign="top">
 
 Replication Flows
-
-\(connection type is also available in file spaces\)
 
 </th>
 <th valign="top">
@@ -60,6 +63,11 @@ Sources
 <td valign="top">
 
 [Adverity Connections](adverity-connections-63e9ff5.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -101,6 +109,11 @@ Partner Tools
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
@@ -134,6 +147,11 @@ Non SAP
 <td valign="top">
 
 [Amazon Redshift Connections](amazon-redshift-connections-8b13206.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -180,6 +198,11 @@ no
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes \(source and target\)
 
 </td>
@@ -208,6 +231,11 @@ Non SAP
 <td valign="top">
 
 [Apache Kafka Connections](apache-kafka-connections-1992c6b.md)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -251,6 +279,11 @@ Non SAP
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 not applicable
 
 </td>
@@ -286,6 +319,11 @@ not applicable
 <td valign="top">
 
 [Cloud Data Integration Connections](cloud-data-integration-connections-cd33107.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -327,6 +365,11 @@ SAP
 </td>
 <td valign="top">
 
+yes
+
+</td>
+<td valign="top">
+
 no
 
 </td>
@@ -359,7 +402,56 @@ Non SAP
 <tr>
 <td valign="top">
 
+[Generic HTTP Connections](generic-http-connections-b79b865.md)
+
+\[enables API tasks in task chains\]
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+On-Premise, Cloud
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 [Generic JDBC Connections](generic-jdbc-connections-eeae3ac.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -401,6 +493,11 @@ Non SAP
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
@@ -434,6 +531,11 @@ Non SAP
 <td valign="top">
 
 [Generic SFTP Connections](generic-sftp-connections-b645de7.md)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -480,6 +582,11 @@ yes
 </td>
 <td valign="top">
 
+yes
+
+</td>
+<td valign="top">
+
 yes \(target\)
 
 </td>
@@ -508,6 +615,11 @@ Non SAP
 <td valign="top">
 
 [Google Cloud Storage Connections](google-cloud-storage-connections-aec242c.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -559,6 +671,11 @@ no
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
@@ -582,6 +699,11 @@ Non SAP
 <td valign="top">
 
 [Microsoft Azure Blob Storage Connections](microsoft-azure-blob-storage-connections-df5a7c5.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -628,6 +750,11 @@ no
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes \(source and target\)
 
 </td>
@@ -656,6 +783,11 @@ Non SAP
 <td valign="top">
 
 [Microsoft Azure SQL Database Connections](microsoft-azure-sql-database-connections-46343fc.md)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -693,6 +825,11 @@ Non SAP
 <td valign="top">
 
 [Microsoft SQL Server Connections](microsoft-sql-server-connections-a13c8ab.md)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -744,6 +881,11 @@ no
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
@@ -767,6 +909,11 @@ SAP
 <td valign="top">
 
 [Oracle Connections](oracle-connections-c73ae06.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -808,6 +955,11 @@ Non SAP
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 \*
 
 </td>
@@ -841,6 +993,11 @@ Partner Tools
 <td valign="top">
 
 [SAP ABAP Connections](sap-abap-connections-a75c1aa.md)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -882,6 +1039,11 @@ SAP
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes \(including real-time replication\*\*\)
 
 </td>
@@ -917,6 +1079,11 @@ SAP
 [SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "You can use SAP BW bridge to model objects and import them into SAP Datasphere.") :arrow_upper_right:
 
 \[generated and only available within an SAP BW bridge space if SAP BW bridge has been provisioned\]
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -973,6 +1140,11 @@ no
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
@@ -991,6 +1163,11 @@ SAP
 <td valign="top">
 
 [SAP ECC Connections](sap-ecc-connections-e546ccd.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -1032,6 +1209,11 @@ SAP
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes \(including real-time replication\*\*\)
 
 </td>
@@ -1065,6 +1247,11 @@ SAP
 <td valign="top">
 
 [SAP HANA Connections](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -1106,6 +1293,11 @@ SAP
 </td>
 <td valign="top">
 
+yes
+
+</td>
+<td valign="top">
+
 no
 
 </td>
@@ -1139,6 +1331,11 @@ SAP
 <td valign="top">
 
 [SAP HANA Cloud, Data Lake Relational Engine Connections](sap-hana-cloud-data-lake-relational-engine-connections-40763e2.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -1180,6 +1377,11 @@ SAP
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes \(including real-time replication\*\*\)
 
 </td>
@@ -1213,6 +1415,11 @@ SAP
 <td valign="top">
 
 [SAP SuccessFactors Connections](sap-successfactors-connections-39df020.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -1254,6 +1461,11 @@ SAP
 </td>
 <td valign="top">
 
+yes
+
+</td>
+<td valign="top">
+
 yes \(including real-time replication\*\*\)
 
 </td>
@@ -1287,6 +1499,11 @@ SAP
 <td valign="top">
 
 [SAP S/4HANA On-Premise Connections](sap-s-4hana-on-premise-connections-a49a1e3.md)
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">

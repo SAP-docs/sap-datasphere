@@ -4,6 +4,9 @@
 
 Use the connection to connect to and access data from an Oracle database \(on-premise\). 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 This topic contains the following sections:

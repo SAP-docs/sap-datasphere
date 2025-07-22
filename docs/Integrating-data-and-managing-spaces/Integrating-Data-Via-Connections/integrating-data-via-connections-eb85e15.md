@@ -149,69 +149,22 @@ Select one or more filter values to restrict the connection list according to yo
 
 The following filter categories and values are available:
 
+-   *Features* that a connection type supports
+    -   *Data Flows*
+    -   *Model Import*
+    -   *Remote Tables*
+    -   *Replication Flows*
+    -   *API Tasks*
 
-<table>
-<tr>
-<th valign="top">
+-   *Categories* that the corresponding source belongs to
+    -   *Cloud*
+    -   *On-Premise*
 
-Filter Category
+-   *Sources* that you would like to connect
+    -   *Non-SAP*
+    -   *Partner Tools*
+    -   *SAP*
 
-</th>
-<th valign="top">
-
-Values
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-*Features* that a connection type supports
-
-</td>
-<td valign="top">
-
-*Data Flows*
-
-*Model Import*
-
-*Remote Tables*
-
-*Replication Flows*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Categories* that the corresponding source belongs to
-
-</td>
-<td valign="top">
-
-*Cloud*
-
-*On-Premise*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Sources* that you would like to connect
-
-</td>
-<td valign="top">
-
-*Non-SAP*
-
-*Partner Tools*
-
-*SAP*
-
-</td>
-</tr>
-</table>
 
 
 

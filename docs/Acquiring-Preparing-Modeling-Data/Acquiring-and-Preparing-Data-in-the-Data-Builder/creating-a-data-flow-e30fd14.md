@@ -40,6 +40,8 @@ In addition to working with flows in the editor, you can also:
     > -   Data flow currently doesn't support double quotes in column names, table names, owners, or other identifiers. If the source or target operators in a data flow contains double quotes, we recommend you to create a view in the source or in SAP Datasphere that renames the columns containing double quotes.
     > 
     > -   Data flows don't support spatial data type columns.
+    > 
+    > -   If you have a source connected via a FlowAgent or an SAP HANA smart data integration connector, and you want to load a CSV file, note that values that cannot be converted to their assigned datatype, such as numeric fields with leading zeroes, will be considered invalid by the service and will be replaced by null. For more information, see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md).
 
 3.  Transform your data using one or more operators:
 

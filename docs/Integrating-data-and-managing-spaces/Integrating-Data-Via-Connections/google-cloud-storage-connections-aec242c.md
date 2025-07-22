@@ -6,6 +6,9 @@
 
 Use the connection to connect to and access objects from Google Cloud Storage.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 This topic contains the following sections:

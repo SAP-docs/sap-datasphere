@@ -8,21 +8,19 @@ Adverity provides connectivity to a variety of data sources, including marketing
 
 When creating a connection to a partner tool, an Open SQL schema is generated in SAP Datasphere. To be able to send data to the Open SQL schema, the IP addresses of the partner tool need to be added to the SAP Datasphere IP allowlist, and during connection creation the partner tool on their side needs to establish a connection to the schema.
 
-For more information, see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md).
+For more information, see:
 
+-   [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)
+-   [Prepare Connectivity to Adverity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right:
 
-
-<a name="loio63e9ff5825384a03979666dbc3e715f2__section_j1b_byq_spb"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to Adverity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right: 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 
 
 <a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_usage"/>
 
-## Using the Connection
+## Supported Features
 
 The connection type supports creating views and entity-relationship models.
 
@@ -30,7 +28,7 @@ The connection type supports creating views and entity-relationship models.
 
 <a name="loio63e9ff5825384a03979666dbc3e715f2__section_nrb_hcc_x4b"/>
 
-## Configuring Partner Connection
+## Configuring the Partner Connection
 
 
 

@@ -438,7 +438,7 @@ For more information about the supported use cases depending on the connection t
         </td>
         <td valign="top">
         
-        For accessing data using CDS view extraction:
+        If you are connecting to an SAP S/4HANA system without DMIS add-on installed \(for accessing data using CDS view extraction\):
 
         -   DHAMB\_ – *Prefix*
 
@@ -447,7 +447,7 @@ For more information about the supported use cases depending on the connection t
         -   RFC\_FUNCTION\_SEARCH
 
 
-        For accessing data based on tables with SAP LT Replication Server:
+        If you are connecting to an ABAP-based system with DMIS add-on installed \(for accessing data based on tables with SAP LT Replication Server\):
 
         -   LTAMB\_ – *Prefix*
 
@@ -456,7 +456,7 @@ For more information about the supported use cases depending on the connection t
         -   RFC\_FUNCTION\_SEARCH
 
 
-
+        For more information, see SAP Note [2835207](https://me.sap.com/notes/2835207).
         
         </td>
         </tr>

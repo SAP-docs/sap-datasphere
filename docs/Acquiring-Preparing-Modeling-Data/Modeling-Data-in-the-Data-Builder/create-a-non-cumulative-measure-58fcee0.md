@@ -149,7 +149,7 @@ For example the measure can describe items in stock in a warehouse, or the bank 
     </td>
     <td valign="top">
     
-    You can define an exception aggreagtion to define how the time dimension is to be aggregated.Allowed values are FIRST, LAST, MAX, MIN, SUM, AVERAGENULL, COUNTNULL.
+    You can define an exception aggreagtion to define how the time dimension is to be aggregated.Allowed values are FIRST, LAST, MAX, MIN, SUM, AVERAGENULL, COUNTNULL, FIRST OF DIMENSION, AVERAGE OF DIMENSION, and LAST OF DIMENSION.
     
     </td>
     </tr>

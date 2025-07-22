@@ -131,7 +131,7 @@ SimbaODBCDriverforGoogleBigQuery\_3.0.0.1001-Linux.tar.gz \(SHA256 fingerprint: 
 </td>
 <td valign="top">
 
-`https://cloud.google.com/bigquery/providers/simba-drivers`
+`https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_3.0.0.1001-Linux.tar.gz`
 
 </td>
 </tr>
@@ -168,6 +168,9 @@ Perform the following steps before creating the first Amazon Redshift, Oracle, o
 4.  Choose *Upload*.
 
 5.  Choose <span class="FPA-icons-V3"></span> sync to synchronize the driver with the underlying component. Wait for about 5 to 10 minutes to finish synchronization before you start creating connections or using data flows with the connection.
+
+    > ### Note:  
+    > If the connection still doesn't work after uploading the driver, try syncing the driver again.
 
 
 

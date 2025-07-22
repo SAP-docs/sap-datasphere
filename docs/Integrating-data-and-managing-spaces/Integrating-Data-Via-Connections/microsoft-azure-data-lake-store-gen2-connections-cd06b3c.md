@@ -6,6 +6,9 @@
 
 Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 \(ADL Gen2\). 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 This topic contains the following sections:
@@ -333,7 +336,7 @@ Enter the client ID.
 <tr>
 <td valign="top">
 
-*X.509 Client Certificate*
+*Certificate*
 
 </td>
 <td valign="top">
@@ -345,7 +348,7 @@ To upload the certificate or certificate chain that is used to authenticate to t
 <tr>
 <td valign="top">
 
-*X.509 Client Private Key*
+*Private Key*
 
 </td>
 <td valign="top">

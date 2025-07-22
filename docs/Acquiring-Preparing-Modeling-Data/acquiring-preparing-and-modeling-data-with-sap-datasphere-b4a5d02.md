@@ -4,7 +4,7 @@
 
 # Acquiring, Preparing, and Modeling Data with SAP Datasphere
 
-Users with a modeler role can bring data into the *Data Builder*, combine it \(including with external data from the *Data Marketplace*\) and prepare it for consumption in SAP Analytics Cloud and other BI clients either directly or after further modeling in the *Business Builder*.
+Users with a modeler role can bring data into the *Data Builder*, combine it, and prepare and model it for consumption in SAP Analytics Cloud and other BI clients.
 
 > ### Tip:  
 > The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:

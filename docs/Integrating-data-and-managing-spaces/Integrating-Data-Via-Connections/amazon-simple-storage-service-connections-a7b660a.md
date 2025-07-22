@@ -4,6 +4,9 @@
 
 Use an *Amazon Simple Storage Service* connection to connect to and access data from objects in Amazon S3 buckets. 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 This topic contains the following sections:

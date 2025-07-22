@@ -29,7 +29,7 @@ Drag a source from the *Source Browser* and drop it onto a source or other node 
 
 3.  Select your object and drag it over a source or other node in the diagram. When the target node is highlighted green, drop the new source to create a join.
 
-    ![](images/GIF_2025_-_Filter_Data_in_a_Graphical_View_ec7ca34.gif) The source is added to the diagram and it is joined to the target node. The join symbol is selected and its properties are displayed in the side panel. A projection node is added after the join node to remove any duplicate columns.
+    ![](images/GIF_2025_-_Create_a_Join_in_a_Graphical_View_f42193e.gif) The source is added to the diagram and it is joined to the target node. The join symbol is selected and its properties are displayed in the side panel. A projection node is added after the join node to remove any duplicate columns.
 
     > ### Note:  
     > If you choose a table or view from the *Sources* tab, it is automatically imported into the repository and deployed, and will be available on the *Repository* tab for future use by you or others.

@@ -15,6 +15,9 @@ You create an OAuth2.0 Client with an *API Access* purpose:
 -   To use the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
 -   To transport content through SAP Cloud Transport Management \(see [Transporting Your Content through SAP Cloud Transport Management](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right:\).
 
+> ### Note:  
+> An *API Access* purpose provides tenant-wide privileges. To limit users’ access to specific spaces, consider using an OAuth client with a *Technical User* purpose.
+
 
 
 ## Procedure

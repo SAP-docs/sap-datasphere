@@ -22,6 +22,9 @@ For information about the required prerequisites, see [Prepare Connectivity to S
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables and data flows are not supported.
+
 
 <table>
 <tr>
@@ -207,36 +210,34 @@ Description
 <tr>
 <td valign="top">
 
-*X.509 Client Certificate*
+*Certificate*
 
 </td>
 <td valign="top">
 
 To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*X.509 Client Private Key*
+*Private Key*
 
 </td>
 <td valign="top">
 
 To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
 
-*X.509 Client Private Key Password*
 
-</td>
-<td valign="top">
-
-\[optional\] If the private key is encrypted, enter the password required for decryption.
 
 </td>
 </tr>
@@ -367,6 +368,9 @@ For more information about the use cases for the options, see [Remote Tables in 
 </tr>
 </table>
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
 
 
 </td>
@@ -379,7 +383,12 @@ For more information about the use cases for the options, see [Remote Tables in 
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>
@@ -706,36 +715,34 @@ Description
 <tr>
 <td valign="top">
 
-*X.509 Client Certificate*
+*Certificate*
 
 </td>
 <td valign="top">
 
 To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*X.509 Client Private Key*
+*Private Key*
 
 </td>
 <td valign="top">
 
 To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
 
-*X.509 Client Private Key Password*
 
-</td>
-<td valign="top">
-
-\[optional\] If the private key is encrypted, enter the password required for decryption.
 
 </td>
 </tr>
@@ -888,6 +895,9 @@ For more information about the use cases for the options, see [Remote Tables in 
 </tr>
 </table>
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
 
 
 </td>
@@ -900,7 +910,12 @@ For more information about the use cases for the options, see [Remote Tables in 
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
+*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>

@@ -83,6 +83,9 @@ A CSN \(Core Data Services Schema Notation\) file contains only the definition o
 
     -   Any simple types contained in the file. These types will be available for selection as a *Data Type* for columns. You cannot delete or modify simple types within SAP Datasphere.
 
+    > ### Note:  
+    > You can only import content into a space with the appropriate storage type. Objects exported from a disk space cannot be imported into a file space and vice versa.
+
     The objects are imported to the space. If you are in an entity-relationship model, the imported objects are added to the diagram.
 
     > ### Note:  

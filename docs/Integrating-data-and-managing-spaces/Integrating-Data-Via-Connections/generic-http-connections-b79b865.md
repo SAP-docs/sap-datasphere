@@ -1,41 +1,49 @@
-<!-- loiocd33107246f446628f9baff56faf5a1b -->
+<!-- loiob79b865e64794c7abcd12a54f2f73c8c -->
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Cloud Data Integration Connections
+# Generic HTTP Connections
 
-Use a *Cloud Data Integration* connection to access data from SAP cloud applications which provide OData-based APIs for data integration and have a Cloud Data Integration \(CDI\) provider service implemented.
+Use a *Generic HTTP* connection to connect to an external system via HTTP and run external REST-based API tasks in task chains.
 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 
 
-<a name="loiocd33107246f446628f9baff56faf5a1b__section_j1b_byq_spb"/>
+<a name="loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_usage"/>
 
-## Prerequisites
-
-See: [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b6fd8def1c00408e9c5e34efb897aa31.html "To be able to successfully validate and use a Cloud Data Integration connection for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+## Supported Features
 
 
+<table>
+<tr>
+<th valign="top">
 
-<a name="loiocd33107246f446628f9baff56faf5a1b__CDI_usage"/>
+Feature
 
-## Using the Connection
+</th>
+<th valign="top">
 
-The connection type supports the remote table as well as the data flow feature.
+Additional Information
 
-Supported data access methods for remote tables:
+</th>
+</tr>
+<tr>
+<td valign="top">
 
--   Remote
--   Replication \(snapshot\)
--   Replication \(real-time\)
+API Tasks
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+</td>
+<td valign="top">
+
+See [Run API Tasks in a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:.
+
+</td>
+</tr>
+</table>
 
 
-
-<a name="loiocd33107246f446628f9baff56faf5a1b__section_nrb_hcc_x4b"/>
 
 ## Configuring Connection Properties
 
@@ -60,30 +68,48 @@ Description
 <tr>
 <td valign="top">
 
-*URL*
+*Host*
 
 </td>
 <td valign="top">
 
-Enter the URL with the following syntax: <code><i class="varname">&lt;protocol&gt;</i>://<i class="varname">&lt;host&gt;</i><i class="varname">&lt;service path&gt;</i></code> 
-
-Protocol: HTTP or HTTPS. The default value is HTTPS.
-
-Host: Host for accessing the cloud OData service
-
-Service path: Relative path \(without host and port\) to the Cloud Data Integration service endpoint \(where the CDI provider service is running at the cloud provider side\). The value must start with a forward slash \( / \).
+Enter the host name or IP address of the HTTP server.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Root Path*
+*Port*
 
 </td>
 <td valign="top">
 
-\[optional\] Enter the root path name to restrict browsing to a certain CDI namespace or provider.
+Enter the port number for the HTTP server.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Protocol*
+
+</td>
+<td valign="top">
+
+Select the protocol to use for connecting to the server: HTTP or HTTPS \(default value\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Path*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter a path prefix to the API endpoint. For example, `/api/xyz`.
 
 </td>
 </tr>
@@ -115,7 +141,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source. The default is *false*. 
 
 </td>
 </tr>
@@ -211,84 +237,15 @@ Description
 </td>
 <td valign="top">
 
-Select the authentication type to use to connect to the Cloud Data Integration service endpoint. 
+Select the authentication type to use to connect to the HTTP server. 
 
 You can select:
 
--   *X.509 Client Certificate*
--   *OAuth 2.0*
+-   *OAuth 2.0* \(default value\)
 -   *User Name And Password* for basic authentication
 -   *No Authentication* for no authentication
 
-The default is *X.509 Client Certificate*.
 
-</td>
-</tr>
-</table>
-
-
-
-### Credentials \(X.509 Client Certificate\)
-
-If *Authentication Type* = *X.509 Client Certificate*:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Property
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-*Certificate*
-
-</td>
-<td valign="top">
-
-To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
-
-> ### Note:  
-> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Private Key*
-
-</td>
-<td valign="top">
-
-To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
-
-> ### Note:  
-> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Private Key Password*
-
-</td>
-<td valign="top">
-
-\[optional\] If the private key is encrypted, enter the password required for decryption.
 
 </td>
 </tr>
@@ -326,6 +283,7 @@ Select the grant type.
 
 You can select:
 
+-   *Client Credentials with X.509 Client Certificate*
 -   *Client Credentials*
 -   *User Name and Password*
 
@@ -377,7 +335,7 @@ Enter the OAuth resource.
 </td>
 <td valign="top">
 
-Select the OAuth response type. The values are *token* or *none*.
+Select the OAuth response type. The values are *Token* or *None*.
 
 </td>
 </tr>
@@ -389,7 +347,65 @@ Select the OAuth response type. The values are *token* or *none*.
 </td>
 <td valign="top">
 
-Select the value for the content-type HTTP header that the application must use when requesting a token. The values are *URLEncoded* or *JSON*.
+Select the value for the content-type HTTP header that the application must use when requesting a token. The values are *URL Encoded* or *JSON*.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(OAuth 2.0 with X.509 Client Certificate\)
+
+If *Authentication Type* = *Client Credentials with X.509 Client Certificate* and *OAuth Grant Type* = *OAuth 2.0*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*X.509 Client Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
 </td>
 </tr>
@@ -399,7 +415,7 @@ Select the value for the content-type HTTP header that the application must use 
 
 ### Credentials \(OAuth 2.0\)
 
-If *OAuth Grant Type* = *Client Credentials*:
+If *Authentication Type* = *Client Credentials with X.509 Client Certificate* and *OAuth Grant Type* = *Client Credentials*:
 
 
 <table>
@@ -441,7 +457,7 @@ Enter the client secret.
 </tr>
 </table>
 
-If *OAuth Grant Type* = *User Name And Password*:
+If *Authentication Type* = *Client Credentials with X.509 Client Certificate* and *OAuth Grant Type* = *User Name and Password*:
 
 
 <table>
@@ -478,6 +494,30 @@ Enter the name of the OAuth user.
 <td valign="top">
 
 Enter the OAuth password.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client Secret*
+
+</td>
+<td valign="top">
+
+Enter the client secret.
 
 </td>
 </tr>
@@ -533,7 +573,5 @@ Enter the password for authentication.
 
 ### Features
 
-To enable *Remote Tables*, select a Data Provisioning Agent.
-
-*Data Flows* are enabled without the need to set any additional connection properties.
+*API Tasks* are enabled without the need to set any additional connection properties. If the external system is an on-premise system, make sure you have maintained the properties in the *Cloud Connector* section.
 

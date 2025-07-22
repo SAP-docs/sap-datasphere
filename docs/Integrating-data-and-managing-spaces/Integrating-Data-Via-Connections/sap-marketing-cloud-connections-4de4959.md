@@ -4,6 +4,9 @@
 
 Use an *SAP Marketing Cloud* connection to access data from SAP Marketing Cloud via its OData-based APIs for data integration and SAP HANA Smart Data Integration.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loio4de4959620c24d12a53a3cc357d3e003__section_j1b_byq_spb"/>

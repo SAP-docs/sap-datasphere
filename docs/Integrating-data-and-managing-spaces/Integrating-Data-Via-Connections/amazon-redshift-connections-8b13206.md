@@ -4,6 +4,9 @@
 
 Use an *Amazon Redshift* connection to access data from Amazon Redshift 8.x databases. 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loio8b132061d4e149d9a16b3576dda1f613__section_j1b_byq_spb"/>

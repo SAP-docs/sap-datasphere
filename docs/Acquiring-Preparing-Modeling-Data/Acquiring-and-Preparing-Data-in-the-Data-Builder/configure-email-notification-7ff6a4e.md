@@ -4,14 +4,22 @@
 
 # Configure Email Notification
 
-After creating and deploying a task chain, set up email notification of users for completion of task chain runs.
+Set up email notification of users for completion of task chain runs and, optionally, additional notification for completion of individual tasks in the task chain.
+
+
+
+<a name="loio7ff6a4e584a345a88d002c18c1fc321e__prereq_fxg_y22_xfc"/>
+
+## Prerequisites
+
+You need to first deploy a task chain before you can set up email notification for its successful completion or failure. After setting up notification for the entire task chain run, you may also configure additional notifications for completion of individual tasks run within the task chain. For each of these additional notifications you can specify the subject and message body, however, these individual task notifications will reuse the email recipient list set up for notification of the complete task chain's run. To add these additional notifications, you can drag the Notification Task object \(<span class="SAP-icons-V5"></span>\) from the task chain toolbar to anywhere within the sequence of tasks already included in a task chain. You can then define the subject and message for this specific task notification within the *Email Notifications* section of the task chain's *Properties* panel.
+
+> ### Note:  
+> The DW Integrator role is required to set up email notification for completion of task chain runs. The *Email Notifications* section of the task chain's *Properties* panel will not appear if you do not have this privilege assigned. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. In addition to the DW Integrator role, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members.
 
 
 
 ## Context
-
-> ### Note:  
-> The DW Integrator role is required to set up email notification for completion of task chain runs. The *Email Notifications* section of the task chain *Properties* panel will not appear if you do not have this privilege assigned. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. In addition to the DW Integrator role, when setting up email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members.
 
 For security and data privacy reasons, when you export a task chain to a CSN/JSON file, the recipient list for email notification is not exported. For more information on exporting objects, see [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md). Similarly, when you transport a task chain to another tenant, the recipient list for email notification is also not exported to the new tenant. For more information on transfering content between tenants, see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:.
 
@@ -35,7 +43,7 @@ For security and data privacy reasons, when you export a task chain to a CSN/JSO
     The notification setup includes a default template you can customize for both the email message subject and body text. You can choose to send notifications to other tenant users or specify email addresses of other users to receive notifications \(up to 20 recipients total\). Email addresses must be in the same domain as the tenant owner.
 
     > ### Note:  
-    > Task chains must also first be deployed before you can select or specify users to receive notifications.
+    > Task chains must also first be deployed before you can select or specify recipients to receive notifications. After setting up notification for the entire task chain run, you may also configure additional notifications for completion of individual tasks run within the task chain by dragging the Notification Task object \(<span class="SAP-icons-V5"></span>\) from the toolbar to anywhere within the sequence of tasks already included in a task chain. For each of these additional notifications you can specify the subject and message body, however, these individual task notifications will reuse the email recipient list set up for notification of the complete task chain's run. After creating a recipient list, you can even turn off notifications for the whole task chain afterwards and any notification tasks you've defined will still send out their notifications.
 
 2.  Click the <span class="SAP-icons-V5"></span> link on the right side of the *Recipient Email Address* field to open a popup dialog in which you can add recipients of task chain notification email messages.
 
@@ -52,5 +60,9 @@ For security and data privacy reasons, when you export a task chain to a CSN/JSO
 
     > ### Note:  
     > Changes you make to the email notification template are saved when you redeploy the updated task chain that has email notification subject and body text template changes. When the task chain is run and notification emails are sent out, placeholder variables in the notification template will be replaced with actual values available at runtime.
+
+4.  After setting up notification for the entire task chain run, you may also configure additional notifications for completion of individual tasks run within the task chain by dragging the Notification Task object \(<span class="SAP-icons-V5"></span>\) from the toolbar to anywhere within the sequence of tasks already included in a task chain.
+
+    For each of these additional notifications you can specify the subject and message body, however, these individual task notifications will reuse the email recipient list set up for notification of the complete task chain's run.
 
 

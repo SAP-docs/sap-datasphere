@@ -75,6 +75,10 @@ Space administrators can integrate data from other sources:
 
 SAP and our partners provide business content to support end-to-end business scenarios for various industries and lines of business via the Content Network and our [Community Content](https://github.com/SAP-samples/analytics-cloud-datasphere-community-content) site \(see [Importing SAP and Partner Business Content from the Content Network](importing-sap-and-partner-business-content-from-the-content-network-400078d.md)\).
 
+You can move your own content from tenant to tenant via the *Transport* app \(see [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\).
+
+We also support direct import and export of many objects via CSN file \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
+
 
 
 <a name="loio8f98d3c917f94452bafe288055b60b35__section_dacs"/>

@@ -55,16 +55,11 @@ This API uses SCIM 2.0. For more information, see [SCIM Core Schema](https://too
 Beforehand you can log in with a Oauth client, a user with the administrator role must create an OAuth2.0 client in your SAP Datasphere tenant and provide you with the OAuth client ID and secret parameters.
 
 > ### Note:  
-> The OAuth client must be configured with the following properties:
+> The OAuth client must be configured with one of the following purposes:
 > 
-> -   *Purpose*: *API Access*
+> -   *API Access* purpose with *User Provisioning* access and *Client Credentials*authorization grant \(see [Create an OAuth2.0 Client with an API Access Purpose](../Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-an-api-access-purpose-9850063.md).\)
 > 
-> -   *Access*: *User Provisioning*
-> 
-> -   *Authorization Grant*: *Client Credentials*
-> 
-> 
-> See [Create an OAuth2.0 Client with an API Access Purpose](../Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-an-api-access-purpose-9850063.md).
+> -   *Technical User* purpose \(see [Create an OAuth2.0 Client with a Technical User Purpose](../Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-a-technical-user-purpose-88b1346.md)\).
 
 To log in to the OAuth client, send a GET \(or POST\) request with the following elements:
 

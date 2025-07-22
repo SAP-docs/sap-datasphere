@@ -168,6 +168,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
 
     -   If the space does not exist in your tenant and you have the *Spaces.Create* permission, then you are invited to create it by default.
     -   You cannot "merge" content from two or more spaces included in your package. You must select a separate space for each space listed.
+    -   You can only import content into a space with the appropriate storage type. Objects exported from a disk space cannot be imported into a file space and vice versa.
 
     > ### Note:  
     > Choosing space mappings is only possible if the source objects for any shared objects are included in the package. For example if your package contains shared objects in `Space A` that have been shared from `Space B`, then the source objects from `Space B` must be included in the package. If the sources of any shared objects cannot be resolved in the package, then the package must be imported into spaces with the same technical names as the spaces listed in the package.

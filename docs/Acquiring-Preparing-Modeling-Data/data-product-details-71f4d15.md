@@ -509,7 +509,7 @@ Select an action:
 -   *Install*: Opens the *Import Entities* wizard. Follow the steps to import entities from the data product to your space on the local SAP Datasphere system.
 -   *Uninstall*: Opens a dialog, where you select a space to uninstall the data product. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
-The actions to install or uninstall data products are only available in the SAP Datasphere catalog. Also, these actions appear based on the privileges that are assigned to you \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
+The actions to install or uninstall data products appear based on the privileges that are assigned to you \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\). 
 
 </td>
 </tr>

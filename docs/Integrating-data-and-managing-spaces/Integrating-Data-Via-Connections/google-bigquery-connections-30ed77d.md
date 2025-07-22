@@ -21,6 +21,9 @@ For information about the required prerequisites, see [Prepare Connectivity to G
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables and data flows are not supported.
+
 
 <table>
 <tr>
@@ -199,7 +202,12 @@ Description
 </td>
 <td valign="top">
 
-*Remote Tables* are enabled without the need to set any additional connection properties. 
+*Remote Tables* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
+
 
 </td>
 </tr>
@@ -211,7 +219,12 @@ Description
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>

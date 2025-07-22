@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Performing Data Deletion for Local Tables
+# Controlling Deletion of Local Table Records
 
 Delete records for local tables, on-demand, using filter conditions or using a schedule.
 
@@ -138,7 +138,7 @@ You define a filter and based on this filter, the records will be deleted. Note 
 > ### Note:  
 > Click *Show Preview* to preview records that match the filter criteria and will be deleted. You must have the role *DW Integrator* or *DW Modeler* to preview the data.
 
-
+If your filter is defined on a column where values are of data type 'Date” or “Datetime', you can add other filtering options. See the section below **Additional Filter Options for Data Type "Date" or "Datetime"**
 
 </td>
 </tr>
@@ -210,6 +210,210 @@ Click *Delete Records* to delete records based on your selection.
 
 
 
+<a name="loio2a59b7142e1b4d478b0bf4063084261e__section_nzx_zsp_vfc"/>
+
+## Additional Filter Options for Data Type "Date" or "Datetime"
+
+If you are filtering on a column that has values of data type "Date" or "Datetime", you can refine your filter with additional options:
+
+**Additional Filtering Options**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Filter
+
+</th>
+<th valign="top">
+
+Comment
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Older than X Days*
+
+</td>
+<td valign="top">
+
+A single number.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Date*
+
+</td>
+<td valign="top">
+
+A single date value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*From/To*
+
+</td>
+<td valign="top">
+
+From <Start Date\> to To <End Date\>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*From*
+
+</td>
+<td valign="top">
+
+All the dates after <Date\>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*To*
+
+</td>
+<td valign="top">
+
+All the dates until <To\>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*\[DateTime only\] From/To \(Date and Time\)*
+
+</td>
+<td valign="top">
+
+From <Start Date\> to To <End Date\>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*\[DateTime only\] From \(Date and Time\)*
+
+</td>
+<td valign="top">
+
+All the dates after <Date\>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*\[DateTime only\] To \(Date and Time\)*
+
+</td>
+<td valign="top">
+
+All the dates until <To\>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Year to Date*
+
+</td>
+<td valign="top">
+
+From the start of the current year until today.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Date to Year*
+
+</td>
+<td valign="top">
+
+From today until the end of the year.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Last X Minutes / Hours / Day /Weeks/ Months / Quarters / Years*
+
+</td>
+<td valign="top">
+
+X minutes \[DateTime only\]/hours \[DateTime only\]/days/weeks/months/quarters/years before now.
+
+> ### Note:  
+> You can add an option to include/exclude the current period.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Next X Minutes / Hours / Day /Weeks/ Months / Quarters / Years*
+
+</td>
+<td valign="top">
+
+X minutes \[DateTime only\]/hours\[DateTime only\]/days/weeks/months/quarters/years from now.
+
+> ### Note:  
+> You can add an option to include/exclude the current period.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Today +X / -Y Days*
+
+</td>
+<td valign="top">
+
+Y days before today to X days after today.
+
+</td>
+</tr>
+</table>
+
+> ### Caution:  
+> If you automate the data deletion with a schedule, the current date will be used as the basis for calculating the filters.
+> 
+> **For example: You created a schedule on May 24, 2025 to delete the records based on the following filter:**
+> 
+> -   **Column: "Creation Date"**
+> -   **Filter Option: "Year to Date"**
+> 
+> The filter will consider deleting records from January 1st 2025 to May 24th.
+> 
+> But if you edit the schedule on June 24, 2025, the filter will be updated to delete data from January 1st 2025 to June 24th 2025.
+
+
+
 <a name="loio2a59b7142e1b4d478b0bf4063084261e__section_gkg_3cm_ncc"/>
 
 ## Data Deletion Schedules
@@ -248,8 +452,6 @@ Description
 
 </td>
 <td valign="top">
-
-e
 
 Displays the type of deletion you applied on your table.
 

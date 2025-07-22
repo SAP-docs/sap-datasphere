@@ -6,9 +6,6 @@ The value of a variable can be derived through a lookup entity.
 
 The lookup entity can be any table or view. Derivation will always derive a single variable value only. Derived variables are not shown in the variable screen, as the value is retrieved by the system.
 
-> ### Note:  
-> Variable derivation is only supported for *Standard Variables* and*Reference Date Variables*.
-
 You can use the derivation, for example, to look up the currency for a respective country. The lookup entity provides the data for country/currency.
 
 Using derived variables has the following advantages:

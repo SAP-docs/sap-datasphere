@@ -4,6 +4,9 @@
 
 Use an *SAP ECC* connection to access data from virtual tables through RFC for ODP sources \(extractors\) and ABAP Dictionary tables from[SAP ERP Central Component \(SAP ECC\)](https://help.sap.com/docs/SAP_ERP) systems \(on-premise\). For source systems that don't have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loioe546ccd61af54bf49a0f531a43fe0961__section_j1b_byq_spb"/>
@@ -18,7 +21,7 @@ See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/935116dd7c324
 
 ## Using the Connection
 
-The connection type supports the remote table as well as the data flow feature.For more information, see [eb85e157ab654152bd68a8714036e463.md\#loioeb85e157ab654152bd68a8714036e463\_\_section\_connection\_features](integrating-data-via-connections-eb85e15.md#loioeb85e157ab654152bd68a8714036e463__section_connection_features).
+The connection type supports the remote table as well as the data flow feature.For more information, see [Features Supported by Connections](features-supported-by-connections-505bf40.md).
 
 > ### Note:  
 > This connection type doesn't support replication flows. Instead, we recommend using the *SAP ABAP* connection type for replication flows.

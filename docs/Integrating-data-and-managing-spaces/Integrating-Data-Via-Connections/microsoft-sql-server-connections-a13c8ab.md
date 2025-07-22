@@ -19,6 +19,9 @@ For more information about the required prerequisites, see [Prepare Connectivity
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables and data flows are not supported.
+
 
 <table>
 <tr>
@@ -382,6 +385,11 @@ Description
 
 To enable *Remote Tables*, select a Data Provisioning Agent.
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
+
+
 </td>
 </tr>
 <tr>
@@ -393,6 +401,11 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 <td valign="top">
 
 *Data Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>

@@ -26,6 +26,18 @@ Import a `.csv` file to create a table and fill it with the data from the file.
     > ### Note:  
     > The file must have the extension `*.csv` and contain Unicode text only. The file size must not exceed 25 MB.
 
+    > ### Caution:  
+    > If you have a source connected via a FlowAgent or an SAP HANA smart data integration connector, you may consider the following while loading a CSV file: Values that cannot be converted to their assigned datatype, such as numeric fields with leading zeroes, will be considered invalid by the service and will be replaced by null. If you are creating a flow, this does not prevent you to run and deploy it.
+    > 
+    > For scenarios where fields contain numeric values with leading zeros, you can follow these steps to import them successfully:
+    > 
+    > 1.  Ensure the field containing zero value is imported as a string type.
+    > 2.  Connect the source operator to a projection operator.
+    > 3.  In the projection operator, create a new calculated column.
+    > 4.  Set the column’s properties to use the field with leading zeroes and set its type to "decimal" with appropriate precision/scale.
+    > 5.  Map the projected column to the target table.
+    > 6.  Validate the output using data preview before running the import.
+
 3.  Review the following options, and then click *Upload* to open your file in SAP Datasphere:
 
 

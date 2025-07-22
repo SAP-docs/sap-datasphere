@@ -28,7 +28,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 Before creating your data access control, you must have prepared a permissions entity with the following columns:
 
--   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity Authentication is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your identity provider (IdP).") :arrow_upper_right:\). This column must be selected as the *Identifier Column* in your data access control.
+-   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). This column must be selected as the *Identifier Column* in your data access control.
 
     > ### Note:  
     > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.

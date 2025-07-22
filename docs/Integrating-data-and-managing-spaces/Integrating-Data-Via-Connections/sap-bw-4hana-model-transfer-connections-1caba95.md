@@ -4,6 +4,9 @@
 
 Use an *SAP BW/4HANA Model Transfer* connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loio1caba954bc604e00bf8e82e383a46368__section_j1b_byq_spb"/>

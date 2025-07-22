@@ -118,18 +118,30 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > Local tables \(file\) support a limited number of data types. For more information, see [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
 5.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. For more information, see [Creating a Python Operator](creating-a-python-operator-a747acf.md).
-6.  Add a target table. For more information, see [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
+6.  \[optional\] Add incremental aggregations to the target table. It is useful for handling incremental data loads and maintaining aggregated results efficiently:
+
+    1.  Click the target node to display its properties in the side panel. In the *Incremental Aggregation* section, click *Edit Aggregation*.
+    2.  In the *Incremental Aggregation* dialog are listed all aggregations with numerical data types. You can define the aggregation types LAST \(default\), SUM, or COUNT.
+    3.  Click *Save*. You can see the updated columns in the *Incremental Aggregations* section.
+
+    > ### Note:  
+    > -   LAST refers to the latest operations applied on the row.
+    > -   Columns with non-numerical aggregation types can only have the type LAST.
+    > -   In the case the row is deleted on the source delta table, the row will be available in the target table and the aggregated values are then set to 0.
+    > -   If incremental aggregation is enabled, the input DataFrame for the Python script will include the previous versions of the data for updates.
+
+7.  Add a target table. For more information, see [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
     > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
 
-7.  Review the properties of your transformation flow, save and deploy it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
+8.  Review the properties of your transformation flow, save and deploy it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
 
     > ### Note:  
     > The transformation will be saved in the object store. While deploying, a virtual procedure will be created to enable the runtime in the file space.
 
-8.  You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
-9.  More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*:
+9.  You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
+10. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*:
 
     -   Simulate a run that doesn't save changes in the target table by clicking *Simulate Run*. Simulating allows you to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to deploy the flow, resolve errors, or to optimize the flow to improve performances.
     -   Download a PLV file of a visual map of the operators and their relationships and hierarchies by clicking *Generate a SQL Analyzer Plan File*. The plan file contains detailed information about your data model that you can download for further analysis. Analyzing this file allows you to resolve errors and enhance the transformation flow performances.

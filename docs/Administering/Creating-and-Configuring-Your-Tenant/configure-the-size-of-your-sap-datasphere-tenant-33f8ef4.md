@@ -138,6 +138,18 @@ Enable this option to access the SAP HANA Automated Predictive Library \(APL\) a
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Enable SAP HANA Multi-Availability Zones*
+
+</td>
+<td valign="top">
+
+Enable this option to access SAP HANA multi-availability zones and to provide a synchronous replica in a different region. The second availability zone provides a high-availability setup for the SAP Datasphere runtime SAP HANA Cloud. To use this feature, SAP HANA Cloud must have a minimum of 64 GB of memory configured.
+
+</td>
+</tr>
 </table>
 
 **Additional Configuration**

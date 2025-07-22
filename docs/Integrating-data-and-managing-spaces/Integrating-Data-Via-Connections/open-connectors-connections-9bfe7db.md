@@ -4,6 +4,9 @@
 
 Use an *Open Connectors* connection to access data from sources that are connected to the SAP Open Connectors account that is integrated with your space. 
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 
 
 <a name="loio9bfe7db51216449d985a0b59f5e181c4__section_nts_j2p_spb"/>
