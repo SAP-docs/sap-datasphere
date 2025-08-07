@@ -124,11 +124,10 @@ For more information, see [Creating a Local Table from a CSV File](https://help.
 
 ## Action in *Views*
 
-The monitor displays the views in 3 tabs:
+The monitor displays the views in 2 tabs:
 
 -   *All Views*: It displays all the deployed views that have been created in the *Data Builder* for the current space.
--   *Scheduled* \(default\): It displays the views for which a schedule is defined to persist the data.
--   *Persisted*: It displays the views already persisted.
+-   *Views with Runs and Persisted Views*: \(default\) It displays the views that have been run and the views already persisted.
 
 You can perform the following actions \(might depend on your role and privilege, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right::
 
@@ -242,7 +241,7 @@ Information
 <tr>
 <td valign="top">
 
-*Technical Name \(or Business Name\)* 
+*Object \(Business Name\)* 
 
 </td>
 <td valign="top">
@@ -377,9 +376,36 @@ Displays the name of the schedule owner.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Last Run Start*
+
+</td>
+<td valign="top">
+
+Displays when the last scheduled run has started \(data and time\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Last Run Duration*
+
+</td>
+<td valign="top">
+
+Displays how long the task will run.
+
+</td>
+</tr>
 </table>
 
 You can personalize the columns you want to display clicking on :gear:
+
+> ### Note:  
+> If you have more than 1000 views in a space, you will move to viewing the technical name by default for optimal performance. You may change back to the business name, but this may slow down performance.
 
 
 

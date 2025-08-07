@@ -80,9 +80,7 @@ You can use the connection to add source and target objects to a replication flo
 </table>
 
 > ### Note:  
-> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\).
-> 
-> Whether you use the same connection or two separate connections, we strongly recommend using only remote tables or only replication flows for replicating data from a dedicated source object, but not both. Generally, for replication scenarios, we recommend to use replication flows.
+> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\). Generally, for replication scenarios, we recommend to use replication flows.
 
 <a name="loio27aebc8432aa419da75c5fc650981f24"/>
 

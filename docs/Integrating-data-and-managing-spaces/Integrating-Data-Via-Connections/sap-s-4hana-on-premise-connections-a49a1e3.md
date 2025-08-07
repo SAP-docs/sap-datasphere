@@ -57,6 +57,9 @@ You can access the following data:
 
 -   for federation and replication: \(**legacy**\)
 
+    > ### Note:  
+    > This legacy option is still supported, however we recommend using the ABAP SQL service for federation \(if available\) and replication flows for replication.
+
     -   Data from virtual tables through RFC for ODP sources \(extractors\):
 
         -   Extraction context *ABAP\_CDS* provides access to ABAP Core Data Services \(CDS\) Views that include the annotation `@Analytics.dataextraction.enabled: true`
@@ -90,9 +93,6 @@ You can access the following data:
 
 
     Real-time replication is supported for ODP sources. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
-    > ### Note:  
-    > This legacy option is still supported, however we recommend using the ABAP SQL service for federation \(if available\) and replication flows for replication.
 
 
 
@@ -171,7 +171,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow.
+You can use the connection to add source objects to a replication flow.\(**recommended for replication scenarios**\)
 
 You can replicate the following data:
 
@@ -193,9 +193,7 @@ You can replicate the following data:
 </table>
 
 > ### Note:  
-> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\).
-> 
-> Whether you use the same connection or two separate connections, we strongly recommend using only remote tables or only replication flows for replicating data from a dedicated source object, but not both. Generally, for replication scenarios, we recommend to use replication flows.
+> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\). Generally, for replication scenarios, we recommend to use replication flows.
 
 
 
@@ -697,6 +695,9 @@ Enter the client secret to authenticate SAP Datasphere to the SAP S/4HANA system
 
 
 ### Remote Tables
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
 
 
 <table>

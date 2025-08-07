@@ -6,6 +6,19 @@ To be able to successfully validate and use a connection to SAP S/4HANA Cloud, c
 
 
 
+This topic contains the following sections:
+
+-   [Remote Tables](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_rt)
+-   [Data Flows](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_df)
+-   [Replication Flows](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_rf)
+-   [Model Import](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_mt)
+-   [X.509 Client Certificates](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_X509)
+
+> ### Note:  
+> The same communication user must be added to all communication arrangements you're using for the connection.
+
+
+
 <a name="loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_rt"/>
 
 ## Remote Tables
@@ -68,9 +81,6 @@ Before you can use the connection for replication flows, the following is requir
         -   [Integrating CDS Views Using SAP Datasphere](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation
 
 
-    > ### Note:  
-    > The same communication user must be added to all communication arrangements you're using for the connection.
-
 -   If you want to use RFC fast serialization for your replication flows, see SAP Note [3486245](https://me.sap.com/notes/3486245).
 
 
@@ -101,9 +111,37 @@ Before you can use the connection for model import, the following is required:
         For more information, see [Integrating SAP Data Warehouse Cloud](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/8b0662cbc94940b98d8bb6f0696ccfa4.html) in the *SAP S/4HANA Cloud* documentation.
 
 
-    > ### Note:  
-    > The same communication user must be added to all communication arrangements you're using for the connection.
 
+
+
+<a name="loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_X509"/>
+
+## X.509 Client Certificates
+
+To set up certificate-based authentication, the following is required:
+
+1.  A client certificate has been created by:
+    1.  Creating a private key and signing request \(using openssl, for example\).
+    2.  Signing the certificate by one of the approved certificate authorities \(CAs\) \(see SAP Note [2801396](https://me.sap.com/notes/2801396)\).
+    3.  Converting the certificate file into Privacy-enhanced Mail \(PEM\) format if it is not yet in PEM format \(using openssl, for example\).
+
+2.  In the SAP S/4HANA Cloud system, the certificate has been uploaded to the communication user.
+
+    For more information, see [How to Create Communication Users](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/0377adea0401467f939827242c1f4014.html) in the *SAP S/4HANA Cloud Public Edition* documentation.
+
+3.  In the SAP S/4HANA Cloud system, the communication user has been added to the communication system on the *Users for Inbound Communication* tab with *SSL Client Certificate* authentication.
+
+    For more information, see [How to Create Communication Systems](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/1bfe32ae08074b7186e375ab425fb114.html) in the *SAP S/4HANA Cloud Public Edition* documentation.
+
+4.  In the SAP S/4HANA Cloud system, the required communication arrangements have been created with the communication system and user above.
+
+    For more information, see [How to Create Communication Users](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/0377adea0401467f939827242c1f4014.html) in the *SAP S/4HANA Cloud Public Edition* documentation.
+
+
+For more information, see the blog [Beyond Basic \(2\): Certificate-Based Authentication in SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/beyond-basic-2-certificate-based-authentication-in-sap-s-4hana-cloud-public/ba-p/13644334) \(published in April 2024\).
+
+> ### Note:  
+> Authentication with X.509 client certificate is not supported for federated access with remote tables using the ABAP SQL service.
 
 **Related Information**  
 

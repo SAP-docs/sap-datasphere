@@ -170,7 +170,7 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
 > ### Note:  
 > In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Manage Scoped Roles via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/85085a35a58a4589bc121fb94efc4876.html "Users with a DW Administrator role (or with equivalent privileges) can create, read, update, and delete scoped roles via the command line.") :arrow_upper_right:\).
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Click <span class="FPA-icons-V3"></span> \(Add Role\) and select *Create a Scoped Role*.
 
     > ### Note:  
@@ -235,6 +235,7 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
 5.  Select the role template, which can either be a standard role template or a custom role and click *Save*.
 
 6.  As your scoped role inherits privileges from the template you've chosen, you cannot edit the privileges, except for the one privilege *Scoped Role User Assignment* \(Manage\). If you're creating a scoped role for space administration purposes, you should select this privilege that allows to manage user assignment in a space.
+7.  Save the new scoped role.
 
 You can then assign spaces and users to the new scoped role. The spaces and users must be created beforehand and you must assign spaces before assigning users to them.
 
@@ -307,9 +308,6 @@ To add users to a scoped role, the users must be created beforehand.
 > ### Restriction:  
 > A user can be assigned to a maximum of 100 spaces across all scoped roles.
 
-> ### Note:  
-> In the *Users* page, you can filter users and spaces to see for example to which spaces and roles a user is assigned to.
-
 Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
@@ -321,6 +319,6 @@ Once you've assigned a user to a space with the DW Space Administrator role via 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
 2.  Click *Users*. All user assignements are displayed in the *Users* page.
 
-3.  Check the relevant rows \(a row corresponding to a combination of one user and one space\) and click the garbage icon. The users cannot access the spaces they were previously assigned to in the scoped role.
+3.  Check the relevant rows \(a row corresponding to a combination of one user and one space\) and click :wastebasket:. The users cannot access the spaces they were previously assigned to in the scoped role.
 
 

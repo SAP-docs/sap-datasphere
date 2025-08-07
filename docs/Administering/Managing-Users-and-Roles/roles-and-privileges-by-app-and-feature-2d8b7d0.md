@@ -194,7 +194,7 @@ In addition, the following sub-tools require the *Catalog Administrator* role:
 
 :convenience_store: \(*Data Marketplace*\)
 
-See [Purchasing Data from Data Marketplace](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4096fb8c97dd4d84a7200941c1721368.html "Users with a modeler role can purchase external data from the Data Marketplace to combine with and enrich their internal data.") :arrow_upper_right:
+See  <?sap-ot O2O class="- topic/xref " href="4096fb8c97dd4d84a7200941c1721368.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/pug1751957928638/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/2d8b7d04dcae402f911d119437ce0a74.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">
@@ -344,8 +344,8 @@ Data access control editor
 
 See:
 
--   [Acquiring Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
--   [Preparing Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
+-   [Acquiring Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+-   [Preparing Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
 -   [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with a modeler role can add semantic information to their entities and combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, Microsoft Excel, and other clients, apps, and tools.") :arrow_upper_right:
 -   [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:
 
@@ -694,7 +694,7 @@ Users with different roles have different levels of access to the *Space Managem
 
 -   A user with a space administrator role has *Spaces* `(-RUD----)` permissions. They can see all the space properties, and edit those outside the *General Settings* and *Workload Management* sections.
 
--   A user with an administrator role has *Spaces* `(CRUD---M)` permissions. They can create spaces and edit some space properties, including modifying the storage allocated and the space priority.
+-   A user with an administrator role has *Spaces* `(C------M)` permissions. They can create spaces and edit some space properties, including modifying the storage allocated and the space priority.
 
 
 Various privileges and permissions are required to see and edit different parts of the *Space Management* tool:
@@ -1968,7 +1968,7 @@ All roles
 
 ## The Command Line Interface
 
-To use the command line interface \(see [Manage Spaces via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "Users with an administrator role can use the datasphere command line interface to create, read, update, and delete spaces. Users with a space administrator role can update some space properties, add (or remove) users, database users and HDI containers, and delete spaces.") :arrow_upper_right:\), a user must have the following standard role or a custom role containing the listed privileges:
+To use the command line interface \(see [Manage Spaces and Space Access via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "Users with an administrator role can use the datasphere command line interface to create, read, update, and delete spaces. Users with a space administrator role can update some space properties, add (or remove) users, database users and HDI containers, and delete spaces.") :arrow_upper_right:\), a user must have the following standard role or a custom role containing the listed privileges:
 
 
 <table>

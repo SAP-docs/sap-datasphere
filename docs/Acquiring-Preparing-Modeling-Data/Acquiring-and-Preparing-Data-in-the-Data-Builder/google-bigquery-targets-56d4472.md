@@ -37,20 +37,13 @@ The *Delete All Before Loading* setting is not available.
 
 The target container is a Google BigQuery **dataset**.
 
+Tables and column names must have valid names, containing letters, numbers and underscores \(\_\) only.
+
 
 
 <a name="loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetTables"/>
 
 ## Target Tables
-
-Target table names may only contain the following special characters:
-
--   Hyphen \(-\)
-
--   Underscore \(\_\)
-
--   Space \( \)
-
 
 The maximum length for target column names is 300 characters.
 

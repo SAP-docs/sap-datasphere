@@ -302,7 +302,7 @@ A custom identity provider is a separate solution, like for example Azure AD, an
     When dynamic user creation is enabled, new users will be automatically created and assigned the default role and will be able to use SAML SSO to log onto SAP Datasphere. Once the users are created, you can assign roles using SAML attributes \(see [Assign Users to a Role Using SAML Attributes](assign-users-to-a-role-using-saml-attributes-3315711.md)\).
 
     > ### Note:  
-    > Automatic user deletion is not supported. If a user in SAP Datasphere is removed from your SAML IdP, you must go to *Security* \> *Users* and manually delete users. For more information, see [Delete Users](delete-users-3ceb94c.md).
+    > Automatic user deletion is not supported. If a user in SAP Datasphere is removed from your SAML IdP, you must go to *Security* \> *Users* and manually delete users. For more information, see [Delete a User](delete-a-user-3ceb94c.md).
     > 
     > If this option is enabled, dynamic user creation still occurs in SAP Datasphere even when SAML user attributes have not been set for all IdP users. To prevent a user from being automatically created, your SAML IdP must deny the user access to SAP Datasphere.
 

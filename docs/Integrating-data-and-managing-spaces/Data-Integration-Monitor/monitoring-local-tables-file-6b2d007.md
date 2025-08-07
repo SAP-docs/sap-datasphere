@@ -188,12 +188,14 @@ Displays the size used by the active records only.
 <tr>
 <td valign="top">
 
-*Total Table File Storage \(MiB\)*
+*Total Storage \(MiB\)*
 
 </td>
 <td valign="top">
 
-Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\) and space required for administrative information.
+Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\), and space required for administrative information. The size of the inbound buffer \(temporary storage of incoming data, usually empty\) is shown separately. The sum of both numbers is the actual size of the table. 
+
+If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -205,7 +207,7 @@ Displays the total size of the table. This includes files containing the active 
 </td>
 <td valign="top">
 
-Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* .
+Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* . For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
 
 </td>
 </tr>

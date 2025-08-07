@@ -66,7 +66,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     </td>
     <td valign="top">
     
-    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with the DW Administrator role (administrators) can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
+    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
     
     </td>
     </tr>

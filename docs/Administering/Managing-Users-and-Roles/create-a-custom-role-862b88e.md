@@ -4,17 +4,11 @@
 
 # Create a Custom Role
 
-You can create a custom role using either a blank template or a standard role template and choosing privileges and permissions as needed. 
+You can create a custom role, using either a blank template or a standard role template, choosing privileges and permissions as needed.
 
 
 
-<a name="loio862b88eed50244049d41361ba3290456__prereq_yst_nqr_vnb"/>
-
-## Prerequisites
-
-To create a custom role, you need the DW Administrator role.
-
-
+<a name="loio862b88eed50244049d41361ba3290456__section_ct1_g1l_1gc"/>
 
 ## Context
 
@@ -29,7 +23,7 @@ You should not mix global and scoped privileges in a custom role.
 
 -   If you include a scoped privilege in a custom role that you create for global purposes, the privilege is ignored.
 
--   If you include a global privilege in a custom role that you want to use as a template for a scoped role, the privilege is ignored .
+-   If you include a global privilege in a custom role that you want to use as a template for a scoped role, the privilege is ignored.
 
 
 > ### Note:  
@@ -39,12 +33,12 @@ For more details about global and scoped privileges, see [Privileges and Permiss
 
 
 
-## Procedure
+<a name="loio862b88eed50244049d41361ba3290456__section_prc_t1l_1gc"/>
 
-1.  Go to <span class="FPA-icons-V3"></span> \(*Expand*\)** \> **<span class="FPA-icons-V3"></span> \(*Security*\)** \> **<span class="FPA-icons-V3"></span> \(*Roles*\).
+## Create a Custom Role
 
-2.  To create a custom role, click <span class="FPA-icons-V3"></span> \(Add Role\) and select *Create a Custom Role*.
-
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+2.  Click <span class="FPA-icons-V3"></span> \(Add Role\) and select *Create a Custom Role*.
 3.  In the *Create a New Role* dialog, complete the following properties:
 
 
@@ -100,21 +94,18 @@ For more details about global and scoped privileges, see [Privileges and Permiss
     </table>
     
 4.  Click *Create*.
-
 5.  Select a role template.
 
     The role templates are the predefined standard roles associated with the SAP Datasphere license type. If you wish to create a role without extending a predefined standard role, choose the blank template. After you select a template, a page opens showing you the individual permissions assigned to the privileges that have been defined for the role template you chose.
 
-6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app, or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share, and manage\) represent the actions a user can perform.For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
-
+6.  Select the permissions for your new role for every privilege type. The permission privileges represent an area, app, or tool in SAP Datasphere while the permissions \(create, read, update, delete, execute, maintain, share, and manage\) represent the actions a user can perform. For more details about global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
 7.  \[optional\] If you want to change the role template that your new custom role will be based on, select <span class="FPA-icons-V3"></span> \(*Select Template*\), and choose a role.
-
 8.  \[optional\] To define the custom role as a default role, which will be assigned to all new users when no other role is assigned to them, select :gear:\(*Role Configuration*\) and select the option *Use as Default Role*.
 
     > ### Note:  
     > The option *Enable Self-Service* is not relevant for SAP Datasphere.
 
-9.  Save your new custom role.
+9.  Save the new custom role.
 
     > ### Note:  
     > You can assign the role to a user from the *Users* page or - only if you've created a custom role for global purposes \(and not for space-related purposes\) - from the *Roles* page. Whether you create users first or roles first does not matter. See [Assign Users to a Role](assign-users-to-a-role-57a7880.md).

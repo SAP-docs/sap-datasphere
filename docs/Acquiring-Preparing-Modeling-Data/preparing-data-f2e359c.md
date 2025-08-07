@@ -2,18 +2,18 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Preparing Data in the Data Builder
+# Preparing Data
 
 Users with a modeler role can use views and intelligent lookups in the *Data Builder* to combine, clean, and otherwise prepare data.
 
 This topic contains the following sections:
 
--   [Combine, Filter, and Enrich Data with Views](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_views)
--   [Transform Data \(Including Delta Change Support\) with Transformation Flows](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_transformation_flows)
--   [Combine Data via Match Rules in an Intelligent Lookup](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_intelligent_lookups)
--   [Browse the Catalog for Trusted Data Assets](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_catalog)
--   [Visualize and Understand the Dependencies Between Objects](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_er_models)
--   [Create Objects and Act On Existing Objects](preparing-data-in-the-data-builder-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_tools)
+-   [Combine, Filter, and Enrich Data with Views](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_views)
+-   [Transform Data \(Including Delta Change Support\) with Transformation Flows](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_transformation_flows)
+-   [Combine Data via Match Rules in an Intelligent Lookup](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_intelligent_lookups)
+-   [Browse the Catalog for Trusted Data Assets](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_catalog)
+-   [Visualize and Understand the Dependencies Between Objects](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_er_models)
+-   [Create Objects and Act On Existing Objects](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_tools)
 
 For information about identifying the semantic usage of your entities and modeling them for consumption, see [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 

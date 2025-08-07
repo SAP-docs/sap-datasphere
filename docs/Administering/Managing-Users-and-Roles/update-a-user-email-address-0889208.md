@@ -34,7 +34,7 @@ When you create a user, you must add an email address. The email address is used
 **Related Information**  
 
 
-[Create a User](create-a-user-58d4b24.md "You can create individual users in SAP Datasphere.")
+[Create a User](create-a-user-58d4b24.md "You can create individual users in SAP Datasphere and assign them to roles.")
 
 [Import or Modify Users from a File](import-or-modify-users-from-a-file-b2698da.md "You can create users or batch-update existing users by importing user data that you have saved in a CSV file.")
 

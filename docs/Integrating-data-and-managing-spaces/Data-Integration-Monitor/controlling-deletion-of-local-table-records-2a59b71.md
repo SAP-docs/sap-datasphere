@@ -295,7 +295,7 @@ All the dates until <To\>.
 <tr>
 <td valign="top">
 
-*\[DateTime only\] From/To \(Date and Time\)*
+**\[DateTime only\]***From/To***\(Date and Time\)**
 
 </td>
 <td valign="top">
@@ -307,7 +307,7 @@ From <Start Date\> to To <End Date\>.
 <tr>
 <td valign="top">
 
-*\[DateTime only\] From \(Date and Time\)*
+**\[DateTime only\]** *From* **\(Date and Time\)**
 
 </td>
 <td valign="top">
@@ -319,7 +319,7 @@ All the dates after <Date\>.
 <tr>
 <td valign="top">
 
-*\[DateTime only\] To \(Date and Time\)*
+**\[DateTime only\]** *To* **\(Date and Time\)**
 
 </td>
 <td valign="top">

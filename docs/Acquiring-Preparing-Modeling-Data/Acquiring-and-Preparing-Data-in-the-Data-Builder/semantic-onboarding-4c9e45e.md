@@ -18,7 +18,7 @@ This topic contains the following sections:
 
 Users with the *DW Modeler* role \(or equivalent privileges\) can use the *Import Entities* wizard to import semantically-rich objects from your SAP S/4HANA Cloud, SAP S/4HANA on-premise, SAP BW∕4HANA, and SAP BW bridge connections. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
 
-Click a tile to open the *Import Entities* wizard for that connection type \(see [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)\).
+Click a tile to open the *Import Entities* wizard for that connection type \(see [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)\).
 
 Each tile shows the total number of connections of that type available to you across all the spaces you have access to. If you do not have access to a particular type of connection, you must create it or ask a colleague space administrator or integrator to do so:
 
@@ -53,5 +53,5 @@ For more information, see [Importing SAP and Partner Business Content from the C
 
 Users with the *DW Modeler* role \(or equivalent privileges\) can acquire data products from data providers and import them into their space to combine with internal data.
 
-Click a tile to open the context in the data marketplace \(see [Searching and Browsing](searching-and-browsing-2dfea3a.md)\).
+Click a tile to open the context in the data marketplace \(see  <?sap-ot O2O class="- topic/xref " href="2dfea3aaf20844268dd8ecdb008a992d.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/pug1751957928638/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/4c9e45e19ff14271a65f883e30023736.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
 

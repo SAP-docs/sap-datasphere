@@ -8,7 +8,7 @@ When an intelligent application is installed, data is loaded from the source sys
 
 ## Installation and Data Ingestion
 
-![](images/BDC_diagram_-_with_DBX_only_insight_apps_9d8148a.png)
+![](images/Install_Intelligent_Applications_9d8148a.png)
 
 Data is loaded from the source system into SAP Datasphere, where the following spaces are created:
 

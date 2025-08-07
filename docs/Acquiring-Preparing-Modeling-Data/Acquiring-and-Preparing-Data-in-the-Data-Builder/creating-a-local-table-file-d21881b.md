@@ -127,6 +127,22 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     <tr>
     <td valign="top">
     
+    Allow Data Transport
+    
+    </td>
+    <td valign="top">
+    
+    \[dimensions only\] Enables users to include the table data when transporting the table in a repository package. 
+
+    This feature is intended to allow you to transport data for static or slowly changing dimensions and can only be used to initialize data when importing the table for the first time.
+
+    See [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Storage
     
     </td>

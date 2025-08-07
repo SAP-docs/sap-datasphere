@@ -120,7 +120,7 @@ Delete users
 </td>
 <td valign="top">
 
-[Delete Users](delete-users-3ceb94c.md)
+[Delete a User](delete-a-user-3ceb94c.md)
 
 </td>
 </tr>

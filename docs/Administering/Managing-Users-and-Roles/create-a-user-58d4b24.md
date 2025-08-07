@@ -4,13 +4,13 @@
 
 # Create a User
 
-You can create individual users in SAP Datasphere.
+You can create individual users in SAP Datasphere and assign them to roles.
 
 
 
-<a name="loio58d4b24f766c4879b71c33f8e8dd5da8__prereq_lkd_3n1_jhb"/>
+<a name="loio58d4b24f766c4879b71c33f8e8dd5da8__context_mgz_hjz_1fb"/>
 
-## Prerequisites
+## Context
 
 You can select one or more roles while you're creating the user. Before getting started creating users, you might want to become familiar with the global roles and scoped roles. You can still assign roles after you've created the users.
 
@@ -41,7 +41,7 @@ Global Roles
 </td>
 <td valign="top">
 
-A role that enables users assigned to it to perform actions that are not space-related, typically a role that enables to administrate the tenant. A standard or custom role is considered as global when it includes global privileges.
+A role that enables users assigned to it to perform actions that are not space-related, typically a role that enables them to administer the tenant. A standard or custom role is considered as global when it includes global privileges.
 
 </td>
 <td valign="top">
@@ -69,19 +69,13 @@ A role that inherits a set of scoped privileges from a standard or custom role a
 </tr>
 </table>
 
-
-
-<a name="loio58d4b24f766c4879b71c33f8e8dd5da8__context_mgz_hjz_1fb"/>
-
-## Context
-
 The method described here assumes that SAP Datasphere is using its default authentication provider. If you are using a custom SAML Identity Provider, you must provide slightly different information, depending upon how your SAML authentication is configured.
 
 
 
 ## Procedure
 
-1.  Go to <span class="FPA-icons-V3"></span> \(*Expand*\)** \> **<span class="FPA-icons-V3"></span> \(*Security*\)** \> **<span class="FPA-icons-V3"></span> \(*Users*\).
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
 2.  Select <span class="FPA-icons-V3"></span> \(New\) to add a new user to the user management table.
 

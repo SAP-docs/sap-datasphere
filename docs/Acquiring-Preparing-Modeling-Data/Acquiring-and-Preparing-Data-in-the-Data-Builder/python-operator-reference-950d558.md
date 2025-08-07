@@ -287,8 +287,8 @@ Dec 9, 2005
 > 
 > def transform(data):
 > 	data['current_timestamp']=time.strftime('%Y-%m-%d %H:%M:%S')
-> 	data[‘employee_rating’]= [random.randint(1,5) for _ in range(len(data))]
-> 	data[‘day_of_the_week’]=data['date_of_joining’].apply(lambda x:calendar.day_name[dateutil.parser.parse(x).weekday()]) 
+> 	data['employee_rating']= [random.randint(1,5) for _ in range(len(data))]
+> 	data['day_of_the_week']=data['date_of_joining'].apply(lambda x:calendar.day_name[dateutil.parser.parse(x).weekday()]) 
 > 	return data
 > ```
 

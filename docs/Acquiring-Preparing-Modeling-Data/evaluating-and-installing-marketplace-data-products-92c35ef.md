@@ -148,7 +148,7 @@ Objects from the data product are created and deployed in the space you selected
 
 -   In the *Repository Explorer*, select the space where the data product was installed to. When you find the objects from the data product, you can use them in a new or existing project as a source.
 
-    For example, in the *Data Builder*, you use the objects from the data product to create a graphical view. For information on preparing data in the *Data Builder*, see [Preparing Data in the Data Builder](preparing-data-in-the-data-builder-f2e359c.md).
+    For example, in the *Data Builder*, you use the objects from the data product to create a graphical view. For information on preparing data in the *Data Builder*, see [Preparing Data](preparing-data-f2e359c.md).
 
 -   In the catalog, users will be able to discover the objects. Select the *Assets* collection and use the filters or the search to find the objects. The objects are discoverable only if authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for objects is extracted automatically, as a scheduled task, by a background process, or manually. These different methods help you ensure that the content in the catalog is up-to-date.") :arrow_upper_right:.
 

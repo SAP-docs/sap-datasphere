@@ -49,6 +49,7 @@ Once the `T006*` views are available in your space, you can use them to do curre
 
 -   Graphical views - see [Create a Unit Conversion Column in a Graphical View](../create-a-unit-conversion-column-in-a-graphical-view-23bc94f.md).
 -   SQL views - use the `CONVERT_UNIT` function.
+-   Analytic models - see [Create a Conversion Measure for Units](create-a-conversion-measure-for-units-965ce56.md).
 
 You should always identify columns containing unit values and codes with the following semantic types:
 

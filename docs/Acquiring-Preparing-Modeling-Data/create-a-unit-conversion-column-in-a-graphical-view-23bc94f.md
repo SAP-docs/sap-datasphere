@@ -15,7 +15,7 @@ To do unit conversion, the following tables must be available in your space:
 -   `T006`
 -   `T006D`
 
-These tables should be imported from an SAP system via flows or as remote tables \(see [Acquiring Data in the Data Builder](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md)\).
+These tables should be imported from an SAP system via flows or as remote tables \(see [Acquiring Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md)\).
 
 > ### Note:  
 > If `T006` and `T006D` are shared to your space, you must wrap each table in a view before it can be used for unit conversion in SAP Analytics Cloud.

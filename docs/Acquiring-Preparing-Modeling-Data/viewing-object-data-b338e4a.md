@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Open the Data Viewer](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_open)
 -   [Sort Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_sort)
 -   [Filter Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_filter)
--   [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
+-   [Choose Column Settings](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
 -   [View Data as a Different User](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_impersonation)
 -   [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)
 
@@ -117,7 +117,7 @@ You can view data in the table, graphical view, SQL view, E/R model, analytic mo
     </td>
     <td valign="top">
     
-    Open the *Settings* dialog \(see [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)\).
+    Open the *Settings* dialog \(see [Choose Column Settings](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)\).
     
     </td>
     </tr>
@@ -142,7 +142,7 @@ You can view data in the table, graphical view, SQL view, E/R model, analytic mo
 
 ## Sort Data
 
-You can sort the data in the *Data Viewer* panel in the following ways:
+You can sort the data in the following ways:
 
 -   Click a column header and then click <span class="SAP-icons-V5"></span> \(Sort Ascending\) or <span class="SAP-icons-V5"></span> \(Sort Descending\).
 -   Click :gear: to open the *View Settings* dialog, and then click the *Sort* tab. Select the columns to sort by, whether to sort each one by ascending or descending order, and click *OK* to update the viewer.
@@ -156,9 +156,9 @@ You can sort the data in the *Data Viewer* panel in the following ways:
 
 ## Filter Data
 
-To filter the data in the *Data Viewer* panel:
+To filter the data:
 
-1.  Click a column header and then <span class="FPA-icons-V3"></span> \(Filter\)to open the *Define Filter* dialog, or click :gear: and then click the *Filter* tab.
+1.  Click a column header and then <span class="FPA-icons-V3"></span> \(Filter\) to open the *Define Filter* dialog, or click :gear: and then click the *Filter* tab.
 2.  Choose the appropriate section for your filter:
     -   *Include* - Enter one or more filter conditions that must be met in order to display a row.
     -   *Exclude* - Enter one or more filter conditions that must be met in order to hide a row.
@@ -180,7 +180,7 @@ To filter the data in the *Data Viewer* panel:
     > -   Using the *Filter* and *Sort* tabs in the *View Settings* dialog allows you to combine filtering and sorting by multiple columns.
     > -   The filtering option *empty* takes into account both empty and *NULL* values.
 
-5.  Click *OK* to apply the filters to the *Data Viewer* panel.
+5.  Click *OK* to apply the filters.
 
     The current filter conditions are displayed in a strip across the top of the panel. Click *Clear Filter* to remove them.
 
@@ -189,9 +189,7 @@ To filter the data in the *Data Viewer* panel:
 
 <a name="loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns"/>
 
-## Choose Columns to Display
-
-To reorder the columns in the panel, click and drag a column header to left or right and drop it in its new position.
+## Choose Column Settings
 
 To display, hide, or reorder columns, click :gear: to open the *View Settings* dialog. On the *Columns* tab:
 
@@ -199,8 +197,6 @@ To display, hide, or reorder columns, click :gear: to open the *View Settings* d
 -   Click a column name to select it and then use the arrow buttons to move it up or down in the list.
 -   Use the *Show Selected*/*Show All* button to toggle between the two different lists.
 -   Use the *Sort* and *Filter* tabs
-
-Click *OK* to update the viewer or *Cancel* to erase your changes. To return to the default data viewer columns, click *Reset*.
 
 
 

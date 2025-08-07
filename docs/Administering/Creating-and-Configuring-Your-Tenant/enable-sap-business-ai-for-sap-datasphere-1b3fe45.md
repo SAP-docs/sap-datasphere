@@ -20,8 +20,8 @@ SAP Business AI is integrated to generate AI content recommendations in various 
 
 ## Prerequisites
 
--   Your SAP Datasphere tenant is on a landscape that supports SAP Business AI. See SAP Note [0003491182](https://me.sap.com/notes/0003491182).
--   You've purchased the **SAP AI Units** license. For more information about **SAP AI Units** license, contact your Account Executive.
+-   Your SAP Datasphere tenant is on a landscape that supports SAP Business AI. See SAP Note [0003437766](https://me.sap.com/notes/0003437766).
+-   You've purchased the **AI units** license. For more information about **AI units** license, contact your Account Executive.
 -   To activate an SAP Business AI feature, you need the*DW Administrator* role.
 -   You could have access to the *AI Services* tab, but it's possible that the tenant has not been activated with SAP Business AI yet, or SAP Business AI features are not supported yet. For more information, see SAP Note [0003522010](https://me.sap.com/notes/0003522010).
 

@@ -395,6 +395,28 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
+        *SAP BW/4HANA - Metadata Extraction*
+        
+        </td>
+        <td valign="top">
+        
+        *URL Path* \(for HTTPS\)
+        
+        </td>
+        <td valign="top">
+        
+        -   `/sap/bc/http/sap/bw4/v1/system/information`
+        -   `/sap/opu/odata4/sap/rv_i_dwc_area_tree_sb/` - *Path and all sub-paths*
+        -   `/sap/opu/odata4/sap/rv_c_dwc_obj_header/` - *Path and all sub-paths*
+        -   `/sap/opu/odata4/sap/rv_i_dwc_details_sb/` - *Path and all sub-paths*
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         *SAP S/4HANA On-Premise*
         
         </td>
@@ -438,7 +460,7 @@ For more information about the supported use cases depending on the connection t
         </td>
         <td valign="top">
         
-        If you are connecting to an SAP S/4HANA system without DMIS add-on installed \(for accessing data using CDS view extraction\):
+        If you are connecting to an SAP S/4HANA system without DMIS add-on installed:
 
         -   DHAMB\_ – *Prefix*
 
@@ -447,7 +469,7 @@ For more information about the supported use cases depending on the connection t
         -   RFC\_FUNCTION\_SEARCH
 
 
-        If you are connecting to an ABAP-based system with DMIS add-on installed \(for accessing data based on tables with SAP LT Replication Server\):
+        If you are connecting to an ABAP-based system with DMIS add-on installed:
 
         -   LTAMB\_ – *Prefix*
 

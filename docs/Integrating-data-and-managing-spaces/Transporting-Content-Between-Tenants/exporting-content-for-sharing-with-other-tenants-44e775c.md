@@ -22,7 +22,7 @@ To export content from a space via the *Export* app, you must have either:
 A global role that allows you to access and export content from any space, by granting you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
+-   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
 
@@ -35,7 +35,7 @@ A combination of a global role and a scoped role:
 
 -   A global role that grants you the following privilege:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Lifecycle* \(`-----M--`\) - To use the *Transport* apps.
+    -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
 
 -   A scoped role that grants you access to the space or spaces to export from with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.

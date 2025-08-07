@@ -175,7 +175,7 @@ Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
 
 Adds frequently used data products to your favorites.
 
-Adding a data product to your favorites is different from using bookmarks. For more information about bookmarks, see [Using Bookmarks](using-bookmarks-aec68bb.md).
+Adding a data product to your favorites is different from using bookmarks.
 
 </td>
 </tr>
@@ -250,7 +250,7 @@ Displays how the data product will be delivered to your space. The shipment vari
 -   *External Delivery*: The data is delivered by sharing files outside SAP Datasphere. This type of data shipment is managed by the data provider.
 -   *Open SQL*: The data is delivered by using an Open SQL Schema. Consumers create an OpenSQL Schema in the space and provide the information to the data provider using the Data Inbox. Once the data product is activated, consumers can access the data through the *Data Builder* and the provided schema appears as a source. This type of data shipment is managed by the data provider.
 
-For more information, see [Data Shipment](data-shipment-837e749.md).
+
 
 </td>
 </tr>

@@ -377,7 +377,7 @@ Manage the lifecycle of your data products.
 </td>
 <td valign="top">
 
-[Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right: 
+[Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -406,7 +406,7 @@ Manage the lifecycle for a data product from one of the data providers you manag
 </td>
 <td valign="top">
 
-[Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right: 
+[Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -418,12 +418,14 @@ Data Consumer
 </td>
 <td valign="top">
 
-Select a data product and evaluate it to see if you can use it.
+Select a data product and evaluate it to see if you can use it or share it.
 
 </td>
 <td valign="top">
 
 [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md)
+
+[Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks) \(SAP Business Data Cloud help documentation\)
 
 </td>
 </tr>

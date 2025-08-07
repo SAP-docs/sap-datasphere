@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Analyze View Performance in Data Builder
+# Analyzing View Performance
 
-Analyze the performance of a view directly in *Data Builder* with the *Runtime Metrics* tool in the toolbar. Receive detailed information about your view and generate an Explain Plan directly in the *Data Builder* or choose to go directly into *View Analyzer* to improve the performance of your view.
+Analyze the performance of a view directly in the *Data Builder* with the *Runtime Metrics* tool. Receive detailed information about your view and generate an Explain Plan directly or open the *View Analyzer* to improve the performance of your view.
 
 
 

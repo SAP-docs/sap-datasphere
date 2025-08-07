@@ -12,7 +12,7 @@ Run tasks in a task chain that use a REST-based API to access external systems.
 
 ## Prerequisites
 
--   Users require the usual Modeler and Integrator role permissions to model and run any task chain that includes an API task. The DWC\_REMOTECONNECTION bit must also be set, but that bit is already configured in the default Modeler/Integrator roles you would typically already have to run a task chain.
+-   Users require the usual Modeler and Integrator role permissions to model and run any task chain that includes an API task. The DWC\_REMOTECONNECTION privilege must also be set, but that privilege is already configured in the default Modeler/Integrator roles you would typically already have to run a task chain.
 -   The configuration of an API task requires selection of a pre-defined HTTP connection to access the external system that will run the API task. Credentials to connect to the external system are stored and fetched from the configuration details of the selected HTTP connection.
 
     For more information on creating an HTTP connection, see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.

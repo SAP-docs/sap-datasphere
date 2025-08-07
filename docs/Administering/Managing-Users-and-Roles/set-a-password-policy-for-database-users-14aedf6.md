@@ -4,7 +4,20 @@
 
 # Set a Password Policy for Database Users
 
-Users with the *DW Administrator* role \(administrators\) can set a password policy to cause database user passwords to expire after a specified number of days.
+Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.
+
+
+
+<a name="loio14aedf6cecce474b93b2d5187662a090__prereq_mpq_cqd_bgc"/>
+
+## Prerequisites
+
+To set a password policy for database user passwords, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -12,7 +25,7 @@ Users with the *DW Administrator* role \(administrators\) can set a password pol
 
 ## Context
 
-Users with the *DW Space Administrator* role \(space administrators\) can create database users in their spaces to allow the connection of ETL tools to write to and read from Open SQL schemas attached to the space schema \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\).
+Users with a space administrator role can create database users in their spaces to allow the connection of ETL tools to write to and read from Open SQL schemas attached to the space schema \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\).
 
 
 

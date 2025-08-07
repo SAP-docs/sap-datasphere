@@ -206,6 +206,9 @@ Users with the *DW Space Administrator* role can create packages:
 
         As objects can only be added to one package, any objects that have been added to a different package cannot be selected.
 
+        > ### Note:  
+        > Local tables that have a semantic usage of *Dimension* and have the *Allow Data Transport* switch enabled can include their data in the package. You must select the <code><i class="varname">&lt;table_name&gt;</i>::data</code> object in the list of objects to include the data.
+
     4.  Click *Next* and wait for the dialog to analyze your objects and extend your selection by adding any sources and other required dependencies.
 
         Each object must be able to resolve its entire lineage either by adding the objects it depends on to the package or by referencing them via a required package.
@@ -240,6 +243,8 @@ Users with the *DW Space Administrator* role can export packages:
     -   Any required packages must have a status of *Exported*.
 
 2.  Click *Export* to export your package to the Content Network with the filename <code><i class="varname">&lt;TechnicalName_Version&gt;</i></code>. 
+
+    If your package contains local table dimension data, a confirmation message is displayed. Click *OK* to confirm that you intend to transport the included data.
 
     When the export is complete, the package status changes to *Exported* and you will receive a notification confirming the export.
 

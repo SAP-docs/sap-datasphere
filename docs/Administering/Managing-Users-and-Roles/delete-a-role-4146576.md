@@ -22,9 +22,9 @@ You can delete one or more roles at the same time.
 
 2.  Hover over the role and select the check box.
 
-3.  Choose <span class="FPA-icons-V3"></span> \(Delete\) from the toolbar.
+3.  Click <span class="FPA-icons-V3"></span> \(Delete\) from the toolbar.
 
-4.  In the warning dialog, select *Delete*.
+4.  In the warning dialog, click *Delete*.
 
 
 

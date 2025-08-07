@@ -404,6 +404,9 @@ Enter the user password.
 
 ### Remote Tables
 
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
+
 
 <table>
 <tr>

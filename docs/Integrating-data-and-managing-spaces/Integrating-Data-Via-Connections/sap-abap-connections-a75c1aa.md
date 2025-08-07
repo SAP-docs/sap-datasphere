@@ -202,9 +202,7 @@ You can access the following data:
 </table>
 
 > ### Note:  
-> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\).
-> 
-> Whether you use the same connection or two separate connections, we strongly recommend using only remote tables or only replication flows for replicating data from a dedicated source object, but not both. Generally, for replication scenarios, we recommend to use replication flows.
+> The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\). Generally, for replication scenarios, we recommend to use replication flows.
 
 
 
@@ -741,6 +739,9 @@ Enter the user password.
 
 
 ### Remote Tables
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Remote tables are not supported.
 
 
 <table>

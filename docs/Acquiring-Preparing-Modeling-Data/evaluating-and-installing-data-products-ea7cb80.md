@@ -12,7 +12,7 @@ Use the catalog *Data Product* collection to view data products for use in your 
 
 ## Prerequisites
 
-Your SAP Datasphere system must be part of an SAP Business Data Cloud formation \(see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "SAP Business Data Cloud is a fully managed SaaS solution that unifies and governs all SAP data and seamlessly connects with third-party data—giving line-of-business leaders context to make even more impactful decisions.") :arrow_upper_right:\).
+Your SAP Datasphere system must be part of an SAP Business Data Cloud formation \(see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:\).
 
 A user with an administrator role must choose the spaces to which the data product can be installed \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
 
@@ -61,7 +61,7 @@ After you find an active data product in the SAP Datasphere catalog, you can ins
 
 The following diagram displays the flow for data products.
 
-![](images/BDC_diagram_-_expanded_BDX_BDC_on_the_bottom_with_DBX_024dbaa.png)
+![](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
 
 
 
@@ -132,7 +132,18 @@ The data product objects are created and deployed in the ingestion space and sha
 
 When selecting a data access method, you will consider both storage and processing time costs and data freshness. You can at any time change the data access method for your data product.
 
-To change the data access method, find the data product that you want and reinstall it. When you're on the *Review Entities* page of the wizard, remember to switch the data access method to the one you want.
+
+
+## Procedure
+
+1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
+
+2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
+
+3.  When you find the data product you want, reinstall it.
+
+    On the *Review Entities* page of the wizard, remember to switch the data access method to the one you want.
+
 
 <a name="task_dw1_ykv_s2c"/>
 

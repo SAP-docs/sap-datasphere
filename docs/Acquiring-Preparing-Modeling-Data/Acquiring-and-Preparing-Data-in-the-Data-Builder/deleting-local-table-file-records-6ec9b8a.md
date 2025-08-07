@@ -38,10 +38,10 @@ Local Tables \(File\) store large amount of data, including historical data. Whe
     -   *Delete previous versions \(Vacuum\), which are older than the specified number of days*: Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted.
 
         > ### Note:  
-        > 7 days means start time of the task + 169 hours \(7 days X 24 hours + 1hour\). For more information about the 7 retention days and vacuum, see [Remove files no longer referenced by a Delta table](https://docs.delta.io/latest/delta-utility.html#remove-files-no-longer-referenced-by-a-delta-table)
+        > 7 days means start time of the task - 169 hours \(7 days X 24 hours + 1hour\). For more information about the 7 retention days and vacuum, see [Remove files no longer referenced by a Delta table](https://docs.delta.io/latest/delta-utility.html#remove-files-no-longer-referenced-by-a-delta-table)
 
         > ### Example:  
-        > If I decide to start the vacuum activity today February 4 at 10:00 am, and set the minimum value to 7 days, records inserted or changed between February 3, 10:00 am and February 10, 11:00 am won’t be deleted.
+        > If I decide to start the vacuum activity today February 4 at 11:00 am, and set the minimum value to 7 days, records inserted or changed between February 3, 10:00 am and February 10, 11:00 am won’t be deleted.
 
 
     \[Optional\]. When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator:

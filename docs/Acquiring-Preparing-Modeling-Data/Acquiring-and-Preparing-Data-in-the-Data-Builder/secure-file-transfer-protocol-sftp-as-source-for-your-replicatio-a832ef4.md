@@ -143,7 +143,7 @@ By default, any settings that you have made at replication object level are kept
 
 <a name="loioa832ef4cee9d4d3aa1210869743b6173__section_yl2_3fm_lfc"/>
 
-## Configuring the Schema \(and Related Properties
+## Configuring the Schema \(and Related Properties\)
 
 As the source objects are CSV files, you must define a primary key. You can do it in the *Object Properties* panel, under *Source Schema Settings* \> *Configure Schema*.
 

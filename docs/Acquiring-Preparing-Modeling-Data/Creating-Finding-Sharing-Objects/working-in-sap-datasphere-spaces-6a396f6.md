@@ -395,7 +395,7 @@ Modelers assigned to a space can acquire data from the connections and other sou
 
 In our example, the modelers acquire data from the SAP SuccessFactors and SAP S/4HANA connections via flows.
 
-See [Acquiring Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md).
+See [Acquiring Data](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md).
 
 
 
@@ -411,7 +411,7 @@ In our example the modelers protect their loaded data with data access controls 
 
 See:
 
--   [Preparing Data in the Data Builder](../preparing-data-in-the-data-builder-f2e359c.md)
+-   [Preparing Data](../preparing-data-f2e359c.md)
 -   [Modeling Data in the Data Builder](../Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md)
 
 

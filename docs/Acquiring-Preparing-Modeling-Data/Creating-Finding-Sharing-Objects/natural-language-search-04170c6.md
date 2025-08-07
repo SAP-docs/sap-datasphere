@@ -36,7 +36,7 @@ Entering a natural language search string allows you to quickly filter your list
 Natural language search is available in:
 
 -   The *Repository Explorer* - See [Repository Explorer](repository-explorer-f8ce0b4.md).
--   The *Data Builder* start page - See [Acquiring Data in the Data Builder](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-in-the-data-builder-1f15a29.md).
+-   The *Data Builder* start page - See [Acquiring Data](../Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md).
 -   The *Source Browser* - See [Using the Source Browser](../using-the-source-browser-7d2b21d.md).
 
 > ### Note:  

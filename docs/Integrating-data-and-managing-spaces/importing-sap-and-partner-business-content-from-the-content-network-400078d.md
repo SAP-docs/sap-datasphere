@@ -20,7 +20,7 @@ To import business content and sample content from SAP and partners via the *Sem
 A global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Lifecycle* \(`-----M--`\) - To use the *Content Network* tiles in the *Semantic Onboarding* app.
+-   *Lifecycle* \(`-R---MS-`\) - To use the *Content Network* tiles in the *Semantic Onboarding* app.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *Space Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
@@ -34,7 +34,7 @@ A combination of a global role and a scoped role:
 
 -   A global role that grants you the following privilege:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Lifecycle* \(`-----M--`\) - To use the *Content Network* tiles in the *Semantic Onboarding* app.
+    -   *Lifecycle* \(`-R---MS-`\) - To use the *Content Network* tiles in the *Semantic Onboarding* app.
 
 -   A scoped role that grants you access to the space or spaces to import into with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.

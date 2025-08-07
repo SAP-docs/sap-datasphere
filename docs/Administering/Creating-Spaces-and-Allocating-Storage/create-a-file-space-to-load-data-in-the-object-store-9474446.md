@@ -412,5 +412,12 @@ Users with an administrator role can create spaces, allocate compute resources a
 > 
 > -   If your file space and its data lake instance or Apache Spark instance run into communication errors, click *Deploy*.
 
+> ### Note:  
+> The total amount of storage consumed by the file space includes: local tables \(files\) \(total storage in MiB + buffer file size in MiB\), logs, and backups of deleted objects \(which are kept for 14 days after deletion\).
+> 
+> Local tables stored in a space of type *SAP HANA Database \(Disk and In-Memory\)* may have a different size than equivalent local tables \(files\) \(of type *SAP HANA Data Lake Files*\) stored on the object store as the compression rate is different. More importantly, having many previous versions available for your tables, will increase their size. This is why we recommend to do regular permanent data deletion \(vacuum\).
+> 
+> You can view the total amount of storage consumed by a file space in these areas of the *Space Management*: in the *SAP HANA Data Lake Files* area of the space tile when in tile layout and in the *SAP HANA Data Lake Files* column in the table layout.
+
 For more information about working with data in the object store, see [Acquiring and Preparing Data in the Object Store](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/2a6bc3f6d79b4c39a01b6d58d043fbaf.html "Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the SAP Datasphere object store. You can prepare the data using Apache Spark transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.") :arrow_upper_right:.
 
