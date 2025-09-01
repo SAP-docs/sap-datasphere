@@ -276,10 +276,6 @@ You can select:
 -   *X.509 Client Certificate* 
 -   *User Name And Password* for basic authentication
 
-    > ### Note:  
-    > For federated access with remote tables using the ABAP SQL service, authentication with *User Name and Password* is required.
-
-
 The default is *X.509 Client Certificate*.
 
 </td>
@@ -433,7 +429,7 @@ Select the middleware to use when connecting to and accessing SAP S/4HANA Cloud:
 
 -   *None* \(default\): if you don't want to use remote tables.
 
--   *Data Provisioning Agent*: if you want to use federation and replication via SAP HANA smart data integration CloudDataIntegrationAdapter \(**legacy**\).
+-   *Data Provisioning Agent*: if you want to use federation and replication via SAP HANA smart data integration CloudDataIntegrationAdapter \(**legacy**\), or if you want to use model import.
 
     > ### Note:  
     > This legacy option is still supported, however we recommend using the ABAP SQL service for federation \(if available\) and replication flows for replication.
@@ -441,7 +437,7 @@ Select the middleware to use when connecting to and accessing SAP S/4HANA Cloud:
 -   *Direct*: if you want to federate data from the source objects of the connection and access them remotely in the source system using the ABAP SQL service \(**recommended for federation scenarios**\).
 
     > ### Note:  
-    > This option is supported for authentication type *User Name And Password*.
+    > When using the *Direct* option, you can't use the same connection for model import.
 
 
 
@@ -489,9 +485,9 @@ Select an agent from the list of agents configured for SAP Datasphere.
 
 Specify how ABAP data types are mapped to SAP HANA data types: 
 
--   ﻿*native*﻿: no conversion of ABAP data types
+-   *native*: no conversion of ABAP data types
 
--   ﻿*semantic*﻿: conversion of the ABAP data types to an ABAP-independent data format
+-   *semantic*: conversion of the ABAP data types to an ABAP-independent data format
 
 -   *semanticDatsTimsAsWchar*: like *semantic*, except that the ABAP types DATS and TIMS are mapped to the ODBC type SQL\_WCHAR to allow for lossless conversion of date literals and time literals
 
@@ -589,7 +585,7 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 </td>
 <td valign="top">
 
-To enable *Model Import*, select a Data Provisioning Agent.
+To enable *Model Import*, in the *Remote Tables* section select data provisioning option *Data Provisioning Agent* and then select an agent.
 
 > ### Note:  
 > In file spaces, only replication flows are supported. Model import is not supported.

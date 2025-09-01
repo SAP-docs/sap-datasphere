@@ -4,7 +4,7 @@
 
 # Configure Cloud Connector
 
-Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system. 
+Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system. 
 
 
 
@@ -25,7 +25,7 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
     -   `*.k8s-hana.ondemand.com`
 
 
--   Before configuring the Cloud Connector, you or the owner of your organisation will need an SAP Business Technology Platform \(SAP BTP\) account. If you don't have an account yet, create an account by clicking *Register* in the [SAP BTP cockpit](https://account.hana.ondemand.com/).
+-   Before configuring the Cloud Connector, you or the owner of your organization will need an SAP Business Technology Platform \(SAP BTP\) account. If you don't have an account yet, create an account by clicking *Register* in the [SAP BTP cockpit](https://account.hana.ondemand.com/).
 
 -   During Cloud Connector configuration you will need information for your SAP Datasphere subaccount. Make sure that you have the subaccount information available in *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account*.
 
@@ -183,7 +183,9 @@ For more information about the supported use cases depending on the connection t
 
     2.  Add your system mapping information to configure access control and save your configuration.
 
-        The procedure to add your system mapping information is specific to the protocol that you are using for communication. The relevant protocols are:
+        The procedure to add your system mapping information is specific to the protocol that you are using for communication \(see [Configure Access Control](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control) in the *SAP BTP Connectivity* documentation\).
+
+        **SAP Datasphere Connections**
 
 
         <table>
@@ -202,50 +204,36 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP ABAP* \(data flows, replication flows\)
-
-        *SAP BW* \(data flows\)
-
-        *SAP ECC* \(data flows\)
-
-        *SAP S/4HANA On-Premise* \(data flows, replication flows, model import\)
-        
-        </td>
-        <td valign="top">
-        
-        RFC
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *SAP BW/4HANA Model Transfer* \(model import\)
-
-        *SAP S/4HANA On-Premise* \(model import\)
-
-        *SAP S/4HANA On-Premise* \(remote tables via ABAP SQL service\)
-
-        *SAP ABAP* on-premise only \(remote tables via ABAP SQL service\)
-        
-        </td>
-        <td valign="top">
-        
-        HTTPS
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *SAP HANA* on-premise only \(data flows, replication flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
+        *Apache Kafka* on-premise \(replication flows\)
         
         </td>
         <td valign="top">
         
         TCP
-
-        For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Confluent* - Confluent Platform on-premise - for the Kafka broker \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Confluent* - Confluent Platform on-premise - for the Schema Registry \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
         
         </td>
         </tr>
@@ -264,7 +252,19 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Microsoft SQL Server* \(data flows, replication flows\)
+        *Generic SFTP* \(data flows, replication flows\) 
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Microsoft SQL Server* \(data flows, replication flows\) 
         
         </td>
         <td valign="top">
@@ -288,45 +288,115 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Apache Kafka* on-premise only \(replication flows\)
+        *SAP ABAP* on-premise \(data flows, replication flows\)
         
         </td>
         <td valign="top">
         
-        TCP
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Generic SFTP* \(data flows, replication flows\)
-        
-        </td>
-        <td valign="top">
-        
-        TCP
+        RFC
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-        *Confluent* - Confluent Platform on-premise only \(replication flows\)
+        *SAP ABAP* on-premise \(remote tables via ABAP SQL service\)
         
         </td>
         <td valign="top">
         
-        TCP - for the Kafka broker
+        HTTPS
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP BW* \(data flows\)
+        
+        </td>
+        <td valign="top">
+        
+        RFC
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP BW/4HANA Model Transfer* - live data tunnel connection \(model import\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP ECC* \(data flows\)
+        
+        </td>
+        <td valign="top">
+        
+        RFC
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP HANA* on-premise \(data flows, replication flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
 
-        HTTPS - for the Schema Registry
+        For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP S/4HANA On-Premise* \(data flows, replication flows, model import\)
+        
+        </td>
+        <td valign="top">
+        
+        RFC
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP S/4HANA On-Premise* \(remote tables via ABAP SQL service\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP S/4HANA On-Premise* - live data tunnel connection \(model import\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
         
         </td>
         </tr>
         </table>
         
-        For more information, see [Configure Access Control](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control) in the *SAP BTP Connectivity* documentation.
-
         > ### Note:  
         > -   When adding the system mapping information, you enter internal and virtual system information. The internal host and port specify the actual host and port under which the backend system can be reached within the intranet. It must be an existing network address that can be resolved on the intranet and has network visibility for the Cloud Connector. The Cloud Connector tries to forward the request to the network address specified by the internal host and port, so this address needs to be real. The virtual host name and port represent the fully qualified domain name of the related system in the cloud.
         > 
@@ -341,42 +411,66 @@ For more information about the supported use cases depending on the connection t
         > 
         > -   For *SAP ABAP* \(on-premise\) connections using the ABAP SQL service for data federation with remote tables: If you want to use the same connection for remote tables and flows, you need to create two system mappings. For more information about what to consider when creating the required system mappings, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md).
 
-    3.  To grant access only to the resources needed by SAP Datasphere, select the system host you just added from the *Mapping Virtual To Internal System* list, and for each resource that you want to allow to be invoked on that host click :heavy_plus_sign: in the *Resources Of* section to open the *Add Resource* dialog.
-
-    4.  Depending on the connection type, protocol, and use case, add the required resources:
+        **Catalog Remote Systems**
 
 
         <table>
         <tr>
         <th valign="top">
 
-        Connection Type
+        Remote System Type
         
         </th>
         <th valign="top">
 
-        Resource Type \(depending on protocol\)
-        
-        </th>
-        <th valign="top">
-
-        Resources
+        Protocol
         
         </th>
         </tr>
         <tr>
         <td valign="top">
         
-        *SAP BW/4HANA Model Import*
+        *SAP BW/4HANA*
         
         </td>
         <td valign="top">
         
-        *URL Path* \(for HTTPS\)
+        HTTPS
+        
+        </td>
+        </tr>
+        </table>
+        
+    3.  To grant access only to the resources needed by SAP Datasphere, select the system host you just added from the *Mapping Virtual To Internal System* list, and for each resource that you want to allow to be invoked on that host, click :heavy_plus_sign: in the *Resources Of *<virtual host\>** section to open the *Add Resource* dialog.
+
+    4.  Depending on the connection type, protocol, and use case, add the required resources \(see [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) and [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation\).
+
+        **SAP Datasphere Connections**
+
+
+        <table>
+        <tr>
+        <th valign="top">
+
+        Connection Type \(Protocol\)
+        
+        </th>
+        <th valign="top">
+
+        Accessible Resources Based on Use Case
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *SAP BW/4HANA Model Import* \(HTTPS\)
         
         </td>
         <td valign="top">
         
+        For model import, limit the accessible services for the live data tunnel connection used with the *SAP BW/4HANA Model Import* connection to the following URL paths:
+
         -   `/sap/opu/odata/sap/ESH_SEARCH_SRV/SearchQueries`
 
         -   `/sap/bw4/v1/dwc/dbinfo`
@@ -395,44 +489,17 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP BW/4HANA - Metadata Extraction*
+        *SAP S/4HANA On-Premise* \(HTTPS\)
         
         </td>
         <td valign="top">
         
-        *URL Path* \(for HTTPS\)
-        
-        </td>
-        <td valign="top">
-        
-        -   `/sap/bc/http/sap/bw4/v1/system/information`
-        -   `/sap/opu/odata4/sap/rv_i_dwc_area_tree_sb/` - *Path and all sub-paths*
-        -   `/sap/opu/odata4/sap/rv_c_dwc_obj_header/` - *Path and all sub-paths*
-        -   `/sap/opu/odata4/sap/rv_i_dwc_details_sb/` - *Path and all sub-paths*
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *SAP S/4HANA On-Premise*
-        
-        </td>
-        <td valign="top">
-        
-        *URL Path* \(for HTTPS\)
-        
-        </td>
-        <td valign="top">
-        
-        For model import:
+        For model import, limit the accessible services for the live data tunnel connection used with the *SAP S/4HANA On-Premise* connection to the following URL path:
 
         -   `/`
 
 
-        For data federation with remote tables via the ABAP SQL service:
+        For data federation with remote tables via the ABAP SQL service, limit the accessible services as follows:
 
         -   Enter the service path of the SQL service endpoint on the SAP S/4HANA system. For example: `/sap/bc/sql/sql1/sap/s_privileged` – *Path and all sub-paths*
         -   Select the *Upgrade Allowed* option in the *Add Resources* dialog.
@@ -448,19 +515,12 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP ABAP*
-
-        *SAP S/4HANA On-Premise* 
+        *SAP ABAP* , *SAP S/4HANA On-Premise* \(RFC\)
         
         </td>
         <td valign="top">
         
-        *Function Name* \(name of the function module for RFC\)
-        
-        </td>
-        <td valign="top">
-        
-        If you are connecting to an SAP S/4HANA system without DMIS add-on installed:
+        If you are connecting to an SAP S/4HANA system without DMIS add-on installed, limit the accessible resources to the following function modules:
 
         -   DHAMB\_ – *Prefix*
 
@@ -469,7 +529,7 @@ For more information about the supported use cases depending on the connection t
         -   RFC\_FUNCTION\_SEARCH
 
 
-        If you are connecting to an ABAP-based system with DMIS add-on installed:
+        If you are connecting to an ABAP-based system with DMIS add-on installed, limit the accessible resources to the following function modules:
 
         -   LTAMB\_ – *Prefix*
 
@@ -485,19 +545,12 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP BW*
-
-        *SAP ECC*
+        *SAP BW*, *SAP ECC* \(RFC\)
         
         </td>
         <td valign="top">
         
-        *Function Name* \(name of the function module for RFC\)
-        
-        </td>
-        <td valign="top">
-        
-        For accessing data using ODP connectivity \(for legacy systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed\):
+        For accessing data using ODP connectivity \(for legacy systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed\), limit the accessible resources to the following function modules:
 
         -   /SAPDS/ – *Prefix*
 
@@ -513,45 +566,77 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP Datasphere, SAP BW bridge* \(connectivity for ODP source systems in SAP BW bridge\)
+        *SAP Datasphere, SAP BW bridge* \(RFC\)
         
         </td>
         <td valign="top">
         
-        *Function Name* \(name of the function module for RFC\)
-        
-        </td>
-        <td valign="top">
-        
-        See [Add Resources to Source System](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/2505f3efb2744a829a811985cb2b62c3.html "You need to add some additional ressources to your source system.") :arrow_upper_right:.
+        For information about configuring Cloud Connector to connect to ODP source systems to SAP Datasphere, SAP BW bridge and limiting the accessible resources, see:
+
+        -   [Preparing Connectivity for ODP Source Systems in SAP BW Bridge](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/18d69431efb34a71b1939eb5a071db08.html "") :arrow_upper_right:
+        -   [Add Resources to Source System](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/2505f3efb2744a829a811985cb2b62c3.html "You need to add some additional ressources to your source system.") :arrow_upper_right:
+
+
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-        *Confluent* - Confluent Platform \(for the Schema Registry\)
+        *Confluent* \(HTTPS\)
         
         </td>
         <td valign="top">
         
-        *URL Path* \(for HTTPS\)
-        
-        </td>
-        <td valign="top">
-        
-        `/` 
+        If you are connecting to Confluent Platform \(on-premise\), limit the accessible resources for the Schema Registry to the following URL path:
+
+        `/`
         
         </td>
         </tr>
         </table>
         
-        For more information, see [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html) and [Configure Access Control \(RFC\)](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/ca5868997e48468395cf0ca4882f5783.html) in the *SAP BTP Connectivity* documentation.
+        **Catalog Remote Systems**
 
+
+        <table>
+        <tr>
+        <th valign="top">
+
+        Remote System Type \(Protocol\)
+        
+        </th>
+        <th valign="top">
+
+        Resources
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        SAP BW/4HANA \(HTTPS\)
+        
+        </td>
+        <td valign="top">
+        
+        For metadata extraction, limit the accessible services to the following URL paths:
+
+        -   `/sap/bc/http/sap/bw4/v1/system/information`
+        -   `/sap/opu/odata4/sap/rv_i_dwc_area_tree_sb/` - *Path and all sub-paths*
+        -   `/sap/opu/odata4/sap/rv_c_dwc_obj_header/` - *Path and all sub-paths*
+        -   `/sap/opu/odata4/sap/rv_i_dwc_details_sb/` - *Path and all sub-paths*
+
+
+        
+        </td>
+        </tr>
+        </table>
+        
     5.  Choose *Save*.
 
 
-4.  \[optional\] To enable secure network communication \(SNC\) for data flows, configure SNC in the Cloud Connector.
+4.  \[optional\] To enable secure network communication \(SNC\) to an ABAP system, which you want to connect to for using data flows and replication flows, configure SNC in the Cloud Connector.
 
     For more information, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
 
@@ -571,7 +656,7 @@ For more information about the supported use cases depending on the connection t
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
 
-You can now create your connections in SAP Datasphere.
+You can now create your connections in the SAP Datasphere *Connections* app or in the *Catalog & Marketplace* \> *Metadata Extraction* app.
 
 For answers to the most common questions about the Cloud Connector, see [Frequently Asked Questions](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/f8d6f9ab43c14e52a9e8036515a472e9.html) in the *SAP BTP Connectivity* documentation.
 

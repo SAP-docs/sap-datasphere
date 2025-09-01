@@ -21,7 +21,7 @@ Typical types of dimensions include:
 -   Time - Year, Quarter, Month, Day
 
     > ### Note:  
-    > In order to use a time dimension in SAP Analytics Cloud, you must create your dimension by following the procedure at [Create Time Data and Dimensions](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:. Manually-created or other time dimensions may not function correctly.
+    > Only standard time dimensions created by following the procedure at [Create Time Data and Dimensions](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right: are supported for use in SAP Analytics Cloud.
 
 
 
@@ -119,6 +119,20 @@ Typical types of dimensions include:
     <td valign="top">
     
     Select *Dimension*.
+
+    Alternatively, click <span class="SAP-icons-V5"></span> \(Generate\)** \> *Generate Semantics* to request SAP Datasphere to suggest a *Semantic Usage* for your entity, identify the uses of your columns, and apply appropriate semantic types to them \(see [Generating Semantic Information](generating-semantic-information-2fc1d26.md)\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+
     
     </td>
     </tr>

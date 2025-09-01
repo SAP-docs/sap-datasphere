@@ -21,7 +21,7 @@ You can use replication flows to copy data from the following source objects:
 
 CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [Using an Object Without Primary Key As the Source](using-an-object-without-primary-key-as-the-source-2267a9f.md).
 
-For more information about available connection types, sources, and targets, see .
+For more information about available connection types, sources, and targets, see [Connection Types Supporting Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rf=yes%20(source)&connection_overview-rf=yes%20(target)&connection_overview-rf=yes%20(source%20and%20target)&connection_overview-rf=via%20connection%20type%20SAP%20ABAP%20Connections%20(source)).
 
 > ### Note:  
 > To make sure that you have the most up-to-date information and important considerations regarding replication flows, please read SAP Note [3297105](https://me.sap.com/notes/3297105) **before** you start creating a replication flow.

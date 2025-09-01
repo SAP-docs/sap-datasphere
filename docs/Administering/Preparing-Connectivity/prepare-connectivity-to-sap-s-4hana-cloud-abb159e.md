@@ -120,10 +120,16 @@ Before you can use the connection for model import, the following is required:
 
 To set up certificate-based authentication, the following is required:
 
-1.  A client certificate has been created by:
-    1.  Creating a private key and signing request \(using openssl, for example\).
-    2.  Signing the certificate by one of the approved certificate authorities \(CAs\) \(see SAP Note [2801396](https://me.sap.com/notes/2801396)\).
-    3.  Converting the certificate file into Privacy-enhanced Mail \(PEM\) format if it is not yet in PEM format \(using openssl, for example\).
+1.  A client certificate has been created by using one of the following options, for example:
+    -   openssl:
+
+        1.  Create a private key and signing request.
+        2.  Sign the certificate by one of the approved certificate authorities \(CAs\) \(see SAP Note [2801396](https://me.sap.com/notes/2801396)\).
+        3.  Convert the certificate file into Privacy-enhanced Mail \(PEM\) format if it is not yet in PEM format \(using openssl, for example\).
+
+        For more information, see the blog [Beyond Basic \(2\): Certificate-Based Authentication in SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/beyond-basic-2-certificate-based-authentication-in-sap-s-4hana-cloud-public/ba-p/13644334) \(published in April 2024\).
+
+    -   SAP Cloud Identity Services .
 
 2.  In the SAP S/4HANA Cloud system, the certificate has been uploaded to the communication user.
 
@@ -135,10 +141,8 @@ To set up certificate-based authentication, the following is required:
 
 4.  In the SAP S/4HANA Cloud system, the required communication arrangements have been created with the communication system and user above.
 
-    For more information, see [How to Create Communication Users](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/0377adea0401467f939827242c1f4014.html) in the *SAP S/4HANA Cloud Public Edition* documentation.
+    For more information, see [How to Create a Communication Arrangement](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/a0771f6765f54e1c8193ad8582a32edb.html) in the *SAP S/4HANA Cloud Public Edition* documentation.
 
-
-For more information, see the blog [Beyond Basic \(2\): Certificate-Based Authentication in SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/beyond-basic-2-certificate-based-authentication-in-sap-s-4hana-cloud-public/ba-p/13644334) \(published in April 2024\).
 
 > ### Note:  
 > Authentication with X.509 client certificate is not supported for federated access with remote tables using the ABAP SQL service.

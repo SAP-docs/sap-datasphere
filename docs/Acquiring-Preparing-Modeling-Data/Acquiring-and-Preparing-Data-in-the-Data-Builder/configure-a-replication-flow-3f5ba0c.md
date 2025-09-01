@@ -14,15 +14,13 @@ Define settings and properties for your replication flow and individual replicat
 
     -   *Initial Only*: Load all selected data once.
 
-    -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load interval is 60 minutes. You can change it in the side panel by entering an integer between 0 and 24 for hours and 0 and 59 for minutes, respectively. The maximum allowed value is 24 hours 0 minutes. If you enter 0 hours and 0 minutes, the system replicates any source changes immediately.
+    -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load interval is 60 minutes. You can change it in the side panel by entering an integer between 0 and 24 for hours and 0 and 59 for minutes, respectively. The maximum allowed value is 24 hours 0 minutes. If you enter 0 hours and 0 minutes, the system replicates any source changes immediately. 
 
         > ### Note:  
         > -   A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status *Active* until it is stopped or paused or an issue occurs.
         > 
         >     > ### Caution:  
-        >     > You must always stop or pause a running replication flow before a source system downtime. For more information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:
-        > 
-        >     .
+        >     > You must always stop or pause a running replication flow before a source system downtime. For more information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.") :arrow_upper_right:.
         > 
         > -   The system load caused by the delta load operations can vary substantially depending on the frequency of changes in your data source in combination with the interval length you define. Make sure that your tenant configuration supports your settings. For more information, see [Configure the Size of your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
         > 
@@ -103,7 +101,7 @@ Define settings and properties for your replication flow and individual replicat
 
 5.  Review the settings for the individual replication objects and change or complete them as appropriate.
 
-    To do so, select the relevant repliation object. Its properties are then displayed in the side panel.
+    To do so, select the relevant replication object. Its properties are then displayed in the side panel.
 
     For a list of properties and further information, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md).
 

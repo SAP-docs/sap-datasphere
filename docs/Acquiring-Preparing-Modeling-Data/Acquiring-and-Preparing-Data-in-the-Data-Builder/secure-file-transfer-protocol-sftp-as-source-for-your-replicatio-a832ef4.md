@@ -123,6 +123,8 @@ Global Pattern
 
 Enter a global pattern if you want to only replicate files whose names conform with the pattern.
 
+For example, if a folder contains the following files: Test\_1Pattern\_Tab3.csv, Test\_1Pattern\_Tab2.csv, Data1.csv, and Data2.csv. If you want to replicate only the files that include the word "Pattern", you can use the pattern *Pattern*. This will ensure that only Test\_1Pattern\_Tab3.csv and Test\_1Pattern\_Tab2.csv are replicated.
+
 </td>
 </tr>
 <tr>

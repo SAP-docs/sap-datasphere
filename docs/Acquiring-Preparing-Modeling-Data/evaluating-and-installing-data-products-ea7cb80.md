@@ -167,6 +167,9 @@ Remove all dependent objects for the data product before you uninstall a data pr
 
 If you no longer need a data product in a particular space, you can uninstall it.
 
+> ### Note:  
+> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a customer-managed data product that was created in the Data Sharing cockpit in SAP Datasphere changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator.
+
 
 
 ## Procedure

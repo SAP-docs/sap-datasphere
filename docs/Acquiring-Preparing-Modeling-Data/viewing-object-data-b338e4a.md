@@ -11,7 +11,7 @@ This topic contains the following sections:
 -   [Open the Data Viewer](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_open)
 -   [Sort Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_sort)
 -   [Filter Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_filter)
--   [Choose Column Settings](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
+-   [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
 -   [View Data as a Different User](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_impersonation)
 -   [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)
 
@@ -117,7 +117,7 @@ You can view data in the table, graphical view, SQL view, E/R model, analytic mo
     </td>
     <td valign="top">
     
-    Open the *Settings* dialog \(see [Choose Column Settings](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)\).
+    Open the *Settings* dialog \(see [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)\).
     
     </td>
     </tr>
@@ -189,7 +189,7 @@ To filter the data:
 
 <a name="loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns"/>
 
-## Choose Column Settings
+## Choose Columns to Display
 
 To display, hide, or reorder columns, click :gear: to open the *View Settings* dialog. On the *Columns* tab:
 

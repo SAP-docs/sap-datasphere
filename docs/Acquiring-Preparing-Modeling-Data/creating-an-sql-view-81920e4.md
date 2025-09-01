@@ -509,6 +509,22 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
+    <span class="SAP-icons-V5"></span> \(Generate\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the AI-assisted generation menu: 
+
+    -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generating Semantic Information](Modeling-Data-in-the-Data-Builder/generating-semantic-information-2fc1d26.md)\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Versions
     
     </td>

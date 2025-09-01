@@ -288,6 +288,48 @@ The type of container where the asset is saved. The type appears for assets in t
 
 Extraction system details for an asset include the source system's instance name and type. For example, the non-technical name given to an SAP Datasphere or SAP Analytics Cloud system.
 
+For some SAP BW∕4HANA objects additional property sections appear:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Object Type
+
+</th>
+<th valign="top">
+
+Additional Sections
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Open ODS View \(FBPA\)
+
+</td>
+<td valign="top">
+
+Semantics fact data, master data, and texts
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Open Hub Destination \(DEST\)
+
+</td>
+<td valign="top">
+
+Destination properties \(including file and table names, schema, destination and database types, remote source, connection name, and more\)
+
+</td>
+</tr>
+</table>
+
 
 
 You can see a preview of the detailed metadata about the asset by selecting *Overview* \> *Details*. The detailed metadata can include columns, attributes, measures, dimensions, and other properties specific to each object. This tab option appears only if the asset has detailed metadata that can be shown. Each tab in this section represents the metadata type, such as measures or attributes, and has a table with its data. The number in brackets is the total number of rows for the table, with the preview showing up to 20 rows. If there are more than 20 rows for the table, select *Show All* to see the rest of the rows in a separate page.
@@ -386,7 +428,7 @@ Select which columns you want to show in the table.
 </tr>
 </table>
 
-For information on the metadata that appears in this tab, see the help documentation for the SAP source system and search for the object you want to know more about:
+For more information on the properties and details that appear in the *Overview* tab, see the help documentation for the SAP source system and search for the object you want to know more about:
 
 -   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html)
 -   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)

@@ -115,7 +115,7 @@ Description
 </td>
 <td valign="top">
 
-Select the authentication type to use to connect to SAP S/4HANA Cloud. 
+Select the authentication type to use to connect to the SAP HANA Cloud, data lake Relational Engine. 
 
 You can select:
 

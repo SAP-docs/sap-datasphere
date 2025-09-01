@@ -123,6 +123,18 @@ In addition to working with tables in the editor, you can also:
     <tr>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
+    \[dimensions only\]
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Allow Data Transport
     
     </td>
@@ -393,6 +405,22 @@ In addition to working with tables in the editor, you can also:
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Generate\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the AI-assisted generation menu: 
+
+    -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generating Semantic Information](../Modeling-Data-in-the-Data-Builder/generating-semantic-information-2fc1d26.md)\).
+
+
     
     </td>
     </tr>

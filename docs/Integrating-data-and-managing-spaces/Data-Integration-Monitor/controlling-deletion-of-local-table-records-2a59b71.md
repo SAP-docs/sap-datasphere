@@ -136,7 +136,7 @@ You define a filter and based on this filter, the records will be deleted. Note 
 > SQL based selection criteria are not supported.
 
 > ### Note:  
-> Click *Show Preview* to preview records that match the filter criteria and will be deleted. You must have the role *DW Integrator* or *DW Modeler* to preview the data.
+> Click *Open Data Viewer* to preview records that match the filter criteria and will be deleted. You must have the role *DW Integrator* or *DW Modeler* to preview the data.
 
 If your filter is defined on a column where values are of data type 'Date” or “Datetime', you can add other filtering options. See the section below **Additional Filter Options for Data Type "Date" or "Datetime"**
 

@@ -12,7 +12,7 @@ With a currency conversion measure, you can convert currencies into a target cur
 
 ## Prerequisites
 
-To prepare for currency conversion, you must import the ***T006*** and ***T006D*** tables to your space from your SAP system \(or have these tables shared to your space from another space\). See [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
+To prepare for currency conversion, you must import the ***TCUR\**** tables to your space from your SAP system \(or have these tables shared to your space from another space\). See [Enabling Currency Conversion with TCUR\* Tables and Views](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
 
 
 

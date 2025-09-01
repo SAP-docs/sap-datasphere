@@ -27,7 +27,7 @@ For example:
 
 1.  In the table editor or view editor output node side panel, set the *Semantic Usage* property to *Text*.
 
-
+    Alternatively, click <span class="SAP-icons-V5"></span> \(Generate\)** \> *Generate Semantics* to request SAP Datasphere to suggest a *Semantic Usage* for your entity, identify the uses of your columns, and apply appropriate semantic types to them \(see [Generating Semantic Information](generating-semantic-information-2fc1d26.md)\).
 
 2.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
 

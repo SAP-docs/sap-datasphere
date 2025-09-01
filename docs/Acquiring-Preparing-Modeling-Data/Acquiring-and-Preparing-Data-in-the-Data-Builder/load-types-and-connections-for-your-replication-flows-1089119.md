@@ -236,6 +236,28 @@ Supported
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+AzureSQL
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+</tr>
 </table>
 
 
@@ -426,6 +448,28 @@ Supported
 <td valign="top">
 
 SAP HANA
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Signavio
 
 </td>
 <td valign="top">

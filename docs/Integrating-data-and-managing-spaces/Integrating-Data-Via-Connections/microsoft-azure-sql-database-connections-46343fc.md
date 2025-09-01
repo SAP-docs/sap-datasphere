@@ -1,5 +1,7 @@
 <!-- loio46343fc1c4544fa9a075d97f84d39826 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Microsoft Azure SQL Database Connections
 
 Use a *Microsoft Azure SQL Database* connection to access table data from a Microsoft Azure SQL database.
@@ -139,18 +141,6 @@ Enter the name of the database to which you want to connect.
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-*Version* 
-
-</td>
-<td valign="top">
-
-Select the version. 
-
-</td>
-</tr>
 </table>
 
 
@@ -187,7 +177,135 @@ Enter `*.database.windows.net` .
 
 
 
-### Credentials
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to the Microsoft Azure SQL database. 
+
+You can select:
+
+-   *X.509 Client Certificate* \(default value\)
+
+    > ### Note:  
+    > This authentication type uses the ActiveDirectoryServicePrincipalCertificate authentication method. It supports only replication flows.
+
+-   *User Name And Password* for basic authentication
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(X.509 Client Certificate\)
+
+If *Authentication Type* = *X.509 Client Certificate*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*User Name*
+
+</td>
+<td valign="top">
+
+Enter the Azure Active Directory application \(client\) ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
+
+> ### Note:  
+> Unencrypted keys are supported in PKCS\#8 and PKCS\#1 formats \(only RSA key type is supported\). Encrypted keys are supported in PKCS\#1 format with RSA key type.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Password*
+
+</td>
+<td valign="top">
+
+\[optional\] If the private key is encrypted, enter the password required for decryption.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(User Name and Password\)
+
+If *Authentication Type* = *User Name And Password*:
 
 
 <table>
@@ -258,7 +376,7 @@ Description
 To enable *Remote Tables*, select a Data Provisioning Agent.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces or when using authentication with X.509 client certificates, only replication flows are supported. Remote tables are not supported.
 
 
 
@@ -275,7 +393,7 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Data flows are not supported.
+> In file spaces or when using authentication with X.509 client certificates, only replication flows are supported. Data flows are not supported.
 
 
 

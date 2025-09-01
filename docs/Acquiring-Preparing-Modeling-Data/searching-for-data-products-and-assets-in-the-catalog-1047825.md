@@ -88,7 +88,7 @@ Shows data products from SAP and partner systems.
 -   When the catalog is accessed from the SAP Business Data Cloud cockpit system, this collection shows data products from systems in all formations.
 -   When the catalog is accessed from an SAP Datasphere system of a formation, this collection shows only the data products from systems in that specific formation. This collection is hidden if there are no data products available.
 
-For information about SAP Business Data Cloud formations, see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right: and [Integrating Data from SAP Business Data Cloud ](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/8f9c3725cfe84e08b3e951e7af06ce57.html).
+For information about SAP Business Data Cloud formations, see [Integrating Data from SAP Business Data Cloud ](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/8f9c3725cfe84e08b3e951e7af06ce57.html).
 
 </td>
 </tr>

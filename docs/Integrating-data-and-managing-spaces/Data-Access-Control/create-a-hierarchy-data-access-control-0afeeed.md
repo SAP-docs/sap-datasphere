@@ -31,11 +31,13 @@ Before creating your data access control, you must have identified the following
 -   An entity with a semantic usage of *Hierarchy* containing parent-child relationships for the records in the permissions entity \(see [Create an External Hierarchy for Drill-Down](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dbac7a862b3744d8a71d268644aac389.html "Select a Semantic Usage of Hierarchy to indicate that your entity contains parent-child relationships for members in a dimension.") :arrow_upper_right:\).
 
     > ### Note:  
-    > Only external hierarchies with a single pair of parent-child columns are supported. Level-based hierarchies, dimensions with internal hierarchies, and entities with a semantic usage of *Hierarchy with Directory* cannot be used, and the data in your hierarchy must respect the following rules:
+    > Only external hierarchies with a single pair of parent-child columns are supported. Level-based hierarchies and dimensions with internal hierarchies cannot be used, and the data in your hierarchy must respect the following rules:
     > 
     > -   A single root node with a parent value of `null`
     > -   No nodes with multiple parents
     > -   No circular relationships
+    > 
+    > To create a data access control from an entity with a semantic usage of *Hierarchy with Directory*, see [Create a "Hierarchy with Directory" Data Access Control](create-a-hierarchy-with-directory-data-access-control-44ae628.md).
 
 -   A permissions entity containing the following columns:
     -   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). 

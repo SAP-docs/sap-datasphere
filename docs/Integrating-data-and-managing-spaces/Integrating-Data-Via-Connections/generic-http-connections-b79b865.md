@@ -75,6 +75,13 @@ Description
 
 Enter the host name or IP address of the HTTP server.
 
+> ### Note:  
+> The Domain Name System \(DNS\) host name can only contain letters \(A-Z\), numbers \(0-9\), minus signs \(-\), and periods \(.\).
+> 
+> For more information about DNS host names, see [RFC 952 \(DOD Internet Host Table Specification\)](https://www.ietf.org/rfc/rfc952.txt) of the *Internet Engineering Task Force* \(IETF\).
+
+
+
 </td>
 </tr>
 <tr>
@@ -395,6 +402,11 @@ Enter the client ID.
 
 To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
 
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
 </td>
 </tr>
 <tr>
@@ -406,6 +418,11 @@ To upload the certificate or certificate chain that is used to authenticate to t
 <td valign="top">
 
 To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
+
+
 
 </td>
 </tr>

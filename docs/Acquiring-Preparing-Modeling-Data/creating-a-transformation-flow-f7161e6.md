@@ -285,10 +285,6 @@ In addition to working with flows in the editor, you can also:
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
-
-    Visualize column lineage in a target or source node. The Python operator isn't supported. To update column dependencies and lineage, previously saved and deployed objects must be saved and deployed again. 
-
-    See [Visualize Column and Input Parameter Lineages in a Graphical View](visualize-column-and-input-parameter-lineages-in-a-graphical-view-a2426b7.md).
     
     </td>
     </tr>

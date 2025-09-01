@@ -1,5 +1,7 @@
 <!-- loioa75c1aacf951449ba3b740c7e46da3a9 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # SAP ABAP Connections
 
 Use an *SAP ABAP* connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.
@@ -317,7 +319,7 @@ Enter the name of the message server to which you want to connect to.
 Enter the message server port \(numerical\).
 
 > ### Note:  
-> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administation, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
+> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
 
 
 
@@ -560,6 +562,7 @@ You can select:
 
 -   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
 -   *OAuth 2.0* - You can select this option only if you have selected the *RFC* protocol and if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables currently are not supported with OAuth authentication.
+-   *X.509 Client Certificate* - You can select this option if you have selected the *Web Socket RFC* protocol.
 
 
 
@@ -570,6 +573,8 @@ You can select:
 
 
 ### OAuth 2.0
+
+If *Authentication Type* = *OAuth 2.0*:
 
 
 <table>
@@ -652,6 +657,8 @@ You can select:
 
 ### Credentials \(OAuth 2.0\)
 
+If *Authentication Type* = *OAuth 2.0*:
+
 
 <table>
 <tr>
@@ -694,7 +701,77 @@ Enter the client secret to authenticate SAP Datasphere to the SAP ABAP system.
 
 
 
+### Credentials \(X.509 Client Certificate\)
+
+If *Authentication Type* = *X.509 Client Certificate*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Password*
+
+</td>
+<td valign="top">
+
+\[optional\] If the private key is encrypted, enter the password required for decryption.
+
+</td>
+</tr>
+</table>
+
+
+
 ### Credentials \(User Name and Password\)
+
+If *Authentication Type* = *User Name And Password*:
 
 
 <table>
@@ -776,9 +853,10 @@ Select the middleware to use when connecting to and accessing the ABAP-based sys
 
 -   \[RFC protocol\] *Cloud Connector* / \[Web Socket RFC protocol\] *Direct*: if you want to federate data from the source objects of the connection and access them remotely in the source system using the ABAP SQL service \(**recommended for federation scenarios**\).
 
-    > ### Note:  
-    > This option is supported for authentication type *User Name And Password*.
 
+> ### Note:  
+> -   Remote tables are not supported for authentication type *OAuth 2.0*.
+> -   Remote tables are not supported for authentication type *X.509 Client Certificate* if you're using the *RFC* protocol and data provisioning option *Cloud Connector* \(RFC protocol\)
 
 
 

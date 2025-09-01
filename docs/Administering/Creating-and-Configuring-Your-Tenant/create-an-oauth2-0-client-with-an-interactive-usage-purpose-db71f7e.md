@@ -188,10 +188,10 @@ You create an OAuth2.0 client with an *Interactive Usage* purpose:
     
     -   *Client ID*
     -   *Secret*
-    -   *Authorization URL*
+    -   *Authorization URL* \(not required for clients with a *Technical User* purpose\)
     -   *Token URL*
 
-    Users must manually authenticate against the IDP in order to generate the authorization code before continuing with the remaining OAuth2.0 steps.
+    Users of a client with a *Technical User* purpose \(which includes its own privileges and permissions\) can then access their resource directly. Users of clients with other purposes must manually authenticate against the IDP in order to generate the authorization code before continuing with the remaining OAuth2.0 steps.
     
     </td>
     <td valign="top">
@@ -201,7 +201,7 @@ You create an OAuth2.0 client with an *Interactive Usage* purpose:
     -   *OAuth2SAML Token URL*
     -   *OAuth2SAML Audience*
 
-    Users authenticate with their third-party app, which has a trusted relationship with the IDP, and do not need to re-authenticate \(see [Add a Trusted Identity Provider](add-a-trusted-identity-provider-ea0688a.md)\). See also the blog [Integrating with SAP Datasphere Consumption APIs using SAML Bearer Assertion](https://community.sap.com/t5/technology-blogs-by-sap/integrating-with-sap-datasphere-consumption-apis-using-saml-bearer/ba-p/13647905) \(published March 2024\).
+    Users of a client with a *Technical User* purpose can then access their resource directly. Users of clients with other purposes must authenticate with their third-party app, which has a trusted relationship with the IDP, and do not need to re-authenticate \(see [Add a Trusted Identity Provider](add-a-trusted-identity-provider-ea0688a.md)\). See also the blog [Integrating with SAP Datasphere Consumption APIs using SAML Bearer Assertion](https://community.sap.com/t5/technology-blogs-by-sap/integrating-with-sap-datasphere-consumption-apis-using-saml-bearer/ba-p/13647905) \(published March 2024\). 
     
     </td>
     </tr>

@@ -206,25 +206,6 @@ For more information and points to consider when using replication flows, see al
     For transformation flows, the following tabs are available:
 
     -   *Logs* shows activities related to previous and running actions on your flow run. You can see a run *Start* date and time, *Activity*, and *Status*. Click \> to show the run details.
-    -   *Batches* let you divide large datasets for processing to prevent Out-Of-Memory \(OOM\) errors when using SAP HANA runtime. Click *Define Batches* to open the dialog. Define a batch size greater than zero and select a column from the View Transform to split into batches. The column data type must be supported:
-
-        -   Date
-        -   DateTime
-        -   Decimal
-        -   DecimalFloat
-        -   Double
-        -   hana.REAL
-        -   hana.DECIMAL
-        -   hana.TINYINT
-        -   Integer
-        -   Integer64
-        -   String
-        -   Time
-        -   Timestamp
-        -   UUID
-
-        You can choose to process only the initial load in batches. Once you define the batches, you can view, edit, or delete the settings in the *Batches* tab.
-
     -   *Delta Capture Settings* tracks the data that has been transferred when running a transformation flow that loads delta changes to a target table. You can see the source table technical name and watermark. Click *Reset Watermark* to transfer all data to the target table the next time the transformation flow runs \(using the load type Initial and Delta\). For more information, see [Watermarks](watermarks-890897f.md).
     -   *Settings* shows which options are available for *Run Mode*:
         -   Transformation flow: *Performance-Optimized \(Recommended\)* or *Memory-Optimized*.

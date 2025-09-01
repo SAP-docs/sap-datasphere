@@ -22,6 +22,7 @@ The following cloud storage providers can be used as the source of a replication
 
 -   Microsoft Azure Data Lake Gen2
 
+-   Microsoft OneLake
 
 For more information about the corresponding connection types, see [Integrating Data via Connections](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/eb85e157ab654152bd68a8714036e463.html).
 

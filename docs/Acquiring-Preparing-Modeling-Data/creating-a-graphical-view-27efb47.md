@@ -267,6 +267,18 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
+    \[dimensions only\]
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Expose for Consumption
     
     </td>
@@ -536,6 +548,22 @@ In addition to working with views in the editor, you can also:
     Open the *Runtime Metrics* tool to analyze the performance of your view. This tool also provides the option to directly generate and download an Explain Plan or execute *View Analyzer* to improve your view performance.
 
     See [Analyzing View Performance](analyzing-view-performance-6e9ba26.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Generate\)
+    
+    </td>
+    <td valign="top">
+    
+    Open the AI-assisted generation menu: 
+
+    -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generating Semantic Information](Modeling-Data-in-the-Data-Builder/generating-semantic-information-2fc1d26.md)\).
+
+
     
     </td>
     </tr>

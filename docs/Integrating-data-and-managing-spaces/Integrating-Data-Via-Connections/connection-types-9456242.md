@@ -824,6 +824,48 @@ Non SAP
 <tr>
 <td valign="top">
 
+[Microsoft OneLake Connections](microsoft-onelake-connections-057fa4b.md)
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes \(source\)
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+Cloud
+
+</td>
+<td valign="top">
+
+Non SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 [Microsoft SQL Server Connections](microsoft-sql-server-connections-a13c8ab.md)
 
 </td>
@@ -1393,6 +1435,48 @@ no
 <td valign="top">
 
 yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+Cloud
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[SAP Signavio Connections](sap-signavio-connections-4c367de.md)
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes \(target\)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">

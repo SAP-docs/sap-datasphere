@@ -35,6 +35,18 @@ Create mappings to specify how the source data is to be changed on its way into 
 
     -   Add a new column: Choose *Add* and enter the necessary values for the new column.
 
+        To add a new column with string, number constants, or current UTC datetime functions:
+
+        1.  Click on Add to add the Column.
+        2.  Select the checkbox field under the Functions / Constant tab.
+        3.  Update target Column\(Technical Name\) and target Column\(Business Name\) as needed.
+        4.  Add the either of the following 3 functions in cell Functions / Constant:
+            1.  CURRENT\_UTCDATE - The column will be updated with current UTC date and select datatype as date.
+            2.  CURRENT\_UTCTIME - The column will be updated with current UTC time and select datatype as time.
+            3.  CURRENT\_UTCTIMESTAMP - The column will be updated with current UTC time stamp and select datatype as timestamp.
+
+        5.  For constant select the appropriate datatype\(example string\) and update appropriate value in the cell Functions / Constant.
+
     -   Remove a column: Select the relevant column and choose *Remove*.
 
         > ### Note:  

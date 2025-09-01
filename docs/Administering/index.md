@@ -100,6 +100,7 @@
     -   [Prepare Connectivity to SAP Fieldglass](Preparing-Connectivity/prepare-connectivity-to-sap-fieldglass-03ca236.md)
     -   [Prepare Connectivity to SAP HANA](Preparing-Connectivity/prepare-connectivity-to-sap-hana-d7f22cf.md)
     -   [Prepare Connectivity to SAP Marketing Cloud](Preparing-Connectivity/prepare-connectivity-to-sap-marketing-cloud-f5e0c06.md)
+    -   [Prepare Connectivity to SAP Signavio](Preparing-Connectivity/prepare-connectivity-to-sap-signavio-9bde771.md)
     -   [Prepare Connectivity to SAP SuccessFactors](Preparing-Connectivity/prepare-connectivity-to-sap-successfactors-c9b1915.md)
     -   [Prepare Connectivity to SAP S/4HANA Cloud](Preparing-Connectivity/prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md)
         -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](Preparing-Connectivity/using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-ef2b223.md)

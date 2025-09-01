@@ -102,7 +102,7 @@ You can import data from a CSV file to create a new local table \(see [Creating 
 
 ## Purchase Data from Data Marketplace
 
-Purchase data products from providers and download them directly into your space \(see  <?sap-ot O2O class="- topic/xref " href="4096fb8c97dd4d84a7200941c1721368.xml" text="" desc="" xtrc="xref:47" xtrf="file:/home/builder/src/dita-all/pug1751957928638/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/f3888e57ce0a4afa9759abc3bdb9befd.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
+Purchase data products from providers and download them directly into your space \(see [Evaluating and Installing Marketplace Data Products](../evaluating-and-installing-marketplace-data-products-92c35ef.md)\).
 
 You can become a data provider and offer your own data products for sale in Data Marketplace via the Data Sharing Cockpit \(see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:\).
 
