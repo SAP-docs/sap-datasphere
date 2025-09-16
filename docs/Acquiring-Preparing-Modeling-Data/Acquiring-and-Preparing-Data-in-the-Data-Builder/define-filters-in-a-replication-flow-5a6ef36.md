@@ -20,11 +20,13 @@ Define filters to delimit the scope of your replication flow.
 
     Supported filters:
 
-    -   *Less than*
-    -   *Greater than*
+    -   *Less Than*
+    -   *Greater Than*
+    -   *Equal To*
     -   *Great Than* and *Equal To*
     -   *Less Than* and *Equal To*
     -   *Between*
+    -   *Include Null Values*
 
     The options you can select depend on the replication objects you choose and their respective data types and connections:
 

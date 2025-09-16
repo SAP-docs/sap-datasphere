@@ -109,6 +109,8 @@ Not Supported
 
 Confluent Kafka
 
+See also [Confluent Kafka Sources](confluent-kafka-sources-4f2d0a8.md)
+
 </td>
 <td valign="top">
 
@@ -129,7 +131,9 @@ Not Supported
 <tr>
 <td valign="top">
 
-Cloud Storage Provider
+Cloud Storage Providers
+
+See also [Cloud Storage Provider Sources](cloud-storage-provider-sources-4d481a2.md)
 
 </td>
 <td valign="top">
@@ -295,6 +299,8 @@ Load Type: Delta Only
 
 Local table
 
+See also [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)
+
 </td>
 <td valign="top">
 
@@ -316,6 +322,8 @@ Not Supported
 <td valign="top">
 
 Local table with delta capture
+
+See also [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)
 
 </td>
 <td valign="top">
@@ -339,6 +347,8 @@ Not Supported
 
 Local table \(file\)
 
+See also [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)
+
 </td>
 <td valign="top">
 
@@ -359,7 +369,9 @@ Not Supported
 <tr>
 <td valign="top">
 
-Kafka
+Apache Kafka
+
+See also [Apache Kafka Targets](apache-kafka-targets-6df55db.md)
 
 </td>
 <td valign="top">
@@ -383,6 +395,8 @@ Supported
 
 Confluent Kafka
 
+See also [Confluent Kafka Targets](confluent-kafka-targets-74b3c95.md)
+
 </td>
 <td valign="top">
 
@@ -404,6 +418,8 @@ Supported
 <td valign="top">
 
 Cloud Storage Provider
+
+See also [Cloud Storage Provider Targets](cloud-storage-provider-targets-43d93a2.md)
 
 </td>
 <td valign="top">
@@ -427,6 +443,8 @@ Supported
 
 Google BigQuery
 
+See also [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
+
 </td>
 <td valign="top">
 
@@ -449,6 +467,8 @@ Supported
 
 SAP HANA
 
+See also  <?sap-ot O2O class="- topic/xref " href="2c2efb8945c2441a82d49355ef19195b.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/znj1755614851492/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
 </td>
 <td valign="top">
 
@@ -470,6 +490,8 @@ Not Supported
 <td valign="top">
 
 SAP Signavio
+
+See also [SAP Signavio Targets](sap-signavio-targets-b8f5e28.md)
 
 </td>
 <td valign="top">

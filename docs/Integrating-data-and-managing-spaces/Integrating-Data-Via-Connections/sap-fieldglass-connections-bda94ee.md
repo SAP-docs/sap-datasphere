@@ -214,7 +214,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the client ID. 
+Enter a valid SAP Fieldglass username. 
 
 </td>
 </tr>
@@ -228,9 +228,19 @@ Enter the client ID.
 
 Enter the client secret.
 
+> ### Note:  
+> The client secret can be either the user's application password, or, to avoid issues with password rotation, a <license key\>, as generated within the SAP Fieldglass system.
+
+
+
 </td>
 </tr>
 </table>
+
+For more information, see the *SAP Fieldglass Integration* documentation:
+
+-   [Obtaining OAuth 2.0 Client Credentials from SAP Fieldglass](https://help.sap.com/docs/SAP_FIELDGLASS_INTEGRATION/a0ce6f1caba4472793e6f7a345e5ba37/2eb112386ca348cb8a7da962d25ddaef.html)
+-   [Client Credentials Authentication](https://help.sap.com/docs/SAP_FIELDGLASS_INTEGRATION/d8db40690cb14f08a705f3bc5c9ecbb3/2eb112386ca348cb8a7da962d25ddaef.html#client-credentials-authentication)
 
 If *OAuth Grant Type* = *User Name And Password*:
 

@@ -12,19 +12,23 @@ The *Python* operator allows data manipulation and vector operations by providin
 
 The incoming `data` parameter in the `transform` function is of type Pandas DataFrame. The input table is converted into a DataFrame and fed into transform function as data parameter. You are expected to provide scripts for the intended transformation of the incoming DataFrame and also return a valid DataFrame from transform function. It is important that the returning DataFrame from the transform function has the same column names, types and order as the specified table for the output. Otherwise, execution of the data flow results in failure.
 
-> ### Note:  
-> The *Python* operator uses `mapInPandas` for parallel batch-wise processing. To ensure efficient and accurate data transformation, avoid performing global aggregation, grouping, or similar operations inside the Python code, as these require full dataset context. Instead, either use the *View Transform* operator for aggregation and grouping, or split the transformation flow to isolate operations requiring global context.
+> ### Caution:  
+> When using *Python* operators with delta loads, duplicate records with different change types may appear in delta batches, especially during row-level actions. This issue may be due to a rollback action performed on the source delta table in *Spark* runtime or because the incremental aggregation is enabled.
 
 1.  Drag and drop an object onto the source operator or select the *View Transform* to display its context menu, and click <span class="SAP-icons-TNT-V3"></span> Python operator to create the *Python* operator.
 2.  Click the *Python* operator to display its properties in the side panel.
-3.  In the *Script* section, enter your Python script to transform the incoming data and produce an output schema.
+3.  In the *General* section, under *Input Mode*, select your operator processing settings:
+    -   *System-Managed*: \[default\] The operator uses `mapInPandas` for parallel batch-wise processing. To ensure efficient and accurate data transformation, avoid performing global aggregation, grouping, or similar operations inside the Python code, as these require full dataset context. Instead, either use the *View Transform* operator for aggregation and grouping, or split the transformation flow to isolate operations requiring global context.
+    -   *User-Defined Batches*: The operator uses `applyInPandas`. Defining batches based on specific column values enables more control over data processing. You can organize and analyze data more efficiently by grouping related records together. Batches should contain similar numbers of records to help avoid out of memory issues. To define batches, click <span class="SAP-icons-V5"></span> Batch Columns and select one to three batch columns.
+
+4.  In the *Script* section, enter your Python script to transform the incoming data and produce an output schema.
 
     For information about Python support in the *Python* operator, see [Python Operator Reference](python-operator-reference-950d558.md).
 
     > ### Caution:  
-    > Changes cannot be propagated between between the *Python* script and output column. Manually update both to match to prevent errors. For example, if you add a new column in the *Script* field, you have to manually enter the same column in the *Columns* section to prevent errors.
+    > Changes cannot be propagated between the *Python* script and output column. Manually update both to match to prevent errors. For example, if you add a new column in the *Script* field, you have to manually enter the same column in the *Columns* section to prevent errors.
 
-4.  In the *Columns* section, manually specify the columns that will be output by your Python operator.
+5.  In the *Columns* section, manually specify the columns that will be output by your Python operator.
 
     > ### Note:  
     > By default, all the source columns are displayed. You can:

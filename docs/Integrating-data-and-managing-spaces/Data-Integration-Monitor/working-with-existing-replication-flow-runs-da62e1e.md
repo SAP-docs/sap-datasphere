@@ -4,334 +4,7 @@
 
 # Working With Existing Replication Flow Runs
 
-You can pause a replication flow run and resume it at a later point in time, or you can stop it completely.
-
-> ### Tip:  
-> This text explains the options related to replication flow **runs** \(in the context of monitoring\). For information about how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
-
-
-
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RunStatuses"/>
-
-## Statuses for Replication Flow Runs
-
-On the left of the monitoring screen, you find the aggregated status information for your replication flow. If the status for one or more objects in a run differs from the overall status, this is indicated by an additional status value in brackets.
-
-As long as the status is *Running* or *Active*, you cannot start another run for the same replication flow.
-
-In addition to the main statuses \(Running, Active, Completed, Paused, Failed\), and the standard substatuses \(see [Understanding Statuses and Substatuses](understanding-statuses-and-substatuses-19cb5bd.md)\), additional substatuses can be combined at the replication flow level or on the object level.
-
-
-
-### Combination of Statuses and Substatuses for a Replication Flow Running With Load Type: Initial Only
-
-
-<table>
-<tr>
-<th valign="top">
-
-Statuses \(Substatuses\)
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Running \(Failed / Paused / Retrying Objects\)
-
-</td>
-<td valign="top">
-
-The data is being loaded, but one or more objects have errors, and the user has paused one or more objects. Furthermore, one or more objects could not be loaded, and a new attempt is planned.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Running \(Failed / Paused Objects\)
-
-</td>
-<td valign="top">
-
-The data is being loaded, but one or more objects have errors, and the user has paused one or more objects.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Running \(Failed objects\)
-
-</td>
-<td valign="top">
-
-The data is being loaded, but one or more objects have errors.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Running \(Paused / Retrying Objects\)
-
-</td>
-<td valign="top">
-
-The data is being loaded, but the user has paused one or more objects, or one or more objects could not be loaded \(error or data not ready\). A new attempt is planned.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Running \(Paused Objects\)
-
-</td>
-<td valign="top">
-
-The data is being loaded, but the user has paused one or more objects.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Running \(Retrying Objects\)
-
-</td>
-<td valign="top">
-
-The data is being loaded, but one or more objects could not be loaded. A new attempt is planned.
-
-</td>
-</tr>
-</table>
-
-
-
-### Combination of Statuses and Substatuses for a Replication Flow Running with Load Type: Initial and Delta or Delta Only
-
-
-<table>
-<tr>
-<th valign="top">
-
-Statuses \(Substatuses\)
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Active \(Failed Objects\)
-
-</td>
-<td valign="top">
-
-The data will be loaded according to the schedule \(delta load interval\), but one or more objects have errors.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Active \(Failed / Paused / Retrying Objects\)
-
-</td>
-<td valign="top">
-
-The data will be loaded according to the schedule \(delta load interval\), but one or more objects have errors, and a user has paused one or more objects. Furthermore, one or more objects could not be loaded. A new attempt is planned.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Active \(Failed / Paused Objects\)
-
-</td>
-<td valign="top">
-
-The data will be loaded according to the schedule \(delta load interval\), but one or more objects have errors, and a user has paused one or more objects.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Active \(Paused / Retrying Objects\)
-
-</td>
-<td valign="top">
-
-The data will be loaded according to the schedule \(delta load interval\), but one or more objects have been paused by a user, or one or more objects could not be loaded \(error or data not ready yet\). A new attempt is planned.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Active \(Paused Objects\)
-
-</td>
-<td valign="top">
-
-The data will be loaded according to the schedule \(delta load interval\), but a user has paused one or more objects.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Active \(Retrying Objects\)
-
-</td>
-<td valign="top">
-
-The data will be loaded according to the schedule \(delta load interval\), but one or more objects could not be loaded. A new attempt is planned.
-
-</td>
-</tr>
-</table>
-
-
-
-### Statuses at Object Level
-
-
-<table>
-<tr>
-<th valign="top">
-
-Statuses
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Created
-
-</td>
-<td valign="top">
-
-The replication task for the object is created in the runtime, but has not started yet.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Completed
-
-</td>
-<td valign="top">
-
-The replication task for the object has successfully transferred the data to the target
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Failed
-
-</td>
-<td valign="top">
-
-The replication task for the object has failed during the transfer of data
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Retrying
-
-</td>
-<td valign="top">
-
-The replication task for the object is in retrying state, due to temporary errors, or waiting for delta data from the source system
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Deleting
-
-</td>
-<td valign="top">
-
-The replication task for the object is getting cleaned up or removed by the runtime.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Paused
-
-</td>
-<td valign="top">
-
-The replication task for the object has been paused by the user
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Pausing
-
-</td>
-<td valign="top">
-
-The replication task for the object is in the process of being paused
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Running, Initial Running, Delta Running
-
-</td>
-<td valign="top">
-
-The replication task for the object is currently transferring data to the target object.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Restarting
-
-</td>
-<td valign="top">
-
-The replication task for the object is re-initializing
-
-</td>
-</tr>
-</table>
+You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 
 
 
@@ -339,7 +12,11 @@ The replication task for the object is re-initializing
 
 ## Scheduling a Replication Flow
 
-You can create a schedule for your replication flow and include your replication flow in a task chain if all objects in it have load type *Initial Only*. For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+You can create a schedule for your replication flow and include your replication flow in a task chain if all objects in it have load type *Initial Only*.
+
+To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
+
+For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
 
 
 
@@ -453,4 +130,38 @@ To pause, resume or restart a replication flow:
 ## Changing the Delta Interval for a Replication Flow
 
 This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_npd_zxq_dgc"/>
+
+## Configure Email Notification for Replication Flow Failure at Object Level
+
+From the details screen of a replication flow run, you can set up email notification to be notified when the replication of an individual object fails in your replication flow:
+
+1.  Go to *Data Integration Monitor* \> *Flows* monitor.
+2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
+3.  Click *Runtime Email Notification* and configure the email. For more information on how to configure the e-mail, see [Configure Email Notification for Replication Flow Failure at Object Level](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5dc4db23d3894b10aca6ade3c666554d.html "Set up email notifications to stay informed when individual replication objects fail in a running replication flow.") :arrow_upper_right:.
+
+
+
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_bqp_rm1_2gc"/>
+
+## Editing the Run Settings
+
+From the details screen of a replication flow run, you can change the run settings to adapt the parameters for your need.
+
+> ### Note:  
+> You must have the DW Integrator role and the replication flow must be deployed successfully.
+
+1.  Go to *Data Integration Monitor* \> *Flows* monitor.
+2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
+3.  Open the tab **Run Settings** and update as per your need:
+
+    -   Source Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10.
+    -   Target Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10. 
+    -   Delta Load Frequency: \[only relevant for load type *Initial and Delta* and *Delta Only*\] Define the time interval for replicating changes from the source to the target.
+
+    For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.
+
 

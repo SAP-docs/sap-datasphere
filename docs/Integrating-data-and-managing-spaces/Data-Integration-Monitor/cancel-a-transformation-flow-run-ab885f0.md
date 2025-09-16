@@ -34,6 +34,7 @@ You can use the *Cancel Run* button to stop a transformation flow run that is cu
     -   *Cancel run without rollback*: The run will stop where it is and what has already been processed will be kept, including parallel changes from other apps. Data might be altered. If you restart the run later, it will resume from where it has stopped.
 
     > ### Caution:  
-    > Cancelling a run with rollback may create duplicate records for the target table. If this table is used as source in another transformation flow, the run may fail because of duplicate delta records. Reset the watermark on the failing transformation flow to ensure that these changes are reflected in records that have already been transferred. For more information, see [Watermarks](watermarks-890897f.md).
+    > -   Cancelling a run with rollback may create duplicate records for the target table. If this table is used as source in another transformation flow, the run may fail because of duplicate delta records. Reset the watermark on the failing transformation flow to ensure that these changes are reflected in records that have already been transferred. For more information, see [Watermarks](watermarks-890897f.md).
+    > -   Cancelling a transformation flow run in *Spark* runtime, if the target table is also used as a delta capture source table, can lead to duplicate records due to the rollback process. These duplicates are identified by the *Change* types. To resolve the issue, reset the watermark and restart the initial load to ensure data consistency and prevent further duplication.
 
 

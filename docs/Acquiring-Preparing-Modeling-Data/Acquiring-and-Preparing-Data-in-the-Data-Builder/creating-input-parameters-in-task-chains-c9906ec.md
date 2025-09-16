@@ -1,0 +1,167 @@
+<!-- loioc9906ec515f04fbd9589c59339b03c6c -->
+
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
+# Creating Input Parameters in Task Chains
+
+Create input parameters in task chains and nested task chains. This will provide more flexibility working in task chains and nested task chains.
+
+
+
+<a name="loioc9906ec515f04fbd9589c59339b03c6c__prereq_s2x_dby_mgc"/>
+
+## Prerequisites
+
+To create input parameters in task chains, you need to have the correct authorizations required to create and run task chains. For more information see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
+
+To utilize input parameters in task chains, you must have task objects that have input parameters added at the source level of the task. You can use SQL script procedures with input parameters, transformation flows with input parameters, and you can nest a task chain with input parameters described in the following process. For more information see [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md), [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md) and [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md).
+
+
+
+## Context
+
+Define imported parameters on the task level. You can set values of the input parameters from the source on the task level. You can also map these set input parameters to the task chain level.
+
+Define different values for the input parameters on the task level and the task chain levels to create more flexibility.
+
+Additionally, you can create a new input parameter on the task chain level. These options will allow you to create a simple task chain with input parameters. This task chain can be used as an object to be nested in future task chains to create nested task chains with input parameters.
+
+
+
+## Procedure
+
+1.  Create a new task chain.
+
+2.  Drag and drop a task object that supports input parameters in task chains.
+
+    > ### Note:  
+    > SQL procedures with input parameters, transformation flows with input parameters, and task chains with input parameters are supported objects.
+
+3.  If the source is an object containing one or more input parameters, the *Map Input Parameters* dialog is displayed, and you must decide how each input parameter will be processed:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Technical Name*
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] The technical names of input parameters created in the task source cannot be modified.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Action*
+    
+    </td>
+    <td valign="top">
+    
+    Choose from the drop down list how you want to process each source task.
+
+    -   *Map To* - Map the source input parameter to the task chain. You can select an existing input parameter or create a new one.
+
+        You will need to provide a value for the input parameter to be mapped to the task chain level.
+
+    -   *Set Value* - Enter a value to resolve the input parameter. This will set a value for the input parameter on the task level.
+
+    > ### Note:  
+    > You can click *Cancel* in the dialog and not map the input parameters immediately, but then an error is displayed on the source, and you must subsequently map them in the source side panel *Input Parameters* section.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Value*
+    
+    </td>
+    <td valign="top">
+    
+    Define option depending on the *Action* chosen.
+
+    -   *Map To*: Choose an option from the drop down list.
+
+        Map the existing input parameter to the task chain. This will create a new input parameter with the same name as the imported input parameter. The technical name will be shown.
+
+    -   > ### Note:  
+        > The first mapped parameter will be a new input parameter with the same name as the source input parameter name. After the first mapped input parameter, you will have the option to create a new input parameter or map to the existing input parameter created.
+
+
+    -   *Set Value*: Set a value for the input parameter on the task level.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+4.  Press *OK*. This will save your mapped or value options on the task level.
+
+    > ### Note:  
+    > The input parameter technical name and set value will show up in the properties panel on the right on the object task level.
+
+5.  View the properties panel on the task chain level. You will see the new input parameter on the task chain level. It will have the same name and value.
+
+6.  Click on the input parameter name to view and edit details. An *Edit Input Parameters* pop up will open. You can keep the default value or change the default value in the *Default Value* field. You can also click <span class="FPA-icons-V3"></span> \(Add\) to create a new input parameter in the task chain.
+
+7.  Option: Create a new input parameter in the task chain from the task chain properties panel.
+
+    > ### Note:  
+    > 1.  Open your task chains properties panel on the right. Click <span class="FPA-icons-V3"></span> \(Input Parameters\) .
+    > 2.  The *Edit Input Parameters* dialog box will open.
+    > 3.  Click <span class="FPA-icons-V3"></span> \(Add\) to create a new input parameter in the task chain.
+    > 4.  Create a name for your new input parameter in your task chain. You can define a value at this time, but it is not required. You can also delete the first mapped value and leave only the newly created parameter in the task chain.
+
+8.  Press *OK*. This will save your parameters and values on the task chain level.
+
+9.  Drag and drop your nest task into your task chain. If the task supports input parameters, you will see the same *Map Input Parameters* pop up. Follow the same process as above.
+
+10. After you have finished adding object to your task chain, save the task chain. Give the task chain a name and click *Save*.
+
+11. Deploy and run the task chain. For more information, see [Run a Task Chain](run-a-task-chain-684bd8b.md).
+
+    > ### Note:  
+    > If you have deployed a task chain with input parameters, you will see a new *Input Parameters* pop up that will show your input parameters and their default values. Click *Execute*.
+    > 
+    > Optional: You can keep the default value or change the value of your input parameters before executing the task chain by changing the value in the pop up box.
+
+12. View the status of your task chain by going to *Data Integration Monitor* \> *Task Chains*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+
+    > ### Note:  
+    > In the messages panel on the right, you can see click *View Details* to review the names and values of the input parameters in your task chain.
+
+    Use task chains created with input parameters to create nested task chains with input parameters. This is similar to the process above.
+
+13. Drag and drop a task chain \(object\) with input parameters from the left panel to start a new task chain or add to an existing task chain. For more information about nested task chains see [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md),
+
+14. The *Map Input Parameter* dialog box will pop up. You will see the original parameter name. Choose your *Action* and *Value*.
+
+    > ### Note:  
+    > If you created a new input parameter in your previous task chain, you can map to this new parameter. If a value was not defined, you can choose to define a value.
+
+    > ### Note:  
+    > When working with input parameters with task chains, the parameters from the child task chain are mapped to the parent task chain.
+
+    > ### Caution:  
+    > If the underlying source task has not defined a default value for the parameter and no value is supplied while adding the task to the task chain, the execution of the task may fail due to the absence of a parameter value.
+
+

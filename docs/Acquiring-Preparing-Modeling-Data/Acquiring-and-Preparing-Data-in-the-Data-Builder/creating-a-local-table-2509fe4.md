@@ -123,12 +123,19 @@ In addition to working with tables in the editor, you can also:
     <tr>
     <td valign="top">
     
-     
+    Dimension Type
     
     </td>
     <td valign="top">
     
-    \[dimensions only\]
+    \[dimensions only\] Select whether your dimension is *Standard* or *Fiscal Time*. 
+
+    For *Fiscal Time* dimensions, click the *Settings* button and identify the following:
+
+    -   *Fiscal Period Start Column* - Select the column containing the dates of the start of your fiscal period.
+    -   *Fiscal Period End Column* - Select the column containing the dates of the end of your fiscal period.
+
+    You must select columns with a data type *Date* \(or with a data type *String\(8\)* and a semantic type *Calendar - Date*\).
     
     </td>
     </tr>
@@ -140,7 +147,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[dimensions only\] Enables users to include the table data when transporting the table in a repository package.
+    \[dimensions only\] \[SAP Business Data Cloud formation tenants only\] Enables users to include the table data when transporting the table in a repository package.
 
     This feature is intended to allow you to transport data for static or slowly changing dimensions and can only be used to initialize data when importing the table for the first time.
 
@@ -374,7 +381,7 @@ In addition to working with tables in the editor, you can also:
 
     -   Standard table: *Delete All Records* 
     -   Delta capture table: *Delete All Records*, *Delete Records Marked as "Deleted"*, or *Delete all records marked for deletion which are older than the specified number of days*.
-    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete previous versions \(Vacuum\), which are older than the specified number of days* 
+    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete Previous Versions \(Vacuum\), which are older than the specified number of days* 
 
     See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
     

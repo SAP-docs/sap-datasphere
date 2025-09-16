@@ -144,9 +144,6 @@ To set up certificate-based authentication, the following is required:
     For more information, see [How to Create a Communication Arrangement](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/a0771f6765f54e1c8193ad8582a32edb.html) in the *SAP S/4HANA Cloud Public Edition* documentation.
 
 
-> ### Note:  
-> Authentication with X.509 client certificate is not supported for federated access with remote tables using the ABAP SQL service.
-
 **Related Information**  
 
 

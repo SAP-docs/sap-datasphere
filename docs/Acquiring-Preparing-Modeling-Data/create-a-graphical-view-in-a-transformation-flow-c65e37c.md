@@ -36,6 +36,13 @@ When working in a view transform, you are using an editor similar to the standar
 
 3.  The system displays the *Graphical View Editor*. Add a source. For more information, see [Add a Source to a Graphical View](add-a-source-to-a-graphical-view-1eee180.md).
 
+    You can use only one table source with *Delta Capture On* in a transformation flow. Additionally, the following actions cannot be performed on the delta capture enabled source:
+
+    -   Calculated Column: You cannot use a column of type Change\_Date to create a new calculated column.
+    -   Mapping: You must map a source column of type Change\_Type to a target column of the same type. To map a source column of type Change\_Type to a target table of a different type, create a calculated column. You can map a source column of type Change\_Date only to a column of the same type in the target table.
+    -   Union: You cannot join two*Delta Capture* tables in a union. You cannot create a union when any source table has the value *Delta Capture* for the option*Load from Table*.
+    -   Join: You can join two *Delta Capture* tables only when one source table has the value *Delta Capture* for the option *Load from Local Table*.
+
 4.  Optional: Drag additional sources from the *Repository* tab or from the *Sources* tab and drop them onto a source to create a join or union. For more information, see [Create a Join in a Graphical View](create-a-join-in-a-graphical-view-947d6d8.md) and [Create a Union in a Graphical View](create-a-union-in-a-graphical-view-5c3d354.md).
 
 5.  Click a node in the diagram to display tools for creating operators and performing other actions:

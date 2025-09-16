@@ -125,6 +125,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     3.  Click *Save*. You can see the updated columns in the *Incremental Aggregations* section.
 
     > ### Note:  
+    > -   Incremental aggregations are supported only if the source table has *Delta Capture* enabled.
     > -   LAST refers to the latest operations applied on the row.
     > -   Columns with non-numerical aggregation types can only have the type LAST.
     > -   In the case the row is deleted on the source delta table, the row will be available in the target table and the aggregated values are then set to 0.

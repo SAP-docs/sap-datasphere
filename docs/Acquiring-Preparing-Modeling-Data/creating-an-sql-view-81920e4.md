@@ -246,6 +246,25 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
+    Dimension Type
+    
+    </td>
+    <td valign="top">
+    
+    \[dimensions only\] Select whether your dimension is *Standard* or *Fiscal Time*. 
+
+    For *Fiscal Time* dimensions, click the *Settings* button and identify the following:
+
+    -   *Fiscal Period Start Column* - Select the column containing the dates of the start of your fiscal period.
+    -   *Fiscal Period End Column* - Select the column containing the dates of the end of your fiscal period.
+
+    You must select columns with a data type *Date* \(or with a data type *String\(8\)* and a semantic type *Calendar - Date*\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Expose for Consumption
     
     </td>

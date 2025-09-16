@@ -10,8 +10,6 @@ When the tenant is configured, a data center region is selected. The main role o
 
 Each data center region has multiple availability zones. Your workloads are deployed in these various zones. By distributing workloads across different zones, we ensure our services remain available, even if a specific zone experiences issues. By keeping backup data within the same data center zone, the latency for data transfers and access is minimized. This infrastructure strategy balances the workload and enhances performance. The zone deployment contributes to a more robust and reliable infrastructure, ensuring near-zero downtime for your critical processing needs.
 
-For information about enabling multiple availability zones, see this [SAP Knowledge Base Article](https://me.sap.com/notes/3518414).
-
 
 <table>
 <tr>

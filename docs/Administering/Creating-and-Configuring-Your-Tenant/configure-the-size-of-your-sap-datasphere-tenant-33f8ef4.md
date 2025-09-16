@@ -146,7 +146,7 @@ Enable this option to access the SAP HANA Automated Predictive Library \(APL\) a
 </td>
 <td valign="top">
 
-Enable this option to access SAP HANA multi-availability zones and to provide a synchronous replica in a different availability zone. The second availability zone provides a high-availability setup for the SAP Datasphere runtime SAP HANA Cloud. To use this feature, SAP HANA Cloud must have a minimum of 64 GB of memory configured.
+Enable this option to access SAP HANA multi-availability zones and to provide a synchronous replica in a different availability zone in the same region. The second availability zone provides a high-availability setup for the SAP Datasphere runtime SAP HANA Cloud. To use this feature, SAP HANA Cloud must have a minimum of 64 GB of memory configured.
 
 </td>
 </tr>
@@ -193,7 +193,7 @@ To reduce the size of your data lake storage, you must first delete your data la
 > 2.  Select *Edit*.
 > 3.  Under *General Settings*, clear the *Use this space to access data lake* checkbox.
 > 
-> Data lake is not available in all regions. See SAP Note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
+> Data lake is not available in all regions. See SAP Note [3341026](https://launchpad.support.sap.com/#/notes/3341026).
 
 
 
@@ -426,7 +426,7 @@ Description
 
 \[optional\] \] Enter the number of blocks to allocate to data integration applications \(replication flows and transformation flows\).
 
-Even if you don’t allocate blocks here, you have a default number of execution hours for data integration \(depending on your contract\). For more information about this, as well as about how many execution hours you get per block, see the SAP Datasphere and SAP Datasphere, Test Tenant Supplemental Terms and Conditions, which are a part of the  <?sap-ot O2O class="- topic/xref " href="962dfadea39843efaa806323b9a872fe.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/mfv1753212261668/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/33f8ef4ec359409fb75925a68c23ebc3.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+Even if you don’t allocate blocks here, you have a default number of execution hours for data integration \(depending on your contract\). For more information about this, as well as about how many execution hours you get per block, see the SAP Datasphere and SAP Datasphere, Test Tenant Supplemental Terms and Conditions, which are a part of the [Service Level Agreement for SAP Cloud Services](https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?sort=latest_desc&search=SERVICE+LEVEL+AGREEMENT+FOR+SAP+CLOUD+SERVICES&pdf-asset=ae9ce46b-187e-0010-bca6-c68f7e60039b&page=1).
 
 </td>
 </tr>

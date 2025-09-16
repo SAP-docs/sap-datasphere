@@ -27,6 +27,8 @@ This topic contains the following sections:
 
 > ### Note:  
 > You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+> 
+> Consider also the following SAP Note content [3223810](https://me.sap.com/notes/3223810).
 
 You have a folder in the target environment \(object store provider\) into which the data can be replicated.
 

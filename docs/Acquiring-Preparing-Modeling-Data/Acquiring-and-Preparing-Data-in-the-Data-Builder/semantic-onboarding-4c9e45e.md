@@ -53,5 +53,5 @@ For more information, see [Importing SAP and Partner Business Content from the C
 
 Users with the *DW Modeler* role \(or equivalent privileges\) can acquire data products from data providers and import them into their space to combine with internal data.
 
-Click a tile to open the context in the data marketplace \(see  <?sap-ot O2O class="- topic/xref " href="2dfea3aaf20844268dd8ecdb008a992d.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/mfv1753212261668/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/4c9e45e19ff14271a65f883e30023736.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
+Click a tile to open the context in the data marketplace \(see  <?sap-ot O2O class="- topic/xref " href="2dfea3aaf20844268dd8ecdb008a992d.xml" text="" desc="" xtrc="xref:10" xtrf="file:/home/builder/src/dita-all/znj1755614851492/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/4c9e45e19ff14271a65f883e30023736.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
 

@@ -32,6 +32,9 @@ For more information about available connection types, sources, and targets, see
 > -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
+> ### Restriction:  
+> Replication flows do not support input parameters.
+
 
 
 <a name="loio25e2bd7a70d44ac5b05e844f9e913471__steps_qxh_dqv_fvb"/>
@@ -118,7 +121,7 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Delta Load Interval
+    Delta Load Frequency
     
     </td>
     <td valign="top">
@@ -206,6 +209,30 @@ For more information about available connection types, sources, and targets, see
     > The option is enabled by default when you create a new replication with SAP Datasphere as target and load type *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(and a redeployment will be needed\).
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Thread Limit \(1-100\)
+    
+    </td>
+    <td valign="top">
+    
+    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Thread Limit \(1-100\)
+    
+    </td>
+    <td valign="top">
+    
+    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -302,20 +329,6 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Object Thread Count for Delta Loads
-    
-    </td>
-    <td valign="top">
-    
-    Enter the number of threads to be used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*. 
-
-    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     Target Columns
     
     </td>
@@ -345,6 +358,9 @@ For more information about available connection types, sources, and targets, see
     When you deploy your replication flow, it gets saved in the shared repository and is available for other users to view, import, or modify.
 
     When deploying your replication flow, the system does a series of validation checks and outputs an error message if it finds an issue in the flow configuration.
+
+    > ### Note:  
+    > If you have the DW Integrator role, you can change the run settings after the deployment is complete. See [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)
 
 8.  Click <span class="FPA-icons-V3"></span> \(Run\) to start your replication flow.
 
@@ -471,6 +487,18 @@ For more information about available connection types, sources, and targets, see
     <td valign="top">
     
     Toggles the display of the *Properties* panel.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Runtime Email Notification\)
+    
+    </td>
+    <td valign="top">
+    
+    Configure email notification to receive an email when the replication of an object fails during a replication flow run. For more information, see [Configure Email Notification for Replication Flow Failure at Object Level](configure-email-notification-for-replication-flow-failure-at-obj-5dc4db2.md)
     
     </td>
     </tr>

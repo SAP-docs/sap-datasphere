@@ -1,5 +1,7 @@
 <!-- loioa49a1e3cc50f4af89711d8306bdd8f26 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # SAP S/4HANA On-Premise Connections
 
 Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.
@@ -517,6 +519,9 @@ You can select:
 -   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
 -   *OAuth 2.0* - You can select this option only if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables and model import currently are not supported with OAuth authentication.
 
+    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+
+
 
 
 </td>
@@ -561,7 +566,7 @@ Displays *Client Credentials* as grant type used to retrieve an access token.
 </td>
 <td valign="top">
 
-Enter the API endpoint to use to request an access token.
+Enter the SAP Datasphere *Token URL* which is available under <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*** \> ***OAuth Clients* \(see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -674,7 +679,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the client ID to authenticate SAP Datasphere to the SAP S/4HANA system. 
+Enter the client ID you received when creating the OAuth client in SAP Datasphere. 
 
 </td>
 </tr>
@@ -686,7 +691,7 @@ Enter the client ID to authenticate SAP Datasphere to the SAP S/4HANA system.
 </td>
 <td valign="top">
 
-Enter the client secret to authenticate SAP Datasphere to the SAP S/4HANA system.
+Enter the client secret you received when creating the OAuth client in SAP Datasphere.
 
 </td>
 </tr>

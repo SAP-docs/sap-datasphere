@@ -42,7 +42,7 @@ SAP Business AI is integrated to generate AI content recommendations in various 
 
 4.  Click *Save*.
 
-5.  Grant the *DW AI Consumer* privilege to users whom you want to access SAP Business AI features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
+5.  Grant the *DW AI Consumer* privilege to users whom you want to access SAP Business AI features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md) \).
 
     Users who have been granted the privilege will see this icon in areas of SAP Datasphere where AI is available for use: <span class="SAP-icons-V5"></span>
 

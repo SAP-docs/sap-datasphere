@@ -13,19 +13,15 @@ Create a transformation flow to load data from one or more sources, apply transf
 A transformation flow run is a one-time event that completes when the relevant data is loaded to the target table successfully. You can run a transformation flow multiple times, for example if you are loading delta changes to the target table.
 
 > ### Note:  
-> Views and Open SQL schema objects that reference remote tables \(either directly or indirectly\) are not supported. However, views that reference remote tables in BW Bridge spaces are supported.
+> -   Loading delta changes from views is not supported.
+> -   Remote tables located in SAP BW bridge spaces must be shared with the SAP Datasphere space you are using to create your transformation flow.
+> -   Views and Open SQL schema objects aren't supported if:
 > 
-> Loading delta changes from views is not supported.
-
-> ### Note:  
-> Views and Open SQL schema objects are not supported in the following cases:
+>     -   They reference remote tables either directly or indirectly.
+>     -   They consume \(either directly or indirectly\) a view that has a data access control applied to it.
+>     -   A data access control has been applied to the view.
 > 
-> -   A data access control has been applied to the view.
-> 
-> -   A view or Open SQL schema object consumes \(either directly or indirectly\) a view that has a data access control applied to it.
-
-> ### Note:  
-> Remote tables located in SAP BW bridge spaces must be shared with the SAP Datasphere space you are using to create your transformation flow.
+>     However, views that reference remote tables in BW Bridge spaces are supported.
 
 Creating a transformation flow involves two important steps:
 
@@ -35,10 +31,10 @@ Creating a transformation flow involves two important steps:
 
 
 > ### Note:  
-> A transformation flow only supports the loading of data to a local table in the SAP Datasphere repository.
-
-> ### Note:  
-> A transformation flow generates internal SQL objects that must only be consumed by SAP Datasphere internal apps, and are not allowed for external data access.
+> A transformation flow:
+> 
+> -   Only supports the loading of data to a local table in the SAP Datasphere repository.
+> -   Generates internal SQL objects that must only be consumed by SAP Datasphere internal apps, and are not allowed for external data access.
 
 In addition to working with flows in the editor, you can also:
 
@@ -168,7 +164,7 @@ In addition to working with flows in the editor, you can also:
 
     You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose:
 
-    -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see [Running a Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/running-a-flow-5b591d4.md).
+    -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see  <?sap-ot O2O class="- topic/xref " href="5b591d4998fa4a148750016a29ada91e.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/znj1755614851492/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/c5fb32d39c984f748e50b9aef91175d4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
     -   *Simulate Run*: In the *Data Integration Monitor*, you can open the transformation flow and click *Run* \> *Run with Settings* \> *Simulate Run* to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table. For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
 
 
@@ -178,6 +174,15 @@ In addition to working with flows in the editor, you can also:
     </table>
     
     In the *Run Status* section, you can view the status of the transformation flow run.
+
+    In the *Input Parameters* section, you can create input parameters to prompt them to enter values for filtering or other calculations when running the flow in *SAP HANA* runtime or *Apache Spark* runtime. See [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md).
+
+    > ### Note:  
+    > -   There are no business name, technical names, and no default value help.
+    > -   In the *Graphical View Editor*, input parameters can only be used. They cannot be created, edited, or deleted.
+    > -   A scheduled transformation flow uses the default value of the input parameter.
+    > -   Input parameters defined in transformation flows can be used in operators within the transformation flow, except for the *Python* operation in *Apache Spark* runtime.
+    > -   A transformation flow executed as part of a task chain receives input parameters from the task chain. See [Creating Input Parameters in Task Chains](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-input-parameters-in-task-chains-c9906ec.md).
 
 5.  Click <span class="FPA-icons-V3"></span> \(Save\). A dialog box appears. Enter a business name and a technical name for your transformation flow.
 

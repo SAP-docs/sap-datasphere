@@ -281,7 +281,7 @@ In addition to working with task chains in the editor, you can also:
         > -   Optimize: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\)..
         > -   Delete Records: Delete records from your local table \(file\). Under Settings, define what type of deletion you want:
         >     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-        >     -   *Delete previous versions \(Vacuum\), which are older than the specified number of days*: Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. 
+        >     -   *Delete Previous Versions \(Vacuum\), which are older than the specified number of days*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. 
         > 
         > 
         > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
@@ -321,7 +321,7 @@ In addition to working with task chains in the editor, you can also:
     \[File Space Only\] When creating a file space, administrators have defined default *Apache Spark Applications* to run tasks \(in Workload Management\). You can update these settings following your needs by object types:
 
     -   *Use Default*: The default application is the application selected by an administrator during the file space creation. However, if the settings have been changed on the object level, in the data integration monitor, this value has become the default value, erasing the value defined in *Workload Management*.
-    -   *Define New Setting for This Task*: Select another *Apache Spark Application* that fits your need.
+    -   *Define New Setting for This Task*: Select another *Apache Spark Application* that fits your needs.
 
     For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: and [Override the Default Settings to Run Your Transformation Flow (in a File Space)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e5c4ac8ab3bf4573b86cd4f4f3118c16.html "Update the maximum amount of compute resources that the file space can consume to run a transformation flow.") :arrow_upper_right:.
     

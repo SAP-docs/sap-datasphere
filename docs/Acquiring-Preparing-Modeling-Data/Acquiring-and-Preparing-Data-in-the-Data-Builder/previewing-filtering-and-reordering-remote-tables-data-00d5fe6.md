@@ -4,7 +4,10 @@
 
 You have imported a remote table and want to preview and reorganize the data for your needs.
 
-What you can do to preview or reorganize your data depends on the connection and the adapter:
+What you can do to preview or reorganize your data depends on the connection and the adapter.
+
+> ### Caution:  
+> Previewing data from a remote table with a large data volume may overload your source system, resulting in an out-of-memory error.
 
 
 <table>

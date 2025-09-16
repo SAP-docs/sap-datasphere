@@ -4,6 +4,14 @@
 
 To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.
 
+This topic contains the following sections:
+
+-   [Remote Tables](prepare-connectivity-to-sap-abap-systems-76c9ac1.md#loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_rt_SAP_ABAP)
+-   [Data Flows](prepare-connectivity-to-sap-abap-systems-76c9ac1.md#loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_df_SAP_ABAP)
+-   [Replication Flows](prepare-connectivity-to-sap-abap-systems-76c9ac1.md#loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_rf_SAP_ABAP)
+-   [X.509 Client Certificates](prepare-connectivity-to-sap-abap-systems-76c9ac1.md#loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_X509_SAP_ABAP)
+-   [OAuth 2.0 Authentication](prepare-connectivity-to-sap-abap-systems-76c9ac1.md#loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_OAuth_SAP_ABAP)
+
 
 
 <a name="loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_rt_SAP_ABAP"/>
@@ -46,13 +54,22 @@ If you want to federate and replicate data from ABAP-based on-premise systems us
 
 Before you can use the connection for data flows, the following is required:
 
--   If the connected system is an on-premise source, an adminstrator has installed and configured Cloud Connector.
+-   If the connected system is an on-premise source, an administrator has installed and configured Cloud Connector.
 
     In the Cloud Connector configuration, an administrator has made sure that access to the required resources is granted.
 
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
+
+-   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using data flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
+
+    -   In the *Back-end Type* field, select *ABAP System*.
+    -   In the *Protocol* field, select *RFC SNC*.
+    -   In the *Principal Type* field, select *X.509 Certificate*.
+    -   In the *SNC Partner Name* field, enter the ABAP system's SNC identity name \(for example, `p:CN=SID, O=Trust Community, C=DE`\). The SNC partner name needs to contain the correct SNC identification of the ABAP system. The value can typically be found in the ABAP system instance profile parameter `snc/identity/as` \(and hence is provided per application server\).
+
+    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
 
 -   If you want to connect to SAP S/4HANA Cloud to replicate extraction-enabled, C1-released CDS views: Consider the information about preparing an SAP S/4HANA Cloud connection for data flows.
 
@@ -61,7 +78,7 @@ Before you can use the connection for data flows, the following is required:
 
 
 
-<a name="loio76c9ac1a318c4de2bea29e72c64be8a0__section_stp_5kk_qwb"/>
+<a name="loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_rf_SAP_ABAP"/>
 
 ## Replication Flows
 
@@ -80,10 +97,44 @@ Before you can use the connection for replication flows, the following is requir
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
+-   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using replication flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
+
+    -   In the *Back-end Type* field, select *ABAP System*.
+    -   In the *Protocol* field, select *RFC SNC*.
+    -   In the *Principal Type* field, select *X.509 Certificate*.
+    -   In the *SNC Partner Name* field, enter the ABAP system's SNC identity name \(for example, `p:CN=SID, O=Trust Community, C=DE`\). The SNC partner name needs to contain the correct SNC identification of the ABAP system. The value can typically be found in the ABAP system instance profile parameter `snc/identity/as` \(and hence is provided per application server\).
+
+    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
+
 -   If you want to connect to SAP S/4HANA Cloud to replicate extraction-enabled, C1-released CDS views or you want to replicate CDS view entities using the SQL service exposure: Consider the information about preparing an SAP S/4HANA Cloud connection for replication flows.
 
     For more information, see [Prepare Connectivity to SAP S/4HANA Cloud](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md).
 
+-   If you want to use RFC fast serialization for your replication flows, see SAP Note [3486245](https://me.sap.com/notes/3486245).
+
+
+
+
+<a name="loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_X509_SAP_ABAP"/>
+
+## X.509 Client Certificates
+
+You can use X.509 client certificates for authentication if you're using Web Socket RFC protocol for your *SAP ABAP* connection.
+
+For information about setting up certificate-based authentication, see [X.509 Client Certificates](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_X509) in [Prepare Connectivity to SAP S/4HANA Cloud](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md).
+
+
+
+<a name="loio76c9ac1a318c4de2bea29e72c64be8a0__prereq_OAuth_SAP_ABAP"/>
+
+## OAuth 2.0 Authentication
+
+You can use OAuth 2.0 authentication if you're using RFC protocol and Cloud Connector \(for replication flows and data flows\) for your connection to an SAP ABAP on-premise system.
+
+For information about setting up OAuth 2.0 authentication, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](prepare-oauth-2-0-authentication-for-sap-abap-and-sap-s-4hana-connections-03dde85.md).
+
+> ### Note:  
+> Remote tables are not supported with OAuth 2.0 authentication.
 
 **Related Information**  
 

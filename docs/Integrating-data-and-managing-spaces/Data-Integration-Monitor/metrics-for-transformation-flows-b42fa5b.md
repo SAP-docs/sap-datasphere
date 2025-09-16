@@ -46,4 +46,20 @@ Metrics provide the record count for source and target tables used in the flow. 
 
     ID of the job used to run the transformation flow on an Apache Spark runtime. This ID must be provided to the SAP support to retrieve and analyze the jobs, and identify the cause of errors.
 
+-   `PYTHON_TOTAL_BATCHES`
+
+    Total number of batches processed in the given task. It provides insight into how many times the batch processing logic was executed. A high number of batches might indicate a large dataset, fine-grained batch sizes, or efficient parallel processing.
+
+-   `PYTHON_MAX_BATCH_SIZE`
+
+    Size of the largest batch processed. It can help identify if there are unusually large batches, which may indicate data skew \(a situation where certain batches contain significantly more data than others\). Large batches can lead to performance bottlenecks, as they may take disproportionately longer to process compared to smaller batches.
+
+-   `PYTHON_MIN_BATCH_SIZE`
+
+    Size of the smallest batch processed. It provides insight into the smallest unit of data being processed. Consistently small batches might indicate evenly distributed data or very fine-grained task partitioning.
+
+-   `PYTHON_AVG_BATCH_SIZE`
+
+    Average size of all batches. It gives a global view of the typical batch size. Comparing this metric against the minimum and maximum batch sizes can help understand the variance in batch sizes. If the average batch size is significantly different from the minimum and maximum, it might suggest inconsistent batch sizing and potential data skew.
+
 

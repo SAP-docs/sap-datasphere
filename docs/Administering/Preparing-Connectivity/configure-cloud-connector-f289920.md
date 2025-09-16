@@ -636,9 +636,14 @@ For more information about the supported use cases depending on the connection t
     5.  Choose *Save*.
 
 
-4.  \[optional\] To enable secure network communication \(SNC\) to an ABAP system, which you want to connect to for using data flows and replication flows, configure SNC in the Cloud Connector.
+4.  \[optional\] If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using data flows or replication flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
 
-    For more information, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
+    -   In the *Back-end Type* field, select *ABAP System*.
+    -   In the *Protocol* field, select *RFC SNC*.
+    -   In the *Principal Type* field, select *X.509 Certificate*.
+    -   In the *SNC Partner Name* field, enter the ABAP system's SNC identity name \(for example, `p:CN=SID, O=Trust Community, C=DE`\). The SNC partner name needs to contain the correct SNC identification of the ABAP system. The value can typically be found in the ABAP system instance profile parameter `snc/identity/as` \(and hence is provided per application server\).
+
+    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
 
 
 

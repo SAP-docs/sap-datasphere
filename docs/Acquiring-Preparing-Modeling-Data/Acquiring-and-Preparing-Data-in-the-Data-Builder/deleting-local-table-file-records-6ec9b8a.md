@@ -35,7 +35,7 @@ Local Tables \(File\) store large amount of data, including historical data. Whe
 3.  Choose one of the 2 available options:
 
     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-    -   *Delete previous versions \(Vacuum\), which are older than the specified number of days*: Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted.
+    -   *Delete Previous Versions \(Vacuum\), which are older than the specified number of days*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted.
 
         > ### Note:  
         > 7 days means start time of the task - 169 hours \(7 days X 24 hours + 1hour\). For more information about the 7 retention days and vacuum, see [Remove files no longer referenced by a Delta table](https://docs.delta.io/latest/delta-utility.html#remove-files-no-longer-referenced-by-a-delta-table)
@@ -47,7 +47,7 @@ Local Tables \(File\) store large amount of data, including historical data. Whe
     \[Optional\]. When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator:
 
     -   *Use Default*: The default application is the application selected by an administrator during the file space creation.
-    -   *Define New Setting for This Table*: Select another *Apache Spark Application* that fits your need.
+    -   *Define New Setting for This Table*: Select another *Apache Spark Application* that fits your needs.
 
 4.  Confirm with *Delete* to start the deletion task.
 

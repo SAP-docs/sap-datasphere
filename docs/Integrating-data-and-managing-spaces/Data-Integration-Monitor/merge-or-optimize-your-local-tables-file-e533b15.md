@@ -49,7 +49,7 @@ However, you can change the maximum amount of compute resource that can get cons
 Go to the *Setting* tab and change the default settings of Apache Spark application for next runs:
 
 -   *Use Default*: The default application is the application selected by an administrator during the file space creation..
--   *Define New Setting for This Table*: Select another *Apache Spark Application* that fits your need..
+-   *Define New Setting for This Table*: Select another *Apache Spark Application* that fits your needs..
 
 
 

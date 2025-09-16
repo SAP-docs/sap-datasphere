@@ -269,6 +269,8 @@ In addition to working with flows in the editor, you can also:
             > -   If multiple data flows are scheduled with *Expected Data Volume* as large, it doesn't alter/increase the actual memory needed for the data flow. However, the execution engine will allocate enough memory to handle such large volume of data and only after successful memory allocation, the data flow run is started.
             > 
             >     Execution engine allocates memory based on the data volume configured and the complexity of the operations performed in the data flow.
+            > 
+            > -   The dynamic memory allocation attempts to allocate the memory within an upper and lower bound from 1 GB to 5 GB. Therefore, it may happen that even after allocating the maximum memory of 5GB, the flow run fails with an out-of-memory error. In such situations, we recommend splitting your flow into multiple flows \(especially in the case of complex data flows\) or using the fetch size to limit the amount of data being read.
 
         -   *Automatic restart on run failure*: Set this option to restart the data flow automatically if there are any failures or system upgrades, for example.
 

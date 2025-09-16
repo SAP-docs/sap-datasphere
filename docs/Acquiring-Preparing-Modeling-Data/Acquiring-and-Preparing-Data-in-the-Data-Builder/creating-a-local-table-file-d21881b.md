@@ -132,7 +132,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </td>
     <td valign="top">
     
-    \[dimensions only\] Enables users to include the table data when transporting the table in a repository package. 
+    \[dimensions only\] \[SAP Business Data Cloud formation tenants only\] Enables users to include the table data when transporting the table in a repository package. 
 
     This feature is intended to allow you to transport data for static or slowly changing dimensions and can only be used to initialize data when importing the table for the first time.
 

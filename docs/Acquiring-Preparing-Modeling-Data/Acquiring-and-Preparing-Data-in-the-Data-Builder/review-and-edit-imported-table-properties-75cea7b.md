@@ -429,7 +429,7 @@ Provide business-friendly names for your table and its columns, identify its sem
 
     -   Standard table: *Delete All Records* 
     -   Delta capture table: *Delete All Records*, *Delete Records Marked as "Deleted"*, or *Delete all records marked for deletion which are older than the specified number of days*.
-    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete previous versions \(Vacuum\), which are older than the specified number of days* 
+    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete Previous Versions \(Vacuum\), which are older than the specified number of days* 
 
     See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
     
