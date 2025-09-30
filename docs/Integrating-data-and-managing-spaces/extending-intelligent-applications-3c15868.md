@@ -45,7 +45,7 @@ If your organization has extended the SAP source system with custom fields in th
 
     For more information, see [Replace a Source](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/51cc5a70a95e46a7aadbe49512b18ddb.html).
 
-    In our example, the copied preparation and application spaces consume the data correctly from the ingestion space, but data replication is still active in the ingestion space:
+    In our example, the analytic models in the copied application space now use views in the copied preparation space as sources:
 
     ![](images/Extending_insight_applications_diagram_-_4_step_3210b62.png)
 

@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Secure File Transfer Protocol \(SFTP\) as Source for Your Replication Flow
+# Secure File Transfer Protocol \(SFTP\) Sources for Replication Flows
 
 You want to replicate data from a file storage using a secure file transfer protocol \(SFTP\) connection for secure and reliable file transfers to a supported target.
 

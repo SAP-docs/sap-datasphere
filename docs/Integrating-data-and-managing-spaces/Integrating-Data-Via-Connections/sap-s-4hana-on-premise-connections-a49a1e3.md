@@ -175,6 +175,8 @@ Replication Flows
 
 You can use the connection to add source objects to a replication flow.\(**recommended for replication scenarios**\)
 
+For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your version are applied.") :arrow_upper_right:.
+
 You can replicate the following data:
 
 -   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
@@ -519,7 +521,7 @@ You can select:
 -   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
 -   *OAuth 2.0* - You can select this option only if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables and model import currently are not supported with OAuth authentication.
 
-    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
 
 
 

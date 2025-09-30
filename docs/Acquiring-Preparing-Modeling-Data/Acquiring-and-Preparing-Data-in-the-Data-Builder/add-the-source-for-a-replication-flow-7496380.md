@@ -29,6 +29,7 @@ Define the source for your replication flow \(connection, container, and objects
     -   For cloud storage providers, the container is the folder that contains the relevant dataset folders.
 
 
+-   For delta loading from a Microsoft SQL Server or Azure SQL database source, the source must have a schema with the same name as the user specified in the connection. If this schema is missing, a database administrator needs to create it and grant the necessary write privileges. This schema is needed to store internal objects for delta replication.
 -   You can use the SQL service exposure from SAP BTP, ABAP environment, or SAP S/4HANA Cloud, respectively, to replicate custom and standard CDS view entities if your system administration has created the relevant communication arrangements. For more information, see [Data Consumption using SAP Datasphere](https://help.sap.com/docs/btp/sap-business-technology-platform/data-consumption-using-sap-datasphere). For information about the relevant integration scenario, see [Integrating SQL Services using SAP Datasphere](https://help.sap.com/docs/btp/sap-business-technology-platform/integrating-sql-services-using-sap-datasphere).
 
 -   Replication objects are the datasets that you choose for replication, for example individual CDS view entities or database tables.

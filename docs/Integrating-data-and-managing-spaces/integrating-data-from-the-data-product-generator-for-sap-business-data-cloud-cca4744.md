@@ -10,5 +10,5 @@ The data product generator for SAP Business Data Cloud allows users to automate 
 
 The data gets loaded into an SAP BW ingestion space, which is created in the configuration phase of SAP BW or SAP BW/4HANA. Objects in this space are read-only, but data management tasks \(e.g. deleting data\) are possible. To use these local tables \(file\) for further modeling, you can share them to other spaces where they can be consumed, for example in views and analytic models.
 
-![This graphic has explanatory text.](images/DWC_-_BDC_-_data_product_generator_d09eefb.png)
+![This graphic shows a swim lane diagram: the data subscription is created in the SAP BW Cockpit, in SAP Datasphere, a local table (file) is created , shared to another space, and used to model entities, then it can be consumed in SAP Analytics Cloud.](images/DWC_-_BDC_-_data_product_generator_d09eefb.png)
 

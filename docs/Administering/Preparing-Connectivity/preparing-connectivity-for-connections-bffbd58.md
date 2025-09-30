@@ -351,6 +351,48 @@ no
 <tr>
 <td valign="top">
 
+[Generic HTTP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b79b865e64794c7abcd12a54f2f73c8c.html "Use a Generic HTTP connection to connect to an external system via HTTP and run external REST-based API tasks in task chains.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+[Preparing Connectivity for Generic HTTP Connections](preparing-connectivity-for-generic-http-connections-021552c.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 [Generic JDBC Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use a Generic JDBC connection to access data from tables and views in any supported data source for which a JDBC driver is available.") :arrow_upper_right:
 
 </td>
@@ -723,6 +765,48 @@ no
 <td valign="top">
 
 [Prepare Connectivity to Microsoft Azure SQL Database](prepare-connectivity-to-microsoft-azure-sql-database-782bd8c.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Microsoft OneLake Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/057fa4b51c734e679dd70eec9514839d.html "Use the connection to connect to and access objects in Microsoft OneLake.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+n/a
 
 </td>
 </tr>
@@ -1269,6 +1353,48 @@ no
 <td valign="top">
 
 [Prepare Connectivity to SAP Marketing Cloud](prepare-connectivity-to-sap-marketing-cloud-f5e0c06.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[SAP Signavio Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4c367de075a44ad7b7a6db576a4a9c82.html "Use the connection to securely integrate SAP systems such as SAP S/4HANA on-premise with SAP Signavio using replication flows for efficient and scalable data replication to SAP Signavio Process Intelligence.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+[Prepare Connectivity to SAP Signavio](prepare-connectivity-to-sap-signavio-9bde771.md)
 
 </td>
 </tr>

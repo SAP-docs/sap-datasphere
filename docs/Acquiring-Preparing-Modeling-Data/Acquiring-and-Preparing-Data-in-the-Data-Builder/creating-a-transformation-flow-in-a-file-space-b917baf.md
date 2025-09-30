@@ -4,16 +4,16 @@
 
 # Creating a Transformation Flow in a File Space
 
-Create transformation flows with local tables \(file\) as sources, apply various transformations, and store the resulted dataset into another local table \(file\).
+Create transformation flows with local tables \(file\), apply various transformations, and store the resulted dataset into another local table \(file\). 
 
 > ### Note:  
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
 
-As a Datasphere modeler, you want to model transformation flows with local tables \(file\) as sources, apply various transformations in a file space dedicated to loading and preparing large quantities of data, and store the resulted dataset into another local table \(file\).
+As a Datasphere modeler, you want to model transformation flows with local tables \(file\), shared local tables, and shared remote tables on a Delta Share runtime as sources, apply various transformations in a file space dedicated to loading and preparing large quantities of data, and store the resulted dataset into another local table \(file\).
 
 > ### Caution:  
 > -   You must be in a file space. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
-> -   You source and target must be local table \(file\). For more information, see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
+> -   Your source and target must be a local table \(file\). For more information, see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
 > -   You can only create a graphical view transform.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
 
@@ -23,7 +23,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > ### Note:  
     > On file space, you can only create *Graphical View Transform*.
 
-3.  Add a source. For more information, see [Creating a Transformation Flow in a File Space](creating-a-transformation-flow-in-a-file-space-b917baf.md). Note that you can only add a local table \(file\).
+3.  Add a source. For more information, see [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add a local table \(file\).
 4.  Add a Transformation. The *View Transform* does not support all functions available in a transformation flow created in an SAP HANA space. For more information, see [List of Functions Supported by a Transformation Flow \(in a File Space\)](list-of-functions-supported-by-a-transformation-flow-in-a-file-s-37e737f.md):
 
 
@@ -84,7 +84,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     </td>
     <td valign="top">
     
-    See [Filter Data in a Graphical View](../filter-data-in-a-graphical-view-6f6fa18.md)
+    See [Filter Data in a Graphical View](../filter-data-in-a-graphical-view-6f6fa18.md) 
     
     </td>
     </tr>
@@ -136,7 +136,7 @@ As a Datasphere modeler, you want to model transformation flows with local table
     > ### Note:  
     > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
 
-8.  Review the properties of your transformation flow, save and deploy it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
+8.  Review the properties of your transformation flow, save, deploy, and run it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
 
     > ### Note:  
     > The transformation will be saved in the object store. While deploying, a virtual procedure will be created to enable the runtime in the file space.
@@ -147,6 +147,6 @@ As a Datasphere modeler, you want to model transformation flows with local table
     -   Simulate a run that doesn't save changes in the target table by clicking *Simulate Run*. Simulating allows you to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to deploy the flow, resolve errors, or to optimize the flow to improve performances.
     -   Download a PLV file of a visual map of the operators and their relationships and hierarchies by clicking *Generate a SQL Analyzer Plan File*. The plan file contains detailed information about your data model that you can download for further analysis. Analyzing this file allows you to resolve errors and enhance the transformation flow performances.
 
-    For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
+    For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
 
 

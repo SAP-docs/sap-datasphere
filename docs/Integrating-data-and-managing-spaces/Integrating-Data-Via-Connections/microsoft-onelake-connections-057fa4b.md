@@ -6,6 +6,9 @@
 
 Use the connection to connect to and access objects in Microsoft OneLake.
 
+> ### Note:  
+> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
 This topic contains the following sections: Supported Features 
 
 -   [Supported Features](microsoft-onelake-connections-057fa4b.md#loio057fa4b51c734e679dd70eec9514839d__OneLake_usage)
@@ -41,7 +44,7 @@ Replication Flows
 
 You can use the connection to add source objects to a replication flow.
 
-For more information, see [Cloud Storage Provider Sources](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -80,6 +83,8 @@ Description
 <td valign="top">
 
 \[optional\] If you want to make sure that the data is not leaving the region where the data is stored, enter a region. For example `eastus2`. 
+
+For more information, see [Data Residency](https://learn.microsoft.com/en-us/fabric/onelake/onelake-access-api#data-residency) in the *Microsoft OneLake* documentation.
 
 </td>
 </tr>

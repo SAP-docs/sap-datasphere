@@ -59,7 +59,7 @@ A standard variable is used in a fact source to map it to input parameters of th
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
     > ### Note:  
-    > Once the object is saved, the technical name can no longer be modified.
+    > If you change the technical name after saving the model, this might affect existing stories or dependent analytic models.
 
 
     

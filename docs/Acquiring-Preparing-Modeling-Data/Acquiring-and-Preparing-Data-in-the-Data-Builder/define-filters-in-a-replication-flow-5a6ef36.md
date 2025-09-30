@@ -10,7 +10,7 @@ Define filters to delimit the scope of your replication flow.
 
 1.  Select the source object for which you want to define a filter.
 
-2.  Choose*Add Projection*.
+2.  In the property panel, go to the *Projections* section and click*Add Projection*.
 
 3.  On the *Filter* tab of the *Projections* dialog, select the column by which you want to filter from the list on the left.
 
@@ -20,19 +20,107 @@ Define filters to delimit the scope of your replication flow.
 
     Supported filters:
 
-    -   *Less Than*
-    -   *Greater Than*
-    -   *Equal To*
-    -   *Great Than* and *Equal To*
-    -   *Less Than* and *Equal To*
-    -   *Between*
-    -   *Include Null Values*
+    -   *equal to*
+    -   *less than*
+    -   *less than* or *equal to*
+    -   *greater than*
+    -   *great than* or *equal to*
+    -   *between*
+    -   *not equal to*
+    -   *not between*
+    -   *exclude null values*
+    -   *include null values*
 
-    The options you can select depend on the replication objects you choose and their respective data types and connections:
+    The options you can select depend on the replication objects you choose and their respective data types and connections. Here are the filters you can't select by connection and data types:
 
-    -   Boolean data type can only support *Equal To* for SAP ABAP ODP and SAP S/4HANA Connections.
-    -   Binary data type can only support *Equal To* for SAP HANA \(internal and external\) connections.
 
+    <table>
+    <tr>
+    <th valign="top">
+
+    Connections
+    
+    </th>
+    <th valign="top">
+
+    Filters and Data Types
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SAP ABAP
+    
+    </td>
+    <td valign="top">
+    
+    The boolean data type supports only *equal to* and *not equal to*. The other data types support all comparison operators.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SAP S4HANA On-Premise
+    
+    </td>
+    <td valign="top">
+    
+    The boolean data type supports only *equal to* and *not equal to*. The other data types support all comparison operators.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Cloud Connections
+    
+    </td>
+    <td valign="top">
+    
+    The boolean data type supports only *equal to* and *not equal to*. The other data types support all comparison operators.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SAP HANA \(external connection, accessible from the source system\)
+    
+    </td>
+    <td valign="top">
+    
+    The binary data type supports only *equal to* and *not equal to*. The other data types support all comparison operators.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SAP HANA \(internal connection from SAP Datasphere app\)
+    
+    </td>
+    <td valign="top">
+    
+    The binary data type supports only *equal to*. The other data types support all comparison operators.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Other Connections
+    
+    </td>
+    <td valign="top">
+    
+    The string, boolean, and binary data types support only *equal to*. The other data types support all comparison operators.
+    
+    </td>
+    </tr>
+    </table>
+    
 5.  When you're done, choose *Add Expression*.
 
 6.  Repeat steps 3 to 5 until you have defined all filters you need.

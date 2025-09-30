@@ -46,7 +46,7 @@ Local Tables \(File\) store large amount of data, including historical data. Whe
 
     \[Optional\]. When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator:
 
-    -   *Use Default*: The default application is the application selected by an administrator during the file space creation.
+    -   *Use Default*: The default application is the application selected in the table settings. If no default application is defined there, the application selected by an administrator during the file space creation is used.
     -   *Define New Setting for This Table*: Select another *Apache Spark Application* that fits your needs.
 
 4.  Confirm with *Delete* to start the deletion task.

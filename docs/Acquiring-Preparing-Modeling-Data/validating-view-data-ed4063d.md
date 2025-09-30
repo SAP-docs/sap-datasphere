@@ -185,6 +185,20 @@ For example, if the `Sales` fact has a foreign key column `Product ID` with an a
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Unique Target Values
+
+</td>
+<td valign="top">
+
+No dimension, text entity, or hierarchy, which is the target of an association from the view may contain records that do not provide unique values for identifying records.
+
+For example, if an object has an association to a "Products" dimension, then the target columns mapped in the "Products" dimension must contain values uniquely identifying each record \(even if these columns are not marked as keys\).
+
+</td>
+</tr>
 </table>
 
 For information about working with keys, see [Set Key Columns to Uniquely Identify Records](Modeling-Data-in-the-Data-Builder/set-key-columns-to-uniquely-identify-records-d9ef2c9.md).

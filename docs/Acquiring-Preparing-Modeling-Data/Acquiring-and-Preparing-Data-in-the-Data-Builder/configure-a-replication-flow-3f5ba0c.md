@@ -66,9 +66,9 @@ Define settings and properties for your replication flow and individual replicat
 
     -   Additional settings that are only relevant for a specific source type and can be made for the replication flow itself as well as for individual replication objects. For more information, see
 
-        -   [Cloud Storage Provider Sources](cloud-storage-provider-sources-4d481a2.md)
+        -   [Cloud Storage Provider Sources for Replication Flows](cloud-storage-provider-sources-for-replication-flows-4d481a2.md)
 
-        -   [Confluent Kafka Sources](confluent-kafka-sources-4f2d0a8.md)
+        -   [Confluent Kafka Sources for Replication Flows](confluent-kafka-sources-for-replication-flows-4f2d0a8.md)
 
         -   [Secure File Transfer Protocol \(SFTP\) as Targets for Your Replication Flows](secure-file-transfer-protocol-sftp-as-targets-for-your-replicati-5a14eb1.md)
 

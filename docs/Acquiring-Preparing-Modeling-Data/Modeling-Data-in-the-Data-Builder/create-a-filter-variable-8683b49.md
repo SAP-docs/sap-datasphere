@@ -59,7 +59,7 @@ A filter variable refers to an attribute. When a story is opened, the variable d
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
     > ### Note:  
-    > Once the object is saved, the technical name can no longer be modified.
+    > If you change the technical name after saving the model, this might affect existing stories or dependent analytic models.
 
 
     

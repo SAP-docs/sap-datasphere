@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Cloud Storage Provider Sources
+# Cloud Storage Provider Sources for Replication Flows
 
 If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.
 

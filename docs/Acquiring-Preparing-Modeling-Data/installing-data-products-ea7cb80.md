@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Evaluating and Installing Data Products
+# Installing Data Products
 
 Use the catalog *Data Product* collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.
 
@@ -45,19 +45,19 @@ After you've evaluated and found a data product, you can install it in your spac
 > ### Note:  
 > If you're an administrator for SAP Business Data Cloud, you can access the catalog from the SAP Business Data Cloud cockpit to share the data product to an SAP or partner system \(see [Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks) in the SAP Business Data Cloud documentation\).
 
-<a name="task_abn_f2n_gcc"/>
+<a name="dataproduct_installdspspace"/>
 
-<!-- task\_abn\_f2n\_gcc -->
+<!-- dataproduct\_installdspspace -->
 
 ## Installing a Data Product to an SAP Datasphere Space
 
 
 
-<a name="task_abn_f2n_gcc__context_hzr_g2n_gcc"/>
+<a name="dataproduct_installdspspace__context_hzr_g2n_gcc"/>
 
 ## Context
 
-After you find an active data product in the SAP Datasphere catalog, you can install it to an SAP Datasphere space by selecting the appropriate API. If the data product is inactive, ask your administrator for help.
+Data products that have both an *Active* release status and *Current* functional status can be installed to an SAP Datasphere space by selecting the appropriate API. Data products with a release status of *Inactive* cannot be installed. Ask your administrator for help.
 
 The following diagram displays the flow for data products.
 
@@ -65,7 +65,7 @@ The following diagram displays the flow for data products.
 
 
 
-<a name="task_abn_f2n_gcc__steps_zsy_dfn_gcc"/>
+<a name="dataproduct_installdspspace__steps_zsy_dfn_gcc"/>
 
 ## Procedure
 
@@ -73,16 +73,17 @@ The following diagram displays the flow for data products.
 
 2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
-3.  When you find the data product you want, check that it has an active status and select it, to open its details page.
+3.  When you find the data product you want, check that the release status is *Active*, the lifecycle status is *Active*, and the functional status is *Current*, and then select it.
 
-    You can review the list of APIs by choosing the tab *Overview* \> *Details*.
+    On its details page, you can review the list of APIs by choosing the tab *Overview* \> *Details*.
 
-4.  For the row you want, select the *Install* action.
-
-    The *Import Entities* wizard opens.
+4.  For the row you want, check that the functional status is *Current*, and then select the *Install* action, and the *Import Entities* wizard will open.
 
     > ### Tip:  
     > If you're reviewing the details of a particular API, you can select the *Install* button from the API details page.
+
+    > ### Note:  
+    > Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
 
 5.  Select a target space and select *Next Step*.
 
@@ -106,17 +107,32 @@ The following diagram displays the flow for data products.
 
 
 
-<a name="task_abn_f2n_gcc__result_cbk_bhn_gcc"/>
+<a name="dataproduct_installdspspace__result_cbk_bhn_gcc"/>
 
 ## Results
 
-The data product objects are created and deployed in the ingestion space and shared with your space.
+The data product objects \(including any custom fields defined in the source system\) are created and deployed in the ingestion space and shared with your space.
 
 -   Navigate to the objects in the *Repository Explorer* and review the data based on the data access method you selected.
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
-    -   *Replication flow to Local Tables*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see  <?sap-ot O2O class="- topic/xref " href="5b591d4998fa4a148750016a29ada91e.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/znj1755614851492/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/ea7cb802cbea47b39a441888873c3a49.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
+    -   *Replication flow to Local Tables*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Run a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/run-a-replication-flow-98a26b2.md)\).
 
 -   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
+
+<a name="concept_bm3_rhz_4gc"/>
+
+<!-- concept\_bm3\_rhz\_4gc -->
+
+## Updating Custom Fields for a Data Product
+
+When you install an intelligent application via SAP Business Data Cloud, any required data products are installed in an ingestion space, but these data products don't include any custom fields defined in the source system \(see [Reviewing Installed Intelligent Applications](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/644648756d334daaaf35d4fc9a0feeda.html)\).
+
+However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Applications](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/3c158685865d4b408938a148e828e21f.html) in the SAP Business Data Cloud documentation. From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that the data products you installed have the latest updates to the custom fields, you must uninstall and then reinstall the data product.
+
+During its lifecycle, a data product might have patch, minor version, and major version updates. Any custom fields defined in the source system are available as follows:
+
+-   Patch or a minor version update: Any custom fields defined in the source system will continue to be available.
+-   Major version update: Any custom fields defined in the source system will no longer be available and they must be added again.
 
 <a name="task_zbr_nl5_gfc"/>
 
@@ -145,15 +161,15 @@ When selecting a data access method, you will consider both storage and processi
     On the *Review Entities* page of the wizard, remember to switch the data access method to the one you want.
 
 
-<a name="task_dw1_ykv_s2c"/>
+<a name="dataproduct_uninstalldspspace"/>
 
-<!-- task\_dw1\_ykv\_s2c -->
+<!-- dataproduct\_uninstalldspspace -->
 
 ## Uninstalling a Data Product from an SAP Datasphere Space
 
 
 
-<a name="task_dw1_ykv_s2c__prereq_e1l_clv_s2c"/>
+<a name="dataproduct_uninstalldspspace__prereq_e1l_clv_s2c"/>
 
 ## Prerequisites
 
@@ -161,7 +177,7 @@ Remove all dependent objects for the data product before you uninstall a data pr
 
 
 
-<a name="task_dw1_ykv_s2c__context_apk_bqx_t2c"/>
+<a name="dataproduct_uninstalldspspace__context_apk_bqx_t2c"/>
 
 ## Context
 
@@ -234,6 +250,17 @@ If you no longer need a data product in a particular space, you can uninstall it
     </tr>
     </table>
     
+
+
+
+<a name="dataproduct_uninstalldspspace__result_vdd_wfl_rgc"/>
+
+## Results
+
+After the data product is uninstalled, you'll get a notification. The data product is uninstalled as follows:
+
+-   A data product that is installed to multiple spaces is only uninstalled from the selected space. The data product remains in the ingestion space where it is still available to the other spaces where it's installed.
+-   A data product that is installed to only one space is uninstalled from the selected space and removed from the ingestion space. Furthermore, if the data product being uninstalled is also the only data product in the ingestion space, the ingestion space will be removed.
 
 **Related Information**  
 

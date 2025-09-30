@@ -17,7 +17,7 @@ The catalog search results provides high-level information about an asset, inclu
 
 You can use the information provided to evaluate and make an assessment on whether the asset is the right one you need for your business task at hand. For example, if you're data modeler reviewing the details of an asset, you can review the asset's metadata, description, and other semantic enrichments to determine whether you should add it to your model. You can also view the impact and lineage diagram of that asset to see other assets it affects or is consumed by, as well as the data sources and transformations it underwent.
 
-After reviewing the asset details, you can choose to view the asset in more details in its source system or use it in a new project \(see [Evaluating and Accessing Catalog Assets](evaluating-and-accessing-catalog-assets-dc061a2.md)\).
+After reviewing the asset details, you can choose to view the asset in more details in its source system or use it in a new project \(see [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md)\).
 
 
 

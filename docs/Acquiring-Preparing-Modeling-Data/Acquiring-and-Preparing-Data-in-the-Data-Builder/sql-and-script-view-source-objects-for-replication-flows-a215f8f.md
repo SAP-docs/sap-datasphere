@@ -1,6 +1,6 @@
 <!-- loioa215f8f8257d4cf88a9ef927b8b101c5 -->
 
-# SQL and Script Views as Source Objects for Your Replication Flow
+# SQL and Script View Source Objects for Replication Flows
 
 You want to use an SQL or a Script view as a source object for your replication flow.
 
