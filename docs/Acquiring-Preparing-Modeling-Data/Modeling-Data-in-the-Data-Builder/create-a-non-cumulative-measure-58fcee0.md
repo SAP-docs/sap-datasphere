@@ -59,7 +59,7 @@ For example the measure can describe items in stock in a warehouse, or the bank 
     To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
 
     > ### Note:  
-    > Once the object is saved, the technical name can no longer be modified.
+    > If you change the technical name after saving the model, this might affect existing stories or dependent analytic models.
 
 
     
@@ -149,7 +149,7 @@ For example the measure can describe items in stock in a warehouse, or the bank 
     </td>
     <td valign="top">
     
-    You can define an exception aggreagtion to define how the time dimension is to be aggregated.Allowed values are FIRST, LAST, MAX, MIN, SUM, AVERAGENULL, COUNTNULL, FIRST OF DIMENSION, AVERAGE OF DIMENSION, and LAST OF DIMENSION.
+    You can define an exception aggregation to define how the time dimension is to be aggregated.Allowed values are FIRST, LAST, MAX, MIN, SUM, AVERAGENULL, COUNTNULL, FIRST OF DIMENSION, AVERAGE OF DIMENSION, and LAST OF DIMENSION.
     
     </td>
     </tr>

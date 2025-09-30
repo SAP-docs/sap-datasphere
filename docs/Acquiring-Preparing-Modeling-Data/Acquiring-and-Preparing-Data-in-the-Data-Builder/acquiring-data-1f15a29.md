@@ -102,7 +102,7 @@ You can import data from a CSV file to create a new local table \(see [Creating 
 
 ## Purchase Data from Data Marketplace
 
-Purchase data products from providers and download them directly into your space \(see [Evaluating and Installing Marketplace Data Products](../evaluating-and-installing-marketplace-data-products-92c35ef.md)\).
+Purchase data products from providers and download them directly into your space \(see [Installing Marketplace Data Products](../installing-marketplace-data-products-92c35ef.md)\).
 
 You can become a data provider and offer your own data products for sale in Data Marketplace via the Data Sharing Cockpit \(see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:\).
 

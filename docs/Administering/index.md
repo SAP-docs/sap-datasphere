@@ -84,6 +84,7 @@
     -   [Prepare Connectivity for Cloud Data Integration](Preparing-Connectivity/prepare-connectivity-for-cloud-data-integration-b6fd8de.md)
     -   [Prepare Connectivity for Generic JDBC](Preparing-Connectivity/prepare-connectivity-for-generic-jdbc-648fabf.md)
     -   [Prepare Connectivity for Generic OData](Preparing-Connectivity/prepare-connectivity-for-generic-odata-d9c43a2.md)
+    -   [Preparing Connectivity for Generic HTTP Connections](Preparing-Connectivity/preparing-connectivity-for-generic-http-connections-021552c.md)
     -   [Prepare Connectivity for Generic SFTP](Preparing-Connectivity/prepare-connectivity-for-generic-sftp-5454a8c.md)
     -   [Prepare Connectivity to Google BigQuery](Preparing-Connectivity/prepare-connectivity-to-google-bigquery-529cef1.md)
     -   [Prepare Connectivity to Microsoft Azure SQL Database](Preparing-Connectivity/prepare-connectivity-to-microsoft-azure-sql-database-782bd8c.md)

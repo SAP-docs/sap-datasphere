@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Confluent Kafka Sources
+# Confluent Kafka Sources for Replication Flows
 
 If you use Confluent Kafka as the source for your replication flow, you need to consider the following additional specifics and conditions.
 

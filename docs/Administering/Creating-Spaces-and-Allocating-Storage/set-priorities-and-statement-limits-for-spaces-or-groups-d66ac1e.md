@@ -265,48 +265,19 @@ Data preview actions in the *Business Builder* and the *Data Builder*.
 <tr>
 <td valign="top">
 
-SAP Analytics Cloud Data Management
+SAP Analytics Cloud *<Group\>* 
 
 </td>
 <td valign="top">
 
-Import and export of data in SAP Analytics Cloud.
+Data consumption in SAP Analytics Cloud:
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+-   SAP Analytics Cloud Data Management - Import and export of data in SAP Analytics Cloud.
+-   SAP Analytics Cloud Interactive Operations - Navigation in SAP Analytics Cloud, primarily for loading stories.
+-   SAP Analytics Cloud Long-Running Operations - Background jobs for planning workflows in SAP Analytics Cloud, primarily for loading stories.
+-   SAP Analytics Cloud System Operations - Background operations in SAP Analytics Cloud, such as collecting statistics and cleaning up jobs.
 
-SAP Analytics Cloud Interactive Operations
 
-</td>
-<td valign="top">
-
-Navigation in SAP Analytics Cloud, primarily for loading stories.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Analytics Cloud Long-Running Operations
-
-</td>
-<td valign="top">
-
-Background jobs for planning workflows in SAP Analytics Cloud.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Analytics Cloud System Operation
-
-</td>
-<td valign="top">
-
-Background operations in SAP Analytics Cloud, such as collecting statistics and cleaning up jobs.
 
 </td>
 </tr>

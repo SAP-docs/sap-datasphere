@@ -88,6 +88,7 @@
         -   [Controlling Deletion of Local Table Records](Data-Integration-Monitor/controlling-deletion-of-local-table-records-2a59b71.md)
     -   [Monitoring Local Tables \(File\)](Data-Integration-Monitor/monitoring-local-tables-file-6b2d007.md)
         -   [Merge or Optimize Your Local Tables \(File\)](Data-Integration-Monitor/merge-or-optimize-your-local-tables-file-e533b15.md)
+        -   [Delete Data From Your Local Tables \(File\)](Data-Integration-Monitor/delete-data-from-your-local-tables-file-872ad50.md)
     -   [Persisting and Monitoring Views](Data-Integration-Monitor/persisting-and-monitoring-views-9af04c9.md)
         -   [Data Persistence and Run Mode](Data-Integration-Monitor/data-persistence-and-run-mode-d04f5dd.md)
         -   [Persisted Views and Data Access Control](Data-Integration-Monitor/persisted-views-and-data-access-control-7a4a983.md)

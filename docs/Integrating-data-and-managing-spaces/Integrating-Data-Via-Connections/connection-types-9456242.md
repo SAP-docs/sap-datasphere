@@ -829,7 +829,7 @@ Non SAP
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">

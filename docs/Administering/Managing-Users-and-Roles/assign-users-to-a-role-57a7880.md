@@ -4,7 +4,7 @@
 
 # Assign Users to a Role
 
-You can assign an individual user to a role \(global or scoped\) in the *Users* page,and you can assign several users to a global role at the same time in the *Roles* page. 
+You can assign an individual user to a role \(global or scoped\) in the *Users* page, and you can assign several users to a global role at the same time in the *Roles* page. 
 
 
 

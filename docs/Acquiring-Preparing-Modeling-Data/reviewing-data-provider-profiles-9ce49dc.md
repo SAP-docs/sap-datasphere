@@ -429,7 +429,7 @@ Select a data product and evaluate it to see if you can use it or share it.
 </td>
 <td valign="top">
 
-[Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md)
+[Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)
 
 [Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks) \(SAP Business Data Cloud help documentation\)
 

@@ -89,6 +89,8 @@ Description
 
 Enter the URL of the SAP Signavio tenant. 
 
+For more information about SAP Signavio application URLs, see [Regions, IP Addresses, and URLs](https://help.sap.com/docs/signavio-process-intelligence/user-guide/regions-ip-addresses-and-urls) in the *SAP Signavio Process Intelligence* documentation.
+
 </td>
 </tr>
 </table>

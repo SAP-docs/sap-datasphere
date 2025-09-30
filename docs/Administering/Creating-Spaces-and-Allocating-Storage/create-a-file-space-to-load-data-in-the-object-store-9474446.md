@@ -387,7 +387,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     
     \[read-only\] Indicates the application that is used by default to run a transformation flow in a file space.
 
-    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with local tables (file) as sources, apply various transformations, and store the resulted dataset into another local table (file).") :arrow_upper_right:
+    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with local tables (file), apply various transformations, and store the resulted dataset into another local table (file).") :arrow_upper_right:
     
     </td>
     </tr>

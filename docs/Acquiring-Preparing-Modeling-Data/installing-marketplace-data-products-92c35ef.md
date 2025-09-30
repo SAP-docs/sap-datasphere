@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Evaluating and Installing Marketplace Data Products
+# Installing Marketplace Data Products
 
 Use the catalog *Data Products \(Marketplace\)* collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets \(if available\), and if you have the appropriate permissions, install it to an SAP Datasphere space.
 

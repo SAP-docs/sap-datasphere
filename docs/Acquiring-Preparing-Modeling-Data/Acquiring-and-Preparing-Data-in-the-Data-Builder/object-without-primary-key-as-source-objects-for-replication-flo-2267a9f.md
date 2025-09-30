@@ -1,6 +1,6 @@
 <!-- loio2267a9f6a5724ec0ae5632db4f9f70e5 -->
 
-# Using an Object Without Primary Key As the Source
+# Object Without Primary Key As Source Objects for Replication Flows
 
 If certain conditions are met, you can use objects that do not have a primary key as the source for a replication flow.
 

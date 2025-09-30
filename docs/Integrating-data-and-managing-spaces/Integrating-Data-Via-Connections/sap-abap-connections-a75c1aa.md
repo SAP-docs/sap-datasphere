@@ -161,6 +161,11 @@ Replication Flows
 
 You can use the connection to add source objects to a replication flow.
 
+For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your version are applied.") :arrow_upper_right:.
+
+> ### Note:  
+> SAP BW and SAP ECC connection types don't support replication flows, but you can use *SAP ABAP* connections for replication flows from SAP BW, SAP BW/4HANA or SAP ECC systems.
+
 You can access the following data:
 
 -   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
@@ -189,13 +194,6 @@ You can access the following data:
 
 -   Data from ODP sources \(extraction contexts *SAPI* and *BW*\)
 
-
-> ### Note:  
-> -   The availability of the replication flow feature depends on the used version and Support Package level of SAP S/4HANA or the DMIS addon in the source. Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
-> 
->     For more information about required versions, recommended system landscape, considerations for the supported source objects, and more, see SAP Note [2890171](https://me.sap.com/notes/2890171).
-> 
-> -   The SAP BW and SAP ECC connection types don't support replication flows. Instead, you can use the *SAP ABAP* connection type to use replication flows for replication from SAP BW, SAP BW/4HANA or SAP ECC systems.
 
 
 
@@ -578,7 +576,7 @@ You can select:
 -   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
 -   *OAuth 2.0* - You can select this option only if you have selected the *RFC* protocol and if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables currently are not supported with OAuth authentication.
 
-    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
 
 -   *X.509 Client Certificate* - You can select this option if you have selected the *Web Socket RFC* protocol.
 
@@ -978,6 +976,49 @@ Specify how ABAP data types are mapped to SAP HANA data types:
 
 -   *semanticDatsTimsAsWchar*: like *semantic*, except that the ABAP types DATS and TIMS are mapped to the ODBC type SQL\_WCHAR to allow for lossless conversion of date literals and time literals
 
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Replication Flows
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Fast Serialization*
+
+</td>
+<td valign="top">
+
+Turn on RFC fast serialization to help improve replication flow performance by avoiding unnecessary, costly conversions in ABAP. This can be useful particularly in cases of large data volumes. The default is *On*. 
+
+> ### Note:  
+> -   Fast serialization has no impacts on data flows.
+> 
+> -   *Fast Serialization* for replication flows is not related to *RFC Serialization* in the advanced properties of connections using a Data Provisioning Agent for remote tables.
+> 
+> -   For information about the prerequisites for using fast serialization in SAP Datasphere, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+> 
+>     Use the connection validation to check if the prerequisites in the source system for using fast serialization are met.
 
 
 

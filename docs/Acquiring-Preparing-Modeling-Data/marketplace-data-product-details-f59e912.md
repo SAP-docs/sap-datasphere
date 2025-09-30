@@ -12,7 +12,7 @@ The catalog search results provides high-level information about a data product,
 
 For example, when a data modeler reviews the details of a data product, they can review the pricing and installation information and review the terms of use and other supplemental documents.
 
-After you review the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space \(see [Evaluating and Installing Marketplace Data Products](evaluating-and-installing-marketplace-data-products-92c35ef.md)\).
+After you review the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space \(see [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)\).
 
 > ### Tip:  
 > Marketplace data products are only produced by and consumed in SAP Datasphere. However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can share to other SAP or partner systems \(see [Creating Custom Delta Share Data Products](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and [Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks)\).

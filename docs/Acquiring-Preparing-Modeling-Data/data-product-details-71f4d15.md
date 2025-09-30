@@ -14,7 +14,7 @@ The catalog search results provides high-level information about a data product,
 
 For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use it. They can also review individual APIs and learn how to extend them.
 
-After you view the data product details, you can choose to install it in your space \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\).
+After you view the data product details, you can choose to install it in your space \(see [Installing Data Products](installing-data-products-ea7cb80.md)\).
 
 
 
@@ -509,7 +509,7 @@ Select an action:
 -   *Install*: Opens the *Import Entities* wizard. Follow the steps to import entities from the data product to your space on the local SAP Datasphere system.
 -   *Uninstall*: Opens a dialog, where you select a space to uninstall the data product. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
-The actions to install or uninstall data products appear based on the privileges that are assigned to you \(see [Evaluating and Installing Data Products](evaluating-and-installing-data-products-ea7cb80.md)\). 
+The actions to install or uninstall data products appear based on the privileges that are assigned to you \(see [Installing Data Products](installing-data-products-ea7cb80.md)\). 
 
 </td>
 </tr>

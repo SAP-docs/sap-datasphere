@@ -109,7 +109,7 @@ Not Supported
 
 Confluent Kafka
 
-See also [Confluent Kafka Sources](confluent-kafka-sources-4f2d0a8.md)
+See also [Confluent Kafka Sources for Replication Flows](confluent-kafka-sources-for-replication-flows-4f2d0a8.md)
 
 </td>
 <td valign="top">
@@ -133,7 +133,7 @@ Not Supported
 
 Cloud Storage Providers
 
-See also [Cloud Storage Provider Sources](cloud-storage-provider-sources-4d481a2.md)
+See also [Cloud Storage Provider Sources for Replication Flows](cloud-storage-provider-sources-for-replication-flows-4d481a2.md)
 
 </td>
 <td valign="top">
@@ -165,12 +165,12 @@ Supported
 </td>
 <td valign="top">
 
-Supported \(When property delta enabled is true\)
+Supported \(When property delta enabled is true\*\)
 
 </td>
 <td valign="top">
 
-Supported \(When property delta enabled is true\)
+Supported \(When property delta enabled is true\*\)
 
 </td>
 </tr>
@@ -263,6 +263,10 @@ Supported
 </td>
 </tr>
 </table>
+
+\* To add the property delta enabled, you must add the @Analytics annotations to the view that sets the enabled flag and the change data capture approach:
+
+![](images/delta_property_38d897a.png)
 
 
 
@@ -467,7 +471,7 @@ Supported
 
 SAP HANA
 
-See also  <?sap-ot O2O class="- topic/xref " href="2c2efb8945c2441a82d49355ef19195b.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/znj1755614851492/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+See also  <?sap-ot O2O class="- topic/xref " href="2c2efb8945c2441a82d49355ef19195b.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/gjz1756812849766/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">

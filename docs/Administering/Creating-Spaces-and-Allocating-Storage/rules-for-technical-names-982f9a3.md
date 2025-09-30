@@ -6,7 +6,10 @@ Rules and restrictions apply to the technical names of objects that you create i
 
 
 
-When specifying the technical name of an object, bear in mind the following rules and restrictions:
+When specifying the technical name of an object, bear in mind the rules and restrictions listed below:
+
+> ### Note:  
+> The technical names that you create can be displayed both within SAP Datasphere and in other SAP products that integrate with SAP Datasphere. We recommend that you do not include any sensitive business or personal data in technical names.
 
 
 <table>

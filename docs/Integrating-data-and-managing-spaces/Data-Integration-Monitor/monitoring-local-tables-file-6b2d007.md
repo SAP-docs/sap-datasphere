@@ -237,10 +237,14 @@ Displays the estimation of the size of the files waiting for a merge in the buff
 </tr>
 </table>
 
-Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table. From the *Logs* tab, you can see the logs that relate on previous and running actions on your table. From the *Settings* tab you can change the default settings defined for the merge or optimize tasks. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md).
+Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table.
+
+From the *Logs* tab, you can see the logs that relate on previous and running actions on your table.
 
 From the *Schedules* tab, you can see the schedules that have already been created to start tasks for your local tables \(files\). You can also create new schedules, or edit, or delete existing schedules.
 
 > ### Note:  
 > You can create several schedules to delete data, but only one for a merge or an optimize tasks. For more information on how to create schedule, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+
+From the *Settings* tab, you can override the default settings used to run tasks on Apache Spark. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md) or [Delete Data From Your Local Tables \(File\)](delete-data-from-your-local-tables-file-872ad50.md).
 
