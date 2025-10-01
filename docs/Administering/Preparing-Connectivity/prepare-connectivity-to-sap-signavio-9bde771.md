@@ -16,7 +16,7 @@ Before you can use the connection to add target objects to a replication flow, t
 
 ### SAP Datasphere
 
-1.  Create a scoped role based on the *DW Integrator* template \(privilege *Data Warehouse Integration* with *Read* permission is required\), and add the space in which the SAP Signavio connection will be created to the scoped role.
+1.  Create a scoped role based on the *DW Integrator* template \(privilege *Data Warehouse Data Integration* with *Read* permission is required\), and add the space in which the SAP Signavio connection will be created to the scoped role.
 
     For more information, see:
 
