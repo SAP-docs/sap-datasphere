@@ -19,16 +19,49 @@ See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/935116
 
 <a name="loio5d36f1aae68a4e59989c424a66d948c9__Odata_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the remote table as well as the data flow feature.
 
-Supported data access methods for remote tables:
+<table>
+<tr>
+<th valign="top">
 
--   Remote
--   Replication \(snapshot\)
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
 For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -400,9 +433,45 @@ Enter the password.
 
 ### Features
 
-*Remote Tables* are enabled without the need to set any additional connection properties.
 
-*Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
+*Remote Tables* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section. 
+
+</td>
+</tr>
+</table>
 
 
 

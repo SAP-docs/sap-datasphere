@@ -2,7 +2,7 @@
 
 # Applying Row-Level Security to Data Delivered through Intelligent Applications
 
-All intelligent applications delivered through SAP Business Data Cloud are secured through data access controls. By default, no user can view any data presented in the provided SAP Analytics Cloud stories. To make data available to the users authorized to see it, you must upload your authorizations to the provided permissions table.
+All intelligent applications delivered through SAP Business Data Cloud are secured in SAP Datasphere through data access controls. By default, no user can view any data presented in the provided SAP Analytics Cloud stories. To make data available to the users authorized to see it in SAP Datasphere, you must upload your authorizations to the provided permissions table.
 
 > ### Note:  
 > When data is delivered to SAP Datasphere through SAP Business Data Cloud, any authorizations that are applied to the data in the source system are not imported. For general information about providing row-level security, see [Securing Data with Data Access Controls](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/a032e51c730147c7a1fcac125b4cfe14.html).

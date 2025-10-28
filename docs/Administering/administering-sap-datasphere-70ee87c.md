@@ -41,7 +41,7 @@ This topic contains the following sections:
 Either SAP will provision your tenant or you can create an instance in SAP BTP \(see [Creating and Configuring Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/creating-and-configuring-your-sap-datasphere-tenant-2f80b57.md)\).
 
 -   We recommend that you link your tenant to an SAP Analytics Cloud tenant \(see [Review and Manage Links to SAP Analytics Cloud and SAP Business Data Cloud Tenants](Creating-and-Configuring-Your-Tenant/review-and-manage-links-to-sap-analytics-cloud-and-sap-business-data-cloud-t-40db567.md)\).
--   You can enable SAP HANA for SQL data warehousing on your tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement \(see [Enable SAP HANA for SQL data warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-hana-for-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)\).
+-   You can enable SAP HANA for SQL data warehousing on your tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement \(see [Enable SAP HANA for SQL Data Warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-hana-for-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)\).
 -   You can enable the SAP HANA Cloud script server to access the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries \(see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-the-sap-hana-cloud-script-server-on-your-sap-datasphere-tenant-2871942.md)\).
 
 

@@ -4,7 +4,7 @@
 
 # Manage Certificates for Connections
 
-To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.
+For connections secured by leveraging HTTPS as the underlying transport protocol \(using SSL/TLS transport encryption\), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.
 
 
 
@@ -12,7 +12,7 @@ To import a certificate into the SAP Datasphere trust chain, obtain the certific
 
 ## Prerequisites
 
-You have downloaded the required SSL/TLS certificate from an appropriate website. As one option for downloading, common browsers provide functionality to export these certificates.
+In addition, download the required SSL/TLS certificate from an appropriate website. As one option for downloading, common browsers provide functionality to export these certificates.
 
 > ### Note:  
 > -   Only X.509 Base64-encoded certificates enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----" are supported. The common filename extension for the certificates is .pem \(privacy-enhanced mail\). We also support filename extensions .crt and .cer.
@@ -22,17 +22,8 @@ You have downloaded the required SSL/TLS certificate from an appropriate website
 > -   Remember that all certificates can expire.
 > 
 > -   If you have a problem with a certificate, please contact your cloud company for assistance.
-
-
-
-<a name="loio46f5467adc5242deb1f6b68083e72994__context_l34_gwt_bnb"/>
-
-## Context
-
-For connections secured by leveraging HTTPS as the underlying transport protocol \(using SSL/TLS transport encryption\), the server certificate must be trusted.
-
-> ### Note:  
-> You can create connections to remote systems which require a certificate upload without having uploaded the necessary certificate. Validating a connection without valid server certificate will fail though, and you won't be able to use the connection.
+> 
+>     You can create connections to remote systems which require a certificate upload without having uploaded the necessary certificate. Validating a connection without valid server certificate will fail though, and you won't be able to use the connection.
 
 
 

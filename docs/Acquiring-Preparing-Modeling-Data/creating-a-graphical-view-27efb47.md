@@ -274,12 +274,7 @@ In addition to working with views in the editor, you can also:
     
     \[dimensions only\] Select whether your dimension is *Standard* or *Fiscal Time*. 
 
-    For *Fiscal Time* dimensions, click the *Settings* button and identify the following:
-
-    -   *Fiscal Period Start Column* - Select the column containing the dates of the start of your fiscal period.
-    -   *Fiscal Period End Column* - Select the column containing the dates of the end of your fiscal period.
-
-    You must select columns with a data type *Date* \(or with a data type *String\(8\)* and a semantic type *Calendar - Date*\).
+    For *Fiscal Time* dimensions, see [Create a Fiscal Time Dimension](Modeling-Data-in-the-Data-Builder/create-a-fiscal-time-dimension-24248ab.md).
     
     </td>
     </tr>

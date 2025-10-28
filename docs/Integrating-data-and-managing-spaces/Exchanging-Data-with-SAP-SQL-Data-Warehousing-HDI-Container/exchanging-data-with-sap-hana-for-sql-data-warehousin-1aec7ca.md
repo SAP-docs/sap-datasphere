@@ -1,6 +1,6 @@
 <!-- loio1aec7ca95af24208a61c1a444b249d95 -->
 
-# Exchanging Data with SAP HANA for SQL data warehousing HDI Containers
+# Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers
 
 Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.
 

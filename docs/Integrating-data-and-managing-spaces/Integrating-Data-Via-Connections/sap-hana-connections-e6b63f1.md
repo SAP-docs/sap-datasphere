@@ -626,7 +626,7 @@ If set to *false*, the host name used for the connection is used for verificatio
 > 
 > -   When using SAP HANA smart data access via Cloud Connector for remote tables: To validate the server certificate, the certificate must have been uploaded to SAP Datasphere.
 > 
->     For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/46f5467adc5242deb1f6b68083e72994.html "To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+>     For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
 
 
 

@@ -16,7 +16,7 @@ When the analytic model has associations to a time-dependent dimension or text t
 
 ## Procedure
 
-1.  You are in the editor of your analytic model. You can create a new reference date variable by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Variable in the properties panel. Choose *Reference Date Variable*.
+1.  You are in the editor of your analytic model. You can create a new reference date variable by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Variable in the properties panel. Choose *Standard Variable*.
 
 2.  Edit the following properties:
 
@@ -82,6 +82,18 @@ When the analytic model has associations to a time-dependent dimension or text t
     Description
     
     </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Sub Type
+    
+    </td>
+    <td valign="top">
+    
+    Choose sub type *Reference Date*.
+    
+    </td>
     </tr>
     <tr>
     <td valign="top">

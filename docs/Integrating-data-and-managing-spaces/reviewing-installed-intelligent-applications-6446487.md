@@ -21,6 +21,27 @@ Data is loaded from the source system into SAP Datasphere, where the following s
 
 
 
+## Installing an Intelligent Application for Two or More Source Systems
+
+You can install a single intelligent application multiple times for different source systems, in the following cases:
+
+-   If your organization operates multiple source system instances across different subsidiaries, business units, or geographic areas, each requiring analysis through the same intelligent application.
+-   If your organization maintains separate development, test, and production environments within a single SAP Datasphere tenant, necessitating separate installations of the same intelligent application for each environment.
+
+In this case, the three spaces are created in SAP Datasphere for each instance of the intelligent application, distinguishable by an alias that was assigned to each intelligent application during installation. When uninstalling, the appropriate spaces are removed.
+
+In the following example, we have one intelligent application installed for two source systems, resulting in separate spaces, where each space identifies the source tenant providing the data by system alias.
+
+![](images/Install_an_Intelligent_Application_for_2_or_More_Source_Systems_d1e8d3d.jpg)
+
+In addition, you can install multiple intelligent applications for the same source system. In this case, all intelligent applications use the same ingestion space. When uninstalling, the appropriate spaces are removed, but the shared ingestion space is retained until the final application is removed.
+
+In the following example, we have two intelligent applications installed on top of the same source system, resulting in reusing the ingestion and preparation spaces, and in creation of a separate application space.
+
+![](images/Install_multiple_intelligent_applications_for_the_same_source_system_f53cc37.jpg)
+
+
+
 <a name="loio644648756d334daaaf35d4fc9a0feeda__section_rf1_vzd_zcc"/>
 
 ## Viewing Intelligent Application Objects

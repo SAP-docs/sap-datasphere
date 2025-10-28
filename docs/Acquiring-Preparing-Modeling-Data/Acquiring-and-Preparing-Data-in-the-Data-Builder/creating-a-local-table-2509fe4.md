@@ -130,12 +130,7 @@ In addition to working with tables in the editor, you can also:
     
     \[dimensions only\] Select whether your dimension is *Standard* or *Fiscal Time*. 
 
-    For *Fiscal Time* dimensions, click the *Settings* button and identify the following:
-
-    -   *Fiscal Period Start Column* - Select the column containing the dates of the start of your fiscal period.
-    -   *Fiscal Period End Column* - Select the column containing the dates of the end of your fiscal period.
-
-    You must select columns with a data type *Date* \(or with a data type *String\(8\)* and a semantic type *Calendar - Date*\).
+    For *Fiscal Time* dimensions, see [Create a Fiscal Time Dimension](../Modeling-Data-in-the-Data-Builder/create-a-fiscal-time-dimension-24248ab.md).
     
     </td>
     </tr>
@@ -149,7 +144,7 @@ In addition to working with tables in the editor, you can also:
     
     \[dimensions only\] \[SAP Business Data Cloud formation tenants only\] Enables users to include the table data when transporting the table in a repository package.
 
-    This feature is intended to allow you to transport data for static or slowly changing dimensions and can only be used to initialize data when importing the table for the first time.
+    This feature is intended to allow you to transport data for static and slowly changing dimensions, text entities, or relational datasets, and can only be used to initialize data when importing the table for the first time.
 
     See [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
@@ -163,7 +158,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    Displays the table storage.
+    \[read-only\] Displays the table storage.
 
     For local tables created in a space with SAP HANA Cloud, SAP HANA database storage the values can be "Disk" or "In-Memory". 
 
@@ -181,7 +176,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    Track the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
     
     </td>
     </tr>

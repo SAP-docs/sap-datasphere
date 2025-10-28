@@ -452,6 +452,22 @@ Choose one of the tabs and specify the options:
 <tr>
 <td valign="top">
 
+Externally Shareable ID
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose the externally shareable ID that you want included in the search result.
+
+*Define Conditions*: Create conditions and enter a value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Formation ID
 
 </td>
@@ -459,7 +475,7 @@ Formation ID
 
 Choose one of the tabs and specify the options:
 
-*Select Items*: If you use SAP Business Data Cloud, choose the formation ID that you want included in the search result.
+*Select Items*: Choose the formation ID that you want included in the search result.
 
 *Define Conditions*: Create conditions and enter a value.
 

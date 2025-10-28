@@ -43,8 +43,8 @@ The address can either be a single IPv4 address or a range specified with a Clas
 
 2.  From the *IP Allowlist* dropdown, select the appropriate list:
 
-    -   *Trusted IPs*: For clients such as an Data Provisioning Agent on a server, 3rd party ETL or analytics tools, or any other JDBC-client
-    -   *Trusted Cloud Connector IPs*: For Cloud Connectors that you want to use for federation and replication with remote tables from on-premise systems such as SAP HANA
+    -   *Trusted IPs*: For clients such as an Data Provisioning Agent on a server, 3rd party ETL or analytics tools, or any other JDBC-client.
+    -   *Trusted Cloud Connector IPs*: For Cloud Connectors that you want to use for federation and replication with remote tables from on-premise systems via SAP HANA Smart Data Access, such as SAP HANA.
 
     The selected list shows all IP addresses that are allowed to connect to the SAP Datasphere database.
 

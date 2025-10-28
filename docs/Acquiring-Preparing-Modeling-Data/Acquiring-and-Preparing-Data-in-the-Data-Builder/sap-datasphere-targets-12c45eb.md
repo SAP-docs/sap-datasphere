@@ -51,7 +51,7 @@ The following **sources** are **not** supported:
 -   Clamping: By default, if there are values that are too large, the replication fails and you get an error message informing you about the issue. If you don't want this, you can activate clamping for individual replication objects \(by selecting *Clamp Decimal Floating-Point Data Type* in the side panel\) or for all objects in the replication flow \(by selecting *Clamp Decimal Floating-Point Data Type* in the target settings\). If you do so, values that are too large are clamped in accordance with the maximum values for the respective target data type.
 
 
-**A target column name** can include alphanumeric characters, forward "/" and underscores \(\_\), but no special characters, and it cannot start with an underscore. If a target column name contains a special character, the system automatically replaces it with an underscore \(auto-projection\).
+**A target column name** can include alphanumeric characters, forward "/" and underscores \(\_\), but no special characters, and it cannot start with an underscore. If a target column name contains a special character, the system automatically replaces it with an underscore \(auto-projection\), and the prefix AUTOPREFIX\_ is added to the column name.
 
 Columns that have the data type `decfloat16` or `decfloat34` are automatically converted to `decimal(38,6)`. You cannot add new target columns with data type `decfloat16` or `decfloat34`.
 

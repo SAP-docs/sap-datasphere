@@ -28,9 +28,11 @@ The logs are written to the database of SAP Datasphere. For more information, se
 
 4.  You have the following options to restrict the results in the display of the logs:
 
-    -   Search: In the *<agent name\>* field, enter a search string and click <span class="FPA-icons-V3"></span> \(Search\) to search in the messages of the logs.
+    -   Search: In the *Search Messages* field, enter a search string and click <span class="FPA-icons-V3"></span> \(Search\) to search in the messages of the logs.
 
     -   Filters: You can filter based on time, message type and log file name. When you’ve made your selection, click *Apply Filters*.
+
+        Per default, the filter includes the `framework.trc` and `framework_alert.trc`log files from all time. In the *File Name* field, you can select to additionally display up to ten archived log files if they are available. The archived log files follow the naming convention <code>framework.trc.<i class="varname">&lt;x&gt;</i></code> respectively <code>framework_alert.trc.<i class="varname">&lt;x&gt;</i></code> with *<x\>* being a number between one and ten.
 
         > ### Note:  
         > If your local time zone differs from the time zone used in the Data Provisioning Agent logs and you're applying a time-based filter, you might get other filter results than expected.

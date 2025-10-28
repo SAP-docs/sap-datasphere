@@ -12,14 +12,20 @@ From *Data Integration Monitor* \> *Views*, you can monitor views that have been
 
 ## Prerequisites
 
-To persist and monitor views, you must have a scoped role that grants you access to a space with the following privileges:
+To persist and monitor views, you must have a combination of a global role and a scoped role:
 
--   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Integration* \(`-RU-E---`\) - To perform data replication/persistence actions \(in the *Data Integration Monitor* or *Data Builder*\), and schedule the actions. The *DW Integrator* role template, for example, grants this privilege.
--   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions. The *DW Space Administrator* role template, for example, grants this privilege.
--   *Data Warehouse Runtime* \(`-R------`\) - To allow users of the *View Analyzer* to download the generated SQL analyzer plan file. The *DW Space Administrator* role template, for example, grants this privilege.
+-   A global role that grants you the following privileges:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+    -   *Data Warehouse Runtime* \(`-R------`\) - To allow users of the *View Analyzer* to download the generated SQL analyzer plan file.
 
-For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+-   -   A scoped role that grants you access to a space with the following privileges:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+    -   *Data Warehouse Data Integration* \(`-RU-E---`\) - To perform data replication/persistence actions \(in the *Data Integration Monitor* or *Data Builder*\), and schedule the actions.
+    -   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions.
+
+
+
+For example, the *DW Administrator* global role template grants the runtime privilege, the *DW Integrator* scoped role template grants the integration privilege, and the *DW Space Administrator* scoped role template grants the *Data Builder* privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 To persist and monitor a view, the view must be deployed.
 

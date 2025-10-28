@@ -15,14 +15,47 @@ Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Busine
 
 <a name="loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the remote table as well as the data flow feature.
 
-Supported data access methods for remote tables:
+<table>
+<tr>
+<th valign="top">
 
--   Remote
--   Replication \(snapshot\)
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 > ### Note:  
 > -   With connection type *SAP HANA Cloud, Data Lake Relational Engine* you cannot connect to the SAP HANA Cloud, data lake instance that is available with SAP Datasphere. To connect to this instance, use your Open SQL schema in the space which you have selected to access the data lake.
@@ -37,7 +70,7 @@ Supported data access methods for remote tables:
 > 
 >     -   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
 > 
->     -   [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses and IDs that must be added to allowlists in particular remote applications before you can use connections to these remote applications.") :arrow_upper_right:
+>     -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
 
 
 
@@ -251,7 +284,43 @@ Enter the password.
 
 ### Features
 
-*Remote Tables* are enabled without the need to set any additional connection properties.
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
+*Remote Tables* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+</table>
 

@@ -4,7 +4,7 @@
 
 # Impact and Lineage Analysis
 
-The *Impact and Lineage Analysis* diagram helps you to understand the lineage \(or data provenance\) of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.
+The *Impact and Lineage Analysis* diagram helps you to understand the lineage or data provenance of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.
 
 This topic contains the following sections:
 
@@ -224,7 +224,7 @@ If you do not have permission to view a space, it is shown with the :lock: icon.
 
 ## Display Object Properties and Analyze or Open Objects
 
-In addition to their business and technical names and their object type \(indicated by the icon in the top-left corner, object symbols can display the following properties:
+In addition to their business and technical names and their object type \(indicated by the icon in the top-left corner\), object symbols can display the following properties:
 
 
 <table>
@@ -423,7 +423,7 @@ To review the lineage and impacts of one or more columns in your analyzed object
 
 ## Shared Objects and Unauthorized Objects
 
-You only have permission to see an object if it is created in \(or shared to\) a space you're assigned to. When exploring the diagram, you may encounter objects that you do not have permission to see. Such objects are shown as *Unauthorized*, and both the object and space show a :lock: icon:
+You only have permission to see an object if it is created in or shared to a space you're assigned to. When exploring the diagram, you may encounter objects that you do not have permission to see. Such objects are shown as *Unauthorized*, and both the object and space show a :lock: icon:
 
 -   Unauthorized Lineage Objects - If the analyzed object \(or an object appearing in its lineage\) is shared from a space you are not assigned to, to a space you are assigned to, this shared object is shown inside its space, which has a :lock: icon.
 

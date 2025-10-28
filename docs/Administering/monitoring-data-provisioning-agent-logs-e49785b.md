@@ -48,12 +48,12 @@ Data Provisioning Agent adapter framework trace log. Use this file to trace and 
 </tr>
 </table>
 
-You can review the logs in SAP Datasphere after log access has been enabled for the agent in question. We display the actual log files as well as up to ten archived log files that follow the naming convention <code>framework.trc.<i class="varname">&lt;x&gt;</i></code> respectively <code>framework_alert.trc.<i class="varname">&lt;x&gt;</i></code> with *<x\>* being a number between one and ten.
-
-**Related Information**  
 
 
-[Enable Access to Data Provisioning Agent Logs](enable-access-to-data-provisioning-agent-logs-9a00dde.md "Enable accessing an agent’s log files before you can view them in SAP Datasphere.")
+<a name="loioe49785b22ed8454f8ba28edc2dc686c8__section_z4g_ww1_xgc"/>
 
-[Review Data Provisioning Agent Logs](review-data-provisioning-agent-logs-0d78ae0.md "Use the logs to monitor the agent and analyze issues with the agent.")
+## Procedure
+
+1.  Enable access to the log files for an agent \(see [Enable Access to Data Provisioning Agent Logs](enable-access-to-data-provisioning-agent-logs-9a00dde.md)\).
+2.  Review the logs \(see [Review Data Provisioning Agent Logs](review-data-provisioning-agent-logs-0d78ae0.md)\).
 

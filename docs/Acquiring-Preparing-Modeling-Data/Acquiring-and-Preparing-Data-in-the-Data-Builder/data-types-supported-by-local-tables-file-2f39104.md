@@ -19,6 +19,11 @@ Supported Data Types
 Partitioning
 
 </th>
+<th valign="top">
+
+Data Types for Custom Data Products
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -28,7 +33,12 @@ Binary
 </td>
 <td valign="top">
 
-No
+Not Supported
+
+</td>
+<td valign="top">
+
+Not Supported
 
 </td>
 </tr>
@@ -40,7 +50,12 @@ Boolean
 </td>
 <td valign="top">
 
-No
+Not Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -52,7 +67,12 @@ Date
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -64,7 +84,12 @@ DateTime
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -76,7 +101,12 @@ Decimal
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -88,7 +118,12 @@ Double
 </td>
 <td valign="top">
 
-No
+Not Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -100,7 +135,12 @@ hana.BINARY
 </td>
 <td valign="top">
 
-No
+Not Supported
+
+</td>
+<td valign="top">
+
+Not Supported
 
 </td>
 </tr>
@@ -112,7 +152,12 @@ hana.REAL
 </td>
 <td valign="top">
 
-No
+Not Supported
+
+</td>
+<td valign="top">
+
+Not Supported
 
 </td>
 </tr>
@@ -124,7 +169,12 @@ hana.SMALLINT
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+NotSupported
 
 </td>
 </tr>
@@ -136,7 +186,12 @@ hana.TINYINT
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Not Supported
 
 </td>
 </tr>
@@ -148,7 +203,12 @@ Integer
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -160,7 +220,12 @@ Integer64
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -177,7 +242,12 @@ Timestamp
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>
@@ -194,7 +264,29 @@ String
 </td>
 <td valign="top">
 
-Yes
+Supported
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UUID
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+<td valign="top">
+
+Supported
 
 </td>
 </tr>

@@ -50,6 +50,9 @@ In addition to working with flows in the editor, you can also:
 
 2.  Create a graphical view transform or an SQL view transform to load data from sources and to transform data. To create a graphical view transform, click the *Graphical View Transform* button \(see [Create a Graphical View in a Transformation Flow](create-a-graphical-view-in-a-transformation-flow-c65e37c.md)\). To create an SQL view transform, click the *SQL View Transform* button \(see [Create an SQL View in a Transformation Flow](create-an-sql-view-in-a-transformation-flow-775e0ab.md)\).
 
+    > ### Note:  
+    > If you have archived records in your ABAP source table \(change type 'M', excluded in the active records table\) that you want to mark as active record in your target table \(change type 'U'\), please follow the guidance provided in the paragraph *Displaying Records Archived in Your ABAP Source System in Views* in [Capturing Delta Changes in Your Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/capturing-delta-changes-in-your-local-table-154bdff.md).
+
 3.  Click the *Back* button to return to the *Transformation Flow Editor*. Add or create a target table that the transformation flow will write its data to \(see [Create or Add a Target Table to a Transformation Flow](create-or-add-a-target-table-to-a-transformation-flow-0950746.md)\).
 
 4.  Click the *Details* button to display the *Transformation Flow Properties* panel.
@@ -148,7 +151,7 @@ In addition to working with flows in the editor, you can also:
     </td>
     <td valign="top">
     
-    Runtime is used to run the transformation flow. It can be HANA \(for a transformation flow in a space with Storage Type DAP HANA Database \(Dish and In-Memory\)\) or SPARK \(for transformation flow in a space with Storage Type SAP HANA Data Lake Files\).
+    Runtime is used to run the transformation flow. It can be HANA \(for a transformation flow in a space with Storage Type SAP HANA Database \(disk and In-Memory\)\) or SPARK \(for transformation flow in a space with Storage Type SAP HANA Data Lake Files\).
     
     </td>
     </tr>
@@ -164,7 +167,7 @@ In addition to working with flows in the editor, you can also:
 
     You can view the details of the last run. You can view the date and time of the run as well as the status, for example *Completed*. In addition, you can choose:
 
-    -   *Schedule*: run your transformation flow at later time, or on regular basis. For more information, see  <?sap-ot O2O class="- topic/xref " href="5b591d4998fa4a148750016a29ada91e.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/gjz1756812849766/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/c5fb32d39c984f748e50b9aef91175d4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    -   *Schedule*: run your transformation flow at later time, or on regular basis.
     -   *Simulate Run*: In the *Data Integration Monitor*, you can open the transformation flow and click *Run* \> *Run with Settings* \> *Simulate Run* to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to resolve errors or to optimize the flow to improve performances. No changes are saved in the target table. For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:
 
 

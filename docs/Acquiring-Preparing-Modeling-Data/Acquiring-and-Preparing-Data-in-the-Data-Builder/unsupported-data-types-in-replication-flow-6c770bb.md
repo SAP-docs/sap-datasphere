@@ -10,7 +10,7 @@ Replication flows support all data types in Datasphere \(see [Column Data Types]
 
 ## Sources
 
-The following source connections are not supported in replication flow:
+The following data types are not supported in replication flow:
 
 
 <table>
@@ -29,21 +29,26 @@ Unsupported Data Types
 <tr>
 <td valign="top">
 
-MS SQ
+MSSQL
 
 </td>
 <td valign="top">
 
--   CLOB \(nvarchar\(max\)
--   varchar\(max\)
--   text
--   ntext\)
--   BLOB \(image,varbinary\(max\)\)
+-   binary\(n\)*\(5000 < n <= 8000*\)
+-   varbinary\(n\)*\(5000 < n <= 8000*\)
+-   varbinary\(max\)
+-   ntext
+-   image
 -   cursor
+-   nvarchar\(max\)
+-   geography
+-   geometry
+-   table
+-   json
 -   hierarchyid
 -   sql\_variant
--   Spatial Geometry Types
--   rowversion
+-   char\(n\)*\(5000 < n <= 8000*\)
+-   varchar\(n\)*\(5000 < n <= 8000*\)
 -   xml
 
 
@@ -53,12 +58,21 @@ MS SQ
 <tr>
 <td valign="top">
 
-Confluent
+SAP HANA
 
 </td>
 <td valign="top">
 
-Not applicable.
+-   BLOB
+-   CLOB
+-   NCLOB
+-   TEXT
+-   ARRAY
+-   ST\_GEOMETRY
+-   ST\_POINT
+-   REAL\_VECTOR
+
+
 
 </td>
 </tr>
@@ -73,7 +87,7 @@ Azure SQL
 -   CLOB \(nvarchar\(max\)
 -   varchar\(max\)
 -   text
--   ntext\)
+-   ntext
 -   BLOB \(image, varbinary\(max\)\)
 -   cursor
 -   hierarchyid
@@ -134,7 +148,7 @@ Mapped to Higher Version of Data Types
 <tr>
 <td valign="top">
 
-GBQ
+Google BigQuery
 
 </td>
 <td valign="top">
@@ -158,7 +172,7 @@ GBQ
 <tr>
 <td valign="top">
 
-LTF
+Local Tables \(file\)
 
 </td>
 <td valign="top">

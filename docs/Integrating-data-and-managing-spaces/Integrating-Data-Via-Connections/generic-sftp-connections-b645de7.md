@@ -41,20 +41,6 @@ Additional Information
 <tr>
 <td valign="top">
 
-Data Flows
-
-</td>
-<td valign="top">
-
-You can use the connection to add source objects to a data flow. Supported file formats are JSON, JSONL, CSV, XLS, XLSX, ORC, and PARQUET.
-
-For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Replication Flows
 
 </td>
@@ -71,6 +57,20 @@ For more information, see:
 > You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.Supported file formats are JSON, JSONL, CSV, XLS, XLSX, ORC, and PARQUET.
+
+For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -430,29 +430,29 @@ Description
 <tr>
 <td valign="top">
 
-*Data Flows*
-
-</td>
-<td valign="top">
-
-*Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
-
-> ### Note:  
-> In file spaces, only replication flows are supported. Data flows are not supported.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Replication Flows*
 
 </td>
 <td valign="top">
 
 *Replication Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> In file spaces, only replication flows are supported. Data flows are not supported.
+
+
 
 </td>
 </tr>

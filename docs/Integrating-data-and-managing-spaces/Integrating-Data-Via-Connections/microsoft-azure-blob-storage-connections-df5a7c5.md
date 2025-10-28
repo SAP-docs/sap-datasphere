@@ -11,9 +11,35 @@ Use the connection to access objects in Microsoft Azure Blob Storage.
 
 <a name="loiodf5a7c56ac21472c973f6fab341f3991__WASB_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the data flow feature.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -127,5 +153,31 @@ Enter the storage account access key \(shared key authorization\).
 
 ### Features
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+</table>
 

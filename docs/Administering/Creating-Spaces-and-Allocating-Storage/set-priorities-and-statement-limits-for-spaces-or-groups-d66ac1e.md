@@ -270,14 +270,14 @@ SAP Analytics Cloud *<Group\>*
 </td>
 <td valign="top">
 
-Data consumption in SAP Analytics Cloud:
+SAP Analytics Cloud data processing:
 
--   SAP Analytics Cloud Data Management - Import and export of data in SAP Analytics Cloud.
--   SAP Analytics Cloud Interactive Operations - Navigation in SAP Analytics Cloud, primarily for loading stories.
--   SAP Analytics Cloud Long-Running Operations - Background jobs for planning workflows in SAP Analytics Cloud, primarily for loading stories.
--   SAP Analytics Cloud System Operations - Background operations in SAP Analytics Cloud, such as collecting statistics and cleaning up jobs.
+-   Data Management - Import and export of planning data via the public API \(see [api/v1/dataimport](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/fe6efb8aba9444c6a3ce21eef02bba62.html) and [api/v1/dataexport](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/db62fd76514b48f8b71d695360320f4a.html) in the *SAP Analytics Cloud* documentation\).
+-   Interactive Operations - Opening and interacting with SAP Analytics Cloud stories using data stored in SAP Datasphere.
+-   Long-Running Operations - Planning data actions \(see [Get Started with Data Actions for Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/2850221adef14958a4554ad2860ff412.html) in the *SAP Analytics Cloud* documentation\).
+-   System Operations - Statistics gathering and other administrative jobs for SAP Analytics Cloud data stored in SAP Datasphere.
 
-
+For more information about storing SAP Analytics Cloud planning data in SAP Datasphere, see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:.
 
 </td>
 </tr>

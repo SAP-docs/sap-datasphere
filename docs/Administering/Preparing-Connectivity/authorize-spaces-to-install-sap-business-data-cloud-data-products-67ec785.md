@@ -11,6 +11,10 @@ An SAP Datasphere administrator must choose the spaces to which SAP Business Dat
 
 
 
+## Prerequisites
+
+
+
 <a name="loio67ec785b5de842488781f20c4ab52a9f__section_gk4_vnk_d2c"/>
 
 ## Context

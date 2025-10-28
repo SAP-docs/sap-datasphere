@@ -12,7 +12,7 @@ To securely connect and make http requests to SAP BW∕4HANA, you need to connec
 
 ## Prerequisites
 
-See the prerequisites 1 to 5 in [Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md).
+In addition, consider the prerequisites 1 to 5 in [Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md).
 
 
 

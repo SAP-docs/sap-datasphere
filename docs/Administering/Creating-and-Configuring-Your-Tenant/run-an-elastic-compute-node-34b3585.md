@@ -6,12 +6,27 @@ Once you've created an elastic compute node and added spaces and objects to it, 
 
 This topic contains the following sections:
 
+-   [Prerequisites](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_ayq_zg1_xgc)
 -   [Introduction to Elastic Compute Node Run Process](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_crv_xpr_pbc)
 -   [Start an Elastic Compute Node Manually](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_syj_cwt_qzb)
 -   [Stop an Elastic Compute Node Manually](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_gzj_5lb_tzb)
 -   [Schedule an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_j5y_dwt_qzb)
 -   [Update an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_pwl_fst_qzb)
 -   [Monitor an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_wy2_xxg_tzb)
+
+
+
+<a name="loio34b35852f2ff4888bda6b17e08f73ce3__section_ayq_zg1_xgc"/>
+
+## Prerequisites
+
+To create and manage elastic compute nodes, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`C------M`\) - To create, manage and run elastic compute nodes.
+-   *System Information* \(`-RU-----`\) - To access the tenant settings needed to manage elastic compute nodes.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -57,14 +72,6 @@ An elastic compute node can have the following statuses:
 -   If local table or persisted view metadata is changed on \(new column for example\) or deleted from the main instance, the local table replica or the persisted view replica is deleted from the elastic compute node. The data of these objects is therefore read from the main instance and not from the elastic compute node.
 
 
-To create and manage elastic compute nodes, you must have the following privileges:
-
--   *Spaces* \(C------M\) - To create, manage and run an elastic compute node
--   *Space Files* \(-------M\) - To add spaces and objects to an elastic compute node
--   *System Information* \(--U-----\) - To access tenant settings needed to manage elastic compute nodes
-
-The *DW Administrator* global role, for example, grants these privileges \(see [Roles and Privileges by App and Feature](../Managing-Users-and-Roles/roles-and-privileges-by-app-and-feature-2d8b7d0.md)\).
-
 
 
 <a name="loio34b35852f2ff4888bda6b17e08f73ce3__section_syj_cwt_qzb"/>
@@ -107,9 +114,7 @@ You can schedule an elastic compute node to run periodically at a specified date
 
 2.  Click *Schedule*, then *Create Schedule*.
 3.  In the *Create Schedule* dialog, specify the options of the schedule, just like for any other integration task. See [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right: and [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:.
-
 4.  In addition, specify in the *Duration* area the total number of hours and minutes of an elastic compute node run, from the starting to the stopping stages.
-
 
 **Example** - The elastic compute node is scheduled to run on the first day of every month for a duration of 72 hours \(uptime of 3 days\).
 
@@ -146,7 +151,7 @@ Monitor an elastic compute node to see for example all its start and stop runs o
 
 2.  Click *View Logs*.
 
-    The *Statement Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node. For more information about logs in the *System Monitor*, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
+    The *Task Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node. For more information about logs in the *System Monitor*, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
 
     If local tables or persisted views were not replicated, you can go back to the elastic compute node and update it to replicate them.
 

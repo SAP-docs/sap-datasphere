@@ -26,7 +26,7 @@ To utilize input parameters in task chains, you must have task objects that have
 
 Create a new input parameter on the task chain level. This will allow you to create a simple task chain with input parameters. This task chain can be used as an object to be nested in future task chains to create nested task chains with input parameters.
 
-Define imported parameters on the task level. You can set values of the input parameters from the source on the task level. You can also map these set input parameters to the task chain level.
+Define input parameters on the task level. You can set values of the input parameters from the source on the task level. You can also map these set input parameters to the task chain level.
 
 Define different values for the input parameters on the task level and the task chain levels to create more flexibility.
 
@@ -44,7 +44,7 @@ Define different values for the input parameters on the task level and the task 
 
     3.  Click <span class="FPA-icons-V3"></span> \(Add\) to create a new input parameter in the task chain.
 
-    4.  Create a name for the new input parameter in your task chain. You can define a value at this time, but it is not required. You can also delete the first mapped value and leave only the newly created parameter in the task chain.
+    4.  Create a name for the new input parameter in your task chain. You can define a default value at this time. You can also delete the first mapped value and leave only the newly created parameter in the task chain. If not default value is defined, the input parameter will use an empty string \(""\).
 
     5.  Press *OK*. This will save your parameters and values on the task chain level.
 
@@ -140,9 +140,9 @@ Define different values for the input parameters on the task level and the task 
     > ### Note:  
     > The input parameter technical name and set value will show up in the properties panel on the right on the object task level.
 
-7.  View the properties panel on the task chain level. You will see the new input parameter on the task chain level. It will have the same name and value.
+7.  View the task chain properties panel. You will see the mapped input parameter on the task chain level. It will have the same name and value.
 
-8.  Click on the input parameter name to view and edit details. The *Edit Input Parameters* pop up will open. You can keep the default value or change the default value in the *Default Value* field. You can also click <span class="FPA-icons-V3"></span> \(Add\) to create a new input parameter in the task chain.
+8.  You can edit the default value of the mapped parameter in the task chain. You can also add a new input parameter. Click on the input parameter <span class="FPA-icons-V3"></span> \(Input Parameters\)to view and edit details. The *Edit Input Parameters* pop up will open. You can keep the default value or change the default value in the *Default Value* field. You can also click <span class="FPA-icons-V3"></span> \(Add\) to create a new input parameter in the task chain.![](images/Edit_Input_Parameter_b965078.png)
 
 9.  After you have finished adding objects to your task chain, save the task chain. Give the task chain a name and click *Save*.
 
@@ -158,19 +158,22 @@ Define different values for the input parameters on the task level and the task 
 11. View the status of your task chain by going to *Data Integration Monitor* \> *Task Chains*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
     > ### Note:  
-    > In the messages panel on the right, you can see click *View Details* to review the names and values of the input parameters in your task chain.
+    > In the messages panel on the right, you can see click *View Details* to see the values of the input parameters in your task chain.
 
     ![](images/View_Details_4fc6f4d.png)
 
-    Use task chains created with input parameters to create nested task chains with input parameters. This is similar to the process above.
+12. Use task chains with input parameters to create nested task chains with input parameters. This is similar to the process above.
 
-12. Drag and drop a task chain \(object\) with input parameters from the left panel to start a new task chain or add to an existing task chain. For more information about nested task chains see [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md),
+    1.  Drag and drop a task chain \(object\) with input parameters from the left panel to start a new task chain or add to an existing task chain. For more information about nested task chains see [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md),
 
-13. The *Map Input Parameter* dialog box will pop up. You will see the original parameter name. Choose your *Action* and *Value*.
+    2.  The *Map Input Parameter* dialog box will pop up. You will see the original parameter name. Choose your *Action* and *Value*.
+
+    3.  Follow the normal protocol for using objects with input parameters in task chains noted above.
+
 
     > ### Note:  
     > -   If you created a new input parameter in your previous task chain, you can map to this new parameter. If a value was not defined, you can choose to define a value.
-    > -   If no default value is defined, the input parameter will use an empty string \(""\).
+    > -   If no value is defined, the input parameter will use an empty string \(""\).
 
     > ### Note:  
     > When working with input parameters with task chains, the parameters from the child task chain are mapped to the parent task chain.

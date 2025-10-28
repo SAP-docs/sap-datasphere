@@ -471,8 +471,6 @@ Supported
 
 SAP HANA
 
-See also  <?sap-ot O2O class="- topic/xref " href="2c2efb8945c2441a82d49355ef19195b.xml" text="" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/gjz1756812849766/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
-
 </td>
 <td valign="top">
 

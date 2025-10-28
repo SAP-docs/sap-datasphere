@@ -21,7 +21,7 @@ Typical types of dimensions include:
 -   Time - Year, Quarter, Month, Day
 
     > ### Note:  
-    > Only standard time dimensions created by following the procedure at [Create Time Data and Dimensions](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right: are supported for use in SAP Analytics Cloud. Manually-created fiscal time period dimensions are supported. To create a fiscal time dimension, select *Fiscal Time* as the dimension type and then specify your start and end columns in the *Settings* dialog.
+    > Only standard time dimensions created via the procedure at [Create Time Data and Dimensions](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right: are supported for use in SAP Analytics Cloud. For information about fiscal time dimensions, see [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md).
 
 
 
@@ -134,12 +134,7 @@ Typical types of dimensions include:
     
     Select whether your dimension is *Standard* or *Fiscal Time*. 
 
-    For *Fiscal Time* dimensions, click the *Settings* button and identify the following:
-
-    -   *Fiscal Period Start Column* - Select the column containing the dates of the start of your fiscal period.
-    -   *Fiscal Period End Column* - Select the column containing the dates of the end of your fiscal period.
-
-    You must select columns with a data type *Date* \(or with a data type *String\(8\)* and a semantic type *Calendar - Date*\).
+    For *Fiscal Time* dimensions, see [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md).
     
     </td>
     </tr>
@@ -183,7 +178,7 @@ Typical types of dimensions include:
     
     \[local tables only\] \[SAP Business Data Cloud formation tenants only\] Enables users to include the table data when transporting the table in a repository package. 
 
-    This feature is intended to allow you to transport data for static or slowly changing dimensions and can only be used to initialize data when importing the table for the first time.
+    This feature is intended to allow you to transport data for static and slowly changing dimensions, text entities, or relational datasets, and can only be used to initialize data when importing the table for the first time.
 
     See [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
@@ -197,7 +192,7 @@ Typical types of dimensions include:
     </td>
     <td valign="top">
     
-    \[local tables only\] Displays the table storage. 
+    \[local tables only\] \[read-only\] Displays the table storage. 
     
     </td>
     </tr>

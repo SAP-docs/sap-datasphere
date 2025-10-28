@@ -31,7 +31,8 @@ Add a source to read data from. You can add multiple sources and combine them to
 
 
 > ### Note:  
-> When you want to import a CDS view while creating a flow, you can’t search for it using its technical name. You must expand the folder and search for it manually. See [Import Rules and Terms from an SAP Information Steward Connection](https://help.sap.com/docs/data-intelligence-cloud/sap-data-intelligence-data-governance/import-rules-and-terms-from-sap-information-steward-connection?locale=en-US).
+> -   When you want to import a CDS view while creating a flow, you can’t search for it using its technical name. You must expand the folder and search for it manually. See [Import Rules and Terms from an SAP Information Steward Connection](https://help.sap.com/docs/data-intelligence-cloud/sap-data-intelligence-data-governance/import-rules-and-terms-from-sap-information-steward-connection?locale=en-US).
+> -   For SAP Landscape Transformation Replication Server \(SLT\) connections, you must perform a search to find the source as the first 100 records won't be shown.
 
 3.  Select the object of your choice, and then drag and drop it onto the diagram.
 
@@ -193,7 +194,7 @@ Add a source to read data from. You can add multiple sources and combine them to
 
     In the *OData Parameters* section, enable the *Apply Parameters on Preview* toggle if you want to see how the changes in parameter impact the table preview.
 
-8.  \[optional\] For source tables from OData remote connections, you can edit the depth properties of a selected source table in the *OData Properties* section. Click <span class="FPA-icons-V3"></span> \(Edit OData Properties\) to open the *OData Properties* dialog. You can set the depth of the source table to either 1 or 2.
+8.  \[optional\] For source tables from OData remote connections, you can edit the depth properties of a selected source table in the *OData Properties* section. Click <span class="FPA-icons-V3"></span> \(Edit Data Properties\) to open the *OData Properties* dialog. You can set the depth of the source table to either 1 or 2.
 
     The depth of an OData object refers to the level of related entities that are included in the response when querying the OData service. The depth is by default set to 1 so that only the properties of the requested entity are returned. You can change the depth to 2 to include a second level. Depth is useful when you want to optimize performance by controlling the amount of data returned in a single request.
 
@@ -201,13 +202,15 @@ Add a source to read data from. You can add multiple sources and combine them to
     > If an OData service has two objects for `Products` and `Orders`, and a `Product` object has a navigation property to related `Order` objects, a request for a specific `Product` with a depth of 1 will return the properties of that `Product`, but not the related `Order` objects. But if you specify a depth of 2, it will also return the related `Order` objects and their properties.
 
     > ### Restriction:  
-    > When the depth is set to 2, the *Columns* section shows the columns from the two collections \(or levels\) and the following problems occur:
+    > -   When the depth is set to 2, the *Columns* section shows the columns from the two collections \(or levels\) and the following problems occur:
     > 
-    > -   The*Data Preview* cannot show more than one collection. The columns from the second collection cannot be previewed.
+    >     -   The*Data Preview* cannot show more than one collection. The columns from the second collection cannot be previewed.
     > 
-    > -   The Data Flow run will fail.
+    >     -   The Data Flow run will fail.
     > 
-    > Retaining columns from just one collection and deleting the rest fixes both issues.
+    >     Retaining columns from just one collection and deleting the rest fixes both issues.
+    > 
+    > -   *Open Connector* sources cannot have more than one source filter condition on the same column.
 
 9.  \[optional\] For sources that are files, complete the appropriate additional section:
 

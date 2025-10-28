@@ -205,8 +205,12 @@ For more information about available connection types, sources, and targets, see
     
     \[only relevant for replication flow created in file space\] Select this option if you want new data to be automatically replicated in your local table \(file\). When new data appears in the inbound buffer, a merge task is automatically run and data is updated in your target local table \(file\).
 
-    > ### Note:  
-    > The option is enabled by default when you create a new replication with SAP Datasphere as target and load type *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(and a redeployment will be needed\).
+    > ### Caution:  
+    > -   The option is enabled by default when you create a new replication with SAP Datasphere as target and load type *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(and a redeployment will be needed\).
+    > 
+    >     Note also that this merge task will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload please consider adjusting the above defaults for your scenario. In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow or by disabling this setting and running the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
+    > 
+    > -   Since it will start an automatic task, you must make sure that you have authorized SAP Datasphere to run tasks on your behalf. Go to your profile settings and give your consent under *Authorized Consent Settings*. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
     
@@ -232,7 +236,7 @@ For more information about available connection types, sources, and targets, see
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -321,6 +325,20 @@ For more information about available connection types, sources, and targets, see
     <td valign="top">
     
     Enable this option to delete any existing content in the target. For some connection types and use cases, this property has a fixed value that cannot be changed. 
+
+    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Object Thread Count for Delta Loads
+    
+    </td>
+    <td valign="top">
+    
+    Enter the number of threads to be used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*. 
 
     For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
@@ -441,7 +459,7 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Add Projection
+    <span class="SAP-icons-V5"></span> \(Add Projection\)
     
     </td>
     <td valign="top">
@@ -455,12 +473,12 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Open in Data Integration Monitor\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
     
     </td>
     <td valign="top">
     
-    Go to the monitor to get status information for your replication flow runs.
+    [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md)
     
     </td>
     </tr>
@@ -499,6 +517,18 @@ For more information about available connection types, sources, and targets, see
     <td valign="top">
     
     Configure email notification to receive an email when the replication of an object fails during a replication flow run. For more information, see [Configure Email Notification for Replication Flow Failure at Object Level](configure-email-notification-for-replication-flow-failure-at-obj-5dc4db2.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Dependent Replication Flows\)
+    
+    </td>
+    <td valign="top">
+    
+    Display which target objects are reused as source objects in other replication flows.
     
     </td>
     </tr>

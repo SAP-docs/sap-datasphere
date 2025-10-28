@@ -29,7 +29,7 @@ Before you can use the connection, the following is required:
 
     -   [IP Restrictions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/bf014ed11dae45ecae6f8c6e42fa68bb/a356e2c66c7443ceb15f8592318b5dcf.html) in the *SAP SuccessFactors platform* documentation
 
-    -   [Finding SAP Datasphere IP addresses](finding-sap-datasphere-ip-addresses-0934f7e.md)
+    -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)
 
 
 

@@ -72,17 +72,17 @@ If you do so, the flow run is stopped permanently in SAP Datasphere as well as i
 
 To stop a replication flow run:
 
-1.  Go to the *Data Integration* monitor,
-2.  Select the relevant space
-3.  Navigate to the *Flows* monitor \(all flows created in the *Data Builder* are listed\) and select the relevant replication flow
-4.  Navigate to its details screen by clicking <span class="SAP-icons-V5"></span> \(Details\)
+1.  Go to the *Data Integration* monitor.
+2.  Select the relevant space.
+3.  Navigate to the *Flows* monitor \(all flows created in the *Data Builder* are listed\) and select the relevant replication flow.
+4.  Navigate to its details screen by clicking .<span class="SAP-icons-V5"></span> \(Details\)
 5.  Click *Run* \> *Stop Run*.
 
 
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_SpaceDeletion"/>
 
-## Space Deletion
+## Handling With Space Deletion
 
 If you have replication flows in a space that is about to be deleted, make sure to stop your replication flows before space deletion starts. This helps to avoid issues during space deletion and makes it possible for you to start the replication flows again if the space gets restored at a later point in time.
 
@@ -135,7 +135,7 @@ This can be done in the *Data Builder*, see [Modify a Replication Flow](https://
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_npd_zxq_dgc"/>
 
-## Configure Email Notification for Replication Flow Failure at Object Level
+## Configuring Email Notification for Replication Flow Failure at Object Level
 
 From the details screen of a replication flow run, you can set up email notification to be notified when the replication of an individual object fails in your replication flow:
 
@@ -159,7 +159,7 @@ From the details screen of a replication flow run, you can change the run settin
 3.  Open the tab **Run Settings** and update as per your need:
 
     -   Source Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10.
-    -   Target Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10. 
+    -   Target Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10.  
     -   Delta Load Frequency: \[only relevant for load type *Initial and Delta* and *Delta Only*\] Define the time interval for replicating changes from the source to the target.
 
     For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.

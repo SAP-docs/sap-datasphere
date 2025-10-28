@@ -28,7 +28,7 @@ Metrics provide the record count for source and target tables used in the flow. 
 
 -   `RUNTIME`
 
-    Runtime is used to run the transformation flow. It can be HANA \(for a transformation flow in a space with Storage Type DAP HANA Database \(Dish and In-Memory\)\) or SPARK \(for transformation flow in a space with Storage Type SAP HANA Data Lake Files\).
+    Runtime is used to run the transformation flow. It can be HANA \(for a transformation flow in a space with Storage Type SAP HANA Database \(disk and In-Memory\)\) or SPARK \(for transformation flow in a space with Storage Type SAP HANA Data Lake Files\).
 
 -   `LOAD_UNIT_TARGET` 
 

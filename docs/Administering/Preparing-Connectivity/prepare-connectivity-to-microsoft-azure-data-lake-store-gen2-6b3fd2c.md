@@ -14,7 +14,7 @@ Before you can use the connection for data flows and replication flows, the foll
 
 -   If you're using SAP Datasphere on Microsoft Azure and want to connect to Microsoft Azure Data Lake Store Gen2 in a firewall-protected Microsoft Azure storage account within the same Azure region: An Azure administrator must grant SAP Datasphere access to the Microsoft Azure storage account.
 
-    For more information, see [Finding SAP Datasphere IP addresses](finding-sap-datasphere-ip-addresses-0934f7e.md)
+    For more information, see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)
 
 
 
@@ -27,7 +27,7 @@ If you're using SAP Datasphere on Microsoft Azure and want to connect to an Azur
 
 -   SAP Note [3405081](https://me.sap.com/notes/3405081)
 -   Blog [Using Azure Private Virtual Network Endpoints with SAP Datasphere Replication](https://community.sap.com/t5/technology-blog-posts-by-sap/using-azure-private-virtual-network-endpoints-with-sap-datasphere/ba-p/13946050) \(published in November 2024\)
--   For obtaining the SAP Datasphere Virtual Network Subnet ID that must be allowed in the Microsoft Azure storage account: [Microsoft Azure Deployments Only: Virtual Network Subnet ID](finding-sap-datasphere-ip-addresses-0934f7e.md#loio0934f7ed9a534e638299f53ab60866ae__section_lnc_nmb_ybc)
+-   For obtaining the SAP Datasphere Virtual Network Subnet ID that must be allowed in the Microsoft Azure storage account: [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)
 
 **Related Information**  
 

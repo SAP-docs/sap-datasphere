@@ -361,6 +361,128 @@ A date, timestamp, or interval that defines the validity of the data of the data
 
 
 
+<a name="loiof7272c0e8be34ce782d04304580c0243__section_j5k_3cr_wgc"/>
+
+## Fiscal Time Attributes
+
+The types identify attributes containing fiscal periods for use in fiscal time dimensions \(see [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md):
+
+
+<table>
+<tr>
+<th valign="top">
+
+Name
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Year
+
+</td>
+<td valign="top">
+
+A fiscal year number as a string following the logical pattern `YYYY` consisting of four digits.
+
+The string must match the regex pattern `[1-9][0-9]{3}`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Period
+
+</td>
+<td valign="top">
+
+A fiscal period as a string following the logical pattern `PPP` consisting of three digits. This fiscal period usually is a quarter of a year.
+
+A fiscal period is covered by financial reports, for example, an annual report covers a fiscal period of one year, but a quarterly report includes accounting data for three months.
+
+The string must match the regex pattern `[0-9]{3}`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Year Period
+
+</td>
+<td valign="top">
+
+A fiscal year and period as a string following the logical pattern `YYYYPPP` consisting of seven digits. The last three digits represent the fiscal period in the year.
+
+The string must match the regex pattern `([1-9][0-9]{3})([0-9]{3})`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Year Variant
+
+</td>
+<td valign="top">
+
+A fiscal year variant, which describes the number of periods in a fiscal year and how they match the calendar year.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Quarter
+
+</td>
+<td valign="top">
+
+A fiscal quarter number as a string following the logical pattern `YYYY` consisting of four digits.
+
+The string must match the regex pattern `[1-9][0-9]{3}`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Year Quarter
+
+</td>
+<td valign="top">
+
+A fiscal year quarter number as a string following the logical pattern `YYYY` consisting of four digits.
+
+The string must match the regex pattern `[1-9][0-9]{3}`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Fiscal - Year Week
+
+</td>
+<td valign="top">
+
+A fiscal year number as a string following the logical pattern `YYYY` consisting of four digits.
+
+The string must match the regex pattern `[1-9][0-9]{3}`.
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loiof7272c0e8be34ce782d04304580c0243__section_fiscal_calendar_system"/>
 
 ## Calendar, Fiscal, and System Date Attributes
@@ -532,62 +654,6 @@ Calendar - Year Week
 A calendar year and week as a string following the logical pattern `(-?)YYYY(Y*)WW` consisting of an optional minus sign for years B.C., followed by at least six digits, where the last two digits represent week number in the year.
 
 The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})(0[1-9]|[1-4][0-9]|5[2-3])`.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Fiscal - Period
-
-</td>
-<td valign="top">
-
-A fiscal period as a string following the logical pattern `PPP` consisting of three digits. This fiscal period usually is a quarter of a year.
-
-A fiscal period is covered by financial reports, for example, an annual report covers a fiscal period of one year, but a quarterly report includes accounting data for three months.
-
-The string must match the regex pattern `[0-9]{3}`.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Fiscal - Year
-
-</td>
-<td valign="top">
-
-A fiscal year number as a string following the logical pattern `YYYY` consisting of four digits.
-
-The string must match the regex pattern `[1-9][0-9]{3}`.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Fiscal - Year Period
-
-</td>
-<td valign="top">
-
-A fiscal year and period as a string following the logical pattern `YYYYPPP` consisting of seven digits. The last three digits represent the fiscal period in the year.
-
-The string must match the regex pattern `([1-9][0-9]{3})([0-9]{3})`.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Fiscal - Year Variant
-
-</td>
-<td valign="top">
-
-A fiscal year variant, which describes the number of periods in a fiscal year and how they match the calendar year.
 
 </td>
 </tr>

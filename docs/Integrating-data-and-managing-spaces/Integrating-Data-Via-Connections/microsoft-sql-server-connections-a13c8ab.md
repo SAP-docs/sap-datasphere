@@ -39,6 +39,18 @@ Additional Information
 <tr>
 <td valign="top">
 
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a replication flow.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Remote Tables
 
 </td>
@@ -64,18 +76,6 @@ Data Flows
 <td valign="top">
 
 You can use the connection to add source objects to a data flow.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Replication Flows
-
-</td>
-<td valign="top">
-
-You can use the connection to add source objects to a replication flow.
 
 </td>
 </tr>
@@ -378,6 +378,18 @@ Description
 <tr>
 <td valign="top">
 
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Remote Tables*
 
 </td>
@@ -406,18 +418,6 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 > In file spaces, only replication flows are supported. Data flows are not supported.
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Replication Flows*
-
-</td>
-<td valign="top">
-
-*Replication Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
 
 </td>
 </tr>

@@ -17,11 +17,42 @@ See: [Preparing SAP BW/4HANA Model Transfer Connectivity](https://help.sap.com/v
 
 
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the model import feature.
 
-For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Model Import
+
+</td>
+<td valign="top">
+
+You can use the connection to import semantically-rich entities from SAP BW/4HANA along with their supporting InfoObjects and CompositeProviders.
+
+For more information, see:
+
+-   [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7bcd3218b4064b898ca367b47ff246e2.html "You can use the Import Entities wizard to load metadata from your SAP BW∕4HANA and SAP BW bridge connection via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:
+-   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
+
+
+
+</td>
+</tr>
+</table>
 
 
 
@@ -236,7 +267,33 @@ Enter the appropriate corresponding password.
 
 ### Features
 
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Model Import*
+
+</td>
+<td valign="top">
+
 To enable *Model Import*, select a Data Provisioning Agent.
+
+</td>
+</tr>
+</table>
 
 
 

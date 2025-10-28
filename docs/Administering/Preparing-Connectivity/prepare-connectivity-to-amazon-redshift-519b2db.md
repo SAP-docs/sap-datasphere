@@ -29,7 +29,7 @@ Before you can use the connection for data flows, the following is required:
 
 -   The outbound IP has been added to the source allowlist.
 
-    For information on where a DW administrator can find the IP address, see [Finding SAP Datasphere IP addresses](finding-sap-datasphere-ip-addresses-0934f7e.md).
+    For information on where a DW administrator can find the IP address, see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md).
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 

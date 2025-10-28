@@ -82,7 +82,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
     </td>
     <td valign="top">
     
-    Total amount of disk storage out of the total amount of disk storage. See a breakdown of this amount in the card *Disk Storage Used*.
+    Total amount of disk storage used out of the total amount of disk storage. You can see a breakdown of this amount in the card *Disk Storage Used*.
     
     </td>
     </tr>
@@ -94,7 +94,12 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
     </td>
     <td valign="top">
     
-    Total amount of memory storage out of the total amount of memory storage.
+    Total amount of memory storage used out of the total amount of memory storage.
+
+    > ### Note:  
+    > If the storage is set to *In-Memory* for some tables, this value includes the quantity of memory required to fully load the local tables data in-memory even if, for reasons of memory optimization, SAP HANA has currently only partially loaded the data in-memory.
+
+
     
     </td>
     </tr>

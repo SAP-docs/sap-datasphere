@@ -114,7 +114,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
         -   Apr 15, 2021 0:00
         -   Apr 15, 2021 5:00
 
-        If you define that the schedule must run at 0:15 mn, then the next runs will be
+        If you define that the schedule must run at 0:15 min, then the next runs will be
 
         -   Apr 14, 2021 10:15
         -   Apr 14, 2021 15:15

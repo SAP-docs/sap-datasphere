@@ -21,17 +21,49 @@ See: [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/view
 
 <a name="loiocd33107246f446628f9baff56faf5a1b__CDI_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the remote table as well as the data flow feature.
 
-Supported data access methods for remote tables:
+<table>
+<tr>
+<th valign="top">
 
--   Remote
--   Replication \(snapshot\)
--   Replication \(real-time\)
+Feature
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
+
+For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -533,7 +565,43 @@ Enter the password for authentication.
 
 ### Features
 
-To enable *Remote Tables*, select a Data Provisioning Agent.
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
+To enable *Remote Tables*, select a Data Provisioning Agent. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+</table>
 

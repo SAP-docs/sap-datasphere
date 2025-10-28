@@ -19,16 +19,31 @@ See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/935116dd7c324
 
 <a name="loioe546ccd61af54bf49a0f531a43fe0961__section_n34_dcc_x4b"/>
 
-## Using the Connection
-
-The connection type supports the remote table as well as the data flow feature.For more information, see [Features Supported by Connections](features-supported-by-connections-505bf40.md).
-
-> ### Note:  
-> This connection type doesn't support replication flows. Instead, we recommend using the *SAP ABAP* connection type for replication flows.
+## Supported Features
 
 
+<table>
+<tr>
+<th valign="top">
 
-### Remote Tables
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
 You can use the connection type to access:
 
@@ -58,14 +73,7 @@ You can use the connection type to access:
 -   data from SAP ABAP Dictionary tables in SAP S/4HANA systems
 
 
-Supported data access methods for remote tables:
-
--   Remote
--   Replication \(snapshot\)
--   For ODP sources: Replication \(real-time\)
-
-    For more information about the prerequisites, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
+Real-time replication is supported for ODP sources. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
 
 For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
 
@@ -74,12 +82,31 @@ For more information, see [Replicating Data and Monitoring Remote Tables](../Dat
 
 
 
-### Data Flows
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
 
 For legacy SAP ECC systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed, you can leverage Operational Data Provisioning \(ODP\) connectivity und use ODP extractors as sources in data flows. Also ODP extractors from SAP S/4HANA on-premise systems that have a version lower than 1909 are supported. Note that ABAP Dictionary tables are not supported as sources in data flows.
 
 > ### Note:  
 > The data preview in the data flow editor of the Data Builder is **not** available for SAP ECC sources.
+
+
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> This connection type doesn't support replication flows. Instead, we recommend using the *SAP ABAP* connection type for replication flows.
 
 
 
@@ -392,7 +419,29 @@ Enter the user password.
 
 ### Features
 
-To enable *Remote Tables*: 
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
+To enable *Remote Tables*, complete the following properties:
 
 
 <table>
@@ -470,7 +519,23 @@ Enter the name of the RFC destination that you have created in the source. For m
 </tr>
 </table>
 
-*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section. 
+
+</td>
+</tr>
+</table>
 
 
 

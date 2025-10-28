@@ -2,7 +2,7 @@
 
 # Extending Intelligent Applications
 
-The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any extensions defined in your source system. However, you can update the data products to include any required custom fields, and adjust the delivered views and analytic models to consume them.
+The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.
 
 
 

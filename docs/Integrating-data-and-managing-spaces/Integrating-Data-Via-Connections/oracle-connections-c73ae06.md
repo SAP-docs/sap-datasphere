@@ -364,9 +364,45 @@ Enter the Oracle user password.
 
 ### Features
 
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
 To enable *Remote Tables*, select a Data Provisioning Agent.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
 *Data Flows* are enabled without the need to set any additional connection properties.
+
+</td>
+</tr>
+</table>
 
 
 

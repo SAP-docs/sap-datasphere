@@ -25,7 +25,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
 -   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges :
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRUD–--`\) - To install data products to or uninstall data products from a space.
-    -   *Data Warehouse Data Builder* \(`CRUD–--`\) - To create, edit, or remove objects in the *Data Builder*.
+    -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 
 
 The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
@@ -87,7 +87,7 @@ The following diagram displays the flow for data products.
 
 5.  Select a target space and select *Next Step*.
 
-6.  On the *Review Entities* page, review the entities that you will import and then choose the appropriate data access method.
+6.  On the *Review Entities* page, review the entities that you will import and then choose the method you want for accessing the data.
 
     -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
     -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
@@ -113,7 +113,7 @@ The following diagram displays the flow for data products.
 
 The data product objects \(including any custom fields defined in the source system\) are created and deployed in the ingestion space and shared with your space.
 
--   Navigate to the objects in the *Repository Explorer* and review the data based on the data access method you selected.
+-   Navigate to the objects in the *Repository Explorer* and review the data based on how you chose to access it.
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Replication flow to Local Tables*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Run a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/run-a-replication-flow-98a26b2.md)\).
 
@@ -123,13 +123,15 @@ The data product objects \(including any custom fields defined in the source sys
 
 <!-- concept\_bm3\_rhz\_4gc -->
 
-## Updating Custom Fields for a Data Product
+## Updating an SAP Data Product to Install Source System Custom Fields
 
 When you install an intelligent application via SAP Business Data Cloud, any required data products are installed in an ingestion space, but these data products don't include any custom fields defined in the source system \(see [Reviewing Installed Intelligent Applications](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/644648756d334daaaf35d4fc9a0feeda.html)\).
 
-However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Applications](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/3c158685865d4b408938a148e828e21f.html) in the SAP Business Data Cloud documentation. From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that the data products you installed have the latest updates to the custom fields, you must uninstall and then reinstall the data product.
+However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Applications](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:.
 
-During its lifecycle, a data product might have patch, minor version, and major version updates. Any custom fields defined in the source system are available as follows:
+From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that an SAP data product you installed has the latest updates to the custom fields, you must uninstall and then reinstall it.
+
+During its lifecycle, an SAP data product might have patch, minor version, and major version updates. Any custom fields defined in the source system are available as follows:
 
 -   Patch or a minor version update: Any custom fields defined in the source system will continue to be available.
 -   Major version update: Any custom fields defined in the source system will no longer be available and they must be added again.
@@ -138,7 +140,7 @@ During its lifecycle, a data product might have patch, minor version, and major 
 
 <!-- task\_zbr\_nl5\_gfc -->
 
-## Modifying the Data Access for a Data Product
+## Modifying How You Access Data for an Installed Data Product
 
 
 
@@ -146,7 +148,81 @@ During its lifecycle, a data product might have patch, minor version, and major 
 
 ## Context
 
-When selecting a data access method, you will consider both storage and processing time costs and data freshness. You can at any time change the data access method for your data product.
+When selecting a method for accessing data for a data product that you install, you need to consider both storage and processing time costs and data freshness. Review the following table to get a better ideal of the options so that you can decide which method is most suitable for your needs.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Data Access
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+<th valign="top">
+
+Advantages
+
+</th>
+<th valign="top">
+
+Disadvantages
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+Remote tables are created in the ingestion space giving federated access to the data on the source system.
+
+</td>
+<td valign="top">
+
+Data is federated which guarantees the most current data is used for real-time data processing.
+
+</td>
+<td valign="top">
+
+Reduced performance can occur because data is accessed live from the source system.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Replication Flow to Local Tables
+
+</td>
+<td valign="top">
+
+Local tables are created in the ingestion space and data is replicated to them to make it available locally.
+
+</td>
+<td valign="top">
+
+Improved performance because data is accessed locally.
+
+</td>
+<td valign="top">
+
+Increased data storage costs.
+
+Latest data may not be available because data is replicated and accessed locally.
+
+</td>
+</tr>
+</table>
+
+Follow these steps for changing the method for how you access data for your data product.
 
 
 
@@ -156,9 +232,27 @@ When selecting a data access method, you will consider both storage and processi
 
 2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
-3.  When you find the data product you want, reinstall it.
+3.  When you find the data product that you want to change, select it to view its details page.
 
-    On the *Review Entities* page of the wizard, remember to switch the data access method to the one you want.
+4.  Choose the tab *Overview* \> *Details*, and find the API you want to install, and then select the *Install* action.
+
+    The *Import Entities* wizard will open.
+
+5.  Select the same target space where you previously installed the data product and select *Next Step*.
+
+6.  In the *Review Entities* step, select the method for accessing the data: *Remote Tables* or *Replication Flow to Local Tables*.
+
+    If you see a warning message, review it and select *Continue*.
+
+7.  Select *Start Import and Deploy*.
+
+    A notification is sent immediately, and this notification will update as the import process continues. After the import completes, you will have two notifications.
+
+    -   Select the first notification to see the imported entities listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
+    -   Select the second notification to view the import log messages.
+
+        If any entity could not be created, an error is given.
+
 
 
 <a name="dataproduct_uninstalldspspace"/>
@@ -250,17 +344,6 @@ If you no longer need a data product in a particular space, you can uninstall it
     </tr>
     </table>
     
-
-
-
-<a name="dataproduct_uninstalldspspace__result_vdd_wfl_rgc"/>
-
-## Results
-
-After the data product is uninstalled, you'll get a notification. The data product is uninstalled as follows:
-
--   A data product that is installed to multiple spaces is only uninstalled from the selected space. The data product remains in the ingestion space where it is still available to the other spaces where it's installed.
--   A data product that is installed to only one space is uninstalled from the selected space and removed from the ingestion space. Furthermore, if the data product being uninstalled is also the only data product in the ingestion space, the ingestion space will be removed.
 
 **Related Information**  
 

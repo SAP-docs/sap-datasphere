@@ -6,7 +6,7 @@ Accessing SAP BW/4HANA meta data and importing models into SAP Datasphere with a
 
 For accessing SAP BW∕4HANA, http is used to securely connect to the SAP BW∕4HANA system via Cloud Connector, and SAP HANA SQL is used to connect to the SAP HANA database of SAP BW∕4HANA via Data Provisioning Agent. Using Cloud Connector to make http requests to SAP BW∕4HANA requires a live data connection of type tunnel to SAP BW∕4HANA.
 
-For information on supported SAP BW/4HANA source versions, see [Supported Source Versions for SAP BW∕4HANA Model Transfer Connections](supported-source-versions-for-sap-bw-4hana-model-transfer-connections-4aefe38.md).
+For information on supported SAP BW/4HANA source versions, see [Available Source Versions for SAP BW/4HANA Model Transfer Connections](available-source-versions-for-sap-bw-4hana-model-transfer-connections-4aefe38.md).
 
 
 

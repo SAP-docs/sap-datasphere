@@ -106,6 +106,35 @@ A *Dimension* can point to a:
 <tr>
 <td valign="top">
 
+*Fiscal Time Dimension*
+
+See [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md).
+
+</td>
+<td valign="top">
+
+You must set exactly two key attributes for a *Fiscal Time Dimension*:
+
+-   A fiscal year variant identifier.
+-   A fiscal year period identifier.
+
+
+
+</td>
+<td valign="top">
+
+A *Fiscal Time Dimension* can point to a:
+
+-   *Dimension* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
+-   *Text Entity* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Text Entity* identifier key column.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Text Entity*
 
 See [Create a Text Entity for Attribute Translation](create-a-text-entity-for-attribute-translation-b25726d.md).

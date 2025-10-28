@@ -10,19 +10,12 @@ Create a geo-coordinates column to combine latitude and longitude values and out
 
 ## Context
 
-You can create a geo coordinates only in a graphical view with a semantic usage of *Dimension*. To use the geo-coordinates column in SAP Analytics Cloud you must:
-
--   Create a view with a semantic usage of *Fact* and enable *Expose for Consumption*.
--   Create an association in your *Fact* that points to your *Dimension*.
-
 When using the geo-coordinates column in an SAP Analytics Cloud geo map, the following types of layers are supported:
 
 -   Bubble
 -   Heat Map
 -   Choropleth / Drill
-
 -   Feature
-
 -   Flow
 
 For more information see [Creating a Geo Map in SAP Analytics Cloud](https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/6ade40e98e9c4f11ab3ad28d345ab54f.html?q=adobe%20service).
@@ -31,12 +24,9 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
 
 ## Procedure
 
-1.  Ensure that the following properties are set correctly for your view output node:
+1.  Create your graphical view and set its semantic usage to *Dimension*.
 
-    -   *Semantic Usage* - *Dimension* 
-    -   *Expose for Consumption* - Enabled
-
-2.  Select any object in your graphical view to display its context tools and click <span class="FPA-icons-V3"></span> Calculated Columns.
+2.  Select an appropriate node in the diagram to display its context tools and click <span class="FPA-icons-V3"></span> Calculated Columns.
 
     ![](images/Create_Column_Gif_0560169.gif)
 
@@ -123,10 +113,17 @@ For more information see [Creating a Geo Map in SAP Analytics Cloud](https://hel
 
     For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
-6.  Open a view that will point to your *Dimension* with an association and set its properties as follows:
 
-    -   *Semantic Usage* - *Fact*
-    -   *Expose for Consumption* - Enabled
-    -   Create an association and point to your dimension.
 
+
+<a name="loio6f3ffbd077294cfaa6ae159f45d130b7__result_u2w_ky1_xgc"/>
+
+## Results
+
+To use the geo-coordinates column in SAP Analytics Cloud you should now:
+
+-   Create a view with a semantic usage of *Fact* \(see [Create a Fact to Contain Measurable Data](Modeling-Data-in-the-Data-Builder/create-a-fact-to-contain-measurable-data-30089bd.md)\).
+-   Create an association in your *Fact* that points to your *Dimension* \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
+-   Use the *Fact* as a fact source in an analytic model \(see [Add a Fact to an Analytic Model](Modeling-Data-in-the-Data-Builder/add-a-fact-to-an-analytic-model-27075ee.md)\).
+-   Consume the analytic model in SAP Analytics Cloud \(see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives to create stories and analytic applications.") :arrow_upper_right:\).
 

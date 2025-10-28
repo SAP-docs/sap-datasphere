@@ -100,7 +100,7 @@ Displays the growth in % of the number of records since the last month. It is co
 </td>
 <td valign="top">
 
-Displays the disk storage currently used by the local table in MiB.
+Displays the disk storage used by the local table in MiB.
 
 > ### Note:  
 > Value is set to Not Applicable for local tables that store data in-memory.
@@ -117,12 +117,14 @@ Displays the disk storage currently used by the local table in MiB.
 </td>
 <td valign="top">
 
-Displays the memory currently used by the local table in MiB.
+Displays the quantity of memory required to fully load the local table data in-memory in MiB.
 
 > ### Note:  
 > Value is set to Not Applicable for local tables that store data on disk.
 
+This value is displayed even if, for reasons of memory optimization, SAP HANA has currently only partially loaded the data in-memory.
 
+You can use the SAP HANA Database Explorer to see the current actual in-memory size of the data.
 
 </td>
 </tr>

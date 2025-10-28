@@ -56,9 +56,35 @@ See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/9
 
 <a name="loio9bfe7db51216449d985a0b59f5e181c4__OpenConnectors_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the data flow feature.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -102,5 +128,31 @@ Select the instance to which you want to connect.
 
 ### Features
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+</table>
 

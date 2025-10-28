@@ -12,7 +12,7 @@ To securely connect to SAP S/4HANA on-premise when searching for ABAP CDS Views 
 
 ## Prerequisites
 
-See: [Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
+In addition, consider the prerequisites in[Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP).
 
 
 

@@ -1,12 +1,16 @@
 <!-- loio4aefe384ffb8487baa42062f28f31f9a -->
 
-# Supported Source Versions for SAP BW∕4HANA Model Transfer Connections
+# Available Source Versions for SAP BW/4HANA Model Transfer Connections
 
-In order to create a connection of type *SAP BW/4HANA Model Transfer* , the SAP BW∕4HANA system needs to have a specific version.
+In order to create a connection of type *SAP BW/4HANA Model Transfer*, your SAP BW/4HANA system needs to have a minimum version.
 
-These versions of SAP BW∕4HANA are supported:
+These versions of SAP BW/4HANA are available:
 
--   SAP BW∕4HANA 2.0 SPS07 or higher
+-   SAP BW/4HANA 2023 SP00 or higher
+
+-   SAP BW/4HANA 2021 SP00 or higher
+
+-   SAP BW/4HANA 2.0 SP07 or higher after you have applied the following SAP Notes:
 
     -   [2989654](https://me.sap.com/notes/2989654) BW/4 - Enable DWC "Import from Connection" for BW/4 Query - Revision 1
 
@@ -19,7 +23,7 @@ These versions of SAP BW∕4HANA are supported:
     -   [2976147](https://me.sap.com/notes/2976147) Import of query views in the BW/4 hybrid scenario: No search results of BW back ends with SAP\_BASIS Release 753
 
 
--   SAP BW∕4HANA 2.0 SPS01 to SPS06 after you have applied the following SAP Notes:
+-   SAP BW/4HANA 2.0 SP01 to SP06 after you have applied the following SAP Notes:
 
     -   [2943200](https://me.sap.com/notes/2943200) TCI for BW4HANA 2.0 Hybrid
 

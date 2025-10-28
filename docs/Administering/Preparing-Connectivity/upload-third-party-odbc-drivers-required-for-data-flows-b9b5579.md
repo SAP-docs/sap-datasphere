@@ -12,6 +12,8 @@ To enable access to a non-SAP database via ODBC to use it as a source for data f
 
 ## Prerequisites
 
+In addition, prepare the driver files:
+
 -   Search for the required driver files in the internet, make sure you have selected the correct driver files \(identified by their SHA256-formatted fingerprint\) and download them from an appropriate web page \(see below\).
 
 -   Ensure you have a valid license for the driver files.

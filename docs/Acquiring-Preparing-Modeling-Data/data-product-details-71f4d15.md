@@ -515,12 +515,12 @@ The actions to install or uninstall data products appear based on the privileges
 </tr>
 </table>
 
-You can select an data product \(API\) to view its details page, where you can learn more about it. Information is separated into the following areas:
+You can select a data product's API to view its details page, where you can learn more about it. Information is separated into the following areas:
 
--   Data product \(API\) properties that include all the same high-level information of the data product \(API\) *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
--   Available objects and their container path and primary key. If the primary key is missing, the data product \(API\) cannot be installed.
--   Documentation that provides a more detailed description of the data product \(API\), links that can give you more information on how to use it, and extensibility information.
--   Actions available for the data product \(API\) appear in a toolbar at the top of the page.
+-   API properties that include all the same high-level information found in the data product's *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
+-   Available objects and their container path and primary key. If the primary key is missing, API cannot be installed.
+-   Documentation that provides a more detailed description of the API, links that can give you more information on how to use it, and extensibility information.
+-   Actions available for the API appear in a toolbar at the top of the page.
 
 
 

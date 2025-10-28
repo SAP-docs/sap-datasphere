@@ -4,7 +4,7 @@
 
 # Configure Collision Handling
 
-When the analytic model has measures and at least one structure you need to define how the calculations should be prioritized.
+When the analytic model has measures and at least one structure you can define how the calculations should be prioritized.
 
 
 

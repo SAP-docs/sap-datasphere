@@ -122,7 +122,7 @@ A transformation flow writes data to a target table. You can create a new target
     </td>
     <td valign="top">
     
-    \[read only\] Displays the table storage. 
+    \[read only\] \[read-only\] Displays the table storage. 
 
     For local tables created in a space with SAP HANA Cloud, SAP HANA database storage the values can be "Disk" or "In-Memory". 
 

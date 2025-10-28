@@ -19,19 +19,54 @@ See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/93511
 
 <a name="loio8b132061d4e149d9a16b3576dda1f613__Redshift_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the remote table as well as the data flow feature.
 
-Supported data access methods for remote tables:
+<table>
+<tr>
+<th valign="top">
 
--   Remote
--   Replication \(snapshot\)
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
 For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
 
 > ### Note:  
 > -   In the view editor of the Data Builder, you can see technical artifacts from the source that you cannot use for modeling. Affected artifacts are tables containing "pkey" or tables from technical schemas pg\_catalog, pg\_internal, and information\_schema, for example. Please ignore these artifacts.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -189,7 +224,43 @@ Enter the password of the Redshift user.
 
 ### Features
 
-To enable *Remote Tables*, select a Data Provisioning Agent.
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
+To enable *Remote Tables*, select a Data Provisioning Agent. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+</table>
 

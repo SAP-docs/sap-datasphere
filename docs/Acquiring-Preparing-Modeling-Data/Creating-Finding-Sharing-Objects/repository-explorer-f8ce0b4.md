@@ -8,6 +8,7 @@ The *Repository Explorer* gives you access to all your SAP Datasphere objects. Y
 
 This topic contains the following sections:
 
+-   [Prerequisites](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_qq4_dmv_vgc)
 -   [Open the Repository Explorer](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_open)
 -   [Enter a String to Search On](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_string_search)
 -   [Filter by Collection, Space, or Folder](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_collection_space_filter)
@@ -16,6 +17,19 @@ This topic contains the following sections:
 -   [Define Advanced Filter Conditions](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_advanced_filter)
 -   [Favorite Objects](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_favorite)
 -   [Create Objects and Act on Existing Objects](repository-explorer-f8ce0b4.md#loiof8ce0b4a24fe473a962176c8aa3cad42__section_tools)
+
+
+
+<a name="loiof8ce0b4a24fe473a962176c8aa3cad42__section_qq4_dmv_vgc"/>
+
+## Prerequisites
+
+To access all your SAP Datasphere objects in the *Repository Explorer*, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces Files* \(`-R------`\) - To access objects in a space.
+
+The *DW Modeler* role template, for example, grants these privileges \(see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: and [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:\).
 
 
 

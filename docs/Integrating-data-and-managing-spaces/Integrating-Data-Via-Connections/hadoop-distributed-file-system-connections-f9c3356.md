@@ -13,9 +13,35 @@ Use the connection to access objects from an Hadoop Distributed File System \(HD
 
 <a name="loiof9c33566c4eb412d9d36a2f044bb5126__HDFS_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the data flow feature.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
+
+</td>
+</tr>
+</table>
 
 
 
@@ -54,7 +80,7 @@ Select *RPC* or *WEBHDFS*
 > ### Note:  
 > Along with Remote Procedure Call \(RPC\), HDFS can also extend connections with WebHDFS.
 > 
-> If you select *RPC*, make sure that both the NameNode and the DataNodes are exposed and can be connected from SAP Datasphere. For more information, see [Finding SAP Datasphere IP addresses](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Find externally facing IP addresses and IDs that must be added to allowlists in particular remote applications before you can use connections to these remote applications.") :arrow_upper_right:.
+> If you select *RPC*, make sure that both the NameNode and the DataNodes are exposed and can be connected from SAP Datasphere. For more information, see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:.
 
 
 
@@ -358,5 +384,31 @@ Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from
 
 ### Features
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+</table>
 

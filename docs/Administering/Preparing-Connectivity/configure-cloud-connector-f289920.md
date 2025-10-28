@@ -430,7 +430,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP BW/4HANA*
+        **SAP BW∕4HANA**
         
         </td>
         <td valign="top">
@@ -615,7 +615,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        SAP BW/4HANA \(HTTPS\)
+        SAP BW∕4HANA \(HTTPS\)
         
         </td>
         <td valign="top">
@@ -661,7 +661,7 @@ For more information about the supported use cases depending on the connection t
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
 
-You can now create your connections in the SAP Datasphere *Connections* app or in the *Catalog & Marketplace* \> *Metadata Extraction* app.
+You can now create your connections in the SAP Datasphere *Connections* app or in the <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\) ** \> ** :desktop_computer: \(*Metadata Extractions*\) app.
 
 For answers to the most common questions about the Cloud Connector, see [Frequently Asked Questions](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/f8d6f9ab43c14e52a9e8036515a472e9.html) in the *SAP BTP Connectivity* documentation.
 

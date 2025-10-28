@@ -38,6 +38,8 @@ Before creating your data access control, you must have prepared a permissions e
 -   Criterion Column - The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It does not need to exactly match a column name, but should guide the user to the column to which it should be mapped.
 -   Operator Column - The following operators are supported:
     -   `ALL` \(or `*`\) - Provides access to all records. No values required.
+    -   `N` \(or `IS NULL`\) - Is null. No values required.
+    -   `NN` \(or `NOT NULL`\) - Is not null. No values required.
     -   `EQ` \(or `=`\) - Equal to *First Value*.
     -   `NE` \(or `<>` or `!=`\) - Not equal to *First Value*.
     -   `GT` \(or `>`\) - Greater than *First Value*.
@@ -572,7 +574,7 @@ Based on these three records:
     
     Open the *Impact and Lineage Analysis* graph for the object. 
 
-    See [Impact and Lineage Analysis](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage (or data provenance) of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
+    See [Impact and Lineage Analysis](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage or data provenance of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
     
     </td>
     </tr>

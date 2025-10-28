@@ -24,16 +24,35 @@ See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/935116d
 
 <a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_usage"/>
 
-## Using the Connection
+## Supported Features
 
-The connection type supports the remote table feature.
 
-Supported data access methods for remote tables:
+<table>
+<tr>
+<th valign="top">
 
--   Remote
--   Replication \(snapshot\)
+Feature
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Remote Tables
+
+</td>
+<td valign="top">
+
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md).
+
+</td>
+</tr>
+</table>
 
 
 
@@ -138,5 +157,31 @@ Enter the password for the database user.
 
 ### Features
 
-To enable *Remote Tables*, select a Data Provisioning Agent.
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Remote Tables*
+
+</td>
+<td valign="top">
+
+To enable *Remote Tables*, select a Data Provisioning Agent. 
+
+</td>
+</tr>
+</table>
 

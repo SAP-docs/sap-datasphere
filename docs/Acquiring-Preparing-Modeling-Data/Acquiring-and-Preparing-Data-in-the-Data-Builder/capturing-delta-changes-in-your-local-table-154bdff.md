@@ -151,3 +151,30 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 > ### Note:  
 > If the table is used as source or target in an object, for example in a flow, you can see it in the table editor under dependent objects. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 
+
+
+## Displaying Records Archived in Your ABAP Source System in Views
+
+If you archive records in your ABAP source system, these records are by default replicated as deletion \(change type 'D'\) and marked as deleted in a table with delta capture enabled. They will therefore not be available in SAP Datasphere views for consumption, as views will read from the active records table, which excludes both deleted \(change type 'D'\) and archived records \(change type 'M'\).
+
+So that the archived records from your ABAP source system do not appear in your tables in SAP Datasphere as deleted records, please follow the guidance from [SAP Note 3290438](https://me.sap.com/notes/SAP Note 3290438) that suggests two configuration options using the table DHCDC\_TRIGGERSTG in the ABAP source system \(value 'A' or value 'D'\):
+
+-   **Option 1**: Archived records are replicated to SAP Datasphere with change type 'M', so that you can distinguish in a local table with delta capture enabled between archived records \(change type 'M'\) and deleted records \(change type 'D'\).
+-   **Option 2**: You want to consider archived records \(change type 'M'\) as active records for a specific table \(so that a view will display them\). We recommend that you use a transformation flow and map records with change type 'M' to change type 'U' in the target table. This transformation flow can either use a graphical view transform with calculated columns or an SQL view transform. In that transform, all records with change type 'M' are mapped to 'U' \(see SQL example here below\) with all other source columns mapped unchanged to target columns.
+
+    > ### Example:  
+    > \[..\]
+    > 
+    > CASE
+    > 
+    > WHEN "MyTable\_Delta"."Change\_Type" = 'D' THEN 'U'
+    > 
+    > ELSE "MyTable\_Delta"."Change\_Type" END AS "Change\_Type",
+    > 
+    > "MyTable\_Delta"."Change\_Date"
+    > 
+    > \[...\]
+
+    The target table for this transformation flow can either be a copy of the source table or the source table itself \(in that case please introduce an additional filter to only process records with change type 'M'\).
+
+

@@ -4,9 +4,15 @@
 
 Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.
 
+This topic contains the following sections:
+
+-   [Prerequisites](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_prerequisites)
+-   [Use Note Analyzer to Verify Your ABAP Source System Compliance](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_note_analyzer)
+-   [ABAP Replication Source Object Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_source_objects)
 
 
-<a name="loio3f70579c92434f4f88471bba2bd70893__section_cwy_11q_psb"/>
+
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_prerequisites"/>
 
 ## Prerequisites
 
@@ -208,89 +214,374 @@ SAP Landscape Transformation Replication Server \(SLT\) Notes
 <tr>
 <td valign="top">
 
-DMIS 2020
+DMIS 2025 SP00
 
 </td>
 <td valign="top">
 
-SAP Note [3156672](https://me.sap.com/notes/3156672)
+SAP Note [3667132](https://me.sap.com/notes/3667132)
 
 </td>
 <td valign="top">
 
 SAP Note [3100673](https://me.sap.com/notes/3100673)
 
-> ### Note:  
-> For DMIS 2020 SP02 and lower, upgrade to SP04.
-
-
-
 </td>
 <td valign="top">
 
-SAP Note [3151041](https://me.sap.com/notes/3151041)
+SAP Note [3658010](https://me.sap.com/notes/3658010)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-DMIS 2018
+DMIS 2018 SP14 /
+
+DMIS 2020 SP10
 
 </td>
 <td valign="top">
 
-SAP Note [3156672](https://me.sap.com/notes/3156672)
+[3658528](https://me.sap.com/notes/3658528)
 
 </td>
 <td valign="top">
 
--   DMIS 2018 SP07 and higher: SAP Note [3100673](https://me.sap.com/notes/3100673)
--   DMIS 2018 SP06: SAP Note [3100673](https://me.sap.com/notes/3100673)\(and implement TCI 3110660\)
-
-> ### Note:  
-> For DMIS 2018 SP02 and lower, upgrade to the latest available DMIS 2018 SP.
-
-
+[3100673](https://me.sap.com/notes/3100673)
 
 </td>
 <td valign="top">
 
-SAP Note [3151041](https://me.sap.com/notes/3151041)
+[3657956](https://me.sap.com/notes/3657956)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-DMIS 2011
+DMIS 2018 SP13 /
+
+DMIS 2020 SP09
 
 </td>
 <td valign="top">
 
-SAP Note [3156649](https://me.sap.com/notes/3156649)
+[3487365](https://me.sap.com/notes/3487365)
 
 </td>
 <td valign="top">
 
--   DMIS 2011 SP22 and higher: SAP Note [3100673](https://me.sap.com/notes/3100673)
-
--   DMIS 2011 SP20 and SP21: SAP Note [2981615](https://me.sap.com/notes/2981615)
-
-
-> ### Note:  
-> For DMIS 2011 SP19 and lower, upgrade to the latest available DMIS 2011 SP.
-
-
+[3100673](https://me.sap.com/notes/3100673)
 
 </td>
 <td valign="top">
 
-SAP Note [3151142](https://me.sap.com/notes/3151142)
+[3487355](https://me.sap.com/notes/3487355)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2018 SP12 /
+
+DMIS 2020 SP08
+
+</td>
+<td valign="top">
+
+[3438949](https://me.sap.com/notes/3438949)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3438948](https://me.sap.com/notes/3438948)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2018 SP11 /
+
+DMIS 2020 SP07
+
+</td>
+<td valign="top">
+
+[3383618](https://me.sap.com/notes/3383618)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3383627](https://me.sap.com/notes/3383627)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2018 SP10 /
+
+DMIS 2020 SP06
+
+</td>
+<td valign="top">
+
+[3362214](https://me.sap.com/notes/3362214)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3314851](https://me.sap.com/notes/3314851)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2011 SP28
+
+</td>
+<td valign="top">
+
+[3487273](https://me.sap.com/notes/3487273)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3487320](https://me.sap.com/notes/3487320)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2011 SP27
+
+</td>
+<td valign="top">
+
+[3439004](https://me.sap.com/notes/3439004)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3438985](https://me.sap.com/notes/3438985)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2011 SP26
+
+</td>
+<td valign="top">
+
+[3383613](https://me.sap.com/notes/3383613)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3383514](https://me.sap.com/notes/3383514)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2011 SP25
+
+</td>
+<td valign="top">
+
+[3362249](https://me.sap.com/notes/3362249)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3324231](https://me.sap.com/notes/3324231)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DMIS 2011 SP24
+
+</td>
+<td valign="top">
+
+[3254934](https://me.sap.com/notes/3254934)
+
+</td>
+<td valign="top">
+
+[3100673](https://me.sap.com/notes/3100673)
+
+</td>
+<td valign="top">
+
+[3048369](https://me.sap.com/notes/3048369)
 
 </td>
 </tr>
 </table>
 
-To connect to older SAP systems including SAP Business Warehouse \(BW\) systems using ODP \(in combination with the DMIS add-on\), review the DMIS-related information above along with the information provided in SAP Note [2890171](https://me.sap.com/notes/2890171) and SAP Note [2775549](https://me.sap.com/notes/2775549).
+To connect to other SAP systems including SAP Business Warehouse \(BW\) using ODP \(in combination with the DMIS add-on\), review the DMIS-related information above along with the information provided in SAP Note [2890171](https://me.sap.com/notes/2890171) and SAP Note [2775549](https://me.sap.com/notes/2775549).
+
+
+
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_note_analyzer"/>
+
+## Use Note Analyzer to Verify Your ABAP Source System Compliance
+
+You can use *Note Analyzer* to review your ABAP system and ensure that all relevant notes are applied to it:
+
+1.  Run *Note Analyzer* on your ABAP system to verify the status of all required notes.
+
+    *Note Analyzer* returns a list of required notes with an implementation status for each
+
+2.  If any notes are shown as not implemented, show the list to your ABAP administrator and ask her to apply them.
+3.  Re-run *Note Analyzer* to ensure that all notes are now implemented.
+
+    > ### Note:  
+    > When requesting support, you must include the *Note Analyzer* output to your support ticket.
+
+
+For more information about *Note Analyzer*, see [Implement and Run SAP Note Analyzer](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4457678727.html#HowtocheckrelevantnotecorrectionsinOnpremiseABAPbasedsystemsforDataFlowsandReplicationFlows-ImplementandrunSAPNoteAnalyzer) in the *Expert Content*.
+
+
+
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_source_objects"/>
+
+## ABAP Replication Source Object Types
+
+The source object types that are available to you depend on your ABAP system version:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Source Object Type
+
+</th>
+<th valign="top">
+
+Source System Versions
+
+</th>
+<th valign="top">
+
+*Expert Content* Troubleshooting
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+CDS Views
+
+</td>
+<td valign="top">
+
+-   SAP S/4HANA 1909 and higher
+
+
+
+</td>
+<td valign="top">
+
+-   [CDS views from S/4HANA On-Premise](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4445249362.html)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SLT Tables
+
+</td>
+<td valign="top">
+
+-   DMIS 2020 SP03 and higher
+-   DMIS 2018 SP06 and higher
+
+
+
+</td>
+<td valign="top">
+
+-   [ABAP Tables from On-Premise](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4477053691.html)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ODP Tables
+
+</td>
+<td valign="top">
+
+-   SAP S/4HANA 1909 and higher
+-   DMIS 2020 SP04 and higher
+-   DMIS 2018 SP08 and higher
+-   DMIS 2011 SP23 and higher
+
+
+
+</td>
+<td valign="top">
+
+-   [ODP DataSource with BW Context from On-Premise](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4518286134.html)
+-   [ODP SAPI Datasources from On-Premise](https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/4518621673.html)
+
+
+
+</td>
+</tr>
+</table>
 
