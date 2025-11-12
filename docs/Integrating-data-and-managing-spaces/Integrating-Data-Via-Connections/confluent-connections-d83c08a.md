@@ -10,11 +10,9 @@ Use the connection to connect to Apache Kafka hosted on either the Confluent Pla
 
 This topic contains the following sections:
 
--   [Supported Features](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_usage)
--   [Configuring Connection Properties For Confluent Platform](confluent-connections-d83c08a.md#loioa5d1e1d2885f4a69ae3cc5049eb0cabf)
--   [Configuring Connection Properties For Confluent Cloud](confluent-connections-d83c08a.md#loio8cd75f509baf41bdb859fd2efa045c84)
+-   -   [Supported Features](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_usage)
 
-For information about the required prerequisites, see [Prepare Connectivity to Confluent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/3515f11430044e479cc4934cd221e010.html "To be able to successfully validate and use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Confluent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3515f11430044e479cc4934cd221e010.html "To be able to successfully validate and use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -47,11 +45,11 @@ Replication Flows
 You can use the connection to add source and target objects to a replication flow.
 
 > ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
 With Schema Registry, replication flows use a schema reference when serializing a Kafka topic message instead of providing the schema definition in every message. In the target settings of the replication flow configuration, you can decide to use Schema Registry.
 
-For more information, see [Confluent Kafka Targets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [Confluent Kafka Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 </td>
 </tr>

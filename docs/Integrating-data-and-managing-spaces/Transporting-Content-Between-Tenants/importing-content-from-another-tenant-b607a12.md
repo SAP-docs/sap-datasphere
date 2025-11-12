@@ -51,7 +51,7 @@ The *DW Space Administrator* global and scoped role templates, for example, gran
 </tr>
 </table>
 
-For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -125,7 +125,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
         > ### Note:  
         > -   The *Including permissions* option is not supported for SAP Datasphere.
         > -   Connections are never overwritten by an import.
-        > -   When overwriting objects with a release state, the objects you are importing must have the same release state or another release state that is consistent with their lifecycle \(see [Releasing Stable Views for Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5b99e9bcb5964ab69b094215d285feb1.html "To encourage confidence in the stability of your views and to guarantee backward compatibility when they are updated, you can set their Release State to Released. Once a view is released, it must continue to provide the same output columns until it is replaced by a successor, at which point it can be deprecated and, eventually, decommissioned.") :arrow_upper_right:\).
+        > -   When overwriting objects with a release state, the objects you are importing must have the same release state or another release state that is consistent with their lifecycle \(see [Releasing Stable Views for Consumption](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5b99e9bcb5964ab69b094215d285feb1.html "To encourage confidence in the stability of your views and to guarantee backward compatibility when they are updated, you can set their Release State to Released. Once a view is released, it must continue to provide the same output columns until it is replaced by a successor, at which point it can be deprecated and, eventually, decommissioned.") :arrow_upper_right:\).
 
 
 
@@ -146,7 +146,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
     -   **Overwrite objects and data** - All imported objects in the space will be deployed.
 
     > ### Note:  
-    > This option does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
+    > This option does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
 
 
     

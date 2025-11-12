@@ -10,7 +10,7 @@ Assign a SAP Datasphere space to access and work with SAP HANA Cloud, data lake.
 
 ## Prerequisites
 
-Before you can work with data lake, it must be enabled by selecting a storage size in *System* \> *Configuration* \> *Tenant Configuration* \(see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
+Before you can work with data lake, it must be enabled by selecting a storage size in *System* \> *Configuration* \> *Tenant Configuration* \(see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:.
 
 
 

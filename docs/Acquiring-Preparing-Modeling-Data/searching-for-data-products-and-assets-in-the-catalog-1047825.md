@@ -19,7 +19,7 @@ To access the catalog and view objects, you must have a global role that grants 
 -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 
-The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="concept_dk1_g4t_32c"/>
 
@@ -29,9 +29,12 @@ The *Catalog User* global role and the *DW Viewer* role template \(used directly
 
 In the side navigation area, select <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="FPA-icons-V3"></span> \(*Search*\) to access the catalog and start searching for data products and assets.
 
-You can find objects globally by using the search bar and entering all or part of the characters in an asset, data product, data provider, term, or KPI. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+You can find objects globally by using the search bar and entering all or part of the characters in a data product, asset, data provider, term, or KPI. Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
 
-If you've searched for objects before, clicking in the search field shows a list of recently entered searches. As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it. 
+-   If you've searched for objects before, clicking in the search field shows a list of recently entered searches. As you type, the field will begin proposing objects and search strings. Select an object to open it directly. Click on a string to start a search on it. 
+
+-   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
+
 
 Filter the search results based on selected criteria to limit the number of results.
 
@@ -285,7 +288,7 @@ You can change how the catalog search results are displayed by selecting one of 
 -   <span class="FPA-icons-V3"></span> \(Display as List\): The list view shows the most information about each object in the catalog.
 -   <span class="SAP-icons-V5"></span> \(Display as Table\): The table view shows all the same information as the list view. However, some of the columns are hidden by default. You can choose which columns you want to show or hide. This display option is not available when viewing the search results for the **All** collection.
 
-The information and actions available in each view differs. See [Information and Actions Available for Search Results](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/751357b3c1084ea28eb2a1a1806311e0.html "Information and actions available in the different search result views appear based on your assigned role.") :arrow_upper_right:.
+The information and actions available in each view differs. See [Information and Actions Available for Search Results](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/751357b3c1084ea28eb2a1a1806311e0.html "Information and actions available in the different search result views appear based on your assigned role.") :arrow_upper_right:.
 
 **Related Information**  
 
@@ -296,5 +299,5 @@ The information and actions available in each view differs. See [Information and
 
 [Installing Data Products](installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
+[System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
 

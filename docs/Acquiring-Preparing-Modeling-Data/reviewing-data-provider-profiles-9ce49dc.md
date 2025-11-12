@@ -17,9 +17,9 @@ Data provider profiles are managed by the data provider themselves or by a conte
 -   A data provider is a person or company that offers one or multiple data products.
 -   A content aggregator is a company managing one or multiple data provider profiles and their available data products.
 
-To learn more, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+To learn more, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
-For example, if you’re a content aggregator, you might want to review the data provider profile of a company you manage to ensure that their information is correct and their data offerings are current. If any changes are needed, go to the Data Sharing Cockpit to make them. For more information, see [Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
+For example, if you’re a content aggregator, you might want to review the data provider profile of a company you manage to ensure that their information is correct and their data offerings are current. If any changes are needed, go to the Data Sharing Cockpit to make them. For more information, see [Maintaining your Data Provider Profile](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
 
 
 
@@ -87,7 +87,7 @@ Review the following descriptions for the content you'll see. If a property is n
 
 Displays properties for the data provider, such as the following:
 
-Displays the contact details for the data provider and content aggregator, which can include the email address, address, and phone number. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+Displays the contact details for the data provider and content aggregator, which can include the email address, address, and phone number. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 **Data Provider Properties**
 
@@ -148,7 +148,7 @@ Displays the marketplace visibility of the data provider profile. The visibility
 -   *Formations*: Data products are available to all users in the *Data Products* collection.
 
 
-A data provider can have both public and private visibility options. The internal and formation options cannot be used with the other options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
+A data provider can have both public and private visibility options. The internal and formation options cannot be used with the other options. For more information, see [Using Contexts to Realize Public, Private, and Internal Data Marketplaces](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/c936499e7ef045b09139723fd0ac9e09.html "Use contexts to realize private or internal data marketplaces by restricting the visibility of your data provider profile and your data products to selected users only.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -246,7 +246,7 @@ Displays one or more SAP applications that the data provider has data products f
 
 **Contact Details**
 
-Displays the contact details for the data provider and content aggregator, which can include the email address, address, and phone number. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+Displays the contact details for the data provider and content aggregator, which can include the email address, address, and phone number. A content aggregator is a company that manages one or multiple data provider profiles and that creates the data product content on behalf of one or multiple data providers. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/ba1b703d905547b392c09b35c1028de1.html "Data Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 
 
@@ -367,7 +367,7 @@ Update your data provider profile.
 </td>
 <td valign="top">
 
-[Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:
+[Maintaining your Data Provider Profile](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -379,9 +379,9 @@ Manage the lifecycle of your data products.
 </td>
 <td valign="top">
 
-[Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
+[Preparing your Data Products for Listing](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 
-[Creating Custom Delta Share Data Products](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
+[Creating Custom Delta Share Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -398,7 +398,7 @@ Update a profile for a data provider that you manage.
 </td>
 <td valign="top">
 
-[Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:
+[Maintaining your Data Provider Profile](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -410,9 +410,9 @@ Manage the lifecycle for a data product from one of the data providers you manag
 </td>
 <td valign="top">
 
-[Preparing your Data Products for Listing](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
+[Preparing your Data Products for Listing](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 
-[Creating Custom Delta Share Data Products](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
+[Creating Custom Delta Share Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
 
 </td>
 </tr>

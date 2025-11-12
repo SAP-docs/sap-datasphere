@@ -18,7 +18,7 @@ To create data access controls, you must have a scoped role that grants you acce
 -   *Data Warehouse Data Builder* \(`-R------`\) - To access the *Data Builder*.
 -   *Data Warehouse Data Access Control* \(`CRUD----`\) - To create, read, update, and delete data access controls.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -28,7 +28,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 Before creating your data access control, you must have identified the following entities:
 
--   An entity with a semantic usage of *Hierarchy* containing parent-child relationships for the records in the permissions entity \(see [Create an External Hierarchy for Drill-Down](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dbac7a862b3744d8a71d268644aac389.html "Select a Semantic Usage of Hierarchy to indicate that your entity contains parent-child relationships for members in a dimension.") :arrow_upper_right:\).
+-   An entity with a semantic usage of *Hierarchy* containing parent-child relationships for the records in the permissions entity \(see [Create an External Hierarchy for Drill-Down](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/dbac7a862b3744d8a71d268644aac389.html "Select a Semantic Usage of Hierarchy to indicate that your entity contains parent-child relationships for members in a dimension.") :arrow_upper_right:\).
 
     > ### Note:  
     > Only external hierarchies with a single pair of parent-child columns are supported. Level-based hierarchies and dimensions with internal hierarchies cannot be used, and the data in your hierarchy must respect the following rules:
@@ -40,7 +40,7 @@ Before creating your data access control, you must have identified the following
     > To create a data access control from an entity with a semantic usage of *Hierarchy with Directory*, see [Create a "Hierarchy with Directory" Data Access Control](create-a-hierarchy-with-directory-data-access-control-44ae628.md).
 
 -   A permissions entity containing the following columns:
-    -   User ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). 
+    -   ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). 
 
         > ### Note:  
         > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
@@ -123,7 +123,7 @@ For example:
     <tr>
     <th valign="top">
 
-    User ID
+    ID
     
     </th>
     <th valign="top">
@@ -271,7 +271,7 @@ For example:
     
     \[read-only\] Displays the deployment and error status of the object.
 
-    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -402,10 +402,10 @@ For example:
     
 4.  Click *Save* and then *Deploy* to deploy your data access control and make it available for use. 
 
-    For information about attaching a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
+    For information about attaching a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
 
     > ### Note:  
-    > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/b338e4aa7e7e494eb68c383720ebfd3a.html "You can, at any time, view the data contained in (or output by) your tables, views, and other Data Builder objects. When working in the graphical view editor, you can view the data output by each node in the diagram.") :arrow_upper_right:\).
+    > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b338e4aa7e7e494eb68c383720ebfd3a.html "You can, at any time, view the data contained in (or output by) your tables, views, and other Data Builder objects. When working in the graphical view editor, you can view the data output by each node in the diagram.") :arrow_upper_right:\).
 
 5.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
@@ -433,7 +433,7 @@ For example:
     
     Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -447,7 +447,7 @@ For example:
     
     Deploy your changes to make them available in the run-time environment.
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -461,7 +461,7 @@ For example:
     
     Export the object to a CSN/JSON file. 
 
-    See [Exporting Objects to a CSN/JSON File](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/391610123f1f4a12abb12cbf77a3294d.html "Export the definitions of your tables, views, and other objects to a CSN/JSON file, which can be imported into another space or tenant.") :arrow_upper_right:.
+    See [Exporting Objects to a CSN/JSON File](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/391610123f1f4a12abb12cbf77a3294d.html "Export the definitions of your tables, views, and other objects to a CSN/JSON file, which can be imported into another space or tenant.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -475,7 +475,7 @@ For example:
     
     Open the *Impact and Lineage Analysis* graph for the object. 
 
-    See [Impact and Lineage Analysis](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage or data provenance of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
+    See [Impact and Lineage Analysis](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage or data provenance of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -489,7 +489,7 @@ For example:
     
     \[read-only\] Displays the status of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -503,7 +503,7 @@ For example:
     
     Open the *Version History* dialog for the object. 
 
-    See [Reviewing and Restoring Object Versions](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4f717cc0d90e4453a072b37f6b043593.html "Each time you deploy your object, a new version is created in the repository. You can review previous versions of an object at any time and choose to restore a previous version.") :arrow_upper_right:.
+    See [Reviewing and Restoring Object Versions](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4f717cc0d90e4453a072b37f6b043593.html "Each time you deploy your object, a new version is created in the repository. You can review previous versions of an object at any time and choose to restore a previous version.") :arrow_upper_right:.
     
     </td>
     </tr>

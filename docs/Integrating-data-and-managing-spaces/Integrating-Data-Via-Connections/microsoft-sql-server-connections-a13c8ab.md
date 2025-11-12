@@ -8,10 +8,10 @@ Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Serv
 
 This topic contains the following sections:
 
--   [Supported Features](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_usage)
--   [Configuring Connection Properties](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__connection_properties)
+-   -   [Supported Features](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_usage)
+-   [Configuring Connection Properties](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_connection_properties)
 
-For more information about the required prerequisites, see [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server, certain preparations have to be made.") :arrow_upper_right:.
+For more information about the required prerequisites, see [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -83,7 +83,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loioa13c8abb328f45be891599c9cc76fb91__connection_properties"/>
+<a name="loioa13c8abb328f45be891599c9cc76fb91__MSSQL_connection_properties"/>
 
 ## Configuring Connection Properties
 

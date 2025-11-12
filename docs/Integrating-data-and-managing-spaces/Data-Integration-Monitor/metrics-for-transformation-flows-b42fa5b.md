@@ -8,11 +8,11 @@ Metrics provide the record count for source and target tables used in the flow. 
 
 -   `LOAD_TYPE`
 
-    The load type for a transformation flow run. For more information about load types, see [Creating a Transformation Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f7161e6c20204672ac4a6d90c81762e4.html "Create a transformation flow to load data from one or more sources, apply transformations (such as a join), and output the result in a target table. You can load a full set of data from one or more sources to a target table. You can add local tables and views, Open SQL schema objects, and also remote tables located in BW Bridge spaces. You can also load delta changes (including deleted records) from one source table to a target table.") :arrow_upper_right:.
+    The load type for a transformation flow run. For more information about load types, see [Creating a Transformation Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f7161e6c20204672ac4a6d90c81762e4.html "Create a transformation flow to load data from one or more sources, apply transformations (such as a join), and output the result in a target table. You can load a full set of data from one or more sources to a target table. You can add local tables and views, Open SQL schema objects, and also remote tables located in BW Bridge spaces. You can also load delta changes (including deleted records) from one source table to a target table.") :arrow_upper_right:.
 
 -   `TRUNCATE`
 
-    Indicates whether the *Delete All Before Loading* option is used for the transformation flow run. For more information, see [Create or Add a Target Table to a Transformation Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/0950746ab4444e5ca6a665ee1b0380a1.html "A transformation flow writes data to a target table. You can create a new target table or use an existing one.") :arrow_upper_right:.
+    Indicates whether the *Delete All Before Loading* option is used for the transformation flow run. For more information, see [Create or Add a Target Table to a Transformation Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/0950746ab4444e5ca6a665ee1b0380a1.html "A transformation flow writes data to a target table. You can create a new target table or use an existing one.") :arrow_upper_right:.
 
 -   `REMOTE_ACCESS` 
 

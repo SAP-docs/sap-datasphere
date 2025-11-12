@@ -11,10 +11,10 @@ Use the connection to connect to and access data from an Oracle database \(on-pr
 
 This topic contains the following sections:
 
--   [Supported Features](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_usage)
--   [Configuring Connection Properties](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__connection_properties)
+-   -   [Supported Features](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_usage)
+-   [Configuring Connection Properties](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Oracle](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Oracle](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -71,7 +71,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loioc73ae0601d364f47830d339b6e86b7e8__connection_properties"/>
+<a name="loioc73ae0601d364f47830d339b6e86b7e8__Oracle_connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -290,7 +290,7 @@ Description
 Select whether you’re using SSL. The default value is *true*. 
 
 > ### Note:  
-> If you select SSL and you want to use the connection for data flows, in addition to the ODBC driver file, additional files must have been uploaded to SAP Datasphere \(see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:\).
+> If you select SSL and you want to use the connection for data flows, in addition to the ODBC driver file, additional files must have been uploaded to SAP Datasphere \(see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:\).
 
 
 

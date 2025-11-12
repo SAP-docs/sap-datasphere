@@ -12,7 +12,19 @@ You can use the *Import Entities* wizard to load metadata from your SAP BW∕4HA
 
 ## Prerequisites
 
-You must have a user in the bridge tools with the business role template `SAP_DW4_BC_MODELING_DWC_PC`. For more information, see [Business Role Templates](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/75d2fa4c36a548ca86d0b8527123beb6.html) in the *SAP Datasphere, SAP BW Bridge* documentation.
+To import entities with semantics from SAP BW∕4HANA and SAP BW Bridge, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
+-   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
+-   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+You must also have a user in the bridge tools with the business role template `SAP_DW4_BC_MODELING_DWC_PC`. For more information, see [Business Role Templates](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/75d2fa4c36a548ca86d0b8527123beb6.html) in the *SAP Datasphere, SAP BW Bridge* documentation.
 
 
 
@@ -20,7 +32,7 @@ You must have a user in the bridge tools with the business role template `SAP_DW
 
 You can import entities from the following types of sources:
 
--   SAP BW∕4HANA \(see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:\).
+-   SAP BW∕4HANA \(see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:\).
 
     > ### Note:  
     > When you re-import a SAP BW∕4HANA entity, the imported table in SAP Datasphere is overwritten. So in case you have made changes to the imported table, these changes will be lost.
@@ -333,9 +345,9 @@ You can import entities from the following types of sources:
     -   The imported entities are available for use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the <span class="FPA-icons-V3"></span> \(*Data Builder*\).
 
         > ### Note:  
-        > If you have enabled metadata translation in the target space and the entities are available in the specified source language then they will be imported in this language \(see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:\). Otherwise, they will be imported in English, by default.
+        > If you have enabled metadata translation in the target space and the entities are available in the specified source language then they will be imported in this language \(see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:\). Otherwise, they will be imported in English, by default.
 
 
-6.  \[optional\] By default, data is only federated to your remote tables. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
+6.  \[optional\] By default, data is only federated to your remote tables. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
 
 

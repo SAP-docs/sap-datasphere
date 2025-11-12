@@ -215,7 +215,7 @@ SAP BW Bridge includes SAP BTP, ABAP environment, and an own HANA Cloud runtime 
 > It isn not possible to downsize an SAP BW Bridge tenant.
 
 > ### Note:  
-> -   First finalize the size configuration of your tenant. Then, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
+> -   First finalize the size configuration of your tenant. Then, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
 > 
 > -   For data center availability, check SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
 > 
@@ -457,11 +457,13 @@ Displays the number of execution hours available for data integration applicatio
 
 Displays the maximum number of jobs that can run in parallel.
 
-The minimal configuration of SAP Datasphere supports 2 parallel jobs. For every additional 100 execution hours allocated, you get one extra parallel job, up to a maximum of 10.
+The minimal configuration of SAP Datasphere supports 2 parallel jobs. For every additional 100 execution hours allocated, you get one extra parallel job, up to a maximum of 16.
 
 Each parallel job means that roughly 5 replication objects \(from one or more replication flows\) can be processed in parallel.
 
 If the number of running replication flows exceeds the maximum number of parallel jobs, processing is queued, and replication occurs less frequently.
+
+For more info, see [3649926](https://me.sap.com/notes/3649926)
 
 </td>
 </tr>
@@ -532,7 +534,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the number of blocks to be used for premium outbound integration. Having at least one block assigned here is a prerequisite for using a non-SAP target in a replication flow. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right:.
+Enter the number of blocks to be used for premium outbound integration. Having at least one block assigned here is a prerequisite for using a non-SAP target in a replication flow. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right:.
 
 Each block gives you 20 GB of data volume for transfer.
 

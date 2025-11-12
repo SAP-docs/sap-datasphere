@@ -42,7 +42,7 @@ Name, type, status, and version
 </td>
 <td valign="top">
 
-Displays the data product's name and type, its lifecycle, release, and functional statuses, and its version number.
+Displays the data product's name and type, its lifecycle, release, and functional statuses, and its version number. You can click a status to get more information.
 
 </td>
 </tr>
@@ -506,8 +506,8 @@ Actions
 
 Select an action:
 
--   *Install*: Opens the *Import Entities* wizard. Follow the steps to import entities from the data product to your space on the local SAP Datasphere system.
--   *Uninstall*: Opens a dialog, where you select a space to uninstall the data product. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
+-   *Install*: Opens the *Import Entities* wizard. Follow the steps to import the entities of an API for a data product to your space on the local SAP Datasphere system.
+-   *Uninstall*: Opens a dialog, where you select a space to a data product. Uninstalling a data product removes all entities that are part of the API. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
 The actions to install or uninstall data products appear based on the privileges that are assigned to you \(see [Installing Data Products](installing-data-products-ea7cb80.md)\). 
 
@@ -518,7 +518,10 @@ The actions to install or uninstall data products appear based on the privileges
 You can select a data product's API to view its details page, where you can learn more about it. Information is separated into the following areas:
 
 -   API properties that include all the same high-level information found in the data product's *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
--   Available objects and their container path and primary key. If the primary key is missing, API cannot be installed.
+-   Available objects \(or entities\) and their container path and primary key. If the primary key is missing, API cannot be installed.
+
+    You can also view more details of a particular object, by selecting the *View Columns* link. This information includes the object's name, type, valid values, and more.
+
 -   Documentation that provides a more detailed description of the API, links that can give you more information on how to use it, and extensibility information.
 -   Actions available for the API appear in a toolbar at the top of the page.
 

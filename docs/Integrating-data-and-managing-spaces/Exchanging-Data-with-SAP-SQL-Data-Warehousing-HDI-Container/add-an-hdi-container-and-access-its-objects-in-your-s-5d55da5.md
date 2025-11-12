@@ -17,7 +17,7 @@ To add an HDI container and access its objects in your space, you must have a sc
 -   *Space Files* \(`-RU-----`\) - To read and update objects in your spaces.
 -   *Data Warehouse Connection* \(`-RU-----`\) - To access remote objects.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 
 
@@ -53,12 +53,12 @@ You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(w
         > select * from DWC_TENANT_OWNER.SPACE_SCHEMAS where SCHEMA_TYPE = 'hdi_owned';
         > ```
         > 
-        > See [Create a Database Analysis User to Debug Database Issues](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/c28145bcb76c4415a1ec6265dd2a4c11.html "Database analysis users are SAP HANA Cloud database users who have read-only access to all space schemas, and all their activities are recorded in audit logs. You create a database user to monitor, analyze, trace, or debug your SAP Datasphere database, and resolve a specific database issue.") :arrow_upper_right:.
+        > See [Create a Database Analysis User to Debug Database Issues](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c28145bcb76c4415a1ec6265dd2a4c11.html "Database analysis users are SAP HANA Cloud database users who have read-only access to all space schemas, and all their activities are recorded in audit logs. You create a database user to monitor, analyze, trace, or debug your SAP Datasphere database, and resolve a specific database issue.") :arrow_upper_right:.
 
     -   It may have been created before assignment was enabled or the `database_id` may need to be specified \(see [Set Up an HDI Container](https://help.sap.com/docs/HANA_SERVICE_CF/cc53ad464a57404b8d453bbadbc81ceb/93cdbb1bd50d49fe872e7b648a4d9677.html) in the *SAP HANA Service* documentation\).
 
 4.  Deploy your space.
 
-5.  Create a view or data flow and select one or more objects from the container as sources \(see [Import an Object from a Connection or Other Source](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3e6f8f274e1d42759f536d3004025d24.html "Drag objects from the Sources tab of the Source Browser to add them as sources in your data flow, graphical view, or SQL view. In an E/R model, you can add objects from any connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
+5.  Create a view or data flow and select one or more objects from the container as sources \(see [Import an Object from a Connection or Other Source](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3e6f8f274e1d42759f536d3004025d24.html "Drag objects from the Sources tab of the Source Browser to add them as sources in your data flow, graphical view, or SQL view. In an E/R model, you can add objects from any connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
 
 

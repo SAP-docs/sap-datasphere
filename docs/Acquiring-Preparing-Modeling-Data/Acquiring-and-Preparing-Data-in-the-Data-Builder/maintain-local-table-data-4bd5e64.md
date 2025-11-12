@@ -26,21 +26,21 @@ This topic contains the following sections:
 
 ## Prerequisites
 
-To edit local table data in the *Data Editor*, you must have a scoped role that grants you the following privileges:
+To edit local tables' data in the *Data Editor*, you must have a scoped role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 -   *Data Warehouse Data Builder* \(`-RU-----`\) - To access the local table *Data Editor* screen in the *Data Builder*.
 -   *Data Warehouse Consumption* \(`-RU-E---`\) - To add and delete data in a local table.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 You can only maintain data in local tables that:
 
 -   Have status of *Deployed*.
 -   Include at least one key column \(which does not have a data type of *cds.Binary* or *cds.hana.BINARY*\).
 -   Do not contain binary \(hana.BINARY, Binary, LargeBinary\) or geo \(abap.geom\_ewkb, hana.ST\_POINT, hana.ST\_GEOMETRY\) columns that have the *Not Null* property set or binary columns containing *NULL* values.
--   Do not contain SAP-managed data \(for example, generated time tables, see [Create Time Data and Dimensions](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:\).
+-   Do not contain SAP-managed data \(for example, generated time tables, see [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:\).
 
 > ### Note:  
 > Using values like `1.1`in hana.REAL columns may store them as `1.100000023841858.` This can cause issues in calculations. Use DECIMAL or for precise values.
@@ -246,7 +246,7 @@ To delete a record:
 2.  Click the*Delete* button.
 
     > ### Note:  
-    > If *Delta Capture* is enabled, the records are simply marked as deleted, but will not be removed \(see [Controlling Deletion of Local Table Records](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/2a59b7142e1b4d478b0bf4063084261e.html "Delete records for local tables, on-demand, using filter conditions or using a schedule.") :arrow_upper_right:.
+    > If *Delta Capture* is enabled, the records are simply marked as deleted, but will not be removed \(see [Controlling Deletion of Local Table Records](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/2a59b7142e1b4d478b0bf4063084261e.html "Delete records for local tables, on-demand, using filter conditions or using a schedule.") :arrow_upper_right:.
 
 
 

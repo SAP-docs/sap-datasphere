@@ -49,7 +49,7 @@ Download Site
 <tr>
 <td valign="top" rowspan="2">
 
-[Amazon Redshift Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
+[Amazon Redshift Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8b132061d4e149d9a16b3576dda1f613.html "Use an Amazon Redshift connection to access data from Amazon Redshift 8.x databases.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -73,7 +73,7 @@ AmazonRedshiftODBC-64-bit-1.4.65.1000-1.x86\_64.rpm \(SHA256 fingerprint: ee79a8
 <tr>
 <td valign="top">
 
-[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -111,7 +111,7 @@ Additional files if SSL is used:
 <tr>
 <td valign="top" rowspan="2">
 
-[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
+[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 
 </td>
 <td valign="top">

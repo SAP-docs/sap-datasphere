@@ -4,30 +4,143 @@
 
 # Create a Currency Conversion Column in a Graphical View
 
-You can convert currency values into another currency using a *Currency Conversion Column*.
+Convert values from one currency to another or harmonize values given in various currencies with a *Currency Conversion Column*, which uses the SAP `TCUR*` to perform the calculations.
 
 
 
-## Context
+<a name="loio6e3d8bed7ece4c27ba10e2cc523915fe__prereq_v3g_2kl_bhc"/>
 
-To perform currency conversion, the following tables must be available in your space:
+## Prerequisites
 
--   `TCURV` - Exchange rate types
--   `TCURW` - Exchange rate type text
--   `TCURX` - Decimal places in currencies
--   `TCURN` - Quotations
--   `TCURR` - Exchange rates
--   `TCURF` - Conversion factors
--   `TCURC` - Currency codes
--   `TCURT` - Currency text
+To create a view with a currency conversion column, you must ensure that all of the required SAP `TCUR*` tables are present in \(or shared to\) your space, supplied with appropriate data, and encapsulated in views that have the *Expose For Consumption* switch enabled.
 
-For more information about the creation of the tables, see [Enabling Currency Conversion with TCUR\* Tables and Views](Modeling-Data-in-the-Data-Builder/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md).
+You can use the *Currency Conversion Views* dialog to provide these objects in your space for any of the following situations:
+
+-   *<Connection\>* - Generate currency conversion tables and views in your space and bring data in from SAP S/4 HANA Cloud, SAP S/4 HANA On-Premise, or SAP ABAP connections.
+-   *<Space Name\>* - Use currency conversion tables shared to your space and generate views to encapsulate them.
+-   *Manual* - Generate currency conversion tables and views in your space and then manually maintain currency conversion data in them.
+
+For more information, see [Enabling Currency Conversion with TCUR\* Tables and Views](Modeling-Data-in-the-Data-Builder/enabling-currency-conversion-with-tcur-tables-and-views-b462239.md)\).
 
 > ### Note:  
-> SAP Analytics Cloud can consume views performing currency conversion only if the following restrictions are respected:
-> 
-> -   If the `TCUR*` tables are shared to your space from another space, then you must encapsulate each table in its own view \(which can have the same name as the shared table\) and expose each of these encapsulating views for consumption.
-> -   Views containing columns that perform currency conversion using the `TCUR*` tables cannot be shared to other spaces.
+> When sharing a view containing a currency conversion column to another space, you must share all of the entities referred to in the *Advanced Properties* section of the side panel \(generally the `SAP.CURRENCY.VIEW.*` views\) to the target space as well.
+
+The full set of tables and views required is as follows:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Table
+
+</th>
+<th valign="top">
+
+View
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Currency Codes / `SAP.CURRENCY.TABLE.TCURC`
+
+</td>
+<td valign="top">
+
+Currency Codes View / `SAP.CURRENCY.VIEW.TCURC`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Conversion Factors / `SAP.CURRENCY.TABLE.TCURF`
+
+</td>
+<td valign="top">
+
+Conversion Factors View / `SAP.CURRENCY.VIEW.TCURF`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Quotations / `SAP.CURRENCY.TABLE.TCURN`
+
+</td>
+<td valign="top">
+
+Quotations View / `SAP.CURRENCY.VIEW.TCURN`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Exchange Rates / `SAP.CURRENCY.TABLE.TCURR`
+
+</td>
+<td valign="top">
+
+Exchange Rates View / `SAP.CURRENCY.VIEW.TCURR`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Currency Text / `SAP.CURRENCY.TABLE.TCURT`
+
+</td>
+<td valign="top">
+
+Currency Text View / `SAP.CURRENCY.VIEW.TCURT`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Exchange Rate Types / `SAP.CURRENCY.TABLE.TCURV`
+
+</td>
+<td valign="top">
+
+Exchange Rate Types View / `SAP.CURRENCY.VIEW.TCURV`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Exchange Rate Type Text / `SAP.CURRENCY.TABLE.TCURW`
+
+</td>
+<td valign="top">
+
+Exchange Rate Type Text View / `SAP.CURRENCY.VIEW.TCURW`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Decimal Places in Currencies / `SAP.CURRENCY.TABLE.TCURX`
+
+</td>
+<td valign="top">
+
+Decimal Places in Currencies View / `SAP.CURRENCY.VIEW.TCURX`
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> You can use these same entities with a `CONVERT_CURRENCY` function in a standard calculated column or in an SQL view \(see [CONVERT\_CURRENCY](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA* documentation\).
 
 
 
@@ -288,7 +401,9 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the entity identifier of the precision entity.
+    Select the entity to provide decimal precisions.
+
+    Default: `SAP.CURRENCY.VIEW.TCURX`
     
     </td>
     </tr>
@@ -300,7 +415,9 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the entity identifier of the conversion type configuration.
+    Select the entity to provide conversion type configuration.
+
+    Default: `SAP.CURRENCY.VIEW.TCURV`
     
     </td>
     </tr>
@@ -312,7 +429,9 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the entity identifier of the pre-factors entity.
+    Select the entity to provide conversion factors.
+
+    Default: `SAP.CURRENCY.VIEW.TCURF`
     
     </td>
     </tr>
@@ -324,7 +443,9 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the entity identifier of the conversion rates entity.
+    Select the entity to provide conversion rates entity.
+
+    Default: `SAP.CURRENCY.VIEW.TCURR`
     
     </td>
     </tr>
@@ -336,15 +457,28 @@ For more information about the creation of the tables, see [Enabling Currency Co
     </td>
     <td valign="top">
     
-    Select the entity identifier of the entity that stores notations.
+    Select the entity to provide notations.
+
+    Default: `SAP.CURRENCY.VIEW.TCURN`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Currency Code Entity
+    
+    </td>
+    <td valign="top">
+    
+    Select the entity to provide currency codes.
+
+    Default: `SAP.CURRENCY.VIEW.TCURC`
     
     </td>
     </tr>
     </table>
     
-    > ### Note:  
-    > You can, alternatively, useg the `CONVERT_CURRENCY` function in a standard calculated column \(see [CONVERT\_CURRENCY](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA* documentation\).
-
 6.  Click *Validate* once all properties are set to check if they are correct, and fix any error signaled. When you are satisfied, open or refresh the *Data Preview* panel to review the results of your currency conversion in your new column.
 
 

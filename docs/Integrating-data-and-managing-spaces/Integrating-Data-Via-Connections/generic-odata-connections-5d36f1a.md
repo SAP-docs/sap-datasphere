@@ -7,13 +7,18 @@ Use a *Generic OData* connection to access data from an OData service.
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Supported Features](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_usage)
+-   [Configuring Connection Properties](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_connection_properties)
+
 
 
 <a name="loio5d36f1aae68a4e59989c424a66d948c9__section_j1b_byq_spb"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -45,7 +50,7 @@ Remote Tables
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+For more information, see [Monitoring Remote Tables](../Data-Integration-Monitor/monitoring-remote-tables-4dd95d7.md). 
 
 </td>
 </tr>
@@ -65,7 +70,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio5d36f1aae68a4e59989c424a66d948c9__section_nrb_hcc_x4b"/>
+<a name="loio5d36f1aae68a4e59989c424a66d948c9__Odata_connection_properties"/>
 
 ## Configuring Connection Properties
 

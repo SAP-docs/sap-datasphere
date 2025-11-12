@@ -39,12 +39,18 @@ Remote systems may restrict access to their instances. The remote system often d
     <tr>
     <td valign="top">
     
-    *Replication/Data Flow NAT IP \(egress\)*
+    *Replication/Data Flow NAT and LB IP \(egress/ingress\)*
     
     </td>
     <td valign="top">
     
     To allow SAP Datasphere access to a protected remote system and using the corresponding connection with data flows or replication flows, add the *Replication/Data Flow NAT IP \(egress\)* to the allowlist in the remote system.
+
+    The following Replication/Data Flow NAT IP \(egress\) are available:
+
+    -   Current Replication/Data Flow NAT IP \(egress\)
+    -   Preserved Replication/Data Flow NAT IP \(egress\)
+    -   Deprecated Replication/Data Flow NAT IP \(egress\)
 
     **Examples:**
 
@@ -52,6 +58,17 @@ Remote systems may restrict access to their instances. The remote system often d
 
     -   For Amazon Redshift and Microsoft Azure SQL Database, find the *Replication/Data Flow NAT IP \(egress\)* in the last step of the connection creation wizard.
 
+
+    If you use SAP Datasphere with SAP Cloud Connector to access on-premise data and the firewall blocks outbound traffic, allowlist the appropriate Replication/Data Flow LB IP \(ingress\) in the firewall rules.
+
+    The following Replication/Data Flow LB IP \(ingress\) are available:
+
+    -   Current Replication/Data Flow LB IP \(ingress\)
+    -   Preserved Replication/Data Flow LB IP \(ingress\)
+    -   Deprecated Replication/Data Flow LB IP \(ingress\)
+
+    > ### Note:  
+    > The purpose of preserved IP addresses for both ingress and egress, is to enable multi-AZ, static IP address switching and future IPv6 support. Check your firewall rules and add preserved IP addresses to your IP allow list if necessary. If preserved IP addresses are enabled, they will be added to the current IP list soon. The deprecated IP addresses will appear if your IP address changes.
 
 
     

@@ -255,7 +255,7 @@ Only the database user for the open SQL schema has the privilege to run the stor
         For more information, see [LOAD Statement \(Data Manipulation\)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/20f83c8c75191014b215d6c8c427c91b.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*
 
 
-    For more information on elastic compute nodes, see [Create an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/99ad61e1b63a44de8572a49c6f374e8a.html "Once you've purchased additional resources, you can create an elastic compute node to take over peak loads.") :arrow_upper_right:.
+    For more information on elastic compute nodes, see [Create an Elastic Compute Node](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/99ad61e1b63a44de8572a49c6f374e8a.html "Once you've purchased additional resources, you can create an elastic compute node to take over peak loads.") :arrow_upper_right:.
 
     For more information on the SAP HANA statement CREATE PROCEDURE, see [CREATE PROCEDURE Statement \(Procedural\)](https://help.sap.com/docs/HANA_SERVICE_CF/7c78579ce9b14a669c1f3295b0d8ca16/20d467407519101484f190f545d54b24.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
 

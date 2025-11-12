@@ -6,28 +6,34 @@
 
 Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.
 
+This topic contains the following sections:
+
+-   [Prerequisites](create-a-database-user-798e3fd.md#loio798e3fd6707940c3bd2219b2d1ebaac2__section_qkz_ylg_zgc)
+-   [Create a Database User](create-a-database-user-798e3fd.md#loio798e3fd6707940c3bd2219b2d1ebaac2__section_o1p_1mg_zgc)
+-   [Delete a Database User](create-a-database-user-798e3fd.md#loio798e3fd6707940c3bd2219b2d1ebaac2__section_nmy_1ng_zgc)
 
 
-<a name="loio798e3fd6707940c3bd2219b2d1ebaac2__prereq_yvd_3q1_q2c"/>
+
+<a name="loio798e3fd6707940c3bd2219b2d1ebaac2__section_qkz_ylg_zgc"/>
 
 ## Prerequisites
 
-To create a database user, you must have a scoped role that grants you access to a space with the following privileges:
+To create database users, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
-## Procedure
+<a name="loio798e3fd6707940c3bd2219b2d1ebaac2__section_o1p_1mg_zgc"/>
+
+## Create a Database User
 
 1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
-
 2.  In the *Database Users* section, click *Create* to open the *Create Database User* dialog.
-
 3.  Complete the properties as appropriate and click *Create* to create the user:
 
 
@@ -66,7 +72,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     </td>
     <td valign="top">
     
-    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
+    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -80,7 +86,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     
     Allow the user to access the SAP HANA Cloud machine learning libraries.
 
-    For information about enabling and using these libraries, see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: 
+    For information about enabling and using these libraries, see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: 
     
     </td>
     </tr>
@@ -111,7 +117,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     </td>
     <td valign="top">
     
-    Allow the user to create objects and write data to their Open SQL schema. These objects are available to any modeler working in the space for use as sources for their views and data flows \(see [Using the Source Browser](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7d2b21d974e44bdc9d548cf7532b5a43.html "You use the Source Browser to add objects as sources for your data flow, graphical view, SQL view, or intelligent lookup. In an E/R model you add objects to visualize them together in a diagram, including importing objects from connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
+    Allow the user to create objects and write data to their Open SQL schema. These objects are available to any modeler working in the space for use as sources for their views and data flows \(see [Using the Source Browser](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7d2b21d974e44bdc9d548cf7532b5a43.html "You use the Source Browser to add objects as sources for your data flow, graphical view, SQL view, or intelligent lookup. In an E/R model you add objects to visualize them together in a diagram, including importing objects from connections and other sources, and prepare them for use in other editors.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -131,18 +137,10 @@ The *DW Space Administrator* role template, for example, grants these privileges
     </tr>
     </table>
     
-4.  In your space page, click *Deploy* to deploy your space and create the database user in the run-time database.
-
-    You will receive a notification when the deployment of the space is complete.
-
-5.  Click the <span class="FPA-icons-V3"></span> button for your user in the *Database Users* list to open the *Database User Details* dialog.
-
-6.  Request a password for your database user:
-
+4.  Click the <span class="FPA-icons-V3"></span> button for your user in the *Database Users* list to open the *Database User Details* dialog.
+5.  Request a password for your database user:
     1.  Click *Request New Password*.
-
     2.  Click *Show* to display the new password and enable the *Copy Password* button.
-
     3.  Click *Copy Password*.
 
         If you want to work with the SAP HANA database explorer, you will need to enter your password to grant the explorer access to your Open SQL schema. When connecting to your Open SQL schema with other tools, you should additionally note the following properties:
@@ -152,10 +150,28 @@ The *DW Space Administrator* role template, for example, grants these privileges
         -   Port
 
 
-7.  If you are using your database user to consume space data in an SAP HANA for SQL data warehousing HDI container, click the *Copy Full Credentials* button to copy the json code that you can use to initialize your user-defined service \(see [Consume Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/consume-space-objects-in-your-hdi-container-656eebc.md)\).
+6.  If you are using your database user to consume space data in an SAP HANA for SQL data warehousing HDI container, click the *Copy Full Credentials* button to copy the json code that you can use to initialize your user-defined service \(see [Consume Space Objects in Your HDI Container](../../Exchanging-Data-with-SAP-SQL-Data-Warehousing-HDI-Container/consume-space-objects-in-your-hdi-container-656eebc.md)\).
+7.  Click *Close* to return to your space page.
 
-8.  Click *Close* to return to your space page.
+You can now use your database user \(see [Connect to Your Open SQL Schema](connect-to-your-open-sql-schema-b78ad20.md)\).
 
-    You can now use your database user \(see [Connect to Your Open SQL Schema](connect-to-your-open-sql-schema-b78ad20.md)\).
+> ### Note:  
+> A database user with the status *Active* can be used.
+
+
+
+<a name="loio798e3fd6707940c3bd2219b2d1ebaac2__section_nmy_1ng_zgc"/>
+
+## Delete a Database User
+
+1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+2.  In the *Database Users* section, select the database user that you want to delete and click *Delete*.
+
+    In the confirmation dialog, enter DELETE if you are sure that you no longer need the database user and any of its content or data, then click the *Delete* button.
+
+    The database user and the following content and data are permanently deleted and cannot be recovered:
+
+    -   All objects and data contained in the Open SQL schema.
+    -   All audit logs entries related to the Open SQL schema.
 
 

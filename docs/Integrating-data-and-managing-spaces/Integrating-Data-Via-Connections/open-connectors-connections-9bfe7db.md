@@ -7,9 +7,14 @@ Use an *Open Connectors* connection to access data from sources that are connect
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Leveraging SAP Open Connectors for SAP Datasphere Connectivity](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_usage)
+-   [Prerequisites](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_connection_properties)
 
 
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__section_nts_j2p_spb"/>
+
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_usage"/>
 
 ## Leveraging SAP Open Connectors for SAP Datasphere Connectivity
 
@@ -46,11 +51,11 @@ SAP Datasphere supports the following SAP Open Connectors hub categories:
 
 
 
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__section_j1b_byq_spb"/>
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_connection_properties"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
+See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
 
 
 

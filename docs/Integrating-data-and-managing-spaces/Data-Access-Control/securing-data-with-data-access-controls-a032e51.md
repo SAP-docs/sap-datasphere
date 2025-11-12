@@ -70,17 +70,17 @@ We recommend that you develop clear policies for securing data, and that you:
 
 For information about:
 
--   Applying a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
+-   Applying a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:.
 
     > ### Note:  
     > For information about persisting data in a view that has a data access control applied to it, see [Persisted Views and Data Access Control](../Data-Integration-Monitor/persisted-views-and-data-access-control-7a4a983.md).
 
--   Applying a data access control to an analytic model, see [Apply a Data Access Control to an Analytic Model](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8d8e2f9b36a74de3b6f5f1384ad8f70d.html "You can apply one or more data access controls to an analytic model to control the data that users will see based on the specified criteria.") :arrow_upper_right:
+-   Applying a data access control to an analytic model, see [Apply a Data Access Control to an Analytic Model](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8d8e2f9b36a74de3b6f5f1384ad8f70d.html "You can apply one or more data access controls to an analytic model to control the data that users will see based on the specified criteria.") :arrow_upper_right:
 
     > ### Note:  
     > For analytic models containing standard, reference date, or X variables, mapping a data access control to a dimension attribute is not supported.
 
--   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
+-   Using a data access control to create authorization scenarios in the business layer, see [Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/46d8c42e1b1f421c9735a7cbc6fdba60.html "Authorization scenarios allow modelers to define which data is relevant to a user's context. They are made available through business entities and can be used in consumption models for specific use-cases.") :arrow_upper_right:.
 
 > ### Note:  
 > If you experience performance issues with a view protected by a data access control, we recommend enabling replication for source tables, particularly if any source contains more than 500,000 rows.

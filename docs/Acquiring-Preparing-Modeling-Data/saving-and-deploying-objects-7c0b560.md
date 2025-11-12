@@ -69,7 +69,7 @@ The following types of object are automatically deployed upon creation and immed
 
 If your view contains very complex calculations or subqueries, includes multiple unions of large views, or has a complicated or deep dependency tree, then you may encounter performance issues \(or even, very occasionally, out of memory errors\) when deploying.
 
-In such situations, you may be able to improve deployment performance or resolve the errors by persisting one or more of your view's sources. We recommend that you use the *View Analyzer* and look at the peak memory usage and duration values to guide you in these decisions \(see [Exploring Views with View Analyzer](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:\).
+In such situations, you may be able to improve deployment performance or resolve the errors by persisting one or more of your view's sources. We recommend that you use the *View Analyzer* and look at the peak memory usage and duration values to guide you in these decisions \(see [Exploring Views with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:\).
 
 
 

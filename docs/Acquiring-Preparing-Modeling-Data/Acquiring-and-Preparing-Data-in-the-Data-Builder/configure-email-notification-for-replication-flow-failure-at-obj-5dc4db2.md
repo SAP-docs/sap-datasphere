@@ -15,7 +15,7 @@ Set up email notifications to stay informed when individual replication objects 
 You must ensure that the following requirements are met:
 
 -   Your replication flow is successfully deployed
--   You must have the DW integrator role to configure the email notification. A user with a DW modeler will see the email configuration but will not be able to change it. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+-   You must have the DW integrator role to configure the email notification. A user with a DW modeler will see the email configuration but will not be able to change it. For more information, see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 
 

@@ -13,10 +13,10 @@ Use the connection to connect to and access objects in Microsoft Azure Data Lake
 
 This topic contains the following sections:
 
--   [Supported Features](microsoft-azure-data-lake-store-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_usage)
+-   -   [Supported Features](microsoft-azure-data-lake-store-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_usage)
 -   [Configuring Connection Properties](microsoft-azure-data-lake-store-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure Data Lake Store Gen2](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/6b3fd2c371284637bac465edb9cc9e50.html "To be able to successfully validate and use a connection to Microsoft Azure Data Lake Store Gen2 certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure Data Lake Store Gen2](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/6b3fd2c371284637bac465edb9cc9e50.html "To be able to successfully validate and use a connection to Microsoft Azure Data Lake Store Gen2 certain preparations have to be made.") :arrow_upper_right:.
 
 > ### Note:  
 > If you still have *Microsoft Azure Data Lake Storage Gen1* connections, recreate your existing Gen1 connections with the *Microsoft Azure Data Lake Storage Gen2* connection type, adapt your models and processes to the new connection, and delete your Gen1 connections. The Gen1 connection type has been removed from the Connections app because Microsoft Azure Data Lake Storage Gen1 was retired on February 29, 2024 \(see [Action required: Switch to Azure Data Lake Storage Gen2 by 29 February 2024](https://azure.microsoft.com/en-us/updates?id=action-required-switch-to-azure-data-lake-storage-gen2-by-29-february-2024) on the Microsoft *Azure Updates* pages\).
@@ -53,13 +53,13 @@ You can use the connection to add source and target objects to a replication flo
 
 For more information, see:
 
--   [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+-   [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
 
--   [Cloud Storage Provider Targets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+-   [Cloud Storage Provider Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
 
 
 > ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
 
 

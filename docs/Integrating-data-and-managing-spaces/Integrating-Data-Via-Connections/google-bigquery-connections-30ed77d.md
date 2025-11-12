@@ -10,10 +10,10 @@ Use the connection to connect to and access data from Google BigQuery.
 
 This topic contains the following sections:
 
--   [Supported Features](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_usage)
--   [Configuring Connection Properties](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__connection_properties)
+-   -   [Supported Features](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_usage)
+-   [Configuring Connection Properties](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/529cef1eee6a45a69ae4e51951718900.html "To be able to successfully validate and use a connection to a Google BigQuery data source for remote tables, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/529cef1eee6a45a69ae4e51951718900.html "To be able to successfully validate and use a connection to a Google BigQuery data source for remote tables, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -48,10 +48,10 @@ Replication Flows
 
 You can use the connection to add target objects to a replication flow.
 
-For more information, see [Google BigQuery Targets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/56d4472a0e1f44d58e07ca26ab666328.html "If you use Google BigQuery as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [Google BigQuery Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/56d4472a0e1f44d58e07ca26ab666328.html "If you use Google BigQuery as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 > ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
 
 
@@ -67,7 +67,7 @@ Remote Tables
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(snapshot replication\).
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+For more information, see [Monitoring Remote Tables](../Data-Integration-Monitor/monitoring-remote-tables-4dd95d7.md). 
 
 </td>
 </tr>
@@ -87,7 +87,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio30ed77de13864368bdc596099b37ed70__connection_properties"/>
+<a name="loio30ed77de13864368bdc596099b37ed70__GBQ_connection_properties"/>
 
 ## Configuring Connection Properties
 

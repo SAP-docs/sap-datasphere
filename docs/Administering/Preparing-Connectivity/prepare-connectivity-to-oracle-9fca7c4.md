@@ -63,5 +63,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[Oracle Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
 

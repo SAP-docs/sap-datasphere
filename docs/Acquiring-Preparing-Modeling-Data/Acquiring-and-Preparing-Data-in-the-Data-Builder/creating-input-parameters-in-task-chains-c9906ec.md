@@ -155,7 +155,7 @@ Define different values for the input parameters on the task level and the task 
 
     ![](images/Input_Parm_Execute_615bbb2.png)
 
-11. View the status of your task chain by going to *Data Integration Monitor* \> *Task Chains*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+11. View the status of your task chain by going to *Data Integration Monitor* \> *Task Chains*. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
     > ### Note:  
     > In the messages panel on the right, you can see click *View Details* to see the values of the input parameters in your task chain.

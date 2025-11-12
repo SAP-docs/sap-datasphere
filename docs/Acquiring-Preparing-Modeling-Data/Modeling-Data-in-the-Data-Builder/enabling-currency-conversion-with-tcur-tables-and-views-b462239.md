@@ -85,5 +85,5 @@ Once you’ve created the currency conversion objects in your space, you can sha
 3.  In the dialog box that opens, enter or select the spaces to which you want to share the TCUR\* currency conversion tables and click *Share*.
 
 > ### Note:  
-> If the TCUR\* tables have been shared to your space, you must still use the *Currency Conversion Views* dialog to create local TCUR\* views, before you can do currency conversion.
+> If the TCUR\* tables have been shared to your space, you must still follow the steps at the [Create Currency Conversion Objects](enabling-currency-conversion-with-tcur-tables-and-views-b462239.md#loiob462239ffb644d9baab4442a10a72edf__section_x5w_m31_mvb) and in the *Source* dropdown list, select the name of the space the tables are shared from.
 

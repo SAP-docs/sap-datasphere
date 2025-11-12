@@ -240,6 +240,18 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
+        *Generic HTTP* \(API tasks\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         *Generic OData* \(data flows\)
         
         </td>
@@ -355,7 +367,7 @@ For more information about the supported use cases depending on the connection t
         
         TCP
 
-        For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
+        For information about how to enable encrypted communication, see the *Security* properties in [Configuring Connection Properties (SAP HANA on-premise)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e6b63f176d3640609adcf06297fb37e9.html#loio77cec6a1e8d04371a791658e641dc0d5 "") :arrow_upper_right:.
         
         </td>
         </tr>
@@ -573,8 +585,8 @@ For more information about the supported use cases depending on the connection t
         
         For information about configuring Cloud Connector to connect to ODP source systems to SAP Datasphere, SAP BW bridge and limiting the accessible resources, see:
 
-        -   [Preparing Connectivity for ODP Source Systems in SAP BW Bridge](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/18d69431efb34a71b1939eb5a071db08.html "") :arrow_upper_right:
-        -   [Add Resources to Source System](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/2505f3efb2744a829a811985cb2b62c3.html "You need to add some additional ressources to your source system.") :arrow_upper_right:
+        -   [Preparing Connectivity for ODP Source Systems in SAP BW Bridge](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/18d69431efb34a71b1939eb5a071db08.html "") :arrow_upper_right:
+        -   [Add Resources to Source System](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/2505f3efb2744a829a811985cb2b62c3.html "You need to add some additional ressources to your source system.") :arrow_upper_right:
 
 
         

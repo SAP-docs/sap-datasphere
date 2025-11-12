@@ -9,7 +9,7 @@ To enable the SAP HANA Cloud script server, go to the *Tenant Configuration* pag
 > ### Note:  
 > The script server cannot be enabled in a SAP Datasphere consumption-based tenant with free plan.
 
-Once the script server is enabled, the *Enable Automated Predictive Library and Predictive Analysis Library* option can be selected when creating a database user \(see [Create a Database User](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:\).
+Once the script server is enabled, the *Enable Automated Predictive Library and Predictive Analysis Library* option can be selected when creating a database user \(see [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:\).
 
 For detailed information about using the machine learning libraries, see:
 

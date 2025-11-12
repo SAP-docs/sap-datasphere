@@ -10,10 +10,10 @@ Use a *Microsoft Azure SQL Database* connection to access table data from a Micr
 
 This topic contains the following sections:
 
--   [Supported Features](microsoft-azure-sql-database-connections-46343fc.md#loio46343fc1c4544fa9a075d97f84d39826__Azure_SQL_usage)
--   [Configuring Connection Properties](microsoft-azure-sql-database-connections-46343fc.md#loio46343fc1c4544fa9a075d97f84d39826__connection_properties)
+-   -   [Supported Features](microsoft-azure-sql-database-connections-46343fc.md#loio46343fc1c4544fa9a075d97f84d39826__Azure_SQL_usage)
+-   [Configuring Connection Properties](microsoft-azure-sql-database-connections-46343fc.md#loio46343fc1c4544fa9a075d97f84d39826__Azure_SQL_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure SQL Database](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/782bd8c0d71943a9a6febee5f1557c80.html "To be able to successfully validate and use a connection to Microsoft Azure SQL database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to Microsoft Azure SQL Database](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/782bd8c0d71943a9a6febee5f1557c80.html "To be able to successfully validate and use a connection to Microsoft Azure SQL database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -83,7 +83,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio46343fc1c4544fa9a075d97f84d39826__connection_properties"/>
+<a name="loio46343fc1c4544fa9a075d97f84d39826__Azure_SQL_connection_properties"/>
 
 ## Configuring Connection Properties
 

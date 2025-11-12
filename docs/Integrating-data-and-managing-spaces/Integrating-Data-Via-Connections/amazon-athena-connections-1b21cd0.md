@@ -7,13 +7,18 @@ Use an *Amazon Athena* connection to access data from Amazon Athena, an interact
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Supported Features](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_usage)
+-   [Configuring Connection Properties](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_connection_properties)
+
 
 
 <a name="loio1b21cd00fa9842f5ba747047b80fe3ab__section_j1b_byq_spb"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -43,7 +48,7 @@ Remote Tables
 </td>
 <td valign="top">
 
-You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md).
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For more information, see [Monitoring Remote Tables](../Data-Integration-Monitor/monitoring-remote-tables-4dd95d7.md).
 
 </td>
 </tr>
@@ -51,7 +56,7 @@ You can use remote tables imported from the connection either to access data dir
 
 
 
-<a name="loio1b21cd00fa9842f5ba747047b80fe3ab__section_nrb_hcc_x4b"/>
+<a name="loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_connection_properties"/>
 
 ## Configuring Connection Properties
 

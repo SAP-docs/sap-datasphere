@@ -98,7 +98,7 @@ To prepare your HDI project for exchanging data with your space, you must create
     }
     ```
 
-    Note that not all types of tables can set to be replicated \(see [Table Replication Limitations](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/7683a6b0e9f649808cb956cd50087c5f.html) in the *SAP HANA Administration Guide for SAP HANA Platform* documentation\). For more information about elastic compute nodes, see [Create an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/99ad61e1b63a44de8572a49c6f374e8a.html "Once you've purchased additional resources, you can create an elastic compute node to take over peak loads.") :arrow_upper_right:.
+    Note that not all types of tables can set to be replicated \(see [Table Replication Limitations](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/7683a6b0e9f649808cb956cd50087c5f.html) in the *SAP HANA Administration Guide for SAP HANA Platform* documentation\). For more information about elastic compute nodes, see [Create an Elastic Compute Node](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/99ad61e1b63a44de8572a49c6f374e8a.html "Once you've purchased additional resources, you can create an elastic compute node to take over peak loads.") :arrow_upper_right:.
 
 -   To allow data flows in your space to write to the container you must, in addition, define the roles `DWC_WRITE_ROLE` and `DWC_WRITE_ROLE#`.
 

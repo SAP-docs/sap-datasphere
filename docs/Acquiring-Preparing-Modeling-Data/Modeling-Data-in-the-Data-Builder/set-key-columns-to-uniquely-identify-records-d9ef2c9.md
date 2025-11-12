@@ -67,6 +67,9 @@ You may set one or more key attributes for a *Fact*, but none are required.
 A *Fact* can point to a:
 
 -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
+
+    \[optional\] To bring any data access controls applied to the dimension into the fact to protect its data, select *Apply Dimension Data Access Controls to Fact*.
+
 -   *Text Entity* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Text Entity* identifier key column.
 
 

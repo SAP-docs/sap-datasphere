@@ -12,7 +12,7 @@ You administer SAP Datasphere using apps and tools in the side navigation area.
 
 ## ![](images/Space_Management_a868247.png) \(*Space Management*\)
 
-In the *Space Management*, you can set up, configure, and monitor your spaces, including assigning users to them. For more information, see [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:.
+In the *Space Management*, you can set up, configure, and monitor your spaces, including assigning users to them. For more information, see [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:.
 
 
 
@@ -216,7 +216,7 @@ More Information
 </td>
 <td valign="top">
 
-[Logging Read and Change Actions for Audit](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
+[Logging Read and Change Actions for Audit](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -353,7 +353,7 @@ Create a SAP BW bridge tenant.
 </td>
 <td valign="top">
 
-[Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/e2d2b48377c14490b55466b5f1872640/DEV_CURRENT/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:
+[Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:
 
 </td>
 </tr>

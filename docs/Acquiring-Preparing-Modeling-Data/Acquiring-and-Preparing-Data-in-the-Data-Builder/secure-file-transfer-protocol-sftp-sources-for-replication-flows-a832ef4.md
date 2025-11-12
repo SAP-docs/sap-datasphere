@@ -143,11 +143,16 @@ By default, any settings that you have made at replication object level are kept
 
 
 
-<a name="loioa832ef4cee9d4d3aa1210869743b6173__section_yl2_3fm_lfc"/>
+<a name="loioa832ef4cee9d4d3aa1210869743b6173__section_ReplFlow_NonSAP_Sources_Schema"/>
 
-## Configuring the Schema \(and Related Properties\)
+## Defining the Schema \(and Related Properties\)
 
-As the source objects are CSV files, you must define a primary key. You can do it in the *Object Properties* panel, under *Source Schema Settings* \> *Configure Schema*.
+In the step for selecting the source objects for your replication flow, you get a list of all files in the relevant folder. You then select the file whose metadata \(particularly the schema\) you want to use for the target.
+
+You can edit the schema later if necessary. To do so, select the object whose schema you want to change, then choose *Edit Schema* \(in the properties panel\). A list of the source columns with their respective data type and other relevant properties \(such as precision and scale\) is displayed. Change these values as required, then choose *Update Schema*.
+
+> ### Caution:  
+> If you define mappings and make schema changes afterwards \(except for defining columns as primary key columns\), the existing mappings get deleted when you update the schema.
 
 In addition, you can change the following **other properties** here:
 
@@ -156,5 +161,35 @@ In addition, you can change the following **other properties** here:
 -   **Encoding**: The existing encoding value is automatically entered as the default default value. Alternatively \(if the system cannot determine the existing value\), UTF-8 is used as the default. You can change it to UTF-16 or ISO-8859-1.
 
 -   **File Header**: By default, the system assumes that the first row in each CSV file is a header. If this is not the case, deactivate this property. The system then automatically names the columns as C\(index\), starting with C0.
+
+
+**Specify primary key columns**: The source files do not have a primary key defined, while the target tables need to have a primary key. Consequently, you have to specify the primary key columns for the target. To do so, select the relevant object, then choose *Configure Schema* \(in the *Source Schema Settings* section of the properties panel\) and mark the relevant columns as key columns.
+
+
+
+<a name="loioa832ef4cee9d4d3aa1210869743b6173__section_ReplFlow_NonSAP_Sources_GlobalPatterns"/>
+
+## Examples for Global Patterns
+
+You have the following files:
+
+-   /datasetFolder/example.csv
+
+-   /datasetFolder/test1.csv
+
+-   /datasetFolder/test2.csv
+
+-   /datasetFolder/test3.json
+
+-   /datasetFolder/subfolder1/test4.csv
+
+-   /datasetFolder/subfolder1/subfolder2/test5.csv
+
+
+You define a global pattern as “test\*.csv”. The result is that only the matching files from the dataset folder are picked up:
+
+-   /datasetFolder/test1.csv
+
+-   /datasetFolder/test2.csv
 
 

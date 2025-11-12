@@ -105,7 +105,7 @@ Granted by Role Template...
 
 <span class="FPA-icons-V3"></span> \(*Home*\)
 
-See [The SAP Datasphere Homepage](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/2d85c8b63c454df585099fc93e4f8baf.html "The SAP Datasphere homepage gives you access to recent objects, quick actions, and blog posts. You can choose to show, hide, and reorder cards to suit your needs.") :arrow_upper_right:
+See [The SAP Datasphere Homepage](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/2d85c8b63c454df585099fc93e4f8baf.html "The SAP Datasphere homepage gives you access to recent objects, quick actions, and blog posts. You can choose to show, hide, and reorder cards to suit your needs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -126,7 +126,7 @@ All roles except *DW Consumer*
 
 <span class="SAP-icons-V5"></span> \(*Repository Explorer*\)
 
-See [Repository Explorer](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
+See [Repository Explorer](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ce0b4a24fe473a962176c8aa3cad42.html "The Repository Explorer gives you access to all your SAP Datasphere objects. You can search and filter the list, open or act on existing objects, and create new objects.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -147,7 +147,7 @@ All roles except *DW Consumer*
 
 <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)
 
-See [Governing and Publishing Data in the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/de29b96a9438439682715a93212ae4f4.html "Users with a catalog administrator role are responsible for connecting source systems to the catalog and monitoring those systems, and for enriching, classifying, and publishing objects extracted from these systems as catalog assets.") :arrow_upper_right:
+See [Governing and Publishing Data in the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/de29b96a9438439682715a93212ae4f4.html "Users with a catalog administrator role are responsible for connecting source systems to the catalog and monitoring those systems, and for enriching, classifying, and publishing objects extracted from these systems as catalog assets.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -194,7 +194,7 @@ In addition, the following sub-tools require the *Catalog Administrator* role:
 
 :convenience_store: \(*Data Marketplace*\)
 
-See [Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:
+See [Installing Marketplace Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -227,7 +227,7 @@ See [Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070
 
 <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\)
 
-See [Semantic Onboarding](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4c9e45e19ff14271a65f883e30023736.html "Users with a modeler or space administrator role can use the Semantic Onboarding app, a central entry point for importing semantically-rich objects from your SAP systems and the Content Network, as well as the Public Data Marketplace and other marketplace contexts.") :arrow_upper_right:.
+See [Semantic Onboarding](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4c9e45e19ff14271a65f883e30023736.html "Users with a modeler or space administrator role can use the Semantic Onboarding app, a central entry point for importing semantically-rich objects from your SAP systems and the Content Network, as well as the Public Data Marketplace and other marketplace contexts.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -278,7 +278,7 @@ Consumption model editor
 
 Authorization scenario editor
 
-See [Modeling Data in the Business Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with a modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and Microsoft Excel.") :arrow_upper_right:
+See [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with a modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and Microsoft Excel.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -344,10 +344,10 @@ Data access control editor
 
 See:
 
--   [Acquiring Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
--   [Preparing Data](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
--   [Modeling Data in the Data Builder](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with a modeler role can add semantic information to their entities and combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, Microsoft Excel, and other clients, apps, and tools.") :arrow_upper_right:
--   [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:
+-   [Acquiring Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
+-   [Preparing Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f2e359c899fa4351b5f514d1d86ed9e2.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right:
+-   [Modeling Data in the Data Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5c1e3d4a49554fcd8fcf199d664d1109.html "Users with a modeler role can add semantic information to their entities and combine, refine, and enrich them in tightly-focused analytic models for consumption in SAP Analytics Cloud, Microsoft Excel, and other clients, apps, and tools.") :arrow_upper_right:
+-   [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:
 
 
 
@@ -401,7 +401,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="FPA-icons-V3"></span> \(*Data Integration Monitor*\)
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -437,7 +437,7 @@ The following features need additional permissions \(which are included in the *
 
 <span class="FPA-icons-V3"></span> \(*Connections*\)
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:
+See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -497,7 +497,7 @@ Granted by Role Template...
 
 ![](../images/Space_Management_a868247.png) \(*Space Management*\)
 
-See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:
+See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -544,7 +544,7 @@ See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-data
 
 <span class="SAP-icons-V5"></span> \(*Translation*\)
 
-See [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:
+See [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -597,7 +597,7 @@ The sub-tools require the following permissions:
 
 <span class="FPA-icons-V3"></span> \(*Transport*\)
 
-See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
+See [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -618,7 +618,7 @@ See [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35b
 
 <span class="SAP-icons-V5"></span> \(*Data Sharing Cockpit*\)
 
-See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:
+See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -628,7 +628,7 @@ See [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb189
 > ### Note:  
 > To create a new data provider profile, or edit an existing one, you must have the **Spaces \(Update\)** privilege assigned to your role.
 > 
-> See [Maintaining your Data Provider Profile](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
+> See [Maintaining your Data Provider Profile](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
 
 
 
@@ -834,7 +834,7 @@ DW Administrator
 
 Modify *Users*
 
-See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:
+See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -855,7 +855,7 @@ DW Administrator and DW Space Administrator
 
 Modify *Data Consumption* and *Database Users*
 
-See [Create a Database User](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:
+See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -881,7 +881,7 @@ DW Administrator, DW Space Administrator
 
 Modify *HDI Containers*
 
-See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
+See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -905,7 +905,7 @@ DW Space Administrator
 
 Modify *Time Data*
 
-See [Create Time Data and Dimensions](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:
+See [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -931,7 +931,7 @@ DW Space Administrator
 
 Modify *Auditing*
 
-See [Logging Read and Change Actions for Audit](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
+See [Logging Read and Change Actions for Audit](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -950,7 +950,7 @@ DW Administrator and DW Space Administrator
 
 Monitor a Space
 
-See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:
+See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -971,7 +971,7 @@ DW Administrator, DW Space Administrator, DW Integrator and DW Modeler
 
 Lock or Unlock a Space
 
-See [Unlock a Locked Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.") :arrow_upper_right:
+See [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -992,7 +992,7 @@ DW Administrator and DW Space Administrator
 
 Delete a Space
 
-See [Delete Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:
+See [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1059,7 +1059,7 @@ Assets
 
 Search for an asset and view the detailed information for it.
 
-See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right:
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1078,7 +1078,7 @@ Assets
 
 View detailed information for an asset, including the details for any term, tag, or KPI that is linked. 
 
-See [Accessing Catalog Assets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/dc061a23484241b1b791f5540b1f38e3.html "Use the catalog Assets collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.") :arrow_upper_right:
+See [Accessing Catalog Assets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/dc061a23484241b1b791f5540b1f38e3.html "Use the catalog Assets collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1107,7 +1107,7 @@ Assets
 
 Edit the name of the asset that appears in the catalog.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1128,7 +1128,7 @@ Assets
 
 Add a catalog description for the asset.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1149,7 +1149,7 @@ Assets
 
 Add a term, tag, or KPI relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1174,7 +1174,7 @@ Assets
 
 Create or delete a relationship between a tag and an asset.
 
-See [Manage Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
+See [Manage Tag Relationships for Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1195,7 +1195,7 @@ Assets
 
 Manage the relationship for a term and an asset.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1216,7 +1216,7 @@ Assets
 
 Manage the relationship for a KPI and an asset.
 
-See [Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+See [Create and Manage Key Performance Indicators](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1237,7 +1237,7 @@ Assets
 
 Publish/Unpublish assets to the catalog or exclude assets from being automatically published.
 
-See [Publishing Content to the Catalog](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/f31d2d97afb0482a874acb0ec61465fe.html "When you publish assets, terms, and key performance indicators (KPIs) to the catalog, you determine what content is available for catalog users to discover. You can set source systems to automatically publish assets, or you can be more involved and manually publish individual assets from the asset details page or manually publish small groups of assets from the catalog search page.") :arrow_upper_right:
+See [Publishing Content to the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/f31d2d97afb0482a874acb0ec61465fe.html "When you publish assets, terms, and key performance indicators (KPIs) to the catalog, you determine what content is available for catalog users to discover. You can set source systems to automatically publish assets, or you can be more involved and manually publish individual assets from the asset details page or manually publish small groups of assets from the catalog search page.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1256,7 +1256,7 @@ Tags
 
 Add a tag relationship to the asset from the asset’s detailed information page.
 
-See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
+See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1277,7 +1277,7 @@ Tags
 
 Create a tag hierarchy.
 
-See [Manage Hierarchies and Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
+See [Manage Hierarchies and Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1296,7 +1296,7 @@ Tags
 
 Edit a tag hierarchy.
 
-See [Manage Hierarchies and Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
+See [Manage Hierarchies and Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1315,7 +1315,7 @@ Tags
 
 Delete a tag hierarchy.
 
-See [Manage Hierarchies and Tags](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
+See [Manage Hierarchies and Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0c167fa12afc47eeac9f018fe975b73f.html "Create, edit, and delete tags and hierarchies.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1334,7 +1334,7 @@ Tags
 
 Create or delete a relationship between a tag and an asset.
 
-See [Manage Tag Relationships for Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
+See [Manage Tag Relationships for Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1355,7 +1355,7 @@ Glossary
 
 Create a glossary.
 
-See [Create and Manage a Glossary](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
+See [Create and Manage a Glossary](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1374,7 +1374,7 @@ Glossary
 
 Edit a glossary.
 
-See [Create and Manage a Glossary](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
+See [Create and Manage a Glossary](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1393,7 +1393,7 @@ Glossary
 
 Delete a glossary.
 
-See [Create and Manage a Glossary](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
+See [Create and Manage a Glossary](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e40310c9781848bfad031cce7792f394.html "Add, edit, and delete a glossary.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1412,7 +1412,7 @@ Glossary
 
 Create a glossary category.
 
-See [Create and Manage a Glossary Category](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
+See [Create and Manage a Glossary Category](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1433,7 +1433,7 @@ Glossary
 
 Edit a glossary category.
 
-See [Create and Manage a Glossary Category](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
+See [Create and Manage a Glossary Category](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1454,7 +1454,7 @@ Glossary
 
 Delete a glossary category.
 
-See [Create and Manage a Glossary Category](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
+See [Create and Manage a Glossary Category](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e9ce9f6e36384517b531f6e9cf88f498.html "Create categories to organize your terms.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1475,7 +1475,7 @@ Terms
 
 Create a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1496,7 +1496,7 @@ Terms
 
 Edit a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1517,7 +1517,7 @@ Terms
 
 Delete a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1538,7 +1538,7 @@ Terms
 
 Publish or unpublish a glossary term.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1557,7 +1557,7 @@ Terms
 
 Manage the relationship for a term and an asset.
 
-See [Create and Manage Glossary Terms](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
+See [Create and Manage Glossary Terms](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/193336a4eba94c978c08fd2cee625a3e.html "Glossary terms provide a business definition for assets, terms, and KPIs.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1578,7 +1578,7 @@ KPIs
 
 Create a KPI.
 
-[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1599,7 +1599,7 @@ KPIs
 
 Edit a KPI.
 
-[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1620,7 +1620,7 @@ KPIs
 
 Delete a KPI.
 
-[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1639,7 +1639,7 @@ KPIs
 
 Publish/Unpublish a KPI.
 
-[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1658,7 +1658,7 @@ KPIs
 
 Manage the relationship for a KPI and an asset.
 
-[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
+[Create and Manage Key Performance Indicators](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/ca4f04da3afa4f82b85a0835fceb444b.html "Add, edit, or delete a key performance indicator (KPI).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1677,7 +1677,7 @@ KPIs
 </td>
 <td valign="top">
 
-Create a KPI category. [Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
+Create a KPI category. [Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1698,7 +1698,7 @@ KPIs
 
 Edit a KPI category.
 
-[Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
+[Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1719,7 +1719,7 @@ KPIs
 
 Delete a KPI category.
 
-[Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
+[Create and Manage Key Performance Indicator Categories](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/bc3b630394494381b83bf406b262a598.html "Create categories to organize your key performance indicators (KPIs).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1740,7 +1740,7 @@ KPIs
 
 Edit KPI template.
 
-See[Define the Key Performance Indicator Template](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/b3ead0d4944c40ddbdb1ebae239cc69f.html "Define the elements to be included in all your key performance indicators (KPIs).") :arrow_upper_right:
+See[Define the Key Performance Indicator Template](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/b3ead0d4944c40ddbdb1ebae239cc69f.html "Define the elements to be included in all your key performance indicators (KPIs).") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1759,7 +1759,7 @@ Marketplace Data Products
 
 Search for a data marketplace data product, view the detailed information for it, and install it to a space.
 
-See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Installing Marketplace Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Installing Marketplace Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1786,7 +1786,7 @@ SAP Business Data Cloud Data Products
 
 Search for an SAP Business Data Cloud data product and view the detailed information for it.
 
-See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1803,7 +1803,7 @@ SAP Business Data Cloud Data Products
 </td>
 <td valign="top">
 
-Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+Search for an SAP Business Data Cloud data product, view the detailed information for it, and install it to a space and use it. See [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1828,7 +1828,7 @@ SAP Business Data Cloud Data Products
 
 Search for an SAP Business Data Cloud data product, view the detailed information for it, and share it with external users.
 
-See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Installing Data Products](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+See [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right: and [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -1968,7 +1968,7 @@ All roles
 
 ## The Command Line Interface
 
-To use the command line interface \(see [Manage Spaces and Space Access via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "Users with an administrator role can use the datasphere command line interface to create, read, update, and delete spaces. Users with a space administrator role can update some space properties, add (or remove) users, database users and HDI containers, and delete spaces.") :arrow_upper_right:\), a user must have the following standard role or a custom role containing the listed privileges:
+To use the command line interface \(see [Manage Spaces and Space Access via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/5eac5b71e2d34c32b63f3d8d47a0b1d0.html "Users with an administrator role can use the datasphere command line interface to create, read, update, and delete spaces. Users with a space administrator role can update some space properties, add (or remove) users, database users and HDI containers, and delete spaces.") :arrow_upper_right:\), a user must have the following standard role or a custom role containing the listed privileges:
 
 
 <table>

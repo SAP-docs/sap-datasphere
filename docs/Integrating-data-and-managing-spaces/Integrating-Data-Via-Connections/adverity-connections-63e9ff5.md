@@ -4,17 +4,22 @@
 
 Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity. 
 
-Adverity provides connectivity to a variety of data sources, including marketing data sources, databases and others.
-
-When creating a connection to a partner tool, an Open SQL schema is generated in SAP Datasphere. To be able to send data to the Open SQL schema, the IP addresses of the partner tool need to be added to the SAP Datasphere IP allowlist, and during connection creation the partner tool on their side needs to establish a connection to the schema.
-
-For more information, see:
-
--   [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)
--   [Prepare Connectivity to Adverity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right:
-
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
+This topic contains the following sections:
+
+-   -   [Context](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_context)
+-   [Supported Features](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_usage)
+-   [Configuring the Partner Connection](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_connection_properties)
+
+
+
+<a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_context"/>
+
+## Context
+
+Adverity connections are partner connections and use the Open SQL schema to send data to SAP Datasphere. For more information, see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md).
 
 
 
@@ -26,7 +31,7 @@ The connection type supports creating views and entity-relationship models.
 
 
 
-<a name="loio63e9ff5825384a03979666dbc3e715f2__section_nrb_hcc_x4b"/>
+<a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_connection_properties"/>
 
 ## Configuring the Partner Connection
 

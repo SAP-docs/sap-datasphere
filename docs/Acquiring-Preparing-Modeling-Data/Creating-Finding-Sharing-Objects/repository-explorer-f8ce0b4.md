@@ -29,7 +29,7 @@ To access all your SAP Datasphere objects in the *Repository Explorer*, you must
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces Files* \(`-R------`\) - To access objects in a space.
 
-The *DW Modeler* role template, for example, grants these privileges \(see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: and [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:\).
+The *DW Modeler* role template, for example, grants these privileges \(see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: and [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:\).
 
 
 
@@ -375,7 +375,7 @@ You can act on objects in the list in the following ways:
     -   Local Table \(see [Creating a Local Table](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-2509fe4.md)\)
     -   Graphical View \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL View \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data Access Control \(see [Create a "Single Values" Data Access Control](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
+    -   Data Access Control \(see [Create a "Single Values" Data Access Control](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5246328ec59045cb9c2aa693daee2557.html "Users with the DW Space Administrator role (or equivalent privileges) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.") :arrow_upper_right:\)
     -   Analytic Model \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task Chain \(see [Creating a Task Chain](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md)\)
 

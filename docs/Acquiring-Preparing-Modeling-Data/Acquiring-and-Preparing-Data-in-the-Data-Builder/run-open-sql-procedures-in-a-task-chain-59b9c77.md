@@ -12,7 +12,7 @@ Include and run Open SQL schema procedures in a task chain. Use to efficiently m
 
 ## Prerequisites
 
--   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the Open SQL schema database user must grant EXECUTE privileges to the space technical HANA user so that other users of the space can view and execute Open SQL schema procedures. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
+-   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the Open SQL schema database user must grant EXECUTE privileges to the space technical HANA user so that other users of the space can view and execute Open SQL schema procedures. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
 
 
 
@@ -53,6 +53,6 @@ Include and run Open SQL schema procedures in a task chain. Use to efficiently m
 
     When you save and deploy the task chain, SAP Datasphere validates the input parameter values you entered for all procedures.
 
-    Along with other objects in the task chain, you can monitor the status of procedure runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. In addition, information on HANA Memory resource consumption for procedures included in task chains is displayed in the system monitor.
+    Along with other objects in the task chain, you can monitor the status of procedure runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. In addition, information on HANA Memory resource consumption for procedures included in task chains is displayed in the system monitor.
 
 

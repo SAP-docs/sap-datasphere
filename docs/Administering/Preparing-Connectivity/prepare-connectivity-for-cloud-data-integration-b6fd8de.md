@@ -41,5 +41,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[Cloud Data Integration Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cd33107246f446628f9baff56faf5a1b.html "Use a Cloud Data Integration connection to access data from SAP cloud applications which provide OData-based APIs for data integration and have a Cloud Data Integration (CDI) provider service implemented.") :arrow_upper_right:
+[Cloud Data Integration Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cd33107246f446628f9baff56faf5a1b.html "Use a Cloud Data Integration connection to access data from SAP cloud applications which provide OData-based APIs for data integration and have a Cloud Data Integration (CDI) provider service implemented.") :arrow_upper_right:
 

@@ -693,6 +693,48 @@ Supported
 <tr>
 <td valign="top">
 
+Canada
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+27840 GB
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Europe \(Amsterdam\)
 
 </td>

@@ -72,7 +72,7 @@
         -   [Configure a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/configure-a-replication-flow-3f5ba0c.md)
         -   [Configure Email Notification for Replication Flow Failure at Object Level](Acquiring-and-Preparing-Data-in-the-Data-Builder/configure-email-notification-for-replication-flow-failure-at-obj-5dc4db2.md)
         -   [Load Types and Connections for Your Replication Flows](Acquiring-and-Preparing-Data-in-the-Data-Builder/load-types-and-connections-for-your-replication-flows-1089119.md)
-        -   [Unsupported Data Types in Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/unsupported-data-types-in-replication-flow-6c770bb.md)
+        -   [Unsupported Data Types in a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/unsupported-data-types-in-a-replication-flow-6c770bb.md)
         -   [Define Filters in a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/define-filters-in-a-replication-flow-5a6ef36.md)
         -   [Define Mappings in a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/define-mappings-in-a-replication-flow-2c7948f.md)
         -   [Define Custom Projection Logic in a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/define-custom-projection-logic-in-a-replication-flow-970636e.md)

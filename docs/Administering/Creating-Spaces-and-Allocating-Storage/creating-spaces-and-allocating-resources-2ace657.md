@@ -15,5 +15,5 @@ You can create spaces with different types of storage:
 
 You can then assign one or more users to the space via scoped roles. The users can start acquiring and preparing data in the space.
 
-If you assign users to a space with a space administrator role, they can manage users, create connections to source systems, secure data with data access controls, and manage other aspects of the space \(see [Managing Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/268ea7e3e8d448deaab420219477064d.html "Users with a space administrator role are responsible for controlling user access to their space, and monitoring and otherwise managing the space.") :arrow_upper_right:\).
+If you assign users to a space with a space administrator role, they can manage users, create connections to source systems, secure data with data access controls, and manage other aspects of the space \(see [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/268ea7e3e8d448deaab420219477064d.html "Users with a space administrator role are responsible for controlling user access to their space, and monitoring and otherwise managing the space.") :arrow_upper_right:\).
 

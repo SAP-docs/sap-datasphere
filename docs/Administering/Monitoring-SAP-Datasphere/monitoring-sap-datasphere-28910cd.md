@@ -24,7 +24,7 @@ Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) in the side nav
 For example, you can see all the errors \(such as failed tasks and out-of-memory errors\) that occurred yesterday or the top five statements with the highest peak memory consumption.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md) or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md) or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 > ### Note:  
 > SAP Datasphere is integrated into SAP Cloud ALM for health monitoring, which enables you to check the health of one or more SAP Datasphere tenants from the *Health Monitoring* app in SAP Cloud ALM. See [Health Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/health-monitoring) in the *SAP Cloud ALM - Application Help*.
@@ -108,7 +108,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 2.  To investigate issues in particular spaces:
     1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\).
     2.  Display the list of spaces in the table layout and order by column. For example, you can display at the top of the table the spaces that use the highest amount of storage by choosing the descending order for the column *Used Storage*.
-    3.  Open a space and click *Monitor* in the space details page to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:\).
+    3.  Open a space and click *Monitor* in the space details page to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:\).
 
 
 
@@ -177,7 +177,7 @@ To investigate issues:
     
 2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria \(see [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)\).
 3.  For the spaces you have access to \(via scoped roles\), click the links in the following columns:
-    -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
+    -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
 
     -   *Object Name* - opens the editor of the object.
 
@@ -536,7 +536,7 @@ After creating an elastic compute node \(see [Create an Elastic Compute Node](..
 3.  To investigate further, you can:
 
     -   View statement details by clicking *View Logs* on a card to go to the *Statement Logs* tab, then click the links in the *Statement Details* column. \(see [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)\).
-    -   View details on a run by clicking *View Logs* on a card to go to the *Task Logs* tab, then click the link in the *Activity* column to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
+    -   View details on a run by clicking *View Logs* on a card to go to the *Task Logs* tab, then click the link in the *Activity* column to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
     -   Navigate to the elastic compute node in the *Space Management* app by clicking *Manage Elastic Compute Node* \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md) and [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
 
     -   Analyze the performance of the SAP HANA database by clicking *Database Overview \(SAP HANA Cockpit\)* to open the Database Overview page in the SAP HANA Cockpit \(see [The Database Overview Page](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-database-administration-with-sap-hana-cockpit/database-overview-page) in the *SAP HANA Cloud Database Administration with SAP HANA Cockpit*\).
@@ -645,60 +645,24 @@ Description
 <tr>
 <td valign="top">
 
-*Start Time*
+*Start Date and Time*
 
 </td>
 <td valign="top">
 
-Date and hour the task has started to run.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Duration \(sec\)*
-
-</td>
-<td valign="top">
-
-How many seconds the task has run.
+Date and hour the task has started to run \(formatted as dd/mm/yyyy, hh:mm:ss\).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Object Type*
+*Start Date*
 
 </td>
 <td valign="top">
 
-Type of object that was run in the task. For example: view, remote table, data flow.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Activity*
-
-</td>
-<td valign="top">
-
-Action that was performed on the object. For example: persist, replicate, execute. You can click on the activity name, which takes you to the *Data Integration Monitor*.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Space Name*
-
-</td>
-<td valign="top">
-
-Name of the space in which the task is run.
+Date the task has started to run.
 
 </td>
 </tr>
@@ -717,7 +681,120 @@ Name of the object. Click on the object name to open the object in the *Data Bui
 <tr>
 <td valign="top">
 
-*SAP HANA Peak Memory*
+*Object Type*
+
+</td>
+<td valign="top">
+
+Type of object that was run in the task. For example: view, remote table, data flow.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Space Name*
+
+</td>
+<td valign="top">
+
+Name of the space in which the task is run.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Space Storage Type*
+
+</td>
+<td valign="top">
+
+Either SAP HANA Database \(Disk and In-Memory\) or SAP HANA Data Lake Files.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Application*
+
+</td>
+<td valign="top">
+
+Name of the application.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Activity*
+
+</td>
+<td valign="top">
+
+Action that was performed on the object. For example: persist, replicate, execute. You can click on the activity name, which takes you to the *Data Integration Monitor*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Status*
+
+</td>
+<td valign="top">
+
+Status of the task: completed, failed, running.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Substatus*
+
+</td>
+<td valign="top">
+
+For tasks with the status “failed”, shows the substatus and a message describing the cause of failure \(see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the System Monitor.") :arrow_upper_right:\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Records*
+
+</td>
+<td valign="top">
+
+Number of records of the target table after the task has finished running.
+
+> ### Note:  
+> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\). Otherwise, no number is displayed.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Duration*
+
+</td>
+<td valign="top">
+
+How long the task has run \(formatted as hh:mm:ss\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP HANA Peak Memory \(MiB\)*
 
 </td>
 <td valign="top">
@@ -741,7 +818,19 @@ Maximum amount of memory \(in MiB\) the task has used during the runtime in SAP 
 <tr>
 <td valign="top">
 
-*SAP HANA CPU Time*
+*SAP HANA Used Memory \(MiB\)*
+
+</td>
+<td valign="top">
+
+Amount of memory \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP HANA Used CPU Time \(ms\)*
 
 </td>
 <td valign="top">
@@ -768,36 +857,7 @@ Maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 <tr>
 <td valign="top">
 
-*Records*
-
-</td>
-<td valign="top">
-
-Number of records of the target table after the task has finished running.
-
-> ### Note:  
-> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\). Otherwise, no number is displayed.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Used Memory*
-
-</td>
-<td valign="top">
-
-Amount of memory \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Used Disk*
+*SAP HANA Used Disk \(MiB\)*
 
 </td>
 <td valign="top">
@@ -809,36 +869,84 @@ Amount of disk space \(in MiB\) that is used by the target table in SAP HANA aft
 <tr>
 <td valign="top">
 
-*Status*
+*Apache Spark Peak Memory \(MiB\)*
 
 </td>
 <td valign="top">
 
-Status of the task: completed, failed, running.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Substatus*
-
-</td>
-<td valign="top">
-
-For tasks with the status “failed”, shows the substatus and a message describing the cause of failure \(see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the System Monitor.") :arrow_upper_right:\).
+Peak memory usage of the Spark application \(in MiB\). It ensures that applications do not exceed available resources, which could lead to performance degradation or application failure.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*User*
+*Apache Spark Peak Memory \(%\)*
 
 </td>
 <td valign="top">
 
-Name of the user who has run the task.
+Percentage overview of the peak memory consumption relative to the size of the Spark application configuration. It helps you understand how efficiently the application is using its allocated memory and whether adjustments are needed to optimize performance.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Spill to Disk \(MiB\)*
+
+</td>
+<td valign="top">
+
+Amount of data that has been spilled to disk \(in MiB\). Spilling occurs when executors exceed their memory limits, causing data to be temporarily stored on disk. High spill rates can lead to performance bottlenecks, so monitoring this metric is crucial for identifying memory-related issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Used Number of Cores*
+
+</td>
+<td valign="top">
+
+Number of CPU cores utilized by the Spark application. It helps you assess whether the application is efficiently using available compute resources and if there is a need to adjust the number of cores allocated to improve performance.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Used Compute Time \(ms\)*
+
+</td>
+<td valign="top">
+
+Total compute time used by the Spark application \(in ms\). It gives you insight into the duration of the application's execution, which is useful for performance analysis and resource planning.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Used Compute \(%\)*
+
+</td>
+<td valign="top">
+
+Percentage of compute resources used by the Spark application relative to its configuration. It helps you evaluate the efficiency of resource utilization and identify potential areas for optimization.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Out-of-Memory*
+
+</td>
+<td valign="top">
+
+Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not \("No" is then displayed\).
 
 </td>
 </tr>
@@ -851,6 +959,18 @@ Name of the user who has run the task.
 <td valign="top">
 
 SAP HANA database technical name of the target table.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*User*
+
+</td>
+<td valign="top">
+
+Name of the user who has run the task.
 
 </td>
 </tr>
@@ -876,18 +996,6 @@ View all the statements of the task in the *Statements* tab, if the information 
 <tr>
 <td valign="top">
 
-*Out-of-Memory*
-
-</td>
-<td valign="top">
-
-Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not \("No" is then displayed\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Task Log ID*
 
 </td>
@@ -900,12 +1008,12 @@ Identifier of the run task.
 <tr>
 <td valign="top">
 
-*Start Date*
+*Apache Spark Resource ID*
 
 </td>
 <td valign="top">
 
-Date the task has started to run.
+Unique identifier for the resources used by the Spark application. It can be helpful for debugging purposes, allowing you to trace specific resource allocations and usage patterns when troubleshooting issues.
 
 </td>
 </tr>

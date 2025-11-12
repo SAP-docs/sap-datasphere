@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Replicating Data and Monitoring Remote Tables
+# Monitoring Remote Tables
 
 In the *Remote Tables* monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing \(CDC\).
 
@@ -23,7 +23,7 @@ To replicate data and monitor remote tables, you must have a scoped role that gr
 
 -   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -43,7 +43,7 @@ SAP Datasphere is using two types of adapters to connect to remote tables:
 > If your source data comes from an SAP HANA On-Premise system, select the adapter following your use case:
 > 
 > -   You want to access the data remotely: SAP HANA smart data access \(Data Provisioning Option: Direct\) would be the recommended adapter to read the data. It allows higher degree of query pushdown to the remote database, leading to better response times and less resource consumption.
-> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target.") :arrow_upper_right:. In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adapter to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
+> -   You want to replicate the data into SAP Datasphere: The preferred option for this is to use Replication Flows, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:. In case you require replication for remote tables, SAP HANA smart data integration \(Data Provisioning Option: Data Provisioning Agent\) is the recommended adapter to push the data. It offers more options when loading the data, such as applying filter conditions or data partitioning.
 > 
 > For more information on these adapters, see [Connecting SAP HANA Cloud, SAP HANA Database to Remote Data Sources](https://help.sap.com/docs/HANA_CLOUD/db19c7071e5f4101837e23f06e576495/afa3769a2ecb407695908cfb4e3a9463.html).
 
@@ -94,7 +94,7 @@ Data is copied into SAP Datasphere and is read from the replica table:
 
 Data is not accessed locally in SAP Datasphere. It’s read from a virtual table, which accesses the data directly from the source via the adaptors. Remote tables are created from the *Data Builder*.
 
-For more information, see [Import Remote Tables](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/fd04efbac29c44fb8cfeaf2166b3d882.html "Import remote tables from a connection into your space directly from the Data Builder start page or the Repository Explorer.") :arrow_upper_right:.
+For more information, see [Import Remote Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/fd04efbac29c44fb8cfeaf2166b3d882.html "Import remote tables from a connection into your space directly from the Data Builder start page or the Repository Explorer.") :arrow_upper_right:.
 
 
 
@@ -120,7 +120,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 From the Data Builder, you can also restrict data loads to reduce the volume of data loaded in your remote table.
 
-For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:.
+For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:.
 
 
 
@@ -136,7 +136,7 @@ For more information, see [Connecting SAP HANA Cloud, SAP HANA database to Remot
 
 The Data Provisioning Agent is a lightweight component running outside the SAP Datasphere environment. It hosts data provisioning adapters for connectivity to remote sources, enabling data federation and replication scenarios. The Data Provisioning Agent acts as a gateway to SAP Datasphere, providing secure connectivity between the database of your SAP Datasphere tenant and the adapter-based remote sources.
 
-For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:
+For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:
 
 
 
@@ -152,7 +152,7 @@ For more information, see [Generic OData Connections](../Integrating-Data-Via-Co
 
 The SAP Cloud Connector provides a secure tunnel between SAP Datasphere and on-premise systems. You need to set up and configure Cloud Connector before creating a connection to an on-premise source that you want to use for remote tables via SAP HANA smart data integration.
 
-For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 
 
@@ -280,7 +280,7 @@ Displays the current status of the remote table.
 
 -   *Disconnected*: SAP HANA smart data integration Data Provisioning Agent got disconnected
 
-    For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
+    For information about how to connect the agent, see [Connect and Configure the Data Provisioning Agent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/e87952d7c656477cb5558e5c2f44ae9c.html "Connect the Data Provisioning Agent to the SAP HANA database of SAP Datasphere. This includes configuring the agent and setting the user credentials in the agent.") :arrow_upper_right:.
 
 
 
@@ -619,7 +619,7 @@ Supported but with restrictions depending on data type and adapter used.
 </td>
 <td valign="top">
 
-Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
+Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -641,7 +641,7 @@ Supported
 </td>
 <td valign="top">
 
-Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
+Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Restrict Remote Table Data Loads](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bd1ece5c9f78444c87708ef11eed0a31.html "Remove unnecessary columns, create filters or add columns to reduce the volume of data that is loaded in your remote table.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -663,7 +663,7 @@ Supported.
 </td>
 <td valign="top">
 
-Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Process Source Changes in the Table Editor](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/622328b59afa40fd810b44ac84d6afd3.html "Identify available table structure updates in your data sources and resolve conflicting errors resulting from these updates. This operation applies to any remote tables as well as local tables from an Open SQL Schema.") :arrow_upper_right:
+Action to be done from the <span class="FPA-icons-V3"></span> \(*Data Builder*\). For more information, see [Process Source Changes in the Table Editor](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/622328b59afa40fd810b44ac84d6afd3.html "Identify available table structure updates in your data sources and resolve conflicting errors resulting from these updates. This operation applies to any remote tables as well as local tables from an Open SQL Schema.") :arrow_upper_right:
 
 </td>
 </tr>

@@ -26,9 +26,9 @@ Before you can use the connection for remote tables, the following is required:
 
 <a name="loio529cef1eee6a45a69ae4e51951718900__prereq_df_GBQ"/>
 
-## Data Flows and Replication Flows
+## Replication Flows
 
-Before you can use the connection for data flows and replication flows, the following is required:
+Before you can use the connection for replication flows, the following is required:
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 
@@ -38,5 +38,5 @@ Before you can use the connection for data flows and replication flows, the foll
 **Related Information**  
 
 
-[Google BigQuery Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
+[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 

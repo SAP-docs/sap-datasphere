@@ -9,6 +9,11 @@ Use a *Generic HTTP* connection to connect to an external system via HTTP and ru
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Supported Features](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_usage)
+-   [Configuring Connection Properties](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_connection_properties)
+
 
 
 <a name="loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_usage"/>
@@ -37,13 +42,15 @@ API Tasks
 </td>
 <td valign="top">
 
-See [Run API Tasks in a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:.
+See [Run API Tasks in a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:.
 
 </td>
 </tr>
 </table>
 
 
+
+<a name="loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_connection_properties"/>
 
 ## Configuring Connection Properties
 

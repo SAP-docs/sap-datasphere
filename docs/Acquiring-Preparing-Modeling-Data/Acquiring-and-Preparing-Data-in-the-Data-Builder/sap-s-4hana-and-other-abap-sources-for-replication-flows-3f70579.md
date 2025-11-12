@@ -18,9 +18,9 @@ This topic contains the following sections:
 
 These prerequisites are valid for replication flows with sources of the following connection types:
 
--   [SAP ABAP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right:
--   [SAP S/4HANA Cloud Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use an SAP S/4HANA Cloud connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:
--   [SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
+-   [SAP ABAP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right:
+-   [SAP S/4HANA Cloud Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use an SAP S/4HANA Cloud connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:
+-   [SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
 
 Use this table to consult the appropriate required release versions and security settings for your source system version. You should also review the appropriate SAP Landscape Transformation Replication Server \(SLT\) note, if you are using this technology for your integration.
 
@@ -584,4 +584,33 @@ ODP Tables
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_e51_fwd_dhc"/>
+
+## Replicating data from source objects without a primary key
+
+If certain conditions are met, you can use objects that do not have a primary key as the source for a replication flow.
+
+This applies to the following types of *source objects*:
+
+-   CDS views
+
+-   ODP artifacts
+
+
+> ### Caution:  
+> If you are replicating source data from Microsoft SQL Server, you can't replicate objects without primary keys.
+
+The objects must have load type *Initial Only*. \(Delta loading is not supported.\)
+
+**Existing tables** can be used as **targets** if they have a column \_\_load\_package\_id \(as explained below\). **Local tables** can only be used as targets if delta capturing is **not** enabled.
+
+For some targets, the system automatically adds a **technical target column**. For SAP HANA and SAP HANA Cloud targets, this column is called "\_\_load\_package\_id" and has data type binary\(256\). For other targets, it is called "\_\_load\_record\_id" and has data type string\(44\). This column provides a unique identifier for each record, which serves as a replacement for the primary key in duplicate handling and for other technical purposes. On the *Projections* tab, this column is always shown at the end and in read only mode. You can't rename it, remove or modify its data type, or reorder it.
+
+The technical target column is not added to a target table for Apache Kafka, as it is sent in a message header. This means it is sent separately from other \(non-technical\) columns placed in a message body.
+
+> ### Note:  
+> Multiple replications \(for example due to restarting or undeploying and redeploying a replication flow\) result in different \_\_load\_record\_id values for the same source record.
 

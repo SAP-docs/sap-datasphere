@@ -27,7 +27,7 @@ To search for and evaluate objects in the *Data Products \(Marketplace\)* collec
     -   *Data Warehouse Connection* \(`CRU––--`\) - To check the license of installed data products.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="concept_szs_ztq_jdc"/>
 
@@ -439,7 +439,7 @@ On the *Visibility* tab, you can see an overview of all contexts you are a membe
 
     By default all users are members of the public data marketplace context and cannot leave.
 
--   A data provider manages the private data market place by creating and managing the contexts. When a data provider lists their data product in the private data marketplace under a certain context, only users who are members of that context can find, evaluate, and acquire the data product. For more information on managing contexts, see [Context Management App](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.
+-   A data provider manages the private data market place by creating and managing the contexts. When a data provider lists their data product in the private data marketplace under a certain context, only users who are members of that context can find, evaluate, and acquire the data product. For more information on managing contexts, see [Context Management App](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.
 
     You can join new contexts or leave the ones you don't want to be member of.
 
@@ -517,7 +517,7 @@ Displays the type of context. A context can be one of the following types:
 -   **Internal Data Marketplace**, for the scenario where all the users of a system can acquire data products internally. By default, all the users of the system are automatically added to the context.
 
 
-For more information about these context types and others, see [Context Management App](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.
+For more information about these context types and others, see [Context Management App](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.
 
 </td>
 </tr>

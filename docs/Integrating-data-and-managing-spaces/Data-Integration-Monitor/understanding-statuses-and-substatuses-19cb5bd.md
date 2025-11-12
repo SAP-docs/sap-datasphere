@@ -12,7 +12,7 @@ In SAP Datasphere , the activities can take a minimum of 3 main statuses:
 -   *Completed* or *Available*: The task has completed successfully.
 -   *Failed* or *Error*: Something goes wrong during the task run and it could not be completed. Go to the details screen of your run and check the logs to identify to issue.
 
-Depending on your activity, there might exist additional statuses. For more information, see [Replicating Data and Monitoring Remote Tables](replicating-data-and-monitoring-remote-tables-4dd95d7.md), [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md), [Monitoring Flows](monitoring-flows-b661ea0.md), [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md) and [Monitoring Task Chains](monitoring-task-chains-4142201.md).
+Depending on your activity, there might exist additional statuses. For more information, see [Monitoring Remote Tables](monitoring-remote-tables-4dd95d7.md), [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md), [Monitoring Flows](monitoring-flows-b661ea0.md), [Monitoring Remote Queries](monitoring-remote-queries-806d7f0.md) and [Monitoring Task Chains](monitoring-task-chains-4142201.md).
 
 Statuses are sometimes combined with substatuses:
 
@@ -50,7 +50,7 @@ This task run was canceled, after it had started. In this case, the data was rol
 </td>
 <td valign="top">
 
-The authorization that allows SAP to run task chains or schedule data integration tasks on your behalf has expired. Select the option provided to renew your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
+The authorization that allows SAP to run task chains or schedule data integration tasks on your behalf has expired. Select the option provided to renew your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -74,7 +74,7 @@ This task or task chain could not be executed, typically due to a change in the 
 </td>
 <td valign="top">
 
-You have not authorized SAP to run task chains or schedule data integration tasks on your behalf. Select the option provided to give your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
+You have not authorized SAP to run task chains or schedule data integration tasks on your behalf. Select the option provided to give your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -236,5 +236,5 @@ The task can't be performed because sufficient resources are not available. Navi
 </tr>
 </table>
 
-You can also monitor the statuses and substatuses in the <span class="FPA-icons-V3"></span> \(*System Monitor*\). For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:
+You can also monitor the statuses and substatuses in the <span class="FPA-icons-V3"></span> \(*System Monitor*\). For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:
 

@@ -12,7 +12,7 @@ You can apply one or more data access controls to a view to control the data tha
 
 ## Context
 
-For detailed information about defining and using data access controls, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:.
+For detailed information about defining and using data access controls, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:.
 
 
 
@@ -20,19 +20,21 @@ For detailed information about defining and using data access controls, see [Sec
 
 1.  In the left navigation area, click *Data Builder* and select the space you want to work in.
 
-2.  Open the view that you want to apply the data access control to.
+2.  Open the object that you want to apply the data access control to.
 
-3.  Select the output node of the view and open the *Data Access Control* section in its side panel and click <span class="FPA-icons-V3"></span> \(Add\).
+3.  Select the output node of the view and open the *Data Access Control* list in its side panel.
 
-    Find available objects by entering the object's name in the search bar or click <span class="FPA-icons-V3"></span> \(Show filters\) and filter by *Semantic Usage* or other criteria.  
+    The list contains data access controls applied to the object.
 
-4.  In the *Join* section, map columns from your view to the criteria columns defined in the data access control.
+4.  Click <span class="FPA-icons-V3"></span> \(Add\) to open the *Select Data Access Control* dialog, choose the data access control to apply, and click *Select*.
 
-    You must map a column from your view to each of the criteria columns defined in the data access control in order to correctly filter your view's data by the criteria.
+5.  In the *Join* section, map columns from your object to the criteria columns defined in the data access control.
 
-5.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy the view.
+    You must map a column from your object to each of the criteria columns defined in the data access control in order to correctly filter the data by the criteria.
 
-    Users opening your view in SAP Datasphere or in SAP Analytics Cloud or other analytics tools will only see the data permitted by the assignment of their username to the criteria defined in the data access control.
+6.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy the object.
+
+    Users opening your object in SAP Datasphere or in SAP Analytics Cloud or other analytics tools will only see the data permitted by the criteria defined in the data access control.
 
     > ### Note:  
     > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](viewing-object-data-b338e4a.md)\).

@@ -13,7 +13,7 @@ You can export the data contained in your space at any time. For example, you ma
 
 ## Prerequisites
 
-All of the data you want to export for your space must either be contained in views that are exposed for consumption \(see [Exposing Data For Consumption](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/40ec77ec24f244279a81448969a7e769.html "Data can only be accessed outside of your SAP Datasphere space if it is exposed for consumption.") :arrow_upper_right:\) or be written to an Open SQL schema from the space via a flow \(see [Allow the Space to Access the Open SQL Schema](Integrating-Data-Via-Database-Users/Open-SQL-Schema/allow-the-space-to-access-the-open-sql-schema-7eaa370.md)\). Also, you must have access to a database user \(see [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)\).
+All of the data you want to export for your space must either be contained in views that are exposed for consumption \(see [Exposing Data For Consumption](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/40ec77ec24f244279a81448969a7e769.html "Data can only be accessed outside of your SAP Datasphere space if it is exposed for consumption.") :arrow_upper_right:\) or be written to an Open SQL schema from the space via a flow \(see [Allow the Space to Access the Open SQL Schema](Integrating-Data-Via-Database-Users/Open-SQL-Schema/allow-the-space-to-access-the-open-sql-schema-7eaa370.md)\). Also, you must have access to a database user \(see [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)\).
 
 
 

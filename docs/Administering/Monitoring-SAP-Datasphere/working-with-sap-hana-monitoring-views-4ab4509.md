@@ -253,7 +253,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     
     Defines the recurrence of a schedule in CRON format .
 
-    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly \(see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:\).
+    NULL \(no schedule defined, or a SIMPLE schedule is defined\) For example: "0 \*/1 \* \* \*" for hourly \(see [Schedule a Data Integration Task (with Cron Expression)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/169ba34e19744362be25a4325de8d10c.html "Schedule data integration tasks such as data replication, data persistence, or data flow runs or task chains runs, by entering directly a cron expression.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -267,7 +267,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     
     Defines the recurrence of a schedule in json format \(simple format\).
 
-    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration \(see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:\).
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration \(see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -691,7 +691,7 @@ You must:
 
 -   Create a space with the space ID *<SAP\_ADMIN\>* and the space name *<Administration \(SAP\)\>* and configure it as a monitoring space by enabling the toggle *Enable Access to SAP Monitoring Content Space* \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\).
 
--   Import the `Technical Content: Task Monitoring`package from the *Content Network* \(see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with an administrator role or space administrator role, can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:\).
+-   Import the `Technical Content: Task Monitoring`package from the *Content Network* \(see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with an administrator role or space administrator role, can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:\).
 
 The following views are available:
 

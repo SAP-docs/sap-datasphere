@@ -49,7 +49,7 @@ Displays the asset's name and type, and displays its functional and publication 
 
 If the asset was enriched, the name displayed might not match the name of the underlying source object.
 
-Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
+Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -354,7 +354,7 @@ You can see a preview of the detailed metadata about the asset by selecting *Ove
 >     -   For analytic models, only measures appear in this section.
 >     -   For any asset with measures, the aggregation type does not appear if it is an inherited aggregation type or a calculated measure.
 > 
->     For a list of supported object types, see [Connecting and Monitoring Source Systems](https://help.sap.com/viewer/97d1d2f0e35d410c893e95a5ff3bee6f/DEV_CURRENT/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Users with a catalog administrator role can open the Metadata Extractions page to create connections from data sources to the catalog and then manage and monitor those data sources, allowing metadata for objects to be extracted and added to the catalog assets.") :arrow_upper_right:.
+>     For a list of supported object types, see [Connecting and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Users with a catalog administrator role can open the Metadata Extractions page to create connections from data sources to the catalog and then manage and monitor those data sources, allowing metadata for objects to be extracted and added to the catalog assets.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
@@ -537,7 +537,7 @@ Select the *Open Impact and Lineage* button in the header to see a diagram for t
 ![](images/Impact_and_Lineage_Catalog_View_4c0c62d.png)
 
 > ### Tip:  
-> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:.
+> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:.
 
 This diagram provides the data analysis of the asset and contains the following features.
 

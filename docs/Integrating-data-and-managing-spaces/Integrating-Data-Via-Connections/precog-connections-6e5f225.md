@@ -11,10 +11,15 @@ When creating a connection to a partner tool, an Open SQL schema is generated in
 For more information, see:
 
 -   [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)
--   [Prepare Connectivity to Precog](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ad13c31e33ab498a9d014b766bd5eea2.html "To be able to successfully validate and use a connection to Precog for view building certain preparations have to be made.") :arrow_upper_right:
+-   [Prepare Connectivity to Precog](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ad13c31e33ab498a9d014b766bd5eea2.html "To be able to successfully validate and use a connection to Precog for view building certain preparations have to be made.") :arrow_upper_right:
 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+
+This topic contains the following sections:
+
+-   -   [Supported Features](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_usage)
+-   [Configuring the Partner Connection](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_connection_properties)
 
 
 
@@ -26,7 +31,7 @@ The connection type supports creating views and entity-relationship models.
 
 
 
-<a name="loio6e5f2255ae8540d5895dcbef4157b82d__section_nrb_hcc_x4b"/>
+<a name="loio6e5f2255ae8540d5895dcbef4157b82d__Precog_connection_properties"/>
 
 ## Configuring the Partner Connection
 

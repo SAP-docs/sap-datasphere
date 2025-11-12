@@ -4,7 +4,7 @@
 
 # Working With Existing Replication Flow Runs
 
-You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 
 
 
@@ -16,7 +16,7 @@ You can create a schedule for your replication flow and include your replication
 
 To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
 
-For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
 
 
 
@@ -68,7 +68,7 @@ The value is updated once per hour.
 
 ## Stopping a Replication Flow Run
 
-If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
 
 To stop a replication flow run:
 
@@ -96,7 +96,7 @@ For more information about space deletion, see [Delete Your Space](../delete-you
 
 ## Adding or Removing Replication Objects
 
-This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 
 > ### Note:  
 > Adding or removing objects without stopping the replication flow first is only possible for replication flows in status *Active*.
@@ -129,7 +129,7 @@ To pause, resume or restart a replication flow:
 
 ## Changing the Delta Interval for a Replication Flow
 
-This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
 
 
 
@@ -141,7 +141,7 @@ From the details screen of a replication flow run, you can set up email notifica
 
 1.  Go to *Data Integration Monitor* \> *Flows* monitor.
 2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
-3.  Click *Runtime Email Notification* and configure the email. For more information on how to configure the e-mail, see [Configure Email Notification for Replication Flow Failure at Object Level](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5dc4db23d3894b10aca6ade3c666554d.html "Set up email notifications to stay informed when individual replication objects fail in a running replication flow.") :arrow_upper_right:.
+3.  Click *Runtime Email Notification* and configure the email. For more information on how to configure the e-mail, see [Configure Email Notification for Replication Flow Failure at Object Level](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5dc4db23d3894b10aca6ade3c666554d.html "Set up email notifications to stay informed when individual replication objects fail in a running replication flow.") :arrow_upper_right:.
 
 
 
@@ -158,10 +158,10 @@ From the details screen of a replication flow run, you can change the run settin
 2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
 3.  Open the tab **Run Settings** and update as per your need:
 
-    -   Source Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10.
-    -   Target Thread Limit \(1-100\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10.  
+    -   Source Thread Limit \(1-160\): It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 16.
+    -   Target Thread Limit \(1-160\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 16.  
     -   Delta Load Frequency: \[only relevant for load type *Initial and Delta* and *Delta Only*\] Define the time interval for replicating changes from the source to the target.
 
-    For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.
+    For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.
 
 

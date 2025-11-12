@@ -9,13 +9,18 @@ Use a *Cloud Data Integration* connection to access data from SAP cloud applicat
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Supported Features](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_usage)
+-   [Configuring Connection Properties](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_connection_properties)
+
 
 
 <a name="loiocd33107246f446628f9baff56faf5a1b__section_j1b_byq_spb"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b6fd8def1c00408e9c5e34efb897aa31.html "To be able to successfully validate and use a Cloud Data Integration connection for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b6fd8def1c00408e9c5e34efb897aa31.html "To be able to successfully validate and use a Cloud Data Integration connection for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -67,7 +72,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loiocd33107246f446628f9baff56faf5a1b__section_nrb_hcc_x4b"/>
+<a name="loiocd33107246f446628f9baff56faf5a1b__CDI_connection_properties"/>
 
 ## Configuring Connection Properties
 

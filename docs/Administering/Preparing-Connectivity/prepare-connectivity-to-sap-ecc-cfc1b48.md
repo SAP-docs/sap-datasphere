@@ -50,5 +50,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[SAP ECC Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP ERP Central Component (SAP ECC) systems (on-premise). For source systems that don't have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
+[SAP ECC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP ERP Central Component (SAP ECC) systems (on-premise). For source systems that don't have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
 

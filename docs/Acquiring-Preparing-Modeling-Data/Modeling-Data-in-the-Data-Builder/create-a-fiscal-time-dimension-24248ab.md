@@ -12,7 +12,7 @@ Select a *Semantic Usage* of *Dimension* and a *Dimension Type* of *Fiscal Time*
 
 ## Context
 
-A fiscal time dimension organizes and categorizes time periods according to a company's fiscal calendar \(also known as a financial year\) rather than the standard calendar. Creating a fiscal time dimension allows you to align your financial reporting and analysis with your company's fiscal periods.
+A fiscal time dimension organizes and categorizes time periods according to a company's fiscal calendar \(or financial year\) rather than the standard calendar. Creating a fiscal time dimension allows you to align your financial reporting and analysis with your company's fiscal periods.
 
 
 
@@ -82,7 +82,7 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -170,7 +170,7 @@ A fiscal time dimension organizes and categorizes time periods according to a co
 
     This feature is intended to allow you to transport data for static and slowly changing dimensions, text entities, or relational datasets, and can only be used to initialize data when importing the table for the first time.
 
-    See [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    See [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -304,16 +304,14 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     <tr>
     <td valign="top">
     
-    Fiscal Period Start Column
+    Fiscal Period Start
     
     </td>
     <td valign="top">
     
-    \[required\] Specifies the date on which the fiscal period starts.
+    \[required\] Specifies the date on which the fiscal period starts, and must have a data type of *Date* or *String\(8\)*.
 
-    Semantic Type: *Calendar - Date*
-
-    Data Type: *Date* or *String\(8\)*
+    Semantic Type: *Calendar - Date* \(optional if *Date* data type\)
     
     </td>
     <td valign="top">
@@ -325,16 +323,14 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     <tr>
     <td valign="top">
     
-    Fiscal Period End Column
+    Fiscal Period End
     
     </td>
     <td valign="top">
     
-    \[required\] Specifies the date on which the fiscal period ends.
+    \[required\] Specifies the date on which the fiscal period ends and must have a data type of *Date* or *String\(8\)*.
 
-    Semantic Type: *Calendar - Date*
-
-    Data Type: *Date* or *String\(8\)*
+    Semantic Type: *Calendar - Date* \(optional if *Date* data type\)
     
     </td>
     <td valign="top">
@@ -426,7 +422,7 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     </td>
     <td valign="top">
     
-    Select the column containing the dates of the start of your fiscal period.
+    Select the attribute containing the start dates of your fiscal periods.
     
     </td>
     </tr>
@@ -438,14 +434,12 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     </td>
     <td valign="top">
     
-    Select the column containing the dates of the end of your fiscal period.
+    Select the attribute containing the end dates of your fiscal periods.
     
     </td>
     </tr>
     </table>
     
-    You must select columns with a data type *Date* \(or with a data type *String\(8\)*\) and a semantic type *Calendar - Date*\).
-
 4.  Set attributes as keys to indicate that the data they contain can uniquely identify records.
 
     > ### Note:  
@@ -475,7 +469,7 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter in a Graphical View](../create-an-input-parameter-in-a-graphical-view-53fa99a.md)\).
     -   *Data Persistence* - Persist the view data to improve performance \(see [Persist Data in a Graphical or SQL View](../persist-data-in-a-graphical-or-sql-view-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association to Define a Semantic Relationship Between Entities](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
-    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
+    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 

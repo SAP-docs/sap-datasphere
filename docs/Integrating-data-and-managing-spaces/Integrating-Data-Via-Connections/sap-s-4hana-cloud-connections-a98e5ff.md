@@ -13,7 +13,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__S4_Cloud_usage)
 -   [Configuring Connection Properties](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__connection_properties)
 
-For information about the required prerequisites in the connected systems and SAP Datasphere, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites in the connected systems and SAP Datasphere, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -41,6 +41,44 @@ Additional Information
 <tr>
 <td valign="top">
 
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a replication flow. \(**recommended for replication scenarios**\)
+
+For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
+
+You can replicate the following data:
+
+-   standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud
+
+    For more information, see [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html).
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
+
+-   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
+
+    For more information, see:
+
+    -   [Data Integration](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/c3a5da91691d4ebd89748d9f40af7a4c.html) in the *SAP S/4HANA Cloud* documentation
+
+    -   [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/870d66c6bfc44d6c9f128c888f0c7957.html) in the *SAP S/4HANA Cloud* documentation
+
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Remote Tables
 
 </td>
@@ -52,7 +90,7 @@ You can access the following data:
 
 -   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud \(**recommended for federation scenarios**\)
 
-    For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:.
+    For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:.
 
     > ### Note:  
     > On the *Sources* tab of the remote-table-related Data Builder editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
@@ -77,7 +115,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:. 
+You can use the connection to import semantically-rich entities from SAP S/4HANA Cloud and all their sources and dependencies. For more information, see [Importing Entities with Semantics from SAP S/4HANA](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/845fedbd28574aa8b84239df848936f6.html "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -107,44 +145,6 @@ You can access the following data:
 > -   Data flows currently support one-time loading of data \(also known as initial load\) only.
 > 
 > -   The data preview in the data flow editor of the *Data Builder* is **only** available if the version of the connected system is SAP S/4HANA Cloud 2302 or higher.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Replication Flows
-
-</td>
-<td valign="top">
-
-You can use the connection to add source objects to a replication flow. \(**recommended for replication scenarios**\)
-
-For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
-
-You can replicate the following data:
-
--   standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud
-
-    For more information, see [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html).
-
-    > ### Note:  
-    > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
-
--   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
-
-    For more information, see:
-
-    -   [Data Integration](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/c3a5da91691d4ebd89748d9f40af7a4c.html) in the *SAP S/4HANA Cloud* documentation
-
-    -   [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/870d66c6bfc44d6c9f128c888f0c7957.html) in the *SAP S/4HANA Cloud* documentation
-
-
-    > ### Note:  
-    > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
-
 
 
 
@@ -191,7 +191,7 @@ Description
 
 Enter the name of the **API**-URL from the communication arrangements that you set up in SAP S/4HANA Cloud \(without https://\), for example `myXXXXX-api.s4hana.ondemand.com` or `myXXXXX-api.s4hana.cloud.sap`.
 
-For more information about the required communication arrangements, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+For more information about the required communication arrangements, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -531,7 +531,7 @@ Turn on RFC fast serialization to help improve replication flow performance by a
 > ### Note:  
 > -   Fast serialization has no impacts on data flows.
 > 
-> -   For information about the prerequisites for using fast serialization in SAP Datasphere, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+> -   For information about the prerequisites for using fast serialization in SAP Datasphere, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 > 
 >     Use the connection validation to check if the prerequisites in the source system for using fast serialization are met.
 
@@ -558,6 +558,23 @@ Feature
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties. 
+
+> ### Note:  
+> For replication scenarios, we recommend using replication flows.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -608,23 +625,6 @@ To enable *Model Import*, in the *Remote Tables* section select data provisionin
 
 > ### Note:  
 > In file spaces, only replication flows are supported. Data flows are not supported.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Replication Flows*
-
-</td>
-<td valign="top">
-
-*Replication Flows* are enabled without the need to set any additional connection properties. 
-
-> ### Note:  
-> For replication scenarios, we recommend using replication flows.
 
 
 

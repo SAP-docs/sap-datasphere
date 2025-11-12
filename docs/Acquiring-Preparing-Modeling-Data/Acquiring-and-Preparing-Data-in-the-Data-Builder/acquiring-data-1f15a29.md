@@ -18,7 +18,7 @@ This topic contains the following sections:
 -   [Create and Import Objects to Receive and Prepare Data](acquiring-data-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_create_tables)
 -   [Create Objects and Act On Existing Objects](acquiring-data-1f15a29.md#loio1f15a29a25354ec28392ab10ca4e9350__section_tools)
 
-Space administrators and integrators prepare connections and other sources to allow modelers to acquire data \(see [Integrating Data and Managing Spaces in SAP Datasphere](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f98d3c917f94452bafe288055b60b35.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:\).
+Space administrators and integrators prepare connections and other sources to allow modelers to acquire data \(see [Integrating Data and Managing Spaces in SAP Datasphere](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f98d3c917f94452bafe288055b60b35.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:\).
 
 
 
@@ -26,7 +26,7 @@ Space administrators and integrators prepare connections and other sources to al
 
 ## Federate and Replicate Data in Remote Tables
 
-Many connections \(including most connections to SAP systems\) support importing remote tables to federate or replicate data \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:\).
+Many connections \(including most connections to SAP systems\) support importing remote tables to federate or replicate data \(see [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:\).
 
 You can import remote tables to make the data available in your space from the *Data Builder* start page, in an entity-relationship model, or directly as a source in a view.
 
@@ -47,15 +47,15 @@ You can import remote tables to make the data available in your space from the *
 
 ## Extract, Transform, and Load Data with Data Flows
 
-Many connections \(including most connections to SAP systems\) support loading data to SAP Datasphere via data flows \(see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:\).
+Many connections \(including most connections to SAP systems\) support loading data to SAP Datasphere via data flows \(see [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:\).
 
 Data flows support a wide range of extract, transform, and load \(ETL\) operations.
 
 -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor. See see [Creating a Data Flow](creating-a-data-flow-e30fd14.md).
 -   To add a source to your data flow, drag it from the *Source Browser* \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
 -   In addition to connections, data flows can load and transform data from the following kinds of sources:
-    -   Open SQL schemas \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\)
-    -   HDI containers \(see [Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\).
+    -   Open SQL schemas \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\)
+    -   HDI containers \(see [Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\).
     -   Objects that are already in the SAP Datasphere repository \(see [Add Objects from the Repository](../add-objects-from-the-repository-13fcecd.md)\).
 
 -   Data flows load data into local tables.
@@ -86,7 +86,7 @@ The *Import Entities* wizard allows you to import entities from SAP S/4HANA Clou
 
 The *Import Entities* wizard allows you to import entities from SAP BW∕4HANA and SAP BW bridge systems with rich metadata. See [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
 
-If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can also be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/cca4744c85b14788babe7cb6b77c9973.html "SAP Business Data Cloud enables you to lift your existing SAP BW system to the private cloud and secure your investments into SAP BW.") :arrow_upper_right:.
+If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can also be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cca4744c85b14788babe7cb6b77c9973.html "SAP Business Data Cloud enables you to lift your existing SAP BW system to the private cloud and secure your investments into SAP BW.") :arrow_upper_right:.
 
 
 
@@ -104,7 +104,7 @@ You can import data from a CSV file to create a new local table \(see [Creating 
 
 Purchase data products from providers and download them directly into your space \(see [Installing Marketplace Data Products](../installing-marketplace-data-products-92c35ef.md)\).
 
-You can become a data provider and offer your own data products for sale in Data Marketplace via the Data Sharing Cockpit \(see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/bb1899f0b39f415b9de29a845873d7af/DEV_CURRENT/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:\).
+You can become a data provider and offer your own data products for sale in Data Marketplace via the Data Sharing Cockpit \(see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:\).
 
 
 
@@ -115,7 +115,7 @@ You can become a data provider and offer your own data products for sale in Data
 You can create and import empty tables and views to receive and prepare data:
 
 -   You can create an empty local table ready to receive data from a CSV file or from a data flow \(see [Creating a Local Table](creating-a-local-table-2509fe4.md)\).
--   You can import business content prepared by SAP and partners to support end-to-end business scenarios \(see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with an administrator role or space administrator role, can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:\).
+-   You can import business content prepared by SAP and partners to support end-to-end business scenarios \(see [Importing SAP and Partner Business Content from the Content Network](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/400078d689bf4454b3fc977a4e201c2f.html "Users with an administrator role or space administrator role, can use the Semantic Onboarding app to import business content and sample content from SAP and partners published to the Content Network.") :arrow_upper_right:\).
 -   You can import object definitions from a CSN/JSON file \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
 
 
@@ -179,7 +179,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   *Import CSV File* - Import data from a CSV file to create a local table \(see [Creating a Local Table from a CSV File](creating-a-local-table-from-a-csv-file-8bba251.md).
     -   *Import Objects from CSN/JSON File* - Import table, view, and other object definitions from a CSN/JSON file \(see [Importing Objects from a CSN/JSON File](../Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)\).
     -   *Import Remote Tables* - Import remote tables from a connection \(see [Import Remote Tables](import-remote-tables-fd04efb.md)\).
-    -   *Import Permissions* - Import analysis authorizations from SAP BW and and SAP BW∕4HANA systems to create data access controls \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/f56e4271dc4943aa9f21223ce5c93873.html "You can import analysis authorizations defined in SAP BW and SAP BW∕4HANA systems into SAP Datasphere to provide row-level protection for data imported from these systems.") :arrow_upper_right:\).
+    -   *Import Permissions* - Import analysis authorizations from SAP BW and and SAP BW∕4HANA systems to create data access controls \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/f56e4271dc4943aa9f21223ce5c93873.html "You can import analysis authorizations defined in SAP BW and SAP BW∕4HANA systems into SAP Datasphere to provide row-level protection for data imported from these systems.") :arrow_upper_right:\).
 
 
     
@@ -212,7 +212,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
     -   Local tables \(see [Creating a Local Table](creating-a-local-table-2509fe4.md)\)
     -   Graphical views \(see [Creating a Graphical View](../creating-a-graphical-view-27efb47.md)\)
     -   SQL views \(see [Creating an SQL View](../creating-an-sql-view-81920e4.md)\)
-    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\)
+    -   Data access controls \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\)
     -   Analytic models \(see [Creating an Analytic Model](../Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md)\)
     -   Task chains \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md)\)
 

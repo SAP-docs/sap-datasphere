@@ -17,7 +17,7 @@ To enable SAP HANA for SQL data warehousing on your SAP Datasphere tenant, you m
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges.For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 
 
@@ -30,7 +30,7 @@ To enable SAP HANA for SQL data warehousing on your SAP Datasphere tenant, you m
 
 A tenant may have both Kyma mappings and Cloud Foundry mappings simultaneously. You can also map instances using the Instance Mapping REST API \(see [Create and Manage Instance Mappings Using the REST API](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/creating-and-managing-instance-mappings-using-rest-api) in the *SAP HANA Cloud Administration Guide*\).
 
-For information about working with SAP Datasphere and HDI containers, see [Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:.
+For information about working with SAP Datasphere and HDI containers, see [Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:.
 
 
 
@@ -199,5 +199,5 @@ For information about working with SAP Datasphere and HDI containers, see [Excha
 
 ## Next Steps
 
-When one or more HDI containers are available in your tenant, users with a space administrator role can work with them \([Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\).
+When one or more HDI containers are available in your tenant, users with a space administrator role can work with them \([Exchanging Data with SAP HANA for SQL Data Warehousing HDI Containers](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1aec7ca95af24208a61c1a444b249d95.html "Users with a space administrator role can use SAP HANA for SQL data warehousing to build calculation views and other SAP HANA Cloud HDI objects directly in the run-time SAP HANA Cloud database and then exchange data between HDI containers and SAP Datasphere spaces. SAP HANA for SQL data warehousing can be used to bring existing HDI objects into your SAP Datasphere environment, and to allow users familiar with the HDI tools to leverage advanced SAP HANA Cloud features.") :arrow_upper_right:\).
 

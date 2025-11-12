@@ -5,7 +5,7 @@
 Users with an administrator role can connect an SAP Datasphere space with SAP HANA Cloud, data lake to store and access large amounts of data. 
 
 > ### Caution:  
-> The information below is about working on spaces created with SAP Hana Cloud, data lake relational engine \(see [Working with Data Lake](working-with-data-lake-93d0b5d.md)\) and not SAP HANA Cloud, data lake files which is used to create spaces dedicated to the object store \(see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:\).
+> The information below is about working on spaces created with SAP Hana Cloud, data lake relational engine \(see [Working with Data Lake](working-with-data-lake-93d0b5d.md)\) and not SAP HANA Cloud, data lake files which is used to create spaces dedicated to the object store \(see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:\).
 > 
 > You might check the following additional documentations on SAP HANA Cloud, data lake relational engine:
 > 

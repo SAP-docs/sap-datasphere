@@ -10,10 +10,10 @@ Use a *Generic SFTP* connection to connect to and access files on a Secure File 
 
 This topic contains the following sections:
 
--   [Supported Features](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_usage)
--   [Configuring Connection Properties](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__connection_properties)
+-   -   [Supported Features](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_usage)
+-   [Configuring Connection Properties](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
 
 
 
@@ -50,11 +50,11 @@ You can use the connection to add source and target objects to a replication flo
 
 For more information, see:
 
--   [Secure File Transfer Protocol (SFTP) as Targets for Your Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/5a14eb1709a24a35821d1618285d021d.html "You want to replicate data using a secure file transfer protocol (SFTP) for secure and reliable file transfers.") :arrow_upper_right:
--   [Secure File Transfer Protocol (SFTP) Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a832ef4cee9d4d3aa1210869743b6173.html "You want to replicate data from a file storage using a secure file transfer protocol (SFTP) connection for secure and reliable file transfers to a supported target.") :arrow_upper_right:
+-   [Secure File Transfer Protocol (SFTP) as Targets for Your Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5a14eb1709a24a35821d1618285d021d.html "You want to replicate data using a secure file transfer protocol (SFTP) for secure and reliable file transfers.") :arrow_upper_right:
+-   [Secure File Transfer Protocol (SFTP) Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a832ef4cee9d4d3aa1210869743b6173.html "You want to replicate data from a file storage using a secure file transfer protocol (SFTP) connection for secure and reliable file transfers to a supported target.") :arrow_upper_right:
 
 > ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
 
 
@@ -70,7 +70,7 @@ Data Flows
 
 You can use the connection to add source objects to a data flow.Supported file formats are JSON, JSONL, CSV, XLS, XLSX, ORC, and PARQUET.
 
-For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
+For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -78,7 +78,7 @@ For more information, see [Add a Source to a Data Flow](https://help.sap.com/vie
 
 
 
-<a name="loiob645de78a8374c24871ab6169be40d35__connection_properties"/>
+<a name="loiob645de78a8374c24871ab6169be40d35__SFTP_connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -120,7 +120,7 @@ Select *Cloud* if you want to connect to an SFTP server in the public cloud, or 
 </td>
 <td valign="top">
 
-Enter the host name of the SFTP server. 
+Enter the host name of the SFTP server.
 
 </td>
 </tr>
@@ -148,7 +148,7 @@ Enter the public SSH host key \(public key of the SFTP server, not the key finge
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
-If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
 
 </td>
 </tr>

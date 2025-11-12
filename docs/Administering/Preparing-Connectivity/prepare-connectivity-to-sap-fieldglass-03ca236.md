@@ -20,5 +20,5 @@ Before you can use the connection for remote tables, the following is required:
 **Related Information**  
 
 
-[SAP Fieldglass Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/bda94ee6c9d5403f8556af174399d221.html "Use an SAP Fieldglass connection to retrieve data from SAP Fieldglass.") :arrow_upper_right:
+[SAP Fieldglass Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/bda94ee6c9d5403f8556af174399d221.html "Use an SAP Fieldglass connection to retrieve data from SAP Fieldglass.") :arrow_upper_right:
 

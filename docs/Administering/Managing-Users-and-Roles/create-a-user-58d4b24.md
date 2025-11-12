@@ -111,5 +111,5 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 
 > ### Note:  
-> In addition to the standard workflows, you can also create users via the command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
+> In addition to the standard workflows, you can also create users via the command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
 

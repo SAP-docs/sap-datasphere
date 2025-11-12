@@ -20,5 +20,5 @@ Before you can use the connection for remote tables, the following is required:
 **Related Information**  
 
 
-[Amazon Athena Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1b21cd00fa9842f5ba747047b80fe3ab.html "Use an Amazon Athena connection to access data from Amazon Athena, an interactive query service which can be used to analyze data in Amazon S3 using standard SQL.") :arrow_upper_right:
+[Amazon Athena Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1b21cd00fa9842f5ba747047b80fe3ab.html "Use an Amazon Athena connection to access data from Amazon Athena, an interactive query service which can be used to analyze data in Amazon S3 using standard SQL.") :arrow_upper_right:
 

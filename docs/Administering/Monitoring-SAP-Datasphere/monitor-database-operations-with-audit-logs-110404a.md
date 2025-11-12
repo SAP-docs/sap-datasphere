@@ -23,7 +23,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Context
 
-If Space Administrators have enabled audit logs to be created for their space \(see [Logging Read and Change Actions for Audit](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:\), you can get an overview of these audit logs. You can do analytics on audit logs by assigning the audit views to a dedicated space and then work with them in a view in the Data Builder.
+If Space Administrators have enabled audit logs to be created for their space \(see [Logging Read and Change Actions for Audit](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:\), you can get an overview of these audit logs. You can do analytics on audit logs by assigning the audit views to a dedicated space and then work with them in a view in the Data Builder.
 
 > ### Note:  
 > Audit logs can consume a large quantity of GB of disk in your database, especially when combined with long retention periods \(which are defined at the space level\). You can delete audit logs when needed, which will free up disk space. For more information, see [Delete Audit Logs](delete-audit-logs-589fa42.md).

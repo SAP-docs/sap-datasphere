@@ -7,13 +7,18 @@ Use an *Amazon Redshift* connection to access data from Amazon Redshift 8.x data
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Supported Features](amazon-redshift-connections-8b13206.md#loio8b132061d4e149d9a16b3576dda1f613__Redshift_usage)
+-   [Configuring Connection Properties](amazon-redshift-connections-8b13206.md#loio8b132061d4e149d9a16b3576dda1f613__Redshift_connection_properties)
+
 
 
 <a name="loio8b132061d4e149d9a16b3576dda1f613__section_j1b_byq_spb"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/519b2dbc588940fb9698745e430c9859.html "To be able to successfully validate and use a connection to an Amazon Redshift database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to Amazon Redshift](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/519b2dbc588940fb9698745e430c9859.html "To be able to successfully validate and use a connection to an Amazon Redshift database for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -45,7 +50,7 @@ Remote Tables
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+For more information, see [Monitoring Remote Tables](../Data-Integration-Monitor/monitoring-remote-tables-4dd95d7.md). 
 
 > ### Note:  
 > -   In the view editor of the Data Builder, you can see technical artifacts from the source that you cannot use for modeling. Affected artifacts are tables containing "pkey" or tables from technical schemas pg\_catalog, pg\_internal, and information\_schema, for example. Please ignore these artifacts.
@@ -70,7 +75,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio8b132061d4e149d9a16b3576dda1f613__section_nrb_hcc_x4b"/>
+<a name="loio8b132061d4e149d9a16b3576dda1f613__Redshift_connection_properties"/>
 
 ## Configuring Connection Properties
 

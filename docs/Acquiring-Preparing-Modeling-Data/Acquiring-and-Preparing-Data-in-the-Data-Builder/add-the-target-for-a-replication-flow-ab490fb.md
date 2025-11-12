@@ -25,9 +25,6 @@ Select a target \(connection and container\) to define the target environment fo
 
 2.  Select the relevant one for your use case.
 
-    > ### Note:  
-    > Even if several replication flows can reuse the same source object, you can’t have the same target object in several replication flows.
-
 3.  For some types of targets, the container is predefined and cannot be changed. For any other target, click *Browse target container*. A list of available containers appears. Select the relevant one for your use case. To narrow down the selection, start typing a part of the container name in the *Search* field.
 
     For more information, see the documentation for your target type, for example [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md).

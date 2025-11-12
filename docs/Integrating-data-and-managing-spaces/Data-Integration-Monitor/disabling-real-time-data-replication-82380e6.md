@@ -20,7 +20,7 @@ When you disable the real-time data replication, it changes the data access from
 Switching the data access from *Replicated \(Real-Time\)* to *Replicated \(Snapshot\)* allows you to:
 
 -   Delete the remote table as it is not possible to delete a remote table, which is in data access *Replicated \(Real-time\)*.
--   Change the properties of the connection. For more information, see [Modify or Duplicate Remote Tables](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/8c3632f28dc94e068dbdab8fe9bbeeb9.html "From the remote table editor, you can change the remote table connection and/or the remote table source object. You can also create a copy of an existing remote table.") :arrow_upper_right:.
+-   Change the properties of the connection. For more information, see [Modify or Duplicate Remote Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8c3632f28dc94e068dbdab8fe9bbeeb9.html "From the remote table editor, you can change the remote table connection and/or the remote table source object. You can also create a copy of an existing remote table.") :arrow_upper_right:.
 
 > ### Note:  
 > If your remote table is connected via SAP HANA smart data access, you can delete it. This will stop the data replication in real-time and you’ll be able to modify the connection details and restart a data replication.

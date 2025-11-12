@@ -125,7 +125,7 @@ Initial Only and Initial and Delta
 <tr>
 <td valign="top">
 
-Supported Storage within SAP Datasphere \(Space or File Space\). See [Creating Spaces and Allocating Resources](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2ace657356d54199b0b87d2327b1a70b.html "Users with an administrator role can create spaces and allocate resources to them.") :arrow_upper_right:
+Supported Storage within SAP Datasphere \(Space or File Space\). See [Creating Spaces and Allocating Resources](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2ace657356d54199b0b87d2327b1a70b.html "Users with an administrator role can create spaces and allocate resources to them.") :arrow_upper_right:
 
 </td>
 <td valign="top">

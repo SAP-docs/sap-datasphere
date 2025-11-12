@@ -33,7 +33,7 @@ Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Busine
 > 
 >     -   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
 > 
->     -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
+>     -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
 
 
 
@@ -61,18 +61,6 @@ Additional Information
 <tr>
 <td valign="top">
 
-Data Flows
-
-</td>
-<td valign="top">
-
-You can use the connection to add source objects to a data flow.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Replication Flows
 
 </td>
@@ -82,12 +70,24 @@ You can use the connection to add source and target objects to a replication flo
 
 For more information, see:
 
--   [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+-   [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
 
--   [Cloud Storage Provider Targets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+-   [Cloud Storage Provider Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow.
 
 </td>
 </tr>
@@ -125,7 +125,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the SAP HANA Cloud, data lake Files REST API endpoint, for example <code><i class="varname">&lt;instance id&gt;</i>files.hdl.prod-eu10.hanacloud.ondemand.com</code>. 
+Enter the SAP HANA Cloud, data lake Files REST API endpoint, for example <code><i class="varname">&lt;instance id&gt;</i>files.hdl.prod-eu10.hanacloud.ondemand.com</code>.
 
 </td>
 </tr>
@@ -212,6 +212,18 @@ Description
 <tr>
 <td valign="top">
 
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Data Flows*
 
 </td>
@@ -223,18 +235,6 @@ Description
 > In file spaces, only replication flows are supported. Data flows are not supported.
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Replication Flows*
-
-</td>
-<td valign="top">
-
-*Replication Flows* are enabled without the need to set any additional connection properties. 
 
 </td>
 </tr>

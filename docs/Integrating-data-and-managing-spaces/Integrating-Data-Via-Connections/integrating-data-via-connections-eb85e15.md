@@ -200,7 +200,7 @@ Search
 
 Enter one or more characters in the *Search* field to restrict the list to connections containing the string.
 
-Search considers the *Technical Name*, *Business Name*, *Real-Time Replication Status*, and *Owner* column.
+Search considers the *Technical Name*, *Business Name*, *Real-Time Replication Status*, and *Created By* column.
 
 </td>
 </tr>

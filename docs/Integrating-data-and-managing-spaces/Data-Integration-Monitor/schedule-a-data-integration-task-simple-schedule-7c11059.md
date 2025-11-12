@@ -19,7 +19,7 @@ You can schedule or unschedule data integration tasks such as remote data replic
     > ### Note:  
     > Your consent is valid for 365 days. If your consent will expire within the next four weeks, when you attempt to schedule new tasks, SAP Datasphere displays a message warning that your consent is approaching its expiration date. After the consent has expired, a log message informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears four weeks before the expiry of consent.
 
-    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -173,7 +173,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Duration* Elastic compute nodes only. See [Run an Elastic Compute Node](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
+    *Duration* Elastic compute nodes only. See [Run an Elastic Compute Node](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
     
     </td>
     <td valign="top">

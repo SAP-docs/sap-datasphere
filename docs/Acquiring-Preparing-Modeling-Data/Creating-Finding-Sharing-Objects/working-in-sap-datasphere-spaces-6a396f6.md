@@ -44,7 +44,7 @@ In our simple example, the administrator creates four spaces with the following 
 -   `Sales EU` - Model EU sales data using data shared from the `Sales` and `HR` spaces
 -   `Sales US` - Model US sales data using data shared from the `Sales` and `HR` spaces.
 
-See [Create a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:.
+See [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:.
 
 
 
@@ -234,7 +234,7 @@ DW Consumer
 </tr>
 </table>
 
-See [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
+See [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
 
 
 
@@ -367,7 +367,7 @@ Rashmi
 </tr>
 </table>
 
-See [Control User Access to Your Space](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
 
@@ -381,7 +381,7 @@ Space administrators and integrators can create connections to systems and other
 
 In our example, the space administrators create connections to an SAP SuccessFactors system and an SAP S/4HANA system.
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
+See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
 
 
 

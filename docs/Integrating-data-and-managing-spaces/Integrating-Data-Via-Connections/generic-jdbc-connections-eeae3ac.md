@@ -12,13 +12,18 @@ You can use this connection type to connect to most databases for which SAP Data
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   -   [Supported Features](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_usage)
+-   [Configuring Connection Properties](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_connection_properties)
+
 
 
 <a name="loioeeae3aca6d0040149f7b1e658c434f15__section_j1b_byq_spb"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -48,7 +53,7 @@ Remote Tables
 </td>
 <td valign="top">
 
-You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md).
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For more information, see [Monitoring Remote Tables](../Data-Integration-Monitor/monitoring-remote-tables-4dd95d7.md).
 
 </td>
 </tr>
@@ -56,7 +61,7 @@ You can use remote tables imported from the connection either to access data dir
 
 
 
-<a name="loioeeae3aca6d0040149f7b1e658c434f15__section_nrb_hcc_x4b"/>
+<a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_connection_properties"/>
 
 ## Configuring Connection Properties
 

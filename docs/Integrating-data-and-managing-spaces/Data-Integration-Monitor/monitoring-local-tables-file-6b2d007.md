@@ -22,7 +22,7 @@ To monitor local tables \(file\), you must have a scoped role that grants you ac
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -35,7 +35,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 Local tables can be used as source data or target data by SAP Datasphere apps. As a Data Integrator you might want to monitor all local tables \(file\) deployed in your space and check how and when data has been last updated and if some data must still be merged.
 
-Go to *Data Integration Monitor* \> *Local Tables \(Files\)*. All local tables \(file\) that have been created in the *Data Builder* are listed. For more information on local tables \(file\), see [Creating a Local Table (File)](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:.
+Go to *Data Integration Monitor* \> *Local Tables \(Files\)*. All local tables \(file\) that have been created in the *Data Builder* are listed. For more information on local tables \(file\), see [Creating a Local Table (File)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:.
 
 The monitor displays the following properties:
 
@@ -145,7 +145,7 @@ Indicates the name of the replication flow or the local table \(file\) generated
 </td>
 <td valign="top">
 
-Indicates if the local table \(file\) allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Track the changes that will be made later on your local table after you have deployed it.") :arrow_upper_right:.
+Indicates if the local table \(file\) allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Track the changes that will be made later on your local table after you have deployed it.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -195,7 +195,7 @@ Displays the size used by the active records only.
 
 Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\), and space required for administrative information. The size of the inbound buffer \(temporary storage of incoming data, usually empty\) is shown separately. The sum of both numbers is the actual size of the table. 
 
-If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
+If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -207,7 +207,7 @@ If you compare the size of a similar table that is stored in a space of type SAP
 </td>
 <td valign="top">
 
-Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* . For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
+Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* . For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
 
 </td>
 </tr>

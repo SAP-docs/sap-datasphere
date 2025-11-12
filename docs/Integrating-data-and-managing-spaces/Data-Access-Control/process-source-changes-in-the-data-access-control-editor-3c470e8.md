@@ -114,7 +114,7 @@ Your object's status may be updated when changes to one or more of its sources a
     > ### Note:  
     > As the new version of your object depends on the source updates, you should coordinate with the person who has modified the source about deployment. The new version of your object will work correctly in the run-time only when both it and its source are deployed.
     > 
-    > Note that if you want to preview the data for a view that is persisted, it is read from the view's data persistence table, unless the view has a status of *Change to Deploy*. In this case, the view is run, and the results are displayed. Changes and redeployment can impact the data persistence. For more information, see [Persist Data in a Graphical or SQL View](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:.
+    > Note that if you want to preview the data for a view that is persisted, it is read from the view's data persistence table, unless the view has a status of *Change to Deploy*. In this case, the view is run, and the results are displayed. Changes and redeployment can impact the data persistence. For more information, see [Persist Data in a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:.
 
 5.  Click <span class="SAP-icons-V5"></span> \(Deploy\) to deploy your object.
 

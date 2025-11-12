@@ -33,5 +33,5 @@ Before you can use the connection for remote tables, the following is required:
 **Related Information**  
 
 
-[Generic JDBC Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use a Generic JDBC connection to access data from tables and views in any supported data source for which a JDBC driver is available.") :arrow_upper_right:
+[Generic JDBC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use a Generic JDBC connection to access data from tables and views in any supported data source for which a JDBC driver is available.") :arrow_upper_right:
 

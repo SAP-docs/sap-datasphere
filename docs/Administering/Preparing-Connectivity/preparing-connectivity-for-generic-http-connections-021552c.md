@@ -19,5 +19,5 @@ For more information, see [Configure Cloud Connector](configure-cloud-connector-
 **Related Information**  
 
 
-[Generic HTTP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b79b865e64794c7abcd12a54f2f73c8c.html "Use a Generic HTTP connection to connect to an external system via HTTP and run external REST-based API tasks in task chains.") :arrow_upper_right:
+[Generic HTTP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b79b865e64794c7abcd12a54f2f73c8c.html "Use a Generic HTTP connection to connect to an external system via HTTP and run external REST-based API tasks in task chains.") :arrow_upper_right:
 

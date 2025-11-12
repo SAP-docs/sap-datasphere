@@ -17,7 +17,7 @@ To view the *Administration* page containing the *Tenant Links* tab, you must ha
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To acces the *Administration* area.
 
-The *DW Administrator* global role, for example, grants these privileges.For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 > ### Note:  
 > To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *System Owner* role.
@@ -118,7 +118,7 @@ In this situation, both the SAP Business Data Cloud Cockpit and the SAP Analytic
 
 For more information about SAP Business Data Cloud, see:
 
--   [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:
+-   [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:
 -   [Integrate SAP Business Data Cloud Provisioned Systems](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/d6ec89febd8a40dbb7fb461b60bef289.html) \(in the *SAP Business Data Cloud* documentation\)
 
 

@@ -14,7 +14,7 @@ This topic contains the following sections:
 For more information about the integration and the required prerequisites to create a valid connection in SAP Datasphere, see:
 
 -   [Synchronizing Data with SAP Datasphere Replication Flow](https://help.sap.com/docs/signavio-process-intelligence/user-guide/synchronizing-data-with-sap-datasphere-replication-flow) in the *SAP Signavio Process Intelligence* documentation
--   [Prepare Connectivity to SAP Signavio](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9bde7712a1ef47a18a292484284e2c0a.html "To be able to successfully validate and use a connection to SAP Signavio, certain preparations have to be made.") :arrow_upper_right:
+-   [Prepare Connectivity to SAP Signavio](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9bde7712a1ef47a18a292484284e2c0a.html "To be able to successfully validate and use a connection to SAP Signavio, certain preparations have to be made.") :arrow_upper_right:
 
 > ### Note:  
 > SAP Signavio connections require a 1:1 mapping between the SAP Datasphere tenant and an SAP Signavio tenant. When using several connections in different spaces, the connections must all point to the same SAP Signavio endpoint.
@@ -49,7 +49,7 @@ Replication Flows
 
 You can use the connection to add target objects to a replication flow.
 
-For more information, see [SAP Signavio Targets](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/b8f5e28d34b44d71a52f6265e4fc245f.html "If you use SAP Signavio as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [SAP Signavio Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b8f5e28d34b44d71a52f6265e4fc245f.html "If you use SAP Signavio as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 </td>
 </tr>

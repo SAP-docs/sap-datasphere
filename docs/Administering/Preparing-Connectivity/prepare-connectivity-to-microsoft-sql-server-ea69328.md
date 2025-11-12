@@ -25,9 +25,9 @@ Before you can use the connection for remote tables, the following is required:
 
 <a name="loioea69328fb328449ab7b04d2b142592f8__prereq_df_MSSQL"/>
 
-## Data Flows and Replication Flows
+## Replication Flows
 
-Before you can use the connection for data flows and replication flows, the following is required:
+Before you can use the connection for replication flows, the following is required:
 
 -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
 
@@ -42,5 +42,5 @@ Before you can use the connection for data flows and replication flows, the foll
 **Related Information**  
 
 
-[Microsoft SQL Server Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use a Microsoft SQL Server connection to access data from a Microsoft SQL Server database (on-premise).") :arrow_upper_right:
+[Microsoft SQL Server Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a13c8abb328f45be891599c9cc76fb91.html "Use a Microsoft SQL Server connection to access data from a Microsoft SQL Server database (on-premise).") :arrow_upper_right:
 

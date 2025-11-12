@@ -4,7 +4,27 @@
 
 # Creating a Replication Flow
 
-Create a replication flow to copy multiple data assets from a source to a target.
+Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.
+
+
+
+<a name="loio25e2bd7a70d44ac5b05e844f9e913471__prereq_prv_v3p_1hc"/>
+
+## Prerequisites
+
+To create flows, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete flows.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+To run and schedule flows, you must, in addition, have the following privileges:
+
+-   *Data Warehouse Data Integration* \(`-RU-----`\) - To run flows.
+-   *Data Warehouse Data Integration* \(`-R--E---`\) - To schedule flows.
+
+The *DW Modeler* and *DW Integrator* role templates together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -19,7 +39,7 @@ You can use replication flows to copy data from the following source objects:
 -   Tables that have a primary key.
 
 
-CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [Object Without Primary Key As Source Objects for Replication Flows](object-without-primary-key-as-source-objects-for-replication-flo-2267a9f.md).
+CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md)
 
 For more information about available connection types, sources, and targets, see [Connection Types Supporting Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rf=yes%20(source)&connection_overview-rf=yes%20(target)&connection_overview-rf=yes%20(source%20and%20target)&connection_overview-rf=via%20connection%20type%20SAP%20ABAP%20Connections%20(source)).
 
@@ -28,8 +48,8 @@ For more information about available connection types, sources, and targets, see
 > 
 > In addition to working with flows in the editor, you can also:
 > 
-> -   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
-> -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+> -   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+> -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
 > ### Restriction:  
@@ -100,7 +120,7 @@ For more information about available connection types, sources, and targets, see
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -208,9 +228,9 @@ For more information about available connection types, sources, and targets, see
     > ### Caution:  
     > -   The option is enabled by default when you create a new replication with SAP Datasphere as target and load type *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(and a redeployment will be needed\).
     > 
-    >     Note also that this merge task will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload please consider adjusting the above defaults for your scenario. In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow or by disabling this setting and running the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
+    >     Note also that this merge task will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload please consider adjusting the above defaults for your scenario. In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow or by disabling this setting and running the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
     > 
-    > -   Since it will start an automatic task, you must make sure that you have authorized SAP Datasphere to run tasks on your behalf. Go to your profile settings and give your consent under *Authorized Consent Settings*. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/ac696daa26f0413db39626bc2971e6c2/DEV_CURRENT/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+    > -   Since it will start an automatic task, you must make sure that you have authorized SAP Datasphere to run tasks on your behalf. Go to your profile settings and give your consent under *Authorized Consent Settings*. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
     
@@ -219,24 +239,24 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    Source Thread Limit \(1-100\)
+    Source Thread Limit \(1-160\)
     
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 16. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Target Thread Limit \(1-100\)
+    Target Thread Limit \(1-160\)
     
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 16.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -382,7 +402,7 @@ For more information about available connection types, sources, and targets, see
 
 8.  Click <span class="FPA-icons-V3"></span> \(Run\) to start your replication flow.
 
-    For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
+    For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 
 9.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
 
@@ -523,7 +543,7 @@ For more information about available connection types, sources, and targets, see
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Dependent Replication Flows\)
+    <span class="SAP-icons-V5"></span> \(View Dependent Replication Flows\)
     
     </td>
     <td valign="top">

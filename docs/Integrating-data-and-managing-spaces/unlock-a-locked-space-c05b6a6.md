@@ -18,7 +18,7 @@ To manually lock or unlock your space, you must have a scoped role that grants y
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
 -   *Space Files* \(`-RU-----`\) - To read and update objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 > ### Note:  
 > Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
@@ -35,7 +35,7 @@ In this situation, these actions are possible:
 
 -   Users assigned to a space can delete data to bring the space back under the limit of its assigned storage.
 -   A space administrator can use the *Unlock* button on the *Space Management* page or on the space page to unlock the space for a 24-hour grace period, in case urgent changes must be deployed.
--   An administrator can assign more disk and/or memory storage to the space \(see [Allocate Storage to a Space](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f414c3d62bfe49b38e2cfdd7b4e7d786.html "Use the Space Storage properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.") :arrow_upper_right:\).
+-   An administrator can assign more disk and/or memory storage to the space \(see [Allocate Storage to a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f414c3d62bfe49b38e2cfdd7b4e7d786.html "Use the Space Storage properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.") :arrow_upper_right:\).
 
 
 
@@ -48,7 +48,7 @@ If the total size of all audit logs across all spaces has reached 40% of the ten
 In this situation, these actions are possible:
 
 -   A space administrator can use the *Unlock* button on the *Space Management* page or on the space page to unlock the space for a 24-hour grace period, in case urgent changes must be deployed.
--   An administrator can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right:\).
+-   An administrator can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right:\).
 -   A space administrator can disable audit logs or decrease the number of days audit logs are kept for \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
 
 

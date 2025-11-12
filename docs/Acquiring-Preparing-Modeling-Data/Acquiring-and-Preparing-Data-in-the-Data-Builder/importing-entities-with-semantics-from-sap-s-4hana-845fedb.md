@@ -8,19 +8,37 @@ You can use the *Import Entities* wizard to load metadata from your SAP S/4HANA 
 
 
 
+<a name="loio845fedbd28574aa8b84239df848936f6__prereq_p3d_y2t_zgc"/>
+
+## Prerequisites
+
+To import entities with semantics from SAP S/4HANA, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
+-   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
+-   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
 ## Context
 
 You can import entities from the following types of sources:
 
--   SAP S/4HANA Cloud \(see [SAP S/4HANA Cloud Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use an SAP S/4HANA Cloud connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:\).
+-   SAP S/4HANA Cloud \(see [SAP S/4HANA Cloud Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use an SAP S/4HANA Cloud connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:\).
 
     > ### Note:  
-    > All the connectivity preparations for model import must be completed, including the activation of the necessary communication scenarios in the SAP S/4HANA Cloud system \(see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:\).
+    > All the connectivity preparations for model import must be completed, including the activation of the necessary communication scenarios in the SAP S/4HANA Cloud system \(see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:\).
 
--   SAP S/4HANA On-Premise \(see [SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:\).
+-   SAP S/4HANA On-Premise \(see [SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:\).
 
     > ### Note:  
-    > The on-premise system must be v1610 or higher, and all the connectivity preparations must be completed \(see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:\).
+    > The on-premise system must be v1610 or higher, and all the connectivity preparations must be completed \(see [Prepare Connectivity to SAP S/4HANA On-Premise](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8de01dd25c1e443e8e2de7d2fbe1364d.html "To be able to successfully validate and use a connection to SAP S/4HANA, certain preparations have to be made.") :arrow_upper_right:\).
 
 
 We recommend that, where possible, you use the *Import Entities* wizard for importing CDS views from these connection types, as it as able to leverage their rich semantics to import higher-level objects and to follow associations to dimensions, hierarchies, and text entities and include them in the import.
@@ -304,13 +322,13 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     -   The imported entities are available for use in the <span class="FPA-icons-V3"></span> \(*Business Builder*\) and the <span class="FPA-icons-V3"></span> \(*Data Builder*\).
 
         > ### Note:  
-        > If you have enabled metadata translation in the target space and the entities are available in the specified source language then they will be imported in this language \(see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:\). Otherwise, they will be imported in English, by default.
+        > If you have enabled metadata translation in the target space and the entities are available in the specified source language then they will be imported in this language \(see [Translating Metadata for SAP Analytics Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/fe829debe389450394cf7a15860e2caa.html "Users with a scoped role containing the Translation privilege can translate metadata such as business names and column names for dimensions and analytic models, and hierarchy dimension labels for SAP Analytics Cloud stories.") :arrow_upper_right:\). Otherwise, they will be imported in English, by default.
 
 
 6.  Navigate to the appropriate objects to review data access:
 
     -   *Replication Flow to Local Tables* - Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Run a Replication Flow](run-a-replication-flow-98a26b2.md)\).
-    -   *Remote Tables* - By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
+    -   *Remote Tables* - By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Local Tables* - If you have selected an entity that is not extractable, only local tables are imported, and you must choose an appropriate method to load data to them.
 
 

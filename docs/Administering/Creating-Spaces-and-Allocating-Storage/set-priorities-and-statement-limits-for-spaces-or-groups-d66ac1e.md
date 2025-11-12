@@ -31,7 +31,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 > Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
 
 > ### Note:  
-> You can use the SAP Datasphere command line interface, `datasphere`, to set space or group priorities and statement limits. See [Manage Priorities and Statement Limits for Spaces or Groups via the Command Line](https://help.sap.com/viewer/9b8363ae47c347de9a027c0e5567a37a/DEV_CURRENT/en-US/9e3537b72e6c445d9f34201df650735b.html "You can use the SAP Datasphere datasphere command line interface to set priorities and statement limits for spaces or groups.") :arrow_upper_right:.
+> You can use the SAP Datasphere command line interface, `datasphere`, to set space or group priorities and statement limits. See [Manage Priorities and Statement Limits for Spaces or Groups via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/9e3537b72e6c445d9f34201df650735b.html "You can use the SAP Datasphere datasphere command line interface to set priorities and statement limits for spaces or groups.") :arrow_upper_right:.
 
 
 

@@ -48,7 +48,7 @@ SAP ABAP
 
 ABAP Adapter
 
-For more information, see [SAP ABAP Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right:.
+For more information, see [SAP ABAP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -82,7 +82,7 @@ Cloud Data Integration
 
 Cloud Data Integration \(CDI\) Adapter
 
-For more information, see [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b6fd8def1c00408e9c5e34efb897aa31.html "To be able to successfully validate and use a Cloud Data Integration connection for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For more information, see [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b6fd8def1c00408e9c5e34efb897aa31.html "To be able to successfully validate and use a Cloud Data Integration connection for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -111,7 +111,7 @@ SAP Success factor, Generic Odata
 
 OData
 
-For more information, see [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+For more information, see [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -140,7 +140,7 @@ Generic JDBC
 
 CamelJdbcAdapter
 
-For more information, see [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:.
+For more information, see [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:.
 
 </td>
 <td valign="top">
@@ -193,7 +193,7 @@ Supported
 > ### Note:  
 > In case your remote table has been shared from another space, some actions may be not possible. Again, it depends on the connection type and the adapters used.
 
-For more information on remote tables and adapters, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
+For more information on remote tables and adapters, see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:.
 
-For more information on which connection types support data replication \(direct or scheduled replication\) and real-time replication, see [Integrating Data via Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
+For more information on which connection types support data replication \(direct or scheduled replication\) and real-time replication, see [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
 

@@ -33,7 +33,7 @@ You have an SAP BW∕4HANA system installed.
 
 In your SAP BW∕4HANA system, you need to release the analytic queries for transferring into SAP Datasphere. For more information, see: [Releasing Analytic Queries for Use in SAP Datasphere](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.7/en-US/cb1e79fc792b4737881b00c1685edc2a.html).
 
-In SAP Datasphere, you have created a connection of type *SAP BW/4HANA Model Transfer* to connect to your SAP BW∕4HANA system. For more information, see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:.
+In SAP Datasphere, you have created a connection of type *SAP BW/4HANA Model Transfer* to connect to your SAP BW∕4HANA system. For more information, see [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:.
 
 
 
@@ -67,7 +67,7 @@ In SAP Datasphere, you have created a connection of type *SAP BW/4HANA Model Tra
     Additional objects will be added to the list of objects to be imported on the *Data Builder/Data Access Controls* tab to create the data access control and apply it to the fact.
 
     > ### Note:  
-    > If you do not import the analysis authorizations in this wizard, you can do it later in the *Data Access Controls* app \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/f56e4271dc4943aa9f21223ce5c93873.html "You can import analysis authorizations defined in SAP BW and SAP BW∕4HANA systems into SAP Datasphere to provide row-level protection for data imported from these systems.") :arrow_upper_right:\).
+    > If you do not import the analysis authorizations in this wizard, you can do it later in the *Data Access Controls* app \(see [Import SAP BW and SAP BW∕4HANA Analysis Authorizations](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/f56e4271dc4943aa9f21223ce5c93873.html "You can import analysis authorizations defined in SAP BW and SAP BW∕4HANA systems into SAP Datasphere to provide row-level protection for data imported from these systems.") :arrow_upper_right:\).
 
 7.  Choose *Import*.
 

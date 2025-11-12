@@ -1,8 +1,8 @@
 <!-- loio6c770bbebb3c4086b30945fd2ebbfd75 -->
 
-# Unsupported Data Types in Replication Flow
+# Unsupported Data Types in a Replication Flow
 
-Replication flows support all data types in Datasphere \(see [Column Data Types](column-data-types-7b1dc6e.md)\), except for the following sources and target connections.
+Replication flows support all data types in Datasphere \(see, [Column Data Types](column-data-types-7b1dc6e.md)\), except for the following sources and target connections.
 
 
 
@@ -10,7 +10,7 @@ Replication flows support all data types in Datasphere \(see [Column Data Types]
 
 ## Sources
 
-The following data types are not supported in replication flow:
+The following source data types are not supported in replication flow:
 
 
 <table>
@@ -29,7 +29,7 @@ Unsupported Data Types
 <tr>
 <td valign="top">
 
-MSSQL
+Microsoft SQL Server \(MSSQL\) / Microsoft Azure SQL Database
 
 </td>
 <td valign="top">
@@ -79,30 +79,6 @@ SAP HANA
 <tr>
 <td valign="top">
 
-Azure SQL
-
-</td>
-<td valign="top">
-
--   CLOB \(nvarchar\(max\)
--   varchar\(max\)
--   text
--   ntext
--   BLOB \(image, varbinary\(max\)\)
--   cursor
--   hierarchyid
--   sql\_variant
--   Spatial Geometry Types
--   rowversion
--   xml
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Snowflake
 
 </td>
@@ -124,7 +100,7 @@ Snowflake
 
 ## Targets
 
-The following target connections are not supported in replication flow:
+The following target data types are not supported in replication flow:
 
 
 <table>
@@ -148,7 +124,7 @@ Mapped to Higher Version of Data Types
 <tr>
 <td valign="top">
 
-Google BigQuery
+GBQ
 
 </td>
 <td valign="top">
@@ -172,7 +148,7 @@ Google BigQuery
 <tr>
 <td valign="top">
 
-Local Tables \(file\)
+LTF
 
 </td>
 <td valign="top">

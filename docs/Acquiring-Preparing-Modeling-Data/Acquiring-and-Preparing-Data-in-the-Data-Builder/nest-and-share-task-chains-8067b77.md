@@ -33,6 +33,6 @@ Task chains may be added to the current task chain being worked on, in the same 
 
 2.  After adding all elements you want to include in your task chain, deploy and run the task chain.
 
-    The run status of the task chain is displayed in the *Properties* detail pane. In addtion, you can open the Data Integration Monitor to view details of the task chains's execution. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    The run status of the task chain is displayed in the *Properties* detail pane. In addtion, you can open the Data Integration Monitor to view details of the task chains's execution. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 

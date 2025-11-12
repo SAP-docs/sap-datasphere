@@ -7,6 +7,11 @@ Use the connection to access objects in Microsoft Azure Blob Storage.
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   [Supported Features](microsoft-azure-blob-storage-connections-df5a7c5.md#loiodf5a7c56ac21472c973f6fab341f3991__WASB_usage)
+-   [Configuring Connection Properties](microsoft-azure-blob-storage-connections-df5a7c5.md#loiodf5a7c56ac21472c973f6fab341f3991__WASB_connection_properties)
+
 
 
 <a name="loiodf5a7c56ac21472c973f6fab341f3991__WASB_usage"/>
@@ -43,7 +48,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loiodf5a7c56ac21472c973f6fab341f3991__section_nrb_hcc_x4b"/>
+<a name="loiodf5a7c56ac21472c973f6fab341f3991__WASB_connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -143,7 +148,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the storage account access key \(shared key authorization\). 
+Enter the storage account access key \(shared key authorization\).
 
 </td>
 </tr>

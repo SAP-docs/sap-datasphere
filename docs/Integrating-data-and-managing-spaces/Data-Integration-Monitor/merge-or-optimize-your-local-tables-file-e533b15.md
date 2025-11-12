@@ -14,13 +14,13 @@ Local Tables \(File\) can store large quantities of data in the object store. Yo
 
 You can optimize or update your local table \(file\) data:
 
-1.  From the Data Integration Monitor, navigate to the *Local Tables \(file\)* Monitor.
+1.  From the *Data Integration Monitor*, navigate to the *Local Tables \(file\)* Monitor.
 2.  Select the relevant table
 3.  Click:
     -   *Merge Table*: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run.
 
         > ### Note:  
-        > The *Merge Data Automatically* option is enabled by default when creating a new replication flow with SAP Datasphere as the target and the load type set to *Initial and Delta*. For replication flows that don’t support this option, you can still manually enable it \(a redeployment will be needed\). In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow or by disabling this setting and running the merge task separately with a less frequent schedule.
+        > The *Merge Data Automatically* option is enabled by default when creating a new replication flow with SAP Datasphere as the target and the load type set to *Initial and Delta*. For replication flows that don’t support this option, you can still manually enable it \(a redeployment will be needed\). In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow, or by disabling this setting and running the merge task separately with a less frequent schedule.
 
     -   *Optimize Table*: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\).
 
@@ -40,9 +40,9 @@ You can optimize or update your local table \(file\) data:
 *Merge Table* or *Optimize Table* will launch the task in asynchronous mode and will use the settings defined by an administrator, while configuring the file space. You will be notified via the notification area once done.
 
 > ### Note:  
-> *Merge Table* and *Optimize Table* can also be run via a task chain. For more information, see [Creating a Task Chain](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+> *Merge Table* and *Optimize Table* can also be run via a task chain. For more information, see [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
 > 
-> *Merge Table* can also be automated at a replication flow creation level. For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target.") :arrow_upper_right:
+> *Merge Table* can also be automated at a replication flow creation level. For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:
 
 Note also that merge and optimize tasks will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload, please consider adjusting these defaults for your scenario \(see next paragaph\).
 
@@ -52,9 +52,9 @@ Note also that merge and optimize tasks will run with the default Apache Spark A
 
 ## Override Default Local Tables \(file\) Optimize and Merge Tasks Resources
 
-When creating a file space, administrators have defined the maximum amount of compute resources that the file space can consume when processing statements in its Apache Spark instance. In the Workload management, they have defined default Apache Spark Applications to run tasks, including merge and optimize tasks. For more information see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
+When creating a file space, administrators have defined the maximum amount of compute resources that the file space can consume when processing statements in its Apache Spark instance. In the Workload management, they have defined default Apache Spark Applications to run tasks, including merge and optimize tasks. For more information see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
 
-However, you can change the maximum amount of compute resource that can get consumed specifically by a local table \(file\):
+However, you can change the maximum amount of compute resources that can be consumed specifically by a local table \(file\):
 
 1.  From the *Local Tables \(file\)* Monitor, select the relevant table.
 2.  Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the table.
@@ -73,4 +73,14 @@ Go to the *Setting* tab and change the default settings of Apache Spark applicat
 ### Override Resources for a Single Run
 
 Navigate to the local table \(files\) run details screen, click *Merge Table* or *Optimize Table*, and then override the default settings, which are provided by the space properties or the current table defaults, if you have set them.
+
+
+
+<a name="loioe533b154ed3e49ce9a03e4421a5296e7__section_jyg_xh2_ngc"/>
+
+## Canceling a Running Merge Task
+
+If you have started a merge task, you can cancel it if needed.
+
+From the details screen of the relevant local table \(file\), in the *Logs* section, select the running task and click *Cancel*. The task will stop the merge action, but it will stop it without rolling back the data that has already been processed. The status of the task will be changed to *Failed \(Canceled\)*.
 

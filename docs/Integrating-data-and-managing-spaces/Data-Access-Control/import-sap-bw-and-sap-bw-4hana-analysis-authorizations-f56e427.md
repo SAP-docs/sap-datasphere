@@ -21,7 +21,7 @@ This feature is supported only for SAP BW v7.5 SP16 and higher and SAP BW∕4HAN
 
 -   SAP ABAP \(see [SAP ABAP Connections](../Integrating-Data-Via-Connections/sap-abap-connections-a75c1aa.md)\)
 -   SAP BW \(see [SAP BW Connections](../Integrating-Data-Via-Connections/sap-bw-connections-e589041.md)\)
--   SAP BW∕4HANA Model Transfer connection \(see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/24f836070a704022a40c15442163e5cf/DEV_CURRENT/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:\)
+-   SAP BW∕4HANA Model Transfer connection \(see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:\)
 
 An SAP BW or SAP BW∕4HANA administrator must have created the report that generates the `RSDWC_RSEC_DAC` permissions table on the source system \(see [SAP Note 3062381](https://launchpad.support.sap.com/#/notes/3062381)\). This SAP note also includes instruction on how to implement BAdI `RSDWC_DAC_RSEC_USER_UPDATE` for situations where your SAP BW or SAP BW∕4HANA instance does not use email addresses as user IDs.
 

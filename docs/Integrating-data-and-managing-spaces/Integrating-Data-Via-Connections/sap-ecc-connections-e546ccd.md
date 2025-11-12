@@ -13,7 +13,7 @@ Use an *SAP ECC* connection to access data from virtual tables through RFC for O
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/cfc1b487fc014c8aa14af81bfa15a82d.html "To be able to successfully validate and use a connection to SAP ECC for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+See: [Prepare Connectivity to SAP ECC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/cfc1b487fc014c8aa14af81bfa15a82d.html "To be able to successfully validate and use a connection to SAP ECC for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -75,7 +75,7 @@ You can use the connection type to access:
 
 Real-time replication is supported for ODP sources. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
 
-For more information, see [Replicating Data and Monitoring Remote Tables](../Data-Integration-Monitor/replicating-data-and-monitoring-remote-tables-4dd95d7.md). 
+For more information, see [Monitoring Remote Tables](../Data-Integration-Monitor/monitoring-remote-tables-4dd95d7.md). 
 
 > ### Note:  
 > Certain SAPI DataSources \(from FI-AA Business Content, for example\) may send duplicate records during snapshot replication or real-time initialization. Remote table replication runs with optimized INSERT processing on DataSource key level which leads to unique constraint violation errors. In such cases we recommend to use a data flow which uses the remote table as source and for which the target table has selected the *Append* mode with the *Update Records By Primary Key \(UPSERT\)* option.
@@ -204,7 +204,7 @@ Enter the name of the message server to which you want to connect to.
 Enter the message server port \(numerical\).
 
 > ### Note:  
-> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
+> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
 
 
 
@@ -513,7 +513,28 @@ Enter the port number of the gateway server where the ABAP adapter would registe
 </td>
 <td valign="top">
 
-Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
+Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Streaming* = *On*\] *Execution Targets*
+
+</td>
+<td valign="top">
+
+Enter a comma-separated list of execution targets for streaming batch jobs.
+
+Each time a streaming query on an ABAP table is executed, the system assigns the corresponding streaming batch job to a target server chosen randomly from this list.
+
+If you don't specify a list of execution targets, the source system assigns the target servers.
+
+> ### Note:  
+> This property requires Data Provisioning Agent version 2.7.0.0 or higher.
+
+
 
 </td>
 </tr>

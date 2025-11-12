@@ -8,6 +8,20 @@ Create a local table \(file\) to store data in the object store. Load data to yo
 
 
 
+<a name="loiod21881b121bc4703861be6ead4aea2ab__section_zrh_lst_zgc"/>
+
+## Prerequisites
+
+To create local tables, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
 <a name="loiod21881b121bc4703861be6ead4aea2ab__section_wpc_3fg_xcc"/>
 
 ## Context
@@ -21,7 +35,7 @@ SAP Datasphere supports two types of local table to persist data:
 -   Local tables \(file\) – Are stored on files and are intended for file storage with large amounts of data at lower cost. These tables always use delta capture and can only be created in a file space \(with **SAP HANA Data Lake Files** storage \(see [Create a File Space to Load Big Data](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/947444683e524cfd9169d7671b72ba0c.html?locale=en-US&state=DRAFT&version=DEV)\).
 
     > ### Note:  
-    > Local tables \(file\) can also be created by the Data Product Generator from SAP BW or SAP BW/4HANA, and the behavior of such tables can differ. For more information, see [Working With Local Tables (File) Received From the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/72a055fc7dad40079efa442ddd4b998e.html "An administrator in SAP BW or SAP BW/4HANA has pushed data into SAP Datasphere as a local table (file), and you now want to use it for your business case.") :arrow_upper_right:.
+    > Local tables \(file\) can also be created by the Data Product Generator from SAP BW or SAP BW/4HANA, and the behavior of such tables can differ. For more information, see [Working With Local Tables (File) Received From the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/72a055fc7dad40079efa442ddd4b998e.html "An administrator in SAP BW or SAP BW/4HANA has pushed data into SAP Datasphere as a local table (file), and you now want to use it for your business case.") :arrow_upper_right:.
 
 
 You cannot create views and analytic models in file spaces, but you can share local tables \(file\) to standard spaces where they can be consumed by views, flows, and analytic models \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\).
@@ -31,7 +45,7 @@ SAP HANA Cloud, data lake allows SAP Datasphere to store and manage mass-data ef
 As a local table \(file\) is capturing delta changes via flows, it creates different entities in the repository after it is deployed:
 
 -   An active records entity for accessing the delta capture entity through a virtual table. It excludes the delta capture columns and deleted records, and keeps only the active records.
--   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(file\) has a specific folder in file storage \(inbound buffer\) to which data updates are stored until they are pushed to the local table \(file\) by a merge task \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
+-   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(file\) has a specific folder in file storage \(inbound buffer\) to which data updates are stored until they are pushed to the local table \(file\) by a merge task \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
 
 
 
@@ -136,7 +150,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
 
     This feature is intended to allow you to transport data for static and slowly changing dimensions, text entities, or relational datasets, and can only be used to initialize data when importing the table for the first time.
 
-    See [Creating Packages to Export](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    See [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>

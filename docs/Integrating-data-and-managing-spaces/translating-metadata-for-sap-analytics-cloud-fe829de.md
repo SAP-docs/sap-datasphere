@@ -29,7 +29,7 @@ To enable translation for your space, and to manage translation in the *Translat
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 -   *Translation* \(`CR-D----`\) - To access the *Translation* tool, select objects to translate, manage and delete translations.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -41,7 +41,7 @@ For example, you may have stories that have column names in a default language, 
 
 To translate objects' metadata, you can have it translated into multiple target languages using third-party translation tools or you can have those descriptions translated in-line using the *Translation* tool. You can use the tool to review translations, and edit or add translations from scratch for some or all languages.
 
-To manage translation, you must be assigned to a scoped role that inherits a template \(such as DW Space Administrator\), which grants the Translation privilege \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:\).
+To manage translation, you must be assigned to a scoped role that inherits a template \(such as DW Space Administrator\), which grants the Translation privilege \(see [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:\).
 
 
 

@@ -8,12 +8,37 @@ You can, at any time, view the data contained in \(or output by\) your tables, v
 
 This topic contains the following sections:
 
+-   [Prerequisites](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_prerequisites)
 -   [Open the Data Viewer](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_open)
 -   [Sort Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_sort)
 -   [Filter Data](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_filter)
 -   [Choose Columns to Display](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_columns)
 -   [View Data as a Different User](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_impersonation)
 -   [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)
+
+
+
+<a name="loiob338e4aa7e7e494eb68c383720ebfd3a__section_prerequisites"/>
+
+## Prerequisites
+
+To view the data contained in the *Data Builder* objects, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Space Files* \(`-R------`\) - To read objects in your spaces.
+-   *Data Warehouse Data Builder* \(`-R------`\) - To open *Data Builder* objects.
+-   *Data Warehouse Consumption*- To view data in the *Data Viewer* panel. Two levels of access are available:
+    -   *Data Warehouse Consumption* \(`-R------`\) - To view only data output by views with the *Expose for Consumption* switch enabled.
+
+        The *DW Viewer* role template, for example, grants this privilege.
+
+    -   *Data Warehouse Consumption* \(`----E---`\) - To view data from any object or diagram node \(where this is supported\).
+
+        The *DW Modeler* role template, for example, grants this privilege.
+
+
+
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -24,7 +49,7 @@ This topic contains the following sections:
 You can view data in the table, graphical view, SQL view, E/R model, analytic model, and transformation flow editors. The analytic model has an additional analytic data viewer \(see [Preview Data in an Analytic Model](Modeling-Data-in-the-Data-Builder/preview-data-in-an-analytic-model-9f1fa73.md)\). The data flow editor provides a limited data preview \(see [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)\). 
 
 > ### Note:  
-> Users with the standard *DW Modeler* role can preview data in any object in their space. Users with the *DW Viewer* role can only preview data output by views with the *Expose for Consumption* switch enabled. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
+> Users with the standard *DW Modeler* role can preview data in any object in their space. Users with the *DW Viewer* role can only preview data output by views with the *Expose for Consumption* switch enabled. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
 
 1.  To open the *Data Viewer* panel
     -   In the main toolbar, or in a diagram symbol menu, click <span class="SAP-icons-V5"></span> \(Data Viewer\), or
@@ -220,7 +245,7 @@ You can review the effects of any data access controls you apply to a view by ch
     > -   Has one or more sources shared from other spaces, then a warning is shown to indicate that you may not see exactly the same records as the user you are impersonating.
 
 
-For more information about data access controls, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/9f36ca35bc6145e4acdef6b4d852d560/DEV_CURRENT/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:.
+For more information about data access controls, see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:.
 
 
 

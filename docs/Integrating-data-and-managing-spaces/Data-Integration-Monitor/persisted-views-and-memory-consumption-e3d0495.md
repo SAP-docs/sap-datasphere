@@ -43,11 +43,11 @@ You can monitor memory consumption in the task logs if you switch on the option 
 
 You can also use SAP HANA Views:
 
--   [M\_EXPENSIVE\_STATEMENT](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/20af736e751910148162e2ab1982f035.html): This view provides all statements, for which memory consumption, CPU time or duration exceed the corresponding specified thresholds. For more information, see [Configure Monitoring](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor.") :arrow_upper_right:
+-   [M\_EXPENSIVE\_STATEMENT](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/20af736e751910148162e2ab1982f035.html): This view provides all statements, for which memory consumption, CPU time or duration exceed the corresponding specified thresholds. For more information, see [Configure Monitoring](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor.") :arrow_upper_right:
 
 -   Memory consumed during insert statements can be tracked using the view: [M\_ACTIVE\_PROCEDURES](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/f3d23305d0dd495590e0061c3546de9a.html).
 
-For more information on how to use system view, see [Working with SAP HANA Monitoring Views](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "You can obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor to do additional analysis on them and visualize them in SAP Analytics Cloud.") :arrow_upper_right:.
+For more information on how to use system view, see [Working with SAP HANA Monitoring Views](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "You can obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor to do additional analysis on them and visualize them in SAP Analytics Cloud.") :arrow_upper_right:.
 
 
 
@@ -164,7 +164,7 @@ Proper configuration of these limitations is crucial to avoid errors indicating 
 
 Preventing and Managing Out of Memory Situations
 
--   Regularly analyze system memory usage and allocation limits using system monitoring tools. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:.
--   Carefully configure workload class limitations to optimize resource allocation without triggering OOM events. For more information see, [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/935116dd7c324355803d4b85809cec97/DEV_CURRENT/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
+-   Regularly analyze system memory usage and allocation limits using system monitoring tools. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:.
+-   Carefully configure workload class limitations to optimize resource allocation without triggering OOM events. For more information see, [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
 -   Run View Analyzer to optimize your model and improve memory consumption of your view. For more information see, [Getting Started with View Analyzer](getting-started-with-view-analyzer-e0aeddb.md).
 
