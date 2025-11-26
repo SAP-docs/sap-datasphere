@@ -86,7 +86,7 @@ The *Import Entities* wizard allows you to import entities from SAP S/4HANA Clou
 
 The *Import Entities* wizard allows you to import entities from SAP BW∕4HANA and SAP BW bridge systems with rich metadata. See [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
 
-If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can also be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cca4744c85b14788babe7cb6b77c9973.html "SAP Business Data Cloud enables you to lift your existing SAP BW system to the private cloud and secure your investments into SAP BW.") :arrow_upper_right:.
+If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can also be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from SAP BW and SAP BW/4HANA with the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cca4744c85b14788babe7cb6b77c9973.html "In the SAP Datasphere component of SAP Business Data Cloud, you can work with data and objects received from SAP BW and SAP BW/4HANA systems via the Data Product Generator for SAP Business Data Cloud.") :arrow_upper_right:.
 
 
 
@@ -104,7 +104,7 @@ You can import data from a CSV file to create a new local table \(see [Creating 
 
 Purchase data products from providers and download them directly into your space \(see [Installing Marketplace Data Products](../installing-marketplace-data-products-92c35ef.md)\).
 
-You can become a data provider and offer your own data products for sale in Data Marketplace via the Data Sharing Cockpit \(see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:\).
+You can become a data provider and offer your own data products for sale in Data Marketplace via the Data Sharing Cockpit \(see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:\).
 
 
 

@@ -1,6 +1,6 @@
 <!-- loio7d7d02a81bfe401ab85ce4d6c527a536 -->
 
-# Run BW Bridge Process Chains in a Task Chain
+# Run SAP BW Bridge Process Chains in a Task Chain
 
 Include and run SAP BW Bridge process chains in a task chain.
 
@@ -10,14 +10,14 @@ Include and run SAP BW Bridge process chains in a task chain.
 
 ## Prerequisites
 
-To create and run BW Bridge process chains in a task chain, you must first have created the BW Bridge space and configured the SAP BW Bridge Cockpit. For more information, see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:. The SAP Datasphere user must also be added as a BW Bridge user. For more information, see [Creating Users](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/418216b8676b460c9b5331f74b03e709.html "You need to create SAP BW bridge users as well as SAP Datasphere users.") :arrow_upper_right:.
+To create and run SAP BW Bridge process chains in a task chain, you must first have created the SAP BW Bridge space and configured the SAP BW Bridge Cockpit. For more information, see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:. The SAP Datasphere user must also be added as a SAP BW Bridge user. For more information, see [Creating Users](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/418216b8676b460c9b5331f74b03e709.html "You need to create SAP BW bridge users as well as SAP Datasphere users.") :arrow_upper_right:.
 
-> ### Note:  
-> Before adding a BW Bridge process chain to a task chain, also make sure that the open ID authentication is properly configured in the BW Bridge system. To properly configure open ID authentication, refer to SAP Note [3536298](https://me.sap.com/notes/3536298) - *Usage of BW Bridge Process Chains in Datasphere TaskChains.*
+> ### Caution:  
+> Before adding a SAP BW Bridge process chain to a task chain, you need to have the OpenID Authentication in your SAP BW bridge tenant configured, otherwise there will be error messages appearing when trying to drag and drop a process chain into a task chain in the task chain editor. For the detailed procedure how to configure the OpenID Authentication and resolve any error messages that might appear, see [Prerequisite - Configure OpenID Authentication in SAP BW Bridge](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c071f0cee1f2451aa2ffedfc1a92546a.html "The OpenID Authentication in SAP BW bridge refers to the use of OpenID Connect (OICD) as a secure and standardized method for authenticating users accessing SAP BW bridge within SAP Datasphere.") :arrow_upper_right:.
 
-You use the cockpit to create and update process chains. For more information on creating BW Bridge process chains, see [Logging Into SAP BW Bridge](https://help.sap.com/docs/SAP_DATASPHERE/ecce5bb08ae24ed089497fc00c2320d8/b73a5a6e3b36401aac93b2fd19ae5ad2.html) and [Creating Process Chains](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/c372b0ab181d4ba88d0f8eac11d81a7a.html).
+You use the cockpit to create and update process chains. For more information on creating SAP BW Bridge process chains, see [Logging Into SAP BW Bridge](https://help.sap.com/docs/SAP_DATASPHERE/ecce5bb08ae24ed089497fc00c2320d8/b73a5a6e3b36401aac93b2fd19ae5ad2.html) and [Creating Process Chains](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/c372b0ab181d4ba88d0f8eac11d81a7a.html).
 
-To include BW Bridge process chains in a task chain, users need SAP Datasphere DW Modeler and DW Integrator roles in both the SAP Datasphere and BW Bridge spaces. The SAP Datasphere roles include all the necessary privileges and permissions needed to add process chains to a task chain. However, if you have defined scoped roles \(based on custom roles\) they may not automatically include all the necessary privileges. In that case, you would need to make sure these custom roles include the following scoped privileges and permissions:
+To include SAP BW Bridge process chains in a task chain, users need SAP Datasphere DW Modeler and DW Integrator roles in both the SAP Datasphere and SAP BW Bridge spaces. The SAP Datasphere roles include all the necessary privileges and permissions needed to add process chains to a task chain. However, if you have defined scoped roles \(based on custom roles\) they may not automatically include all the necessary privileges. In that case, you would need to make sure these custom roles include the following scoped privileges and permissions:
 
 -   The Data Warehouse Data Builder privilege with Read permission.
 

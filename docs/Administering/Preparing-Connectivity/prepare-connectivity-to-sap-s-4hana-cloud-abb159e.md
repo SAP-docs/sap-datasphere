@@ -27,7 +27,7 @@ Before you can use the connection for remote tables, the following is required:
 
 -   For federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud \(**recommended for federation scenarios**\):
 
-    See [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-ef2b223.md).
+    See [Using ABAP SQL Services for Accessing ABAP-Managed Data](using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md).
 
 -   For federated access to and replication of ABAP CDS Views exposed as OData services for data extraction using Cloud Data Integration \(**legacy**\):
     -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the CloudDataIntegrationAdapter.
@@ -67,7 +67,7 @@ Before you can use the connection for replication flows, the following is requir
 
 -   For replicating CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud \(**recommended for replication scenarios**\):
 
-    See [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-ef2b223.md).
+    See [Using ABAP SQL Services for Accessing ABAP-Managed Data](using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md).
 
 -   For both replicating CDS view entities using the ABAP SQL service exposure and replicating CDS views view entities using the ABAP Pipeline Engine:
 

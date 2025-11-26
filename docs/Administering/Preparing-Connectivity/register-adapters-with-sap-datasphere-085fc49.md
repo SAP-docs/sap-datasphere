@@ -12,6 +12,13 @@ After configuring the Data Provisioning Agent, in SAP Datasphere, register the D
 
 ## Prerequisites
 
+To register data provisioning adapters, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
 For third-party adapters:
 
 1.  Find the information about the JDBC library required for your source in the SAP HANA Smart Data Integration Product Availability Matrix \(see [SAP HANA smart data integration and all its patches Product Availability Matrix \(PAM\) for SAP HANA SDI 2.0](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf)\).

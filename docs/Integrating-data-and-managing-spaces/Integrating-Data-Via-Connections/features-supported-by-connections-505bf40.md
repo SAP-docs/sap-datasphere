@@ -23,6 +23,22 @@ Description
 <tr>
 <td valign="top">
 
+Replication Flows 
+
+</td>
+<td valign="top">
+
+Allows modelers to replicate data from multiple source objects from a connected source to a target including simple projection and mapping capabilities.
+
+You can enable a single initial load or request initial and delta loads to load changes at regular intervals. It depends on the connection type if you can use the connection as source or target connection.
+
+For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Remote Tables 
 
 </td>
@@ -72,22 +88,6 @@ Model Import
 Allows modelers to import objects from any supporting SAP system with rich metadata and, if supported, with their dependencies. This way, you can leverage your existing investment in your customer system landscape without having to rebuild the objects manually.
 
 For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Replication Flows 
-
-</td>
-<td valign="top">
-
-Allows modelers to replicate data from multiple source objects from a connected source to a target including simple projection and mapping capabilities.
-
-You can enable a single initial load or request initial and delta loads to load changes at regular intervals. It depends on the connection type if you can use the connection as source or target connection.
-
-For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:.
 
 </td>
 </tr>

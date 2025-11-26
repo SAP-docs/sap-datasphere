@@ -208,6 +208,8 @@ You can add a user who will have certain privileges in your space by selecting t
 3.  Select one or more scoped roles and click *Create*.
 
 
+If a user is logged on to the tenant while you're adding it to the space, they will need to log out and log in again to the tenant in order to access the space.
+
 
 
 <a name="loio9d59fe511ae644d98384897443054c16__section_sk1_wrj_byb"/>

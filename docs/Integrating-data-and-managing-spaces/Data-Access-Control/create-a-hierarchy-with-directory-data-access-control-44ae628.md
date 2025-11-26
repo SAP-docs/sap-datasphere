@@ -30,6 +30,7 @@ Before creating your data access control, you must have identified the following
 
 -   An entity with a semantic usage of *Hierarchy with Directory* defining one or more hierarchies that are referenced in the permissions entity records \(see [Create a Hierarchy with Directory](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/36c39eee184c485a80ebce9d0fec49ec.html "Select a Semantic Usage of Hierarchy with Directory to indicate that your entity contains one or more parent-child hierarchies and has an association to a directory dimension containing a list of the hierarchies.") :arrow_upper_right:\).
 -   A permissions entity containing the following columns:
+
     -   Permission ID column - Which should be marked as a key.
     -   ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). 
 
@@ -41,6 +42,9 @@ Before creating your data access control, you must have identified the following
     -   Target Node Type Column - The node type values used here must be among those specified in the list of *Node Type Values* in the hierarchy with directory, and each of these node types must be selected via the *Select Node Types* dialog so that all the necessary columns must appear in the list of selected criteria in the data access control.
     -   Hierarchy Identifiers Column - The key values used here must be among those specified in the foreign key columns used in the association from the hierarchy with directory to its directory entity.
     -   Root Values Column - The key values used here must be among those in the node type value columns defined for the given root node type in the hierarchy with directory and, in the case of compound keys, values for each key column must be provided. For example, if a `City` has `City`, `State`, and `Country` key columns then all three values must be provided.
+
+    > ### Note:  
+    > If you want to define criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
 
 
 In this example:
@@ -345,6 +349,34 @@ Based on these three records `bob` will have access to records which meet the fo
     Select the table or view containing your user ids and criteria.
 
     The permissions entity must match the structure selected in the *Structure* field. Click the *Open in New Tab* button to the right of the field to open the entity in its own editor.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Allow IdP User Attributes as Identifiers
+    
+    </td>
+    <td valign="top">
+    
+    Enable the use of user attributes to identify users in your permissions tables. 
+
+    For more information, see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier Type Column
+    
+    </td>
+    <td valign="top">
+    
+    If *Allow IdP User Attributes as Identifiers* is enabled, select a column containing the values 0-5, which identify the User ID and IdP application custom attributes 1 to 5 respectively as the type of identifier used for the permissions entity record. 
+
+    For more information, see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md).
     
     </td>
     </tr>

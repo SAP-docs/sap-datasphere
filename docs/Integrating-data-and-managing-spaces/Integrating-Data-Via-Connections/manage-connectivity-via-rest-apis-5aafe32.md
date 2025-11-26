@@ -251,7 +251,7 @@ Description
 </td>
 <td valign="top">
 
-\[required\] Enter the technical name of the connection. The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name. The maximum length is 40 characters. The name must be unique within the space.
+\[required\] Enter the technical name of the connection. The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name. The name must be unique within the space.
 
 > ### Note:  
 > Once the object is saved, the technical name can no longer be modified.

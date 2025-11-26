@@ -119,7 +119,7 @@ See [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md).
 You must set exactly two key attributes for a *Fiscal Time Dimension*:
 
 -   A fiscal year variant identifier.
--   A fiscal year period identifier.
+-   A fiscal year period identifier, which must also be set as the representative key \(see [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys)\).
 
 
 

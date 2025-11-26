@@ -156,20 +156,25 @@ You want to model transformation flows with local tables \(file\), shared local 
 6.  \[optional\] Add incremental aggregations to the target table. It is useful for handling incremental data loads and maintaining aggregated results efficiently:
 
     1.  Click the target node to display its properties in the side panel. In the *Incremental Aggregation* section, click *Edit Aggregation*.
-    2.  In the *Incremental Aggregation* dialog are listed all aggregations with numerical data types. You can define the aggregation types LAST \(default\), SUM, or COUNT.
+    2.  In the *Incremental Aggregation* dialog are listed all aggregations with numerical data types. You can define the aggregation types LAST \(default\), SUM, COUNT, MIN, MAX, COUNT\*, or AVG.
     3.  Click *Save*. You can see the updated columns in the *Incremental Aggregations* section.
 
     > ### Note:  
-    > -   Incremental aggregations are supported only if the source table has *Delta Capture* enabled. They aren't supported for shared sources having *Delta Capture* enabled.
-    > -   LAST refers to the latest operations applied on the row.
+    > -   Incremental aggregations:
+    >     -   They are supported only if the source table has *Delta Capture* enabled. They aren't supported for shared sources having *Delta Capture* enabled.
+    >     -   LAST refers to the latest operations applied on the row.
+    >     -   COUNT doesn't include null values for the count calculations; COUNT\* includes them.
+    >     -   Using a target table that employs AVG, MAX, or MIN in one transformation as the target table in another transformation using any of these functions could lead to data inconsistencies.
+    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitor Capacities](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "View the amount of capacity units you have used each month.") :arrow_upper_right:.
+    >     -   If incremental aggregation is enabled, the input DataFrame for the Python script will include the previous versions of the data for updates.
+    > 
     > -   Columns with non-numerical aggregation types can only have the type LAST.
     > -   In the case the row is deleted on the source delta table, the row will be available in the target table and the aggregated values are then set to 0.
-    > -   If incremental aggregation is enabled, the input DataFrame for the Python script will include the previous versions of the data for updates.
 
 7.  Add a target table. For more information, see [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
-    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
+    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported. In addition, the delta capture option can be set to off only if the load type is *Initial Only*.
 
 8.  Review the properties of your transformation flow, save, deploy, and run it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
 

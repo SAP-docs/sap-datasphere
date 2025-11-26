@@ -26,7 +26,7 @@ The *DW Modeler* role template, for example, grants these privileges. For more i
 
 Analytic models are the analytical foundation for making data ready for consumption in SAP Analytics Cloud. They allow you to create and define multi-dimensional models to provide data for analytical purposes to answer different business questions. Pre-defined measures, hierarchies, filters, parameters, and associations provide flexible and simple navigation through the underlying data.
 
-The sources for analytic models are facts \(or analytical datasets\), which can contain dimensions, texts, and hierarchies.
+The sources for analytic models are facts or analytic models, which can contain dimensions, texts, and hierarchies.
 
 > ### Note:  
 > Some terms and concepts are used differently in analytic models to align more closely with the terminology in SAP Analytics Cloud stories:
@@ -129,9 +129,12 @@ In addition to working with analytic models in the editor, you can also:
     
 4.  Select your fact source on the canvas to select or deselect any measures, associated dimensions, or attributes in the properties panel on the right. For more information, see [Add a Dimension to an Analytic Model](add-a-dimension-to-an-analytic-model-4caf098.md).
 
+    You can then
+
     -   add measures. See [Create a Measure in an Analytic Model](create-a-measure-in-an-analytic-model-e4cc3e8.md).
     -   add or deselect dimensions. Dimensions used in associations cannot be unselected. See [Add a Dimension to an Analytic Model](add-a-dimension-to-an-analytic-model-4caf098.md).
     -   add variables. See [Create a Variable in an Analytic Model](create-a-variable-in-an-analytic-model-cdd8fa0.md).
+    -   create a structure. See [Create a Structure for an Analytic Model](create-a-structure-for-an-analytic-model-de1ed47.md).
     -   add data access controls. See [Apply a Data Access Control to an Analytic Model](apply-a-data-access-control-to-an-analytic-model-8d8e2f9.md).
     -   add a filter. See [Create a Global Filter in an Analytic Model](create-a-global-filter-in-an-analytic-model-e9924dc.md).
 
@@ -246,6 +249,18 @@ In addition to working with analytic models in the editor, you can also:
     Deploy your changes to make them available in the run-time environment.
 
     See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Share\)
+    
+    </td>
+    <td valign="top">
+    
+    Share the object to other spaces. See  <?sap-ot O2O class="- topic/xref " href="8b84bd8dbbbf498f9dff8add4bff6489.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/sth1761640307108/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/41b334bb536d4c5b9706be635bedb4e5.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
     
     </td>
     </tr>

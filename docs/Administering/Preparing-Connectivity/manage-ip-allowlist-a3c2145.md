@@ -6,6 +6,19 @@
 
 Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.
 
+<a name="concept_m5z_bvf_xgc"/>
+
+<!-- concept\_m5z\_bvf\_xgc -->
+
+## Prerequisites
+
+To manage the IP allowlists, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
 <a name="task_i41_kqg_zdc"/>
 
 <!-- task\_i41\_kqg\_zdc -->

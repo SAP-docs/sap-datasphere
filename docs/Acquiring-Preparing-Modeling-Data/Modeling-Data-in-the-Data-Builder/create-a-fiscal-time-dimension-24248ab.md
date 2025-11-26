@@ -12,7 +12,16 @@ Select a *Semantic Usage* of *Dimension* and a *Dimension Type* of *Fiscal Time*
 
 ## Context
 
-A fiscal time dimension organizes and categorizes time periods according to a company's fiscal calendar \(or financial year\) rather than the standard calendar. Creating a fiscal time dimension allows you to align your financial reporting and analysis with your company's fiscal periods.
+A fiscal time dimension organizes and categorizes time periods according to a company's fiscal calendar \(or financial year\) rather than the standard calendar.
+
+Creating a fiscal time dimension allows you to align your financial reporting and analysis with your company's fiscal periods. Common forms of fiscal periods include:
+
+-   Quarters - Four fiscal periods per year, each lasting three months
+
+    Calendar Weeks - 53 fiscal periods per year, most of which last 7 days
+
+    Days - 366 fiscal periods per year, each beginning and ending on the same date.
+
 
 
 
@@ -446,7 +455,7 @@ A fiscal time dimension organizes and categorizes time periods according to a co
     > You must set exactly two key attributes for a *Fiscal Time Dimension*:
     > 
     > -   A fiscal year variant identifier.
-    > -   A fiscal year period identifier.
+    > -   A fiscal year period identifier, which must also be set as the representative key \(see [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys)\).
 
     To set an attribute as a key column, select the checkbox in the *Key* column or hover over the attribute in the side panel and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Set as Key*.
 

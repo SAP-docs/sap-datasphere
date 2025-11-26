@@ -645,36 +645,24 @@ Description
 <tr>
 <td valign="top">
 
-*Start Date and Time*
+*Start Time*
 
 </td>
 <td valign="top">
 
-Date and hour the task has started to run \(formatted as dd/mm/yyyy, hh:mm:ss\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Start Date*
-
-</td>
-<td valign="top">
-
-Date the task has started to run.
+Date and hour the task has started to run.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Object Name*
+*Duration \(sec\)*
 
 </td>
 <td valign="top">
 
-Name of the object. Click on the object name to open the object in the *Data Builder*.
+How many seconds the task has run.
 
 </td>
 </tr>
@@ -693,6 +681,18 @@ Type of object that was run in the task. For example: view, remote table, data f
 <tr>
 <td valign="top">
 
+*Activity*
+
+</td>
+<td valign="top">
+
+Action that was performed on the object. For example: persist, replicate, execute. You can click on the activity name, which takes you to the *Data Integration Monitor*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Space Name*
 
 </td>
@@ -705,36 +705,104 @@ Name of the space in which the task is run.
 <tr>
 <td valign="top">
 
-*Space Storage Type*
+*Object Name*
 
 </td>
 <td valign="top">
 
-Either SAP HANA Database \(Disk and In-Memory\) or SAP HANA Data Lake Files.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Application*
-
-</td>
-<td valign="top">
-
-Name of the application.
+Name of the object. Click on the object name to open the object in the *Data Builder*.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Activity*
+*SAP HANA Peak Memory*
 
 </td>
 <td valign="top">
 
-Action that was performed on the object. For example: persist, replicate, execute. You can click on the activity name, which takes you to the *Data Integration Monitor*.
+Maximum amount of memory \(in MiB\) the task has used during the runtime in SAP HANA.
+
+> ### Note:  
+> You can see this information:
+> 
+> -   The option *Enable Expensive Statement Tracing* is enabled by default. It traces task exceeding the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
+> 
+> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
+> 
+> 
+> Otherwise, no number is displayed.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP HANA CPU Time*
+
+</td>
+<td valign="top">
+
+Maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
+
+> ### Note:  
+> You can see this information:
+> 
+> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
+> 
+> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
+> 
+> 
+> Otherwise, no number is displayed.
+
+> ### Note:  
+> CPU time measures the time used by all threads. If it's much higher than the statement's duration, it indicates heavy thread usage. Prolonged high thread usage can lead to resource bottlenecks and task cancellations, so no other tasks should be scheduled then.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Records*
+
+</td>
+<td valign="top">
+
+Number of records of the target table after the task has finished running.
+
+> ### Note:  
+> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\). Otherwise, no number is displayed.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP HANA Used Memory*
+
+</td>
+<td valign="top">
+
+Amount of memory \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP HANA Used Disk*
+
+</td>
+<td valign="top">
+
+Amount of disk space \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
 
 </td>
 </tr>
@@ -765,188 +833,12 @@ For tasks with the status “failed”, shows the substatus and a message descri
 <tr>
 <td valign="top">
 
-*Records*
+*User*
 
 </td>
 <td valign="top">
 
-Number of records of the target table after the task has finished running.
-
-> ### Note:  
-> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\). Otherwise, no number is displayed.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Duration*
-
-</td>
-<td valign="top">
-
-How long the task has run \(formatted as hh:mm:ss\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Peak Memory \(MiB\)*
-
-</td>
-<td valign="top">
-
-Maximum amount of memory \(in MiB\) the task has used during the runtime in SAP HANA.
-
-> ### Note:  
-> You can see this information:
-> 
-> -   The option *Enable Expensive Statement Tracing* is enabled by default. It traces task exceeding the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
-> 
-> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
-> 
-> 
-> Otherwise, no number is displayed.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Used Memory \(MiB\)*
-
-</td>
-<td valign="top">
-
-Amount of memory \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Used CPU Time \(ms\)*
-
-</td>
-<td valign="top">
-
-Maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
-
-> ### Note:  
-> You can see this information:
-> 
-> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
-> 
-> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
-> 
-> 
-> Otherwise, no number is displayed.
-
-> ### Note:  
-> CPU time measures the time used by all threads. If it's much higher than the statement's duration, it indicates heavy thread usage. Prolonged high thread usage can lead to resource bottlenecks and task cancellations, so no other tasks should be scheduled then.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Used Disk \(MiB\)*
-
-</td>
-<td valign="top">
-
-Amount of disk space \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Peak Memory \(MiB\)*
-
-</td>
-<td valign="top">
-
-Peak memory usage of the Spark application \(in MiB\). It ensures that applications do not exceed available resources, which could lead to performance degradation or application failure.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Peak Memory \(%\)*
-
-</td>
-<td valign="top">
-
-Percentage overview of the peak memory consumption relative to the size of the Spark application configuration. It helps you understand how efficiently the application is using its allocated memory and whether adjustments are needed to optimize performance.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Spill to Disk \(MiB\)*
-
-</td>
-<td valign="top">
-
-Amount of data that has been spilled to disk \(in MiB\). Spilling occurs when executors exceed their memory limits, causing data to be temporarily stored on disk. High spill rates can lead to performance bottlenecks, so monitoring this metric is crucial for identifying memory-related issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Used Number of Cores*
-
-</td>
-<td valign="top">
-
-Number of CPU cores utilized by the Spark application. It helps you assess whether the application is efficiently using available compute resources and if there is a need to adjust the number of cores allocated to improve performance.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Used Compute Time \(ms\)*
-
-</td>
-<td valign="top">
-
-Total compute time used by the Spark application \(in ms\). It gives you insight into the duration of the application's execution, which is useful for performance analysis and resource planning.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Used Compute \(%\)*
-
-</td>
-<td valign="top">
-
-Percentage of compute resources used by the Spark application relative to its configuration. It helps you evaluate the efficiency of resource utilization and identify potential areas for optimization.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Out-of-Memory*
-
-</td>
-<td valign="top">
-
-Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not \("No" is then displayed\).
+Name of the user who has run the task.
 
 </td>
 </tr>
@@ -959,18 +851,6 @@ Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not 
 <td valign="top">
 
 SAP HANA database technical name of the target table.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*User*
-
-</td>
-<td valign="top">
-
-Name of the user who has run the task.
 
 </td>
 </tr>
@@ -996,6 +876,18 @@ View all the statements of the task in the *Statements* tab, if the information 
 <tr>
 <td valign="top">
 
+*Out-of-Memory*
+
+</td>
+<td valign="top">
+
+Shows if the task has an out-of-memory error \("Yes" is then displayed\) or not \("No" is then displayed\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Task Log ID*
 
 </td>
@@ -1008,12 +900,12 @@ Identifier of the run task.
 <tr>
 <td valign="top">
 
-*Apache Spark Resource ID*
+*Start Date*
 
 </td>
 <td valign="top">
 
-Unique identifier for the resources used by the Spark application. It can be helpful for debugging purposes, allowing you to trace specific resource allocations and usage patterns when troubleshooting issues.
+Date the task has started to run.
 
 </td>
 </tr>

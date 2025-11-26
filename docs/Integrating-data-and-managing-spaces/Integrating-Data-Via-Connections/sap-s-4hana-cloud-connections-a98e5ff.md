@@ -54,7 +54,7 @@ You can replicate the following data:
 
 -   standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud
 
-    For more information, see [Data Consumption Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/ec312dd3e39f401b84681c53adc08ad8.html).
+    For more information, see [Accessing ABAP-Managed Data from SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/data-replication?version=s4hana_cloud) in the *ABAP Cloud* documentation for *SAP S/4HANA Cloud Public Edition*.
 
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
@@ -90,7 +90,7 @@ You can access the following data:
 
 -   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud \(**recommended for federation scenarios**\)
 
-    For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:.
+    For more information, see [Using ABAP SQL Services for Accessing ABAP-Managed Data](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:.
 
     > ### Note:  
     > On the *Sources* tab of the remote-table-related Data Builder editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.

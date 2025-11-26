@@ -40,12 +40,16 @@ Before creating your data access control, you must have identified the following
     > To create a data access control from an entity with a semantic usage of *Hierarchy with Directory*, see [Create a "Hierarchy with Directory" Data Access Control](create-a-hierarchy-with-directory-data-access-control-44ae628.md).
 
 -   A permissions entity containing the following columns:
+
     -   ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). 
 
         > ### Note:  
         > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
 
     -   Criterion column - A column containing the criterion data. This criterion data is organized into a hierarchy via an external entity with a semantic usage of *Hierarchy*.
+
+    > ### Note:  
+    > If you want to define criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
 
 
 For example:
@@ -310,6 +314,34 @@ For example:
     Select the table or view containing your user ids and criteria.
 
     The permissions entity must match the structure selected in the *Structure* field. Click the *Open in New Tab* button to the right of the field to open the entity in its own editor.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Allow IdP User Attributes as Identifiers
+    
+    </td>
+    <td valign="top">
+    
+    Enable the use of user attributes to identify users in your permissions tables. 
+
+    For more information, see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier Type Column
+    
+    </td>
+    <td valign="top">
+    
+    If *Allow IdP User Attributes as Identifiers* is enabled, select a column containing the values 0-5, which identify the User ID and IdP application custom attributes 1 to 5 respectively as the type of identifier used for the permissions entity record. 
+
+    For more information, see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md).
     
     </td>
     </tr>

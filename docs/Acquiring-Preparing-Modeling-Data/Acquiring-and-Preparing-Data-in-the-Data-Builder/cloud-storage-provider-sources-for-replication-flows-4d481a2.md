@@ -169,6 +169,9 @@ In addition, you can change the following **other properties** here:
 
 **Specify primary key columns**: The source files do not have a primary key defined, while the target tables need to have a primary key. Consequently, you have to specify the primary key columns for the target. To do so, select the relevant object, then choose *Configure Schema* \(in the *Source Schema Settings* section of the properties panel\) and mark the relevant columns as key columns.
 
+> ### Note:  
+> If your replication flow consumes multiple objects, we recommend using a common pattern and schema to avoid mixing unrelated datasets \(for example, "Employees" and "Sales" tables\).
+
 
 
 <a name="loio4d481a2c620f4b52ba65b360299d7719__section_ReplFlow_NonSAP_Sources_GlobalPatterns"/>

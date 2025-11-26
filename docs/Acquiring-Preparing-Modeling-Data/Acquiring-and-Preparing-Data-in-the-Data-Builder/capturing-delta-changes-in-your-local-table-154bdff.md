@@ -2,12 +2,16 @@
 
 # Capturing Delta Changes in Your Local Table
 
-Track the changes that will be made later on your local table after you have deployed it.
+Enable *Delta Capture* in your local table to automatically track all inserts, updates and deletions of its records via *Change Date* and *Change Type* columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.
 
-Local tables can be used as source data or target data by SAP Datasphere apps. For some business scenarios, you might need to keep an eye on changes that will be made after you have deployed your local table. For example, when you import a new csv file, or while running a replication flow, you might want to know which data is updated or deleted. When creating a local table, you can switch on a toggle that will capture the future updates made in your table.
 
-> ### Restriction:  
-> The Delta Capture Table is an internal table whose structure can incompatibly change at any time. It is not permitted for external data access and is only consumed by the above SAP Datasphere internal apps. Using the internal delta capture columns \(*Change Date* or *Change Type*\) or their content directly or indirectly for external delta replication outside the Premium Outbound Integration is also not permitted. For more information, see [Premium Outbound Integration](https://blogs.sap.com/2023/11/16/replication-flow-blog-series-part-2-premium-outbound-integration/).
+
+## Prerequisites
+
+To enable Delta Capture:
+
+-   You table must have a status *Not Deployed*.
+-   You must define one or more key columns.
 
 
 
@@ -15,12 +19,10 @@ Local tables can be used as source data or target data by SAP Datasphere apps. F
 
 ## Switching Delta Capture On
 
-> ### Caution:  
-> You need to meet the following requirements to add the setting *Delta Capture*:
-> 
-> -   Your table must not be deployed yet. After deployment, it is not possible to turn an existing local table into a table that allows *Delta Capture*.
-> 
-> -   You must define at least one key column.
+Local tables can be used as source data or target data by SAP Datasphere apps. For some business scenarios, you might need to keep an eye on changes that will be made after you have deployed your local table. For example, when you import a new csv file, or while running a replication flow, you might want to know which data is updated or deleted. When creating a local table, you can switch on a toggle that will capture the future updates made in your table.
+
+> ### Restriction:  
+> The delta capture table is an internal table whose structure can incompatibly change at any time. It is not permitted for external data access and is only consumed by the above SAP Datasphere internal apps. Using the internal delta capture columns \(*Change Date* or *Change Type*\) or their content directly or indirectly for external delta replication outside the Premium Outbound Integration is also not permitted. For more information, see [Premium Outbound Integration](https://blogs.sap.com/2023/11/16/replication-flow-blog-series-part-2-premium-outbound-integration/).
 
 You enable *Delta Capture* while creating a local table. See [Creating a Local Table](creating-a-local-table-2509fe4.md).
 
@@ -29,7 +31,7 @@ When *Delta Capture* is switched on:
 -   *Delta Capture Table* field is added and a default name for the delta capture table is defined \(Technical name + Delta\).
 
     > ### Example:  
-    > I define the business name "My Employee Data" for my local table with delta capture enabled, the technical name is "My\_Employee\_Data". The default delta capture table name will be "My\_Employee\_Data\_Delta": ![](images/Delta_Capture_Table_Name_9f1a8fe.png)
+    > I define the business name "My Employee Data" for my local table with delta capture enabled, the technical name is "My\_Employee\_Data". The default delta capture table name will be "My\_Employee\_Data\_Delta".
 
 -   2 additional columns are automatically created in my table:
 
@@ -110,9 +112,7 @@ You can import another csv file containing data in your table. In this case, the
 > ### Note:  
 > You can’t import data that will erase existing key records data. You first need to delete the existing data by selecting the option*Delete Existing Data Before Upload* when importing the new csv file.
 
-For example, if I import a csv file with new data, the change type is set to "I":
-
-![](images/Delta_Local_Table_Insert_984554b.png)
+For example, if I import a csv file with new data, the change type is set to "I".
 
 For more information, see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
 
@@ -157,24 +157,20 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 
 If you archive records in your ABAP source system, these records are by default replicated as deletion \(change type 'D'\) and marked as deleted in a table with delta capture enabled. They will therefore not be available in SAP Datasphere views for consumption, as views will read from the active records table, which excludes both deleted \(change type 'D'\) and archived records \(change type 'M'\).
 
-So that the archived records from your ABAP source system do not appear in your tables in SAP Datasphere as deleted records, please follow the guidance from [SAP Note 3290438](https://me.sap.com/notes/SAP Note 3290438) that suggests two configuration options using the table DHCDC\_TRIGGERSTG in the ABAP source system \(value 'A' or value 'D'\):
+So that the archived records from your ABAP source system do not appear in your tables in SAP Datasphere as deleted records, please follow the guidance from [SAP Note 3290438](https://me.sap.com/notes/SAP Note 3290438) that suggests two configuration options using the table DHCDC\_TRIGGERSTG in the ABAP source system \(value 'A' or value 'D'\).
 
--   **Option 1**: Archived records are replicated to SAP Datasphere with change type 'M', so that you can distinguish in a local table with delta capture enabled between archived records \(change type 'M'\) and deleted records \(change type 'D'\).
--   **Option 2**: You want to consider archived records \(change type 'M'\) as active records for a specific table \(so that a view will display them\). We recommend that you use a transformation flow and map records with change type 'M' to change type 'U' in the target table. This transformation flow can either use a graphical view transform with calculated columns or an SQL view transform. In that transform, all records with change type 'M' are mapped to 'U' \(see SQL example here below\) with all other source columns mapped unchanged to target columns.
+When using the default option \(value 'A'\) in the table DHCDC\_TRIGGERSTG, archived records are replicated to SAP Datasphere with change type 'M', so that you can distinguish in a local table with delta capture enabled between archived records \(change type 'M'\) and deleted records \(change type 'D'\). To consider archived records \(change type 'M'\) as active records for a specific table \(so that a view will display them\), we recommend using a transformation flow that maps the records with change type 'M' to change type 'U' in the target table. This transformation flow can either use a graphical view transform with calculated columns or an SQL view transform. In that transform, all records with change type 'M' are mapped to 'U' \(see SQL example here below\) with all other source columns mapped unchanged to target columns.
 
-    > ### Example:  
-    > \[..\]
-    > 
-    > CASE
-    > 
-    > WHEN "MyTable\_Delta"."Change\_Type" = 'D' THEN 'U'
-    > 
-    > ELSE "MyTable\_Delta"."Change\_Type" END AS "Change\_Type",
-    > 
-    > "MyTable\_Delta"."Change\_Date"
-    > 
-    > \[...\]
+> ### Example:  
+> \[..\]
+> 
+> CASE
+> 
+> WHEN "MyTable\_Delta"."Change\_Type" = 'M' THEN 'U'
+> 
+> ELSE "MyTable\_Delta"."Change\_Type" END AS "Change\_Type",
+> 
+> "MyTable\_Delta"."Change\_Date"
 
-    The target table for this transformation flow can either be a copy of the source table or the source table itself \(in that case please introduce an additional filter to only process records with change type 'M'\).
-
+The target table for this transformation flow can either be a copy of the source table or the source table itself \(in that case please introduce an additional filter to only process records with change type 'M'\).
 

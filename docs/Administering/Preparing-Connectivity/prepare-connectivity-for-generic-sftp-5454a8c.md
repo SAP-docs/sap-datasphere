@@ -8,9 +8,9 @@ To connect to the SFTP server, a public host key is required to verify the serve
 
 <a name="loio5454a8cfdb9845a9b6c772d63b8e92ec__section_fpc_2bx_jbc"/>
 
-## Replication Flows
+## Data Flows and Replication Flows
 
-Before you can use the connection for replication flows, the following is required:
+Before you can use the connection for data flows and replication flows, the following is required:
 
 
 

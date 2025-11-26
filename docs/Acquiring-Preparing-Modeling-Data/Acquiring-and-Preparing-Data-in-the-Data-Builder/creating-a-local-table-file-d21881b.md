@@ -35,7 +35,7 @@ SAP Datasphere supports two types of local table to persist data:
 -   Local tables \(file\) – Are stored on files and are intended for file storage with large amounts of data at lower cost. These tables always use delta capture and can only be created in a file space \(with **SAP HANA Data Lake Files** storage \(see [Create a File Space to Load Big Data](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/947444683e524cfd9169d7671b72ba0c.html?locale=en-US&state=DRAFT&version=DEV)\).
 
     > ### Note:  
-    > Local tables \(file\) can also be created by the Data Product Generator from SAP BW or SAP BW/4HANA, and the behavior of such tables can differ. For more information, see [Working With Local Tables (File) Received From the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/72a055fc7dad40079efa442ddd4b998e.html "An administrator in SAP BW or SAP BW/4HANA has pushed data into SAP Datasphere as a local table (file), and you now want to use it for your business case.") :arrow_upper_right:.
+    > Local tables \(file\) can also be created by the Data Product Generator from SAP BW or SAP BW/4HANA, and the behavior of such tables can differ. For more information, see  <?sap-ot O2O class="- topic/xref " href="72a055fc7dad40079efa442ddd4b998e.xml" text="" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/sth1761640307108/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/d21881b121bc4703861be6ead4aea2ab.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 You cannot create views and analytic models in file spaces, but you can share local tables \(file\) to standard spaces where they can be consumed by views, flows, and analytic models \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\).
@@ -59,7 +59,6 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
 > -   *Data Preview* of local tables \(file\) displays only active records. This is different to local tables where the *Data Preview* displays records from the delta capture entity.
 > -   *Delete Data from Table* will only mark records for deletion, but they will still be available for other apps to consume them.
 > -   You can't import a CSV file.
-> -   You can't switch off the delta capture option.
 > -   You can't edit the data in the *Data Editor*.
 > -   Default value is not supported
 
@@ -176,7 +175,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </td>
     <td valign="top">
     
-    \[read-only\]Track the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`.
+    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
     
     </td>
     </tr>

@@ -4,7 +4,7 @@
 
 # Preview Data in an Analytic Model
 
-The data preview helps you to determine wether your data is correct.
+The data preview helps you to determine whether your data is correct.
 
 As this is an analytical preview, you can navigate through the various dimensions, and view the aggregated data. This means, you can see how the data will look like in an SAP Analytics Cloud story.
 
@@ -25,6 +25,14 @@ If you want to set filters, choose <span class="SAP-icons-V5"></span> Add Fil
 ## Exporting Data
 
 By choosing <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Excel* or ** \> *Export CSV*, you can export the data as an Excel or CSV file. This enables you to share the intermediate results with colleagues, and to validate the calculations and measures.
+
+
+
+<a name="loio9f1fa73a33424cbe9bac3064702c0dbd__section_ph4_mgh_hhc"/>
+
+## Export Preview Settings
+
+By choosing <span class="SAP-icons-V5"></span> ** \> *Export Preview Settings to File*, you can export the definition of the data preview of an analytic model as a local file. Technical support can then import this file to recreate the data preview for analysis purposes.
 
 
 

@@ -12,6 +12,13 @@ Remote systems may restrict access to their instances. The remote system often d
 
 ## Prerequisites
 
+To obtain IP addresses, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
 
 
 <a name="loio0934f7ed9a534e638299f53ab60866ae__section_o3g_3nf_xgc"/>
@@ -44,7 +51,7 @@ Remote systems may restrict access to their instances. The remote system often d
     </td>
     <td valign="top">
     
-    To allow SAP Datasphere access to a protected remote system and using the corresponding connection with data flows or replication flows, add the *Replication/Data Flow NAT IP \(egress\)* to the allowlist in the remote system.
+    To allow SAP Datasphere access to a protected remote system and using the corresponding connection with data flows or replication flows, the *Replication/Data Flow NAT IP \(egress\)* must be added to the allowlist in the remote system.
 
     The following Replication/Data Flow NAT IP \(egress\) are available:
 
@@ -82,11 +89,14 @@ Remote systems may restrict access to their instances. The remote system often d
     </td>
     <td valign="top">
     
-    If connecting a REST remote source to the SAP HANA Cloud instance through SAP HANA Smart Data Integration \(for example, via OData Adapter\), then the REST remote source is accessed using one of the NAT / egress IPs.
+    If you want to use the following scenarios, the *SAP HANA Cloud NAT IP Addresses \(egress\)* must be added to the allowlist in the remote system:
 
-    If connecting a remote source to the SAP HANA Cloud instance using SAP HANA Smart Data Access, then the connection uses the NAT / egress IP in case the Cloud Connector is not used in the scenario.
+    -   If connecting a REST remote source to the SAP HANA Cloud instance through SAP HANA Smart Data Integration \(for example, via OData Adapter\), then the REST remote source is accessed using one of the NAT IPs \(egress\).
 
-    For more information, see [Domains and IP Ranges](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/domains-and-ip-ranges) in the SAP HANA Cloud documentation.
+    -   If connecting a remote source to the SAP HANA Cloud instance using SAP HANA Smart Data Access, then the connection uses the NAT IP \(egress\) in case the Cloud Connector is not used in the scenario.
+
+
+    For more information, see [Domains and IP Ranges](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/domains-and-ip-ranges) in the SAP HANA Cloud documentation \(column *NAT IPs \(egress, for outgoing requests\)* in the *Regions for Enterprise Accounts* table\).
 
     **Example:**
 
@@ -112,6 +122,10 @@ Remote systems may restrict access to their instances. The remote system often d
     </tr>
     </table>
     
+4.  To obtain the SAP HANA Cloud Load Balancer IP addresses \(ingress\), see [Domains and IP Ranges](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/domains-and-ip-ranges) in the SAP HANA Cloud documentation \(column *LB IPs \(ingress, for incoming requests\)* in the *Regions for Enterprise Accounts* table\).
+
+    To connect a remote system to SAP Datasphere via Data Provisioning Agent or Cloud Connector, the SAP HANA Cloud Load Balancer IP addresses \(ingress\) must be added to the allowlist in the remote system.
+
 
 
 

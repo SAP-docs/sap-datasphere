@@ -12,6 +12,13 @@ To enable access to a non-SAP database via ODBC to use it as a source for data f
 
 ## Prerequisites
 
+To upload or remove drivers, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
 In addition, prepare the driver files:
 
 -   Search for the required driver files in the internet, make sure you have selected the correct driver files \(identified by their SHA256-formatted fingerprint\) and download them from an appropriate web page \(see below\).

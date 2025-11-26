@@ -9,7 +9,7 @@ Extend connectivity beyond SAP Datasphere standard remote connectivity and cover
 
 This topic contains the following sections:
 
--   -   [Context](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_context)
+-   [Context](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_context)
 -   [Supported Features](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_usage)
 -   [Configuring the Partner Connection](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_connection_properties)
 

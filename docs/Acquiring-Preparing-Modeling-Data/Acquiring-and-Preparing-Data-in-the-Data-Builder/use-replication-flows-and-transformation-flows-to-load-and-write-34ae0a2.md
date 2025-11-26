@@ -176,17 +176,17 @@ Operators and Transform Capabilities
 </td>
 <td valign="top">
 
-Join, Union, Projection, Calculated Column, Agregation, Pyhton script.
+Join, Union, Projection, Calculated Column, Aggregation, Python script.
 
 </td>
 <td valign="top">
 
-Projections and filters, for example adding, adjusting and removal of columns as well as the ability to provide row-level filters on one or multiple objects
+Projections and filters, for example, adding, adjusting, and removal of columns, as well as the ability to provide row-level filters on one or multiple objects
 
 </td>
 <td valign="top">
 
-Join, Aggregation, Filter, Projection, Calculated Columns, Phyton script
+Join, Aggregation, Filter, Projection, Calculated Columns, Python script \(Transformation Flows in file space only\)
 
 </td>
 </tr>

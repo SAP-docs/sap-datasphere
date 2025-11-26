@@ -144,6 +144,28 @@ You can search for tables, views, analytic models and *Business Builder* objects
 <tr>
 <td valign="top">
 
+Lineage or Impacts
+
+</td>
+<td valign="top">
+
+-   `all views using table Sales`
+    -   Returns all views that have a table with a name like `Sales` in their lineage.
+
+-   `all tables used by analytic model Sales Europe`
+    -   Returns all tables that are present in the lineage of the named analytic model.
+
+-   `all analytic models using tables with columns starting with Z"`
+    -   Returns all analytic models that have tables with such columns in their lineage.
+
+
+For more information about these relationships, see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Date and time ranges
 
 </td>

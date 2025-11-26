@@ -20,6 +20,8 @@ This topic contains the following sections:
 
 To install default or custom choropleth shapefile data, you must have access to a database user and its Open SQL Schema \(see [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:\).
 
+See also [3670351](https://me.sap.com/notes/3670351).
+
 
 
 <a name="loio4e45d4cb71404f52bd3cb01676f328e1__section_default"/>
@@ -31,7 +33,7 @@ To allow users to work with choropleth layers, you must ensure that the default 
 > ### Note:  
 > SAP Datasphere tenants provisioned up to and including version 2025.23 include default choropleth shapefile data. Tenants provisioned since then no longer include this data, but you can manually install it.
 
-1.  Go to [https://me.sap.com/softwarecenter](https://me.sap.com/softwarecenter) and search for `DSP_GEO_DEFAULT_CONTENT.zip`.
+1.  Go to [https://me.sap.com/softwarecenter](https://me.sap.com/softwarecenter) and search for `DSP_SPATIAL_0-70009312.ZIP`.
 2.  Download and unzip the file.
 3.  Create an Open SQL Schema in any space in your SAP Datasphere tenant \(see [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:\).
 4.  Open the SAP HANA Database Explorer and connect to your Open SQL Schema \(see [Connect to Your Open SQL Schema](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b78ad208f8c4494489aabf97284679b6.html "When you have created a database user, you can connect to your Open SQL schema with the SAP HANA database explorer or with other tools.") :arrow_upper_right:\).

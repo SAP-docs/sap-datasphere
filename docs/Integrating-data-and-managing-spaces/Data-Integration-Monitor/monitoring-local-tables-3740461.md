@@ -190,7 +190,7 @@ Displays the number of partitions defined on the local table.
 </td>
 <td valign="top">
 
-Indicates if the local table allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Track the changes that will be made later on your local table after you have deployed it.") :arrow_upper_right:.
+Indicates if the local table allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
 
 </td>
 </tr>

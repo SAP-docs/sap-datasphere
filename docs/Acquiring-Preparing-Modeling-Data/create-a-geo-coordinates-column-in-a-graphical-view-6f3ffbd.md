@@ -14,7 +14,7 @@ When using the geo-coordinates column in an SAP Analytics Cloud geo map, the fol
 
 -   Bubble
 -   Heat Map
--   Choropleth / Drill
+-   Choropleth / Drill\- For information about providing custom choropleth data, see [Enable Choropleth Layers for Geographical Visualizations](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4e45d4cb71404f52bd3cb01676f328e1.html "Choropleth maps display data such as population density, per capita income, or election results, by shading or coloring geographical areas in proportion to the value of that data. Users consuming data from SAP Datasphere may want to view it via a choropleth layer in SAP Analytics Cloud or other analytics clients.") :arrow_upper_right:.
 -   Feature
 -   Flow
 

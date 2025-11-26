@@ -81,7 +81,7 @@ In addition to working with task chains in the editor, you can also:
     > ### Note:  
     > From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, transformation flow objects and task chains that meet prerequisites and are available to be added to the task chain. Task chains you've shared or have been shared with you from another space are denoted by the <span class="FPA-icons-V3"></span> \(Share\) icon following the task chain's business name. For more information on sharing and running shared task chains, see [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md).
     > 
-    > From the *Others* tab, you can see the non-repository Open SQL schema procedures and BW Bridge process chains you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md). For more information on adding BW Bridge process chains to a task chain, see [Run BW Bridge Process Chains in a Task Chain](run-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md).
+    > From the *Others* tab, you can see the non-repository Open SQL schema procedures and BW Bridge process chains you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md). For more information on adding BW Bridge process chains to a task chain, see [Run SAP BW Bridge Process Chains in a Task Chain](run-sap-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md).
     > 
     > In addition to the objects available from the Repository or Others tabs, you can also add two other additional objects to task chains that are only available from the task chain toolbar. The *API Task* object lets you configure API Tasks to access external systems. \(For more information, see [Run API Tasks in a Task Chain](run-api-tasks-in-a-task-chain-9a8489e.md).\) The *Notification Task* object lets you configure email notification for individual task chain tasks. \(For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).\)
 
@@ -313,7 +313,7 @@ In addition to working with task chains in the editor, you can also:
 
     *Other \(Non-Repository\) Objects:*
 
-    -   BW Process Chains - Run \(For more information, see [Run BW Bridge Process Chains in a Task Chain](run-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md)\)
+    -   BW Process Chains - Run \(For more information, see [Run SAP BW Bridge Process Chains in a Task Chain](run-sap-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md)\)
     -   SQL Script Procedures - Run \(For more information, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md)\)
 
     *Task Chain Toolbar Objects:*

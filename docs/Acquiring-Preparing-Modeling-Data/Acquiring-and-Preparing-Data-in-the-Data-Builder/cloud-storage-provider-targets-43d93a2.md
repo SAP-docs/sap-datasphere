@@ -131,7 +131,12 @@ Suppress Duplicates
 </td>
 <td valign="top">
 
-Enable this option to avoid duplicate records in your target file. During initial load, if a data record already exists in the target, the default system behavior with cloud storage provider targets would be to write this record to the target once again, which results in duplicate records. However, this is not the desired behavior for many use cases of replication flows, and consequently duplicate suppression is active by default. You can deactivate it if required for your specific use case \(for example to continue using existing replication flows that do not support duplicate suppression\).
+Enable this option to avoid duplicate records in your target file. During initial load, if a data record already exists in the target, the default system behavior with cloud storage provider targets would be to write this record to the target once again, which results in duplicate records. However, this is not the desired behavior for many use cases of replication flows, and consequently, duplicate suppression is active by default. You can deactivate it if required for your specific use case \(for example, to continue using existing replication flows that do not support duplicate suppression\).
+
+> ### Note:  
+> To accomplish duplicate suppression in initial load replications, a unique filename for the target storage is generated using an algorithm. Note that the algorithm is subject to change at any time for internal SAP reasons, which may affect the suppression mechanism. This can result in some duplicate records appearing during the migration process.
+
+
 
 </td>
 </tr>

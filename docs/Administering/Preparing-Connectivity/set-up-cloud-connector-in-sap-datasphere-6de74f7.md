@@ -8,6 +8,19 @@ Receive SAP Datasphere subaccount information required for Cloud Connector confi
 
 
 
+<a name="loio6de74f7731c54ce88f2883df8f8671a8__section_lws_rtf_xgc"/>
+
+## Prerequisites
+
+To set up Cloud Connector in SAP Datasphere, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
 <a name="loio6de74f7731c54ce88f2883df8f8671a8__section_ky2_cgv_tsb"/>
 
 ## Context

@@ -55,6 +55,9 @@ Before creating your data access control, you must have prepared a permissions e
 -   First Value Column - This value acts as the first argument or lower bound of the operator.
 -   Second Value Column - This value acts as the second argument or upper bound of the operator.
 
+> ### Note:  
+> If you want to define criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
+
 For example:
 
 
@@ -392,6 +395,34 @@ Based on these three records:
     Select the table or view containing your user ids and criteria.
 
     The permissions entity must match the structure selected in the *Structure* field. Click the *Open in New Tab* button to the right of the field to open the entity in its own editor.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Allow IdP User Attributes as Identifiers
+    
+    </td>
+    <td valign="top">
+    
+    Enable the use of user attributes to identify users in your permissions tables. 
+
+    For more information, see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier Type Column
+    
+    </td>
+    <td valign="top">
+    
+    If *Allow IdP User Attributes as Identifiers* is enabled, select a column containing the values 0-5, which identify the User ID and IdP application custom attributes 1 to 5 respectively as the type of identifier used for the permissions entity record. 
+
+    For more information, see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md).
     
     </td>
     </tr>

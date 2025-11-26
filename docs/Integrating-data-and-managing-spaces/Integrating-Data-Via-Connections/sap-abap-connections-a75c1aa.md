@@ -71,7 +71,7 @@ You can access the following data:
 
     For more information, see:
 
-    -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
+    -   [Using ABAP SQL Services for Accessing ABAP-Managed Data](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
     -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:
 
     > ### Note:  
@@ -1113,11 +1113,15 @@ Available properties:
 
 -   *Extractor’s ODP Version*
 
--   *CDC Batch Size, MB*
+-   *CDC Batch Size, MB*: You can adjust the maximum package size that is used when replicating extractor data via ODP \(ODP contexts BW, ABAP\_CDS, SAPI\). The default value is 50 MB. The package size can impact performance and memory workload. For example, if the ODP source is very large and the CDC batch size is defined too small, this will result in too many small units being transferred, which impacts performance.
 
 -   *RFC Unicode*
 
 -   \[if *RFC Unicode* = *No*\] *RFC Character Encoding*
+
+-   *RFC Serialization* \(requires Data Provisioning Agent version 2.3.7.2 or higher\)
+
+-   *RFC Trace*
 
 -   *SNC Mode*
 
@@ -1131,13 +1135,11 @@ Available properties:
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
 
--   *RFC Serialization* \(requires Data Provisioning Agent version 2.3.7.2 or higher\)
+-   Properties that are only considered if *Streaming Read* is set to *On*in the *Remote Tables* section of the connection:
+    -   *Batch Size, MB*
 
--   \[if *Streaming Read* = *On*\] *Batch Size, MB*
+    -   *Batch Receive Timeout*
 
--   \[if *Streaming Read* = *On*\] *Batch Receive Timeout*
-
--   \[if *Streaming Read* = *On*\] *RFC Trace*
 
 
 For more information, see [SAP ABAP Adapter Remote Source Configuration](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/8575941eb7a344abadc21721418e28cb.html) in the*SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.

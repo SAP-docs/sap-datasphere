@@ -8,16 +8,89 @@ If you're interested in an asset, review its detailed information, which include
 
 
 
-The catalog search results provides high-level information about an asset, including as its name, data type, and a short summary. If you want to know more about an asset, select it to view its details page that provides many different types of information about it, including the following:
+The catalog search results provide high-level information about assets, such as their names, data types, and short summaries. To learn more about an asset, select it to view its details page. This page offers various types of information, including
 
--   Extracted metadata, like the asset name, properties, description, and impact and lineage diagram
+-   Extracted metadata: asset name, properties, description, and impact and lineage diagram.
+-   Data enrichments applied to the asset in the catalog: glossary terms, key performance indicators \(KPIs\), and tag relationships.
 
--   Data enrichments that were applied to the asset in the catalog, such as glossary term, key performance indicator \(KPI\), and tag relationships
-
-
-You can use the information provided to evaluate and make an assessment on whether the asset is the right one you need for your business task at hand. For example, if you're data modeler reviewing the details of an asset, you can review the asset's metadata, description, and other semantic enrichments to determine whether you should add it to your model. You can also view the impact and lineage diagram of that asset to see other assets it affects or is consumed by, as well as the data sources and transformations it underwent.
+Use this information to evaluate and assess whether the asset suits your business task. For example, if you're a data modeler reviewing an asset's details, you can examine its metadata, description, and other semantic enrichments to decide if it should be added to your model. You can also view the impact and lineage diagram to see other objects it affects or is consumed by, as well as the data sources and transformations it underwent.
 
 After reviewing the asset details, you can choose to view the asset in more details in its source system or use it in a new project \(see [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md)\).
+
+The following table provides a list of object types that you'll be able to find in the *Assets* collection of the catalog:
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+SAP Analytics Cloud
+
+</th>
+<th valign="top">
+
+BW Systems
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+-   Local Table
+-   Remote Table
+-   Graphical View
+-   SQL View
+-   Data Flow
+-   Intelligent Lookup
+-   Analytic Model
+-   Perspective
+
+
+
+</td>
+<td valign="top">
+
+-   Story
+-   Model
+-   Insight
+-   Predictive Scenario
+-   Data Action
+
+
+
+</td>
+<td valign="top">
+
+All BW systems:
+
+-   ADSO \(Advanced DataStore Object\)
+-   AREA \(InfoArea\)
+-   DTPA \(Data Transfer Process\)
+-   HCPR \(HANA CompositeProvider\)
+-   IOBJ \(InfoObject\)
+-   LSYS \(Source System\)
+-   RSDS \(DataSource\)
+-   TRCS \(InfoSource\)
+-   TRFN \(Transformation\)
+
+SAP BW∕4HANA only:
+
+-   ALVL \(Aggregation Level\)
+-   DEST \(Open Hub Destination\)
+-   DSUB \(Data Subscription\)
+-   ELEM \(BW Query\)
+-   FBPA \(Open ODS View\)
+
+
+
+</td>
+</tr>
+</table>
 
 
 
@@ -204,7 +277,12 @@ Opens a dialog, where you can edit the asset's name and summary description to i
 
 To view the asset's properties that have been extracted from the source system, select *Overview* \> *Source*.
 
-These properties are separated into the following groups: object properties and extraction system details. The properties that appear are different for each asset. The most common properties you'll see are described in this section. Additional sections for asset properties can appear as needed. For example, the Open Hub Destination \(DEST\) asset from an SAP BW∕4HANA system will have a property group called **Destination Properties**. For details on properties not described here, see the help documentation for the source system.
+These properties are separated into the following groups: object properties and extraction system details. The properties that appear vary for each asset. This section describes the most common properties you'll encounter. Additional sections for asset properties can appear as needed. For example, the Open Hub Destination \(DEST\) asset from an SAP BW∕4HANA system will have a property group called **Destination Properties**. For details on properties not described here, see the help documentation for the source system.
+
+-   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html)
+-   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)
+-   [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
+-   [SAP BW∕4HANA](https://help.sap.com/docs/SAP_BW4HANA/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
 
 Object properties for an asset can include the following:
 
@@ -353,8 +431,6 @@ You can see a preview of the detailed metadata about the asset by selecting *Ove
 > 
 >     -   For analytic models, only measures appear in this section.
 >     -   For any asset with measures, the aggregation type does not appear if it is an inherited aggregation type or a calculated measure.
-> 
->     For a list of supported object types, see [Connecting and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Users with a catalog administrator role can open the Metadata Extractions page to create connections from data sources to the catalog and then manage and monitor those data sources, allowing metadata for objects to be extracted and added to the catalog assets.") :arrow_upper_right:.
 
 ![](images/Catalog_Asset_Details_Tab_df97d1e.png)
 
@@ -439,13 +515,6 @@ Select which columns you want to show in the table.
 </td>
 </tr>
 </table>
-
-For more information on the properties and details that appear in the *Overview* tab, see the help documentation for the SAP source system and search for the object you want to know more about:
-
--   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html)
--   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)
--   [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
--   [SAP BW∕4HANA](https://help.sap.com/docs/SAP_BW4HANA/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
 
 
 
@@ -537,7 +606,7 @@ Select the *Open Impact and Lineage* button in the header to see a diagram for t
 ![](images/Impact_and_Lineage_Catalog_View_4c0c62d.png)
 
 > ### Tip:  
-> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Marketplace - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to public, private, and internal Data Marketplaces.") :arrow_upper_right:.
+> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:.
 
 This diagram provides the data analysis of the asset and contains the following features.
 

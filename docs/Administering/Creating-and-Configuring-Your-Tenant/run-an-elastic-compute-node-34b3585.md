@@ -10,6 +10,7 @@ This topic contains the following sections:
 -   [Introduction to Elastic Compute Node Run Process](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_crv_xpr_pbc)
 -   [Start an Elastic Compute Node Manually](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_syj_cwt_qzb)
 -   [Stop an Elastic Compute Node Manually](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_gzj_5lb_tzb)
+-   [Cancel the Start or Stop Process of an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_lbv_jgy_tgc)
 -   [Schedule an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_j5y_dwt_qzb)
 -   [Update an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_pwl_fst_qzb)
 -   [Monitor an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_wy2_xxg_tzb)
@@ -100,6 +101,36 @@ If the status of an elastic compute node is *Starting* or *Running*, you can sto
 2.  Click *Stop*.
 
     The status of the elastic compute node changes to *Stopping*.
+
+
+
+
+<a name="loio34b35852f2ff4888bda6b17e08f73ce3__section_lbv_jgy_tgc"/>
+
+## Cancel the Start or Stop Process of an Elastic Compute Node
+
+If the status of an elastic compute node is *Starting* or *Running*, you can cancel the start process.
+
+If the status of an elastic compute node is *Stopping*, you can cancel the stop process.
+
+1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\) and select the elastic compute node whose start or stop process you want to cancel.
+
+2.  Click *View Logs* in the right-hand area of the page.
+
+    The *Task Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node.
+
+3.  Do one of the following actions:
+
+    -   Select the running start or stop task chain that you want to cancel and click *Cancel Task*.
+    -   Click a link in the *Activity* column for the running start or stop task chain, which opens the *Run Details* page \(see [Navigating in the Monitor Tabs](https://help.sap.com/docs/datasphere/integrating-data-managing-spaces/5d4af7620a214872a4dc5286f5e9e997.html?locale=en-US&state=DRAFT&version=DEV) and [Monitoring Task Chains](https://help.sap.com/docs/datasphere/integrating-data-managing-spaces/4142201ec1aa49faad89a688a2f1852c.html?locale=en-US&state=DRAFT&version=DEV)\), and click the *Cancel Run* button.
+
+    The replication and routing tasks are canceled and their status changes to *Failed \(Canceled\)*. The data is rolled back and restored to the state that existed before the task run was initially triggered. Also, the status of the elastic compute node is reverted to the state that existed before the cancellation was triggered.
+
+    > ### Note:  
+    > When the start or stop process of an elastic compute node is canceled, the following processes are triggered to ensure reliability and consistency:
+    > 
+    > -   If you cancel a stop process, a start process is automatically triggered.
+    > -   If you cancel a start process, a stop process is automatically triggered.
 
 
 

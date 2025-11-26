@@ -106,7 +106,7 @@
     -   [Prepare Connectivity to SAP Signavio](Preparing-Connectivity/prepare-connectivity-to-sap-signavio-9bde771.md)
     -   [Prepare Connectivity to SAP SuccessFactors](Preparing-Connectivity/prepare-connectivity-to-sap-successfactors-c9b1915.md)
     -   [Prepare Connectivity to SAP S/4HANA Cloud](Preparing-Connectivity/prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md)
-        -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud](Preparing-Connectivity/using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-ef2b223.md)
+        -   [Using ABAP SQL Services for Accessing ABAP-Managed Data](Preparing-Connectivity/using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md)
     -   [Prepare Connectivity to SAP S/4HANA On-Premise](Preparing-Connectivity/prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md)
         -   [Create SAP S/4HANA Live Data Connection of Type Tunnel](Preparing-Connectivity/create-sap-s-4hana-live-data-connection-of-type-tunnel-095dbdf.md)
         -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](Preparing-Connectivity/using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md)

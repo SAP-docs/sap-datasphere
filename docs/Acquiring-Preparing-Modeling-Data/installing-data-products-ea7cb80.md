@@ -36,20 +36,20 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 ## Evaluating a Data Product
 
-Data products are high-quality, coherent data sets that you can use via APIs in various SAP or third-party products across different data regions to help you make better business decisions. A single data product can include business objects, entities, analytic data, and more. On the search page in the SAP Datasphere catalog, select the *Data Products* collection and then select one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formations.
+Data products are high-quality, coherent data sets accessible through APIs. You can use them in various SAP or third-party products across different data regions to make better business decisions. A single data product may include business objects, entities, analytic data, and more. On the catalog search page, select the *Data Products* collection, and then choose one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formation.
 
-To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you can review includes properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it \(see [Data Product Details](data-product-details-71f4d15.md)\).
+To determine if a data product meets your needs, you can view its details to evaluate its usefulness. You can review several pieces of information: the data product's properties, such as its name and the data provider, the list of entities within the data product, and links to resources on how to use it. For more information, see [Data Product Details](data-product-details-71f4d15.md).
 
-After you've evaluated and found a data product, you can install it in your space \(see steps below\).
+After you've evaluated and found a data product, you can install it to your space \(see steps below\).
 
 > ### Note:  
-> If you're an administrator for SAP Business Data Cloud, you can access the catalog from the SAP Business Data Cloud cockpit to share the data product to an SAP or partner system \(see [Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks) in the SAP Business Data Cloud documentation\).
+> If you're an administrator for SAP Business Data Cloud, you can access the catalog from the SAP Business Data Cloud cockpit. This allows you to share data product to an SAP or supported external system \(see [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products) in the SAP Business Data Cloud documentation\).
 
 <a name="dataproduct_installdspspace"/>
 
 <!-- dataproduct\_installdspspace -->
 
-## Installing a Data Product to an SAP Datasphere Space
+## Installing a Data Product to a Space
 
 
 
@@ -57,11 +57,7 @@ After you've evaluated and found a data product, you can install it in your spac
 
 ## Context
 
-Data products that have both an *Active* release status and *Current* functional status can be installed to an SAP Datasphere space by selecting the appropriate API. Data products with a release status of *Inactive* cannot be installed. Ask your administrator for help.
-
-The following diagram displays the flow for data products.
-
-![](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
+You can install data products that have both an *Active* release status and a *Current* functional status to a space in the SAP Datasphere system you're using. To do this, select the appropriate API. If a data product has an *Inactive* release status, you can't install it. In this case, ask your administrator for help.
 
 
 
@@ -115,7 +111,7 @@ The following diagram displays the flow for data products.
 
 ## Results
 
-The data product objects \(including any custom fields defined in the source system\) are created and deployed in the ingestion space and shared with your space.
+The data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. They are then shared with your space.
 
 -   Navigate to the objects in the *Repository Explorer* and review the data based on how you chose to access it.
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
@@ -125,6 +121,10 @@ The data product objects \(including any custom fields defined in the source sys
 
 > ### Tip:  
 > If entities in a data product are associated with entities in one or more other data products, those associations will only be visible if the related data products are installed.
+
+The following diagram shows the flow for data products.
+
+![](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
 
 <a name="concept_bm3_rhz_4gc"/>
 

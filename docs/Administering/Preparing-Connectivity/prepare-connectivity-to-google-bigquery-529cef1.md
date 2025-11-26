@@ -26,9 +26,9 @@ Before you can use the connection for remote tables, the following is required:
 
 <a name="loio529cef1eee6a45a69ae4e51951718900__prereq_df_GBQ"/>
 
-## Replication Flows
+## Data Flows and Replication Flows
 
-Before you can use the connection for replication flows, the following is required:
+Before you can use the connection for data flows and replication flows, the following is required:
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 

@@ -561,7 +561,7 @@ SLT Tables
 <tr>
 <td valign="top">
 
-ODP Tables
+ODP Data Sources \(SAPI or BW context\)
 
 </td>
 <td valign="top">
@@ -589,7 +589,7 @@ ODP Tables
 
 <a name="loio3f70579c92434f4f88471bba2bd70893__section_e51_fwd_dhc"/>
 
-## Replicating data from source objects without a primary key
+## Using Source Objects Without Primary Keys in Replication Flows
 
 If certain conditions are met, you can use objects that do not have a primary key as the source for a replication flow.
 
@@ -597,13 +597,13 @@ This applies to the following types of *source objects*:
 
 -   CDS views
 
--   ODP artifacts
+-   ODP data sources \(SAPI or BW context\)
 
 
 > ### Caution:  
 > If you are replicating source data from Microsoft SQL Server, you can't replicate objects without primary keys.
 
-The objects must have load type *Initial Only*. \(Delta loading is not supported.\)
+CDS view source objects must have load type *Initial Only*, and ODP data sources must have load type *Initial Only* or *Initial and Delta*.
 
 **Existing tables** can be used as **targets** if they have a column \_\_load\_package\_id \(as explained below\). **Local tables** can only be used as targets if delta capturing is **not** enabled.
 

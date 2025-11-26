@@ -389,9 +389,7 @@ Fiscal - Year
 </td>
 <td valign="top">
 
-A fiscal year number as a string following the logical pattern `YYYY` consisting of four digits.
-
-The string must match the regex pattern `[1-9][0-9]{3}`.
+A fiscal year number as a string consisting of four digits in the form `YYYY` .
 
 </td>
 </tr>
@@ -403,11 +401,7 @@ Fiscal - Period
 </td>
 <td valign="top">
 
-A fiscal period as a string following the logical pattern `PPP` consisting of three digits. This fiscal period usually is a quarter of a year.
-
-A fiscal period is covered by financial reports, for example, an annual report covers a fiscal period of one year, but a quarterly report includes accounting data for three months.
-
-The string must match the regex pattern `[0-9]{3}`.
+A fiscal period as a string consisting of three digits in the form `PPP`. The fiscal period can represent a quarter, a month, a week, a day, or any other portion of a fiscal year.
 
 </td>
 </tr>
@@ -419,9 +413,7 @@ Fiscal - Year Period
 </td>
 <td valign="top">
 
-A fiscal year and period as a string following the logical pattern `YYYYPPP` consisting of seven digits. The last three digits represent the fiscal period in the year.
-
-The string must match the regex pattern `([1-9][0-9]{3})([0-9]{3})`.
+A fiscal year and period as a string consisting of seven digits in the form `YYYYPPP`.
 
 </td>
 </tr>
@@ -433,7 +425,7 @@ Fiscal - Year Variant
 </td>
 <td valign="top">
 
-A fiscal year variant, which describes the number of periods in a fiscal year and how they match the calendar year.
+A fiscal year variant identifier, which is used to identify all periods in the given variant, typically consisting of two characters in the form `VV`.
 
 </td>
 </tr>
@@ -445,9 +437,7 @@ Fiscal - Quarter
 </td>
 <td valign="top">
 
-A fiscal quarter number as a string following the logical pattern `YYYY` consisting of four digits.
-
-The string must match the regex pattern `[1-9][0-9]{3}`.
+A fiscal quarter number as a string consisting of one digit in the form `Q`.
 
 </td>
 </tr>
@@ -459,9 +449,7 @@ Fiscal - Year Quarter
 </td>
 <td valign="top">
 
-A fiscal year quarter number as a string following the logical pattern `YYYY` consisting of four digits.
-
-The string must match the regex pattern `[1-9][0-9]{3}`.
+A fiscal year quarter number as a string consisting of five digits in the form `YYYYQ`.
 
 </td>
 </tr>
@@ -473,9 +461,7 @@ Fiscal - Year Week
 </td>
 <td valign="top">
 
-A fiscal year number as a string following the logical pattern `YYYY` consisting of four digits.
-
-The string must match the regex pattern `[1-9][0-9]{3}`.
+A fiscal year week number as a string consisting of six digits in the form `YYYYWW`.
 
 </td>
 </tr>

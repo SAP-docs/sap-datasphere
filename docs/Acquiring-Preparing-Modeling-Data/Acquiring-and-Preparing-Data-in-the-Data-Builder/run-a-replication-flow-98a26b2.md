@@ -14,3 +14,6 @@ To run your flow, you can:
 
 Once completed, the *Run Status* section in the property panel is updated. From the *Flows* monitor, you can check details of your runs, and perform other actions on your flows. For more information, see [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:. 
 
+> ### Note:  
+> If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
+

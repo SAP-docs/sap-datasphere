@@ -222,7 +222,7 @@ Create a connection to allow users assigned to a space to use the connected sour
     
     Displays the name used in scripts and code, synchronized by default with the *Business Name*.
 
-    The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name. The maximum length is 40 characters. The name must be unique within the space.
+    The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name. The name must be unique within the space.
 
     > ### Note:  
     > Once the object is saved, the technical name can no longer be modified.
