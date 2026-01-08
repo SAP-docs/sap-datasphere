@@ -9,12 +9,13 @@ Use a *Generic OData* connection to access data from an OData service.
 
 This topic contains the following sections:
 
--   -   [Supported Features](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_usage)
+-   [Prerequisites](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_prerequisites_old)
+-   [Supported Features](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_usage)
 -   [Configuring Connection Properties](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_connection_properties)
 
 
 
-<a name="loio5d36f1aae68a4e59989c424a66d948c9__section_j1b_byq_spb"/>
+<a name="loio5d36f1aae68a4e59989c424a66d948c9__Odata_prerequisites_old"/>
 
 ## Prerequisites
 
@@ -118,6 +119,20 @@ Enter the OData service provider URL.
 <td valign="top">
 
 Select the OData version used to implement the OData service \(*V2* or *V4*\). 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Timeout \(sec\)*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the HTTP connection timeout, in seconds. This property only affects remote tables.
+
+The default is 900 \(15 minutes\).
 
 </td>
 </tr>
@@ -327,13 +342,14 @@ Enter the API endpoint to use to request an access token.
 
 You can select:
 
--   *URL Encoded* \(default value\)
+-   *URL Encoded* \(application/x-www-form-urlencoded\) \(default value\)
 
-    OAuth2 token request parameters will be url-encoded and included in the HTTP request body.
+-   *JSON* \(application/json\)
 
--   *JSON*
+-   *Form Data* \(multipart/form-data\)
 
-    OAuth2 token request parameters will be in JSON format and included in the HTTP request body.
+    > ### Note:  
+    > *Form Data* is not supported for data flows. Selecting the value disables data flows.
 
 
 
@@ -472,7 +488,12 @@ Description
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section. 
+*Data Flows* are enabled without the need to set any additional connection properties.If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> When you select *Form Data* as *OAuth Token Request Content Type*, data flows are disabled.
+
+
 
 </td>
 </tr>
@@ -480,7 +501,29 @@ Description
 
 
 
-## Enter Custom HTTP Headers
+## Advanced Connection Properties
+
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Enter Custom HTTP Headers*
+
+</td>
+<td valign="top">
 
 Different OData services support different sets of custom headers to pass parameters to the service when using the connection. You can specify one or more custom HTTP headers to add them to the OData request.
 
@@ -488,4 +531,29 @@ Click *Add* to add name and value for a custom HTTP header field.
 
 > ### Note:  
 > -   Security-relevant headers such as "authorization" are not allowed.
+> 
+> -   Setting a Content-Type custom header is not considered in the OData request, instead the content type you selected in the *OAuth Token Request Content Type* property is used.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Support Format Query*
+
+</td>
+<td valign="top">
+
+If the option is enabled \(default\), `$format=json` is appended to return the data in JSON format. If it is not enabled, no format query is appended and the data is returned depending on the implementation of the OData service.
+
+> ### Note:  
+> This option applies to remote tables only.
+
+
+
+</td>
+</tr>
+</table>
 

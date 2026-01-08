@@ -4,12 +4,12 @@
 
 To connect to remote systems, applications, databases, or storages, SAP Datasphere provides different connection types.
 
-The following connection types are available with SAP Datasphere.
+The following connection types are available with SAP Datasphere, each connection type supporting different sets of features.
 
 > ### Note:  
 > Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
 > 
-> Spaces with storage type *SAP HANA Data Lake Files* \(file spaces\) provide a subset of connection types \(see column *Available in File Spaces* below\). In file spaces, the connection types only support replication flows. Remote tables, data flows, and model import are not supported in file spaces.
+> Spaces with storage type *SAP HANA Data Lake Files* \(file spaces\) provide a subset of connection types \(see column *Available in File Spaces* below\). In file spaces, the connection types only support replication flows.
 
 ****
 
@@ -28,14 +28,17 @@ Supported in File Spaces
 </th>
 <th valign="top">
 
-Remote Tables
-
-\(remote access and snapshot or scheduled replication\)
+Replication Flows \(Source\)
 
 </th>
 <th valign="top">
 
-Replication Flows
+Replication Flows \(Target\)
+
+</th>
+<th valign="top">
+
+Remote Tables
 
 </th>
 <th valign="top">
@@ -45,7 +48,7 @@ Data Flows
 </th>
 <th valign="top">
 
-Model Import
+Others
 
 </th>
 <th valign="top">
@@ -72,11 +75,6 @@ no
 </td>
 <td valign="top">
 
-\*
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -88,6 +86,16 @@ no
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+data push via Open SQL schema
 
 </td>
 <td valign="top">
@@ -114,12 +122,17 @@ no
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -156,12 +169,17 @@ no
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -198,12 +216,17 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -245,7 +268,12 @@ no
 </td>
 <td valign="top">
 
-yes \(target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -274,7 +302,15 @@ Non SAP
 
 [Business Data Product Connections](business-data-product-connections-5661d88.md)
 
-\[created when installing an SAP Business Data Cloud data product from the connected system for the first time and only available within an SAP-managed ingestion space\]
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -284,24 +320,17 @@ no
 </td>
 <td valign="top">
 
-not applicable
+yes
 
 </td>
 <td valign="top">
 
-not applicable
-
-\(replication flows are created and deployed via the data product installation\)
+no
 
 </td>
 <td valign="top">
 
-not applicable
-
-</td>
-<td valign="top">
-
-not applicable
+no
 
 </td>
 <td valign="top">
@@ -328,12 +357,17 @@ no
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -370,12 +404,17 @@ yes
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -404,8 +443,6 @@ Non SAP
 
 [Generic HTTP Connections](generic-http-connections-b79b865.md)
 
-\[enables API tasks in task chains\]
-
 </td>
 <td valign="top">
 
@@ -430,6 +467,11 @@ no
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+API tasks
 
 </td>
 <td valign="top">
@@ -456,12 +498,17 @@ no
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -498,12 +545,17 @@ no
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -540,12 +592,17 @@ yes
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -582,12 +639,17 @@ yes
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
 <td valign="top">
 
-yes \(target\)
+yes
 
 </td>
 <td valign="top">
@@ -624,12 +686,17 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -657,6 +724,11 @@ Non SAP
 <td valign="top">
 
 [Hadoop Distributed File System Connections](hadoop-distributed-file-system-connections-f9c3356.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -718,6 +790,11 @@ no
 </td>
 <td valign="top">
 
+no
+
+</td>
+<td valign="top">
+
 yes
 
 </td>
@@ -750,12 +827,17 @@ no
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -792,12 +874,17 @@ yes
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+yes
 
 </td>
 <td valign="top">
 
-yes \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -834,12 +921,17 @@ no
 </td>
 <td valign="top">
 
+yes
+
+</td>
+<td valign="top">
+
 no
 
 </td>
 <td valign="top">
 
-yes \(source\)
+no
 
 </td>
 <td valign="top">
@@ -876,12 +968,17 @@ yes
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+yes
 
 </td>
 <td valign="top">
 
-yes \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -909,6 +1006,11 @@ Non SAP
 <td valign="top">
 
 [Open Connectors Connections](open-connectors-connections-9bfe7db.md)
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -960,12 +1062,17 @@ no
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1002,11 +1109,6 @@ no
 </td>
 <td valign="top">
 
-\*
-
-</td>
-<td valign="top">
-
 no
 
 </td>
@@ -1018,6 +1120,16 @@ no
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+data push via Open SQL schema
 
 </td>
 <td valign="top">
@@ -1044,12 +1156,17 @@ yes
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+yes
 
 </td>
 <td valign="top">
 
-yes \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1086,12 +1203,17 @@ no
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+via [SAP ABAP Connections](sap-abap-connections-a75c1aa.md)
 
 </td>
 <td valign="top">
 
-via connection type [SAP ABAP Connections](sap-abap-connections-a75c1aa.md) \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1120,7 +1242,15 @@ SAP
 
 [SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "You can use SAP BW bridge to model objects and import them into SAP Datasphere.") :arrow_upper_right:
 
-\[generated and only available within an SAP BW bridge space if SAP BW bridge has been provisioned\]
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -1140,12 +1270,7 @@ no
 </td>
 <td valign="top">
 
-no
-
-</td>
-<td valign="top">
-
-yes
+model import
 
 </td>
 <td valign="top">
@@ -1187,7 +1312,12 @@ no
 </td>
 <td valign="top">
 
-yes
+no
+
+</td>
+<td valign="top">
+
+model import
 
 </td>
 <td valign="top">
@@ -1214,12 +1344,17 @@ no
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+via [SAP ABAP Connections](sap-abap-connections-a75c1aa.md)
 
 </td>
 <td valign="top">
 
-via connection type [SAP ABAP Connections](sap-abap-connections-a75c1aa.md) \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1256,12 +1391,17 @@ no
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1298,12 +1438,17 @@ yes
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1340,12 +1485,17 @@ yes
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-yes \(source and target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -1382,12 +1532,17 @@ no
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -1424,12 +1579,17 @@ no
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1471,7 +1631,12 @@ no
 </td>
 <td valign="top">
 
-yes \(target\)
+yes
+
+</td>
+<td valign="top">
+
+no
 
 </td>
 <td valign="top">
@@ -1508,12 +1673,17 @@ no
 </td>
 <td valign="top">
 
-yes
+no
 
 </td>
 <td valign="top">
 
 no
+
+</td>
+<td valign="top">
+
+yes
 
 </td>
 <td valign="top">
@@ -1550,12 +1720,17 @@ yes
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+yes
 
 </td>
 <td valign="top">
 
-yes \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1565,7 +1740,7 @@ yes
 </td>
 <td valign="top">
 
-yes
+model import
 
 </td>
 <td valign="top">
@@ -1592,12 +1767,17 @@ yes
 </td>
 <td valign="top">
 
-yes \(including real-time replication\*\*\)
+yes
 
 </td>
 <td valign="top">
 
-yes \(source\)
+no
+
+</td>
+<td valign="top">
+
+yes \(real-time support\)
 
 </td>
 <td valign="top">
@@ -1607,7 +1787,7 @@ yes
 </td>
 <td valign="top">
 
-yes
+model import
 
 </td>
 <td valign="top">
@@ -1623,9 +1803,8 @@ SAP
 </tr>
 </table>
 
-\*Data is pushed into the SAP Datasphere space by using the database user \(Open SQL schema\) SQL Interface. Typically, the push action is triggered from the partner tool. When data is pushed by the source, you can import a table from the *Sources* tab of the *Source Browser* panel in the Data Builder which is then deployed as local table \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
-
-\*\* For more information about any constraints for using real-time replication, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
-
-\*\*\*Connections marked as "On-Premise" can be used to connect to sources located in the cloud, too. Note that in order to connect to a cloud-based SAP ABAP or Microsoft SQL Server, for example, you have to connect through the on-premise installed SAP HANA smart data integration Data Provisioning Agent.
+> ### Note:  
+> -   For connections supporting real-time replication with remote tables: For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+> -   For [Adverity Connections](adverity-connections-63e9ff5.md) and [Precog Connections](precog-connections-6e5f225.md): Data is pushed into the SAP Datasphere space by using the database user \(Open SQL schema\) SQL Interface. Typically, the push action is triggered from the partner tool. When data is pushed by the source, you can import a table from the *Sources* tab of the *Source Browser* panel in the Data Builder which is then deployed as local table \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
+> -   Connections marked as "On-Premise" can be used to connect to sources located in the cloud, too. Note that in order to connect to a cloud-based SAP ABAP or Microsoft SQL Server, for example, you have to connect through the on-premise installed SAP HANA smart data integration Data Provisioning Agent.
 

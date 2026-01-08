@@ -229,8 +229,12 @@ Before you can use the connection to import entities with data access *Remote Ta
         
     -   Authorizations for remote table access via ODP
 
+    -   Authorization to access CVERS \(ABAPTABLES.CVERS\) - to read the backend software release version
 
--   An adminstrator has checked that the required InA services are active in transaction code SICF:
+    -   Authorization to access ESH\_CSN\_CDSCSN \(ABAPTABLES.ESH\_CSN\_CSDCSN\)
+
+
+-   An administrator has checked that the required InA services are active in transaction code SICF:
 
     -   /sap/bw/ina/GetCatalog
     -   /sap/bw/ina/GetResponse

@@ -86,7 +86,7 @@ SAP Datasphere is using two types of adapters to connect to remote tables:
 
             Change how the schedule is specified, or change the owner of the schedule.
 
-            For more information, see [Modify the Owner of a Schedule](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.") :arrow_upper_right:.
+            For more information, see [Modify the Owner of a Schedule](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4b660c0395454bd0923f732eef4ee4b2.html "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to a business user or a technical user.") :arrow_upper_right:.
 
         -   *Delete Schedule*
 

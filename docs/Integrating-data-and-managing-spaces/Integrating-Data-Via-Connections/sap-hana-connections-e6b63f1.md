@@ -10,11 +10,18 @@ Use an *SAP HANA* connection to access data from a remote SAP HANA database \(on
 
 This topic contains the following sections:
 
+-   [Prerequisites](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites_old)
 -   [Supported Features](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_usage)
 -   [Configuring Connection Properties \(SAP HANA Cloud\)](sap-hana-connections-e6b63f1.md#loio27aebc8432aa419da75c5fc650981f24)
 -   [Configuring Connection Properties \(SAP HANA on-premise\)](sap-hana-connections-e6b63f1.md#loio77cec6a1e8d04371a791658e641dc0d5)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -935,7 +942,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 
 ## Advanced Connection Properties \(SAP HANA on-premise\)
 
-When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties button*. Advanced properties have default values that you can override according to your customer scenario’s needs.
+When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties* button. Advanced properties have default values that you can override according to your customer scenario’s needs.
 
 Available properties:
 

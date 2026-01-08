@@ -306,7 +306,7 @@ To add users to a scoped role, the users must be created beforehand.
 
 
 > ### Restriction:  
-> A user can be assigned to a maximum of 100 spaces across all scoped roles.
+> A user can be assigned to a maximum of 100 spaces across all scoped roles. Removal of this restriction is possible through a controlled release. For more information, see the [Customer Influence](https://influence.sap.com/sap/ino/#/campaign/4078/) page.
 
 Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 

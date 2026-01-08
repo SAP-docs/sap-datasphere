@@ -205,7 +205,7 @@ In addition to working with flows in the editor, you can also:
     > -   In the *Graphical View Editor*, input parameters can only be used. They cannot be created, edited, or deleted.
     > -   A scheduled transformation flow uses the default value of the input parameter.
     > -   Input parameters defined in transformation flows can be used in operators within the transformation flow, except for the *Python* operation in *Apache Spark* runtime.
-    > -   A transformation flow executed as part of a task chain receives input parameters from the task chain. See [Creating Input Parameters in Task Chains](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-input-parameters-in-task-chains-c9906ec.md).
+    > -   A transformation flow executed as part of a task chain receives input parameters from the task chain. See [Create Input Parameters in Task Chains](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-input-parameters-in-task-chains-c9906ec.md).
 
 5.  Click <span class="FPA-icons-V3"></span> \(Save\). A dialog box appears. Enter a business name and a technical name for your transformation flow.
 

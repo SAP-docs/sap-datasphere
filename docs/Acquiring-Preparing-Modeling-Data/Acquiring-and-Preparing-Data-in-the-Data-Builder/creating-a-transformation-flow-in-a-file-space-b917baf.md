@@ -43,6 +43,9 @@ You want to model transformation flows with local tables \(file\), shared local 
 > -   You can only create a graphical view transform.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
 > -   If your source is a shared table with *Delta Capture* enabled, you can change its load type \(*All Active Records* or *Delta Capture*\) in its settings panel.
+> -   When you use HANA tables as sources in an embedded object store space, all data from the table is exported during initial loads. If you define a filter immediately after defining the table, the filter condition is applied while reading from the table. The system copies the data into the object store using HANA export as part of the transformation flow run before further processing operators.
+> 
+>     If you encounter resource limit errors due to a HANA export failure, you can either increase the statement memory limit or reduce the number of threads in the source space.
 
 
 
@@ -187,7 +190,7 @@ You want to model transformation flows with local tables \(file\), shared local 
 
     -   Simulate a run that doesn't save changes in the target table by clicking *Simulate Run*. Simulating allows you to test a transformation flow and see if you get the desired outcome. Based on the result, you can decide to deploy the flow, resolve errors, or to optimize the flow to improve performances.
     -   Download a PLV file of a visual map of the operators and their relationships and hierarchies by clicking *Generate a SQL Analyzer Plan File*. The plan file contains detailed information about your data model that you can download for further analysis. Analyzing this file allows you to resolve errors and enhance the transformation flow performances.
-    -   See your change details. If you experience a *Failed Resource Limit Error*, you must either increase the statement memory limit or reduce the number of threads. See [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
+    -   See your change details. If you experience a *Failed Resource Limit Error*, you must either increase the statement memory limit or reduce the number of threads in the source space. See [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
 
     For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
 

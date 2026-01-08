@@ -16,6 +16,8 @@ Before you can use the connection for data flows and replication flows, the foll
 
 ### Expected Format for Host Key
 
+The SSH host key serves as the SFTP server's identity towards the connecting client. Note that the host key is different from the private/public key pair used to authenticate a user to the server.
+
 The expected format of the file provided in the host key is one or more lines, each composed of the following elements:
 
 `<server host key algorithm> <SHA-256 fingerprint> <optional-comment>`

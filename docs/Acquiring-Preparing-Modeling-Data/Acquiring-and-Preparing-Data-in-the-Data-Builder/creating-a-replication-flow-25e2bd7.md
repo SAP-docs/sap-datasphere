@@ -39,9 +39,12 @@ You can use replication flows to copy data from the following source objects:
 -   Tables that have a primary key.
 
 
-CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md)
+CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md).
 
-For more information about available connection types, sources, and targets, see [Connection Types Supporting Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rf=yes%20(source)&connection_overview-rf=yes%20(target)&connection_overview-rf=yes%20(source%20and%20target)&connection_overview-rf=via%20connection%20type%20SAP%20ABAP%20Connections%20(source)).
+For more information about connection types that can be used for adding sources or targets to replication flows, see:
+
+-   [Source Connection Types for Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rfs=yes&connection_overview-rfs=via%20SAP%20ABAP%20Connections)
+-   [Target Connection Types for Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rft=yes)
 
 > ### Note:  
 > To make sure that you have the most up-to-date information and important considerations regarding replication flows, please read SAP Note [3297105](https://me.sap.com/notes/3297105) **before** you start creating a replication flow.

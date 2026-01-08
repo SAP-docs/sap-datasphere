@@ -9,12 +9,13 @@ Use an *Amazon Athena* connection to access data from Amazon Athena, an interact
 
 This topic contains the following sections:
 
--   -   [Supported Features](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_usage)
+-   [Prerequisites](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_prerequisites_old)
+-   [Supported Features](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_usage)
 -   [Configuring Connection Properties](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_connection_properties)
 
 
 
-<a name="loio1b21cd00fa9842f5ba747047b80fe3ab__section_j1b_byq_spb"/>
+<a name="loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_prerequisites_old"/>
 
 ## Prerequisites
 

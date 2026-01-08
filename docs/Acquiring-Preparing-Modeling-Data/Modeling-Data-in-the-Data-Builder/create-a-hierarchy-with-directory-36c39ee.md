@@ -14,7 +14,7 @@ For more information and walkthroughs, see also:
 This topic contains the following sections:
 
 -   [Example: SAP S/4HANA Cloud General Ledger Account Hierarchy](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_example)
--   [Prepare the Leaf Node and Other Hierarchy Node Dimensions and Text Entities](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_dimension)
+-   [Prepare the Data Node and Other Hierarchy Node Dimensions and Text Entities](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_dimension)
 -   [Prepare the Hierarchy Directory Entity and Text Entities](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_directory)
 -   [Prepare the Hierarchy Entity](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_hierarchy)
 -   [Use a Hierarchy in an Analytic Model](create-a-hierarchy-with-directory-36c39ee.md#loio36c39eee184c485a80ebce9d0fec49ec__section_use_am)
@@ -52,17 +52,17 @@ Our example is created from entities imported from an SAP S/4HANA Cloud system a
 
 <a name="loio36c39eee184c485a80ebce9d0fec49ec__section_dimension"/>
 
-## Prepare the Leaf Node and Other Hierarchy Node Dimensions and Text Entities
+## Prepare the Data Node and Other Hierarchy Node Dimensions and Text Entities
 
-You must identify a leaf node dimension, which is the dimension that contains the lowest nodes \(leaf nodes\) in the hierarchy, along with any other dimensions that contribute nodes to the hierarchy. Each dimension will generally be associated with one or more text entities to provide translation of the node names.
+You must identify a data node dimension, which is the dimension that contains the lowest nodes \(data nodes\) in the hierarchy, along with any other dimensions that contribute nodes to the hierarchy. Each dimension will generally be associated with one or more text entities to provide translation of the node names.
 
-In our example, `GLAccountInChartOfAccounts` is the leaf node dimension and `GLAccountGroups` is another dimension providing non-leaf nodes, and each has an association to an appropriate text entity:
+In our example, `GLAccountInChartOfAccounts` is the data node dimension and `GLAccountGroups` is another dimension providing non-data nodes, and each has an association to an appropriate text entity:
 
 ![](images/Hierarchy_with_Directory_-_Dimensions_4551af4.png)
 
-1.  Open your leaf node dimension and set the semantic usage to *Dimension*.
+1.  Open your data node dimension and set the semantic usage to *Dimension*.
 
-    Your leaf node dimension must have a key and will contain records of members that are related in one or more parent-child hierarchies.
+    Your data node dimension must have a key and will contain records of members that are related in one or more parent-child hierarchies.
 
     For more information about dimensions, see [Create a Dimension to Categorize Data](create-a-dimension-to-categorize-data-5aae0e9.md).
 
@@ -73,7 +73,7 @@ In our example, `GLAccountInChartOfAccounts` is the leaf node dimension and `GLA
 
 4.  \[optional\] If your hierarchy contains other node types, ensure that each dimension containing one of these node types is available in your space, has its semantic usage set to *Dimension*, and has text associations to appropriate text entities.
 
-    In our example, `GLAccountGroups` is a dimension containing GL Account grouping nodes, which is a non-leaf node type in our hierarchy.
+    In our example, `GLAccountGroups` is a dimension containing GL Account grouping nodes, which is a non-data node type in our hierarchy.
 
 
 
@@ -129,7 +129,7 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
 
     In our example, the `HierarchyName` column in the hierarchy entity `I_GLAccountHierarchyNode`, is mapped to the primary key column in the directory entity, `I_GLAccountHierarchy`.
 
-4.  \[if multiple types of hierarchy nodes are specified\] Create an association from the hierarchy entity to each \(non-leaf\) dimension containing nodes that are used in the hierarchies, and map the appropriate node type values columns identified in the hierarchy entity to the key columns in the dimensions.
+4.  \[if multiple types of hierarchy nodes are specified\] Create an association from the hierarchy entity to each \(non-data\) dimension containing nodes that are used in the hierarchies, and map the appropriate node type values columns identified in the hierarchy entity to the key columns in the dimensions.
 
     In our example, the columns, `GLAccountHierarchy` and `HierarchyNode` in the hierarchy entity `I_GLAccountHierarchyNode`, are mapped to the key columns in the `GLAccountGroups` dimension.
 
@@ -209,6 +209,23 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
     <tr>
     <td valign="top">
     
+    Display Dimension Keys as Node Keys
+    
+    </td>
+    <td valign="top">
+    
+    Select to display the dimension key values \(which are often more informative than the hierarchy node keys\), when drilling down into your hierarchy in an analytic model and in SAP Analytics Cloud.
+
+    > ### Note:  
+    > After enabling this option, you must redeploy any analytic models that consume it in order to see the dimension keys.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Node Type Column
     
     </td>
@@ -237,12 +254,12 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
         -   `GLAccount` is used to identify that the node is from the `GLAccountInChartOfAccounts` dimension.
         -   `HierarchyNode` is used to identify that the node is from the `GLAccountGroups` dimension.
 
-    -   *Set as Leaf* - Select this option if this type of node is at the lowest level of the hierarchy.
+    -   *Set as Data Node* - Select this option if this type of node is at the lowest level of the hierarchy.
 
         > ### Note:  
-        > Only one node type can be identified as the leaf, and all the hierarchies defined in the entity must have the same leaf type.
+        > Only one node type can be identified as the data node, and all the hierarchies defined in the entity must have the same data node type.
 
-        In our example, `GLAccount` is the leaf node type.
+        In our example, `GLAccount` is the data node type.
 
     -   *Column 1*- Select the column that contains the identifiers of nodes of this type. If more than one column is used, click the *Add Column* button to add and specify each required column.
 
@@ -270,14 +287,14 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
 
 ## Use a Hierarchy in an Analytic Model
 
-If your leaf dimension is included in an analytic model, you can enable any of your defined hierarchies in the analytic preview:
+If your data dimension is included in an analytic model, you can enable any of your defined hierarchies in the analytic preview:
 
 1.  Open your analytic model and click *Preview* to open the analytic preview.
-2.  In the *Available Objects* panel, enable your leaf node column as a row.
+2.  In the *Available Objects* panel, enable your data node column as a row.
 
     No hierarchy is enabled by default.
 
-3.  In the *Builder* panel *Rows* section, hover over your leaf node column and then click *More* \> *Hierarchy* \> *Select Hierarchy*.
+3.  In the *Builder* panel *Rows* section, hover over your data node column and then click *More* \> *Hierarchy* \> *Select Hierarchy*.
 4.  In the *Select Hierarchy* dialog, select your hierarchy and click *OK*
 
     The hierarchy is shown collapsed and you can drill down into it as appropriate.

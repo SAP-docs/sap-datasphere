@@ -14,20 +14,6 @@ This topic contains the following sections:
 
 
 
-<a name="loio99ad61e1b63a44de8572a49c6f374e8a__section_w1d_csy_ffc"/>
-
-## Prerequisites
-
-To create and manage elastic compute nodes, you must have the following privileges:
-
--   *Spaces* \(C------M\) - To create, manage and run an elastic compute node
--   *Space Files* \(-------M\) - To add spaces and objects to an elastic compute node
--   *System Information* \(--U-----\) - To access tenant settings needed to manage elastic compute nodes
-
-The *DW Administrator* global role, for example, grants these privileges \(see [Roles and Privileges by App and Feature](../Managing-Users-and-Roles/roles-and-privileges-by-app-and-feature-2d8b7d0.md)\).
-
-
-
 <a name="loio99ad61e1b63a44de8572a49c6f374e8a__section_wyd_q1t_qzb"/>
 
 ## Introduction to Elastic Compute Nodes

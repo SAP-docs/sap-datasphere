@@ -10,10 +10,17 @@ Use the connection to connect to and access data from Google BigQuery.
 
 This topic contains the following sections:
 
--   -   [Supported Features](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_usage)
+-   [Prerequisites](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_prerequisites_old)
+-   [Supported Features](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_usage)
 -   [Configuring Connection Properties](google-bigquery-connections-30ed77d.md#loio30ed77de13864368bdc596099b37ed70__GBQ_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/529cef1eee6a45a69ae4e51951718900.html "To be able to successfully validate and use a connection to a Google BigQuery data source for remote tables, certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loio30ed77de13864368bdc596099b37ed70__GBQ_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to Google BigQuery](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/529cef1eee6a45a69ae4e51951718900.html "To be able to successfully validate and use a connection to a Google BigQuery data source for remote tables, certain preparations have to be made.") :arrow_upper_right:
 
 
 

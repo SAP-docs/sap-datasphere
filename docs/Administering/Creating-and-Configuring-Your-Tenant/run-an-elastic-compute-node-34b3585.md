@@ -6,7 +6,6 @@ Once you've created an elastic compute node and added spaces and objects to it, 
 
 This topic contains the following sections:
 
--   [Prerequisites](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_ayq_zg1_xgc)
 -   [Introduction to Elastic Compute Node Run Process](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_crv_xpr_pbc)
 -   [Start an Elastic Compute Node Manually](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_syj_cwt_qzb)
 -   [Stop an Elastic Compute Node Manually](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_gzj_5lb_tzb)
@@ -14,20 +13,6 @@ This topic contains the following sections:
 -   [Schedule an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_j5y_dwt_qzb)
 -   [Update an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_pwl_fst_qzb)
 -   [Monitor an Elastic Compute Node](run-an-elastic-compute-node-34b3585.md#loio34b35852f2ff4888bda6b17e08f73ce3__section_wy2_xxg_tzb)
-
-
-
-<a name="loio34b35852f2ff4888bda6b17e08f73ce3__section_ayq_zg1_xgc"/>
-
-## Prerequisites
-
-To create and manage elastic compute nodes, you must have a global role that grants you the following privileges:
-
--   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Spaces* \(`C------M`\) - To create, manage and run elastic compute nodes.
--   *System Information* \(`-RU-----`\) - To access the tenant settings needed to manage elastic compute nodes.
-
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 

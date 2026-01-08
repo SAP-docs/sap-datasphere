@@ -32,22 +32,29 @@ For more information about the corresponding connection types, see [Integrating 
 
 ## Prerequisites
 
-All objects in your replication flow have load type *Initial Only*.
+-   All objects in your replication flow have load type *Initial Only*.
 
-The data you want to replicate is stored in CSV files, and one of the following delimiters is used:
+-   All objects must have one of the following formats:
 
--   Comma \(,\)
+    -   CSV files, with one of the following delimiters:
 
--   Semicolon \(;\)
+        -   Comma \(,\)
 
--   Colon \(:\)
+        -   Semicolon \(;\)
 
--   Vertical slash \(|\)
+        -   Colon \(:\)
 
--   Horizontal tabulator \(also known as tab or \\t\)
+        -   Vertical slash \(|\)
+
+        -   Horizontal tabulator \(also known as tab or \\t\)
 
 
-The CSV files are located in a folder, which serves as the source container for your replication flow. All files have the same schema.
+    -   Parquet files
+
+        > ### Restriction:  
+        > Parquet files are only supported by Microsoft Azure Data Lake Gen2, Google Cloud Storage and Amazon Simple Storage Service.
+
+
 
 
 
@@ -192,6 +199,18 @@ You have the following files:
 
 -   /datasetFolder/subfolder1/subfolder2/test5.csv
 
+-   /datasetFolderB/example.parquet
+
+-   /datasetFolderB/test1.parquet
+
+-   /datasetFolderB/test2.parquet
+
+-   /datasetFolderB/test3.parquet
+
+-   /datasetFolderB/subfolder1/test4.parquet
+
+-   /datasetFolderB/subfolder1/subfolder2/test5.parquet
+
 
 Example 1:
 
@@ -220,5 +239,57 @@ If *Include Subfolders* is disabled, the result is as follows, even if the globa
 -   /datasetFolder/test1.csv
 
 -   /datasetFolder/test2.csv
+
+
+Example 3:
+
+You define a global pattern as “test\*.parquet”. The result is that only the matching files from the dataset folder are picked up \(regardless of whether the configuration property **Include Subfolders** is enabled or disabled\):
+
+-   /datasetFolderB/test1.parquet
+
+-   /datasetFolderB/test2.parquet
+
+
+If you enable **Include Subfolders,** then the result looks like this:
+
+-   /datasetFolderB/test1.parquet
+
+-   /datasetFolderB/test2.parquet
+
+-   /datasetFolderB/subfolder1/test4.parquet
+
+-   /datasetFolderB/subfolder1/subfolder2/test5.parquet
+
+
+Example 4:
+
+You define 2 global patterns as “test\*.csv” and “test\*.parquet”. The result is that only the matching files from the dataset folder are picked up \(regardless of whether the configuration property **Include Subfolders** is enabled or disabled\):
+
+-   /datasetFolder/test1.csv
+
+-   /datasetFolder/test2.csv
+
+-   /datasetFolderB/test1.parquet
+
+-   /datasetFolderB/test2.parquet
+
+
+If you enable **Include Subfolders**. Then the result looks like this:
+
+-   /datasetFolder/test1.csv
+
+-   /datasetFolder/test2.csv
+
+-   /datasetFolder/subfolder1/test4.csv
+
+-   /datasetFolder/subfolder1/subfolder2/test5.csv
+
+-   /datasetFolderB/test1.parquet
+
+-   /datasetFolderB/test2.parquet
+
+-   /datasetFolderB/subfolder1/test4.parquet
+
+-   /datasetFolderB/subfolder1/subfolder2/test5.parquet
 
 

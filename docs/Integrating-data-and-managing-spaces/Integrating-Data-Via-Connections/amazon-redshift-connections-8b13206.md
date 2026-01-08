@@ -9,12 +9,13 @@ Use an *Amazon Redshift* connection to access data from Amazon Redshift 8.x data
 
 This topic contains the following sections:
 
--   -   [Supported Features](amazon-redshift-connections-8b13206.md#loio8b132061d4e149d9a16b3576dda1f613__Redshift_usage)
+-   [Prerequisites](amazon-redshift-connections-8b13206.md#loio8b132061d4e149d9a16b3576dda1f613__Redshift_prerequisites_old)
+-   [Supported Features](amazon-redshift-connections-8b13206.md#loio8b132061d4e149d9a16b3576dda1f613__Redshift_usage)
 -   [Configuring Connection Properties](amazon-redshift-connections-8b13206.md#loio8b132061d4e149d9a16b3576dda1f613__Redshift_connection_properties)
 
 
 
-<a name="loio8b132061d4e149d9a16b3576dda1f613__section_j1b_byq_spb"/>
+<a name="loio8b132061d4e149d9a16b3576dda1f613__Redshift_prerequisites_old"/>
 
 ## Prerequisites
 

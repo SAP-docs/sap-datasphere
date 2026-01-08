@@ -18,6 +18,9 @@ You can change the run mode of your data persistence and choose between performa
 -   *Memory-Optimized*: The mode uses an enhancement of the SAP HANA Execution Engine, which stores intermediate results of SQL statements on the disk. Memory consumption of SQL statements is then lower because intermediate results are not stored in-memory but are saved on the disk. It results in slower runtime, though. For example, you can use it when you get an out of memory error while running the task, as alternative to manual partitioning. 
 
     > ### Note:  
-    > You must ensure that you have sufficient disk space available. If not, it can result with an error of type "Disk Full". You can monitor your disk space using the SAP HANA Cockpit. For more information, see [Disk Usage: Monitor Disk Volume](https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/5c947a6a2f0f4c3b95a9628d4441bd18.html?locale=en-US&version=2.16.0.0) 
+    > You must ensure that you have sufficient disk space available. If not, it can result with an error of type "Disk Full". You can monitor your disk space using the SAP HANA Cockpit. For more information, see [Disk Usage: Monitor Disk Volume](https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/5c947a6a2f0f4c3b95a9628d4441bd18.html).
+
+    > ### Note:  
+    > Row counts can differ between the preview of a view and the persisted view results for views with LEFT OUTER and joins and declared cardinalities such as MANY TO ONE or MANY TO EXACT ONE. This discrepancy occurs because different execution engines \(OLAP vs. HEX\) apply join cardinalities with varying strictness. To manage these differences, ensure that the rules you set match the actual data relationships. Use strict rules like MANY TO ONE or MANY TO EXACT ONE only if your data appropriately fits those descriptions to avoid losing important rows. For more information, see SAP note [3310803](https://me.sap.com/notes/3310803).
 
 

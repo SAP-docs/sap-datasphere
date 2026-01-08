@@ -206,7 +206,7 @@ You must set exactly two key attributes for a *Hierarchy with Directory*:
 A *Hierarchy with Directory* must point to:
 
 -   A *Dimension* acting as its directory - The hierarchy name attribute in the \(source\) hierarchy entity must be mapped to the primary key column in the \(target\) dimension.
--   Any non-leaf *Dimension* providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
+-   Any *Dimension* \(other than the data node dimension\) providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
 
 
 

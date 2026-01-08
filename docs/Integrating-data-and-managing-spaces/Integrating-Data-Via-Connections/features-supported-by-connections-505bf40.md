@@ -46,11 +46,11 @@ Remote Tables
 
 Allows modelers to import tables from a source. During the import, the tables are deployed as remote tables. Depending on the connection type, you can use remote tables to:
 
--   directly access data in the source \(remote access\)
+-   directly access data in the source \(remote access\) - always available if the connection type supports remote tables
 
--   copy the full set of data \(snapshot or scheduled replication\)
+-   copy the full set of data \(snapshot or scheduled replication\) - always available if the connection type supports remote tables
 
--   copy data changes in real-time \(real-time replication\)
+-   copy data changes in real-time \(real-time replication\) - only available for certain connection types that support remote tables
 
 
 For more information, see:

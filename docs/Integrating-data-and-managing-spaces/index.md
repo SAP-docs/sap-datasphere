@@ -58,6 +58,7 @@
 -   [Integrating Data from SAP Business Data Cloud](integrating-data-from-sap-business-data-cloud-8f9c372.md)
     -   [Reviewing Installed Intelligent Applications](reviewing-installed-intelligent-applications-6446487.md)
     -   [Applying Row-Level Security to Data Delivered through Intelligent Applications](applying-row-level-security-to-data-delivered-through-intelligent-applications-c83225f.md)
+    -   [Adding Custom Fields to Intelligent Applications](adding-custom-fields-to-intelligent-applications-abb6cac.md)
     -   [Extending Intelligent Applications](extending-intelligent-applications-3c15868.md)
 -   [Integrating Data From SAP Integrated Business Planning](integrating-data-from-sap-integrated-business-planning-a0b3a6e.md)
     -   [Working With Local Tables \(File\) Received From SAP Integrated Business Planning](working-with-local-tables-file-received-from-sap-integrated-business-planning-c42547f.md)

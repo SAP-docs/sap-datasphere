@@ -11,10 +11,17 @@ Use the connection to connect to and access data from an Oracle database \(on-pr
 
 This topic contains the following sections:
 
--   -   [Supported Features](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_usage)
+-   [Prerequisites](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_prerequisites_old)
+-   [Supported Features](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_usage)
 -   [Configuring Connection Properties](oracle-connections-c73ae06.md#loioc73ae0601d364f47830d339b6e86b7e8__Oracle_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to Oracle](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loioc73ae0601d364f47830d339b6e86b7e8__Oracle_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to Oracle](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9fca7c484e974429afc6570196303c35.html "To be able to successfully validate and use a connection to an Oracle database for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -410,7 +417,7 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 
 ## Advanced Connection Properties
 
-When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties button*. Advanced properties have default values that you can override according to your customer scenario’s needs.
+When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties* button. Advanced properties have default values that you can override according to your customer scenario’s needs.
 
 Available properties:
 

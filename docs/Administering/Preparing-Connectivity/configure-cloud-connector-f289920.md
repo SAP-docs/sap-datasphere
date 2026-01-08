@@ -27,12 +27,12 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
 
 -   Before configuring the Cloud Connector, you or the owner of your organization will need an SAP Business Technology Platform \(SAP BTP\) account. If you don't have an account yet, create an account by clicking *Register* in the [SAP BTP cockpit](https://account.hana.ondemand.com/).
 
--   During Cloud Connector configuration you will need information for your SAP Datasphere subaccount. Make sure that you have the subaccount information available in *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account*.
+-   During Cloud Connector configuration you will need information for your SAP Datasphere subaccount. In your SAP Datasphere tenant, you can find the required subaccount information in *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account*.
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
     > ### Note:  
-    > If you have an account but cannot see the account information here, enter the SAP BTP user ID. This ID is typically the email address you used to create your SAP BTP account. After you have entered the ID, you can see the *Account Information* for SAP Datasphere.
+    > Do not confuse the SAP BTP subaccount where you created your SAP Datasphere service instance with the SAP Datasphere subaccount needed in the Cloud Connector configuration.
 
 
 
@@ -51,7 +51,7 @@ For more information about the supported use cases depending on the connection t
 
     *<hostname\>* refers to the machine on which the Cloud Connector is installed. If installed on your machine, you can simply enter localhost.
 
-2.  To connect the SAP Datasphere subaccount to your Cloud Connector, perform the following steps:
+2.  To connect the SAP Datasphere subaccount \(not to be confused with the SAP BTP subaccount\) to your Cloud Connector, perform the following steps:
 
     1.  In the side navigation area of the *Cloud Connector Administration*, click *Connector* to open the *Connector* page and click :heavy_plus_sign: *Add Subaccount* to open the *Add Subaccount* dialog.
 

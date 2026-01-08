@@ -11,12 +11,21 @@ Use a *Generic HTTP* connection to connect to an external system via HTTP and ru
 
 This topic contains the following sections:
 
--   -   [Supported Features](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_usage)
--   [Configuring Connection Properties](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_connection_properties)
+-   [Prerequisites](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_prerequisites_old)
+-   [Supported Features](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_usage)
+-   [Configuring Connection Properties](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_connection_properties)
 
 
 
-<a name="loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_usage"/>
+<a name="loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Preparing Connectivity for Generic HTTP Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/021552c2e2b0418b9d6de157afe318ae.html "To be able to successfully validate and use a Generic HTTP connection to an on-premise system, certain preparations have to be made.") :arrow_upper_right:
+
+
+
+<a name="loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_usage"/>
 
 ## Supported Features
 
@@ -50,7 +59,7 @@ See [Run API Tasks in a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15
 
 
 
-<a name="loiob79b865e64794c7abcd12a54f2f73c8c__GBQ_connection_properties"/>
+<a name="loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_connection_properties"/>
 
 ## Configuring Connection Properties
 

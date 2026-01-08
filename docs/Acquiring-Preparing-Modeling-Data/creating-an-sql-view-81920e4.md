@@ -81,7 +81,8 @@ In addition to working with views in the editor, you can also:
     -   Drag sources from the *Source Browser* into the editor panel.
 
         > ### Note:  
-        > If you add a source view containing input parameters, the source and its parameters will be added to your code and you will need to process each parameter \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\)
+        > -   If you add a source view containing input parameters, the source and its parameters will be added to your code and you will need to process each parameter \(see [Process Source Input Parameters in an SQL View](process-source-input-parameters-in-an-sql-view-58d8763.md)\).
+        > -   The SQL Editor requires technical names for tables, columns, views, and input parameters regardless of the *Show business names* setting in user preferences.
 
     -   Add comments to document your code:
 

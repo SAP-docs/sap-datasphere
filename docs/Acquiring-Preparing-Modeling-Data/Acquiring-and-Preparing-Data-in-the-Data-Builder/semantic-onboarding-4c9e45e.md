@@ -25,7 +25,7 @@ Each tile shows the total number of connections of that type available to you ac
 -   *SAP S/4HANA Cloud* - See [SAP S/4HANA Cloud Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a98e5ffdf47c44d9a845dca01a18bd82.html "Use an SAP S/4HANA Cloud connection to access or import extraction-enabled ABAP Core Data Services views (ABAP CDS views) from SAP S/4HANA Cloud.") :arrow_upper_right:.
 -   *SAP S/4HANA On-Premise* - See [SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:.
 -   *SAP BW/4HANA* - See [SAP BW∕4HANA Model Transfer Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1caba954bc604e00bf8e82e383a46368.html "Use an SAP BW/4HANA Model Transfer connection to import analytic queries from SAP BW∕4HANA with their Composite Providers and InfoObjects.") :arrow_upper_right:.
--   *SAP BW Bridge* - See [SAP BW Bridge Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/03cc8f27d3a44aabad3debaa79be0216.html "In the SAP BW bridge space, a SAP BW bridge connection is being generated.") :arrow_upper_right:.
+-   *SAP BW Bridge* - See [SAP BW Bridge Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/03cc8f27d3a44aabad3debaa79be0216.html "If the SAP Datasphere, SAP BW bridge option is enabled, a SAP BW bridge connection to your bridge tools is generated in the SAP BW bridge space.") :arrow_upper_right:.
 
 Click *Open Import Logs* and select a space to view the results of imports in your space.
 

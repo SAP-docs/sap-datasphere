@@ -10,10 +10,17 @@ Use an *SAP S/4HANA Cloud* connection to access or import extraction-enabled ABA
 
 This topic contains the following sections:
 
+-   [Prerequisites](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__S4_Cloud_prerequisites_old)
 -   [Supported Features](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__S4_Cloud_usage)
 -   [Configuring Connection Properties](sap-s-4hana-cloud-connections-a98e5ff.md#loioa98e5ffdf47c44d9a845dca01a18bd82__connection_properties)
 
-For information about the required prerequisites in the connected systems and SAP Datasphere, see [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loioa98e5ffdf47c44d9a845dca01a18bd82__S4_Cloud_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:
 
 
 

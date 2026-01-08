@@ -176,7 +176,7 @@ Indicates how the table was last updated. For example, name of the flow if it wa
 Displays the number of partitions defined on the local table.
 
 > ### Note:  
-> Displays 1 if no partitions have been defined on the local table. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with large volume of data.") :arrow_upper_right:.
+> Displays 1 if no partitions have been defined on the local table. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
 
 
 

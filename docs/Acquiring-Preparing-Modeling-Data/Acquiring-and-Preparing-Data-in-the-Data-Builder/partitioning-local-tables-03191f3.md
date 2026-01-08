@@ -2,7 +2,7 @@
 
 # Partitioning Local Tables
 
-Create partitions for your local table to break your data down into smaller tables, and better manage tables with large volume of data.
+Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.
 
 
 
@@ -10,7 +10,7 @@ Create partitions for your local table to break your data down into smaller tabl
 
 ## Introduction to Partitioning
 
-Working with large volume of data can cause memory shortages and take many system resources. One solution can be to use partitions: You create partitions based on one or several columns of your table to break your data down into smaller and more manageable parts. When a table is partitioned, the split is done in such a way that each partition contains a different set of rows of the table, depending on the partition type you have chosen for your data load:
+Working with a large volume of data can cause memory shortages and take many system resources. One solution can be to use partitions: You create partitions based on one or several columns of your table to break your data down into smaller and more manageable parts. When a table is partitioned, the split is done in such a way that each partition contains a different set of rows of the table, depending on the partition type you have chosen for your data load:
 
 -   *Range*: You select one column of your table that will serve for the partitioning. The table will then be split into several partitions according to the different ranges you have defined. For example, you have set the column Year as the column to serve the partition. This column contains data from the year 2000 to the year 2025. You have defined the partition ranges as follows:
 
@@ -42,7 +42,7 @@ Working with large volume of data can cause memory shortages and take many syste
 
 ## Procedure
 
-To create partitions for local table:
+To create partitions for the local table:
 
 1.  Go to the *Data Builder*
 2.  Create your local table \(for more information, see [Creating a Local Table](creating-a-local-table-2509fe4.md)\)

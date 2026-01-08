@@ -2,7 +2,7 @@
 
 # Modify the Owner of a Schedule
 
-Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.
+Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to a business user or a technical user.
 
 
 
@@ -20,7 +20,7 @@ Per default, the user who creates a task schedule owns the schedule which means 
 
 ## Context
 
-Changing the owner of the schedule is required when the user owning the schedule until now left the organization and the user has been deleted, for example. In such a case the schedule isn't assigned to any user and can't be executed successfully.
+Changing the owner of the schedule is required when the user owning the schedule until now left the organization and the user has been deleted, for example. In such a case the schedule isn't assigned to any user and can't be executed successfully. Modifying the owner to a technical user can help minimize the number of users that manage schedules. Additionally, this can minimize failed schedules and tasks related to expired consent and authorization.
 
 
 
@@ -36,9 +36,15 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 5.  Select the object for which you want to schedule a task.
 
-6.  Select *Schedule* \> *Assign Schedule to me*
+6.  Select *Schedule* \> *Edit Schedule*
 
-7.  Click *OK* to save the schedule.
+7.  Select your user type, Business User or Technical User, from the drop down.
+
+8.  Select the new owner of the schedule.
+
+    You need to enter both a user type and an owner to save your changes.
+
+9.  Click *OK* to save the schedule.
 
 
 
@@ -47,5 +53,5 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 ## Results
 
-The *Owner* field now shows your user ID as the new owner of the schedule. The scheduling component from now own will execute the task on your behalf.
+The *User Type* field now shows the type of schedule owner. The *Owner* field now shows the name or ID of the new owner. The scheduling component from now own will execute the task on behalf of the new owner..
 

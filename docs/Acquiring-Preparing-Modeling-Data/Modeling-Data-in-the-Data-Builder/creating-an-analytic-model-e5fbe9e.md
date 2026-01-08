@@ -255,18 +255,6 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Share\)
-    
-    </td>
-    <td valign="top">
-    
-    Share the object to other spaces. See  <?sap-ot O2O class="- topic/xref " href="8b84bd8dbbbf498f9dff8add4bff6489.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/sth1761640307108/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/41b334bb536d4c5b9706be635bedb4e5.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     <span class="FPA-icons-V3"></span> \(Source Browser\)
     
     </td>
@@ -346,6 +334,20 @@ In addition to working with analytic models in the editor, you can also:
     Open the *Generate OData Request* dialog to prepare access to the OData API. 
 
     See [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Extensions
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Extensions* dialog to add custom fields to an analytic model delivered as part of an SAP Business Data Cloud intelligent application in an SAP-managed space.
+
+    See [Adding Custom Fields to Intelligent Applications](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/abb6cac0b5b940dc9f74edf753751bc6.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any custom fields that are defined in your source system. However, you can add the custom fields to the analytic model.") :arrow_upper_right:
     
     </td>
     </tr>

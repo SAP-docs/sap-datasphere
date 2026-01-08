@@ -18,7 +18,7 @@ For both subscription-based contracts \(initiated on November 2023\) and consump
 To create your SAP Datasphere service instance in SAP BTP, you need the following prerequisites:
 
 -   Your global account has a commercial entitlement either via cloud credits \(in case of a consumption-based contract\) or via a subscription-based contract.
--   A Cloud Foundry subaccount which is entitled for SAP Datasphere. For more information, see [Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5ba357b4fa1e4de4b9fcc4ae771609da.html).
+-   A subaccount which is entitled for SAP Datasphere. For more information, see [Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5ba357b4fa1e4de4b9fcc4ae771609da.html).
 -   You have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
 
 -   You are using Google Chrome to properly view popups in SAP BTP.

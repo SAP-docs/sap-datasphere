@@ -230,6 +230,9 @@ To duplicate records:
 
     If warnings or errors are shown, click the <span class="FPA-icons-V3"></span> \(Validation Messages\) for details.
 
+    > ### Note:  
+    > If your table contains more than 20 columns, some columns may be hidden for optimization purposes. As duplication options can only be applied to active/visible columns, you must open the column settings \(:gear:\), select all columns to be displayed, and click OK. For more information, see SAP Note [0003687883](https://me.sap.com/notes/0003687883)
+
 
 
 

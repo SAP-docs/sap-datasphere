@@ -9,12 +9,22 @@ Use an *Open Connectors* connection to access data from sources that are connect
 
 This topic contains the following sections:
 
--   -   [Leveraging SAP Open Connectors for SAP Datasphere Connectivity](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_usage)
--   [Prerequisites](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_connection_properties)
+-   [Prerequisites](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_prerequisites_old)
+-   [Leveraging SAP Open Connectors for SAP Datasphere Connectivity](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_context)
+-   [Supported Features](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_usage)
+-   [Configuring Connection Properties](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_connection_properties)
 
 
 
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_usage"/>
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
+
+
+
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_context"/>
 
 ## Leveraging SAP Open Connectors for SAP Datasphere Connectivity
 
@@ -51,15 +61,7 @@ SAP Datasphere supports the following SAP Open Connectors hub categories:
 
 
 
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connecters_connection_properties"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
-
-
-
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__OpenConnectors_usage"/>
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_usage"/>
 
 ## Supported Features
 
@@ -93,7 +95,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__section_nrb_hcc_x4b"/>
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_connection_properties"/>
 
 ## Configuring Connection Properties
 

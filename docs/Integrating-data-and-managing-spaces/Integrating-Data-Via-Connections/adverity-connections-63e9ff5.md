@@ -9,9 +9,18 @@ Extend connectivity beyond SAP Datasphere standard remote connectivity and cover
 
 This topic contains the following sections:
 
+-   [Prerequisites](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_prerequisites_old)
 -   [Context](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_context)
 -   [Supported Features](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_usage)
 -   [Configuring the Partner Connection](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_connection_properties)
+
+
+
+<a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to Adverity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right:
 
 
 

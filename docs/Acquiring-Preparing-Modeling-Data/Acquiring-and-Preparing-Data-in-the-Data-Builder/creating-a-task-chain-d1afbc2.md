@@ -55,7 +55,9 @@ In addition to the objects available from the Repository or Others tabs, you can
 > 
 > If replication and data removal tasks are both attempted to run at the same time, the tasks are given priority based on a first-come, first served basis.
 
-When creating a task chain, you can create linear task chains in which one task is run after another. A succeeding task is only run once the previous task in the series has finished successfully with a *completed* status. The running of tasks in the series will not resume if the previous task has a *failed* status. You can also create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
+When creating a task chain, you can create linear task chains in which one task is run after another. A succeeding task is only run once the previous task in the series has finished successfully with a *completed* status. The running of tasks in the series may resume if the previous task has a *failed* status. The task port connecting one object task to the next object task can allow the task chain to continue if a task regardless of the *failed*. For more information about task ports, see [Select Task Ports in a Task Chain](select-task-ports-in-a-task-chain-04dcfa7.md). You can also create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
+
+You can turn on the *Ignore Error* button in the right side panel to disregard the status of the single object task in the status evaluation of the entire task chain.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right: or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
@@ -87,7 +89,9 @@ In addition to working with task chains in the editor, you can also:
 
 3.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* to place the new object in the linear arrangement of tasks in the task chain, or as a task in parallel with a selected task.
 
-    Choosing the *Add as New Task* option automatically connects the new object task to the previous object task. The properties panel for the task chain is also updated with the added objects.
+    Choosing the *Add as New Task* option automatically connects the new object task to the previous object task with the default *Success* task port. The properties panel for the task chain is also updated with the added objects.
+
+    Choose a task port to connect the first object task to the new object task by dragging from the port to the object task. For more information about working with task ports, see [Select Task Ports in a Task Chain](select-task-ports-in-a-task-chain-04dcfa7.md).
 
     > ### Note:  
     > Options on the task chain toolbar in the *Plus Sign* \(*\+*\) menu also let you add new task objects to the task chain. The *Add Placeholder after Selected Task* option places a new task object placeholder in the existing linear arrangement of tasks in the task chain. The *Add Parallel Branch after Selected Task* option places a new task object placeholder in parallel with the currently selected task. For more information on creating task chains with parallel task branches, see [Run Parallel Tasks in a Task Chain](run-parallel-tasks-in-a-task-chain-363ffe9.md).
@@ -98,7 +102,7 @@ In addition to working with task chains in the editor, you can also:
 
 5.  In the properties panel, specify a name for the task chain.
 
-    ![](images/Task_chain_repository_listing_and_properties_55f7187.png)
+    ![](images/TC_Full_Screen_7c00611.png)
 
     Task chain properties:
 
@@ -211,7 +215,7 @@ In addition to working with task chains in the editor, you can also:
     
     When you click on one of the task chain objects, the properties for this selected task object is displayed in the properties panel:
 
-    ![](images/Select_Open_Object_08d0613.png)
+    ![](images/Object_and_panel_36cfc04.png)
 
     Note that you can also access the details of each task chain object in the task chain properties panel. Select the relevant object in the object list and click <span class="SAP-icons-V5"></span>:
 
@@ -296,7 +300,7 @@ In addition to working with task chains in the editor, you can also:
         > -   Optimize: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\)..
         > -   Delete Records: Delete records from your local table \(file\). Under Settings, define what type of deletion you want:
         >     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-        >     -   *Delete Previous Versions \(Vacuum\), which are older than the specified number of days*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. Default value is 90 days. Minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. 
+        >     -   *Delete Previous Versions \(Vacuum\), which are older than the specified number of days*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. The default value is 90 days. The minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. Note that however, even if the data is deleted through a vacuum task, data is kept for another 14 days in the file space storage. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right: 
         > 
         > 
         > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
@@ -354,6 +358,18 @@ In addition to working with task chains in the editor, you can also:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Input Parameters
+    
+    </td>
+    <td valign="top">
+    
+    Shows the names of the input parameters in the task object. For more information about input parameters in task chains, see [Create Input Parameters in Task Chains](create-input-parameters-in-task-chains-c9906ec.md).
+    
+    </td>
+    </tr>
     </table>
     
     When you add a shared task chain to the current task chain, the Properties display also lists the space from which the task chain was shared, when that object is selected.
@@ -365,7 +381,7 @@ In addition to working with task chains in the editor, you can also:
 
     The properties of your task chain are updated.
 
-    ![](images/Properties_Update_with_Deploy_3674719.png)
+    ![](images/Properties_6cc7b50.png)
 
     > ### Note:  
     > SAP Datasphere allows you to save task chains that may have unconnected task objects on the canvas. However, you will not be able to deploy and run them until all task objects are connected to define their order of execution when the task chain is run.

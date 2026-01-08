@@ -216,7 +216,7 @@ Each file contains the source columns as defined in the mapping for the replicat
     -   *M*: After the initial load completed, archiving operations.
 
 
--   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is not populated for all source systems \(for example, ABAP\).
+-   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is populated only for the following source systems: Microsoft Azure SQL, Microsoft SQL Server \(MSSQL\) and SAP HANA.
 -   *\_\_timestamp*: The UTC date and time the system wrote the row.
 
 

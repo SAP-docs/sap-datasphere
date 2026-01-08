@@ -13,6 +13,9 @@ To enable Delta Capture:
 -   You table must have a status *Not Deployed*.
 -   You must define one or more key columns.
 
+> ### Note:  
+> For local table \(file\) see [Capturing Delta Changes in Your Local Table \(File\)](capturing-delta-changes-in-your-local-table-file-bfb5191.md).
+
 
 
 <a name="loio154bdffb35814d5481d1f6de143a6b9e__section_uz2_bcm_2yb"/>

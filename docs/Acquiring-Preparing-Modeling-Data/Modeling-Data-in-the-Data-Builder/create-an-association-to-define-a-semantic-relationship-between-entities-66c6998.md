@@ -79,7 +79,7 @@ For information about dimensions, see [Create a Dimension to Categorize Data](cr
     > -   *Dimension* - One attribute in the \(source\) *Dimension* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
     > -   *Hierarchy with Directory*:
     >     -   A *Dimension* acting as its directory - The hierarchy name attribute in the \(source\) hierarchy entity must be mapped to the primary key column in the \(target\) dimension.
-    >     -   Any non-leaf *Dimension* providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
+    >     -   Any *Dimension* \(other than the data node dimension\) providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
 
 5.  Click *< \(Back\)* in the table editor \(or use the breadcrumbs in the side panel\) to return to the list of associations, where the new association now appears.
 

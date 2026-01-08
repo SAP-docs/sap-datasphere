@@ -10,9 +10,18 @@ Use the connection to connect to Apache Kafka hosted on either the Confluent Pla
 
 This topic contains the following sections:
 
--   -   [Supported Features](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_usage)
+-   [Prerequisites](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_prerequisites_old)
+-   [Supported Features](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_usage)
+-   [Configuring Connection Properties For Confluent Platform](confluent-connections-d83c08a.md#loioa5d1e1d2885f4a69ae3cc5049eb0cabf)
+-   [Configuring Connection Properties For Confluent Cloud](confluent-connections-d83c08a.md#loio8cd75f509baf41bdb859fd2efa045c84)
 
-For information about the required prerequisites, see [Prepare Connectivity to Confluent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3515f11430044e479cc4934cd221e010.html "To be able to successfully validate and use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to Confluent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3515f11430044e479cc4934cd221e010.html "To be able to successfully validate and use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 

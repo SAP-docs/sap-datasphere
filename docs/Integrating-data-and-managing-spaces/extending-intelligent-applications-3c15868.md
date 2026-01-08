@@ -10,7 +10,9 @@ The data products installed via SAP Business Data Cloud as part of an intelligen
 
 ## Context
 
-If your organization has extended the SAP source system with custom fields in this way, then you will need to copy the preparation and application spaces in order to modify the SAP-managed content and consume the updated data products in your intelligent application.
+If your organization has extended the SAP source system with custom fields, you can add custom fields to each analytic model as appropriate directly in the application space \(see [Adding Custom Fields to Intelligent Applications](adding-custom-fields-to-intelligent-applications-abb6cac.md)\).
+
+To perform any form of extension other than adding custom fields defined in the source system, you must copy the preparation and application spaces in order to modify the SAP-managed content and consume the updated data products in your intelligent application.
 
 > ### Note:  
 > You must always copy both the preparation and application spaces and complete the entire extension process, so that your copied spaces are entirely independent of the intelligent application preparation and application spaces. A situation, for example, where objects in a copied application space depend on objects in the intelligent application preparation space, is not supported.

@@ -439,7 +439,7 @@ On the *Visibility* tab, you can see an overview of all contexts you are a membe
 
     By default all users are members of the public data marketplace context and cannot leave.
 
--   A data provider manages the private data market place by creating and managing the contexts. When a data provider lists their data product in the private data marketplace under a certain context, only users who are members of that context can find, evaluate, and acquire the data product. For more information on managing contexts, see [Context Management App](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.
+-   A data provider manages the private data market place by creating and managing the contexts. When a data provider lists their data product in the private data marketplace under a certain context, only users who are members of that context can find, evaluate, and acquire the data product. For more information on managing contexts, see [The Context Management App](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them, or create new ones.") :arrow_upper_right:.
 
     You can join new contexts or leave the ones you don't want to be member of.
 
@@ -517,7 +517,7 @@ Displays the type of context. A context can be one of the following types:
 -   **Internal Data Marketplace**, for the scenario where all the users of a system can acquire data products internally. By default, all the users of the system are automatically added to the context.
 
 
-For more information about these context types and others, see [Context Management App](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them or create new ones.") :arrow_upper_right:.
+For more information about these context types and others, see [The Context Management App](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/2f3dbb9da8ae4b7a992c6358ab4fc2be.html "Get an overview of your existing contexts, manage them, or create new ones.") :arrow_upper_right:.
 
 </td>
 </tr>

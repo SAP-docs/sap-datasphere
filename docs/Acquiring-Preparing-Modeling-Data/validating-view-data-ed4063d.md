@@ -30,7 +30,7 @@ To validate data \(or review the results of a previous validation\):
     If the view has one or more remote sources, you can run validations if this is supported by the connection adapter. In this case, a warning is displayed and you can choose to continue with the validation, cancel, or open the *View Analyzer* to determine whether one or more sources should be replicated \(see [Exploring Views with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8921e5acf2ad4c8a98073edae4c214c7.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:\).
 
     > ### Note:  
-    > If individual validation rules cannot be run against remote sources they will provide this information in place of a result.
+    > If individual validation rules cannot be run against remote sources this information will be displayed in place of a result.
 
     The time required for data validation depends on the number of records and the complexity of calculations required. If validation is taking too long, you can click *Cancel Validation* in the panel toolbar. You will receive a notification when validation is complete.
 
@@ -107,13 +107,13 @@ To validate data \(or review the results of a previous validation\):
     > 
     > -   Your view or any of its sources is protected by a data access control.
     > -   Your view or any of its sources contains input parameters.
-    > -   Any of your view's sources is not replicated to SAP Datasphere.
+    > -   Any of your view's sources are not replicated to SAP Datasphere.
 
 4.  For rules with errors, click the *Details* link to get further information.
 
     The *Details* dialog explains the rule and lets you copy SQL \(or SQLScript\) code to generate a list of invalid records.
 
-5.  In the *Details* dialog, click *Copy SQL* \(or *Copy SQLScript*\) to get the code necessary to generate the full list of records that are not consistent with the rule.
+5.  In the *Details* dialog, click *Copy SQL* \(or, in some cases, *Copy SQLScript*\) to get the code necessary to generate the full list of records that are not consistent with the rule.
 6.  Create a new SQL view, select the appropriate language, paste the code into it, and preview the data to see these failing records \(see [Creating an SQL View](creating-an-sql-view-81920e4.md)\).
 
 
@@ -271,6 +271,22 @@ This rule can generate files to collect missing nodes and allocate them to an "U
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Misplaced Hierarchy Data Nodes
+
+</td>
+<td valign="top">
+
+Non-data node types must not have values in any data node type columns.
+
+For example, if a hierarchy contains a non-data node type "`PRODUCT_CATEGORY`" and a data node type "`PRODUCT`", and a "`PRODUCT_CATEGORY`" node contains values in the "`PRODUCT_ID`" column \(which contains product identifiers\), then this "`PRODUCT_ID`" data will be associated incorrectly with the "`PRODUCT_CATEGORY`" node type, leading to inaccurate results.
+
+To resolve this issue, ensure that the data node type columns contain values only when the node is a data node. In all other cases, these columns should contain only NULL values.
+
+</td>
+</tr>
 </table>
 
 For information about working with hierarchies, see:
@@ -311,7 +327,7 @@ Consistent Data Types
 
 All columns must have appropriate data types.
 
-For example, if a column `A` is specified as having a data type `Date`, and SAP HANA Cloud determines that the data type must be `String(10)`, then this inconsistency may cause run-time errors or wrong data to be returned.
+For example, if a column `A` is specified as having a data type `Date`, and SAP HANA Cloud determines that the data type must be `String(10)`, then this inconsistency may cause run-time errors or incorrect data to be returned.
 
 </td>
 </tr>

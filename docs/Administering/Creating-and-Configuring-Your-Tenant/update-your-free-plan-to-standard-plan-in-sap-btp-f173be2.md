@@ -4,6 +4,20 @@
 
 Update your service instance from free plan to standard plan.
 
+
+
+<a name="loiof173be27e9cb4c758c0f1fa133d9edda__section_xcz_d15_3hc"/>
+
+## Prerequisites
+
+To update your service instance from free plan to standard plan in SAP BTP, you must have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
+
+
+
+<a name="loiof173be27e9cb4c758c0f1fa133d9edda__section_eft_h15_3hc"/>
+
+## Introduction
+
 In SAP Business Technology Platform \(SAP BTP\), if you have an SAP Datasphere service instance with a free plan, which you can use for 90 days, you can update it to a standard plan \(no time limitation\) for productive purposes. The number of days before the expiration is displayed in the top panel of SAP Datasphere.
 
 > ### Note:  
@@ -11,7 +25,11 @@ In SAP Business Technology Platform \(SAP BTP\), if you have an SAP Datasphere s
 > 
 > If your tenant is deleted, the service instance will still be shown in your Global Account, but it is not functional. You can delete it and create a new SAP Datasphere service instance with a free plan.
 
-To do so, you must have SAP BTP administration authorization on the subaccount that is entitled to SAP Datasphere.
+
+
+<a name="loiof173be27e9cb4c758c0f1fa133d9edda__section_zfd_g15_3hc"/>
+
+## Procedure
 
 1.  In SAP BTP, select the subaccount and the space where the service instance with a free plan was created.
 

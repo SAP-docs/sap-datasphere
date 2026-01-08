@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Creating Input Parameters in Task Chains
+# Create Input Parameters in Task Chains
 
 You can define input parameters on the task level of task chains. You can also create new input parameters in task chains. This will allow for more flexible usage of task chains and nested task chains.
 
@@ -44,7 +44,7 @@ Define different values for the input parameters on the task level and the task 
 
     3.  Click <span class="FPA-icons-V3"></span> \(Add\) to create a new input parameter in the task chain.
 
-    4.  Create a name for the new input parameter in your task chain. You can define a default value at this time. You can also delete the first mapped value and leave only the newly created parameter in the task chain. If not default value is defined, the input parameter will use an empty string \(""\).
+    4.  Create a name for the new input parameter in your task chain. You can define a default value at this time. You can also delete the first mapped value and leave only the newly created parameter in the task chain. If no default value is defined, the input parameter will use an empty string \(""\).
 
     5.  Press *OK*. This will save your parameters and values on the task chain level.
 

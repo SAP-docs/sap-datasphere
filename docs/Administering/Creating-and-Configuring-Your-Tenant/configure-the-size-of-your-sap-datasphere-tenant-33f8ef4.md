@@ -6,7 +6,18 @@ Configure the size of your tenant by specifying resource sizes based on your bus
 
 You can configure the size of a subscription-based tenant and a consumption-based tenant with a standard plan.
 
-To do so, you must have an SAP Datasphere administrator role.
+
+
+<a name="loio33f8ef4ec359409fb75925a68c23ebc3__section_ok1_xc5_3hc"/>
+
+## Prerequisites
+
+To configure the size of your SAP Datasphere tenant, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 

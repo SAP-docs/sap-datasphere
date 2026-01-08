@@ -628,7 +628,7 @@ See [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e
 > ### Note:  
 > To create a new data provider profile, or edit an existing one, you must have the **Spaces \(Update\)** privilege assigned to your role.
 > 
-> See [Maintaining your Data Provider Profile](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of Data Marketplace. Provide company and business contact information as well as general information about the data you offer.") :arrow_upper_right:.
+> See [Maintaining your Data Provider Profile](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/4d298f8654fe4a6c9b6a4399a9e14c77.html "Provide information as you would like to present it to consumers of the Catalog & Marketplace. Provide company and business contact information, as well as general information about the data you offer.") :arrow_upper_right:.
 
 
 

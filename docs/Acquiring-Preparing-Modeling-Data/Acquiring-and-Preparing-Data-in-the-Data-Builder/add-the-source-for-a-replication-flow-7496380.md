@@ -64,13 +64,13 @@ Define the source for your replication flow \(connection, container, and objects
     > 
     > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed and have a primary key, or an SQL or a script view that has a primary key.
     > 
-    > -   One source object can be reused in several replication flows.
+    > -   One source object can be reused in several replication flows. See, [Reusing Objects as Source or Target in Several Replication Flows](reusing-objects-as-source-or-target-in-several-replication-flows-d570eee.md).
     > 
     >     > ### Restriction:  
     >     > You won't be able to deploy a replication flow that is reusing objects from:
     >     > 
     >     > -   SAP HANA Cloud, data lake files
-    >     > -   ABAP SLT source. For ABAP SLT, only one SLT mass transfer ID per replication can be used. If the SLT source is reused for another replication, another mass transfer ID is required to be used. For more information, you can refer to [KBA2329159](https://me.sap.com/notes/0002329159)
+    >     > -   ABAP SLT source. For ABAP SLT, one particular table can be reused up to 4 times in different mass transfer IDs. For more information, you can refer to [KBA3464320](https://me.sap.com/notes/0002329159).
 
 4.  If you decide that you do not want to include an object after all, select it and choose *Remove from Selection*. If you want to include more objects, go back to the *Available* tab and select the relevant objects. When you are done, choose *Add Selection*. The system then imports the object definitions so that they are available for the subsequent process steps.
 

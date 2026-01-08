@@ -21,18 +21,6 @@ For more information about the integration and the required prerequisites to cre
 
 
 
-<a name="loio4c367de075a44ad7b7a6db576a4a9c82__section_lbd_p4k_fhc"/>
-
-## Prerequisites
-
-
-
-### Replication Flows
-
-Before you can use the connection to add target objects to a replication flow, the following is required:
-
-
-
 <a name="loio4c367de075a44ad7b7a6db576a4a9c82__Signavio_usage"/>
 
 ## Supported Features

@@ -57,7 +57,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 7.  Select *Simple* as *Settings Type* and define your scheduling options:
 
-    **Schduling Options**
+    **Scheduling Options**
 
 
     <table>
@@ -300,5 +300,5 @@ You may also pause and then later resume execution of scheduled tasks via the me
 **Related Information**  
 
 
-[Modify the Owner of a Schedule](modify-the-owner-of-a-schedule-4b660c0.md "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself.")
+[Modify the Owner of a Schedule](modify-the-owner-of-a-schedule-4b660c0.md "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to a business user or a technical user.")
 

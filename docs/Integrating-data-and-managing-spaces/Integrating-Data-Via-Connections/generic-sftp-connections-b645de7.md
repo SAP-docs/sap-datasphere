@@ -10,10 +10,17 @@ Use a *Generic SFTP* connection to connect to and access files on a Secure File 
 
 This topic contains the following sections:
 
--   -   [Supported Features](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_usage)
+-   [Prerequisites](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_prerequisites_old)
+-   [Supported Features](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_usage)
 -   [Configuring Connection Properties](generic-sftp-connections-b645de7.md#loiob645de78a8374c24871ab6169be40d35__SFTP_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+
+
+<a name="loiob645de78a8374c24871ab6169be40d35__SFTP_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:
 
 
 

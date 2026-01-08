@@ -66,25 +66,20 @@ BW Systems
 </td>
 <td valign="top">
 
-All BW systems:
-
--   ADSO \(Advanced DataStore Object\)
+-   ADSO \(Advanced DataStore Object\) \(SAP Datasphere, SAP BW bridge andSAP BW∕4HANA only\)
 -   AREA \(InfoArea\)
+-   ALVL \(Aggregation Level\) \(SAP BW∕4HANA\)
+-   DEST \(Open Hub Destination\) \(SAP BW∕4HANA\)
+-   DSUB \(Data Subscription\) \(SAP BW∕4HANA\)
 -   DTPA \(Data Transfer Process\)
+-   ELEM \(BW Query\) \(SAP BW∕4HANA\)
+-   FBPA \(Open ODS View\) \(SAP BW∕4HANA\)
 -   HCPR \(HANA CompositeProvider\)
 -   IOBJ \(InfoObject\)
 -   LSYS \(Source System\)
 -   RSDS \(DataSource\)
 -   TRCS \(InfoSource\)
 -   TRFN \(Transformation\)
-
-SAP BW∕4HANA only:
-
--   ALVL \(Aggregation Level\)
--   DEST \(Open Hub Destination\)
--   DSUB \(Data Subscription\)
--   ELEM \(BW Query\)
--   FBPA \(Open ODS View\)
 
 
 

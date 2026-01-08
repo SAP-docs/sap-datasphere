@@ -49,6 +49,20 @@ To pause, resume or restart a replication flow:
 
 
 
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_jsb_sk3_vgc"/>
+
+## Displaying the Dependent Replication Flows
+
+If your replication flow has dependent replication flows, which means that one or several target objects are reused as sources of other replication flows, here's how you can see it:
+
+1.  Go to the *Details* screen of your replication flow.
+2.  On the toolbar, click <span class="SAP-icons-V5"></span> \(View Dependent Replication Flows\)
+
+    For more information, see [Reusing Objects as Source or Target in Several Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d570eee0045a4b9ab5d47ac70140d60a.html "You can reuse certain objects as sources or targets in multiple replication flows, but you need to consider the following information:") :arrow_upper_right:.
+
+
+
+
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_POI"/>
 
 ## Monitoring Premium Outbound Volume

@@ -38,7 +38,7 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 Data products are high-quality, coherent data sets accessible through APIs. You can use them in various SAP or third-party products across different data regions to make better business decisions. A single data product may include business objects, entities, analytic data, and more. On the catalog search page, select the *Data Products* collection, and then choose one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formation.
 
-To determine if a data product meets your needs, you can view its details to evaluate its usefulness. You can review several pieces of information: the data product's properties, such as its name and the data provider, the list of entities within the data product, and links to resources on how to use it. For more information, see [Data Product Details](data-product-details-71f4d15.md).
+To determine if a data product meets your needs, you can view its details to evaluate its usefulness. You can review several pieces of information: the data product's properties, such as its name and the data provider, the list of objects within the data product, and links to resources on how to use it. For more information, see [Data Product Details](data-product-details-71f4d15.md).
 
 After you've evaluated and found a data product, you can install it to your space \(see steps below\).
 
@@ -83,12 +83,12 @@ You can install data products that have both an *Active* release status and a *C
 
 5.  Select a target space and select *Next Step*.
 
-6.  On the *Review Entities* page, review the entities that you will import and then choose the method you want for accessing the data.
+6.  On the *Review Entities* page, review the objects that you will import and then choose the method you want for accessing the data.
 
     -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
 
         > ### Note:  
-        > Ensure that you select a space with the storage and capabilities that fit your needs.
+        > Ensure that you select a space with the storage and capabilities that fit your needs \(see [Creating Spaces and Allocating Resources](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2ace657356d54199b0b87d2327b1a70b.html "Users with an administrator role can create spaces and allocate resources to them.") :arrow_upper_right:\).
 
     -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
 
@@ -98,7 +98,7 @@ You can install data products that have both an *Active* release status and a *C
 
     A notification is sent immediately, and this notification will update as the import process continues. After the import completes, you will have two notifications.
 
-    -   Select the first notification to see the imported entities listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
+    -   Select the first notification to see the imported objects listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
     -   Select the second notification to view the import log messages.
 
         If any entity could not be created, an error is given.
@@ -111,7 +111,7 @@ You can install data products that have both an *Active* release status and a *C
 
 ## Results
 
-The data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. They are then shared with your space.
+The data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space.
 
 -   Navigate to the objects in the *Repository Explorer* and review the data based on how you chose to access it.
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
@@ -120,7 +120,7 @@ The data product objects, including any custom fields defined in the source syst
 -   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
 > ### Tip:  
-> If entities in a data product are associated with entities in one or more other data products, those associations will only be visible if the related data products are installed.
+> If objects in a data product are associated with objects in one or more other data products, those associations will only be visible if the related data products are installed.
 
 The following diagram shows the flow for data products.
 
@@ -255,7 +255,7 @@ Follow these steps for changing the method for how you access data for your data
 
     A notification is sent immediately, and this notification will update as the import process continues. After the import completes, you will have two notifications.
 
-    -   Select the first notification to see the imported entities listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
+    -   Select the first notification to see the imported objects listed in the <span class="SAP-icons-V5"></span> \(*Repository Explorer*\).
     -   Select the second notification to view the import log messages.
 
         If any entity could not be created, an error is given.
@@ -285,7 +285,7 @@ Remove all dependent objects for the data product before you uninstall a data pr
 If you no longer need a data product in a particular space, you can uninstall it.
 
 > ### Note:  
-> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a custom Delta Share data product \(that was created in the Data Sharing Cockpit\) changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator. For more information about custom Delta Share data products, see [Creating Custom Delta Share Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: in the **Data Marketplace - Data Provider's Guide**.
+> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a custom Delta Share data product \(that was created in the Data Sharing Cockpit\) changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator. For more information about custom Delta Share data products, see [Creating Custom Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: in the **Data Marketplace - Data Provider's Guide**.
 
 
 
@@ -325,8 +325,8 @@ If you no longer need a data product in a particular space, you can uninstall it
     </td>
     <td valign="top">
     
-    1.  Select a system.
-    2.  In the confirmation dialog, select *Uninstall* to uninstall the data product from that space.
+    1.  Select a space.
+    2.  Review the confirmation dialog, and select *Uninstall* to uninstall the data product from that space.
 
 
     

@@ -6,12 +6,6 @@ Download the latest Data Provisioning Agent 2.0 version from SAP Software Downlo
 
 
 
-<a name="loio8f6185069a51404ebf23c684fee8cf39__context_ktz_cx3_3tb"/>
-
-## Context
-
-
-
 ## Procedure
 
 1.  Plan and prepare the Data Provisioning Agent installation.

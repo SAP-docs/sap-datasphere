@@ -11,12 +11,13 @@ Use a *Cloud Data Integration* connection to access data from SAP cloud applicat
 
 This topic contains the following sections:
 
--   -   [Supported Features](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_usage)
+-   [Prerequisites](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_prerequisites_old)
+-   [Supported Features](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_usage)
 -   [Configuring Connection Properties](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_connection_properties)
 
 
 
-<a name="loiocd33107246f446628f9baff56faf5a1b__section_j1b_byq_spb"/>
+<a name="loiocd33107246f446628f9baff56faf5a1b__CDI_prerequisites_old"/>
 
 ## Prerequisites
 
@@ -609,4 +610,6 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 </td>
 </tr>
 </table>
+
+<sub></sub>
 

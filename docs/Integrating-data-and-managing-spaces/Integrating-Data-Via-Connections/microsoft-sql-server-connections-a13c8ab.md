@@ -8,10 +8,17 @@ Use a *Microsoft SQL Server* connection to access data from a Microsoft SQL Serv
 
 This topic contains the following sections:
 
--   -   [Supported Features](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_usage)
+-   [Prerequisites](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_prerequisites_old)
+-   [Supported Features](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_usage)
 -   [Configuring Connection Properties](microsoft-sql-server-connections-a13c8ab.md#loioa13c8abb328f45be891599c9cc76fb91__MSSQL_connection_properties)
 
-For more information about the required prerequisites, see [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server, certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loioa13c8abb328f45be891599c9cc76fb91__MSSQL_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to Microsoft SQL Server](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea69328fb328449ab7b04d2b142592f8.html "To be able to successfully validate and use a connection to a Microsoft SQL Server, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -429,7 +436,7 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 
 ## Advanced Connection Properties
 
-When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties button*. Advanced properties have default values that you can override according to your customer scenario’s needs.
+When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties* button. Advanced properties have default values that you can override according to your customer scenario’s needs.
 
 Available properties:
 

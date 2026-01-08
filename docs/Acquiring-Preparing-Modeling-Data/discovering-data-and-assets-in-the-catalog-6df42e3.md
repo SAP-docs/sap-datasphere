@@ -22,9 +22,9 @@ When you find an item that interests you, view descriptions and other metadata a
 
 See:
 
--   [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md)
--   [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)
 -   [Installing Data Products](installing-data-products-ea7cb80.md)
+-   [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)
+-   [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md)
 
 Marketplace data products are only available in the SAP Datasphere catalog.
 

@@ -11,10 +11,17 @@ Use an *SAP SuccessFactors* connection to access employee-related data in SAP Su
 
 This topic contains the following sections:
 
+-   [Prerequisites](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__SF_prerequisites_old)
 -   [Supported Features](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__SF_usage)
--   [Configuring Connection Properties](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__connection_properties)
+-   [Configuring Connection Properties](sap-successfactors-connections-39df020.md#loio39df02030d4b411487bacecf9afea4e8__SF_connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP SuccessFactors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c9b19156c417409b8d563cc4b56c5dc0.html "To be able to successfully validate and use a connection to SAP SuccessFactors for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:.
+
+
+<a name="loio39df02030d4b411487bacecf9afea4e8__SF_prerequisites_old"/>
+
+## Prerequisites
+
+See: [Prepare Connectivity to SAP SuccessFactors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c9b19156c417409b8d563cc4b56c5dc0.html "To be able to successfully validate and use a connection to SAP SuccessFactors for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -77,7 +84,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio39df02030d4b411487bacecf9afea4e8__connection_properties"/>
+<a name="loio39df02030d4b411487bacecf9afea4e8__SF_connection_properties"/>
 
 ## Configuring Connection Properties
 

@@ -4,26 +4,34 @@
 
 Use a *Generic JDBC* connection to access data from tables and views in any supported data source for which a JDBC driver is available.
 
-You can use this connection type to connect to most databases for which SAP Datasphere does not already provide a connection type. In general, the connection type supports most databases that have SQL-based data types and functions, and a JDBC driver. For latest information about supported data sources and versions, see the [SAP HANA smart data integration Product Availability Matrix \(PAM\)](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf).
-
-> ### Note:  
-> For information about unsupported data sources, see SAP Note [3130999](https://me.sap.com/notes/3130999).
-
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 This topic contains the following sections:
 
--   -   [Supported Features](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_usage)
+-   [Prerequisites](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_prerequisites_old)
+-   [Context](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_context)
+-   [Supported Features](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_usage)
 -   [Configuring Connection Properties](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_connection_properties)
 
 
 
-<a name="loioeeae3aca6d0040149f7b1e658c434f15__section_j1b_byq_spb"/>
+<a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_prerequisites_old"/>
 
 ## Prerequisites
 
 See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
+
+
+
+<a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_context"/>
+
+## Context
+
+You can use this connection type to connect to most databases for which SAP Datasphere does not already provide a connection type. In general, the connection type supports most databases that have SQL-based data types and functions, and a JDBC driver. For latest information about supported data sources and versions, see the [SAP HANA smart data integration Product Availability Matrix \(PAM\)](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf).
+
+> ### Note:  
+> For information about unsupported data sources, see SAP Note [3130999](https://me.sap.com/notes/3130999).
 
 
 

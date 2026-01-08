@@ -295,6 +295,18 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    TZ
+    
+    </td>
+    <td valign="top">
+    
+    Shows time zone information for each schedule.
+    
+    </td>
+    </tr>
     </table>
     
 -   `TASK_LOGS_V_EXT`:

@@ -38,7 +38,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 3.  Open the monitor for the object for which you want to schedule a task.
 
-4.  If you haven't authorized SAP Datasphereto run recurring scheduled tasks on your behalf, you need to authorize it to run your scheduled tasks for you. You will see a message at the top of the monitor asking for your consent. Give your consent.
+4.  If you haven't authorized SAP Datasphere to run recurring scheduled tasks on your behalf, you need to authorize it to run your scheduled tasks for you. You will see a message at the top of the monitor asking for your consent. Give your consent.
 
 5.  Select the object for which you want to schedule a task.
 
@@ -255,7 +255,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 11. Optionally, in the *End Date* area, specify a date. If you do not specify an end date, the schedule runs indefinitely.
 
-12. In the right area of the dialog box, you can see a preview of the schedule and when the five next runs are planned. Schedules are viewed in Coordinated Universal Time \(UTC\) by default. You can also view the next runs in local time or the Region/Location time that you have set as your preferrence.
+12. In the right area of the dialog box, you can see a preview of the schedule and when the next five runs are planned. Schedules are viewed in Coordinated Universal Time \(UTC\) by default. You can also view the next runs in local time or the Region/Location time that you have set as your preference.
 
 13. Click *Create* to create the schedule.
 
@@ -270,9 +270,9 @@ The column *Scheduled Frequency* shows the status *Scheduled*. By clicking the s
 
 The column *Schedule Owners* displays the name of the current schedule owner.
 
-The *Scheduled Next Run* colums shows the start date and time of the next run according to the scheduling settings.
+The *Scheduled Next Run* columns shows the start date and time of the next run according to the scheduling settings.
 
-As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png).
+As long as the consent from the owner of the schedule hasn't expired, the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png).
 
 
 
