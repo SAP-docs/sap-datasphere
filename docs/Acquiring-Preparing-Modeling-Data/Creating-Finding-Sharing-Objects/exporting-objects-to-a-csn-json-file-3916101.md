@@ -58,7 +58,7 @@ The *Export to CSN/JSON File* button is available in the following editors:
     </td>
     <td valign="top">
     
-    The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
+    The definition of a local table without delta capture contains the structure of the table only, and does not have dependencies on any other objects. The definition of a local table with delta capture enabled contains the definition of an additional internal table with the suffix `_Delta`. When you export a table with delta capture enabled, this table is exported too.
     
     </td>
     </tr>

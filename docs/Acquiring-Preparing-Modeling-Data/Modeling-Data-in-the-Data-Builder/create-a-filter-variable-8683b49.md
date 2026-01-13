@@ -55,18 +55,14 @@ A filter variable refers to an attribute. When a story is opened, the variable d
     <td valign="top">
     
     Displays the name used in scripts and code, synchronized by default with the *Business Name*.
-
-    To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
-
-    > ### Note:  
-    > If you change the technical name after saving the model, this might affect existing stories or dependent analytic models.
-
-
     
     </td>
     </tr>
     </table>
     
+    > ### Note:  
+    > You cannot change these names from the variable details screen. To update these names, you need to change the business name and technical name of the attribute on which the filter variable is based.
+
 3.  Define the properties of your variable:
 
 

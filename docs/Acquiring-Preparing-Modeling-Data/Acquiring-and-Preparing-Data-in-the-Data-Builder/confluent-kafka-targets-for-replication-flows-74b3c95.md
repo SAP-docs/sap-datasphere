@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Confluent Kafka Targets
+# Confluent Kafka Targets for Replication Flows
 
 If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.
 
@@ -13,8 +13,8 @@ If you use Confluent Kafka as the target for your replication flow, you need to 
 
 This topic contains the following sections:
 
--   [Additional Properties](confluent-kafka-targets-74b3c95.md#loio74b3c95464f246aa8c3fd510661daa6d__section_ReplFlow_Confluent_Properties) 
--   [Further Information](confluent-kafka-targets-74b3c95.md#loio74b3c95464f246aa8c3fd510661daa6d__section_ReplFlow_Confluent_Info) 
+-   [Additional Properties](confluent-kafka-targets-for-replication-flows-74b3c95.md#loio74b3c95464f246aa8c3fd510661daa6d__section_ReplFlow_Confluent_Properties) 
+-   [Further Information](confluent-kafka-targets-for-replication-flows-74b3c95.md#loio74b3c95464f246aa8c3fd510661daa6d__section_ReplFlow_Confluent_Info) 
 
 
 
@@ -144,9 +144,7 @@ Compatibility Mode
 </td>
 <td valign="top">
 
-\[only relevant if *Use Schema Registry* is enabled\] Select the compatibility mode for the created subject in the schema registry. If the subject already exists and you choose a value other than DEFAULT, the system changes the compatibility mode of the subject to the provided value. If you leave the value as DEFAULT, the system uses the default value that has been defined for the Confluent cluster.
-
-The following Confluent compatibility modes are available:
+\[only relevant if *Use Schema Registry* is enabled\] Select the compatibility mode for the created subject in the schema registry. If the subject already exists and you choose a value other than DEFAULT, the system changes the compatibility mode of the subject to the provided value. If you leave the value as DEFAULT, the system uses the default value that has been defined for the Confluent cluster. The following Confluent compatibility modes are available:
 
 -   Backward
 
@@ -208,21 +206,21 @@ Each topic contains the source columns as defined in the mapping for the replica
 -   *\_\_operation\_type*: Identifies the type of target row:
     -   *L*: Written as part of the initial load.
 
-    -   *I*: After the initial load completed, new source row added.
+    -   *I*: New source row added after the initial load completed.
 
-    -   *U*: After the initial load completed, after image of an update to a source row.
+    -   *U*: Update to a source row after the initial load completed.
 
         > ### Note:  
-        > For some sources, the system switches the value *U* to *A* after you apply SAP Note [3044005](https://me.sap.com/notes/3044005). The APE\_KEEP\_UPDATE\_OPERATION parameter is described in the SAP Note.
+        > SAP S/4HANA and other ABAP sources do not distinguish between Insert \(*I*\) and Update \(*U*\), and both operations are identified as Upserts \(U\). If you apply SAP Note [3044005](https://me.sap.com/notes/3044005) the system identifies all upserts as *A*. The `APE_KEEP_UPDATE_OPERATION` parameter is described in the SAP Note.
 
-    -   *B*: After the initial load completed, before image of an update to a source row. These records are only sent by some sources \(like SAP HANA\) and only when the after image of the update is not passing the filters specified in the replication task.
+    -   *B*: Before image of an update to a source row after the initial load completed. These records are only sent by some sources \(such as SAP HANA\) and only when the after image of the update is not passing the filters specified in the replication task.
 
-    -   *X*: After the initial load completed, source row deleted. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
+    -   *X*: Source row deleted after the initial load completed. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
 
-    -   *M*: After the initial load completed, archiving operations.
+    -   *M*: Archiving operations after the initial load completed.
 
 
--   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is not populated for all source systems \(for example, ABAP\).
+-   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is populated only for the following source systems: Microsoft Azure SQL, Microsoft SQL Server \(MSSQL\) and SAP HANA.
 -   *\_\_timestamp*: The UTC date and time the system wrote the row.
 
 You can **rename** target objects \(topics\). The following conditions apply:

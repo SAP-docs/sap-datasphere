@@ -66,14 +66,14 @@ BW Systems
 </td>
 <td valign="top">
 
--   ADSO \(Advanced DataStore Object\) \(SAP Datasphere, SAP BW bridge andSAP BW∕4HANA only\)
+-   ADSO \(Advanced DataStore Object\)
 -   AREA \(InfoArea\)
--   ALVL \(Aggregation Level\) \(SAP BW∕4HANA\)
--   DEST \(Open Hub Destination\) \(SAP BW∕4HANA\)
--   DSUB \(Data Subscription\) \(SAP BW∕4HANA\)
+-   ALVL \(Aggregation Level\) \(SAP BW∕4HANA and SAP BW 7.5\)
+-   DEST \(Open Hub Destination\) \(SAP BW∕4HANA and SAP BW 7.5\)
+-   DSUB \(Data Subscription\) \(SAP BW∕4HANA, and SAP BW 7.5\)
 -   DTPA \(Data Transfer Process\)
--   ELEM \(BW Query\) \(SAP BW∕4HANA\)
--   FBPA \(Open ODS View\) \(SAP BW∕4HANA\)
+-   ELEM \(BW Query\) \(SAP BW∕4HANA and SAP BW 7.5\)
+-   FBPA \(Open ODS View\) \(SAP BW∕4HANA and SAP BW 7.5\)
 -   HCPR \(HANA CompositeProvider\)
 -   IOBJ \(InfoObject\)
 -   LSYS \(Source System\)
@@ -278,6 +278,7 @@ These properties are separated into the following groups: object properties and 
 -   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)
 -   [SAP Datasphere, SAP BW bridge](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
 -   [SAP BW∕4HANA](https://help.sap.com/docs/SAP_BW4HANA/107a6e8a38b74ede94c833ca3b7b6f51/f2a4eb578452482fbbcb9078a8e51551.html)
+-   [SAP BW 7.5](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/4a3739a65e291c67e10000000a42189c.html)
 
 Object properties for an asset can include the following:
 
@@ -361,7 +362,7 @@ The type of container where the asset is saved. The type appears for assets in t
 
 Extraction system details for an asset include the source system's instance name and type. For example, the non-technical name given to an SAP Datasphere or SAP Analytics Cloud system.
 
-For some SAP BW∕4HANA objects additional property sections appear:
+For some SAP BW∕4HANA and SAP BW 7.5 objects additional property sections appear:
 
 
 <table>
@@ -409,7 +410,7 @@ Data Subscription \(DSUB\)
 </td>
 <td valign="top">
 
-Subscription properties \(includes the following information: execution mode, source BW object, and information about the target object and target SAP Datasphere system\)
+Subscription properties \(includes the following information: extraction mode, source BW object, selection, projection, and more\)
 
 </td>
 </tr>

@@ -10,6 +10,15 @@ Fact models are reusable models you can use to streamline the creation of other 
 
 ## Prerequisites
 
+To create fact models, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
+-   *Data Warehouse Fact Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* fact models.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
 You already have analytical datasets, dimensions, or fact models defined.
 
 
@@ -41,7 +50,7 @@ As an example, you have five consumption models that require the same ten calcul
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
 
 6.  Define the *Measures* of your fact model. For more information, see [Define Measures](define-measures-d430469.md).
 

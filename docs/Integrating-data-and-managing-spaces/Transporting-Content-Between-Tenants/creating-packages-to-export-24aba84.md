@@ -4,15 +4,36 @@
 
 # Creating Packages to Export
 
-Users with the *DW Space Administrator* role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the *Package* field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.
+Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the *Package* field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.
 
 This topic contains the following sections:
 
+-   [Prerequisites](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_prereq)
 -   [Introduction to Packages](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_intro)
 -   [Create a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_create)
 -   [Export a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_export)
 -   [Update a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_update)
 -   [Delete a Package](creating-packages-to-export-24aba84.md#loio24aba84ceeb3416881736f70f02e3a0a__section_delete)
+
+
+
+<a name="loio24aba84ceeb3416881736f70f02e3a0a__section_prereq"/>
+
+## Prerequisites
+
+To create packages, you must have a combination of a global role and a scoped role:
+
+-   A global role that grants you the following privileges:
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+    -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
+
+-   A scoped role that grants you access to a space with the following privileges:
+    -   *Spaces* \(`-RU-----`\) - To update your spaces and their properties.
+    -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+    -   *Data Warehouse Data Builder* \(`-RU-----`\) - To view and update *Data Builder* objects \(and any other relevant object privileges to allow you to update other types of objects contained in the package\).
+
+
+The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -223,7 +244,7 @@ Users with the *DW Space Administrator* role can create packages:
     -   If no errors are found, your package is ready to be exported.
     -   If errors are found, you should try to resolve them by adding required packages or objects or by removing objects whose dependencies cannot be resolved, and then re-saving.
 
-    Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a806c67ed11749c788142775d2cc2494.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
+    Once your package is created, it becomes available to modelers in your space who can add further objects to it \(see [Packages](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a806c67ed11749c788142775d2cc2494.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
     > ### Note:  
     > Though modelers can add objects to a package in the object editors, they cannot remove objects from a package.

@@ -107,7 +107,7 @@ Unit conversion allows you to convert measures with units that have different un
 
     -   a reference to a dimension that is mapped to an attribute of the fact with semantic type *Quantity with Unit* or *Unit*.
 
-    -   a variable. You can use an existing variable or you can create a variable for the target unit.
+    -   a variable. You can use an existing variable or you can create a variable for the target unit. See [Use Variables for Conversion](use-variables-for-conversion-0379a7c.md).
 
 
     

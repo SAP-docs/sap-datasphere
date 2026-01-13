@@ -2,14 +2,28 @@
 
 # Packages
 
-Users with the *DW Space Administrator* role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the *Package* field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.
+Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the *Package* field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.
 
 This topic contains the following sections:
 
+-   [Prerequisites](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_prereq)
 -   [Introduction to Packages](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_intro)
--   [Create a Package](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_create)
 -   [Add an Object to a Package](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_add)
 -   [Update an Object in a Package](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_update)
+
+
+
+<a name="loioa806c67ed11749c788142775d2cc2494__section_prereq"/>
+
+## Prerequisites
+
+To add objects to a package from their editor, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Space Files* \(`-RU-----`\) - To view and update objects in your space.
+-   *Data Warehouse Data Builder* \(`-RU----`\) - To view and update *Data Builder* objects \(and any other relevant object privileges to allow you to update other types of objects contained in the package\).
+
+The *DW Modeler* scoped role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -42,15 +56,9 @@ In our example:
     -   `Package B2` adds `Package B1` as a required package.
 
 
+Only a user with space administrator privileges can create a package \(see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
-
-<a name="loioa806c67ed11749c788142775d2cc2494__section_create"/>
-
-## Create a Package
-
-Only a user with the *DW Space Administrator* role \(or equivalent privileges\) can create a package \(see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
-
-Once one or more packages is created in your space, the *Package* property becomes available in the object editors, and modelers can add their objects to the package \(see [Add an Object to a Package](packages-a806c67.md#loioa806c67ed11749c788142775d2cc2494__section_add)\).
+Once one or more packages is created in your space, the *Package* property becomes available in the object editors, and users with modeler privileges can add their objects to the package.
 
 
 
@@ -58,9 +66,9 @@ Once one or more packages is created in your space, the *Package* property becom
 
 ## Add an Object to a Package
 
-Users with the *DW Space Administrator* role \(or equivalent privileges\) can add any object to a package using the package editor \(see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
+Users with space administrator privileges can add any object to a package using the package editor \(see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
-Modelers can add objects to a package from the relevant editor:
+Users with modeler privileges can add objects to a package from the relevant editor:
 
 1.  Open your object in its editor.
 2.  In the property sheet, select the package from the *Package* field.
@@ -78,7 +86,7 @@ Modelers can add objects to a package from the relevant editor:
     -   If the validation is not successful, a new warning is displayed explaining that the dependencies of your object cannot be resolved in the package. You should then add missing dependencies to the package or contact a space administrator to ask them to review and resolve the situation.
 
     > ### Note:  
-    > Whether your object's dependencies can be resolved or not, the package assignment becomes read-only and can no longer be modified in the object editor. Only a space administrator can remove an object from a package in the package editor \(see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
+    > Whether your object's dependencies can be resolved or not, the package assignment becomes read-only and can no longer be modified in the object editor. Only a space administrator can remove an object from a package in the package editor \(see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:\).
 
 
 

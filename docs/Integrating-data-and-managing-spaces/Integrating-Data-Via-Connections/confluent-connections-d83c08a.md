@@ -10,18 +10,10 @@ Use the connection to connect to Apache Kafka hosted on either the Confluent Pla
 
 This topic contains the following sections:
 
--   [Prerequisites](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_prerequisites_old)
 -   [Supported Features](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_usage)
+-   [Prerequisites](confluent-connections-d83c08a.md#loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_prerequisites)
 -   [Configuring Connection Properties For Confluent Platform](confluent-connections-d83c08a.md#loioa5d1e1d2885f4a69ae3cc5049eb0cabf)
 -   [Configuring Connection Properties For Confluent Cloud](confluent-connections-d83c08a.md#loio8cd75f509baf41bdb859fd2efa045c84)
-
-
-
-<a name="loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to Confluent](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3515f11430044e479cc4934cd221e010.html "To be able to successfully validate and use a connection to Confluent Platform (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -58,11 +50,27 @@ You can use the connection to add source and target objects to a replication flo
 
 With Schema Registry, replication flows use a schema reference when serializing a Kafka topic message instead of providing the schema definition in every message. In the target settings of the replication flow configuration, you can decide to use Schema Registry.
 
-For more information, see [Confluent Kafka Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [Confluent Kafka Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod83c08ad4eaf49dba9602b1d51c07a52__Confluent_prerequisites"/>
+
+## Prerequisites
+
+Before you can use the connection for replication flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to Confluent Platform \(Kafka brokers\) and to the Schema Registry.
+
+    > ### Note:  
+    > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location is while connecting to the Kafka brokers happens in another location.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
 
 <a name="loioa5d1e1d2885f4a69ae3cc5049eb0cabf"/>
 

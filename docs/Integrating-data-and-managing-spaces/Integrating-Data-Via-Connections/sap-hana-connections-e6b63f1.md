@@ -10,18 +10,10 @@ Use an *SAP HANA* connection to access data from a remote SAP HANA database \(on
 
 This topic contains the following sections:
 
--   [Prerequisites](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites_old)
 -   [Supported Features](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_usage)
+-   [Prerequisites](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites)
 -   [Configuring Connection Properties \(SAP HANA Cloud\)](sap-hana-connections-e6b63f1.md#loio27aebc8432aa419da75c5fc650981f24)
 -   [Configuring Connection Properties \(SAP HANA on-premise\)](sap-hana-connections-e6b63f1.md#loio77cec6a1e8d04371a791658e641dc0d5)
-
-
-
-<a name="loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to SAP HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7f22cffa3d443669fec3003971e7638.html "To be able to successfully validate and use a connection to SAP HANA Cloud or SAP HANA (on-premise) for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -66,7 +58,7 @@ Remote Tables
 </td>
 <td valign="top">
 
-You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).For remote tables, real-time replication is supported.For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\). For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
 
 </td>
 </tr>
@@ -86,6 +78,60 @@ You can use the connection to add source objects to a data flow.
 
 > ### Note:  
 > The connection type supports replication with both remote tables via Data Provisioning Agent \(SAP HANA Smart Data Integration\) and replication flows \(for on-premise systems via Cloud Connector\). Generally, for replication scenarios, we recommend to use replication flows.
+
+
+
+<a name="loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites"/>
+
+## Prerequisites
+
+
+
+### Remote Tables
+
+Before you can use the connection for remote tables, the following is required:
+
+-   If you want to use SAP HANA Smart Data Integration:
+
+    -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the HanaAdapter.
+
+        For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+
+    -   If you use encrypted communication \(see the *Security* properties in the connection creation wizard\):
+
+        An administrator has already correctly configured Data Provisioning Agent for SSL support.
+
+        For more information, see [Configure SSL for SAP HANA On-Premise \[Manual Steps\]](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/caeef0265b14482eb355b101c9cb92df.html?version=latest) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
+
+
+-   If you want to use SAP HANA Smart Data Access:
+
+    -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+        For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+    -   An administrator has added the Cloud Connector IP address to the IP allowlist.
+
+        For more information, see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:.
+
+    -   If you use encrypted communication and the server certificate should be validated \(see the *Security* properties in the connection creation wizard\):
+
+        A DW administrator has uploaded the server certificate to SAP Datasphere.
+
+        For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+
+
+
+
+
+### Data Flows and Replication Flows
+
+For SAP HANA \(on-premise\), before you can use the connection for data flows and replication flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
 
 <a name="loio27aebc8432aa419da75c5fc650981f24"/>
 

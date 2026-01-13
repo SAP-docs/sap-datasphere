@@ -44,5 +44,6 @@ The following views are not supported:
 
 -   SQL views without a semantic primary key
 -   SQL views with input parameters
+-   SQL views based on remote tables
 -   Views other than SQL view \(OLAP, JOIN, HIERARCHY, or CALC\)
 

@@ -451,6 +451,18 @@ For more information about the supported use cases depending on the connection t
         
         </td>
         </tr>
+        <tr>
+        <td valign="top">
+        
+        **SAP BW 7.5**
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
+        
+        </td>
+        </tr>
         </table>
         
     3.  To grant access only to the resources needed by SAP Datasphere, select the system host you just added from the *Mapping Virtual To Internal System* list, and for each resource that you want to allow to be invoked on that host, click :heavy_plus_sign: in the *Resources Of *<virtual host\>** section to open the *Add Resource* dialog.
@@ -638,6 +650,25 @@ For more information about the supported use cases depending on the connection t
         -   `/sap/opu/odata4/sap/rv_i_dwc_area_tree_sb/` - *Path and all sub-paths*
         -   `/sap/opu/odata4/sap/rv_c_dwc_obj_header/` - *Path and all sub-paths*
         -   `/sap/opu/odata4/sap/rv_i_dwc_details_sb/` - *Path and all sub-paths*
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        SAP BW 7.5 \(HTTPS\)
+        
+        </td>
+        <td valign="top">
+        
+        For metadata extraction, limit the accessible services to the following URL paths:
+
+        -   `/sap/opu/odata/sap/GW_RSODC_META_ACCESS_SRV/SystemInformation` - *Path and all sub-paths*
+        -   `/sap/opu/odata/sap/GW_RSODC_META_ACCESS_SRV/HierarchyReturnSet` - *Path and all sub-paths*
+        -   `/sap/opu/odata/sap/GW_RSODC_META_ACCESS_SRV/BrowseReturnSet` - *Path and all sub-paths*
+        -   `/sap/opu/odata/sap/GW_RSODC_META_ACCESS_SRV/MetaData` - *Path and all sub-paths*
 
 
         

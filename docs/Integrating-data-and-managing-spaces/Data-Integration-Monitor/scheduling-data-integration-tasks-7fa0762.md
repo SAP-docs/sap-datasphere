@@ -28,7 +28,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 ## Introduction to Scheduling Data Integration Tasks
 
-You can schedule or unschedule data integration tasks such as remote table replication, persisting views, and data flow, replication flow, or task chain execution. You may also pause and then later resume execution of scheduled tasks.
+You can schedule or unschedule data integration tasks such as remote table replication, persisting views, and data flow, replication flow, or task chain execution. You may also pause and then later resume execution of scheduled tasks. You can choose a business user or technical user to be the owner of a schedule. To change the owner of a schedule, see [Modify the Owner of a Schedule](modify-the-owner-of-a-schedule-4b660c0.md).
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).

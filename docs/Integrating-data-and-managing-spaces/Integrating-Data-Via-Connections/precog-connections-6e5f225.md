@@ -2,33 +2,16 @@
 
 # Precog Connections
 
-Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog. 
+Use a *Precog* connection to extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog. Precog connections are partner connections and use the Open SQL schema to send data to SAP Datasphere.
 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 This topic contains the following sections:
 
--   [Prerequisites](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_prerequisites_old)
 -   [Supported Features](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_usage)
--   [Context](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_context)
+-   [Prerequisites](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_prerequisites)
 -   [Configuring the Partner Connection](precog-connections-6e5f225.md#loio6e5f2255ae8540d5895dcbef4157b82d__Precog_connection_properties)
-
-
-
-<a name="loio6e5f2255ae8540d5895dcbef4157b82d__Precog_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to Precog](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ad13c31e33ab498a9d014b766bd5eea2.html "To be able to successfully validate and use a connection to Precog for view building certain preparations have to be made.") :arrow_upper_right:
-
-
-
-<a name="loio6e5f2255ae8540d5895dcbef4157b82d__Precog_context"/>
-
-## Context
-
-Precog connections are partner connections and use the Open SQL schema to send data to SAP Datasphere. For more information, see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md).
 
 
 
@@ -36,7 +19,23 @@ Precog connections are partner connections and use the Open SQL schema to send d
 
 ## Supported Features
 
-The connection type supports creating views and entity-relationship models.
+You can use the connection to send data to SAP Datasphere via an Open SQL schema and local tables which you can add as a source to views \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
+
+
+
+<a name="loio6e5f2255ae8540d5895dcbef4157b82d__Precog_prerequisites"/>
+
+## Prerequisites
+
+Before you can use the connection, the following is required:
+
+-   In Precog, you have added the source for which you want to create the connection.
+
+-   In SAP Datasphere, you have added the necessary Precog IP addresses to the IP allowlist. For more information, see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:.
+
+    > ### Note:  
+    > You can find and copy the relevant IP addresses in the final step of the connection creation wizard.
+
 
 
 

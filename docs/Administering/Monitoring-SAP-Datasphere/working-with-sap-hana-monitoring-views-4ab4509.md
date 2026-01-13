@@ -298,7 +298,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     <tr>
     <td valign="top">
     
-    TZ
+    TZ\_NAME
     
     </td>
     <td valign="top">

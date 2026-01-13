@@ -12,7 +12,7 @@ Define the source for your replication flow \(connection, container, and objects
 
 ## Context
 
--   Connections are created by your system administration. You can only use a data source if a connection has been created for it in your space and if you have the necessary authorizations.
+-   Connections are created by your system administration. You can only use a data source if a connection has been created for it in your space and if you have the necessary authorizations. For more information about supported connection types, see [Source Connection Types for Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rfs=yes&connection_overview-rfs=via%20SAP%20ABAP%20Connections).
 
 -   Containers are the parent objects that hold the data:
 

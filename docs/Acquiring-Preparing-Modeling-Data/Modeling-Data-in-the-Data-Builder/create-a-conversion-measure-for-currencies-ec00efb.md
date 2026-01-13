@@ -109,7 +109,7 @@ The sources of your analytic model may have values in different currencies. You 
 
     -   a reference to a dimension that is mapped to an attribute of the fact with semantic type *Currency Code*.
 
-    -   a variable. For more information, see [Use Variables for Currency Conversion](use-variables-for-currency-conversion-0379a7c.md).
+    -   a variable. For more information, see [Use Variables for Conversion](use-variables-for-conversion-0379a7c.md).
 
 
     
@@ -129,7 +129,7 @@ The sources of your analytic model may have values in different currencies. You 
     -   a constant value, with a fixed date
 
     -   a reference to a dimension with data type *Date*
-    -   a variable. For more information, see [Use Variables for Currency Conversion](use-variables-for-currency-conversion-0379a7c.md).
+    -   a variable. For more information, see [Use Variables for Conversion](use-variables-for-conversion-0379a7c.md).
 
 
     

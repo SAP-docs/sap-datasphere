@@ -35,6 +35,8 @@ You can find objects globally by using the search bar and entering all or part o
 
 -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 
+-   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results accordingly. Natural language search is only available for the *Data Products* collection. See [Natural Language Search](natural-language-search-ea382a4.md).
+
 
 Filter the search results based on selected criteria to limit the number of results.
 
@@ -299,5 +301,5 @@ The information and actions available in each view differs. See [Information and
 
 [Installing Data Products](installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[System Monitoring and Data Access in the Catalog](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "Users with a catalog administrator role can monitor and update source systems that are connected to the catalog. They can also view and update the data and assets that are available in the catalog.") :arrow_upper_right:
+[Understanding Different Catalog Views](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "You can access the catalog from either the SAP Datasphere or the SAP Business Data Cloud cockpit systems. The system you choose to access the catalog determines the tasks you can perform to manage the source systems and the content you see.") :arrow_upper_right:
 

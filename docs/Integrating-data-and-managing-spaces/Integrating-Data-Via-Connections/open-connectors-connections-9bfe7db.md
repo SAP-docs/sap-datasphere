@@ -9,18 +9,10 @@ Use an *Open Connectors* connection to access data from sources that are connect
 
 This topic contains the following sections:
 
--   [Prerequisites](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_prerequisites_old)
 -   [Leveraging SAP Open Connectors for SAP Datasphere Connectivity](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_context)
 -   [Supported Features](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_usage)
+-   [Prerequisites](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_prerequisites)
 -   [Configuring Connection Properties](open-connectors-connections-9bfe7db.md#loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_connection_properties)
-
-
-
-<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to SAP Open Connectors](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/fb1aa1107f40429888a633bf940f4ad4.html "Integrate SAP Open Connectors with SAP Datasphere to be able to connect to third party data sources powered by SAP Open Connectors. ") :arrow_upper_right:
 
 
 
@@ -57,7 +49,7 @@ SAP Datasphere supports the following SAP Open Connectors hub categories:
 > 
 > -   For sources which SAP Datasphere natively supports with dedicated connection types, such as Amazon S3 or Microsoft SQL Server, use the corresponding SAP Datasphere connection type. We do not recommend using SAP Open Connectors connectivity in this case.
 > 
-> -   Input parameters are not supported for data flows. For resources with mandatory parameters the parameters have to be replaced in SAP Open Connectors, or the respective connector has to be cloned and adjusted to work without any mandatory parameter. For more information, see Setup Configuration and Parameters \(for custom connectors\) in the SAP Open Connectors documentation.
+> -   Input parameters are not supported for data flows. For resources with mandatory parameters the parameters have to be replaced in SAP Open Connectors, or the respective connector has to be cloned and adjusted to work without any mandatory parameter. For more information, see [Setup Configuration and Parameters](https://help.openconnectors.ext.hana.ondemand.com/home/element-builder-setup-configuration-and-parameters) \(for custom connectors\) in the *SAP Open Connectors* documentation.
 
 
 
@@ -92,6 +84,37 @@ You can use the connection to add source objects to a data flow.
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio9bfe7db51216449d985a0b59f5e181c4__Open_connectors_prerequisites"/>
+
+## Prerequisites
+
+1.  Set up an SAP BTP account and enable the SAP Integration Suite service with the SAP Open Connectors capability.
+
+    > ### Note:  
+    > You need to know your SAP BTP subaccount information \(provider, region, environment, trial - yes/no\) later to select the appropriate SAP BTP subaccount region in SAP Datasphere when integrating the SAP Open Connectors account in your space.
+
+    For information about setting up an SAP BTP trial version with the SAP Integration Suite service, see [Set Up Integration Suite Trial](https://developers.sap.com/tutorials/cp-starter-isuite-onboard-subscribe.html). To enable SAP Open Connectors, you need to activate the *Extend Non-SAP Connectivity* capability in the Integration Suite.
+
+    For information about setting up SAP Integration Suite from a production SAP BTP account, see [Initial Setup](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/sap.cp.integration.suite/en-US/3dcf507f92f54597bc203600bf8f94c5.html) in the *SAP Integration Suite* documentation.
+
+    For information about SAP Open Connectors availability in data centers, see SAP Note [2903776](https://me.sap.com/notes/2903776).
+
+2.  In your SAP Open Connectors account, create connector instances for the sources that you want to connect to SAP Datasphere.
+
+    For more information about creating an instance, see [Authenticate a Connector Instance \(UI\)](https://help.openconnectors.ext.hana.ondemand.com/home/authenticate-an-element-instance-ui) in the *SAP Open Connectors* documentation.
+
+    For more information about connector-specific setup and connector-specific properties required to create an instance, see [Connectors Catalog](https://help.openconnectors.ext.hana.ondemand.com/home/catalog) in the *SAP Open Connectors* documentation. There, click the connector in question and then *<connector name\> API Provider Setup* or *<connector name\> Authenticate a Connector Instance*.
+
+3.  In your SAP Open Connectors account, record the following information which you will require later in SAP Datasphere:
+
+    -   Organization secret and user secret - required when integrating the SAP Open Connectors account in your space.
+
+    -   Name of the connector instance - required when selecting the instance in the connection creation wizard
+
+
 
 
 

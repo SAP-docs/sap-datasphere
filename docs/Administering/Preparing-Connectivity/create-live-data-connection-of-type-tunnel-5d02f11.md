@@ -15,13 +15,13 @@ To securely connect and make http requests to SAP BW∕4HANA, you need to connec
 To create live data connections of type tunnel, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 -   *Connection* \(`CRUD-M--`\) - To create, read, update, and delete live data connections of type *Tunnel*.
 -   *Other Data Sources* \(`----E---`\) - To access the *Manage Live Data Connections* dialog.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
-In addition, consider the prerequisites 1 to 5 in [Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md).
+In addition, consider the prerequisites 1 to 5 in [Preparing SAP BW∕4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md).
 
 
 
@@ -75,7 +75,7 @@ In addition, consider the prerequisites 1 to 5 in [Preparing SAP BW/4HANA Model 
 
     -   Read authorizations for SAP BW∕4HANA metadata \(Queries, CompositeProviders and their InfoProviders\)
 
-        Using authorizations for SAP BW∕4HANA metadata, you can restrict a model transfer connection to a designated semantic SAP BW/4HANA area.
+        Using authorizations for SAP BW∕4HANA metadata, you can restrict a model transfer connection to a designated semantic SAP BW∕4HANA area.
 
         For more information, see [Overview: Authorization Objects](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.latest/en-US/4c658f3245e31ca6e10000000a42189c.html) in the SAP BW∕4HANA documentation.
 

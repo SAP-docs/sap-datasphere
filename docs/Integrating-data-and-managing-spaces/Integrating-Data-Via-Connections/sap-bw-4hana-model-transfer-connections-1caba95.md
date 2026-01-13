@@ -13,7 +13,7 @@ Use an *SAP BW/4HANA Model Transfer* connection to import analytic queries from 
 
 ## Prerequisites
 
-See: [Preparing SAP BW/4HANA Model Transfer Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/962de2f99d234967b8b10541599f00c6.html "Accessing SAP BW/4HANA meta data and importing models into SAP Datasphere with a SAP BW/4HANA Model Transfer connection requires two protocols (or endpoints): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.") :arrow_upper_right:
+See: [Preparing SAP BW∕4HANA Model Transfer Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/962de2f99d234967b8b10541599f00c6.html "Accessing SAP BW∕4HANA meta data and importing models into SAP Datasphere with a SAP BW∕4HANA Model Transfer connection requires two protocols (or endpoints): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.") :arrow_upper_right:
 
 
 
@@ -41,7 +41,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import semantically-rich entities from SAP BW/4HANA along with their supporting InfoObjects and CompositeProviders.
+You can use the connection to import semantically-rich entities from SAP BW∕4HANA along with their supporting InfoObjects and CompositeProviders.
 
 For more information, see:
 
@@ -88,9 +88,9 @@ Description
 
 Select the relevant live data connection of type tunnel. 
 
-A live data connection of type tunnel is required for a secure connection to SAP BW/4HANA with Cloud Connector and for accessing SAP BW/4HANA metadata with http requests. With Cloud Connector, the SAP BW/4HANA system doesn't need to be exposed to the internet in order to make the system accessible.
+A live data connection of type tunnel is required for a secure connection to SAP BW∕4HANA with Cloud Connector and for accessing SAP BW∕4HANA metadata with http requests. With Cloud Connector, the SAP BW∕4HANA system doesn't need to be exposed to the internet in order to make the system accessible.
 
-If the required connection is not available for selection, you or an administrator need to create the tunnel connection before you can create the SAP BW/4HANA Model Transfer connection.
+If the required connection is not available for selection, you or an administrator need to create the tunnel connection before you can create the SAP BW∕4HANA Model Transfer connection.
 
 For more information, see [Create Live Data Connection of Type Tunnel](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5d02f1103dd742aab5c0fc930debe51b.html "To securely connect and make http requests to SAP BW∕4HANA, you need to connect via Cloud Connector. This requires that you create a live data connection of type tunnel to the SAP BW∕4HANA system.") :arrow_upper_right:.
 
@@ -189,7 +189,7 @@ Description
 </td>
 <td valign="top">
 
-Specify whether to enable SSL encryption on connections to the remote SAP HANA database of the SAP BW/4HANA system. The default value is *true*. 
+Specify whether to enable SSL encryption on connections to the remote SAP HANA database of the SAP BW∕4HANA system. The default value is *true*. 
 
 To use SSL encryption with the remote SAP HANA database, the Data Provisioning Agent must already be correctly configured for SSL support.
 
@@ -313,5 +313,5 @@ You can now find your new connection in the list of the available connections fo
 
 
 > ### Note:  
-> In the view or data flow editor in the data builder, SAP BW/4HANA Model Transfer connections with their remote tables are not available as sources in the *Sources* tab of the source tree. Instead, as described above, the remote tables are available from the *Repository* tab.
+> In the view or data flow editor in the data builder, SAP BW∕4HANA Model Transfer connections with their remote tables are not available as sources in the *Sources* tab of the source tree. Instead, as described above, the remote tables are available from the *Repository* tab.
 

@@ -14,7 +14,7 @@ To create file spaces, you must have a global role that grants you the following
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
--   *User* \(`-R------`\) - To allow the creation of spaces.
+-   *User* \(`-R------`\) - To initialize the space for assigning users.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -79,7 +79,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     </td>
     <td valign="top">
     
-    Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).As the technical name will be displayed in the Open SQL Schema and in monitoring tools, including SAP internal tools, we recommend that you do not include sensitive business or personal data in the name.
+    Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).As the technical name will be displayed in the Open SQL Schema and in monitoring tools, including SAP internal tools, we recommend that you do not include sensitive business or personal data in the name.Once the space is created, the space ID cannot be changed.
     
     </td>
     </tr>
@@ -387,7 +387,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     
     \[read-only\] Indicates the application that is used by default to run a transformation flow in a file space.
 
-    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with local tables (file), shared local tables, and shared remote tables on a Delta Share runtime as sources, apply various transformations, and store the resulted dataset into another local table (file).") :arrow_upper_right:
+    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with local tables (file), shared local tables (file), shared local tables, and shared remote tables on a Delta Share runtime as sources, apply various transformations, and store the resulted dataset into another local table (file).") :arrow_upper_right:
     
     </td>
     </tr>
@@ -413,6 +413,8 @@ Users with an administrator role can create spaces, allocate compute resources a
 > -   If your file space and its data lake instance or Apache Spark instance run into communication errors, click *Deploy*.
 
 > ### Note:  
+> Each new file space is allocated with around 2 GB of storage \(even before you add data to the space\).
+> 
 > The total amount of storage consumed by the file space includes: local tables \(files\) \(total storage in MiB + buffer file size in MiB\), logs, and backups of deleted objects \(which are kept for 14 days after deletion\).
 > 
 > Local tables stored in a space of type *SAP HANA Database \(Disk and In-Memory\)* may have a different size than equivalent local tables \(files\) \(of type *SAP HANA Data Lake Files*\) stored on the object store as the compression rate is different. More importantly, having many previous versions available for your tables, will increase their size. This is why we recommend to do regular permanent data deletion \(vacuum\).

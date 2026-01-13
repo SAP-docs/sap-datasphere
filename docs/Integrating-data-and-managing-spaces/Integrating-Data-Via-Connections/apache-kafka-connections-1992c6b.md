@@ -10,17 +10,9 @@ Use the connection to connect to an Apache Kafka cluster.
 
 This topic contains the following sections:
 
--   [Prerequisites](apache-kafka-connections-1992c6b.md#loio1992c6b7154c4bc080d83c8977382ff4__Kafka_prerequisites_old)
 -   [Supported Features](apache-kafka-connections-1992c6b.md#loio1992c6b7154c4bc080d83c8977382ff4__Kafka_usage)
+-   [Prerequisites](apache-kafka-connections-1992c6b.md#loio1992c6b7154c4bc080d83c8977382ff4__Kafka_prerequisites)
 -   [Configuring Connection Properties](apache-kafka-connections-1992c6b.md#loio1992c6b7154c4bc080d83c8977382ff4__connection_properties)
-
-
-
-<a name="loio1992c6b7154c4bc080d83c8977382ff4__Kafka_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to Apache Kafka](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/1483cebf45a242aca94236240d94d2c7.html "To be able to successfully validate and use a connection to Apache Kafka (on-premise) for replication flows, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -52,7 +44,7 @@ Replication Flows
 
 You can use the connection to add target objects to a replication flow.
 
-For more information, see [Apache Kafka Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6df55db4028842c1b1866e709ffef456.html "If you use Apache Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [Apache Kafka Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6df55db4028842c1b1866e709ffef456.html "If you use Apache Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 > ### Note:  
 > You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
@@ -62,6 +54,16 @@ For more information, see [Apache Kafka Targets](https://help.sap.com/viewer/c8a
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio1992c6b7154c4bc080d83c8977382ff4__Kafka_prerequisites"/>
+
+## Prerequisites
+
+Before you can use the connection for replication flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to the Apache Kafka on-premise implementation.
 
 
 

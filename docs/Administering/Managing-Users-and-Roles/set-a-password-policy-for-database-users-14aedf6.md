@@ -15,7 +15,7 @@ Users with an administrator role can set a password policy to cause database use
 To set a password policy for database user passwords, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

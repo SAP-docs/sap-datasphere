@@ -39,7 +39,7 @@ The objects to be protected must have already been imported into your space. For
 
 See the following blogs for additional information about this feature:
 
--   For a general introduction, see [Introducing Remote Authorizations from SAP BW/4HANA for SAP Datasphere](https://blogs.sap.com/2021/09/23/introducing-remote-authorizations-from-sap-bw-4hana-for-sap-data-warehouse-cloud/) \(updated February 2022\).
+-   For a general introduction, see [Introducing Remote Authorizations from SAP BW∕4HANA for SAP Datasphere](https://blogs.sap.com/2021/09/23/introducing-remote-authorizations-from-sap-bw-4hana-for-sap-data-warehouse-cloud/) \(updated February 2022\).
 -   For information about leveraging SAP HANA-native analytical privileges in an open SQL schema in case of slow-running views or out of memory issues, see [HANA Analytical Privileges in SAP Datasphere – Part 1](https://blogs.sap.com/2023/01/02/hana-analytical-privileges-in-sap-dwc-part-1/) and [Part 2](https://blogs.sap.com/2023/01/05/hana-analytical-privileges-in-sap-dwc-part-2/) \(published January 2023\).
 
 

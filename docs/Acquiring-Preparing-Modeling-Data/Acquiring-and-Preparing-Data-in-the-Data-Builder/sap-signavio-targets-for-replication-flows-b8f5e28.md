@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# SAP Signavio Targets
+# SAP Signavio Targets for Replication Flows
 
 If you use SAP Signavio as the target for your replication flow, you need to consider the following additional specifics and conditions.
 

@@ -185,6 +185,11 @@ In addition, the following sub-tools require the *Catalog Administrator* role:
 -   Tag Hierarchies
 -   Monitoring
 
+The following sub-tools require the following roles:
+
+-   *Marketplace Data Products* requires *DW Administrator*, *DW Space Administrator*, or *DW Viewer*
+-   *Metadata Extraction* requires*Catalog Administrator*
+
 
 
 </td>

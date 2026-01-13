@@ -24,7 +24,7 @@ You can access the Open SQL Schema that has been generated for the partner conne
 **Related Information**  
 
 
-[Adverity Connections](adverity-connections-63e9ff5.md "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.")
+[Adverity Connections](adverity-connections-63e9ff5.md "Use an Adverity connection to extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity. Adverity connections are partner connections and use the Open SQL schema to send data to SAP Datasphere.")
 
-[Precog Connections](precog-connections-6e5f225.md "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.")
+[Precog Connections](precog-connections-6e5f225.md "Use a Precog connection to extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog. Precog connections are partner connections and use the Open SQL schema to send data to SAP Datasphere.")
 

@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Secure File Transfer Protocol \(SFTP\) as Targets for Your Replication Flows
+# Secure File Transfer Protocol \(SFTP\) for Replication Flows
 
 You want to replicate data using a secure file transfer protocol \(SFTP\) for secure and reliable file transfers.
 
@@ -156,57 +156,25 @@ Orient
 
 The system automatically adds the following columns to the schema of the target table:
 
+-   *\_\_operation\_type*: Identifies the type of target row:
+    -   *L*: Written as part of the initial load.
 
-<table>
-<tr>
-<th valign="top">
+    -   *I*: New source row added after the initial load completed.
 
-Column
+    -   *U*: Update to a source row after the initial load completed.
 
-</th>
-<th valign="top">
+        > ### Note:  
+        > SAP S/4HANA and other ABAP sources do not distinguish between Insert \(*I*\) and Update \(*U*\), and both operations are identified as Upserts \(U\). If you apply SAP Note [3044005](https://me.sap.com/notes/3044005) the system identifies all upserts as *A*. The `APE_KEEP_UPDATE_OPERATION` parameter is described in the SAP Note.
 
-Data Type
+    -   *B*: Before image of an update to a source row after the initial load completed. These records are only sent by some sources \(such as SAP HANA\) and only when the after image of the update is not passing the filters specified in the replication task.
 
-</th>
-</tr>
-<tr>
-<td valign="top">
+    -   *X*: Source row deleted after the initial load completed. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
 
-\_\_operation\_type
+    -   *M*: Archiving operations after the initial load completed.
 
-</td>
-<td valign="top">
 
-String
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-\_\_sequence\_number
-
-</td>
-<td valign="top">
-
-Unit64
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-\_\_timestamp
-
-</td>
-<td valign="top">
-
-Timestamp
-
-</td>
-</tr>
-</table>
+-   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is populated only for the following source systems: Microsoft Azure SQL, Microsoft SQL Server \(MSSQL\) and SAP HANA.
+-   *\_\_timestamp*: The UTC date and time the system wrote the row.
 
 These columns are needed to capture changes in the source so that they can be replicated to the target, and you cannot change their names or settings.
 

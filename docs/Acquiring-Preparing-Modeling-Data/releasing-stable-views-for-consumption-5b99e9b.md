@@ -77,7 +77,7 @@ You may not remove columns, parameters, or associations, or make other changes t
 
 Once a view has been released, you can deprecate it at any time, but you must select a successor view that consumer objects can migrate to during the deprecation period:
 
-1.  In the *Release State* field, select *Released*.
+1.  In the *Release State* field, select *Deprecated*.
 2.  In the *Successor* field, click the *Value Help* button, select a view to replace the current released view, and click *OK*.
 3.  Click *Save*.
 
@@ -86,6 +86,9 @@ Once a view has been released, you can deprecate it at any time, but you must se
 4.  Click *Save as Deprecated* to confirm the change.
 
     Deprecated views have an information strip at the top of the editor to inform modelers that only limited changes can be made to them and to guide consumers to the successor view.
+
+    > ### Note:  
+    > It is not possible to change the successor once view is saved with a *Release State* of *Deprecated*. If you do find it necessary to provide a different successor, then you must revert the view to *Released* and then deprecate it again, at which point you can select the new successor.
 
 
 

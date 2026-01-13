@@ -57,7 +57,7 @@ Additional Information and Prerequisites
 <tr>
 <td valign="top">
 
-[Adverity Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/63e9ff5825384a03979666dbc3e715f2.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity.") :arrow_upper_right:
+[Adverity Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/63e9ff5825384a03979666dbc3e715f2.html "Use an Adverity connection to extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity. Adverity connections are partner connections and use the Open SQL schema to send data to SAP Datasphere.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -393,7 +393,7 @@ no
 <tr>
 <td valign="top">
 
-[Generic JDBC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use a Generic JDBC connection to access data from tables and views in any supported data source for which a JDBC driver is available.") :arrow_upper_right:
+[Generic JDBC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eeae3aca6d0040149f7b1e658c434f15.html "Use a Generic JDBC connection to access data from tables and views in any supported data source for which a JDBC driver is available. You can use this connection type to connect to most databases that have SQL-based data types and functions, and a JDBC driver. If a specific connection type is available for your database in SAP Datasphere, we recommend to use the specific connection type instead of Generic JDBC.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -939,7 +939,7 @@ no
 <tr>
 <td valign="top">
 
-[Precog Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6e5f2255ae8540d5895dcbef4157b82d.html "Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog.") :arrow_upper_right:
+[Precog Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6e5f2255ae8540d5895dcbef4157b82d.html "Use a Precog connection to extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Precog. Precog connections are partner connections and use the Open SQL schema to send data to SAP Datasphere.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1070,7 +1070,7 @@ no
 </td>
 <td valign="top">
 
-yes \(for model import - to connect to the SAP HANA database of SAP BW/4HANA\)
+yes \(for model import - to connect to the SAP HANA database of SAP BW∕4HANA\)
 
 </td>
 <td valign="top">
@@ -1080,7 +1080,7 @@ no
 </td>
 <td valign="top">
 
-yes \(for model import - to make http requests to SAP BW/4HANA\)
+yes \(for model import - to make http requests to SAP BW∕4HANA\)
 
 </td>
 <td valign="top">
@@ -1100,7 +1100,7 @@ no
 </td>
 <td valign="top">
 
-[Preparing SAP BW/4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md)
+[Preparing SAP BW∕4HANA Model Transfer Connectivity](preparing-sap-bw-4hana-model-transfer-connectivity-962de2f.md)
 
 </td>
 </tr>

@@ -12,7 +12,7 @@ Use the catalog *Data Product* collection to view data products for use in your 
 
 ## Prerequisites
 
-Your SAP Datasphere system must be part of an SAP Business Data Cloud formation \(see [Integrating Data from SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:\).
+Your SAP Datasphere system must be part of an SAP Business Data Cloud formation \(see [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:\).
 
 A user with an administrator role must choose the spaces to which the data product can be installed \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
 
@@ -49,15 +49,19 @@ After you've evaluated and found a data product, you can install it to your spac
 
 <!-- dataproduct\_installdspspace -->
 
-## Installing a Data Product to a Space
+## Installing a Data Product
 
 
 
-<a name="dataproduct_installdspspace__context_hzr_g2n_gcc"/>
+## Prerequisites
 
-## Context
+Before you install the data product to your modelling space, check its statuses to make sure you can install it:
 
-You can install data products that have both an *Active* release status and a *Current* functional status to a space in the SAP Datasphere system you're using. To do this, select the appropriate API. If a data product has an *Inactive* release status, you can't install it. In this case, ask your administrator for help.
+-   The data product has the following statuses: release status is *Active*, the lifecycle status is *Active*, and the functional status is *Current*.
+-   The data product's API functional status is *Current*.
+
+    Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
+
 
 
 
@@ -65,31 +69,24 @@ You can install data products that have both an *Active* release status and a *C
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
 2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
-3.  When you find the data product you want, check that the release status is *Active*, the lifecycle status is *Active*, and the functional status is *Current*, and then select it.
+3.  When you find the data product you want, select it.
 
     On its details page, you can review the list of APIs by choosing the tab *Overview* \> *Details*.
 
-4.  For the row you want, check that the functional status is *Current*, and then select the *Install* action, and the *Import Entities* wizard will open.
+4.  For the API you want, select the *Install* action and the *Import Entities* wizard will open.
 
     > ### Tip:  
     > If you're reviewing the details of a particular API, you can select the *Install* button from the API details page.
-
-    > ### Note:  
-    > Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
 
 5.  Select a target space and select *Next Step*.
 
 6.  On the *Review Entities* page, review the objects that you will import and then choose the method you want for accessing the data.
 
     -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
-
-        > ### Note:  
-        > Ensure that you select a space with the storage and capabilities that fit your needs \(see [Creating Spaces and Allocating Resources](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2ace657356d54199b0b87d2327b1a70b.html "Users with an administrator role can create spaces and allocate resources to them.") :arrow_upper_right:\).
-
     -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
 
     You'll be able to see a list of all the objects that will be created in the *Data Builder*.
@@ -111,7 +108,7 @@ You can install data products that have both an *Active* release status and a *C
 
 ## Results
 
-The data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space.
+The data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space. For more information about spaces, see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
 
 -   Navigate to the objects in the *Repository Explorer* and review the data based on how you chose to access it.
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
@@ -235,7 +232,7 @@ Follow these steps for changing the method for how you access data for your data
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
 2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
@@ -266,7 +263,7 @@ Follow these steps for changing the method for how you access data for your data
 
 <!-- dataproduct\_uninstalldspspace -->
 
-## Uninstalling a Data Product from an SAP Datasphere Space
+## Uninstalling a Data Product
 
 
 
@@ -285,13 +282,13 @@ Remove all dependent objects for the data product before you uninstall a data pr
 If you no longer need a data product in a particular space, you can uninstall it.
 
 > ### Note:  
-> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a custom Delta Share data product \(that was created in the Data Sharing Cockpit\) changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator. For more information about custom Delta Share data products, see [Creating Custom Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: in the **Data Marketplace - Data Provider's Guide**.
+> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a custom Delta Share data product \(that was created in the Data Sharing Cockpit\) changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator. For more information about custom Delta Share data products, see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: in the **Data Marketplace - Data Provider's Guide**.
 
 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
 2.  In the SAP Datasphere catalog, search for the data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
@@ -354,6 +351,8 @@ If you no longer need a data product in a particular space, you can uninstall it
 
 **Related Information**  
 
+
+[Space Types](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/24aebd7222ab4d3386c5c280f61baa6e.html "While a user with an administrator role can create spaces in your SAP Datasphere tenant, certain other spaces can be created automatically to support specific features.") :arrow_upper_right:
 
 [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:
 

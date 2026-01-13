@@ -7,13 +7,11 @@ Use an *SAP Fieldglass* connection to retrieve data from SAP Fieldglass.
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
 
-
-<a name="loiobda94ee6c9d5403f8556af174399d221__section_yjk_zk5_rrb"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to SAP Fieldglass](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03ca23660b5d4b69960f264f5c31990e.html "To be able to successfully validate and use a connection to SAP Fieldglass for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+-   [Supported Features](sap-fieldglass-connections-bda94ee.md#loiobda94ee6c9d5403f8556af174399d221__Oracle_usage)
+-   [Prerequisites](sap-fieldglass-connections-bda94ee.md#loiobda94ee6c9d5403f8556af174399d221__Oracle_prerequisites)
+-   [Configuring Connection Properties](sap-fieldglass-connections-bda94ee.md#loiobda94ee6c9d5403f8556af174399d221__Oracle_connection_properties)
 
 
 
@@ -65,7 +63,24 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loiobda94ee6c9d5403f8556af174399d221__section_nrb_hcc_x4b"/>
+<a name="loiobda94ee6c9d5403f8556af174399d221__Oracle_prerequisites"/>
+
+## Prerequisites
+
+
+
+### Remote Tables
+
+Before you can use the connection for remote tables, the following is required:
+
+-   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the CloudDataIntegrationAdapter.
+
+    For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+
+
+
+
+<a name="loiobda94ee6c9d5403f8556af174399d221__Oracle_connection_properties"/>
 
 ## Configuring Connection Properties
 

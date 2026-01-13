@@ -645,7 +645,7 @@ Description
 <tr>
 <td valign="top">
 
-*Start Time*
+*Start Date and Time*
 
 </td>
 <td valign="top">
@@ -657,12 +657,12 @@ Date and hour the task has started to run.
 <tr>
 <td valign="top">
 
-*Duration \(sec\)*
+*Duration*
 
 </td>
 <td valign="top">
 
-How many seconds the task has run.
+How long the task has run \(formatted as hh:mm:ss\).
 
 </td>
 </tr>
@@ -717,7 +717,7 @@ Name of the object. Click on the object name to open the object in the *Data Bui
 <tr>
 <td valign="top">
 
-*SAP HANA Peak Memory*
+*SAP HANA Peak Memory \(MiB\)*
 
 </td>
 <td valign="top">
@@ -741,7 +741,7 @@ Maximum amount of memory \(in MiB\) the task has used during the runtime in SAP 
 <tr>
 <td valign="top">
 
-*SAP HANA CPU Time*
+*SAP HANA CPU Time \(ms\)*
 
 </td>
 <td valign="top">
@@ -785,7 +785,7 @@ Number of records of the target table after the task has finished running.
 <tr>
 <td valign="top">
 
-*SAP HANA Used Memory*
+*SAP HANA Used Memory \(MiB\)*
 
 </td>
 <td valign="top">
@@ -797,7 +797,7 @@ Amount of memory \(in MiB\) that is used by the target table in SAP HANA after t
 <tr>
 <td valign="top">
 
-*SAP HANA Used Disk*
+*SAP HANA Used Disk \(MiB\)* 
 
 </td>
 <td valign="top">

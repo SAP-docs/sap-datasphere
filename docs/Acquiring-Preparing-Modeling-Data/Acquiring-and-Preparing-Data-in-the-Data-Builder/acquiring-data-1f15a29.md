@@ -51,7 +51,7 @@ Many connections \(including most connections to SAP systems\) support loading d
 
 Data flows support a wide range of extract, transform, and load \(ETL\) operations.
 
--   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor. See see [Creating a Data Flow](creating-a-data-flow-e30fd14.md).
+-   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor. See [Creating a Data Flow](creating-a-data-flow-e30fd14.md).
 -   To add a source to your data flow, drag it from the *Source Browser* \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
 -   In addition to connections, data flows can load and transform data from the following kinds of sources:
     -   Open SQL schemas \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\)
@@ -84,9 +84,16 @@ The *Import Entities* wizard allows you to import entities from SAP S/4HANA Clou
 
 ## Acquire Data from SAP BW and SAP BW Bridge
 
-The *Import Entities* wizard allows you to import entities from SAP BW∕4HANA and SAP BW bridge systems with rich metadata. See [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
+If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from SAP BW and SAP BW∕4HANA with the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cca4744c85b14788babe7cb6b77c9973.html "In the SAP Datasphere component of SAP Business Data Cloud, you can work with data and objects received from SAP BW and SAP BW∕4HANA systems via the Data Product Generator for SAP Business Data Cloud.") :arrow_upper_right:.
 
-If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then data can also be pushed from SAP BW via the data product generator for SAP Business Data Cloud. See [Integrating Data from SAP BW and SAP BW/4HANA with the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cca4744c85b14788babe7cb6b77c9973.html "In the SAP Datasphere component of SAP Business Data Cloud, you can work with data and objects received from SAP BW and SAP BW/4HANA systems via the Data Product Generator for SAP Business Data Cloud.") :arrow_upper_right:.
+You can enable the SAP Datasphere, SAP BW Bridge option to access SAP BW and SAP BW∕4HANA functionalities in the public cloud, and to import SAP BW bridge data models into SAP Datasphere. See [Getting Started With SAP Datasphere, SAP BW Bridge](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/32b4861ce7d94ebd9f5abd854691582f.html "SAP Datasphere, SAP BW bridge enables you to use SAP BW functionality in the public cloud, and to import SAP BW bridge data models into SAP Datasphere.") :arrow_upper_right:.
+
+You can use the *Import Entities* wizard to import entities from SAP BW∕4HANA and SAP BW bridge systems with rich metadata. See [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
+
+For older SAP BW versions, you can use an SAP BW or SAP ABAP connection to import data. See:
+
+-   [SAP BW Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e589041e80264f43b6c209c407336376.html "Use an SAP BW connection to access data from virtual tables through RFC for ODP sources (extractors) and ABAP Dictionary tables from SAP Business Warehouse (SAP BW) or SAP BW∕4HANA systems. For SAP BW systems that don't have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.") :arrow_upper_right:
+-   [SAP ABAP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.") :arrow_upper_right: \(including support for replication flows\)
 
 
 
@@ -134,7 +141,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
 
     -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 
-    -   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results appropriately. See [Natural Language Search](../Creating-Finding-Sharing-Objects/natural-language-search-04170c6.md).
+    -   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results accordingly. See [Natural Language Search](../Creating-Finding-Sharing-Objects/natural-language-search-04170c6.md).
 
 
 -   Click a column header to sort or filter the list by values in the column.

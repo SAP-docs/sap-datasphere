@@ -19,9 +19,9 @@ This topic contains the following sections:
 
 A role represents the main tasks that a user performs in SAP Datasphere. Each role has a set of privileges with appropriate levels of permissions. The privileges represent areas of the application like the *Space Management* or the *Business Builder* and the files or objects created in those areas.
 
-The standard roles provide sets of privileges and permissions that are appropriate for that role. For example, the *DW Administrator* role has all the *Spaces* permissions, while the *DW Viewer* role has none.
+The standard roles that are delivered with SAP Datasphere provide sets of privileges and permissions that are appropriate for that role. For example, the *DW Administrator* role template has all the *Spaces* permissions, while the *DW Viewer* role has none.
 
-You can use the standard roles \(see [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)\) and create your own custom roles to group together other sets of privileges and permissions \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
+You can use the standard roles as templates \(see [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)\) and create your own custom roles to group together other sets of privileges and permissions \(see [Create a Custom Role](create-a-custom-role-862b88e.md)\).
 
 **Global versus scoped privileges** - Global privileges are privileges that are used at the tenant level and are not space-related, and can therefore be included in a global role, typically a tenant administrator role. Scoped privileges are privileges that are space-related and can therefore be included in a scoped role.
 

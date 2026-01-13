@@ -16,7 +16,7 @@ To create spaces, you must have a global role that grants you the following priv
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
--   *User* \(`-R------`\) - To allow the creation of spaces.
+-   *User* \(`-R------`\) - To initialize the space for assigning users.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -72,7 +72,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
     </td>
     <td valign="top">
     
-    Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).As the technical name will be displayed in the Open SQL Schema and in monitoring tools, including SAP internal tools, we recommend that you do not include sensitive business or personal data in the name.
+    Enter the technical name of the space. Can contain a maximum of 20 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). Unless advised to do so, must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_ \(See [Rules for Technical Names](rules-for-technical-names-982f9a3.md)\).As the technical name will be displayed in the Open SQL Schema and in monitoring tools, including SAP internal tools, we recommend that you do not include sensitive business or personal data in the name.Once the space is created, the space ID cannot be changed.
     
     </td>
     </tr>
@@ -293,6 +293,10 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
     All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\). Either an administrator or a user with space administrator privileges can do so.
 
-8.  \[optional\] The properties in the *Workload Management* section are set with their default values. To change them, go in the side navigation area and click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \(see [Set Priorities and Statement Limits for Spaces or Groups](set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md)\).
 
+
+
+## Next Steps
+
+You can manage priorities and statement limits by space or group of processes in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \(see [Set Priorities and Statement Limits for Spaces or Groups](set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md)\).
 

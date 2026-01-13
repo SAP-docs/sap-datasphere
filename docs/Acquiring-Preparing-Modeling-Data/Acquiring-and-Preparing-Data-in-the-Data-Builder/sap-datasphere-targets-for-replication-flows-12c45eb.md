@@ -1,6 +1,6 @@
 <!-- loio12c45eb2659f4069b29ef4d69bdd9070 -->
 
-# SAP Datasphere Targets
+# SAP Datasphere Targets for Replication Flows
 
 If you use the local repository \(SAP Datasphere\) as the target for your replication flow, you need to consider additional specifics and conditions.
 

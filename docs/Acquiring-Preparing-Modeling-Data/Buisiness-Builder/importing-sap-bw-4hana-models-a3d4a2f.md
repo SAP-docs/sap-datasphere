@@ -9,7 +9,7 @@ You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere
 
 
 > ### Note:  
-> The import of SAP BW/4HANA models is also integrated in the Import Entities wizard, which can be accessed from the Data Builder and the Repository Explorer. When you use the Import Entities wizard to import SAP BW∕4HANA models, you can also import InfoProviders besides analytic queries. Note that this is only supported for SAP BW∕4HANA 2.0. For information on the Import Entities wizard, see [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
+> The import of SAP BW∕4HANA models is also integrated in the Import Entities wizard, which can be accessed from the Data Builder and the Repository Explorer. When you use the Import Entities wizard to import SAP BW∕4HANA models, you can also import InfoProviders besides analytic queries. Note that this is only supported for SAP BW∕4HANA 2.0. For information on the Import Entities wizard, see [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md).
 
 The import of SAP BW∕4HANA models enables you to re-use existing metadata and data from SAP BW∕4HANA systems so that you can include this metadata and data in SAP Datasphere without having to rebuild them manually. To enable interaction between SAP Datasphere and SAP BW∕4HANA, we need to ensure that SAP Datasphere and SAP BW∕4HANA understand each other. This requires a transformation of metadata of entities from SAP BW∕4HANA to the definition of entities known in SAP Datasphere.
 

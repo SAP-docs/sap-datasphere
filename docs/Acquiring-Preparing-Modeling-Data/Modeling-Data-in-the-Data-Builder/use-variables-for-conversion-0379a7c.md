@@ -1,8 +1,8 @@
 <!-- loio0379a7c741134bcca303a8002b5d46c5 -->
 
-# Use Variables for Currency Conversion
+# Use Variables for Conversion
 
-For currency conversion measures, you can define variables for the target currency, the reference date, and the exchange rate type.
+For conversion measures, you can define variables for the target currency, the reference date, and the exchange rate type for currency conversion, and the target unit for unit conversion.
 
 
 
@@ -12,13 +12,14 @@ For currency conversion measures, you can define variables for the target curren
 
 2.  You can then select an existing variable or create a new variable.
 
-3.  To create a new variable, select *Create new Source Variable*. The new variable is added to the variable section of the currency conversion measure.
+3.  To create a new variable, select *Create new Standard Variable*. The new variable is added to the variable section of the conversion measure.
 
 4.  Edit the properties of the new variable: choose how the variable should be filled:
 
     -   *Manual Input*
     -   *Derive Value*
 
+    -   *Dynamic Default*
 
 5.  If you want to derive the value, you need to
 

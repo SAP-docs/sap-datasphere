@@ -614,3 +614,8 @@ The technical target column is not added to a target table for Apache Kafka, as 
 > ### Note:  
 > Multiple replications \(for example due to restarting or undeploying and redeploying a replication flow\) result in different \_\_load\_record\_id values for the same source record.
 
+**Specify primary key columns for Initial and Delta load types, and ODP objects**: The source files do not have a primary key defined, while the target tables need to have a primary key. Consequently, you have to specify the primary key columns for the target. To do so, select the relevant object, then choose *Configure Schema* \(in the *Source Schema Settings* section of the properties panel\) and mark the relevant columns as key columns.
+
+> ### Note:  
+> If your replication flow consumes multiple objects, we recommend using a common pattern and schema to avoid mixing unrelated datasets \(for example, "Employees" and "Sales" tables\).
+

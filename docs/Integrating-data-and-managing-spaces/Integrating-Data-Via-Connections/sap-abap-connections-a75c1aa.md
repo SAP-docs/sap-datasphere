@@ -10,17 +10,10 @@ Use an *SAP ABAP* connection to access data from SAP ABAP on-premise systems thr
 
 This topic contains the following sections:
 
--   [Prerequisites](sap-abap-connections-a75c1aa.md#loioa75c1aacf951449ba3b740c7e46da3a9__ABAP_prerequisites_old)
 -   [Supported Features](sap-abap-connections-a75c1aa.md#loioa75c1aacf951449ba3b740c7e46da3a9__ABAP_usage)
 -   [Configuring Connection Properties](sap-abap-connections-a75c1aa.md#loioa75c1aacf951449ba3b740c7e46da3a9__connection_properties)
 
-
-
-<a name="loioa75c1aacf951449ba3b740c7e46da3a9__ABAP_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+For information about the required prerequisites, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -58,7 +51,7 @@ You can use the connection to add source objects to a replication flow.
 For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
 
 > ### Note:  
-> SAP BW and SAP ECC connection types don't support replication flows, but you can use *SAP ABAP* connections for replication flows from SAP BW, SAP BW/4HANA or SAP ECC systems.
+> SAP BW and SAP ECC connection types don't support replication flows, but you can use *SAP ABAP* connections for replication flows from SAP BW, SAP BW∕4HANA or SAP ECC systems.
 
 You can access the following data:
 

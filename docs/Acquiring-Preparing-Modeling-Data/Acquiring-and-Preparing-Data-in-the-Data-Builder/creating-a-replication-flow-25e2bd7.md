@@ -123,7 +123,7 @@ For more information about connection types that can be used for adding sources 
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -384,13 +384,13 @@ For more information about connection types that can be used for adding sources 
     > ### Note:  
     > Some further properties are only relevant for specific types of targets. You can find a list of these properties in the detailed information for the respective targets:
     > 
-    > -   [Cloud Storage Provider Targets](cloud-storage-provider-targets-43d93a2.md)
+    > -   [Cloud Storage Provider Targets for Replication Flows](cloud-storage-provider-targets-for-replication-flows-43d93a2.md)
     > 
-    > -   [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
+    > -   [Google BigQuery Targets for Replication Flows](google-bigquery-targets-for-replication-flows-56d4472.md)
     > 
-    > -   [Apache Kafka Targets](apache-kafka-targets-6df55db.md).
+    > -   [Apache Kafka Targets for Replication Flows](apache-kafka-targets-for-replication-flows-6df55db.md).
     > 
-    > -   [Secure File Transfer Protocol \(SFTP\) as Targets for Your Replication Flows](secure-file-transfer-protocol-sftp-as-targets-for-your-replicati-5a14eb1.md)
+    > -   [Secure File Transfer Protocol \(SFTP\) for Replication Flows](secure-file-transfer-protocol-sftp-for-replication-flows-5a14eb1.md)
 
 6.  Click <span class="FPA-icons-V3"></span> \(Save\).
 

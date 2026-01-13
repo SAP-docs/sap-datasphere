@@ -381,7 +381,7 @@ Manage the lifecycle of your data products.
 
 [Preparing your Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 
-[Creating Custom Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
+[Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -412,7 +412,7 @@ Manage the lifecycle for a data product from one of the data providers you manag
 
 [Preparing your Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e5cdfc3cf098402ca5d77b6be262761b.html "Prepare the data products you want to offer to your consumers.") :arrow_upper_right:
 
-[Creating Custom Data Products](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
+[Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right:
 
 </td>
 </tr>

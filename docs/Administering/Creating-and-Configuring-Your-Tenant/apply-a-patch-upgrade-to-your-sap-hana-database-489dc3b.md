@@ -15,8 +15,7 @@ As an SAP Datasphere administrator, you can manually upgrade your SAP HANA datab
 To manually upgrade your SAP HANA database, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
--   *System Information* \(`-RU-----`\) - To access the areas *Administration*, *Configuration*, and *About* \(including the *More* area\) in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access *More* in the *About* area of the *System* tool.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

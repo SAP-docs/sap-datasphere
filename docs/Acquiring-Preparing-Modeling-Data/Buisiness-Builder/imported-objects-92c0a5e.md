@@ -11,7 +11,7 @@ Overview of metadata mapping and the deployment status after model transfer
 <tr>
 <th valign="top" colspan="2">
 
-SAP BW/4HANA
+SAP BW∕4HANA
 
 </th>
 <th valign="top" colspan="2">

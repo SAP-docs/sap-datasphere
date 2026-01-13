@@ -12,7 +12,7 @@ Select a target \(connection and container\) to define the target environment fo
 
 ## Context
 
--   Connections are created by your system administration. You can only use a target if a connection has been created for it in your space and if you have the necessary authorizations. For more information about connections and connection types, see [Integrating Data via Connections](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/eb85e157ab654152bd68a8714036e463.html).
+-   Connections are created by your system administration. You can only use a target if a connection has been created for it in your space and if you have the necessary authorizations. For more information about supported connection types, see [Target Connection Types for Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rft=yes).
 
 -   Containers are the parent objects that hold the data. For more information, see the documentation for the individual target types.
 
@@ -27,7 +27,7 @@ Select a target \(connection and container\) to define the target environment fo
 
 3.  For some types of targets, the container is predefined and cannot be changed. For any other target, click *Browse target container*. A list of available containers appears. Select the relevant one for your use case. To narrow down the selection, start typing a part of the container name in the *Search* field.
 
-    For more information, see the documentation for your target type, for example [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md).
+    For more information, see the documentation for your target type, for example [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-for-replication-flows-12c45eb.md).
 
 4.  Review the target settings and properties and change or complete them as appropriate.
 

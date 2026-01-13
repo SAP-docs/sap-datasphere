@@ -33,7 +33,7 @@ The *DW Administrator* role, for example, grants these privileges.
 
 A combination of a global role and a scoped role:
 
--   A global role that grants you the following privilege:
+-   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
 
@@ -43,7 +43,7 @@ A combination of a global role and a scoped role:
     -   *Data Warehouse Data Builder* \(`-R------`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
 
 
-The *DW Space Administrator* global and scoped role templates, for example, grant this combination of privileges.
+The *DW Space Administrator* role template, for example, grants this combination of privileges.
 
 </td>
 </tr>
@@ -116,7 +116,7 @@ See [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e159265512
 </td>
 <td valign="top">
 
-The definition of a local table contains the structure of the table only, and does not have dependencies on any other objects.
+The definition of a local table without delta capture contains the structure of the table only, and does not have dependencies on any other objects. The definition of a local table with delta capture enabled contains the definition of an additional internal table with the suffix `_Delta`. When you export a table with delta capture enabled, this table is exported too.
 
 </td>
 </tr>

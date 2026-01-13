@@ -1,16 +1,16 @@
 <!-- loio962de2f99d234967b8b10541599f00c6 -->
 
-# Preparing SAP BW/4HANA Model Transfer Connectivity
+# Preparing SAP BW∕4HANA Model Transfer Connectivity
 
-Accessing SAP BW/4HANA meta data and importing models into SAP Datasphere with a SAP BW/4HANA Model Transfer connection requires two protocols \(or endpoints\): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.
+Accessing SAP BW∕4HANA meta data and importing models into SAP Datasphere with a SAP BW∕4HANA Model Transfer connection requires two protocols \(or endpoints\): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.
 
 For accessing SAP BW∕4HANA, http is used to securely connect to the SAP BW∕4HANA system via Cloud Connector, and SAP HANA SQL is used to connect to the SAP HANA database of SAP BW∕4HANA via Data Provisioning Agent. Using Cloud Connector to make http requests to SAP BW∕4HANA requires a live data connection of type tunnel to SAP BW∕4HANA.
 
-For information on supported SAP BW/4HANA source versions, see [Available Source Versions for SAP BW/4HANA Model Transfer Connections](available-source-versions-for-sap-bw-4hana-model-transfer-connections-4aefe38.md).
+For information on supported SAP BW∕4HANA source versions, see [Available Source Versions for SAP BW∕4HANA Model Transfer Connections](available-source-versions-for-sap-bw-4hana-model-transfer-connections-4aefe38.md).
 
 
 
-Before creating a connection for SAP BW/4HANA Model Transfer in SAP Datasphere, you need to prepare the following:
+Before creating a connection for SAP BW∕4HANA Model Transfer in SAP Datasphere, you need to prepare the following:
 
 1.  In SAP BW∕4HANA, make sure that the following services are active in transaction code SICF:
 

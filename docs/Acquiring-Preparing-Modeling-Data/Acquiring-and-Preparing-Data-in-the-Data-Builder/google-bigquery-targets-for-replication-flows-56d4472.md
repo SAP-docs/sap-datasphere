@@ -1,6 +1,6 @@
 <!-- loio56d4472a0e1f44d58e07ca26ab666328 -->
 
-# Google BigQuery Targets
+# Google BigQuery Targets for Replication Flows
 
 If you use Google BigQuery as the target for your replication flow, you need to consider the following additional specifics and conditions.
 
@@ -14,17 +14,17 @@ If you use Google BigQuery as the target for your replication flow, you need to 
 
 This topic contains the following sections:
 
--   [General Properties](google-bigquery-targets-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_General) 
+-   [General Properties](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_General) 
 
--   [Target Tables](google-bigquery-targets-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetTables) 
+-   [Target Tables](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetTables) 
 
--   [Target Columns](google-bigquery-targets-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetColumns) 
+-   [Target Columns](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetColumns) 
 
--   [Data Types](google-bigquery-targets-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_DataTypes) 
+-   [Data Types](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_DataTypes) 
 
--   [Primary Key](google-bigquery-targets-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_PrimaryKey) 
+-   [Primary Key](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_PrimaryKey) 
 
--   [SQL Statement](google-bigquery-targets-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_SQL) 
+-   [SQL Statement](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_SQL) 
 
 
 

@@ -2,33 +2,16 @@
 
 # Adverity Connections
 
-Extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity. 
+Use an *Adverity* connection to extend connectivity beyond SAP Datasphere standard remote connectivity and cover additional data sources that are available with Adverity. Adverity connections are partner connections and use the Open SQL schema to send data to SAP Datasphere.
 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 This topic contains the following sections:
 
--   [Prerequisites](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_prerequisites_old)
--   [Context](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_context)
 -   [Supported Features](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_usage)
+-   [Prerequisites](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_prerequisites)
 -   [Configuring the Partner Connection](adverity-connections-63e9ff5.md#loio63e9ff5825384a03979666dbc3e715f2__Adverity_connection_properties)
-
-
-
-<a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to Adverity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a37a758eba3340f7a021d7e04af62c4c.html "To be able to successfully validate and use a connection to Adverity for view building certain preparations have to be made.") :arrow_upper_right:
-
-
-
-<a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_context"/>
-
-## Context
-
-Adverity connections are partner connections and use the Open SQL schema to send data to SAP Datasphere. For more information, see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md).
 
 
 
@@ -36,7 +19,26 @@ Adverity connections are partner connections and use the Open SQL schema to send
 
 ## Supported Features
 
-The connection type supports creating views and entity-relationship models.
+You can use the connection to send data to SAP Datasphere via an Open SQL schema and local tables which you can add as a source to views \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
+
+
+
+<a name="loio63e9ff5825384a03979666dbc3e715f2__Adverity_prerequisites"/>
+
+## Prerequisites
+
+In Adverity, an administrator must:
+
+-   prepare a datastream in an Adverity workspace. The datastream must connect to the data source for which you want to create the connection.
+
+
+In SAP Datasphere, a user with an administrator role must:
+
+-   add the necessary Adverity IP addresses to the IP allowlist \(see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:\).
+
+    > ### Note:  
+    > To get the relevant IP addresses, please contact your Adverity Account Manager or the Adverity Support team.
+
 
 
 

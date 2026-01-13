@@ -473,7 +473,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     
     Open the AI-assisted generation menu: 
 
-    -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generating Semantic Information](../Modeling-Data-in-the-Data-Builder/generating-semantic-information-2fc1d26.md)\).
+    -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generate Semantic Information](../Modeling-Data-in-the-Data-Builder/generate-semantic-information-2fc1d26.md)\).
 
 
     

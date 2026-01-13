@@ -9,7 +9,27 @@ Use an *SAP HANA Cloud, Data Lake Relational Engine* connection to access table 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   [About SAP HANA Cloud, data lake](sap-hana-cloud-data-lake-relational-engine-connections-40763e2.md#loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_context)
+-   [Supported Features](sap-hana-cloud-data-lake-relational-engine-connections-40763e2.md#loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_usage)
+-   [Prerequisites](sap-hana-cloud-data-lake-relational-engine-connections-40763e2.md#loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_prerequisites)
+-   [Configuring Connection Properties](sap-hana-cloud-data-lake-relational-engine-connections-40763e2.md#loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_connection_properties)
+
+
+
+<a name="loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_context"/>
+
+## About SAP HANA Cloud, data lake
+
 Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Business Technology Platform Cockpit. It is composed of the default data lake Files component and the data lake Relational Engine component, and it is not integrated with SAP HANA database. For more information, see [What is SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/a896c6a184f21015b5bcf4c7a967df07/228c19ac890046ecbe8e38a540c0cb6b.html) in the *SAP HANA Cloud, Data Lake* documentation.
+
+> ### Note:  
+> -   With connection type *SAP HANA Cloud, Data Lake Relational Engine* you cannot connect to the SAP HANA Cloud, data lake instance that is available with SAP Datasphere. To connect to this instance, use your Open SQL schema in the space which you have selected to access the data lake.
+> 
+>     For more information, see [Integrating Data to and From SAP HANA Cloud Data Lake](../Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md).
+> 
+> -   SAP HANA Cloud, data lake Relational Engine connections are secure by default. They are encrypted without the need of configuring any TLS settings. Also, uploading server certificates isn't required.
 
 
 
@@ -57,24 +77,24 @@ You can use the connection to add source objects to a data flow.
 </tr>
 </table>
 
-> ### Note:  
-> -   With connection type *SAP HANA Cloud, Data Lake Relational Engine* you cannot connect to the SAP HANA Cloud, data lake instance that is available with SAP Datasphere. To connect to this instance, use your Open SQL schema in the space which you have selected to access the data lake.
-> 
->     For more information, see [Integrating Data to and From SAP HANA Cloud Data Lake](../Integrating-Data-to-and-From-HANA-Cloud/integrating-data-to-and-from-sap-hana-cloud-data-lake-e84545b.md).
-> 
-> -   SAP HANA Cloud, data lake Relational Engine connections are secure by default. They are encrypted without the need of configuring any TLS settings. Also, uploading server certificates isn't required.
-> 
-> -   To allow SAP Datasphere to access SAP HANA Cloud, data lake Relational Engine, it might be required to add the SAP Datasphere outbound IP address and HANA IP addresses to the allowed IP addresses for the data lake instance in SAP HANA Cloud Central.
-> 
->     For more information, see:
-> 
->     -   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
-> 
->     -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
+
+
+<a name="loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_prerequisites"/>
+
+## Prerequisites
+
+To allow SAP Datasphere to access SAP HANA Cloud, data lake Relational Engine, it might be required to add the SAP Datasphere outbound IP address and HANA IP addresses to the allowed IP addresses for the data lake instance in SAP HANA Cloud Central.
+
+For more information, see:
+
+-   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
+
+-   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
 
 
 
-<a name="loio40763e2e3e33440db0c37f6bcbe650f0__section_nrb_hcc_x4b"/>
+
+<a name="loio40763e2e3e33440db0c37f6bcbe650f0__HDLDB_connection_properties"/>
 
 ## Configuring Connection Properties
 

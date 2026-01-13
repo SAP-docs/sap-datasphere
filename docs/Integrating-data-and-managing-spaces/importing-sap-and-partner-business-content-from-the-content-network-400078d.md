@@ -32,7 +32,7 @@ The *DW Administrator* role, for example, grants these privileges.
 
 A combination of a global role and a scoped role:
 
--   A global role that grants you the following privilege:
+-   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Lifecycle* \(`-R---MS-`\) - To use the *Content Network* tiles in the *Semantic Onboarding* app.
 
@@ -43,7 +43,7 @@ A combination of a global role and a scoped role:
     -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
 
 
-The *DW Space Administrator* global and scoped role templates, for example, grant this combination of privileges.
+The *DW Space Administrator* role template, for example, grants this combination of privileges.
 
 </td>
 </tr>

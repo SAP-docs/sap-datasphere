@@ -9,17 +9,9 @@ Use an *Amazon Athena* connection to access data from Amazon Athena, an interact
 
 This topic contains the following sections:
 
--   [Prerequisites](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_prerequisites_old)
 -   [Supported Features](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_usage)
+-   [Prerequisites](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_prerequisites)
 -   [Configuring Connection Properties](amazon-athena-connections-1b21cd0.md#loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_connection_properties)
-
-
-
-<a name="loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity to Amazon Athena](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/8d80f60960294e1f9c3cea4778024663.html "To be able to successfully validate and use a connection to Amazon Athena for remote tables certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -54,6 +46,19 @@ You can use remote tables imported from the connection either to access data dir
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio1b21cd00fa9842f5ba747047b80fe3ab__Athena_prerequisites"/>
+
+## Prerequisites
+
+Before you can use the connection for remote tables, the following is required:
+
+-   A DW administrator has uploaded the server certificates to SAP Datasphere. Two certificates are required, one for Amazon Athena and one for Amazon S3. Region-specific certificates might be required for Amazon Athena. Alternatively, if the common root CA certificate contains trust for both endpoints, Amazon Athena and Amazon Simple Storage Service \(API/Athena and Data/S3\), you can upload the root certificate.
+
+    For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+
 
 
 

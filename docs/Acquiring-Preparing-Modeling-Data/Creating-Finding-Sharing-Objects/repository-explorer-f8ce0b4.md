@@ -29,7 +29,11 @@ To access all your SAP Datasphere objects in the *Repository Explorer*, you must
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces Files* \(`-R------`\) - To access objects in a space.
 
-The *DW Modeler* role template, for example, grants these privileges \(see [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right: and [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:\).
+In addition, if you want to use natural language search, it must be enabled in your tenant \(see [Enable SAP Business AI for SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/1b3fe45f38df4db1a9cda97a5a7bcdaf.html "SAP Business AI is a fully managed service by SAP that allows you to integrate artificial intelligence (AI) models in different business solutions. SAP Business AI provides a simple and easy-to-use API with various endpoints that you can use in your solution for different tasks such as text generation, summarization, language translation, creative content development.") :arrow_upper_right:\) and you must have the following global privilege:
+
+-   *Data Warehouse AI Consumption* \(`----E---`\) - To use SAP Business AI features.
+
+Any role template that gives access to SAP Datasphere grants these scoped privileges and the *DW AI Consumer* global role grants the global privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -53,7 +57,7 @@ Enter one or more characters in the *Search* field and press *Enter* \(or click 
 
 -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 
--   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results appropriately. See [Natural Language Search](natural-language-search-04170c6.md).
+-   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results accordingly. See [Natural Language Search](natural-language-search-04170c6.md).
 
 
 

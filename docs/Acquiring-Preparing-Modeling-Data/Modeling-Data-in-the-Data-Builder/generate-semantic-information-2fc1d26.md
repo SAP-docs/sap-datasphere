@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Generating Semantic Information
+# Generate Semantic Information
 
 Use the *Generate Semantics* command to request SAP Datasphere to suggest a *Semantic Usage* for your entity, identify measures and attributes, and apply appropriate semantic types to them.
 

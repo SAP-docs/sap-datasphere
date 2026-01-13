@@ -94,7 +94,7 @@ All the objects you import or create in the *Data Builder* are listed on the *Da
 
     -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calendar`".
 
-    -   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results appropriately. See [Natural Language Search](Creating-Finding-Sharing-Objects/natural-language-search-04170c6.md).
+    -   If natural language search is enabled on your tenant \(and you have the appropriate role\), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results accordingly. See [Natural Language Search](Creating-Finding-Sharing-Objects/natural-language-search-04170c6.md).
 
 
 -   Click a column header to sort or filter the list by values in the column.

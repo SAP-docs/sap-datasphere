@@ -472,7 +472,7 @@ Displays the business name or technical name of the schedule. Technical or Busin
 <tr>
 <td valign="top">
 
-Scheculed Frequency 
+Scheduled Frequency 
 
 </td>
 <td valign="top">

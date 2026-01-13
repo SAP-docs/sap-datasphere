@@ -155,7 +155,7 @@ You can review the delivery details of a data product by selecting the <span cla
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
 
 2.  In the *Data Products* tab, search for the data product that you want to review.
 
@@ -277,7 +277,7 @@ Select the view options to sort, group, and filter the list of installed data pr
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
 
 2.  On the *Data Products* tab, search for the data product you want and review its product and installation details.
 
@@ -404,7 +404,7 @@ If needed, you can activate the license key without installing the data product.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
 
 2.  Select the *Access* tab, to see all your active licenses.
 
@@ -567,7 +567,7 @@ By joining contexts, you can find, evaluate, and acquire data products that are 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\).
 
 2.  Select the *Visibility* tab, to see all the contexts that you belong to.
 
@@ -602,7 +602,7 @@ If you no longer want to be a member of a context, you can choose to leave it.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\)
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> ** <span class="SAP-icons-V5"></span> \(*Marketplace Data Products*\)
 
 2.  Select the *Visibility* tab, to see all the contexts that you belong to.
 

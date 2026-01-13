@@ -2,36 +2,16 @@
 
 # Generic JDBC Connections
 
-Use a *Generic JDBC* connection to access data from tables and views in any supported data source for which a JDBC driver is available.
+Use a *Generic JDBC* connection to access data from tables and views in any supported data source for which a JDBC driver is available. You can use this connection type to connect to most databases that have SQL-based data types and functions, and a JDBC driver. If a specific connection type is available for your database in SAP Datasphere, we recommend to use the specific connection type instead of *Generic JDBC*.
 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 This topic contains the following sections:
 
--   [Prerequisites](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_prerequisites_old)
--   [Context](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_context)
 -   [Supported Features](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_usage)
+-   [Prerequisites](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_prerequisites)
 -   [Configuring Connection Properties](generic-jdbc-connections-eeae3ac.md#loioeeae3aca6d0040149f7b1e658c434f15__JDBC_connection_properties)
-
-
-
-<a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity for Generic JDBC](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/648fabfc94ad4da7853ef9a4d284aeac.html "To be able to successfully validate and use a Generic JDBC connection for remote tables certain preparations have to be made.") :arrow_upper_right:
-
-
-
-<a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_context"/>
-
-## Context
-
-You can use this connection type to connect to most databases for which SAP Datasphere does not already provide a connection type. In general, the connection type supports most databases that have SQL-based data types and functions, and a JDBC driver. For latest information about supported data sources and versions, see the [SAP HANA smart data integration Product Availability Matrix \(PAM\)](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf).
-
-> ### Note:  
-> For information about unsupported data sources, see SAP Note [3130999](https://me.sap.com/notes/3130999).
 
 
 
@@ -66,6 +46,32 @@ You can use remote tables imported from the connection either to access data dir
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioeeae3aca6d0040149f7b1e658c434f15__JDBC_prerequisites"/>
+
+## Prerequisites
+
+Before you can use the connection for remote tables, the following is required:
+
+-   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the CamelJdbcAdapter.
+
+    For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+
+-   It has been checked that the data source is supported by the CamelJdbcAdapter.
+
+    For latest information about supported data sources and versions, see the [SAP HANA Smart Data Integration Product Availability Matrix \(PAM\)](https://support.sap.com/content/dam/launchpad/en_us/pam/pam-essentials/TIP/PAM_HANA_SDI_2_0.pdf).
+
+    > ### Note:  
+    > For information about unsupported data sources, see SAP Note [3130999](https://me.sap.com/notes/3130999).
+
+-   An administrator has downloaded and installed the required JDBC library in the <code><i class="varname">&lt;DPAgent_root&gt;</i>/camel/lib</code> folder and restarted the Data Provisioning Agent before registering the adapter with SAP Datasphere.
+
+    For more information, see [Set up the Camel JDBC Adapter](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/1247c9518f8d4b5b93fa2ad54cb2dcf6.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.
+
+    For information about the proper JDBC library for your source, see the *SAP HANA smart data integration Product Availability Matrix \(PAM\)*.
+
 
 
 

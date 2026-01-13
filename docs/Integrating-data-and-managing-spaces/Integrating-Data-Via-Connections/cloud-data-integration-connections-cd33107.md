@@ -11,17 +11,9 @@ Use a *Cloud Data Integration* connection to access data from SAP cloud applicat
 
 This topic contains the following sections:
 
--   [Prerequisites](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_prerequisites_old)
 -   [Supported Features](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_usage)
+-   [Prerequisites](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_prerequisites)
 -   [Configuring Connection Properties](cloud-data-integration-connections-cd33107.md#loiocd33107246f446628f9baff56faf5a1b__CDI_connection_properties)
-
-
-
-<a name="loiocd33107246f446628f9baff56faf5a1b__CDI_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity for Cloud Data Integration](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b6fd8def1c00408e9c5e34efb897aa31.html "To be able to successfully validate and use a Cloud Data Integration connection for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -70,6 +62,42 @@ You can use the connection to add source objects to a data flow.
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiocd33107246f446628f9baff56faf5a1b__CDI_prerequisites"/>
+
+## Prerequisites
+
+
+
+### Remote Tables
+
+Before you can use the connection for remote tables, the following is required:
+
+-   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the CloudDataIntegrationAdapter.
+
+    For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+
+-   For ABAP-based cloud SAP systems such as SAP S/4HANA Cloud or SAP Marketing Cloud: A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system. 
+
+    For more information, see [Integrating CDI](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP S/4HANA Cloud* documentation.
+
+
+
+
+### Data Flows
+
+Before you can use the connection for data flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+-   For ABAP-based cloud SAP systems such as SAP S/4HANA Cloud or SAP Marketing Cloud: A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system.
+
+    For more information, see [Integrating CDI](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP S/4HANA Cloud* documentation.
+
 
 
 

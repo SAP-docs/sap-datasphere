@@ -4,7 +4,7 @@
 
 # Set Up Cloud Connector in SAP Datasphere
 
-Receive SAP Datasphere subaccount information required for Cloud Connector configuration and complete Cloud Connector setup for creating SAP BW/4HANA Model Transfer connections and for using multiple Cloud Connector instances.
+Receive SAP Datasphere subaccount information required for Cloud Connector configuration and complete Cloud Connector setup for creating SAP BW∕4HANA Model Transfer connections and for using multiple Cloud Connector instances.
 
 
 
@@ -15,7 +15,8 @@ Receive SAP Datasphere subaccount information required for Cloud Connector confi
 To set up Cloud Connector in SAP Datasphere, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *System* tool.
+-   *User* \(`-R------`\) - To access the *Administration* area in the *System* tool.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -57,7 +58,7 @@ For more information, see [Preparing Cloud Connector Connectivity](preparing-clo
         > ### Note:  
         > If you don't have an SAP Business Technology Platform \(SAP BTP\) user account yet, create an account in the [SAP BTP cockpit](https://account.hana.ondemand.com/) by clicking *Register* in the cockpit.
 
-    -   To be able to use the Cloud Connector for SAP BW/4HANA Model Transfer connections to import analytic queries with the *Model Transfer Wizard* and for SAP S/4HANA On-Premise connections to import ABAP CDS Views with the *Import Entities* wizard, switch on *Allow live data to securely leave my network* in the *Live Data Sources* section.
+    -   To be able to use the Cloud Connector for SAP BW∕4HANA Model Transfer connections to import analytic queries with the *Model Transfer Wizard* and for SAP S/4HANA On-Premise connections to import ABAP CDS Views with the *Import Entities* wizard, switch on *Allow live data to securely leave my network* in the *Live Data Sources* section.
 
         > ### Note:  
         > The *Allow live data to securely leave my network* switch is audited, so that administrators can see who switched this feature on and off. To see the changes in the switch state, go to <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="SAP-icons-V5"></span> \(*Activities*\), and search for `ALLOW_LIVE_DATA_MOVEMENT`.

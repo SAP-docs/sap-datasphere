@@ -254,7 +254,7 @@ Version
 </td>
 <td valign="top">
 
-Displays the latest version number of the data product. Select *View Version History* to see all version changes for the data product.
+Displays the latest version number of the data product. Choose *View Version History* to see all version changes for the data product.
 
 </td>
 </tr>
@@ -278,7 +278,7 @@ Extensibility
 </td>
 <td valign="top">
 
-Displays whether the data product is extensible and be enhanced. The data product can be manually or automatically extensible or not extensible at all. If a data product is extensible, you can select an API to view extensibility details.
+Displays whether the data product is extensible and be enhanced. The data product can be manually or automatically extensible or not extensible at all. If a data product is extensible, you can choose an API to view extensibility details.
 
 </td>
 </tr>
@@ -390,7 +390,7 @@ Data Provider
 </td>
 <td valign="top">
 
-Displays data provider's name. For data products from an SAP Datasphere system, select the link to review the data provider's profile.
+Displays data provider's name. For data products from an SAP Datasphere system, choose the link to review the data provider's profile.
 
 </td>
 </tr>
@@ -492,7 +492,7 @@ Supported Use Cases
 </td>
 <td valign="top">
 
-Displays the data product \(API\) use cases, if provided. If you don't see this column, select <span class="FPA-icons-V3"></span> \(Select Columns\) to show it.
+Displays the data product \(API\) use cases, if provided. If you don't see this column, choose <span class="FPA-icons-V3"></span> \(Select Columns\) to show it.
 
 </td>
 </tr>
@@ -504,10 +504,10 @@ Actions
 </td>
 <td valign="top">
 
-Select an action:
+Choose an action:
 
 -   *Install*: Opens the *Import Entities* wizard. Follow the steps to import the entities of an API for a data product to your space on the local SAP Datasphere system.
--   *Uninstall*: Opens a dialog, where you select a space to a data product. Uninstalling a data product removes all entities that are part of the API. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
+-   *Uninstall*: Opens a dialog, where you choose a space to a data product. Uninstalling a data product removes all entities that are part of the API. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
 The actions to install or uninstall data products appear based on the privileges that are assigned to you \(see [Installing Data Products](installing-data-products-ea7cb80.md)\). 
 
@@ -515,12 +515,12 @@ The actions to install or uninstall data products appear based on the privileges
 </tr>
 </table>
 
-You can select a data product's API to view its details page, where you can learn more about it. Information is separated into the following areas:
+You can choose a data product's API to view its details page, where you can learn more about it. Information is separated into the following areas:
 
 -   API properties that include all the same high-level information found in the data product's *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
 -   Available objects \(or entities\) and their container path and primary key. If the primary key is missing, API cannot be installed.
 
-    You can also view more details of a particular object, by selecting the *View Columns* link. This information includes the object's name, type, valid values, and more.
+    You can also view more details of a particular object, by choosing the *View Columns* link. This information includes the object's name, type, valid values, and more.
 
 -   Documentation that provides a more detailed description of the API, links that can give you more information on how to use it, and extensibility information.
 -   Actions available for the API appear in a toolbar at the top of the page.

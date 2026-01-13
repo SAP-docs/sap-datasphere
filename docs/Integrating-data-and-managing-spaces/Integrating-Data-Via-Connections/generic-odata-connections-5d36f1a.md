@@ -9,17 +9,9 @@ Use a *Generic OData* connection to access data from an OData service.
 
 This topic contains the following sections:
 
--   [Prerequisites](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_prerequisites_old)
 -   [Supported Features](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_usage)
+-   [Prerequisites](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_prerequisites)
 -   [Configuring Connection Properties](generic-odata-connections-5d36f1a.md#loio5d36f1aae68a4e59989c424a66d948c9__Odata_connection_properties)
-
-
-
-<a name="loio5d36f1aae68a4e59989c424a66d948c9__Odata_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Prepare Connectivity for Generic OData](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d9c43a2dd2b340c48e4e665967c853e8.html "To be able to successfully validate and use a connection to an OData service for remote tables or data flows certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -68,6 +60,36 @@ You can use the connection to add source objects to a data flow.
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio5d36f1aae68a4e59989c424a66d948c9__Odata_prerequisites"/>
+
+## Prerequisites
+
+
+
+### Remote Tables
+
+Before you can use the connection for remote tables, the following is required:
+
+-   The OData service URL needs to be publicly available.
+
+-   A DW administrator has uploaded the server certificate to SAP Datasphere.
+
+    For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+
+
+
+
+### Data Flows
+
+Before you can use the connection for data flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
 
 
 
@@ -546,7 +568,7 @@ Click *Add* to add name and value for a custom HTTP header field.
 </td>
 <td valign="top">
 
-If the option is enabled \(default\), `$format=json` is appended to return the data in JSON format. If it is not enabled, no format query is appended and the data is returned depending on the implementation of the OData service.
+If the option is enabled \(default\), the <code>$format=<i class="varname">&lt;format&gt;</i></code> query option can be used to request returning the specified format, for example <code>$format=<i class="varname">&lt;json&gt;</i></code> to request JSON format. If you disable the property, the format query option is ignored, and the connection always returns the default response format of the OData service.
 
 > ### Note:  
 > This option applies to remote tables only.

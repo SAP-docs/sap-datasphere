@@ -7,17 +7,47 @@ Use an *SAP Marketing Cloud* connection to access data from SAP Marketing Cloud 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   [Supported Features](sap-marketing-cloud-connections-4de4959.md#loio4de4959620c24d12a53a3cc357d3e003__Marketing_Cloud_usage)
+-   [Prerequisites](sap-marketing-cloud-connections-4de4959.md#loio4de4959620c24d12a53a3cc357d3e003__Marketing_Cloud_prerequisites)
+-   [Configuring Connection Properties](sap-marketing-cloud-connections-4de4959.md#loio4de4959620c24d12a53a3cc357d3e003__Marketing_Cloud_connection_properties)
 
 
-<a name="loio4de4959620c24d12a53a3cc357d3e003__section_j1b_byq_spb"/>
+
+<a name="loio4de4959620c24d12a53a3cc357d3e003__Marketing_Cloud_prerequisites"/>
 
 ## Prerequisites
 
-See: [Prepare Connectivity to SAP Marketing Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f5e0c06fdc834c62a10eeb19d9a79bab.html "To be able to successfully validate and use a connection to SAP Marketing Cloud for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:
+
+
+### Remote Tables
+
+Before you can use the connection for remote tables, the following is required:
+
+-   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the CloudDataIntegrationAdapter.
+
+    For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+
+-   A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system. 
+
+    For more information, see [Integrating CDI](https://help.sap.com/viewer/e0cd7c1ecf3d4f2f9feb46ec1c5b68fb/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP Marketing Cloud* documentation.
 
 
 
-<a name="loio4de4959620c24d12a53a3cc357d3e003__CDI_usage"/>
+
+### Data Flows
+
+Before you can use the connection for data flows, the following is required:
+
+-   A communication arrangement has been created for communication scenario `SAP_COM_0531` in the source system. 
+
+    For more information, see [Integrating CDI](https://help.sap.com/viewer/e0cd7c1ecf3d4f2f9feb46ec1c5b68fb/latest/en-US/4a006b43551d4cb5aed6399c0ace6b98.html) in the *SAP Marketing Cloud* documentation.
+
+
+
+
+<a name="loio4de4959620c24d12a53a3cc357d3e003__Marketing_Cloud_usage"/>
 
 ## Supported Features
 
@@ -65,7 +95,7 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio4de4959620c24d12a53a3cc357d3e003__section_nrb_hcc_x4b"/>
+<a name="loio4de4959620c24d12a53a3cc357d3e003__Marketing_Cloud_connection_properties"/>
 
 ## Configuring Connection Properties
 

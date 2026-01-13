@@ -15,7 +15,7 @@ To securely connect to SAP S/4HANA on-premise when searching for ABAP CDS Views 
 To create live data connections of type tunnel, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Administration* and *Configuration* areas in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 -   *Connection* \(`CRUD-M--`\) - To create, read, update, and delete live data connections of type *Tunnel*.
 -   *Other Data Sources* \(`----E---`\) - To access the *Manage Live Data Connections* dialog.
 

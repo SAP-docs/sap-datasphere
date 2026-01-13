@@ -70,7 +70,7 @@ Define settings and properties for your replication flow and individual replicat
 
         -   [Confluent Kafka Sources for Replication Flows](confluent-kafka-sources-for-replication-flows-4f2d0a8.md)
 
-        -   [Secure File Transfer Protocol \(SFTP\) as Targets for Your Replication Flows](secure-file-transfer-protocol-sftp-as-targets-for-your-replicati-5a14eb1.md)
+        -   [Secure File Transfer Protocol \(SFTP\) for Replication Flows](secure-file-transfer-protocol-sftp-for-replication-flows-5a14eb1.md)
 
 
 4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the target settings and change them as appropriate.
@@ -79,13 +79,13 @@ Define settings and properties for your replication flow and individual replicat
 
     -   Additional settings that are only relevant for a specific target type and can be made for the replication flow itself as well as for individual replication objects. For more information, see
 
-        -   [Cloud Storage Provider Targets](cloud-storage-provider-targets-43d93a2.md)
+        -   [Cloud Storage Provider Targets for Replication Flows](cloud-storage-provider-targets-for-replication-flows-43d93a2.md)
 
-        -   [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
+        -   [Google BigQuery Targets for Replication Flows](google-bigquery-targets-for-replication-flows-56d4472.md)
 
-        -   [Apache Kafka Targets](apache-kafka-targets-6df55db.md)
+        -   [Apache Kafka Targets for Replication Flows](apache-kafka-targets-for-replication-flows-6df55db.md)
 
-        -   [Confluent Kafka Targets](confluent-kafka-targets-74b3c95.md)
+        -   [Confluent Kafka Targets for Replication Flows](confluent-kafka-targets-for-replication-flows-74b3c95.md)
 
 
 

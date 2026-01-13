@@ -96,11 +96,13 @@ In addition to working with task chains in the editor, you can also:
     > ### Note:  
     > Options on the task chain toolbar in the *Plus Sign* \(*\+*\) menu also let you add new task objects to the task chain. The *Add Placeholder after Selected Task* option places a new task object placeholder in the existing linear arrangement of tasks in the task chain. The *Add Parallel Branch after Selected Task* option places a new task object placeholder in parallel with the currently selected task. For more information on creating task chains with parallel task branches, see [Run Parallel Tasks in a Task Chain](run-parallel-tasks-in-a-task-chain-363ffe9.md).
 
-4.  Continue adding remaining object tasks you want to include in the task chain.
+4.  \(Optional\) Set auto-retry for a task from the **Runtime** drop down in the task property panel. This will automatically retry to execute a task in case it fails on the first try.
+
+5.  Continue adding remaining object tasks you want to include in the task chain.
 
     In addition to adding or replacing object tasks in a task chain, you can drag objects already on the task chain canvas to change the order in which tasks are run. By default, tasks in a task chain are displayed in a vertical direction, from top to bottom. On the left side of the task chain toolbar, the *Layout* menu provides options to let you change the orientation of tasks from Top to Bottom \(*Top-Bottom*\) to Left to Right \(*Left-Right*\).
 
-5.  In the properties panel, specify a name for the task chain.
+6.  In the properties panel, specify a name for the task chain.
 
     ![](images/TC_Full_Screen_7c00611.png)
 
@@ -159,7 +161,7 @@ In addition to working with task chains in the editor, you can also:
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with the DW Space Administrator role can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -370,6 +372,25 @@ In addition to working with task chains in the editor, you can also:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Runtime
+    
+    </td>
+    <td valign="top">
+    
+    Turn on **Enable Auto-Retry** for a task in a task chain. This is optional. By default, there is no automatic retry if a task fails. This will automatically retry a task if it helps to help complete a task chain.
+
+    Set from one to three automatic retries for a task if it fails. Choose a period of time, between 15 seconds and 5 minutes, before a task will be run again. This is the minimum amount of 'fail' time between attempts to execute a task. Manually re-running a task chain will pick up from where auto-retry has stopped. This will provide the option of up to 4 attempts to retry a task including the manual rerun of a task chain.
+
+    > ### Note:  
+    > **Enable Auto-Retry** is only available for individual tasks and not available on the task chain level. Task chains as objects can not be set, but individual tasks in the parent task chain can be set to auto-retry. Both send email of the notification task and execution of the replication flows application cannot set **Enable Auto-Retry**.
+
+
+    
+    </td>
+    </tr>
     </table>
     
     When you add a shared task chain to the current task chain, the Properties display also lists the space from which the task chain was shared, when that object is selected.
@@ -377,7 +398,7 @@ In addition to working with task chains in the editor, you can also:
     > ### Note:  
     > When you select an object, you can also delete it from the task chain or navigate to the corresponding editor for that object.
 
-6.  When you’ve finished adding objects to the task chain, save and deploy your new task chain.
+7.  When you’ve finished adding objects to the task chain, save and deploy your new task chain.
 
     The properties of your task chain are updated.
 
@@ -396,7 +417,7 @@ In addition to working with task chains in the editor, you can also:
     > -   To share a task chain to another space, click the editor toolbar <span class="FPA-icons-V3"></span> \(Share\) icon. You are then prompted to specify one or more spaces you want to share the task chain to. For more information, see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md).
     > -   To export the definition of a task chain to a CSN/JSON file, which may later be imported again in the same space or other spaces, click the <span class="FPA-icons-V3"></span> \(Export\) icon. Note that the exported file does not create the objects defined in the task chain or include the recipients of email notification for the exported task chain. For more information on exporting objects, see [Exporting Objects to a CSN/JSON File](../Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md).
 
-7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+8.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
 
 
     <table>

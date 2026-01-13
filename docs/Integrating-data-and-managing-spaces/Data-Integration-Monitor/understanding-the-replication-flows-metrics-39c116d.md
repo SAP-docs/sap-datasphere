@@ -45,7 +45,7 @@ Displays the time spent running the task. For example, *Initial Load Duration*.
 <tr>
 <td valign="top">
 
-*Operation*
+*Operations*
 
 </td>
 <td valign="top">
@@ -92,6 +92,18 @@ Displays the time and date when the object replication started.
 <td valign="top">
 
 Displays the time and date when the object replication ended. For example, *Initial Load End Time*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Object Thread Count for Delta Loads
+
+</td>
+<td valign="top">
+
+Displays the number of threads that were used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type Initial and Delta or Delta Only.
 
 </td>
 </tr>

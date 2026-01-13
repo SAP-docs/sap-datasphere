@@ -90,7 +90,7 @@ Run tasks in a task chain that use a REST-based API to access external systems.
     For asynchronous API task execution, the Properties pane provides an additional *Status* section for determining how to retrieve status information and other messages from the external system.
 
     > ### Note:  
-    > Results from an API task’s invocation are interpreted differently based on the invocation mode, synchronous or synchronous:
+    > Results from an API task’s invocation are interpreted differently based on the invocation mode, synchronous or asynchronous:
     > 
     > -   In synchronous mode, the result of the status code response is success \(COMPLETED\) or error \(FAILED\).
     > -   In asynchronous mode, the status code response will return FAILED or RUNNING. In addition, tasks in asynchronous mode retrieve the job status using the status endpoint located in the response location header or entered in the *Status* section of the Properties panel.

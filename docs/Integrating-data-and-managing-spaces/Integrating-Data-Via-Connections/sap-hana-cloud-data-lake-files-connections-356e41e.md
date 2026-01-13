@@ -10,15 +10,16 @@ Use an *SAP HANA Cloud, Data Lake Files* connection to access data from the File
 
 This topic contains the following sections:
 
--   [Context](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__context)
--   [Supported Features](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__HDLDB_usage)
--   [Configuring Connection Properties](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__connection_properties)
+-   [About SAP HANA Cloud, data lake](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__HDLDF_context)
+-   [Supported Features](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__HDLDF_usage)
+-   [Prerequisites](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__HDLDF_prerequisites)
+-   [Configuring Connection Properties](sap-hana-cloud-data-lake-files-connections-356e41e.md#loio356e41e880e54255891b702d2afefeb3__HDLDF_connection_properties)
 
 
 
-<a name="loio356e41e880e54255891b702d2afefeb3__context"/>
+<a name="loio356e41e880e54255891b702d2afefeb3__HDLDF_context"/>
 
-## Context
+## About SAP HANA Cloud, data lake
 
 Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Business Technology Platform Cockpit. It is composed of the default data lake Files component and the data lake Relational Engine component, and it is not integrated with SAP HANA database. For more information, see [What is SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE/a896c6a184f21015b5bcf4c7a967df07/228c19ac890046ecbe8e38a540c0cb6b.html) in the *SAP HANA Cloud, Data Lake* documentation.
 
@@ -26,18 +27,10 @@ Standalone SAP HANA Cloud, data lake is a standalone component in the SAP Busine
 > -   With connection type *SAP HANA Cloud, Data Lake Files* you cannot connect to the SAP HANA Cloud, data lake instance that is available with SAP Datasphere.
 > 
 > -   SAP HANA Cloud, data lake Files connections are secure by default. They are encrypted without the need of configuring any TLS settings. Also, uploading server certificates isn't required.
-> 
-> -   To allow SAP Datasphere to access SAP HANA Cloud, data lake Files storage, it might be required to add the SAP Datasphere outbound IP address and HANA IP addresses to the allowed IP addresses for the data lake instance in SAP HANA Cloud Central.
-> 
->     For more information, see:
-> 
->     -   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
-> 
->     -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
 
 
 
-<a name="loio356e41e880e54255891b702d2afefeb3__HDLDB_usage"/>
+<a name="loio356e41e880e54255891b702d2afefeb3__HDLDF_usage"/>
 
 ## Supported Features
 
@@ -72,7 +65,7 @@ For more information, see:
 
 -   [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
 
--   [Cloud Storage Provider Targets](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+-   [Cloud Storage Provider Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
 
 
 
@@ -95,7 +88,22 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loio356e41e880e54255891b702d2afefeb3__connection_properties"/>
+<a name="loio356e41e880e54255891b702d2afefeb3__HDLDF_prerequisites"/>
+
+## Prerequisites
+
+To allow SAP Datasphere to access SAP HANA Cloud, data lake Files storage, it might be required to add the SAP Datasphere outbound IP address and HANA IP addresses to the allowed IP addresses for the data lake instance in SAP HANA Cloud Central.
+
+For more information, see:
+
+-   [Data Lake Connections](https://help.sap.com/docs/HANA_CLOUD/9ae9104a46f74a6583ce5182e7fb20cb/7e8ca90a9b4940d2930c36e92fbf6ba7.html) in the *SAP HANA Cloud* documentation
+
+-   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
+
+
+
+
+<a name="loio356e41e880e54255891b702d2afefeb3__HDLDF_connection_properties"/>
 
 ## Configuring Connection Properties
 

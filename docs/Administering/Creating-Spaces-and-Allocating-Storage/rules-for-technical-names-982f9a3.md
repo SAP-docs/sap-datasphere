@@ -33,7 +33,7 @@ Spaces
 </td>
 <td valign="top">
 
-The space ID can only contain uppercase letters, numbers, and underscores \(\_\). Reserved keywords, such as SYS, CREATE, or SYSTEM, must not be used. Unless advised to do so, the ID must not contain prefix \_SYS and should not contain prefixes: DWC\_, SAP\_. 
+The space ID can only contain uppercase letters, numbers, and underscores \(\_\). Reserved keywords, such as `SYS`, `CREATE`, or `SYSTEM`, must not be used. Unless advised to do so, the ID must not contain prefix `_SYS` and should not contain prefixes: `DWC_`, `SAP_`. 
 
 The maximum length is 20 characters.
 
@@ -67,7 +67,7 @@ Remote tables generated during the import of analysis authorizations from a SAP 
 </td>
 <td valign="top">
 
-The technical name can contain any characters except for the asterisk \(\*\), colon \(:\), and hash sign \(\#\). Also, tab, carriage return, and newline must not be used, and space must not be used at the start of the name. 
+The technical name cannot contain asterisk \(\*\), colon \(:\), hash sign \(\#\), tab \(\\t\), carriage return \(\\r\), or newline \(\\n\) characters. It cannot start with a space. 
 
 The maximum length is 50 characters.
 
@@ -193,7 +193,7 @@ Database analysis users
 </td>
 <td valign="top">
 
-The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). This suffix is added to the default prefix DWCDBUSER\# to create your full user name. Note that you cannot change the prefix as it is a reserved prefix.
+The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). This suffix is added to the default prefix `DWCDBUSER#` to create your full user name. Note that you cannot change the prefix as it is a reserved prefix.
 
 The maximum length of the user name suffix is 31 characters.
 
@@ -207,7 +207,7 @@ Database user groups
 </td>
 <td valign="top">
 
-The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). This suffix is added to the default prefix DWCDBGROUP\# to create your full user group name. Note that you cannot change the prefix as it is a reserved prefix.
+The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). This suffix is added to the default prefix `DWCDBGROUP#` to create your full user group name. Note that you cannot change the prefix as it is a reserved prefix.
 
 The maximum length of the user group name suffix is 30 characters.
 
@@ -221,7 +221,7 @@ Database users \(Open SQL schemas\)
 </td>
 <td valign="top">
 
-The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). This suffix is added to the default prefix *<space ID\>*\# to create your full user name. Note that you cannot change the prefix.
+The user name suffix can only contain uppercase letters, numbers, and underscores \(\_\). This suffix is added to the default prefix <code><i class="varname">&lt;space ID&gt;</i>#</code> to create your full user name. Note that you cannot change the prefix.
 
 The maximum length of the full database user name \(including the prefix\) is 41 characters.
 
@@ -235,7 +235,7 @@ Connections
 </td>
 <td valign="top">
 
-The technical name can only contain alphanumeric characters and underscores \(\_\). Underscore \(\_\) must not be used at the start or end of the name.
+The technical name can only contain alphanumeric characters and underscores \(\_\). It cannot start or end with underscore \(\_\).
 
 The maximum length is 40 characters.
 

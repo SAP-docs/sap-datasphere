@@ -8,9 +8,9 @@ Integrate SAP Datasphere with SAP Cloud Transport Management service to transpor
 
 SAP Cloud Transport Management service lets you manage software deliverables between accounts of different environments \(such as Cloud Foundry, ABAP, and Neo\), by transporting them across various runtimes.
 
-To transport your SAP Datasphere content through SAP Cloud Transport Management, you first must configure your SAP Cloud Transport Management system.
+To transport your SAP Datasphere content through SAP Cloud Transport Management, you must configure your SAP Cloud Transport Management system.
 
-Once you’ve configured the system, you must connect it to your SAP Datasphere tenant.
+Once you’ve configured the system, you must connect it to your SAP Datasphere tenant. You can also configure user rights that will be used in the SAP Datasphere target tenant.
 
 Then you can use the SAP Datasphere Transport app to transfer your content to SAP Cloud Transport Management.
 
@@ -50,6 +50,25 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 4.  The connection of your SAP Datasphere tenant with SAP Cloud Transport Management is now live: click *OK*.
 
 
+
+## Configuring User Rights in SAP Datasphere
+
+To ensure the content import from SAP Cloud Transport Management uses an existing user in the target tenant, you can assign your user, whose rights will be used to deploy the content.
+
+1.  In the side navigation area of the target tenant, click *Transport* \> *Import*.
+2.  Click *Settings* from the menu bar.
+3.  In the *Settings* dialog box, select the checkbox to agree to use your user rights. Click *OK*.
+
+All users in this tenant will now use your configured user rights and privileges when importing content from SAP Cloud Transport Management.
+
+If no user has been defined in the target tenant beforehand, the user must consent to use their rights during the upload to SAP Cloud Transport Management, provided that they have the necessary privileges and access to the required spaces in the target tenant \(See step 4 in [Using the SAP Datasphere Transport App to Transfer Content to SAP Cloud Transport Management](transporting-your-content-through-sap-cloud-transport-management-0538398.md#loio05383980f0704c71ab9872360ce45622__section_using)\).
+
+> ### Note:  
+> Only the system owner, along with the user who assigned his rights, can edit the permission. If the user has been deleted, then you can reset the permission and assign your user instead.
+
+
+
+<a name="loio05383980f0704c71ab9872360ce45622__section_using"/>
 
 ## Using the SAP Datasphere Transport App to Transfer Content to SAP Cloud Transport Management
 

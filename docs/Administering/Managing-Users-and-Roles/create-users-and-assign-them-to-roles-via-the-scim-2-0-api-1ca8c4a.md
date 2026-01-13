@@ -687,7 +687,7 @@ Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/
 > 
 > If you are using SAML authentication, `idpUserId` should be set to the property you are using for your SAML mapping. For example, the user's *USER ID*, *EMAIL*, or *CUSTOM SAML MAPPING*. If your SAML mapping is set to *EMAIL*, the email address you add to `idpUserId` must match the email address you use for `email`.
 > 
-> To find this information, log on to SAP Datasphere and go to *\(Security\)* \> *\(Users\)*.
+> To find this information, log on to SAP Datasphere and go to *System* \> *Administration* \> *Security*.
 > 
 > The userName attribute can only contain alphanumeric and underscore characters. The maximum length is 20 characters.
 
@@ -779,7 +779,7 @@ The response body returns the ID of the user created, which is the user UUID \(u
 
 ## Modify a User
 
-You can modify a specific user either way:
+You can modify a specific user:
 
 -   To override all information related to a specific user, use a PUT request. The user properties are updated with the properties you provide and all the properties that you do not provide are either left empty or set to their default value.
 -   To update only some information related to a specific user, use a PATCH request. The user properties are updated with the changes you provide and all properties that you do not provide remain unchanged.
@@ -977,12 +977,12 @@ The following example shows how to do the following changes with a PATCH request
     {
       "op": "replace",
       "path": "emails.value",
-      "value": lisa.garcia+1@company.com
+      "value": "lisa.garcia+1@company.com"
     },
     {
       "op": "replace",
       "path": "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters.idpUserId",
-      "value": lisa.garcia+1@company.com
+      "value": "lisa.garcia+1@company.com"
     }
   ]
 }

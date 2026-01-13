@@ -38,13 +38,13 @@ For detailed information about how to estimate the data volume to expect, see al
 
 What exactly you need to do to set up your replication flow depends on the target you're planning to use. For more information, see the documentation for the respective target type:
 
--   [Cloud Storage Provider Targets](cloud-storage-provider-targets-43d93a2.md)
+-   [Cloud Storage Provider Targets for Replication Flows](cloud-storage-provider-targets-for-replication-flows-43d93a2.md)
 
--   [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
+-   [Google BigQuery Targets for Replication Flows](google-bigquery-targets-for-replication-flows-56d4472.md)
 
--   [Apache Kafka Targets](apache-kafka-targets-6df55db.md)
+-   [Apache Kafka Targets for Replication Flows](apache-kafka-targets-for-replication-flows-6df55db.md)
 
--   [Confluent Kafka Targets](confluent-kafka-targets-74b3c95.md)
+-   [Confluent Kafka Targets for Replication Flows](confluent-kafka-targets-for-replication-flows-74b3c95.md)
 
 
 

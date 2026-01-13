@@ -20,7 +20,7 @@ Cloud Connector serves as a link between SAP Datasphere and your on-premise sour
 
 -   Model import from:
 
-    -   SAP BW/4HANA Model Transfer connections \(Cloud Connector is required for the live data connection of type tunnel that you need to create the model import connection\)
+    -   SAP BW∕4HANA Model Transfer connections \(Cloud Connector is required for the live data connection of type tunnel that you need to create the model import connection\)
 
     -   SAP S/4HANA On-Premise connections \(Cloud Connector is required for the live data connection of type tunnel that you need to search for the entities in the SAP S/4HANA system\)
 
@@ -54,7 +54,7 @@ To prepare connectivity via Cloud Connector, perform the following steps:
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 
-5.  If you you want to create SAP BW/4HANA Model Transfer connections or SAP S/4HANA On-Premise connections for model import, make sure you have switched on *Allow live data to securely leave my network* in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
+5.  If you you want to create SAP BW∕4HANA Model Transfer connections or SAP S/4HANA On-Premise connections for model import, make sure you have switched on *Allow live data to securely leave my network* in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
 

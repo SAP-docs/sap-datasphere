@@ -303,7 +303,7 @@ Load Type: Delta Only
 
 Local table
 
-See also [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)
+See also [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-for-replication-flows-12c45eb.md)
 
 </td>
 <td valign="top">
@@ -327,7 +327,7 @@ Not Supported
 
 Local table with delta capture
 
-See also [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)
+See also [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-for-replication-flows-12c45eb.md)
 
 </td>
 <td valign="top">
@@ -351,7 +351,7 @@ Not Supported
 
 Local table \(file\)
 
-See also [SAP Datasphere Targets](sap-datasphere-targets-12c45eb.md)
+See also [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-for-replication-flows-12c45eb.md)
 
 </td>
 <td valign="top">
@@ -375,7 +375,7 @@ Not Supported
 
 Apache Kafka
 
-See also [Apache Kafka Targets](apache-kafka-targets-6df55db.md)
+See also [Apache Kafka Targets for Replication Flows](apache-kafka-targets-for-replication-flows-6df55db.md)
 
 </td>
 <td valign="top">
@@ -399,7 +399,7 @@ Supported
 
 Confluent Kafka
 
-See also [Confluent Kafka Targets](confluent-kafka-targets-74b3c95.md)
+See also [Confluent Kafka Targets for Replication Flows](confluent-kafka-targets-for-replication-flows-74b3c95.md)
 
 </td>
 <td valign="top">
@@ -423,7 +423,7 @@ Supported
 
 Cloud Storage Provider
 
-See also [Cloud Storage Provider Targets](cloud-storage-provider-targets-43d93a2.md)
+See also [Cloud Storage Provider Targets for Replication Flows](cloud-storage-provider-targets-for-replication-flows-43d93a2.md)
 
 </td>
 <td valign="top">
@@ -447,7 +447,7 @@ Supported
 
 Google BigQuery
 
-See also [Google BigQuery Targets](google-bigquery-targets-56d4472.md)
+See also [Google BigQuery Targets for Replication Flows](google-bigquery-targets-for-replication-flows-56d4472.md)
 
 </td>
 <td valign="top">
@@ -493,7 +493,7 @@ Not Supported
 
 SAP Signavio
 
-See also [SAP Signavio Targets](sap-signavio-targets-b8f5e28.md)
+See also [SAP Signavio Targets for Replication Flows](sap-signavio-targets-for-replication-flows-b8f5e28.md)
 
 </td>
 <td valign="top">
