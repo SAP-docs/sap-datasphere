@@ -4,24 +4,16 @@
 
 # Generic HTTP Connections
 
-Use a *Generic HTTP* connection to connect to an external system via HTTP and run external REST-based API tasks in task chains.
+Use a *Generic HTTP* connection to connect to an external system via HTTP or HTTPS and call an external REST-based API via an API task in a task chain.
 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 This topic contains the following sections:
 
--   [Prerequisites](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_prerequisites_old)
 -   [Supported Features](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_usage)
+-   [Prerequisites](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_prerequisites)
 -   [Configuring Connection Properties](generic-http-connections-b79b865.md#loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_connection_properties)
-
-
-
-<a name="loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_prerequisites_old"/>
-
-## Prerequisites
-
-See: [Preparing Connectivity for Generic HTTP Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/021552c2e2b0418b9d6de157afe318ae.html "To be able to successfully validate and use a Generic HTTP connection to an on-premise system, certain preparations have to be made.") :arrow_upper_right:
 
 
 
@@ -51,11 +43,24 @@ API Tasks
 </td>
 <td valign="top">
 
-See [Run API Tasks in a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:.
+You can use the connection to add API tasks to task chains.
+
+For more information, see [Run API Tasks in a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:.
 
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiob79b865e64794c7abcd12a54f2f73c8c__HTTP_prerequisites"/>
+
+## Prerequisites
+
+-   If your system is an on-premise system in your local network, Cloud Connector is required for the connection between your system and SAP Datasphere.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
 
 
 

@@ -196,7 +196,7 @@ In addition to working with E/R models in the editor, you can also:
     > ### Note:  
     > The E/R model itself is not deployed and does not have a deployment status.
 
-7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>
@@ -215,7 +215,7 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -229,12 +229,12 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
@@ -243,7 +243,7 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    <span class="FPA-icons-V3"></span> \(Source Browser\) 
     
     </td>
     <td valign="top">
@@ -257,12 +257,12 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\) 
     
     </td>
     <td valign="top">
     
-    Open the *Data Preview* panel to preview data in the selected object.
+    Open the *Data Preview* panel to preview data in the selected object. 
 
     See [Viewing Object Data](viewing-object-data-b338e4a.md).
     
@@ -271,19 +271,19 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)  
     
     </td>
     <td valign="top">
     
-    Revert the last change to the object or redo a change you have previously undone.
+    Revert the last change to the object or redo a change you have previously undone. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Add from Repository\)
+    <span class="FPA-icons-V3"></span> \(Add from Repository\) 
     
     </td>
     <td valign="top">
@@ -297,7 +297,7 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Import\)
+    <span class="FPA-icons-V3"></span> \(Import\) 
     
     </td>
     <td valign="top">
@@ -311,7 +311,7 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -325,7 +325,7 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    Versions
+    Versions 
     
     </td>
     <td valign="top">
@@ -339,12 +339,12 @@ In addition to working with E/R models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    Details
+    Details 
     
     </td>
     <td valign="top">
     
-    Toggles the display of the *Properties* panel.
+    Toggles the display of the *Properties* panel. 
     
     </td>
     </tr>

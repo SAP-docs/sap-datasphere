@@ -184,7 +184,7 @@ To investigate issues:
 
 
 > ### Note:  
-> If your SAP Datasphere tenant is enabled for job & automation monitoring in SAP Cloud ALM, you can monitor the tasks run or scheduled in SAP Datasphere \(except for a task which is a child of another task\), from the *Job & Automation Monitoring* app in SAP Cloud ALM . See [Job & Automation Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/job-automation-monitoring) in the *SAP Cloud ALM - Application Help*.
+> If your SAP Datasphere tenant is enabled for job & automation monitoring in SAP Cloud ALM, you can monitor the tasks run or scheduled in SAP Datasphere \(except for a task which is a child of another task\), from the *Job & Automation Monitoring* app in SAP Cloud ALM. See [Job & Automation Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/job-automation-monitoring) in the *SAP Cloud ALM - Application Help*.
 
 
 

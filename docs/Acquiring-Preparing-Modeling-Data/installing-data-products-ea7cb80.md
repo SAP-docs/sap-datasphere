@@ -36,7 +36,7 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 ## Evaluating a Data Product
 
-Data products are high-quality, coherent data sets accessible through APIs. You can use them in various SAP or third-party products across different data regions to make better business decisions. A single data product may include business objects, entities, analytic data, and more. On the catalog search page, select the *Data Products* collection, and then choose one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formation.
+Data products are high-quality, coherent data sets accessible through APIs. You can use them in various SAP or third-party products across different data regions to make better business decisions. A single data product may include business objects, entities, analytic data, and more. On the catalog search page, choose the *Data Products* collection, and then choose one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formation.
 
 To determine if a data product meets your needs, you can view its details to evaluate its usefulness. You can review several pieces of information: the data product's properties, such as its name and the data provider, the list of objects within the data product, and links to resources on how to use it. For more information, see [Data Product Details](data-product-details-71f4d15.md).
 
@@ -77,21 +77,26 @@ Before you install the data product to your modelling space, check its statuses 
 
     On its details page, you can review the list of APIs by choosing the tab *Overview* \> *Details*.
 
-4.  For the API you want, select the *Install* action and the *Import Entities* wizard will open.
+4.  For the API you want, choose the *Install* action and the *Import Entities* wizard will open.
 
     > ### Tip:  
-    > If you're reviewing the details of a particular API, you can select the *Install* button from the API details page.
+    > If you're reviewing the details of a particular API, you can choose the *Install* button from the API details page.
 
-5.  Select a target space and select *Next Step*.
+5.  Select a target space and choose *Next Step*.
 
-6.  On the *Review Entities* page, review the objects that you will import and then choose the method you want for accessing the data.
+6.  On the *Review Entities* page, review the objects that you will import.
 
-    -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
-    -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
+    -   If the data product you're installing was created from the local SAP Datasphere system, choose *Start Import*.
+    -   If the data product you're installing was created from a different system, do the following:
+        1.  Choose the method you want for accessing the data.
 
-    You'll be able to see a list of all the objects that will be created in the *Data Builder*.
+            -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
+            -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
 
-7.  Select *Start Import and Deploy*.
+            You'll be able to see a list of all the objects that will be created in the *Data Builder*.
+
+        2.  Choose *Start Import and Deploy*.
+
 
     A notification is sent immediately, and this notification will update as the import process continues. After the import completes, you will have two notifications.
 
@@ -108,7 +113,9 @@ Before you install the data product to your modelling space, check its statuses 
 
 ## Results
 
-The data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space. For more information about spaces, see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
+The data product is installed to the target space.
+
+If the data product you installed was created from a different system, the data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space. For more information about spaces, see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
 
 -   Navigate to the objects in the *Repository Explorer* and review the data based on how you chose to access it.
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
@@ -238,17 +245,17 @@ Follow these steps for changing the method for how you access data for your data
 
 3.  When you find the data product that you want to change, select it to view its details page.
 
-4.  Choose the tab *Overview* \> *Details*, and find the API you want to install, and then select the *Install* action.
+4.  Choose the tab *Overview* \> *Details*, and find the API you want to install, and then choose the *Install* action.
 
     The *Import Entities* wizard will open.
 
-5.  Select the same target space where you previously installed the data product and select *Next Step*.
+5.  Select the same target space where you previously installed the data product and choose *Next Step*.
 
 6.  In the *Review Entities* step, select the method for accessing the data: *Remote Tables* or *Replication Flow to Local Tables*.
 
-    If you see a warning message, review it and select *Continue*.
+    If you see a warning message, review it and choose *Continue*.
 
-7.  Select *Start Import and Deploy*.
+7.  Choose *Start Import and Deploy*.
 
     A notification is sent immediately, and this notification will update as the import process continues. After the import completes, you will have two notifications.
 
@@ -294,9 +301,9 @@ If you no longer need a data product in a particular space, you can uninstall it
 
 3.  When you find the data product you want to remove, select it to open its details page.
 
-4.  Select *Overview* \> *Details* to see all available data product APIs.
+4.  Choose *Overview* \> *Details* to see all available data product APIs.
 
-5.  Find the API that you want to uninstall and select *Uninstall*.
+5.  Find the API that you want to uninstall and choose *Uninstall*.
 
     The dialog that appears shows a list of all spaces where the data product is installed. If any objects in a space still depend on the data product, preventing its removal, a note is displayed for that space.
 
@@ -323,7 +330,7 @@ If you no longer need a data product in a particular space, you can uninstall it
     <td valign="top">
     
     1.  Select a space.
-    2.  Review the confirmation dialog, and select *Uninstall* to uninstall the data product from that space.
+    2.  Review the confirmation dialog, and choose *Uninstall* to uninstall the data product from that space.
 
 
     
@@ -339,7 +346,7 @@ If you no longer need a data product in a particular space, you can uninstall it
     
     1.  Select a system to see all dependent objects.
     2.  To remove a single dependent object, select it, which opens it, and then delete it.
-    3.  To remove several dependent objects, select the *View in Repository Explorer* button, which opens the *Repository Explorer*, and then delete all dependent objects.
+    3.  To remove several dependent objects, choose the *View in Repository Explorer* button, which opens the *Repository Explorer*, and then delete all dependent objects.
     4.  After all dependent objects are removed, go back to the data product and uninstall it from the space.
 
 

@@ -290,7 +290,7 @@ Displays the current status of the remote table.
 <tr>
 <td valign="top">
 
-*Latest Update* 
+*Last Updated* 
 
 </td>
 <td valign="top">
@@ -302,7 +302,7 @@ Displays when the data was last successfully updated in SAP Datasphere.
 <tr>
 <td valign="top">
 
-*Latest Change \(Source\)* 
+*Last Change \(Source\)* 
 
 </td>
 <td valign="top">
@@ -310,7 +310,7 @@ Displays when the data was last successfully updated in SAP Datasphere.
 \(For remote tables connected with SAP HANA smart data integration in real-time replication only\). Displays the date and time when the data has been last updated in the source system. It can take up to 5 minutes to show the information in SAP Datasphere after the source has been updated.
 
 > ### Note:  
-> If the *Latest Change \(Source\)* column shows a significantly lower value than the *Latest Update* column, it is very likely that there is an overload situation in transferring changes from the source to SAP Datasphere. In that case, refer to the documentation[Best Practices and Sizing Guide for Smart Data Integration when used in SAP Data Warehouse Cloud](https://www.sap.com/documents/2022/06/008491bc-317e-0010-bca6-c68f7e60039b.html) 
+> If the *Last Change \(Source\)* column shows a significantly lower value than the *Last Updated* column, it is very likely that there is an overload situation in transferring changes from the source to SAP Datasphere. In that case, refer to the documentation[Best Practices and Sizing Guide for Smart Data Integration when used in SAP Data Warehouse Cloud](https://www.sap.com/documents/2022/06/008491bc-317e-0010-bca6-c68f7e60039b.html) 
 
 
 
@@ -461,7 +461,7 @@ For more information, see [Replicate Data Changes in Real-Time](replicate-data-c
 <tr>
 <td valign="top">
 
-*Disable Real-Time Data Replication*
+*Disable Real-Time Data Replication* 
 
 </td>
 <td valign="top">

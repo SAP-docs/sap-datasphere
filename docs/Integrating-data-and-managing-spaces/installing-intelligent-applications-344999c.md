@@ -11,7 +11,7 @@ When an intelligent application is installed:
 -   SAP-managed spaces are created in SAP Datasphere to contain the intelligent application content.
 -   Replication flows, tables, views, and analytic models are created in these spaces to ingest, prepare and expose the required data to SAP Analytics Cloud.
 
-![](images/Install_Intelligent_Applications_9d8148a.png)
+![Intelligent application workflows in SAP Business Data Cloud](images/Install_Intelligent_Applications_9d8148a.png)
 
 SAP Datasphere users can work with intelligent application content in the following ways:
 

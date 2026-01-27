@@ -597,6 +597,19 @@ Enter the password for authentication.
 
 
 
+### Advanced Connection Properties
+
+When you've selected a Data Provisioning Agent, you can configure advanced connection properties to enable specific customer scenarios. In the connection creation wizard, you configure advanced properties in an additional wizard step. When editing the connection to configure the properties, scroll down and click the *Show Advanced Properties* button. Advanced properties have default values that you can override according to your customer scenario’s needs.
+
+Available properties:
+
+-   *Subscription Mode*
+-   *Page Size*
+
+For more information, see [Cloud Data Integration Remote Source Configuration](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/92c8c93f614e4e15a08c2a626b9354fb.html) in the*SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*.
+
+
+
 ### Features
 
 

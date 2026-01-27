@@ -14,13 +14,6 @@ You can schedule or unschedule data integration tasks such as remote data replic
 
 -   For replication flows, scheduling is possible if all objects in the flow have load type *Initial Only*.
 
--   To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of SAP Datasphere. In your profile settings under *Authorized Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
-
-    > ### Note:  
-    > Your consent is valid for 365 days. If your consent will expire within the next four weeks, when you attempt to schedule new tasks, SAP Datasphere displays a message warning that your consent is approaching its expiration date. After the consent has expired, a log message informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears four weeks before the expiry of consent.
-
-    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
-
 
 
 
@@ -219,6 +212,26 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Ownership*
+    
+    </td>
+    <td valign="top">
+    
+    -   *Business User* Choose to select a business user as the owner of the schedule.
+    -   *Technical User*: Choose to select a technical user as the owner of the schedule.
+
+
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     </tr>

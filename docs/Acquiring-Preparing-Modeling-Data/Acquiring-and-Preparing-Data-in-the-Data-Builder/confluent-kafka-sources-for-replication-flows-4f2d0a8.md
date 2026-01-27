@@ -51,7 +51,7 @@ When you select a replication object, its properties, including schema-related i
         <tr>
         <td valign="top">
         
-        *Subject Name*
+        Subject Name
         
         </td>
         <td valign="top">
@@ -63,7 +63,7 @@ When you select a replication object, its properties, including schema-related i
         <tr>
         <td valign="top">
         
-        *Schema Version*
+        Schema Version
         
         </td>
         <td valign="top">
@@ -75,7 +75,7 @@ When you select a replication object, its properties, including schema-related i
         <tr>
         <td valign="top">
         
-        *Expand Array or Map*
+        Expand Array
         
         </td>
         <td valign="top">
@@ -109,7 +109,7 @@ When you select a replication object, its properties, including schema-related i
         <tr>
         <td valign="top">
         
-        *Include Technical Key*
+        Include Technical Key
         
         </td>
         <td valign="top">

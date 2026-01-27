@@ -86,9 +86,12 @@ Before you can use the connection for remote tables, the following is required:
 
 Before you can use the connection for data flows, the following is required:
 
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+-   If your OData service is an on-premise service in your local network, Cloud Connector is required for the connection between your service and SAP Datasphere.
 
     For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+    > ### Note:  
+    > Publicly available OData services are supported without Cloud Connector.
 
 
 
@@ -124,11 +127,6 @@ Description
 <td valign="top">
 
 Enter the OData service provider URL. 
-
-> ### Note:  
-> The OData service URL needs to be publicly available.
-
-
 
 </td>
 </tr>
@@ -336,7 +334,7 @@ Displays *Client Credentials* as grant type used to retrieve an access token.
 </td>
 <td valign="top">
 
-Enter the API endpoint to use to request an access token.
+Enter the API endpoint to use to request an access token, for example <code><i class="varname">&lt;API server&gt;</i>/oauth/token</code>.
 
 </td>
 </tr>
@@ -568,7 +566,7 @@ Click *Add* to add name and value for a custom HTTP header field.
 </td>
 <td valign="top">
 
-If the option is enabled \(default\), the <code>$format=<i class="varname">&lt;format&gt;</i></code> query option can be used to request returning the specified format, for example <code>$format=<i class="varname">&lt;json&gt;</i></code> to request JSON format. If you disable the property, the format query option is ignored, and the connection always returns the default response format of the OData service.
+If the option is enabled \(default\), you can use the <code>$format=<i class="varname">&lt;format&gt;</i></code> query option to specify the format in which data should be returned, for example you can use <code>$format=<i class="varname">&lt;json&gt;</i></code> to request JSON format. If you disable the property, the format query option is ignored, and the connection always returns the default response format of the OData service.
 
 > ### Note:  
 > This option applies to remote tables only.

@@ -208,7 +208,7 @@ In addition to working with analytic models in the editor, you can also:
     > ### Note:  
     > For technical reasons, there is a timeout after three minutes when opening the data preview or when executing a query against an analytic model in SAP Analytics Cloud.
 
-7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>
@@ -227,7 +227,7 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -241,12 +241,12 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
@@ -255,7 +255,7 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    <span class="FPA-icons-V3"></span> \(Source Browser\) 
     
     </td>
     <td valign="top">
@@ -269,7 +269,7 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\) 
     
     </td>
     <td valign="top">
@@ -283,19 +283,19 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)  
     
     </td>
     <td valign="top">
     
-    Revert the last change to the object or redo a change you have previously undone.
+    Revert the last change to the object or redo a change you have previously undone. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -312,7 +312,7 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) 
     
     </td>
     <td valign="top">
@@ -326,7 +326,7 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-TNT-V3"></span> \(Generate OData Request\)
+    <span class="SAP-icons-TNT-V3"></span> \(Generate OData Request\)  
     
     </td>
     <td valign="top">
@@ -347,14 +347,14 @@ In addition to working with analytic models in the editor, you can also:
     
     Open the *Extensions* dialog to add custom fields to an analytic model delivered as part of an SAP Business Data Cloud intelligent application in an SAP-managed space.
 
-    See [Adding Custom Fields to Intelligent Applications](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/abb6cac0b5b940dc9f74edf753751bc6.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any custom fields that are defined in your source system. However, you can add the custom fields to the analytic model.") :arrow_upper_right:
+    See [Adding Custom Fields to Intelligent Applications](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/abb6cac0b5b940dc9f74edf753751bc6.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any custom fields that are defined in your source system. However, you can add the custom fields to the analytic model.") :arrow_upper_right: 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Versions
+    Versions 
     
     </td>
     <td valign="top">
@@ -368,12 +368,24 @@ In addition to working with analytic models in the editor, you can also:
     <tr>
     <td valign="top">
     
-    Details
+    Details 
     
     </td>
     <td valign="top">
     
-    Toggles the display of the *Properties* panel.
+    Toggles the display of the *Properties* panel. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Open Data Pipeline Analyzer\)  
+    
+    </td>
+    <td valign="top">
+    
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. 
     
     </td>
     </tr>

@@ -291,7 +291,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     > 
     > If a remote table definition created by an import doesn't match the remote table source definition, you won't be allowed to deploy it. You'll need to click <span class="SAP-icons-V5"></span> \(Refresh\) to repair the table structure and continue with deployment.
 
-7.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+7.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>
@@ -310,7 +310,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -324,12 +324,12 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
@@ -338,7 +338,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Share\)
+    <span class="FPA-icons-V3"></span> \(Share\) 
     
     </td>
     <td valign="top">
@@ -352,12 +352,12 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\) 
     
     </td>
     <td valign="top">
     
-    Open the *Data Preview* panel to preview the data stored in the object.
+    Open the *Data Preview* panel to preview the data stored in the object. 
 
     See [Viewing Object Data](../viewing-object-data-b338e4a.md).
     
@@ -366,19 +366,19 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)  
     
     </td>
     <td valign="top">
     
-    Revert the last change to the object or redo a change you have previously undone.
+    Revert the last change to the object or redo a change you have previously undone. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -392,26 +392,26 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Upload Data From CSV File\)
+    <span class="FPA-icons-V3"></span> \(Upload Data From CSV File\) 
     
     </td>
     <td valign="top">
     
     Upload data.
 
-    See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)
+    See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md) 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Hierarchies\)
+    <span class="FPA-icons-V3"></span> \(Hierarchies\) 
     
     </td>
     <td valign="top">
     
-    Add a hierarchy to your dimension to support drill-down and drill-up in BI clients.
+    Add a hierarchy to your dimension to support drill-down and drill-up in BI clients. 
 
     See [Add a Hierarchy to a Dimension](../Modeling-Data-in-the-Data-Builder/add-a-hierarchy-to-a-dimension-218b7e6.md).
     
@@ -420,7 +420,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Delete Data From Table\)
+    <span class="FPA-icons-V3"></span> \(Delete Data From Table\) 
     
     </td>
     <td valign="top">
@@ -438,7 +438,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\)
+    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) 
     
     </td>
     <td valign="top">
@@ -452,7 +452,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) 
     
     </td>
     <td valign="top">
@@ -466,7 +466,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Generate\)
+    <span class="SAP-icons-V5"></span> \(Generate\)  
     
     </td>
     <td valign="top">
@@ -482,7 +482,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    Versions
+    Versions 
     
     </td>
     <td valign="top">
@@ -496,12 +496,24 @@ Provide business-friendly names for your table and its columns, identify its sem
     <tr>
     <td valign="top">
     
-    Details
+    Details 
     
     </td>
     <td valign="top">
     
-    Toggles the display of the *Properties* panel.
+    Toggles the display of the *Properties* panel. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Open Data Pipeline Analyzer\)  
+    
+    </td>
+    <td valign="top">
+    
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. 
     
     </td>
     </tr>

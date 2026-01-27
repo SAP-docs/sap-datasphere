@@ -66,10 +66,22 @@ When using attributes to construct the criteria in your permissions entities, yo
 -   Know the user attributes and possible values that are present in each of the configured custom application attributes.
 -   Construct criteria to test against the values in those attributes.
 
-For more details, see:
+For more details and examples, see:
 
 -   [Example: Using Country Identifiers in a Hierarchy with Directory Permissions Table](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md#loio40f493f922f24663aa8191ad1e79cb77__section_example_hwd)
 -   [Example: Combining Identifier Types in an Operator and Values Permissions Table](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md#loio40f493f922f24663aa8191ad1e79cb77__section_example_operator_and_values)
+
+
+
+<a name="loio40f493f922f24663aa8191ad1e79cb77__section_enable"/>
+
+## Enable Attributes as Identifiers in Data Access Controls
+
+When you create a data access control, user attributes are not supported by default. To enable this feature:
+
+-   Click the *Allow IdP User Attributes as Identifiers* switch.
+-   Select a permissions entity column for *Identifier Type Column*, which must contains only the values 0-5.
+-   Select a permissions entity column for *Identifier Column*, which can contain user IDs and user attribute values.
 
 
 
@@ -540,16 +552,4 @@ Based on these records:
     >     -   100-199 - Reserved for Type 3 \(`Department`\)
     >     -   200+ - Reserved for Type 0 \(`User ID`\)
 
-
-
-
-<a name="loio40f493f922f24663aa8191ad1e79cb77__section_enable"/>
-
-## Enable Attributes as Identifiers in Data Access Controls
-
-When you create a data access control, user attributes are not supported by default. To enable this feature:
-
--   Click the *Allow IdP User Attributes as Identifiers* switch.
--   Select a permissions entity column for *Identifier Type Column*, which must contains only the values 0-5.
--   Select a permissions entity column for *Identifier Column*, which can contain user IDs and user attribute values.
 

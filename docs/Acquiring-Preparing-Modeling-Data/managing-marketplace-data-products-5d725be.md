@@ -67,7 +67,7 @@ Name
 </td>
 <td valign="top">
 
-Displays the data product name. Select the link to open the data product details page.
+Displays the data product name. Choose the link to open the data product details page.
 
 </td>
 </tr>
@@ -117,7 +117,7 @@ Installation Details
 
 Displays the installation details, which includes the installation status and the last installation date.
 
-For data products with the **Full Replication** delivery mode, you can select to automatically install updates when an update for the data product is available.
+For data products with the **Full Replication** delivery mode, you can choose to automatically install updates when an update for the data product is available.
 
 </td>
 </tr>
@@ -129,7 +129,7 @@ Actions
 </td>
 <td valign="top">
 
-Displays the actions available for the data products. Select <span class="SAP-icons-V5"></span> \(Delivery Details\) to view the delivery details of the data product.
+Displays the actions available for the data products. Choose <span class="SAP-icons-V5"></span> \(Delivery Details\) to view the delivery details of the data product.
 
 </td>
 </tr>
@@ -207,7 +207,7 @@ Description
 </td>
 <td valign="top">
 
-Enter all or part of the characters a particular data product name to quickly find the data product you want to check. 
+Searches for a data product name that contains all or part of the characters that you entered. 
 
 </td>
 </tr>
@@ -219,7 +219,7 @@ Enter all or part of the characters a particular data product name to quickly fi
 </td>
 <td valign="top">
 
-Select to install a data product that has a status of uninstalled. 
+Installs a data product that has a status of uninstalled. 
 
 </td>
 </tr>
@@ -231,7 +231,7 @@ Select to install a data product that has a status of uninstalled.
 </td>
 <td valign="top">
 
-Select to manually update a data product to install the latest minor version. 
+Manually updates a data product to install the latest minor version. 
 
 </td>
 </tr>
@@ -243,7 +243,7 @@ Select to manually update a data product to install the latest minor version.
 </td>
 <td valign="top">
 
-Select to uninstall a data product. You will want to uninstall a data product when it's no longer needed in the space that it was installed, a new major version of the data product is installed, or you want to terminate the subscription. 
+Uninstalls a data product. You will want to uninstall a data product when it's no longer needed in the space that it was installed, a new major version of the data product is installed, or you want to terminate the subscription. 
 
 </td>
 </tr>
@@ -255,7 +255,7 @@ Select to uninstall a data product. You will want to uninstall a data product wh
 </td>
 <td valign="top">
 
-Select to reinitialize a data product to resolve connection issues. For example, a data product with connection issues will have a failed status instead of up-to-date. 
+Re-initializes a data product to resolve connection issues. For example, a data product with connection issues will have a failed status instead of up-to-date. 
 
 </td>
 </tr>
@@ -267,7 +267,7 @@ View options
 </td>
 <td valign="top">
 
-Select the view options to sort, group, and filter the list of installed data products. You can also choose which columns you want to show or hide.
+Allows you to sort, group, or filter the list of installed data products. You can also choose which columns you want to show or hide.
 
 </td>
 </tr>
@@ -354,7 +354,7 @@ Data Products
 </td>
 <td valign="top">
 
-Displays the number of data products covered by the license key. Select the number to see the activated data products for the license key. To learn more about a data product, select the name to open its details page.
+Displays the number of data products covered by the license key. Choose the number to see the activated data products for the license key. To learn more about a data product, choose the name to open its details page.
 
 </td>
 </tr>
@@ -366,7 +366,7 @@ Activation keys
 </td>
 <td valign="top">
 
-Displays the number of activation keys available for the license. Select the number to see a list of the activation keys and the users who used them. An action is also available for copying the activation key.
+Displays the number of activation keys available for the license. Choose the number to see a list of the activation keys and the users who used them. An action is also available for copying the activation key.
 
 </td>
 </tr>
@@ -492,7 +492,7 @@ Owner
 </td>
 <td valign="top">
 
-Displays the name of the data provider who owns the context. You can select the data provider name to view the data provider details.
+Displays the name of the data provider who owns the context. You can choose the data provider name to view the data provider details.
 
 </td>
 </tr>
@@ -541,7 +541,7 @@ Action
 </td>
 <td valign="top">
 
-Displays actions available for the context. Select *Leave* if you want to leave a context.
+Displays actions available for the context. Choose *Leave* if you want to leave a context.
 
 </td>
 </tr>

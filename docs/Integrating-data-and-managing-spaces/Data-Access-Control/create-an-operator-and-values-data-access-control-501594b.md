@@ -556,7 +556,7 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -570,12 +570,12 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
     
@@ -584,7 +584,7 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -598,7 +598,7 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) 
     
     </td>
     <td valign="top">
@@ -612,7 +612,7 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    Status
+    Status 
     
     </td>
     <td valign="top">
@@ -626,7 +626,7 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    Versions
+    Versions 
     
     </td>
     <td valign="top">
@@ -640,12 +640,12 @@ Based on these three records:
     <tr>
     <td valign="top">
     
-    Details
+    Details 
     
     </td>
     <td valign="top">
     
-    Toggles the display of the *Properties* panel.
+    Toggles the display of the *Properties* panel. 
     
     </td>
     </tr>

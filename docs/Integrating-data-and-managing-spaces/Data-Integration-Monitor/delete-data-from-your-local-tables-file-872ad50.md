@@ -6,7 +6,7 @@
 
 Delete records or versions of a local table \(File\), creating a direct task or using a schedule, and free up storage allocating the required amount of compute resources that the file space can consume when processing these tasks.
 
-Local Tables \(File\) store large amount of data, including delta capture changes and historical data. When data is updated, the information is kept on your local table \(file\) with the delta changes columns, and a new version is stored in the object store. Keeping all these records and versions consume a lot of memory, and can impact performance. You must clean them up on regular basis to ensure to keep control on your costs and to improve performance while reading your local tables \(file\).
+Local Tables \(File\) store a large amount of data, including delta capture changes and historical data. When data is updated, the information is kept on your local table \(file\) with the delta changes columns, and a new version is stored in the object store. Keeping all these records and versions can consume a lot of memory, and can impact performance. You must clean them up on a regular basis to ensure to keep control of your costs and to improve performance while reading your local tables \(file\).
 
 > ### Note:  
 > To delete local table \(file\) records, you must have a scoped role that grants you access to a space with one of the following privileges:

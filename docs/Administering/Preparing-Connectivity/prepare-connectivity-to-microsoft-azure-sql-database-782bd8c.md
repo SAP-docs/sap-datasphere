@@ -94,7 +94,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `VIEW DATABASE PERFORMANCE STATE`
+    `VIEW DATABASE PERFORMANCE STATE` 
     
     </td>
     <td valign="top">
@@ -126,7 +126,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `SELECT`
+    `SELECT` 
     
     </td>
     <td valign="top">
@@ -153,7 +153,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `ALTER`
+    `ALTER` 
     
     </td>
     <td valign="top">
@@ -185,7 +185,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `CREATE TABLE`
+    `CREATE TABLE` 
     
     </td>
     <td valign="top">
@@ -212,7 +212,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `CREATE SEQUENCE`
+    `CREATE SEQUENCE` 
     
     </td>
     <td valign="top">
@@ -239,7 +239,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `CREATE SEQUENCE`
+    `CREATE SEQUENCE` 
     
     </td>
     <td valign="top">
@@ -266,7 +266,7 @@ Before you can use the connection for replication flows, the following is requir
     <tr>
     <td valign="top">
     
-    `ALTER`
+    `ALTER` 
     
     </td>
     <td valign="top">

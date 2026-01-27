@@ -14,7 +14,7 @@ Define settings and properties for your replication flow and individual replicat
 
     -   *Initial Only*: Load all selected data once.
 
-    -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load frequency is 60 minutes but you can change it in the Run Settings. See the step 5 below.
+    -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load frequency is 60 minutes but you can change it in the Run Settings. See step 5 below.
 
         > ### Note:  
         > -   A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status *Active* until it is stopped or paused or an issue occurs.
@@ -60,7 +60,7 @@ Define settings and properties for your replication flow and individual replicat
 
 3.  Click <span class="FPA-icons-V3"></span> \(Browse source settings\) to review the source settings and change them as appropriate.
 
-    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 16. This option is only available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*.
+    -   For **delta loading**, you can specify the number of threads to be used for parallel processing at replication object level. The default value is 1 \(no parallel processing\). The maximum possible value is 10. This option is only available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*.
 
     -   Overwrite Source Settings at Object Level: \[only relevant if the source is a cloud storage provider\] By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option.
 
@@ -99,8 +99,8 @@ Define settings and properties for your replication flow and individual replicat
 
     To change the settings, click *Edit*:
 
-    -   Source Thread Limit \(1-160\): You can increase or decrease the number of replication threads to be used by your replication flow to load data from the source as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 16. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance. See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
-    -   Target Thread Limit \(1-160\) You can increase or decrease the number of replication threads to be used by your replication flow to write data to the target as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 16. We recommend using the same value for the source and the target. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance.
+    -   Source Thread Limit \(1-100\): You can increase or decrease the number of replication threads to be used by your replication flow to load data from the source as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 100, the default is 10. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance. See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
+    -   Target Thread Limit \(1-100\) You can increase or decrease the number of replication threads to be used by your replication flow to write data to the target as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 100, the default is 10. We recommend using the same value for the source and the target. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance.
     -   Delta Load Frequency: The default value for the delta load frequency is 60 minutes. You can change it by entering an integer between 0 and 24 for hours and 0 and 59 for minutes, respectively. The maximum allowed value is 24 hours 0 minutes. If you enter 0 hours and 0 minutes, the system replicates any source changes immediately
 
 6.  Review the settings for the individual replication objects and change or complete them as appropriate.

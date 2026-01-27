@@ -2,7 +2,7 @@
 
 # Unsupported Data Types in a Replication Flow
 
-Replication flows support all data types in Datasphere \(see, [Column Data Types](column-data-types-7b1dc6e.md)\), except for the following sources and target connections.
+Replication flows support all data types in SAP Datasphere \(see, [Column Data Types](column-data-types-7b1dc6e.md)\), except for the following sources and target connections.
 
 
 
@@ -92,6 +92,27 @@ Snowflake
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+ABAP
+
+</td>
+<td valign="top">
+
+-   D16R – Floating point saved as binary data
+-   D34R – Floating point saved as binary data
+-   LRAW – Long byte string
+-   RAW – Byte sequence
+-   LCHR \(if length \> 5000\) – Long character string
+-   STRG – String
+-   RSTR – Byte string
+-   STRING \(if length \> 5000\) - String
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -115,31 +136,20 @@ Target
 Unsupported Data Types
 
 </th>
-<th valign="top">
-
-Mapped to Higher Version of Data Types
-
-</th>
 </tr>
 <tr>
 <td valign="top">
 
-GBQ
+Google BigQuery
 
 </td>
 <td valign="top">
 
--   decfloat16
--   decfloat34
--   uint64
+The following data types will be converted:
 
-
-
-</td>
-<td valign="top">
-
--   Mapped to target DECIMAL\(p,s\) with: \(9<=s<=38 && 29<=p-s<=38\) || \(p==77 && s ==38\) column type.
--   Mapped to target DECIMAL\(20,0\) column type.
+-   decfloat16 will be converted to decimal \(38,6\)
+-   decfloat34 will be converted to decimal \(38,6\)
+-   uint64 will be converted to decimal\(20,0\)
 
 
 
@@ -148,28 +158,25 @@ GBQ
 <tr>
 <td valign="top">
 
-LTF
+Local Table \(File\)
 
 </td>
 <td valign="top">
 
--   decfloat16
--   decfloat34
--   uint64
+The following data types will be converted:
+
+-   decfloat16 will be converted to decimal \(38,6\)
+-   decfloat34 will be converted to decimal \(38,6\)
+-   uint64 will be converted to decimal\(20,0\)
+
+The following data types will be skipped:
+
 -   time
 -   hana.ST\_POINT
 -   hana.ST\_GEOMETRY
 -   uint8
 -   tiny int
 -   datatime
-
-
-
-</td>
-<td valign="top">
-
--   Mapped to target DECIMAL\(p,s\) with: \(9<=s<=38 && 29<=p-s<=38\) || \(p==77 && s ==38\) column type.
--   Mapped to target DECIMAL\(20,0\) column type.
 
 
 

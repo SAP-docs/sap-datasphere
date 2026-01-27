@@ -6,7 +6,7 @@
 
 Use the *Generate Semantics* command to request SAP Datasphere to suggest a *Semantic Usage* for your entity, identify measures and attributes, and apply appropriate semantic types to them.
 
-1.  Open your table or view in its editor, and click <span class="SAP-icons-V5"></span> \(Generate\)** \> *Generate Semantics*.
+1.  Open your table or view in its editor, and click <span class="SAP-icons-V5"></span> \(Generate\) ** \> *Generate Semantics*.
 2.  In the dialog, select options as appropriate:
 
 

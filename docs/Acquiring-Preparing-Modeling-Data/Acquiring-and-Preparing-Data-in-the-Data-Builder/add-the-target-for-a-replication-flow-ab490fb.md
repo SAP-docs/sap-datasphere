@@ -121,3 +121,6 @@ If a projection is defined for a target column that doesn't exist in the source,
 > 
 > -   Key columns
 
+> ### Restriction:  
+> When a replication flow is running, you must not update the target objects metadata in the target system until the flow has completed. Doing so may incur in data loss.
+

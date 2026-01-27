@@ -10,7 +10,7 @@ If you use Google BigQuery as the target for your replication flow, you need to 
 > Consider also the following SAP Note content [3223810](https://me.sap.com/notes/3223810).
 
 > ### Restriction:  
-> When a replication flow is running, you must not update the target objects until the flow has completed. Doing so may incur in data loss.
+> When a replication flow is running, you must not update the target objects metadata in the target system until the flow has completed. Doing so may incur in data loss.
 
 This topic contains the following sections:
 
@@ -51,7 +51,23 @@ The maximum length for target column names is 300 characters.
 
 Decimals with precision larger than 76 are not supported.
 
-If the **target structure already exists** in Google BigQuery, you cannot make changes such as renaming a column or changing a data type in SAP Datasphere. You need to do this directly in Google BigQuery.
+You can either let the replication flow create a new target table or select an existing one in your target system with the browse button. Note that if you select an existing target, you cannot make changes such as renaming a column or changing a data type in SAP Datasphere. You need to do this directly in Google BigQuerry.
+
+> ### Caution:  
+> Do not delete or recreate the target table while the replication flow is running, as this can lead to data loss or failure, because the flow might push data into the old target table. If, for business reasons, you must delete and recreate the target table, proceed as follows:
+> 
+> 1.  Go to the Flows monitor and ensure your replication flow is not running. If it’s running, you must pause it. For more information on pausing a replication flow, see [Working With Existing Replication Flow Runs](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/da62e1ee746448e8bc043e1be4377cbe.html?state=DRAFT&version=DEV).
+> 2.  From the replication flow editor, select the replication object and click *Remove*.
+> 3.  Delete the target table on your target system.
+> 4.  Recreate the target table on your target system.
+> 5.  From the replication flow editor, click "Add Source Object" and add the object to be replicated again. Check that the replication object is available and ready for data loading.
+> 6.  Browse to select the new target table in your target system and add any projections and settings you need.
+> 7.  From the Flows monitor, *Restart*\(not resume\) the replication object.
+
+> ### Note:  
+> Resuming replication after recreating the target table will not reload previously ingested data; this is why restarting is required to ensure data consistency.
+> 
+> For more information, see [Google BigQuerry Streaming](https://docs.cloud.google.com/bigquery/docs/streaming-data-into-bigquery).
 
 
 

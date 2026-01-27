@@ -280,7 +280,7 @@ Name
 </td>
 <td valign="top">
 
-Displays the data product name. Select the link to open the data product details page.
+Displays the data product name. Choose the link to open the data product details page.
 
 > ### Tip:  
 > To get a better understanding of a data product, you can view the impact and lineage analysis diagram from the data product details page. See the section **Impact and Lineage Analysis Diagram for a Marketplace Data Product** in [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md).
@@ -431,7 +431,7 @@ Select a data product and evaluate it to see if you can use it or share it.
 
 [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)
 
-[Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks) \(SAP Business Data Cloud help documentation\)
+[Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products) \(SAP Business Data Cloud help documentation\)
 
 </td>
 </tr>

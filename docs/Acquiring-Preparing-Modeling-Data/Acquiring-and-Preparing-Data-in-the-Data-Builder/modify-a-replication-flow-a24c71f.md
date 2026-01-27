@@ -118,6 +118,11 @@ Date
 
 Time
 
+> ### Note:  
+> Time is not supported if your target is a local table \(file\). See [Unsupported Data Types in a Replication Flow](unsupported-data-types-in-a-replication-flow-6c770bb.md)
+
+
+
 </td>
 <td valign="top">
 
@@ -194,7 +199,7 @@ You can rename an existing target object:
 1.  Open the replication flow in the replication flow editor.
 2.  Select the replication object you want to rename.
 3.  Click *...* \> *Rename Target Object*.
-4.  Update the techincal name as desired.
+4.  Update the technical name as desired.
 
     > ### Note:  
     > If you rename the object with a name that already exists for another object in the space, it will reuse the definition of this existing object.

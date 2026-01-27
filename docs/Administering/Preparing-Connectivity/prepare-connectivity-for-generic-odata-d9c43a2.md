@@ -27,9 +27,12 @@ Before you can use the connection for remote tables, the following is required:
 
 Before you can use the connection for data flows, the following is required:
 
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+-   If your OData service is an on-premise service in your local network, Cloud Connector is required for the connection between your service and SAP Datasphere.
 
     For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
+
+    > ### Note:  
+    > Publicly available OData services are supported without Cloud Connector.
 
 
 **Related Information**  

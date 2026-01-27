@@ -4,7 +4,7 @@
 
 Aggregation is a process to summarize measures, for example, by grouping values of multiple rows into a single result.
 
-The standard aggregation is used to aggregate with respect to any dimension not in query drill-down. Exception aggregation is always performed in addition to standard aggregation. It defines the exception: It is used to aggregate with respect to the defined dimensions for exception aggregation. You can use exception aggregation if warehouse stock cannot be totaled up at the time, or if counters count the number of dimensions for a specific dimension.
+The standard aggregation is used to aggregate with respect to any dimension not in query drill-down. Exception aggregation is always performed in addition to standard aggregation. It defines the exception: It is used to aggregate with respect to the defined dimensions for exception aggregation. You can use exception aggregation if warehouse stock cannot be totaled up at the time, or if counters count the number of dimension members for a specific dimension.
 
 A measure is calculated in the following order: first the standard aggregation, then the formula, and then the exception aggregation.
 

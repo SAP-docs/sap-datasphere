@@ -177,7 +177,7 @@ Shows objects that you've recently viewed.
 </tr>
 </table>
 
-You can also open a side panel when you click <span class="FPA-icons-V3"></span> \(Show filters\) to filter by these collections and more. Click *Show More* to open a dialog with additional filter options.
+You can also open a side panel when you choose <span class="FPA-icons-V3"></span> \(Show filters\) to filter by these collections and more. Choose *Show More* to open a dialog with additional filter options.
 
 <a name="concept_w12_d4t_32c"/>
 
@@ -185,10 +185,10 @@ You can also open a side panel when you click <span class="FPA-icons-V3"></sp
 
 ## Search for Third-Party Data
 
-You can use the Datarade Data Finder website to search and request additional third-party data products from various data providers. Access the Datarade website from the catalog by choosing the *Data Products \(Marketplace\)* tab or the *Data Providers* tab, and then clicking the *Request External Products* button.
+You can use the Datarade Data Finder website to search and request additional third-party data products from various data providers. Access the Datarade website from the catalog by choosing the *Data Products \(Marketplace\)* tab or the *Data Providers* tab, and then choosing the *Request External Products* button.
 
 > ### Note:  
-> Clicking the *Request External Products* button takes you to the Datarade website. This site is external to our product.
+> Choosing the *Request External Products* button takes you to the Datarade website. This site is external to our product.
 
 <a name="concept_qns_xnt_32c"/>
 
@@ -196,7 +196,7 @@ You can use the Datarade Data Finder website to search and request additional th
 
 ## Filter by Criteria
 
-After you use the search and select a collection \(for example, assets or terms\), you can apply other filter options to narrow the results by the different criteria in each collection. You can access the filter options by clicking <span class="FPA-icons-V3"></span> \(Show filters\). Filter by any of the categories listed in the *Filter By* area of the left panel.
+After you use the search and select a collection \(for example, assets or terms\), you can apply other filter options to narrow the results by the different criteria in each collection. You can access the filter options by choosing <span class="FPA-icons-V3"></span> \(Show filters\). Filter by any of the categories listed in the *Filter By* area of the left panel.
 
 You can select one or more values in each filter category in the *Filter By* section:
 
@@ -276,7 +276,7 @@ For those filter options that are not related to date or time, you can create a 
 You can create advanced filter conditions for multiple filter categories. An object must meet one of the conditions in each of the categories to be included in the search results.
 
 > ### Example:  
-> For example, if you are viewing terms and want to create a condition to filter on the keywords “investment” and “stock”, you would click :heavy_plus_sign:. Then choose *Contains*. In the Filter Condition box, enter `investment`. Click :heavy_plus_sign: again. Choose *Contains*. In the Filter Condition box, enter `stock`, and then click *OK*. The new condition is listed in the Keyword group in the filter panel, and the filter results are automatically shown.
+> For example, if you are viewing terms and want to create a condition to filter on the keywords “investment” and “stock”, you would choose :heavy_plus_sign:. Then choose *Contains*. In the Filter Condition box, enter `investment`. choose :heavy_plus_sign: again. Choose *Contains*. In the Filter Condition box, enter `stock`, and then choose *OK*. The new condition is listed in the Keyword group in the filter panel, and the filter results are automatically shown.
 
 <a name="concept_ryt_3nt_32c"/>
 

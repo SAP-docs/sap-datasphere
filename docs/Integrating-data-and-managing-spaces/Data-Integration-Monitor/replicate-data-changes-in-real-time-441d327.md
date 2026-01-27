@@ -90,7 +90,7 @@ Use real-time replication to copy the data changes from your source object in re
 
 ## Results
 
-Real-time replication gets initialized by copying the data from the source. You will see the status *Active* in the *Status* column once real-time replication has been successfully initialized. Whenever data now changes in the source, the changes will be copied into SAP Datasphere. You won't be notified on individual replications. The *Latest Update* column shows date and time when data has been lastly changed in SAP Datasphere.
+Real-time replication gets initialized by copying the data from the source. You will see the status *Active* in the *Status* column once real-time replication has been successfully initialized. Whenever data now changes in the source, the changes will be copied into SAP Datasphere. You won't be notified on individual replications. The *Last Updated* column shows the date and time when data was last changed in SAP Datasphere.
 
 > ### Note:  
 > No logs are generated when data is replicated in real-time mode. The displayed logs relate to previous actions.

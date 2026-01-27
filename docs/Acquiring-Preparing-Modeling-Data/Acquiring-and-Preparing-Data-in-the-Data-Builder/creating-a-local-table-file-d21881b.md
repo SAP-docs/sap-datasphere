@@ -351,6 +351,8 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     > -   You can’t change the partition definition after you have deployed the table if it contains data.
     > -   If the cardinality of a column is very high, do not use that column for partitioning. For that reason, in case there is only one key column, this column can't be select for partitioning.
 
+    For more information on partitions, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
+
 7.  *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 8.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 

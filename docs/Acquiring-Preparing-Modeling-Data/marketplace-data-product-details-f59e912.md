@@ -15,7 +15,7 @@ For example, when a data modeler reviews the details of a data product, they can
 After you review the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space \(see [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)\).
 
 > ### Tip:  
-> Marketplace data products are only produced by and consumed in SAP Datasphere. However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can share to other SAP or partner systems \(see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and [Sharing Data Products to Target Systems](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products-to-sap-databricks)\).
+> Marketplace data products are only produced by and consumed in SAP Datasphere. However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can share to other SAP or external systems \(see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products)\).
 
 
 
@@ -43,7 +43,7 @@ Name, type, status, and product views
 </td>
 <td valign="top">
 
-Displays the data product's name and type, its provisioning and release statues, and the number of times it was viewed. Click on a status label to learn what it means. 
+Displays the data product's name and type, its provisioning and release statues, and the number of times it was viewed. Choose on a status label to learn what it means. 
 
 </td>
 </tr>
@@ -358,7 +358,7 @@ Additional Properties
 </td>
 <td valign="top">
 
-Displays the additional properties for the data product. The following properties are hidden by default and appear after you select the **Show More** link.
+Displays the additional properties for the data product. The following properties are hidden by default and appear after you choose the **Show More** link.
 
 -   Data Category: Displays one or more categories where the data product can be used.
 -   Industry: Displays one or more industries where the data product can be used.
@@ -487,9 +487,7 @@ Review the installations for the data product. The information available include
 </tr>
 </table>
 
-<a name="concept_fls_bjg_2cc"/>
 
-<!-- concept\_fls\_bjg\_2cc -->
 
 ## Marketplace Data Product Documentation
 
@@ -517,7 +515,7 @@ Pricing
 </td>
 <td valign="top">
 
-Displays the pricing information, the price with the currency code, and pricing model \(one time or monthly\) for the data product. If you need to purchase a license key for the data product, you can select the *URL for License Key Purchase* to purchase your own license.
+Displays the pricing information, the price with the currency code, and pricing model \(one time or monthly\) for the data product. If you need to purchase a license key for the data product, you can choose *URL for License Key Purchase* to purchase your own license.
 
 </td>
 </tr>
@@ -552,18 +550,16 @@ Displays a list of additional documents for the data product.These documents can
 </tr>
 </table>
 
-<a name="concept_r2v_rvh_jdc"/>
 
-<!-- concept\_r2v\_rvh\_jdc -->
 
 ## Impact and Lineage Analysis Diagram for a Marketplace Data Product
 
-Select the *Open Impact and Lineage* button in the header to see a diagram for the analyzed data product. This diagram shows the data analysis of the analyzed object and provides an end-to-end visualization of the object dependencies across multiple systems and layers. It can help you better understand the lineage \(also known as data provenance\) and impacts of a selected object in the catalog. Impact and lineage contain information about the source of the object, the transformations it goes through, its final state, and objects affected by changes made to it. Impact and lineage serve distinct purposes.
+Select the *Open Impact and Lineage* button in the header to see a diagram for the analyzed data product. This diagram shows the object-level data analysis of an analyzed object and provides an end-to-end visualization of the object dependencies across multiple systems and layers. It can help you better understand the lineage \(also known as data provenance\) and impacts of a selected object in the catalog. Impact and lineage contain information about the source of the object, the transformations it goes through, its final state, and objects affected by changes made to it. Impact and lineage serve distinct purposes.
 
 -   *Lineage* is displayed to the left of the analyzed object \(or below it\). It shows objects that the analyzed object uses as sources. It allows you to trace errors back to the root cause.
 -   *Impact* is displayed to the right of the analyzed object \(or above it\). It shows objects that use the analyzed object as a source. It allows you to understand the impact of changes on dependent objects.
 
-![](images/Impact_and_Lineage_Catalog_View_4c0c62d.png)
+![](images/Impact_and_Lineage_Analysis_Diagram_for_an_Asset_4c0c62d.png)
 
 > ### Tip:  
 > If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:.
@@ -592,7 +588,7 @@ Description
 </td>
 <td valign="top">
 
-Use the toolbar and diagram tools to control the layout of the diagram. Click *Reset* to restore the default layout.
+Use the toolbar and diagram tools to control the layout of the diagram. choose *Reset* to restore the default layout.
 
 </td>
 </tr>
@@ -622,7 +618,7 @@ You can expand or collapse the container, using the <span class="FPA-icons-V3">�
 
 The inner container represents one of the following:
 
--   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains objects that either appear in the lineage or impact the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
+-   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space or <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder\). It contains objects that either appear in the lineage of or are impacted by the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
 -   A :package: data product. The data product is visible if you have access and view permission for it. For example, you are a member of the context associated with it or if you are a member of the space where it has been installed. Also, you will be able to view the details to see a brief summary of the data product or open the data product page.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
@@ -632,29 +628,143 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 <tr>
 <td valign="top">
 
-\(4\) Authorized Object
-
-\(5\) Analyzed Object
-
-\(6\) Unauthorized Object
+\(4\) Unauthorized or Authorized Object
 
 </td>
 <td valign="top">
 
-Authorized and unauthorized objects appear in the lineage or impact of the analyzed object.
-
--   Authorized objects are published and can be discovered in the catalog. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). Click the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to view the details page for the object.
-
--   The analyzed object appears as a light blue object. They have an icon that represents its type \(for example, <span class="FPA-icons-V3"></span> \(Story\) or <span class="FPA-icons-V3"></span> \(Transformation\)\).
+Unauthorized and authorized objects appear in the lineage or impact of the analyzed object.
 
 -   Unauthorized objects are unpublished objects that you don't have access permission to in the source system. They are represented with the :lock: icon.
 
+-   Authorized objects are published and can be discovered in the catalog. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). The icon in the bottom-right corner represents the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
 
-You can show or hide the objects on either side of any object by clicking the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
+    To learn more about an object select the object and then choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties . If the object is available in the catalog, you can choose the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to view the details page for the object.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\(5\) Analyzed Object
+
+</td>
+<td valign="top">
+
+The analyzed object appears as a light blue object. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(Story\), <span class="FPA-icons-V3"></span> \(Transformation\), or :package: data product\). The icon in the bottom-right corner represents the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
+
+You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 
 </td>
 </tr>
 </table>
 
-For information on how to control the diagram layout and use tools to further analyze the objects, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+
+
+### Control Diagram Layout
+
+Use the diagram tools to control the layout of the diagram.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Tool
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Search
+
+</td>
+<td valign="top">
+
+Find and select objects in the diagram. Results are proposed once three characters are entered. Click a result in the list to select the object symbol and highlight other objects on its path to the analyzed object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Lineage
+
+</td>
+<td valign="top">
+
+Enable/disable the display of the lineage of the analyzed object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Impact
+
+</td>
+<td valign="top">
+
+Enable/disable the display of the impacts of the analyzed object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Layout
+
+</td>
+<td valign="top">
+
+Change the orientation of the diagram:
+
+-   *Left-Right* - \[default\] Display lineage objects on the left and impacts on the right of the analyzed object.
+-   *Bottom-Top* - Display lineage objects below and impacts above the analyzed object.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Reset
+
+</td>
+<td valign="top">
+
+Restore the default layout. Changing the mode also resets the layout.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+![](images/Impact_and_Lineage_Diagram_-_Compass_69fc8ea.png)
+
+</td>
+<td valign="top">
+
+Scroll, zoom, or recenter the diagram:
+
+-   Click <span class="SAP-icons-V5"></span> \(or press [F6\]\) to zoom in.
+-   Click <span class="SAP-icons-V5"></span> \(or press [F7\]\) to zoom out.
+-   Click the center button \(or press [F8\]\) to fit to screen, [CTRL\]-click the center button \(or press [CTRL\] + [F5\] \) to zoom to 100% scale, or enter a percentage.
+-   Click the arrow buttons \(or press the arrow keys\) to scroll horizontally or vertically.
+
+
+
+</td>
+</tr>
+</table>
 

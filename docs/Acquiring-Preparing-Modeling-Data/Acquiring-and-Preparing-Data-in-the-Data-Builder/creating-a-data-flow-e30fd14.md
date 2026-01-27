@@ -307,7 +307,7 @@ In addition to working with flows in the editor, you can also:
 
     With deployment, you will be able to save draft version of your data flow without affecting the execution.
 
-9.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+9.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>
@@ -326,7 +326,7 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -340,12 +340,12 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
@@ -354,12 +354,12 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Run\)
+    <span class="FPA-icons-V3"></span> \(Run\) 
     
     </td>
     <td valign="top">
     
-    Run the object to obtain or update its output results.
+    Run the object to obtain or update its output results. 
 
     You must deploy the object before you can run it.
     
@@ -368,7 +368,7 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    <span class="FPA-icons-V3"></span> \(Source Browser\) 
     
     </td>
     <td valign="top">
@@ -382,12 +382,12 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\) 
     
     </td>
     <td valign="top">
     
-    Open the *Data Preview* panel to preview data in the selected diagram node.
+    Open the *Data Preview* panel to preview data in the selected diagram node. 
 
     See [Viewing Object Data](../viewing-object-data-b338e4a.md).
     
@@ -396,19 +396,19 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)
+    <span class="FPA-icons-V3"></span> \(Undo\) / <span class="FPA-icons-V3"></span> \(Redo\)  
     
     </td>
     <td valign="top">
     
-    Revert the last change to the object or redo a change you have previously undone.
+    Revert the last change to the object or redo a change you have previously undone. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -422,7 +422,7 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) 
     
     </td>
     <td valign="top">

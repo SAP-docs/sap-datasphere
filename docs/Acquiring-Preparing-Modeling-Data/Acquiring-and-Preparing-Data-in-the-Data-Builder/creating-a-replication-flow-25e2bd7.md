@@ -242,24 +242,24 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    Source Thread Limit \(1-160\)
+    Source Thread Limit \(1-100\)
     
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 16. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Target Thread Limit \(1-160\)
+    Target Thread Limit \(1-100\)
     
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 16.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -410,7 +410,7 @@ For more information about connection types that can be used for adding sources 
     > ### Note:  
     > If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
 
-9.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+9.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>
@@ -429,7 +429,7 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -443,12 +443,12 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
@@ -457,12 +457,12 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Run\)
+    <span class="FPA-icons-V3"></span> \(Run\) 
     
     </td>
     <td valign="top">
     
-    Run the object to obtain or update its output results.
+    Run the object to obtain or update its output results. 
 
     You must deploy the object before you can run it.
     
@@ -471,7 +471,7 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -485,33 +485,33 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Add Projection\)
+    <span class="SAP-icons-V5"></span> \(Add Projection\) 
     
     </td>
     <td valign="top">
     
-    Define a projection \(filter or mapping\) for an object by selecting it and choosing *Add Projection*.
+    Define a projection \(filter or mapping\) for an object by selecting it and choosing *Add Projection*. 
 
-    See [Define Filters in a Replication Flow](define-filters-in-a-replication-flow-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md)
+    See [Define Filters in a Replication Flow](define-filters-in-a-replication-flow-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md) 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) 
     
     </td>
     <td valign="top">
     
-    [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md)
+    [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md) 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Versions
+    Versions 
     
     </td>
     <td valign="top">
@@ -525,36 +525,36 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    Details
+    Details 
     
     </td>
     <td valign="top">
     
-    Toggles the display of the *Properties* panel.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    <span class="SAP-icons-V5"></span> \(Runtime Email Notification\)
-    
-    </td>
-    <td valign="top">
-    
-    Configure email notification to receive an email when the replication of an object fails during a replication flow run. For more information, see [Configure Email Notification for Replication Flow Failure at Object Level](configure-email-notification-for-replication-flow-failure-at-obj-5dc4db2.md)
+    Toggles the display of the *Properties* panel. 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(View Dependent Replication Flows\)
+    <span class="SAP-icons-V5"></span> \(Runtime Email Notification\) 
     
     </td>
     <td valign="top">
     
-    Display which target objects are reused as source objects in other replication flows.
+    Configure email notification to receive an email when the replication of an object fails during a replication flow run. For more information, see [Configure Email Notification for Replication Flow Failure at Object Level](configure-email-notification-for-replication-flow-failure-at-obj-5dc4db2.md)  
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(View Dependent Replication Flows\) 
+    
+    </td>
+    <td valign="top">
+    
+    Display which target objects are reused as source objects in other replication flows. 
     
     </td>
     </tr>

@@ -29,6 +29,8 @@ For security and data privacy reasons, when you export a task chain to a CSN/JSO
 
 1.  In the *Email Notifications* section of the *Properties* panel, select when you want notifications to be sent for the current task chain. You can choose from the following options:
 
+    -   Do not send any notifications. \(This is the default setting.\)
+
     -   Send email notification only when the run has completed with an error.
 
     -   Send email notification only when the run has completed successfully.

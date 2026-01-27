@@ -30,6 +30,8 @@ Created automatically when a data product is installed from a connection and nam
 
 Each data product installed from the connection is created once in the connection's ingestion space and then is shared to the modeling space requesting it. Subsequent installations of the data product in other modeling spaces will simply share the data product in the ingestion space to the requesting space.
 
+Each connection that has one or more data products installed has its own ingestion space. Data products created from SAP BW via the Data Product Generator for SAP Business Data Cloud and any other data products created in your SAP Datasphere tenant all pass through a single "local" ingestion space with a name derived from the SAP Datasphere tenant URL.
+
 Restrictions:
 
 -   Administrators can modify only the space quota.

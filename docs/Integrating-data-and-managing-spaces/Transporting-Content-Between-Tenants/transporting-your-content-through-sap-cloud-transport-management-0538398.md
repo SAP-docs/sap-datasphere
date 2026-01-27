@@ -15,7 +15,7 @@ Once you’ve configured the system, you must connect it to your SAP Datasphere 
 Then you can use the SAP Datasphere Transport app to transfer your content to SAP Cloud Transport Management.
 
 > ### Note:  
-> Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\), can use the *Transport* app to export content.
+> Users with the *DW Administrator* global role \(or users with both a scoped *DW Space Administrator* role and a global role providing the *Lifecycle* privilege\) can use the *Transport* app to export content.
 
 Finally, you can return to SAP Cloud Transport Management to ensure the transferred content is available and ready to be imported to another SAP Datasphere tenant.
 
@@ -24,7 +24,7 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
 ## Configuring SAP Cloud Transport Management
 
 1.  As an administrator of SAP Cloud Transport Management, set up an environment to transport content objects directly in SAP Datasphere, see [Initial Setup to Transport Content Objects Directly in an Application](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/set-up-environment-to-transport-content-archives-directly-in-application).
-2.  Configure the landscape for your transports, by creating transport destinations, routes, and nodes.
+2.  Configure the landscape for your transports by creating transport destinations, routes, and nodes.
 
     > ### Tip:  
     > -   Go to *System*→*Administration*→*App Integration* to find the token URL and add the extension `<Token URL>?grant_type=client_credentials`.
@@ -57,7 +57,7 @@ To ensure the content import from SAP Cloud Transport Management uses an existin
 
 1.  In the side navigation area of the target tenant, click *Transport* \> *Import*.
 2.  Click *Settings* from the menu bar.
-3.  In the *Settings* dialog box, select the checkbox to agree to use your user rights. Click *OK*.
+3.  In the *Settings* dialog box, under **User Authorization to Import from SAP Cloud Transport Management**, select a user whose rights will be used to import content. Click *OK*.
 
 All users in this tenant will now use your configured user rights and privileges when importing content from SAP Cloud Transport Management.
 
@@ -75,7 +75,7 @@ If no user has been defined in the target tenant beforehand, the user must conse
 1.  In the side navigation area, click *Transport* \> *Export* and select the package you want to export.
 2.  Click <span class="SAP-icons-V5"></span> *Upload to SAP Cloud Transport Management Node* from the menu bar: in the dialog box, you can see the list of selected packages.
 3.  In the *Export Node* dropdown, choose the source node of SAP Cloud Transport Management to which you want to export your packages. For more information on source and target nodes, see [Create Transport Nodes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-nodes).
-4.  Select the checkbox to agree to use your user rights \(based on user's email ID\) to import the package in the target tenant.
+4.  Select the checkbox to agree to use your user rights \(based on user email ID\) to import the package in the target tenant.
 5.  Click *Upload*.
 
 
@@ -88,7 +88,7 @@ If no user has been defined in the target tenant beforehand, the user must conse
 Once the import is completed, you see the content of the package available in its corresponding destination in your SAP Datasphere account.
 
 > ### Note:  
-> The user who uploaded the package must be a member of the target tenant with the *Lifecycle* privilege\).
+> The user who uploaded the package must be a member of the target tenant with the *Lifecycle* privilege.
 > 
 > The authentication method \(defined by the tenant owner\) must be the same on the source and on the target tenant. If the selected method is single sign-on \(SSO\), make sure to define the same user attribute for the source and the target tenant. For more information on authentication methods, see [Managing User Identity and Authentication](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/48b5c8b637a54fa491594272941855b9.html "The system owner can choose how to manage user identity and authentication for its SAP Datasphere tenant.") :arrow_upper_right:.
 

@@ -10,7 +10,7 @@ If you are using a custom IdP for authentication, you may need to update your SA
 
 A common use case is to upload new SAML metadata from your identity provider when a new signing certificate has been generated.
 
-If you can't sign in to SAP Datasphere you can use the Identity Provider Administration tool to upload new SAML metadata or download your tenant signing certificate.
+If you can't sign in to SAP Datasphere, you can use the Identity Provider Administration tool to upload new SAML metadata or download your tenant signing certificate.
 
 
 

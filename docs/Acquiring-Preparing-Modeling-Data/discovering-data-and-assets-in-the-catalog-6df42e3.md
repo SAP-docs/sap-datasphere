@@ -18,7 +18,7 @@ Search, filter, and explore data and assets in the catalog. See [Searching for D
 
 ## Evaluate Data and Assets
 
-When you find an item that interests you, view descriptions and other metadata about it. You can also view information on how to use the object and see the impact and lineage diagram that shows its source, the transformations it goes through, its final state, and other objects affected by changes made to it. All this information helps you decide if the data or asset is what you want.
+When you find an item that interests you, view descriptions and other metadata about it. You can also view information on how to use the object and see the impact and lineage analysis diagram that shows its source, the transformations it goes through, its final state, and other objects affected by changes made to it. All this information helps you decide if the data or asset is what you want.
 
 See:
 

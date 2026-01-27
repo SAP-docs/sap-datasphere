@@ -37,7 +37,7 @@ The space ID can only contain uppercase letters, numbers, and underscores \(\_\)
 
 The maximum length is 20 characters.
 
-Reserved keywords: SYS, PUBLIC, CREATE, SYSTEM, DBADMIN, MONITORING, PAL\_STEM\_TFIDF, SAP\_PA\_APL, DWC\_USER\_OWNER, DWC\_TENANT\_OWNER, DWC\_AUDIT\_READER, DWC\_GLOBAL, and DWC\_GLOBAL\_LOG.
+Reserved keywords: `SYS`, `PUBLIC`, `CREATE`, `SYSTEM`, `DBADMIN`, `MONITORING`, `PAL_STEM_TFIDF`, `SAP_PA_APL`, `DWC_USER_OWNER`, `DWC_TENANT_OWNER`, `DWC_AUDIT_READER`, `DWC_GLOBAL`, and `DWC_GLOBAL_LOG`.
 
 Also, the keywords that are reserved for the SAP HANA database cannot be used in a space ID. See [Reserved Words](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/28bcd6af3eb6437892719f7c27a8a285.html) in the *SAP HANA SQL Reference Guide for SAP HANA Platform*.
 
@@ -51,7 +51,7 @@ Elastic Compute Nodes
 </td>
 <td valign="top">
 
-The elastic compute node technical name can only contain lowercase letters \(a-z\) and numbers \(0-9\). It must contain the prefix: ds.
+The elastic compute node technical name must start with the prefix `ds`. It can only contain lowercase letters \(a-z\) and numbers \(0-9\).
 
 The minimum length is 3 and the maximum length is 9 characters.
 
@@ -83,7 +83,7 @@ Tables, views, or E/R models
 
 The technical name can only contain alphanumeric characters and underscores \(\_\). 
 
-The maximum length is 50 characters. 
+The maximum length is 100 characters. The maximum length for views with semantic usage *Analytical Dataset \(deprecated\)* is 60 characters.
 
 </td>
 </tr>
@@ -97,7 +97,7 @@ Analytic models
 
 The technical name can only contain alphanumeric characters and underscores \(\_\). 
 
-The maximum length is 50 characters. 
+The maximum length is 60 characters.
 
 </td>
 </tr>
@@ -125,7 +125,7 @@ Elements in the Data Builder \(column, join, projection, or aggregation nodes, f
 
 The technical name can only contain alphanumeric characters and underscores \(\_\).
 
-The maximum length is 50 characters. 
+The maximum length is 50 characters. The maximum length for columns is 100 characters.
 
 </td>
 </tr>
@@ -139,7 +139,7 @@ Hierarchies created inside a dimension view
 
 The technical name can only contain alphanumeric characters and underscores \(\_\). 
 
-The maximum length is 10 characters. 
+The maximum length is 20 characters.
 
 </td>
 </tr>
@@ -167,7 +167,7 @@ Input parameters
 
 The technical name can only contain uppercase letters, numbers, and underscores \(\_\). 
 
-The maximum length is 30 characters. 
+The maximum length is 100 characters.
 
 </td>
 </tr>

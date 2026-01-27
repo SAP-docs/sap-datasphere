@@ -379,7 +379,7 @@ In addition to working with views in the editor, you can also:
 
     For more information, see [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
 
-8.  The tools in the editor toolbar help you work with your object throughout its lifecycle:
+8.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>
@@ -398,7 +398,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Save\)
+    <span class="FPA-icons-V3"></span> \(Save\) 
     
     </td>
     <td valign="top">
@@ -412,12 +412,12 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Deploy\)
+    <span class="SAP-icons-V5"></span> \(Deploy\) 
     
     </td>
     <td valign="top">
     
-    Deploy your changes to make them available in the run-time environment.
+    Deploy your changes to make them available in the run-time environment. 
 
     See [Saving and Deploying Objects](saving-and-deploying-objects-7c0b560.md).
     
@@ -426,7 +426,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Share\)
+    <span class="FPA-icons-V3"></span> \(Share\) 
     
     </td>
     <td valign="top">
@@ -440,7 +440,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Source Browser\)
+    <span class="FPA-icons-V3"></span> \(Source Browser\) 
     
     </td>
     <td valign="top">
@@ -454,7 +454,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Preview Data\)
+    <span class="FPA-icons-V3"></span> \(Preview Data\) 
     
     </td>
     <td valign="top">
@@ -468,7 +468,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Export\)
+    <span class="FPA-icons-V3"></span> \(Export\) 
     
     </td>
     <td valign="top">
@@ -482,7 +482,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\)
+    <span class="SAP-icons-V5"></span> \(Edit Custom CSN Annotations\) 
     
     </td>
     <td valign="top">
@@ -496,7 +496,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\)
+    <span class="FPA-icons-V3"></span> \(Impact and Lineage Analysis\) 
     
     </td>
     <td valign="top">
@@ -510,7 +510,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-TNT-V3"></span> \(Generate OData Request\)
+    <span class="SAP-icons-TNT-V3"></span> \(Generate OData Request\)  
     
     </td>
     <td valign="top">
@@ -524,7 +524,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Runtime Metrics\)
+    <span class="SAP-icons-V5"></span> \(Runtime Metrics\) 
     
     </td>
     <td valign="top">
@@ -538,7 +538,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons-V5"></span> \(Generate\)
+    <span class="SAP-icons-V5"></span> \(Generate\)  
     
     </td>
     <td valign="top">
@@ -554,7 +554,7 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    Versions
+    Versions 
     
     </td>
     <td valign="top">
@@ -568,12 +568,24 @@ In addition to working with views in the editor, you can also:
     <tr>
     <td valign="top">
     
-    Details
+    Details 
     
     </td>
     <td valign="top">
     
-    Toggles the display of the *Properties* panel.
+    Toggles the display of the *Properties* panel. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="SAP-icons-V5"></span> \(Open Data Pipeline Analyzer\)  
+    
+    </td>
+    <td valign="top">
+    
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. 
     
     </td>
     </tr>

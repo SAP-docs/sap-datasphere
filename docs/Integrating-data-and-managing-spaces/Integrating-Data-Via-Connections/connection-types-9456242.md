@@ -1240,7 +1240,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "You can use SAP BW bridge to model objects and import them into SAP Datasphere.") :arrow_upper_right:
+[SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "After modeling objects in SAP BW bridge, you can import them into SAP Datasphere via the dedicated Import Entities wizard.") :arrow_upper_right:
 
 </td>
 <td valign="top">

@@ -115,7 +115,7 @@ For example:
     
     Select *Text*.
 
-    Alternatively, click <span class="SAP-icons-V5"></span> \(Generate\)** \> *Generate Semantics* to request SAP Datasphere to suggest a *Semantic Usage* for your entity, identify the uses of your columns, and apply appropriate semantic types to them \(see [Generate Semantic Information](generate-semantic-information-2fc1d26.md)\).
+    Alternatively, click <span class="SAP-icons-V5"></span> \(Generate\) ** \> *Generate Semantics* to request SAP Datasphere to suggest a *Semantic Usage* for your entity, identify the uses of your columns, and apply appropriate semantic types to them \(see [Generate Semantic Information](generate-semantic-information-2fc1d26.md)\).
     
     </td>
     </tr>
