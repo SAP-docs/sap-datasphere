@@ -73,10 +73,13 @@ Run tasks in a task chain that use a REST-based API to access external systems.
 
         Whether you choose Synchronous or Asynchronous modes for your API task’s execution, that choice will impact the options available for retrieving responses, status \(such as success or failure\), and other messages returned from the external system.
 
-        With synchronous operation, the API task makes a request and waits for a response. With asynchronous operation, the API task sends a request to the external system, and the response is received later via a callback, event, or message queue. Status, message and error handling for each of these modes of execution are described below.
+        With synchronous operation, the API task makes a request and waits for a maximum of 60 seconds for a response. With asynchronous operation, the API task sends a request to the external system, and the status is obtained later via a callback. Status, message, and error handling for each of these modes of execution are described below.
 
     -   Enter the request payload for your API task in the*Request Body*. The request payload must be in JSON format.
     -   Select the *Require CSRF Token* checkbox if a CSRF token is required before a POST request can be made. Enter the required CSRF token URL to get the CSRF token.
+
+    > ### Note:  
+    > An API task makes a request and waits for a response to be returned a maximum of 60 seconds. The wait time for a response cannot be reconfigured.
 
     > ### Note:  
     > If you don't enter a CSRF token URL, the request API URL will be used, by default, to get the CSRF token.
@@ -108,6 +111,6 @@ Run tasks in a task chain that use a REST-based API to access external systems.
     > Cancelling the task chain that includes an API task will set the API task to fail, although it may still remain running in the external system. There is no hard timeout for execution of API tasks. A task can run as long as it is healthy, that is, the status being retrieved is an HTTP code between 200 and 299. In case there is a problem obtaining the API task status \(for example, the HTTP connections is down\), execution of the API task is retried for another five minutes before failing the task. Using the Test API function does not perform the retry.
 
     > ### Note:  
-    > All requests performed by the API task time out after 60 seconds.
+    > All requests performed by the API task time out after a maximum of 60 seconds. The maximum wait time cannot be reconfigured.
 
 

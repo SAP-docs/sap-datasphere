@@ -37,6 +37,9 @@ SAP BW Bridge process chains available to be run in a task chain are show in the
 
 You can monitor the status of process chains runs within a task chain using the Data Integration Monitor, the same as any other object run in a task chain. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. In addition, you can also monitor process chain execution from the SAP BW Bridge Cockpit. For more information, see [Monitoring Process Chains](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/d541939cf28540f08946a2ea9a0d4f34.html) and [Monitoring Process Chain Runs](https://help.sap.com/docs/SAP_BW_BRIDGE/107a6e8a38b74ede94c833ca3b7b6f51/3ff97fc3ef6747d58e969f16beeb0922.html).
 
+> ### Note:  
+> It's not supported to use a technical user via the CLI \(Command Line Interface\) to start task chains containing SAP BW bridge process chains.
+
 
 
 ## Procedure

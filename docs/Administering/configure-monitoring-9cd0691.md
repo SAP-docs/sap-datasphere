@@ -1,6 +1,6 @@
 <!-- loio9cd0691c44a74f2aa47b52f615f74433 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Configure Monitoring
 
@@ -17,7 +17,7 @@ To control which monitoring data is collected, you must have a global role that 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -137,7 +137,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
     </tr>
     </table>
     
-    If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
+    If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *System Monitor* \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
 
     For more information about these parameters, see [Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/5faf04f17830464eacdb7938b383d2ab.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
 
@@ -175,7 +175,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
     </tr>
     </table>
     
-    If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statement Logs* tab in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\).
+    If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statement Logs* tab in the *System Monitor* \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
 
 5.  To trace elastic compute node data, select *Enable Elastic Compute Node Data Tracing* and save.
     -   If the tracing is disabled, only the statements of currently running nodes are displayed in the *System Monitor*. If a node is stopped, its information is deleted.

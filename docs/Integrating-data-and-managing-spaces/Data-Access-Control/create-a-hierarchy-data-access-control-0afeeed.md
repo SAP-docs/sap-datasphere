@@ -40,16 +40,17 @@ Before creating your data access control, you must have identified the following
     > To create a data access control from an entity with a semantic usage of *Hierarchy with Directory*, see [Create a "Hierarchy with Directory" Data Access Control](create-a-hierarchy-with-directory-data-access-control-44ae628.md).
 
 -   A permissions entity containing the following columns:
+    -   ID column - Can contain:
 
-    -   ID column - Containing user ids in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\). 
+        -   User IDs in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\).
+        -   User IDs associated with any "technical user" OAuth clients created to consume data via the OData API \(see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+        -   Identity provider attributes. If you are defining criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
 
-        > ### Note:  
-        > If a user has no entries in the permissions entity, then they will not have access to any records in the protected view.
+        This column must be selected as the *Identifier Column* in your data access control.
+
+        If a user is not associated with any IDs in the permissions entity then they will not see any records in the protected view.
 
     -   Criterion column - A column containing the criterion data. This criterion data is organized into a hierarchy via an external entity with a semantic usage of *Hierarchy*.
-
-    > ### Note:  
-    > If you want to define criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
 
 
 For example:
@@ -275,7 +276,7 @@ For example:
     
     \[read-only\] Displays the deployment and error status of the object.
 
-    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -465,7 +466,7 @@ For example:
     
     Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -479,7 +480,7 @@ For example:
     
     Deploy your changes to make them available in the run-time environment. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -521,7 +522,7 @@ For example:
     
     \[read-only\] Displays the status of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>

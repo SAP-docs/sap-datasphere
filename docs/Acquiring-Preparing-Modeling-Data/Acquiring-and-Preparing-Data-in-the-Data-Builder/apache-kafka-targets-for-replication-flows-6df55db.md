@@ -130,18 +130,20 @@ Each topic contains the source columns as defined in the mapping for the replica
 -   *OpType*: Identifies the type of target row:
     -   *L*: Written as part of the initial load.
 
-    -   *I*: New source row added after the initial load completed.
+    -   *I*: New source row added after the initial load is complete.
 
-    -   *U*: Update to a source row after the initial load completed.
+    -   *U*: Update to a source row after the initial load is complete.
 
         > ### Note:  
         > SAP S/4HANA and other ABAP sources do not distinguish between Insert \(*I*\) and Update \(*U*\), and both operations are identified as Upserts \(U\). If you apply SAP Note [3044005](https://me.sap.com/notes/3044005) the system identifies all upserts as *A*. The `APE_KEEP_UPDATE_OPERATION` parameter is described in the SAP Note.
 
-    -   *B*: Before image of an update to a source row after the initial load completed. These records are only sent by some sources \(such as SAP HANA\) and only when the after image of the update is not passing the filters specified in the replication task.
+    -   *B*: Before image of an update to a source row after the initial load is completed. These records are only sent by some sources \(such as SAP HANA\) and only when the after-image of the update does not pass the filters specified in the replication task.
 
-    -   *X*: Source row deleted after the initial load completed. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
+    -   *X*: The Source row is deleted after the initial load completes. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
 
-    -   *M*: Archiving operations after the initial load completed.
+    -   *M*: Archiving operations after the initial load is complete.
+
+    -   *D*: \[When the source is a delta enabled local table in SAP Datasphere\] Row deleted with before image values.
 
 
 -   *Seq*: Sequence number, an integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is not populated for all source systems \(for example, ABAP\).

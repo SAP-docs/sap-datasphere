@@ -176,7 +176,7 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
     > ### Note:  
     > As an alternative to creating a scoped role, you can use one of the predefined scoped roles that are delivered with SAP Datasphere in the *Roles* page and directly assign spaces and users to them.
 
-3.  In the *Create a New Role* dialog, complete the following properties:
+3.  In the *Create a Scoped Role* wizard, complete the following properties and click *Next Step*.
 
 
     <table>
@@ -230,12 +230,11 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
     </tr>
     </table>
     
-4.  Click *Create*.
+4.  In the *Role Template* step of the wizard, select the template you want to base your role on,, which can either be a standard role template or a custom role, and click *Next Step*, then *Save*.
 
-5.  Select the role template, which can either be a standard role template or a custom role and click *Save*.
+    The role page that opens displays the privileges and permissions that are included in the role template you chose. As your scoped role inherits privileges from the template, you cannot edit the privileges, except for the one privilege *Scoped Role User Assignment* \(Manage\). If you're creating a scoped role for space administration purposes, you should select this privilege that allows to manage user access to spaces.
 
-6.  As your scoped role inherits privileges from the template you've chosen, you cannot edit the privileges, except for the one privilege *Scoped Role User Assignment* \(Manage\). If you're creating a scoped role for space administration purposes, you should select this privilege that allows to manage user assignment in a space.
-7.  Save the new scoped role.
+5.  Save the new scoped role.
 
 You can then assign spaces and users to the new scoped role. The spaces and users must be created beforehand and you must assign spaces before assigning users to them.
 

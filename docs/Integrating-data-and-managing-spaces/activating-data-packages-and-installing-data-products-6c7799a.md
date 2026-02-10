@@ -6,7 +6,7 @@
 
 An SAP Business Data Cloud administrator can activate data packages to make the contained data products available for installation in SAP Datasphere \(see [Activating Data Packages](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/fcf9975b49ea4adeb837e4be16116175.html) in the *SAP Business Data Cloud* documentation\).
 
-![Data package workflows in SAP Business Data Cloud](images/Activate_Install_and_Work_with_Data_Product_6c65420.png)
+![](images/Activate_Install_and_Work_with_Data_Product_6c65420.png)
 
 When a data package is activated, SAP Datasphere users can work with data products in the following ways:
 

@@ -622,7 +622,7 @@ Unauthorized and authorized objects appear in the lineage or impact of the analy
 
 -   Unauthorized objects are unpublished objects that you don't have access permission to in the source system. They are represented with the :lock: icon.
 
--   Authorized objects are published and can be discovered in the catalog. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). The icon in the bottom-right corner represents the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
+-   Authorized objects are published and can be discovered in the catalog. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
 
     To learn more about an object select the object and then choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties . If the object is available in the catalog, you can choose the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to view the details page for the object.
 
@@ -639,7 +639,7 @@ Unauthorized and authorized objects appear in the lineage or impact of the analy
 </td>
 <td valign="top">
 
-The analyzed object appears as a light blue object. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(Story\), <span class="FPA-icons-V3"></span> \(Transformation\), or :package: data product\). The icon in the bottom-right corner represents the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
+The analyzed object appears as a light blue object. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(Story\), <span class="FPA-icons-V3"></span> \(Transformation\), or :package: data product\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
 
 You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 

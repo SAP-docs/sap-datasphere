@@ -6,6 +6,12 @@
 
 Assigning roles to your users maintains access rights and secures your information in SAP Datasphere.
 
+This topic contains the following sections:
+
+-   [Prerequisites](managing-roles-and-privileges-3740dac.md#loio3740dacbc2794f33bb5d8d42216cc3bc__section_qvm_vr4_hfc)
+-   [Introduction to Roles and Privileges](managing-roles-and-privileges-3740dac.md#loio3740dacbc2794f33bb5d8d42216cc3bc__section_wp5_sr4_hfc)
+-   [Granting Privileges via Global and Scoped Roles](managing-roles-and-privileges-3740dac.md#loio3740dacbc2794f33bb5d8d42216cc3bc__section_vdy_gmg_2bc)
+
 
 
 <a name="loio3740dacbc2794f33bb5d8d42216cc3bc__section_qvm_vr4_hfc"/>
@@ -50,4 +56,62 @@ Users have relevant privileges depending on which actions they can do in the spa
 -   Jorge has purchasing modeler privileges in the Purchasing space and has viewer privileges in the Worldwide Purchasing space.
 -   Maeve and Ahmed have modeler privileges in the two spaces Sales Europe and Sales US.
 -   Lucia has modeler privileges in the Sales Europe space.
+
+
+
+<a name="loio3740dacbc2794f33bb5d8d42216cc3bc__section_vdy_gmg_2bc"/>
+
+## Granting Privileges via Global and Scoped Roles
+
+
+<table>
+<tr>
+<td valign="top">
+
+![](images/Privileges_GlobalRoles_61551e0.png)
+
+</td>
+<td valign="top">
+
+![](images/CascadingScopedPrivileges_Roles_cdde787.png)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+A user is granted a set of global privileges for the tenant via a global role.
+
+The global role can be:
+
+-   A standard global role that is delivered with SAP Datasphere \(such as *DW Administrator*\).
+
+-   A custom role that you create from a template \(a standard global role or another custom role containing global privileges\).
+
+
+To assign a user to a global role, see [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
+
+</td>
+<td valign="top">
+
+A user is granted a set of scoped privileges for one or more spaces via a scoped role.
+
+The scoped role inherits a role template, which can be:
+
+-   A standard scoped role template that is delivered with SAP Datasphere \(such as *DW Space Administrator*\).
+
+-   A custom role template that you create from another template \(a standard scoped role or another custom role\).
+
+
+To assign a user to a scoped role, see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> For complete lists of standard roles, privileges and permissions, see:
+> 
+> -   [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)
+> -   [Privileges and Permissions](privileges-and-permissions-d7350c6.md)
 

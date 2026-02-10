@@ -263,7 +263,7 @@ Allows access to the *Activities* page in the *Security* tool.
 -   *Read* - To view the activities in the *Activities* page and download the activity log for a specific time period.
 -   *Delete* - To delete the activity log for a specific time period.
 
-See [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)
+See [Monitor Object Changes with Activities](../monitor-object-changes-with-activities-08e607c.md)
 
 </td>
 </tr>

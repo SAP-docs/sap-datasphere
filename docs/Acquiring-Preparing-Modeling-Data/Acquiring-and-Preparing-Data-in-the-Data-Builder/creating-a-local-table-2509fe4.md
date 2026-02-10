@@ -156,11 +156,11 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[dimensions only\] \[SAP Business Data Cloud formation tenants only\] Enables users to include the table data when transporting the table in a repository package.
+    \[dimensions only\] \[SAP Business Data Cloud formation tenants only\] Allow users to include the table data in a package when transporting the table.
 
-    This feature is intended to allow you to transport data for static and slowly changing dimensions, text entities, or relational datasets, and can only be used to initialize data when importing the table for the first time.
+    This feature is intended to allow you to transport limited quantities of data for static and slowly changing dimensions, text entities, and relational datasets. If the local table is created by the import \(or if it already exists but is empty\), the transported data will be imported to it.
 
-    See [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    See [Transporting Local Table Data](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9ec1c3ce2ec24c8f9ce330f075918cd5.html "If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, you can include local table data in your package. This feature is intended to allow you to transport limited quantities of data for static and slowly changing dimensions, text entities, and relational datasets.") :arrow_upper_right:.
     
     </td>
     </tr>

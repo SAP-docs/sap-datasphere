@@ -2,29 +2,49 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Monitoring SAP Datasphere
+# Monitoring SAP Datasphere in the System Monitor
 
-Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.
+Monitor the overall health of your SAP Datasphere tenant in the *System Monitor*.
 
 This topic contains the following sections:
 
--   [Monitor Disk and Memory Assignment](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_irf_214_1cc)
--   [Monitor Tasks](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_qyl_sc4_ccc)
--   [Monitor Statements](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc)
--   [Monitor Access Control Issues](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_tt5_sc4_ccc)
--   [Monitor Elastic Compute Nodes](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_yvw_k24_ccc)
--   [Monitoring File Space Storage Consumption and Apache Spark Application Usage](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_apachespark_tasks)
--   [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
--   [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
--   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
--   [Monitor Capacity Units](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_i3j_y34_g2c)
+-   [Prerequisites](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_prereq_system_monitor)
+-   [Access the System Monitor](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_access_system_monitor)
+-   [Monitor Disk and Memory Assignment](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_irf_214_1cc)
+-   [Monitor Tasks](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_qyl_sc4_ccc)
+-   [Monitor Statements](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc)
+-   [Monitor Access Control Issues](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_tt5_sc4_ccc)
+-   [Monitor Elastic Compute Nodes](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_yvw_k24_ccc)
+-   [Review Task Logs](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)
+-   [Review Statement Logs](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)
+-   [Monitor Object Store Storage and Apache Spark Tasks](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_apachespark_tasks)
+-   [Show/Hide, Filter, Sort and Reorder Task and Statement Columns](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_a4f_vzb_xtb)
 
-Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) in the side navigation to open the main monitoring tool. The *System Monitor* cards and tabs allow the monitoring of your system perfomance and issues related to storage, tasks, out-of-memory, and other issues across all spaces.
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_prereq_system_monitor"/>
+
+## Prerequisites
+
+To monitor SAP Datasphere in the *System Monitor*, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *System Monitor* tool.
+
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_access_system_monitor"/>
+
+## Access the System Monitor
+
+Click <span class="FPA-icons-V3"></span> \(*System Monitor*\) in the side navigation to open the main monitoring tool. The *System Monitor* cards and tabs allow the monitoring of your system performance and issues related to storage, tasks, out-of-memory, and other issues across all spaces.
 
 For example, you can see all the errors \(such as failed tasks and out-of-memory errors\) that occurred yesterday or the top five statements with the highest peak memory consumption.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md) or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere in the System Monitor](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md) or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 > ### Note:  
 > SAP Datasphere is integrated into SAP Cloud ALM for health monitoring, which enables you to check the health of one or more SAP Datasphere tenants from the *Health Monitoring* app in SAP Cloud ALM. See [Health Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/health-monitoring) in the *SAP Cloud ALM - Application Help*.
@@ -63,7 +83,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 
     -   *Data in Spaces*: All data that is stored in spaces.
 
-    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\).
+    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Delete Audit Logs](../delete-audit-logs-589fa42.md)\).
 
     -   *Other Data*: Includes data stored in database user group schemas \(see [Creating a Database User Group](../Creating-a-Database-User-Group/creating-a-database-user-group-1097a47.md)\) and SAP HANA data \(such as statistics schemas\).
 
@@ -175,7 +195,7 @@ To investigate issues:
     </tr>
     </table>
     
-2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria \(see [Task Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)\).
+2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria \(see [Review Task Logs](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_task_tab)\).
 3.  For the spaces you have access to \(via scoped roles\), click the links in the following columns:
     -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
 
@@ -193,7 +213,7 @@ To investigate issues:
 ## Monitor Statements
 
 > ### Note:  
-> Expensive statement tracing is enabled by default. If disabled, statement information and errors are not traced and you cannot see them in the *System Monitor*. For more information on enabling and configuring expensive statement tracing, see [Configure Monitoring](configure-monitoring-9cd0691.md).
+> Expensive statement tracing is enabled by default. If disabled, statement information and errors are not traced and you cannot see them in the *System Monitor*. For more information on enabling and configuring expensive statement tracing, see [Configure Monitoring](../configure-monitoring-9cd0691.md).
 
 1.  Monitor statements with the following cards:
 
@@ -273,7 +293,7 @@ To investigate issues:
     </tr>
     </table>
     
-2.  Click *View Logs* in a card to go to the *Statement Logs* to see information filtered on the card criteria. See [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
+2.  Click *View Logs* in a card to go to the *Statement Logs* to see information filtered on the card criteria. See [Review Statement Logs](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab).
 3.  Click the links in the *Statement Details* column for further details.
 
 
@@ -348,7 +368,7 @@ To investigate issues:
     </tr>
     </table>
     
-2.  To investigate further, click *Open SAP HANA Cockpit* in a card. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
+2.  To investigate further, click *Open SAP HANA Cockpit* in a card. If you've created a database analysis user, you're connected to the SAP HANA Cockpit without entering your credentials \(see [Create a Database Analysis User to Debug Database Issues](../create-a-database-analysis-user-to-debug-database-issues-c28145b.md).
 
 For more information about admission control thresholds, see [Set Priorities and Statement Limits for Spaces or Groups](../Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
 
@@ -489,7 +509,7 @@ After creating an elastic compute node \(see [Create an Elastic Compute Node](..
     
     Top 5 statements whose memory consumption was the highest during the last run of the elastic compute node.
 
-    See detailed information about the statements in the *View Logs*, then click the *Statement Logs* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    See detailed information about the statements in the *View Logs*, then click the *Statement Logs* tab. See [Monitoring SAP Datasphere in the System Monitor](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
     
     </td>
     </tr>
@@ -503,7 +523,7 @@ After creating an elastic compute node \(see [Create an Elastic Compute Node](..
     
     Number of out-of-memory errors that have occurred in tasks and statements related to the elastic compute node during the last run.
 
-    See detailed information about the errors in the *View Logs*, then click the *Statement Logs* tab. See [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md).
+    See detailed information about the errors in the *View Logs*, then click the *Statement Logs* tab. See [Monitoring SAP Datasphere in the System Monitor](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
     
     </td>
     </tr>
@@ -535,7 +555,7 @@ After creating an elastic compute node \(see [Create an Elastic Compute Node](..
     
 3.  To investigate further, you can:
 
-    -   View statement details by clicking *View Logs* on a card to go to the *Statement Logs* tab, then click the links in the *Statement Details* column. \(see [Statement Logs Tab](monitoring-sap-datasphere-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)\).
+    -   View statement details by clicking *View Logs* on a card to go to the *Statement Logs* tab, then click the links in the *Statement Details* column. \(see [Review Statement Logs](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab)\).
     -   View details on a run by clicking *View Logs* on a card to go to the *Task Logs* tab, then click the link in the *Activity* column to open the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
     -   Navigate to the elastic compute node in the *Space Management* app by clicking *Manage Elastic Compute Node* \(see [Create an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/create-an-elastic-compute-node-99ad61e.md) and [Run an Elastic Compute Node](../Creating-and-Configuring-Your-Tenant/run-an-elastic-compute-node-34b3585.md)\).
 
@@ -545,88 +565,11 @@ After creating an elastic compute node \(see [Create an Elastic Compute Node](..
 
 
 
-<a name="loio28910cded17a42a0bf16225309cb8bf6__section_i3j_y34_g2c"/>
-
-## Monitor Capacity Units
-
-As a tenant administrator, you can view the consumption of capacity units for various features over time, helping for resource optimization and subscription management.
-
-From the side navigation menu, click <span class="FPA-icons-V3"></span> \(*System Monitor*\)** \> *Capacities*.
-
-View daily consumption for the current month and track usage relative to your subscription, and download detailed hourly data \(see [Monitor Capacities](monitor-capacities-ba3d05b.md)\).
-
-
-
-<a name="loio28910cded17a42a0bf16225309cb8bf6__section_apachespark_tasks"/>
-
-## Monitoring File Space Storage Consumption and Apache Spark Application Usage
-
-Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. This allows you to identify high consumption areas and to target specific tasks.
-
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\), then click the *Object Store* tab.
-
-2.  In the *Spaces* drop-down list of all file spaces, select the file space in the drop-down list that you want to monitor. You can monitor the storage utilization of your selected file space and of all file spaces with the two following cards:
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Card
-    
-    </th>
-    <th valign="top">
-
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *SAP HANA Data Lake Files: Storage Utilization*
-    
-    </td>
-    <td valign="top">
-    
-    Amount of storage used in terabyte \(TB\) for the selected space.
-
-    > ### Note:  
-    > As an administrator, you can see the storage of all spaces even if you aren't a member.
-
-    You can see the space usage of tasks runs in the*Apache Spark: Tasks* table below.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *SAP HANA Data Lake Files: Storage Utilization of All Spaces*
-    
-    </td>
-    <td valign="top">
-    
-    Amount of storage used in terabyte \(TB\) for all spaces.
-    
-    </td>
-    </tr>
-    </table>
-    
-3.  You can investigate the selected space's tasks further in the *Apache Spark: Tasks* table:
-    1.  Select a time frame in the *Date and Time Range* options \(*Single Dates*, *Date Ranges*, *Weeks*, *Months*, or *Custom Options*\).
-    2.  The table shows the following information:
-        -   *Applications*: Name of the application.
-        -   *Number of Tasks*: Total of tasks that ran in the application during the selected time range. Select the line or click <span class="SAP-icons-V5"></span> \(Details\) to show more information about the tasks, such as *Application Configuration* details \(*Executor CPU*, *Executor Memory*,*Driver CPU*, *Driver Memory*, *Maximum CPU*, and *Maximum Memory*\) and *Tasks details* \(*Object Type*, *Task Activity*, and *Number of Tasks*\). Sorting and filtering abilities are available.
-
-
-
-
-
 <a name="loio28910cded17a42a0bf16225309cb8bf6__section_task_tab"/>
 
-## Task Logs Tab
+## Review Task Logs
 
-In *Task Logs*, the table shows the following information:
+The *Task Logs* tab lists the logs of task runs. The table contains the following columns:
 
 
 <table>
@@ -705,6 +648,30 @@ Name of the space in which the task is run.
 <tr>
 <td valign="top">
 
+*Space Storage Type*
+
+</td>
+<td valign="top">
+
+Either SAP HANA Database \(Disk and In-Memory\) or SAP HANA Data Lake Files.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Apache Spark Application
+
+</td>
+<td valign="top">
+
+Name of the application.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Object Name*
 
 </td>
@@ -751,7 +718,7 @@ Maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 > ### Note:  
 > You can see this information:
 > 
-> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
+> -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](../configure-monitoring-9cd0691.md).
 > 
 > -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
 > 
@@ -803,6 +770,78 @@ Amount of memory \(in MiB\) that is used by the target table in SAP HANA after t
 <td valign="top">
 
 Amount of disk space \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Peak Memory \(MiB\)*
+
+</td>
+<td valign="top">
+
+Peak memory usage of the Spark application \(in MiB\). It ensures that applications do not exceed available resources, which could lead to performance degradation or application failure.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Peak Memory \(%\)*
+
+</td>
+<td valign="top">
+
+Percentage overview of the peak memory consumption relative to the size of the Spark application configuration. It helps you understand how efficiently the application is using its allocated memory and whether adjustments are needed to optimize performance.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Spill to Disk \(MiB\)*
+
+</td>
+<td valign="top">
+
+Amount of data that has been spilled to disk \(in MiB\). It ensures that applications do not exceed their memory limits, causing data to be temporarily stored on disk. High spill rates can lead to performance bottlenecks, so monitoring this metric is crucial for identifying memory-related issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Number of Cores*
+
+</td>
+<td valign="top">
+
+Number of CPU cores utilized by the Spark application. It helps you assess whether the application is efficiently using available compute resources and if there is a need to adjust the number or cores allocated to improve performance.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Used Compute Time \(ms\)*
+
+</td>
+<td valign="top">
+
+Total compute time used by the Spark application \(in ms\). It gives you insight into the duration of the application's execution, which is useful for performance analysis and resource planning.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Used Compute \(%\)*
+
+</td>
+<td valign="top">
+
+Percentage of compute resources used by the Spark application relative to its configuration. It helps you evaluate the efficiency of resource utilization and identify potential areas for optimization.
 
 </td>
 </tr>
@@ -865,7 +904,7 @@ SAP HANA database technical name of the target table.
 View all the statements of the task in the *Statements* tab, if the information is available.
 
 > ### Note:  
-> -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
+> -   You can see this information if the option *Enable Expensive Statement Tracing* is enabled in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](../configure-monitoring-9cd0691.md).
 > 
 > -   However, as statements are traced for a limited period, you may not be able to see the statements used in the task.
 
@@ -909,6 +948,18 @@ Date the task has started to run.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Resource ID*
+
+</td>
+<td valign="top">
+
+Unique identifier for the reosources used by the Spark application. It can be helpful for debugging purposes, allowing you to trace specific resource allocations and usage patterns when troubleshooting issues.
+
+</td>
+</tr>
 </table>
 
 Cancel a task run by selecting one single task and clicking *Cancel Task*. You can cancel a task run on the following objects:
@@ -928,16 +979,14 @@ Cancelling a task run may be required when it takes too long or if the run impac
 
 <a name="loio28910cded17a42a0bf16225309cb8bf6__section_statement_tab"/>
 
-## Statement Logs Tab
+## Review Statement Logs
 
-In *Statement Logs*, the table shows the following information, depending on what you've specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*:
+The *Statement Logs* tab lists the logs of SQL statement runs that exceed the specified thresholds.
 
--   The option *Enable Expensive Statement Tracing* is enabled by default, you can see all the database statements that exceed the specified thresholds.
+> ### Note:  
+> This tab contains data if the *Enable Expensive Statement Tracing* \(in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*\) is enabled. See [Configure Monitoring](../configure-monitoring-9cd0691.md).
 
--   If the option *Enable Expensive Statement Tracing* is disabled, then the *Statements* tab is disabled.
-
-
-See [Configure Monitoring](configure-monitoring-9cd0691.md).
+The table contains the following columns:
 
 
 <table>
@@ -1062,7 +1111,7 @@ Name of the schema in which the statement is run.
 Maximum amount of memory \(in MiB\) the statement has used during the runtime in SAP HANA.
 
 > ### Note:  
-> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
+> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](../configure-monitoring-9cd0691.md).
 > 
 > Otherwise, no number is displayed.
 
@@ -1081,7 +1130,7 @@ Maximum amount of memory \(in MiB\) the statement has used during the runtime in
 Amount of CPU time \(in ms\) the statement has used in SAP HANA.
 
 > ### Note:  
-> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).
+> You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](../configure-monitoring-9cd0691.md).
 > 
 > Otherwise, no number is displayed.
 
@@ -1103,7 +1152,7 @@ Amount of CPU time \(in ms\) the statement has used in SAP HANA.
 Shows the *More* link that you can click to view the complete SQL statement.
 
 > ### Note:  
-> For MDS queries - If you’ve enabled the tracing of MDS information \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\), the payload of the MDS query that is run by SAP Analytics Cloud is displayed. If identified in the payload, the following information is also displayed: story ID, story name and data sources. You can copy or download the displayed information.
+> For MDS queries - If you’ve enabled the tracing of MDS information \(see [Configure Monitoring](../configure-monitoring-9cd0691.md)\), the payload of the MDS query that is run by SAP Analytics Cloud is displayed. If identified in the payload, the following information is also displayed: story ID, story name and data sources. You can copy or download the displayed information.
 
 
 
@@ -1153,7 +1202,7 @@ If the statement is related to a task, it shows the identifier of the task withi
 </td>
 <td valign="top">
 
-If the statement exceeds the thresholds specified in the option *Enable Expensive Statement Tracing* in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring* \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\):
+If the statement exceeds the thresholds specified in the option *Enable Expensive Statement Tracing* in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring* \(see [Configure Monitoring](../configure-monitoring-9cd0691.md)\):
 
 -   Name of the elastic compute node if the statement is run on an elastic compute node.
 
@@ -1239,7 +1288,72 @@ Date the statement has started to run.
 </table>
 
 > ### Note:  
-> Data on statements are kept for a time that depends on the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring* \(see [Configure Monitoring](configure-monitoring-9cd0691.md)\). As a certain number of statements are kept \(30.000 by default\), if very low thresholds are set, the time period may be very low \(for example, only a few hours\). To keep the statements for a longer time, the thresholds should be set accordingly.
+> Data on statements are kept for a time that depends on the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring* \(see [Configure Monitoring](../configure-monitoring-9cd0691.md)\). As a certain number of statements are kept \(30.000 by default\), if very low thresholds are set, the time period may be very low \(for example, only a few hours\). To keep the statements for a longer time, the thresholds should be set accordingly.
+
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_apachespark_tasks"/>
+
+## Monitor Object Store Storage and Apache Spark Tasks
+
+Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. This allows you to identify high consumption areas and to target specific tasks.
+
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System Monitor*\), then click the *Object Store* tab.
+
+2.  In the *Spaces* drop-down list of all file spaces, select the file space in the drop-down list that you want to monitor. You can monitor the storage utilization of your selected file space and of all file spaces with the two following cards:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Card
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *SAP HANA Data Lake Files: Storage Utilization*
+    
+    </td>
+    <td valign="top">
+    
+    Amount of storage used in terabyte \(TB\) for the selected space.
+
+    > ### Note:  
+    > As an administrator, you can see the storage of all spaces even if you aren't a member.
+
+    You can see the space usage of tasks runs in the*Apache Spark: Tasks* table below.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *SAP HANA Data Lake Files: Storage Utilization of All Spaces*
+    
+    </td>
+    <td valign="top">
+    
+    Amount of storage used in terabyte \(TB\) for all spaces.
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  You can investigate the selected space's tasks further in the *Apache Spark: Tasks* table:
+    1.  Select a time frame in the *Date and Time Range* options \(*Single Dates*, *Date Ranges*, *Weeks*, *Months*, or *Custom Options*\).
+    2.  The table shows the following information:
+        -   *Applications*: Name of the application.
+        -   *Number of Tasks*: Total of tasks that ran in the application during the selected time range. Select the line or click <span class="SAP-icons-V5"></span> \(Details\) to show more information about the tasks, such as *Application Configuration* details \(*Executor CPU*, *Executor Memory*,*Driver CPU*, *Driver Memory*, *Maximum CPU*, and *Maximum Memory*\) and *Tasks details* \(*Object Type*, *Task Activity*, and *Number of Tasks*\). Sorting and filtering abilities are available.
+
+
 
 
 

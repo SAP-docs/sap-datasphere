@@ -20,7 +20,7 @@ In the *Space Management*, you can set up, configure, and monitor your spaces, i
 
 ## \(*System Monitor*\)
 
-In the *System Monitor*, you can monitor the performance of your system and identify storage, task, out-of-memory, and other issues. For more information, see [Monitoring SAP Datasphere](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
+In the *System Monitor*, you can monitor the performance of your system and identify storage, task, out-of-memory, and other issues. For more information, see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
 
 
 
@@ -94,7 +94,7 @@ Track the activities that users perform on objects such as spaces, tables, views
 </td>
 <td valign="top">
 
-[Monitor Object Changes with Activities](Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)
+[Monitor Object Changes with Activities](monitor-object-changes-with-activities-08e607c.md)
 
 </td>
 </tr>
@@ -216,7 +216,7 @@ More Information
 </td>
 <td valign="top">
 
-[Logging Read and Change Actions for Audit](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/266553976e1c4db9aaa28a75e2308b77.html "You can enable audit logs for your space so that read and change actions (policies) are recorded. Administrators can then analyze who performed which action at which point in time.") :arrow_upper_right:
+[Monitor Database Operations with Audit Logs](monitor-database-operations-with-audit-logs-110404a.md)
 
 </td>
 </tr>
@@ -228,7 +228,7 @@ More Information
 </td>
 <td valign="top">
 
-[Delete Audit Logs](Monitoring-SAP-Datasphere/delete-audit-logs-589fa42.md)
+[Delete Audit Logs](delete-audit-logs-589fa42.md)
 
 </td>
 </tr>
@@ -245,7 +245,7 @@ Control which monitoring data is collected and enable access to pre-configured m
 </td>
 <td valign="top">
 
-[Configure Monitoring](Monitoring-SAP-Datasphere/configure-monitoring-9cd0691.md)
+[Configure Monitoring](configure-monitoring-9cd0691.md)
 
 </td>
 </tr>
@@ -288,9 +288,9 @@ Also allows you to view a list of users whose authorization consent will expire 
 </td>
 <td valign="top">
 
-[Delete Task Logs to Reduce Storage Consumption](Monitoring-SAP-Datasphere/delete-task-logs-to-reduce-storage-consumption-c690202.md)
+[Delete Task Logs to Reduce Storage Consumption](delete-task-logs-to-reduce-storage-consumption-c690202.md)
 
-[Check Consent Expirations](Monitoring-SAP-Datasphere/check-consent-expirations-58e4bb2.md)
+[Check Consent Expirations](check-consent-expirations-58e4bb2.md)
 
 </td>
 </tr>
@@ -307,7 +307,7 @@ Also allows you to view a list of users whose authorization consent will expire 
 </td>
 <td valign="top">
 
-[Monitoring SAP Datasphere](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md)
+[Create a Database Analysis User to Debug Database Issues](create-a-database-analysis-user-to-debug-database-issues-c28145b.md)
 
 </td>
 </tr>
@@ -599,7 +599,7 @@ Make sure that users are notified appropriately about issues in the tenant.
 </td>
 <td valign="top">
 
-[Configure Notifications](Monitoring-SAP-Datasphere/configure-notifications-4388411.md)
+[Configure Notifications](configure-notifications-4388411.md)
 
 </td>
 </tr>

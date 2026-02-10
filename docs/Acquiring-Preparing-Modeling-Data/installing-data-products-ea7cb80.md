@@ -24,7 +24,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
 
 -   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges :
     -   *Spaces* \(`–R–––--`\) - To access a space.
-    -   *Space Files* \(`CRUD–--`\) - To install data products to or uninstall data products from a space.
+    -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 
 
@@ -40,7 +40,7 @@ Data products are high-quality, coherent data sets accessible through APIs. You 
 
 To determine if a data product meets your needs, you can view its details to evaluate its usefulness. You can review several pieces of information: the data product's properties, such as its name and the data provider, the list of objects within the data product, and links to resources on how to use it. For more information, see [Data Product Details](data-product-details-71f4d15.md).
 
-After you've evaluated and found a data product, you can install it to your space \(see steps below\).
+After you've evaluated and found a data product, you can install it in your space \(see steps below\).
 
 > ### Note:  
 > If you're an administrator for SAP Business Data Cloud, you can access the catalog from the SAP Business Data Cloud cockpit. This allows you to share data product to an SAP or supported external system \(see [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products) in the SAP Business Data Cloud documentation\).
@@ -55,7 +55,7 @@ After you've evaluated and found a data product, you can install it to your spac
 
 ## Prerequisites
 
-Before you install the data product to your modelling space, check its statuses to make sure you can install it:
+Before you install the data product in your modelling space, check its statuses to make sure you can install it:
 
 -   The data product has the following statuses: release status is *Active*, the lifecycle status is *Active*, and the functional status is *Current*.
 -   The data product's API functional status is *Current*.
@@ -113,7 +113,7 @@ Before you install the data product to your modelling space, check its statuses 
 
 ## Results
 
-The data product is installed to the target space.
+The data product is installed in the target space.
 
 If the data product you installed was created from a different system, the data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space. For more information about spaces, see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
 
@@ -128,11 +128,11 @@ If the data product you installed was created from a different system, the data 
 
 The following diagram shows the flow for data products.
 
-![](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
+![Diagram showing the work flow for installed data products.](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
 
-<a name="concept_bm3_rhz_4gc"/>
+<a name="updatedp_customfields"/>
 
-<!-- concept\_bm3\_rhz\_4gc -->
+<!-- updatedp\_customfields -->
 
 ## Updating an SAP Data Product to Install Source System Custom Fields
 

@@ -22,13 +22,15 @@ When you create a user, you must add an email address. The email address is used
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
-2.  Select the email address you want to modify, add a new email address and press *Enter* or select another cell.
+2.  Select the checkbox of the user for whom you want to modify the email address and click :pencil2:.
+
+3.  In the email area of the wizard that opens, enter the new email address and click *Next Step*, then *Save*.
 
     If the email address is already assigned to another user, a warning will appear and you must enter a new address as every user must be assigned a unique email address.
 
     A new logon email will be sent to the updated address. As long as a user has not logged on to the system with the new email address, the email address will appear in a pending state in the *Users* list.
 
-3.  If the user has not received the logon email, you can resend the email. To do so, select the checkbox correponding to the user, click the enveloppe icon and click *Resend* in the dialog box that opens.
+4.  If the user has not received the logon email, you can resend the email. To do so, select the checkbox correponding to the user, click the enveloppe icon and click *Resend* in the dialog box that opens.
 
 
 **Related Information**  

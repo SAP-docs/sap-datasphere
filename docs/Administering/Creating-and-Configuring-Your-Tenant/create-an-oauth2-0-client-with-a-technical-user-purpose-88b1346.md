@@ -18,12 +18,16 @@ An OAuth client with a *Technical User* purpose provides restricted access to th
 You create an OAuth2.0 Client with a *Technical User* purpose:
 
 -   To use the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
--   To transport content \(see [Transporting Your Content through SAP Cloud Transport Management](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right: and [api/v1/content](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/eeace13cc37b4eed96064a7c5d8ee493.html) in the *SAP Analytics Cloud REST API Guide*\).
+-   To transport content \(see [Transporting Content Through SAP Cloud Transport Management](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right: and [api/v1/content](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/eeace13cc37b4eed96064a7c5d8ee493.html) in the *SAP Analytics Cloud REST API Guide*\).
 -   To export a log of user activities to a CSV file \(see [api/v1/audit/activities/exportActivities](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/ca45363ac1de4d669ad4a18115401d5a.html) in the *SAP Analytics Cloud REST API Guide*\).
 -   To allow SAP Signavio to connect securely to SAP systems such as SAP S/4HANA \(see [SAP Signavio Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4c367de075a44ad7b7a6db576a4a9c82.html "Use the connection to securely integrate SAP systems such as SAP S/4HANA on-premise with SAP Signavio using replication flows for efficient and scalable data replication to SAP Signavio Process Intelligence.") :arrow_upper_right:.\)
 -   To use the `datasphere` command line interface, for these commands only: `marketplace`, `tasks`, `objects`, `configuration certificates`, `spaces connections` \(see [Accessing SAP Datasphere via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/3f9a42ccde6b4b6aba121e2aab79c36d.html "Many of the features available to SAP Datasphere users can also be accessed via the command line.") :arrow_upper_right:\).
 -   To consume data via the OData API \(see [Consume Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:\).
 -   To run schedules \(see [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:\).
+
+    > ### Note:  
+    > It's not supported to use a technical user via the CLI \(Command Line Interface\) to start task chains containing SAP BW bridge process chains.
+
 
 
 

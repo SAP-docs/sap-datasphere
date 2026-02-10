@@ -49,7 +49,7 @@ The *DW Space Administrator* role template, for example, grants this combination
 </tr>
 </table>
 
-For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -62,7 +62,7 @@ Each tenant can store up to 2 GB of exported content for free in the *My Content
 The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:
 
 > ### Note:  
-> Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app.
+> With limited exceptions, object definitions only can be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app. For information about including local table data in your package, see [Transporting Local Table Data](transporting-local-table-data-9ec1c3c.md).
 
 
 <table>

@@ -18,9 +18,9 @@ To search for and evaluate objects in the *Data Products \(Marketplace\)* collec
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Catalog Asset* \(`–R–––--`\) - To access the catalog.
 
--   A scoped role that grants you access to the space or spaces to install to, with the following privileges:
+-   A scoped role that grants you access to the space or spaces to install data products, with the following privileges:
     -   *Spaces* \(`–R–––--`\) - To access a space.
-    -   *Space Files* \(`CRU––--`\) - To install data products to a space.
+    -   *Space Files* \(`CRU––--`\) - To install data products in a space.
     -   *Data Warehouse Data Integration* \(`-RU––--`\) - To acquire data in the space where the data product is installed.
     -   *Data Warehouse Connection* \(`CRU––--`\) - To check the license of installed data products.
 

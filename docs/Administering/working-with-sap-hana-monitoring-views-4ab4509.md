@@ -20,7 +20,7 @@ This topic contains the following sections:
 Monitoring information includes information on all spaces and views and so these views should not be made accessible to all SAP Datasphere users. An administrator can select two spaces dedicated to monitoring information and assign users to these spaces with modeling privileges so they can work with the monitoring views in the *Data Builder*.
 
 > ### Note:  
-> The data from these monitoring views is available directly in the *System Monitor* \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-28910cd.md)\). Working with them independently is optional and allows you to do further analysis that is not supported in the standard monitor.
+> The data from these monitoring views is available directly in the *System Monitor* \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\). Working with them independently is optional and allows you to do further analysis that is not supported in the standard monitor.
 
 As the monitoring spaces you choose will provide unfiltered access to monitoring views, be aware that the users assigned to the spaces will be able to see all metadata and object definitions of all spaces.
 

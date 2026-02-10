@@ -14,11 +14,9 @@ You can delete the users that are no longer needed.
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
-2.  Select the user ID you want to delete by clicking the user number in the leftmost column of the table.
+2.  Select the checkbox of one or more users that you want to delete, and click :wastebasket:.
 
-3.  Choose <span class="FPA-icons-V3"></span> \(Delete\) from the toolbar.
-
-4.  Click *Delete* in the confirmation message that opens to delete the users from the system.
+3.  Click *Delete* in the confirmation message that opens to delete the users from the system.
 
 
 

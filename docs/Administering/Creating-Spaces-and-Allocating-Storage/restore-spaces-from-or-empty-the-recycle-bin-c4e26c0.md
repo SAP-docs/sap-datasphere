@@ -73,7 +73,7 @@ Be aware that the following content will also be **permanently** deleted:
 -   All audit logs entries generated for the space, including audit log entries related to any Open SQL schema associated with the space.
 
     > ### Note:  
-    > For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Delete Audit Logs](../Monitoring-SAP-Datasphere/delete-audit-logs-589fa42.md) \).
+    > For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Delete Audit Logs](../delete-audit-logs-589fa42.md) \).
 
 
 1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\).

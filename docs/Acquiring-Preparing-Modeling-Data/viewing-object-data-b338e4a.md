@@ -22,7 +22,7 @@ This topic contains the following sections:
 
 ## Prerequisites
 
-To view the data contained in the *Data Builder* objects, you must have a scoped role that grants you access to a space with the following privileges:
+To view the data contained in *Data Builder* objects, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Space Files* \(`-R------`\) - To read objects in your spaces.

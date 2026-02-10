@@ -1,6 +1,6 @@
 <!-- loio0cf11ede362b4f4186c459097464943d -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Stop a Running Statement With a Database Analysis User
 

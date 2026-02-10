@@ -12,7 +12,7 @@ For conversion measures, you can define variables for the target currency, the r
 
 2.  You can then select an existing variable or create a new variable.
 
-3.  To create a new variable, select *Create new Standard Variable*. The new variable is added to the variable section of the conversion measure.
+3.  To create a new variable, select *Create new Source Variable*. The new variable is added to the variable section of the conversion measure.
 
 4.  Edit the properties of the new variable: choose how the variable should be filled:
 

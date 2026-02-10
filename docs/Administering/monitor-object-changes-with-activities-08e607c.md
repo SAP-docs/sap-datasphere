@@ -1,6 +1,6 @@
 <!-- loio08e607c58e5343bd9c0287e7e22c452a -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Monitor Object Changes with Activities
 
@@ -25,7 +25,7 @@ To monitor object changes with activities, you must have a global role that gran
 -   *Activity Log* \(`-R------`\) - To view and download activities. The *DW Administrator* role template, for example, grants this privilege.
 -   *Activity Log* \(`---D----`\) - To delete activity logs.
 
-For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 

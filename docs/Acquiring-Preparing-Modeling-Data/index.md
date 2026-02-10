@@ -1,4 +1,4 @@
-# Acquiring, Preparing, and Modeling Data with SAP Datasphere
+# Acquiring, Preparing, and Modeling Data with SAP Datasphere 
 
 -   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](acquiring-preparing-and-modeling-data-with-sap-datasphere-b4a5d02.md)
 -   [Creating, Finding, and Sharing Objects](Creating-Finding-Sharing-Objects/creating-finding-and-sharing-objects-6c69b30.md)

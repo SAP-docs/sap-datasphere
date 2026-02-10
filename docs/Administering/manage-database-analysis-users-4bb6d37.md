@@ -1,6 +1,6 @@
 <!-- loio4bb6d37fdebb43c3990402cd469661ce -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Manage Database Analysis Users
 

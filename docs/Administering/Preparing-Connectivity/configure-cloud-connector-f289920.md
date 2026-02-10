@@ -27,12 +27,9 @@ Before configuring the Cloud Connector, the following prerequisites must be fulf
 
 -   Before configuring the Cloud Connector, you or the owner of your organization will need an SAP Business Technology Platform \(SAP BTP\) account. If you don't have an account yet, create an account by clicking *Register* in the [SAP BTP cockpit](https://account.hana.ondemand.com/).
 
--   During Cloud Connector configuration you will need information for your SAP Datasphere subaccount. In your SAP Datasphere tenant, you can find the required subaccount information in *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account*.
+-   During Cloud Connector configuration you will need information for your SAP Datasphere subaccount. In your SAP Datasphere tenant, you can find the required information in *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account* \> *Account Information*.
 
     For more information, see [Set Up Cloud Connector in SAP Datasphere](set-up-cloud-connector-in-sap-datasphere-6de74f7.md).
-
-    > ### Note:  
-    > Do not confuse the SAP BTP subaccount where you created your SAP Datasphere service instance with the SAP Datasphere subaccount needed in the Cloud Connector configuration.
 
 
 
@@ -53,12 +50,11 @@ For more information about the supported use cases depending on the connection t
 
 2.  To connect the SAP Datasphere subaccount \(not to be confused with the SAP BTP subaccount\) to your Cloud Connector, perform the following steps:
 
-    1.  In the side navigation area of the *Cloud Connector Administration*, click *Connector* to open the *Connector* page and click :heavy_plus_sign: *Add Subaccount* to open the *Add Subaccount* dialog.
+    1.  In the side navigation area of the *Cloud Connector Administration*, click *Connector* to open the *Connector* page and click :heavy_plus_sign: *Add Subaccount*.
 
-    2.  Enter or select the following information to add the SAP Datasphere subaccount to the Cloud Connector.
+    2.  On the following dialog, select *Configure manually* and click *Next*.
 
-        > ### Note:  
-        > You can find the subaccount, region, and subaccount user information in SAP Datasphere under *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account* \> *Account Information*.
+    3.  Enter or select the following information to add the SAP Datasphere subaccount to the Cloud Connector.
 
 
         <table>
@@ -83,6 +79,8 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         Select your region host from the list.
+
+        You can find the region in SAP Datasphere under *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account* \> *Account Information*.
         
         </td>
         </tr>
@@ -95,6 +93,13 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         Add your SAP Datasphere subaccount name.
+
+        You can find the subaccount in SAP Datasphere under *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account* \> *Account Information*.
+
+        > ### Note:  
+        > This is the automatically created subaccount for the SAP Datasphere tenant and must not be confused with the SAP BTP subaccount where the SAP Datasphere instance was provisioned \(see SAP Note [3290588](https://me.sap.com/notes/3290588)\).
+
+
         
         </td>
         </tr>
@@ -119,6 +124,8 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         Add your subaccount \(S-User\) username.
+
+        You can find the user information in SAP Datasphere under *System* \> *Administration* \> *Data Source Configuration* \> *SAP BTP Core Account* \> *Account Information*.
         
         </td>
         </tr>
@@ -169,7 +176,7 @@ For more information about the supported use cases depending on the connection t
         </tr>
         </table>
         
-    3.  Click *Save*.
+    4.  Click *Finish*.
 
         In the *Subaccount Dashboard* section of the *Connector* page, you can see all subaccounts added to the Cloud Connector at a glance. After you added your subaccount, you can check the status to verify that the Cloud Connector is connected to the subaccount.
 

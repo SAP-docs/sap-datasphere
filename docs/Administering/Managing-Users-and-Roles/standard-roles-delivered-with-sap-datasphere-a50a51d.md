@@ -13,7 +13,7 @@ A DW Administrator can use standard roles as templates for creating custom roles
 > ### Note:  
 > You cannot delete nor edit standard roles.
 
-To display all the standard roles that are delivered with SAP Datasphere, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+To display all the standard roles that are delivered with SAP Datasphere, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and use the filters *License Type* \(choose SAP Datasphere\) and *Role Type* \(choose *Standard Role*\). For more information on filters, see [Search, Sort and Filter in the Roles Page](search-sort-and-filter-in-the-roles-page-b5637df.md).
 
 The following standard roles are available:
 

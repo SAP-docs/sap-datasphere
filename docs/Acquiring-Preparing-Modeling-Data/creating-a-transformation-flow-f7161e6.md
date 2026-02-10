@@ -201,7 +201,8 @@ In addition to working with flows in the editor, you can also:
     In the *Input Parameters* section, you can create input parameters to prompt them to enter values for filtering or other calculations when running the flow in *SAP HANA* runtime or *Apache Spark* runtime. See [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md).
 
     > ### Note:  
-    > -   There are no business name, technical names, and no default value help.
+    > -   Input parameters for transformation flows can only have a technical name containing uppercase letters, numbers, and underscores \(\_\). There are no business name and no default value help.
+    > 
     > -   In the *Graphical View Editor*, input parameters can only be used. They cannot be created, edited, or deleted.
     > -   A scheduled transformation flow uses the default value of the input parameter.
     > -   Input parameters defined in transformation flows can be used in operators within the transformation flow, except for the *Python* operation in *Apache Spark* runtime.
@@ -313,20 +314,6 @@ In addition to working with flows in the editor, you can also:
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Versions 
-    
-    </td>
-    <td valign="top">
-    
-    Open the *Version History* dialog for the object. 
-
-    See [Reviewing and Restoring Object Versions](reviewing-and-restoring-object-versions-4f717cc.md).
     
     </td>
     </tr>

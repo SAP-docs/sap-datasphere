@@ -25,7 +25,12 @@ Each connection type supports:
 
 ## Working with Connections
 
-In the <span class="FPA-icons-V3"></span> \(*Connections*\) app, you get an overview of all connections created in your space and use the following tools to create and manage connections:
+In the <span class="FPA-icons-V3"></span> \(*Connections*\) app, you get an overview of all connections created in your space and use the tools listed below to create and manage connections.
+
+In addition to working with connections in the *Connections* app, you can also:
+
+-   Read, list, validate, create, edit, and delete them using the `datasphere` command line interface \(see [Manage Connections via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/8eb811898d1049fbb426339e44a2eb70.html "Users with an integrator role can read, list, validate, create, edit, and delete connections.") :arrow_upper_right:\).
+-   Read, list, validate, create, edit, and delete them using a REST API \(see [Manage Connectivity via REST APIs](manage-connectivity-via-rest-apis-5aafe32.md)\).
 
 
 <table>
@@ -107,7 +112,7 @@ Pause/Restart
 
 For connections that connect to a remote system through SAP HANA Smart Data Integration and its Data Provisioning Agent, you can pause and restart real-time replication for selected connections, if required.
 
-For more information, see [Pause Real-Time Replication for a Connection](pause-real-time-replication-for-a-connection-a11f244.md).
+For more information, see [Pause Real-Time Replication for a Connection Using SAP HANA Smart Data Integration](pause-real-time-replication-for-a-connection-using-sap-hana-smart-data-integrati-a11f244.md).
 
 </td>
 </tr>

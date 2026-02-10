@@ -140,5 +140,5 @@ You can allocate specific amounts of memory and disk storage to a space or disab
 
 ## Results
 
-To view the total storage available and the amount assigned to and used by all spaces, see [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md).
+To view the total storage available and the amount assigned to and used by all spaces, see [Monitoring SAP Datasphere in the System Monitor](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
 

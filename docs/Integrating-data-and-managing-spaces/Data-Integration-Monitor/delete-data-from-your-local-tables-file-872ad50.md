@@ -33,6 +33,11 @@ You can start an immediate task to delete the data:
         > ### Note:  
         > 7 days means start time of the task - 169 hours \(7 days X 24 hours + 1hour\). For more information about the 7 retention days and vacuum, see [Remove files no longer referenced by a Delta table](https://docs.delta.io/latest/delta-utility.html#remove-files-no-longer-referenced-by-a-delta-table)
 
+    -   *Delete Inbound Buffer*: Records waiting in the inbound buffer will be deleted, even if a merge task has not run. 
+
+        > ### Note:  
+        > Deleting data from the inbound buffer may lead to inconsistent data.
+
 
 4.  \[Optional\] When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator:
     -   *Use Default*: The default application is the application selected in the table settings. If no default application is defined there, the application selected by an administrator during the file space creation is used.
@@ -41,7 +46,7 @@ You can start an immediate task to delete the data:
 5.  Click *Delete* to start the deletion task.
 
     > ### Note:  
-    > You can automate the deletion of data records using a task chain. For more information, see [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+    > You can automate the deletion of data records using a task chain, except for *Delete Inbound Buffer* as it may lead to data inconsistencies.. For more information, see [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
 
 
 
@@ -51,6 +56,9 @@ You can start an immediate task to delete the data:
 ## Schedule a Data Deletion Task
 
 You can automate your data deletion with a schedule to clean up your data on regular basis.
+
+> ### Note:  
+> *Delete Inbound Buffer* cannot be scheduled.
 
 To create a data deletion schedule:
 

@@ -77,35 +77,110 @@ The method described here assumes that SAP Datasphere is using its default authe
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
-2.  Select <span class="FPA-icons-V3"></span> \(New\) to add a new user to the user management table.
+2.  Click :heavy_plus_sign:.
 
-3.  Enter a *User ID*.
+    The *Create User* wizard opens.
 
-    Each user needs a unique ID. Only alphanumeric and underscore characters are allowed. The maximum length is 20 characters.
+3.  In the *User Information* step, enter the following information and then click *Next Step*:
 
-4.  Enter the user name details.
 
-    Only *Last Name* is mandatory, but it is recommended that you provide a *First Name*, *Last Name*, and *Display Name*. *Display Name* will appear in the screens.
+    <table>
+    <tr>
+    <th valign="top">
 
-5.  Enter an *Email* address.
+    Property
+    
+    </th>
+    <th valign="top">
 
-    A welcome email with logon information will be sent to this address.
-
-    > ### Note:  
-    > The *Manager* column is not relevant for SAP Datasphere users.
-
-6.  In the *Roles* column, select the icon <span class="FPA-icons-V3"></span> and choose one or more roles from the list.
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    User ID
+    
+    </td>
+    <td valign="top">
+    
+    Each user needs a unique ID. Once the user account is created their ID can’t be modified. Only upper-case letters \(A-Z\), numbers \(0-9\), and underscores are allowed. The maximum length is 20 characters.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Email
+    
+    </td>
+    <td valign="top">
+    
+    User’s email. A welcome email with logon information is sent to the email address.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    First Name
+    
+    </td>
+    <td valign="top">
+    
+    \[Optional\] First name of the user.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Last Name
+    
+    </td>
+    <td valign="top">
+    
+    Last name of the user.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Display Name
+    
+    </td>
+    <td valign="top">
+    
+    \[Optional\] The display name appears on the screens.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Manager
+    
+    </td>
+    <td valign="top">
+    
+    Not used in SAP Datasphere.
+    
+    </td>
+    </tr>
+    </table>
+    
+4.  In the *Role Assignment* step, select one or more roles that you want to assign to the user, and click *Next Step*, then *Save*.
 
     If one or more default roles have already been created, you can leave *Roles* empty. Default roles will be assigned to the user when you click *Save*.
-
-7.  Select <span class="FPA-icons-V3"></span> \(Save\).
 
 
 
 
 ## Results
 
--   A welcome email including an account activation URL will be sent to the user, so that the user can set an initial password and access the system. Optionally, you can disable the welcome email notification \(see [Configure Notifications](../Monitoring-SAP-Datasphere/configure-notifications-4388411.md)\).
+-   A welcome email including an account activation URL will be sent to the user, so that the user can set an initial password and access the system. Optionally, you can disable the welcome email notification \(see [Configure Notifications](../configure-notifications-4388411.md)\).
 
 -   When you create a user, it is activated by default. You may want to deactivate a user in specific cases, for example when a user is on long-term leave. To deactivate a user, select the relevant check box in the leftmost column of the table, click the icon \(*Deactivate Users*\) and optionally select *Email users to notify them that their accounts have been deactivated*. Deactivated users cannot login to SAP Datasphere until they are activated again.
 

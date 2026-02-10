@@ -240,9 +240,6 @@ In this example, *Regional Sales* is a *Fact* with:
     A *Fact* can point to a:
 
     -   *Dimension* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Dimension* key column so that all target key columns are mapped.
-
-        \[optional\] To bring any data access controls applied to the dimension into the fact to protect its data, select *Apply Dimension Data Access Controls to Fact*.
-
     -   *Text Entity* - One attribute in the \(source\) *Fact* must be mapped to each \(target\) *Text Entity* identifier key column.
 
 7.  Complete or consult other sections as appropriate:

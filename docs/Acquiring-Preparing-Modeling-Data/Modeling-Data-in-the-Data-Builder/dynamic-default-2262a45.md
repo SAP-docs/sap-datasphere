@@ -7,7 +7,7 @@ The value of a variable for the variable prompt can be derived.
 When you choose *Dynamic Default* in the properties of a variable, you get a derived value in the parameter dialog list when opening the analytic preview, and in the variable prompt for an SAP Analytics Cloud story.
 
 > ### Note:  
-> *Dynamic Default* is only supported for standard variables and reference date variables.
+> For the filter type, only single values single values and multiple single values are supported.
 
 The properties *Dynamic Default* and *Derived Value* are quite similar. They differ in when the derivation takes place:
 

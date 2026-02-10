@@ -28,7 +28,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows, and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the execution details of the flows.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
 For more information and points to consider when using replication flows, see also SAP Note [3297105](https://me.sap.com/notes/3297105).
 
@@ -224,6 +224,9 @@ For more information and points to consider when using replication flows, see al
         -   UUID
 
         You can choose to process only the initial load in batches. Once you define the batches, you can view, edit, or delete the settings in the *Batches* tab.
+
+        > ### Caution:  
+        > High cardinality columns used to split into batches can cause out-of-memory errors when you run a flow.
 
     -   *Delta Capture Settings* tracks the data that has been transferred when running a transformation flow that loads delta changes to a target table. You can see the source table technical name and watermark. Click *Reset Watermark* to transfer all data to the target table the next time the transformation flow runs \(using the load type Initial and Delta\). For more information, see [Watermarks](watermarks-890897f.md).
     -   *Settings* shows which options are available for *Run Mode*:

@@ -1,6 +1,6 @@
 <!-- loioc28145bcb76c4415a1ec6265dd2a4c11 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Create a Database Analysis User to Debug Database Issues
 
@@ -17,7 +17,7 @@ To create a database user to monitor, analyze, trace, or debug your SAP Datasphe
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -60,7 +60,7 @@ A user with an administrator role can create a database analysis user.
     </td>
     <td valign="top">
     
-    Enter the suffix, which is used to create the full name of the user. Can contain a maximum of 31 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). See [Rules for Technical Names](../Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
+    Enter the suffix, which is used to create the full name of the user. Can contain a maximum of 31 uppercase letters or numbers and must not contain spaces or special characters other than `_` \(underscore\). See [Rules for Technical Names](Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md).
     
     </td>
     </tr>

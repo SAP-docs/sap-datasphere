@@ -8,9 +8,9 @@ Replication flows support all data types in SAP Datasphere \(see, [Column Data T
 
 <a name="loio6c770bbebb3c4086b30945fd2ebbfd75__section_hg5_5t2_3gc"/>
 
-## Sources
+## Unsupported Sources Data Types
 
-The following source data types are not supported in replication flow:
+The following source data types are not supported in a replication flow:
 
 
 <table>
@@ -119,7 +119,7 @@ ABAP
 
 <a name="loio6c770bbebb3c4086b30945fd2ebbfd75__section_ptm_4v2_3gc"/>
 
-## Targets
+## Unsupported Targets Data Types
 
 The following target data types are not supported in replication flow:
 
@@ -145,7 +145,7 @@ Google BigQuery
 </td>
 <td valign="top">
 
-The following data types will be converted:
+We will convert the following data types during import:
 
 -   decfloat16 will be converted to decimal \(38,6\)
 -   decfloat34 will be converted to decimal \(38,6\)
@@ -163,13 +163,13 @@ Local Table \(File\)
 </td>
 <td valign="top">
 
-The following data types will be converted:
+We will convert the following data types during import:
 
 -   decfloat16 will be converted to decimal \(38,6\)
 -   decfloat34 will be converted to decimal \(38,6\)
 -   uint64 will be converted to decimal\(20,0\)
 
-The following data types will be skipped:
+Data columns with the following data types will not be replicated:
 
 -   time
 -   hana.ST\_POINT

@@ -16,7 +16,7 @@ If your transformation flow is very complex, using remote or shared sources, you
 
 ### Monitor Memory Consumption
 
--   Analyze system memory usage and allocation limits using system monitoring tools. See [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:.
+-   Analyze system memory usage and allocation limits using system monitoring tools. See [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right:.
 -   Analyze your flow with the running tools providing the necessary information to optimize your data model when an out-of-memory error happens. See [Explore Transformation Flows](explore-transformation-flows-7588192.md).
 -   Monitor your disk space using the SAP HANA Cockpit to check disk statistics to check that there’s enough space on disk for data volumes and log volumes. See [Disk Usage: Monitor Disk Volume](https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/5c947a6a2f0f4c3b95a9628d4441bd18.html).
 

@@ -42,11 +42,9 @@ The following **sources** are **not** supported:
 
 **Properties**:
 
--   **Delta capturing** is **activated** by default and cannot be switched off.
-
 -   **Delete All Before Loading** is **deactivated** by default and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*.
 
--   Only load type *Initial and Delta* can be used.
+-   Both *Initial Only* and *Initial and Delta* load types can be used.
 
 -   Clamping: By default, if there are values that are too large, the replication fails and you get an error message informing you about the issue. If you don't want this, you can activate clamping for individual replication objects \(by selecting *Clamp Decimal Floating-Point Data Type* in the side panel\) or for all objects in the replication flow \(by selecting *Clamp Decimal Floating-Point Data Type* in the target settings\). If you do so, values that are too large are clamped in accordance with the maximum values for the respective target data type.
 

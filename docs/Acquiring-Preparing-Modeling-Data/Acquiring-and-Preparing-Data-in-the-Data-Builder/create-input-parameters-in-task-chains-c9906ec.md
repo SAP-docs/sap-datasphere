@@ -4,7 +4,7 @@
 
 # Create Input Parameters in Task Chains
 
-You can define input parameters on the task level of task chains. You can also create new input parameters in task chains. This will allow for more flexible usage of task chains and nested task chains.
+You can define input parameters for task objects of task chains. You can also create new input parameters in task chains. This will allow for more flexible usage of task chains and nested task chains.
 
 
 

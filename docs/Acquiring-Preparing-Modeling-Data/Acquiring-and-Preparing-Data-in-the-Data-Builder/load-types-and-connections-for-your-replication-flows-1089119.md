@@ -332,7 +332,7 @@ See also [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-f
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 <td valign="top">

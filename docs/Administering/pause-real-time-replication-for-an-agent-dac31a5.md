@@ -25,7 +25,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Context
 
-If you need to perform maintenance activities in a source system, you can pause real-time replication for the corresponding connection. For more information, see [Pause Real-Time Replication for a Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a11f2441b840405c91918de757589097.html "Pause real-time replication for a connection while updating or maintaining the source. After you have finished with your maintenance activities you can restart real-time replication.") :arrow_upper_right:.
+If you need to perform maintenance activities in a source system, you can pause real-time replication for the corresponding connection. For more information, see [Pause Real-Time Replication for a Connection Using SAP HANA Smart Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a11f2441b840405c91918de757589097.html "Pause real-time replication for a connection while updating or maintaining the source. After you have finished with your maintenance activities you can restart real-time replication.") :arrow_upper_right:.
 
 
 

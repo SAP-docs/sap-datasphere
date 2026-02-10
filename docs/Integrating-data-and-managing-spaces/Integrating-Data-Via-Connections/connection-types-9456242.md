@@ -7,9 +7,9 @@ To connect to remote systems, applications, databases, or storages, SAP Datasphe
 The following connection types are available with SAP Datasphere, each connection type supporting different sets of features.
 
 > ### Note:  
-> Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
+> -   Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
 > 
-> Spaces with storage type *SAP HANA Data Lake Files* \(file spaces\) provide a subset of connection types \(see column *Available in File Spaces* below\). In file spaces, the connection types only support replication flows.
+> -   Spaces with storage type *SAP HANA Data Lake Files* \(file spaces\) provide a subset of connection types \(see column *Available in File Spaces* below\). In file spaces, the connection types only support replication flows.
 
 ****
 

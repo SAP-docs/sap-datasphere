@@ -141,6 +141,18 @@ This task failed but, for some sub-objects, the execution ended successfully.
 <tr>
 <td valign="top">
 
+*RESOURCE\_LIMIT\_ERROR*
+
+</td>
+<td valign="top">
+
+The task can't be performed because sufficient resources are not available. Navigate to the details screen of the relevant log and check the message detail for more information.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *SCHEDULE\_CANCELLED* 
 
 </td>
@@ -222,19 +234,7 @@ The user could not be authenticated, has been locked, or deleted.
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-*RESOURCE\_LIMIT\_ERROR*
-
-</td>
-<td valign="top">
-
-The task can't be performed because sufficient resources are not available. Navigate to the details screen of the relevant log and check the message detail for more information.
-
-</td>
-</tr>
 </table>
 
-You can also monitor the statuses and substatuses in the <span class="FPA-icons-V3"></span> \(*System Monitor*\). For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Users with an administrator role have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues.") :arrow_upper_right:
+You can also monitor the statuses and substatuses in the <span class="FPA-icons-V3"></span> \(*System Monitor*\). For more information, see [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right:
 

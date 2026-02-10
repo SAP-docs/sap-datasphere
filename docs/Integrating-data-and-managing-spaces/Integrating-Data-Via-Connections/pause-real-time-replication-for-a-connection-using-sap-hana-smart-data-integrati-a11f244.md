@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Pause Real-Time Replication for a Connection
+# Pause Real-Time Replication for a Connection Using SAP HANA Smart Data Integration
 
 Pause real-time replication for a connection while updating or maintaining the source. After you have finished with your maintenance activities you can restart real-time replication.
 

@@ -8,70 +8,11 @@ Review the standard roles and the privileges needed to access apps, tools, and o
 
 This topic contains the following sections:
 
--   [Granting Privileges via Global and Scoped Roles](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_vdy_gmg_2bc)
 -   [Apps](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_apps)
 -   [Administration Tools](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_tools)
 -   [Space Management Privileges and Permissions](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_space_management_permissions_SDP_ON)
 -   [External Data Consumption](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_consumption)
 -   [The Command Line Interface](roles-and-privileges-by-app-and-feature-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_cli)
-
-
-
-<a name="loio2d8b7d04dcae402f911d119437ce0a74__section_vdy_gmg_2bc"/>
-
-## Granting Privileges via Global and Scoped Roles
-
-
-<table>
-<tr>
-<td valign="top">
-
-![](images/Privileges_GlobalRoles_61551e0.png)
-
-</td>
-<td valign="top">
-
-![](images/CascadingScopedPrivileges_Roles_cdde787.png)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-A user is granted a set of global privileges for the tenant via a global role.
-
-The global role can be:
-
--   A standard global role that is delivered with SAP Datasphere \(such as *DW Administrator*\).
-
--   A custom role that you create from a template \(a standard global role or another custom role containing global privileges\).
-
-
-To assign a user to a global role, see [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
-
-</td>
-<td valign="top">
-
-A user is granted a set of scoped privileges for one or more spaces via a scoped role.
-
-The scoped role inherits a role template, which can be:
-
--   A standard scoped role template that is delivered with SAP Datasphere, such as *DW Space Administrator*\).
-
--   A custom role template that you create from another template \(a standard scoped role or another custom role\).
-
-
-To assign a user to a scoped role, see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
-
-</td>
-</tr>
-</table>
-
-> ### Note:  
-> For complete lists of standard roles, privileges and permissions, see:
-> 
-> -   [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)
-> -   [Privileges and Permissions](privileges-and-permissions-d7350c6.md)
 
 
 
@@ -530,7 +471,7 @@ See [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3
 
 <span class="FPA-icons-V3"></span> \(*System Monitor*\)
 
-See [Monitoring SAP Datasphere](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md)
+See [Monitoring SAP Datasphere in the System Monitor](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)
 
 </td>
 <td valign="top">
@@ -576,7 +517,7 @@ Roles \(see [Managing Roles and Privileges](managing-roles-and-privileges-3740da
 
 Authorization Overview \(see [View Authorizations by User, Role, or Space](view-authorizations-by-user-role-or-space-c6538ea.md)\)
 
-Activities \(see [Monitor Object Changes with Activities](../Monitoring-SAP-Datasphere/monitor-object-changes-with-activities-08e607c.md)\)
+Activities \(see [Monitor Object Changes with Activities](../monitor-object-changes-with-activities-08e607c.md)\)
 
 </td>
 <td valign="top">

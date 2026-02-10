@@ -10,7 +10,7 @@ You can manually restart your SAP HANA database if it is down.
 
 ## Context
 
-To restart your SAP HANA database, you must have a global role that grants you the following privileges:
+To work with your SAP HANA database, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *More* in the *About* area of the *System* tool.

@@ -1,4 +1,4 @@
-# Integrating Data and Managing Spaces in SAP Datasphere
+# Integrating Data and Managing Spaces in SAP Datasphere 
 
 -   [Integrating Data and Managing Spaces in SAP Datasphere](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md)
 -   [Working with SAP Datasphere in SAP Business Data Cloud](working-with-sap-datasphere-in-sap-business-data-cloud-8f9c372.md)
@@ -18,7 +18,7 @@
     -   [Edit a Connection](Integrating-Data-Via-Connections/edit-a-connection-ba20892.md)
     -   [Validate a Connection](Integrating-Data-Via-Connections/validate-a-connection-99bd229.md)
     -   [Delete a Connection](Integrating-Data-Via-Connections/delete-a-connection-e90c290.md)
-    -   [Pause Real-Time Replication for a Connection](Integrating-Data-Via-Connections/pause-real-time-replication-for-a-connection-a11f244.md)
+    -   [Pause Real-Time Replication for a Connection Using SAP HANA Smart Data Integration](Integrating-Data-Via-Connections/pause-real-time-replication-for-a-connection-using-sap-hana-smart-data-integrati-a11f244.md)
     -   [Features Supported by Connections](Integrating-Data-Via-Connections/features-supported-by-connections-505bf40.md)
     -   [Connection Types](Integrating-Data-Via-Connections/connection-types-9456242.md)
         -   [Adverity Connections](Integrating-Data-Via-Connections/adverity-connections-63e9ff5.md)
@@ -137,11 +137,13 @@
 -   [Importing SAP and Partner Business Content from the Content Network](importing-sap-and-partner-business-content-from-the-content-network-400078d.md)
 -   [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)
     -   [Creating Packages to Export](Transporting-Content-Between-Tenants/creating-packages-to-export-24aba84.md)
+        -   [Transporting Local Table Data](Transporting-Content-Between-Tenants/transporting-local-table-data-9ec1c3c.md)
     -   [Exporting Content for Sharing with Other Tenants](Transporting-Content-Between-Tenants/exporting-content-for-sharing-with-other-tenants-44e775c.md)
         -   [Adding Sharing Destinations](Transporting-Content-Between-Tenants/adding-sharing-destinations-562e996.md)
         -   [Managing Exported Content](Transporting-Content-Between-Tenants/managing-exported-content-638bf6a.md)
     -   [Importing Content from Another Tenant](Transporting-Content-Between-Tenants/importing-content-from-another-tenant-b607a12.md)
-    -   [Transporting Your Content through SAP Cloud Transport Management](Transporting-Content-Between-Tenants/transporting-your-content-through-sap-cloud-transport-management-0538398.md)
+    -   [Transporting Content Through SAP Cloud Transport Management](Transporting-Content-Between-Tenants/transporting-content-through-sap-cloud-transport-management-0538398.md)
+    -   [Monitoring Transport Jobs](Transporting-Content-Between-Tenants/monitoring-transport-jobs-fa9015c.md)
 -   [Managing Your Space](managing-your-space-268ea7e.md)
     -   [Control User Access to Your Space](control-user-access-to-your-space-9d59fe5.md)
     -   [Create Time Data and Dimensions](create-time-data-and-dimensions-c5cfce4.md)

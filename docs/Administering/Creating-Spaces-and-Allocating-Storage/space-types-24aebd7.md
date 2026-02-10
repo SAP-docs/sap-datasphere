@@ -38,7 +38,7 @@ No restrictions:
 Storage Type:
 
 -   *SAP HANA Database \(Disk and In-Memory\)* - See [Create a Space](create-a-space-bbd41b8.md).
--   *SAP HANA Data Lake Files* - See [Create a Space](create-a-space-bbd41b8.md).
+-   *SAP HANA Data Lake Files* - See [Create a File Space to Load Data in the Object Store](create-a-file-space-to-load-data-in-the-object-store-9474446.md).
 
 
 

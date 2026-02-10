@@ -28,7 +28,7 @@ The *DW Modeler* scoped role template and the *DW AI Consumer* global role, appl
 
 ## Using Natural Language Search
 
-Entering a natural language search string allows you to quickly filter your list of objects without looking for specific filter settings. SAP Datasphere interprets your phase as filter conditions and displays them in the *AI-Generated Filter Conditions* filter bar.
+Entering a natural language search string allows you to quickly filter your list of objects without looking for specific filter settings. SAP Datasphere interprets your phrase as filter conditions and displays them in the *AI-Generated Filter Conditions* filter bar.
 
 Natural language search is available in:
 

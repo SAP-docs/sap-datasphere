@@ -40,20 +40,21 @@ For more information, see [Preparing Cloud Connector Connectivity](preparing-clo
 
 2.  Perform the required tasks:
 
-    -   Receive the SAP Datasphere subaccount information that is required during Cloud Connector configuration.
+    -   Receive the SAP Datasphere subaccount information that is required for configuring the Cloud Connector.
 
-        To receive the SAP Datasphere subaccount information, the subaccount needs to be linked to the user ID of your SAP BTP account. In the *SAP BTP Core Account* section, you can check if this has been done and the information is already available in *Account Information*.
-
-        During Cloud Connector configuration, you will then need to enter the following information from your SAP Datasphere subaccount:
+        If the SAP Datasphere subaccount is already linked to the user ID of your SAP BTP account, you can find the relevant information under *SAP BTP Core Account* \> *Account Information*:
 
         -   *Subaccount*
+
+            > ### Note:  
+            > This is the automatically created subaccount for the SAP Datasphere tenant and must not be confused with the SAP BTP subaccount where the SAP Datasphere instance was provisioned \(see SAP Note [3290588](https://me.sap.com/notes/3290588)\).
 
         -   *Region Host*
 
         -   *Subaccount User*
 
 
-        If you have an account but cannot see the *Account Information*, enter the SAP BTP user ID. This ID is typically the email address you used to create your SAP BTP account. After you have entered the ID you can see the *Account Information* for SAP Datasphere:
+        If you have an account but cannot see the *Account Information*, click :pencil2:, enter the SAP BTP user ID \(this is typically the email address you used to create your SAP BTP account\), and click *Change Cloud Platform User*.. You should now see the SAP Dataspheresubbaccount information.
 
         > ### Note:  
         > If you don't have an SAP Business Technology Platform \(SAP BTP\) user account yet, create an account in the [SAP BTP cockpit](https://account.hana.ondemand.com/) by clicking *Register* in the cockpit.

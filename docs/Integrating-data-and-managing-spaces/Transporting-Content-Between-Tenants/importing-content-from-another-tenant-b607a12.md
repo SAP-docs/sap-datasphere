@@ -114,7 +114,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
     Controls whether objects that are already present in your space can be overwritten during an import.
 
     > ### Note:  
-    > Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app.
+    > With limited exceptions, object definitions only can be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app. For information about including local table data in your package, see [Transporting Local Table Data](transporting-local-table-data-9ec1c3c.md).
 
     You can choose between:
 

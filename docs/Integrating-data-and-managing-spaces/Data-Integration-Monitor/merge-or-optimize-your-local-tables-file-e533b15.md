@@ -44,7 +44,7 @@ You can optimize or update your local table \(file\) data:
 > 
 > *Merge Table* can also be automated at a replication flow creation level. For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:
 
-Note also that merge and optimize tasks will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload, please consider adjusting these defaults for your scenario \(see next paragaph\).
+Note also that merge and optimize tasks will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload, please consider adjusting these defaults for your scenario \(see next paragraph\).
 
 
 
@@ -63,7 +63,7 @@ However, you can change the maximum amount of compute resources that can be cons
 
 ### Override Resources for all Future Runs
 
-Go to the *Setting* tab and change the default settings of Apache Spark application for next runs:
+Go to the *Settings* tab and change the default settings of Apache Spark application for next runs:
 
 -   *Use Default*: The default application is the application selected in the table settings. If no default application is defined there, the application selected by an administrator during the file space creation is used..
 -   *Define New Setting for This Table*: Select another *Apache Spark Application* that fits your needs..

@@ -25,7 +25,7 @@ Local tables \(files\) can be used as source data or target data by SAP Datasphe
 In a local table \(file\), the data is stored in a Delta Lake table in the *SAP HANA Data Lake Files* storage. The columnar parquet files in the table's directory belong to different versions of the data. If delta capture is switched on, versions are tracked in a folder "\_delta\_log", which allows for time travel to historic data versions. Every 10 versions, a checkpoint file is stored in this folder, which represents a full snapshot of the version. Those checkpoint files are required to load the data changes in this version and the subsequent 9 versions for which no checkpoint file is created.
 
 > ### Restriction:  
-> The log retention time in the *SAP HANA Data Lake Files* storage is 30 days. Checkpoint files that are older than 30 days are automatically cleaned up when a new version is created. Make sure to process data changes in a transformation flow before the required checkpoint files get deleted.
+> The log retention time in the *SAP HANA Data Lake Files* storage is 30 days. Checkpoint files that are older than 30 days are automatically cleaned up when a new version is created. Make sure to process data changes in a transformation flow before the required checkpoint files get deleted. As best practices, we recommend not to let more than 3 days between a merge task and a flow run.
 
 You enable *Delta Capture* while creating a local table. See [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
 

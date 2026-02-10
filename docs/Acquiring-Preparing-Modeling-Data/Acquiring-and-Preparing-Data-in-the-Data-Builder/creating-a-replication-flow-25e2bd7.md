@@ -242,7 +242,7 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    Source Thread Limit \(1-100\)
+    Source Thread Limit \(1-160\)
     
     </td>
     <td valign="top">
@@ -254,12 +254,12 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    Target Thread Limit \(1-100\)
+    Target Thread Limit \(1-160\)
     
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 100, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -305,7 +305,7 @@ For more information about connection types that can be used for adding sources 
     </td>
     <td valign="top">
     
-    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source. For local table \(file\), delta capturing is activated by default and cannot be switched off. 
+    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source. 
 
     For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
     

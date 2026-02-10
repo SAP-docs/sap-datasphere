@@ -121,5 +121,5 @@ Administrators prepare SAP Datasphere for creating connections to source systems
 
 ## Monitor and Maintain SAP Datasphere
 
-Administrators have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues \(see [Monitoring SAP Datasphere](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-28910cd.md)\).
+Administrators have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
 

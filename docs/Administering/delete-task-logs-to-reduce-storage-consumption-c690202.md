@@ -1,6 +1,6 @@
 <!-- loioc6902024ecd74956b4ba2d1c67ccb073 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
 # Delete Task Logs to Reduce Storage Consumption
 
@@ -17,7 +17,7 @@ To delete task logs and reduce storage consumption, you must have a global role 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 
 
@@ -39,16 +39,21 @@ However, task logs can consume a lot of space in a tenant. Deleting old task log
 
 2.  Check how much size the task logs consume on your tenant. If needed, decide how you want to delete the task logs.
 
-    -   Manually Delete Task Log: SAP Datasphere automatically triggers logs deletion using the following default criteria:
+    -   Schedule Task Log Deletion: SAP Datasphere automatically triggers logs deletion using the following default criteria:
 
         -   Deletion tasks will be run every 4 months
         -   Task logs older than 200 days will be deleted
 
-        Go to the section *Schedule Task Log Deletion*, update the deletion criteria following your needs and click *Save*.
+        You can set the options to run the task deletion every x days or months, and then clean up logs every x days or weeks. Click *Save*.
 
     -   Manual Deletion: You want to manually delete task logs to take immediate action. Go to the *Manually Delete Task Log* section and determine how long you want to keep the logs. For example, delete the logs that are older than 100 days.
 
         Click *Delete*.
+
+        > ### Note:  
+        > Deleting these logs do not set the storage to zero because some files remain. Running procedures may take longer to run and can incur costs due to using Apache Spark processing.
+        > 
+        > The displayed size of log files in the Object Store \(*Disk used for storage \[Spark\]*\) is calculated immediately after a deletion run and remains unchanged until the next deletion run completes. This approach helps avoid unnecessary resource usage for frequent size recalculations.
 
 
 

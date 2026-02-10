@@ -22,6 +22,9 @@ There are different ways to add dimensions:
 
 3.  When you click on a dimension on the canvas, you can select associated dimensions of the dimension in the properties panel on the right.
 
+    > ### Note:  
+    > Unlinked associations are dimensions associated to the fact/dimension, but not used in any column mapping.
+
 4.  To edit the properties of a dimension: Click on the dimension of the canvas to show its properties in the side panel. You can make the following changes here:
 
     -   You can change the business name of the dimension, the technical name, and the technical name of the attribute.

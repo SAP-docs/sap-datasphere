@@ -6,10 +6,109 @@
 
 Users with an administrator or space administrator role can use the *Transport* app to transfer content between tenants via a private cloud storage area.
 
+This topic contains the following sections:
+
+-   [Introduction to Content Transport](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__intro)
+-   [Create One-Off Manual Transport Packages](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__one-off)
+-   [Model Transport Packages for Repeatable Export](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__model)
+-   [Import Transport Packages](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__import)
+-   [Automate and Schedule Package Imports with SAP Cloud Transport Management](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__automate)
+-   [Monitor Transports](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__monitor)
+-   [Objects and Dependencies](transporting-content-between-tenants-df12666.md#loiodf12666cf98e41248ef2251c564b0166__objects)
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__intro"/>
+
+## Introduction to Content Transport
+
+Organizations typically work with three tenants to safely develop, test, and deploy content:
+
+-   Development \("Dev"\) Tenant - Where data ingestion, preparation, and exposure is modeled and tables, views, flows, analytic models, and other objects are created.
+-   Test Tenant - Where the prepared content is transported to be rigorously tested.
+-   Production \("Prod"\) Tenant - Where the tested content is transported to be used by the organization's data analysts and other stakeholders.
+
+The *Transport* apps allow you to safely and securely package and move content from the `Dev` tenant to the `Test` tenant and, once a release decision has been made, on to the `Prod` tenant.
+
+> ### Note:  
+> You can also export content from and import content to your space via:
+> 
+> -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
+> -   The `datasphere` command line interface `objects` commands \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__one-off"/>
+
+## Create One-Off Manual Transport Packages
+
+The simplest way to export content is to use the *Transport* \> *Export* editor, which allows you to add objects to a package, specify which tenants can access it, and export it to private cloud storage for future import.
+
+For more information, see [Exporting Content for Sharing with Other Tenants](exporting-content-for-sharing-with-other-tenants-44e775c.md).
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__model"/>
+
+## Model Transport Packages for Repeatable Export
+
+You can model your packages and their dependencies in the *Transport* \> *Packages* editor. A package modeled in this way allows you to persist your object selections, and re-export the package at any time, allowing you to easily ensure that your target tenants always have access to the most up-to-date version of each object.
+
+Each modeled package can contain only objects from one space and each object can belong to only one package, but you can specify dependencies to other packages \(including packages in other spaces\) to ensure that all required objects are exported together every time.
+
+This export process requires that all dependencies are resolved before export, offers semantic versioning for major, minor, and patch releases, and supports transporting data in local tables in certain circumstances.
+
+For more information, see [Creating Packages to Export](creating-packages-to-export-24aba84.md).
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__import"/>
+
+## Import Transport Packages
+
+You can import any package made available to your tenant via the *Transport* \> *Import* editor.
+
+For more information, see [Importing Content from Another Tenant](importing-content-from-another-tenant-b607a12.md).
+
+> ### Note:  
+> For information about importing business content in the form of end-to-end business scenarios for specific industries and lines of business provided by SAP and its partners via the <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\) app, see [Importing SAP and Partner Business Content from the Content Network](../importing-sap-and-partner-business-content-from-the-content-network-400078d.md).
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__automate"/>
+
+## Automate and Schedule Package Imports with SAP Cloud Transport Management
+
+You can integrate your SAP Datasphere tenants to SAP Cloud Transport Management, a separate BTP service, which provides support for:
+
+-   Scheduling imports
+-   Central management of imports to all your SAP Datasphere tenants
+-   Coordinated transport of related SAP Analytics Cloud and other service packages
+-   Improved governance and audit trails
+-   Optional integration with SAP Cloud ALM
+
+For more information, see [Transporting Content Through SAP Cloud Transport Management](transporting-content-through-sap-cloud-transport-management-0538398.md).
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__monitor"/>
+
+## Monitor Transports
+
+You can use the *Transport* \> *Monitor* page to review the status and summary of all import and export jobs on your tenant.
+
+For more information, see [Monitoring Transport Jobs](monitoring-transport-jobs-fa9015c.md).
+
+
+
+<a name="loiodf12666cf98e41248ef2251c564b0166__objects"/>
+
+## Objects and Dependencies
+
 The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:
 
 > ### Note:  
-> Only object definitions can be transported. Data cannot be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app.
+> With limited exceptions, object definitions only can be transported between SAP Datasphere tenants via the <span class="FPA-icons-V3"></span> \(*Transport*\) app. For information about including local table data in your package, see [Transporting Local Table Data](transporting-local-table-data-9ec1c3c.md).
 
 
 <table>
@@ -222,12 +321,4 @@ The definition of an authorization scenario contains the definition of its data 
 </td>
 </tr>
 </table>
-
-> ### Note:  
-> You can also export content from and import content to your space via:
-> 
-> -   *Export to CSN/JSON File* buttons in selected *Data Builder* editors \(see [Importing and Exporting Objects in CSN/JSON Files](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f8ff0628c9fc49229740ffcd4d20e9aa.html "You can use the tools in certain Data Builder editors to import objects to and export objects from your space.") :arrow_upper_right:\).
-> -   The `datasphere` command line interface `objects` commands \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
-
-For information about importing business content in the form of end-to-end business scenarios for specific industries and lines of business provided by SAP and its partners via the <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\) app, see [Importing SAP and Partner Business Content from the Content Network](../importing-sap-and-partner-business-content-from-the-content-network-400078d.md).
 

@@ -10,7 +10,7 @@ SAP Business Data Cloud integrates and governs SAP and third-party data, allowin
 
 If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then the SAP Business Data Cloud administrator can install intelligent applications to SAP Datasphere and activate data packages to allow SAP Datasphere modelers to work with data products.
 
-![Intelligent application and data package workflows in SAP Business Data Cloud](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
+![](images/SAP_Buiness_Data_Cloud_Overview_024dbaa.png)
 
 For more information, see:
 

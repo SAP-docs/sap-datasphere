@@ -228,7 +228,7 @@ Users with the *DW Space Administrator* role can create packages:
         As objects can only be added to one package, any objects that have been added to a different package cannot be selected.
 
         > ### Note:  
-        > If your SAP Datasphere tenant is part of an SAP Business Data Cloud you can include local table dimension or text entity data in your package. If the local table has a semantic usage of *Dimension*, *Text*, or *Relational Datset* and has the *Allow Data Transport* switch enabled, then you can select the <code><i class="varname">&lt;table_name&gt;</i>::data</code> object in the list of objects to include the data.
+        > If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, you can include local table data in your package. If the local table has the *Allow Data Transport* switch turned on, then an additional item, `<table_name>::data`, appears in the list of objects and you can select this item to include the data in your package. For more information, see [Transporting Local Table Data](transporting-local-table-data-9ec1c3c.md).
 
     4.  Click *Next* and wait for the dialog to analyze your objects and extend your selection by adding any sources and other required dependencies.
 
