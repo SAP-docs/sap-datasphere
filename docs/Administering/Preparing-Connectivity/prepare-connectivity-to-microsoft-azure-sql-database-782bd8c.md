@@ -33,7 +33,7 @@ Before you can use the connection for replication flows, the following is requir
 
     For information on where a DW administrator can find the IP address, see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md).
 
--   To replicate from a Microsoft SQL Server \(MSSQL\) or Azure SQL source system, the database user must have the following privileges:
+-   To replicate data from a Microsoft Azure SQL database, the database user must have the following privileges:
 
 
     <table>
@@ -105,11 +105,6 @@ Before you can use the connection for replication flows, the following is requir
     <td valign="top">
     
     Metadata access
-
-    > ### Note:  
-    > For versions earlier than Microsoft SQL Server 2022, the `VIEW DATABASE STATE` privilege is required instead.
-
-
     
     </td>
     <td valign="top">
@@ -298,7 +293,11 @@ Before you can use the connection for replication flows, the following is requir
     To enable delta loading, a database schema with the same name as the database user must exist, replication objects \(shadow tables, procedures, sequences\) are created under this user schema. If it does not exist, create it. The database user needs the required privileges on this schema to create and manage replication objects. You can create the necessary user and schema with the following commands:
 
     ```
-    -- Create login / userCREATE USER <ds_rep_user> WITH PASSWORD =<Strong!Password>;-- Create dedicated schema owned by the replication userCREATE SCHEMA <ds_rep_user> AUTHORIZATION <ds_rep_user>;
+    -- Create login / user
+    CREATE USER <ds_rep_user> WITH PASSWORD = '<Strong!Password>';
+    
+    -- Create dedicated schema owned by the replication user
+    CREATE SCHEMA <ds_rep_user> AUTHORIZATION <ds_rep_user>;
     ```
 
 

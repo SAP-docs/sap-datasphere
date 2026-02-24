@@ -91,7 +91,7 @@ Before you can use the connection for data flows, the following is required:
     For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
     > ### Note:  
-    > -   In Cloud Connector configuration, enter the port specified for your OData service. If the port is not explicitly included in the OData service URL, we assume the service is using the default port 80 for HTTP or 443 for HTTPS.
+    > -   In Cloud Connector configuration, enter the port specified for your OData service. If the port is not explicitly included in the OData service URL, the system assumes that the service is using the default port 80 for HTTP or 443 for HTTPS.
     > -   Publicly available OData services are supported without Cloud Connector.
 
 
@@ -200,7 +200,7 @@ Description
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection* privilege with *Read* permission. 
 
 
 

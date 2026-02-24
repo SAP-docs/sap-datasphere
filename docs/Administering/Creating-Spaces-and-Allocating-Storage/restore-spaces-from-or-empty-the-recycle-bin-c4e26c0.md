@@ -21,6 +21,7 @@ To restore spaces, or delete them from the *Recycle Bin*, you must have a global
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-------M`\) - To access the *Recycle Bin* in the *Space Management* tool.
+-   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

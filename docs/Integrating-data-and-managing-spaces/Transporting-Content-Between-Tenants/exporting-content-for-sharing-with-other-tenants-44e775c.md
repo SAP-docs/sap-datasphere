@@ -39,8 +39,8 @@ A combination of a global role and a scoped role:
 
 -   A scoped role that grants you access to the space or spaces to export from with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Spaces Files* \(`-R------`\) - To view specific spaces and their contents.
     -   *Data Warehouse Data Builder* \(`-R------`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
+    -   *Spaces Files* \(`-R------`\) - To view specific spaces and their contents.
 
 
 The *DW Space Administrator* role template, for example, grants this combination of privileges.
@@ -111,7 +111,7 @@ The definition of a remote table contains information about its connection.
 
 Local Tables
 
-See [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
+See [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

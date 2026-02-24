@@ -604,7 +604,7 @@ The outermost container represents a source system \(for example, <span class="F
 
 Systems connected to and monitored by the catalog show their business or technical name. Systems not connected to the catalog show their system type with the text "unmonitored". The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
-You can expand or collapse the container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container.
+You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
 </td>
 </tr>
@@ -639,10 +639,10 @@ Unauthorized and authorized objects appear in the lineage or impact of the analy
 
 -   Authorized objects are published and can be discovered in the catalog. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
 
-    To learn more about an object select the object and then choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties . If the object is available in the catalog, you can choose the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to view the details page for the object.
+    To learn more about an object, select it to display its context menu. Choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties. If the object is available in the catalog, you can choose the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to open the details page for the object.
 
 
-
+You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 
 </td>
 </tr>
@@ -655,6 +655,8 @@ Unauthorized and authorized objects appear in the lineage or impact of the analy
 <td valign="top">
 
 The analyzed object appears as a light blue object. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(Story\), <span class="FPA-icons-V3"></span> \(Transformation\), or :package: data product\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
+
+To learn more review the details of the analyzed object without closing the diagram, select it to display its context menu, and choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties.
 
 You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 
@@ -750,7 +752,7 @@ Restore the default layout. Changing the mode also resets the layout.
 <tr>
 <td valign="top">
 
-![](images/Impact_and_Lineage_Diagram_-_Compass_69fc8ea.png)
+![Diagram navigation controls with directional arrows and zoom buttons.](images/Impact_and_Lineage_Diagram_-_Compass_69fc8ea.png)
 
 </td>
 <td valign="top">

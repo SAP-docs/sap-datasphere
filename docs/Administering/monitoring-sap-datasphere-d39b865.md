@@ -7,9 +7,9 @@ Users with an administrator role have access to various tools to monitor and man
 This topic contains the following sections:
 
 -   [The System Monitor](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__system_monitor)
+-   [Capacity Units](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__capacity_units)
 -   [Audit Logs](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__audit_logs)
 -   [Activities](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__activities)
--   [Capacity Units](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__capacity_units)
 -   [Database Analysis Users](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__db_analysis_users)
 
 
@@ -30,6 +30,16 @@ For more information, see [Monitoring SAP Datasphere in the System Monitor](Moni
 
 
 
+<a name="loiod39b8652994846f9ab80b32fc5b4d671__capacity_units"/>
+
+## Capacity Units
+
+Obtain information about the consumption of capacity units in relation to your subscription.
+
+For more information, see [Monitor Capacity Unit Consumption](monitor-capacity-unit-consumption-ba3d05b.md).
+
+
+
 <a name="loiod39b8652994846f9ab80b32fc5b4d671__audit_logs"/>
 
 ## Audit Logs
@@ -47,16 +57,6 @@ For more information, see [Monitor Database Operations with Audit Logs](monitor-
 Keep track of changes to modeling objects \(and system objects\) via the *Activities* screen.
 
 For more information, see [Monitor Object Changes with Activities](monitor-object-changes-with-activities-08e607c.md).
-
-
-
-<a name="loiod39b8652994846f9ab80b32fc5b4d671__capacity_units"/>
-
-## Capacity Units
-
-Obtain information about the consumption of capacity units in relation to your subscription.
-
-For more information, see [Monitor Capacities](monitor-capacities-ba3d05b.md).
 
 
 

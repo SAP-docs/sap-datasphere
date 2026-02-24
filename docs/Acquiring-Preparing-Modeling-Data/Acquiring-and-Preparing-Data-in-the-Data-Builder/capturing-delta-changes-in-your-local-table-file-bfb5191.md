@@ -26,6 +26,424 @@ In a local table \(file\), the data is stored in a Delta Lake table in the *SAP 
 
 > ### Restriction:  
 > The log retention time in the *SAP HANA Data Lake Files* storage is 30 days. Checkpoint files that are older than 30 days are automatically cleaned up when a new version is created. Make sure to process data changes in a transformation flow before the required checkpoint files get deleted. As best practices, we recommend not to let more than 3 days between a merge task and a flow run.
+> 
+> > ### Example:  
+> > Let's say that today is January 27, 2026, and the latest version of your local table \(file\) is in version 13, last updated on January 26. You now want to run a transformation flow that needs to access versions 7 to 13:
+> > 
+> > -   SAP Datasphere will first identify the latest checkpoint that is less than or equal to version 7 \(in our example, it would be version 0\).
+> > -   If a checkpoint exists at version 0, it will use it as a reference, reapplying the changes from transaction log files 1 to 7, and reconstructing the table state as of version 0.
+> > -   If log files have been deleted \(in our example, files containing versions 0,1,2,3,4 have been deleted because they were older than 30 days\), then the information is no longer available, and versions from 0 to 9 cannot be recovered.
+> > 
+> > **Retention Logs and Checkpoints**
+> > 
+> > 
+> > <table>
+> > <tr>
+> > <th valign="top">
+> > 
+> > Table Version
+> > 
+> > </th>
+> > <th valign="top">
+> > 
+> > Table Last Updated On
+> > 
+> > </th>
+> > <th valign="top">
+> > 
+> > Checkpoint
+> > 
+> > </th>
+> > <th valign="top">
+> > 
+> > Log Files
+> > 
+> > </th>
+> > <th valign="top">
+> > 
+> > Recovery
+> > 
+> > </th>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 0
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > December 6
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > 0
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Deleted as older than 30 days
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Not Available
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 1
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > December 10
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Deleted as older than 30 days
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Not Available
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 2
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > December 14
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Deleted as older than 30 days
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Not Available
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 3
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > December 16
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Deleted as older than 30 days
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Not Available
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 4
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > December 20
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Deleted as older than 30 days
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Not Available
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 5
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 2
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 0, version 5 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 6
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 3
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 0, versions 5 and 6 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 7
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 6
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 0, versions 5, 6 and 7 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 8
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 8
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 0, versions 5 to 8 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 9
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 10
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 0, versions 5 to 9 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 10
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 14
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > 10
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Not available. Versions before 10 can't be recovered with checkpoint 10
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 11
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 18
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 10, versions 10 to 11 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 12
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 20
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 10, versions 10 to 12 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > <tr>
+> > <td valign="top">
+> > 
+> > 13
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > January 26
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> >  
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available
+> > 
+> > </td>
+> > <td valign="top">
+> > 
+> > Available \(checkpoint 10, versions 10 to 13 can be reapplied\)
+> > 
+> > </td>
+> > </tr>
+> > </table>
 
 You enable *Delta Capture* while creating a local table. See [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
 

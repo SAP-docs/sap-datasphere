@@ -10,10 +10,11 @@ Use the *Space Storage* properties to allocate disk and memory storage to the sp
 
 ## Prerequisites
 
-To allocate disk and memory storage to your space, you must have a global role that grants you the following privileges:
+To allocate disk and memory storage to spaces, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
+-   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -129,7 +130,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </table>
     
     > ### Note:  
-    > If a space exceeds its allocations of memory or disk storage, it will be locked until a user of the space deletes the excess data or an administrator assigns additional storage. See [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.") :arrow_upper_right:.
+    > If a space exceeds its allocations of memory or disk storage, it will be locked until a user of the space deletes the excess data or an administrator assigns additional storage. See [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.") :arrow_upper_right:.
 
 3.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.
 

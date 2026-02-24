@@ -71,7 +71,7 @@ Allows access to spaces in the *Space Management* tool.
 
 -   *Create* - To create spacesand elastic compute nodes.
 
-    To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+    To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Privileges by App, Tool, Object, and Task](privileges-by-app-tool-object-and-task-2d8b7d0.md).
 
 -   *Manage* - To read, update and delete all spacesand elastic compute nodes.
 
@@ -104,7 +104,7 @@ Allows access to all objects inside a space, such as views and tables.
 *Manage* - To view objects and data in all spaces.
 
 > ### Note:  
-> To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+> To perform actions on spaces, you need a combination of permissions for the privilege *Spaces* and for other privileges. See [Privileges by App, Tool, Object, and Task](privileges-by-app-tool-object-and-task-2d8b7d0.md).
 
 > ### Caution:  
 > The permission *Manage* should be granted only to tenant administrators.
@@ -623,7 +623,7 @@ Allows access to all objects inside a space, such as views and tables.
 -   *Create*, *Update*, *Delete* - To create, update or delete objects in spaces.
 
 
-To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege Spaces and for other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+To view certain space properties or perform actions on spaces, you need a combination of permissions for the privilege Spaces and for other privileges. See [Privileges by App, Tool, Object, and Task](privileges-by-app-tool-object-and-task-2d8b7d0.md).
 
 > ### Note:  
 > The permission *Manage* is a global permission and is described in the global privileges and permissions table \(see [Global Privileges and Permissions](privileges-and-permissions-d7350c6.md#loiod7350c6823a14733a7a5727bad8371aa__section_global_privileges)\).
@@ -645,7 +645,7 @@ See [Managing Your Space](https://help.sap.com/viewer/be5967d099974c69b77f454942
 </td>
 <td valign="top">
 
-Allows access to all objects in the *Data Builder* app.
+Allows access to all *Data Builder* objects except data access controls, which require a separate privilege.
 
 Users with the *Share* permission can share objects to other spaces.
 
@@ -1113,7 +1113,7 @@ Manage
 
 When granted on *Spaces* and *Space Files*, permits to view all spaces and their content \(including data\), regardless of whether the user is assigned to the space or not.
 
-To perform actions on spaces, you need the *Manage* permission in combination with other permissions for *Spaces* and other privileges. See [Roles and Privileges by App and Feature](roles-and-privileges-by-app-and-feature-2d8b7d0.md).
+To perform actions on spaces, you need the *Manage* permission in combination with other permissions for *Spaces* and other privileges. See [Privileges by App, Tool, Object, and Task](privileges-by-app-tool-object-and-task-2d8b7d0.md).
 
 > ### Caution:  
 > This permission should be granted only to tenant administrators.

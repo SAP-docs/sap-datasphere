@@ -13,8 +13,7 @@ SAP Business AI is a fully managed service by SAP that allows you to integrate a
 To enable SAP Business AI, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Role* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Roles*\) and <span class="SAP-icons-V5"></span> \(*Authorization Overview*\) areas in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete roles.
--   *User* \(`-------M`\) - To add users to roles.
+-   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

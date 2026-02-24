@@ -18,6 +18,7 @@ To create spaces, you must have a global role that grants you the following priv
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *User* \(`-R------`\) - To initialize the space for assigning users.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
+-   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -27,8 +28,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Context
 
-> ### Note:  
-> Only administrators can create spaces, allocate storage, and set the space priority and statement limits. The remaining space properties can be managed by the space administrators that the administrator assigns to the space via a scoped role.
+Only administrators can create spaces, allocate storage, and set the space priority and statement limits. The remaining space properties can be managed by a space administrator that the administrator assigns to the space via a scoped role.
 
 
 
@@ -270,12 +270,12 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
         </table>
         
     -   *Data Access*/*Database Users* - Use the list in the *Database Users* section to create users who can connect external tools and read from and write to the space. See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:.
-    -   *Data Access*/*HDI Containers* - Use the list in the *HDI Containers* section to associate HDI containers to the space. See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:.
+    -   *Data Access*/*HDI Containers* - See [Prepare Your HDI Project for Exchanging Data with Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a94e1637db484a5c8ec2da83cfa75156.html "To allow your SAP Datasphere space to read from and, if appropriate, write to the HDI container, you must configure your HDI project to build on your SAP Datasphere tenant and define the appropriate roles.") :arrow_upper_right:.
 
         > ### Note:  
         > A user with the DW Administrator role only cannot see the *HDI Containers* area.
 
-    -   *Time Data*/*Time Tables and Dimensions* - Click the button in the *Time Tables and Dimensions* section to generate time data in the space. See [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:.
+    -   *Time Data*/*Time Tables and Dimensions* - See [Create Time Data and Dimensions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c5cfce4d22b04650b2fd6078762cdeb9.html "Create a time table and dimension views in your space to provide standardized time data for your analyses. The time table contains a record for each day in the specified period (by default from 1900 to 2050), and the dimension views allow you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.") :arrow_upper_right:.
 
         > ### Note:  
         > A user with the DW Administrator role only cannot see the *Time Tables and Dimensions* area.

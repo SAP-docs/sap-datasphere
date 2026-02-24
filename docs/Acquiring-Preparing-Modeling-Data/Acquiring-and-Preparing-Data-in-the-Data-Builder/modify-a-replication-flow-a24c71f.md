@@ -25,7 +25,7 @@ For other target objects, you can use the mapping function to add columns to you
 
 ## Changing an Active Replication Flow
 
-You can make the following changes to a replication flow with status *Active* without having to stop the replication flow first. This can helpful, for example, if your replication flow contains a lot of objects so that stopping and restarting it would cause disproportionate effort.
+You can make the following changes to a replication flow with status *Active* without having to stop the replication flow first. This can be helpful, for example, if your replication flow contains a lot of objects so that stopping and restarting it would cause disproportionate effort.
 
 -   Add or remove individual replication objects:
 
@@ -42,7 +42,12 @@ You can make the following changes to a replication flow with status *Active* wi
 -   Change the source or target thread limit: Choose <span class="FPA-icons-V3"></span> \(Browse source settings\) or <span class="FPA-icons-V3"></span> \(Browse target settings\), respectively, change the value as required, save your change, and deploy the flow again.
 
 
-To change the load type, delete all before loading setting, projections, or filters for a replication flow, you need to stop the replication flow, make the required changes, deploy the replication flow, and then run it again.
+To change the load type, delete all before loading setting, projections, or filters for a replication flow, you need
+
+1.  Stop the replication flow
+2.  make the required changes
+3.  deploy the replication flow
+4.  Run the replication flow
 
 > ### Note:  
 > If you install the data product corresponding to an active replication flow via SAP Business Data Cloud, you don't need to stop the run: Reinstalling the data product will alter the existing table and apply the changes by redeploying the replication flow. An initial load will then happen, taking into consideration the new changes.

@@ -1170,7 +1170,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </td>
     <td valign="top">
     
-    The source data is available, but the connector is unable to retrieve or dispatch the data. There can be different reasons why the data is not ready: the buffer is empty as data is being written at the moment, the package creation has failed, “the package is too large," or there is an out-of-memory error.
+    The source data is available, but the connector is unable to retrieve or dispatch the data. There can be different reasons why the data is not ready: the buffer is empty as data is being written at the moment, the package creation has failed, “the package is too large," or there is an out-of-memory error. For more information, see the SAP Note [3703424](https://me.sap.com/notes/3703424) 
     
     </td>
     </tr>

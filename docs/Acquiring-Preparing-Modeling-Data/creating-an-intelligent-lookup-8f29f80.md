@@ -15,9 +15,9 @@ Create an intelligent lookup to merge data from two entities even if there are p
 To create and run intelligent lookups, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, deploy and delete intelligent lookups.
 -   *Data Warehouse Data Integration* \(`--U-----`\) - To run intelligent lookups and process results.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants the privilege to create and manage intelligent lookups, and the *DW Integrator* role template grants the privilege to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 

@@ -31,7 +31,7 @@ For information about supported data types, see [Capturing Delta Changes in Your
 
 The following **sources** are **not** supported:
 
--   Cloud storage providers, such as Amazon Simple Storage Service, Google Cloud Storage, or Microsoft Azure Data Lake Gen2
+-   Cloud storage providers, such as Amazon Simple Storage Service, Google Cloud Storage, Secure File Transfer Protocol \(SFTP\) or Microsoft Azure Data Lake Gen2
 
 -   ABAP-based objects that do not have a primary key
 
@@ -44,6 +44,7 @@ The following **sources** are **not** supported:
 
 -   **Delete All Before Loading** is **deactivated** by default and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*.
 
+-   *Delta capturing* is *activated*by default and cannot be switched off.
 -   Both *Initial Only* and *Initial and Delta* load types can be used.
 
 -   Clamping: By default, if there are values that are too large, the replication fails and you get an error message informing you about the issue. If you don't want this, you can activate clamping for individual replication objects \(by selecting *Clamp Decimal Floating-Point Data Type* in the side panel\) or for all objects in the replication flow \(by selecting *Clamp Decimal Floating-Point Data Type* in the target settings\). If you do so, values that are too large are clamped in accordance with the maximum values for the respective target data type.

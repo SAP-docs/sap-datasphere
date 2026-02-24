@@ -10,7 +10,7 @@ Delete a space if you are sure that you no longer need any of its content or dat
 
 ## Prerequisites
 
-To move your space to the *Recycle Bin* area, you must have a scoped role that grants you access to your space with the following privileges:
+To move your space to the *Recycle Bin* area, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RUD----`\) - To open, update and delete your space in the *Space Management* tool.

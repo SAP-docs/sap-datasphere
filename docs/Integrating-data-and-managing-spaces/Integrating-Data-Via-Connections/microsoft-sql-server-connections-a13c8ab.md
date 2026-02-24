@@ -119,7 +119,7 @@ Before you can use the connection for data flows and replication flows, the foll
 
 -   The required driver is pre-bundled and doesn't need to be uploaded by an administrator.
 
--   To replicate from a Microsoft SQL Server \(MSSQL\) or Azure SQL source system, the database user must have the following privileges:
+-   To replicate data from a Microsoft SQL Server database, the database user must have the following privileges:
 
 
     <table>
@@ -384,7 +384,11 @@ Before you can use the connection for data flows and replication flows, the foll
     To enable delta loading, a database schema with the same name as the database user must exist, replication objects \(shadow tables, procedures, sequences\) are created under this user schema. If it does not exist, create it. The database user needs the required privileges on this schema to create and manage replication objects. You can create the necessary user and schema with the following commands:
 
     ```
-    -- Create login / userCREATE USER <ds_rep_user> WITH PASSWORD =<Strong!Password>;-- Create dedicated schema owned by the replication userCREATE SCHEMA <ds_rep_user> AUTHORIZATION <ds_rep_user>;
+    -- Create login / user
+    CREATE USER <ds_rep_user> WITH PASSWORD = '<Strong!Password>';
+    
+    -- Create dedicated schema owned by the replication user
+    CREATE SCHEMA <ds_rep_user> AUTHORIZATION <ds_rep_user>;
     ```
 
 
@@ -521,7 +525,7 @@ Description
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection* privilege with *Read* permission. 
 
 
 

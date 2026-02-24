@@ -629,7 +629,7 @@ Type of object that was run in the task. For example: view, remote table, data f
 </td>
 <td valign="top">
 
-Action that was performed on the object. For example: persist, replicate, execute. You can click on the activity name, which takes you to the *Data Integration Monitor*.
+Action that was performed on the object. For example: persist, replicate, run. You can click on the activity name, which takes you to the *Data Integration Monitor*.
 
 </td>
 </tr>
@@ -696,7 +696,7 @@ Maximum amount of memory \(in MiB\) the task has used during the runtime in SAP 
 > 
 > -   The option *Enable Expensive Statement Tracing* is enabled by default. It traces task exceeding the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*.
 > 
-> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
+> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(run\) and intelligent lookup \(run, delete\_data\).
 > 
 > 
 > Otherwise, no number is displayed.
@@ -720,7 +720,7 @@ Maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 > 
 > -   If the option *Enable Expensive Statement Tracing* is enabled and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](../configure-monitoring-9cd0691.md).
 > 
-> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\).
+> -   If the task is run for these objects \(and activities\): views \(persist, remove\_persisted\_data\), remote tables \(replicate, enable\_realtime\), data flows \(run\) and intelligent lookup \(run, delete\_data\).
 > 
 > 
 > Otherwise, no number is displayed.
@@ -743,7 +743,7 @@ Maximum amount of CPU time \(in ms\) the task has used in SAP HANA.
 Number of records of the target table after the task has finished running.
 
 > ### Note:  
-> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(execute\) and intelligent lookup \(execute, delete\_data\). Otherwise, no number is displayed.
+> You can see this information only if the task is run for these objects \(and activities\): views \(persist\), remote tables \(replicate, enable\_realtime\), data flows \(run\) and intelligent lookup \(run, delete\_data\). Otherwise, no number is displayed.
 
 
 

@@ -12,7 +12,7 @@ Monitor the status and progress of running and previously run task chains.
 
 ## Prerequisites
 
-To monitor task chains, you must have a scoped role that grants you access to the space with the following privileges:
+To monitor task chains, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.

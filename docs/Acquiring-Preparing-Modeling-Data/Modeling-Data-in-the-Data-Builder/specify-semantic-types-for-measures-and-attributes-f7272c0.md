@@ -15,7 +15,7 @@ This topic contains the following sections:
 -   [Image URL Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_image_url)
 -   [Geolocation Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_geo)
 -   [Business Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_business_date)
--   [Calendar, Fiscal, and System Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_fiscal_calendar_system)
+-   [Calendar and System Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_fiscal_calendar_system)
 
 
 
@@ -329,7 +329,7 @@ Business Date - At
 </td>
 <td valign="top">
 
-A key date.
+A key date. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`. 
 
 </td>
 </tr>
@@ -341,7 +341,9 @@ Business Date - From
 </td>
 <td valign="top">
 
-A date or interval that defines the validity of the data of the database table record from a business point of view. Use *System Date - Created at* to represent the date when the record was created.
+A date or timestamp that defines the start date for validity of the data of the database table record from a business point of view. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`.
+
+To represent the date when the record was created, use *System Date - Created at* instead.
 
 </td>
 </tr>
@@ -353,7 +355,7 @@ Business Date - To
 </td>
 <td valign="top">
 
-A date, timestamp, or interval that defines the validity of the data of the database table record from a business point of view.
+A date or timestamp that defines the end date for validity of the data of the database table record from a business point of view. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`. 
 
 </td>
 </tr>
@@ -365,7 +367,7 @@ A date, timestamp, or interval that defines the validity of the data of the data
 
 ## Fiscal Time Attributes
 
-The types identify attributes containing fiscal periods for use in fiscal time dimensions \(see [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md):
+These types identify attributes containing fiscal periods for use in fiscal time dimensions \(see [Create a Fiscal Time Dimension](create-a-fiscal-time-dimension-24248ab.md):
 
 
 <table>
@@ -471,9 +473,9 @@ A fiscal year week number as a string consisting of six digits in the form `YYYY
 
 <a name="loiof7272c0e8be34ce782d04304580c0243__section_fiscal_calendar_system"/>
 
-## Calendar, Fiscal, and System Date Attributes
+## Calendar and System Date Attributes
 
-The types identify attributes containing various kinds of dates:
+These types identify attributes containing calendar or system dates:
 
 
 <table>
@@ -488,6 +490,20 @@ Name
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Calendar - Date
+
+</td>
+<td valign="top">
+
+A date. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`.
+
+The number must be in the range `1 - 31`.
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -520,14 +536,14 @@ The number must be in the range `1 - 366`.
 <tr>
 <td valign="top">
 
-Calendar - Halfyear
+Calendar - Week
 
 </td>
 <td valign="top">
 
-A calendar halfyear number as a string following the logical pattern H consisting of a single digit.
+A calendar week number as a string following the logical pattern `WW` consisting of two digits.
 
-The string must match the regex pattern `[1-2]`.
+The string must match the regex pattern `0[1-9]|[1-4][0-9]|5[2-3]`.
 
 </td>
 </tr>
@@ -562,14 +578,14 @@ The string must match the regex pattern `[1-4]`.
 <tr>
 <td valign="top">
 
-Calendar - Week
+Calendar - Half Year
 
 </td>
 <td valign="top">
 
-A calendar week number as a string following the logical pattern `WW` consisting of two digits.
+A calendar half year number as a string following the logical pattern H consisting of a single digit.
 
-The string must match the regex pattern `0[1-9]|[1-4][0-9]|5[2-3]`.
+The string must match the regex pattern `[1-2]`.
 
 </td>
 </tr>
@@ -590,14 +606,14 @@ The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})`.
 <tr>
 <td valign="top">
 
-Calendar - Year Halfyear
+Calendar - Year Week
 
 </td>
 <td valign="top">
 
-A calendar halfyear number as a string following the logical pattern `(-?)YYYY(Y*)H` consisting of an optional minus sign for years B.C., followed by at least five digits, where the last digit represents the halfyear.
+A calendar year and week as a string following the logical pattern `(-?)YYYY(Y*)WW` consisting of an optional minus sign for years B.C., followed by at least six digits, where the last two digits represent week number in the year.
 
-The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-2]`.
+The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})(0[1-9]|[1-4][0-9]|5[2-3])`.
 
 </td>
 </tr>
@@ -632,14 +648,14 @@ The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-4]`.
 <tr>
 <td valign="top">
 
-Calendar - Year Week
+Calendar - Year Half Year
 
 </td>
 <td valign="top">
 
-A calendar year and week as a string following the logical pattern `(-?)YYYY(Y*)WW` consisting of an optional minus sign for years B.C., followed by at least six digits, where the last two digits represent week number in the year.
+A calendar half year number as a string following the logical pattern `(-?)YYYY(Y*)H` consisting of an optional minus sign for years B.C., followed by at least five digits, where the last digit represents the half year.
 
-The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})(0[1-9]|[1-4][0-9]|5[2-3])`.
+The string must match the regex pattern `-?([1-9][0-9]{3,}|0[0-9]{3})[1-2]`.
 
 </td>
 </tr>

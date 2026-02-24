@@ -10,7 +10,7 @@ See the storage amount assigned to and used by your space.
 
 ## Prerequisites
 
-To monitor the storage consumption of your space, you must have a scoped role that grants you access to your space with the following privileges:
+To monitor the storage consumption of your space, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-R------`\) - To open your space in the *Space Management* tool.

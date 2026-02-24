@@ -10,7 +10,7 @@ Schedule data integration tasks to run periodically at a specified date or time.
 
 ## Prerequisites
 
-To schedule data integration tasks, you must have a scoped role that grants you access to the space with the following privileges:
+To schedule data integration tasks, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.

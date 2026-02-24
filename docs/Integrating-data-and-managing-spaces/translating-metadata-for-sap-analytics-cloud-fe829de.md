@@ -22,7 +22,7 @@ This topic contains the following sections:
 
 ## Prerequisites
 
-To enable translation for your space, and to manage translation in the *Translation* tool, you must have a scoped role that grants you access to your space with the following privileges:
+To enable translation for your space, and to manage translation in the *Translation* tool, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RU-----`\) - To enable translation and select the source language for your space.

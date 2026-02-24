@@ -12,7 +12,7 @@ Users with the *DW Space Administrator* role \(or equivalent privileges\) can cr
 
 ## Prerequisites
 
-To create data access controls, you must have a scoped role that grants you access to the space with the following privileges:
+To create data access controls, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Data Builder* \(`-R------`\) - To access the *Data Builder*.

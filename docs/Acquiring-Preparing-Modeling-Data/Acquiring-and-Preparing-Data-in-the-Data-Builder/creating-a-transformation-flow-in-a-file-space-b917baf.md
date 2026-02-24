@@ -21,8 +21,12 @@ To create flows, you must have a scoped role that grants you access to a space w
 
 To run and schedule flows, you must, in addition, have the following privileges:
 
--   *Data Warehouse Data Integration* \(`-RU-----`\) - To run flows.
--   *Data Warehouse Data Integration* \(`-R--E---`\) - To schedule flows.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
 
 The *DW Modeler* and *DW Integrator* role templates together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
@@ -43,7 +47,7 @@ You want to model transformation flows with local tables \(file\), shared local 
 > -   You can only create a graphical view transform.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
 > -   If your source is a shared table with *Delta Capture* enabled, you can change its load type \(*All Active Records* or *Delta Capture*\) in its settings panel.
-> -   When you use HANA tables as sources in an embedded object store space, all data from the table is exported during initial loads. If you define a filter immediately after defining the table, the filter condition is applied while reading from the table. The system copies the data into the object store using HANA export as part of the transformation flow run before further processing operators.
+> -   When you use HANA tables as sources in an embedded object store space, all data from the table is exported during initial loads. If you define a filter immediately after defining the table in a graphical view transform, the filter condition is applied while reading from the table. The system copies the data into the object store using HANA export as part of the transformation flow run before further processing operators.
 > 
 >     The solution based on HANA Export is not intented or recommended for bulk data transfer. If you encounter resource limit errors due to a HANA export failure, you can either increase the statement memory limit or reduce the number of threads in the source space.
 
@@ -60,6 +64,9 @@ You want to model transformation flows with local tables \(file\), shared local 
     > On file space, you can only create *Graphical View Transform*.
 
 3.  Add a source. For more information, see [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add local tables \(file\), shared local tables \(file\), local tables shared from a SAP HANA space, and shared remote tables on a Delta Share runtime.
+
+    Certain data types that are supported in a HANA Space aren't in a file space and require conversion to supported types. See [Converting Local Table Data Types from a HANA Space to a File Space](converting-local-table-data-types-from-a-hana-space-to-a-file-sp-aac37d0.md).
+
 4.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow:
 
     1.  Select the flow source table to display the context menu and select <span class="SAP-icons-V5"></span> *Remove Duplicate Records*.
@@ -189,7 +196,7 @@ You want to model transformation flows with local tables \(file\), shared local 
     >     -   LAST refers to the latest operations applied on the row.
     >     -   COUNT doesn't include null values for the count calculations; COUNT\* includes them.
     >     -   Using a target table that employs AVG, MAX, or MIN in one transformation as the target table in another transformation using any of these functions could lead to data inconsistencies.
-    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitor Capacities](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "View the amount of capacity units you have used each month.") :arrow_upper_right:.
+    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitor Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "View the amount of capacity units you have used each month.") :arrow_upper_right:.
     >     -   If incremental aggregation is enabled, the input DataFrame for the Python script will include the previous versions of the data for updates.
     > 
     > -   Columns with non-numerical aggregation types can only have the type LAST.
@@ -206,6 +213,7 @@ You want to model transformation flows with local tables \(file\), shared local 
     > -   The transformation will be saved in the object store. While deploying, a virtual procedure will be created to enable the runtime in the file space.
     > -   A transformation flow on a file space using a shared object as a source cannot be cancelled while running. Wait until the export step of the run is complete to cancel it.
     > -   You can run your transformation flow in batches. A batch is a subset of data identified in an SAP HANA runtime transformation flow to optimize memory usage by processing data in manageable chunks. Each batch is defined based on a "batch column", selected in the View Transform, and a "batch size", specifying the number of distinct values from the batch column included in each batch. Loading data in batches is not supported in File space.
+    > -   A transformation flow run fails if it lasts for over 48 hours.
 
 10. You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
 11. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*:

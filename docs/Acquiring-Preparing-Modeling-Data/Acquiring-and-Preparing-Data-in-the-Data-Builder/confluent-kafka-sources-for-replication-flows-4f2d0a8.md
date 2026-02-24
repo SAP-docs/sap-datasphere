@@ -118,6 +118,18 @@ When you select a replication object, its properties, including schema-related i
         
         </td>
         </tr>
+        <tr>
+        <td valign="top">
+        
+        Overwrite Source Settings at Object Level 
+        
+        </td>
+        <td valign="top">
+        
+        By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option. 
+        
+        </td>
+        </tr>
         </table>
         
     -   The *Schema* section, where you will update the schema itself. It can be displayed in two different modes: *Flat* or *Nested*:

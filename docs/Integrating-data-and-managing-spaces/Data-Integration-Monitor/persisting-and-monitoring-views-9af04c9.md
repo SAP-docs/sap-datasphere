@@ -18,11 +18,10 @@ To persist and monitor views, you must have a combination of a global role and a
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Data Warehouse Runtime* \(`-R------`\) - To allow users of the *View Analyzer* to download the generated SQL analyzer plan file.
 
--   -   A scoped role that grants you access to a space with the following privileges:
+-   A scoped role that grants you access to a space with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Data Warehouse Data Integration* \(`-RU-E---`\) - To perform data replication/persistence actions \(in the *Data Integration Monitor* or *Data Builder*\), and schedule the actions.
     -   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions.
-
 
 
 For example, the *DW Administrator* global role template grants the runtime privilege, the *DW Integrator* scoped role template grants the integration privilege, and the *DW Space Administrator* scoped role template grants the *Data Builder* privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
@@ -90,7 +89,7 @@ For more info, see [Monitoring Remote Tables](monitoring-remote-tables-4dd95d7.m
 
 Table created from sources that have already been integrated into SAP Datasphere. It serves of source to create a view.
 
-For more information, see [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 
 
@@ -135,7 +134,7 @@ The monitor displays the views in 2 tabs:
 -   *All Views*: It displays all the deployed views that have been created in the *Data Builder* for the current space.
 -   *Views with Runs and Persisted Views*: \(default\) It displays the views that have been run and the views already persisted.
 
-You can perform the following actions \(might depend on your role and privilege, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right::
+You can perform the following actions \(might depend on your role and privilege, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Privileges by App, Tool, Object, and Task](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the privileges needed to work with apps, tools, and features of SAP Datasphere.") :arrow_upper_right::
 
 
 <table>

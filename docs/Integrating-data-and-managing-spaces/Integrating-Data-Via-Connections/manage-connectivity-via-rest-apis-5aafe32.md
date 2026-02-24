@@ -6,7 +6,8 @@ You can manage TLS server certificates and connections via the *Certificates* an
 
 This topic contains the following sections:
 
--   [Introduction](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
+-   [Prerequisites](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites)
+-   [Introduction to the Connectivity REST APIs](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
 -   [Log in with an OAuth Client](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_OAuth_login)
 -   [Obtain a CSRF Token](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_CSRF_Token)
 -   [List TLS Server Certificates](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_certificates)
@@ -21,24 +22,83 @@ This topic contains the following sections:
 
 
 
+<a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites"/>
+
+## Prerequisites
+
+To manage certificates, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+To create, edit, validate, and delete connections, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Connection* \(`CRUD----`\) - To create, edit, validate, or delete connections.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+The *DW Space Administrator* and *DW Integrator* role templates, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+You must, in addition:
+
+-   Obtain the following parameters for an OAuth client created in your SAP Datasphere tenant with *Purpose* set to *Interactive Usage* and the *Redirect URI* set to the URI provided by the client, tool, or app that you want to connect:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Standard OAuth2 Authorization Flow
+    
+    </th>
+    <th valign="top">
+
+    OAuth2SAMLBearer Principal Propagation Flow
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    -   *Client ID*
+    -   *Secret*
+    -   *Authorization URL* \(not required for clients with a *Technical User* purpose\)
+    -   *Token URL*
+
+    Users of a client with a *Technical User* purpose \(which includes its own privileges and permissions\) can then access their resource directly. Users of clients with other purposes must manually authenticate against the IDP in order to generate the authorization code before continuing with the remaining OAuth2.0 steps.
+    
+    </td>
+    <td valign="top">
+    
+    -   *Client ID*
+    -   *Secret*
+    -   *OAuth2SAML Token URL*
+    -   *OAuth2SAML Audience*
+
+    Users of a client with a *Technical User* purpose can then access their resource directly. Users of clients with other purposes must authenticate with their third-party app, which has a trusted relationship with the IDP, and do not need to re-authenticate \(see [Add a Trusted Identity Provider](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea0688aef2f94b35ae34d930b3cb0c10.html "If you use the OAuth 2.0 SAML Bearer Assertion workflow, you must add a trusted identity provider to SAP Datasphere.") :arrow_upper_right:\). See also the blog [Integrating with SAP Datasphere Consumption APIs using SAML Bearer Assertion](https://community.sap.com/t5/technology-blogs-by-sap/integrating-with-sap-datasphere-consumption-apis-using-saml-bearer/ba-p/13647905) \(published March 2024\). 
+    
+    </td>
+    </tr>
+    </table>
+    
+    For information about OAuth clients, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with an administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:. 
+
+
+
+
 <a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction"/>
 
-## Introduction
+## Introduction to the Connectivity REST APIs
 
 SAP Datasphere exposes REST APIs that allow you to programmatically manage TLS server certificates and connections using dedicated endpoints.
-
-The API specifications are available at the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 
 Using the **Certificates API**, you can perform the following actions:
 
 -   List TLS server certificates
 
 -   Upload and delete TLS server certificates
-
-
-To manage certificates via the REST API, you must have an administrator role or equivalent privileges:
-
--   **System Information \(-RU-----\)**
 
 
 Using the **Connections API**, you can perform the following actions:
@@ -52,19 +112,7 @@ Using the **Connections API**, you can perform the following actions:
 -   Create and edit connections to SAP SuccessFactors
 
 
-To manage connections via the REST API, you must have a scoped role based on the *DW Integrator* role or equivalent privileges:
-
--   **Data Warehouse Connection \(CRUD----\)**
-
-
-You must, in addition, obtain the following parameters for an OAuth client created in your SAP Datasphere tenant \(with *Purpose* set to *Interactive Usage* and the *Redirect URI* set to the URI provided by the client, tool, or app that you want to connect\):
-
--   *Client ID*
--   *Secret*
--   *Authorization URL*
--   *Token URL*.
-
-For more information about obtaining the OAuth client parameters, see [Create an OAuth2.0 Client with an Interactive Usage Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/db71f7e867ca46889dc1ae33b1f75f19.html "Users with an administrator role can create OAuth2.0 clients with an interactive usage purpose and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
+The API specifications are available at the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 
 
 
@@ -251,7 +299,7 @@ Description
 </td>
 <td valign="top">
 
-\[required\] Enter the technical name of the connection. The technical name can only contain alphanumeric characters and underscores \(\_\). It cannot start or end with underscore \(\_\). The name must be unique within the space.
+\[required\] Enter the technical name of the connection. The technical name can only contain alphanumeric characters and underscores \(\_\). It cannot start or end with underscore \(\_\). The name must be unique within the space. 
 
 > ### Note:  
 > Once the object is saved, the technical name can no longer be modified.
@@ -307,7 +355,9 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Default value: `none`
+\[optional\] Enter an existing package to facilitate transport between tenants \(see [Transporting Content Between Tenants](../Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\). 
+
+Default value: `none`
 
 </td>
 </tr>

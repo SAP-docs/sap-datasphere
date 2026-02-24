@@ -49,7 +49,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
 You can view data in the table, graphical view, SQL view, E/R model, analytic model, and transformation flow editors. The analytic model has an additional analytic data viewer \(see [Preview Data in an Analytic Model](Modeling-Data-in-the-Data-Builder/preview-data-in-an-analytic-model-9f1fa73.md)\). The data flow editor provides a limited data preview \(see [Preview Data in Data Flows](viewing-object-data-b338e4a.md#loiob338e4aa7e7e494eb68c383720ebfd3a__section_preview)\). 
 
 > ### Note:  
-> Users with the standard *DW Modeler* role can preview data in any object in their space. Users with the *DW Viewer* role can only preview data output by views with the *Expose for Consumption* switch enabled. For more information, see [Roles and Privileges by App and Feature](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the standard roles and the privileges needed to access apps, tools, and other features of SAP Datasphere.") :arrow_upper_right:.
+> Users with the standard *DW Modeler* role can preview data in any object in their space. Users with the *DW Viewer* role can only preview data output by views with the *Expose for Consumption* switch enabled. For more information, see [Privileges by App, Tool, Object, and Task](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the privileges needed to work with apps, tools, and features of SAP Datasphere.") :arrow_upper_right:.
 
 1.  To open the *Data Viewer* panel
     -   In the main toolbar, or in a diagram symbol menu, click <span class="SAP-icons-V5"></span> \(Data Viewer\), or

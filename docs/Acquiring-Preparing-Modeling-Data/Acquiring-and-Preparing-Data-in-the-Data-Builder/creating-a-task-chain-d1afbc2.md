@@ -20,8 +20,12 @@ To create task chains, you must have a scoped role that grants you access to a s
 
 To run and share task chains and configure email notifications, you must, in addition, have the following privileges:
 
--   *Data Warehouse Data Integration* \(`-RU-----`\) - To manually run task chains.
--   *Data Warehouse Data Integration* \(`-R--E---`\) - To schedule task chains.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
 -   *Data Warehouse Data Builder* \(`------S-`\) - To share task chains to other spaces.
 -   *User* \(`R-------`\) - To display and add notification recipients from a list of current tenant members, when setting up email notifications.
 
@@ -103,6 +107,8 @@ In addition to working with task chains in the editor, you can also:
     In addition to adding or replacing object tasks in a task chain, you can drag objects already on the task chain canvas to change the order in which tasks are run. By default, tasks in a task chain are displayed in a vertical direction, from top to bottom. On the left side of the task chain toolbar, the *Layout* menu provides options to let you change the orientation of tasks from Top to Bottom \(*Top-Bottom*\) to Left to Right \(*Left-Right*\).
 
 6.  In the properties panel, specify a name for the task chain.
+
+
 
     ![](images/TC_Full_Screen_7c00611.png)
 

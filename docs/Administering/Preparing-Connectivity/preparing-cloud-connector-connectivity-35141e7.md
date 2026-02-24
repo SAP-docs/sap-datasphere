@@ -27,6 +27,7 @@ Cloud Connector serves as a link between SAP Datasphere and your on-premise sour
 
 -   Remote tables \(only for SAP HANA on-premise via SAP HANA Smart Data Access\)
 
+-   API tasks \(when using a Generic HTTP connection to a system in your local network\)
 
 For an overview of connection types that require a Cloud Connector setup to be able to use any of these features, see [Preparing Connectivity for Connections](preparing-connectivity-for-connections-bffbd58.md).
 

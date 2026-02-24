@@ -149,5 +149,31 @@ The column will track the last date and time of the last change to an individual
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Index Type
+
+</td>
+<td valign="top">
+
+An index is an auxiliary data structure built on a database table column \(or multiple columns\) to enable faster lookups. 
+
+The possible values differ depending on the primary keys you have defined for your table:
+
+-   No key column is defined: \[read-only\] No index type
+-   One key column is defined: \[read-only\] Default value is *Inverted Value*
+-   Several key columns are defined: You can change the primary key index type either to *inverted Individual* \(default\) or to *Inverted Value*. Note that *Inverted Individual* is the default index type selected, as it fits most of the business cases. If you decide to change it, keep in mind that in comparison to an *Inverted Value* the *inverted Individual* index type is memory optimized with reduced memory footprint and may therefore be of high cost \(performance\) when columns are not very selective. In certain scenarios with Replication Flows \(and Data Flows\), this can lead to bad performance in inserting data into a target local table.
+
+    > ### Note:  
+    > *Inverted Value* index will generate internally a concat attribute, and therefore, the table size will increase.
+
+    For more information, see [2600076](https://me.sap.com/notes/2600076).
+
+
+
+
+</td>
+</tr>
 </table>
 

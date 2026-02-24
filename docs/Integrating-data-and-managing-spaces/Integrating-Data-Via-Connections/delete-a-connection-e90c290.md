@@ -12,7 +12,7 @@ Select one or more connections and delete them if they are not used.
 
 ## Prerequisites
 
-To create, edit, validate, or delete connections, you must have a scoped role that grants you access to a space with the following privileges:
+To create, edit, validate, and delete connections, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`CRUD----`\) - To create, edit, validate, or delete connections.

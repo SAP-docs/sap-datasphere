@@ -21,8 +21,12 @@ To create flows, you must have a scoped role that grants you access to a space w
 
 To run and schedule flows, you must, in addition, have the following privileges:
 
--   *Data Warehouse Data Integration* \(`-RU-----`\) - To run flows.
--   *Data Warehouse Data Integration* \(`-R--E---`\) - To schedule flows.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
 
 The *DW Modeler* and *DW Integrator* role templates together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
@@ -203,15 +207,15 @@ For more information about connection types that can be used for adding sources 
 
     You can choose between 2 content types:
 
-    -   *Template Type*: The data types used in the source table will be applied in the target table.
-    -   *Native Type* \(default\): Different data types will be applied to the target table. A string data type will be used for the date column in the target table, and a decimal data type will be used for the timestamp column to the target table.
+    -   *Template Type*: The data types used in the source table are applied to the target table. *DATE* and *TIME* columns keep their corresponding date and time data types.
+    -   *Native Type* \(default\): Different data types are applied to the target table based on the source metadata. *DATE* and *TIME* columns are represented as *string* using the native length provided by the source metadata.
 
     > ### Example:  
     > Your source table contains a date column that doesn't have values in ISO format. If you select the content type *Template Type* your replication flow run will fail with an error because the target table will expect data in ISO format. You'd better select the *Native Type* to run the replication flow, so that the data type will be turned into string.
 
     > ### Note:  
-    > -   This option is available only for replication flows created from wave 2025.04.
-    > -   It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
+    > This option is available only for replication flows created from wave 2025.04.It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
+    > 
     > -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify a Replication Flow](modify-a-replication-flow-a24c71f.md).
 
 
@@ -409,6 +413,11 @@ For more information about connection types that can be used for adding sources 
 
     > ### Note:  
     > If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
+
+    > ### Note:  
+    > -   If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
+    > 
+    > -   During table replication, the primary key order is preserved when it differs from the column order to prevent replication flow failures caused by key order mismatches.
 
 9.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 

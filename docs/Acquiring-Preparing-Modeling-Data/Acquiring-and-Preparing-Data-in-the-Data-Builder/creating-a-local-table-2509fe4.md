@@ -4,7 +4,7 @@
 
 # Creating a Local Table
 
-Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.
+Create a table and define columns to receive data. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.
 
 
 
@@ -156,7 +156,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[dimensions only\] \[SAP Business Data Cloud formation tenants only\] Allow users to include the table data in a package when transporting the table.
+    \[dimensions, text entities, relational datasets only\] \[SAP Business Data Cloud formation tenants only\] Allow users to include the table data in a package when transporting the table.
 
     This feature is intended to allow you to transport limited quantities of data for static and slowly changing dimensions, text entities, and relational datasets. If the local table is created by the import \(or if it already exists but is empty\), the transported data will be imported to it.
 

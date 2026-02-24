@@ -10,7 +10,7 @@ When you save a space, it is stored in the SAP Datasphere repository, which cont
 
 ## Prerequisites
 
-To save and deploy the changes you've made in your space, you must have a scoped role that grants you access to your space with the following privileges:
+To save and deploy the changes you've made to your space, you must have a scoped role that grants you access to your space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.

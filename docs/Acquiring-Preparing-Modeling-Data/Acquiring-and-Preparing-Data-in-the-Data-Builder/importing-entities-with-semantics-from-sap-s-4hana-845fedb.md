@@ -17,7 +17,6 @@ To import entities with semantics from SAP S/4HANA, you must have a scoped role 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
 -   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
 -   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.

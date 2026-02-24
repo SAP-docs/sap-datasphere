@@ -16,7 +16,7 @@ This topic contains the following sections:
 
 ## Prerequisites
 
-To enable audit logs for your space, you must have a scoped role that grants you access to your space with the following privileges:
+To enable audit logs for your space, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.

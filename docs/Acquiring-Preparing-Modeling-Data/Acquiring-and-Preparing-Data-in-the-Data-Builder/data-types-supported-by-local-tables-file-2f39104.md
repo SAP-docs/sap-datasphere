@@ -174,7 +174,7 @@ Supported
 </td>
 <td valign="top">
 
-Not Supported
+NotSupported
 
 </td>
 </tr>
@@ -182,23 +182,6 @@ Not Supported
 <td valign="top">
 
 hana.TINYINT
-
-</td>
-<td valign="top">
-
-Supported
-
-</td>
-<td valign="top">
-
-Not Supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Int16
 
 </td>
 <td valign="top">
@@ -287,23 +270,6 @@ Supported
 <td valign="top">
 
 Supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-UInt8
-
-</td>
-<td valign="top">
-
-Supported
-
-</td>
-<td valign="top">
-
-Not Supported
 
 </td>
 </tr>

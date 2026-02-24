@@ -2,7 +2,7 @@
 
 # Unlock a Locked Space
 
-When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space.
+When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.
 
 When a space is locked, users assigned to the space can continue to create and modify objects and save their changes in the repository, but they cannot deploy their changes to the run-time database.
 
@@ -12,7 +12,7 @@ When a space is locked, users assigned to the space can continue to create and m
 
 ## Prerequisites
 
-To manually lock or unlock your space, you must have a scoped role that grants you access to your space with the following privileges:
+To manually lock or unlock your space, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
@@ -51,6 +51,17 @@ In this situation, these actions are possible:
 -   An administrator can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right:\).
 -   A space administrator can disable audit logs or decrease the number of days audit logs are kept for \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
 
+
+
+
+## All Spaces Locked as Too Much Disk Storage is Consumed in the Tenant
+
+To protect your tenant from storage-related outages, all the spaces of a tenant whose disk usage has reached a critical threshold are automatically locked. A message informs you in the *Space Management* app and in each space page that all spaces are locked.
+
+In such a situation, the following actions are possible:
+
+-   A user with a space administrator can use the *Unlock* button on the *Space Management* page or on the space page to unlock the space so that space data can be deleted. They can delete the space if it is no more needed.
+-   A user with an administrator role can delete data or increase the tenant disk storage \(see [Manage Tenant Disk Storage](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/27d4c686dc9f49c5bd70d826232ee814.html "You should regularly monitor your tenant disk storage and delete unneeded data. To protect your tenant from storage-related outages, SAP Datasphere locks all spaces once a critical threshold of disk usage is attained. In such a case, to continue working with your tenant, you must either increase your tenant disk storage or delete unneeded data.") :arrow_upper_right:\).
 
 
 

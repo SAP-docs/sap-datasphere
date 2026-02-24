@@ -157,7 +157,7 @@ The definition of a remote table contains information about its connection.
 
 Local Tables
 
-See [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data.. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
+See [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 </td>
 <td valign="top">

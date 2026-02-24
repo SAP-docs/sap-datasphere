@@ -43,7 +43,7 @@ API Tasks
 </td>
 <td valign="top">
 
-You can use the connection to add API tasks to task chains.
+You can use the connection to add API tasks to task chains. 
 
 For more information, see [Run API Tasks in a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9a8489ed7443436197fbd8b8ffba61ab.html "Run tasks in a task chain that use a REST-based API to access external systems.") :arrow_upper_right:.
 
@@ -60,6 +60,12 @@ For more information, see [Run API Tasks in a Task Chain](https://help.sap.com/v
 -   If your system is an on-premise system in your local network, Cloud Connector is required for the connection between your system and SAP Datasphere.
 
     For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+-   If you're using Cloud Connector for your connection, ensure that the SAP BTP Connectivity service hosts are reachable \(depending on the region\).
+
+    For more information, see [Cloud Connector --\> Installation --\> Prerequisites --\> Network](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/prerequisites?version=Cloud#network) in the *SAP BTP Connectivity* documentation.
+
+-   If you're connecting to an external system in the internet and the system requires restricted access, ensure that the NAT IPs mentioned in [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud) \(*SAP BTP* documentation\) are reachable.
 
 
 
@@ -184,7 +190,7 @@ Description
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection.Read* privilege is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection* privilege with *Read* permission. 
 
 
 

@@ -10,7 +10,7 @@ Create a time table and dimension views in your space to provide standardized ti
 
 ## Prerequisites
 
-To work with the time table and dimensions in your space, you must have a scoped role that grants you access to your space with the following privileges:
+To work with the time table and dimensions in your space, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-R------`\) - To open your space in the *Space Management* tool.

@@ -19,7 +19,7 @@ This topic contains the following sections:
 
 ## Prerequisites
 
-To assign users to your space and manage them from the *Users* area in your space details page, you must have a scoped role that grants you access to your space with the following privileges:
+To assign users to your space and manage them from the *Users* area in your space details page, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.

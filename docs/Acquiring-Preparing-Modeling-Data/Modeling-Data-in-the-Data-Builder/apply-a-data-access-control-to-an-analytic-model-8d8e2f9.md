@@ -22,7 +22,9 @@ For detailed information about defining and using data access controls, see [Sec
 
 3.  Click the background of the canvas to ensure that the analytic model is selected and open the *Data Access Control* list in its side panel.
 
-    The list contains data access controls applied to the object.
+    The list contains data access controls applied directly to the object, and those:
+
+    -   *Applied via Sources* - When a data access control is applied to a source in the object's lineage it will appear in this sub-list.
 
 4.  Click <span class="FPA-icons-V3"></span> \(Add\) to open the *Select Data Access Control* dialog, choose the data access control to apply, and click *Select*.
 

@@ -1134,7 +1134,7 @@ Israel
 </td>
 <td valign="top">
 
-Not supported
+Supported
 
 </td>
 <td valign="top">

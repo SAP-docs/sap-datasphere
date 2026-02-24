@@ -38,9 +38,9 @@ A combination of a global role and a scoped role:
 
 -   A scoped role that grants you access to the space or spaces to import into with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+    -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
     -   *Spaces* \(`--U-----`\) - To update your spaces and their properties.
     -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
-    -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
 
 
 The *DW Space Administrator* role template, for example, grants this combination of privileges.

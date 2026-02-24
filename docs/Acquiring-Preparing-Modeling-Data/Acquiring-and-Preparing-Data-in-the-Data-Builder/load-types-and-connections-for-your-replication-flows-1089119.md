@@ -332,7 +332,7 @@ See also [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-f
 </td>
 <td valign="top">
 
-Supported
+Not supported
 
 </td>
 <td valign="top">
@@ -356,12 +356,12 @@ See also [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-f
 </td>
 <td valign="top">
 
-Not Supported
+Supported if Delta Capture is ON; Not supported if Delta Capture is OFF.
 
 </td>
 <td valign="top">
 
-Supported
+Supported if Delta Capture is ON; Not supported if Delta Capture is OFF.
 
 </td>
 <td valign="top">

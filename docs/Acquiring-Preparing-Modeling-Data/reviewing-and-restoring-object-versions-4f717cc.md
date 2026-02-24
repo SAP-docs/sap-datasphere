@@ -199,7 +199,7 @@ Yes
 </td>
 <td valign="top">
 
-Not supported 
+Yes 
 
 </td>
 </tr>
@@ -318,7 +318,7 @@ To export a version of an object:
 
     The *Version History* dialog opens, listing up to the last 500 versions of the object in reverse order.
 
-2.  Find the version you want to export and click <span class="FPA-icons-V3"></span> \(More\)*Export to CSN/JSON File*.
+2.  Find the version you want to export and click <span class="FPA-icons-V3"></span> \(More\)** \> *Export to CSN/JSON File*.
 
     The contents of the editor are exported to <code><i class="varname">&lt;Object_Name&gt;</i>.json</code> and downloaded to your browser. For information about working with these files, see [Importing and Exporting Objects in CSN/JSON Files](Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md).
 
@@ -335,7 +335,7 @@ If your object type supports restoring a previous version \(see [Introduction to
 
     The *Version History* dialog opens, listing up to the last 500 versions of the object in reverse order.
 
-2.  Find the version you want to restore and click <span class="FPA-icons-V3"></span> \(More\)*Open in New Tab*.
+2.  Find the version you want to restore and click <span class="FPA-icons-V3"></span> \(More\)** \> *Open in New Tab*.
 
     The version opens in read-only format in a new tab, allowing you to review it in detail.
 
