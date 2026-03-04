@@ -60,6 +60,7 @@ The detailed documentation of the Data Sharing Cockpit REST APIs is available on
 
 
 
+
 ## Task Chains
 
 Run task chains.
@@ -70,14 +71,31 @@ To run a task chain, use the POST request with the API <code>api/v1/datasphere/t
 https://<tenant_url>/api/v1/datasphere/tasks/chains/<space_id>/run/<objectid>
 ```
 
+**Prerequisite:** The task chain must be active and deployed before it can be run.
+
+**Header:** Set `Content-Type: application/json` in the request header.
+
+**Request Body:** You can optionally pass input parameters for the task chain. This works only if the task chain is defined with input parameters. If no input parameters are needed, you can send an empty JSON object `{}`.
+
 Example:
 
-> ### Sample Code:  
+> ### Sample Request:
+> ```
+> {
+>   "inputParameters": {
+>     "param1": "value1",
+>     "param2": "value2"
+>   }
+> }
+> ```
+
+> ### Sample Response:
 > ```
 > {
 >   "logId": 9999999
 > }
 > ```
+
 
 
 
