@@ -75,6 +75,7 @@ In addition to working with task chains in the editor, you can also:
 -   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
 -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
+-   Run task chains using a REST API \(see [Manage Tasks Using REST APIs](manage-tasks-using-rest-apis-274f273.md)\).
 
 
 
@@ -351,6 +352,18 @@ In addition to working with task chains in the editor, you can also:
     -   *Define New Setting for This Task*: Select another *Apache Spark Application* that fits your needs.
 
     For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: and [Override the Default Settings to Run Your Transformation Flow (in a File Space)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e5c4ac8ab3bf4573b86cd4f4f3118c16.html "Update the maximum amount of compute resources that the file space can consume to run a transformation flow.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Apache Spark Z-Order Columns
+    
+    </td>
+    <td valign="top">
+    
+    \[File Space Only\]: When you select Optimize as an activity, you have the option to use Z-ORDER COLUMNS. For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: 
     
     </td>
     </tr>

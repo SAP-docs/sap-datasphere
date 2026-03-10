@@ -17,7 +17,7 @@ The *Run with Settings* option provides you with the ability to simulate a run, 
         > ### Note:  
         > A simulated run will not take the truncate function into account.
 
-        *Generate Explain Plan*: The Explain Plan shows how the selected transformation flow run will be executed and provides a compiled plan in tabular form, listing the operators used to execute a query along with relevant information about them. This lightweight tool can be generated in case of transformation flow run simulation failure or out-of-memory errors when the SQL Analyzer Plan file fails.
+        *Generate Explain Plan*: The Explain Plan shows how the selected transformation flow will be run and provides a compiled plan in tabular form, listing the operators used to run a query along with relevant information about them. This lightweight tool can be generated in case of transformation flow run simulation failure or out-of-memory errors when the SQL Analyzer Plan file fails.
 
         To generate an Explain Plan, you must have the *DWC\_RUNTIME* privilege added to your *DW Administrator* role or custom role. For more information, see [Authorization and Permissions](authorization-and-permissions-e5f9e81.md).
 

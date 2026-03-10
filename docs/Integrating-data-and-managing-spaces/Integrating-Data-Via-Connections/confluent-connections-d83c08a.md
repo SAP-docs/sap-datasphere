@@ -165,7 +165,7 @@ Set the property to *true* if your platform is on-premise. The default is *false
 Select the location ID for the Cloud Connector instance that is set up for connecting to the Kafka brokers.
 
 > ### Note:  
-> To select another location ID than the default location, *Connection* privilege with *Read* permission is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection* privilege with *Read* permission. 
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
 
 
 
@@ -757,7 +757,7 @@ Select the location ID for the Cloud Connector instance that is set up for conne
 Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection* privilege with *Read* permission is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection* privilege with *Read* permission. 
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
 
 
 

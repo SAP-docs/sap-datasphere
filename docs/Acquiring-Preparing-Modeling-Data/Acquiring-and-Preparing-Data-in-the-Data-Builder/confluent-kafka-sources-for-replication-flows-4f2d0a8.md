@@ -114,7 +114,7 @@ When you select a replication object, its properties, including schema-related i
         </td>
         <td valign="top">
         
-        When the property *Include Technical Key* is selected, it ensures that the \_\_message\_id column is included as part of the selected table and treated as the primary key. If you deselect it, you hide the current primary key and a new one must be selected.
+        When the property *Include Technical Key* is selected, it ensures that the \_\_message\_id column is included as part of the selected table and treated as the primary key. If you deselect it, you hide the current primary key, and a new one must be selected.
         
         </td>
         </tr>
@@ -126,7 +126,7 @@ When you select a replication object, its properties, including schema-related i
         </td>
         <td valign="top">
         
-        By default, any settings that you have made at replication object level are kept intact if you make a different setting at replication flow level. To change this, enable this option. 
+        By default, any settings that you have made at the replication object level are kept intact if you make a different setting at the replication flow level. To change this, enable this option. 
         
         </td>
         </tr>

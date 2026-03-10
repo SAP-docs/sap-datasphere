@@ -35,7 +35,7 @@ When sharing HANA local tables to file space for consumption in a transformation
     <tr>
     <td valign="top">
     
-    SMALLDECIMAL
+    DECIMALFLOAT
     
     </td>
     <td valign="top">

@@ -78,7 +78,11 @@ For information about dimensions, see [Create a Dimension to Categorize Data](cr
     >     -   A *Dimension* acting as its directory - The hierarchy name attribute in the \(source\) hierarchy entity must be mapped to the primary key column in the \(target\) dimension.
     >     -   Any *Dimension* \(other than the data node dimension\) providing nodes to the hierarchy - The appropriate node type values columns in the \(source\) hierarchy must be mapped to the key columns in the \(target\) *Dimension*.
 
-5.  Click *< \(Back\)* in the table editor \(or use the breadcrumbs in the side panel\) to return to the list of associations, where the new association now appears.
+5.  \[optional, fact-to-dimension association\] Select *Apply Dimension Data Access Controls to Fact* to apply any data access controls attached to the dimension directly to the fact data.
+
+    Applying the dimension data access control directly to the fact data will resolve an issue where users may see `null` aggregate values for records that they do not have permission to view.
+
+6.  Click *< \(Back\)* in the table editor \(or use the breadcrumbs in the side panel\) to return to the list of associations, where the new association now appears.
 
 
 

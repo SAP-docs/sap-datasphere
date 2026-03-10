@@ -38,7 +38,7 @@ Not Supported
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 </tr>

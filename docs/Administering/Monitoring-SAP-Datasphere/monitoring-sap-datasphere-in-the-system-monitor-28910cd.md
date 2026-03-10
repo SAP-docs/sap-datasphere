@@ -10,6 +10,7 @@ This topic contains the following sections:
 
 -   [Prerequisites](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_prereq_system_monitor)
 -   [Access the System Monitor](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_access_system_monitor)
+-   [Monitor Disk Storage Usage](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_monitor_disk_storage_usage)
 -   [Monitor Disk and Memory Assignment](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_irf_214_1cc)
 -   [Monitor Tasks](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_qyl_sc4_ccc)
 -   [Monitor Statements](monitoring-sap-datasphere-in-the-system-monitor-28910cd.md#loio28910cded17a42a0bf16225309cb8bf6__section_t2q_sc4_ccc)
@@ -48,6 +49,118 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
 
 > ### Note:  
 > SAP Datasphere is integrated into SAP Cloud ALM for health monitoring, which enables you to check the health of one or more SAP Datasphere tenants from the *Health Monitoring* app in SAP Cloud ALM. See [Health Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/health-monitoring) in the *SAP Cloud ALM - Application Help*.
+
+
+
+<a name="loio28910cded17a42a0bf16225309cb8bf6__section_monitor_disk_storage_usage"/>
+
+## Monitor Disk Storage Usage
+
+1.  Review your SAP Datasphere tenant disk storage capacity and its current utilization in the SAP HANA database and identify risks of storage-related outages in the *Disk Storage Usage* card.
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Type*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the following usage types:
+
+    -   DATA - Data stored in all SAP Datasphere spaces.
+    -   TRACE and LOG - Trace and log data needed for SAP HANA internal processes.
+
+    > ### Note:  
+    > If the SAP HANA database is setup in single volume, the 3 types DATA, TRACE and LOG are stored on the same volume. If SAP HANA database is setup in multi-volume, the 2 types DATA and TRACE are stored on one volume and LOG is stored on another volume.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Usage*
+    
+    </td>
+    <td valign="top">
+    
+    Shows in a bar chart the following amounts out of the tenant's total amount of disk storage:
+
+    -   The amount of reserved data \(in grey\), which represents 15%.
+    -   The amount of data used by all types of data \(DATA, TRACE, LOG\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Used*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of disk storage already used.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Usable*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of disk storage that can be used.
+
+    > ### Note:  
+    > To prevent your tenant from storage-related outages, we reserve 15% of the tenant's total amount of disk storage as a buffer. Therefore:
+    > 
+    > -   The amount in the *Usable* column represents 85% of the tenant's total amount of disk storage \(displayed in the *Total* column\).
+    > -   SAP Datasphere locks all spaces if the entire amount in the *Usable* column is used \(see [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.") :arrow_upper_right:\).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Total*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total amount of disk storage that you've chosen for your tenant \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
+
+    To protect your tenant from storage-related outages, we reserve 15% of the tenant's total amount of disk storage as a buffer.
+    
+    </td>
+    </tr>
+    </table>
+    
+    > ### Note:  
+    > The card uses the SAP HANA system view M\_DISKS, which reflects the effective file system sizes \(see [M\_DISKS System View](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-reference-guide/m-disks-system-view)\).
+
+2.  To manage your tenant and prevent it from storage-related outages, see [Manage Tenant Disk Storage](../manage-tenant-disk-storage-27d4c68.md).
 
 
 
@@ -102,7 +215,7 @@ For example, you can see all the errors \(such as failed tasks and out-of-memory
     </td>
     <td valign="top">
     
-    Total amount of disk storage used out of the total amount of disk storage. You can see a breakdown of this amount in the card *Disk Storage Used*.
+    Total amount of disk storage used out of the total amount of usable disk storage. You can see a breakdown of this amount in the card *Disk Storage Used*.
     
     </td>
     </tr>
@@ -204,7 +317,7 @@ To investigate issues:
 
 
 > ### Note:  
-> If your SAP Datasphere tenant is enabled for job & automation monitoring in SAP Cloud ALM, you can monitor the tasks run or scheduled in SAP Datasphere \(except for a task which is a child of another task\), from the *Job & Automation Monitoring* app in SAP Cloud ALM. See [Job & Automation Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/job-automation-monitoring) in the *SAP Cloud ALM - Application Help*.
+> If your SAP Datasphere tenant is enabled for job & automation monitoring in SAP Cloud ALM, you can monitor the tasks run or scheduled in SAP Datasphere, from the *Job & Automation Monitoring* app in SAP Cloud ALM. See [Job & Automation Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/job-automation-monitoring) in the *SAP Cloud ALM - Application Help*.
 
 
 
@@ -829,7 +942,7 @@ Number of CPU cores utilized by the Spark application. It helps you assess wheth
 </td>
 <td valign="top">
 
-Total compute time used by the Spark application \(in ms\). It gives you insight into the duration of the application's execution, which is useful for performance analysis and resource planning.
+Total compute time used by the Spark application \(in ms\). It gives you insight into the duration of the application's run, which is useful for performance analysis and resource planning.
 
 </td>
 </tr>

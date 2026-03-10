@@ -30,7 +30,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 ## Context
 
-In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows, and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the execution details of the flows.
+In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows, and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the run details of the flows.
 
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
@@ -45,7 +45,7 @@ For more information and points to consider when using replication flows, see al
 
 1.  In the SAP Datasphere, navigate to *Data Integration Monitor* \> *Flows*.
 
-    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the execution details of the flows. For some flows, you can create, edit, delete, pause or resume a schedule, or assign a schedule to your name under *Schedule*, and you can select several data flows to group the scheduling actions. For more information about scheduling, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
+    You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the run details of the flows. For some flows, you can create, edit, delete, pause or resume a schedule, or assign a schedule to your name under *Schedule*, and you can select several data flows to group the scheduling actions. For more information about scheduling, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
 
     The list of deployed flows shows the following information:
 
@@ -137,10 +137,10 @@ For more information and points to consider when using replication flows, see al
     </td>
     <td valign="top">
     
-    Provides information on the total execution time of the last flow run.
+    Provides information on the total run time of the last flow run.
 
     > ### Note:  
-    > The initialization time for executing a flow takes an average of 20 seconds even with smaller data loads, causing longer runtime for the flow. It is calculated using the task start time and task end time. For replication flow, it does not depend on the initial load duration.
+    > The initialization time for running a flow takes an average of 20 seconds even with smaller data loads, causing longer runtime for the flow. It is calculated using the task start time and task end time. For replication flow, it does not depend on the initial load duration.
 
 
     
@@ -199,7 +199,7 @@ For more information and points to consider when using replication flows, see al
     You can personalize the columns you want to display clicking on :gear:
 
     > ### Note:  
-    > Parallel execution is not supported: You can't run two identical flows at the same time. You need to wait until the first run is completed before you can launch another one. Otherwise your second run gets the status *Failed \(Run Already in Progress\)*.
+    > Parallel run is not supported: You can't run two identical flows at the same time. You need to wait until the first run is completed before you can launch another one. Otherwise your second run gets the status *Failed \(Run Already in Progress\)*.
 
 2.  To see the run details of a flow, click <span class="SAP-icons-V5"></span> \(Details\) for the relevant flow.
 

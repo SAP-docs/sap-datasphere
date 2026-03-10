@@ -98,7 +98,7 @@ Displays the time and date when the object replication ended. For example, *Init
 <tr>
 <td valign="top">
 
-Object Thread Count for Delta Loads
+Maximum Parallel Delta Transfers
 
 </td>
 <td valign="top">

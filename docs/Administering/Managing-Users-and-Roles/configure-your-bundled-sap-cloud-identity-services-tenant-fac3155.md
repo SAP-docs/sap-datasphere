@@ -134,8 +134,12 @@ You then need to configure authentication to work with your SAP Cloud Identity S
 As a prerequisite, an SAP Cloud Identity Services tenant must be provisioned for the selected SAP Datasphere tenant.
 
 1.  Access the configuration dialog one of two ways:
+
     1.  From the SAP Cloud Identity Services tenant provisioning progress bar, select *Continue*.
     2.  From the *My Tenants* page, go to the tenant you are bundling, then select <span class="FPA-icons-V3"></span> ** \> *Configure Authentication*.
+
+    > ### Note:  
+    > If you are using an existing SAP Cloud Identity Services tenant, make sure you use the newly created application which has the prefix of "SAP Datasphere" and contains the domain name of your SAP Datasphere tenant.
 
 2.  Select a *User Attribute*.
 

@@ -368,7 +368,7 @@ Before you can use the connection for replication flows, the following is requir
     > ### Note:  
     > This table lists the minimum per-table privileges required for initial and delta loads. Equivalent schema-level privileges \(for example, `SELECT`, `ALTER` on the source schema\) also work because they cover all tables in the schema. Database roles like `db_datareader`, which grant `SELECT` on all tables in the database can also work, depending on your security requirements.
 
-    To enable delta loading, a database schema with the same name as the database user must exist, replication objects \(shadow tables, procedures, sequences\) are created under this user schema. If it does not exist, create it. The database user needs the required privileges on this schema to create and manage replication objects. You can create the necessary user and schema with the following commands:
+    To enable delta loading, a database schema with the same name as the database user must exist, replication objects \(shadow tables, procedures, sequences\) are created under this user schema. If it does not exist, create it. The database user needs the required privileges on this schema to create and manage replication objects. You can create the necessary user and schema with the following commands: 
 
     ```
     -- Create login / user

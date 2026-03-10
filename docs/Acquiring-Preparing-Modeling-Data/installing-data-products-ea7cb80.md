@@ -12,7 +12,7 @@ Use the catalog *Data Product* collection to view data products for use in your 
 
 ## Prerequisites
 
-Your SAP Datasphere system must be part of an SAP Business Data Cloud formation \(see [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:\).
+Your SAP Datasphere system must be part of an SAP Business Data Cloud formation \(see [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then the SAP Business Data Cloud administrator can install intelligent applications to SAP Datasphere and activate data packages to allow SAP Datasphere modelers to work with data products.") :arrow_upper_right:\).
 
 A user with an administrator role must choose the spaces to which the data product can be installed \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
 

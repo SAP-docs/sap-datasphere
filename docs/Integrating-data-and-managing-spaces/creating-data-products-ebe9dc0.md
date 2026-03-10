@@ -6,6 +6,8 @@
 
 In addition to the SAP-managed data products made available to you by activating data packages, you can create your own data products with data coming from SAP BW, SAP IBP, or any other source that you connect to SAP Datasphere.
 
+![](images/Create_Data_Products_5e17f9f.png)
+
 
 
 ## Create a Data Product

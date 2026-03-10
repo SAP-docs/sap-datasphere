@@ -119,7 +119,7 @@ In this situation, both the SAP Business Data Cloud Cockpit and the SAP Analytic
 
 For more information about SAP Business Data Cloud, see:
 
--   [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "Users with an SAP Business Data Cloud administrator role can install intelligent applications to SAP Datasphere and activate data packages to allow modelers to work with data products.") :arrow_upper_right:
+-   [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then the SAP Business Data Cloud administrator can install intelligent applications to SAP Datasphere and activate data packages to allow SAP Datasphere modelers to work with data products.") :arrow_upper_right:
 -   [Integrate SAP Business Data Cloud Provisioned Systems](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/d6ec89febd8a40dbb7fb461b60bef289.html) \(in the *SAP Business Data Cloud* documentation\)
 
 

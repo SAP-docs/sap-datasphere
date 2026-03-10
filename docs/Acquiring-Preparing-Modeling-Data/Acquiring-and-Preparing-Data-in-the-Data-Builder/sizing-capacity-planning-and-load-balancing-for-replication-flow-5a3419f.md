@@ -34,6 +34,9 @@ Every replication object has housekeeping and data transfer work orders assigned
 
 Each replication flow counts towards the total possible maximum of 16 parallel jobs per tenant. This means that if you have 16 replication flow jobs, you can process up to 80 work orders for data transfer and 80 work orders for housekeeping. With one thread per work order, the maximum total number of threads is 160 for the source and 160 for the target. The number of replication flows that can run simultaneously varies as it depends on how many threads each flow consumes. In the simplest case, if each replication flow requires only one data transfer thread, up to 80 flows can run in parallel. Conversely, a replication flow with one object but with many partitions, or a single large flow with many objects and partitions, might consume most or all the available threads by itself. As partitions finish complete data transfer, fail with transient or permanent errors, or move to delta load, threads are released, and additional flows can start. Note that the replication flow jobs are shared by all the replication flows in the tenant.
 
+> ### Note:  
+> Billing is based on the duration of the replication flow job, rather than the volume of records processed. To reduce associated costs, consider adjusting the Delta Load Frequency. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)
+
 For more information, see [3649926](https://me.sap.com/notes/3649926)
 
 > ### Note:  

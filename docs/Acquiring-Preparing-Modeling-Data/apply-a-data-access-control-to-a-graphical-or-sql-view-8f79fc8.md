@@ -26,6 +26,7 @@ For detailed information about defining and using data access controls, see [Sec
 
     The list contains data access controls applied directly to the object, and those:
 
+    -   *Applied via Dimensions* - When a modeler creates an association from a fact to a dimension, they can select the *Apply Dimension Data Access Controls to Fact* option, and it will appear in this sub-list.
     -   *Applied via Sources* - When a data access control is applied to a source in the object's lineage it will appear in this sub-list.
 
 4.  Click <span class="FPA-icons-V3"></span> \(Add\) to open the *Select Data Access Control* dialog, choose the data access control to apply, and click *Select*.

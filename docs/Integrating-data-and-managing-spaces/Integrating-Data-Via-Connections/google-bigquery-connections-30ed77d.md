@@ -165,11 +165,6 @@ Enter the ID of the Google Cloud project to which you want to connect. You can f
 
 A location can be a region, for example `us-west1`or `asia-east1`, or a multi-region, for example `EU`.
 
-> ### Note:  
-> If you provide an invalid location, the connection validation still passes, but failures will happen when you're using the connection in the *Data Builder*.
-
-
-
 </td>
 </tr>
 </table>

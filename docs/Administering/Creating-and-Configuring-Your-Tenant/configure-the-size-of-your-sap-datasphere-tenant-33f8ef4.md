@@ -454,6 +454,9 @@ Displays the number of execution hours available for data integration applicatio
 > ### Note:  
 > If you exceed the available execution hours, your data integration processes \(such as replication flow runs\) continues running to avoid interrupting critical integration scenarios, which can result in additional costs \(depending on your plan\).
 
+> ### Note:  
+> Billing is based on the duration of the replication flow job, rather than the volume of records processed. To reduce associated costs, consider adjusting the Delta Load Frequency. For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:
+
 
 
 </td>

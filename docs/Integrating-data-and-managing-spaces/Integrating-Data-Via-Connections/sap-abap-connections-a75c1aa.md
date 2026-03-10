@@ -67,12 +67,11 @@ You can access the following data:
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
 
--   standard and custom CDS view entities that are exposed using the SQL service from SAP BTP, ABAP environment, orSAP S/4HANA Cloud, respectively
+-   standard and custom CDS view entities that are exposed using the SQL service from SAP BTP ABAP environment or SAP S/4HANA Cloud, respectively
 
     For more information, see:
 
     -   [Using ABAP SQL Services for Accessing ABAP-Managed Data](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
-    -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:
 
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
@@ -98,7 +97,7 @@ You can use remote tables imported from the connection either to access data dir
 
 You can access the following data:
 
--   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud or SAP S/4HANA \(**recommended for federation scenarios**\)
+-   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud, SAP BTP ABAP environment, or SAP S/4HANA \(**recommended for federation scenarios**\)
 
     For more information, see:
 
@@ -459,7 +458,7 @@ The default is *false*.
 \[optional\] Select a location ID. 
 
 > ### Note:  
-> To select another location ID than the default location, *Connection* privilege with *Read* permission is required. The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection* privilege with *Read* permission. 
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
 
 
 

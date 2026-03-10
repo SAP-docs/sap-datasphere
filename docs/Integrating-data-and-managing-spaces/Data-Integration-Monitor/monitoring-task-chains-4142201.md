@@ -26,6 +26,15 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 
 
+## Context
+
+In addition to monitor task chains in the *Data Integration Monitor*, you can also:
+
+-   List logs for a task chain and read task log details using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   Read task log details and read the task log history for a task chain using a REST API \(see [Manage Tasks Using REST APIs](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/274f2736465c4c48a091c675880502a2.html "You can run task chains and review task logs using REST APIs.") :arrow_upper_right:\).
+
+
+
 <a name="loio4142201ec1aa49faad89a688a2f1852c__section_nnb_tlb_t2c"/>
 
 ## Monitoring Task Chains

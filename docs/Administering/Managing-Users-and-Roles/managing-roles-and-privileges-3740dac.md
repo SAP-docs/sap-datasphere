@@ -29,6 +29,15 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 
 
+## Context
+
+In addition to working with roles in the *Security* tool, you can also:
+
+-   List global roles, list users assigned to a global role, and add or remove users from global roles using the `datasphere` command line interface \(see [Manage Global Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7db69de1d27f422fb153e80680b28335.html "Users with a DW Administrator role (or with equivalent privileges) can list and read global roles and add users to and remove users from them via the command line.") :arrow_upper_right:\).
+-   List, read, create, update, and delete scoped roles, and add or remove users or spaces from scoped roles using the `datasphere` command line interface \(see [Manage Scoped Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/85085a35a58a4589bc121fb94efc4876.html "Users with a DW Administrator role (or with equivalent privileges) can create, read, update, and delete scoped roles via the command line.") :arrow_upper_right:\).
+
+
+
 <a name="loio3740dacbc2794f33bb5d8d42216cc3bc__section_wp5_sr4_hfc"/>
 
 ## Introduction to Roles and Privileges

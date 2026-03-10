@@ -2,16 +2,18 @@
 
 # Installing Intelligent Applications
 
+An SAP Business Data Cloud administrator can install intelligent applications to the SAP Datasphere and SAP Analytics Cloud tenants in the formation.
 
 
-An SAP Business Data Cloud administrator can install intelligent applications to the SAP Datasphere and SAP Analytics Cloud tenants in the formation \(see [Installing Intelligent Applications](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/35b64d44efd54502a935f67ba66ffd4e.html) in the *SAP Business Data Cloud* documentation\).
+
+![](images/Install_Intelligent_Applications_9d8148a.png)
+
+For more information, see [Installing Intelligent Applications](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/35b64d44efd54502a935f67ba66ffd4e.html) in the *SAP Business Data Cloud* documentation\).
 
 When an intelligent application is installed:
 
--   SAP-managed spaces are created in SAP Datasphere to contain the intelligent application content.
+-   SAP-managed spaces are created in SAP Datasphere to contain the intelligent application content \(see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](ingestion-spaces-and-other-sap-business-data-cloud-spaces-8390855.md)\).
 -   Replication flows, tables, views, and analytic models are created in these spaces to ingest, prepare and expose the required data to SAP Analytics Cloud.
-
-![](images/Install_Intelligent_Applications_9d8148a.png)
 
 SAP Datasphere users can work with intelligent application content in the following ways:
 

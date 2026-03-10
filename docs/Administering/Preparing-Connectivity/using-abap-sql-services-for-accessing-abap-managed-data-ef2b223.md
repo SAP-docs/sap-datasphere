@@ -30,13 +30,13 @@ For more information, see the *ABAP Cloud* documentation for *SAP S/4HANA Cloud 
 
 ## Data Replication With Replication Flows
 
-In SAP S/4HANA Cloud, a business user and administrator must perform the following steps to prepare data replication with replication flows:
+In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administrator must perform the following steps to prepare data replication with replication flows:
 
 -   Check the prerequisites and constraints that must be considered before using the SQL service.
 
     For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints?version=s4hana_cloud) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
 
--   To expose CDS view entities using the SQL service, an SAP S/4HANA Cloud business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
+-   To expose CDS view entities using the SQL service, a business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
 
     In the *Enabled Operations* area of the service binding, the business user must select access type *REPLICATE* to enable data replication.
 
@@ -44,7 +44,7 @@ In SAP S/4HANA Cloud, a business user and administrator must perform the followi
 
 -   To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
 
-    1.  An SAP S/4HANA Cloud business user has created a custom communication scenario in the ABAP Development Tools.
+    1.  A business user has created a custom communication scenario in the ABAP Development Tools.
 
         When filling out the authorizations for authorization object `S_SQL_VIEW` in the communication scenario, note the following:
 
@@ -74,7 +74,7 @@ You can now create a connection to consume the ABAP SQL service for data replica
 
 ## Data Federation With Remote Tables
 
-In SAP S/4HANA Cloud or SAP BTP, ABAP environment, a business user and administrator must perform the following steps to prepare data federation with remote tables:
+In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administrator must perform the following steps to prepare data federation with remote tables:
 
 1.  Check the prerequisites and constraints that must be considered before using the SQL service.
 
@@ -88,7 +88,7 @@ In SAP S/4HANA Cloud or SAP BTP, ABAP environment, a business user and administr
 
 3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
 
-    1.  An SAP S/4HANA Cloud business user has created a custom communication scenario in the ABAP Development Tools.
+    1.  A business user has created a custom communication scenario in the ABAP Development Tools.
 
         When filling out the authorizations for authorization object `S_SQL_VIEW` in the communication scenario, note the following:
 

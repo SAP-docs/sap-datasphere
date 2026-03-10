@@ -543,6 +543,25 @@ See [Importing SAP and Partner Business Content from the Content Network](https:
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Connection*
+
+</td>
+<td valign="top">
+
+`-R------`
+
+</td>
+<td valign="top">
+
+-   *Read*: To select a Cloud Connector location ID when creating or editing a connection.
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -678,11 +697,9 @@ Allows access to remote and run-time objects:
 See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right: and [Acquiring Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/1f15a29a25354ec28392ab10ca4e9350.html "Users with a modeler role can import data directly into the Data Builder from connections and other sources, and use flows to replicate, extract, transform and load data.") :arrow_upper_right:
 
 > ### Note:  
-> The following feature needs an additional permission:
+> In addition to these permissions, selecting a Cloud Connector location ID in the connection configuration requires the *Connection.Read* privilege.
 > 
-> Select a location ID - *Connection.Read*
-> 
-> The privilege is neither included in the *DW Integrator* nor in the *DW Space Administrator* role. If you need to select a location ID, ask your tenant administrator to either assign your user to a global role that is based on the *DW Administrator* role or to assign your user to a custom global role \(with license type SAP Datasphere\) that includes the required *Connection.Read* privilege.
+> If you need to select a location ID, ask your tenant administrator to assign your user to a global role \(with license type SAP Datasphere\) that includes the *Connection.Read* privilege.
 
 
 

@@ -48,7 +48,7 @@ Metrics provide the record count for source and target tables used in the flow. 
 
 -   `PYTHON_TOTAL_BATCHES`
 
-    Total number of batches processed in the given task. It provides insight into how many times the batch processing logic was executed. A high number of batches might indicate a large dataset, fine-grained batch sizes, or efficient parallel processing.
+    Total number of batches processed in the given task. It provides insight into how many times the batch processing logic was ran. A high number of batches might indicate a large dataset, fine-grained batch sizes, or efficient parallel processing.
 
 -   `PYTHON_MAX_BATCH_SIZE`
 

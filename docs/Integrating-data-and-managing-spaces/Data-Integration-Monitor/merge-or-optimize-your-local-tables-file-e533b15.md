@@ -33,6 +33,8 @@ You can optimize or update your local table \(file\) data:
         > -   If queries are read-heavy on the tables \(large scans\), more frequent optimization will improve the performance.
         > -   For very large tables \(TBs–PBs\), these can benefit from partition-level optimization on a schedule.
         > -   You must consider the cost behind the optimize task: Running off-peak \(nights/weekends\) helps reduce cluster costs.
+        > 
+        > An Optimize task can be coupled with the z-ordering feature.
 
     -   *Schedule*: Create, edit, or delete a schedule to automate, optimize, or merge tasks on regular basis. See [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
@@ -83,4 +85,22 @@ Navigate to the local table \(files\) run details screen, click *Merge Table* or
 If you have started a merge task, you can cancel it if needed.
 
 From the details screen of the relevant local table \(file\), in the *Logs* section, select the running task and click *Cancel*. The task will stop the merge action, but it will stop it without rolling back the data that has already been processed. The status of the task will be changed to *Failed \(Canceled\)*.
+
+
+
+## Define Z-Order Columns While Running an Optimize Task
+
+While running an optimize task for your local table \(file\), you define z-order columns to use the z-order clustering technique to co-locate the data by columns. This operation does not make data-related changes to the delta table, so a read before and after this operation has the same results. The co-locality is used to reduce the amount of data that needs to be read. You can specify multiple columns for Z-ORDER BY as a comma-separated list. However, the effectiveness of the locality decreases with each additional column.
+
+To define Z-order columns,
+
+1.  From the *Local Tables \(file\)* Monitor, select the relevant table.
+2.  Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the table.
+3.  Go to the *Settings* tab
+4.  Navigate to *Optimize Settings*
+5.  Click *Define Z-Order Columns* \(multiple selection is possible\)
+6.  Select the relevant columns
+7.  Click *OK*
+
+Next run of an optimize task will apply the z-order columns.
 

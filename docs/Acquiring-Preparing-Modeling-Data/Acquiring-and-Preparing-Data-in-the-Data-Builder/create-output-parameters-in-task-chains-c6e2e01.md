@@ -106,13 +106,13 @@ To utilize output parameters in task chains, you must have task objects that hav
     </tr>
     </table>
     
-    ![](images/Map_output_parameters_01_924c45a.png)
+    ![](images/Map_output_parameters_d914a77.png)
 
 6.  Press *OK*. This will save the output parameters that have been mapped to the task object or continue to ignore the parameters you do not want to have considered in the status at runtime.
 
 7.  The mapped output parameter of a task can be used as a follow-up input parameter of the following task. For example,
 
-    ![](images/Output_param_example_01_276a487.png)
+    ![](images/Output_param_example_e9acc7d.png)
 
     The SQL procedure has an output parameter, SALES\_ORG. The output parameter of the SQL procedure will become the input parameter, SALES\_ORG, of the following transformation flow task in the task chain.
 
@@ -168,7 +168,7 @@ To utilize output parameters in task chains, you must have task objects that hav
     </tr>
     </table>
     
-    ![](images/exposed_output_parameters_01_87dca98.png)
+    ![](images/exposed_output_parameters_3a17096.png)
 
 10. To expose an output parameter, click the <span class="FPA-icons-V3"></span> \(Output Parameters\) icon.
 

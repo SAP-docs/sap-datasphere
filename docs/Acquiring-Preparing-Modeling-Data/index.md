@@ -231,7 +231,6 @@
         -   [Apply a Data Access Control to an Analytic Model](Modeling-Data-in-the-Data-Builder/apply-a-data-access-control-to-an-analytic-model-8d8e2f9.md)
         -   [Create a Global Filter in an Analytic Model](Modeling-Data-in-the-Data-Builder/create-a-global-filter-in-an-analytic-model-e9924dc.md)
         -   [Preview Data in an Analytic Model](Modeling-Data-in-the-Data-Builder/preview-data-in-an-analytic-model-9f1fa73.md)
-        -   [Sharing Analytic Models to Other Spaces](Modeling-Data-in-the-Data-Builder/sharing-analytic-models-to-other-spaces-8b84bd8.md)
     -   [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md)
 -   [Modeling Data in the Business Builder](Buisiness-Builder/modeling-data-in-the-business-builder-3829d46.md)
     -   [Example for Using the Business Builder](Buisiness-Builder/example-for-using-the-business-builder-925f6a6.md)

@@ -20,7 +20,7 @@ This topic contains the following sections:
 
 If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA \(on-premise\), see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md) \(recommended for federation scenarios\).
 
-If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud, see [Using ABAP SQL Services for Accessing ABAP-Managed Data](using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md) \(recommended for federation scenarios\).
+If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud or SAP BTP ABAP environment, see [Using ABAP SQL Services for Accessing ABAP-Managed Data](using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md) \(recommended for federation scenarios\).
 
 If you want to federate and replicate data from ABAP-based on-premise systems using SAP HANA smart data integration, the following is required before you can use the connection \(legacy\):
 

@@ -22,8 +22,8 @@ This topic contains the following sections:
 -   [System Monitor Tool Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_system_monitor)
 -   [Data Sharing Cockpit Tool Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_data_sharing_cockpit)
 -   [System Tool Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_system)
--   [External Data Consumption Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_data_consumption)
--   [Command Line Interface Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_cli)
+-   [External Data Consumption](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_data_consumption)
+-   [The Command Line Interface](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_cli)
 
 
 
@@ -198,7 +198,7 @@ The *Catalog Administrator* global role and the *DW Viewer* role template \(used
 
 Connect, manage and monitor Catalog source systems
 
-See [Connecting Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Source systems are connected to the catalog automatically through an SAP Business Data Cloud formation or manually via the Metadata Extractions page. Once connected, the source systems synchronize with the catalog, and their objects are then added as assets, making them discoverable by all users.") :arrow_upper_right: and [Managing and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0bdc7d3a6bcb44a09245cb21360d9775.html "As a user with the catalog administrator role, you can manage and monitor data sources that are connected to the catalog. You can ensure that the catalog contains the most up-to-date content and troubleshoot any issues that arise.") :arrow_upper_right:
+See [Connecting Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Source systems are connected to the catalog automatically through an SAP Business Data Cloud formation or manually through SAP Datasphere or the SAP Business Data Cloud cockpit on the Metadata Extractions page. After connection, the catalog monitors these systems and extracts metadata for their objects. This process make the objects discoverable in the catalog.") :arrow_upper_right: and [Managing and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0bdc7d3a6bcb44a09245cb21360d9775.html "As a user with the catalog administrator role, you can manage and monitor data sources that are connected to the catalog. You can ensure that the catalog contains the most up-to-date content and troubleshoot any issues that arise.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1120,7 +1120,29 @@ The *DW Space Administrator* role template, for example, grants these privileges
 <tr>
 <td valign="top">
 
+Create database users
+
+See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:
+
+</td>
+<td valign="top">
+
+To create database users, you must have a scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
+-   *Space Files* \(`-R------`\) - To view objects in your space.
+
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Add an HDI container and access its objects in your space
+
+See [Add an HDI Container and Access its Objects in Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d55da5514b240ff8d3a970bf7dc6705.html "To access calculation views and other HDI objects as sources for your views and data flows, you must add the HDI container to your SAP Datasphere space.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1744,7 +1766,7 @@ See [Administering SAP Datasphere](../administering-sap-datasphere-70ee87c.md).
 
 <a name="loio2d8b7d04dcae402f911d119437ce0a74__section_external_data_consumption"/>
 
-## External Data Consumption Privileges
+## External Data Consumption
 
 To consume data exposed by SAP Datasphere in clients, tools and apps, you must have a scoped role that grants you access to a space with the following privileges:
 
@@ -1757,7 +1779,7 @@ See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509
 
 <a name="loio2d8b7d04dcae402f911d119437ce0a74__section_cli"/>
 
-## Command Line Interface Privileges
+## The Command Line Interface
 
 For information about privileges needed to work with the "datasphere" command line interface, see [Accessing SAP Datasphere via the Command Line](https://help.sap.com/docs/SAP_DATASPHERE/d0ecd6f297ac40249072a44df0549c1a/3f9a42ccde6b4b6aba121e2aab79c36d.html?state=DRAFT&version=DEV).
 

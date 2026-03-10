@@ -10,13 +10,13 @@ You can create a global filter for your analytic model.
 
 ## Context
 
-When you add a global filter, it will be applied to the whole analytic model. It is a static filter that filters the data before it gets consumed in the story. Only one global filter can be defined.
+When you add a global filter, it will be applied to the whole analytic model. It is a static filter that filters the data before it gets consumed in the story. You can define only one global filter. Only for analytic models which are build on top of another analytic model you can define more that one filter.
 
 
 
 ## Procedure
 
-1.  You can create a new global filter by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Filterunder *Filter* in the properties panel.
+1.  You can create a new global filter by clicking the background of the canvas and choosing <span class="FPA-icons-V3"></span> Add Filter under *Filters* in the properties panel.
 
 2.  Enter a name for your filter.
 
@@ -29,5 +29,5 @@ When you add a global filter, it will be applied to the whole analytic model. It
 
 ## Results
 
-The filter will be shown in the *Filter* section of the properties panel.
+The filter will be shown in the *Filters* section of the properties panel.
 

@@ -360,7 +360,7 @@ For more information about connection types that can be used for adding sources 
     <tr>
     <td valign="top">
     
-    Object Thread Count for Delta Loads
+    Maximum Parallel Delta Transfers
     
     </td>
     <td valign="top">

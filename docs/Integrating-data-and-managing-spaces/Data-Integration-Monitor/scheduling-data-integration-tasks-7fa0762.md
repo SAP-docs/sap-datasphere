@@ -29,6 +29,9 @@ To run recurring scheduled tasks on your behalf, you need to authorize the job s
 > ### Note:  
 > Your consent is valid for 365 days. If your consent will expire within the next four weeks, when you attempt to schedule new tasks, SAP Datasphere displays a message warning that your consent is approaching its expiration date. After the consent has expired, a log message informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears four weeks before the expiry of consent.
 
+> ### Note:  
+> Your consent is valid for 365 days. If your consent will expire within the next 30 days, you will automatically receive an email notification letting you know that your consent is approaching its expiration date. After the consent has expired, a log message informs you that future tasks you have scheduled will no longer run. Renew your consent to resume task runs according to their original schedules.
+
 
 
 <a name="loio7fa07621d9c0452a978cb2cc8e4cd2b1__section_h4g_n51_t2c"/>

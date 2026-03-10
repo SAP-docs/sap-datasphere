@@ -22,6 +22,15 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 
 
+## Context
+
+In addition to working with users in the *Security* tool, you can also:
+
+-   List, create, update, and delete them using the `datasphere` command line interface \(see [Manage Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
+-   List, read, create, modify, or delete them and add them to roles via the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
+
+
+
 <a name="loio4fb82cb61ca84d8389e9cb18d94dab26__section_wfq_rrf_bfb"/>
 
 ## Creating Users

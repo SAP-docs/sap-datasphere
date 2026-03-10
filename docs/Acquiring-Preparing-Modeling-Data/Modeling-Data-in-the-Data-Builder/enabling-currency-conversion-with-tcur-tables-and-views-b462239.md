@@ -47,13 +47,11 @@ Once the objects are created, you will be able to convert currency values into a
     -   `TCURT` - Currency text
 
 3.  If needed, rename the business names of each object.
-
 4.  Click *Create*.
 
     The creation process runs in the background and you can keep working in SAP Datasphere. You’re notified when the creation of the objects has been completed.
 
 5.  Once the creation of the objects is finished, do one of the following:
-
     -   If you've chosen *Manual*, local tables and views have been created and you now need to enter currency conversion data manually or for example import the data from a CSV file in a local table.
 
     -   If you've chosen a connection as a source, local tables, views, data flows and - for an SAP ABAP connection - remote tables have been created. You now need to run the data flows to fill the tables with data. See [Run a Data Flow](../Acquiring-and-Preparing-Data-in-the-Data-Builder/run-a-data-flow-20e5be3.md).
@@ -76,7 +74,6 @@ Once you’ve created the currency conversion objects in your space, you can sha
 > As a general rule, you can share objects \(including TCUR\* tables\) to another space by following another procedure. For more information, see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click +, then *Currency Conversion Views*. The *Currency Conversion Views* dialog opens.
-
 2.  Click *Share*.
 
     > ### Note:  
