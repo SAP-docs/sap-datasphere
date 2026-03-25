@@ -7,7 +7,7 @@ SAP Datasphere supports a wide range of data types for your columns. Once a tabl
 
 
 > ### Note:  
-> The SAP Cloud Application Programming Model \(CAP\) recommends to use the Core Data Services built-in types \(see [Built-in Types](https://cap.cloud.sap/docs/cds/types)\), but it is also possible to use the SAP HANA-specific data types, which all have a “`hana.`” prefix \(see [SAP HANA-Specific Data Types](https://cap.cloud.sap/docs/advanced/hana#hana-types)\).
+> The SAP Cloud Application Programming Model \(CAP\) recommends to use the Core Data Services built-in types \(see [Built-in Types](https://cap.cloud.sap/docs/cds/types)\), but it is also possible to use the SAP HANA-specific data types, which all have a “`hana.`” prefix \(see [SAP HANA-Specific Data Types](https://cap.cloud.sap/docs/guides/databases/hana-native#hana-types)\).
 
 
 

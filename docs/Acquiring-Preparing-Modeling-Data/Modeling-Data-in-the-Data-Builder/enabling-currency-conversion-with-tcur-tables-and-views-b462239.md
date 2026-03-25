@@ -35,16 +35,122 @@ Once the objects are created, you will be able to convert currency values into a
     -   An SAP ABAP connection - Local tables, views, data flows and remote tables will be imported.
     -   A space name - Views will be created. Data is read from the shared local currency conversion tables that views are based on.
 
-    You can see that the objects listed below will be generated for each object type: local tables \(unless the tables are shared from another space\), views, and, depending on the connection you've selected, data flows and remote tables:
+    The objects listed below will be generated for each object type: local tables \(unless the tables are shared from another space\), views, and, depending on the connection you've selected, data flows and remote tables:
 
-    -   `TCURV` - Exchange rate types
-    -   `TCURW` - Exchange rate type text
-    -   `TCURX` - Decimal places in currencies
-    -   `TCURN` - Quotations
-    -   `TCURR` - Exchange rates
-    -   `TCURF` - Conversion factors
-    -   `TCURC` - Currency codes
-    -   `TCURT` - Currency text
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Table
+    
+    </th>
+    <th valign="top">
+
+    View
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Currency Codes / `SAP.CURRENCY.TABLE.TCURC`
+    
+    </td>
+    <td valign="top">
+    
+    Currency Codes View / `SAP.CURRENCY.VIEW.TCURC`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Conversion Factors / `SAP.CURRENCY.TABLE.TCURF`
+    
+    </td>
+    <td valign="top">
+    
+    Conversion Factors View / `SAP.CURRENCY.VIEW.TCURF`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Quotations / `SAP.CURRENCY.TABLE.TCURN`
+    
+    </td>
+    <td valign="top">
+    
+    Quotations View / `SAP.CURRENCY.VIEW.TCURN`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Exchange Rates / `SAP.CURRENCY.TABLE.TCURR`
+    
+    </td>
+    <td valign="top">
+    
+    Exchange Rates View / `SAP.CURRENCY.VIEW.TCURR`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Currency Text / `SAP.CURRENCY.TABLE.TCURT`
+    
+    </td>
+    <td valign="top">
+    
+    Currency Text View / `SAP.CURRENCY.VIEW.TCURT`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Exchange Rate Types / `SAP.CURRENCY.TABLE.TCURV`
+    
+    </td>
+    <td valign="top">
+    
+    Exchange Rate Types View / `SAP.CURRENCY.VIEW.TCURV`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Exchange Rate Type Text / `SAP.CURRENCY.TABLE.TCURW`
+    
+    </td>
+    <td valign="top">
+    
+    Exchange Rate Type Text View / `SAP.CURRENCY.VIEW.TCURW`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Decimal Places in Currencies / `SAP.CURRENCY.TABLE.TCURX`
+    
+    </td>
+    <td valign="top">
+    
+    Decimal Places in Currencies View / `SAP.CURRENCY.VIEW.TCURX`
+    
+    </td>
+    </tr>
+    </table>
+    
+    > ### Note:  
+    > You can use these same entities with a `CONVERT_CURRENCY` function in a standard calculated column or in an SQL view \(see [CONVERT\_CURRENCY](https://help.sap.com/viewer/7c78579ce9b14a669c1f3295b0d8ca16/Cloud/en-US/d22d746ed2951014bb7fb0114ffdaf96.html) in the *SAP HANA* documentation\).
 
 3.  If needed, rename the business names of each object.
 4.  Click *Create*.

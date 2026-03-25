@@ -25,7 +25,7 @@
         -   [Catalog Asset Details](catalog-asset-details-afccc58.md)
 -   [Acquiring Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md)
     -   [Semantic Onboarding](Acquiring-and-Preparing-Data-in-the-Data-Builder/semantic-onboarding-4c9e45e.md)
-    -   [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)
+    -   [Importing Objects with Semantics from SAP Systems](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-systems-361729b.md)
         -   [Importing Entities with Semantics from SAP S/4HANA](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-s-4hana-845fedb.md)
         -   [Importing Entities with Semantics from SAP BW∕4HANA or SAP BW Bridge](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-bw-4hana-or-sap-bw-br-7bcd321.md)
     -   [Importing Tables and Views from Sources](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)

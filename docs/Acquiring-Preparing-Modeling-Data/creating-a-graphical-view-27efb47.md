@@ -617,7 +617,7 @@ In addition to working with views in the editor, you can also:
     </td>
     <td valign="top">
     
-    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. 
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](data-pipeline-analyzer-54fd00d.md) 
     
     </td>
     </tr>

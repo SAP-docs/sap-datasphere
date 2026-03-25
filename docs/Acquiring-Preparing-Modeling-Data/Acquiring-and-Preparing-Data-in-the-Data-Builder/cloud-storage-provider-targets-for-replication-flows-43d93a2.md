@@ -176,6 +176,30 @@ Orient
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Create Large Files
+
+</td>
+<td valign="top">
+
+When replicating data to a supported cloud object store target using the *Parquet*file format, you can enable *Create Large Files*to generate fewer, larger files during the initial load phase. This option reduces the number of output files written to the target during replication.
+
+*Supported Target Connections and Load Types*
+
+-   SAP HANA Cloud, Data Lake Files \(Initial and Delta\)
+-   Amazon Simple Storage Service \(Initial Only\)
+-   Google Cloud Storage \(Initial Only\)
+-   Google BigQuery \(Initial Only\)
+
+> ### Note:  
+> File size and row group size cannot be configured. In addition, *Create Large Files* and *Suppress Duplicates* cannot be enabled at the same time.
+
+
+
+</td>
+</tr>
 </table>
 
 

@@ -11,7 +11,8 @@ Use an *SAP HANA* connection to access data from a remote SAP HANA database \(on
 This topic contains the following sections:
 
 -   [Supported Features](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_usage)
--   [Prerequisites](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites)
+-   [Prerequisites for SAP HANA on-premise](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_op_prerequisites)
+-   [Prerequisites for SAP HANA Cloud](sap-hana-connections-e6b63f1.md#loioe6b63f176d3640609adcf06297fb37e9__HANA_Cloud_prerequisites)
 -   [Configuring Connection Properties \(SAP HANA Cloud\)](sap-hana-connections-e6b63f1.md#loio27aebc8432aa419da75c5fc650981f24)
 -   [Configuring Connection Properties \(SAP HANA on-premise\)](sap-hana-connections-e6b63f1.md#loio77cec6a1e8d04371a791658e641dc0d5)
 
@@ -81,9 +82,9 @@ You can use the connection to add source objects to a data flow.
 
 
 
-<a name="loioe6b63f176d3640609adcf06297fb37e9__HANA_prerequisites"/>
+<a name="loioe6b63f176d3640609adcf06297fb37e9__HANA_op_prerequisites"/>
 
-## Prerequisites
+## Prerequisites for SAP HANA on-premise
 
 
 
@@ -132,6 +133,20 @@ For SAP HANA \(on-premise\), before you can use the connection for data flows an
 
     For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
+
+
+
+<a name="loioe6b63f176d3640609adcf06297fb37e9__HANA_Cloud_prerequisites"/>
+
+## Prerequisites for SAP HANA Cloud
+
+
+
+### General
+
+A user with an administrator role has uploaded the TLS server certificate `DigiCert Global Root CA` \(`DigiCertGlobalRootCA.crt.pem`\).
+
+For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
 
 <a name="loio27aebc8432aa419da75c5fc650981f24"/>
 

@@ -177,7 +177,7 @@ To ensure the content import from SAP Cloud Transport Management uses an existin
 
 1.  In the side navigation area of the target tenant, click *Transport* \> *Import*.
 2.  Click *Settings* from the menu bar.
-3.  In the *Settings* dialog box, under **User Authorization to Import from SAP Cloud Transport Management**, select a user whose rights will be used to import content. Click *OK*.
+3.  In the *Settings* dialog box, under **User Authorization to Import from SAP Cloud Transport Management**, select the checkbox to grant permission to use your user rights to import content from SAP Cloud Transport Management. Click *OK*.
 
 All users in this tenant will now use your configured user rights and privileges when importing content from SAP Cloud Transport Management.
 

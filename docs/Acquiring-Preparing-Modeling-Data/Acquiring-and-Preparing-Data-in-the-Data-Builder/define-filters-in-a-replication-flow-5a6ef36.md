@@ -138,4 +138,7 @@ Define filters to delimit the scope of your replication flow.
 
 7.  Enter a name for your filter at the top of the screen, then click *OK*.
 
+    > ### Note:  
+    > During the data replication, the filters are processed directly in the source system, and only the result is transferred to SAP Datasphere.
+
 

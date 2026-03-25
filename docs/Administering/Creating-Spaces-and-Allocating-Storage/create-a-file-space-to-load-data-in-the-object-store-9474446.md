@@ -345,19 +345,19 @@ Users with an administrator role can create spaces, allocate compute resources a
     </th>
     </tr>
     <tr>
-    <td valign="top">
+    <td valign="top" rowspan="2">
     
     LOCAL\_TABLE
     
     </td>
     <td valign="top">
     
-    DELETE\_DATA, MERGE\_FILES, OPTIMIZE\_FILES, TRUNCATE\_FILES, VACUUM\_FILES, FIND\_AND\_REPLACE
+    MERGE\_FILES, OPTIMIZE\_FILES,
     
     </td>
     <td valign="top">
     
-    300
+    100
     
     </td>
     <td valign="top">
@@ -365,6 +365,23 @@ Users with an administrator role can create spaces, allocate compute resources a
     \[read-only\] Indicates the application that is used by default to run all the activities listed via a task chain or the *Local Tables \(File\)* monitor.
 
     See [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    TRUNCATE\_FILES\_WITH\_FILTER, TRUNCATE\_FILES, VACUUM\_FILES, DELETE\_INBOUND\_BUFFER, FIND\_AND\_REPLACE
+    
+    </td>
+    <td valign="top">
+    
+    001
+    
+    </td>
+    <td valign="top">
+    
+     
     
     </td>
     </tr>
@@ -381,7 +398,7 @@ Users with an administrator role can create spaces, allocate compute resources a
     </td>
     <td valign="top">
     
-    400
+    100
     
     </td>
     <td valign="top">

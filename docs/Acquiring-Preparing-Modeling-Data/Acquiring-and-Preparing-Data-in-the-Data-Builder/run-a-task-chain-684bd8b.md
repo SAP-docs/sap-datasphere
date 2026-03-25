@@ -29,4 +29,7 @@ For a task chain to be available for you to run, it must have already been deplo
 
     For a task chain that includes one or more parallel task branches, after the task run is complete, it may be possible that one or more tasks may be reported in an error state \(in each branch\). For example, in branches where completion of tasks is evaluated with the ANY operator. In that case, if you restart or retry the task chain, SAP Datasphere will then restart previously-failed tasks and run all subsequent tasks that had not yet run. In particular, this means that if a failed task is in a parallel branch which was evaluated with the ANY operator, those tasks in the same branch which had run successfully will not be run again. Only those tasks that have failed will be retried or run again.
 
+    > ### Note:  
+    > BW process chains cannot be run in task chains by a technical user. The technical user in Datasphere does not have a mapped user on the BW side. Please use an approved business user role to run BW process chains in a task chain.
+
 

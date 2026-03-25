@@ -515,15 +515,11 @@ The actions to install or uninstall data products appear based on the privileges
 </tr>
 </table>
 
-You can choose a data product's API to view its details page, where you can learn more about it. Information is separated into the following areas:
+You can select a data product's API to view its details page and learn more about it. Information is separated into the following areas:
 
--   API properties that include all the same high-level information found in the data product's *Details* list plus other information, such as its open resource discovery \(ORD\) identifier.
--   Available objects \(or entities\) and their container path and primary key. If the primary key is missing, API cannot be installed.
-
-    You can also view more details of a particular object, by choosing the *View Columns* link. This information includes the object's name, type, valid values, and more.
-
--   Documentation that provides a more detailed description of the API, links that can give you more information on how to use it, and extensibility information.
--   Actions available for the API appear in a toolbar at the top of the page.
+-   The header section shows the version. A toolbar with available actions is also available.
+-   The *Overview* tab shows a description of the API, a *Properties* section that includes the same high-level information found in details list of the data product, plus additional information such as the open resource discovery \(ORD\) identifier, and a *Details* section, that shows the available objects \(or entities\) and their container path and primary key. If the primary key is missing, the API can't be installed. To see more details of a particular object, choose the *View Columns* link. This information includes the object's name, type, valid values, and more.
+-   The *Documentation* tab provides a more detailed description of the API, links to more information on how to use it, and extensibility information.
 
 
 
@@ -547,7 +543,7 @@ Choose the *Open Impact and Lineage* button in the header to see a diagram for t
 -   *Lineage* is displayed to the left of the analyzed object \(or below it\). It shows objects that the analyzed object uses as sources. It allows you to trace errors back to the root cause.
 -   *Impact* is displayed to the right of the analyzed object \(or above it\). It shows objects that use the analyzed object as a source. It allows you to understand the impact of changes on dependent objects.
 
-![Impact and Lineage Analysis window showing a flowchart of related objects with numbered highlights.](images/Impact_and_Lineage_Analysis_Diagram_for_a_Data_Product_6493ef3.png)
+![Impact and Lineage Analysis diagram showing the an analyzed object with its impact and lineage expanded.](images/Impact_and_Lineage_Analysis_Diagram_for_a_Data_Product_6493ef3.png)
 
 This impact and lineage analysis diagram for an installed data product contains the following features.
 
@@ -613,21 +609,17 @@ You can expand or collapse a container, using the <span class="FPA-icons-V3">
 <tr>
 <td valign="top">
 
-\(4\) Unauthorized or Authorized Object
+\(4\) Link Types
 
 </td>
 <td valign="top">
 
-Unauthorized and authorized objects appear in the lineage or impact of the analyzed object.
+The lines connecting all containers and objects demonstrate the impact and lineage flow.
 
--   Unauthorized objects are unpublished objects that you don't have access permission to in the source system. They are represented with the :lock: icon.
-
--   Authorized objects are published and can be discovered in the catalog. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
-
-    To learn more about an object, select it to display its context menu. Choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties. If the object is available in the catalog, you can choose the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to open the details page for the object.
+-   Solid lines demonstrate how data moves and transforms between objects.
+-   Dashed lines provide traceability from BW Data Transfer Processes \(DTPA\) to their associated Transformation \(TRFN\) objects across all BW systems. You can visualize how one or more transformations are connected to and used within Data Transfer Processes \(DTPs\), which provides complete visibility into data movement and transformation dependencies for compliance and impact analysis. 
 
 
-You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 
 </td>
 </tr>
@@ -642,6 +634,27 @@ You can show or hide the objects on either side of any object by choosing the <s
 The analyzed object appears as a light blue object. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(Story\), <span class="FPA-icons-V3"></span> \(Transformation\), or :package: data product\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
 
 To learn more review the details of the analyzed object without closing the diagram, select it to display its context menu, and choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties.
+
+You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\(6\) Unauthorized or Authorized Object
+
+</td>
+<td valign="top">
+
+Unauthorized and authorized objects appear in the lineage or impact of the analyzed object.
+
+-   Unauthorized objects are unpublished objects that you don't have access permission to in the source system. They are represented with the :lock: icon.
+
+-   Authorized objects are published and can be discovered in the catalog. The icon in the top-left corner represents the object's type \(for example, <span class="FPA-icons-V3"></span> \(View\)\). The icons in the bottom-right corner represent the object's publication and functional statuses \(for example, <span class="FPA-icons-V3"></span> \(Published\) and <span class="FPA-icons-V3"></span> \(Current\).
+
+    To learn more about an object, select it to display its context menu. Choose the <span class="SAP-icons-V5"></span> \(Show Details\) icon to preview the object's properties. If the object is available in the catalog, you can choose the <span class="FPA-icons-V3"></span> \(Open Object Details\) icon to open the details page for the object.
+
 
 You can show or hide the objects on either side of any object by choosing the <span class="SAP-icons-V5"></span> \(Show Next Level\) or <span class="SAP-icons-V5"></span> \(Hide All\) on the object.
 

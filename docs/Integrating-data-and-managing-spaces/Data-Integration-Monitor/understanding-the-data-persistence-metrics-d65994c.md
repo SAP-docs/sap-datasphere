@@ -4,7 +4,7 @@
 
 # Understanding the Data Persistence Metrics
 
-Check the data persistence metrics to decide on design change to prevent performance issues
+Check the data persistence metrics to decide on design changes to prevent performance issues.
 
 > ### Note:  
 > The data persistence task has run successfully.

@@ -320,7 +320,7 @@ You can act on objects in the list in the following ways:
 
     -   [Creating a Local Table from a CSV File](../Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)
     -   [Importing Objects from a CSN/JSON File](importing-objects-from-a-csn-json-file-23599e6.md)
-    -   [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)
+    -   [Importing Objects with Semantics from SAP Systems](../Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-objects-with-semantics-from-sap-systems-361729b.md)
     -   [Import Remote Tables](../Acquiring-and-Preparing-Data-in-the-Data-Builder/import-remote-tables-fd04efb.md)
     -   [Process Source Changes for Several Remote Tables](../Acquiring-and-Preparing-Data-in-the-Data-Builder/process-source-changes-for-several-remote-tables-4e0be16.md)
 

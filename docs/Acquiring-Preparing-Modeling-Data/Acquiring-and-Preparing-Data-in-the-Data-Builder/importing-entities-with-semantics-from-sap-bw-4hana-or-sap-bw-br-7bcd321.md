@@ -66,7 +66,7 @@ You can import entities from the following types of sources:
 
 ## Procedure
 
-1.  Open the wizard from *Semantic Onboarding*, the *Repository Explorer*, or the *Data Builder*:
+1.  Open the wizard from the *Repository Explorer*, *Semantic Onboarding*, or the *Data Builder*:
 
     -   In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
     -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
@@ -91,7 +91,7 @@ You can import entities from the following types of sources:
     <tr>
     <td valign="top">
     
-    Select the connection to the source you want to import from from the list, and then click *Next Step*.
+    Select the connection to the source you want to import from the list, and then click *Next Step*.
 
     You can use the *Filter By* pane on the left to filter the connections by space.
     

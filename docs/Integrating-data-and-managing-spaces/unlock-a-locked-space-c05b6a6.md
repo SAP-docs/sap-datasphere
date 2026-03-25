@@ -27,7 +27,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 <a name="loioc05b6a6d06db427dbdd3041d61fd5840__section_ywh_f13_w5b"/>
 
-## Space Locked as it Has Exceeded its Assigned Storage
+## Space Exceeds its Assigned Storage
 
 If a space exceeds its allocations of memory or disk storage, it will be locked until a space user deletes the excess data or an administrator assigns additional storage.
 
@@ -41,7 +41,7 @@ In this situation, these actions are possible:
 
 <a name="loioc05b6a6d06db427dbdd3041d61fd5840__section_qw3_gc3_w5b"/>
 
-## Space Locked as Audit Logs Consume Too Much Disk Storage
+## Space Audit Logs Consume Too Much Disk Storage
 
 If the total size of all audit logs across all spaces has reached 40% of the tenant disk storage, the system automatically locks any spaces - and deactivate any database analysis users - whose audit logs consume more than 30% of the total audit log size.
 
@@ -54,7 +54,7 @@ In this situation, these actions are possible:
 
 
 
-## All Spaces Locked as Too Much Disk Storage is Consumed in the Tenant
+## Tenant Storage Threshold Exceeded
 
 To protect your tenant from storage-related outages, all the spaces of a tenant whose disk usage has reached a critical threshold are automatically locked. A message informs you in the *Space Management* app and in each space page that all spaces are locked.
 
@@ -67,7 +67,7 @@ In such a situation, the following actions are possible:
 
 <a name="loioc05b6a6d06db427dbdd3041d61fd5840__section_hvr_m23_w5b"/>
 
-## Lock a Space
+## Space Locked Manually
 
 If you want to put a space on hold and you are a space administrator, you can manually lock it.
 

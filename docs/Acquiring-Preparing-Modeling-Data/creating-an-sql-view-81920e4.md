@@ -546,6 +546,7 @@ In addition to working with views in the editor, you can also:
     Open the AI-assisted generation menu: 
 
     -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generate Semantic Information](Modeling-Data-in-the-Data-Builder/generate-semantic-information-2fc1d26.md)\).
+    -   Generate SQL - Prompt the editor to generate SQL code for you \(see  <?sap-ot O2O class="- topic/xref " href="d1530656d42f44f68b6265666ec35531.xml" text="" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/ozf1771957807009/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/41b334bb536d4c5b9706be635bedb4e5.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
 
 
     
@@ -585,7 +586,7 @@ In addition to working with views in the editor, you can also:
     </td>
     <td valign="top">
     
-    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. 
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](data-pipeline-analyzer-54fd00d.md) 
     
     </td>
     </tr>

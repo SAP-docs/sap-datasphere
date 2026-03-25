@@ -21,7 +21,7 @@ Users must be provisioned to SAP Datasphere before they can be granted privilege
 
 -   Your identity provider \(see [Managing User Identity and Authentication](managing-user-identity-and-authentication-48b5c8b.md)\).
 -   The SCIM API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
--   The command line \(see [Manage Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "Users with a DW Administrator role (or with equivalent privileges) can list, create, update, and delete users via the command line.") :arrow_upper_right:\).
+-   The command line \(see [Managing Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "You can use the datasphere command line interface to list, create, update, and delete users via the command line.") :arrow_upper_right:\).
 -   The <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\) app \(see [Create a User](create-a-user-58d4b24.md)\).
 
 

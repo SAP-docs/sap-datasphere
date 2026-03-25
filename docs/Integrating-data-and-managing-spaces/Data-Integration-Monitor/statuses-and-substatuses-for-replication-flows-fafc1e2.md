@@ -98,6 +98,18 @@ The data is being loaded, but one or more objects could not be loaded. A new att
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Running \(Waiting Objects\)
+
+</td>
+<td valign="top">
+
+The data is being loaded but one or more objects are waiting for flow source data to be ready. This is the case if your source table is a target local table from another replication flow that is still running.
+
+</td>
+</tr>
 </table>
 
 **Combination of Statuses and Substatuses for a Replication Flow Running with Load Type: Initial and Delta or Delta Only**

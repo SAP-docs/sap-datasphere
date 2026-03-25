@@ -50,7 +50,11 @@ Displays the time spent running the task. For example, *Initial Load Duration*.
 </td>
 <td valign="top">
 
-Displays the number of records replicated into SAP Datasphere. For example, *Initial Load Operation* will consider the records loaded at the initial load whereas *Delta Load Operation* will consider delta changes due to insert, update or delete operations.
+-   Displays the number of records replicated into SAP Datasphere. For example, *Initial Load Operation* will consider the records loaded at the initial load whereas *Delta Load Operation* will consider delta changes due to insert, update or delete operations.
+-   *Staged Operation Count*shows how many records were staged before being merged into the final large file when Create Large Files is enabled. See [Cloud Storage Provider Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
+
+
+
 
 </td>
 </tr>
@@ -918,7 +922,73 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-4.  Retry Information:
+4.  Staging Information:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Staging Information
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Staged Bytes
+    
+    </td>
+    <td valign="top">
+    
+    Total data volume staged before merging into the final large file.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Staged Processing Time
+    
+    </td>
+    <td valign="top">
+    
+    Time taken to stage the data before the merge step.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Staged Record Count
+    
+    </td>
+    <td valign="top">
+    
+    number of records staged before being merged into the final large file.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Last Data Staged At
+    
+    </td>
+    <td valign="top">
+    
+    Shows the date and time when a task partition last staged data before it was merged into a larger target data file.
+    
+    </td>
+    </tr>
+    </table>
+    
+5.  Retry Information:
 
 
     <table>
@@ -984,7 +1054,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-5.  Retry Log:
+6.  Retry Log:
 
 
     <table>
@@ -1050,7 +1120,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-6.  Retry Reasons:
+7.  Retry Reasons:
 
 
     <table>

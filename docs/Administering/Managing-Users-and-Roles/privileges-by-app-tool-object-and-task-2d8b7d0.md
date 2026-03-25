@@ -242,7 +242,7 @@ Privileges
 
 Import objects from SAP systems
 
-See [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/361729b49aea4519a6e8910b035dbf6c.html "Users with the DW Modeler role (or equivalent privileges) can use the Import Entities wizard to import semantically-rich objects from your SAP S/4HANA Cloud, SAP S/4HANA on-premise, SAP BW∕4HANA, and SAP BW bridge connections. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:
+See [Importing Objects with Semantics from SAP Systems](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/361729b49aea4519a6e8910b035dbf6c.html "You can use the Import Entities wizard to import semantically-rich objects from selected SAP systems. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -480,7 +480,7 @@ Privileges
 
 Import objects with semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge
 
-See [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/361729b49aea4519a6e8910b035dbf6c.html "Users with the DW Modeler role (or equivalent privileges) can use the Import Entities wizard to import semantically-rich objects from your SAP S/4HANA Cloud, SAP S/4HANA on-premise, SAP BW∕4HANA, and SAP BW bridge connections. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:
+See [Importing Objects with Semantics from SAP Systems](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/361729b49aea4519a6e8910b035dbf6c.html "You can use the Import Entities wizard to import semantically-rich objects from selected SAP systems. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:
 
 </td>
 <td valign="top">

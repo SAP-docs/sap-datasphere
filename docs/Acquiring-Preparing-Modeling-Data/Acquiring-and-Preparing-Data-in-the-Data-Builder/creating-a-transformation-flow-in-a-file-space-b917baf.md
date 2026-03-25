@@ -47,9 +47,9 @@ You want to model transformation flows with local tables \(file\), shared local 
 > -   You can only create a graphical view transform.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
 > -   If your source is a shared table with *Delta Capture* enabled, you can change its load type \(*All Active Records* or *Delta Capture*\) in its settings panel.
-> -   When you use HANA tables as sources in an embedded object store space, all data from the table is exported during initial loads. If you define a filter immediately after defining the table in a graphical view transform, the filter condition is applied while reading from the table. The system copies the data into the object store using HANA export as part of the transformation flow run before further processing operators.
+> -   When you use SAP HANA tables as sources in an embedded object store space, all data from the table is exported during initial loads. If you define a filter immediately after defining the table in a graphical view transform, the filter condition is applied while reading from the table. The system copies the data into the object store using SAP HANA export as part of the transformation flow run before further processing operators.
 > 
->     The solution based on HANA Export is not intented or recommended for bulk data transfer. If you encounter resource limit errors due to a HANA export failure, you can either increase the statement memory limit or reduce the number of threads in the source space.
+>     The solution based on SAP HANA Export is not intented or recommended for bulk data transfer. If you encounter resource limit errors due to a SAP HANA export failure, you can either increase the statement memory limit or reduce the number of threads in the source space.
 
 
 
@@ -65,7 +65,7 @@ You want to model transformation flows with local tables \(file\), shared local 
 
 3.  Add a source. For more information, see [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add local tables \(file\), shared local tables \(file\), local tables shared from a SAP HANA space, and shared remote tables on a Delta Share runtime.
 
-    Certain data types that are supported in a HANA Space aren't in a file space and require conversion to supported types. See [Converting Local Table Data Types from a HANA Space to a File Space](converting-local-table-data-types-from-a-hana-space-to-a-file-sp-aac37d0.md).
+    Certain data types that are supported in a SAP HANA Space aren't in a file space and require conversion to supported types. See [Converting Local Table Data Types from a HANA Space to a File Space](converting-local-table-data-types-from-a-hana-space-to-a-file-sp-aac37d0.md).
 
 4.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow:
 

@@ -302,5 +302,5 @@ The information and actions available in each view differs. See [Information and
 
 [Installing Data Products](installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[Understanding Different Catalog Views](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "You can access the catalog from either the SAP Datasphere or the SAP Business Data Cloud cockpit systems. The system you choose to access the catalog determines the tasks you can perform to manage the source systems and the content you see.") :arrow_upper_right:
+[Understanding Different Catalog Views](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "You can access the catalog from either the SAP Business Data Cloud cockpit or SAP Datasphere systems. The system you use to access the catalog determines the content you see and the tasks you can perform to manage source systems and content.") :arrow_upper_right:
 

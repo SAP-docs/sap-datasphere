@@ -191,7 +191,7 @@ Unit conversion allows you to convert measures with units that have different un
     </td>
     <td valign="top">
     
-    Decide whether your measure should be an *Auxiliary Measure*.An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud.
+    Decide whether your measure should be an *Auxiliary Measure*.An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud. You can control whether currency conversion applies a shift \(for example JPY ×100\) or not, so that both shifted and unshifted measures can correctly be processed without values being shifted twice.
     
     </td>
     </tr>

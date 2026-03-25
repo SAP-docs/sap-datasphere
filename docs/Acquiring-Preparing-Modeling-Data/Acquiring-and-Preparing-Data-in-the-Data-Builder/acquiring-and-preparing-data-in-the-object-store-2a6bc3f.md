@@ -66,5 +66,5 @@ Users with a modeler role can use Apache Spark transformation flows to clean and
 
 ## Share Data to Standard Spaces
 
-Users with a modeler role can share local tables \(file\) to standard spaces to allow the data to be used as a source for flows, views, and analytic models \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\).
+Users with a modeler role can share local tables \(file\) to standard spaces to allow the data to be used as a source for flows, views, and analytic models \(see [Sharing Entities and Task Chains to Other Spaces](../Creating-Finding-Sharing-Objects/sharing-entities-and-task-chains-to-other-spaces-64b318f.md)\). To share a file table and consume it in a standard space, **SAP HANA Native SQL on Files** is used \(see [SAP HANA Native SQL on Files](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-on-files-guide/sap-hana-native-sql-on-files-overview?version=2025_4_QRC)\).
 

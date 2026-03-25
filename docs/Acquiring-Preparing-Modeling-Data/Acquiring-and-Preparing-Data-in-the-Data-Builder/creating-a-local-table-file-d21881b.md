@@ -347,9 +347,16 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     Partitions for a local table \(file\) must be based on columns \(and not on range of values as for local tables stored on SAP HANA database\).There are few data types which are not supported for partitioning. The dialog will propose only columns with supported data types. For more information, on data types supported, see [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
     > ### Note:  
-    > -   You can select several columns to partition your data but you must not select all columns.
+    > -   You can select several columns to partition your data, but you must not select all columns.
     > -   You can’t change the partition definition after you have deployed the table if it contains data.
     > -   If the cardinality of a column is very high, do not use that column for partitioning. For that reason, in case there is only one key column, this column can't be select for partitioning.
+
+    > ### Caution:  
+    > Before implementing partitioning on local tables \(file\) you might consider the following:
+    > 
+    > -   Partitioning should not be enabled by default for local table \(file\) and is intended only for exceptional use cases. This data partitioning method differs significantly from the one used for local tables created in an SAP HANA Space and should be applied with caution. It is generally not recommended for smaller tables \(less than 100 GB\).
+    > -   Partitioning for local table \(file\) can improve query performance when filter predicates are predictable, applied to the partition key, and can effectively support file pruning at runtime. However, only low‑cardinality columns should be chosen as partition columns to avoid generating excessively small files and unnecessary metadata overhead.
+    > -   For performance optimization on filter predicates involving high‑cardinality columns, it is usually better to define Z‑Order columns, which enable efficient data skipping without the downsides of partitioning. For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:.
 
     For more information on partitions, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
 

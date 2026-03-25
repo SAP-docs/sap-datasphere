@@ -26,13 +26,13 @@ Entering a natural language search string allows you to quickly find data produc
 > ### Note:  
 > Natural language search is supported in English only, but may provide useable results in other languages.
 
-To use the natural language search, select the *Data Products* collection, and enter a request. The use of natural language is not automatic and depends on the string entered:
+To use the natural language search, select the *Data Products* collection, and enter a request.The use of natural language is not automatic and depends on the string entered:
 
 -   One word - Natural language search is not used.
 -   Two words - Natural language search is used if the standard search returns no results.
 -   Three or more words - Natural language search is always used.
 
-You can, at any time, click the <span class="SAP-icons-V5"></span> \(Show AI-Generated Filter Conditions\) to verify how SAP Datasphere interpreted the search phrase you entered.
+You can, at any time, choose the <span class="SAP-icons-V5"></span> \(Show AI-Generated Filter Conditions\) to verify how SAP Datasphere interpreted the search phrase you entered.
 
 You can enter requests that contain:
 

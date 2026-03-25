@@ -51,7 +51,7 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
 
 ## Procedure
 
-1.  Open the wizard from *Semantic Onboarding*, the *Repository Explorer*, or the *Data Builder*:
+1.  Open the wizard from the *Repository Explorer*, *Semantic Onboarding*, or the *Data Builder*:
 
     -   In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
     -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
@@ -76,7 +76,7 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     <tr>
     <td valign="top">
     
-    Select the connection to the source you want to import from from the list, and then click *Next Step*.
+    Select the connection to the source you want to import from the list, and then click *Next Step*.
 
     You can use the *Filter By* pane on the left to filter the connections by space.
     
@@ -103,8 +103,8 @@ We recommend that, where possible, you use the *Import Entities* wizard for impo
     Use the *Search* field to search by label. Depending on your connection type, you can filter by:
 
     -   Application Component
-    -   Modeling Pattern \(see [Supported Capabilities for CDS Views](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/6a6ff32b25dd473080e6aeddbefecfca.html) in the *SAP S/4HANA Cloud*\) documentation\)
-    -   Release Contract \(see [Stability Contracts for CDS Views](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/2e4edbede2f94fb7b7f6eac856c02b19.html) in the *SAP S/4HANA Cloud*\) documentation\)
+    -   Modeling Pattern \(see [Supported Capabilities for CDS Views](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/6a6ff32b25dd473080e6aeddbefecfca.html) in the *SAP S/4HANA Cloud* documentation\)
+    -   Release Contract \(see [Stability Contracts for CDS Views](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/2e4edbede2f94fb7b7f6eac856c02b19.html) in the *SAP S/4HANA Cloud* documentation\)
 
         > ### Note:  
         > Entities that have a release contract of *C1* \(and that are extraction-enabled\) can be imported as remote tables, which support data federation and replication natively. Other entities can only be imported as local tables and you must provide data replication manually by creating a data flow.

@@ -38,7 +38,7 @@ In addition, download the required TLS certificate from an appropriate website. 
 
 In addition to manage TLS server certificates in the *Configuration* app, you can also:
 
--   List, upload, and delete them using the `datasphere` command line interface \(see [Manage TLS Server Certificates via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6306da2bbeb04e4fbd944c2dce08629f.html "Users with a DW Administrator role (or equivalent privileges) can list, upload, and delete TLS server certificates via the command line.") :arrow_upper_right:\).
+-   List, upload, and delete them using the `datasphere` command line interface \(see [Managing TLS Server Certificates via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6306da2bbeb04e4fbd944c2dce08629f.html "You can use the datasphere command line interface to list, upload, and delete TLS server certificates.") :arrow_upper_right:\).
 -   List, upload, and delete them using a REST API \(see [Manage Connectivity via REST APIs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5aafe32418b14f7e99528b49f48bd3ac.html "You can manage TLS server certificates and connections via the Certificates and Connections REST APIs. Creating and editing connections via the API is supported for SAP SuccessFactors connections only.") :arrow_upper_right:\).
 
 
@@ -47,13 +47,14 @@ In addition to manage TLS server certificates in the *Configuration* app, you ca
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
 
-2.  Click <span class="FPA-icons-V3"></span> Add Certificate.
+2.  In the *Certifcates* section, click <span class="FPA-icons-V3"></span> Add Certificate.
 
-3.  In the *Upload Certificate* dialog, browse your local directory and select the certificate.
+3.  In the *Upload Certificate* dialog, provide the following and choose *Upload*:
 
-4.  Enter a description to provide intelligible information on the certificate, for example to point out to which connection type the certificate applies.
+    1.  Browse your local directory and select the certificate.
 
-5.  Choose *Upload*.
+    2.  Enter a description to provide intelligible information on the certificate, for example to point out to which connection type the certificate applies.
+
 
 
 

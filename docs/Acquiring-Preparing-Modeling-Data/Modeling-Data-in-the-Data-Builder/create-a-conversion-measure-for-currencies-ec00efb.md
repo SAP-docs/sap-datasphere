@@ -225,10 +225,13 @@ The sources of your analytic model may have values in different currencies. You 
     </td>
     <td valign="top">
     
-    Decide whether your measure should be an *Auxiliary Measure*.An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud.
+    Decide whether your measure should be an *Auxiliary Measure*.An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud. You can control whether currency conversion applies a shift \(for example JPY ×100\) or not, so that both shifted and unshifted measures can correctly be processed without values being shifted twice.
     
     </td>
     </tr>
     </table>
     
+    > ### Note:  
+    > Some more information about the shift for currencies: By default the precision of all values is 2 digits in SAP ERP tables. As some currencies require accuracy in value, the decimal points can be shifted according to the settings in the TCURX currency table. For example, if the source currency has 0 valid digits, then each value needs to be multiplied by 100 because in SAP ERP systems values are stored using 2 digits.
+
 

@@ -132,8 +132,9 @@ Perform the following steps to prepare data federation with remote tables:
 
         For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/ABAP_PLATFORM_NEW/b5670aaaa2364a29935f40b16499972d/c1cf6c9796ad4fecb893672fd91e660d.html) in the *ABAP Platform* documentation for your SAP S/4HANA system.
 
-    3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a role is required.
+    3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a role with authorization objects `S_START` and `S_SQL_VIEW` is required. To grant federated access, select the option *SELECT* in the SQL\_VIEWOP authorization field of the *S\_SQL\_VIEW* authorization object.
 
+        -   
         For more information, see [Creating a Role for Privileged Access](https://help.sap.com/docs/ABAP_PLATFORM_NEW/b5670aaaa2364a29935f40b16499972d/f3945f142ca24afdb68896584257e428.html) in the *ABAP Platform* documentation for your SAP S/4HANA system.
 
 

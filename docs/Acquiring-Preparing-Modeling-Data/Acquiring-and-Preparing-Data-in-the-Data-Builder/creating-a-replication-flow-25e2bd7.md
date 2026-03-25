@@ -412,9 +412,6 @@ For more information about connection types that can be used for adding sources 
     For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 
     > ### Note:  
-    > If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
-
-    > ### Note:  
     > -   If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
     > 
     > -   During table replication, the primary key order is preserved when it differs from the column order to prevent replication flow failures caused by key order mismatches.

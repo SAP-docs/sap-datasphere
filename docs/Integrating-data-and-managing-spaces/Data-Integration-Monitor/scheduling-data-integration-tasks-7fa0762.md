@@ -27,10 +27,7 @@ Technical users need to be added to the space by an administrator in order to ad
 To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of SAP Datasphere. In your profile settings under *Authorized Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
 
 > ### Note:  
-> Your consent is valid for 365 days. If your consent will expire within the next four weeks, when you attempt to schedule new tasks, SAP Datasphere displays a message warning that your consent is approaching its expiration date. After the consent has expired, a log message informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in *Data Integration Monitor*, a warning message appears four weeks before the expiry of consent.
-
-> ### Note:  
-> Your consent is valid for 365 days. If your consent will expire within the next 30 days, you will automatically receive an email notification letting you know that your consent is approaching its expiration date. After the consent has expired, a log message informs you that future tasks you have scheduled will no longer run. Renew your consent to resume task runs according to their original schedules.
+> Your consent is valid for 365 days. If your consent will expire within the next 30 days, you will automatically receive an email notification letting you know that your consent is approaching its expiration date. After the consent has expired, a log message informs you that future tasks you have scheduled will no longer run. After the consent has expired, a log message informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task runs according to their original schedules.
 
 
 

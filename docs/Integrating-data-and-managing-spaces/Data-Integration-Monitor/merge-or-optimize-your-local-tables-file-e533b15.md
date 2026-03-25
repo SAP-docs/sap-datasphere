@@ -102,5 +102,5 @@ To define Z-order columns,
 6.  Select the relevant columns
 7.  Click *OK*
 
-Next run of an optimize task will apply the z-order columns.
+When using z-order columns in the optimize task, it is advised to run an optimize after every merge run of that same local table \(file\). You can for example, modeling this as part of a task chain.
 

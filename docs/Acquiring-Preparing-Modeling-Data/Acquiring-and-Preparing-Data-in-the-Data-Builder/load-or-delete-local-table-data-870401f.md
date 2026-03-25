@@ -4,7 +4,7 @@
 
 # Load or Delete Local Table Data
 
-You can upload data from a CSV file to a local table. You can also delelete records from your table.
+You can upload data from a CSV file to a local table. You can also delete records from your table.
 
 
 
@@ -14,7 +14,7 @@ You can upload data from a CSV file to a local table. You can also delelete reco
 
 
 
-### Prequisites
+### Prerequisites
 
 To upload a CSV file to a local table, you must have a scoped role that grants you access to a space with one of the following privileges:
 
@@ -70,7 +70,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
 
 
 
-### Prequisites
+### Prerequisites
 
 To delete local table records, you must have a scoped role that grants you access to a space with one of the following privileges:
 
@@ -91,10 +91,10 @@ To delete table records:
 
 1.  From the *Data Builder*, open your local table \(file\) in the *Table Editor*.
 2.  Select from the toolbar, <span class="FPA-icons-V3"></span> \(Delete Data From Table\).
-3.  Depending if your local table is delta enabled or not, you will have different options. In the case of a table that is not delta enabled, you can delete all records contained in the table. In the case of a table that is delta capture enabled, you can choose between 3 options:
+3.  Depending on whether your local table is delta-enabled or not, you will have different options. In the case of a table that is not delta-enabled, you can delete all records contained in the table. In the case of a table that is delta capture enabled, you can choose between 3 options:
     -   Delete All Records: \[Table with or without delta capture\] This option allows you to delete all records from the table, no matter if they are used by other apps or not. It's up to you to check if the data you are about to delete have dependencies.
     -   Delete All Records \(Mark as "Deleted"\): \[Delta capture table only\]. This option doesn't physically delete the records. They will be marked as to be deleted \(they take the Change Type “D”\) but these records can still be processed by other apps until you decide to permanently delete them.
-    -   Delete all records marked for deletion which are older than the specified number of days: \[Delta capture table only\] If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed according to the retention period you've defined. Default retention period is 90 days.
+    -   Delete all records marked for deletion which are older than the specified number of days: \[Delta capture table only\] If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed, such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed according to the retention period you've defined. The default retention period is 90 days.
 
         > ### Example:  
         > Today, it's January 13, 2025. I have the following table where 5 records have been marked for deletion. To make it easier, we will consider that all records have been fully-processed by other apps and are candidates for deletion:
@@ -351,7 +351,7 @@ To delete table records:
         > </td>
         > <td valign="top">
         > 
-        > Semptember 2, 2024
+        > September 2, 2024
         > 
         > </td>
         > <td valign="top">
@@ -621,7 +621,7 @@ To delete table records:
         > </tr>
         > </table>
         > 
-        > Now let's say that I want to delete records marked for deletion for more than 60 days. As a result, 4 on the 5 records that have change type "D"" will be deleted, considering that record “ Marshall” was marked as deleted on January 2, 2025.
+        > Now let's say that I would like to delete records marked for deletion for more than 60 days. As a result, 4 on the 5 records that have change type "D"" will be deleted, considering that record “ Marshall” was marked as deleted on January 2, 2025.
 
         > ### Note:  
         > You can automate the deletion of those records using a scheduling option within a task chain.

@@ -16,9 +16,9 @@ This topic contains the following sections:
 
 ## Import Entities from SAP Systems
 
-Users with the *DW Modeler* role \(or equivalent privileges\) can use the *Import Entities* wizard to import semantically-rich objects from your SAP S/4HANA Cloud, SAP S/4HANA on-premise, SAP BW∕4HANA, and SAP BW bridge connections. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
+You can use the *Import Entities* wizard to import semantically-rich objects from selected SAP systems. The wizard creates *Business Builder* and *Data Builder* entities \(along with all the objects on which they depend\) in SAP Datasphere.
 
-Click a tile to open the *Import Entities* wizard for that connection type \(see [Importing Objects with Semantics from SAP S/4HANA, SAP BW∕4HANA and SAP BW Bridge](importing-objects-with-semantics-from-sap-s-4hana-sap-bw-4hana-a-361729b.md)\).
+Click a tile to open the *Import Entities* wizard for that connection type \(see [Importing Objects with Semantics from SAP Systems](importing-objects-with-semantics-from-sap-systems-361729b.md)\).
 
 Each tile shows the total number of connections of that type available to you across all the spaces you have access to. If you do not have access to a particular type of connection, you must create it or ask a colleague space administrator or integrator to do so:
 

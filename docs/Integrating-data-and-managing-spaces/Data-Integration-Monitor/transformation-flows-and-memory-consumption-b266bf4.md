@@ -74,7 +74,7 @@ Composite Level
 </td>
 <td valign="top">
 
-You can receive an out-of-memory error when you are running too many tasks simultaneously. Although your system and transformation flow may have sufficient memory, HANA distributes memory across your work environment. Make sure to distribute your work such as scheduling tasks and running task chains and transformation flows. Check your system monitor to look at your workload distribution.
+You can receive an out-of-memory error when you are running too many tasks simultaneously. Although your system and transformation flow may have sufficient memory, SAP HANA distributes memory across your work environment. Make sure to distribute your work such as scheduling tasks and running task chains and transformation flows. Check your system monitor to look at your workload distribution.
 
 </td>
 </tr>
