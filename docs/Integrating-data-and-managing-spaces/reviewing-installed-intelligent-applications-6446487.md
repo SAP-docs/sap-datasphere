@@ -14,7 +14,7 @@ Data is loaded from the source system into SAP Datasphere, where the following s
 
 -   Ingestion space - contains the data products as local tables, and the replication flows that load data to them.
 -   Preparation space - contains views built on top of the data products to prepare them for consumption.
--   App space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the intelligent application.
+-   Application space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the intelligent application.
 
 > ### Note:  
 > These spaces are SAP-managed. You cannot create objects in them, share objects to or from them or otherwise import or export content to or from them.
@@ -23,16 +23,16 @@ Data is loaded from the source system into SAP Datasphere, where the following s
 
 ## Installing an Intelligent Application for Two or More Source Systems
 
-You can install a single intelligent application multiple times for different source systems, in the following cases:
+You can install multiple instances of an intelligent application for different source systems, in the following cases:
 
 -   If your organization operates multiple source system instances across different subsidiaries, business units, or geographic areas, each requiring analysis through the same intelligent application.
 -   If your organization maintains separate development, test, and production environments within a single SAP Datasphere tenant, necessitating separate installations of the same intelligent application for each environment.
 
-In this case, the three spaces are created in SAP Datasphere for each instance of the intelligent application, distinguishable by an alias that was assigned to each intelligent application during installation. When uninstalling, the appropriate spaces are removed.
+In this case, the three spaces are created in SAP Datasphere for each instance of the intelligent application, while the application spaces are distinguishable by an alias that was assigned to each intance during installation. When uninstalling, the three spaces are removed.
 
-In the following example, we have one intelligent application installed for two source systems, resulting in separate spaces, where each space identifies the source tenant providing the data by system alias.
+In the following example, we have two instances of one intelligent application, installed for two source systems, resulting in separate spaces, where each application space identifies the source tenant providing the data by system alias.
 
-![](images/Install_an_Intelligent_Application_for_2_or_More_Source_Systems_d1e8d3d.jpg)
+![](images/Install_an_Intelligent_Application_for_2_or_More_Source_Systems_d1e8d3d.png)
 
 In addition, you can install multiple intelligent applications for the same source system. In this case, all intelligent applications use the same ingestion space. When uninstalling, the appropriate spaces are removed, but the shared ingestion space is retained until the final application is removed.
 

@@ -281,6 +281,25 @@ For more information about the supported use cases depending on the connection t
         </td>
         </tr>
         <tr>
+        <td valign="top" rowspan="2">
+        
+        *Google BigQuery* \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS \(for the REST API endpoint\)
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        TCP \(for the storage API endpoint\)
+        
+        </td>
+        </tr>
+        <tr>
         <td valign="top">
         
         *Microsoft SQL Server* \(data flows, replication flows\) 
@@ -421,6 +440,7 @@ For more information about the supported use cases depending on the connection t
         > 
         >     We recommend to use a virtual \(cloud-side\) name that is different from the internal name.
         > 
+        > -   For *Google BigQuery* connection types: The virtual hosts configured in the Cloud Connector system mappings must match the Google BigQuery service endpoints \(internal hosts in the system mappings\) exactly for both the REST and Storage API.
         > -   For ABAP-based connection types: When using load balancing, make sure to directly specify the message server port in the *System ID* field of the system mapping information.
         > -   For ABAP-based connection types: The *Connection Type* selected in the system mapping information \(load balancing logon or connecting to a specific application server\) must match the *SAP Logon Connection Type* selected in SAP Datasphere connection management \(*Message Server* or *Application Server*\).
         > -   If encrypted communication using TLS/SSL is defined in the SAP Datasphere connection \(to establish end-to-end encryption\), ensure that the associated system mapping in the Cloud Connector does not use TLS.
@@ -625,6 +645,23 @@ For more information about the supported use cases depending on the connection t
         
         </td>
         </tr>
+        <tr>
+        <td valign="top">
+        
+        *Google BigQuery* \(HTTPS\)
+        
+        </td>
+        <td valign="top">
+        
+        For replication flows, limit the accessible services to the following URL path:
+
+        -   `/` - *Path and all sub-paths*
+
+
+
+        
+        </td>
+        </tr>
         </table>
         
         **Catalog Remote Systems**
@@ -693,7 +730,7 @@ For more information about the supported use cases depending on the connection t
     -   In the *Principal Type* field, select *X.509 Certificate*.
     -   In the *SNC Partner Name* field, enter the ABAP system's SNC identity name \(for example, `p:CN=SID, O=Trust Community, C=DE`\). The SNC partner name needs to contain the correct SNC identification of the ABAP system. The value can typically be found in the ABAP system instance profile parameter `snc/identity/as` \(and hence is provided per application server\).
 
-    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
+    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/initial-configuration-rfc) in the *SAP BTP Connectivity* documentation.
 
 
 

@@ -19,9 +19,6 @@ Define settings and properties for your replication flow and individual replicat
         > ### Note:  
         > -   A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status *Active* until it is stopped or paused or an issue occurs.
         > 
-        >     > ### Caution:  
-        >     > You must always stop or pause a running replication flow before a source system downtime. For more information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:.
-        > 
         > -   The system load caused by the delta load operations can vary substantially depending on the frequency of changes in your data source in combination with the interval length you define. Make sure that your tenant configuration supports your settings. For more information, see [Configure the Size of your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
         > 
         > -   The next interval starts after all changes from the previous interval have been replicated. For example, if replicating a set of changes starts at 10:30 a. m. and takes until 10:45 a. m., and you have defined one-hour intervals, the next delta replication starts at 11:45 a. m.
@@ -39,13 +36,10 @@ Define settings and properties for your replication flow and individual replicat
             > -   If data has not changed in the source when you start a replication with the *Delta Only* load type, then no data will be seen in the target. Hence, the target table does not capture a complete snapshot of the source table.
             > -   If the source table has two records with a primary key \(key 1 and key 2\), and after you've started the replication with the *Delta Only* load type the record with key1 does not contain changes in the source table. Hence, it won't be replicated to the target table, making it inconsistent.
 
-            > ### Note:  
-            > If you want to automate your replication flow run with a task chain or a schedule, you can’t use the *Delta Only* load type as it is not supported.
-
         -   *Delta Only* is a long running task similar to *Initial and Delta*.
 
-        > ### Note:  
-        > For more information on supported load types and connections, see [Load Types and Connections for Your Replication Flows](load-types-and-connections-for-your-replication-flows-1089119.md).
+            For more information on supported load types and connections, see [Load Types and Connections for Your Replication Flows](load-types-and-connections-for-your-replication-flows-1089119.md).
+
 
 
 2.  On the *Settings* tab of the canvas, review the *Delete All Before Loading* setting and change it as required. This setting is only relevant if the target structure already exists and contains data. If the target structure does not yet exist or is empty, you can ignore the *Delete All Before Loading* setting.
@@ -97,7 +91,7 @@ Define settings and properties for your replication flow and individual replicat
     > -   The replication flow is successfully deployed. Until it is deployed, the *Edit* button is not accessible.
     > -   You must have the DW Integrator role.
 
-    To change the settings, click *Edit*:
+    To change the settings, click *Edit:*
 
     -   Source Thread Limit \(1-160\): You can increase or decrease the number of replication threads to be used by your replication flow to load data from the source as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 10. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance. See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
     -   Target Thread Limit \(1-160\) You can increase or decrease the number of replication threads to be used by your replication flow to write data to the target as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 10. We recommend using the same value for the source and the target. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance.

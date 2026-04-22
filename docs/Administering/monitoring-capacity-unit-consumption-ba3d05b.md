@@ -2,32 +2,32 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Monitor Capacity Unit Consumption
+# Monitoring Capacity Unit Consumption
 
-View the amount of capacity units you have used each month.
+Monitor the amount of capacity units consumed each month to track usage patterns and plan resource allocation.
 
 
 
 ## Prerequisites
 
-To monitor capacities, you must have a global role that grants you the following privileges:
+To monitor capacity unit consumption, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *System Monitor* tool.
+-   *System Information* \(`-RU-----`\) - To access *Capacities* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
 ## Context
 
-Monitor Capacities provides insights into monthly and daily capacity unit consumption, allowing users to track usage relative to their subscription and download detailed hourly data. This tool is useful for optimizing resource allocation and ensuring efficient subscription management.
+The *Capacities Monitoring* tool provides insights into monthly and daily capacity unit consumption, allowing users to track usage relative to their subscription and download detailed hourly data. This tool is useful for optimizing resource allocation and ensuring efficient subscription management.
 
 
 
 ## Procedure
 
-1.  From the side navigation menu, click <span class="FPA-icons-V3"></span> \(*System Monitor*\)** \> *Capacities*.
+1.  From the side navigation menu, click :desktop_computer: *Monitoring* *\>* <span class="SAP-icons-V5"></span> *Capacities Monitoring*  .
 
 
     <table>
@@ -81,7 +81,7 @@ Monitor Capacities provides insights into monthly and daily capacity unit consum
     </tr>
     </table>
     
-    The *Capacities* page is shown.
+    The *Capacities Monitoring* app is shown.
 
 2.  To download a CSV file of the consumption, click <span class="SAP-icons-V5"></span>*Download Capacity Metrics as CSV*.
 

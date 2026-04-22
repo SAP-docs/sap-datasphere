@@ -223,25 +223,210 @@ The replication flow creates multiple files \(<code>part-*.<i class="varname">&l
 
 Each file contains the source columns as defined in the mapping for the replication object in the replication flow. The system appends the following columns:
 
--   *\_\_operation\_type*: Identifies the type of target row:
-    -   *L*: Written as part of the initial load.
-
-    -   *I*: New source row added after the initial load is complete.
-
-    -   *U*: Update to a source row after the initial load is complete.
-
-        > ### Note:  
-        > SAP S/4HANA and other ABAP sources do not distinguish between Insert \(*I*\) and Update \(*U*\), and both operations are identified as Upserts \(U\). If you apply SAP Note [3044005](https://me.sap.com/notes/3044005) the system identifies all upserts as *A*. The `APE_KEEP_UPDATE_OPERATION` parameter is described in the SAP Note.
-
-    -   *B*: Before image of an update to a source row after the initial load is completed. These records are only sent by some sources \(such as SAP HANA\) and only when the after-image of the update does not pass the filters specified in the replication task.
-
-    -   *X*: The Source row is deleted after the initial load completes. The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
-
-    -   *M*: Archiving operations after the initial load is complete.
-
-    -   *D*: \[When the source is a delta enabled local table in SAP Datasphere\] Row deleted with before image values.
+-   \_\_operation\_type: Identifies the type of target row:
 
 
+    <table>
+    <tr>
+    <th valign="top">
+
+    \_\_operation\_type
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    <th valign="top">
+
+    From Source System Connection Types
+    
+    </th>
+    <th valign="top">
+
+    Comments
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    L
+    
+    </td>
+    <td valign="top">
+    
+    Written as operation type for all records during the initial load phase.
+    
+    </td>
+    <td valign="top">
+    
+    All
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    I
+    
+    </td>
+    <td valign="top">
+    
+    New source row added during delta load phase.
+    
+    </td>
+    <td valign="top">
+    
+    All except SAP S/4HANA on-prem/cloud and ABAP.
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    U
+    
+    </td>
+    <td valign="top">
+    
+    Update \(after image\) to a source row during delta load phase.
+    
+    </td>
+    <td valign="top">
+    
+    All except SAP S/4HANA on-prem/cloud and ABAP.
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    U or A
+    
+    </td>
+    <td valign="top">
+    
+    New source row or update to a source row during delta load phase.
+    
+    </td>
+    <td valign="top">
+    
+    SAP S/4HANA on-prem/cloud and ABAP and Datasphere delta enabled local table.
+    
+    </td>
+    <td valign="top">
+    
+    SAP S/4HANA and other ABAP sources do not distinguish between Insert and Update, and both operations are identified as *U* \(Upserts\). If you apply SAP Note [3044005](https://me.sap.com/notes/3044005) the system identifies all Upserts as *A* \(Autocorrect\). The `APE_KEEP_UPDATE_OPERATION` parameter is described in the SAP Note.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    B
+    
+    </td>
+    <td valign="top">
+    
+    Update \(before image\) of an update to a source row during delta load phase.
+    
+    </td>
+    <td valign="top">
+    
+    SAP HANA cloud/on-prem, Azure SQL, MSSQL.
+    
+    </td>
+    <td valign="top">
+    
+    These records are only sent by some sources and only when the after-image of the update does not pass the filters specified in the replication task.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    X
+    
+    </td>
+    <td valign="top">
+    
+    The Source row is deleted \(with primary key values only\) during the delta load phase.
+    
+    </td>
+    <td valign="top">
+    
+    All except Datasphere delta enabled local table and Confluent depending on opcode specification.
+    
+    </td>
+    <td valign="top">
+    
+    The only target columns to contain data for this operation code are codes that reflect the source key columns. All other target columns are empty.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    D
+    
+    </td>
+    <td valign="top">
+    
+    The Source row is deleted with before image values during delta load phase.
+    
+    </td>
+    <td valign="top">
+    
+    Datasphere Delta enabled local table, and Confluent - depending on opcode specification.
+    
+    </td>
+    <td valign="top">
+    
+    Delete record contains the before image values.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    M
+    
+    </td>
+    <td valign="top">
+    
+    Archiving operations after the initial load is complete.
+    
+    </td>
+    <td valign="top">
+    
+    SAP S/4HANA on-prem/cloud and ABAP Datasphere Delta enabled local table.
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    </tr>
+    </table>
+    
 -   *\_\_sequence\_number*: An integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is populated only for the following source systems: Microsoft Azure SQL, Microsoft SQL Server \(MSSQL\) and SAP HANA.
 -   *\_\_timestamp*: The UTC date and time the system wrote the row.
 

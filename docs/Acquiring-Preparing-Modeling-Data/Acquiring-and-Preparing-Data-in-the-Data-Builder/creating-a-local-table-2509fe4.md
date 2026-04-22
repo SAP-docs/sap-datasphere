@@ -18,7 +18,7 @@ To create local tables, you must have a scoped role that grants you access to a 
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -390,7 +390,7 @@ In addition to working with tables in the editor, you can also:
 
     -   Standard table: *Delete All Records* 
     -   Delta capture table: *Delete All Records*, *Delete Records Marked as "Deleted"*, or *Delete all records marked for deletion which are older than the specified number of days*.
-    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete Previous Versions \(Vacuum\), which are older than the specified number of days* 
+    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete Previous Versions \(Vacuum\)* 
 
     See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
     
@@ -474,7 +474,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](../data-pipeline-analyzer-54fd00d.md) 
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/54fd00ddd0b24ccc9ce0fa55297bc13d.html "The Data Pipeline Analyzer enables you to monitor complex data models efficiently, allowing you to view and analyze errors, warnings, and data discrepancies in real-time. It quickly identifies data transfer failures, allowing you to take immediate action to resolve them.") :arrow_upper_right: 
     
     </td>
     </tr>

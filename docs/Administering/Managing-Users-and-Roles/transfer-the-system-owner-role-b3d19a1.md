@@ -14,14 +14,12 @@ The individual who purchases SAP Datasphere is automatically designated as the s
 
 You must be logged on as a user with the *System Information Update* privilege.
 
-> ### Note:  
-> Transferring the system owner role is **not** possible if you only have one license for SAP Datasphere.
 
 
-
-## Context
+## Procedure
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
+
 2.  Select the checkbox of the user you want to assign the system owner role to.
 
 3.  Select <span class="FPA-icons-V3"></span> \(Assign as System Owner\).

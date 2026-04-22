@@ -28,7 +28,7 @@ To run and schedule flows, you must, in addition, have the following privileges:
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Modeler* and *DW Integrator* role templates together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -37,7 +37,7 @@ The *DW Modeler* and *DW Integrator* role templates together, for example, grant
 ## Introduction
 
 > ### Note:  
-> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
 
 You want to model transformation flows with local tables \(file\), shared local tables \(file\), shared local tables, and shared remote tables on a Delta Share runtime as sources, apply various transformations in a file space dedicated to loading and preparing large quantities of data, and store the resulted dataset into another local table \(file\).
 
@@ -196,7 +196,7 @@ You want to model transformation flows with local tables \(file\), shared local 
     >     -   LAST refers to the latest operations applied on the row.
     >     -   COUNT doesn't include null values for the count calculations; COUNT\* includes them.
     >     -   Using a target table that employs AVG, MAX, or MIN in one transformation as the target table in another transformation using any of these functions could lead to data inconsistencies.
-    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitor Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "View the amount of capacity units you have used each month.") :arrow_upper_right:.
+    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the amount of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
     >     -   If incremental aggregation is enabled, the input DataFrame for the Python script will include the previous versions of the data for updates.
     > 
     > -   Columns with non-numerical aggregation types can only have the type LAST.
@@ -224,4 +224,5 @@ You want to model transformation flows with local tables \(file\), shared local 
 
     For more information, see [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
 
+12. \[optional\] You can download your transformation flow on file Spark driver logs in the *Data Integration Monitor* in the flow's *Details* screen. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started. For more information, see [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 

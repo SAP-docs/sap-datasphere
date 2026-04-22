@@ -1,6 +1,6 @@
 <!-- loio54fd00ddd0b24ccc9ce0fa55297bc13d -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
 # Data Pipeline Analyzer
 
@@ -17,13 +17,13 @@ To launch the *Data Pipeline Analyzer*, you must have a scoped role that grants 
 -   **Data Warehouse General** \(-**R**------\) - To access SAP Datasphere.
 -   **Data Warehouse Data Integration** \(-**R**------\) or **Data Warehouse Data Builder** \(-R------\) To start the *Data Pipeline Analyzer* 
 
-The *DW Integrator* or *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+The *DW Integrator* or *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 In addition, to perform actions \(such as Run\) and solve identified issues, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   **Data Warehouse Data Integration** \(--**U**-----\) - To manually run data integration tasks.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:
 
 
 
@@ -225,7 +225,7 @@ The icons indicate the run status of an object. They are displayed with the usua
 </td>
 <td valign="top">
 
-\[Local tables \(files\) only\] - The inbound buffer icon is displayed if a merge task is running or has to be run to make data update visible. For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: 
+\[Local tables \(files\) only\] - The inbound buffer icon is displayed if a merge task is running or has to be run to make data update visible. For more information, see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md) 
 
 </td>
 </tr>
@@ -340,7 +340,7 @@ The information you can see depends on the type of object:
 
 -   **General**: You can review the technical name and the object type.
 
--   **Data persistence**: In case your object is a view, you can see how the data is accessed. For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:
+-   **Data persistence**: In case your object is a view, you can see how the data is accessed. For more information, see [Persisting and Monitoring Views](persisting-and-monitoring-views-9af04c9.md)
 
 -   **Run info**: You get information on the run status.
 
@@ -352,7 +352,7 @@ The information you can see depends on the type of object:
 
 -   **Scheduled Next Run**: If a run schedule is defined, you can see when the next run will happen.
 
--   **Inbound buffer**: \(for local table \(file\) only\): You get information on the inbound buffer \(Buffer merge status, Buffer file count, Buffer last run, Buffer last run by\). For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
+-   **Inbound buffer**: \(for local table \(file\) only\): You get information on the inbound buffer \(Buffer merge status, Buffer file count, Buffer last run, Buffer last run by\). For more information, see [Monitoring Local Tables \(File\)](monitoring-local-tables-file-6b2d007.md)
 
 
 Some actions to solve the detected issues are proposed, like "Run", "Persist Data", "Replicate Data", etc.
@@ -409,7 +409,7 @@ To resolve an issue:
 6.  Refresh the data pipeline analyzer to see if the issue is now fixed.
 
     > ### Note:  
-    > If the issue is still not fixed, open the relevant monitor and check the detailed information on the data integration monitor. For more information, see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
+    > If the issue is still not fixed, open the relevant monitor and check the detailed information on the data integration monitor. For more information, see [Managing and Monitoring Data Integration](managing-and-monitoring-data-integration-4cbf7c7.md).
 
 
 > ### Note:  

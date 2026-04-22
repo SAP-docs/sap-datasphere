@@ -21,8 +21,9 @@ To run and schedule flows, you must have a scoped role that grants you access to
 
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -33,7 +34,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows, and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the run details of the flows.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
 For more information and points to consider when using replication flows, see also SAP Note [3297105](https://me.sap.com/notes/3297105).
 
@@ -43,7 +44,7 @@ For more information and points to consider when using replication flows, see al
 
 ## Procedure
 
-1.  In the SAP Datasphere, navigate to *Data Integration Monitor* \> *Flows*.
+1.  In the SAP Datasphere, navigate to *Monitoing* \> *Data Integration* \> *Flows*.
 
     You can find all the deployed flows per space. You can run the deployed flows under *Run*, and you can view and monitor the run details of the flows. For some flows, you can create, edit, delete, pause or resume a schedule, or assign a schedule to your name under *Schedule*, and you can select several data flows to group the scheduling actions. For more information about scheduling, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md).
 
@@ -239,6 +240,9 @@ For more information and points to consider when using replication flows, see al
         -   Transformation flow in a File space:*Apache Spark Settings* can be set to *Use Space Default* settings or *Define New Settings for this Flow*.
 
 
+    > ### Tip:  
+    > You can download the Spark driver logs of transformation flows on file by clicking the <span class="SAP-icons-V5"></span> Download Spark Driver Logs button on the top right corner of your screen. Downloading logs can be useful for debugging a failing run. The logs are downloaded as a`.txt` file in your local *Download* file. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started.
+
 3.  Select a flow run in the left panel to view its details. The run details contain messages for all runs and metrics for the current run.
 
     -   Messages:
@@ -264,7 +268,7 @@ For more information and points to consider when using replication flows, see al
 4.  If your flow failed, you can use the following tools from the details page of the flow run to analyze and solve your issue:
 
     -   \[Data Flow and Replication Flow\] You can analyze the errors that have occurred during your flow runs, downloading the run details as a JSON file you can provide to the SAP Support for troubleshooting: Click <span class="SAP-icons-V5"></span> Download Run Details.
-    -   \[Data Flow\] You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Send this health analysis log to your support team to get help in case of issues.
+    -   \[Data Flow\] You can also perform a complete health analysis and generate detailed logs if you choose *Run* \> *Start Run with Checkup*. Once the file is generated, click <span class="SAP-icons-V5"></span> Download Run Details and send this health analysis log to your support team to get help in case of issues.
     -   \[Transformation Flow\]: You can run your transformation flow with Support Settings. For more information, see [Explore Transformation Flows](explore-transformation-flows-7588192.md).
 
 5.  To view and modify a flow, click <span class="SAP-icons-V5"></span> Open in Data Builder.

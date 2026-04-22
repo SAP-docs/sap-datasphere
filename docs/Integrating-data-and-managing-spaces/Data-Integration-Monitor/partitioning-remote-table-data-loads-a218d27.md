@@ -4,7 +4,7 @@
 
 # Partitioning Remote Table Data Loads
 
-Replication capabilities depend on the data type and size. Larger data volumes can cause replication runs to terminate because of memory shortage. From the *Data Integration Monitor* \> *Remote Tables* - Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts.
+Replication capabilities depend on the data type and size. Larger data volumes can cause replication runs to terminate because of memory shortage. From the *Monitoring* \> *Data Integration* \> *Remote Tables* - Details screen, you can create partitions on columns from your dataset and break your data down into smaller and more manageable parts.
 
 Replicating remote tables with larger data volumes without having out-of-memory errors or high memory peaks can sometimes be a challenge for Data modelers. To avoid such situations, you can create partitions per remote tables and thus enable partitioned data transfer of large datasets for supported connection types \(which are all remote table-enabled connections that use a Data Provisioning agent\).
 
@@ -17,7 +17,7 @@ Replicating remote tables with larger data volumes without having out-of-memory 
 
 ## Creating Partitions for Your Remote Tables
 
-You can create partitions from the *Data Integration Monitor* \> *Remote Tables*– Details screen:
+You can create partitions from the *Monitoring* \> *Data Integration* \> *Remote Tables*– Details screen:
 
 1.  Click <span class="FPA-icons-V3"></span> of the remote table you need to create partitions for.
 2.  Go to the *Partitions* tab and click *Define Partitions*.

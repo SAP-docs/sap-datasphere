@@ -39,7 +39,7 @@ To prepare connectivity via Data Provisioning Agent, perform the following steps
 
     For more information, see [Install the Data Provisioning Agent](install-the-data-provisioning-agent-8f61850.md).
 
-2.  Add the external IPv4 address of the server on which your Data Provisioning Agent is running to the IP allowlist in SAP Datasphere. When using a proxy, the proxy's address needs to be included in IP allowlist as well.
+2.  Add the external IPv4 address of the server on which your Data Provisioning Agent is running to the IP allowlist in SAP Datasphere, or when using a proxy, add the proxy's address to the IP allowlist.
 
     > ### Note:  
     > For security reasons, all external connections to your SAP Datasphere instance are blocked by default. By adding external IPv4 addresses or address ranges to the allowlist you can manage external client connections.

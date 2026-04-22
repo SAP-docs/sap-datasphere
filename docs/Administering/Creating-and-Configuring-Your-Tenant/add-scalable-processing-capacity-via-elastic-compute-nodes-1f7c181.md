@@ -17,7 +17,7 @@ To create and manage elastic compute nodes, you must have a global role that gra
 -   *Space Files* \(`-------M`\) - To add spaces and objects to elastic compute nodes.
 -   *System Information* \(`-RU-----`\) - To access the tenant settings needed to manage elastic compute nodes.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -32,7 +32,7 @@ The elastic compute nodes will take over the read peak loads and support the SAP
 
 Using elastic compute nodes can lower the overall cost of ownership: instead of sizing your tenant on the basis of the maximum load, you can use elastic compute nodes to handle short periods of exceptional peak load. For example, you can use an elastic compute node for two months in the year to support end-of-year reporting, or you can use an elastic compute node to cover a specific eight-hour period in the working day.
 
-To identify peak loads, you can look at the following areas in the *System Monitor*: out-of-memory widgets in the *Dashboard* tab, key figures in *Statement Logs*, views used in MDS statements in *Statement Logs*. See [Monitoring SAP Datasphere in the System Monitor](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
+To identify peak loads, you can look at the following areas in the *Monitoring* apps: out-of-memory widgets in the *System and Spaces Dashboard* app, key figures and views used in MDS statements in the *Expensive Statement Logs* app. See [Monitoring SAP Datasphere](../monitoring-sap-datasphere-d39b865.md).
 
 
 

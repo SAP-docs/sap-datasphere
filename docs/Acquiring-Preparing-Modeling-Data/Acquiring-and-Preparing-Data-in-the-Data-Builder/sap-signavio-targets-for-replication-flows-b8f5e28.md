@@ -18,6 +18,17 @@ The default load type is *Initial Only*. You can change it to *Initial and Delta
 
 
 
+<a name="loiob8f5e28d34b44d71a52f6265e4fc245f__section_mask_columns"/>
+
+## Mask Sensitive Column Data
+
+You can mask sensitive column data in replication flows from ABAP sources to SAP Signavio targets using the`SHA3-256` algorithm. To do this, open the *Projection* dialog, choose the *Mapping* tab, and then select the *Enable Hashing* checkbox for all columns containing sensitive data.
+
+> ### Note:  
+> The `SHA3_256` function is supported for numeric and string data types only. It can’t be combined with other functions or constants \(Boolean, binary, and date/time\), and if added after a run, the replication flow must be restarted.
+
+
+
 <a name="loiob8f5e28d34b44d71a52f6265e4fc245f__section_a2x_zbg_tcc"/>
 
 ## Additional Properties

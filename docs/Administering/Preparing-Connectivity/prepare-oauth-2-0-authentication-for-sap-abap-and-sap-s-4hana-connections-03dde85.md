@@ -23,7 +23,7 @@ You can use OAuth 2.0 authentication with client credentials for SAP ABAP \(on-p
 
 -   You have set up Secure Network Commuications \(SNC\) between Cloud Connector and the ABAP system.
 
-    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/viewer/DRAFT/cca91383641e40ffbe03bdc78f00f681/Validation/en-US/f09eefe71d1e4d4484e1dd4b121585fb.html) in the *SAP BTP Connectivity* documentation.
+    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/initial-configuration-rfc) in the *SAP BTP Connectivity* documentation.
 
 
 

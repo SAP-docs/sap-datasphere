@@ -43,11 +43,11 @@ You can monitor memory consumption in the task logs if you switch on the option 
 
 You can also use SAP HANA Views:
 
--   [M\_EXPENSIVE\_STATEMENT](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/20af736e751910148162e2ab1982f035.html): This view provides all statements, for which memory consumption, CPU time or duration exceed the corresponding specified thresholds. For more information, see [Configure Monitoring](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor.") :arrow_upper_right:
+-   [M\_EXPENSIVE\_STATEMENT](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/20af736e751910148162e2ab1982f035.html): This view provides all statements, for which memory consumption, CPU time or duration exceed the corresponding specified thresholds. For more information, see [Configure Monitoring](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the Monitoring app.") :arrow_upper_right:
 
 -   Memory consumed during insert statements can be tracked using the view: [M\_ACTIVE\_PROCEDURES](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_4_QRC/en-US/f3d23305d0dd495590e0061c3546de9a.html).
 
-For more information on how to use system view, see [Working with SAP HANA Monitoring Views](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "You can obtain independent access to the underlying SAP HANA monitoring views that power the System Monitor to do additional analysis on them and visualize them in SAP Analytics Cloud.") :arrow_upper_right:.
+For more information on how to use system view, see [Working with SAP HANA Monitoring Views](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4ab45090c5684ebf8765757a1dfc4e5d.html "You can obtain independent access to the underlying SAP HANA monitoring views that power the Monitoring apps to do additional analysis on them and visualize them in SAP Analytics Cloud.") :arrow_upper_right:.
 
 
 
@@ -164,7 +164,10 @@ Proper configuration of these limitations is crucial to avoid errors indicating 
 
 Preventing and Managing Out of Memory Situations
 
--   Regularly analyze system memory usage and allocation limits using system monitoring tools. For more information see, [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right:.
+-   Regularly analyze system memory usage and allocation limits using system monitoring tools. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right:.
 -   Carefully configure workload class limitations to optimize resource allocation without triggering OOM events. For more information see, [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
 -   Run View Analyzer to optimize your model and improve memory consumption of your view. For more information see, [Getting Started with View Analyzer](getting-started-with-view-analyzer-e0aeddb.md).
+
+> ### Note:  
+> Table user-defined functions that cannot be unfolded in persisted views with partitions can prevent pushdown of filters, potentially causing out-of-memory issues. Use the Explain Plan without memory consumption to identify problematic table user-defined functions and optimize persisted views to avoid memory bottlenecks. For more information about using the Explain Plan for persisted view, see [Getting Started with View Analyzer](getting-started-with-view-analyzer-e0aeddb.md). For more information about the Explain Plan and table user-defined functions, see [https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-sqlscript-reference/explain-plan-for-table-user-defined-functions](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-sqlscript-reference/explain-plan-for-table-user-defined-functions) *SAP HANA Cloud, SAP HANA SQL Script Reference*.
 

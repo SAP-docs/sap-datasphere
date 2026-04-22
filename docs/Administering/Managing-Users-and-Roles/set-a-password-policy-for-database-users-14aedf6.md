@@ -17,7 +17,7 @@ To set a password policy for database user passwords, you must have a global rol
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -40,6 +40,6 @@ Users with a space administrator role can create database users in their spaces 
     After this period, the user will be prompted to set a new password.
 
     > ### Note:  
-    > The password policy applies only to database users where the *Enable Password Policy* property is selected, for both existing and new users. If a user does not log on with their initial password during this period, they will be deactivated until their password is reset.
+    > The password policy applies only to database users where the *Enable Password Lifetime* property is selected, for both existing and new users. If a user does not log on with their initial password during this period, they will be deactivated until their password is reset.
 
 

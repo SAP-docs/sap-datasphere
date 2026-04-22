@@ -38,12 +38,24 @@ Description
 <tr>
 <td valign="top">
 
-Name, type, status, and product views
+Name and view count
 
 </td>
 <td valign="top">
 
-Displays the data product's name and type, its provisioning and release statues, and the number of times it was viewed. Choose on a status label to learn what it means. 
+Displays the data product's name and number of times it was viewed. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Statuses
+
+</td>
+<td valign="top">
+
+Displays the provisioning and release statuses \(for example, *Active* or *Inactive*\) for a data product. Choose on a status label to learn what it means.
 
 </td>
 </tr>
@@ -59,7 +71,7 @@ Displays the data provider, content aggregator, and visibility context informati
 
 -   Displays the name of the data provider and contact information.
 -   Displays the content aggregator's name if the data provider's profile is managed by a content aggregator. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/ba1b703d905547b392c09b35c1028de1.html "Catalog & Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
--   Displays the context for the data product. Contexts control who has access to the data product. For a user to be able to use a data product, they must belong to a context that is assigned to the data product.
+-   Displays the visibility context for the data product. Contexts control who has access to the data product. For a user to be able to use a data product, they must belong to a context that is assigned to the data product.
 
 
 
@@ -118,7 +130,7 @@ Description
 <tr>
 <td valign="top">
 
-*Install*
+Install
 
 </td>
 <td valign="top">
@@ -130,7 +142,7 @@ Opens a dialog for installing the free data product.
 <tr>
 <td valign="top">
 
-*Install with License Key*
+Install with License Key
 
 </td>
 <td valign="top">
@@ -142,7 +154,7 @@ Opens a dialog for installing a data product that requires a license key. If you
 <tr>
 <td valign="top">
 
-*Request Access*
+Request Access
 
 </td>
 <td valign="top">
@@ -154,7 +166,7 @@ Opens an email message that you can edit and send to the data provider to reques
 <tr>
 <td valign="top">
 
-*Open Impact and Lineage*
+Open Impact and Lineage
 
 </td>
 <td valign="top">

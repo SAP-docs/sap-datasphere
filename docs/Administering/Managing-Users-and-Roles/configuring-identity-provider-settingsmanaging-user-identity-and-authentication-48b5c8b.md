@@ -1,8 +1,8 @@
 <!-- loio48b5c8b637a54fa491594272941855b9 -->
 
-# Managing User Identity and Authentication
+# Configuring Identity Provider SettingsManaging User Identity and Authentication
 
-The system owner can choose how to manage user identity and authentication for its SAP Datasphere tenant.
+By default, SAP Datasphere uses the identity provider \(IdP\) SAP Cloud Identity. SAP Datasphere also supports single sign-on \(SSO\), using your custom IdP.The system owner can choose how to manage user identity and authentication for its SAP Datasphere tenant.
 
 There are several methods to authenticate to SAP Datasphere.
 
@@ -39,5 +39,5 @@ To allow users to sign in to your SAP Datasphere tenant and to other SAP product
 
 For your SAP Datasphere tenant, you can enable single sign-on authentication to a custom IdP, which is a separate solution, for example Azure AD. For more information, see [Enabling a Custom SAML Identity Provider \(Legacy Custom IdP\)](enabling-a-custom-saml-identity-provider-legacy-custom-idp-9b26536.md).
 
-If you are having trouble signing in, you can use the Identity Provider Administration tool to repair your custom IdP. For more information, see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md).
+If you are having trouble signing in, you can use the Identity Provider Administration tool to repair your custom IdP. For more information, see [Identity Provider AdministrationAccess the Identity Provider Administration Tool](identity-provider-administrationaccess-the-identity-provider-administration-tool-df15ed8.md).
 

@@ -47,7 +47,7 @@ To configure your bundled SAP Cloud Identity Services tenant for your SAP Datasp
 
 You can provision up to two bundled SAP Cloud Identity Services tenant roles: test and production.
 
-1.  Sign in to the Identity Provider Administration tool \(see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md)\).
+1.  Sign in to the Identity Provider Administration tool \(see [Identity Provider AdministrationAccess the Identity Provider Administration Tool](identity-provider-administrationaccess-the-identity-provider-administration-tool-df15ed8.md)\).
 
     All tenants that you own will appear as cards on the *My Tenants* page. Under *Current IdP*, the name and type of authentication method used will appear: default, bundled, or custom.
 
@@ -230,7 +230,7 @@ You can disable your bundled SAP Cloud Identity Services tenant and revert to us
 > ### Note:  
 > Users who sign in to SAP Datasphere will not be able to sign in to other SAP products via SSO.
 
-1.  Sign in to the Identity Provider Administration tool \(see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md)\).
+1.  Sign in to the Identity Provider Administration tool \(see [Identity Provider AdministrationAccess the Identity Provider Administration Tool](identity-provider-administrationaccess-the-identity-provider-administration-tool-df15ed8.md)\).
 2.  In the *My Tenants* page, go to the bundled tenant you want to modify, then select <span class="FPA-icons-V3"></span>** \> *Disable Bundling*.
 3.  Select *SAP Cloud Identity \(Default\)* and click *Step 2*.
 4.  If users are out-of-sync between SAP Datasphere and your default IdP, click *Synchronize Users*. When the process bar reaches 100%, click *Step 3*.
@@ -253,7 +253,7 @@ To establish a trust relationship between your SAML IdP and your SAP Datasphere 
 > ### Note:  
 > Users who sign in to SAP Datasphere will not be able to sign in to other SAP products via SSO.
 
-1.  Sign in to the Identity Provider Administration tool \(see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md)\).
+1.  Sign in to the Identity Provider Administration tool \(see [Identity Provider AdministrationAccess the Identity Provider Administration Tool](identity-provider-administrationaccess-the-identity-provider-administration-tool-df15ed8.md)\).
 2.  In the *My Tenants* page, go to the bundled tenant you want to disable, then select <span class="FPA-icons-V3"></span>** \> *Disable Bundling*.
 3.  Select *SAML Single Sign-On \(SSO\)* and click *Step 2*.
 4.  click *Download* and save the file, which contains the SAP Datasphere metadata.

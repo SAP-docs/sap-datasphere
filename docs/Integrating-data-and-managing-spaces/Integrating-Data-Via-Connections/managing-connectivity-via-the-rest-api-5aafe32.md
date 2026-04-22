@@ -1,24 +1,24 @@
 <!-- loio5aafe32418b14f7e99528b49f48bd3ac -->
 
-# Manage Connectivity via REST APIs
+# Managing Connectivity via the REST API
 
 You can manage TLS server certificates and connections via the *Certificates* and *Connections* REST APIs. Creating and editing connections via the API is supported for SAP SuccessFactors connections only.
 
 This topic contains the following sections:
 
--   [Prerequisites](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites)
--   [Introduction to the Connectivity REST APIs](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
--   [Log in with an OAuth Client](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_OAuth_login)
--   [Obtain a CSRF Token](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_CSRF_Token)
--   [List TLS Server Certificates](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_certificates)
--   [Upload TLS Server Certificates](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_upload_certificates)
--   [Delete TLS Server Certificates](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_certificates)
--   [List Connections in a Space](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_connections)
--   [Read Connection Details](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_read_connections)
--   [Create Connection to SAP SuccessFactors](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections)
--   [Validate Connections](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_validate_connections)
--   [Edit Connection to SAP SuccessFactors](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections)
--   [Delete Connections](manage-connectivity-via-rest-apis-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_connections)
+-   [Prerequisites](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites)
+-   [Introduction to the Connectivity REST APIs](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
+-   [Log in with an OAuth Client](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_OAuth_login)
+-   [Obtain a CSRF Token](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_CSRF_Token)
+-   [List TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_certificates)
+-   [Upload TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_upload_certificates)
+-   [Delete TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_certificates)
+-   [List Connections in a Space](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_connections)
+-   [Read Connection Details](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_read_connections)
+-   [Create Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections)
+-   [Validate Connections](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_validate_connections)
+-   [Edit Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections)
+-   [Delete Connections](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_connections)
 
 
 
@@ -31,7 +31,7 @@ To manage certificates, you must have a global role that grants you the followin
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 To create, edit, validate, and delete connections, you must have a scoped role that grants you access to a space with the following privileges:
 
@@ -39,7 +39,7 @@ To create, edit, validate, and delete connections, you must have a scoped role t
 -   *Data Warehouse Connection* \(`CRUD----`\) - To create, edit, validate, or delete connections.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Space Administrator* and *DW Integrator* role templates, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* and *DW Integrator* role templates, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 You must, in addition:
 

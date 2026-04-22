@@ -8,7 +8,7 @@ You should regularly monitor your tenant disk storage and delete unneeded data. 
 
 ## Monitor Your Tenant Disk Storage
 
-You can monitor your tenant disk storage usage in the *System Monitor* \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
+You can monitor your tenant disk storage usage in the *System Monitor* \(see [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md)\).
 
 
 

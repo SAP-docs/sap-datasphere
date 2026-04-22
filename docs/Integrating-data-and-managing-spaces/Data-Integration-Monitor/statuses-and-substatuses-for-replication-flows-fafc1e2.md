@@ -1,5 +1,7 @@
 <!-- loiofafc1e21bff040c386c7d691caa30915 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Statuses and Substatuses for Replication Flows
 
 Replication flows statuses and sub-statuses provides a better understanding of data loading processes and potential errors. It is useful for monitoring and troubleshooting replication flows.

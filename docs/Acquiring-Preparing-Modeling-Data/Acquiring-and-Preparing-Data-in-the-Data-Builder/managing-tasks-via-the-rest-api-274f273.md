@@ -1,20 +1,20 @@
 <!-- loio274f2736465c4c48a091c675880502a2 -->
 
-# Manage Tasks Using REST APIs
+# Managing Tasks via the REST API
 
-You can run task chains and review task logs using REST APIs.
+You can run task chains and review task logs via the REST API.
 
 
 
-## Introduction to Tasks APIs
+## Introduction to the Tasks API
 
-The Task REST APIs allow you to run task and monitor task in SAP Datasphere. You can:
+The Tasks REST API allow you to run task and monitor task in SAP Datasphere. You can:
 
 -   Run a task chain.
 -   Retrieve task run details with log ID.
 -   Retrieve existing history of object task logs.
 
-To use the Tasks REST APIs, you must have the same roles and privileges that are required to run task chains and view task logs in SAP Datasphere. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
+To use the Tasks REST API, you must have the same roles and privileges that are required to run task chains and view task logs in SAP Datasphere. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
 
 Obtain the following parameters for an OAuth client defined in your SAP Datasphere tenant with *Purpose* set to *Interactive Usage* or *Technical User*:
 
@@ -57,12 +57,12 @@ Users of a client with a *Technical User* purpose can then access their resource
 </table>
 
 > ### Note:  
-> To run a task chain with Interactive Usage purpose using REST APIs, you need authorized consent. Users with Interactive Usage purpose without consent can receive task run log details and history but will not be able to run a task chain. In the profile settings under *Authorized Consent Settings*, you can give and revoke consent. For more information see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+> To run a task chain with Interactive Usage purpose using the REST API, you need authorized consent. Users with Interactive Usage purpose without consent can receive task run log details and history but will not be able to run a task chain. In the profile settings under *Authorized Consent Settings*, you can give and revoke consent. For more information see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 > ### Note:  
 > BW process chains cannot be run in task chains by a technical user. The technical user in Datasphere does not have a mapped user on the BW side. Please use an approved business user role to run BW process chains in a task chain.
 
-The detailed documentation of the Data Sharing Cockpit REST APIs is available on the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
+The detailed documentation of the Tasks REST API is available on the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 
 
 

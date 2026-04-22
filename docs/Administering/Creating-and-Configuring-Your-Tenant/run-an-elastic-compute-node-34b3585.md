@@ -102,7 +102,7 @@ If the status of an elastic compute node is *Stopping*, you can cancel the stop 
 
 2.  Click *View Logs* in the right-hand area of the page.
 
-    The *Task Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node.
+    The *Task Logs* app of the *Monitoring* tab opens, displaying information filtered on the elastic compute node.
 
 3.  Do one of the following actions:
 
@@ -167,7 +167,7 @@ Monitor an elastic compute node to see for example all its start and stop runs o
 
 2.  Click *View Logs*.
 
-    The *Task Logs* tab of the *System Monitor* opens, displaying information filtered on the elastic compute node. For more information about logs in the *System Monitor*, see [Monitoring SAP Datasphere in the System Monitor](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
+    The *Task Logs* app opens, displaying information filtered on the elastic compute node. For more information about task logs, see [Reviewing Task Logs](../reviewing-task-logs-399e52f.md).
 
     If local tables or persisted views were not replicated, you can go back to the elastic compute node and update it to replicate them.
 
@@ -175,5 +175,5 @@ Monitor an elastic compute node to see for example all its start and stop runs o
 > ### Note:  
 > To monitor the start and stop runs for all elastic compute nodes, you can click *View Logs* in the left-hand area of the *Space Management*.
 
-You can monitor key figures related to an elastic compute node \(such as start and end time of the last run; amount of memory used for data replication\), in the *Elastic Compute Nodes* tab of the *System Monitor*  \(see [Monitoring SAP Datasphere in the System Monitor](../Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
+You can monitor key figures related to an elastic compute node \(such as start and end time of the last run; amount of memory used for data replication\) in the *Elastic Compute Nodes* app\(see [Monitoring Elastic Compute Nodes](../monitoring-elastic-compute-nodes-1d5f583.md)\).
 

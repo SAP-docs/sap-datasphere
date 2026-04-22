@@ -21,7 +21,7 @@ To upload a CSV file to a local table, you must have a scoped role that grants y
 -   **Data Warehouse Data Integration** \(--U-----\) – The **DW Integrator** role template, for example, grants this privilege.
 -   **Data Warehouse Consumption** \(--U-----\) – The **DW Modeler** role template, for example, grants this privilege.
 
-For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 
 
@@ -59,7 +59,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
 4.  Click *OK* to start the upload.
 
     > ### Note:  
-    > Once the load action is completed, you can click on the notification from the notification area to navigate to the detailed log, or alternatively navigate to the detailed logs via the menu System Monitor -\> Task Logs
+    > Once the load action is completed, you can click on the notification from the notification area to navigate to the detailed log, or alternatively navigate to the detailed logs via the menu *Monitoring* -\> *Task Logs*
 
 
 
@@ -81,7 +81,7 @@ To delete local table records, you must have a scoped role that grants you acces
     > For both privileges, the "Update" permission allows you to directly run the records deletion, and the "Execute" permission to schedule it.
 
 
-For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 
 
@@ -94,7 +94,7 @@ To delete table records:
 3.  Depending on whether your local table is delta-enabled or not, you will have different options. In the case of a table that is not delta-enabled, you can delete all records contained in the table. In the case of a table that is delta capture enabled, you can choose between 3 options:
     -   Delete All Records: \[Table with or without delta capture\] This option allows you to delete all records from the table, no matter if they are used by other apps or not. It's up to you to check if the data you are about to delete have dependencies.
     -   Delete All Records \(Mark as "Deleted"\): \[Delta capture table only\]. This option doesn't physically delete the records. They will be marked as to be deleted \(they take the Change Type “D”\) but these records can still be processed by other apps until you decide to permanently delete them.
-    -   Delete all records marked for deletion which are older than the specified number of days: \[Delta capture table only\] If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed, such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed according to the retention period you've defined. The default retention period is 90 days.
+    -   Delete all records marked for deletion which are older than the specified number of days: \[Delta capture table only\] If your table is delta capture enabled, when a record is deleted, it’s marked as deleted so that it won’t be visible in consuming \(view\) models, but it’s not physically deleted from the database. Indeed, such deletion records from local tables with delta capture are considered by flows that are using the load type *Initial and Delta*. The records marked as deleted can’t be physically deleted until they have been processed by these flows. For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). Once this is given, selecting this option allows you to safely delete records already fully-processed according to the retention period you've defined. The default retention period is 0 days, and the maximum retention period allowed is 999 days.
 
         > ### Example:  
         > Today, it's January 13, 2025. I have the following table where 5 records have been marked for deletion. To make it easier, we will consider that all records have been fully-processed by other apps and are candidates for deletion:

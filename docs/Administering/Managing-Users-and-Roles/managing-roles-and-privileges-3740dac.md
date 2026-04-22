@@ -25,7 +25,7 @@ To manage roles and privileges, you must have a global role that grants you the 
 -   *User* \(`-------M`\) - To add users to roles.
 -   *Spaces* \(`-------M`\) - To add spaces to scoped roles.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -33,8 +33,8 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 In addition to working with roles in the *Security* tool, you can also:
 
--   List global roles, list users assigned to a global role, and add or remove users from global roles using the `datasphere` command line interface \(see [Managing Global Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/7db69de1d27f422fb153e80680b28335.html "You can use the datasphere command line interface to list and read global roles and add users to and remove users from them.") :arrow_upper_right:\).
--   List, read, create, update, and delete scoped roles, and add or remove users or spaces from scoped roles using the `datasphere` command line interface \(see [Managing Scoped Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/85085a35a58a4589bc121fb94efc4876.html "You can use the datasphere command line interface to create, read, update, and delete scoped roles.") :arrow_upper_right:\).
+-   List global roles, list users assigned to a global role, and add or remove users from global roles using the `datasphere` command line interface \(see [Managing Global Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/7db69de1d27f422fb153e80680b28335.html "You can use the datasphere command line interface to list and read global roles and add users to and remove users from them.") :arrow_upper_right:\).
+-   List, read, create, update, and delete scoped roles, and add or remove users or spaces from scoped roles using the `datasphere` command line interface \(see [Managing Scoped Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/85085a35a58a4589bc121fb94efc4876.html "You can use the datasphere command line interface to create, read, update, and delete scoped roles.") :arrow_upper_right:\).
 
 
 
@@ -42,16 +42,18 @@ In addition to working with roles in the *Security* tool, you can also:
 
 ## Introduction to Roles and Privileges
 
+A role is a set of permissions grouped together and is then assigned to users. The pre-defined standard roles are grouped by the license type they consume. With SAP Datasphere you would, for example, see SAP Datasphere specific roles. Tenant administrators can also create their own custom roles by selecting individual privileges and permissions they would like their new role to have.
+
 A role is a set of privileges and permissions.
 
 SAP Datasphere delivers a set of standard roles and you can create your own custom roles:
 
--   Standard role - A role delivered with SAP Datasphere that includes a set of privileges. As a best practice, a tenant administrator can use these roles as templates for creating custom roles for different business needs. See [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+-   Standard role - A role delivered with SAP Datasphere that includes a set of privileges. As a best practice, a tenant administrator can use these roles as templates for creating custom roles for different business needs. See [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
 -   Custom role - A role that a tenant administrator creates to choose specific privileges as needed. See [Create a Custom Role](create-a-custom-role-862b88e.md).
 
 Each standard or custom role is either a global role or a template for scoped roles:
 
--   Global role - A role that enables users assigned to it to perform actions that are not space-related, typically a role that enables to administrate the tenant. A standard or custom role is considered as global when it includes global privileges. A tenant administrator can assign a global role to the relevant users. See [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
+-   Global role - A role that enables users assigned to it to perform actions that are not space-related, typically a role that enables to administrate the tenant. A standard or custom role is considered as global when it includes global privileges. A tenant administrator can assign a global role to the relevant users. See [Assign Roles to UsersAssign Users to a Role](assign-roles-to-usersassign-users-to-a-role-57a7880.md).
 -   Scoped role - A role that inherits a set of privileges from a standard or custom role and assigns them to one or more users for one or more spaces. Users assigned to a scoped role can perform actions in the assigned spaces. A tenant administrator can create a scoped role. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
 For more information on global and scoped privileges, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md).
@@ -98,7 +100,7 @@ The global role can be:
 -   A custom role that you create from a template \(a standard global role or another custom role containing global privileges\).
 
 
-To assign a user to a global role, see [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
+To assign a user to a global role, see [Assign Roles to UsersAssign Users to a Role](assign-roles-to-usersassign-users-to-a-role-57a7880.md).
 
 </td>
 <td valign="top">
@@ -121,6 +123,6 @@ To assign a user to a scoped role, see [Create a Scoped Role to Assign Privilege
 > ### Note:  
 > For complete lists of standard roles, privileges and permissions, see:
 > 
-> -   [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md)
+> -   [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md)
 > -   [Privileges and Permissions](privileges-and-permissions-d7350c6.md)
 

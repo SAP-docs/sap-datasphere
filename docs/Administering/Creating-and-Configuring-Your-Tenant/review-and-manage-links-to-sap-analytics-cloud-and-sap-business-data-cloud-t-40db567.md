@@ -18,7 +18,7 @@ To view the *Administration* page containing the *Tenant Links* tab, you must ha
 -   *System Information* \(`-RU-----`\) - To access the *System* tool.
 -   *User* \(`-R------`\) - To access the *Administration* area in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 > ### Note:  
 > To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *System Owner* role.
@@ -156,62 +156,8 @@ To select an SAP Analytics Cloud tenant to make available via the <span class="S
 
 ## Data Storage for Planning
 
-If your SAP Datasphere tenant has been selected to store planning data for an SAP Analytics Cloud tenant, then the following information is displayed:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Property
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Datasphere URL
-
-</td>
-<td valign="top">
-
-\[read-only\] Displays the URL for the current SAP Datasphere tenant.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Analytics Cloud URL
-
-</td>
-<td valign="top">
-
-\[read-only\] Displays the URL of the SAP Analytics Cloud tenant storing planning data in the current SAP Datasphere tenant.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Tenant Link Artifacts
-
-</td>
-<td valign="top">
-
-\[read-only\] Displays the name of the OAuth client the SAP Analytics Cloud tenant uses to connect to SAP Datasphere.
-
-</td>
-</tr>
-</table>
-
-For more information about storing SAP Analytics Cloud planning data in SAP Datasphere, see:
+Your SAP Datasphere tenant may be selected to store planning data for an SAP Analytics Cloud tenant. For more information, see:
 
 -   [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:
--   [Configure Data Storage for Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/b103a251020746f786ec0860fa51a63a/658629503d5049e794ddd809ee554853.html) \(in the *SAP Analytics Cloud* documentation\)
+-   [Configure Data Storage for Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/b103a251020746f786ec0860fa51a63a/658629503d5049e794ddd809ee554853.html) in the *SAP Analytics Cloud* documentation
 

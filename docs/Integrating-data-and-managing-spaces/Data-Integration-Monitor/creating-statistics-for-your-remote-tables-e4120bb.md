@@ -33,7 +33,7 @@ When you generate statistics from the *Remote Queries* monitor, SAP Datasphere s
 
 Statistics can be created from the *Remote Queries* monitor.
 
-1.  From the *Data Integration Monitor* \(<span class="FPA-icons-V3"></span>\), select *Remote Queries* \> *Remote Table Statistics*.
+1.  From :desktop_computer: *Monitoring* \> :fast_forward: *Data Integration* , select *Remote Queries* \> *Remote Table Statistics*.
 
     > ### Note:  
     > With the different tabs, you can navigate between the remote tables in *Data Access: Remote* or *Data Access: Replicated*. However, statistics can be created only on remote tables with *Data Access: Remote*. However, you can still navigate in existing statistics from previous actions.

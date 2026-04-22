@@ -29,7 +29,7 @@ To run and share task chains and configure email notifications, you must, in add
 -   *Data Warehouse Data Builder* \(`------S-`\) - To share task chains to other spaces.
 -   *User* \(`R-------`\) - To display and add notification recipients from a list of current tenant members, when setting up email notifications.
 
-The *DW Modeler* and *DW Space Administrator* role templates together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants the privileges to create and manage task chains, and the *DW Integrator* role template grants the privileges to run and share them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 The following prerequisites also apply:
 
@@ -64,7 +64,7 @@ When creating a task chain, you can create linear task chains in which one task 
 You can turn on the *Ignore Error* button in the right side panel to disregard the status of the single object task in the status evaluation of the entire task chain.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your system monitor to look at your workload distribution. For more information see, [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right: or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 When creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion. After deploying a task chain, you can add tenant users or email addresses to notify individuals when task chain runs are completed.
 
@@ -75,7 +75,7 @@ In addition to working with task chains in the editor, you can also:
 -   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
 -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
--   Run task chains using a REST API \(see [Manage Tasks Using REST APIs](manage-tasks-using-rest-apis-274f273.md)\).
+-   Run them via a REST API \(see [Managing Tasks via the REST API](managing-tasks-via-the-rest-api-274f273.md)\).
 
 
 
@@ -301,18 +301,24 @@ In addition to working with task chains in the editor, you can also:
     -   Data flow - Run
     -   Replication Flow - Run
     -   Transformation flow - Run
-    -   Local table - Delete Records with Change Type "Deleted"
-    -   Local Table \(File\) - Merge, Optimize or Delete Records.
+    -   Local table:
 
-        > ### Note:  
-        > -   Merge: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run..
-        > -   Optimize: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\)..
-        > -   Delete Records: Delete records from your local table \(file\). Under Settings, define what type of deletion you want:
-        >     -   *Delete All Records \(Mark as Deleted\)*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-        >     -   *Delete Previous Versions \(Vacuum\), which are older than the specified number of days*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. The default value is 90 days. The minimum authorized value is 7 so that records from the last 7 days cannot be deleted. In addition, only records that have been fully processed can be deleted. Note that, however, even if the data is deleted through a vacuum task, data is kept for another 14 days in the file space storage. For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right: 
-        > 
-        > 
-        > For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md) and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
+        -   Delete Records with Change Type "Deleted" \(for local table where delta capture is enabled\)
+        -   Delete All Records
+        -   Delete Filtered Records
+
+        For more information, see [Controlling Deletion of Local Table Records](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/2a59b7142e1b4d478b0bf4063084261e.html "Delete records for local tables, on-demand, using filter conditions or using a schedule.") :arrow_upper_right:
+
+    -   Local Table \(File\)
+
+        -   Merge: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run.
+        -   Optimize:Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\).
+        -   Delete Filtered Records: Delete records according to the defined criteria.
+        -   Delete All Records: Delete records from your local table \(file\). Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
+        -   *Delete Previous Versions \(Vacuum\)*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. The default value is 7 days. The minimum authorized value is 7 so that records from the last 7 days cannot be deleted, and the maximum value is 999 days. In addition, only records that have been fully processed can be deleted. Note that, however, even if the data is deleted through a vacuum task, data is kept for another 14 days in the file space storage. As it is very likely that you will not be able to go back more than 30 days, we recommend that you do not enter a period longer than 30 days as a vacuum deletion criterion.For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:
+
+            For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md), [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
+
 
         \[Optional\]. When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator.
 
@@ -346,7 +352,7 @@ In addition to working with task chains in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[File Space Only\] When creating a file space, administrators have defined default *Apache Spark Applications* to run tasks \(in Workload Management\). You can update these settings following your needs by object types: 
+    \[File Space Only\] If you select the activity merge or optimize, you can add additional settings:
 
     -   *Use Default*: The default application is the application selected in the table settings. If no default application is defined there, the application selected by an administrator during the file space creation is used. However, if the settings have been changed at the object level, in the *Data Integration Monitor*, this value becomes the default value, overriding the value defined in *Workload Management*.
     -   *Define New Setting for This Task*: Select another *Apache Spark Application* that fits your needs.
@@ -371,6 +377,24 @@ In addition to working with task chains in the editor, you can also:
     <tr>
     <td valign="top">
     
+    Deletion Settings
+    
+    </td>
+    <td valign="top">
+    
+    Depending on the selected deletion activity, you can add criteria for the records deletion:
+
+    -   Define a filter: You define a filter, and based on this filter, the records will be deleted.
+    -   Define a fixed number: Delete records that are older than the defined value. Minimum value is 0 for local tables and 7 for local tables \(file\). Maximum value is 999 days.
+    -   Use a task chain parameter: Take the value defined in the task chain parameter to delete records.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Status
     
     </td>
@@ -389,6 +413,18 @@ In addition to working with task chains in the editor, you can also:
     <td valign="top">
     
     Shows the names of the input parameters in the task object. For more information about input parameters in task chains, see [Create Input Parameters in Task Chains](create-input-parameters-in-task-chains-c9906ec.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Enable Checkup
+    
+    </td>
+    <td valign="top">
+    
+    \[Data Flow Only\] If your task running a data flow fails, you can enable this option to perform a health analysis log to be sent to your support team to get help in case of issues. Once the file is generated, go the *Flows* monitor, and navigate to the details screen to download the run details and send it to your support team. For more information, [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
     
     </td>
     </tr>

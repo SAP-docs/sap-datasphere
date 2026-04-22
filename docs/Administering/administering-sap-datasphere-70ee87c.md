@@ -56,9 +56,11 @@ You must assign one or more roles to each of your users via scoped roles and glo
 
 -   Roles providing privileges to administer the SAP Datasphere tenant:
     -   **System Owner** - Includes all user privileges to allow unrestricted access to all areas of the application. Exactly one user must be assigned to this role. 
+    -   **DW Administrator** - Can create users and spaces and has full privileges across the whole of the SAP Datasphere tenant. 
     -   **DW Administrator** - Can create users, roles and spaces and has other administration privileges across the SAP Datasphere tenant. Cannot access any of the apps \(such as the *Data Builder*\). 
 
 -   Roles providing privileges to work in SAP Datasphere spaces:
+    -   **DW Space Administrator** - Can manage all aspects of a space \(except the *Space Storage* and *Workload Management* properties\) and can create data access controls and use the *Content Network*.
     -   **DW Space Administrator** \(template\) - Can manage all aspects of the spaces users are assigned to \(except the *Space Storage* and *Workload Management* properties\) and can create data access controls.
         -   *DW Scoped Space Administrator* - This predefined scoped role is based on the DW Space Administrator role and inherits its privileges and permissions.
 
@@ -66,20 +68,24 @@ You must assign one or more roles to each of your users via scoped roles and glo
             > Users who are space administrators primarily need scoped permissions to work with spaces, but they also need some global permissions \(such as Lifecycle when transporting content packages\). To provide such users with the full set of permissions they need, they must be assigned to a scoped role \(such as the *DW Scoped Space Administrator*\) to receive the necessary scoped privileges, but they also need to be assigned directly to the *DW Space Administrator* role \(or a custom role that is based on the *DW Space Administrator* role\) in order to receive the additional global privileges.
 
 
+    -   *DW Integrator* - Can integrate data via connections and can manage and monitor data integration in spaces of which they are a member.
     -   *DW Integrator* \(template\) - Can integrate data via connections and can manage and monitor data integration in a space.
         -   *DW Scoped Integrator* - This predefined scoped role is based on the DW Integrator role and inherits its privileges and permissions.
 
 
+    -   **DW Modeler** - Can create and edit objects in the *Data Builder* and *Business Builder* and view data in all objects in spaces of which they are a member.
     -   **DW Modeler** \(template\) - Can create and edit objects in the *Data Builder* and *Business Builder* and view data in objects.
         -   *DW Scoped Modeler* - This predefined scoped role is based on the DW Modeler role and inherits its privileges and permissions.
 
 
+    -   **DW Viewer** - Can view objects in spaces of which they are a member and view data output by views that are exposed for consumption in these spaces.
     -   **DW Viewer** \(template\) - Can view objects and view data output by views that are exposed for consumption in spaces.
         -   *DW Scoped Viewer* - This predefined scoped role is based on the DW Viewer role and inherits its privileges and permissions.
 
 
 
 -   Roles providing privileges to consume the data exposed by SAP Datasphere spaces:
+    -   **DW Consumer** - Can consume data exposed by SAP Datasphere spaces of which they are members using SAP Analytics Cloud, and other clients, tools, and apps, but cannot log into SAP Datasphere. This role is intended for business analysts and other users who use SAP Datasphere data to drive their visualizations, but who have no need to access the modeling environment.
     -   **DW Consumer** \(template\) - Can consume data exposed by SAP Datasphere spaces, using SAP Analytics Cloud, and other clients, tools, and apps. Users with this role cannot log into SAP Datasphere. It is intended for business analysts and other users who use SAP Datasphere data to drive their visualizations, but who have no need to access the modeling environment.
         -   *DW Scoped Consumer* - This predefined scoped role is based on the DW Consumer role and inherits its privileges and permissions.
 
@@ -121,5 +127,5 @@ Administrators prepare SAP Datasphere for creating connections to source systems
 
 ## Monitor and Maintain SAP Datasphere
 
-Administrators have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
+Administrators have access to various monitoring logs and views and can, if necessary, create database analysis users to help troubleshoot issues \(see [Monitoring SAP Datasphere](monitoring-sap-datasphere-d39b865.md)\).
 

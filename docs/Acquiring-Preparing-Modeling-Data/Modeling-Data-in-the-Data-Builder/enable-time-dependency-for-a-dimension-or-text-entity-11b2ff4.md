@@ -26,7 +26,7 @@ To enable time-dependency in a dimension or text entity, you must identify one c
 3.  Locate the column containing the end date for the validity of dimension members \(or texts\) and set its *Semantic Type* to *Business Date - To*.
 
     > ### Note:  
-    > Both columns must have the same data type from the datetime family. You should avoid overlapping periods of validity, as this may lead to duplicate data in your stories.
+    > Both columns must have the same data type, which must be either *Date* or *String* \(containing appropriate date values\). You should avoid overlapping periods of validity, as this may lead to duplicate data in your stories.
 
 4.  Ensure that one or other of these dates is selected as a key.
 

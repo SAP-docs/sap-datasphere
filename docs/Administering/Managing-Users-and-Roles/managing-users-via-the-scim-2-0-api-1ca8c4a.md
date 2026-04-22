@@ -2,23 +2,23 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create Users and Assign Them to Roles via the SCIM 2.0 API
+# Managing Users via the SCIM 2.0 API
 
 You can create, read, modify and delete users and add them to roles via the SCIM 2.0 API.
 
 This topic contains the following sections:
 
--   [Introduction](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc)
--   [Log in with an OAuth Client](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_th4_syw_tbc)
--   [Obtain a CSRF Token](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_wzz_v2w_rbc)
--   [List Users](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_js2_yfw_rbc)
--   [Get a Specific User](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_esx_kxt_vbc)
--   [Create a User](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_nqs_5lp_tbc)
--   [Modify a User](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_zq5_rlp_tbc)
--   [Delete a User](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jhl_xlp_tbc)
--   [Optional User Properties](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_vpq_skn_xbc)
--   [Bulk Operations](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_hqv_wtg_qcc)
--   [Get Information About the SCIM API](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_n1l_vdy_rbc)
+-   [Introduction](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc)
+-   [Log in with an OAuth Client](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_th4_syw_tbc)
+-   [Obtain a CSRF Token](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_wzz_v2w_rbc)
+-   [List Users](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_js2_yfw_rbc)
+-   [Get a Specific User](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_esx_kxt_vbc)
+-   [Create a User](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_nqs_5lp_tbc)
+-   [Modify a User](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_zq5_rlp_tbc)
+-   [Delete a User](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jhl_xlp_tbc)
+-   [Optional User Properties](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_vpq_skn_xbc)
+-   [Bulk Operations](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_hqv_wtg_qcc)
+-   [Get Information About the SCIM API](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_n1l_vdy_rbc)
 
 
 

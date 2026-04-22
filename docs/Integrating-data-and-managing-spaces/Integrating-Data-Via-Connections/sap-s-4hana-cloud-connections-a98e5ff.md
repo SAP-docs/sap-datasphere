@@ -22,7 +22,7 @@ For information about the required prerequisites in the connected systems and SA
 ## Supported Features
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables, data flows, and model import are not supported.
+> In file spaces,remote tables, data flows, and model import are not supported.
 
 
 <table>
@@ -403,7 +403,7 @@ Enter the user password.
 ### Remote Tables
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces, remote tables are not supported.
 
 
 <table>
@@ -590,7 +590,7 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 > For federation scenarios, we recommend using the ABAP SQL service \(data provisioning option *Direct*\).
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces, remote tables are not supported.
 
 
 
@@ -607,7 +607,7 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 To enable *Model Import*, in the *Remote Tables* section select data provisioning option *Data Provisioning Agent* and then select an agent.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Model import is not supported.
+> In file spaces, model import is not supported.
 
 
 
@@ -624,7 +624,7 @@ To enable *Model Import*, in the *Remote Tables* section select data provisionin
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Data flows are not supported.
+> In file spaces, data flows are not supported.
 
 
 

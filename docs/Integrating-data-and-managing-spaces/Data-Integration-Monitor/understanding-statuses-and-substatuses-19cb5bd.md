@@ -4,7 +4,7 @@
 
 # Understanding Statuses and Substatuses
 
-When you run an activity \(replicate a remote table, persist a view, etc..\), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the *System Monitor*.
+When you run an activity \(replicate a remote table, persist a view, etc..\), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the :desktop_computer: *Monitoring* apps.
 
 In SAP Datasphere , the activities can take a minimum of 3 main statuses:
 
@@ -225,6 +225,18 @@ This task encountered an internal error, likely during preparation steps for exe
 <tr>
 <td valign="top">
 
+*TOO\_MANY\_FAILURES*
+
+</td>
+<td valign="top">
+
+This task has failed too many times in a row. To economize system resources, scheduled tasks will temporarily not be run. See [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *UNAUTHORIZED*
 
 </td>
@@ -236,5 +248,5 @@ The user could not be authenticated, has been locked, or deleted.
 </tr>
 </table>
 
-You can also monitor the statuses and substatuses in the <span class="FPA-icons-V3"></span> \(*System Monitor*\). For more information, see [Monitoring SAP Datasphere in the System Monitor](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/28910cded17a42a0bf16225309cb8bf6.html "Monitor the overall health of your SAP Datasphere tenant in the System Monitor.") :arrow_upper_right:
+You can also monitor the statuses and substatuses in the :desktop_computer: *Monitoring* apps. For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right:.
 

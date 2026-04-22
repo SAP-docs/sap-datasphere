@@ -60,7 +60,7 @@ As a consequence:
 
 -   A DW Administrator can give a role to many users in many spaces, all in one place in a scoped role. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
-    A DW Space Administrator can then manage users in their spaces and the changes are reflected in the scoped roles. See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+    A DW Space Administrator can then manage users in their spaces and the changes are reflected in the scoped roles. See [Assign Members to Your SpaceControl User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
 
@@ -227,5 +227,5 @@ Spaces
 For more information about creating a scoped role, see [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
 > ### Note:  
-> In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Managing Scoped Roles via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/85085a35a58a4589bc121fb94efc4876.html "You can use the datasphere command line interface to create, read, update, and delete scoped roles.") :arrow_upper_right:\).
+> In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Managing Scoped Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/85085a35a58a4589bc121fb94efc4876.html "You can use the datasphere command line interface to create, read, update, and delete scoped roles.") :arrow_upper_right:\).
 

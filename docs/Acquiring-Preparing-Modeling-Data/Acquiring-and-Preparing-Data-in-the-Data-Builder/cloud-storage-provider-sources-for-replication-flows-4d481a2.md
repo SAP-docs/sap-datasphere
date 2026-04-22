@@ -34,6 +34,9 @@ For more information about the corresponding connection types, see [Integrating 
 
 -   All objects in your replication flow have load type *Initial Only*.
 
+    > ### Caution:  
+    > You must ensure the folder structure and file contents remain unchanged during the initial load: SAP Datasphere reads the list of files when the replication process starts, and then processes them based on the initial snapshot. If anything changes during the load — such as folders being modified, new files being added, files being removed, or file contents being updated — it may lead to unexpected data or behavior and might cause your replication flow to fail with an error.
+
 -   All objects must have one of the following formats:
 
     -   CSV files, with one of the following delimiters:

@@ -19,8 +19,9 @@ To monitor local tables, you must have a scoped role that grants you access to a
 
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -30,7 +31,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 Local tables can be used as source data or target data by SAP Datasphere apps. As a Data Integrator you might want to monitor all local tables which have been created in the current space to check data size, updates in these tables, etc.
 
-Go to *Data Integration Monitor* \> *Local Tables*. All local tables that have been created in the *Data Builder* are listed.
+Go to *Monitoring* \> *Data Integration* \> *Local Tables*. All local tables that have been created in the *Data Builder* are listed.
 
 > ### Note:  
 > Tables created in Open SQL schemas are not listed. For more information, see [Integrating Data via Database Users/Open SQL Schemas](../Integrating-Data-Via-Database-Users/Open-SQL-Schema/integrating-data-via-database-users-open-sql-schemas-3de55a7.md).
@@ -185,6 +186,18 @@ Displays the number of partitions defined on the local table.
 <tr>
 <td valign="top">
 
+*Number of Records in Largest Partition*
+
+</td>
+<td valign="top">
+
+Indicates how many records there are in the largest partition. Indeed, if your partition is too large \(more than 500 million records\), you can get out-of-memory errors while loading the data. The partition definition needs to be changed. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Delta capture*
 
 </td>
@@ -195,4 +208,17 @@ Indicates if the local table allows delta capture. For more information, see [Ca
 </td>
 </tr>
 </table>
+
+
+
+## The Message Area
+
+The message area allows you to monitor your local tables with efficiency, providing recommendations for partitioning to avoid out-of-memory errors, and addressing partitioning issues more effectively:
+
+-   If your table contains more than 500 million records and is not partitioned,
+-   If a partition is too large \(more than 500 million records\),
+-   Or if your action is needed with your existing partitions, for example, partitioning has failed or changed.
+
+> ### Note:  
+> For apps that consume local tables like *Replication Flow* or *Transformation Flow*, the partitioning recommendation will be displayed in their corresponding validation message area.
 

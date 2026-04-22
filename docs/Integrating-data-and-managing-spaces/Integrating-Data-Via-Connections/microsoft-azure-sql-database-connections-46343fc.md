@@ -21,7 +21,7 @@ This topic contains the following sections:
 ## Supported Features
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables and data flows are not supported.
+> In file spaces, remote tables and data flows are not supported.
 
 
 <table>
@@ -697,7 +697,7 @@ Description
 To enable *Remote Tables*, select a Data Provisioning Agent.
 
 > ### Note:  
-> In file spaces or when using authentication with X.509 client certificates, only replication flows are supported. Remote tables are not supported.
+> In file spaces or when using authentication with X.509 client certificates, remote tables are not supported.
 
 
 
@@ -714,7 +714,7 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces or when using authentication with X.509 client certificates, only replication flows are supported. Data flows are not supported.
+> In file spaces or when using authentication with X.509 client certificates, data flows are not supported.
 
 
 

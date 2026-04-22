@@ -429,7 +429,7 @@ Provide business-friendly names for your table and its columns, identify its sem
 
     -   Standard table: *Delete All Records* 
     -   Delta capture table: *Delete All Records*, *Delete Records Marked as "Deleted"*, or *Delete all records marked for deletion which are older than the specified number of days*.
-    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete Previous Versions \(Vacuum\), which are older than the specified number of days* 
+    -   Local table \(file\): *Delete All Records \(Mark as Deleted\)* or *Delete Previous Versions \(Vacuum\)* 
 
     See [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md).
     
@@ -513,7 +513,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </td>
     <td valign="top">
     
-    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](../data-pipeline-analyzer-54fd00d.md) 
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/54fd00ddd0b24ccc9ce0fa55297bc13d.html "The Data Pipeline Analyzer enables you to monitor complex data models efficiently, allowing you to view and analyze errors, warnings, and data discrepancies in real-time. It quickly identifies data transfer failures, allowing you to take immediate action to resolve them.") :arrow_upper_right: 
     
     </td>
     </tr>

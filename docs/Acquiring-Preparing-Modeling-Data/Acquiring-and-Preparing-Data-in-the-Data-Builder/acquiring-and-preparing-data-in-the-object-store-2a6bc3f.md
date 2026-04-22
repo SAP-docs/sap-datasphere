@@ -20,7 +20,7 @@ This topic contains the following sections:
 ## Introduction to the SAP Datasphere Object Store
 
 > ### Note:  
-> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
 
 The object store provides an inbound layer for staging large quantities of data cost-effectively. Data can be loaded by replication flows or pushed through the data product generator for SAP Business Data Cloud. You can optionally further prepare the data with Apache Spark transformation flows. You can then share the tables to standard spaces, where they can be used as sources for flows, views, and analytic models.![](images/Big_Data_with_BW_Data_Push_48daa3c.png)
 

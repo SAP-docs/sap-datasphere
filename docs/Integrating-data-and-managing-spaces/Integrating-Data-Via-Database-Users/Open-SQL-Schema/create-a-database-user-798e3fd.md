@@ -24,7 +24,7 @@ To create database users, you must have a scoped role that grants you access to 
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -67,12 +67,12 @@ The *DW Space Administrator* role template, for example, grants these privileges
     <tr>
     <td valign="top">
     
-    Enable Password Policy
+    Enable Password Lifetime
     
     </td>
     <td valign="top">
     
-    Require the database user to change their password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
+    Require the database user to change the password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
     
     </td>
     </tr>

@@ -17,7 +17,7 @@ To delete task logs and reduce storage consumption, you must have a global role 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 
 
@@ -25,7 +25,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Context
 
-Each time an activity is running in SAP Datasphere \(for example, replicate a remote table\), task logs are created to allow you to check if the activity is running smoothly or if there is an issue to solve. You access these detailed task logs by navigating to the Data Integration Monitor - Details screen of the relevant object. For example, clicking the button ![](images/Remote_Table_Logs_Button_a6170ee.png) of the relevant remote table. See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the Data Integration Monitor app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
+Each time an activity is running in SAP Datasphere \(for example, replicate a remote table\), task logs are created to allow you to check if the activity is running smoothly or if there is an issue to solve. You access these detailed task logs by navigating to the Data Integration Monitor - Details screen of the relevant object. For example, clicking the button ![](images/Remote_Table_Logs_Button_a6170ee.png) of the relevant remote table. See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  Data Integration app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
 
 However, task logs can consume a lot of space in a tenant. Deleting old task logs that are no longer needed can be useful to release storage space. This is why SAP Datasphere has a log deletion schedule activated by default. You can change the schedule defining your own criteria or decide to take immediate deletion actions.
 

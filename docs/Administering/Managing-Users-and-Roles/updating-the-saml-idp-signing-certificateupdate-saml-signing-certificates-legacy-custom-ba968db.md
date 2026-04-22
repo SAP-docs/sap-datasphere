@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Update SAML Signing Certificates \(Legacy Custom IdP\)
+# Updating the SAML IdP Signing CertificateUpdate SAML Signing Certificates \(Legacy Custom IdP\)
 
-If you are using a custom IdP for authentication, you may need to update your SAML IdP signing certificate.
+You can update the SAML identity provider \(IdP\) signing certificate.If you are using a custom IdP for authentication, you may need to update your SAML IdP signing certificate.
 
 
 
@@ -44,7 +44,7 @@ Upload a new SAML metadata .xml file, which contains a new signing certificate, 
 
 Upload a new SAML metadata .xml file, which contains a new signing certificate, to reconfigure trust between your custom IdP and your SAP Datasphere system, using the Identity Provider Administration tool.
 
-1.  Sign in to the Identity Provider Administration tool \(see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md)\).
+1.  Sign in to the Identity Provider Administration tool \(see [Identity Provider AdministrationAccess the Identity Provider Administration Tool](identity-provider-administrationaccess-the-identity-provider-administration-tool-df15ed8.md)\).
 2.  On the card for the tenant that you want to update, select <span class="FPA-icons-V3"></span>** \> *Repair IdP*.
 3.  Select *Upload new metadata for the current custom identity provider*.
 4.  Click *Browse* to select the new SAML metadata .xml file for your current custom identity provider.
@@ -52,7 +52,7 @@ Upload a new SAML metadata .xml file, which contains a new signing certificate, 
 6.  Click *Step 3* to proceed to the validation step.
 7.  Click *Log into SAP Datasphere* to open a new tab and navigate to your SAP Datasphere system.
 
-If you have any sign in problems related to the identity provider configuration, as opposed to a user-specific problem, you can return to the Identity Provider Administration tool and either re-upload the metadata file or revert to the default identity provider. For more information, see [Revert to Default Authentication \(Legacy Custom IdP\)](revert-to-default-authentication-legacy-custom-idp-8c37db7.md).
+If you have any sign in problems related to the identity provider configuration, as opposed to a user-specific problem, you can return to the Identity Provider Administration tool and either re-upload the metadata file or revert to the default identity provider. For more information, see [Disabling SAML SSORevert to Default Authentication \(Legacy Custom IdP\)](disabling-saml-ssorevert-to-default-authentication-legacy-custom-idp-8c37db7.md).
 
 
 
@@ -62,7 +62,7 @@ If you have any sign in problems related to the identity provider configuration,
 
 If you need to reacquire your system metadata, it can be downloaded from the Identity Provider Administration tool.
 
-1.  Sign in to the Identity Provider Administration tool \(see [Access the Identity Provider Administration Tool](access-the-identity-provider-administration-tool-df15ed8.md)\).
+1.  Sign in to the Identity Provider Administration tool \(see [Identity Provider AdministrationAccess the Identity Provider Administration Tool](identity-provider-administrationaccess-the-identity-provider-administration-tool-df15ed8.md)\).
 2.  On the card for the tenant that you want to use, select <span class="FPA-icons-V3"></span>** \> *Repair IdP*.
 3.  Select *Download* to get the SAP Datasphere metadata.
 

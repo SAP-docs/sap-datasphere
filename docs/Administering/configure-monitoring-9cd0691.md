@@ -4,7 +4,7 @@
 
 # Configure Monitoring
 
-You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the *System Monitor*.
+You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the *Monitoring* app.
 
 
 
@@ -17,7 +17,7 @@ To control which monitoring data is collected, you must have a global role that 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -26,7 +26,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 ## Procedure
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) and then select the *Monitoring* tab.
-2.  To obtain independent access to the underlying SAP HANA monitoring views that power the *System Monitor*:
+2.  To obtain independent access to the underlying SAP HANA monitoring views that power the *Monitor* app:
 
     1.  Select a space from the drop-down list and click *Confirm Selected Space*.
 
@@ -137,7 +137,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
     </tr>
     </table>
     
-    If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *System Monitor* \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
+    If expensive statement tracing is not enabled, then statement information and errors are not traced and you cannot see them in the *Monitoring* apps \(see [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md)\).
 
     For more information about these parameters, see [Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/5faf04f17830464eacdb7938b383d2ab.html) in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
 
@@ -167,7 +167,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
     
     Specify the maximum number of records that are stored for MDS requests in the monitoring tables.
 
-    You can increase this number in order to trace more data in the *System Monitor*. 
+    You can increase this number in order to trace more data in the *Monitoring* apps. 
 
     Default \(max\): 100,000
     
@@ -175,10 +175,10 @@ The *DW Administrator* role template, for example, grants these privileges. For 
     </tr>
     </table>
     
-    If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statement Logs* tab in the *System Monitor* \(see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md)\).
+    If the tracing is enabled, you can view information on MDS queries when clicking *More* in the column *Statement Details* of the *Statement Logs* tab in the *Monitoring* apps \(see [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md)\).
 
 5.  To trace elastic compute node data, select *Enable Elastic Compute Node Data Tracing* and save.
-    -   If the tracing is disabled, only the statements of currently running nodes are displayed in the *System Monitor*. If a node is stopped, its information is deleted.
+    -   If the tracing is disabled, only the statements of currently running nodes are displayed in the *Monitoring* apps. If a node is stopped, its information is deleted.
     -   If the tracing is enabled and a node is started and stopped more than once, only the information about the previous run is displayed. The information is kept for 10 days or is deleted if more than 100 individual elastic compute nodes have run.
 
 

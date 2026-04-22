@@ -111,7 +111,7 @@ Choose from the following:
 -   *COUNT* - Calculate the number of distinct values.
 -   *MIN* - Calculate the minimum value.
 -   *MAX* - Calculate the maximum value.
--   *NONE* - Perform no aggregation.
+-   *NONE* - If all records contain the same value or are empty, show that value. Otherwise show "`*`".
 
 > ### Note:  
 > To modify the default aggregation type of a column in a view editor side panel, hover over it and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Change Aggregation* \> **<Aggregation\>**.

@@ -54,7 +54,7 @@ You can use remote tables imported from the connection either to access data dir
 > 
 > -   When replicating employee-related data, independently of their validity not only current data is replicated but all data including historical data.
 > 
-> -   Picklists used in SAP SuccessFactors are not available in remote tables because they are exposed as navigation properties and not as exposed properties of the entity. For more information on picklists, see SAP Note [2088679](https://me.sap.com/notes/2088679).
+> -   Picklists used in SAP SuccessFactors are not available in remote tables because they are exposed as navigation properties of the SAP SuccessFactors entity. For more information, see SAP Note [3447118](https://me.sap.com/notes/3447118).
 
 
 

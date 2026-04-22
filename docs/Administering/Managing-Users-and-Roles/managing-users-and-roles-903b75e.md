@@ -19,9 +19,9 @@ This topic contains the following sections:
 
 Users must be provisioned to SAP Datasphere before they can be granted privileges to access it. You can provision users via:
 
--   Your identity provider \(see [Managing User Identity and Authentication](managing-user-identity-and-authentication-48b5c8b.md)\).
--   The SCIM API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
--   The command line \(see [Managing Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "You can use the datasphere command line interface to list, create, update, and delete users via the command line.") :arrow_upper_right:\).
+-   Your identity provider \(see [Configuring Identity Provider SettingsManaging User Identity and Authentication](configuring-identity-provider-settingsmanaging-user-identity-and-authentication-48b5c8b.md)\).
+-   The SCIM API \(see [Managing Users via the SCIM 2.0 API](managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
+-   The command line \(see [Managing Users via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/72dc33a8f41944f78318138bc1a57307.html "You can use the datasphere command line interface to list, create, update, and delete users via the command line.") :arrow_upper_right:\).
 -   The <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\) app \(see [Create a User](create-a-user-58d4b24.md)\).
 
 
@@ -43,5 +43,5 @@ For more information, see:
 
 -   [Privileges by App, Tool, Object, and Task](privileges-by-app-tool-object-and-task-2d8b7d0.md)
 -   [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)
--   [Assign Users to a Role](assign-users-to-a-role-57a7880.md)
+-   [Assign Roles to UsersAssign Users to a Role](assign-roles-to-usersassign-users-to-a-role-57a7880.md)
 

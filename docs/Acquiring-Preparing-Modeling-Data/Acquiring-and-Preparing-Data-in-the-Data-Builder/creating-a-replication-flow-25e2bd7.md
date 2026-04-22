@@ -28,7 +28,7 @@ To run and schedule flows, you must, in addition, have the following privileges:
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Modeler* and *DW Integrator* role templates together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -230,14 +230,11 @@ For more information about connection types that can be used for adding sources 
     </td>
     <td valign="top">
     
-    \[only relevant for replication flow created in file space\] Select this option if you want new data to be automatically replicated in your local table \(file\). When new data appears in the inbound buffer, a merge task is automatically run and data is updated in your target local table \(file\).
+    \[Replication flows created in file space\] Select this option to automatically merge new data into your local table \(file\). When new data appears in the inbound buffer, a merge task runs automatically and updates the target table using the default Apache Spark application defined in Space Management or per local table \(file\) in the *Data Integration Monitor.* To control the associated workload, you can adjust the *delta load interval* of the replication flow or disable this setting and run the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
 
-    > ### Caution:  
-    > -   The option is enabled by default when you create a new replication with SAP Datasphere as target and load type *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(and a redeployment will be needed\).
-    > 
-    >     Note also that this merge task will run with the default Apache Spark Application defined in space management or per local table \(file\) in the *Data Integration Monitor*. For optimizing the associated workload please consider adjusting the above defaults for your scenario. In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow or by disabling this setting and running the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
-    > 
-    > -   Since it will start an automatic task, you must make sure that you have authorized SAP Datasphere to run tasks on your behalf. Go to your profile settings and give your consent under *Authorized Consent Settings*. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+    > ### Note:  
+    > -   The Merge Data Automatically option is *disabled*by default when you create a new replication flow with SAP Datasphere as target and load type as *Initial and Delta*. When the option is disabled, new data remains in the inbound buffer until a merge task is run manually or scheduled separately.
+    > -   Automatic merge tasks require authorization for SAP Datasphere to run tasks on your behalf. If consent has not been provided, you will be prompted to authorize it.
 
 
     
@@ -297,7 +294,7 @@ For more information about connection types that can be used for adding sources 
     </td>
     <td valign="top">
     
-    Add a projection to define a filter or mappings.
+    Add a projection to define a filter or mappings. For more information, see [Define Filters in a Replication Flow](define-filters-in-a-replication-flow-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md).
     
     </td>
     </tr>

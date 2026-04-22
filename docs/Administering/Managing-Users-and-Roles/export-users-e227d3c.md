@@ -45,7 +45,7 @@ USER\_NAME
 </td>
 <td valign="top">
 
- 
+User ID.
 
 </td>
 </tr>
@@ -57,7 +57,7 @@ FIRST\_NAME
 </td>
 <td valign="top">
 
- 
+First name of the user.
 
 </td>
 </tr>
@@ -69,7 +69,7 @@ LAST\_NAME
 </td>
 <td valign="top">
 
- 
+Last name of the user.
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ DISPLAY\_NAME
 </td>
 <td valign="top">
 
- 
+The name that appears on the screens.
 
 </td>
 </tr>
@@ -93,7 +93,7 @@ EMAIL
 </td>
 <td valign="top">
 
- 
+User’s email.
 
 </td>
 </tr>
@@ -105,7 +105,7 @@ MANAGER
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -141,7 +141,7 @@ MOBILE
 </td>
 <td valign="top">
 
-Set in user preferences.
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -153,7 +153,7 @@ OFFICE\_PHONE
 </td>
 <td valign="top">
 
-Set in user preferences.
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -165,7 +165,7 @@ OFFICE\_ADDRESS
 </td>
 <td valign="top">
 
-Set in user preferences.
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -177,7 +177,7 @@ AGILE\_BI\_ENABLED\_BY\_DEFAULT
 </td>
 <td valign="top">
 
-Opt in for the agile data preparation feature.
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -189,7 +189,7 @@ JOB\_TITLE
 </td>
 <td valign="top">
 
-Set in user preferences.
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -201,7 +201,7 @@ MARKETING\_EMAIL\_OPT\_IN
 </td>
 <td valign="top">
 
-Set in user preferences.
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -213,31 +213,7 @@ IS\_CONCURRENT
 </td>
 <td valign="top">
 
-Licensing attribute to indicate whether the user is consuming a named licensed user account \(0\) or a concurrent licensed user account \(1\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-DEFAULT\_APP
-
-</td>
-<td valign="top">
-
-The application that will launch when you access your SAP Datasphere URL. The default application can be set in *System* \> *Administration* \> *System Configuration* or in the user settings.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-On the *Edit Home Screen* dialog, a user can override all the default preferences that have been set by the administrator for the system \(*System* \> *Administration* \> *Default Appearance*\). These are the preferences:
-
-</td>
-<td valign="top">
-
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -249,7 +225,7 @@ OVERRIDE\_BACKGROUND\_OPTION
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -261,7 +237,7 @@ OVERRIDE\_LOGO\_OPTION
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -273,7 +249,7 @@ OVERRIDE\_WELCOME\_MESSAGE\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -285,7 +261,7 @@ OVERRIDE\_HOME\_SEARCH\_TO\_INSIGHT\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -297,7 +273,7 @@ OVERRIDE\_GET\_STARTED\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -309,19 +285,7 @@ OVERRIDE\_RECENT\_FILES\_FLAG
 </td>
 <td valign="top">
 
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_RECENT\_STORIES\_FLAGOVERRIDE\_RECENT\_STORIES\_FLAG
-
-</td>
-<td valign="top">
-
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -333,7 +297,7 @@ OVERRIDE\_RECENT\_PRESENTATIONS\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -345,7 +309,7 @@ OVERRIDE\_RECENT\_APPLICATIONS\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -357,7 +321,7 @@ OVERRIDE\_CALENDAR\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
 
 </td>
 </tr>
@@ -369,7 +333,19 @@ OVERRIDE\_FEATURED\_FILES\_FLAG
 </td>
 <td valign="top">
 
- 
+Not used in SAP Datasphere.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DEFAULT\_APP
+
+</td>
+<td valign="top">
+
+Not used in SAP Datasphere.
 
 </td>
 </tr>

@@ -25,13 +25,13 @@ To set priorities and statement limits for spaces or groups, you must have a glo
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 > ### Note:  
 > Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
 
 > ### Note:  
-> You can use the SAP Datasphere command line interface, `datasphere`, to set space or group priorities and statement limits. See [Managing Priorities and Statement Limits for Spaces or Groups via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/9e3537b72e6c445d9f34201df650735b.html "You can use the SAP Datasphere datasphere command line interface to set priorities and statement limits for spaces or groups.") :arrow_upper_right:.
+> You can use the SAP Datasphere command line interface, `datasphere`, to set space or group priorities and statement limits. See [Managing Priorities and Statement Limits for Spaces or Groups via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/9e3537b72e6c445d9f34201df650735b.html "You can use the SAP Datasphere datasphere command line interface to set priorities and statement limits for spaces or groups.") :arrow_upper_right:.
 
 
 
@@ -41,7 +41,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 You can set priorities and statement limits by space \(default option\). Once you’ve created a space, a new row for the space is added in the *Workload Management* page with a default priority and default statement limits.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \> *SAP HANA Database \(Disk and In-Memory\)*.
 2.  If *Space* is not already selected, select it and click *Save*. Be aware that if you've modified the default settings for the *Group* option, once you confirm the reorganization by space, your settings will be deleted. To keep your settings, you can export them \(see [Export Workload Management Settings](set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md#loiod66ac1efb5054068a104c4559b72d272__section_chn_wfq_4fc)\).
 3.  In the confirmation message that opens, click *Yes*. The process may take some time but you can continue to work in other areas of SAP Datasphere.
 4.  Click on the row of the space for which you want to edit the properties.
@@ -312,7 +312,7 @@ All actions related to space database users.
 </tr>
 </table>
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \> *SAP HANA Database \(Disk and In-Memory\)*.
 2.  If *Group* is not already selected, select it and click *Save*. Be aware that if you've modified the default settings for the option *Space*, once you confirm the reorganization by group, your settings will be deleted. To keep your settings, you can export them \(see [Export Workload Management Settings](set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md#loiod66ac1efb5054068a104c4559b72d272__section_chn_wfq_4fc)\).
 3.  In the confirmation message that opens, click *Yes*. The process may take some time but you can continue to work in other areas of SAP Datasphere.
 
@@ -746,7 +746,7 @@ All actions related to space database users.
 
 To keep the workload settings, for spaces or groups, that you have customized, you can export them in a .json file.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \> *SAP HANA Database \(Disk and In-Memory\)*.
 2.  Click the export button. The .json is dowloaded to your computer.
 3.  Save it.
 
@@ -758,7 +758,7 @@ To keep the workload settings, for spaces or groups, that you have customized, y
 
 To apply the customized workload settings, for spaces or groups, that you have previously exported, you can import the saved .json file.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management*.
+1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \> *SAP HANA Database \(Disk and In-Memory\)*.
 2.  Click the import button.
 3.  Select the .json file that you have previously exported and click *Import*.
 

@@ -23,7 +23,7 @@ This topic contains the following sections:
 ## Supported Features
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables and data flows are not supported.
+> In file spaces, remote tables and data flows are not supported.
 
 
 <table>
@@ -60,6 +60,18 @@ Remote Tables
 <td valign="top">
 
 You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\). For remote tables, real-time replication is supported. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Model Import
+
+</td>
+<td valign="top">
+
+You can use the connection to import entities with semantics \(calculation views, dimensions\) from SAP HANA Cloud. For more information, see [Importing Entities with Semantics from SAP HANA Cloud](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b37282c4c0d142e3bca256a46cd40278.html "You can use the Import Entities wizard to import semantically-rich objects using your SAP HANA Cloud connection. The wizard creates Data Builder entities in SAP Datasphere.") :arrow_upper_right:. 
 
 </td>
 </tr>
@@ -147,6 +159,12 @@ For SAP HANA \(on-premise\), before you can use the connection for data flows an
 A user with an administrator role has uploaded the TLS server certificate `DigiCert Global Root CA` \(`DigiCertGlobalRootCA.crt.pem`\).
 
 For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+
+
+
+### Model Import
+
+You must have SAP HANA Cloud version QRC 1/2026 or higher and SAP Datasphere database version 2025.50 or higher. 
 
 <a name="loio27aebc8432aa419da75c5fc650981f24"/>
 
@@ -445,7 +463,24 @@ For more information about the use cases for the options, see [Remote Tables in 
 </table>
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces, remote tables are not supported.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Model Import
+
+</td>
+<td valign="top">
+
+*Model Import* is enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, model import is not supported.
 
 
 
@@ -462,7 +497,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Data flows are not supported.
+> In file spaces, data flows are not supported.
 
 
 
@@ -972,7 +1007,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 </table>
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces, remote tables are not supported.
 
 
 
@@ -989,7 +1024,7 @@ For more information about the use cases for the options, see [Remote Tables in 
 *Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Data flows are not supported.
+> In file spaces, data flows are not supported.
 
 
 

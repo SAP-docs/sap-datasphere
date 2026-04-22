@@ -18,9 +18,134 @@ In the *Space Management*, you can set up, configure, and monitor your spaces, i
 
 <a name="loioc6dd05236838466c831170c5cd67e85e__section_irx_vkk_c5b"/>
 
-## \(*System Monitor*\)
+## *Monitoring*
 
-In the *System Monitor*, you can monitor the performance of your system and identify storage, task, out-of-memory, and other issues. For more information, see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
+In the *Monitoring* apps, you can monitor the performance of your system and identify storage, task, out-of-memory, and other issues. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-d39b865.md).
+
+
+<table>
+<tr>
+<th valign="top">
+
+App
+
+</th>
+<th valign="top">
+
+Task
+
+</th>
+<th valign="top">
+
+More Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*System and Spaces*
+
+</td>
+<td valign="top">
+
+Monitor system performance and issues related to storage, tasks, out-of-memory, and other issues across all spaces.
+
+Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs.
+
+</td>
+<td valign="top">
+
+See [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Capacities Monitoring*
+
+</td>
+<td valign="top">
+
+Monitor monthly and daily capacity unit consumption, allowing users to track usage relative to their subscription and download detailed hourly data.
+
+</td>
+<td valign="top">
+
+See [Monitoring Capacity Unit Consumption](monitoring-capacity-unit-consumption-ba3d05b.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Task Logs*
+
+</td>
+<td valign="top">
+
+Monitor the execution history of task runs.
+
+</td>
+<td valign="top">
+
+See [Reviewing Task Logs](reviewing-task-logs-399e52f.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expensive Statement Logs*
+
+</td>
+<td valign="top">
+
+Monitor SQL statements exceeding configured thresholds.
+
+</td>
+<td valign="top">
+
+See [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Elastic Compute Nodes*
+
+</td>
+<td valign="top">
+
+Monitor elastic compute nodes key performance figures.
+
+</td>
+<td valign="top">
+
+See [Monitoring Elastic Compute Nodes](monitoring-elastic-compute-nodes-1d5f583.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Integration*
+
+</td>
+<td valign="top">
+
+Monitor, schedule, and run data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, perform local table administration tasks like data deletion or house keeping, and manage other tasks through flows and task chains. Users need a space administrator or integrator role to access this app.
+
+</td>
+<td valign="top">
+
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  Data Integration app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
+
+</td>
+</tr>
+</table>
 
 
 

@@ -21,8 +21,9 @@ To monitor local tables \(file\), you must have a scoped role that grants you ac
 
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -31,11 +32,11 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 ## Monitoring Local Tables \(File\)
 
 > ### Note:  
-> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
 
 Local tables can be used as source data or target data by SAP Datasphere apps. As a Data Integrator you might want to monitor all local tables \(file\) deployed in your space and check how and when data has been last updated and if some data must still be merged.
 
-Go to *Data Integration Monitor* \> *Local Tables \(Files\)*. All local tables \(file\) that have been created in the *Data Builder* are listed. For more information on local tables \(file\), see [Creating a Local Table (File)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:.
+Go to *Monitoring* \> *Data Integration* \> *Local Tables \(Files\)*. All local tables \(file\) that have been created in the *Data Builder* are listed. For more information on local tables \(file\), see [Creating a Local Table (File)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:.
 
 The monitor displays the following properties:
 
@@ -238,6 +239,21 @@ Displays the estimation of the size of the files waiting for a merge in the buff
 </table>
 
 Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table.
+
+You can download Spark driver logs after performing the following tasks on a local table \(file\):
+
+-   MERGE\_FILES
+-   OPTIMIZE\_FILES
+-   VACUUM\_FILES
+-   TRUNCATE\_FILES
+-   TRUNCATE\_FILES\_WITH\_FILTER
+-   DELETE\_INBOUND\_BUFFER
+-   FIND\_AND\_REPLACE
+
+Click the <span class="SAP-icons-V5"></span> Download Spark Driver Logs button on the top right corner of your screen. Downloading logs can be useful for debugging a failing task. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. The logs are downloaded as a `.txt` file in your local *Download* file. There are no logs to download if:
+
+-   The task fails before the Spark driver gets started.
+-   The task MERGE\_FILES gets started without any data in the inbound buffer.
 
 From the *Logs* tab, you can see the logs that relate on previous and running actions on your table.
 

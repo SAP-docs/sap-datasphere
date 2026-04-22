@@ -33,6 +33,7 @@ Create mappings to specify how the source data is to be changed on its way into 
         >     -   Time - CURRENT\_UTCTIME
         >     -   Timestamp - CURRENT\_UTCTIMESTAMP
 
+    -   Mask column data: \[SAP Signavio targets\] Select the *Enable Hashing* checkbox \(see [Mask Sensitive Column Data](sap-signavio-targets-for-replication-flows-b8f5e28.md#loiob8f5e28d34b44d71a52f6265e4fc245f__section_mask_columns)\).
     -   Add a new column: Choose *Add* and enter the necessary values for the new column.
 
         To add a new column with string, number constants, or current UTC datetime functions:

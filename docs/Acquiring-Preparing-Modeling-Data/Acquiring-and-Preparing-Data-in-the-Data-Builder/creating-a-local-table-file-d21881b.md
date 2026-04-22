@@ -18,7 +18,7 @@ To create local tables, you must have a scoped role that grants you access to a 
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -27,7 +27,7 @@ The *DW Modeler* role template, for example, grants these privileges. For more i
 ## Context
 
 > ### Note:  
-> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
 
 SAP Datasphere supports two types of local table to persist data:
 
@@ -349,12 +349,13 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     > ### Note:  
     > -   You can select several columns to partition your data, but you must not select all columns.
     > -   You can’t change the partition definition after you have deployed the table if it contains data.
-    > -   If the cardinality of a column is very high, do not use that column for partitioning. For that reason, in case there is only one key column, this column can't be select for partitioning.
+    > -   If your table is imported from SAP BW, you cannot change the partition definition, neither for tables with data nor without data.
+    > -   If the cardinality of a column is very high, do not use that column for partitioning. For that reason, in case there is only one key column, this column can't be selected for partitioning.
 
     > ### Caution:  
     > Before implementing partitioning on local tables \(file\) you might consider the following:
     > 
-    > -   Partitioning should not be enabled by default for local table \(file\) and is intended only for exceptional use cases. This data partitioning method differs significantly from the one used for local tables created in an SAP HANA Space and should be applied with caution. It is generally not recommended for smaller tables \(less than 100 GB\).
+    > -   Partitioning should not be enabled by default for local tables \(file\) and is intended only for very large tables, and if query predicates align with partition columns. This data partitioning method differs significantly from the one used for local tables created in an SAP HANA Space and should be applied with caution.
     > -   Partitioning for local table \(file\) can improve query performance when filter predicates are predictable, applied to the partition key, and can effectively support file pruning at runtime. However, only low‑cardinality columns should be chosen as partition columns to avoid generating excessively small files and unnecessary metadata overhead.
     > -   For performance optimization on filter predicates involving high‑cardinality columns, it is usually better to define Z‑Order columns, which enable efficient data skipping without the downsides of partitioning. For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:.
 

@@ -8,7 +8,7 @@ All data acquisition, preparation, and modeling in SAP Datasphere happens inside
 
 An administrator must create one or more spaces and allocate resources to them. See [Creating Spaces and Allocating Resources](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2ace657356d54199b0b87d2327b1a70b.html "Users with an administrator role can create spaces and allocate resources to them.") :arrow_upper_right:.
 
-If an administrator has assigned you a space administrator role for a certain space via a scoped role, you can assign other users, and manage other aspects of the space.
+If you have the role of space administrator and are assigned to a space, you can assign other users, create connections to source systems, secure data with data access controls, and manage other aspects of the space.If an administrator has assigned you a space administrator role for a certain space via a scoped role, you can assign other users, and manage other aspects of the space.
 
 To view information on the properties of a space that have been set by an administrator, see:
 

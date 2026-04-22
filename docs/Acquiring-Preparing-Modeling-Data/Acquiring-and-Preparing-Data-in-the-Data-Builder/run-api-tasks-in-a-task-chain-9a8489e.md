@@ -103,9 +103,9 @@ Run tasks in a task chain that use a REST-based API to access external systems.
     SAP Datasphere will run a test of your API task, independent of the other tasks or objects included in the task chain. As it executes your API task, it displays progress of the run and its success or failure, in addition, to displaying any errors or issues encountered in executing the API task.
 
     > ### Note:  
-    > Performing a test run on a task which is already running will cause the first run to be set to failed to allow for the second run to go forward. A test run can also be canceled in the System Monitor.
+    > Performing a test run on a task which is already running will cause the first run to be set to failed to allow for the second run to go forward. A test run can also be canceled in the *Monitoring* apps.
 
-8.  Following verification that your API task can be executed successfully, you can proceed with any other setup and inclusion of other objects in the task chain, and then directly run or schedule the entire task chain. As with any other objects in a task chain, you can monitor details of the execution of an API task in the Data Integration Monitor.
+8.  Following verification that your API task can be executed successfully, you can proceed with any other setup and inclusion of other objects in the task chain, and then directly run or schedule the entire task chain. As with any other objects in a task chain, you can monitor details of the execution of an API task in the *Data Integration* monitoring app.
 
     > ### Note:  
     > Cancelling the task chain that includes an API task will set the API task to fail, although it may still remain running in the external system. There is no hard timeout for execution of API tasks. A task can run as long as it is healthy, that is, the status being retrieved is an HTTP code between 200 and 299. In case there is a problem obtaining the API task status \(for example, the HTTP connections is down\), execution of the API task is retried for another five minutes before failing the task. Using the Test API function does not perform the retry.

@@ -8,6 +8,21 @@ You can pause a replication flow run and resume it later, or stop it completely 
 
 
 
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_"/>
+
+## Scheduling a Replication Flow
+
+You can create a schedule for your replication flow and include it in a task chain.
+
+> ### Note:  
+> For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.*
+
+To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
+
+For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+
+
+
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Scheduling"/>
 
 ## Scheduling a Replication Flow
@@ -40,7 +55,7 @@ When you resume the flow, the system replicates all source data changes that hap
 
 To pause, resume or restart a replication flow:
 
-1.  Go to the *Data Integration* monitor,
+1.  Go to the *Monitoring* \> *Data Integration* monitor,
 2.  Select the relevant space
 3.  Navigate to the *Flows* monitor. All flows that have been created in the *Data Builder* are listed.
 4.  Select the relevant replication flow
@@ -86,7 +101,7 @@ If you do so, the flow run is stopped permanently in SAP Datasphere as well as i
 
 To stop a replication flow run:
 
-1.  Go to the *Data Integration* monitor.
+1.  Go to the *Monitoring* \> *Data Integration* monitor.
 2.  Select the relevant space.
 3.  Navigate to the *Flows* monitor \(all flows created in the *Data Builder* are listed\) and select the relevant replication flow.
 4.  Navigate to its details screen by clicking .<span class="SAP-icons-V5"></span> \(Details\)
@@ -123,7 +138,7 @@ This can be done in the *Data Builder*, see [Modify a Replication Flow](https://
 
 To pause, resume or restart a replication flow:
 
-1.  Go to the *Data Integration* monitor,
+1.  Go to the *Monitoring* \> *Data Integration* monitor
 2.  Select the relevant space
 3.  Navigate to the *Flows* monitor. All flows that have been created in the *Data Builder* are listed.
 4.  Select the relevant replication flow
@@ -153,7 +168,7 @@ This can be done in the *Data Builder*, see [Modify a Replication Flow](https://
 
 From the details screen of a replication flow run, you can set up email notification to be notified when the replication of an individual object fails in your replication flow:
 
-1.  Go to *Data Integration Monitor* \> *Flows* monitor.
+1.  Go to *Monitoring* \> *Data Integration* \> *Flows* monitor.
 2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
 3.  Click *Runtime Email Notification* and configure the email. For more information on how to configure the e-mail, see [Configure Email Notification for Replication Flow Failure at Object Level](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5dc4db23d3894b10aca6ade3c666554d.html "Set up email notifications to stay informed when individual replication objects fail in a running replication flow.") :arrow_upper_right:.
 
@@ -169,7 +184,7 @@ From the details screen of a replication flow run, you can change the run settin
 > You must have the DW Integrator role and the replication flow must be deployed successfully.
 
 1.  Go to *Data Integration Monitor* \> *Flows* monitor.
-2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
+2.  Navigate to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
 3.  Open the tab **Run Settings** and update as per your need:
 
     -   Source Thread Limit \(1-160\): It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10.

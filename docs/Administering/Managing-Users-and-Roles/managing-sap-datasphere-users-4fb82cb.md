@@ -18,7 +18,7 @@ To manage users, you must have a global role that grants you the following privi
 -   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\)area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
 -   *User* \(`-------M`\) - To assign users to roles.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -26,8 +26,8 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 In addition to working with users in the *Security* tool, you can also:
 
--   List, create, update, and delete them using the `datasphere` command line interface \(see [Managing Users via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/72dc33a8f41944f78318138bc1a57307.html "You can use the datasphere command line interface to list, create, update, and delete users via the command line.") :arrow_upper_right:\).
--   List, read, create, modify, or delete them and add them to roles via the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
+-   List, create, update, and delete them using the `datasphere` command line interface \(see [Managing Users via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/72dc33a8f41944f78318138bc1a57307.html "You can use the datasphere command line interface to list, create, update, and delete users via the command line.") :arrow_upper_right:\).
+-   List, read, create, modify, or delete them and add them to roles via the SCIM 2.0 API \(see [Managing Users via the SCIM 2.0 API](managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
 
 
 

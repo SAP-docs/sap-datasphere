@@ -22,7 +22,7 @@ For information about the required prerequisites, see [Prepare Connectivity to S
 ## Supported Features
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables and data flows are not supported.
+> In file spaces, remote tables and data flows are not supported.
 
 
 <table>
@@ -836,7 +836,7 @@ Enter the user password.
 ### Remote Tables
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces, remote tables are not supported.
 
 
 <table>
@@ -1087,7 +1087,7 @@ Description
 To enable*Remote Tables*, complete the connection properties in the *Remote Tables* section. If your source is an on-premise source and you want to use remote tables for data federation via the ABAP SQL service, make sure you have maintained the properties in the *Cloud Connector* section.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Remote tables are not supported.
+> In file spaces, remote tables are not supported.
 
 
 
@@ -1104,7 +1104,7 @@ To enable*Remote Tables*, complete the connection properties in the *Remote Tabl
 *Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
 
 > ### Note:  
-> In file spaces, only replication flows are supported. Data flows are not supported.
+> In file spaces, data flows are not supported.
 
 
 

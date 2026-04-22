@@ -8,7 +8,7 @@ Delete records for local tables, on-demand, using filter conditions or using a s
 
 Table records can consume a lot of memory and you might need to do a cleanup of older records regularly. Especially for tables where delta capture is enabled, as when you delete records, they are not physically deleted but marked as deleted to allow other apps to propagate the changes to the different objects that consume it in delta mode. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:. As these records continue to consume memory until they are physically deleted from SAP Datasphere, you must clean up your data regularly.
 
-From the *Data Integration Monitor* \(<span class="FPA-icons-V3"></span> \), go to the *Local Tables* monitor. Navigate to the details screen of the local table you want to perform the data deletion.
+From :desktop_computer: *Monitoring* \> :fast_forward: *Data Integration* , go to the *Local Tables* monitor. Navigate to the details screen of the local table you want to perform the data deletion.
 
 The header of the screen displays metrics on the local table:
 
@@ -150,7 +150,7 @@ If your filter is defined on a column where values are of data type 'Date” or 
 </td>
 <td valign="top">
 
-This option will appear only if your table is a delta capture table. With this option, you can physically delete records marked as deleted and that have already been successfully processed by other apps that consume them. You can define a period of deletion. For example, records older than 30 days.
+This option will appear only if your table is a delta capture table. With this option, you can physically delete records marked as deleted and that have already been successfully processed by other apps that consume them. You can define a period of deletion. Values must comprise between 0 \(default value\) and 999 days. For example, records older than 30 days.
 
 > ### Note:  
 > Data deletion preview is not supported for records marked as "deleted", as the data editor does not support the switch between active records and delta capture records.

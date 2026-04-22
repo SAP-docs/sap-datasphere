@@ -20,7 +20,7 @@ You can optimize or update your local table \(file\) data:
     -   *Merge Table*: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run.
 
         > ### Note:  
-        > The *Merge Data Automatically* option is enabled by default when creating a new replication flow with SAP Datasphere as the target and the load type set to *Initial and Delta*. For replication flows that don’t support this option, you can still manually enable it \(a redeployment will be needed\). In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow, or by disabling this setting and running the merge task separately with a less frequent schedule. Note also that the option *Merge Data Automatically* will start an automatic task, therefore you must make sure that you have authorized SAP Datasphere to run tasks on your behalf. Go to your profile settings and give your consent under *Authorized Consent Settings*. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+        > The *Merge Data Automatically* option is *disabled* by default when creating a new replication flow with SAP Datasphere as the target and the load type set to *Initial and Delta*. For replication flows created before the option was available, you can still manually enable it \(a redeployment will be needed\). In addition, it is possible to merge new data less frequently by either adjusting the delta load interval of a replication flow, or by leaving this setting disabled and running the merge task separately with a less frequent schedule. Note also that when the option *Merge Data Automatically* is enabled, an automatic task is started, therefore you must make sure that you have authorized SAP Datasphere to run tasks on your behalf. Go to your profile settings and give your consent under *Authorized Consent Settings*. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
     -   *Optimize Table*: Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\).
 
@@ -85,6 +85,15 @@ Navigate to the local table \(files\) run details screen, click *Merge Table* or
 If you have started a merge task, you can cancel it if needed.
 
 From the details screen of the relevant local table \(file\), in the *Logs* section, select the running task and click *Cancel*. The task will stop the merge action, but it will stop it without rolling back the data that has already been processed. The status of the task will be changed to *Failed \(Canceled\)*.
+
+
+
+## Resolving Failed Merged Tasks
+
+If you have scheduled regular merge tasks or if you have used the *Merge Data Automatically* option in your replication flows, you can overload the system with many failed merge tasks. Therefore, a threshold of 10 consecutive failed merge runs for local tables \(file\) has been implemented: After reaching that threshold, any further run of a merge task for that Local Table \(File\) will fail immediately \(before creating any Apache Spark workload\) with the status FAILED \(TOO\_MANY\_FAILURES\). To solve the issue, you will have to:
+
+-   Run a direct merge task \(not through a schedule\) either in the *Local Tables \(File\)* monitor or run a manual task chain containing the merge task. For more information, see [Monitoring Local Tables \(File\)](monitoring-local-tables-file-6b2d007.md)
+-   Wait until the next available complete merge task is run. The merge is paused for a specified amount of time to prevent system overload. The threshold will be reset, and a new merge action will restart after 100 minutes, following the "too many errors" situation. The next runs will happen after 200 minutes, 300 minutes, 500 minutes, 800 minutes, 1300 minutes, etc.
 
 
 

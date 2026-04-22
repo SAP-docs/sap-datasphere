@@ -43,6 +43,9 @@ Include and run Open SQL schema procedures in a task chain. Use to efficiently m
 
     ![](images/input_parameters_a563053.png)
 
+
+1.  -   
+
 4.  Enter values for each input parameter, based on the data type displayed in the *Value* field, then click *Ok*.
 
     After successful entries in the Input Parameters dialog, your entries for the parameters are displayed in the *Properties* panel where you can update the values as needed.
@@ -55,4 +58,131 @@ Include and run Open SQL schema procedures in a task chain. Use to efficiently m
 
     Along with other objects in the task chain, you can monitor the status of procedure runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:. In addition, information on HANA Memory resource consumption for procedures included in task chains is displayed in the system monitor.
 
+    > ### Note:  
+    > Not all parameter types for SQL script procedures are supported. Current behavior:
+    > 
+    > -   If any input parameter has an unsupported type, the procedure is excluded and does not appear in the repository.
+    > -   There are currently no messages to inform you of the above action.
+    > -   Parameter types not listed below will be ignored but the procedure is still shown.
+
+    **Supported Data Types**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Category
+    
+    </th>
+    <th valign="top">
+
+    Type
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    String
+    
+    </td>
+    <td valign="top">
+    
+    NCHAR, NVARCHAR, ALPHANUM, SHORTTEXT, CHAR, VARCHAR
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Numeric
+    
+    </td>
+    <td valign="top">
+    
+    INT, INTEGER, TINYINT, SMALLINT, BIGINT, DECIMAL, SMALLDECIMAL, REAL, DOUBLE, FLOAT
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Boolean
+    
+    </td>
+    <td valign="top">
+    
+    BOOLEAN
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Date/Time
+    
+    </td>
+    <td valign="top">
+    
+    DATE, TIME, SECONDDATE, TIMESTAMP
+    
+    </td>
+    </tr>
+    </table>
+    
+    **Unsupported Data Types**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Category
+    
+    </th>
+    <th valign="top">
+
+    Type
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    LOB/Binary
+    
+    </td>
+    <td valign="top">
+    
+    BLOB, CLOB, NCLOB, VARBINARY, BINARY, BINTEXT, TEXT
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Spatial
+    
+    </td>
+    <td valign="top">
+    
+    ST\_GEOMETRY, ST\_POINT, ST\_LINESTRING, ST\_POLYGON, ST\_CIRCULARSTRING, ST\_GEOMETRYCOLLECTION, ST\_MULTILINESTRING, ST\_MULTIPOINT, ST\_MULTIPOLYGON
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Collection
+    
+    </td>
+    <td valign="top">
+    
+    ARRAY
+    
+    </td>
+    </tr>
+    </table>
+    
 

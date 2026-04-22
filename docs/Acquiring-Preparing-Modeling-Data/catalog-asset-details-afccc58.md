@@ -41,25 +41,25 @@ BW Systems
 <tr>
 <td valign="top">
 
+-   Analytic Model
+-   Data Flow
+-   Graphical View
+-   Intelligent Lookup
 -   Local Table
 -   Remote Table
--   Graphical View
--   SQL View
--   Data Flow
--   Intelligent Lookup
--   Analytic Model
 -   Perspective
+-   SQL View
 
 
 
 </td>
 <td valign="top">
 
--   Story
--   Model
--   Insight
--   Predictive Scenario
 -   Data Action
+-   Insight
+-   Model
+-   Predictive Scenario
+-   Story
 
 
 
@@ -108,16 +108,28 @@ Description
 <tr>
 <td valign="top">
 
-Name, type, and status
+Name and type
 
 </td>
 <td valign="top">
 
-Displays the asset's name and type, and displays its functional and publication status.
+Displays the asset's name and type.
 
 If the asset was enriched, the name displayed might not match the name of the underlying source object.
 
-Users with the *Catalog User* role are only able to see published assets that are in the *Current* state. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Status
+
+</td>
+<td valign="top">
+
+Displays the functional and publication statuses of the asset.
+
+Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>

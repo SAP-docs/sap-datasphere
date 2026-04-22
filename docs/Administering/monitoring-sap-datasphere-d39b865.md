@@ -1,13 +1,14 @@
 <!-- loiod39b8652994846f9ab80b32fc5b4d671 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Monitoring SAP Datasphere
 
-Users with an administrator role have access to various tools to monitor and manage the health of their SAP Datasphere tenant.
+Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.
 
 This topic contains the following sections:
 
--   [The System Monitor](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__system_monitor)
--   [Capacity Units](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__capacity_units)
+-   [System and Tasks](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__system_monitor)
 -   [Audit Logs](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__audit_logs)
 -   [Activities](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__activities)
 -   [Database Analysis Users](monitoring-sap-datasphere-d39b865.md#loiod39b8652994846f9ab80b32fc5b4d671__db_analysis_users)
@@ -16,27 +17,37 @@ This topic contains the following sections:
 
 <a name="loiod39b8652994846f9ab80b32fc5b4d671__system_monitor"/>
 
-## The System Monitor
+## System and Tasks
 
-Use the *System Monitor* to review overall tenant health. The following tabs are available:
+Click :desktop_computer: *Monitoring* in the side navigation to open the monitoring menu. You can access different monitoring apps:
 
--   *Dashboard* - Summary of disk and memory storage, tasks, SQL statements, and access control events.
--   *Elastic Compute Nodes* - Status for each elastic compute node.
--   *Task Logs* - List of all tasks run, with links to the *Data Integration Monitor* for detailed run information.
--   *Statement Logs* - List of all SQL statements run allowing you to identify expensive statements.
--   *Object Store* - Summary of file space storage and spark tasks.
+-   <span class="SAP-icons-V5"></span> *System and Spaces*  
 
-For more information, see [Monitoring SAP Datasphere in the System Monitor](Monitoring-SAP-Datasphere/monitoring-sap-datasphere-in-the-system-monitor-28910cd.md).
+    Monitor system performance and issues related to storage, tasks, out-of-memory, and other issues across all spaces. Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. See [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md).
+
+-   <span class="SAP-icons-V5"></span> *Capacities Monitoring*  
+
+    Monitor monthly and daily capacity unit consumption, allowing users to track usage relative to their subscription and download detailed hourly data. See [Monitoring Capacity Unit Consumption](monitoring-capacity-unit-consumption-ba3d05b.md).
+
+-   <span class="SAP-icons-V5"></span> *Task Logs*  
+
+    Monitor the execution history of task runs. See [Reviewing Task Logs](reviewing-task-logs-399e52f.md).
+
+-   <span class="SAP-icons-V5"></span> *Expensive Statement Logs*  
+
+    Monitor SQL statements exceeding configured thresholds. See [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md).
+
+-   <span class="FPA-icons-V3"></span> *Elastic Compute Nodes*  
+
+    Monitor elastic compute nodes key performance figures. See [Monitoring Elastic Compute Nodes](monitoring-elastic-compute-nodes-1d5f583.md).
+
+-   :fast_forward: *Data Integration*  
+
+    Monitor, schedule, and run data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, perform local table administration tasks like data deletion or house keeping, and manage other tasks through flows and task chains. Users need a space administrator or integrator role to access this app. See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  Data Integration app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
 
 
-
-<a name="loiod39b8652994846f9ab80b32fc5b4d671__capacity_units"/>
-
-## Capacity Units
-
-Obtain information about the consumption of capacity units in relation to your subscription.
-
-For more information, see [Monitor Capacity Unit Consumption](monitor-capacity-unit-consumption-ba3d05b.md).
+> ### Note:  
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](monitoring-sap-datasphere-d39b865.md) or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 
 

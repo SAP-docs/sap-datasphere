@@ -12,7 +12,7 @@ Users with an administrator role can create OAuth2.0 clients with an API access 
 
 You create an OAuth2.0 Client with an *API Access* purpose:
 
--   To use the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
+-   To use the SCIM 2.0 API \(see [Managing Users via the SCIM 2.0 API](../Managing-Users-and-Roles/managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
 -   To transport content through SAP Cloud Transport Management \(see [Transporting Content Through SAP Cloud Transport Management](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right:\).
 
 > ### Note:  
@@ -88,7 +88,7 @@ You create an OAuth2.0 Client with an *API Access* purpose:
     
     Select the appropriate access:
 
-    -   *User Provisioning* - To use the SCIM 2.0 API \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
+    -   *User Provisioning* - To use the SCIM 2.0 API \(see [Managing Users via the SCIM 2.0 API](../Managing-Users-and-Roles/managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
     -   *Analytics Content Network Interaction* - To transport content through SAP Cloud Transport Management \(see [Transporting Content Through SAP Cloud Transport Management](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right:\).
 
 
@@ -105,7 +105,7 @@ You create an OAuth2.0 Client with an *API Access* purpose:
     
     Select one of the following:
 
-    -   *Client Credentials* - If the client application is accessing its own resources or when the permission to access resources has been granted by the resource owner via another mechanism. To use the SCIM 2.0 API, select this option \(see [Create Users and Assign Them to Roles via the SCIM 2.0 API](../Managing-Users-and-Roles/create-users-and-assign-them-to-roles-via-the-scim-2-0-api-1ca8c4a.md)\).
+    -   *Client Credentials* - If the client application is accessing its own resources or when the permission to access resources has been granted by the resource owner via another mechanism. To use the SCIM 2.0 API, select this option \(see [Managing Users via the SCIM 2.0 API](../Managing-Users-and-Roles/managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
     -   *SAML2.0 Bearer* - If the user context is passed using SAML or to control access based on user permissions using SAML. This option requires specific client-side infrastructure to support SAML.
 
 

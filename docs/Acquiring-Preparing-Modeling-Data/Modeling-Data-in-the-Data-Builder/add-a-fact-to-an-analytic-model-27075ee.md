@@ -8,7 +8,7 @@ As a source for your analytic model, you need an object of type fact or another 
 
 ## Context
 
-The data type and semantic type information is inherited from the fact, as well as the standard aggregation behaviour for a measure. For fields with semantic type *Amount with Currency* and *Quantity with Unit* you only need to add the measure in the analytic model, the quantity or unit are added automatically.
+The data type and semantic type information is inherited from the fact, as well as the standard aggregation behavior for a measure. For fields with semantic type *Amount with Currency* and *Quantity with Unit* you only need to add the measure in the analytic model, the quantity or unit are added automatically.
 
 For analytic models as a source, these properties are copied to the new analytic model:
 
@@ -19,7 +19,7 @@ For analytic models as a source, these properties are copied to the new analytic
 -   Variables
 -   Global filter
 -   Data access controls
--   All attributes needed in the association to the dimension and all additional necessary attributes, e.g for hierarchies on dimensions.
+-   All attributes needed in the association to the dimension and all additional necessary attributes, for example for hierarchies on dimensions.
 
 
 
@@ -31,9 +31,15 @@ For analytic models as a source, these properties are copied to the new analytic
 
 3.  Select the properties you want to copy from the source. You can still take over properties into your analytic model later.
 
-4.  If the source is a view containing one or more input parameters, you must decide how each input parameter will be processed:
+    For the new analytic model that uses another analytic model as source, you can switch on *Show Inherited Elements* in the properties panel, to display the inherited elements.
 
-    -   *Map To*: Map the source input parameter to a variable in your analytic model. Users of this view will need to provide a value for the variable.
+4.  If the source contains one or more input parameters, you must decide how each input parameter will be processed:
+
+    -   *Inherit*: The properties of the variable of the underlying analytic model are used.
     -   *Set Value*: Enter a value to resolve the variable. The variable is resolved and users of this analytic model will no longer need to provide a value for it. If a value is already set by default, you can either set it or edit it by clicking the value and selecting another one in the list of available values of the *Select Member* dialog. The *Select Member* dialog is available only if a predefined default value has been defined in the input parameter.
+    -   *Map To*: Map the source input parameter to a variable in your analytic model. Users of this view will need to provide a value for the variable.
+
+    > ### Note:  
+    > Inherited variables cannot be changed in the new analytic model. Variables that are mapped can be changed.
 
 

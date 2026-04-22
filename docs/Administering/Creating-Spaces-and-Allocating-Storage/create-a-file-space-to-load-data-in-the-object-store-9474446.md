@@ -1,5 +1,7 @@
 <!-- loio947444683e524cfd9169d7671b72ba0c -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Create a File Space to Load Data in the Object Store
 
 Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.
@@ -18,7 +20,7 @@ To create file spaces, you must have a global role that grants you the following
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -27,7 +29,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 ## Context
 
 > ### Note:  
-> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038).
+> For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
 
 > ### Note:  
 > You cannot create or manage a file space via the command line, add a file space to an elastic compute node, or choose a file space as a monitoring space. You cannot monitor, lock, or unlock a file space. You cannot generate time data, enable audit logging, create database users, or associate HDI containers in a file space.
@@ -238,180 +240,15 @@ Users with an administrator role can create spaces, allocate compute resources a
     </tr>
     </table>
     
-5.  *Apache Spark* section - The maximum amount of compute resources that the file space can consume when processing statements are allocated to its Apache Spark instance. The resources allocated for the file space depend on the resources allocated for the object store in the *Tenant Configuration* page \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
+5.  *Apache Spark* section - An Apache Spark instance has been automatically created for the file space with a maximum amount of compute resources \(CPU and GB of memory\) that the file space can consume when running tasks.
 
-    The following applications, which are listed in the *Applications* area, are available for the instance and are used to run the tasks that are listed in the *Task Assignment* area.
+    The resources allocated to the file space depend on the resources allocated for the object store in the *Tenant Configuration* page \(see [Configure the Size of Your SAP Datasphere Tenant](../Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md)\).
 
+    A set of Apache Spark default configurations are available for the instance and are used to run certain tasks \(such as running a transformation flow in a file space, merging, or optimizing a local table \(file\) in a file space\). You can create your own custom configurations for the file space \(see [Set Statement Limits for File Spaces](https://prod-ccms.dita.c.eu-de-2.cloud.sap/oxygen-webapp/app/Keyref%20loio0cf1015768e44324b4088da4c5ebd8ca)\).
 
-    <table>
-    <tr>
-    <th valign="top">
+    In the *Apache Spark* section, you can modify the size of the instance at any time: change the amount of memory and click *Update*.
 
-    Property
-    
-    </th>
-    <th valign="top">
-
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Application*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Shows the name of the application.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Cluster Size*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Qualifies the overall size of resources allocated to the application. For example, micro or medium.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Driver*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Shows the amount of resources allocated to the driver for the application.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Executor*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Shows the amount of resources allocated to the executor for the application.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Max. Used*
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Shows the maximum amount of resources that can be used for the application.
-    
-    </td>
-    </tr>
-    </table>
-    
-    You can view which applications are used by default to run which tasks in the *Task Assignment* area.
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Object Type
-    
-    </th>
-    <th valign="top">
-
-    Activity
-    
-    </th>
-    <th valign="top">
-
-    Default Application
-    
-    </th>
-    <th valign="top">
-
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top" rowspan="2">
-    
-    LOCAL\_TABLE
-    
-    </td>
-    <td valign="top">
-    
-    MERGE\_FILES, OPTIMIZE\_FILES,
-    
-    </td>
-    <td valign="top">
-    
-    100
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Indicates the application that is used by default to run all the activities listed via a task chain or the *Local Tables \(File\)* monitor.
-
-    See [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    TRUNCATE\_FILES\_WITH\_FILTER, TRUNCATE\_FILES, VACUUM\_FILES, DELETE\_INBOUND\_BUFFER, FIND\_AND\_REPLACE
-    
-    </td>
-    <td valign="top">
-    
-    001
-    
-    </td>
-    <td valign="top">
-    
-     
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    TRANSFORMATION\_FLOWS
-    
-    </td>
-    <td valign="top">
-    
-    EXECUTE
-    
-    </td>
-    <td valign="top">
-    
-    100
-    
-    </td>
-    <td valign="top">
-    
-    \[read-only\] Indicates the application that is used by default to run a transformation flow in a file space.
-
-    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with local tables (file), shared local tables (file), shared local tables, and shared remote tables on a Delta Share runtime as sources, apply various transformations, and store the resulted dataset into another local table (file).") :arrow_upper_right:
-    
-    </td>
-    </tr>
-    </table>
-    
-    To modify the size of the instance at any time, change the amount of memory and click *Update*. You should change the size of your instance based on the resource amounts displayed in the *Max. Used* column of the table. For example, you can see that the application used to run transformation flows is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter 2688 in *Memory \(GB\)*. The amount of vCPUs is automatically calculated based on the amount of memory with a ratio of 4:1 \(for example 2688 GB of memory and 672 vCPUs\). The minimum size for the instance is 1632 GB of memory \(and 408 vCPUs\), and its maximum size is 8192 GB of memory \(and 2048 vCPUs\).
+    You should change the size of your instance based on the resource amounts displayed in the *Maximum Cores* and *Maximum Memory* columns in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\)** \> *Workload Management* \> *Apache Spark* \> *Task Assignments*. A set of Apache Spark configurations are applied by default to the new file space \(see [Set Limits to Compute Resources for File Spaces](set-limits-to-compute-resources-for-file-spaces-0cf1015.md)\). For example, the configuration used by default \(400\) to run transformation flows is allocated 168 CPU and 672 GB of memory. If you want that 4 transformation flows can be run in parallel, you must enter 2688 in *Memory \(GB\)*. The amount of vCPUs is automatically calculated based on the amount of memory with a ratio of 4:1 \(for example 2688 GB of memory and 672 vCPUs\). The minimum size for the instance is 1632 GB of memory \(and 408 vCPUs\), and its maximum size is 8192 GB of memory \(and 2048 vCPUs\).
 
 6.  Add your space to one or more scoped roles. You can:
 
@@ -422,7 +259,7 @@ Users with an administrator role can create spaces, allocate compute resources a
 
     For more information, see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
-    All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\). Either a user with an administrator role or a user with a space administrator role can do so.
+    All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Assign Members to Your SpaceControl User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.You can assign users to your space and manage them.") :arrow_upper_right:\). Either a user with an administrator role or a user with a space administrator role can do so.
 
 
 > ### Note:  

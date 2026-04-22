@@ -15,18 +15,18 @@ To use natural language search in the *Data Products* collection, it must be ena
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse AI Consumption* \(`–--–E--`\) - To use SAP Business AI features.
 
-A combination of the *Catalog Administrator* global role, the *DW AI consumer* global role, and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+A combination of the *Catalog Administrator* global role, the *DW AI consumer* global role, and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
 ## Using Natural Language Search
 
-Entering a natural language search string allows you to quickly find data products without looking for specific filter settings. Natural language search is only available for the *Data Products* collection.
+Entering a natural language search string allows you to quickly find data products without looking for specific filter settings. Natural language search is available for the data products, assets, terms, and key performance indicators \(KPIs\).
 
 > ### Note:  
 > Natural language search is supported in English only, but may provide useable results in other languages.
 
-To use the natural language search, select the *Data Products* collection, and enter a request.The use of natural language is not automatic and depends on the string entered:
+To use the natural language search, select the collection you want \(**Data Products**, **Assets**, **Terms**, or **KPIs**\) and enter a request.The use of natural language is not automatic and depends on the string entered:
 
 -   One word - Natural language search is not used.
 -   Two words - Natural language search is used if the standard search returns no results.
@@ -62,6 +62,16 @@ Conceptual grouping
     -   Returns all data products that are related to the supply chain line of business
 
 
+-   `show me an asset with revenue data`
+    -   Returns all assets that are related to revenue data
+
+-   `show me all KPIs with lead conversion rates`
+    -   Returns all KPIs that are related to lead conversion rates
+
+-   `show me terms related to revenue`
+    -   Returns all terms that are related to revenue
+
+
 
 
 </td>
@@ -75,13 +85,13 @@ Conceptual grouping
 <td valign="top">
 
 -   `industry agriculture and release status active`
-    -   Returns all data products that meet both conditions
+    -   Returns all items in the selected collection that meet both conditions
 
 -   `industry agriculture or release status active`
-    -   Returns all data products that meet either condition
+    -   Returns all items in the selected collection that meet either condition
 
 -   `not industry agriculture`
-    -   Returns all data products that are in any industry except **agriculture** 
+    -   Returns all items in the selected collection that are in any industry except **agriculture** 
 
 
 
@@ -91,7 +101,7 @@ Conceptual grouping
 <tr>
 <td valign="top">
 
-Data product and source properties or other filter categories
+Source properties, catalog properties, or other filter categories
 
 </td>
 <td valign="top">
@@ -100,22 +110,72 @@ Data product and source properties or other filter categories
     -   Returns all data products with "Sales" in their name and have US East \(NYC\) deployment region
 
 
+-   `show me published assets named regional sales that are of type story`
+    -   Returns published assets with "regional sales" in their name and are of type story
+
+-   `terms that were published on {date}`
+    -   Returns terms that were published on the specified date
+
+-   `published KPIs with status needs repair`
+    -   Returns KPIs that have been published and a functional status "Needs Repair"
+
+
 You can search text in the filter categories and these contents:
 
--   Name
+-   Data products
+    -   Name
 
--   Description
+    -   Description
 
--   Formation ID
+    -   Formation ID
 
--   Related Entity Business Name
+    -   Related Entity Business Name
 
--   Related Entity Container Path
+    -   Related Entity Container Path
 
--   Related Entity Business Name
+    -   Related Entity Business Name
 
 
-For a list of data product filter categories, see [Filter Category Details](filter-category-details-3b5725b.md).
+-   Assets
+    -   Source Name
+
+    -   Container Name
+
+    -   Formation Name
+
+    -   Related Glossary and Term Names
+
+    -   Publication Status
+
+    -   Source Business Name
+
+    -   Source Description
+
+    -   Catalog Edited Name
+
+    -   Catalog Summary
+
+
+-   Terms
+    -   Glossary Name
+
+    -   Name
+
+    -   Publication Status
+
+    -   Related Objects
+
+    -   Definition
+
+
+-   KPIs
+    -   Name
+
+    -   Summary
+
+
+
+For a list of filter categories, see [Filter Category Details](filter-category-details-3b5725b.md).
 
 </td>
 </tr>

@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Assign Users to a Role
+# Assign Roles to UsersAssign Users to a Role
 
-You can assign an individual user to a role \(global or scoped\) in the *Users* page, and you can assign several users to a global role at the same time in the *Roles* page. 
+There are multiple ways to assign roles to users.You can assign an individual user to a role \(global or scoped\) in the *Users* page, and you can assign several users to a global role at the same time in the *Roles* page. 
 
 
 
@@ -26,7 +26,7 @@ You can assign an individual user to a role \(global or scoped\) in the *Users* 
 
 <a name="loio57a78804d8bd48ca9e7e73a0d33e355f__section_wf2_zd3_3kb"/>
 
-## Assign Several Users to a Global Role
+## Assign a Role to Multiple UsersAssign Several Users to a Global Role
 
 You can assign several users to a global role at the same time in the *Roles* page.
 

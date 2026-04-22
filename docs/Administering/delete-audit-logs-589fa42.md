@@ -17,7 +17,7 @@ You can delete audit logs for:
 
     All entries that have been recorded before this date and time are deleted.
 
-    Deleting audit logs frees up disk storage, which you can see in the *Disk Storage Used* card in *System Monitor* \> *Dashboard*.
+    Deleting audit logs frees up disk storage, which you can see in the *Disk Storage Used* card in *Monitoring* \> *System and Spaces* \> *Dashboard*.
 
 
 > ### Note:  
