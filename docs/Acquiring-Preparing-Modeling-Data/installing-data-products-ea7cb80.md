@@ -72,7 +72,7 @@ Before you install the data product in your modelling space, check its statuses 
 
 1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
-2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
+2.  On the catalog search, find the data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
 3.  When you find the data product you want, select it.
 
@@ -93,6 +93,8 @@ Before you install the data product in your modelling space, check its statuses 
 
             -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
             -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
+
+            Data products from SAP Snowflake only support the *Remote Tables* option.
 
             You'll be able to see a list of all the objects that will be created in the *Data Builder*.
 
@@ -143,10 +145,10 @@ The following diagram shows the flow for data products.
 
 You can update a data product to the latest minor version using the *Update* action. The *Update* action appears when the version of the data product is newer than the one currently installed in you space and if you have the appropriate permissions.
 
-Updating a data product to the next major version is a more involved process, where you would uninstall a data product and then reinstall it. If you need help with updating a data product to the next major version, contact your system administrator.
-
 > ### Tip:  
 > If you're updating an SAP data product that has custom fields, review the following section: [Updating an SAP Data Product to Install Source System Custom Fields](installing-data-products-ea7cb80.md#loioea7cb802cbea47b39a441888873c3a49__updatedp_customfields) 
+
+When a new major version of a data product is released, it's available as a separate data product that you install independently \(see [Installing a Data Product](installing-data-products-ea7cb80.md#loioea7cb802cbea47b39a441888873c3a49__dataproduct_installdspspace)\).
 
 
 
@@ -202,7 +204,7 @@ During its lifecycle, an SAP data product might have patch, minor version, and m
 
 ## Context
 
-When selecting a method for accessing data for a data product that you install, you need to consider both storage and processing time costs and data freshness. Review the following table to get a better ideal of the options so that you can decide which method is most suitable for your needs.
+When you install a data product created outside SAP Datasphere, consider storage and processing costs as well as data freshness. Review the table below to understand your options and choose the method that best fits your needs.
 
 
 <table>

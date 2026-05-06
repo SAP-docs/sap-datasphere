@@ -22,7 +22,7 @@ For information about the required prerequisites in the connected systems and SA
 ## Supported Features
 
 > ### Note:  
-> In file spaces,remote tables, data flows, and model import are not supported.
+> In file spaces, remote tables, data flows, and model import are not supported.
 
 
 <table>
@@ -54,7 +54,14 @@ You can replicate the following data:
 
 -   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
 
-    For more information, see [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation.
+    For more information, see:
+
+    -   [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation
+    -   SAP Note [2890171](https://me.sap.com/notes/2890171) for CDS view requirements when using the connection for replication flows
+
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
 
 -   Data from ODP sources \(extraction contexts *SAPI* and *BW*\)
 
@@ -514,9 +521,11 @@ Select the authentication type to use to connect to SAP S/4HANA.
 You can select:
 
 -   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
--   *OAuth 2.0* - You can select this option only if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables and model import currently are not supported with OAuth authentication.
+-   *OAuth 2.0* - for using an OAuth 2.0 client with *Technical User* purpose to provide client credentials for authentication.
 
-    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+    You can select this option only if you have set Cloud Connector to *true*. Remote tables and model import currently are not supported with this authentication type.
+
+    For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use authentication type OAuth 2.0 with the client credentials grant type for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -1032,7 +1041,7 @@ Available properties:
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
 
--   Properties that are only considered if *Streaming Read* is set to *On*in the *Remote Tables* section of the connection:
+-   Properties that are only considered if *Streaming Read* is set to *On* in the *Remote Tables* section of the connection:
     -   *Batch Size, MB*
 
     -   *Batch Receive Timeout*

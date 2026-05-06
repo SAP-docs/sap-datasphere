@@ -985,6 +985,7 @@ To create task chains, you must have a scoped role that grants you access to a s
 
 To run and share task chains and configure email notifications, you must, in addition, have the following privileges:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
 
 -   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.

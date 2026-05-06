@@ -110,6 +110,18 @@ Define filters to delimit the scope of your replication flow.
     <tr>
     <td valign="top">
     
+    SAP ECC and SAP BW
+    
+    </td>
+    <td valign="top">
+    
+    Supports all data types except *include null values* and *exclude null values.*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Other Connections
     
     </td>

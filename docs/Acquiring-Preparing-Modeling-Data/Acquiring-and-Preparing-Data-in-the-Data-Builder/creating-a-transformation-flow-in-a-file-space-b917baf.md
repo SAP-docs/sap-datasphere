@@ -211,8 +211,8 @@ You want to model transformation flows with local tables \(file\), shared local 
 
     > ### Note:  
     > -   The transformation will be saved in the object store. While deploying, a virtual procedure will be created to enable the runtime in the file space.
-    > -   A transformation flow on a file space using a shared object as a source cannot be cancelled while running. Wait until the export step of the run is complete to cancel it.
-    > -   You can run your transformation flow in batches. A batch is a subset of data identified in an SAP HANA runtime transformation flow to optimize memory usage by processing data in manageable chunks. Each batch is defined based on a "batch column", selected in the View Transform, and a "batch size", specifying the number of distinct values from the batch column included in each batch. Loading data in batches is not supported in File space.
+    > -   A transformation flow on a file space using a shared object as a source cannot be cancelled while running.
+    > -   Loading data in batches is not supported in File space.
     > -   A transformation flow run fails if it lasts for over 48 hours.
 
 10. You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.

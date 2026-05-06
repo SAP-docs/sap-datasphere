@@ -20,15 +20,15 @@ To share a table, a view, or a task chain to another space, you must have a scop
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
-Every entity that is consumed by the analytic model has to be shared before you start sharing the analytic model.
-
 
 
 ## Context
 
 Your space is a secure area and its entities and other objects \(and their data\) cannot be seen in other spaces unless you choose to share them. When you share an analytic model to another space, users in that space can see its data and use it as a source for another analytic model.
 
-You can't use analytic models that have been shared from another space in stories in SAC. These models can only be consumed in SAP Analytics Cloud from their original space. However, you can use a shared analytic model as a source for another analytic model, which can then be used in stories in SAP Analytics Cloud.
+Shared entities will won’t be listed as objects in the target space, as they will not physically exist in the target space. By sharing an entity, access is granted to the entity in its original space. You can then reuse it in the target space by using it in other entities.
+
+You can't use analytic models that have been shared from another space in stories in SAP Analytics Cloud. These models can only be consumed in SAP Analytics Cloud from their original space. However, you can use a shared analytic model as a source for another analytic model, which can then be used in stories in SAP Analytics Cloud.
 
 > ### Caution:  
 > In case your analytic model contains conversion measures for currencies or units, you need to be aware that the analytic model always uses the conversion tables and views of the space where it is consumed. This ensures that even in a complex scenario all conversion measures are converted using the same conversion tables and views and are consistent within the analytic model.

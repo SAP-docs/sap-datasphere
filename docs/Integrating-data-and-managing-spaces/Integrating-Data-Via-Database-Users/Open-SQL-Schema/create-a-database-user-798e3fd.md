@@ -79,7 +79,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     <tr>
     <td valign="top">
     
-    Enable Automated Predictive Library and Predictive Analysis Library
+    Enable Automated Predictive Library \(APL\) and Predictive Analysis Library \(PAL\)
     
     </td>
     <td valign="top">

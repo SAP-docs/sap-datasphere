@@ -61,7 +61,7 @@ If the SAP HANA Cloud script server is enabled \(see [Enable the SAP HANA Cloud 
 For detailed information about using the machine learning libraries, see:
 
 -   [SAP HANA Automated Predictive Library Developer Guide](https://help.sap.com/viewer/7223667230cb471ea916200712a9c682/2101/en-US)
--   [SAP HANA Cloud Predictive Analysis Library \(PAL\)](https://help.sap.com/viewer/319d36de4fd64ac3afbf91b1fb3ce8de/2020_03_QRC/en-US/c9eeed704f3f4ec39441434db8a874ad.html)
+-   [SAP HANA Cloud Predictive Analysis Library \(PAL\)](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-predictive-analysis-library/sap-hana-cloud-sap-hana-database-predictive-analysis-library-pal)
 
 To list the privileges granted to your user, run the following statement in the SQL console:
 

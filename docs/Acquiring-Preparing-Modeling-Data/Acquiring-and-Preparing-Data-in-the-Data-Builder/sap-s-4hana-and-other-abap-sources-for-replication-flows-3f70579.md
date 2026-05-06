@@ -9,6 +9,8 @@ This topic contains the following sections:
 -   [Prerequisites](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_prerequisites)
 -   [Use Note Analyzer to Verify Your ABAP Source System Compliance](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_note_analyzer)
 -   [ABAP Replication Source Object Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_source_objects)
+-   [Work with Source Objects Without Primary Keys](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys)
+-   [Mask Sensitive Data Replicated to SAP Signavio](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_signavio)
 
 
 
@@ -587,15 +589,9 @@ ODP Data Sources \(SAPI or BW context\)
 
 
 
-## Mask Sensitive Data Replicated to SAP Signavio
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys"/>
 
-You can mask sensitive column data using the `SHA3-256` algorithm before writing to SAP Signavio \(see [Mask Sensitive Column Data](sap-signavio-targets-for-replication-flows-b8f5e28.md#loiob8f5e28d34b44d71a52f6265e4fc245f__section_mask_columns)\).
-
-
-
-<a name="loio3f70579c92434f4f88471bba2bd70893__section_e51_fwd_dhc"/>
-
-## Using Source Objects Without Primary Keys in Replication Flows
+## Work with Source Objects Without Primary Keys
 
 If certain conditions are met, you can use objects that do not have a primary key as the source for a replication flow.
 
@@ -624,4 +620,12 @@ The technical target column is not added to a target table for Apache Kafka, as 
 
 > ### Note:  
 > If your replication flow consumes multiple objects, we recommend using a common pattern and schema to avoid mixing unrelated datasets \(for example, "Employees" and "Sales" tables\).
+
+
+
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_signavio"/>
+
+## Mask Sensitive Data Replicated to SAP Signavio
+
+You can mask sensitive column data using the `SHA3-256` algorithm before writing to SAP Signavio \(see [Mask Sensitive Column Data](sap-signavio-targets-for-replication-flows-b8f5e28.md#loiob8f5e28d34b44d71a52f6265e4fc245f__section_mask_columns)\).
 

@@ -13,7 +13,7 @@ In addition to the SAP-managed data products made available to you by activating
 ## Create a Data Product
 
 1.  Prepare the data from which you want to create the data product. You must have one or more tables containing data that you want to include in your data product.
-2.  Identify a file space that will serve to stage the data tables that will be contained in your data product. If your data is currently in an SAP HANA Database space, you can share the relevant tables to the file space \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:.
+2.  Identify a file space that will serve to stage the data tables that will be contained in your data product. If your data is currently in an SAP HANA Database space, you can share the relevant tables to the file space \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table, a view, or an analytic model to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:.
 
     > ### Note:  
     > Data products created in this way can only contain data stored in file spaces.

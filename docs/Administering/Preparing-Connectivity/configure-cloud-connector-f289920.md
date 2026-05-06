@@ -271,7 +271,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Generic SFTP* \(data flows, replication flows\) 
+        *Generic SFTP* \(replication flows, data flows\) 
         
         </td>
         <td valign="top">
@@ -302,7 +302,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Microsoft SQL Server* \(data flows, replication flows\) 
+        *Microsoft SQL Server* \(replication flows, data flows\) 
         
         </td>
         <td valign="top">
@@ -326,7 +326,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP ABAP* on-premise \(data flows, replication flows\)
+        *SAP ABAP* on-premise \(replication flows, data flows\)
         
         </td>
         <td valign="top">
@@ -350,7 +350,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP BW* \(data flows\)
+        *SAP BW* \(replication flows, data flows\) 
         
         </td>
         <td valign="top">
@@ -374,7 +374,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP ECC* \(data flows\)
+        *SAP ECC* \(replication flows, data flows\) 
         
         </td>
         <td valign="top">
@@ -386,7 +386,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP HANA* on-premise \(data flows, replication flows, remote tables via SAP HANA Smart Data Access and Cloud Connector\)
+        *SAP HANA* on-premise \(replication flows, remote tables via SAP HANA Smart Data Access and Cloud Connector, data flows\)
         
         </td>
         <td valign="top">
@@ -400,7 +400,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *SAP S/4HANA On-Premise* \(data flows, replication flows, model import\)
+        *SAP S/4HANA On-Premise* \(replication flows, model import, data flows\)
         
         </td>
         <td valign="top">

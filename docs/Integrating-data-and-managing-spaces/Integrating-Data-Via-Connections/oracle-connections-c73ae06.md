@@ -76,20 +76,6 @@ You can use the connection to add source objects to a data flow.
 
 
 
-### Replication Flows
-
-Before you can use the connection for replication flows, the following is required:
-
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
-
-    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
-
-    > ### Note:  
-    > Cloud Connector is not required if your Oracle database is available on the public internet.
-
-
-
-
 ### Remote Tables
 
 Before you can use the connection for remote tables, the following is required:

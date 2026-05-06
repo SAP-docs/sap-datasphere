@@ -100,29 +100,3 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     Users who have been granted the privilege will see the *Joule* button available in the shell bar: <span class="SAP-icons-V5"></span> \(see [Navigating in SAP Datasphere](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/bd79b74face14b17a4cfa844a2fd36c7.html "Use the left navigation area to access all the apps available in SAP Datasphere.") :arrow_upper_right:\).
 
 
-<a name="task_skn_2l5_p3c"/>
-
-<!-- task\_skn\_2l5\_p3c -->
-
-## Enable SAP Knowledge Graph
-
-SAP Knowledge Graph enhances Joule by grounding AI responses in your business data relationships.
-
-
-
-## Prerequisites
-
--   AI Units license purchased.
--   Tenant supports SAP Knowledge Graph integration
-
-
-
-## Procedure
-
-1.  From the *AI Services* tab, scroll to the *SAP Knowledge Graph in SAP Datasphere* section.
-
-2.  Enable *SAP Knowledge Graph*.
-
-    Users can query business data through Joule leveraging the knowledge graph.
-
-

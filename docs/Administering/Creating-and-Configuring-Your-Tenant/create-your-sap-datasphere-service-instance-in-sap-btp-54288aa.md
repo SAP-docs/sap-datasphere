@@ -2,10 +2,10 @@
 
 # Create Your SAP Datasphere Service Instance in SAP BTP
 
-Create your SAP Datasphere service instance in SAP Business Technology Platform.
+Create an SAP Datasphere service instance in SAP Business Technology Platform \(SAP BTP\) to provision an SAP Datasphere tenant.
 
 > ### Note:  
-> Creating an SAP Datasphere service instance in SAP Business Technology Platform \(SAP BTP\) results in provisioning an SAP Datasphere tenant.
+> This information is for creating an SAP Datasphere tenant outside of SAP BDC. If your access to SAP Datasphere is part of an SAP BDC solution, you should follow the procedure in [Provisioning SAP Datasphere](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud/provisioning-sap-datasphere) in the *SAP Business Data Cloud* documentation instead.
 
 For both subscription-based contracts \(initiated on November 2023\) and consumption-based contracts, you can access the SAP BTP cockpit and view all currently available services in a global account. You need to structure this global account into subaccounts and other related artefacts, such as directories and/or spaces.
 

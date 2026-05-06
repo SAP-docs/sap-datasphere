@@ -17,9 +17,7 @@ If you want to assign new users different roles, include a `Roles` column in the
 For existing users that you want to modify, you can create the CSV file by first exporting a CSV file from SAP Datasphere. For more information, see [Export Users](export-users-e227d3c.md).
 
 > ### Note:  
-> The first name, last name, and display name are linked to the identity provider, and can't be changed in the User list page, or when importing a CSV file. \(In the User list page, those columns are grayed out.\)
-> 
-> To edit those values, you'll need to use the user login, and edit that user's profile.
+> The first name, last name, and display name are linked to the identity provider, and can't be changed in the *Users* page, or when importing a CSV file.
 
 Edit the downloaded CSV file to remove columns whose values you don't want to modify, and to remove rows for users whose values you don't want to modify. Do not modify the `USERID` column. This ensures that entries can be matched to existing users when you re-import the CSV.
 
@@ -30,7 +28,7 @@ These are the available mapping parameters when importing CSV user data:
 <tr>
 <th valign="top">
 
-Parameter
+Property
 
 </th>
 <th valign="top">
@@ -42,408 +40,84 @@ Description
 <tr>
 <td valign="top">
 
-User ID
+USER\_NAME
 
 </td>
 <td valign="top">
 
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-First Name
-
-</td>
-<td valign="top">
-
- 
+ID of the user. Each user needs a unique ID. Once the user account is created their ID can’t be modified. Only upper-case letters \(A-Z\), numbers \(0-9\), and underscores are allowed. The maximum length is 20 characters.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Last Name
+FIRST\_NAME
 
 </td>
 <td valign="top">
 
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Display Name
-
-</td>
-<td valign="top">
-
- 
+First name of the user.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Email
+LAST\_NAME
 
 </td>
 <td valign="top">
 
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Manager
-
-</td>
-<td valign="top">
-
- 
+Last name of the user.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Roles
+DISPLAY\_NAME
 
 </td>
 <td valign="top">
 
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Mobile
-
-</td>
-<td valign="top">
-
- 
+Name of the user that appears on the screens.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Phone
+EMAIL
 
 </td>
 <td valign="top">
 
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Office Location
-
-</td>
-<td valign="top">
-
- 
+Email address of the user. A welcome email with logon information is sent to the email address. .
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Function Area
+ROLES
 
 </td>
 <td valign="top">
 
-Can be used to refer to a user's team or area within their organization.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Job Title
-
-</td>
-<td valign="top">
-
- 
+Roles assigned to the user via scoped roles.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Clean up notifications older than
+SAML\_USER\_MAPPING
 
 </td>
 <td valign="top">
 
-Set in user settings: when to automatically delete notifications.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Email Notification
-
-</td>
-<td valign="top">
-
-Set in user settings.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Welcome message
-
-</td>
-<td valign="top">
-
-Message that is shown to the user on the home screen.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Page tips
-
-</td>
-<td valign="top">
-
-Enabled/disabled via the help center \(deprecated\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Closed Page tips
-
-</td>
-<td valign="top">
-
-Closed page tips are tracked so that they are not shown again.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Closed Item Picker Tips
-
-</td>
-<td valign="top">
-
-Closed tooltips are tracked so that they won't be reopened again \(for first time users\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Current Banner
-
-</td>
-<td valign="top">
-
-Saves which banner is currently showing.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Last Banner
-
-</td>
-<td valign="top">
-
-The UUID of the last closed banner.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Last Maintenance Banner Version
-
-</td>
-<td valign="top">
-
-The version when the last maintenance banner was shown.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Marketing email opt in
-
-</td>
-<td valign="top">
-
-Set in user settings.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Homescreen content is initialized
-
-</td>
-<td valign="top">
-
-If default tiles have been set for the home screen.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Expand Story Toolbar
-
-</td>
-<td valign="top">
-
-Set in user settings.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Is user concurrent
-
-</td>
-<td valign="top">
-
-If the user has a concurrent license.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-On the *Edit Home Screen* dialog, a user can override all the default preferences that have been set by the administrator for the system \(*System* \> *Administration* \> *Default Appearance*\). These are the preferences:
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Background Option
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Logo Option
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Welcome Message
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Home Search To Insight
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Get Started
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Recent Stories
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Recent Presentations
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Override Calendar Highlights
-
-</td>
-<td valign="top">
-
- 
+SAML property for the user \(if SAML enabled\).
 
 </td>
 </tr>

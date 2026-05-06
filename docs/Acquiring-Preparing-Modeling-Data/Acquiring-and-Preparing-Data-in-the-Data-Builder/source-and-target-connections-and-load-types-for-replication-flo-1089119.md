@@ -1,6 +1,6 @@
 <!-- loio10891192186c4920b08939a7b46adc79 -->
 
-# Load Types and Connections for Your Replication Flows
+# Source and Target Connections and Load Types for Replication Flows
 
 Understand which load type is supported by your source or target connection.
 
@@ -259,6 +259,28 @@ Supported
 <td valign="top">
 
 Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP BW and SAP ECC
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+Not supported
 
 </td>
 </tr>

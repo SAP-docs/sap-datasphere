@@ -1198,12 +1198,12 @@ SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-via [SAP ABAP Connections](sap-abap-connections-a75c1aa.md)
+yes
 
 </td>
 <td valign="top">
@@ -1339,12 +1339,12 @@ SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-via [SAP ABAP Connections](sap-abap-connections-a75c1aa.md)
+yes
 
 </td>
 <td valign="top">

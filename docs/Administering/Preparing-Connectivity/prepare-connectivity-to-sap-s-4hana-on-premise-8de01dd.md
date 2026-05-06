@@ -13,7 +13,7 @@ This topic contains the following sections:
 -   [Replication Flows](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_rf_S4_OP)
 -   [Model Import \(Data Access: Remote Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP)
 -   [Model Import \(Data Access: Replication Flow to Local Tables\)](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_mt_S4_OP_replication_flow)
--   [OAuth 2.0 Authentication](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_OAuth_S4_OP)
+-   [Setting Up OAuth 2.0 Client Credentials](prepare-connectivity-to-sap-s-4hana-on-premise-8de01dd.md#loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_OAuth_S4_OP)
 
 
 
@@ -21,19 +21,22 @@ This topic contains the following sections:
 
 ## Remote Tables
 
-If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md) \(recommended for federation scenarios\).
+Before you can use the connection for remote tables, the following is required:
 
-If you want to federate and replicate data using SAP HANA smart data integration, the following is required before you can use the connection \(legacy\):
+-   If you want to use federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md) \(recommended for federation scenarios\).
 
--   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
+-   If you want to federate and replicate data using SAP HANA smart data integration, the following is required before you can use the connection \(legacy\):
 
-    For the *Language* setting in the connection properties to have an effect on the language shown in the Data Builder, Data Provisioning Agent version 2.0 SP 05 Patch 10 \(2.5.1\) or higher is required.
+    -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
 
-    For more information, see [Preparing Data Provisioning Agent Connectivity](preparing-data-provisioning-agent-connectivity-f1a39d1.md).
+        For the *Language* setting in the connection properties to have an effect on the language shown in the Data Builder, Data Provisioning Agent version 2.0 SP 05 Patch 10 \(2.5.1\) or higher is required.
 
--   The ABAP user specified in the credentials of the SAP ABAP connection needs to have a specific set of authorizations in the SAP ABAP system. For more information, see: [Authorizations](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/bcc0ff2acd6a4476b2912ff4cd71cd91.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
+        For more information, see [Preparing Data Provisioning Agent Connectivity](preparing-data-provisioning-agent-connectivity-f1a39d1.md).
 
--   If you want to stream ABAP tables for loading large amounts of data without running into memory issues, you need to configure suitable security privileges for successful registration on an SAP Gateway and you need to create an RFC destination of type TCP/IP in the ABAP source system. With the RFC destination you register the Data Provisioning Agent as server program in the source system. For more information, see [Prerequisites for ABAP RFC Streaming](prerequisites-for-abap-rfc-streaming-62adb44.md).
+    -   The ABAP user specified in the credentials of the SAP ABAP connection needs to have a specific set of authorizations in the SAP ABAP system. For more information, see: [Authorizations](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/bcc0ff2acd6a4476b2912ff4cd71cd91.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
+
+    -   If you want to stream ABAP tables for loading large amounts of data without running into memory issues, you need to configure suitable security privileges for successful registration on an SAP Gateway and you need to create an RFC destination of type TCP/IP in the ABAP source system. With the RFC destination you register the Data Provisioning Agent as server program in the source system. For more information, see [Prerequisites for ABAP RFC Streaming](prerequisites-for-abap-rfc-streaming-62adb44.md).
+
 
 
 
@@ -45,7 +48,7 @@ If you want to federate and replicate data using SAP HANA smart data integration
 > ### Note:  
 > The availability of the data flow feature depends on the used version and Support Package level of SAP S/4HANA or the DMIS addon in the source. Make sure your source systems meet the required minimum versions. We recommend to use the latest available version of SAP S/4HANA and the DMIS add-on where possible and have the latest SAP notes and TCI notes implemented in your systems.
 > 
-> For more information about required versions, recommended system landscape, considerations for the supported source objects, and more , see SAP Note [2890171](https://me.sap.com/notes/2890171).
+> For more information about required versions, recommended system landscape, considerations for the supported source objects, and more, see SAP Note [2890171](https://me.sap.com/notes/2890171).
 
 Before you can use the connection for data flows, the following is required:
 
@@ -85,7 +88,7 @@ Before you can use the connection for replication flows, the following is requir
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
--   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using replication flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
+-   -   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using replication flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
 
     -   In the *Back-end Type* field, select *ABAP System*.
     -   In the *Protocol* field, select *RFC SNC*.
@@ -299,14 +302,14 @@ Before you can use the connection to import entities with data access *Replicati
 
 <a name="loio8de01dd25c1e443e8e2de7d2fbe1364d__prereq_OAuth_S4_OP"/>
 
-## OAuth 2.0 Authentication
+## Setting Up OAuth 2.0 Client Credentials
 
-You can use OAuth 2.0 authentication if you're using Cloud Connector \(for replication flows and data flows\) for your connection to SAP S/4HANA.
+You can use the *OAuth 2.0* authentication type with the *Client Credentials* OAuth grant type if you're using Cloud Connector \(for replication flows and data flows\) for your connection to SAP S/4HANA. When selecting this authentication type for the connection, technical user propagation is used to authenticate against the on-premise system.
 
-For information about setting up OAuth 2.0 authentication, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](prepare-oauth-2-0-authentication-for-sap-abap-and-sap-s-4hana-connections-03dde85.md).
+For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections](configure-oauth-2-0-client-credentials-for-sap-abap-and-sap-s-4hana-connections-03dde85.md).
 
 > ### Note:  
-> Remote tables and model import are not supported with OAuth 2.0 authentication.
+> Remote tables and model import are not supported with this authentication type.
 
 **Related Information**  
 

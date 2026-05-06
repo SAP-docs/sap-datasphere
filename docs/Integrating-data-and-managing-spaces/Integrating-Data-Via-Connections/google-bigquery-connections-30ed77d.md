@@ -218,7 +218,7 @@ Description
 <tr>
 <td valign="top">
 
-*Location* 
+*Location*
 
 </td>
 <td valign="top">
@@ -235,7 +235,7 @@ Description
 <tr>
 <td valign="top">
 
-*Virtual Host* 
+*Virtual Host*
 
 </td>
 <td valign="top">
@@ -308,7 +308,7 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 <tr>
 <td valign="top">
 
-*Virtual Port* 
+*Virtual Port*
 
 </td>
 <td valign="top">

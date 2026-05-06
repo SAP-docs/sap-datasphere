@@ -445,6 +445,141 @@ Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *D
 > ### Note:  
 > The values in the columns: Start Time, End Time, Duration, Rows and Size are taken directly from HANA remote monitoring view. See [https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-reference-guide/m-remote-statements-system-view](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-reference-guide/m-remote-statements-system-view) in the *SAP HANA Cloud, SAP HANA Database SQL Guide* .
 
+**Source Objects**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Entity Name
+
+</td>
+<td valign="top">
+
+Shows the names of the objects in the lineage graph.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Space
+
+</td>
+<td valign="top">
+
+Shows the name of the space that the object is in.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Statement Type
+
+</td>
+<td valign="top">
+
+Shows the name of the space that the object is in.
+
+-   *All* - View all remote tables
+-   *Statement Type: 1000 Rows*: View only remote tables labeled as "Select 1000 rows".
+-   *Statement Type: Count All*: View only remote tables labeled as "Count all rows".
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Duration
+
+</td>
+<td valign="top">
+
+Shows the duration of the latest run of the relevant object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Rows
+
+</td>
+<td valign="top">
+
+Shows the number of rows contained in the object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Peak Memory \(MiB\)
+
+</td>
+<td valign="top">
+
+Shows the peak memory usage of the run of the query.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Start Run
+
+</td>
+<td valign="top">
+
+Click *Start Run* to start runtime metrics run.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cancel Run
+
+</td>
+<td valign="top">
+
+Click *Cancel Run* to cancel the current runtime metrics run.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Start View Analyzer
+
+</td>
+<td valign="top">
+
+Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
+
+</td>
+</tr>
+</table>
+
 > ### Note:  
-> Lineage objects with remote tables with input parameters cannot be analyzed as source objects.
+> Source objects with remote tables with input parameters cannot be analyzed as source objects. Source objects below persisted views or replicated remote tables will not be considered in the calculation.
+
+> ### Note:  
+> The runtime query will time out after three minutes. This may happen with larger lineage graphs. Consider checking *View Analyzer* to troubleshoot.
 

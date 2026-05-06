@@ -31,7 +31,7 @@ See also [3670351](https://me.sap.com/notes/3670351).
 To allow users to work with choropleth layers, you must ensure that the default choropleth data is installed in SAP Datasphere.
 
 > ### Note:  
-> SAP Datasphere tenants provisioned up to and including version 2025.23 include default choropleth shapefile data. Tenants provisioned since then no longer include this data, but you can manually install it.
+> This default choropleth shapefile data was preloaded to SAP Datasphere tenants provisioned up to and including version 2025.23. However, tenants provisioned since then no longer include this data, and you must manually install it.
 
 1.  Go to [https://me.sap.com/softwarecenter](https://me.sap.com/softwarecenter) and search for `DSP_SPATIAL_0-70009312.ZIP`.
 2.  Download and unzip the file.
@@ -149,7 +149,10 @@ To allow users to work with choropleth layers, you must ensure that the default 
 
 Some organizations need to visualize their geographical data using different area borders.
 
-If default choropleth data is already installed in your SAP Datasphere \(see [Install Default Choropleth Shapefile Data](enable-choropleth-layers-for-geographical-visualizations-4e45d4c.md#loio4e45d4cb71404f52bd3cb01676f328e1__section_default)\), you can import additional shapefile data to provide further custom choropleth layers for use in visualizations.
+If you have installed the default choropleth data to your SAP Datasphere tenant, you can import additional shapefile data to provide further custom choropleth layers for use in visualizations.
+
+> ### Note:  
+> Even though SAP Datasphere tenants provisioned up to and including version 2025.23 include default choropleth shapefile data, you must manually reinstall it \(see [Install Default Choropleth Shapefile Data](enable-choropleth-layers-for-geographical-visualizations-4e45d4c.md#loio4e45d4cb71404f52bd3cb01676f328e1__section_default)\) before you can add custom choropleth layers.
 
 1.  Obtain the custom shapefile data that you want to use, along with its Spatial Reference Identifier \(SRID\).
 

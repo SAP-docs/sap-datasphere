@@ -17,7 +17,10 @@ Define settings and properties for your replication flow and individual replicat
     -   *Initial and Delta*: After the initial load, the system checks for source data changes \(delta\) at regular intervals and copies the changes to the target. The default value for the delta load frequency is 60 minutes but you can change it in the Run Settings. See step 5 below.
 
         > ### Note:  
-        > -   A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status *Active* until it is stopped or paused or an issue occurs.
+        > -   By default, a replication flow that contains objects with load type *Initial and Delta* runs as a long-running flow and remains in status *Active* until it is stopped, paused, or an issue occurs.
+        > 
+        >     > ### Caution:  
+        >     > You must always stop or pause a running replication flow before a source system downtime. For more information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:.
         > 
         > -   The system load caused by the delta load operations can vary substantially depending on the frequency of changes in your data source in combination with the interval length you define. Make sure that your tenant configuration supports your settings. For more information, see [Configure the Size of your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
         > 
@@ -38,7 +41,7 @@ Define settings and properties for your replication flow and individual replicat
 
         -   *Delta Only* is a long running task similar to *Initial and Delta*.
 
-            For more information on supported load types and connections, see [Load Types and Connections for Your Replication Flows](load-types-and-connections-for-your-replication-flows-1089119.md).
+            For more information on supported load types and connections, see [Source and Target Connections and Load Types for Replication Flows](source-and-target-connections-and-load-types-for-replication-flo-1089119.md).
 
 
 
@@ -93,13 +96,21 @@ Define settings and properties for your replication flow and individual replicat
 
     To change the settings, click *Edit:*
 
+    -   Delta Load Run: You can define how delta-enabled objects run in a replication flow
+        -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
+        -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.
+
     -   Source Thread Limit \(1-160\): You can increase or decrease the number of replication threads to be used by your replication flow to load data from the source as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 10. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance. See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
     -   Target Thread Limit \(1-160\) You can increase or decrease the number of replication threads to be used by your replication flow to write data to the target as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 10. We recommend using the same value for the source and the target. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance.
     -   Delta Load Frequency: The default value for the delta load frequency is 60 minutes. You can change it by entering an integer between 0 and 24 for hours and 0 and 59 for minutes, respectively. The maximum allowed value is 24 hours 0 minutes. If you enter 0 hours and 0 minutes, the system replicates any source changes immediately.
 
+        > ### Note:  
+        > This setting is only relevant when *Delta Load Run* is set to *On Delta Interval.*
+
         This setting directly impacts costs: Billing is based on the replication flow job’s duration rather than data volume. Therefore, a longer interval between runs can lower your expenses.
 
 
+    -   
 6.  Review the settings for the individual replication objects and change or complete them as appropriate.
 
     To do so, select the relevant replication object. Its properties are then displayed in the side panel.

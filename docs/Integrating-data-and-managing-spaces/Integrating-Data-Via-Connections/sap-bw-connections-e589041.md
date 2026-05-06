@@ -2,10 +2,7 @@
 
 # SAP BW Connections
 
-Use an *SAP BW* connection to access data from virtual tables through RFC for ODP sources \(extractors\) and ABAP Dictionary tables from SAP Business Warehouse \(SAP BW\) or SAP BW∕4HANA systems. For SAP BW systems that don't have the ABAP Pipeline Engine extension installed, ODP extractors can be used as sources in data flows.
-
-> ### Note:  
-> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
+Use an *SAP BW* connection to access data from SAP Business Warehouse \(SAP BW\) or SAP BW∕4HANA systems.
 
 This topic contains the following sections:
 
@@ -15,60 +12,12 @@ This topic contains the following sections:
 
 
 
-<a name="loioe589041e80264f43b6c209c407336376__BW_prerequisites"/>
-
-## Prerequisites
-
-
-
-### Remote Tables
-
-Before you can use the connection for remote tables, the following is required:
-
--   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
-
-    For the *Language* setting in the connection properties to have an effect on the language shown in the Data Builder, Data Provisioning Agent version 2.0 SP 05 Patch 10 \(2.5.1\) or higher is required.
-
-    For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
-
--   The ABAP user specified in the credentials of the SAP ABAP connection needs to have a specific set of authorizations in the SAP ABAP system. For more information, see: [Authorizations](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/bcc0ff2acd6a4476b2912ff4cd71cd91.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
-
--   To access and copy data from SAP BW objects such as InfoProviders or characteristics, the appropriate authorization objects like S\_RS\_ADSO or S\_RS\_IOBJA are required for the ABAP user. For more information, see [Overview: Authorization Objects](https://help.sap.com/viewer/2e90b26cf7484203a523bf0f4b1bc137/7.5.latest/en-US/4c658f3245e31ca6e10000000a42189c.html) in the *SAP NetWeaver* documentation.
-
-    If you want to access data from SAP BW Queries, make sure that the ABAP user has the required analysis authorizations to read the data and that characteristic 0TCAIPROV \(InfoProvider\) in the authorization includes `@Q`, which is the prefix for Queries as InfoProviders. For more information, see [Defining Analysis Authorizations](https://help.sap.com/viewer/2e90b26cf7484203a523bf0f4b1bc137/7.5.latest/en-US/4a27a9cf81661d10e10000000a42189b.html) in the *SAP NetWeaver* documentation.
-
--   If you want to stream ABAP tables for loading large amounts of data without running into memory issues, you need to configure suitable security privileges for successful registration on an SAP Gateway and you need to create an RFC destination of type TCP/IP in the ABAP source system. With the RFC destination you register the Data Provisioning Agent as server program in the source system. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:.
-
--   To be able to use ABAP Dictionary tables from connections to a SAP BW∕4HANA system for remote tables and creating views, please make sure that SAP note [2872997](https://me.sap.com/notes/2872997) has been applied to the system.
-
-
-
-
-### Data Flows
-
-Before you can use the connection for data flows, the following is required:
-
--   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
-
-    In the Cloud Connector configuration, an administrator has made sure that access to the required resources is granted.
-
-    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
-
--   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using data flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
-
-    -   In the *Back-end Type* field, select *ABAP System*.
-    -   In the *Protocol* field, select *RFC SNC*.
-    -   In the *Principal Type* field, select *X.509 Certificate*.
-    -   In the *SNC Partner Name* field, enter the ABAP system's SNC identity name \(for example, `p:CN=SID, O=Trust Community, C=DE`\). The SNC partner name needs to contain the correct SNC identification of the ABAP system. The value can typically be found in the ABAP system instance profile parameter `snc/identity/as` \(and hence is provided per application server\).
-
-    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/initial-configuration-rfc) in the *SAP BTP Connectivity* documentation.
-
-
-
-
 <a name="loioe589041e80264f43b6c209c407336376__BW_usage"/>
 
 ## Supported Features
+
+> ### Note:  
+> In file spaces, remote tables and data flows are not supported.
 
 
 <table>
@@ -83,6 +32,25 @@ Feature
 Additional Information
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a replication flow.
+
+For legacy SAP BW systems that do not have the DMIS Addon installed, you can leverage Operational Data Provisioning \(ODP 2.0\) connectivity and use ODP extractors as sources to replicate data from:
+
+-   Extraction context *BW* provides access to InfoProviders in SAP BW or SAP BW∕4HANA systems.
+-   Extraction context *SAPI* provides access to Service API \(SAPI\) DataSources.
+
+For more information, see [SAP ECC and SAP BW Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/c7accb3184274e1eb25c582bf3235789.html "You can replicate data from SAP ECC and SAP BW systems using the ODP framework. Unlike ABAP and SAP S/4HANA connections, replication flows connect directly to the ABAP system, so no DMIS add-on installation is required. However, replication is limited to ODP data sources such as BW and SAPI.") :arrow_upper_right:.
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -143,7 +111,7 @@ Data Flows
 
 You can use the connection to add source objects to a data flow.
 
-For legacy SAP BW systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed, you can leverage Operational Data Provisioning \(ODP\) connectivity und use ODP extractors as sources in data flows. Note that ABAP Dictionary tables are not supported as sources in data flows.
+For legacy SAP BW systems that do not have the ABAP Pipeline Engine extension or DMIS Addon installed, you can leverage Operational Data Provisioning \(ODP\) connectivity and use ODP extractors as sources in data flows. Note that ABAP Dictionary tables are not supported as sources in data flows.
 
 > ### Note:  
 > The data preview in the data flow editor of the Data Builder is **not** available for SAP BW sources.
@@ -157,16 +125,56 @@ For legacy SAP BW systems that do not have the ABAP Pipeline Engine extension or
 > ### Note:  
 > If you want to provide SAP BW∕4HANA business semantics to SAP Datasphere, you can use connection type SAP BW∕4HANA*Model Import* and import SAP BW∕4HANA models based on analytic queries. During the import, the semantics of the underlying SAP BW∕4HANA models are translated into native SAP Datasphere entities that you can use to access the data stored in SAP BW∕4HANA, to enhance the data in SAP Datasphere, or to consume them by analytic clients. For more information, see [SAP BW∕4HANA Model Transfer Connections](sap-bw-4hana-model-transfer-connections-1caba95.md).
 
-> ### Note:  
-> This connection type doesn't support replication flows. Instead, we recommend using the *SAP ABAP* connection type for replication flows.
+
+
+<a name="loioe589041e80264f43b6c209c407336376__BW_prerequisites"/>
+
+## Prerequisites
+
+
+
+### Remote Tables
+
+Before you can use the connection for remote tables, the following is required:
+
+-   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the ABAPAdapter.
+
+    For the *Language* setting in the connection properties to have an effect on the language shown in the Data Builder, Data Provisioning Agent version 2.0 SP 05 Patch 10 \(2.5.1\) or higher is required.
+
+    For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+
+-   The ABAP user specified in the credentials of the SAP ABAP connection needs to have a specific set of authorizations in the SAP ABAP system. For more information, see: [Authorizations](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/bcc0ff2acd6a4476b2912ff4cd71cd91.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* documentation.
+
+-   To access and copy data from SAP BW objects such as InfoProviders or characteristics, the appropriate authorization objects like S\_RS\_ADSO or S\_RS\_IOBJA are required for the ABAP user. For more information, see [Overview: Authorization Objects](https://help.sap.com/viewer/2e90b26cf7484203a523bf0f4b1bc137/7.5.latest/en-US/4c658f3245e31ca6e10000000a42189c.html) in the *SAP NetWeaver* documentation.
+
+    If you want to access data from SAP BW Queries, make sure that the ABAP user has the required analysis authorizations to read the data and that characteristic 0TCAIPROV \(InfoProvider\) in the authorization includes `@Q`, which is the prefix for Queries as InfoProviders. For more information, see [Defining Analysis Authorizations](https://help.sap.com/viewer/2e90b26cf7484203a523bf0f4b1bc137/7.5.latest/en-US/4a27a9cf81661d10e10000000a42189b.html) in the *SAP NetWeaver* documentation.
+
+-   If you want to stream ABAP tables for loading large amounts of data without running into memory issues, you need to configure suitable security privileges for successful registration on an SAP Gateway and you need to create an RFC destination of type TCP/IP in the ABAP source system. With the RFC destination you register the Data Provisioning Agent as server program in the source system. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:.
+
+-   To be able to use ABAP Dictionary tables from connections to a SAP BW∕4HANA system for remote tables and creating views, please make sure that SAP note [2872997](https://me.sap.com/notes/2872997) has been applied to the system.
 
 
 
 
+### Data Flows and Replication Flows
 
-### Best Practices for Integrating Data
+Before you can use the connection for data flows and replication flows, the following is required:
 
-See [SAP Data Warehouse Cloud - First Guidance: Data Integration for ABAP Source Systems](https://www.sap.com/documents/2021/06/e8238e12-e47d-0010-bca6-c68f7e60039b.html) \(published February 2022\) for general best practices for integrating data from ABAP source systems with SAP Datasphere.
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    In the Cloud Connector configuration, an administrator has made sure that access to the required resources is granted.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+-   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using data flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
+
+    -   In the *Back-end Type* field, select *ABAP System*.
+    -   In the *Protocol* field, select *RFC SNC*.
+    -   In the *Principal Type* field, select *X.509 Certificate*.
+    -   In the *SNC Partner Name* field, enter the ABAP system's SNC identity name \(for example, `p:CN=SID, O=Trust Community, C=DE`\). The SNC partner name needs to contain the correct SNC identification of the ABAP system. The value can typically be found in the ABAP system instance profile parameter `snc/identity/as` \(and hence is provided per application server\).
+
+    For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/initial-configuration-rfc) in the *SAP BTP Connectivity* documentation.
+
 
 
 
@@ -338,7 +346,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for replication flows or data flows. The default is *false*. 
 
 </td>
 </tr>
@@ -488,6 +496,18 @@ Description
 <tr>
 <td valign="top">
 
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Remote Tables*
 
 </td>
@@ -592,6 +612,9 @@ If you don't specify a list of execution targets, the source system assigns the 
 </tr>
 </table>
 
+> ### Note:  
+> In file spaces, remote tables are not supported.
+
 
 
 </td>
@@ -604,7 +627,12 @@ If you don't specify a list of execution targets, the source system assigns the 
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties.Make sure you have maintained the properties in the *Cloud Connector* section. 
+*Data Flows* are enabled without the need to set any additional connection properties.Make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> In file spaces, data flows are not supported.
+
+
 
 </td>
 </tr>
@@ -648,7 +676,7 @@ Available properties:
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
 
--   Properties that are only considered if *Streaming Read* is set to *On*in the *Remote Tables* section of the connection:
+-   Properties that are only considered if *Streaming Read* is set to *On* in the *Remote Tables* section of the connection:
     -   *Batch Size, MB*
 
     -   *Batch Receive Timeout*

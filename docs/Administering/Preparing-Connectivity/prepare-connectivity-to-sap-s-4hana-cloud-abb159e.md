@@ -27,7 +27,7 @@ Before you can use the connection for remote tables, the following is required:
 
 -   For federated access to CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud \(**recommended for federation scenarios**\):
 
-    See [Using ABAP SQL Services for Accessing ABAP-Managed Data](using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md).
+    See [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-or-sap-btp-abap-environ-ef2b223.md).
 
 -   For federated access to and replication of ABAP CDS Views exposed as OData services for data extraction using Cloud Data Integration \(**legacy**\):
     -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the CloudDataIntegrationAdapter.
@@ -67,7 +67,7 @@ Before you can use the connection for replication flows, the following is requir
 
 -   For replicating CDS view entities using the ABAP SQL service exposure from SAP S/4HANA Cloud \(**recommended for replication scenarios**\):
 
-    See [Using ABAP SQL Services for Accessing ABAP-Managed Data](using-abap-sql-services-for-accessing-abap-managed-data-ef2b223.md).
+    See [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-or-sap-btp-abap-environ-ef2b223.md).
 
 -   For both replicating CDS view entities using the ABAP SQL service exposure and replicating CDS views view entities using the ABAP Pipeline Engine:
 
@@ -77,7 +77,7 @@ Before you can use the connection for replication flows, the following is requir
 
     -   replicating CDS view entities using the ABAP SQL service exposure:
         -   [Integrating SQL Services Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/a91d39c3ea494344897fca7bc9578b85.html) in the *SAP S/4HANA Cloud* documentation
-        -   [Creating a Communication Arrangement to Enable Replication Flows in SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-communication-arrangement-to-enable-replication-flows-in-sap-datasphere?version=s4hana_cloud) in the *ABAP Cloud* documentation
+        -   [Creating a Communication Arrangement to Enable Replication Flows in SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-communication-arrangement-to-enable-replication-flows-in-sap-datasphere) in the *ABAP Cloud* documentation
 
     -   replicating CDS views using the ABAP Pipeline Engine:
         -   [Integrating CDS Views Using SAP Datasphere](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation

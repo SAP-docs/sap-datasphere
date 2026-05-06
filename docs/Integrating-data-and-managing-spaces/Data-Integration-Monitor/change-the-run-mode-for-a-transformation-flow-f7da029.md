@@ -6,8 +6,6 @@ You can change the run mode for a transformation flow.
 
 
 
-## Procedure
-
 In the *Data Integration Monitor*, open your transformation flow. On the *Settings* tab, you can change the run mode for a transformation flow and choose between performance and memory consumption:
 
 -   *Performance-Optimized \(Recommended\)*: This is the recommended mode to run the transformation flow. SQL queries are processed directly in-memory. No intermediate result is stored on the disk to ensure a quicker data access and data consumption. However, this mode consumes memory resources and if your data model is very complex, it can result in an out of memory and the task failed.

@@ -28,7 +28,7 @@ The CSV file contains these columns:
 <tr>
 <th valign="top">
 
-Column
+Property
 
 </th>
 <th valign="top">
@@ -45,7 +45,7 @@ USER\_NAME
 </td>
 <td valign="top">
 
-User ID.
+ID of the user. Each user needs a unique ID. Once the user account is created their ID can’t be modified. Only upper-case letters \(A-Z\), numbers \(0-9\), and underscores are allowed. The maximum length is 20 characters.
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ DISPLAY\_NAME
 </td>
 <td valign="top">
 
-The name that appears on the screens.
+Name of the user that appears on the screens.
 
 </td>
 </tr>
@@ -93,19 +93,7 @@ EMAIL
 </td>
 <td valign="top">
 
-User’s email.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-MANAGER
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
+Email address of the user. A welcome email with logon information is sent to the email address.
 
 </td>
 </tr>
@@ -117,7 +105,7 @@ ROLES
 </td>
 <td valign="top">
 
-Roles assigned to the user.
+Roles assigned to the user via scoped roles.
 
 </td>
 </tr>
@@ -133,221 +121,8 @@ SAML property for the user \(if SAML enabled\).
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-MOBILE
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OFFICE\_PHONE
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OFFICE\_ADDRESS
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-AGILE\_BI\_ENABLED\_BY\_DEFAULT
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-JOB\_TITLE
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-MARKETING\_EMAIL\_OPT\_IN
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-IS\_CONCURRENT
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_BACKGROUND\_OPTION
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_LOGO\_OPTION
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_WELCOME\_MESSAGE\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_HOME\_SEARCH\_TO\_INSIGHT\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_GET\_STARTED\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_RECENT\_FILES\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_RECENT\_PRESENTATIONS\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_RECENT\_APPLICATIONS\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_CALENDAR\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-OVERRIDE\_FEATURED\_FILES\_FLAG
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-DEFAULT\_APP
-
-</td>
-<td valign="top">
-
-Not used in SAP Datasphere.
-
-</td>
-</tr>
 </table>
+
+> ### Note:  
+> Other properties that appear in columns of the file but are not mentioned in the table above are not used in SAP Datasphere.
 

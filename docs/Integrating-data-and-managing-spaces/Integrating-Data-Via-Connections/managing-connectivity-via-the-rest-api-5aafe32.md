@@ -15,9 +15,9 @@ This topic contains the following sections:
 -   [Delete TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_certificates)
 -   [List Connections in a Space](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_connections)
 -   [Read Connection Details](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_read_connections)
--   [Create Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections)
+-   [Create a Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections)
 -   [Validate Connections](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_validate_connections)
--   [Edit Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections)
+-   [Edit a Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections)
 -   [Delete Connections](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_connections)
 
 
@@ -130,7 +130,7 @@ Example syntax of the GET request:
 
 > ### Sample Code:  
 > ```
-> https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+> GET https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 > ```
 
 
@@ -149,7 +149,7 @@ Example syntax of the GET request:
 
 > ### Sample Code:  
 > ```
-> https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+> GET https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 > ```
 
 
@@ -158,10 +158,10 @@ Example syntax of the GET request:
 
 ## List TLS Server Certificates
 
-To retrieve a list of TLS server certificates available in the tenant, use the GET request with the`/api/v1/datasphere/configuration/security/certificates` endpoint and enter:
+To retrieve a list of TLS server certificates available in the tenant, use the `certificates` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+GET https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 ```
 
 
@@ -170,10 +170,10 @@ https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 
 ## Upload TLS Server Certificates
 
-To upload a TLS server certificate, use the POST request with the`/api/v1/datasphere/configuration/security/certificates` endpoint and enter:
+To upload a TLS server certificate, use the `certificates` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+POST https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 ```
 
 > ### Note:  
@@ -185,10 +185,10 @@ https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 
 ## Delete TLS Server Certificates
 
-To delete a TLS server certificate from the tenant, use the DELETE request with the<code>/api/v1/datasphere/configuration/security/certificates/<i class="varname">&lt;fingerprint&gt;</i></code> endpoint and enter:
+To delete a TLS server certificate from the tenant, use the `certificates` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/configuration/security/certificates/<fingerprint>
+DELETE https://<tenant_url>/api/v1/datasphere/configuration/security/certificates/<fingerprint>
 ```
 
 > ### Note:  
@@ -200,10 +200,10 @@ https://<tenant_url>/api/v1/datasphere/configuration/security/certificates/<fing
 
 ## List Connections in a Space
 
-To list all connections of a space, use the GET request with the<code>/api/v1/datasphere/spaces/<i class="varname">&lt;space_id&gt;</i>/connections</code> endpoint and enter:
+To list all connections of a space, use the `connections` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections
+GET https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections
 ```
 
 
@@ -212,23 +212,25 @@ https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections
 
 ## Read Connection Details
 
-To read the JSON definition of a connection \(without its credentials\) in a space , use the GET request with the<code>/api/v1/datasphere/spaces/<i class="varname">&lt;space_id&gt;</i>/connections/<i class="varname">&lt;connection_technical_name&gt;</i></code> endpoint and enter:
+To read the JSON definition of a connection in a space \(without the connection's credentials\), use the `connections` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections/<connection_technical_name>
+GET https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections/<connection_technical_name>
 ```
 
 
 
 <a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections"/>
 
-## Create Connection to SAP SuccessFactors
+## Create a Connection to SAP SuccessFactors
 
-To create an SAP SuccessFactors connection in a space by providing the connection definition in stringified json format, use the POST request with the<code>/api/v1/datasphere/spaces/<i class="varname">&lt;space_id&gt;</i>/connections</code> endpoint and enter:
+To create an SAP SuccessFactors connection in a space, use the `connections` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections
+POST https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections?typeId=SAPSF
 ```
+
+To provide the connection definition, include it as JSON object in the request body.
 
 The following example shows how to create a connection to SAP SuccessFactors for OData V4 and basic authentication:
 
@@ -254,14 +256,14 @@ The following example shows how to create a connection to SAP SuccessFactors for
 >     "name":"<technical name>",
 >     "businessName":"<business name>",
 >     "description":"<description>", 
->     "authType": "<OAuth2>",
+>     "authType": "OAuth2",
 >     "url": "https://<SAP SuccessFactors API Server>/odata/v2/",
 >     "version": "V2",
 >     "oauth2GrantType":"saml_bearer",
 >     "oauth2TokenEndpoint": "https://<oauth2TokenEndpoint.com>/oauth/token",
 >     "oauth2CompanyId": "<SAP SuccessFactors company ID>",
 >     "clientId": "<client id>",
->     "clientSecret":"<SAML assertion>"
+>     "samlAssertion":"<SAML assertion>"
 > }
 > ```
 
@@ -364,33 +366,6 @@ Default value: `none`
 <tr>
 <td valign="top">
 
-`authType`
-
-</td>
-<td valign="top">
-
-*Authentication Type*
-
-</td>
-<td valign="top">
-
-\[required\] Enter the authentication type to use to connect to the OData endpoint.
-
-You can enter:
-
--   `Basic` for basic authentication with user name and password
--   `OAuth2`
-
-> ### Note:  
-> HTTP basic authentication in SAP SuccessFactors will soon be retired. For more information, see [Deprecation of HTTP Basic Authentication](https://help.sap.com/doc/62fddbd651204629b46bbccbabf886ba/cloud/en-US/fcc05a902b4140e585d968c2fe4a96bc.html) in *SAP SuccessFactors What's New Viewer*.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `url`
 
 </td>
@@ -425,7 +400,34 @@ The syntax for the URL is:
 </td>
 <td valign="top">
 
-\[required\] Enter the OData version used to implement the SAP SuccessFactors OData service \(`V2` or `V4`\).
+\[required\] Enter the OData version used to implement the SAP SuccessFactors OData service \(`V2` or `V4`; see the URL\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`authType`
+
+</td>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+\[required\] Enter the authentication type to use to connect to the OData endpoint.
+
+You can enter:
+
+-   `Basic` for basic authentication with user name and password
+-   `OAuth2`
+
+> ### Note:  
+> HTTP basic authentication in SAP SuccessFactors will soon be retired. For more information, see [Deprecation of HTTP Basic Authentication](https://help.sap.com/doc/62fddbd651204629b46bbccbabf886ba/cloud/en-US/fcc05a902b4140e585d968c2fe4a96bc.html) in *SAP SuccessFactors What's New Viewer*.
+
+
 
 </td>
 </tr>
@@ -441,6 +443,8 @@ The syntax for the URL is:
 
 </td>
 <td valign="top">
+
+If you have entered `OAuth2` as `authType`:
 
 \[required\] Enter `SAML Bearer` as the grant type used to retrieve an access token.
 
@@ -459,6 +463,8 @@ The syntax for the URL is:
 </td>
 <td valign="top">
 
+If you have entered `OAuth2` as `authType`:
+
 \[required\] Enter the API endpoint to use to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
 
 </td>
@@ -466,7 +472,7 @@ The syntax for the URL is:
 <tr>
 <td valign="top">
 
- 
+`oauth2Scope`
 
 </td>
 <td valign="top">
@@ -475,6 +481,8 @@ The syntax for the URL is:
 
 </td>
 <td valign="top">
+
+If you have entered `OAuth2` as `authType`:
 
 \[optional\] Enter the OAuth scope, if applicable.
 
@@ -493,6 +501,8 @@ The syntax for the URL is:
 </td>
 <td valign="top">
 
+If you have entered `OAuth2` as `authType`:
+
 \[required\] Enter the SAP SuccessFactors company ID \(identifying the SAP SuccessFactors system on the SAP SuccessFactors API server\) to use to request an access token.
 
 </td>
@@ -510,6 +520,8 @@ The syntax for the URL is:
 </td>
 <td valign="top">
 
+If you have entered `OAuth2` as `authType`:
+
 \[required\] Enter the API key received when registering SAP Datasphere as OAuth2 client application in SAP SuccessFactors.
 
 </td>
@@ -517,7 +529,7 @@ The syntax for the URL is:
 <tr>
 <td valign="top">
 
-`clientSecret`
+`samlAssertion`
 
 </td>
 <td valign="top">
@@ -527,12 +539,52 @@ The syntax for the URL is:
 </td>
 <td valign="top">
 
+If you have entered `OAuth2` as `authType`:
+
 \[required\] Enter a valid SAML assertion that has been generated for authentication.
 
 > ### Note:  
 > If the SAML assertion expires, the connection gets invalid until you update the connection with a new valid SAML assertion.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`username`
+
+</td>
+<td valign="top">
+
+*User Name* 
+
+</td>
+<td valign="top">
+
+If you have entered `Basic` as `authType`:
+
+\[required\] Enter the user name in *<username@companyID\>* format.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`password`
+
+</td>
+<td valign="top">
+
+*Password* 
+
+</td>
+<td valign="top">
+
+If you have entered `Basic` as `authType`:
+
+\[required\] Enter the password.
 
 </td>
 </tr>
@@ -544,23 +596,25 @@ The syntax for the URL is:
 
 ## Validate Connections
 
-To validate a connection in a space, use the GET request with the<code>/api/v1/datasphere/spaces/<i class="varname">&lt;space_id&gt;</i>/connections/<i class="varname">&lt;connection_technical_name&gt;</i>/validation</code> endpoint and enter:
+To validate a connection in a space, use the `connections` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/spaces/<spaceId>/connections/<connection_technical_name>/validation
+GET https://<tenant_url>/api/v1/datasphere/spaces/<spaceId>/connections/<connection_technical_name>/validation
 ```
 
 
 
 <a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections"/>
 
-## Edit Connection to SAP SuccessFactors
+## Edit a Connection to SAP SuccessFactors
 
-To edit an SAP SuccessFactors connection in a space by providing a new definition, use the PUT request with the<code>/api/v1/datasphere/spaces/<i class="varname">&lt;space_id&gt;</i>/connections/<i class="varname">&lt;connection_technical_name&gt;</i></code> endpoint and enter:
+To edit an SAP SuccessFactors connection in a space, providing an updated connection definition in a JSON format, use the `connections` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/spaces/<space-id>/connections/<connection_technical_name>
+PUT https://<tenant_url>/api/v1/datasphere/spaces/<space-id>/connections/<connection_technical_name>
 ```
+
+To provide the modified connection definition, include it as JSON object in the request body.
 
 
 
@@ -568,9 +622,9 @@ https://<tenant_url>/api/v1/datasphere/spaces/<space-id>/connections/<connection
 
 ## Delete Connections
 
-To delete a connection from a space, use the DELETE request with the<code>/api/v1/datasphere/spaces/<i class="varname">&lt;spaceId&gt;</i>/connections/<i class="varname">&lt;connection_technical_name&gt;</i></code> endpoint and enter:
+To delete a connection from a space, use the `connections` request and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/spaces/<spaceId>/connections/<connection_technical_name>
+DELETE https://<tenant_url>/api/v1/datasphere/spaces/<spaceId>/connections/<connection_technical_name>
 ```
 

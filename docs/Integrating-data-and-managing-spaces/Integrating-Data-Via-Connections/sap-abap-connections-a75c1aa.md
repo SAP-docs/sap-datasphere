@@ -46,35 +46,34 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow.
+You can use the connection to add source objects to a replication flow. \(**recommended for replication scenarios**\)
 
 For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
 
-> ### Note:  
-> SAP BW and SAP ECC connection types don't support replication flows, but you can use *SAP ABAP* connections for replication flows from SAP BW, SAP BW∕4HANA or SAP ECC systems.
-
 You can access the following data:
-
--   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
-
-    For more information, see:
-
-    -   in the *SAP S/4HANA Cloud* documentation: [Data Integration](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/c3a5da91691d4ebd89748d9f40af7a4c.html) and [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/870d66c6bfc44d6c9f128c888f0c7957.html)
-
-    -   in the *SAP S/4HANA* documentation: [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html)
-
-
-    > ### Note:  
-    > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
 
 -   standard and custom CDS view entities that are exposed using the SQL service from SAP BTP ABAP environment or SAP S/4HANA Cloud, respectively
 
     For more information, see:
 
-    -   [Using ABAP SQL Services for Accessing ABAP-Managed Data](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
+    -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
 
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
+
+-   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
+
+    For more information, see:
+
+    -   [Data Integration](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/c3a5da91691d4ebd89748d9f40af7a4c.html) and [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/870d66c6bfc44d6c9f128c888f0c7957.html) in the *SAP S/4HANA Cloud* documentation
+
+    -   [CDS Views Enabled for Data Extraction](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ee6ff9b281d8448f96b4fe6c89f2bdc8/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation
+
+    -   SAP Note [2890171](https://me.sap.com/notes/2890171) for CDS view requirements when using the connection for replication flows
+
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS views in the CDS\_EXTRACTION container.
 
 -   Tables from SAP Landscape Transformation Replication Server \(SAP LT Replication Server\) sources, for which an appropriate configuration has been created in SAP LT Replication Server.
 
@@ -97,12 +96,10 @@ You can use remote tables imported from the connection either to access data dir
 
 You can access the following data:
 
--   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA Cloud, SAP BTP ABAP environment, or SAP S/4HANA \(**recommended for federation scenarios**\)
+-   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from the following systems \(**recommended for federation scenarios**\):
 
-    For more information, see:
-
-    -   [Using ABAP SQL Services for Accessing ABAP-Managed Data](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
-    -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:
+    -   SAP S/4HANA Cloud or SAP BTP ABAP environment \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:\)
+    -   SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
 
     > ### Note:  
     > On the *Sources* tab of the remote-table-related Data Builder editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
@@ -573,9 +570,11 @@ Select the authentication type to use to connect to the SAP ABAP system.
 You can select:
 
 -   *User Name And Password* for basic authentication \(default value\) - This option is read-only if you set Cloud Connector to *false*.
--   *OAuth 2.0* - You can select this option only if you have selected the *RFC* protocol and if you have set Cloud Connector to *true* to enable replication flows and data flows. Remote tables currently are not supported with OAuth authentication.
+-   *OAuth 2.0* - for using an OAuth 2.0 client with *Technical User* purpose to provide client credentials for authentication.
 
-    For information about setting up OAuth 2.0 authentication including creating an OAuth client in SAP Datasphere, see [Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use OAuth 2.0 authentication with client credentials for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+    You can select this option only if you have selected the *RFC* protocol and if you have set Cloud Connector to *true*. Remote tables currently are not supported with this authentication type.
+
+    For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use authentication type OAuth 2.0 with the client credentials grant type for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
 
 -   *X.509 Client Certificate* - You can select this option if you have selected the *Web Socket RFC* protocol.
 
@@ -1150,7 +1149,7 @@ Available properties:
 
 -   \[if *SNC Mode* = *On*\] *SNC Quality of Protection*
 
--   Properties that are only considered if *Streaming Read* is set to *On*in the *Remote Tables* section of the connection:
+-   Properties that are only considered if *Streaming Read* is set to *On* in the *Remote Tables* section of the connection:
     -   *Batch Size, MB*
 
     -   *Batch Receive Timeout*

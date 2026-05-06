@@ -4,7 +4,7 @@
 
 # Sharing Entities and Task Chains to Other Spaces
 
-Share a table or view to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.
+Share a table, a view, or an analytic model to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.
 
 This topic contains the following sections:
 
@@ -38,7 +38,7 @@ The *DW Modeler* role template, for example, grants these privileges. For more i
 Your space is a secure area and its entities and other objects \(and their data\) cannot be seen in other spaces unless you choose to share them. When you share an entity to another space, users in that space can see its data and use it as a source for their views and other objects.
 
 > ### Note:  
-> Only entities \(tables and views\) and task chains can be shared. Other *Data Builder* objects and *Business Builder* objects cannot be shared to other spaces.
+> Only entities \(tables and views\), analytic models, and task chains can be shared. Other *Data Builder* objects and *Business Builder* objects cannot be shared to other spaces. For information about sharing analytic models along with their source entities, see [Sharing Analytic Models to Other Spaces](../Modeling-Data-in-the-Data-Builder/sharing-analytic-models-to-other-spaces-8b84bd8.md).
 
 You can share tables and views, but only views can have row-level security applied to protect data \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
 
@@ -161,10 +161,11 @@ When you share a task chain to another space, users in that space can add it as 
 You can see the objects shared with your space:
 
 -   In the *Repository Explorer* \(see [Repository Explorer](repository-explorer-f8ce0b4.md)\).
--   In the *Shared Objects* folder on the *Repository* tab of the *Source Browser* in any *Data Builder* editor \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
+-   In the *Data Builder* start page:
+    -   If you have access to the source space, then you can open the shared object in its editor.
+    -   If you do not have access to the source space, then it is listed without a link. You cannot open it, but you can use it as a source in your data builder objects.
 
-> ### Note:  
-> Objects shared to your space are not listed in the *Data Builder* start page.
+-   In the *Source Browser* in any *Data Builder* editor \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
 
 
 

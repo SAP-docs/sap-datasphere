@@ -1,6 +1,6 @@
 <!-- loioef2b2238154f4cd78a08df360447c1d5 -->
 
-# Using ABAP SQL Services for Accessing ABAP-Managed Data
+# Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment
 
 The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.
 
@@ -14,9 +14,9 @@ Developers in the ABAP environment can expose CDS view entities in an ABAP syste
 
 For more information, see the *ABAP Cloud* documentation for *SAP S/4HANA Cloud Public Edition* or *SAP BTP ABAP environment* \(change the version on the SAP Help Portal page to find the documentation version that applies to your ABAP system\):
 
--   [Accessing ABAP-Managed Data from System-External Consumers](https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/4082fe1b66164eeb8aa41192166526af.html)
--   [Accessing ABAP-Managed Data from SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/data-replication?version=s4hana_cloud)
--   [Data Integration Patterns](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/data-integration-patterns?version=s4hana_cloud) \(for more information about the consumption scenarios and privileged access\)
+-   [Accessing ABAP-Managed Data from System-External Consumers](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/inbound-data-integration-using-sql)
+-   [Accessing ABAP-Managed Data from SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/data-replication)
+-   [Data Integration Patterns](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/data-integration-patterns) \(for more information about the consumption scenarios and privileged access\)
 
 > ### Note:  
 > For SAP S/4HANA Cloud, this feature requires developer extensibility \(including ABAP development tools\), which is only available in a 3-system landscape. For more information, see the *SAP S/4HANA Cloud Public Edition* documentation:
@@ -34,36 +34,36 @@ In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administra
 
 -   Check the prerequisites and constraints that must be considered before using the SQL service.
 
-    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints?version=s4hana_cloud) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
+    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
 
--   To expose CDS view entities using the SQL service, a business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
+-   To expose CDS view entities using the SQL service, a business user creates a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
 
     In the *Enabled Operations* area of the service binding, the business user must select access type *REPLICATE* to enable data replication.
 
-    For more information, see [Creating an SQL Service](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4hana_cloud) in the *ABAP Cloud* documentation.
+    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding) in the *ABAP Cloud* documentation.
 
 -   To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
 
-    1.  A business user has created a custom communication scenario in the ABAP Development Tools.
+    1.  A business user creates a custom communication scenario in the ABAP Development Tools.
 
         When filling out the authorizations for authorization object `S_SQL_VIEW` in the communication scenario, note the following:
 
         -   In the SQL\_VIEWOP authorization field, select the option *REPLICATE* to allow replication on the specified views.
 
 
-    2.  An administrator has created a communication system and user in the SAP Fiori launchpad of the ABAP environment.
+    2.  An administrator has creates a communication system and user in the SAP Fiori launchpad of the ABAP environment.
 
         > ### Note:  
         > The same communication user must be added to all communication arrangements you're using for the connection.
 
-    3.  An administrator has created a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
+    3.  An administrator creates a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
 
 
-    For more information, see [Exposing the SQL Service with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access?version=s4hana_cloud) in the *ABAP Cloud* documentation.
+    For more information, see [Exposing the SQL Service with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access) in the *ABAP Cloud* documentation.
 
--   An administrator has created a communication arrangement for communication scenario SAP\_COM\_0532 in the SAP Fiori launchpad of the ABAP environment.
+-   An administrator creates a communication arrangement for communication scenario SAP\_COM\_0532 in the SAP Fiori launchpad of the ABAP environment.
 
-    For more information, see [Replication Flows](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_rf).
+    For more information, see [Replication Flows](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md#loioabb159e027184c98a54fc1b2a88dd3f5__section_prereq_rf) in [Prepare Connectivity to SAP S/4HANA Cloud](prepare-connectivity-to-sap-s-4hana-cloud-abb159e.md).
 
 
 You can now create a connection to consume the ABAP SQL service for data replication with replication flows using the ABAP Pipeline Engine.
@@ -78,13 +78,13 @@ In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administra
 
 1.  Check the prerequisites and constraints that must be considered before using the SQL service.
 
-    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints?version=s4hana_cloud) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
+    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
 
 2.  To expose CDS view entities using the SQL service, a business user must create a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL service.
 
     To enable federated access, the business user must select access type *SELECT* in the *Enabled Operations* area of the service binding.
 
-    For more information, see [Creating an SQL Service](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4hana_cloud) in the *ABAP Cloud* documentation.
+    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding) in the *ABAP Cloud* documentation.
 
 3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
 
@@ -105,7 +105,7 @@ In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administra
     3.  An administrator has created a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
 
 
-    For more information, see [Exposing the SQL Service with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access?version=s4hana_cloud) in the *ABAP Cloud* documentation.
+    For more information, see [Exposing the SQL Service with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access) in the *ABAP Cloud* documentation.
 
 
 You can now create a connection to consume the ABAP SQL service for data federation with remote tables using the ABAP SDA adapter in SAP HANA.

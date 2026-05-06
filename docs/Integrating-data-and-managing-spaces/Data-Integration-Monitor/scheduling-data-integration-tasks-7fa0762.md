@@ -48,3 +48,6 @@ Using a dedicated dialog box, you can specify the frequency and time range of th
 > ### Note:  
 > If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time.
 
+> ### Note:  
+> You can create a schedule for your replication flow and include it in a task chain. For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.*
+

@@ -167,7 +167,7 @@ For more information about connection types that can be used for adding sources 
     </td>
     <td valign="top">
     
-    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`..For more detailed information, go to the flow monitor.
+    \[read-only\] Displays the overall status of the replication flow run, for example `Not Run Yet`.For more detailed information, go to the flow monitor.
     
     </td>
     </tr>
@@ -235,6 +235,26 @@ For more information about connection types that can be used for adding sources 
     > ### Note:  
     > -   The Merge Data Automatically option is *disabled*by default when you create a new replication flow with SAP Datasphere as target and load type as *Initial and Delta*. When the option is disabled, new data remains in the inbound buffer until a merge task is run manually or scheduled separately.
     > -   Automatic merge tasks require authorization for SAP Datasphere to run tasks on your behalf. If consent has not been provided, you will be prompted to authorize it.
+
+    > ### Note:  
+    > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Delta Load Run
+    
+    </td>
+    <td valign="top">
+    
+    You can define how delta-enabled objects run in a replication flow
+
+    -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
+    -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)
 
 
     
@@ -306,9 +326,7 @@ For more information about connection types that can be used for adding sources 
     </td>
     <td valign="top">
     
-    \[only relevant for local tables\] Select this option if you want the system to keep track of changes in your data source. 
-
-    For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+    \[only relevant for local tables\] Enable this option if you want the system to keep track of changes in your data source. Once enabled, the name of the delta capture table is displayed.For more information, see [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md). 
     
     </td>
     </tr>
@@ -320,9 +338,9 @@ For more information about connection types that can be used for adding sources 
     </td>
     <td valign="top">
     
-    Select how you want to load the data \(initial only, initial and delta or delta only\).
+    Select how you want to load the data \(initial only, initial and delta, or delta only\).
 
-    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md) and[Load Types and Connections for Your Replication Flows](load-types-and-connections-for-your-replication-flows-1089119.md).
+    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md) and[Source and Target Connections and Load Types for Replication Flows](source-and-target-connections-and-load-types-for-replication-flo-1089119.md).
     
     </td>
     </tr>
@@ -377,6 +395,18 @@ For more information about connection types that can be used for adding sources 
     <td valign="top">
     
     Lists the target column names. A key symbol next to a column name indicates that this column is a key column.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Storage
+    
+    </td>
+    <td valign="top">
+    
+    This describes the type of storage available in the space.
     
     </td>
     </tr>

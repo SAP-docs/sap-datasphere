@@ -446,7 +446,7 @@ If the agent is connected, you can review the framework log \(`framework_alert.t
 
 ## SAP Notes
 
-SAP Note [2938870](https://me.sap.com/notes/2938870) - *Errors when connecting DP Agent with DWC* 
+SAP Note [2938870](https://me.sap.com/notes/2938870) - *How to troubleshoot when establishing the connection between DP Agent and SAP Datasphere* 
 
 SAP Note [2894588](https://me.sap.com/notes/2894588) - *IP Allowlist in SAP Datasphere*
 

@@ -6,6 +6,121 @@ You can run task chains and review task logs via the REST API.
 
 
 
+## Prerequisites
+
+To run and manage tasks, you must have a scoped role granting access to the appropriate spaces with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Data Integration Monitor* app.
+
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To manually run data integration tasks.
+
+-   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
+
+-   *Data Warehouse Data Builder* \(`------S-`\) - To share task chains to other spaces.
+-   *User* \(`R-------`\) - To display and add notification recipients from a list of current tenant members, when setting up email notifications.
+
+You must, in addition, obtain access to an appropriate OAuth client:
+
+
+<table>
+<tr>
+<th valign="top">
+
+OAuth Purpose
+
+</th>
+<th valign="top">
+
+Interactive Usage
+
+</th>
+<th valign="top">
+
+Technical User
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Authorization Grant
+
+</td>
+<td valign="top">
+
+Authorization Code
+
+Three- Legged \(User-Client-Server\): Manually propagate authorization to another service.
+
+</td>
+<td valign="top">
+
+Client Credentials
+
+Two-Legged \(Client-Server\): Service to service communication via APIs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authentication
+
+</td>
+<td valign="top">
+
+Manually authenticate to generate the authorization code.
+
+> ### Note:  
+> To run a task chain with Interactive Usage purpose using the REST API, you need authorized consent. Users with Interactive Usage purpose without consent can receive task run log details and history but will not be able to run a task chain. In the profile settings under *Authorized Consent Settings*, you can give and revoke consent. For more information see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+
+
+
+</td>
+<td valign="top">
+
+None required. The OAuth client contains the necessary credentials and privileges.
+
+> ### Note:  
+> BW process chains cannot be run in task chains by a technical user. The technical user in SAP Datasphere does not have a mapped user on the BW side. Please use an approved business user role to run BW process chains in a task chain.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Parameters
+
+</td>
+<td valign="top">
+
+-   Client ID
+-   Secret
+-   Authorization URL
+-   Token URL
+
+
+
+</td>
+<td valign="top">
+
+-   Client ID
+-   Secret
+-   Token URL
+
+
+
+</td>
+</tr>
+</table>
+
+For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with an administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
+
+
+
 ## Introduction to the Tasks API
 
 The Tasks REST API allow you to run task and monitor task in SAP Datasphere. You can:
@@ -13,54 +128,6 @@ The Tasks REST API allow you to run task and monitor task in SAP Datasphere. You
 -   Run a task chain.
 -   Retrieve task run details with log ID.
 -   Retrieve existing history of object task logs.
-
-To use the Tasks REST API, you must have the same roles and privileges that are required to run task chains and view task logs in SAP Datasphere. For more information, see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md).
-
-Obtain the following parameters for an OAuth client defined in your SAP Datasphere tenant with *Purpose* set to *Interactive Usage* or *Technical User*:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Standard OAuth2 Authorization Flow
-
-</th>
-<th valign="top">
-
-OAuth2SAMLBearer Principal Propagation Flow
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
--   *Client ID*
--   *Secret*
--   *Authorization URL* \(not required for clients with a *Technical User* purpose\)
--   *Token URL*
-
-Users of a client with a *Technical User* purpose \(which includes its own privileges and permissions\) can then access their resource directly. Users of clients with other purposes must manually authenticate against the IDP in order to generate the authorization code before continuing with the remaining OAuth2.0 steps.
-
-</td>
-<td valign="top">
-
--   *Client ID*
--   *Secret*
--   *OAuth2SAML Token URL*
--   *OAuth2SAML Audience*
-
-Users of a client with a *Technical User* purpose can then access their resource directly. Users of clients with other purposes must authenticate with their third-party app, which has a trusted relationship with the IDP, and do not need to re-authenticate \(see [Add a Trusted Identity Provider](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ea0688aef2f94b35ae34d930b3cb0c10.html "If you use the OAuth 2.0 SAML Bearer Assertion workflow, you must add a trusted identity provider to SAP Datasphere.") :arrow_upper_right:\). See also the blog [Integrating with SAP Datasphere Consumption APIs using SAML Bearer Assertion](https://community.sap.com/t5/technology-blogs-by-sap/integrating-with-sap-datasphere-consumption-apis-using-saml-bearer/ba-p/13647905) \(published March 2024\). 
-
-</td>
-</tr>
-</table>
-
-> ### Note:  
-> To run a task chain with Interactive Usage purpose using the REST API, you need authorized consent. Users with Interactive Usage purpose without consent can receive task run log details and history but will not be able to run a task chain. In the profile settings under *Authorized Consent Settings*, you can give and revoke consent. For more information see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
-
-> ### Note:  
-> BW process chains cannot be run in task chains by a technical user. The technical user in Datasphere does not have a mapped user on the BW side. Please use an approved business user role to run BW process chains in a task chain.
 
 The detailed documentation of the Tasks REST API is available on the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 

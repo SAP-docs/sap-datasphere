@@ -37,19 +37,19 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 3.  Open the monitor for the relevant object.
 
-4.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the monitor asking for your consent. Give your consent.
+4.  Select the object for which you want to schedule a task.
 
-5.  Select the object for which you want to schedule a task.
+    You can assign a number of task chains to a single technical user in bulk to avoid having to select each individual chain.
 
-6.  Select *Schedule* \> *Edit Schedule*
+5.  Select *Schedule* \> *Edit Schedule*
 
-7.  Select your user type, Business User or Technical User, from the drop down.
+6.  Select your user type, Business User or Technical User, from the drop down.
 
-8.  Select the new owner of the schedule.
+7.  Select the new owner of the schedule.
 
     You need to enter both a user type and an owner to save your changes.
 
-9.  Click *OK* to save the schedule.
+8.  Click *OK* to save the schedule.
 
 
 

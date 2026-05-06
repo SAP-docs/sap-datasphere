@@ -37,7 +37,11 @@ For analytic models as a source, these properties are copied to the new analytic
 
     -   *Inherit*: The properties of the variable of the underlying analytic model are used.
     -   *Set Value*: Enter a value to resolve the variable. The variable is resolved and users of this analytic model will no longer need to provide a value for it. If a value is already set by default, you can either set it or edit it by clicking the value and selecting another one in the list of available values of the *Select Member* dialog. The *Select Member* dialog is available only if a predefined default value has been defined in the input parameter.
-    -   *Map To*: Map the source input parameter to a variable in your analytic model. Users of this view will need to provide a value for the variable.
+    -   *Map To*: Map the source input parameter to a variable in your analytic model. Users of this view will need to provide a value for the variable. You can then customize the variables and
+        -   renamed it
+        -   change its default value
+        -   use it in the new analytic model, including restricted measures and calculations.
+
 
     > ### Note:  
     > Inherited variables cannot be changed in the new analytic model. Variables that are mapped can be changed.

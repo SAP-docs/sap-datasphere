@@ -2,7 +2,7 @@
 
 # Activating Data Packages and Installing Data Products
 
-An SAP Business Data Cloud administrator can activate data packages to make the contained data products available for installation in SAP Datasphere.
+An SAP Business Data Cloud administrator can activate data products included in a data packages to make them available for installation in SAP Datasphere.
 
 
 

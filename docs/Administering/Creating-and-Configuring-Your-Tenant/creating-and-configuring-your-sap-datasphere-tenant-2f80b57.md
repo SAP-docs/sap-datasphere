@@ -2,9 +2,12 @@
 
 # Creating and Configuring Your SAP Datasphere Tenant
 
-Creating and Configuring Your SAP Datasphere Tenant: Learn how to create and configure your own tenant in SAP BTP, select a data center region, and distribute workloads across availability zones. This information is essential for managing and optimizing your data center infrastructure.
+You can create and configure your own tenant in SAP BTP, select a data center region, and distribute workloads across availability zones.
 
 You can create your own tenant in the SAP BTP Cockpit. The procedure is the same for both subscription-based and consumption-based contracts. Some details may vary depending on the chosen service plan \(free or standard\). For more information about limitations for a free plan, see SAP Note [3227267](https://launchpad.support.sap.com/#/notes/3227267).
+
+> ### Note:  
+> This information is for creating an SAP Datasphere tenant outside of SAP BDC. If your access to SAP Datasphere is part of an SAP BDC solution, you should follow the procedure in [Provisioning SAP Datasphere](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud/provisioning-sap-datasphere) in the *SAP Business Data Cloud* documentation instead.
 
 When the tenant is configured, a data center region is selected. The main role of a data center is to guarantee the uninterrupted operation of computer systems. It also provides secure storage, processing, and networking capabilities for your data. A data center refers to the physical location, which could be a building or a group of buildings, housing computer systems and their components.
 

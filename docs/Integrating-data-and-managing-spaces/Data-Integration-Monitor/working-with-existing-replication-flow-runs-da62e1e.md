@@ -8,33 +8,6 @@ You can pause a replication flow run and resume it later, or stop it completely 
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_"/>
-
-## Scheduling a Replication Flow
-
-You can create a schedule for your replication flow and include it in a task chain.
-
-> ### Note:  
-> For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.*
-
-To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
-
-For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
-
-
-
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Scheduling"/>
-
-## Scheduling a Replication Flow
-
-You can create a schedule for your replication flow and include your replication flow in a task chain if all objects in it have load type *Initial Only*.
-
-To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
-
-For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
-
-
-
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Pausing"/>
 
 ## Pausing and Resuming a Replication Flow Run
@@ -107,6 +80,9 @@ To stop a replication flow run:
 4.  Navigate to its details screen by clicking .<span class="SAP-icons-V5"></span> \(Details\)
 5.  Click *Run* \> *Stop Run*.
 
+> ### Note:  
+> > You can’t stop a paused replication flow. To stop a paused flow, first resume it and then stop the run.
+
 
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_SpaceDeletion"/>
@@ -174,7 +150,7 @@ From the details screen of a replication flow run, you can set up email notifica
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_bqp_rm1_2gc"/>
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_bqp_rm1"/>
 
 ## Editing the Run Settings
 
@@ -183,9 +159,13 @@ From the details screen of a replication flow run, you can change the run settin
 > ### Note:  
 > You must have the DW Integrator role and the replication flow must be deployed successfully.
 
-1.  Go to *Data Integration Monitor* \> *Flows* monitor.
+1.  Go to *Monitoring* \> *Data Integration* \> *Flows* monitor.
 2.  Navigate to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
-3.  Open the tab **Run Settings** and update as per your need:
+3.  Open the tab **Run Settings** and update as needed:
+
+    -   Delta Load Run: You can define how delta-enabled objects run in a replication flow
+        -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
+        -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.
 
     -   Source Thread Limit \(1-160\): It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10.
     -   Target Thread Limit \(1-160\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 10.  

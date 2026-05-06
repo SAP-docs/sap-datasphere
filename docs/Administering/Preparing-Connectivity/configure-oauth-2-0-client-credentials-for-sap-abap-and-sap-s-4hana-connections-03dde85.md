@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Prepare OAuth 2.0 Authentication for SAP ABAP and SAP S/4HANA Connections
+# Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections
 
-You can use OAuth 2.0 authentication with client credentials for SAP ABAP \(on-premise\) and SAP S/4HANA connections, supporting replication flows and data flows. Using OAuth 2.0 authentication requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.
+You can use authentication type *OAuth 2.0* with the client credentials grant type for *SAP ABAP* \(on-premise\) and *SAP S/4HANA* connections, supporting replication flows and data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.
 
 
 
@@ -148,7 +148,7 @@ For more information, see:
 
 ## Results
 
-You can now use OAuth 2.0 authentication for an *SAP ABAP* or *SAP S/4HANA* connection to the ABAP system that you have prepared with the steps above.
+You can now use the *OAuth 2.0* authentication type with the client credentials grant type for an *SAP ABAP* or *SAP S/4HANA* connection to the ABAP system that you have prepared with the steps above.
 
 For more information, see:
 
