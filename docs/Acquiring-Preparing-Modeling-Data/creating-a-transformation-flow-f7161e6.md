@@ -76,6 +76,11 @@ In addition to working with flows in the editor, you can also:
 
     > ### Note:  
     > If you have archived records in your ABAP source table \(change type 'M', excluded in the active records table\) that you want to mark as active record in your target table \(change type 'U'\), please follow the guidance provided in the paragraph *Displaying Records Archived in Your ABAP Source System in Views* in [Capturing Delta Changes in Your Local Table](Acquiring-and-Preparing-Data-in-the-Data-Builder/capturing-delta-changes-in-your-local-table-154bdff.md).
+    > 
+    > In a transformation flow, when using delta capture with active records views in joins, deletions may not propagate correctly to the target table in the following cases:
+    > 
+    > -   Inner joins: Deleted records will not be removed from the target because the join cannot match deletion markers with records that no longer exist in the active records view.
+    > -   Filtered left joins: When the active records view is on the right side \(of left join\) with NOT NULL filters applied on active records view column, deletions will not propagate if the matching record is removed from active records view.
 
 3.  Click the *Back* button to return to the *Transformation Flow Editor*. Add or create a target table that the transformation flow will write its data to \(see [Create or Add a Target Table to a Transformation Flow](create-or-add-a-target-table-to-a-transformation-flow-0950746.md)\).
 
@@ -210,7 +215,7 @@ In addition to working with flows in the editor, you can also:
     > -   In the *Graphical View Editor*, input parameters can only be used. They cannot be created, edited, or deleted.
     > -   A scheduled transformation flow uses the default value of the input parameter.
     > -   Input parameters defined in transformation flows can be used in operators within the transformation flow, except for the *Python* operation in *Apache Spark* runtime.
-    > -   A transformation flow executed as part of a task chain receives input parameters from the task chain. See [Create Input Parameters in Task Chains](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-input-parameters-in-task-chains-c9906ec.md).
+    > -   A transformation flow ran as part of a task chain receives input parameters from the task chain. See [Create Input Parameters in Task Chains](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-input-parameters-in-task-chains-c9906ec.md).
 
 5.  Click <span class="FPA-icons-V3"></span> \(Save\). A dialog box appears. Enter a business name and a technical name for your transformation flow.
 

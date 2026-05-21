@@ -4,9 +4,6 @@
 
 Use an *Amazon Simple Storage Service* connection to connect to and access data from objects in Amazon S3 buckets. 
 
-> ### Note:  
-> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
-
 
 
 This topic contains the following sections:
@@ -19,6 +16,9 @@ This topic contains the following sections:
 <a name="loioa7b660a0a4ef4a4fbee57b44f5b2147d__S3_usage"/>
 
 ## Supported Features
+
+> ### Note:  
+> In file spaces, data flows are not supported.
 
 
 <table>
@@ -42,7 +42,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source and target objects to a replication flow.
+You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 For more information, see:
 
@@ -66,7 +66,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow.
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -378,7 +378,12 @@ Description
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. 
+*Data Flows* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces, data flows are not supported.
+
+
 
 </td>
 </tr>

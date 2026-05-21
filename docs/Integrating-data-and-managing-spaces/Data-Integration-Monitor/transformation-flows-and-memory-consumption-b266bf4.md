@@ -25,7 +25,7 @@ If your transformation flow is very complex, using remote or shared sources, you
 ### Manage Memory Consumption
 
 -   Configure workload class limitations to optimize resource allocation without triggering OOM events. See [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
--   Change the run mode for a transformation flow and choose between performance and memory consumption. See [Change the Run Mode for a Transformation Flow](change-the-run-mode-for-a-transformation-flow-f7da029.md).
+-   Change the run mode for a transformation flow and choose between performance and memory consumption. See [Change Transformation Flow Settings](change-transformation-flow-settings-f7da029.md).
 -   Reclaim space by reclaiming freed log segments and unused space in data volumes. See [Reclaim Space](https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/77c0de2ecc2741758b12e22feffb8db6.html).
 
 

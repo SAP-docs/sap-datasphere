@@ -235,7 +235,7 @@ Amount of disk space \(in MiB\) that is used by the target table in SAP HANA aft
 </td>
 <td valign="top">
 
-Peak allocated memory usage of the Spark application \(in MiB\). It ensures that applications run within available resources. If not, it could lead to performance degradation or application failure.
+Maximum amount of memory used across all executors and the driver during an Apache Spark job's lifetime. It reflects the highest demand for memory resources at any point during the execution. If the memory usage exceeds the maximum memory specified in the Apache Spark application configuration, it is recommended to consider a higher configuration or increase the size of the executors using a custom configuration.
 
 </td>
 </tr>

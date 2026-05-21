@@ -36,6 +36,9 @@ The *DW Modeler* role template, for example, grants the privileges to create and
 
 ## Context
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 > ### Remember:  
 > Data flows don't support delta processing. If you want to load delta data from an external source into SAP Datasphere, use a replication flow instead. See [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)
 
@@ -166,7 +169,7 @@ In addition to working with flows in the editor, you can also:
     <tr>
     <td valign="top">
     
-    <span class="FPA-icons-V3"></span> \(Remove\)
+    <span class="FPA-icons-V3"></span> \(Remove\) 
     
     </td>
     <td valign="top">

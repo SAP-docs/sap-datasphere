@@ -43,7 +43,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow.
+You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -74,7 +74,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow.
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -510,7 +510,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows and replication flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for replication flows and data flows. The default is *false*. 
 
 </td>
 </tr>

@@ -238,6 +238,10 @@ Displays the estimation of the size of the files waiting for a merge in the buff
 </tr>
 </table>
 
+
+
+### 
+
 Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table.
 
 You can download Spark driver logs after performing the following tasks on a local table \(file\):
@@ -263,4 +267,19 @@ From the *Schedules* tab, you can see the schedules that have already been creat
 > You can create several schedules to delete data, but only one for a merge or an optimize tasks. For more information on how to create schedule, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 
 From the *Settings* tab, you can override the default settings used to run tasks on Apache Spark. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md) or [Delete Data From Your Local Tables \(File\)](delete-data-from-your-local-tables-file-872ad50.md).
+
+
+
+## The Schedules Tab
+
+From the *Schedules* tab, you can see the schedules that have already been created to start tasks for your local tables \(files\). You can also create new schedules, edit, or delete existing schedules.
+
+> ### Note:  
+> You can create several schedules to delete data, but only one for a merge or an optimize task. For more information on how to create a schedule, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+
+
+
+## The Settings Tab
+
+From the *Settings* tab, you can override the default settings used to run tasks on Apache Spark. For more information, see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md) or [Delete Data From Your Local Tables \(File\)](delete-data-from-your-local-tables-file-872ad50.md).
 

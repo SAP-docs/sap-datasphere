@@ -65,12 +65,14 @@ Define the source for your replication flow \(connection, container, and objects
     > -   If you use SAP Datasphere as the source connection, your source objects must be local tables that have been deployed and have a primary key, or an SQL or a script view that has a primary key.
     > 
     > -   One source object can be reused in several replication flows. See, [Reusing Objects as Source or Target in Several Replication Flows](reusing-objects-as-source-or-target-in-several-replication-flows-d570eee.md).
+    > -   For Snowflake sources, only standard tables with primary keys and hybrid tables are supported. Note that the defined primary keys must comply with Snowflake constraints to avoid replication flow failures. For more information, refer to the Snowflake documentation.
     > 
     >     > ### Restriction:  
-    >     > You won't be able to deploy a replication flow that is reusing objects from:
+    >     > -   You won't be able to deploy a replication flow that is reusing objects from:
+    >     >     -   SAP HANA Cloud, data lake files
+    >     >     -   ABAP SLT source. For ABAP SLT, one particular table can be reused up to 4 times in different mass transfer IDs. For more information, you can refer to [KBA3464320](https://me.sap.com/notes/0002329159).
     >     > 
-    >     > -   SAP HANA Cloud, data lake files
-    >     > -   ABAP SLT source. For ABAP SLT, one particular table can be reused up to 4 times in different mass transfer IDs. For more information, you can refer to [KBA3464320](https://me.sap.com/notes/0002329159).
+    >     > -   For Snowflake sources, GCP endpoints are not supported.
 
 4.  If you decide that you do not want to include an object after all, select it and choose *Remove from Selection*. If you want to include more objects, go back to the *Available* tab and select the relevant objects. When you are done, choose *Add Selection*. The system then imports the object definitions so that they are available for the subsequent process steps.
 

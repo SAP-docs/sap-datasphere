@@ -10,7 +10,7 @@ The *View Analyzer* provides you with statistics and useful information on each 
 
 To use *View Analyzer*,
 
-1.  Go to *Data Integration Monitor* \> *Views*. Select the view you need to analyze and navigate to the details screen of this view. You need to select a space if you are assigned to several spaces.
+1.  Go to *Monitoring* \> *Data Integration* \> *Views*. Select the view you need to analyze and navigate to the details screen of this view. You need to select a space if you are assigned to several spaces.
 
 2.  Select *Data Persistence* \> *Start View Analyzer*.
 

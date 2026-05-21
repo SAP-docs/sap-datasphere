@@ -42,7 +42,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add target objects to a replication flow.
+You can use the connection to add target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 For more information, see [Apache Kafka Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6df55db4028842c1b1866e709ffef456.html "If you use Apache Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 

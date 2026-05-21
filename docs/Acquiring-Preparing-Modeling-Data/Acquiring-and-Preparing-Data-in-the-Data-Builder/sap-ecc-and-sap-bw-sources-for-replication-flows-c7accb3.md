@@ -4,7 +4,7 @@
 
 # SAP ECC and SAP BW Sources for Replication Flows
 
-You can replicate data from SAP ECC and SAP BW systems using the ODP framework. Unlike ABAP and SAP S/4HANA connections, replication flows connect directly to the ABAP system, so no DMIS add-on installation is required. However, replication is limited to ODP data sources such as BW and SAPI.
+You can replicate data from SAP ECC and SAP BW systems using the ODP 2.0 framework. Unlike ABAP and SAP S/4HANA connections, replication flows connect directly to the ABAP system, so no DMIS add-on installation is required.
 
 
 
@@ -14,6 +14,7 @@ You can replicate data from SAP ECC and SAP BW systems using the ODP framework. 
 
 -   Only ODP datasets with a primary key are supported.
 -   To display available ODP datasets, you need to enter a search string in the *Select Source Objects* dialog. By default, no datasets are displayed.
+-   Replication is limited to ODP BW and SAPI data sources.
 
 
 

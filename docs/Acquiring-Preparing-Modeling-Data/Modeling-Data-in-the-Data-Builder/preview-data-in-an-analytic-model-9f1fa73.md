@@ -26,6 +26,9 @@ If you want to set filters, choose <span class="SAP-icons-V5"></span> Add Fil
 
 By choosing <span class="FPA-icons-V3"></span> \(Export\)** \> *Export Excel* or ** \> *Export CSV*, you can export the data as an Excel or CSV file. This enables you to share the intermediate results with colleagues, and to validate the calculations and measures.
 
+> ### Note:  
+> This option is only available if the export of the data preview results is not protected in the properties of the analytic model.
+
 
 
 <a name="loio9f1fa73a33424cbe9bac3064702c0dbd__section_ph4_mgh_hhc"/>

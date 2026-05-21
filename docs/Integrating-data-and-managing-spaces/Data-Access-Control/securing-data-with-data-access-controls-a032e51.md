@@ -11,6 +11,9 @@ This topic contains the following sections:
 -   [Applying Data Access Controls](securing-data-with-data-access-controls-a032e51.md#loioa032e51c730147c7a1fcac125b4cfe14__section_applying)
 -   [Data Access Control Example](securing-data-with-data-access-controls-a032e51.md#loioa032e51c730147c7a1fcac125b4cfe14__section_example)
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 
 
 <a name="loioa032e51c730147c7a1fcac125b4cfe14__section_permissions_entities"/>

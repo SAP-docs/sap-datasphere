@@ -4,6 +4,9 @@
 
 Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space. 
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 
 
 <a name="loio7c4acd33e39a451e99c87f0661772443__section_wyk_hht_zgc"/>

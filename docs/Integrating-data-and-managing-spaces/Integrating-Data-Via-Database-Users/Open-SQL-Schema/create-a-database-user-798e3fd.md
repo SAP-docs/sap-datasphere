@@ -72,7 +72,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     </td>
     <td valign="top">
     
-    Require the database user to change the password with the frequency defined in the password policy \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.") :arrow_upper_right:\).
+    Require the database user to change the password with the frequency defined in the password policy and on the first logon \(see [Set a Password Policy for Database Users](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/14aedf6cecce474b93b2d5187662a090.html "You can set a password policy for database users with complexity requirements, expiration periods, and reuse restrictions.") :arrow_upper_right:\).
     
     </td>
     </tr>
@@ -85,6 +85,10 @@ The *DW Space Administrator* role template, for example, grants these privileges
     <td valign="top">
     
     Allow the user to access the SAP HANA Cloud machine learning libraries.
+
+    You can also enable:
+
+    -   *With Grant Option* - Grant access to the libraries to other users if they need to create procedures in the Open SQL schema that call APL/PAL procedures and use them in a task chain \(see [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:\). Select this option only for users who need to create procedures. This option is not intended for granting APL/PAL access to other users.
 
     For information about enabling and using these libraries, see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: 
     

@@ -140,6 +140,19 @@ You define a filter and based on this filter, the records will be deleted. Note 
 
 If your filter is defined on a column where values are of data type 'Date” or “Datetime', you can add other filtering options. See the section below **Additional Filter Options for Data Type "Date" or "Datetime"**
 
+> ### Note:  
+> the following data types are not supported for filtering:
+> 
+> -   CDSDataType.TIME
+> -   CDSDataType.LARGE\_STRING
+> -   CDSDataType.BINARY
+> -   CDSDataType.HANA\_ST\_GEOMETRY
+> -   CDSDataType.HANA\_ST\_POINT
+> -   CDSDataType.LARGE\_BINARY
+> -   CDSDataType.HANA\_BINARY
+
+
+
 </td>
 </tr>
 <tr>

@@ -6,9 +6,6 @@
 
 Use the connection to connect to and access objects in Microsoft OneLake.
 
-> ### Note:  
-> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
-
 This topic contains the following sections: Supported Features 
 
 -   [Supported Features](microsoft-onelake-connections-057fa4b.md#loio057fa4b51c734e679dd70eec9514839d__OneLake_usage)
@@ -42,7 +39,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow.
+You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 For more information, see [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
 

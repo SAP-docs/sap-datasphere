@@ -36,7 +36,7 @@ Metrics provide the record count for source and target tables used in the flow. 
 
 -   `EXECUTION_MODE` 
 
-    The “Run Mode” is defined in the settings for a transformation flow run: 0 means “Performance-Optimized \(Recommended\)” and 1 means “Memory-Optimized”. For more information about the "Run Mode", see [Change the Run Mode for a Transformation Flow](change-the-run-mode-for-a-transformation-flow-f7da029.md).
+    The “Run Mode” is defined in the settings for a transformation flow run: 0 means “Performance-Optimized \(Recommended\)” and 1 means “Memory-Optimized”. For more information about the "Run Mode", see [Change Transformation Flow Settings](change-transformation-flow-settings-f7da029.md).
 
 -   `VIEW TRANSFORM STACK SIZE ACCOUNT`
 

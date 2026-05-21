@@ -31,8 +31,6 @@ For information about supported data types, see [Capturing Delta Changes in Your
 
 The following **sources** are **not** supported:
 
--   Cloud storage providers, such as Amazon Simple Storage Service, Google Cloud Storage, Secure File Transfer Protocol \(SFTP\) or Microsoft Azure Data Lake Gen2
-
 -   ABAP-based objects that do not have a primary key
 
 -   Tables in which a column with data type `time` is defined as a primary key column

@@ -9,6 +9,9 @@ This topic contains the following sections:
 -   [Converting Currency Values](converting-currency-and-unit-values-1aff2ba.md#loio1aff2ba3ef3d423b89ed378fe72ec1b7__section_currency)
 -   [Converting Unit Values](converting-currency-and-unit-values-1aff2ba.md#loio1aff2ba3ef3d423b89ed378fe72ec1b7__section_unit)
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 
 
 <a name="loio1aff2ba3ef3d423b89ed378fe72ec1b7__section_currency"/>

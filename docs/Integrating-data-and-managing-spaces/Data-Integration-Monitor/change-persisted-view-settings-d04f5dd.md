@@ -1,8 +1,8 @@
 <!-- loiod04f5dd6bbda44448407d54d2a7979be -->
 
-# Data Persistence and Run Mode
+# Change Persisted View Settings
 
-From the *Views* Details screen, you can change the settings to persist your data to ensure that you choose the best run mode according to your business case.
+From the *Views* Details screen, you can change the settings to persist your data to ensure that you choose the best run mode according to your business case. You can also include runtime settings to be used with transport packages.
 
 When persisting a view, an SQL procedure is called in SAP HANA. In case of high data volume to persist, processing the SQL procedure can impact the memory consumption and the system resources. In the details screen of the view under *Settings*, you can optimize the run mode depending on your needs.
 
@@ -26,4 +26,17 @@ You can change the run mode of your data persistence and choose between performa
 
 > ### Note:  
 > Table user-defined functions that cannot be unfolded in persisted views with partitions can prevent pushdown of filters, potentially causing out-of-memory issues. Use the Explain Plan without memory consumption to identify problematic table user-defined functions and optimize persisted views to avoid memory bottlenecks. For more information about using the Explain Plan for persisted view, see [Getting Started with View Analyzer](getting-started-with-view-analyzer-e0aeddb.md). For more information about the Explain Plan and table user-defined functions, see [https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-sqlscript-reference/explain-plan-for-table-user-defined-functions](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-sqlscript-reference/explain-plan-for-table-user-defined-functions) *SAP HANA Cloud, SAP HANA SQL Script Reference*.
+
+
+
+## Include Runtime Settings in Transport Packages
+
+Transport runtime settings for a persisted view.
+
+In the *Data Integration Monitor*, open your transformation flow. On the *Settings* tab, you can define the transport runtime settings for a transformation flow that you want to include in a transport:
+
+-   *Include Run Mode* for persisted views.
+-   Included partitions created for persisted views.
+
+The selected items are added to the persisted view when you export the flow using the *Transport* app. Transporting runtime settings ensures consistent runtime behavior across environments without manual reconfiguration after transport.
 

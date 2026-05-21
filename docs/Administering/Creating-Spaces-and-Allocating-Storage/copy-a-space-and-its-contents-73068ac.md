@@ -17,6 +17,7 @@ To copy a space and its contents, you must have a global role that grants you th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *User* \(`-R------`\) - To initialize the space for assigning users.
+-   *Role* \(`--U-----`\) - To add the new space to all scoped roles that the original space belongs to.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 

@@ -4,9 +4,6 @@
 
 An SAP Integrated Business Planning system administrator has pushed data to SAP Datasphere as a local table \(file\), and you now want to use it for your business case.
 
-> ### Note:  
-> This feature is currently only available for early adopters in SAP Integrated Business Planning, which is a limited group of customers. To request being considered as an early adopter and having the feature activated in your system, contact SAP. Please use the SCM-IBP-INT-BDC component to log your request.
-
 
 
 ## Prerequisites

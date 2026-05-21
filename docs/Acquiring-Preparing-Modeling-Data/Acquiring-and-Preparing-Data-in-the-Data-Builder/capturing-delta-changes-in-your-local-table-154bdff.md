@@ -152,7 +152,11 @@ The 2 objects are consumed differently by SAP Datasphere apps:
 
 
 > ### Note:  
-> If the table is used as source or target in an object, for example in a flow, you can see it in the table editor under dependent objects. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
+> -   If the table is used as source or target in an object, for example in a flow, you can see it in the table editor under dependent objects. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
+> -   In a transformation flow, when using delta capture with active records views in joins, deletions may not propagate correctly to the target table in the following cases:
+> 
+>     -   Inner joins: Deleted records will not be removed from the target because the join cannot match deletion markers with records that no longer exist in the active records view.
+>     -   Filtered left joins: When the active records view is on the right side \(of left join\) with NOT NULL filters applied on active records view column, deletions will not propagate if the matching record is removed from active records view.
 
 
 

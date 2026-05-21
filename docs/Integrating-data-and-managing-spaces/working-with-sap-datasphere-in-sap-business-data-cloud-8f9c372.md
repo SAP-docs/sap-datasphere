@@ -12,7 +12,7 @@ SAP Business Data Cloud integrates and governs SAP and third-party data, allowin
 
 For more information, see:
 
--   [Installing Intelligent Applications](installing-intelligent-applications-344999c.md)
+-   [Installing Intelligent Content](installing-intelligent-content-344999c.md)
 -   [Activating Data Packages and Installing Data Products](activating-data-packages-and-installing-data-products-6c7799a.md)
 -   [Creating Data Products](creating-data-products-ebe9dc0.md)
 

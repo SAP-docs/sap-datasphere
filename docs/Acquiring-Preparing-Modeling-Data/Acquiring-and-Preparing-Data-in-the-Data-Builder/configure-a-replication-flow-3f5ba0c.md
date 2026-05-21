@@ -41,7 +41,7 @@ Define settings and properties for your replication flow and individual replicat
 
         -   *Delta Only* is a long running task similar to *Initial and Delta*.
 
-            For more information on supported load types and connections, see [Source and Target Connections and Load Types for Replication Flows](source-and-target-connections-and-load-types-for-replication-flo-1089119.md).
+            For more information on supported load types and connections, see [Select Source and Target Connections for Replication Flows](select-source-and-target-connections-for-replication-flows-1089119.md).
 
 
 

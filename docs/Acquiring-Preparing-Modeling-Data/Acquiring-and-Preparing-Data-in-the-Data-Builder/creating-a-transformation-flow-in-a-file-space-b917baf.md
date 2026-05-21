@@ -205,7 +205,12 @@ You want to model transformation flows with local tables \(file\), shared local 
 8.  Add a target table. For more information, see [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
-    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported. In addition, the delta capture option can be set to off only if the load type is *Initial Only*.
+    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
+    > 
+    > In a transformation flow, when using delta capture with active records views in joins, deletions may not propagate correctly to the target table in the following cases:
+    > 
+    > -   Inner joins: Deleted records will not be removed from the target because the join cannot match deletion markers with records that no longer exist in the active records view.
+    > -   Filtered left joins: When the active records view is on the right side \(of left join\) with NOT NULL filters applied on active records view column, deletions will not propagate if the matching record is removed from active records view.
 
 9.  Review the properties of your transformation flow, save, deploy, and run it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
 

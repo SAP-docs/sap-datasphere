@@ -308,6 +308,18 @@ In addition to working with task chains in the editor, you can also:
         -   Delete All Records
         -   Delete Filtered Records
 
+            > ### Note:  
+            > the following data types are not supported for filtering:
+            > 
+            > -   CDSDataType.TIME
+            > -   CDSDataType.LARGE\_STRING
+            > -   CDSDataType.BINARY
+            > -   CDSDataType.HANA\_ST\_GEOMETRY
+            > -   CDSDataType.HANA\_ST\_POINT
+            > -   CDSDataType.LARGE\_BINARY
+            > -   CDSDataType.HANA\_BINARY
+
+
         For more information, see [Controlling Deletion of Local Table Records](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/2a59b7142e1b4d478b0bf4063084261e.html "Delete records for local tables, on-demand, using filter conditions or using a schedule.") :arrow_upper_right:
 
     -   Local Table \(File\)
@@ -315,6 +327,18 @@ In addition to working with task chains in the editor, you can also:
         -   Merge: Add, update or delete data into the existing local table \(file\). Data updates are pushed by a replication flow or SAP BW to the inbound buffer \(specific folder in file storage\) of a target local table \(file\). To process data updates from this inbound buffer to the local table \(file\), and therefore make data visible, a merge task has to run.
         -   Optimize:Improve data access performance by optimizing the layout of data in file storage \(for example by grouping small files into larger files\).
         -   Delete Filtered Records: Delete records according to the defined criteria.
+
+            > ### Note:  
+            > the following data types are not supported for filtering:
+            > 
+            > -   CDSDataType.TIME
+            > -   CDSDataType.LARGE\_STRING
+            > -   CDSDataType.BINARY
+            > -   CDSDataType.HANA\_ST\_GEOMETRY
+            > -   CDSDataType.HANA\_ST\_POINT
+            > -   CDSDataType.LARGE\_BINARY
+            > -   CDSDataType.HANA\_BINARY
+
         -   Delete All Records: Delete records from your local table \(file\). Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
         -   *Delete Previous Versions \(Vacuum\)*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. The default value is 7 days. The minimum authorized value is 7 so that records from the last 7 days cannot be deleted, and the maximum value is 999 days. In addition, only records that have been fully processed can be deleted. Note that, however, even if the data is deleted through a vacuum task, data is kept for another 14 days in the file space storage. As it is very likely that you will not be able to go back more than 30 days, we recommend that you do not enter a period longer than 30 days as a vacuum deletion criterion.For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:
 

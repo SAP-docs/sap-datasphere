@@ -259,6 +259,7 @@ To persist and monitor views, you must have a combination of a global role and a
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Data Warehouse Data Integration* \(`-RU-E---`\) - To perform data replication/persistence actions \(in the *Data Integration Monitor* or *Data Builder*\), and schedule the actions.
     -   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions.
+    -   *Data Warehouse Data Builder* \(`--U-----`\) - To specify transport runtime settings.
     -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 
@@ -1154,6 +1155,7 @@ To copy a space and its contents, you must have a global role that grants you th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *User* \(`-R------`\) - To initialize the space for assigning users.
+-   *Role* \(`--U-----`\) - To add the new space to all scoped roles that the original space belongs to.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 

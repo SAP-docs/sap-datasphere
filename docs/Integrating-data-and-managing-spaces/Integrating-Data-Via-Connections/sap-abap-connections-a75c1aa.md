@@ -4,7 +4,7 @@
 
 # SAP ABAP Connections
 
-Use an *SAP ABAP* connection to access data from SAP ABAP on-premise systems through RFC or to access data from cloud source systems such as SAP S/4HANA Cloud through Web Socket RFC.
+Use an *SAP ABAP* connection to access data from ABAP-based on-premise or cloud systems.
 
 
 
@@ -14,6 +14,13 @@ This topic contains the following sections:
 -   [Configuring Connection Properties](sap-abap-connections-a75c1aa.md#loioa75c1aacf951449ba3b740c7e46da3a9__connection_properties)
 
 For information about the required prerequisites, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+
+If one of the following connection types works for your source system and use case, we recommend using that connection type:
+
+-   [SAP BW Connections](sap-bw-connections-e589041.md)
+-   [SAP ECC Connections](sap-ecc-connections-e546ccd.md)
+-   [SAP S/4HANA Cloud Connections](sap-s-4hana-cloud-connections-a98e5ff.md)
+-   [SAP S/4HANA On-Premise Connections](sap-s-4hana-on-premise-connections-a49a1e3.md)
 
 
 
@@ -46,7 +53,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow. \(**recommended for replication scenarios**\)
+You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\). \(**recommended for replication scenarios**\)
 
 For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
 
@@ -108,7 +115,7 @@ You can access the following data:
 
     -   Data from virtual tables through RFC for ODP sources \(extractors\):
 
-        -   Extraction context *ABAP\_CDS* provides access to ABAP Core Data Services \(CDS\) Views that include the annotation `@Analytics.dataextraction.enabled: true` \(in SAP ABAP on-premise systems\) and do not contain the annotation `@Analytics.Query: true`.
+        -   Extraction context *ABAP\_CDS* provides access to ABAP Core Data Services \(CDS\) Views that include the annotation `@Analytics.dataextraction.enabled: true` \(in ABAP on-premise systems\) and do not contain the annotation `@Analytics.Query: true`.
 
             For information about which ABAP CDS Views are available for extraction, see [CDS Views Enabled for Data Extraction](https://help.sap.com/viewer/8308e6d301d54584a33cd04a9861bc52/latest/en-US/b7a5b8b72d3643b7a8ecf4cd695e0791.html) in the *SAP S/4HANA* documentation.
 
@@ -141,7 +148,7 @@ You can access the following data:
             > Certain SAPI DataSources \(from FI-AA Business Content, for example\) may send duplicate records during snapshot replication or real-time initialization. Remote table replication runs with optimized INSERT processing on DataSource key level which leads to unique constraint violation errors. In such cases, we recommend to use a data flow which uses the remote table as source and for which the target table has selected the *Append* mode with the *Update Records By Primary Key \(UPSERT\)* option.
 
 
-    -   Data from SAP ABAP Dictionary tables in SAP ABAP on-premise systems
+    -   Data from ABAP Dictionary tables in ABAP on-premise systems
 
 
     Real-time replication is supported for ODP sources. For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
@@ -162,7 +169,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow.
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 You can replicate the following data:
 
@@ -255,7 +262,7 @@ Select the protocol that you want to use to connect to the source system:
 
     You can use the connection to your SAP S/4HANA Cloud system for:
 
-    -   remote tables for data federation via the ABAP SQL service \(supported for X.509 Client Certificate authentication\)
+    -   remote tables for data federation via the ABAP SQL service \(supported for X.509 Client Certificate authentication; also supported for SAP BTP ABAP environment\)
     -   data flows \(supported for all available authentication types\)
     -   replication flows \(supported for all available authentication types\)
 
@@ -436,9 +443,9 @@ Description
 
 \[optional\] Set to *true* if you want to use the connection for one or more of the following features: 
 
+-   replication flows
 -   remote tables for data federation via the ABAP SQL service
 -   data flows
--   replication flows
 
 The default is *false*.
 

@@ -39,7 +39,7 @@ In addition, download the required TLS certificate from an appropriate website. 
 In addition to managing TLS server certificates in the *Configuration* app, you can also:
 
 -   List, upload, and delete them using the `datasphere` command line interface \(see [Managing TLS Server Certificates via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/6306da2bbeb04e4fbd944c2dce08629f.html "You can use the datasphere command line interface to list, upload, and delete TLS server certificates.") :arrow_upper_right:\).
--   List, upload, and delete them using a REST API \(see [Managing Connectivity via the REST API](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/5aafe32418b14f7e99528b49f48bd3ac.html "You can manage TLS server certificates and connections via the Certificates and Connections REST APIs. Creating and editing connections via the API is supported for SAP SuccessFactors connections only.") :arrow_upper_right:\).
+-   List, upload, and delete them using a REST API \(see [Managing Connections via the REST API](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/5aafe32418b14f7e99528b49f48bd3ac.html "You can manage connections via the Connections REST API. Creating and editing connections via the API is supported for SAP SuccessFactors connections only.") :arrow_upper_right:\).
 
 
 

@@ -160,7 +160,7 @@ For more information, see [Creating Partitions for Your Persisted Views](creatin
 
 Displays the run mode used to persist your view data: performance-optimized or memory-optimized.
 
-For more information, see [Data Persistence and Run Mode](data-persistence-and-run-mode-d04f5dd.md)
+For more information, see [Change Persisted View Settings](change-persisted-view-settings-d04f5dd.md)
 
 </td>
 </tr>

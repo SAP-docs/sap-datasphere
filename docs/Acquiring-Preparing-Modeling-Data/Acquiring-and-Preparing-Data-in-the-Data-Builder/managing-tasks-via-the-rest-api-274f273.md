@@ -126,6 +126,8 @@ For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP D
 The Tasks REST API allow you to run task and monitor task in SAP Datasphere. You can:
 
 -   Run a task chain.
+-   Retry a task chain .
+-   Cancel a task chain.
 -   Retrieve task run details with log ID.
 -   Retrieve existing history of object task logs.
 
@@ -141,6 +143,43 @@ To run a task chain, use the POST request with the API <code>api/v1/datasphere/t
 
 ```
 https://<tenant_url>/api/v1/datasphere/tasks/chains/<space_id>/run/<objectid>
+```
+
+Example:
+
+> ### Sample Code:  
+> ```
+> {
+>   "logId": 9999999
+> }
+> ```
+
+Retry task chains.
+
+To retry a failed task chain run, use the POST request with the API <code>api/v1/datasphere/tasks/chains/<i class="varname">&lt;spaceid&gt;</i>/retry/<i class="varname">&lt;objectid&gt;</i></code> endpoint and enter:
+
+```
+https://<tenant_url>/api/v1/datasphere/tasks/chains/<space_id>/retry/<objectid>
+```
+
+Example:
+
+> ### Sample Code:  
+> ```
+> {
+>   "logId": 9999999
+> }
+> ```
+
+> ### Note:  
+> Valid for FAILED or CANCELED task chains as long as they were the last run of the object.
+
+Cancel task chains.
+
+To cancel a task chain run, use the POST request with the API <code>api/v1/datasphere/tasks/chains/<i class="varname">&lt;spaceid&gt;</i>/cancel/<i class="varname">&lt;logid&gt;</i></code> endpoint and enter:
+
+```
+https://<tenant_url>api/v1/datasphere/tasks/chains/<spaceid>/cancel/<logid>
 ```
 
 Example:

@@ -30,6 +30,12 @@ To search for and evaluate objects in the *Data Products* collection, you must h
 
 The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
+You can install a data product to your modelling space, if: 
+
+-   Its release status and lifecycle status are both *Active*.
+-   Its functional status and the functional status for all its APIs are *Current*.
+-   Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
+
 <a name="concept_bx2_pkv_zcc"/>
 
 <!-- concept\_bx2\_pkv\_zcc -->
@@ -56,16 +62,6 @@ After you've evaluated and found a data product, you can install it in your spac
 
 
 
-## Prerequisites
-
-Before you install the data product in your modelling space, check its statuses to make sure you can install it:
-
--   Its release status and lifecycle status are both *Active*.
--   Its functional status and the functional status for all its APIs are *Current*.
--   Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
-
-
-
 <a name="dataproduct_installdspspace__steps_zsy_dfn_gcc"/>
 
 ## Procedure
@@ -87,14 +83,15 @@ Before you install the data product in your modelling space, check its statuses 
 
 6.  On the *Review Entities* page, review the objects that you will import.
 
-    -   If the data product you're installing was created from the local SAP Datasphere system, choose *Start Import*.
-    -   If the data product you're installing was created from a different system, do the following:
+    -   For data products created from the local SAP Datasphere system, choose *Start Import*.
+    -   For data products created from a different system:
         1.  Choose the method you want for accessing the data.
 
             -   *Remote Tables* - Federated access guarantees data freshness, but may reduce performance.
             -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
 
-            Data products from SAP Snowflake only support the *Remote Tables* option.
+            > ### Note:  
+            > Data products from SAP Snowflake only support the *Remote Tables* option.
 
             You'll be able to see a list of all the objects that will be created in the *Data Builder*.
 

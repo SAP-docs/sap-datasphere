@@ -1,6 +1,6 @@
 <!-- loio344999cbd4ff4d8188fb67b4ca6ea33f -->
 
-# Installing Intelligent Applications
+# Installing Intelligent Content
 
 An SAP Business Data Cloud administrator can install intelligent applications to the SAP Datasphere and SAP Analytics Cloud tenants in the formation.
 
@@ -18,6 +18,6 @@ When an intelligent application is installed:
 SAP Datasphere users can work with intelligent application content in the following ways:
 
 -   Review the installed content \(see [Reviewing Installed Intelligent Applications](reviewing-installed-intelligent-applications-6446487.md)\).
--   Upload permissions records to control access to the data \(see [Applying Row-Level Security to Data Delivered through Intelligent Applications](applying-row-level-security-to-data-delivered-through-intelligent-applications-c83225f.md)\).
+-   Upload permissions records to control access to the data \(see [Applying Row-Level Security to Data Delivered through Intelligent Content](applying-row-level-security-to-data-delivered-through-intelligent-content-c83225f.md)\).
 -   Build on top of the delivered data products and content to extend the app \(see [Extending Intelligent Applications](extending-intelligent-applications-3c15868.md)\)
 

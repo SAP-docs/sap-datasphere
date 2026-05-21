@@ -62,7 +62,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow.
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -248,7 +248,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for data flows. The default is *false*. 
+\[optional\] Set to *true* if your source is an on-premise source and you want to use the connection for replication flows and data flows. The default is *false*. 
 
 </td>
 </tr>
@@ -320,6 +320,52 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 
 
+### Credentials 
+
+If *Authentication Type* = *User Name and Password*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*User Name*  
+
+</td>
+<td valign="top">
+
+Enter the Oracle user name \(case-sensitive\). 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Password*  
+
+</td>
+<td valign="top">
+
+Enter the Oracle user password. 
+
+</td>
+</tr>
+</table>
+
+
+
 ### Security
 
 
@@ -375,50 +421,6 @@ When using the connection for remote tables, enter the distinguished name \(DN\)
 
 
 
-### Credentials
-
-
-<table>
-<tr>
-<th valign="top">
-
-Property
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-*User Name*  
-
-</td>
-<td valign="top">
-
-Enter the Oracle user name \(case-sensitive\). 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Password*  
-
-</td>
-<td valign="top">
-
-Enter the Oracle user password. 
-
-</td>
-</tr>
-</table>
-
-
-
 ### Features
 
 
@@ -455,7 +457,7 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties.
+*Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section. 
 
 </td>
 </tr>

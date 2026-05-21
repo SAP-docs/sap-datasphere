@@ -314,7 +314,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Oracle* \(data flows\)
+        *Oracle* \(data flows\) 
         
         </td>
         <td valign="top">
@@ -440,10 +440,10 @@ For more information about the supported use cases depending on the connection t
         > 
         >     We recommend to use a virtual \(cloud-side\) name that is different from the internal name.
         > 
+        > -   If encrypted communication using TLS/SSL is defined in the SAP Datasphere connection \(to establish end-to-end encryption\), ensure that the associated system mapping in the Cloud Connector does not use TLS.
         > -   For *Google BigQuery* connection types: The virtual hosts configured in the Cloud Connector system mappings must match the Google BigQuery service endpoints \(internal hosts in the system mappings\) exactly for both the REST and Storage API.
         > -   For ABAP-based connection types: When using load balancing, make sure to directly specify the message server port in the *System ID* field of the system mapping information.
         > -   For ABAP-based connection types: The *Connection Type* selected in the system mapping information \(load balancing logon or connecting to a specific application server\) must match the *SAP Logon Connection Type* selected in SAP Datasphere connection management \(*Message Server* or *Application Server*\).
-        > -   If encrypted communication using TLS/SSL is defined in the SAP Datasphere connection \(to establish end-to-end encryption\), ensure that the associated system mapping in the Cloud Connector does not use TLS.
         > -   For *SAP S/4HANA On-Premise* connections using the ABAP SQL service for data federation with remote tables:
         >     -   Using the model import feature is not supported with the same connection.
         >     -   If you want to use the same connection for remote tables and flows, you need to create two system mappings. For more information about what to consider when creating the required system mappings, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md).

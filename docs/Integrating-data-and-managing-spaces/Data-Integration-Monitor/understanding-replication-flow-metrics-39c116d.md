@@ -844,7 +844,97 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-3.  Partition Statuses:
+3.  Data Transfer Information:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Data Transfer Information
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Data Size \(MiB\)
+    
+    </td>
+    <td valign="top">
+    
+    The total volume of data read from the source for this partition.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Data Size \(MiB\)
+    
+    </td>
+    <td valign="top">
+    
+    The total volume of data written to the target for this partition.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Source Record Count
+    
+    </td>
+    <td valign="top">
+    
+    The number of records retrieved from the source system for this partition.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Target Record Count
+    
+    </td>
+    <td valign="top">
+    
+    Total number of records retrieved from the target system for this partition
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Average Source Processing Time
+    
+    </td>
+    <td valign="top">
+    
+    The average time taken to read and process data from the source for this partition.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Average Target Processing Time
+    
+    </td>
+    <td valign="top">
+    
+    The average time taken to write and process data in the target for this partition.
+    
+    </td>
+    </tr>
+    </table>
+    
+4.  Partition Statuses:
 
 
     <table>
@@ -922,7 +1012,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-4.  Staging Information:
+5.  Staging Information:
 
 
     <table>
@@ -988,7 +1078,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-5.  Retry Information:
+6.  Retry Information:
 
 
     <table>
@@ -1054,7 +1144,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-6.  Retry Log:
+7.  Retry Log:
 
 
     <table>
@@ -1120,7 +1210,7 @@ When you run a replication flow, you can define how data is partitioned for each
     </tr>
     </table>
     
-7.  Retry Reasons:
+8.  Retry Reasons:
 
 
     <table>

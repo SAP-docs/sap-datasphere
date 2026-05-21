@@ -30,6 +30,9 @@ The *DW Modeler* role template, for example, grants these privileges. For more i
 > ### Note:  
 > This procedure explains how to upload a CSV file to create a new local table in SAP Datasphere with the possibility to perform some data transformations during the upload. To load data into an existing local table \(without transformations\), use the <span class="FPA-icons-V3"></span> \(Upload Data From CSV File\) tool in the table editor \(see [Creating a Local Table](creating-a-local-table-2509fe4.md)\).
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 
 
 ## Procedure

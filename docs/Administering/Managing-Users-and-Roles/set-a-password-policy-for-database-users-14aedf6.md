@@ -4,7 +4,7 @@
 
 # Set a Password Policy for Database Users
 
-Users with an administrator role can set a password policy to cause database user passwords to expire after a specified number of days.
+You can set a password policy for database users with complexity requirements, expiration periods, and reuse restrictions.
 
 
 
@@ -35,11 +35,121 @@ Users with a space administrator role can create database users in their spaces 
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
 
-2.  In the *Password Policy Configuration* section, enter the number of days after which a database user's password will expire.
+2.  In the *Password Policy Configuration* section, complete the properties as appropriate and click *Save*:
 
-    After this period, the user will be prompted to set a new password.
 
+    <table>
+    <tr>
+    <th valign="top">
+
+    Property
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Number of Days to Expiration
+    
+    </td>
+    <td valign="top">
+    
+    Enter the number of days that database user passwords are valid before they expire. After this period, the user will be prompted to set a new password.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Number of Last Used Passwords That Cannot Be Reused
+    
+    </td>
+    <td valign="top">
+    
+    Enter the number of last used passwords that users are not allowed to reuse when changing their current password.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Password Change Required on First Logon
+    
+    </td>
+    <td valign="top">
+    
+    Specify whether users have to change their initial passwords immediately the first time they log on.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Minimum Password Length
+    
+    </td>
+    <td valign="top">
+    
+    Enter the minimum number of characters that the password must contain.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Minimum Number of Uppercase Letters
+    
+    </td>
+    <td valign="top">
+    
+    Enter the minimum number of uppercase letters that the password must contain.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Minimum Number of Lowercase Letters
+    
+    </td>
+    <td valign="top">
+    
+    Enter the minimum number of lowercase letters that the password must contain.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Minimum Number of Digits
+    
+    </td>
+    <td valign="top">
+    
+    Enter the minimum number of digits that the password must contain.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Minimum Number of Special Characters
+    
+    </td>
+    <td valign="top">
+    
+    Enter the minimum number of special characters that the password must contain.
+    
+    </td>
+    </tr>
+    </table>
+    
     > ### Note:  
-    > The password policy applies only to database users where the *Enable Password Lifetime* property is selected, for both existing and new users. If a user does not log on with their initial password during this period, they will be deactivated until their password is reset.
+    > The *Number of Days to Expiration* and *Password Change Required on First Logon* settings apply only to database users with the *Enable Password Lifetime* option selected in their configuration dialog. If a user does not log on with their initial password during this period, they will be deactivated until their password is reset.
 
 

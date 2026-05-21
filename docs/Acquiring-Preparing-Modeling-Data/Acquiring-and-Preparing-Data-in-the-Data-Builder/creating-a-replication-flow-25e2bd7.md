@@ -34,21 +34,19 @@ The *DW Modeler* role template, for example, grants the privileges to create and
 
 ## Context
 
-You can use replication flows to copy data from the following source objects:
+For a full list of connection types that can be used as sources and targets, see [Select Source and Target Connections for Replication Flows](select-source-and-target-connections-for-replication-flows-1089119.md).
 
--   CDS views \(in ABAP-based SAP systems\) that are enabled for extraction
+You can use replication flows to copy data from the following source objects from ABAP sources:
 
--   Objects from ODP providers, such as extractors or SAP BW artifacts \(from any SAP system that is based on SAP NetWeaver and has a suitable version of the DMIS add-on, see SAP Note [3412110](https://me.sap.com/notes/3412110)\)
+-   CDS views \(in ABAP-based SAP systems\) that are enabled for extraction.
+
+-   Objects from ODP providers, such as extractors or SAP BW artifacts \(from any SAP system that is based on SAP NetWeaver and has a suitable version of the DMIS add-on, see SAP Note [3412110](https://me.sap.com/notes/3412110)\).
 
 -   Tables that have a primary key.
 
+    > ### Note:  
+    > CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md).
 
-CDS views and ODP artifacts that do not have a primary key can be used as the source for a replication flow if certain prerequisites are met. For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md).
-
-For more information about connection types that can be used for adding sources or targets to replication flows, see:
-
--   [Source Connection Types for Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rfs=yes&connection_overview-rfs=via%20SAP%20ABAP%20Connections)
--   [Target Connection Types for Replication Flows](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/94562426f30c475286f50a1e2b45e743.html?connection_overview-rft=yes)
 
 > ### Note:  
 > To make sure that you have the most up-to-date information and important considerations regarding replication flows, please read SAP Note [3297105](https://me.sap.com/notes/3297105) **before** you start creating a replication flow.
@@ -340,7 +338,7 @@ For more information about connection types that can be used for adding sources 
     
     Select how you want to load the data \(initial only, initial and delta, or delta only\).
 
-    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md) and[Source and Target Connections and Load Types for Replication Flows](source-and-target-connections-and-load-types-for-replication-flo-1089119.md).
+    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md) and[Select Source and Target Connections for Replication Flows](select-source-and-target-connections-for-replication-flows-1089119.md).
     
     </td>
     </tr>

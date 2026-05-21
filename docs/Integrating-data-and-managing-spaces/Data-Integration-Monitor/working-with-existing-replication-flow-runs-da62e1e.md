@@ -12,12 +12,7 @@ You can pause a replication flow run and resume it later, or stop it completely 
 
 ## Pausing and Resuming a Replication Flow Run
 
-You may want to pause a replication flow run, for example, while a system update is running.
-
-> ### Caution:  
-> You must always stop or pause a running replication flow before a source system downtime.
-
-When you do so, the flow is stopped in SAP Datasphere, but not in the source. Consequently, the system still keeps track of changes in the source, but does not copy them to the target.
+You may want to pause a replication flow run, for example, while a system update is running. When you do so, the flow is stopped in SAP Datasphere, but not in the source. Consequently, the system still keeps track of changes in the source, but does not copy them to the target.
 
 > ### Note:  
 > If you have many data changes in your source, and if you pause the replication flow for a longer time \(such as several hours\), the logging tables can become quite big.
@@ -81,7 +76,8 @@ To stop a replication flow run:
 5.  Click *Run* \> *Stop Run*.
 
 > ### Note:  
-> > You can’t stop a paused replication flow. To stop a paused flow, first resume it and then stop the run.
+> -   > You can’t stop a paused replication flow. To stop a paused flow, first resume it and then stop the run.
+> -   > You must always stop or pause a running replication flow before a source system downtime.
 
 
 

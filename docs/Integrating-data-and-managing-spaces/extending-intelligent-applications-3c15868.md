@@ -55,7 +55,7 @@ If your organization has extended the SAP source system with custom fields in th
 
 7.  Ensure that the data access controls applied to the fact views are still protecting data appropriately.
 
-    For more information, see [Applying Row-Level Security to Data Delivered through Intelligent Applications](applying-row-level-security-to-data-delivered-through-intelligent-applications-c83225f.md).
+    For more information, see [Applying Row-Level Security to Data Delivered through Intelligent Content](applying-row-level-security-to-data-delivered-through-intelligent-content-c83225f.md).
 
 8.  Communicate the new models and fields to the business analyst working in SAP Analytics Cloud. See [Modifying and Sharing Intelligent Applications](https://help.sap.com/docs/business-data-cloud/viewing-insight-apps/modifying-and-sharing-insight-apps) for the next steps.
 

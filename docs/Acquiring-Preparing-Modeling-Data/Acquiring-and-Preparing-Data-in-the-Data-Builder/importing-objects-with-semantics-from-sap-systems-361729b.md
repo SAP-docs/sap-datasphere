@@ -142,3 +142,6 @@ SAP HANA Cloud
 </tr>
 </table>
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+

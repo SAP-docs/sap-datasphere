@@ -192,6 +192,7 @@ When replicating data to a supported cloud object store target using the *Parque
 -   Amazon Simple Storage Service \(Initial Only\)
 -   Google Cloud Storage \(Initial Only\)
 -   Google BigQuery \(Initial Only\)
+-   Microsoft Azure Data Lake Gen 2 \(Initial Only, Initial and Delta, Delta Only\)
 
 > ### Note:  
 > File size and row group size cannot be configured. In addition, *Create Large Files* and *Suppress Duplicates* cannot be enabled at the same time.

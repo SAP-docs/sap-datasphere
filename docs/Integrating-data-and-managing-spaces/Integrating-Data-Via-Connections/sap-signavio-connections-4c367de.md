@@ -40,7 +40,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add target objects to a replication flow.
+You can use the connection to add target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 For more information, see [SAP Signavio Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b8f5e28d34b44d71a52f6265e4fc245f.html "If you use SAP Signavio as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
@@ -82,7 +82,7 @@ For more information, see [SAP Signavio Targets for Replication Flows](https://h
         > Immediately copy the secret. Once you close the OAuth creation dialog, the secret is no longer available, and you will need to create a new client.
 
     -   Service Root \(URL root of the *App Integration* page where you create the OAuth client\)
-    -   OAuth2SAML Token URL
+    -   Token URL
 
     For more information, see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
 

@@ -6,6 +6,8 @@ To connect to remote systems, applications, databases, or storages, SAP Datasphe
 
 The following connection types are available with SAP Datasphere, each connection type supporting different sets of features.
 
+For an overview of connections supporting replication flows, see also [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:.
+
 > ### Note:  
 > -   Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
 > 
@@ -211,7 +213,7 @@ Non SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -681,7 +683,7 @@ Non SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -822,7 +824,7 @@ Non SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -916,7 +918,7 @@ Non SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -1806,5 +1808,5 @@ SAP
 > ### Note:  
 > -   For connections supporting real-time replication with remote tables: For information about any constraints, see [Replicate Data Changes in Real-Time](../Data-Integration-Monitor/replicate-data-changes-in-real-time-441d327.md).
 > -   For [Adverity Connections](adverity-connections-63e9ff5.md) and [Precog Connections](precog-connections-6e5f225.md): Data is pushed into the SAP Datasphere space by using the database user \(Open SQL schema\) SQL Interface. Typically, the push action is triggered from the partner tool. When data is pushed by the source, you can import a table from the *Sources* tab of the *Source Browser* panel in the Data Builder which is then deployed as local table \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
-> -   Connections marked as "On-Premise" can be used to connect to sources located in the cloud, too. Note that in order to connect to a cloud-based SAP ABAP or Microsoft SQL Server, for example, you have to connect through the on-premise installed SAP HANA smart data integration Data Provisioning Agent.
+> -   Connections marked as "On-Premise" can be used to connect to sources located in the cloud, too. .
 

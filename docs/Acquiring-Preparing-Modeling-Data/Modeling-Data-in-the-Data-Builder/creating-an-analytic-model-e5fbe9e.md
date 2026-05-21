@@ -44,6 +44,9 @@ In addition to working with analytic models in the editor, you can also:
 -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
+> ### Note:  
+> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+
 
 
 ## Procedure
@@ -137,6 +140,7 @@ In addition to working with analytic models in the editor, you can also:
     -   create a structure. See [Create a Structure for an Analytic Model](create-a-structure-for-an-analytic-model-de1ed47.md).
     -   add data access controls. See [Apply a Data Access Control to an Analytic Model](apply-a-data-access-control-to-an-analytic-model-8d8e2f9.md).
     -   add a filter. See [Create a Global Filter in an Analytic Model](create-a-global-filter-in-an-analytic-model-e9924dc.md).
+    -   protect the export of the data preview results into an external file such as Excel, CSV or PDF. The data export button is then hidden in the data preview.
 
     > ### Note:  
     > Attributes of type ***LargeString*** are not consumable in SAP Analytics Cloud.

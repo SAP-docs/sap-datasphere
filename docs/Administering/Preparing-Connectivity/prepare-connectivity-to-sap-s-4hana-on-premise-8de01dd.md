@@ -88,7 +88,7 @@ Before you can use the connection for replication flows, the following is requir
 
     See also: SAP Note [2835207](https://me.sap.com/notes/2835207) \(*ABAP connection type for SAP Data Intelligence*\)
 
--   -   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using replication flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
+-   If you want to enable secure network communication \(SNC\) to an ABAP-based on-premise system, which you want to connect to for using replication flows, configure SNC in the Cloud Connector and consider the SNC-specific settings when adding the system mapping information:
 
     -   In the *Back-end Type* field, select *ABAP System*.
     -   In the *Protocol* field, select *RFC SNC*.

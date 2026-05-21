@@ -69,15 +69,15 @@ Before you can use the connection for replication flows, the following is requir
 
     See [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-or-sap-btp-abap-environ-ef2b223.md).
 
--   For both replicating CDS view entities using the ABAP SQL service exposure and replicating CDS views view entities using the ABAP Pipeline Engine:
+-   For both replicating CDS view entities using the ABAP SQL service exposure and replicating CDS views view using the ABAP Pipeline Engine:
 
     A communication arrangement has been created for communication scenario `SAP_COM_0532` in the SAP S/4HANA Cloud system.
 
     For more information, see:
 
     -   replicating CDS view entities using the ABAP SQL service exposure:
+        -   [Creating a Communication Arrangement for Replication Flows in SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-communication-arrangement-to-enable-replication-flows-in-sap-datasphere) in the *ABAP Cloud* documentation
         -   [Integrating SQL Services Using SAP Datasphere](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/a91d39c3ea494344897fca7bc9578b85.html) in the *SAP S/4HANA Cloud* documentation
-        -   [Creating a Communication Arrangement to Enable Replication Flows in SAP Datasphere](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-communication-arrangement-to-enable-replication-flows-in-sap-datasphere) in the *ABAP Cloud* documentation
 
     -   replicating CDS views using the ABAP Pipeline Engine:
         -   [Integrating CDS Views Using SAP Datasphere](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/latest/en-US/f509eddda867452db9631dae1ae442a3.html) in the *SAP S/4HANA Cloud* documentation
