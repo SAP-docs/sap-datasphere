@@ -4,10 +4,10 @@
 
 # Modify a Replication Flow
 
-Whether and how you can change the settings for a replication flow depends on several factors.
+You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.
 
 > ### Tip:  
-> This text explains the options for editing the replication flow itself \(in the *Data Builder*\). For monitoring-related information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:.
+> This topic explains how to modify replication flow settings in the Data Builder and monitoring views. For monitoring-related information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:.
 
 
 
@@ -15,42 +15,135 @@ Whether and how you can change the settings for a replication flow depends on se
 
 ## Adding Columns
 
-For target objects in the local repository \(SAP Datasphere\), you can no longer use the mapping function to add columns to your target structure after you save the replication flow. However you can still add columns manually using the table editor, then select the relevant target object in the *Data Builder* and choose *Additional Options* \> *Map to Existing Target Object*. Then deploy and run the replication flow again.
+For target objects in the local repository \(SAP Datasphere\), you can no longer use mappings to add columns to your target structure after the replication flow has been saved.
 
-For other target objects, you can use the mapping function to add columns to your target structure. Make sure to redeploy the replication flow when you're done and \(if the target table already exists\) manually implement the same changes in the target table structure before running the replication flow.
+Instead, you can:
+
+1.  Add the required columns manually in the table editor.
+2.  Select the target object in the Data Builder.
+3.  Choose *Additional Options* → *Map to Existing Target Object.* 
+4.  Redeploy and run the replication flow again.
+
+For other target types, you can still use mappings to add columns to the target structure.
+
+If the target table already exists, make sure that the same structural changes are manually applied in the target before running the replication flow again.
 
 
 
 <a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_syb_stw_mdc"/>
 
-## Changing an Active Replication Flow
+## Modifying an Active Replication Flow
 
-You can make the following changes to a replication flow with status *Active* without having to stop the replication flow first. This can be helpful, for example, if your replication flow contains a lot of objects so that stopping and restarting it would cause disproportionate effort.
+You can make certain changes to a replication flow with status*Active*without stopping it first.
 
--   Add or remove individual replication objects:
+This can be useful for replication flows containing many objects, where stopping and restarting the entire flow would require additional effort.
 
-    -   If you don't want an object to be replicated anymore, choose the *Remove* button to the right of the object, then deploy the flow once again. Any data for the removed objects that already exists in the target \(from previous runs\) remains as-is.
+You can:
 
-    -   To add one or more objects, choose <span class="FPA-icons-V3"></span> \(Add source objects\), select the relevant objects as usual, and then deploy the flow once again.
-
-        > ### Note:  
-        > When you add one or more objects, these objects start getting replicated directly after you save and deploy the replication flow.
-
-
--   Change the delta interval: In the *Data Builder*, go to the properties panel for the flow and change the values in the *Delta Load Interval* section as required, then deploy the flow once again. The change takes effect after the next delta with the previous interval value is completed. Example: You have an active replication flow with a delta interval of one hour. The next delta is due in 30 minutes. If you change the delta interval to 20 minutes, the next delta will still start in 30 minutes, and the following one 20 minutes after completion of the first one.
-
--   Change the source or target thread limit: Choose <span class="FPA-icons-V3"></span> \(Browse source settings\) or <span class="FPA-icons-V3"></span> \(Browse target settings\), respectively, change the value as required, save your change, and deploy the flow again.
+-   Add or remove replication objects
+-   Change the delta interval
+-   Change source or target thread limits
+-   Change delta load run behavior
 
 
-To change the load type, delete all before loading setting, projections, or filters for a replication flow, you need
+
+### Adding or Remove Replication Objects
+
+To remove an object:
+
+1.  Choose *Remove* next to the object.
+2.  Deploy the replication flow again.
+
+    Existing target data for the removed object remains unchanged.
+
+
+To add objects:
+
+1.  Choose <span class="FPA-icons-V3"></span> \(Add source objects\).
+2.  Select the required objects.
+3.  Deploy the replication flow again.
+
+    > ### Note:  
+    > When transporting replication flow changes using cTMS export and import, adding or removing replication objects supports live patching. To apply these changes without stopping the active replication flow, enable the *User Rights* checkbox during cTMS export.
+
+
+
+
+### Changing the Delta Interval
+
+1.  Open the replication flow.
+2.  Choose *Edit Run Settings.* 
+3.  Under *Delta Load Run*, select one of the following options:
+    -   *At Delta Interval*
+    -   *At Schedule Time*
+
+
+With *At Delta Interval*, the replication flow runs as a long-running flow. The runtime continuously retries delta processing based on the configured delta interval.
+
+*With At Schedule Time*, the replication flow processes the available delta records and then completes the run. SAP Datasphere becomes responsible for triggering the next delta execution.
+
+You can configure this setting in the replication flow properties panel or in the monitoring view by editing the *Run Settings*
+
+> ### Note:  
+> Changing the *Delta Load Run* setting does not require redeployment.
+
+
+
+### Changing Source Thread Limits
+
+1.  Choose <span class="FPA-icons-V3"></span> \(Browse source settings\) or <span class="FPA-icons-V3"></span> \(Browse target settings\) 
+2.  Update the thread limit.
+3.  Save the changes.
+4.  Deploy the replication flow again.
+
+
+
+### Changes That Require Stopping the Replication Flow
+
+To change the following settings, you must:
 
 1.  Stop the replication flow
-2.  make the required changes
-3.  deploy the replication flow
-4.  Run the replication flow
+2.  Make the required changes
+3.  Deploy the replication flow
+4.  Run the replication flow again
+
+This applies to:
+
+-   Load type
+-   Delete All Before Loading
+-   Projections
+-   Filters
 
 > ### Note:  
 > If you install the data product corresponding to an active replication flow via SAP Business Data Cloud, you don't need to stop the run: Reinstalling the data product will alter the existing table and apply the changes by redeploying the replication flow. An initial load will then happen, taking into consideration the new changes.
+
+
+
+## Renaming a Target Object
+
+You can rename an existing target object:
+
+1.  Open the replication flow in the replication flow editor.
+2.  Select the replication object you want to rename.
+3.  Click *...* \> *Rename Target Object*.
+4.  Update the technical name as desired.
+
+    > ### Note:  
+    > If you rename the object with a name that already exists for another object in the space, it will reuse the definition of this existing object.
+
+5.  \[Optional\] You can select *Copy Columns from Source Object* if you want to do so.
+
+    > ### Note:  
+    > By default, the new target object will inherit columns from the old target object. If you select this option, columns will be copied from the source instead.
+
+6.  Click *Rename*.
+7.  Save and Redeploy
+
+
+
+## Switching From or To The Delta Only Load Type
+
+You can switch the load type of an existing replication flow to or from Delta Only to another supported load type. Note that when you switch from one load type to another, you need to redeploy so that the changes can be applied. The replication flow will run with the new load type as if it were just created from scratch.
 
 
 
@@ -69,7 +162,7 @@ You can export a replication flow and import it into another space \(see [Import
 
 ## Changing the Content Type \(ABAP-Based Source Systems Only\)
 
-When you have created your replication flow, you have choosen a content type \(*Template Type* or *Native Type*\) to load your data and you now want to change it.
+When you have created your replication flow, you have chosen a content type \(*Template Type* or *Native Type*\) to load your data and you now want to change it.
 
 For more information, see [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)
 
@@ -192,36 +285,4 @@ String/Binary
 </td>
 </tr>
 </table>
-
-
-
-<a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_a3s_yx1_y2c"/>
-
-## Renaming a Target Object
-
-You can rename an existing target object:
-
-1.  Open the replication flow in the replication flow editor.
-2.  Select the replication object you want to rename.
-3.  Click *...* \> *Rename Target Object*.
-4.  Update the technical name as desired.
-
-    > ### Note:  
-    > If you rename the object with a name that already exists for another object in the space, it will reuse the definition of this existing object.
-
-5.  \[Optional\] You can select *Copy Columns from Source Object* if you want to do so.
-
-    > ### Note:  
-    > By default, the new target object will inherit columns from the old target object. If you select this option, columns will be copied from the source instead.
-
-6.  Click *Rename*.
-7.  Save and Redeploy
-
-
-
-<a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_n2t_5c4_qfc"/>
-
-## Switching From or To The Delta Only Load Type
-
-You can switch the load type of an existing replication flow to or from Delta Only to another supported load type. Note that when you switch from one load type to another, you need to redeploy so that the changes can be applied. The replication flow will run with the new load type as if it were just created from scratch.
 

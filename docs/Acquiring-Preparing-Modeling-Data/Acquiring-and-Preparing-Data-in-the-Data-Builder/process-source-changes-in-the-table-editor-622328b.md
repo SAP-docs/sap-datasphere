@@ -25,7 +25,7 @@ Identify available table structure updates in your data sources and resolve conf
 Keeping your data up-to-date can sometimes be a challenge for modelers. When an update is available in your data source, you can do a refresh of your table structure in the *Data Builder* or click <span class="FPA-icons-V3"></span> Validate Remote Tables form the *Data Builder* landing page. For more information, see [Process Source Changes for Several Remote Tables](process-source-changes-for-several-remote-tables-4e0be16.md).
 
 > ### Note:  
-> This refresh is a manual action from the *Table Editor*. When you click *Refresh*, you will receive a notification of any structural changes in the remote source and can then decide whether to proceed and import the changes or cancel.
+> This refresh is a manual action from the *Table Editor*. When you click *Refresh*, you will receive a notification of any structural changes in the remote source and can then decide whether to proceed and import the changes or cancel. Also note that *Refresh* only detects changes to previously imported columns, not columns that were never imported.
 
 > ### Caution:  
 > Refreshing table structures will affect dependent objects. But you’ll be notified about the changes and inconsistencies that can result because of these changes.
@@ -45,6 +45,7 @@ To import changes from the underlying sources,
     > -   Double check columns that contain spatial data type as remote tables don’t support this data type: The spatial reference system might be wrong. For more information on spatial reference system, see [Spatial Reference Systems \(SRS\) and Spatial Reference Identifiers \(SRID\)](https://help.sap.com/docs/SAP_HANA_PLATFORM/cbbbfc20871e4559abfd45a78ad58c02/7a2ea357787c101488ecd1b725836f07.html?version=2.0.02&locale=en-US)
     > 
     > -   Columns can be added or removed at any time from the column section. For more information, see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md).
+    > -   If Refresh detects no changes, but you know the source has a new column, use the :heavy_plus_sign: button in the Columns section to manually add the column.
 
 2.  Once import is completed, you can see the changes in the validation area <span class="FPA-icons-V3"></span> \(Validation Messages\).
 3.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to preview the data contained in your remote table.

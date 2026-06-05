@@ -191,7 +191,6 @@ When replicating data to a supported cloud object store target using the *Parque
 -   SAP HANA Cloud, Data Lake Files \(Initial and Delta\)
 -   Amazon Simple Storage Service \(Initial Only\)
 -   Google Cloud Storage \(Initial Only\)
--   Google BigQuery \(Initial Only\)
 -   Microsoft Azure Data Lake Gen 2 \(Initial Only, Initial and Delta, Delta Only\)
 
 > ### Note:  

@@ -12,11 +12,9 @@ Use the catalog *Data Product* collection to view data products for use in your 
 
 ## Prerequisites
 
-Your SAP Datasphere system must be part of an SAP Business Data Cloud formation, and the spaces where you want to install data products must already be authorized for data product installation \(see [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then the SAP Business Data Cloud administrator can install intelligent applications to SAP Datasphere and activate data packages to allow SAP Datasphere modelers to work with data products.") :arrow_upper_right: and [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
+Your SAP Datasphere system must be part of an SAP Business Data Cloud formation, and the spaces where you want to install data products must already be authorized for data product installation \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
 
-A user with an administrator role must choose the spaces to which the data product can be installed \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
-
-To search for and evaluate objects in the *Data Products* collection, you must have
+To search for and evaluate objects in the *Data Products* collection, you must have:
 
 -   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
@@ -28,37 +26,25 @@ To search for and evaluate objects in the *Data Products* collection, you must h
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
-
-You can install a data product to your modelling space, if: 
-
--   Its release status and lifecycle status are both *Active*.
--   Its functional status and the functional status for all its APIs are *Current*.
--   Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
-
-<a name="concept_bx2_pkv_zcc"/>
-
-<!-- concept\_bx2\_pkv\_zcc -->
-
-## Evaluating a Data Product
-
-Data products are high-quality, coherent data sets accessible through APIs. You can use them in various SAP or third-party products across different data regions to make better business decisions. A single data product may include business objects, entities, analytic data, and more. On the catalog search page, choose the *Data Products* collection, and then choose one or more filters to narrow the search results. These data products are from tenants that are part of SAP Business Data Cloud formation.
-
-To determine if a data product meets your needs, you can view its details to evaluate its usefulness. You can review several pieces of information: the data product's properties, such as its name and the data provider, the list of objects within the data product, and links to resources on how to use it. For more information, see [Data Product Details](data-product-details-71f4d15.md).
-
-After you've evaluated and found a data product, you can install it in your space \(see steps below\).
-
-> ### Note:  
-> Data products tagged for data protection and privacy \(for example, *Personal Data*\) require strict access controls.Ensure the installation space enforces strict user access. For more information on data protection and privacy tags, see [Using Hierarchical Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e5d46e7bcb1e4fb5bbcef852fd35ba87.html "Tagging assets helps you understand your data and its relationships to other assets. The Tag Hierarchies page is where users with the appropriate privileges can view and manage tags.") :arrow_upper_right:.
-
-> ### Tip:  
-> If you're an administrator for SAP Business Data Cloud, you can access the catalog from the SAP Business Data Cloud cockpit. This allows you to share data product to an SAP or supported external system \(see [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products) in the SAP Business Data Cloud documentation\).
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="dataproduct_installdspspace"/>
 
 <!-- dataproduct\_installdspspace -->
 
 ## Installing a Data Product
+
+
+
+## Context
+
+You can install a data product to an SAP Datasphere space.
+
+> ### Tip:  
+> To share the data product with a supported external partner, use the SAP Business Data Cloud cockpit \(see [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products)\).
+
+> ### Note:  
+> Data products tagged for data protection and privacy \(for example, *Personal Data*\) require strict access controls. Ensure the installation space enforces strict user access. For more information on data protection and privacy tags, see [Using Hierarchical Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e5d46e7bcb1e4fb5bbcef852fd35ba87.html "Tagging assets helps you understand your data and its relationships to other assets. The Tag Hierarchies page is where users with the appropriate privileges can view and manage tags.") :arrow_upper_right:.
 
 
 
@@ -70,9 +56,13 @@ After you've evaluated and found a data product, you can install it in your spac
 
 2.  On the catalog search, find the data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
-3.  When you find the data product you want, select it.
+3.  When you find the data product you want, select it to view its details page. You can review the list of APIs by choosing the tab *Overview* \> *Details*.
 
-    On its details page, you can review the list of APIs by choosing the tab *Overview* \> *Details*.
+    You can install a data product to your modelling space, if: 
+
+    -   Its release status and lifecycle status are both *Active*.
+    -   Its functional status and the functional status for all its APIs are *Current*.
+    -   Data products with outdated APIs cannot be installed. If the functional status of one or more of its APIs is *Outdated*, try waiting a few moments and then refresh the details page. If the APIs are still outdated, ask your administrator for help.
 
 4.  For the API you want, choose the *Install* action and the *Import Entities* wizard will open.
 
@@ -178,7 +168,7 @@ The data product is updated to the current version for all spaces that use it. T
 
 ## Updating an SAP Data Product to Install Source System Custom Fields
 
-When you install an intelligent application via SAP Business Data Cloud, any required data products are installed in an ingestion space, but these data products don't include any custom fields defined in the source system \(see [Reviewing Installed Intelligent Applications](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/644648756d334daaaf35d4fc9a0feeda.html)\).
+When you install intelligent applications via SAP Business Data Cloud, any required data products are installed in an ingestion space, but these data products don't include any custom fields defined in the source system \(see [Reviewing Installed Intelligent Applications](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/644648756d334daaaf35d4fc9a0feeda.html)\).
 
 However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Applications](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:.
 

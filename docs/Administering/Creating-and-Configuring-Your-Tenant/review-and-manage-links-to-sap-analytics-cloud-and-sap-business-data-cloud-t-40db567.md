@@ -18,7 +18,7 @@ To view the *Administration* page containing the *Tenant Links* tab, you must ha
 -   *System Information* \(`-RU-----`\) - To access the *System* tool.
 -   *User* \(`-R------`\) - To access the *Administration* area in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 > ### Note:  
 > To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *System Owner* role.

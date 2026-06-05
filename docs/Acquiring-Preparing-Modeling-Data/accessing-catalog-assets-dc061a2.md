@@ -20,22 +20,10 @@ To search for and evaluate objects in the *Assets* collection, you must have a g
 -   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 
-The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 > ### Tip:  
 > If you have the *Catalog Administrator* role, you can enrich the information for an asset. See [Governing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/1218c12e72c34cfd96293e566badb60c.html "Users with a catalog administrator role can set up governance for assets using hierarchical tags and business glossaries, create KPIs to measure progress towards company goals, and publish assets, glossary terms, and KPIs to the catalog.") :arrow_upper_right:.
-
-<a name="concept_pm1_qqv_zcc"/>
-
-<!-- concept\_pm1\_qqv\_zcc -->
-
-## Evaluating an Asset
-
-An asset is any data or analytic object that is available in the catalog. For example, a local table or view sourced from SAP Datasphere or a story from SAP Analytics Cloud. From the catalog search page, select the *Assets* collection to show only assets, and then select one or more filters to narrow the search results.
-
-To know for sure if an asset will meet your needs, you can view its details and evaluate how it can help you. Some of the information that you will be reviewing includes metadata extracted from the source system, like the name and description. Other information are data enrichments, like links to glossary terms, KPIs, and tags, that were added to the asset in the catalog \(see [Catalog Asset Details](catalog-asset-details-afccc58.md)\).
-
-After you've evaluated and found an asset, use the following steps to view or edit the asset in its source system or use the asset in a data project.
 
 <a name="task_x4m_cny_3wb"/>
 
@@ -49,7 +37,10 @@ After you've evaluated and found an asset, use the following steps to view or ed
 
 ## Context
 
-After you find the asset you want, you might be able to open the asset in the source system to view or edit it. If the asset has been shared with you in the source system, the *Open* button appears in the top-right corner. If the source file for the asset has not been shared with you, contact the person who created the asset or the person who most recently changed it. You can find this information in the asset details page.
+If you have access permissions for an asset in its source system, you can open it in the source system to view or edit it. If the source file of the asset has been shared with you, the *Open* button appears in the top-right corner.
+
+> ### Tip:  
+> If the source file hasn't been shared with you, you can contact the person who created the source object or the person who most recently changed it. You can find this information in the asset details page.
 
 For information about sharing files with other users within an SAP source system, see the help documentation:
 
@@ -69,14 +60,14 @@ For information about sharing files with other users within an SAP source system
 
 2.  On the catalog search page, use the filters or the search to find the asset you want. For more information, see [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md).
 
-3.  When viewing the page for the asset, click the *Open* button to open the source file in the source system in a new browser tab. If you don't see the *Open* button, it might be available by clicking <span class="FPA-icons-V3"></span> \(Additional Options\).
+3.  When viewing the page for the asset, choose the *Open* button to open the source file in the source system in a new browser tab. If you don't see the *Open* button, it might be available by choosing <span class="FPA-icons-V3"></span> \(Additional Options\).
 
     > ### Note:  
     > For certain source systems, the *Open* button appears if the asset has been shared with you and you have permission to view or edit it. For example, if the asset is from SAP Datasphere or SAP Analytics Cloud, the *Open* button appears only if the asset has been shared with you in the source system and you have permission to view or edit it.
     > 
     > However, for some source systems, the *Open* button is not available regardless of whether the asset has been shared with you in the source system. For example, if the asset is from an SAP BW system, the *Open* button does not appear. To view or edit the asset, you must open it directly in the source system.
 
-    ![](images/Asset_Details_-_Open_Button_24913a7.png)
+    ![Asset details page with the Open' button highlighted.](images/Asset_Details_-_Open_Button_24913a7.png)
 
 4.  Depending on how the source file is shared with you, you can view the asset in full and explore it, or you can edit it as needed.
 
@@ -104,7 +95,7 @@ Changes saved to objects in the source systems are updated in the catalog as fol
 
 ## Context
 
-After you determine the asset is the right one for your needs, you can use it as part of a data project to build something new. For example:
+You can use assets that you find in the catalog in your data projects to build something new. For example:
 
 -   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md) or [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
@@ -116,7 +107,7 @@ After you determine the asset is the right one for your needs, you can use it as
 > ### Tip:  
 > Before you search for an asset in the catalog, determine which application you want to use the asset in and open it in a new browser tab. By keeping the catalog opened in a separate tab, you can find the asset you want and have its property information readily available as you switch between tabs.
 > 
-> Depending on the SAP application you are using, you can open it from the <span class="SAP-icons-V5"></span> \(*Product Switch*\) or from the side navigation. For example, to use SAP Datasphere, in the side navigation area, right-click the application you want to use and click *Open App in New Tab*. Or to use SAP Analytics Cloud, in the side navigation area, right-click any application and click *Open App in New Tab*. In the shell bar click <span class="SAP-icons-V5"></span> \(*Product Switch*\) and click *Analytics*.
+> Depending on the SAP application you are using, you can open it from the <span class="SAP-icons-V5"></span> \(*Product Switch*\) or from the side navigation. For example, to use SAP Datasphere, in the side navigation area, right-click the application you want to use and choose *Open App in New Tab*. Or to use SAP Analytics Cloud, in the side navigation area, right-click any application and choose *Open App in New Tab*. In the shell bar, choose <span class="SAP-icons-V5"></span> \(*Product Switch*\) and choose *Analytics*.
 
 
 

@@ -35,7 +35,7 @@ In this case, the three spaces are created in SAP Datasphere for each instance o
 
 In the following example, we have two instances of one intelligent application, installed for two source systems, resulting in separate spaces, where each application space identifies the source tenant providing the data by system alias.
 
-![](images/Install_intelligent_application_instances_in_one_system_pre_2026_12_0833390.jpg)
+![](images/08333906bd3d4963b14b8b162761e697.image)
 
 
 
@@ -45,7 +45,7 @@ In addition, you can install different intelligent applications for the same sou
 
 In the following example, we have two intelligent applications installed on top of the same source system, resulting in reusing of the ingestion and preparation spaces, and in creation of separate application spaces.
 
-![](images/Install_multiple_intelligent_applications_pre_2026_12_1c26b08.jpg)
+![](images/1c26b082b58c4bfab1f5f7beb8dc9b48.image)
 
 
 

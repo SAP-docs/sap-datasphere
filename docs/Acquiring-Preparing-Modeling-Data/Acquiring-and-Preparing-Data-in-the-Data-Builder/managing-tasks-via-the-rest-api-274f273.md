@@ -4,7 +4,16 @@
 
 You can run task chains and review task logs via the REST API.
 
+This topic contains the following sections:
 
+-   [Prerequisites](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__prerequisites)
+-   [Introduction to the Tasks API](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__intro)
+-   [Task Chains](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__run)
+-   [Logs](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__logs)
+
+
+
+<a name="loio274f2736465c4c48a091c675880502a2__prerequisites"/>
 
 ## Prerequisites
 
@@ -121,6 +130,8 @@ For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP D
 
 
 
+<a name="loio274f2736465c4c48a091c675880502a2__intro"/>
+
 ## Introduction to the Tasks API
 
 The Tasks REST API allow you to run task and monitor task in SAP Datasphere. You can:
@@ -134,6 +145,8 @@ The Tasks REST API allow you to run task and monitor task in SAP Datasphere. You
 The detailed documentation of the Tasks REST API is available on the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 
 
+
+<a name="loio274f2736465c4c48a091c675880502a2__run"/>
 
 ## Task Chains
 
@@ -192,6 +205,8 @@ Example:
 > ```
 
 
+
+<a name="loio274f2736465c4c48a091c675880502a2__logs"/>
 
 ## Logs
 

@@ -21,19 +21,19 @@ This topic contains the following sections:
 
 ## Introduction to Scoped Roles
 
-A user with the DW Administrator role can create scoped roles.
+A user with an administrator role can create scoped roles.
 
 ![](images/SDP_ObjectModel_AfterConversion_db7e4b0.png)
 
-A DW Administrator can assign a role to multiple users in multiple spaces, in a single scoped role. As a consequence, a user can have different roles in different spaces: be a modeler in space Sales Germany and Sales France and a viewer in space Europe Sales.
+A user with an administrator role can assign a role to multiple users in multiple spaces, in a single scoped role. As a consequence, a user can have different roles in different spaces: be a modeler in space Sales Germany and Sales France and a viewer in space Europe Sales.
 
 You can create a scoped role based on a standard role or on a custom role. In both cases, the scoped role inherits the privileges from the standard or custom role. You cannot edit the privileges of a scoped role or of a standard role. You can edit the privileges of a custom role. To create a scoped role with a different set of privileges, create a custom role with the set of privileges wanted and then create the scoped role from the custom role. You can then change the privileges of the custom role as needed, which will also change the privileges of all the scoped roles that are based on the custom role.
 
-Users who are granted the DW Space Administrator role via a scoped role can add or remove users to or from their spaces and the changes are reflected in the scoped roles. See [Assign Members to Your SpaceControl User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.You can assign users to your space and manage them.") :arrow_upper_right:.
+Users who are granted a space administrator role via a scoped role can add or remove users to or from their spaces and the changes are reflected in the scoped roles. See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 We recommend that you create scoped roles by logical groups of spaces.
 
-In the following example, the DW administrator begins assigning users to the three Sales spaces by creating the appropriate scoped roles:
+In the following example, the administrator begins assigning users to the three Sales spaces by creating the appropriate scoped roles:
 
 ![](images/ScopedRolesExamples_35aa190.png)
 
@@ -149,7 +149,7 @@ Sales Asia
 </tr>
 </table>
 
-If Bob no longer needs to work in the space Sales US, the DW administrator can unassign Bob from Sales US in the scoped role Sales Modeler.
+If Bob no longer needs to work in the space Sales US, the administrator can unassign Bob from Sales US in the scoped role Sales Modeler.
 
 As Joan has the role of space administrator for the space Sales US, she can also unassign Bob from Sales US directly in the space page \(in the *Space Management*\). The user assignment change is automatically reflected in the Sales Modeler scoped role.
 
@@ -296,7 +296,7 @@ To add users to a scoped role, the users must be created beforehand.
         Click *Next Step* and *Save*.
 
         > ### Note:  
-        > You can also add a user to a scoped role from the <span class="FPA-icons-V3"></span> \(*Users*\) area. In such a case, the user is automatically assigned to all the spaces included in the scoped role. See [Assign Roles to UsersAssign Users to a Role](assign-roles-to-usersassign-users-to-a-role-57a7880.md).
+        > You can also add a user to a scoped role from the <span class="FPA-icons-V3"></span> \(*Users*\) area. In such a case, the user is automatically assigned to all the spaces included in the scoped role. See [Assign Users to a Role](assign-users-to-a-role-57a7880.md).
 
     -   To assign all users included in the scoped role to one or more spaces. To do so, click <span class="FPA-icons-V3"></span> \(Add Users to Scopes\), then *Add All Current Users to Scopes*. Select one or more spaces in the wizard *Add Users to Scopes* and click *Next Step* and *Save*.
 
@@ -307,7 +307,7 @@ To add users to a scoped role, the users must be created beforehand.
 > ### Restriction:  
 > A user can be assigned to a maximum of 100 spaces across all scoped roles. Removal of this restriction is possible through a controlled release. For more information, see the [Customer Influence](https://influence.sap.com/sap/ino/#/campaign/4078/) page.
 
-Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Assign Members to Your SpaceControl User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.You can assign users to your space and manage them.") :arrow_upper_right:.
+Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
 

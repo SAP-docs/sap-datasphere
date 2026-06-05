@@ -406,7 +406,7 @@ SAP HANA Cloud, Data Lake Files
 </td>
 <td valign="top">
 
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right: | Use as:  <?sap-ot O2O class="- topic/xref " href="84405b0d00d543dc846fe19262c60682.xml" text="Source" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/ypt1776854185315/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right: | Use as:  <?sap-ot O2O class="- topic/xref " href="84405b0d00d543dc846fe19262c60682.xml" text="Source" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/jju1777964723958/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 </tr>

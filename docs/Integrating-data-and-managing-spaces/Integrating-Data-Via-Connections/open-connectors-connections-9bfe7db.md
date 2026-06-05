@@ -102,19 +102,22 @@ You can use the connection to add source objects to a data flow \(see [Creating 
 
     For information about SAP Open Connectors availability in data centers, see SAP Note [2903776](https://me.sap.com/notes/2903776).
 
-2.  In your SAP Open Connectors account, create connector instances for the sources that you want to connect to SAP Datasphere.
+2.  In your SAP Open Connectors account, perform the following steps:
+    1.  Create connector instances for the sources that you want to connect to SAP Datasphere.
 
-    For more information about creating an instance, see [Authenticate a Connector Instance \(UI\)](https://help.openconnectors.ext.hana.ondemand.com/home/authenticate-an-element-instance-ui) in the *SAP Open Connectors* documentation.
+        For more information about creating an instance, see [Authenticate a Connector Instance \(UI\)](https://help.openconnectors.ext.hana.ondemand.com/home/authenticate-an-element-instance-ui) in the *SAP Open Connectors* documentation.
 
-    For more information about connector-specific setup and connector-specific properties required to create an instance, see [Connectors Catalog](https://help.openconnectors.ext.hana.ondemand.com/home/catalog) in the *SAP Open Connectors* documentation. There, click the connector in question and then *<connector name\> API Provider Setup* or *<connector name\> Authenticate a Connector Instance*.
+        For more information about connector-specific setup and connector-specific properties required to create an instance, see [Connectors Catalog](https://help.openconnectors.ext.hana.ondemand.com/home/catalog) in the *SAP Open Connectors* documentation. There, click the connector in question and then *<connector name\> API Provider Setup* or *<connector name\> Authenticate a Connector Instance*.
 
-3.  In your SAP Open Connectors account, record the following information which you will require later in SAP Datasphere:
+    2.  Record the following information which you will require later in SAP Datasphere:
 
-    -   Organization secret and user secret - required when integrating the SAP Open Connectors account in your space.
+        -   Organization secret and user secret - required when integrating the SAP Open Connectors account in your space.
 
-    -   Name of the connector instance - required when selecting the instance in the connection creation wizard
+        -   Name of the connector instance - required when selecting the instance in the connection creation wizard
 
 
+
+3.  In SAP Datasphere, perform the following steps:
 
 
 

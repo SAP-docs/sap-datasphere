@@ -43,5 +43,5 @@ For more information, see:
 
 -   [Privileges by App, Tool, Object, and Task](privileges-by-app-tool-object-and-task-2d8b7d0.md)
 -   [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md)
--   [Assign Roles to UsersAssign Users to a Role](assign-roles-to-usersassign-users-to-a-role-57a7880.md)
+-   [Assign Users to a Role](assign-users-to-a-role-57a7880.md)
 

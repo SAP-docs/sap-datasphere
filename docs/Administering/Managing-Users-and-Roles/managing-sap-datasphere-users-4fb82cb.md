@@ -18,7 +18,7 @@ To manage users, you must have a global role that grants you the following privi
 -   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\)area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
 -   *User* \(`-------M`\) - To assign users to roles.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 

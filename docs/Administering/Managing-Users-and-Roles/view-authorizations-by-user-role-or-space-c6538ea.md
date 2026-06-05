@@ -6,7 +6,7 @@
 
 See all the users, roles, and spaces in the tenant and how they relate to each other.
 
-In <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="SAP-icons-V5"></span> \(*Authorization Overview*\), a user with the DW Administrator global role can see all the users, roles, and spaces in the tenant and how they relate to each other. You can filter by user, role, or space to see:
+In <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="SAP-icons-V5"></span> \(*Authorization Overview*\), a user with an administrator role can see all the users, roles, and spaces in the tenant and how they relate to each other. You can filter by user, role, or space to see:
 
 -   which users are assigned with which roles to which spaces,
 -   which users are assigned to which global roles.

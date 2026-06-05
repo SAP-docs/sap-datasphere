@@ -144,10 +144,69 @@ Displays the date when the data product was added to the catalog and when it was
 
 In the header, you'll also be able to see a toolbar with actions available for catalog users.
 
--   *View Version History*: Opens a dialog that shows the change history for the data product.
--   *Open Impact and Lineage*: Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
--   <span class="FPA-icons-V3"></span> \(Update Data Product \(API\)\): Updates the data product with the latest minor version in all spaces where it's installed. This action is available only when the version of the installed data product does not match the version available in the catalog and if you have the appropriate permissions.
--   <span class="FPA-icons-V3"></span> \(Add to Favorites\): Adds frequently used data products to your favorites. 
+
+<table>
+<tr>
+<th valign="top">
+
+Toolbar Actions
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*View Version History*
+
+</td>
+<td valign="top">
+
+Opens a dialog that shows the change history for the data product.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Open Impact and Lineage* 
+
+</td>
+<td valign="top">
+
+Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="FPA-icons-V3"></span> \(Update Data Product \(API\)\)
+
+</td>
+<td valign="top">
+
+Updates the data product with the latest minor version in all spaces where it's installed. This action is available only when the version of the installed data product does not match the version available in the catalog and if you have the appropriate permissions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="FPA-icons-V3"></span> \(Add to Favorites\)
+
+</td>
+<td valign="top">
+
+Adds frequently used data products to your favorites.
+
+</td>
+</tr>
+</table>
 
 
 

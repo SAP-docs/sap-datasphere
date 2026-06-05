@@ -90,9 +90,9 @@ Before you can use the connection for remote tables, the following is required:
 
 -   [Required Permissions for Oracle Trigger-Based Replication](https://help.sap.com/viewer/7952ef28a6914997abc01745fef1b607/latest/en-US/bd79ed316a1447ffb1fbd3757aff9c71.html) in the *SAP HANA Smart Data Integration and SAP HANA Smart Data Quality Installation and Configuration Guide*
 
--   If encrypted communication is used \(connection is configured to use SSL\), the server certificate must be uploaded to the Data Provisioning Agent.
+-   If encrypted communication is used \(connection is configured to use TLS\), the server certificate must be uploaded to the Data Provisioning Agent.
 
-    To retrieve the certificate, you can use for example the following command: `openssl s_client -showcerts -servername <host name of the Oracle database server>:<port number of the Oracle database server> -connect <host name of the Oracle database server>:<port number of the Oracle database server>`
+    To retrieve the certificate, you can use for example the following command: `openTLS s_client -showcerts -servername <host name of the Oracle database server>:<port number of the Oracle database server> -connect <host name of the Oracle database server>:<port number of the Oracle database server>`
 
     For more information about uploading the certificate to the Data Provisioning Agent, see:
 
@@ -115,7 +115,7 @@ Before you can use the connection for data flows, the following is required:
 
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 
-    To use encrypted communication \(connection is configured to use SSL\), additional files are required to be uploaded.
+    To use encrypted communication \(connection is configured to use TLS\), additional files are required to be uploaded.
 
     For more information, see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:.
 
@@ -173,7 +173,7 @@ Enter the host name or IP address on which the remote Oracle database is running
 Enter the Oracle database server port number. 
 
 > ### Note:  
-> The port number can vary depending on whether SSL is used or not.
+> The port number can vary depending on whether TLS is used or not.
 
 
 
@@ -346,7 +346,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the Oracle user name \(case-sensitive\). 
+Enter the Oracle database user name \(case-sensitive\). 
 
 </td>
 </tr>
@@ -358,7 +358,7 @@ Enter the Oracle user name \(case-sensitive\).
 </td>
 <td valign="top">
 
-Enter the Oracle user password. 
+Enter the Oracle database user password. 
 
 </td>
 </tr>
@@ -385,15 +385,15 @@ Description
 <tr>
 <td valign="top">
 
-*Use SSL*  
+*Use TLS*  
 
 </td>
 <td valign="top">
 
-Select whether you’re using SSL. The default value is *true*. 
+Select whether you’re using TLS. The default value is *true*. 
 
 > ### Note:  
-> If you select SSL and you want to use the connection for data flows, in addition to the ODBC driver file, additional files must have been uploaded to SAP Datasphere \(see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:\).
+> If you select TLS and you want to use the connection for data flows, in addition to the ODBC driver file, additional files must have been uploaded to SAP Datasphere \(see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:\).
 
 
 
@@ -402,7 +402,7 @@ Select whether you’re using SSL. The default value is *true*.
 <tr>
 <td valign="top">
 
-\[if *Use SSL* = *true*\] *Distinguished Name \(DN\) in Certificate*  
+\[if *Use TLS* = *true*\] *Distinguished Name \(DN\) in Certificate*  
 
 </td>
 <td valign="top">

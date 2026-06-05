@@ -25,25 +25,7 @@ To search for and evaluate objects in the *Data Products \(Marketplace\)* collec
     -   *Data Warehouse Connection* \(`CRU––--`\) - To check the license of installed data products.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
-
-<a name="concept_atb_t5v_zcc"/>
-
-<!-- concept\_atb\_t5v\_zcc -->
-
-## Evaluating a Marketplace Data Product
-
-A data product is a self-contained set of data exposed for consumption outside the producing application or service via APIs.From the catalog search page, you can select the *Data Products \(Marketplace\)* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog. Also, these data products are created in and only available in SAP Datasphere.
-
-To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes, summary information about the data product, like its name and the data provider. Other information provides a bit more details, like sample data, objects within the data product and terms of use and other documentation \(see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md)\).
-
-After you've evaluated and found a data product, use the following steps to download a sample dataset for testing or to install the data product in an SAP Datasphere space.
-
-The following diagram shows a simple workflow for getting data products into an SAP Datasphere space.
-
-
-
-![](images/Image_map_Enrich_Data_4_2ceb007.png)
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="marketplacedp_downloadsample"/>
 
@@ -57,7 +39,7 @@ The following diagram shows a simple workflow for getting data products into an 
 
 ## Context
 
-If you want to further evaluate a data product, you can download a sample dataset \(if available\) and test it to see if it’s really what you need.
+When you're evaluating a data product, you can download a sample dataset \(if available\) to further evaluate and test the data product to see if it’s really what you need.
 
 
 
@@ -83,6 +65,10 @@ If you want to further evaluate a data product, you can download a sample datase
 ## Results
 
 Open the file explorer on your computer to find the sample dataset and then use it where you need it. If it passes all your tests, you can go back to the data product and install it in your SAP Datasphere space.
+
+The following diagram shows a simple workflow for getting data products into an SAP Datasphere space.
+
+![](images/Image_map_Enrich_Data_4_2ceb007.png)
 
 <a name="marketplacedp_install"/>
 

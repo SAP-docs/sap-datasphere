@@ -7,15 +7,15 @@ Use an *SAP BW/4HANA Model Transfer* connection to import analytic queries from 
 > ### Note:  
 > The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
+This topic contains the following sections:
+
+-   [Supported Features](sap-bw-4hana-model-transfer-connections-1caba95.md#loio1caba954bc604e00bf8e82e383a46368__BW4_mt_usage)
+-   [Prerequisites](sap-bw-4hana-model-transfer-connections-1caba95.md#loio1caba954bc604e00bf8e82e383a46368__BW4_mt_prerequisites)
+-   [Configuring Connection Properties](sap-bw-4hana-model-transfer-connections-1caba95.md#loio1caba954bc604e00bf8e82e383a46368__BW4_mt_connection_properties)
 
 
-<a name="loio1caba954bc604e00bf8e82e383a46368__section_j1b_byq_spb"/>
 
-## Prerequisites
-
-See: [Preparing SAP BW∕4HANA Model Transfer Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/962de2f99d234967b8b10541599f00c6.html "Accessing SAP BW∕4HANA meta data and importing models into SAP Datasphere with a SAP BW∕4HANA Model Transfer connection requires two protocols (or endpoints): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.") :arrow_upper_right:
-
-
+<a name="loio1caba954bc604e00bf8e82e383a46368__BW4_mt_usage"/>
 
 ## Supported Features
 
@@ -56,7 +56,15 @@ For more information, see:
 
 
 
-<a name="loio1caba954bc604e00bf8e82e383a46368__section_nrb_hcc_x4b"/>
+<a name="loio1caba954bc604e00bf8e82e383a46368__BW4_mt_prerequisites"/>
+
+## Prerequisites
+
+See: [Preparing SAP BW∕4HANA Model Transfer Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/962de2f99d234967b8b10541599f00c6.html "Accessing SAP BW∕4HANA meta data and importing models into SAP Datasphere with a SAP BW∕4HANA Model Transfer connection requires two protocols (or endpoints): Http and SAP HANA Smart Data Integration based on the SAP HANA adapter.") :arrow_upper_right:
+
+
+
+<a name="loio1caba954bc604e00bf8e82e383a46368__BW4_mt_connection_properties"/>
 
 ## Configuring Connection Properties
 

@@ -33,7 +33,7 @@ Define settings and properties for your replication flow and individual replicat
         While choosing this load type, you may consider:
 
         -   Not all targets and sources support this load type. If it is not supported, it will not be available in the load type selection.
-        -   The *Delta Only* load type should not be used for data migration purposes, but it can be useful for transactional data where the history of data is not relevant, and therefore only the newly provided data being generated should be used in the target system of the replication flow. Indeed, since the initial load is skipped, data consistency cannot be guaranteed between the source and target. As a result, there may be time gaps between the completion of the initial load and the initiation of delta capture in the delta-only task, potentially leading to missing transaction records in the delta capture log and resulting in data inconsistencies.
+        -   The *Delta Only* load type can be useful for transactional data where the history of data is not relevant, and therefore only the newly provided data being generated should be used in the target system of the replication flow. Indeed, since the initial load is skipped, data consistency cannot be guaranteed between the source and target. As a result, there may be time gaps between the completion of the initial load and the initiation of delta capture in the delta-only task, potentially leading to missing transaction records in the delta capture log and resulting in data inconsistencies.
 
             > ### Example:  
             > -   If data has not changed in the source when you start a replication with the *Delta Only* load type, then no data will be seen in the target. Hence, the target table does not capture a complete snapshot of the source table.
@@ -96,7 +96,7 @@ Define settings and properties for your replication flow and individual replicat
 
     To change the settings, click *Edit:*
 
-    -   Delta Load Run: You can define how delta-enabled objects run in a replication flow
+    -   Delta Load Run: You can define how delta-enabled objects run in a replication flow:
         -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
         -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.
 

@@ -822,6 +822,48 @@ Supported
 <tr>
 <td valign="top">
 
+Japan \(Toyko\)
+
+</td>
+<td valign="top">
+
+5595 GB
+
+</td>
+<td valign="top">
+
+27840 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 US West
 
 </td>

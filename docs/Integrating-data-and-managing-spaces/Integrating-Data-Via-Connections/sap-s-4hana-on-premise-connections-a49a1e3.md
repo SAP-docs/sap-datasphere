@@ -52,6 +52,11 @@ For information about minimum system versions and other prerequisites, see [SAP 
 
 You can replicate the following data:
 
+-   standard and custom CDS view entities that are exposed using the ABAP SQL service from SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
+
+    > ### Note:  
+    > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
+
 -   extraction-enabled ABAP CDS views that are C1-released, that is views with annotation `@Analytics.dataextraction.enabled: true` and that are available in the connected system \(access via ABAP Pipeline Engine\)
 
     For more information, see:

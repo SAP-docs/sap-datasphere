@@ -11,7 +11,7 @@
         -   [Importing Objects from a CSN/JSON File](Creating-Finding-Sharing-Objects/importing-objects-from-a-csn-json-file-23599e6.md)
         -   [Exporting Objects to a CSN/JSON File](Creating-Finding-Sharing-Objects/exporting-objects-to-a-csn-json-file-3916101.md)
     -   [Importing and Exporting Objects via the Command Line](Creating-Finding-Sharing-Objects/importing-and-exporting-objects-via-the-command-line-6494657.md)
--   [Discovering Data and Assets in the Catalog](discovering-data-and-assets-in-the-catalog-6df42e3.md)
+-   [Discovering Data Products and Assets in the Catalog](discovering-data-products-and-assets-in-the-catalog-6df42e3.md)
     -   [Searching for Data Products and Assets in the Catalog](searching-for-data-products-and-assets-in-the-catalog-1047825.md)
         -   [Natural Language Search](natural-language-search-ea382a4.md)
         -   [Filter Category Details](filter-category-details-3b5725b.md)

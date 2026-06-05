@@ -28,7 +28,7 @@ To run and schedule flows, you must, in addition, have the following privileges:
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -249,7 +249,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    You can define how delta-enabled objects run in a replication flow
+    You can define how delta-enabled objects run in a replication flow:
 
     -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
     -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)

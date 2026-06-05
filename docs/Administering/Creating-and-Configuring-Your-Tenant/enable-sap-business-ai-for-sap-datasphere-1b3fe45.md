@@ -15,7 +15,7 @@ SAP Business AI is a fully managed service by SAP that allows you to integrate a
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-    The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+    The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 -   SAP Datasphere tenant on a landscape supporting SAP Business AI. See SAP Note [0003437766](https://me.sap.com/notes/0003437766).
 -   AI Units license purchased. For more information about AI units license, contact your Account Executive.
@@ -95,7 +95,7 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     
 4.  Click *Save*.
 
-5.  Grant the *Data Warehouse AI Consumer* global privilege to users whom you want to access SAP Business AI features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-roles-to-usersassign-users-to-a-role-57a7880.md)\).
+5.  Grant the *Data Warehouse AI Consumer* global privilege to users whom you want to access SAP Business AI features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
 
 
 <a name="task_dzr_4cb_ldc"/>
@@ -115,7 +115,7 @@ Joule is a generative AI experience that enables intuitive, conversational acces
 You must complete the following Joule configuration procedures before activating Joule in SAP Datasphere.
 
 -   [Joule Onboarding Guide](https://help.sap.com/docs/JOULE/6189c8655c484916bb8eb767126a653a/48e8f655470048c29555272578fbc2ce.html?version=CLOUD)
--   [Integration with SAP Datasphere](https://help.sap.com/docs/joule/integrating-joule/integration-with-sap-datasphere?version=CLOUD)
+-   [Integration with SAP Datasphere](https://help.sap.com/docs/joule/integrating-joule-with-sap/integration-with-sap-datasphere?version=CLOUD)
 
 
 
@@ -131,10 +131,10 @@ You must complete the following Joule configuration procedures before activating
 
 4.  On the Confirmation screen, click *Confirm*.
 
-5.  Grant the *Data Warehouse Joule Consumption* global privilege to users whom you want to access Joule features \(see [Assign Roles to UsersAssign Users to a Role](../Managing-Users-and-Roles/assign-roles-to-usersassign-users-to-a-role-57a7880.md)\).
+5.  Grant the *Data Warehouse Joule Consumption* global privilege to users whom you want to access Joule features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
 
     Users who have been granted the privilege will see the *Joule* button available in the shell bar: <span class="SAP-icons-V5"></span> \(see [Navigating in SAP Datasphere](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/bd79b74face14b17a4cfa844a2fd36c7.html "Use the left navigation area to access all the apps available in SAP Datasphere.") :arrow_upper_right:\).
 
-    To explore what Joule can help you do, see [Joule in Datasphere](https://help.sap.com/docs/joule/joule-capabilities/joule-in-sap-datasphere).
+    To explore what Joule can help you do, see [Joule in Datasphere](https://help.sap.com/docs/joule/capabilities-guide/joule-in-sap-datasphere?version=CLOUD).
 
 

@@ -19,7 +19,16 @@ To delete a replication object or a target table:
 
 ## Delete a Replication Flow
 
-In the Data Builder, select the relevant replication flow and choose <span class="FPA-icons-V3"></span> \(Delete\).
+In the Data Builder, select the relevant replication object ans choose <span class="FPA-icons-V3"></span> \(Delete\).
 
 If you delete a running replication flow, the system first stops the flow and then deletes it. However, the recommended approach is to first stop the replication flow by choosing *Stop* and then delete it.
+
+
+
+## Remove a Replication Object
+
+In the Data Builder, open the relevant replication flow and select the object to remove from your flow. Choose <span class="SAP-icons-V5"></span> Remove Replication Object next to the right of the object.
+
+> ### Note:  
+> You must then redeploy your flow. Any data for the removed objects that already exists in the target \(from previous runs\) remains as-is.
 

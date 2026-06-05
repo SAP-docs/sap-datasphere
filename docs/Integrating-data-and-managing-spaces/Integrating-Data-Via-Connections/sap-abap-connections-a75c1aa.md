@@ -59,11 +59,10 @@ For information about minimum system versions and other prerequisites, see [SAP 
 
 You can access the following data:
 
--   standard and custom CDS view entities that are exposed using the SQL service from SAP BTP ABAP environment or SAP S/4HANA Cloud, respectively
+-   standard and custom CDS view entities that are exposed using the ABAP SQL service from the following systems:
 
-    For more information, see:
-
-    -   [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:
+    -   SAP S/4HANA Cloud or SAP BTP ABAP environment \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:\)
+    -   SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
 
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.

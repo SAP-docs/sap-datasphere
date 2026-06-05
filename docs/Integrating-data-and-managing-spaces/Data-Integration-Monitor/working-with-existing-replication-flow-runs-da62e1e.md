@@ -4,7 +4,7 @@
 
 # Working With Existing Replication Flow Runs
 
-You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:.
 
 
 
@@ -95,9 +95,14 @@ For more information about space deletion, see [Delete Your Space](../delete-you
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_RemovingObjects"/>
 
-## Adding or Removing Replication Objects
+## Modifying a Replication Flow
 
-This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
+This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:
+
+> ### Example:  
+> For example, add or remove a replication object, or change the run settings.
+
+.
 
 > ### Note:  
 > Adding or removing objects without stopping the replication flow first is only possible for replication flows in status *Active*.
@@ -126,14 +131,6 @@ To pause, resume or restart a replication flow:
 
 
 
-<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_ChangeDeltaInterval"/>
-
-## Changing the Delta Interval for a Replication Flow
-
-This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "Whether and how you can change the settings for a replication flow depends on several factors.") :arrow_upper_right:.
-
-
-
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_npd_zxq_dgc"/>
 
 ## Configuring Email Notification for Replication Flow Failure at Object Level
@@ -159,7 +156,7 @@ From the details screen of a replication flow run, you can change the run settin
 2.  Navigate to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
 3.  Open the tab **Run Settings** and update as needed:
 
-    -   Delta Load Run: You can define how delta-enabled objects run in a replication flow
+    -   Delta Load Run: You can define how delta-enabled objects run in a replication flow:
         -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
         -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.
 

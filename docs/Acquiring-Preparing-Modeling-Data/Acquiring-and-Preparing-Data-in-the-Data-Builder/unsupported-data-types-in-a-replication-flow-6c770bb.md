@@ -113,6 +113,22 @@ ABAP
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+REST API
+
+</td>
+<td valign="top">
+
+-   time
+-   hana.ST\_POINT
+-   hana.ST\_GEOMETRY
+
+
+
+</td>
+</tr>
 </table>
 
 

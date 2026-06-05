@@ -18,7 +18,7 @@ This topic contains the following sections:
 
 ## Introduction to Elastic Compute Nodes
 
-Once an administrator has purchased additional resources dedicated to elastic compute nodes, they can create and manage elastic compute nodes in the *Space Management*. You can create an elastic compute node and allocate resources to it, assign spaces and objects to it to specify the data that will be replicated to the node, and start the node \(manually or via a schedule\) to replicate the data to be consumed.
+Once a user with an administrator role has purchased additional resources dedicated to elastic compute nodes, they can create and manage elastic compute nodes in the *Space Management*. You can create an elastic compute node and allocate resources to it, assign spaces and objects to it to specify the data that will be replicated to the node, and start the node \(manually or via a schedule\) to replicate the data to be consumed.
 
 ![](images/ECN_MainGraph_e3c4cd0.png)
 

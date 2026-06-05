@@ -65,7 +65,7 @@ In addition, if you want to use natural language search, it must be enabled in y
 
 -   *Data Warehouse AI Consumption* \(`----E---`\) - To use SAP Business AI features.
 
-Any role template that gives access to SAP Datasphere grants these scoped privileges and the *DW AI Consumer* global role grants the global privilege. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+Any role template that gives access to SAP Datasphere grants these scoped privileges and the *DW AI Consumer* global role grants the global privilege. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -108,7 +108,7 @@ To monitor the system performance and issues across all spaces, you must have a 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *System and Spaces* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -127,7 +127,7 @@ To monitor capacity unit consumption, you must have a global role that grants yo
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Capacities* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
@@ -146,7 +146,7 @@ To monitor task logs, you must have a global role that grants you the following 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Task Logs* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
@@ -165,7 +165,7 @@ To monitor expensive statement logs, you must have a global role that grants you
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Expensive Statement Logs* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
@@ -184,7 +184,7 @@ To monitor elastic compute nodes, you must have a global role that grants you th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Elastic Compute Nodes* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
@@ -209,7 +209,7 @@ To monitor local tables, you must have a scoped role that grants you access to a
 
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -235,7 +235,7 @@ To replicate data and monitor remote tables, you must have a scoped role that gr
 -   *Data Warehouse Data Builder* \(`-R------`\) - To work with partitions.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -263,7 +263,7 @@ To persist and monitor views, you must have a combination of a global role and a
     -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 
-For example, the *DW Administrator* global role template grants the runtime privilege, the *DW Integrator* scoped role template grants the integration privilege, and the *DW Space Administrator* scoped role template grants the *Data Builder* privilege. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+For example, the *DW Administrator* global role template grants the runtime privilege, the *DW Integrator* scoped role template grants the integration privilege, and the *DW Space Administrator* scoped role template grants the *Data Builder* privilege. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -288,7 +288,7 @@ To run and schedule flows, you must have a scoped role that grants you access to
 
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -313,7 +313,7 @@ To monitor remote queries, you must have a scoped role that grants you access to
 
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -338,7 +338,7 @@ To monitor task chains, you must have a scoped role that grants you access to a 
 
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -384,7 +384,7 @@ To browse data products and assets in the catalog, you must have a global role t
 -   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 
-The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
@@ -398,7 +398,7 @@ See [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e1592655
 </td>
 <td valign="top">
 
-To search for and evaluate objects in the *Data Products* collection, you must have
+To search for and evaluate objects in the *Data Products* collection, you must have:
 
 -   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
@@ -410,7 +410,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -437,7 +437,7 @@ To search for and evaluate objects in the *Data Products \(Marketplace\)* collec
     -   *Data Warehouse Connection* \(`CRU––--`\) - To check the license of installed data products.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -461,7 +461,7 @@ To govern and enrich catalog assets, you must have a global role that grants you
 -   *Catalog KPI Template* \(`-RU-–--`\) - To edit the KPI template.
 -   *Catalog Tag Hierarchy* \(`CRUD–--`\) - To add, edit, and delete tag hierarchies and tags.
 
-The *Catalog Administrator* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *Catalog Administrator* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -481,7 +481,7 @@ To connect, manage and monitor catalog source systems, you must have a global ro
 -   *Catalog System* \(`CRUDE--`\) - To create, view, edit, and delete source system connections and manually synchronize source system.
 -   *Catalog Log* \(`-R-----`\) - To view source system extraction summary and extraction logs in the system details.
 
-The *Catalog Administrator* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *Catalog Administrator* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -529,7 +529,7 @@ To import objects with semantics from SAP S/4HANA, SAP BW∕4HANA, and SAP BW Br
 -   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -582,7 +582,7 @@ The *DW Space Administrator* role template, for example, grants this combination
 </tr>
 </table>
 
-For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -609,7 +609,7 @@ To search for and evaluate objects in the *Data Products \(Marketplace\)* collec
     -   *Data Warehouse Connection* \(`CRU––--`\) - To check the license of installed data products.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -655,7 +655,7 @@ To create business entities, you must have a scoped role that grants you access 
 -   *Data Warehouse Data Builder* \(`-R------`\) - To open *Data Builder* objects for linking to business entities.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -676,7 +676,7 @@ To create fact models, you must have a scoped role that grants you access to a s
 -   *Data Warehouse Fact Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* fact models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -697,7 +697,7 @@ To create consumption models, you must have a scoped role that grants you access
 -   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -719,7 +719,7 @@ To create authorization scenarios, you must have a scoped role that grants you a
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -767,7 +767,7 @@ To import objects with semantics from SAP S/4HANA, SAP BW∕4HANA, and SAP BW Br
 -   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -788,7 +788,7 @@ To import tables and views from a connection, Open SQL schema, HDI container or 
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -808,7 +808,7 @@ To create local tables, you must have a scoped role that grants you access to a 
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -829,7 +829,7 @@ To create local tables from a `.csv` file, you must have a scoped role that gran
 -   *Data Warehouse Consumption* \(`-RU-----`\) - To upload data in a local table.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -850,7 +850,7 @@ To edit local tables' data in the *Data Editor*, you must have a scoped role tha
 -   *Data Warehouse Consumption* \(`-RU-E---`\) - To add and delete data in a local table.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -870,7 +870,7 @@ To create views, you must have a scoped role that grants you access to a space w
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete a graphical view.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -890,7 +890,7 @@ To create E/R models, you must have a scoped role that grants you access to a sp
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete E/R models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -910,7 +910,7 @@ To create analytic models, you must have a scoped role that grants you access to
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -940,7 +940,7 @@ To run and schedule flows, you must, in addition, have the following privileges:
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -964,7 +964,7 @@ To run intelligent lookups, you must, in addition, have the following privileges
 
 -   *Data Warehouse Data Integration* \(`--U-----`\) - To run intelligent lookups and process results.
 
-The *DW Modeler* role template, for example, grants the privilege to create and manage intelligent lookups, and the *DW Integrator* role template grants the privilege to run them. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants the privilege to create and manage intelligent lookups, and the *DW Integrator* role template grants the privilege to run them. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -996,7 +996,7 @@ To run and share task chains and configure email notifications, you must, in add
 -   *Data Warehouse Data Builder* \(`------S-`\) - To share task chains to other spaces.
 -   *User* \(`R-------`\) - To display and add notification recipients from a list of current tenant members, when setting up email notifications.
 
-The *DW Modeler* role template, for example, grants the privileges to create and manage task chains, and the *DW Integrator* role template grants the privileges to run and share them. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Modeler* role template, for example, grants the privileges to create and manage task chains, and the *DW Integrator* role template grants the privileges to run and share them. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1016,7 +1016,7 @@ To create data access controls, you must have a scoped role that grants you acce
 -   *Data Warehouse Data Builder* \(`-R------`\) - To access the *Data Builder*.
 -   *Data Warehouse Data Access Control* \(`CRUD----`\) - To create, read, update, and delete data access controls.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1046,7 +1046,7 @@ To view the data contained in *Data Builder* objects, you must have a scoped rol
 
 
 
-For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1090,7 +1090,7 @@ To create, edit, validate, and delete connections, you must have a scoped role t
 -   *Data Warehouse Connection* \(`CRUD----`\) - To create, edit, validate, or delete connections.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Space Administrator* and *DW Integrator* role templates, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* and *DW Integrator* role templates, for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1136,7 +1136,7 @@ To create spaces, you must have a global role that grants you the following priv
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1159,7 +1159,7 @@ To copy a space and its contents, you must have a global role that grants you th
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1179,7 +1179,7 @@ To allocate disk and memory storage to spaces, you must have a global role that 
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1198,7 +1198,7 @@ To set priorities and statement limits for spaces or groups, you must have a glo
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1207,7 +1207,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 Control user access to spaces
 
-See [Assign Members to Your SpaceControl User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "As a Space Administrator, you can assign users as members of your space.You can assign users to your space and manage them.") :arrow_upper_right:
+See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1219,7 +1219,7 @@ To assign users to your space and manage them from the *Users* area in your spac
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 -   *Scoped Role User Assignment* \(`-------M`\) - To manage the users who can access your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1239,7 +1239,7 @@ To create database users, you must have a scoped role that grants you access to 
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1260,7 +1260,7 @@ To add an HDI container and access its objects in your space, you must have a sc
 -   *Space Files* \(`-RU-----`\) - To read and update objects in your spaces.
 -   *Data Warehouse Connection* \(`-RU-----`\) - To access remote objects.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1281,7 +1281,7 @@ To work with the time table and dimensions in your space, you must have a scoped
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 -   *Data Warehouse Data Builder* \(`-RUD----`\) - To read, update and delete objects in the *Data Builder*.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1301,7 +1301,7 @@ To enable audit logs for your space, you must have a scoped role that grants you
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1321,7 +1321,7 @@ To monitor the storage consumption of your space, you must have a scoped role th
 -   *Spaces* \(`-R------`\) - To open your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1341,7 +1341,7 @@ To manually lock or unlock your space, you must have a scoped role that grants y
 -   *Spaces* \(`-RU-----`\) - To open and update your space in the *Space Management* tool.
 -   *Space Files* \(`-RU-----`\) - To read and update objects in your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1362,7 +1362,7 @@ To move your space to the *Recycle Bin* area, you must have a scoped role that g
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 -   *Scoped Role User Assignment* \(`-------M`\) - To manage the users who can access your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1382,7 +1382,7 @@ To restore spaces, or delete them from the *Recycle Bin*, you must have a global
 -   *Spaces* \(`-------M`\) - To access the *Recycle Bin* in the *Space Management* tool.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1428,7 +1428,7 @@ To enable translation for your space, and to manage translation in the *Translat
 -   *Data Warehouse Data Builder* \(`-RU-----`\) - To read and update *Data Builder* objects.
 -   *Translation* \(`CR-D----`\) - To access the *Translation* tool, select objects to translate, manage and delete translations.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1472,7 +1472,7 @@ To manage users, you must have a global role that grants you the following privi
 -   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\)area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
 -   *User* \(`-------M`\) - To assign users to roles.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1497,7 +1497,7 @@ To manage roles and privileges, you must have a global role that grants you the 
 -   *User* \(`-------M`\) - To add users to roles.
 -   *Spaces* \(`-------M`\) - To add spaces to scoped roles.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1517,7 +1517,7 @@ To monitor object changes with activities, you must have a global role that gran
 -   *Activity Log* \(`-R------`\) - To view and download activities. The *DW Administrator* role template, for example, grants this privilege.
 -   *Activity Log* \(`---D----`\) - To delete activity logs.
 
-For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1567,7 +1567,7 @@ To create packages, you must have a combination of a global role and a scoped ro
     -   *Data Warehouse Data Builder* \(`-RU-----`\) - To view and update *Data Builder* objects \(and any other relevant object privileges to allow you to update other types of objects contained in the package\).
 
 
-The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1618,7 +1618,7 @@ The *DW Space Administrator* role template, for example, grants this combination
 </tr>
 </table>
 
-The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1671,7 +1671,7 @@ The *DW Space Administrator* role template, for example, grants this combination
 </tr>
 </table>
 
-For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1690,7 +1690,7 @@ To monitor transport jobs in the *Monitor* app, you must have a global role that
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
 
-The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1778,7 +1778,7 @@ In order to create live data connections of type tunnel, you must, in addition, 
 -   *Connection* \(`CRUD-M--`\) - To create, read, update, and delete live data connections of type *Tunnel*.
 -   *Other Data Sources* \(`----E---`\) - To access the *Manage Live Data Connections* dialog.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1796,7 +1796,7 @@ To work in the *Administration* area in the *System* tool, you must have a globa
 -   *System Information* \(`-RU-----`\) - To access the *System* tool.
 -   *User* \(`-R------`\) - To access the *Administration* area in the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1817,7 +1817,7 @@ To work with your SAP HANA database, you must have a global role that grants you
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *More* in the *About* area of the *System* tool.
 
-The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Application RolesStandard Roles Delivered with SAP Datasphere](standard-application-rolesstandard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>

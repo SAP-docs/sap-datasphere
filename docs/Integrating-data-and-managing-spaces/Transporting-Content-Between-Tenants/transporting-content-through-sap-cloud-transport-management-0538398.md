@@ -115,7 +115,7 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
         </td>
         <td valign="top">
         
-        In the SAP Dataspheretenant, go to *System*→*Administration*→*App Integration* and create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create an OAuth2.0 Client with an API Access Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/98500631fdd14762b702ad97d106c663.html "Users with an administrator role can create OAuth2.0 clients with an API access purpose and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
+        In the SAP Datasphere tenant, go to *System*→*Administration*→*App Integration* and create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create an OAuth2.0 Client with an API Access Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/98500631fdd14762b702ad97d106c663.html "Users with an administrator role can create OAuth2.0 clients with an API access purpose and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
         
         </td>
         </tr>

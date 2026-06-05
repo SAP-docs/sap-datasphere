@@ -20,13 +20,61 @@ For more information, see the *ABAP Cloud* documentation for SAP S/4HANA:
 > ### Note:  
 > -   This feature requires developer extensibility in SAP S/4HANA \(including ABAP development tools\). For more information, see [Developer Extensibility](https://help.sap.com/docs/ABAP_PLATFORM_NEW/b5670aaaa2364a29935f40b16499972d/155909e3569941e08831c78cf4c2d495.html) in the *ABAP Platform* documentation for SAP S/4HANA.
 > 
-> -   For data federation using the SQL service, privileged data access needs to be enabled for communication users in SAP S/4HANA. For more information, see [Access Scenarios](https://help.sap.com/docs/ABAP_PLATFORM_NEW/b5670aaaa2364a29935f40b16499972d/96368bd086ff4f79933b078a6cf7feaa.html) in the *ABAP Cloud* documentation for SAP S/4HANA.
+> -   Privileged data access needs to be enabled for communication users in SAP S/4HANA. For more information, see [Access Scenarios](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/access-scenarios?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
 > 
-> -   Make sure the SAP S/4HANA system you want to connect is based on the ABAP platform 2022 FPS00 or higher where the ABAP SQL service is available.
+> -   Make sure the SAP S/4HANA system you want to connect meets the version requirements:
+> 
+>     -   For data federation using the SQL service, ABAP platform 2022 FPS00 or higher is required.
+>     -   For data replication using the SQL service, ABAP platform 2025 or higher is required.
 > 
 > -   Data federation with remote tables using the ABAP SQL service is supported for SAP Logon connection type *Application Server* and basic authentication with *User Name and Password*.
 > 
 > -   When a connection is configured for using the ABAP SQL service for data federation with remote tables, you can't use the same connection for model import.
+
+
+
+## Data Replication With Replication Flows
+
+Perform the following steps to prepare data replication with replication flows:
+
+-   Configure Cloud Connector to use the ABAP SQL service, paying particular attention to the following configuration steps:
+
+    1.  When adding the system mapping to the SAP S/4HANA system, select *RFC* protocol.
+    2.  Limit the accessible resources to the following function modules:
+        -   DHAMB\_ – *Prefix*
+
+        -   DHAPE\_ – *Prefix*
+
+        -   RFC\_FUNCTION\_SEARCH
+
+
+
+    For more information, see:
+
+    -   [Configure Cloud Connector](configure-cloud-connector-f289920.md)
+    -   [Configure Access Control \(RFC\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-access-control-rfc) in the *SAP BTP Connectivity* documentation
+
+-   In SAP S/4HANA, a business user and administrator must perform the following steps to prepare data replication with replication flows:
+
+    1.  Create a user for the communication with SAP Datasphere and assign the required authorizations to it \(role template `SAP_DI_ABAP_REMOTE`\).
+
+        For more information, see SAP Note [3100673](https://me.sap.com/notes/3100673).
+
+    2.  Consider the prerequisites and constraints that must be considered before using the SQL service.
+
+        For more information, see [Prerequisites](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites?version=s4_hana) and [Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/constraints?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
+
+    3.  To expose CDS view entities using the SQL service, an SAP S/4HANA business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
+
+        For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
+
+    4.  To expose the SQL service to get privileged access to the CDS view entities with the communication user, a role with authorization objects `S_START` and `S_SQL_VIEW` is required. To grant federated access, select the options *SELECT* and *REPLICATE* in the SQL\_VIEWOP authorization field of the *S\_SQL\_VIEW* authorization object.
+
+        For more information, see [Creating a Role for Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-role-for-privileged-access?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
+
+
+
+You can now create a connection to consume the ABAP SQL service for data replication with replication flows using the ABAP Pipeline Engine.
 
 
 
