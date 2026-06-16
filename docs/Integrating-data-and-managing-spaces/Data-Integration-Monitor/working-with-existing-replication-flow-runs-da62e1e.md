@@ -83,7 +83,7 @@ To stop a replication flow run:
 
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_SpaceDeletion"/>
 
-## Handling With Space Deletion
+## Deleting a Space
 
 If you have replication flows in a space that is about to be deleted, make sure to stop your replication flows before space deletion starts. This helps to avoid issues during space deletion and makes it possible for you to start the replication flows again if the space gets restored at a later point in time.
 

@@ -6,7 +6,7 @@ An SAP Business Data Cloud administrator can activate data products included in 
 
 
 
-![](images/Activate_Install_and_Work_with_Data_Product_6c65420.png)
+![](images/Work_with_SAP_Data_Product_6c65420.png)
 
 For more information, see [Activating Data Packages](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/fcf9975b49ea4adeb837e4be16116175.html) in the *SAP Business Data Cloud* documentation.
 

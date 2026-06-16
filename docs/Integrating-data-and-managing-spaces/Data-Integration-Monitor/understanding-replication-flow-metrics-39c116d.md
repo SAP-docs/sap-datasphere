@@ -50,7 +50,7 @@ Displays the time spent running the task. For example, *Initial Load Duration*.
 </td>
 <td valign="top">
 
--   Displays the number of records replicated into SAP Datasphere. For example, *Initial Load Operation* will consider the records loaded at the initial load whereas *Delta Load Operation* will consider delta changes due to insert, update or delete operations.
+-   Displays the number of records replicated into SAP Datasphere during initial load. Delta load records are not included.
 -   *Staged Operation Count*shows how many records were staged before being merged into the final large file when Create Large Files is enabled. See [Cloud Storage Provider Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
 
 
@@ -120,6 +120,66 @@ Displays the number of threads that were used for parallel processing during del
 <td valign="top">
 
 Displays the status of the object replication.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Cumulative Operation*
+
+</td>
+<td valign="top">
+
+Total delta records counts.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delta Started At*
+
+</td>
+<td valign="top">
+
+When this delta run started at.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delta Completed At*
+
+</td>
+<td valign="top">
+
+When this delta run completed at.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delta Duration*
+
+</td>
+<td valign="top">
+
+Total duration for delta transfer.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delta Records Count*
+
+</td>
+<td valign="top">
+
+Total records for this delta transfer
 
 </td>
 </tr>
@@ -1007,6 +1067,18 @@ When you run a replication flow, you can define how data is partitioned for each
     <td valign="top">
     
     Waiting in line to clean up log.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Waiting for Delta Trigger
+    
+    </td>
+    <td valign="top">
+    
+    Waiting for the next delta run to start.
     
     </td>
     </tr>

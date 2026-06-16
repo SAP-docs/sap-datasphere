@@ -79,7 +79,7 @@ Find and select objects in the diagram. Results are proposed once three characte
 </td>
 <td valign="top">
 
-Perform a global refresh action to refresh the status of all objects.
+ 
 
 </td>
 </tr>
@@ -91,7 +91,7 @@ Perform a global refresh action to refresh the status of all objects.
 </td>
 <td valign="top">
 
-Display the related messages on the model level. The design and color of the button will change to indicate the level of issues \( Error/Warning/Information/Success cases\) from red to green, where red is the most critical error and green means no issue.
+
 
 </td>
 </tr>
@@ -103,7 +103,7 @@ Lineage
 </td>
 <td valign="top">
 
-Enable/disable the display of the lineage of the analyzed object.
+
 
 </td>
 </tr>
@@ -199,9 +199,7 @@ Description
 </td>
 <td valign="top">
 
-The Notification Bubbles are displayed with different colors depending of the type of information: red for errors, orange for warning and blue for information. They indicate which objects have issues and will provide more info in a detailed message with specific actions to fix the issue.
 
-The number will always be 1 because it tracks only the last recent error, not all the errors of the entire life cycle of a particular object.
 
 </td>
 </tr>
@@ -213,7 +211,7 @@ The number will always be 1 because it tracks only the last recent error, not al
 </td>
 <td valign="top">
 
-The icons indicate the run status of an object. They are displayed with the usual color code: Red for errors, orange for warning, blue for information and green for successful run.
+
 
 </td>
 </tr>

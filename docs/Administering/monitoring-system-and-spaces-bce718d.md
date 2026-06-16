@@ -23,7 +23,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Monitor Disk Storage Usage
 
-1.  Click :desktop_computer: *Monitoring* in the side navigation to open the monitoring menu, and click <span class="SAP-icons-V5"></span> *System and Spaces*  to access the *System and Spaces* monitoring *Dashboard*.
+1.  Click :desktop_computer: *\(Monitoring\)* in the side navigation to open the monitoring menu, and click <span class="SAP-icons-V5"></span> *\(System and Spaces\)*  to access the *System and Spaces* monitoring *Dashboard*.
 2.  Review your SAP Datasphere tenant disk storage capacity and its current utilization in the SAP HANA database and identify risks of storage-related outages in the *Disk Storage Usage* card.
 
 
@@ -278,7 +278,7 @@ To investigate issues:
     
 2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria \(see [Reviewing Task Logs](reviewing-task-logs-399e52f.md)\).
 3.  For the spaces you have access to \(via scoped roles\), click the links in the following columns:
-    -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  Data Integration app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
+    -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
 
     -   *Object Name* - opens the editor of the object.
 
@@ -461,7 +461,7 @@ For more information about admission control thresholds, see [Set Priorities and
 
 Monitor storage consumption for file spaces and Apache Spark application task runs to identify high consumption areas and target specific tasks for optimization.
 
-1.  In the side navigation area, click :desktop_computer: *Monitoring* \> <span class="SAP-icons-V5"></span> *System and Spaces*  \> *Object Store* tab.
+1.  In the side navigation area, click :desktop_computer: *\(Monitoring\)* \> <span class="SAP-icons-V5"></span> *\(System and Spaces\)*  \> *Object Store* tab.
 
 2.  In the *Spaces* drop-down list of all file spaces, select the file space in the drop-down list that you want to monitor. You can monitor the storage utilization of your selected file space and of all file spaces with the two following cards:
 

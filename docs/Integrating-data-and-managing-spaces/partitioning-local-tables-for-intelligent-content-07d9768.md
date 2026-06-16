@@ -1,14 +1,14 @@
 <!-- loio07d9768ac03343498ae1d1da41f03241 -->
 
-# Partitioning Local Tables for Intelligent Applications
+# Partitioning Local Tables for Intelligent Content
 
-Create partitions for your local tables installed via SAP Business Data Cloud as part of an intelligent application to break your data down into chunks, and better manage read-only tables with large volume of data.
+Create partitions for your local tables installed via SAP Business Data Cloud as part of intelligent content to break your data down into chunks, and better manage read-only tables with large volume of data.
 
 
 
 ## Context
 
-The local tables installed via SAP Business Data Cloud as part of an intelligent application might have large data volume. In this case, you can create partitions on the table, if required to improve performance.
+The local tables installed via SAP Business Data Cloud as part of intelligent content might have large data volume. In this case, you can create partitions on the table, if required to improve performance.
 
 
 

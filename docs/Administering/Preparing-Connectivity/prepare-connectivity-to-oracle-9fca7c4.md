@@ -6,6 +6,22 @@ To be able to successfully validate and use a connection to an Oracle database f
 
 
 
+<a name="loio9fca7c484e974429afc6570196303c35__prereq_rf_Oracle"/>
+
+## Replication Flows
+
+Before you can use the connection for replication flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](configure-cloud-connector-f289920.md).
+
+    > ### Note:  
+    > Cloud Connector is not required if your Oracle database is available on the public internet.
+
+
+
+
 <a name="loio9fca7c484e974429afc6570196303c35__prereq_rt_Oracle"/>
 
 ## Remote Tables

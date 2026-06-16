@@ -196,7 +196,7 @@ You want to model transformation flows with local tables \(file\), shared local 
     >     -   LAST refers to the latest operations applied on the row.
     >     -   COUNT doesn't include null values for the count calculations; COUNT\* includes them.
     >     -   Using a target table that employs AVG, MAX, or MIN in one transformation as the target table in another transformation using any of these functions could lead to data inconsistencies.
-    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the amount of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
+    >     -   When AVG, MAX, or MIN functions are used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
     >     -   If incremental aggregation is enabled, the input DataFrame for the Python script will include the previous versions of the data for updates.
     > 
     > -   Columns with non-numerical aggregation types can only have the type LAST.

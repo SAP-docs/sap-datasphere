@@ -22,6 +22,112 @@ This topic contains the following sections:
 
 
 
+## Prerequisites
+
+To create and manage users via the SCIM 2.0 API, you must have a global role granting necessary privileges for the commands you want to use:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\) area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
+-   *User* \(`-------M`\) - To assign users to roles.
+
+You must, in addition, obtain access to an appropriate OAuth client:
+
+
+<table>
+<tr>
+<th valign="top">
+
+OAuth Purpose
+
+</th>
+<th valign="top">
+
+Technical User
+
+</th>
+<th valign="top">
+
+API Access
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Authorization Grant
+
+</td>
+<td valign="top">
+
+Client Credentials
+
+Two-Legged \(Client-Server\): Service to service communication via APIs.
+
+> ### Note:  
+> If the technical user is granted only a scoped role, the OAuth client will be limited to assigning and removing users from the spaces to which it has access.
+
+
+
+</td>
+<td valign="top">
+
+SAML2.0 Bearer
+
+Access: User Provisioning
+
+SAML Assertion: Seamlessly propagate authorization to another service.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authentication
+
+</td>
+<td valign="top">
+
+None required. The OAuth client contains the necessary credentials and privileges.
+
+</td>
+<td valign="top">
+
+Authenticate with your third-party app, which has a trusted relationship with the IDP \(see [Add a Trusted Identity Provider](../Creating-and-Configuring-Your-Tenant/add-a-trusted-identity-provider-ea0688a.md)\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Parameters
+
+</td>
+<td valign="top">
+
+-   Client ID
+-   Secret
+-   Token URL
+
+
+
+</td>
+<td valign="top">
+
+-   Client ID
+-   Secret
+-   OAuth2SAML Token URL
+-   OAuth2SAML Audience
+
+
+
+</td>
+</tr>
+</table>
+
+For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](../Creating-and-Configuring-Your-Tenant/create-oauth2-0-clients-to-authenticate-against-sap-datasphere-3f92b46.md).
+
+
+
 <a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc"/>
 
 ## Introduction
@@ -52,14 +158,7 @@ This API uses SCIM 2.0. For more information, see [SCIM Core Schema](https://too
 
 ## Log in with an OAuth Client
 
-Before you can log in with an Oauth client, a user with the administrator role must create an OAuth2.0 client in your SAP Datasphere tenant and provide you with the OAuth client ID and secret parameters.
-
-> ### Note:  
-> The OAuth client must be configured with one of the following purposes:
-> 
-> -   *API Access* purpose with *User Provisioning* access and *Client Credentials* authorization grant \(see [Create an OAuth2.0 Client with an API Access Purpose](../Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-an-api-access-purpose-9850063.md).\)
-> 
-> -   *Technical User* purpose \(see [Create an OAuth2.0 Client with a Technical User Purpose](../Creating-and-Configuring-Your-Tenant/create-an-oauth2-0-client-with-a-technical-user-purpose-88b1346.md)\).
+Before you can log in with an Oauth client, the user with the administrator role who has created the OAuth2.0 client in your SAP Datasphere tenant must provide you with the OAuth client ID and secret parameters.
 
 To log in to the OAuth client, send a GET \(or POST\) request with the following elements:
 

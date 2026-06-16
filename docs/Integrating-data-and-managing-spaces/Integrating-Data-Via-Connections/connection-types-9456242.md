@@ -1059,12 +1059,12 @@ SAP
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
 
-no
+yes
 
 </td>
 <td valign="top">
@@ -1800,6 +1800,53 @@ On-Premise
 <td valign="top">
 
 SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Snowflake Connections](snowflake-connections-d9ead8b.md)
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+Cloud
+
+</td>
+<td valign="top">
+
+Non SAP
 
 </td>
 </tr>

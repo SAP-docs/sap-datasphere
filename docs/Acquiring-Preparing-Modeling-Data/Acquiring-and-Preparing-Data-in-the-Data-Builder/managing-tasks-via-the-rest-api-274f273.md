@@ -167,6 +167,26 @@ Example:
 > }
 > ```
 
+Optional request for task chains with input parameters.
+
+> ### Sample Code:  
+> ```
+> {
+>   "inputParameters" {
+>        
+>         “param1”: “value1”,
+>        
+>         “param2”: “value2”
+>    }
+>  
+> }
+> 
+> 
+> ```
+
+> ### Note:  
+> Optional request only works if the task chain is defined with input parameters.
+
 Retry task chains.
 
 To retry a failed task chain run, use the POST request with the API <code>api/v1/datasphere/tasks/chains/<i class="varname">&lt;spaceid&gt;</i>/retry/<i class="varname">&lt;objectid&gt;</i></code> endpoint and enter:

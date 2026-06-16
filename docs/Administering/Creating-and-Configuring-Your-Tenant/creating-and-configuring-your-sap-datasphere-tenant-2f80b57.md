@@ -654,6 +654,48 @@ vCPU
 <tr>
 <td valign="top">
 
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+5600
+
+</td>
+<td valign="top">
+
+27840 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Brazil
 
 </td>
@@ -822,7 +864,7 @@ Supported
 <tr>
 <td valign="top">
 
-Japan \(Toyko\)
+Japan \(Tokyo\)
 
 </td>
 <td valign="top">
@@ -842,7 +884,7 @@ Supported
 </td>
 <td valign="top">
 
-Supported
+90 TB
 
 </td>
 <td valign="top">
@@ -858,6 +900,48 @@ Supported
 <td valign="top">
 
 204 \(High Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Singapore
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+27840 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
 
 </td>
 </tr>

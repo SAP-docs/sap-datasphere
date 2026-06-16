@@ -4,7 +4,7 @@
 
 # Understanding Statuses and Substatuses
 
-When you run an activity \(replicate a remote table, persist a view, etc..\), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the :desktop_computer: *Monitoring* apps.
+When you run an activity \(replicate a remote table, persist a view, etc..\), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the :desktop_computer: *\(Monitoring\)* apps.
 
 In SAP Datasphere , the activities can take a minimum of 3 main statuses:
 
@@ -248,5 +248,5 @@ The user could not be authenticated, has been locked, or deleted.
 </tr>
 </table>
 
-You can also monitor the statuses and substatuses in the :desktop_computer: *Monitoring* apps. For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right:.
+You can also monitor the statuses and substatuses in the :desktop_computer: *\(Monitoring\)* apps. For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right:.
 

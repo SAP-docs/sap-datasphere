@@ -21,7 +21,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Reviewing Task Logs
 
-From the side navigation menu, click :desktop_computer: *Monitoring* *\>* <span class="SAP-icons-V5"></span> *Task Logs* . The *Task Logs* app opens.
+From the side navigation menu, click :desktop_computer: *\(Monitoring\)* *\>* <span class="SAP-icons-V5"></span> *\(Task Logs\)* . The *Task Logs* app opens.
 
 The app lists the logs of task runs. The table contains the following columns:
 
@@ -319,7 +319,7 @@ Status of the task: completed, failed, running.
 </td>
 <td valign="top">
 
-For tasks with the status “failed”, shows the substatus and a message describing the cause of failure \(see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the  Monitoring apps.") :arrow_upper_right:\).
+For tasks with the status “failed”, shows the substatus and a message describing the cause of failure \(see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the  (Monitoring) apps.") :arrow_upper_right:\).
 
 </td>
 </tr>

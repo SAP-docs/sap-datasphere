@@ -18,7 +18,7 @@ In the *Space Management*, you can set up, configure, and monitor your spaces, i
 
 <a name="loioc6dd05236838466c831170c5cd67e85e__section_irx_vkk_c5b"/>
 
-## *Monitoring*
+## *\(Monitoring\)*
 
 In the *Monitoring* apps, you can monitor the performance of your system and identify storage, task, out-of-memory, and other issues. For more information, see [Monitoring SAP Datasphere](monitoring-sap-datasphere-d39b865.md).
 
@@ -141,7 +141,7 @@ Monitor, schedule, and run data replication and persistence tasks for remote tab
 </td>
 <td valign="top">
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  Data Integration app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
 
 </td>
 </tr>

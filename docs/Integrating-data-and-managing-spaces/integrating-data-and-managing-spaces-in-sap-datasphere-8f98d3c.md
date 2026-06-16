@@ -12,7 +12,7 @@ This topic contains the following sections:
 -   [Create Connections to Source Systems](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_sources)
 -   [Integrate Other Data Sources](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_integrate_other)
 -   [Import Business and Sample Content](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_content)
--   [Prepare Row-Level Security for Data](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_dacs)
+-   [Prepare Data Security](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_dacs)
 -   [Manage and Monitor Data Integration Tasks](integrating-data-and-managing-spaces-in-sap-datasphere-8f98d3c.md#loio8f98d3c917f94452bafe288055b60b35__section_monitor)
 
 > ### Tip:  
@@ -83,7 +83,7 @@ We also support direct import and export of many objects via CSN file \(see [Imp
 
 <a name="loio8f98d3c917f94452bafe288055b60b35__section_dacs"/>
 
-## Prepare Row-Level Security for Data
+## Prepare Data Security
 
 We recommend that you create data access controls, which can be applied to views to provide row-level filtering of your space data \(see [Securing Data with Data Access Controls](Data-Access-Control/securing-data-with-data-access-controls-a032e51.md)\).
 
@@ -93,5 +93,5 @@ We recommend that you create data access controls, which can be applied to views
 
 ## Manage and Monitor Data Integration Tasks
 
-You can enable, run, schedule, and monitor data replication tasks in the :fast_forward: *Data Integration*  \(see [Managing and Monitoring Data Integration](Data-Integration-Monitor/managing-and-monitoring-data-integration-4cbf7c7.md)\).
+You can enable, run, schedule, and monitor data replication tasks in the :fast_forward: *\(Data Integration\)*  \(see [Managing and Monitoring Data Integration](Data-Integration-Monitor/managing-and-monitoring-data-integration-4cbf7c7.md)\).
 

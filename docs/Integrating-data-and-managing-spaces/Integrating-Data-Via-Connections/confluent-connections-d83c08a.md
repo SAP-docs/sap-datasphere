@@ -45,13 +45,6 @@ Replication Flows
 
 You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
-> ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
-
-With Schema Registry, replication flows use a schema reference when serializing a Kafka topic message instead of providing the schema definition in every message. In the target settings of the replication flow configuration, you can decide to use Schema Registry.
-
-For more information, see [Confluent Kafka Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/74b3c95464f246aa8c3fd510661daa6d.html "If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
-
 </td>
 </tr>
 </table>
@@ -62,15 +55,75 @@ For more information, see [Confluent Kafka Targets for Replication Flows](https:
 
 ## Prerequisites
 
+
+
+### Prerequisites for Confluent Platform
+
 Before you can use the connection for replication flows, the following is required:
 
--   An administrator has installed and configured Cloud Connector to connect to Confluent Platform \(Kafka brokers\) and to the Schema Registry.
+-   The connection requires Confluent Schema Registry as additional endpoint. Schema Registry is a service that centrally stores data schemas for Kafka messages to ensure data consistency and compatibility as schemas evolve.
+
+    For more information, see [Schema Registry for Confluent Platform](https://docs.confluent.io/platform/current/schema-registry/index.html) in the *Confluent* documentation.
+
+-   An administrator has installed and configured Cloud Connector to connect to the Kafka brokers and to the Schema Registry for Confluent Platform on-premise.
 
     > ### Note:  
-    > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location is while connecting to the Kafka brokers happens in another location.
+    > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location while connecting to the Kafka brokers happens in another location.
 
     For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
+
+
+
+### Prerequisites for Confluent Cloud
+
+Before you can use the connection for replication flows, the following is required:
+
+-   The connection requires Confluent Schema Registry as additional endpoint. Schema Registry is a service that centrally stores data schemas for Kafka messages to ensure data consistency and compatibility as schemas evolve.
+
+    For more information, see [Schema Registry for Confluent Cloud](https://docs.confluent.io/cloud/current/sr/sr-overview.html) in the *Confluent* documentation.
+
+-   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data. In this case, two service endpoints and their corresponding Cloud Connector system mappings are required: 
+
+    -   Bootstrap server and all internal Kafka broker endpoints \(via TCP protocol\) - used for connecting to the cluster and data replication \(read and write\)
+    -   Service Registry endpoint \(via HTTPS protocol\) - used for managing schemas in Confluent
+
+    > ### Note:  
+    > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location while connecting to the Kafka brokers happens in another location.
+
+    When configuring Cloud Connector for the Kafka brokers, ensure that you create separate system mappings for the bootstrap server address and for each internal Kafka broker address. Pay particular attention to the following settings:
+
+    -   *Back-end Type*: Non-SAP System
+
+    -   *Protocol*: TCP
+
+    -   *Internal Host*: bootstrap server address or Kafka broker address
+    -   *Port or Port Range*: port for bootstrap server address or Kafka broker address
+    -   *Virtual Host*: can be arbitrary
+    -   *Virtual Port*: can be arbitrary
+    -   *Check Internal Host*: deselected
+
+    > ### Note:  
+    > To retrieve all broker addresses for a bootstrap server, you can use external client tools such as the kcat \(formerly kafkacat\) command-line utility \(see [Configure kcat to Authenticate to Confluent Cloud](https://docs.confluent.io/platform/current/tools/kafkacat-usage.html#configure-kcat-to-authenticate-to-ccloud) in the *Confluent* documentation\) or use programmatic clients implementing the Apache Kafka Client API \(see [Admin Client API](https://docs.confluent.io/kafka/kafka-apis.html#admin-client-api) in the *Confluent* documentation\).
+
+    When configuring Cloud Connector for Schema Registry, ensure you create the system mapping with the following settings:
+
+    -   *Back-end Type*: Non-SAP System
+
+    -   *Protocol*: HTTPS
+
+    -   *Internal Host*: schema Registry address
+    -   *Port or Port Range*: port for the schema registry
+    -   *Virtual Host*: can be arbitrary
+    -   *Virtual Port*: can be arbitrary
+    -   *Allow Principal Propagation*: deselected
+
+    -   *Host in Request Header*: Use Virtual Host
+
+    -   *Check Internal Host*: deselected
+
+
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 <a name="loioa5d1e1d2885f4a69ae3cc5049eb0cabf"/>
 
@@ -677,7 +730,7 @@ You can select:
 -   *User Name And Password* \(default\)
 
     > ### Note:  
-    > We recommended that you configure Schema Registry to use HTTPS for secure communication, because the basic protocol passes user name and password in plain text.
+    > We recommend that you configure Schema Registry to use HTTPS for secure communication, because the basic protocol passes user name and password in plain text.
 
 -   *No Authentication*
 
@@ -737,7 +790,7 @@ Description
 </td>
 <td valign="top">
 
-Select the location ID for the Cloud Connector instance that is set up for connecting to the Schema Registry.
+Set the property to *true* if your platform is on-premise. The default is *false*.
 
 > ### Note:  
 > Since Schema Registry might be used in another location than the Kafka brokers, you have to enter the Cloud Connector properties for Schema Registry separately from the properties for the Kafka brokers.
@@ -754,7 +807,7 @@ Select the location ID for the Cloud Connector instance that is set up for conne
 </td>
 <td valign="top">
 
-Select a location ID. 
+Select the location ID for the Cloud Connector instance that is set up for connecting to the Schema Registry. 
 
 > ### Note:  
 > To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
@@ -942,6 +995,102 @@ Enter a comma-separated list of brokers in the format <code><i class="varname">&
 
 
 
+### Cloud Connector
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector*
+
+</td>
+<td valign="top">
+
+Set the property to *true* if you want to use replication flows and your Confluent Cloud-managed Kafka brokers do not have a public endpoint. The default is *false*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+Select the location ID for the Cloud Connector instance that is set up for connecting to the Kafka brokers.
+
+> ### Note:  
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+Select how you want to specify the virtual destination. 
+
+You can select:
+
+-   *Derive Virtual Host and Port from Connection Details* \(default\)
+
+    If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you don't need to enter the values manually.
+
+-   *Enter Virtual Host and Port in Separate Fields*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Enter the virtual host that you defined during Cloud Connector configuration. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Enter the virtual port that you defined during Cloud Connector configuration. 
+
+</td>
+</tr>
+</table>
+
+
+
 ### Authentication
 
 
@@ -1010,7 +1159,7 @@ Enter the Confluent Cloud API key that is used to control access to Confluent Cl
 </td>
 <td valign="top">
 
-Enter the Confluent Cloud API secrect. 
+Enter the Confluent Cloud API secret. 
 
 </td>
 </tr>
@@ -1043,6 +1192,11 @@ Description
 <td valign="top">
 
 Select *true* \(default\) to use TLS encryption.
+
+> ### Note:  
+> When using Cloud Connector for private connectivity, you must use TLS for the Kafka brokers.
+
+
 
 </td>
 </tr>
@@ -1105,7 +1259,7 @@ You must select:
 -   *User Name And Password* \(default\)
 
     > ### Note:  
-    > We recommended that you configure Schema Registry to use HTTPS for secure communication, because the basic protocol passes user name and password in plain text.
+    > We recommend that you configure Schema Registry to use HTTPS for secure communication, because the basic protocol passes user name and password in plain text.
 
 
 
@@ -1133,6 +1287,107 @@ Enter the Confluent Cloud API key that is used to control access to the Schema R
 <td valign="top">
 
 Enter the Confluent Cloud API secret. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Cloud Connector For Schema Registry
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector* 
+
+</td>
+<td valign="top">
+
+Set the property to *true* if you want to use replication flows and your Schema Registry does not have a public endpoint. The default is *false*.
+
+> ### Note:  
+> Since Schema Registry might be used in another location than the Kafka brokers, you have to enter the Cloud Connector properties for Schema Registry separately from the properties for the Kafka brokers.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+Select the location ID for the Cloud Connector instance that is set up for connecting to the Schema Registry.
+
+> ### Note:  
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+Select how you want to specify the virtual destination. 
+
+You can select:
+
+-   *Derive Virtual Host and Port from Connection Details* \(default\)
+
+    If host and port entered in the connection details match the virtual host and port from the Cloud Connector configuration, you don't need to enter the values manually.
+
+-   *Enter Virtual Host and Port in Separate Fields*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Enter the virtual host that you defined during Cloud Connector configuration. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Enter the virtual port that you defined during Cloud Connector configuration. 
 
 </td>
 </tr>

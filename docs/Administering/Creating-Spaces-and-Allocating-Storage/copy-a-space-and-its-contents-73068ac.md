@@ -17,7 +17,7 @@ To copy a space and its contents, you must have a global role that grants you th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *User* \(`-R------`\) - To initialize the space for assigning users.
--   *Role* \(`--U-----`\) - To add the new space to all scoped roles that the original space belongs to.
+-   *Role* \(`-RU-----`\) - To add the new space to all scoped roles that the original space belongs to.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
@@ -37,7 +37,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Context
 
-If you copy a space that contains objects protected by a namespace, the copied objects will be modified so that they are removed from the namespace and become editable \(see [Namespaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7094f24d272c4ae4893b726095ab969e.html "Content managed by SAP and partners and delivered through SAP Business Data Cloud is protected by namespaces. Any object whose technical name is preceded by a namespace and a dot (for example, sap.s4h.Entity) cannot be edited.") :arrow_upper_right:\). Copying protected content in this way allows you to extend content delivered through SAP Business Data Cloud \(see [Extending Intelligent Applications](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of an intelligent application do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:\).
+If you copy a space that contains objects protected by a namespace, the copied objects will be modified so that they are removed from the namespace and become editable \(see [Namespaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7094f24d272c4ae4893b726095ab969e.html "Content managed by SAP and partners and delivered through SAP Business Data Cloud is protected by namespaces. Any object whose technical name is preceded by a namespace and a dot (for example, sap.s4h.Entity) cannot be edited.") :arrow_upper_right:\). Copying protected content in this way allows you to extend content delivered through SAP Business Data Cloud \(see [Extending Intelligent Content](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of intelligent content do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:\).
 
 
 

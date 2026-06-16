@@ -19,7 +19,7 @@ To manage certificates, you must have a global role that grants you the followin
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
-In addition, download the required TLS certificate from an appropriate website. As one option for downloading, common browsers provide functionality to export these certificates.
+In addition, download the required certificate from an appropriate website. As one option for downloading, common browsers provide functionality to export these certificates.
 
 > ### Note:  
 > -   Only X.509 Base64-encoded certificates enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----" are supported. The common filename extension for the certificates is .pem \(privacy-enhanced mail\). We also support filename extensions .crt and .cer.

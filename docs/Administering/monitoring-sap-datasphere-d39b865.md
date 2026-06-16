@@ -19,31 +19,31 @@ This topic contains the following sections:
 
 ## System and Tasks
 
-Click :desktop_computer: *Monitoring* in the side navigation to open the monitoring menu. You can access different monitoring apps:
+Click :desktop_computer: *\(Monitoring\)* in the side navigation to open the monitoring menu. You can access different monitoring apps:
 
--   <span class="SAP-icons-V5"></span> *System and Spaces*  
+-   <span class="SAP-icons-V5"></span> *\(System and Spaces\)*  
 
     Monitor system performance and issues related to storage, tasks, out-of-memory, and other issues across all spaces. Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. See [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md).
 
--   <span class="SAP-icons-V5"></span> *Capacities Monitoring*  
+-   <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)*  
 
     Monitor monthly and daily capacity unit consumption, allowing users to track usage relative to their subscription and download detailed hourly data. See [Monitoring Capacity Unit Consumption](monitoring-capacity-unit-consumption-ba3d05b.md).
 
--   <span class="SAP-icons-V5"></span> *Task Logs*  
+-   <span class="SAP-icons-V5"></span> *\(Task Logs\)*  
 
     Monitor the execution history of task runs. See [Reviewing Task Logs](reviewing-task-logs-399e52f.md).
 
--   <span class="SAP-icons-V5"></span> *Expensive Statement Logs*  
+-   <span class="SAP-icons-V5"></span> *\(Expensive Statement Logs\)*  
 
     Monitor SQL statements exceeding configured thresholds. See [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md).
 
--   <span class="FPA-icons-V3"></span> *Elastic Compute Nodes*  
+-   <span class="FPA-icons-V3"></span> *\(Elastic Compute Nodes\)*  
 
     Monitor elastic compute nodes key performance figures. See [Monitoring Elastic Compute Nodes](monitoring-elastic-compute-nodes-1d5f583.md).
 
--   :fast_forward: *Data Integration*  
+-   :fast_forward: *\(Data Integration\)*  
 
-    Monitor, schedule, and run data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, perform local table administration tasks like data deletion or house keeping, and manage other tasks through flows and task chains. Users need a space administrator or integrator role to access this app. See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  Data Integration app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
+    Monitor, schedule, and run data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, perform local table administration tasks like data deletion or house keeping, and manage other tasks through flows and task chains. Users need a space administrator or integrator role to access this app. See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
 
 
 > ### Note:  

@@ -4,7 +4,7 @@
 
 # Create a "Single Values" Data Access Control
 
-Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.
+You can create data access controls in which criteria are defined as single values. Each user can only see the records that match any of the single values she is authorized for in the permissions entity.
 
 
 

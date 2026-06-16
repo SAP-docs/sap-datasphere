@@ -4,7 +4,7 @@
 
 # Create a "Hierarchy" Data Access Control
 
-Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as hierarchy values. Each user can only see the records that match the hierarchy values she is authorized for in the permissions entity, along with any of their descendants.
+You can create data access controls in which criteria are defined as hierarchy values. Each user can only see the records that match the hierarchy values she is authorized for in the permissions entity, along with any of their descendants.
 
 
 

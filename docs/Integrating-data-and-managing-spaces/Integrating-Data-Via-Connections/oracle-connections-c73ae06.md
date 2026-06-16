@@ -1,11 +1,10 @@
 <!-- loioc73ae0601d364f47830d339b6e86b7e8 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Oracle Connections
 
 Use the connection to connect to and access data from an Oracle database \(on-premise\). 
-
-> ### Note:  
-> The connection type is not supported in spaces with storage type *SAP HANA Data Lake Files* \(file spaces\).
 
 
 
@@ -21,6 +20,9 @@ This topic contains the following sections:
 
 ## Supported Features
 
+> ### Note:  
+> In file spaces, remote tables and data flows are not supported.
+
 
 <table>
 <tr>
@@ -34,6 +36,18 @@ Feature
 Additional Information
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -73,6 +87,124 @@ You can use the connection to add source objects to a data flow \(see [Creating 
 <a name="loioc73ae0601d364f47830d339b6e86b7e8__Oracle_prerequisites"/>
 
 ## Prerequisites
+
+
+
+### Replication Flows
+
+Before you can use the connection for replication flows, the following is required:
+
+-   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+    > ### Note:  
+    > Cloud Connector is not required if your Oracle database is available on the public internet.
+
+-   For replication flows, you can use Oracle wallet for encrypted communication \(connection is configured to use TLS\) and for X.509 certificate-based authentication \(connection is configured to use authentication type *Wallet*\). Oracle wallet is Oracle’s built‑in secure storage for passwords, certificates, and encryption keys. The wallet is composed of either or both:
+
+    -   the ewallet.p12 file - a password‑protected Oracle wallet file used to store certificates and keys in standard PKCS\#12
+    -   the cwallet.sso file - in Oracle's proprietary format, used by the Oracle Client to access the wallet without prompting for a password; stores the server certificate that needs to be uploaded to the connection for encrypted communication when using it for replication flows
+
+    You must provide a properly configured wallet corresponding to your authentication scenario:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Authentication Scenario
+    
+    </th>
+    <th valign="top">
+
+    Use TLS
+    
+    </th>
+    <th valign="top">
+
+    Wallet Configuration
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    authentication type *User Name and Password*
+    
+    </td>
+    <td valign="top">
+    
+    no
+    
+    </td>
+    <td valign="top">
+    
+    no wallet required
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    authentication type *User Name and Password* with TLS
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    <td valign="top">
+    
+    Alongside basic authentication with user name and password, Oracle wallet is used as trust store for TLS credentials and must contain the server certificate.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    authentication type *User Name and Password* with mTLS
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    <td valign="top">
+    
+    Alongside basic authentication with user name and password, Oracle wallet is used as trust store for mTLS credentials and must contain server certificate, client certificate, client CA, and client private key.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    authentication type *Wallet* with mTLS
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    <td valign="top">
+    
+    Oracle wallet is used as sole authentication method for X.509 certificate-based authentication and as trust store for mTLS credentials. It must contain server certificate, client certificate, client CA, client private key.
+    
+    </td>
+    </tr>
+    </table>
+    
+    For more information, see [Creating a New Oracle Wallet](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbimi/using-oracle-wallet-manager.html#GUID-D2A75B9A-B0A4-42B1-84A8-581590B63288) in the *Oracle* documentation \(Oracle database, release 19\).
+
+    When creating the database user used for the connection, consider the following:
+
+    -   For authentication type *User Name and Password* with TLS/mTLS, Oracle uses the client certificate for caller validation and user name and password for authentication. For information about creating a database user in this scenario, see [MFA Certificate-based Authentication](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/configuring-authentication.html#GUID-E3CFA8C5-1BC9-4BDE-973D-CEF829E163BE) in the *Oracle* documentation.
+    -   For authentication type *Wallet* with mTLS, Oracle uses the client certificate for caller validation and authentication. For information about creating a database user in this scenario, see [Create an External User in the Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/configuring-secure-sockets-layer-authentication.html#GUID-9FD39673-6380-4BFF-831E-976068BFB47B) in the *Oracle* documentation.
+
+-   If you want to use an existing connection for replication flows, you need to edit the connection and complete the TLS properties and credentials according to your scenario. Note that remote tables and data flows are not supported when you change the authentication type to *Wallet*.
 
 
 
@@ -320,7 +452,49 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 
 
-### Credentials 
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to the Oracle database. 
+
+You can select:
+
+-   *User Name And Password* for basic authentication \(default value\)
+-   *Wallet* for X.509 certificate authentication using an Oracle wallet
+
+> ### Note:  
+> *Wallet* is not supported for remote tables and data flows. Selecting the value disables these features.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(User Name and Password\)
 
 If *Authentication Type* = *User Name and Password*:
 
@@ -359,6 +533,54 @@ Enter the Oracle database user name \(case-sensitive\).
 <td valign="top">
 
 Enter the Oracle database user password. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Wallet Credentials
+
+If *Authentication Type* = *Wallet*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Wallet File \(ewallet.p12\)*  
+
+</td>
+<td valign="top">
+
+Upload the wallet file containing the required certificates, client CA, and private key. 
+
+To upload the file, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Wallet Password*  
+
+</td>
+<td valign="top">
+
+Enter the password for the wallet file. 
 
 </td>
 </tr>
@@ -417,6 +639,25 @@ When using the connection for remote tables, enter the distinguished name \(DN\)
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+\[if *Use TLS* = *true*\] *Wallet Auto-Login File \(cwallet.sso\)*
+
+</td>
+<td valign="top">
+
+Replication flows require the server certificate contained in the wallet auto-login file to be uploaded to the connection. 
+
+To upload the file, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> When using TLS, you must upload the file with the server certificate, regardless of whether you use replication flows with the connection.
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -440,12 +681,29 @@ Description
 <tr>
 <td valign="top">
 
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Remote Tables*
 
 </td>
 <td valign="top">
 
 To enable *Remote Tables*, select a Data Provisioning Agent.
+
+> ### Note:  
+> In file spaces or when using *Wallet* as *Authentication Type*, remote tables are not supported.
+
+
 
 </td>
 </tr>
@@ -457,7 +715,12 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 </td>
 <td valign="top">
 
-*Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section. 
+*Data Flows* are enabled without the need to set any additional connection properties. If your source is an on-premise source, make sure you have maintained the properties in the *Cloud Connector* section.
+
+> ### Note:  
+> In file spaces or when using *Wallet* as *Authentication Type*, data flows are not supported.
+
+
 
 </td>
 </tr>

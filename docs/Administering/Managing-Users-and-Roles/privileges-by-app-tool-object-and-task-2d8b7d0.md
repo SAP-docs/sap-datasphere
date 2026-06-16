@@ -77,7 +77,7 @@ Any role template that gives access to SAP Datasphere grants these scoped privil
 
 ## Monitoring Privileges
 
-The following privileges are required to use the :desktop_computer: *Monitoring* app.
+The following privileges are required to use the :desktop_computer: *\(Monitoring\)* app.
 
 
 <table>
@@ -1155,7 +1155,7 @@ To copy a space and its contents, you must have a global role that grants you th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`C-------`\) - To create spaces.
 -   *User* \(`-R------`\) - To initialize the space for assigning users.
--   *Role* \(`--U-----`\) - To add the new space to all scoped roles that the original space belongs to.
+-   *Role* \(`-RU-----`\) - To add the new space to all scoped roles that the original space belongs to.
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
 
@@ -1228,7 +1228,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 Create database users
 
-See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:
+See [Create a Database User](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/798e3fd6707940c3bd2219b2d1ebaac2.html "Users with a space administrator role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1469,7 +1469,7 @@ See [Managing SAP Datasphere Users](managing-sap-datasphere-users-4fb82cb.md)
 To manage users, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\)area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
+-   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\) area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
 -   *User* \(`-------M`\) - To assign users to roles.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 

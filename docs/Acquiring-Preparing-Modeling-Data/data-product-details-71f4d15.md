@@ -686,7 +686,7 @@ Choose the *Open Impact and Lineage* button in the header to see a diagram for t
 -   *Lineage* is displayed to the left of the analyzed object \(or below it\). It shows objects that the analyzed object uses as sources. It allows you to trace errors back to the root cause.
 -   *Impact* is displayed to the right of the analyzed object \(or above it\). It shows objects that use the analyzed object as a source. It allows you to understand the impact of changes on dependent objects.
 
-![Impact and Lineage Analysis diagram showing the an analyzed object with its impact and lineage expanded.](images/Impact_and_Lineage_Analysis_Diagram_for_a_Data_Product_6493ef3.png)
+![Impact and Lineage Analysis diagram showing the an analyzed object with its impact and lineage expanded.](images/Impact_and_Lineage_Analysis_Diagram_for_a_Data_Product_3abd1ab.png)
 
 This impact and lineage analysis diagram for an installed data product contains the following features.
 
@@ -724,9 +724,11 @@ Use the toolbar and diagram tools to control the layout of the diagram. choose *
 </td>
 <td valign="top">
 
-The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud system\) or a <span class="SAP-icons-V5"></span> data provider.
+The outermost container represents a source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere or <span class="SAP-icons-V5"></span> SAP Analytics Cloud system\), a <span class="SAP-icons-V5"></span> data provider, or a target system \(for example SAP Databricks\).
 
 Source systems connected to and monitored by the catalog show their business or technical name. Systems not connected to the catalog show their system type with the text "unmonitored". The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
+
+Target systems appear in the impact of a data product when a data product is shared to it.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -744,6 +746,7 @@ The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space, <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder, or <span class="FPA-icons-V3"></span> BW InfoArea\). It contains objects that either appear in the lineage of or are impacted by the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
 -   A :package: data product. The data product is visible if you have access and view permission for it. For example, you are a member of the context associated with it or if you are a member of the space where it has been installed. Also, you will be able to view the details to see a brief summary of the data product or open the data product page.
+-   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is shared to certain target systems \(for example, SAP Databricks\), it's shared to a folder. 
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 

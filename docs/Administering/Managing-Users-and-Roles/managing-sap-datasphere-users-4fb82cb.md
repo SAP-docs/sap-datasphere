@@ -15,7 +15,7 @@ You can create and modify users in SAP Datasphere in several different ways.
 To manage users, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\)area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
+-   *User* \(`CRUD----`\) - To access the <span class="FPA-icons-V3"></span> \(*Users*\) area in the <span class="FPA-icons-V3"></span> \(*Security*\) tool and to create, update, and delete users.
 -   *User* \(`-------M`\) - To assign users to roles.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 

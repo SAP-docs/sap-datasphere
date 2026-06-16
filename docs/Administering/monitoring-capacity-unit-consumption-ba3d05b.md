@@ -4,7 +4,7 @@
 
 # Monitoring Capacity Unit Consumption
 
-Monitor the amount of capacity units consumed each month to track usage patterns and plan resource allocation.
+Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.
 
 
 
@@ -21,13 +21,15 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Context
 
-The *Capacities Monitoring* tool provides insights into monthly and daily capacity unit consumption, allowing users to track usage relative to their subscription and download detailed hourly data. This tool is useful for optimizing resource allocation and ensuring efficient subscription management.
+The *Capacities Monitoring* tool enables users to define a custom date range to analyze capacity unit consumption over a selected period. It provides insights into monthly and daily capacity unit consumption, enabling users to track usage relative to their subscription and download detailed hourly data. These insights support optimized resource allocation and efficient subscription management.
+
+On the *Spaces* tab, users can view and troubleshoot consumption spikes by identifying which spaces contribute to increased usage. It provides a breakdown by space for Premium Outbound Integration, object store usage, and total capacity unit consumption per space.
 
 
 
 ## Procedure
 
-1.  From the side navigation menu, click :desktop_computer: *Monitoring* *\>* <span class="SAP-icons-V5"></span> *Capacities Monitoring*  .
+1.  From the side navigation menu, click :desktop_computer: *\(Monitoring\)* *\>* <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)*  .
 
 
     <table>
@@ -51,7 +53,7 @@ The *Capacities Monitoring* tool provides insights into monthly and daily capaci
     </td>
     <td valign="top">
     
-    Shows the number of capacity units consumed this month.
+    Shows the number of capacity units consumed in the specified time frame.
     
     </td>
     </tr>
@@ -63,7 +65,7 @@ The *Capacities Monitoring* tool provides insights into monthly and daily capaci
     </td>
     <td valign="top">
     
-    Shows the percentage of your capacity unit subscription that is used this month.
+    Shows the percentage of your capacity unit subscription that is used specified time frame.
     
     </td>
     </tr>
@@ -75,7 +77,7 @@ The *Capacities Monitoring* tool provides insights into monthly and daily capaci
     </td>
     <td valign="top">
     
-    Displays a bar chart showing the amount of capacity units consumed each day of this month.
+    Displays a bar chart showing the number of capacity units consumed each day of this month.
     
     </td>
     </tr>
@@ -83,11 +85,101 @@ The *Capacities Monitoring* tool provides insights into monthly and daily capaci
     
     The *Capacities Monitoring* app is shown.
 
-2.  To download a CSV file of the consumption, click <span class="SAP-icons-V5"></span>*Download Capacity Metrics as CSV*.
+2.  To view capacity unit consumption and other data per space, click the *Spaces* tab.
 
-3.  Click <span class="SAP-icons-V5"></span>and select the beginning and end dates for the report.
 
-4.  Click *Download*.
+    <table>
+    <tr>
+    <th valign="top">
+
+    Column Name
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Technical Name*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the name of the space where consumption is being tracked.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Used Premium Outbound Volume*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of outbound data transferred from the space using Premium Outbound Integration, measured in gigabytes for the specified time frame.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Used Object Store Storage*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of object store storage consumed by the space during the selected time period, measured in terabytes \(TB\).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Used Object Store Compute*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the total compute resources used for object store operations, measured in gigabyte-hours \(GB-hours\) for the specified time frame.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Used Object Store Requests*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the number of API requests made to the object store by the space in the specified time frame.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Capacity Unit Consumption*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the number of capacity units consumed by the space across supported services and resources in the specified time frame.
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  To download a CSV file of the consumption, click <span class="SAP-icons-V5"></span>*Download Capacity Metrics as CSV*.
+
+4.  Click <span class="SAP-icons-V5"></span>and select the beginning and end dates for the report.
+
+5.  Click *Download*.
 
     The following table explains the information is in each column.
 
@@ -193,10 +285,10 @@ The *Capacities Monitoring* tool provides insights into monthly and daily capaci
     
     The values shown for CONSUMED\_CU and CONSUMED\_BLOCKS are not final and can change. For metrics involving multiple tasks that generate CU consumption, such as Premium Outbound Integration or ECN, the values are approximate due to the concurrent nature of those tasks. When the values in these columns are empty, the cause could be:
 
-    -   The entry did not present any consumption. This might happen when there are multiple workflows present, as entries will still be displayed even though they were not running at the time.
+    -   The entry did not present any consumption. This situation could happen when there are multiple workflows present, as entries are displayed even though they were not running at the time.
     -   The values are not available because the measurement has not been consolidated yet.
 
-    The CSV file is downloaded, and you can view it in you spreadsheet application.
+    The CSV file is downloaded, and you can view it in your spreadsheet application.
 
     > ### Note:  
     > The CSV file contains approximate data that may not reflect the finalized monthly total.

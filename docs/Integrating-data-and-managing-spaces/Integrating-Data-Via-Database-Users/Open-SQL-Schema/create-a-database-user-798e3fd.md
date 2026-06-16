@@ -4,7 +4,7 @@
 
 # Create a Database User
 
-Users with a space administration role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.
+Users with a space administrator role can create database users, granting them privileges to read from and/or write to an Open SQL schema with restricted access to the space schema.
 
 This topic contains the following sections:
 

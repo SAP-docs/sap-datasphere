@@ -4,7 +4,7 @@
 
 # Create an "Operator and Values" Data Access Control
 
-Users with the *DW Space Administrator* role \(or equivalent privileges\) can create data access controls in which criteria are defined as operator and value pairs. Each user can only see the records that fulfill the operator-value pairs she is authorized for in the permissions entity, including support for complex `AND` and `OR` combinations.
+You can create data access controls in which criteria are defined as operator and value pairs. Each user can only see the records that fulfill the operator-value pairs she is authorized for in the permissions entity, including support for complex `AND` and `OR` combinations.
 
 
 
@@ -41,6 +41,12 @@ Before creating your data access control, you must have prepared a permissions e
 
 -   Restriction Column - Each restriction per user must have a unique name, and one or more criteria can belong to each restriction. All criteria belonging to a restriction act together as an `AND` condition. If you have more than one restriction per user then all restrictions act together as an `OR` condition.
 -   Criterion Column - The criteria name must contain only alphanumeric characters and underscores and appears in the *Mappings* area when a user applies the data access control to their view. It does not need to exactly match a column name, but should guide the user to the column to which it should be mapped.
+
+    > ### Note:  
+    > If you add a new criterion to an “Operator and Values” permissions entity that is already consumed by one or more data access controls, then any users implicated in the new criterion will not be able to view data until you review the data access control, provide any necessary mappings, and redeploy it.
+    > 
+    > In order to minimize service interruptions in situations where you have a single permissions entity that is consumed by multiple data access controls, we recommend to create individual permissions views that consume the underlying permissions entity and use filtering to provide each data access control with only those permissions records that are relevant to it.
+
 -   Operator Column - The following operators are supported:
     -   `ALL` \(or `*`\) - Provides access to all records. No values required.
     -   `N` \(or `IS NULL`\) - Is null. No values required.

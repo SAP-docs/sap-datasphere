@@ -129,6 +129,21 @@ REST API
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+All supported sources
+
+</td>
+<td valign="top">
+
+-   Binary \(length 0, and higher than 5000\)
+-   String \(length 0, and higher than 5000\)
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -137,7 +152,7 @@ REST API
 
 ## Unsupported Targets Data Types
 
-The following target data types are not supported in replication flow:
+The following target data types are not supported in replication flow, but will be converted to supported data types:
 
 
 <table>
@@ -193,6 +208,21 @@ Data columns with the following data types will not be replicated:
 -   uint8
 -   tiny int
 -   datatime
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+All supported targets
+
+</td>
+<td valign="top">
+
+-   Binary \(length 0, and higher than 5000\)
+-   String \(length 0, and higher than 5000\)
 
 
 

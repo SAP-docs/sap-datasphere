@@ -303,6 +303,28 @@ Not supported
 <tr>
 <td valign="top">
 
+Oracle
+
+</td>
+<td valign="top">
+
+`I-----` 
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP ABAP
 
 </td>
@@ -330,7 +352,7 @@ SAP BW
 </td>
 <td valign="top">
 
-`I-----`
+`I-----` 
 
 </td>
 <td valign="top">
@@ -352,7 +374,7 @@ SAP ECC
 </td>
 <td valign="top">
 
-`I-----`
+`I-----` 
 
 </td>
 <td valign="top">
@@ -406,7 +428,7 @@ SAP HANA Cloud, Data Lake Files
 </td>
 <td valign="top">
 
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right: | Use as:  <?sap-ot O2O class="- topic/xref " href="84405b0d00d543dc846fe19262c60682.xml" text="Source" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/jju1777964723958/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right: | Use as:  <?sap-ot O2O class="- topic/xref " href="84405b0d00d543dc846fe19262c60682.xml" text="Source" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/nfs1779285649413/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 </tr>
@@ -473,6 +495,28 @@ Not supported
 <td valign="top">
 
 [Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right: | Use as: [Source](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Snowflake
+
+</td>
+<td valign="top">
+
+`I-----`
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d9ead8bb44ac456d99a141b4e3f5e973.html "Use the connection to connect to and access data from a Snowflake database.") :arrow_upper_right:
 
 </td>
 </tr>

@@ -223,7 +223,12 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Confluent* - Confluent Platform on-premise - for the Kafka broker \(replication flows\)
+        *Confluent* \- Confluent Platform on-premise and Confluent Cloud \(for private connectivity\): Kafka brokers- \(replication flows\)
+
+        > ### Note:  
+        > Separate system mappings are required for the bootstrap server address and for each internal Kafka broker address.
+
+
         
         </td>
         <td valign="top">
@@ -235,7 +240,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Confluent* - Confluent Platform on-premise - for the Schema Registry \(replication flows\)
+        *Confluent* \- Confluent Platform on-premise and Confluent Cloud \(for private connectivity\): Schema Registry \(replication flows\)
         
         </td>
         <td valign="top">
@@ -314,7 +319,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
-        *Oracle* \(data flows\) 
+        *Oracle* \(replication flows, data flows\) 
         
         </td>
         <td valign="top">
@@ -425,6 +430,18 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *SAP S/4HANA On-Premise* - live data tunnel connection \(model import\)
+        
+        </td>
+        <td valign="top">
+        
+        HTTPS
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Snowflake* \(replication flows\)
         
         </td>
         <td valign="top">
@@ -639,7 +656,7 @@ For more information about the supported use cases depending on the connection t
         </td>
         <td valign="top">
         
-        If you are connecting to Confluent Platform \(on-premise\), limit the accessible resources for the Schema Registry to the following URL path:
+        If you are connecting to Confluent Platform \(on-premise\) or to Confluent Cloud \(private connectivity\), limit the accessible resources for the Schema Registry to the following URL path:
 
         `/`
         
@@ -649,6 +666,23 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         *Google BigQuery* \(HTTPS\)
+        
+        </td>
+        <td valign="top">
+        
+        For replication flows, limit the accessible services to the following URL path:
+
+        -   `/` - *Path and all sub-paths*
+
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Snowflake* \(HTTPS\)
         
         </td>
         <td valign="top">

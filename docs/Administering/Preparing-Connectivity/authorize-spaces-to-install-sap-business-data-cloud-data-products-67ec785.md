@@ -7,7 +7,7 @@
 An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.
 
 > ### Note:  
-> This procedure only applies to manual data product installation. It doesn't apply to the installation of SAP Business Data Cloud intelligent applications.
+> This procedure only applies to manual data product installation. It doesn't apply to the installation of SAP Business Data Cloud intelligent content.
 
 
 

@@ -21,7 +21,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Reviewing Expensive Statement Logs
 
-In the side navigation area, click :desktop_computer: *Monitoring* \> <span class="SAP-icons-V5"></span> *Expensive Statement Logs* . The *Expensive Statement Logs* app lists the logs of SQL statement runs that exceed the specified thresholds.
+In the side navigation area, click :desktop_computer: *\(Monitoring\)* \> <span class="SAP-icons-V5"></span> *\(Expensive Statement Logs\)* . The *Expensive Statement Logs* app lists the logs of SQL statement runs that exceed the specified thresholds.
 
 > ### Note:  
 > This app contains data if the *Enable Expensive Statement Tracing* \(in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*\) is enabled. See [Configure Monitoring](configure-monitoring-9cd0691.md).
