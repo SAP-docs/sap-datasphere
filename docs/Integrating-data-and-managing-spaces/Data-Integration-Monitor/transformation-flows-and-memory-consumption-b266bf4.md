@@ -16,7 +16,7 @@ If your transformation flow is very complex, using remote or shared sources, you
 
 ### Monitor Memory Consumption
 
--   Analyze system memory usage and allocation limits using system monitoring tools. See [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right:.
+-   Analyze system memory usage and allocation limits using system monitoring tools. See [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right:.
 -   Analyze your flow with the running tools providing the necessary information to optimize your data model when an out-of-memory error happens. See [Explore Transformation Flows](explore-transformation-flows-7588192.md).
 -   Monitor your disk space using the SAP HANA Cockpit to check disk statistics to check that there’s enough space on disk for data volumes and log volumes. See [Disk Usage: Monitor Disk Volume](https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/5c947a6a2f0f4c3b95a9628d4441bd18.html).
 
@@ -24,7 +24,7 @@ If your transformation flow is very complex, using remote or shared sources, you
 
 ### Manage Memory Consumption
 
--   Configure workload class limitations to optimize resource allocation without triggering OOM events. See [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
+-   Configure workload class limitations to optimize resource allocation without triggering OOM events. See [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:.
 -   Change the run mode for a transformation flow and choose between performance and memory consumption. See [Change Transformation Flow Settings](change-transformation-flow-settings-f7da029.md).
 -   Reclaim space by reclaiming freed log segments and unused space in data volumes. See [Reclaim Space](https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/77c0de2ecc2741758b12e22feffb8db6.html).
 

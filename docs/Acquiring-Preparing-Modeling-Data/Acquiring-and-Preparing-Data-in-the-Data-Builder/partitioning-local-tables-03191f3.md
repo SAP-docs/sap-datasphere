@@ -16,7 +16,7 @@ To work with partitions in a standard space \(with **SAP HANA Database \(Disk an
 -   To create, update, or schedule partitions, you must have a scoped role that grants you access to a space with the following privileges: *Data Warehouse Data Integration* \(--UE----\) – The *DW Integrator* role template, for example, grants this privilege. Note that with this privilege, you will be able to create partitions both on empty tables and on tables that already contain data.
 -   To create, see and monitor existing partitions, you must have a scoped role that grants you access to a space with the following privileges: *Data Warehouse Data Builder* \(-RU---\) – The *DW Modeler* role template, for example, grants this privilege. Note that with this privilege, you will be able to create partition on tables that don't have data only. To create partitions on tables that already contain data, you must add the *Data Warehouse Data Integration* permission.
 
-    For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+    For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 
 To create partitions for local tables \(file\) stored in a file space \(with **SAP HANA Data Lake Files** storage\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md).
@@ -42,7 +42,7 @@ Working with a large volume of data can cause memory shortages and take many sys
 -   *Hash*: You select one or more columns of your table that will serve for the partitioning. The table will then be split into the number of partitions you have defined. In our example above, if you have set 15 partitions on the Year column, you will have 15 partitions that will contain the same amount of data.
 
 > ### Restriction:  
-> -   Supported data types include:
+> -   The column must include one of the supported data types:
 > 
 >     -   String
 >     -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT
@@ -196,6 +196,11 @@ If your table does not contain data and was not deployed before you created the 
 
 Partitioning large tables can be time- and resource-consuming. To ensure efficient deployment, the partitioning process must not block the deployment of the table or its dependent objects. Therefore, partitioning will be run as a separate task after the table has been successfully deployed.
 
+> ### Note:  
+> Defining partitions on a table that already contains data can be done only once. If later on you want to change the partition definition, data will have to be deleted first.
+> 
+> For tables with existing partitions containing data, if you change the partition type from *Range* to *Dynamic Range* \(for compatible columns\), the existing partitions will remain, but new partitions will be created for new incoming data using the **interval-based dynamic range partitioning**.
+
 Once your partition definition is saved and you click on *Deploy*, you are invited to decide how the partition creation task will happen:
 
 -   *Automatically After Deployment*: Once the deployment is complete, the partition creation task will start automatically.
@@ -212,5 +217,5 @@ Once your partition definition is saved and you click on *Deploy*, you are invit
 > -   You must pause any replication flow runs that consume this table.
 > -   You must wait until the running flows are complete.
 
-Note that defining partitions on a table that already contains data can be done only once. If later on you want to change the partition definition, data will have to be deleted first.
+You can monitor your partitions in the *Local Tables* monitor. For more information, see [Monitoring Your Partitions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/3c9de9eb77e649a98450f4fd67a5f7ba.html "You have created partitions for your local table in the Data Builder, and you now want to monitor the details of these partitions.") :arrow_upper_right:.
 

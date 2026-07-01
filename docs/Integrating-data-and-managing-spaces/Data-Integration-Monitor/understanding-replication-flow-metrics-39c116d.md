@@ -50,8 +50,8 @@ Displays the time spent running the task. For example, *Initial Load Duration*.
 </td>
 <td valign="top">
 
--   Displays the number of records replicated into SAP Datasphere during initial load. Delta load records are not included.
--   *Staged Operation Count*shows how many records were staged before being merged into the final large file when Create Large Files is enabled. See [Cloud Storage Provider Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
+-   Displays the number of records replicated into SAP Datasphere during initial load.
+-   *Staged Operation Count*shows how many records were staged before being merged into the final large file when Create Large Files is enabled. See [Cloud Storage Provider Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:.
 
 
 
@@ -131,7 +131,7 @@ Displays the status of the object replication.
 </td>
 <td valign="top">
 
-Total delta records counts.
+Total delta records counts. Only inserted, updated or deleted records are considered.
 
 </td>
 </tr>

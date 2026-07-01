@@ -19,7 +19,7 @@ To allocate disk and memory storage to spaces, you must have a global role that 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 > ### Note:  
-> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+> This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).
 
 
 
@@ -29,13 +29,13 @@ SAP Datasphere supports data tiering using the features of SAP HANA Cloud:
 
 -   Memory Storage \(hot data\) - Keep your most recent, frequently-accessed, and mission-critical data loaded constantly in memory to maximize real-time processing and analytics speeds.
 
-    When you persist a view, the persisted data is stored in memory \(see [Persist Data in a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:\).
+    When you persist a view, the persisted data is stored in memory \(see [Persist Data in a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/9bd12cf116ae40e09cdba8b60cf75e11.html "Improve the performance while working with views by persisting the view data, and scheduling regular updates to keep your data up-to-date.") :arrow_upper_right:\).
 
 -   Disk \(warm data\) - Store master data and less recent transactional data on disk to reduce storage costs.
 
-    When you load data to a local table or replicate data to a remote table in SAP Datasphere, the data is stored on disk by default, but you can load it in memory by activating the *Store Table Data in Memory* switch \(see [Accelerate Table Data Access with In-Memory Storage](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/407d1dff76a842699ea08c17eb8748dd.html "By default, when you are working in an SAP HANA Cloud, SAP HANA database space, table data is stored on disk. You can improve performance by enabling in-memory storage.") :arrow_upper_right:\).
+    When you load data to a local table or replicate data to a remote table in SAP Datasphere, the data is stored on disk by default, but you can load it in memory by activating the *Store Table Data in Memory* switch \(see [Accelerate Table Data Access with In-Memory Storage](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/407d1dff76a842699ea08c17eb8748dd.html "By default, when you are working in an SAP HANA Cloud, SAP HANA database space, table data is stored on disk. You can improve performance by enabling in-memory storage.") :arrow_upper_right:\).
 
--   Data Lake \(cold data\) - Store historical data that is infrequently accessed in the data lake. With its low cost and high scalability, the data lake is also suitable for storing vast quantities of raw structured and unstructured data, including IoT data. For more information, see [Integrating Data to and From SAP HANA Cloud Data Lake](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e84545bd205b4f9f9c1731144c7d3075.html "Users with an administrator role can connect an SAP Datasphere space with SAP HANA Cloud, data lake to store and access large amounts of data.") :arrow_upper_right:.
+-   Data Lake \(cold data\) - Store historical data that is infrequently accessed in the data lake. With its low cost and high scalability, the data lake is also suitable for storing vast quantities of raw structured and unstructured data, including IoT data. For more information, see [Integrating Data to and From SAP HANA Cloud Data Lake](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e84545bd205b4f9f9c1731144c7d3075.html "Users with an administrator role can connect an SAP Datasphere space with SAP HANA Cloud, data lake to store and access large amounts of data.") :arrow_upper_right:.
 
 You can allocate specific amounts of memory and disk storage to a space or disable the *Enable Space Quota* option, and allow the space to consume all the storage it needs, up to the total amount available in your tenant.
 
@@ -130,7 +130,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     </table>
     
     > ### Note:  
-    > If a space exceeds its allocations of memory or disk storage, it will be locked until a user of the space deletes the excess data or an administrator assigns additional storage. See [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.") :arrow_upper_right:.
+    > If a space exceeds its allocations of memory or disk storage, it will be locked until a user of the space deletes the excess data or an administrator assigns additional storage. See [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.") :arrow_upper_right:.
 
 3.  Click *Save* to save your changes to the space, or *Deploy* to save and immediately make the changes available to users assigned to the space.
 

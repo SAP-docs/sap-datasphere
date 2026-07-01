@@ -64,5 +64,5 @@ For more information, see [Configure Cloud Connector](configure-cloud-connector-
 **Related Information**  
 
 
-[Generic SFTP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to connect to and access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
+[Generic SFTP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to connect to and access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
 

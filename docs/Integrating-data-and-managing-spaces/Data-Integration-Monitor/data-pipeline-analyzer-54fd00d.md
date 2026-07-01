@@ -17,13 +17,13 @@ To launch the *Data Pipeline Analyzer*, you must have a scoped role that grants 
 -   **Data Warehouse General** \(-**R**------\) - To access SAP Datasphere.
 -   **Data Warehouse Data Integration** \(-**R**------\) or **Data Warehouse Data Builder** \(-R------\) To start the *Data Pipeline Analyzer* 
 
-The *DW Integrator* or *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+The *DW Integrator* or *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 In addition, to perform actions \(such as Run\) and solve identified issues, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   **Data Warehouse Data Integration** \(--**U**-----\) - To manually run data integration tasks.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:
 
 
 
@@ -79,7 +79,7 @@ Find and select objects in the diagram. Results are proposed once three characte
 </td>
 <td valign="top">
 
- 
+Perform a global refresh action to refresh the status of all objects.
 
 </td>
 </tr>
@@ -91,7 +91,7 @@ Find and select objects in the diagram. Results are proposed once three characte
 </td>
 <td valign="top">
 
-
+Display the related messages on the model level. The design and color of the button will change to indicate the level of issues \( Error/Warning/Information/Success cases\) from red to green, where red is the most critical error and green means no issue. 
 
 </td>
 </tr>
@@ -103,7 +103,7 @@ Lineage
 </td>
 <td valign="top">
 
-
+Data Lineage provides information on the data provenance of a selected object. It shows objects that the analyzed object uses as sources, and allows you to trace errors back to the root cause. 
 
 </td>
 </tr>
@@ -169,6 +169,18 @@ Scroll, zoom, or recenter the diagram:
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Details
+
+</td>
+<td valign="top">
+
+You can create a Business Summary, or let AI generate a business summary for you to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements. For more information, see [Generate Summaries of the Data Pipeline Analyzer With AI](generate-summaries-of-the-data-pipeline-analyzer-with-ai-1e72ea2.md)
+
+</td>
+</tr>
 </table>
 
 
@@ -199,7 +211,7 @@ Description
 </td>
 <td valign="top">
 
-
+The Notification Bubbles are displayed with different colors depending of the type of information: red for errors, orange for warning and blue for information. They indicate which objects have issues and will provide more info in a detailed message with specific actions to fix the issue. The number will always be 1 because it tracks only the last recent error, not all the errors of the entire life cycle of a particular object. 
 
 </td>
 </tr>
@@ -211,7 +223,7 @@ Description
 </td>
 <td valign="top">
 
-
+The icons indicate the run status of an object. They are displayed with the usual color code: Red for errors, orange for warning, blue for information and green for successful run. 
 
 </td>
 </tr>

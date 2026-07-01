@@ -12,7 +12,7 @@ When you have created a database user, you can connect to your Open SQL schema w
 
 ## Prerequisites
 
-To connect to an Open SQL schema or to allow the space to access the open SQL schema, you must have a database user and a password \(see [Create a Database User](create-a-database-user-798e3fd.md)\).
+To connect to an Open SQL schema or to allow the space to access the open SQL schema, you must have a database user \(see [Create a Database User](create-a-database-user-798e3fd.md)\).
 
 
 
@@ -22,7 +22,8 @@ To connect to an Open SQL schema or to allow the space to access the open SQL sc
 
 To obtain the host name, port, and user name required to connect to your Open SQL schema, click the <span class="FPA-icons-V3"></span> button for your user in the *Database Users* list.
 
-For security reasons, the password is not displayed in this dialog. If you have forgotten your password, you can generate a new one by clicking *Request New Password*.
+-   For database users authenticated with a password, the password is not displayed in this dialog for security reasons. If you have forgotten your password, you can generate a new one by selecting *Request New Password*.
+-   For database users authenticated with a certificate, note that client certificates have an expiration date. If your certificate expires, contact the administrator who issued it to obtain a replacement.
 
 
 
@@ -30,7 +31,7 @@ For security reasons, the password is not displayed in this dialog. If you have 
 
 ## Connecting with SAP HANA Database Explorer
 
-To open your Open SQL schema directly in the SAP HANA database explorer from your space page, select your user in the *Database Users* list, and then click *Open Database Explorer*. You will need to enter your password in order to add your schema to the list of databases.
+To open your Open SQL schema directly in the SAP HANA database explorer from your space page, select your user in the *Database Users* list, and then click *Open Database Explorer*. For database users authenticated with a password, you'll need to enter your password. For database users authenticated with a certificate, you'll need to provide the client certificate and its private key. You can then add your schema to the list of databases.
 
 To browse the objects in your schema, expand its node, expand *Catalog*, and click on an object category. To browse the space schema, click *Choose Schema* and select the space schema in the list.
 
@@ -56,7 +57,7 @@ For more information, see [Connecting to SAP HANA Cloud](https://help.sap.com/vi
 
 For information about importing data from cloud storage services, see [Importing and Exporting Data](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/261937915fa5438ca545b8278b2979b7.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
 
-If the SAP HANA Cloud script server is enabled \(see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: and your database user has the *Enable Automated Predictive Library and Predictive Analysis Library* option enabled, you can work with the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries.
+If the SAP HANA Cloud script server is enabled \(see [Enable the SAP HANA Cloud Script Server on Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/287194276a7d4d778ec98fdde5f61335.html "You can enable the SAP HANA Cloud script server on your SAP Datasphere tenant to access the SAP HANA Automated Predictive Library (APL) and SAP HANA Predictive Analysis Library (PAL) machine learning libraries.") :arrow_upper_right: and your database user has the *Enable Automated Predictive Library and Predictive Analysis Library* option enabled, you can work with the SAP HANA Automated Predictive Library \(APL\) and SAP HANA Predictive Analysis Library \(PAL\) machine learning libraries.
 
 For detailed information about using the machine learning libraries, see:
 

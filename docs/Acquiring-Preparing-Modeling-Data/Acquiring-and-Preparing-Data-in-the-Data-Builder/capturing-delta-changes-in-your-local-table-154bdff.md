@@ -2,7 +2,7 @@
 
 # Capturing Delta Changes in Your Local Table
 
-Enable *Delta Capture* in your local table to automatically track all inserts, updates and deletions of its records via *Change Date* and *Change Type* columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.
+Enable *Delta Capture* in your local table to automatically track all inserts, updates and deletions of its records via *Change Date* and *Change Type* columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.
 
 
 

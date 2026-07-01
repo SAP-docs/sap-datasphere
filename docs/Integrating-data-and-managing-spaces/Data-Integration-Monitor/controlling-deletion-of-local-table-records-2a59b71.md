@@ -6,7 +6,7 @@
 
 Delete records for local tables, on-demand, using filter conditions or using a schedule.
 
-Table records can consume a lot of memory and you might need to do a cleanup of older records regularly. Especially for tables where delta capture is enabled, as when you delete records, they are not physically deleted but marked as deleted to allow other apps to propagate the changes to the different objects that consume it in delta mode. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:. As these records continue to consume memory until they are physically deleted from SAP Datasphere, you must clean up your data regularly.
+Table records can consume a lot of memory and you might need to do a cleanup of older records regularly. Especially for tables where delta capture is enabled, as when you delete records, they are not physically deleted but marked as deleted to allow other apps to propagate the changes to the different objects that consume it in delta mode. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:. As these records continue to consume memory until they are physically deleted from SAP Datasphere, you must clean up your data regularly.
 
 From :desktop_computer: *\(Monitoring\)* \> :fast_forward: *\(Data Integration\)* , go to the *Local Tables* monitor. Navigate to the details screen of the local table you want to perform the data deletion.
 
@@ -46,7 +46,7 @@ Displays the size used by the local table if it is stored on the disk.
 </td>
 <td valign="top">
 
-Displays the size used by the table, if it is stored in-memory. For more information, see [Accelerate Table Data Access with In-Memory Storage](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/407d1dff76a842699ea08c17eb8748dd.html "By default, when you are working in an SAP HANA Cloud, SAP HANA database space, table data is stored on disk. You can improve performance by enabling in-memory storage.") :arrow_upper_right: 
+Displays the size used by the table, if it is stored in-memory. For more information, see [Accelerate Table Data Access with In-Memory Storage](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/407d1dff76a842699ea08c17eb8748dd.html "By default, when you are working in an SAP HANA Cloud, SAP HANA database space, table data is stored on disk. You can improve performance by enabling in-memory storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -70,7 +70,7 @@ Displays the current number of records in the table.
 </td>
 <td valign="top">
 
-Indicates if the table tracks the changes made on your local table after you have deployed it. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right: 
+Indicates if the table tracks the changes made on your local table after you have deployed it. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -118,7 +118,7 @@ Description
 </td>
 <td valign="top">
 
-You want to delete all records contained in the local table. Note that in case of tables with delta capture enabled, all records will be marked as deleted but will not be deleted physically. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right: 
+You want to delete all records contained in the local table. Note that in case of tables with delta capture enabled, all records will be marked as deleted but will not be deleted physically. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right: 
 
 </td>
 </tr>

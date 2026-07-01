@@ -14,10 +14,7 @@ Typical measures include:
 -   Hours
 -   Distance
 
-Measures are displayed in the *Measures* section of tables and views.
-
-> ### Note:  
-> In the graphical view and SQL view editors, you can click the *Edit Columns* button in the *Measures* list to open it in a dialog.
+Measures are displayed in the *Measures* section of tables and views. In the graphical view and sql view editors, click the *Edit Columns* button in the *Measures* list to open and edit it in a dialog.
 
 By default, all columns in a fact are identified as attributes, and you must convert one or more into measures:
 

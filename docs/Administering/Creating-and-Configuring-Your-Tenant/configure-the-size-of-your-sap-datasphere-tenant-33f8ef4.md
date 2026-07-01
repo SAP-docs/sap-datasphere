@@ -226,7 +226,7 @@ SAP BW Bridge includes SAP BTP, ABAP environment, and an own HANA Cloud runtime 
 > It isn not possible to downsize an SAP BW Bridge tenant.
 
 > ### Note:  
-> -   First finalize the size configuration of your tenant. Then, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
+> -   First finalize the size configuration of your tenant. Then, you can create the SAP BW bridge instance in the dedicated page *SAP BW Bridge* of the *Configuration* area with the size you’ve allocated \(see [Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/STABI/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:\).
 > 
 > -   For data center availability, check SAP note [3144215](https://launchpad.support.sap.com/#/notes/3144215).
 > 
@@ -455,7 +455,7 @@ Displays the number of execution hours available for data integration applicatio
 > If you exceed the available execution hours, your data integration processes \(such as replication flow runs\) continues running to avoid interrupting critical integration scenarios, which can result in additional costs \(depending on your plan\).
 
 > ### Note:  
-> Billing is based on the duration of the replication flow job, rather than the volume of records processed. To optimize costs, consider adjusting the Delta Load Frequency or creating a schedule for your replication flows and including it in a task chain. For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:
+> Billing is based on the duration of the replication flow job, rather than the volume of records processed. To optimize costs, consider adjusting the Delta Load Frequency or creating a schedule for your replication flows and including it in a task chain. For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:
 
 
 
@@ -548,7 +548,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the number of blocks to be used for premium outbound integration. Having at least one block assigned here is a prerequisite for using a non-SAP target in a replication flow. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right:.
+Enter the number of blocks to be used for premium outbound integration. Having at least one block assigned here is a prerequisite for using a non-SAP target in a replication flow. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right:.
 
 Each block gives you 20 GB of data volume for transfer.
 

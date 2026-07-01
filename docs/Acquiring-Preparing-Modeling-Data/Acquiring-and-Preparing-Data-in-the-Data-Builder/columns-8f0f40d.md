@@ -6,10 +6,7 @@
 
 Columns appear in tables and views with a *Semantic Usage* of *Relational Dataset*.
 
-Columns are displayed in the *Columns* section of tables and views.
-
-> ### Note:  
-> In the graphical view and sql view editors, you can click the *Edit Columns* button in the *Columns* list to open it in a dialog.
+Columns are displayed in the *Columns* section of tables and views. In the graphical view and sql view editors, click the *Edit Columns* button in the *Columns* list to open and edit it in a dialog.
 
 Columns have the following properties:
 

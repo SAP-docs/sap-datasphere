@@ -40,9 +40,9 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
+You can use the connection to add target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
-For more information, see [SAP Signavio Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b8f5e28d34b44d71a52f6265e4fc245f.html "If you use SAP Signavio as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
+For more information, see [SAP Signavio Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/b8f5e28d34b44d71a52f6265e4fc245f.html "If you use SAP Signavio as the target for your replication flow, you need to consider the following additional specifics and conditions.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -63,7 +63,7 @@ For more information, see [SAP Signavio Targets for Replication Flows](https://h
 
 1.  Create a scoped role based on the *DW Integrator* template \(privilege *Data Warehouse Data Integration* with *Read* permission is required\), and add the space in which the SAP Signavio connection will be created to the scoped role.
 
-    For more information, see [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
+    For more information, see [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
 
 2.  Create the connection to the source of the replication flow \(SAP S/4HANA, for example\) in the same space which you will use to create the connection to SAP Signavio.
 
@@ -84,7 +84,7 @@ For more information, see [SAP Signavio Targets for Replication Flows](https://h
     -   Service Root \(URL root of the *App Integration* page where you create the OAuth client\)
     -   Token URL
 
-    For more information, see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
+    For more information, see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
 
 
 

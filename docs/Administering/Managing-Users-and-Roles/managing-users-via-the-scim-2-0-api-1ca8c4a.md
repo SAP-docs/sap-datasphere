@@ -8,9 +8,8 @@ You can create, read, modify and delete users and add them to roles via the SCIM
 
 This topic contains the following sections:
 
--   [Introduction](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc)
--   [Log in with an OAuth Client](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_th4_syw_tbc)
--   [Obtain a CSRF Token](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_wzz_v2w_rbc)
+-   [Introduction to the SCIM 2.0 API](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc)
+-   [Obtain a CSFR Token](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__API_CSFR_token)
 -   [List Users](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_js2_yfw_rbc)
 -   [Get a Specific User](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_esx_kxt_vbc)
 -   [Create a User](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_nqs_5lp_tbc)
@@ -19,6 +18,7 @@ This topic contains the following sections:
 -   [Optional User Properties](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_vpq_skn_xbc)
 -   [Bulk Operations](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_hqv_wtg_qcc)
 -   [Get Information About the SCIM API](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_n1l_vdy_rbc)
+-   [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:
 
 
 
@@ -130,7 +130,7 @@ For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP D
 
 <a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc"/>
 
-## Introduction
+## Introduction to the SCIM 2.0 API
 
 This API allows you to programmatically manage users using a SCIM 2.0 compliant endpoint.
 
@@ -139,6 +139,9 @@ SAP Datasphere exposes a REST API based on the System for Cross-domain Identity 
 Using this API, you can perform the following actions:
 
 -   Create, read, modify and delete users.
+
+    > ### Note:  
+    > Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
 
 -   Add users to existing scoped or global roles.
 
@@ -154,121 +157,13 @@ This API uses SCIM 2.0. For more information, see [SCIM Core Schema](https://too
 
 
 
-<a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_th4_syw_tbc"/>
+<a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__API_CSFR_token"/>
 
-## Log in with an OAuth Client
+## Obtain a CSFR Token
 
-Before you can log in with an Oauth client, the user with the administrator role who has created the OAuth2.0 client in your SAP Datasphere tenant must provide you with the OAuth client ID and secret parameters.
+Before creating a POST, PUT, PATCH, or DELETE request to an API endpoint, you must have a valid CSRF token \(Cross-Site Request Forgery token\).
 
-To log in to the OAuth client, send a GET \(or POST\) request with the following elements:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Request Component
-
-</th>
-<th valign="top">
-
-Setting
-
-</th>
-<th valign="top">
-
-Value
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Parameter
-
-</td>
-<td valign="top">
-
-key
-
-</td>
-<td valign="top">
-
-`?grant_type=client_credentials`
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Authorization
-
-</td>
-<td valign="top">
-
-type
-
-</td>
-<td valign="top">
-
-`Basic Auth`
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Authorization
-
-</td>
-<td valign="top">
-
-username
-
-</td>
-<td valign="top">
-
-*<OAuth Client ID\>*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Authorization
-
-</td>
-<td valign="top">
-
-password
-
-</td>
-<td valign="top">
-
-*<OAuth Client Secret\>*
-
-</td>
-</tr>
-</table>
-
-Syntax of GET request:
-
-```
-https://<token_url>?grant_type=client_credentials
-```
-
-> ### Note:  
-> You can find the token URL in <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration* \> *OAuth Clients* \> *Token URL*.
-
-The response body returns the access token, which you'll then use as the bearer token to obtain the csrf token.
-
-
-
-<a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_wzz_v2w_rbc"/>
-
-## Obtain a CSRF Token
-
-To obtain a csrf token, send a GET request with the following elements:
+To obtain a CSRF token, send a GET request with the following elements:
 
 
 <table>
@@ -362,10 +257,10 @@ key
 Syntax of GET request:
 
 ```
-<tenant_url>/api/v1/csrf
+GET https://<tenant_url>/api/v1/csrf
 ```
 
-The CSRF token is returned in the `x-csrf-token` response header. This token can then be included in the POST, PUT, PATCH, or DELETE request in the <code>x-csrf-token:<i class="varname">&lt;token&gt;</i></code> header.
+The CSRF token is returned in the `x-csrf-token` response header. This token must then be included in the <code>x-csrf-token:<i class="varname">&lt;token&gt;</i></code> header for your POST, PUT, PATCH, or DELETE request.
 
 
 
@@ -1194,6 +1089,9 @@ key
 </tr>
 </table>
 
+> ### Note:  
+> Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
+
 To delete a specific user based on its ID, enter the DELETE request:
 
 ```
@@ -1462,6 +1360,9 @@ key
 </tr>
 </table>
 
+> ### Note:  
+> Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
+
 The supported operations are POST, PUT, PATCH and DELETE.
 
 Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/api/v1/scim2/Bulk/</code>
@@ -1590,4 +1491,19 @@ Using the GET request, you can obtain the following information about the SCIM A
 
 -   <code>/scim2/ResourceTypes/<i class="varname">&lt;Type&gt;</i></code> - Gets information on a specific resource type.
 
+
+
+
+<a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_rate_limiting"/>
+
+## API Rate Limiting
+
+Authenticated requests are associated either with the authenticated username, tenant ID or with the OAuth client ID. Unauthenticated requests are associated with the originating IP address, and not the user.
+
+Requests are limited to approximately 300 per user per minute \(25 per user per minute for the *Connections* and *Certificates* APIs\). If you exceed the limit, you will receive the `HTTP 429 Too Many Requests` response status code and can review the following request response headers for further information:
+
+-   `X-Ratelimit-Limit` - Rate limit per user per minute.
+-   `X-Ratelimit-Remaining` - Remaining number of requests for the current timeframe for the current user.
+-   `X-Ratelimit-Reset` - Time in seconds until the rate limit is reset to the defined limit.
+-   `Retry-After` - Time in seconds the user agent should wait before making a follow-up request.
 

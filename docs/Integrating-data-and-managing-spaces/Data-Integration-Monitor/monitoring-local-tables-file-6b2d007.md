@@ -23,7 +23,7 @@ To monitor local tables \(file\), you must have a scoped role that grants you ac
 
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -36,7 +36,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 Local tables can be used as source data or target data by SAP Datasphere apps. As a Data Integrator you might want to monitor all local tables \(file\) deployed in your space and check how and when data has been last updated and if some data must still be merged.
 
-Go to *Monitoring* \> *Data Integration* \> *Local Tables \(Files\)*. All local tables \(file\) that have been created in the *Data Builder* are listed. For more information on local tables \(file\), see [Creating a Local Table (File)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:.
+Go to *Monitoring* \> *Data Integration* \> *Local Tables \(Files\)*. All local tables \(file\) that have been created in the *Data Builder* are listed. For more information on local tables \(file\), see [Creating a Local Table (File)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/d21881b121bc4703861be6ead4aea2ab.html "Create a local table (file) to store data in the object store. Load data to your local table (file) via replication flows and transform the data with transformation flows.") :arrow_upper_right:.
 
 The monitor displays the following properties:
 
@@ -146,7 +146,7 @@ Indicates the name of the replication flow or the local table \(file\) generated
 </td>
 <td valign="top">
 
-Indicates if the local table \(file\) allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
+Indicates if the local table \(file\) allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -196,7 +196,7 @@ Displays the size used by the active records only.
 
 Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\), and space required for administrative information. The size of the inbound buffer \(temporary storage of incoming data, usually empty\) is shown separately. The sum of both numbers is the actual size of the table. 
 
-If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
+If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -208,7 +208,7 @@ If you compare the size of a similar table that is stored in a space of type SAP
 </td>
 <td valign="top">
 
-Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* . For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
+Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* . For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -240,11 +240,32 @@ Displays the estimation of the size of the files waiting for a merge in the buff
 
 
 
-### 
+## The Logs Tab
 
-Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table.
+From the *Logs* tab, you can see the logs that relate to previous and running actions on your table:
 
-You can download Spark driver logs after performing the following tasks on a local table \(file\):
+-   *Start*: Timestamps where the task started.
+-   *Duration*: How long the task ran.
+
+-   *Activity*: Which activity has run.
+
+-   *Run Started By*: Who started the task.
+
+-   *Status*: Status of the task.
+
+The logs are separated into 3 different tabs:
+
+-   *All*: Displays all logs related to all tasks for this table.
+-   *Data Tasks*: Displays only tasks related to data management.
+-   *Statistics Tasks*: Displays all tasks related to statistics updates.
+
+*Data Tasks* and *Statistics Tasks* run independently, each with its own task ID. This approach enables lifecycle operations on local tables \(file\) and transformation flows in file spaces to complete more quickly: Statistics updates do not increase the runtime of lifecycle operations; instead, they are run as separate tasks. Additionally, lower costs are expected for statistics updates, as local table \(file\) statistics are processed using a smaller Apache Spark configuration. Additionally, lower costs are expected for statistics updates, as local tables \(file\) statistics are processed using a smaller Apache Spark configuration and inbound buffer statistics are processed using WebHDFS instead of Apache Spark.
+
+You can navigate to the detailed log of each task by clicking
+
+<span class="SAP-icons-V5"></span> \(Details\).
+
+From this screen, you can cancel a running task with the *Cancel Run* button, or you can click <span class="SAP-icons-V5"></span> Download Spark Driver Logs to download Spark driver logs after performing the following tasks on a local table \(file\):
 
 -   MERGE\_FILES
 -   OPTIMIZE\_FILES
@@ -254,19 +275,10 @@ You can download Spark driver logs after performing the following tasks on a loc
 -   DELETE\_INBOUND\_BUFFER
 -   FIND\_AND\_REPLACE
 
-Click the <span class="SAP-icons-V5"></span> Download Spark Driver Logs button on the top right corner of your screen. Downloading logs can be useful for debugging a failing task. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. The logs are downloaded as a `.txt` file in your local *Download* file. There are no logs to download if:
+Downloading logs can be useful for debugging a failing task. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. The logs are downloaded as a `.txt` file in your local *Download* file. There are no logs to download if:
 
 -   The task fails before the Spark driver gets started.
 -   The task MERGE\_FILES gets started without any data in the inbound buffer.
-
-From the *Logs* tab, you can see the logs that relate on previous and running actions on your table.
-
-From the *Schedules* tab, you can see the schedules that have already been created to start tasks for your local tables \(files\). You can also create new schedules, or edit, or delete existing schedules.
-
-> ### Note:  
-> You can create several schedules to delete data, but only one for a merge or an optimize tasks. For more information on how to create schedule, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
-
-From the *Settings* tab, you can override the default settings used to run tasks on Apache Spark. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md) or [Delete Data From Your Local Tables \(File\)](delete-data-from-your-local-tables-file-872ad50.md).
 
 
 

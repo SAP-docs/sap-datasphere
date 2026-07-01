@@ -16,7 +16,7 @@ Before you can use the connection for remote tables, the following is required:
 
 -   A DW administrator has uploaded the server certificate to SAP Datasphere.
 
-    For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
+    For more information, see [Manage Certificates](manage-certificates-46f5467.md).
 
 
 
@@ -38,5 +38,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[Generic OData Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d36f1aae68a4e59989c424a66d948c9.html "Use a Generic OData connection to access data from an OData service.") :arrow_upper_right:
+[Generic OData Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/5d36f1aae68a4e59989c424a66d948c9.html "Use a Generic OData connection to access data from an OData service.") :arrow_upper_right:
 

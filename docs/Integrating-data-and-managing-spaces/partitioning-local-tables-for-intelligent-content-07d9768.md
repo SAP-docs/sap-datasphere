@@ -21,7 +21,7 @@ The local tables installed via SAP Business Data Cloud as part of intelligent co
     > ### Note:  
     > Read-only local tables installed via SAP Business Data Cloud have the *SAP Business Data Cloud* label. In SAP-managed read-only local tables, adding partitions is the only change you can make to a table.
 
-3.  For information about adding partitions, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
+3.  For information about adding partitions, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
 
 
 

@@ -19,7 +19,7 @@ Before you can use the connection for remote tables, the following is required:
     > 
     > For more information, see SAP Notes [3424000](https://me.sap.com/notes/3424000) and [3567141](https://me.sap.com/notes/3567141).
 
-    For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
+    For more information, see [Manage Certificates](manage-certificates-46f5467.md).
 
 
 
@@ -38,5 +38,5 @@ Before you can use the connection for data flows and replication flows, the foll
 **Related Information**  
 
 
-[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
+[Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 

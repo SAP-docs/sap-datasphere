@@ -73,11 +73,11 @@ Before you can use the connection for data flows, the following is required:
 
     To retrieve the certificate, you can use for example the following command: `openssl s_client -showcerts -servername <host name of the Oracle database server>:<port number of the Oracle database server> -connect <host name of the Oracle database server>:<port number of the Oracle database server>`
 
-    For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
+    For more information, see [Manage Certificates](manage-certificates-46f5467.md).
 
 
 **Related Information**  
 
 
-[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
+[Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
 

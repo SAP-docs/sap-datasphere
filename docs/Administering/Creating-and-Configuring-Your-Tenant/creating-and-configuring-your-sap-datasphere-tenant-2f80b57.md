@@ -753,7 +753,7 @@ Canada
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 <td valign="top">

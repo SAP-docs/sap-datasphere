@@ -2,9 +2,9 @@
 
 # List of Functions Supported by a Transformation Flow \(in a File Space\)
 
-Review the list of functions supported by a graphical view transform of a transformation flow in a file space.
+Review the list of functions supported by a view transform of a transformation flow in a file space.
 
-A graphical view transform of a transformation flow created in a file space can support the following functions:
+A view transform of a transformation flow created in a file space can support the following functions:
 
 
 
@@ -237,6 +237,42 @@ ACOS
 <td valign="top">
 
 Returns the arc-cosine, in radians, of a numeric argument between -1 and 1.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ASIN
+
+</td>
+<td valign="top">
+
+Returns the arc-sine, in radians, of a numeric argument.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ATAN
+
+</td>
+<td valign="top">
+
+Returns the arc-tangent, in radians, of a numeric argument.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ATAN2
+
+</td>
+<td valign="top">
+
+Returns the arc-tangent, in radians, of the ratio of two numbers.
 
 </td>
 </tr>
@@ -662,160 +698,6 @@ Returns the year number of a specified date.
 
 
 
-<a name="loio37e737fc0aee4ac7bcee4660d189dc26__section_mgx_btd_bdc"/>
-
-## Miscellaneous Functions
-
-
-<table>
-<tr>
-<th valign="top">
-
-Functions
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-COALESCE
-
-</td>
-<td valign="top">
-
-Returns the first non-NULL expression from a specified list.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-CONCAT
-
-</td>
-<td valign="top">
-
-Returns a combined string consisting of two specified strings.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-CURRENT\_SCHEMA
-
-</td>
-<td valign="top">
-
-Returns a string containing the current schema name.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-CURRENT\_USER
-
-</td>
-<td valign="top">
-
-Returns the current user name at the current statement context.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-GREATEST
-
-</td>
-<td valign="top">
-
-Returns the greatest value among the specified arguments.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-GROUPING
-
-</td>
-<td valign="top">
-
-Determines whether a specified column is used in grouping.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-GROUPING\_ID
-
-</td>
-<td valign="top">
-
-Returns an integer value to identify which grouping set each row belongs to.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-IFNULL
-
-</td>
-<td valign="top">
-
-Returns the first non-NULL input expression.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-LEAST
-
-</td>
-<td valign="top">
-
-Returns the lesser value of two specified arguments.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-NULLIF
-
-</td>
-<td valign="top">
-
-Determines whether two expressions are equal.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-WIDTH\_BUCKET
-
-</td>
-<td valign="top">
-
-Returns the bucket number that has been assigned to the result of a specified expression.
-
-</td>
-</tr>
-</table>
-
-
-
 <a name="loio37e737fc0aee4ac7bcee4660d189dc26__section_etz_ntd_bdc"/>
 
 ## String Functions
@@ -843,42 +725,6 @@ ASCII
 <td valign="top">
 
 Returns the integer ASCII value of the first character in a specified string.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-ASIN
-
-</td>
-<td valign="top">
-
-Returns the arc-sine, in radians, of a numeric argument.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-ATAN
-
-</td>
-<td valign="top">
-
-Returns the arc-tangent, in radians, of a numeric argument.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-ATAN2
-
-</td>
-<td valign="top">
-
-Returns the arc-tangent, in radians, of the ratio of two numbers.
 
 </td>
 </tr>
@@ -1053,6 +899,18 @@ Converts alphabet characters into a sound code that represents their sound.
 <tr>
 <td valign="top">
 
+SUBSTRING
+
+</td>
+<td valign="top">
+
+Returns a substring from an input value, starting from a specified position within the input value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 TRIM
 
 </td>
@@ -1086,15 +944,157 @@ Converts all characters in a string to uppercase.
 
 </td>
 </tr>
+</table>
+
+
+
+<a name="loio37e737fc0aee4ac7bcee4660d189dc26__section_mgx_btd_bdc"/>
+
+## Miscellaneous Functions
+
+
+<table>
+<tr>
+<th valign="top">
+
+Functions
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
-SUBSTRING
+COALESCE
 
 </td>
 <td valign="top">
 
-Returns a substring from an input value, starting from a specified position within the input value.
+Returns the first non-NULL expression from a specified list.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CONCAT
+
+</td>
+<td valign="top">
+
+Returns a combined string consisting of two specified strings.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CURRENT\_SCHEMA
+
+</td>
+<td valign="top">
+
+Returns a string containing the current schema name.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CURRENT\_USER
+
+</td>
+<td valign="top">
+
+Returns the current user name at the current statement context.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GREATEST
+
+</td>
+<td valign="top">
+
+Returns the greatest value among the specified arguments.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GROUPING
+
+</td>
+<td valign="top">
+
+Determines whether a specified column is used in grouping.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GROUPING\_ID
+
+</td>
+<td valign="top">
+
+Returns an integer value to identify which grouping set each row belongs to.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IFNULL
+
+</td>
+<td valign="top">
+
+Returns the first non-NULL input expression.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEAST
+
+</td>
+<td valign="top">
+
+Returns the lesser value of two specified arguments.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NULLIF
+
+</td>
+<td valign="top">
+
+Determines whether two expressions are equal.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+WIDTH\_BUCKET
+
+</td>
+<td valign="top">
+
+Returns the bucket number that has been assigned to the result of a specified expression.
 
 </td>
 </tr>
@@ -1247,6 +1247,303 @@ ROW\_NUMBER
 <td valign="top">
 
 Sequentially numbers the rows within a partition of a result set, with the first row of each partition assigned as 1.
+
+</td>
+</tr>
+</table>
+
+
+
+## SQL Statements and Clauses Support
+
+
+<table>
+<tr>
+<th valign="top">
+
+Category
+
+</th>
+<th valign="top">
+
+Supported Elements
+
+</th>
+<th valign="top">
+
+Details
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+SELECT Queries
+
+</td>
+<td valign="top">
+
+SELECT statements only
+
+</td>
+<td valign="top">
+
+Top-level statement must always be a SELECT query. DDL and DML statements are not supported.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FROM Clause
+
+</td>
+<td valign="top">
+
+Tables, views, subqueries, table-valued functions
+
+</td>
+<td valign="top">
+
+Supports fully-qualified names \(catalog.db.table\) and aliases.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Joins
+
+</td>
+<td valign="top">
+
+INNER, LEFT \[OUTER\], RIGHT \[OUTER\], FULL \[OUTER\], CROSS, SEMI, ANTI, NATURAL
+
+</td>
+<td valign="top">
+
+Join conditions using ON or USING clauses.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Filtering
+
+</td>
+<td valign="top">
+
+WHERE clause with boolean expressions
+
+</td>
+<td valign="top">
+
+Supports operators including =, <, <=, <\>, IN, BETWEEN, LIKE, and IS NULL.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Sorting and Pagination
+
+</td>
+<td valign="top">
+
+ORDER BY, SORT BY, LIMIT, OFFSET
+
+</td>
+<td valign="top">
+
+Supports ASC/DESC sorting and NULLS FIRST/LAST positioning.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Grouping and Aggregation
+
+</td>
+<td valign="top">
+
+GROUP BY, HAVING
+
+</td>
+<td valign="top">
+
+Supports standard aggregate functions such as COUNT, SUM, AVG, MIN, and MAX.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Window Functions
+
+</td>
+<td valign="top">
+
+func\(...\) OVER \(...\)
+
+</td>
+<td valign="top">
+
+Supports PARTITION BY, ORDER BY, and ROWS/RANGE frame specifications.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Expressions
+
+</td>
+<td valign="top">
+
+Arithmetic operators, comparisons, logical operators
+
+</td>
+<td valign="top">
+
+Supports nested expressions with parentheses.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Functions
+
+</td>
+<td valign="top">
+
+Built-in scalar and aggregate functions
+
+</td>
+<td valign="top">
+
+Examples include ABS, ROUND, COALESCE, and ROW\_NUMBER.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identifiers
+
+</td>
+<td valign="top">
+
+Unquoted or back-ticked identifiers
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Literals
+
+</td>
+<td valign="top">
+
+String, numeric, boolean, NULL
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIVOT and UNPIVOT
+
+</td>
+<td valign="top">
+
+Pivot and unpivot operations
+
+</td>
+<td valign="top">
+
+Transforms row data into columns and columns into rows.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Subqueries
+
+</td>
+<td valign="top">
+
+Subqueries in FROM or WHERE clauses
+
+</td>
+<td valign="top">
+
+Supports nested SELECT statements.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Set Operators
+
+</td>
+<td valign="top">
+
+UNION, INTERSECT, MINUS
+
+</td>
+<td valign="top">
+
+Combines two input relations into a single result set.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Inline Tables
+
+</td>
+<td valign="top">
+
+VALUES clause
+
+</td>
+<td valign="top">
+
+Creates a temporary table using a VALUES clause.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Hints
+
+</td>
+<td valign="top">
+
+PARTITION HINTS, JOIN TYPE HINTS
+
+</td>
+<td valign="top">
+
+Provides suggestions to Spark SQL for execution plan generation.
 
 </td>
 </tr>

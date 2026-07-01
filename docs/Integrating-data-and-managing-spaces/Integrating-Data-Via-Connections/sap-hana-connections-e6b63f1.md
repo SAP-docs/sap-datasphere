@@ -47,7 +47,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
+You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -71,7 +71,7 @@ Model Import
 </td>
 <td valign="top">
 
-You can use the connection to import entities with semantics \(calculation views, dimensions\) from SAP HANA Cloud. For more information, see [Importing Entities with Semantics from SAP HANA Cloud](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b37282c4c0d142e3bca256a46cd40278.html "You can use the Import Entities wizard to import semantically-rich objects using your SAP HANA Cloud connection. The wizard creates Data Builder entities in SAP Datasphere.") :arrow_upper_right:. 
+You can use the connection to import entities with semantics \(calculation views, dimensions\) from SAP HANA Cloud. For more information, see [Importing Entities with Semantics from SAP HANA Cloud](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/b37282c4c0d142e3bca256a46cd40278.html "You can use the Import Entities wizard to import semantically-rich objects using your SAP HANA Cloud connection. The wizard creates Data Builder entities in SAP Datasphere.") :arrow_upper_right:. 
 
 </td>
 </tr>
@@ -83,7 +83,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -108,7 +108,7 @@ Before you can use the connection for remote tables, the following is required:
 
     -   An administrator has connected an SAP HANA smart data integration Data Provisioning Agent to SAP Datasphere and registered the HanaAdapter.
 
-        For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
+        For more information, see [Preparing Data Provisioning Agent Connectivity](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/f1a39d1a763e48c8872f45c110a5a4e2.html "Most connection types supporting remote tables use SAP HANA Smart Data Integration (SDI) and its Data Provisioning Agent. Before using the connection, the agent requires an appropriate setup.") :arrow_upper_right:.
 
     -   If you use encrypted communication \(see the *Security* properties in the connection creation wizard\):
 
@@ -121,17 +121,19 @@ Before you can use the connection for remote tables, the following is required:
 
     -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
 
-        For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+        For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
     -   An administrator has added the Cloud Connector IP address to the IP allowlist.
 
-        For more information, see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:.
+        For more information, see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:.
 
     -   If you use encrypted communication and the server certificate should be validated \(see the *Security* properties in the connection creation wizard\):
 
         A DW administrator has uploaded the server certificate to SAP Datasphere.
 
-        For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+        For more information, see SAP Note [3399573](https://me.sap.com/notes/3399573) and [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
+
+        For more information, see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
 
 
 
@@ -143,7 +145,7 @@ For SAP HANA \(on-premise\), before you can use the connection for data flows an
 
 -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
 
-    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 
 
@@ -156,9 +158,9 @@ For SAP HANA \(on-premise\), before you can use the connection for data flows an
 
 ### General
 
-A user with an administrator role has uploaded the TLS server certificate `DigiCert Global Root CA` \(`DigiCertGlobalRootCA.crt.pem`\).
+A user with an administrator role has uploaded the TLS server certificate `DigiCert TLS RSA4096 Root G5` \(`DigiCertTLSRSA4096RootG5.crt.pem`\).
 
-For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+For more information, see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
 
 
 
@@ -727,7 +729,7 @@ If set to *false*, the host name used for the connection is used for verificatio
 > 
 > -   When using SAP HANA smart data access via Cloud Connector for remote tables: To validate the server certificate, the certificate must have been uploaded to SAP Datasphere.
 > 
->     For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+>     For more information, see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
 
 
 
@@ -967,7 +969,7 @@ Select the midleware to use when connecting to and accessing the on-premise syst
 > ### Note:  
 > When creating a connection to SAP HANA on-premise using SAP HANA smart data access via Cloud Connector, the system checks for a required internal service. In the connection overview, a warning icon indicates that the service might not be ready yet. This happens for the first connection you create or when you create a connection after the service has been disabled \(after an automated weekly check returning that there is no such connection anymore\). Getting the service ready might take up to 45 minutes. Validate the connection and check the message details for more information.
 > 
-> For troubleshooting the Cloud Connector, see [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/42f683edbf6742b19cf15e7a18b8a607.html "These are some of the most common issues that can occur when you use the Cloud Connector to connect to on-premise remote sources via SAP HANA Smart Data Access.") :arrow_upper_right:.
+> For troubleshooting the Cloud Connector, see [Troubleshooting SAP HANA Smart Data Access via Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/42f683edbf6742b19cf15e7a18b8a607.html "These are some of the most common issues that can occur when you use the Cloud Connector to connect to on-premise remote sources via SAP HANA Smart Data Access.") :arrow_upper_right:.
 
 
 

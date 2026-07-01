@@ -10,7 +10,7 @@ Before you can use the connection, the following is required:
 
     Example for Certificate Download Site: `https://performancemanager4.successfactors.com`
 
-    For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
+    For more information, see [Manage Certificates](manage-certificates-46f5467.md).
 
 -   When using OAuth 2.0 for authentication:
 
@@ -18,9 +18,15 @@ Before you can use the connection, the following is required:
 
         For more information, see [Registering Your OAuth2 Client Application](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/6b3c741483de47b290d075d798163bc1.html) in the *SAP SuccessFactors platform* documentation.
 
-    -   A SAML assertion needs to be generated to be able to provide it when creating or editing the connection.
+    -   A SAML assertion for requesting an OAuth access token is required for accessing SAP SuccessFactors. You have two options to generate the SAML assertion and provide it to the connection:
+        -   You can let SAP Datasphere dynamically generate and fetch the SAML assertion, and automatically rotate SAML assertions when they expire \(recommended\). This requires an initial configuration of the necessary components including Identity Authentication in SAP Cloud Identity Services and SAP SuccessFactors.
 
-        For an overview of the available options to generate a SAML assertion, see [Generating a SAML Assertion](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/4e27e8f6ae2748ab9f23228dd6a31b06.html) in the *SAP SuccessFactors platform* documentation.
+            For more information, see [Configuring Dynamic Generation of SAML Assertions for SAP SuccessFactors Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/63c8260a7f574e6e8e3c386656c93b00.html "Configure automated, dynamic generation of Security Assertion Markup Language (SAML) assertions for accessing SAP SuccessFactors APIs. For the generation of SAML assertions, SAP Datasphere is using the Identity Authentication service of SAP Cloud Identity Services as Identity Provider. Configuration steps are required in Identity Authentication and SAP SuccessFactors.") :arrow_upper_right:.
+
+        -   You can generate a SAML assertion, for example using an SAP-provided offline tool or an external identity provider, and manually enter it in the connection configuration. The lifetime of SAML assertions generated in this way typically is short, and you need to ensure that whenever you validate or use the connection, you have entered a valid SAML assertion in the connection configuration.
+
+            For an overview of the available options to generate a SAML assertion, see [Generating a SAML Assertion](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/4e27e8f6ae2748ab9f23228dd6a31b06.html) in the *SAP SuccessFactors platform* documentation.
+
 
 
 -   In SAP SuccessFactors IP restriction management, you have added the externally facing SAP HANA IP addresses and the outbound IP address for SAP Datasphere to the list of IP restrictions. IP restrictions are a specified list of IP addresses from which users can access your SAP SuccessFactors system.
@@ -36,5 +42,5 @@ Before you can use the connection, the following is required:
 **Related Information**  
 
 
-[SAP SuccessFactors Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/39df02030d4b411487bacecf9afea4e8.html "Use an SAP SuccessFactors connection to access employee-related data in SAP SuccessFactors.") :arrow_upper_right:
+[SAP SuccessFactors Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/39df02030d4b411487bacecf9afea4e8.html "Use an SAP SuccessFactors connection to access employee-related data in SAP SuccessFactors.") :arrow_upper_right:
 

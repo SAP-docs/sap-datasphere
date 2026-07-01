@@ -13,10 +13,7 @@ Attributes are used in:
 -   Text entities - to contain texts in multiple languages and the keys for identifying them.
 -   Hierarchies - to define parent-child relationships between dimension members.
 
-Attributes are displayed in the *Attributes* section of tables and views.
-
-> ### Note:  
-> In the graphical view and sql view editors, you can click the *Edit Columns* button in the *Attributes* list to open it in a dialog.
+Attributes are displayed in the *Attributes* section of tables and views. In the graphical view and sql view editors, click the *Edit Columns* button in the *Attributes* list to open and edit it in a dialog.
 
 Attributes have the following properties:
 

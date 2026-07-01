@@ -129,7 +129,7 @@ A standard variable is used in a fact source to map it to input parameters of th
 
     2.  Select the column from which the value is to be derived.
 
-    3.  Map the parameter of the lookup entity. If it has no input parameter, you can set a constant value or create a variable.
+    3.  Map the parameter of the lookup entity. If it has no input parameter, you can set a constant value or create a standard variable.
 
 
     For more information, see [Derived Variables](derived-variables-82f40f7.md).

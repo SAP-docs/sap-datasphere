@@ -28,7 +28,7 @@ To set priorities and statement limits for spaces or groups, you must have a glo
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 > ### Note:  
-> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+> This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).
 
 > ### Note:  
 > You can use the SAP Datasphere command line interface, `datasphere`, to set space or group priorities and statement limits. See [Managing Priorities and Statement Limits for Spaces or Groups via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/9e3537b72e6c445d9f34201df650735b.html "You can use the SAP Datasphere datasphere command line interface to set priorities and statement limits for spaces or groups.") :arrow_upper_right:.
@@ -294,7 +294,7 @@ SAP Analytics Cloud data processing:
 -   Long-Running Operations - Planning data actions \(see [Get Started with Data Actions for Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/2850221adef14958a4554ad2860ff412.html) in the *SAP Analytics Cloud* documentation\).
 -   System Operations - Statistics gathering and other administrative jobs for SAP Analytics Cloud data stored in SAP Datasphere.
 
-For more information about storing SAP Analytics Cloud planning data in SAP Datasphere, see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:.
+For more information about storing SAP Analytics Cloud planning data in SAP Datasphere, see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:.
 
 </td>
 </tr>

@@ -15,7 +15,7 @@ For example, when a data modeler reviews the details of a data product, they can
 After you review the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space \(see [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)\).
 
 > ### Tip:  
-> Marketplace data products are only produced by and consumed in SAP Datasphere. However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can share to other SAP or external systems \(see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products)\).
+> Marketplace data products are only produced by and consumed in SAP Datasphere. However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can share to other SAP or external systems \(see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products)\).
 
 
 
@@ -70,7 +70,7 @@ Provider and visibility information
 Displays the data provider, content aggregator, and visibility context information.
 
 -   Displays the name of the data provider and contact information.
--   Displays the content aggregator's name if the data provider's profile is managed by a content aggregator. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/ba1b703d905547b392c09b35c1028de1.html "Catalog & Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+-   Displays the content aggregator's name if the data provider's profile is managed by a content aggregator. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/ba1b703d905547b392c09b35c1028de1.html "Catalog & Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 -   Displays the visibility context for the data product. Contexts control who has access to the data product. For a user to be able to use a data product, they must belong to a context that is assigned to the data product.
 
 
@@ -310,7 +310,7 @@ Displays the lifecycle status of the data product.
 -   A data product is active when it is listed and available for public or limited visibility.
 -   A data product is inactive when it is delisted, deactivated, deleted, or in draft. These data products are not available for consumers. Consumers who obtained a previously active data product before it became inactive can still use it. However, support and updates from the data provider might be limited or not available.
 
-    For more information about data product lifecycle statuses, see [Managing your Data Product's Lifecycle](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/c400001264094f8c89da104db72514ad.html "To reflect various situations and phases in the lifecycle of a data product, you can change its lifecycle status.") :arrow_upper_right:.
+    For more information about data product lifecycle statuses, see [Managing your Data Product's Lifecycle](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/c400001264094f8c89da104db72514ad.html "To reflect various situations and phases in the lifecycle of a data product, you can change its lifecycle status.") :arrow_upper_right:.
 
 
 
@@ -407,7 +407,7 @@ Content Aggregator
 </td>
 <td valign="top">
 
-Displays the content aggregator's name. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/ba1b703d905547b392c09b35c1028de1.html "Catalog & Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
+Displays the content aggregator's name. For more information, see [Data Provider Vs Content Aggregator](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/ba1b703d905547b392c09b35c1028de1.html "Catalog & Marketplace content can either be created by a data provider or a content aggregator.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -574,7 +574,7 @@ Select the *Open Impact and Lineage* button in the header to see a diagram for t
 ![Impact and Lineage Analysis diagram showing the an analyzed object with its impact and lineage expanded.](images/Impact_and_Lineage_Analysis_Diagram_for_a_Data_Product_Marketplace_03900c2.png)
 
 > ### Tip:  
-> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:.
+> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:.
 
 This diagram provides the data analysis of the data product and contains the following features.
 

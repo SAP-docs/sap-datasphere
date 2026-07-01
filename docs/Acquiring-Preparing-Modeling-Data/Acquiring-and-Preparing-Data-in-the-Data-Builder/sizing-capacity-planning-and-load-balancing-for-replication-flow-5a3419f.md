@@ -92,7 +92,7 @@ For replication flows, the most important parameters at tenant level are executi
 > ### Note:  
 > One source object can be used in several replication flows. However, you must consider that if the same source is being read at the same time, it can impact the performance.
 
-For more information, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:, particularly the Premium Outbound Integration section \(if applicable\) and the Data Integration section.
+For more information, see [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/33f8ef4ec359409fb75925a68c23ebc3.html "Configure the size of your tenant by specifying resource sizes based on your business needs. Capacity Units (CU) are allocated to obtain storage and compute resources for your tenant.") :arrow_upper_right:, particularly the Premium Outbound Integration section \(if applicable\) and the Data Integration section.
 
 
 

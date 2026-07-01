@@ -13,7 +13,7 @@ This topic contains the following sections:
 -   [Supported Features](sap-abap-connections-a75c1aa.md#loioa75c1aacf951449ba3b740c7e46da3a9__ABAP_usage)
 -   [Configuring Connection Properties](sap-abap-connections-a75c1aa.md#loioa75c1aacf951449ba3b740c7e46da3a9__connection_properties)
 
-For information about the required prerequisites, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+For information about the required prerequisites, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
 
 If one of the following connection types works for your source system and use case, we recommend using that connection type:
 
@@ -53,16 +53,16 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\). \(**recommended for replication scenarios**\)
+You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\). \(**recommended for replication scenarios**\)
 
-For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
+For information about minimum system versions and other prerequisites, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/3f70579c92434f4f88471bba2bd70893.html "Before replicating data from your SAP S/4HANA or other ABAP source, you must ensure that all the appropriate release and security notes for your source system version are applied.") :arrow_upper_right:.
 
 You can access the following data:
 
 -   standard and custom CDS view entities that are exposed using the ABAP SQL service from the following systems:
 
-    -   SAP S/4HANA Cloud or SAP BTP ABAP environment \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:\)
-    -   SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
+    -   SAP S/4HANA Cloud or SAP BTP ABAP environment \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:\)
+    -   SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
 
     > ### Note:  
     > When adding source objects in replication flows, you can find the CDS view entities in the SQL\_SERVICE container.
@@ -104,8 +104,8 @@ You can access the following data:
 
 -   for federation: standard and custom CDS view entities that are exposed using the ABAP SQL service from the following systems \(**recommended for federation scenarios**\):
 
-    -   SAP S/4HANA Cloud or SAP BTP ABAP environment \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:\)
-    -   SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
+    -   SAP S/4HANA Cloud or SAP BTP ABAP environment \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA Cloud or SAP BTP ABAP Environment](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/ef2b2238154f4cd78a08df360447c1d5.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.") :arrow_upper_right:\)
+    -   SAP S/4HANA \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\)
 
     > ### Note:  
     > On the *Sources* tab of the remote-table-related Data Builder editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
@@ -168,7 +168,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 You can replicate the following data:
 
@@ -334,7 +334,7 @@ Enter the name of the message server to which you want to connect to.
 Enter the message server port \(numerical\).
 
 > ### Note:  
-> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
+> In the Cloud Connector system mapping, make sure the message server port is specified in the *System ID* field \(see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:\).
 
 
 
@@ -501,7 +501,7 @@ You can select:
 > -   You must enter virtual host and port manually. Deriving virtual host and port from the connection details is not supported because the Cloud Connector configuration requires two system mappings with different virtual ports. One is for the RFC protocol used for data flows and replication flows. The other is for HTTPS protocol used for remote tables via the ABAP SQL service.
 > -   The virtual host defined in the Cloud Connector system mappings must be the same for both the HTTPS and RFC protocols.
 > 
-> For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:.
+> For more information, see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:.
 
 
 
@@ -518,7 +518,7 @@ You can select:
 Enter the virtual host that you defined during Cloud Connector configuration. 
 
 > ### Note:  
-> If you're using the ABAP SQL service for data federation with this connection and also want to use it for data and replication flows, ensure the virtual host defined in the Cloud Connector system mappings is the same for both the HTTPS and RFC protocols \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\).
+> If you're using the ABAP SQL service for data federation with this connection and also want to use it for data and replication flows, ensure the virtual host defined in the Cloud Connector system mappings is the same for both the HTTPS and RFC protocols \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\).
 
 
 
@@ -537,7 +537,7 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 > ### Note:  
 > -   If the *SAP Logon Connection Type* for your connection is *Application Server*: Enter ***sapgw*<system number\>**** to make sure that it matches the virtual port defined in the Cloud Connector configuration.
 > -   If the *SAP Logon Connection Type* for your connection is *Message Server*: Enter a numerical port and make sure it is the port defined in the Cloud Connector configuration.
-> -   If you're using the **ABAP SQL service** for data federation with this connection and also want to use it for data and replication flows: **Enter the virtual port defined in the Cloud Connector system mapping for the HTTPS protocol** which has been created for remote tables \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\).
+> -   If you're using the **ABAP SQL service** for data federation with this connection and also want to use it for data and replication flows: **Enter the virtual port defined in the Cloud Connector system mapping for the HTTPS protocol** which has been created for remote tables \(see [Using ABAP SQL Services for Accessing Data from SAP S/4HANA](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/4d7474595a5b41bb986616262ff44a3a.html "The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.") :arrow_upper_right:\).
 
 
 
@@ -580,11 +580,11 @@ You can select:
 
     You can select this option only if you have selected the *RFC* protocol and if you have set Cloud Connector to *true*. Remote tables currently are not supported with this authentication type.
 
-    For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use authentication type OAuth 2.0 with the client credentials grant type for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+    For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use authentication type OAuth 2.0 with the client credentials grant type for SAP ABAP (on-premise) and SAP S/4HANA connections, supporting replication flows and data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
 
 -   *X.509 Client Certificate* - You can select this option if you have selected the *Web Socket RFC* protocol.
 
-    For information about setting up certificate-based authentication, see *X.509 Client Certificates* in [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
+    For information about setting up certificate-based authentication, see *X.509 Client Certificates* in [Prepare Connectivity to SAP S/4HANA Cloud](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/abb159e027184c98a54fc1b2a88dd3f5.html "To be able to successfully validate and use a connection to SAP S/4HANA Cloud, certain preparations have to be made.") :arrow_upper_right:.
 
 
 
@@ -633,7 +633,7 @@ Displays *Client Credentials* as grant type used to retrieve an access token.
 </td>
 <td valign="top">
 
-Enter the SAP Datasphere *Token URL* which is available under <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*** \> ***OAuth Clients*\( see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+Enter the SAP Datasphere *Token URL* which is available under <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*** \> ***OAuth Clients*\( see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -960,7 +960,7 @@ Enter the port number of the gateway server where the ABAP adapter would registe
 </td>
 <td valign="top">
 
-Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:.
+Enter the name of the RFC destination that you have created in the source. For more information, see [Prerequisites for ABAP RFC Streaming](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/62adb440e4214c53a3028a4fdb5e1156.html "If you want to stream ABAP tables for loading large amounts of data without running into memory issues it is required to meet the following requirements.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -1041,7 +1041,7 @@ Turn on RFC fast serialization to help improve replication flow performance by a
 > 
 > -   *Fast Serialization* for replication flows is not related to *RFC Serialization* in the advanced properties of connections using a Data Provisioning Agent for remote tables.
 > 
-> -   For information about the prerequisites for using fast serialization in SAP Datasphere, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
+> -   For information about the prerequisites for using fast serialization in SAP Datasphere, see [Prepare Connectivity to SAP ABAP Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/76c9ac1a318c4de2bea29e72c64be8a0.html "To be able to successfully validate and use a connection to an SAP ABAP system for remote tables or data flows, certain preparations have to be made.") :arrow_upper_right:.
 > 
 >     Use the connection validation to check if the prerequisites in the source system for using fast serialization are met.
 

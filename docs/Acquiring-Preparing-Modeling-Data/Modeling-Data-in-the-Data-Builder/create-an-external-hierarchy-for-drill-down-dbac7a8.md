@@ -78,7 +78,9 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
     </tr>
     </table>
     
-2.  Set attributes as keys to indicate that the data they contain can uniquely identify records.
+2.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
+
+3.  Set attributes as keys to indicate that the data they contain can uniquely identify records.
 
     > ### Note:  
     > You must set one or more key attributes for a *Hierarchy*:
@@ -87,7 +89,7 @@ Select a *Semantic Usage* of *Hierarchy* to indicate that your entity contains p
 
     To set an attribute as a key column, select the checkbox in the *Key* column or hover over the attribute in the side panel and click <span class="FPA-icons-V3"></span> \(Menu\)** \> *Set as Key*.
 
-3.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
+4.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 

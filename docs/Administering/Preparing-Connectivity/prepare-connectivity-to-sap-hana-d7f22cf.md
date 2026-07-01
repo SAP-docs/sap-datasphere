@@ -12,9 +12,9 @@ To be able to successfully validate and use a connection to SAP HANA Cloud or SA
 
 A DW administrator has uploaded the server certificate to SAP Datasphere.
 
-A DW administrator has uploaded the TLS server certificate `DigiCert Global Root CA` \(`DigiCertGlobalRootCA.crt.pem`\).
+A user with an administrator role has uploaded the TLS server certificate `DigiCert TLS RSA4096 Root G5` \(`DigiCertTLSRSA4096RootG5.crt.pem`\).
 
-For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
+For more information, see [Manage Certificates](manage-certificates-46f5467.md).
 
 
 
@@ -57,7 +57,7 @@ Before you can use the connection for remote tables, the following is required:
 
         A DW administrator has uploaded the server certificate to SAP Datasphere.
 
-        For more information, see [Manage Certificates for Connections](manage-certificates-for-connections-46f5467.md).
+        For more information, see [Manage Certificates](manage-certificates-46f5467.md).
 
 
 
@@ -75,5 +75,5 @@ For SAP HANA \(on-premise\), before you can use the connection for data flows an
 **Related Information**  
 
 
-[SAP HANA Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e6b63f176d3640609adcf06297fb37e9.html#loioe6b63f176d3640609adcf06297fb37e9 "Use an SAP HANA connection to access data from a remote SAP HANA database (on-premise or cloud).") :arrow_upper_right:
+[SAP HANA Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e6b63f176d3640609adcf06297fb37e9.html#loioe6b63f176d3640609adcf06297fb37e9 "Use an SAP HANA connection to access data from a remote SAP HANA database (on-premise or cloud).") :arrow_upper_right:
 

@@ -43,7 +43,7 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
+You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -55,35 +55,21 @@ You can use the connection to add source and target objects to a replication flo
 
 ## Prerequisites
 
-
-
-### Prerequisites for Confluent Platform
-
 Before you can use the connection for replication flows, the following is required:
 
 -   The connection requires Confluent Schema Registry as additional endpoint. Schema Registry is a service that centrally stores data schemas for Kafka messages to ensure data consistency and compatibility as schemas evolve.
 
-    For more information, see [Schema Registry for Confluent Platform](https://docs.confluent.io/platform/current/schema-registry/index.html) in the *Confluent* documentation.
+    For more information, see the *Confluent* documentation:
 
--   An administrator has installed and configured Cloud Connector to connect to the Kafka brokers and to the Schema Registry for Confluent Platform on-premise.
+    -   [Schema Registry for Confluent Platform](https://docs.confluent.io/platform/current/schema-registry/index.html)
+    -   [Schema Registry for Confluent Cloud](https://docs.confluent.io/cloud/current/sr/sr-overview.html)
 
-    > ### Note:  
-    > Separate Cloud Connector instances might be used for the two endpoints. The Schema Registry might be used in one Cloud Connector location while connecting to the Kafka brokers happens in another location.
+-   A Cloud Connector configuration to connect to the Kafka brokers and to the Schema Registry is required in the following cases:
 
-    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+    -   Your Confluent Platform is on-premise.
+    -   For Confluent Cloud: If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
 
-
-
-
-### Prerequisites for Confluent Cloud
-
-Before you can use the connection for replication flows, the following is required:
-
--   The connection requires Confluent Schema Registry as additional endpoint. Schema Registry is a service that centrally stores data schemas for Kafka messages to ensure data consistency and compatibility as schemas evolve.
-
-    For more information, see [Schema Registry for Confluent Cloud](https://docs.confluent.io/cloud/current/sr/sr-overview.html) in the *Confluent* documentation.
-
--   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data. In this case, two service endpoints and their corresponding Cloud Connector system mappings are required: 
+    Two service endpoints and their corresponding Cloud Connector system mappings are required:
 
     -   Bootstrap server and all internal Kafka broker endpoints \(via TCP protocol\) - used for connecting to the cluster and data replication \(read and write\)
     -   Service Registry endpoint \(via HTTPS protocol\) - used for managing schemas in Confluent
@@ -122,8 +108,8 @@ Before you can use the connection for replication flows, the following is requir
 
     -   *Check Internal Host*: deselected
 
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
-For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 <a name="loioa5d1e1d2885f4a69ae3cc5049eb0cabf"/>
 
@@ -171,7 +157,12 @@ Select *Confluent Platform* \(default\).
 </td>
 <td valign="top">
 
-Enter a comma-separated list of brokers in the format <code><i class="varname">&lt;host&gt;</i>:<i class="varname">&lt;port&gt;</i></code>. 
+Enter a comma-separated list of brokers in the format <code><i class="varname">&lt;host&gt;</i>:<i class="varname">&lt;port&gt;</i></code>.
+
+> ### Note:  
+> We recommend to provide the bootstrap server address only. Internal broker addresses will be resolved during runtime.
+
+
 
 </td>
 </tr>
@@ -255,7 +246,12 @@ You can select:
 </td>
 <td valign="top">
 
-Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration.
+
+> ### Note:  
+> We recommend to enter the bootstrap server host. Internal brokers will be resolved during runtime.
+
+
 
 </td>
 </tr>
@@ -268,6 +264,11 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 <td valign="top">
 
 Enter the virtual port that you defined during Cloud Connector configuration. 
+
+> ### Note:  
+> We recommend to enter the bootstrap server port. Internal brokers will be resolved during runtime.
+
+
 
 </td>
 </tr>
@@ -847,7 +848,7 @@ You can select:
 </td>
 <td valign="top">
 
-Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration.
 
 </td>
 </tr>
@@ -859,7 +860,7 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 </td>
 <td valign="top">
 
-Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration.
 
 </td>
 </tr>
@@ -987,7 +988,12 @@ Select *Confluent Cloud*.
 </td>
 <td valign="top">
 
-Enter a comma-separated list of brokers in the format <code><i class="varname">&lt;host&gt;</i>:<i class="varname">&lt;port&gt;</i></code>. 
+Enter a comma-separated list of brokers in the format <code><i class="varname">&lt;host&gt;</i>:<i class="varname">&lt;port&gt;</i></code>.
+
+> ### Note:  
+> We recommend to provide the bootstrap server address only. Internal broker addresses will be resolved during runtime.
+
+
 
 </td>
 </tr>
@@ -1071,7 +1077,12 @@ You can select:
 </td>
 <td valign="top">
 
-Enter the virtual host that you defined during Cloud Connector configuration. 
+Enter the virtual host that you defined during Cloud Connector configuration.
+
+> ### Note:  
+> We recommend to enter the bootstrap server host. Internal brokers will be resolved during runtime.
+
+
 
 </td>
 </tr>
@@ -1083,7 +1094,12 @@ Enter the virtual host that you defined during Cloud Connector configuration.
 </td>
 <td valign="top">
 
-Enter the virtual port that you defined during Cloud Connector configuration. 
+Enter the virtual port that you defined during Cloud Connector configuration.
+
+> ### Note:  
+> We recommend to enter the bootstrap server port. Internal brokers will be resolved during runtime.
+
+
 
 </td>
 </tr>

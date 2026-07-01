@@ -10,6 +10,7 @@ This topic contains the following sections:
 -   [Introduction to the Tasks API](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__intro)
 -   [Task Chains](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__run)
 -   [Logs](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__logs)
+-   [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:
 
 
 
@@ -82,7 +83,7 @@ Authentication
 Manually authenticate to generate the authorization code.
 
 > ### Note:  
-> To run a task chain with Interactive Usage purpose using the REST API, you need authorized consent. Users with Interactive Usage purpose without consent can receive task run log details and history but will not be able to run a task chain. In the profile settings under *Authorized Consent Settings*, you can give and revoke consent. For more information see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+> To run a task chain with Interactive Usage purpose using the REST API, you need authorized consent. Users with Interactive Usage purpose without consent can receive task run log details and history but will not be able to run a task chain. In the profile settings under *Authorized Consent Settings*, you can give and revoke consent. For more information see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/STABI/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -126,7 +127,7 @@ Parameters
 </tr>
 </table>
 
-For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with an administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
+For more information, see [Create OAuth2.0 Clients to Authenticate Against SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/3f92b46fe0314e8ba60720e409c219fc.html "Users with an administrator role can create OAuth2.0 clients and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -443,4 +444,19 @@ Example:
 >   }
 > ]
 > ```
+
+
+
+<a name="loio274f2736465c4c48a091c675880502a2__section_rate_limiting"/>
+
+## API Rate Limiting
+
+Authenticated requests are associated either with the authenticated username, tenant ID or with the OAuth client ID. Unauthenticated requests are associated with the originating IP address, and not the user.
+
+Requests are limited to approximately 300 per user per minute \(25 per user per minute for the *Connections* and *Certificates* APIs\). If you exceed the limit, you will receive the `HTTP 429 Too Many Requests` response status code and can review the following request response headers for further information:
+
+-   `X-Ratelimit-Limit` - Rate limit per user per minute.
+-   `X-Ratelimit-Remaining` - Remaining number of requests for the current timeframe for the current user.
+-   `X-Ratelimit-Reset` - Time in seconds until the rate limit is reset to the defined limit.
+-   `Retry-After` - Time in seconds the user agent should wait before making a follow-up request.
 

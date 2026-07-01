@@ -21,7 +21,7 @@ To monitor local tables, you must have a scoped role that grants you access to a
 
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -177,7 +177,7 @@ Indicates how the table was last updated. For example, name of the flow if it wa
 Displays the number of partitions defined on the local table.
 
 > ### Note:  
-> Displays 1 if no partitions have been defined on the local table. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
+> Displays 1 if no partitions have been defined on the local table. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
 
 
 
@@ -191,7 +191,7 @@ Displays the number of partitions defined on the local table.
 </td>
 <td valign="top">
 
-Indicates how many records there are in the largest partition. Indeed, if your partition is too large \(more than 500 million records\), you can get out-of-memory errors while loading the data. The partition definition needs to be changed. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
+Indicates how many records there are in the largest partition. Indeed, if your partition is too large \(more than 500 million records\), you can get out-of-memory errors while loading the data. The partition definition needs to be changed. For more information, see [Partitioning Local Tables](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/03191f36e9144b2aaa47b8c9eea039c1.html "Create partitions for your local table to break your data down into smaller tables, and better manage tables with a large volume of data.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -203,7 +203,7 @@ Indicates how many records there are in the largest partition. Indeed, if your p
 </td>
 <td valign="top">
 
-Indicates if the local table allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
+Indicates if the local table allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
 
 </td>
 </tr>

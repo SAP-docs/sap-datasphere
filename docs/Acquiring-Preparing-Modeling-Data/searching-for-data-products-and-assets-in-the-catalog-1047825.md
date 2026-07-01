@@ -20,7 +20,7 @@ To access the catalog and view objects, you must have a global role that grants 
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 -   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
 
-The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Viewer* role template \(used directly as a global role\) applied together, for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="concept_dk1_g4t_32c"/>
 
@@ -291,16 +291,16 @@ You can change how the catalog search results are displayed by selecting one of 
 -   <span class="FPA-icons-V3"></span> \(Display as List\): The list view shows the most information about each object in the catalog.
 -   <span class="SAP-icons-V5"></span> \(Display as Table\): The table view shows all the same information as the list view. However, some of the columns are hidden by default. You can choose which columns you want to show or hide. This display option is not available when viewing the search results for the **All** collection.
 
-The information and actions available in each view differs. See [Information and Actions Available for Search Results](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/751357b3c1084ea28eb2a1a1806311e0.html "Information and actions available in the different search result views appear based on your assigned role.") :arrow_upper_right:.
+The information and actions available in each view differs. See [Information and Actions Available for Search Results](information-and-actions-available-for-search-results-751357b.md).
 
 **Related Information**  
 
 
 [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md "Use the catalog Assets collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.")
 
-[Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.")
+[Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects.")
 
 [Installing Data Products](installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 
-[Understanding Different Catalog Views](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "You can access the catalog from either the SAP Business Data Cloud cockpit or SAP Datasphere systems. The system you use to access the catalog determines the content you see and the tasks you can perform to manage source systems and content.") :arrow_upper_right:
+[Understanding Different Catalog Views](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/STABI/en-US/563dc55fc3504a9db6ccc525df2c006a.html "You can access the catalog from either the SAP Business Data Cloud cockpit or SAP Datasphere systems. The system you use to access the catalog determines the content you see and the tasks you can perform to manage source systems and content.") :arrow_upper_right:
 

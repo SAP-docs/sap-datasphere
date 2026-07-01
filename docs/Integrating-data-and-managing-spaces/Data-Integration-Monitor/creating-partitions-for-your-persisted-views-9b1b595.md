@@ -29,7 +29,7 @@ Select a column from the list, which will then become the partitioning column.
 
 The columns available for selection are a subset of all view output columns. Some columns can be excluded because:
 
--   Supported data types include:
+-   The column does not include one of the supported data types:
 
     -   String
     -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT

@@ -12,7 +12,7 @@ Use the catalog *Data Product* collection to view data products for use in your 
 
 ## Prerequisites
 
-Your SAP Datasphere system must be part of an SAP Business Data Cloud formation, and the spaces where you want to install data products must already be authorized for data product installation \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
+Your SAP Datasphere system must be part of an SAP Business Data Cloud formation, and the spaces where you want to install data products must already be authorized for data product installation \(see [Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:\).
 
 To search for and evaluate objects in the *Data Products* collection, you must have:
 
@@ -20,13 +20,14 @@ To search for and evaluate objects in the *Data Products* collection, you must h
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
     -   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
 
--   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges :
+-   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges:
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+    -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 <a name="dataproduct_installdspspace"/>
 
@@ -44,7 +45,7 @@ You can install a data product to an SAP Datasphere space.
 > To share the data product with a supported external partner, use the SAP Business Data Cloud cockpit \(see [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products)\).
 
 > ### Note:  
-> Data products tagged for data protection and privacy \(for example, *Personal Data*\) require strict access controls. Ensure the installation space enforces strict user access. For more information on data protection and privacy tags, see [Using Hierarchical Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/e5d46e7bcb1e4fb5bbcef852fd35ba87.html "Tagging assets helps you understand your data and its relationships to other assets. The Tag Hierarchies page is where users with the appropriate privileges can view and manage tags.") :arrow_upper_right:.
+> Data products tagged for data protection and privacy \(for example, *Personal Data*\) require strict access controls. Ensure the installation space enforces strict user access. For more information on data protection and privacy tags, see [Using Hierarchical Tags](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/STABI/en-US/e5d46e7bcb1e4fb5bbcef852fd35ba87.html "Tagging assets helps you understand your data and its relationships to other assets. The Tag Hierarchies page is where users with the appropriate privileges can view and manage tags.") :arrow_upper_right:.
 
 
 
@@ -81,7 +82,7 @@ You can install a data product to an SAP Datasphere space.
             -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
 
             > ### Note:  
-            > Data products from SAP Snowflake only support the *Remote Tables* option.
+            > Data products from supported external systems can be installed only with the *Remote Tables* option.
 
             You'll be able to see a list of all the objects that will be created in the *Data Builder*.
 
@@ -105,13 +106,13 @@ You can install a data product to an SAP Datasphere space.
 
 The data product is installed in the target space.
 
-If the data product you installed was created from a different system, the data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space. For more information about spaces, see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
+If the data product you installed was created from a different system, the data product objects, including any custom fields defined in the source system, are created and deployed in the ingestion space. These objects are then shared with your space. For more information about spaces, see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
 
 -   Navigate to the objects in the *Repository Explorer* and review the data based on how you chose to access it.
-    -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
+    -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Replication flow to Local Tables*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Run a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/run-a-replication-flow-98a26b2.md)\).
 
--   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
+-   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/STABI/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
 
 > ### Tip:  
 > If objects in a data product are associated with objects in one or more other data products, those associations will only be visible if the related data products are installed.
@@ -170,7 +171,7 @@ The data product is updated to the current version for all spaces that use it. T
 
 When you install intelligent content via SAP Business Data Cloud, any required data products are installed in an ingestion space, but these data products don't include any custom fields defined in the source system \(see [Reviewing Installed Intelligent Content](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/644648756d334daaaf35d4fc9a0feeda.html)\).
 
-However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Content](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of intelligent content do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:.
+However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Content](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of intelligent content do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:.
 
 From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that an SAP data product you installed has the latest updates to the custom fields, you must uninstall and then reinstall it.
 
@@ -321,7 +322,7 @@ Remove all dependent objects for the data product before you uninstall a data pr
 If you no longer need a data product in a particular space, you can uninstall it.
 
 > ### Note:  
-> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a custom Delta Share data product \(that was created in the Data Sharing Cockpit\) changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator. For more information about custom Delta Share data products, see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: in the **Data Marketplace - Data Provider's Guide**.
+> If the lifecycle status of a data product changes so that the data product is no longer active, the data product might not be visible in the catalog. For example, when the status of a custom Delta Share data product \(that was created in the Data Sharing Cockpit\) changes from *Listed* to *Delisted*, the data product will not appear in the catalog. If you can't find the data product that you want to uninstall, contact your administrator. For more information about custom Delta Share data products, see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: in the **Data Marketplace - Data Provider's Guide**.
 
 
 
@@ -391,9 +392,9 @@ If you no longer need a data product in a particular space, you can uninstall it
 **Related Information**  
 
 
-[Space Types](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/24aebd7222ab4d3386c5c280f61baa6e.html "While a user with an administrator role can create spaces in your SAP Datasphere tenant, certain other spaces can be created automatically to support specific features.") :arrow_upper_right:
+[Space Types](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/24aebd7222ab4d3386c5c280f61baa6e.html "While a user with an administrator role can create spaces in your SAP Datasphere tenant, certain other spaces can be created automatically to support specific features.") :arrow_upper_right:
 
-[Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:
+[Authorize Spaces to Install SAP Business Data Cloud Data Products](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/67ec785b5de842488781f20c4ab52a9f.html "An SAP Datasphere administrator must choose the spaces to which SAP Business Data Cloud data products from an activated data package can be installed.") :arrow_upper_right:
 
 [Importing Entities with Semantics from SAP S/4HANA](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-entities-with-semantics-from-sap-s-4hana-845fedb.md "You can use the Import Entities wizard to load metadata from your SAP S/4HANA Cloud and SAP S/4HANA on-premise connections via semantically-rich objects. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.")
 

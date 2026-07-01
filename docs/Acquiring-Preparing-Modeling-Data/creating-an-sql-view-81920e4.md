@@ -18,7 +18,11 @@ To create views, you must have a scoped role that grants you access to a space w
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete a graphical view.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+In addition, if you want to use AI features, they must be enabled in your tenant \(see [Enable SAP Business AI for SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/1b3fe45f38df4db1a9cda97a5a7bcdaf.html "SAP Business AI is a fully managed service by SAP that allows you to integrate artificial intelligence (AI) models in different business solutions. SAP Business AI provides a simple and easy-to-use API with various endpoints that you can use in your solution for different tasks such as text generation, summarization, language translation, creative content development. Enable SAP Business AI and Joule for SAP Datasphere to integrate AI content recommendations. This will simplify access to information, automate business processes, and generate AI content recommendations in various areas of SAP Datasphere.") :arrow_upper_right:\) and you must have the following global privilege:
+
+-   *Data Warehouse AI Consumption* \(`----E---`\) - To use SAP Business AI features.
+
+The *DW Modeler* role template, for example, grants these scoped privileges and the *DW AI Consumer* global role grants the global privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -54,18 +58,21 @@ ORDER BY "Gross_Sales" DESC
 >     ORDER BY "Gross_Sales" DESC LIMIT 5
 >     ```
 
-If you are not comfortable with SQL, you can still build a view in SAP Datasphere by using the Graphical View editor, which lets you compose SQL code using an intuitive graphical interface \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
+If you are not comfortable with SQL, you can:
+
+-   Instruct AI to write SQL for you \(see [Generate SQL Code with AI](generate-sql-code-with-ai-d153065.md)\).
+-   Use the graphical view editor, which lets you compose SQL code using an intuitive graphical interface \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
 
 For information about making your data accessible outside SAP Datasphere, see [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md).
 
 In addition to working with views in the editor, you can also:
 
--   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
--   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/STABI/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
 > ### Note:  
-> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+> This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).
 
 
 
@@ -188,7 +195,7 @@ In addition to working with views in the editor, you can also:
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -374,7 +381,7 @@ In addition to working with views in the editor, you can also:
     -   *Input Parameters* - Create input parameters to require the user to enter a value for use in calculated column, filter, and aggregation nodes \(see [Create an Input Parameter in a Graphical View](create-an-input-parameter-in-a-graphical-view-53fa99a.md)\).
     -   *Data Persistence* - Persist the view data to improve performance \(see [Persist Data in a Graphical or SQL View](persist-data-in-a-graphical-or-sql-view-9bd12cf.md)\).
     -   *Associations* - Create associations to other entities \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
-    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
+    -   *Data Access Controls* - Add data access controls to apply row-based security and control access to individual rows based on various criteria \(see [Securing Data with Data Access Controls](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/a032e51c730147c7a1fcac125b4cfe14.html "Users with a space administrator role can create data access controls to allow modelers to apply row-level security to Data Builder and Business Builder objects. Once a data access control is applied to an object, any user viewing its data either directly or via an object using it as a source, will see only those records they are authorized to view, based on the specified criteria.") :arrow_upper_right:\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Dependent Objects* - If your entity is used as a source or association target for other entities, then they are listed here \(see [Review the Objects That Depend on Your Table or View](review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md)\).
 
@@ -520,7 +527,7 @@ In addition to working with views in the editor, you can also:
     
     Open the *Generate OData Request* dialog to prepare access to the OData API. 
 
-    See [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
+    See [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -549,6 +556,7 @@ In addition to working with views in the editor, you can also:
     Open the AI-assisted generation menu: 
 
     -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generate Semantic Information](Modeling-Data-in-the-Data-Builder/generate-semantic-information-2fc1d26.md)\).
+    -   Generate SQL - Prompt the editor to generate SQL code for you \(see [Generate SQL Code with AI](generate-sql-code-with-ai-d153065.md)\).
 
 
     
@@ -588,7 +596,7 @@ In addition to working with views in the editor, you can also:
     </td>
     <td valign="top">
     
-    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/54fd00ddd0b24ccc9ce0fa55297bc13d.html "The Data Pipeline Analyzer enables you to monitor complex data models efficiently, allowing you to view and analyze errors, warnings, and data discrepancies in real-time. It quickly identifies data transfer failures, allowing you to take immediate action to resolve them.") :arrow_upper_right: 
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/54fd00ddd0b24ccc9ce0fa55297bc13d.html "The Data Pipeline Analyzer enables you to monitor complex data models efficiently, allowing you to view and analyze errors, warnings, and data discrepancies in real-time. It quickly identifies data transfer failures, allowing you to take immediate action to resolve them.") :arrow_upper_right: 
     
     </td>
     </tr>

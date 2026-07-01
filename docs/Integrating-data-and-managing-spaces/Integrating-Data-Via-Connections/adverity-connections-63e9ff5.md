@@ -34,7 +34,7 @@ In Adverity, an administrator must:
 
 In SAP Datasphere, a user with an administrator role must:
 
--   add the necessary Adverity IP addresses to the IP allowlist \(see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:\).
+-   add the necessary Adverity IP addresses to the IP allowlist \(see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:\).
 
     > ### Note:  
     > To get the relevant IP addresses, please contact your Adverity Account Manager or the Adverity Support team.

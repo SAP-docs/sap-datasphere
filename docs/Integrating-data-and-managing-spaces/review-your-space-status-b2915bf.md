@@ -7,7 +7,7 @@
 Color codes and icons indicate the health of a space.
 
 > ### Note:  
-> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+> This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).
 
 You can see the status of all spaces at the top of the *Space Management* page.
 

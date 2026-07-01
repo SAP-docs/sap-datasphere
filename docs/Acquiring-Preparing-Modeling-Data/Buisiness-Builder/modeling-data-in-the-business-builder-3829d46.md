@@ -12,7 +12,7 @@ This topic contains the following sections:
 -   [Import SAP BW∕4HANA Queries](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_bw4hana_import)
 
 > ### Note:  
-> Relevant only for spaces with a storage type *SAP HANA Database \(Disk and In-Memory\)*, and not for *SAP HANA Data Lake Files* spaces.
+> This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).
 
 
 

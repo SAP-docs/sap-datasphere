@@ -68,7 +68,7 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -86,7 +86,7 @@ Before you can use the connection, the following is required:
 
     Example for Certificate Download Site: `https://performancemanager4.successfactors.com`
 
-    For more information, see [Manage Certificates for Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "For connections secured by leveraging HTTPS as the underlying transport protocol (using SSL/TLS transport encryption), the server certificate must be trusted. To import a certificate into the SAP Datasphere trust chain, obtain the certificate from the target endpoint and upload it to SAP Datasphere.") :arrow_upper_right:.
+    For more information, see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
 
 -   When using OAuth 2.0 for authentication:
 
@@ -94,9 +94,15 @@ Before you can use the connection, the following is required:
 
         For more information, see [Registering Your OAuth2 Client Application](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/6b3c741483de47b290d075d798163bc1.html) in the *SAP SuccessFactors platform* documentation.
 
-    -   A SAML assertion needs to be generated to be able to provide it when creating or editing the connection.
+    -   A SAML assertion for requesting an OAuth access token is required for accessing SAP SuccessFactors. You have two options to generate the SAML assertion and provide it to the connection:
+        -   You can let SAP Datasphere dynamically generate and fetch the SAML assertion, and automatically rotate SAML assertions when they expire \(recommended\). This requires an initial configuration of the necessary components including Identity Authentication in SAP Cloud Identity Services and SAP SuccessFactors.
 
-        For an overview of the available options to generate a SAML assertion, see [Generating a SAML Assertion](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/4e27e8f6ae2748ab9f23228dd6a31b06.html) in the *SAP SuccessFactors platform* documentation.
+            For more information, see [Configuring Dynamic Generation of SAML Assertions for SAP SuccessFactors Connections](configuring-dynamic-generation-of-saml-assertions-for-sap-successfactors-connect-63c8260.md).
+
+        -   You can generate a SAML assertion, for example using an SAP-provided offline tool or an external identity provider, and manually enter it in the connection configuration. The lifetime of SAML assertions generated in this way typically is short, and you need to ensure that whenever you validate or use the connection, you have entered a valid SAML assertion in the connection configuration.
+
+            For an overview of the available options to generate a SAML assertion, see [Generating a SAML Assertion](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/4e27e8f6ae2748ab9f23228dd6a31b06.html) in the *SAP SuccessFactors platform* documentation.
+
 
 
 -   In SAP SuccessFactors IP restriction management, you have added the externally facing SAP HANA IP addresses and the outbound IP address for SAP Datasphere to the list of IP restrictions. IP restrictions are a specified list of IP addresses from which users can access your SAP SuccessFactors system.
@@ -105,7 +111,7 @@ Before you can use the connection, the following is required:
 
     -   [IP Restrictions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/bf014ed11dae45ecae6f8c6e42fa68bb/a356e2c66c7443ceb15f8592318b5dcf.html) in the *SAP SuccessFactors platform* documentation
 
-    -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
+    -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
 
 
 
@@ -208,6 +214,20 @@ The default is *OAuth 2.0*.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+\[if *Authentication Type* = *OAuth 2.0*\] *Configure Identity Provider*
+
+</td>
+<td valign="top">
+
+\[optional\] Select *true* to let SAP Datasphere generate and fetch the SAML assertion used to retrieve the access token \(recommended\). 
+
+The default is *false*. 
+
+</td>
+</tr>
 </table>
 
 
@@ -250,7 +270,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the API endpoint to use to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
+Enter the SAP SuccessFactors API endpoint to use to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
 
 </td>
 </tr>
@@ -278,6 +298,18 @@ Enter the SAP SuccessFactors company ID \(identifying the SAP SuccessFactors sys
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+\[if *Configure Identity Provider* = *true*\] *Client ID*
+
+</td>
+<td valign="top">
+
+Enter the API key received when registering SAP Datasphere as OAuth2 client application in SAP SuccessFactors. 
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
@@ -287,9 +319,127 @@ Enter the SAP SuccessFactors company ID \(identifying the SAP SuccessFactors sys
 
 
 
+### Identity Provider
+
+If *Authentication Type* = *OAuth 2.0* and *Configure Identity Provider* = *true*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Identitiy Provider Type*
+
+</td>
+<td valign="top">
+
+\[read-only\] Displays *SAP Identity Service \(IAS\)* \(Identity Authentication service in SAP Cloud Identity Services\). 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Token Endpoint*
+
+</td>
+<td valign="top">
+
+Your IAS tenant host
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Client ID*
+
+</td>
+<td valign="top">
+
+Client ID created during configuration in Cloud Identity Services
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Client Secret*
+
+</td>
+<td valign="top">
+
+Client Secret created during configuration in Cloud Identity Services
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP User Identifier*
+
+</td>
+<td valign="top">
+
+Technical user existing in both IAS and SF \(Used for IAS login\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP User Password*
+
+</td>
+<td valign="top">
+
+IAS login password
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Dependency Name*
+
+</td>
+<td valign="top">
+
+Dependency name set during the configuration \(the dependency name is used as the `resource` parameter in the token exchange call\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Scope*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the IdP scope, if applicable
+
+</td>
+</tr>
+</table>
+
+
+
 ### Credentials \(OAuth 2.0\)
 
-If *Authentication Type* = *OAuth 2.0*:
+If *Authentication Type* = *OAuth 2.0* and *Configure Identity Provider* = *false*:
 
 
 <table>

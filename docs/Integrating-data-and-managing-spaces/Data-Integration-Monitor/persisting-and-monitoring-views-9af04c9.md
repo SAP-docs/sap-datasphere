@@ -26,7 +26,7 @@ To persist and monitor views, you must have a combination of a global role and a
     -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 
-For example, the *DW Administrator* global role template grants the runtime privilege, the *DW Integrator* scoped role template grants the integration privilege, and the *DW Space Administrator* scoped role template grants the *Data Builder* privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+For example, the *DW Administrator* global role template grants the runtime privilege, the *DW Integrator* scoped role template grants the integration privilege, and the *DW Space Administrator* scoped role template grants the *Data Builder* privilege. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 To persist and monitor a view, the view must be deployed.
 
@@ -75,7 +75,7 @@ For more information, see [Creating Partitions for Your Persisted Views](creatin
 
 SQL or Graphical views are created in the data builder. The views are accessed directly from the source data. Once they are deployed in a space, they can be persisted.
 
-For more information, see [Creating a Graphical View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/27efb479c4814252964d3fbc6ca2dfc3.html "Create a view to query sources in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns and filter or aggregate data, and specify measures and other aspects of your output structure in the output node.") :arrow_upper_right: and [Creating an SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/81920e4d583f45fd8761c662d3c8abab.html "Create a view to query sources in a powerful SQL editor. You can choose between writing a standard SQL query using SELECT statements and operators such as JOIN and UNION, or use SQLScript to produce a table function. You can drag sources from the Source Browser, and specify measures and other aspects of your output structure in the side panel.") :arrow_upper_right:.
+For more information, see [Creating a Graphical View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/27efb479c4814252964d3fbc6ca2dfc3.html "Create a view to query sources in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns and filter or aggregate data, and specify measures and other aspects of your output structure in the output node.") :arrow_upper_right: and [Creating an SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/81920e4d583f45fd8761c662d3c8abab.html "Create a view to query sources in a powerful SQL editor. You can choose between writing a standard SQL query using SELECT statements and operators such as JOIN and UNION, or use SQLScript to produce a table function. You can drag sources from the Source Browser, and specify measures and other aspects of your output structure in the side panel.") :arrow_upper_right:.
 
 
 
@@ -91,7 +91,7 @@ For more info, see [Monitoring Remote Tables](monitoring-remote-tables-4dd95d7.m
 
 Table created from sources that have already been integrated into SAP Datasphere. It serves of source to create a view.
 
-For more information, see [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/2509fe4d86aa472b9858164b55b38077.html "Create a table and define columns to receive data. You can add data from a flow or a CSV file, or import tables from a connection or a CSN file.") :arrow_upper_right:.
 
 
 
@@ -107,7 +107,7 @@ For more information, see [Connecting SAP HANA Cloud, SAP HANA Database to Remot
 
 Define the flow of your data, starting by reading data from sources and writing data into a target after performing transformations on the data.
 
-For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:.
+For more information, see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right: and [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:.
 
 
 
@@ -123,7 +123,7 @@ For more information, see [Integrating Data via Connections](../Integrating-Data
 
 Local files can be imported and deployed to your space. They are then used to create a local table.
 
-For more information, see [Creating a Local Table from a CSV File](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8bba251c78874736963703cff56b1b74.html "Import a .csv file to create a table and fill it with the data from the file.") :arrow_upper_right:.
+For more information, see [Creating a Local Table from a CSV File](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/8bba251c78874736963703cff56b1b74.html "Import a .csv file to create a table and fill it with the data from the file.") :arrow_upper_right:.
 
 
 
@@ -136,7 +136,7 @@ The monitor displays the views in 2 tabs:
 -   *All Views*: It displays all the deployed views that have been created in the *Data Builder* for the current space.
 -   *Views with Runs and Persisted Views*: \(default\) It displays the views that have been run and the views already persisted.
 
-You can perform the following actions \(might depend on your role and privilege, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Privileges by App, Tool, Object, and Task](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the privileges needed to work with apps, tools, and features of SAP Datasphere.") :arrow_upper_right::
+You can perform the following actions \(might depend on your role and privilege, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Privileges by App, Tool, Object, and Task](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/2d8b7d04dcae402f911d119437ce0a74.html "Review the privileges needed to work with apps, tools, and features of SAP Datasphere.") :arrow_upper_right::
 
 
 <table>
@@ -437,7 +437,7 @@ Once persisted, the view takes the data access value *Partially Persisted* becau
 
 When you deploy a persisted view, you need to consider the following cases:
 
--   If you update or redeploy a persisted view, you need the right permission level \(Data Integration - Update\). For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:. Note that after a redeployment, the data persistence might be deleted and the data access could be changed back to virtual for views with structural changes. This will happen as soon as the underlying database object is recreated as part of the deployment. This can be seen in the *Data Access* status in the *View Builder* or in the *Data Integration* monitoring app \> *Views* again.
+-   If you update or redeploy a persisted view, you need the right permission level \(Data Integration - Update\). For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right:. Note that after a redeployment, the data persistence might be deleted and the data access could be changed back to virtual for views with structural changes. This will happen as soon as the underlying database object is recreated as part of the deployment. This can be seen in the *Data Access* status in the *View Builder* or in the *Data Integration* monitoring app \> *Views* again.
 -   If the view uses other views that were changed but not yet deployed, they are deployed as well. If these views are persisted, the persistence is deleted as well.
 -   If the view uses other views that were not changed, these views are not touched by the deployment and therefore the persistence is still available
 -   If you update or redeploy a view while you are persisting data, the persistence will fail. In this case, try again to persist the view or wait until the next scheduled run.

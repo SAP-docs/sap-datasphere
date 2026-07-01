@@ -174,7 +174,7 @@ Supported
 </td>
 <td valign="top">
 
-NotSupported
+Supported
 
 </td>
 </tr>
@@ -191,7 +191,7 @@ Supported
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 </tr>

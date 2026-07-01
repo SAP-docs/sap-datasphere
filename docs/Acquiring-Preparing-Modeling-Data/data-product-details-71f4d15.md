@@ -4,13 +4,13 @@
 
 # Data Product Details
 
-If you're interested in a data product, review its detailed information, such as properties about the data product, like its name and the data provider, the list of entities within the data product, and links to resources for how to use it.
+For data products that you're interested in, review its details, including its name, data provider, contained entities, and links to resources that explain how to use it.
 
 
 
-This topic describes the details for data products from systems that are part of an SAP Business Data Cloud formation.
+This topic describes the details for data products from systems in SAP Business Data Cloud formations.
 
-The catalog search results provides high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, choose it to view its details page. You'll see different types of information about the data product, including its properties, detailed information about its APIs, and resources that can provide information or examples on how to use it.
+The catalog search results provide high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, choose it to view its details page. You'll see different types of information about the data product, including its properties, detailed information about its APIs, and resources that can provide information or examples on how to use it.
 
 For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use it. They can also review individual APIs and learn how to extend them.
 
@@ -42,7 +42,7 @@ Name
 </td>
 <td valign="top">
 
-Displays the data product's name.
+Displays the data product's name. 
 
 </td>
 </tr>
@@ -54,11 +54,11 @@ Statuses
 </td>
 <td valign="top">
 
-Displays the lifecycle, release, and functional statuses \(*Active* or *Inactive*\) for a data product. You can choose a status to get more information.
+Displays the lifecycle, release, and functional statuses for a data product. You can choose a status to get more information.
 
 -   The lifecycle status reflects the different situations and phases of the data product.
 -   The release status reflects the data product's availability to consumers.
--   The functional status reflects the integrity of the data product in relation to its source.
+-   The functional status reflects the integrity of the data product in relation to its source system.
 
 
 
@@ -72,21 +72,21 @@ Data Protection and Privacy
 </td>
 <td valign="top">
 
-Displays a tag indicating whether the data product has *Personal Data*, *Sensitive Personal Data*, or both.
+The *Personal Data* and *Sensitive Personal Data* tags help you quickly identify data products requiring strict access control. One tag is automatically applied to any data product containing personal data, with *Sensitive Personal Data* applied if both types are present:
 
--   *Personal Data* is applied to data products that contain people's personal data. Personal data is information that can be used to identify an individual, either on its own or in combination with other data, directly or indirectly. For example, height, weight, eye and hair color.
--   *Sensitive Personal Data* is applied to data products that contain people's sensitive data.Sensitive personal data contains any of the various categories of high-risk data as defined under different international data protection and privacy laws, including:
+-   *Personal Data* is information that can be used to identify an individual, either on its own or in combination with other data, directly or indirectly.
+-   *Sensitive Personal Data* is any of the various categories of high-risk data as defined under different international data protection and privacy laws.
 
-    -   Data concerning vulnerable persons, such as children or differently abled individuals
-    -   Data to evaluate and predict a person’s behavior
-    -   Passwords and answers security questions
-    -   Employment, professional, and education details, such as salary, trade union membership, or degrees or certifications obtained
-    -   Data revealing someone’s personal details, such as political opinions, religious beliefs, marital status, or criminal convictions and offenses
-    -   Health data \(for example, the US Health Insurance Portability and Accountability Act \(HIPAA\)\)
-    -   Financial information, such as bank account and credit card data
+For more information, see [Data Protection and Privacy Tagging](data-protection-and-privacy-tagging-6c00246.md).
 
-    Processing personal data must be strictly controlled to ensure it is handled lawfully, fairly, and transparently in accordance with the laws and regulations in your country or region \(for example, the European Union’s General Data Protection Regulation \(GDPR\)\).
-
+> ### Example:  
+> The *Personal Data* is applied to data products that contain personal data, such as a person's name.
+> 
+> ![Data product details page showing Personal Data tag highlighted.](images/Data_Product_Details_-_Personal_Data_tag_d744f21.png)
+> 
+> To see which specific objects in an API have this tag, select the API to view its details page. Choose *View Columns* to see which columns contain personal data.
+> 
+> ![API details page showing objects with the Personal Data' tag under Data Protection and Privacy column.](images/API_Details_-_Personal_Data_tag_81247a4.png)
 
 
 
@@ -119,12 +119,24 @@ Displays a short summary of the data product.
 <tr>
 <td valign="top">
 
-Extraction system and data provider
+Source System
 
 </td>
 <td valign="top">
 
-Displays the name and type of source system the data product is extracted from and the data provider's name.
+Displays the name and type of source system the data product is extracted.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Provider
+
+</td>
+<td valign="top">
+
+Displays the data provider's name.
 
 </td>
 </tr>
@@ -166,7 +178,7 @@ Description
 </td>
 <td valign="top">
 
-Opens a dialog that shows the change history for the data product.
+Opens a dialog that shows the change history for the data product. 
 
 </td>
 </tr>
@@ -178,7 +190,7 @@ Opens a dialog that shows the change history for the data product.
 </td>
 <td valign="top">
 
-Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
+Opens a dialog that displays the *Impact and Lineage Analysis* diagram. 
 
 </td>
 </tr>
@@ -190,7 +202,7 @@ Opens a dialog that displays the *Impact and Lineage Analysis* diagram.
 </td>
 <td valign="top">
 
-Updates the data product with the latest minor version in all spaces where it's installed. This action is available only when the version of the installed data product does not match the version available in the catalog and if you have the appropriate permissions.
+Updates the data product with the latest minor version in all spaces where it's installed. This action is available only if the installed version differs from the version available in the catalog and you have the required permissions. 
 
 </td>
 </tr>
@@ -202,7 +214,7 @@ Updates the data product with the latest minor version in all spaces where it's 
 </td>
 <td valign="top">
 
-Adds frequently used data products to your favorites.
+Adds frequently used data products to your favorites. 
 
 </td>
 </tr>
@@ -415,18 +427,6 @@ Displays the visibility context for a data product. The visibility context contr
 <tr>
 <td valign="top">
 
-Data Provider
-
-</td>
-<td valign="top">
-
-Displays the name of the data provider.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Additional Properties
 
 </td>
@@ -467,7 +467,7 @@ Description
 <tr>
 <td valign="top">
 
-System Instance Name
+System Name
 
 </td>
 <td valign="top">
@@ -649,7 +649,7 @@ Actions
 Choose an action:
 
 -   *Install*: Opens the *Import Entities* wizard. Follow the steps to import the entities of an API for a data product to your space on the local SAP Datasphere system.
--   *Update*: Updates the data product with the latest minor version in all spaces where it's installed. This action is available only when the version of the installed data product does not match the version available in the catalog and if you have the appropriate permissions.
+-   *Update*: Updates the data product with the latest minor version in all spaces where it's installed. This action is available only if the installed version differs from the version available in the catalog and you have the required permissions.
 -   *Uninstall*: Opens a dialog, where you choose a space to a data product. Uninstalling a data product removes all entities that are part of the API. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
 The actions to install, uninstall, or update data products appear based on the privileges that are assigned to you \(see [Installing Data Products](installing-data-products-ea7cb80.md)
@@ -661,8 +661,13 @@ The actions to install, uninstall, or update data products appear based on the p
 You can select a data product's API to view its details page and learn more about it. Information is separated into the following areas:
 
 -   The header section shows the version and a tag for *Personal Data*, *Sensitive Personal Data*, or both. A toolbar with available actions is also available.
--   The *Overview* tab shows a description of the API, a *Properties* section that includes the same high-level information found in details list of the data product, plus additional information such as the open resource discovery \(ORD\) identifier, and a *Details* section, that shows the available objects \(or entities\) and their container path, a tag for personal data, sensitive personal data, or both, and the primary key. If the primary key is missing, the API can't be installed. To see more details of a particular object, choose the *View Columns* link. This information includes the object's name, type, valid values, the specific columns that have personal or sensitive personal data, and more.
+
+-   The *Overview* tab shows a description of the API and a *Properties* section that includes the same high-level information found in the data product details, along with additional information such as the Open Resource Discovery \(ORD\) identifier.
+
+    The tab also includes a *Details* section that lists the available objects \(or entities\), their container paths, whether they contain personal data, sensitive personal data, or both, and their primary keys. If the primary key is missing, the API can't be installed. To see more details of a particular object, choose the *View Columns* link. This information includes the object's name, type, valid values, the specific columns that have personal or sensitive personal data, and more.
+
 -   The *Documentation* tab provides a more detailed description of the API, links to more information on how to use it, and extensibility information.
+
 
 
 

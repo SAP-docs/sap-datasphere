@@ -133,7 +133,7 @@ Status
 
 Displays the functional and publication statuses of the asset.
 
-Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
+Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/STABI/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they're well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -618,7 +618,7 @@ Choose the *Open Impact and Lineage* button in the header to see a diagram for t
 ![Impact and Lineage Analysis diagram showing the an analyzed object with its impact and lineage expanded.](images/Impact_and_Lineage_Analysis_Diagram_for_an_Asset_4c0c62d.png)
 
 > ### Tip:  
-> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:.
+> If you're a data provider, you can see the impact and lineage of your data products as long as you are a member of the spaces where the data products are installed. For more information about data providers, see [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/STABI/en-US/e479b7b4c95741c7a7a1d42397984c7e.html "Users with a modeler role can create a data provider profile and publish data products to the Catalog & Marketplace.") :arrow_upper_right:.
 
 This diagram provides the data analysis of the asset and contains the following features.
 

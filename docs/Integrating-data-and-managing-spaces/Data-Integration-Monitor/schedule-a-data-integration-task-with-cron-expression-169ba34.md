@@ -12,12 +12,12 @@ Schedule data integration tasks such as data replication, data persistence, or d
 
 -   With the `DW Integrator` role you can create, change, or delete a schedule and let the scheduling component of SAP Datasphere run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
 
--   SAP Datasphere. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
+-   Scheduling is an automated task. You must authorize SAP Datasphere to run tasks on your behalf. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
 
     > ### Note:  
     > Your consent is valid for 365 days. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration* monitoring app, a warning message appears 10 days before the expiry of consent.
 
-    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/STABI/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -249,7 +249,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     > ### Note:  
     > You can copy to the clipboard the cron expression you've entered by clicking the copy icon button next to the cron expression.
 
-    The *Duration* area is available only for elastic compute notes. See [Run an Elastic Compute Node](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
+    The *Duration* area is available only for elastic compute notes. See [Run an Elastic Compute Node](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/34b35852f2ff4888bda6b17e08f73ce3.html "Once you've created an elastic compute node and added spaces and objects to it, you can run it and make data available for consumption.") :arrow_upper_right:.
 
 10. In the *Start Date* area, specify a date if you want to the change the default start date, which is the current date.
 

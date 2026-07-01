@@ -12,7 +12,7 @@ You administer SAP Datasphere using apps and tools in the side navigation area.
 
 ## ![](images/Space_Management_a868247.png) \(*Space Management*\)
 
-In the *Space Management*, you can set up, configure, and monitor your spaces, including assigning users to them. For more information, see [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:.
+In the *Space Management*, you can set up, configure, and monitor your spaces, including assigning users to them. For more information, see [Preparing Your Space and Integrating Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/STABI/en-US/8cb00503395049029055bb7aceafc080.html "Users with a space administrator or integrator role can create connections to source systems and databases and can schedule and monitor data replication and other data integration tasks. Space administrators are, additionally, responsible for controlling user access to their space, creating data access controls to secure data, enabling other forms of data integration, transporting content between tenants, and monitoring and otherwise managing the space.") :arrow_upper_right:.
 
 
 
@@ -141,7 +141,7 @@ Monitor, schedule, and run data replication and persistence tasks for remote tab
 </td>
 <td valign="top">
 
-See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
+See [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -312,7 +312,7 @@ More Information
 </td>
 <td valign="top">
 
-[Manage Certificates for Connections](Preparing-Connectivity/manage-certificates-for-connections-46f5467.md)
+[Manage Certificates](Preparing-Connectivity/manage-certificates-46f5467.md)
 
 </td>
 </tr>
@@ -478,7 +478,7 @@ Create a SAP BW bridge tenant.
 </td>
 <td valign="top">
 
-[Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:
+[Provisioning the SAP BW Bridge Tenant](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/STABI/en-US/c356f4ce55744aa09ac2d79a5235c300.html "You can provision SAP BW bridge as an optional feature in SAP Datasphere.") :arrow_upper_right:
 
 </td>
 </tr>

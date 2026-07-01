@@ -101,15 +101,7 @@ In the following cases, target column names have to be changed so that they can 
 
 ## Data Types
 
-Google BigQuery does not support the following data types:
-
--   Binary \(length 0, and higher than 5000\)
--   String \(length 0, and higher than 5000\)
--   DECFLOAT16
--   DECFLOAT34
--   UINT64
-
-The system automatically converts DECFLOAT16 and DECFLOAT34 into DECIMAL\(38,9\) and UINT64 into DECIMAL\(20,0\). The first value in brackets is the precision \(total number of digits\), the second one is the scale \(number of digits after the decimal point\).
+Google BigQuery does not support the data types DECFLOAT16, DECFLOAT34 and UINT64. The system automatically converts DECFLOAT16 and DECFLOAT34 into DECIMAL\(38,9\) and UINT64 into DECIMAL\(20,0\). The first value in brackets is the precision \(total number of digits\), the second one is the scale \(number of digits after the decimal point\).
 
 For the DECFLOAT data types, the following conditions apply:
 

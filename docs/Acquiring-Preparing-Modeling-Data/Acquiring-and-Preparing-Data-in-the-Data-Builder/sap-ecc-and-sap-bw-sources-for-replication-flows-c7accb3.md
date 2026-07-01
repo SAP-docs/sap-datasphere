@@ -10,8 +10,7 @@ You can replicate data from SAP ECC and SAP BW systems using the ODP 2.0 framewo
 
 ## Prerequisites
 
--   All objects in your replication flow have load type *Initial Only*. Delta loading is currently not supported.
-
+-   Replication objects support the *Initial Only*, *Initial and Delta*, and *Delta Only load types*.
 -   Only ODP datasets with a primary key are supported.
 -   To display available ODP datasets, you need to enter a search string in the *Select Source Objects* dialog. By default, no datasets are displayed.
 -   Replication is limited to ODP BW and SAPI data sources.

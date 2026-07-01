@@ -4,7 +4,7 @@
 
 # Installing Marketplace Data Products
 
-Use the catalog *Data Products \(Marketplace\)* collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets \(if available\), and if you have the appropriate permissions, install it to an SAP Datasphere space.
+Use the catalog *Data Products \(Marketplace\)* collection to view data products for use in your modeling and other projects.
 
 
 
@@ -25,7 +25,38 @@ To search for and evaluate objects in the *Data Products \(Marketplace\)* collec
     -   *Data Warehouse Connection* \(`CRU––--`\) - To check the license of installed data products.
 
 
-The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+
+
+## Context
+
+Marketplace data products are tailored for businesses to easily integrate third-party data. You can search and purchase analytical data from data providers. The data comes in the form of objects packaged as data products that can be used in one or several spaces of your SAP Datasphere tenant.
+
+Data products are either provided for free or require the purchase of a license at a certain cost. Some are available as one-time shipments, while others are regularly updated by data providers.
+
+You can see detailed metadata, including lineage information, for each data product, test the sample data sets \(if available\), and, if you have the appropriate permissions, install it to an SAP Datasphere space.
+
+> ### Note:  
+> Cross-landscape visibility and installation of data products are not supported. That means products created in landscape A can only be seen and acquired in landscape A. They are not visible in other landscapes, e.g. in landscape B or landscape C.
+
+The following diagram shows a simple workflow for getting data products into an SAP Datasphere space.
+
+![](images/Image_map_Enrich_Data_4_2ceb007.png)
+
+<a name="concept_p2v_qfl_tjc"/>
+
+<!-- concept\_p2v\_qfl\_tjc -->
+
+## Evaluating a Marketplace Data Product
+
+A data product is a self-contained set of tables that has data exposed for consumption outside the producing application or service via APIs. From the catalog search page, you can select the *Data Products \(Marketplace\)* collection and then select one or more filters to narrow the search results. This collection is only available in the SAP Datasphere catalog. Also, these data products are created in and are only available in SAP Datasphere.
+
+Each data product has a dedicated page describing the data product in detail to allow a transparent elaboration.
+
+To know for sure if a data product will meet your needs, you can view its details to evaluate how it can help you. Some of the information that you will be reviewing includes summary information about the data product, like its name and the data provider. Other information provides a bit more detail, like sample data, objects within the data product, and terms of use and other documentation \(see [Marketplace Data Product Details](marketplace-data-product-details-f59e912.md).
+
+After you've found and evaluated a data product, you can download a sample dataset for testing or to install the data product in an SAP Datasphere space.
 
 <a name="marketplacedp_downloadsample"/>
 
@@ -53,7 +84,7 @@ When you're evaluating a data product, you can download a sample dataset \(if av
 
 3.  When viewing the page for the data product, select *Overview tab* \> *Details*, and select the *Sample Data* tab.
 
-4.  Select a dataset and review the preview of the sample data.
+4.  Select a dataset from the dropdown and review the preview of the sample data.
 
 5.  If the dataset is suitable, download it.
 
@@ -65,10 +96,6 @@ When you're evaluating a data product, you can download a sample dataset \(if av
 ## Results
 
 Open the file explorer on your computer to find the sample dataset and then use it where you need it. If it passes all your tests, you can go back to the data product and install it in your SAP Datasphere space.
-
-The following diagram shows a simple workflow for getting data products into an SAP Datasphere space.
-
-![](images/Image_map_Enrich_Data_4_2ceb007.png)
 
 <a name="marketplacedp_install"/>
 
@@ -136,7 +163,7 @@ Objects from the data product are created and deployed in the space you selected
 
     For example, in the *Data Builder*, you use the objects from the data product to create a graphical view. For information on preparing data in the *Data Builder*, see [Preparing Data](preparing-data-f2e359c.md).
 
--   In the catalog, users will be able to discover the objects. Select the *Assets* collection and use the filters or the search to find the objects. The objects are discoverable only if authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for objects is extracted automatically, as a scheduled task, by a background process, or manually. These different methods help you ensure that the content in the catalog is up-to-date.") :arrow_upper_right:.
+-   In the catalog, users will be able to discover the objects. Select the *Assets* collection and use the filters or the search to find the objects. The objects are discoverable only if authenticated system user for the source system has access permission to the space where the data product was installed. For more information about automatic extraction, see [Understanding Different Methods for Extracting Metadata](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/STABI/en-US/b4f364186a9a4dddbd3f757d89decf94.html "Depending on the type of source system connected to the catalog, metadata for objects is extracted automatically, as a scheduled task, by a background process, or manually. These different methods help you ensure that the content in the catalog is up-to-date.") :arrow_upper_right:.
 
 
 

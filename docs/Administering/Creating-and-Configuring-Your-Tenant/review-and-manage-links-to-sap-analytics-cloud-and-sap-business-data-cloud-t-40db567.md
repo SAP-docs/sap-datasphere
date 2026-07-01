@@ -119,7 +119,7 @@ In this situation, both the SAP Business Data Cloud Cockpit and the SAP Analytic
 
 For more information about SAP Business Data Cloud, see:
 
--   [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then the SAP Business Data Cloud administrator can install intelligent content to SAP Datasphere and activate data packages to allow SAP Datasphere modelers to work with data products.") :arrow_upper_right:
+-   [Working with SAP Datasphere in SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/8f9c3725cfe84e08b3e951e7af06ce57.html "If your SAP Datasphere tenant is part of an SAP Business Data Cloud formation, then the SAP Business Data Cloud administrator can install intelligent content to SAP Datasphere and activate data packages to allow SAP Datasphere modelers to work with data products.") :arrow_upper_right:
 -   [Integrate SAP Business Data Cloud Provisioned Systems](https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD/f7acf8c9dad54e99b5ce5ebc633ed8e1/d6ec89febd8a40dbb7fb461b60bef289.html) \(in the *SAP Business Data Cloud* documentation\)
 
 
@@ -147,7 +147,7 @@ To select an SAP Analytics Cloud tenant to make available via the <span class="S
     > 
     > Multiple SAP Analytics Cloud tenants can create live connections to your SAP Datasphere tenant, but only one SAP Analytics Cloud tenant can be accessed via the <span class="SAP-icons-V5"></span> \(*Product Switch*\).
     > 
-    > For more information, see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives to create stories and analytic applications.") :arrow_upper_right:.
+    > For more information, see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives to create stories and analytic applications.") :arrow_upper_right:.
 
 
 
@@ -158,6 +158,6 @@ To select an SAP Analytics Cloud tenant to make available via the <span class="S
 
 Your SAP Datasphere tenant may be selected to store planning data for an SAP Analytics Cloud tenant. For more information, see:
 
--   [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:
+-   [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:
 -   [Configure Data Storage for Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/b103a251020746f786ec0860fa51a63a/658629503d5049e794ddd809ee554853.html) in the *SAP Analytics Cloud* documentation
 

@@ -4,7 +4,7 @@
 
 # Working With Existing Replication Flow Runs
 
-You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:.
+You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:.
 
 
 
@@ -41,7 +41,7 @@ If your replication flow has dependent replication flows, which means that one o
 1.  Go to the *Details* screen of your replication flow.
 2.  On the toolbar, click <span class="SAP-icons-V5"></span> \(View Dependent Replication Flows\)
 
-    For more information, see [Reusing Objects as Source or Target in Several Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d570eee0045a4b9ab5d47ac70140d60a.html "You can reuse certain objects as sources or targets in multiple replication flows, but you need to consider the following information:") :arrow_upper_right:.
+    For more information, see [Reusing Objects as Source or Target in Several Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/d570eee0045a4b9ab5d47ac70140d60a.html "You can reuse certain objects as sources or targets in multiple replication flows, but you need to consider the following information:") :arrow_upper_right:.
 
 
 
@@ -65,7 +65,7 @@ The value is updated once per hour.
 
 ## Stopping a Replication Flow Run
 
-If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow, or a Replication Object](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow, or a Replication Object](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
 
 To stop a replication flow run:
 
@@ -97,7 +97,7 @@ For more information about space deletion, see [Delete Your Space](../delete-you
 
 ## Modifying a Replication Flow
 
-This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:
+This can be done in the *Data Builder*, see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:
 
 > ### Example:  
 > For example, add or remove a replication object, or change the run settings.
@@ -139,7 +139,7 @@ From the details screen of a replication flow run, you can set up email notifica
 
 1.  Go to *Monitoring* \> *Data Integration* \> *Flows* monitor.
 2.  Naviage to the details screen of your replication flow by clicking <span class="FPA-icons-V3"></span> at the end of the row of the relevant replication flow.
-3.  Click *Runtime Email Notification* and configure the email. For more information on how to configure the e-mail, see [Configure Email Notification for Replication Flow Failure at Object Level](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5dc4db23d3894b10aca6ade3c666554d.html "Set up email notifications to stay informed when individual replication objects fail in a running replication flow.") :arrow_upper_right:.
+3.  Click *Runtime Email Notification* and configure the email. For more information on how to configure the e-mail, see [Configure Email Notification for Replication Flow Failure at Object Level](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/5dc4db23d3894b10aca6ade3c666554d.html "Set up email notifications to stay informed when individual replication objects fail in a running replication flow.") :arrow_upper_right:.
 
 
 
@@ -164,6 +164,6 @@ From the details screen of a replication flow run, you can change the run settin
     -   Target Thread Limit \(1-160\): It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 10.  
     -   Delta Load Frequency: \[only relevant for load type *Initial and Delta* and *Delta Only*\] Define the time interval for replicating changes from the source to the target.
 
-    For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.
+    For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.
 
 

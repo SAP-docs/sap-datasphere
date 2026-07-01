@@ -30,51 +30,54 @@ To run and share task chains and configure email notifications, you must, in add
 -   *Data Warehouse Data Builder* \(`------S-`\) - To share task chains to other spaces.
 -   *User* \(`R-------`\) - To display and add notification recipients from a list of current tenant members, when setting up email notifications.
 
-The *DW Modeler* role template, for example, grants the privileges to create and manage task chains, and the *DW Integrator* role template grants the privileges to run and share them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants the privileges to create and manage task chains, and the *DW Integrator* role template grants the privileges to run and share them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 The following prerequisites also apply:
 
--   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the schema’s owner must grant EXECUTE privileges to the space user for objects in the Open SQL schema. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
+-   For SAP HANA Open SQL schema procedures to be available for users to include in a task chain, the schema’s owner must grant EXECUTE privileges to the space user for objects in the Open SQL schema. See [Allow the Space to Access the Open SQL Schema](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/7eaa370fe4624dea9f182ee9c9ab645f.html "To grant the space write privileges in the Open SQL schema and the ability to write data to target tables in the schema, use the GRANT_PRIVILEGE_TO_SPACE stored procedure. Once this is done, data flows running in the space can select tables in the Open SQL schema as targets and write data to them, and task chains can run procedures in the schema.") :arrow_upper_right:.
 -   Objects must have been already deployed, so that they can be added to the task chain. Task chains must also be deployed to allow selection of tenant users or specify email addresses for notification of task chain completion.
 
 -   Persisting of views may include one parameter that uses the default value defined with the view. Views must not have data access controls assigned to them.
 
 -   If a data flow that has input parameters is included in a task chain, task chain runs will use default parameter values defined for the data flow.
--   A replication flow can be included in a task chain if all objects in the flow have load type *Initial Only*.
+-   You can create a schedule for your replication flow and include it in a task chain. For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time*.
 
 
 
 
 ## Context
 
-You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Local Tables, Intelligent Lookups, Data Flows, Replication Flows \(load type *Initial Only*\), and Transformation Flows. You can also include non-repository objects such as SAP HANA Open SQL schema procedures and SAP BW Bridge process chains. In addition, you can nest other existing, locally-created or shared task chains in other task chains, as well as share task chains you've created to other spaces.
+You can create task chains that include SAP Datasphere repository objects, that is, Remote Tables and Views, Local Tables, Intelligent Lookups, Data Flows, Replication Flows, and Transformation Flows. You can also include non-repository objects such as SAP HANA Open SQL schema procedures and SAP BW Bridge process chains. In addition, you can nest other existing, locally-created or shared task chains in other task chains, as well as share task chains you've created to other spaces.
 
 In addition to the objects available from the Repository or Others tabs, you can also add two other additional objects to task chains that are only available from the task chain toolbar. The *API Task* object lets you configure and run API asks to access external systems. The *Notification Task* object lets you configure email notification for individual task chain tasks.
 
 > ### Note:  
 > For remote table and view objects included in a task chain, you have the option, by default, to replicate or persist the data associated with the corresponding remote tables or views. Or, you can choose to remove the replicated or persisted data by selecting that option in the *Activities* section of an object’s *Properties* detail display.
 > 
-> -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, the replicated data will be removed and the data will be read directly from the remote source and no longer from the repository. For more information, see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:. If the data is being replicated via Real Time Replication, the data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table's log to indicate that the data access type has been changed when the remote table object is run.\)
+> -   For remote tables, if you choose the *Remove Replicated Data* option and the remote table object already has data replicated using Snapshot Replication, the replicated data will be removed and the data will be read directly from the remote source and no longer from the repository. For more information, see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:. If the data is being replicated via Real Time Replication, the data will also be removed and the object’s data access method will be changed to Remote access. \(A log message will be displayed in the remote table's log to indicate that the data access type has been changed when the remote table object is run.\)
 > 
-> -   For views, if you choose the *Remove Persisted Data* option, data persistence will be removed and the view data will be read from the remote source and no longer from the repository. For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
+> -   For views, if you choose the *Remove Persisted Data* option, data persistence will be removed and the view data will be read from the remote source and no longer from the repository. For more information, see [Persisting and Monitoring Views](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/9af04c990f294fd28c00f46763dd8b0d.html "From Data Integration Monitor > > Views , you can monitor views that have been created in the Data Builder. You can persist these views (direct run or via a schedule) to make them available locally to improve the performance when accessing your data. You can monitor the existing persisted views to keep control of your data sizing and free up memory space.") :arrow_upper_right:.
 > 
 > If replication and data removal tasks are both attempted to run at the same time, the tasks are given priority based on a first-come, first served basis.
+
+> ### Note:  
+> Only remote tables that are natively deployed within the current space are available in the Repository tab for inclusion in a task chain. Unlike task chains, which can be shared and nested across spaces, remote tables shared from other spaces are not listed and cannot be selected as task chain objects in the target space. To orchestrate replication of a remote table from a different space, nest a shared task chain from that space instead.
 
 When creating a task chain, you can create linear task chains in which one task is run after another. A succeeding task is only run once the previous task in the series has finished successfully with a *completed* status. The running of tasks in the series may resume if the previous task has a *failed* status. The task port connecting one object task to the next object task can allow the task chain to continue if a task regardless of the *failed*. For more information about task ports, see [Select Task Ports in a Task Chain](select-task-ports-in-a-task-chain-04dcfa7.md). You can also create task chains in which individual tasks are run in parallel and successful continuation of the entire task chain run depends on whether ANY or ALL parallel tasks are completed successfully.
 
 You can turn on the *Ignore Error* button in the right side panel to disregard the status of the single object task in the status evaluation of the entire task chain.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e3d04951a4a344c28b25b2b1b13bf3d8.html "You want to persist a complex view and consider how it affects the memory consumption.") :arrow_upper_right:.
 
 When creating or editing a task chain, you can also set up email notification for deployed task chains to notify selected users of task chain completion. After deploying a task chain, you can add tenant users or email addresses to notify individuals when task chain runs are completed.
 
-You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+You can monitor the status of task chain runs from the Data Integration Monitor. For more information, see [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
 In addition to working with task chains in the editor, you can also:
 
--   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
--   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/STABI/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 -   Run them via a REST API \(see [Managing Tasks via the REST API](managing-tasks-via-the-rest-api-274f273.md)\).
 
@@ -169,7 +172,7 @@ In addition to working with task chains in the editor, you can also:
     > ### Note:  
     > Once a package is selected, it cannot be changed here. Only a user with the DW Space Administrator role \(or equivalent privileges\) can modify a package assignment in the *Packages* editor.
 
-    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
+    For more information, see [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/24aba84ceeb3416881736f70f02e3a0a.html "Users with space administrator privileges can create packages to model groups of related objects for transport between tenants. Modelers can add objects to packages via the Package field, which appears in editors when a package is created in their space. Once a package is complete and validated, the space administrator can export it to the Content Network. The structure of your package is preserved and, as the objects it contains evolve, you can easily export updated versions of it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -320,7 +323,7 @@ In addition to working with task chains in the editor, you can also:
             > -   CDSDataType.HANA\_BINARY
 
 
-        For more information, see [Controlling Deletion of Local Table Records](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/2a59b7142e1b4d478b0bf4063084261e.html "Delete records for local tables, on-demand, using filter conditions or using a schedule.") :arrow_upper_right:
+        For more information, see [Controlling Deletion of Local Table Records](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/2a59b7142e1b4d478b0bf4063084261e.html "Delete records for local tables, on-demand, using filter conditions or using a schedule.") :arrow_upper_right:
 
     -   Local Table \(File\)
 
@@ -340,9 +343,9 @@ In addition to working with task chains in the editor, you can also:
             > -   CDSDataType.HANA\_BINARY
 
         -   Delete All Records: Delete records from your local table \(file\). Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-        -   *Delete Previous Versions \(Vacuum\)*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. The default value is 7 days. The minimum authorized value is 7 so that records from the last 7 days cannot be deleted, and the maximum value is 999 days. In addition, only records that have been fully processed can be deleted. Note that, however, even if the data is deleted through a vacuum task, data is kept for another 14 days in the file space storage. As it is very likely that you will not be able to go back more than 30 days, we recommend that you do not enter a period longer than 30 days as a vacuum deletion criterion.For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:
+        -   *Delete Previous Versions \(Vacuum\)*: You delete previous versions, which are older than the number of days you have specified. Records that meet your defined criteria will be permanently deleted. The default value is 7 days. The minimum authorized value is 7 so that records from the last 7 days cannot be deleted, and the maximum value is 999 days. In addition, only records that have been fully processed can be deleted. Note that, however, even if the data is deleted through a vacuum task, data is kept for another 14 days in the file space storage. As it is very likely that you will not be able to go back more than 30 days, we recommend that you do not enter a period longer than 30 days as a vacuum deletion criterion.For more information, see [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:
 
-            For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md), [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
+            For more information on local tables \(file\), see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md), [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: and [Deleting Local Table \(File\) Records](deleting-local-table-file-records-6ec9b8a.md).
 
 
         \[Optional\]. When you select one of these options, you can override the default *Apache Spark Application Settings* that were defined at space creation by your administrator.
@@ -383,7 +386,7 @@ In addition to working with task chains in the editor, you can also:
     -   *Define New Setting for This Task*: Select another *Apache Spark Application* that fits your needs.
     -   *Use a Task Chain Parameter* \[If an Input Parameter is defined for the task chain\] : You can override the *Apache Spark Application* values by using the values defined in a task chain parameter.
 
-    For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:, [Create Input Parameters in Task Chains](create-input-parameters-in-task-chains-c9906ec.md) and [Override the Default Settings to Run Your Transformation Flow (in a File Space)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e5c4ac8ab3bf4573b86cd4f4f3118c16.html "Update the maximum amount of compute resources that the file space can consume to run a transformation flow.") :arrow_upper_right:.
+    For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:, [Create Input Parameters in Task Chains](create-input-parameters-in-task-chains-c9906ec.md) and [Override the Default Settings to Run Your Transformation Flow (in a File Space)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e5c4ac8ab3bf4573b86cd4f4f3118c16.html "Update the maximum amount of compute resources that the file space can consume to run a transformation flow.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -395,7 +398,7 @@ In addition to working with task chains in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[File Space Only\]: When you select Optimize as an activity, you have the option to use Z-ORDER COLUMNS. For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: 
+    \[File Space Only\]: When you select Optimize as an activity, you have the option to use Z-ORDER COLUMNS. For more information, see [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right: 
     
     </td>
     </tr>
@@ -432,6 +435,18 @@ In addition to working with task chains in the editor, you can also:
     <tr>
     <td valign="top">
     
+    Ignore Error
+    
+    </td>
+    <td valign="top">
+    
+    Toggle the *Ignore Error* button to disregard the status of the task from the calculation of the overall task chain status.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Input Parameters
     
     </td>
@@ -444,12 +459,24 @@ In addition to working with task chains in the editor, you can also:
     <tr>
     <td valign="top">
     
+    Output Parameters
+    
+    </td>
+    <td valign="top">
+    
+    Shows the names of the output parameters in the task object. For more information about input parameters in task chains, see [Create Output Parameters in Task Chains](create-output-parameters-in-task-chains-c6e2e01.md) 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Enable Checkup
     
     </td>
     <td valign="top">
     
-    \[Data Flow Only\] If your task running a data flow fails, you can enable this option to perform a health analysis log to be sent to your support team to get help in case of issues. Once the file is generated, go the *Flows* monitor, and navigate to the details screen to download the run details and send it to your support team. For more information, [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
+    \[Data Flow Only\] If your task running a data flow fails, you can enable this option to perform a health analysis log to be sent to your support team to get help in case of issues. Once the file is generated, go the *Flows* monitor, and navigate to the details screen to download the run details and send it to your support team. For more information, [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -490,7 +517,7 @@ In addition to working with task chains in the editor, you can also:
 
     After creating and deploying a task chain, you can optionally set up email notification for completion of task chain runs. For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).
 
-    After you've finished making changes and optionally setting up email notification for the task chain, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Run a Task Chain](run-a-task-chain-684bd8b.md), [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:, and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
+    After you've finished making changes and optionally setting up email notification for the task chain, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Run a Task Chain](run-a-task-chain-684bd8b.md), [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:, and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 
     > ### Note:  
     > In addition to running a task chain, you can also share or export the task chain following deployment:
