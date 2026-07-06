@@ -319,7 +319,7 @@ Status of the task: completed, failed, running.
 </td>
 <td valign="top">
 
-For tasks with the status “failed”, shows the substatus and a message describing the cause of failure \(see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the  (Monitoring) apps.") :arrow_upper_right:\).
+For tasks with the status “failed”, shows the substatus and a message describing the cause of failure \(see [Understanding Statuses and Substatuses](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/19cb5bdca7c5412da24bf0ac2badeef7.html "When you run an activity (replicate a remote table, persist a view, etc..), the progress of the task is monitored using statuses and substatuses. Statuses and substatuses are available in the relevant editors as well as in the  (Monitoring) apps.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -374,7 +374,7 @@ View all the statements of the task in the *Statements* tab, if the information 
 </td>
 <td valign="top">
 
-Shows if the task has an out-of-memory error \(a timestamp is then displayed\) or not \(nothing is displayed\). It is either empty \(instead of No\) and if out of memory occurs then we display the timestamp of the event.
+Shows if the task has an out-of-memory error \(a timestamp is then displayed\) or not \(nothing is displayed\). It is either empty \(instead of No\) and if out of memory occurs then we dispaly the timestamp of the event.
 
 </td>
 </tr>
@@ -410,19 +410,7 @@ Date the task has started to run.
 </td>
 <td valign="top">
 
-Unique identifier for the resources used by the Spark application. It can be helpful for debugging purposes, allowing you to trace specific resource allocations and usage patterns when troubleshooting issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Apache Spark Compute Hours*
-
-</td>
-<td valign="top">
-
-Billable metric representing the allocated memory capacity provisioned for Apache Spark tasks measured in block-hours \(where 1 block-hour = 4 GiB of Spark Compute\). Block-hours are calculated by aggregating configured memory allocations across driver and executor nodes multiplied by their runtime duration, and it is collected every minute. For more information on compute block-hours, see [Configure the Size of Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/configure-the-size-of-your-sap-datasphere-tenant-33f8ef4.md).
+Unique identifier for the reosources used by the Spark application. It can be helpful for debugging purposes, allowing you to trace specific resource allocations and usage patterns when troubleshooting issues.
 
 </td>
 </tr>

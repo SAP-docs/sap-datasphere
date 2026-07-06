@@ -103,7 +103,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
     > To prevent your tenant from storage-related outages, we reserve 15% of the tenant's total amount of disk storage as a buffer. Therefore:
     > 
     > -   The amount in the *Usable* column represents 85% of the tenant's total amount of disk storage \(displayed in the *Total* column\).
-    > -   SAP Datasphere locks all spaces if the entire amount in the *Usable* column is used \(see [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.") :arrow_upper_right:\).
+    > -   SAP Datasphere locks all spaces if the entire amount in the *Usable* column is used \(see [Unlock a Locked Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c05b6a6d06db427dbdd3041d61fd5840.html "When a space exceeds its assigned storage or when the audit logs enabled in the space consume too much disk storage, the space is automatically locked after 60 minutes if you do not free up space. Also, when the tenant disk usage has reached a critical threshold, all spaces are automatically locked to protect your tenant from storage-related outages.") :arrow_upper_right:\).
 
 
     
@@ -164,7 +164,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
     -   *Data in Spaces*: All data that is stored in spaces.
 
-    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/STABI/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\).
+    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\).
 
     -   *Other Data*: Includes data stored in database user group schemas \(see [Creating a Database User Group](Creating-a-Database-User-Group/creating-a-database-user-group-1097a47.md)\) and SAP HANA data \(such as statistics schemas\).
 
@@ -209,7 +209,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 2.  To investigate issues in particular spaces:
     1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\).
     2.  Display the list of spaces in the table layout and order by column. For example, you can display at the top of the table the spaces that use the highest amount of storage by choosing the descending order for the column *Used Storage*.
-    3.  Open a space and click *Monitor* in the space details app to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:\).
+    3.  Open a space and click *Monitor* in the space details app to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:\).
 
 
 
@@ -278,7 +278,7 @@ To investigate issues:
     
 2.  Click *View Logs* in a card to go to the *Task Logs* tab, which displays information filtered on the card criteria \(see [Reviewing Task Logs](reviewing-task-logs-399e52f.md)\).
 3.  For the spaces you have access to \(via scoped roles\), click the links in the following columns:
-    -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
+    -   *Activity* - opens the run in the *Data Integration Monitor* \(see [Managing and Monitoring Data Integration](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4cbf7c7fc64645bfa364332827557267.html "Users with a space administrator or integrator role can use the  (Data Integration) app to schedule, run, and monitor data replication and persistence tasks for remote tables and views, track queries sent to remote source systems, and manage other tasks through flows and task chains.") :arrow_upper_right:\).
 
     -   *Object Name* - opens the editor of the object.
 

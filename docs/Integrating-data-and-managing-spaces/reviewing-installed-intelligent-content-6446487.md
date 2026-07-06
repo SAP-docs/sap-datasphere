@@ -49,23 +49,6 @@ In the following example, we have two intelligent contents installed on top of t
 
 
 
-### Example: Installing Intelligent Content Combining Data Products from Multiple Systems 
-
-You can install intelligent content that combines data products coming from multiple source systems, such as from both SAP S/4HANA and SAP SuccessFactors. These source systems must be included in a single formation.
-
-> ### Note:  
-> Content of this type cannot combine data products coming from different instances of the same source system, such as SAP S/4HANA EU and SAP S/4HANA US.
-
-In this case, multiple spaces are created in SAP Datasphere for the intelligent content: separate ingestion and preparation spaces for each source system, a cross-system space where data from all source systems is combined, and a model space. The spaces are distinguishable by aliases assigned to each source system, and to the unique combination of the source systems, and are assigned to the spaces automatically.
-
-When uninstalling, all spaces but the ingestion spaces are deleted, but the ingestion spaces for each source system are retained until the final content belonging to a source system is removed.
-
-In the following example, we have intelligent content combining data products from multiple systems. The installation results in separate ingestion and preparation spaces with an additional cross-system space, and a model space.
-
-![](images/Installation_of_Intelligent_Content_Combining_Data_from_Several_Source_Systems_e65c96e.png)
-
-
-
 <a name="loio644648756d334daaaf35d4fc9a0feeda__section_rf1_vzd_zcc"/>
 
 ## Viewing Intelligent Content Objects

@@ -259,7 +259,7 @@ Users with an administrator role can create spaces, allocate compute resources a
 
     For more information, see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
-    All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\). Either a user with an administrator role or a user with a space administrator role can do so.
+    All users assigned to the space via the scoped roles are automatically displayed in the *Users* area of the space page. In this area, you can add or remove users to/from scoped roles for your space \(see [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:\). Either a user with an administrator role or a user with a space administrator role can do so.
 
 
 > ### Note:  
@@ -276,5 +276,5 @@ Users with an administrator role can create spaces, allocate compute resources a
 > 
 > You can view the total amount of storage consumed by a file space in these areas of the *Space Management*: in the *SAP HANA Data Lake Files* area of the space tile when in tile layout and in the *SAP HANA Data Lake Files* column in the table layout.
 
-For more information about working with data in the object store, see [Acquiring and Preparing Data in the Object Store](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/2a6bc3f6d79b4c39a01b6d58d043fbaf.html "Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the SAP Datasphere object store. You can prepare the data using Apache Spark transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.") :arrow_upper_right:.
+For more information about working with data in the object store, see [Acquiring and Preparing Data in the Object Store](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2a6bc3f6d79b4c39a01b6d58d043fbaf.html "Users with a modeler role can load large quantities of data via replication flows and store them inexpensively in file spaces in the SAP Datasphere object store. You can prepare the data using Apache Spark transformation flows and then share data to a standard space to be used as a source of flows, views, and analytic models.") :arrow_upper_right:.
 

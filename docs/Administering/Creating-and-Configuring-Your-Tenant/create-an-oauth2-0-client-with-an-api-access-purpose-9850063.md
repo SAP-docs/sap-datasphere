@@ -88,7 +88,7 @@ You create an OAuth2.0 Client with an *API Access* purpose:
     Select the appropriate access:
 
     -   *User Provisioning* - To use the SCIM 2.0 API \(see [Managing Users via the SCIM 2.0 API](../Managing-Users-and-Roles/managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
-    -   *Analytics Content Network Interaction* - To transport content through SAP Cloud Transport Management \(see [Transporting Content Through SAP Cloud Transport Management](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right:\).
+    -   *Analytics Content Network Interaction* - To transport content through SAP Cloud Transport Management \(see [Transporting Content Through SAP Cloud Transport Management](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/05383980f0704c71ab9872360ce45622.html "Integrate SAP Datasphere with SAP Cloud Transport Management service to transport content packages across different landscapes.") :arrow_upper_right:\).
 
 
     

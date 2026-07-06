@@ -4,11 +4,11 @@
 
 # Data Product Details
 
-For data products that you're interested in, review its details, including its name, data provider, contained entities, and links to resources that explain how to use it.
+If you're interested in a data product, review its details, including its name, data provider, contained entities, and links to resources that explain how to use it.
 
 
 
-This topic describes the details for data products from systems in SAP Business Data Cloud formations.
+This topic describes the details for data products from systems that are part of an SAP Business Data Cloud formation.
 
 The catalog search results provide high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, choose it to view its details page. You'll see different types of information about the data product, including its properties, detailed information about its APIs, and resources that can provide information or examples on how to use it.
 
@@ -54,11 +54,11 @@ Statuses
 </td>
 <td valign="top">
 
-Displays the lifecycle, release, and functional statuses for a data product. You can choose a status to get more information.
+Displays the lifecycle, release, and functional statuses \(*Active* or *Inactive*\) for a data product. You can choose a status to get more information.
 
 -   The lifecycle status reflects the different situations and phases of the data product.
 -   The release status reflects the data product's availability to consumers.
--   The functional status reflects the integrity of the data product in relation to its source system.
+-   The functional status reflects the integrity of the data product in relation to its source.
 
 
 
@@ -119,24 +119,12 @@ Displays a short summary of the data product.
 <tr>
 <td valign="top">
 
-Source System
+Extraction system and data provider
 
 </td>
 <td valign="top">
 
-Displays the name and type of source system the data product is extracted.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Data Provider
-
-</td>
-<td valign="top">
-
-Displays the data provider's name.
+Displays the name and type of source system the data product is extracted from and the data provider's name.
 
 </td>
 </tr>
@@ -427,6 +415,18 @@ Displays the visibility context for a data product. The visibility context contr
 <tr>
 <td valign="top">
 
+Data Provider
+
+</td>
+<td valign="top">
+
+Displays the name of the data provider.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Additional Properties
 
 </td>
@@ -467,7 +467,7 @@ Description
 <tr>
 <td valign="top">
 
-System Name
+System Instance Name
 
 </td>
 <td valign="top">

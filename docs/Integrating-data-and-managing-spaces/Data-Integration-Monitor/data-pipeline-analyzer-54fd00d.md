@@ -17,13 +17,13 @@ To launch the *Data Pipeline Analyzer*, you must have a scoped role that grants 
 -   **Data Warehouse General** \(-**R**------\) - To access SAP Datasphere.
 -   **Data Warehouse Data Integration** \(-**R**------\) or **Data Warehouse Data Builder** \(-R------\) To start the *Data Pipeline Analyzer* 
 
-The *DW Integrator* or *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
+The *DW Integrator* or *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:.
 
 In addition, to perform actions \(such as Run\) and solve identified issues, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   **Data Warehouse Data Integration** \(--**U**-----\) - To manually run data integration tasks.
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:
+The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:
 
 
 
@@ -166,18 +166,6 @@ Scroll, zoom, or recenter the diagram:
 -   Click the arrow buttons \(or press the arrow keys\) to scroll horizontally or vertically.
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Details
-
-</td>
-<td valign="top">
-
-You can create a Business Summary, or let AI generate a business summary for you to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements. For more information, see [Generate Summaries of the Data Pipeline Analyzer With AI](generate-summaries-of-the-data-pipeline-analyzer-with-ai-1e72ea2.md)
 
 </td>
 </tr>

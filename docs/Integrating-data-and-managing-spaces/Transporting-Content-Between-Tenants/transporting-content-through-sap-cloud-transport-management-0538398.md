@@ -115,7 +115,7 @@ Finally, you can return to SAP Cloud Transport Management to ensure the transfer
         </td>
         <td valign="top">
         
-        In the SAP Datasphere tenant, go to *System*→*Administration*→*App Integration* and create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create an OAuth2.0 Client with an API Access Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/98500631fdd14762b702ad97d106c663.html "Users with an administrator role can create OAuth2.0 clients with an API access purpose and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
+        In the SAP Datasphere tenant, go to *System*→*Administration*→*App Integration* and create the OAuth Client \(client ID and secret\) with the purpose *API Access* and the access *Analytics Content Network Interaction*. See [Create an OAuth2.0 Client with an API Access Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/98500631fdd14762b702ad97d106c663.html "Users with an administrator role can create OAuth2.0 clients with an API access purpose and provide the client parameters to users who need to connect clients, tools, or apps to SAP Datasphere.") :arrow_upper_right: for more information.
         
         </td>
         </tr>
@@ -203,7 +203,7 @@ If no user has been defined in the target tenant beforehand, the user must conse
 5.  Click *Upload*.
 
 > ### Note:  
-> If you encounter issues where changes to replication flows or other objects are not being correctly transported, ensure that your changes are deployed correctly \(see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:\).
+> If you encounter issues where changes to replication flows or other objects are not being correctly transported, ensure that your changes are deployed correctly \(see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:\).
 
 
 
@@ -217,10 +217,10 @@ Once the import is completed, you see the content of the package available in it
 > ### Note:  
 > The user who uploaded the package must be a member of the target tenant with the *Lifecycle* privilege.
 > 
-> The authentication method \(defined by the tenant owner\) must be the same on the source and on the target tenant. If the selected method is single sign-on \(SSO\), make sure to define the same user attribute for the source and the target tenant. For more information on authentication methods, see [Managing User Identity and Authentication](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/48b5c8b637a54fa491594272941855b9.html "The system owner can choose how to manage user identity and authentication for its SAP Datasphere tenant.") :arrow_upper_right:.
+> The authentication method \(defined by the tenant owner\) must be the same on the source and on the target tenant. If the selected method is single sign-on \(SSO\), make sure to define the same user attribute for the source and the target tenant. For more information on authentication methods, see [Managing User Identity and Authentication](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/48b5c8b637a54fa491594272941855b9.html "The system owner can choose how to manage user identity and authentication for its SAP Datasphere tenant.") :arrow_upper_right:.
 
 > ### Note:  
-> The deployment after import does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table, a view, or an analytic model to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
+> The deployment after import does not support packages that contain objects from one or more spaces where objects are shared from one space to another \(see [Sharing Entities and Task Chains to Other Spaces](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/64b318f8afd74bb78467cf56eb44294f.html "Share a table, a view, or an analytic model to another space to allow users assigned to that space to use it as a source for their objects. Share a task chain to another space to allow it to be added to and controlled by another task chain in the space that you share it to.") :arrow_upper_right:. In this case, you should manually deploy the objects from the source space and then deploy the objects from the target space.
 
 
 

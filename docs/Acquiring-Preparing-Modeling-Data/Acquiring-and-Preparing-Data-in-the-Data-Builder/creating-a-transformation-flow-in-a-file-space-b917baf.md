@@ -28,7 +28,7 @@ To run and schedule flows, you must, in addition, have the following privileges:
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants the privileges to create and manage flows, and the *DW Integrator* role template grants the privileges to run them. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -42,7 +42,7 @@ The *DW Modeler* role template, for example, grants the privileges to create and
 You want to model transformation flows with tables as sources, apply various transformations in a file space dedicated to loading and preparing large quantities of data, and store the resulted dataset into another local table \(file\).
 
 > ### Caution:  
-> -   You must be in a file space. See [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
+> -   You must be in a file space. See [Create a File Space to Load Data in the Object Store](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/947444683e524cfd9169d7671b72ba0c.html "Create a file space and allocate compute resources to it. File spaces are intended for loading and preparing large quantities of data in an inexpensive inbound staging area and are stored in the SAP Datasphere object store.") :arrow_upper_right:.
 > -   You can only preview data for source and target tables. Intermediate node transforms can’t be previewed.
 > -   The solution based on SAP HANA Export is not intended or recommended for bulk data transfer. If you encounter resource limit errors due to a SAP HANA export failure, you can either increase the statement memory limit or reduce the number of threads in the source space.
 
@@ -162,15 +162,12 @@ You want to model transformation flows with tables as sources, apply various tra
     > Local tables \(file\) support a limited number of data types. See [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
 4.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow. See [Removing Duplicate Records](removing-duplicate-records-d4b2df0.md).
-5.  \[optional\] If your source is a shared table with *Delta Capture* enabled:
-    -   you can change its load type \(All Active Records or Delta Capture\) in its settings panel.
-    -   if the load type is Inital and Delta, delta changes are propagated to the target table, and even to non-delta target table. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
-
+5.  \[optional\] If your source is a shared table with *Delta Capture* enabled, you can change its load type \(*All Active Records* or *Delta Capture*\) in its settings panel.
 6.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. See [Creating a Python Operator](creating-a-python-operator-a747acf.md).
 7.  Add a target table. See [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
-    > It can only be a local table \(file\).
+    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
     > 
     > In a transformation flow, when using delta capture with active records views in joins, deletions may not propagate correctly to the target table in the following cases:
     > 
@@ -185,10 +182,9 @@ You want to model transformation flows with tables as sources, apply various tra
     > -   A transformation flow on a file space using a shared object as a source cannot be cancelled while running.
     > -   Loading data in batches is not supported in a file space.
     > -   A transformation flow run fails if it lasts for over 48 hours.
-    > -   A transformation flow run fails when the source table contains columns that conflict with any of the reserved columns \(\_DRT\_STATUS, \_DRT\_MESSAGE\) of the data remediation table. Rename any conflicting columns in your source table and try again.
 
 10. You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
-11. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*, like *Simulate Run*, *Generate a SQL Analyzer Plan File*, or [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:. See [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
+11. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*, like *Simulate Run*, *Generate a SQL Analyzer Plan File*, or [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:. See [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
 
-12. \[optional\] You can download your transformation flow on file Spark driver logs in the *Data Integration Monitor* in the flow's *Details* screen. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started. See [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
+12. \[optional\] You can download your transformation flow on file Spark driver logs in the *Data Integration Monitor* in the flow's *Details* screen. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started. See [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 

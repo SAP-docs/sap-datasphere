@@ -45,15 +45,15 @@ Replication Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\). Supported file formats for target objects are are CSV, JSON, JSONL, and PARQUET. The supported file format for source objects is CSV.
+You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\). Supported file formats for target objects are are CSV, JSON, JSONL, and PARQUET. The supported file format for source objects is CSV.
 
 For more information, see:
 
--   [Secure File Transfer Protocol (SFTP) for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/5a14eb1709a24a35821d1618285d021d.html "You want to replicate data using a secure file transfer protocol (SFTP) for secure and reliable file transfers.") :arrow_upper_right:
--   [Secure File Transfer Protocol (SFTP) Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/a832ef4cee9d4d3aa1210869743b6173.html "You want to replicate data from a file storage using a secure file transfer protocol (SFTP) connection for secure and reliable file transfers to a supported target.") :arrow_upper_right:
+-   [Secure File Transfer Protocol (SFTP) for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/5a14eb1709a24a35821d1618285d021d.html "You want to replicate data using a secure file transfer protocol (SFTP) for secure and reliable file transfers.") :arrow_upper_right:
+-   [Secure File Transfer Protocol (SFTP) Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a832ef4cee9d4d3aa1210869743b6173.html "You want to replicate data from a file storage using a secure file transfer protocol (SFTP) connection for secure and reliable file transfers to a supported target.") :arrow_upper_right:
 
 > ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
 
 
@@ -67,9 +67,9 @@ Data Flows
 </td>
 <td valign="top">
 
-You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).Supported file formats are JSON, JSONL, CSV, XLS, XLSX, ORC, and PARQUET.
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).Supported file formats are JSON, JSONL, CSV, XLS, XLSX, ORC, and PARQUET.
 
-For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
+For more information, see [Add a Source to a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7b50e8e304244ced9ff1e62e2f2fe919.html "Add a source to read data from. You can add multiple sources and combine them together using join or union operators.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -130,7 +130,7 @@ Use the resulting file `host_key.pub.txt`, in the directory where you run the sp
 
 An administrator has installed and configured Cloud Connector to connect to your on-premise source.
 
-For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 
 
@@ -204,7 +204,7 @@ Enter the public SSH host key \(public key of the SFTP server, not the key finge
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
-If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
+If you don’t know your host key, ask your administrator or use command line tools like ssh-keyscan to obtain the host key \(only through a trustable channel\). For more information, see [Prepare Connectivity for Generic SFTP](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/5454a8cfdb9845a9b6c772d63b8e92ec.html "To connect to the SFTP server, a public host key is required to verify the server's identity. Additionally, to successfully validate and use a Generic SFTP connection to an on-premise SFTP server, Cloud Connector is required.") :arrow_upper_right:.
 
 </td>
 </tr>

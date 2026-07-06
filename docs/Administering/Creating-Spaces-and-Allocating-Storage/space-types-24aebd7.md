@@ -61,7 +61,7 @@ Restrictions:
 
 Storage Type: *SAP HANA Data Lake Files*
 
-See [Integrating Data from SAP BW and SAP BW∕4HANA with the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/cca4744c85b14788babe7cb6b77c9973.html "In the SAP Datasphere component of SAP Business Data Cloud, you can work with data and objects received from SAP BW and SAP BW∕4HANA systems via the Data Product Generator for SAP Business Data Cloud.") :arrow_upper_right:.
+See [Integrating Data from SAP BW and SAP BW∕4HANA with the Data Product Generator for SAP Business Data Cloud](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cca4744c85b14788babe7cb6b77c9973.html "In the SAP Datasphere component of SAP Business Data Cloud, you can work with data and objects received from SAP BW and SAP BW∕4HANA systems via the Data Product Generator for SAP Business Data Cloud.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -82,7 +82,7 @@ Restrictions:
 
 Storage Type: *SAP HANA Data Lake Files*
 
-See [Integrating Data From SAP Integrated Business Planning](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/a0b3a6e9c3f94f0bb06b81722fc5cb2b.html "Data from SAP Integrated Business Planning can be pushed to SAP Datasphere object store to be used for further modeling activities.") :arrow_upper_right:.
+See [Integrating Data From SAP Integrated Business Planning](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a0b3a6e9c3f94f0bb06b81722fc5cb2b.html "Data from SAP Integrated Business Planning can be pushed to SAP Datasphere object store to be used for further modeling activities.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -103,7 +103,7 @@ Restrictions:
 
 Storage Type: *SAP HANA Database \(Disk and In-Memory\)*
 
-See [Getting Started With SAP Datasphere, SAP BW Bridge](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/STABI/en-US/32b4861ce7d94ebd9f5abd854691582f.html "SAP Datasphere, SAP BW bridge enables you to use SAP BW functionality in the public cloud, and to import SAP BW bridge data models into SAP Datasphere.") :arrow_upper_right:.
+See [Getting Started With SAP Datasphere, SAP BW Bridge](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/32b4861ce7d94ebd9f5abd854691582f.html "SAP Datasphere, SAP BW bridge enables you to use SAP BW functionality in the public cloud, and to import SAP BW bridge data models into SAP Datasphere.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -128,7 +128,7 @@ Restrictions:
 
 Storage Type: *SAP HANA Database \(Disk and In-Memory\)*
 
-See [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
+See [Ingestion Spaces and Other SAP Business Data Cloud Spaces](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/8390855d227547c284bee71eda281459.html "") :arrow_upper_right:.
 
 </td>
 </tr>

@@ -31,7 +31,7 @@ Before you can use the connection, the following is required:
 
 -   In Precog, you have added the source for which you want to create the connection.
 
--   In SAP Datasphere, you have added the necessary Precog IP addresses to the IP allowlist. For more information, see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:.
+-   In SAP Datasphere, you have added the necessary Precog IP addresses to the IP allowlist. For more information, see [Manage IP Allowlist](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a3c214514ef94e899459f68f4c1e2a23.html "Add IP addresses to the IP Allowlist by either directly entering them or importing them from a CSV file. You can also export the IP Allowlist.") :arrow_upper_right:.
 
     > ### Note:  
     > You can find and copy the relevant IP addresses in the final step of the connection creation wizard.

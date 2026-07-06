@@ -18,7 +18,7 @@ To create data access controls, you must have a scoped role that grants you acce
 -   *Data Warehouse Data Builder* \(`-R------`\) - To access the *Data Builder*.
 -   *Data Warehouse Data Access Control* \(`CRUD----`\) - To create, read, update, and delete data access controls.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -30,8 +30,8 @@ Before creating your data access control, you must have prepared a permissions e
 
 -   ID column - Can contain:
 
-    -   User IDs in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\).
-    -   User IDs associated with any "technical user" OAuth clients created to consume data via the OData API \(see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+    -   User IDs in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\).
+    -   User IDs associated with any "technical user" OAuth clients created to consume data via the OData API \(see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
     -   Identity provider attributes. If you are defining criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
 
     This column must be selected as the *Identifier Column* in your data access control.
@@ -135,7 +135,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     \[read-only\] Displays the deployment and error status of the object.
 
-    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -230,10 +230,10 @@ Before creating your data access control, you must have prepared a permissions e
 
 4.  Click *Save* and then *Deploy* to deploy your data access control and make it available for use. 
 
-    For information about attaching a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:. 
+    For information about attaching a data access control to a view, see [Apply a Data Access Control to a Graphical or SQL View](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/8f79fc80d6134a89a03837a205d340cd.html "You can apply one or more data access controls to a view to control the data that users will see based on the specified criteria.") :arrow_upper_right:. 
 
     > ### Note:  
-    > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/b338e4aa7e7e494eb68c383720ebfd3a.html "You can, at any time, view the data contained in (or output by) your tables, views, and other Data Builder objects. When working in the graphical view editor, you can view the data output by each node in the diagram.") :arrow_upper_right:\).
+    > You can use the *View as User* tool in the *Data Viewer* panel to review the effects of the data access controls you apply by checking the records that another user will be allowed to see \(see [Viewing Object Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b338e4aa7e7e494eb68c383720ebfd3a.html "You can, at any time, view the data contained in (or output by) your tables, views, and other Data Builder objects. When working in the graphical view editor, you can view the data output by each node in the diagram.") :arrow_upper_right:\).
 
 5.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
@@ -261,7 +261,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -275,7 +275,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     Deploy your changes to make them available in the run-time environment. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -289,7 +289,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     Export the object to a CSN/JSON file. 
 
-    See [Exporting Objects to a CSN/JSON File](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/391610123f1f4a12abb12cbf77a3294d.html "Export the definitions of your tables, views, and other objects to a CSN/JSON file, which can be imported into another space or tenant.") :arrow_upper_right:.
+    See [Exporting Objects to a CSN/JSON File](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/391610123f1f4a12abb12cbf77a3294d.html "Export the definitions of your tables, views, and other objects to a CSN/JSON file, which can be imported into another space or tenant.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -303,7 +303,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     Open the *Impact and Lineage Analysis* graph for the object. 
 
-    See [Impact and Lineage Analysis](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage or data provenance of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
+    See [Impact and Lineage Analysis](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/9da4892cb0e4427ab80ad8d89e6676b8.html "The Impact and Lineage Analysis diagram helps you to understand the lineage or data provenance of a selected object or one or more of its columns, along with its impacts - the objects that depend on it and that will be impacted by any changes that are made to it.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -317,7 +317,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     \[read-only\] Displays the status of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -331,7 +331,7 @@ Before creating your data access control, you must have prepared a permissions e
     
     Open the *Version History* dialog for the object. 
 
-    See [Reviewing and Restoring Object Versions](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/4f717cc0d90e4453a072b37f6b043593.html "Each time you deploy your object, a new version is created in the repository. You can review previous versions of an object at any time and choose to restore a previous version.") :arrow_upper_right:.
+    See [Reviewing and Restoring Object Versions](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4f717cc0d90e4453a072b37f6b043593.html "Each time you deploy your object, a new version is created in the repository. You can review previous versions of an object at any time and choose to restore a previous version.") :arrow_upper_right:.
     
     </td>
     </tr>

@@ -67,7 +67,7 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     </td>
     <td valign="top">
     
-    Generate asset summaries and descriptions, and assign tag relationships. See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/STABI/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they're well-maintained and accessible.") :arrow_upper_right: and [Manage Tag Relationships for Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/STABI/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:.
+    Generate asset summaries and descriptions, and assign tag relationships. See [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right: and [Manage Tag Relationships for Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/bb608dd2a4dc402889351c4303a173a4.html "On the Semantic Enrichment tab of the asset details page, you can add, edit, or remove tags.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -79,7 +79,7 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     </td>
     <td valign="top">
     
-    Enter your search string in natural language and SAP Datasphere interprets your phrase and filters your results appropriately. See [Natural Language Search](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/04170c64c1004fc58d7f235aea0e4970.html "If natural language search is enabled on your tenant (and you have the appropriate role), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results accordingly.") :arrow_upper_right:.
+    Enter your search string in natural language and SAP Datasphere interprets your phrase and filters your results appropriately. See [Natural Language Search](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/04170c64c1004fc58d7f235aea0e4970.html "If natural language search is enabled on your tenant (and you have the appropriate role), the search field will propose example natural language strings that are appropriate to your current filter context. Select an example string or enter your own and SAP Datasphere will interpret it and filter your results accordingly.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -91,31 +91,7 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     </td>
     <td valign="top">
     
-    Enrich your entities and their columns with semantic information to prepare them for consumption. See [Generate Semantic Information](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/2fc1d26ebff748e4905d724247d33531.html "Use the Generate Semantics command to request SAP Datasphere to suggest a Semantic Usage for your entity, identify measures and attributes, and apply appropriate semantic types to them.") :arrow_upper_right:
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *AI-Assisted Data Monitoring - AI-Enhanced Data Pipeline Analyzer Summary*
-    
-    </td>
-    <td valign="top">
-    
-    Leverage AI to gain deeper insights into your data pipeline for Views, Tables, and Analytic Models. You can generate a business summary to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements. See [Generate Summaries of the Data Pipeline Analyzer With AI](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/1e72ea2b540f412c8bcd5d4751560ebc.html "Leverage AI to gain deeper insights into your data pipeline for Views, Tables, and Analytic Models. You can generate a Business Summary to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements.") :arrow_upper_right:
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *AI-Assisted Modeling - AI-Enhanced SQL View Generation*
-    
-    </td>
-    <td valign="top">
-    
-    Generate SQL code. See [Generate SQL Code with AI](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/d1530656d42f44f68b6265666ec35531.html "Use the Generate SQL command and prompt SAP Datasphere to generate code for your SQL views. You can create a view from scratch or modify existing SQL code.") :arrow_upper_right:.
+    Enrich your entities and their columns with semantic information to prepare them for consumption. See [Generate Semantic Information](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2fc1d26ebff748e4905d724247d33531.html "Use the Generate Semantics command to request SAP Datasphere to suggest a Semantic Usage for your entity, identify measures and attributes, and apply appropriate semantic types to them.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -161,7 +137,7 @@ You must complete the following Joule configuration procedures before activating
 
 5.  Grant the *Data Warehouse Joule Consumption* global privilege to users whom you want to access Joule features \(see [Assign Users to a Role](../Managing-Users-and-Roles/assign-users-to-a-role-57a7880.md)\).
 
-    Users who have been granted the privilege will see the *Joule* button available in the shell bar: <span class="SAP-icons-V5"></span> \(see [Navigating in SAP Datasphere](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/STABI/en-US/bd79b74face14b17a4cfa844a2fd36c7.html "Use the left navigation area to access all the apps available in SAP Datasphere.") :arrow_upper_right:\).
+    Users who have been granted the privilege will see the *Joule* button available in the shell bar: <span class="SAP-icons-V5"></span> \(see [Navigating in SAP Datasphere](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/bd79b74face14b17a4cfa844a2fd36c7.html "Use the left navigation area to access all the apps available in SAP Datasphere.") :arrow_upper_right:\).
 
     To explore what Joule can help you do, see [Joule in Datasphere](https://help.sap.com/docs/joule/capabilities-guide/joule-in-sap-datasphere?version=CLOUD).
 

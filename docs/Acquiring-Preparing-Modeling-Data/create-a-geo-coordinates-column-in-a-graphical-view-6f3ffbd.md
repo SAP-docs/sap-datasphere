@@ -14,7 +14,7 @@ When using the geo-coordinates column in an SAP Analytics Cloud geo map, the fol
 
 -   Bubble
 -   Heat Map
--   Choropleth / Drill\- For information about providing custom choropleth data, see [Enable Choropleth Layers for Geographical Visualizations](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/4e45d4cb71404f52bd3cb01676f328e1.html "Choropleth maps display data such as population density, per capita income, or election results, by shading or coloring geographical areas in proportion to the value of that data. Users consuming data from SAP Datasphere may want to view it via a choropleth layer in SAP Analytics Cloud or other analytics clients.") :arrow_upper_right:.
+-   Choropleth / Drill\- For information about providing custom choropleth data, see [Enable Choropleth Layers for Geographical Visualizations](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4e45d4cb71404f52bd3cb01676f328e1.html "Choropleth maps display data such as population density, per capita income, or election results, by shading or coloring geographical areas in proportion to the value of that data. Users consuming data from SAP Datasphere may want to view it via a choropleth layer in SAP Analytics Cloud or other analytics clients.") :arrow_upper_right:.
 -   Feature
 -   Flow
 
@@ -125,5 +125,5 @@ To use the geo-coordinates column in SAP Analytics Cloud you should now:
 -   Create a view with a semantic usage of *Fact* \(see [Create a Fact to Contain Measurable Data](Modeling-Data-in-the-Data-Builder/create-a-fact-to-contain-measurable-data-30089bd.md)\).
 -   Create an association in your *Fact* that points to your *Dimension* \(see [Create an Association to Define a Semantic Relationship Between Entities](Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
 -   Use the *Fact* as a fact source in an analytic model \(see [Add a Fact to an Analytic Model](Modeling-Data-in-the-Data-Builder/add-a-fact-to-an-analytic-model-27075ee.md)\).
--   Consume the analytic model in SAP Analytics Cloud \(see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives to create stories and analytic applications.") :arrow_upper_right:\).
+-   Consume the analytic model in SAP Analytics Cloud \(see [Consume Data in SAP Analytics Cloud via a Live Connection](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/a2c5486c03174620be9de3c8c769ce54.html "You can create a live connection from SAP Analytics Cloud to SAP Datasphere and consume data exposed as analytic models and perspectives to create stories and analytic applications.") :arrow_upper_right:\).
 

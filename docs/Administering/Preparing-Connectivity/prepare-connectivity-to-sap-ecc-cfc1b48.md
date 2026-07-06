@@ -50,5 +50,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[SAP ECC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from SAP ERP Central Component (SAP ECC) systems (on-premise).") :arrow_upper_right:
+[SAP ECC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from SAP ERP Central Component (SAP ECC) systems (on-premise).") :arrow_upper_right:
 

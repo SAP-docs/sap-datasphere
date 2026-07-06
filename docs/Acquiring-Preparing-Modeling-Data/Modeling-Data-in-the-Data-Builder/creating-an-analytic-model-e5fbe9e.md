@@ -18,7 +18,7 @@ To create analytic models, you must have a scoped role that grants you access to
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -40,8 +40,8 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
 In addition to working with analytic models in the editor, you can also:
 
--   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/STABI/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
--   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
 > ### Note:  
@@ -337,7 +337,7 @@ In addition to working with analytic models in the editor, you can also:
     
     Open the *Generate OData Request* dialog to prepare access to the OData API. 
 
-    See [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
+    See [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -375,7 +375,7 @@ In addition to working with analytic models in the editor, you can also:
     </td>
     <td valign="top">
     
-    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/54fd00ddd0b24ccc9ce0fa55297bc13d.html "The Data Pipeline Analyzer enables you to monitor complex data models efficiently, allowing you to view and analyze errors, warnings, and data discrepancies in real-time. It quickly identifies data transfer failures, allowing you to take immediate action to resolve them.") :arrow_upper_right: 
+    The *Data Pipeline Analyzer* helps you view and analyze errors, warnings, or data discrepancies for a selected object, so that you can understand the point of data transfer failure. This tool is useful for identifying and resolving data transfer failures, ensuring efficient data flow management and troubleshooting within complex data models. See [Data Pipeline Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/54fd00ddd0b24ccc9ce0fa55297bc13d.html "The Data Pipeline Analyzer enables you to monitor complex data models efficiently, allowing you to view and analyze errors, warnings, and data discrepancies in real-time. It quickly identifies data transfer failures, allowing you to take immediate action to resolve them.") :arrow_upper_right: 
     
     </td>
     </tr>

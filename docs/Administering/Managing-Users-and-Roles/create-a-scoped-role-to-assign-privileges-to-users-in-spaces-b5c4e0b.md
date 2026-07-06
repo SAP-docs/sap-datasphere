@@ -29,7 +29,7 @@ A user with an administrator role can assign a role to multiple users in multipl
 
 You can create a scoped role based on a standard role or on a custom role. In both cases, the scoped role inherits the privileges from the standard or custom role. You cannot edit the privileges of a scoped role or of a standard role. You can edit the privileges of a custom role. To create a scoped role with a different set of privileges, create a custom role with the set of privileges wanted and then create the scoped role from the custom role. You can then change the privileges of the custom role as needed, which will also change the privileges of all the scoped roles that are based on the custom role.
 
-Users who are granted a space administrator role via a scoped role can add or remove users to or from their spaces and the changes are reflected in the scoped roles. See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+Users who are granted a space administrator role via a scoped role can add or remove users to or from their spaces and the changes are reflected in the scoped roles. See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 We recommend that you create scoped roles by logical groups of spaces.
 
@@ -307,7 +307,7 @@ To add users to a scoped role, the users must be created beforehand.
 > ### Restriction:  
 > A user can be assigned to a maximum of 100 spaces across all scoped roles. Removal of this restriction is possible through a controlled release. For more information, see the [Customer Influence](https://influence.sap.com/sap/ino/#/campaign/4078/) page.
 
-Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+Once you've assigned a user to a space with the DW Space Administrator role via a scoped role, this user can manage the users for its space directly in the page of its space \(in the *Space Management*\). See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
 

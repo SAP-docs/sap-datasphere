@@ -434,7 +434,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a merge task for a local table \(file\).
 
-    See [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
+    See [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -453,7 +453,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run an optimize task for a local table \(file\).
 
-    See [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
+    See [Merge or Optimize Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e533b154ed3e49ce9a03e4421a5296e7.html "Local Tables (File) can store large quantities of data in the object store. You can manage this file storage with merge or optimize tasks, and allocate the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -472,7 +472,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a deletion task and delete filtered records of a local table \(file\).
 
-    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
+    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -491,7 +491,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a deletion task and delete filtered records of a local table \(file\).
 
-    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
+    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -510,7 +510,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a deletion task and delete previous versions \(vacuum\) of a local table \(file\).
 
-    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
+    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -529,7 +529,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a deletion task and delete the records of a local table \(file\) that are waiting in the inbound buffer.
 
-    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
+    See [Delete Data From Your Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/872ad509995a451890bf8b80b73ec0e6.html "Delete records or versions of a local table (File), creating a direct task or using a schedule, and free up storage by allocating the required amount of compute resources that the file space can consume when processing these tasks.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -548,7 +548,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a find & replace task in a local table \(file\).
 
-    See [Preview and Edit Local Table (File) Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/e57e12d39535439eb078078228c6f7bf.html "You want to preview and edit local table (file) data.") :arrow_upper_right:
+    See [Preview and Edit Local Table (File) Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e57e12d39535439eb078078228c6f7bf.html "You want to preview and edit local table (file) data.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -572,7 +572,7 @@ For each new space file, default Apache Spark configurations are used by default
     
     \[read-only\] Shows the configuration that is used by default to run a transformation flow in a local table \(file\).
 
-    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with tables as sources, apply various transformations, and store the resulting dataset into another local table (file).") :arrow_upper_right:
+    See [Creating a Transformation Flow in a File Space](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/b917baf0431343bea8381fa37e12eeb8.html "Create transformation flows with tables as sources, apply various transformations, and store the resulting dataset into another local table (file).") :arrow_upper_right:
     
     </td>
     </tr>

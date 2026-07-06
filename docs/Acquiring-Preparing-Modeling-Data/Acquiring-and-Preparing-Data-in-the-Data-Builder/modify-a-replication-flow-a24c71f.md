@@ -7,7 +7,7 @@
 You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.
 
 > ### Tip:  
-> This topic explains how to modify replication flow settings in the Data Builder and monitoring views. For monitoring-related information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:.
+> This topic explains how to modify replication flow settings in the Data Builder and monitoring views. For monitoring-related information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:.
 
 
 

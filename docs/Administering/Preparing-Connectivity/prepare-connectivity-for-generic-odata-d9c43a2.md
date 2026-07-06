@@ -38,5 +38,5 @@ Before you can use the connection for data flows, the following is required:
 **Related Information**  
 
 
-[Generic OData Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/5d36f1aae68a4e59989c424a66d948c9.html "Use a Generic OData connection to access data from an OData service.") :arrow_upper_right:
+[Generic OData Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/5d36f1aae68a4e59989c424a66d948c9.html "Use a Generic OData connection to access data from an OData service.") :arrow_upper_right:
 

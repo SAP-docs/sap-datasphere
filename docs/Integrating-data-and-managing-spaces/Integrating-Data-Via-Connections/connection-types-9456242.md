@@ -6,7 +6,7 @@ To connect to remote systems, applications, databases, or storages, SAP Datasphe
 
 The following connection types are available with SAP Datasphere, each connection type supporting different sets of features.
 
-For an overview of connections supporting replication flows, see also [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/STABI/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:.
+For an overview of connections supporting replication flows, see also [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:.
 
 > ### Note:  
 > -   Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
@@ -1242,7 +1242,7 @@ SAP
 <tr>
 <td valign="top">
 
-[SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/STABI/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "After modeling objects in SAP BW bridge, you can import them into SAP Datasphere via the dedicated Import Entities wizard.") :arrow_upper_right:
+[SAP Datasphere, SAP BW bridge Connection](https://help.sap.com/viewer/ecce5bb08ae24ed089497fc00c2320d8/cloud/en-US/34d1700f70444ea6a48a9d380d4cb0d5.html "After modeling objects in SAP BW bridge, you can import them into SAP Datasphere via the dedicated Import Entities wizard.") :arrow_upper_right:
 
 </td>
 <td valign="top">

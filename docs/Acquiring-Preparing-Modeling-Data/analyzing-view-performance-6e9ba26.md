@@ -16,7 +16,7 @@ The *Runtime Metrics* tool helps analyze the performance of your view by executi
 > A view must be fully deployed to run the performance analysis. Views with parameters can be analyzed only if all parameters have default values.
 
 > ### Note:  
-> To get peak memory indicators, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Configure Monitoring](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the Monitoring app.") :arrow_upper_right:.
+> To get peak memory indicators, you must enable *Expensive Statement Tracing* in :wrench:. For more information, see [Configure Monitoring](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9cd0691c44a74f2aa47b52f615f74433.html "You can control which monitoring data is collected and also obtain independent access to the underlying SAP HANA monitoring views that power the Monitoring app.") :arrow_upper_right:.
 
 
 
@@ -230,7 +230,7 @@ Start View Analyzer
 </td>
 <td valign="top">
 
-Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
+Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -389,7 +389,7 @@ Open Remote Query Monitor
 </td>
 <td valign="top">
 
-Click *Open Remote Query Monitor* above the table to go directly to the *Remote Queries Monitor*. See [Monitoring Remote Queries](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/806d7f0c45a14f1fb07db0a226b2b822.html "In the Remote Queries monitor, you track the queries sent to your remote connected source systems for your space. You can monitor the communication between the federation layer of SAP HANA Cloud and the connected remote source systems, and analyze them.") :arrow_upper_right:.
+Click *Open Remote Query Monitor* above the table to go directly to the *Remote Queries Monitor*. See [Monitoring Remote Queries](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/806d7f0c45a14f1fb07db0a226b2b822.html "In the Remote Queries monitor, you track the queries sent to your remote connected source systems for your space. You can monitor the communication between the federation layer of SAP HANA Cloud and the connected remote source systems, and analyze them.") :arrow_upper_right:.
 
 > ### Note:  
 > The remote query monitor will only display remote statements in the space you are working in.
@@ -433,7 +433,7 @@ Start View Analyzer
 </td>
 <td valign="top">
 
-Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
+Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -571,7 +571,7 @@ Start View Analyzer
 </td>
 <td valign="top">
 
-Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
+Click *Start View Analyzer* to navigate to the *View Analyzer* feature in the *Data Integration Monitor*. You need *DWC Data Integration \(Runtime\)* privilege to open the *View Analyzer*. For more information see, [Getting Started with View Analyzer](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e0aeddba00b14be29b5e49b47001d43b.html "Use the View Analyzer to explore graphical or SQL views and the entities they consume.") :arrow_upper_right:.
 
 </td>
 </tr>

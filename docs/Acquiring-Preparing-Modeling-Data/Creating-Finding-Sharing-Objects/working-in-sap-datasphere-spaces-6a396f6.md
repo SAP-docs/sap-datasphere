@@ -44,7 +44,7 @@ In our simple example, the administrator creates four spaces with the following 
 -   `Sales EU` - Model EU sales data using data shared from the `Sales` and `HR` spaces
 -   `Sales US` - Model US sales data using data shared from the `Sales` and `HR` spaces.
 
-See [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:.
+See [Create a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/bbd41b82ad4d4d9ba91341545f0b37e7.html "Create a space, allocate storage, and set the space priority and statement limits.") :arrow_upper_right:.
 
 
 
@@ -234,7 +234,7 @@ DW Consumer
 </tr>
 </table>
 
-See [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/STABI/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
+See [Create a Scoped Role to Assign Privileges to Users in Spaces](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b5c4e0b6c462414783ebbfc053815521.html "A scoped role inherits a set of scoped privileges from a standard or custom role and grants these privileges to users for use in the assigned spaces.") :arrow_upper_right:.
 
 
 
@@ -367,7 +367,7 @@ Rashmi
 </tr>
 </table>
 
-See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
+See [Control User Access to Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9d59fe511ae644d98384897443054c16.html "You can assign users to your space and manage them.") :arrow_upper_right:.
 
 
 
@@ -381,7 +381,7 @@ Space administrators and integrators can create connections to systems and other
 
 In our example, the space administrators create connections to an SAP SuccessFactors system and an SAP S/4HANA system.
 
-See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/STABI/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
+See [Integrating Data via Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/eb85e157ab654152bd68a8714036e463.html "Users with a space administrator or integrator role can create connections to SAP and non-SAP source systems, including cloud and on-premise systems and partner tools, and to target systems for outbound replication flows. Users with modeler roles can import data via connections for preparation and modeling in SAP Datasphere.") :arrow_upper_right:.
 
 
 
@@ -454,5 +454,5 @@ Consumers \(or users with any other role\) who are assigned to a space can consu
 
 In our example, the three consumers use various clients, tools, and apps to consume and visualize the exposed data.
 
-See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:.
+See [Consuming Data Exposed by SAP Datasphere](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/d7d56284bb5148c887ac4054689bfbca.html "All users with any of the standard roles can consume data exposed by spaces they are assigned to. If a user does not need to access SAP Datasphere itself, and only wants to consume data exposed by it, they should be granted a consumer role.") :arrow_upper_right:.
 

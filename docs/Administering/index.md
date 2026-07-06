@@ -62,7 +62,7 @@
     -   [Allocate Storage to a Space](Creating-Spaces-and-Allocating-Storage/allocate-storage-to-a-space-f414c3d.md)
     -   [Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md)
     -   [Set Limits to Compute Resources for File Spaces](Creating-Spaces-and-Allocating-Storage/set-limits-to-compute-resources-for-file-spaces-0cf1015.md)
-    -   [Copy Spaces and their Contents](Creating-Spaces-and-Allocating-Storage/copy-spaces-and-their-contents-73068ac.md)
+    -   [Copy a Space and its Contents](Creating-Spaces-and-Allocating-Storage/copy-a-space-and-its-contents-73068ac.md)
     -   [Rules for Technical Names](Creating-Spaces-and-Allocating-Storage/rules-for-technical-names-982f9a3.md)
     -   [Space Types](Creating-Spaces-and-Allocating-Storage/space-types-24aebd7.md)
     -   [Create Spaces via the Command Line](Creating-Spaces-and-Allocating-Storage/create-spaces-via-the-command-line-0cee58f.md)

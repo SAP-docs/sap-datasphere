@@ -294,7 +294,7 @@ SAP Analytics Cloud data processing:
 -   Long-Running Operations - Planning data actions \(see [Get Started with Data Actions for Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/2850221adef14958a4554ad2860ff412.html) in the *SAP Analytics Cloud* documentation\).
 -   System Operations - Statistics gathering and other administrative jobs for SAP Analytics Cloud data stored in SAP Datasphere.
 
-For more information about storing SAP Analytics Cloud planning data in SAP Datasphere, see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/STABI/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:.
+For more information about storing SAP Analytics Cloud planning data in SAP Datasphere, see [Integrate with SAP Analytics Cloud for Planning](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/f589cdea41674badaecfa1bf02571b6f.html "SAP Datasphere integrates with SAP Analytics Cloud to act as a data source for loading actuals or external data into a planning model, and can also persist your planning data and combine it with live actuals or other data as appropriate.") :arrow_upper_right:.
 
 </td>
 </tr>
