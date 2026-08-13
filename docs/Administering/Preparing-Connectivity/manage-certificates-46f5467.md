@@ -60,7 +60,7 @@ In addition to managing TLS server certificates in the *Configuration* app, you 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
 
 2.  In the *Certificates* section, click <span class="FPA-icons-V3"></span> Add Certificate.
 

@@ -30,7 +30,7 @@ For third-party adapters:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
 2.  In the *On-Premise Agents* section, click the *Adapters* button to display the agents with their adapter information.
 

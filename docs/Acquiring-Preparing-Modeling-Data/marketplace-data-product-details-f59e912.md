@@ -600,7 +600,7 @@ Description
 </td>
 <td valign="top">
 
-Use the toolbar and diagram tools to control the layout of the diagram. choose *Reset* to restore the default layout.
+Use the toolbar and diagram tools to control the layout of the diagram. Choose *Reset* to restore the default layout.
 
 </td>
 </tr>

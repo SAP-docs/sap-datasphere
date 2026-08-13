@@ -29,60 +29,8 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
 
 ## Procedure
 
-1.  From the side navigation menu, click :desktop_computer: *\(Monitoring\)* *\>* <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)*  .
+1.  From the side navigation menu, click :desktop_computer: *\(Monitoring\)* *\>* <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)* .
 
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Card
-    
-    </th>
-    <th valign="top">
-
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Total CU Consumption*
-    
-    </td>
-    <td valign="top">
-    
-    Shows the number of capacity units consumed in the specified time frame.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Total CU Consumption: Relative to Your Subscription*
-    
-    </td>
-    <td valign="top">
-    
-    Shows the percentage of your capacity unit subscription that is used specified time frame.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Total CU Consumption: Daily*
-    
-    </td>
-    <td valign="top">
-    
-    Displays a bar chart showing the number of capacity units consumed each day of this month.
-    
-    </td>
-    </tr>
-    </table>
-    
     The *Capacities Monitoring* app is shown.
 
 2.  To view capacity unit consumption and other data per space, click the *Spaces* tab.
@@ -133,7 +81,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     </td>
     <td valign="top">
     
-    Shows the amount of object store storage consumed by the space during the selected time period, measured in terabytes \(TB\).
+    Shows the amount of object store storage consumed by the space during the selected time period, measured in terabyte-hours \(TBh\). For example, a space containing 5 GB of data for 709 hours consumes approximately 3.46 TBh. The physical storage remains 5 GB; the 3.46 TBh value represents accumulated storage consumption over time.
     
     </td>
     </tr>
@@ -145,7 +93,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     </td>
     <td valign="top">
     
-    Shows the total compute resources used for object store operations, measured in gigabyte-hours \(GB-hours\) for the specified time frame.
+    Shows the total compute resources used for object store operations, measured in gigabyte-hours \(GBh\) for the specified time frame.
     
     </td>
     </tr>

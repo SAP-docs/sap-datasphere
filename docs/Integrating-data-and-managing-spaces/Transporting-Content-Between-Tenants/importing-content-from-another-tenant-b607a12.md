@@ -59,7 +59,7 @@ For more information, see [Privileges and Permissions](https://help.sap.com/view
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Import*\) to open the list of content available for import.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Import*\) to open the list of content available for import.
 
     If you don’t see expected packages to import, click the *Settings* button and review the import settings. You can:
 

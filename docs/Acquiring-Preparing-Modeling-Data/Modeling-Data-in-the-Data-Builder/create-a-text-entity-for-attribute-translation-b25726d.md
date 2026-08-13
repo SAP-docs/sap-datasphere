@@ -233,6 +233,9 @@ For example:
     
 2.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
 
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
     You must specify at least the following attributes:
 
 
@@ -419,5 +422,7 @@ For example:
 4.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
+
+5.  Connect a fact or dimension containing attributes to be translated to your text entity using a text association \(see [Create an Association to a Text Entity](create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md#loio66c6998af9974dac8f54a46515777560__section_text)\).
 
 

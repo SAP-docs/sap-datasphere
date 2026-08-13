@@ -66,7 +66,7 @@ SAP Datasphere \(file space\)
 </td>
 <td valign="top">
 
-Not supported
+`I-----`
 
 </td>
 <td valign="top">
@@ -76,7 +76,7 @@ Not supported
 </td>
 <td valign="top">
 
-Use as: [Target](sap-datasphere-targets-for-replication-flows-12c45eb.md)
+Use as: [Source](local-table-file-sources-for-replication-flows-bdff6b9.md) | [Target](sap-datasphere-targets-for-replication-flows-12c45eb.md)
 
 </td>
 </tr>
@@ -274,7 +274,7 @@ Not supported
 </td>
 <td valign="top">
 
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/057fa4b51c734e679dd70eec9514839d.html "Use the connection to connect to and access objects in Microsoft OneLake.") :arrow_upper_right: | Use as: [Source](cloud-storage-provider-sources-for-replication-flows-4d481a2.md) |
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/057fa4b51c734e679dd70eec9514839d.html "Use the connection to connect to and access objects in Microsoft OneLake.") :arrow_upper_right: | Use as: [Source](cloud-storage-provider-sources-for-replication-flows-4d481a2.md) 
 
 </td>
 </tr>
@@ -308,7 +308,7 @@ Oracle
 </td>
 <td valign="top">
 
-`I-----` 
+`I-ID-D`
 
 </td>
 <td valign="top">
@@ -319,6 +319,28 @@ Not supported
 <td valign="top">
 
 [Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REST API
+
+</td>
+<td valign="top">
+
+`--ID--`
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/9c582ca295164a538cb61b7e7beb6719.html "Create a custom connection type to allow users assigned to a SAP Datasphere file space to connect to external REST APIs and load JSON-based data into the SAP Datasphere object store using replication flows.") :arrow_upper_right: | Use as: [Source](rest-api-custom-connection-sources-for-replication-flows-cc0fad8.md)
 
 </td>
 </tr>
@@ -352,7 +374,7 @@ SAP BW
 </td>
 <td valign="top">
 
-`I-----` 
+`I-ID-D`
 
 </td>
 <td valign="top">
@@ -374,7 +396,7 @@ SAP ECC
 </td>
 <td valign="top">
 
-`I-----` 
+`I-ID-D`
 
 </td>
 <td valign="top">
@@ -428,7 +450,7 @@ SAP HANA Cloud, Data Lake Files
 </td>
 <td valign="top">
 
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right: | Use as:  <?sap-ot O2O class="- topic/xref " href="84405b0d00d543dc846fe19262c60682.xml" text="Source" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/cox1780503282793/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -517,6 +539,28 @@ Not supported
 <td valign="top">
 
 [Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d9ead8bb44ac456d99a141b4e3f5e973.html "Use the connection to connect to and access data from a Snowflake database.") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Local Table File
+
+</td>
+<td valign="top">
+
+`I-----`
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+Use as: [Source](local-table-file-sources-for-replication-flows-bdff6b9.md)
 
 </td>
 </tr>

@@ -34,7 +34,7 @@ Only administrators can create spaces, allocate storage, and set the space prior
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), and click *Create*.
+1.  In the side navigation area, select ![](../images/Space_Management_a868247.png) \(*Space Management*\), and select *Create*.
 
 2.  In the *Create Space* dialog, enter the following properties, and then click *Create*:
 

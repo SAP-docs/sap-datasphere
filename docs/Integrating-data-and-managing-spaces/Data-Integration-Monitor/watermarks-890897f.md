@@ -32,6 +32,9 @@ The system only transfers data that has a change timestamp greater than or equal
 
 If you reset a watermark, the system will transfer all data to the target table the next time the transformation flow runs \(using the load type *Initial and Delta*\). This means that you do not need to redeploy the transformation flow and use the load type *Initial Only*.
 
+> ### Note:  
+> Resetting the transformation flow watermark deletes all records from the*Data Remediation* table. See [Resolving Erroneous Records Using the Data Remediation Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/0cbcc49d36f345208ffd97d3695a141e.html "Automatically identify and flag erroneous records without stopping your transformation flow with the Data Remediation table.") :arrow_upper_right:.
+
 Resetting the watermark can make sense in the following situations:
 
 -   If a table that can capture delta changes is joined with a second table, and columns in the second table have been updated, you can reset the watermark to ensure that these changes are reflected in records that have already been transferred.

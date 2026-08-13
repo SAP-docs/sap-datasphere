@@ -211,6 +211,23 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
+        *Amazon Simple Storage Service* - for private connectivity \(replication flows\)
+
+        > ### Note:  
+        > Separate system mappings are required for path-style URL access and virtual-hosted-style URL access for the regional endpoint, and, if used in the connection, for the global endpoint.
+
+
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         *Apache Kafka* on-premise \(replication flows\)
         
         </td>
@@ -288,7 +305,7 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top" rowspan="2">
         
-        *Google BigQuery* \(replication flows\)
+        *Google BigQuery* - for private connectivity \(replication flows\)
         
         </td>
         <td valign="top">
@@ -301,6 +318,69 @@ For more information about the supported use cases depending on the connection t
         <td valign="top">
         
         TCP \(for the storage API endpoint\)
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Google Cloud Storage* - for private connectivity \(replication flows\)
+
+        > ### Note:  
+        > Separate system mappings are required for the storage endpoint and for the OAuth2 endpoint.
+
+
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Microsoft Azure Data Lake Storage Gen2* - for private connectivity \(replication flows\)
+
+        > ### Note:  
+        > Separate system mappings are required for the `dfs` and `blob` endpoints of your storage account. If OAuth 2.0 authentication is used in the connection, an additional system mapping is required for the Microsoft OAuth endpoint.
+
+
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Microsoft Azure SQL Database* - for private connectivity \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Microsoft OneLake* - for private connectivity \(replication flows\)
+
+        > ### Note:  
+        > Separate system mappings are required for the data endpoint and for the Microsoft OAuth endpoint.
+
+
+        
+        </td>
+        <td valign="top">
+        
+        TCP
         
         </td>
         </tr>

@@ -1,8 +1,10 @@
 <!-- loio6bdd79878afa4ec5bcd9d3502158a06e -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Display Your System Information
 
-Add a visual tenant type indicator to your system.
+Configure a system information bar and change the favicon to differentiate between your systems.
 
 
 
@@ -10,7 +12,7 @@ Add a visual tenant type indicator to your system.
 
 ## Prerequisites
 
-To add a visual indicator to your tenant, you must have a global role that grants you the following privileges:
+To add a system information bar and change the favicon in your tenant, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
@@ -21,29 +23,33 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Context
 
-You can add a tenant type indicator to show all users which system they are using. For example, it would allow users to differentiate between a test or production system. When enabled, a colored information bar is visible to all users of the tenant, and the browser favicon is be updated with the matching color.
+You can add a system information bar to show all users which system they're currently in. For example, it would allow users to easily differentiate between a test or production system. When enabled, a colored information bar is visible to all users of the tenant. In addition, you can choose to show the SAP or Datasphere icon in the browser tabs, bookmarks, search results, and history.
 
 
 
 ## Procedure
 
-1.  Go to *System* \> *Configuration* \> *System Information*.
+1.  From the side navigation, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Default Appearance* tab.
 
-2.  If you have not set system information before, select *Customize Visual Settings*. If you have previously set system information, select *Edit*.
+2.  In the *System Information Bar* section, select the checkbox *Display the system information bar*.
 
-3.  Select a tenant type from the list. If you select a *Custom* type, you must add a *Title*. The tenant type will be displayed in the information bar.
+3.  Choose one of the tenant types from the drop-down menu.
 
-    Example *Custom* dialog:
+    -   *Test*
+    -   *Development*
+    -   *Production*
+    -   *Custom*
 
-    ![](images/SystemInformationCustom_c76dcb5.png)
+        If you select a custom type, you can enter your own title and choose a background color. The custom title can contain up to 100 characters.
 
-4.  Select a color.
 
-    A preview of the favicon and information bar will be displayed.
+    ![](images/System_Information_Bar_Example_f1781d1.png)
 
-5.  Select *Confirm*.
+4.  **Optional:** In the *Favicon* section, choose the SAP or Datasphere icon.
 
-6.  Turn on the *Display System Information* toggle.
+    The Datasphere icon will be the same color as your system information bar.
+
+5.  Select *Save* to commit your changes.
 
 
 
@@ -52,7 +58,7 @@ You can add a tenant type indicator to show all users which system they are usin
 
 ## Results
 
-The tenant information that you set is displayed to all users above the shell bar. For example:
+The system information is displayed for all users above the shell bar.
 
-![](images/SystemInformationBar_6407d53.png)
+![](images/Custom_System_Information_Bar_09108ec.png)
 

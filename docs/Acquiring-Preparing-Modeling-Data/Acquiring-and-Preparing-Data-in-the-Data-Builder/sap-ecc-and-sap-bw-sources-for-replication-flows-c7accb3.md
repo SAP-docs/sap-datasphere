@@ -10,8 +10,12 @@ You can replicate data from SAP ECC and SAP BW systems using the ODP 2.0 framewo
 
 ## Prerequisites
 
--   Replication objects support the *Initial Only* load type.
--   Only ODP datasets with a primary key are supported.
+-   Replication objects support the *Initial Only*, *Initial and Delta*, and *Delta Only load types*.
+-   ODP datasets without a primary key are supported if you configure the primary key manually. To do so:
+    -   Select the relevant object.
+    -   Choose Configure Schema in the *Source Schema Settings* section of the properties panel.
+    -   Mark the relevant columns as key columns.
+
 -   To display available ODP datasets, you need to enter a search string in the *Select Source Objects* dialog. By default, no datasets are displayed.
 -   Replication is limited to ODP BW and SAPI data sources.
 
@@ -104,7 +108,7 @@ You can choose between 2 content types:
 > ### Note:  
 > This option is available only for replication flows created from wave 2025.04.It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
 > 
-> -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify a Replication Flow](modify-a-replication-flow-a24c71f.md).
+> -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md).
 
 
 

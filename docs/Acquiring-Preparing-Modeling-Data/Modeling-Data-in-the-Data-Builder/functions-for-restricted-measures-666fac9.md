@@ -2,7 +2,7 @@
 
 # Functions for Restricted Measures
 
-This is a list of functions you can use in expressions for restricted measures.
+This is a list of functions you can use in expressions for restricted measures. These functions can't be used without a hierarchy. If you don't specify a hierarchy to be used, the first hierarchy that's defined for the dimension is used. The hierarchy must be selected in the preview or the story in SAP Analytics Cloud before you can use this function.
 
 
 

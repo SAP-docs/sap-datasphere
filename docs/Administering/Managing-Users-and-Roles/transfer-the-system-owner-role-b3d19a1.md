@@ -18,7 +18,7 @@ You must be logged on as a user with the *System Information Update* privilege.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
 2.  Select the checkbox of the user you want to assign the system owner role to.
 

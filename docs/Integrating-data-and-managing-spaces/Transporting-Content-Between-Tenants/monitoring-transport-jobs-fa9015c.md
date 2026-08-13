@@ -23,7 +23,7 @@ The *DW Space Administrator* role template, for example, grants this combination
 
 You can access the import summary of each transport job from the *Monitor* app.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Monitor*\) to display the list of import and export jobs.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Monitor*\) to display the list of import and export jobs.
 2.  \[optional\] Use the *Search* field to filter the list by package name or other criteria.
 3.  Review the *Status* column for your job. You can click the status to view the *Summary* dialog, which provides the status of each object in the package.
 4.  If you require support, be sure to copy the correlation ID in your support ticket.

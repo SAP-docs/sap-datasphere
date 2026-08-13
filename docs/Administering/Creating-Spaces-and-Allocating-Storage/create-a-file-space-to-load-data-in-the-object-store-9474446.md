@@ -34,7 +34,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 > ### Note:  
 > You cannot create or manage a file space via the command line, add a file space to an elastic compute node, or choose a file space as a monitoring space. You cannot monitor, lock, or unlock a file space. You cannot generate time data, enable audit logging, create database users, or associate HDI containers in a file space.
 > 
-> You can create up to 5 file spaces in a tenant.
+> You can create up to 20 file spaces in a tenant.
 
 Users with an administrator role can create spaces, allocate compute resources and assign users. The remaining space properties can be managed by users with a space administrator role.
 
@@ -44,7 +44,7 @@ Users with an administrator role can create spaces, allocate compute resources a
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), and click *Create*.
+1.  In the side navigation area, select ![](../images/Space_Management_a868247.png) \(*Space Management*\), and select *Create*.
 
 2.  In the *Create Space* dialog, complete the following properties:
 

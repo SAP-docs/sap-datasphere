@@ -12,7 +12,7 @@ You can delete the users that are no longer needed.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
 2.  Select the checkbox of one or more users that you want to delete, and click :wastebasket:.
 

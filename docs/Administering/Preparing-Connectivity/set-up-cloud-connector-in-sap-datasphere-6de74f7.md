@@ -36,7 +36,7 @@ For more information, see [Preparing Cloud Connector Connectivity](preparing-clo
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Data Source Configuration*.
 
 2.  Perform the required tasks:
 

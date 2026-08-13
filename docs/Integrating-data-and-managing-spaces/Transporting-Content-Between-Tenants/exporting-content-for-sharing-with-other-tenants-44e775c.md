@@ -39,8 +39,8 @@ A combination of a global role and a scoped role:
 
 -   A scoped role that grants you access to the space or spaces to export from with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Data Warehouse Data Builder* \(`-R------`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
-    -   *Spaces Files* \(`-R------`\) - To view specific spaces and their contents.
+    -   *Data Warehouse Data Builder* \(`-RU-----`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
+    -   *Spaces Files* \(`-RU-----`\) - To view specific spaces and their contents.
 
 
 The *DW Space Administrator* role template, for example, grants this combination of privileges.
@@ -280,7 +280,7 @@ The definition of an authorization scenario contains the definition of its data 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Export*\) and then click :heavy_plus_sign:.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Export*\) and then select :heavy_plus_sign:.
 
     > ### Note:  
     > You can, alternatively, use the*Packages* app to prepare and export packages \(see [Creating Packages to Export](creating-packages-to-export-24aba84.md)\).

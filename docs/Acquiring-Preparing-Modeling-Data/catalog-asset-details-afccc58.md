@@ -133,7 +133,7 @@ Status
 
 Displays the functional and publication statuses of the asset.
 
-Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, you can enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they are well-maintained and accessible.") :arrow_upper_right:.
+Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they're well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -229,7 +229,7 @@ Opens the asset in the source system where you can view or edit it. This button 
 </tr>
 </table>
 
-If you're a user with the *Catalog Administrator* role, you'll see additional actions in the toolbar.
+If you're a catalog administrator, you'll see additional actions in the toolbar.
 
 
 <table>
@@ -282,9 +282,7 @@ Opens a dialog, where you can edit the asset's name and summary description to i
 
 
 
-<a name="loioafccc581146542c485a52563167e23cc__section_zyl_jpl_bdc"/>
-
-## Source Properties and Detailed Metadata for an Asset
+## Overview: Source Properties
 
 To view the asset's properties that have been extracted from the source system, select *Overview* \> *Source*.
 
@@ -434,6 +432,12 @@ Subscription properties \(includes the following information: extraction mode, s
 
 
 
+<a name="loioafccc581146542c485a52563167e23cc__section_zyl_jpl_bdc"/>
+
+## Overview: Detailed Asset Metadata
+
+
+
 You can see a preview of the detailed metadata about the asset by choosing *Overview* \> *Details*. The detailed metadata can include columns, attributes, measures, dimensions, and other properties specific to each object. This tab option appears only if the asset has detailed metadata that can be shown. Each tab in this section represents the metadata type, such as measures or attributes, and has a table with its data. The number in brackets is the total number of rows for the table, with the preview showing up to 20 rows. If there are more than 20 rows for the table, choose *Show All* to see the rest of the rows in a separate page.
 
 > ### Note:  
@@ -530,19 +534,17 @@ Select which columns you want to show in the table.
 
 
 
-<a name="loioafccc581146542c485a52563167e23cc__section_b4h_zpl_bdc"/>
-
-## Description and Semantic Enrichments for an Asset
-
-You can view the asset’s description and semantic enrichments to get a better idea of how you can use the asset for your business needs.
-
-**Viewing the Asset’s Description**
+## Documentation
 
 The summary description in the header provides a short description of the asset. However, to get a more detailed description of the asset, choose the *Documentation* tab. The information in this description can include rich text formatting, links to content, images, videos, and more. After reviewing this description, you can get a better idea of whether the asset meets your business needs and possibly get ideas on how you can use it.
 
-**Viewing the Asset’s Semantic Enrichments**
 
-Use the*Semantic Enrichment*tab to review glossary terms, tags, and KPIs that are assigned to the asset. The preview for each section shows up to 20 rows. To see more rows in a separate page, choose *Show All*.
+
+<a name="loioafccc581146542c485a52563167e23cc__section_b4h_zpl_bdc"/>
+
+## Semantic Enrichments
+
+Choose the*Semantic Enrichment*tab to review glossary terms, tags, and KPIs that are assigned to the asset. The preview for each section shows up to 20 rows. To see more rows in a separate page, choose *Show All*.
 
 **Semantic Enrichment Tab**
 
@@ -644,7 +646,7 @@ Description
 </td>
 <td valign="top">
 
-Use the toolbar and diagram tools to control the layout of the diagram. choose *Reset* to restore the default layout.
+Use the toolbar and diagram tools to control the layout of the diagram. Choose *Reset* to restore the default layout.
 
 </td>
 </tr>

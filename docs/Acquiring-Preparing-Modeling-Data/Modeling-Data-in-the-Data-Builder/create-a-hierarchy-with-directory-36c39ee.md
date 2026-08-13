@@ -116,6 +116,7 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
 
 1.  Open the table or view containing the hierarchy information and set the *Semantic Usage* property to *Hierarchy with Directory*.
 2.  Ensure the following columns are marked as keys:
+
     -   The column containing the identifiers of child nodes in the parent-child relationship.
 
         In our example, this is the `NodeID` column.
@@ -124,6 +125,9 @@ In our example `I_GLAccountHierarchyNode` is the hierarchy entity:
 
         In our example, this is the `HierarchyName` column.
 
+
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
 
 3.  Create an association from the hierarchy entity to the directory entity, and map the column you selected as the *Hierarchy Name Column* in the hierarchy entity to the primary key column in the directory entity.
 

@@ -38,11 +38,16 @@ Add a *Calculated Columns* node to create new columns and define calculations in
 
 5.  When you are satisfied, click the breadcrumbs at the top of the side panel to drill back up to the calculated column node properties.
 
+    If your column uses *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly \(see [Modeling with Personal Data](modeling-with-personal-data-fd0d4e6.md)\).
+
 6.  The list displays all the columns output by the node. You can:
 
     -   Filter the list with the *Search* box \(or by clicking <span class="FPA-icons-V3"></span> Hide Unmodified Columns\) and reorder it.
     -   Modify the expression output by any column by clicking on the chevron on the right of its token.
     -   Delete a column that has been created in the node by clicking <span class="FPA-icons-V3"></span> Delete Selected Calculated Column.
+
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](modeling-with-personal-data-fd0d4e6.md)\).
 
 7.  Click <span class="FPA-icons-V3"></span> \(Preview Data\) to open the *Data Preview* panel and review the data output by this node. For more information, see [Viewing Object Data](viewing-object-data-b338e4a.md).
 

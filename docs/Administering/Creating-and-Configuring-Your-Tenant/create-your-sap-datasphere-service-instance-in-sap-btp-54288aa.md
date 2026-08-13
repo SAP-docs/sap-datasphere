@@ -2,12 +2,14 @@
 
 # Create Your SAP Datasphere Service Instance in SAP BTP
 
-Create an SAP Datasphere service instance in SAP Business Technology Platform \(SAP BTP\) to provision an SAP Datasphere tenant.
+If you subscribe to SAP Datasphere in SAP Business Technology Platform \(SAP BTP\), you must provision your tenant service instance via SAP BTP Cockpit.
+
+For both subscription-based contracts \(initiated on November 2023\) and consumption-based contracts, you can access the SAP BTP cockpit and view all currently available services in a global account. You need to structure this global account into subaccounts and other related artifacts, such as directories and/or spaces.
+
+You can create your own tenant in the SAP BTP Cockpit. The procedure is the same for both subscription-based and consumption-based contracts. Some details may vary depending on the chosen service plan \(free or standard\). For more information about limitations for a free plan, see SAP Note [3227267](https://launchpad.support.sap.com/#/notes/3227267).
 
 > ### Note:  
-> This information is for creating an SAP Datasphere tenant outside of SAP BDC. If your access to SAP Datasphere is part of an SAP BDC solution, you should follow the procedure in [Provisioning SAP Datasphere](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud/provisioning-sap-datasphere) in the *SAP Business Data Cloud* documentation instead.
-
-For both subscription-based contracts \(initiated on November 2023\) and consumption-based contracts, you can access the SAP BTP cockpit and view all currently available services in a global account. You need to structure this global account into subaccounts and other related artefacts, such as directories and/or spaces.
+> This information is for creating an SAP Datasphere tenant outside of SAP BDC. If your access to SAP Datasphere is part of an SAP BDC solution, you must follow the procedure in [Provisioning SAP Datasphere](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud/provisioning-sap-datasphere) in the *SAP Business Data Cloud* documentation instead.
 
 
 
@@ -179,7 +181,7 @@ In the *SAP Datasphere Administration Guide*, we provide high-level steps to cre
 4.  Click *Next* and enter the following information about the SAP Datasphere system owner, who will be notified when the service instance is created: *First Name*,*Last Name*, *Email*, and *Host Name*.
 
     > ### Note:  
-    > Alternatively, you can use a JSON file to provide the information above. See [Create an API Access Configuration JSON File](create-an-api-access-configuration-json-file-703912a.md).
+    > Alternatively, you can use a JSON file to provide the preceding information. See [Create an API Access Configuration JSON File](create-an-api-access-configuration-json-file-703912a.md).
 
 5.  Click *Next* to go to the final page of the wizard where you can review your selections, and then click *Create* to exit the wizard.
 

@@ -51,7 +51,7 @@ You can create a custom role to enable users to do either global actions on the 
 -   If you create a custom role for space-related purposes, you should include only scoped privileges and permissions. As a second step, you need to create a scoped role based on this custom role to assign users and spaces to the set of privileges included. See [Create a Scoped Role to Assign Privileges to Users in Spaces](create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Click <span class="FPA-icons-V3"></span> \(Add Role\) and select *Create a Custom Role*.
 3.  In the *Create a New Role* wizard, complete the following properties and click *Next Step*:
 
@@ -139,7 +139,7 @@ If a custom role includes global privileges, you can assign users to the role as
 > ### Note:  
 > Alternatively, you can assign users to a role from the *Users* page \(see [Create a User](create-a-user-58d4b24.md)\).
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Open the role to which you want to assign users and click *\[number of\] Users*.
 
     Alternatively, from the list of users, identify the role and can click the number in the *Users* column.
@@ -154,7 +154,7 @@ If a custom role includes global privileges, you can assign users to the role as
 
 ## Remove Users from a Role
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Open the role to which you want to assign users and click *\[number of\] Users*.
 
     Alternatively, from the list of users, identify the role and can click the number in the *Users* column.

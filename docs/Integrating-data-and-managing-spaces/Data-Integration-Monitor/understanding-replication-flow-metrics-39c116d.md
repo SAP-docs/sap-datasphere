@@ -133,6 +133,12 @@ Displays the status of the object replication.
 
 Total delta records counts. Only inserted, updated or deleted records are considered.
 
+> ### Note:  
+> -   For replication flows that use REST API sources, delta run metrics are available only when delta synchronization has been configured for the REST API connection \(see [Use Dynamic Placeholders in Request Parameter Values](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/1e05f8338caf48c29c2a3440530f8255.html?locale=en-US&state=DRAFT&version=DEV)\). Without delta synchronization, delta metrics are cumulative because each delta run processes all available records.
+> -   Deleted records in the REST API source are not deleted from the SAP Datasphere target. REST API replication supports only insert and update \(upsert\) operations only.
+
+
+
 </td>
 </tr>
 <tr>
@@ -179,7 +185,7 @@ Total duration for delta transfer.
 </td>
 <td valign="top">
 
-Total records for this delta transfer
+Total records for this delta transfer.
 
 </td>
 </tr>

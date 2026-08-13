@@ -88,15 +88,20 @@ Before you can use the connection, the following is required:
 
     For more information, see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
 
--   When using OAuth 2.0 for authentication:
+-   When using OAuth 2.0 for authentication, a SAML assertion for requesting an OAuth access token is required for accessing SAP SuccessFactors. You have two options to generate the SAML assertion and provide it to the connection:
 
-    -   SAP Datasphere must be registered in SAP SuccessFactors.
+    -   \(Recommended\) You can let SAP Datasphere dynamically generate and fetch the SAML assertion, and automatically rotate SAML assertions when they expire. This requires an initial configuration of the necessary components including Identity Authentication in SAP Cloud Identity Services and SAP SuccessFactors. The configuration provides you with information required when creating the connection.
 
-        For more information, see [Registering Your OAuth2 Client Application](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/6b3c741483de47b290d075d798163bc1.html) in the *SAP SuccessFactors platform* documentation.
+        For more information, see [Configuring Dynamic Generation of SAML Assertions for SAP SuccessFactors Connections](configuring-dynamic-generation-of-saml-assertions-for-sap-successfactors-connect-63c8260.md).
 
-    -   A SAML assertion needs to be generated to be able to provide it when creating or editing the connection.
+    -   You can manually generate a SAML assertion, for example using an SAP-provided offline tool or an external identity provider, and manually enter it in the connection configuration. The lifetime of SAML assertions generated in this way typically is short, and you need to ensure that whenever you validate or use the connection, you have entered a valid SAML assertion in the connection configuration.
 
-        For an overview of the available options to generate a SAML assertion, see [Generating a SAML Assertion](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/4e27e8f6ae2748ab9f23228dd6a31b06.html) in the *SAP SuccessFactors platform* documentation.
+        Manual generation of SAML assertion requires registering SAP Datasphere as OAuth2 client application in SAP SuccessFactors.
+
+        For more information, see the *SAP SuccessFactors platform* documentation:
+
+        -   [Generating a SAML Assertion](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/4e27e8f6ae2748ab9f23228dd6a31b06.html)
+        -   [Registering Your OAuth2 Client Application](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/6b3c741483de47b290d075d798163bc1.html)
 
 
 -   In SAP SuccessFactors IP restriction management, you have added the externally facing SAP HANA IP addresses and the outbound IP address for SAP Datasphere to the list of IP restrictions. IP restrictions are a specified list of IP addresses from which users can access your SAP SuccessFactors system.
@@ -194,17 +199,34 @@ Description
 
 Select the authentication type to use to connect to the OData endpoint. 
 
-You can select:
+Choose from the following:
 
 -   *User Name And Password* for basic authentication
--   *OAuth 2.0* 
-
-The default is *OAuth 2.0*.
+-   *OAuth 2.0* \[default\]
 
 > ### Note:  
-> HTTP basic authentication in SAP SuccessFactors will soon be retired. For more information, see [Deprecation of HTTP Basic Authentication](https://help.sap.com/doc/62fddbd651204629b46bbccbabf886ba/cloud/en-US/fcc05a902b4140e585d968c2fe4a96bc.html) in *SAP SuccessFactors What's New Viewer*.
+> Access to APIs based on HTTP Basic Authentication will be deleted on November 12, 2027. We strongly recommend to adopt the *OAuth 2.0* authentication type for your connections.
+> 
+> For more information, see:
+> 
+> -   [Deprecation of Basic Authentication for APIs](https://help.sap.com/doc/62fddbd651204629b46bbccbabf886ba/cloud/en-US/fcc05a902b4140e585d968c2fe4a96bc.html) in *SAP SuccessFactors What's New Viewer*
+> -   SAP Note [3774454](https://me.sap.com/notes/3774454)
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Authentication Type* = *OAuth 2.0*\] *Configure Identity Provider*
+
+</td>
+<td valign="top">
+
+\[optional\] Select *true* to let SAP Datasphere generate and fetch the SAML assertion used to retrieve the access token \(recommended\). 
+
+The default is *false*. 
 
 </td>
 </tr>
@@ -278,12 +300,142 @@ Enter the SAP SuccessFactors company ID \(identifying the SAP SuccessFactors sys
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+\[if *Configure Identity Provider* = *true*\] *Client ID*
+
+</td>
+<td valign="top">
+
+Enter the API key received when registering Identity Authentication as OAuth2 client application in SAP SuccessFactors. 
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
 > When editing a connection that has been created before entering the SAML assertion in the credentials was required, you can set the *Provide SAML Assertion* property in the *OAuth 2.0* section to *true* to switch to the new method and then enter a valid SAML assertion in the *Credentials* section.
 > 
 > Note that once you change the *Provide SAML Assertion* property to *true*, enter the SAML assertion and save the connection, you cannot turn back to use the /oauth/idp API to generate the SAML assertion.
+
+
+
+### Identity Provider
+
+If *Authentication Type* = *OAuth 2.0* and *Configure Identity Provider* = *true*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Identitiy Provider Type*
+
+</td>
+<td valign="top">
+
+\[read-only\] Displays *SAP Identity Service \(IAS\)* \(Identity Authentication service in SAP Cloud Identity Services\). 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Token Endpoint*
+
+</td>
+<td valign="top">
+
+Enter your SAP Cloud Identity Services tenant host.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID that has been created for your OpenID Connect \(OIDC\) application in SAP Cloud Identity Services.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Client Secret*
+
+</td>
+<td valign="top">
+
+Enter the client secret that has been created for your OpenID Connect \(OIDC\) application in SAP Cloud Identity Services.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP User Identifier*
+
+</td>
+<td valign="top">
+
+Enter the name of the user provisioned in both SAP Cloud Identity Services and SAP SuccessFactors \(this user is used for Identity Authentication login\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP User Password*
+
+</td>
+<td valign="top">
+
+Enter the password used to login to Identity Authentication.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Dependency Name*
+
+</td>
+<td valign="top">
+
+Enter the name of the dependency that has been created for integrating the OIDC with the SAML 2.0 application in SAP Cloud Identity Services \(the dependency name is used as the `resource` parameter in the token exchange call\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IdP Scope*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the IdP scope, if applicable.
+
+</td>
+</tr>
+</table>
 
 
 

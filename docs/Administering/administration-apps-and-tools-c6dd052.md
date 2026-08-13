@@ -341,7 +341,7 @@ More Information
 </td>
 <td valign="top">
 
-[Monitor Database Operations with Audit Logs](monitor-database-operations-with-audit-logs-110404a.md)
+[Monitor Read and Change Actions with Audit Logs](monitor-read-and-change-actions-with-audit-logs-110404a.md)
 
 </td>
 </tr>
@@ -353,7 +353,7 @@ More Information
 </td>
 <td valign="top">
 
-[Delete Audit Logs](delete-audit-logs-589fa42.md)
+[Monitor Read and Change Actions with Audit Logs](monitor-read-and-change-actions-with-audit-logs-110404a.md)
 
 </td>
 </tr>
@@ -734,9 +734,9 @@ Make sure that users are notified appropriately about issues in the tenant.
 
 <a name="loioc6dd05236838466c831170c5cd67e85e__section_eyw_dbb_dpb"/>
 
-## System ** \> ** About
+## \(*Profile*\) ** \> ** About
 
-Every user can view information about the software components and versions of your system, in particular:
+From the top-right corner of the shell bar, every user can view information about the software components and versions of your system, in particular:
 
 -   *Version*: Displays the version of the SAP Datasphere tenant.
 -   *Build Date*: Displays the date and time when the current version of the SAP Datasphere tenant was built.
@@ -744,5 +744,5 @@ Every user can view information about the software components and versions of yo
 -   *Database*: Displays the id of the SAP Datasphere run-time database.
 -   *Platform Version*: Displays the version of the SAP Analytics Cloud components used in SAP Datasphere.
 
-Users with the DW Administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](Preparing-Connectivity/obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)\). Administrators can also upgrade their SAP HANA database patch version. For details, see [Apply a Patch Upgrade to Your SAP HANA Database](Creating-and-Configuring-Your-Tenant/apply-a-patch-upgrade-to-your-sap-hana-database-489dc3b.md).
+Users with an administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](Preparing-Connectivity/obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)\). Administrators can also upgrade their SAP HANA database patch version \(see [Apply a Patch Upgrade to Your SAP HANA Database](Creating-and-Configuring-Your-Tenant/apply-a-patch-upgrade-to-your-sap-hana-database-489dc3b.md)\).
 

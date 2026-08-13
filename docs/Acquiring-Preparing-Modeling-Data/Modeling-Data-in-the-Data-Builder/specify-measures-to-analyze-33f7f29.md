@@ -16,6 +16,9 @@ Typical measures include:
 
 Measures are displayed in the *Measures* section of tables and views. In the graphical view and sql view editors, click the *Edit Columns* button in the *Measures* list to open and edit it in a dialog.
 
+> ### Note:  
+> If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
 By default, all columns in a fact are identified as attributes, and you must convert one or more into measures:
 
 -   In the graphical or SQL view editor:

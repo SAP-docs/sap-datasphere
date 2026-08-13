@@ -228,6 +228,9 @@ In this example, *Regional Sales* is a *Fact* with:
 
 4.  Specify your attributes \(see [Specify Attributes as Keys, Units, and Other Characteristics](specify-attributes-as-keys-units-and-other-characteristics-cedc59c.md)\).
 
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
 5.  \[optional\] Set attributes as keys to indicate that the data they contain can uniquely identify records.
 
     > ### Note:  

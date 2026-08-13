@@ -27,7 +27,7 @@ In addition, consider the prerequisites 1 to 5 in [Preparing SAP BW∕4HANA Mode
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
 2.  In the *Live Data Connections \(Tunnel\)* section, click *Manage Live Data Connections*.
 

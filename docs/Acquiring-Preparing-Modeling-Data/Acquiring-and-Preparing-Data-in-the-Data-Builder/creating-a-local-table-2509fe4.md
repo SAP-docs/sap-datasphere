@@ -42,7 +42,7 @@ In addition to working with tables in the editor, you can also:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Table* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Table* to open the editor.
 
 2.  Enter the following properties as appropriate:
 
@@ -190,7 +190,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
     
     </td>
     </tr>
@@ -231,6 +231,9 @@ In addition to working with tables in the editor, you can also:
     -   *Text* - Review the list of attributes \(see [Create a Text Entity for Attribute Translation](../Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md)\).
     -   *Relational Dataset* - Review the list of columns \(see [Columns](columns-8f0f40d.md)\).
     -   *Analytical Dataset \(Deprecated\)* - Use *Fact* instead \(see [Analytical Datasets \(Deprecated\)](../Modeling-Data-in-the-Data-Builder/analytical-datasets-deprecated-70dab71.md).
+
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
 
 4.  Complete or consult other sections as appropriate:
 

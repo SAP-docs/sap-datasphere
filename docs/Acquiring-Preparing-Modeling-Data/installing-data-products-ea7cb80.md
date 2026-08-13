@@ -24,6 +24,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+    -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 
 
 The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
@@ -81,7 +82,7 @@ You can install a data product to an SAP Datasphere space.
             -   *Replication flow to Local Tables* - Replication improves performance, but the freshness of your data will depend on your replication schedule.
 
             > ### Note:  
-            > Data products from SAP Snowflake only support the *Remote Tables* option.
+            > Data products from supported external systems can be installed only with the *Remote Tables* option.
 
             You'll be able to see a list of all the objects that will be created in the *Data Builder*.
 
@@ -111,7 +112,7 @@ If the data product you installed was created from a different system, the data 
     -   *Remote Tables*: By default, data is only federated. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Replication flow to Local Tables*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Run a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/run-a-replication-flow-98a26b2.md)\).
 
--   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
+-   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data](Modeling-Data-in-the-Data-Builder/modeling-data-5c1e3d4.md).
 
 > ### Tip:  
 > If objects in a data product are associated with objects in one or more other data products, those associations will only be visible if the related data products are installed.
@@ -133,9 +134,11 @@ The following diagram shows the flow for data products.
 You can update a data product to the latest minor version using the *Update* action. The *Update* action appears when the version of the data product is newer than the one currently installed in you space and if you have the appropriate permissions.
 
 > ### Tip:  
-> If you're updating an SAP data product that has custom fields, review the following section: [Updating an SAP Data Product to Install Source System Custom Fields](installing-data-products-ea7cb80.md#loioea7cb802cbea47b39a441888873c3a49__updatedp_customfields) 
+> If the data product is extended to have custom fields, you can uninstall and then reinstall the data product to include them \(see [Reinstalling Data Products with Custom Fields](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e150cae6255d46849f1ec9e81346a681.html "You can reinstall an SAP data product that has custom fields.") :arrow_upper_right:\).
 
-When a new major version of a data product is released, it's available as a separate data product that you install independently \(see [Installing a Data Product](installing-data-products-ea7cb80.md#loioea7cb802cbea47b39a441888873c3a49__dataproduct_installdspspace)\).
+When a new major version of a data product is released, it's available as a separate data product that you install as a new data product.
+
+\(see \).
 
 
 
@@ -161,23 +164,6 @@ When a new major version of a data product is released, it's available as a sepa
 ## Results
 
 The data product is updated to the current version for all spaces that use it. The *Update* action will no longer be available for the data product.
-
-<a name="updatedp_customfields"/>
-
-<!-- updatedp\_customfields -->
-
-## Updating an SAP Data Product to Install Source System Custom Fields
-
-When you install intelligent content via SAP Business Data Cloud, any required data products are installed in an ingestion space, but these data products don't include any custom fields defined in the source system \(see [Reviewing Installed Intelligent Content](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/644648756d334daaaf35d4fc9a0feeda.html)\).
-
-However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Content](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c158685865d4b408938a148e828e21f.html "The data products installed via SAP Business Data Cloud as part of intelligent content do not include any extensions defined in your source system. However, you can update the data products in SAP Datasphere to include any required custom fields, and adjust the delivered views and analytic models to consume them.") :arrow_upper_right:.
-
-From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that an SAP data product you installed has the latest updates to the custom fields, you must uninstall and then reinstall it.
-
-During its lifecycle, an SAP data product might have patch, minor version, and major version updates. Any custom fields defined in the source system are available as follows:
-
--   Patch or a minor version update: Any custom fields defined in the source system will continue to be available.
--   Major version update: Any custom fields defined in the source system will no longer be available and they must be added again.
 
 <a name="task_zbr_nl5_gfc"/>
 

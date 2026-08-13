@@ -15,7 +15,7 @@ This topic contains the following sections:
 -   [Visualize and Understand the Dependencies Between Objects](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_er_models)
 -   [Create Objects and Act On Existing Objects](preparing-data-f2e359c.md#loiof2e359c899fa4351b5f514d1d86ed9e2__section_tools)
 
-For information about identifying the semantic usage of your entities and modeling them for consumption, see [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
+For information about identifying the semantic usage of your entities and modeling them for consumption, see [Modeling Data](Modeling-Data-in-the-Data-Builder/modeling-data-5c1e3d4.md).
 
 
 
@@ -27,7 +27,7 @@ You can combine, filter, enrich and otherwise prepare data in views.
 
 -   You can write SQL or SQLScript \(table function\) code in a powerful SQL editor \(see [Creating an SQL View](creating-an-sql-view-81920e4.md)\).
 
-    -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New SQL View* to open the editor.
+    -   To get started: In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New SQL View* to open the editor.
 
     -   SAP Datasphere supports:
         -   A subset of the SQL syntax supported by SAP HANA Cloud \(see [SQL Reference](sql-reference-6a37cc5.md)\).
@@ -35,7 +35,7 @@ You can combine, filter, enrich and otherwise prepare data in views.
 
 
 -   You can prepare your data in a graphical no code/low code environment \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
-    -   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Graphical View* to open the editor.
+    -   To get started: In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Graphical View* to open the editor.
     -   You can add and combine your sources by drag and drop \(see [Add a Source to a Graphical View](add-a-source-to-a-graphical-view-1eee180.md), [Create a Join in a Graphical View](create-a-join-in-a-graphical-view-947d6d8.md), and [Create a Union in a Graphical View](create-a-union-in-a-graphical-view-5c3d354.md)\).
     -   You can refine, filter, and enrich your data in the diagram \(see [Reorder, Rename, and Exclude Columns in a Graphical View](reorder-rename-and-exclude-columns-in-a-graphical-view-b846d0d.md), [Create a Calculated Column in a Graphical View](create-a-calculated-column-in-a-graphical-view-3897f48.md), [Filter Data in a Graphical View](filter-data-in-a-graphical-view-6f6fa18.md), and [Aggregate Data in a Graphical View](aggregate-data-in-a-graphical-view-7733250.md)\).
 

@@ -38,7 +38,7 @@ This topic contains the following sections:
 
 ## Configure Your SAP Datasphere Tenant
 
-Either SAP will provision your tenant or you can create an instance in SAP BTP \(see [Creating and Configuring Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/creating-and-configuring-your-sap-datasphere-tenant-2f80b57.md)\).
+Your SAP Datasphere tenant is provisioned either as part of an SAP Business Data Cloud formation in SAP for Me or via the SAP BTP cockpit \(see [Creating and Configuring Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/creating-and-configuring-your-sap-datasphere-tenant-2f80b57.md)\).
 
 -   We recommend that you link your tenant to an SAP Analytics Cloud tenant \(see [Review and Manage Links to SAP Analytics Cloud and SAP Business Data Cloud Tenants](Creating-and-Configuring-Your-Tenant/review-and-manage-links-to-sap-analytics-cloud-and-sap-business-data-cloud-t-40db567.md)\).
 -   You can enable SAP HANA for SQL data warehousing on your tenant to exchange data between your HDI containers and your SAP Datasphere spaces without the need for data movement \(see [Enable SAP HANA for SQL Data Warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-hana-for-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)\).
@@ -95,6 +95,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
         > ### Note:  
         > To activate SAP Business AI features in your SAP Datasphere tenant, see [Enable SAP Business AI for SAP Datasphere](Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md)
 
+    -   **DW Joule Consumer** - Can use Joule in SAP Datasphere.
 
 
 

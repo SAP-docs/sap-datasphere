@@ -59,7 +59,7 @@ In addition to working with intelligent lookups in the editor, you can also:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Intelligent Lookup* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Intelligent Lookup* to open the editor.
 
 2.  Select your input entity:
 

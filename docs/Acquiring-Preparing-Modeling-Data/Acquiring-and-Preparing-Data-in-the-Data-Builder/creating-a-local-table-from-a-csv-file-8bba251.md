@@ -37,7 +37,7 @@ The *DW Modeler* role template, for example, grants these privileges. For more i
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import CSV File* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *Import* \> *Import CSV File* to open the editor.
 
 2.  Click *Select Source File*, navigate to, and select the CSV file you want to upload.
 

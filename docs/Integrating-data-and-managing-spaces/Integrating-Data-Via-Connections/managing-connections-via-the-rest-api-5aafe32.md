@@ -7,7 +7,7 @@ You can manage connections via the *Connections* REST API. Creating and editing 
 This topic contains the following sections:
 
 -   [Prerequisites](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites)
--   [Introduction to the Connectivity REST APIs](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
+-   [Introduction to the Connections REST APIs](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
 -   [Obtain a CSRF Token](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_CSRF_Token)
 -   [List Connections in a Space](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_connections)
 -   [Read Connection Details](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_read_connections)
@@ -80,7 +80,7 @@ You must, in addition:
 
 <a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction"/>
 
-## Introduction to the Connectivity REST APIs
+## Introduction to the Connections REST APIs
 
 Using the **Connections API**, you can perform the following actions:
 
@@ -92,6 +92,9 @@ Using the **Connections API**, you can perform the following actions:
 
 -   Create and edit connections to SAP SuccessFactors
 
+
+> ### Note:  
+> Connections based on custom connection types are not supported by the SAP Datasphere *Connections* API. You cannot list, read, create, edit, delete, or validate these connections via the API.
 
 The API specification is available at the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 
@@ -345,7 +348,12 @@ You can enter:
 -   `OAuth2`
 
 > ### Note:  
-> HTTP basic authentication in SAP SuccessFactors will soon be retired. For more information, see [Deprecation of HTTP Basic Authentication](https://help.sap.com/doc/62fddbd651204629b46bbccbabf886ba/cloud/en-US/fcc05a902b4140e585d968c2fe4a96bc.html) in *SAP SuccessFactors What's New Viewer*.
+> Access to APIs based on HTTP Basic Authentication will be deleted on November 12, 2027. We strongly recommend to adopt the *OAuth 2.0* authentication type for your connections.
+> 
+> For more information, see:
+> 
+> -   [Deprecation of Basic Authentication for APIs](https://help.sap.com/doc/62fddbd651204629b46bbccbabf886ba/cloud/en-US/fcc05a902b4140e585d968c2fe4a96bc.html) in *SAP SuccessFactors What's New Viewer*
+> -   SAP Note [3774454](https://me.sap.com/notes/3774454)
 
 
 
@@ -554,7 +562,7 @@ DELETE https://<tenant_url>/api/v1/datasphere/spaces/<spaceId>/connections/<conn
 
 ## API Rate Limiting
 
-Authenticated requests are associated either with the authenticated username, tenant ID or with the OAuth client ID. Unauthenticated requests are associated with the originating IP address, and not the user.
+Authenticated requests are associated either with the authenticated username, the OAuth client ID, or the tenant ID. Unauthenticated requests are associated with the originating IP address, and not the user.
 
 Requests are limited to approximately 300 per user per minute \(25 per user per minute for the *Connections* and *Certificates* APIs\). If you exceed the limit, you will receive the `HTTP 429 Too Many Requests` response status code and can review the following request response headers for further information:
 

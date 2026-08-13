@@ -18,7 +18,7 @@ This topic contains the following sections:
 -   [Optional User Properties](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_vpq_skn_xbc)
 -   [Bulk Operations](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_hqv_wtg_qcc)
 -   [Get Information About the SCIM API](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_n1l_vdy_rbc)
--   [Consuming Data via the OData API](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/7a453609c8694b029493e7d87e0de60a.html "You can connect to the OData API and consume data exposed as views or analytic models in SAP Analytics Cloud and other clients, tools, and apps that are capable of accessing an OData service and authenticating via an OAuth client.") :arrow_upper_right:
+-   [API Rate Limiting](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_rate_limiting)
 
 
 
@@ -139,6 +139,9 @@ SAP Datasphere exposes a REST API based on the System for Cross-domain Identity 
 Using this API, you can perform the following actions:
 
 -   Create, read, modify and delete users.
+
+    > ### Note:  
+    > Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
 
 -   Add users to existing scoped or global roles.
 
@@ -1086,6 +1089,9 @@ key
 </tr>
 </table>
 
+> ### Note:  
+> Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
+
 To delete a specific user based on its ID, enter the DELETE request:
 
 ```
@@ -1354,6 +1360,9 @@ key
 </tr>
 </table>
 
+> ### Note:  
+> Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
+
 The supported operations are POST, PUT, PATCH and DELETE.
 
 Syntax of POST request: <code>https://<i class="varname">&lt;Tenant_URL&gt;</i>/api/v1/scim2/Bulk/</code>
@@ -1489,7 +1498,7 @@ Using the GET request, you can obtain the following information about the SCIM A
 
 ## API Rate Limiting
 
-Authenticated requests are associated either with the authenticated username, tenant ID or with the OAuth client ID. Unauthenticated requests are associated with the originating IP address, and not the user.
+Authenticated requests are associated either with the authenticated username, the OAuth client ID, or the tenant ID. Unauthenticated requests are associated with the originating IP address, and not the user.
 
 Requests are limited to approximately 300 per user per minute \(25 per user per minute for the *Connections* and *Certificates* APIs\). If you exceed the limit, you will receive the `HTTP 429 Too Many Requests` response status code and can review the following request response headers for further information:
 

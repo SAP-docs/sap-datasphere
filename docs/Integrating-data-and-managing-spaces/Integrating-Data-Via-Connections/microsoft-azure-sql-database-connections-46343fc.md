@@ -378,6 +378,22 @@ Before you can use the connection for replication flows, the following is requir
     CREATE SCHEMA <ds_rep_user> AUTHORIZATION <ds_rep_user>;
     ```
 
+-   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+
+    When configuring Cloud Connector, ensure you create the system mapping with the following settings:
+
+    -   *Back-end Type*: Non-SAP System
+
+    -   *Protocol*: TCP
+
+    -   *Internal Host*: host name of the Microsoft Azure SQL Database server \(<code><i class="varname">&lt;server&gt;</i>.database.windows.net</code>\)
+    -   *Port or Port Range*: port for the endpoint \(the default is 1433\)
+    -   *Virtual Host*: custom name, for example mycompany-azure-sql
+    -   *Virtual Port*: custom port, for example 4444
+    -   *Check Internal Host*: deselected
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
 
 
 
@@ -447,6 +463,91 @@ Enter the port number of the Azure server. The default is `1433`.
 <td valign="top">
 
 Enter the name of the database to which you want to connect. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Cloud Connector
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector*
+
+</td>
+<td valign="top">
+
+Set the property to *true* if you want to use replication flows and your Microsoft Azure SQL Database server does not have a public endpoint. The default is *false*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+Select the location ID for the Cloud Connector instance that is set up for connecting to the server.
+
+> ### Note:  
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+Select *Enter Virtual Host and Port in Separate Fields*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Enter the virtual host that you defined during Cloud Connector configuration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Enter the virtual port that you defined during Cloud Connector configuration.
 
 </td>
 </tr>
@@ -694,12 +795,7 @@ Description
 </td>
 <td valign="top">
 
-To enable *Remote Tables*, select a Data Provisioning Agent.
-
-> ### Note:  
-> In file spaces or when using authentication with X.509 client certificates, remote tables are not supported.
-
-
+To enable *Remote Tables*, select a Data Provisioning Agent. 
 
 </td>
 </tr>
@@ -714,7 +810,7 @@ To enable *Remote Tables*, select a Data Provisioning Agent.
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces or when using authentication with X.509 client certificates, data flows are not supported.
+> In file spaces, or when using authentication with X.509 client certificates, or when using Cloud Connector, data flows are not supported.
 
 
 

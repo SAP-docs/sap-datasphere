@@ -24,3 +24,5 @@ During metadata extraction, the catalog applies these tags to data products that
 > ### Note:  
 > The catalog can only identify whether a data product has personal data, sensitive personal data, or both. The catalog doesn't collect or store personal data or sensitive personal data.
 
+When data products are installed in SAP Datasphere spaces and consumed by other objects, these tags are propagated and inherited by those consuming objects \(see [Modeling with Personal Data](modeling-with-personal-data-fd0d4e6.md)\).
+

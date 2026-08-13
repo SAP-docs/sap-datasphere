@@ -4,11 +4,11 @@
 
 # Data Product Details
 
-If you're interested in a data product, review its details, including its name, data provider, contained entities, and links to resources that explain how to use it.
+For data products that you're interested in, review its details, including its name, data provider, contained entities, and links to resources that explain how to use it.
 
 
 
-This topic describes the details for data products from systems that are part of an SAP Business Data Cloud formation.
+This topic describes the details for data products from systems in SAP Business Data Cloud formations.
 
 The catalog search results provide high-level information about a data product, including its name, data type, and a short summary. If you want to know more about a data product, choose it to view its details page. You'll see different types of information about the data product, including its properties, detailed information about its APIs, and resources that can provide information or examples on how to use it.
 
@@ -54,11 +54,11 @@ Statuses
 </td>
 <td valign="top">
 
-Displays the lifecycle, release, and functional statuses \(*Active* or *Inactive*\) for a data product. You can choose a status to get more information.
+Displays the lifecycle, release, and functional statuses for a data product. You can choose a status to get more information.
 
 -   The lifecycle status reflects the different situations and phases of the data product.
 -   The release status reflects the data product's availability to consumers.
--   The functional status reflects the integrity of the data product in relation to its source.
+-   The functional status reflects the integrity of the data product in relation to its source system.
 
 
 
@@ -119,12 +119,24 @@ Displays a short summary of the data product.
 <tr>
 <td valign="top">
 
-Extraction system and data provider
+Source System
 
 </td>
 <td valign="top">
 
-Displays the name and type of source system the data product is extracted from and the data provider's name.
+Displays the name and type of source system the data product is extracted.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Provider
+
+</td>
+<td valign="top">
+
+Displays the data provider's name.
 
 </td>
 </tr>
@@ -210,9 +222,7 @@ Adds frequently used data products to your favorites.
 
 
 
-<a name="loio71f4d1599dba4aa59e6682a314650cf7__section_b5q_ytl_bdc"/>
-
-## Data Product Properties and Details
+## Data Product Properties
 
 To view the properties of the data product, choose *Overview tab* \> *Properties*.
 
@@ -261,14 +271,8 @@ Lifecycle Status
 
 Displays the lifecycle status of the data product:
 
--   Active: The data product is synchronized and ready.
--   Beta: The data product is in the testing phase.
--   Inactive: The data product is inactive and can be provisioned \(or installed\).
--   Provisioning: The data product is being provisioned \(or installed\) and is not ready yet.
--   Deprovisioning: The data product is being deprovisioned \(or uninstalled\) and cannot be used.
--   Active with Errors: The data product is provisioned and available but has errors that prevent proper use.
--   Provisioning Error: The provisioning of the data product failed with errors.
--   Deprovisioning Error: The deprovisioning of the data product failed with errors.
+-   Active: The data product is active and ready.
+-   Inactive: The data product is inactive and can’t be installed. To install this data product, you must ask your administrator to activate any data package that contains it.
 
 
 
@@ -415,18 +419,6 @@ Displays the visibility context for a data product. The visibility context contr
 <tr>
 <td valign="top">
 
-Data Provider
-
-</td>
-<td valign="top">
-
-Displays the name of the data provider.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Additional Properties
 
 </td>
@@ -467,7 +459,7 @@ Description
 <tr>
 <td valign="top">
 
-System Instance Name
+System Name
 
 </td>
 <td valign="top">
@@ -538,7 +530,22 @@ Displays data provider's name. For data products from an SAP Datasphere system, 
 </tr>
 </table>
 
-You can view a list of APIs for the data product by choosing *Overview tab* \> *Details*. This table provides high-level information for each data product \(API\), which includes its name, description, version, protocol, functional status and more. If there are more than 20 rows, choose *Show All* to see the rest of the rows for the tab in a separate page.
+
+
+## Data Product API Details
+
+You can view a list of APIs for the data product by choosing *Overview tab* \> *Details*.
+
+Data-sharing protocols, such as Delta Sharing, are standardized ways to share data products between systems. The APIs available for the data product are programmable interfaces that you use to access and manage the data product's data and metadata. The APIs also automate tasks like:
+
+-   Provisioning the data product
+-   Allowing permissions to access its data
+-   Monitoring for changes in the data product
+
+> ### Note:  
+> When SAP Datasphere delta-enabled local tables \(file\) are included in SAP Business Data Cloud data products, the internal delta capture columns *Change Date*and *Change Type* are not included in the data product definition or made available to consumers. However, consumers of these data products will still receive delta updates via the Delta Sharing Change Data Feed \(CDF\) API. For more information, see [Change Data Feed](https://docs.delta.io/delta-change-data-feed/).
+
+This table provides high-level information for each data product \(API\), which includes its name, description, version, protocol, functional status and more. If there are more than 20 rows, choose *Show All* to see the rest of the rows for the tab in a separate page.
 
 
 <table>
@@ -717,7 +724,7 @@ Description
 </td>
 <td valign="top">
 
-Use the toolbar and diagram tools to control the layout of the diagram. choose *Reset* to restore the default layout.
+Use the toolbar and diagram tools to control the layout of the diagram. Choose *Reset* to restore the default layout.
 
 </td>
 </tr>

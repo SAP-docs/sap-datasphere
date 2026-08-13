@@ -21,7 +21,7 @@ This topic contains the following sections:
 
 ## Prerequisites
 
-To create packages, you must have a combination of a global role and a scoped role:
+To create and export packages, you must have a combination of a global role and a scoped role:
 
 -   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
@@ -74,7 +74,7 @@ In our example:
 
 Users with the *DW Space Administrator* role can create packages:
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **:package: \(*Packages*\) to open the list of packages. 
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **:package: \(*Packages*\) to open the list of packages. 
 
     Use the *Space* filter field to show packages from all spaces or only one space.
 

@@ -89,6 +89,7 @@ For more information and points to consider when using replication flows, see al
     -   *Running*: The flow is currently running.
     -   *Active*: \[Replication Flow only\] A replication flow that contains objects with load type *Initial and Delta* does not have an end date. Once started, it remains in status Active until it is stopped or paused or an issue occurs.
     -   *Completed*: The flow is completed successfully.
+    -   *Completed \(with Flagged Records\)*: The flow is completed successfully, but erroneous records have been identified with the *Data Remediation* table and should be resolved. See [Resolving Erroneous Records Using the Data Remediation Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/0cbcc49d36f345208ffd97d3695a141e.html "Automatically identify and flag erroneous records without stopping your transformation flow with the Data Remediation table.") :arrow_upper_right:.
     -   *Failed*: Something goes wrong during the flow run and it could not be completed. Go to the details screen of your flow and check the logs to identify to issue.
     -   *Stopped*: The flow has been stopped by a user.
 
@@ -239,6 +240,7 @@ For more information and points to consider when using replication flows, see al
         -   Transformation flow: *Performance-Optimized \(Recommended\)* or *Memory-Optimized*.
         -   Transformation flow in a File space:*Apache Spark Settings* can be set to *Use Space Default* settings or *Define New Settings for this Flow*.
 
+    -   *Data Validation* allows you to access the *Data Remediation* table. It automatically identifies and flags erroneous records without stopping your transformation flow. See [Resolving Erroneous Records Using the Data Remediation Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/0cbcc49d36f345208ffd97d3695a141e.html "Automatically identify and flag erroneous records without stopping your transformation flow with the Data Remediation table.") :arrow_upper_right:.
 
     > ### Tip:  
     > You can download the Spark driver logs of transformation flows on file by clicking the <span class="SAP-icons-V5"></span> Download Spark Driver Logs button on the top right corner of your screen. Downloading logs can be useful for debugging a failing run. The logs are downloaded as a`.txt` file in your local *Download* file. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started.
@@ -258,6 +260,7 @@ For more information and points to consider when using replication flows, see al
         > -   If the flow run has been optimized for better performance, no record count information is shown.
         > -   For historical runs of a flow, metrics can’t be retrieved.
         > -   \[Replication Flow\]: Additional information is available under *View Details* in the replication flow metrics or in the replication flow object metrics.
+        > -   For replication flows that use REST API sources, delta run metrics are available only when delta synchronization has been configured for the REST API connection. For more information, see [Use Dynamic Placeholders in Request Parameter Values](../Integrating-Data-Via-Connections/use-dynamic-placeholders-in-request-parameter-values-1e05f83.md)
 
         > ### Restriction:  
         > For data flows, the logs messages and metrics are only displayed in English.

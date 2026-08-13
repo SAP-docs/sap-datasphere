@@ -15,6 +15,9 @@ Attributes are used in:
 
 Attributes are displayed in the *Attributes* section of tables and views. In the graphical view and sql view editors, click the *Edit Columns* button in the *Attributes* list to open and edit it in a dialog.
 
+> ### Note:  
+> If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
 Attributes have the following properties:
 
 
@@ -108,7 +111,7 @@ Choose from the following:
 -   *None* - \[default\] No semantic meaning.
 -   *Currency Code* - The column specifies the currency for one or more measures with the semantic type *Amount with Currency*. Attributes with this semantic type can be selected in the *Measures* list *Unit Column*.
 -   *Unit of Measure* - The column specifies the unit for one or more measures with the semantic type *Quantity with Unit*. Attributes with this semantic type can be selected in the *Measures* list *Unit Column*.
--   *Text* - The column contains text. Attributes with this semantic type can be selected in the *Attributes* list *Text / Association*.
+-   *Text* - The column contains text. Attributes with this semantic type can be selected in the *Text / Association* field of other attributes.
 -   *Business Date...*, *Fiscal...*, *Calendar...*, *System Date...* - The column contains a date or fiscal or calendar period.
 -   *Language* - The column contains a language code.
 -   *Geolocation...* - The column contains geo data.

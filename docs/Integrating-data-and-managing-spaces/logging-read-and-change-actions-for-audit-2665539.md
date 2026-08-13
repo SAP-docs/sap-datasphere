@@ -48,14 +48,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
     > Please note, that the statements issued via the execute-procedure for data lake are currently not audited in SAP Datasphere.
 
 
-As a result, SAP HANA policies are created for the schemas of the space.
-
-The policy names of the SAP Datasphere administered objects are:
-
--   DWC\_DPP\_<space name\>\_READ
-
--   DWC\_DPP\_<space name\>\_CHANGE
-
+As a result, SAP HANA policies are created for the schemas of the space. All audit logs for your space are available in the DPP\_Audit\_Log view, which can be accessed from the dedicated audit log space. See [Monitor Read and Change Actions with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:.
 
 
 
@@ -89,7 +82,7 @@ To export audit log entries using the SAP HANA Database Explorer, follow these s
 **Related Information**  
 
 
-[Monitor Database Operations with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:
+[Monitor Read and Change Actions with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:
 
 [Delete Your Space](delete-your-space-3eb19b9.md "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.")
 

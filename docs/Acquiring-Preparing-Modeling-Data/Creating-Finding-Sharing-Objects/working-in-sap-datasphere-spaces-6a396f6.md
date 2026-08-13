@@ -412,7 +412,7 @@ In our example the modelers protect their loaded data with data access controls 
 See:
 
 -   [Preparing Data](../preparing-data-f2e359c.md)
--   [Modeling Data in the Data Builder](../Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md)
+-   [Modeling Data](../Modeling-Data-in-the-Data-Builder/modeling-data-5c1e3d4.md)
 
 
 

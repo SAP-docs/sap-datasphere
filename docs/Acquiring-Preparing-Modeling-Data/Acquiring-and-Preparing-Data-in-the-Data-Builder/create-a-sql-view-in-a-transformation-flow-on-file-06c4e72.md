@@ -22,7 +22,7 @@ You cannot save and deploy the view transform \(the secondary editor\) separatel
 
 2.  Create a new *SQL View Transform* for your transformation flow by clicking the *SQL View Transform* button. The system displays the *SQL View Editor*.
 
-    The only language available is *SQL \(Apache Spark SQL\)*. See [SQL Reference Guide for Apache Spark](https://spark.apache.org/docs/3.5.6/sql-ref.html).
+    The only language available is *SQL \(Apache Spark SQL\)*. See [SQL \(Apache Spark SQL\) Syntax Support in Transformation Flow Operators](sql-apache-spark-sql-syntax-support-in-transformation-flow-opera-3de7a48.md).
 
 3.  Enter your code in the *SQL View Editor*. You can:
 

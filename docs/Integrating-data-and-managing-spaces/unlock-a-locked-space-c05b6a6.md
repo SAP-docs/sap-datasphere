@@ -48,7 +48,7 @@ If the total size of all audit logs across all spaces has reached 40% of the ten
 In this situation, these actions are possible:
 
 -   A user with a space administrator role can use the *Unlock* button on the *Space Management* page or on the space page to unlock the space for a 24-hour grace period, in case urgent changes must be deployed.
--   A user with an administrator role can delete audit logs and free up disk space \(see [Delete Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right:\).
+-   A user with an administrator role can delete audit logs and free up disk space \(see [Monitor Read and Change Actions with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:\).
 -   A user with a space administrator role can disable audit logs or decrease the number of days audit logs are kept for \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
 
 

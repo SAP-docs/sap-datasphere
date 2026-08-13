@@ -58,6 +58,7 @@ The following standard roles are available:
         > ### Note:  
         > To activate SAP Business AI features in your SAP Datasphere tenant, see [Enable SAP Business AI for SAP Datasphere](../Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md)
 
+    -   **DW Joule Consumer** - Can use Joule in SAP Datasphere.
 
 
 > ### Note:  

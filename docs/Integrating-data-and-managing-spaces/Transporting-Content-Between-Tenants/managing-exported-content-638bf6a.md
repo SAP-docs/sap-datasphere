@@ -6,7 +6,7 @@
 
 If you've exported packages for sharing with other tenants, or have edit or delete permissions for another tenant's exports, you can work on them in the *Transport / Export / My Content* page.
 
-In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Export*\) and then click the *My Content* folder to display the list of packages that you have exported and those from other systems that you have permission to edit or delete. 
+In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **<span class="FPA-icons-V3"></span> \(*Export*\) and then select the *My Content* folder to display the list of packages that you have exported and those from other systems that you have permission to edit or delete. 
 
 For packages:
 

@@ -65,7 +65,7 @@ We also provide content for download at our [Community Content](https://github.c
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click one of the following tiles: 
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then select one of the following tiles: 
 
     -   *Business Content*: End-to-end business scenarios created by SAP for various industries and lines of business.
     -   *3rd Party Content*: End-to-end business scenarios created by SAP partners. Some third-party content has to be purchased in the *SAP Store*.

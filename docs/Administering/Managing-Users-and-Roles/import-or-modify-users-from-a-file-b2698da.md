@@ -129,7 +129,7 @@ SAML property for the user \(if SAML enabled\).
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Users*\).
 
 2.  Select <span class="FPA-icons-V3"></span> \(Import Users\)** \> *Import Users from File*.
 

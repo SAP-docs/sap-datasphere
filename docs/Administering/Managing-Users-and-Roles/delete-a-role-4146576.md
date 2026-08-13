@@ -18,7 +18,7 @@ You can delete one or more roles at the same time.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 
 2.  Select the checkbox of the role you want to delete.
 

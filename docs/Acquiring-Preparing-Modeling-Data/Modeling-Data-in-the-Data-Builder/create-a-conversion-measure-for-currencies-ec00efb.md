@@ -218,14 +218,21 @@ The sources of your analytic model may have values in different currencies. You 
     </td>
     </tr>
     <tr>
-    <td valign="top">
+    <td valign="top" rowspan="2">
     
     Settings
     
     </td>
     <td valign="top">
     
-    Decide whether your measure should be an *Auxiliary Measure*.An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud. You can control whether currency conversion applies a shift \(for example JPY ×100\) or not, so that both shifted and unshifted measures can correctly be processed without values being shifted twice.
+    Decide whether your measure should be an *Auxiliary Measure*.An auxiliary measure can be used for further calculation but it will be hidden in the story in SAP Analytics Cloud. 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    You can control whether currency conversion applies a shift \(for example JPY ×100\) or not, so that both shifted and unshifted measures can correctly be processed without values being shifted twice.
     
     </td>
     </tr>

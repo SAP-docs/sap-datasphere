@@ -129,7 +129,7 @@ A set of Apache Spark configurations is applied by default to each new file spac
     <tr>
     <td valign="top">
     
-    *Number of Executors*
+    *Executors \(Static Allocation\)*
 
     Apache Spark technical name: `spark.executor.instances`
     

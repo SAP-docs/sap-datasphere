@@ -18,6 +18,10 @@ An OAuth client with a *Technical User* purpose provides restricted access to th
 You create an OAuth2.0 Client with a *Technical User* purpose:
 
 -   To use the SCIM 2.0 API \(see [Managing Users via the SCIM 2.0 API](../Managing-Users-and-Roles/managing-users-via-the-scim-2-0-api-1ca8c4a.md)\).
+
+    > ### Note:  
+    > Deleting users is not supported when using an OAuth client with a *Technical User* purpose.
+
 -   To transport content \(see [api/v1/content](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/eeace13cc37b4eed96064a7c5d8ee493.html) in the *SAP Analytics Cloud REST API Guide*\).
 -   To export a log of user activities to a CSV file \(see [api/v1/audit/activities/exportActivities](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/ca45363ac1de4d669ad4a18115401d5a.html) in the *SAP Analytics Cloud REST API Guide*\).
 -   To allow SAP Signavio to connect securely to SAP systems such as SAP S/4HANA \(see [SAP Signavio Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4c367de075a44ad7b7a6db576a4a9c82.html "Use the connection to securely integrate SAP systems such as SAP S/4HANA on-premise with SAP Signavio using replication flows for efficient and scalable data replication to SAP Signavio Process Intelligence.") :arrow_upper_right:.\)
@@ -35,7 +39,7 @@ You create an OAuth2.0 Client with a *Technical User* purpose:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*.
 
 2.  Under *Configured Clients*, select *Add a New OAuth Client*.
 

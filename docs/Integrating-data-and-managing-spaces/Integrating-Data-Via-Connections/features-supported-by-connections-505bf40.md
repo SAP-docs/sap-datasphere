@@ -2,7 +2,11 @@
 
 # Features Supported by Connections
 
-Each connection type supports a defined set of features: remote tables, replication flows, data flows, and model import.
+You can use connections in different integration scenarios.
+
+Each connection type delivered by SAP Datasphere supports a specific set of features for these scenarios: replication flows, remote tables, data flows, and model import.
+
+Custom connection types only support replication flows.
 
 Depending on the connection type and the connection configuration, a connection can be used for one or more features:
 
@@ -32,7 +36,12 @@ Allows modelers to replicate data from multiple source objects from a connected 
 
 You can enable a single initial load or request initial and delta loads to load changes at regular intervals. It depends on the connection type if you can use the connection as source or target connection.
 
-For more information, see [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:.
+For more information, see:
+
+-   [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:
+-   [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:
+
+
 
 </td>
 </tr>
@@ -87,7 +96,12 @@ Model Import
 
 Allows modelers to import objects from any supporting SAP system with rich metadata and, if supported, with their dependencies. This way, you can leverage your existing investment in your customer system landscape without having to rebuild the objects manually.
 
-For more information, see [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:.
+For more information, see:
+
+-   [Importing Objects with Semantics from SAP Systems](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/361729b49aea4519a6e8910b035dbf6c.html "You can use the Import Entities wizard to import semantically-rich objects from selected SAP systems. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:
+-   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
+
+
 
 </td>
 </tr>
@@ -123,5 +137,5 @@ For more information, see:
 
 To allow space users using a feature, the feature must be enabled in the connection configuration.
 
-For information about which features are supported by which connection type and what prerequisites and connection properties are required to enable \(or disable\) a feature, see [Connection Types](connection-types-9456242.md).
+For information about which features are supported by which connection type and what prerequisites and connection properties are required to enable \(or disable\) a feature, see [Connection Types Delivered by SAP](connection-types-delivered-by-sap-9456242.md).
 

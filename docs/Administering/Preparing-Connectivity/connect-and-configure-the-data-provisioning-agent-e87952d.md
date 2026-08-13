@@ -25,7 +25,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 1.  In SAP Datasphere, register the Data Provisioning Agent.
 
-    1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+    1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
     2.  In the *On-Premise Agents* section, add a new tile to create a new agent registration in SAP Datasphere.
 

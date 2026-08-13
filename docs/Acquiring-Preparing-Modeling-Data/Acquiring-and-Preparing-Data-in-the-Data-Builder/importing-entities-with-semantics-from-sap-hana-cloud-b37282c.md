@@ -39,9 +39,9 @@ Calculation views and dimensions can only be imported as remote tables with the 
 
 1.  Open the wizard from the *Repository Explorer*, *Semantic Onboarding*, or the *Data Builder*:
 
-    -   In the side navigation area, click <span class="SAP-icons-V5"></span> \(*Repository Explorer*\), and click *Import* \> *Import Entities*.
-    -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then click the appropriate tile.
-    -   In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Entities*.
+    -   In the side navigation area, select <span class="SAP-icons-V5"></span> \(*Repository Explorer*\), and select *Import* \> *Import Entities*.
+    -   In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Semantic Onboarding*\), and then select the appropriate tile.
+    -   In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *Import* \> *Import Entities*.
 
 2.  Select your connection and target space:
 

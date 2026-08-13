@@ -291,14 +291,14 @@ You can change how the catalog search results are displayed by selecting one of 
 -   <span class="FPA-icons-V3"></span> \(Display as List\): The list view shows the most information about each object in the catalog.
 -   <span class="SAP-icons-V5"></span> \(Display as Table\): The table view shows all the same information as the list view. However, some of the columns are hidden by default. You can choose which columns you want to show or hide. This display option is not available when viewing the search results for the **All** collection.
 
-The information and actions available in each view differs. See [Information and Actions Available for Search Results](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/751357b3c1084ea28eb2a1a1806311e0.html "Information and actions available in the different search result views appear based on your assigned role.") :arrow_upper_right:.
+The information and actions available in each view differs. See [Information and Actions Available for Search Results](information-and-actions-available-for-search-results-751357b.md).
 
 **Related Information**  
 
 
 [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md "Use the catalog Assets collection to view data and analytic assets for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each assets and, if you have the appropriate permissions, can open the asset in its source system.")
 
-[Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.")
+[Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects.")
 
 [Installing Data Products](installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
 

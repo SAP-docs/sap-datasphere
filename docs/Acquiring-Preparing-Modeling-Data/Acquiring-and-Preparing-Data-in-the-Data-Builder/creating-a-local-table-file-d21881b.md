@@ -45,7 +45,7 @@ SAP HANA Cloud, data lake allows SAP Datasphere to store and manage mass-data ef
 As a local table \(file\) is capturing delta changes via flows, it creates different entities in the repository after it is deployed:
 
 -   An active records entity for accessing the delta capture entity through a virtual table. It excludes the delta capture columns and deleted records, and keeps only the active records.
--   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(file\) has a specific folder in file storage \(inbound buffer\) to which data updates are stored until they are pushed to the local table \(file\) by a merge task \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:.
+-   A delta capture entity that stores information on changes found in the delta capture table. It serves as target for flows at design time. In addition, every local table \(file\) has a specific folder in file storage \(inbound buffer\) to which data updates are stored until they are pushed to the local table \(file\) by a merge task \(see [Creating a Task Chain](creating-a-task-chain-d1afbc2.md), [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data is still to be merged.") :arrow_upper_right: and [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\). You can monitor the buffer merge status using the *Local Tables \(File\)* monitor \(See [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data is still to be merged.") :arrow_upper_right:.
 
 
 
@@ -60,13 +60,13 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
 > -   *Delete Data from Table* will only mark records for deletion, but they will still be available for other apps to consume them.
 > -   You can't import a CSV file.
 > -   You can't edit the data in the *Data Editor*.
-> -   Default value is not supported
+> -   Default value is not supported.
 
 
 
 ### Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Table* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Table* to open the editor.
 
 2.  Enter the following properties as appropriate:
 
@@ -175,7 +175,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </td>
     <td valign="top">
     
-    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md)
+    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
     
     </td>
     </tr>

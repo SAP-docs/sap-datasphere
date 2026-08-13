@@ -13,7 +13,8 @@ Monitor disk storage, memory, task, and statement metrics to track tenant resour
 To monitor the system performance and issues across all spaces, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access *System and Spaces* in the *Monitoring* app.
+-   *System Information* \(`-R------`\) - To access *System and Spaces* in the *Monitoring* app.
+-   *Spaces* \(`-------M`\) - To access space-related metrics in *System and Spaces*.
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -209,7 +210,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 2.  To investigate issues in particular spaces:
     1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\).
     2.  Display the list of spaces in the table layout and order by column. For example, you can display at the top of the table the spaces that use the highest amount of storage by choosing the descending order for the column *Used Storage*.
-    3.  Open a space and click *Monitor* in the space details app to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:\).
+    3.  Open a space and click *Monitor* in the space details app to see the storage amount assigned to and used by the space \(see [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "View storage consumption for your space with detailed usage information.") :arrow_upper_right:\).
 
 
 

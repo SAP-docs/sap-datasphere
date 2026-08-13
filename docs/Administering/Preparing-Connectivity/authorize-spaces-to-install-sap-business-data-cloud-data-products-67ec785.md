@@ -36,7 +36,7 @@ Before an SAP Datasphere modeler can install data products from an SAP system to
 
 ## Procedure
 
-1.  In the side navigation area of SAP Datasphere, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Business Data Products*.
+1.  In the side navigation area of SAP Datasphere, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Business Data Products*.
 
 2.  \[optional\] Select the system \(with its connection\) and choose *Edit Business Name* to provide a more reasonable business name to the connection.
 

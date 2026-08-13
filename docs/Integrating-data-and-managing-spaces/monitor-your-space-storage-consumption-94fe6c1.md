@@ -2,7 +2,7 @@
 
 # Monitor Your Space Storage Consumption
 
-See the storage amount assigned to and used by your space.
+View storage consumption for your space with detailed usage information.
 
 
 
@@ -27,7 +27,8 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 ## Procedure
 
-To open the monitoring page, select your space and click *Monitor* from the *Space Management* page or alternatively open your space and click *Monitor* on the upper-right side of your space.
+1.  In the side navigation area, click ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\).
+2.  Locate and select your space, and click *Monitor* or alternatively open your space and click *Monitor* in the upper-right side of your space.
 
 > ### Note:  
 > You cannot monitor a file space.
@@ -37,72 +38,68 @@ To open the monitoring page, select your space and click *Monitor* from the *Spa
 <tr>
 <th valign="top">
 
-Action
+Section
 
 </th>
 <th valign="top">
 
-Example
+Section
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-See the amount of disk storage and memory storage used in your space.
+*Disk Used for Storage* and *Memory Used for Storage*
+
+</td>
+<td valign="top">
+
+Displays the amount of disk storage and memory storage \(in MB\) used by your space in the SAP HANA Database.
 
 For more information about storage capacity, see [Allocate Storage to a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f414c3d62bfe49b38e2cfdd7b4e7d786.html "Use the Space Storage properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.") :arrow_upper_right:.
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-![](images/DWC_Monitoring_fb786ae.jpg)
+*Schema* and *Table Type*
+
+</td>
+<td valign="top">
+
+Filter by schema or by table storage type \(disk or memory\). You can filter values by adding or removing them from the drop-down menus.
+
+The values are displayed in the graphs and the table of the page.
+
+The hidden replica tables of SAP HANA virtual tables are stored in a separate schema named `_SYS_TABLE_REPLICA_DATA` \(see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html)\).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Filter by schema or by storage type. Filter values by adding or removing them from the drop-down menu.
-
-The values are displayed in a doughnut and bar chart.
-
-The hidden replica tables of SAP HANA virtual tables are stored in a separate schema named `_SYS_TABLE_REPLICA_DATA`.
-
-For more information about replica tables, see [Replicating Data and Monitoring Remote Tables](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html).
+*Table Storage Consumption* 
 
 </td>
 <td valign="top">
 
-![](images/Monitor_Drop-Down_1669061.jpg)
-
-![](images/Monitor_Overview_532de1b.jpg)
+Displays in a graph all the relevant tables according to your selected filter, which makes it easy to get an overview over the consumed storage.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-See the *Table Storage Consumption* graph that displays all the relevant tables according to your selected filter, which makes it easy to get an overview over the consumed storage.
+*Table Details*
 
 </td>
 <td valign="top">
 
-![](images/DWC_Table_Consumption_29e97f7.jpg)
+Displays in a table more information such as the name, schema, storage type, record count, and the used storage of each table.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-See *Table Details* that provides more information such as the name, schema, storage type, record count, and the used storage of each table.
-
-Sort your list of tables in ascending, descending order or group them together as well as search for certain values.
-
-</td>
-<td valign="top">
-
-![](images/Monitoring_Tabel_Details_DWC_de3fb75.jpg)
+You can sort your list of tables in ascending, descending order or group them together as well as search for certain values.
 
 </td>
 </tr>

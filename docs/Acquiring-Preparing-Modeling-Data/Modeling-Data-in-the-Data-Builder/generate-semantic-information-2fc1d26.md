@@ -10,7 +10,7 @@ Use the *Generate Semantics* command to request SAP Datasphere to suggest a *Sem
 
 ## Prerequisites
 
-For information about privileges and other prerequisites needed to use this feature, see the prerequisites listed in [Modeling Data in the Data Builder](modeling-data-in-the-data-builder-5c1e3d4.md).
+For information about privileges and other prerequisites needed to use this feature, see the prerequisites listed in [Modeling Data](modeling-data-5c1e3d4.md).
 
 
 

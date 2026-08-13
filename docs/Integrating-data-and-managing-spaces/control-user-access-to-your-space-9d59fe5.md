@@ -182,7 +182,7 @@ Bob - Sales Spaces Admin
 
 ## Access the Users Area in Your Space
 
-In the side navigation area, click ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+In the side navigation area, select ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 
 In the *Users* area of the space page, you can see and edit which users are assigned to your space with which scoped roles. You can assign users to your space among all the users in the tenant, with one or more scoped roles to which your space is assigned.
 

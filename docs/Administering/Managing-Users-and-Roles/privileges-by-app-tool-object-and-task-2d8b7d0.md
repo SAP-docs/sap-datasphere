@@ -21,6 +21,7 @@ This topic contains the following sections:
 -   [Transport Tool Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_transport)
 -   [Data Sharing Cockpit Tool Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_data_sharing_cockpit)
 -   [System Tool Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_system)
+-   [About Dialog Privileges](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_about)
 -   [External Data Consumption](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_external_data_consumption)
 -   [The Command Line Interface](privileges-by-app-tool-object-and-task-2d8b7d0.md#loio2d8b7d04dcae402f911d119437ce0a74__section_cli)
 
@@ -106,7 +107,8 @@ See [Monitoring System and Spaces](../monitoring-system-and-spaces-bce718d.md)
 To monitor the system performance and issues across all spaces, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access *System and Spaces* in the *Monitoring* app.
+-   *System Information* \(`-R------`\) - To access *System and Spaces* in the *Monitoring* app.
+-   *Spaces* \(`-------M`\) - To access space-related metrics in *System and Spaces*.
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -115,7 +117,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 <tr>
 <td valign="top">
 
-Capacities
+Capacity Unit Consumption
 
 See [Monitoring Capacity Unit Consumption](../monitoring-capacity-unit-consumption-ba3d05b.md)
 
@@ -193,7 +195,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 Data Integration - Local tables
 
-See [Monitoring Local Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/374046156e5b47599fc9b96c8c3a4dce.html "Monitor all the local tables created for a space in the Data Builder and check their metrics.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
+See [Monitoring Local Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/374046156e5b47599fc9b96c8c3a4dce.html "Monitor all the local tables created for a space in the Data Builder and check their metrics.") :arrow_upper_right: and [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data is still to be merged.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -408,6 +410,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+    -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 
 
 The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -419,7 +422,7 @@ The *Catalog User* global role and the *DW Modeler* scoped role template, applie
 
 Install Marketplace data products
 
-See [Installing Marketplace Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects. You can see detailed metadata, including lineage information, for each data product, test the sample data sets (if available), and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:
+See [Installing Marketplace Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -870,7 +873,11 @@ To create views, you must have a scoped role that grants you access to a space w
 -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete a graphical view.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+In addition, if you want to use AI features, they must be enabled in your tenant \(see [Enable SAP Business AI for SAP Datasphere](../Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md)\) and you must have the following global privilege:
+
+-   *Data Warehouse AI Consumption* \(`----E---`\) - To use SAP Business AI features.
+
+The *DW Modeler* role template, for example, grants these scoped privileges and the *DW AI Consumer* global role grants the global privilege. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1145,7 +1152,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 Copy a space
 
-See [Copy a Space and its Contents](../Creating-Spaces-and-Allocating-Storage/copy-a-space-and-its-contents-73068ac.md)
+See [Copy Spaces and their Contents](../Creating-Spaces-and-Allocating-Storage/copy-spaces-and-their-contents-73068ac.md)
 
 </td>
 <td valign="top">
@@ -1310,7 +1317,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 Monitor space storage consumption
 
-See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "See the storage amount assigned to and used by your space.") :arrow_upper_right:
+See [Monitor Your Space Storage Consumption](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/94fe6c13f6a340288cd50ee355566591.html "View storage consumption for your space with detailed usage information.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -1555,7 +1562,7 @@ See [Creating Packages to Export](https://help.sap.com/viewer/be5967d099974c69b7
 </td>
 <td valign="top">
 
-To create packages, you must have a combination of a global role and a scoped role:
+To create and export packages, you must have a combination of a global role and a scoped role:
 
 -   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
@@ -1608,8 +1615,8 @@ A combination of a global role and a scoped role:
 
 -   A scoped role that grants you access to the space or spaces to export from with the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Data Warehouse Data Builder* \(`-R------`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
-    -   *Spaces Files* \(`-R------`\) - To view specific spaces and their contents.
+    -   *Data Warehouse Data Builder* \(`-RU-----`\) - To view Data Builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
+    -   *Spaces Files* \(`-RU-----`\) - To view specific spaces and their contents.
 
 
 The *DW Space Administrator* role template, for example, grants this combination of privileges.
@@ -1800,6 +1807,32 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 </td>
 </tr>
+</table>
+
+See [Administering SAP Datasphere](../administering-sap-datasphere-70ee87c.md).
+
+
+
+<a name="loio2d8b7d04dcae402f911d119437ce0a74__section_about"/>
+
+## About Dialog Privileges
+
+The following privileges are required to use the *About* dialog from the <span class="SAP-icons-V5"></span> \(*Profile*\) area in the top-right corner of the shell bar.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Tool/Object/Task
+
+</th>
+<th valign="top">
+
+Privileges
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
@@ -1808,22 +1841,20 @@ About
 </td>
 <td valign="top">
 
-To access the *About* area, you must have either a scoped or global role that grants you the following privilege:
+To access the *About* dialog, you must have either a scoped or global role that grants you the following privilege:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 
-To work with your SAP HANA database, you must have a global role that grants you the following privileges:
+To access *More* in the *About* dialog and to upgrade or restart your SAP HANA database, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access *More* in the *About* area of the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access *More* in the *About* dialog from the <span class="SAP-icons-V5"></span> \(*Profile*\) area in the top-right corner of the shell bar.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
 </table>
-
-See [Administering SAP Datasphere](../administering-sap-datasphere-70ee87c.md).
 
 
 

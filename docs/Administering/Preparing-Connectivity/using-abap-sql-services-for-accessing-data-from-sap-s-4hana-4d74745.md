@@ -4,9 +4,15 @@
 
 The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to federate data with remote tables. Using the service requires Cloud Connector.
 
+This topic contains the following sections:
+
+-   [Introduction to ABAP SQL Services](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md#loio4d7474595a5b41bb986616262ff44a3a__intro)
+-   [Data Replication With Replication Flows](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md#loio4d7474595a5b41bb986616262ff44a3a__replication)
+-   [Data Federation With Remote Tables](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-4d74745.md#loio4d7474595a5b41bb986616262ff44a3a__federation)
 
 
-<a name="loio4d7474595a5b41bb986616262ff44a3a__section_bnj_jd4_2hc"/>
+
+<a name="loio4d7474595a5b41bb986616262ff44a3a__intro"/>
 
 ## Introduction to ABAP SQL Services
 
@@ -32,6 +38,8 @@ For more information, see the *ABAP Cloud* documentation for SAP S/4HANA:
 > -   When a connection is configured for using the ABAP SQL service for data federation with remote tables, you can't use the same connection for model import.
 
 
+
+<a name="loio4d7474595a5b41bb986616262ff44a3a__replication"/>
 
 ## Data Replication With Replication Flows
 
@@ -78,7 +86,7 @@ You can now create a connection to consume the ABAP SQL service for data replica
 
 
 
-<a name="loio4d7474595a5b41bb986616262ff44a3a__section_y5d_b5q_bcc"/>
+<a name="loio4d7474595a5b41bb986616262ff44a3a__federation"/>
 
 ## Data Federation With Remote Tables
 

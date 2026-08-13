@@ -25,7 +25,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Monitoring Information Available in SAP Datasphere
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 2.  In the *On-Premise Agents* section, click *Monitor* to show the following information:
     -   Information about free and used physical memory and swap memory on the Data Provisioning Agent server.
 

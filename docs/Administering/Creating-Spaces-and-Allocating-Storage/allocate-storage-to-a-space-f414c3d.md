@@ -45,7 +45,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+1.  In the side navigation area, select ![](../images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 
 2.  Use the *Space Storage* properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.
 

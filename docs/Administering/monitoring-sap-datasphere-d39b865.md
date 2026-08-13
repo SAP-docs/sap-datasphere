@@ -57,7 +57,7 @@ Click :desktop_computer: *\(Monitoring\)* in the side navigation to open the mon
 
 Get an overview of audit logs created in spaces and manage the deletion of these logs to prevent them growing too large.
 
-For more information, see [Monitor Database Operations with Audit Logs](monitor-database-operations-with-audit-logs-110404a.md).
+For more information, see [Monitor Read and Change Actions with Audit Logs](monitor-read-and-change-actions-with-audit-logs-110404a.md).
 
 
 

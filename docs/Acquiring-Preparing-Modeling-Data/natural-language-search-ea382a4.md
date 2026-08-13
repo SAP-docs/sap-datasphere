@@ -26,7 +26,7 @@ Entering a natural language search string allows you to quickly find data produc
 > ### Note:  
 > Natural language search is supported in English only, but may provide useable results in other languages.
 
-To use the natural language search, select the collection you want \(**Data Products**, **Assets**, **Terms**, or **KPIs**\) and enter a request.The use of natural language is not automatic and depends on the string entered:
+To use the natural language search, select the collection you want \(**Data Products**, **Assets**, **Terms**, or **KPIs**\) and enter a request. The use of natural language is not automatic and depends on the string entered:
 
 -   One word - Natural language search is not used.
 -   Two words - Natural language search is used if the standard search returns no results.
@@ -60,7 +60,6 @@ Conceptual grouping
 
 -   `show me data products with supply chain datasets`
     -   Returns all data products that are related to the supply chain line of business
-
 
 -   `show me an asset with revenue data`
     -   Returns all assets that are related to revenue data
@@ -108,7 +107,6 @@ Source properties, catalog properties, or other filter categories
 
 -   `data products named Sales with deployment region US East (NYC)`
     -   Returns all data products with "Sales" in their name and have US East \(NYC\) deployment region
-
 
 -   `show me published assets named regional sales that are of type story`
     -   Returns published assets with "regional sales" in their name and are of type story

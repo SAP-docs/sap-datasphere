@@ -407,6 +407,18 @@ Displays how long the task will run.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Tags* 
+
+</td>
+<td valign="top">
+
+Displays if an object contains *Personal Data* or *Sensitive Personal Data*. If yes, relevant tags are displayed. For more information, see [Modeling with Personal Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/fd0d4e63b73c4b8bb2efbd2399a9f9b9.html "Data protection and privacy laws, such as the European Union's General Data Protection Regulation (GDPR), require that personal data is handled lawfully, fairly, and transparently. SAP Business Data Cloud helps you track personal data through your modeling processes to ensure that it is properly handled and protected.") :arrow_upper_right:. 
+
+</td>
+</tr>
 </table>
 
 You can personalize the columns you want to display clicking on :gear:

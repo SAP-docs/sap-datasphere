@@ -34,7 +34,7 @@ You can use authentication type *OAuth 2.0* with the client credentials grant ty
 
 In SAP Datasphere, create an OAuth2.0 client with *Technical User* purpose.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*.
 2.  Under *OAuth Clients* \> *Configured Clients*, select :heavy_plus_sign: *Add a New OAuth Client*.
 3.  When creating the OAuth client:
     -   Select a suitable scoped role \(based on the DW Integrator role\) for accessing the data.

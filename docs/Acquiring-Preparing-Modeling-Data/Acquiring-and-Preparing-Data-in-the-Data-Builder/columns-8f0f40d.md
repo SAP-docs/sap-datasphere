@@ -8,6 +8,9 @@ Columns appear in tables and views with a *Semantic Usage* of *Relational Datase
 
 Columns are displayed in the *Columns* section of tables and views. In the graphical view and sql view editors, click the *Edit Columns* button in the *Columns* list to open and edit it in a dialog.
 
+> ### Note:  
+> If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
 Columns have the following properties:
 
 

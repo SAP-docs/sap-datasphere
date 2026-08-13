@@ -66,7 +66,7 @@ You can use replication flows to copy data from the following source objects fro
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Replication Flow* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Replication Flow* to open the editor.
 
 2.  Select a source connection and a source container, then add source objects \(see [Add the Source for a Replication Flow](add-the-source-for-a-replication-flow-7496380.md)\).
 
@@ -153,7 +153,7 @@ You can use replication flows to copy data from the following source objects fro
     
     \[only relevant for load type *Initial and Delta* and *Delta Only*\] Define the time interval for replicating changes from the source to the target. 
 
-    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -214,7 +214,7 @@ You can use replication flows to copy data from the following source objects fro
     > ### Note:  
     > This option is available only for replication flows created from wave 2025.04.It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
     > 
-    > -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify a Replication Flow](modify-a-replication-flow-a24c71f.md).
+    > -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md).
 
 
     
@@ -228,7 +228,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    \[Replication flows created in file space\] Select this option to automatically merge new data into your local table \(file\). When new data appears in the inbound buffer, a merge task runs automatically and updates the target table using the default Apache Spark application defined in Space Management or per local table \(file\) in the *Data Integration Monitor.* To control the associated workload, you can adjust the *delta load interval* of the replication flow or disable this setting and run the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data has still to be merged.") :arrow_upper_right:
+    \[Replication flows created in file space\] Select this option to automatically merge new data into your local table \(file\). When new data appears in the inbound buffer, a merge task runs automatically and updates the target table using the default Apache Spark application defined in Space Management or per local table \(file\) in the *Data Integration Monitor.* To control the associated workload, you can adjust the *delta load interval* of the replication flow or disable this setting and run the merge task separately with a less frequent schedule. For more information, see [Monitoring Local Tables (File)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/6b2d0073a8684ee6a59d6f47d00ec895.html "Monitor your local tables (file). Check how and when they were last updated and if new data is still to be merged.") :arrow_upper_right:
 
     > ### Note:  
     > -   The Merge Data Automatically option is *disabled*by default when you create a new replication flow with SAP Datasphere as target and load type as *Initial and Delta*. When the option is disabled, new data remains in the inbound buffer until a merge task is run manually or scheduled separately.
@@ -252,7 +252,24 @@ You can use replication flows to copy data from the following source objects fro
     You can define how delta-enabled objects run in a replication flow:
 
     -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
-    -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)
+    -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md)
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Capture Source Schema Changes
+    
+    </td>
+    <td valign="top">
+    
+    Detects compatible source schema changes and allows you to apply supported changes without restarting the replication flow. Available only for replication flows that use the SAP ABAP connection type with an SLT container and replicate to SAP Datasphere \(HANA\) targets. Apply [3691739](https://me.sap.com/notes/3691739) to the ABAP source system before enabling this option. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md)
+
+    > ### Caution:  
+    > Once enabled, this option cannot be disabled.
 
 
     
@@ -266,7 +283,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to load the data from the source. The value that is entered here determines how many partitions can be processed in parallel during an initial data load. Default value is 10. The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -278,7 +295,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    It displays the number of replication threads that will be used by your replication flow to write data to the target. The value that is entered here determines how many partitions can be processed in parallel during an initial data load to the target. Possible values are integers between 1 and 160, the default is 10.  The value is read-only at design time. Once you have deployed successfully the replication flow, you can update the value with the *Edit* button. For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -286,7 +303,7 @@ You can use replication flows to copy data from the following source objects fro
     
 3.  Select a target connection and target container \(see [Add the Target for a Replication Flow](add-the-target-for-a-replication-flow-ab490fb.md)\).
 
-4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)\).
+4.  Click <span class="FPA-icons-V3"></span> \(Browse target settings\) to review the default target settings for your replication flow and change or complete them as appropriate \(see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md)\).
 
 5.  Select a replication object in the canvas to review its properties in the side panel and change or complete them as appropriate:
 
@@ -312,7 +329,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    Add a projection to define a filter or mappings. For more information, see [Define Filters in a Replication Flow](define-filters-in-a-replication-flow-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md).
+    Add a projection to define a filter or mappings. For more information, see [Define Filter Expressions in a Replication Flow Object Projection](define-filter-expressions-in-a-replication-flow-object-projectio-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md).
     
     </td>
     </tr>
@@ -338,7 +355,7 @@ You can use replication flows to copy data from the following source objects fro
     
     Select how you want to load the data \(initial only, initial and delta, or delta only\).
 
-    For some connection types and use cases, only one of these options is available. For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md) and[Select Source and Target Connections for Replication Flows](select-source-and-target-connections-for-replication-flows-1089119.md).
+    For some connection types and use cases, only one of these options is available. For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md) and[Select Source and Target Connections for Replication Flows](select-source-and-target-connections-for-replication-flows-1089119.md).
     
     </td>
     </tr>
@@ -366,7 +383,7 @@ You can use replication flows to copy data from the following source objects fro
     
     Enable this option to delete any existing content in the target. For some connection types and use cases, this property has a fixed value that cannot be changed. 
 
-    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -380,7 +397,7 @@ You can use replication flows to copy data from the following source objects fro
     
     Enter the number of threads to be used for parallel processing during delta load. This option is available for SLT tables, CDS views, and CDS view entities that have load type *Initial and Delta* or *Delta Only*. 
 
-    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
     
     </td>
     </tr>
@@ -430,7 +447,7 @@ You can use replication flows to copy data from the following source objects fro
     When deploying your replication flow, the system does a series of validation checks and outputs an error message if it finds an issue in the flow configuration.
 
     > ### Note:  
-    > If you have the DW Integrator role, you can change the run settings after the deployment is complete. See [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md)
+    > If you have the DW Integrator role, you can change the run settings after the deployment is complete. See [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md)
 
 8.  Click <span class="FPA-icons-V3"></span> \(Run\) to start your replication flow.
 
@@ -523,7 +540,7 @@ You can use replication flows to copy data from the following source objects fro
     
     Define a projection \(filter or mapping\) for an object by selecting it and choosing *Add Projection*. 
 
-    See [Define Filters in a Replication Flow](define-filters-in-a-replication-flow-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md) 
+    See [Define Filter Expressions in a Replication Flow Object Projection](define-filter-expressions-in-a-replication-flow-object-projectio-5a6ef36.md) and [Define Mappings in a Replication Flow](define-mappings-in-a-replication-flow-2c7948f.md) 
     
     </td>
     </tr>

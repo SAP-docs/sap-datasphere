@@ -24,14 +24,21 @@ The incoming `data` parameter in the `transform` function is of type Pandas Data
 
     A user-defined batch in Python operator is a subset of data logically grouped when running the Python code. However, unlike regular batches,  it doesn't control how the data is read from the source. Ensure all data for a user-defined batch exists in the object store before the Python operator processes it.
 
-4.  In the *Script* section, enter your Python script to transform the incoming data and produce an output schema.
+4.  \[optional\] Resolve errors in your data records. You can:
+
+    -   Enable *Support Data Validation* to automatically track errors and manage records that fail validation. It allows you to improve data quality and reprocess erroneous records without manual intervention. A local table for error tracking is automatically generated and is SAP-Managed, read-only, and named after your transformation flow with the suffix *\_python1\_remediation\(.\)*. You can then mass-correct the erroneous data in this table using Python.
+    -   Use the *Data Remediation* table to manually correct erroneous records in the *Data Integration* monitor.
+
+    See [Resolving Erroneous Records Using the Data Remediation Table](resolving-erroneous-records-using-the-data-remediation-table-0cbcc49.md).
+
+5.  In the *Script* section, enter your Python script to transform the incoming data and produce an output schema.
 
     For information about Python support in the *Python* operator, see [Python Operator Reference](python-operator-reference-950d558.md).
 
     > ### Caution:  
     > Changes cannot be propagated between the *Python* script and output column. Manually update both to match to prevent errors. For example, if you add a new column in the *Script* field, you have to manually enter the same column in the *Columns* section to prevent errors.
 
-5.  In the *Columns* section, manually specify the columns that will be output by your Python operator.
+6.  In the *Columns* section, manually specify the columns that will be output by your Python operator.
 
     > ### Note:  
     > By default, all the source columns are displayed. You can:

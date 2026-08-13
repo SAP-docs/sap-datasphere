@@ -265,6 +265,9 @@ Provide business-friendly names for your table and its columns, identify its sem
 
 3.  Review the columns that are contained in your table. You can change the *Business Name* of columns and set keys here \(see [Set Key Columns to Uniquely Identify Records](../Modeling-Data-in-the-Data-Builder/set-key-columns-to-uniquely-identify-records-d9ef2c9.md)\).
 
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
 4.  \[remote tables\] Create filter conditions to load only the data that is needed \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
 
 5.  \[imported remote and local tables\] *Input Parameters*: If your remote table consumes an SAP HANA SQL view or an SAP HANA calculation view with input parameters, the parameter properties are displayed. You can define a default value for each parameter:

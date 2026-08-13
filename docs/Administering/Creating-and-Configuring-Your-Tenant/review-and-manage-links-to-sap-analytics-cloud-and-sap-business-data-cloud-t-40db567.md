@@ -29,7 +29,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 ## Product Switch Tenant Links
 
-In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Tenant Links*.
+In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Tenant Links*.
 
 The following properties are available in the *Product Switch* section:
 
@@ -132,7 +132,7 @@ You can link your SAP Datasphere tenant to a SAP Analytics Cloud tenant accessib
 
 To select an SAP Analytics Cloud tenant to make available via the <span class="SAP-icons-V5"></span> \(*Product Switch*\), you must have the *System Owner* role.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Tenant Links*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *Tenant Links*.
 2.  Enter the URL of your SAP Analytics Cloud tenant.
 
     > ### Note:  

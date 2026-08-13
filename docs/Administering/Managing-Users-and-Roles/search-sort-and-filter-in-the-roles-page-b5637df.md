@@ -21,7 +21,7 @@ This topic contains the following sections:
 
 ## Access the Roles Page
 
-In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 
 
 
@@ -29,9 +29,9 @@ In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Secu
 
 ## Enter a String to Search On
 
-Enter one or more characters in the *Search* field and press *Enter* \(or click *Search*\).
+Enter one or more characters in the *Search* field and press *Enter* \(or select *Search*\).
 
--   As you type, the field will begin proposing objects and search strings. Click on a string to start a search on it.
+-   As you type, the field will suggest objects and search strings. Select on a string to search about it.
 -   The search is case-insensitive and automatically applies wildcards so that, for example, the string "`lend`" will find objects containing both "`lender`" and "`calender`".
 
 
@@ -42,13 +42,13 @@ Enter one or more characters in the *Search* field and press *Enter* \(or click 
 
 You can control the display of columns in the role table.
 
-1.  Click :gear:.
+1.  Select :gear:.
 2.  Modify the column list in any of the following ways:
     -   To select a column for display, select its checkbox. To hide a column deselect its checkbox.
-    -   To change the order of the columns in the table, click on a column name to highlight it and use the arrow buttons <span class="SAP-icons-V5"></span> \(Move column up\) and <span class="SAP-icons-V5"></span> \(Move column down\) to move it in the list.
-    -   Click *Reset* to go back to the default column display.
+    -   To change the order of the columns in the table, select on a column name to highlight it and use the arrow buttons <span class="SAP-icons-V5"></span> \(Move column up\) and <span class="SAP-icons-V5"></span> \(Move column down\) to move it in the list.
+    -   Select *Reset* to go back to the default column display.
 
-3.  Click *OK* to apply your changes.
+3.  select *OK* to apply your changes.
 
 
 
@@ -58,11 +58,11 @@ You can control the display of columns in the role table.
 
 You can control the ordering of data in the role table.
 
-1.  Click <span class="SAP-icons-V5"></span> \(Sort\).
+1.  Select <span class="SAP-icons-V5"></span> \(Sort\).
 
     By default, the table is sorted by *Best Match on Top*, which calculates relevance on a range of criteria, including roles that you have recently changed and those that you have created.
 
-2.  To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then click *OK* to apply the changes.
+2.  To sort on a specific column, select a *Sort Order* and a *Sort By* column, and then select *OK* to apply the changes.
 
 
 
@@ -72,7 +72,7 @@ You can control the ordering of data in the role table.
 
 You can filter the list by any of the categories listed in the *Filter By* area of the left panel.
 
-To display the *Filter By* panel, click <span class="SAP-icons-V5"></span> \(Show filters\).
+To display the *Filter By* panel, select <span class="SAP-icons-V5"></span> \(Show filters\).
 
 You can select one or more values in each filter category in the *Filter By* section:
 
@@ -287,5 +287,5 @@ You can create advanced filter conditions for multiple filter categories. An obj
 
 ## Display Former Interface
 
-You can display the former interface of the *Roles* page, and again the current interface, by clicking <span class="SAP-icons-V5"></span> \(Show Former Interface\).
+You can display the former interface of the *Roles* page, and again the current interface, by selecting <span class="SAP-icons-V5"></span> \(Show Former Interface\).
 

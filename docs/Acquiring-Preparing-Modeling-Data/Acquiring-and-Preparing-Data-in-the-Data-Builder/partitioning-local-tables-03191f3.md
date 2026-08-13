@@ -40,16 +40,41 @@ Working with a large volume of data can cause memory shortages and take many sys
     You will get 5 partitions, but they can contain different amounts of data.
 
 -   *Hash*: You select one or more columns of your table that will serve for the partitioning. The table will then be split into the number of partitions you have defined. In our example above, if you have set 15 partitions on the Year column, you will have 15 partitions that will contain the same amount of data.
+-   *Dynamic Range*: You select one column of your table that will serve for the partitioning. The table will then be split into several partitions based on the intervals you have defined. The OTHERS partition stores values outside the defined intervals. With the dynamic interval partitioning, the OTHERS partition will be automatically split using the specified interval when it reaches a predefined size limit, creating new partitions following a consistent range pattern. For example, if you define an interval of 10, the following ranges will be created : 100–110, 110–120, 120–130. Each new partition that will be created will increase by 10 \(130-140, 140-150, etc\). This ensures efficient data distribution, maintains optimal query performance, and adapts seamlessly to increasing data volumes.
 
-> ### Restriction:  
-> -   The column must include one of the supported data types:
-> 
->     -   String
->     -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT
->     -   Date, DateTime, Timestamp
->     -   Binary
-> 
->     For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
+    For more information, see [Dynamic Range Partitioning](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/dynamic-range-partitioning)
+
+
+
+
+## Partitioning Columns
+
+Partitioning is based on columns. The columns you can select must meet the following requirements:
+
+-   If the table contains key columns, only key columns can be selected.
+-   If the table does not contain key columns, all columns that are not nullable and with compatible data types can be selected. In addition, for the dynamic partition, the column must be a consistently incrementing numerical sequence such as a timestamp or an integer.
+-   Only columns with the following data types can be selected:
+    -   Range and Hash Partitioning:
+        -   String
+        -   Integer, Integer 64, Decimal, hana.SMALLINT, hana.TINYINT
+        -   Date, DateTime, Timestamp
+        -   Binary
+
+    -   Dynamic Partitioning:
+        -   Date
+        -   Seconddate
+        -   Timestamp
+        -   Tinyint
+        -   Smallint
+        -   Int
+        -   Bigint
+
+
+
+> ### Note:  
+> You won’t be able to define a key column later until the partitions are in place.
+
+For more information, see [Partitioning Limits](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/8dd866a688ec4914a074727a2c800142.html) in the *SAP HANA Cloud, SAP HANA Database* documentation.
 
 
 
@@ -88,11 +113,6 @@ To create partitions for the local table:
         <td valign="top">
         
         Select the column from which the partition will be defined.
-
-        > ### Note:  
-        > If you have defined key columns, you can select only a key column. If you have no key columns defined, all columns with compatible data types can be selected. Note that you won’t be able to define a key column later, until the partitions are in place.
-
-
         
         </td>
         </tr>
@@ -140,11 +160,6 @@ To create partitions for the local table:
         <td valign="top">
         
         Select one or several columns from which the partition will be defined.
-
-        > ### Note:  
-        > If your table have got key columns, only these columns will be displayed for selection. If you have no key columns defined, all columns with compatible data types can be selected. Note that you won’t be able to define a key column later, until the partitions are in place.
-
-
         
         </td>
         </tr>
@@ -170,6 +185,53 @@ To create partitions for the local table:
         > ### Note:  
         > If your table was created during a data product installation, automatic hash partitioning will happen for entities of large tables. Based on key columns defined for this table, data will be partitioned into 8 partitions.
 
+    -   *Dynamic Range*:
+
+
+        <table>
+        <tr>
+        <th valign="top">
+
+        Property
+        
+        </th>
+        <th valign="top">
+
+        Description
+        
+        </th>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Column*
+        
+        </td>
+        <td valign="top">
+        
+        Select one column from which the partition will be defined.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *Dynamic Range Interval*
+        
+        </td>
+        <td valign="top">
+        
+        Define the interval that determines how the new partitions will be created. It can be:
+
+        -   A time-based interval using data types such as DATE, TIMESTAMP, SECONDDATE. In this case, an interval unit \(YEAR or MONTH\) is also required.
+        -   A numeric interval using data types such as INT, BIGINT, Smallint, tinyint. The interval defines the distance between partition boundaries, so newly created partitions follow a consistent pattern.
+
+
+        
+        </td>
+        </tr>
+        </table>
+        
 
 5.  Save the partition definition and deploy the table.
 
@@ -216,4 +278,7 @@ Once your partition definition is saved and you click on *Deploy*, you are invit
 > 
 > -   You must pause any replication flow runs that consume this table.
 > -   You must wait until the running flows are complete.
+> -   In the case where a local table is used as a source table of a replication flow using the initial load type, dynamic partitioning will not be possible for this table until the replication process is complete. This restriction does not apply to replication flows running in the delta load type, as these flows do not rely on SAP HANA's physical partitions during delta load.
+
+You can monitor your partitions in the *Local Tables* monitor. For more information, see [Monitoring Your Partitions](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3c9de9eb77e649a98450f4fd67a5f7ba.html "You have created partitions for your local table in the Data Builder, and you now want to monitor the details of these partitions.") :arrow_upper_right:.
 

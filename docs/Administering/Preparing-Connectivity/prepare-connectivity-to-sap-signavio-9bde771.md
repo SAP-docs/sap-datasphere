@@ -25,7 +25,7 @@ Before you can use the connection to add target objects to a replication flow, t
 
 2.  Create the connection to the source of the replication flow \(SAP S/4HANA, for example\) in the same space which you will use to create the connection to SAP Signavio.
 
-    For more information, see [Create a Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c2165842082c43fc85bad9f0c97572bb.html "Create a connection to allow users assigned to a space to use the connected source or target for data modeling and data access in SAP Datasphere.") :arrow_upper_right:.
+    For more information, see [Create a Connection](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c2165842082c43fc85bad9f0c97572bb.html "Create a connection from an SAP-delivered connection type to allow users assigned to a space to use the connected source or target for data modeling and data access in SAP Datasphere.") :arrow_upper_right:.
 
 3.  Create an OAuth 2.0 client with a technical user purpose and assign the scoped integrator role that has been created before.
 

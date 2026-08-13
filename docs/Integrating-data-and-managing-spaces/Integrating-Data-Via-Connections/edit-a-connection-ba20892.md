@@ -46,21 +46,23 @@ You need to edit connections in various cases, for example:
 
 -   In case of password or credential rotation.
 
--   When there's changes in the setup of the connected remote system
+-   When there's changes in the setup of the connected remote system.
 
     Changes in the remote system setup must also be made in the connection by updating the corresponding properties, for example changes in the authentication method, host changes, changes in security settings, or changes in the Data Provisioning Agent.
 
--   When the connection has been imported
+-   When the connection has been imported.
 
     When a connection has been imported into the tenant, it cannot directly be used. You must first complete the connection configuration and provide the credentials to create a runtime version for the connection before you can use it.
 
--   When you want to add the connection to a package to facilitate transport between tenants
+-   When you want to add the connection to a package to facilitate transport between tenants.
 
--   When a new feature is supported by the connection type
+-   When a new feature is supported by the connection type.
 
     For an existing connection that has been created before the connection type supported a new feature, you must re-enter the credentials before you can use the new feature.
 
--   When you want to change the business name or description
+-   When you want to change the business name or description.
+
+-   For connections created from custom connection types: For example, when you want to change authentication to a more secure authentication type, or when you want to select further actions for the connection.
 
 
 
@@ -71,15 +73,13 @@ You need to edit connections in various cases, for example:
 
 
 
-### Connections to Partner Tools
+### Connections Created Based on Custom Connection Types
 
-You cannot edit connections to partner tools.
+-   Any later changes to a custom connection type that has been used for creating a connection won't be reflected in the connection. For example, if you add an authentication type to a custom connection type, the new authentication type won't be available for you when you edit a connection that has been created based on this connection type before the new authentication type has been introduced. The information *Modified* or *Deleted* in the *Type* column of the connection overview helps you to identify connections for which the connection types used for their creation have been changed or deleted afterwards. If you want to consider custom connection type changes that have been introduced after you have created your connection based on this connection type, you must create a new connection.
 
 
 
 ### Connections Using a Data Provisioning Agent
-
-Consider the following when editing a connection which uses a Data Provisioning Agent:
 
 -   When the connection isn't used and its real-time replication status is *Inactive*, you can change any property except for the technical name.
 
@@ -95,6 +95,12 @@ Consider the following when editing a connection which uses a Data Provisioning 
 
     When the Data Provisioning Agent is disconnected, you need to reconnect the agent or use a different agent to enable editing specific connection properties.
 
+
+
+
+### Connections to Partner Tools
+
+You cannot edit connections to partner tools.
 
 
 

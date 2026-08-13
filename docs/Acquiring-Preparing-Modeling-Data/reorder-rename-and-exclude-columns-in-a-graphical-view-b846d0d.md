@@ -18,6 +18,9 @@ Add a *Projection* node to rename, reorder, or exclude columns.
 
 3.  The *Columns* list displays the columns that are available. You can filter the list with the *Search* box and reorder it.
 
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](modeling-with-personal-data-fd0d4e6.md)\).
+
 4.  Modify the *Columns* list as appropriate. You can:
 
     -   Reorder a column by dragging and dropping it in the list below *Columns*.

@@ -11,6 +11,7 @@ Use the connection to connect to and access objects from Google Cloud Storage.
 This topic contains the following sections:
 
 -   [Supported Features](google-cloud-storage-connections-aec242c.md#loioaec242c29188408c9ebe1a3ab63ce28b__GCS_usage)
+-   [Prerequisites](google-cloud-storage-connections-aec242c.md#loioaec242c29188408c9ebe1a3ab63ce28b__GCS_prerequisites)
 -   [Configuring Connection Properties](google-cloud-storage-connections-aec242c.md#loioaec242c29188408c9ebe1a3ab63ce28b__connection_properties)
 
 
@@ -76,6 +77,45 @@ You can use the connection to add source objects to a data flow \(see [Creating 
 
 
 
+<a name="loioaec242c29188408c9ebe1a3ab63ce28b__GCS_prerequisites"/>
+
+## Prerequisites
+
+If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+
+Two service endpoints and their corresponding Cloud Connector system mappings are required:
+
+-   storage endpoint \(via TCP protocol\) - used for accessing the Google Cloud Storage project
+-   OAuth2 endpoint \(via TCP protocol\) - used for authentication via key file which includes the OAuth2 endpoint and therefore must be explicitly configured in the Cloud Connector
+
+When configuring Cloud Connector for the storage endpoint, ensure you create the system mapping with the following settings:
+
+-   *Back-end Type*: Non-SAP System
+
+-   *Protocol*: TCP
+
+-   *Internal Host*: host used for the Google Cloud Storage endpoint \(`storage.googleapis.com`\)
+-   *Port or Port Range*: port for the endpoint
+-   *Virtual Host*: must be the same as the internal host
+-   *Virtual Port*: must be the same as the internal port
+-   *Check Internal Host*: deselected
+
+When configuring Cloud Connector for the OAuth2 endpoint, ensure you create the system mapping with the following settings:
+
+-   *Back-end Type*: Non-SAP System
+
+-   *Protocol*: TCP
+
+-   *Internal Host*: host used for the token endpoint to request the access token \(`oauth2.googleapis.com`\)
+-   *Port or Port Range*: port for the endpoint
+-   *Virtual Host*: must be the same as the internal host
+-   *Virtual Port*: must be the same as the internal port
+-   *Check Internal Host*: deselected
+
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+
+
 <a name="loioaec242c29188408c9ebe1a3ab63ce28b__connection_properties"/>
 
 ## Configuring Connection Properties
@@ -121,6 +161,91 @@ Enter the ID of the Google Cloud Storage project to which you want to connect.
 \[optional\] Enter the root path name for browsing objects. The value starts with the character slash. For example, `/My Folder/MySubfolder`. 
 
 If you have specified the root path, then any path used with this connection is prefixed with the root path.
+
+</td>
+</tr>
+</table>
+
+
+
+### Cloud Connector
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector*
+
+</td>
+<td valign="top">
+
+Set the property to *true* if you want to use replication flows and your Google Cloud Storage project does not have a public endpoint. The default is *false*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+Select the location ID for the Cloud Connector instance that is set up for connecting to the Google Cloud Storage project.
+
+> ### Note:  
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+We recommend to select *Derive Virtual Host and Port from Connection Details*. If you select *Enter Virtual Host and Port in Separate Fields*, the values you enter in the *Virtual Host* and *Virtual Port* field, won't be considered for the connection. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Any value you enter here, won't be considered, instead the connection uses internal host and port.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Any value you enter here, won't be considered, instead the connection uses internal host and port.
 
 </td>
 </tr>
@@ -201,7 +326,7 @@ Description
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces, data flows are not supported.
+> In file spaces or when using Cloud Connector, data flows are not supported.
 
 
 

@@ -165,7 +165,7 @@ When uploading the drivers, they are identified by their SHA256-formatted finger
 
 Perform the following steps before creating the first Amazon Redshift, Oracle, or Google BigQuery connection that you want to use for data flows.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Data Integration*.
 
 2.  Go to *Third-Party Drivers* and choose <span class="FPA-icons-V3"></span> Upload.
 

@@ -4,7 +4,7 @@
 
 # Monitoring Local Tables \(File\)
 
-Monitor your local tables \(file\). Check how and when they were last updated and if new data has still to be merged.
+Monitor your local tables \(file\). Check how and when they were last updated and if new data is still to be merged.
 
 
 
@@ -69,24 +69,38 @@ Displays the technical name or the business name of the table, depending on how 
 <tr>
 <td valign="top">
 
-*Buffer Merge Status*
+*Number of Active Records*
 
 </td>
 <td valign="top">
 
-Status of the data merge.
+Displays the number of active records.
 
-Data updates are waiting in the Inbound Buffer until they are merged.
+</td>
+</tr>
+<tr>
+<td valign="top">
 
-They can have the following status:
+*Total Storage \(MiB\)*
 
--   Running: a merge task is still running.
--   Failed: Last merge run task has failed. You might need to check the log for more details.
--   Merged: All data have been merged with the last merge task.
--   New Data: Data are waiting to be merged.
--   Empty: There is no new data waiting in the inbound buffer.
+</td>
+<td valign="top">
 
+Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\), and space required for administrative information. The size of the inbound buffer \(temporary storage of incoming data, usually empty\) is shown separately. The sum of both numbers is the actual size of the table. 
 
+If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Active Records File Storage \(MiB\)*
+
+</td>
+<td valign="top">
+
+Displays the size used by the active records only.
 
 </td>
 </tr>
@@ -117,6 +131,54 @@ Indicates how the local table \(file\) was last updated. For example, name of th
 <tr>
 <td valign="top">
 
+*Buffer File Size \(MiB\)*
+
+</td>
+<td valign="top">
+
+Displays the estimation of the size of the files waiting for a merge in the buffer. This size will be added to the total size once the merge is complete.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Buffer File Count*
+
+</td>
+<td valign="top">
+
+Displays the number of files that are waiting in the buffer to be merged. You may need to manually trigger a merge task and explore why it’s still not merged if you have automated the merge task.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Buffer Merge Status*
+
+</td>
+<td valign="top">
+
+Status of the data merge.
+
+Data updates are waiting in the Inbound Buffer until they are merged.
+
+They can have the following status:
+
+-   Running: a merge task is still running.
+-   Failed: Last merge run task has failed. You might need to check the log for more details.
+-   Merged: All data have been merged with the last merge task.
+-   New Data: Data are waiting to be merged.
+-   Empty: There is no new data waiting in the inbound buffer.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Buffer Last Updated*
 
 </td>
@@ -141,18 +203,6 @@ Indicates the name of the replication flow or the local table \(file\) generated
 <tr>
 <td valign="top">
 
-*Delta capture*
-
-</td>
-<td valign="top">
-
-Indicates if the local table \(file\) allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Partitions*
 
 </td>
@@ -165,74 +215,24 @@ Indicates if the local table \(file\) contains partitions.
 <tr>
 <td valign="top">
 
-*Number of Active Records*
+*Delta capture*
 
 </td>
 <td valign="top">
 
-Displays the number of active records.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Active Records File Storage \(MiB\)*
-
-</td>
-<td valign="top">
-
-Displays the size used by the active records only.
+Indicates if the local table \(file\) allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Total Storage \(MiB\)*
+*Tags*
 
 </td>
 <td valign="top">
 
-Displays the total size of the table. This includes files containing the active records, files from previous versions \(needed for delta processing\), and space required for administrative information. The size of the inbound buffer \(temporary storage of incoming data, usually empty\) is shown separately. The sum of both numbers is the actual size of the table. 
-
-If you compare the size of a similar table that is stored in a space of type SAP HANA Database, you may get different figures: the compression rate to store the data on the object store is different from the compression rate used to store the data in a space of type SAP HANA Database. More important, having many previous versions available for your table, it can consume a lot of storage. This is why it's recommended to do permanent regular data deletion \(Vacuum\). For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Previous Versions File Storage \(MiB\)*
-
-</td>
-<td valign="top">
-
-Displays the size of previous versions of the table. This includes files of previous versions that are required for delta processing. Once the delta has been processed by consuming objects \(for example transformation flows\), previous versions can get removed by running *Delete previous versions \(vacuum\), which are older than the specified number of days* . For more information, see [Deleting Local Table (File) Records](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/6ec9b8a89dc64b5cac069cee81399c92.html "Delete records from a local table (File) and free up storage through housekeeping on obsolete or already processed data changes.") :arrow_upper_right:
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Buffer File Count*
-
-</td>
-<td valign="top">
-
-Displays the number of files that are waiting in the buffer to be merged. You may need to manually trigger a merge task and explore why it’s still not merged if you have automated the merge task.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Buffer File Size \(MiB\)*
-
-</td>
-<td valign="top">
-
-Displays the estimation of the size of the files waiting for a merge in the buffer. This size will be added to the total size once the merge is complete.
+Displays if an object contains *Personal Data* or *Sensitive Personal Data*. If yes, relevant tags are displayed. For more information, see [Modeling with Personal Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/fd0d4e63b73c4b8bb2efbd2399a9f9b9.html "Data protection and privacy laws, such as the European Union's General Data Protection Regulation (GDPR), require that personal data is handled lawfully, fairly, and transparently. SAP Business Data Cloud helps you track personal data through your modeling processes to ensure that it is properly handled and protected.") :arrow_upper_right:. 
 
 </td>
 </tr>
@@ -272,7 +272,114 @@ From the *Settings* tab, you can override the default settings used to run tasks
 
 ## The Schedules Tab
 
-From the *Schedules* tab, you can see the schedules that have already been created to start tasks for your local tables \(files\). You can also create new schedules, edit, or delete existing schedules.
+From the *Schedules* tab, you can see the schedules that have already been created to start tasks for your local tables \(files\).
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Name*
+
+</td>
+<td valign="top">
+
+Displays the business name or technical name of the schedule. Technical or Business Name is displayed, depending on how you have configured your UI settings in *Profile* \> *Settings*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Activity*
+
+</td>
+<td valign="top">
+
+Activity runs by the schedule
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Type*
+
+</td>
+<td valign="top">
+
+Displays the type of deletion you applied on your table.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Status*
+
+</td>
+<td valign="top">
+
+Status of the schedule.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Frequency*
+
+</td>
+<td valign="top">
+
+Displays the frequency of the schedule.
+
+> ### Note:  
+> *Paused* is displayed in the case the schedule has been paused.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Last Run Start*
+
+</td>
+<td valign="top">
+
+Displays when the last scheduled run has started \(date and time\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Last Run End*
+
+</td>
+<td valign="top">
+
+Displays when the last scheduled run has ended \(date and time\).
+
+</td>
+</tr>
+</table>
+
+You can also create new schedules, edit, or delete existing schedules.
 
 > ### Note:  
 > You can create several schedules to delete data, but only one for a merge or an optimize task. For more information on how to create a schedule, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).

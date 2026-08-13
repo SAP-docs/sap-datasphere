@@ -203,7 +203,19 @@ Indicates how many records there are in the largest partition. Indeed, if your p
 </td>
 <td valign="top">
 
-Indicates if the local table allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use Replication Flows and Transformation Flows to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
+Indicates if the local table allows delta capture. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Tags* 
+
+</td>
+<td valign="top">
+
+Displays if an object contains *Personal Data* or *Sensitive Personal Data*. If yes, relevant tags are displayed. For more information, see [Modeling with Personal Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/fd0d4e63b73c4b8bb2efbd2399a9f9b9.html "Data protection and privacy laws, such as the European Union's General Data Protection Regulation (GDPR), require that personal data is handled lawfully, fairly, and transparently. SAP Business Data Cloud helps you track personal data through your modeling processes to ensure that it is properly handled and protected.") :arrow_upper_right:. 
 
 </td>
 </tr>

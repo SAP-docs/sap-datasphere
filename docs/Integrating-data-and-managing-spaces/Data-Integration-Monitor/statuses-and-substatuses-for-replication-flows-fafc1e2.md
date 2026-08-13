@@ -4,7 +4,7 @@
 
 # Statuses and Substatuses for Replication Flows
 
-Replication flows statuses and sub-statuses provides a better understanding of data loading processes and potential errors. It is useful for monitoring and troubleshooting replication flows.
+Replication flows statuses and substatuses provides a better understanding of data loading processes and potential errors. It is useful for monitoring and troubleshooting replication flows.
 
 On the left of the monitoring screen, you find the aggregated status information for your replication flow. If the status for one or more objects in a run differs from the overall status, this is indicated by an additional status value in brackets.
 
@@ -325,6 +325,18 @@ Restarting
 <td valign="top">
 
 The replication task for the object is re-initializing.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Review Schema Changes
+
+</td>
+<td valign="top">
+
+The replication task is waiting for pending schema changes to be reviewed because supported source schema changes have been detected. Review and either apply or skip the detected schema changes in the replication flow editor before the replication task can resume.
 
 </td>
 </tr>

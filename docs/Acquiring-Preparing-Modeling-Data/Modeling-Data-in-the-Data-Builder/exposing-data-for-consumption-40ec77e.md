@@ -57,7 +57,7 @@ OData
 <tr>
 <td valign="top">
 
-Perspectives \(see [Define Perspectives](../Buisiness-Builder/define-perspectives-ce26fd3.md)\)
+Perspectives \(see [Define Perspectives](Buisiness-Builder/define-perspectives-ce26fd3.md)\)
 
 Exposed: Automatically
 

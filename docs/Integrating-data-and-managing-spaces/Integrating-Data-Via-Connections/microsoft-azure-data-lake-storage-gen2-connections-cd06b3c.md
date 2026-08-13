@@ -1,0 +1,643 @@
+<!-- loiocd06b3c5ab5147c0905e3fa8abd13eb1 -->
+
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
+# Microsoft Azure Data Lake Storage Gen2 Connections
+
+Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 \(ADL Gen2\). 
+
+> ### Note:  
+> If you still have *Microsoft Azure Data Lake Storage Gen1* connections, recreate your existing Gen1 connections with the *Microsoft Azure Data Lake Storage Gen2* connection type, adapt your models and processes to the new connection, and delete your Gen1 connections. The Gen1 connection type has been removed from the Connections app because Microsoft Azure Data Lake Storage Gen1 was retired on February 29, 2024 \(see [Action required: Switch to Azure Data Lake Storage Gen2 by 29 February 2024](https://azure.microsoft.com/en-us/updates?id=action-required-switch-to-azure-data-lake-storage-gen2-by-29-february-2024) on the Microsoft *Azure Updates* pages\).
+
+
+
+This topic contains the following sections:
+
+-   [Supported Features](microsoft-azure-data-lake-storage-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_usage)
+-   [Prerequisites](microsoft-azure-data-lake-storage-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_prerequisites)
+-   [Configuring Connection Properties](microsoft-azure-data-lake-storage-gen2-connections-cd06b3c.md#loiocd06b3c5ab5147c0905e3fa8abd13eb1__connection_properties)
+
+
+
+<a name="loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_usage"/>
+
+## Supported Features
+
+> ### Note:  
+> In file spaces, data flows are not supported.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Additional Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Replication Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source and target objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
+
+For more information, see:
+
+-   [Cloud Storage Provider Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4d481a2c620f4b52ba65b360299d7719.html "If you use a cloud storage provider as the source for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+
+-   [Cloud Storage Provider Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/43d93a27150a4a218e3df14e3abdf456.html "If you use a cloud storage provider as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:
+
+
+> ### Note:  
+> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/4e9c6acb5d6a43fa9a6471837399e71c.html "To use a non-SAP target in a replication flow, you need premium outbound integration.") :arrow_upper_right: and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Flows
+
+</td>
+<td valign="top">
+
+You can use the connection to add source objects to a data flow \(see [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:\).
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loiocd06b3c5ab5147c0905e3fa8abd13eb1__ADL2_prerequisites"/>
+
+## Prerequisites
+
+
+
+### General
+
+If you're using SAP Datasphere on Microsoft Azure and want to connect to an Azure storage service in a firewall-protected Microsoft Azure storage account within the same Azure region \(that is to a Microsoft Azure private virtual network endpoint\), see the following information:
+
+-   SAP Note [3405081](https://me.sap.com/notes/3405081)
+-   Blog [Using Azure Private Virtual Network Endpoints with SAP Datasphere Replication](https://community.sap.com/t5/technology-blog-posts-by-sap/using-azure-private-virtual-network-endpoints-with-sap-datasphere/ba-p/13946050) \(published in November 2024\)
+-   For obtaining the SAP Datasphere Virtual Network Subnet ID that must be allowed in the Microsoft Azure storage account: [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/0934f7ed9a534e638299f53ab60866ae.html "Remote systems may restrict access to their instances. The remote system often decides whether an external client, such as SAP Datasphere, can access it based on allowlisted IPs. You must add SAP Datasphere's IP address to the remote system's allowlist before SAP Datasphere attempts access, via connections, for example.") :arrow_upper_right:
+
+
+
+### Replication Flows
+
+If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+
+When configuring Cloud Connector, ensure you create system mappings for both data endpoints of your storage account, `dfs` and `blob` :
+
+-   `dfs`:
+    -   *Back-end Type*: Non-SAP System
+
+    -   *Protocol*: TCP
+
+    -   *Internal Host*: `dfs` endpoint used to access data in your storage account \(<code><i class="varname">&lt;storage-account&gt;</i>.dfs.core.windows.net</code>\)
+    -   *Port or Port Range*: port for the endpoint
+    -   *Virtual Host*: must be the same as the internal host
+    -   *Virtual Port*: must be the same as the internal port
+    -   *Check Internal Host*: deselected
+
+-   `blob`:
+    -   *Back-end Type*: Non-SAP System
+
+    -   *Protocol*: TCP
+
+    -   *Internal Host*: `blob` endpoint used to access data in your storage account \(<code><i class="varname">&lt;storage-account&gt;</i>.blob.core.windows.net</code>\)
+    -   *Port or Port Range*: port for the endpoint
+    -   *Virtual Host*: must be the same as the internal host
+    -   *Virtual Port*: must be the same as the internal port
+    -   *Check Internal Host*: deselected
+
+
+When you want to use the *OAuth 2.0* authentication type for your connections, you must in addition create the Cloud Connector system mapping for the Microsoft OAuth endpoint with the following settings:
+
+-   *Back-end Type*: Non-SAP System
+
+-   *Protocol*: TCP
+
+-   *Internal Host*: authentication endpoint used to request the access token for OAuth 2.0 authorization \(`login.microsoftonline.com`\)
+-   *Port or Port Range*: port for the endpoint
+-   *Virtual Host*: must be the same as the internal host
+-   *Virtual Port*: must be the same as the internal port
+-   *Check Internal Host*: deselected
+
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+
+
+<a name="loiocd06b3c5ab5147c0905e3fa8abd13eb1__connection_properties"/>
+
+## Configuring Connection Properties
+
+
+
+### Connection Details
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Storage Account Name*  
+
+</td>
+<td valign="top">
+
+Enter the name of the Azure Data Lake Storage Gen2 used for authentication. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Root Path*  
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the root path name for browsing. It starts with a slash and the file system name. For example `/MyFileSystem/MyFolder`. The file system must be provided. Any path used with this connection will be prefixed with this root path. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Cloud Connector
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector*
+
+</td>
+<td valign="top">
+
+Set the property to *true* if you want to use replication flows and your storage account does not have a public endpoint. The default is *false*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+Select the location ID for the Cloud Connector instance that is set up for connecting to the Microsoft Azure Data Lake Gen2 storage account.
+
+> ### Note:  
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+We recommend to select *Derive Virtual Host and Port from Connection Details*. If you select *Enter Virtual Host and Port in Separate Fields*, the values you enter in the *Virtual Host* and *Virtual Port* field, won't be considered for the connection.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Any value you enter here, won't be considered, instead the connection uses internal host and port.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Any value you enter here, won't be considered, instead the connection uses internal host and port.
+
+</td>
+</tr>
+</table>
+
+
+
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*  
+
+</td>
+<td valign="top">
+
+Select the authentication type to be used: 
+
+You can select:
+
+-   *Shared Key \(default\)*
+-   *Shared Access Signature*
+-   *OAuth 2.0*
+
+Shared key provides full access to your storage account while with shared access signature you can provide secure delegate access to the storage account resources.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(Shared Key\)
+
+If *Authentication Type* = *Shared Key*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Account Key*  
+
+</td>
+<td valign="top">
+
+Enter the account key used in the shared key authorization. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(Shared Access Signature\)
+
+If *Authentication Type* = *Shared Access Signature*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*SAS Token*  
+
+</td>
+<td valign="top">
+
+Enter the shared access signature token \(SAS token\) used in shared access signature authentication. 
+
+</td>
+</tr>
+</table>
+
+
+
+### OAuth 2.0
+
+If *Authentication Type* = *OAuth 2.0*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Grant Type*  
+
+</td>
+<td valign="top">
+
+Select the grant type. 
+
+You can select:
+
+-   *Client Credentials with X.509 Client Certificate*
+-   *Client Credentials*
+-   *User Name and Password*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *OAuth Grant Type* = *Client Credentials with X.509 Client Certificate* or *Client Credentials*\] *OAuth Token Endpoint*  
+
+</td>
+<td valign="top">
+
+Enter the token endpoint that the application must use to get the access token. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *OAuth Grant Type* = *User Name and Password*\] *OAuth Client Endpoint*  
+
+</td>
+<td valign="top">
+
+Enter the client endpoint to get the access token for authorization method *User Name and Password*. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(OAuth 2.0 with X.509 Client Certificate\)
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file. 
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(OAuth 2.0\)
+
+If *OAuth Grant Type* = *Client Credentials*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client Secret*
+
+</td>
+<td valign="top">
+
+Enter the client secret.
+
+</td>
+</tr>
+</table>
+
+If *OAuth Grant Type* = *User Name And Password*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*User Name*
+
+</td>
+<td valign="top">
+
+Enter the name of the OAuth user.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Password \(OAuth 2.0\)*
+
+</td>
+<td valign="top">
+
+Enter the OAuth password.
+
+</td>
+</tr>
+</table>
+
+
+
+### Features
+
+
+<table>
+<tr>
+<th valign="top">
+
+Feature
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Replication Flows*
+
+</td>
+<td valign="top">
+
+*Replication Flows* are enabled without the need to set any additional connection properties. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Flows*
+
+</td>
+<td valign="top">
+
+*Data Flows* are enabled without the need to set any additional connection properties.
+
+> ### Note:  
+> In file spaces or when using Cloud Connector, data flows are not supported.
+
+
+
+</td>
+</tr>
+</table>
+

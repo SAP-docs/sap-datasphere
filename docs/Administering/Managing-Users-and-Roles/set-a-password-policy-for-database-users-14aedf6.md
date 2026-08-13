@@ -33,7 +33,7 @@ Users with a space administrator role can create database users in their spaces 
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Security*.
 
 2.  In the *Password Policy Configuration* section, complete the properties as appropriate and click *Save*:
 

@@ -30,7 +30,7 @@ Many connections \(including most connections to SAP systems\) support importing
 
 You can import remote tables to make the data available in your space from the *Data Builder* start page, in an entity-relationship model, or directly as a source in a view.
 
--   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *Import* \> *Import Remote Tables*. See [Import Remote Tables](import-remote-tables-fd04efb.md).
+-   To get started: In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *Import* \> *Import Remote Tables*. See [Import Remote Tables](import-remote-tables-fd04efb.md).
 -   By default, remote tables federate data, and each time the data is used a call is made to the remote system to load it. You can improve performance by enabling replication to store the data in SAP Datasphere. Some connections support real-time replication and for others, you can keep your data fresh by scheduling regular updates \(see [Replicate Remote Table Data](replicate-remote-table-data-7e258a7.md)\).
 
 -   To optimize replication performance and reduce your data footprint, you can remove unneccessary columns and set filters \(see [Restrict Remote Table Data Loads](restrict-remote-table-data-loads-bd1ece5.md)\).
@@ -51,7 +51,7 @@ Many connections \(including most connections to SAP systems\) support loading d
 
 Data flows support a wide range of extract, transform, and load \(ETL\) operations.
 
--   To get started: In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Flow* to open the editor. See [Creating a Data Flow](creating-a-data-flow-e30fd14.md).
+-   To get started: In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Data Flow* to open the editor. See [Creating a Data Flow](creating-a-data-flow-e30fd14.md).
 -   To add a source to your data flow, drag it from the *Source Browser* \(see [Using the Source Browser](../using-the-source-browser-7d2b21d.md)\).
 -   In addition to connections, data flows can load and transform data from the following kinds of sources:
     -   Open SQL schemas \(see [Integrating Data via Database Users/Open SQL Schemas](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3de55a78a4614deda589633baea28645.html "Users with a space administrator role can create database users to read data exposed by the space and to write data to Open SQL schemas attached to space, providing a secure method for exchanging data with the space via ODBC access to the run-time SAP HANA Cloud database.") :arrow_upper_right:\)

@@ -44,6 +44,7 @@ Before creating your data access control, you must have identified the following
 
         -   User IDs in the format required by your identity provider \(email addresses, logon names, or other identifiers\). If you are using SAML authentication, this column must contain values in the form defined as your *User Attribute* / `IdpUserID` \(see [Enabling a Custom SAML Identity Provider (Legacy Custom IdP)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/9b26536159354aea9024a99cbbe60b4e.html "By default, SAP Cloud Identity is used by SAP Datasphere. SAP Datasphere also supports single sign-on (SSO), using your custom identity provider.") :arrow_upper_right:\).
         -   User IDs associated with any "technical user" OAuth clients created to consume data via the OData API \(see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+        -   Database user names in the format `SPACEID#DBUSER` \(see [Consume Data in Power BI and Other Clients, Tools, and Apps via ODBC/JDBC](https://help.sap.com/viewer/43509d67b8b84e66a30851e832f66911/cloud/en-US/4db6f5a329af44509ae422ad707877b2.html "You can consume data exposed as views in Microsoft Power BI and other third-party clients, tools, and apps via an Open SQL schema and ODBC/JDBC.") :arrow_upper_right:\).
         -   Identity provider attributes. If you are defining criteria based on user attribute values, you must, in addition, include an ID Type column that contains the values 0-5 \(see [Use Identity Provider Attributes as Identifiers in Data Access Controls](use-identity-provider-attributes-as-identifiers-in-data-access-controls-40f493f.md)\).
 
         This column must be selected as the *Identifier Column* in your data access control.
@@ -187,7 +188,7 @@ For example:
 
 ## Create a "Hierarchy" Data Access Control
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New Data Access Control* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New Data Access Control* to open the editor.
 2.  Complete the properties in the *General Section*:
 
 

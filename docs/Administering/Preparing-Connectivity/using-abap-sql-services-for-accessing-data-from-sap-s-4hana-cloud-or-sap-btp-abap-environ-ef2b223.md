@@ -4,9 +4,15 @@
 
 The ABAP SQL service provides SQL-level access to published CDS view entities for SAP Datasphere. You can use the service to replicate data with replication flows or to federate data with remote tables.
 
+This topic contains the following sections:
+
+-   [Introduction to ABAP SQL Services](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-or-sap-btp-abap-environ-ef2b223.md#loioef2b2238154f4cd78a08df360447c1d5__intro)
+-   [Data Replication With Replication Flows](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-or-sap-btp-abap-environ-ef2b223.md#loioef2b2238154f4cd78a08df360447c1d5__replication)
+-   [Data Federation With Remote Tables](using-abap-sql-services-for-accessing-data-from-sap-s-4hana-cloud-or-sap-btp-abap-environ-ef2b223.md#loioef2b2238154f4cd78a08df360447c1d5__federation)
 
 
-<a name="loioef2b2238154f4cd78a08df360447c1d5__section_bnj_jd4_2hc"/>
+
+<a name="loioef2b2238154f4cd78a08df360447c1d5__intro"/>
 
 ## Introduction to ABAP SQL Services
 
@@ -26,49 +32,7 @@ For more information, see the *ABAP Cloud* documentation for *SAP S/4HANA Cloud 
 
 
 
-<a name="loioef2b2238154f4cd78a08df360447c1d5__section_y5d_b5q_bcc"/>
-
-## Data Federation With Remote Tables
-
-In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administrator must perform the following steps to prepare data federation with remote tables:
-
-1.  Check the prerequisites and constraints that must be considered before using the SQL service.
-
-    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
-
-2.  To expose CDS view entities using the SQL service, a business user must create a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL service.
-
-    To enable federated access, the business user must select access type *SELECT* in the *Enabled Operations* area of the service binding.
-
-    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding) in the *ABAP Cloud* documentation.
-
-3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
-
-    1.  A business user has created a custom communication scenario in the ABAP Development Tools.
-
-        When filling out the authorizations for authorization object `S_SQL_VIEW` in the communication scenario, note the following:
-
-        -   On the *Sources* tab of the Data Builder view editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
-
-        -   In the SQL\_VIEWOP authorization field, select the option *SELECT* to grant federated access.
-
-
-    2.  An administrator has created a communication system and user in the SAP Fiori launchpad of the ABAP environment.
-
-        > ### Note:  
-        > The same communication user must be added to all communication arrangements you're using for the connection.
-
-    3.  An administrator has created a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
-
-
-    For more information, see [Exposing the SQL Service with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access) in the *ABAP Cloud* documentation.
-
-
-You can now create a connection to consume the ABAP SQL service for data federation with remote tables using the ABAP SDA adapter in SAP HANA Cloud.
-
-
-
-<a name="loioef2b2238154f4cd78a08df360447c1d5__section_qql_jmb_ccc"/>
+<a name="loioef2b2238154f4cd78a08df360447c1d5__replication"/>
 
 ## Data Replication With Replication Flows
 
@@ -109,4 +73,46 @@ In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administra
 
 
 You can now create a connection to consume the ABAP SQL service for data replication with replication flows using the ABAP Pipeline Engine.
+
+
+
+<a name="loioef2b2238154f4cd78a08df360447c1d5__federation"/>
+
+## Data Federation With Remote Tables
+
+In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administrator must perform the following steps to prepare data federation with remote tables:
+
+1.  Check the prerequisites and constraints that must be considered before using the SQL service.
+
+    For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
+
+2.  To expose CDS view entities using the SQL service, a business user must create a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL service.
+
+    To enable federated access, the business user must select access type *SELECT* in the *Enabled Operations* area of the service binding.
+
+    For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding) in the *ABAP Cloud* documentation.
+
+3.  To expose the SQL service to get privileged access to the CDS view entities with a communication user, a communication arrangement is required. This involves the following steps:
+
+    1.  A business user has created a custom communication scenario in the ABAP Development Tools.
+
+        When filling out the authorizations for authorization object `S_SQL_VIEW` in the communication scenario, note the following:
+
+        -   On the *Sources* tab of the Data Builder view editors in SAP Datasphere, the service binding name from the *SQL\_SCHEMA* authorization field is visible as \(virtual\) schema.
+
+        -   In the SQL\_VIEWOP authorization field, select the option *SELECT* to grant federated access.
+
+
+    2.  An administrator has created a communication system and user in the SAP Fiori launchpad of the ABAP environment.
+
+        > ### Note:  
+        > The same communication user must be added to all communication arrangements you're using for the connection.
+
+    3.  An administrator has created a communication arrangement for exposing the SQL service in the SAP Fiori launchpad of the ABAP environment.
+
+
+    For more information, see [Exposing the SQL Service with Privileged Access](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/exposing-sql-service-for-data-federation-and-replication-with-privileged-access) in the *ABAP Cloud* documentation.
+
+
+You can now create a connection to consume the ABAP SQL service for data federation with remote tables using the ABAP SDA adapter in SAP HANA Cloud.
 

@@ -6,9 +6,10 @@
 
 Use the connection to connect to and access objects in Microsoft OneLake.
 
-This topic contains the following sections: Supported Features 
+This topic contains the following sections:
 
 -   [Supported Features](microsoft-onelake-connections-057fa4b.md#loio057fa4b51c734e679dd70eec9514839d__OneLake_usage)
+-   [Prerequisites](microsoft-onelake-connections-057fa4b.md#loio057fa4b51c734e679dd70eec9514839d__OneLake_prerequisites)
 -   [Configuring Connection Properties](microsoft-onelake-connections-057fa4b.md#loio057fa4b51c734e679dd70eec9514839d__connection_properties)
 
 
@@ -46,6 +47,45 @@ For more information, see [Cloud Storage Provider Sources for Replication Flows]
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio057fa4b51c734e679dd70eec9514839d__OneLake_prerequisites"/>
+
+## Prerequisites
+
+If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+
+Two service endpoints and their corresponding Cloud Connector system mappings are required:
+
+-   global data endpoint \(via TCP protocol\) - used for accessing Microsoft OneLake
+-   Microsoft OAuth endpoint \(via TCP protocol\) - used for authentication
+
+When configuring Cloud Connector for the data endpoint, ensure you create the system mapping with the following settings:
+
+-   *Back-end Type*: Non-SAP System
+
+-   *Protocol*: TCP
+
+-   *Internal Host*: global URL used to access Microsoft OneLake \(`onelake.dfs.fabric.microsoft.com`\)
+-   *Port or Port Range*: port for the endpoint
+-   *Virtual Host*: must be the same as the internal host
+-   *Virtual Port*: must be the same as the internal port
+-   *Check Internal Host*: deselected
+
+When configuring Cloud Connector for the Microsoft OAuth endpoint, ensure you create the system mapping with the following settings:
+
+-   *Back-end Type*: Non-SAP System
+
+-   *Protocol*: TCP
+
+-   *Internal Host*: authentication endpoint used to request the access token for OAuth 2.0 authorization \(`login.microsoftonline.com`\)
+-   *Port or Port Range*: port for the endpoint
+-   *Virtual Host*: must be the same as the internal host
+-   *Virtual Port*: must be the same as the internal port
+-   *Check Internal Host*: deselected
+
+For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
 
 
@@ -93,7 +133,7 @@ For more information, see [Data Residency](https://learn.microsoft.com/en-us/fab
 </td>
 <td valign="top">
 
-Enter the root path to specify the object on your Microsoft OneLake account which you want to access with the connection. For example `myworkspace/myitem.itemtype/myfiles`.
+Enter the root path to specify the objects on your Microsoft OneLake account which you want to access with the connection. For example `myworkspace/myitem.itemtype/myfiles`.
 
 </td>
 </tr>
@@ -108,6 +148,91 @@ Enter the root path to specify the object on your Microsoft OneLake account whic
 \[read only\] Displays the standard global Microsoft OneLake URL `https://onelake.dfs.fabric.microsoft.com/`.
 
 When entering the root path in the *Root Path* field and a region in the *Region* field, these are automatically added to the URL. For example `https://eastus2-onelake.dfs.fabric.microsoft.com/myworkspace/myitem.itemtype/myfiles`
+
+</td>
+</tr>
+</table>
+
+
+
+### Cloud Connector
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Use Cloud Connector*
+
+</td>
+<td valign="top">
+
+Set the property to *true* if you want to use replication flows and your Microsoft OneLake workspace does not have a public endpoint. The default is *false*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Location* 
+
+</td>
+<td valign="top">
+
+Select the location ID for the Cloud Connector instance that is set up for connecting to Microsoft OneLake.
+
+> ### Note:  
+> To select another location ID than the default location, *Connection* privilege with *Read* permission is required.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Use Cloud Connector* = *true*\] *Virtual Destination* 
+
+</td>
+<td valign="top">
+
+We recommend to select *Derive Virtual Host and Port from Connection Details*. If you select *Enter Virtual Host and Port in Separate Fields*, the values you enter in the *Virtual Host* and *Virtual Port* field, won't be considered for the connection.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Host* 
+
+</td>
+<td valign="top">
+
+Any value you enter here, won't be considered, instead the connection uses internal host and port.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+\[if *Virtual Destination* = *Enter Virtual Host and Port in Separate Fields*\] *Virtual Port* 
+
+</td>
+<td valign="top">
+
+Any value you enter here, won't be considered, instead the connection uses internal host and port.
 
 </td>
 </tr>

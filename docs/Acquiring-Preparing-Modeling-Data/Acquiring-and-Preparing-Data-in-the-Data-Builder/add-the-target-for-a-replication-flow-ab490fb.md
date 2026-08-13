@@ -31,7 +31,7 @@ Select a target \(connection and container\) to define the target environment fo
 
 4.  Review the target settings and properties and change or complete them as appropriate.
 
-    For more information, see [Configure a Replication Flow](configure-a-replication-flow-3f5ba0c.md).
+    For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
 
 
 
@@ -115,8 +115,7 @@ If a projection is defined for a target column that doesn't exist in the source,
 > ### Note:  
 > Skipping is **not** possible for the following column types:
 > 
-> -   Columns with the property *Not Null* without default value \(For background information, see [Columns](columns-8f0f40d.md).\)
-> 
+> -   You cannot skip a target column that has the property *Not Null*unless you assign a constant or function value to it. If you skip such a column without assigning a value, the deployment fails and the affected replication objects are listed in the error message.
 > -   CDC columns
 > 
 > -   Key columns

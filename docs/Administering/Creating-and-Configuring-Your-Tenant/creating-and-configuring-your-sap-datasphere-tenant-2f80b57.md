@@ -2,12 +2,12 @@
 
 # Creating and Configuring Your SAP Datasphere Tenant
 
-You can create and configure your own tenant in SAP BTP, select a data center region, and distribute workloads across availability zones.
+SAP Datasphere is available as part of SAP Business Data Cloud \(SAP BDC\). Formerly, SAP Datasphere was available as a separate product. The provisioning process depends on whether your access to SAP Datasphere is via SAP BDC or SAP BTP. You can create and configure your own tenant in SAP BTP, select a data center region, and distribute workloads across availability zones.
 
-You can create your own tenant in the SAP BTP Cockpit. The procedure is the same for both subscription-based and consumption-based contracts. Some details may vary depending on the chosen service plan \(free or standard\). For more information about limitations for a free plan, see SAP Note [3227267](https://launchpad.support.sap.com/#/notes/3227267).
+If your access to SAP Datasphere is via:
 
-> ### Note:  
-> This information is for creating an SAP Datasphere tenant outside of SAP BDC. If your access to SAP Datasphere is part of an SAP BDC solution, you should follow the procedure in [Provisioning SAP Datasphere](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud/provisioning-sap-datasphere) in the *SAP Business Data Cloud* documentation instead.
+-   SAP Business Data Cloud \(SAP BDC\): You must provision your tenant in SAP for Me. See [Provisioning SAP Datasphere](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud/provisioning-sap-datasphere) in the *Administering SAP Business Data Cloud* guide.
+-   SAP Business Technology Platform \(SAP BTP\): You must provision your tenant in the SAP BTP Cockpit. See [Create Your SAP Datasphere Service Instance in SAP BTP](create-your-sap-datasphere-service-instance-in-sap-btp-54288aa.md).
 
 When the tenant is configured, a data center region is selected. The main role of a data center is to guarantee the uninterrupted operation of computer systems. It also provides secure storage, processing, and networking capabilities for your data. A data center refers to the physical location, which could be a building or a group of buildings, housing computer systems and their components.
 
@@ -173,7 +173,7 @@ In the case of a subscription contract, the available capacity units can be dist
 
 ## Maximum Configuration Values
 
-The maxium configuration size of your tenant depends on regional availability and your server type.
+The maximum configuration size of your tenant depends on regional availability and your server type.
 
 > ### Note:  
 > -   Data integration includes 200h/month from the minimum free package.
@@ -753,7 +753,7 @@ Canada
 </td>
 <td valign="top">
 
-Not Supported
+Supported
 
 </td>
 <td valign="top">
@@ -791,6 +791,48 @@ Europe \(Amsterdam\)
 <td valign="top">
 
 55760 GB
+
+</td>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+90 TB
+
+</td>
+<td valign="top">
+
+7200 h/month
+
+</td>
+<td valign="top">
+
+20.5 GB/h
+
+</td>
+<td valign="top">
+
+412 \(Memory Performance Class\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+5600 GB
+
+</td>
+<td valign="top">
+
+55744 GB
 
 </td>
 <td valign="top">

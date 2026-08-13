@@ -40,7 +40,7 @@ The following **sources** are **not** supported:
 
 **Properties**:
 
--   **Delete All Before Loading** is **deactivated** by default and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*.
+-   **Delete All Before Loading** is **deactivated** by default for the load type *Initial and Delta*, and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*. For the load type *Initial Only*, it's activated by default and cannot be switched off.
 
 -   *Delta capturing* is *activated*by default and cannot be switched off.
 -   Both *Initial Only* and *Initial and Delta* load types can be used.

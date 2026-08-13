@@ -30,7 +30,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 To generally allow SAP Technical Support to create support users based on incidents, proceed as follows:
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *System Configuration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *System Configuration*.
 
 2.  Choose *Edit*.
 

@@ -12,10 +12,10 @@ You can manually upgrade your SAP HANA database. This ensures your system is up 
 
 ## Prerequisites
 
-To work with your SAP HANA database, you must have a global role that grants you the following privileges:
+To access *More* in the *About* dialog and to upgrade or restart your SAP HANA database, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access *More* in the *About* area of the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access *More* in the *About* dialog from the <span class="SAP-icons-V5"></span> \(*Profile*\) area in the top-right corner of the shell bar.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -32,7 +32,7 @@ Automated database upgrades are not impacted by your ability to upgrade your pat
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> System ** \> **<span class="FPA-icons-V3"></span> About.
+1.  In the top-right corner of the shell bar, click <span class="SAP-icons-V5"></span> \(*Profile*\) ** \> **<span class="FPA-icons-V3"></span> *About*.
 
 2.  Click *More* and scroll to the bottom of the dialog.
 

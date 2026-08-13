@@ -54,7 +54,7 @@ You want to model transformation flows with tables as sources, apply various tra
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a file space \(if required\) and click *New Transformation Flow*.
 2.  On the *New Transformation Flow* screen, add a source:
-    -   One source table: drag and drop an object onto the source operator. See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add local tables \(file\), shared local tables \(file\), local tables shared from a SAP HANA space, and shared remote tables on a Delta Share runtime.
+    -   One source table: drag and drop an object onto the source operator. See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add local tables \(file\) , shared local tables \(file\), local tables shared from a SAP HANA space, and shared remote tables on a Delta Share runtime.
 
         Certain data types that are supported in a SAP HANA Space aren't in a file space and require conversion to supported types. See [Converting Local Table Data Types from a HANA Space to a File Space](converting-local-table-data-types-from-a-hana-space-to-a-file-sp-aac37d0.md).
 
@@ -162,12 +162,15 @@ You want to model transformation flows with tables as sources, apply various tra
     > Local tables \(file\) support a limited number of data types. See [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
 4.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow. See [Removing Duplicate Records](removing-duplicate-records-d4b2df0.md).
-5.  \[optional\] If your source is a shared table with *Delta Capture* enabled, you can change its load type \(*All Active Records* or *Delta Capture*\) in its settings panel.
+5.  \[optional\] If your source is a shared table with *Delta Capture* enabled:
+    -   you can change its load type \(All Active Records or Delta Capture\) in its settings panel.
+    -   if the load type is Inital and Delta, delta changes are propagated to the target table, and even to non-delta target table. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
+
 6.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. See [Creating a Python Operator](creating-a-python-operator-a747acf.md).
 7.  Add a target table. See [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
-    > It can only be a local table \(file\) and *Delete All Before Loading* is not supported.
+    > It can only be a local table \(file\).
     > 
     > In a transformation flow, when using delta capture with active records views in joins, deletions may not propagate correctly to the target table in the following cases:
     > 
@@ -182,6 +185,7 @@ You want to model transformation flows with tables as sources, apply various tra
     > -   A transformation flow on a file space using a shared object as a source cannot be cancelled while running.
     > -   Loading data in batches is not supported in a file space.
     > -   A transformation flow run fails if it lasts for over 48 hours.
+    > -   A transformation flow run fails when the source table contains columns that conflict with any of the reserved columns \(\_DRT\_STATUS, \_DRT\_MESSAGE\) of the data remediation table. Rename any conflicting columns in your source table and try again.
 
 10. You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
 11. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*, like *Simulate Run*, *Generate a SQL Analyzer Plan File*, or [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:. See [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.

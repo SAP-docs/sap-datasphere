@@ -34,7 +34,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 ## Create a Database User with Password-Based Authentication
 
-1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+1.  In the side navigation area, select ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 2.  In the *Database Users* section, click *Create*. The *Create Database User* dialog opens.
 3.  Complete the properties as appropriate and click *Create* to create the user:
 
@@ -184,7 +184,7 @@ You can now use your database user \(see [Connect to Your Open SQL Schema](conne
 
 You can create a database user with certificate-based authentication provided that a X.509 root certificate \(root CA\) has been uploaded for the tenant by a user with an administrator role \(see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:\).
 
-1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+1.  In the side navigation area, select ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 2.  In the *Database Users* section, click *Create*. The *Create Database User* dialog opens.
 3.  Complete the properties as appropriate and click *Create* to create the user:
 
@@ -334,7 +334,7 @@ You can now use your database user \(see [Connect to Your Open SQL Schema](conne
 
 You can change a database user's authentication from password-based to certificate-based, but you cannot change it back from certificate-based to password-based.
 
-1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+1.  In the side navigation area, select ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 2.  In the *Database Users* section, click the <span class="FPA-icons-V3"></span> button for your database, which opens the *Database User Details* dialog.
 3.  In the *Switch to X.509 Authentication* section, upload a X.509 client certificate. The certificate's subject and issuer distinguished names are displayed.
 
@@ -352,7 +352,7 @@ You can change a database user's authentication from password-based to certifica
 
 ## Delete a Database User
 
-1.  In the side navigation area, click ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+1.  In the side navigation area, select ![](images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 2.  In the *Database Users* section, select the database user that you want to delete and click *Delete*.
 
     In the confirmation dialog, enter DELETE if you are sure that you no longer need the database user and any of its content or data, then click the *Delete* button.

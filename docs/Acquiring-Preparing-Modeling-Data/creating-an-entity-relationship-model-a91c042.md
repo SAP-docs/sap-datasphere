@@ -45,7 +45,7 @@ In addition to working with E/R models in the editor, you can also:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and click *New ER Model* to open the editor.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *New ER Model* to open the editor.
 
 2.  Add, import, or create entities in the diagram:
 
@@ -185,6 +185,8 @@ In addition to working with E/R models in the editor, you can also:
     </table>
     
 4.  Edit the selected entity's properties in the *Properties* panel.
+
+    If any entity contains columns with *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly and the ER model also displays the appropriate tag \(see [Modeling with Personal Data](modeling-with-personal-data-fd0d4e6.md)\).
 
 5.  Click <span class="FPA-icons-V3"></span> \(Save\) to save your model:
 

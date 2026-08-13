@@ -267,6 +267,18 @@ Exposed objects can be consumed by SAP Analytics Cloud and other BI clients, too
 <tr>
 <td valign="top">
 
+<span class="SAP-icons-V5"></span> \(Personal Data or Sensitive Personal Data\)
+
+</td>
+<td valign="top">
+
+Contains personal or sensitive personal data \(see [Modeling with Personal Data](modeling-with-personal-data-fd0d4e6.md)\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 <span class="FPA-icons-V3"></span> \(Deployed\)
 
 </td>

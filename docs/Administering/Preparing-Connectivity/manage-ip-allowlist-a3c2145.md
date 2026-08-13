@@ -52,7 +52,7 @@ The address can either be a single IPv4 address or a range specified with a Clas
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *IP Allowlist*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *IP Allowlist*.
 
 2.  From the *IP Allowlist* dropdown, select the appropriate list:
 
@@ -240,7 +240,7 @@ You can use a file produced in the same or on a different SAP Datasphere tenant.
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *IP Allowlist*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *IP Allowlist*.
 
 2.  From the *IP Allowlist* dropdown, select the appropriate list:
 

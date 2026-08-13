@@ -4,7 +4,7 @@
 
 # Validate a Connection
 
-Select a connection and open the validation message to get detailed status information.
+Select a connection created from an SAP-delivered connection type and open the validation message to get detailed status information.
 
 
 
@@ -31,5 +31,8 @@ The *DW Space Administrator* and *DW Integrator* role templates, for example, gr
 2.  Select the relevant connection and click *Validate*.
 
     The message informs you about the availability of supported features and provides details in case of errors in the connection.
+
+    > ### Note:  
+    > Validation is not supported for connections created from custom connection types.
 
 

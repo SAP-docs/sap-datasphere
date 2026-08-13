@@ -89,14 +89,16 @@ In addition to working with task chains in the editor, you can also:
 
 2.  From the left-side panel, drag and drop a first object on to the task chain canvas from those available in the repository \(from the *Repository* tab\), or non-repository objects \(selected from the *Others* tab\).
 
-    > ### Note:  
-    > From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, transformation flow objects and task chains that meet prerequisites and are available to be added to the task chain. Task chains you've shared or have been shared with you from another space are denoted by the <span class="FPA-icons-V3"></span> \(Share\) icon following the task chain's business name. For more information on sharing and running shared task chains, see [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md).
-    > 
-    > From the *Others* tab, you can see the non-repository Open SQL schema procedures and BW Bridge process chains you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md). For more information on adding BW Bridge process chains to a task chain, see [Run SAP BW Bridge Process Chains in a Task Chain](run-sap-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md).
-    > 
-    > In addition to the objects available from the Repository or Others tabs, you can also add two other additional objects to task chains that are only available from the task chain toolbar. The *API Task* object lets you configure API Tasks to access external systems. \(For more information, see [Run API Tasks in a Task Chain](run-api-tasks-in-a-task-chain-9a8489e.md).\) The *Notification Task* object lets you configure email notification for individual task chain tasks. \(For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).\)
+    -   From the *Repository* tab, you can see the remote tables, views, intelligent lookups, data flow, replication flow, transformation flow objects and task chains that meet prerequisites and are available to be added to the task chain. Task chains you've shared or have been shared with you from another space are denoted by the <span class="FPA-icons-V3"></span> \(Share\) icon following the task chain's business name. For more information on sharing and running shared task chains, see [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md).
+    -   From the *Others* tab, you can see the non-repository Open SQL schema procedures and BW Bridge process chains you can add to a task chain. For more information on adding Open SQL schema procedures from the Others tab, see [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md). For more information on adding BW Bridge process chains to a task chain, see [Run SAP BW Bridge Process Chains in a Task Chain](run-sap-bw-bridge-process-chains-in-a-task-chain-7d7d02a.md).
 
-3.  Drag a second object on to the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* to place the new object in the linear arrangement of tasks in the task chain, or as a task in parallel with a selected task.
+    -   In addition to the objects available from the Repository or Others tabs, you can also add two other additional objects to task chains that are only available from the task chain toolbar. The *API Task* object lets you configure API Tasks to access external systems. \(For more information, see [Run API Tasks in a Task Chain](run-api-tasks-in-a-task-chain-9a8489e.md).\) The *Notification Task* object lets you configure email notification for individual task chain tasks. \(For more information, see [Configure Email Notification for Task Chains and Notification Tasks](configure-email-notification-for-task-chains-and-notification-ta-7ff6a4e.md).\)
+
+
+    > ### Note:  
+    > If an object contains *Personal Data* or *Sensitive Personal Data*, relevant tags are displayed. For more information, see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md).
+
+3.  Drag a second object onto the first object in the task chain. As you drag the object over the top of the first object, a context menu displays options *Add as New Task* \(the default\), *Replace Existing*, or *Add as Parallel* to place the new object in the linear arrangement of tasks in the task chain, or as a task in parallel with a selected task.
 
     Choosing the *Add as New Task* option automatically connects the new object task to the previous object task with the default *Success* task port. The properties panel for the task chain is also updated with the added objects.
 
@@ -366,7 +368,7 @@ In addition to working with task chains in the editor, you can also:
     *Task Chain Toolbar Objects:*
 
     -   API Tasks - Run \(For more information, see [Run API Tasks in a Task Chain](run-api-tasks-in-a-task-chain-9a8489e.md).\)
-    -   Notification Tasks - Run \(For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).\)
+    -   Notification Tasks - Run \(For more information, see [Configure Email Notification for Task Chains and Notification Tasks](configure-email-notification-for-task-chains-and-notification-ta-7ff6a4e.md).\)
 
 
     
@@ -515,7 +517,7 @@ In addition to working with task chains in the editor, you can also:
     > ### Note:  
     > SAP Datasphere allows you to save task chains that may have unconnected task objects on the canvas. However, you will not be able to deploy and run them until all task objects are connected to define their order of execution when the task chain is run.
 
-    After creating and deploying a task chain, you can optionally set up email notification for completion of task chain runs. For more information, see [Configure Email Notification](configure-email-notification-7ff6a4e.md).
+    After creating and deploying a task chain, you can optionally set up email notification for completion of task chain runs. For more information, see [Configure Email Notification for Task Chains and Notification Tasks](configure-email-notification-for-task-chains-and-notification-ta-7ff6a4e.md).
 
     After you've finished making changes and optionally setting up email notification for the task chain, you can then run the task chain or create a schedule to run your task chain periodically, and navigate to the *Task Chains* monitor to check your task chain runs. For more information, see [Run a Task Chain](run-a-task-chain-684bd8b.md), [Scheduling Data Integration Tasks](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7fa07621d9c0452a978cb2cc8e4cd2b1.html "Schedule data integration tasks to run periodically at a specified date or time.") :arrow_upper_right:, and [Monitoring Task Chains](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4142201ec1aa49faad89a688a2f1852c.html "Monitor the status and progress of running and previously run task chains.") :arrow_upper_right:.
 

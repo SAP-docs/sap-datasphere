@@ -21,7 +21,7 @@ You create an OAuth2.0 Client with an *API Access* purpose:
 
 ## Procedure
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*.
 
 2.  Under *Configured Clients*, select *Add a New OAuth Client*.
 

@@ -455,7 +455,7 @@ Displays the number of execution hours available for data integration applicatio
 > If you exceed the available execution hours, your data integration processes \(such as replication flow runs\) continues running to avoid interrupting critical integration scenarios, which can result in additional costs \(depending on your plan\).
 
 > ### Note:  
-> Billing is based on the duration of the replication flow job, rather than the volume of records processed. To optimize costs, consider adjusting the Delta Load Frequency or creating a schedule for your replication flows and including it in a task chain. For more information, see [Configure a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:
+> Billing is based on the duration of the replication flow job, rather than the volume of records processed. To optimize costs, consider adjusting the Delta Load Frequency or creating a schedule for your replication flows and including it in a task chain. For more information, see [Configure the Run Settings of a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:
 
 
 
@@ -716,36 +716,12 @@ Description
 <tr>
 <td valign="top">
 
-*Purchased units*
-
-</td>
-<td valign="top">
-
-Displays the capacity units purchased for the month.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Estimated Units*
 
 </td>
 <td valign="top">
 
 Displays the number of units anticipated to be charged to the user by the end of the month. This calculation assumes that the current configuration stays unchanged and all pay-per-use services are fully utilized.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Available Units*
-
-</td>
-<td valign="top">
-
-Displays the estimated capacity units left for this month. This number is calculated as Purchased Units - Estimated Units = Available Units.
 
 </td>
 </tr>

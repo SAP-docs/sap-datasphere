@@ -51,7 +51,7 @@ Create mappings to specify how the source data is to be changed on its way into 
     -   Remove a column: Select the relevant column and choose *Remove*.
 
         > ### Note:  
-        > It is not possible to remove primary key columns or to map a key column in the source to multiple non-key columns in the target.
+        > You cannot skip a target column that has the property *Not Null* unless you assign a constant or function value to it. If you skip such a column without assigning a value, the deployment fails. The error message lists the affected replication objects.
 
     -   Change the column sequence: Select the column that you want to move to a different place and use the *Up* and *Down* buttons.
     -   Restore default settings: To discard any changes and restore the default mapping settings, choose *Auto-Map*.

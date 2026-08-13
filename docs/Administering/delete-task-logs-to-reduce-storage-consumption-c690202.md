@@ -17,7 +17,7 @@ To delete task logs and reduce storage consumption, you must have a global role 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -37,9 +37,17 @@ However, task logs can consume a lot of space in a tenant. Deleting old task log
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(Configuration\) → *Tasks*.
 
-2.  Check how much size the task logs consume on your tenant. If needed, decide how you want to delete the task logs.
+2.  Under *Storage Consumption*, you can review how much space task logs are using within your tenant. The following details are provided:
 
-    -   Schedule Task Log Deletion: SAP Datasphere automatically triggers logs deletion using the following default criteria:
+    -   *Last Deletion Run*: The date and time when the most recent task for deleting logs finished, along with whether the task was executed manually or via a scheduled run.
+    -   *Memory Used for Storage*: The total memory currently occupied by logs across all SAP spaces in the tenant.
+    -   *Disk Used for Storage*: The total disk space consumed by logs across all SAP spaces in the tenant.
+    -   *Disk Used for Storage \(Spark\)*: The amount of disk space used for logs storage within all SAP HANA Data Lake Files spaces \(file space\). After a deletion task runs, this metric is updated to show the reduction \(e.g., “reduced from X MB to X MB”\), so you can easily see how much space has been freed.
+    -   *Number of Tasks With Deleted Logs*: The count of tasks that have associated deletion logs.
+
+3.  If needed, decide how you want to delete the task logs.
+
+    -   Schedule Task Log Deletion: SAP Datasphere automatically runs logs deletion using the following default criteria:
 
         -   Deletion tasks will be run every 4 months
         -   Task logs older than 200 days will be deleted
@@ -51,9 +59,9 @@ However, task logs can consume a lot of space in a tenant. Deleting old task log
         Click *Delete*.
 
         > ### Note:  
-        > Deleting these logs do not set the storage to zero because some files remain. Running procedures may take longer to run and can incur costs due to using Apache Spark processing.
+        > Deleting these logs do not set the storage to zero because some files remain. Running procedures may take longer to run and can incur costs due to using Object Store Requests \(API Requests\).
         > 
-        > The displayed size of log files in the Object Store \(*Disk used for storage \[Spark\]*\) is calculated immediately after a deletion run and remains unchanged until the next deletion run completes. This approach helps avoid unnecessary resource usage for frequent size recalculations.
+        > The displayed size of log files in the Object Store \(*Disk used for storage \[Spark\]*\) is calculated before and after a deletion run and remains unchanged until the next deletion run completes. This approach helps avoid unnecessary resource usage for frequent size recalculations.
 
 
 

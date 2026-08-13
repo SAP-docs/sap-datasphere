@@ -564,6 +564,22 @@ Choose one of the tabs and specify the options:
 <tr>
 <td valign="top">
 
+Related Term Name
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose a related term name that you want included in the search result.
+
+*Define Conditions*: Create conditions and enter a value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Release Status
 
 </td>

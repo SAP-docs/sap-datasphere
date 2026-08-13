@@ -4,7 +4,7 @@
 
 # Create a Connection
 
-Create a connection to allow users assigned to a space to use the connected source or target for data modeling and data access in SAP Datasphere.
+Create a connection from an SAP-delivered connection type to allow users assigned to a space to use the connected source or target for data modeling and data access in SAP Datasphere.
 
 
 
@@ -89,13 +89,13 @@ Create a connection to allow users assigned to a space to use the connected sour
     
     In the *Filters* section, use one of the following filters:
 
-    -   *Features* that a connection type supports \(*Remote Tables*, *Data Flows*, *Replication Flows*, *Model Import*\)
+    -   *Features* that a connection type supports \(*Remote Tables*, *Data Flows*, *Replication Flows*, *Model Import*; in file spaces: *Replication Flows*\)
 
         For more information about the available features with SAP Datasphere, see [Features Supported by Connections](features-supported-by-connections-505bf40.md).
 
     -   *Categories* that the corresponding source belongs to \(*On-Premise*, *Cloud*\)
 
-    -   *Sources* that you would like to connect \(*SAP*, *Non-SAP*, *Partner Tools*\)
+    -   *Sources* that you would like to connect \(*SAP*, *Non-SAP*, *Partner Tools*; in file spaces: *SAP*, *Non-SAP*\)
 
 
 
@@ -180,7 +180,7 @@ Create a connection to allow users assigned to a space to use the connected sour
     > ### Note:  
     > If you connect to a partner tool, you will be redirected to an embedded partner UI to there enter credentials and required connection properties, if applicable.
 
-    For an overview of all connection types including links to detailed property documentation, see [Connection Types](connection-types-9456242.md).
+    For an overview of all connection types including links to detailed property documentation, see [Connection Types Delivered by SAP](connection-types-delivered-by-sap-9456242.md).
 
 5.  \[optional\] For some connection types that use a Data Provisioning Agent to connect to the source, for example SAP ABAP, SAP HANA, or Microsoft SQL Server, you can define advanced properties which give you more control over your connectivity setup. If required, override default values according to your customer scenario’s needs, and then click *Next Step*.
 
@@ -289,16 +289,17 @@ Create a connection to allow users assigned to a space to use the connected sour
 
 Depending on the connection type and the features that you have enabled for your connection:
 
--   You can use the connection either to import tables, to create data flows, or to create replication flows, or all three.
+-   You can use the connection either to create replication flows, import tables, or to create data flows, or all three.
 
     For more information, see:
 
-    -   [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
-    -   [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:
     -   [Creating a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/25e2bd7a70d44ac5b05e844f9e913471.html "Create a replication flow to copy multiple data assets from a source to a target with support for delta loads.") :arrow_upper_right:
+    -   [Importing Tables and Views from Sources](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c4acd33e39a451e99c87f0661772443.html "Import tables and views from a connection, Open SQL schema, HDI container or other source available in your space.") :arrow_upper_right:
 
-    > ### Note:  
-    > Generally, when importing a table, it is created as remote table. However, tables imported from partner tool connections are created as local tables \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
+        > ### Note:  
+        > Generally, when importing a table, it is created as remote table. However, tables imported from partner tool connections are created as local tables \(see [Connections to Partner Tools](connections-to-partner-tools-55da0fa.md)\).
+
+    -   [Creating a Data Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e30fd1417e954577baae3246ea470c3f.html "Create a data flow to move and transform data in an intuitive graphical interface. You can drag and drop sources from the Source Browser, join them as appropriate, add other operators to remove or create columns, aggregate data, and do Python scripting, before writing the data to the target table.") :arrow_upper_right:
 
 -   You can use remote tables imported from the connection either to access data directly live in the connected source \(federation\) or to copy the data into SAP Datasphere \(replication\).
 
@@ -306,9 +307,6 @@ Depending on the connection type and the features that you have enabled for your
 
 -   You can use the connection to import entities from your source.
 
-    For more information, see:
-
-    -   [SAP BW∕4HANA Model Transfer Connections](sap-bw-4hana-model-transfer-connections-1caba95.md)
-    -   [Importing SAP BW∕4HANA Models](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a3d4a2f91bea4810ba8839ff73577dac.html "You can import existing analytic queries from SAP BW∕4HANA into SAP Datasphere in order to build new models on top of them or enhance them.") :arrow_upper_right:
+    For more information, see [Importing Objects with Semantics from SAP Systems](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/361729b49aea4519a6e8910b035dbf6c.html "You can use the Import Entities wizard to import semantically-rich objects from selected SAP systems. The wizard creates Business Builder and Data Builder entities (along with all the objects on which they depend) in SAP Datasphere.") :arrow_upper_right:.
 
 

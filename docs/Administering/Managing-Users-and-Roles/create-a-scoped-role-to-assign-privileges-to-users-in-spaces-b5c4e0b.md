@@ -170,7 +170,7 @@ For more information on scoped roles, see the blog [Preliminary Information SAP 
 > ### Note:  
 > In addition to the standard workflows, you can also create scoped roles and assign scopes and users to them via the command line \(see [Managing Scoped Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/85085a35a58a4589bc121fb94efc4876.html "You can use the datasphere command line interface to create, read, update, and delete scoped roles.") :arrow_upper_right:\).
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\).
 2.  Click <span class="FPA-icons-V3"></span> \(Add Role\) and select *Create a Scoped Role*.
 
     > ### Note:  
@@ -256,7 +256,7 @@ You can then assign spaces and users to the new scoped role. The spaces and user
 
 To add spaces to a scoped role, the spaces must be created beforehand.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and select your scoped role to open it.
 2.  Click *\[number\] Scopes*, select one or more spaces in the dialog *Scopes* and click *Save*.
 
     > ### Note:  
@@ -269,7 +269,7 @@ To add spaces to a scoped role, the spaces must be created beforehand.
 
 ## Remove Spaces from a Scoped Role
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and select your scoped role to open it.
 2.  Click *\[number\] Scopes*.
 
 3.  In the *Selected Scopes* area of the dialog *Scopes*, click the cross icon for each space that you want to remove from the role, then click *Save*.
@@ -285,7 +285,7 @@ To add spaces to a scoped role, the spaces must be created beforehand.
 
 To add users to a scoped role, the users must be created beforehand.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and select your scoped role to open it.
 2.  Click *Users*. All user assignements are displayed in the *Users* page.
 
     -   To individually select users and assign them to spaces, click <span class="FPA-icons-V3"></span> \(Add Users to Scopes\), then *Add New Users to Scopes*. Select one or more users in the wizard *Add Users to Scopes* and click *Next Step*.
@@ -315,7 +315,7 @@ Once you've assigned a user to a space with the DW Space Administrator role via 
 
 ## Remove Users from a Scoped Role
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and click your scoped role to open it.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Security*\) ** \> ** <span class="FPA-icons-V3"></span> \(*Roles*\) and select your scoped role to open it.
 2.  Click *Users*. All user assignements are displayed in the *Users* page.
 
 3.  Check the relevant rows \(a row corresponding to a combination of one user and one space\) and click :wastebasket:. The users cannot access the spaces they were previously assigned to in the scoped role.

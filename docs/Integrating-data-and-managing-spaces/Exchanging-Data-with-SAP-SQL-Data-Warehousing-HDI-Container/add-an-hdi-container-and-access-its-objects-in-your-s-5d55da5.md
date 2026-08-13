@@ -34,7 +34,7 @@ You must define the roles `DWC_CONSUMPTION_ROLE` and `DWC_CONSUMPTION_ROLE#` \(w
 
 ## Procedure
 
-1.  In the side navigation area, click ![](../Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and click *Edit* to open it.
+1.  In the side navigation area, select ![](../Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\), locate your space tile, and select *Edit* to open it.
 
 2.  In the *HDI Container* section, click the *\+* button to open the *Add Unassigned HDI Containers* dialog.
 

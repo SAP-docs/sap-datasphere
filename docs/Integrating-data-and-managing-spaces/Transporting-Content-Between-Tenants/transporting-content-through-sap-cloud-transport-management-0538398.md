@@ -203,7 +203,7 @@ If no user has been defined in the target tenant beforehand, the user must conse
 5.  Click *Upload*.
 
 > ### Note:  
-> If you encounter issues where changes to replication flows or other objects are not being correctly transported, ensure that your changes are deployed correctly \(see [Modify a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:\).
+> If you encounter issues where changes to replication flows or other objects are not being correctly transported, ensure that your changes are deployed correctly \(see [Modify Replication Flow Object Schemas and Settings](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/a24c71f3ba7548909534d4cb52cefbfc.html "You can modify an existing replication flow after it has been created. The changes you can make depend on the current status of the replication flow and the kind of updates you want to make.") :arrow_upper_right:\).
 
 
 

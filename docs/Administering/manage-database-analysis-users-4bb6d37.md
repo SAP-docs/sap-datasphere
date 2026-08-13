@@ -108,7 +108,7 @@ After too many failed login attempts, a database analysis user is locked and its
 
 You can unlock a locked database analysis user by requesting a new password for it.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
 2.  Click the icon next to the *Locked* status of the database analysis user.
 3.  In the dialog box that opens, click *Request New Password*.
 
@@ -125,7 +125,7 @@ If the expiration date of an analysis database user has been reached, the user i
 
 You can extend an expired database analysis user.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
 2.  Click the icon next to the *Expired* status of the analysis database user.
 3.  In the dialog box that opens, select the number of days after which the user will expire and click *Reactivate Analysis User*.
 
@@ -137,7 +137,7 @@ You can extend an expired database analysis user.
 
 Delete your database analysis user immediately after the issue is resolved to avoid misuse of sensitive data.
 
-1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
+1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** :wrench: \(*Configuration*\) ** \> *Database Access* \> *Database Analysis Users*.
 2.  Select the user you want to delete and then click *Delete*.
 
 Deleting a database analysis user does not delete its audit logs. The audit logs will be deleted after a retention period of 180 days. As they can consume a large amount of disk storage, you may want to manually delete them before the end of the retention period \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\).

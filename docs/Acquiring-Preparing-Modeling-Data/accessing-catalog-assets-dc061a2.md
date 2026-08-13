@@ -97,7 +97,7 @@ Changes saved to objects in the source systems are updated in the catalog as fol
 
 You can use assets that you find in the catalog in your data projects to build something new. For example:
 
--   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md) or [Modeling Data in the Data Builder](Modeling-Data-in-the-Data-Builder/modeling-data-in-the-data-builder-5c1e3d4.md).
+-   As a data modeler in SAP Datasphere, you can use the asset as a source for a Data Builder or Business Builder object. For more information, see [Acquiring Data](Acquiring-and-Preparing-Data-in-the-Data-Builder/acquiring-data-1f15a29.md) or [Modeling Data](Modeling-Data-in-the-Data-Builder/modeling-data-5c1e3d4.md).
 
 -   As a content creator in SAP Analytics Cloud, you can use the asset in a story. For more information, see [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html).
 
