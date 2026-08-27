@@ -35,6 +35,8 @@ In this case, the three spaces are created in SAP Datasphere for each instance o
 
 In the following example, we have two instances of one intelligent content, installed for two source systems, resulting in separate spaces, where each model space identifies the source tenant providing the data by system alias.
 
+![](images/Install_Intelligent_Content_for_2_or_More_Source_Systems_d1e8d3d.png)
+
 
 
 ### Example: Installing Different Intelligent Content on a Single Source System

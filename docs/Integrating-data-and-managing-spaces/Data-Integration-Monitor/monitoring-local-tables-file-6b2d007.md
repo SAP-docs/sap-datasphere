@@ -240,44 +240,11 @@ Displays if an object contains *Personal Data* or *Sensitive Personal Data*. If 
 
 
 
-## The Logs Tab
+### 
 
-From the *Logs* tab, you can see the logs that relate to previous and running actions on your table:
+Click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table.
 
--   *Start*:
-
-    Displays the date and time when the task started.
-
--   *Duration*:
-
-    Displays how long the task has been running.
-
--   *Object Type*:
-
-    Displays the type of object used for the task.
-
--   *Activity*:
-
-    Displays the type of tasks run.
-
--   *Status*:
-
-    Displays the status of tasks run.
-
-
-The logs are separated into 3 different tabs:
-
--   *All*: Displays all logs related to all tasks for this table.
--   *Data Tasks*: Displays only tasks related to data management.
--   *Statistics Tasks*: Displays all tasks related to statistics updates.
-
-*Data Tasks* and *Statistics Tasks* run independently, each with its own task ID. This approach enables lifecycle operations on local tables \(file\) and transformation flows in file spaces to complete more quickly: Statistics updates do not increase the runtime of lifecycle operations; instead, they are run as separate tasks. Additionally, lower costs are expected for statistics updates, as local table \(file\) statistics are processed using a smaller Apache Spark configuration. Additionally, lower costs are expected for statistics updates, as local tables \(file\) statistics are processed using a smaller Apache Spark configuration and inbound buffer statistics are processed using WebHDFS instead of Apache Spark.
-
-You can navigate to the detailed log of each task by clicking
-
-<span class="SAP-icons-V5"></span> \(Details\).
-
-From this screen, you can cancel a running task with the *Cancel Run* button, or you can click <span class="SAP-icons-V5"></span> Download Spark Driver Logs to download Spark driver logs after performing the following tasks on a local table \(file\):
+You can download Spark driver logs after performing the following tasks on a local table \(file\):
 
 -   MERGE\_FILES
 -   OPTIMIZE\_FILES
@@ -287,10 +254,19 @@ From this screen, you can cancel a running task with the *Cancel Run* button, or
 -   DELETE\_INBOUND\_BUFFER
 -   FIND\_AND\_REPLACE
 
-Downloading logs can be useful for debugging a failing task. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. The logs are downloaded as a `.txt` file in your local *Download* file. There are no logs to download if:
+Click the <span class="SAP-icons-V5"></span> Download Spark Driver Logs button on the top right corner of your screen. Downloading logs can be useful for debugging a failing task. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. The logs are downloaded as a `.txt` file in your local *Download* file. There are no logs to download if:
 
 -   The task fails before the Spark driver gets started.
 -   The task MERGE\_FILES gets started without any data in the inbound buffer.
+
+From the *Logs* tab, you can see the logs that relate on previous and running actions on your table.
+
+From the *Schedules* tab, you can see the schedules that have already been created to start tasks for your local tables \(files\). You can also create new schedules, or edit, or delete existing schedules.
+
+> ### Note:  
+> You can create several schedules to delete data, but only one for a merge or an optimize tasks. For more information on how to create schedule, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+
+From the *Settings* tab, you can override the default settings used to run tasks on Apache Spark. For more information see [Merge or Optimize Your Local Tables \(File\)](merge-or-optimize-your-local-tables-file-e533b15.md) or [Delete Data From Your Local Tables \(File\)](delete-data-from-your-local-tables-file-872ad50.md).
 
 
 
