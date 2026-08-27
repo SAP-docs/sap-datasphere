@@ -47,6 +47,7 @@ The following standard roles are available:
         -   *DW Scoped Consumer* - This predefined scoped role is based on the DW Consumer role and inherits its privileges and permissions.
 
 
+    -   *DW Metadata Graph Consumer* - Can view the metadata knowledge graph.
 
 -   Roles providing privileges to work in the SAP Datasphere catalog:
     -   **Catalog Administrator** - Can set up and implement data governance using the catalog. This includes connecting the catalog to source systems for extracting metadata, building business glossaries, creating tags for classification, and publishing enriched catalog assets so all catalog users can find and use them. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.
@@ -75,4 +76,32 @@ Users are assigned roles in particular spaces via scoped roles. One user may hav
 The standard roles are grouped by the license type they consume and each user's license consumption is determined solely by the roles that they've been assigned. For example, a user who has been assigned only the *DW Administrator* standard role consumes only a *SAP Datasphere* license.
 
 Planning Professional, Planning Standard as well as Analytics Hub are SAP Analytics Cloud specific license types. For more information, see [Understand Licenses, Roles, and Permissions](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/72ae65446c7943be80905c1d83a57a4a.html) in the *SAP Analytics Cloud* documentation.
+
+
+
+## Standard SAP Datasphere Role IDs
+
+All roles are prefixed with `PROFILE`. Custom and scoped roles have IDs in the following format: <code>PROFILE:<i class="varname">&lt;t.#&gt;</i>:<i class="varname">&lt;role_name&gt;</i></code>.
+
+-   *DW Administrator* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Administrator`
+-   *DW Joule Consumer* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Joule`
+-   *DW AI Consumer* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_AI_Consumer`
+-   *DW Metadata Graph Consumer* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Metadata_Graph_Consumer`
+-   *DW Consumer* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Consumer`
+    -   *DW Scoped Consumer* - `PROFILE:sap.dwc:Scoped_Data_Warehouse_Cloud_Consumer`
+
+-   *DW Viewer* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Viewer`
+    -   *DW Scoped Viewer* - `PROFILE:sap.dwc:Scoped_Data_Warehouse_Cloud_Viewer`
+
+-   *DW Integrator* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Integrator`
+    -   *DW Scoped Integrator* - `PROFILE:sap.dwc:Scoped_Data_Warehouse_Cloud_Integrator`
+
+-   *DW Space Administrator* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Space_Administrator`
+    -   *DW Scoped Space Administrator* - `PROFILE:sap.dwc:Scoped_Data_Warehouse_Cloud_Space_Administrator`
+
+-   *DW Modeler* - `PROFILE:sap.dwc:Data_Warehouse_Cloud_Modeler`
+    -   *DW Scoped Modeler* - `PROFILE:sap.dwc:Scoped_Data_Warehouse_Cloud_Modeler`
+
+-   *Catalog User* - `PROFILE:sap.odc:Data_Catalog_User`
+-   *Catalog Administrator* - `PROFILE:sap.odc:Data_Catalog_Administrator`
 

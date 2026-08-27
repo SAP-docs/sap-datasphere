@@ -115,10 +115,16 @@ If a projection is defined for a target column that doesn't exist in the source,
 > ### Note:  
 > Skipping is **not** possible for the following column types:
 > 
-> -   You cannot skip a target column that has the property *Not Null*unless you assign a constant or function value to it. If you skip such a column without assigning a value, the deployment fails and the affected replication objects are listed in the error message.
+> -   Columns with the property *Not Null*without default value.
 > -   CDC columns
 > 
 > -   Key columns
+> 
+> 
+> If columns are added to the source or target table after the replication flow has been saved and deployed, the replication flow is not aware of those changes. To recover:
+> 
+> -   Terminating replication flow: Once the flow fails, choose *Map to Existing Target Object*or delete the target task and add it again.
+> -   Non-terminating replication flow: Delete the target task, deploy, add the target task again, then deploy again.
 
 > ### Restriction:  
 > When a replication flow is running, you must not update the target objects metadata in the target system until the flow has completed. Doing so may incur in data loss.

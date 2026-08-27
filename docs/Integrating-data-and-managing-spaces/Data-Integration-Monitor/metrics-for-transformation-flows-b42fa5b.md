@@ -10,6 +10,10 @@ Metrics provide the record count for source and target tables used in the flow. 
 
     The "Run Mode" is defined in the settings for a transformation flow run: 0 means "Performance-Optimized \(Recommended\)" and 1 means "Memory-Optimized". For more information about the "Run Mode", see [Change Transformation Flow Settings](change-transformation-flow-settings-f7da029.md).
 
+-   `FLATTEN_OPERATOR_COUNT` 
+
+    Shows if a Flatten operator is used in the transformation flow. The value is always set to `1` becuase there can't be more than one Flatten operator per transformation flow. See [Creating a Flatten Operator](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/34f48faf744a429f9db581e5b43b920a.html "Learn how to create a Flatten operator in Apache Spark transformation flows to simplify complex star-schema data models. The operator automatically joins tables to create flattened tables for machine learning, AI, and analytics use cases.") :arrow_upper_right:.
+
 -   `LOAD_TYPE`
 
     The load type for a transformation flow run. For more information about load types, see [Creating a Transformation Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f7161e6c20204672ac4a6d90c81762e4.html "Create a transformation flow to load data from one or more sources, apply transformations (such as a join), and output the result in a target table. You can load a full set of data from one or more sources to a target table. You can add local tables and views, Open SQL schema objects, and also remote tables located in BW Bridge spaces. You can also load delta changes (including deleted records) from one source table to a target table.") :arrow_upper_right:.

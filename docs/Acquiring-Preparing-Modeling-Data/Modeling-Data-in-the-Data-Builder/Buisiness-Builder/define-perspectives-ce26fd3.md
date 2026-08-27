@@ -119,5 +119,5 @@ The perspective can be found in the *Repository Explorer*. You can use your pers
 **Related Information**  
 
 
-[Previewing Data in Business Builder Objects](previewing-data-in-business-builder-objects-3c58d6e.md "You can check the data in your models in the data preview.")
+[Previewing Data in Business Builder Objects](previewing-data-in-business-builder-objects-3c58d6e.md "The data preview helps you to determine whether your data is correct.")
 

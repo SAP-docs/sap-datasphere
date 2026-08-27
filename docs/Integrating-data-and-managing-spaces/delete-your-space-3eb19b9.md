@@ -27,7 +27,7 @@ The *DW Space Administrator* role template, for example, grants these privileges
 > -   Export the audit log entries generated for your space \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
 
 > ### Note:  
-> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Delete Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/589fa4251db74fb7955eeee5d86fc25c.html "Delete audit logs and free up disk storage.") :arrow_upper_right: \).
+> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Monitor Read and Change Actions with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:\).
 
 
 

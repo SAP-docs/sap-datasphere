@@ -94,6 +94,9 @@ There are two ways to define resources for a custom connection type:
 
     -   *By Allowed Values* allows you to manually add the values that may be passed for this attribute. Once one or more values are entered, only these values are allowed to be passed. If no values are entered, no validation is performed and all values for the selected attribute are allowed.
 
+        > ### Note:  
+        > During data replication, if the validation of a specific attribute value in the response fails, the whole row is ignored.
+
 
 10. To add another response schema for the resource, select *New Schema* and repeat the configuration steps. A resource can contain multiple response schemas.
 

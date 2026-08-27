@@ -42,13 +42,16 @@ The following **sources** are **not** supported:
 
 -   **Delete All Before Loading** is **deactivated** by default for the load type *Initial and Delta*, and cannot be switched on. To remove existing data from the target table, go to the table editor for your target table **before** running your replication flow and choose *Delete Data From Table*. For the load type *Initial Only*, it's activated by default and cannot be switched off.
 
--   *Delta capturing* is *activated*by default and cannot be switched off.
+-   Delta capturing is activated by default. If you want to use load type Initial Only, you can switch it off.
 -   Both *Initial Only* and *Initial and Delta* load types can be used.
+
+    > ### Note:  
+    > If you have enabled *Capture Source Schema Changes*, the system detects when new nullable non-key columns are added in the source and allows you to apply them to the target without reinitializing the replication flow. Only adding columns is supported. For more information, see [Configure the Run Settings of a Replication Flow](configure-the-run-settings-of-a-replication-flow-3f5ba0c.md).
 
 -   Clamping: By default, if there are values that are too large, the replication fails and you get an error message informing you about the issue. If you don't want this, you can activate clamping for individual replication objects \(by selecting *Clamp Decimal Floating-Point Data Type* in the side panel\) or for all objects in the replication flow \(by selecting *Clamp Decimal Floating-Point Data Type* in the target settings\). If you do so, values that are too large are clamped in accordance with the maximum values for the respective target data type.
 
 
-**A target column name** can include alphanumeric characters, forward "/" and underscores \(\_\), but no special characters, and it cannot start with an underscore. If a target column name contains a special character, the system automatically replaces it with an underscore \(auto-projection\), and the prefix AUTOPREFIX\_ is added to the column name.
+**A target column name** can include alphanumeric characters, forward "/" and underscores \(\_\), but no special characters, and it cannot start with an underscore. If a target column name contains a special character or a space, the system automatically replaces it with an underscore \(auto-projection\), and the prefix AUTOPREFIX\_ is added to the column name.
 
 Columns that have the data type `decfloat16` or `decfloat34` are automatically converted to `decimal(38,6)`. You cannot add new target columns with data type `decfloat16` or `decfloat34`.
 

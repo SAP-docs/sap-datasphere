@@ -276,7 +276,7 @@ In the connections list, connections with warning messages are highlighted in ye
 In addition to working with connections in the *Connections* app, you can also:
 
 -   Read, list, validate, create, edit, and delete them using the `datasphere` command line interface \(see [Managing Connections via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/8eb811898d1049fbb426339e44a2eb70.html "You can use the datasphere command line interface to read, list, validate, create, edit, and delete connections.") :arrow_upper_right:\).
--   Read, list, validate, create, edit, and delete them using a REST API \(see [Managing Connections via the REST API](managing-connections-via-the-rest-api-5aafe32.md)\).
+-   Read, list, validate, create, edit, and delete them using a REST API \(see [Managing Connectivity via the REST API](managing-connectivity-via-the-rest-api-5aafe32.md)\).
 
 > ### Note:  
 > Connections based on custom connection types are not supported by the SAP Datasphere command line interface or the SAP Datasphere *Connections* API. You cannot list, read, create, edit, delete, or validate these connections via the command line interface or the API.

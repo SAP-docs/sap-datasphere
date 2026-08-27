@@ -15,7 +15,7 @@ Group multiple tasks into a task chain and run them manually once, or periodical
 To create task chains, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete task chains.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete task chains.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 To run and share task chains and configure email notifications, you must, in addition, have the following privileges:

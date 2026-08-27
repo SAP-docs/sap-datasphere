@@ -16,7 +16,7 @@ To create flows, you must have a scoped role that grants you access to a space w
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete flows.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete flows.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 To run and schedule flows, you must, in addition, have the following privileges:
@@ -54,7 +54,7 @@ You want to model transformation flows with tables as sources, apply various tra
 
 1.  In the side navigation area, click <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a file space \(if required\) and click *New Transformation Flow*.
 2.  On the *New Transformation Flow* screen, add a source:
-    -   One source table: drag and drop an object onto the source operator. See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add local tables \(file\) , shared local tables \(file\), local tables shared from a SAP HANA space, and shared remote tables on a Delta Share runtime.
+    -   One source table: drag and drop an object onto the source operator. See [Add a Source to a Graphical View](../add-a-source-to-a-graphical-view-1eee180.md). Note that you can only add local tables \(file\) that don't have deletion vectors enabled, shared local tables \(file\), local tables shared from a SAP HANA space, and shared remote tables on a Delta Share runtime.
 
         Certain data types that are supported in a SAP HANA Space aren't in a file space and require conversion to supported types. See [Converting Local Table Data Types from a HANA Space to a File Space](converting-local-table-data-types-from-a-hana-space-to-a-file-sp-aac37d0.md).
 
@@ -161,13 +161,14 @@ You want to model transformation flows with tables as sources, apply various tra
     > ### Note:  
     > Local tables \(file\) support a limited number of data types. See [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
-4.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow. See [Removing Duplicate Records](removing-duplicate-records-d4b2df0.md).
-5.  \[optional\] If your source is a shared table with *Delta Capture* enabled:
+4.  \[optional\] For machine learning, AI, and analytics use cases, you may need to simplify complex star-schema data models by joining tables to create a flattened view. See [Creating a Flatten Operator](creating-a-flatten-operator-34f48fa.md).
+5.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow. See [Removing Duplicate Records](removing-duplicate-records-d4b2df0.md).
+6.  \[optional\] If your source is a shared table with *Delta Capture* enabled:
     -   you can change its load type \(All Active Records or Delta Capture\) in its settings panel.
     -   if the load type is Inital and Delta, delta changes are propagated to the target table, and even to non-delta target table. See [Capturing Delta Changes in Your Local Table](capturing-delta-changes-in-your-local-table-154bdff.md).
 
-6.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. See [Creating a Python Operator](creating-a-python-operator-a747acf.md).
-7.  Add a target table. See [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
+7.  \[optional\] Add a **Python** operator to transform incoming data with a Python script and output structured data to the next operator. See [Creating a Python Operator](creating-a-python-operator-a747acf.md).
+8.  Add a target table. See [Create or Add a Target Table to a Transformation Flow](../create-or-add-a-target-table-to-a-transformation-flow-0950746.md).
 
     > ### Note:  
     > It can only be a local table \(file\).
@@ -177,8 +178,8 @@ You want to model transformation flows with tables as sources, apply various tra
     > -   Inner joins: Deleted records will not be removed from the target because the join cannot match deletion markers with records that no longer exist in the active records view.
     > -   Filtered left joins: When the active records view is on the right side \(of left join\) with NOT NULL filters applied on active records view column, deletions will not propagate if the matching record is removed from active records view.
 
-8.  \[optional\] Add incremental aggregations to the target table. It is useful for handling incremental data loads and maintaining aggregated results efficiently. See [Creating an Incremental Aggregation on a Target Table in a Transformation Flow on File](creating-an-incremental-aggregation-on-a-target-table-in-a-trans-89cf294.md).
-9.  Review the properties of your transformation flow, save, deploy, and run it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
+9.  \[optional\] Add incremental aggregations to the target table. It is useful for handling incremental data loads and maintaining aggregated results efficiently. See [Creating an Incremental Aggregation on a Target Table in a Transformation Flow on File](creating-an-incremental-aggregation-on-a-target-table-in-a-trans-89cf294.md).
+10. Review the properties of your transformation flow, save, deploy, and run it. See [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md).
 
     > ### Note:  
     > -   The transformation will be saved in the object store. While deploying, a virtual procedure will be created to enable the runtime in the file space.
@@ -187,8 +188,8 @@ You want to model transformation flows with tables as sources, apply various tra
     > -   A transformation flow run fails if it lasts for over 48 hours.
     > -   A transformation flow run fails when the source table contains columns that conflict with any of the reserved columns \(\_DRT\_STATUS, \_DRT\_MESSAGE\) of the data remediation table. Rename any conflicting columns in your source table and try again.
 
-10. You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
-11. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*, like *Simulate Run*, *Generate a SQL Analyzer Plan File*, or [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:. See [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
+11. You can share the target local table \(file\) to another space, including to a space dedicated to SAP HANA Database \(Disk and In-Memory\) storage.
+12. More flow analysis options are available in the transformation flow monitor via the *Data Integration Monitor*, like *Simulate Run*, *Generate a SQL Analyzer Plan File*, or [Set Priorities and Statement Limits for Spaces or Groups](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d66ac1efb5054068a104c4559b72d272.html "Prioritize between spaces or groups for resource consumption and set limits to the amount of memory and threads that a space or group can consume when processing statements.") :arrow_upper_right:. See [Explore Transformation Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7588192bf4cd4e3db43704239ba4d366.html "Use Run with Settings to explore graphical or SQL views and the entities they consume in a transformation flow.") :arrow_upper_right:.
 
-12. \[optional\] You can download your transformation flow on file Spark driver logs in the *Data Integration Monitor* in the flow's *Details* screen. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started. See [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
+13. \[optional\] You can download your transformation flow on file Spark driver logs in the *Data Integration Monitor* in the flow's *Details* screen. To download this file, you must have the DWC\_RUNTIME privilege added to your DW Administrator role or custom role. There are no logs to download if the run fails before the Spark driver gets started. See [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 

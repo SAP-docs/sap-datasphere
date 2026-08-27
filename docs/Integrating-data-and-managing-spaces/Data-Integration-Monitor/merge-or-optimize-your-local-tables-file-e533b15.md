@@ -101,6 +101,9 @@ If you have scheduled regular merge tasks or if you have used the *Merge Data Au
 
 While running an optimize task for your local table \(file\), you define z-order columns to use the z-order clustering technique to co-locate the data by columns. This operation does not make data-related changes to the delta table, so a read before and after this operation has the same results. The co-locality is used to reduce the amount of data that needs to be read. You can specify multiple columns for Z-ORDER BY as a comma-separated list. However, the effectiveness of the locality decreases with each additional column.
 
+> ### Caution:  
+> To edit or delete z-order columns, you must have the *Data Warehouse Data Builder* read privilege.
+
 To define Z-order columns,
 
 1.  From the *Local Tables \(file\)* Monitor, select the relevant table.

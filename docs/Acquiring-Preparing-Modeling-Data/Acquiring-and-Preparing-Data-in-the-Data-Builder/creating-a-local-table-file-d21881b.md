@@ -15,7 +15,7 @@ Create a local table \(file\) to store data in the object store. Load data to yo
 To create local tables, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
@@ -170,18 +170,6 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     <tr>
     <td valign="top">
     
-    Delta Capture
-    
-    </td>
-    <td valign="top">
-    
-    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     Status
     
     </td>
@@ -195,7 +183,17 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </tr>
     </table>
     
-3.  Based on the *Semantic Usage* of your entity, review and modify its *Columns**Attributes*, and/or *Measures*:
+3.  Review \(and update if needed\) the *Change Tracking* section of your local table \(file\):
+    -   Delta Capture: If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
+    -   Delta Capture Table: When Delta Capture is enabled, this field is added, and a default name for the delta capture table is defined \(Technical name + \_Delta\). 
+    -   Deletion Vector: If the table is not used as a flow source, you can enable deletion vectors to optimize how delete and update operations are handled in local tables \(file\). By default, deleting or updating a single row requires rewriting the entire file that contains it. With deletion vectors enabled, lightweight metadata markers are used to indicate which rows have changed. This improves replication performance and reduces storage overhead for delta capture operations. 
+
+        > ### Note:  
+        > -   Deletion vectors can be activated only in the table editor.
+        > -   You can share the local tables \(file\) with deletion vectors enabled as data products to be consumed by SAP Databricks. See [Creating and Working with Derived Data Products in SAP Databricks](https://help.sap.com/docs/business-data-cloud/sap-databricks/creating-derived-data-products-inside-sap-databricks)
+
+
+4.  Based on the *Semantic Usage* of your entity, review and modify its *Columns**Attributes*, and/or *Measures*:
 
     -   *Fact* - Review the lists of measures and attributes \(see [Create a Fact to Contain Measurable Data](../Modeling-Data-in-the-Data-Builder/create-a-fact-to-contain-measurable-data-30089bd.md)\).
     -   *Dimension* - Review the list of attributes \(see [Create a Dimension to Categorize Data](../Modeling-Data-in-the-Data-Builder/create-a-dimension-to-categorize-data-5aae0e9.md)\).
@@ -340,9 +338,9 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </tr>
     </table>
     
-4.  Create associations to other entities if needed \(see [Create an Association to Define a Semantic Relationship Between Entities](../Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
-5.  *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
-6.  *Partition Columns*- Define partitions.
+5.  Create associations to other entities if needed \(see [Create an Association to Define a Semantic Relationship Between Entities](../Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
+6.  *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
+7.  *Partition Columns*- Define partitions.
 
     Partitions for a local table \(file\) must be based on columns \(and not on range of values as for local tables stored on SAP HANA database\).There are few data types which are not supported for partitioning. The dialog will propose only columns with supported data types. For more information, on data types supported, see [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
@@ -361,13 +359,13 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
 
     For more information on partitions, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
 
-7.  *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
-8.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
+8.  *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
+9.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     > ### Note:  
     > Deployment of local tables \(file\) can take longer than a deployment of a local table.
 
     For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
-9.  Once your local table \(file\) is deployed, you can consume it or share it.
+10. Once your local table \(file\) is deployed, you can consume it or share it.
 

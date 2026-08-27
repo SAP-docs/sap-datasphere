@@ -15,7 +15,7 @@ Create a view to query sources in a powerful SQL editor. You can choose between 
 To create views, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete a graphical view.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete a graphical view.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 In addition, if you want to use AI features, they must be enabled in your tenant \(see [Enable SAP Business AI for SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/1b3fe45f38df4db1a9cda97a5a7bcdaf.html "SAP Business AI is a fully managed service by SAP that allows you to integrate artificial intelligence (AI) models in different business solutions. SAP Business AI provides a simple and easy-to-use API with various endpoints that you can use in your solution for different tasks such as text generation, summarization, language translation, creative content development. Enable SAP Business AI and Joule for SAP Datasphere to integrate AI content recommendations. This will simplify access to information, automate business processes, and generate AI content recommendations in various areas of SAP Datasphere.") :arrow_upper_right:\) and you must have the following global privilege:
@@ -58,7 +58,10 @@ ORDER BY "Gross_Sales" DESC
 >     ORDER BY "Gross_Sales" DESC LIMIT 5
 >     ```
 
-If you are not comfortable with SQL, you can still build a view in SAP Datasphere by using the Graphical View editor, which lets you compose SQL code using an intuitive graphical interface \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
+If you are not comfortable with SQL, you can:
+
+-   Instruct AI to write SQL for you \(see [Generate SQL Code with AI](generate-sql-code-with-ai-d153065.md)\).
+-   Use the graphical view editor, which lets you compose SQL code using an intuitive graphical interface \(see [Creating a Graphical View](creating-a-graphical-view-27efb47.md)\).
 
 For information about making your data accessible outside SAP Datasphere, see [Exposing Data For Consumption](Modeling-Data-in-the-Data-Builder/exposing-data-for-consumption-40ec77e.md).
 
@@ -556,6 +559,7 @@ In addition to working with views in the editor, you can also:
     Open the AI-assisted generation menu: 
 
     -   Generate Semantics - Identify the semantic usage of your entity and the semantic types of its columns \(see [Generate Semantic Information](Modeling-Data-in-the-Data-Builder/generate-semantic-information-2fc1d26.md)\).
+    -   Generate SQL - Prompt the editor to generate SQL code for you \(see [Generate SQL Code with AI](generate-sql-code-with-ai-d153065.md)\).
 
 
     

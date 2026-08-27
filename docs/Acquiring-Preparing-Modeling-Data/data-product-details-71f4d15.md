@@ -593,7 +593,7 @@ Version
 </td>
 <td valign="top">
 
-Displays version number of the data product \(API\).
+Displays the version number of the data product \(API\).
 
 </td>
 </tr>
@@ -665,16 +665,93 @@ The actions to install, uninstall, or update data products appear based on the p
 </tr>
 </table>
 
-You can select a data product's API to view its details page and learn more about it. Information is separated into the following areas:
 
--   The header section shows the version and a tag for *Personal Data*, *Sensitive Personal Data*, or both. A toolbar with available actions is also available.
 
--   The *Overview* tab shows a description of the API and a *Properties* section that includes the same high-level information found in the data product details, along with additional information such as the Open Resource Discovery \(ORD\) identifier.
+### API Details
 
-    The tab also includes a *Details* section that lists the available objects \(or entities\), their container paths, whether they contain personal data, sensitive personal data, or both, and their primary keys. If the primary key is missing, the API can't be installed. To see more details of a particular object, choose the *View Columns* link. This information includes the object's name, type, valid values, the specific columns that have personal or sensitive personal data, and more.
+You can learn more about an API by selecting it to view its details page. Information is separated into the following areas:
 
--   The *Documentation* tab provides a more detailed description of the API, links to more information on how to use it, and extensibility information.
 
+<table>
+<tr>
+<th valign="top">
+
+Section
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+Displays the version and tags for data protection and privacy. A toolbar with actions for the API is also available. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Description
+
+*Overview* \> *Description*
+
+</td>
+<td valign="top">
+
+Displays a description of the API extracted from the source system. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Properties
+
+*Overview* \> *Properties*
+
+</td>
+<td valign="top">
+
+Displays the same high-level information found in the data product details, along with additional information such as the Open Resource Discovery \(ORD\) identifier. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Details
+
+*Overview* \> *Details*
+
+</td>
+<td valign="top">
+
+Displays a list of available objects \(or entities\), their container paths, whether they contain personal data, sensitive personal data, or both, and their primary keys. If the primary key is missing, the API can't be installed. To see more details of a particular object, choose the *View Columns* link. This information includes the object's name, type, valid values, the specific columns that have personal or sensitive personal data, and more. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Documentation
+
+</td>
+<td valign="top">
+
+Provides more details about the API, including external links for more information on how to use it and information on how the API can be extended. 
+
+</td>
+</tr>
+</table>
 
 
 

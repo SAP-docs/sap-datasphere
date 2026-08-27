@@ -11,6 +11,8 @@ You can use local table \(file\) sources in a replication flow to replicate data
 -   A local table \(file\) source must already exist in your SAP Datasphere space \(see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md)\).
 -   You must have the required privileges to create and run replication flows.
 -   Only the *Initial Only* load type is supported.
+-   Local tables \(file\) that have deletion vectors cannot be added as sources for replication flows.
+
 
 
 

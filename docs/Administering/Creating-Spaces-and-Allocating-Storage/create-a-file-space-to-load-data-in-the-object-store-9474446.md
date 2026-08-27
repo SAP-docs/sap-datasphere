@@ -32,7 +32,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 > For additional information on working with data in the object store, see SAP note [3538038](https://me.sap.com/notes/3538038), SAP note [3722983](https://me.sap.com/notes/3722983) and the blog post [Sizing the SAP Datasphere Object Store](https://community.sap.com/t5/technology-blog-posts-by-sap/sizing-the-sap-datasphere-object-store/ba-p/14376790).
 
 > ### Note:  
-> You cannot create or manage a file space via the command line, add a file space to an elastic compute node, or choose a file space as a monitoring space. You cannot monitor, lock, or unlock a file space. You cannot generate time data, enable audit logging, create database users, or associate HDI containers in a file space.
+> You cannot create or manage a file space via the command line, add a file space to an elastic compute node, or choose a file space as a monitoring space. You cannot lock, or unlock a file space. You cannot generate time data, enable audit logging, create database users, or associate HDI containers in a file space.
 > 
 > You can create up to 20 file spaces in a tenant.
 

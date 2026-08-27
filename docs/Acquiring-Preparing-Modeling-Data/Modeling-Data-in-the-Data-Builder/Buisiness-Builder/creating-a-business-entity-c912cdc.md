@@ -15,8 +15,8 @@ You use business entities to build your consumption model for analysis and repor
 To create business entities, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit, and delete *Business Builder* business entities.
 -   *Data Warehouse Data Builder* \(`-R------`\) - To open *Data Builder* objects for linking to business entities.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 

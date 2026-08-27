@@ -35,8 +35,6 @@ In this case, the three spaces are created in SAP Datasphere for each instance o
 
 In the following example, we have two instances of one intelligent content, installed for two source systems, resulting in separate spaces, where each model space identifies the source tenant providing the data by system alias.
 
-![](images/Install_Intelligent_Content_for_2_or_More_Source_Systems_d1e8d3d.png)
-
 
 
 ### Example: Installing Different Intelligent Content on a Single Source System
@@ -51,7 +49,7 @@ In the following example, we have two intelligent contents installed on top of t
 
 ### Example: Installing Intelligent Content Combining Data Products from Multiple Systems 
 
-You can install intelligent content that combines data products coming from multiple source systems, such as from both SAP S/4HANA and SAP SuccessFactors. To install this intelligent content, the relevant source systems must be included in a single formation.
+You can install intelligent content that combines data products coming from multiple source systems, such as from both SAP S/4HANA and SAP SuccessFactors. To install this intelligent content, the relevant source systems must be included in the same formation.
 
 > ### Note:  
 > Content of this type cannot combine data products coming from different instances of the same source system, such as SAP S/4HANA EU and SAP S/4HANA US.

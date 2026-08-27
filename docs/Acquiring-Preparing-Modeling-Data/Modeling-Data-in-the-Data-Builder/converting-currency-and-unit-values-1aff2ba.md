@@ -29,6 +29,11 @@ Once the `TCUR*` views are available in your space, you can use them to do curre
 -   SQL views - See [Example: Converting Currency Values with CONVERT\_CURRENCY](../sql-functions-reference-6d624a1.md#loio6d624a1956234d818d0bfdc77cbd0e09__section_example_currency).
 -   Analytic models - See [Create a Conversion Measure for Currencies](create-a-conversion-measure-for-currencies-ec00efb.md).
 -   Business Builder objects - See [Use Currency Conversion](Buisiness-Builder/use-currency-conversion-1ba4554.md).
+-   SAP Analytics Cloud planning models - See [Reuse SAP Datasphere Currency Rate Views in Seamless Planning Models](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/b103a251020746f786ec0860fa51a63a/9f9d4169517c4a4397b8b6431fe47e43.html#reuse-sap-datasphere-currency-rate-views-in-seamless-planning-models) in the *SAP Analytics Cloud* documentation.
+
+    > ### Note:  
+    > The `TCUR*` views must be created in or shared to the space in which the planning model is saved and must be exposed for consumption \(see [Exposing Data For Consumption](exposing-data-for-consumption-40ec77e.md)\).
+
 
 You should always identify columns containing currency values and codes with the following semantic types:
 

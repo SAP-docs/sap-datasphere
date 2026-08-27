@@ -16,7 +16,7 @@ To create flows, you must have a scoped role that grants you access to a space w
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete flows.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete flows.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 To run and schedule flows, you must, in addition, have the following privileges:

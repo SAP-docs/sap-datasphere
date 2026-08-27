@@ -118,7 +118,12 @@ Description
 </td>
 <td valign="top">
 
-You want to delete all records contained in the local table. Note that in case of tables with delta capture enabled, all records will be marked as deleted but will not be deleted physically. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right: 
+You want to delete all records contained in the local table. Note that in case of tables with delta capture enabled, all records will be marked as deleted but will not be deleted physically. For more information, see [Capturing Delta Changes in Your Local Table](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/154bdffb35814d5481d1f6de143a6b9e.html "Enable Delta Capture in your local table to automatically track all inserts, updates and deletions of its records via Change Date and Change Type columns. You can use replication flows, transformation flows, and transformation flows on file to write to these tables and to read from them, extracting only delta changes for each run.") :arrow_upper_right:
+
+> ### Note:  
+> To physically delete all records from a delta-capture-enabled table \(bypassing the logical delete behavior\), go to the Table Editor. See [Load or Delete Local Table Data](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/870401f211f94132909bd9f2fafd91b2.html "You can upload data from a CSV file to a local table. You can also delete records from your table.") :arrow_upper_right:
+
+
 
 </td>
 </tr>

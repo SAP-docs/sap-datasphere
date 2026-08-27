@@ -626,8 +626,8 @@ File Space / Local Tables \(File\)
 </td>
 <td valign="top">
 
--   Delta Capture Off: `------`
--   Delta Capture On: `I-ID-D`
+-   Delta Capture Off: `I-----`
+-   Delta Capture On: `I-ID--`
 
 
 

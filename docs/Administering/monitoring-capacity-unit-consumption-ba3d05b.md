@@ -23,6 +23,8 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 The *Capacities Monitoring* tool enables users to define a custom date range to analyze capacity unit consumption over a selected period. It provides insights into monthly and daily capacity unit consumption, enabling users to track usage relative to their subscription and download detailed hourly data. These insights support optimized resource allocation and efficient subscription management.
 
+The *Capacity Units* tab provides a detailed breakdown of capacity unit consumption by resource type. Users can view consumption cards and charts for supported services, helping identify which resources contribute most to overall capacity usage.
+
 On the *Spaces* tab, users can view and troubleshoot consumption spikes by identifying which spaces contribute to increased usage. It provides a breakdown by space for Premium Outbound Integration, object store usage, and total capacity unit consumption per space.
 
 
@@ -31,9 +33,80 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
 
 1.  From the side navigation menu, click :desktop_computer: *\(Monitoring\)* *\>* <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)* .
 
-    The *Capacities Monitoring* app is shown.
+    The *Capacities Monitoring* app is shown, including summary metrics, resource consumption information, and detailed usage analysis views..
 
-2.  To view capacity unit consumption and other data per space, click the *Spaces* tab.
+2.  To view capacity unit consumption by resource type, click the *Capacity Units* tab. The tab displays resource-specific consumption cards and charts that help identify how capacity units are distributed across services and resources.
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Element
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Resource Cards
+    
+    </td>
+    <td valign="top">
+    
+    Shows total capacity unit consumption for individual resources during the selected time period.
+
+    > ### Note:  
+    > For the *Total CU Consumption: Relative to Your Subscription* card, the consumption percentage is calculated by dividing the total CUs consumed during the selected date range by the monthly CU entitlement from your subscription. Because the entitlement represents a single month of capacity, percentages may exceed 100% when viewing periods longer than one month.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Consumption Charts
+    
+    </td>
+    <td valign="top">
+    
+    Shows daily capacity unit consumption trends for each supported resource.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Chart Views
+    
+    </td>
+    <td valign="top">
+    
+    Switches between available consumption visualizations such as daily and consolidated consumption views.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Chart Display
+    
+    </td>
+    <td valign="top">
+    
+    Show a graph chart by clicking <span class="SAP-icons-V5"></span>or show a table by clicking <span class="SAP-icons-V5"></span>.
+    
+    </td>
+    </tr>
+    </table>
+    
+3.  To view capacity unit consumption and other data per space, click the *Spaces* tab.
 
 
     <table>
@@ -123,11 +196,11 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     </tr>
     </table>
     
-3.  To download a CSV file of the consumption, click <span class="SAP-icons-V5"></span>*Download Capacity Metrics as CSV*.
+4.  To download a CSV file of the consumption, click <span class="SAP-icons-V5"></span>*Download Capacity Metrics as CSV*.
 
-4.  Click <span class="SAP-icons-V5"></span>and select the beginning and end dates for the report.
+5.  Click <span class="SAP-icons-V5"></span>and select the beginning and end dates for the report.
 
-5.  Click *Download*.
+6.  Click *Download*.
 
     The following table explains the information is in each column.
 

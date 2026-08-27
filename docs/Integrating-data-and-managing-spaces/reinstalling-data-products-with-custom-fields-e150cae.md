@@ -19,7 +19,7 @@ To reinstall a data product, you must have:
 -   A scoped role that grants you access to the space or spaces where you can reinstall data products, with the following privileges:
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
-    -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+    -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
     -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 
 

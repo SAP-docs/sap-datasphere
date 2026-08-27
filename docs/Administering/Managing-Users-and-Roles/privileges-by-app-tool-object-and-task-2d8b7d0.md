@@ -409,7 +409,7 @@ To search for and evaluate objects in the *Data Products* collection, you must h
 -   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges:
     -   *Spaces* \(`–R–––--`\) - To access a space.
     -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
-    -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+    -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
     -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 
 
@@ -526,10 +526,10 @@ To import objects with semantics from SAP S/4HANA, SAP BW∕4HANA, and SAP BW Br
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
--   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit, and delete *Business Builder* business entities.
+-   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit, and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -653,8 +653,8 @@ See [Creating a Business Entity](https://help.sap.com/viewer/c8a54ee704e94e15926
 To create business entities, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit, and delete *Business Builder* business entities.
 -   *Data Warehouse Data Builder* \(`-R------`\) - To open *Data Builder* objects for linking to business entities.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
@@ -675,8 +675,8 @@ See [Creating a Fact Model](https://help.sap.com/viewer/c8a54ee704e94e1592655129
 To create fact models, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Fact Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* fact models.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Fact Model* \(`CRUD----`\) - To create, edit, and delete *Business Builder* fact models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -696,8 +696,8 @@ See [Creating a Consumption Model](https://help.sap.com/viewer/c8a54ee704e94e159
 To create consumption models, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit, and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -717,9 +717,9 @@ See [Authorization Scenario](https://help.sap.com/viewer/c8a54ee704e94e159265512
 To create authorization scenarios, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Authorization Scenario* \(`CRUD----`\) - To create, edit and delete *Business Builder* authorization scenarios.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Authorization Scenario* \(`CRUD----`\) - To create, edit, and delete *Business Builder* authorization scenarios.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -764,10 +764,10 @@ To import objects with semantics from SAP S/4HANA, SAP BW∕4HANA, and SAP BW Br
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
--   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit and delete *Business Builder* objects.
--   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit and delete *Business Builder* business entities.
--   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit and delete *Business Builder* consumption models.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
+-   *Data Warehouse Business Builder* \(`CRUD----`\) - To create, edit, and delete *Business Builder* objects.
+-   *Data Warehouse Business Entity* \(`CRUD----`\) - To create, edit, and delete *Business Builder* business entities.
+-   *Data Warehouse Consumption Model* \(`CRUD----`\) - To create, edit, and delete *Business Builder* consumption models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -788,7 +788,7 @@ To import tables and views from a connection, Open SQL schema, HDI container or 
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To import remote tables.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -808,7 +808,7 @@ See [Creating a Local Table](https://help.sap.com/viewer/c8a54ee704e94e159265512
 To create local tables, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -828,7 +828,7 @@ See [Creating a Local Table from a CSV File](https://help.sap.com/viewer/c8a54ee
 To create local tables from a `.csv` file, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Data Warehouse Consumption* \(`-RU-----`\) - To upload data in a local table.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
@@ -870,7 +870,7 @@ See [Creating a Graphical View](https://help.sap.com/viewer/c8a54ee704e94e159265
 To create views, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete a graphical view.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete a graphical view.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 In addition, if you want to use AI features, they must be enabled in your tenant \(see [Enable SAP Business AI for SAP Datasphere](../Creating-and-Configuring-Your-Tenant/enable-sap-business-ai-for-sap-datasphere-1b3fe45.md)\) and you must have the following global privilege:
@@ -894,7 +894,7 @@ See [Creating an Entity-Relationship Model](https://help.sap.com/viewer/c8a54ee7
 To create E/R models, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete E/R models.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete E/R models.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -914,7 +914,7 @@ See [Creating an Analytic Model](https://help.sap.com/viewer/c8a54ee704e94e15926
 To create analytic models, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
@@ -935,7 +935,7 @@ To create flows, you must have a scoped role that grants you access to a space w
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete flows.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete flows.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 To run and schedule flows, you must, in addition, have the following privileges:
@@ -988,7 +988,7 @@ See [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e1592655129
 To create task chains, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete task chains.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete task chains.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 To run and share task chains and configure email notifications, you must, in addition, have the following privileges:
@@ -1327,6 +1327,7 @@ To monitor the storage consumption of your space, you must have a scoped role th
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-R------`\) - To open your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
+-   *Data Warehouse Data Integration* \(`-R------`\) - \[for file spaces\] To view data integration task logs.
 
 The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

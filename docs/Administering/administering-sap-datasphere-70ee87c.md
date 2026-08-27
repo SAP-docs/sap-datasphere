@@ -84,6 +84,7 @@ You must assign one or more roles to each of your users via scoped roles and glo
         -   *DW Scoped Consumer* - This predefined scoped role is based on the DW Consumer role and inherits its privileges and permissions.
 
 
+    -   *DW Metadata Graph Consumer* - Can view the metadata knowledge graph.
 
 -   Roles providing privileges to work in the SAP Datasphere catalog:
     -   **Catalog Administrator** - Can set up and implement data governance using the catalog. This includes connecting the catalog to source systems for extracting metadata, building business glossaries, creating tags for classification, and publishing enriched catalog assets so all catalog users can find and use them. Must be used in combination with another role such as *DW Viewer* or *DW Modeler* for the user to have access to SAP Datasphere.

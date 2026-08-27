@@ -111,7 +111,7 @@ Choose from the following:
 -   *None* - \[default\] No semantic meaning.
 -   *Currency Code* - The column specifies the currency for one or more measures with the semantic type *Amount with Currency*. Attributes with this semantic type can be selected in the *Measures* list *Unit Column*.
 -   *Unit of Measure* - The column specifies the unit for one or more measures with the semantic type *Quantity with Unit*. Attributes with this semantic type can be selected in the *Measures* list *Unit Column*.
--   *Text* - The column contains text. Attributes with this semantic type can be selected in the *Text / Association* field of other attributes.
+-   *Text* - The column contains text. Attributes with this semantic type can be selected in the *Text / Association* field of other attributes or as *Fallback Text* for a text association.
 -   *Business Date...*, *Fiscal...*, *Calendar...*, *System Date...* - The column contains a date or fiscal or calendar period.
 -   *Language* - The column contains a language code.
 -   *Geolocation...* - The column contains geo data.

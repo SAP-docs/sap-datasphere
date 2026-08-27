@@ -1,27 +1,37 @@
 <!-- loio5aafe32418b14f7e99528b49f48bd3ac -->
 
-# Managing Connections via the REST API
+# Managing Connectivity via the REST API
 
-You can manage connections via the *Connections* REST API. Creating and editing connections via the API is supported for SAP SuccessFactors connections only.
+You can manage TLS server certificates and connections via the *Certificates* and *Connections* REST APIs. Creating and editing connections via the API is supported for SAP SuccessFactors connections only.
 
 This topic contains the following sections:
 
--   [Prerequisites](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites)
--   [Introduction to the Connections REST APIs](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
--   [Obtain a CSRF Token](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_CSRF_Token)
--   [List Connections in a Space](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_connections)
--   [Read Connection Details](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_read_connections)
--   [Create a Connection to SAP SuccessFactors](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections)
--   [Validate Connections](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_validate_connections)
--   [Edit a Connection to SAP SuccessFactors](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections)
--   [Delete Connections](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_connections)
--   [API Rate Limiting](managing-connections-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_rate_limiting)
+-   [Prerequisites](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites)
+-   [Introduction to the Connectivity REST APIs](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction)
+-   [Log in with an OAuth Client](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_OAuth_login)
+-   [Obtain a CSRF Token](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_CSRF_Token)
+-   [List TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_certificates)
+-   [Upload TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_upload_certificates)
+-   [Delete TLS Server Certificates](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_certificates)
+-   [List Connections in a Space](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_connections)
+-   [Read Connection Details](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_read_connections)
+-   [Create a Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_create_connections)
+-   [Validate Connections](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_validate_connections)
+-   [Edit a Connection to SAP SuccessFactors](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_edit_connections)
+-   [Delete Connections](managing-connectivity-via-the-rest-api-5aafe32.md#loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_connections)
 
 
 
 <a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_prerequisites"/>
 
 ## Prerequisites
+
+To manage certificates, you must have a global role that grants you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
+
+The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 To create, edit, validate, and delete connections, you must have a scoped role that grants you access to a space with the following privileges:
 
@@ -80,7 +90,16 @@ You must, in addition:
 
 <a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_introduction"/>
 
-## Introduction to the Connections REST APIs
+## Introduction to the Connectivity REST APIs
+
+SAP Datasphere exposes REST APIs that allow you to programmatically manage TLS server certificates and connections using dedicated endpoints.
+
+Using the **Certificates API**, you can perform the following actions:
+
+-   List TLS server certificates
+
+-   Upload and delete TLS server certificates
+
 
 Using the **Connections API**, you can perform the following actions:
 
@@ -96,7 +115,26 @@ Using the **Connections API**, you can perform the following actions:
 > ### Note:  
 > Connections based on custom connection types are not supported by the SAP Datasphere *Connections* API. You cannot list, read, create, edit, delete, or validate these connections via the API.
 
-The API specification is available at the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
+The API specifications are available at the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
+
+
+
+<a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_OAuth_login"/>
+
+## Log in with an OAuth Client
+
+With the OAuth Client created in your SAP Datasphere tenant, your client, tool, or application will be able to authenticate against the system’s OAuth service and obtain authorization to authenticate against the API.
+
+To obtain an OAuth access token, send a GET request to one of the API endpoints \(see below\) including <code>Authorization: Auth Type <i class="varname">&lt;OAuth 2.0&gt;</i></code> and passing the *<client ID\>*, *<secret\>*, *<authorization URL\>*, and *<token URL\>* values.
+
+You must pass the access token in the `Authorization` header of all requests that you make to the API.
+
+Example syntax of the GET request:
+
+> ### Sample Code:  
+> ```
+> GET https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+> ```
 
 
 
@@ -114,8 +152,50 @@ Example syntax of the GET request:
 
 > ### Sample Code:  
 > ```
-> GET https://<tenant_url>/api/v1/datasphere/spaces/<space_id>/connections
+> GET https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
 > ```
+
+
+
+<a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_list_certificates"/>
+
+## List TLS Server Certificates
+
+To retrieve a list of TLS server certificates available in the tenant, use the `certificates` request and enter:
+
+```
+GET https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+```
+
+
+
+<a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_upload_certificates"/>
+
+## Upload TLS Server Certificates
+
+To upload a TLS server certificate, use the `certificates` request and enter:
+
+```
+POST https://<tenant_url>/api/v1/datasphere/configuration/security/certificates
+```
+
+> ### Note:  
+> The file that you upload must have a supported file extension: .pem \(privacy-enhanced mail\), .crt, or .cer.
+
+
+
+<a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_REST_API_delete_certificates"/>
+
+## Delete TLS Server Certificates
+
+To delete a TLS server certificate from the tenant, use the `certificates` request and enter:
+
+```
+DELETE https://<tenant_url>/api/v1/datasphere/configuration/security/certificates/<fingerprint>
+```
+
+> ### Note:  
+> You can retrieve the fingerprint from the list of certificates.
 
 
 
@@ -555,19 +635,4 @@ To delete a connection from a space, use the `connections` request and enter:
 ```
 DELETE https://<tenant_url>/api/v1/datasphere/spaces/<spaceId>/connections/<connection_technical_name>
 ```
-
-
-
-<a name="loio5aafe32418b14f7e99528b49f48bd3ac__section_rate_limiting"/>
-
-## API Rate Limiting
-
-Authenticated requests are associated either with the authenticated username, the OAuth client ID, or the tenant ID. Unauthenticated requests are associated with the originating IP address, and not the user.
-
-Requests are limited to approximately 300 per user per minute \(25 per user per minute for the *Connections* and *Certificates* APIs\). If you exceed the limit, you will receive the `HTTP 429 Too Many Requests` response status code and can review the following request response headers for further information:
-
--   `X-Ratelimit-Limit` - Rate limit per user per minute.
--   `X-Ratelimit-Remaining` - Remaining number of requests for the current timeframe for the current user.
--   `X-Ratelimit-Reset` - Time in seconds until the rate limit is reset to the defined limit.
--   `Retry-After` - Time in seconds the user agent should wait before making a follow-up request.
 

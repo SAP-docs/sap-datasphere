@@ -485,17 +485,17 @@ Create a SAP BW bridge tenant.
 <tr>
 <td valign="top">
 
-*Business Data Products*
+*Workload Management*
 
 </td>
 <td valign="top">
 
-Select spaces to which SAP Business Data Cloud data products from an activated data package can be installed.
+Set a priority for a particular space when querying the database and set limits to the amount of memory and threads that the space can consume.
 
 </td>
 <td valign="top">
 
-[Authorize Spaces to Install SAP Business Data Cloud Data Products](Preparing-Connectivity/authorize-spaces-to-install-sap-business-data-cloud-data-products-67ec785.md)
+[Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md)
 
 </td>
 </tr>
@@ -519,34 +519,17 @@ Enable Artificial Intelligence services in SAP Datasphere.
 <tr>
 <td valign="top">
 
-*System Information*
+*Instance Mapping*
 
 </td>
 <td valign="top">
 
-Add a visual tenant type indicator to show all users which system they are using, for example a test or production system.
+Map your tenant to your SAP Business Technology Platform account.
 
 </td>
 <td valign="top">
 
-[Display Your System Information](Creating-and-Configuring-Your-Tenant/display-your-system-information-6bdd798.md)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Workload Management*
-
-</td>
-<td valign="top">
-
-Set a priority for a particular space when querying the database and set limits to the amount of memory and threads that the space can consume.
-
-</td>
-<td valign="top">
-
-[Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md)
+[Enable SAP HANA for SQL Data Warehousing on Your SAP Datasphere Tenant](Creating-and-Configuring-Your-Tenant/enable-sap-hana-for-sql-data-warehousing-on-your-sap-datasphere-tenant-e9a2878.md)
 
 </td>
 </tr>
@@ -728,6 +711,23 @@ Make sure that users are notified appropriately about issues in the tenant.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Default Appearance*
+
+</td>
+<td valign="top">
+
+Add a visual tenant type indicator to show all users which system they are using, for example a test or production system.
+
+</td>
+<td valign="top">
+
+[Display Your System Information](Creating-and-Configuring-Your-Tenant/display-your-system-information-6bdd798.md)
+
+</td>
+</tr>
 </table>
 
 
@@ -744,5 +744,5 @@ From the top-right corner of the shell bar, every user can view information abou
 -   *Database*: Displays the id of the SAP Datasphere run-time database.
 -   *Platform Version*: Displays the version of the SAP Analytics Cloud components used in SAP Datasphere.
 
-Users with an administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](Preparing-Connectivity/obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)\). Administrators can also upgrade their SAP HANA database patch version \(see [Apply a Patch Upgrade to Your SAP HANA Database](Creating-and-Configuring-Your-Tenant/apply-a-patch-upgrade-to-your-sap-hana-database-489dc3b.md)\).
+Users with an administrator role can open a *More* section to find more details. They can find outbound and database IP addresses that might be required for allowlists in source systems or databases of SAP Datasphere for example \(see [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](Preparing-Connectivity/obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)\). Administrators can also upgrade their SAP HANA database patch version \(see [Apply a Patch Upgrade to Your SAP HANA Database](Creating-and-Configuring-Your-Tenant/apply-a-patch-upgrade-to-your-sap-hana-database-489dc3b.md)\) and manually restart the SAP HANA database if it is down \(see [Restart Your SAP HANA Database](Creating-and-Configuring-Your-Tenant/restart-your-sap-hana-database-9e7a761.md)\).
 

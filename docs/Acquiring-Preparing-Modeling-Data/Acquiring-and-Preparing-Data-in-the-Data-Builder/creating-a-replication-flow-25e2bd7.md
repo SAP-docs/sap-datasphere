@@ -16,7 +16,7 @@ To create flows, you must have a scoped role that grants you access to a space w
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete flows.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete flows.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 To run and schedule flows, you must, in addition, have the following privileges:
@@ -39,8 +39,6 @@ For a full list of connection types that can be used as sources and targets, see
 You can use replication flows to copy data from the following source objects from ABAP sources:
 
 -   CDS views \(in ABAP-based SAP systems\) that are enabled for extraction.
-
--   Objects from ODP providers, such as extractors or SAP BW artifacts \(from any SAP system that is based on SAP NetWeaver and has a suitable version of the DMIS add-on, see SAP Note [3412110](https://me.sap.com/notes/3412110)\).
 
 -   Tables that have a primary key.
 

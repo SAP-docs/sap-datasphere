@@ -10,7 +10,6 @@ This topic contains the following sections:
 -   [Introduction to the Tasks API](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__intro)
 -   [Task Chains](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__run)
 -   [Logs](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__logs)
--   [API Rate Limiting](managing-tasks-via-the-rest-api-274f273.md#loio274f2736465c4c48a091c675880502a2__section_rate_limiting)
 
 
 
@@ -444,19 +443,4 @@ Example:
 >   }
 > ]
 > ```
-
-
-
-<a name="loio274f2736465c4c48a091c675880502a2__section_rate_limiting"/>
-
-## API Rate Limiting
-
-Authenticated requests are associated either with the authenticated username, the OAuth client ID, or the tenant ID. Unauthenticated requests are associated with the originating IP address, and not the user.
-
-Requests are limited to approximately 300 per user per minute \(25 per user per minute for the *Connections* and *Certificates* APIs\). If you exceed the limit, you will receive the `HTTP 429 Too Many Requests` response status code and can review the following request response headers for further information:
-
--   `X-Ratelimit-Limit` - Rate limit per user per minute.
--   `X-Ratelimit-Remaining` - Remaining number of requests for the current timeframe for the current user.
--   `X-Ratelimit-Reset` - Time in seconds until the rate limit is reset to the defined limit.
--   `Retry-After` - Time in seconds the user agent should wait before making a follow-up request.
 

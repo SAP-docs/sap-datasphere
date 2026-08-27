@@ -15,7 +15,7 @@ Create a table and define columns to receive data. You can add data from a flow 
 To create local tables, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 
 The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
@@ -63,31 +63,24 @@ In addition to working with tables in the editor, you can also:
     <tr>
     <td valign="top">
     
-    Business Name 
+    Business Name
     
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Technical Name 
+    Technical Name
     
     </td>
     <td valign="top">
     
     Displays the name used in scripts and code, synchronized by default with the *Business Name*.
-
-    To override the default technical name, enter a new one in the field. Technical names can contain only alphanumeric characters and underscores.
-
-    > ### Note:  
-    > Once the object is saved, the technical name can no longer be modified.
-
-
     
     </td>
     </tr>
@@ -99,7 +92,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    Select the package to which the object belongs. 
+    Select the package to which the object belongs.
 
     Packages are used to group related objects in order to facilitate their transport between tenants.
 
@@ -118,7 +111,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    Select the way your entity should be used for data modeling purposes. 
+    Select the way your entity should be used for data modeling purposes.
 
     Choose from the following:
 
@@ -142,7 +135,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[dimensions only\] Select whether your dimension is *Standard* or *Fiscal Time*. 
+    \[dimensions only\] Select whether your dimension is *Standard* or *Fiscal Time*.
 
     For *Fiscal Time* dimensions, see [Create a Fiscal Time Dimension](../Modeling-Data-in-the-Data-Builder/create-a-fiscal-time-dimension-24248ab.md).
     
@@ -172,25 +165,11 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[read-only\] Displays the table storage.
+    \[read-only\] Displays the table storage. 
 
     For local tables created in a space with SAP HANA Cloud, SAP HANA database storage the values can be "Disk" or "In-Memory". 
 
     For local tables created in a space with SAP HANA Cloud data lake storage, the value is "File".
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Delta Capture
-    
-    </td>
-    <td valign="top">
-    
-    If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
     
     </td>
     </tr>
@@ -214,7 +193,7 @@ In addition to working with tables in the editor, you can also:
     </td>
     <td valign="top">
     
-    \[read-only\] Displays the deployment and error status of the object. 
+    \[read-only\] Displays the deployment and error status of the object.
 
     For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
     
@@ -222,7 +201,12 @@ In addition to working with tables in the editor, you can also:
     </tr>
     </table>
     
-3.  Based on the *Semantic Usage* of your entity, review and modify its *Columns*, *Attributes*, and/or *Measures*:
+3.  Review \(and update if needed\) the *Change Tracking* section of your local table \(file\):
+
+    -   Delta Capture: If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
+    -   Delta Capture Table: When Delta Capture is enabled, this field is added, and a default name for the delta capture table is defined \(Technical name + \_Delta\). 
+
+4.  Based on the *Semantic Usage* of your entity, review and modify its *Columns*, *Attributes*, and/or *Measures*:
 
     -   *Fact* - Review the lists of measures and attributes \(see [Create a Fact to Contain Measurable Data](../Modeling-Data-in-the-Data-Builder/create-a-fact-to-contain-measurable-data-30089bd.md)\).
     -   *Dimension* - Review the list of attributes \(see [Create a Dimension to Categorize Data](../Modeling-Data-in-the-Data-Builder/create-a-dimension-to-categorize-data-5aae0e9.md)\).
@@ -235,18 +219,18 @@ In addition to working with tables in the editor, you can also:
     > ### Note:  
     > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
 
-4.  Complete or consult other sections as appropriate:
+5.  Complete or consult other sections as appropriate:
 
     -   *Associations* - Create associations to other entities \(see [Create an Association to Define a Semantic Relationship Between Entities](../Modeling-Data-in-the-Data-Builder/create-an-association-to-define-a-semantic-relationship-between-entities-66c6998.md)\).
     -   *Business Purpose* - Provide a description, purpose, contacts, and tags to help other users understand your entity.
     -   *Partitions*- Define partitions for your local table. For more information, see [Partitioning Local Tables](partitioning-local-tables-03191f3.md).
     -   *Dependent Objects*- If your entity is used as a source or a target \(for example, table with delta capture enabled\) or as association target for other entities, then they are listed here. For more information, see [Review the Objects That Depend on Your Table or View](../review-the-objects-that-depend-on-your-table-or-view-ecac5fd.md).
 
-5.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
+6.  Click <span class="FPA-icons-V3"></span> \(Save\)** \> *Save* to save your entity or click <span class="SAP-icons-V5"></span> \(Deploy\) to save and deploy it immediately.
 
     For more information, see [Saving and Deploying Objects](../saving-and-deploying-objects-7c0b560.md).
 
-6.  Once your table is deployed, you can:
+7.  Once your table is deployed, you can:
 
     -   Import data from a CSV file or delete all table data \(see [Load or Delete Local Table Data](load-or-delete-local-table-data-870401f.md)\).
     -   Manually add, edit, duplicate, or delete individual records \(see [Maintain Local Table Data](maintain-local-table-data-4bd5e64.md)\).
@@ -255,7 +239,7 @@ In addition to working with tables in the editor, you can also:
         \(see [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md)\).
 
 
-7.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
+8.  The tools in the editor toolbar help you work with your object throughout its lifecycle: 
 
 
     <table>

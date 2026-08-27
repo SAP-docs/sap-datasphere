@@ -75,7 +75,7 @@
     -   [Validate a Connection](Integrating-Data-Via-Connections/validate-a-connection-99bd229.md)
     -   [Delete a Connection](Integrating-Data-Via-Connections/delete-a-connection-e90c290.md)
     -   [Pause Real-Time Replication for a Connection Using SAP HANA Smart Data Integration](Integrating-Data-Via-Connections/pause-real-time-replication-for-a-connection-using-sap-hana-smart-data-integrati-a11f244.md)
-    -   [Managing Connections via the REST API](Integrating-Data-Via-Connections/managing-connections-via-the-rest-api-5aafe32.md)
+    -   [Managing Connectivity via the REST API](Integrating-Data-Via-Connections/managing-connectivity-via-the-rest-api-5aafe32.md)
 -   [Integrating Data from SAP BW](integrating-data-from-sap-bw-c07d800.md)
 -   [Integrating Data via Database Users/Open SQL Schemas](Integrating-Data-Via-Database-Users/Open-SQL-Schema/integrating-data-via-database-users-open-sql-schemas-3de55a7.md)
     -   [Create a Database User](Integrating-Data-Via-Database-Users/Open-SQL-Schema/create-a-database-user-798e3fd.md)

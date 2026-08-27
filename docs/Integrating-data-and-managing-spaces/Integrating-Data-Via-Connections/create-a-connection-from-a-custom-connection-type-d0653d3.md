@@ -136,9 +136,11 @@ In addition, if you want to create and use a connection based on a custom connec
     The technical name can only contain alphanumeric characters and underscores \(\_\). It cannot start or end with underscore \(\_\). The name must be unique within the space.
 
     > ### Note:  
-    > The system generates target object \(table\) names in a replication flow using the format <code><i class="varname">&lt;custom_connection_technical_name&gt;</i>.<i class="varname">&lt;action_technical_name&gt;</i>.<i class="varname">&lt;entity_name&gt;</i></code>. The maximum total length is 100 characters: 15 for connection, 45 for action, and 40 for entity. If a component name exceeds its character limit, the system truncates it. This truncation can create duplicate target object names, causing your replication flow deployment to fail.
+    > The system generates target object \(table\) names in a replication flow using the format <code><i class="varname">&lt;custom_connection_technical_name&gt;</i>_<i class="varname">&lt;action_technical_name&gt;</i>_<i class="varname">&lt;entity_name&gt;</i></code>. The maximum total length is 100 characters: 15 for connection, 45 for action, and 40 for entity. If a component name exceeds its character limit, the system truncates it. This truncation can create duplicate target object names, causing your replication flow deployment to fail.
     > 
     > You cannot rename the target object or map to an existing target object. To avoid duplicates, choose your connection, action, and entity names carefully.
+    > 
+    > Note that prior to version 2026.18, replication flow target table names were generated with dots \(.\) instead of underscores \(\_\). If your replication flow returns errors related to the target table name, see SAP Note [3794129](https://me.sap.com/notes/3794129).
 
     > ### Note:  
     > Once the object is saved, the technical name can no longer be modified.

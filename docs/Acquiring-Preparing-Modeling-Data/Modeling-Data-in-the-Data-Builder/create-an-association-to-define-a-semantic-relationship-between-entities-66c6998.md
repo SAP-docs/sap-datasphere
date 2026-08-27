@@ -123,7 +123,12 @@ For information about text entities, see [Create a Text Entity for Attribute Tra
     > 
     > When you have defined a compound key for a dimension, you must map all key columns to the text entity. You can only provide translations for the representative key column. Other key columns cannot be translated. See [Compound Keys and Representative Keys](set-key-columns-to-uniquely-identify-records-d9ef2c9.md#loiod9ef2c91f6d647e584bad51999e441cd__section_compound_keys).
 
-5.  Click *< \(Back\)* in the table editor \(or use the breadcrumbs in the side panel\) to return to the list of associations, where the new association now appears. 
+5.  \[optional\] Select a column from the fact or dimension with a semantic type of *Text* to provide *Fallback Text* in the event that no translation is available for the selected record/language in the text entity.
+
+    > ### Note:  
+    > Each *Text* column can only be used once, either selected directly in the *Text / Association* field of another column or as the *Fallback Text* for a text association.
+
+6.  Click *< \(Back\)* in the table editor \(or use the breadcrumbs in the side panel\) to return to the list of associations, where the new association now appears. 
 
     The icon <span class="FPA-icons-V3"></span> in the list of attributes signals that an attribute is mapped to a text entity.
 

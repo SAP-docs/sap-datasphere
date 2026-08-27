@@ -95,6 +95,18 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *AI-Assisted Modeling - AI-Enhanced SQL View Generation*
+    
+    </td>
+    <td valign="top">
+    
+    Generate SQL code. See [Generate SQL Code with AI](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1530656d42f44f68b6265666ec35531.html "Use the Generate SQL command and prompt SAP Datasphere to generate code for your SQL views. You can create a view from scratch or modify existing SQL code.") :arrow_upper_right:.
+    
+    </td>
+    </tr>
     </table>
     
 4.  Click *Save*.

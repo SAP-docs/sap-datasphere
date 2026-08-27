@@ -32,10 +32,6 @@ Run tasks in a task chain that use a REST-based API to access external systems.
 
 -   Following execution of an API task in a task chain, you can monitor details of the execution of an API task in the task chain’s Data Integration monitor, the same as for other objects in a task chain.
 
-    > ### Note:  
-    > API tasks do not currently provide parameter support or allow the retrieval of information out of an external system and transport into another task in a chain.
-
-
 
 
 ## Procedure
@@ -67,15 +63,26 @@ Run tasks in a task chain that use a REST-based API to access external systems.
         > ### Note:  
         > Only HTTPS URLs are supported. Also, the host and port in the API URL should be consistent with the corresponding connection.
 
+        To flexibly adjust the endpoint path, you can use input parameters \(see [Using Parameters in API Tasks](using-parameters-in-api-tasks-6b6d600.md)\).
+
     -   Next, select the mode of API task, *Synchronous* or *Asynchronous*.
 
         ![](images/Invoke_Mode_1f064cf.png)
 
         Whether you choose Synchronous or Asynchronous modes for your API task’s execution, that choice will impact the options available for retrieving responses, status \(such as success or failure\), and other messages returned from the external system.
 
-        With synchronous operation, the API task makes a request and waits for a maximum of 60 seconds for a response. With asynchronous operation, the API task sends a request to the external system, and the status is obtained later via a callback. Status, message, and error handling for each of these modes of execution are described below.
+        With synchronous operation, the API task makes a request and waits for a maximum of 60 seconds for a response. With asynchronous operation, the API task sends a request to the external system, and the status is obtained later via a polling. Status, message, and error handling for each of these modes of execution are described below.
+
+        > ### Note:  
+        > The *GET* and *DELETE* method are only available for the synchronous mode:
+        > 
+        > -   *GET*: When using output parameters in an API task, for example, you can use the GET method in the successor task to retrieve output information, such as job information, from the predecessor task. Note that the response size is limited because API tasks are not intended to transport large amounts of data.
+        > -   *DELETE*: You can use this method for example when a workflow needs to control the removal of data or entities in an external system.
 
     -   Enter the request payload for your API task in the*Request Body*. The request payload must be in JSON format.
+
+        When using input parameters in the API path, ensure to properly use parameter references in the JSON request body \(see [Using Parameters in API Tasks](using-parameters-in-api-tasks-6b6d600.md)\) :
+
     -   Select the *Require CSRF Token* checkbox if a CSRF token is required before a POST request can be made. Enter the required CSRF token URL to get the CSRF token.
 
     > ### Note:  
@@ -84,13 +91,19 @@ Run tasks in a task chain that use a REST-based API to access external systems.
     > ### Note:  
     > If you don't enter a CSRF token URL, the request API URL will be used, by default, to get the CSRF token.
 
-6.  Following the Request Body field, the Properties pane provides options for obtaining your API task’s responses from the external system. The options presented depend on whether you chose synchronous or asynchronous execution of your task chain. By default, the options provided for synchronous mode are the following:
+6.  Following the Request Body field, the Properties pane provides options for obtaining your API task’s responses from the external system. To do this, send a HEAD request to the CSRF token URL or the URL of that POST/PUT request which requires the CSRF token.
 
-    ![](images/Invoke_Response_a411acb.png)
+    The options presented depend on whether you chose synchronous or asynchronous execution of your task chain:
 
-    Here you have the option of retrieving the API status just from the HTTP status code or from both the HTTP status code and response body \(as shown here\).
+    -   For synchronous mode, you have the option of retrieving the API status just from the HTTP status code or from both the HTTP status code and response body.
+    -   For asynchronous mode, you have the option of retrieving the result from the HTTP status code and location header or from the HTTP status code and response body. For both options, the *Properties* pane provides an additional *Status* section for determining how to retrieve status information and other messages from the external system.
 
-    For asynchronous API task execution, the Properties pane provides an additional *Status* section for determining how to retrieve status information and other messages from the external system.
+        When you have selected the *Get result from HTTP status code and response body* for the asynchronous mode, you explicitly define an \(output\) parameter for the ID required to retrieve the status of an API task run in the *Parameter Name To Retrieve Status* field and provide the JSON path to locate the ID in the asynchronous response. This output parameter is listed read-only in the *Output Parameters* section. In the *Status* section, you then use the parameter as input parameter in the API path used for the Status API call , for example `/job/v1/{{parameter_name}}/status`.
+
+        For more information about output parameters, see [Using Parameters in API Tasks](using-parameters-in-api-tasks-6b6d600.md).
+
+        Note that API tasks in which you have configured the status retrieval in asynchronous mode before version 2026.18 and in which you chose to get the result from HTTP status code and response body and used a placeholder for the id, continue to work. If you
+
 
     > ### Note:  
     > Results from an API task’s invocation are interpreted differently based on the invocation mode, synchronous or asynchronous:
@@ -108,9 +121,9 @@ Run tasks in a task chain that use a REST-based API to access external systems.
 8.  Following verification that your API task can be executed successfully, you can proceed with any other setup and inclusion of other objects in the task chain, and then directly run or schedule the entire task chain. As with any other objects in a task chain, you can monitor details of the execution of an API task in the *Data Integration* monitoring app.
 
     > ### Note:  
-    > Cancelling the task chain that includes an API task will set the API task to fail, although it may still remain running in the external system. There is no hard timeout for execution of API tasks. A task can run as long as it is healthy, that is, the status being retrieved is an HTTP code between 200 and 299. In case there is a problem obtaining the API task status \(for example, the HTTP connections is down\), execution of the API task is retried for another five minutes before failing the task. Using the Test API function does not perform the retry.
+    > Cancelling the task chain that includes an API task will set the API task to fail, although it may still remain running in the external system. There is no hard time out for running API tasks. A task can run as long as it is healthy, that is, the status being retrieved is an HTTP code between 200 and 299. In case there is a problem obtaining the API task status \(for example, the HTTP connections is down\), running the API task is retried for another five minutes before failing the task. Using the Test API function does not perform the retry.
 
     > ### Note:  
-    > All requests performed by the API task time out after a maximum of 60 seconds. The maximum wait time cannot be reconfigured.
+    > All requests performed by the API task time out after a maximum of 60 seconds if a response does not arrive within this time. The maximum wait time cannot be reconfigured.
 
 

@@ -15,7 +15,7 @@ Import a `.csv` file to create a table and fill it with the data from the file.
 To create local tables from a `.csv` file, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit and delete *Data Builder* objects.
+-   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
 -   *Data Warehouse Consumption* \(`-RU-----`\) - To upload data in a local table.
 -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
 

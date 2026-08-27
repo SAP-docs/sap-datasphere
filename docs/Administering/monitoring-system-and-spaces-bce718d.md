@@ -165,7 +165,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
     -   *Data in Spaces*: All data that is stored in spaces.
 
-    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Delete Audit Logs](delete-audit-logs-589fa42.md)\).
+    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Monitor Read and Change Actions with Audit Logs](monitor-read-and-change-actions-with-audit-logs-110404a.md)\).
 
     -   *Other Data*: Includes data stored in database user group schemas \(see [Creating a Database User Group](Creating-a-Database-User-Group/creating-a-database-user-group-1097a47.md)\) and SAP HANA data \(such as statistics schemas\).
 

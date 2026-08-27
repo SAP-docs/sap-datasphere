@@ -61,9 +61,11 @@ When creating a connection based on the custom connection type, you can select w
     The technical name can only contain alphanumeric characters and underscores \(\_\). It cannot start or end with underscore \(\_\). The name must be unique within the space.
 
     > ### Note:  
-    > The system generates target object \(table\) names in a replication flow using the format <code><i class="varname">&lt;custom_connection_technical_name&gt;</i>.<i class="varname">&lt;action_technical_name&gt;</i>.<i class="varname">&lt;entity_name&gt;</i></code>. The maximum total length is 100 characters: 15 for connection, 45 for action, and 40 for entity. If a component name exceeds its character limit, the system truncates it. This truncation can create duplicate target object names, causing your replication flow deployment to fail.
+    > The system generates target object \(table\) names in a replication flow using the format <code><i class="varname">&lt;custom_connection_technical_name&gt;</i>_<i class="varname">&lt;action_technical_name&gt;</i>_<i class="varname">&lt;entity_name&gt;</i></code>. The maximum total length is 100 characters: 15 for connection, 45 for action, and 40 for entity. If a component name exceeds its character limit, the system truncates it. This truncation can create duplicate target object names, causing your replication flow deployment to fail.
     > 
     > You cannot rename the target object or map to an existing target object. To avoid duplicates, choose your connection, action, and entity names carefully.
+    > 
+    > Note that prior to version 2026.18, replication flow target table names were generated with dots \(.\) instead of underscores \(\_\). If your replication flow returns errors related to the target table name, see SAP Note [3794129](https://me.sap.com/notes/3794129).
 
     > ### Note:  
     > Once the object is saved, the technical name can no longer be modified.
@@ -162,6 +164,7 @@ When creating a connection based on the custom connection type, you can select w
     -   Entities are generated for an action based on the selected response schema and records locator. Each action has its own scoped set of entities, derived directly from the API response structure.
     -   There is no concept of linking entities across actions or resources. Entities exist only within the context of the specific action they are defined in.
     -   Entities are related using explicit foreign key relationships only. A child entity must include a direct reference to the parent’s primary key. Inferred associations or many-to-many relationships are not supported.
+    -   Keys must be defined from the outermost to the innermost nesting level. To define a nested attribute as a key, all the arrays that contain it in the schema hierarchy must also have keys defined. Each nesting level creates a new entity and the system uses the outer keys to establish foreign key relationships between parent and child entities.
 
 
     
