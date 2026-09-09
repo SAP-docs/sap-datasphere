@@ -119,12 +119,6 @@ If a projection is defined for a target column that doesn't exist in the source,
 > -   CDC columns
 > 
 > -   Key columns
-> 
-> 
-> If columns are added to the source or target table after the replication flow has been saved and deployed, the replication flow is not aware of those changes. To recover:
-> 
-> -   Terminating replication flow: Once the flow fails, choose *Map to Existing Target Object*or delete the target task and add it again.
-> -   Non-terminating replication flow: Delete the target task, deploy, add the target task again, then deploy again.
 
 > ### Restriction:  
 > When a replication flow is running, you must not update the target objects metadata in the target system until the flow has completed. Doing so may incur in data loss.

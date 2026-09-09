@@ -33,7 +33,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
 
 1.  From the side navigation menu, click :desktop_computer: *\(Monitoring\)* *\>* <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)* .
 
-    The *Capacities Monitoring* app is shown, including summary metrics, resource consumption information, and detailed usage analysis views..
+    The *Capacities Monitoring* app is shown, including summary metrics, resource consumption information, and detailed usage analysis views.
 
 2.  To view capacity unit consumption by resource type, click the *Capacity Units* tab. The tab displays resource-specific consumption cards and charts that help identify how capacity units are distributed across services and resources.
 
@@ -62,7 +62,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     Shows total capacity unit consumption for individual resources during the selected time period.
 
     > ### Note:  
-    > For the *Total CU Consumption: Relative to Your Subscription* card, the consumption percentage is calculated by dividing the total CUs consumed during the selected date range by the monthly CU entitlement from your subscription. Because the entitlement represents a single month of capacity, percentages may exceed 100% when viewing periods longer than one month.
+    > For the *Total CU Consumption: Relative to Your Subscription* card, the consumption percentage is calculated by dividing the total CUs consumed during the selected date range by the monthly CU entitlement from your subscription. Because the entitlement represents a single month of capacity, percentages can exceed 100% when viewing periods longer than one month.
 
 
     
@@ -100,7 +100,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     </td>
     <td valign="top">
     
-    Show a graph chart by clicking <span class="SAP-icons-V5"></span>or show a table by clicking <span class="SAP-icons-V5"></span>.
+    Show a graph chart by clicking <span class="SAP-icons-V5"></span> or show a table by clicking <span class="SAP-icons-V5"></span>.
     
     </td>
     </tr>
@@ -137,7 +137,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     <tr>
     <td valign="top">
     
-    *Used Premium Outbound Volume*
+    *Premium Outbound Volume Consumption*
     
     </td>
     <td valign="top">
@@ -149,7 +149,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     <tr>
     <td valign="top">
     
-    *Used Object Store Storage*
+    *Object Store Storage Consumption*
     
     </td>
     <td valign="top">
@@ -161,7 +161,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     <tr>
     <td valign="top">
     
-    *Used Object Store Compute*
+    *Object Store Compute Consumption*
     
     </td>
     <td valign="top">
@@ -173,12 +173,36 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     <tr>
     <td valign="top">
     
-    *Used Object Store Requests*
+    *Object Store Control Plane Requests*
     
     </td>
     <td valign="top">
     
-    Shows the number of API requests made to the object store by the space in the specified time frame.
+    Shows the amount of control plane requests made to the object store by the space in the specified time frame.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Object Store Category 1 \(Read\) Requests*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of category 1 \(read\) requests made to the object store by the space in the specified time frame.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Object Store Category 2 \(Write\) Requests*
+    
+    </td>
+    <td valign="top">
+    
+    Shows the amount of category 2 \(write\) requests made to the object store by the space in the specified time frame.
     
     </td>
     </tr>
@@ -190,7 +214,7 @@ On the *Spaces* tab, users can view and troubleshoot consumption spikes by ident
     </td>
     <td valign="top">
     
-    Shows the number of capacity units consumed by the space across supported services and resources in the specified time frame.
+    Shows the amount of capacity units consumed by the space across supported services and resources in the specified time frame.
     
     </td>
     </tr>

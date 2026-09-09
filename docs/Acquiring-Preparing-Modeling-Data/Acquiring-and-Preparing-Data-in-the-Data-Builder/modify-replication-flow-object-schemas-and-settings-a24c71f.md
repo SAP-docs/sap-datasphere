@@ -115,6 +115,8 @@ Configure how delta changes are processed for a replication flow. You can choose
 
 
 
+<a name="loioa24c71f3ba7548909534d4cb52cefbfc__review_and_apply_SLT"/>
+
 ## Review and Apply Schema Changes in SAP ABAP \(SLT\) Source Objects
 
 You can enable source schema change detection for an existing replication flow that uses an SAP ABAP \(SLT\) source and a SAP Datasphere \(HANA\) target to apply supported source schema changes without reinitializing the replication flow.
@@ -133,11 +135,15 @@ Schema changes are not applied automatically. To apply supported schema changes:
 
 
 > ### Tip:  
-> -   If schema change deployment fails, revert the replication flow to the last deployed version before attempting to apply the schema changes again.
+> -   If schema change deployment fails, revert the replication flow to the last deployed version before attempting to apply the schema changes again. For*Local Table \(File\)* targets, reverting is not supported. Instead, remove and re-add the replication object and deploy again.
 > -   If a replication flow is already configured to run *At Schedule Time* and you want to change *Delta Load Run*to *At Delta Interval* while enabling *Capture Source Schema Changes*, first enable*Capture Source Schema Changes*and save the runtime settings. Then change *Delta Load Run* to *At Delta Interval*.
 
 > ### Restriction:  
-> -   Available only for SAP ABAP \(SLT\) sources and SAP Datasphere \(HANA\) targets.
+> -   Available only for SAP ABAP \(SLT\) sources and SAP Datasphere \(HANA\) or Local Table \(File\) targets.
+> 
+>     > ### Note:  
+>     > For Local Table \(File\) targets, only adding non-key nullable columns is supported. For incompatible changes such as dropping or renaming a column or changing a data type, you must update the target table manually in the table editor, then remove and re-add the replication object in the replication flow editor.
+> 
 > -   *Capture Source Schema Changes* can be enabled only once and cannot be disabled.
 > -   `CLNT`source columns are not supported.
 

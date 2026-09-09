@@ -14,8 +14,9 @@ This topic contains the following sections:
 -   [Language and Text Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_language_text)
 -   [Image URL Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_image_url)
 -   [Geolocation Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_geo)
+-   [Fiscal Time Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_fiscal)
 -   [Business Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_business_date)
--   [Calendar and System Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_fiscal_calendar_system)
+-   [Calendar and System Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_calendar_date)
 
 
 
@@ -298,72 +299,7 @@ A readable name for a city or other geographical point.
 
 
 
-<a name="loiof7272c0e8be34ce782d04304580c0243__section_business_date"/>
-
-## Business Date Attributes
-
-These types identify attributes containing dates for which information is being requested or is valid:
-
-> ### Note:  
-> For information about SAP Datasphere support for time-dependent dimensions using *Business Date - At*, *Business Date - From*, and *Business Date - To* semantic types, see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md).
-
-
-<table>
-<tr>
-<th valign="top">
-
-Name
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Business Date - At
-
-</td>
-<td valign="top">
-
-A key date. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`. 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Business Date - From
-
-</td>
-<td valign="top">
-
-A date or timestamp that defines the start date for validity of the data of the database table record from a business point of view. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`.
-
-To represent the date when the record was created, use *System Date - Created at* instead.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Business Date - To
-
-</td>
-<td valign="top">
-
-A date or timestamp that defines the end date for validity of the data of the database table record from a business point of view. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`. 
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loiof7272c0e8be34ce782d04304580c0243__section_j5k_3cr_wgc"/>
+<a name="loiof7272c0e8be34ce782d04304580c0243__section_fiscal"/>
 
 ## Fiscal Time Attributes
 
@@ -471,7 +407,72 @@ A fiscal year week number as a string consisting of six digits in the form `YYYY
 
 
 
-<a name="loiof7272c0e8be34ce782d04304580c0243__section_fiscal_calendar_system"/>
+<a name="loiof7272c0e8be34ce782d04304580c0243__section_business_date"/>
+
+## Business Date Attributes
+
+These types identify attributes containing dates for which information is being requested or is valid:
+
+> ### Note:  
+> For information about SAP Datasphere support for time-dependent dimensions using *Business Date - At*, *Business Date - From*, and *Business Date - To* semantic types, see [Enable Time-Dependency for a Dimension or Text Entity](enable-time-dependency-for-a-dimension-or-text-entity-11b2ff4.md).
+
+
+<table>
+<tr>
+<th valign="top">
+
+Name
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Business Date - At
+
+</td>
+<td valign="top">
+
+A key date. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Business Date - From
+
+</td>
+<td valign="top">
+
+A date or timestamp that defines the start date for validity of the data of the database table record from a business point of view. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`.
+
+To represent the date when the record was created, use *System Date - Created at* instead.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Business Date - To
+
+</td>
+<td valign="top">
+
+A date or timestamp that defines the end date for validity of the data of the database table record from a business point of view. The column must have a *Date* data type or be a string in one of the following formats: `YYYYMMDD`, `YYYY-MM-DD`, `YYYY.MM.DD`, or `YYYY/MM/DD`. 
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loiof7272c0e8be34ce782d04304580c0243__section_calendar_date"/>
 
 ## Calendar and System Date Attributes
 

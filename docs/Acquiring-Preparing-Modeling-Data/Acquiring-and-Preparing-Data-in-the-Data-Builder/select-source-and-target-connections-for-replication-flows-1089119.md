@@ -66,7 +66,7 @@ SAP Datasphere \(file space\)
 </td>
 <td valign="top">
 
-`I-----`
+`I-ID--`
 
 </td>
 <td valign="top">
@@ -564,6 +564,28 @@ Use as: [Source](local-table-file-sources-for-replication-flows-bdff6b9.md)
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+MySQL
+
+</td>
+<td valign="top">
+
+`I-----`
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+Use as: [Source](mysql-sources-for-replication-flows-4fe9218.md)
+
+</td>
+</tr>
 </table>
 
 \*SAP Datasphere support for run types depends on the space type and the Delta Capture setting:
@@ -619,14 +641,14 @@ File Space / Local Tables \(File\)
 <td valign="top">
 
 -   Delta Capture Off: `------`
--   Delta Capture On: `------`
+-   Delta Capture On: `I-ID--`
 
 
 
 </td>
 <td valign="top">
 
--   Delta Capture Off: `I-----`
+-   Delta Capture Off: `------`
 -   Delta Capture On: `I-ID--`
 
 

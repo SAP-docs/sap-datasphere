@@ -52,7 +52,7 @@ Section
 </td>
 <td valign="top">
 
-Displays the amount of disk storage and memory storage \(in MB\) used by your space in the SAP HANA Database.
+Displays the amount of disk storage and memory storage used by your space in the SAP HANA Database.
 
 For more information about storage capacity, see [Allocate Storage to a Space](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f414c3d62bfe49b38e2cfdd7b4e7d786.html "Use the Space Storage properties to allocate disk and memory storage to the space and to choose whether it will have access to the SAP HANA data lake.") :arrow_upper_right:.
 
@@ -135,7 +135,7 @@ Description
 </td>
 <td valign="top">
 
-Displays the total amount of storage \(in GB\) that is used by your space in the SAP Datasphere object store.
+Displays the total amount of storage that is used by your space in the SAP Datasphere object store.
 
 </td>
 </tr>
@@ -147,7 +147,7 @@ Displays the total amount of storage \(in GB\) that is used by your space in the
 </td>
 <td valign="top">
 
-Displays the total amount of storage \(in GB\) that is used by your space, broken down by:
+Displays the total amount of storage that is used by your space, broken down by:
 
 -   *Local Tables \(File\) - Active Records* - Displays the size used by the active records only of the local tables \(file\).
 -   *Local Tables \(File\) - Previous Versions* - Displays the size of previous versions of the local tables \(file\). This includes files of previous versions that are required for delta processing.

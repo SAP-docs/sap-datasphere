@@ -1134,7 +1134,7 @@ Hidden
 <tr>
 <td valign="top">
 
-Share Status
+Add to Cart
 
 </td>
 <td valign="top">
@@ -1149,7 +1149,12 @@ Share Status
 </td>
 <td valign="top">
 
-✓
+ 
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 <td valign="top">
@@ -1159,12 +1164,7 @@ Share Status
 </td>
 <td valign="top">
 
-Hidden
-
-</td>
-<td valign="top">
-
-Hidden
+✓
 
 </td>
 </tr>
@@ -1182,43 +1182,6 @@ Favorite \(action\)
 <td valign="top">
 
 ✓
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-✓
-
-</td>
-<td valign="top">
-
-✓
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Share \(action - available when accessing the catalog from SAP Business Data Cloud only\)
-
-</td>
-<td valign="top">
-
-✓
-
-</td>
-<td valign="top">
-
- 
 
 </td>
 <td valign="top">

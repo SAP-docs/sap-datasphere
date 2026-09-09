@@ -238,6 +238,23 @@ Users with an administrator role can create spaces, allocate compute resources a
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Customer-Managed Key Support
+    
+    </td>
+    <td valign="top">
+    
+    \[read-only\] Displays whether the file space supports customer-managed keys or not.
+
+    > ### Note:  
+    > File spaces created before customer-managed key support was introduced do not support this feature. To use customer-managed keys, create a new file space.
+
+
+    
+    </td>
+    </tr>
     </table>
     
 5.  *Apache Spark* section - An Apache Spark instance has been automatically created for the file space with a maximum amount of compute resources \(CPU and GB of memory\) that the file space can consume when running tasks.

@@ -259,6 +259,18 @@ The replication task for the object has failed during the transfer of data.
 <tr>
 <td valign="top">
 
+Failed \(Pending Schema Changes\)
+
+</td>
+<td valign="top">
+
+The replication task for the object has detected schema changes, which must be reviewed and applied or rejected before the replication task can resume.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Retrying
 
 </td>

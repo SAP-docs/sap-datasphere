@@ -67,7 +67,7 @@ Add incremental aggregations to the target table. It is useful for handling incr
     </td>
     <td valign="top">
     
-    Identifies and retains the minimum \(smallest\) value in the column across all rows. When used in a transformation flow, an intermediate Delta Lake table is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
+    Identifies and retains the minimum \(smallest\) value in the column across all rows. When used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -79,7 +79,7 @@ Add incremental aggregations to the target table. It is useful for handling incr
     </td>
     <td valign="top">
     
-    Identifies and retains the maximum \(largest\) value in the column across all rows. When used in a transformation flow, an intermediate Delta Lake table is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
+    Identifies and retains the maximum \(largest\) value in the column across all rows. When used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -103,7 +103,7 @@ Add incremental aggregations to the target table. It is useful for handling incr
     </td>
     <td valign="top">
     
-    Calculates the average \(mean\) of all numerical values in the column. When used in a transformation flow, an intermediate Delta Lake table is created to handle these operations within its capacity unit. Note that incremental average calculations require careful management to maintain accuracy with delta updates. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
+    Calculates the average \(mean\) of all numerical values in the column. When used in a transformation flow, an intermediate persistent table file is created to handle these operations within its capacity unit. Note that incremental average calculations require careful management to maintain accuracy with delta updates. See [Monitoring Capacity Unit Consumption](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/ba3d05baac854171914c09d64bed7202.html "Monitor the number of capacity units consumed each month to track usage patterns and plan resource allocation.") :arrow_upper_right:.
     
     </td>
     </tr>

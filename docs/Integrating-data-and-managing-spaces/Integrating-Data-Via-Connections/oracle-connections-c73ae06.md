@@ -96,6 +96,20 @@ Before you can use the connection for replication flows, the following is requir
 
 -   An administrator has installed and configured Cloud Connector to connect to your on-premise source.
 
+    When configuring Cloud Connector, ensure you create the system mapping with the following settings:
+
+    -   *Back-end Type*: Non-SAP System
+    -   *Protocol*: TCP
+    -   *Internal Host*: Oracle database server host name
+    -   *Port or Port Range*: port for the endpoint
+    -   *Virtual Host*: should be the same as the internal host
+
+        > ### Note:  
+        > TLS host name validation behavior is undefined if virtual host doesn't match internal host.
+
+    -   *Virtual Port*: should be the same as the internal port
+    -   *Check Internal Host*: deselected
+
     For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
 
     > ### Note:  
@@ -204,7 +218,293 @@ Before you can use the connection for replication flows, the following is requir
     -   For authentication type *User Name and Password* with TLS/mTLS, Oracle uses the client certificate for caller validation and user name and password for authentication. For information about creating a database user in this scenario, see [MFA Certificate-based Authentication](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/configuring-authentication.html#GUID-E3CFA8C5-1BC9-4BDE-973D-CEF829E163BE) in the *Oracle* documentation.
     -   For authentication type *Wallet* with mTLS, Oracle uses the client certificate for caller validation and authentication. For information about creating a database user in this scenario, see [Create an External User in the Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/configuring-secure-sockets-layer-authentication.html#GUID-9FD39673-6380-4BFF-831E-976068BFB47B) in the *Oracle* documentation.
 
--   If you want to use an existing connection for replication flows, you need to edit the connection and complete the TLS properties and credentials according to your scenario. Note that remote tables and data flows are not supported when you change the authentication type to *Wallet*.
+-   If you want to use an existing connection \(created before version 2026.13\) as a source for replication flows, you need to edit the connection and complete the TLS properties and credentials according to your scenario. Note that remote tables and data flows are not supported when you change the authentication type to *Wallet*.
+-   If you use the *Initial and Delta* or *Delta Only* load type for Oracle sources, SAP Datasphere uses trigger-based change data capture \(CDC\), and CDC artifacts are created in the source table owner's schema. The database user used for the connection requires the following Oracle privileges:
+
+    User is the source table owner - user = schema name \(**recommended**\):
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Privilege
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    <th valign="top">
+
+    CDC-relevant?
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE SESSION
+    
+    </td>
+    <td valign="top">
+    
+    required to connect to the database via JDBC
+    
+    </td>
+    <td valign="top">
+    
+    no
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE TABLE
+    
+    </td>
+    <td valign="top">
+    
+    required to create log tables and subscription index
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE TRIGGER
+    
+    </td>
+    <td valign="top">
+    
+    required to create INSERT/UPDATE/DELETE CDC triggers on source tables
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE SEQUENCE
+    
+    </td>
+    <td valign="top">
+    
+    required to create sequences for monotonic CDC\_SEQUENCE generation
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    UNLIMITED TABLESPACE \(or quota\)
+    
+    </td>
+    <td valign="top">
+    
+    required because log tables grow with captured changes and need space allocation
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    </table>
+    
+    User is not the source table owner:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Privilege
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    <th valign="top">
+
+    CDC-relevant?
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE SESSION
+    
+    </td>
+    <td valign="top">
+    
+    required to connect to the database via JDBC
+    
+    </td>
+    <td valign="top">
+    
+    no
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE ANY TABLE
+    
+    </td>
+    <td valign="top">
+    
+    required to create log tables and subscription index in the source owner's schema
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DROP ANY TABLE
+    
+    </td>
+    <td valign="top">
+    
+    required to drop log tables and subscription index during DeleteSubscription
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE ANY TRIGGER
+    
+    </td>
+    <td valign="top">
+    
+    required to create CDC triggers on source tables in another schema
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DROP ANY TRIGGER
+    
+    </td>
+    <td valign="top">
+    
+    required to drop CDC triggers during DeleteSubscription
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    CREATE ANY SEQUENCE
+    
+    </td>
+    <td valign="top">
+    
+    required to create sequences in the source owner's schema
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    DROP ANY SEQUENCE
+    
+    </td>
+    <td valign="top">
+    
+    required to drop sequences during DeleteSubscription
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SELECT ANY TABLE
+    
+    </td>
+    <td valign="top">
+    
+    required to read source data \(initial + delta\), query primary keys, metadata, and subscription index
+    
+    </td>
+    <td valign="top">
+    
+    no
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    UNLIMITED TABLESPACE \(or quota\)
+    
+    </td>
+    <td valign="top">
+    
+    required because log tables grow with captured changes and need space allocation
+    
+    </td>
+    <td valign="top">
+    
+    yes
+    
+    </td>
+    </tr>
+    </table>
+    
 
 
 

@@ -264,7 +264,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    Detects compatible source schema changes and allows you to apply supported changes without restarting the replication flow. Available only for replication flows that use the SAP ABAP connection type with an SLT container and replicate to SAP Datasphere \(HANA\) targets. Apply [3691739](https://me.sap.com/notes/3691739) to the ABAP source system before enabling this option. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md)
+    Detects compatible source schema changes and allows you to apply supported changes without restarting the replication flow. Available only for replication flows that use the SAP ABAP connection type with an SLT container and replicate to SAP Datasphere \(HANA\) or Local Table \(File\) targets. Apply [3691739](https://me.sap.com/notes/3691739) to the ABAP source system before enabling this option. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md)
 
     > ### Caution:  
     > Once enabled, this option cannot be disabled.

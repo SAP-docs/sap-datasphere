@@ -15,7 +15,7 @@ Use the catalog *Assets* collection to view data and analytic assets for use in 
 To search for and evaluate objects in the *Assets* collection, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
+-   *Catalog Asset* \(`–R–––--`\) - To access the catalog, view objects in the *Assets* and *Data Products* collections, and create and manage data product access requests and agreements.
 -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
 -   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.

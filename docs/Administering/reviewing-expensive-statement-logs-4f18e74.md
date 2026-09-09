@@ -143,12 +143,12 @@ Name of the schema in which the expensive statement is run.
 <tr>
 <td valign="top">
 
-*SAP HANA Peak Memory \(MB\)*
+*SAP HANA Peak Memory*
 
 </td>
 <td valign="top">
 
-Maximum amount of memory \(in MB\) the expensive statement has used during the runtime in SAP HANA.
+Maximum amount of memory the expensive statement has used during the runtime in SAP HANA.
 
 > ### Note:  
 > You can see the information if the option *Enable Expensive Statement Tracing* is enabled and if the expensive statement exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. See [Configure Monitoring](configure-monitoring-9cd0691.md).

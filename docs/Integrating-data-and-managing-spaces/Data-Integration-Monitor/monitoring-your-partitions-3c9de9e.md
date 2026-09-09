@@ -68,7 +68,7 @@ Displays the growth in % of the number of records in the partition since the las
 </td>
 <td valign="top">
 
-Displays the quantity of memory required to fully load the partition data in-memory in MiB. 
+Displays the quantity of memory required to fully load the partition data in-memory. 
 
 > ### Note:  
 > Value is set to Not Applicable for local tables that store data on disk.
@@ -85,7 +85,7 @@ Displays the quantity of memory required to fully load the partition data in-mem
 </td>
 <td valign="top">
 
-Displays the disk storage used by the partition in MiB. 
+Displays the disk storage used by the partition. 
 
 > ### Note:  
 > Value is set to Not Applicable for local tables that store data in-memory.

@@ -304,53 +304,6 @@ Non SAP
 <tr>
 <td valign="top">
 
-[Business Data Product Connections](business-data-product-connections-5661d88.md)
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-yes
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-yes
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-no
-
-</td>
-<td valign="top">
-
-not applicable
-
-</td>
-<td valign="top">
-
-not applicable
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 [Cloud Data Integration Connections](cloud-data-integration-connections-cd33107.md)
 
 </td>
@@ -998,6 +951,53 @@ no
 <td valign="top">
 
 On-Premise
+
+</td>
+<td valign="top">
+
+Non SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[MySQL Connections](mysql-connections-520a260.md)
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+yes
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+no
+
+</td>
+<td valign="top">
+
+Cloud
 
 </td>
 <td valign="top">

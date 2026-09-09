@@ -357,3 +357,16 @@ Leading dots \(.\) are removed.
 </tr>
 </table>
 
+
+
+### Case Sensitivity for Technical Names in Delta Sharing
+
+Technical names in SAP Datasphere preserve letter case. However, the Delta Sharing Protocol treats identifiers as case-insensitive.
+
+When local table \(file\) objects are shared through Delta Sharing, for example via Data Products, cross-space sharing, or technical shares, objects whose technical names differ only by letter case \(such as `Orders` and `orders`\) are interpreted as the same identifier in the Delta Sharing catalog.
+
+To prevent naming conflicts and potential data loss, SAP Datasphere prevents the deployment of objects that would create such conflicts.
+
+> ### Tip:  
+> If an object may be shared through Delta Sharing, ensure that technical object names are unique regardless of letter case: they must not differ only by the use of uppercase or lowercase letters.
+

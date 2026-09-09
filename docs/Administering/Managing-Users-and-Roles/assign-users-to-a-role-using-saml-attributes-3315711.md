@@ -14,7 +14,10 @@ For example, you want to give a specific role to all employees that are assigned
 
 ## Prerequisites
 
-Your custom SAML Identity Provider \(IdP\) must be configured and the authentication method selected must be *SAML Single Sign-On \(SSO\)* in <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*. See [Enabling a Custom SAML Identity Provider \(Legacy Custom IdP\)](enabling-a-custom-saml-identity-provider-legacy-custom-idp-9b26536.md).
+You have configured one of these two methods to authenticate to SAP Datasphere:
+
+-   Your custom SAML Identity Provider \(IdP\) is configured and the authentication method selected must be *SAML Single Sign-On \(SSO\)* in <span class="FPA-icons-V3"></span> \(*System*\) → <span class="Belize-icons"></span> \(*Administration*\) →*Security*. See [Enabling a Custom SAML Identity Provider \(Legacy Custom IdP\)](enabling-a-custom-saml-identity-provider-legacy-custom-idp-9b26536.md).
+-   Your bundled SAP Cloud Identity Services tenant is configured. See [Configure Your Bundled SAP Cloud Identity Services Tenant](configure-your-bundled-sap-cloud-identity-services-tenant-fac3155.md).
 
 
 

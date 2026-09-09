@@ -110,6 +110,20 @@ A set of Apache Spark configurations is applied by default to each new file spac
     <tr>
     <td valign="top">
     
+    *Executor Memory Overhead*
+
+    Apache Spark technical name: `spark.executor.memoryOverhead`
+    
+    </td>
+    <td valign="top">
+    
+    Specify the percentage of additional memory allocated per executor. This memory is used for JVM, native Python, container overhead, and out-of-memory error handling. In SAP Datasphere, the overhead memory is subtracted from the total allocated executor memory and can be up to 40%.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     *Driver Memory*
 
     Apache Spark technical name: `spark.driver.memory`
@@ -123,6 +137,20 @@ A set of Apache Spark configurations is applied by default to each new file spac
     > The amount of memory is automatically adjusted based on the number entered in *Driver Cores*, with a ratio of 4:1 \(for example 16 GB of memory and 4 cores\).
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Driver Memory Overhead*
+
+    Apache Spark technical name: `spark.driver.memoryOverhead`
+    
+    </td>
+    <td valign="top">
+    
+    Specify the percentage of additional memory allocated per driver. This memory is used for JVM, native Python, container overhead, and out-of-memory error handling. In SAP Datasphere, the overhead memory is subtracted from the total allocated driver memory and can be up to 40%.
     
     </td>
     </tr>

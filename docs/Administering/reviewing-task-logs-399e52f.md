@@ -15,7 +15,10 @@ To monitor task logs, you must have a global role that grants you the following 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Task Logs* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+
+> ### Note:  
+> To monitor task logs, you can alternatively have a scoped role that grants you access to a space with the following privileges: *Data Warehouse General* \(`-R------`\); *Data Warehouse Data Integration* \(`-R------`\) to view data integration task logs in the *Task Logs* app; *Data Warehouse Data Integration* \(`--U-----`\) to cancel a task run. The *DW Integrator* role template, for example, grants these privileges.
 
 
 
@@ -138,12 +141,12 @@ Name of the object. Click on the object name to open the object in the *Data Bui
 <tr>
 <td valign="top">
 
-*SAP HANA Peak Memory \(MB\)*
+*SAP HANA Peak Memory*
 
 </td>
 <td valign="top">
 
-Maximum amount of memory \(in MiB\) the task has used during the runtime in SAP HANA.
+Maximum amount of memory the task has used during the runtime in SAP HANA.
 
 > ### Note:  
 > You can see this information:
@@ -206,31 +209,31 @@ Number of records of the target table after the task has finished running.
 <tr>
 <td valign="top">
 
-*SAP HANA Used Memory \(MB\)*
+*SAP HANA Used Memory*
 
 </td>
 <td valign="top">
 
-Amount of memory \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SAP HANA Used Disk \(MB\)* 
-
-</td>
-<td valign="top">
-
-Amount of disk space \(in MiB\) that is used by the target table in SAP HANA after the task has finished running.
+Amount of memory that is used by the target table in SAP HANA after the task has finished running.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Apache Spark Peak Memory \(MB\)*
+*SAP HANA Used Disk* 
+
+</td>
+<td valign="top">
+
+Amount of disk space that is used by the target table in SAP HANA after the task has finished running.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Apache Spark Peak Memory*
 
 </td>
 <td valign="top">
@@ -254,12 +257,12 @@ Percentage overview of the peak memory consumption relative to the size of the S
 <tr>
 <td valign="top">
 
-*Apache Spark Spill to Disk \(MB\)*
+*Apache Spark Spill to Disk*
 
 </td>
 <td valign="top">
 
-Amount of data that has been spilled to disk \(in MiB\). It ensures that applications do not exceed their memory limits, causing data to be temporarily stored on disk. High spill rates can lead to performance bottlenecks, so monitoring this metric is crucial for identifying memory-related issues.
+Amount of data that has been spilled to disk. It ensures that applications do not exceed their memory limits, causing data to be temporarily stored on disk. High spill rates can lead to performance bottlenecks, so monitoring this metric is crucial for identifying memory-related issues.
 
 </td>
 </tr>
@@ -443,7 +446,7 @@ Canceling a task run may be required when it takes too long or if the run impact
 
 > ### Note:  
 > -   Data on tasks are kept for the time specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Tasks*.
-> -   You may not be able to cancel a task via the *Data Integration Monitor* or the *Database Explorer* when resource consumption is too high. You will always be able to cancel a task via the *System Monitor*.
+> -   You may not be able to cancel a task via the *Data Integration Monitor* or the *Database Explorer* when resource consumption is too high. You will always be able to cancel a task via the *Monitoring* tool.
 
 
 

@@ -14,7 +14,7 @@ Data is loaded from the source system into SAP Datasphere, where the following s
 
 -   Ingestion space - contains the data products as local tables, and the replication flows that load data to them.
 
-    Ingestion spaces may contain inactive data products that are not consumed by any intelligent content nor installed in any customer-managed space. These data products do not contain data. If you want to install or share an inactive data product, you must first ask an administrator to activate its parent data package or install the intelligent content that consumes the data product.
+    Ingestion spaces may contain inactive data products that are not consumed by any intelligent content nor installed in any customer-managed space. These data products do not contain data. If you want to install an inactive data product, you must first ask an administrator to activate its parent data package or install the intelligent content that consumes the data product.
 
 -   Preparation space - contains views built on top of the data products to prepare them for consumption.
 -   Model space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the intelligent content.
@@ -46,6 +46,14 @@ In addition, you can install different intelligent contents for the same source 
 In the following example, we have two intelligent contents installed on top of the same source system, resulting in reusing of the ingestion and preparation spaces, and in creation of separate model spaces.
 
 ![](images/Install_multiple_intelligent_applications_for_the_same_source_system_f53cc37.png)
+
+
+
+### Example: Installing Major Versions of Intelligent Content Side-by-side 
+
+When breaking changes are introduced to intelligent content, SAP creates a new major version \(X.0.0\) of intelligent content \(for more information, see [Versioning of Data Products and Intelligent Content](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud-dev/versioning-of-data-products-and-intelligent-content)\). You can install more than one major version of intelligent content side-by-side for the same source system. This allows you to test, adapt to, and migrate your workflows to the new version without breaking existing processes. Each major version operates independently: installing, updating, or uninstalling one version does not affect other versions. To identify which version you are working with, refer to the unique version identifier shown by the intelligent content’s name in SAP Business Data Cloud cockpit.
+
+If the different major versions of the intelligent content use the same major version of the data product, then these versions use the same ingestion space. However, if the different major versions of the intelligent content use different major versions of the same data product, then separate ingestion spaces are used. The spaces are identified by version numbers.
 
 
 

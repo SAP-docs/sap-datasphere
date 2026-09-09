@@ -15,7 +15,9 @@ For example, when a data modeler reviews the details of a data product, they can
 After you review the data product details, you can choose to download a sample dataset \(if available\) and test it or install the data product to an SAP Datasphere space \(see [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)\).
 
 > ### Tip:  
-> Marketplace data products are only produced by and consumed in SAP Datasphere. However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can share to other SAP or external systems \(see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and [Sharing Data Products](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/sharing-data-products)\).
+> Marketplace data products are only produced by and consumed in SAP Datasphere.
+> 
+> However, if you're a data provider with the *Marketplace Visibility* option set to *Formations*, you can create data products that you can install to other SAP or external systems \(see [Creating Data Products for SAP Business Data Cloud](https://help.sap.com/viewer/e4059f908d16406492956e5dbcf142dc/cloud/en-US/b07e95d07a1e4569b87d9bb57b732bcf.html "Create a custom data product on a Delta Share runtime for SAP Business Data Cloud. This custom data product can then be shared with any system in the formation that supports it, such as SAP Databricks.") :arrow_upper_right: and
 
 
 
@@ -616,7 +618,7 @@ The outermost container represents a source system \(for example, <span class="F
 
 Source systems connected to and monitored by the catalog show their business or technical name. Systems not connected to the catalog show their system type with the text "unmonitored". The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
-Target systems appear in the impact of a data product when a data product is shared to it.
+Target systems appear in the impact of a data product when a data product is installed to it.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -634,7 +636,7 @@ The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space, <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder, or <span class="FPA-icons-V3"></span> BW InfoArea\). It contains objects that either appear in the lineage of or are impacted by the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
 -   A :package: data product. The data product is visible if you have access and view permission for it. For example, you are a member of the context associated with it or if you are a member of the space where it has been installed. Also, you will be able to view the details to see a brief summary of the data product or open the data product page.
--   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is shared to certain target systems \(for example, SAP Databricks\), it's shared to a folder. 
+-   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is installed to certain target systems \(for example, SAP Databricks\), it's installed to a folder. 
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 

@@ -101,7 +101,7 @@ Displays the growth in % of the number of records since the last month. It is co
 </td>
 <td valign="top">
 
-Displays the disk storage used by the local table in MiB.
+Displays the disk storage used by the local table.
 
 > ### Note:  
 > Value is set to Not Applicable for local tables that store data in-memory.
@@ -118,7 +118,7 @@ Displays the disk storage used by the local table in MiB.
 </td>
 <td valign="top">
 
-Displays the quantity of memory required to fully load the local table data in-memory in MiB.
+Displays the quantity of memory required to fully load the local table data in-memory.
 
 > ### Note:  
 > Value is set to Not Applicable for local tables that store data on disk.

@@ -292,6 +292,22 @@ Description
 <tr>
 <td valign="top">
 
+API Compatible Target
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose a system that has data products that you want included in the search result.
+
+*Define Conditions*: Create conditions and enter a value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 API Implementation Standard
 
 </td>
@@ -428,6 +444,22 @@ Connected SAP Datasphere Tenant ID
 Choose one of the tabs and specify the options:
 
 *Select Items*: Choose tenant ID that you want included in the search result.
+
+*Define Conditions*: Create conditions and enter a value.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data Product Entitlement Information
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose the entitlement status for data products that you want included in the search result.
 
 *Define Conditions*: Create conditions and enter a value.
 
@@ -604,22 +636,6 @@ Resource Status
 Choose one of the tabs and specify the options:
 
 *Select Items*: Choose a resource status that you want included in the search result.
-
-*Define Conditions*: Create conditions and enter a value.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Share Status
-
-</td>
-<td valign="top">
-
-Choose one of the tabs and specify the options:
-
-*Select Items*: Choose a share status that you want included in the search result.
 
 *Define Conditions*: Create conditions and enter a value.
 

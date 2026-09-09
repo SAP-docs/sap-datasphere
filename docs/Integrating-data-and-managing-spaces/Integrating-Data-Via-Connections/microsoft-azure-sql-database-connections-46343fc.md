@@ -690,9 +690,6 @@ To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\
 > ### Note:  
 > The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
 
-> ### Note:  
-> Unencrypted keys are supported in PKCS\#8 and PKCS\#1 formats \(only RSA key type is supported\). Encrypted keys are supported in PKCS\#1 format with RSA key type.
-
 
 
 </td>

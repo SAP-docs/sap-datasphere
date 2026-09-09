@@ -98,6 +98,18 @@ SAP Business AI is integrated to generate AI content recommendations in various 
     <tr>
     <td valign="top">
     
+    *AI-Assisted Data Monitoring - AI-Enhanced Data Pipeline Analyzer Summary*
+    
+    </td>
+    <td valign="top">
+    
+    Leverage AI to gain deeper insights into your data pipeline for Views, Tables, and Analytic Models. You can generate a business summary to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements. See [Generate Summaries of the Data Pipeline Analyzer With AI](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1e72ea2b540f412c8bcd5d4751560ebc.html "Leverage AI to gain deeper insights into your data pipeline for Views, Tables, and Analytic Models. You can generate a Business Summary to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements.") :arrow_upper_right:
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     *AI-Assisted Modeling - AI-Enhanced SQL View Generation*
     
     </td>

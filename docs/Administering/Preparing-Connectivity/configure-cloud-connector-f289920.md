@@ -399,6 +399,18 @@ For more information about the supported use cases depending on the connection t
         <tr>
         <td valign="top">
         
+        *MySQL* \(replication flows\)
+        
+        </td>
+        <td valign="top">
+        
+        TCP
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         *Oracle* \(replication flows, data flows\) 
         
         </td>

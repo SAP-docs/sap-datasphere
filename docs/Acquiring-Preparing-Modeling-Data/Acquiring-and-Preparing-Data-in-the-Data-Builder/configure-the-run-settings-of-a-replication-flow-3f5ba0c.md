@@ -98,7 +98,7 @@ Define settings and properties for your replication flow and individual replicat
 
     -   Delta Load Run: You can define how delta-enabled objects run in a replication flow:
         -   *On Delta Interval*\(default\): The replication flow runs as a long-running task and continuously checks for new delta records based on the configured interval.
-        -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.
+        -   *At Scheduled Time:* The replication flow processes available delta records and then completes. Use this option if you want to run the replication flow manually, on a schedule, or as part of a task chain.Schedule no more than 100 replication flows at the same schedule interval. Running a large number of flows simultaneously can exhaust available external connections and cause runtime errors.
 
             > ### Note:  
             > When the option *At Scheduled Time* is used, you cannot restart an initial load if:
@@ -106,10 +106,10 @@ Define settings and properties for your replication flow and individual replicat
             > -   An initial load has already been completed.
             > -   Data from the target local table has been deleted.
             > 
-            > If you want to perform a new initial run, you must save the flow as a new replication flow and change the load type to *Initial Only*. Then you can deploy and schedule accordingly or run it immediately.
+            > If you want to perform a new initial run, you must save the flow as a new replication flow and change the load type to *Initial Only*. Then you can deploy and schedule accordingly or run it immediately. If you want to perform a new initial run, save the flow as a new replication flow and change the load type to Initial Only. Then you can deploy and schedule accordingly or run it immediately. The *Restart Object* action is also not supported for individual objects. For more information, see [Working With Existing Replication Flow Runs](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/da62e1ee746448e8bc043e1be4377cbe.html "You can pause a replication flow run and resume it later, or stop it completely when it's no longer needed. You can also schedule, monitor premium outbound volume, and configure email notifications for replication flow failures. For more information on how to make changes to an existing replication flow in the Data Builder, see .") :arrow_upper_right:
 
 
-    -   Capture Source Schema Changes: Detects compatible source schema changes and allows you to apply supported changes without restarting the replication flow. Available only for replication flows that use the SAP ABAP connection type with an SLT container and replicate to SAP Datasphere \(HANA\) targets. Apply [3691739](https://me.sap.com/notes/3691739) to the ABAP source system before enabling this option. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md) To enable this option:
+    -   Capture Source Schema Changes: Detects compatible source schema changes and allows you to apply supported changes without restarting the replication flow. Available only for replication flows that use the SAP ABAP connection type with an SLT container and replicate to SAP Datasphere \(HANA\) or Local Table \(File\) targets. Apply [3691739](https://me.sap.com/notes/3691739) to the ABAP source system before enabling this option. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md) To enable this option:
 
         1.  Open the replication flow.
         2.  Select *Edit Run Settings.*

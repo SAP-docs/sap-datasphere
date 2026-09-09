@@ -150,6 +150,11 @@ To monitor task logs, you must have a global role that grants you the following 
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
+> ### Note:  
+> To monitor task logs, you can alternatively have a scoped role that grants you access to a space with the following privileges: *Data Warehouse General* \(`-R------`\); *Data Warehouse Data Integration* \(`-R------`\) to view data integration task logs in the *Task Logs* app; *Data Warehouse Data Integration* \(`--U-----`\) to cancel a task run. The *DW Integrator* role template, for example, grants these privileges.
+
+
+
 </td>
 </tr>
 <tr>
@@ -395,20 +400,20 @@ The *Catalog User* global role and the *DW Viewer* role template \(used directly
 
 Install data products
 
-See [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:
+See [Requesting Access to Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "You can request access to data products in the Data Product collection for installation to an SAP Datasphere space. After your request is approved, you can install the data product to the space where users can access its data for use in modeling and other projects.") :arrow_upper_right:
 
 </td>
 <td valign="top">
 
-To search for and evaluate objects in the *Data Products* collection, you must have:
+To search for and request access to data products, manage access requests and agreements, and install data products, you must have:
 
 -   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
+    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog, view objects in the *Assets* and *Data Products* collections, and create and manage data product access requests and agreements.
 
 -   A scoped role that grants you access to the space or spaces where you can install data products, with the following privileges:
     -   *Spaces* \(`–R–––--`\) - To access a space.
-    -   *Space Files* \(`CRUD–--`\) - To install data products in or uninstall data products from a space.
+    -   *Space Files* \(`CRUD–--`\) - To install data products in a space or end an access agreement.
     -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
     -   *Data Warehouse Connection* \(`-R------`\) - To access remote objects.
 

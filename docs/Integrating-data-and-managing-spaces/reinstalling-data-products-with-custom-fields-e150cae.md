@@ -14,7 +14,7 @@ To reinstall a data product, you must have:
 
 -   A global role that grants you the following privileges:
     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
+    -   *Catalog Asset* \(`–R–––--`\) - To access the catalog, view objects in the *Assets* and *Data Products* collections, and create and manage data product access requests and agreements.
 
 -   A scoped role that grants you access to the space or spaces where you can reinstall data products, with the following privileges:
     -   *Spaces* \(`–R–––--`\) - To access a space.
@@ -33,7 +33,7 @@ When you install intelligent content via SAP Business Data Cloud, any required d
 
 However, you can update these data products to include any required custom fields by reinstalling them as part of the extension process explained in [Extending Intelligent Content](extending-intelligent-content-3c15868.md).
 
-From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that an SAP data product you installed has the latest updates to the custom fields, you must uninstall and then reinstall it.
+From time to time, users might add or remove custom fields, or they might change existing custom fields. To ensure that an SAP data product you installed has the latest updates to the custom fields, you must reinstall it.
 
 During its lifecycle, an SAP data product might have patch, minor version, and major version updates. Any custom fields defined in the source system are available as follows:
 
@@ -44,22 +44,20 @@ During its lifecycle, an SAP data product might have patch, minor version, and m
 
 ## Procedure
 
-1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
+1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\) ** \> ** <span class="SAP-icons-V5"></span>*\(Data Product Access\)*.
 
-2.  On the catalog search, find the data product by entering a portion of its name in the search field or use the filters. For more information, see [Searching for Data Products and Assets in the Catalog](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10478251045b43e782fa15e0f3e113b0.html "The catalog is the place where you can discover data products and assets, such as models and SAP Analytics Cloud stories. By using the search and filtering features to narrow the search results, you can learn more about the objects you find and mark some as your favorite.") :arrow_upper_right:.
+2.  On the *Data Product Access* page, choose the *Agreements* tab.
 
-3.  When you find the data product you want, select it to view its details page. You can review the list of APIs by choosing the tab *Overview* \> *Details*.
+3.  Select a filter and enter search terms to show the items that you want.
 
-4.  For the API, select *Uninstall*.
+    The list is updated to show only the items that match the criteria you entered. 
 
-    Uninstalling the data product will take a few moments, you'll be notified when it completes.
+4.  Select the access agreement to view its details page.
 
-5.  After the data product is uninstalled, refresh the data product details page.
+5.  Choose *Reinstall Data Product* to update the data product.
 
-6.  Choose the tab *Overview* \> *Details* and find the API.
+    For data access method, select the same method that was previously used. To learn more about this setting, go to the section **Changing the Data Delivery Method for a Data Product** in [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/605b734f433f4c3895ec827fa71bea41.html "Access requests that have been approved become access agreements and appear under the Agreements tab. You can install a data product for an access agreement or end an access agreement that's no longer needed.") :arrow_upper_right:.
 
-7.  Choose *Install* and follow the steps in the *Import Entities* wizard.
-
-    For data access method, select the same method that was previously used. For information on installing a data product, see [Installing Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/ea7cb802cbea47b39a441888873c3a49.html "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.") :arrow_upper_right:.
+6.  Choose *Reinstall Data Product*.
 
 

@@ -64,7 +64,7 @@ The actual throughput depends on a variety of factors, such as the source and th
 
 ## Sizing for Delta Loading
 
-For delta loading, the default is that each object is processed as one partition by one data transfer work order, resulting in a total of 5 data transfer work orders and one replication flow job being utilized. For ABAP-based sources, you can change the number of threads to a maximum of 10 \(in the source settings\).
+For delta loading, the default is that each object is processed as one partition by one data transfer work order, resulting in a total of 5 data transfer work orders and one replication flow job being utilized. For ABAP-based sources, you can change the number of threads to a maximum of 10 \(in the source settings\). Schedule no more than 100 replication flows at the same schedule interval. Running a large number of flows simultaneously can exhaust available external connections and cause runtime errors.
 
 
 

@@ -15,7 +15,7 @@ The catalog is the place where you can discover data products and assets, such a
 To access the catalog and view objects, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Catalog Asset* \(`–R–––--`\) - To access the catalog and view objects in the *Assets* and *Data Products* collections.
+-   *Catalog Asset* \(`–R–––--`\) - To access the catalog, view objects in the *Assets* and *Data Products* collections, and create and manage data product access requests and agreements.
 -   *Catalog Glossary Object* \(`–R–––--`\) - To view terms.
 -   *Catalog KPI Object* \(`–R–––--`\) - To view KPIs.
 -   *Catalog Tag Hierarchy* \(`–R–––--`\) - To view tag hierarchies and tags.
@@ -300,7 +300,7 @@ The information and actions available in each view differs. See [Information and
 
 [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects.")
 
-[Installing Data Products](installing-data-products-ea7cb80.md "Use the catalog Data Product collection to view data products for use in your modeling and other projects. You can see detailed metadata for each data product and if you have the appropriate permissions, install it to an SAP Datasphere space.")
+[Requesting Access to Data Products](requesting-access-to-data-products-ea7cb80.md "You can request access to data products in the Data Product collection for installation to an SAP Datasphere space. After your request is approved, you can install the data product to the space where users can access its data for use in modeling and other projects.")
 
 [Understanding Different Catalog Views](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/563dc55fc3504a9db6ccc525df2c006a.html "You can access the catalog from either the SAP Business Data Cloud cockpit or SAP Datasphere systems. The system you use to access the catalog determines the content you see and the tasks you can perform to manage source systems and content.") :arrow_upper_right:
 

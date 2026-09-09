@@ -111,6 +111,13 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     > ### Note:  
     > Once the object is saved, the technical name can no longer be modified.
 
+    > ### Caution:  
+    > If you plan to share this local table \(file\) through Delta Sharing, be aware that Delta Sharing identifiers are case-insensitive. As a result, two local table \(file\) objects with technical names that differ only by letter case, for example, `SalesOrders` and `salesorders`, are treated as the same identifier and cannot be shared within the same scope.
+    > 
+    > SAP Datasphere rejects deployments that would create such naming conflicts.
+    > 
+    > For more information, see [Rules for Technical Names](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/982f9a30d4ab49c8b019cfaf3dc08391.html "Rules and restrictions apply to the technical names of objects that you create in SAP Datasphere. The technical name by default is synchronized with the business name by using rules to automatically replace invalid characters.") :arrow_upper_right:.
+
 
     
     </td>
@@ -186,10 +193,11 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
 3.  Review \(and update if needed\) the *Change Tracking* section of your local table \(file\):
     -   Delta Capture: If enabled, it tracks the delta changes that are made in the local table adding 2 delta capture columns: `Change Type` and `Change Date`. It cannot be changed after deployment.
     -   Delta Capture Table: When Delta Capture is enabled, this field is added, and a default name for the delta capture table is defined \(Technical name + \_Delta\). 
-    -   Deletion Vector: If the table is not used as a flow source, you can enable deletion vectors to optimize how delete and update operations are handled in local tables \(file\). By default, deleting or updating a single row requires rewriting the entire file that contains it. With deletion vectors enabled, lightweight metadata markers are used to indicate which rows have changed. This improves replication performance and reduces storage overhead for delta capture operations. 
+    -   Deletion Vector: Deletion vectors optimize how delete and update operations are processed for local tables \(file\). When enabled, rows that are deleted or updated are tracked using lightweight metadata markers rather than rewriting the underlying data files. Without deletion vectors, modifying even a single row requires rewriting the entire file that contains that row. With deletion vectors enabled, only metadata is updated to identify changed rows, which can improve replication performance and reduce storage overhead for delta capture operations. The performance benefits depend on the workload. For update operations that affect only a subset of the data, Spark resource consumption and run time can improve by up to approximately 90%, as Parquet files do not need to be rewritten. However, for full-table update scenarios, deletion vectors may increase resource consumption and reduce performance compared to tables that do not use deletion vectors 
 
         > ### Note:  
         > -   Deletion vectors can be activated only in the table editor.
+        > -   If deletion vectors are enabled and the table is deployed, this setting cannot be disabled later. Deletion vectors modify the table's physical storage layout, and turning them off could result in inconsistent read and write behavior.
         > -   You can share the local tables \(file\) with deletion vectors enabled as data products to be consumed by SAP Databricks. See [Creating and Working with Derived Data Products in SAP Databricks](https://help.sap.com/docs/business-data-cloud/sap-databricks/creating-derived-data-products-inside-sap-databricks)
 
 

@@ -42,7 +42,7 @@ For more information about the details page, see [Data Product Details](data-pro
 
 When you find the data product or asset you want, you can do one of the following:
 
--   Install the data product where you need it \(see [Installing Data Products](installing-data-products-ea7cb80.md) and [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)\).
+-   Install the data product where you need it \(see [Requesting Access to Data Products](requesting-access-to-data-products-ea7cb80.md) and [Installing Marketplace Data Products](installing-marketplace-data-products-92c35ef.md)\).
 
 -   Open the asset in its source system where you can view it or work with it as part of an existing data project to build something new \(see [Accessing Catalog Assets](accessing-catalog-assets-dc061a2.md)\).
 

@@ -185,7 +185,8 @@ The following actions are performed:
     > ### Note:  
     > Replication task schedules are not copied and must be recreated manually.
 
--   Any objects shared to the original spaces are shared to the new spaces.
+-   New access requests are automatically created and approved for any data products installed in the original spaces to allow them to be installed in the new spaces, see [Obtaining Access to Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/998fb5f447d04021baf497375261c9d1.html "You can request access for data products that you discover in the catalog.") :arrow_upper_right:.
+-   Any objects installed in the original spaces are copied to the new spaces.
 -   When copying intelligent content spaces, any objects protected by a namespace in the original space are removed from the namespace in the new space, so that a technical name such as `SAP.Sales_View` is converted to `SAP_Sales_View`.
 -   The new spaces are added as scopes to all scoped roles that the original spaces belong to, but no users are added to the new spaces, by default. For information about adding users to spaces, see [Create a Scoped Role to Assign Privileges to Users in Spaces](../Managing-Users-and-Roles/create-a-scoped-role-to-assign-privileges-to-users-in-spaces-b5c4e0b.md).
 

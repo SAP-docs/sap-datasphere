@@ -81,7 +81,7 @@ Displays the time \(in seconds\) spent reading data from the remote sources.
 </td>
 <td valign="top">
 
-Displays the maximum amount of memory \(in MiB\) the task to persist view data has used during the runtime in SAP HANA.
+Displays the maximum amount of memory the task to persist view data has used during the runtime in SAP HANA.
 
 > ### Note:  
 > You can see this information if the option *Enable Expensive Statement Tracing* is enabled, and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. Otherwise, no number is displayed.
@@ -115,7 +115,7 @@ For more information, see [Monitoring SAP Datasphere](https://help.sap.com/viewe
 </td>
 <td valign="top">
 
-Displays how much size \(in MiB\) the view is using in your memory.
+Displays how much size the view is using in your memory.
 
 </td>
 </tr>
@@ -277,7 +277,7 @@ Displays the number of records persisted with the partition.
 </td>
 <td valign="top">
 
-Displays the maximum amount of memory \(in MiB\) the task to persist view data for this partition range has used during the runtime in SAP HANA.
+Displays the maximum amount of memory the task to persist view data for this partition range has used during the runtime in SAP HANA.
 
 > ### Note:  
 > You can see this information if the option *Enable Expensive Statement Tracing* is enabled, and if the task exceeds the thresholds specified in <span class="FPA-icons-V3"></span> \(Configuration\) → *Monitoring*. Otherwise, no number is displayed.

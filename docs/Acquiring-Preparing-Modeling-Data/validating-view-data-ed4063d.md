@@ -10,6 +10,7 @@ This topic contains the following sections:
 -   [Key Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_keys)
 -   [Hierarchy Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_hierarchies)
 -   [Data Type Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_data_types)
+-   [Text Entity Validation Rules](validating-view-data-ed4063d.md#loioed4063dc7f53436d806ea48f2fd3949a__section_text)
 
 
 
@@ -334,4 +335,100 @@ For example, if a column `A` is specified as having a data type `Date`, and SAP 
 </table>
 
 For information about working with data types, see [Column Data Types](Acquiring-and-Preparing-Data-in-the-Data-Builder/column-data-types-7b1dc6e.md).
+
+
+
+<a name="loioed4063dc7f53436d806ea48f2fd3949a__section_text"/>
+
+## Text Entity Validation Rules
+
+The following rules are available in the *Text Entities* category:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Rule
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Language Identifier Length
+
+</td>
+<td valign="top">
+
+All language identifiers must have a length that is appropriate for the language identifier data type. For example, if the data type length is:
+
+-   1 - All identifiers must be in the form `E`, `F`, `D`.
+-   2 - All identifiers must be in the form `en`, `fr`, `de`.
+-   3 or more - Identifiers can be in the form `en`, `fr`, `de` or `en-US`, `Fr-FR`, `De-DE`. Single-character identifiers in the form `E`, `F`, `D` are not allowed.
+
+Severity: Error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Language Identifier Data Type
+
+</td>
+<td valign="top">
+
+The data type of the language identifier should be appropriate for the language identifier values. If the type:
+
+-   Is `abap.lang` and identifiers are longer than one character \(eg `en-US`\), this rule returns an error.
+-   Is other than `abap.lang` and identifiers have only one character \(eg `E`\), this rule returns an error.
+-   Has a length greater than 2 but identifiers have only two characters \(eg `en`\), this rule returns a warning, indicating that you can improve performance by reducing the length.
+
+Severity: Warning or Error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Unique Language Identifiers
+
+</td>
+<td valign="top">
+
+Each primary identifier \(identifying a record\) must be associated only once with each language identifier \(identifying the language it is translated into\)
+
+For example, for a record with primary identifier `10`, you must not have two rows in your text entity associating it with `en`.
+
+This rule is case-insensitive and treats hyphens \(`-`\) and underscores \(`-`\) as equivalent, so `en` and `EN` are treated as duplicates, and so are `en-US` and `en_US`.
+
+Severity: Error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Completeness of Translations
+
+</td>
+<td valign="top">
+
+All items should be translated in all used languages.
+
+For example, if some items are translated into `Fr-FR`, then all items should be translated into `Fr-FR`.
+
+Severity: Warning
+
+</td>
+</tr>
+</table>
+
+For information about working with text entities, see [Create a Text Entity for Attribute Translation](Modeling-Data-in-the-Data-Builder/create-a-text-entity-for-attribute-translation-b25726d.md).
 

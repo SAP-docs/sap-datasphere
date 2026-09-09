@@ -82,7 +82,6 @@
     -   [Obtain SAP Datasphere IP addresses For Allowlisting in Remote Systems](Preparing-Connectivity/obtain-sap-datasphere-ip-addresses-for-allowlisting-in-remote-systems-0934f7e.md)
     -   [Manage Certificates](Preparing-Connectivity/manage-certificates-46f5467.md)
     -   [Upload Third-Party ODBC Drivers \(Required for Data Flows\)](Preparing-Connectivity/upload-third-party-odbc-drivers-required-for-data-flows-b9b5579.md)
-    -   [Authorize Spaces to Install SAP Business Data Cloud Data Products](Preparing-Connectivity/authorize-spaces-to-install-sap-business-data-cloud-data-products-67ec785.md)
     -   [Prepare Connectivity to Adverity](Preparing-Connectivity/prepare-connectivity-to-adverity-a37a758.md)
     -   [Prepare Connectivity to Amazon Athena](Preparing-Connectivity/prepare-connectivity-to-amazon-athena-8d80f60.md)
     -   [Prepare Connectivity to Apache Kafka](Preparing-Connectivity/prepare-connectivity-to-apache-kafka-1483ceb.md)

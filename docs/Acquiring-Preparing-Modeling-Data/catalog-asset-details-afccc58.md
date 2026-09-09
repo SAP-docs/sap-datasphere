@@ -126,14 +126,16 @@ If the asset was enriched, the name displayed might not match the name of the un
 <tr>
 <td valign="top">
 
-Status
+Statuses
 
 </td>
 <td valign="top">
 
 Displays the functional and publication statuses of the asset.
 
-Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they're well-maintained and accessible.") :arrow_upper_right:.
+Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. 
+
+Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they're well-maintained and accessible.") :arrow_upper_right:.
 
 </td>
 </tr>
@@ -280,13 +282,25 @@ Opens a dialog, where you can edit the asset's name and summary description to i
 </tr>
 </table>
 
+Tabs below the header provide more details about the asset:
+
+-   The *Overview* tab has sections for source properties and details.
+-   The *Documentation* tab provides a comprehensive description of the asset.
+-   The *Semantic Enrichment* tab shows tags, terms, and KPIs that have been assigned to the asset.
 
 
-## Overview: Source Properties
+
+## Overview
+
+Choose the *Overview* tab to review the source properties and other details for the asset.
+
+
+
+### Source Properties
 
 To view the asset's properties that have been extracted from the source system, select *Overview* \> *Source*.
 
-These properties are separated into the following groups: object properties and extraction system details. The properties that appear vary for each asset. This section describes the most common properties you'll encounter. Additional sections for asset properties can appear as needed. For example, the Open Hub Destination \(DEST\) asset from an SAP BW∕4HANA system will have a property group called **Destination Properties**. For details on properties not described here, see the help documentation for the source system.
+These properties are separated into the following groups: object properties and extraction system details. The properties that appear vary for each asset. The following table describes the most common properties you'll encounter. For details on properties not described here, see the help documentation for the source system.
 
 -   [Acquiring, Preparing, and Modeling Data with SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/c8a54ee704e94e15926551293243fd1d/b4a5d02cefdf45478e7376860c985202.html)
 -   [Welcome to the SAP Analytics Cloud Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html)
@@ -376,7 +390,7 @@ The type of container where the asset is saved. The type appears for assets in t
 
 Extraction system details for an asset include the source system's instance name and type. For example, the non-technical name given to an SAP Datasphere or SAP Analytics Cloud system.
 
-For some SAP BW∕4HANA and SAP BW 7.5 objects additional property sections appear:
+Some SAP BW∕4HANA and SAP BW 7.5 objects have additional property sections:
 
 
 <table>
@@ -432,11 +446,7 @@ Subscription properties \(includes the following information: extraction mode, s
 
 
 
-<a name="loioafccc581146542c485a52563167e23cc__section_zyl_jpl_bdc"/>
-
-## Overview: Detailed Asset Metadata
-
-
+### Detailed Asset Metadata
 
 You can see a preview of the detailed metadata about the asset by choosing *Overview* \> *Details*. The detailed metadata can include columns, attributes, measures, dimensions, and other properties specific to each object. This tab option appears only if the asset has detailed metadata that can be shown. Each tab in this section represents the metadata type, such as measures or attributes, and has a table with its data. The number in brackets is the total number of rows for the table, with the preview showing up to 20 rows. If there are more than 20 rows for the table, choose *Show All* to see the rest of the rows in a separate page.
 
@@ -662,7 +672,7 @@ The outermost container represents a source system \(for example, <span class="F
 
 Source systems connected to and monitored by the catalog show their business or technical name. Systems not connected to the catalog show their system type with the text "unmonitored". The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
-Target systems appear in the impact of a data product when a data product is shared to it.
+Target systems appear in the impact of a data product when a data product is installed to it.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -680,7 +690,7 @@ The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space, <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder, or <span class="FPA-icons-V3"></span> BW InfoArea\). It contains objects that either appear in the lineage of or are impacted by the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
 -   A :package: data product. The data product is visible if you have access and view permission for it. For example, you are a member of the context associated with it or if you are a member of the space where it has been installed. Also, you will be able to view the details to see a brief summary of the data product or open the data product page.
--   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is shared to certain target systems \(for example, SAP Databricks\), it's shared to a folder. 
+-   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is installed to certain target systems \(for example, SAP Databricks\), it's installed to a folder. 
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 

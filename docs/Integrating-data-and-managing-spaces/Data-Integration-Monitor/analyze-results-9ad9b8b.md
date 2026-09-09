@@ -95,7 +95,7 @@
         <tr>
         <td valign="top">
         
-        *Peak Memory \(MiB\)*
+        *Peak Memory*
         
         </td>
         <td valign="top">

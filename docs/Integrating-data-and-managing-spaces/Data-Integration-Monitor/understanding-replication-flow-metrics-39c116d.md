@@ -929,7 +929,7 @@ When you run a replication flow, you can define how data is partitioned for each
     <tr>
     <td valign="top">
     
-    Source Data Size \(MiB\)
+    Source Data Size
     
     </td>
     <td valign="top">
@@ -941,7 +941,7 @@ When you run a replication flow, you can define how data is partitioned for each
     <tr>
     <td valign="top">
     
-    Target Data Size \(MiB\)
+    Target Data Size
     
     </td>
     <td valign="top">

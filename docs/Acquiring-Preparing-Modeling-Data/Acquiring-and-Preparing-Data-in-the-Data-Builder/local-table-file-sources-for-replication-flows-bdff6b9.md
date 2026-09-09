@@ -9,10 +9,10 @@ You can use local table \(file\) sources in a replication flow to replicate data
 ## Prerequisites
 
 -   A local table \(file\) source must already exist in your SAP Datasphere space \(see [Creating a Local Table \(File\)](creating-a-local-table-file-d21881b.md)\).
+-   The source local table \(file\) must not be a shared local table \(file\).
 -   You must have the required privileges to create and run replication flows.
--   Only the *Initial Only* load type is supported.
--   Local tables \(file\) that have deletion vectors cannot be added as sources for replication flows.
-
+-   *Initial Only*load type is supported for all local table \(file\) sources. *Initial and Delta* and *Delta Only* are supported only if the source object has *Delta Capturing*enabled.
+-   Local tables \(file\) that have deletion vectors enabled are supported as sources for replication flows.
 
 
 
@@ -24,7 +24,11 @@ You can replicate local table file sources to the following targets:
 -   Amazon S3
 -   Google Cloud Storage
 -   Azure Data Lake Storage Gen2
--   SFTP
+-   Secure File Transfer Protocol \(SFTP\)
+
+    > ### Caution:  
+    > Secure File Transfer Protocol \(SFTP\) does not support the load type *Delta Only*.
+
 -   Google BigQuery
 
 

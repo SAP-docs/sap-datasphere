@@ -169,6 +169,18 @@ Scroll, zoom, or recenter the diagram:
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Details
+
+</td>
+<td valign="top">
+
+You can create a Business Summary, or let AI generate a business summary for you to quickly understand how your pipeline is structured, or create an Errors and Impacts Summary to identify issues and pinpoint any blocked data movements. For more information, see [Generate Summaries of the Data Pipeline Analyzer With AI](generate-summaries-of-the-data-pipeline-analyzer-with-ai-1e72ea2.md)
+
+</td>
+</tr>
 </table>
 
 

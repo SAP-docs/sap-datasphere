@@ -301,7 +301,84 @@ Select the number of block-hours starting from 1.
 
 Select the number of API calls needed per month in units of 1000.
 
-1000 Object Store Requests are equal to 0.026 capacity units.
+The Object Store Requests are separated into Read, Write, and Control Plane requests, depending on the operation. You are billed separately for each request type based on actual usage:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Request Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+<th valign="top">
+
+CU per 1000 Requests
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Control Plane
+
+</td>
+<td valign="top">
+
+Operations that manage the Object Store infrastructure, such as creating or deleting containers, configuring access policies, and managing permissions. In some cases, read and write operations may also be classified as Control Plane requests when they require routing through SAP HANA Cloud, data lake infrastructure.
+
+</td>
+<td valign="top">
+
+0.0226
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Category 1 \(Read\)
+
+</td>
+<td valign="top">
+
+Operations that retrieve data from the Object Store without modifying it. Most read operations are classified in this category.
+
+</td>
+<td valign="top">
+
+0.0015
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Category 2 \(Write\)
+
+</td>
+<td valign="top">
+
+Operations that create, modify, copy, or enumerate objects in the Object Store. Most write and list operations are classified in this category.
+
+</td>
+<td valign="top">
+
+0.0182
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> The capacity unit estimation shown on this screen is calculated using an average distribution of 50% Control Plane, 40% Read, and 10% Write requests. Your actual consumption reflects the exact number of requests consumed in each category.
+
+
 
 </td>
 </tr>
@@ -827,6 +904,23 @@ AWS
 </td>
 <td valign="top">
 
+2960 GB
+
+</td>
+<td valign="top">
+
+16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
 5970 GB
 
 </td>
@@ -878,7 +972,7 @@ GCP
 </td>
 <td valign="top">
 
-1904
+1904 GB
 
 </td>
 <td valign="top">
@@ -1214,6 +1308,23 @@ AWS
 <td valign="top">
 
 32-912 GB
+
+</td>
+<td valign="top">
+
+8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AWS
+
+</td>
+<td valign="top">
+
+1472 GB
 
 </td>
 <td valign="top">

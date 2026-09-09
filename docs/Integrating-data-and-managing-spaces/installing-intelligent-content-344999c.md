@@ -14,6 +14,7 @@ When intelligent content is installed:
 
 -   SAP-managed spaces are created in SAP Datasphere to contain the intelligent content \(see [Ingestion Spaces and Other SAP Business Data Cloud Spaces](ingestion-spaces-and-other-sap-business-data-cloud-spaces-8390855.md)\).
 -   Replication flows, tables, views, and analytic models are created in these spaces to ingest, prepare and expose the required data to SAP Analytics Cloud.
+-   Access requests are automatically created and approved to allow the consumption of the required data products in the Preparation Space \(see [Obtaining Access to Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/998fb5f447d04021baf497375261c9d1.html "You can request access for data products that you discover in the catalog.") :arrow_upper_right:\).
 
 SAP Datasphere users can work with intelligent content in the following ways:
 

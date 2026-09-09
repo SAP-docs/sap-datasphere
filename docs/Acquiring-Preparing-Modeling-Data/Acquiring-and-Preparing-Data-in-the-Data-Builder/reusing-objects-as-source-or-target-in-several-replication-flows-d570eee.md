@@ -46,7 +46,7 @@ As a consequence:
 -   RF1 has a "Dependent Replication Flow", which is RF2.
 
 > ### Caution:  
-> RF2 \(dependent replication flow\) cannot be run until RF1 \(source replication flow\) run is complete.
+> RF2 \(dependent replication flow\) cannot be run until RF1 \(source replication flow\) run is complete. This is valid for *Initial Only* and *Initial and Delta* load types only.
 
 You can display if a replication flow has a dependent replication flow in 2 ways:
 

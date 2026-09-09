@@ -53,26 +53,12 @@ For large volumes of flagged records, create a secondary transformation flow wit
 1.  Create a new transformation flow. See [Creating a Transformation Flow in a File Space](creating-a-transformation-flow-in-a-file-space-b917baf.md).
 2.  Use the *Data Remediation* table as both source and target.
 3.  Add a Python operator between them. Keep the *Support Data Validation* toggle disabled in the Python node properties side panel.
-
-    If *Support Data Validation* is enabled, you must return both the valid and error data as separate dataframes.
-
 4.  Click *Edit* in the *Script* section and implement your correction code.
 
     You must explicitly set the value of the`_DRT_STATUS` to `1` in the Python code to mark the records as resolved.
 
     > ### Example:  
-    > For example, you can fix negative values, standardize formats, correct dates.
-    > 
-    > > ### Sample Code:  
-    > > ```
-    > > 
-    > > def transform(pdf):
-    > > 	mask = (pdf["SALARY"] < 20000)
-    > > 	valid_df = pdf[~mask]
-    > > 	error_df = pdf[mask]
-    > > 	return valid_df, error_df
-    > > 									
-    > > ```
+    > For example, you can fix negative values, standardize formats, correct dates - EXAMPLE REQUIRED FROM DEV
 
     Corrected records are stored in the *Data Remediation* table and automatically included in the next main flow run.
 

@@ -14,7 +14,7 @@ The catalog search results provide high-level information about a data product, 
 
 For example, when a data modeler reviews the details of a data product, they can check out any of the resources to get information about how to use it. They can also review individual APIs and learn how to extend them.
 
-After you view the data product details, you can choose to install it in your space \(see [Installing Data Products](installing-data-products-ea7cb80.md)\).
+After you view the data product details, you can add it to your cart and include it in your access request. See [Requesting Access to Data Products](requesting-access-to-data-products-ea7cb80.md). 
 
 
 
@@ -60,7 +60,7 @@ Displays the lifecycle, release, and functional statuses for a data product. You
 -   The release status reflects the data product's availability to consumers.
 -   The functional status reflects the integrity of the data product in relation to its source system.
 
-
+If the data product is not part of your entitlement, the **Data Product Entitlement Information** status is the only status visible. Contact your administrator for assistance with these data products.
 
 </td>
 </tr>
@@ -80,13 +80,13 @@ The *Personal Data* and *Sensitive Personal Data* tags help you quickly identify
 For more information, see [Data Protection and Privacy Tagging](data-protection-and-privacy-tagging-6c00246.md).
 
 > ### Example:  
-> The *Personal Data* is applied to data products that contain personal data, such as a person's name.
+> The *Personal Data* and *Sensitive Personal Data* tags are applied to a data product that contains both personal data, such as a person's name, and sensitive personal data, such as address information.
 > 
-> ![Data product details page showing Personal Data tag highlighted.](images/Data_Product_Details_-_Personal_Data_tag_d744f21.png)
+> ![Data product details with tags for data protection and privacy highlighted.](images/Data_Product_with_Data_Protection_and_Privacy_Tags_f1253d9.png)
 > 
-> To see which specific objects in an API have this tag, select the API to view its details page. Choose *View Columns* to see which columns contain personal data.
+> To see which specific objects in an API have these tags, select the API to view its details page. The objects with personal data have an icon next to them. Choose *View Columns* to see which columns contain personal data.
 > 
-> ![API details page showing objects with the Personal Data' tag under Data Protection and Privacy column.](images/API_Details_-_Personal_Data_tag_81247a4.png)
+> ![API details page showing objects with the Personal Data' tag under Data Protection and Privacy column.](images/API_Details_with_Data_Protection_and_Privacy_Tags_5419659.png)
 
 
 
@@ -125,6 +125,18 @@ Source System
 <td valign="top">
 
 Displays the name and type of source system the data product is extracted.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Access
+
+</td>
+<td valign="top">
+
+Displays the total number of access requests and agreements for the data product. This total includes your access requests and agreements, and those made by other users in spaces you have access to.
 
 </td>
 </tr>
@@ -173,6 +185,30 @@ Description
 <tr>
 <td valign="top">
 
+<span class="SAP-icons-V5"></span>*Add to Cart*
+
+</td>
+<td valign="top">
+
+Adds the data product to your request cart. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<span class="SAP-icons-V5"></span>*Remove from Cart*
+
+</td>
+<td valign="top">
+
+Removes the data product from your request cart. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *View Version History*
 
 </td>
@@ -185,7 +221,7 @@ Opens a dialog that shows the change history for the data product.
 <tr>
 <td valign="top">
 
-*Open Impact and Lineage* 
+<span class="FPA-icons-V3"></span> \(Open Impact and Lineage\) 
 
 </td>
 <td valign="top">
@@ -215,6 +251,18 @@ Updates the data product with the latest minor version in all spaces where it's 
 <td valign="top">
 
 Adds frequently used data products to your favorites. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+:shopping_cart:
+
+</td>
+<td valign="top">
+
+Displays a list of data products that you've added to your request cart. This action appears after you select the *Data Product* collection. 
 
 </td>
 </tr>
@@ -252,18 +300,6 @@ Description
 <tr>
 <td valign="top">
 
-Business Name
-
-</td>
-<td valign="top">
-
-Displays the business name for the data product.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Lifecycle Status
 
 </td>
@@ -271,8 +307,15 @@ Lifecycle Status
 
 Displays the lifecycle status of the data product:
 
--   Active: The data product is active and ready.
--   Inactive: The data product is inactive and can’t be installed. To install this data product, you must ask your administrator to activate any data package that contains it.
+-   **Active**: The data product is active and ready.
+-   **Active with Errors**: The data product is active but has errors that prevent proper use.
+-   **Provisioning**: The data product is being installed or provisioned and isn’t ready for use yet. It's ready after it acquires data from input ports, applies necessary transformations, and delivers it through output ports.
+-   **Provisioning Error**: Provisioning the data product failed because of errors. The data product must be repaired before it can be provisioned. Contact your administrator for assistance.
+-   **Data Loading**: Data is loading for the data product. The data product will be ready for use after the data is loaded.
+-   **Data Loading Error**: Data for the data product was loaded, but some errors occurred. The errors must be resolved before you can use the data product. For assistance, contact your administrator.
+-   **Deprovisioning**: The data product can’t be used because it’s being uninstalled or deprovisioned. Deprovisioning a data product involves removing replicated and unused data. Users in the target system will no longer have access to the data product.
+-   **Deprovisioning Error**: Deprovisioning the data product failed because of errors. Try deprovisioning again or contact your administrator for assistance.
+-   **Inactive**: The data product is inactive and can’t be installed. To install this data product, you must ask your administrator to activate any data package that contains it.
 
 
 
@@ -293,6 +336,18 @@ Displays the release status of the data product:
 -   Deprecated: The data product is available to consumers, but it's not recommended to use it.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Functional Status
+
+</td>
+<td valign="top">
+
+Displays the integrity of the data product in relation to its source system: Current, Outdated, or Unavailable.
 
 </td>
 </tr>
@@ -359,36 +414,12 @@ Displays the open resource discovery \(ORD\) identifier for the API.
 <tr>
 <td valign="top">
 
-Description
-
-</td>
-<td valign="top">
-
-Displays the long description for the data product.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Version
 
 </td>
 <td valign="top">
 
 Displays the latest version number of the data product. Choose *View Version History* to see all version changes for the data product.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Changed On
-
-</td>
-<td valign="top">
-
-Displays the date and time when the data product was changed.
 
 </td>
 </tr>
@@ -413,6 +444,18 @@ Visibility
 <td valign="top">
 
 Displays the visibility context for a data product. The visibility context controls who has access to a data product. For example, public visibility means that a data product is visible for all users.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Entitlement
+
+</td>
+<td valign="top">
+
+Displays a value to indicate that the data product is part of your entitlements. **Valid** means the data product is included in your entitlements.
 
 </td>
 </tr>
@@ -532,9 +575,9 @@ Displays data provider's name. For data products from an SAP Datasphere system, 
 
 
 
-## Data Product API Details
+## Data Product APIs
 
-You can view a list of APIs for the data product by choosing *Overview tab* \> *Details*.
+You can view a list of APIs for the data product by choosing the *APIs* tab.
 
 Data-sharing protocols, such as Delta Sharing, are standardized ways to share data products between systems. The APIs available for the data product are programmable interfaces that you use to access and manage the data product's data and metadata. The APIs also automate tasks like:
 
@@ -569,7 +612,7 @@ Name
 </td>
 <td valign="top">
 
-Displays the name for the data product \(API\).
+Displays the name for the data product \(API\). The name is a link that opens the API’s details page. 
 
 </td>
 </tr>
@@ -582,18 +625,6 @@ Description
 <td valign="top">
 
 Displays a description for the use and purpose of the data product \(API\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Version
-
-</td>
-<td valign="top">
-
-Displays the version number of the data product \(API\).
 
 </td>
 </tr>
@@ -618,6 +649,18 @@ Functional Status
 <td valign="top">
 
 Displays the functional status of the data product \(API\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Version
+
+</td>
+<td valign="top">
+
+Displays the version number of the data product \(API\).
 
 </td>
 </tr>
@@ -655,11 +698,11 @@ Actions
 
 Choose an action:
 
--   *Install*: Opens the *Import Entities* wizard. Follow the steps to import the entities of an API for a data product to your space on the local SAP Datasphere system.
+-   <span class="SAP-icons-V5"></span> *Add to Cart*: Adds the data product to your request cart.
+-   <span class="SAP-icons-V5"></span> *Remove from Cart*: Removes the data product from your request cart. 
 -   *Update*: Updates the data product with the latest minor version in all spaces where it's installed. This action is available only if the installed version differs from the version available in the catalog and you have the required permissions.
--   *Uninstall*: Opens a dialog, where you choose a space to a data product. Uninstalling a data product removes all entities that are part of the API. You can uninstall a data product from a specific SAP Datasphere space after all its dependent objects have been removed.
 
-The actions to install, uninstall, or update data products appear based on the privileges that are assigned to you \(see [Installing Data Products](installing-data-products-ea7cb80.md)
+
 
 </td>
 </tr>
@@ -669,7 +712,7 @@ The actions to install, uninstall, or update data products appear based on the p
 
 ### API Details
 
-You can learn more about an API by selecting it to view its details page. Information is separated into the following areas:
+You can learn more about an API by selecting its name to view its details page. Information is separated into the following areas:
 
 
 <table>
@@ -702,12 +745,10 @@ Displays the version and tags for data protection and privacy. A toolbar with ac
 
 Description
 
-*Overview* \> *Description*
-
 </td>
 <td valign="top">
 
-Displays a description of the API extracted from the source system. 
+Displays a description of the API extracted from the source system.This section appears under the *Overview* tab.
 
 </td>
 </tr>
@@ -716,12 +757,10 @@ Displays a description of the API extracted from the source system.
 
 Properties
 
-*Overview* \> *Properties*
-
 </td>
 <td valign="top">
 
-Displays the same high-level information found in the data product details, along with additional information such as the Open Resource Discovery \(ORD\) identifier. 
+Displays the same high-level information found in the data product details, along with additional information such as the Open Resource Discovery \(ORD\) identifier.This section appears under the *Overview* tab.
 
 </td>
 </tr>
@@ -730,12 +769,21 @@ Displays the same high-level information found in the data product details, alon
 
 Details
 
-*Overview* \> *Details*
-
 </td>
 <td valign="top">
 
-Displays a list of available objects \(or entities\), their container paths, whether they contain personal data, sensitive personal data, or both, and their primary keys. If the primary key is missing, the API can't be installed. To see more details of a particular object, choose the *View Columns* link. This information includes the object's name, type, valid values, the specific columns that have personal or sensitive personal data, and more. 
+Displays a list of available objects \(or entities\) and their details. This section appears under the *Overview* tab. Review the following information: 
+
+-   Business name: Displays a descriptive name of the object that’s easy to understand. Near the business name, you might see the following icons:
+    -   <span class="SAP-icons-V5"></span> \(Personal Data\) and <span class="SAP-icons-V5"></span> \(Sensitive Personal Data\) indicate the object requires strict access control.
+    -   <span class="SAP-icons-V5"></span> \(Unavailable\) indicates that the object doesn't contain any data.
+    -   <span class="SAP-icons-V5"></span> \(Review Columns\) indicates that the columns in the object need to be reviewed because the column doesn't have data or the release status of the column is deprecated or decommissioned.
+
+-   Technical name: Displays the underlying name used by the source system for processing data.
+-   Container path: Displays the location path of the object in the source system.
+-   Primary key indicator: Displays whether a primary key is detected. If the primary key is missing, the API can't be installed.
+
+Select *View Columns* to review details for the column.
 
 </td>
 </tr>
@@ -747,7 +795,7 @@ Documentation
 </td>
 <td valign="top">
 
-Provides more details about the API, including external links for more information on how to use it and information on how the API can be extended. 
+Provides more details about the API, including external links for more information on how to use it and information on how the API can be extended.Select the *Documentation* tab to view this section.
 
 </td>
 </tr>
@@ -761,6 +809,7 @@ Provides more details about the API, including external links for more informati
 
 The *Documentation* tab provides supporting documentation and resources for the data product:
 
+-   *Terms and Conditions*: This tab provides links to the terms and agreements for using the data product.
 -   *Description*: This tab provides a more detailed description of the data product.
 -   *External Resources*: This tab provides links to resources that provides more information about the data product and how to use it. For example, images, other file types, sample data, and more.
 
@@ -817,7 +866,7 @@ The outermost container represents a source system \(for example, <span class="F
 
 Source systems connected to and monitored by the catalog show their business or technical name. Systems not connected to the catalog show their system type with the text "unmonitored". The number in brackets indicates the total number of objects in the container that are part of the impact or lineage of the analyzed object.
 
-Target systems appear in the impact of a data product when a data product is shared to it.
+Target systems appear in the impact of a data product when a data product is installed to it.
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -835,7 +884,7 @@ The inner container represents one of the following:
 
 -   A location in the source system \(for example, <span class="FPA-icons-V3"></span> SAP Datasphere space, <span class="FPA-icons-V3"></span> SAP Analytics Cloud folder, or <span class="FPA-icons-V3"></span> BW InfoArea\). It contains objects that either appear in the lineage of or are impacted by the analyzed object. If an object is located within a sublocation \(for example, a subfolder\), you'll see a series of nested inner containers.
 -   A :package: data product. The data product is visible if you have access and view permission for it. For example, you are a member of the context associated with it or if you are a member of the space where it has been installed. Also, you will be able to view the details to see a brief summary of the data product or open the data product page.
--   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is shared to certain target systems \(for example, SAP Databricks\), it's shared to a folder. 
+-   A <span class="FPA-icons-V3"></span> folder in a target system. When a data product is installed to certain target systems \(for example, SAP Databricks\), it's installed to a folder. 
 
 You can expand or collapse a container, using the <span class="FPA-icons-V3"></span> \(Show/Hide All Objects\) menu on the top-right corner of the container. The number in brackets indicates the total number of objects in the container that are part of the impact and lineage of the analyzed object.
 
@@ -1002,4 +1051,9 @@ Scroll, zoom, or recenter the diagram:
 </td>
 </tr>
 </table>
+
+**Related Information**  
+
+
+[Data Product Access Details](data-product-access-details-3145063.md "You can review details for your access requests and agreements, and those made by other users in spaces you have access to.")
 

@@ -6,6 +6,9 @@ When *Data Access Control* is defined, it can impact the data persistence. Depen
 
 Without *Data Access Control* \(DAC\), all users assigned to a space in SAP Datasphere can see and consume all data available in this space. When DAC is applied to a data layer view or a business layer object, the rows of data contained in the object are filtered based on the specified criteria and can impact the data persistence.
 
+> ### Note:  
+> For views that are deployed in a deprecated way, the persistence will be removed. You need to persist the view again. For more information see [3571243](https://me.sap.com/notes/3571243).
+
 
 
 <a name="loio7a4a983611cc4efb9415e6f3db310eaa__section_ylk_gf5_rnb"/>
@@ -28,14 +31,12 @@ While defining *Data Access Control* in your view, you need to consider the impa
 -   If you change *Data Access Control* on a view, the following happens:
 
     -   If the view is already set as persisted, the persistence will be re-attached when the view is deployed.
-    -   For views that are deployed in a deprecated way, the persistence will be removed. You need to persist the view again. For more information see [3571243](https://me.sap.com/notes/3571243).
     -   If views on top are persisted, then the persistence of the top view is removed:
         -   For top views within the same space as the deployed view, the persistence is removed when you deploy your changes.
 
             > ### Example:  
             > View A is persisted, and it consumes view B. You add a DAC on view B. When redeploying view B, persistence of view A is removed.
 
-        -   For other top views, the persistence is removed during the next data persistence run of the top view.
 
 
 
@@ -106,15 +107,4 @@ Now, the "Sales\_Bonus" view is created on top of "Sales External" and "Sales In
 ![](images/Dac_on_2_columns_and_one_union_082e108.png)
 
 With a Union, data records are selected from the underlying sources and the respective authorizations are applied . The result set is the sum of the selected records. You can persist both the "Sales External" and "Sales Internal" views but you can't persist the "Sales\_Bonus" view.
-
-
-
-### Example 7: Permissions entity for DAC is a view containing run-time dependent logic.
-
-A DAC can use a view or a table as permissions entity. A view used as permissions entity for a DAC can contain run-time dependent logic. If such a DAC is assigned to a view and this view is persisted, wrong results may occur when reading data from the persisted view. This behavior occurs if the runtime dependent logic inside the view used as permissions entity returns different results when loading a snapshot and when reading later on from the snapshot. In this case, only a subset of the expected entries of the view will be considered. The subset may even be an empty set.
-
-> ### Example:  
-> Let's assume we have the "EMEA\_Sales" SQL View in which the "Current day" is fetched allowing users to see the sales amount per day. A DAC is created using the "EMEA\_Sales" view as permissions entity. This DAC is assigned to a "Global\_Sales" view.
-> 
-> Now, let's say that we are on April 1st, 2021 and you decide to persist the "Global\_Sales" view. Imagine that a user would like to consume data of the "Global\_Sales" view on April 4, 2021. As a result, no data is displayed as the view was persisted with entries of data from April 1st and the DAC is configured to always fetch the entries from the current day \(April 4\).
 

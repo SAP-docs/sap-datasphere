@@ -22,6 +22,9 @@ To enable and configure your custom identity provider for your SAP Datasphere te
 > ### Note:  
 > SAP Datasphere is hosted on non-SAP data centers.
 
+> ### Note:  
+> In the SAP Datasphere tenants created after July 2, 2026, you cannot enable a custom IdP.
+
 
 
 <a name="loio9b26536159354aea9024a99cbbe60b4e__context_axs_j3w_tfc"/>

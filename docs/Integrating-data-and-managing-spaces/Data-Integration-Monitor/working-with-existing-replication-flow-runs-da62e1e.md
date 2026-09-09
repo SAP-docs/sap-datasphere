@@ -8,6 +8,24 @@ You can pause a replication flow run and resume it later, or stop it completely 
 
 
 
+<a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_"/>
+
+## Scheduling a Replication Flow
+
+You can create a schedule for your replication flow and include it in a task chain.
+
+> ### Note:  
+> -   For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.* Replication flows that contain a mix of Initial Only and delta-capable objects cannot be scheduled or used in a task chain, split these into two separate replication flows: one containing all Initial Only objects, and one containing all delta-capable objects with *Delta Load Run set* to *At Scheduled Time.*
+
+To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
+
+> ### Caution:  
+> Schedule no more than 100 replication flows at the same schedule interval. Running a large number of flows simultaneously can exhaust available external connections and cause runtime errors.
+
+For more information, see [Schedule a Data Integration Task \(Simple Schedule\)](schedule-a-data-integration-task-simple-schedule-7c11059.md) and [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+
+
+
 <a name="loioda62e1ee746448e8bc043e1be4377cbe__section_ReplFlow_Pausing"/>
 
 ## Pausing and Resuming a Replication Flow Run
@@ -65,7 +83,15 @@ The value is updated once per hour.
 
 ## Stopping a Replication Flow Run
 
-If you do so, the flow run is stopped permanently in SAP Datasphere as well as in the source. You can still run it again, but it will then start from scratch \(rather than from where it left off when you stopped it\). If you stop a replication flow run because you don't need it anymore, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow, or a Replication Object](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+If you stop a replication flow run, the flow is stopped permanently in SAP Datasphereas well as in the source. If you no longer need the replication flow, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow, or a Replication Object](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+
+The stop options available depend on your replication flow type:
+
+-   Replication flows with Initial Only objects: Choose *Stop* to stop the flow and clear the runtime state. The next run starts from the beginning.
+-   Replication flows with delta-capable objects and Delta Load Run set to At Scheduled Time:
+    -   *Stop Run with Clean Up*: Stops the flow and clears the runtime state. The next run starts from the beginning.
+    -   *Stop Run without Clean Up:* Stops the flow and preserves the runtime state. The next run resumes from where it stopped.
+
 
 To stop a replication flow run:
 
@@ -78,6 +104,7 @@ To stop a replication flow run:
 > ### Note:  
 > -   > You can’t stop a paused replication flow. To stop a paused flow, first resume it and then stop the run.
 > -   > You must always stop or pause a running replication flow before a source system downtime.
+> -   > If a task chain is cancelled while a replication flow is running, the task chain waits for the replication flow to complete or fail. If the flow runs longer than expected, stop it manually using the relevant stop option above.
 
 
 
@@ -123,11 +150,20 @@ To pause, resume or restart a replication flow:
 6.  In the *Object* list, select the relevant object and click *Object* \> *Pause Object* or *Object* \> *Resume Object* or *Object* \> *Restart Object* depending the action you want to perform.
 
 > ### Note:  
-> When you pause an object flow run, the flow is stopped in SAP Datasphere for this object only, but not in the source. Consequently, the system still keeps track of changes in the source, but does not copy them to the target. The other objects contain in the replication flow are not paused and are being replicated.
+> When you pause a replication object, the flow is stopped in SAP Datasphere for this object only, but not in the source. Consequently, the system still keeps track of changes in the source, but does not copy them to the target.
 > 
 > When you resume the object flow run, the system replicates all source data changes that happened while the object flow run was paused.
 > 
 > When you restart an object flow run, the replication restarts from the beginning.
+> 
+> > ### Caution:  
+> > The*Restart* object action is not supported when *Delta Load Run* is set to *At Scheduled Time*.
+> > 
+> > To reinitialize a delta-capable object:
+> > 
+> > 1.  Open the replication flow in its editor and remove the relevant object.
+> > 2.  Choose*Deploy*.
+> > 3.  Add the object back and choose *Deploy*again.
 
 
 
@@ -166,4 +202,27 @@ From the details screen of a replication flow run, you can change the run settin
 
     For more information, see [Configure the Run Settings of a Replication Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3f5ba0c5ae3944c1b7279bb989a2a5b5.html "Define settings and properties for your replication flow and individual replication objects.") :arrow_upper_right:.
 
+
+
+
+## Transporting Runtime Settings
+
+You can select which runtime settings are included when the replication flow is exported using the Transport app.
+
+1.  Go to *Monitoring* → *Data Integration* → *Flows monitor.*
+2.  Navigate to the details screen of your replication flow by choosing *Details*.
+3.  In the *Transport* panel, enable the settings you want to include in the transport:
+    -   *Include Delta Load Run*
+    -   *Include Delta Load Frequency*
+    -   *Include Thread Limit for Initial Load*
+    -   *Include Email Notification Configuration*
+    -   *Include Capture Source Schema Changes*
+
+4.  To include all settings at once, select *Include all settings*.
+
+> ### Note:  
+> -   Runtime settings are applied only after the replication flow is deployed in the target tenant.
+> -   If *Delta Load Run* is set to *At Scheduled Time*but the target tenant's replication flow contains only Initial Only objects, the setting is automatically corrected to *On Delta Interval* during deployment.
+> -   Email notifications are not triggered if the distribution list is not available in the target tenant.
+> -   Runtime settings are only supported via ACN transport. Standalone JSON export and import are not supported.
 
