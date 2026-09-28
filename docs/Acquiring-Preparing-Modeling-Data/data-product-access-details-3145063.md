@@ -11,11 +11,14 @@ Open the *Data Product Access* page from the side navigation by choosing <span c
 > ### Note:  
 > If you are unassigned from a space, you won't see the access requests and agreements for that space, even the ones you created.
 
-This page has tabs that separate the access requests from the access agreements. The *Requests* tab shows access requests that are awaiting approval or have been rejected. The *Agreements* tab shows access agreements that are current or have ended.
+This page has the following actions and tabs:
+
+-   The *Requests* tab shows access requests that are awaiting approval or have been rejected.
+-   The *Agreements* tab shows access agreements that have other statuses, such as **Current** or **Ended**.
 
 You can use the **Search** field and the view tools to find the access request or agreement you want. When you select a request or agreement, the data product access details opens as a panel on the right side of the window.
 
-![Data Product Access page showing requests list and request details panel.](images/Data_Product_Access_Request_Details_-_BDC_1f4af4e.png)
+![Data Product Access page showing requests list and request details panel.](images/Data_Product_Access_Details_Page_0b5222c.png)
 
 The request or agreement details header provides an overview that includes the following information:
 

@@ -125,16 +125,275 @@ You can use REST API connections as sources in replication flows to replicate da
 
 
 
-## Unsupported Data Types
+## Data Types
 
-The following source data types are currently not supported and are skipped during replication:
+The following table shows how REST API source data types are mapped to internal data types. Data types that are not supported are skipped during replication.
 
--   time
--   hana.ST\_POINT
--   hana.ST\_GEOMETRY
 
-In addition, the following data types are automatically converted for local table file targets:
+<table>
+<tr>
+<th valign="top">
 
--   decfloat16 / decfloat34 → decimal\(38,6\)
--   uint64 → decimal\(20,0\)
+Source Data Type
+
+</th>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+boolean
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+byte
+
+</td>
+<td valign="top">
+
+uint8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+date
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+datetime
+
+</td>
+<td valign="top">
+
+timestamp
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+datetimeoffset
+
+</td>
+<td valign="top">
+
+timestamp
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+double
+
+</td>
+<td valign="top">
+
+float64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+guid
+
+</td>
+<td valign="top">
+
+string\(36\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+hana.ST\_GEOMETRY
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+hana.ST\_POINT
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+int16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+int32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+int64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+sbyte
+
+</td>
+<td valign="top">
+
+uint8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+single
+
+</td>
+<td valign="top">
+
+float32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string \(size ≤ 5000\)
+
+</td>
+<td valign="top">
+
+string\(size\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string \(size \> 5000\)
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string \(without size\)
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timeofday
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+</table>
 

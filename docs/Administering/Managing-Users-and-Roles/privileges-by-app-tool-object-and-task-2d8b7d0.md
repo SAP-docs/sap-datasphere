@@ -1208,7 +1208,7 @@ See [Set Priorities and Statement Limits for Spaces or Groups](../Creating-Space
 To set priorities and statement limits for spaces or groups, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *System* tool.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -1363,28 +1363,53 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 Delete spaces
 
-See [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:
+See [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right: and [Delete Spaces](../Creating-Spaces-and-Allocating-Storage/delete-spaces-9bf0d46.md)
 
 </td>
 <td valign="top">
 
-To move your space to the *Recycle Bin* area, you must have a scoped role that grants you access to a space with the following privileges:
+To delete spaces, which will be automatically moved to the *Recycle Bin*, you must have either:
+
+
+<table>
+<tr>
+<td valign="top">
+
+A global role that allows you to delete any space, by granting you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-------M`\) - To manage and delete spaces in the *Space Management* tool.
+-   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
+-   *User* \(`-------M`\) - To manage user access to spaces.
+
+The *DW Administrator* role template, for example, grants these privileges.
+
+</td>
+<td valign="top">
+
+A scoped role that grants you access to the space to delete with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RUD----`\) - To open, update and delete your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 -   *Scoped Role User Assignment* \(`-------M`\) - To manage the users who can access your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* role template, for example, grants these privileges.
+
+</td>
+</tr>
+</table>
+
+For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Restore spaces from, or empty the recycle bin
+Restore deleted spaces, or delete them from the *Recycle Bin*
 
-See [Restore Spaces from, or Empty the Recycle Bin](../Creating-Spaces-and-Allocating-Storage/restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md)
+See [Manage Deleted Spaces in the Recycle Bin](../Creating-Spaces-and-Allocating-Storage/manage-deleted-spaces-in-the-recycle-bin-c4e26c0.md)
 
 </td>
 <td valign="top">
@@ -1392,8 +1417,10 @@ See [Restore Spaces from, or Empty the Recycle Bin](../Creating-Spaces-and-Alloc
 To restore spaces, or delete them from the *Recycle Bin*, you must have a global role with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Spaces* \(`-------M`\) - To access the *Recycle Bin* in the *Space Management* tool.
+-   *Spaces* \(`-------M`\) - To manage spaces in the *Space Management* tool.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
+-   *User* \(`-------M`\) - To manage user access to spaces.
+-   *System Information* \(`-R------`\) - To manage deleted spaces in the *Recycle Bin*.
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -1784,7 +1811,7 @@ Configuration
 To work in the *Configuration* area in the *System* tool, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *System* tool.
 
 In order to create live data connections of type tunnel, you must, in addition, have a global role that grants you the following privileges:
 
@@ -1807,7 +1834,6 @@ To work in the *Administration* area in the *System* tool, you must have a globa
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access the *System* tool.
--   *User* \(`-R------`\) - To access the *Administration* area in the *System* tool.
 
 The *DW Administrator* global role, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 

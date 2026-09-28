@@ -8,7 +8,13 @@ Use the connection to connect to and access tables from a MySQL database.
 
 This topic contains the following sections:
 
+-   [Supported Features](mysql-connections-520a260.md#loio520a2601fd7a45f084e5ed1d30c6ebfa__MySQL_usage)
+-   [Prerequisites](mysql-connections-520a260.md#loio520a2601fd7a45f084e5ed1d30c6ebfa__MySQL_prerequisites)
+-   [Configuring Connection Properties](mysql-connections-520a260.md#loio520a2601fd7a45f084e5ed1d30c6ebfa__MySQL_connection_properties)
 
+
+
+<a name="loio520a2601fd7a45f084e5ed1d30c6ebfa__MySQL_usage"/>
 
 ## Supported Features
 
@@ -44,23 +50,41 @@ For more information, see [MySQL Sources for Replication Flows](https://help.sap
 
 
 
+<a name="loio520a2601fd7a45f084e5ed1d30c6ebfa__MySQL_prerequisites"/>
+
 ## Prerequisites 
 
-If your MySQL server is an on-premise server in your local network, Cloud Connector is required for the connection between MySQL and SAP Datasphere.
+Before you can use the connection for replication flows, the following is required:
 
-When configuring Cloud Connector, ensure you create the system mapping with the following settings:
+-   Supported source versions: MySQL 8.4.x
+-   If your MySQL server is an on-premise server in your local network, Cloud Connector is required for the connection between MySQL and SAP Datasphere.
 
--   *Back-end Type*: Non-SAP System
--   *Protocol*: TCP
--   *Internal Host*: host on which the MySQL database is running to which you want to connect
--   *Port or Port Range*: port for the endpoint
--   *Virtual Host*: can be arbitrary
--   *Virtual Port*: can be arbitrary
--   *Check Internal Host*: deselected
+    When configuring Cloud Connector, ensure you create the system mapping with the following settings:
 
-For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+    -   *Back-end Type*: Non-SAP System
+    -   *Protocol*: TCP
+    -   *Internal Host*: host on which the MySQL database is running to which you want to connect
+    -   *Port or Port Range*: port for the endpoint
+    -   *Virtual Host*: should be the same as the internal host
+    -   *Virtual Port*: should be the same as the internal port
+    -   *Check Internal Host*: deselected
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
+-   A user with an administrator role has uploaded the TLS server certificate. This is required regardless of the authentication type selected in the connection.
+
+    For more information, see:
+
+    -   [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:
+    -   [Using Encrypted Connections](https://dev.mysql.com/doc/refman/8.4/en/encrypted-connections.html) in the *MySQL 8.4 Reference Manual*
+
+    For more information, see [Manage Certificates](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/46f5467adc5242deb1f6b68083e72994.html "Upload certificates and select their purpose: Choose TLS Server to secure connections or X.509 Client (Open SQL) to enable X.509 client certificate-based authentication for Open SQL database users.") :arrow_upper_right:.
+
+-   For information about assigning privileges and roles to a MySQL user, see [GRANT Statement](https://dev.mysql.com/doc/refman/8.4/en/grant.html) in the *MySQL 8.4 Reference Manual*.
 
 
+
+<a name="loio520a2601fd7a45f084e5ed1d30c6ebfa__MySQL_connection_properties"/>
 
 ## Configuring Connection Properties
 
@@ -102,7 +126,7 @@ Enter the name of the host on which the MySQL database is running.
 </td>
 <td valign="top">
 
-\[optional\] Enter the database server port number. 
+Enter the database server port number. 
 
 </td>
 </tr>
@@ -272,7 +296,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the user name.
+Enter the user name identifying the MySQL account.
 
 </td>
 </tr>
@@ -284,7 +308,7 @@ Enter the user name.
 </td>
 <td valign="top">
 
-\[optional\] Enter the password. 
+\[optional\] Enter the password for the user name. 
 
 </td>
 </tr>
@@ -319,7 +343,7 @@ To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\
 > The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
 
 > ### Note:  
-> Unencrypted keys are supported in PKCS\#8 and PKCS\#1 formats \(only RSA key type is supported\). Encrypted keys are supported in PKCS\#1 format with RSA key type.
+> Encrypted keys are supported in PKCS\#8 format.
 
 
 
@@ -367,7 +391,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the user name. 
+Enter the user name identifying the MySQL account. 
 
 </td>
 </tr>

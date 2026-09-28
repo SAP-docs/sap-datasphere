@@ -6,9 +6,6 @@ When *Data Access Control* is defined, it can impact the data persistence. Depen
 
 Without *Data Access Control* \(DAC\), all users assigned to a space in SAP Datasphere can see and consume all data available in this space. When DAC is applied to a data layer view or a business layer object, the rows of data contained in the object are filtered based on the specified criteria and can impact the data persistence.
 
-> ### Note:  
-> For views that are deployed in a deprecated way, the persistence will be removed. You need to persist the view again. For more information see [3571243](https://me.sap.com/notes/3571243).
-
 
 
 <a name="loio7a4a983611cc4efb9415e6f3db310eaa__section_ylk_gf5_rnb"/>
@@ -36,6 +33,11 @@ While defining *Data Access Control* in your view, you need to consider the impa
 
             > ### Example:  
             > View A is persisted, and it consumes view B. You add a DAC on view B. When redeploying view B, persistence of view A is removed.
+
+        -   For other top views, the persistence is removed during the next data persistence run of the top view.
+
+            > ### Note:  
+            > For views that are deployed in a deprecated way, the persistence will be removed. You need to persist the view again. For more information see [3571243](https://me.sap.com/notes/3571243).
 
 
 

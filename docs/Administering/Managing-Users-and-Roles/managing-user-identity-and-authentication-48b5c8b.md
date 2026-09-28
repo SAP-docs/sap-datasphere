@@ -26,9 +26,6 @@ SAP Cloud Identity is the default authentication method for SAP Datasphere. User
 
 ## Bundled SAP Cloud Identity Services Tenants
 
-> ### Note:  
-> Bundling with SAP Cloud Identity Services tenants is being rolled out over the course of a number of versions. For more details, see SAP Note [3619907](https://me.sap.com/notes/3619907).
-
 To allow users to sign in to your SAP Datasphere tenant and to other SAP products via single sign-on \(SSO\), you can provision an SAP Cloud Identity Services tenant for your SAP Datasphere tenant \(see [Configure Your Bundled SAP Cloud Identity Services Tenant](configure-your-bundled-sap-cloud-identity-services-tenant-fac3155.md)\). SAP Cloud Identity Services tenants support forwarding all SSO requests to a corporate IdP \(see [What Are Cloud Identity Services](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/what-is-identity-authentication)\).
 
 

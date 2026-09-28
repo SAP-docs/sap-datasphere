@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections
+# Configure OAuth 2.0 Client Credentials for ABAP-based Connections
 
-You can use authentication type *OAuth 2.0* with the client credentials grant type for *SAP ABAP* \(on-premise\) and *SAP S/4HANA* connections, supporting replication flows and data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.
+You can use authentication type *OAuth 2.0* with the client credentials or client credentials with X.509 client certificate grant type for *SAP ABAP* \(on-premise\), *SAP S/4HANA On-Premise*, *SAP BW*, and *SAP ECC* connections, supporting replication flows and for *SAP ABAP* and *SAP S/4HANA On-Premise* also supporting data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.
 
 
 
@@ -148,10 +148,12 @@ For more information, see:
 
 ## Results
 
-You can now use the *OAuth 2.0* authentication type with the client credentials grant type for an *SAP ABAP* or *SAP S/4HANA* connection to the ABAP system that you have prepared with the steps above.
+You can now use the *OAuth 2.0* authentication type with the client credentials grant type for an *SAP ABAP*, *SAP S/4HANA On-Premise*, *SAP BW*, or *SAP ECC* connection to the ABAP system that you have prepared with the steps above.
 
 For more information, see:
 
 -   [SAP ABAP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a75c1aacf951449ba3b740c7e46da3a9.html "Use an SAP ABAP connection to access data from ABAP-based on-premise or cloud systems.") :arrow_upper_right:
+-   [SAP BW Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e589041e80264f43b6c209c407336376.html "Use an SAP BW connection to access data from SAP Business Warehouse (SAP BW) or SAP BW∕4HANA systems.") :arrow_upper_right:
+-   [SAP ECC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from SAP ERP Central Component (SAP ECC) systems (on-premise).") :arrow_upper_right:
 -   [SAP S/4HANA On-Premise Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a49a1e3cc50f4af89711d8306bdd8f26.html "Use an SAP S/4HANA On-Premise connection to access data from SAP S/4HANA on-premise systems.") :arrow_upper_right:
 

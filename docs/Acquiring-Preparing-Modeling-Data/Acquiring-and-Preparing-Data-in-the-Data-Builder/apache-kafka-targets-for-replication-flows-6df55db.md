@@ -6,41 +6,46 @@
 
 If you use Apache Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.
 
-> ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
-> 
-> Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
-
-Each record from the source system is transferred into a single **message** in the target topic. The key of the messages is the combination of all primary key values of the record concatenated by "\_".
-
-**Schema registries** are **not** supported. If you choose AVRO as the serialization format, the schema is contained in every message. For the JSON serialization format, no schema information is provided.
-
-The **target container** is automatically set to "/" because Kafka does not have a superordinate container layer.
-
-> ### Note:  
-> If the Kafka cluster is behind an SAP Cloud Connector \(SCC\), the Kafka cluster and the SCC must be configured such that the broker addresses advertised by the cluster match the virtual hosts maintained for the brokers in the SCC. The simplest solution is to use the same value for virtual and internal hosts in the SCC and to maintain no dedicated advertised listeners for the Kafka brokers. If advertised listeners are maintained, these must be used as virtual hosts in SCC and as broker addresses in the connection definition.
-
-The following decimal floating point and fixed point decimal values may be **clamped** according to the data type used in the target serialization:
-
--   decfloat16 and decfloat34 are clamped to DECIMAL\(28,6\) and DECIMAL\(38,6\), respectively, for AVRO and to double range \(set to +-inf\) for JSON.
-
--   DECIMAL\(p,s\) is clamped to double range \(set to +-inf\) for JSON.
 
 
-You can **rename** target objects \(Kafka topics\). The following conditions apply:
+## Prerequisites
 
--   The new name may consist of the following characters: small latin letters \(a-z\), capital latin letters \(A-Z\), numbers \(0-9\), period \(.\), underscore \(\_\), hyphen \(-\).
+-   You must ensure that you connect to a supported Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
 
--   The maximum length for the new name is 249 characters.
+-   You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+
+    > ### Note:  
+    > Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
 
 
-For more information and examples, see also [SAP Datasphere Replication Flows Blog Series Part 3 – Integration with Kafka.](https://blogs.sap.com/2023/12/04/sap-datasphere-replication-flows-blog-series-part-3-integration-with-kafka/) and [Confluent as Replication Target](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-part-6-confluent-as-replication-target/ba-p/13693888).
 
-This topic contains the following sections:
 
--   [Additional Properties](apache-kafka-targets-for-replication-flows-6df55db.md#loio6df55db4028842c1b1866e709ffef456__section_ReplFlow_Kafka_Properties)
+## Additional Considerations
 
--   [Additional Message Headers](apache-kafka-targets-for-replication-flows-6df55db.md#loio6df55db4028842c1b1866e709ffef456__section_ReplFlow_Kafka_MessageHeaders)
+-   Each record from the source system is transferred into a single **message** in the target topic. The key of the messages is the combination of all primary key values of the record concatenated by "\_".
+
+-   **Schema registries** are **not** supported. If you choose AVRO as the serialization format, the schema is contained in every message. For the JSON serialization format, no schema information is provided.
+
+-   The **target container** is automatically set to "/" because Kafka does not have a superordinate container layer.
+
+    > ### Note:  
+    > If the Kafka cluster is behind an SAP Cloud Connector \(SCC\), the Kafka cluster and the SCC must be configured such that the broker addresses advertised by the cluster match the virtual hosts maintained for the brokers in the SCC. The simplest solution is to use the same value for virtual and internal hosts in the SCC and to maintain no dedicated advertised listeners for the Kafka brokers. If advertised listeners are maintained, these must be used as virtual hosts in SCC and as broker addresses in the connection definition.
+
+-   The following decimal floating point and fixed point decimal values may be **clamped** according to the data type used in the target serialization:
+
+    -   decfloat16 and decfloat34 are clamped to DECIMAL\(28,6\) and DECIMAL\(38,6\), respectively, for AVRO and to double range \(set to +-inf\) for JSON.
+
+    -   DECIMAL\(p,s\) is clamped to double range \(set to +-inf\) for JSON.
+
+    -   You can **rename** target objects \(Kafka topics\). The following conditions apply:
+
+        -   The new name may consist of the following characters: small latin letters \(a-z\), capital latin letters \(A-Z\), numbers \(0-9\), period \(.\), underscore \(\_\), hyphen \(-\).
+
+        -   The maximum length for the new name is 249 characters.
+
+
+        For more information and examples, see also [SAP Datasphere Replication Flows Blog Series Part 3 – Integration with Kafka.](https://blogs.sap.com/2023/12/04/sap-datasphere-replication-flows-blog-series-part-3-integration-with-kafka/) and [Confluent as Replication Target](https://community.sap.com/t5/technology-blogs-by-sap/replication-flow-blog-part-6-confluent-as-replication-target/ba-p/13693888).
+
 
 
 

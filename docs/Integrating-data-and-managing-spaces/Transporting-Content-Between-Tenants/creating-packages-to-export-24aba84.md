@@ -103,7 +103,7 @@ Users with the *DW Space Administrator* role can create packages:
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+
     
     </td>
     </tr>

@@ -92,7 +92,7 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

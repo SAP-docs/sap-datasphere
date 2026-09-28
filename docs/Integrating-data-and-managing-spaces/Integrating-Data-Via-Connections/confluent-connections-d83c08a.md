@@ -57,6 +57,8 @@ You can use the connection to add source and target objects to a replication flo
 
 Before you can use the connection for replication flows, the following is required:
 
+-   You must ensure that you connect to a supported Confluent/Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
+
 -   The connection requires Confluent Schema Registry as additional endpoint. Schema Registry is a service that centrally stores data schemas for Kafka messages to ensure data consistency and compatibility as schemas evolve.
 
     For more information, see the *Confluent* documentation:

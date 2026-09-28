@@ -27,6 +27,21 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 
 
 
+### System Updates
+
+SAP Datasphere displays system issues impacting your objects. However, there are cases where routine platform updates do not generate customer notifications:
+
+-   Regular Data Integration Runtime updates: These updates do not impact replication flow runs. In addition, replication flows include built-in self-recovery mechanisms to handle transient interruptions.
+-   Infrastructure upgrades: Maintenance activities such as Kubernetes node operating system updates are transparent to customers and do not require any action.
+
+The above behavior applies to replication flows, but it does not always apply to data flows. For data flows, a **5-day grace period** is provided. If a data flow continues running on a Kubernetes node for five days or longer, the node may be replaced during the scheduled weekend maintenance window. In such cases, the running data flows can be interrupted. Unlike replication flows, data flows do not support automatic recovery and must be restarted after an interruption. Note that for SAP Product Changes, notifications are not sent for routine infrastructure updates that may affect data flow runs, such as Kubernetes node replacements performed as part of regular platform maintenance.
+
+Overall, routine updates are designed to minimize customer impact; however, long-running data flows may be affected by scheduled infrastructure maintenance.
+
+Therefore, SAP recommends subscribing to SAP Cloud outage notifications for your linked systems to stay informed about planned maintenance activities and potential service interruptions. For more information, see [Managing and Monitoring Connectivity for Data Integration](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c5b167b624a045828ba564989761e201.html "Users with an administrator role can monitor and troubleshoot Data Provisioning Agent and Cloud Connector connectivity.") :arrow_upper_right:.
+
+
+
 <a name="loiob661ea0766a24c7d839df950330a89fd__context_ev4_2dg_k4b"/>
 
 ## Context
@@ -34,7 +49,7 @@ The *DW Integrator* role template, for example, grants these privileges. For mor
 In the *Flows* monitor, you can find all the deployed flows \(data flows, replication flows, and transformation flows\) per space. Here, you can run the deployed flows, and you can view and monitor the run details of the flows.
 
 > ### Note:  
-> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as data flows or task chains that may contain these tasks. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
+> For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as replication flows or task chains. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
 For more information and points to consider when using replication flows, see also SAP Note [3297105](https://me.sap.com/notes/3297105).
 

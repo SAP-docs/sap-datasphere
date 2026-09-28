@@ -1,15 +1,15 @@
 <!-- loioc4e26c09325a45d3ab7011a600c8fc6c -->
 
-# Restore Spaces from, or Empty the Recycle Bin
+# Manage Deleted Spaces in the Recycle Bin
 
 Restore spaces, or delete them from the *Recycle Bin* to recover the disk storage used by the data in spaces.
 
 This topic contains the following sections:
 
--   [Prerequisites](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_nnm_pcp_hfc)
--   [Context](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_l1p_4cp_hfc)
--   [Restore a Space](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc)
--   [Delete a Space Permanently](restore-spaces-from-or-empty-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_vqc_dkz_dcc)
+-   [Prerequisites](manage-deleted-spaces-in-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_nnm_pcp_hfc)
+-   [Context](manage-deleted-spaces-in-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_l1p_4cp_hfc)
+-   [Restore a Space](manage-deleted-spaces-in-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_qjv_qnz_dcc)
+-   [Delete a Space Permanently](manage-deleted-spaces-in-the-recycle-bin-c4e26c0.md#loioc4e26c09325a45d3ab7011a600c8fc6c__section_vqc_dkz_dcc)
 
 
 
@@ -20,8 +20,10 @@ This topic contains the following sections:
 To restore spaces, or delete them from the *Recycle Bin*, you must have a global role with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Spaces* \(`-------M`\) - To access the *Recycle Bin* in the *Space Management* tool.
+-   *Spaces* \(`-------M`\) - To manage spaces in the *Space Management* tool.
 -   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
+-   *User* \(`-------M`\) - To manage user access to spaces.
+-   *System Information* \(`-R------`\) - To manage deleted spaces in the *Recycle Bin*.
 
 The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](../Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](../Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -31,7 +33,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 ## Context
 
-Once a space has been deleted and moved to the *Recycle Bin* \(see [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:\), you can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space.
+Users with a space administrator role \(see [Delete Your Space](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/3eb19b96e6ba41dfbffd759c5c8370bb.html "Delete a space if you are sure that you no longer need any of its content or data. The space is moved to the recycle bin, from which it can either be restored or permanently deleted from the database.") :arrow_upper_right:\) or an administrator role \(see [Delete Spaces](delete-spaces-9bf0d46.md)\) can delete spaces. Deleted spaces are moved to the *Recycle Bin*, where users with an administrator role can either restore them or permanently delete them to free up disk storage.
 
 
 

@@ -42,7 +42,7 @@ When the analytic model has associations to a time-dependent dimension or text t
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

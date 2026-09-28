@@ -119,7 +119,7 @@ In addition, if you want to create and use a connection based on a custom connec
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

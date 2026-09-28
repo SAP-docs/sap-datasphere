@@ -193,3 +193,409 @@ You define a global pattern as “test\*.csv”. The result is that only the mat
 -   /datasetFolder/test2.csv
 
 
+
+
+## Data Types
+
+The following table shows how internal data types are mapped to target data types for SFTP targets. The target data type depends on the file format: Parquet, CSV, or JSON/JSONLines.
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+Parquet Data Type
+
+</th>
+<th valign="top">
+
+CSV Representation
+
+</th>
+<th valign="top">
+
+JSON Data Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+binary
+
+</td>
+<td valign="top">
+
+BYTE\_ARRAY
+
+</td>
+<td valign="top">
+
+Base64-encoded
+
+</td>
+<td valign="top">
+
+String \(base64-encoded\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+BOOLEAN
+
+</td>
+<td valign="top">
+
+true or false
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+INT32 \(DATE\)
+
+</td>
+<td valign="top">
+
+YYYY-MM-DD
+
+</td>
+<td valign="top">
+
+String \(YYYY-MM-DD\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+DECIMAL\(p,s\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+DECIMAL\(28,6\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+DECIMAL\(38,6\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float32
+
+</td>
+<td valign="top">
+
+FLOAT
+
+</td>
+<td valign="top">
+
+Decimal or scientific notation
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+DOUBLE
+
+</td>
+<td valign="top">
+
+Decimal or scientific notation
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int8
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+BYTE\_ARRAY \(STRING\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+INT64 \(TIME microseconds\)
+
+</td>
+<td valign="top">
+
+HH:MM:SS.NNNNNNNNNN
+
+</td>
+<td valign="top">
+
+String \(HH:MM:SS.NNNNNNNNNN\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+INT64 \(TIMESTAMP microseconds\)
+
+</td>
+<td valign="top">
+
+YYYY-MM-DD HH:MM:SS.NNNNNNNNNN
+
+</td>
+<td valign="top">
+
+String \(YYYY-MM-DD HH:MM:SS.NNNNNNNNNN\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint8
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+</table>
+

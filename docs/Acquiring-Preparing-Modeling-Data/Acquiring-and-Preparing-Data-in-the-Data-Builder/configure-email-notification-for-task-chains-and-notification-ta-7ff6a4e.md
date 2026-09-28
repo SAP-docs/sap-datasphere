@@ -111,7 +111,7 @@ You can create and update mail lists that you can reuse in task chains, notifica
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. The maximum length is 250 characters.
+    The maximum length is 250 characters.
     
     </td>
     </tr>

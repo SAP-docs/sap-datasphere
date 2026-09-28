@@ -66,7 +66,7 @@ SAP Datasphere \(file space\)
 </td>
 <td valign="top">
 
-`I-ID--`
+`I-ID-D-`\*
 
 </td>
 <td valign="top">
@@ -76,7 +76,7 @@ SAP Datasphere \(file space\)
 </td>
 <td valign="top">
 
-Use as: [Source](local-table-file-sources-for-replication-flows-bdff6b9.md) | [Target](sap-datasphere-targets-for-replication-flows-12c45eb.md)
+Use as: [Source](sap-datasphere-local-table-file-sources-for-replication-flows-bdff6b9.md) | [Target](sap-datasphere-targets-for-replication-flows-12c45eb.md)
 
 </td>
 </tr>
@@ -545,28 +545,6 @@ Not supported
 <tr>
 <td valign="top">
 
-Local Table File
-
-</td>
-<td valign="top">
-
-`I-----`
-
-</td>
-<td valign="top">
-
-Not supported
-
-</td>
-<td valign="top">
-
-Use as: [Source](local-table-file-sources-for-replication-flows-bdff6b9.md)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 MySQL
 
 </td>
@@ -640,8 +618,8 @@ File Space / Local Tables \(File\)
 </td>
 <td valign="top">
 
--   Delta Capture Off: `------`
--   Delta Capture On: `I-ID--`
+-   Delta Capture Off: `-I-----`
+-   Delta Capture On: `I-ID-D-`
 
 
 

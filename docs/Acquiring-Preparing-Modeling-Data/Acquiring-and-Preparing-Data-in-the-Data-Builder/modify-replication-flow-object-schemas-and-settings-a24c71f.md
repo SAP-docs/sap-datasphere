@@ -146,6 +146,7 @@ Schema changes are not applied automatically. To apply supported schema changes:
 > 
 > -   *Capture Source Schema Changes* can be enabled only once and cannot be disabled.
 > -   `CLNT`source columns are not supported.
+> -   Schema change detection does not apply to unrestricted-length string columns. Changes to these columns are not detected and are not available for review or deployment.
 
 
 
@@ -300,7 +301,7 @@ When working with ABAP-based source systems, you can switch between *Template Ty
     </td>
     <td valign="top">
     
-    String/Binary
+    String
     
     </td>
     </tr>

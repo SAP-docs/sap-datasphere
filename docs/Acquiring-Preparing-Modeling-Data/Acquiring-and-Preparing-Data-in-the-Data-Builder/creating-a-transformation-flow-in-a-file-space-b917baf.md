@@ -161,6 +161,9 @@ You want to model transformation flows with tables as sources, apply various tra
     > ### Note:  
     > Local tables \(file\) support a limited number of data types. See [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
+    > ### Note:  
+    > If a column contains *Personal Data* or *Sensitive Personal Data* from a data product, then it is tagged accordingly, and its parent object also displays the appropriate tag \(see [Modeling with Personal Data](../modeling-with-personal-data-fd0d4e6.md)\).
+
 4.  \[optional\] For machine learning, AI, and analytics use cases, you may need to simplify complex star-schema data models by joining tables to create a flattened view. See [Creating a Flatten Operator](creating-a-flatten-operator-34f48fa.md).
 5.  After adding a new source, you might encounter duplicate records in your dataset. The *Remove Duplicate Records* operator allows you to efficiently remove these duplicates from your transformation flow. See [Removing Duplicate Records](removing-duplicate-records-d4b2df0.md).
 6.  \[optional\] If your source is a shared table with *Delta Capture* enabled:

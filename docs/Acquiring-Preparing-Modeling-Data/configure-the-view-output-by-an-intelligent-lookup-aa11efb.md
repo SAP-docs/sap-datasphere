@@ -49,7 +49,7 @@ You can use the output of your intelligent lookup as a source for a view or data
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+
     
     </td>
     </tr>

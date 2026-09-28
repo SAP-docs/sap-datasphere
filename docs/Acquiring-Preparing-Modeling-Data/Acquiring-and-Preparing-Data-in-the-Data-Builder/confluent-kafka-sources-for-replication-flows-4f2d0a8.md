@@ -4,19 +4,27 @@
 
 # Confluent Kafka Sources for Replication Flows
 
-If you use Confluent Kafka as the source for your replication flow, you need to consider the following additional specifics and conditions.
+You can use Confluent Kafka as source for your replication flows.
 
-You can transfer Kafka messages from Confluent Platform and Confluent Cloud topics to all supported targets for replication flows. Only Kafka messages whose message body is associated with a fixed schema that is registered in the Confluent schema registry can be replicated.
 
-The source container that you select for the replication is a schema registry context in Confluent, and the replication objects are Confluent topics. The default context of the Confluent schema registry is displayed as period \(.\).
 
-All replication objects must have load type *Initial and Delta* \(other load types are not supported\).
+## Prerequisites
 
-After you confirm your selection of replication objects, the system tries to determine the relevant schema for each object. The schema is defined by pulling the first message from the topic, fetching its schema ID, and extracting the schema from the selected context. If the schema ID is not found in the context, the replication fails and a context with the corresponding schema must be selected. If no message exists in the topic, the system tries to find a subject following the topic name strategy in the context. If nothing is found, you can still use the object, but have to configure the schema manually as described below.
+-   You must ensure that you connect to a supported Confluent/Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
 
-When getting the data from the source, the system flattens any existing nested structures, as this is necessary for the purposes of the replication. To see the nested structures, choose *Configure Schema* in the side panel and switch from *Flat* to *Nested*.
+-   All replication objects must have load type *Initial and Delta* \(other load types are not supported\).
 
-By default, the `__message_id` column is used as the primary key for the purposes of the replication. The \_\_message\_id is constructed based on the Kafka partition the message was consumed from and the message offset of the corresponding Kafka message. The \_\_message\_id for a specific record then takes the form <partition\>-<offset\>, for example, 2-1 for a Kafka message with offset 1 that is part of partition 2.
+
+
+## Additional Considerations
+
+If you use Confluent Kafka as the source for your replication flow, you need to consider the following additional specifics and conditions:
+
+-   You can transfer Kafka messages from Confluent Platform and Confluent Cloud topics to all supported targets for replication flows. Only Kafka messages whose message body is associated with a fixed schema that is registered in the Confluent schema registry can be replicated.
+-   The source container that you select for the replication is a schema registry context in Confluent, and the replication objects are Confluent topics. The default context of the Confluent schema registry is displayed as period \(.\).
+-   After you confirm your selection of replication objects, the system tries to determine the relevant schema for each object. The schema is defined by pulling the first message from the topic, fetching its schema ID, and extracting the schema from the selected context. If the schema ID is not found in the context, the replication fails and a context with the corresponding schema must be selected. If no message exists in the topic, the system tries to find a subject following the topic name strategy in the context. If nothing is found, you can still use the object, but have to configure the schema manually as described below.
+-   When getting the data from the source, the system flattens any existing nested structures, as this is necessary for the purposes of the replication. To see the nested structures, choose *Configure Schema* in the side panel and switch from *Flat* to *Nested*.
+-   By default, the `__message_id` column is used as the primary key for the purposes of the replication. The \_\_message\_id is constructed based on the Kafka partition the message was consumed from and the message offset of the corresponding Kafka message. The \_\_message\_id for a specific record then takes the form <partition\>-<offset\>, for example, 2-1 for a Kafka message with offset 1 that is part of partition 2.
 
 
 

@@ -6,15 +6,17 @@
 
 If you use Confluent Kafka as the target for your replication flow, you need to consider the following additional specifics and conditions.
 
-> ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
-> 
-> Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
 
-This topic contains the following sections:
 
--   [Additional Properties](confluent-kafka-targets-for-replication-flows-74b3c95.md#loio74b3c95464f246aa8c3fd510661daa6d__section_ReplFlow_Confluent_Properties) 
--   [Further Information](confluent-kafka-targets-for-replication-flows-74b3c95.md#loio74b3c95464f246aa8c3fd510661daa6d__section_ReplFlow_Confluent_Info) 
+## Prerequisites
+
+-   You must ensure that you connect to a supported Confluent/Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
+
+-   You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
+
+    > ### Note:  
+    > Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
+
 
 
 

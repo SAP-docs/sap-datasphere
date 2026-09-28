@@ -69,7 +69,7 @@ For example, a departmental hierarchy could be modeled with the `Parent Departme
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>
@@ -150,7 +150,7 @@ For example, a time hierarchy could be modeled by specifying the `Year`, `Quarte
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

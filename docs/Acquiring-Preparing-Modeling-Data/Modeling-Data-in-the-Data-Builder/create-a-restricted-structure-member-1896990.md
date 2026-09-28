@@ -44,7 +44,7 @@ This restriction will thus be applied to all measures in the resulting query whe
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

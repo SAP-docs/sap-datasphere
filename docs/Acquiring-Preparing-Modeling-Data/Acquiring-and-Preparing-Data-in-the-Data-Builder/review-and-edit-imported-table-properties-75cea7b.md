@@ -34,7 +34,7 @@ Provide business-friendly names for your table and its columns, identify its sem
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+
     
     </td>
     </tr>

@@ -306,9 +306,9 @@ Before you can use the connection to import entities with data access *Replicati
 
 ## Setting Up OAuth 2.0 Client Credentials
 
-You can use the *OAuth 2.0* authentication type with the *Client Credentials* OAuth grant type if you're using Cloud Connector \(for replication flows and data flows\) for your connection to SAP S/4HANA. When selecting this authentication type for the connection, technical user propagation is used to authenticate against the on-premise system.
+You can use the *OAuth 2.0* authentication type with the *Client Credentials* or *Client Credentials with X.509 Client Certificate* OAuth grant type if you're using Cloud Connector \(for replication flows and data flows\) for your connection to SAP S/4HANA. When selecting this authentication type for the connection, technical user propagation is used to authenticate against the on-premise system.
 
-For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for SAP ABAP and SAP S/4HANA Connections](configure-oauth-2-0-client-credentials-for-sap-abap-and-sap-s-4hana-connections-03dde85.md).
+For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for ABAP-based Connections](configure-oauth-2-0-client-credentials-for-abap-based-connections-03dde85.md).
 
 > ### Note:  
 > Remote tables and model import are not supported with this authentication type.

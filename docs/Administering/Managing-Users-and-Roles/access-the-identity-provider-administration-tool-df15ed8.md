@@ -10,9 +10,6 @@ The Identity Provider Administration tool allows system owners to manage the ide
 
 ## Prerequisites
 
-> ### Note:  
-> Bundling with SAP Cloud Identity Services tenants is being rolled out over the course of a number of versions. For more details, see SAP Note [3619907](https://me.sap.com/notes/3619907).
-
 To configure your bundled SAP Cloud Identity Services tenant for your SAP Datasphere tenant:
 
 -   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\).

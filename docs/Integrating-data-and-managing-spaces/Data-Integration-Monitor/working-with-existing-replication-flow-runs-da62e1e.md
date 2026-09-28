@@ -15,7 +15,7 @@ You can pause a replication flow run and resume it later, or stop it completely 
 You can create a schedule for your replication flow and include it in a task chain.
 
 > ### Note:  
-> -   For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.* Replication flows that contain a mix of Initial Only and delta-capable objects cannot be scheduled or used in a task chain, split these into two separate replication flows: one containing all Initial Only objects, and one containing all delta-capable objects with *Delta Load Run set* to *At Scheduled Time.*
+> For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.*
 
 To create a schedule for your replication flow, select the relevant flow and click *Schedule* \> *Create Schedule*.
 
@@ -83,7 +83,7 @@ The value is updated once per hour.
 
 ## Stopping a Replication Flow Run
 
-If you stop a replication flow run, the flow is stopped permanently in SAP Datasphereas well as in the source. If you no longer need the replication flow, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow, or a Replication Object](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
+If you stop a replication flow run, the flow is stopped permanently in SAP Datasphere as well as in the source. If you no longer need the replication flow, you should also delete it so that it does not clutter your system. In addition, in the run log of the stopped replication flows, you can download the details information. For more information, see [Delete a Replication Flow, or a Replication Object](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdd81ec3fb144bdab7d3a7dc25947efe.html "You can delete a replication flow if you do not need it anymore and thus free up capacity.") :arrow_upper_right:.
 
 The stop options available depend on your replication flow type:
 

@@ -79,7 +79,7 @@ In addition to working with analytic models in the editor, you can also:
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>
@@ -141,6 +141,13 @@ In addition to working with analytic models in the editor, you can also:
     -   add data access controls. See [Apply a Data Access Control to an Analytic Model](apply-a-data-access-control-to-an-analytic-model-8d8e2f9.md).
     -   add a filter. See [Create a Global Filter in an Analytic Model](create-a-global-filter-in-an-analytic-model-e9924dc.md).
     -   protect the export of the data preview results into an external file such as Excel, CSV or PDF. The data export button is then hidden in the data preview.
+
+    For sensitive data, the **Personal Data** and **Sensitive Personal Data** tags help you quickly identify dimensions requiring strict access control. One tag is automatically applied to any analytic model containing personal data, with **Sensitive Personal Data** applied if both types are present:
+
+    -   **Personal Data** is information that can be used to identify an individual, either on its own or in combination with other data, directly or indirectly.
+
+    -   **Sensitive Personal Data** is any of the various categories of high-risk data as defined under different international data protection and privacy laws.
+
 
     > ### Note:  
     > Attributes of type ***LargeString*** are not consumable in SAP Analytics Cloud.

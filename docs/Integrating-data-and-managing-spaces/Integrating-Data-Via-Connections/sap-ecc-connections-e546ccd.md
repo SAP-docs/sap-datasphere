@@ -1,5 +1,7 @@
 <!-- loioe546ccd61af54bf49a0f531a43fe0961 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # SAP ECC Connections
 
 Use an *SAP ECC* connection to access data from[SAP ERP Central Component \(SAP ECC\)](https://help.sap.com/docs/SAP_ERP) systems \(on-premise\).
@@ -166,6 +168,17 @@ Before you can use the connection for data flows and replication flows, the foll
 
     For more information about configuring SNC, see [Initial Configuration \(RFC\)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/initial-configuration-rfc) in the *SAP BTP Connectivity* documentation.
 
+
+
+
+### Setting Up OAuth 2.0 Client Credentials for Replication Flows
+
+You can use the *OAuth 2.0* authentication type with the *Client Credentials* or *Client Credentials with X.509 Client Certificate* OAuth grant type if you're using Cloud Connector \(for replication flows\) for your connection to a SAP ECC system. When selecting this authentication type for the connection, technical user propagation is used to authenticate against the on-premise system.
+
+For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for ABAP-based Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use authentication type OAuth 2.0 with the client credentials or client credentials with X.509 client certificate grant type for SAP ABAP (on-premise), SAP S/4HANA On-Premise, SAP BW, and SAP ECC connections, supporting replication flows and for SAP ABAP and SAP S/4HANA On-Premise also supporting data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+
+> ### Note:  
+> Remote tables and data flows are not supported with this authentication type.
 
 
 
@@ -424,7 +437,255 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 
 
-### Credentials
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to a SAP ECC system. 
+
+Choose from the following:
+
+-   *User Name And Password* for basic authentication \[default\] - This option is read-only if you set Cloud Connector to *false*.
+-   *OAuth 2.0*
+
+    You can select this option only if you have set Cloud Connector to *true*. Remote tables and data flows currently are not supported with this authentication type.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### OAuth 2.0
+
+If *Authentication Type* = *OAuth 2.0*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Grant Type*
+
+</td>
+<td valign="top">
+
+Select the grant type used to retrieve an access token. 
+
+Choose from the following:
+
+-   *Client Credentials with X.509 Client Certificate* \[default\]
+-   *Client Credentials* - for using an OAuth 2.0 client with *Technical User* purpose to provide client credentials for authentication.
+
+For more information about the required prerequisites, see [Configure OAuth 2.0 Client Credentials for ABAP-based Connections](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/03dde8504a4645b08d6e4bb0d246ca19.html "You can use authentication type OAuth 2.0 with the client credentials or client credentials with X.509 client certificate grant type for SAP ABAP (on-premise), SAP S/4HANA On-Premise, SAP BW, and SAP ECC connections, supporting replication flows and for SAP ABAP and SAP S/4HANA On-Premise also supporting data flows. This requires the set up for technical user propagation with activities in the Cloud Connector, in the ABAP on-premise system, and in SAP Datasphere.") :arrow_upper_right:.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Token Endpoint*
+
+</td>
+<td valign="top">
+
+Enter the SAP Datasphere *Token URL* which is available under <span class="FPA-icons-V3"></span> \(*System*\) ** \> ** <span class="Belize-icons"></span> \(*Administration*\) ** \> *App Integration*** \> ***OAuth Clients*\( see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Scope*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the OAuth scope to restrict the access rights of the issued OAuth token, if applicable.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth Token Request Content Type*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the content type of the OAuth2 token request. 
+
+Choose from the following:
+
+-   *URL Encoded* \[default\]
+
+    OAuth2 token request parameters will be url-encoded and included in the HTTP request body.
+
+-   *JSON*
+
+    OAuth2 token request parameters will be in JSON format and included in the HTTP request body.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(OAuth 2.0\)
+
+If *Authentication Type* = *OAuth 2.0* and *OAuth Grant Type* = *Client Credentials*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID you received when creating the OAuth client in SAP Datasphere. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client Secret*
+
+</td>
+<td valign="top">
+
+Enter the client secret you received when creating the OAuth client in SAP Datasphere.
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(OAuth 2.0 with X.509 Client Certificate\)
+
+If *Authentication Type* = *OAuth 2.0* and *OAuth Grant Type* = *Client Credentials with X.509 Client Certificate*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID you received when creating the OAuth client in SAP Datasphere. 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Certificate*
+
+</td>
+<td valign="top">
+
+To upload the certificate or certificate chain that is used to authenticate to the remote system, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, or .txt\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key*
+
+</td>
+<td valign="top">
+
+To upload the private key, click <span class="SAP-icons-V5"></span> \(Browse\) and select the file.
+
+> ### Note:  
+> The file must be in Privacy-enhanced Mail \(PEM\) format. Supported filename extensions are .pem, .crt, .key, or .txt\).
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials\(User Name and Password\)
+
+If *Authentication Type* = *User Name And Password*:
 
 
 <table>
@@ -604,7 +865,7 @@ If you don't specify a list of execution targets, the source system assigns the 
 </table>
 
 > ### Note:  
-> In file spaces, remote tables are not supported.
+> In file spaces or when using *OAuth 2.0* as *Authentication Type*, remote tables are not supported.
 
 
 
@@ -621,7 +882,7 @@ If you don't specify a list of execution targets, the source system assigns the 
 *Data Flows* are enabled without the need to set any additional connection properties. Make sure you have maintained the properties in the *Cloud Connector* section.
 
 > ### Note:  
-> In file spaces, data flows are not supported.
+> In file spaces or when using *OAuth 2.0* as *Authentication Type*, data flows are not supported.
 
 
 

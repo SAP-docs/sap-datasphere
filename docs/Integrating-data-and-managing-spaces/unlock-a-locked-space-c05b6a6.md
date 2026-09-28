@@ -53,9 +53,9 @@ In this situation, these actions are possible:
 
 
 
-## Tenant Storage Threshold Exceeded
+## Critical Tenant Storage Level Reached
 
-To protect your tenant from storage-related outages, all the spaces of a tenant whose disk usage has reached a critical threshold are automatically locked. A message informs you in the *Space Management* app and in each space page that all spaces are locked.
+To protect your tenant from storage-related outages, all spaces are automatically locked when storage usage reaches an SAP-managed critical level. A message is displayed in the *Space Management* app and on each space page to indicate that all spaces have been locked.
 
 In such a situation, the following actions are possible:
 

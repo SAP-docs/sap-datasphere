@@ -44,7 +44,7 @@ When creating a connection based on the custom connection type, you can select w
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

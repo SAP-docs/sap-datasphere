@@ -42,7 +42,7 @@ A filter variable refers to an attribute. When a story is opened, the variable d
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

@@ -92,7 +92,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+
     
     </td>
     </tr>
@@ -261,7 +261,7 @@ As a local table \(file\) is capturing delta changes via flows, it creates diffe
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+
     
     </td>
     </tr>

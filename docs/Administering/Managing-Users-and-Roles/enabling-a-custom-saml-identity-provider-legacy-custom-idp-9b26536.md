@@ -23,7 +23,7 @@ To enable and configure your custom identity provider for your SAP Datasphere te
 > SAP Datasphere is hosted on non-SAP data centers.
 
 > ### Note:  
-> In the SAP Datasphere tenants created after July 2, 2026, you cannot enable a custom IdP.
+> In the SAP Datasphere tenants created after July 2, 2026, you cannot enable a custom IdP, but you can use the bundled SAP Cloud Identity Services option instead \(see [Configure Your Bundled SAP Cloud Identity Services Tenant](configure-your-bundled-sap-cloud-identity-services-tenant-fac3155.md)\).
 
 
 
@@ -53,7 +53,7 @@ A custom identity provider is a separate solution, like for example Azure AD, an
 
 4.  In *Step 1*, select *Download* and save the metadata file.
 
-    A SAP Datasphere metadata file is saved.
+    A SAP Datasphere metadata file is saved. Do not edit and manually change this file before the next step.
 
 5.  Upload the SAP Datasphere metadata file to your SAML IdP.
 
@@ -262,7 +262,7 @@ A custom identity provider is a separate solution, like for example Azure AD, an
     > ### Note:  
     > If you are using the SAP Cloud Identity Authentication service as your IdP, map the `Groups` "sac" attribute under *Default Attributes* for your SAP Datasphere tenant. The remaining attributes should be mapped under *Assertion Attributes* for your SAP Datasphere tenant.
 
-7.  Download metadata from your SAML IdP.
+7.  Download metadata from your SAML IdP to a file. Do not edit and manually change this file before the next step.
 
 8.  In *Step 2*, select *Upload*, and choose the metadata file you downloaded from your SAML IdP.
 

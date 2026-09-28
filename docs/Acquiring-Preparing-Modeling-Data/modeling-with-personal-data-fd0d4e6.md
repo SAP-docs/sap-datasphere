@@ -47,6 +47,8 @@ The personal data tags are displayed in the following editors where the object i
     > Personal data tracing is not supported for SQL views with language *SQLScript \(Table Function\)*.
 
 -   Task Chain - See [Creating a Task Chain](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-task-chain-d1afbc2.md).
+-   Transformation flows - See [Creating a Transformation Flow](creating-a-transformation-flow-f7161e6.md).
+-   Analytic models - See [Creating an Analytic Model](Modeling-Data-in-the-Data-Builder/creating-an-analytic-model-e5fbe9e.md).
 
 > ### Note:  
 > This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).

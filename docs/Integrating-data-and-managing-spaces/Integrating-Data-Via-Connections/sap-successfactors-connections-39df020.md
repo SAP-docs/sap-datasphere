@@ -272,7 +272,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the SAP SuccessFactors API endpoint to use to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
+Enter the SAP SuccessFactors API endpoint used to request an access token: <code><i class="varname">&lt;SAP SuccessFactors API Server&gt;</i>/oauth/token</code>.
 
 </td>
 </tr>
@@ -284,7 +284,7 @@ Enter the SAP SuccessFactors API endpoint to use to request an access token: <co
 </td>
 <td valign="top">
 
-\[optional\] Enter the OAuth scope, if applicable.
+\[optional\] Enter an OAuth scope to restrict the access rights of the issued OAuth token, if applicable.
 
 </td>
 </tr>
@@ -359,7 +359,7 @@ Description
 </td>
 <td valign="top">
 
-Enter your SAP Cloud Identity Services tenant host.
+Enter the SAP Identity Service \(IAS\) endpoint used to request an access token: <code><i class="varname">&lt;SAP Identity Service&gt;</i>/oauth/token</code>.
 
 </td>
 </tr>
@@ -431,7 +431,7 @@ Enter the name of the dependency that has been created for integrating the OIDC 
 </td>
 <td valign="top">
 
-\[optional\] Enter the IdP scope, if applicable.
+\[optional\] Enter an IdP scope to restrict the access rights of the issued OAuth token, if applicable.
 
 </td>
 </tr>

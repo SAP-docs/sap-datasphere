@@ -10,24 +10,39 @@ Delete a space if you are sure that you no longer need any of its content or dat
 
 ## Prerequisites
 
-To move your space to the *Recycle Bin* area, you must have a scoped role that grants you access to a space with the following privileges:
+To delete spaces, which will be automatically moved to the *Recycle Bin*, you must have either:
+
+
+<table>
+<tr>
+<td valign="top">
+
+A global role that allows you to delete any space, by granting you the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Spaces* \(`-------M`\) - To manage and delete spaces in the *Space Management* tool.
+-   *Space Files* \(`-------M`\) - To view objects and data in all spaces.
+-   *User* \(`-------M`\) - To manage user access to spaces.
+
+The *DW Administrator* role template, for example, grants these privileges.
+
+</td>
+<td valign="top">
+
+A scoped role that grants you access to the space to delete with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Spaces* \(`-RUD----`\) - To open, update and delete your space in the *Space Management* tool.
 -   *Space Files* \(`-R------`\) - To view objects in your space.
 -   *Scoped Role User Assignment* \(`-------M`\) - To manage the users who can access your space.
 
-The *DW Space Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+The *DW Space Administrator* role template, for example, grants these privileges.
 
-> ### Note:  
-> Before deleting your space, you may want to:
-> 
-> -   Export the data contained in your space \(see [Export Your Space Data](export-your-space-data-27c7761.md)\).
-> 
-> -   Export the audit log entries generated for your space \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
+</td>
+</tr>
+</table>
 
-> ### Note:  
-> For spaces that have been deleted before version 2023.05, all related audit logs have been kept. A user with an administrator role can decide to delete them \(see [Monitor Read and Change Actions with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:\).
+For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 
 
@@ -35,16 +50,20 @@ The *DW Space Administrator* role template, for example, grants these privileges
 
 ## Procedure
 
-> ### Note:  
-> If your space contains replication flows with objects of load type “Initial and Delta”, you should make sure that these replication flows are stopped before you delete the space. If you restore the space at a later point in time, the replication flows can then be started again. For more information about replication flows, see [Working With Existing Replication Flow Runs](Data-Integration-Monitor/working-with-existing-replication-flow-runs-da62e1e.md).
+1.  Prepare your space for deletion.
+    -   If a space contains replication flows with objects of load type “Initial and Delta”, you should make sure that these replication flows are stopped before you delete the space. If you restore the space at a later point in time, the replication flows can then be started again. For more information about replication flows, see [Working With Existing Replication Flow Runs](Data-Integration-Monitor/working-with-existing-replication-flow-runs-da62e1e.md).
+    -   Before deleting your space, you may want to:
+        -   Export the data contained in your space \(see [Export Your Space Data](export-your-space-data-27c7761.md)\).
+        -   Export the audit log entries generated for your space \(see [Logging Read and Change Actions for Audit](logging-read-and-change-actions-for-audit-2665539.md)\).
 
-1.  In the side navigation area, click ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\).
 
-2.  Locate and select your space, and click the *Delete* button.
+2.  In the side navigation area, click ![](Integrating-Data-Via-Database-Users/Open-SQL-Schema/images/Space_Management_a868247.png) \(*Space Management*\).
 
-3.  In the confirmation message, enter DELETE if you are sure that you no longer need any of its content or data, then click the *Delete* button.
+3.  Locate and select your space, and click the *Delete* button.
 
-    The space is moved to the *Recycle Bin* area. From the *Recycle Bin*, a user with an administrator role can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space \(see [Restore Spaces from, or Empty the Recycle Bin](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
+4.  In the confirmation message, enter DELETE if you are sure that you no longer need any of its content or data, then click the *Delete* button.
+
+    The space is moved to the *Recycle Bin* area. From the *Recycle Bin*, a user with an administrator role can either restore the space or permanently delete the space from the database to recover the disk storage used by the data in the space \(see [Manage Deleted Spaces in the Recycle Bin](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
 
     > ### Note:  
     > The *Recycle Bin* is only visible and accessible to users with an administrator role.
@@ -59,6 +78,6 @@ Once the space is in the *Recycle Bin*:
 -   The database users/Open SQL schemas and HDI containers of the deleted space are disabled.
 -   For remote tables connected via SAP HANA smart data access, with real-time replication, data replication is stopped and data is removed.
 -   For remote tables connected via SAP HANA smart data integration, real-time replication is stopped.
--   You cannot create a new space with the ID of a space that is in the recycle bin. If you want to delete a space and recreate it with the same ID, you must first delete the space from the recycle bin \(see [Restore Spaces from, or Empty the Recycle Bin](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
+-   You cannot create a new space with the ID of a space that is in the recycle bin. If you want to delete a space and recreate it with the same ID, you must first delete the space from the recycle bin \(see [Manage Deleted Spaces in the Recycle Bin](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c4e26c09325a45d3ab7011a600c8fc6c.html "Restore spaces, or delete them from the Recycle Bin to recover the disk storage used by the data in spaces.") :arrow_upper_right:\).
 -   A database analysis user can still access the deleted space. For more information on a database analysis user, see [Create a Database Analysis User to Debug Database Issues](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/c28145bcb76c4415a1ec6265dd2a4c11.html "Database analysis users are SAP HANA Cloud database users who have read-only access to all space schemas, and all their activities are recorded in audit logs. You create a database user to monitor, analyze, trace, or debug your SAP Datasphere database, and resolve a specific database issue.") :arrow_upper_right:.
 

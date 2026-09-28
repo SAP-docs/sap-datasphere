@@ -59,7 +59,7 @@ Views that contain input parameters require special treatment in the following s
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
+
     
     </td>
     </tr>

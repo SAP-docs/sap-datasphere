@@ -119,7 +119,7 @@ For an external REST API to be compatible with a custom connection type, the fol
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

@@ -224,7 +224,7 @@ Data products are automatically updated with the latest patch and minor updates.
 
 1.  In the side navigation area, choose <span class="SAP-icons-V5"></span>\(*Catalog & Marketplace*\)** \> **<span class="FPA-icons-V3"></span> \(*Search*\).
 
-2.  In the SAP Datasphere catalog, search for a data product by entering a portion of its name in the search field or use the filters.
+2.  In the catalog, search for a data product by entering a portion of its name in the search field or use the filters.
 
 3.  When you find the data product you want, select it to view its details page.
 

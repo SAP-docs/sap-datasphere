@@ -150,7 +150,7 @@ Displays the total amount of storage that is used by your space in the SAP Datas
 Displays the total amount of storage that is used by your space, broken down by:
 
 -   *Local Tables \(File\) - Active Records* - Displays the size used by the active records only of the local tables \(file\).
--   *Local Tables \(File\) - Previous Versions* - Displays the size of previous versions of the local tables \(file\). This includes files of previous versions that are required for delta processing.
+-   *Local Tables \(File\) - Previous Versions* - Displays the size of previous versions of the local tables \(file\). This includes files of previous versions that are required for delta processing. Files in a previous version can get deleted after the defined retention time \(minimum: 7 days\) and when that version has been fully processed by all delta consumers \(see [Run a Direct Data Deletion Task](Data-Integration-Monitor/delete-data-from-your-local-tables-file-872ad50.md#loio872ad509995a451890bf8b80b73ec0e6__section_nm1_ghy_mgc)\).
 -   *Local Tables \(File\) - Inbound Buffer* - Displays the size of the inbound buffer \(temporary storage of incoming data, usually empty\).
 -   *Delta Logs* - Displays the size of the delta data logs.
 -   *Apache Spark Logs* - Displays the size of the logs for the Apache Spark configuration task runs.

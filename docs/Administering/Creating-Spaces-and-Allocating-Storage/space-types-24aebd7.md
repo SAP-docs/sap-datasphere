@@ -100,6 +100,7 @@ Restrictions:
 
 -   Administrators can modify only the space quota.
 -   Users assigned to the space with the appropriate roles can monitor the tables .
+-   The space cannot be manually deleted but will be automatically deleted if all its contents are removed.
 
 Storage Type: *SAP HANA Database \(Disk and In-Memory\)*
 
@@ -125,6 +126,7 @@ Restrictions:
 
 -   Administrators can modify only the space quota.
 -   Users assigned to the space with the appropriate roles can monitor the tables .
+-   The space cannot be manually deleted but will be automatically deleted if all its contents are removed.
 
 Storage Type: *SAP HANA Database \(Disk and In-Memory\)*
 

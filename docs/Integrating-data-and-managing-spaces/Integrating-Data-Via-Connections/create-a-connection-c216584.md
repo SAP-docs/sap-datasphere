@@ -208,7 +208,7 @@ Create a connection from an SAP-delivered connection type to allow users assigne
     </td>
     <td valign="top">
     
-    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+     
     
     </td>
     </tr>

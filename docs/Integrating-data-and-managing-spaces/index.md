@@ -126,6 +126,7 @@
         -   [Working With Existing Replication Flow Runs](Data-Integration-Monitor/working-with-existing-replication-flow-runs-da62e1e.md)
         -   [Statuses and Substatuses for Replication Flows](Data-Integration-Monitor/statuses-and-substatuses-for-replication-flows-fafc1e2.md)
         -   [Understanding Replication Flow Metrics](Data-Integration-Monitor/understanding-replication-flow-metrics-39c116d.md)
+        -   [Controlling Replication Flows via API](Data-Integration-Monitor/controlling-replication-flows-via-api-5e60730.md)
         -   [Cancel a Transformation Flow Run](Data-Integration-Monitor/cancel-a-transformation-flow-run-ab885f0.md)
         -   [Watermarks](Data-Integration-Monitor/watermarks-890897f.md)
         -   [Change Transformation Flow Settings](Data-Integration-Monitor/change-transformation-flow-settings-f7da029.md)

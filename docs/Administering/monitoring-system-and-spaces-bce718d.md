@@ -165,7 +165,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
     -   *Data in Spaces*: All data that is stored in spaces.
 
-    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see  <?sap-ot O2O class="- topic/xref " href="589fa4251db74fb7955eeee5d86fc25c.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/bao1786456628989/loiod3d776bb52294a17b48298443a286f55_en-US/src/content/localization/en-us/bce718d12a2540f081510fd097433620.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
+    -   *Audit Log Data*: Data related to audit logs \(see [Audit Logging](https://help.sap.com/viewer/0c3780ad05fd417fa27b98418535debd/cloud/en-US/c78a7c2a3cec4b0897db294d74e00d9b.html "Audit logs are records of read or change actions performed in the database. They allow you to see who performed which action at which point in time.") :arrow_upper_right:\). Audit logs can quickly consume large amounts of storage \(see [Delete Audit Logs](monitor-read-and-change-actions-with-audit-logs-110404a.md#loio110404abd2d044008102c871b39fdf65__section_delete_audit_logs)\).
 
     -   *Other Data*: Includes data stored in database user group schemas \(see [Creating a Database User Group](Creating-a-Database-User-Group/creating-a-database-user-group-1097a47.md)\) and SAP HANA data \(such as statistics schemas\).
 
@@ -286,7 +286,7 @@ To investigate issues:
 
 
 > ### Note:  
-> If your SAP Datasphere tenant is enabled for job & automation monitoring in SAP Cloud ALM, you can monitor the tasks run or scheduled in SAP Datasphere, from the *Job & Automation Monitoring* app in SAP Cloud ALM. See [Job & Automation Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/job-automation-monitoring) in the *SAP Cloud ALM - Application Help*.
+> If your SAP Datasphere tenant is enabled for job & automation monitoring in SAP Cloud ALM, you can monitor the tasks run or scheduled in SAP Datasphere, from the *Job & Automation Monitoring* app in SAP Cloud ALM. See [Job & Automation Monitoring](https://help.sap.com/docs/cloud-alm/applicationhelp/job-automation-monitoring) in the *SAP Cloud ALM - Application Help* and [SAP Cloud ALM Job and Automation Monitoring for SAP Datasphere Task and Chain Execution](https://support.sap.com/content/dam/support/en_us/library/ssp/alm/sap-cloud-alm/jobmonitoring/crun-job-and-auto-mon-datasphere-tasks.pdf).
 
 
 

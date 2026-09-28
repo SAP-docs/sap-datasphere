@@ -232,7 +232,7 @@ Example:
 
 Get task log details and existing task log history of objects.
 
-Get task log details. To retrieve task log details, use the GET request with the API <code>api/v1/datasphere/tasks/chains/<i class="varname">&lt;spaceid&gt;</i>/run/<i class="varname">&lt;objectid&gt;</i></code>endpoint and enter:
+Get task log details. To retrieve task log details, use the GET request with the API <code>api/v1/datasphere/tasks/logs/<i class="varname">&lt;spaceid&gt;</i>/<i class="varname">&lt;logid&gt;</i></code> endpoint and enter:
 
 ```
 https://<tenant_url>/api/v1/datasphere/tasks/logs/<space_id><logid>

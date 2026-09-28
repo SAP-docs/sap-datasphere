@@ -10,7 +10,7 @@ Enable *Delta Capture* in your local table \(file\) to automatically track all i
 
 To enable Delta Capture:
 
--   You table must have a status *Not Deployed*.
+-   Your table must have the status *Not Deployed*.
 -   You must define one or more key columns.
 
 
@@ -105,7 +105,7 @@ You can change both the business name and technical name, but you can't change t
 
 ## Log Retention Period and Prompt Processing of Changes
 
-The log retention time in the *SAP HANA Data Lake Files* storage is 30 days. Checkpoint files that are older than 30 days are automatically cleaned up when a new version is created. Make sure to process data changes in a transformation flow before the required checkpoint files get deleted. As best practices, we recommend not to let more than 3 days between a merge task and a flow run.
+The log retention time in the *SAP HANA Data Lake Files* storage is 30 days. Checkpoint files that are older than 30 days are automatically cleaned up when a new version is created. Make sure to process data changes in a flow before the required checkpoint files get deleted. As a best practice, we recommend not letting more than 3 days between a merge task and a flow run.
 
 > ### Example:  
 > Let's say that today is January 27, 2026, and the latest version of your local table \(file\) is in version 13, last updated on January 26. You now want to run a transformation flow that needs to access versions 7 to 13:
@@ -533,18 +533,18 @@ When a local table \(file\) with delta capture is deployed, the following object
 
 -   The table that contains the delta capture columns. The technical name ends with "Delta".
 
+-   The table that contains only the active records. It excludes both the delta capture columns and the historical data versions.
+
     > ### Note:  
     > This table is saved in the repository, but is deployed as a view in the database.
 
--   The table that contains only the active records. It excludes both the delta capture columns and the historical data versions.
 
 The 2 objects are consumed differently by SAP Datasphere apps:
 
--   Most SAP Datasphere apps consume a local table with delta capture through the *Active Records* table only. In these cases, local tables behave the same way independent of whether *Delta Capture* is set to "*On*" or "*Off*". For examples in Graphical Views, SQL Views, E/R Modeler or Business Builder.
+-   Most SAP Datasphere apps consume a local table with delta capture through the *Active Records* table only. In these cases, local tables behave the same way independent of whether *Delta Capture* is set to "*On*" or "*Off*". For examples in Graphical Views, SQL Views, E/R Modeler or Business Builder, or data preview in *Table Editor*, see [Preview and Edit Local Table \(File\) Data](preview-and-edit-local-table-file-data-e57e12d.md).
 -   The following SAP Datasphere apps also interact with the Delta Capture Table that contains the delta columns:
     -   *Transformation Flow*: The delta capture table can be used by both source and target. See[Creating a Transformation Flow in a File Space](creating-a-transformation-flow-in-a-file-space-b917baf.md) 
-    -   *Replication Flow*: The delta capture table can be used as target but with some restrictions, see [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-for-replication-flows-12c45eb.md).
-    -   *Table Editor*: See [Preview and Edit Local Table \(File\) Data](preview-and-edit-local-table-file-data-e57e12d.md) 
+    -   *Replication Flow*: The delta capture table can be used as source or target but with some restrictions, see [SAP Datasphere Targets for Replication Flows](sap-datasphere-targets-for-replication-flows-12c45eb.md) and [SAP Datasphere Local Table \(File\) Sources for Replication Flows](sap-datasphere-local-table-file-sources-for-replication-flows-bdff6b9.md).
 
 
 > ### Note:  

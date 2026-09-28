@@ -15,7 +15,7 @@ To securely connect and make http requests to SAP BW∕4HANA, you need to connec
 To create live data connections of type tunnel, you must have a global role that grants you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *System Information* \(`-RU-----`\) - To access the *Configuration* area in the *System* tool.
+-   *System Information* \(`-RU-----`\) - To access the *System* tool.
 -   *Connection* \(`CRUD-M--`\) - To create, read, update, and delete live data connections of type *Tunnel*.
 -   *Other Data Sources* \(`----E---`\) - To access the *Manage Live Data Connections* dialog.
 

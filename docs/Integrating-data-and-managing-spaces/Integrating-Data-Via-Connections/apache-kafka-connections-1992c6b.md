@@ -63,7 +63,12 @@ For more information, see [Apache Kafka Targets for Replication Flows](https://h
 
 Before you can use the connection for replication flows, the following is required:
 
+-   You must ensure that you connect to a supported Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
+
 -   An administrator has installed and configured Cloud Connector to connect to the Apache Kafka on-premise implementation.
+
+    For more information, see [Configure Cloud Connector](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/f289920243a34127b0c8b13012a1a4b5.html "Configure Cloud Connector before connecting to on-premise sources and using them in various use cases. In the Cloud Connector administration, connect the SAP Datasphere subaccount to your Cloud Connector, add a mapping to each relevant source system in your network, and specify accessible resources for each source system.") :arrow_upper_right:.
+
 
 
 
