@@ -296,3 +296,7 @@ If you enable **Include Subfolders**. Then the result looks like this:
 -   /datasetFolderB/subfolder1/subfolder2/test5.parquet
 
 
+
+
+## Data Types
+

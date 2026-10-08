@@ -21,7 +21,7 @@ Administrative users, such as catalog administrators and data stewards who insta
 
 For more information about sending an access request and managing your access requests and agreements, see [Requesting Access to Data Products](requesting-access-to-data-products-ea7cb80.md) and [Installing Data Products](installing-data-products-605b734.md).
 
-Users typically initiate access requests manually when they want access to data products. However, in certain processes \(such as copying a SAP Datasphere space\), the system automatically creates access requests. These system-created requests are automatically approved, and the data products are installed to the target locations. To learn more, see [System-Created Access Requests and Agreements](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/system-created-access-requests-and-agreements?state=DRAFT&version=DEV).
+Users typically initiate access requests manually when they want access to data products. However, in certain processes \(such as copying a SAP Datasphere space\), the system automatically creates access requests. These system-created requests are automatically approved, and the data products are installed to the target locations. To learn more, see [System-Created Access Requests and Agreements](https://help.sap.com/docs/business-data-cloud/governing-and-publishing-data-in-catalog/system-created-access-requests-and-agreements).
 
 > ### Note:  
 > Data product access requests and agreements that are created and approved outside of the catalog aren't visible to users on the *Data Product Access*. Also, they aren't visible to data stewards on the *Access Manage* page. As a result, the governance activity for these data product access agreements aren't tracked.

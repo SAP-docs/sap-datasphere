@@ -2,7 +2,7 @@
 
 # Pause or Resume a Scheduled Task
 
-Using options available for creating, editing, and removing task scheduling, you can pause or resumed previously scheduled data integration tasks such as remote table replication, persisting views, flow run or task chain run.
+You can create, edit, and delete schedules for data integration tasks. You can also pause or resume schedules for tasks.
 
 After previously scheduling a task, you can select *Schedule* \> *Pause Schedule* to pause the next schedule run of a task, or select *Schedule* \> *Resume Schedule* to resume a schedule previously paused.
 

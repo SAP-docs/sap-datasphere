@@ -2,7 +2,7 @@
 
 # Modify the Owner of a Schedule
 
-Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to a business user or a technical user.
+Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself or to a technical user.
 
 
 
@@ -10,7 +10,7 @@ Per default, the user who creates a task schedule owns the schedule which means 
 
 ## Prerequisites
 
--   With the `DW Integrator` role you can change the schedule and let the scheduling component run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
+-   To assign schedule ownership to a technical user, you must have a global role that grants you the following privilege: *User* \(`-R------`\).
 -   To let the job scheduling component of SAP Datasphere run scheduled tasks on your behalf, you need to give your consent. For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 -   Technical users need to be added to the space by an administrator in order to add a technical user as an owner. For more information, see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
@@ -31,7 +31,7 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 ## Procedure
 
-1.  Go to *Data Integration Monitor*.
+1.  Go to *Monitoring* \> *Data Integration*.
 
 2.  Select your space.
 
@@ -43,13 +43,16 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 5.  Select *Schedule* \> *Edit Schedule*
 
-6.  Select your user type, Business User or Technical User, from the drop down.
+6.  Select your user type, *Business User* or *Technical User*, from the drop down.
 
 7.  Select the new owner of the schedule.
 
+    > ### Note:  
+    > If the schedule is owned by another business user, you can assign yourself as the owner, and you cannot assign another business user.
+
     You need to enter both a user type and an owner to save your changes.
 
-8.  Click *OK* to save the schedule.
+8.  Click *SAVE* to save the schedule.
 
 
 

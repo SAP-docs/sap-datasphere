@@ -10,15 +10,12 @@ Schedule data integration tasks such as data replication, data persistence, or d
 
 ## Prerequisites
 
--   With the `DW Integrator` role you can create, change, or delete a schedule and let the scheduling component of SAP Datasphere run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
+Scheduling is an automated task. You must authorize SAP Datasphere to run tasks on your behalf. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
 
--   Scheduling is an automated task. You must authorize SAP Datasphere to run tasks on your behalf. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
+> ### Note:  
+> Your consent is valid for 365 days. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration* monitoring app, a warning message appears 10 days before the expiry of consent.
 
-    > ### Note:  
-    > Your consent is valid for 365 days. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration* monitoring app, a warning message appears 10 days before the expiry of consent.
-
-    For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
-
+For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
 
 
 
@@ -270,7 +267,7 @@ The column *Scheduled Frequency* shows the status *Scheduled*. By clicking the s
 
 The column *Schedule Owners* displays the name of the current schedule owner.
 
-The *Scheduled Next Run* columns shows the start date and time of the next run according to the scheduling settings.
+The *Next Runs* columns shows the start date and time of the next run according to the scheduling settings.
 
 As long as the consent from the owner of the schedule hasn't expired, the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png).
 
@@ -282,7 +279,7 @@ As long as the consent from the owner of the schedule hasn't expired, the task w
 
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Scheduled Next Run* column gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Runs* column gets cleared.
 
 You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 

@@ -19,7 +19,7 @@ This topic contains the following sections:
 ## Supported Features
 
 > ### Note:  
-> In file spaces, remote tables and data flows are not supported.
+> In file spaces or when using *OAuth 2.0* as *Authentication Type*, remote tables and data flows are not supported.
 
 
 <table>

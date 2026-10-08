@@ -1,15 +1,15 @@
 <!-- loiobbedad63821443518fcd8fe56f7d26f7 -->
 
-# Folders
+# Organizing Objects in Folders
 
 You can create folders to organize the objects in your spaces.
 
 This topic contains the following sections:
 
--   [Introduction to Folders](folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_intro)
--   [Create a Folder](folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_create)
--   [Move Objects into a Folder](folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_move)
--   [Delete a Folder](folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_delete)
+-   [Introduction to Folders](organizing-objects-in-folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_intro)
+-   [Create a Folder](organizing-objects-in-folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_create)
+-   [Move Objects into a Folder](organizing-objects-in-folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_move)
+-   [Delete a Folder](organizing-objects-in-folders-bbedad6.md#loiobbedad63821443518fcd8fe56f7d26f7__section_delete)
 
 
 

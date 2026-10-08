@@ -99,7 +99,7 @@ Privileges
 
 System and Spaces
 
-See [Monitoring System and Spaces](../monitoring-system-and-spaces-bce718d.md)
+See [Monitoring System Disk, Memory, and Performance](../monitoring-system-disk-memory-and-performance-bce718d.md)
 
 </td>
 <td valign="top">
@@ -478,7 +478,7 @@ The *Catalog Administrator* global role and the *DW Viewer* role template \(used
 
 Connect, manage and monitor Catalog source systems
 
-See [Connecting Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Source systems are connected to the catalog automatically through an SAP Business Data Cloud formation or manually through SAP Datasphere or the SAP Business Data Cloud cockpit on the Metadata Extractions page. After connection, the catalog monitors these systems and extracts metadata for their objects. This process make the objects discoverable in the catalog.") :arrow_upper_right: and [Managing and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0bdc7d3a6bcb44a09245cb21360d9775.html "As a user with the catalog administrator role, you can manage and monitor data sources that are connected to the catalog. You can ensure that the catalog contains the most up-to-date content and troubleshoot any issues that arise.") :arrow_upper_right:
+See [Connecting Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Source systems are connected to the catalog automatically through an SAP Business Data Cloud formation or manually through SAP Datasphere or the SAP Business Data Cloud cockpit on the Metadata Extractions page. After connection, the catalog monitors these systems and extracts metadata for their objects. This process makes the objects discoverable in the catalog.") :arrow_upper_right: and [Managing and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0bdc7d3a6bcb44a09245cb21360d9775.html "As a user with the catalog administrator role, you can manage and monitor data sources that are connected to the catalog. You can ensure that the catalog contains the most up-to-date content and troubleshoot any issues that arise.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -551,14 +551,7 @@ See [Importing SAP and Partner Business Content from the Content Network](https:
 </td>
 <td valign="top">
 
-To import content into a space via the *Import* app, you must have either:
-
-
-<table>
-<tr>
-<td valign="top">
-
-A global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
+To import content into a space via the *Import* app, you must have a global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
@@ -568,27 +561,24 @@ A global role that allows you to update any space and to create new spaces if ne
 
 The *DW Administrator* role, for example, grants these privileges.
 
-</td>
-<td valign="top">
-
-A combination of a global role and a scoped role:
-
--   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   A global role that grants you the following privileges:
-    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
-
--   A scoped role that grants you access to the space or spaces to import into with the following privileges:
-    -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
-    -   *Spaces* \(`--U-----`\) - To update your spaces and their properties.
-    -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
-
-
-The *DW Space Administrator* role template, for example, grants this combination of privileges.
-
-</td>
-</tr>
-</table>
+> ### Note:  
+> In certain environments, non-administrator users may need to import content into their own spaces. In this case, a combination of a global role and a scoped role is required:
+> 
+> -   A global role that grants you the following privileges:
+>     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+>     -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
+> 
+> -   A scoped role that grants you access to the space or spaces to import into with the following privileges:
+>     -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects.
+> 
+>         > ### Note:  
+>         > You may require additional privileges if your package contains other, non-Data Builder objects.
+> 
+>     -   *Spaces* \(`--U-----`\) - To update your spaces and their properties.
+>     -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+> 
+> 
+> The *DW Space Administrator* global role and a scoped role based on the *DW Space Administrator* role template together grant these privileges.
 
 For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -1607,7 +1597,7 @@ To create and export packages, you must have a combination of a global role and 
     -   *Data Warehouse Data Builder* \(`-RU-----`\) - To view and update *Data Builder* objects \(and any other relevant object privileges to allow you to update other types of objects contained in the package\).
 
 
-The *DW Space Administrator* role template, for example, grants this combination of privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
+The *DW Space Administrator* global role and a scoped role based on the *DW Space Administrator* role template together grant these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 </td>
 </tr>
@@ -1635,7 +1625,7 @@ A global role that allows you to access and export content from any space, by gr
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
 
-The *DW Administrator* role, for example, grants these privileges.
+The *DW Administrator* role template, for example, grants these privileges.
 
 </td>
 <td valign="top">
@@ -1652,7 +1642,7 @@ A combination of a global role and a scoped role:
     -   *Spaces Files* \(`-RU-----`\) - To view specific spaces and their contents.
 
 
-The *DW Space Administrator* role template, for example, grants this combination of privileges.
+The *DW Space Administrator* global role and a scoped role based on the *DW Space Administrator* role template together grant these privileges.
 
 </td>
 </tr>
@@ -1672,14 +1662,7 @@ See [Importing Content from Another Tenant](https://help.sap.com/viewer/be5967d0
 </td>
 <td valign="top">
 
-To import content into a space via the *Import* app, you must have either:
-
-
-<table>
-<tr>
-<td valign="top">
-
-A global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
+To import content into a space via the *Import* app, you must have a global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
@@ -1689,27 +1672,24 @@ A global role that allows you to update any space and to create new spaces if ne
 
 The *DW Administrator* role, for example, grants these privileges.
 
-</td>
-<td valign="top">
-
-A combination of a global role and a scoped role:
-
--   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   A global role that grants you the following privileges:
-    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
-    -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
-
--   A scoped role that grants you access to the space or spaces to import into with the following privileges:
-    -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects \(and any other relevant object privileges to allow you to create and update other types of objects contained in the package\).
-    -   *Spaces* \(`--U-----`\) - To update your spaces and their properties.
-    -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
-
-
-The *DW Space Administrator* role template, for example, grants this combination of privileges.
-
-</td>
-</tr>
-</table>
+> ### Note:  
+> In certain environments, non-administrator users may need to import content into their own spaces. In this case, a combination of a global role and a scoped role is required:
+> 
+> -   A global role that grants you the following privileges:
+>     -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+>     -   *Lifecycle* \(`-R---MS-`\) - To use the *Transport* apps.
+> 
+> -   A scoped role that grants you access to the space or spaces to import into with the following privileges:
+>     -   *Data Warehouse Data Builder* \(`CRUD--S-`\) - To create, read, update, delete and share data builder objects.
+> 
+>         > ### Note:  
+>         > You may require additional privileges if your package contains other, non-Data Builder objects.
+> 
+>     -   *Spaces* \(`--U-----`\) - To update your spaces and their properties.
+>     -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+> 
+> 
+> The *DW Space Administrator* global role and a scoped role based on the *DW Space Administrator* role template together grant these privileges.
 
 For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
@@ -1771,8 +1751,9 @@ See [Data Sharing Cockpit - Data Provider's Guide](https://help.sap.com/viewer/e
 To use the features in the *Data Sharing Cockpit* area, you must have a scoped role that grants you access to a space with the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRU-----`\) - To create and edit *Data Builder* objects.
--   *Spaces* \(`-RU-----`\) - To create a new data provider profile, or edit an existing one.
+-   *Data Warehouse Data Builder* \(`CRUD---S`\) - To create, edit and delete data providers.
+-   *Space Files* \(`CRUD----`\) - To create, read, update, and delete marketplace objects in your spaces.
+-   *Spaces* \(`-RU-----`\) - To modify the space properties.
 
 
 

@@ -326,7 +326,7 @@ Description
 </td>
 <td valign="top">
 
-\[optional\] 
+\[optional\] Enter a descriptive name to help users identify the object. This name can be changed at any time.
 
 </td>
 </tr>

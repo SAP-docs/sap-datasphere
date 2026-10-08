@@ -29,7 +29,7 @@ If one of the following connection types works for your source system and use ca
 ## Supported Features
 
 > ### Note:  
-> In file spaces, remote tables and data flows are not supported.
+> In file spaces, remote tables and data flows are not supported. When using *OAuth 2.0* as *Authentication Type*, remote tables are not supported.
 
 
 <table>

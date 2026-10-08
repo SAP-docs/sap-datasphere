@@ -58,3 +58,241 @@ Columns that have the data type `time` are **skipped**, that is, they don't get 
 
 For more information about supported data types, see [Data Types Supported By Local Tables \(File\)](data-types-supported-by-local-tables-file-2f39104.md).
 
+
+
+## Data Types
+
+The following table shows how internal data types are mapped to SAP Datasphere \(HANA\) target data types.
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+SAP Datasphere \(HANA\) Data Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+binary\(n\), 1<=n<=5000
+
+</td>
+<td valign="top">
+
+VARBINARY\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+BOOLEAN
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+DATE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+DECIMAL\(p,s\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+SMALLDECIMAL
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+DECIMAL
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float32
+
+</td>
+<td valign="top">
+
+REAL
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+DOUBLE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int8
+
+</td>
+<td valign="top">
+
+SMALLINT
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+SMALLINT
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+NCLOB
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string\(n\), 1<=n<=5000
+
+</td>
+<td valign="top">
+
+NVARCHAR\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+TIME
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+TIMESTAMP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint8
+
+</td>
+<td valign="top">
+
+TINYINT
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint64
+
+</td>
+<td valign="top">
+
+DECIMAL\(20,0\)
+
+</td>
+</tr>
+</table>
+

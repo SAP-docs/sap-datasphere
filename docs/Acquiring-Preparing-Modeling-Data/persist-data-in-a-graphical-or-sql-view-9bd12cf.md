@@ -104,7 +104,7 @@ Schedule Data Persistence
 
 From this menu, you can :
 
--   *Create Schedule*: Select the relevant persisted view and create a simple or recurring schedule for your view. You define your scheduling options and thus ensure that you always have an up-to-date persisted view.
+-   *Create Schedule*: Select the relevant persisted view and create a simple or cron schedule for your view. You define your scheduling options to ensure that you always have an up-to-date persisted view.
 
     *Edit Schedule*: Your scheduling options need to be updated? You can adapt them to your needs at any time from this menu.
 

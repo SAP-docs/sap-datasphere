@@ -80,7 +80,7 @@ Displays the quantity of memory required to fully load the partition data in-mem
 <tr>
 <td valign="top">
 
-*Size on Disk \(MiB\)*
+*Size on Disk*
 
 </td>
 <td valign="top">

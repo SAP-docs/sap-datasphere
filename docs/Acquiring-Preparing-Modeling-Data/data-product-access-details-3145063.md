@@ -13,12 +13,13 @@ Open the *Data Product Access* page from the side navigation by choosing <span c
 
 This page has the following actions and tabs:
 
+-   The *Check for Schema Changes* button compares data products that are installed to SAP Datasphere spaces with the corresponding data products available in the catalog for schema differences.
 -   The *Requests* tab shows access requests that are awaiting approval or have been rejected.
 -   The *Agreements* tab shows access agreements that have other statuses, such as **Current** or **Ended**.
 
 You can use the **Search** field and the view tools to find the access request or agreement you want. When you select a request or agreement, the data product access details opens as a panel on the right side of the window.
 
-![Data Product Access page showing requests list and request details panel.](images/Data_Product_Access_Details_Page_0b5222c.png)
+![Data Product Access page showing requests list and request details panel.](images/Data_Product_Access_Request_Details_f6859c6.png)
 
 The request or agreement details header provides an overview that includes the following information:
 

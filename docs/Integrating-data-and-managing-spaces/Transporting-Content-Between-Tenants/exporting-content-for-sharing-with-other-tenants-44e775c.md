@@ -26,7 +26,7 @@ A global role that allows you to access and export content from any space, by gr
 -   *Spaces* \(`-------M`\) - To update all spaces and space properties.
 -   *Space Files* \(`-------M`\) - To create, read, update, and delete all objects in all spaces.
 
-The *DW Administrator* role, for example, grants these privileges.
+The *DW Administrator* role template, for example, grants these privileges.
 
 </td>
 <td valign="top">
@@ -43,7 +43,7 @@ A combination of a global role and a scoped role:
     -   *Spaces Files* \(`-RU-----`\) - To view specific spaces and their contents.
 
 
-The *DW Space Administrator* role template, for example, grants this combination of privileges.
+The *DW Space Administrator* global role and a scoped role based on the *DW Space Administrator* role template together grant these privileges.
 
 </td>
 </tr>

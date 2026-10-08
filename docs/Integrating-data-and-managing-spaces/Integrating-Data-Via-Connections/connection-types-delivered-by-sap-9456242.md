@@ -6,13 +6,14 @@ To connect to remote systems, applications, databases, or storages, SAP Datasphe
 
 The following connection types are available with SAP Datasphere, each connection type supporting different sets of features.
 
-For an overview of connections supporting replication flows, see also [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:.
-
 > ### Note:  
 > -   Spaces with storage type *SAP HANA Database \(Disk and In-Memory\)* offer all connection types.
 > 
 > -   Spaces with storage type *SAP HANA Data Lake Files* \(file spaces\) provide a subset of connection types \(see column *Available in File Spaces* below\). In file spaces, the connection types only support replication flows.
 > 
+> -   For an overview of connections supporting replication flows, see also [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:.
+> 
+> -   For an overview of supported target connections for SAP Datasphere local tables \(file\), see [SAP Datasphere Local Table (File) Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/bdff6b91cf4b44f895429c23566b3ea0.html "You can use local table (file) sources in a replication flow to replicate data from local table files to supported target connections. This allows you to reuse data that has already been loaded into SAP Datasphere without extracting it again from the original source system.") :arrow_upper_right:.
 > -   SAP Datasphere also provides you with the option to create custom connection types which allow you to connect to external REST APIs and load JSON-based data into the SAP Datasphere object store using replication flows \(see [Creating a Custom Connection Type](creating-a-custom-connection-type-9c582ca.md)\).
 
 ****

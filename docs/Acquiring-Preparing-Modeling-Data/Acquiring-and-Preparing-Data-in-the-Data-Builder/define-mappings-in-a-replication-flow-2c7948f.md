@@ -2,7 +2,7 @@
 
 # Define Mappings in a Replication Flow
 
-Create mappings to specify how the source data is to be changed on its way into the target.
+By defining mappings for column values, you can customize how data is transferred from source to target, including renaming columns, changing data types, and transforming content.
 
 
 
@@ -10,9 +10,9 @@ Create mappings to specify how the source data is to be changed on its way into 
 
 1.  Select the source object for which you want to define mapping.
 
-2.  Choose *Add Projection*.
+2.  In the property panel, go to the *Projections* section and click *Add Projection*.
 
-3.  Go to the *Mapping* tab of the *Projections* dialog and enter a name for your mapping.
+3.  On the *Mapping* tab of the *Projections* dialog, enter a name for your mapping.
 
 4.  Enter your mapping. You have the following options:
 
@@ -29,11 +29,11 @@ Create mappings to specify how the source data is to be changed on its way into 
         > -   For datetime columns, selecting *Edit Content* will auto-fill the fields with the following function:
         > 
         >     -   Date - CURRENT\_UTCDATE
-        > 
         >     -   Time - CURRENT\_UTCTIME
         >     -   Timestamp - CURRENT\_UTCTIMESTAMP
 
     -   Mask column data: \[SAP Signavio targets\] Select the *Enable Hashing* checkbox \(see [Mask Sensitive Column Data](sap-signavio-targets-for-replication-flows-b8f5e28.md#loiob8f5e28d34b44d71a52f6265e4fc245f__section_mask_columns)\).
+
     -   Add a new column: Choose *Add* and enter the necessary values for the new column.
 
         To add a new column with string, number constants, or current UTC datetime functions:
@@ -42,9 +42,10 @@ Create mappings to specify how the source data is to be changed on its way into 
         2.  Select the checkbox field under the Functions / Constant tab.
         3.  Update target Column\(Technical Name\) and target Column\(Business Name\) as needed.
         4.  Add the either of the following 3 functions in cell Functions / Constant:
-            1.  CURRENT\_UTCDATE - The column will be updated with current UTC date and select datatype as date.
-            2.  CURRENT\_UTCTIME - The column will be updated with current UTC time and select datatype as time.
-            3.  CURRENT\_UTCTIMESTAMP - The column will be updated with current UTC time stamp and select datatype as timestamp.
+
+            -   CURRENT\_UTCDATE - The column will be updated with current UTC date and select datatype as date.
+            -   CURRENT\_UTCTIME - The column will be updated with current UTC time and select datatype as time.
+            -   CURRENT\_UTCTIMESTAMP - The column will be updated with current UTC time stamp and select datatype as timestamp.
 
         5.  For constant select the appropriate datatype\(example string\) and update appropriate value in the cell Functions / Constant.
 
@@ -54,6 +55,7 @@ Create mappings to specify how the source data is to be changed on its way into 
         > You cannot skip a target column that has the property *Not Null* unless you assign a constant or function value to it. If you skip such a column without assigning a value, the deployment fails. The error message lists the affected replication objects.
 
     -   Change the column sequence: Select the column that you want to move to a different place and use the *Up* and *Down* buttons.
+
     -   Restore default settings: To discard any changes and restore the default mapping settings, choose *Auto-Map*.
 
         > ### Caution:  

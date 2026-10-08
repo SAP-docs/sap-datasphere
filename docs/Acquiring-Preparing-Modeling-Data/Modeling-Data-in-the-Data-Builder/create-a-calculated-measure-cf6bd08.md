@@ -36,7 +36,7 @@ A calculated measure references other measures and allows the combination of mea
     </td>
     <td valign="top">
     
-     
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>

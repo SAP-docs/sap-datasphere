@@ -23,7 +23,7 @@ Click :desktop_computer: *\(Monitoring\)* in the side navigation to open the mon
 
 -   <span class="SAP-icons-V5"></span> *\(System and Spaces\)*  
 
-    Monitor system performance and issues related to storage, tasks, out-of-memory, and other issues across all spaces. Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. See [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md).
+    Monitor system performance and issues related to storage, tasks, out-of-memory, and other issues across all spaces. Monitor the storage consumption for file spaces \(of storage type SAP HANA Data Lake Files\) and their usage of the Apache Spark application for task runs. See [Monitoring System Disk, Memory, and Performance](monitoring-system-disk-memory-and-performance-bce718d.md).
 
 -   <span class="SAP-icons-V5"></span> *\(Capacities Monitoring\)*  
 

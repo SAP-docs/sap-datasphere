@@ -332,7 +332,7 @@ Displays the number of records replicated into SAP Datasphere. You can then comp
 <tr>
 <td valign="top">
 
-*Scheduled Next Run* 
+*Next Runs* 
 
 </td>
 <td valign="top">
@@ -344,7 +344,7 @@ Displays the next scheduled run \(if a schedule is set for the remote table\).
 <tr>
 <td valign="top">
 
-*Size in-Memory \(MiB\)* 
+*Size in-Memory* 
 
 </td>
 <td valign="top">
@@ -356,7 +356,7 @@ Displays the size occupied by the remote table data in memory.
 <tr>
 <td valign="top">
 
-*Size on Disk \(MiB\)* 
+*Size on Disk* 
 
 </td>
 <td valign="top">

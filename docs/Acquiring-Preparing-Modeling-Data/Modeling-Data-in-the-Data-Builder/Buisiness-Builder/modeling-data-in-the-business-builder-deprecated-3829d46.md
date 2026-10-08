@@ -1,15 +1,18 @@
 <!-- loio3829d46c48a44f1e94915054bd76b7b9 -->
 
-# Modeling Data in the Business Builder
+# Modeling Data in the Business Builder \(Deprecated\)
 
 Users with a modeler role can use the *Business Builder* editors to combine, refine, and enrich *Data Builder* objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and Microsoft Excel.
 
+> ### Note:  
+> The Business Builder is deprecated and will not receive further updates. We recommend that you migrate your consumption models to analytic models, which are now the preferred way to expose data to SAP Analytics Cloud and other clients, tools and apps.
+
 This topic contains the following sections:
 
--   [Consume Data From the Data Builder in Business Entities](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_business_entities)
--   [Combine Business Entities in Fact Models and Consumption Models](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_consumption_models)
--   [Expose Data in Perspectives](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_perspectives)
--   [Import SAP BW∕4HANA Queries](modeling-data-in-the-business-builder-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_bw4hana_import)
+-   [Consume Data From the Data Builder in Business Entities](modeling-data-in-the-business-builder-deprecated-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_business_entities)
+-   [Combine Business Entities in Fact Models and Consumption Models](modeling-data-in-the-business-builder-deprecated-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_consumption_models)
+-   [Expose Data in Perspectives](modeling-data-in-the-business-builder-deprecated-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_perspectives)
+-   [Import SAP BW∕4HANA Queries](modeling-data-in-the-business-builder-deprecated-3829d46.md#loio3829d46c48a44f1e94915054bd76b7b9__section_bw4hana_import)
 
 > ### Note:  
 > This feature is not supported for file spaces \(spaces with a storage type of *SAP HANA Data Lake Files*\).

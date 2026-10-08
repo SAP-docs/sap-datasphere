@@ -6,6 +6,9 @@
 
 The Business Builder start page gives you access to the different editors.
 
+> ### Note:  
+> The Business Builder is deprecated and will not receive further updates. We recommend that you migrate your consumption models to analytic models, which are now the preferred way to expose data to SAP Analytics Cloud and other clients, tools and apps.
+
 
 
 You can access the editors for consumption models, fact models, analytical datasets and dimensions, and create authorization scenarios.

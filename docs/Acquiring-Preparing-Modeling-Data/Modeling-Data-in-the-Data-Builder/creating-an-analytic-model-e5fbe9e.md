@@ -40,7 +40,7 @@ This graphic shows the role of the analytic model within SAP Datasphere:
 
 In addition to working with analytic models in the editor, you can also:
 
--   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Managing Modeling Objects via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/e3b2cbef9d1f4b38b51c64fe9e88c0aa.html "You can use the datasphere command line interface to list, read, create, update, and delete modeling objects.") :arrow_upper_right:\).
 -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
@@ -79,7 +79,7 @@ In addition to working with analytic models in the editor, you can also:
     </td>
     <td valign="top">
     
-     
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>

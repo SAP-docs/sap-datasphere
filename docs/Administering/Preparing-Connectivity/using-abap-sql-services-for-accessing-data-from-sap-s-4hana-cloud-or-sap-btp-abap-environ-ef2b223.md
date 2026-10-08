@@ -42,9 +42,9 @@ In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administra
 
     For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
 
-2.  To expose CDS view entities using the SQL service, a business user creates a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
+2.  To expose CDS view entities using the SQL service, a business user \(with developer role\) creates a service definition and a corresponding service binding of type *SQL - Web API* using ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed. The *SQL - Web API* service binding for the service definition enables the exposure of the entities via the ABAP SQL Service.
 
-    In the *Enabled Operations* area of the service binding, the business user must select access type *REPLICATE* to enable data replication.
+    In the *Enabled Operations* area of the service binding, the user must select access type *REPLICATE* to enable data replication.
 
     For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding) in the *ABAP Cloud* documentation.
 
@@ -86,9 +86,9 @@ In SAP S/4HANA Cloud or SAP BTP ABAP environment, a business user and administra
 
     For more information, see [Prerequisites and Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites-and-constraints) in the *ABAP Cloud* documentation. Note that for SAP Datasphere the ODBC driver installation is not required \(the driver is pre-installed on the SAP HANA database\).
 
-2.  To expose CDS view entities using the SQL service, a business user must create a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL service.
+2.  To expose CDS view entities using the SQL service, a business user \(with developer role\) creates a service definition and a corresponding service binding of type *SQL - Web API* using ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed. The *SQL - Web API* service binding for the service definition enables the exposure of the entities via the ABAP SQL Service.
 
-    To enable federated access, the business user must select access type *SELECT* in the *Enabled Operations* area of the service binding.
+    To enable federated access, the user must select access type *SELECT* in the *Enabled Operations* area of the service binding.
 
     For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding) in the *ABAP Cloud* documentation.
 

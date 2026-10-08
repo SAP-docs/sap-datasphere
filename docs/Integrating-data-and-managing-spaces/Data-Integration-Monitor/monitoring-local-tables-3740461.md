@@ -96,7 +96,7 @@ Displays the growth in % of the number of records since the last month. It is co
 <tr>
 <td valign="top">
 
-*Size on Disk \(MiB\)*
+*Size on Disk*
 
 </td>
 <td valign="top">
@@ -113,7 +113,7 @@ Displays the disk storage used by the local table.
 <tr>
 <td valign="top">
 
-*Size in-Memory \(MiB\)*
+*Size in-Memory*
 
 </td>
 <td valign="top">

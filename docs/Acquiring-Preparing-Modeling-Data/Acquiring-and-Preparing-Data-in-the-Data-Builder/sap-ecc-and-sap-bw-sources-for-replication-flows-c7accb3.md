@@ -116,3 +116,337 @@ You can choose between 2 content types:
 </tr>
 </table>
 
+
+
+## Data Types
+
+The following table shows how SAP ECC/BW \(ODP\) source data types are mapped to internal data types.
+
+
+<table>
+<tr>
+<th valign="top">
+
+ODP Data Type
+
+</th>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ACCP
+
+</td>
+<td valign="top">
+
+string\(6\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CHAR
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CLNT
+
+</td>
+<td valign="top">
+
+string\(3\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUKY
+
+</td>
+<td valign="top">
+
+string\(5\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATS
+
+</td>
+<td valign="top">
+
+date or string\(8\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DEC
+
+</td>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFIL16\_DEC
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFIL34\_RAW
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFIL34\_SCL
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFLIL\_RAW
+
+</td>
+<td valign="top">
+
+binary
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GEOM\_EWKB
+
+</td>
+<td valign="top">
+
+binary
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT1
+
+</td>
+<td valign="top">
+
+uint8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT2
+
+</td>
+<td valign="top">
+
+int16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT4
+
+</td>
+<td valign="top">
+
+int32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT8
+
+</td>
+<td valign="top">
+
+int64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LANG
+
+</td>
+<td valign="top">
+
+string\(1\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LCHR
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LRAW
+
+</td>
+<td valign="top">
+
+binary\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NUMC
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PREC
+
+</td>
+<td valign="top">
+
+int16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RAW
+
+</td>
+<td valign="top">
+
+binary\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RAWSTRING
+
+</td>
+<td valign="top">
+
+binary
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SSTRING
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+STRING
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TIMS
+
+</td>
+<td valign="top">
+
+time or string\(6\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UNIT
+
+</td>
+<td valign="top">
+
+string\(2-3\)
+
+</td>
+</tr>
+</table>
+

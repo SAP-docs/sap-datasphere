@@ -53,6 +53,8 @@ After you receive the notification your access request has been approved, you ca
 
 4.  Select the access agreement to view its details page. 
 
+    If its installation status is **Installed**, skip the remaining steps. You can go to the space and start using the data product.
+
 5.  Choose *Install Data Product*. 
 
 6.  Select the delivery method for accessing the data.

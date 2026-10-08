@@ -56,7 +56,7 @@ Monitor the storage consumption for file spaces \(of storage type SAP HANA Data 
 </td>
 <td valign="top">
 
-See [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md).
+See [Monitoring System Disk, Memory, and Performance](monitoring-system-disk-memory-and-performance-bce718d.md).
 
 </td>
 </tr>

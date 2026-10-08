@@ -190,7 +190,7 @@ For more information and points to consider when using replication flows, see al
     <tr>
     <td valign="top">
     
-    *Scheduled Next Run*
+    *Next Runs*
     
     </td>
     <td valign="top">

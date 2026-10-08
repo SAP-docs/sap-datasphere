@@ -135,7 +135,7 @@
     -   [Allow a Space to Read From the Database User Group Schema](Creating-a-Database-User-Group/allow-a-space-to-read-from-the-database-user-group-schema-44021ca.md)
     -   [Allow a Space to Write to the Database User Group Schema](Creating-a-Database-User-Group/allow-a-space-to-write-to-the-database-user-group-schema-5b27e03.md)
 -   [Monitoring SAP Datasphere](monitoring-sap-datasphere-d39b865.md)
-    -   [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md)
+    -   [Monitoring System Disk, Memory, and Performance](monitoring-system-disk-memory-and-performance-bce718d.md)
     -   [Monitoring Capacity Unit Consumption](monitoring-capacity-unit-consumption-ba3d05b.md)
     -   [Reviewing Task Logs](reviewing-task-logs-399e52f.md)
     -   [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md)

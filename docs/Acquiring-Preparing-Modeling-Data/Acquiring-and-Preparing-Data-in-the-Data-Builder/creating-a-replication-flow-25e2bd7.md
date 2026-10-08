@@ -51,7 +51,7 @@ You can use replication flows to copy data from the following source objects fro
 > 
 > In addition to working with flows in the editor, you can also:
 > 
-> -   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Manage Modeling Objects and Tasks via the Command Line](https://help.sap.com/viewer/d0ecd6f297ac40249072a44df0549c1a/cloud/en-US/6f5c65f209004751aa48f9682ee2ec45.html "Users with a modeler role can use the datasphere command line interface to list, create, update, and delete modeling objects.") :arrow_upper_right:\).
+> -   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Managing Modeling Objects via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/e3b2cbef9d1f4b38b51c64fe9e88c0aa.html "You can use the datasphere command line interface to list, read, create, update, and delete modeling objects.") :arrow_upper_right:\).
 > -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 > -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 
@@ -92,7 +92,12 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-     
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
+
+    > ### Note:  
+    > If the source connection type is SAP ABAP and the target is SAP Datasphere the business name of each column is automatically copied from the source to the target. For all other source and target combinations, the technical name is copied to the business name by default. You can override the default business name at any time.
+
+
     
     </td>
     </tr>
@@ -452,7 +457,7 @@ You can use replication flows to copy data from the following source objects fro
     For more information about how to monitor your replication flow run, see [Monitoring Flows](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b661ea0766a24c7d839df950330a89fd.html "In the Flows monitor, you can find all the deployed flows per space.") :arrow_upper_right:.
 
     > ### Note:  
-    > -   If your replication flow stopped or failed for technical reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will restart automatically at the point where it failed.
+    > -   If your replication flow stops or fails due to temporary reasons \(for example, in the case of an SAP Datasphere system or source system temporarily unavailable\), it will resume automatically at the point where it failed. In the case of a permanent failure, the flow will fail, and you will have to resume it manually.
     > 
     > -   During table replication, the primary key order is preserved when it differs from the column order to prevent replication flow failures caused by key order mismatches.
 

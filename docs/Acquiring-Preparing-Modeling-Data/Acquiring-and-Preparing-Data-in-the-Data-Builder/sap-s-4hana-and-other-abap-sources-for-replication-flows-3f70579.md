@@ -11,6 +11,7 @@ This topic contains the following sections:
 -   [ABAP Replication Source Object Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_source_objects)
 -   [Work with Source Objects Without Primary Keys](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys)
 -   [Mask Sensitive Data Replicated to SAP Signavio](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_signavio)
+-   [Data Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_data_types)
 
 
 
@@ -603,7 +604,8 @@ This applies to the following types of *source objects*:
 
 
 > ### Caution:  
-> If you are replicating source data from Microsoft SQL Server, you can't replicate objects without primary keys.
+> -   If you are replicating source data from Microsoft SQL Server, you can't replicate objects without primary keys.
+> -   The load type must not be *Delta Only*.
 
 CDS view source objects must have load type *Initial Only*, and ODP data sources must have load type *Initial Only* or *Initial and Delta*.
 
@@ -628,4 +630,343 @@ The technical target column is not added to a target table for Apache Kafka, as 
 ## Mask Sensitive Data Replicated to SAP Signavio
 
 You can mask sensitive column data using the `SHA3-256` algorithm before writing to SAP Signavio \(see [Mask Sensitive Column Data](sap-signavio-targets-for-replication-flows-b8f5e28.md#loiob8f5e28d34b44d71a52f6265e4fc245f__section_mask_columns)\).
+
+
+
+<a name="loio3f70579c92434f4f88471bba2bd70893__section_data_types"/>
+
+## Data Types
+
+The following table shows how SAP S/4HANA ABAP \(ODP\) source data types are mapped to internal data types.
+
+
+<table>
+<tr>
+<th valign="top">
+
+ODP Data Type
+
+</th>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ACCP
+
+</td>
+<td valign="top">
+
+string\(6\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CHAR
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CLNT
+
+</td>
+<td valign="top">
+
+string\(3\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CUKY
+
+</td>
+<td valign="top">
+
+string\(5\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATS
+
+</td>
+<td valign="top">
+
+date or string\(8\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DEC
+
+</td>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFIL16\_DEC
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFIL34\_RAW
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFIL34\_SCL
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DFLIL\_RAW
+
+</td>
+<td valign="top">
+
+binary
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GEOM\_EWKB
+
+</td>
+<td valign="top">
+
+binary
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT1
+
+</td>
+<td valign="top">
+
+uint8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT2
+
+</td>
+<td valign="top">
+
+int16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT4
+
+</td>
+<td valign="top">
+
+int32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INT8
+
+</td>
+<td valign="top">
+
+int64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LANG
+
+</td>
+<td valign="top">
+
+string\(1\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LCHR
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LRAW
+
+</td>
+<td valign="top">
+
+binary\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NUMC
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PREC
+
+</td>
+<td valign="top">
+
+int16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RAW
+
+</td>
+<td valign="top">
+
+binary\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RAWSTRING
+
+</td>
+<td valign="top">
+
+binary
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SSTRING
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+STRING
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TIMS
+
+</td>
+<td valign="top">
+
+time or string\(6\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UNIT
+
+</td>
+<td valign="top">
+
+string\(2-3\)
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> For DATS and TIMS columns, the internal data type depends on the Content Type setting. With Template Type, DATS maps to date and TIMS maps to time. With Native Type \(default\), both map to their string representations \(string\(10\) and string\(8\) respectively\).
 

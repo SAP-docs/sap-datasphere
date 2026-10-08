@@ -53,7 +53,7 @@ Creating a fiscal time dimension allows you to align your financial reporting an
     </td>
     <td valign="top">
     
-
+    Enter a descriptive name to help users identify the object. This name can be changed at any time. 
     
     </td>
     </tr>

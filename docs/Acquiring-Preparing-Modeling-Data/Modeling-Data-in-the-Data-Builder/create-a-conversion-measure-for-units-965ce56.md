@@ -50,7 +50,7 @@ Unit conversion allows you to convert measures with units that have different un
     </td>
     <td valign="top">
     
-     
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>

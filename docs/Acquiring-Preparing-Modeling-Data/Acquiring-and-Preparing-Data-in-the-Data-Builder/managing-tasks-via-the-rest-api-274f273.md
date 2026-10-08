@@ -232,10 +232,10 @@ Example:
 
 Get task log details and existing task log history of objects.
 
-Get task log details. To retrieve task log details, use the GET request with the API <code>api/v1/datasphere/tasks/logs/<i class="varname">&lt;spaceid&gt;</i>/<i class="varname">&lt;logid&gt;</i></code> endpoint and enter:
+Get task log details. To retrieve task log details, use the GET request with the API <code>api/v1/datasphere/tasks/logs/<i class="varname">&lt;space_id&gt;</i>/<i class="varname">&lt;logid&gt;</i></code> endpoint and enter:
 
 ```
-https://<tenant_url>/api/v1/datasphere/tasks/logs/<space_id><logid>
+https://<tenant_url>/api/v1/datasphere/tasks/logs/<space_id>/<logid>
 ```
 
 Details for a specific run identified by its log ID and space ID. The response format is controlled by the Accept header. If the Accept header is not provided, the endpoint returns the default status object response. Accept header options are:

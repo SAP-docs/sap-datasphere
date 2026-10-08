@@ -411,7 +411,7 @@ You can act on objects in the list in the following ways:
     
     Move the selected objects to another folder. Allows multi-selection from a single space. 
 
-    For more information, see [Folders](folders-bbedad6.md).
+    For more information, see [Organizing Objects in Folders](organizing-objects-in-folders-bbedad6.md).
     
     </td>
     </tr>

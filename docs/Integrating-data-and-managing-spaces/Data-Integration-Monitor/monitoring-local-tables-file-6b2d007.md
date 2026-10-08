@@ -81,7 +81,7 @@ Displays the number of active records.
 <tr>
 <td valign="top">
 
-*Total Storage \(MiB\)*
+*Total Storage*
 
 </td>
 <td valign="top">
@@ -95,7 +95,7 @@ If you compare the size of a similar table that is stored in a space of type SAP
 <tr>
 <td valign="top">
 
-*Active Records File Storage \(MiB\)*
+*Active Records File Storage*
 
 </td>
 <td valign="top">
@@ -131,7 +131,7 @@ Indicates how the local table \(file\) was last updated. For example, name of th
 <tr>
 <td valign="top">
 
-*Buffer File Size \(MiB\)*
+*Buffer File Size*
 
 </td>
 <td valign="top">

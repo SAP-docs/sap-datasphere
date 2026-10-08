@@ -42,7 +42,7 @@ A restricted measure variable is used in the filter condition of a restricted me
     </td>
     <td valign="top">
     
-     
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>

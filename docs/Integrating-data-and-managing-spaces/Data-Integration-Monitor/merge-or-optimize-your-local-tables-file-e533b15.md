@@ -111,7 +111,11 @@ To define Z-order columns,
 3.  Go to the *Settings* tab
 4.  Navigate to *Optimize Settings*
 5.  Click *Define Z-Order Columns* \(multiple selection is possible\)
-6.  Select the relevant columns
+6.  Select the relevant columns.
+
+    > ### Note:  
+    > Only the first 32 columns can be used as Z-ordering columns.
+
 7.  Click *OK*
 
 When using z-order columns in the optimize task, it is advised to run an optimize after every merge run of that same local table \(file\). You can for example, modeling this as part of a task chain.

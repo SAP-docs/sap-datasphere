@@ -72,7 +72,7 @@ Perform the following steps to prepare data replication with replication flows:
 
         For more information, see [Prerequisites](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites?version=s4_hana) and [Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/constraints?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
 
-    3.  To expose CDS view entities using the SQL service, an SAP S/4HANA business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
+    3.  To expose CDS view entities using the SQL service, an SAP S/4HANA business user \(with developer role\) has created a service definition and a corresponding service binding of type *SQL - Web API* using ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed. The *SQL - Web API* service binding for the service definition enables the exposure of the entities via the ABAP SQL Service.
 
         For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
 
@@ -199,7 +199,7 @@ Perform the following steps to prepare data federation with remote tables:
 
         For more information, see [Prerequisites](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/prerequisites?version=s4_hana) and [Constraints](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/constraints?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
 
-    2.  To expose CDS view entities using the SQL service, an SAP S/4HANA business user has created a service definition and a corresponding service binding of type SQL1 in the ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed, and a service binding of type SQL for that service definition enables their exposure via the ABAP SQL Service.
+    2.  To expose CDS view entities using the SQL service, an SAP S/4HANA business user \(with developer role\) has created a service definition and a corresponding service binding of type *SQL - Web API* using ABAP Development Tools. The service definition lists the set of CDS view entities that shall be exposed. The *SQL - Web API* service binding for the service definition enables the exposure of the entities via the ABAP SQL Service.
 
         For more information, see [Creating a Service Definition and an SQL-Typed Service Binding](https://help.sap.com/docs/abap-cloud/abap-integration-connectivity/creating-service-definition-and-sql-typed-service-binding?version=s4_hana) in the *ABAP Cloud* documentation for SAP S/4HANA.
 

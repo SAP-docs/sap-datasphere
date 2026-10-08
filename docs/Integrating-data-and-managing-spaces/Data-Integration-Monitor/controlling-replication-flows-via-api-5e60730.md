@@ -9,7 +9,7 @@ This topic contains the following sections:
 -   [Prerequisites](controlling-replication-flows-via-api-5e60730.md#loio5e60730b5b4c45f49e261af6fdaad72b__section_prerequisites)
 -   [List Replication Flows](controlling-replication-flows-via-api-5e60730.md#loio5e60730b5b4c45f49e261af6fdaad72b__section_list)
 -   [Obtain Replication Flow Run Status](controlling-replication-flows-via-api-5e60730.md#loio5e60730b5b4c45f49e261af6fdaad72b__section_status)
--   [Start, Pause, Resume, and Stop Replication Flows and Replication Flow Objects](controlling-replication-flows-via-api-5e60730.md#loio5e60730b5b4c45f49e261af6fdaad72b__section_start_stop)
+-   [Control Replication Flows and Replication Flow Objects](controlling-replication-flows-via-api-5e60730.md#loio5e60730b5b4c45f49e261af6fdaad72b__section_start_stop)
 
 The API specification is available at the [SAP Business Accelerator Hub](https://api.sap.com/package/sapdatasphere/overview).
 
@@ -153,7 +153,7 @@ GET https://<tenant_id>.api.<regional_host>/api/v1/datasphere/spaces/<space_id>/
 
 <a name="loio5e60730b5b4c45f49e261af6fdaad72b__section_start_stop"/>
 
-## Start, Pause, Resume, and Stop Replication Flows and Replication Flow Objects
+## Control Replication Flows and Replication Flow Objects
 
 To start, pause, resume, or stop a replication flow, enter the following, inserting the appropriate *<action\>*:
 
@@ -168,7 +168,7 @@ Where *<action\>* is one of:
 -   `resume`
 -   `stop`
 
-To pause or resume an individual replication flow object, enter the following, inserting the appropriate *<action\>*:
+To pause, resume, or restart an individual replication flow object, enter the following, inserting the appropriate *<action\>*:
 
 ```
 POST https://<tenant_id>.api.<regional_host>/api/v1/datasphere/spaces/<space_id>/replication-flows/<technical_name>/objects/<object_technical_name><action>
@@ -178,4 +178,5 @@ Where *<action\>* is one of:
 
 -   `pause-object`
 -   `resume-object`
+-   `restart-object`
 

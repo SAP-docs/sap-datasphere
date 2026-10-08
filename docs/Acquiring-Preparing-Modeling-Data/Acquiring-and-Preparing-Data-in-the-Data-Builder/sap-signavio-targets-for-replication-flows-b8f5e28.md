@@ -208,3 +208,7 @@ These columns are needed to capture changes in the source so that they can be re
 
 If a target column has the same name as one of the columns for change data capturing, the target column has to be renamed. Auto-Projection does this by adding the prefix AUTOPREFIX\_ to the name of the target column, for example AUTOPREFIX\_timestamp.
 
+
+
+## Data Types
+

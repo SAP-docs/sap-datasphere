@@ -23,6 +23,10 @@ You can use Oracle as a source connection in replication flows to replicate data
 
 
 
+## Replicating Source Objects Without Primary Keys
+
+
+
 ## Data Types
 
 The following table shows how Oracle source data types are mapped to internal data types. Data types that are not supported cannot be replicated.

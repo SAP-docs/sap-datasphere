@@ -47,7 +47,7 @@ Business entities can be modeled as a dimension or as a fact. Dimensions are gen
     > ### Note:  
     > Associations cannot be copied yet.
 
-4.  By default, the name of the source is taken.
+4.  Enter a descriptive name to help users identify the object. This name can be changed at any time. By default, the name of the source is taken.
 
 5.  A technical name is generated.
 

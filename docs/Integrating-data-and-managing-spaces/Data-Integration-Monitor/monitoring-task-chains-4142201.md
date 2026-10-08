@@ -148,7 +148,7 @@ Date and Time when the last run ended.
 <tr>
 <td valign="top">
 
-*Scheduled Next Run*
+*Next Runs*
 
 </td>
 <td valign="top">

@@ -20,5 +20,5 @@ SAP Datasphere users can work with intelligent content in the following ways:
 
 -   Review the installed content \(see [Reviewing Installed Intelligent Content](reviewing-installed-intelligent-content-6446487.md)\).
 -   Upload permissions records to control access to the data \(see [Applying Row-Level Security to Data Delivered through Intelligent Content](applying-row-level-security-to-data-delivered-through-intelligent-content-c83225f.md)\).
--   Build on top of the delivered data products and content to extend it \(see [Extending Intelligent Content](extending-intelligent-content-3c15868.md)\)
+-   Build on top of the delivered data products and content to extend it \(see [Extending Intelligent Content](extending-intelligent-content-3c15868.md)\).
 

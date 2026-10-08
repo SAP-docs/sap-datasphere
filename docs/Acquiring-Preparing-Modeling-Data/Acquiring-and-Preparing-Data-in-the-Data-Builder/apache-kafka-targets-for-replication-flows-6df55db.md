@@ -339,3 +339,319 @@ Each topic contains the source columns as defined in the mapping for the replica
     
 -   *Seq*: Sequence number, an integer value that reflects the sequential order of the delta row in relation to other deltas. This column is empty for initial load rows and is not populated for all source systems \(for example, ABAP\).
 
+
+
+## Data Types
+
+The following table shows how internal data types are mapped to Apache Kafka target data types for both AVRO and JSON formats.
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+AVRO Data Type
+
+</th>
+<th valign="top">
+
+JSON Data Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+binary
+
+</td>
+<td valign="top">
+
+bytes
+
+</td>
+<td valign="top">
+
+String \(base64-encoded\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+int \(date\)
+
+</td>
+<td valign="top">
+
+String \(YYYY-MM-DD\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+bytes \(DECIMAL p,s\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+bytes \(DECIMAL 28,6\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+bytes \(DECIMAL 38,6\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float32
+
+</td>
+<td valign="top">
+
+float
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+double
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int8
+
+</td>
+<td valign="top">
+
+int
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+int
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+int
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+long
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+long \(timestamp-micros\)
+
+</td>
+<td valign="top">
+
+String \(HH:MM:SS.NNNNNNNNNN\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+long \(timestamp-micros\)
+
+</td>
+<td valign="top">
+
+String \(YYYY-MM-DD HH:MM:SS.NNNNNNNNNN\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint8
+
+</td>
+<td valign="top">
+
+int
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint64
+
+</td>
+<td valign="top">
+
+bytes \(DECIMAL 20,0\)
+
+</td>
+<td valign="top">
+
+Number
+
+</td>
+</tr>
+</table>
+

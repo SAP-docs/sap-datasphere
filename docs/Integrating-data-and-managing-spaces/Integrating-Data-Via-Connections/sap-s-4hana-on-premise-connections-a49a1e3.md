@@ -22,7 +22,7 @@ For information about the required prerequisites in the connected systems and SA
 ## Supported Features
 
 > ### Note:  
-> In file spaces, remote tables, data flows, and model import are not supported.
+> In file spaces, remote tables, data flows, and model import are not supported. When using *OAuth 2.0* as *Authentication Type*, remote tables and model import are not supported.
 
 
 <table>

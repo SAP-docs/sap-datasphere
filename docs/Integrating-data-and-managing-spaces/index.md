@@ -32,6 +32,7 @@
         -   [Generic OData Connections](Integrating-Data-Via-Connections/generic-odata-connections-5d36f1a.md)
         -   [Generic SFTP Connections](Integrating-Data-Via-Connections/generic-sftp-connections-b645de7.md)
         -   [Google BigQuery Connections](Integrating-Data-Via-Connections/google-bigquery-connections-30ed77d.md)
+            -   [Configuring Workload Identity Federation for Google BigQuery Connections](Integrating-Data-Via-Connections/configuring-workload-identity-federation-for-google-bigquery-connections-7962a49.md)
         -   [Google Cloud Storage Connections](Integrating-Data-Via-Connections/google-cloud-storage-connections-aec242c.md)
         -   [Hadoop Distributed File System Connections](Integrating-Data-Via-Connections/hadoop-distributed-file-system-connections-f9c3356.md)
         -   [Microsoft Azure Blob Storage Connections](Integrating-Data-Via-Connections/microsoft-azure-blob-storage-connections-df5a7c5.md)

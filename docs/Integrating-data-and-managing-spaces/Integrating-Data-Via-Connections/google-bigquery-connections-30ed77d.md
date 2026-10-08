@@ -21,7 +21,7 @@ This topic contains the following sections:
 ## Supported Features
 
 > ### Note:  
-> In file spaces or when using Cloud Connector, remote tables and data flows are not supported.
+> In file spaces, when using Cloud Connector, or when using *Workload Identity Federation* as authentication type, remote tables and data flows are not supported.
 
 
 <table>
@@ -95,6 +95,13 @@ Before you can use the connection for replication flows, the following is requir
 
     For more information, see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:.
 
+-   Google Workload Identity Federation enables workloads running outside Google Cloud such as SAP Datasphere replication flows to securely access Google Cloud resources without requiring service account keys. If you want to eliminate the need to create, rotate, and distribute long-lived Google Cloud Platform service account JSON keys and use short-lived access tokens instead, you can use the *Workload Identity Federation* authentication type.
+
+    If you want to use the authentication type, you need to configure the necessary components: Identity Authentication in SAP Cloud Identity Services and Google Cloud Platform.
+
+    For more information, see [Configuring Workload Identity Federation for Google BigQuery Connections](configuring-workload-identity-federation-for-google-bigquery-connections-7962a49.md).
+
+-   You need access to both the Google BigQuery REST API endpoint \([bigquery.googleapis.com](http://bigquery.googleapis.com/)\) and the Google BigQuery Storage API endpoint \([bigquerystorage.googleapis.com](http://bigquerystorage.googleapis.com/)\).
 -   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data. In this case, two service endpoints and their corresponding Cloud Connector system mappings are required:
 
     -   REST API endpoint \(via HTTPS protocol\) - used for retrieving metadata from Google BigQuery
@@ -165,7 +172,7 @@ Description
 </td>
 <td valign="top">
 
-Enter the ID of the Google Cloud project to which you want to connect. You can find the project ID in the json key file that you need for the credentials. 
+Enter the ID of the Google Cloud project to which you want to connect. 
 
 </td>
 </tr>
@@ -321,7 +328,155 @@ Enter the virtual port that you defined during Cloud Connector configuration.
 
 
 
+### Authentication
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type to use to connect to Google BigQuery. 
+
+Choose from the following:
+
+-   *Workload Identity Federation* \[default\] - to authenticate to Google BigQuery using a short-lived access token when using replication flows
+
+    Remote tables and data flows currently are not supported with this authentication type.
+
+-   *Key File*- to authenticate to Google BigQuery using a service account key \(long-lived\)
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### OAuth2.0 \(Workload Identity Federation\)
+
+If *Authentication Type* = *Workload Identity Federation*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*IAS OAuth2 Token Endpoint*
+
+</td>
+<td valign="top">
+
+Enter the SAP Cloud Identity Services \(IAS\) endpoint used to request an access token: <code><i class="varname">&lt;SAP Cloud Identity Service&gt;</i>/oauth2/token</code>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Workload Identity Pool Audience* 
+
+</td>
+<td valign="top">
+
+Enter the workload identity pool audience string that you have copied when configuring the workload identity pool in Google Cloud: <code>//iam.googleapis.com/projects/<i class="varname">&lt;Google Cloud project id&gt;</i>/locations/global/workloadIdentityPools/<i class="varname">&lt;pool id&gt;</i>/providers/<i class="varname">&lt;provider id&gt;</i></code>.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Service Account Impersonation URL*
+
+</td>
+<td valign="top">
+
+\[optional\] Enter the IAM impersonation endpoint for the target service account \(`https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/<service-account-id>:generateAccessToken`\)
+
+</td>
+</tr>
+</table>
+
+
+
+### Credentials \(Workload Identity Federation\)
+
+If *Authentication Type* = *Workload Identity Federation*:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Property
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*IAS OAuth2 Client ID*
+
+</td>
+<td valign="top">
+
+Enter the client ID that has been created for your OpenID Connect \(OIDC\) application in the Identity Authentication service in SAP Cloud Identity Services.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*IAS OAuth2 Client Secret* 
+
+</td>
+<td valign="top">
+
+Enter the client secret that has been created for your OpenID Connect \(OIDC\) application in the Identity Authentication service in SAP Cloud Identity Services.
+
+</td>
+</tr>
+</table>
+
+
+
 ### Credentials
+
+If *Authentication Type* = *Key File*:
 
 
 <table>
@@ -345,7 +500,7 @@ Description
 </td>
 <td valign="top">
 
-Upload the json key file that is used for authentication.
+Upload the json-based service account key file that is used for authentication.
 
 Choose <span class="SAP-icons-V5"></span> \(Browse\) and select the file from your download location.
 
@@ -394,7 +549,7 @@ Description
 *Remote Tables* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces or when using Cloud Connector, remote tables are not supported.
+> In file spaces, when using Cloud Connector, or when using *Workload Identity Federation* as authentication type, remote tables are not supported.
 
 
 
@@ -411,7 +566,7 @@ Description
 *Data Flows* are enabled without the need to set any additional connection properties.
 
 > ### Note:  
-> In file spaces or when using Cloud Connector, data flows are not supported.
+> In file spaces, when using Cloud Connector, or when using *Workload Identity Federation* as authentication type, data flows are not supported.
 
 
 

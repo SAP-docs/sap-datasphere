@@ -8,7 +8,7 @@ You should regularly monitor your tenant disk storage and delete unneeded data. 
 
 ## Monitor Your Tenant Disk Storage
 
-You can monitor your tenant disk storage usage in *Monitoring* \> *System and Spaces* \(see [Monitoring System and Spaces](monitoring-system-and-spaces-bce718d.md)\).
+You can monitor your tenant disk storage usage in *Monitoring* \> *System and Spaces* \(see [Monitoring System Disk, Memory, and Performance](monitoring-system-disk-memory-and-performance-bce718d.md)\).
 
 
 

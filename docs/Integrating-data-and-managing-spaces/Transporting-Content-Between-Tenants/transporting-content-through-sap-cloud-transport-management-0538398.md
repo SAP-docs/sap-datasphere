@@ -188,7 +188,7 @@ All users in this tenant will now use your configured user rights and privileges
 If no user has been defined in the target tenant beforehand, the user must consent to use their rights during the upload to SAP Cloud Transport Management, provided that they have the necessary privileges and access to the required spaces in the target tenant \(See step 4 in [Export Packages from SAP Datasphere to SAP Cloud Transport Management](transporting-content-through-sap-cloud-transport-management-0538398.md#loio05383980f0704c71ab9872360ce45622__section_using)\).
 
 > ### Note:  
-> Only the system owner, along with the user who assigned his rights, can edit the permission. If the user has been deleted, then you can reset the permission and assign your user instead.
+> Only the system owner, along with the user who assigned the rights, can edit the permission. If the user has been deleted, then you can reset the permission and assign your user instead.
 
 
 
@@ -199,7 +199,7 @@ If no user has been defined in the target tenant beforehand, the user must conse
 1.  In the side navigation area, click *Transport* \> *Export* and select the package you want to export.
 2.  Click <span class="SAP-icons-V5"></span> *Upload to SAP Cloud Transport Management Node* from the menu bar: in the dialog box, you can see the list of selected packages.
 3.  In the *Export Node* dropdown, choose the source node of SAP Cloud Transport Management to which you want to export your packages. For more information on source and target nodes, see [Create Transport Nodes](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/create-transport-nodes).
-4.  Select the checkbox to agree to use your user rights \(based on user email ID\) to import the package in the target tenant.
+4.  Select the checkbox to agree to use your user rights \(based on your user email ID\) to import the package in the target tenant.
 5.  Click *Upload*.
 
 > ### Note:  
@@ -209,10 +209,10 @@ If no user has been defined in the target tenant beforehand, the user must conse
 
 ## Import Packages from SAP Cloud Transport Management to SAP Datasphere
 
-1.  Log into your SAP Cloud Transport Management tenant: in the *Transport Nodes* panel, select the target node where you have uploaded the SAP Datasphere package.
+1.  Log in to your SAP Cloud Transport Management tenant: in the *Transport Nodes* panel, select the target node where you have uploaded the SAP Datasphere package.
 2.  In the *Target Node Details* page, you can see your packages that are ready for import: select the package and click *Import Selected*.
 
-Once the import is completed, you see the content of the package available in its corresponding destination in your SAP Datasphere account.
+Once the import is complete, you can see the package content in its corresponding destination in your SAP Datasphere account. The imported package is not listed in the target tenant; only the package content is available after the import job completes. You can check the status of the import job in *Transport*→*Monitor*\(select the type "Import from SAP Cloud Transport Management"\).
 
 > ### Note:  
 > The user who uploaded the package must be a member of the target tenant with the *Lifecycle* privilege.
@@ -232,7 +232,7 @@ You can schedule imports of all transport requests in a transport node to run at
 
 ## Enable Automatic Imports in SAP Cloud Transport Management
 
-Activate the automatic import in the import queue of a transport node to enable immediate imports of transport requests as soon as they enter a new queue. For more information, see [Enable Automatic Import](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/enable-automatic-import?version=Cloud).
+Activate automatic import in the import queue of a transport node to enable immediate imports of transport requests as soon as they enter a new queue. For more information, see [Enable Automatic Import](https://help.sap.com/docs/cloud-transport-management/sap-cloud-transport-management/enable-automatic-import?version=Cloud).
 
 
 

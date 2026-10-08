@@ -141,5 +141,5 @@ You can allocate specific amounts of memory and disk storage to a space or disab
 
 ## Results
 
-To view the total storage available and the amount assigned to and used by all spaces, see [Monitoring System and Spaces](../monitoring-system-and-spaces-bce718d.md).
+To view the total storage available and the amount assigned to and used by all spaces, see [Monitoring System Disk, Memory, and Performance](../monitoring-system-disk-memory-and-performance-bce718d.md).
 

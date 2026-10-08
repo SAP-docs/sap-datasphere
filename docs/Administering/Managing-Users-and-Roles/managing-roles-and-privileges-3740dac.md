@@ -33,7 +33,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 
 In addition to working with roles in the *Security* tool, you can also:
 
--   List global roles, list users assigned to a global role, and add or remove users from global roles using the `datasphere` command line interface \(see [Managing Global Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/7db69de1d27f422fb153e80680b28335.html "You can use the datasphere command line interface to list and read global roles and add users to and remove users from them.") :arrow_upper_right:\).
+-   List global roles, list users assigned to a global role, and add or remove users from global roles using the `datasphere` command line interface \(see [Managing Global Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/7db69de1d27f422fb153e80680b28335.html "You can use the datasphere command line interface to list global roles and the users assigned to them and to add users to and remove users from them.") :arrow_upper_right:\).
 -   List, read, create, update, and delete scoped roles, and add or remove users or spaces from scoped roles using the `datasphere` command line interface \(see [Managing Scoped Roles via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/85085a35a58a4589bc121fb94efc4876.html "You can use the datasphere command line interface to create, read, update, and delete scoped roles.") :arrow_upper_right:\).
 
 

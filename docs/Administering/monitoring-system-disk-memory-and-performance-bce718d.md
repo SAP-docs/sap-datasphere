@@ -2,11 +2,23 @@
 
 <link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
 
-# Monitoring System and Spaces
+# Monitoring System Disk, Memory, and Performance
 
 Monitor disk storage, memory, task, and statement metrics to track tenant resource usage, identify storage risks, investigate failed tasks and expensive operations, and resolve performance issues before outages occur.
 
+This topic contains the following sections:
 
+-   [Prerequisites](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__prereq)
+-   [Monitor Disk Storage Usage](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__section_monitor_disk_storage_usage)
+-   [Monitor Disk and Memory Assignment](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__section_monitor_disk_memory)
+-   [Monitor Tasks](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__section_monitor_tasks)
+-   [Monitor Statements](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__section_monitor_statements)
+-   [Monitor Access Control Issues](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__section_monitor_access_control_issues)
+-   [Monitor Object Store Storage and Apache Spark Tasks](monitoring-system-disk-memory-and-performance-bce718d.md#loiobce718d12a2540f081510fd097433620__monitoringobjectstore)
+
+
+
+<a name="loiobce718d12a2540f081510fd097433620__prereq"/>
 
 ## Prerequisites
 
@@ -133,7 +145,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 
 
-<a name="loiobce718d12a2540f081510fd097433620__section_irf_214_1cc"/>
+<a name="loiobce718d12a2540f081510fd097433620__section_monitor_disk_memory"/>
 
 ## Monitor Disk and Memory Assignment
 
@@ -215,7 +227,7 @@ The *DW Administrator* role template, for example, grants these privileges. For 
 
 
 
-<a name="loiobce718d12a2540f081510fd097433620__section_qyl_sc4_ccc"/>
+<a name="loiobce718d12a2540f081510fd097433620__section_monitor_tasks"/>
 
 ## Monitor Tasks
 
@@ -290,7 +302,7 @@ To investigate issues:
 
 
 
-<a name="loiobce718d12a2540f081510fd097433620__section_t2q_sc4_ccc"/>
+<a name="loiobce718d12a2540f081510fd097433620__section_monitor_statements"/>
 
 ## Monitor Statements
 
@@ -380,7 +392,7 @@ To investigate issues:
 
 
 
-<a name="loiobce718d12a2540f081510fd097433620__section_tt5_sc4_ccc"/>
+<a name="loiobce718d12a2540f081510fd097433620__section_monitor_access_control_issues"/>
 
 ## Monitor Access Control Issues
 

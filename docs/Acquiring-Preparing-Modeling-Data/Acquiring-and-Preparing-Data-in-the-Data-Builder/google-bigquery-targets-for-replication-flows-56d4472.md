@@ -4,28 +4,15 @@
 
 If you use Google BigQuery as the target for your replication flow, you need to consider the following additional specifics and conditions.
 
-> ### Note:  
-> You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
-> 
-> Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
 
-> ### Restriction:  
-> When a replication flow is running, you must not update the target objects metadata in the target system until the flow has completed. Doing so may incur in data loss.
 
-This topic contains the following sections:
+## Prerequisites
 
--   [General Properties](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_General) 
+-   You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
--   [Target Tables](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetTables) 
+    Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
 
--   [Target Columns](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetColumns) 
-
--   [Data Types](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_DataTypes) 
-
--   [Primary Key](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_PrimaryKey) 
-
--   [SQL Statement](google-bigquery-targets-for-replication-flows-56d4472.md#loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_SQL) 
-
+-   In a public Cloud, access to the BigQuery REST API [bigquery.googleapis.com](http://bigquery.googleapis.com/) and BigQuery Storage API [bigquerystorage.googleapis.com](http://bigquerystorage.googleapis.com/) is required.
 
 
 
@@ -41,6 +28,9 @@ The target container is a Google BigQuery **dataset**.
 
 Tables and column names must have valid names, containing letters, numbers and underscores \(\_\) only.
 
+> ### Caution:  
+> When a replication flow is running, you must not update the target objects metadata in the target system until the flow has completed. Doing so may incur in data loss.
+
 
 
 <a name="loio56d4472a0e1f44d58e07ca26ab666328__section_ReplFlow_GBQ_TargetTables"/>
@@ -51,7 +41,7 @@ The maximum length for target column names is 300 characters.
 
 Decimals with precision larger than 76 are not supported.
 
-You can either let the replication flow create a new target table or select an existing one in your target system with the browse button. Note that if you select an existing target, you cannot make changes such as renaming a column or changing a data type in SAP Datasphere. You need to do this directly in Google BigQuerry.
+You can either let the replication flow create a new target table or select an existing one in your target system with the browse button. Note that if you select an existing target, you cannot make changes such as renaming a column or changing a data type in SAP Datasphere. You need to do this directly in Google BigQuery.
 
 > ### Caution:  
 > Do not delete or recreate the target table while the replication flow is running, as this can lead to data loss or failure, because the flow might push data into the old target table. If, for business reasons, you must delete and recreate the target table, proceed as follows:
@@ -157,4 +147,266 @@ If either of these prerequisites is not met and you still run a replication flow
 ## SQL Statement
 
 You can view and copy the **SQL Create Table statement** of a replication object so that you can modify and run it directly in Google BigQuery. This can be useful, for example, if you want to change partitions and clusters for a new target object. To do so, choose View SQL Create Table Statement or Copy SQL Create Table Statement from the context menu for the relevant target object.
+
+
+
+## Data Type Mappings
+
+The following table shows how internal data types are mapped to Google BigQuery target data types. Note that uint64 is mapped to NUMERIC\(20,0\).
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+Google BigQuery Data Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+binary\(n\), 1<=n<=5000
+
+</td>
+<td valign="top">
+
+BYTES\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+BOOL
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+DATE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+NUMERIC\(p,s\) or BIGNUMERIC\(p,s\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+NUMERIC\(38,9\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+NUMERIC\(38,9\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float32
+
+</td>
+<td valign="top">
+
+FLOAT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+FLOAT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int8
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string\(n\), 1<=n<=5000
+
+</td>
+<td valign="top">
+
+STRING\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+TIME
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+TIMESTAMP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint8
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint64
+
+</td>
+<td valign="top">
+
+NUMERIC\(20,0\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+geometry
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+geometryewkb
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+</table>
 

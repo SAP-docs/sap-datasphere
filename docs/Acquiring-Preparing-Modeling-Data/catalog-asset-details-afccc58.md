@@ -135,7 +135,7 @@ Displays the functional and publication statuses of the asset.
 
 Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. 
 
-Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Enriching and Managing Catalog Assets](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/7ed60a094f2a464da6a8d75e5bfed9d5.html "To help catalog users quickly find and evaluate assets, enrich the assets by editing their names, adding both short and long descriptions, and adding relationships with terms, KPIs, and tags. You can also review the functional and publication status of the assets to ensure they're well-maintained and accessible.") :arrow_upper_right:.
+Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Catalog Asset Statuses](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/5f631a18e3a54532927bf8cf06d39bf2.html "The asset details page displays a variety of status labels specific to assets. These statuses help you decide what actions to take to keep assets in good shape and available for your users.") :arrow_upper_right:.
 
 </td>
 </tr>

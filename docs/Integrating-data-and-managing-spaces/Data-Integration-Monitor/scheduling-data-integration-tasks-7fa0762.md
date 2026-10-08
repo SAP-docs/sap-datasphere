@@ -20,7 +20,11 @@ To schedule data integration tasks, you must have a scoped role that grants you 
 -   *Data Warehouse Data Integration* \(`----E---`\) - To schedule data integration tasks.
 
 
-The *DW Integrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+To assign schedule ownership to a technical user, you must have, in addition, a global role that grants you the following privilege:
+
+-   *User* \(`-R------`\) - To assign a technical user as the owner of the schedule.
+
+The *DW Integrator* role template, for example, grants the privileges to schedule data integration tasks. A custom role with the *User* privilege, directly assigned to you, allows to assign schedule ownership to a technical user. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
 Technical users need to be added to the space by an administrator in order to add a technical user as an owner. For more information, see [Create an OAuth2.0 Client with a Technical User Purpose](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/88b13468fc3c4ebd972bcb8faa6cafbf.html "Users with an administrator role can create OAuth2.0 clients with a technical user purpose and provide the client parameters to users, giving them limited privileges and permissions when connecting clients, tools, or apps to SAP Datasphere.") :arrow_upper_right:.
 
@@ -43,11 +47,7 @@ You can create a schedule for data integration tasks such as remote table replic
 Using a dedicated dialog box, you can specify the frequency and time range of the schedule by using a simple form or by directly entering a cron expression.
 
 > ### Note:  
-> When you click *Create*, the definition of the schedule that is created and saved is the one that is currently displayed \(either in the *Simple Schedule* area or the *Cron Expression* area\).
-
-> ### Note:  
-> If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time.
-
-> ### Note:  
-> You can create a schedule for your replication flow and include it in a task chain. For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.*
+> -   When you click *Create*, the definition of the schedule that is created and saved is the one that is currently displayed \(either in the *Simple Schedule* area or the *Cron Expression* area\).
+> -   If you create a schedule for a remote table whose data access is *Replicated \(Real-time\)*, the replication type will change from real-time replication to batch replication at the next run of the schedule. The data will no longer be updated in real-time.
+> -   You can create a schedule for your replication flow and include it in a task chain. For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time*.
 

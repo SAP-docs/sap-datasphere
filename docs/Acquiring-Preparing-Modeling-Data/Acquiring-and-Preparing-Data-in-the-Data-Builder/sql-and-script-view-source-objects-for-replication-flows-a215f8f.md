@@ -47,3 +47,7 @@ The following views are not supported:
 -   SQL views based on remote tables
 -   Other SAP HANA SQL views of type OLAP, JOIN, HIERARCHY, or CALC.
 
+
+
+## Data Types
+

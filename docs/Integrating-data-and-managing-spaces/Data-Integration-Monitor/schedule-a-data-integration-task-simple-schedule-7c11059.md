@@ -10,8 +10,6 @@ You can schedule or unschedule data integration tasks such as remote data replic
 
 ## Prerequisites
 
--   With the `DW Integrator` role you can create, change, or delete a schedule and let the scheduling component of SAP Datasphere run tasks on your behalf. For data flows, you need the `DW Integrator` role along with the `DW Viewer` or the `DW Modeler` role.
-
 -   You can create a schedule for your replication flow and include it in a task chain. For replication flows with *Initial and Delta* and *Delta Only* load types, you must set *Delta Load Run* to *At Scheduled Time.*
 
 -   Scheduling is an automated task. You must authorize SAP Datasphere to run tasks on your behalf. In your profile settings under *Schedule Consent Settings*, you can give and revoke your consent to SAP Datasphere to run your scheduled tasks in the future. Note that when you don't give your consent or revoke your consent, tasks that you own won't be executed but will fail.
@@ -36,7 +34,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 ## Procedure
 
-1.  Go to *Data Integration Monitor*.
+1.  Go to *Monitoring* \> *Data Integration*.
 
 2.  Select your space.
 
@@ -230,8 +228,16 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
-    -   *Business User* Choose to select a business user as the owner of the schedule.
-    -   *Technical User*: Choose to select a technical user as the owner of the schedule.
+    -   *User Type*: Specify the type of schedule owner. Select either *Business User* or *Technical User*.
+
+        > ### Note:  
+        > To view and select technical users, you must have the following privilege: *User* \(`-R------`\).
+
+    -   *Owner*: Specify the schedule owner. The available values depend on the selected *User Type*.
+
+        > ### Note:  
+        > When creating a schedule, you are automatically assigned as the owner and cannot select another business user. When editing a schedule owned by another business user, you can assign yourself as the owner, and you cannot assign another business user.
+
 
 
     
@@ -245,7 +251,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    *Scheduled Next Run*
+    *Next Runs*
     
     </td>
     <td valign="top">
@@ -261,6 +267,8 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
+    You can pause a schedule by clicking on the *Pause Schedule* button. You can resume a paused schedule by clicking on the *Pause Schedule* button again.
+
     Preview your next five runs in either UTC time, local time, or the Region/Location time selected. The preview will take into consideration changes in daylight saving time.
 
     Let's look at an example. You schedule a task to run in the time zone America/Los\_Angeles every week on Monday at 20:00. Your start date is March 5, 2025. You want to preview your next runs.
@@ -301,9 +309,9 @@ The column *Scheduled Frequency* shows the status *Scheduled*. By clicking the s
 
 The column *Schedule Owners* displays the name of the current schedule owner.
 
-The *Scheduled Next Run* column shows the start date and time of the next run according to the scheduling settings.
+The *Next Runs*shows the start date and time of the next five runs according to the scheduling settings. You can select the time zone in which you want to review the next runs. You can also pause or resume a schedule for a task.
 
-As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(Views Logs\)*, or *\(Details\)*.
+As long as the consent from the owner of the schedule hasn't expired the task will run in the background.
 
 
 
@@ -313,12 +321,12 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Scheduled Next Run* column gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Runs* column gets cleared.
 
-You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
+You may also pause and then later resume scheduled task clicking the button under *Next Runs* See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 
 **Related Information**  
 
 
-[Modify the Owner of a Schedule](modify-the-owner-of-a-schedule-4b660c0.md "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to a business user or a technical user.")
+[Modify the Owner of a Schedule](modify-the-owner-of-a-schedule-4b660c0.md "Per default, the user who creates a task schedule owns the schedule which means that the job scheduling component runs the task on the owner's behalf according to the defined schedule. You can assign the ownership of the schedule to yourself or to a technical user.")
 

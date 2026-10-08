@@ -47,6 +47,8 @@ Replication Flows
 
 You can use the connection to add source objects to a replication flow \(see [Select Source and Target Connections for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/10891192186c4920b08939a7b46adc79.html "Select the source connection you want to read data from and the target connection you want to replicate data to.") :arrow_upper_right:\).
 
+For more information, see [Oracle Sources for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/54bbb56eabf44bb382adb615e0299a73.html "You can use Oracle as a source connection in replication flows to replicate data into supported targets. This connection supports the Initial Only, Initial and Delta, and Delta Only load types.") :arrow_upper_right:.
+
 </td>
 </tr>
 <tr>

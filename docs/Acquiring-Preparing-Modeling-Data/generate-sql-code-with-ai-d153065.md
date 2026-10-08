@@ -16,7 +16,7 @@ For information about privileges and other prerequisites needed to use this feat
 
 ## Generate SQL Code
 
-1.  Click <span class="SAP-icons-V5"></span> \(Generate\) ** \> *Generate SQL* \(or press [CTRL\] + [G\] \) to open the prompt panel.
+1.  Click <span class="SAP-icons-V5"></span> \(Generate\) ** \> *Generate SQL* \(or press [CTRL\] + [G\] /[CMD\] + [G\] \) to open the prompt panel.
 
     > ### Note:  
     > This command is only available when the language is set to *SQL \(Standard Query\)*. Generation is not supported for *SQLScript \(Table Function\)*.

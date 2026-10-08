@@ -42,7 +42,7 @@ A standard variable is used in a fact source to map it to input parameters of th
     </td>
     <td valign="top">
     
-     
+    Enter a descriptive name to help users identify the object. This name can be changed at any time.
     
     </td>
     </tr>

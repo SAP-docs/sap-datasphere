@@ -27,7 +27,7 @@ The *DW Administrator* global role, for example, grants these privileges. For mo
 > A space cannot be copied if it:
 > 
 > -   Is used as storage by an associated SAP Analytics Cloud tenant and any SAP Analytics Cloud objects are exposed for consumption \(see [Exposing Objects for Consumption in SAP Datasphere](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/fc70db459bea4083bb50c51c87ff9cf0/0bf207d4b49c4adeb70c36e023eecf9f.html)\)
-> -   Contains *Business Builder* objects \(see [Modeling Data in the Business Builder](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with a modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and Microsoft Excel.") :arrow_upper_right:\).
+> -   Contains *Business Builder* objects \(see [Modeling Data in the Business Builder (Deprecated)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/3829d46c48a44f1e94915054bd76b7b9.html "Users with a modeler role can use the Business Builder editors to combine, refine, and enrich Data Builder objects and expose lightweight, tightly-focused perspectives for consumption by SAP Analytics Cloud and Microsoft Excel.") :arrow_upper_right:\).
 > -   Contains *Marketplace* data products \(see [Installing Marketplace Data Products](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/92c35efd6a4945a1a78250539aee9a51.html "Use the catalog Data Products (Marketplace) collection to view data products for use in your modeling and other projects.") :arrow_upper_right:\).
 
 > ### Note:  

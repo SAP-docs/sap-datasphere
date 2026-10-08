@@ -21,10 +21,8 @@ You can reuse certain objects as sources or targets in multiple replication flow
 You can replicate one source object to the same or different target systems.
 
 > ### Restriction:  
-> -   You must create one replication flow per replication.
-> -   You can't deploy a replication flow that is reusing objects from:
->     -   SAP HANA Cloud, data lake files.
->     -   ABAP SLT source. For ABAP SLT, only one SLT mass transfer ID per replication can be used. If the SLT source is reused for another replication, another mass transfer ID is required. For more information, see [2329159.](https://me.sap.com/notes/2329159.)
+> -   The same source object cannot be reused in the same replication flow.
+> -   You can't deploy a replication flow that is reusing objects from an ABAP SLT source. For ABAP SLT, only one SLT mass transfer ID per replication can be used. If you reuse the SLT source for another replication, you need another mass transfer ID. For more information, see [SAP Note 3638548](https://me.sap.com/notes/3638548/E).
 
 
 
