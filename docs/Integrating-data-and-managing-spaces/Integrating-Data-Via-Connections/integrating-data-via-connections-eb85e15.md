@@ -49,9 +49,6 @@ Connections created from predefined, SAP-managed connection types depend on thei
 
 ### Custom Connection Types
 
-> ### Note:  
-> Custom connection types to connect to REST APIs are not available by default in SAP Datasphere tenants. To enable custom connection types in your tenant, see SAP note [3696110](https://me.sap.com/notes/3696110).
-
 Custom connection types allow you to connect to external REST APIs and load JSON-based data into the SAP Datasphere object store using replication flows \(see [Creating a Custom Connection Type](creating-a-custom-connection-type-9c582ca.md)\).
 
 Custom connection types complement SAP Datasphere-managed connectivity by enabling data replication from REST APIs where standard SAP Datasphere-managed connectivity is either not available \(third-party source systems\) or cannot be provided \(customer-built REST APIs\).

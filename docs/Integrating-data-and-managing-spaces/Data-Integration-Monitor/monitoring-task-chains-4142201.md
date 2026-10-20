@@ -44,6 +44,8 @@ To view all task chains that are scheduled to run, are currently running, or hav
 
 ![](images/Task_Chain_Example_04c0f7d.jpg)
 
+Click <span class="FPA-icons-V3"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or sub-tasks in the task chain, and log messages about a selected task chain’s run status.
+
 The monitor displays information on your task chains:
 
 
@@ -148,7 +150,7 @@ Date and Time when the last run ended.
 <tr>
 <td valign="top">
 
-*Next Runs*
+*Scheduled Next Run*
 
 </td>
 <td valign="top">
@@ -186,9 +188,7 @@ You can click *Schedule* to create, edit, delete, pause or resume a schedule for
 > ### Note:  
 > For optimal performance, it is recommended that you consider staggering the scheduled run time of tasks such as replication flows or task chains. Make sure to distribute your work such as scheduling and running tasks. There isn't a specific numerical limit on how many tasks can be scheduled. There could be a resource distribution issue caused by too many tasks running at once. Check your *Monitoring* app to look at your workload distribution. For more information see, [Monitoring SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d39b8652994846f9ab80b32fc5b4d671.html "Users with an administrator role have access to various apps to monitor and manage the health of their SAP Datasphere tenant.") :arrow_upper_right: or [Persisted Views and Memory Consumption](persisted-views-and-memory-consumption-e3d0495.md).
 
-Click <span class="FPA-icons-V3"></span> in the right-most column to access the *Task Chain Log Details* page for the selected task chain. The *Details* page provides a flexible three-panel display to access all the relevant information about the selected task chain’s run history. It also provides details about individual child tasks or subtasks in the task chain, and log messages about a selected task chain’s execution.
-
-![](images/Task_Chain_Runs_86dce77.png)
+![](images/TC_View_Monitor_e01a983.png)
 
 > ### Note:  
 > The task chain *Details* page also lets you resize \(<span class="SAP-icons-V5"></span> and <span class="SAP-icons-V5"></span>\), expand/collapse \(<span class="SAP-icons-V5"></span>\), or close \( :x:\) the display of each panel to focus on specific detail information or log messages. In addition, you can sort \(<span class="SAP-icons-V5"></span> \) and filter \(<span class="SAP-icons-V5"></span> \) information displayed in the different panels, as well as search log messages.
@@ -198,7 +198,83 @@ To view details about a specific task run, select it in the *Runs* list in the l
 > ### Note:  
 > For failed task chain runs, you can click on *Failed* in the Status field to show the likely cause of the failure, when that information is available.
 
-The center *Run Details* panel provides a list of task chain objects and child tasks \(if any are defined\) for a selected task chain and displays their individual type and execution status.
+The center *Run Details* panel provides a list of task chain objects and child tasks \(if any are defined\) for a selected task chain and displays their individual type and run status.
+
+You can choose either a *Tabular View* or a *Graphical View* to review you task chain run status.
+
+![](images/Graphical_View_ad0cc04.png)
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Properties
+
+</th>
+<th valign="top">
+
+Comments
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Open Tabular View* 
+
+</td>
+<td valign="top">
+
+The *Task LIst* canvas shows details of the run status for the task chain.
+
+-   Object - Show the name of the task chain and task chain objects.
+-   Space - Show the name of the space the task chain is run in.
+-   Type - Shows the type of each object in the task chain.
+-   Status - Shows the current status of each task in the task chain.
+-   Duration - Show the run time of each task in the task chain.
+-   Monitor - Click *View Monitor* to get run details for and individual object.
+-   Activity - Shows the current activity status of each object.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Open Graphical View* 
+
+</td>
+<td valign="top">
+
+The *Task List* canvas shows a color coded visual display of the task chain and the run status of each individual task.
+
+-   Grey \(no color\) - the task has not yet been triggered.
+-   Blue - The task is currently running.
+-   Green - The task has run and been successful.
+-   Red - The task has run and failed.
+
+Additionally, each task object has a tag that gives written detail about the run status.
+
+-   Running - The task is currently running.
+-   Success - The task has run and been successful.
+-   Error - The task has run and failed. There was an error.
+-   Error Ignored - The task has the *Ignore Error* button activated. For more information see [Creating a Task Chain](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/d1afbc2b9ee84d44a00b0b777ac243e1.html "Group multiple tasks into a task chain and run them manually once, or periodically, through a schedule.") :arrow_upper_right:.
+-   Retry Icon - If you have retried a task, the retry number will be noted. Objects with a shadow have been retried.
+
+In the *Task List* status bar, you can refine your view.
+
+-   Status - Click on the status drop down to filter your task chain objects by a specific run status. . For example, if you only want to look at only objects that have failed, you will have just those objects highlighted. for easier navigation..
+-   Layout - Click on the layout drop down to edit the layout of your display. Top-Bottom is the default setting. Your layout setting is not saved and will automatically return to Top-Bottom when you return to monitor your task chain.
+
+
+
+</td>
+</tr>
+</table>
 
 The *Run Details* panel also provides a *Cancel Run* link in the top right-hand corner of the display for a specific task chain. If you click this link, SAP Datasphere initiates the Cancel operation and immediately remove all child tasks not already triggered. For any child task that has already started, the effect of the Cancel operation depends on the individual object. For example, replication flows and Open SQL procedures cannot effectively be cancelled, so successful completion of the task chain cancellation will wait until those child tasks are completed. Finally, when the task chain cancellation is complete, the task chain cancel activity will then display a *Run Status* of *Completed*.
 

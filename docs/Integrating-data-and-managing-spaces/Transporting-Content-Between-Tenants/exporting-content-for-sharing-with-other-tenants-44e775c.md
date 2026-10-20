@@ -57,6 +57,9 @@ The *DW Space Administrator* role template, for example, grants this combination
 
 You can share content across tenants from one or more landscapes and set access rights for each sharing destination, for example, to allow other tenants to update a package and export it again.
 
+> ### Note:  
+> If your tenant is part of an SAP BDC formation and you are transporting content that consumes data products, we recommend that you define system mappings to allow the content to connect to the appropriate data products on the target tenant \(see [System Mapping for Content Transport Between SAP Datasphere Tenants](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud-dev/system-mapping-for-content-transport-between-tenants) in the *SAP Business Data Cloud* documentation\).
+
 Each tenant can store up to 2 GB of exported content for free in the *My Content* area.
 
 The following object types can be exported and imported via the <span class="FPA-icons-V3"></span> \(*Transport*\) app:

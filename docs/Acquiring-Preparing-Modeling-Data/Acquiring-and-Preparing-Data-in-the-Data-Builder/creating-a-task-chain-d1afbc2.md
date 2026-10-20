@@ -76,7 +76,7 @@ You can monitor the status of task chain runs from the Data Integration Monitor.
 
 In addition to working with task chains in the editor, you can also:
 
--   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Managing Modeling Objects via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/e3b2cbef9d1f4b38b51c64fe9e88c0aa.html "You can use the datasphere command line interface to list, read, create, update, and delete modeling objects.") :arrow_upper_right:\).
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Managing Modeling Objects via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/e3b2cbef9d1f4b38b51c64fe9e88c0aa.html "You can use the datasphere command line interface to list, read, create, update, and delete modeling objects. You can also organize objects in folders and manage sharing and metadata translation from the command line.") :arrow_upper_right:\).
 -   Export and import them via the secure *Transport* app \(see [Transporting Content Between Tenants](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/df12666cf98e41248ef2251c564b0166.html "Users with an administrator or space administrator role can use the Transport app to transfer content between tenants via a private cloud storage area.") :arrow_upper_right:\).
 -   Export and import them via CSN files \(see [Importing and Exporting Objects in CSN/JSON Files](../Creating-Finding-Sharing-Objects/importing-and-exporting-objects-in-csn-json-files-f8ff062.md)\).
 -   Run them via a REST API \(see [Managing Tasks via the REST API](managing-tasks-via-the-rest-api-274f273.md)\).
@@ -650,6 +650,20 @@ In addition to working with task chains in the editor, you can also:
     Open the *Impact and Lineage Analysis* graph for the object. 
 
     See [Impact and Lineage Analysis](../impact-and-lineage-analysis-9da4892.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    <span class="FPA-icons-V3"></span> \(Expression Evaluator\) 
+    
+    </td>
+    <td valign="top">
+    
+    Open the *Expression Evaluator* to add an expression object to your task chain.
+
+    See [Run Expression Evaluator Tasks in a Task Chain](run-expression-evaluator-tasks-in-a-task-chain-5064ede.md).
     
     </td>
     </tr>

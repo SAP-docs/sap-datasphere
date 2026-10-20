@@ -315,7 +315,7 @@ Displays the lifecycle status of the data product:
 -   **Data Loading Error**: Data for the data product was loaded, but some errors occurred. The errors must be resolved before you can use the data product. For assistance, contact your administrator.
 -   **Deprovisioning**: The data product can’t be used because it’s being uninstalled or deprovisioned. Deprovisioning a data product involves removing replicated and unused data. Users in the target system will no longer have access to the data product.
 -   **Deprovisioning Error**: Deprovisioning the data product failed because of errors. Try deprovisioning again or contact your administrator for assistance.
--   **Inactive**: The data product is inactive and can’t be installed. To install this data product, you must ask your administrator to activate any data package that contains it.
+-   **Inactive**: The data product is inactive and can’t be installed. To install this data product, you must ask your administrator to activate it.
 
 
 

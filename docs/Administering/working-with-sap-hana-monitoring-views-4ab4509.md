@@ -267,7 +267,7 @@ The following monitoring views have the suffix `_V_EXT` and are ready to use in 
     
     Defines the recurrence of a schedule in json format \(simple format\).
 
-    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration \(see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:\).
+    NULL \(no schedule defined, or a CRON schedule is defined\) or schedule definition, for example Daily + start date + time + duration \(see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as replicated remote data, persisted data, replication flows, and task chains. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:\).
     
     </td>
     </tr>

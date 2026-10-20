@@ -332,7 +332,7 @@ Displays the number of records replicated into SAP Datasphere. You can then comp
 <tr>
 <td valign="top">
 
-*Next Runs* 
+*Scheduled Next Run* 
 
 </td>
 <td valign="top">

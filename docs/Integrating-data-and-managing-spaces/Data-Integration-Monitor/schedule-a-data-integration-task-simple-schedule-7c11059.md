@@ -2,7 +2,7 @@
 
 # Schedule a Data Integration Task \(Simple Schedule\)
 
-You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.
+You can schedule or unschedule data integration tasks such as replicated remote data, persisted data, replication flows, and task chains. You may also pause and then later resume the run of scheduled tasks.
 
 
 
@@ -34,11 +34,13 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
 
 ## Procedure
 
-1.  Go to *Monitoring* \> *Data Integration*.
+1.  Go to *Data Integration Monitor*.
 
 2.  Select your space.
 
 3.  Open the monitor for the object for which you want to schedule a task.
+
+    You can assign a number of task chains to a single technical user in bulk to avoid having to select each individual chain.
 
 4.  If you haven't authorized SAP Datasphere yet to run your scheduled tasks for you, you will see a message at the top of the monitor asking for your consent. Give your consent.
 
@@ -188,7 +190,7 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     <tr>
     <td valign="top">
     
-    Date Range
+    *Date Range*
     
     </td>
     <td valign="top">
@@ -244,14 +246,21 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
-     
+    When you create a schedule for a data integration task, you are the owner of the schedule by default. Once you have selected the user type and owner of the schedule, you will see the ID of the creator of the schedule and the ID of the last person to modify the schedule.
+
+    > ### Note:  
+    > When you create a schedule, you are assigned by default and you cannot assign another business user to the schedule.
+    > 
+    > When you modify a schedule whose owner is another business user, you can assign yourself as the owner of the schedule, but not another business user.
+
+
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    *Next Runs*
+    *Scheduled Next Run*
     
     </td>
     <td valign="top">
@@ -267,8 +276,6 @@ The job scheduling component of SAP Datasphere runs scheduled tasks on behalf of
     </td>
     <td valign="top">
     
-    You can pause a schedule by clicking on the *Pause Schedule* button. You can resume a paused schedule by clicking on the *Pause Schedule* button again.
-
     Preview your next five runs in either UTC time, local time, or the Region/Location time selected. The preview will take into consideration changes in daylight saving time.
 
     Let's look at an example. You schedule a task to run in the time zone America/Los\_Angeles every week on Monday at 20:00. Your start date is March 5, 2025. You want to preview your next runs.
@@ -309,9 +316,9 @@ The column *Scheduled Frequency* shows the status *Scheduled*. By clicking the s
 
 The column *Schedule Owners* displays the name of the current schedule owner.
 
-The *Next Runs*shows the start date and time of the next five runs according to the scheduling settings. You can select the time zone in which you want to review the next runs. You can also pause or resume a schedule for a task.
+The *Scheduled Next Run* column shows the start date and time of the next run according to the scheduling settings.
 
-As long as the consent from the owner of the schedule hasn't expired the task will run in the background.
+As long as the consent from the owner of the schedule hasn't expired the task will run in the background. You can access the log by selecting the relevant object and clicking ![](images/Remote_Table_Logs_Button_a6170ee.png)*\(Remote Table Logs\)*,*\(Views Logs\)*, or *\(Details\)*.
 
 
 
@@ -321,9 +328,9 @@ As long as the consent from the owner of the schedule hasn't expired the task wi
 
 Once a schedule is defined, you can adjust the scheduling settings at any time selecting *Schedule* \> *Edit Schedule*. The next run of the task will use the adjusted scheduling settings.
 
-The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Next Runs* column gets cleared.
+The schedule can be removed at any time via the menu *Schedule* \> *Delete Schedule* with the result that no new run will start anymore for the task. The *Scheduled Next Run* column gets cleared.
 
-You may also pause and then later resume scheduled task clicking the button under *Next Runs* See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
+You may also pause and then later resume execution of scheduled tasks via the menu *Schedule* \> *Pause Schedule* option. See [Pause or Resume a Scheduled Task](pause-or-resume-a-scheduled-task-5eb55cb.md) for more information.
 
 **Related Information**  
 

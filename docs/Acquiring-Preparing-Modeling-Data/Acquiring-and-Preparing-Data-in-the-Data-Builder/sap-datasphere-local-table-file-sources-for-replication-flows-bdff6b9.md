@@ -19,16 +19,16 @@ You can use local table \(file\) sources in a replication flow to replicate data
 
 You can replicate local table file sources to the following targets:
 
--   SAP HANA Cloud, data lake Files \(standalone\)
--   Amazon S3
--   Google Cloud Storage
--   Microsoft Azure Data Lake Storage Gen2
--   Secure File Transfer Protocol \(SFTP\)
+-   [SAP HANA Cloud, Data Lake Files Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
+-   [Amazon Simple Storage Service Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to connect to and access data from objects in Amazon S3 buckets.") :arrow_upper_right:
+-   [Google Cloud Storage Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to connect to and access objects from Google Cloud Storage.") :arrow_upper_right: 
+-   [Microsoft Azure Data Lake Storage Gen2 Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
+-   [Generic SFTP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to connect to and access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right: 
 
     > ### Caution:  
     > Secure File Transfer Protocol \(SFTP\) does not support the load type *Delta Only*.
 
--   Google BigQuery
+-   [Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 
 
 

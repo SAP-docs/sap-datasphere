@@ -49,5 +49,311 @@ The following views are not supported:
 
 
 
+## Replicating Source Objects Without Primary Keys
+
+If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
+
+1.  Select the relevant source object.
+2.  In the properties panel, go to the *Source Schema Settings* section and choose *Configure Schema.*
+3.  Mark the relevant columns as key columns.
+
+The columns you select as the primary key must contain unique, non-null values. Incorrect settings result in data inconsistency.
+
+
+
 ## Data Types
+
+The following table shows how SAP HANA SQL data types are mapped to internal data types.
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP HANA SQL Data Type
+
+</th>
+<th valign="top">
+
+Internal Data Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+ALPHANUM\(n\)
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+int64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BOOLEAN
+
+</td>
+<td valign="top">
+
+bool
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CLOB, NCLOB
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATE
+
+</td>
+<td valign="top">
+
+date
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DECIMAL
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DECIMAL\(p,s\)
+
+</td>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DOUBLE
+
+</td>
+<td valign="top">
+
+float64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FLOAT
+
+</td>
+<td valign="top">
+
+float64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FLOAT\(n\), 1≤n≤24
+
+</td>
+<td valign="top">
+
+float32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FLOAT\(n\), 25≤n≤53
+
+</td>
+<td valign="top">
+
+float64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+int32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NVARCHAR\(n\)
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REAL
+
+</td>
+<td valign="top">
+
+float32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SECONDDATE
+
+</td>
+<td valign="top">
+
+timestamp
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SHORTTEXT\(n\)
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SMALLDECIMAL
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SMALLINT
+
+</td>
+<td valign="top">
+
+int16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TIME
+
+</td>
+<td valign="top">
+
+time
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TIMESTAMP
+
+</td>
+<td valign="top">
+
+timestamp
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TINYINT
+
+</td>
+<td valign="top">
+
+uint8
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+VARBINARY\(n\)
+
+</td>
+<td valign="top">
+
+binary\(n\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+VARCHAR\(n\)
+
+</td>
+<td valign="top">
+
+string\(n\)
+
+</td>
+</tr>
+</table>
 

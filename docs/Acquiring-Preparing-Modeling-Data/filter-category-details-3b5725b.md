@@ -174,6 +174,24 @@ Choose one of the tabs and specify the options:
 <tr>
 <td valign="top">
 
+Release Status
+
+</td>
+<td valign="top">
+
+Choose one of the tabs and specify the options:
+
+*Select Items*: Choose the release state of the asset.
+
+*Define Conditions*: Create conditions and enter a value.
+
+Use this filter to find SAP Datasphere views that use the release state feature. See [Releasing Stable Views for Consumption](releasing-stable-views-for-consumption-5b99e9b.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Remote System
 
 </td>

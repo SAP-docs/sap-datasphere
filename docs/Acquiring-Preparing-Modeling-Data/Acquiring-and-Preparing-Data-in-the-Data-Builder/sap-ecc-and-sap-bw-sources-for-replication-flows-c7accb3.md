@@ -118,6 +118,18 @@ You can choose between 2 content types:
 
 
 
+## Replicating Source Objects Without Primary Keys
+
+If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
+
+1.  Select the relevant source object.
+2.  In the properties panel, go to the *Source Schema Settings* section and choose *Configure Schema.*
+3.  Mark the relevant columns as key columns.
+
+The columns you select as the primary key must contain unique, non-null values. Incorrect settings result in data inconsistency.
+
+
+
 ## Data Types
 
 The following table shows how SAP ECC/BW \(ODP\) source data types are mapped to internal data types.

@@ -104,7 +104,7 @@ Schedule Data Persistence
 
 From this menu, you can :
 
--   *Create Schedule*: Select the relevant persisted view and create a simple or cron schedule for your view. You define your scheduling options to ensure that you always have an up-to-date persisted view.
+-   *Create Schedule*: Select the relevant persisted view and create a simple or recurring schedule for your view. You define your scheduling options and thus ensure that you always have an up-to-date persisted view.
 
     *Edit Schedule*: Your scheduling options need to be updated? You can adapt them to your needs at any time from this menu.
 
@@ -116,7 +116,7 @@ From this menu, you can :
 > ### Note:  
 > You need to authorize SAP to run the recurring scheduled tasks on your behalf. You can do so via the message that is displayed at the top of the monitor, or in your profile settings under *Schedule Consent Settings*.
 
-For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as remote data replication, data persistence, data flow, replication flow, or task chains runs. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
+For more information, see [Schedule a Data Integration Task (Simple Schedule)](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/7c11059ed3314e1fb753736b7867512c.html "You can schedule or unschedule data integration tasks such as replicated remote data, persisted data, replication flows, and task chains. You may also pause and then later resume the run of scheduled tasks.") :arrow_upper_right:.
 
 
 

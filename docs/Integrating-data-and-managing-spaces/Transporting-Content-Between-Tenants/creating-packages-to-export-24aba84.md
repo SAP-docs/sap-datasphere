@@ -72,7 +72,8 @@ In our example:
 
 ## Create a Package
 
-Users with the *DW Space Administrator* role can create packages:
+> ### Note:  
+> If your tenant is part of an SAP BDC formation and you are transporting content that consumes data products, we recommend that you define system mappings to allow the content to connect to the appropriate data products on the target tenant \(see [System Mapping for Content Transport Between SAP Datasphere Tenants](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud-dev/system-mapping-for-content-transport-between-tenants) in the *SAP Business Data Cloud* documentation\).
 
 1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Transport*\)** \> **:package: \(*Packages*\) to open the list of packages. 
 

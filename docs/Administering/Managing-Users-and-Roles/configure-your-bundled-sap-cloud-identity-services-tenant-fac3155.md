@@ -29,12 +29,12 @@ You provision and configure a bundled SAP Cloud Identity Services tenant for you
 To configure your bundled SAP Cloud Identity Services tenant for your SAP Datasphere tenant:
 
 -   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\).
--   You must have a S-user with the same email as the system owner of the SAP Datasphere tenant. If you do not have an S-user, click the *Register* button and create a user with email address used by the system owner.
--   We recommend that the S-user has multi-factor authentication enabled.
+-   You must have an S-user with the same email as the system owner of the SAP Datasphere tenant. If you do not have an S-user, click the *Register* button and create a user with email address used by the system owner.
+-   We recommend that the S-user have multi-factor authentication enabled.
 
 > ### Note:  
-> -   SAP Datasphere is hosted on non-SAP data centers, so only available on a Cloud Foundry environment.
-> -   Bundled SAP Cloud Identity Services are only available for public cloud systems, so not available for private cloud \(AliCloud\) or sovereign cloud \(NS2\).
+> -   SAP Datasphere is hosted on non-SAP data centers, so it is only available in a Cloud Foundry environment.
+> -   Bundled SAP Cloud Identity Services are not available in data centers in China or in the sovereign cloud \(NS2\).
 
 
 
@@ -100,7 +100,7 @@ You can provision up to two bundled SAP Cloud Identity Services tenant roles: te
     2.  Choose *Step 2*. A summary page will appear containing the tenant name, and information about the tenant administrator.
 
         > ### Note:  
-        > If you do not already have a user on the SAP Cloud Identity Services tenant, a standard user will be created for you. A standard user does not have administration rights on the tenant, and you must request permission from an existing administrator if you want to make changes to the tenant in the future.
+        > If you do not have a user account in the SAP Cloud Identity Services tenant, a standard user is created for you. Standard users lack administrator authorizations. To modify tenant settings later, request the administrator role from an existing administrator.
 
 
 
@@ -157,7 +157,7 @@ As a prerequisite, an SAP Cloud Identity Services tenant must be provisioned for
         > If you select this option, there will be a new column named *SAML User Mapping* in *Security* \> *Users*. After switching to your SAML IdP, you must manually update this column for all existing users.
 
 
-3.  \(Optional\) Enable *Dynamic User Creation*.
+3.  Optional: Enable *Dynamic User Creation*.
 
     When dynamic user creation is enabled, new users will be automatically created using the default role and will be able to sign in to SAP Datasphere. After users are created, you can set roles using SAML attributes. For more information, see [Assign Users to a Role Using SAML Attributes](assign-users-to-a-role-using-saml-attributes-3315711.md).
 
@@ -168,7 +168,7 @@ As a prerequisite, an SAP Cloud Identity Services tenant must be provisioned for
 
     The *Validate Login* page appears.
 
-5.  \[Optional\] Do additional configuration in SAP Cloud Identity Services if you don't want to use the default settings.
+5.  Optional: Configure additional settings in SAP Cloud Identity Services to customize the default settings.
 
     SAP Datasphere should appear in the *Bundled Applications* list on your SAP Cloud Identity Services tenant.
 
@@ -478,7 +478,7 @@ To establish a trust relationship between your SAML IdP and your SAP Datasphere 
         > If you select this option, there will be a new column named *SAML User Mapping* in *Security* \> *Users*. After switching to your SAML IdP, you must manually update this column for all existing users.
 
 
-11. \[Optional\] Enable *Dynamic User Creation*.
+11. Optional: Enable *Dynamic User Creation*.
 
     When dynamic user creation is enabled, new users will be automatically created using the default role and will be able to sign into SAP Datasphere. After users are created, you can set roles using SAML attributes. For more information, see [Assign Users to a Role Using SAML Attributes](assign-users-to-a-role-using-saml-attributes-3315711.md).
 

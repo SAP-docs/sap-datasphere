@@ -312,7 +312,7 @@ Each topic contains the source columns as defined in the mapping for the replica
     </td>
     <td valign="top">
     
-    SAP S/4HANA on-prem/cloud and ABAP and Datasphere delta enabled local table.
+    SAP S/4HANA on-prem/cloud and ABAP and SAP Datasphere delta-enabled local table.
     
     </td>
     <td valign="top">
@@ -334,7 +334,7 @@ Each topic contains the source columns as defined in the mapping for the replica
     </td>
     <td valign="top">
     
-    SAP HANA cloud/on-prem, Azure SQL, MSSQL.
+    SAP HANA cloud/on-prem, Azure SQL, MSSQL, Local Tables \(file\)
     
     </td>
     <td valign="top">
@@ -356,7 +356,7 @@ Each topic contains the source columns as defined in the mapping for the replica
     </td>
     <td valign="top">
     
-    All except Datasphere delta enabled local table and Confluent depending on opcode specification.
+    All except SAP Datasphere delta-enabled local table and Confluent depending on opcode specification.
     
     </td>
     <td valign="top">
@@ -373,12 +373,12 @@ Each topic contains the source columns as defined in the mapping for the replica
     </td>
     <td valign="top">
     
-    The Source row is deleted with before image values during delta load phase.
+    The Source row is deleted with before image values during the delta load phase.
     
     </td>
     <td valign="top">
     
-    Datasphere Delta enabled local table, and Confluent - depending on opcode specification.
+    SAP Datasphere Delta-enabled local table, and Confluent - depending on opcode specification.
     
     </td>
     <td valign="top">
@@ -400,7 +400,7 @@ Each topic contains the source columns as defined in the mapping for the replica
     </td>
     <td valign="top">
     
-    SAP S/4HANA on-prem/cloud and ABAP Datasphere Delta enabled local table.
+    SAP S/4HANA on-prem/cloud and ABAP SAP Datasphere Delta-enabled local table.
     
     </td>
     <td valign="top">

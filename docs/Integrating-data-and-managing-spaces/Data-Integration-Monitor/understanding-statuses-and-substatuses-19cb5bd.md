@@ -122,7 +122,7 @@ The assigned user does not have the privileges necessary to execute this task. F
 </td>
 <td valign="top">
 
-The same task was already running, so this task job cannot be run in parallel with an existing task’s execution.
+This task can't be performed because another task is locking this object.
 
 </td>
 </tr>

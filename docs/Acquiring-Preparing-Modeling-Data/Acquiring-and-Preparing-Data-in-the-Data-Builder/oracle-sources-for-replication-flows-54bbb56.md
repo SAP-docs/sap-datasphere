@@ -25,6 +25,8 @@ You can use Oracle as a source connection in replication flows to replicate data
 
 ## Replicating Source Objects Without Primary Keys
 
+Replicating source objects without a primary key is not supported. Only source objects that have a primary key defined can be used as source objects in a replication flow.
+
 
 
 ## Data Types

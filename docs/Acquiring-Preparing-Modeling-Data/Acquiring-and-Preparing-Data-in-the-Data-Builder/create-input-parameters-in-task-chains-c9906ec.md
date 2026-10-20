@@ -20,7 +20,7 @@ To create input parameters in task chains, you need to have the correct authoriz
 
 ## Context
 
-You can create new input parameters on the task chain level. You can also define values for input parameters on the task level or map source object input parameters to the task chain.
+You can create new input parameters on the task chain level. You can also define values for input parameters for the task object or map source object input parameters to the task chain.
 
 To utilize input parameters in task chains, you must have task objects that have input parameters added at the source level of the task. You can use SQL script procedures with input parameters, transformation flows with input parameters, and you can nest a task chain with input parameters described in the following process. For more information see [Creating a Transformation Flow](../creating-a-transformation-flow-f7161e6.md), [Run Open SQL Procedures in a Task Chain](run-open-sql-procedures-in-a-task-chain-59b9c77.md) and [Nest and Share Task Chains](nest-and-share-task-chains-8067b77.md).
 

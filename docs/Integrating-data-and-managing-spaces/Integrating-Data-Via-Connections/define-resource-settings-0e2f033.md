@@ -59,7 +59,10 @@ You can define a single set of resource settings for each resource in your custo
 
     There are four supported types of pagination:
 
-    -   *Page*: This pagination method starts with the lowest page number and increments to receive the next batch of records. To use this method, assign the field in the request that will act as the "page" parameter. This field must be of type integer or number. Its initial value is 1 and increases by 1 with each subsequent call, until the response is empty. For example, the "page" field starts at 1, then increases to 2, then 3 and so on.
+    -   *Page*: This pagination method increments a page number with each request to retrieve the next batch of records. To use this method, assign the field in the request that acts as the page parameter. This field must be of type integer or number. The system starts from 0 and increments by 1 with each subsequent call until the response is empty. If the first call fails, the system automatically retries from 1 and continues incrementing from there. For example, the page parameter starts at 0, then increases to 1, then 2, and so on.
+
+        You can set a specific starting value under *Request Parameters* in *Resources*. If you leave it blank, the system uses 0.
+
     -   *Offset*: Offset uses both a page number and page size for pagination. After retrieving the maximum number of records for a given page, the next page is called. To use this method, assign the field in the request that acts as the "offset" parameter. This field must be of type integer or number. Its initial value is 0 and increases by the value in the "page size" field with each subsequent call, until the response is empty. For example, for a "page size " of 10 the offset starts at 0, then increases to 10, then 20 and so on.
     -   *Next URL*: Some systems return a next URL from which to fetch the next set of results in their response. To use this method, assign the field in the response that contains the URL for fetching the next page of results. This field must be of type string.
 

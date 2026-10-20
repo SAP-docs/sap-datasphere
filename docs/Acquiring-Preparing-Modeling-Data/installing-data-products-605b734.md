@@ -27,6 +27,11 @@ To search for and request access to data products, manage access requests and ag
 
 The *Catalog User* global role and the *DW Modeler* scoped role template, applied together for example, grant these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
 
+> ### Note:  
+> Databricks data products included in the catalog through SAP Business Data Cloud Connect require change data feed \(CDF\) to be enabled on all source delta tables. If change data feed is not enabled, the data product installation fails.
+> 
+> Where possible, confirm this requirement with your administrator or Databricks data provider before installing a data product. If you can't verify it in advance and installation fails, contact your data provider to enable change data feed on the source delta tables and then try installing the data product again.
+
 
 
 ## Context
@@ -80,7 +85,7 @@ If the data product you installed was created from a different system, the data 
     -   *Federation*: By default, data is accessed using remote tables. To replicate the data, open the *Data Integration Monitor* \(see [Monitoring Remote Tables](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4dd95d7bff1f48b399c8b55dbdd34b9e.html "In the Remote Tables monitor, you can find a remote table monitor per space. Here, you can copy data from remote tables that have been deployed in your space into SAP Datasphere, and you can monitor the replication of the data. You can copy or schedule copying the full set of data from the source, or you can set up replication of data changes in real-time via change data capturing (CDC).") :arrow_upper_right:\).
     -   *Replication*: Open the replication flow and run it \(or create a schedule\) to replicate the data \(see [Run a Replication Flow](Acquiring-and-Preparing-Data-in-the-Data-Builder/run-a-replication-flow-98a26b2.md)\).
 
--   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/a43c8134d5df4f869d63a2976df9ed94.html "Users with a modeler role can use views and intelligent lookups in the Data Builder to combine, clean, and otherwise prepare data.") :arrow_upper_right: and [Modeling Data](Modeling-Data-in-the-Data-Builder/modeling-data-5c1e3d4.md).
+-   View and work with the objects in the <span class="FPA-icons-V3"></span> \(*Data Builder*\). Select the space where the data product was installed. To work with the objects, see [Preparing Data](preparing-data-f2e359c.md) and [Modeling Data](Modeling-Data-in-the-Data-Builder/modeling-data-5c1e3d4.md).
 
 > ### Tip:  
 > If objects in a data product are associated with objects in one or more other data products, those associations will only be visible if the related data products are installed.

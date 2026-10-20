@@ -8,9 +8,7 @@ You can use the *Transport* app to import content that has been shared from anot
 
 
 
-<a name="loiob607a12931d74c4a93506ea64c55ab4e__context_x1k_gqh_vcc"/>
-
-## Context
+## Prerequisites
 
 To import content into a space via the *Import* app, you must have a global role that allows you to update any space and to create new spaces if necessary, by granting you the following privileges:
 

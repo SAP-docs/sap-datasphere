@@ -212,3 +212,225 @@ If a target column has the same name as one of the columns for change data captu
 
 ## Data Types
 
+The following table shows how internal data types are mapped to Signavio target data types for Parquet format.
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+Parquet Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+binary
+
+</td>
+<td valign="top">
+
+BYTE\_ARRAY
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+BOOLEAN
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+FIXED\_LEN\_BYTE\_ARRAY
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+FIXED\_LEN\_BYTE\_ARRAY
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+FIXED\_LEN\_BYTE\_ARRAY
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float32
+
+</td>
+<td valign="top">
+
+FLOAT
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+DOUBLE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int8
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+BYTE\_ARRAY
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint8
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+</tr>
+</table>
+

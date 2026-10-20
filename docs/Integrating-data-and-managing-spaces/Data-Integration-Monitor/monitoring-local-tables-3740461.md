@@ -101,10 +101,10 @@ Displays the growth in % of the number of records since the last month. It is co
 </td>
 <td valign="top">
 
-Displays the disk storage used by the local table.
+Displays the disk storage used by the local table. Value is set to Not Applicable for local tables that store data in-memory.
 
 > ### Note:  
-> Value is set to Not Applicable for local tables that store data in-memory.
+> A local table that contains zero rows may still report a non-zero size on disk value. This is expected behavior caused by internal storage structures allocated by SAP HANA.
 
 
 

@@ -28,6 +28,7 @@ You cannot save and deploy the view transform \(the secondary editor\) separatel
 
     -   Access auto-complete suggestions for keywords and object names including source tables by typing.
 
+    -   Instruct AI to write SQL for you. See [Generate SQL Code with AI in a File Space](generate-sql-code-with-ai-in-a-file-space-15452a7.md).
     -   Drag source objects to the *SQL View Editor*.
 
         > ### Note:  

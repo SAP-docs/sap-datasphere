@@ -8,6 +8,7 @@ You can create, read, modify, and delete users and add them to roles via the SCI
 
 This topic contains the following sections:
 
+-   [Prerequisites](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_prereq)
 -   [Introduction to the SCIM 2.0 API](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_jzc_m3q_rbc)
 -   [Log in with an OAuth Client](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_th4_syw_tbc)
 -   [Obtain a CSRF Token](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_wzz_v2w_rbc)
@@ -21,6 +22,8 @@ This topic contains the following sections:
 -   [Get Information About the SCIM API](managing-users-via-the-scim-2-0-api-1ca8c4a.md#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_n1l_vdy_rbc)
 
 
+
+<a name="loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_prereq"/>
 
 ## Prerequisites
 
@@ -154,6 +157,8 @@ Using this API, you can perform the following actions:
 
 
 This API uses SCIM 2.0. For more information, see [SCIM Core Schema](https://tools.ietf.org/html/rfc7643).
+
+The API specification is available at the SAP Business Accelerator Hub.
 
 
 
@@ -485,7 +490,7 @@ Specifies the user attribute to sort the results by.
 For example, to retieve the list of users sorted by user name:
 
 ```
-sortBy=userName
+?sortBy=userName
 ```
 
 
@@ -505,7 +510,7 @@ Specifies the order in which items are returned, either ascending or descending.
 To retieve the list of users by descending order:
 
 ```
-sortOrder=descending
+?sortOrder=descending
 ```
 
 
@@ -525,7 +530,7 @@ Specifies the index of the first user to fetch.
 For example, so that the tenth user is the first user retireved:
 
 ```
-startIndex=10
+?startIndex=10
 ```
 
 
@@ -545,7 +550,7 @@ Specifies the number of users to return on each page.
 For example, to display a maximum of 8 users on a page:
 
 ```
-count=8
+?count=8
 ```
 
 
@@ -562,10 +567,18 @@ count=8
 
 Adds a filter to the request.
 
-For example, to display the users whose user name include the letter K:
+Examples:
+
+To display the users whose user name include the letter K:
 
 ```
-filter=userName co "K"
+?filter=userName co "K"
+```
+
+To list the users who are assigned the role *<usercreate\>*, where `eq` stands for "equals":
+
+```
+https://<tenant_url>/api/v1/scim2/Users?filter=roles.value eq "PROFILE:t.U:usercreate
 ```
 
 See the user schema for available attributes. All operators are supported.
@@ -588,7 +601,7 @@ https://<tenant_url>/api/v1/scim2/Users/?filter=emails.value co "a"&sortOrder=de
 > ```
 
 > ### Note:  
-> In the response body, if the users listed are assigned to roles, you can identify the roles as they are prefixed with `PROFILE`.
+> In the response body, you can identify the users who are assigned to roles by the prefix `PROFILE`.
 
 
 
@@ -596,7 +609,7 @@ https://<tenant_url>/api/v1/scim2/Users/?filter=emails.value co "a"&sortOrder=de
 
 ## Get a Specific User
 
-To retrieve a specific user based on its ID, use the GET request with the <code>/api/v1/scim2/Users/<i class="varname">&lt;user ID&gt;</i></code> endpoint and the following elements:
+To retrieve a specific user based on its ID, use the GET request with the `/api/v1/scim2/Users` endpoint and the following elements:
 
 
 <table>
@@ -670,20 +683,26 @@ key
 </tr>
 </table>
 
-To retrieve a specific user based on its ID, enter the GET request:
-
-```
-https://<tenant_url>/api/v1/scim2/Users/<user ID>
-```
-
-The user ID must be the UUID \(universally unique identifier\), which you can get by sending the GET request:
+Before you retrieve a specific user, you can use the following GET request to list all users and see their IDs and other properties:
 
 ```
 https://<tenant_url>/api/v1/scim2/Users
 ```
 
 > ### Note:  
-> In the response body, if the user is assigned to roles, you can identify with their prefix `PROFILE`.
+> In the response body, you can identify the users who are assigned to roles by the prefix `PROFILE`.
+
+To retrieve a specific user based on its ID, enter the GET request:
+
+```
+https://<tenant_url>/api/v1/scim2/Users/<User ID>
+```
+
+To retrieve a specific user based on its user name, you can for example enter the following GET request, where `eq` stands for "equals":
+
+```
+https://<tenant_url>/api/v1/scim2/Users?filter=userName eq "LGARCIA"
+```
 
 
 

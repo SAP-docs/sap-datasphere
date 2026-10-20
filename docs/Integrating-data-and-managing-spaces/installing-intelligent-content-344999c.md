@@ -21,4 +21,9 @@ SAP Datasphere users can work with intelligent content in the following ways:
 -   Review the installed content \(see [Reviewing Installed Intelligent Content](reviewing-installed-intelligent-content-6446487.md)\).
 -   Upload permissions records to control access to the data \(see [Applying Row-Level Security to Data Delivered through Intelligent Content](applying-row-level-security-to-data-delivered-through-intelligent-content-c83225f.md)\).
 -   Build on top of the delivered data products and content to extend it \(see [Extending Intelligent Content](extending-intelligent-content-3c15868.md)\).
+-   Transport extended content between SAP Datasphere tenants.
+
+    > ### Note:  
+    > We recommend that you define system mappings to allow transported content to connect to the appropriate data products on the target tenant \(see [System Mapping for Content Transport Between SAP Datasphere Tenants](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud-dev/system-mapping-for-content-transport-between-tenants) in the *SAP Business Data Cloud* documentation\).
+
 

@@ -71,7 +71,7 @@ Displays the growth in % of the number of records in the partition since the las
 Displays the quantity of memory required to fully load the partition data in-memory. 
 
 > ### Note:  
-> Value is set to Not Applicable for local tables that store data on disk.
+> The value is set to Not Applicable for local tables that store data on disk.
 
 
 
@@ -85,10 +85,10 @@ Displays the quantity of memory required to fully load the partition data in-mem
 </td>
 <td valign="top">
 
-Displays the disk storage used by the partition. 
+Displays the disk storage used by the partition. The value is set to Not Applicable for local tables that store data in-memory. 
 
 > ### Note:  
-> Value is set to Not Applicable for local tables that store data in-memory.
+> A local table that contains zero rows may still report a non-zero Size on Disk value. This is expected behavior caused by internal storage structures allocated by SAP HANA.
 
 
 

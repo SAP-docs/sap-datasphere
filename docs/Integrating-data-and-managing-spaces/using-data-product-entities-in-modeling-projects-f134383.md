@@ -17,4 +17,9 @@ To consume data product entities in your modeling projects:
     -   [Creating a Transformation Flow](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/f7161e6c20204672ac4a6d90c81762e4.html "Create a transformation flow to load data from one or more sources, apply transformations (such as a join), and output the result in a target table. You can load a full set of data from one or more sources to a target table. You can add local tables and views, Open SQL schema objects, and also remote tables located in BW Bridge spaces. You can also load delta changes (including deleted records) from one source table to a target table.") :arrow_upper_right:
     -   [Creating an Analytic Model](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/e5fbe9e2cb93484dab8b1963145e565f.html "Create an analytic model as a basis for consumption in SAP Analytics Cloud.") :arrow_upper_right:
 
+4.  \[optional\] Transport your content to another SAP Datasphere tenant \(see [Transporting Content Between Tenants](Transporting-Content-Between-Tenants/transporting-content-between-tenants-df12666.md)\).
+
+    > ### Note:  
+    > We recommend that you define system mappings to allow transported content to connect to the appropriate data products on the target tenant \(see [System Mapping for Content Transport Between SAP Datasphere Tenants](https://help.sap.com/docs/business-data-cloud/administering-sap-business-data-cloud-dev/system-mapping-for-content-transport-between-tenants) in the *SAP Business Data Cloud* documentation\).
+
 

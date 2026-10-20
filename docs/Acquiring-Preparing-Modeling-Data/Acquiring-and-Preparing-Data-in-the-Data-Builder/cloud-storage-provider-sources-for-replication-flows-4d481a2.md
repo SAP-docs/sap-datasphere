@@ -177,10 +177,20 @@ In addition, you can change the following **other properties** here:
 -   **File Header**: By default, the system assumes that the first row in each CSV file is a header. If this is not the case, deactivate this property. The system then automatically names the columns as C\(index\), starting with C0.
 
 
-**Specify primary key columns**: The source files do not have a primary key defined, while the target tables need to have a primary key. Consequently, you have to specify the primary key columns for the target. To do so, select the relevant object, then choose *Configure Schema* \(in the *Source Schema Settings* section of the properties panel\) and mark the relevant columns as key columns.
+
+
+## Replicating Source Objects Without Primary Keys
+
+If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
+
+1.  Select the relevant source object.
+2.  In the properties panel, go to the *Source Schema Settings* section and choose *Configure Schema.*
+3.  Mark the relevant columns as key columns.
+
+The columns you select as the primary key must contain unique, non-null values. Incorrect settings result in data inconsistency.
 
 > ### Note:  
-> If your replication flow consumes multiple objects, we recommend using a common pattern and schema to avoid mixing unrelated datasets \(for example, "Employees" and "Sales" tables\).
+> If your replication flow includes multiple objects, use a common pattern and schema to avoid mixing unrelated datasets \(for example, "Employees" and "Sales" tables\).
 
 
 
@@ -299,4 +309,316 @@ If you enable **Include Subfolders**. Then the result looks like this:
 
 
 ## Data Types
+
+The following table shows how source data types are mapped to internal data types for cloud storage provider sources. The source data type depends on the file format: Parquet or CSV.
+
+
+<table>
+<tr>
+<th valign="top">
+
+SAP Datasphere
+
+</th>
+<th valign="top">
+
+Parquet Data Type
+
+</th>
+<th valign="top">
+
+CSV Representation
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+binary
+
+</td>
+<td valign="top">
+
+BYTE\_ARRAY
+
+</td>
+<td valign="top">
+
+Base64-encoded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+BOOLEAN
+
+</td>
+<td valign="top">
+
+true or false
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+INT32 \(DATE\)
+
+</td>
+<td valign="top">
+
+YYYY-MM-DD
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decimal\(p,s\)
+
+</td>
+<td valign="top">
+
+DECIMAL\(p,s\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+DECIMAL\(28,6\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+DECIMAL\(38,6\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float32
+
+</td>
+<td valign="top">
+
+FLOAT
+
+</td>
+<td valign="top">
+
+Decimal or scientific notation
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+DOUBLE
+
+</td>
+<td valign="top">
+
+Decimal or scientific notation
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int8
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int16
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int32
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+int64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+BYTE\_ARRAY \(STRING\)
+
+</td>
+<td valign="top">
+
+As is
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+INT64 \(TIME microseconds\)
+
+</td>
+<td valign="top">
+
+HH:MM:SS.NNNNNNNNNN
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+INT64 \(TIMESTAMP microseconds\)
+
+</td>
+<td valign="top">
+
+YYYY-MM-DD HH:MM:SS.NNNNNNNNNN
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint8
+
+</td>
+<td valign="top">
+
+INT32
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+uint64
+
+</td>
+<td valign="top">
+
+INT64
+
+</td>
+<td valign="top">
+
+Integer \(base 10\)
+
+</td>
+</tr>
+</table>
 

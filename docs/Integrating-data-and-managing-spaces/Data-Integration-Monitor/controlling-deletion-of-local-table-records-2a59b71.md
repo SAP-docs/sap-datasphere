@@ -36,6 +36,11 @@ Description
 
 Displays the size used by the local table if it is stored on the disk.
 
+> ### Note:  
+> A local table that contains zero rows may still report a non-zero size on disk value. This is expected behavior caused by internal storage structures allocated by SAP HANA.
+
+
+
 </td>
 </tr>
 <tr>
@@ -430,6 +435,8 @@ Y days before today to X days after today.
 > 
 > But if you edit the schedule on June 24, 2025, the filter will be updated to delete data from January 1st 2025 to June 24th 2025.
 
+In addition, you can add a time zone using the selector to ensure that filter values are interpreted in the correct timezone context. A suffix with the time zone in brackets is then added to the column name in the deletion filter.
+
 
 
 <a name="loio2a59b7142e1b4d478b0bf4063084261e__section_gkg_3cm_ncc"/>
@@ -443,7 +450,7 @@ To create a schedule, click *Create*.
 The *Schedule Data Deletion* window opens:
 
 1.  Define the settings of the schedule: Give a business name and a technical name to your schedule, and select the type of deletion you would like to apply.
-2.  Define the Settings and Date Range for your schedule. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
+2.  Define the Settings and *Date Range* for your schedule. For more information, see [Scheduling Data Integration Tasks](scheduling-data-integration-tasks-7fa0762.md).
 3.  Click *Next Step*.
 4.  Review your settings and click *Create Schedule*.
 

@@ -47,3 +47,6 @@ The feature opens in 2 tabs:
 
 You can copy either summary using the *Copy* button or create a new version using *Regenerate*.
 
+> ### Note:  
+> Objects referenced in the AI-generated impact summary are displayed as links. Selecting a link opens the monitoring page for the corresponding pipeline object.
+

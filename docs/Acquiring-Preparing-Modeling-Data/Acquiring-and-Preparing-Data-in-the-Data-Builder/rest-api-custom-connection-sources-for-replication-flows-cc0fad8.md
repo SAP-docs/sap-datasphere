@@ -4,9 +4,6 @@
 
 You can use REST API connections as sources in replication flows to replicate data into local table file spaces, using SAP Datasphere \(HDL\_Files\) as the target. The REST API acts as a data source similar to other connections. When you select an action from the connection, the system retrieves data records from the API response and creates corresponding replication objects.
 
-> ### Note:  
-> Custom connection types to connect to REST APIs are not available by default in SAP Datasphere tenants. To enable custom connection types in your tenant, see SAP note [3696110](https://me.sap.com/notes/3696110).
-
 
 
 ## Prerequisites
@@ -122,6 +119,12 @@ You can use REST API connections as sources in replication flows to replicate da
 -   Source or target schema changes are not supported after deployment.
 -   Deleted records in the REST API source are not deleted from the SAP Datasphere target. REST API replication supports insert and update \(upsert\) operations only.
 
+
+
+
+## Replicating Source Objects Without Primary Keys
+
+Replicating source objects without a primary key is not supported. Only source objects that have a primary key defined can be used as source objects in a replication flow.
 
 
 

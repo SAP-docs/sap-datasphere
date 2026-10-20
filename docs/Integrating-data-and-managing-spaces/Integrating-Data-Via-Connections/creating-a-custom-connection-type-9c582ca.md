@@ -6,9 +6,6 @@
 
 Create a custom connection type to allow users assigned to a SAP Datasphere file space to connect to external REST APIs and load JSON-based data into the SAP Datasphere object store using replication flows.
 
-> ### Note:  
-> Custom connection types to connect to REST APIs are not available by default in SAP Datasphere tenants. To enable custom connection types in your tenant, see SAP note [3696110](https://me.sap.com/notes/3696110).
-
 This topic contains the following sections:
 
 -   [Prerequisites](creating-a-custom-connection-type-9c582ca.md#loio9c582ca295164a538cb61b7e7beb6719__prerequisites)

@@ -253,7 +253,7 @@ Australia
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -295,7 +295,7 @@ Not Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -337,7 +337,7 @@ Not Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -379,7 +379,7 @@ Europe \(Frankfurt\)
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -421,7 +421,7 @@ EU Access \(Frankfurt\)
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -463,7 +463,7 @@ Japan \(Tokyo\)
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -505,7 +505,7 @@ Singapore
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -547,7 +547,7 @@ Not Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -589,7 +589,7 @@ US East
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -679,7 +679,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -721,7 +721,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -763,7 +763,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -805,7 +805,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -847,7 +847,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -889,7 +889,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -931,7 +931,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -973,7 +973,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1015,7 +1015,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1057,7 +1057,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1147,7 +1147,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1189,7 +1189,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1231,7 +1231,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1273,7 +1273,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1315,7 +1315,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1357,7 +1357,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1404,7 +1404,7 @@ Not supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1451,7 +1451,7 @@ Not supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">
@@ -1493,7 +1493,7 @@ Supported
 </td>
 <td valign="top">
 
-7200 h/month
+11500 h/month
 
 </td>
 <td valign="top">

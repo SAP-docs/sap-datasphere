@@ -12,14 +12,20 @@ Import a `.csv` file to create a table and fill it with the data from the file.
 
 ## Prerequisites
 
-To create local tables from a `.csv` file, you must have a scoped role that grants you access to a space with the following privileges:
+You must consider the following:
 
--   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
--   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
--   *Data Warehouse Consumption* \(`-RU-----`\) - To upload data in a local table.
--   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+-   To create local tables from a `.csv` file, you must have a scoped role that grants you access to a space with the following privileges:
 
-The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+    -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+    -   *Data Warehouse Data Builder* \(`CRUD----`\) - To create, edit, and delete *Data Builder* objects.
+    -   *Data Warehouse Consumption* \(`-RU-----`\) - To upload data in a local table.
+    -   *Space Files* \(`CRUD----`\) - To create, read, update, and delete objects in your spaces.
+
+    The *DW Modeler* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/d7350c6823a14733a7a5727bad8371aa.html "A privilege represents a task or an area in SAP Datasphere and can be assigned to a specific role. The actions that can be performed in the area are determined by the permissions assigned to a privilege.") :arrow_upper_right: and [Standard Roles Delivered with SAP Datasphere](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/a50a51d80d5746c9b805a2aacbb7e4ee.html "SAP Datasphere is delivered with several standard roles. A standard role includes a predefined set of privileges and permissions.") :arrow_upper_right:. 
+
+-   The file must have the extension `*.csv` and contain Unicode text only.
+
+-   The file size must not exceed 25 MB.
 
 
 
@@ -40,9 +46,6 @@ The *DW Modeler* role template, for example, grants these privileges. For more i
 1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *Import* \> *Import CSV File* to open the editor.
 
 2.  Click *Select Source File*, navigate to, and select the CSV file you want to upload.
-
-    > ### Note:  
-    > The file must have the extension `*.csv` and contain Unicode text only. The file size must not exceed 25 MB.
 
     > ### Caution:  
     > If you have a source connected via a FlowAgent or an SAP HANA smart data integration connector, you may consider the following while loading a CSV file: Values that cannot be converted to their assigned datatype, such as numeric fields with leading zeroes, will be considered invalid by the service and will be replaced by null. If you are creating a flow, this does not prevent you to run and deploy it.

@@ -303,6 +303,28 @@ Not supported
 <tr>
 <td valign="top">
 
+MySQL
+
+</td>
+<td valign="top">
+
+`I-----`
+
+</td>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/520a2601fd7a45f084e5ed1d30c6ebfa.html "Use the connection to connect to and access tables from a MySQL database.") :arrow_upper_right: | Use as: [Source](mysql-sources-for-replication-flows-4fe9218.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Oracle
 
 </td>
@@ -538,29 +560,7 @@ Not supported
 </td>
 <td valign="top">
 
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d9ead8bb44ac456d99a141b4e3f5e973.html "Use the connection to connect to and access data from a Snowflake database.") :arrow_upper_right: | Use as:  <?sap-ot O2O class="- topic/xref " href="af67fc6241d445e9b49ccd2f03d72f9e.xml" text="Sources" desc="" xtrc="xref:48" xtrf="file:/home/builder/src/dita-all/hbr1788862132750/loioc25299a38b6448f889a43b42c9e5897d_en-US/src/content/localization/en-us/10891192186c4920b08939a7b46adc79.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-MySQL
-
-</td>
-<td valign="top">
-
-`I-----`
-
-</td>
-<td valign="top">
-
-Not supported
-
-</td>
-<td valign="top">
-
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/520a2601fd7a45f084e5ed1d30c6ebfa.html "Use the connection to connect to and access tables from a MySQL database.") :arrow_upper_right:| Use as: [Source](mysql-sources-for-replication-flows-4fe9218.md)
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d9ead8bb44ac456d99a141b4e3f5e973.html "Use the connection to connect to and access data from a Snowflake database.") :arrow_upper_right: | Use as: [Sources](snowflake-sources-for-replication-flows-af67fc6.md)
 
 </td>
 </tr>

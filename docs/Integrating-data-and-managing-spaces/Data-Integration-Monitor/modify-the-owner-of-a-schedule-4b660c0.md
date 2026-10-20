@@ -37,22 +37,22 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 3.  Open the monitor for the relevant object.
 
-4.  Select the object for which you want to schedule a task.
+4.  Select the object that you want to
 
-    You can assign a number of task chains to a single technical user in bulk to avoid having to select each individual chain.
+5.  Select the scheduled object for which you want to assign a new owner.
 
-5.  Select *Schedule* \> *Edit Schedule*
+6.  Select *Schedule* \> *Edit Schedule*
 
-6.  Select your user type, *Business User* or *Technical User*, from the drop down.
+7.  Select your user type, *Business User* or *Technical User*, from the drop down.
 
-7.  Select the new owner of the schedule.
+8.  Select the new owner of the schedule.
 
     > ### Note:  
     > If the schedule is owned by another business user, you can assign yourself as the owner, and you cannot assign another business user.
 
     You need to enter both a user type and an owner to save your changes.
 
-8.  Click *SAVE* to save the schedule.
+9.  Click *OK* to save the schedule.
 
 
 
@@ -61,5 +61,5 @@ Changing the owner of the schedule is required when the user owning the schedule
 
 ## Results
 
-The *User Type* field now shows the type of schedule owner. The *Owner* field now shows the name or ID of the new owner. The scheduling component from now own will execute the task on behalf of the new owner..
+The *User Type* field now shows the type of schedule owner. The *Owner* field now shows the name or ID of the new owner. The scheduling component from now own will run the task on behalf of the new owner.
 

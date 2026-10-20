@@ -30,7 +30,7 @@ You can start an immediate task to delete the data:
 2.  Select the relevant local table \(file\) and click <span class="SAP-icons-V5"></span> \(Details\) to navigate to the details screen of the selected table.
 3.  Click *Delete Records* and choose the desired option:
     -   *Delete All Records*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-    -   *Delete Filtered Records*: You define filter criteria, and the records will be marked as deleted according to this filter. They will be filtered out when accessing the local table's active records. They will still consume storage, and they can still be processed by other apps that consume them.
+    -   *Delete Filtered Records*: You define filter criteria, and the records will be marked as deleted according to this filter. They will be filtered out when accessing the local table's active records. They will still consume storage, and they can still be processed by other apps that consume them. Note that if your filter is defined on a column where values are of data type "Date" or "Datetime", you can add a time zone using the selector to ensure that filter values are interpreted in the correct timezone context. A suffix with the time zone in brackets is then added to the column name in the deletion filter.
 
         > ### Note:  
         > the following data types are not supported for filtering:
@@ -82,7 +82,7 @@ To create a data deletion schedule:
 3.  Click *Schedule* \> *Create Deletion Schedule*.
 4.  Define a business name and a technical name for your schedule, and choose the desired options to be used to delete your data:
     -   *Delete All Records*: Records will not be physically deleted but marked as deleted and filtered out when accessing the active records of the local table. They will still consume storage, and they can still be processed by other apps that consume them.
-    -   *Delete Filtered Records*: You define filter criteria, and the records will be marked as deleted according to this filter. They will be filtered out when accessing the local table's active records. They will still consume storage, and they can still be processed by other apps that consume them.
+    -   *Delete Filtered Records*: You define filter criteria, and the records will be marked as deleted according to this filter. They will be filtered out when accessing the local table's active records. They will still consume storage, and they can still be processed by other apps that consume them. Note that if your filter is defined on a column where values are of data type "Date" or "Datetime", you can add a time zone using the selector to ensure that filter values are interpreted in the correct timezone context. A suffix with the time zone in brackets is then added to the column name in the deletion filter.
 
         > ### Note:  
         > the following data types are not supported for filtering:

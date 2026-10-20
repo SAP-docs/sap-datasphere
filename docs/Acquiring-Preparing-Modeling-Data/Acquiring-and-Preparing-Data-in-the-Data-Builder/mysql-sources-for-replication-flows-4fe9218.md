@@ -140,6 +140,12 @@ If a partitioning timeout occurs, try the following in order:
 
 
 
+## Replicating Source Objects Without Primary Keys
+
+Replicating source objects without a primary key is not supported. Only source objects that have a primary key defined can be used as source objects in a replication flow.
+
+
+
 ## Data Types
 
 The following table shows how MySQL source data types are mapped to internal data types. Data types that are not supported cannot be replicated.

@@ -9,7 +9,7 @@ This topic contains the following sections:
 -   [Prerequisites](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_prerequisites)
 -   [Use Note Analyzer to Verify Your ABAP Source System Compliance](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_note_analyzer)
 -   [ABAP Replication Source Object Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_source_objects)
--   [Work with Source Objects Without Primary Keys](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys)
+-   [Replicate Source Objects Without Primary Keys](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys)
 -   [Mask Sensitive Data Replicated to SAP Signavio](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_signavio)
 -   [Data Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__section_data_types)
 
@@ -592,36 +592,23 @@ ODP Data Sources \(SAPI or BW context\)
 
 <a name="loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys"/>
 
-## Work with Source Objects Without Primary Keys
+## Replicate Source Objects Without Primary Keys
 
-If certain conditions are met, you can use objects that do not have a primary key as the source for a replication flow.
+Under certain conditions, you can use source objects that do not have a primary key as the source for a replication flow. This applies to the following source object types:
 
-This applies to the following types of *source objects*:
+-   CDS views with load type *Initial Only*, replicating an SAP Datasphere file space
+-   ODP objects with a load type of Initial Only replicating to an SAP Datasphere file space.
+-   ODP objects with a load type of Initial and Delta replication to SAP Datasphere standard space.
 
--   CDS views
+If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
 
--   ODP data sources \(SAPI only\)
+1.  Select the relevant source object.
+2.  In the properties panel, go to the *Source Schema Settings* section and choose *Configure Schema.*
+3.  Mark the relevant columns as key columns.
 
+The columns you select as the primary key must contain unique, non-null values. Incorrect settings result in data inconsistency.
 
-> ### Caution:  
-> -   If you are replicating source data from Microsoft SQL Server, you can't replicate objects without primary keys.
-> -   The load type must not be *Delta Only*.
-
-CDS view source objects must have load type *Initial Only*, and ODP data sources must have load type *Initial Only* or *Initial and Delta*.
-
-**Existing tables** can be used as **targets** if they have a column \_\_load\_package\_id \(as explained below\). **Local tables** can only be used as targets if delta capturing is **not** enabled.
-
-For some targets, the system automatically adds a **technical target column**. For SAP HANA and SAP HANA Cloud targets, this column is called "\_\_load\_package\_id" and has data type binary\(256\). For other targets, it is called "\_\_load\_record\_id" and has data type string\(44\). This column provides a unique identifier for each record, which serves as a replacement for the primary key in duplicate handling and for other technical purposes. On the *Projections* tab, this column is always shown at the end and in read only mode. You can't rename it, remove or modify its data type, or reorder it.
-
-The technical target column is not added to a target table for Apache Kafka, as it is sent in a message header. This means it is sent separately from other \(non-technical\) columns placed in a message body.
-
-> ### Note:  
-> Multiple replications \(for example due to restarting or undeploying and redeploying a replication flow\) result in different \_\_load\_record\_id values for the same source record.
-
-**Specify primary key columns for Initial and Delta load types, and ODP objects**: The source files do not have a primary key defined, while the target tables need to have a primary key. Consequently, you have to specify the primary key columns for the target. To do so, select the relevant object, then choose *Configure Schema* \(in the *Source Schema Settings* section of the properties panel\) and mark the relevant columns as key columns.
-
-> ### Note:  
-> If your replication flow consumes multiple objects, we recommend using a common pattern and schema to avoid mixing unrelated datasets \(for example, "Employees" and "Sales" tables\).
+Existing tables can be used as targets if they have a `__load_package_id` column \(as explained below\). Local tables can only be used as targets if delta capturing is not enabled.
 
 
 
@@ -637,19 +624,24 @@ You can mask sensitive column data using the `SHA3-256` algorithm before writing
 
 ## Data Types
 
-The following table shows how SAP S/4HANA ABAP \(ODP\) source data types are mapped to internal data types.
+The following table shows how SAP ABAP source data types are mapped to internal data types. The mapping depends on the type of source object.
 
 
 <table>
 <tr>
 <th valign="top">
 
-ODP Data Type
+ABAP Data Type
 
 </th>
 <th valign="top">
 
-SAP Datasphere
+CDS Views and SLT Tables
+
+</th>
+<th valign="top">
+
+ODP Data Sources
 
 </th>
 </tr>
@@ -657,6 +649,11 @@ SAP Datasphere
 <td valign="top">
 
 ACCP
+
+</td>
+<td valign="top">
+
+string\(6\)
 
 </td>
 <td valign="top">
@@ -676,11 +673,21 @@ CHAR
 string\(n\)
 
 </td>
+<td valign="top">
+
+string\(n\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
 CLNT
+
+</td>
+<td valign="top">
+
+string\(3\)
 
 </td>
 <td valign="top">
@@ -700,11 +707,55 @@ CUKY
 string\(5\)
 
 </td>
+<td valign="top">
+
+string\(5\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CURR
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATN
+
+</td>
+<td valign="top">
+
+date
+
+</td>
+<td valign="top">
+
+date or string\(8\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
 DATS
+
+</td>
+<td valign="top">
+
+date or string\(8\)
 
 </td>
 <td valign="top">
@@ -721,6 +772,11 @@ DEC
 </td>
 <td valign="top">
 
+decimal\(p,s\) \*
+
+</td>
+<td valign="top">
+
 decimal\(p,s\)
 
 </td>
@@ -728,7 +784,12 @@ decimal\(p,s\)
 <tr>
 <td valign="top">
 
-DFIL16\_DEC
+DECFLOAT16
+
+</td>
+<td valign="top">
+
+decfloat16
 
 </td>
 <td valign="top">
@@ -740,7 +801,12 @@ decfloat16
 <tr>
 <td valign="top">
 
-DFIL34\_RAW
+DECFLOAT34
+
+</td>
+<td valign="top">
+
+decfloat34
 
 </td>
 <td valign="top">
@@ -752,7 +818,46 @@ decfloat34
 <tr>
 <td valign="top">
 
-DFIL34\_SCL
+DF16\_DEC
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DF16\_RAW
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+<td valign="top">
+
+decfloat16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DF34\_DEC
+
+</td>
+<td valign="top">
+
+decfloat34
 
 </td>
 <td valign="top">
@@ -764,12 +869,34 @@ decfloat34
 <tr>
 <td valign="top">
 
-DFLIL\_RAW
+DF34\_RAW
 
 </td>
 <td valign="top">
 
-binary
+decfloat34
+
+</td>
+<td valign="top">
+
+decfloat34
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FLTP
+
+</td>
+<td valign="top">
+
+float64
+
+</td>
+<td valign="top">
+
+float64
 
 </td>
 </tr>
@@ -781,7 +908,12 @@ GEOM\_EWKB
 </td>
 <td valign="top">
 
-binary
+binary\(n\)
+
+</td>
+<td valign="top">
+
+binary\(n\)
 
 </td>
 </tr>
@@ -789,6 +921,11 @@ binary
 <td valign="top">
 
 INT1
+
+</td>
+<td valign="top">
+
+uint8
 
 </td>
 <td valign="top">
@@ -808,11 +945,21 @@ INT2
 int16
 
 </td>
+<td valign="top">
+
+int16
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
 INT4
+
+</td>
+<td valign="top">
+
+int32
 
 </td>
 <td valign="top">
@@ -832,6 +979,11 @@ INT8
 int64
 
 </td>
+<td valign="top">
+
+int64
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -841,7 +993,12 @@ LANG
 </td>
 <td valign="top">
 
-string\(1\)
+string\(2\)
+
+</td>
+<td valign="top">
+
+string\(2\)
 
 </td>
 </tr>
@@ -849,6 +1006,11 @@ string\(1\)
 <td valign="top">
 
 LCHR
+
+</td>
+<td valign="top">
+
+string\(n\)
 
 </td>
 <td valign="top">
@@ -868,6 +1030,11 @@ LRAW
 binary\(n\)
 
 </td>
+<td valign="top">
+
+binary\(n\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -880,16 +1047,26 @@ NUMC
 string\(n\)
 
 </td>
+<td valign="top">
+
+string\(n\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
-PREC
+QUAN
 
 </td>
 <td valign="top">
 
-int16
+decimal\(p,s\) \*
+
+</td>
+<td valign="top">
+
+decimal\(p,s\)
 
 </td>
 </tr>
@@ -897,6 +1074,11 @@ int16
 <td valign="top">
 
 RAW
+
+</td>
+<td valign="top">
+
+binary\(n\)
 
 </td>
 <td valign="top">
@@ -913,7 +1095,12 @@ RAWSTRING
 </td>
 <td valign="top">
 
-binary
+binary\(n\)
+
+</td>
+<td valign="top">
+
+Not Supported
 
 </td>
 </tr>
@@ -925,7 +1112,12 @@ SSTRING
 </td>
 <td valign="top">
 
-string
+string\(n\)
+
+</td>
+<td valign="top">
+
+string\(n\)
 
 </td>
 </tr>
@@ -937,7 +1129,63 @@ STRING
 </td>
 <td valign="top">
 
-string
+string\(n\)
+
+</td>
+<td valign="top">
+
+Not Supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SYSUUID\_C22, SYSUUID\_C26, SYSUUID\_C32, SYSUUID\_C36
+
+</td>
+<td valign="top">
+
+string\(36\)
+
+</td>
+<td valign="top">
+
+string\(36\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SYSUUID\_X16
+
+</td>
+<td valign="top">
+
+binary\(16\) or string\(36\)
+
+</td>
+<td valign="top">
+
+binary\(16\) or string\(36\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TIMN
+
+</td>
+<td valign="top">
+
+time
+
+</td>
+<td valign="top">
+
+time or string\(6\)
 
 </td>
 </tr>
@@ -952,6 +1200,45 @@ TIMS
 time or string\(6\)
 
 </td>
+<td valign="top">
+
+time or string\(6\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TZNTSTMPL
+
+</td>
+<td valign="top">
+
+timestamp or decimal\(21,7\)
+
+</td>
+<td valign="top">
+
+timestamp or decimal\(21,7\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TZNTSTMPS
+
+</td>
+<td valign="top">
+
+timestamp or decimal\(15,0\)
+
+</td>
+<td valign="top">
+
+timestamp or decimal\(15,0\)
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -961,12 +1248,34 @@ UNIT
 </td>
 <td valign="top">
 
-string\(2-3\)
+string\(3\)
+
+</td>
+<td valign="top">
+
+string\(3\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+UTCLONG
+
+</td>
+<td valign="top">
+
+timestamp
+
+</td>
+<td valign="top">
+
+string\(28\)
 
 </td>
 </tr>
 </table>
 
 > ### Note:  
-> For DATS and TIMS columns, the internal data type depends on the Content Type setting. With Template Type, DATS maps to date and TIMS maps to time. With Native Type \(default\), both map to their string representations \(string\(10\) and string\(8\) respectively\).
+> \* For `DEC` and `QUAN` in CDS views and SLT tables, the precision of the internal data type may be one digit larger than the source definition. For details, see SAP Note 3456137.
 

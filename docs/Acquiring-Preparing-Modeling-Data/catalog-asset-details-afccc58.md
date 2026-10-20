@@ -133,6 +133,8 @@ Statuses
 
 Displays the functional and publication statuses of the asset.
 
+SAP Datasphere views have a release state that shows whether it's released, deprecated, or decommissioned. For information about the release states, see [Releasing Stable Views for Consumption](releasing-stable-views-for-consumption-5b99e9b.md).
+
 Users with the *Catalog User* role are only able to see published assets that have a functional status of *Current* with the *Published* status. 
 
 Users with the *Catalog Administrator* role can use the different functional and publication statuses to decide what actions are needed to keep the assets in good shape for catalog users. For information on the statuses, see [Catalog Asset Statuses](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/5f631a18e3a54532927bf8cf06d39bf2.html "The asset details page displays a variety of status labels specific to assets. These statuses help you decide what actions to take to keep assets in good shape and available for your users.") :arrow_upper_right:.

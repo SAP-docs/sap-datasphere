@@ -110,14 +110,14 @@ Define settings and properties for your replication flow and individual replicat
 
 
     -   Capture Source Schema Changes: Detects compatible source schema changes and allows you to apply supported changes without restarting the replication flow. Available only for replication flows that use the SAP ABAP connection type with an SLT container and replicate to SAP Datasphere \(HANA\) or Local Table \(File\) targets. Apply [3691739](https://me.sap.com/notes/3691739) to the ABAP source system before enabling this option. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md) To enable this option:
-
         1.  Open the replication flow.
         2.  Select *Edit Run Settings.*
         3.  Enable *Capture Source Schema Changes*.
         4.  Save.
 
-        > ### Note:  
-        > To allow supported schema changes to be detected automatically, add new nullable non-key columns at the end of the source table definition. Adding columns between existing columns is treated as an unsupported schema change.
+            > ### Note:  
+            > To allow supported schema changes to be detected automatically, add new nullable non-key columns at the end of the source table definition. Adding columns between existing columns is treated as an unsupported schema change.
+
 
     -   Source Thread Limit \(1-160\): You can increase or decrease the number of replication threads to be used by your replication flow to load data from the source as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 10. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance. See also [Replication Flow Blog Series Part 4 - Sizing](https://blogs.sap.com/2023/12/15/replication-flow-blog-series-part-4-sizing/).
     -   Target Thread Limit \(1-160\) You can increase or decrease the number of replication threads to be used by your replication flow to write data to the target as appropriate for your use case. In particular, the value you enter here determines how many partitions can be processed in parallel during and initial load. Possible values are integers between 1 and 160, the default is 10. We recommend using the same value for the source and the target. When replicating data from SAP HANA, specify an even number for the maximum number of threads, ideally a multiple of 10, as this helps to improve performance.
