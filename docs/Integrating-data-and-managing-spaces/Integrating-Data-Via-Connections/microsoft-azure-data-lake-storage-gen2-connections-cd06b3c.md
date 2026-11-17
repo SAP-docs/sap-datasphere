@@ -95,7 +95,7 @@ If you're using SAP Datasphere on Microsoft Azure and want to connect to an Azur
 
 ### Replication Flows
 
-If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+If you want to prevent your data from being routed publicly through the internet, you can use a dedicated Cloud Connector instance in the customer virtual private network \(VPN\) as a TLS tunnel between the VPN and SAP Datasphere to privately route the data.
 
 When configuring Cloud Connector, ensure you create system mappings for both data endpoints of your storage account, `dfs` and `blob` :
 

@@ -10,6 +10,7 @@ If you use Confluent Kafka as the target for your replication flow, you need to 
 
 ## Prerequisites
 
+-   Make sure you have created a confluent connection in Connection Management and that it is available in your space. For more information, see [Confluent Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d83c08ad4eaf49dba9602b1d51c07a52.html#loiod83c08ad4eaf49dba9602b1d51c07a52 "Use the connection to connect to Apache Kafka hosted on either the Confluent Platform or Confluent Cloud. The connection type has two endpoints: the Kafka brokers and the Schema Registry.") :arrow_upper_right:
 -   You must ensure that you connect to a supported Confluent/Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
 
 -   You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).

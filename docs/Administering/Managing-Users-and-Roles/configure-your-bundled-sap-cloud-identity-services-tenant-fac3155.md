@@ -16,7 +16,7 @@ This topic contains the following sections:
 -   [Disable Your SAP Cloud Identity Services Tenant and Revert to Your Custom IdP](configure-your-bundled-sap-cloud-identity-services-tenant-fac3155.md#loiofac3155d77154775b919ceba36ffc325__section_jtc_n4f_5fc)
 
 > ### Caution:  
-> Once you create a Joule formation with your SAP Datasphere tenant, you cannot roll back to a default or custom authentication. You also cannot change your bundled SAP Cloud Identity Services tenant.
+> Once you create a Joule formation with your SAP Datasphere tenant, you cannot roll back to a default or custom authentication.
 
 You provision and configure a bundled SAP Cloud Identity Services tenant for your SAP Datasphere tenant to allow users to sign in via single sign-on \(SSO\) to SAP Datasphere and to other SAP products that use the same SAP Cloud Identity Services tenant. For more information about bundles, see [Bundles](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/bundles).
 
@@ -30,7 +30,7 @@ To configure your bundled SAP Cloud Identity Services tenant for your SAP Datasp
 
 -   You must have the system owner role for your SAP Datasphere tenant and have multi-factor authentication enabled \(see [Multi-Factor Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/user-guide-multi-factor-authentication?version=Cloud)\).
 -   You must have an S-user with the same email as the system owner of the SAP Datasphere tenant. If you do not have an S-user, click the *Register* button and create a user with email address used by the system owner.
--   We recommend that the S-user have multi-factor authentication enabled.
+-   Recommended: Multi-factor authentication is enabled for your S-user.
 
 > ### Note:  
 > -   SAP Datasphere is hosted on non-SAP data centers, so it is only available in a Cloud Foundry environment.

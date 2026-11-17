@@ -340,7 +340,7 @@ Not supported
 </td>
 <td valign="top">
 
-[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:[Sources](oracle-sources-for-replication-flows-54bbb56.md)
+[Create](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right: | Use as:[Sources](oracle-sources-for-replication-flows-54bbb56.md)
 
 </td>
 </tr>

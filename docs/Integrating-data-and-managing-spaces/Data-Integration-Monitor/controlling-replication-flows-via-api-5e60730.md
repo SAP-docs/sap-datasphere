@@ -84,7 +84,7 @@ Authentication
 Manually authenticate to generate the authorization code.
 
 > ### Note:  
-> To control a replication flow, you must have authorized consent via the *Authorized Consent Settings* in your profile \(see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
+> To control a replication flow, you must have authorized consent via the *Authorized Consent Settings* in your profile \(see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To edit your user settings, select your profile in the shell bar and select Settings. You can personalize various aspects of your user experience in SAP Datasphere, set data privacy settings, and authorize task scheduling consent.") :arrow_upper_right:\).
 
 
 

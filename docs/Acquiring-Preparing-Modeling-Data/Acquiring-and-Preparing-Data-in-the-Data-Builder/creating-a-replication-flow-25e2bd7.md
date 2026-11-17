@@ -204,22 +204,14 @@ You can use replication flows to copy data from the following source objects fro
     </td>
     <td valign="top">
     
-    \[only relevant for ABAP-based source systems\]. Select the best content type to use when loading data from an ABAP-based system.
+    \[only relevant for ABAP-based source systems\] Select a content type to control how date and other data types are converted in the target table.
 
     You can choose between 2 content types:
 
     -   *Template Type*: The data types used in the source table are applied to the target table. *DATE* and *TIME* columns keep their corresponding date and time data types.
     -   *Native Type* \(default\): Different data types are applied to the target table based on the source metadata. *DATE* and *TIME* columns are represented as *string* using the native length provided by the source metadata.
 
-    > ### Example:  
-    > Your source table contains a date column that doesn't have values in ISO format. If you select the content type *Template Type* your replication flow run will fail with an error because the target table will expect data in ISO format. You'd better select the *Native Type* to run the replication flow, so that the data type will be turned into string.
-
-    > ### Note:  
-    > This option is available only for replication flows created from wave 2025.04.It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
-    > 
-    > -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md).
-
-
+    For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md).
     
     </td>
     </tr>

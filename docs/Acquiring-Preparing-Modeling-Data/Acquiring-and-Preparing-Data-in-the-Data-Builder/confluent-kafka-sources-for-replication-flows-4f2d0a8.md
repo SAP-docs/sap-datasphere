@@ -10,6 +10,7 @@ You can use Confluent Kafka as source for your replication flows.
 
 ## Prerequisites
 
+-   Make sure you have created a confluent connection in Connection Management and that it is available in your space. For more information, see [Confluent Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d83c08ad4eaf49dba9602b1d51c07a52.html#loiod83c08ad4eaf49dba9602b1d51c07a52 "Use the connection to connect to Apache Kafka hosted on either the Confluent Platform or Confluent Cloud. The connection type has two endpoints: the Kafka brokers and the Schema Registry.") :arrow_upper_right:
 -   You must ensure that you connect to a supported Confluent/Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
 
 -   All replication objects must have load type *Initial and Delta* \(other load types are not supported\).

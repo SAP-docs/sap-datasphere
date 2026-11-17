@@ -443,7 +443,7 @@ For each new space file, default Apache Spark configurations are used by default
     </th>
     </tr>
     <tr>
-    <td valign="top" rowspan="7">
+    <td valign="top">
     
     LOCAL\_TABLE
     
@@ -469,6 +469,11 @@ For each new space file, default Apache Spark configurations are used by default
     <tr>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     OPTIMIZE\_FILES
     
     </td>
@@ -486,6 +491,11 @@ For each new space file, default Apache Spark configurations are used by default
     </td>
     </tr>
     <tr>
+    <td valign="top">
+    
+     
+    
+    </td>
     <td valign="top">
     
     TRUNCATE\_FILES\_WITH\_FILTER
@@ -507,6 +517,11 @@ For each new space file, default Apache Spark configurations are used by default
     <tr>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     TRUNCATE\_FILES
     
     </td>
@@ -524,6 +539,11 @@ For each new space file, default Apache Spark configurations are used by default
     </td>
     </tr>
     <tr>
+    <td valign="top">
+    
+     
+    
+    </td>
     <td valign="top">
     
     VACUUM\_FILES
@@ -545,6 +565,11 @@ For each new space file, default Apache Spark configurations are used by default
     <tr>
     <td valign="top">
     
+     
+    
+    </td>
+    <td valign="top">
+    
     DELETE\_INBOUND\_BUFFER
     
     </td>
@@ -562,6 +587,11 @@ For each new space file, default Apache Spark configurations are used by default
     </td>
     </tr>
     <tr>
+    <td valign="top">
+    
+     
+    
+    </td>
     <td valign="top">
     
     FIND\_AND\_REPLACE

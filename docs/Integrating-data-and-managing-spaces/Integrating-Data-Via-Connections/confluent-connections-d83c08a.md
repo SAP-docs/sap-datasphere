@@ -76,7 +76,7 @@ Before you can use the connection for replication flows, the following is requir
 -   A Cloud Connector configuration to connect to the Kafka brokers and to the Schema Registry is required in the following cases:
 
     -   Your Confluent Platform is on-premise.
-    -   For Confluent Cloud: If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+    -   For Confluent Cloud: If you want to prevent your data from being routed publicly through the internet, you can use a dedicated Cloud Connector instance in the customer virtual private network \(VPN\) as a TLS tunnel between the VPN and SAP Datasphere to privately route the data.
 
     Two service endpoints and their corresponding Cloud Connector system mappings are required:
 

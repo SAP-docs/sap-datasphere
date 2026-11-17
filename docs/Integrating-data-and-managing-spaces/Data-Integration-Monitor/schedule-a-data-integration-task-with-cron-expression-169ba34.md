@@ -15,7 +15,7 @@ Scheduling is an automated task. You must authorize SAP Datasphere to run tasks 
 > ### Note:  
 > Your consent is valid for 365 days. After the consent has expired, a log informs you that the tasks for which you own the schedule won’t be executed anymore. Renew your consent to resume task execution according to the schedules. Additionally, in To run recurring scheduled tasks on your behalf, you need to authorize the job scheduling component of *Data Integration* monitoring app, a warning message appears 10 days before the expiry of consent.
 
-For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:.
+For more information, see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To edit your user settings, select your profile in the shell bar and select Settings. You can personalize various aspects of your user experience in SAP Datasphere, set data privacy settings, and authorize task scheduling consent.") :arrow_upper_right:.
 
 
 

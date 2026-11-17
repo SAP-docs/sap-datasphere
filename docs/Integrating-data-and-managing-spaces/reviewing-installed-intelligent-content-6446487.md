@@ -17,7 +17,7 @@ Data is loaded from the source system into SAP Datasphere, where the following s
     Ingestion spaces may contain inactive data products that are not consumed by any intelligent content nor installed in any customer-managed space. These data products do not contain data. If you want to install an inactive data product, you must first ask an administrator to activate its parent data package or install the intelligent content that consumes the data product.
 
 -   Preparation space - contains views built on top of the data products to prepare them for consumption.
--   Model space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the intelligent content.
+-   Application space - contain analytic models built on top of the views to expose the data for consumption in SAP Analytics Cloud. This space has the name of the intelligent content.
 
 > ### Note:  
 > These spaces are SAP-managed. You cannot create objects in them, share objects to or from them or otherwise import or export content to or from them.
@@ -31,9 +31,9 @@ You can install multiple instances of intelligent content for different source s
 -   If your organization operates multiple source system instances across different subsidiaries, business units, or geographic areas, each requiring analysis through the same intelligent content.
 -   If your organization maintains separate development, test, and production environments within a single SAP Datasphere tenant, necessitating separate installations of the same intelligent content for each environment.
 
-In this case, the three spaces are created in SAP Datasphere for each instance of the intelligent content, while the model spaces are distinguishable by an alias that was assigned to each instance during installation. When uninstalling, the three spaces are removed. 
+In this case, the three spaces are created in SAP Datasphere for each instance of the intelligent content, while the application spaces are distinguishable by an alias that was assigned to each instance during installation. When uninstalling, the three spaces are removed. 
 
-In the following example, we have two instances of one intelligent content, installed for two source systems, resulting in separate spaces, where each model space identifies the source tenant providing the data by system alias.
+In the following example, we have two instances of one intelligent content, installed for two source systems, resulting in separate spaces, where each application space identifies the source tenant providing the data by system alias.
 
 ![](images/Install_Intelligent_Content_for_2_or_More_Source_Systems_d1e8d3d.png)
 
@@ -43,7 +43,7 @@ In the following example, we have two instances of one intelligent content, inst
 
 In addition, you can install different intelligent contents for the same source system. In this case, all intelligent content uses the same ingestion space. When uninstalling, the appropriate spaces are removed, but the shared ingestion space is retained until the final content is removed.
 
-In the following example, we have two intelligent contents installed on top of the same source system, resulting in reusing of the ingestion and preparation spaces, and in creation of separate model spaces.
+In the following example, we have two intelligent contents installed on top of the same source system, resulting in reusing of the ingestion and preparation spaces, and in creation of separate application spaces.
 
 ![](images/Install_multiple_intelligent_applications_for_the_same_source_system_f53cc37.png)
 
@@ -64,11 +64,11 @@ You can install intelligent content that combines data products coming from mult
 > ### Note:  
 > Content of this type cannot combine data products coming from different instances of the same source system, such as SAP S/4HANA EU and SAP S/4HANA US.
 
-In this case, multiple spaces are created in SAP Datasphere for the intelligent content: separate ingestion and preparation spaces for each source system, a cross-system space where data from all source systems is combined, and a model space. The spaces are distinguishable by aliases assigned to each source system, and to the unique combination of the source systems, and are assigned to the spaces automatically.
+In this case, multiple spaces are created in SAP Datasphere for the intelligent content: separate ingestion and preparation spaces for each source system, a cross-system space where data from all source systems is combined, and an application space. The spaces are distinguishable by aliases assigned to each source system, and to the unique combination of the source systems, and are assigned to the spaces automatically.
 
-When uninstalling, the cross-system space and the model space are deleted. The source system-specific ingestion and preparation space are retained until the final content belonging to the source system is deleted.
+When uninstalling, the cross-system space and the application space are deleted. The source system-specific ingestion and preparation space are retained until the final content belonging to the source system is deleted.
 
-In the following example, we have intelligent content combining data products from two multiple systems. The installation results in separate ingestion and preparation spaces, an additional cross-system space, and a model space.
+In the following example, we have intelligent content combining data products from two multiple systems. The installation results in separate ingestion and preparation spaces, an additional cross-system space, and an application space.
 
 ![](images/Installation_of_Intelligent_Content_Combining_Data_from_Several_Source_Systems_e65c96e.png)
 

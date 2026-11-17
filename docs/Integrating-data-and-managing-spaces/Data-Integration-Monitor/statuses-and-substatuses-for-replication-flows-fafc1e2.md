@@ -271,6 +271,18 @@ The replication task for the object has detected schema changes, which must be r
 <tr>
 <td valign="top">
 
+Applying Schema Changes
+
+</td>
+<td valign="top">
+
+A compatible schema change from a Data Product schema change is being applied. The object resumes automatically once the change is complete.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Retrying
 
 </td>

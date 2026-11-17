@@ -17,13 +17,14 @@ You want to replicate data using a secure file transfer protocol \(SFTP\) for se
 > 
 > Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).
 
-While replicating data to an SFTP connection, only the following load types are supported:
+-   Make sure you have created the Generic SFTP connection in Connection Management and that it is available in your space. For more information, see [Generic SFTP Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/b645de78a8374c24871ab6169be40d35.html "Use a Generic SFTP connection to connect to and access files on a Secure File Transfer Protocol (SFTP) server.") :arrow_upper_right:
+-   While replicating data to an SFTP connection, only the following load types are supported:
+    -   Initial Only
+    -   Initial and Delta
 
--   Initial Only
--   Initial and Delta
+        > ### Note:  
+        > The default delta load interval is set as 1 hour.
 
-    > ### Note:  
-    > The default delta load interval is set as 1 hour.
 
 
 

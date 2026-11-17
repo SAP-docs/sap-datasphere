@@ -19,7 +19,7 @@ You must consider the following prerequisites before you start:
 
     In addition to the DW Integrator role, when managing mail lists for email notifications, either the Team.Read or User.Read privilege is also required to display and add notification recipients from a list of current tenant members.
 
--   The configured email receiver must have enabled the settings "System Notifications" in the user profile settings \(see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
+-   The configured email receiver must have enabled the settings "System Notifications" in the user profile settings \(see [Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To edit your user settings, select your profile in the shell bar and select Settings. You can personalize various aspects of your user experience in SAP Datasphere, set data privacy settings, and authorize task scheduling consent.") :arrow_upper_right:\).
 
 
 

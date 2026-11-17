@@ -14,17 +14,15 @@ If you use a cloud storage provider as the source for your replication flow, you
 
 The following cloud storage providers can be used as the source of a replication flow:
 
--   Data lake Files from SAP HANA Cloud, data lake
+-   [SAP HANA Cloud, Data Lake Files Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/356e41e880e54255891b702d2afefeb3.html "Use an SAP HANA Cloud, Data Lake Files connection to access data from the Files component of a standalone SAP HANA Cloud, data lake.") :arrow_upper_right:
 
--   Amazon Simple Storage Service
+-   [Amazon Simple Storage Service Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/a7b660a0a4ef4a4fbee57b44f5b2147d.html "Use an Amazon Simple Storage Service connection to connect to and access data from objects in Amazon S3 buckets.") :arrow_upper_right:
 
--   Google Cloud Storage
+-   [Google Cloud Storage Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/aec242c29188408c9ebe1a3ab63ce28b.html "Use the connection to connect to and access objects from Google Cloud Storage.") :arrow_upper_right:
 
--   Microsoft Azure Data Lake Gen2
+-   [Microsoft Azure Data Lake Storage Gen2 Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/cd06b3c5ab5147c0905e3fa8abd13eb1.html "Use the connection to connect to and access objects in Microsoft Azure Data Lake Gen2 (ADL Gen2).") :arrow_upper_right:
 
--   Microsoft OneLake
-
-For more information about the corresponding connection types, see [Integrating Data via Connections](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/eb85e157ab654152bd68a8714036e463.html).
+-   [Microsoft OneLake Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/057fa4b51c734e679dd70eec9514839d.html "Use the connection to connect to and access objects in Microsoft OneLake.") :arrow_upper_right:
 
 
 
@@ -179,7 +177,7 @@ In addition, you can change the following **other properties** here:
 
 
 
-## Replicating Source Objects Without Primary Keys
+## Replicate Source Objects Without Primary Keys
 
 If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
 

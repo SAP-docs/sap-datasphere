@@ -25,7 +25,7 @@ You must consider the following:
 
 -   The file must have the extension `*.csv` and contain Unicode text only.
 
--   The file size must not exceed 25 MB.
+-   The file size must not exceed 250 MB. 
 
 
 
@@ -46,6 +46,9 @@ You must consider the following:
 1.  In the side navigation area, select <span class="FPA-icons-V3"></span> \(*Data Builder*\), select a space if necessary, and select *Import* \> *Import CSV File* to open the editor.
 
 2.  Click *Select Source File*, navigate to, and select the CSV file you want to upload.
+
+    > ### Note:  
+    > When loading a CSV file, you must remain on the upload page until the progress bar reaches 100% \(approximately 18 seconds\). Closing the browser, refreshing the page, or navigating away before the upload is complete may interrupt the transfer and cause the import to fail. Once the upload is complete, processing continues asynchronously on the server. This asynchronous approach allows the system to safely roll back changes if an issue occurs during data loading, helping ensure consistent and accurate results.
 
     > ### Caution:  
     > If you have a source connected via a FlowAgent or an SAP HANA smart data integration connector, you may consider the following while loading a CSV file: Values that cannot be converted to their assigned datatype, such as numeric fields with leading zeroes, will be considered invalid by the service and will be replaced by null. If you are creating a flow, this does not prevent you to run and deploy it.

@@ -590,15 +590,180 @@ ODP Data Sources \(SAPI or BW context\)
 
 
 
+<a name="loio3f70579c92434f4f88471bba2bd70893__changing_abap_source_systems"/>
+
+## Control Date and Other Data Type Conversions with Content Types
+
+When you replicate data from an ABAP-based source, the *Content Type* controls how the source data types are converted in the target table:
+
+-   *Native Type:* \[default\] Date and time columns are converted to strings, using the native length from the source.
+-   *Template Type:*The source data types are applied to the target table. Date and time columns keep their date and time data types.
+
+You can set the content type for all object columns in the replication flow and override the selection, if necessary, for individual columns.
+
+By specifying the correct content type for your data, you can ensure that it is replicated in your preferred format:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Data Type
+
+</th>
+<th valign="top">
+
+Native Type
+
+</th>
+<th valign="top">
+
+Template Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Date
+
+</td>
+<td valign="top">
+
+String \(length = native content length\)
+
+</td>
+<td valign="top">
+
+Date
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Time
+
+Time is not supported if your target is a local table \(file\).
+
+> ### Note:  
+> Time is not supported if your target is a local table \(file\). For more information, see [Unsupported Data Types in a Replication Flow](unsupported-data-types-in-a-replication-flow-6c770bb.md)
+
+
+
+</td>
+<td valign="top">
+
+String \(length = native content length\)
+
+</td>
+<td valign="top">
+
+Time
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+String \(length = native content length\)
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Timestamp
+
+</td>
+<td valign="top">
+
+Decimal \(precision = abapLength, scale = abapDecimals\)
+
+</td>
+<td valign="top">
+
+Timestamp
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Raw
+
+</td>
+<td valign="top">
+
+Binary
+
+</td>
+<td valign="top">
+
+String/Binary
+
+</td>
+</tr>
+</table>
+
+> ### Example:  
+> A date column in your source does not use the ISO format, and *Template Type* will cause the replication flow to fail because the target expects ISO values. Switching to *Native Type* will convert the column data to string and the replication flow can complete.
+
+> ### Restriction:  
+> -   Available only for replication flows created from wave 2025.04.
+> 
+> -   You must consider the impact on other replication flows that use the same source objects.
+> 
+> -   If you change a content type for any object that is replicating to an existing target table, you must ensure that the target table column data type is correctly configured to avoid a replication flow failure.
+> 
+> -   Changing the content type at the column level overrides any content type set at the replication flow level. The system warns you before this happens.
+
+To set the *Content Type*:
+
+1.  Open the replication flow in its editor.
+2.  Go to the properties panel, under *Settings*.
+3.  Set the *Content Type.*
+4.  \[optional\] If necessary, you can override the content type for one or more individual columns. To do this:
+    1.  Select the relevant object.
+    2.  In the properties panel, go to the *Source Schema Settings* section.
+    3.  Choose the options menu \(*...*\).
+    4.  Select *Configure Schema*.
+    5.  Set the *Content Type* for the relevant columns.
+
+5.  Review any target tables which may need to have column data types adjusted.
+
+    > ### Note:  
+    > You can change the content type at the flow or column level once the replication flow is running, but you must ensure that you also update the data types in any relevant target table columns or the replication flow run will fail.
+    > 
+    > In both cases, any existing projection is deleted.
+
+6.  Click *Deploy* to deploy your changes.
+
+    > ### Note:  
+    > Changes that are not deployed are not taken into account when transporting the replication flow to another tenant.
+
+
+
+
 <a name="loio3f70579c92434f4f88471bba2bd70893__section_no_primary_keys"/>
 
 ## Replicate Source Objects Without Primary Keys
 
-Under certain conditions, you can use source objects that do not have a primary key as the source for a replication flow. This applies to the following source object types:
+Under certain conditions, you can use source objects that do not have a primary key:
 
--   CDS views with load type *Initial Only*, replicating an SAP Datasphere file space
--   ODP objects with a load type of Initial Only replicating to an SAP Datasphere file space.
--   ODP objects with a load type of Initial and Delta replication to SAP Datasphere standard space.
+-   CDS views with load type of *Initial Only* replicating to an SAP Datasphere file space.
+-   ODP objects with a load type of *Initial Only* replicating to an SAP Datasphere file space.
+-   ODP objects with a load type of *Initial and Delta* replicating to an SAP Datasphere standard space.
 
 If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
 
@@ -608,7 +773,7 @@ If a source object does not have a primary key, you can still use it in a replic
 
 The columns you select as the primary key must contain unique, non-null values. Incorrect settings result in data inconsistency.
 
-Existing tables can be used as targets if they have a `__load_package_id` column \(as explained below\). Local tables can only be used as targets if delta capturing is not enabled.
+Existing tables can be used as targets if they have a `__load_package_id` column. Local tables can only be used as targets if delta capturing is not enabled.
 
 
 

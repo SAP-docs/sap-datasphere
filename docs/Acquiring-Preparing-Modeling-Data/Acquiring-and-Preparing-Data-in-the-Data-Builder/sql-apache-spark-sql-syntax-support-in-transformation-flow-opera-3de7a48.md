@@ -35,14 +35,12 @@ Statements
 </td>
 <td valign="top">
 
-SELECT queries and CTEs \(Common Table Expressions\)
+SELECT queries only
 
 </td>
 <td valign="top">
 
-Top-level statement can be a SELECT query or a CTE WITH clauses with one or more CTEs \(no DDL/DML\).
-
-Supports chained CTEs, CTE references, and CTEs defined inside subqueries.
+Top-level statement must always be a SELECT query \(no DDL/DML\)
 
 </td>
 </tr>

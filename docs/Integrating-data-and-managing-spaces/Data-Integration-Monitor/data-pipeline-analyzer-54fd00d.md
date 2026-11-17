@@ -117,6 +117,8 @@ Impact
 
 Enable/disable the display of the impacts of the analyzed object.
 
+It's unavailable for the *Data Pipeline Analyzer* and therefore can't be enabled.
+
 </td>
 </tr>
 <tr>

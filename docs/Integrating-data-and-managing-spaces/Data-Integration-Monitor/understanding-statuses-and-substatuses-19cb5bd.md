@@ -50,7 +50,7 @@ This task run was canceled, after it had started. In this case, the data was rol
 </td>
 <td valign="top">
 
-The authorization that allows SAP to run task chains or schedule data integration tasks on your behalf has expired. Select the option provided to renew your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
+The authorization that allows SAP to run task chains or schedule data integration tasks on your behalf has expired. Select the option provided to renew your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To edit your user settings, select your profile in the shell bar and select Settings. You can personalize various aspects of your user experience in SAP Datasphere, set data privacy settings, and authorize task scheduling consent.") :arrow_upper_right:\).
 
 </td>
 </tr>
@@ -74,7 +74,7 @@ This task or task chain could not be executed, typically due to a change in the 
 </td>
 <td valign="top">
 
-You have not authorized SAP to run task chains or schedule data integration tasks on your behalf. Select the option provided to give your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To view and edit your user profile settings, click your user icon in the shell bar and select Settings. You can control various aspects of the user experience of SAP Datasphere and set data privacy and task scheduling consent options.") :arrow_upper_right:\).
+You have not authorized SAP to run task chains or schedule data integration tasks on your behalf. Select the option provided to give your consent \([Changing SAP Datasphere Settings](https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/1084796d09464e78870f32cab8584dfc.html "To edit your user settings, select your profile in the shell bar and select Settings. You can personalize various aspects of your user experience in SAP Datasphere, set data privacy settings, and authorize task scheduling consent.") :arrow_upper_right:\).
 
 </td>
 </tr>

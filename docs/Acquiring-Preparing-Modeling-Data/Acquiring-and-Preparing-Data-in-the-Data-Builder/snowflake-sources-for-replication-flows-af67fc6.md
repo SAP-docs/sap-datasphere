@@ -8,7 +8,7 @@ You can use Snowflake as a source connection in replication flows to replicate d
 
 ## Prerequisites
 
--   Make sure you have created a Snowflake connection in Connection Management and that it is available in your space. For more information, see [Snowflake Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d9ead8bb44ac456d99a141b4e3f5e973.html "Use the connection to connect to and access data from a Snowflake database.") :arrow_upper_right:
+-   Make sure you have created a Snowflake connection in Connection Management and that it is available in your space. For more information, see, [Snowflake Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/d9ead8bb44ac456d99a141b4e3f5e973.html "Use the connection to connect to and access data from a Snowflake database.") :arrow_upper_right:
 -   Only standard tables with primary keys and hybrid tables are supported \(Views are not supported\). Ensure that the defined primary keys comply with Snowflake constraints to avoid replication flow failures. For more information, refer to the Snowflake documentation.
 -   GCP regional endpoints are not supported.
 -   Only the *Initial Only* load type is supported. *Initial and Delta* and *Delta Only* load types are not supported.

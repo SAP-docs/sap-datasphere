@@ -143,17 +143,36 @@ See [Reviewing Task Logs](../reviewing-task-logs-399e52f.md)
 </td>
 <td valign="top">
 
-To monitor task logs, you must have a global role that grants you the following privileges:
+To monitor task logs, you must have either:
+
+
+<table>
+<tr>
+<td valign="top">
+
+A global role that allows you to monitor logs for any space, by granting you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Task Logs* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges.
 
-> ### Note:  
-> To monitor task logs, you can alternatively have a scoped role that grants you access to a space with the following privileges: *Data Warehouse General* \(`-R------`\); *Data Warehouse Data Integration* \(`-R------`\) to view data integration task logs in the *Task Logs* app; *Data Warehouse Data Integration* \(`--U-----`\) to cancel a task run. The *DW Integrator* role template, for example, grants these privileges.
+</td>
+<td valign="top">
 
+A scoped role that grants you access to a space with the following privileges:
 
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Task Logs* app.
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To cancel a task run.
+
+The *DW Integrator* role template, for example, grants these privileges.
+
+</td>
+</tr>
+</table>
+
+For more information, see [Privileges and Permissions](privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](standard-roles-delivered-with-sap-datasphere-a50a51d.md).
 
 </td>
 </tr>
@@ -478,7 +497,7 @@ The *Catalog Administrator* global role and the *DW Viewer* role template \(used
 
 Connect, manage and monitor Catalog source systems
 
-See [Connecting Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Source systems are connected to the catalog automatically through an SAP Business Data Cloud formation or manually through SAP Datasphere or the SAP Business Data Cloud cockpit on the Metadata Extractions page. After connection, the catalog monitors these systems and extracts metadata for their objects. This process makes the objects discoverable in the catalog.") :arrow_upper_right: and [Managing and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0bdc7d3a6bcb44a09245cb21360d9775.html "As a user with the catalog administrator role, you can manage and monitor data sources that are connected to the catalog. You can ensure that the catalog contains the most up-to-date content and troubleshoot any issues that arise.") :arrow_upper_right:
+See [Connecting Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0b5de87f256f466f95b46d4bcaa52640.html "Source systems are connected to the catalog automatically through an SAP Business Data Cloud formation or manually through SAP Datasphere or the SAP Business Data Cloud cockpit on the Metadata Extractions page. Once connected, the catalog monitors these systems and extracts metadata for their objects, making them discoverable in the catalog.") :arrow_upper_right: and [Managing and Monitoring Source Systems](https://help.sap.com/viewer/aca3ccb4b2f84eb8b6154e8fd2812c0e/cloud/en-US/0bdc7d3a6bcb44a09245cb21360d9775.html "As a user with the catalog administrator role, you can manage and monitor data sources that are connected to the catalog. You can ensure that the catalog contains the most up-to-date content and troubleshoot any issues that arise.") :arrow_upper_right:
 
 </td>
 <td valign="top">

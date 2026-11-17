@@ -8,7 +8,7 @@ You can use MySQL connections as sources in replication flows to replicate data 
 
 ## Prerequisites
 
--   You have created a MySQL connection in Connection Management and it is available in your space.
+-   Make sure you have created a MySQL connection in Connection Management and that it is available in your space. For more information, see [MySQL Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/520a2601fd7a45f084e5ed1d30c6ebfa.html "Use the connection to connect to and access tables from a MySQL database.") :arrow_upper_right:
 -   Only tables that contain a primary key are supported as replication sources.
 -   Only the Initial Only load type is supported. Initial and Delta and Delta Only load types are not supported.
 

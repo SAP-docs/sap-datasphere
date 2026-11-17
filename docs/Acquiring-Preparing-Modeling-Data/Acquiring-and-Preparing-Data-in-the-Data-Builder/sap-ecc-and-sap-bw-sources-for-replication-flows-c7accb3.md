@@ -10,6 +10,10 @@ You can replicate data from SAP ECC and SAP BW systems using the ODP 2.0 framewo
 
 ## Prerequisites
 
+-   Make sure you have created a SAP ECC and BW connection in your space. For more information, see:
+    -   [SAP ECC Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e546ccd61af54bf49a0f531a43fe0961.html "Use an SAP ECC connection to access data from SAP ERP Central Component (SAP ECC) systems (on-premise).") :arrow_upper_right:
+    -   [SAP BW Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/e589041e80264f43b6c209c407336376.html "Use an SAP BW connection to access data from SAP Business Warehouse (SAP BW) or SAP BW∕4HANA systems.") :arrow_upper_right:
+
 -   Replication objects support the *Initial Only*, *Initial and Delta*, and *Delta Only load types*.
 -   ODP datasets without a primary key are supported if you configure the primary key manually. To do so:
     -   Select the relevant object.
@@ -95,22 +99,14 @@ Content Type
 </td>
 <td valign="top">
 
-\[only relevant for ABAP-based source systems\]. Select the best content type to use when loading data from an ABAP-based system. 
+\[only relevant for ABAP-based source systems\] Select a content type to control how date and other data types are converted in the target table. 
 
 You can choose between 2 content types:
 
 -   *Template Type*: The data types used in the source table are applied to the target table. *DATE* and *TIME* columns keep their corresponding date and time data types.
 -   *Native Type* \(default\): Different data types are applied to the target table based on the source metadata. *DATE* and *TIME* columns are represented as *string* using the native length provided by the source metadata.
 
-> ### Example:  
-> Your source table contains a date column that doesn't have values in ISO format. If you select the content type *Template Type* your replication flow run will fail with an error because the target table will expect data in ISO format. You'd better select the *Native Type* to run the replication flow, so that the data type will be turned into string.
-
-> ### Note:  
-> This option is available only for replication flows created from wave 2025.04.It's best to use it for new targets, or for existing targets but only if you are certain about the existing column data types in the target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
-> 
-> -   You can modify the content type later but with some restrictions. As the content type selection is at replication flow level, changing it will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow. For more information, see [Modify Replication Flow Object Schemas and Settings](modify-replication-flow-object-schemas-and-settings-a24c71f.md).
-
-
+For more information, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md).
 
 </td>
 </tr>
@@ -118,7 +114,15 @@ You can choose between 2 content types:
 
 
 
-## Replicating Source Objects Without Primary Keys
+## Choose the Content Type
+
+When working with SAP ECC and SAP BW sources, you can set the content type to control how source data types are applied to the target table. You can set it at the replication flow level, where it applies to all columns as the default, or at the column level, where it overrides the replication flow level setting for the columns you select.
+
+For more information about the available content types and how to set or change them, see [SAP S/4HANA and Other ABAP Sources for Replication Flows](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md).
+
+
+
+## Replicate Source Objects Without Primary Keys
 
 If a source object does not have a primary key, you can still use it in a replication flow by configuring the primary key columns manually. The target table requires a primary key, so you must define which columns serve as the key before you deploy the replication flow. To configure the primary key columns:
 

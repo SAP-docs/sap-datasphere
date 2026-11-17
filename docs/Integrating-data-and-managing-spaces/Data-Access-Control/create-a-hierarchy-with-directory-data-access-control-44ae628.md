@@ -316,7 +316,7 @@ Based on these three records `bob` will have access to records which meet the fo
     
     \[read-only\] Displays the deployment and error status of the object.
 
-    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    For more information, see [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "Save objects to the SAP Datasphere design-time repository, and then deploy your changes to the runtime.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -558,7 +558,7 @@ Based on these three records `bob` will have access to records which meet the fo
     
     Save your changes to the design-time repository. You can use *Save As* to create a copy of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "Save objects to the SAP Datasphere design-time repository, and then deploy your changes to the runtime.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -572,7 +572,7 @@ Based on these three records `bob` will have access to records which meet the fo
     
     Deploy your changes to make them available in the run-time environment. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "Save objects to the SAP Datasphere design-time repository, and then deploy your changes to the runtime.") :arrow_upper_right:.
     
     </td>
     </tr>
@@ -614,7 +614,7 @@ Based on these three records `bob` will have access to records which meet the fo
     
     \[read-only\] Displays the status of the object. 
 
-    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "") :arrow_upper_right:.
+    See [Saving and Deploying Objects](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/7c0b560e2cb94eea86219d78d87f9623.html "Save objects to the SAP Datasphere design-time repository, and then deploy your changes to the runtime.") :arrow_upper_right:.
     
     </td>
     </tr>

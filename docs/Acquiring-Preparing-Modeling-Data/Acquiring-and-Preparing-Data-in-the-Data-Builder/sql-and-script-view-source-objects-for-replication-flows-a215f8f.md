@@ -75,7 +75,7 @@ SAP HANA SQL Data Type
 </th>
 <th valign="top">
 
-Internal Data Type
+SAP Datasphere
 
 </th>
 </tr>
@@ -112,18 +112,6 @@ BOOLEAN
 <td valign="top">
 
 bool
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-CLOB, NCLOB
-
-</td>
-<td valign="top">
-
-string
 
 </td>
 </tr>

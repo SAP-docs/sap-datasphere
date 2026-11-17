@@ -121,7 +121,7 @@ You can allocate specific amounts of memory and disk storage to a space or disab
     Enable access to the SAP HANA Cloud data lake. Only one space can connect to the data lake.
 
     > ### Note:  
-    > Even though the option is available for selection, you should check first that no other space already has access to the data lake. To do so, you can choose the table layout in the *Space Management* overview page and sort on the *Data Lake Access* column.
+    > Even though the option is available for selection, you should check first that no other space already has access to the data lake.
 
     Default: Disabled
     

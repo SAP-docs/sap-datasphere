@@ -8,6 +8,7 @@ This topic contains the following sections:
 
 -   [Introduction to Data Protection and Privacy](modeling-with-personal-data-fd0d4e6.md#loiofd0d4e63b73c4b8bb2efbd2399a9f9b9__section_intro)
 -   [Identify Objects Containing Personal Data](modeling-with-personal-data-fd0d4e6.md#loiofd0d4e63b73c4b8bb2efbd2399a9f9b9__section_tagging)
+-   [Audit Access to Sensitive Personal Data](modeling-with-personal-data-fd0d4e6.md#loiofd0d4e63b73c4b8bb2efbd2399a9f9b9__section_audit_access)
 
 
 
@@ -65,4 +66,19 @@ The *Personal Data* icon is also displayed on column headers in the data viewer 
 
 -   [Viewing Object Data](viewing-object-data-b338e4a.md)
 -   [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)
+
+
+
+<a name="loiofd0d4e63b73c4b8bb2efbd2399a9f9b9__section_audit_access"/>
+
+## Audit Access to Sensitive Personal Data
+
+You can audit when users access objects containing sensitive personal data.
+
+> ### Note:  
+> -   Access to sensitive personal data is not audited when the data is stored in local tables \(files\) or remote tables.
+> -   Access to sensitive personal data is not propagated through data, replication, and transformation flows into target tables.
+> -   Queries that read from in-memory caches, including persisted views and SAP HANA Multi-Dimensional Services \(MDS\), are not subject to auditing.
+
+For more information, see [Monitor Read and Change Actions with Audit Logs](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/110404abd2d044008102c871b39fdf65.html "Monitor the read and change actions (policies) performed in the database with audit logs, and see who did what and when.") :arrow_upper_right:.
 

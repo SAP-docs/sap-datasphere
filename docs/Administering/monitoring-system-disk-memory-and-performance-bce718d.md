@@ -381,14 +381,35 @@ To investigate issues:
     </td>
     <td valign="top">
     
-    Schemas in which out-of-memory errors have occurred in the last 7 days because the statement limits have been exceeded. Set the statement limits for spaces, see [Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
+    Schemas in which out-of-memory errors have occurred in the last 7 days because the statement limits have been exceeded. To set the statement limits for spaces and or groups, see [Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Top 5 Spaces / Workload Groups by Peak Memory Consumption*
+    
+    </td>
+    <td valign="top">
+    
+    Top 5 spaces or groups with the highest peak memory consumption. Choose the information icon next to an entry to view detailed workload statistics.
+
+    To set statement limits for spaces or groups, see [Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md).
+
+    > ### Note:  
+    > The card uses the SAP HANA system view M\_WORKLOAD\_CLASS\_STATISTICS \(see [M\_WORKLOAD\_CLASS\_STATISTICS System View](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-sql-reference-guide/m-workload-class-statistics-system-view)\).
+
+
     
     </td>
     </tr>
     </table>
     
-2.  Click *View Logs* in a card to go to the *Statement Logs* to see information filtered on the card criteria. See [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md).
-3.  Click the links in the *Statement Details* column for further details.
+2.  Depending on the cards, you can do the following:
+    -   In the cards with a *View Logs* link, click it to go to the *Statement Logs*, which displays information filtered on the card criteria \(see [Reviewing Expensive Statement Logs](reviewing-expensive-statement-logs-4f18e74.md)\). Then click the links in the *Statement Details* column for further details.
+    -   In the *Top 5 Spaces / Workload Groups by Peak Memory Consumption* card, if you identify statistics such as a high number of rejected statements or a high CPU time, you can adjust the statement limits for a particular space or group \([Set Priorities and Statement Limits for Spaces or Groups](Creating-Spaces-and-Allocating-Storage/set-priorities-and-statement-limits-for-spaces-or-groups-d66ac1e.md)\).
+
 
 
 

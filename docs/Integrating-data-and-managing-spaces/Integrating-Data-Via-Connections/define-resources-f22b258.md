@@ -57,12 +57,11 @@ There are two ways to define resources for a custom connection type:
     -   By copying and pasting a JSON schema in the *JSON* view.
 
     > ### Caution:  
-    > For schema attributes, you must only use:
+    > When defining schema attributes, follow these rules:
     > 
-    > -   data types that are supported by local tables \(file\) \(see [Data Types Supported By Local Tables (File)](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/2f39104e5bd847919b8daee1580c4f68.html "Review the list of data types supported by file tables and the partitioning of such tables.") :arrow_upper_right: and [SAP Datasphere Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/12c45eb2659f4069b29ef4d69bdd9070.html "If you use the local repository (SAP Datasphere) as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right: for information about unsupported data types\)
-    > -   characters that are supported in target column names of local tables \(file\) \([SAP Datasphere Targets for Replication Flows](https://help.sap.com/viewer/c8a54ee704e94e15926551293243fd1d/cloud/en-US/12c45eb2659f4069b29ef4d69bdd9070.html "If you use the local repository (SAP Datasphere) as the target for your replication flow, you need to consider additional specifics and conditions.") :arrow_upper_right:\)
+    > -   **Attribute types**: Use only the types listed in [Supported Schema Attribute Types](supported-schema-attribute-types-a80de58.md). Using an unsupported type causes the replication flow to fail.
     > 
-    > If you use unsupported characters in column names or unsupported data types, this will result in auto-projection and cause the replication flow to fail.
+    > -   **Attribute names**: Use only alphanumeric characters, forward slashes \(`/`\), and underscores \(`_`\). Names cannot start with an underscore. If a name contains other characters or spaces, the system automatically replaces them with underscores and adds the prefix `AUTOPREFIX_` to the column name.
 
 8.  When adding schema attributes manually, select the type of the attribute \(string, Boolean, object, number or integer\), set it as an array if necessary, and enter a name for the attribute. Optionally, you can add a display name and a description.
 
@@ -75,7 +74,7 @@ There are two ways to define resources for a custom connection type:
 
         -   Date: ensures the value is in date format, based on ISO 8601 standards.
 
-        -   Date-Time: ensures the value is in a timestamp format that includes a date and time, based on ISO 8601 standards.
+        -   Date-Time: ensures the value is in a date and time format, based on ISO 8601 standards.
 
         -   Email: ensures the data is formatted as a valid email address.
 

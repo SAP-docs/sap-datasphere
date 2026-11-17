@@ -8,7 +8,8 @@ You can use Oracle as a source connection in replication flows to replicate data
 
 ## Prerequisites
 
--   You have created an Oracle connection in Connection Management and it is available in your space.
+-   Make sure you have created a Oracle connection in **Connection Management** and that it is available in your space. For more information, see [Oracle Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/c73ae0601d364f47830d339b6e86b7e8.html "Use the connection to connect to and access data from an Oracle database (on-premise).") :arrow_upper_right:
+
 -   The following Oracle versions are supported: Oracle 12c, Oracle 18c, and Oracle 19c.
 -   Only tables with primary keys are supported as replication sources.
 -   Initial Only, Initial and Delta, and Delta Only load types are supported.

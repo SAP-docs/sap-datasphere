@@ -8,6 +8,7 @@ If you use Google BigQuery as the target for your replication flow, you need to 
 
 ## Prerequisites
 
+-   Make sure you have created a Google BigQuery connection in Connection Management and that it is available in your space. For more information, see [Google BigQuery Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/30ed77de13864368bdc596099b37ed70.html "Use the connection to connect to and access data from Google BigQuery.") :arrow_upper_right:
 -   You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).
 
     Consider also the following SAP Note content [3297105](https://me.sap.com/notes/3297105).

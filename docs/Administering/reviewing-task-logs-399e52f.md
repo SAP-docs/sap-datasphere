@@ -10,15 +10,36 @@ Monitor task execution history including start time, duration, resource usage, s
 
 ## Prerequisites
 
-To monitor task logs, you must have a global role that grants you the following privileges:
+To monitor task logs, you must have either:
+
+
+<table>
+<tr>
+<td valign="top">
+
+A global role that allows you to monitor logs for any space, by granting you the following privileges:
 
 -   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
 -   *System Information* \(`-RU-----`\) - To access *Task Logs* in the *Monitoring* app.
 
-The *DW Administrator* role template, for example, grants these privileges. For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md).
+The *DW Administrator* role template, for example, grants these privileges.
 
-> ### Note:  
-> To monitor task logs, you can alternatively have a scoped role that grants you access to a space with the following privileges: *Data Warehouse General* \(`-R------`\); *Data Warehouse Data Integration* \(`-R------`\) to view data integration task logs in the *Task Logs* app; *Data Warehouse Data Integration* \(`--U-----`\) to cancel a task run. The *DW Integrator* role template, for example, grants these privileges.
+</td>
+<td valign="top">
+
+A scoped role that grants you access to a space with the following privileges:
+
+-   *Data Warehouse General* \(`-R------`\) - To access SAP Datasphere.
+-   *Data Warehouse Data Integration* \(`-R------`\) - To view data integration task logs in the *Task Logs* app.
+-   *Data Warehouse Data Integration* \(`--U-----`\) - To cancel a task run.
+
+The *DW Integrator* role template, for example, grants these privileges.
+
+</td>
+</tr>
+</table>
+
+For more information, see [Privileges and Permissions](Managing-Users-and-Roles/privileges-and-permissions-d7350c6.md) and [Standard Roles Delivered with SAP Datasphere](Managing-Users-and-Roles/standard-roles-delivered-with-sap-datasphere-a50a51d.md). 
 
 
 
@@ -111,6 +132,8 @@ Name of the space in which the task is run.
 <td valign="top">
 
 Either SAP HANA Database \(Disk and In-Memory\) or SAP HANA Data Lake Files.
+
+Selecting a space storage type filters task log columns. Only columns relevant to the selected space storage type are shown.
 
 </td>
 </tr>

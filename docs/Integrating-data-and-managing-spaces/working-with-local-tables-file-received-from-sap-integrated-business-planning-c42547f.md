@@ -33,7 +33,7 @@ For more information, see [Integrating Data From SAP Integrated Business Plannin
 As these tables are imported from another system, there are some restrictions on working with them:
 
 -   You cannot change the properties of the local tables \(file\) generated from SAP IBP.
--   Delta capture is OFF or ON, and you can't change it. If it's OFF, it won't track the delta capture changes, but it will keep historical snapshot versions.
+-   Delta capture can be either OFF or ON, and its status cannot be changed in SAP Datasphere. If Delta Capture is OFF, delta changes are not tracked; however, historical snapshot versions are still retained. In SAP Integrated Business Planning \(IBP\), Delta Capture can be changed from OFF to ON, but not from ON to OFF.
 -   Restoring to a previous version is not possible. You can only display a previous version.
 -   If partitions have been defined on the SAP IBP side at table creation, you can see them \(but you can't change them or create new ones\).
 

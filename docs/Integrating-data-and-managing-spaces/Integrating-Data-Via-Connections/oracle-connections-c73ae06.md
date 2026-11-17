@@ -507,6 +507,10 @@ Before you can use the connection for replication flows, the following is requir
     </tr>
     </table>
     
+-   Connections through load balancers are not supported.
+
+-   Oracle SCAN listeners \(Single Client Access Name listeners\) are not supported.
+
 
 
 

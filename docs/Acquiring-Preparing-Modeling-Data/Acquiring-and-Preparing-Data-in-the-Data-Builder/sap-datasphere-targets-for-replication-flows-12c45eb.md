@@ -225,18 +225,6 @@ BIGINT
 <tr>
 <td valign="top">
 
-string
-
-</td>
-<td valign="top">
-
-NCLOB
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 string\(n\), 1<=n<=5000
 
 </td>

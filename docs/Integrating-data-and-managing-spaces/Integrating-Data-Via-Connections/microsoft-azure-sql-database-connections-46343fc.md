@@ -378,7 +378,7 @@ Before you can use the connection for replication flows, the following is requir
     CREATE SCHEMA <ds_rep_user> AUTHORIZATION <ds_rep_user>;
     ```
 
--   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+-   If you want to prevent your data from being routed publicly through the internet, you can use a dedicated Cloud Connector instance in the customer virtual private network \(VPN\) as a TLS tunnel between the VPN and SAP Datasphere to privately route the data.
 
     When configuring Cloud Connector, ensure you create the system mapping with the following settings:
 

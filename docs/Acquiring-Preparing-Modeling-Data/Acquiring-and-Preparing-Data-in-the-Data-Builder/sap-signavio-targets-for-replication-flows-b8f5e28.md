@@ -12,9 +12,11 @@ If you use SAP Signavio as the target for your replication flow, you need to con
 
 ## General Information
 
-The target container is created automatically and called <datasphere space ID\>/<Technical name of the replication flow\>.
+-   Make sure you have created a Signavio connection in Connection Management and that it is available in your space. For more information, see [SAP Signavio Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/4c367de075a44ad7b7a6db576a4a9c82.html "Use the connection to securely integrate SAP systems such as SAP S/4HANA on-premise with SAP Signavio using replication flows for efficient and scalable data replication to SAP Signavio Process Intelligence.") :arrow_upper_right:
+-   The target container is created automatically and called <datasphere space ID\>/<Technical name of the replication flow\>.
 
-The default load type is *Initial Only*. You can change it to *Initial and Delta* \(with a default time interval of 24 hours\). Note that *Delta Only* is not supported.
+-   The default load type is *Initial Only*. You can change it to *Initial and Delta* \(with a default time interval of 24 hours\). Note that *Delta Only* is not supported.
+
 
 
 

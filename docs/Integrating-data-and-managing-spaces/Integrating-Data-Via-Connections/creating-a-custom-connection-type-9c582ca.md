@@ -77,6 +77,9 @@ For an external REST API to be compatible with a custom connection type, the fol
 -   **Response format**: All API responses must return JSON. Non-JSON formats such as XML, CSV, and binary are not supported.
 -   **Records locators**: The response must contain records in a predictable, consistent location that can be expressed as a path \(for example, `$.orders` or `$.results`\). This location must be of type object array. This is the records locator you specify when defining an action. If records are scattered or structured inconsistently across responses, the API cannot be consumed.
 -   **Response schema**: The response structure must be consistent and expressible as a schema. APIs with fully dynamic response schemas where the structure changes per response are not supported.
+
+    For a full list of supported schema attribute types and their corresponding target column types, see [Supported Schema Attribute Types](supported-schema-attribute-types-a80de58.md).
+
 -   **Pagination**: The API must use one of the supported pagination methods: Page, Offset, Next URL, or Cursor. APIs without pagination or with proprietary pagination mechanisms are not supported.
 -   **Entity keys**: SAP Datasphere uses object-relational mapping during action definition to derive flat entities from the \(potentially\) nested response schema. During object relational mapping, you set key attributes to establish primary keys and parent-child relationships between entities. Each nested object array within the records locator object array in the response schema that you intend to map to an entity must contain at least one attribute that uniquely identifies its elements.
 

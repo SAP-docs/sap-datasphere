@@ -14,6 +14,7 @@ This topic contains the following sections:
 -   [Language and Text Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_language_text)
 -   [Image URL Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_image_url)
 -   [Geolocation Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_geo)
+-   [Responsible User Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_responsible)
 -   [Fiscal Time Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_fiscal)
 -   [Business Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_business_date)
 -   [Calendar and System Date Attributes](specify-semantic-types-for-measures-and-attributes-f7272c0.md#loiof7272c0e8be34ce782d04304580c0243__section_calendar_date)
@@ -290,6 +291,47 @@ A readable name for a city or other geographical point.
 
 > ### Note:  
 > Not supported in SAP Analytics Cloud.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loiof7272c0e8be34ce782d04304580c0243__section_responsible"/>
+
+## Responsible User Attributes
+
+This type identifies the user responsible for maintaining a dimension member or other record:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Name
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Responsible
+
+</td>
+<td valign="top">
+
+The user ID of the user responsible for the record.
+
+> ### Note:  
+> This type is typically used for assigning users as responsible for dimension members in SAP Analytics Cloud planning models. For more information, see [About Dimensions and Measures](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/60ecbe219c894261bbf205892e3913d0.html) in the *SAP Analytics Cloud* documentation.
 
 
 

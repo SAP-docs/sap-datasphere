@@ -91,6 +91,10 @@ You can use the connection to add source objects to a data flow \(see [Creating 
 
 Before you can use the connection for replication flows, the following is required:
 
+-   You need access to two endpoints:
+    -   the Google BigQuery REST API endpoint \(public endpoint address:[bigquery.googleapis.com](http://bigquery.googleapis.com/), private endpoint address depending on configuration in Google Cloud\)
+    -   and the Google BigQuery Storage API endpoint \(public endpoint address: [bigquerystorage.googleapis.com](http://bigquerystorage.googleapis.com/), private endpoint address depending on configuration in Google Cloud\)
+
 -   A DW administrator has uploaded the required ODBC driver file to SAP Datasphere.
 
     For more information, see [Upload Third-Party ODBC Drivers (Required for Data Flows)](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/b9b5579054df48c39381d5b17286bf21.html "To enable access to a non-SAP database via ODBC to use it as a source for data flows, you need to upload the required ODBC driver files to SAP Datasphere.") :arrow_upper_right:.
@@ -101,8 +105,7 @@ Before you can use the connection for replication flows, the following is requir
 
     For more information, see [Configuring Workload Identity Federation for Google BigQuery Connections](configuring-workload-identity-federation-for-google-bigquery-connections-7962a49.md).
 
--   You need access to both the Google BigQuery REST API endpoint \([bigquery.googleapis.com](http://bigquery.googleapis.com/)\) and the Google BigQuery Storage API endpoint \([bigquerystorage.googleapis.com](http://bigquerystorage.googleapis.com/)\).
--   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data. In this case, two service endpoints and their corresponding Cloud Connector system mappings are required:
+-   If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data. Two service endpoints and their corresponding Cloud Connector system mappings are required:
 
     -   REST API endpoint \(via HTTPS protocol\) - used for retrieving metadata from Google BigQuery
     -   Storage API endpoint \(via TCP protocol\) - used for writing data into the Google BigQuery target table

@@ -134,7 +134,6 @@
             -   [Create a Graphical View in a Transformation Flow on File](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-a-graphical-view-in-a-transformation-flow-on-file-6eb9640.md)
             -   [Create a SQL View in a Transformation Flow on File](Acquiring-and-Preparing-Data-in-the-Data-Builder/create-a-sql-view-in-a-transformation-flow-on-file-06c4e72.md)
                 -   [SQL \(Apache Spark SQL\) Syntax Support in Transformation Flow Operators](Acquiring-and-Preparing-Data-in-the-Data-Builder/sql-apache-spark-sql-syntax-support-in-transformation-flow-opera-3de7a48.md)
-                -   [Generate SQL Code with AI in a File Space](Acquiring-and-Preparing-Data-in-the-Data-Builder/generate-sql-code-with-ai-in-a-file-space-15452a7.md)
             -   [Converting Local Table Data Types from a HANA Space to a File Space](Acquiring-and-Preparing-Data-in-the-Data-Builder/converting-local-table-data-types-from-a-hana-space-to-a-file-sp-aac37d0.md)
             -   [List of Functions Supported by a Transformation Flow \(in a File Space\)](Acquiring-and-Preparing-Data-in-the-Data-Builder/list-of-functions-supported-by-a-transformation-flow-in-a-file-s-37e737f.md)
             -   [Creating a Flatten Operator](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-flatten-operator-34f48fa.md)

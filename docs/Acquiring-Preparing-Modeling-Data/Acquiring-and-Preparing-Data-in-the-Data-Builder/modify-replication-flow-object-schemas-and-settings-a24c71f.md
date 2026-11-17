@@ -183,25 +183,26 @@ You can change the load type of replication objects in a running replication flo
 
 <a name="loioa24c71f3ba7548909534d4cb52cefbfc__section_pn3_1xf_xdc"/>
 
-## Changing the Content Type \(ABAP-Based Source Systems Only\)
+## Changing ABAP Systems Content Type
 
-When working with ABAP-based source systems, you can switch between *Template Type* and *Native* \(See [Creating a Replication Flow](creating-a-replication-flow-25e2bd7.md)\).
+The content type determines how source data types are applied to the target table. You can choose between two content types: *Template Type*, where the source data types are applied to the target \(date and time columns keep their date and time data types\), and *Native Type* \(default\), where data types are applied based on the source metadata \(date and time columns are converted to string\).
 
-> ### Restriction:  
-> -   You can't change the content type for replication flows created before wave 2025.04.
-> -   You must consider the impact on other replication flows that use the same source objects.
-> -   You must be certain about the existing column data types in the existing target. Otherwise, the replication flow deployment or run will fail due to a column data type mismatch between the source and target.
-> -   Changing the content type selection will affect the source column data types \(date, time, and timestamp\) for all existing replication objects in the replication flow.
+You can set the content type at two levels:
+
+-   At the replication flow level, it applies to all columns as the default.
+-   At the column level, you set it for individual columns, and a column-level content type overrides the replication flow level setting for those columns, while all other columns keep the default.
+
+To change the content type:
 
 1.  Open the replication flow in its editor.
-2.  Change the content type.
+2.  Change the content type at the replication flow level or at the column level. The following table shows how each data type is converted between Native Type and Template Type:
 
 
     <table>
     <tr>
     <th valign="top">
 
-    Data Types
+    Data Type
     
     </th>
     <th valign="top">
@@ -238,7 +239,7 @@ When working with ABAP-based source systems, you can switch between *Template Ty
     Time
 
     > ### Note:  
-    > Time is not supported if your target is a local table \(file\). See [Unsupported Data Types in a Replication Flow](unsupported-data-types-in-a-replication-flow-6c770bb.md)
+    > Time is not supported if your target is a local table \(file\). For more information, see Unsupported Data Types in a Replication Flow.
 
 
     
@@ -279,7 +280,7 @@ When working with ABAP-based source systems, you can switch between *Template Ty
     </td>
     <td valign="top">
     
-    Decimal \(Precision = abapLength, scale = abapDecimals\)
+    Decimal \(precision = abapLength, scale = abapDecimals\)
     
     </td>
     <td valign="top">
@@ -301,14 +302,14 @@ When working with ABAP-based source systems, you can switch between *Template Ty
     </td>
     <td valign="top">
     
-    String
+    String/Binary
     
     </td>
     </tr>
     </table>
     
     > ### Note:  
-    > If you change the content type from *Template* to *Native* and the existing target table already contains a column of type timestamp while the corresponding source column contains a native content type of decimal, then the source column will be treated as timestamp: The *Native* configuration reuses the schema of the existing target table, and the target column's data type takes precedence over the source column's original type. This keeps the target table schema consistent and avoids a type mismatch.
+    > If you change the content type from Template to Native and the existing target table already contains a column of type timestamp while the corresponding source column contains a native content type of decimal, then the source column is treated as timestamp. The Native configuration reuses the schema of the existing target table, and the target column's data type takes precedence over the source column's original type. This keeps the target table schema consistent and avoids a type mismatch.
 
 3.  Review any required data type conversions.
 4.  Click *Deploy* to deploy your changes.
@@ -317,5 +318,5 @@ When working with ABAP-based source systems, you can switch between *Template Ty
     > Changes that are not deployed are not taken into account when transporting the replication flow to another tenant.
 
 
-When changing the content type, you must convert some data types to ensure that they are supported by the selected content type:
+For more information, see [Control Date and Other Data Type Conversions with Content Types](sap-s-4hana-and-other-abap-sources-for-replication-flows-3f70579.md#loio3f70579c92434f4f88471bba2bd70893__changing_abap_source_systems).
 

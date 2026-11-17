@@ -46,6 +46,10 @@ Once a folder is created, you can move objects to it or create objects in it. Yo
 > ### Note:  
 > Each object in a space must have a unique technical name. You may not create two views with the name *Sales\_US* in the *Sales* space, even if they are saved in different folders.
 
+In addition to working with folders in the builder start pages and the *Repository Explorer* app, you can also:
+
+-   List, create, read, update, and delete them using the `datasphere` command line interface \(see [Managing Modeling Objects via the Command Line](https://help.sap.com/viewer/7e55516989bd4d04a4c461a0e55fefc9/DEV/en-US/e3b2cbef9d1f4b38b51c64fe9e88c0aa.html "You can use the datasphere command line interface to list, read, create, update, and delete modeling objects. You can also organize objects in folders and manage sharing and metadata translation from the command line.") :arrow_upper_right:\).
+
 
 
 <a name="loiobbedad63821443518fcd8fe56f7d26f7__section_create"/>

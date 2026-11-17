@@ -4,7 +4,7 @@
 
 # Saving and Deploying Objects
 
-
+Save objects to the SAP Datasphere design-time repository, and then deploy your changes to the runtime.
 
 This topic contains the following sections:
 
@@ -46,16 +46,31 @@ You can create a copy of many types of objects by:
 
 ## Deploy an Object
 
-When you deploy an object, you create a run-time version for use in the SAP Datasphere database. All *Data Builder* objects must be deployed to be used productively.
+All *Data Builder* objects must be deployed to be used productively. When you deploy an object, you create a run-time version for use in SAP Datasphere's underlying SAP HANA database.
 
-To ensure run-time consistency, when you deploy an object, SAP Datasphere will review its lineage and deploy any objects that it finds that do not already have a status of *Deployed*. For information about viewing an object's lineage, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md).
+When you deploy an object, SAP Datasphere will:
+
+-   Compare the design-time and run-time versions and, if there are differences, deploy the design-time version to the runtime. It will change the object's status to *Deployed* and augment its version number.
+
+    For more information, see [Reviewing and Restoring Object Versions](reviewing-and-restoring-object-versions-4f717cc.md)\).
+
+-   Review the deployment status of all the objects in the selected object's lineage, and deploy any that do not already have a status of *Deployed* to ensure run-time consistency.
+
+    For more information, see [Impact and Lineage Analysis](impact-and-lineage-analysis-9da4892.md)
+
+    > ### Note:  
+    > Multidimensional objects \(analytic models and views with a semantic usage of *Analytical Dataset*\) must be deployed to the SAP HANA database even if there are no changes to deploy, in order to trigger their lineage analysis. However, the SAP Datasphere design-time version number is not augmented in this case.
+    > 
+    > You can review all object deployments in the *Activities* list \(see [Monitor Object Changes with Activities](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/08e607c58e5343bd9c0287e7e22c452a.html "Monitor the changes that users perform on modeling objects (such as spaces and tables) as well as changes to the system configuration (such as roles and users).") :arrow_upper_right:\).
+
+
+The following types of object are automatically deployed upon creation and immediately available in the run-time database:
+
+-   Remote tables imported into the repository from a source system, database user schema or HDI container \(see [Importing Tables and Views from Sources](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)\).
+-   Tables created by importing data from a `*.csv` file \(see [Creating a Local Table from a CSV File](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)\).
 
 > ### Note:  
-> -   If your space is locked because it has reached its storage capacity, then you are not allowed to deploy objects.
-> -   In the *Business Builder*, most objects are simply saved. Only perspectives need to be deployed.
-> -   The following types of object are automatically deployed upon creation and immediately available in the run-time database:
->     -   Remote tables imported into the repository from a source system, database user schema or HDI container \(see [Importing Tables and Views from Sources](Acquiring-and-Preparing-Data-in-the-Data-Builder/importing-tables-and-views-from-sources-7c4acd3.md)\).
->     -   Tables created by importing data from a `*.csv` file \(see [Creating a Local Table from a CSV File](Acquiring-and-Preparing-Data-in-the-Data-Builder/creating-a-local-table-from-a-csv-file-8bba251.md)\).
+> If your space is locked because it has reached its storage capacity, then you are not allowed to deploy objects.
 
 
 

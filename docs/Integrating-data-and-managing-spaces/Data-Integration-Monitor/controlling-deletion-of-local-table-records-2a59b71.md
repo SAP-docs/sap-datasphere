@@ -435,8 +435,6 @@ Y days before today to X days after today.
 > 
 > But if you edit the schedule on June 24, 2025, the filter will be updated to delete data from January 1st 2025 to June 24th 2025.
 
-In addition, you can add a time zone using the selector to ensure that filter values are interpreted in the correct timezone context. A suffix with the time zone in brackets is then added to the column name in the deletion filter.
-
 
 
 <a name="loio2a59b7142e1b4d478b0bf4063084261e__section_gkg_3cm_ncc"/>

@@ -137,264 +137,440 @@ The following table shows how REST API source data types are mapped to internal 
 <tr>
 <th valign="top">
 
-Source Data Type
+Schema Attribute Type
 
 </th>
 <th valign="top">
 
-SAP Datasphere
+Supported
+
+</th>
+<th valign="top">
+
+Target Column Type
+
+</th>
+<th valign="top">
+
+Notes
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-boolean
+number
 
 </td>
 <td valign="top">
 
-boolean
+Yes
+
+</td>
+<td valign="top">
+
+DOUBLE
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-byte
+number, format: double
 
 </td>
 <td valign="top">
 
-uint8
+Yes
+
+</td>
+<td valign="top">
+
+DOUBLE
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-date
+number, format: float
 
 </td>
 <td valign="top">
 
-date
+No
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+<td valign="top">
+
+Will cause replication failure. Do not use.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-datetime
+integer
 
 </td>
 <td valign="top">
 
-timestamp
+Yes
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-datetimeoffset
+integer, format: int32
 
 </td>
 <td valign="top">
 
-timestamp
+Yes
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-decimal
+integer, format: int64
 
 </td>
 <td valign="top">
 
-decfloat34
+Yes
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-decimal\(p,s\)
-
-</td>
-<td valign="top">
-
-decimal\(p,s\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-double
-
-</td>
-<td valign="top">
-
-float64
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-guid
-
-</td>
-<td valign="top">
-
-string\(36\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-hana.ST\_GEOMETRY
-
-</td>
-<td valign="top">
-
-Not Supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-hana.ST\_POINT
-
-</td>
-<td valign="top">
-
-Not Supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-int16
-
-</td>
-<td valign="top">
-
-int16
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-int32
-
-</td>
-<td valign="top">
-
-int32
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-int64
-
-</td>
-<td valign="top">
-
-int64
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-sbyte
-
-</td>
-<td valign="top">
-
-uint8
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-single
-
-</td>
-<td valign="top">
-
-float32
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-string \(size ≤ 5000\)
-
-</td>
-<td valign="top">
-
-string\(size\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-string \(size \> 5000\)
-
-</td>
-<td valign="top">
-
-Not Supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-string \(without size\)
-
-</td>
 <td valign="top">
 
 string
 
 </td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
 
-time
+string, format: date
 
 </td>
 <td valign="top">
 
-Not Supported
+Yes
+
+</td>
+<td valign="top">
+
+DATE
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-timeofday
+string, format: uuid
 
 </td>
 <td valign="top">
 
-Not Supported
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(36\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: hostname
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: ipv4
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: ipv6
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: password
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Format annotation is ignored; treated as a plain string.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: byte
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Format annotation is ignored; treated as a plain string.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: time
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Will cause replication failure. Do not use.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string, format: timestamp
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+The format annotation is not enforced or validated by the runtime. Values are stored as plain strings with no format validation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+string with minLength/maxLength
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+VARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Can only be set by importing an OpenAPI schema. Values that don't meet the constraints are ignored during the replication.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+BOOLEAN
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+array
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+<td valign="top">
+
+Simple array attributes are not replicated.
 
 </td>
 </tr>

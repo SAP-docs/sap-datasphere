@@ -10,6 +10,7 @@ If you use Apache Kafka as the target for your replication flow, you need to con
 
 ## Prerequisites
 
+-   Make sure you have created an Apache Kafka connection in Connection Management and that it is available in your space. For more information, see [Apache Kafka Connections](https://help.sap.com/viewer/be5967d099974c69b77f4549425ca4c0/cloud/en-US/1992c6b7154c4bc080d83c8977382ff4.html "Use the connection to connect to an Apache Kafka cluster.") :arrow_upper_right:
 -   You must ensure that you connect to a supported Kafka version. See the SAP Note [3806340](https://me.sap.com/notes/3806340).
 
 -   You can only use a non-SAP target for a replication flow if your admin has assigned capacity units to Premium Outbound Integration. For more information, see [Premium Outbound Integration](premium-outbound-integration-4e9c6ac.md) and [Configure the Size of Your SAP Datasphere Tenant](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/33f8ef4ec359409fb75925a68c23ebc3.html).

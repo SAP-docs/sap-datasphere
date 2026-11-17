@@ -78,7 +78,7 @@ You can use the connection to add source objects to a data flow \(see [Creating 
 
 ## Prerequisites
 
-If you want to prevent your data from being routed publicly through the internet, you can use Cloud Connector as a TLS tunnel between the customer virtual private network and SAP Datasphere to privately route the data.
+If you want to prevent your data from being routed publicly through the internet, you can use a dedicated Cloud Connector instance in the customer virtual private network \(VPN\) as a TLS tunnel between the VPN and SAP Datasphere to privately route the data.
 
 Two service endpoints and their corresponding Cloud Connector system mappings are required:
 
